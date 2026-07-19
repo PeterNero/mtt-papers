@@ -1,0 +1,88 @@
+{
+  "abstract": "We develop a unified framework within Modal Triplet Theory (MTT) connecting three apparently independent problems in 4D physics: quantum measurement collapse, black hole information loss, and the origin of probability in cosmology. In MTT, effective 4D physics arises as a shadow of deterministic dynamics on a higher configuration space under a noninvertible coherent projection. We introduce admissibility barriers\u2014loci where the projection fails to be stably invertible due to gap closure, projector discontinuity, or basin rearrangement\u2014and prove a general noninvertibility theorem: whenever trajectories cross such a barrier, the induced 4D shadow dynamics admits no global reconstruction map, despite invertibility of the upstairs evolution. We show that (i) quantum measurement collapse and (ii) black hole information loss are two instantiations of this same projection-induced noninvertibility, differing only in the physical realization of the barrier. We further show that Born probabilities, Hawking thermal weights, and cosmological initial-condition measures arise from a single basin-measure functional evaluated across different admissibility barriers, within the coherent universality class. Inflationary attractors and decoherence-based branching are identified as partial shadows that detect basin structure but cannot fix probability weights without access to the upstairs invariant measure. Finally, we incorporate results on computational irreducibility: there exist admissibility barriers for which basin membership is algorithmically undecidable, ruling out any uniform decoding protocol that would restore full information after barrier crossing. The framework clarifies the status of island constructions, POVM updates, and Everettian interpretations as partial inversions or refusals of projection rather than restorations of global 4D invertibility.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262040",
+    "created": "2026-01-15T20:33:15.293536+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262041",
+    "files": [
+      {
+        "checksum": "md5:8124f1c423bd309b6180f487f5ad2b1c",
+        "content_url": "https://zenodo.org/api/records/18262041/files/Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2%20(4).pdf/content",
+        "key": "Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2 (4).pdf",
+        "size": 337954
+      }
+    ],
+    "id": "18262041",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262041",
+    "resource_type": "publication",
+    "title": "Projection, Probability, and Irreversibility in Modal Triplet Theory",
+    "updated": "2026-01-15T20:33:15.635906+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "dccc393aba624bb65e240318ad4258bd98fe71e72e8f37faa7dbfa0ec11b6efc",
+  "paper_id": "projection-probability-and-irreversibility-shadow-bridg-a86c97e5",
+  "paper_md_sha256": "88ab69ec1e50f368dfb66d5200ab6b1d321ada186c38326a9f99c98e35eaec91",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 33478,
+      "path": "main.tex",
+      "sha256": "dccc393aba624bb65e240318ad4258bd98fe71e72e8f37faa7dbfa0ec11b6efc"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "8 Measurement, Selection & Computation/_work/Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2"
+  },
+  "source_tree_sha256": "5ec11243e24e828103d1ab5f4c537847d9f5a0ca2ddce0d59f48a2e878db1a41",
+  "title": "Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262040",
+      "created": "2026-01-15T20:33:15.293536+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262041",
+      "files": [
+        {
+          "checksum": "md5:8124f1c423bd309b6180f487f5ad2b1c",
+          "content_url": "https://zenodo.org/api/records/18262041/files/Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2%20(4).pdf/content",
+          "key": "Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2 (4).pdf",
+          "size": 337954
+        }
+      ],
+      "id": "18262041",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262041",
+      "resource_type": "publication",
+      "title": "Projection, Probability, and Irreversibility in Modal Triplet Theory",
+      "updated": "2026-01-15T20:33:15.635906+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "abstract": "",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18255737",
+    "created": "2026-01-15T10:59:14.565534+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18255738",
+    "files": [
+      {
+        "checksum": "md5:45fc99f0c9433a78d784beef75e6eb45",
+        "content_url": "https://zenodo.org/api/records/18255738/files/A_Projection_First_Reframing_of_Quantum_Gravity%20(3).pdf/content",
+        "key": "A_Projection_First_Reframing_of_Quantum_Gravity (3).pdf",
+        "size": 169628
+      }
+    ],
+    "id": "18255738",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18255738",
+    "resource_type": "publication",
+    "title": "A Projection-First Reframing of Quantum Gravity",
+    "updated": "2026-01-15T10:59:15.130347+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "1b792537ff7bbc1d3e18431632d99e17fad6a9ed8984f8a685ccf0ee69f81236",
+  "paper_id": "a-projection-first-reframing-of-quantum-gravity",
+  "paper_md_sha256": "efdece98518bc845bc018fcff27bb1994a70e1a673cc04926b9dee034a67206d",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 28843,
+      "path": "main.tex",
+      "sha256": "1b792537ff7bbc1d3e18431632d99e17fad6a9ed8984f8a685ccf0ee69f81236"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "19 A project-first reframing/_work/A_Projection_First_Reframing_of_Quantum_Gravity"
+  },
+  "source_tree_sha256": "cd3ff1747b1b948413a7c33d9aec78cfb57476992fcdeeb0b82b397620bc9b30",
+  "title": "A Projection-First Reframing of Quantum Gravity",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255737",
+      "created": "2026-01-15T10:59:14.565534+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18255738",
+      "files": [
+        {
+          "checksum": "md5:45fc99f0c9433a78d784beef75e6eb45",
+          "content_url": "https://zenodo.org/api/records/18255738/files/A_Projection_First_Reframing_of_Quantum_Gravity%20(3).pdf/content",
+          "key": "A_Projection_First_Reframing_of_Quantum_Gravity (3).pdf",
+          "size": 169628
+        }
+      ],
+      "id": "18255738",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18255738",
+      "resource_type": "publication",
+      "title": "A Projection-First Reframing of Quantum Gravity",
+      "updated": "2026-01-15T10:59:15.130347+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+---
+abstract: |
+  Dark matter and dark energy are commonly interpreted as evidence for new substances or degrees of freedom beyond the Standard Model and general relativity. Despite decades of effort, however, neither has been detected directly, and their defining properties are inferred almost exclusively through gravitational effects. This paper develops a projection-first reframing in which dark matter and dark energy are understood not as additional physical constituents, but as structural phenomena arising from finite admissibility of effective description.
+
+  The reframing adopts a conservative and diagnostic stance. No new particles, fields, or modified force laws are proposed, and no attempt is made to replace or refit the phenomenology of $`\Lambda`$CDM. Instead, the paper identifies a hidden assumption common to standard interpretations: that all gravitational sources must admit a particle-level or field-theoretic encoding. From a projection-first perspective, this assumption fails generically once capacity limits of description are taken seriously. Gravity, understood as the bookkeeping structure that maintains consistency of projected descriptions, can remain admissible even when particle-level encodings fail locally or when global invertibility breaks down.
+
+  Within this framework, dark matter is reinterpreted as gravitational constraint load in regimes where particle encodings are not admissible, while dark energy is reinterpreted as the large-scale geometric response to global capacity exhaustion. These two phenomena are shown to correspond to distinct failure modes of description rather than to distinct substances. The cosmological constant problem is reframed as a category error arising from the misapplication of energy-based bookkeeping beyond its admissible domain. The goal is explanatory rather than eliminative: to clarify why dark sectors appear universally in gravitational diagnostics and to situate them within a unified structural account of projection, admissibility, and finite capacity.
+author:
+- Peter Nero
+current_version: v1.0
+date: January 2026
+generated_from_main_tex_sha256: eee65a38ad1a3232046cc6c73d1bcb88b982cd6e454b2607fec67a41ba7da0e7
+paper_id: a-projection-first-reframing-of-dark-matter-and-dark-energy
+release_state: zenodo_released
+released_version: v1.0
+title: A Projection-First Reframing of Dark Matter and Dark Energy
+zenodo_doi: 10.5281/zenodo.18330693
+zenodo_record_id: 18330693
+zenodo_url: "https://zenodo.org/records/18330693"
+---
+
+# Introduction
+
+The discovery of dark matter and dark energy marks one of the most significant shifts in modern physics. Observations of galaxy rotation curves, gravitational lensing, large-scale structure, and cosmic acceleration all point to gravitational effects that cannot be accounted for by luminous matter alone. The standard response has been to postulate new physical components: non-luminous matter species to account for excess gravitational binding, and a vacuum-like energy component to drive accelerated expansion.
+
+Despite their empirical success within the $`\Lambda`$CDM framework, these interpretations leave a persistent conceptual unease. Dark matter has not been detected through any non-gravitational channel, despite extensive experimental effort. Dark energy, when treated as vacuum energy, leads to a discrepancy of many orders of magnitude between observed cosmological acceleration and quantum field theoretic estimates. These difficulties are often framed as technical problems awaiting improved experiments or deeper microscopic models.
+
+This paper proposes a different diagnosis. The difficulty may not lie in the details of model-building, but in a category assumption that has quietly guided interpretation: the assumption that all gravitational phenomena must correspond to additional particle or field degrees of freedom within an otherwise globally valid effective description. From a projection-first standpoint, this assumption is unwarranted. Effective physical description is not unlimited. It depends on projection to a reduced set of distinctions, and such projection remains valid only within finite admissibility margins. When those margins are exceeded, description does not smoothly degrade; it fails structurally.
+
+The projection-first framework has been developed in earlier papers of this series. There, *projection* denotes the structural necessity of identifying microscopic distinctions in order to obtain a stable, local, predictive description. *Admissibility* refers to the boundedness, spectral separation, and stability conditions required for such projection to remain controlled. *Capacity* denotes the finite amount of distinguishability or coherence that a given description can sustain before invertibility is lost. When admissibility holds, familiar structures such as fields, particles, conserved energies, and unitary dynamics may exist. When admissibility fails, effective description becomes noninvertible, and phenomena such as horizons, entropy bounds, irreversibility, and breakdown of global reconstruction arise as necessities rather than anomalies.
+
+In this light, gravity occupies a special role. It is not merely another interaction mediated by additional degrees of freedom, but the bookkeeping structure that enforces consistency of projected descriptions across regions. Geometry tracks how admissibility conditions vary and adjusts to preserve coherence wherever possible. Crucially, this bookkeeping role can remain admissible even when particle-level encodings fail locally or when global capacity is exhausted. Gravitational effects may therefore persist without corresponding matter or energy densities in the usual sense.
+
+This observation motivates a structural reinterpretation of the dark sector. Dark matter is treated here as a regime in which particle-level encodings are not admissible, while the gravitational bookkeeping structure remains operative. Dark energy is treated as a distinct regime in which global invertibility of description fails and geometry responds by expanding to preserve admissibility. These are not two substances, but two manifestations of finite capacity under different conditions. The distinction between them is structural rather than ontological.
+
+The purpose of this paper is not to replace standard cosmological models or to dispute their empirical adequacy. Instead, it seeks to clarify what kind of question dark matter and dark energy can meaningfully be, once the finite admissibility of description is taken seriously. By reframing the problem in this way, the apparent need for exotic new components is replaced by a unified account of how gravitational bookkeeping behaves when particle and global descriptions reach their limits.
+
+#### Relation to the reframing series.
+
+No familiarity with Modal Triplet Theory is required to follow the arguments presented here. However, the projection-first perspective is informed by results established elsewhere in the MTT corpus, where bounded projectors, spectral gaps, and admissible slabs can be made explicit. The present paper should be read as a conceptual diagnosis of the dark sector, parallel in role to the projection-first reframings of quantum gravity and string theory, rather than as a new constructive or phenomenological proposal.
+
+# Projection, Admissibility, and Capacity
+
+This section recalls the minimal structural notions required for a projection-first reframing of the dark sector. The intent is not to introduce new formalism, but to make explicit the conditions under which effective physical description remains meaningful.
+
+## Projection and loss of distinction
+
+Any effective description requires projection: a many-to-one mapping from a space of microscopic configurations to a reduced set of observables. Projection is not a choice or approximation; it is the structural price of locality and predictivity. Without projection, no finite description could be stable under perturbation.
+
+Projection is admissible only if it remains approximately invertible over the domain of interest. Approximate invertibility means that distinct underlying configurations lead to distinguishable effective descriptions up to controlled error. When invertibility fails, effective description does not merely become inaccurate; it becomes non-reconstructible.
+
+## Admissibility conditions
+
+Admissibility of projection requires the simultaneous satisfaction of three conditions:
+
+1.  **Boundedness**: small perturbations in the underlying configuration induce bounded changes in observables.
+
+2.  **Spectral separation**: the operators governing admissible degrees of freedom exhibit gaps that suppress uncontrolled leakage into discarded directions.
+
+3.  **Stability**: the projected description persists dynamically over the timescales on which it is applied.
+
+These conditions are structural. They do not depend on the details of microscopic dynamics, and they cannot be relaxed independently. Failure of any one condition typically triggers failure of the others.
+
+## Capacity as a finite structural bound
+
+Admissibility is not unlimited. Every projection-based description has a finite *capacity*: a bound on the amount of distinguishability, coherence, or independent structure it can sustain before boundedness or invertibility fails. Capacity is not a conserved quantity, not an observable, and not a field. It is a structural limit, analogous to a radius of convergence or a condition number, that determines whether description exists at all.
+
+Exceeding capacity does not generate new effective degrees of freedom. It produces loss of description. Phenomena such as entropy bounds, horizon formation, irreversibility, and breakdown of global reconstruction are signatures of capacity exhaustion rather than indications of missing microscopic constituents.
+
+—
+
+# Gravity as Bookkeeping Under Constraint Load
+
+The projection-first framework assigns gravity a role distinct from that of other interactions. This distinction is central to understanding why dark-sector phenomena appear first and most clearly in gravitational diagnostics.
+
+## Geometry as consistency structure
+
+Spacetime geometry functions as the bookkeeping structure that maintains compatibility among local projected descriptions. It synchronizes notions of locality, causality, and energy across regions where admissibility conditions vary. In this role, geometry tracks how constraint load is distributed and adjusts to preserve coherence wherever possible.
+
+This bookkeeping role is prior to any interpretation of geometry as a dynamical field. It explains why gravity couples universally and why it resists confinement: bookkeeping must apply to all sectors if projected descriptions are to remain mutually consistent.
+
+## Constraint load and geometric response
+
+Changes in local or global constraint load require geometric response. Such response is encoded in curvature, expansion, or horizon formation, depending on the regime. Importantly, constraint load need not correspond to an admissible particle or field encoding. Geometry can respond to structural demands even when particle-level descriptions fail.
+
+This observation underlies the projection-first interpretation of the dark sector. Gravity does not “detect” missing matter or exotic energy. It responds to the requirements of maintaining admissible description under finite capacity.
+
+—
+
+# Three Regimes of Admissible Description
+
+Dark matter and dark energy are most clearly understood when effective description is organized into regimes defined by admissibility. This section introduces a structural partition that will be used throughout the remainder of the paper.
+
+## Regime I: Interior admissible description
+
+In interior regimes, projection remains fully admissible. Particle and field encodings are stable, local invertibility holds to good approximation, and standard frameworks such as general relativity coupled to effective field theory apply. No dark-sector phenomena are required in this regime; all observed gravitational effects can be attributed to admissible particle or field encodings.
+
+## Regime II: Local encoding failure
+
+In certain environments, particle-level encodings become inadmissible while geometric bookkeeping remains stable. Spectral bottlenecks, strong correlations, or environmental complexity can prevent the maintenance of localized, distinguishable particle states without destroying boundedness or stability. In such regimes, gravity continues to respond to constraint load, but no admissible particle description exists.
+
+This regime corresponds to what is phenomenologically identified as dark matter. The defining feature is not the presence of unseen particles, but the absence of an admissible particle-level encoding.
+
+## Regime III: Global capacity exhaustion
+
+At sufficiently large scales or under sufficiently global demands, invertibility of projection fails even for geometric encodings. Maintaining global coherence exceeds available capacity. The only admissible response is a reorganization of the bookkeeping structure itself, typically through expansion that dilutes correlations and reduces constraint density.
+
+This regime corresponds to what is phenomenologically identified as dark energy. It reflects a failure of global description rather than the action of a new energy component.
+
+## Structural distinction between dark matter and dark energy
+
+Although both regimes involve gravitational effects without conventional sources, they are structurally distinct. Dark matter arises from local failure of particle encodings within an otherwise admissible geometric description. Dark energy arises from global failure of invertibility, forcing geometry to relax to preserve admissibility. Treating them as independent substances obscures their common origin in finite capacity while conflating distinct failure modes.
+
+—
+
+# Dark Matter as Constraint Load Without Particle Encoding
+
+We now turn to the first dark-sector phenomenon: gravitational effects that persist in the absence of any admissible particle-level description. The projection-first reframing treats these effects not as evidence for new substances, but as signatures of local encoding failure under finite capacity.
+
+## Why particle encodings can fail locally
+
+Particle-level descriptions require the ability to maintain localized, distinguishable excitations with well-defined quantum numbers. This, in turn, requires sufficient spectral separation, coherence, and stability margins. In complex or highly correlated environments, these requirements can fail even when geometry remains admissible.
+
+Examples include regions with strong environmental coupling, dense phase-space occupation, or long-range correlations that prevent localization without destabilizing projection. In such settings, attempting to maintain a particle description would exceed capacity and destroy boundedness. The correct structural response is not the appearance of new particles, but the loss of particle-level encoding.
+
+## Persistence of gravitational response
+
+Although particle encodings may fail, the bookkeeping role of geometry can remain admissible. Gravity continues to respond to constraint load in order to preserve consistency among projected descriptions. Curvature and lensing therefore reflect the structural demands of maintaining admissibility, not the presence of unseen matter in the usual sense.
+
+This explains why dark matter is detected exclusively through gravitational channels. The relevant degrees of freedom are not particles that could scatter, decay, or be produced in laboratory experiments. They are structural demands on the bookkeeping system.
+
+## Collisionless and cold behavior
+
+Dark matter phenomenology is characterized by collisionless and cold behavior. From a projection-first standpoint, this follows immediately. In the absence of an admissible particle encoding, there are no scattering channels, no thermalization processes, and no internal degrees of freedom that could support pressure or dissipation. The gravitational response is therefore effectively pressureless and non-interacting.
+
+This behavior does not require tuning or special assumptions. It is the generic signature of constraint load without particle encoding.
+
+## Limits of direct detection
+
+The absence of non-gravitational detection channels is often treated as an empirical puzzle. In the present reframing, it is expected. Detection strategies presuppose an admissible particle-level encoding. When such an encoding does not exist in the relevant regime, no amount of experimental sensitivity can reveal it. The failure is structural, not technical.
+
+This does not preclude the existence of particle dark matter in other regimes or under different admissibility conditions. It clarifies why gravitational diagnostics may dominate in regimes where particle encodings fail.
+
+—
+
+# Dark Energy as Global Capacity Exhaustion
+
+We now turn to the second dark-sector phenomenon: the accelerated expansion of the universe. Projection-first reasoning attributes this behavior to global failure of invertibility and capacity exhaustion, rather than to a pervasive energy component.
+
+## Failure of global invertibility
+
+At sufficiently large scales, maintaining a globally invertible projection becomes increasingly difficult. Long-range correlations, horizon formation, and cumulative constraint load can exceed available capacity. When this occurs, no global Hamiltonian or particle-based description remains admissible.
+
+This failure is not localized and cannot be attributed to specific regions or objects. It is a global structural limitation on description.
+
+## Expansion as an admissibility-preserving response
+
+When global invertibility fails, the bookkeeping structure must reorganize to preserve admissibility wherever possible. Expansion says exactly this: it dilutes correlations, reduces effective constraint density, and delays the onset of further noninvertibility. In this sense, accelerated expansion is not driven by energy in the usual sense, but by the need to preserve admissibility under finite capacity.
+
+This interpretation explains why dark energy appears smooth and universal, why it couples only gravitationally, and why it becomes significant only at large scales.
+
+## Distinction from vacuum energy
+
+Treating dark energy as vacuum energy assumes that energy is a globally meaningful source term. From a projection-first perspective, this assumption fails once capacity is finite. Energy is a downstairs quantity defined only within admissible descriptions. Applying it as a global bookkeeping variable beyond its domain produces spurious divergences.
+
+The cosmological constant problem is therefore reframed as a category error: the mismatch between quantum field theoretic vacuum energy estimates and observed acceleration signals the misapplication of an energy-based encoding beyond its admissible regime, not a failure of cancellation or fine-tuning.
+
+## Why acceleration is slow and persistent
+
+Because global capacity exhaustion is structural rather than dynamical, its effects unfold gradually. Expansion adjusts to maintain admissibility but does not eliminate constraint load entirely. This leads to slow, persistent acceleration rather than abrupt runaway behavior.
+
+Such behavior is generic in systems approaching capacity limits: adjustment occurs at the slowest rate compatible with preserving local structure.
+
+—
+
+# Diagnostics and Falsifiability
+
+A projection-first reframing of the dark sector is meaningful only if it yields diagnostic criteria that distinguish it from alternative interpretations. This section clarifies what counts as evidence for, and against, the present account.
+
+## Dark matter diagnostics
+
+In regimes identified as local encoding failure, the reframing predicts:
+
+- gravitational effects without corresponding non-gravitational interaction channels;
+
+- effective collisionless and pressureless behavior;
+
+- strong correlation between gravitational anomalies and environmental complexity or coherence bottlenecks rather than particle density alone;
+
+- sensitivity to boundary-layer phenomena, such as transitions between admissible and inadmissible particle encodings.
+
+Conversely, robust detection of particle dark matter in regimes where particle encodings are predicted to be inadmissible would falsify the projection-first interpretation in those domains.
+
+## Dark energy diagnostics
+
+In regimes identified as global capacity exhaustion, the reframing predicts:
+
+- acceleration that is smooth, universal, and weakly time-dependent rather than tied to localized sources;
+
+- horizon-scale correlations consistent with entropy and information bounds;
+
+- effective equation-of-state parameters that reflect encoding constraints rather than a fundamental energy density.
+
+Evidence that acceleration behaves as a local, dynamical energy component with standard field-theoretic properties would challenge this interpretation.
+
+## What would falsify the reframing
+
+The reframing would be undermined if:
+
+- particle dark matter were conclusively detected in regimes predicted to lack any admissible particle encoding;
+
+- cosmic acceleration were shown to arise from a local, propagating degree of freedom with well-defined microdynamics;
+
+- gravitational anomalies systematically failed to correlate with indicators of admissibility stress or capacity limits.
+
+—
+
+# Relation to MOND, $`\Lambda`$CDM, and Other Approaches
+
+The projection-first reframing does not seek to replace existing phenomenological models. Instead, it clarifies their domains of validity and the assumptions underlying their interpretation.
+
+## Why this is not MOND
+
+Modified Newtonian Dynamics alters force laws to reproduce galactic phenomenology without dark matter. The present reframing introduces no modification of gravitational dynamics. Instead, it addresses when particle-level encodings fail while geometric bookkeeping remains admissible. Any MOND-like phenomenology that arises does so as an effective compression of description, not as a fundamental change in interaction laws.
+
+## Why this is not particle dark matter
+
+The reframing does not posit new particle species, interaction channels, or symmetry extensions. It does not deny the possible existence of particle dark matter in other regimes, but it explains why gravitational diagnostics may dominate in regimes where particle encodings are structurally inadmissible.
+
+## Reinterpreting $`\Lambda`$CDM parameters
+
+Within $`\Lambda`$CDM, dark matter density and the cosmological constant are treated as phenomenological parameters. From a projection-first perspective, these parameters are best understood as encoding variables: effective measures of constraint load and global capacity stress rather than literal substance densities. This reinterpretation preserves the empirical utility of $`\Lambda`$CDM while reframing its ontology.
+
+—
+
+# Horizons, Holography, and Entropy Bounds
+
+Dark-sector phenomena intersect naturally with horizon physics and holography, both of which are signatures of noninvertible description.
+
+## Horizons as capacity bottlenecks
+
+Horizons mark regions where projection loses invertibility. Distinct underlying configurations project to indistinguishable effective states, and entropy emerges as a measure of lost distinguishability. This behavior is not anomalous; it is the expected signature of capacity saturation.
+
+## Area laws as bookkeeping constraints
+
+Entropy scaling with area rather than volume reflects the localization of admissibility failure on codimension-one surfaces. Area laws do not count microscopic states; they quantify the capacity bottleneck imposed by projection.
+
+## Connection to dark sectors
+
+Dark matter and dark energy fit naturally into this picture. Dark matter corresponds to local capacity bottlenecks where particle encodings fail, while dark energy corresponds to global capacity exhaustion. Both are gravitationally diagnosed because gravity tracks bookkeeping under constraint load.
+
+—
+
+# What This Reframing Does Not Claim
+
+For clarity and consistency with the reframing series, we emphasize that the present account does not claim:
+
+- a unique cosmological history or parameter set;
+
+- a replacement for $`\Lambda`$CDM phenomenology or its empirical fits;
+
+- the nonexistence of particle dark matter in all regimes;
+
+- a dynamical solution to cosmic acceleration;
+
+- a complete theory of quantum gravity or cosmology.
+
+The purpose of the reframing is diagnostic rather than eliminative: to clarify the structural conditions under which dark-sector phenomena arise and to delineate the limits of particle- based interpretation.
+
+—
+
+# Summary and Outlook
+
+Dark matter and dark energy present a persistent challenge because they are inferred through gravity yet resist particle-based explanation. The projection-first reframing developed here attributes this resistance to finite admissibility of effective description. Gravity, acting as the bookkeeping structure that enforces consistency of projection, can remain admissible even when particle-level encodings fail locally or when global capacity is exhausted.
+
+Within this framework, dark matter and dark energy are not additional substances but distinct manifestations of capacity limits under different conditions. Dark matter reflects local encoding failure in otherwise admissible geometric descriptions, while dark energy reflects global loss of invertibility and the geometric response required to preserve admissibility. The cosmological constant problem is reframed as a category error arising from the misapplication of energy-based bookkeeping beyond its admissible domain.
+
+This reframing does not compete with existing models or deny their empirical success. It clarifies why those models take the form they do and why gravitational diagnostics dominate in dark-sector phenomena. By making the structural logic explicit, it aligns dark matter and dark energy with a broader projection-first understanding of quantum mechanics, gravity, string theory, and the limits of description.
+
+Future work will focus on identifying observational proxies for admissibility stress and capacity exhaustion, refining the relation to holography and entropy bounds, and integrating this reframing with the constructive and phenomenological results developed elsewhere in the Modal Triplet Theory corpus.

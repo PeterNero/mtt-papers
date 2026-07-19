@@ -1,0 +1,88 @@
+{
+  "abstract": "We show how particles and forces arise as effective structures in admissible descriptions built from coherence basins and coherence-capacity transport, under the same stability, regularity, and closure assumptions used elsewhere in the coherence-capacity framework. Building on the transport theory developed in Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion, we show that localized, persistent excitations correspond to stable coherence basins, while forces arise from gradients and flows of coherence capacity. Newtonian motion, the Lorentz force, and confinement phenomena are obtained as basin-centroid and coherence-transport effects without introducing fundamental force carriers. Particle number nonconservation, charge conservation, and universality of gravity follow naturally from the basin framework.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18256105",
+    "created": "2026-01-21T04:57:26.802354+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18322084",
+    "files": [
+      {
+        "checksum": "md5:6dd75d338e64590ffbb4147ca522164f",
+        "content_url": "https://zenodo.org/api/records/18322084/files/Particles_and_Forces_as_Coherence_Basins_and_Capacity_Gradients_v2%20(1).pdf/content",
+        "key": "Particles_and_Forces_as_Coherence_Basins_and_Capacity_Gradients_v2 (1).pdf",
+        "size": 205987
+      }
+    ],
+    "id": "18322084",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18322084",
+    "resource_type": "publication",
+    "title": "Particles and Forces as Coherence Basins and Capacity Gradients",
+    "updated": "2026-01-21T04:57:27.258771+00:00",
+    "version": "v2.0"
+  },
+  "main_tex_sha256": "3d3990ace558f14a54068fb5789d89c4f77aad91aa0cfa9c87cf433e6f4d8aef",
+  "paper_id": "particles-and-forces-as-coherence-basins-and-capacity-gradients",
+  "paper_md_sha256": "7607dbe7a2cc82fbe2e5f3914254dc5e1f6b34508a9b629c9a5f28533e259207",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 13653,
+      "path": "main.tex",
+      "sha256": "3d3990ace558f14a54068fb5789d89c4f77aad91aa0cfa9c87cf433e6f4d8aef"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "14 Coherence Capacity Program/_work/Particles_and_Forces_as_Coherence_Basins_and_Capacity_Gradients_v2"
+  },
+  "source_tree_sha256": "fa597ea477cf24af54c0783826cf94bf566d0606dd365e97e620c8fd470c818c",
+  "title": "Particles and Forces as Coherence Basins and Capacity Gradients",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18256105",
+      "created": "2026-01-21T04:57:26.802354+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18322084",
+      "files": [
+        {
+          "checksum": "md5:6dd75d338e64590ffbb4147ca522164f",
+          "content_url": "https://zenodo.org/api/records/18322084/files/Particles_and_Forces_as_Coherence_Basins_and_Capacity_Gradients_v2%20(1).pdf/content",
+          "key": "Particles_and_Forces_as_Coherence_Basins_and_Capacity_Gradients_v2 (1).pdf",
+          "size": 205987
+        }
+      ],
+      "id": "18322084",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18322084",
+      "resource_type": "publication",
+      "title": "Particles and Forces as Coherence Basins and Capacity Gradients",
+      "updated": "2026-01-21T04:57:27.258771+00:00",
+      "version": "v2.0"
+    }
+  ]
+}

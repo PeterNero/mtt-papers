@@ -1,0 +1,88 @@
+{
+  "abstract": "We present a rigorous selection principle for heterotic flux compactifications in the torsional \\mathrm{SU}(3) slice. In a left-invariant ansatz, the coherent-sector contraction condition (FCC) of a general fixed-point framework is shown to be equivalent to the standard anomaly/primitivity/quantization system evaluated componentwise on invariant (2,2) bases. Consequently, FCC selects discrete loci on explicit compact examples: the complex balanced Iwasawa threefold (fixing r_3) and a balanced non-integrable \\text{Lens}\\times\\text{Nil} background (fixing R_1/R). We provide coefficient-level decompositions of dH, \\mathrm{Tr}_{\\mathrm{grav}}R_{+}^{2}, and \\mathrm{Tr}F^{2} in invariant frames, and record a normalized cubic Yukawa on Iwasawa. These results clarify how a rigorous selection mechanism organizes heterotic flux vacua without new dynamics beyond the torsional \\mathrm{SU}(3) system with R_{+}.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "September 7 2025",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.17072926",
+    "created": "2025-09-07T14:54:36.395461+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.17072927",
+    "files": [
+      {
+        "checksum": "md5:77f22a651430ead4a6f379c43d32d801",
+        "content_url": "https://zenodo.org/api/records/17072927/files/Modal_Triplet_Theory__MTT_as_a_Selection_Principle_for_Heterotic_Flux_Compactifications%20(2).pdf/content",
+        "key": "Modal_Triplet_Theory__MTT_as_a_Selection_Principle_for_Heterotic_Flux_Compactifications (2).pdf",
+        "size": 368461
+      }
+    ],
+    "id": "17072927",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2025-09-07",
+    "record_url": "https://zenodo.org/records/17072927",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: MTT as a Selection Principle for Heterotic Flux Compactifications",
+    "updated": "2025-09-07T14:54:36.678926+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "a54e4edb0e641c37a1b7940ecfc76031ff4485160919a9e80da390e7988bf8ab",
+  "paper_id": "modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927",
+  "paper_md_sha256": "f911d420ea901a5bc4b6bbfc11b2f7411c96914c81dbff522ca1c4125e896e8f",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 5017,
+      "path": "main.bib",
+      "sha256": "511ddb4fe9614cf3d0947a496ffc9c8d3215d44d25f9d64f58ef54c7b8687ac9"
+    },
+    {
+      "bytes": 23644,
+      "path": "main.tex",
+      "sha256": "a54e4edb0e641c37a1b7940ecfc76031ff4485160919a9e80da390e7988bf8ab"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__MTT_as_a_Selection_Principle_for_Heterotic_Flux_Compactifications"
+  },
+  "source_tree_sha256": "907f547bd84019149f75b2858812f659038a21f15eedfe82a36f634e7f4b256a",
+  "title": "Modal Triplet Theory: MTT as a Selection Principle for Heterotic Flux Compactifications Equivalence in the Left-Invariant Slice and Two Explicit Case Studies",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17072926",
+      "created": "2025-09-07T14:54:36.395461+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.17072927",
+      "files": [
+        {
+          "checksum": "md5:77f22a651430ead4a6f379c43d32d801",
+          "content_url": "https://zenodo.org/api/records/17072927/files/Modal_Triplet_Theory__MTT_as_a_Selection_Principle_for_Heterotic_Flux_Compactifications%20(2).pdf/content",
+          "key": "Modal_Triplet_Theory__MTT_as_a_Selection_Principle_for_Heterotic_Flux_Compactifications (2).pdf",
+          "size": 368461
+        }
+      ],
+      "id": "17072927",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2025-09-07",
+      "record_url": "https://zenodo.org/records/17072927",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: MTT as a Selection Principle for Heterotic Flux Compactifications",
+      "updated": "2025-09-07T14:54:36.678926+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

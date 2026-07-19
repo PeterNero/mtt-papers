@@ -1,0 +1,43 @@
+{
+  "abstract": "Momentum-conservation Dirac deltas are among the most familiar distributions in quantum field theory. At an ideal translation-invariant vertex one obtains (2\\pi)^d\\delta^{(d)}\\!\\left(\\sum_i p_i\\right), which enforces exact closure of the incoming and outgoing momentum ledger. This paper continues the program in which Dirac deltas are read as singular shadows of admissible projection. Here the relevant projection is not primarily point-source localization, gauge-slice selection, or measurement collapse, but bookkeeping closure: the enforcement of exact conservation after interaction support has been idealized as infinite, homogeneous, and perfectly translation invariant. We prove the elementary but structurally decisive result that the exact conservation delta is the distributional limit of finite interaction-window Fourier kernels. If an interaction is supported by a spacetime window w_R(x), its vertex factor contains \\widehat w_R(q), where q=\\sum_i p_i is the bookkeeping mismatch. Under standard approximate-identity hypotheses, \\widehat w_R(q)\\to (2\\pi)^d\\delta(q). Thus exact conservation is recovered as the infinite-support, zero-mismatch-width limit. For Gaussian windows this yields an explicit finite-width conservation kernel; for box windows it yields sinc/Dirichlet-type kernels. The MTT interpretation is that momentum-conservation deltas are the circle-sector analogue of the same projection pattern studied in the earlier papers: exact deltas arise when finite admissible bookkeeping kernels are collapsed to sharp constraints. Gauge fixing expressed lens-redundancy selection; measurement expressed nil-survivor selection; momentum conservation expresses circle bookkeeping closure. The result is not a denial of conservation laws, but a clarification of their delta notation: exact conservation deltas are idealized distributional limits of finite coherent bookkeeping support.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "unversioned",
+  "date": "April 2026",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "39e2be437d595dcdd5e3feffda6e8f615b62adc4446b4df3cef8bee00389b2a6",
+  "paper_id": "momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685",
+  "paper_md_sha256": "2d7321c2f861bb101dc92647732b6c79d64b49f8aef3886e33c180f246c6cd1b",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 17350,
+      "path": "main.tex",
+      "sha256": "39e2be437d595dcdd5e3feffda6e8f615b62adc4446b4df3cef8bee00389b2a6"
+    },
+    {
+      "bytes": 17350,
+      "path": "momentum_conservation_deltas_bookkeeping_closure_strengthened.tex",
+      "sha256": "39e2be437d595dcdd5e3feffda6e8f615b62adc4446b4df3cef8bee00389b2a6"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "5 Dirac Delta/_work/Momentum_Conservation_Deltas_and_Bookkeeping_Closure_Exact_Vertex_Conservation"
+  },
+  "source_tree_sha256": "03289adcb161bd31b7d7383b13a6018ee1a0f283f6e6969a9463bf0e7c933594",
+  "title": "Momentum Conservation Deltas and Bookkeeping Closure Exact Vertex Conservation as the Singular Limit of Finite Admissible Interaction Support",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

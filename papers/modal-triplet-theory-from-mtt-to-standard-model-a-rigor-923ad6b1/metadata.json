@@ -1,0 +1,88 @@
+{
+  "abstract": "We derive the full Standard Model (SM) from the coherent fixed-point sector of the Modal Triplet Theory (MTT). Internally, three parallel bundles (B_1,B_2,B_3) over Y^4 with base-only warping ensure commuting vertical Laplacians, so the joint Riesz projector \\Pi is well-defined and bounded on H^1. The Fundamental Contractivity Condition (FCC) then yields a unique coherent fixed point, and the 4D EFT arises by restricting the MTT energy to \\mathrm{Ran}\\Pi. We prove: (i) the SM gauge group emerges with the canonical identification B_1\\!\\to\\mathrm{U}(1)_Y, B_2\\!\\to\\mathrm{SU}(2)_L, B_3\\!\\to\\mathrm{SU}(3)_C; (ii) the SM chiral content in three families is obtained by a clean, gauge-preserving mechanism via a flavor line bundle L_F with Z_3 holonomy; (iii) anomaly cancellation is shown constructively by an integer-lattice basis; (iv) the Higgs sector and EWSB follow with representation-correct curvature shift (Bochner/Lichnerowicz) and RG-driven sign flip; (v) Yukawa hierarchies and mixings arise from internal overlap integrals; (vi) a numerical one-loop RG run with modest high-scale thresholds matches observed low-energy couplings. We add a particle dictionary (fermions, bosons, hadrons) with stability mechanisms, check the global SU(2) anomaly, discuss strong-CP and proton stability, and clarify the origin of high-scale gauge normalization from internal overlap norms. The result is a referee-ready, self-contained bridge from MTT to the complete SM.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "August 2025",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.16950516",
+    "created": "2026-01-09T17:02:48.154013+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18200819",
+    "files": [
+      {
+        "checksum": "md5:fce247c644d30600779d7297345cca08",
+        "content_url": "https://zenodo.org/api/records/18200819/files/Modal_Triplet_Theory__From_MTT_to_Standard_Model_v2%20(3).pdf/content",
+        "key": "Modal_Triplet_Theory__From_MTT_to_Standard_Model_v2 (3).pdf",
+        "size": 357178
+      }
+    ],
+    "id": "18200819",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-09",
+    "record_url": "https://zenodo.org/records/18200819",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: From MTT to Standard Model",
+    "updated": "2026-01-09T17:02:48.603391+00:00",
+    "version": "v2"
+  },
+  "main_tex_sha256": "201721294ec743dc1f7b58b981833de776141f56ea40a5f013c170c1e4e3ab84",
+  "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+  "paper_md_sha256": "74fe4649ca0f0b24621394f269019a94f6bdade18e3f538438bb5d1a305c963a",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 39225,
+      "path": "main.tex",
+      "sha256": "201721294ec743dc1f7b58b981833de776141f56ea40a5f013c170c1e4e3ab84"
+    },
+    {
+      "bytes": 4125,
+      "path": "series.sty",
+      "sha256": "855f2fd105ffcc50550e03cc6ead158824bf963426356264a0e53376b30cd7a0"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Modal_Triplet_Theory__From_MTT_to_Standard_Model_v2"
+  },
+  "source_tree_sha256": "898e90885c41fef582345e5180d8c882bbb608368d19df472f11341bca87deb6",
+  "title": "Modal Triplet Theory: From MTT to Standard Model A Rigorous Derivation of Gauge, Matter, and Symmetry Breaking",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.16950516",
+      "created": "2026-01-09T17:02:48.154013+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18200819",
+      "files": [
+        {
+          "checksum": "md5:fce247c644d30600779d7297345cca08",
+          "content_url": "https://zenodo.org/api/records/18200819/files/Modal_Triplet_Theory__From_MTT_to_Standard_Model_v2%20(3).pdf/content",
+          "key": "Modal_Triplet_Theory__From_MTT_to_Standard_Model_v2 (3).pdf",
+          "size": 357178
+        }
+      ],
+      "id": "18200819",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-09",
+      "record_url": "https://zenodo.org/records/18200819",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: From MTT to Standard Model",
+      "updated": "2026-01-09T17:02:48.603391+00:00",
+      "version": "v2"
+    }
+  ]
+}

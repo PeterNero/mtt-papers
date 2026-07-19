@@ -1,0 +1,91 @@
+{
+  "abstract": "We re-evaluate the propagation of the gauge-profile geometry into gravity and cosmology. Within the auxiliary six-dimensional S^1\\times S^2\\times\\mathrm{Nil}_3 product ansatz of Papers I\u2013III, the updated dimensionless internal-volume coefficient is \\widehat V_{\\mathrm{int}}=20.07064R_1^3. Restoring the common internal length \\ell_{\\mathrm{int}} gives G_N^{-1}=20.07064\\ell_{\\mathrm{int}}^6R_1^3/G_{10} if that auxiliary manifold is adopted as the compactification. It is not the selected q79/Fu\u2013Yau space, so the coefficient is an ansatz diagnostic rather than the current MTT internal volume. Even within the ansatz, the gauge profile does not determine Newton\u2019s constant without an absolute scale and fundamental gravity normalization. The former identification \\Lambda_\\Theta\\sim5~\\mathrm{TeV} is withdrawn with the obsolete gauge crossing, so its numerical primordial-tensor bound is also withdrawn. We retain the correctly normalized conditional relation r\\leq 2\\epsilon^2(\\Lambda_\\Theta/M_{\\mathrm{Pl}})^2/(\\pi^2A_s) when H\\leq\\epsilon\\Lambda_\\Theta. The paper therefore supplies conditional scaling laws and an assumption audit, not cross-sector numerical closure.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262121",
+    "created": "2026-01-15T20:44:56.762902+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262122",
+    "files": [
+      {
+        "checksum": "md5:748653fa6804a8df05b6103d05d29476",
+        "content_url": "https://zenodo.org/api/records/18262122/files/Theta_Closure_in_Modal_Triplet_Theory_IV__Gravity_and_Cosmology_from_the_Closure_Scale%20(1).pdf/content",
+        "key": "Theta_Closure_in_Modal_Triplet_Theory_IV__Gravity_and_Cosmology_from_the_Closure_Scale (1).pdf",
+        "size": 308959
+      }
+    ],
+    "id": "18262122",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262122",
+    "resource_type": "publication",
+    "title": "Theta Closure in Modal Triplet Theory IV: Gravity and Cosmology from the Closure Scale",
+    "updated": "2026-01-15T20:44:57.120487+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "b32468bf9b6f804e661cc9fe79fdba912c304d8d17c5335aa276d38692fbbbb7",
+  "paper_id": "theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5",
+  "paper_md_sha256": "20654d47d6f34953fa15fab44658b041d97a3d98c729159dfb6b9038df800964",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
+    "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
+    "selected_revision": true,
+    "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_IV__Gravity_and_Cosmology_from_the_Closure_Scale"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 14489,
+      "path": "main.tex",
+      "sha256": "b32468bf9b6f804e661cc9fe79fdba912c304d8d17c5335aa276d38692fbbbb7"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_IV__Gravity_and_Cosmology_from_the_Closure_Scale_v2"
+  },
+  "source_tree_sha256": "ae1bd91e5128b3a46343be1ec349833ee18e0272f7db2905712b74d03790d8be",
+  "title": "Theta Closure in Modal Triplet Theory IV: Conditional Gravity Scaling and Cosmological Cutoff Audit",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262121",
+      "created": "2026-01-15T20:44:56.762902+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262122",
+      "files": [
+        {
+          "checksum": "md5:748653fa6804a8df05b6103d05d29476",
+          "content_url": "https://zenodo.org/api/records/18262122/files/Theta_Closure_in_Modal_Triplet_Theory_IV__Gravity_and_Cosmology_from_the_Closure_Scale%20(1).pdf/content",
+          "key": "Theta_Closure_in_Modal_Triplet_Theory_IV__Gravity_and_Cosmology_from_the_Closure_Scale (1).pdf",
+          "size": 308959
+        }
+      ],
+      "id": "18262122",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262122",
+      "resource_type": "publication",
+      "title": "Theta Closure in Modal Triplet Theory IV: Gravity and Cosmology from the Closure Scale",
+      "updated": "2026-01-15T20:44:57.120487+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

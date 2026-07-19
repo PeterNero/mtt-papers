@@ -1,0 +1,93 @@
+{
+  "abstract": "We analyze encoding frameworks that attempt to resolve circle, lens, and nil obstructions simultaneously and maximally within a single reduced description. In the Modal Triplet Theory (MTT) framework, gravity, gauge structure, and quantization arise as distinct encoding responses to these obstructions. When one seeks a single encoding in which all three responses are fully integrated, additional constraints emerge that drastically restrict admissible structure. We show that such saturated encodings are highly constrained and exhibit features commonly associated with string-theoretic and related frameworks, including extended fundamental objects, anomaly saturation, constrained dimensionality, and limited freedom of deformation. These features are shown to arise from admissibility, overlap consistency, and refinement stability, rather than from postulated microscopic dynamics. The analysis does not assume string theory or any specific formalism. Instead, it explains why string-like frameworks appear when encoding constraints are pushed to their maximal simultaneous resolution. Saturated encodings are therefore interpreted as extreme but natural points in the space of admissible descriptions, not as fundamental theories.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18355129",
+    "created": "2026-01-23T20:11:43.824043+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18355130",
+    "files": [
+      {
+        "checksum": "md5:8c31abc8c1bcded03335f4e74d2fa9cd",
+        "content_url": "https://zenodo.org/api/records/18355130/files/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings%20(2).pdf/content",
+        "key": "The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings (2).pdf",
+        "size": 223020
+      }
+    ],
+    "id": "18355130",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-23",
+    "record_url": "https://zenodo.org/records/18355130",
+    "resource_type": "publication",
+    "title": "The Modal Triplet Theory Program B5: Saturated and Unified Encodings",
+    "updated": "2026-01-23T20:11:44.424923+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "08f278d8d7c681eb7e7bf0dd9e5679fd9b731727033c28111f994cae940dfb95",
+  "paper_id": "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
+  "paper_md_sha256": "b790156f4f8bf4a98b70a5f4ac14a8be386b6df8279ff9392d358f864f530c89",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 33326,
+      "path": "main.bib",
+      "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
+    },
+    {
+      "bytes": 36928,
+      "path": "main.tex",
+      "sha256": "08f278d8d7c681eb7e7bf0dd9e5679fd9b731727033c28111f994cae940dfb95"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings"
+  },
+  "source_tree_sha256": "b27c21ea679acca4bf5aed3cfa0dc73b279cffafce9f907a86700360d4fde016",
+  "title": "The Modal Triplet Theory Program B5: Saturated and Unified Encodings in the Modal Triplet Theory Program",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18355129",
+      "created": "2026-01-23T20:11:43.824043+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18355130",
+      "files": [
+        {
+          "checksum": "md5:8c31abc8c1bcded03335f4e74d2fa9cd",
+          "content_url": "https://zenodo.org/api/records/18355130/files/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings%20(2).pdf/content",
+          "key": "The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings (2).pdf",
+          "size": 223020
+        }
+      ],
+      "id": "18355130",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-23",
+      "record_url": "https://zenodo.org/records/18355130",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B5: Saturated and Unified Encodings",
+      "updated": "2026-01-23T20:11:44.424923+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

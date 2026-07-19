@@ -1,0 +1,1181 @@
+\documentclass[11pt]{article}
+
+\usepackage{series}   % house style
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+
+\geometry{margin=1in}
+
+\theoremstyle{plain}
+\newtheorem{axiom}{Axiom}[section]
+\theoremstyle{plain}
+\newtheorem{postulate}{Postulate}[section]
+
+
+% ---------------- Metadata ----------------
+\title{The Modal Triplet Theory Program A0:\\ A Structural Theory of Reduced Description}
+\author{Peter Nero}
+\date{January 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present a clean, non-circular formulation of Modal Triplet Theory (MTT):
+a conditional framework governing when stable reduced descriptions exist,
+how they relate, and why no global reduced description is possible.
+The theory is formulated abstractly in terms of projection, admissibility,
+and contractive induced dynamics, with explicit realizations treated as
+non-axiomatic instantiations.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% =====================================================
+\section*{Part I: Abstract Framework}
+\addcontentsline{toc}{section}{Part I: Abstract Framework}
+
+\section{Definitions and Conventions}
+
+This section fixes notation and logical order.
+All definitions are purely mathematical.
+No physical interpretation is assumed.
+
+\subsection{Abstract projection system}
+
+\begin{definition}[Abstract system]
+An abstract projection system is a triple
+\[
+(X,\;\Phi,\;P)
+\]
+where:
+\begin{itemize}
+\item $X$ is a standard measurable space,
+\item $\Phi : X \to X$ is an invertible measurable evolution (or flow $\Phi_t$),
+\item $P : X \to Y$ is a measurable, generally non-injective map into a reduced space $Y$.
+\end{itemize}
+\end{definition}
+
+\subsection{Tolerance}
+
+\begin{definition}[Tolerance]
+Fix $\varepsilon>0$.
+Two points $y_1,y_2\in Y$ are indistinguishable if
+\[
+d_Y(y_1,y_2)\le \varepsilon,
+\]
+where $d_Y$ is a chosen pseudometric.
+\end{definition}
+
+\subsection{Admissible domains}
+
+\begin{definition}[Admissible domain]
+A subset $A\subset X$ is admissible if:
+\begin{enumerate}
+\item $P|_A$ is measurable and locally regular;
+\item there exists a measurable section
+\[
+S_A : P(A)\to A
+\]
+such that $P\circ S_A = \mathrm{id}$ up to tolerance, and such that $S_A$ is
+\emph{robust} on $P(A)$ (e.g.\ stable in measure under $\varepsilon$-perturbations of $y\in P(A)$);
+
+\item there exists a (possibly non-singleton) protocol index set $\Pi_A$ and, for each
+$\pi\in\Pi_A$, a measurable section
+\[
+S_{A,\pi}:P(A)\to A
+\]
+such that $P\circ S_{A,\pi}=\mathrm{id}$ up to tolerance, and an induced reduced map
+\[
+T_{A,\pi} := P\circ\Phi_{\tau(\pi)}\circ S_{A,\pi}:P(A)\to P(A)
+\]
+that is well-defined and stable.
+
+\end{enumerate}
+\end{definition}
+
+\begin{axiom}[Finite admissibility]
+There exists no admissible domain $A$ with $A=X$.
+\end{axiom}
+
+\subsection{Fundamental Contractivity Condition}
+
+\begin{definition}[FCC]
+An admissible domain $A$ satisfies FCC if for each $\pi\in\Pi_A$ there exist constants
+$0<\kappa_\pi<1$ and $c_\pi<\infty$ such that
+\[
+d_Y\!\big(T_{A,\pi}(y),T_{A,\pi}(y')\big)
+\le \kappa_\pi\, d_Y(y,y') + c_\pi\,\varepsilon
+\quad \forall y,y'\in P(A).
+\]
+
+\end{definition}
+\begin{remark}
+Different $\pi\in\Pi_A$ represent distinct admissible protocol/context choices.
+All stability, basin, and encoding statements in this document apply pointwise in $\pi$.
+\end{remark}
+
+\begin{remark}
+FCC is a \emph{local} property of an admissible domain $A$ together with a chosen section $S_A$,
+hence of the induced reduced map $T_A$.
+It is not assumed to hold globally on $X$.
+\end{remark}
+
+\subsection{Fixed points and basins}
+
+\begin{definition}[Fixed-point set]
+A subset $\mathfrak S\subset P(A)$ is a fixed-point set if
+\[
+\sup_{y\in\mathfrak S} d_Y\!\big(T_A(y),y\big)\le c_\ast\,\varepsilon.
+\]
+\end{definition}
+
+\begin{theorem}[Existence of fixed points]
+If FCC holds on $A$, then $T_A$ admits at least one fixed-point set
+$\mathfrak S\subset P(A)$.
+\end{theorem}
+
+\begin{definition}[Basin]
+A basin is a subset $B\subset P(A)$ such that
+\[
+\limsup_{n\to\infty}
+\mathrm{dist}_Y\!\big(T_A^n(y),\mathfrak S\big)\le c_B\,\varepsilon
+\quad \forall y\in B.
+\]
+\end{definition}
+
+\subsection{Coherence capacity}
+
+\begin{definition}[Admissibility modules]
+Let $\{g_i(x)\}$ measure violation of admissibility conditions,
+with $g_i(x)\le 0$ indicating validity.
+\end{definition}
+
+\begin{definition}[Coherence capacity]
+Define
+\[
+C(x) := \min_i (-g_i(x)).
+\]
+Then $C(x)>0$ implies admissibility and $C(x)=0$ marks saturation.
+\end{definition}
+
+\subsection{Admissibility barriers}
+
+\begin{definition}[Admissibility barrier]
+A measurable set $\mathcal B\subset X$ is an admissibility barrier if:
+\begin{enumerate}
+\item $X\setminus\mathcal B$ contains at least two admissible regions
+$A_+$ and $A_-$;
+\item there exists $y\in Y$ with
+$P^{-1}(y)\cap A_+\neq\varnothing$ and
+$P^{-1}(y)\cap A_-\neq\varnothing$;
+\item no measurable section
+$S:P(A_+\cup A_-)\to A_+\cup A_-$ exists with
+$P\circ S=\mathrm{id}$ up to tolerance.
+\end{enumerate}
+\end{definition}
+
+\subsection{Invariant measure (conditional)}
+
+\begin{assumption}[Invariant measure]
+On an admissible domain $A$, there exists an invariant or stationary
+measure $\mu$ preserved by $\Phi$.
+\end{assumption}
+
+\subsection{Encodings}
+
+\begin{definition}[Encoding]
+An encoding is a tuple
+\[
+\mathcal E=(A,\;Z,\;E,\;F,\;\varepsilon)
+\]
+where $A$ is admissible and
+\[
+E(T_A(y)) = F(E(y)) + \delta(y),
+\quad \|\delta(y)\|\le c\,\varepsilon.
+\]
+\end{definition}
+\begin{remark}
+Coherence capacity $C(x)$ is not an observable, not a conserved quantity,
+and not a dynamical degree of freedom. It is a diagnostic margin (a stability/condition
+number) organizing when admissible encodings exist and when they fail.
+\end{remark}
+
+\subsection{Interpretation postulate}
+
+\begin{postulate}
+When an admissible encoding exists, its reduced structure
+may be interpreted as a physical description.
+\end{postulate}
+\begin{remark}
+Local sections $S_{A,\pi}$ may exist on admissible domains.
+Admissibility barriers assert the obstruction to extending such choices to a single
+global section across domains. Thus ``local representability'' does not imply
+global reconstructibility.
+\end{remark}
+
+\subsection{Failure modes}
+
+The framework is silent if:
+\begin{itemize}
+\item no admissible domain satisfies FCC;
+\item no invariant measure exists where probability is claimed;
+\item no measurable section exists anywhere;
+\item basins are not robust under perturbations.
+\end{itemize}
+
+
+\section{Core Structural Results}
+
+All results in this section are conditional on the existence of an
+admissible domain $A$ with section $S_A$ and reduced map
+\[
+T_A := P \circ \Phi_\tau \circ S_A .
+\]
+
+\subsection{Universality under contractive projection}
+
+\begin{theorem}[Universality under FCC]
+Assume FCC holds on an admissible domain $A$.
+Then for all $y,y'\in P(A)$,
+\[
+\limsup_{n\to\infty}
+d_Y\!\big(T_A^n(y),T_A^n(y')\big)
+\;\le\;
+\frac{c}{1-\kappa}\,\varepsilon .
+\]
+\end{theorem}
+
+\begin{remark}
+This expresses convergence to a common fixed-point set up to a
+tolerance floor. No exact equality or limit point is assumed.
+\end{remark}
+\subsection{Admissible prediction depth}
+
+\begin{definition}[Admissible prediction depth]
+Fix an admissible domain $A$ and protocol $\pi\in\Pi_A$.
+For $x\in A$, define the admissible prediction depth
+\[
+N_{\max}(x;A,\pi,\varepsilon)
+:=
+\sup\Big\{n\in\mathbb{N}\ \Big|\ \text{the reduced iterates }
+T_{A,\pi}^k(P(x)) \text{ remain within } P(A) \text{ for all } k\le n\Big\}.
+\]
+\end{definition}
+
+\begin{remark}
+$N_{\max}$ provides a regime-intrinsic notion of finite predictivity without invoking
+external time. In boundary layers ($0<C\ll 1$), $N_{\max}$ is typically small; deep in
+stable basins it may be large.
+\end{remark}
+\subsection{Computational limits (optional)}
+
+\begin{proposition}[Conditional undecidability of selection questions]
+In regimes where admissibility depends on protocol choice and where prediction depth
+$N_{\max}(x;A,\pi,\varepsilon)$ is finite but instance-dependent, there exist well-posed
+decision problems about reduced evolution and selection (e.g.\ whether a specified basin
+is entered before admissibility is lost) that are not decidable by any uniform algorithm
+from finite descriptions of initial reduced data and protocol parameters.
+\end{proposition}
+
+\begin{remark}
+This proposition is included as an optional structural consequence layer.
+Its role is to record that finite admissibility and protocol-dependent projection can
+imply limits of computability beyond practical complexity.
+\end{remark}
+
+\subsection{Forgetting of incoherent distinctions}
+
+\begin{corollary}[Forgetting]
+Let $y,y'\in P(A)$ belong to the same basin.
+Then all distinctions between $y$ and $y'$ not preserved by the
+fixed-point set $\mathfrak S$ are suppressed under iteration of $T_A$
+up to tolerance.
+\end{corollary}
+
+\subsection{Projection--admissibility obstruction}
+
+\begin{theorem}[Projection--admissibility obstruction]
+Let $\mathcal B\subset X$ be an admissibility barrier.
+There exists no measurable section
+\[
+S : P(A_+\cup A_-)\to A_+\cup A_-
+\]
+satisfying $P\circ S=\mathrm{id}$ up to tolerance,
+where $A_+$ and $A_-$ are admissible regions separated by $\mathcal B$.
+\end{theorem}
+
+\begin{proof}[Sketch]
+Existence of such a section would contradict the definition of
+$\mathcal B$ as an admissibility barrier.
+\end{proof}
+
+\subsection{Irreversibility of reduced dynamics}
+
+\begin{theorem}[Irreversibility]
+On any admissible domain $A$ satisfying FCC, the reduced map $T_A$
+is not invertible up to tolerance on $P(A)$.
+\end{theorem}
+
+\begin{proof}[Sketch]
+Non-injectivity of $P$ implies that multiple points in $A$ map to the
+same $y\in P(A)$.
+FCC ensures contraction of their images under $T_A$,
+preventing reconstruction of preimages.
+\end{proof}
+
+Irreversibility is therefore structural, not dynamical.
+
+\subsection{Probability from basin structure (conditional)}
+
+Assume the existence of an invariant measure $\mu$ on $A$.
+\begin{remark}
+Assume the basin sets $B_i\subset P(A)$ are measurable with respect to the
+$\sigma$-algebra induced on $P(A)$ by $P$.
+\end{remark}
+
+\begin{definition}[Basin weights]
+Let $\{B_i\}$ be the basin partition of $P(A)$.
+Define
+\[
+W_i :=
+\frac{\mu\big(P^{-1}(B_i)\cap A\big)}
+{\sum_j \mu\big(P^{-1}(B_j)\cap A\big)} .
+\]
+\end{definition}
+
+\begin{theorem}[Conditional probability theorem]
+If a selection event forces choice among basins $\{B_i\}$,
+the weights $W_i$ define consistent outcome probabilities.
+\end{theorem}
+
+If no invariant measure exists, no canonical basin weighting is asserted; only basin structure
+and record/selection ordering remain meaningful at the reduced level.
+
+
+\subsection{Maximality of admissible content}
+
+\begin{theorem}[Maximality on overlaps]
+Let $\mathcal E_1$ and $\mathcal E_2$ be admissible encodings with
+overlapping domains.
+Then on the overlap there exists a controlled re-encoding relating
+their reduced descriptions up to tolerance.
+\end{theorem}
+
+\begin{corollary}[No stronger reduced description]
+There exists no admissible encoding whose reduced variables contain
+strictly more stable descriptive content than that induced by $P$.
+\end{corollary}
+
+\subsection{No global reduced description}
+
+\begin{theorem}[No global encoding]
+There exists no encoding defined on all of $X$.
+\end{theorem}
+
+\begin{proof}[Sketch]
+By finite admissibility, no admissible domain covers $X$.
+\end{proof}
+
+\subsection{Interpretive remark}
+
+All results above concern reduced descriptions as mathematical objects.
+Any physical interpretation is an external assignment.
+
+% =====================================================
+\section*{Part II: Encodings and Boundaries}
+\addcontentsline{toc}{section}{Part II: Encodings and Boundaries}
+\section{Encoding Atlas}
+
+This section lists admissible encodings as local charts on neighborhoods
+of stable basins of the reduced map
+\[
+T_A := P \circ \Phi_\tau \circ S_A .
+\]
+Each encoding is specified by sufficient inequality contracts involving
+the contraction constant $\kappa$, tolerance $\varepsilon$, and
+coherence capacity $C$.
+\begin{remark}[Contract nature of atlas inequalities]
+The inequalities in this atlas are \emph{sufficient contracts} guaranteeing that an encoding closes
+to tolerance on the stated domain. They are not classification theorems: failure of a listed
+inequality does not imply that no encoding exists.
+\end{remark}
+
+\subsection{Chart-local control quantities}
+
+The following quantities are \emph{chart-local}:
+they are defined only when the corresponding encoding supplies
+the structures needed to define them.
+They are not global invariants of $(X,\Phi,P)$.
+
+\begin{itemize}
+\item Basin separation scale (when a basin partition exists):
+\[
+\Delta_B := \inf_{i\neq j} d_Y(B_i,B_j).
+\]
+
+\item Capacity floor on the chart domain:
+\[
+C_{\min} := \inf_{x\in A} C(x).
+\]
+
+\item Contractivity slack:
+\[
+s_\kappa := 1-\kappa.
+\]
+\end{itemize}
+
+All inequalities below are sufficient but not necessary.
+
+%-------------------------------------------------
+
+\subsection{Encoding E$_1$: Finite-Basin Operator Chart}
+
+\paragraph{Existence hypothesis}
+The reduced space $P(A)$ admits a finite or effectively finite
+collection of basins $\{B_i\}$ with well-defined separation.
+
+\paragraph{Validity conditions}
+\begin{align}
+\varepsilon &\le \tfrac{1}{10}\Delta_B, \\
+\kappa &\le \tfrac{1}{2}, \\
+C_{\min} &\ge C_1 > 0.
+\end{align}
+
+\paragraph{Closure}
+There exists a linear map $F$ on $Z$ such that
+\[
+E(T_A(y)) = F(E(y)) + \delta(y),
+\quad \|\delta(y)\|\le c_1\,\varepsilon .
+\]
+
+\paragraph{Failure}
+Occurs when basin separation is lost, $\kappa\to 1$,
+or $C_{\min}\to 0$.
+
+%-------------------------------------------------
+
+\subsection{Encoding E$_2$: Local Patch Algebra Chart}
+
+\paragraph{Existence hypothesis}
+The admissible domain admits a cover by overlapping admissible
+subdomains $\{A_\alpha\}$, but no global admissible section exists.
+
+\paragraph{Validity conditions}
+\begin{align}
+\inf_\alpha \inf_{x\in A_\alpha} C(x) &\ge C_2 > 0, \\
+\sup_\alpha \kappa_\alpha &\le \kappa_2 < 1.
+\end{align}
+
+On overlaps $A_{\alpha\beta}$,
+\[
+\|E_\beta(y) - f_{\alpha\beta}(E_\alpha(y))\|
+\le c_2\,\varepsilon .
+\]
+
+\paragraph{Obstruction}
+Any attempted global choice of coordinates yields
+a glue error exceeding $\varepsilon$.
+
+\paragraph{Failure}
+Overlap incompatibility or capacity collapse.
+
+%-------------------------------------------------
+
+\subsection{Encoding E$_3$: Two-Derivative Bookkeeping Chart}
+
+\paragraph{Existence hypothesis}
+Variations of basin representatives are slow enough that
+a second-order truncation is meaningful.
+
+\paragraph{Validity conditions}
+\begin{align}
+C_{\min} &\ge C_3 > 0, \\
+0.2 \le \kappa &\le 0.9.
+\end{align}
+
+Let $\eta_3$ denote the ratio of neglected higher-order terms
+to retained second-order terms.
+Require
+\[
+\eta_3 \le c_3\,\varepsilon .
+\]
+
+\paragraph{Closure}
+\[
+E(T_A(y)) = E(y) + \mathcal{D}[E(y)] + \delta(y),
+\quad \|\delta(y)\|\le c_3'\,\varepsilon .
+\]
+
+\paragraph{Failure}
+Higher-order terms become unsuppressed or $C\to 0$.
+
+%-------------------------------------------------
+
+\subsection{Encoding E$_4$: Scale-Step Truncation Chart}
+
+\paragraph{Existence hypothesis}
+There exists a hierarchy of reduced coordinates ordered by relevance.
+
+\paragraph{Validity conditions}
+\begin{align}
+C_{\min} &\ge C_4 > 0, \\
+\rho_N &\le \varepsilon, \\
+\kappa &\le 1 - c_4\,\varepsilon .
+\end{align}
+
+Here $\rho_N$ denotes a chart-local bound on the cumulative
+contribution of discarded coordinates.
+
+\paragraph{Closure}
+\[
+E(T_A(y)) = F(E(y)) + \delta(y),
+\quad \|\delta(y)\|\le c_4'\,\varepsilon .
+\]
+
+\paragraph{Failure}
+Discarded contributions exceed tolerance or $\kappa\to 1$.
+
+%-------------------------------------------------
+
+\subsection{Encoding E$_5$: Auxiliary Fixed-Point Chart}
+
+\paragraph{Existence hypothesis}
+There exists an auxiliary representation $Z_{\mathrm{aux}}$
+in which the reduced dynamics is near a stable fixed point.
+
+\paragraph{Validity conditions}
+\begin{align}
+\|\beta(E(y))\| &\le c_5\,\varepsilon, \\
+\rho(D\beta) &\le 1 - s_5, \\
+C_{\min} &\ge C_5 > 0.
+\end{align}
+
+\paragraph{Closure}
+Auxiliary flow remains within tolerance of a fixed point.
+
+\paragraph{Failure}
+Loss of auxiliary stability or capacity collapse.
+
+%-------------------------------------------------
+
+\subsection{Encoding E$_6$: Spectral Operator Chart}
+
+\paragraph{Existence hypothesis}
+The encoding supplies operators whose spectra are meaningful
+on the admissible domain.
+
+\paragraph{Validity conditions}
+\begin{align}
+\varepsilon &\le \tfrac{1}{10}\Delta_D, \\
+\|[D,a]\| &\le K_6, \\
+C_{\min} &\ge C_6 > 0.
+\end{align}
+
+\paragraph{Closure}
+Dynamics depend only on spectral data up to tolerance.
+
+\paragraph{Failure}
+Spectral gap closure or operator norm divergence.
+
+%-------------------------------------------------
+
+\subsection{Encoding E$_7$: Event-Selection Chart}
+
+\paragraph{Existence hypothesis}
+Capacity varies sharply enough that isolated selection events occur.
+
+\paragraph{Validity conditions}
+\begin{align}
+0 < C_{\min} &\le C_7, \\
+\tau_e &\ge \tau_7 > 0.
+\end{align}
+
+Selection labels must be stable under $\varepsilon$-perturbations,
+and post-selection basins must satisfy FCC with positive slack.
+
+\paragraph{Failure}
+Event clustering, unstable post-selection basins,
+or $C<0$.
+%-------------------------------------------------
+\subsection{Encoding E$_8$: Relational Transition Chart}
+
+This encoding applies when no single-valued reduced evolution
+is admissible, but stable relational structure persists.
+
+\paragraph{Existence hypothesis}
+\begin{itemize}
+\item No admissible section $S_A$ exists that yields a single-valued reduced map
+      on any neighborhood of interest.
+\item The universal reduced relation
+\[
+\mathcal{R} := \{(y,y')\in Y\times Y \mid \exists x\in X:\ y=P(x),\ y'=P(\Phi_\tau(x))\}
+\]
+admits a stable restriction on a subset of $Y\times Y$.
+\end{itemize}
+
+\paragraph{Variables}
+The reduced data are not points in a coordinate space, but
+\emph{relations}:
+\[
+Z_{\mathrm{rel}} \subset Y\times Y.
+\]
+
+\paragraph{Chart map}
+\[
+E : P(A) \to \mathcal{P}(Y),
+\qquad
+E(y) := \{y' \mid (y,y')\in\mathcal{R}\},
+\]
+where $\mathcal{P}(Y)$ denotes the power set of $Y$.
+
+\paragraph{Closure}
+Relational composition closes up to tolerance:
+\[
+(y,y')\in Z_{\mathrm{rel}},\ (y',y'')\in Z_{\mathrm{rel}}
+\;\Rightarrow\;
+(y,y'')\in Z_{\mathrm{rel}} \ \text{up to } \varepsilon.
+\]
+
+\paragraph{Validity conditions}
+\begin{align}
+C_{\min} &\ge C_8 > 0, \\
+\text{No admissible single-valued } T_A &\text{ exists on the domain.}
+\end{align}
+
+\paragraph{Failure}
+\begin{itemize}
+\item Relational structure becomes unstable or dense;
+\item No controlled restriction of $\mathcal{R}$ exists;
+\item Coherence capacity collapses globally.
+\end{itemize}
+
+\paragraph{Remarks}
+This encoding represents the weakest admissible description short of
+total loss of describability. It captures persistent constraints on
+allowed transitions without introducing local coordinates, states,
+or probabilities.
+%-------------------------------------------------
+\subsection{Encoding E$_9$: Statistical Ensemble Chart}
+
+This encoding applies when local or pointwise reduced descriptions fail,
+but stable statistical structure persists without a well-defined
+invariant measure.
+
+\paragraph{Existence hypothesis}
+\begin{itemize}
+\item No admissible invariant or stationary measure exists on the
+      admissible domain.
+\item Long-time empirical averages or ensemble summaries stabilize
+      under reduced evolution.
+\item Single-trajectory descriptions do not close, but aggregate
+      quantities do.
+\end{itemize}
+
+\paragraph{Variables}
+The reduced variables are ensemble summaries:
+\[
+Z_{\mathrm{stat}} := \{\text{empirical distributions, moments, or coarse summaries}\}.
+\]
+
+\paragraph{Chart map}
+\[
+E : P(A) \to Z_{\mathrm{stat}},
+\qquad
+E(y) := \lim_{N\to\infty} \frac{1}{N}\sum_{k=1}^N \mathcal{O}(T_A^k(y)),
+\]
+whenever the limit exists for the chosen summary observable $\mathcal{O}$.
+
+\paragraph{Closure}
+Ensemble evolution closes approximately:
+\[
+E(T_A(y)) = F(E(y)) + \delta(y),
+\qquad \|\delta(y)\|\le c_9\,\varepsilon,
+\]
+even though no pointwise closure exists.
+
+\paragraph{Validity conditions}
+\begin{align}
+C_{\min} &\ge C_9 > 0, \\
+\text{No invariant measure } \mu &\text{ exists on the domain.}
+\end{align}
+
+\paragraph{Failure}
+\begin{itemize}
+\item Ensemble summaries fail to stabilize;
+\item Strong nonstationarity destroys aggregate closure;
+\item Capacity collapses and no admissible encoding remains.
+\end{itemize}
+
+\paragraph{Remarks}
+This encoding is strictly weaker than probabilistic encodings.
+It captures stable statistical structure without invoking probability,
+random variables, or stochastic dynamics.
+\begin{remark}[Interpretive correspondence (non-axiomatic)]
+In phenomenological applications, regimes dominated by Encoding E$_9$
+(statistical ensemble structure without local realization) correspond
+to effects commonly attributed to unseen clustering sources, while
+regimes dominated by Encoding E$_8$ (pure relational transition
+structure) correspond to uniform large-scale drift without localized
+sources. No new degrees of freedom are introduced by either encoding.
+\end{remark}
+
+%-------------------------------------------------
+
+\subsection{Atlas summary}
+
+Admissible encodings range from strong coordinate descriptions
+to purely relational and statistical encodings.
+As coherence capacity decreases, admissible encodings weaken in the order
+\[
+E_1 \;\to\; \cdots \;\to\; E_7 \;\to\; E_9 \;\to\; E_8,
+\]
+with $E_8$ representing the final admissible relational structure
+before total loss of describability.
+
+
+\section{Admissibility Boundaries and Selection}
+
+This section analyzes the failure of admissible reduced descriptions.
+All notions refer to the definitions in Section~1 and are purely structural.
+
+\subsection{Admissibility barriers}
+
+We recall the definition of an admissibility barrier from
+Definition~\ref{def:admissibility-barrier}.
+No additional structure is assumed here.
+
+\subsection{Termination of encodings}
+
+\begin{theorem}[Termination at barriers]
+Let $\mathcal{E}=(A,Z,E,F,\varepsilon)$ be an admissible encoding.
+If a trajectory intersects an admissibility barrier $\mathcal{B}$,
+then $\mathcal{E}$ cannot be extended across $\mathcal{B}$.
+\end{theorem}
+
+\begin{proof}[Sketch]
+Extension would require a measurable section of $P$ across the barrier,
+contradicting the defining property of $\mathcal{B}$.
+\end{proof}
+
+\subsection{Selection events}
+
+\begin{definition}[Selection event]
+A selection event is a transition of a trajectory from one admissible
+basin to another when admissibility modules saturate and FCC no longer
+holds uniformly along the trajectory.
+\end{definition}
+
+Selection is defined without reference to outcomes or measurement.
+
+\subsection{Irreversibility of selection}
+
+\begin{theorem}[Irreversibility of selection]
+Selection events are irreversible for all admissible reduced descriptions.
+\end{theorem}
+
+\begin{proof}[Sketch]
+Non-injectivity of $P$ combined with loss of FCC prevents reconstruction
+of pre-selection basin membership from post-selection reduced data.
+\end{proof}
+
+\subsection{Boundary layers}
+
+\begin{definition}[Boundary layer]
+A boundary layer is a region where admissibility holds but
+\[
+0 < C(x) \ll 1 .
+\]
+\end{definition}
+
+\begin{theorem}[Universality in boundary layers]
+All admissible encodings exhibit qualitatively similar behavior in
+boundary layers, independent of coordinate choice.
+\end{theorem}
+
+Such behavior includes sensitivity amplification and loss of global
+closure.
+
+\subsection{Records}
+
+\begin{definition}[Record]
+A record is a reduced structure that remains invariant under subsequent
+admissible reduced evolution after a selection event.
+\end{definition}
+
+\begin{theorem}[Record formation]
+If the post-selection basin satisfies FCC with positive slack,
+then records necessarily form.
+\end{theorem}
+
+Records induce a partial order on selection events.
+
+\subsection{Probability at boundaries (conditional)}
+
+Assume the existence of an invariant measure $\mu$ on an admissible
+domain $A$.
+
+\begin{theorem}[Boundary probability]
+When a selection event forces a choice among basins $\{B_i\}$,
+the basin weights
+\[
+W_i =
+\frac{\mu(P^{-1}(B_i)\cap A)}
+{\sum_j \mu(P^{-1}(B_j)\cap A)}
+\]
+define consistent selection probabilities.
+\end{theorem}
+
+If no invariant measure exists, no probabilistic statement is made.
+
+\subsection{No global reversibility}
+
+\begin{theorem}[No global reversibility]
+There exists no reduced description that is reversible across all
+admissibility barriers.
+\end{theorem}
+
+\subsection{Boundary summary}
+
+Admissibility barriers mark the limits of reduced description.
+At such limits, encodings must either terminate or be replaced by
+distinct encodings on other admissible domains.
+% =====================================================
+\section*{Part III: Structural Closure}
+\addcontentsline{toc}{section}{Part III: Structural Closure}
+\section{Category of Admissible Encodings}
+
+This section formalizes relations between admissible encodings using
+category-theoretic language.
+All constructions are local to admissible domains and respect tolerance.
+
+\subsection{Objects}
+
+\begin{definition}[Encoding object]
+An object $\mathcal{E}$ of the category $\mathbf{AdmEnc}$ is a tuple
+\[
+\mathcal{E} = (A,\;Z,\;E,\;F,\;\varepsilon)
+\]
+where:
+\begin{itemize}
+\item $A\subset X$ is an admissible domain satisfying FCC;
+\item $Z$ is a reduced coordinate space;
+\item $E : P(A)\to Z$ is a chart map;
+\item $F : Z\to Z$ is a closure map satisfying
+\[
+E(T_A(y)) = F(E(y)) + \delta(y),
+\quad \|\delta(y)\|\le c\,\varepsilon;
+\]
+\item $\varepsilon>0$ is the tolerance.
+\end{itemize}
+\end{definition}
+
+Objects are local coordinate charts on neighborhoods of stable basins.
+
+\subsection{Morphisms}
+
+\begin{definition}[Re-encoding morphism]
+Let $\mathcal{E}_1=(A_1,Z_1,E_1,F_1,\varepsilon)$ and
+$\mathcal{E}_2=(A_2,Z_2,E_2,F_2,\varepsilon)$.
+
+A morphism
+\[
+f:\mathcal{E}_1 \to \mathcal{E}_2
+\]
+exists if $A_{12}:=A_1\cap A_2\neq\varnothing$ and there is a map
+$f:Z_1\to Z_2$ such that
+\[
+E_2(y) = f(E_1(y)) + \delta_{12}(y),
+\quad \|\delta_{12}(y)\|\le c_{12}\,\varepsilon
+\]
+for all $y\in P(A_{12})$.
+\end{definition}
+
+Morphisms represent controlled re-encodings on overlaps.
+
+\subsection{Composition}
+
+Morphisms compose by ordinary composition of maps on reduced spaces.
+Composition is defined only on triple overlaps
+$A_1\cap A_2\cap A_3$ and accumulated error must remain bounded by
+a constant multiple of $\varepsilon$.
+
+\subsection{Quotient by tolerance}
+
+\begin{definition}[Tolerance equivalence]
+Two morphisms $f,g:\mathcal{E}_1\to\mathcal{E}_2$ are equivalent if
+\[
+\sup_{y\in P(A_{12})}\|f(E_1(y)) - g(E_1(y))\|
+\le c\,\varepsilon .
+\]
+\end{definition}
+
+Let $\mathbf{AdmEnc}/\!\sim$ denote the quotient category.
+
+\subsection{Coherent encoding on a domain}
+
+\begin{definition}[Coherent encoding]
+Given an admissible domain $A$ with section $S_A$ and reduced map $T_A$,
+define the coherent encoding
+\[
+\mathcal{C}_A := (A,\;P(A),\;\mathrm{id},\;T_A,\;\varepsilon).
+\]
+\end{definition}
+
+\subsection{Local universal factorization}
+
+\begin{theorem}[Local factorization]
+Let $\mathcal{E}$ be an encoding defined on an admissible domain $A$.
+Then there exists a unique morphism
+\[
+f_{\mathcal{E}}:\mathcal{E}\to\mathcal{C}_A
+\]
+in $\mathbf{AdmEnc}/\!\sim$.
+\end{theorem}
+
+This expresses that all admissible encodings on $A$ reduce to the same
+coherent content on $P(A)$.
+
+\subsection{Local terminality}
+
+\begin{theorem}[Local terminality]
+For a fixed admissible domain $A$, the coherent encoding $\mathcal{C}_A$
+is terminal in the full subcategory of $\mathbf{AdmEnc}/\!\sim$
+consisting of encodings defined on $A$.
+\end{theorem}
+
+\begin{remark}
+Terminality is local in $A$.
+No claim of global terminality is made.
+\end{remark}
+
+\subsection{Obstruction to global objects}
+
+\begin{theorem}[No extension across barriers]
+Let $\mathcal{E}_+$ and $\mathcal{E}_-$ be encodings defined on admissible
+domains $A_+$ and $A_-$ separated by an admissibility barrier.
+There exists no encoding defined on $A_+\cup A_-$ that restricts to both.
+\end{theorem}
+
+\begin{corollary}[No global encoding]
+There exists no object of $\mathbf{AdmEnc}$ whose domain is all of $X$.
+\end{corollary}
+
+\subsection{Probability as a functor (conditional)}
+
+Assume the existence of an invariant measure $\mu$ on an admissible
+domain $A$.
+
+\begin{definition}[Selection functor]
+Define a functor
+\[
+\mathsf{Sel} : \mathbf{AdmEnc} \to \mathbf{Prob}
+\]
+mapping encodings on $A$ to probability spaces whose weights are given
+by basin measures, and morphisms to pushforward maps.
+\end{definition}
+
+\begin{theorem}[Functorial probability]
+Probability assignments are functorial images of basin partitions under
+$\mathsf{Sel}$.
+\end{theorem}
+
+If no invariant measure exists, $\mathsf{Sel}$ is undefined.
+
+\subsection{Category summary}
+
+The category $\mathbf{AdmEnc}$ formalizes local reduced descriptions and
+their relations.
+Its quotient by tolerance admits local terminal objects but no global
+object.
+
+\section*{Part IV: Total Atlas}
+\addcontentsline{toc}{section}{Part IV: Total Atlas}
+
+\section{Total Atlas: A Global Chart-of-Charts}
+
+This section introduces a global object that \emph{contains} all admissible encodings
+without asserting the existence of any single globally valid encoding.
+It formalizes the idea of a \emph{total chart} as a chart-of-charts.
+
+\subsection{Local encoding fiber}
+
+\begin{definition}[Encoding fiber]
+Let $(X,\Phi,P)$ be an abstract projection system with tolerance $\varepsilon$.
+For each $x\in X$, define the encoding fiber
+\[
+\mathrm{Enc}(x) := \{\mathcal{E}=(A,Z,E,F,\varepsilon)\in \mathbf{AdmEnc} \mid x\in A\}.
+\]
+\end{definition}
+
+\begin{remark}
+$\mathrm{Enc}(x)$ is the set of all reduced descriptions available at $x$.
+Finite admissibility implies $\mathrm{Enc}(x)$ may be empty for some $x$.
+\end{remark}
+
+\subsection{Encoding fibration}
+
+\begin{definition}[Encoding fibration]
+Define the total encoding space
+\[
+\mathbb{E} := \{(x,\mathcal{E}) \mid x\in X,\ \mathcal{E}\in \mathrm{Enc}(x)\},
+\]
+with projection map
+\[
+\pi:\mathbb{E}\to X,\qquad \pi(x,\mathcal{E})=x.
+\]
+\end{definition}
+
+\begin{remark}
+The fiber $\pi^{-1}(x)$ is canonically identified with $\mathrm{Enc}(x)$.
+The object $\pi:\mathbb{E}\to X$ is not itself an encoding; it is a \emph{bundle of encodings}.
+\end{remark}
+
+\subsection{Admissibility limits as fiber collapse}
+
+\begin{definition}[Encodability set]
+Define the encodable subset of $X$ by
+\[
+X_{\mathrm{enc}} := \{x\in X \mid \mathrm{Enc}(x)\neq\varnothing\}.
+\]
+\end{definition}
+
+\begin{definition}[Encoding boundary set]
+Define the encoding boundary set as
+\[
+\partial X_{\mathrm{enc}} := \overline{X_{\mathrm{enc}}}\setminus X_{\mathrm{enc}}.
+\]
+\end{definition}
+
+\begin{remark}
+Points in $\partial X_{\mathrm{enc}}$ are precisely those at which
+encoding availability collapses. This notion is global and does not presuppose
+a codimension-one geometric boundary.
+\end{remark}
+
+\subsection{Chart viability field}
+
+The atlas in Section~3 provides \emph{sufficient contracts} in terms of local control
+quantities. We now compress those contracts into a single diagnostic.
+
+\begin{definition}[Chart viability functional]
+For an encoding $\mathcal{E}$ and a point $x\in X$, define a chart viability score
+\[
+\mathcal{V}_{\mathcal{E}}(x) \in \mathbb{R}
+\]
+as any scalar functional such that:
+\begin{enumerate}
+\item $\mathcal{V}_{\mathcal{E}}(x)>0$ implies $x\in A_{\mathcal{E}}$ and all stated
+      inequality contracts of $\mathcal{E}$ hold at $x$;
+\item $\mathcal{V}_{\mathcal{E}}(x)\le 0$ implies at least one contract of $\mathcal{E}$ fails at $x$.
+\end{enumerate}
+\end{definition}
+
+\begin{remark}
+$\mathcal{V}_{\mathcal{E}}$ is not unique; it is a diagnostic that packages the
+inequality contracts of $\mathcal{E}$ into a single scalar.
+\end{remark}
+
+\begin{definition}[Maximal viability]
+Define the maximal viability at $x$ by
+\[
+\mathcal{V}^\ast(x) := \sup_{\mathcal{E}\in \mathrm{Enc}(x)} \mathcal{V}_{\mathcal{E}}(x),
+\]
+with the convention $\mathcal{V}^\ast(x)=-\infty$ if $\mathrm{Enc}(x)=\varnothing$.
+\end{definition}
+
+\begin{remark}
+$\mathcal{V}^\ast(x)$ measures the best available reduced description at $x$.
+The encoding boundary set $\partial X_{\mathrm{enc}}$ corresponds to collapse of
+$\mathcal{V}^\ast$ to nonpositivity in any neighborhood representation.
+\end{remark}
+
+\subsection{The overlap nerve of the atlas}
+
+We now define a global topological summary of chart overlap.
+
+\begin{definition}[Overlap relation]
+Two encodings $\mathcal{E}_i=(A_i,\dots)$ and $\mathcal{E}_j=(A_j,\dots)$ overlap if
+\[
+A_i\cap A_j \neq \varnothing
+\]
+and there exists a re-encoding morphism on the overlap in $\mathbf{AdmEnc}/\!\sim$.
+\end{definition}
+
+\begin{definition}[Atlas nerve]
+Let $\{\mathcal{E}_\alpha\}$ be a chosen family of encodings.
+The nerve $\mathcal{N}$ is the simplicial complex whose:
+\begin{itemize}
+\item vertices are encodings $\mathcal{E}_\alpha$;
+\item a $k$-simplex $(\mathcal{E}_{\alpha_0},\dots,\mathcal{E}_{\alpha_k})$ exists
+      iff $\bigcap_{i=0}^k A_{\alpha_i}\neq\varnothing$ and transition morphisms are
+      controlled on that intersection.
+\end{itemize}
+\end{definition}
+
+\begin{remark}
+Holes or obstruction cycles in $\mathcal{N}$ represent failures of global gluing and
+encode barrier structure at the atlas level.
+\end{remark}
+
+\subsection{Universal reduced relation}
+
+Finite admissibility forbids a global single-valued reduced evolution on $Y$.
+The correct global object is a relation.
+
+\begin{definition}[Universal reduced relation]
+Define the universal reduced relation $\mathcal{R}\subset Y\times Y$ by
+\[
+\mathcal{R} := \{(y,y')\in Y\times Y \mid \exists x\in X \text{ such that } y=P(x),\ y'=P(\Phi_\tau(x))\}.
+\]
+\end{definition}
+
+\begin{remark}
+$\mathcal{R}$ is always well-defined and global, even when no global reduced map exists.
+On an admissible domain $A$ with section $S_A$, $\mathcal{R}$ restricts to the graph of
+the single-valued reduced map $T_A$ on $P(A)$.
+\end{remark}
+
+\subsection{Total-atlas summary}
+
+The total atlas consists of:
+\begin{itemize}
+\item the encoding fibration $\pi:\mathbb{E}\to X$ capturing all admissible encodings as fibers;
+\item the maximal viability field $\mathcal{V}^\ast$ diagnosing where any encoding is possible;
+\item the overlap nerve $\mathcal{N}$ summarizing gluing and obstruction structure;
+\item the universal reduced relation $\mathcal{R}\subset Y\times Y$ capturing global reduced transitions.
+\end{itemize}
+
+No single global encoding is asserted; instead the theory provides a global
+\emph{chart-of-charts} object that makes admissibility limits explicit.
+
+
+% =====================================================
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+
+\noindent
+Modal Triplet Theory is presented here as a conditional, non-self-sealing
+framework. It asserts no ontology and no universal effective law.
+Instead, it classifies when reduced descriptions exist, how they must
+relate, and why they necessarily fail beyond finite admissibility.
+All claims are local, tolerance-bounded, and structurally enforced by
+projection and contractive dynamics.
+
+\vspace{1em}
+
+\noindent
+Any physical interpretation is an external assignment layered atop the
+mathematical structure developed herein.
+\bigskip
+%\nocite{*}
+\bibliographystyle{plain} % or abbrv, unsrt, alpha, etc
+\bibliography{main}
+
+\end{document}
+

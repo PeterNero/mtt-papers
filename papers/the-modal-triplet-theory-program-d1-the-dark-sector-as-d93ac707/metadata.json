@@ -1,0 +1,93 @@
+{
+  "abstract": "We reinterpret dark matter and dark energy as phenomenological regimes arising from restricted availability of admissible encodings in the Modal Triplet Theory (MTT) framework. No new obstruction types or encoding responses are introduced. Instead, dark sector phenomena are shown to emerge when local descriptive encodings fail or decouple, leaving only relational or statistical encodings active. Dark matter is associated with regimes dominated by statistical ensemble encodings (E9), in which matter influences kinematic consistency and curvature through aggregate effects but lacks stable local descriptive structure. Dark energy is associated with regimes dominated by relational encodings (E8), in which global transition structure persists while local matter descriptions are absent or ineffective. This perspective explains the universality, gravitational coupling, and apparent non-interaction of the dark sector without postulating new particles, forces, or fields. The dark sector is not fundamental; it reflects descriptive incompleteness rather than new ontology. Observational consequences are discussed at the level of effective behavior, without modifying the structural or encoding-level results of the theory.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18355166",
+    "created": "2026-01-23T20:14:52.937887+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18355167",
+    "files": [
+      {
+        "checksum": "md5:41fec75f636392e48c92c25fcdd0f31e",
+        "content_url": "https://zenodo.org/api/records/18355167/files/The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings%20(2).pdf/content",
+        "key": "The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings (2).pdf",
+        "size": 214326
+      }
+    ],
+    "id": "18355167",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-23",
+    "record_url": "https://zenodo.org/records/18355167",
+    "resource_type": "publication",
+    "title": "The Modal Triplet Theory Program D1: The Dark Sector as Missing Encodings",
+    "updated": "2026-01-23T20:14:53.398397+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "5d23090e8f374548787f2a37ee43711bbf1d50adc960f4e37d7d5533e26a11ae",
+  "paper_id": "the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707",
+  "paper_md_sha256": "eae7840f2e21fc040fff241d3c3aa38a4654856fe591f961263d311e7b1e1f80",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 33326,
+      "path": "main.bib",
+      "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
+    },
+    {
+      "bytes": 34840,
+      "path": "main.tex",
+      "sha256": "5d23090e8f374548787f2a37ee43711bbf1d50adc960f4e37d7d5533e26a11ae"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings"
+  },
+  "source_tree_sha256": "3af2a44588b8a9209c40c37c9d72a355b631d22062de3299aa5e3656b19ea0e3",
+  "title": "The Modal Triplet Theory Program D1: The Dark Sector as Missing Encodings in the Modal Triplet Theory Program",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18355166",
+      "created": "2026-01-23T20:14:52.937887+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18355167",
+      "files": [
+        {
+          "checksum": "md5:41fec75f636392e48c92c25fcdd0f31e",
+          "content_url": "https://zenodo.org/api/records/18355167/files/The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings%20(2).pdf/content",
+          "key": "The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings (2).pdf",
+          "size": 214326
+        }
+      ],
+      "id": "18355167",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-23",
+      "record_url": "https://zenodo.org/records/18355167",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program D1: The Dark Sector as Missing Encodings",
+      "updated": "2026-01-23T20:14:53.398397+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

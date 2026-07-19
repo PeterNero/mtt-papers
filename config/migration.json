@@ -1,0 +1,170 @@
+{
+  "schema": "mtt.paper-migration-config.v1",
+  "expected_canonical_papers": 138,
+  "source_roots": [
+    "0 Index Corpus",
+    "1 Core & Encodings",
+    "2 Meta & Diagnosis & Universality",
+    "3 Core Foundations",
+    "4 Fixed Points",
+    "5 Dirac Delta",
+    "6 Quantum Mechanics",
+    "7 Quantum Field Theory",
+    "8 Measurement, Selection & Computation",
+    "9 Bell, Entanglement & Time",
+    "10 ProtoSpinor",
+    "10 The Book on Modal Triplet Theory",
+    "11 General Relativity & Geometry",
+    "12 Quantum Gravity",
+    "13 Standard Model & Topology-Only Constraints",
+    "14 Coherence Capacity Program",
+    "15 Discrete & Spectral & Operator Geometric Theories",
+    "16 Strings, Flux, & M-Theory Encodings",
+    "17 Topology, Invariants & Condensed-Matter Shadows",
+    "18 Theta-Closure & Execution Program",
+    "19 A project-first reframing"
+  ],
+  "replacements": [
+    {
+      "superseded_project": "3 Core Foundations/_work/Baseline_Scales_and_Phenomenological_Consistency_in_Modal_Triplet_Theory",
+      "selected_project": "3 Core Foundations/revised_tex_vnext/Baseline_Scales_and_Phenomenological_Consistency_in_Modal_Triplet_Theory_v2",
+      "revision_evidence": "3 Core Foundations/revised_tex_vnext/BASELINE_SCALES_V2_REVISION_AUDIT.md"
+    },
+    {
+      "superseded_project": "3 Core Foundations/_work/Coherent_Kinematics_in_Modal_Triplet_Theory",
+      "selected_project": "3 Core Foundations/revised_tex_vnext/Coherent_Kinematics_in_Modal_Triplet_Theory_v2",
+      "revision_evidence": "3 Core Foundations/revised_tex_vnext/COHERENT_KINEMATICS_V2_REVISION_AUDIT.md"
+    },
+    {
+      "superseded_project": "3 Core Foundations/_work/Modal_Triplet_Theory__Foundation_v6 (1)",
+      "selected_project": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__Foundation_v7",
+      "revision_evidence": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V7_REVISION_AUDIT.md"
+    },
+    {
+      "superseded_project": "3 Core Foundations/_work/Modal_Triplet_Theory__MTT_as_a_Superset_v2",
+      "selected_project": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__A_Typed_Relationship_Atlas_v3",
+      "revision_evidence": "3 Core Foundations/revised_tex_vnext/RELATIONSHIP_ATLAS_V3_REVISION_AUDIT.md"
+    },
+    {
+      "superseded_project": "3 Core Foundations/_work/Signature_Selection_and_Exclusion_in_Modal_Triplet_Theory",
+      "selected_project": "3 Core Foundations/revised_tex_vnext/Lorentzian_Base_Compatibility_and_Signature_Stability_in_the_MTT_Fixed_Point_Realization_v2",
+      "revision_evidence": "3 Core Foundations/revised_tex_vnext/SIGNATURE_STABILITY_V2_REVISION_AUDIT.md"
+    },
+    {
+      "superseded_project": "3 Core Foundations/_work/The_Projection__Admissibility_Principle__Structural_Constraints_on_Effective_Physical_Description (1)",
+      "selected_project": "3 Core Foundations/revised_tex_vnext/The_Projection__Admissibility_Principle__Descent__Recovery__and_Structural_Constraints_v2",
+      "revision_evidence": "3 Core Foundations/revised_tex_vnext/PROJECTION_ADMISSIBILITY_V2_REVISION_AUDIT.md"
+    },
+    {
+      "superseded_project": "4 Fixed Points/_work/Fixed_Points_I__Fixed_Points_over_Multi_Bundle_Manifolds_v5",
+      "selected_project": "4 Fixed Points/revised_tex_vnext/Fixed_Points_I__Fixed_Points_over_Multi_Bundle_Manifolds_v6",
+      "revision_evidence": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_I_V6_REVISION_AUDIT.md"
+    },
+    {
+      "superseded_project": "4 Fixed Points/_work/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v2",
+      "selected_project": "4 Fixed Points/revised_tex_vnext/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v3",
+      "revision_evidence": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_II_V3_REVISION_AUDIT.md"
+    },
+    {
+      "superseded_project": "4 Fixed Points/_work/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v3",
+      "selected_project": "4 Fixed Points/revised_tex_vnext/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v4",
+      "revision_evidence": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_III_V4_REVISION_AUDIT.md"
+    },
+    {
+      "superseded_project": "4 Fixed Points/_work/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v3",
+      "selected_project": "4 Fixed Points/revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4",
+      "revision_evidence": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_IV_V4_REVISION_AUDIT.md"
+    },
+    {
+      "superseded_project": "4 Fixed Points/_work/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v5",
+      "selected_project": "4 Fixed Points/revised_tex_vnext/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v6",
+      "revision_evidence": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_V_V6_REVISION_AUDIT.md"
+    },
+    {
+      "superseded_project": "4 Fixed Points/_work/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v3",
+      "selected_project": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4",
+      "revision_evidence": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_VI_V4_REVISION_AUDIT.md"
+    },
+    {
+      "superseded_project": "10 ProtoSpinor/_work/Closure_Geometry_and_Unified_Dynamics__A_Ten_Dimensional_Action_for_Mass__Scalar_Relaxation__Quantization__and_Curvature_v3",
+      "selected_project": "10 ProtoSpinor/revised_tex_vnext/Closure_Geometry_and_a_Regime_Local_Ten_Dimensional_Action_Ansatz_v4",
+      "revision_evidence": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md"
+    },
+    {
+      "superseded_project": "10 ProtoSpinor/_work/Closure_Strain_Geometry_and_the_Structure_of_the_Standard_Model_v5",
+      "selected_project": "10 ProtoSpinor/revised_tex_vnext/Closure_Strain_Geometry__Local_Normal_Forms_and_Conditional_Matter_Encodings_v6",
+      "revision_evidence": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md"
+    },
+    {
+      "superseded_project": "10 ProtoSpinor/_work/Proto_Spinor_Closure_and_Worldsheet_Encoding_in_Modal_Triplet_Theory_v3",
+      "selected_project": "10 ProtoSpinor/revised_tex_vnext/Proto_Spinor_Closure_and_Worldsheet_Encoding_in_Modal_Triplet_Theory_v4",
+      "revision_evidence": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md"
+    },
+    {
+      "superseded_project": "10 ProtoSpinor/_work/The_Proto_Spinor__Triadic_Closure_from_Pointwise_Internal_Embedding_v4",
+      "selected_project": "10 ProtoSpinor/revised_tex_vnext/The_Proto_Spinor__Conditional_Spinorial_Closure_and_q79_Interface_v5",
+      "revision_evidence": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md"
+    },
+    {
+      "superseded_project": "10 ProtoSpinor/_work/World_in_World_Genesis__A_Proto_Geometric_Origin_of_Time__Gravity__Matter__and_Quantization_in_Modal_Triplet_Theory_v4",
+      "selected_project": "10 ProtoSpinor/revised_tex_vnext/World_in_World_Genesis__Local_Comparison_Geometry_and_Globalization_Program_v5",
+      "revision_evidence": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md"
+    },
+    {
+      "superseded_project": "10 The Book on Modal Triplet Theory/_work/The_Book_on_Modal_Triplet_Theory_v9",
+      "selected_project": "10 The Book on Modal Triplet Theory/revised_tex_vnext/The_Book_on_Modal_Triplet_Theory_v10",
+      "revision_evidence": "10 The Book on Modal Triplet Theory/BOOK_V10_CURRENT_CORPUS_RECONCILIATION_AUDIT_2026-07-15.md"
+    },
+    {
+      "superseded_project": "18 Theta-Closure & Execution Program/_work/A_Tiered_Roadmap_for_Calculations_in_Modal_Triplet_Theory__MTT__v2",
+      "selected_project": "18 Theta-Closure & Execution Program/revised_tex_vnext/A_Tiered_Roadmap_for_Calculations_in_Modal_Triplet_Theory__MTT__v3",
+      "revision_evidence": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md"
+    },
+    {
+      "superseded_project": "18 Theta-Closure & Execution Program/_work/Execution_of_Modal_Triplet_Theory_I__Gauge__Axion__and_Threshold_Sectors_v2",
+      "selected_project": "18 Theta-Closure & Execution Program/revised_tex_vnext/Execution_of_Modal_Triplet_Theory_I__Gauge__Axion__and_Threshold_Sectors_v3",
+      "revision_evidence": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md"
+    },
+    {
+      "superseded_project": "18 Theta-Closure & Execution Program/_work/Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v2",
+      "selected_project": "18 Theta-Closure & Execution Program/revised_tex_vnext/Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v3",
+      "revision_evidence": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md"
+    },
+    {
+      "superseded_project": "18 Theta-Closure & Execution Program/_work/Geometry__Light_Relations_in_Modal_Triplet_Theory__MTT__v2",
+      "selected_project": "18 Theta-Closure & Execution Program/revised_tex_vnext/Geometry__Light_Relations_in_Modal_Triplet_Theory__MTT__v3",
+      "revision_evidence": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md"
+    },
+    {
+      "superseded_project": "18 Theta-Closure & Execution Program/_work/Superset_Determinations_in_Modal_Triplet_Theory_v2",
+      "selected_project": "18 Theta-Closure & Execution Program/revised_tex_vnext/Superset_Determinations_in_Modal_Triplet_Theory_v3",
+      "revision_evidence": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md"
+    },
+    {
+      "superseded_project": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_I__Gauge_Couplings_from_Internal_Geometry",
+      "selected_project": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_I__Gauge_Couplings_from_Internal_Geometry_v2",
+      "revision_evidence": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md"
+    },
+    {
+      "superseded_project": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_II__Direct_Geometric_Realization_of_Nonabelian_Overlaps",
+      "selected_project": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_II__Direct_Geometric_Realization_of_Nonabelian_Overlaps_v2",
+      "revision_evidence": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md"
+    },
+    {
+      "superseded_project": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_III__Twistor_Action_Matching_and_Independent_Normalization",
+      "selected_project": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_III__Twistor_Action_Matching_and_Independent_Normalization_v2",
+      "revision_evidence": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md"
+    },
+    {
+      "superseded_project": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_IV__Gravity_and_Cosmology_from_the_Closure_Scale",
+      "selected_project": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_IV__Gravity_and_Cosmology_from_the_Closure_Scale_v2",
+      "revision_evidence": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md"
+    },
+    {
+      "superseded_project": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_V__Redundant_Determination_from_Gauge_Couplings_and_the_Weak_Mixing_Angle",
+      "selected_project": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_V__Redundant_Determination_from_Gauge_Couplings_and_the_Weak_Mixing_Angle_v2",
+      "revision_evidence": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md"
+    }
+  ],
+  "zenodo_record_overrides": {}
+}

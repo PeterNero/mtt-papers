@@ -1,0 +1,88 @@
+{
+  "abstract": "We present a first\u2013principles derivation of perturbative quantum field theory amplitudes from Modal Triplet Theory (MTT). Starting from the coherent fixed\u2013point sector of the modal configuration space, we employ the MTT \\rightarrow QFT projection to obtain a locally covariant algebraic quantum field theory (AQFT) on a globally hyperbolic four\u2013dimensional spacetime. Within this framework we construct the local net of observables, establish algebraic propagation via the time\u2013slice axiom, and define interacting quantum fields using perturbative algebraic quantum field theory (pAQFT). Feynman rules, loop corrections, and renormalization are derived as consequences of the algebraic construction rather than postulated. Dimensional regularization with minimal subtraction and the covariant functional renormalization group are recovered as concrete realizations of the underlying algebraic renormalization freedom. We identify the precise conditions under which scattering amplitudes exist, formulate amplitudes via Haag\u2013Ruelle/LSZ theory in admissible scattering regimes, and distinguish them from local or in\u2013in observables in generic curved or time\u2013dependent backgrounds. All effective couplings, masses, and mixing parameters are determined by bounded overlap integrals and curvature\u2013gap data intrinsic to Modal Triplet Theory. When evaluated with identical low\u2013energy inputs, the resulting amplitudes coincide with those of the Standard Model. The construction yields a complete and logically closed amplitudes layer for MTT, bridging modal geometry to perturbative quantum field theory in a mathematically rigorous and regime\u2013aware manner.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "September 8, 2025",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.17076216",
+    "created": "2026-01-21T17:16:38.598475+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18329567",
+    "files": [
+      {
+        "checksum": "md5:fb81e3b4682f86ee73f9dfeb77cede9a",
+        "content_url": "https://zenodo.org/api/records/18329567/files/Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2%20(1).pdf/content",
+        "key": "Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2 (1).pdf",
+        "size": 348486
+      }
+    ],
+    "id": "18329567",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18329567",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: Quantum Amplitudes from Modal Geometry",
+    "updated": "2026-01-21T17:16:38.904084+00:00",
+    "version": "v2.0"
+  },
+  "main_tex_sha256": "c50c4376deecacfaa85cc14f639b9c2445df4f8f423640f6b333d1bd15e986d0",
+  "paper_id": "modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7",
+  "paper_md_sha256": "40ec92761cbc2b99497b4c8531ce62cb39f1375458d61492020e76407148c526",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 8100,
+      "path": "main.bib",
+      "sha256": "213dd605fa58f626f1d7c1aee333bac9176bf769889e18307a6039a08c8247ee"
+    },
+    {
+      "bytes": 64237,
+      "path": "main.tex",
+      "sha256": "c50c4376deecacfaa85cc14f639b9c2445df4f8f423640f6b333d1bd15e986d0"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "7 Quantum Field Theory/_work/Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2"
+  },
+  "source_tree_sha256": "271a8597f741d656e12f4f314edab6b8ecaa2e9d70f78e577d1061173feac602",
+  "title": "Modal Triplet Theory: Quantum Amplitudes from Modal Geometry A First\u2013Principles Derivation of Feynman Rules, Running, and Phenomenology",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17076216",
+      "created": "2026-01-21T17:16:38.598475+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18329567",
+      "files": [
+        {
+          "checksum": "md5:fb81e3b4682f86ee73f9dfeb77cede9a",
+          "content_url": "https://zenodo.org/api/records/18329567/files/Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2%20(1).pdf/content",
+          "key": "Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2 (1).pdf",
+          "size": 348486
+        }
+      ],
+      "id": "18329567",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18329567",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: Quantum Amplitudes from Modal Geometry",
+      "updated": "2026-01-21T17:16:38.904084+00:00",
+      "version": "v2.0"
+    }
+  ]
+}

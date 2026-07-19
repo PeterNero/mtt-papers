@@ -1,0 +1,93 @@
+{
+  "abstract": "We show that gauge structure arises as a necessary encoding class once local describability and overlap consistency coexist with lens obstructions, i.e. with non-unique but consistent local representations. In the Modal Triplet Theory (MTT) framework, gauge is not postulated as a symmetry of underlying reality and is not introduced as a field-theoretic axiom. Rather, it is identified as bookkeeping of descriptive redundancy: the unique encoding that organizes and compensates for the non-uniqueness of admissible local sections while preserving overlap consistency and kinematic persistence. We define gauge transformations as admissible automorphisms of encoding fibers, and show that gauge freedom is unavoidable whenever lens obstructions are present and global canonical representatives do not exist. We further show that in smooth realization classes, redundancy bookkeeping is realized by bundle structure with a connection-like object implementing consistent comparison of redundant representatives. This connection is distinct in role from the kinematic consistency encoding identified with gravity: gravity resolves circle obstructions (loop inconsistency), while gauge resolves lens obstructions (non-unique lifts). The analysis clarifies the structural origin of gauge universality and prepares the ground for quantization as the encoding response to nil obstructions.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18355036",
+    "created": "2026-01-23T20:05:21.925757+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18355037",
+    "files": [
+      {
+        "checksum": "md5:5f3e52b3084e9388a2c484e53bd1a81a",
+        "content_url": "https://zenodo.org/api/records/18355037/files/The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding%20(1).pdf/content",
+        "key": "The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding (1).pdf",
+        "size": 244109
+      }
+    ],
+    "id": "18355037",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-23",
+    "record_url": "https://zenodo.org/records/18355037",
+    "resource_type": "publication",
+    "title": "The Modal Triplet Theory Program B2: Gauge Structure as Redundancy Encoding",
+    "updated": "2026-01-23T20:05:22.385854+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "72d198f4e94ee37ec4e5339ee001451746a4deb9305994285f071b04df1dd7ba",
+  "paper_id": "the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a",
+  "paper_md_sha256": "37a17f2a574df2e99ef231d3eae8b3976e26d8a75799eb1ccaf229a716c28b7b",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 33326,
+      "path": "main.bib",
+      "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
+    },
+    {
+      "bytes": 27222,
+      "path": "main.tex",
+      "sha256": "72d198f4e94ee37ec4e5339ee001451746a4deb9305994285f071b04df1dd7ba"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding"
+  },
+  "source_tree_sha256": "ed2397f9379c78d83c73a57d4315bcd10978211af245e0a0332788352b33189b",
+  "title": "The Modal Triplet Theory Program B2: Gauge Structure as Redundancy Encoding in the Modal Triplet Theory Program",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18355036",
+      "created": "2026-01-23T20:05:21.925757+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18355037",
+      "files": [
+        {
+          "checksum": "md5:5f3e52b3084e9388a2c484e53bd1a81a",
+          "content_url": "https://zenodo.org/api/records/18355037/files/The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding%20(1).pdf/content",
+          "key": "The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding (1).pdf",
+          "size": 244109
+        }
+      ],
+      "id": "18355037",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-23",
+      "record_url": "https://zenodo.org/records/18355037",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B2: Gauge Structure as Redundancy Encoding",
+      "updated": "2026-01-23T20:05:22.385854+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

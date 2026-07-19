@@ -1,0 +1,93 @@
+{
+  "abstract": "We develop a kinematic framework for Modal Triplet Theory (MTT) that does not presuppose spacetime, geometry, or equations of motion. Kinematics is defined structurally, in terms of persistence of coherent structures across overlapping admissible encodings in the encoding atlas. Motion is identified with admissible continuation through chains of overlapping descriptions, while worldlines are equivalence classes of such continuations under re-encoding. We show that causal structure, horizon formation, and irreversibility arise as inevitable consequences of finite admissibility and obstruction to global description. Null and timelike distinctions are derived from admissible continuation properties rather than from a metric. No dynamical laws are assumed; the results apply to all realization classes compatible with the MTT structural core. This work provides the kinematic layer of the MTT program, bridging the abstract classification of reduced descriptions and the downstream encoding-class papers in which gravity, gauge structure, and quantization emerge as bookkeeping responses to structural obstructions.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18354942",
+    "created": "2026-01-23T19:58:20.088613+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18354943",
+    "files": [
+      {
+        "checksum": "md5:82ba63492cf6471356fe58f2bbf21fab",
+        "content_url": "https://zenodo.org/api/records/18354943/files/The_Modal_Triplet_Theory_Program_A1__Coherent_Kinematics%20(1).pdf/content",
+        "key": "The_Modal_Triplet_Theory_Program_A1__Coherent_Kinematics (1).pdf",
+        "size": 271733
+      }
+    ],
+    "id": "18354943",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-23",
+    "record_url": "https://zenodo.org/records/18354943",
+    "resource_type": "publication",
+    "title": "The Modal Triplet Theory Program A1: Coherent Kinematics",
+    "updated": "2026-01-23T19:58:20.499565+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "d52feeb32fe111cdd7cda9add7969feb470d6b68be6033d6926fd8fed7e921f8",
+  "paper_id": "the-modal-triplet-theory-program-a1-coherent-kinematics",
+  "paper_md_sha256": "ea8f44b6348e82feadd052482d4cb06d524673d29d53d800cd222ef26da83650",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 33326,
+      "path": "main.bib",
+      "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
+    },
+    {
+      "bytes": 30414,
+      "path": "main.tex",
+      "sha256": "d52feeb32fe111cdd7cda9add7969feb470d6b68be6033d6926fd8fed7e921f8"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A1__Coherent_Kinematics"
+  },
+  "source_tree_sha256": "eeaa772af66cd1cd4c4fae87bbe3d626b682827b8eaf20e60b24e8b0d943d961",
+  "title": "The Modal Triplet Theory Program A1: Coherent Kinematics",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18354942",
+      "created": "2026-01-23T19:58:20.088613+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18354943",
+      "files": [
+        {
+          "checksum": "md5:82ba63492cf6471356fe58f2bbf21fab",
+          "content_url": "https://zenodo.org/api/records/18354943/files/The_Modal_Triplet_Theory_Program_A1__Coherent_Kinematics%20(1).pdf/content",
+          "key": "The_Modal_Triplet_Theory_Program_A1__Coherent_Kinematics (1).pdf",
+          "size": 271733
+        }
+      ],
+      "id": "18354943",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-23",
+      "record_url": "https://zenodo.org/records/18354943",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program A1: Coherent Kinematics",
+      "updated": "2026-01-23T19:58:20.499565+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

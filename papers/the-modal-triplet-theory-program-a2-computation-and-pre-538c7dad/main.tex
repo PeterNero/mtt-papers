@@ -1,0 +1,774 @@
+\documentclass[11pt]{article}
+\usepackage{series}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+
+
+% ---------- metadata ----------
+\title{The Modal Triplet Theory Program A2:\\ Computation and Predictive Limits\\
+in the Modal Triplet Theory Program}
+\author{Peter Nero}
+\date{January, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We analyze limits of computation, prediction, and control that arise as
+structural consequences of admissible description in the Modal Triplet Theory
+(MTT) framework. Without invoking complexity theory, algorithmic randomness, or
+resource constraints, we show that finite admissibility, kinematic persistence,
+and selection fronts impose intrinsic limits on what can be predicted or decided
+within any admissible encoding.
+
+We introduce the notion of admissible prediction depth and show that, in the
+presence of selection fronts and nil obstructions, well-posed questions about
+future kinematic continuation can be undecidable within the theory. These limits
+are structural rather than epistemic: they persist even with infinite
+computational power and perfect local information.
+
+The results clarify the relationship between physical prediction, computation,
+and description. They show that undecidability and loss of predictability arise
+from the same structural sources as irreversibility, horizons, and quantization,
+and do not require additional postulates about information or observers.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% ============================================================
+\section{Introduction and Scope}
+
+The structural core of Modal Triplet Theory establishes that reduced descriptions
+are local, that global coherence is generically obstructed, and that admissible
+descriptions are constrained by overlap consistency and refinement stability.
+Coherent kinematics then defines motion, causality, horizons, and irreversibility
+without assuming spacetime or dynamics. Subsequent papers identify gravity,
+gauge structure, and quantization as encoding responses forced by specific
+obstruction types.
+
+The purpose of the present paper is to analyze the consequences of these
+structural features for computation and prediction. We ask a simple but
+fundamental question:
+
+\begin{quote}
+\emph{What can be predicted, computed, or decided within a framework in which
+descriptions are local, admissibility is finite, and kinematic continuation may
+terminate?}
+\end{quote}
+
+We show that the answer is: \emph{not everything that is well-defined}. Even
+questions that are sharply posed in the kinematic framework may lack definite
+answers within any admissible encoding. These limitations arise not from lack of
+data, computational resources, or noise, but from the structure of admissible
+description itself.
+
+The analysis in this paper relies only on:
+\begin{itemize}
+\item the structural core of Modal Triplet Theory;
+\item coherent kinematics and admissible continuation;
+\item the existence of selection fronts and nil obstructions.
+\end{itemize}
+
+No assumptions are made about:
+\begin{itemize}
+\item algorithmic complexity;
+\item probabilistic computation;
+\item observers or measurement postulates;
+\item computational resources.
+\end{itemize}
+
+The resulting limits are therefore intrinsic to the theory and apply to all
+realization classes compatible with the MTT framework.
+
+\begin{remark}[Position in the series]
+This paper belongs to the A-layer of the Modal Triplet Theory Program. It derives
+structural consequences of admissibility and kinematics, but introduces no new
+encoding classes. It precedes and motivates interpretive papers on the dark
+sector and complements the encoding-class papers on gravity, gauge, and
+quantization.
+\end{remark}
+
+% ============================================================
+% Next section will be:
+% \section{Prediction as Admissible Continuation}
+% ============================================================
+\section{Prediction as Admissible Continuation}
+
+In the Modal Triplet Theory framework, prediction is not defined as extrapolation
+of a state in time, but as determination of admissible continuation of coherent
+structure across overlapping encodings. In this section we formalize prediction
+accordingly.
+
+\subsection{Predictive questions}
+
+A predictive question concerns the future continuation of a coherent structure.
+
+\begin{definition}[Predictive question]
+A \emph{predictive question} is a well-posed query of the form:
+\begin{quote}
+Given a coherent structure represented in an admissible encoding
+$\mathcal E_\alpha$, does admissible continuation exist to a specified set of
+encodings $\{\mathcal E_\beta\}$?
+\end{quote}
+\end{definition}
+
+Predictive questions are therefore questions about the existence and properties
+of continuation chains, not about numerical values at future times.
+
+\subsection{Prediction without global time}
+
+Because there is no global time parameter in the kinematic framework, prediction
+is inherently relational.
+
+\begin{remark}
+Prediction does not require an external notion of time. The ordering relevant to
+prediction is the kinematic ordering induced by admissible continuation, as
+defined in coherent kinematics.
+\end{remark}
+
+This distinguishes prediction from time-evolution in classical dynamical
+systems.
+
+\subsection{Admissible prediction}
+
+We now define prediction formally.
+
+\begin{definition}[Admissible prediction]
+An \emph{admissible prediction} is the determination, within an admissible
+encoding, of whether a given predictive question has a definite answer under all
+admissible refinements of the encoding atlas.
+\end{definition}
+
+An admissible prediction must be stable under refinement; otherwise it does not
+constitute a well-defined prediction in the MTT sense.
+
+\subsection{Prediction versus simulation}
+
+Simulation is not prediction in this framework.
+
+\begin{remark}
+A simulation may generate particular continuation chains under specific choices
+of encoding or gauge, but such results are not admissible predictions unless they
+are invariant under all admissible refinements. Prediction is therefore strictly
+stronger than simulation.
+\end{remark}
+
+This distinction will be crucial when discussing undecidability.
+
+\subsection{Determinacy and indeterminacy}
+
+We now distinguish deterministic from indeterminate predictive questions.
+
+\begin{definition}[Determinately predictable question]
+A predictive question is \emph{determinately predictable} if all admissible
+continuation chains compatible with the initial encoding yield the same answer.
+\end{definition}
+
+\begin{definition}[Indeterminate predictive question]
+A predictive question is \emph{indeterminate} if admissible continuation chains
+yield different answers, or if admissible continuation terminates before the
+question can be resolved.
+\end{definition}
+
+Indeterminacy here is structural and does not imply randomness.
+
+\subsection{Sources of predictive indeterminacy}
+
+There are two primary sources of indeterminacy.
+
+\begin{itemize}
+\item \textbf{Branching at selection fronts:} multiple admissible continuations
+exist, leading to different outcomes.
+\item \textbf{Termination at nil obstructions:} continuation ceases before the
+question can be resolved.
+\end{itemize}
+
+Both sources arise from admissibility constraints, not from lack of information.
+
+\subsection{No global predictive map}
+
+We now state a basic limitation.
+
+\begin{theorem}[No global predictive map]
+There exists no globally defined map assigning definite answers to all predictive
+questions consistent with admissible continuation.
+\end{theorem}
+
+\begin{proof}
+A global predictive map would require a global encoding capable of resolving all
+continuation questions. This contradicts finite admissibility and the existence
+of nil obstructions.
+\end{proof}
+
+\subsection{Preview: prediction depth}
+
+Prediction may be possible locally even when global prediction fails.
+
+\begin{remark}
+The extent to which prediction remains possible before encountering branching or
+termination is quantified by admissible prediction depth, introduced in the next
+section.
+\end{remark}
+
+% ============================================================
+% Next section will be:
+% \section{Admissible Prediction Depth}
+% ============================================================
+\section{Admissible Prediction Depth}
+
+In this section we quantify the extent to which prediction remains possible
+within the Modal Triplet Theory framework. We introduce the notion of admissible
+prediction depth, which measures how far admissible continuation can proceed
+before encountering branching or termination that renders prediction
+indeterminate.
+
+\subsection{Local versus global predictability}
+
+Although global prediction is impossible, local prediction may remain viable for
+finite extents.
+
+\begin{remark}
+The absence of a global predictive map does not imply that all predictive
+questions are indeterminate. Rather, predictability is local and bounded, and
+its limits are determined by admissibility structure.
+\end{remark}
+
+This motivates a quantitative notion of predictive reach.
+
+\subsection{Definition of prediction depth}
+
+We now define prediction depth intrinsically.
+
+\begin{definition}[Admissible prediction depth]
+Let $\mathcal E_\alpha$ be an admissible encoding representing a coherent
+structure. The \emph{admissible prediction depth} $D(\mathcal E_\alpha)$ is the
+supremum of lengths of admissible continuation chains starting at
+$\mathcal E_\alpha$ such that all predictive questions along those chains are
+determinately predictable.
+\end{definition}
+
+The length of a continuation chain is measured by the number of admissible
+continuation steps, not by time or distance.
+
+\subsection{Finite prediction depth}
+
+Finite admissibility implies that prediction depth is generically finite.
+
+\begin{theorem}[Finite prediction depth]
+For any admissible encoding $\mathcal E_\alpha$, the admissible prediction depth
+$D(\mathcal E_\alpha)$ is finite whenever selection fronts or nil obstructions
+exist in its kinematic reach.
+\end{theorem}
+
+\begin{proof}
+Selection fronts introduce branching of admissible continuation, rendering
+predictive questions indeterminate beyond the front. Nil obstructions terminate
+continuation entirely. In either case, continuation chains of arbitrary length
+cannot remain determinately predictable. Therefore $D(\mathcal E_\alpha)$ is
+finite.
+\end{proof}
+
+\subsection{Dependence on initial encoding}
+
+Prediction depth depends on where one starts in the encoding atlas.
+
+\begin{remark}
+Different admissible encodings may have different prediction depths, even when
+representing the same underlying coherent structure. Prediction depth is thus an
+encoding-relative quantity.
+\end{remark}
+
+This dependence reflects the absence of a privileged global encoding.
+
+\subsection{Refinement stability}
+
+Prediction depth is stable under admissible refinement.
+
+\begin{lemma}
+Admissible refinement of the encoding atlas does not increase prediction depth.
+\end{lemma}
+
+\begin{proof}
+Refinement may reveal additional selection fronts or nil obstructions, but cannot
+eliminate existing ones. Therefore refinement can only decrease or preserve
+prediction depth, not increase it.
+\end{proof}
+
+This monotonicity is essential for the structural nature of prediction limits.
+
+\subsection{Prediction depth versus computational power}
+
+Prediction depth is not a resource limitation.
+
+\begin{remark}
+Finite prediction depth persists even with unlimited computational resources and
+perfect local information. It reflects structural limits on admissible
+continuation, not algorithmic complexity or computational cost.
+\end{remark}
+
+\subsection{Local predictability regions}
+
+Despite finite depth, extended regions of predictability may exist.
+
+\begin{definition}[Predictability region]
+A \emph{predictability region} is a subset of the encoding atlas in which
+admissible prediction depth exceeds a specified threshold.
+\end{definition}
+
+Such regions correspond to regimes in which effective theories appear
+deterministic over extended extents.
+
+\subsection{Preview: undecidability}
+
+Finite prediction depth implies that certain predictive questions cannot be
+decided within the theory.
+
+\begin{remark}
+In the next section we show that, in the presence of branching and termination,
+there exist well-posed predictive questions that are undecidable within any
+admissible encoding, independently of computational power.
+\end{remark}
+
+% ============================================================
+% Next section will be:
+% \section{Undecidability of Kinematic Questions}
+% ============================================================
+\section{Undecidability of Kinematic Questions}
+
+In this section we show that finite admissible prediction depth implies the
+existence of well-posed predictive questions that are undecidable within the
+Modal Triplet Theory framework. This undecidability is structural rather than
+computational: it persists even with unlimited computational resources and
+perfect local information.
+
+\subsection{Well-posed kinematic questions}
+
+We begin by clarifying what is meant by undecidability in this context.
+
+\begin{definition}[Well-posed kinematic question]
+A \emph{well-posed kinematic question} is a predictive question whose statement
+is invariant under admissible re-encoding and refinement of the encoding atlas.
+\end{definition}
+
+Such questions are unambiguous and meaningful within the theory.
+
+\subsection{Decidability within an admissible encoding}
+
+Decidability is defined relative to admissible encodings.
+
+\begin{definition}[Decidable predictive question]
+A well-posed kinematic question is \emph{decidable} if there exists an admissible
+procedure, definable within the encoding framework, that yields a definite answer
+in finite admissible continuation steps.
+\end{definition}
+
+A question that fails this criterion is undecidable.
+
+\subsection{Undecidability from branching}
+
+Selection fronts induce branching of admissible continuation.
+
+\begin{lemma}
+If a predictive question depends on which branch of a selection front is taken,
+then it is undecidable.
+\end{lemma}
+
+\begin{proof}
+At a selection front, multiple admissible continuation chains exist, yielding
+different outcomes. No admissible refinement can select a unique continuation
+without violating admissibility. Therefore no admissible procedure can determine
+the outcome uniquely.
+\end{proof}
+
+\subsection{Undecidability from termination}
+
+Nil obstructions induce termination of continuation.
+
+\begin{lemma}
+If a predictive question requires continuation beyond a nil obstruction to be
+resolved, then it is undecidable.
+\end{lemma}
+
+\begin{proof}
+By definition, no admissible continuation exists beyond a nil obstruction.
+Therefore no admissible procedure can evaluate the question.
+\end{proof}
+
+\subsection{Existence of undecidable questions}
+
+We now state the main result of this section.
+
+\begin{theorem}[Structural undecidability]
+In the presence of selection fronts or nil obstructions, there exist well-posed
+kinematic questions that are undecidable within any admissible encoding.
+\end{theorem}
+
+\begin{proof}
+By finite prediction depth, there exists a bound beyond which determinately
+predictable continuation fails. Construct a question whose resolution requires
+continuation beyond this bound. By the preceding lemmas, such a question is
+undecidable.
+\end{proof}
+
+\subsection{Independence from computational power}
+
+We emphasize the nature of this undecidability.
+
+\begin{remark}
+The undecidability established here does not arise from computational complexity
+or algorithmic limitations. It persists even if the computational agent has
+unlimited resources and perfect access to local encoding data. The obstruction
+lies in admissibility, not in computation.
+\end{remark}
+
+\subsection{Relation to classical undecidability}
+
+This structural undecidability is distinct from, but compatible with, classical
+notions.
+
+\begin{remark}
+Classical undecidability results (e.g.\ Turing undecidability) concern limits of
+formal computation. The present result concerns limits of physical prediction
+imposed by admissible description. The two notions may coincide in specific
+realizations, but neither reduces to the other.
+\end{remark}
+
+\subsection{Scope of undecidable questions}
+
+Not all predictive questions are undecidable.
+
+\begin{remark}
+Undecidability arises only for questions whose resolution depends on continuation
+across selection fronts or nil obstructions. Many local questions remain
+decidable within finite predictability regions.
+\end{remark}
+
+\subsection{Preview: limits of control}
+
+Undecidability has direct implications for control and intervention.
+
+\begin{remark}
+In the next section we show that structural undecidability also limits the extent
+to which coherent structures can be controlled or steered by admissible
+interventions.
+\end{remark}
+
+% ============================================================
+% Next section will be:
+% \section{Limits of Control and Intervention}
+% ============================================================
+\section{Limits of Control and Intervention}
+
+In this section we analyze the consequences of finite admissible prediction depth
+and structural undecidability for control and intervention. We show that limits
+on prediction imply corresponding limits on the ability to steer, regulate, or
+force outcomes within the Modal Triplet Theory framework.
+
+\subsection{Control as constrained intervention}
+
+We first define what is meant by control in an encoding-relative setting.
+
+\begin{definition}[Admissible intervention]
+An \emph{admissible intervention} is a modification of the encoding conditions or
+initial representation that is itself admissible and preserves overlap
+consistency and refinement stability.
+\end{definition}
+
+Interventions are therefore subject to the same admissibility constraints as
+descriptions.
+
+\begin{definition}[Control problem]
+A \emph{control problem} is a specification of a desired property of future
+admissible continuation, together with a proposed admissible intervention
+intended to enforce that property.
+\end{definition}
+
+Control is meaningful only insofar as the outcome of the intervention is
+predictable.
+
+\subsection{Dependence of control on prediction}
+
+We now establish the dependence of control on prediction.
+
+\begin{lemma}
+If a predictive question associated with a control problem is undecidable, then
+the control problem is not solvable within any admissible encoding.
+\end{lemma}
+
+\begin{proof}
+A control problem requires determining whether an intervention will enforce a
+desired outcome. If the corresponding predictive question is undecidable, no
+admissible procedure can establish that the intervention succeeds. Therefore the
+control problem is unsolvable within the theory.
+\end{proof}
+
+Thus, undecidability directly limits control.
+
+\subsection{Control failure at selection fronts}
+
+Selection fronts introduce intrinsic limits on intervention.
+
+\begin{lemma}
+No admissible intervention can deterministically select a unique branch at a
+selection front without violating admissibility.
+\end{lemma}
+
+\begin{proof}
+At a selection front, multiple admissible continuation branches exist. Any
+intervention that forces one branch while excluding others would render the
+excluded branches inadmissible, contradicting admissibility constraints. Hence
+no admissible intervention can enforce deterministic selection.
+\end{proof}
+
+This establishes that branching cannot be controlled away.
+
+\subsection{Control failure at nil obstructions}
+
+Nil obstructions impose even stronger limits.
+
+\begin{lemma}
+No admissible intervention can enforce continuation beyond a nil obstruction.
+\end{lemma}
+
+\begin{proof}
+By definition of nil obstruction, no admissible encoding exists beyond the
+obstruction. Any intervention attempting to enforce continuation would require
+introducing an inadmissible description. Therefore such intervention is
+forbidden.
+\end{proof}
+
+Thus termination is uncontrollable.
+
+\subsection{Local versus global control}
+
+Control may remain possible in restricted regimes.
+
+\begin{remark}
+Within predictability regions of finite but nonzero prediction depth, admissible
+interventions may influence outcomes locally. However, such control is always
+bounded by the nearest selection front or nil obstruction.
+\end{remark}
+
+This explains why effective control appears possible in many physical systems
+despite fundamental limits.
+
+\subsection{No universal control strategy}
+
+We now state the global limitation.
+
+\begin{theorem}[No universal control strategy]
+There exists no admissible intervention strategy that can enforce arbitrary
+desired outcomes across all admissible continuation chains.
+\end{theorem}
+
+\begin{proof}
+A universal control strategy would require resolving all predictive questions and
+overriding all branching and termination behavior. This contradicts the existence
+of undecidable predictive questions and nil obstructions established earlier.
+\end{proof}
+
+\subsection{Control versus determinism}
+
+The limits of control do not imply lack of determinism.
+
+\begin{remark}
+Failure of control does not imply indeterministic dynamics. It reflects limits on
+what can be enforced or steered within admissible description. Deterministic
+behavior may exist locally even where control fails globally.
+\end{remark}
+
+\subsection{Implications}
+
+The structural limits on control have broad implications.
+
+\begin{remark}
+These results imply that no observer, agent, or apparatus—regardless of
+capability—can bypass admissibility constraints to enforce outcomes beyond
+prediction depth. Limits of control are therefore as fundamental as limits of
+prediction.
+\end{remark}
+
+\subsection{Preview: relation to quantization and horizons}
+
+Limits of control are closely related to other structural features.
+
+\begin{remark}
+Selection fronts, horizons, and quantization boundaries represent points at which
+control necessarily fails. These features are unified by the admissibility
+structure of the theory.
+\end{remark}
+
+% ============================================================
+% Next section will be:
+% \section{Relation to Quantization and Probability}
+% ============================================================
+\section{Relation to Quantization and Probability}
+
+In this section we relate the limits of prediction and control derived above to
+the discrete constraint encoding identified as quantization and to the
+conditional notion of probability developed in the Modal Triplet Theory
+framework. We show that predictive limits, undecidability, and quantization are
+not independent phenomena, but manifestations of the same admissibility
+structure.
+
+\subsection{Prediction depth and discrete survivors}
+
+Finite admissible prediction depth implies that continuation eventually
+encounters selection fronts or nil obstructions.
+
+\begin{remark}
+When admissible prediction depth is exhausted due to a nil obstruction, only
+discrete survivors remain admissible. Thus the boundary of predictability
+coincides with the boundary at which quantization becomes structurally relevant.
+\end{remark}
+
+Prediction therefore transitions from deterministic continuation to discrete
+classification.
+
+\subsection{Undecidability and quantization}
+
+Undecidable predictive questions are closely tied to discrete constraint
+encoding.
+
+\begin{lemma}
+If a predictive question is undecidable due to termination at a nil obstruction,
+then its resolution, if any, must be expressed in terms of discrete survivors.
+\end{lemma}
+
+\begin{proof}
+Termination of admissible continuation implies that no further continuous
+description is possible. Any remaining descriptive content must therefore be
+drawn from discrete survivors selected by stability under refinement.
+\end{proof}
+
+This shows that undecidability and quantization share a common structural origin.
+
+\subsection{Probability as a secondary structure}
+
+Probability does not resolve undecidability.
+
+\begin{remark}
+The introduction of probability does not convert undecidable predictive
+questions into decidable ones. Probability assigns weights to discrete survivors
+when invariant measures exist, but it does not extend admissible prediction
+depth or restore lost continuation.
+\end{remark}
+
+Thus probability is subordinate to admissibility and quantization.
+
+\subsection{Conditional probabilistic prediction}
+
+Probabilistic prediction is possible only under additional conditions.
+
+\begin{definition}[Probabilistic predictive question]
+A predictive question is \emph{probabilistically predictive} if:
+\begin{enumerate}[label=(\roman*)]
+\item admissible continuation terminates at a discrete survivor set $\mathcal S$;
+\item an invariant measure exists on $\mathcal S$.
+\end{enumerate}
+\end{definition}
+
+In this case, prediction yields a probability distribution rather than a
+deterministic outcome.
+
+\subsection{No probabilistic control beyond nil}
+
+Probability does not restore control.
+
+\begin{lemma}
+Probabilistic weighting of discrete survivors does not permit admissible control
+beyond selection fronts or nil obstructions.
+\end{lemma}
+
+\begin{proof}
+Probabilistic weighting assigns likelihoods to outcomes but does not alter which
+outcomes are admissible. Therefore it cannot enforce or exclude specific
+continuations beyond the admissibility boundary.
+\end{proof}
+
+This reinforces the structural nature of control limits.
+
+\subsection{Relation to measurement}
+
+Measurement outcomes are discrete and terminal.
+
+\begin{remark}
+Measurement, understood as selection among discrete survivors, coincides with
+the exhaustion of admissible prediction depth. The unpredictability of outcomes
+reflects undecidability of continuation, not lack of information.
+\end{remark}
+
+\subsection{Unified perspective}
+
+We now summarize the unified picture.
+
+\begin{remark}
+Finite admissibility implies finite prediction depth. Finite prediction depth
+implies undecidability of certain kinematic questions. Termination of
+predictability implies collapse to discrete survivors. Discrete survivors are
+organized by quantization. Probability appears only conditionally when invariant
+measures exist. These are not separate assumptions but consequences of the same
+structural constraints.
+\end{remark}
+
+% ============================================================
+% Next section will be:
+% \section{Summary and Outlook}
+% ============================================================
+\section{Summary and Outlook}
+
+In this paper we have analyzed limits of computation, prediction, and control as
+structural consequences of admissible description in the Modal Triplet Theory
+framework. Without invoking complexity theory, algorithmic randomness, or
+resource constraints, we showed that finite admissibility, coherent kinematics,
+and selection fronts impose intrinsic limits on what can be predicted or decided
+within any admissible encoding.
+
+Prediction was defined as determination of admissible continuation rather than as
+time evolution. We showed that although local prediction may be possible within
+restricted regions of the encoding atlas, admissible prediction depth is
+generically finite. Selection fronts induce branching of admissible continuation,
+while nil obstructions terminate continuation entirely. Both mechanisms render
+certain well-posed kinematic questions undecidable within the theory.
+
+We further demonstrated that undecidability implies corresponding limits on
+control and intervention. No admissible intervention can deterministically select
+among branches at a selection front or enforce continuation beyond a nil
+obstruction. These limits are structural rather than epistemic: they persist even
+with unlimited computational power and perfect local information.
+
+The results clarify the relationship between predictive limits, quantization, and
+probability. Exhaustion of admissible prediction depth coincides with collapse of
+continuous description and the emergence of discrete survivors organized by the
+discrete constraint encoding identified as quantization. Probability appears only
+conditionally, when invariant measures exist on discrete survivor sets, and does
+not restore lost predictability or control.
+
+Together with the structural core and coherent kinematics, the present analysis
+completes the A-layer of the Modal Triplet Theory Program. It shows that limits of
+prediction, undecidability, irreversibility, and quantization boundaries arise
+from the same admissibility structure that forbids global reduced description.
+These limits are not failures of theory or computation, but unavoidable features
+of any framework that admits local description and global obstruction.
+
+Subsequent papers in the series build on these results. Encoding-class papers show
+how gravity, gauge structure, and quantization arise as forced responses to
+specific obstruction types, while realization papers construct explicit models
+that instantiate these encodings. Interpretive papers explore how these
+structural limits manifest phenomenologically, including in cosmology and the
+dark sector.
+
+In this way, Modal Triplet Theory provides a unified explanation for why
+prediction, control, and computation are fundamentally limited in physical
+theories, and why those limits are inseparable from the structures we identify as
+gravity, gauge symmetry, and quantization.
+
+% ============================================================
+% End of Paper A2
+\end{document}

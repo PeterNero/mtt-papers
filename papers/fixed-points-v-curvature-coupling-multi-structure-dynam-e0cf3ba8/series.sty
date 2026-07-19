@@ -1,0 +1,363 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{series}[2025/12/24 Series macros v3]
+
+% ============================================================
+% 0) Encoding & fonts
+% ============================================================
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{lmodern}
+
+% ============================================================
+% 1) Layout & typography
+% ============================================================
+\RequirePackage[a4paper,margin=28mm]{geometry}
+\RequirePackage{microtype}
+\linespread{1.045}
+
+\setlength{\abovedisplayskip}{12pt}
+\setlength{\belowdisplayskip}{12pt}
+\setlength{\abovedisplayshortskip}{9pt}
+\setlength{\belowdisplayshortskip}{9pt}
+
+% ============================================================
+% 2) Math core
+% ============================================================
+\RequirePackage{amsmath,amssymb,amsthm,mathtools}
+\RequirePackage{bm}
+\allowdisplaybreaks
+
+% ============================================================
+% 3) Series metadata (edit per paper if desired)
+% ============================================================
+\newcommand\SeriesName{Foundations of X (Philosophy--Physics--Math)}
+\newcommand\SeriesShort{Fixed Point}
+\newcommand\PartRoman{I}
+\newcommand\PartArabic{VI}
+\newcommand\PartsInSeries{VI}
+
+\newcommand{\seriestagline}{%
+  \smallskip\par\noindent\textit{Part \PartRoman{} of \PartsInSeries{} in the \SeriesShort{} series.\;
+  As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.}%
+}
+
+% ============================================================
+% 4) Lists
+% ============================================================
+\RequirePackage{enumitem}
+\setlist{itemsep=2.5pt, topsep=6pt, parsep=0pt}
+
+% Hyperlinks & refs
+% NOTE: hyperref warnings happen when section/caption text contains math.
+% Strategy: provide a macro that supplies a plain-text bookmark alternative.
+\RequirePackage[pdfencoding=auto,psdextra]{hyperref}
+
+\hypersetup{
+  unicode=true,
+  colorlinks=true,
+  linkcolor=blue, citecolor=blue, urlcolor=blue,
+  pdfauthor={Peter Nero},
+  pdftitle={Foundations of X: Part \PartRoman},
+  pdfcreator={LaTeX}
+}
+
+% Typeset math in headings while giving a PDF-safe bookmark string
+% Usage: \section{Title with \FPpdf{$\lambda^\ast$}{lambda*} inside}
+\newcommand{\FPpdf}[2]{\texorpdfstring{#1}{#2}}
+
+% (Optional but helpful) Common symbols that often appear in headings.
+% IMPORTANT: use \ast (NOT \*) for the star.
+\newcommand{\lamone}{\ensuremath{\lambda_{1}}}
+\newcommand{\lamstar}{\ensuremath{\lambda^{\ast}}}
+\newcommand{\Aeps}{\ensuremath{A_{\varepsilon}}}
+\newcommand{\Mone}{\ensuremath{M_{1}}}
+\newcommand{\epsdown}{\ensuremath{\varepsilon\downarrow 0}}
+\newcommand{\Sone}{\ensuremath{S^{1}}}
+
+% Tell hyperref what to write into bookmarks if these macros appear in headings.
+\pdfstringdefDisableCommands{%
+  \def\ensuremath#1{#1}%
+  \def\lamone{lambda1}%
+  \def\lamstar{lambda*}%
+  \def\Aeps{Aeps}%
+  \def\Mone{M1}%
+  \def\epsdown{eps->0}%
+  \def\Sone{S1}%
+}
+
+\RequirePackage[nameinlink,capitalise,noabbrev]{cleveref}
+
+
+% ============================================================
+% 6) Numbering
+% ============================================================
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+% ============================================================
+% 7) Theorem environments
+% ============================================================
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{note}[theorem]{Note}
+
+% ============================================================
+% 8) Cleveref names
+% ============================================================
+\crefname{theorem}{theorem}{theorems}\Crefname{theorem}{Theorem}{Theorems}
+\crefname{lemma}{lemma}{lemmas}\Crefname{lemma}{Lemma}{Lemmas}
+\crefname{proposition}{proposition}{propositions}\Crefname{proposition}{Proposition}{Propositions}
+\crefname{corollary}{corollary}{corollaries}\Crefname{corollary}{Corollary}{Corollaries}
+\crefname{definition}{definition}{definitions}\Crefname{definition}{Definition}{Definitions}
+\crefname{assumption}{assumption}{assumptions}\Crefname{assumption}{Assumption}{Assumptions}
+\crefname{conjecture}{conjecture}{conjectures}\Crefname{conjecture}{Conjecture}{Conjectures}
+\crefname{example}{example}{examples}\Crefname{example}{Example}{Examples}
+\crefname{remark}{remark}{remarks}\Crefname{remark}{Remark}{Remarks}
+\crefname{equation}{equation}{equations}\Crefname{equation}{Equation}{Equations}
+\crefname{figure}{figure}{figures}\Crefname{figure}{Figure}{Figures}
+\crefname{table}{table}{tables}\Crefname{table}{Table}{Tables}
+\crefname{section}{section}{sections}\Crefname{section}{Section}{Sections}
+
+% ============================================================
+% 9) Operators & notation (general)
+% ============================================================
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\divergence}{div}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\Hess}{Hess}
+\DeclareMathOperator{\sgn}{sgn}
+
+\newcommand{\Id}{\mathrm{Id}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\bbZ}{\mathbb{Z}}
+
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calM}{\mathcal{M}}
+
+\newcommand{\vb}[1]{\bm{#1}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\ip}[2]{\left\langle #1,\,#2 \right\rangle}
+\newcommand{\dd}{\mathrm{d}}
+
+% Helper
+\newcommand{\numberthis}{\addtocounter{equation}{1}\tag{\theequation}}
+
+% Common functional-analytic operators (used throughout FP series)
+\DeclareMathOperator{\Ran}{Ran}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\spec}{\sigma}
+\DeclareMathOperator{\Ker}{Ker}
+
+
+% ============================================================
+% 10) Hardening: NEVER break on "\lambda^\*" again
+% ============================================================
+% LaTeX's \* is a *text* discretionary-break macro, NOT a math star.
+% If someone writes "\lambda^\*", compilation can fail in math mode.
+% Fix: keep the original \* in text mode, but in math mode make it \ast.
+
+\providecommand{\*}{\discretionary{}{}{}} % define if missing (safety)
+\makeatletter
+\let\FP@origtextstar\*
+\DeclareRobustCommand{\*}{\ifmmode\ast\else\FP@origtextstar\fi}
+\makeatother
+
+% If you paste Unicode "asterisk operator" ∗ (U+2217), map it to \ast (pdfLaTeX-safe).
+\DeclareUnicodeCharacter{2217}{\ensuremath{\ast}}
+
+% ============================================================
+% 11) Canonical FP-series math macros (use across all papers)
+% ============================================================
+% Use \providecommand so papers can override locally if needed.
+
+% --- Geometry / bundles
+\providecommand{\Bint}{B_{\mathrm{int}}}
+
+% --- Coherent projector / sectors
+\providecommand{\Pcoh}{\Pi_{\mathrm{coh}}}
+\providecommand{\Qcoh}{Q} % intended usage: \Qcoh := \Id - \Pcoh
+\providecommand{\Hcoh}{H_{\mathrm{coh}}}
+
+% --- Flow and projected map
+\providecommand{\Phit}{\Phi_{t}}
+\providecommand{\Ttau}{T_{\tau}}
+
+% --- Gap notation
+\providecommand{\lamstar}{\lambda^{\ast}}  % uniform gap (preferred over typing \lambda^\ast)
+\providecommand{\lammin}{\lambda_{\min}}   % positivity-window lower bound
+
+% --- Curvature/Drivers layer names
+\providecommand{\Dcurv}{\Delta_{\mathrm{curv}}}
+\providecommand{\Phisel}{\Phi_{\mathrm{sel}}}
+\providecommand{\Phicrit}{\Phi_{\mathrm{crit}}}
+
+% --- Reserved constants (to prevent symbol collisions across papers)
+\providecommand{\Lip}{L_{\mathrm{Lip}}}     % Lipschitz constant (avoid overloading plain L)
+\providecommand{\Loss}{\mathcal{L}}         % “loss/coupling scale” if you need one (avoid L_n ambiguity)
+
+% ============================================================
+% 12) Symbol Register infrastructure (print only what you choose)
+% ============================================================
+\newcommand{\sym}[2]{\item[$#1$] #2}
+\newenvironment{symbolregistry}{%
+  \begin{description}[style=nextline,leftmargin=3.8cm,labelwidth=3.4cm]
+}{%
+  \end{description}
+}
+
+% Optional helpers (use if you want)
+\newcommand{\FPBeginSymbolRegister}{\section*{Symbol Register}\begin{symbolregistry}}
+\newcommand{\FPEndSymbolRegister}{\end{symbolregistry}}
+
+% --- Symbol entries as *individual macros* (pick/print as needed)
+\newcommand{\FPSymY}{\sym{Y}{Base manifold.}}
+\newcommand{\FPSymgY}{\sym{g_Y}{Base metric on $Y$ (Riemannian/Lorentzian as specified in the paper).}}
+\newcommand{\FPSymd}{\sym{d}{Dimension $d:=\dim Y$.}}
+\newcommand{\FPSymBint}{\sym{\Bint}{Internal fiber product bundle.}}
+\newcommand{\FPSymPcoh}{\sym{\Pcoh}{Coherent-sector projector.}}
+\newcommand{\FPSymQcoh}{\sym{\Qcoh}{Complementary projector $\Qcoh:=\Id-\Pcoh$.}}
+\newcommand{\FPSymPhit}{\sym{\Phit}{Time-$t$ evolution map/flow.}}
+\newcommand{\FPSymTtau}{\sym{\Ttau}{Projected time-$\tau$ map, typically $\Ttau=\Pcoh\circ\Phi_\tau$.}}
+\newcommand{\FPSymlamstar}{\sym{\lamstar}{Uniform positive fiber spectral gap (first nonzero band).}}
+\newcommand{\FPSymlammin}{\sym{\lammin}{Positivity-window lower bound for position-dependent gaps.}}
+\newcommand{\FPSymDcurv}{\sym{\Dcurv(Y)}{Curvature remainder constant depending on bounded-geometry data.}}
+\newcommand{\FPSymPhisel}{\sym{\Phisel(x)}{Selection potential (admissibility monitor).}}
+\newcommand{\FPSymPhicrit}{\sym{\Phicrit}{Threshold defining the boundary of admissible coherent evolution.}}
+
+% ============================================================
+% 13) Series Axiom fragments (print only what you need)
+% ============================================================
+% We define:
+%  - a lightweight environment for an axiom block
+%  - fixed-numbered “SA#” items as individual commands
+%  - each item has a "...Text" version (inline) and a printed version
+
+\newtheorem*{seriesaxiom}{Series Axiom}
+\makeatletter
+\newcommand{\FP@SAitem}[2]{\par\noindent\textbf{SA#1.} #2\par}
+
+% ---------- Core (FP I–II and used everywhere) ----------
+\newcommand{\FPAxiomGeometryText}{%
+$Y$ is a smooth manifold and we consider smooth bundles $\pi_n:B_n\to Y$ with compact fibers.%
+}
+\newcommand{\FPAxiomGeometry}{\FP@SAitem{1}{\FPAxiomGeometryText}}
+
+\newcommand{\FPAxiomBoundedGeometryText}{%
+All (base/fiber) geometries used in estimates are in a bounded-geometry class sufficient for uniform elliptic/spectral calculus.%
+}
+\newcommand{\FPAxiomBoundedGeometry}{\FP@SAitem{2}{\FPAxiomBoundedGeometryText}}
+
+\newcommand{\FPAxiomLaplacianSignText}{%
+All Laplace-type operators denoted by $\Delta$ are taken nonnegative in the spectral sense (eigenvalues $\ge 0$). Dissipative flows are written with a minus sign in front of the nonnegative operator.%
+}
+\newcommand{\FPAxiomLaplacianSign}{\FP@SAitem{3}{\FPAxiomLaplacianSignText}}
+
+\newcommand{\FPAxiomUniformGapText}{%
+There is a uniform positive fiber gap $\lamstar>0$ separating the coherent/harmonic sector from the first noncoherent band, so the coherent projector $\Pcoh$ (e.g.\ Riesz projector) is well-defined uniformly.%
+}
+\newcommand{\FPAxiomUniformGap}{\FP@SAitem{4}{\FPAxiomUniformGapText}}
+
+\newcommand{\FPAxiomProjectedMapText}{%
+The operational fixed-point map is the projected time-$\tau$ map $\Ttau:=\Pcoh\circ\Phi_\tau$.%
+}
+\newcommand{\FPAxiomProjectedMap}{\FP@SAitem{5}{\FPAxiomProjectedMapText}}
+
+\newcommand{\FPAxiomCoherenceInvarianceText}{%
+A fixed point of $\Ttau$ is identified with a true equilibrium of the underlying flow only under coherence invariance (the coherent sector is dynamically invariant under the evolution).%
+}
+\newcommand{\FPAxiomCoherenceInvariance}{\FP@SAitem{6}{\FPAxiomCoherenceInvarianceText}}
+
+% ---------- Disturbance / damping (FP III+) ----------
+\newcommand{\FPAxiomDisturbanceDampingText}{%
+Modewise stability under persistent forcing is governed by an effective damping margin $\gamma>0$; in OU linearization, stationary variances scale like $\mathrm{Var}\sim \sigma^2/(2\gamma)$.%
+}
+\newcommand{\FPAxiomDisturbanceDamping}{\FP@SAitem{7}{\FPAxiomDisturbanceDampingText}}
+
+% ---------- Curvature remainder (FP IV+) ----------
+\newcommand{\FPAxiomCurvatureRemainderText}{%
+On curved bases, curvature-induced lower-order terms are controlled by a bounded-geometry remainder $\Dcurv(Y)$ and must be included in stability/damping margins wherever applicable.%
+}
+\newcommand{\FPAxiomCurvatureRemainder}{\FP@SAitem{8}{\FPAxiomCurvatureRemainderText}}
+
+% ---------- Gap coupling + positivity window (FP V+) ----------
+\newcommand{\FPAxiomGapCouplingText}{%
+\textit{Gap coupling and positivity window.} Position-dependent gaps may depend on covariant scalar diagnostics $\{\Xi_\alpha\}$ via
+\[
+\lambda_a(x)=\lambda_{a,0}+\sum_\alpha \beta_{a;\alpha}\,\Xi_\alpha(x),
+\qquad \text{with the positivity window } \lambda_a(x)\ge \lammin>0 \text{ on the coherent domain.}
+\]
+}
+\newcommand{\FPAxiomGapCoupling}{\FP@SAitem{9}{\FPAxiomGapCouplingText}}
+
+% ---------- Selection/Drivers (FP V–VI) ----------
+\newcommand{\FPAxiomSelectionAdmissibilityText}{%
+Selection/Drivers are treated as meta-level admissibility constraints: coherent evolution is asserted only while $\Phisel<\Phicrit$; $\Phisel$ is not added to the physical action unless stated as an explicit optional soft-penalty variant.%
+}
+\newcommand{\FPAxiomSelectionAdmissibility}{\FP@SAitem{10}{\FPAxiomSelectionAdmissibilityText}}
+
+% ---------- Action/kernel (FP V–VI, when used) ----------
+\newcommand{\FPAxiomKernelHypothesisText}{%
+If a bilocal overlap kernel $K_{ab}(x,y)$ is used, it is assumed symmetric/nonnegative and integrable in each variable on Cauchy slices (and supported on equal-time pairs or derived from integrating out a massive local mediator), ensuring boundedness in the Sobolev spaces used.%
+}
+\newcommand{\FPAxiomKernelHypothesis}{\FP@SAitem{11}{\FPAxiomKernelHypothesisText}}
+
+% Convenience: print a full “Series Axiom” block (optional)
+\newcommand{\FPPrintSeriesAxiomAll}{%
+\begin{seriesaxiom}
+\FPAxiomGeometry
+\FPAxiomBoundedGeometry
+\FPAxiomLaplacianSign
+\FPAxiomUniformGap
+\FPAxiomProjectedMap
+\FPAxiomCoherenceInvariance
+\FPAxiomDisturbanceDamping
+\FPAxiomCurvatureRemainder
+\FPAxiomGapCoupling
+\FPAxiomSelectionAdmissibility
+\FPAxiomKernelHypothesis
+\end{seriesaxiom}
+}
+
+% ============================================================
+% 14) One-line “formula macros” (drop anywhere)
+% ============================================================
+\newcommand{\FPProjectedMapFormula}{\[
+\Ttau := \Pcoh \circ \Phi_{\tau}.
+\]}
+
+\newcommand{\FPOUVarianceFormula}{\[
+\text{OU:}\qquad \mathrm{Var}[a] = \frac{\sigma^{2}}{2\gamma}\quad(\gamma>0).
+\]}
+
+\newcommand{\FPSelectionPotentialFormula}{\[
+\Phisel(x) := -\sum_a w_a\,\lambda_a(x),\qquad w_a>0,\qquad \text{admissible if }\Phisel(x)<\Phicrit.
+\]}
+
+\newcommand{\FPGapCouplingFormula}{\[
+\lambda_a(x)=\lambda_{a,0}+\sum_\alpha \beta_{a;\alpha}\,\Xi_\alpha(x),
+\qquad \lambda_a(x)\ge \lammin>0.
+\]}
+
+\endinput

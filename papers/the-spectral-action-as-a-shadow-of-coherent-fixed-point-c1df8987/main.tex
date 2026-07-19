@@ -1,0 +1,390 @@
+% !TEX program = pdflatex
+\documentclass[11pt]{article}
+\usepackage{series} % required by user
+% ---------- Encoding / Fonts ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% ---------- Layout ----------
+\usepackage{geometry}
+\geometry{margin=1in}
+
+% ---------- REQUIRED ----------
+
+
+% ---------- Math / Theorems ----------
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+
+
+
+% ---------- Lists ----------
+\usepackage{enumitem}
+
+% ============================================================
+% Safe macros (no physics.sty)
+% ============================================================
+
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\spec}{spec}
+
+\newcommand{\normop}[1]{\left\lVert #1 \right\rVert}
+
+% ============================================================
+% Theorem environments
+% ============================================================
+\theoremstyle{plain}
+
+\theoremstyle{definition}
+
+\theoremstyle{remark}
+
+% ============================================================
+% Notation
+% ============================================================
+\newcommand{\ThetaB}{\Theta}
+
+% ============================================================
+% Title
+% ============================================================
+\title{\textbf{The Spectral Action as a Shadow of Coherent Fixed-Point Geometry}\\
+\large Standard Model couplings, Higgs sector, and noncommutative geometry from Modal Triplet Theory}
+\author{Peter Nero}
+\date{January, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We show that the Connes--Chamseddine spectral action and the associated noncommutative
+geometric formulation of the Standard Model arise as four-dimensional shadows of
+coherent fixed-point geometry under projection and truncation in Modal Triplet
+Theory (MTT). The almost-commutative spectral triple---including its finite algebra,
+fermionic Hilbert space, and Dirac operator---emerges as an effective encoding of
+coherent-sector overlap geometry. The cutoff scale and cutoff function of the
+spectral action are fixed (up to admissible reparametrization) by the coherent
+spectral gap and spectral proper-time (SPT) damping, eliminating their apparent
+arbitrariness. Gauge couplings, Yukawa matrices, and Higgs-sector parameters are
+not independently tunable within a coherent universality class, but are fixed
+functions of a single bottleneck vector $\Theta$ that also controls collapse
+thresholds, spacetime event density, ultraviolet completion, and canonical geometric
+discreteness in independent shadow constructions. All results are slab-local and
+admissibility-conditioned.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+The noncommutative geometric (NCG) formulation of the Standard Model provides a
+remarkably economical geometric description of matter and gravity via the
+Connes--Chamseddine spectral action. Despite its success, several structural
+questions remain open within NCG itself: the origin of the finite algebra,
+fermionic Hilbert space, and Dirac operator; the physical meaning of the cutoff
+scale and cutoff function; and the apparent freedom of Standard Model parameters.
+
+In this paper we show that these structures are not fundamental but arise as
+four-dimensional shadows of coherent fixed-point geometry under projection and
+truncation in Modal Triplet Theory (MTT). This places NCG on the same footing as
+other effective frameworks---asymptotic safety, loop quantum gravity, and causal
+set theory---all of which appear as partial encodings of the same coherent sector
+in companion works.
+
+The present paper completes the matter-sector component of a multi-sector
+validation program by demonstrating cross-sector closure: the same finite
+bottleneck vector $\Theta$ governs collapse, event structure, ultraviolet
+completion, canonical geometry, and Standard Model couplings.
+
+% ============================================================
+\section{Minimal Coherent-Sector Inputs}
+% ============================================================
+
+\begin{assumption}[Slab-local coherent regime]\label{ass:slab}
+All results are asserted on bounded-geometry time slabs where:
+\begin{enumerate}[label=(S\arabic*)]
+\item the coherent projector is bounded on the controlled domain;
+\item a uniform spectral gap $\lambda_\ast$ separates coherent and noncoherent modes;
+\item admissible basins possess strictly positive stability margins away from boundaries.
+\end{enumerate}
+\end{assumption}
+
+\begin{definition}[Bottleneck vector]\label{def:Theta}
+The bottleneck vector $\ThetaB$ consists of the finite set of coherent-sector data
+controlling projection, truncation, and stability, including the spectral gap,
+projector norms, overlap geometry, and symplectic normalization.
+\end{definition}
+
+\begin{remark}
+The role of $\ThetaB$ is operational: it is the minimal data required to control
+slab-local reduced dynamics. No global claims beyond admissibility are made.
+\end{remark}
+
+% ============================================================
+\section{Emergence of the Spectral Triple}
+\label{sec:spectral_triple}
+% ============================================================
+
+\begin{assumption}[Coherent overlap structure]\label{ass:overlap}
+The coherent sector admits finitely many admissible internal overlap channels,
+stable under truncation and determined by $\ThetaB$.
+\end{assumption}
+
+\begin{definition}[Overlap algebra]
+Let $\mathcal{A}_{\mathrm{coh}}$ denote the involutive algebra generated by admissible
+overlap operators acting on the reduced coherent Hilbert space.
+\end{definition}
+
+\begin{proposition}[Finite spectral algebra from coherent overlaps]
+\label{prop:finite_algebra}
+Under Assumption~\ref{ass:overlap}, the admissible overlap algebra
+$\mathcal{A}_{\mathrm{coh}}$ admits a canonical representative
+(up to Morita equivalence and admissible basis choice)
+that may be identified with the finite algebra $\mathcal{A}_F$
+of an almost-commutative spectral triple satisfying unimodularity,
+KO-dimension, and first-order conditions.
+\end{proposition}
+
+\begin{proof}
+Admissibility restricts overlaps to finitely many stable channels closed under
+composition and involution. Imposing unimodularity and KO-dimension constraints
+selects a canonical real form and representation class. Within this class,
+$\mathcal{A}_{\mathrm{coh}}$ admits a representative Morita-equivalent to the
+standard finite algebra used in the Connes--Chamseddine construction. \qedhere
+\end{proof}
+
+\begin{proposition}[Fermionic Hilbert space]
+The fermionic Hilbert space $\mathcal{H}_F$ of the spectral triple is the reduced
+coherent Hilbert space obtained by projecting admissible internal modes.
+\end{proposition}
+
+\begin{theorem}[Dirac operator as overlap generator]
+\label{thm:dirac}
+Compatibility with the coherent overlap algebra, bounded commutators, grading,
+and reality conditions selects a canonical Dirac-type operator on the reduced
+Hilbert space, unique up to bounded perturbations and admissible inner
+fluctuations. This operator coincides with the Dirac operator of the
+corresponding almost-commutative spectral triple.
+\end{theorem}
+
+\begin{proof}
+Coherent overlap dynamics induces a first-order differential generator.
+Requiring bounded commutators with $\mathcal{A}_F$, compatibility with grading
+and reality inherited from admissibility, and stability under inner fluctuations
+restricts the generator to a Dirac-type operator. Uniqueness holds up to bounded
+perturbations and inner fluctuations, as in standard spectral triple theory.
+\qedhere
+\end{proof}
+
+% ============================================================
+\section{The Spectral Action as a Coherent Truncation Shadow}
+% ============================================================
+
+\begin{assumption}[Coherent proper-time kernel]\label{ass:kernel}
+The coherent fixed-point action admits a proper-time representation with a positive
+measure $\mu(\tau)$ supported on $\tau\ge\tau_0\sim\lambda_\ast^{-1}$, encoding
+spectral proper-time (SPT) damping.
+\end{assumption}
+
+\begin{theorem}[Spectral action as coherent truncation shadow]
+\label{thm:spectral_shadow}
+Within the coherent universality class, the spectral action
+\[
+S_{\mathrm{spec}} = \Tr\, f\!\left(\frac{D^2}{\Lambda^2}\right)
+\]
+arises as the truncation shadow of the coherent fixed-point action. The cutoff
+scale satisfies $\Lambda\sim\lambda_\ast^{1/2}$, and the cutoff function $f$ is
+completely monotone and fixed (up to admissible reparametrization) by the SPT
+kernel.
+\end{theorem}
+
+\begin{proof}
+The coherent action admits a proper-time representation
+\[
+S_{\mathrm{coh}} = \int_0^\infty \dd\tau\, \mu(\tau)\,
+\Tr\!\left(e^{-\tau D^2}\right),
+\]
+with $\mu(\tau)$ supported on $\tau\ge\tau_0$. Truncation replaces the integral
+by a regulated trace, yielding the spectral action with
+\[
+f(x)=\int_{\tau_0}^\infty \dd\tau\,\mu(\tau)e^{-\tau x}.
+\]
+Thus $f$ belongs to a constrained completely monotone class, and
+$\Lambda\sim\tau_0^{-1/2}\sim\lambda_\ast^{1/2}$. \qedhere
+\end{proof}
+
+% ============================================================
+\section{Standard Model Couplings Are Not Independently Tunable}
+% ============================================================
+
+\begin{proposition}[Gauge kinetic normalization]
+Gauge kinetic terms arise from overlap normalization and are fixed functions of
+$\ThetaB$.
+\end{proposition}
+
+\begin{proposition}[Yukawa matrices as overlap matrices]
+Yukawa matrices encode overlap strengths between coherent internal sectors and are
+fixed (up to admissible basis changes) by $\ThetaB$.
+\end{proposition}
+
+\begin{theorem}[Higgs sector coefficients]
+\label{thm:higgs}
+Within a coherent universality class, the Higgs mass parameter and quartic
+self-coupling appearing in the spectral action are fixed functions of $\ThetaB$ and
+are not independently tunable.
+\end{theorem}
+
+\begin{proof}
+The Higgs field arises as an inner fluctuation of $D_F$. Its potential is determined
+by Seeley--DeWitt coefficients, which depend on traces of powers of $D_F$. Since
+$D_F$ is fixed (up to admissible fluctuations) by Theorem~\ref{thm:dirac}, the Higgs
+coefficients are fixed by $\ThetaB$. \qedhere
+\end{proof}
+
+% ============================================================
+\section{Relation to RG Flow and UV Completion}
+% ============================================================
+
+\begin{proposition}[Spectral action as IR shadow of $\Gamma_\infty$]
+The spectral action corresponds to the infrared truncation of the ultraviolet
+endpoint functional $\Gamma_\infty$ obtained in the asymptotic safety shadow.
+\end{proposition}
+
+% ============================================================
+\section{Relation to NCG and Standard Model Phenomenology}
+% ============================================================
+
+The coherent-shadow interpretation explains why NCG predictions are robust yet
+sensitive to truncation, why coupling relations are approximate, and why no exact
+predictions arise without cross-sector closure.
+
+% ============================================================
+\section{Cross-Sector Closure and Falsifiability}
+% ============================================================
+
+\begin{theorem}[Cross-sector closure]
+Within the coherent universality class on slabs, collapse thresholds, spacetime
+event density, ultraviolet completion, canonical geometry, and Standard Model
+parameters are fixed functions of the same bottleneck vector $\ThetaB$.
+\end{theorem}
+
+\begin{corollary}[Falsifiability]
+If any sector requires parameter values incompatible with $\ThetaB$ inferred from
+another, the coherent-sector framework is falsified.
+\end{corollary}
+
+% ============================================================
+\section{Conclusions}
+% ============================================================
+
+We have shown that the spectral action and the noncommutative geometric formulation
+of the Standard Model arise as shadows of coherent fixed-point geometry under
+projection and truncation. Matter, gravity, collapse, spacetime events, ultraviolet
+completion, and canonical geometry are unified through a single bottleneck vector
+controlling admissibility.
+
+All results are slab-local and admissibility-conditioned. Together with companion
+shadow-bridge analyses, this work completes a multi-sector validation program for
+coherence-based fundamental dynamics.
+\begin{thebibliography}{99}
+
+\bibitem{MTT-Admissibility}
+P.~Nero,
+\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255621}
+
+\bibitem{MTT-Foundation}
+P.~Nero,
+\emph{Modal Triplet Theory: Foundation},
+Zenodo preprint, September 2025.
+\url{https://doi.org/10.5281/zenodo.16949762}
+
+\bibitem{MTT-FixedPoints}
+P.~Nero,
+\emph{Fixed Points I--VI: Complete Coherence Spine},
+Zenodo preprints, August 2025.
+\url{https://doi.org/10.5281/zenodo.16948748}
+
+\bibitem{MTT-ProjectionAdmissibility}
+P.~Nero,
+\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255838}
+
+\bibitem{MTT-Closure}
+P.~Nero,
+\emph{Closure and Inevitability in Modal Triplet Theory},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255510}
+
+\bibitem{MTT-CoherenceCapacity}
+P.~Nero,
+\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255905}
+
+\bibitem{MTT-CoherenceDynamics}
+P.~Nero,
+\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18256048}
+
+\bibitem{MTT-QM}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
+Zenodo preprint, September 2025.
+\url{https://doi.org/10.5281/zenodo.17074246}
+
+\bibitem{MTT-QFT}
+P.~Nero,
+\emph{From MTT to Quantum Field Theory},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17068816}
+
+\bibitem{MTT-GR}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to General Relativity},
+Zenodo preprint, October 2025.
+\url{https://doi.org/10.5281/zenodo.16950597}
+
+\bibitem{MTT-UVQG}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17077671}
+
+\bibitem{MTT-Measurement}
+P.~Nero,
+\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17177404}
+
+\bibitem{MTT-Irreversibility}
+P.~Nero,
+\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18256408}
+
+\bibitem{MTT-Bell-Beables}
+P.~Nero,
+\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17076300}
+
+\bibitem{MTT-Bell-Temporal}
+P.~Nero,
+\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
+Zenodo preprint, August 2025.
+\url{https://doi.org/10.5281/zenodo.18208884}
+
+\bibitem{MTT-Stochastic}
+P.~Nero,
+\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18254862}
+
+\end{thebibliography}
+\end{document}

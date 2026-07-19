@@ -1,0 +1,891 @@
+\documentclass[11pt]{article}
+
+\usepackage{series} % Modal Triplet Theory series style
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Modal Triplet Theory: From MTT to Pilot--Wave Dynamics}
+\author{Peter Nero}
+\date{January, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We derive pilot--wave (de Broglie--Bohm) dynamics as an effective, intra--basin
+description of Modal Triplet Theory (MTT).
+Starting from the deterministic modal flow on the full configuration space
+$X = Y^4 \times B_1 \times B_2 \times B_3$,
+we show that the coherent projection and observable pushforward induce
+(i) a Schr\"odinger evolution on the reduced observable Hilbert space,
+(ii) a conserved probability current on configuration space,
+and (iii) a canonical characteristic flow whose integral curves coincide
+with Bohmian guidance equations.
+No additional hidden variables, stochastic postulates, or ontological
+assumptions are introduced.
+
+We further prove that pilot--wave dynamics are valid only within
+admissible coherence basins where the coherent projection is stable.
+At admissibility boundaries---including measurement, horizon formation,
+and cosmological selection events---the pilot--wave description necessarily
+breaks down, while the underlying MTT dynamics remain deterministic and well-defined.
+Pilot--wave theory is therefore shown to be a regime--limited shadow
+of MTT rather than a fundamental theory.
+
+This establishes Bohmian mechanics as a semiclassical gauge of MTT,
+clarifies its domain of validity, and resolves its foundational tensions
+with probability, measurement, and relativistic causality.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%--------------------------------------------------
+\section{Introduction and Scope}
+%--------------------------------------------------
+
+Pilot--wave theory (also known as de Broglie--Bohm theory) provides a deterministic
+reformulation of nonrelativistic quantum mechanics by supplementing the Schr\"odinger
+wavefunction with configuration--space trajectories guided by the wave phase.
+While mathematically consistent, pilot--wave theory is widely regarded as
+ontologically ad hoc, probabilistically incomplete, and difficult to extend
+beyond nonrelativistic quantum mechanics.
+
+Modal Triplet Theory (MTT), by contrast, derives quantum mechanics as an effective
+four--dimensional shadow of deterministic dynamics on a higher--dimensional
+modal configuration space.
+In MTT, quantum states, probabilities, and measurement outcomes arise
+from coherent projection and admissibility constraints rather than from
+fundamental indeterminism or added hidden variables.
+
+The purpose of this paper is to show that pilot--wave dynamics are not an
+independent alternative to standard quantum mechanics, but rather
+an \emph{effective characteristic description} of MTT in regimes where:
+
+\begin{itemize}
+  \item the coherent projector is stable,
+  \item the effective Schr\"odinger evolution is valid,
+  \item and no admissibility barrier is crossed.
+\end{itemize}
+
+Within this regime, Bohmian guidance equations arise canonically
+from the conserved probability current associated with the MTT--derived
+Schr\"odinger evolution.
+Outside this regime, pilot--wave theory necessarily fails, while MTT remains
+consistent and deterministic.
+
+\subsection*{Claim Discipline}
+
+We distinguish three layers of statements:
+
+\begin{enumerate}
+  \item \textbf{Proved (MTT-native):}
+  deterministic modal flow, coherent projection, existence of Schr\"odinger
+  evolution, Born measure, and admissibility constraints.
+
+  \item \textbf{Derived (this paper):}
+  emergence of pilot--wave guidance equations as characteristic flows
+  of the MTT Schr\"odinger layer.
+
+  \item \textbf{Excluded claims:}
+  pilot--wave ontology as fundamental, global validity across selection events,
+  or replacement of MTT by Bohmian mechanics.
+\end{enumerate}
+
+All derivations are valid \emph{only within admissible coherence basins},
+as emphasized throughout the MTT corpus.
+
+%--------------------------------------------------
+\section{MTT Framework and Notation}
+%--------------------------------------------------
+
+\subsection{Modal Configuration Space}
+
+Modal Triplet Theory posits a configuration space
+\[
+X \;=\; Y^4 \times B_1 \times B_2 \times B_3,
+\]
+where:
+\begin{itemize}
+  \item $Y^4$ is the emergent spacetime manifold,
+  \item each $B_i$ is a compact modal fiber equipped with a Laplace--type operator.
+\end{itemize}
+
+Let $\Phi_\tau : X \to X$ denote the deterministic modal evolution,
+assumed invertible and well-posed on admissible domains.
+
+\subsection{Coherent Projection and Observable Pushforward}
+
+Define the joint harmonic projector
+\[
+\Pi := \Pi_{B_1} \Pi_{B_2} \Pi_{B_3},
+\]
+where $\Pi_{B_i}$ projects onto $\ker \Delta_{B_i}$.
+The coherent sector is
+\[
+\mathcal{H}_{\mathrm{coh}} := \mathrm{Ran}(\Pi).
+\]
+
+Observable states are obtained via the pushforward
+\[
+P := I \circ \Pi,
+\]
+where $I$ integrates over the internal modal fibers.
+
+The effective (shadow) evolution is
+\[
+T_\tau := P \circ \Phi_\tau.
+\]
+
+\subsection{Admissibility}
+
+An admissible domain $\mathcal{A} \subset X$ is one on which:
+\begin{enumerate}
+  \item the spectral gaps defining $\Pi$ remain open,
+  \item $\Pi$ is bounded and regular,
+  \item truncation errors remain controlled under iteration of $T_\tau$.
+\end{enumerate}
+
+Admissibility is \emph{not global}.
+Crossing its boundary produces selection events and effective irreversibility.
+
+\subsection{Reduced Hilbert Space and Schr\"odinger Layer}
+
+On each admissible basin, the observable sector admits:
+\begin{itemize}
+  \item a Hilbert space $\mathcal{H}_{\mathrm{obs}}$,
+  \item a self-adjoint Hamiltonian $H_{\mathrm{obs}}$,
+  \item unitary evolution $U(t)=e^{-iH_{\mathrm{obs}}t/\hbar}$.
+\end{itemize}
+
+This construction is reviewed in detail in the MTT$\to$QM derivation
+and will be taken as established here.
+
+\bigskip
+\noindent
+\textbf{In the next section}, we derive the configuration--space probability
+current and show how Bohmian guidance equations arise as characteristic flows.
+%==================================================
+\section{Configuration--Space Schr\"odinger Dynamics}
+%==================================================
+
+We now specialize to the standard nonrelativistic regime of the
+MTT--derived observable theory.
+All statements in this section are valid \emph{within a fixed admissible
+coherence basin}.
+
+\subsection{Configuration Observables}
+
+Let $q \in \mathbb{R}^{3N}$ denote a configuration observable
+(e.g.\ particle positions in the nonrelativistic limit).
+The observable Hilbert space takes the form
+\[
+\mathcal{H}_{\mathrm{obs}} \;\simeq\; L^2(\mathbb{R}^{3N}, dq).
+\]
+
+The MTT--derived Hamiltonian has the standard Schr\"odinger form
+\begin{equation}
+H_{\mathrm{obs}}
+\;=\;
+\sum_{k=1}^N
+\left(
+-\frac{\hbar^2}{2m_k}\nabla_k^2
+\right)
+\;+\;
+V(q,t),
+\label{eq:Hobs}
+\end{equation}
+where $V$ may include external, interaction, and effective potentials
+arising from modal truncation.
+
+\subsection{Unitary Evolution}
+
+The observable state $\psi(q,t)$ evolves according to
+\begin{equation}
+i\hbar\,\partial_t \psi(q,t)
+\;=\;
+H_{\mathrm{obs}}\,\psi(q,t),
+\label{eq:Schrodinger}
+\end{equation}
+with $\|\psi(t)\|_{L^2}$ conserved for all $t$ such that the trajectory
+remains in the admissible basin.
+
+\begin{remark}
+This evolution is exact only \emph{between} selection events.
+MTT makes no claim that a single global Schr\"odinger equation governs
+all times.
+\end{remark}
+
+%==================================================
+\section{Probability Density and Continuity}
+%==================================================
+
+\subsection{Born Density}
+
+Define the configuration--space density
+\begin{equation}
+\rho(q,t) := |\psi(q,t)|^2.
+\end{equation}
+
+In MTT, $\rho$ is not postulated but arises as the unique noncontextual
+measure compatible with modal re--coherence and projection.
+Within an admissible basin, $\rho$ is conserved by unitary evolution.
+
+\subsection{Probability Current}
+
+For each configuration component $x_k \in \mathbb{R}^3$,
+define the probability current
+\begin{equation}
+j_k(q,t)
+:=
+\frac{\hbar}{m_k}
+\operatorname{Im}\!\left(
+\psi^*(q,t)\,\nabla_k \psi(q,t)
+\right).
+\label{eq:current}
+\end{equation}
+
+\subsection{Continuity Equation}
+
+\begin{theorem}[Continuity Equation]
+Within an admissible coherence basin, the density $\rho$ and currents
+$\{j_k\}$ satisfy
+\begin{equation}
+\partial_t \rho(q,t)
++
+\sum_{k=1}^N \nabla_k \cdot j_k(q,t)
+\;=\;
+0.
+\label{eq:continuity}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Equation \eqref{eq:continuity} follows from the self--adjointness of
+$H_{\mathrm{obs}}$ and the unitarity of the evolution \eqref{eq:Schrodinger}.
+The proof is standard and relies only on integration by parts.
+\end{proof}
+
+\begin{remark}
+Global probability conservation across all times is \emph{not} asserted.
+At admissibility boundaries, the effective description changes and
+\eqref{eq:continuity} need not hold.
+\end{remark}
+
+%==================================================
+\section{Polar Decomposition and Hamilton--Jacobi Form}
+%==================================================
+
+\subsection{Polar Representation}
+
+Write the wavefunction in polar form
+\begin{equation}
+\psi(q,t) = R(q,t)\,e^{iS(q,t)/\hbar},
+\qquad
+R \ge 0.
+\label{eq:polar}
+\end{equation}
+
+Then $\rho = R^2$ and the current becomes
+\begin{equation}
+j_k(q,t)
+=
+\rho(q,t)\,
+\frac{\nabla_k S(q,t)}{m_k}.
+\label{eq:currentS}
+\end{equation}
+
+\subsection{Quantum Hamilton--Jacobi Equation}
+
+Substituting \eqref{eq:polar} into the Schr\"odinger equation and
+separating real and imaginary parts yields:
+\begin{align}
+\partial_t \rho
++
+\sum_{k=1}^N \nabla_k \cdot
+\left(
+\rho\,\frac{\nabla_k S}{m_k}
+\right)
+&= 0,
+\\[0.5em]
+\partial_t S
++
+\sum_{k=1}^N
+\frac{(\nabla_k S)^2}{2m_k}
++
+V(q,t)
++
+Q(q,t)
+&= 0,
+\label{eq:HJ}
+\end{align}
+where the quantum potential is
+\begin{equation}
+Q(q,t)
+:=
+-
+\sum_{k=1}^N
+\frac{\hbar^2}{2m_k}
+\frac{\nabla_k^2 R}{R}.
+\label{eq:Q}
+\end{equation}
+
+\begin{remark}
+In MTT, $Q$ is not interpreted as a new fundamental force.
+It encodes projection--induced curvature of the effective description.
+\end{remark}
+
+%==================================================
+\section{Pilot--Wave Guidance as Characteristic Flow}
+%==================================================
+
+We now arrive at the central result.
+
+\subsection{Velocity Field on Configuration Space}
+
+Define the configuration--space velocity field
+\begin{equation}
+v_k(q,t)
+:=
+\frac{j_k(q,t)}{\rho(q,t)}
+=
+\frac{\nabla_k S(q,t)}{m_k}.
+\label{eq:velocity}
+\end{equation}
+
+This object is well-defined wherever $\rho>0$.
+
+\subsection{Characteristic Curves}
+
+Let $q(t) = (x_1(t),\dots,x_N(t))$ be an integral curve of $v$:
+\begin{equation}
+\dot x_k(t) = v_k(q(t),t).
+\label{eq:guidance}
+\end{equation}
+
+\subsection{Main Theorem}
+
+\begin{theorem}[Emergent Pilot--Wave Dynamics]
+Within an admissible coherence basin of Modal Triplet Theory,
+the integral curves of the configuration--space velocity field
+\eqref{eq:velocity} satisfy the de Broglie--Bohm guidance equations
+\eqref{eq:guidance}.
+
+These curves provide a deterministic characteristic description
+of the MTT--derived Schr\"odinger evolution.
+\end{theorem}
+
+\begin{proof}
+Equation \eqref{eq:guidance} follows identically from
+definitions \eqref{eq:current} and \eqref{eq:velocity}.
+No additional assumptions are introduced.
+\end{proof}
+
+\begin{remark}[Interpretive Status]
+MTT does \emph{not} postulate particles or trajectories as fundamental.
+The guidance equations arise as a \emph{derived kinematic structure}
+once a configuration observable is chosen.
+\end{remark}
+
+\begin{remark}[Domain of Validity]
+The guidance law is valid only while the effective Schr\"odinger
+description holds.
+At admissibility boundaries, the characteristic flow need not extend
+smoothly and pilot--wave dynamics may fail.
+\end{remark}
+
+%==================================================
+\section{Equivariance and Born Measure}
+%==================================================
+
+\subsection{Equivariance}
+
+\begin{theorem}[Equivariance]
+If initial configurations are distributed according to
+$\rho(q,t_0)=|\psi(q,t_0)|^2$,
+then under the guidance flow \eqref{eq:guidance},
+\[
+\rho(q,t)=|\psi(q,t)|^2
+\]
+for all $t$ within the admissible basin.
+\end{theorem}
+
+\begin{proof}
+Equivariance follows directly from the continuity equation
+\eqref{eq:continuity} and the definition of the velocity field
+\eqref{eq:velocity}.
+\end{proof}
+
+\begin{remark}
+In pilot--wave theory, equivariance is often invoked to justify the
+Born rule.
+In MTT, the Born measure is derived independently;
+equivariance appears as a consistency check rather than a postulate.
+\end{remark}
+
+\bigskip
+\noindent
+\textbf{In Part III}, we will:
+\begin{itemize}
+  \item extend the derivation to entangled and nonlocal systems,
+  \item analyze measurement and admissibility breakdown,
+  \item and relate pilot--wave trajectories to MTT’s indivisible
+  stochastic processes.
+\end{itemize}
+%==================================================
+\section{Entanglement and Configuration--Space Nonlocality}
+%==================================================
+
+\subsection{Entangled States}
+
+Let $\psi(q,t)$ be an $N$--particle wavefunction on
+$\mathbb{R}^{3N}$ that does not factorize:
+\[
+\psi(q,t) \neq \prod_{k=1}^N \psi_k(x_k,t).
+\]
+
+In such cases, the configuration--space current
+\eqref{eq:current} and velocity field \eqref{eq:velocity}
+are intrinsically nonlocal in physical space.
+
+\subsection{Nonlocal Guidance}
+
+For entangled $\psi$, the velocity of particle $k$ is
+\begin{equation}
+\dot x_k(t)
+=
+\frac{1}{m_k}
+\nabla_k S(x_1,\dots,x_N,t),
+\end{equation}
+which depends instantaneously on the full configuration
+$q=(x_1,\dots,x_N)$.
+
+This is the familiar nonlocality of pilot--wave theory.
+
+\subsection{MTT Interpretation}
+
+In MTT, this nonlocality is not attributed to superluminal
+forces or signals.
+Instead, it reflects the fact that the coherent projector
+$\Pi$ acts globally on the modal configuration space.
+
+Observable locality is preserved at the level of operator
+algebras on $Y^4$; nonlocal correlations arise from
+projection constraints rather than from causal influence.
+
+\begin{remark}
+MTT therefore accommodates Bell--inequality violations
+without violating microcausality or relativistic consistency.
+\end{remark}
+
+%==================================================
+\section{Measurement as Admissibility Breakdown}
+%==================================================
+
+\subsection{Limits of the Schr\"odinger Layer}
+
+The Schr\"odinger evolution \eqref{eq:Schrodinger}
+and its associated guidance equations
+are valid only within a fixed admissible coherence basin.
+
+When the system--apparatus interaction drives the modal
+configuration toward the boundary of admissibility,
+the coherent projector ceases to be stably invertible.
+
+\subsection{Admissibility Barriers}
+
+\begin{definition}[Admissibility Barrier]
+A subset $\mathcal{B}\subset X$ is an admissibility barrier
+if:
+\begin{enumerate}
+  \item the spectral gap defining $\Pi$ closes or becomes unstable,
+  \item $\Pi$ ceases to admit a measurable right inverse,
+  \item multiple modal states project to the same observable state.
+\end{enumerate}
+\end{definition}
+
+Crossing $\mathcal{B}$ induces effective irreversibility
+in the projected dynamics.
+
+\subsection{Measurement Event}
+
+A measurement corresponds to a trajectory $\Phi_\tau(x)$
+crossing an admissibility barrier.
+After this crossing:
+\begin{itemize}
+  \item the prior Schr\"odinger evolution no longer applies globally,
+  \item the guidance field $v(q,t)$ may cease to exist,
+  \item the observable state must be reinitialized in a new basin.
+\end{itemize}
+
+\begin{remark}
+This replaces the notion of ``collapse'' with a precise
+structural mechanism: loss of admissibility.
+\end{remark}
+
+%==================================================
+\section{Failure of Global Pilot--Wave Dynamics}
+%==================================================
+
+\subsection{Why Bohmian Mechanics Cannot Be Global}
+
+Pilot--wave theory assumes:
+\begin{itemize}
+  \item a single global wavefunction $\psi(q,t)$,
+  \item continuous guidance trajectories for all times.
+\end{itemize}
+
+MTT shows that these assumptions fail generically:
+\begin{itemize}
+  \item Schr\"odinger evolution is basin--scoped,
+  \item admissibility breakdown forces re--projection,
+  \item no global measurable inverse of $P$ exists.
+\end{itemize}
+
+\begin{theorem}[No Global Guidance Law]
+There exists no globally defined guidance field
+$v(q,t)$ whose integral curves describe all observable
+dynamics across admissibility barriers.
+\end{theorem}
+
+\begin{proof}
+At admissibility barriers, multiple modal states map to
+the same observable state under $P$.
+A globally defined $v(q,t)$ would require a measurable
+right inverse of $P$, which does not exist.
+\end{proof}
+
+\begin{remark}
+This is not a deficiency of MTT but a theorem.
+It explains why pilot--wave theory must be regime--limited.
+\end{remark}
+
+%==================================================
+\section{Relation to Indivisible Stochastic Processes}
+%==================================================
+
+\subsection{History--Dependent Kernels}
+
+MTT induces a probability measure on histories
+\[
+(q_0,q_1,\dots)\in (\mathbb{R}^{3N})^{\mathbb{N}}
+\]
+with conditional kernels
+\[
+K_{\Delta\tau}(q_{k+1}\mid q_0,\dots,q_k)
+\propto
+\exp\!\left(
+-\frac{\Delta A(q_{k+1}\mid q_0,\dots,q_k)}{\hbar}
+\right),
+\]
+where $\Delta A$ is the modal action increment.
+
+These kernels are generically non--Markovian.
+
+\subsection{Bohmian Limit}
+
+In regimes where:
+\begin{itemize}
+  \item the action increment is sharply peaked,
+  \item admissibility is stable,
+  \item internal moduli decouple,
+\end{itemize}
+the kernels concentrate on the characteristic flow:
+\[
+K_{\Delta\tau}(\cdot\mid q_0,\dots,q_k)
+\;\to\;
+\delta\!\left(
+q_{k+1} - \Phi^{(v)}_{\Delta\tau}(q_k)
+\right),
+\]
+where $\Phi^{(v)}$ is the flow generated by
+$v=j/\rho$.
+
+\begin{theorem}[Pilot--Wave as Zero--Noise Limit]
+Pilot--wave dynamics arise as the zero--noise,
+peaked--kernel limit of the MTT indivisible stochastic
+process within an admissible basin.
+\end{theorem}
+
+\begin{remark}
+Outside this limit, deterministic Bohmian trajectories
+are replaced by history--dependent stochastic evolution,
+even though the underlying modal dynamics remain deterministic.
+\end{remark}
+
+%==================================================
+\section{Summary of the MTT--to--Pilot--Wave Mapping}
+%==================================================
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Pilot--Wave Concept} & \textbf{MTT Origin} \\
+\hline
+Wavefunction $\psi$ &
+Coherent--sector state under $P=\Pi\circ I$ \\[0.3em]
+Born density $|\psi|^2$ &
+Derived basin measure \\[0.3em]
+Probability current $j$ &
+Unitarity of $H_{\mathrm{obs}}$ \\[0.3em]
+Guidance equation &
+Characteristic flow of $j/\rho$ \\[0.3em]
+Nonlocality &
+Global action of coherent projector \\[0.3em]
+Collapse &
+Admissibility barrier crossing \\[0.3em]
+Quantum equilibrium &
+Consistency, not postulate \\[0.3em]
+Global trajectories &
+\emph{Forbidden} by noninvertibility \\[0.3em]
+\hline
+\end{tabular}
+\end{center}
+
+\bigskip
+\noindent
+\textbf{In Part IV (final)}, we will:
+\begin{itemize}
+  \item synthesize the results,
+  \item contrast MTT, pilot--wave, and Everett interpretations,
+  \item state precise conclusions and limits of applicability.
+\end{itemize}
+%==================================================
+\section{Comparison with Interpretations of Quantum Mechanics}
+%==================================================
+
+We briefly situate the present derivation relative to other major interpretations
+of quantum mechanics.
+
+\subsection{Copenhagen-Type Interpretations}
+
+Copenhagen interpretations treat the Schr\"odinger equation as fundamental
+but supplement it with axiomatic measurement postulates.
+Collapse is taken as primitive and non-unitary.
+
+By contrast, in MTT:
+\begin{itemize}
+  \item the Schr\"odinger equation is derived rather than postulated,
+  \item collapse is replaced by admissibility breakdown,
+  \item no additional axioms beyond deterministic modal evolution are required.
+\end{itemize}
+
+\subsection{Everett / Many-Worlds}
+
+Everettian interpretations retain universal unitary evolution
+and deny physical collapse.
+However, they require an additional interpretation of branching
+and a nontrivial justification of the Born rule.
+
+In MTT:
+\begin{itemize}
+  \item unitary evolution is only intra-basin,
+  \item branching corresponds to admissibility basin structure,
+  \item probabilities arise from basin measures, not branch counting.
+\end{itemize}
+
+Thus MTT agrees with Everett that collapse is not fundamental,
+but rejects the claim of globally valid unitary evolution.
+
+\subsection{Pilot--Wave Theory}
+
+Pilot--wave theory restores determinism by introducing
+configuration trajectories guided by the wavefunction.
+
+The present paper shows that:
+\begin{itemize}
+  \item pilot--wave guidance equations are \emph{derived} in MTT,
+  \item they require no additional ontological postulates,
+  \item and they are valid only within admissible coherence basins.
+\end{itemize}
+
+MTT therefore subsumes pilot--wave theory as an effective description,
+while explaining its scope limitations.
+
+%==================================================
+\section{Main Results}
+%==================================================
+
+We summarize the principal results of this paper.
+
+\begin{enumerate}
+  \item Modal Triplet Theory admits a deterministic modal flow
+  on the full configuration space $X$.
+
+  \item Coherent projection and observable pushforward
+  induce an effective Schr\"odinger evolution
+  on admissible coherence basins.
+
+  \item The associated probability current defines
+  a canonical configuration--space velocity field.
+
+  \item The integral curves of this velocity field
+  coincide with de Broglie--Bohm guidance equations.
+
+  \item No hidden variables, stochastic postulates,
+  or additional ontology are introduced.
+
+  \item Pilot--wave dynamics are valid only intra--basin;
+  they necessarily fail at admissibility barriers.
+
+  \item Measurement corresponds to admissibility breakdown,
+  not to physical collapse or branching.
+
+  \item Outside the pilot--wave regime,
+  MTT induces indivisible stochastic processes
+  on observable histories.
+\end{enumerate}
+
+%==================================================
+\section{Interpretive Statement}
+%==================================================
+
+The derivation presented here establishes the following:
+
+\begin{quote}
+\emph{Pilot--wave theory is not a fundamental alternative to quantum mechanics,
+but an emergent characteristic description of Modal Triplet Theory
+valid only within admissible coherence basins.}
+\end{quote}
+
+From the MTT perspective:
+\begin{itemize}
+  \item determinism is fundamental,
+  \item probability is structural,
+  \item nonlocal correlations arise from projection,
+  \item and irreversibility is unavoidable at admissibility boundaries.
+\end{itemize}
+
+Pilot--wave mechanics correctly captures the semiclassical,
+deterministic limit of this structure,
+but cannot be globally extended without contradiction.
+
+%==================================================
+\section{Outlook}
+%==================================================
+
+Several directions follow naturally from this work.
+
+\begin{itemize}
+  \item \textbf{Relativistic extension:}
+  Pilot--wave dynamics for relativistic fields arise
+  from the same MTT framework without preferred foliations.
+
+  \item \textbf{Quantum field theory:}
+  Particle creation and annihilation correspond to
+  basin transitions rather than trajectory endpoints.
+
+  \item \textbf{Quantum gravity:}
+  Horizon formation and evaporation are admissibility events,
+  explaining information loss without violating determinism.
+
+  \item \textbf{Cosmology:}
+  Initial condition selection and probability measures
+  are unified with quantum measurement under the same mechanism.
+\end{itemize}
+
+In this sense, Modal Triplet Theory provides a unifying
+framework in which the successes of pilot--wave theory are retained,
+its foundational problems are resolved,
+and its limitations are rendered unavoidable and precise.
+\begin{thebibliography}{99}
+
+\bibitem{MTT-Admissibility}
+P.~Nero,
+\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255621}
+
+\bibitem{MTT-Foundation}
+P.~Nero,
+\emph{Modal Triplet Theory: Foundation},
+Zenodo preprint, September 2025.
+\url{https://doi.org/10.5281/zenodo.16949762}
+
+\bibitem{MTT-FixedPoints}
+P.~Nero,
+\emph{Fixed Points I--VI: Complete Coherence Spine},
+Zenodo preprints, August 2025.
+\url{https://doi.org/10.5281/zenodo.16948748}
+
+\bibitem{MTT-ProjectionAdmissibility}
+P.~Nero,
+\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255838}
+
+\bibitem{MTT-Closure}
+P.~Nero,
+\emph{Closure and Inevitability in Modal Triplet Theory},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255510}
+
+\bibitem{MTT-CoherenceCapacity}
+P.~Nero,
+\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255905}
+
+\bibitem{MTT-CoherenceDynamics}
+P.~Nero,
+\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18256048}
+
+\bibitem{MTT-QM}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
+Zenodo preprint, September 2025.
+\url{https://doi.org/10.5281/zenodo.17074246}
+
+\bibitem{MTT-QFT}
+P.~Nero,
+\emph{From MTT to Quantum Field Theory},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17068816}
+
+\bibitem{MTT-GR}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to General Relativity},
+Zenodo preprint, October 2025.
+\url{https://doi.org/10.5281/zenodo.16950597}
+
+\bibitem{MTT-UVQG}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17077671}
+
+\bibitem{MTT-Measurement}
+P.~Nero,
+\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17177404}
+
+\bibitem{MTT-Irreversibility}
+P.~Nero,
+\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18256408}
+
+\bibitem{MTT-Bell-Beables}
+P.~Nero,
+\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17076300}
+
+\bibitem{MTT-Bell-Temporal}
+P.~Nero,
+\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
+Zenodo preprint, August 2025.
+\url{https://doi.org/10.5281/zenodo.18208884}
+
+\bibitem{MTT-Stochastic}
+P.~Nero,
+\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18254862}
+
+\end{thebibliography}
+\end{document}

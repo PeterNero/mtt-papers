@@ -1,0 +1,88 @@
+{
+  "abstract": "We present a first-principles derivation of interacting quantum field theory (QFT) on curved spacetimes from Modal Triplet Theory (MTT). Extending the projection operator formalism \\Pi_{\\mathrm{QM}} of the MTT \\to quantum mechanics correspondence, we construct \\Pi_{\\mathrm{QFT}} as a map from modal-coherent sectors of the 10D MTT configuration space to the algebra of quantum fields on a globally hyperbolic 4D spacetime (Y_4,g_{\\mu\\nu}). Our formulation employs the algebraic QFT framework, ensuring the Hadamard property of physical states, and incorporates running couplings from the covariant functional renormalisation group (FRG). We derive the semiclassical Einstein equation with FRG-improved \\langle T_{\\mu\\nu} \\rangle_{\\mathrm{ren}}, discuss unitarity and implementability conditions (Shale\u2013Stinespring), and give a worked example: scalar field particle production in a spatially flat FRW universe with scale-dependent mass and curvature coupling. This work completes the triad MTT \\to (QM, GR, QFT) and provides a mathematically rigorous bridge between modal dynamics and the standard formalism of quantum fields in curved backgrounds.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v3",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.16950915",
+    "created": "2026-01-21T04:24:59.996724+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18321814",
+    "files": [
+      {
+        "checksum": "md5:3271c6240772806876fd84fb4ff0aa90",
+        "content_url": "https://zenodo.org/api/records/18321814/files/Modal_Triplet_Theory__From_MTT_to_Quantum_Field_Theory_on_Curved_Spacetime_v3%20(1).pdf/content",
+        "key": "Modal_Triplet_Theory__From_MTT_to_Quantum_Field_Theory_on_Curved_Spacetime_v3 (1).pdf",
+        "size": 430944
+      }
+    ],
+    "id": "18321814",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18321814",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: From MTT to Quantum Field Theory on Curved Spacetime",
+    "updated": "2026-01-21T04:25:00.532881+00:00",
+    "version": "v3.0"
+  },
+  "main_tex_sha256": "bebfbc5d5a847c2e1dc92af32d4e1cdf4d573b5c90a2c096be2f51218142ac8f",
+  "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
+  "paper_md_sha256": "a448c05dc327ca672751cab523b8e888b22c03c83d69ba9e47bdc73c2e28a12a",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 47014,
+      "path": "main.tex",
+      "sha256": "bebfbc5d5a847c2e1dc92af32d4e1cdf4d573b5c90a2c096be2f51218142ac8f"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "7 Quantum Field Theory/_work/Modal_Triplet_Theory__From_MTT_to_Quantum_Field_Theory_on_Curved_Spacetime_v3"
+  },
+  "source_tree_sha256": "6b23abbf60c104920f32edaa34a649932c0bece4bf100ba8cb2840dc38a6fef5",
+  "title": "Modal Triplet Theory: From MTT to Quantum Field Theory on Curved Spacetime",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.16950915",
+      "created": "2026-01-21T04:24:59.996724+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18321814",
+      "files": [
+        {
+          "checksum": "md5:3271c6240772806876fd84fb4ff0aa90",
+          "content_url": "https://zenodo.org/api/records/18321814/files/Modal_Triplet_Theory__From_MTT_to_Quantum_Field_Theory_on_Curved_Spacetime_v3%20(1).pdf/content",
+          "key": "Modal_Triplet_Theory__From_MTT_to_Quantum_Field_Theory_on_Curved_Spacetime_v3 (1).pdf",
+          "size": 430944
+        }
+      ],
+      "id": "18321814",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18321814",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: From MTT to Quantum Field Theory on Curved Spacetime",
+      "updated": "2026-01-21T04:25:00.532881+00:00",
+      "version": "v3.0"
+    }
+  ]
+}

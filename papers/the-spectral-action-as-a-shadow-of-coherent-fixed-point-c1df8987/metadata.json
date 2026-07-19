@@ -1,0 +1,88 @@
+{
+  "abstract": "We show that the Connes\u2013Chamseddine spectral action and the associated noncommutative geometric formulation of the Standard Model arise as four-dimensional shadows of coherent fixed-point geometry under projection and truncation in Modal Triplet Theory (MTT). The almost-commutative spectral triple\u2014including its finite algebra, fermionic Hilbert space, and Dirac operator\u2014emerges as an effective encoding of coherent-sector overlap geometry. The cutoff scale and cutoff function of the spectral action are fixed (up to admissible reparametrization) by the coherent spectral gap and spectral proper-time (SPT) damping, eliminating their apparent arbitrariness. Gauge couplings, Yukawa matrices, and Higgs-sector parameters are not independently tunable within a coherent universality class, but are fixed functions of a single bottleneck vector \\Theta that also controls collapse thresholds, spacetime event density, ultraviolet completion, and canonical geometric discreteness in independent shadow constructions. All results are slab-local and admissibility-conditioned.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18261749",
+    "created": "2026-01-15T19:51:20.552860+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18261750",
+    "files": [
+      {
+        "checksum": "md5:677ce6062de8e46476f7b9aa8d33c0d5",
+        "content_url": "https://zenodo.org/api/records/18261750/files/The_Spectral_Action_as_a_Shadow_of_Coherent_Fixed_Point_Geometry%20(3).pdf/content",
+        "key": "The_Spectral_Action_as_a_Shadow_of_Coherent_Fixed_Point_Geometry (3).pdf",
+        "size": 257747
+      }
+    ],
+    "id": "18261750",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18261750",
+    "resource_type": "publication",
+    "title": "The Spectral Action as an Effective Limit of Modal Triplet Theory",
+    "updated": "2026-01-15T19:51:21.209612+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "b3a1e74d1d002227cdc359334891d2417a296d5c97e168da6757a7909e1ea9ad",
+  "paper_id": "the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987",
+  "paper_md_sha256": "e9a84dee14e6b7fca3a90a3600f5df35eda3241e17aba208c6a05e5caa4e5f7c",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 15542,
+      "path": "main.tex",
+      "sha256": "b3a1e74d1d002227cdc359334891d2417a296d5c97e168da6757a7909e1ea9ad"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/The_Spectral_Action_as_a_Shadow_of_Coherent_Fixed_Point_Geometry"
+  },
+  "source_tree_sha256": "e7f38343d2fad5335115d3f6d232454c3407ddce9c30a61b48d056fe3af7e1f0",
+  "title": "The Spectral Action as a Shadow of Coherent Fixed-Point Geometry Standard Model couplings, Higgs sector, and noncommutative geometry from Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261749",
+      "created": "2026-01-15T19:51:20.552860+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18261750",
+      "files": [
+        {
+          "checksum": "md5:677ce6062de8e46476f7b9aa8d33c0d5",
+          "content_url": "https://zenodo.org/api/records/18261750/files/The_Spectral_Action_as_a_Shadow_of_Coherent_Fixed_Point_Geometry%20(3).pdf/content",
+          "key": "The_Spectral_Action_as_a_Shadow_of_Coherent_Fixed_Point_Geometry (3).pdf",
+          "size": 257747
+        }
+      ],
+      "id": "18261750",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18261750",
+      "resource_type": "publication",
+      "title": "The Spectral Action as an Effective Limit of Modal Triplet Theory",
+      "updated": "2026-01-15T19:51:21.209612+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

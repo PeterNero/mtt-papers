@@ -1,0 +1,88 @@
+{
+  "abstract": "Wilsonian effective field theory (EFT) is among the most successful frameworks in modern physics, yet its conceptual status remains ambiguous. EFT is explicitly non-fundamental, non-invertible, and valid only within restricted regimes. Renormalization group (RG) flow is irreversible, universality is ubiquitous, and breakdown at strong coupling or high curvature is expected rather than anomalous. In this paper we show that these features are not contingent properties of quantum field theories, but structural consequences of projection under finite admissibility. Building on the Projection\u2013Admissibility Principle, we identify Wilsonian coarse-graining as a noninjective projection from underlying dynamics to an effective description. The cutoff is interpreted as an admissibility boundary, RG flow as induced effective evolution, and universality as equivalence under projection. No new dynamics or ultraviolet completion is proposed. Instead, EFT is shown to be the inevitable form of any stable, finite, predictive description. We further clarify how Modal Triplet Theory (MTT) provides an explicit realization in which EFT arises as a shadow of coherent-sector projection.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262360",
+    "created": "2026-01-15T21:28:54.252138+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262361",
+    "files": [
+      {
+        "checksum": "md5:af88c529a0c892b06d5acdf53b493e7f",
+        "content_url": "https://zenodo.org/api/records/18262361/files/Effective_Field_Theory_as_a_Shadow_of_Projection__Admissible_Dynamics%20(1).pdf/content",
+        "key": "Effective_Field_Theory_as_a_Shadow_of_Projection__Admissible_Dynamics (1).pdf",
+        "size": 352404
+      }
+    ],
+    "id": "18262361",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262361",
+    "resource_type": "publication",
+    "title": "Effective Field Theory as a Shadow of Projection\u2013Admissible Dynamics",
+    "updated": "2026-01-15T21:28:54.799599+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "4619592e65fc5a313a969fabd58274081324f2c979223f83e4071094acdae314",
+  "paper_id": "effective-field-theory-as-a-shadow-of-projection-admiss-ec123406",
+  "paper_md_sha256": "c6ec8694cf1db833f3db94488f23b1c192d59d73b6575da4f57fc19bd8b077b5",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 25629,
+      "path": "main.tex",
+      "sha256": "4619592e65fc5a313a969fabd58274081324f2c979223f83e4071094acdae314"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Effective_Field_Theory_as_a_Shadow_of_Projection__Admissible_Dynamics"
+  },
+  "source_tree_sha256": "d26192135808411bbb747528e1e9dfe1be3542cfa102e9124b91989c3e8c6be0",
+  "title": "Effective Field Theory as a Shadow of Projection\u2013Admissible Dynamics Wilsonian Renormalization under Finite Admissibility",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262360",
+      "created": "2026-01-15T21:28:54.252138+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262361",
+      "files": [
+        {
+          "checksum": "md5:af88c529a0c892b06d5acdf53b493e7f",
+          "content_url": "https://zenodo.org/api/records/18262361/files/Effective_Field_Theory_as_a_Shadow_of_Projection__Admissible_Dynamics%20(1).pdf/content",
+          "key": "Effective_Field_Theory_as_a_Shadow_of_Projection__Admissible_Dynamics (1).pdf",
+          "size": 352404
+        }
+      ],
+      "id": "18262361",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262361",
+      "resource_type": "publication",
+      "title": "Effective Field Theory as a Shadow of Projection\u2013Admissible Dynamics",
+      "updated": "2026-01-15T21:28:54.799599+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

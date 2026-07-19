@@ -1,0 +1,88 @@
+{
+  "abstract": "Causal set theory postulates discrete spacetime events endowed with a partial order, while measurement theory postulates irreducible events associated with collapse or irreversibility. We show that both structures arise as the same four-dimensional shadow of coherence-selection events in Modal Triplet Theory (MTT). Selection events are defined as irreversible basin transitions under noninvertible projection of the coherent sector. We prove that these events generate a locally finite partial order, yielding an effective causal set whose density, ordering, and approximate Lorentz invariance are fixed by coherent-sector bottleneck data rather than by ad hoc sprinkling assumptions. Deviations from Poisson statistics and exact Lorentz invariance are predicted near coherence-breakdown regions. We relate these results to ongoing work in causal set theory, continuous measurement, and collapse physics, and establish cross-sector closure: the same bottleneck vector controls event density, collapse thresholds, ultraviolet completion, and canonical geometric discreteness. All statements are slab-local and admissibility-conditioned.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18261722",
+    "created": "2026-01-15T19:48:25.955010+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18261723",
+    "files": [
+      {
+        "checksum": "md5:2eed200b42eb3fe9607e075ce00c7f4e",
+        "content_url": "https://zenodo.org/api/records/18261723/files/Causal_Sets_as_Event_Selection_Shadows_of_Coherence_Breakdown%20(2).pdf/content",
+        "key": "Causal_Sets_as_Event_Selection_Shadows_of_Coherence_Breakdown (2).pdf",
+        "size": 230147
+      }
+    ],
+    "id": "18261723",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18261723",
+    "resource_type": "publication",
+    "title": "Causal Sets as Event-Selection Shadows of Modal Triplet Theory",
+    "updated": "2026-01-15T19:48:26.366923+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "1b13e23efaeb92898efc1983765020e8314efadc2502591c2dedd186391f0d43",
+  "paper_id": "causal-sets-as-event-selection-shadows-of-coherence-bre-7bca8116",
+  "paper_md_sha256": "8371110236f0fa418042e177226f6741439479adfe1a005e039b2cab5077d83b",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 14864,
+      "path": "main.tex",
+      "sha256": "1b13e23efaeb92898efc1983765020e8314efadc2502591c2dedd186391f0d43"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/Causal_Sets_as_Event_Selection_Shadows_of_Coherence_Breakdown"
+  },
+  "source_tree_sha256": "31cad3d8d7e41fd4641a42c6630e725a3f1889f984ca304b0b9034ac8e865e2a",
+  "title": "Causal Sets as Event-Selection Shadows of Coherence Breakdown Measurement events, irreversibility, and spacetime discreteness from Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261722",
+      "created": "2026-01-15T19:48:25.955010+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18261723",
+      "files": [
+        {
+          "checksum": "md5:2eed200b42eb3fe9607e075ce00c7f4e",
+          "content_url": "https://zenodo.org/api/records/18261723/files/Causal_Sets_as_Event_Selection_Shadows_of_Coherence_Breakdown%20(2).pdf/content",
+          "key": "Causal_Sets_as_Event_Selection_Shadows_of_Coherence_Breakdown (2).pdf",
+          "size": 230147
+        }
+      ],
+      "id": "18261723",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18261723",
+      "resource_type": "publication",
+      "title": "Causal Sets as Event-Selection Shadows of Modal Triplet Theory",
+      "updated": "2026-01-15T19:48:26.366923+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

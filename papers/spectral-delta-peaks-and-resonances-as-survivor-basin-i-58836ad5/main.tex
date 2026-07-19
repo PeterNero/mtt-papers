@@ -1,0 +1,493 @@
+
+\documentclass[11pt]{article}
+\usepackage{series}
+
+\renewcommand\SeriesShort{Delta Projection}
+\renewcommand\PartRoman{VIII}
+\renewcommand\PartArabic{8}
+\renewcommand\PartsInSeries{VIII}
+\hypersetup{
+  pdftitle={Spectral Delta Peaks and Resonances as Survivor-Basin Idealizations},
+  pdfauthor={Peter Nero}
+}
+
+\title{Spectral Delta Peaks and Resonances as Survivor-Basin Idealizations\\
+\large Finite Lifetime, Lorentzian Kernels, and the Delta Limit in Modal Triplet Theory}
+\author{Peter Nero}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Dirac delta functions appear in spectral physics as sharp energy levels, stable-particle poles, density-of-states atoms, spectral functions, and exact normal-mode decompositions. In ordinary notation one writes terms such as
+\[
+\rho(E)=\sum_n \delta(E-E_n),
+\qquad
+A(\omega)=2\pi Z\,\delta(\omega-\omega_0)+\cdots .
+\]
+This paper develops the spectral sequel to the delta-projection program in Modal Triplet Theory (MTT). The core mathematical statement is standard but structurally decisive: Lorentzian/Breit--Wigner kernels form approximate identities, and delta peaks are recovered only in the zero-width or infinite-lifetime limit. A stable spectral delta is therefore the singular idealization of a finite-width survivor mode.
+
+We prove the weak convergence of Lorentzian kernels to the Dirac delta, derive the same kernel from exponential decay in time, and state the corresponding spectral-measure smearing theorem. We then interpret sharp spectral atoms, resonances, finite lifetimes, LSZ poles, and density-of-states peaks through the MTT lens: a delta peak is the downstream encoding of a survivor basin whose lifetime and coherence width have been idealized as infinite stability and zero spectral width. This does not deny exact bound-state eigenvalues in self-adjoint spectral theory. Rather, it separates exact mathematical spectral atoms from the physical idealization involved when finite-resolution, finite-lifetime effective descriptions are written as exact deltas.
+\end{abstract}
+
+\seriestagline
+
+\tableofcontents
+
+\section{Purpose and claim discipline}
+
+The preceding papers in this sequence treated Dirac deltas as singular shadows of admissible projection in several settings: identity kernels, Green functions, gauge fixing, measurement, contact interactions, and scattering support. The present paper treats the spectral case.
+
+The target object is the familiar spectral delta:
+\[
+\delta(E-E_0).
+\]
+It appears in:
+\begin{itemize}
+\item density of states;
+\item spectral functions;
+\item stable-particle poles;
+\item normal-mode decompositions;
+\item Fermi's golden rule;
+\item Kallen--Lehmann-type spectral representations;
+\item condensed-matter quasiparticle peaks;
+\item resonance approximations.
+\end{itemize}
+
+The central claim is:
+\[
+\boxed{\text{A spectral delta peak is the zero-width limit of a finite-lifetime or finite-resolution survivor mode.}}
+\]
+
+\subsection{Non-claims}
+
+We do not claim:
+\begin{enumerate}
+\item that self-adjoint operators cannot have genuine pure point spectrum;
+\item that bound-state eigenvalues are artifacts;
+\item that resonance theory is replaced by MTT language;
+\item that all spectral broadening has one microscopic cause;
+\item that finite lifetime is the only source of spectral width.
+\end{enumerate}
+
+The narrower statement is that whenever an effective physical description writes a stable spectral contribution as a Dirac delta, MTT should ask which admissible survivor basin, lifetime scale, coherence width, detector resolution, or projection kernel has been idealized away.
+
+\section{Sharp spectral atoms and finite-width peaks}
+
+A normalized exact spectral atom at energy $E_0$ is written
+\[
+\rho(E)=\delta(E-E_0).
+\]
+If the mode has finite lifetime or finite resolution, the sharp atom is replaced by a broadened peak. The most common model is the Lorentzian or Breit--Wigner kernel
+\[
+L_\Gamma(E-E_0)
+=
+\frac{1}{\pi}\frac{\Gamma/2}{(E-E_0)^2+(\Gamma/2)^2},
+\qquad \Gamma>0.
+\]
+It is normalized:
+\[
+\int_{\bbR}L_\Gamma(E-E_0)\,\dd E=1.
+\]
+As $\Gamma\downarrow0$, it converges to $\delta(E-E_0)$ in the sense of distributions.
+
+The MTT interpretation is:
+\[
+\Gamma>0
+\quad\leftrightarrow\quad
+\text{finite survivor-basin width or finite lifetime},
+\]
+while
+\[
+\Gamma=0
+\quad\leftrightarrow\quad
+\text{idealized infinitely stable survivor mode}.
+\]
+
+\section{Lorentzian approximate identity theorem}
+
+\begin{definition}[Lorentzian kernel]
+For $\Gamma>0$, define
+\[
+L_\Gamma(x)=\frac{1}{\pi}\frac{\Gamma/2}{x^2+(\Gamma/2)^2}.
+\]
+\end{definition}
+
+\begin{theorem}[Lorentzian kernels converge to the Dirac delta]
+For every test function $f\in C_c^\infty(\bbR)$,
+\[
+\lim_{\Gamma\downarrow0}\int_{\bbR}L_\Gamma(E-E_0)f(E)\,\dd E=f(E_0).
+\]
+Equivalently,
+\[
+L_\Gamma(E-E_0)\to \delta(E-E_0)
+\]
+in the sense of distributions.
+\end{theorem}
+
+\begin{proof}
+Let $a=\Gamma/2$. Then
+\[
+L_\Gamma(x)=\frac{1}{\pi}\frac{a}{x^2+a^2}.
+\]
+The functions $L_\Gamma$ are nonnegative and normalized. Fix $\epsilon>0$. Since $f$ is continuous at $E_0$, choose $\eta>0$ so that
+\[
+|f(E)-f(E_0)|<\epsilon
+\]
+whenever $|E-E_0|<\eta$.
+
+Then
+\[
+\left|\int L_\Gamma(E-E_0)f(E)\,\dd E-f(E_0)\right|
+\le I_1+I_2,
+\]
+where
+\[
+I_1=
+\int_{|E-E_0|<\eta}L_\Gamma(E-E_0)|f(E)-f(E_0)|\,\dd E
+\le \epsilon,
+\]
+and
+\[
+I_2=
+\int_{|E-E_0|\ge \eta}L_\Gamma(E-E_0)|f(E)-f(E_0)|\,\dd E.
+\]
+Since $f$ is compactly supported and bounded, $|f(E)-f(E_0)|\le C_f$. Moreover the Lorentzian mass outside any fixed neighborhood tends to zero:
+\[
+\int_{|x|\ge \eta}L_\Gamma(x)\,\dd x\to0
+\qquad(\Gamma\downarrow0).
+\]
+Hence $I_2\to0$. Since $\epsilon$ was arbitrary, the result follows.
+\end{proof}
+
+\begin{corollary}[Breit--Wigner peak as regularized spectral delta]
+A Breit--Wigner spectral contribution
+\[
+\rho_\Gamma(E)=ZL_\Gamma(E-E_0)
+\]
+converges weakly to
+\[
+Z\delta(E-E_0)
+\]
+as $\Gamma\downarrow0$.
+\end{corollary}
+
+\section{Finite lifetime produces Lorentzian width}
+
+The Lorentzian is not merely a convenient regularization. It is the Fourier-domain signature of exponential decay.
+
+Let a mode have time dependence
+\[
+a(t)=\Theta(t)e^{-iE_0t}e^{-\Gamma t/2}.
+\]
+Its Fourier transform is, up to convention factors,
+\[
+\widehat a(E)
+=
+\int_0^\infty e^{iEt}e^{-iE_0t}e^{-\Gamma t/2}\,\dd t
+=
+\frac{1}{\Gamma/2-i(E-E_0)}.
+\]
+Therefore
+\[
+|\widehat a(E)|^2
+=
+\frac{1}{(E-E_0)^2+(\Gamma/2)^2}.
+\]
+After normalization, this is the Lorentzian $L_\Gamma(E-E_0)$.
+
+Thus:
+\[
+\boxed{
+\text{finite lifetime } \tau\sim \Gamma^{-1}
+\quad\Longleftrightarrow\quad
+\text{finite spectral width } \Gamma.
+}
+\]
+The spectral delta is recovered only when $\tau\to\infty$.
+
+\section{Spectral-measure smearing theorem}
+
+Let $H$ be a self-adjoint operator on a Hilbert space $\calH$, with spectral measure $P_H(\dd E)$. For a normalized vector $\psi\in\calH$, define the scalar spectral measure
+\[
+\mu_\psi(B)=\ip{\psi}{P_H(B)\psi}.
+\]
+A sharp spectral density is formal unless $\mu_\psi$ is absolutely continuous. But one can always form a Lorentzian-smeared spectral density:
+\[
+\rho_{\psi,\Gamma}(E)
+=
+\int_{\bbR}L_\Gamma(E-E')\,\mu_\psi(\dd E').
+\]
+
+\begin{theorem}[Smeared spectral measures converge weakly]
+For every bounded continuous test function $f$,
+\[
+\lim_{\Gamma\downarrow0}
+\int_{\bbR} f(E)\rho_{\psi,\Gamma}(E)\,\dd E
+=
+\int_{\bbR} f(E)\,\mu_\psi(\dd E).
+\]
+\end{theorem}
+
+\begin{proof}
+By Fubini,
+\[
+\int f(E)\rho_{\psi,\Gamma}(E)\,\dd E
+=
+\int \left(\int f(E)L_\Gamma(E-E')\,\dd E\right)\mu_\psi(\dd E').
+\]
+The inner integral is $(L_\Gamma*f)(E')$, which converges to $f(E')$ pointwise as $\Gamma\downarrow0$. Since $f$ is bounded and $L_\Gamma$ is normalized,
+\[
+|(L_\Gamma*f)(E')|\le \|f\|_\infty.
+\]
+Dominated convergence with respect to the finite measure $\mu_\psi$ gives the result.
+\end{proof}
+
+\begin{remark}
+This theorem includes pure point, absolutely continuous, and singular continuous spectral measures. It does not say all spectra are physically broadened. It says Lorentzian broadening is a controlled approximation to any spectral measure and that delta atoms are recovered in the zero-width limit.
+\end{remark}
+
+\section{Resolvent representation}
+
+The Lorentzian also appears as the imaginary part of a resolvent:
+\[
+L_\Gamma(E-E_0)
+=
+-\frac{1}{\pi}\operatorname{Im}\frac{1}{E-E_0+i\Gamma/2}.
+\]
+More generally, for a self-adjoint $H$,
+\[
+\rho_{\psi,\Gamma}(E)
+=
+-\frac{1}{\pi}\operatorname{Im}\ip{\psi}{(E-H+i\Gamma/2)^{-1}\psi}.
+\]
+Thus finite spectral width is equivalent to evaluating the resolvent off the real axis. The sharp spectral measure is recovered as the boundary value $\Gamma\downarrow0$.
+
+In physical language, $\Gamma$ may encode finite lifetime, detector resolution, environment coupling, damping, or coherent-sector width. In MTT language, it is the spectral width of the survivor-basin encoding.
+
+
+\section{Lifetime, width, and complex poles}
+
+A finite resonance width is conventionally related to a finite lifetime by
+\[
+\tau_{\mathrm{life}}\sim \Gamma^{-1},
+\]
+up to convention-dependent factors. The simplest way to see this is the exponentially decaying amplitude
+\[
+a(t)=e^{-iE_0t}e^{-\Gamma t/2}\mathbf 1_{t\ge0}.
+\]
+Its Fourier transform has denominator
+\[
+\widehat a(E)\propto \frac{1}{E-E_0+i\Gamma/2}.
+\]
+Thus the resonance is represented by a pole displaced from the real axis:
+\[
+E_{\mathrm{pole}}=E_0-i\Gamma/2.
+\]
+The spectral peak on the real energy axis is the imaginary part of this off-axis pole contribution. A true spectral delta corresponds to the limiting case in which the pole approaches the real axis:
+\[
+\Gamma\downarrow0,
+\qquad
+E_{\mathrm{pole}}\to E_0.
+\]
+
+\begin{remark}
+This pole language is especially useful for separating three notions that are often blurred: an exact eigenvalue of a self-adjoint finite-volume operator, a stable infinite-volume particle pole, and an unstable resonance pole. All three may produce sharp or nearly sharp spectral features, but their mathematical status is different.
+\end{remark}
+
+\section{Stable particles, LSZ poles, and resonance peaks}
+
+In scattering theory, a stable one-particle state appears as a pole on the real mass shell or as a delta contribution to the spectral measure. A schematic spectral function has the form
+\[
+A(\omega,\mathbf p)
+=
+2\pi Z\,\delta(\omega-E_{\mathbf p})
++
+A_{\mathrm{cont}}(\omega,\mathbf p).
+\]
+For an unstable particle or quasiparticle, the sharp contribution is replaced by
+\[
+A_\Gamma(\omega,\mathbf p)
+\approx
+2\pi Z\,L_\Gamma(\omega-E_{\mathbf p})
++
+A_{\mathrm{cont}}(\omega,\mathbf p).
+\]
+
+The delta peak is therefore the infinite-lifetime limit:
+\[
+\Gamma\downarrow0
+\quad\Longrightarrow\quad
+A_\Gamma\to A.
+\]
+
+\begin{center}
+\begin{tabular}{lll}
+\hline
+Object & Finite-width form & Sharp limit\\
+\hline
+Stable bound state & narrow spectral atom & $\delta(E-E_n)$\\
+Unstable particle & Breit--Wigner peak & pole approaches real axis\\
+Quasiparticle & Lorentzian-like peak & infinite lifetime mode\\
+Detector-limited line & resolution-broadened peak & ideal line spectrum\\
+MTT survivor basin & finite basin width & zero-width survivor label\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\section{Kallen--Lehmann spectral representation}
+
+The same distinction appears in relativistic quantum field theory through the Kallen--Lehmann representation. For a scalar field, the two-point function can be written schematically as
+\[
+\langle 0|\phi(x)\phi(0)|0\rangle
+=
+\int_0^\infty d\mu^2\,\rho(\mu^2)\,\Delta_+(x;\mu^2).
+\]
+When the theory contains a stable one-particle state of mass \(m\), the spectral density contains an atom:
+\[
+\rho(\mu^2)
+=
+Z\,\delta(\mu^2-m^2)
++
+\rho_{\mathrm{cont}}(\mu^2).
+\]
+The coefficient \(Z\) is the pole residue or wave-function weight of the stable sector. If the would-be particle is unstable, the exact delta contribution is replaced by a broadened resonance contribution inside the continuum.
+
+In the present terminology,
+\[
+Z\,\delta(\mu^2-m^2)
+\]
+is the sharp idealization of an exactly stable survivor sector. A finite-width resonance is the corresponding finite-persistence version.
+
+\begin{remark}
+This section does not derive the Kallen--Lehmann representation. Its role is classificatory: it identifies one of the most important places where spectral delta functions enter QFT and shows that it fits the same delta-as-ideal-survivor pattern.
+\end{remark}
+
+\section{Finite-volume spectral atoms versus physical lifetime}
+
+A self-adjoint operator on a compact domain may have exact discrete eigenvalues. Its spectral measure may therefore contain genuine atoms even before any physical infinite-lifetime claim is made. These atoms are mathematical consequences of compactness, boundary conditions, or finite-volume quantization.
+
+This paper distinguishes three cases:
+\begin{center}
+\begin{tabular}{p{0.30\linewidth}p{0.58\linewidth}}
+\hline
+Case & Meaning of the delta-like feature\\
+\hline
+Finite-volume eigenvalue & Exact atom of a compact/self-adjoint spectral problem.\\
+Stable infinite-volume particle & Real-axis mass-shell pole with exact asymptotic persistence.\\
+Unstable resonance & Finite-width peak from a pole off the real axis.\\
+\hline
+\end{tabular}
+\end{center}
+
+The MTT survivor-basin reading applies most directly to the second and third cases: the delta peak represents idealized exact persistence, while the resonance represents finite leakage or finite basin width. In finite volume, a delta may also reflect mathematical discreteness rather than physical infinite lifetime.
+
+\section{MTT interpretation: survivor-basin idealization}
+
+The triadic MTT carrier distinguishes bookkeeping, redundancy transport, and survivorship. Spectral peaks are naturally tied to survivorship: a mode that persists long enough to be tracked as a stable excitation appears as a spectral object.
+
+A finite-width resonance corresponds to a basin that is coherent but not infinitely stable. It has:
+\begin{itemize}
+\item a central energy or mass label;
+\item a finite damping or leakage rate;
+\item finite measurement resolution;
+\item finite admissibility width;
+\item possible coupling to continuum sectors.
+\end{itemize}
+
+A spectral delta idealizes all of this into an exact survivor:
+\[
+\boxed{
+\delta(E-E_0)
+=
+\text{zero-width encoding of an infinitely persistent survivor mode}.
+}
+\]
+
+This aligns with the fixed-point and measurement papers in the sequence. A fixed point may be represented by a delta only after its basin width is ignored. A measurement outcome may be represented by a sharp projector only after finite detector width is ignored. A stable particle may be represented by a spectral delta only after finite lifetime and resolution are ignored.
+
+\section{Relation to the OU floor}
+
+In the MTT measurement and fixed-point stability papers, persistent disturbance balanced against damping produces an Ornstein--Uhlenbeck-type variance
+\[
+\sigma^2=\frac{\delta}{2\gamma}.
+\]
+The spectral analogue is:
+\[
+\Gamma \sim \text{leakage/damping rate}.
+\]
+If damping and disturbance leave a nonzero effective width, the spectral line does not become a true delta. Thus the exact delta limit requires not merely a central label, but removal of all effective broadening:
+\[
+\Gamma\to0,
+\qquad
+\sigma\to0,
+\qquad
+\text{or resolution}\to0.
+\]
+
+This gives the MTT diagnostic:
+\[
+\boxed{
+\text{When a spectral delta appears, ask which finite lifetime, basin width, or resolution scale has been suppressed.}
+}
+\]
+
+\section{Scope of proof and physical claim}
+
+\begin{center}
+\begin{tabular}{p{0.28\linewidth}p{0.62\linewidth}}
+\hline
+Level & Status\\
+\hline
+Lorentzian approximate identity & Proved rigorously.\\
+Finite lifetime to Lorentzian line shape & Standard Fourier calculation.\\
+Smeared spectral measures & Proved as weak convergence.\\
+Complex pole interpretation & Standard resonance-theory classification.\\
+Kallen--Lehmann delta atom & Standard QFT spectral structure, used here classificatorily.\\
+Stable particle delta as infinite-lifetime limit & Standard physical interpretation.\\
+Finite-volume spectral atoms & A distinct mathematical case, explicitly separated from lifetime claims.\\
+MTT survivor-basin reading & Structural interpretation, not a new spectral theorem.\\
+Exact derivation of widths from MTT carrier data & Not done here; belongs to execution-level work.\\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Consequences for the delta-projection program}
+
+This paper adds a new domain to the growing dictionary:
+\[
+\delta(E-E_0)
+\quad\leadsto\quad
+L_\Gamma(E-E_0)
+\quad\leadsto\quad
+\text{finite survivor-basin spectral kernel}.
+\]
+
+It shows that spectral deltas fit the same pattern as earlier cases:
+\begin{itemize}
+\item point-source deltas are zero-width source kernels;
+\item gauge-fixing deltas are zero-width section-selection kernels;
+\item measurement deltas are zero-width detector effects;
+\item contact deltas are zero-width overlap vertices;
+\item scattering deltas are infinite-time bookkeeping limits;
+\item spectral deltas are infinite-lifetime survivor limits;
+\item Kallen--Lehmann mass deltas are sharp stable-sector atoms.
+\end{itemize}
+
+\section{Conclusion}
+
+Spectral delta peaks are among the most familiar idealizations in physics. They mark exact energy levels, stable-particle contributions, and perfectly sharp normal modes. The mathematical theory of self-adjoint operators allows genuine spectral atoms, and this paper does not deny that fact. Its point is different: in effective physical descriptions, a sharp spectral delta often encodes an idealization of infinite lifetime, zero width, perfect resolution, or exact survivor stability.
+
+The Lorentzian/Breit--Wigner kernel makes this precise. It converges to the Dirac delta as its width tends to zero, and it arises directly from exponential decay in time. Smeared spectral measures converge weakly to the underlying spectral measure. Thus the delta peak is the singular endpoint of a controlled finite-width family.
+
+In MTT language, a spectral delta is the zero-width shadow of a survivor basin whose persistence has been idealized as exact. The question prompted by every spectral delta is therefore:
+
+\[
+\boxed{
+\text{What finite lifetime, admissibility width, or survivor-basin structure has been collapsed into this sharp peak?}
+}
+\]
+
+\end{document}

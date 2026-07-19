@@ -1,0 +1,91 @@
+{
+  "abstract": "We formulate a ten-dimensional effective action compatible with closure-strain and q79 carrier data. The metric, bundle M_{10}\\to Y_4, compact fiber, field representations, and derivative expansion are declared realization inputs. The action is an ansatz on a specified regime, not the most general action and not a derivation of gravity from projection. We give the conditions under which a closure Hessian contributes to canonically normalized pole masses, a rank-one alignment projector yields one Higgs doublet, an internal operator has discrete spectrum, and a four-dimensional mode truncation is consistent. Curvature is defined through explicit connections rather than inferred from nonuniform strain. The selected q79 Fu\u2013Yau branch is the compactification candidate, while Lens\u2013Nil remains auxiliary. Existing finite-matrix and Standard-Model profile calculations are incorporated at their declared embedded-renormalized-SM tier; their profile inputs and imported BRST quantization are not reclassified as no-knob consequences of this action.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v4",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.19535591",
+    "created": "2026-04-12T10:35:07.192352+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.19535592",
+    "files": [
+      {
+        "checksum": "md5:2f660f30b3b396c773972c6636147a76",
+        "content_url": "https://zenodo.org/api/records/19535592/files/Closure_Geometry_and_Unified_Dynamics__A_Ten_Dimensional_Action_for_Mass__Scalar_Relaxation__Quantization__and_Curvature_v3.pdf/content",
+        "key": "Closure_Geometry_and_Unified_Dynamics__A_Ten_Dimensional_Action_for_Mass__Scalar_Relaxation__Quantization__and_Curvature_v3.pdf",
+        "size": 385265
+      }
+    ],
+    "id": "19535592",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-04-12",
+    "record_url": "https://zenodo.org/records/19535592",
+    "resource_type": "publication",
+    "title": "Closure Geometry and Unified Dynamics: A Ten-Dimensional Action for Mass, Scalar Relaxation, Quantization, and Curvature",
+    "updated": "2026-04-12T10:35:07.580916+00:00",
+    "version": "v3.0"
+  },
+  "main_tex_sha256": "f747c960598a7d9cdf8fd36d0aec33e73b816be6f02b1848550457042ee558d3",
+  "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+  "paper_md_sha256": "2c1bc723c57bd670874bce25cb664e8cdf0625197746e282356fff1e7c1d13d0",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md",
+    "revision_evidence_sha256": "340f4cb2ee4e5a22a1b008aa1c57109cdd148da74ef36fcec0913ef20dc527b1",
+    "selected_revision": true,
+    "superseded_source_path": "10 ProtoSpinor/_work/Closure_Geometry_and_Unified_Dynamics__A_Ten_Dimensional_Action_for_Mass__Scalar_Relaxation__Quantization__and_Curvature_v3"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 15624,
+      "path": "main.tex",
+      "sha256": "f747c960598a7d9cdf8fd36d0aec33e73b816be6f02b1848550457042ee558d3"
+    },
+    {
+      "bytes": 4221,
+      "path": "series.sty",
+      "sha256": "b0af1073f295d9ebc3bfa6020214244f0147d5cb41ebb8ccf58a0303951c6fbf"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/Closure_Geometry_and_a_Regime_Local_Ten_Dimensional_Action_Ansatz_v4"
+  },
+  "source_tree_sha256": "520a222f0a9c9d38ce56a6606c01fc9d29c511a46825acec3c8b58afc1c69a4e",
+  "title": "Closure Geometry and a Regime-Local Ten-Dimensional Action Ansatz Corrected fourth edition",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.19535591",
+      "created": "2026-04-12T10:35:07.192352+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.19535592",
+      "files": [
+        {
+          "checksum": "md5:2f660f30b3b396c773972c6636147a76",
+          "content_url": "https://zenodo.org/api/records/19535592/files/Closure_Geometry_and_Unified_Dynamics__A_Ten_Dimensional_Action_for_Mass__Scalar_Relaxation__Quantization__and_Curvature_v3.pdf/content",
+          "key": "Closure_Geometry_and_Unified_Dynamics__A_Ten_Dimensional_Action_for_Mass__Scalar_Relaxation__Quantization__and_Curvature_v3.pdf",
+          "size": 385265
+        }
+      ],
+      "id": "19535592",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-04-12",
+      "record_url": "https://zenodo.org/records/19535592",
+      "resource_type": "publication",
+      "title": "Closure Geometry and Unified Dynamics: A Ten-Dimensional Action for Mass, Scalar Relaxation, Quantization, and Curvature",
+      "updated": "2026-04-12T10:35:07.580916+00:00",
+      "version": "v3.0"
+    }
+  ]
+}

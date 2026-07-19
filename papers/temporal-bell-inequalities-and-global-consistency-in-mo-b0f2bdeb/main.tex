@@ -1,0 +1,568 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\title{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory}
+\author{Peter Nero}
+\date{January 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a proof-forward account of temporal Bell inequalities (Leggett--Garg)
+in Modal Triplet Theory (MTT). We show: (i) any temporally factorized realist
+model satisfies the Leggett--Garg bound; (ii) MTT generically violates temporal
+factorization because coherent histories are globally constrained by the
+coherence projector and fixed-point selection; (iii) nevertheless, operational
+no-retro-signaling holds (later measurement choices do not change earlier
+observable marginals); and (iv) therefore MTT reproduces the standard quantum
+Leggett--Garg violations without retrocausal signaling and without abandoning
+realism of the underlying modal configuration. Spatial Bell nonlocality and
+temporal Bell violations are identified as two projections of the same
+global-consistency mechanism.
+\end{abstract}
+
+\section{Introduction}
+
+Temporal Bell inequalities test whether a single system can admit a
+time-local realist description. Leggett--Garg inequalities constrain
+correlations of a dichotomic observable measured at different times.
+Quantum mechanics violates these inequalities. We show that MTT predicts
+the same violations for the same structural reason as in spatial Bell:
+failure of factorization due to global constraints, while preserving
+operational causality.
+
+\section{Leggett--Garg setup and temporal factorization}
+
+\subsection{Measurement schedule and correlations}
+
+Fix times $t_1 < t_2 < t_3$. Let $Q_k \in \{+1,-1\}$ denote the outcome of
+measuring a dichotomic observable at time $t_k$. Denote two-time
+correlators
+\[
+C_{ij} := \mathbb{E}[Q_i Q_j], \qquad 1 \le i < j \le 3.
+\]
+The (three-time) Leggett--Garg combination is
+\begin{equation}
+K := C_{12} + C_{23} - C_{13}.
+\label{eq:LGI}
+\end{equation}
+
+\subsection{Assumptions behind the LGI}
+
+We separate what is tested by Leggett--Garg from what is observed in
+practice.
+
+\begin{definition}[Temporal factorization model]
+A temporal factorization (TF) model for $(Q_1,Q_2,Q_3)$ consists of a
+probability space $(\Omega,\mathcal{F},\mathbb{P})$ with a hidden variable
+$\lambda : \Omega \to \Lambda$ and conditional response functions
+$q_k : \Lambda \to \{\pm 1\}$ such that
+\begin{equation}
+Q_k = q_k(\lambda) \quad \text{a.s.},
+\label{eq:TFresp}
+\end{equation}
+and the joint distribution satisfies
+\begin{equation}
+\mathbb{P}(Q_1 = a, Q_2 = b, Q_3 = c)
+= \int_\Lambda \rho(\lambda)
+\mathbf{1}\{q_1(\lambda)=a\}
+\mathbf{1}\{q_2(\lambda)=b\}
+\mathbf{1}\{q_3(\lambda)=c\}
+\,d\lambda.
+\label{eq:TFjoint}
+\end{equation}
+Equivalently, conditional on $\lambda$, the outcomes are jointly
+deterministic and time-local.
+\end{definition}
+
+\begin{remark}
+Definition~1 abstracts the macrorealism+noninvasiveness assumptions in
+the form used for Bell-type derivations: a single underlying variable
+fixes all outcomes at all times. This is stronger than needed for many
+experimental protocols, but it is the standard form in which LGI bounds
+are derived and compared to quantum predictions.
+\end{remark}
+
+\section{The Leggett--Garg inequality: factorization implies the bound}
+
+\begin{theorem}[LGI under temporal factorization]
+If $(Q_1,Q_2,Q_3)$ admit a temporal factorization model, then
+\[
+K \le 1.
+\]
+\end{theorem}
+
+\begin{proof}
+Under temporal factorization, for each $\lambda$ define
+$q_k = q_k(\lambda) \in \{\pm 1\}$. Then
+\[
+K(\lambda) := q_1 q_2 + q_2 q_3 - q_1 q_3
+= q_2(q_1 + q_3) - q_1 q_3.
+\]
+Since $q_1,q_3 \in \{\pm 1\}$, either $q_1 = q_3$ or $q_1 = -q_3$.
+
+If $q_1 = q_3$, then $q_1 + q_3 = \pm 2$ and $q_1 q_3 = 1$, so
+\[
+K(\lambda) = q_2(\pm 2) - 1 \in \{+1,-3\} \le 1.
+\]
+If $q_1 = -q_3$, then $q_1 + q_3 = 0$ and $q_1 q_3 = -1$, so
+\[
+K(\lambda) = 0 - (-1) = 1.
+\]
+Hence for all $\lambda$, $K(\lambda) \le 1$. Taking expectation yields
+$K = \mathbb{E}[K(\lambda)] \le 1$.
+\end{proof}
+
+\begin{corollary}
+If an experiment yields $K > 1$, then no temporal factorization model
+can reproduce the observed temporal correlations.
+\end{corollary}
+
+\section{Global Consistency and Coherent Histories in MTT}
+
+Modal Triplet Theory does not define physical evolution as a purely
+initial-value problem. Instead, admissible physical histories are
+selected by global coherence constraints acting on entire spacetime
+trajectories. The fundamental object is a coherent modal configuration
+satisfying the coherence projector $\Pi_{\mathrm{coh}}$ and the
+Fundamental Contractivity Condition (FCC).
+
+The effective notion of a ``state at time $t$'' arises only after
+projection onto a lower-dimensional description. Intermediate-time
+states are therefore contextual and need not be independent of later
+measurement conditions.
+
+\subsection*{New: Boundary-value interpretation (intuition)}
+
+A useful physical analogy is that of a vibrating string. The normal
+modes of a guitar string are not determined by initial displacement
+alone, but by boundary conditions imposed at both ends (the bridge and
+the nut). The string does not ``know the future''; it simply satisfies a
+global boundary-value constraint.
+
+In the same sense, a modal trajectory in MTT is defined by admissibility
+conditions imposed over its full temporal extent. The appearance that
+later measurements influence earlier properties arises from describing
+a globally constrained solution using time-local slices, not from
+retrocausal signaling.
+
+\subsection*{New: Probability space of coherent histories}
+
+We now make explicit the probabilistic structure implicit in the
+preceding discussion.
+
+\begin{definition}[History probability space]
+Let $\Omega$ denote the set of globally admissible coherent histories
+on a time interval $I=[t_1,t_3]$ for a fixed experimental arrangement.
+Let $\mathcal{F}$ be the $\sigma$-algebra generated by cylinder sets
+corresponding to pointer records in localized spacetime regions.
+Let $\mathbb{P}$ be the probability measure induced by conditioning
+the coherent-sector fixed-point ensemble on the experimental setup.
+\end{definition}
+
+Measurement choices correspond to conditioning $\mathbb{P}$ on
+sub-$\sigma$-algebras of $\mathcal{F}$. Time-slice probabilities are
+obtained by marginalization and conditional expectation with respect to
+$\mathbb{P}$. Because admissible histories are selected globally,
+these time-slice distributions need not factorize across time.
+
+\section{Operational Causality and No-Retro-Signaling}
+
+The violation of temporal Bell inequalities is often taken to suggest
+retrocausal influence. We now show that this conclusion is unwarranted
+in MTT. Although intermediate-time descriptions are contextual, MTT
+preserves operational causality: later measurement choices do not alter
+earlier observable marginals.
+
+\begin{definition}[No-retro-signaling]
+A theory satisfies no-retro-signaling if the marginal probability
+distribution of outcomes at time $t_i$ is independent of measurement
+choices made at later times.
+\end{definition}
+
+\subsection*{New: Formal statement and proof}
+
+\begin{lemma}[No-retro-signaling in Modal Triplet Theory]
+Modal Triplet Theory satisfies no-retro-signaling.
+\end{lemma}
+
+\begin{proof}
+Let $M_2$ denote the choice of measurement performed at time $t_2$,
+including the choice to perform no measurement. In the history
+probability space $(\Omega,\mathcal{F},\mathbb{P})$, conditioning on
+$M_2$ corresponds to restricting $\mathbb{P}$ to a sub-$\sigma$-algebra
+$\mathcal{F}_{\le t_2}$ that encodes the experimental arrangement.
+
+Pointer records at time $t_1$ are elements of a sub-$\sigma$-algebra
+$\mathcal{F}_{t_1}\subset \mathcal{F}_{\le t_2}$. Because the underlying
+dynamics on the spacetime base is retarded and measurement couplings are
+localized, the marginal distribution on $\mathcal{F}_{t_1}$ is
+independent of which sub-$\sigma$-algebra $\mathcal{F}_{\le t_2}$ is
+conditioned upon.
+
+Thus, for all measurement choices $M_2$ and $M_2'$,
+\[
+\mathbb{P}(Q_1=+1\mid M_2)
+=
+\mathbb{P}(Q_1=+1\mid M_2').
+\]
+An identical argument applies to $Q_2$ with respect to choices made at
+$t_3$. Hence no-retro-signaling holds.
+\end{proof}
+
+\begin{remark}
+The above lemma is the temporal analogue of the no-signaling condition
+in spatial Bell experiments. In both cases, global conditioning may
+alter joint or conditional correlations while leaving individual
+marginals invariant.
+\end{remark}
+
+\section{Failure of Temporal Factorization}
+
+We now identify the precise assumption violated by MTT in temporal Bell
+experiments. The failure is not operational causality, but temporal
+factorization: the assumption that outcomes at different times can be
+assigned independently of later measurement context.
+
+In MTT, coherent histories are selected globally. Conditioning on
+measurement outcomes at later times refines the admissible set of
+histories and therefore alters the effective description of earlier
+segments. This refinement does not correspond to a signal or influence
+propagating backward in time; it reflects the non-factorizability of
+globally constrained solutions when described using time-local
+variables.
+
+\subsection*{New: Formal statement of temporal contextuality}
+
+\begin{proposition}[Temporal contextuality in MTT]
+In Modal Triplet Theory, temporal factorization generally fails. That is,
+there do not exist functions $q_k(\lambda)$ such that
+\[
+Q(t_k)=q_k(\lambda)
+\]
+for all $k$ and all admissible histories, with a joint distribution of
+the form
+\[
+\mathbb{P}(Q_1,Q_2,Q_3)
+=
+\int_\Lambda \rho(\lambda)
+\prod_{k=1}^3
+\mathbf{1}\{q_k(\lambda)=Q_k\}\,d\lambda.
+\]
+\end{proposition}
+
+\begin{proof}
+Let $\Omega$ denote the set of globally admissible coherent histories
+under a fixed experimental arrangement. Changing whether a measurement
+is performed at time $t_2$, or altering its coupling, changes the
+boundary conditions defining admissibility and therefore changes the
+conditional measure on $\Omega$.
+
+Because the admissible history ensemble itself depends on later
+measurement context, there is in general no single hidden variable
+$\lambda$ whose value fixes outcomes at all times independently of that
+context. Hence temporal factorization fails.
+\end{proof}
+
+\subsection*{Connection to Leggett--Garg violation}
+
+By Theorem~1, temporal factorization implies the Leggett--Garg bound
+$K\le 1$. By Proposition~1, temporal factorization fails in MTT.
+Therefore, MTT permits violations of the Leggett--Garg inequality while
+preserving no-retro-signaling.
+\section{Explicit Leggett--Garg Violations}
+
+To make the discussion concrete, we now exhibit explicit temporal
+correlations that violate the Leggett--Garg bound. These correlations
+are standard in quantum mechanics and are reproduced by MTT whenever
+the coherent-sector projection matches the quantum boundary dictionary.
+
+\subsection*{Standard quantum benchmark}
+
+Consider a two-level system with Hamiltonian
+\[
+H = \frac{\hbar \omega}{2}\,\sigma_x,
+\]
+and a dichotomic observable
+\[
+Q = \sigma_z.
+\]
+Let measurements be performed at times $t_1<t_2<t_3$, with ideal
+projective readout at each time.
+
+Quantum mechanics predicts the two-time correlators
+\[
+C_{ij} = \langle \sigma_z(t_i)\sigma_z(t_j)\rangle
+       = \cos\bigl(\omega (t_j-t_i)\bigr).
+\]
+
+\subsection*{Violation of the LGI}
+
+Choose equal time separations
+\[
+\Delta := t_2-t_1 = t_3-t_2,
+\qquad
+t_3-t_1 = 2\Delta.
+\]
+Then the Leggett--Garg combination becomes
+\[
+K = 2\cos(\omega\Delta) - \cos(2\omega\Delta)
+  = 1 + 2\cos(\omega\Delta)\bigl(1-\cos(\omega\Delta)\bigr).
+\]
+
+For $0 < \cos(\omega\Delta) < 1$, one has $K>1$. For example, taking
+$\omega\Delta=\pi/3$ yields $\cos(\omega\Delta)=1/2$ and
+\[
+K = \frac{3}{2} > 1.
+\]
+
+Thus the Leggett--Garg inequality is violated.
+
+\subsection*{Interpretation within MTT}
+
+Within MTT, this violation reflects the failure of temporal
+factorization under global coherence constraints. The underlying modal
+configuration is realist, but the effective time-local description
+cannot assign independent values to $Q(t_1),Q(t_2),Q(t_3)$ without
+reference to the full measurement context.
+\section{Interpretation: Apparent Retrocausality as Projection}
+
+Temporal Bell violations are often described using the language of
+retrocausality: later measurements appear to influence earlier
+properties. In MTT this appearance is a projection artifact.
+
+The fundamental object is a globally coherent history selected by
+admissibility and stability constraints. Conditioning on later
+measurement outcomes refines the admissible set of histories and
+thereby alters the effective description of earlier segments. No
+signal propagates backward in time, and no causal paradox arises.
+
+\subsection*{New: Jarrett-in-Time Decomposition}
+
+We now make precise which assumptions fail and which are preserved in
+temporal Bell violations, following the logic of Jarrett's
+decomposition in the spatial Bell case.
+
+\begin{definition}[Temporal Parameter and Outcome Independence]
+Temporal Parameter Independence (TPI) holds if the marginal
+distribution of outcomes at time $t_i$ is independent of measurement
+choices made at later times. Temporal Outcome Independence (TOI) holds
+if, conditioned on the hidden variable $\lambda$, the joint outcomes
+factorize:
+\[
+\mathbb{P}(Q_i,Q_j\mid \lambda)
+=
+\mathbb{P}(Q_i\mid \lambda)\,
+\mathbb{P}(Q_j\mid \lambda),
+\qquad i<j.
+\]
+\end{definition}
+
+\begin{proposition}[Jarrett-in-time structure of MTT]
+Modal Triplet Theory satisfies Temporal Parameter Independence but
+violates Temporal Outcome Independence.
+\end{proposition}
+
+\begin{proof}
+Temporal Parameter Independence is equivalent to no-retro-signaling,
+which holds by Lemma~2. Temporal Outcome Independence fails because
+intermediate outcomes depend on the global boundary conditions defining
+the admissible coherent history. Thus factorization conditioned on a
+single hidden variable $\lambda$ is not possible.
+\end{proof}
+
+\begin{remark}
+This decomposition mirrors the spatial Bell case: MTT preserves the
+analogue of no-signaling while violating outcome independence due to
+global constraints, not due to nonlocal or retrocausal dynamics.
+\end{remark}
+\section{Relation to Spatial Bell Nonlocality}
+
+Violations of Bell inequalities in spatially separated systems are now
+well understood as ruling out local hidden-variable models based on
+statistical factorization, while preserving no-signaling. Temporal Bell
+violations present an analogous challenge in the time domain.
+
+In Modal Triplet Theory, these two phenomena share a common origin.
+Both arise from the projection of a globally constrained coherent
+configuration onto a reduced description. Spatial separation and
+temporal separation are treated symmetrically at the level of global
+admissibility.
+
+\subsection*{New: Formal unification}
+
+\begin{proposition}[Spatial--temporal Bell unification]
+Spatial Bell violations and temporal Bell violations arise from the
+same structural failure of factorization under global consistency
+constraints. In both cases, operational causality is preserved while
+outcome independence fails.
+\end{proposition}
+
+\begin{proof}
+In the spatial case, no-superluminal-signaling holds while factorization
+$P(A,B\mid a,b,\lambda)=P(A\mid a,\lambda)P(B\mid b,\lambda)$ fails due
+to global coherence constraints. In the temporal case, no-retro-
+signaling holds while temporal factorization fails for the same reason.
+Both are projections of a single globally admissible configuration.
+\end{proof}
+
+\begin{remark}
+The distinction between ``space'' and ``time'' is therefore secondary
+to the underlying global-consistency structure. Nonlocal correlations
+in space and contextual correlations in time are dual manifestations
+of the same mechanism.
+\end{remark}
+\section{Conclusions}
+
+We have shown that temporal Bell violations (Leggett--Garg violations)
+arise naturally in Modal Triplet Theory as a consequence of global
+consistency. The failure of temporal factorization does not signal
+retrocausal dynamics or a breakdown of realism, but reflects the
+inadequacy of describing globally constrained coherent histories using
+time-local hidden variables.
+
+MTT preserves operational causality: later measurement choices do not
+alter earlier observable marginals. Temporal contextuality arises
+because conditioning on later boundary conditions refines the set of
+admissible histories. This mechanism is precisely analogous to the
+origin of spatial Bell nonlocality in MTT.
+
+Taken together with previous results on measurement and spatial Bell
+violations, the present work completes the foundations triad of Modal
+Triplet Theory: space, process, and time are unified as projections of
+a single global-consistency structure.
+
+\appendix
+
+\section{Temporal CHSH and Network Generalizations}
+
+The Leggett--Garg inequality is the simplest temporal Bell inequality,
+involving three measurement times. More general temporal inequalities
+can be constructed in direct analogy with the CHSH inequality and with
+network Bell inequalities.
+
+Consider four measurement times $t_1<t_2<t_3<t_4$ and dichotomic
+observables $Q(t_i)\in\{\pm1\}$. Under temporal factorization, the
+CHSH-type combination
+\[
+S := C_{12}+C_{23}+C_{34}-C_{14}
+\]
+satisfies the bound $|S|\le 2$.
+
+As in the three-time case, any model admitting a temporally factorized
+hidden-variable description obeys this bound. Whenever the coherent-
+sector projection in MTT reproduces standard quantum correlators, these
+bounds are generically violated for suitable choices of time
+separations.
+
+More generally, one may consider temporal networks in which measurement
+choices and outcomes are arranged in directed acyclic graphs with time
+ordering. In all such cases, temporal factorization implies a family of
+linear inequalities analogous to spatial Bell network inequalities.
+Modal Triplet Theory generically violates these inequalities while
+preserving no-retro-signaling, by the same global-consistency mechanism
+identified in the main text.
+
+\begin{remark}
+The temporal CHSH and network generalizations introduce no new physical
+assumptions beyond those already required for the Leggett--Garg case.
+They further illustrate that temporal nonclassicality in MTT is not an
+isolated phenomenon but a structural consequence of global coherence.
+\end{remark}
+\begin{thebibliography}{99}
+...
+\end{thebibliography}
+\begin{thebibliography}{99}
+
+\bibitem{Bell1964}
+J.~S.~Bell,
+``On the Einstein Podolsky Rosen Paradox,''
+\emph{Physics} \textbf{1}, 195--200 (1964).
+
+\bibitem{CHSH1969}
+J.~F.~Clauser, M.~A.~Horne, A.~Shimony, and R.~A.~Holt,
+``Proposed experiment to test local hidden-variable theories,''
+\emph{Phys.\ Rev.\ Lett.} \textbf{23}, 880--884 (1969).
+
+\bibitem{LeggettGarg1985}
+A.~J.~Leggett and A.~Garg,
+``Quantum mechanics versus macroscopic realism: Is the flux there when nobody looks?,''
+\emph{Phys.\ Rev.\ Lett.} \textbf{54}, 857--860 (1985).
+
+\bibitem{EmaryLambertNori2014}
+C.~Emary, N.~Lambert, and F.~Nori,
+``Leggett--Garg inequalities,''
+\emph{Rep.\ Prog.\ Phys.} \textbf{77}, 016001 (2014).
+
+\bibitem{KoflerBrukner2013}
+J.~Kofler and \v{C}.~Brukner,
+``Condition for macroscopic realism beyond the Leggett--Garg inequalities,''
+\emph{Phys.\ Rev.\ A} \textbf{87}, 052115 (2013).
+
+\bibitem{Fine1982}
+A.~Fine,
+``Hidden variables, joint probability, and the Bell inequalities,''
+\emph{Phys.\ Rev.\ Lett.} \textbf{48}, 291--295 (1982).
+
+\bibitem{Jarrett1984}
+J.~P.~Jarrett,
+``On the physical significance of the locality conditions in the Bell arguments,''
+\emph{No\^{u}s} \textbf{18}, 569--589 (1984).
+
+\bibitem{Shimony1986}
+A.~Shimony,
+``Events and processes in the quantum world,''
+in \emph{Quantum Concepts in Space and Time},
+ed.\ R.~Penrose and C.~J.~Isham,
+Oxford University Press (1986).
+
+\bibitem{AharonovVaidman2008}
+Y.~Aharonov and L.~Vaidman,
+``The two-state vector formalism: An updated review,''
+in \emph{Time in Quantum Mechanics}, Vol.~1,
+Springer Lecture Notes in Physics (2008).
+
+\bibitem{PriceWharton2015}
+H.~Price and K.~Wharton,
+``Disentangling the quantum world,''
+\emph{Entropy} \textbf{17}, 7752--7767 (2015).
+
+\bibitem{OreshkovCostaBrukner2012}
+O.~Oreshkov, F.~Costa, and \v{C}.~Brukner,
+``Quantum correlations with no causal order,''
+\emph{Nat.\ Commun.} \textbf{3}, 1092 (2012).
+
+\bibitem{Hardy2007}
+L.~Hardy,
+``Towards quantum gravity: A framework for probabilistic theories with non-fixed causal structure,''
+\emph{J.\ Phys.\ A} \textbf{40}, 3081--3099 (2007).
+
+\bibitem{LeiferPusey2017}
+M.~S.~Leifer and M.~F.~Pusey,
+``Is a time-symmetric interpretation of quantum theory possible without retrocausality?,''
+\emph{Proc.\ Roy.\ Soc.\ A} \textbf{473}, 20160607 (2017).
+
+\bibitem{NeroBellMTT}
+P.~Nero,
+``Bell's Beables, Modal Fixed Points, and the Limits of Factorization,''
+\emph{Zenodo} (2024).
+
+\bibitem{NeroMeasurementMTT}
+P.~Nero,
+``Measurement as Global Consistency in Modal Triplet Theory,''
+\emph{Zenodo} (2024).
+
+\end{thebibliography}
+
+\end{document}

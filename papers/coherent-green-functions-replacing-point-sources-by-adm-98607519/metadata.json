@@ -1,0 +1,48 @@
+{
+  "abstract": "The preceding paper identified Dirac delta functions as singular shadows of admissible projection: a delta is the zero-width limit of a bounded coherent projection kernel. The present paper develops the first worked sequel. We replace the standard point-source Green equation LG(x,y)=\\delta(x-y) by the coherent Green equation LG_{\\mathrm{coh}}(x,y)=K_{\\mathrm{coh}}(x,y), where K_{\\mathrm{coh}} is a bounded admissible identity kernel on a retained coherent sector. The mathematical core is elementary but important: for a positive self-adjoint elliptic operator L, finite spectral projectors and heat-kernel filters produce smooth finite-width sources, smooth responses, finite diagonal values, and distributional convergence to the ordinary Green kernel only in the singular limit. A worked circle model with L_m=-\\partial_\\theta^2+m^2 displays the replacement explicitly: L_mG_N=K_N and L_mG_\\tau=H_\\tau, with the point-source equation recovered only as N\\to\\infty or \\tau\\downarrow0. Thus the standard Green function is recovered, but as an ideal endpoint rather than a primitive object. Within Modal Triplet Theory (MTT), this supplies the first concrete replacement rule for delta-supported physics. Point particles, point charges, local disturbances, propagator sources, and contact interactions are re-read as downstream zero-width idealizations of finite coherent source kernels. This does not discard standard Green functions; it factors them into two layers: a physically admissible finite-width response and a singular continuum limit. The result provides a rigorous bridge from the delta/projection principle to a usable computational object: the coherent Green function.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "unversioned",
+  "date": "April 2026",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "6d07eb847e6c0fe7dc3270cfeb1d9a52254cd12c997a4f45785d6bc8418bcc09",
+  "paper_id": "coherent-green-functions-replacing-point-sources-by-adm-98607519",
+  "paper_md_sha256": "0cf75f4b90434a430a8edfe290abf58128c3bde83fe2d43f0640b200da747233",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 17758,
+      "path": "coherent_green_functions_admissible_kernels.tex",
+      "sha256": "bb495ed870fcce93e4af519b87e85c634dcab889e22e6bfa539742ea8393d202"
+    },
+    {
+      "bytes": 21799,
+      "path": "coherent_green_functions_admissible_kernels_improved (1).tex",
+      "sha256": "6d07eb847e6c0fe7dc3270cfeb1d9a52254cd12c997a4f45785d6bc8418bcc09"
+    },
+    {
+      "bytes": 21799,
+      "path": "main.tex",
+      "sha256": "6d07eb847e6c0fe7dc3270cfeb1d9a52254cd12c997a4f45785d6bc8418bcc09"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "5 Dirac Delta/_work/Coherent_Green_Functions__Replacing_Point_Sources_by_Admissible_Kernels_in_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "5ba77f9035bc8983659e914168049676f46e3a60d74c3d9d78d957583f6e4fac",
+  "title": "Coherent Green Functions: Replacing Point Sources by Admissible Kernels in Modal Triplet Theory",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

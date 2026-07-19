@@ -1,0 +1,88 @@
+{
+  "abstract": "Coupling chiral fermions to Loop Quantum Gravity (LQG) is obstructed in semiclassical regimes by lattice-like fermion doubling when matter is defined by naive graph-local stencils. We provide a fully rigorous resolution within the Modal Triplet Theory (MTT) coherent sector: fermions on graphs and spin foams are defined by coherent compression of a continuum Dirac operator, not by a standalone lattice Dirac operator. The compression is constructed as smoothing at scale h followed by finite-element projection, yielding provable commutator estimates and norm-resolvent convergence under refinement. We show infrared spectral stability, stability of the chiral index, and absence of spurious low-energy mirror fermions in the coherent regime. We also treat the Berry/projector-variation correction: we define it via a unitary overlap transport on edges, prove small-step branch control for the matrix logarithm, and show it does not spoil grading. Finally, we connect the operator-level results to refinement-averaged propagator suppression mechanisms.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18261945",
+    "created": "2026-01-15T20:16:54.579748+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18261946",
+    "files": [
+      {
+        "checksum": "md5:5a5df9e381f9fda914396a84a63baeaa",
+        "content_url": "https://zenodo.org/api/records/18261946/files/Fermions_in_Loop_Quantum_Gravity_from_Modal_Triplet_Theory__Coherent_Compression__Berry_Terms__and_Absence_of_Doubling%20(5).pdf/content",
+        "key": "Fermions_in_Loop_Quantum_Gravity_from_Modal_Triplet_Theory__Coherent_Compression__Berry_Terms__and_Absence_of_Doubling (5).pdf",
+        "size": 362793
+      }
+    ],
+    "id": "18261946",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18261946",
+    "resource_type": "publication",
+    "title": "Fermions in Loop Quantum Gravity from Modal Triplet Theory",
+    "updated": "2026-01-15T20:16:55.039665+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "331f95bf6d4ea8aa35510d62c465543037840186e45efc6adcfd2a39e283e014",
+  "paper_id": "fermions-in-loop-quantum-gravity-from-modal-triplet-the-c9d451aa",
+  "paper_md_sha256": "716b6db3b1d8463aa0a278a7d629d3de760855ff0da291eb8a2666a64440c6ca",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 33147,
+      "path": "main.tex",
+      "sha256": "331f95bf6d4ea8aa35510d62c465543037840186e45efc6adcfd2a39e283e014"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Fermions_in_Loop_Quantum_Gravity_from_Modal_Triplet_Theory__Coherent_Compression__Berry_Terms__and_Absence_of_Doubling"
+  },
+  "source_tree_sha256": "1c1667d8125f5240d15972b82a26287df0e0df2a75825e3a7a87657b778cb56a",
+  "title": "Fermions in Loop Quantum Gravity from Modal Triplet Theory: Coherent Compression, Berry Terms, and Absence of Doubling",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261945",
+      "created": "2026-01-15T20:16:54.579748+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18261946",
+      "files": [
+        {
+          "checksum": "md5:5a5df9e381f9fda914396a84a63baeaa",
+          "content_url": "https://zenodo.org/api/records/18261946/files/Fermions_in_Loop_Quantum_Gravity_from_Modal_Triplet_Theory__Coherent_Compression__Berry_Terms__and_Absence_of_Doubling%20(5).pdf/content",
+          "key": "Fermions_in_Loop_Quantum_Gravity_from_Modal_Triplet_Theory__Coherent_Compression__Berry_Terms__and_Absence_of_Doubling (5).pdf",
+          "size": 362793
+        }
+      ],
+      "id": "18261946",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18261946",
+      "resource_type": "publication",
+      "title": "Fermions in Loop Quantum Gravity from Modal Triplet Theory",
+      "updated": "2026-01-15T20:16:55.039665+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

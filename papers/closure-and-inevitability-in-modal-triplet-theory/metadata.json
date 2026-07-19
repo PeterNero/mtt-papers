@@ -1,0 +1,88 @@
+{
+  "abstract": "Modal Triplet Theory (MTT) has been developed across a corpus of technical papers establishing the emergence of quantum mechanics, quantum field theory, spacetime geometry, irreversibility, and cosmology from a common projection-based architecture. While these results are rigorous and mutually consistent, their logical necessity has remained distributed across multiple constructions and realizations. This paper provides conceptual closure to the MTT corpus. We extract the minimal structural axioms implicit throughout the theory, identify the invariant admissibility margin governing all effective descriptions, and state a single obstruction theorem from which irreversibility, probability, universality, and geometric response follow as unavoidable consequences. No new dynamics, degrees of freedom, or assumptions are introduced. The goal is deliberately hybrid in tone: mathematically conservative, but conceptually explicit. The results summarized here were not postulated at the outset of MTT; they were forced upon the theory by its own internal consistency. This paper makes that inevitability visible.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18255510",
+    "created": "2026-01-15T10:40:40.064824+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18255511",
+    "files": [
+      {
+        "checksum": "md5:882cef2ff140d6f60c217bc2c59c6bc7",
+        "content_url": "https://zenodo.org/api/records/18255511/files/Closure_and_Inevitability_in_Modal_Triplet_Theory%20(1).pdf/content",
+        "key": "Closure_and_Inevitability_in_Modal_Triplet_Theory (1).pdf",
+        "size": 219469
+      }
+    ],
+    "id": "18255511",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18255511",
+    "resource_type": "publication",
+    "title": "Closure and Inevitability in Modal Triplet Theory",
+    "updated": "2026-01-15T10:40:40.705425+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "c3be32592beef37d6dd484023cd1e1d094e8d782e9997fdb6b733f3c0963c8c4",
+  "paper_id": "closure-and-inevitability-in-modal-triplet-theory",
+  "paper_md_sha256": "e03ae15753cebacf865421c792e59d7d990bee2633075e88392b0f9b00f33992",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 8462,
+      "path": "main.tex",
+      "sha256": "c3be32592beef37d6dd484023cd1e1d094e8d782e9997fdb6b733f3c0963c8c4"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Closure_and_Inevitability_in_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "5e3d38c81a176647a143852ce1f0b5424e1dc95cacb1c33ad14390cd294e1810",
+  "title": "Closure and Inevitability in Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255510",
+      "created": "2026-01-15T10:40:40.064824+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18255511",
+      "files": [
+        {
+          "checksum": "md5:882cef2ff140d6f60c217bc2c59c6bc7",
+          "content_url": "https://zenodo.org/api/records/18255511/files/Closure_and_Inevitability_in_Modal_Triplet_Theory%20(1).pdf/content",
+          "key": "Closure_and_Inevitability_in_Modal_Triplet_Theory (1).pdf",
+          "size": 219469
+        }
+      ],
+      "id": "18255511",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18255511",
+      "resource_type": "publication",
+      "title": "Closure and Inevitability in Modal Triplet Theory",
+      "updated": "2026-01-15T10:40:40.705425+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

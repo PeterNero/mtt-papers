@@ -1,0 +1,83 @@
+{
+  "abstract": "Causal Set Theory (CST) proposes that spacetime is fundamentally discrete and that its essential structure is encoded in a locally finite partial order representing causal relations. Modal Triplet Theory (MTT), by contrast, posits a continuous underlying modal field whose coherent sector gives rise to effective four\u2013dimensional spacetime, causality, and quantum phenomena through stability and projection. In this work we show that causal sets can arise naturally as an effective, coarse\u2013grained description of the emergent spacetime sector of MTT. In this construction, discreteness and causal order are not postulated at the fundamental level but appear as derived structures when the coherent spacetime is sampled at scales set by modal spectral gaps and admissibility constraints. We present two complementary routes to causal sets: (i) a kinematical construction based on Poisson sprinkling of the emergent MTT spacetime, and (ii) a dynamical construction in which causal set elements correspond to physically meaningful coherence\u2013selection events. We argue that this perspective preserves the successes of CST while providing a deeper explanation for why causal order and discreteness arise at all.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18261497",
+    "created": "2026-01-15T19:25:19.522070+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18261498",
+    "files": [
+      {
+        "checksum": "md5:d6929139195207507ece53160f209374",
+        "content_url": "https://zenodo.org/api/records/18261498/files/Causal_Sets_as_an_Effective_Limit_of_Modal_Triplet_Theory%20(2).pdf/content",
+        "key": "Causal_Sets_as_an_Effective_Limit_of_Modal_Triplet_Theory (2).pdf",
+        "size": 136160
+      }
+    ],
+    "id": "18261498",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18261498",
+    "resource_type": "publication",
+    "title": "Causal Sets as an Effective Limit of Modal Triplet Theory",
+    "updated": "2026-01-15T19:25:20.107603+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "d864a54ac8e1155b40ea255663693d4ffe0df0f224743c22355f92035a1c31d9",
+  "paper_id": "causal-sets-as-an-effective-limit-of-modal-triplet-theory",
+  "paper_md_sha256": "ee82b057a364f6cd0c3fdd6f114373a579fb11cbb6782e4b8847e9b571e4af74",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 12859,
+      "path": "main.tex",
+      "sha256": "d864a54ac8e1155b40ea255663693d4ffe0df0f224743c22355f92035a1c31d9"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/Causal_Sets_as_an_Effective_Limit_of_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "658fbc4a20995c1f866f8ebfd7f8a2af56c056a755b2bdff79d3c8d981820169",
+  "title": "Causal Sets as an Effective Limit of Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261497",
+      "created": "2026-01-15T19:25:19.522070+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18261498",
+      "files": [
+        {
+          "checksum": "md5:d6929139195207507ece53160f209374",
+          "content_url": "https://zenodo.org/api/records/18261498/files/Causal_Sets_as_an_Effective_Limit_of_Modal_Triplet_Theory%20(2).pdf/content",
+          "key": "Causal_Sets_as_an_Effective_Limit_of_Modal_Triplet_Theory (2).pdf",
+          "size": 136160
+        }
+      ],
+      "id": "18261498",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18261498",
+      "resource_type": "publication",
+      "title": "Causal Sets as an Effective Limit of Modal Triplet Theory",
+      "updated": "2026-01-15T19:25:20.107603+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

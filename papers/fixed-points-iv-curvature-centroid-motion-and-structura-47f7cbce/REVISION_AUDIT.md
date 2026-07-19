@@ -1,0 +1,55 @@
+# Fixed Points IV v4 Revision Audit
+
+## Source lineage
+
+- Source: `_work/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v3`
+- Revised: `revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4`
+- The v3 project remains untouched.
+
+## Required corrections evaluated
+
+| Finding | v3 evaluation | v4 action |
+|---|---|---|
+| Normalize the Weitzenbock decomposition | The rough Laplacian and full curved operator were identified inconsistently | Defines `L=nabla* nabla+R`, with the rough Laplacian nonnegative and `R` a self-adjoint curvature endomorphism |
+| Separate curvature shift, mixing, and variation | These effects were treated as one scalar correction | Separates the negative spectral part of `R`, the off-diagonal block `QRP`, and base derivatives/commutators |
+| Prove a gap for the full curved operator | The uncurved gap was reused after adding curvature | Proves cluster persistence under `||R||<lambda_*/2` and defines the curved Riesz projector `P_R` |
+| Distinguish `P` from `P_R` | The old coherent projector was silently retained | States that `P_R` is the invariant curved projector; retaining `P` creates explicit curvature leakage |
+| Include coherent-to-noncoherent leakage | The `QRP` source term was absent | Derives a `Q`-sector differential inequality with leakage coefficient `ell_QP=||QRP||` and its induced floor |
+| Make the centroid intrinsic | Coordinate averaging is not invariant on a manifold | Defines the Karcher centroid in a strongly convex normal ball and states uniqueness assumptions |
+| Match modulation order to the parent flow | A Newton equation was claimed from first-order gradient flow | Derives a first-order metric modulation equation; second-order motion is conditional on a separately specified inertial parent equation |
+| Do not infer interaction sign from overlap magnitude | An absolute overlap estimate was promoted to attraction/merger | Proves only `|E_int|<=C O` without sign data |
+| State the extra sign hypothesis | Attraction and repulsion were not separated | Gives a signed interaction criterion based on the sign of the cross term |
+| Replace the schematic barrier claim | The previous transition statement did not supply a precise energy/work hypothesis | Gives a mountain-pass/work exclusion theorem with an explicit barrier and accumulated work |
+| Separate exit from basin selection | Threshold exit was treated as selecting the next structure | Proves that exit detection alone does not determine the post-transition basin |
+
+## Additional corrections
+
+- The rank of the low curved spectral cluster is preserved by the Riesz
+  projector homotopy while the contour remains in the resolvent set.
+- The leakage theorem states its nonlinear one-sided constant and the required
+  positive margin instead of appealing to curvature-corrected damping
+  informally.
+- Base-dependent projectors are accompanied by a commutator/connection term;
+  differentiating `P_R(x)` is not treated as free.
+- Fixed-point existence and promotion to equilibrium are inherited only under
+  the corrected FP I/II hypotheses.
+- Overlap remains a useful magnitude diagnostic, but dynamic merger requires
+  both sign information and a specified evolution law.
+
+## Resulting scope
+
+FP IV v4 proves perturbative persistence of the selected low spectral cluster,
+quantifies curvature-induced leakage when the old projector is retained, and
+gives intrinsic first-order centroid modulation for the gradient-flow model.
+It also supplies correctly scoped interaction and transition theorems. It does
+not claim that curvature, overlap, or barrier exit by itself selects a physical
+post-transition state.
+
+## Validation
+
+- FP I through FP IV permanent theorem audits pass.
+- The FP IV migration and verifier scripts pass Python syntax validation.
+- TeX environment nesting passes.
+- PDF compilation remains blocked by the previously identified local MiKTeX
+  dependency `amsthm.sty`; this is an environment issue rather than a detected
+  FP IV source error.

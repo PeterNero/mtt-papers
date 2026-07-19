@@ -1,0 +1,86 @@
+{
+  "abstract": "Across physics, biology, cognition, artificial intelligence, and large-scale social systems, effective descriptions exhibit recurring features: (i) stability only within bounded regimes, (ii) abrupt irreversible breakdowns, (iii) hidden correlations among variables treated as independent, and (iv) long-horizon behavior that admits no general shortcut prediction even when underlying dynamics are deterministic. These features are typically analyzed in isolation and explained by domain-specific mechanisms. This paper gives a unifying structural framework\u2014projection-limited coherence\u2014that explains these features without assuming any particular substrate or equation of motion. The framework isolates four minimal ingredients: (1) an underlying measurable dynamical system (\\mathsf{X},\\mathcal{B}(\\mathsf{X}),\\Phi_t), (2) a many-to-one measurable projection \\Pi:\\mathsf{X}\\to\\mathsf{Y} defining effective (shadow) variables, (3) a finite coherence capacity controlling the domain where truncation is well-posed, and (4) generic nonexistence of a global measurable section (right-inverse) for \\Pi across admissibility boundaries. From these alone we prove: (A) structural irreversibility of shadow evolution even when \\Phi_t is invertible, (B) computational irreducibility of basin membership and outcome selection for broad classes of systems with nontrivial boundary structure, and (C) hidden compatibility constraints among shadow variables arising from shared pre-images, yielding nonlocal relations without causal interaction. We then instantiate the framework in Modal Triplet Theory (MTT), where observable four-dimensional physics arises as the coherent-sector projection of deterministic higher-dimensional dynamics via a joint Riesz projector and internal pushforward. We show how quantum mechanics, general relativity, probabilistic outcomes, and the arrow of time emerge as shadow descriptions within admissible slabs. Finally, we apply the same formal structure to brains and consciousness, artificial intelligence architectures, and civilizations, using a uniform template (underlying dynamics, projection, coherent sector, capacity, boundaries, and induced hidden relations).",
+  "authors": [],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18274609",
+    "created": "2026-01-16T22:45:38.299670+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18274610",
+    "files": [
+      {
+        "checksum": "md5:cdfc28f135e164a0b25ff61c1dc9a79d",
+        "content_url": "https://zenodo.org/api/records/18274610/files/Projection_Limited_Coherence__A_Structural_Theory_of_Effective_Description_from_Fundamental_Physics_to_Consciousness_and_Civilization%20(1).pdf/content",
+        "key": "Projection_Limited_Coherence__A_Structural_Theory_of_Effective_Description_from_Fundamental_Physics_to_Consciousness_and_Civilization (1).pdf",
+        "size": 447990
+      }
+    ],
+    "id": "18274610",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-16",
+    "record_url": "https://zenodo.org/records/18274610",
+    "resource_type": "publication",
+    "title": "Projection-Limited Coherence: A Structural Theory of Effective Description from Physics to Cognition",
+    "updated": "2026-01-16T22:45:38.737066+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "2d7ddf98a79d572fadeafa053983fb87ea4dbffe81df2e0804db6c40224cca45",
+  "paper_id": "projection-limited-coherence-a-structural-theory-of-eff-3343fe62",
+  "paper_md_sha256": "3f24ea06db4c46f2807b951aefd3ed97cc69885e9523e8b930696d8bec168d05",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 83503,
+      "path": "main.tex",
+      "sha256": "2d7ddf98a79d572fadeafa053983fb87ea4dbffe81df2e0804db6c40224cca45"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "14 Coherence Capacity Program/_work/Projection_Limited_Coherence__A_Structural_Theory_of_Effective_Description_from_Fundamental_Physics_to_Consciousness_and_Civilization (1)"
+  },
+  "source_tree_sha256": "0ef554d9baffd6f6a2b24563d32b03bcd9dbd2aa320a1758241679d895f5e7d8",
+  "title": "Projection-Limited Coherence: A Structural Theory of Effective Description from Fundamental Physics to Consciousness and Civilization",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18274609",
+      "created": "2026-01-16T22:45:38.299670+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18274610",
+      "files": [
+        {
+          "checksum": "md5:cdfc28f135e164a0b25ff61c1dc9a79d",
+          "content_url": "https://zenodo.org/api/records/18274610/files/Projection_Limited_Coherence__A_Structural_Theory_of_Effective_Description_from_Fundamental_Physics_to_Consciousness_and_Civilization%20(1).pdf/content",
+          "key": "Projection_Limited_Coherence__A_Structural_Theory_of_Effective_Description_from_Fundamental_Physics_to_Consciousness_and_Civilization (1).pdf",
+          "size": 447990
+        }
+      ],
+      "id": "18274610",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-16",
+      "record_url": "https://zenodo.org/records/18274610",
+      "resource_type": "publication",
+      "title": "Projection-Limited Coherence: A Structural Theory of Effective Description from Physics to Cognition",
+      "updated": "2026-01-16T22:45:38.737066+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

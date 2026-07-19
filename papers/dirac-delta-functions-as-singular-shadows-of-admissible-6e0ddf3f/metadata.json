@@ -1,0 +1,53 @@
+{
+  "abstract": "Dirac delta distributions appear throughout physics as identity kernels, point sources, constraint enforcers, measurement idealizations, gauge-fixing devices, and conservation laws at interaction vertices. Their ubiquity is usually treated as a technical feature of continuum mathematics. This paper isolates a structural explanation compatible with Modal Triplet Theory (MTT): a Dirac delta is the singular downstream limit of an admissible projection when finite-width selection, coherent-sector truncation, or representative choice is idealized to zero width. The mathematical core is deliberately narrow. We prove that spectral projection kernels on a compact elliptic setting converge to the Dirac delta in the distributional sense, and we record the corresponding heat-kernel approximate identity. These standard analytic facts provide the rigorous anchor for the MTT interpretation: the native object in a finite-capacity coherent regime is not the exact identity kernel \\delta(x-y), but a bounded coherent kernel K_{\\mathrm{coh}}(x,y) induced by a coherent projector \\Pi_{\\mathrm{coh}}. The delta is recovered only after an infinite-resolution or zero-width limit. We then apply this projection reading to Green kernels, canonical commutators, contact interactions, path-integral constraints, measurement, fixed-point basin selection, and gauge fixing. Gauge theory displays the same architecture explicitly: gauge freedom is uncollapsed projection redundancy, gauge fixing is local representative selection, the gauge-fixing delta is a singular section-selection kernel, and the Faddeev\u2013Popov determinant is the projection Jacobian. The paper does not replace distribution theory, QFT, or gauge theory. It supplies a diagnostic principle: wherever a physical theory writes a Dirac delta, one should ask which finite admissible projection, filter, basin, or quotient operation has been idealized as exact.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "unversioned",
+  "date": "April 2026",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "b4c52174f6664e90bbce3da9468e75aa629df11c2c912665a928a214afcb1606",
+  "paper_id": "dirac-delta-functions-as-singular-shadows-of-admissible-6e0ddf3f",
+  "paper_md_sha256": "94cf383e93e352ab262726c3f90abaab3c92b4b3a57f789db3fc6ba5fed0eb9a",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 32135,
+      "path": "dirac_delta_singular_shadow_admissible_projection (1).tex",
+      "sha256": "2d64e38f4d8dbc3fc30c18c31d69f63c3e61c4739ca881ace29f5da0ad756256"
+    },
+    {
+      "bytes": 31725,
+      "path": "dirac_delta_singular_shadow_admissible_projection (2).tex",
+      "sha256": "b4c52174f6664e90bbce3da9468e75aa629df11c2c912665a928a214afcb1606"
+    },
+    {
+      "bytes": 27276,
+      "path": "dirac_delta_singular_shadow_admissible_projection.tex",
+      "sha256": "f5f62979db40e158ae3591f0211f9014798a19476a591824fc3cf91ec5a13a71"
+    },
+    {
+      "bytes": 31725,
+      "path": "main.tex",
+      "sha256": "b4c52174f6664e90bbce3da9468e75aa629df11c2c912665a928a214afcb1606"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "5 Dirac Delta/_work/Dirac_Delta_Functions_as_Singular_Shadows_of_Admissible_Projection"
+  },
+  "source_tree_sha256": "5d00720808c7c6d8bdc874e82b1d8ed3b645d28d319d4b9636925bead3e503f3",
+  "title": "Dirac Delta Functions as Singular Shadows of Admissible Projection A Fixed-Point and Gauge-Theoretic Formulation in Modal Triplet Theory",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

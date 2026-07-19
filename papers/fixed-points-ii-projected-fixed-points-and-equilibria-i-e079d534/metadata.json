@@ -1,0 +1,96 @@
+{
+  "abstract": "We apply the corrected FP\u2013I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. A shared central-circle/U(1) datum is bundle or connection data on \\ensuremath{X^{6}} and is not counted as a seventh internal product dimension. We prove existence of projected time\u2013\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v3",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.16949073",
+    "created": "2026-01-09T21:37:41.934158+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18202914",
+    "files": [
+      {
+        "checksum": "md5:6e6aeccf5aae881d142cc205dca24242",
+        "content_url": "https://zenodo.org/api/records/18202914/files/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v2%20(1).pdf/content",
+        "key": "Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v2 (1).pdf",
+        "size": 362677
+      }
+    ],
+    "id": "18202914",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-09",
+    "record_url": "https://zenodo.org/records/18202914",
+    "resource_type": "publication",
+    "title": "Fixed Points II: Fixed Points in a 10D Modal Model",
+    "updated": "2026-01-09T21:37:42.260207+00:00",
+    "version": "v2.0"
+  },
+  "main_tex_sha256": "84fc139fa0bf2217e1c8ce0443498b36816a1ceeb510290f87208834568d6656",
+  "paper_id": "fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534",
+  "paper_md_sha256": "156f99537815ef6f3f51c4432fa978de07671ff0afb2f77c356002d7f550e36c",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_II_V3_REVISION_AUDIT.md",
+    "revision_evidence_sha256": "a687c78cacc62aa8db4756c932c8ba8212880ea1ef58bd9dcf5952c0e0aee05b",
+    "selected_revision": true,
+    "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v2"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 26936,
+      "path": "main.tex",
+      "sha256": "84fc139fa0bf2217e1c8ce0443498b36816a1ceeb510290f87208834568d6656"
+    },
+    {
+      "bytes": 2428,
+      "path": "references.bib",
+      "sha256": "5d9a55a92c4f874218b1ff84de82a7048cac884c060e47a093d2ea596c15e064"
+    },
+    {
+      "bytes": 15705,
+      "path": "series.sty",
+      "sha256": "deaaf90be0b98130189531a83e121ad3934803f4844f2b10571046aec3b3ed3f"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v3"
+  },
+  "source_tree_sha256": "11b755fd9d8e4c9fd13696680cb5dad193216e19f7a394249c9fb8d791e15c18",
+  "title": "Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.16949073",
+      "created": "2026-01-09T21:37:41.934158+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18202914",
+      "files": [
+        {
+          "checksum": "md5:6e6aeccf5aae881d142cc205dca24242",
+          "content_url": "https://zenodo.org/api/records/18202914/files/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v2%20(1).pdf/content",
+          "key": "Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v2 (1).pdf",
+          "size": 362677
+        }
+      ],
+      "id": "18202914",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-09",
+      "record_url": "https://zenodo.org/records/18202914",
+      "resource_type": "publication",
+      "title": "Fixed Points II: Fixed Points in a 10D Modal Model",
+      "updated": "2026-01-09T21:37:42.260207+00:00",
+      "version": "v2.0"
+    }
+  ]
+}

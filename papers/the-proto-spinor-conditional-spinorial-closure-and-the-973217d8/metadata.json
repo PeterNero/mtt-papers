@@ -1,0 +1,91 @@
+{
+  "abstract": "We isolate the part of the proto-spinor construction that is mathematically forced after its geometric premises are stated. A world-in-world field is a section of \\operatorname{Hom}(TP,TI) for oriented rank-three bundles; its nine local components do not multiply manifold dimensions. If closure data must retain the nontrivial loop class in SO(3), the faithful continuous double-cover carrier is spinorial and is represented through \\operatorname{Spin}(3)\\cong SU(2). This is a conditional lifting theorem, not a derivation of internal dimension three or of physical fermions from admissibility alone. For the selected q79 degree-three spectral cover we record the exact trace split of ranks 1+2, the common 1+2+3 carrier, and the local binary-dihedral lift of signed sheet monodromy. Strict global Spin closure remains equivalent to a branch-relator sign or obstruction-class calculation. Circle, lens, and nil are retained as phase, finite-transport, and anchoring roles, rather than asserted to be an exhaustive literal product topology. Lorentzian spinors, masses, Higgs modes, and particle assignments are downstream realization problems with explicit gates.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v5",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.19534665",
+    "created": "2026-04-12T09:25:21.207346+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.19534666",
+    "files": [
+      {
+        "checksum": "md5:f8cb10a99462bb33e45bc44a9e7d340b",
+        "content_url": "https://zenodo.org/api/records/19534666/files/The_Proto_Spinor__Triadic_Closure_from_Pointwise_Internal_Embedding_v4.pdf/content",
+        "key": "The_Proto_Spinor__Triadic_Closure_from_Pointwise_Internal_Embedding_v4.pdf",
+        "size": 339566
+      }
+    ],
+    "id": "19534666",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-04-12",
+    "record_url": "https://zenodo.org/records/19534666",
+    "resource_type": "publication",
+    "title": "The Proto-Spinor: Triadic Closure from Pointwise Internal Embedding",
+    "updated": "2026-04-12T09:25:21.924116+00:00",
+    "version": "v4.0"
+  },
+  "main_tex_sha256": "1641742a6db9de7132741b4553e8cbb439f2d6ca71ea06774c9668798ac3bb6a",
+  "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+  "paper_md_sha256": "916e3cb2aaec09ec81aeef65081df7f6e924b0be8e39d01baf7e826886b641b2",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md",
+    "revision_evidence_sha256": "340f4cb2ee4e5a22a1b008aa1c57109cdd148da74ef36fcec0913ef20dc527b1",
+    "selected_revision": true,
+    "superseded_source_path": "10 ProtoSpinor/_work/The_Proto_Spinor__Triadic_Closure_from_Pointwise_Internal_Embedding_v4"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 15167,
+      "path": "main.tex",
+      "sha256": "1641742a6db9de7132741b4553e8cbb439f2d6ca71ea06774c9668798ac3bb6a"
+    },
+    {
+      "bytes": 4221,
+      "path": "series.sty",
+      "sha256": "b0af1073f295d9ebc3bfa6020214244f0147d5cb41ebb8ccf58a0303951c6fbf"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/The_Proto_Spinor__Conditional_Spinorial_Closure_and_q79_Interface_v5"
+  },
+  "source_tree_sha256": "93cf168e2a7b50687ae522476eb79f1ed463575f7f60acde68134c81afdd1452",
+  "title": "The Proto-Spinor: Conditional Spinorial Closure and the q79 Interface Corrected fifth edition",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.19534665",
+      "created": "2026-04-12T09:25:21.207346+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.19534666",
+      "files": [
+        {
+          "checksum": "md5:f8cb10a99462bb33e45bc44a9e7d340b",
+          "content_url": "https://zenodo.org/api/records/19534666/files/The_Proto_Spinor__Triadic_Closure_from_Pointwise_Internal_Embedding_v4.pdf/content",
+          "key": "The_Proto_Spinor__Triadic_Closure_from_Pointwise_Internal_Embedding_v4.pdf",
+          "size": 339566
+        }
+      ],
+      "id": "19534666",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-04-12",
+      "record_url": "https://zenodo.org/records/19534666",
+      "resource_type": "publication",
+      "title": "The Proto-Spinor: Triadic Closure from Pointwise Internal Embedding",
+      "updated": "2026-04-12T09:25:21.924116+00:00",
+      "version": "v4.0"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "abstract": "",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18255659",
+    "created": "2026-01-15T10:53:25.756210+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18255660",
+    "files": [
+      {
+        "checksum": "md5:461bb5c984239d793ab93bc09b10f7cc",
+        "content_url": "https://zenodo.org/api/records/18255660/files/A_Projection_First_Reframing_of_Physics%20(3).pdf/content",
+        "key": "A_Projection_First_Reframing_of_Physics (3).pdf",
+        "size": 214537
+      }
+    ],
+    "id": "18255660",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18255660",
+    "resource_type": "publication",
+    "title": "A Projection-First Reframing of Physics",
+    "updated": "2026-01-15T10:53:26.247345+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "344dd69e3b6a6582398c13822364ff923543aa5884bfd529a65df4a76a867b2f",
+  "paper_id": "a-projection-first-reframing-of-physics",
+  "paper_md_sha256": "f4bf8d7f3591e9c31d18a4b8bb2c113b0bfc41143c0a14d49710b46a67cdcbeb",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 48288,
+      "path": "main.tex",
+      "sha256": "344dd69e3b6a6582398c13822364ff923543aa5884bfd529a65df4a76a867b2f"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "19 A project-first reframing/_work/A_Projection_First_Reframing_of_Physics"
+  },
+  "source_tree_sha256": "ac3b3418d823d973fda70aee7eef3460b1e53371bc2b2e41c17055ddc1561bdd",
+  "title": "A Projection-First Reframing of Physics",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255659",
+      "created": "2026-01-15T10:53:25.756210+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18255660",
+      "files": [
+        {
+          "checksum": "md5:461bb5c984239d793ab93bc09b10f7cc",
+          "content_url": "https://zenodo.org/api/records/18255660/files/A_Projection_First_Reframing_of_Physics%20(3).pdf/content",
+          "key": "A_Projection_First_Reframing_of_Physics (3).pdf",
+          "size": 214537
+        }
+      ],
+      "id": "18255660",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18255660",
+      "resource_type": "publication",
+      "title": "A Projection-First Reframing of Physics",
+      "updated": "2026-01-15T10:53:26.247345+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "abstract": "We analyze limits of computation, prediction, and control that arise as structural consequences of admissible description in the Modal Triplet Theory (MTT) framework. Without invoking complexity theory, algorithmic randomness, or resource constraints, we show that finite admissibility, kinematic persistence, and selection fronts impose intrinsic limits on what can be predicted or decided within any admissible encoding. We introduce the notion of admissible prediction depth and show that, in the presence of selection fronts and nil obstructions, well-posed questions about future kinematic continuation can be undecidable within the theory. These limits are structural rather than epistemic: they persist even with infinite computational power and perfect local information. The results clarify the relationship between physical prediction, computation, and description. They show that undecidability and loss of predictability arise from the same structural sources as irreversibility, horizons, and quantization, and do not require additional postulates about information or observers.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18354965",
+    "created": "2026-01-23T20:00:08.457733+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18354966",
+    "files": [
+      {
+        "checksum": "md5:b0f0a46eb22cf204b1113d59eb04c869",
+        "content_url": "https://zenodo.org/api/records/18354966/files/The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits%20(2).pdf/content",
+        "key": "The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits (2).pdf",
+        "size": 220382
+      }
+    ],
+    "id": "18354966",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-23",
+    "record_url": "https://zenodo.org/records/18354966",
+    "resource_type": "publication",
+    "title": "The Modal Triplet Theory Program A2: Computation and Predictive Limits",
+    "updated": "2026-01-23T20:00:08.939137+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "4b72d576a13c75e79f613ce8c74eaefc8f37ee216397389ad622ac931ca82fb4",
+  "paper_id": "the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad",
+  "paper_md_sha256": "9e4c7f1ca260d3dd7f4d6e20a70316fd38e4e7c26fbe29f0cecda56ddc004ef7",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 33326,
+      "path": "main.bib",
+      "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
+    },
+    {
+      "bytes": 29502,
+      "path": "main.tex",
+      "sha256": "4b72d576a13c75e79f613ce8c74eaefc8f37ee216397389ad622ac931ca82fb4"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits"
+  },
+  "source_tree_sha256": "ceb73fdf8bbdc868131a3e9c57461f873d4dcb334969423662c35f57d40db7db",
+  "title": "The Modal Triplet Theory Program A2: Computation and Predictive Limits in the Modal Triplet Theory Program",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18354965",
+      "created": "2026-01-23T20:00:08.457733+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18354966",
+      "files": [
+        {
+          "checksum": "md5:b0f0a46eb22cf204b1113d59eb04c869",
+          "content_url": "https://zenodo.org/api/records/18354966/files/The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits%20(2).pdf/content",
+          "key": "The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits (2).pdf",
+          "size": 220382
+        }
+      ],
+      "id": "18354966",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-23",
+      "record_url": "https://zenodo.org/records/18354966",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program A2: Computation and Predictive Limits",
+      "updated": "2026-01-23T20:00:08.939137+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

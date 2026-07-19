@@ -1,0 +1,91 @@
+{
+  "abstract": "We replace the legacy fitted Calabi\u2013Yau flavor benchmark with the current audited execution status. The 27-by-27 qutrit\u2013Weyl/minimal matrix ledger, charged Yukawa profile rows, selected \\Pi_{\\mathrm{CKM}} rows, electroweak primitive, and direct Higgs/threshold row support embedded renormalized-Standard- Model equivalence at the adopted one-shared-physical-primitive/profile standard. The final audit closes 12/12 obligations at that standard. This is not a zero-knob derivation of measured masses. The nine charged Yukawa magnitudes and \\lambda_H remain profile labels rather than internally emitted strict source values. CKM closes at the prediction-with-uncertainty standard, with maximum displacement 2.3565\\times10^{-4} standard deviations. In the neutral sector, MTT now emits a complete internal dimensionless response, but its spectrum [1,4,7] cannot be converted into the physical neutrino spectrum by one common scale or nil subtraction. The old fitted PMNS, seesaw, and few-TeV Higgs benchmarks are therefore withdrawn as predictions.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v3",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262329",
+    "created": "2026-01-15T21:20:40.001028+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262330",
+    "files": [
+      {
+        "checksum": "md5:02c92198e8daabbf603eb8dff7aa289a",
+        "content_url": "https://zenodo.org/api/records/18262330/files/Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v2%20(3).pdf/content",
+        "key": "Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v2 (3).pdf",
+        "size": 285632
+      }
+    ],
+    "id": "18262330",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262330",
+    "resource_type": "publication",
+    "title": "Execution of Modal Triplet Theory II: Flavor, CKM/PMNS, and Higgs Sector",
+    "updated": "2026-01-15T21:20:40.426559+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "e95911d86da7e40bd5897236a2fe58a93d04a7daa3295c2fe8df025ae5d5ab6b",
+  "paper_id": "execution-of-modal-triplet-theory-ii-flavor-ckm-neutral-42604e2f",
+  "paper_md_sha256": "982ad9f6ecd23e080d0bb36e27ee9860f9285d056af4b6cb4ce120689cd5a50e",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
+    "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
+    "selected_revision": true,
+    "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v2"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 11864,
+      "path": "main.tex",
+      "sha256": "e95911d86da7e40bd5897236a2fe58a93d04a7daa3295c2fe8df025ae5d5ab6b"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v3"
+  },
+  "source_tree_sha256": "21851112fdd25c9c4c0024306715b52bbf788676fed1873de1cbc73dec6352e4",
+  "title": "Execution of Modal Triplet Theory II: Flavor, CKM, Neutral, and Higgs Status after True-SM Closure",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262329",
+      "created": "2026-01-15T21:20:40.001028+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262330",
+      "files": [
+        {
+          "checksum": "md5:02c92198e8daabbf603eb8dff7aa289a",
+          "content_url": "https://zenodo.org/api/records/18262330/files/Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v2%20(3).pdf/content",
+          "key": "Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v2 (3).pdf",
+          "size": 285632
+        }
+      ],
+      "id": "18262330",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262330",
+      "resource_type": "publication",
+      "title": "Execution of Modal Triplet Theory II: Flavor, CKM/PMNS, and Higgs Sector",
+      "updated": "2026-01-15T21:20:40.426559+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

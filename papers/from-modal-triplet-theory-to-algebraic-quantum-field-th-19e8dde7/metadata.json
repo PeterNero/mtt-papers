@@ -1,0 +1,93 @@
+{
+  "abstract": "Algebraic quantum field theory (AQFT) provides a formulation of quantum field theory in which physical content is encoded in a net of local observable algebras, without reference to a global Hilbert space or preferred coordinates. While this framework captures locality and causal structure in a robust, representation-independent manner, it typically assumes a background spacetime and a prescribed notion of localization. In this paper, we show that an AQFT-style net structure arises naturally within Modal Triplet Theory (MTT) as a consequence of admissibility, coherent projection, and basin stability. Starting from admissible chart families and their overlap structure, we construct local observable algebras associated with admissible domains and demonstrate that these algebras assemble into a net (precosheaf) satisfying isotony, locality, and the absence of a global algebra. No background spacetime, fundamental causal order, or global section is assumed. The resulting algebraic structure is not postulated but induced by representability constraints intrinsic to MTT. In this sense, AQFT appears as a downstream encoding of admissible chart structure rather than as a foundational axiom system. The construction clarifies the structural origin of locality, horizon phenomena, and the breakdown of global descriptions, and situates algebraic quantum field theory within the broader MTT framework.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18330769",
+    "created": "2026-01-21T20:01:20.099899+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18330770",
+    "files": [
+      {
+        "checksum": "md5:e6c46aff22e13a0d5a98bfc86dc4e184",
+        "content_url": "https://zenodo.org/api/records/18330770/files/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory%20(3).pdf/content",
+        "key": "From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory (3).pdf",
+        "size": 320453
+      }
+    ],
+    "id": "18330770",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18330770",
+    "resource_type": "publication",
+    "title": "From Modal Triplet Theory to Algebraic Quantum Field Theory: Local Nets from Admissible Charts",
+    "updated": "2026-01-21T20:01:20.472468+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "6684658a78fef0b3fdf1db8d5d580ff94eb5c4e2405499aed261c6aaa3f08288",
+  "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+  "paper_md_sha256": "b97e2b64f944b589d522c9b5c44766239811b6cb9bcfa3b0dbdb08845dcd510f",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 2686,
+      "path": "main.bib",
+      "sha256": "482c19655ead341c71dd0015adaaf26ea0674a5891a73e83eca9373de20e4bd6"
+    },
+    {
+      "bytes": 37543,
+      "path": "main.tex",
+      "sha256": "6684658a78fef0b3fdf1db8d5d580ff94eb5c4e2405499aed261c6aaa3f08288"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "7 Quantum Field Theory/_work/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory"
+  },
+  "source_tree_sha256": "be38175172cc6172761566be718ece94413a641eb23239c6e196520363a24be0",
+  "title": "From Modal Triplet Theory to Algebraic Quantum Field Theory Local Nets from Admissible Charts and Coherent Basin Persistence",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18330769",
+      "created": "2026-01-21T20:01:20.099899+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18330770",
+      "files": [
+        {
+          "checksum": "md5:e6c46aff22e13a0d5a98bfc86dc4e184",
+          "content_url": "https://zenodo.org/api/records/18330770/files/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory%20(3).pdf/content",
+          "key": "From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory (3).pdf",
+          "size": 320453
+        }
+      ],
+      "id": "18330770",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18330770",
+      "resource_type": "publication",
+      "title": "From Modal Triplet Theory to Algebraic Quantum Field Theory: Local Nets from Admissible Charts",
+      "updated": "2026-01-21T20:01:20.472468+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

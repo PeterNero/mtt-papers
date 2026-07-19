@@ -1,0 +1,43 @@
+{
+  "abstract": "Delta functions appear in stochastic physics most visibly through white-noise correlations, \\langle \\xi(t)\\xi(t')\\rangle = 2D\\,\\delta(t-t'), and through Markov transition kernels that collapse memory into instantaneous updates. This paper develops the stochastic sequel to the delta-projection program in Modal Triplet Theory (MTT). The main mathematical point is simple but structurally important: white noise is the zero-correlation-time limit of finite-memory colored disturbances. Thus temporal delta correlations are not primitive randomness; they are singular limits of bounded correlation kernels. We prove that standard families of finite-memory covariance kernels converge distributionally to Dirac deltas, derive the Ornstein\u2013Uhlenbeck white-noise model as a Markov limit of colored disturbance models, and separate three notions that are often conflated: deterministic upstream evolution, stochastic projected description, and white-noise idealization. In the MTT interpretation, finite disturbances are filtered through the evolve\u2013project cycle; damping suppresses noncoherent modes, while persistent disturbance produces a finite OU floor. The delta-correlated noise model is recovered only when the disturbance correlation time is idealized to zero relative to the coherent timescale. The conclusion is that white noise is the stochastic analogue of the point source, gauge-fixing delta, projective measurement, contact vertex, conservation delta, and spectral peak studied earlier in this series. It is the singular shadow of a finite admissible process: here, finite-memory disturbance compressed into instantaneous correlation.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "unversioned",
+  "date": "April 2026",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "c79f18f7635efde97728c2da7899ff76ed9e4e35987cc1407bfbe34aa5f7dd47",
+  "paper_id": "white-noise-and-markov-limits-as-delta-correlation-idea-854be499",
+  "paper_md_sha256": "da795a5baa6b3cb912251a2e4983d64808233ed110babcf7896285a187c60448",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 17330,
+      "path": "main.tex",
+      "sha256": "c79f18f7635efde97728c2da7899ff76ed9e4e35987cc1407bfbe34aa5f7dd47"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    },
+    {
+      "bytes": 17330,
+      "path": "white_noise_markov_limits_delta_correlation_strengthened.tex",
+      "sha256": "c79f18f7635efde97728c2da7899ff76ed9e4e35987cc1407bfbe34aa5f7dd47"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "5 Dirac Delta/_work/White_Noise_and_Markov_Limits_as_Delta_Correlation_Idealizations"
+  },
+  "source_tree_sha256": "94e8b2f1c601208f88f60ac54f2aaace24ddcd0368d6f9c3e063b600d1b0bffc",
+  "title": "White Noise and Markov Limits as Delta-Correlation Idealizations Finite Memory, Colored Disturbances, and OU Floors in Modal Triplet Theory",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

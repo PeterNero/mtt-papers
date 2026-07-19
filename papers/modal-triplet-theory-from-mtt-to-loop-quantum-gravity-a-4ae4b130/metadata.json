@@ -1,0 +1,88 @@
+{
+  "abstract": "We derive Loop Quantum Gravity (LQG) from the coherent fixed-point sector of Modal Triplet Theory (MTT). Starting with a 3+1 foliation of the 4D face of the MTT fixed point, we show: (i) the Ashtekar\u2013Barbero connection A^i_a=\\Gamma^i_a+\\gamma K^i_a and densitized triad E^a_i arise canonically from the modal tetrad/spin connection; (ii) the holonomy\u2013flux *-algebra, cylindrical consistency, and the Ashtekar\u2013Lewandowski representation follow from the \\Pi-projected symmetry and yield the LOST uniqueness properties; (iii) the Gauss, diffeomorphism, and Hamiltonian constraints descend from MTT gauge/diffeomorphism invariance and from the fixed-point Hamiltonian, including a Master-constraint form; (iv) area/volume spectra of LQG are recovered with a computed Barbero\u2013Immirzi parameter \\gamma=\\gamma_{\\mathrm{MTT}}(\\Theta) determined by modal overlaps/bottlenecks; and (v) spin\u2013foam dynamics (EPRL/FK) arise from a Holst-like MTT effective action via BF + simplicity constraints, with large-spin Regge asymptotics. The embedding is consistent with the UV-finite, causal perturbative QG sector previously derived from MTT (Stieltjes/Bernstein two-point function and SPT Gaussian damping), and identifies cross-checks linking \\gamma, black-hole entropy, and cosmological loop effects.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v3",
+  "date": "September 19, 2025",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.17162354",
+    "created": "2025-09-19T19:35:52.804113+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.17162355",
+    "files": [
+      {
+        "checksum": "md5:1d4943213fa0d5a6d846ccc66af9e2b7",
+        "content_url": "https://zenodo.org/api/records/17162355/files/Modal_Triplet_Theory__From_MTT_to_Loop_Quantum_Gravity.pdf/content",
+        "key": "Modal_Triplet_Theory__From_MTT_to_Loop_Quantum_Gravity.pdf",
+        "size": 355436
+      }
+    ],
+    "id": "17162355",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2025-09-19",
+    "record_url": "https://zenodo.org/records/17162355",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: From MTT to Loop Quantum Gravity",
+    "updated": "2025-09-19T19:35:53.104977+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "3558359f08042faadbec0a7eb60a32c79a044286cef40abc8cdfeb7086cc5381",
+  "paper_id": "modal-triplet-theory-from-mtt-to-loop-quantum-gravity-a-4ae4b130",
+  "paper_md_sha256": "052f4db8bb3d1fae4d7ce094e24deaa1055715c3c2c306a1af7ecb2ae8e119b2",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 3740,
+      "path": "main.bib",
+      "sha256": "420ea7454da290b4171fc95ba728dc6d518558de90d87c9e08dfeebdbfa243b6"
+    },
+    {
+      "bytes": 21602,
+      "path": "main.tex",
+      "sha256": "3558359f08042faadbec0a7eb60a32c79a044286cef40abc8cdfeb7086cc5381"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Loop_Quantum_Gravity_v3"
+  },
+  "source_tree_sha256": "ce1a2fdcc41aa685b6d69d69e3e589748dd7113bbcaefa0858b7ef7ca2103496",
+  "title": "Modal Triplet Theory: From MTT to Loop Quantum Gravity: A Canonical and Spin\u2013Foam Embedding with Predictive Immirzi Map",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17162354",
+      "created": "2025-09-19T19:35:52.804113+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.17162355",
+      "files": [
+        {
+          "checksum": "md5:1d4943213fa0d5a6d846ccc66af9e2b7",
+          "content_url": "https://zenodo.org/api/records/17162355/files/Modal_Triplet_Theory__From_MTT_to_Loop_Quantum_Gravity.pdf/content",
+          "key": "Modal_Triplet_Theory__From_MTT_to_Loop_Quantum_Gravity.pdf",
+          "size": 355436
+        }
+      ],
+      "id": "17162355",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2025-09-19",
+      "record_url": "https://zenodo.org/records/17162355",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: From MTT to Loop Quantum Gravity",
+      "updated": "2025-09-19T19:35:53.104977+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

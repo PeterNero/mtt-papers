@@ -1,0 +1,53 @@
+{
+  "papers": [
+    {
+      "paper_id": "constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014",
+      "warnings": "[WARNING] Macro '\\*' already defined, ignoring at series.sty line 184 column 1"
+    },
+    {
+      "paper_id": "constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b",
+      "warnings": "[WARNING] Macro '\\*' already defined, ignoring at series.sty line 184 column 1"
+    },
+    {
+      "paper_id": "constructive-mtt-quantum-gravity-iii-infrared-limit-asy-6f8b88d9",
+      "warnings": "[WARNING] Macro '\\*' already defined, ignoring at series.sty line 184 column 1"
+    },
+    {
+      "paper_id": "causal-sets-as-event-selection-shadows-of-coherence-bre-7bca8116",
+      "warnings": "[WARNING] Macro '\\SeriesName' already defined, ignoring at series.sty line 29 column 1\n[WARNING] Macro '\\SeriesShort' already defined, ignoring at series.sty line 30 column 1\n[WARNING] Macro '\\PartRoman' already defined, ignoring at series.sty line 31 column 1\n[WARNING] Macro '\\PartArabic' already defined, ignoring at series.sty line 32 column 1\n[WARNING] Macro '\\PartsInSeries' already defined, ignoring at series.sty line 33 column 1\n[WARNING] Macro '\\seriestagline' already defined, ignoring at series.sty line 35 column 1\n[WARNING] Macro '\\im' already defined, ignoring at series.sty line 90 column 1\n[WARNING] Macro '\\rank' already defined, ignoring at series.sty line 91 column 1\n[WARNING] Macro '\\tr' already defined, ignoring at series.sty line 92 column 1\n[WARNING] Macro '\\divergence' already defined, ignoring at series.sty line 93 column 1\n[WARNING] Macro '\\dist' already defined, ignoring at series.sty line 94 column 1\n[WARNING] Macro '\\supp' already defined, ignoring at series.sty line 95 column 1\n[WARNING] Macro '\\grad' already defined, ignoring at series.sty line 96 column 1\n[WARNING] Macro '\\Hess' already defined, ignoring at series.sty line 97 column 1\n[WARNING] Macro '\\sgn' already defined, ignoring at series.sty line 98 column 1\n[WARNING] Macro '\\Id' already defined, ignoring at series.sty line 100 column 1\n[WARNING] Macro '\\bbR' already defined, ignoring at series.sty line 101 column 1\n[WARNING] Macro '\\bbC' already defined, ignoring at series.sty line 102 column 1\n[WARNING] Macro '\\bbN' already defined, ignoring at series.sty line 103 column 1\n[WARNING] Macro '\\bbZ' already defined, ignoring at series.sty line 104 column 1\n[WARNING] Macro '\\calH' already defined, ignoring at series.sty line 106 column 1\n[WARNING] Macro '\\calB' already defined, ignoring at series.sty line 107 column 1\n[WARNING] Macro '\\calS' already defined, ignoring at series.sty line 108 column 1\n[WARNING] Macro '\\calM' already defined, ignoring at series.sty line 109 column 1\n[WARNING] Macro '\\vb' already defined, ignoring at series.sty line 111 column 1\n[WARNING] Macro '\\norm' already defined, ignoring at series.sty line 112 column 1\n[WARNING] Macro '\\abs' already defined, ignoring at series.sty line 113 column 1\n[WARNING] Macro '\\ip' already defined, ignoring at series.sty line 114 column 1\n[WARNING] Macro '\\dd' already defined, ignoring at series.sty line 115 column 1\n[WARNING] Macro '\\numberthis' already defined, ignoring at series.sty line 119 column 1"
+    },
+    {
+      "paper_id": "coherent-sector-universality-and-controlled-truncation-0ccddc56",
+      "warnings": "[WARNING] Macro '\\*' already defined, ignoring at series.sty line 184 column 1"
+    },
+    {
+      "paper_id": "universality-and-robustness-of-the-coherent-sector-in-m-a64842b3",
+      "warnings": "[WARNING] Macro '\\*' already defined, ignoring at series.sty line 184 column 1"
+    },
+    {
+      "paper_id": "fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce",
+      "warnings": "[WARNING] Macro '\\*' already defined, ignoring at series.sty line 177 column 1"
+    },
+    {
+      "paper_id": "fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534",
+      "warnings": "[WARNING] Macro '\\*' already defined, ignoring at series.sty line 184 column 1"
+    },
+    {
+      "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
+      "warnings": "[WARNING] Macro '\\*' already defined, ignoring at series.sty line 184 column 1"
+    },
+    {
+      "paper_id": "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce",
+      "warnings": "[WARNING] Macro '\\*' already defined, ignoring at series.sty line 184 column 1"
+    },
+    {
+      "paper_id": "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8",
+      "warnings": "[WARNING] Macro '\\*' already defined, ignoring at series.sty line 184 column 1"
+    },
+    {
+      "paper_id": "fixed-points-vi-formal-synthesis-and-physical-interpretations",
+      "warnings": "[WARNING] Macro '\\*' already defined, ignoring at series.sty line 184 column 1"
+    }
+  ],
+  "schema": "mtt.pandoc-warnings.v1"
+}

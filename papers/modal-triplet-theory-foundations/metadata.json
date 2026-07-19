@@ -1,0 +1,91 @@
+{
+  "abstract": "We give a corrected functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle M_{10}\\to Y_4 with compact Riemannian fiber X_6; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and Banach, Schur\u2013Feshbach, projector-stability, and basin-robustness statements are given with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v7",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.16949762",
+    "created": "2026-01-16T11:34:23.723205+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18268125",
+    "files": [
+      {
+        "checksum": "md5:6235edb5fb2cbef5a733dcef71ee7db2",
+        "content_url": "https://zenodo.org/api/records/18268125/files/Modal_Triplet_Theory__Foundation_v6%20(4).pdf/content",
+        "key": "Modal_Triplet_Theory__Foundation_v6 (4).pdf",
+        "size": 317420
+      }
+    ],
+    "id": "18268125",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-16",
+    "record_url": "https://zenodo.org/records/18268125",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: Foundation",
+    "updated": "2026-01-16T11:34:24.315287+00:00",
+    "version": "v6.0"
+  },
+  "main_tex_sha256": "7b7ea991bf6a669385b4cec959641f79c9088b76d1444b581b7aef230f7ab3ab",
+  "paper_id": "modal-triplet-theory-foundations",
+  "paper_md_sha256": "20612ea84a986b0399a2d022e50e4791cc1e369db80741a53e6fc26f317baf0e",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V7_REVISION_AUDIT.md",
+    "revision_evidence_sha256": "9e1162cf8272c018b5f9bb10f8122eb61e32695e00fb5173a1b23edd749ad09a",
+    "selected_revision": true,
+    "superseded_source_path": "3 Core Foundations/_work/Modal_Triplet_Theory__Foundation_v6 (1)"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 23786,
+      "path": "main.tex",
+      "sha256": "7b7ea991bf6a669385b4cec959641f79c9088b76d1444b581b7aef230f7ab3ab"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__Foundation_v7"
+  },
+  "source_tree_sha256": "85d90db523e6458685a9ef6a5eda6084480d858fa9d1de8db5ac7e865473a66c",
+  "title": "Modal Triplet Theory: Foundations",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.16949762",
+      "created": "2026-01-16T11:34:23.723205+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18268125",
+      "files": [
+        {
+          "checksum": "md5:6235edb5fb2cbef5a733dcef71ee7db2",
+          "content_url": "https://zenodo.org/api/records/18268125/files/Modal_Triplet_Theory__Foundation_v6%20(4).pdf/content",
+          "key": "Modal_Triplet_Theory__Foundation_v6 (4).pdf",
+          "size": 317420
+        }
+      ],
+      "id": "18268125",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-16",
+      "record_url": "https://zenodo.org/records/18268125",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: Foundation",
+      "updated": "2026-01-16T11:34:24.315287+00:00",
+      "version": "v6.0"
+    }
+  ]
+}

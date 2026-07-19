@@ -1,0 +1,83 @@
+{
+  "abstract": "We give a first-principles derivation of classical General Relativity (GR) from Modal Triplet Theory (MTT). Starting from the 10-dimensional modal product geometry M^{10}=Y_4\\times B_1\\times B_2\\times B_3, we show that harmonic projection onto the coherent sector and internal pushforward to Y_4 produce an effective, metric-compatible Levi\u2013Civita connection and a four-dimensional action of Einstein\u2013Hilbert type. Under explicit spectral-gap, boundedness, and fixed-point stability hypotheses, the projected Euler\u2013Lagrange equations are exactly the Einstein field equations with matter stress\u2013energy given by the projected modal content. We provide: (i) a variational reduction theorem proving that the internal integration of the 10D action yields S_{\\rm eff}[g,A,\\Phi]=\\frac{1}{16\\pi G_{\\rm eff}}\\int (R-2\\Lambda_{\\rm eff}) \\sqrt{-g}\\,d^4x+S_{\\rm matter} with G_{\\rm eff},\\Lambda_{\\rm eff} determined by internal spectral data; (ii) a Noether/Bianchi identity pushforward establishing \\nabla^\\mu T_{\\mu\\nu}=0; (iii) a geodesic-limit theorem recovering the equivalence principle for projected test bodies; and (iv) the Newtonian and weak-field limits with explicit parameter dictionaries. We state controlled conditions under which beyond-GR corrections (e.g. R^2, scalar-tensor terms, non-metricity) arise from departures from the coherent fixed-point regime. This places GR as the unique, stable, low-frequency, large-scale sector of MTT.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "2026-07-19",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.16950597",
+    "created": "2026-01-16T11:42:07.555185+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18268239",
+    "files": [
+      {
+        "checksum": "md5:35b17e01f900551f369ce1948883b142",
+        "content_url": "https://zenodo.org/api/records/18268239/files/Modal_Triplet_Theory__From_MTT_to_General_Relativity_v2%20(1).pdf/content",
+        "key": "Modal_Triplet_Theory__From_MTT_to_General_Relativity_v2 (1).pdf",
+        "size": 350443
+      }
+    ],
+    "id": "18268239",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-16",
+    "record_url": "https://zenodo.org/records/18268239",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: From MTT to General Relativity",
+    "updated": "2026-01-16T11:42:08.057824+00:00",
+    "version": "v2.0"
+  },
+  "main_tex_sha256": "c015fcec50bdfed8c1a3a8492273edfbcce6209088f5917128d5736c57c9b4a9",
+  "paper_id": "modal-triplet-theory-from-mtt-to-general-relativity",
+  "paper_md_sha256": "711c6a7a91b5838eded15f1e6d85d0c71371d2fb4e510ad8f6001e207325c1c5",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 50271,
+      "path": "main.tex",
+      "sha256": "c015fcec50bdfed8c1a3a8492273edfbcce6209088f5917128d5736c57c9b4a9"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "11 General Relativity & Geometry/_work/Modal_Triplet_Theory__From_MTT_to_General_Relativity_v2"
+  },
+  "source_tree_sha256": "57ffc1f4777b189c81041f32431c450c6239f5a25a18572d689066053b871240",
+  "title": "Modal Triplet Theory: From MTT to General Relativity",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.16950597",
+      "created": "2026-01-16T11:42:07.555185+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18268239",
+      "files": [
+        {
+          "checksum": "md5:35b17e01f900551f369ce1948883b142",
+          "content_url": "https://zenodo.org/api/records/18268239/files/Modal_Triplet_Theory__From_MTT_to_General_Relativity_v2%20(1).pdf/content",
+          "key": "Modal_Triplet_Theory__From_MTT_to_General_Relativity_v2 (1).pdf",
+          "size": 350443
+        }
+      ],
+      "id": "18268239",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-16",
+      "record_url": "https://zenodo.org/records/18268239",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: From MTT to General Relativity",
+      "updated": "2026-01-16T11:42:08.057824+00:00",
+      "version": "v2.0"
+    }
+  ]
+}

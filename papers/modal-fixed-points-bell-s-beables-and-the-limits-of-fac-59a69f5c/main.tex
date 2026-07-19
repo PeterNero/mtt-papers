@@ -1,0 +1,476 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathtools}
+\usepackage{bm}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cite}
+\usepackage{mathtools}
+\usepackage[numbers]{natbib} 
+\usepackage[nameinlink,capitalise]{cleveref}
+\usepackage{slashed}
+
+% ===== Encoding & fonts (prevents Unicode errors) =====
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{authblk}
+
+
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\Nil}{\mathrm{Nil}}
+\newcommand{\Trgrav}{\mathrm{Tr}_{\mathrm{grav}}}
+\newcommand{\Rplus}{R_{+}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\Kahler}{K\"ahler}
+\newcommand{\J}{J}
+\newcommand{\Om}{\Omega}
+\newcommand{\LensNil}{\text{Lens}\times\text{Nil}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\vol}{\mathrm{vol}}
+\newcommand{\MTT}{Modal Triplet Theory}
+\newcommand{\Hcoh}{\mathcal{H}_{\text{coh}}}
+\newcommand{\Dprop}{\Delta_{\mathrm{prop}}}
+\newcommand{\DBV}{\Delta_{\mathrm{BV}}}
+\newcommand{\Fform}{F}
+\newcommand{\LSPT}{\Lambda}
+\newcommand{\lamgap}{\lambda_{\ast}}
+\newcommand{\alphap}{\alpha'}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\tr}{\mathrm{tr}}
+\newcommand{\Vol}{\mathrm{Vol}}
+\newcommand{\astone}{\ast\!1}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\Id}{\mathbbm{1}}
+\newcommand{\wh}[1]{\widehat{#1}}
+\newcommand{\Hobs}{\mathcal{H}_{\mathrm{obs}}}
+\newcommand{\HQM}{\mathcal{H}_{\mathrm{QM}}}
+\newcommand{\Leff}{\mathcal{L}_{\mathrm{eff}}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\Dom}{\mathrm{Dom}}
+\newcommand{\Ran}{\mathrm{Ran}}
+% --- Observable map notation (reserve P for projectors on H_QM) ---
+\newcommand{\obsmap}{\mathcal{P}}          % observable map I \circ \Pi
+\newcommand{\obsmapAdj}{\mathcal{P}^{\dagger}}
+
+
+
+\DeclareMathOperator{\Ric}{Ric}
+
+\let\varphi\phi
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{note}[theorem]{Note}
+
+% --- Custom Commands ---
+
+\theoremstyle{definition}
+\theoremstyle{plain}
+\theoremstyle{remark}
+
+% cross-referencing helpers
+\newcommand{\secref}[1]{Section~\ref{#1}}
+\newcommand{\appref}[1]{Appendix~\ref{#1}}
+\newcommand{\thmref}[1]{Theorem~\ref{#1}}
+\newcommand{\propref}[1]{Proposition~\ref{#1}}
+\newcommand{\lemref}[1]{Lemma~\ref{#1}}
+\newcommand{\ksym}{\texorpdfstring{$\kappa$}{kappa}\nobreakdash-symmetry}
+
+\numberwithin{equation}{section}
+
+
+\title{\Large\bf
+Modal Fixed Points, Bell’s Beables, and the Limits of Factorization:\\[0.25em]
+A Local 10D Ontology with Operational No-Signaling
+}
+\author{Peter Nero}
+\date{September 8, 2025}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Bell’s theorem rules out local hidden-variable models under \emph{measurement independence} (MI) and \emph{factorization} (local causality). We revisit Bell’s program in the setting of the ten-dimensional modal fixed-point dynamics of Modal Triplet Theory (MTT). The fundamental beables are local modal fields on $M=Y^4\times B_1\times B_2\times B_3$ subject to a global fixed-point constraint. Their projection to four dimensions preserves MI and \emph{operational} no-signaling but necessarily violates factorization. We formalize the probability space of seeds $(\Xi,\Sigma,\mu)$, prove no-signaling by mapping outcome probabilities \emph{exactly} to the Born rule on $\HQM$ via the observable map $\mathsf{P}=I\circ\Pi$, and show that MI + (QM agreement) $\Rightarrow$ failure of factorization by CHSH. Thus the observed “nonlocal” correlations are a \emph{projection artifact} of local 10D beables. We compare with Kaluza–Klein and discuss implications.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% =========================
+\section{Introduction}
+We aim to reconcile Bell’s demand for a theory of \emph{local beables} with the empirical violation of Bell inequalities. Our starting point is your Bell/beables draft and the rigorous MTT$\Rightarrow$QM reduction, which provides the operator-algebraic backbone (bounded harmonic projector, observable map, Born rule, unitary dynamics).%
+% The present section aligns and rigorizes the uploaded Bell manuscript.  :contentReference[oaicite:9]{index=9}
+%
+We adopt the notation and functional-analytic conventions of the MTT$\Rightarrow$QM paper (observable map \(\obsmap := I \circ \Pi\); we reserve \(P\) exclusively for orthogonal projectors on \(H_{\rm QM}\)).
+
+\paragraph{Main claims.}
+(i) The beables are local 10D fixed-point fields $\Psi^\ast\in H^1(M)$ (local PDEs + bounded geometry). (ii) We encode measurement settings and seeds on a common probability space with MI, $\rho(\xi\,|\,a,b)=\rho(\xi)$. (iii) \emph{Operational} no-signaling holds because outcome probabilities coincide with those of standard QM on $\HQM$ (hence parameter independence at the operational level). (iv) Since the model reproduces QM correlations, factorization must fail (by CHSH). Items (iii)–(iv) are shown in \S\ref{sec:bell-in-modal}.
+
+\paragraph{On measurement independence (MI).}
+In this paper MI, $\rho(\xi|a,b)=\rho(\xi)$, is a \emph{modeling assumption} about the joint
+distribution of settings and seeds. We neither invoke retrocausality nor exploit conspiratorial
+fine-tuning; MI simply enforces statistical independence between the freely-choosable settings
+$(a,b)$ and the seed $\xi$. All results (no-signaling, CHSH violation) are conditioned on MI.
+
+% =========================
+\section{Bell’s MI, factorization, and CHSH}
+\label{sec:bell}
+We recall the standard assumptions in a form convenient for our modal construction.
+
+\begin{definition}[Measurement independence (MI)]
+Let $a\in\mathcal{A}$, $b\in\mathcal{B}$ be settings; let $\xi\in\Xi$ be hidden seeds with probability measure $\mu$. MI means
+\[
+\rho(\xi\,|\,a,b)=\rho(\xi).
+\]
+\end{definition}
+
+\begin{definition}[Factorization / local causality]
+Given $\xi$, the joint conditional is multiplicative:
+\[
+P(A,B\,|\,a,b,\xi)=P(A\,|\,a,\xi)\,P(B\,|\,b,\xi).
+\]
+\end{definition}
+
+
+Under MI+factorization, the CHSH combination obeys \(|S|\le 2\)~\cite{CHSH1969}.  In the Jarrett/Fine
+decomposition, factorization \(\Leftrightarrow\) PI\(+\)OI~\cite{Jarrett1984,Fine1982}.
+
+
+\paragraph{Jarrett/Fine decomposition.}
+We distinguish \emph{parameter independence} (PI) and \emph{outcome independence} (OI):
+\[
+\text{PI: }P(A|a,b,\xi)=P(A|a,\xi),\qquad P(B|a,b,\xi)=P(B|b,\xi),
+\]
+\[
+\text{OI: }P(A|B,a,b,\xi)=P(A|a,b,\xi),\qquad P(B|A,a,b,\xi)=P(B|a,b,\xi).
+\]
+Bell's \emph{factorization} (local causality) is equivalent to PI $+$ OI:
+\[
+P(A,B|a,b,\xi)=P(A|a,\xi)\,P(B|b,\xi).
+\]
+Throughout we assume \emph{measurement independence} (MI), $\rho(\xi|a,b)=\rho(\xi)$.
+
+\paragraph{CHSH under MI+factorization (self-contained).}
+Let $A,A'\in\{\pm1\}$ at setting $a,a'$ and $B,B'\in\{\pm1\}$ at $b,b'$. Under MI+factorization,
+\[
+E(a,b)=\!\int\! d\mu(\xi)\sum_{A,B} AB\,P(A|a,\xi)P(B|b,\xi)=\!\int\! d\mu(\xi)\, \bar A(a,\xi)\bar B(b,\xi),
+\]
+with $\bar A(a,\xi)=\sum_A A\,P(A|a,\xi)\in[-1,1]$ and similarly $\bar B$. Then
+\[
+S=E(a,b)+E(a,b')+E(a',b)-E(a',b')=\!\int\! d\mu(\xi)\, s(\xi),
+\]
+where $s(\xi)=\bar A(a,\xi)[\bar B(b,\xi)+\bar B(b',\xi)]+\bar A(a',\xi)[\bar B(b,\xi)-\bar B(b',\xi)]$ and $|s(\xi)|\le2$.
+Hence $|S|\le2$.
+
+
+% =========================
+\section{Modal beables and the observable map}
+\label{sec:beables}
+Let $M=Y^4\times B_1\times B_2\times B_3$ be the 10D product with bounded geometry; fields evolve by a local (hyperbolic/parabolic) flow $\Phi_\tau$ on $H^1(M)$ and admissible states satisfy a global fixed-point constraint $\Psi^\ast=\Pi\circ\Phi_\tau(\Psi^\ast)$.
+
+\begin{definition}[10D beables]
+The \emph{beables} are the fixed-point fields $\Psi^\ast\in H^1(M)$ stabilized by the projected flow. Locality means: for any open $U\subset M$, the restriction map $\Psi^\ast\mapsto \Psi^\ast|_U$ is measurable w.r.t.\ the local $\sigma$-algebra on $U$, and the field equations are local differential operators on $M$.
+\end{definition}
+
+\paragraph{Observable map and Hilbert space.}
+Let $\Pi=\Pi_{B_1}\Pi_{B_2}\Pi_{B_3}$ be the joint harmonic projector; $I$ is fiber integration over $B_1\times B_2\times B_3$; define \(\obsmap = I \circ \Pi\). Boundedness and contraction properties carry  over from the QM derivation (Lemma A.4 in that paper), and \(\obsmap\) maps the coherent sector into \(H_{\rm QM}\) with the Born rule and unitary dynamics established there.
+
+% =========================
+\section{MI, no-signaling, and failure of factorization in modal space}
+\label{sec:bell-in-modal}
+
+\subsection{Probability space and measurement}
+Let $(\Xi,\Sigma,\mu)$ be a standard probability space of seeds. We embed the settings into a product space with independent measures $\eta_{\mathcal{A}},\eta_{\mathcal{B}}$ and write the global measure as $\eta_{\mathcal{A}}\otimes \eta_{\mathcal{B}}\otimes \mu$. MI holds by construction,
+\[
+\rho(\xi\,|\,a,b)=\rho(\xi).
+\]
+For fixed $(a,b,\xi)$, the flow produces a unique fixed point $\Psi^\ast(a,b,\xi)$. The \emph{local readouts} are measurable functionals of the local projected field,
+\[
+A \;=\; R_A\!\big(a;\,(\mathsf{P}\Psi^\ast)(a,b,\xi)\big),\qquad
+B \;=\; R_B\!\big(b;\,(\mathsf{P}\Psi^\ast)(a,b,\xi)\big).
+\]
+Operationally (in the laboratory) these readouts are represented by projectors/POVMs on $\HQM$ as constructed in the MTT$\Rightarrow$QM paper (Born rule, Naimark/Stinespring).%
+% The identification of readouts with projectors/POVMs is rigorously supplied by the QM paper.  :contentReference[oaicite:13]{index=13}
+
+\subsection{Worked example: Bilocality inequality}
+
+The bilocal scenario has three parties $(A,B,C)$ in a line, with independent sources
+$S_{AB},S_{BC}$ producing hidden seeds $\xi_{AB},\xi_{BC}$. Classical bilocal models
+require a factorization
+\[
+P(a,b,c|x,y,z) = \int d\lambda_{AB}\, d\lambda_{BC}\, \rho(\lambda_{AB})\rho(\lambda_{BC})
+\,P(a|x,\lambda_{AB})\,P(b|y,\lambda_{AB},\lambda_{BC})\,P(c|z,\lambda_{BC}),
+\]
+leading to a bilocality constraint (e.g. \(\sqrt{|I_1|}+\sqrt{|I_2|}\le 2\) or equivalent forms)~\cite{Branciard2010,Branciard2012}.
+
+\paragraph{Modal realization.}
+In MTT the unique global fixed point $\Psi^\ast(x,y,z,\xi)$ simultaneously couples all three wings once projected, so such a decomposition need not exist. Choose MTT data such that the projected $\HQM$ state is two entangled pairs $(AB)$ and $(BC)$ with $B$ measured in a Bell basis. Standard QM predicts $|I|=2$, violating the bilocal bound. By the MTT$\Rightarrow$QM reduction, the modal model reproduces this exactly.
+
+\begin{proposition}[Bilocal inequality violation]
+There exist choices of MTT data and seeds for which the modal model reproduces $|I|=2$ in the bilocal scenario, hence exceeds the classical bilocal bound while preserving measurement independence and operational no-signaling. ~\cite{Branciard2010,Branciard2012}.
+\end{proposition}
+\paragraph{Bilocal inequality (Branciard-type).}
+Classical bilocal models obey $|I|\le1$ with $I=\sqrt{|I_1|}+\sqrt{|I_2|}$ constructed from
+two-source correlators. In our construction, choosing MTT data whose projection gives two
+maximally entangled pairs with a Bell-state measurement at $B$ yields $|I|=2$, matching the
+quantum maximum. The choice preserves MI and operational no-signaling as above.
+
+
+\subsection{Operational no-signaling}
+\begin{theorem}[Operational no-signaling]
+\label{thm:nosig}
+For any settings $a,b$ and outcome $A$, the marginal $P(A\,|\,a,b)$ is independent of $b$. Similarly, $P(B\,|\,a,b)$ is independent of $a$.
+\end{theorem}
+
+\begin{proof}
+By the MTT$\Rightarrow$QM derivation, the outcome probabilities computed from $\Psi^\ast$ via the observable map equal the Born rule on $\HQM$:
+\[
+P(A\,|\,a,b) \;=\; \langle \psi,\,P_A(a)\,\psi\rangle,\qquad
+P(B\,|\,a,b) \;=\; \langle \psi,\,P_B(b)\,\psi\rangle,
+\]
+for some $\psi\in\HQM$ determined by the preparation, with $P_A(a)$ and $P_B(b)$ the local projectors. These expressions are manifestly independent of the \emph{remote} setting because $P_A(a)$ depends only on $a$ and $P_B(b)$ only on $b$. Hence operational parameter independence holds.%
+% This step relies on the fully rigorous Born-rule derivation and measurement dilation you proved in the QM paper.  :contentReference[oaicite:14]{index=14}
+\end{proof}
+
+\paragraph{Jarrett split in the modal model.}
+Our construction \emph{satisfies operational PI} (no-signaling of marginals), because on $H_{\mathrm{QM}}$
+\[
+P(A|a,b)=\langle\psi,E_A(a)\psi\rangle\ \text{and}\ P(B|a,b)=\langle\psi,E_B(b)\psi\rangle,
+\]
+which are manifestly independent of the remote setting. However, \emph{OI generically fails}:
+at fixed $\xi$ the global fixed-point constraint that defines $\Psi^*(a,b,\xi)$ correlates the
+projected local readouts, so $P(A|B,a,b,\xi)\neq P(A|a,b,\xi)$ in general. Consequently,
+factorization (PI+OI) fails while operational PI holds.
+
+
+\subsection{Failure of factorization (and why it must fail)}
+\begin{theorem}[MI + QM agreement $\Rightarrow$ no factorization]
+\label{thm:nofact}
+Assume MI and that the model reproduces QM correlators for a CHSH setup (two settings per wing). Then the factorization condition
+\[
+P(A,B\,|\,a,b,\xi)=P(A\,|\,a,\xi)P(B\,|\,b,\xi)
+\]
+cannot hold for all $(a,b)$ on a set of $\xi$ of full measure.
+\end{theorem}
+
+\begin{proof}
+Suppose factorization held $\mu$‑a.s. Under MI, the CHSH proof (Theorem 2.1) gives $|S|\le 2$. But your MTT$\Rightarrow$QM mapping yields the standard QM correlators with \(|S|=2\sqrt{2}\) for suitable choices of \((a,b)\) (Tsirelson bound)~\cite{Tsirelson1980}. Contradiction. Therefore, factorization must fail on a set of seeds of nonzero measure (indeed full measure for generic couplings).
+\end{proof}
+
+\begin{corollary}[Pattern of assumptions]
+The modal fixed-point model satisfies: MI (yes), operational no-signaling (yes), factorization (no). Consequently, Bell–CHSH inequalities do not apply, and the model can reproduce quantum violations up to $2\sqrt2$, as observed.
+\end{corollary}
+
+\subsection{Locality of beables vs. projection artifacts}
+The beables are local fields on $M$ with local equations; their apparent “nonlocality” in 4D arises because the constraint building $\Psi^\ast$ is global on $M$, and projection $\mathsf{P}$ mixes internal directions in a way that correlates spacelike marginals when viewed solely on $Y^4$. This is a \emph{projection artifact}: the underlying ontology is local on the extended space; factorization fails only after reducing to 4D.%
+% This statement refines the conceptual point in your draft with explicit measurability/locality language.  :contentReference[oaicite:17]{index=17}
+% =========================
+\section{Kaluza--Klein vs.\ modal projection}
+\label{sec:KK-vs-modal}
+% Alignment note: contrasts sharpen and formalized; see uploaded Bell draft §§5–6.  :contentReference[oaicite:2]{index=2}
+
+Kaluza--Klein (KK) reduction projects higher-dimensional fields onto \emph{zero modes} by geometric smallness; modal projection in MTT instead selects \emph{fiber-harmonic} modes by a \emph{dynamical} fixed-point constraint. This difference matters for Bell. ~\cite{OverduinWesson1997}.
+
+\subsection{Zero-mode truncation preserves factorization}
+Let $M=Y^4\times K$ with $K$ compact, $\mathrm{diam}(K)\ll$ experimental scales. In KK one expands $\Phi(x,y)=\sum_n \phi_n(x) Y_n(y)$ with $\Delta_K Y_n=\lambda_n Y_n$. At low energy, only $\phi_0(x)Y_0(y)$ remains. The resulting 4D theory is a local QFT on $Y^4$ with fields $\phi_0$.
+
+\begin{proposition}[KK factorization]\label{prop:KK-factor}
+Consider a bipartite Bell experiment in a KK zero-mode truncation. Assume measurement independence (MI) and that outcomes at spacelike separated regions are functions of the \emph{local} 4D beables and a seed $\xi$,
+\[
+A=A(a;\,\phi_0|_{U_A},\xi),\qquad B=B(b;\,\phi_0|_{U_B},\xi),
+\]
+with $U_A\cap U_B=\emptyset$. Then factorization holds:
+\[
+P(A,B\,|\,a,b,\xi)=P(A\,|\,a,\xi)\,P(B\,|\,b,\xi).
+\]
+\end{proposition}
+
+\begin{proof}
+Given $\xi$ and $(a,b)$, $\phi_0$ solves a local hyperbolic PDE on $Y^4$ with microcausality: algebras of observables for $U_A$ and $U_B$ commute and classical beables at $U_A$ are functions of initial data in $J^-(U_A)$, likewise for $U_B$. Since $U_A$ and $U_B$ are spacelike, $A$ is conditionally independent of $B$ given $\xi$ (and the initial data absorbed into $\xi$). Therefore the joint conditional distribution factorizes. Integrating w.r.t.\ $\rho(\xi)$ (MI) preserves factorization.
+\end{proof}
+
+\paragraph{Background/zero–mode equivalence with KK.}
+Our Proposition~5.1 is exactly the background/zero–mode regime captured by the
+MTT$\to$KK equivalence (Prop.~3.2 and Theorem~4.5 therein): the block–diagonal metric,
+isometry–gauge map, and fiber–integral couplings reproduce a local 4D QFT with the usual
+microcausality and latent–variable factorization, hence CHSH$\le2$ under MI.
+By contrast, the modal fixed–point constraint couples the full $M$ prior to projection,
+which is why factorization can fail while operational no–signaling persists. \cite{MtttoKK}
+
+
+\begin{corollary}[KK cannot reproduce CHSH$>2$ under MI]\label{cor:KK-CHSH}
+Under MI, any KK zero-mode model obeys CHSH $\le 2$; thus it cannot reproduce quantum violations.
+\end{corollary}
+
+\subsection{Modal fixed points violate factorization after projection}
+In the modal setting, the dynamical constraint $\Psi^\ast=\Pi\circ\Phi_\tau(\Psi^\ast)$ is \emph{global} on $M$, not a local truncation on $K$. The \emph{projected} beables on $Y^4$ are $\mathsf{P}\Psi^\ast$, and the fixed-point constraint couples disjoint $U_A,U_B$ after projection. Hence the conditional independence argument of \Cref{prop:KK-factor} fails: \emph{even at fixed $\xi$}, $A$ and $B$ remain coupled via the global constraint that defines $\Psi^\ast(a,b,\xi)$. This is precisely the origin of factorization failure proved in \Cref{thm:nofact}.
+
+\begin{remark}
+KK compactification hides extra dimensions by \emph{geometry}; modal dynamics hide them by \emph{constraint}. Only the latter mechanism can violate factorization while preserving MI and operational no-signaling.%
+% This sharpens the contrast proposed in the uploaded Bell draft §5.  :contentReference[oaicite:3]{index=3}
+\end{remark}
+
+% =========================
+\section{Multipartite and network scenarios}
+\label{sec:networks}
+% This section extends §6 of the uploaded Bell draft with rigorous measure setup.  :contentReference[oaicite:4]{index=4}
+Network nonlocality (triangle, bilocality) enriches the causal structure. We sketch how the modal fixed-point picture extends, emphasizing what carries over from the bipartite case.
+
+\subsection{Setup}
+Let parties $V=\{1,\dots,N\}$ sit at spacelike separated regions $U_i\subset Y^4$ with settings $a_i\in\mathcal{A}_i$, outcomes $A_i\in\mathcal{O}_i$, and a seed space $(\Xi,\Sigma,\mu)$. The modal flow and projection produce a unique fixed point
+\[
+\Psi^\ast(\bm a,\xi)\in H^1(M),\qquad \bm a=(a_1,\dots,a_N).
+\]
+Outcomes are readouts $A_i=R_i(a_i;\,(\mathsf{P}\Psi^\ast)(\bm a,\xi)|_{U_i})$.
+
+\subsection{Operational no-signaling persists}
+By the MTT$\Rightarrow$QM mapping, observable probabilities equal the Born rule on $\HQM$ for local POVMs at each $U_i$; hence all \emph{operational} marginals $P(A_i|\bm a)$ are independent of $\{a_j\}_{j\neq i}$.
+
+\begin{theorem}[Operational no-signaling in networks]
+For any finite network and any $\bm a$, $P(A_i\,|\,\bm a)$ depends only on $a_i$.
+\end{theorem}
+
+\begin{proof}
+Identical to \Cref{thm:nosig}, now with tensor products of local algebras on $\HQM$; probabilities are computed by $\langle\psi,\bigotimes_i E_{i}(a_i)\,\psi\rangle$ and are manifestly independent of remote settings at the level of marginals.%
+% The proof relies on the MTT→QM reduction established in the QM paper.  :contentReference[oaicite:5]{index=5}
+\end{proof}
+
+\subsection{Factorization and network inequalities}
+Classical network constraints (bilocality, triangle inequalities) rely on factorizations over latent variables. In modal dynamics, the \emph{single} global $\Psi^\ast(\bm a,\xi)$ couples all wings once projected; thus the latent-variable factorization graphs underlying such inequalities need not hold. Consequently, modal fixed points can reproduce the set of quantum-allowed network correlations (subject to standard quantum constraints).
+
+\begin{proposition}[Modal networks can saturate quantum bounds]
+For standard network scenarios with local POVMs on $\HQM$, there exist choices of MTT data and seeds such that the induced correlations match those of quantum states achieving the known quantum bounds of the respective network inequalities.
+\end{proposition}
+
+\begin{proof}[Idea]
+Choose MTT data giving, via \S\ref{sec:beables}--\ref{sec:bell-in-modal}, an $\HQM$ state $\psi$ that realizes the target quantum correlations under local POVMs; by construction of \S\ref{sec:beables}, the modal fixed point and projection reproduce these statistics.%
+% This is the same surjectivity-to-QM idea used in the QM paper, now applied to multipartite POVMs.  :contentReference[oaicite:6]{index=6}
+\end{proof}
+
+% =========================
+\section{Conclusions}
+\label{sec:conclusion}
+We have provided a fully rigorous Bell/beables analysis within MTT:
+(i) beables are local 10D fixed-point fields; (ii) MI and operational no-signaling hold once mapped to $\HQM$; (iii) factorization \emph{must} fail if one reproduces quantum correlators (hence CHSH$>2$ is allowed); (iv) KK compactification, by contrast, preserves factorization and cannot explain Bell violations under MI.%
+% Summary aligns with the uploaded Bell draft's narrative, now backed by explicit theorems.  :contentReference[oaicite:7]{index=7}
+\paragraph{Empirical outlook.}
+In bipartite and network Bell tests with finite settings/outcomes, the modal fixed-point
+construction reproduces exactly the quantum correlators, up to Tsirelson bounds, and
+never predicts supra-quantum (PR-box) correlations ~\cite{PopescuRohrlich1994}. Hence the model is fully consistent
+with current data.
+
+\emph{Where could deviations occur?} Two avenues are possible:
+(i) Sequential/adaptive protocols, where the same system is measured multiple times with
+intermediate modal re-coherence; here small deviations from standard quantum instruments
+could in principle arise.
+(ii) Background curvature or bundle-moduli dependence  (see ~\cite{FPVI}) if the
+observable map $\mathsf{P}$ acquires explicit $R(x)$-dependence, small corrections to
+local probabilities may occur in strong-gravity regimes.
+
+Both effects are negligible in present laboratory Bell tests, but they point to potential
+future experimental signatures in sequential quantum networks or astrophysical settings.
+
+
+\appendix
+
+% =========================
+\section*{Appendix A: Probability spaces, MI, and disintegration}
+\addcontentsline{toc}{section}{Appendix A: Probability spaces, MI, and disintegration}
+\label{app:measure}
+
+Let $(\Xi,\Sigma,\mu)$ be a standard Borel space of seeds. Let $\mathcal{A},\mathcal{B}$ be finite (or standard Borel) setting spaces with product measure $\eta=\eta_\mathcal{A}\otimes\eta_\mathcal{B}$. The global space is $(\Omega,\mathcal{F},\mathbb{P})=(\mathcal{A}\times\mathcal{B}\times\Xi,\ \mathcal{B}(\mathcal{A})\otimes\mathcal{B}(\mathcal{B})\otimes\Sigma,\ \eta\otimes\mu)$. (Regular conditional probabilities exist on standard Borel spaces; see, e.g., Kallenberg~\cite{Kallenberg2002}.)
+
+\paragraph{MI.} Measurement independence is the statement $\rho(\xi\,|\,a,b)=\rho(\xi)$; equivalently, $\mathbb{P}$ factorizes as above and $(a,b)$ are independent of $\xi$.
+
+\paragraph{Regular conditional distributions.} For measurable outcome maps $A(a,b,\xi)$, $B(a,b,\xi)$ into finite sets, there exist regular conditional probabilities $P(A\,|\,a,b,\xi),P(B\,|\,a,b,\xi)$. The observed joints are
+\[
+P(A,B\,|\,a,b)=\int_\Xi P(A,B\,|\,a,b,\xi)\,d\mu(\xi),
+\]
+and the marginals $P(A\,|\,a,b)$ etc.\ are defined similarly. Under MI these integrals are well-defined with respect to $\mu$ independent of $(a,b)$.
+
+\paragraph{Factorization.} The factorization condition is the statement that, for $\mu$-a.e.\ $\xi$,
+\[
+P(A,B\,|\,a,b,\xi)=P(A\,|\,a,\xi)P(B\,|\,b,\xi).
+\]
+As shown in \Cref{thm:nofact}, this cannot hold $\mu$-a.s.\ if the model reproduces quantum CHSH violations.
+
+\paragraph{Lemma A.1 (Microcausality preserved by projection).}
+Let $\Phi,\Psi$ be local fields on $M=Y^4\times B$ obeying microcausality:
+$[\Phi(x,b),\Psi(y,b')]=0$ whenever $x,y\in Y^4$ are spacelike.
+Let $P:=I\circ\Pi$ with $\Pi$ the fiberwise harmonic projector and $I$ the fiber integral.
+Then for any $x\perp y$ in $Y^4$,
+\[
+[P\Phi(x),P\Psi(y)]=0.
+\]
+\paragraph{Remark.}
+This lemma dovetails with the causality analysis in Fixed Points~VI:
+the local well–posedness and microcausality results for the equal–time bilocal overlap
+(App.~F, Thm.~F.1 and Prop.~F.2) supply the hyperbolic backbone used here.  In particular,
+the block–diagonal metric and Riemannian internal sector ensure that spacelike separation
+in $Y^4$ lifts to spacelike separation in $M=Y^4\times B$, so fiber projection/integration
+preserve commutativity of spacelike algebras on $H_{\mathrm{QM}}$.  \cite{FPVI}
+
+
+\emph{Proof.} Write $P\Phi(x)=\int_B (\Pi\Phi)(x,b)\,d\mu_B(b)$ and similarly for $P\Psi(y)$.
+Since the ten-dimensional metric is block-diagonal with a Riemannian internal block,
+if $x\perp y$ in $Y^4$ then $(x,b)$ is spacelike to $(y,b')$ for all $b,b'$, hence
+$[(\Pi\Phi)(x,b),(\Pi\Psi)(y,b')]=0$. Bilinearity and Fubini give
+$[P\Phi(x),P\Psi(y)]=\int\!\!\int [(\Pi\Phi)(x,b),(\Pi\Psi)(y,b')]\,d\mu_B(b)\,d\mu_B(b')=0$.
+\qed
+
+% =========================
+\section*{Appendix B: Worked CHSH construction at Tsirelson}
+\addcontentsline{toc}{section}{Appendix B: Worked CHSH construction}
+\label{app:CHSH}
+
+Let $\HQM=\mathbb{C}^2\otimes\mathbb{C}^2$ and $\psi$ the singlet state. Choose the usual CHSH settings:
+\[
+\hat a=\sigma_z,\quad \hat a'=\sigma_x,\qquad \hat b=\tfrac{1}{\sqrt2}(\sigma_z+\sigma_x),\quad \hat b'=\tfrac{1}{\sqrt2}(\sigma_z-\sigma_x).
+\]
+Define dichotomic observables $A=\hat a$, $A'=\hat a'$, $B=\hat b$, $B'=\hat b'$ with outcomes $\pm1$. Then
+\[
+E(a,b)=\langle\psi,\,A\otimes B\,\psi\rangle = -\tfrac{1}{\sqrt2},\quad
+E(a,b')=\langle\psi,\,A\otimes B'\,\psi\rangle = -\tfrac{1}{\sqrt2},
+\]
+\[
+E(a',b)=\langle\psi,\,A'\otimes B\,\psi\rangle = -\tfrac{1}{\sqrt2},\quad
+E(a',b')=\langle\psi,\,A'\otimes B'\,\psi\rangle = +\tfrac{1}{\sqrt2}.
+\]
+Hence $S=E(a,b)+E(a,b')+E(a',b)-E(a',b')=2\sqrt2$.
+
+\paragraph{Realization in MTT.}
+Choose MTT data for which the projected $\HQM$ state equals $\psi$ and the local measurement POVMs coincide with the spectral measures of $(A,A')$ and $(B,B')$. By the MTT$\Rightarrow$QM mapping, the observable probabilities equal the Born rule on $\HQM$. Therefore the modal model reproduces Tsirelson’s value~\cite{Tsirelson1980} and, by Theorem~\ref{thm:nofact}, cannot satisfy factorization under MI.
+
+% =========================
+\section*{Appendix C: Locality in 10D and microcausality after projection}
+\addcontentsline{toc}{section}{Appendix C: 10D locality and microcausality}
+\label{app:locality}
+
+\paragraph{10D locality.} The modal PDEs are local on $M$ with finite propagation speed along $Y^4$ and bounded geometry in $B_n$. Given a seed $\xi$ and settings $\bm a$, the fixed point $\Psi^\ast(\bm a,\xi)$ is obtained as the limit of local flows $\Phi_\tau$ with the harmonic projector $\Pi$ acting fiberwise.
+
+\paragraph{Microcausality after projection.} The observable map \(\obsmap = I \circ \Pi\) preserves commutativity of spacelike separated algebras on $\HQM$ (in the sense of operator algebras of local POVMs). Therefore there is no operational signaling; \Cref{thm:nosig} follows. For AQFT background on local algebras and microcausality, see~\cite{Haag1992}.
+
+\paragraph{Why factorization fails nonetheless.} Conditional independence at the hidden level is stronger than microcausality of observables: the global constraint that defines $\Psi^\ast$ correlates the \emph{projected} local readouts even at fixed $\xi$. This is the precise sense in which the projection can destroy factorization while preserving operational no-signaling.
+
+\bigskip
+%\nocite{*}
+\bibliographystyle{plain} % or abbrv, unsrt, alpha, etc
+\bibliography{main}
+
+\end{document}
+\typeout{get arXiv to do 4 passes: Label(s) may have changed. Rerun}

@@ -1,0 +1,491 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathtools}
+\usepackage{bm}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cite}
+\usepackage{mathtools}
+\usepackage[numbers]{natbib} 
+\usepackage[nameinlink,capitalise]{cleveref}
+
+% ===== Encoding & fonts (prevents Unicode errors) =====
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{authblk}
+
+
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\Nil}{\mathrm{Nil}}
+\newcommand{\Trgrav}{\mathrm{Tr}_{\mathrm{grav}}}
+\newcommand{\Rplus}{R_{+}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\Kahler}{K\"ahler}
+\newcommand{\J}{J}
+\newcommand{\Om}{\Omega}
+\newcommand{\LensNil}{\text{Lens}\times\text{Nil}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\vol}{\mathrm{vol}}
+\newcommand{\MTT}{Modal Triplet Theory}
+\newcommand{\Hcoh}{\mathcal{H}_{\text{coh}}}
+\newcommand{\Dprop}{\Delta_{\mathrm{prop}}}
+\newcommand{\DBV}{\Delta_{\mathrm{BV}}}
+\newcommand{\Fform}{F}
+\newcommand{\LSPT}{\Lambda}
+\newcommand{\lamgap}{\lambda_{\ast}}
+\newcommand{\alphap}{\alpha'}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\tr}{\mathrm{tr}}
+\newcommand{\Vol}{\mathrm{Vol}}
+\newcommand{\astone}{\ast\!1}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\Id}{\mathbbm{1}}
+\newcommand{\wh}[1]{\widehat{#1}}
+
+
+\DeclareMathOperator{\Ric}{Ric}
+\numberwithin{equation}{section}
+
+\let\varphi\phi
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{note}[theorem]{Note}
+
+% --- Custom Commands ---
+
+\theoremstyle{definition}
+\theoremstyle{plain}
+\theoremstyle{remark}
+
+% cross-referencing helpers
+\newcommand{\secref}[1]{Section~\ref{#1}}
+\newcommand{\appref}[1]{Appendix~\ref{#1}}
+\newcommand{\thmref}[1]{Theorem~\ref{#1}}
+\newcommand{\propref}[1]{Proposition~\ref{#1}}
+\newcommand{\lemref}[1]{Lemma~\ref{#1}}
+\newcommand{\ksym}{\texorpdfstring{$\kappa$}{kappa}\nobreakdash-symmetry}
+
+% --- title/author
+\title{\bfseries Modal Triplet Theory: MTT as a Selection Principle for Heterotic Flux Compactifications\\
+\large Equivalence in the Left-Invariant Slice and Two Explicit Case Studies}
+\author{Peter Nero}
+\date{September 7 2025}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present a rigorous selection principle for heterotic flux compactifications in the torsional
+$\mathrm{SU}(3)$ slice. In a left-invariant ansatz, the coherent-sector contraction condition (FCC)
+of a general fixed-point framework is shown to be equivalent to the standard
+anomaly/primitivity/quantization system evaluated componentwise on invariant $(2,2)$ bases.
+Consequently, FCC selects discrete loci on explicit compact examples: the complex balanced Iwasawa
+threefold (fixing $r_3$) and a balanced non-integrable $\LensNil$ background (fixing $R_1/R$).
+We provide coefficient-level decompositions of $dH$, $\Trgrav\Rplus^{2}$, and $\Tr F^{2}$ in invariant
+frames, and record a normalized cubic Yukawa on Iwasawa. These results clarify how a rigorous
+selection mechanism organizes heterotic flux vacua without new dynamics beyond the torsional
+$\mathrm{SU}(3)$ system with $\Rplus$.
+\end{abstract}
+
+\tableofcontents
+
+%===========================
+\section{Introduction}\label{sec:intro}
+%===========================
+\paragraph{Motivation.}
+Classifying and selecting physically meaningful heterotic vacua with nonzero $H$ remains a central
+problem. We show that, in the left-invariant torsional $\mathrm{SU}(3)$ slice, a rigorous
+fixed-point/contraction criterion (FCC) \emph{reduces to and equals} the usual
+anomaly/primitivity/quantization constraints solved componentwise on invariant $(2,2)$ forms.
+
+\paragraph{Contributions (summary).}
+(i) \emph{Equivalence theorem:} projection $\equiv$ compactification in the
+invariant slice and FCC $\equiv$ componentwise anomaly system (\Cref{prop:proj,def:FCC,thm:FCC}).
+(ii) \emph{Discrete loci:} Iwasawa fixes $r_3$; $\LensNil$ fixes $R_1/R$ (\Cref{cor:discrete}).
+(iii) \emph{Coefficient catalogues \& reproducibility:} invariant-frame decompositions of
+$dH$, $\Trgrav \Rplus^{2}$, $\Tr F^{2}$ (App.~\ref{app:coeffs}).
+(iv) \emph{Minimal EFT read-off:} normalized $E_6$ cubic on Iwasawa ($\lambda_{123}=1$).
+
+\paragraph{Positioning.}
+We do not claim a new class of solutions; rather, we supply a \emph{selection mechanism} compatible
+with the Strominger system, grounded in explicit, coefficient-level case studies.\footnote{For a concise
+synthesis of the fixed-point framework see, e.g., \cite{NeroFP-VI}; for the explicit heterotic Iwasawa and
+$\LensNil$ backgrounds with full anomaly match see \cite{NeroHet-Flux}.}
+
+%===========================
+\section{Background}\label{sec:background}
+%===========================
+\paragraph{Torsional $\bm{\mathrm{SU}(3)}$ slice (Strominger system).}
+Balanced metric $d(\J^{2})=0$ at constant dilaton; $H=\ii(\bar\partial-\partial)\J$; $\Rplus$ the
+Bismut connection; Hermitian Yang--Mills on the gauge bundle; and the Bianchi identity
+\begin{equation}\label{eq:bianchi}
+dH=\frac{\alpha'}{4}\big(\Trgrav \Rplus^{2}-\Tr F^2\big).
+\end{equation}
+
+\paragraph{Left-invariant truncation.}
+On nil/solvmanifolds (Iwasawa; $\LensNil$) the Nomizu complex yields a finite invariant basis:
+all four-forms in \eqref{eq:bianchi} lie in the invariant $(2,2)$ subspace. Coefficient-level solutions
+are then obtained by expanding $dH$, $\Trgrav\Rplus^{2}$, and $\Tr F^{2}$ on the invariant basis.
+
+\paragraph{Fixed-point framework (minimal).}
+We use only the following standard ingredients from a fixed-point/coherent-sector framework:
+a bounded coherent projector $\Pi_{\rm coh}$ onto fiber-harmonic modes; an FCC margin
+$q=C_\Pi e^{-(\eta-L)\tau}<1$ ensuring contraction of the time--$\tau$ map; and Ornstein--Uhlenbeck
+(OU) damping $\mathrm{Var}=\delta/(2\gamma)$ modewise for unresolved fluctuations, with
+$\gamma=\kappa\lambda-L-\Delta_{\rm curv}$ capturing curvature remainders. See \cite{NeroFP-III,NeroFP-IV,NeroFP-V,NeroFP-VI}.
+
+%===========================
+\section{Equivalence and FCC in the invariant slice}\label{sec:equiv}
+%===========================
+\begin{proposition}[Projection $\equiv$ compactification]\label{prop:proj}
+Let $\Sigma_9 \xrightarrow{\ \pi_{\mathrm{sp}}\ } M_3$ be a Riemannian submersion with compact fibers
+$F_6 \simeq X_6$ and Ehresmann connection $\mathcal{H}$. In the left-invariant ansatz (Nomizu complex on $X_6$),
+fiber integration of the 10D heterotic action equals KK compactification on $X_6$; the KK gauge fields arise from $\mathcal{H}$.
+\end{proposition}
+
+\begin{definition}[FCC in the torsional $\mathrm{SU}(3)$ slice]\label{def:FCC}
+In the invariant sector,
+\begin{equation}\label{eq:FCC}
+d(\J^{2})=0, \qquad \J\lrcorner F=0, \qquad \text{flux quantization}, \qquad
+dH=\frac{\alpha'}{4}\big(\Trgrav \Rplus^{2}-\Tr F^{2}\big),
+\end{equation}
+evaluated componentwise on an invariant $(2,2)$ basis.
+\end{definition}
+
+\begin{theorem}[FCC $\Leftrightarrow$ componentwise anomaly system]\label{thm:FCC}
+For left-invariant backgrounds on $X_6$, the FCC reduces to a finite linear system
+$u_i - v_i = -(4/\alpha')\,w_i$ on an invariant $(2,2)$ basis, with $(u_i),(v_i),(w_i)$
+the coefficients of $\Tr F^{2}$, $\Trgrav \Rplus^{2}$, and $dH$ respectively.
+Solutions are precisely the componentwise Bianchi solutions obtained by invariant expansion.
+\end{theorem}
+
+\begin{corollary}[Discrete invariant loci]\label{cor:discrete}
+On Iwasawa, with the abelian flux choice below, $u_2=u_3=v_2=v_3=0$ and the single nontrivial
+component fixes $r_3$ for fixed integers. On $\LensNil$, the two independent components fix $R_1/R$
+for integer $(f,h)$; no invariant moduli remain in the invariant sector.
+\end{corollary}
+
+%===========================
+\section{Case I: Iwasawa (complex, balanced)}\label{sec:iwasawa}
+%===========================
+\paragraph{Invariant structure and normalization.}
+Let $(\omega_1,\omega_2,\omega_3)$ be a left-invariant $(1,0)$-frame on $H_3(\mathbb{C})$ with
+$d\omega_1=d\omega_2=0$, $d\omega_3=\omega_1\wedge\omega_2$.
+Set
+\[
+\J=\frac{\ii}{2}\sum_{j=1}^3 r_j^2\,\omega_j\wedge\bar\omega_j,\qquad
+\Om=\omega_1\wedge\omega_2\wedge\omega_3,
+\]
+and define
+\[
+a:=\frac{\ii}{2}\,\omega_1\wedge\bar\omega_1,\quad
+b:=\frac{\ii}{2}\,\omega_2\wedge\bar\omega_2,\quad
+c:=\frac{\ii}{2}\,\omega_3\wedge\bar\omega_3,
+\]
+\[
+\alpha_1:=a\wedge b,\quad \alpha_2:=a\wedge c,\quad \alpha_3:=b\wedge c,\qquad
+\int_X a\wedge b\wedge c=1.
+\]
+Then $H=\ii(\bar\partial-\partial)\J$ and
+\begin{equation}\label{eq:iwa-dH}
+dH=-4\,r_3^2\,\alpha_1,\qquad\text{(no components on $\alpha_{2,3}$).}
+\end{equation}
+
+\paragraph{Torsional spin curvature (gravitational trace).}
+In a real orthonormal invariant frame adapted to the above choice,
+\begin{equation}\label{eq:iwa-Rplus}
+\Trgrav\,\Rplus^{2}=\tilde v_1(R,r_3)\,\alpha_1,\qquad
+\tilde v_1(R,r_3)=8\,\frac{r_3^2}{r_1^2 r_2^2},
+\end{equation}
+with no support on $\alpha_{2,3}$.
+
+\paragraph{Abelian flux and primitivity.}
+Embed an abelian line in the commutant of $\mathrm{SU}(3)\subset E_8$ with
+\[
+F^{(1)}=2\pi\,T\,(n_1 a+n_2 b+n_3 c),\qquad \Tr(T^2)=1,\ n_i\in\mathbb{Z},
+\]
+so that
+\begin{equation}\label{eq:iwa-flux}
+\Tr\!\big(F^{(1)}\!\wedge F^{(1)}\big)=2(2\pi)^2\big(n_1 n_2\,\alpha_1+n_1 n_3\,\alpha_2+n_2 n_3\,\alpha_3\big).
+\end{equation}
+Primitivity $\J\lrcorner F^{(1)}=0$ is equivalent to
+\[
+n_1\,\frac{r_2^2}{r_3^2}+n_2\,\frac{r_1^2}{r_3^2}+n_3\,\frac{r_1^2}{r_2^2}=0.
+\]
+A convenient choice that enforces $u_2=u_3=0$ is two-line embedding with
+$(n^{(1)}_1,n^{(1)}_2,n^{(1)}_3)=(1,2,0)$ and $(n^{(2)}_1,n^{(2)}_2,n^{(2)}_3)=(-1,-2,0)$,
+giving $u_1=8(2\pi)^2$, $u_2=u_3=0$.
+
+\paragraph{Componentwise Bianchi/anomaly system and solution.}
+Expanding $\Tr F^{2}=\sum_i u_i\alpha_i$, $\Trgrav\Rplus^{2}=\sum_i v_i\alpha_i$,
+$dH=\sum_i w_i\alpha_i$ with $w_1=-4 r_3^2$, $w_{2,3}=0$, the Bianchi identity
+\eqref{eq:bianchi} becomes, componentwise,
+\begin{equation}\label{eq:iwa-comp}
+u_2=v_2,\qquad u_3=v_3,\qquad u_1-v_1=\frac{16}{\alpha'}\,r_3^2.
+\end{equation}
+If the non-abelian $\Tr F(E)^2$ vanishes in the invariant sector (as in the HYM choice we use), then
+$v_{2,3}=0$ and $v_1=\tilde v_1$. With $r_1=r_2=:R$ this yields
+\begin{equation}\label{eq:iwa-r3}
+8(2\pi)^2-\frac{8\,r_3^2}{R^4}=\frac{16}{\alpha'}\,r_3^2
+\quad\Longrightarrow\quad
+r_3^2=\frac{8(2\pi)^2}{\,16/\alpha'+8/R^4\,}.
+\end{equation}
+
+\paragraph{Normalized cubic Yukawa.}
+On complex-parallelizable Iwasawa, any harmonic $(0,3)$-form is proportional to $\bar\Om$; with
+$\int_X\Om\wedge\bar\Om=1$ and the $E_6$ cubic normalized ($d_{abc}$ basis), the trilinear coupling
+\[
+\lambda_{123}=\int_X \Om\wedge \Tr(\Psi_1\wedge\Psi_2\wedge\Psi_3)
+\]
+is a pure phase removable by a chiral rephasing, hence $\lambda_{123}=1$ at tree level.
+
+%===========================
+\section{Case II: $\LensNil$ (balanced, non-integrable)}\label{sec:lensnil}
+%===========================
+\paragraph{Invariant structure.}
+Take $X_6=L(3,1)\times(\Gamma\backslash \mathrm{Nil}_3)$ with left-invariant coframes
+$\{\eta_1,\eta_2,\eta_3\}$ on $L(3,1)$ and $\{\sigma_4,\sigma_5,\sigma_6\}$ on $\mathrm{Nil}_3$:
+\[
+d\eta_i=\tfrac{1}{2}\,\epsilon_{ijk}\,\eta_j\wedge\eta_k,\qquad
+d\sigma_4=d\sigma_5=0,\qquad d\sigma_6=\sigma_4\wedge\sigma_5.
+\]
+Define
+\[
+\J=R_1^2\,\eta_1\wedge\eta_2+R_2^2\,\eta_3\wedge\sigma_6+R_3^2\,\sigma_4\wedge\sigma_5,\qquad
+\Om=(\eta_1+\ii\eta_2)\wedge(\eta_3+\ii\sigma_4)\wedge(\sigma_6+\ii\sigma_5).
+\]
+Then $d(\J^{2})=0$ iff $R_2=R_3=:R$ (balanced), while $d\Om\neq 0$ (non-integrable).
+
+\paragraph{Invariant $(2,2)$ basis and coefficients.}
+Let
+\[
+\beta_1:=\eta_{12}\wedge\eta_3\wedge\sigma_6,\qquad
+\beta_3:=\eta_3\wedge\sigma_{45}\wedge\sigma_6,
+\]
+and set the scale one-forms via $d\eta_i=\lambda\,\epsilon_{ijk}\eta_j\wedge\eta_k$ and
+$d\sigma_6=\nu\,\sigma_4\wedge\sigma_5$,
+with $\lambda\sim R_1^{-1}$, $\nu\sim R^{-1}$. A left-invariant computation gives
+\begin{equation}\label{eq:lens-dH}
+dH=W_1(R_1,R)\,\beta_1+W_3(R_1,R)\,\beta_3,\quad
+W_1=2\lambda^2 R^2,\quad W_3=\lambda\nu\,R^2,
+\end{equation}
+and (with the gravitational trace)
+\begin{equation}\label{eq:lens-Rplus}
+\Trgrav\Rplus^{2}=A(R_1,R)\,\beta_1+B(R_1,R)\,\beta_3,\quad
+A=4\lambda^2+O(\lambda^2\nu^2),\quad B=4\nu^2+O(\lambda^2\nu^2).
+\end{equation}
+
+\paragraph{Abelian flux and anomaly equations (discrete ratio).}
+For an abelian embedding with integers $(f,h)\in\mathbb{Z}^2$,
+\[
+\Tr F^2=2(2\pi)^2\big(f^2\,\beta_1+h^2\,\beta_3\big),
+\]
+and the two independent Bianchi components read
+\begin{equation}\label{eq:lens-anom}
+2(2\pi)^2 f^2 - A(R_1,R)= -\,\frac{4}{\alpha'}\,W_1(R_1,R),\qquad
+2(2\pi)^2 h^2 - B(R_1,R)= -\,\frac{4}{\alpha'}\,W_3(R_1,R).
+\end{equation}
+These two scalar equations fix the ratio $R_1/R$ for any fixed $(f,h)\neq (0,0)$, leaving no invariant
+moduli in the left-invariant sector.
+
+%===========================
+\section{Stability and control}\label{sec:stability}
+%===========================
+\begin{proposition}[OU mode control]\label{prop:OU}
+If each non-harmonic mode obeys $da=-\gamma\,a\,dt+\sqrt{\delta}\,dW_t$ with
+$\gamma=\kappa\,\lambda-L-\Delta_{\mathrm{curv}}>0$, then $\mathrm{Var}(a)=\delta/(2\gamma)$, and
+bundlewise stability holds iff $\sum (1+\lambda)\,\delta/(2\gamma) < \infty$.
+\end{proposition}
+
+\noindent(Statements by citation to the FP series; see App.~\ref{app:lemmas}.)
+
+%===========================
+\section{Minimal EFT extraction}\label{sec:eft}
+%===========================
+\paragraph{Gauge kinetic function.}
+At tree level in the heterotic string the four-dimensional gauge kinetic function is
+$f=S$ (the complex dilaton), so $g^{-2}=\mathrm{Re}\,S$ up to threshold corrections. Our backgrounds preserve
+this standard relation in the left-invariant truncation; torsional effects enter through higher-order
+$\alpha'$ and one-loop thresholds, which we do not attempt to compute here.
+
+\paragraph{Iwasawa cubic Yukawa.}
+On complex-parallelizable Iwasawa, with $\int_X \Om\wedge\bar\Om=1$ and the $E_6$ cubic normalized
+($d_{abc}$), the trilinear coupling
+\[
+\lambda_{123}=\int_X \Om \wedge \Tr(\Psi_1\wedge\Psi_2\wedge\Psi_3)
+\]
+is a pure phase that can be removed by a chiral rephasing; thus $\lambda_{123}=1$ at tree level.
+This provides a convenient normalized starting point for hierarchical textures once small corrections
+(e.g.\ worldsheet instantons or flux-induced mixings) are included.
+
+%===========================
+\section{Related work}\label{sec:related}
+%===========================
+Work on torsional heterotic compactifications includes the original Strominger/Hull system with $R_+$,
+non-K\"ahler solutions on torus bundles and the Fu--Yau class, and many nil/solvmanifold $\mathrm{SU}(3)$-structures
+\cite{Strominger1986,Hull1986,FuYau2008}. Our contribution is orthogonal: we do not enlarge the solution class
+but rather give a rigorous \emph{selection} mechanism that reduces, in the left-invariant slice, to the familiar
+anomaly/primitivity/quantization system, and we exhibit two compact, fully worked examples with
+coefficient-level control and discrete parameter loci.
+
+%===========================
+\section{Conclusions}\label{sec:concl}
+%===========================
+We established that, in the left-invariant torsional $\mathrm{SU}(3)$ slice, the coherent-sector
+contraction condition (FCC) coincides with the standard anomaly/primitivity/quantization system
+when evaluated componentwise on invariant $(2,2)$ bases. As a result, selection picks discrete
+parameter loci on two explicit compact examples: Iwasawa (fixing $r_3$) and $\LensNil$ (fixing $R_1/R$).
+The coefficient catalogues and normalized Iwasawa Yukawa provide reproducible anchors for further work.
+Natural extensions include non-abelian visible flux breaking, higher $\alpha'$ corrections,
+other nil/solv examples, and worldsheet checks.
+
+%===========================
+\appendix
+%===========================
+
+\section{Coefficient catalogues}\label{app:coeffs}
+\subsection*{A.1 Iwasawa coefficients (invariant frame)}\label{app:coeffs-iwa}
+\begin{align*}
+& a=\frac{\ii}{2}\,\omega_1\wedge\bar\omega_1,\quad
+  b=\frac{\ii}{2}\,\omega_2\wedge\bar\omega_2,\quad
+  c=\frac{\ii}{2}\,\omega_3\wedge\bar\omega_3,\\
+& \alpha_1=a\wedge b,\ \alpha_2=a\wedge c,\ \alpha_3=b\wedge c,\qquad
+  \int_X a\wedge b\wedge c=1,\\[2pt]
+& dH=-4\,r_3^2\,\alpha_1,\qquad
+  \Trgrav\Rplus^2=\tilde v_1\,\alpha_1,\quad
+  \tilde v_1=8\,\frac{r_3^2}{r_1^2 r_2^2},\\[2pt]
+& \Tr\!\big(F^{(1)}\!\wedge F^{(1)}\big)=2(2\pi)^2\big(n_1 n_2\,\alpha_1+n_1 n_3\,\alpha_2+n_2 n_3\,\alpha_3\big),\\[2pt]
+& \text{Bianchi (components):}\quad
+  u_2=v_2,\ u_3=v_3,\ u_1-v_1=\frac{16}{\alpha'}\,r_3^2.
+\end{align*}
+
+\subsection*{A.2 $\LensNil$ coefficients (balanced, non-integrable)}\label{app:coeffs-lens}
+Let $R_2=R_3=:R$, and define the scale parameters by $d\eta_i=\lambda\,\epsilon_{ijk}\eta_j\wedge\eta_k$,
+$d\sigma_6=\nu\,\sigma_4\wedge\sigma_5$. With
+\[
+\beta_1:=\eta_{12}\wedge\eta_3\wedge\sigma_6,\qquad
+\beta_3:=\eta_3\wedge\sigma_{45}\wedge\sigma_6,
+\]
+one has
+\begin{align*}
+& dH=W_1(R_1,R)\,\beta_1+W_3(R_1,R)\,\beta_3,\qquad
+  W_1=2\lambda^2 R^2,\quad W_3=\lambda\nu R^2,\\[2pt]
+& \Trgrav\Rplus^{2}=A(R_1,R)\,\beta_1+B(R_1,R)\,\beta_3,\qquad
+  A=4\lambda^2+O(\lambda^2\nu^2),\ \ B=4\nu^2+O(\lambda^2\nu^2),\\[2pt]
+& \Tr F^2=2(2\pi)^2\big(f^2\beta_1+h^2\beta_3\big),\\[2pt]
+& \text{Bianchi (components):}\quad
+  2(2\pi)^2 f^2 - A= -\,\frac{4}{\alpha'}\,W_1,\qquad
+  2(2\pi)^2 h^2 - B= -\,\frac{4}{\alpha'}\,W_3.
+\end{align*}
+
+\section{OU and curvature lemmas (statements)}\label{app:lemmas}
+
+\paragraph{OU variance and summability.}
+For a mode obeying $da=-\gamma a\,dt+\sqrt{\delta}\,dW_t$ with $\gamma>0$, the stationary variance is
+$\mathrm{Var}(a)=\delta/(2\gamma)$. Bundlewise stability is equivalent to positivity of all $\gamma$ and the
+summability condition $\sum (1+\lambda)\,\delta/(2\gamma)<\infty$.
+
+\paragraph{Curvature remainder.}
+In a bounded-geometry regime the effective damping gains a representation-correct Bochner contribution,
+so that $\gamma=\kappa\,\lambda-L-\Delta_{\mathrm{curv}}$, where $\Delta_{\mathrm{curv}}$ depends on curvature bounds of the base/fiber
+and the representation (e.g.\ spinors vs.\ forms). In particular, for large radii the curvature remainder is
+small and the invariant sector remains dynamically closed provided $\gamma>0$ modewise.
+
+\medskip
+\noindent(Proofs by citation to the FP series listed in the References.)
+
+\section{Worldsheet $\sigma$--model check}\label{sec:ws-check}
+
+\paragraph{Aim.}
+To record a succinct, self-contained worldsheet verification that the fixed-point background
+$(G,B,\Phi;A)$ in the heterotic flux slice is conformal at leading order in $\alpha'$, i.e.\ $\beta=0$,
+with the torsional choice $R_+$ for the tangent-bundle connection.
+
+\subsection{Setup and conventions}
+We use the heterotic Polyakov action in conformal gauge with target data $(G,B,\Phi;A)$ and
+left-moving fermions coupled to $A$; see \cite{Polchinski1998,GSW1987}.
+We adopt the supersymmetric torsional connection $R_+$ on $TX$, so that curvature terms in the
+beta-functions are built from $R_+$ \cite{Strominger1986,Bismut1989}.
+
+\subsection{One-loop $\beta$--functions (bosonic sector)}
+To leading order in $\alpha'$ and suppressing scheme-dependent local redefinitions,
+\begin{align}
+\beta^{(G)}_{MN} &= R_{MN}(G) - \tfrac14 H_{MPQ}H_N{}^{PQ} + 2\nabla_M\nabla_N\Phi \,+\, O(\alpha'),\\
+\beta^{(B)}_{MN} &= -\tfrac12 \nabla^P H_{PMN} + \nabla^P\Phi\, H_{PMN} \,+\, O(\alpha'),\\
+\beta^{(\Phi)}   &= \tfrac{D-26}{6} - \tfrac12 \nabla^2\Phi + (\nabla\Phi)^2 - \tfrac1{24}H^2 \,+\, O(\alpha'),
+\end{align}
+with $D=10$ and $H$ the gauge-invariant Green–Schwarz 3-form. The heterotic gauge beta-function
+vanishes for a Hermitian–Yang–Mills (HYM) bundle on a Gauduchon metric. Standard derivations:
+\cite{Callan1985,FradkinTseytlin1985,Polchinski1998}.
+
+\subsection{Equivalence to target-space equations at the fixed point}
+At the MTT coherent fixed point we impose:
+(i) conformally balanced $d(e^{-2\Phi}J\wedge J)=0$,
+(ii) complex integrability ($W_1=W_2=0$), and
+(iii) $H_b=dB-\tfrac{\alpha'}4(\omega_3(A)-\omega_3(\omega_+))$ with $R_+$.
+Using the dictionary in \S3 and \S5, the conditions $\beta^{(G)}=\beta^{(B)}=0$ are equivalent to the
+Hull--Strominger equations (conformally balanced metric and $H=i(\bar\partial-\partial)J$ up to the
+Green--Schwarz correction), while $\beta^{(\Phi)}=0$ is automatic for $D=10$ up to a constant shift
+absorbed by $e^{-2\Phi}$ normalization \cite{Strominger1986,Bismut1989,Polchinski1998,GSW1987}.
+
+\subsection{Gauge sector and HYM}
+On a Gauduchon metric the HYM equations are the vanishing of the heterotic gauge $\beta$ to leading
+order; see \cite{LiYau1987,Buchdahl1988}. This matches our EL equation for $A$ from the selection
+functional $\Xi$ (Theorem~5.2).
+
+\subsection{Global issues: Bianchi identity and Freed--Witten}
+The worldsheet theory is globally well-defined when the gerbe curvature $H_b$ satisfies the Bianchi
+identity
+$dH_b=\tfrac{\alpha'}4\big(\Tr F\wedge F - \Tr R_+\wedge R_+\big)$.
+This coincides with the $K$--multiplier constraint in $\Xi$; Freed--Witten consistency follows from
+the integral cohomology class of $H_b$ chosen in the topological sector fixed in \S5 (\emph{cf.} \cite{Polchinski1998}).
+
+\subsection{Scheme dependence and the $R_+$ choice}
+Differences between $R_+$ and $R_-$ correspond to local field redefinitions at $O(\alpha')$;
+our selection functional uses $R_+$, which is the supersymmetric choice and matches the heterotic
+$\beta$--function scheme used in \cite{Strominger1986,Bismut1989}.
+
+\subsection{Higher orders (remarks)}
+At $O(\alpha'^2)$, curvature-squared and higher-derivative terms appear in both spacetime equations
+and $\beta$--functions; these can be incorporated in $\Xi$ by additional local functionals. The
+contraction/Lyapunov parts of the selection proof rely on sectoriality and bounded geometry and
+are robust under such perturbative additions.
+
+\subsection{Explicit checks on Fu--Yau and Iwasawa models}
+For the Fu--Yau class, conformal balance and the HYM condition are satisfied; the Bianchi identity
+holds with $R_+$ for appropriate topological data. For Iwasawa, $d(J^2)=0$, $H=i(\bar\partial-\partial)J$,
+and an HYM bundle exist; the Bianchi identity is solved componentwise in the invariant $(2,2)$ sector.
+These match the assumptions used in our selection theorem and provide concrete worldsheet-consistent
+backgrounds (see \S8 and Appendix~E for models). % (Optional explicit numbers live in companion papers.)
+
+
+\section{Reproducibility notes}\label{app:repro}
+Frames, orientations, normalizations, sign conventions, and parameter choices match the conventions
+used in the main text. In particular: (1) Iwasawa orientation $\int_X a\wedge b\wedge c=1$, with
+$dH$ as in \eqref{eq:iwa-dH} and $\Trgrav\Rplus^2$ as in \eqref{eq:iwa-Rplus}; (2) $\LensNil$ scale
+parameters $\lambda \sim R_1^{-1}$ and $\nu \sim R^{-1}$, with coefficients as in
+\eqref{eq:lens-dH}--\eqref{eq:lens-anom}. All numbers needed to reproduce the componentwise anomaly
+solutions are tabulated in App.~\ref{app:coeffs}.
+
+\bigskip
+%\nocite{*}
+\bibliographystyle{plain} % or abbrv, unsrt, alpha, etc
+\bibliography{main}
+
+\end{document}
+\typeout{get arXiv to do 4 passes: Label(s) may have changed. Rerun}

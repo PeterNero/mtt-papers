@@ -1,0 +1,91 @@
+{
+  "abstract": "We correct the signature analysis of Modal Triplet Theory (MTT). A tensor of the form \\langle D_\\mu\\Psi,D_\\nu\\Psi\\rangle is a positive-semidefinite Gram tensor and cannot have Lorentzian signature. Physical signature must instead come from the principal symbol of a selected local physical evolution law. For a nondegenerate quadratic metric symbol we prove that hyperbolicity with respect to one evolution covector is possible exactly for Lorentzian inertia, with one sign occurring once. This conditionally excludes Euclidean and multi-time signatures from the standard one-parameter Cauchy problem, but it does not select the number of spatial dimensions. The 3+1 Lorentzian base is therefore an assumption of the canonical ten-dimensional MTT/Fixed-Points realization unless a separate dimension-selection theorem is supplied. We prove local stability of Lorentzian inertia under coefficient perturbations, show that continuous signature change crosses degeneracy, and give a principal-symbol descent theorem for fiberwise coherent compression. Control contraction, internal spectral gaps, physical hyperbolicity, and dimension selection remain independent gates.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18265349",
+    "created": "2026-01-16T06:50:20.460355+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18265350",
+    "files": [
+      {
+        "checksum": "md5:47fd1c18829b38109bff4c16fa60b974",
+        "content_url": "https://zenodo.org/api/records/18265350/files/Signature_Selection_and_Exclusion_in_Modal_Triplet_Theory%20(1).pdf/content",
+        "key": "Signature_Selection_and_Exclusion_in_Modal_Triplet_Theory (1).pdf",
+        "size": 269499
+      }
+    ],
+    "id": "18265350",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-16",
+    "record_url": "https://zenodo.org/records/18265350",
+    "resource_type": "publication",
+    "title": "Signature Selection and Exclusion in Modal Triplet Theory",
+    "updated": "2026-01-16T06:50:20.775675+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "639a99900509da0078e02099fb01f4520228e4c6fe4b3d097184a6ea9086b4b9",
+  "paper_id": "lorentzian-base-compatibility-and-signature-stability-i-6ac3fbb9",
+  "paper_md_sha256": "b2f71c255eb810f7ea2c28978edee3e5614badbdc6a3f9e83d5677097ede3db2",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/SIGNATURE_STABILITY_V2_REVISION_AUDIT.md",
+    "revision_evidence_sha256": "c5cf22c11a5f0f59b422554a3033ff4e5bd61a5ea7310585336699e3953f09c4",
+    "selected_revision": true,
+    "superseded_source_path": "3 Core Foundations/_work/Signature_Selection_and_Exclusion_in_Modal_Triplet_Theory"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 14992,
+      "path": "main.tex",
+      "sha256": "639a99900509da0078e02099fb01f4520228e4c6fe4b3d097184a6ea9086b4b9"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "3 Core Foundations/revised_tex_vnext/Lorentzian_Base_Compatibility_and_Signature_Stability_in_the_MTT_Fixed_Point_Realization_v2"
+  },
+  "source_tree_sha256": "563b08d6de6197e03fee57d5835fcdbee0f36b58c1b0e0aa177c9c6d95064bf5",
+  "title": "Lorentzian Base Compatibility and Signature Stability in the MTT Fixed-Point Realization",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18265349",
+      "created": "2026-01-16T06:50:20.460355+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18265350",
+      "files": [
+        {
+          "checksum": "md5:47fd1c18829b38109bff4c16fa60b974",
+          "content_url": "https://zenodo.org/api/records/18265350/files/Signature_Selection_and_Exclusion_in_Modal_Triplet_Theory%20(1).pdf/content",
+          "key": "Signature_Selection_and_Exclusion_in_Modal_Triplet_Theory (1).pdf",
+          "size": 269499
+        }
+      ],
+      "id": "18265350",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-16",
+      "record_url": "https://zenodo.org/records/18265350",
+      "resource_type": "publication",
+      "title": "Signature Selection and Exclusion in Modal Triplet Theory",
+      "updated": "2026-01-16T06:50:20.775675+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

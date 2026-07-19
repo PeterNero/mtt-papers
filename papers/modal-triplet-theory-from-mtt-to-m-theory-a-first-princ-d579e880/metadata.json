@@ -1,0 +1,88 @@
+{
+  "abstract": "We construct a rigorous bridge from Modal Triplet Theory (MTT) to M -theory. Starting from a ten-dimensional coherent fixed point and its 11D circle lift, we derive: (i) the 11D supergravity field content (G_{MN},C^{(3)}) and flux G_4=\\mathrm{d}C^{(3)} as modal composites; (ii) the 11D action with Chern\u2013Simons and curvature terms, and the full field equations including the G_4\\wedge G_4 source; (iii) the shifted G_4 quantization [G_4/2\\pi]-\\tfrac12\\lambda\\in H^4(M_{11},\\mathbb{Z}) and M5 anomaly inflow; (iv) worldvolume actions for M2 and M5 via a well-defined projection \\Pi_{\\mathrm{WV}} (with \\kappa-symmetry and self-duality), giving the correct tensions and Wess\u2013Zumino couplings; (v) dimensional reductions to type IIA (including brane descendants); and (vi) a predictive low-energy map to 4D EFT parameters fixed by modal gaps and topology. The result is a first-principles derivation of the 11D framework\u2014fields, equations, branes, and consistency conditions\u2014from the fixed-point sector of MTT.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "September 6, 2025",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.17068816",
+    "created": "2025-09-06T14:59:38.430343+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.17068817",
+    "files": [
+      {
+        "checksum": "md5:60a187eb06436b03658da5983cef5dc8",
+        "content_url": "https://zenodo.org/api/records/17068817/files/Modal_Triplet_Theory__From_MTT_to_M_theory%20(2).pdf/content",
+        "key": "Modal_Triplet_Theory__From_MTT_to_M_theory (2).pdf",
+        "size": 361971
+      }
+    ],
+    "id": "17068817",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2025-09-06",
+    "record_url": "https://zenodo.org/records/17068817",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: From MTT to M-theory",
+    "updated": "2025-09-06T14:59:38.801107+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "178c1a84139328eab802d0400a392fc61ae48124c1c95ca9cab4203be35b3cba",
+  "paper_id": "modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880",
+  "paper_md_sha256": "da0346ef781845be2d689132431e39ebf5a0f144e16cb91ed8a0e530bbd4b1eb",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 2388,
+      "path": "main.bib",
+      "sha256": "b96772be8d1be237fde8219e9ad9229777889a44ad509e6e8b8de79d45a747a4"
+    },
+    {
+      "bytes": 40835,
+      "path": "main.tex",
+      "sha256": "178c1a84139328eab802d0400a392fc61ae48124c1c95ca9cab4203be35b3cba"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_M_theory"
+  },
+  "source_tree_sha256": "466dd5a8989d4450571fbfcd89db0a51751488e1363a2b17eb0dc5f110f39e9d",
+  "title": "Modal Triplet Theory: From MTT to M-theory: A First-Principles 11D Embedding with Branes, Flux, and Anomalies",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17068816",
+      "created": "2025-09-06T14:59:38.430343+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.17068817",
+      "files": [
+        {
+          "checksum": "md5:60a187eb06436b03658da5983cef5dc8",
+          "content_url": "https://zenodo.org/api/records/17068817/files/Modal_Triplet_Theory__From_MTT_to_M_theory%20(2).pdf/content",
+          "key": "Modal_Triplet_Theory__From_MTT_to_M_theory (2).pdf",
+          "size": 361971
+        }
+      ],
+      "id": "17068817",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2025-09-06",
+      "record_url": "https://zenodo.org/records/17068817",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: From MTT to M-theory",
+      "updated": "2025-09-06T14:59:38.801107+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

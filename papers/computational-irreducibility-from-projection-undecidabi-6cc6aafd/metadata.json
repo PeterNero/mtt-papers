@@ -1,0 +1,88 @@
+{
+  "abstract": "We prove that any effective physical description in the coherent universality class capable of reproducing irreversible measurement, stable classical records, relativistic locality, and finite predictivity necessarily exhibits algorithmic undecidability at the level of observable dynamics. Within the coherent universality class realized explicitly by Modal Triplet Theory (MTT), noninvertible projection together with admissible basin structure forces the existence of well-posed physical decision problems that no algorithm can decide. The result is formulated without reference to external time: the relevant bound is instead a coherence budget determined by basin geometry, spectral gaps, stability margins, and gravity. The proof constructs a uniform many-one reduction from the halting problem for universal two-counter machines to robust selection-event occurrence under admissibility. Computational irreducibility is thus shown to be a structural consequence of viable physical theories, distinct from chaos or stochasticity, and explains the absence of globally valid effective laws across measurement, spacetime, and ultraviolet completion.",
+  "authors": [
+    "Peter Nero Independent Researcher"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18255388",
+    "created": "2026-01-15T10:29:23.715387+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18255391",
+    "files": [
+      {
+        "checksum": "md5:6dbbe111e2c2dcdf4b18505488ebd4e7",
+        "content_url": "https://zenodo.org/api/records/18255391/files/Computational_Irreducibility_from_Projection__Undecidability_of_Selection_Events_in_Coherent_Quantum_Dynamics%20(4).pdf/content",
+        "key": "Computational_Irreducibility_from_Projection__Undecidability_of_Selection_Events_in_Coherent_Quantum_Dynamics (4).pdf",
+        "size": 312801
+      }
+    ],
+    "id": "18255391",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18255391",
+    "resource_type": "publication",
+    "title": "Computational Irreducibility from Projection: Undecidability of Selection Events in Coherent Quantum Dynamics",
+    "updated": "2026-01-15T10:29:24.471952+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "7da3fd5ca3ca14aa5ffbfba172b70b61101f68babf8c3994306561d9e83fe4f7",
+  "paper_id": "computational-irreducibility-from-projection-undecidabi-6cc6aafd",
+  "paper_md_sha256": "b36a47c03fb84794b1e7556b4717c3e43f5cce932f54f654c79b70ba281a80fb",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 25216,
+      "path": "main.tex",
+      "sha256": "7da3fd5ca3ca14aa5ffbfba172b70b61101f68babf8c3994306561d9e83fe4f7"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Computational_Irreducibility_from_Projection__Undecidability_of_Selection_Events_in_Coherent_Quantum_Dynamics"
+  },
+  "source_tree_sha256": "8c15530d2037edf1a372bb73d1e68a3d5fbc4b0aa804dc7485e624d2ac3b33cb",
+  "title": "Computational Irreducibility from Projection: Undecidability of Selection Events in Coherent Quantum Dynamics",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255388",
+      "created": "2026-01-15T10:29:23.715387+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18255391",
+      "files": [
+        {
+          "checksum": "md5:6dbbe111e2c2dcdf4b18505488ebd4e7",
+          "content_url": "https://zenodo.org/api/records/18255391/files/Computational_Irreducibility_from_Projection__Undecidability_of_Selection_Events_in_Coherent_Quantum_Dynamics%20(4).pdf/content",
+          "key": "Computational_Irreducibility_from_Projection__Undecidability_of_Selection_Events_in_Coherent_Quantum_Dynamics (4).pdf",
+          "size": 312801
+        }
+      ],
+      "id": "18255391",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18255391",
+      "resource_type": "publication",
+      "title": "Computational Irreducibility from Projection: Undecidability of Selection Events in Coherent Quantum Dynamics",
+      "updated": "2026-01-15T10:29:24.471952+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

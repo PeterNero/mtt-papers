@@ -1,0 +1,88 @@
+{
+  "abstract": "In perturbative string theory, the requirement of quantum Weyl invariance of the worldsheet sigma model yields vanishing beta functions whose leading-order content reproduces the Einstein field equations for the target-space metric, together with equations for additional background fields and higher-curvature corrections. In Modal Triplet Theory (MTT), an independent line of analysis shows that coherent-sector admissibility and stability under coarse-graining select Einstein\u2013Hilbert dynamics as the unique infrared effective description, again with controlled higher-curvature corrections governed by a spectral gap \\lambda_\\ast. In this work we establish, under explicit encoding and scheme-equivalence hypotheses, that these two consistency conditions are equivalent shadows of a single upstairs admissibility constraint. We define the string corner as the regime in which coherent overlap data admit a two-dimensional sigma-model encoding, and we show that coherent admissibility is equivalent, up to controlled truncation error \\mathcal{O}(\\lambda_\\ast^{-1}), to the existence of a worldsheet renormalization-group fixed point, which is in turn equivalent to satisfaction of the infrared Einstein equations with suppressed corrections. General Relativity and perturbative string theory are thus shown to be dual diagnostics of the same coherent fixed-point condition, rather than one being derived from the other.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262011",
+    "created": "2026-01-15T20:27:51.278187+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262012",
+    "files": [
+      {
+        "checksum": "md5:9093cbfe80261ddfd3606ddad5915d42",
+        "content_url": "https://zenodo.org/api/records/18262012/files/Why__GR_Falls_Out_of_String_Theory___A_Coherent_Admissibility_Shadow_Bridge_in_Modal_Triplet_Theory%20(2).pdf/content",
+        "key": "Why__GR_Falls_Out_of_String_Theory___A_Coherent_Admissibility_Shadow_Bridge_in_Modal_Triplet_Theory (2).pdf",
+        "size": 327663
+      }
+    ],
+    "id": "18262012",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262012",
+    "resource_type": "publication",
+    "title": "Why General Relativity Falls Out of String Theory",
+    "updated": "2026-01-15T20:27:51.726957+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "1d167ec931b27c686537a6e9fc7c66a28243475d1b8f9b4c1100e19b5645b96c",
+  "paper_id": "why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7",
+  "paper_md_sha256": "793e7ce46f4a02495745c7a447033370ce91f029687b0334a3275e9677dc5d31",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 32311,
+      "path": "main.tex",
+      "sha256": "1d167ec931b27c686537a6e9fc7c66a28243475d1b8f9b4c1100e19b5645b96c"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "11 General Relativity & Geometry/_work/Why__GR_Falls_Out_of_String_Theory___A_Coherent_Admissibility_Shadow_Bridge_in_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "398ba05e66cfb53ee79664b1c35a993de9337cb1d7e783046e8c1d996dd778c2",
+  "title": "Why GR Falls Out of String Theory: A Coherent-Admissibility Shadow Bridge in Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262011",
+      "created": "2026-01-15T20:27:51.278187+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262012",
+      "files": [
+        {
+          "checksum": "md5:9093cbfe80261ddfd3606ddad5915d42",
+          "content_url": "https://zenodo.org/api/records/18262012/files/Why__GR_Falls_Out_of_String_Theory___A_Coherent_Admissibility_Shadow_Bridge_in_Modal_Triplet_Theory%20(2).pdf/content",
+          "key": "Why__GR_Falls_Out_of_String_Theory___A_Coherent_Admissibility_Shadow_Bridge_in_Modal_Triplet_Theory (2).pdf",
+          "size": 327663
+        }
+      ],
+      "id": "18262012",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262012",
+      "resource_type": "publication",
+      "title": "Why General Relativity Falls Out of String Theory",
+      "updated": "2026-01-15T20:27:51.726957+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

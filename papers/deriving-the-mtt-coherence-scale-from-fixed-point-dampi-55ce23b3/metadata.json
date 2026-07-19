@@ -1,0 +1,48 @@
+{
+  "abstract": "The preceding delta-projection papers established a structural dictionary: Dirac delta functions arise as singular limits of finite kernels, filters, shells, or selection operations. A natural objection is that this does not yet select a physical finite kernel. This paper addresses the first execution-level selection problem in the fixed-point regime of Modal Triplet Theory (MTT). We prove that if the incoherent sector of an evolve\u2013project system decays with a quantified semigroup bound \\|Q\\Phi_t Q\\| \\le C_Q e^{-\\lambda_\\ast t}, and if admissibility requires residual incoherent leakage below a tolerance \\varepsilon_{\\rm adm}, then the minimal admissible proper-time/heat-time is not a free regulator but is fixed by \\tau_{\\rm adm}=\\frac{1}{\\lambda_\\ast}\\log\\frac{C_Q}{\\varepsilon_{\\rm adm}} . The corresponding canonical MTT kernel is K_{\\rm adm}(x,y) = \\big\\langle x\\big|P\\,\\chi(A)\\,e^{-\\tau_{\\rm adm}A}\\,\\chi(A)\\,P\\big|y\\big\\rangle, where A is the fixed-point linearized stabilization operator, P is the coherent-sector projector, and \\chi(A) is the admissible spectral acceptance window. We then derive explicit error decompositions, show how the effective scale \\Lambda_{\\rm eff}\\sim \\tau_{\\rm adm}^{-1/2} follows from fixed-point data, and give a fully worked circle model in which (A,P,\\chi,\\tau_{\\rm adm}) are all fixed once the geometry, spectral gap, damping constant, and admissibility tolerance are specified. The result is an execution bridge: the finite kernel used in downstream propagators, Green functions, contact loops, measurements, and constraint filters is selected by fixed-point damping data rather than chosen ad hoc.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "unversioned",
+  "date": "April 2026",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "a1d96753b36d9ac55f9fa45ad99d103f1be61fcd0e746994b2d0999f5c849f84",
+  "paper_id": "deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3",
+  "paper_md_sha256": "7b72bba76cb011f943762ac5ba768afb55815b48ad1fb589bc6f609ebe3608d3",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 18366,
+      "path": "deriving_mtt_coherence_scale_from_fixed_point_damping (1).tex",
+      "sha256": "a1d96753b36d9ac55f9fa45ad99d103f1be61fcd0e746994b2d0999f5c849f84"
+    },
+    {
+      "bytes": 16789,
+      "path": "deriving_mtt_coherence_scale_from_fixed_point_damping.tex",
+      "sha256": "e702ca29aa61954c45f6d7d1effb3b298da1d683d33a9ea6c62674fd9b6369bf"
+    },
+    {
+      "bytes": 18366,
+      "path": "main.tex",
+      "sha256": "a1d96753b36d9ac55f9fa45ad99d103f1be61fcd0e746994b2d0999f5c849f84"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "5 Dirac Delta/_work/Deriving_the_MTT_Coherence_Scale_from_Fixed__Point_Damping"
+  },
+  "source_tree_sha256": "80ae8e9a532f9f04fb5b5196ac94873394b16abaf8e7a68111693f1a6042d2d3",
+  "title": "Deriving the MTT Coherence Scale from Fixed\u2013Point Damping Canonical Proper-Time Kernels from Admissibility Thresholds",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

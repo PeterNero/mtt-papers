@@ -1,0 +1,43 @@
+{
+  "abstract": "Earlier papers in the delta\u2013projection sequence established a structural dictionary: Dirac delta distributions arise as singular limits of finite kernels, shells, filters, windows, measurement effects, and thin layers. That dictionary is mathematically legitimate but does not by itself determine new physics, because an arbitrary finite kernel is only a regulator. The execution-level problem is the reverse direction: derive the finite kernel from MTT data. This paper proves the canonical fixed-point version of that reverse direction. In an admissible MTT fixed-point regime, the data consist of a nonnegative self-adjoint linearized operator A, a bounded coherent projector P=\\Pi_{\\mathrm{coh}}, a complementary incoherent projector Q=I-P, a spectral gap on the incoherent sector, and a proper-time/coherence scale \\tau>0. These data canonically define the coherent kernel K_{\\mathrm{MTT}}(x,y;\\tau) = \\langle x|\\,P e^{-\\tau A}P\\,|y\\rangle . Equivalently, in a spectral representation, K_{\\mathrm{MTT}}(x,y;\\tau) = \\sum_{n\\in{\\rm coh}} e^{-\\tau\\lambda_n} \\phi_n(x)\\phi_n^\\ast(y). We prove that this kernel is smooth for positive proper time, is functorial under unitary re-encoding, acts as a controlled sector-identity on the coherent sector, suppresses incoherent components by the fixed-point spectral gap, and converges to the usual Dirac delta only in the joint limit of complete coherent bandwidth and vanishing proper-time width. Thus the delta replacement is not arbitrary: \\delta(x-y) \\quad\\leadsto\\quad K_{\\mathrm{MTT}}(x,y;\\tau), with finite corrections controlled by (A,P,\\tau,\\lambda^\\ast). This converts the previous delta dictionary into an execution rule: MTT fixed-point data determine the finite kernel, and the finite kernel determines the deviation from the sharp standard object.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "unversioned",
+  "date": "2026-07-19",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "6a2e297137a1f3f58ead9ac5a392d7fc71fe486f16a0773160b38c58b71b6494",
+  "paper_id": "canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62",
+  "paper_md_sha256": "ba035de2e9acea9947b04b0bd5375ec45ce13c25905dd50ae6799f1fd8e6d5c0",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 21411,
+      "path": "canonical_coherent_kernels_from_mtt_fixed_point_data.tex",
+      "sha256": "6a2e297137a1f3f58ead9ac5a392d7fc71fe486f16a0773160b38c58b71b6494"
+    },
+    {
+      "bytes": 21411,
+      "path": "main.tex",
+      "sha256": "6a2e297137a1f3f58ead9ac5a392d7fc71fe486f16a0773160b38c58b71b6494"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "5 Dirac Delta/_work/Canonical_Coherent_Kernels_from_MTT_Fixed_Point_Data"
+  },
+  "source_tree_sha256": "2db854561a4ce1fb17991d51f36e8d032d6d6aa91df1ece2b47a346cb72ca6df",
+  "title": "Canonical Coherent Kernels from MTT Fixed-Point Data From the Delta Dictionary to Execution-Level Corrections",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

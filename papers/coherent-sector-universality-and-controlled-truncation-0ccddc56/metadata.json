@@ -1,0 +1,88 @@
+{
+  "abstract": "We develop a general framework for coherent-sector reduction in Modal Triplet Theory (MTT), establishing precise conditions under which effective truncations of internal modular temporal structure are mathematically controlled and physically robust. We define a class of admissible internal geometries characterized by bounded geometry, spectral gap conditions, and projector regularity, and prove that for this class the dynamics admits a controlled reduction to a coherent sector with explicit error bounds. We further show that such reductions define a universality class stable under small perturbations of the microscopic structure. A comparative appendix situates these results alongside other controlled reduction frameworks in high-energy theory, emphasizing structural parallels without asserting formal equivalence. This work provides a methods-level foundation for the effective use of MTT across models.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18261353",
+    "created": "2026-01-15T19:06:34.157025+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18261354",
+    "files": [
+      {
+        "checksum": "md5:828c636c9e6d0d4f4a6bf1dab3e39c27",
+        "content_url": "https://zenodo.org/api/records/18261354/files/Coherent_Sector_Universality_and_Controlled_Truncation_in_Modal_Triplet_Theory%20(4).pdf/content",
+        "key": "Coherent_Sector_Universality_and_Controlled_Truncation_in_Modal_Triplet_Theory (4).pdf",
+        "size": 253832
+      }
+    ],
+    "id": "18261354",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18261354",
+    "resource_type": "publication",
+    "title": "Coherent-Sector Universality and Controlled Truncation in Modal Triplet Theory",
+    "updated": "2026-01-15T19:06:34.838057+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "ed7c3a90b693c3ebc3d01285422275c3f3c5f452518de13b2e6446c865054ffa",
+  "paper_id": "coherent-sector-universality-and-controlled-truncation-0ccddc56",
+  "paper_md_sha256": "92e8e60a33ee440ccfc0c52df1d679d0a876375e2c98f29a91a7bc87f1d17654",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 11264,
+      "path": "main.tex",
+      "sha256": "ed7c3a90b693c3ebc3d01285422275c3f3c5f452518de13b2e6446c865054ffa"
+    },
+    {
+      "bytes": 15705,
+      "path": "series.sty",
+      "sha256": "deaaf90be0b98130189531a83e121ad3934803f4844f2b10571046aec3b3ed3f"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Coherent_Sector_Universality_and_Controlled_Truncation_in_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "66ca5ec80b1b2f85db23174f06d1a676a468fcb69d72f9029d8726464b5485b5",
+  "title": "Coherent-Sector Universality and Controlled Truncation in Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261353",
+      "created": "2026-01-15T19:06:34.157025+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18261354",
+      "files": [
+        {
+          "checksum": "md5:828c636c9e6d0d4f4a6bf1dab3e39c27",
+          "content_url": "https://zenodo.org/api/records/18261354/files/Coherent_Sector_Universality_and_Controlled_Truncation_in_Modal_Triplet_Theory%20(4).pdf/content",
+          "key": "Coherent_Sector_Universality_and_Controlled_Truncation_in_Modal_Triplet_Theory (4).pdf",
+          "size": 253832
+        }
+      ],
+      "id": "18261354",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18261354",
+      "resource_type": "publication",
+      "title": "Coherent-Sector Universality and Controlled Truncation in Modal Triplet Theory",
+      "updated": "2026-01-15T19:06:34.838057+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

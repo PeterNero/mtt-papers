@@ -1,0 +1,282 @@
+---
+author:
+- Peter Nero
+current_version: v1.0
+date: January 2026
+generated_from_main_tex_sha256: 1b792537ff7bbc1d3e18431632d99e17fad6a9ed8984f8a685ccf0ee69f81236
+paper_id: a-projection-first-reframing-of-quantum-gravity
+release_state: zenodo_released
+released_version: v1.0
+title: A Projection-First Reframing of Quantum Gravity
+zenodo_doi: 10.5281/zenodo.18255738
+zenodo_record_id: 18255738
+zenodo_url: "https://zenodo.org/records/18255738"
+---
+
+# Preface: Scope and Relation to the Projection-First Reframing
+
+This paper is the second in a series developing a projection-first reframing of physics. It should be read as a focused application of the structural perspective introduced in *A Projection-First Reframing of Physics*, rather than as an independent foundational proposal.
+
+The first paper established projection and finite admissibility as primitive features of effective physical description, and showed how quantum mechanics, quantum field theory, spacetime geometry, irreversibility, and the arrow of time arise as necessary consequences. The present paper applies that perspective to a specific and long-standing problem: the persistent difficulty of formulating a theory of quantum gravity.
+
+The purpose of this paper is not to propose a new model of quantum gravity, nor to adjudicate among existing approaches. Instead, it asks a prior question: whether the formulation of the problem itself presupposes a category error. In particular, it examines the assumption—rarely stated explicitly—that gravity is a degree of freedom of the same type as other fields, and therefore amenable to quantization by the same representational tools.
+
+From a projection-first standpoint, this assumption is questionable. Geometry does not appear as an object within effective description, but as part of the structure that makes such description possible at all. Horizons, singularities, entropy bounds, and information-theoretic limits then acquire a unified interpretation: they are not signs of missing dynamics, but indicators of admissibility failure and loss of invertibility of effective description.
+
+This paper develops that diagnosis in a deliberately conservative manner. It introduces no new dynamical principles, postulates no new microscopic constituents of spacetime, and makes no claims about the ultimate nature of underlying dynamics beyond effective description. Its aim is explanatory rather than constructive: to clarify why certain lines of inquiry in quantum gravity have repeatedly encountered structural obstacles, and to suggest how the problem might be reformulated in a way that respects those obstacles rather than attempting to bypass them.
+
+The arguments presented here are compatible with a wide range of technical frameworks, including semiclassical gravity, holographic approaches, and background-independent formulations. What they challenge is not the mathematical sophistication of these approaches, but the expectation that quantization of geometry, in the usual sense, is the appropriate organizing principle.
+
+As in the first paper, no prior familiarity with Modal Triplet Theory is required. However, the projection-first perspective developed here is informed by results obtained in that framework, where the relationship between projection, admissibility, noninvertibility, and effective physics can be made fully explicit.
+
+This paper should therefore be read as a reframing of the quantum gravity problem, not as its resolution. It seeks to clarify what kind of question quantum gravity can meaningfully be, once the structural limits of description are taken seriously.
+
+# The Persistent Failure of Quantum Gravity
+
+For nearly a century, physicists have attempted to reconcile gravity with quantum mechanics. The effort has taken many forms: quantization of the metric, canonical constraints, loop variables, string-theoretic excitations, holographic dualities. Despite extraordinary technical sophistication, no approach has achieved the same empirical or conceptual closure as quantum mechanics or quantum field theory.
+
+This persistent failure is often attributed to technical difficulty or incomplete understanding. Gravity is said to be “hard to quantize,” spacetime is said to “fluctuate,” and new degrees of freedom are proposed to resolve singular behavior. The implicit assumption is that gravity resists quantization because we have not yet found the correct microscopic description.
+
+From a projection-first perspective, this diagnosis is incomplete.
+
+The difficulty with quantum gravity is not that gravity has not yet been successfully quantized. It is that *gravity is not the kind of thing that quantization applies to in the first place*.
+
+Quantization is a representational strategy. It is a way of encoding projected degrees of freedom that admit additive statistical structure. It presupposes that the objects being quantized are themselves elements of an effective description: states, excitations, or correlations that survive projection and can be superposed meaningfully.
+
+Gravity, as revealed by general relativity, does not fit this pattern. The metric does not describe a degree of freedom propagating within spacetime in the same sense as a field. It describes the structure that makes spacetime description possible at all. It is not an object in the description; it is part of the description’s bookkeeping.
+
+Attempts to quantize gravity therefore begin from a hidden assumption: that geometry is a dynamical variable of the same type as other fields. This assumption is so deeply ingrained that it often goes unnoticed. Yet it is precisely this assumption that projection-first reasoning calls into question.
+
+The history of quantum gravity can thus be read not as a sequence of failed models, but as a prolonged attempt to apply the wrong representational tool to the wrong structural level. The question is not how to quantize gravity. The question is what happens to projection and admissibility when the bookkeeping structure itself becomes unstable.
+
+This paper explores that question.
+
+# Why Gravity Is Not a Degree of Freedom
+
+To understand why quantum gravity has proven so resistant to formulation, it is necessary to be precise about what kind of thing gravity is in the first place. The dominant intuition, inherited from quantum field theory, is that every physical interaction corresponds to a set of degrees of freedom that propagate, fluctuate, and can in principle be quantized. From this perspective, gravity appears anomalous only because its correct degrees of freedom have not yet been identified.
+
+This intuition is deeply misleading.
+
+In general relativity, the gravitational field does not describe a dynamical entity evolving within spacetime. It describes the structure that makes spacetime description possible at all. The metric is not one field among others; it is the object that defines what counts as distance, duration, locality, and causal ordering. It fixes the stage on which all other effective degrees of freedom are defined.
+
+This distinction is not semantic. It is structural.
+
+A degree of freedom is something whose values can vary while the descriptive framework remains intact. Fields fluctuate against a fixed notion of locality. Particles propagate along trajectories defined with respect to a background geometry. Even in background-independent formulations, there remains a separation between the variables being evolved and the consistency conditions that define what it means for evolution to occur.
+
+Gravity does not occupy this role. Changes in geometry do not merely alter the state of a system; they alter the conditions under which states are even comparable. When the metric changes, the meaning of energy, momentum, locality, and time itself changes with it. Geometry is therefore not a degree of freedom in the same sense as other fields. It is a consistency structure.
+
+From a projection-first perspective, this observation becomes decisive. Geometry arises as the bookkeeping required to keep projected descriptions mutually compatible across regions where admissibility varies. It is introduced not because the world contains a gravitational substance, but because effective description cannot remain coherent otherwise.
+
+Once this is recognized, the central difficulty of quantum gravity becomes clear. Quantization is a representational strategy for projected degrees of freedom that admit additive statistical structure. It presupposes that the objects being quantized are already part of the effective description—objects whose fluctuations can be meaningfully superposed and whose correlations can be statistically organized.
+
+Geometry fails this presupposition.
+
+Attempting to quantize geometry treats the bookkeeping of description as if it were a substance described by the description. This is a category error. It is akin to attempting to quantize the coordinate system itself, or the notion of consistency between overlapping charts, rather than the physical content represented within those charts.
+
+This does not mean that geometry cannot change. General relativity already describes how it responds to strain. But response is not the same as fluctuation in the quantum-mechanical sense. The metric adjusts to preserve admissibility; it does not explore a superposition of incompatible bookkeeping structures.
+
+The repeated failure of quantum gravity programs can therefore be read as a structural mismatch rather than a technical impasse. These programs attempt to apply a tool—quantization—that is exquisitely well-suited to organizing projected degrees of freedom, to an object whose role is to organize projection itself.
+
+From this perspective, the correct question is not “how do we quantize gravity?” but rather:
+
+> What happens to projection and admissibility when the structure that enforces consistency across descriptions becomes unstable?
+
+That question does not point toward new quantum degrees of freedom of geometry. It points toward breakdown, noninvertibility, and limits of description—precisely the phenomena that appear at horizons, singularities, and cosmological boundaries.
+
+# What Quantization Presupposes—and Where It Fails
+
+Quantization is often treated as a universal procedure: identify the classical degrees of freedom, promote them to operators, impose commutation relations, and interpret the resulting structure probabilistically. This recipe has been extraordinarily successful when applied to particles and fields. Its success has been so striking that it is often assumed to be applicable, in principle, to any physical system.
+
+This assumption deserves scrutiny.
+
+Quantization presupposes several structural conditions that are rarely stated explicitly because they are almost always satisfied in familiar contexts. First, it presupposes a well-defined space of states that can be linearly combined. Second, it presupposes a notion of locality or decomposition that allows subsystems to be identified and recombined. Third, it presupposes that the objects being quantized retain their identity under small perturbations, so that fluctuations can be meaningfully discussed.
+
+All three presuppositions fail, or become ambiguous, when applied to geometry.
+
+To quantize something is to assume that it already lives inside an effective description. One quantizes positions, momenta, fields, or excitations—objects whose meaning is fixed by an underlying descriptive framework. Geometry, by contrast, defines that framework. It determines what counts as a position, what separates subsystems, and how perturbations are measured. There is no prior notion of “small fluctuation” of geometry that does not already rely on geometric structure.
+
+This is why quantum gravity proposals almost always begin by fixing or partially fixing geometry, even when they claim background independence. A choice of foliation, causal structure, or discretization is introduced, and quantization proceeds relative to that choice. The difficulty then reappears at the next level: different choices lead to inequivalent descriptions, and no natural measure exists over the space of all such choices.
+
+From a projection-first perspective, this pattern is expected. Quantization assumes that projection has already done its work—that equivalence classes are stable, that admissibility margins are respected, and that additive statistical structure exists. Geometry is not downstream of projection; it is upstream. It is the structure that enforces admissibility across regions.
+
+When one attempts to quantize geometry, one is therefore attempting to quantize the conditions of quantizability.
+
+This structural mismatch explains a familiar empirical fact. Quantum field theory on a fixed background is extraordinarily successful. Semiclassical gravity, in which matter fields are quantized while geometry responds classically, works remarkably well. Difficulties arise only when one insists that geometry itself must be treated as a quantum degree of freedom on the same footing as everything else.
+
+The problem is not that geometry refuses to change. General relativity already describes how geometry responds dynamically. The problem is that these responses are not fluctuations within a stable descriptive framework. They are adjustments of the framework itself.
+
+Quantization, in other words, presupposes what gravity provides.
+
+This insight also clarifies why many quantum gravity programs converge on similar themes—discreteness, holography, minimal length, entropy bounds—despite their technical differences. Each of these themes reflects an attempt to regulate the breakdown of description when admissibility is strained. They are responses to projection failure, not evidence of hidden geometric degrees of freedom waiting to be quantized.
+
+Once this is recognized, the guiding question shifts. If quantization fails because geometry is not the right kind of object, then the problem of quantum gravity is not to find the correct quantum variables of spacetime. It is to understand how projection and admissibility behave when the structures that enforce consistency are themselves pushed beyond their limits.
+
+# Horizons, Singularities, and Noninvertibility
+
+Horizons and singularities are often treated as extreme or pathological features of gravitational physics—places where familiar laws break down and new dynamics must intervene. In quantum gravity programs, they are typically viewed as signals that the classical description of spacetime is incomplete and must be replaced by a more fundamental, quantum-mechanical one.
+
+From a projection-first perspective, this interpretation is misplaced.
+
+Horizons and singularities are not primarily failures of dynamics. They are failures of *invertible description*.
+
+## Horizons as Structural Boundaries
+
+Consider a horizon. From the standpoint of classical general relativity, a horizon is a perfectly regular geometric surface. Nothing singular happens locally as it is crossed. Yet for observers confined to one side, the horizon marks a profound limit: information about events beyond it cannot be recovered, no matter how long one waits or how sophisticated one’s measurements become.
+
+This asymmetry is puzzling if one assumes that physical description should, in principle, remain globally invertible. It is far less puzzling once projection and finite admissibility are taken seriously.
+
+In a projection-first framework, a horizon is an *admissibility boundary*. It is a surface across which the effective description loses the ability to distinguish underlying configurations. For exterior observers, distinct states inside the horizon project to the same effective description. No global inverse exists, not because information has been destroyed at the fundamental level, but because the effective description cannot support the distinctions required to reconstruct it.
+
+This noninvertibility is structural. It does not depend on the details of microscopic dynamics, nor does it require any stochastic element. It follows directly from the fact that projection cannot remain admissible across regions of extreme strain.
+
+Entropy and area laws acquire a natural interpretation in this context. Entropy measures the cumulative loss of admissible distinction across the horizon. Area scaling reflects the localization of admissibility failure on a codimension-one surface, constrained by finite capacity for description.
+
+## Singularities as Breakdown of Description
+
+Singularities present an even starker case. In classical relativity, singularities are points or regions where curvature invariants diverge and geodesic description ceases to be well-defined. They are usually interpreted as indications that the theory has been pushed beyond its domain of validity.
+
+Projection-first reasoning sharpens this intuition.
+
+A singularity is not merely a region of high curvature. It is a region where *no effective description remains admissible*. Distinctions collapse faster than they can be maintained. Projection fails entirely, not just locally but categorically. The effective description does not become inaccurate; it ceases to exist.
+
+From this viewpoint, it is misguided to ask what “really happens” at a singularity in terms of effective variables. There is no effective variable left to describe. The correct statement is that the projection-based description has exhausted its admissibility margin.
+
+Attempts to resolve singularities by introducing new quantum degrees of freedom often amount to extending description beyond its structural limits. While such extensions may be mathematically consistent, they risk mistaking the breakdown of description for a gap in dynamics.
+
+## Noninvertibility as the Common Thread
+
+Horizons and singularities share a common structural feature: loss of invertibility of effective description. In both cases, distinct underlying configurations map to indistinguishable effective states. In both cases, no global reconstruction is possible. And in both cases, entropy and irreversibility arise as measures of this loss.
+
+This perspective clarifies why so many quantum gravity approaches emphasize information-theoretic concepts. Information loss, entropy bounds, and holography are not fundamental principles in their own right. They are symptoms of noninvertibility induced by projection failure.
+
+Once noninvertibility is recognized as primary, the need to postulate exotic microscopic mechanisms diminishes. The breakdown of description itself does the explanatory work.
+
+## Rethinking the Role of Quantum Gravity
+
+Seen this way, the regimes traditionally assigned to “quantum gravity” are precisely those where projection and admissibility fail most severely. They are not regimes where geometry acquires new quantum degrees of freedom. They are regimes where the very notion of an effective spacetime description breaks down.
+
+The role of a theory of quantum gravity, if such a theory is to exist, is therefore not to quantize spacetime in the usual sense. It is to characterize the structure of description at, and beyond, admissibility boundaries—to say what can and cannot be meaningfully described when projection ceases to be invertible.
+
+# What a Projection-First Question About Quantum Gravity Looks Like
+
+If gravity is not a degree of freedom to be quantized, and if horizons and singularities mark failures of invertible description rather than failures of dynamics, then the central question of quantum gravity must be reformulated.
+
+The projection-first framework suggests that the traditional question
+
+> “What are the quantum degrees of freedom of spacetime?”
+
+is the wrong starting point.
+
+A better question is:
+
+> “What structures of effective description remain possible when projection approaches or exceeds its admissibility limits?”
+
+This shift may appear subtle, but it has profound consequences.
+
+## From Dynamics to Describability
+
+Traditional quantum gravity programs implicitly assume that spacetime continues to exist as an effective arena, even in extreme regimes. They seek new variables, new symmetries, or new microscopic constituents that can restore predictive power while preserving the familiar notion of description.
+
+Projection-first reasoning rejects this assumption.
+
+When admissibility fails, the problem is not that we lack the correct variables. The problem is that no effective variables remain well-defined. The task is not to complete the description, but to characterize its limits.
+
+A projection-first theory of quantum gravity would therefore not begin by writing down new equations of motion. It would begin by asking:
+
+- which distinctions remain admissible near horizons or singularities,
+
+- which equivalence classes collapse,
+
+- which forms of prediction survive noninvertibility,
+
+- and which questions cease to be meaningful altogether.
+
+This is a theory of constraints, not of new dynamics.
+
+## What Remains Predictable
+
+Even when global invertibility is lost, not all structure disappears. Restricted descriptions may remain viable. Certain observables may retain predictive power. Local correlations may persist even when global reconstruction is impossible.
+
+This explains why semiclassical gravity and effective field theory remain so successful in regimes that approach, but do not cross, admissibility boundaries. Projection has not yet fully failed. The bookkeeping structure still functions locally.
+
+A projection-first approach seeks to map this boundary carefully:
+
+- identifying which descriptions remain stable,
+
+- which fail abruptly,
+
+- and which degrade continuously.
+
+Such a map would not be a “theory of everything.” It would be a theory of where description ends.
+
+## Holography Reinterpreted
+
+Seen through this lens, ideas such as holography take on a new meaning. Rather than signaling that spacetime is fundamentally encoded on a lower-dimensional boundary, holographic behavior reflects the fact that admissibility failure localizes on surfaces. When bulk description collapses, boundary-correlated descriptions may survive.
+
+Holography is thus not evidence of hidden microscopic spacetime degrees of freedom. It is evidence that only certain projections remain admissible.
+
+Similarly, entropy bounds do not count fundamental states. They count how much description can be sustained before projection fails.
+
+## What a Successful Theory Would Look Like
+
+A successful projection-first approach to quantum gravity would not look like a quantized field theory of geometry. It would look like a classification of admissibility regimes:
+
+- where effective spacetime description exists,
+
+- where it becomes noninvertible,
+
+- and where it ceases entirely.
+
+It would make precise statements about:
+
+- which observables are meaningful near horizons,
+
+- which questions are undecidable near singularities,
+
+- and how descriptions transition between regimes.
+
+Such a theory would explain why attempts to extend spacetime description beyond certain limits repeatedly encounter paradoxes, infinities, or information-theoretic puzzles. Those puzzles are not failures of imagination; they are indicators that the question itself has crossed an admissibility boundary.
+
+## Reframing the Goal
+
+The goal of quantum gravity, reframed projection-first, is therefore not to unify forces or quantize geometry. It is to understand the structure of physical description at its limits.
+
+This is a more modest goal—and a more realistic one. It does not promise a single set of equations valid at all scales. It promises clarity about what can be said, what cannot, and why.
+
+# What This Reframing Explains—and What It Leaves Open
+
+The projection-first reframing of quantum gravity does not solve the problem in the sense traditionally expected. It does not produce a set of fundamental equations that replace general relativity at short distances, nor does it identify a new class of microscopic degrees of freedom underlying spacetime. What it does instead is clarify why such expectations have repeatedly led to impasses.
+
+## What This Reframing Explains
+
+First, it explains the persistent difficulty of quantizing gravity. The problem is not technical inadequacy or insufficient mathematical sophistication. It is structural mismatch. Quantization presupposes stable projected degrees of freedom with additive statistical structure. Geometry is not such a degree of freedom; it is the structure that stabilizes projection itself. Treating it as an object to be quantized misidentifies its role.
+
+Second, it explains the centrality of horizons, entropy, and information-theoretic bounds in gravitational physics. These phenomena are not incidental features of particular models. They are signatures of admissibility failure. Whenever projection loses invertibility, entropy appears, information becomes unrecoverable, and description localizes on boundaries. The recurrence of these themes across disparate approaches is not convergence on hidden microphysics, but repeated encounters with the same structural limit.
+
+Third, it explains why semiclassical gravity works as well as it does. As long as admissibility margins are not exhausted, projection remains locally invertible and effective spacetime description survives. Matter fields can be quantized, correlations computed, and predictions made. Difficulties arise only when one attempts to extend this descriptive regime beyond its admissible domain.
+
+Fourth, it explains why quantum gravity research has generated deep conceptual insights without achieving closure. Many such insights—holography, entropy bounds, complementarity—are accurate descriptions of how projection behaves near its limits. What they lack is a framework that treats those limits as fundamental rather than as anomalies to be repaired.
+
+## What This Reframing Leaves Open
+
+At the same time, this reframing does not answer every question, nor does it attempt to.
+
+It does not specify the detailed structure of underlying dynamics beyond effective description. Projection-first reasoning is deliberately agnostic about what lies beneath admissibility boundaries. The underlying dynamics may be richer, simpler, or radically different from existing models. Nothing in this framework constrains it uniquely.
+
+It does not eliminate the need for quantitative work. Understanding where admissibility fails, how rapidly it is exhausted, and which restricted descriptions remain viable requires concrete models and calculations. Projection-first reframing provides the conceptual map, not the detailed terrain.
+
+It also does not rule out the possibility that new effective languages may exist beyond spacetime description. Just as quantum mechanics replaced classical phase space as the stable language of projected dynamics, future frameworks may describe regimes where spacetime itself is no longer admissible. What projection-first reasoning insists upon is that such languages will again reflect the constraints of projection and finite admissibility, rather than bypassing them.
+
+## A Change in What Counts as Progress
+
+Perhaps the most important consequence of this reframing is a shift in what counts as progress in quantum gravity.
+
+Progress is not the discovery of ever more fundamental geometric variables. It is the clarification of which questions are well-posed, which descriptions remain meaningful, and which distinctions cannot survive projection. A successful theory, in this sense, is one that delineates the boundary between describable and undescribable regimes with precision and honesty.
+
+This is a more modest ambition than the traditional quest for a unified quantum theory of spacetime. But it is also a more realistic one. It aligns with the lessons already learned from horizons, entropy, and irreversibility, and it respects the structural role geometry plays in effective description.
+
+## Closing Perspective
+
+Quantum gravity, reframed projection-first, is not the search for the quantum microstructure of spacetime. It is the study of how physical description behaves when its own consistency conditions are pushed to their limits.
+
+In this light, the long struggle to quantize gravity appears not as a failure of imagination, but as a consequence of asking a question that description itself cannot answer. Once the question is reformulated, the impasse dissolves. What remains is a clearer understanding of the scope and limits of physics—not as a catalog of all that exists, but as a disciplined account of what can be meaningfully described.

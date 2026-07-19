@@ -1,0 +1,88 @@
+{
+  "abstract": "We present a bridge from Modal Triplet Theory (MTT) to perturbative string theory. Starting from a ten-dimensional coherent fixed point (\\mathcal{M}_{10},G_{MN},B_{MN},\\Phi;A_{M}), we show: (i) a bounded worldsheet projection \\Pi_{\\mathrm{ws}} produces the Polyakov/RNS actions; (ii) vanishing worldsheet \\beta\u2013functions holds to the same order in \\alpha' as the MTT string-frame action, yielding fixed point \\Rightarrow conformal background to controlled order, up to local field redefinitions; (iii) Green\u2013Schwarz anomaly cancellation and tadpole constraints follow from the MTT topological data with \\alpha'/4 normalization and the torsional spin connection R_{+}; (iv) compactifications (Calabi\u2013Yau and torsional SU(3)) and gauge bundles emerge from modal holonomy and curvature-gap dynamics; (v) T-duality is exact spectral equivalence on S^{1}, while S-duality is formulated as a modal-landscape conjecture. We record an AdS corner where a GKPW-type functional emerges at the fixed point",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "September 6, 2025",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.17068114",
+    "created": "2025-09-06T11:21:20.781239+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.17068115",
+    "files": [
+      {
+        "checksum": "md5:c01b73d8666a9050fe9c313e115efe2d",
+        "content_url": "https://zenodo.org/api/records/17068115/files/Modal_Triplet_Theory__From_MTT_to_String_Theory%20(1).pdf/content",
+        "key": "Modal_Triplet_Theory__From_MTT_to_String_Theory (1).pdf",
+        "size": 256401
+      }
+    ],
+    "id": "17068115",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2025-09-06",
+    "record_url": "https://zenodo.org/records/17068115",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: From MTT to String Theory",
+    "updated": "2025-09-06T11:21:21.111673+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "555fc10b680633b44f612aec1fdbcb38414e10c26e87995229e15a6db8e854ac",
+  "paper_id": "modal-triplet-theory-from-mtt-to-string-theory-a-first-4b1100fc",
+  "paper_md_sha256": "097e1a4e21b8009cda9a035676dc653d3fe8454896a83af9cd772cda17a2e33a",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 4191,
+      "path": "main.bib",
+      "sha256": "be92481bee5e33026991bdad67b452f36d5b2e2f681378c248fc519f425b887a"
+    },
+    {
+      "bytes": 9384,
+      "path": "main.tex",
+      "sha256": "555fc10b680633b44f612aec1fdbcb38414e10c26e87995229e15a6db8e854ac"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_String_Theory"
+  },
+  "source_tree_sha256": "0e0a0a417cd4a58dff2f5ac3b4a3615a2d94e38775b500fb4e56a353d0ca9b52",
+  "title": "Modal Triplet Theory: From MTT to String Theory: A First-Principles Embedding with Worldsheet Projection",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17068114",
+      "created": "2025-09-06T11:21:20.781239+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.17068115",
+      "files": [
+        {
+          "checksum": "md5:c01b73d8666a9050fe9c313e115efe2d",
+          "content_url": "https://zenodo.org/api/records/17068115/files/Modal_Triplet_Theory__From_MTT_to_String_Theory%20(1).pdf/content",
+          "key": "Modal_Triplet_Theory__From_MTT_to_String_Theory (1).pdf",
+          "size": 256401
+        }
+      ],
+      "id": "17068115",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2025-09-06",
+      "record_url": "https://zenodo.org/records/17068115",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: From MTT to String Theory",
+      "updated": "2025-09-06T11:21:21.111673+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

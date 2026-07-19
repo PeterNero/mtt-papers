@@ -1,0 +1,38 @@
+{
+  "abstract": "",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v8",
+  "date": "January 2026",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "28ccd1702ad2d7343779c3ea7d8a08fec512a7194422399fabcf8faf3177f579",
+  "paper_id": "mtt-gpt-corpus-index-grouped-reference",
+  "paper_md_sha256": "b0031fbef295fcd713f588fdcef317b27762381a922bfd4be38fabb0b56f9629",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 47796,
+      "path": "main.tex",
+      "sha256": "28ccd1702ad2d7343779c3ea7d8a08fec512a7194422399fabcf8faf3177f579"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "0 Index Corpus/_work/Modal_Triplet_Theory__Corpus_Index_and_Reference_v8"
+  },
+  "source_tree_sha256": "a311bac62f5d3f320270e3b25b691c4f7f1abe16e5027c9b8c8a78e022fe918f",
+  "title": "MTT GPT Corpus Index (Grouped Reference)",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

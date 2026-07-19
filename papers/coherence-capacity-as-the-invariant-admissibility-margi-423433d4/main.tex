@@ -1,0 +1,378 @@
+\documentclass[11pt]{article}
+
+\usepackage{series} % MTT series style
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+% Theorem environments
+
+\title{Coherence Capacity as the Invariant Admissibility Margin of Modal Triplet Theory}
+\author{Peter Nero}
+\date{January 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Across the Modal Triplet Theory (MTT) corpus, effective physical descriptions are shown to
+exist only within restricted admissible domains controlled by spectral gaps, projector
+regularity, and truncation stability. Outside these domains, effective evolution becomes
+irreversible despite invertibility of the underlying dynamics.
+
+In this paper we extract and formalize the invariant structure underlying these results.
+We show that all MTT admissibility conditions define a single finite stability margin, which
+we term \emph{coherence capacity}. Coherence capacity is not an additional dynamical field,
+but a scalar measure of how much projection-based effective description can be supported
+before controlled truncation fails.
+
+We prove, in MTT-native language, that exhaustion of coherence capacity implies the
+nonexistence of a global measurable section of the coherent projection, yielding effective
+irreversibility as a structural necessity. This formulation does not modify existing MTT
+constructions; it compresses them, making explicit which aspects of MTT are contingent and
+which are unavoidable in any projection-based theory with finite control margins.
+\end{abstract}
+
+\section{Motivation and Relation to the MTT Corpus}
+
+Modal Triplet Theory derives quantum mechanics, quantum field theory, spacetime geometry,
+and classical physics from a common structural architecture: invertible fundamental dynamics
+combined with noninjective projection to observables and controlled truncation.
+
+These results are obtained through multiple technical frameworks, including:
+\begin{itemize}
+\item admissible slabs and coherent sectors,
+\item joint Riesz projectors and spectral gaps,
+\item fixed points of projected evolution,
+\item controlled renormalization flow endpoints.
+\end{itemize}
+
+While technically distinct, these constructions all rely on the same fact: \emph{effective
+physics is possible only while a finite stability margin remains available}. The present
+paper isolates this margin and makes it explicit.
+
+\paragraph{Scope.}
+This paper establishes inevitability results internal to MTT. It introduces no new
+microscopic dynamics and does not alter any existing derivations. All statements are
+conditional on assumptions already present, explicitly or implicitly, in the MTT corpus.
+
+\section{MTT Structural Setup}
+
+We adopt the standard MTT framework.
+
+\subsection{Fundamental dynamics}
+
+Let $(X,\mathcal{B})$ be a standard measurable space equipped with an invertible evolution
+$\Phi_\tau : X \to X$, where $\tau$ is an ordering parameter rather than fundamental time.
+
+\subsection{Coherent projection}
+
+MTT defines a projection onto an effective coherent sector via a bounded operator
+\[
+\Pi_{\mathrm{coh}} : \mathcal{H} \to \mathcal{H}_{\mathrm{coh}},
+\]
+constructed using joint Riesz projectors associated with a uniform spectral gap.
+
+Observable states are equivalence classes under this projection.
+
+\subsection{Effective evolution}
+
+The effective (shadow) evolution is given by
+\[
+T := \Pi_{\mathrm{coh}} \circ \Phi_\tau .
+\]
+
+All effective laws are statements about the iterates of $T$ on the coherent sector.
+
+\section{Controlled Truncation and Admissibility}
+
+We summarize the admissibility conditions appearing in Fixed Points I–VI and Universality
+and Controlled Truncation.
+
+\begin{assumption}[Controlled Truncation]
+There exists a domain $\mathcal{A} \subset X$ such that:
+\begin{enumerate}
+\item the spectral gap $\Delta$ defining $\Pi_{\mathrm{coh}}$ is uniformly bounded below on
+$\mathcal{A}$,
+\item the projector $\Pi_{\mathrm{coh}}$ is norm-continuous on $\mathcal{A}$,
+\item truncation error remains bounded by $\varepsilon < \varepsilon_\ast$ under iteration
+of $T$.
+\end{enumerate}
+\end{assumption}
+
+\begin{definition}[MTT Admissibility]
+A point $x \in X$ is admissible if it lies in a domain $\mathcal{A}$ satisfying the above
+controlled truncation conditions.
+\end{definition}
+
+This definition is equivalent to admissibility as used throughout the MTT corpus.
+
+\section{Coherence Capacity (MTT-Native Definition)}
+
+We now define coherence capacity directly in terms of MTT control data.
+
+\begin{definition}[MTT Coherence Capacity]
+The coherence capacity $C_{\mathrm{MTT}}(x)$ at $x \in X$ is a lower bound on the admissibility
+margin, defined as any scalar functional satisfying
+\[
+C_{\mathrm{MTT}}(x) > 0
+\quad \Longleftrightarrow \quad
+\begin{cases}
+\Delta(x) > 0,\\
+\|\Pi_{\mathrm{coh}}\| \text{ is bounded near } x,\\
+\text{truncation error remains controlled.}
+\end{cases}
+\]
+\end{definition}
+
+\begin{remark}
+The precise functional form of $C_{\mathrm{MTT}}$ is not unique. Any scalar that vanishes
+precisely when controlled truncation fails is sufficient. This nonuniqueness reflects the
+fact that coherence capacity is an invariant resource, not a new observable.
+\end{remark}
+
+\paragraph{Meaning of invariance.}
+By ``invariant'' we do not mean that coherence capacity is a fundamental or unique primitive.
+Rather, it is invariant in the sense that all admissibility criteria used throughout the MTT
+corpus define the same zero set and positivity domain. Different technical constructions may
+realize this margin in different variables, but they all fail simultaneously. Coherence
+capacity is therefore an invariant of admissibility failure, not an additional axiom.
+
+
+\begin{proposition}
+For any MTT realization satisfying the controlled truncation assumptions, there exists a
+coherence capacity functional $C_{\mathrm{MTT}}$ that is strictly positive on admissible
+domains and vanishes at admissibility boundaries.
+\end{proposition}
+
+\begin{proof}
+This follows directly from compactness of admissible slabs and continuity of the spectral
+data defining $\Pi_{\mathrm{coh}}$. \qedhere
+\end{proof}
+
+\section{Capacity Collapse and Nonexistence of Global Inverse}
+
+We now restate the irreversibility result in fully MTT-native form.
+
+\begin{definition}[Global Section]
+A global section of the coherent projection is a measurable map
+$S : \mathcal{H}_{\mathrm{coh}} \to \mathcal{H}$
+such that
+\[
+\Pi_{\mathrm{coh}} \circ S = \mathrm{Id}_{\mathcal{H}_{\mathrm{coh}}}.
+\]
+\end{definition}
+
+\begin{theorem}[Capacity Collapse Implies No Global Section]\label{thm:capacity_collapse}
+Assume controlled truncation holds on $\mathcal{A}$ and fails on $\partial\mathcal{A}$.
+If a trajectory crosses a point where $C_{\mathrm{MTT}} = 0$, then no global measurable
+section of $\Pi_{\mathrm{coh}}$ exists.
+\end{theorem}
+
+\begin{proof}
+At $C_{\mathrm{MTT}}=0$, the spectral gap closes or projector regularity fails. Consequently,
+$\Pi_{\mathrm{coh}}$ identifies distinct states in $X$ whose images in
+$\mathcal{H}_{\mathrm{coh}}$ coincide on a set of nonzero measure. Any measurable section
+would require selecting a unique representative from each equivalence class, contradicting
+measurability and boundedness of $\Pi_{\mathrm{coh}}$. \qedhere
+\end{proof}
+
+\begin{corollary}
+Effective irreversibility in MTT is a structural consequence of admissibility failure, not
+of stochasticity or noninvertible fundamental dynamics.
+\end{corollary}
+\section{Geometry as a Two--Derivative Bookkeeping of Admissibility}
+
+In Modal Triplet Theory, spacetime geometry does not appear as a fundamental interaction
+but as a consistency structure ensuring compatibility of local coherent projections across
+neighboring admissible regions. The coherence-capacity formulation sharpens this statement.
+
+Let $C_{\mathrm{MTT}}(x)$ denote the coherence capacity expressed in effective spacetime
+coordinates wherever such a representation exists.
+
+\begin{assumption}[Slow Variation]
+We restrict attention to regimes in which $C_{\mathrm{MTT}}$ varies slowly compared to the
+characteristic coherence length of admissible slabs.
+\end{assumption}
+
+This assumption is implicit in all geometric derivations in the MTT corpus and corresponds
+to working at leading order in a derivative expansion.
+\paragraph{Interpretive warning.}
+The appearance of $C_{MTT}(x)$ in an effective action does \emph{not} indicate the introduction
+of a new dynamical scalar field or degree of freedom. The function $C_{MTT}(x)$ represents the
+local admissibility margin expressed in effective spacetime coordinates under the assumption
+of slow variation. Writing $C_{MTT}$ as a spacetime-dependent quantity is a descriptive
+reparameterization of projector regularity, spectral separation, and truncation control,
+not a modification of the microscopic dynamics.
+
+\begin{proposition}
+At two-derivative order, the unique local, diffeomorphism-invariant scalar functional that
+can encode spatial variation of coherence capacity is linear in the Ricci scalar.
+\end{proposition}
+
+\begin{proof}
+Locality restricts admissible terms to functions of the metric and finitely many derivatives.
+Diffeomorphism invariance restricts scalars to contractions of curvature tensors and scalar
+fields. At two-derivative order, the only scalar linear in curvature is the Ricci scalar $R$.
+\qedhere
+\end{proof}
+
+Accordingly, the effective bookkeeping action may be written as
+\begin{equation}
+S_{\mathrm{eff}}
+=
+\int \sqrt{-g}\left(
+\frac{C_{\mathrm{MTT}}(x)}{16\pi} R
++ \mathcal{L}_{\mathrm{m}}
+\right)
++ \mathcal{O}(\partial^4).
+\end{equation}
+
+\begin{remark}
+Higher-curvature terms correspond to subleading corrections suppressed by the coherence
+length. No claim of uniqueness is made beyond the chosen truncation order.
+\end{remark}
+
+\subsection{Einstein Limit}
+
+Varying the action with respect to the metric yields
+\begin{equation}
+C_{\mathrm{MTT}}\, G_{\mu\nu}
++
+(g_{\mu\nu}\Box - \nabla_\mu\nabla_\nu) C_{\mathrm{MTT}}
+=
+8\pi T_{\mu\nu}
++ \cdots .
+\end{equation}
+
+When $C_{\mathrm{MTT}}$ is constant, Einstein gravity is recovered with
+\begin{equation}
+G_{\mathrm{eff}} = \frac{1}{C_{\mathrm{MTT}}}.
+\end{equation}
+
+\begin{remark}
+Within MTT, Newton’s constant is not treated as a fundamental microscopic parameter but
+encodes, at effective level, the admissibility margin of the coherent sector.
+ This interpretation is consistent with fixed-point and
+asymptotic-safety analyses in the corpus.
+\end{remark}
+
+\section{Time and the Arrow of Irreversibility}
+
+The fundamental evolution $\Phi_\tau$ provides an ordering of configurations but does not
+define a physical time parameter. Time emerges only at the level of effective description,
+where admissible projections can be sequenced.
+
+\begin{proposition}
+Within an admissible coherence basin, effective evolution may be locally reversible.
+\end{proposition}
+
+\begin{proof}
+Within a basin, the projected evolution $T=\Pi_{\mathrm{coh}}\circ\Phi_\tau$ is contractive
+and admits a local inverse on its image so long as $C_{\mathrm{MTT}}>0$. \qedhere
+\end{proof}
+
+Irreversibility enters precisely when admissibility fails.
+
+\begin{definition}[Arrow of Time]
+The arrow of time is the ordering induced by the sequence of coherence-capacity exhaustion
+events along an effective trajectory.
+\end{definition}
+
+This arrow is structural rather than statistical. Entropy increase follows as a consequence
+of capacity loss, not as its cause.
+
+\section{Horizons, Bottlenecks, and Entropy}
+
+Coherence capacity is transported through effective descriptions and may concentrate or
+become depleted.
+
+\begin{definition}[Capacity Bottleneck]
+A capacity bottleneck is a codimension-one surface across which
+\[
+C_{\mathrm{MTT}} \to 0.
+\]
+\end{definition}
+
+\begin{theorem}
+Across a capacity bottleneck, the effective evolution admits no inverse accessible to
+observers confined to one side of the surface.
+\end{theorem}
+
+\begin{proof}
+At the bottleneck, controlled truncation fails and the conditions of
+Theorem~\ref{thm:capacity_collapse} apply locally. Hence no measurable
+section of $\Pi_{\mathrm{coh}}$ exists across the surface. \qedhere
+\end{proof}
+
+In gravitational settings, such bottlenecks correspond to horizons. Finite redistributive
+capacity implies a bound on information flux across the surface, yielding area-scaling
+entropy laws derived elsewhere in the MTT corpus.
+
+\section{Measurement and Thermalization Revisited}
+
+The same structural mechanism underlies phenomena traditionally treated as distinct.
+
+\subsection{Measurement}
+Coupling a system to an apparatus imposes additional projection constraints, locally reducing
+$C_{\mathrm{MTT}}$. When capacity vanishes, the effective description must reset to a new
+admissible basin. This reset is observed as collapse.
+
+\subsection{Thermalization}
+In high-capacity regimes, basin mixing erases memory of initial conditions. In low-capacity
+or fragmented regimes, memory persists. Thermalization is therefore capacity-dependent rather
+than universal.
+
+\section{Explicit Mapping to Coherent Consistency and Fixed Points I--VI}
+
+We summarize the correspondence between coherence capacity and existing MTT constructions.
+
+\begin{center}
+\begin{tabular}{l c}
+\textbf{MTT Construction} & \textbf{Capacity Interpretation} \\
+\hline
+Admissible slab & Region with $C_{\mathrm{MTT}}>0$ \\
+Uniform spectral gap $\Delta>0$ & Positive capacity margin \\
+Projector regularity & Capacity continuity \\
+Controlled truncation & Capacity conservation \\
+Gap closure / projector blowup & Capacity exhaustion \\
+Coherence spine & Maximal-capacity fixed point \\
+RG fixed point & Capacity-limited attractor \\
+\end{tabular}
+\end{center}
+
+\begin{remark}
+This mapping is many-to-one: multiple technical control parameters contribute to a single
+capacity margin. This nonuniqueness reflects the invariant nature of coherence capacity.
+\end{remark}
+
+\section{Undecidability and Physical Simulability}
+
+If coherence-capacity exhaustion events were decidable in advance, effective evolution would
+require evaluating admissibility under all future perturbations.
+
+\begin{proposition}
+Decidability of capacity exhaustion would require solving the global inverse problem for the
+projected evolution and would render physical evolution non-simulable in real time.
+\end{proposition}
+
+\begin{remark}
+Undecidability of admissibility failure is therefore a consistency requirement ensuring that
+physical evolution can proceed without global foresight.
+\end{remark}
+
+\section{Conclusion}
+
+We have shown that coherence capacity is the invariant admissibility margin underlying the
+diverse constructions of Modal Triplet Theory. By defining this margin explicitly in terms
+of spectral gaps, projector regularity, and controlled truncation, we close a conceptual gap
+in the MTT corpus.
+
+Coherence capacity introduces no new dynamics and no additional ontology. It is the scalar
+measure of how much effective physics can be supported before projection fails. That this
+capacity is finite is not a limitation of Modal Triplet Theory, but the reason its effective
+descriptions exist at all.
+
+\end{document}

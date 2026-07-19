@@ -1,0 +1,108 @@
+{
+  "abstract": "Modal Triplet Theory (MTT) is a framework for determining when and how physical description is possible. Rather than postulating a single fundamental encoding, MTT identifies admissibility conditions under which stable observables, effective dynamics, and probabilistic structure exist, and shows that many familiar physical frameworks arise as optimized encodings valid within specific admissible regimes. This paper provides a roadmap and dictionary for the MTT corpus. We define the core assumptions and objects, summarize the universal theorems on existence and robustness, distinguish between primary encodings and reconstruction results, and clarify the role of boundary regimes where physical description fails. No new derivations are presented; the purpose is organizational and conceptual, providing a unified map of results already established across the literature.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v11",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262454",
+    "created": "2026-04-12T11:01:16.239124+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.19535807",
+    "files": [
+      {
+        "checksum": "md5:ad043f4c1e4e0cfbca6ffd2db98bbda3",
+        "content_url": "https://zenodo.org/api/records/19535807/files/Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11%20(1).pdf/content",
+        "key": "Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11 (1).pdf",
+        "size": 330735
+      }
+    ],
+    "id": "19535807",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-04-12",
+    "record_url": "https://zenodo.org/records/19535807",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description",
+    "updated": "2026-04-12T11:01:16.827487+00:00",
+    "version": "v11.0"
+  },
+  "main_tex_sha256": "05123cdde5dcea6de34752d82562c478958429d9b8ea5c4449ff021f64488de2",
+  "paper_id": "modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed",
+  "paper_md_sha256": "18f013db2061368a1bb22f4d8f451a78e43e29f0bf4063214fc335ee9717ac71",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 38518,
+      "path": "main.bib",
+      "sha256": "792604f625b505575b5b19914fd6f12e7434e62dc7e787d01765db4ef33599d8"
+    },
+    {
+      "bytes": 94222,
+      "path": "main.tex",
+      "sha256": "05123cdde5dcea6de34752d82562c478958429d9b8ea5c4449ff021f64488de2"
+    },
+    {
+      "bytes": 92730,
+      "path": "main_updated.tex",
+      "sha256": "1999b196a9566da49e8301f84f5d02589769b494ef8f5c0c85f6ecb310fe3d09"
+    },
+    {
+      "bytes": 93229,
+      "path": "main_v11.tex",
+      "sha256": "727651aaf6d280cb51ac440e444cbfde6bfbc4b9b9b839d27d220180c70be864"
+    },
+    {
+      "bytes": 94416,
+      "path": "Modal_Triplet_Theory_overview_updated.tex",
+      "sha256": "7e4ed114d64deccecb0cb22cbae32b8194e89e11183ce15c974a0503e8d99e83"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "1 Core & Encodings/_work/Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11"
+  },
+  "source_tree_sha256": "3f65f5dec24e76b0beb47194da746ac9b11e516480b4b155255f43c67009e362",
+  "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262454",
+      "created": "2026-04-12T11:01:16.239124+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.19535807",
+      "files": [
+        {
+          "checksum": "md5:ad043f4c1e4e0cfbca6ffd2db98bbda3",
+          "content_url": "https://zenodo.org/api/records/19535807/files/Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11%20(1).pdf/content",
+          "key": "Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11 (1).pdf",
+          "size": 330735
+        }
+      ],
+      "id": "19535807",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-04-12",
+      "record_url": "https://zenodo.org/records/19535807",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description",
+      "updated": "2026-04-12T11:01:16.827487+00:00",
+      "version": "v11.0"
+    }
+  ]
+}

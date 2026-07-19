@@ -1,0 +1,91 @@
+{
+  "abstract": "We extract the exact geometry of closure strain from earlier Standard-Model interpretations. For an invertible rank-three comparison field, polar or Iwasawa reduction removes three orientation directions and leaves six strain directions. With a selected orthonormal flag these split orthogonally into scalar, traceless-diagonal, and shear sectors of dimensions 1+2+3. We give explicit projectors and a norm identity, explain the relation and distinction between symmetric shear and the Heisenberg nil algebra, and state precisely what a closure Hessian proves. In particular, Hessian positivity does not select a unique Higgs, three families, Standard Model charges, confinement, mixing, or CP violation. Those identifications require representation, connection, action, and source theorems. Current q79 and finite-algebra calculations are incorporated at their declared profile-equivalence tier, and the missing same-source intertwiner from the local strain normal form to the selected q79 carrier is isolated.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v6",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.19535510",
+    "created": "2026-04-12T10:25:14.637659+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.19535511",
+    "files": [
+      {
+        "checksum": "md5:818bbfeb9412b118a3483c4e643f01e8",
+        "content_url": "https://zenodo.org/api/records/19535511/files/Closure_Strain_Geometry_and_the_Structure_of_the_Standard_Model_v5.pdf/content",
+        "key": "Closure_Strain_Geometry_and_the_Structure_of_the_Standard_Model_v5.pdf",
+        "size": 519113
+      }
+    ],
+    "id": "19535511",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-04-12",
+    "record_url": "https://zenodo.org/records/19535511",
+    "resource_type": "publication",
+    "title": "Closure-Strain Geometry and the Structure of the Standard Model",
+    "updated": "2026-04-12T10:25:14.934705+00:00",
+    "version": "v5.0"
+  },
+  "main_tex_sha256": "374634f40a1898c6c48759356955e2a616980c295d5b05b1f6b08774f7da04f2",
+  "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+  "paper_md_sha256": "30a8c5a98e795b96c9a0393a2739e272f945337efab917b23aa5e851fe5719fb",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md",
+    "revision_evidence_sha256": "340f4cb2ee4e5a22a1b008aa1c57109cdd148da74ef36fcec0913ef20dc527b1",
+    "selected_revision": true,
+    "superseded_source_path": "10 ProtoSpinor/_work/Closure_Strain_Geometry_and_the_Structure_of_the_Standard_Model_v5"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 15516,
+      "path": "main.tex",
+      "sha256": "374634f40a1898c6c48759356955e2a616980c295d5b05b1f6b08774f7da04f2"
+    },
+    {
+      "bytes": 4221,
+      "path": "series.sty",
+      "sha256": "b0af1073f295d9ebc3bfa6020214244f0147d5cb41ebb8ccf58a0303951c6fbf"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/Closure_Strain_Geometry__Local_Normal_Forms_and_Conditional_Matter_Encodings_v6"
+  },
+  "source_tree_sha256": "521fc125ca9639ae8b72d5d93067f9a21c5d4768cece99a2f2fede1074d4e479",
+  "title": "Closure-Strain Geometry: Local Normal Forms and Conditional Matter Encodings Corrected sixth edition",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.19535510",
+      "created": "2026-04-12T10:25:14.637659+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.19535511",
+      "files": [
+        {
+          "checksum": "md5:818bbfeb9412b118a3483c4e643f01e8",
+          "content_url": "https://zenodo.org/api/records/19535511/files/Closure_Strain_Geometry_and_the_Structure_of_the_Standard_Model_v5.pdf/content",
+          "key": "Closure_Strain_Geometry_and_the_Structure_of_the_Standard_Model_v5.pdf",
+          "size": 519113
+        }
+      ],
+      "id": "19535511",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-04-12",
+      "record_url": "https://zenodo.org/records/19535511",
+      "resource_type": "publication",
+      "title": "Closure-Strain Geometry and the Structure of the Standard Model",
+      "updated": "2026-04-12T10:25:14.934705+00:00",
+      "version": "v5.0"
+    }
+  ]
+}

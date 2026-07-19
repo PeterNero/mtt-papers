@@ -1,0 +1,88 @@
+{
+  "abstract": "We derive Noncommutative Geometry (NCG), in the sense of Connes\u2019 spectral triples, from the coherent fixed-point sector of Modal Triplet Theory (MTT). Under the standing modules (bounded geometry, spectral gap, joint harmonic projector, smoothing flow, convex energy), we show: (i) the observable algebra acts faithfully on the projected Hilbert space, giving an almost-commutative spectral triple (A,H,D;J,\\Gamma); (ii) the Dirac operator D descends from the projected MTT Dirac/Laplacian structure, with compact resolvent and bounded commutators; (iii) the KO-dimension and real structure are inherited from the spin bundle; (iv) the Connes\u2013Chamseddine spectral action \\mathrm{Tr}f(D/\\Lambda) reproduces Einstein\u2013Hilbert + Yang\u2013Mills + scalar potential, with coefficients fixed by the modal bottleneck vector \\Theta; (v) inner fluctuations D\\mapsto D+A+J A J^{-1} generate the full SM gauge sector and the Higgs as a finite connection, with unimodularity yielding U(1)_Y\\times SU(2)_L\\times SU(3)_c; and (vi) renormalization and consistency match the FRG/pAQFT picture used in the MTT amplitudes and QG papers. Hence MTT provides a first-principles derivation of spectral triples, the spectral action,and the SM embedding within NCG, coherent with its containments of GR, QFT, SM, and UV-finite QG. Our renormalization discussion uses the functional renormalization group (FRG) and perturbative algebraic QFT (pAQFT).",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v3",
+  "date": "September 19, 2025",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.17162075",
+    "created": "2025-09-19T18:41:05.666571+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.17162076",
+    "files": [
+      {
+        "checksum": "md5:69276b4bae51cc0ff4b2e0ddc0d4a814",
+        "content_url": "https://zenodo.org/api/records/17162076/files/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry.pdf/content",
+        "key": "Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry.pdf",
+        "size": 271978
+      }
+    ],
+    "id": "17162076",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2025-09-19",
+    "record_url": "https://zenodo.org/records/17162076",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: From MTT to Noncommutative Geometry",
+    "updated": "2025-09-19T18:41:05.994718+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "7e5f37f5a59ddce8e293d5feaf817a7f6f7aa4c0321dff7259daa5bd985e0d7f",
+  "paper_id": "from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3",
+  "paper_md_sha256": "24576b1473400019e835ca7dafa155fb00cf81e4613914cb39690c6cbc18eed2",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 3348,
+      "path": "main.bib",
+      "sha256": "926ed16db755e35bfd169e32db6436d45ff4e46d9e5c82bf151603cbe9f6da54"
+    },
+    {
+      "bytes": 11262,
+      "path": "main.tex",
+      "sha256": "7e5f37f5a59ddce8e293d5feaf817a7f6f7aa4c0321dff7259daa5bd985e0d7f"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry_v3"
+  },
+  "source_tree_sha256": "6c7facea812751fb80ea6c53bb6d14189f34e52dd6209962694897683a1782d2",
+  "title": "From Modal Triplet Theory to Noncommutative Geometry: Spectral Triples, Spectral Action, and the Standard Model Embedding",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17162075",
+      "created": "2025-09-19T18:41:05.666571+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.17162076",
+      "files": [
+        {
+          "checksum": "md5:69276b4bae51cc0ff4b2e0ddc0d4a814",
+          "content_url": "https://zenodo.org/api/records/17162076/files/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry.pdf/content",
+          "key": "Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry.pdf",
+          "size": 271978
+        }
+      ],
+      "id": "17162076",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2025-09-19",
+      "record_url": "https://zenodo.org/records/17162076",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: From MTT to Noncommutative Geometry",
+      "updated": "2025-09-19T18:41:05.994718+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

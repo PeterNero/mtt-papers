@@ -1,0 +1,83 @@
+{
+  "abstract": "We establish the Tier\u20131 low\u2013hanging fruit predictions of the Modal Triplet Theory (MTT) rigorously, using only topology, group theory, and selection rules\u2014no internal metric or harmonic integrals. On a smooth oriented spin four\u2013manifold Y_4, with three determinant line bundles obeying flux balance and pairwise twist sectors defined by the line bundles L_{ij}, we prove: (i) chiral family numbers come from a Dirac index formula; (ii) a topological criterion for Dirac vs. Majorana masses; (iii) absence of the SU(2) Witten global anomaly for three families; (iv) exact Standard\u2013Model hypercharges from MTT difference charges; (v) full cancellation of all local gauge/gravitational anomalies; (vi) strong\u2013CP relaxation via a central PQ\u2013like symmetry with integer domain\u2013wall number; (vii) forbiddance of many baryon/lepton number violating operators by line\u2013bundle triviality; (viii) equality of photon and graviton wave speeds in the GR\u2013compatible EFT; and (ix) the holonomy determinant/phase sum rule implied by the canonical trivialization L_{12}\\!\\otimes L_{23}\\!\\otimes L_{31}\\!\\cong\\!\\mathbb C.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18260713",
+    "created": "2026-01-15T18:06:17.833927+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18260714",
+    "files": [
+      {
+        "checksum": "md5:88bfacd7528fbcd39f7f9a4b7b0558b5",
+        "content_url": "https://zenodo.org/api/records/18260714/files/Topology__Only_Constraints_in_Modal_Triplet_Theory%20(4).pdf/content",
+        "key": "Topology__Only_Constraints_in_Modal_Triplet_Theory (4).pdf",
+        "size": 285400
+      }
+    ],
+    "id": "18260714",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18260714",
+    "resource_type": "publication",
+    "title": "Topology-Only Constraints in Modal Triplet Theory: Indices, Anomalies, and Line-Bundle Triviality",
+    "updated": "2026-01-15T18:06:18.218867+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "cc019b39d72feaf6a7feb926cda2e60ee224b2fa46aee8538a19b052f9bc6c3f",
+  "paper_id": "topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2",
+  "paper_md_sha256": "19e15c103eee4f957e1327e527b6d6a4f085749d08b0b9b04e30f3593517b0cb",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 18908,
+      "path": "main.tex",
+      "sha256": "cc019b39d72feaf6a7feb926cda2e60ee224b2fa46aee8538a19b052f9bc6c3f"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Topology__Only_Constraints_in_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "f64332db80b4e591929e829e143fb064983920739fae8d113c72a1cd444a3fea",
+  "title": "Topology\u2013Only Constraints in Modal Triplet Theory (MTT): Indices, Anomalies, and Line\u2013Bundle Triviality",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18260713",
+      "created": "2026-01-15T18:06:17.833927+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18260714",
+      "files": [
+        {
+          "checksum": "md5:88bfacd7528fbcd39f7f9a4b7b0558b5",
+          "content_url": "https://zenodo.org/api/records/18260714/files/Topology__Only_Constraints_in_Modal_Triplet_Theory%20(4).pdf/content",
+          "key": "Topology__Only_Constraints_in_Modal_Triplet_Theory (4).pdf",
+          "size": 285400
+        }
+      ],
+      "id": "18260714",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18260714",
+      "resource_type": "publication",
+      "title": "Topology-Only Constraints in Modal Triplet Theory: Indices, Anomalies, and Line-Bundle Triviality",
+      "updated": "2026-01-15T18:06:18.218867+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "abstract": "We derive horizon formation, area laws, and entropy bounds as necessary consequences of coherence-capacity bottlenecks in projection-based effective descriptions. Building on the theory of coherence capacity and its transport developed in preceding work, we show that whenever inward capacity flux exceeds outward transport, admissibility fails on a codimension-one surface. Such surfaces act as horizons: effective descriptions become noninvertible across them, and global information recovery is impossible. We demonstrate that entropy arises as the bookkeeping of coherence capacity loss and that area laws follow from geometric bounds on capacity flux. The results are independent of microscopic dynamics and apply to any effective theory with finite stability margins.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18256339",
+    "created": "2026-01-21T04:55:16.774740+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18322069",
+    "files": [
+      {
+        "checksum": "md5:e45f1639a4c383daf52b44f54199373a",
+        "content_url": "https://zenodo.org/api/records/18322069/files/Horizons__Area_Laws__and_Entropy_from_Coherence_Capacity_Bottlenecks_v2.pdf/content",
+        "key": "Horizons__Area_Laws__and_Entropy_from_Coherence_Capacity_Bottlenecks_v2.pdf",
+        "size": 200637
+      }
+    ],
+    "id": "18322069",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18322069",
+    "resource_type": "publication",
+    "title": "Horizons, Area Laws, and Entropy from Coherence Capacity Bottlenecks",
+    "updated": "2026-01-21T04:55:17.240164+00:00",
+    "version": "v2.0"
+  },
+  "main_tex_sha256": "5c23ace35477bc30b6c0452d7a94ac980a8499d0a0bfffeae65fe26cda9923d2",
+  "paper_id": "horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71",
+  "paper_md_sha256": "d186a6d60af3e222e6d29fefc65181b22a66da4cfb4a27ea34b2a3b821f33420",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 12585,
+      "path": "main.tex",
+      "sha256": "5c23ace35477bc30b6c0452d7a94ac980a8499d0a0bfffeae65fe26cda9923d2"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "14 Coherence Capacity Program/_work/Horizons__Area_Laws__and_Entropy_from_Coherence_Capacity_Bottlenecks_v2"
+  },
+  "source_tree_sha256": "4cf1af3388dcef3ba087f66845576a708080a3c4086666bb6f715fc66aa03b4b",
+  "title": "Horizons, Area Laws, and Entropy from Coherence Capacity Bottlenecks",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18256339",
+      "created": "2026-01-21T04:55:16.774740+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18322069",
+      "files": [
+        {
+          "checksum": "md5:e45f1639a4c383daf52b44f54199373a",
+          "content_url": "https://zenodo.org/api/records/18322069/files/Horizons__Area_Laws__and_Entropy_from_Coherence_Capacity_Bottlenecks_v2.pdf/content",
+          "key": "Horizons__Area_Laws__and_Entropy_from_Coherence_Capacity_Bottlenecks_v2.pdf",
+          "size": 200637
+        }
+      ],
+      "id": "18322069",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18322069",
+      "resource_type": "publication",
+      "title": "Horizons, Area Laws, and Entropy from Coherence Capacity Bottlenecks",
+      "updated": "2026-01-21T04:55:17.240164+00:00",
+      "version": "v2.0"
+    }
+  ]
+}

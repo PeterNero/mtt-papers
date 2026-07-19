@@ -1,0 +1,526 @@
+
+\documentclass[11pt]{article}
+\usepackage{series}
+\usepackage{array}
+\usepackage{booktabs}
+
+\title{Classical Constraint Deltas and Microcanonical Shells\\
+\large Admissibility-Shell Limits in Modal Triplet Theory}
+\author{Peter Nero}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+\seriestagline
+
+\begin{abstract}
+Dirac delta functions enter classical and statistical mechanics most prominently as
+constraint distributions, for example in microcanonical measures
+\[
+  \rho_E(z)\propto \delta(H(z)-E)
+\]
+and in phase-space integrals restricted to a constraint surface. In the delta/projection
+program of Modal Triplet Theory (MTT), such deltas are not treated as primitive
+objects. They are re-read as singular limits of finite admissibility shells: finite-thickness
+neighborhoods around constraint surfaces that become exact only when the allowed
+tolerance is sent to zero.
+
+This paper develops the classical/statistical-mechanical member of that program. We
+prove a coarea-based shell theorem: for a regular value \(E\) of a smooth Hamiltonian
+\(H:M\to\mathbb R\), normalized approximate identities
+\[
+  \eta_\varepsilon(H(z)-E)
+\]
+converge distributionally to the surface delta \(\delta(H-E)\), with the standard
+coarea measure \(d\Sigma/\abs{\nabla H}\). We then formulate finite-thickness
+microcanonical shells, show their convergence to the sharp microcanonical measure,
+and interpret the result in MTT language: \(\delta(H-E)\) is the zero-thickness limit of
+an admissibility shell around a bookkeeping constraint.
+
+The paper also distinguishes three layers often conflated in formal notation: exact
+constraint surfaces, finite experimental/thermodynamic tolerance shells, and singular
+delta notation. The result is a concrete extension of the delta/projection program from
+QFT and measurement to classical and statistical mechanics.
+\end{abstract}
+
+\tableofcontents
+
+\section{Purpose and claim discipline}
+
+The preceding papers in this sequence treated Dirac deltas as singular shadows of
+projection in several settings: coherent projection kernels, point-source Green
+functions, gauge fixing, measurement effects, contact interactions, scattering
+bookkeeping, spectral peaks, and white-noise correlations. This paper treats the
+classical and statistical-mechanical case.
+
+The guiding example is the microcanonical expression
+\[
+  \Omega(E)=\int_M \delta(H(z)-E)\,dz,
+\]
+where \(M\) is phase space and \(H\) is the Hamiltonian. Standard notation says this
+integral is restricted to the energy surface \(H=E\). The MTT interpretation asks:
+what finite admissible process has been idealized by the delta?
+
+The answer developed here is:
+\[
+\boxed{\delta(H-E)=\text{zero-thickness limit of an admissibility shell around }H=E.}
+\]
+
+\subsection{Non-claims}
+
+This paper does not claim that classical mechanics is wrong, that the microcanonical
+ensemble is invalid, or that distributional constraints should be abandoned. It proves a
+standard coarea/approximate-identity result and then gives its MTT interpretation.
+
+The proved mathematical statement is narrow:
+finite-thickness shell densities converge to the surface delta under regularity
+hypotheses. The MTT claim is interpretive: the sharp delta is the singular encoding
+obtained when finite admissibility tolerance is idealized away.
+
+\section{Constraint deltas in phase space}
+
+Let \(M\) be an \(n\)-dimensional smooth Riemannian manifold, interpreted as a
+configuration or phase space, with volume measure \(d\mu\). Let
+\[
+  C:M\to\bbR
+\]
+be a smooth constraint function. The formal expression
+\[
+  \delta(C(z))
+\]
+restricts integrals to the constraint surface \(C^{-1}(0)\). More generally,
+\[
+  \delta(H(z)-E)
+\]
+restricts to the energy surface \(H^{-1}(E)\).
+
+When \(0\) is a regular value of \(C\), the coarea formula gives the rigorous meaning:
+\[
+  \int_M f(z)\delta(C(z))\,d\mu(z)
+  =
+  \int_{C^{-1}(0)} \frac{f(z)}{\abs{\nabla C(z)}}\,d\Sigma(z).
+\]
+Likewise, if \(E\) is a regular value of \(H\),
+\[
+  \int_M f(z)\delta(H(z)-E)\,d\mu(z)
+  =
+  \int_{H^{-1}(E)} \frac{f(z)}{\abs{\nabla H(z)}}\,d\Sigma_E(z).
+\]
+
+The present paper replaces the sharp delta by a finite shell kernel.
+
+\begin{remark}[Regular-value caveat]
+The clean surface-delta formula requires the target value to be regular. For
+\(\delta(H-E)\), this means
+\[
+  \nabla H(z)\neq 0 \qquad \text{for all } z\in H^{-1}(E).
+\]
+At critical energies the coarea density may become singular, the topology of the
+level set can change, and the finite-shell limit may require separate analysis.
+All theorem-level statements below are made in the regular-value regime.
+\end{remark}
+
+
+\begin{definition}[Approximate identity on the constraint variable]
+Let \(\eta\in C_c^\infty(\bbR)\), \(\eta\ge0\), and
+\[
+  \int_{\bbR}\eta(u)\,du=1.
+\]
+For \(\varepsilon>0\), define
+\[
+  \eta_\varepsilon(u):=\frac1\varepsilon\eta\!\left(\frac{u}{\varepsilon}\right).
+\]
+Then \(\eta_\varepsilon\to\delta_0\) in distributions on \(\bbR\).
+\end{definition}
+
+\begin{definition}[Finite admissibility shell]
+For a constraint \(C:M\to\bbR\), the finite admissibility shell of width \(\varepsilon\)
+around \(C=0\) is the weighted density
+\[
+  \eta_\varepsilon(C(z))\,d\mu(z).
+\]
+For an energy function \(H\), the shell around energy \(E\) is
+\[
+  \eta_\varepsilon(H(z)-E)\,d\mu(z).
+\]
+\end{definition}
+
+
+\section{Gaussian admissibility shells}
+
+A useful non-compact approximate identity is the Gaussian shell
+\[
+  \eta_\varepsilon(u)
+  =
+  \frac{1}{\sqrt{2\pi}\varepsilon}
+  \exp\!\left(-\frac{u^2}{2\varepsilon^2}\right).
+\]
+For an energy constraint this gives
+\[
+  \eta_\varepsilon(H(z)-E)
+  =
+  \frac{1}{\sqrt{2\pi}\varepsilon}
+  \exp\!\left(-\frac{(H(z)-E)^2}{2\varepsilon^2}\right).
+\]
+This is often the most natural finite-admissibility model: configurations are not
+discarded abruptly outside a hard band, but are penalized according to squared
+constraint mismatch. In the limit \(\varepsilon\downarrow0\), the Gaussian shell
+converges to the sharp surface delta in the same distributional sense as the compactly
+supported approximate identities used in the theorem below.
+
+More generally, any family \(\eta_\varepsilon\) forming an approximate identity in the
+constraint variable gives the same limiting surface measure. The choice of kernel
+therefore describes the finite-tolerance profile, not the sharp limiting constraint.
+
+\section{Coarea shell theorem}
+
+\begin{theorem}[Constraint shell convergence]\label{thm:shell}
+Let \(M\) be a smooth Riemannian manifold and let \(C:M\to\bbR\) be smooth. Let
+\(0\) be a regular value of \(C\). Suppose \(f\in C_c^\infty(M)\), and suppose the
+support of \(f\) meets only a compact region on which \(\nabla C\neq0\) in a
+neighborhood of \(C^{-1}(0)\). Then
+\[
+  \lim_{\varepsilon\downarrow0}
+  \int_M f(z)\eta_\varepsilon(C(z))\,d\mu(z)
+  =
+  \int_{C^{-1}(0)} \frac{f(z)}{\abs{\nabla C(z)}}\,d\Sigma(z).
+\]
+Equivalently,
+\[
+  \eta_\varepsilon(C)\to \delta(C)
+\]
+as distributions on the tested region.
+\end{theorem}
+
+\begin{proof}
+By the coarea formula, for sufficiently small \(\varepsilon\),
+\[
+  \int_M f(z)\eta_\varepsilon(C(z))\,d\mu(z)
+  =
+  \int_{\bbR}\eta_\varepsilon(c)
+  \left(
+    \int_{C^{-1}(c)}\frac{f(z)}{\abs{\nabla C(z)}}\,d\Sigma_c(z)
+  \right)dc.
+\]
+Define
+\[
+  F(c):=\int_{C^{-1}(c)}\frac{f(z)}{\abs{\nabla C(z)}}\,d\Sigma_c(z).
+\]
+Because \(0\) is a regular value and \(f\) has compact support in a region where
+\(\nabla C\neq0\), the regular level sets form a smooth local family and \(F(c)\) is
+continuous near \(c=0\). Therefore
+\[
+  \int_{\bbR}\eta_\varepsilon(c)F(c)\,dc\to F(0)
+\]
+by the approximate-identity property of \(\eta_\varepsilon\). This gives
+\[
+  F(0)=\int_{C^{-1}(0)}\frac{f(z)}{\abs{\nabla C(z)}}\,d\Sigma(z).
+\]
+\end{proof}
+
+\begin{corollary}[Energy-shell convergence]\label{cor:energy}
+Let \(H:M\to\bbR\) be smooth and let \(E\) be a regular value. Then, for
+\(f\in C_c^\infty(M)\),
+\[
+  \lim_{\varepsilon\downarrow0}
+  \int_M f(z)\eta_\varepsilon(H(z)-E)\,d\mu(z)
+  =
+  \int_{H^{-1}(E)}\frac{f(z)}{\abs{\nabla H(z)}}\,d\Sigma_E(z).
+\]
+Thus
+\[
+  \eta_\varepsilon(H-E)\to\delta(H-E)
+\]
+distributionally.
+\end{corollary}
+
+\section{Microcanonical shells}
+
+The standard microcanonical density is often written
+\[
+  \rho_E(z)=\frac{\delta(H(z)-E)}{\Omega(E)},
+  \qquad
+  \Omega(E)=\int_M\delta(H(z)-E)\,d\mu(z).
+\]
+This is a surface measure on the energy shell.
+
+The finite-shell version is
+\[
+  \rho_{E,\varepsilon}(z)
+  =
+  \frac{\eta_\varepsilon(H(z)-E)}{\Omega_\varepsilon(E)},
+  \qquad
+  \Omega_\varepsilon(E)
+  =
+  \int_M \eta_\varepsilon(H(z)-E)\,d\mu(z).
+\]
+
+\begin{proposition}[Microcanonical shell convergence]
+Assume \(E\) is a regular value of \(H\) and that the relevant shells are contained in a
+compact region, or that the integrals are finite by confinement. If
+\[
+  \Omega(E):=\int_{H^{-1}(E)}\frac{1}{\abs{\nabla H}}\,d\Sigma_E
+\]
+is finite and nonzero, then for every test function \(f\),
+\[
+  \int_M f(z)\rho_{E,\varepsilon}(z)\,d\mu(z)
+  \to
+  \frac{1}{\Omega(E)}
+  \int_{H^{-1}(E)}\frac{f(z)}{\abs{\nabla H(z)}}\,d\Sigma_E(z).
+\]
+\end{proposition}
+
+\begin{proof}
+Apply \Cref{cor:energy} to \(f\) and to \(1\). The denominator
+\(\Omega_\varepsilon(E)\) converges to \(\Omega(E)\), which is finite and nonzero.
+Taking the quotient gives the result.
+\end{proof}
+
+Thus the sharp microcanonical ensemble is the zero-thickness limit of ordinary
+finite-width energy shells.
+
+\section{Worked example: one-dimensional energy shell}
+
+Consider the one-dimensional phase space variable \(p\in\bbR\) with
+\[
+  H(p)=\frac{p^2}{2m}.
+\]
+For \(E>0\), the energy shell consists of two points
+\[
+  p_\pm=\pm\sqrt{2mE}.
+\]
+For a test function \(f\),
+\[
+  \int_{\bbR} f(p)\delta\!\left(\frac{p^2}{2m}-E\right)\,dp
+  =
+  \sum_{\sigma=\pm}
+  \frac{f(p_\sigma)}{\abs{H'(p_\sigma)}}.
+\]
+Since
+\[
+  H'(p)=\frac{p}{m},
+\]
+we get
+\[
+  \int_{\bbR} f(p)\delta\!\left(\frac{p^2}{2m}-E\right)\,dp
+  =
+  \frac{m}{\sqrt{2mE}}
+  \left[f(\sqrt{2mE})+f(-\sqrt{2mE})\right].
+\]
+A finite shell replaces this by
+\[
+  \int_{\bbR} f(p)\eta_\varepsilon\!\left(\frac{p^2}{2m}-E\right)\,dp,
+\]
+which samples a finite neighborhood of both energy-shell points. The exact delta result
+is recovered as \(\varepsilon\downarrow0\).
+
+This example makes the interpretation visible: the delta does not describe a new
+object on phase space. It is the zero-thickness limit of a finite energy tolerance.
+
+\section{Multiple constraints and admissibility}
+
+The same structure appears for several simultaneous constraints
+\[
+  C_a(z)=0,\qquad a=1,\dots,r.
+\]
+Let
+\[
+  C=(C_1,\dots,C_r):M\to\bbR^r.
+\]
+If \(0\) is a regular value of \(C\), then the constraint surface \(C^{-1}(0)\) is a
+smooth submanifold of codimension \(r\). The sharp formal density is
+\[
+  \delta^{(r)}(C(z)).
+\]
+A finite admissibility tube is obtained from an approximate identity
+\[
+  \eta_\varepsilon^{(r)}(u)
+  =
+  \varepsilon^{-r}\eta^{(r)}(u/\varepsilon),
+  \qquad
+  \int_{\bbR^r}\eta^{(r)}(u)\,du=1,
+\]
+by writing
+\[
+  \eta_\varepsilon^{(r)}(C(z))\,d\mu(z).
+\]
+
+\begin{theorem}[Multiple-constraint shell convergence]\label{thm:multi-shell}
+Let \(C:M\to\bbR^r\) be smooth and let \(0\) be a regular value. Let
+\(f\in C_c^\infty(M)\) be supported in a region where \(DC\) has full rank \(r\) near
+\(C^{-1}(0)\). Then
+\[
+  \lim_{\varepsilon\downarrow0}
+  \int_M f(z)\eta_\varepsilon^{(r)}(C(z))\,d\mu(z)
+  =
+  \int_{C^{-1}(0)}
+  \frac{f(z)}{J_C(z)}\,d\Sigma(z),
+\]
+where
+\[
+  J_C(z)
+  =
+  \sqrt{\det\!\left(DC(z)DC(z)^\ast\right)}
+\]
+is the normal Jacobian appearing in the multidimensional coarea formula.
+Equivalently,
+\[
+  \eta_\varepsilon^{(r)}(C)\to\delta^{(r)}(C)
+\]
+distributionally on the tested regular region.
+\end{theorem}
+
+\begin{proof}
+The multidimensional coarea formula gives
+\[
+  \int_M f(z)\eta_\varepsilon^{(r)}(C(z))\,d\mu(z)
+  =
+  \int_{\bbR^r}\eta_\varepsilon^{(r)}(u)
+  \left(
+    \int_{C^{-1}(u)}\frac{f(z)}{J_C(z)}\,d\Sigma_u(z)
+  \right)du .
+\]
+The inner expression is continuous near \(u=0\) under the stated regularity and compact
+support assumptions. The approximate-identity property on \(\bbR^r\) then gives the
+claimed limit.
+\end{proof}
+
+This multiconstraint version is the bridge to Hamiltonian constraints, gauge
+constraints, and path-integral constraint factors. It is also the precise classical
+counterpart of replacing a hard constraint surface by a finite admissibility tube.
+
+\section{MTT interpretation}
+
+In MTT terms, a classical constraint delta is a bookkeeping/admissibility object. It
+does not merely localize in ordinary space; it restricts the effective description to a
+surface of allowed states.
+
+The triadic placement is:
+
+\begin{center}
+\begin{tabular}{>{\raggedright}p{0.25\linewidth}>{\raggedright\arraybackslash}p{0.65\linewidth}}
+\toprule
+Standard object & MTT reading\\
+\midrule
+\(\delta(H-E)\) & zero-thickness energy admissibility shell\\
+\(\delta(C)\) & sharp constraint-surface selection\\
+\(\eta_\varepsilon(H-E)\) & finite tolerance around bookkeeping constraint\\
+microcanonical ensemble & normalized admissibility shell measure\\
+coarea factor \(1/\abs{\nabla H}\) & projection Jacobian from phase volume to constraint surface\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Thus the classical constraint delta belongs primarily to the bookkeeping side of the
+program. It is closest to the circle role: exact return or conservation closure. However,
+when constraint enforcement selects a reduced representative surface, it also has the
+same formal profile as the selection deltas studied in the gauge and measurement papers.
+
+
+\section{Canonical weighting as soft admissibility}
+
+The canonical ensemble
+\[
+  \rho_\beta(z)=\frac{e^{-\beta H(z)}}{Z(\beta)}
+\]
+is not a delta shell and should not be confused with a microcanonical constraint. It
+does not restrict the system to one energy surface. Instead, it weights many energy
+surfaces with a Boltzmann factor.
+
+Nevertheless, from the present perspective it is useful as a contrasting example:
+\[
+  \delta(H-E)
+  \quad\text{is hard shell selection,}
+\]
+whereas
+\[
+  e^{-\beta H}
+  \quad\text{is soft energetic weighting.}
+\]
+Thus the canonical ensemble belongs to the broader family of finite weighting
+procedures, while the microcanonical delta is the zero-thickness limit of a finite
+constraint shell. The MTT reading should therefore distinguish hard admissibility
+selection from soft statistical weighting.
+
+\section{Constraint deltas versus physical conservation}
+
+Finite shell width does not necessarily mean that the underlying closed system violates
+the constraint. It may mean only that the effective description carries finite tolerance,
+finite resolution, or finite observational access.
+
+For example, a microcanonical shell of width \(\varepsilon\) can represent:
+\begin{enumerate}
+  \item experimental energy resolution;
+  \item thermodynamic coarse graining;
+  \item finite admissibility tolerance in the effective description;
+  \item deliberate smoothing of an otherwise singular surface measure.
+\end{enumerate}
+
+The sharp delta is the idealization in which this tolerance is sent to zero.
+
+\section{Relation to the delta/projection program}
+
+The present paper adds the classical/statistical entry:
+
+\begin{center}
+\begin{tabular}{>{\raggedright}p{0.32\linewidth}>{\raggedright\arraybackslash}p{0.58\linewidth}}
+\toprule
+Delta occurrence & Finite object\\
+\midrule
+\(\delta(x-y)\) & coherent projection kernel\\
+\(LG=\delta\) & coherent finite source\\
+\(\delta(G[A])\) & finite gauge-section tube\\
+\(|x\rangle\langle x|\) & finite measurement effect\\
+\(\phi(x)^n\) contact vertex & finite coherent overlap vertex\\
+\(\delta(\sum p_i)\) & finite bookkeeping window\\
+\(\delta(E_f-E_i)\) & finite-time transition kernel\\
+\(\delta(E-E_0)\) spectral peak & finite-lifetime resonance\\
+\(\delta(t-s)\) noise correlation & finite-memory disturbance kernel\\
+\(\delta(H-E)\) microcanonical shell & finite admissibility shell\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The unifying rule is unchanged:
+
+\[
+\boxed{\text{A delta marks where a finite admissible process has been idealized as exact.}}
+\]
+
+\section{Scope of proof}
+
+\begin{center}
+\begin{tabular}{>{\raggedright}p{0.25\linewidth}>{\raggedright\arraybackslash}p{0.65\linewidth}}
+\toprule
+Layer & Status\\
+\midrule
+Coarea shell convergence & proved under regular-value and compactness/finite-integral hypotheses\\
+Microcanonical shell convergence & proved as normalized consequence of coarea convergence\\
+Multiple-constraint shell convergence & proved under regular-value/full-rank hypotheses\\
+MTT admissibility-shell reading & interpretive classification\\
+Derivation of classical constraints from MTT & not claimed here\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Conclusion}
+
+Classical and statistical mechanics use Dirac deltas to restrict phase-space integrals to
+constraint surfaces. The microcanonical density \(\delta(H-E)\) is the most familiar
+example. This paper showed that such deltas arise as zero-thickness limits of finite
+admissibility shells.
+
+The rigorous mathematical content is the coarea shell theorem:
+\[
+  \eta_\varepsilon(H-E)\to\delta(H-E)
+\]
+distributionally, with the correct surface measure \(d\Sigma_E/\abs{\nabla H}\). The
+MTT interpretation is that sharp classical constraints are not primitive delta objects;
+they are singular encodings of finite tolerance shells around admissible bookkeeping
+surfaces.
+
+Thus the delta/projection program extends naturally into classical and statistical
+mechanics. The same pattern repeats: finite admissible structure first, singular delta
+notation only as an ideal limit.
+
+\end{document}

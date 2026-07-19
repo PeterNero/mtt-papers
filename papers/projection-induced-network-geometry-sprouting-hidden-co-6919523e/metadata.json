@@ -1,0 +1,88 @@
+{
+  "abstract": "Empirical studies of biological, physical, and engineered networks reveal robust structural features that defy explanation by local optimization rules. In particular, junction motifs exhibit hidden correlations among branching angles, thickness ratios, and node degrees, and frequently display sprouting behavior in which a thin branch emerges approximately orthogonal to an otherwise straight dominant channel. Existing explanations typically appeal to variational principles or string\u2013theoretic minimal surfaces. In this work we show that neither optimization nor string theory is required. Working entirely within Modal Triplet Theory (MTT), we derive these network phenomena directly from projection-limited coherent description. The central mechanism is admissibility: effective network configurations exist only as shadows of an underlying coherent sector, selected by spectral gaps, bounded projectors, and stability margins. We prove that the nonexistence of a global reconstruction map forces hidden compatibility constraints among local network observables, ruling out purely local generative models. We further show that near the boundary of admissibility, only a restricted class of local deformations preserves coherence. These admissibility-preserving deformations correspond precisely to empirical sprouts. Using operator-theoretic bounds and a Schur\u2013complement analysis, we demonstrate that thin branches couple perturbatively to a dominant transport channel, while bending the dominant channel consumes coherence capacity coercively. This yields a quantitative prediction: the maximal admissible sprout thickness ratio scales as the square root of the coherence capacity, \\rho_{\\mathrm{th}} \\sim \\sqrt{C}. We derive statistical concentration results showing that sprout motifs become dominant in boundary-layer ensembles and provide a concrete empirical protocol for testing these predictions using capacity proxies such as curvature, crowding, or taper gradients. Our results establish sprouting as a universal boundary-stabilization phenomenon inherent to projection-limited descriptions, unifying disparate network observations under a single structural principle and extending the scope of MTT beyond quantum and geometric settings to complex networks.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18274628",
+    "created": "2026-01-16T22:48:04.133191+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18274629",
+    "files": [
+      {
+        "checksum": "md5:e417b5a34bdaa0a0c61893812718507d",
+        "content_url": "https://zenodo.org/api/records/18274629/files/Projection_Induced_Network_Geometry%20(1).pdf/content",
+        "key": "Projection_Induced_Network_Geometry (1).pdf",
+        "size": 477281
+      }
+    ],
+    "id": "18274629",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-16",
+    "record_url": "https://zenodo.org/records/18274629",
+    "resource_type": "publication",
+    "title": "Projection-Induced Network Geometry",
+    "updated": "2026-01-16T22:48:04.580169+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "bf63dbf18d5800d543ce3421d3aa732ca6bfb857b83d627b86c29f4e550d0fcd",
+  "paper_id": "projection-induced-network-geometry-sprouting-hidden-co-6919523e",
+  "paper_md_sha256": "e85b3d5d74f96de1935f8fe2e236ee9f22762bf7f8bf3f6f3751bc37a918c2bd",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 95529,
+      "path": "main.tex",
+      "sha256": "bf63dbf18d5800d543ce3421d3aa732ca6bfb857b83d627b86c29f4e550d0fcd"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "14 Coherence Capacity Program/_work/Projection_Induced_Network_Geometry (1)"
+  },
+  "source_tree_sha256": "7ef0d9b4983389c2be1af80e14ecc6432368a1fa184151873df52dea96f4abf1",
+  "title": "Projection-Induced Network Geometry Sprouting, Hidden Correlations, and Boundary Stabilization from Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18274628",
+      "created": "2026-01-16T22:48:04.133191+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18274629",
+      "files": [
+        {
+          "checksum": "md5:e417b5a34bdaa0a0c61893812718507d",
+          "content_url": "https://zenodo.org/api/records/18274629/files/Projection_Induced_Network_Geometry%20(1).pdf/content",
+          "key": "Projection_Induced_Network_Geometry (1).pdf",
+          "size": 477281
+        }
+      ],
+      "id": "18274629",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-16",
+      "record_url": "https://zenodo.org/records/18274629",
+      "resource_type": "publication",
+      "title": "Projection-Induced Network Geometry",
+      "updated": "2026-01-16T22:48:04.580169+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

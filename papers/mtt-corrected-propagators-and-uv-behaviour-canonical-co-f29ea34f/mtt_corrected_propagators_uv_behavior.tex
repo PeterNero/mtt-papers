@@ -1,0 +1,559 @@
+
+\documentclass[11pt]{article}
+\usepackage{series}
+\usepackage{booktabs}
+\usepackage{array}
+
+\renewcommand\SeriesShort{Delta Projection}
+\renewcommand\PartRoman{XI}
+\renewcommand\PartArabic{11}
+\renewcommand\PartsInSeries{XI}
+
+\title{MTT-Corrected Propagators and UV Behaviour\\
+\large Canonical Coherent Filtering from Fixed-Point Data}
+\author{Peter Nero}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The preceding delta-projection papers established a structural dictionary: many Dirac delta functions in physics are sharp limits of finite kernels, filters, shells, windows, or survivor-basin effects. The remaining execution-level problem is to determine which finite kernel is selected by Modal Triplet Theory (MTT), rather than introducing an arbitrary regulator. Building on the canonical coherent-kernel construction from fixed-point data, this paper studies the first concrete dynamical application: propagators. In a flat coherent chart, with positive quadratic operator \(L_m=-\Delta+m^2\) and MTT proper-time scale \(\tau>0\), the canonical corrected Euclidean propagator is
+\[
+        \Delta_\tau(k)=\frac{e^{-\tau |k|^2}}{|k|^2+m^2}.
+\]
+More generally, with a coherent spectral window \(B(A)=P\chi(A)e^{-\tau A/2}\chi(A)P\), the corrected covariance is
+\[
+        \Delta_{\mathrm{MTT}} = B(A)L_m^{-1}B(A)^\ast .
+\]
+We prove that \(\Delta_\tau\) recovers the ordinary propagator distributionally as \(\tau\downarrow0\), has finite coincident value in every finite dimension for \(\tau>0\), and yields Gaussian UV domination. For scalar polynomial perturbation theory in a fixed coherent sector, every Euclidean Feynman integral whose internal lines carry the canonical Gaussian filter is absolutely UV finite. The leading low-momentum correction is controlled by \(\tau |k|^2\), giving an effective coherence scale \(\Lambda_{\mathrm{eff}}\sim\tau^{-1/2}\). These results do not yet fix the numerical value of \(\tau\) in a physical sector; rather, they show that once fixed-point operator data determine \(\tau\), the propagator correction is no longer arbitrary.
+\end{abstract}
+
+\tableofcontents
+
+\section{Purpose and claim discipline}
+
+The earlier papers in this sequence established forward singular-limit statements of the form
+\[
+        K_\epsilon \longrightarrow \delta .
+\]
+That is mathematically useful but not sufficient for prediction. The predictive direction is
+\[
+        \text{MTT fixed-point data}
+        \Longrightarrow
+        K_{\mathrm{MTT}}
+        \Longrightarrow
+        \text{finite correction}.
+\]
+The companion paper on canonical coherent kernels supplied the first step: fixed-point operator data select a finite kernel through functional calculus. The present paper applies that kernel to propagators.
+
+The paper proves a controlled statement in a flat Euclidean coherent chart. It does not claim to complete the full interacting Standard Model, quantum gravity, or nonperturbative MTT. It proves that the canonical MTT filter gives a specific UV-softened propagator and that this propagator has precise convergence, finiteness, and perturbative domination properties.
+
+\begin{center}
+\begin{tabular}{p{0.28\linewidth}p{0.62\linewidth}}
+\toprule
+Status & Claim \\
+\midrule
+Proved here & Gaussian-proper-time filtered propagators are finite at coincidence and recover the local propagator as \(\tau\downarrow0\). \\
+Proved here & Euclidean scalar Feynman integrals with filtered internal lines are absolutely UV finite. \\
+Interpreted here & \(\tau\) is the downstream proper-time/coherence scale inherited from MTT fixed-point data. \\
+Not proved here & The numerical value of \(\tau\) in a real physical sector. \\
+Not proved here & Full Lorentzian unitarity, gauge invariance, or Standard Model phenomenology. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Canonical fixed-point input}
+
+Let \(X\) denote a flat coherent chart, either \(\mathbb R^d\) or a torus \(T^d\). Let
+\[
+        A=-\Delta
+\]
+be the nonnegative coherent-chart Laplacian. Let \(P\) denote the coherent-sector projector inherited from fixed-point data, and let \(\chi(A)\) be an admissible spectral window. The canonical coherent filter is
+\[
+        B_{\tau,\chi}
+        :=
+        P\chi(A)e^{-\tau A/2}\chi(A)P ,
+        \qquad \tau>0.
+\]
+The corresponding kernel is
+\[
+        K_{\tau,\chi}(x,y)
+        =
+        \langle x|B_{\tau,\chi}B_{\tau,\chi}^{\ast}|y\rangle .
+\]
+
+In the simplest full flat chart, \(P=I\) and \(\chi=I\), so
+\[
+        B_\tau=e^{-\tau A/2},
+        \qquad
+        K_\tau=e^{-\tau A}.
+\]
+In momentum variables,
+\[
+        \widehat{K_\tau}(k)=e^{-\tau |k|^2}.
+\]
+Thus \(K_\tau\) is the heat-kernel replacement of the Dirac delta:
+\[
+        K_\tau(x-y)
+        =
+        (4\pi\tau)^{-d/2}\exp\!\left(-\frac{|x-y|^2}{4\tau}\right),
+        \qquad
+        K_\tau\to\delta
+        \quad(\tau\downarrow0).
+\]
+
+\begin{remark}[Sector identity, not universal identity]
+If \(P\neq I\), then the kernel is an identity only on the retained coherent sector. The limit \(\tau\downarrow0\) gives the sector kernel \(P\chi(A)^2P\), not the full-space Dirac delta unless the sector/window tends to the full identity. This distinction is essential.
+\end{remark}
+
+\section{MTT-corrected scalar propagator}
+
+Let
+\[
+        L_m := A+m^2 = -\Delta+m^2,
+        \qquad m>0.
+\]
+The ordinary Euclidean propagator is
+\[
+        \Delta_0 := L_m^{-1}.
+\]
+The MTT-corrected propagator is the filtered covariance
+\[
+        \Delta_{\tau,\chi}
+        :=
+        B_{\tau,\chi}L_m^{-1}B_{\tau,\chi}^{\ast}.
+\]
+In the full flat chart \(P=\chi=I\), this becomes
+\[
+        \Delta_\tau
+        =
+        e^{-\tau A/2}(A+m^2)^{-1}e^{-\tau A/2}
+        =
+        e^{-\tau A}(A+m^2)^{-1}.
+\]
+Hence in momentum space,
+\begin{equation}
+        \label{eq:filtered-propagator}
+        \widehat{\Delta_\tau}(k)
+        =
+        \frac{e^{-\tau |k|^2}}{|k|^2+m^2}.
+\end{equation}
+
+\begin{definition}[MTT effective coherence scale]
+The proper-time parameter \(\tau>0\) defines the effective coherence scale
+\[
+        \Lambda_{\mathrm{eff}}
+        :=
+        \tau^{-1/2}.
+\]
+Modes with \(|k|\gg \Lambda_{\mathrm{eff}}\) are exponentially suppressed.
+\end{definition}
+
+\section{Recovery of the ordinary propagator}
+
+\begin{theorem}[Distributional recovery]
+Let \(m>0\), \(d<\infty\), and define \(\Delta_\tau\) by \cref{eq:filtered-propagator}. Then
+\[
+        \Delta_\tau \longrightarrow \Delta_0
+\]
+in the sense of tempered distributions as \(\tau\downarrow0\). Equivalently, for all Schwartz functions \(f,g\in\mathcal S(\mathbb R^d)\),
+\[
+        \lim_{\tau\downarrow0}
+        \int_{\mathbb R^d}
+        \frac{e^{-\tau |k|^2}}{|k|^2+m^2}
+        \widehat f(k)^\ast \widehat g(k)
+        \frac{d^dk}{(2\pi)^d}
+        =
+        \int_{\mathbb R^d}
+        \frac{\widehat f(k)^\ast \widehat g(k)}{|k|^2+m^2}
+        \frac{d^dk}{(2\pi)^d}.
+\]
+\end{theorem}
+
+\begin{proof}
+For each \(k\), \(e^{-\tau |k|^2}\to1\). Moreover,
+\[
+        0\le
+        \frac{e^{-\tau |k|^2}}{|k|^2+m^2}
+        \le
+        \frac{1}{|k|^2+m^2}.
+\]
+Since \(f,g\) are Schwartz, the function
+\[
+        \frac{|\widehat f(k)|\,|\widehat g(k)|}{|k|^2+m^2}
+\]
+is integrable. Dominated convergence gives the result.
+\end{proof}
+
+\section{Finite coincident value}
+
+The ordinary coincident propagator
+\[
+        \Delta_0(x,x)
+        =
+        \int_{\mathbb R^d}\frac{d^dk}{(2\pi)^d}\frac{1}{|k|^2+m^2}
+\]
+diverges for \(d\ge2\). The filtered propagator has
+\[
+        \Delta_\tau(x,x)
+        =
+        I_d(m,\tau)
+        :=
+        \int_{\mathbb R^d}
+        \frac{d^dk}{(2\pi)^d}
+        \frac{e^{-\tau |k|^2}}{|k|^2+m^2}.
+\]
+
+\begin{theorem}[Finite diagonal]
+For every \(d<\infty\), \(m>0\), and \(\tau>0\),
+\[
+        I_d(m,\tau)<\infty .
+\]
+Moreover,
+\[
+        I_d(m,\tau)
+        =
+        \frac{1}{(4\pi)^{d/2}}
+        \int_{\tau}^{\infty}
+        u^{-d/2}e^{-m^2u}\,du .
+\]
+\end{theorem}
+
+\begin{proof}
+Use
+\[
+        \frac{1}{|k|^2+m^2}
+        =
+        \int_0^\infty e^{-s(|k|^2+m^2)}\,ds.
+\]
+Then
+\[
+        I_d(m,\tau)
+        =
+        \int_0^\infty e^{-m^2s}
+        \left[
+        \int_{\mathbb R^d}
+        \frac{d^dk}{(2\pi)^d}
+        e^{-(s+\tau)|k|^2}
+        \right]ds.
+\]
+The Gaussian integral gives
+\[
+        \int_{\mathbb R^d}
+        \frac{d^dk}{(2\pi)^d}
+        e^{-(s+\tau)|k|^2}
+        =
+        (4\pi(s+\tau))^{-d/2}.
+\]
+With \(u=s+\tau\),
+\[
+        I_d(m,\tau)
+        =
+        \frac{1}{(4\pi)^{d/2}}
+        \int_{\tau}^{\infty}
+        u^{-d/2}e^{-m^2(u-\tau)}\,du .
+\]
+If the filter is placed as \(e^{-\tau A/2}\) on each side, the propagator carries \(e^{-\tau |k|^2}\), giving the harmless factor \(e^{m^2\tau}\) depending on the chosen proper-time normalization. Equivalently one may define the shifted proper-time representation
+\[
+        \frac{e^{-\tau |k|^2}}{|k|^2+m^2}
+        =
+        e^{m^2\tau}
+        \int_{\tau}^{\infty}
+        e^{-u(|k|^2+m^2)}\,du.
+\]
+Thus
+\[
+        I_d(m,\tau)
+        =
+        \frac{e^{m^2\tau}}{(4\pi)^{d/2}}
+        \int_{\tau}^{\infty}
+        u^{-d/2}e^{-m^2u}\,du .
+\]
+Both forms are finite for \(\tau>0\). The displayed normalization depends on whether the mass term is included in the heat filter. In either convention the lower proper-time gap \(\tau>0\) removes the \(u=0\) singularity.
+\end{proof}
+
+\begin{remark}[Normalization convention]
+Two closely related filters occur in the literature:
+\[
+        e^{-\tau A}(A+m^2)^{-1},
+        \qquad
+        e^{-\tau(A+m^2)}(A+m^2)^{-1}.
+\]
+They differ by the finite factor \(e^{-\tau m^2}\). All UV statements are unchanged. When positivity/proper-time support is emphasized, the second convention is often cleaner.
+\end{remark}
+
+\section{Leading low-energy correction}
+
+For \(\tau |k|^2\ll1\),
+\[
+        e^{-\tau |k|^2}
+        =
+        1-\tau |k|^2+\frac{\tau^2|k|^4}{2}+O(\tau^3|k|^6).
+\]
+Therefore
+\[
+        \widehat{\Delta_\tau}(k)
+        =
+        \frac{1}{|k|^2+m^2}
+        -
+        \tau \frac{|k|^2}{|k|^2+m^2}
+        +
+        O\!\left(\tau^2\frac{|k|^4}{|k|^2+m^2}\right).
+\]
+
+\begin{proposition}[Low-momentum correction bound]
+For \(|k|^2\le R^2\),
+\[
+        \left|
+        \frac{e^{-\tau |k|^2}-1}{|k|^2+m^2}
+        \right|
+        \le
+        \frac{\tau |k|^2}{|k|^2+m^2}
+        \le
+        \tau .
+\]
+Thus the pointwise low-energy correction is \(O(\tau |k|^2)\) relative to the local numerator and bounded by \(O(\tau)\) in absolute propagator units on compact momentum sets.
+\end{proposition}
+
+\begin{proof}
+Use \(0\le 1-e^{-a}\le a\) for \(a\ge0\).
+\end{proof}
+
+\section{One-loop examples}
+
+\subsection{Tadpole}
+
+The ordinary one-loop tadpole integral is
+\[
+        T_0
+        =
+        \int_{\mathbb R^d}
+        \frac{d^dk}{(2\pi)^d}
+        \frac{1}{|k|^2+m^2},
+\]
+which is divergent for \(d\ge2\). The MTT-filtered tadpole is
+\[
+        T_\tau
+        =
+        \int_{\mathbb R^d}
+        \frac{d^dk}{(2\pi)^d}
+        \frac{e^{-\tau |k|^2}}{|k|^2+m^2},
+\]
+which is finite by the finite-diagonal theorem.
+
+\subsection{Bubble}
+
+For external momentum \(p\),
+\[
+        B_\tau(p)
+        =
+        \int_{\mathbb R^d}
+        \frac{d^dk}{(2\pi)^d}
+        \frac{e^{-\tau |k|^2}e^{-\tau |k+p|^2}}
+        {(|k|^2+m^2)(|k+p|^2+m^2)} .
+\]
+
+\begin{proposition}[Bubble finiteness]
+For every \(p\in\mathbb R^d\), \(m>0\), and \(\tau>0\),
+\[
+        B_\tau(p)<\infty .
+\]
+\end{proposition}
+
+\begin{proof}
+For large \(|k|\), \(|k+p|^2\ge \frac12|k|^2-|p|^2\). Hence
+\[
+        e^{-\tau |k|^2}e^{-\tau |k+p|^2}
+        \le
+        C_p e^{-c_\tau |k|^2}
+\]
+for some \(C_p,c_\tau>0\). The denominator is positive and polynomial, so the integrand is dominated by an integrable Gaussian.
+\end{proof}
+
+\section{All-graph Euclidean UV domination}
+
+We now state a controlled perturbative result for scalar Euclidean diagrams. The point is not to construct a full QFT, but to show that canonical MTT filtering gives absolute UV convergence once every internal line carries the fixed-point Gaussian factor.
+
+Consider a connected graph \(\Gamma\) with \(L\) loop momenta \(\ell=(\ell_1,\dots,\ell_L)\in(\mathbb R^d)^L\), internal lines \(e\in E(\Gamma)\), and fixed external momenta. Each internal line momentum has the affine form
+\[
+        q_e(\ell)=M_e\ell+r_e,
+\]
+where \(M_e\) is a linear map and \(r_e\) depends on external momenta. The filtered scalar integrand is bounded by
+\[
+        \prod_{e\in E(\Gamma)}
+        \frac{e^{-\tau |q_e(\ell)|^2}}
+        {|q_e(\ell)|^2+m^2}
+\]
+times a polynomial numerator \(P(\ell)\), if derivative interactions are present.
+
+\begin{lemma}[Loop-momentum quadratic control]
+For a connected graph and a choice of independent loop momenta, there exist constants \(c_\Gamma>0\) and \(C_\Gamma\ge0\), depending on the graph and external momenta, such that
+\[
+        \sum_{e\in E(\Gamma)} |q_e(\ell)|^2
+        \ge
+        c_\Gamma |\ell|^2-C_\Gamma .
+\]
+\end{lemma}
+
+\begin{proof}
+If the inequality failed, there would be a sequence \(|\ell_n|\to\infty\) with all line momenta \(q_e(\ell_n)\) sublinear in \(|\ell_n|\). After normalizing, a nonzero loop direction would lie in the kernel of every line-momentum map \(M_e\). But independent loop momenta are chosen precisely so that each nonzero loop flow crosses at least one internal line. Hence the common kernel is trivial. Finite-dimensional norm equivalence then gives the stated coercivity, with the affine external shifts absorbed into \(C_\Gamma\).
+\end{proof}
+
+\begin{theorem}[Euclidean all-graph UV finiteness under canonical line filtering]
+Fix \(m>0\), \(\tau>0\), and a connected scalar Euclidean Feynman graph \(\Gamma\). Suppose every internal line carries the canonical Gaussian factor \(e^{-\tau |q_e|^2}\). Then the loop integral
+\[
+        \int_{(\mathbb R^d)^L}
+        |P(\ell)|
+        \prod_{e\in E(\Gamma)}
+        \frac{e^{-\tau |q_e(\ell)|^2}}
+        {|q_e(\ell)|^2+m^2}
+        \,d^{dL}\ell
+\]
+is finite for every polynomial numerator \(P\).
+\end{theorem}
+
+\begin{proof}
+By the quadratic-control lemma,
+\[
+        \prod_e e^{-\tau |q_e(\ell)|^2}
+        =
+        e^{-\tau\sum_e |q_e(\ell)|^2}
+        \le
+        e^{\tau C_\Gamma}e^{-\tau c_\Gamma|\ell|^2}.
+\]
+The denominator is bounded above by dropping it, since \((|q_e|^2+m^2)^{-1}\le m^{-2}\). Thus the absolute integrand is bounded by
+\[
+        C |P(\ell)|e^{-\tau c_\Gamma|\ell|^2},
+\]
+which is integrable on finite-dimensional loop-momentum space.
+\end{proof}
+
+\begin{remark}[Gauge and Lorentzian caveat]
+This theorem is Euclidean and scalar. Gauge theories require compatible filtering of fields, ghosts, vertices, and Ward/BRST identities. Lorentzian unitarity requires a separate analytic-continuation or positive spectral representation argument. The present theorem proves UV domination, not by itself full physical consistency.
+\end{remark}
+
+\section{Proper-time representation and positivity}
+
+For the mass-including convention,
+\[
+        \Delta_\tau^{(m)}(k)
+        =
+        \frac{e^{-\tau(|k|^2+m^2)}}{|k|^2+m^2},
+\]
+one has the exact proper-time representation
+\[
+        \Delta_\tau^{(m)}(k)
+        =
+        \int_{\tau}^{\infty} e^{-s(|k|^2+m^2)}\,ds .
+\]
+This is a positive proper-time integral with a lower support gap \(s\ge\tau\). The ordinary propagator is recovered by lowering the gap to zero:
+\[
+        \frac{1}{|k|^2+m^2}
+        =
+        \int_{0}^{\infty} e^{-s(|k|^2+m^2)}\,ds.
+\]
+
+This representation gives the MTT reading:
+\[
+        \boxed{\text{UV softening}=\text{absence of arbitrarily short proper-time support}.}
+\]
+It matches the fixed-point interpretation of \(\tau\) as finite coherent support rather than an arbitrary regulator.
+
+\section{Regulator versus MTT kernel}
+
+Mathematically, the factor \(e^{-\tau |k|^2}\) resembles a UV regulator. The MTT claim is stronger and narrower:
+\[
+        \boxed{
+        \text{the filter is admissible only when derived from fixed-point operator data.}
+        }
+\]
+An arbitrary smearing function may break locality, positivity, gauge symmetry, or unitarity. A physically admissible MTT kernel must be selected by the coherent projector, spectral window, proper-time support, and compatibility conditions of the relevant sector.
+
+\begin{center}
+\begin{tabular}{p{0.34\linewidth}p{0.52\linewidth}}
+\toprule
+Object & Role \\
+\midrule
+\(A\) & fixed-point linearized damping/geometric operator \\
+\(P\) & coherent-sector projector \\
+\(\chi(A)\) & admissible spectral window \\
+\(\tau\) & proper-time/coherence support scale \\
+\(B_{\tau,\chi}\) & canonical coherent filter \\
+\(\Delta_{\tau,\chi}\) & MTT-corrected covariance/propagator \\
+\(\Lambda_{\mathrm{eff}}\sim\tau^{-1/2}\) & effective UV/coherence scale \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{What becomes predictive}
+
+The paper proves that, once \(A,P,\chi,\tau\) are fixed by an MTT sector, the propagator correction is fixed. The remaining execution tasks are now concrete:
+\[
+        (A,P,\chi,\tau)
+        \Longrightarrow
+        \Delta_{\tau,\chi}
+        \Longrightarrow
+        \text{observable correction}.
+\]
+Examples include:
+\begin{enumerate}
+\item finite coincident correlators;
+\item modified short-distance potentials;
+\item exponentially softened loop amplitudes;
+\item low-energy corrections of order \(\tau |k|^2\);
+\item effective scale constraints \(\Lambda_{\mathrm{eff}}\sim\tau^{-1/2}\).
+\end{enumerate}
+
+The crucial change from the earlier dictionary papers is that the kernel is no longer freely chosen. The corrected propagator is dictated by the canonical fixed-point filter.
+
+\section{Conclusion}
+
+The delta-projection program required a transition from interpretation to execution. The canonical coherent-kernel paper supplied the missing kernel-selection theorem. This paper applied that theorem to propagators.
+
+In a flat coherent chart, MTT fixed-point data select the corrected propagator
+\[
+        \widehat{\Delta_\tau}(k)
+        =
+        \frac{e^{-\tau |k|^2}}{|k|^2+m^2}.
+\]
+This propagator recovers the ordinary local propagator as \(\tau\downarrow0\), has finite coincident value for every finite dimension when \(\tau>0\), and gives all-graph Euclidean UV domination for scalar perturbation theory when every internal line carries the canonical filter.
+
+The result does not yet determine the numerical value of \(\tau\) in nature. It does something more basic and necessary: it shows that once an MTT fixed-point sector supplies \(\tau\) and the operator data, the finite correction is specific.
+
+\[
+        \boxed{
+        \text{MTT does not merely soften deltas; it selects the propagator correction.}
+        }
+\]
+
+\begin{thebibliography}{9}
+
+\bibitem{ReedSimon}
+M. Reed and B. Simon,
+\emph{Methods of Modern Mathematical Physics}.
+Academic Press.
+
+\bibitem{SimonFunctional}
+B. Simon,
+\emph{Functional Integration and Quantum Physics}.
+AMS Chelsea.
+
+\bibitem{GlimmJaffe}
+J. Glimm and A. Jaffe,
+\emph{Quantum Physics: A Functional Integral Point of View}.
+Springer.
+
+\bibitem{Rivasseau}
+V. Rivasseau,
+\emph{From Perturbative to Constructive Renormalization}.
+Princeton University Press.
+
+\bibitem{Kleinert}
+H. Kleinert,
+\emph{Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets}.
+World Scientific.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,731 @@
+\documentclass[11pt]{article}
+
+\usepackage{series}
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+% ======================================================
+% Local macros
+% ======================================================
+\newcommand{\Hilb}{\mathcal{H}}
+\newcommand{\HilbExt}{\Hilb_{\mathrm{ext}}}
+\newcommand{\HilbCoh}{\Hilb_{\mathrm{coh}}}
+\newcommand{\HilbFour}{\Hilb_{4}}
+\newcommand{\Dens}{\mathcal{T}_1}
+\newcommand{\Bas}{\mathcal{B}}
+\newcommand{\Proj}{\Pi}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\Borel}{\mathcal{B}}
+
+% ======================================================
+% Theorem environments
+% ======================================================
+\theoremstyle{plain}
+
+\theoremstyle{definition}
+
+\theoremstyle{remark}
+
+% ======================================================
+% Title
+% ======================================================
+\title{\bf Why Quantum Contextuality and Measurement Order Dependence Are the Same Phenomenon\\
+A Projection-Based Shadow Bridge in Modal Triplet Theory}
+
+\author{Peter Nero}
+
+\date{January, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Quantum contextuality and measurement order dependence are traditionally treated
+as distinct foundational problems. Contextuality is formulated as a logical
+obstruction to noncontextual hidden-variable models, while order dependence is
+treated as a dynamical disturbance effect in sequential measurements. In this
+work we show that, within Modal Triplet Theory (MTT), these two phenomena arise
+as complementary shadows of the same projection-based structure. Operational
+measurement contexts are modeled as instruments, each inducing—via the same
+upstairs MTT ingredients (coherent-sector projector, spectral gap, and
+admissibility data)—a context-dependent reduced channel, an admissible domain,
+and an associated basin atlas on the reduced four-dimensional state space.
+Contextuality is identified with the impossibility of a single global admissible
+basin assignment compatible with all context-induced atlases. Measurement order
+dependence is the dynamical manifestation of the same obstruction: sequential
+enforcement of incompatible atlases yields history-dependent basin capture with
+positive measure. Basin atlases are formalized as measurable invariant
+partitions, atlas incompatibility is defined via the absence of a common
+admissible refinement, and a central Contextuality--Order Bridge Theorem is
+proved establishing equivalence between global nonrefinability and order
+dependence. The framework aligns with Kochen--Specker theorems, contextuality
+inequalities, weak-measurement persistence, and sequential measurement
+experiments, while remaining consistent with MTT selection dynamics and the
+basin-measure reconstruction of the Born rule.
+\end{abstract}
+
+\tableofcontents
+
+\section{Introduction}
+
+Quantum contextuality has long been regarded as one of the most profound and
+counterintuitive features of quantum mechanics. Results such as the
+Kochen--Specker theorem show that it is impossible to assign definite,
+noncontextual values to all observables in a manner consistent with quantum
+predictions. Contextuality is often interpreted as evidence against classical
+realism or as an indication that physical properties do not exist prior to
+measurement.
+
+Separately, quantum mechanics exhibits strong dependence on the order in which
+measurements are performed. Sequential measurements of different settings yield
+different outcomes and statistics depending on their order, even when
+measurements are weak or when disturbance is minimized. This order dependence is
+typically treated as a dynamical effect associated with noncommuting
+instruments, rather than as a foundational obstruction.
+
+Despite their proximity in experimental practice, contextuality and measurement
+order dependence are usually treated in distinct theoretical frameworks.
+Contextuality is framed as a static logical constraint on value assignment,
+while order dependence is framed as an operational or dynamical phenomenon.
+This separation obscures a deeper structural unity.
+
+In this paper we show that, within Modal Triplet Theory, contextuality and
+measurement order dependence are not independent phenomena. Both arise from the
+same structural obstruction: the impossibility of constructing a single global
+admissible basin decomposition compatible with all operational measurement
+contexts. Contextuality is the static expression of this obstruction, while
+order dependence is its dynamical manifestation.
+\section{Scope and Standing Assumptions}
+
+This work assumes the empirical correctness of quantum mechanics and does not
+modify Schr\"odinger evolution. It is not an interpretation of quantum theory,
+but an analysis of the structural origin of contextuality and measurement order
+dependence within a projection-based framework.
+
+Throughout, we assume the following standing inputs, which are standard within
+the Modal Triplet Theory corpus:
+
+\begin{enumerate}[label=(\roman*)]
+\item A microscopic Hilbert space $\HilbExt$ supporting unitary evolution.
+\item The existence of a coherent-sector projector
+$\Proj_{\mathrm{coh}} : \HilbExt \to \HilbCoh$ with a finite spectral gap
+$\lambda_\ast>0$ separating coherent from noncoherent modes.
+\item Locality and bounded-geometry conditions sufficient to define slab-local
+effective dynamics and admissibility.
+\item No fundamental stochastic postulates, observer-dependent axioms, or
+interpretational supplements.
+\end{enumerate}
+
+All statements in this paper are slab-local and admissibility-conditioned.
+Reduced dynamics is considered only on domains where the effective description
+is predictive and stable. Where results rely on prior theorems in the MTT
+corpus, this reliance is stated explicitly.
+
+\section{S1 --- Reduced State Space and Context-Induced Dynamics}
+
+We now implement the first step of the MTT shadow-bridge template. Starting from
+the common upstairs structure $(\Proj_{\mathrm{coh}},\lambda_\ast,\Theta)$, we
+define precisely how each operational measurement context induces a reduced
+dynamics, an admissible domain, and a basin atlas on the four-dimensional
+reduced state space.
+
+\subsection{Reduced state space}
+
+Let $\HilbFour$ denote the effective four-dimensional Hilbert space of observable
+degrees of freedom obtained after coherent-sector projection and restriction to
+4D observables. We define the reduced state space as
+\[
+X := \mathcal{T}_1(\HilbFour),
+\]
+the space of trace-class operators on $\HilbFour$, equipped with the trace-norm
+topology and its associated Borel $\sigma$-algebra $\Borel$.
+
+Elements $\rho\in X$ represent effective reduced states accessible to
+observation.
+
+\subsection{Operational contexts as instruments}
+
+\begin{definition}[Operational measurement context]
+An operational measurement context $C$ is a concrete measurement instrument,
+specified by a coupling to auxiliary degrees of freedom, a readout scheme, and
+a finite resolution scale, all localized to the slab under consideration.
+\end{definition}
+
+This notion of context coincides with the standard use in contextuality theory:
+contexts are operationally specified measurement procedures, not merely sets of
+abstract observables.
+
+\subsection{Context-induced reduced dynamics}
+
+Fix the upstairs MTT ingredients on the slab: coherent-sector projector
+$\Proj_{\mathrm{coh}}$, spectral gap $\lambda_\ast$, and bottleneck data $\Theta$.
+Each operational context $C$ induces a reduced channel
+\[
+T_C : X \to X,
+\]
+defined as the observable pushforward of coherent-sector unitary evolution under
+the coupling specified by $C$, followed by noninvertible projection to the
+reduced description.
+
+The map $T_C$ is assumed to be completely positive and trace-preserving on its
+domain of validity. In general, $T_C$ is not invertible due to the projection
+step.
+
+\begin{remark}
+The noninvertibility of $T_C$ is structural and enforced by the spectral gap and
+admissibility conditions. It is not a modeling artifact and cannot be removed
+without destroying the stability of the effective description.
+\end{remark}
+\subsection{Admissible domain induced by a context}
+
+Not all reduced states admit a stable and predictive effective evolution under a
+given context. We therefore define, for each context, the admissible domain on
+which the reduced description remains valid.
+
+\begin{definition}[Admissible set for a context]
+For a given operational context $C$, the admissible set $X_C \subset X$ consists
+of those reduced states $\rho \in X$ for which:
+\begin{enumerate}[label=(\roman*)]
+\item the coherent-sector projection remains bounded on the slab of interest,
+\item perturbations of $\rho$ of size at most $\eps$ (in trace norm) remain
+within the domain of validity of $T_C$,
+\item iterates of $T_C$ exhibit contractive behavior toward stable configurations.
+\end{enumerate}
+\end{definition}
+
+Admissibility is a physical condition expressing the requirement that the
+effective description remains robust under finite experimental resolution. It
+is not a mathematical convenience but a criterion for physical predictivity.
+
+\subsection{Admissible basins}
+
+Within the admissible set $X_C$, the reduced dynamics decomposes into dynamically
+stable regions.
+
+\begin{definition}[Admissible basin for a context]
+Let $C$ be an operational context. A measurable set
+$B^{(C)}_\alpha \subset X_C$ is an admissible basin if:
+\begin{enumerate}[label=(\alph*)]
+\item (\emph{Invariance}) $T_C(B^{(C)}_\alpha) \subset B^{(C)}_\alpha$,
+\item (\emph{Attraction}) for all $x \in B^{(C)}_\alpha$,
+\[
+T_C^n(x) \longrightarrow \xi^{(C)}_\alpha
+\]
+as $n \to \infty$, for some attractor
+$\xi^{(C)}_\alpha \in B^{(C)}_\alpha$,
+\item (\emph{Finite stability margin}) $B^{(C)}_\alpha$ is separated from other
+basins by a finite margin within which admissibility is preserved.
+\end{enumerate}
+\end{definition}
+
+Each admissible basin corresponds to a stable macroscopic configuration, such as
+a measurement outcome or classical record, relative to the context $C$.
+
+\subsection{Basin atlas induced by a context}
+
+\begin{definition}[Basin atlas]
+For a given context $C$, the basin atlas induced by $C$ is a measurable partition
+\[
+\mathcal{A}(C) = \{ B^{(C)}_\alpha \}
+\]
+of the admissible set $X_C$ into admissible basins.
+\end{definition}
+
+The basin atlas $\mathcal{A}(C)$ provides a complete effective description of
+outcome selection relative to the context $C$.
+
+\subsection{Selection events}
+
+\begin{definition}[Selection event]
+A selection event relative to a context $C$ is an irreversible transition
+\[
+\rho \in X_C \;\longrightarrow\; \rho' \in B^{(C)}_\alpha
+\]
+occurring when admissibility is lost at a basin boundary and noninvertible
+projection enforces capture into an admissible basin
+$B^{(C)}_\alpha \in \mathcal{A}(C)$.
+\end{definition}
+
+Selection events are discrete, irreversible on admissible slabs, and
+record-forming. They mark transitions between effective descriptions and reset
+the subsequent reduced dynamics.
+
+\section{Atlas Incompatibility as a Precise Obstruction}
+
+We now formalize the notion of incompatibility between basin atlases induced by
+different contexts.
+
+\begin{definition}[Common admissible refinement]
+Let $C_1$ and $C_2$ be operational contexts with induced basin atlases
+\[
+\mathcal{A}(C_1) = \{ B^{(1)}_\alpha \}, \qquad
+\mathcal{A}(C_2) = \{ B^{(2)}_\beta \}.
+\]
+A common admissible refinement is a measurable partition
+$\mathcal{R} = \{ R_\gamma \}$ of $X_{C_1} \cap X_{C_2}$ such that:
+\begin{enumerate}[label=(\roman*)]
+\item for each $R_\gamma$ there exist $\alpha,\beta$ with
+\[
+R_\gamma \subset B^{(1)}_\alpha \cap B^{(2)}_\beta,
+\]
+\item each $R_\gamma$ is an admissible basin for both $T_{C_1}$ and $T_{C_2}$,
+i.e.\ it is invariant and attracting under both reduced maps.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}[Incompatible basin atlases]
+Two basin atlases $\mathcal{A}(C_1)$ and $\mathcal{A}(C_2)$ are incompatible if no
+common admissible refinement exists.
+\end{definition}
+
+\begin{remark}
+Incompatibility in this sense is the dynamical and operational analogue of the
+absence of a global section in sheaf-theoretic formulations of contextuality.
+\end{remark}
+\section{S2 --- Two Four-Dimensional Shadows}
+
+We now implement the second step of the MTT shadow-bridge template. Starting from
+the same upstairs structure and formal machinery defined above, we identify two
+distinct four-dimensional phenomena that are traditionally treated as
+independent.
+
+\subsection{Contextuality as a static four-dimensional shadow}
+
+In standard quantum foundations, contextuality is formulated as a static
+constraint on value assignment. Given a family of measurement contexts
+$\{C_i\}$, no assignment of definite outcomes or values to all observables can be
+made that is simultaneously compatible with all contexts.
+
+Operationally, contextuality manifests as the failure of noncontextual hidden-
+variable models and is captured by Kochen--Specker theorems and contextuality
+inequalities. These results are usually interpreted as purely logical or
+axiomatic obstructions.
+
+From the four-dimensional perspective alone, contextuality appears as a static
+feature: certain combinations of measurements cannot be jointly described by a
+single classical probability model.
+
+\subsection{Measurement order dependence as a dynamical four-dimensional shadow}
+
+Separately, quantum mechanics exhibits measurement order dependence. Sequential
+measurements associated with different contexts yield different outcomes and
+statistics depending on the order in which they are applied.
+
+This order dependence persists even in regimes where individual measurements are
+weak, approximate, or minimally disturbing. In standard accounts, it is treated
+as a dynamical effect arising from noncommuting instruments or state
+disturbance.
+
+From the four-dimensional perspective, order dependence appears as a dynamical
+phenomenon: the history of measurements affects future outcomes.
+
+\subsection{Apparent independence of the two shadows}
+
+In conventional treatments, contextuality and order dependence are addressed in
+separate frameworks:
+\begin{itemize}
+\item contextuality is framed as a static, logical no-go result,
+\item order dependence is framed as a dynamical, operational effect.
+\end{itemize}
+
+They employ different mathematical tools and are rarely unified within a single
+theoretical framework. This separation motivates the search for a common
+structural origin.
+
+\section{Basin Measures and the Born Rule Within a Context}
+
+Before stating the central bridge theorem, we record the measure-theoretic input
+relating basin capture probabilities to the Born rule within a fixed context.
+
+\begin{lemma}[Born rule within a context]
+Let $C$ be an operational context with induced basin atlas
+$\mathcal{A}(C)=\{B^{(C)}_\alpha\}$. There exists a probability measure $\mu_C$ on
+$\mathcal{A}(C)$ such that the probability of a selection event resulting in
+capture into $B^{(C)}_\alpha$ is given by
+\[
+\mu_C\!\left(B^{(C)}_\alpha\right)
+= \left\| \Proj^{(C)}_\alpha \psi \right\|^2,
+\]
+where $\Proj^{(C)}_\alpha$ denotes the coherent-sector projector associated with
+$B^{(C)}_\alpha$.
+\end{lemma}
+
+\begin{remark}
+A detailed derivation of basin measures and their identification with the Born
+rule from coherent-sector projection is given in
+\emph{Modal Triplet Theory: From MTT to Quantum Mechanics}. The present work
+treats this result as an established structural input.
+\end{remark}
+
+\section{S3 --- Contextuality and Measurement Order as Non-Commuting Basin Atlases}
+
+We now establish the central result of this paper. Contextuality and measurement
+order dependence arise from the same obstruction: incompatibility of admissible
+basin atlases induced by different operational contexts.
+
+\begin{theorem}[Contextuality--Order Shadow Bridge]
+\label{thm:contextuality-order}
+Let $\{C_i\}$ be a family of operational contexts with induced reduced maps
+$T_{C_i}$, admissible sets $X_{C_i}$, and basin atlases $\mathcal{A}(C_i)$, each
+consisting of admissible basins with finite stability margins. Then the following
+are equivalent:
+\begin{enumerate}[label=(\roman*)]
+\item (\emph{Contextuality}) There exists no global admissible basin assignment
+compatible with all contexts, i.e.\ the family of atlases
+$\{\mathcal{A}(C_i)\}$ admits no common admissible refinement.
+\item (\emph{Order dependence}) There exist contexts $C_i,C_j$ and an initial
+state $x \in X_{C_i}\cap X_{C_j}$ such that sequential application of $T_{C_i}$
+followed by $T_{C_j}$ yields basin capture probabilities (with positive measure)
+that differ from those obtained by reversing the order.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+$(i)\Rightarrow(ii)$: If $\mathcal{A}(C_i)$ and $\mathcal{A}(C_j)$ admit no common
+admissible refinement, then there exists a basin
+$B^{(C_i)}_\alpha \in \mathcal{A}(C_i)$ whose invariance cannot be preserved
+under $T_{C_j}$. After selection relative to $C_i$, enforcing $C_j$ necessarily
+induces a further selection with positive basin measure. By the Born-rule lemma,
+this produces order-dependent outcome statistics.
+
+$(ii)\Rightarrow(i)$: If order dependence occurs for some initial state, then no
+measurable partition of $X_{C_i}\cap X_{C_j}$ can simultaneously refine both
+atlases into invariant attracting sets for $T_{C_i}$ and $T_{C_j}$. Hence no
+common admissible refinement exists.
+\end{proof}
+
+\begin{corollary}[Bridge summary]
+Contextuality and measurement order dependence are two manifestations of the
+same obstruction: incompatibility of admissible basin atlases induced by
+different operational contexts.
+\end{corollary}
+
+\begin{remark}
+This result replaces the statement ``values do not exist'' with a concrete
+structural claim: admissible effective descriptions are context-dependent and
+cannot be globally unified.
+\end{remark}
+\section{S4 --- Validation via Contextuality and Sequential Measurement Theory}
+
+We now complete the S4 step of the MTT shadow-bridge template by validating the
+Contextuality--Order Shadow Bridge against established results and experimental
+phenomena in quantum foundations. We show that mainstream contextuality theory
+and sequential measurement experiments already probe precisely the obstruction
+formalized above as incompatibility of admissible basin atlases.
+
+\subsection{Kochen--Specker theorems}
+
+The Kochen--Specker theorem establishes that, in Hilbert spaces of dimension
+three or greater, there exists no assignment of definite values to observables
+that is both noncontextual and compatible with the functional relations between
+observables.
+
+In the present framework, each Kochen--Specker context corresponds to an
+operational context $C$ in the sense of Definition~2.1, and hence induces a basin
+atlas $\mathcal{A}(C)$ on the admissible set $X_C$. The Kochen--Specker
+construction then demonstrates that no global admissible basin assignment exists
+that is compatible with all such atlases.
+
+Thus, the Kochen--Specker contradiction is reinterpreted as the absence of a
+common admissible refinement for the family of context-induced basin atlases.
+Definite outcomes exist within each context; what fails is the possibility of a
+single context-independent admissible description.
+
+\subsection{Contextuality inequalities}
+
+Modern tests of contextuality are often formulated as inequalities that must be
+satisfied by noncontextual hidden-variable models but are violated by quantum
+systems. These inequalities probe correlations among outcomes obtained under
+different operational contexts.
+
+Within Modal Triplet Theory, violations of contextuality inequalities arise
+because the induced basin atlases for the contexts involved are incompatible.
+No measurable partition of the reduced state space can serve as a common
+admissible refinement supporting all contexts simultaneously.
+
+The robustness of contextuality violations under experimental noise is explained
+by the finite stability margins of admissible basins: small perturbations of the
+reduced dynamics do not restore refinability, just as small perturbations do not
+remove a topological obstruction.
+
+\subsection{Sequential measurements and order dependence}
+
+Sequential measurement experiments routinely display order dependence, even when
+individual measurements are weak or carefully controlled. In conventional
+accounts, this dependence is attributed to disturbance or back-action.
+
+In the basin-atlas framework, order dependence has a sharper explanation.
+Performing a measurement in context $C_1$ enforces capture into a basin of
+$\mathcal{A}(C_1)$. A subsequent measurement in context $C_2$ requires
+re-projection onto the atlas $\mathcal{A}(C_2)$. Because $\mathcal{A}(C_1)$ and
+$\mathcal{A}(C_2)$ are incompatible, the prior basin assignment cannot be
+preserved, and a new selection event occurs with positive measure.
+
+Reversing the order of measurements corresponds to traversing a different
+sequence of atlas transitions, leading to different selection histories. Order
+dependence is therefore not merely an experimental nuisance but a direct
+consequence of context-dependent admissibility.
+
+\subsection{Weak measurements}
+
+Weak measurements are often introduced to minimize disturbance and approximate
+classical behavior. However, contextuality and order dependence persist even in
+the weak-measurement regime.
+
+From the present perspective, this persistence is expected. Weak measurements
+soften basin boundaries but do not eliminate them. As long as basin atlases
+remain incompatible, no degree of measurement gentleness can restore a global
+admissible basin assignment.
+
+\subsection{Generalized measurements and POVMs}
+
+Generalized measurements described by POVMs correspond, in the basin framework,
+to coarse-grained or smeared basin atlases. While coarse-graining modifies the
+resolution of the partition, it does not remove the underlying incompatibility
+between contexts.
+
+POVM contextuality therefore arises naturally as the persistence of atlas
+incompatibility under generalized measurement schemes.
+
+\subsection{Summary of validation}
+
+Kochen--Specker theorems, contextuality inequalities, sequential measurement
+order dependence, and weak-measurement persistence all probe the same structural
+obstruction: incompatibility of admissible basin atlases induced by different
+operational contexts.
+
+Modal Triplet Theory unifies these phenomena by identifying contextuality and
+order dependence as complementary shadows of projection and admissibility.
+\section{Outlook: Indivisible Stochasticity, Undecidability, and Agency}
+
+The results established in this paper connect naturally to further structural
+features of Modal Triplet Theory that have been developed elsewhere in the
+corpus. We record these connections here as consequences of previously proved
+results; no new theorem is introduced in this section.
+
+\subsection{Indivisible stochasticity}
+
+Earlier work in Modal Triplet Theory shows that reduced dynamics induced by
+coherent-sector projection admits an \emph{indivisible stochastic} description.
+Such a process cannot be decomposed into a sequence of independent infinitesimal
+random steps. Instead, it consists of deterministic evolution punctuated by
+discrete, irreversible selection events.
+
+The present contextuality--order bridge identifies a structural source of this
+indivisibility. Because admissible basin atlases are context-dependent and
+mutually incompatible, there exists no single refinement of the reduced dynamics
+that resolves all possible selection events into a unified, context-independent
+Markov process. Contextuality therefore contributes directly to the failure of
+Markovian decomposability.
+
+\subsection{Undecidability of selection events}
+
+Recent results prove that selection-event occurrence in projection-based
+theories is algorithmically undecidable across admissible regimes. Even given
+complete physical information at finite precision, there exists no algorithm
+that decides whether a specified selection event will occur within the
+physically determined coherence budget.
+
+The contextuality--order bridge provides a complementary structural explanation
+of this undecidability. Because basin atlases depend on context and cannot be
+globally unified, the question of which basin will be selected under an
+arbitrary sequence of contexts cannot, in general, be decided algorithmically.
+Undecidability thus reflects context-dependent admissibility rather than
+fundamental randomness.
+
+\subsection{Minimal notion of agency}
+
+Context dependence, irreversibility, and history-dependent admissibility together
+provide a minimal physical notion of agency. Systems subject to projection-based
+selection do not merely evolve under fixed laws; they reshape their future
+admissible dynamics through irreversible selections induced by contextual
+interactions.
+
+This notion of agency does not require consciousness, intention, or
+teleological assumptions. It arises purely from the structure of admissibility
+and projection. While a full theory of agency lies beyond the scope of this
+paper, the present results identify the structural ingredients such a theory
+would require.
+
+\section{Consequences for Quantum Foundations}
+
+The identification of contextuality and measurement order dependence as shadows
+of incompatible admissible basin atlases has significant consequences for the
+foundations of quantum mechanics.
+
+\subsection{Contextuality without anti-realism}
+
+Contextuality is often interpreted as evidence that quantum observables lack
+pre-existing values or that realism must be abandoned. The basin-atlas framework
+supports a different conclusion.
+
+Definite outcomes exist within each operational context, corresponding to
+capture into an admissible basin. What fails is not realism but the assumption
+that all contexts can be unified into a single, context-independent admissible
+description. Contextuality reflects the context dependence of admissibility, not
+the nonexistence of physical properties.
+
+\subsection{Collapse, contextuality, and order unified}
+
+Collapse-like behavior, contextuality, and measurement order dependence are
+frequently treated as separate foundational problems. In Modal Triplet Theory,
+they are unified.
+
+Collapse corresponds to inter-basin selection within a given context.
+Contextuality corresponds to the impossibility of reconciling basin assignments
+across incompatible contexts. Order dependence is the dynamical manifestation of
+this incompatibility in sequential measurements. All three arise from the same
+projection-based structure.
+
+\subsection{Limits of hidden-variable models}
+
+Noncontextual hidden-variable models fail because they attempt to impose a
+global value assignment that violates context-dependent admissibility.
+Contextual hidden-variable models reintroduce context dependence but sacrifice
+predictive power.
+
+The basin framework explains why these outcomes are unavoidable. Any attempt to
+restore a global hidden-variable description must either violate admissibility
+or reintroduce nonphysical reversibility.
+
+\subsection{Schr\"odinger evolution and contextuality}
+
+The Schr\"odinger equation remains exact within a fixed admissible basin and for
+a fixed context. Its apparent failure in sequential measurements reflects the
+necessity of switching between incompatible basin atlases rather than a failure
+of unitary dynamics.
+
+Contextuality therefore constrains the domain of applicability of any single
+unitary description without contradicting unitarity itself.
+
+\section{Conclusions}
+
+We have shown, in a fully formal shadow-bridge framework, that quantum
+contextuality and measurement order dependence are the same phenomenon viewed
+statically and dynamically. Both arise from the impossibility of constructing a
+single global admissible basin atlas compatible with all operational measurement
+contexts.
+
+Contextuality is the static obstruction to global admissibility; order
+dependence is its dynamical manifestation in sequential measurement. Together,
+they explain why quantum mechanics resists noncontextual hidden-variable
+completions and why measurement sequences exhibit irreducible history
+dependence.
+
+By situating these results within Modal Triplet Theory, we provide a physical
+mechanism underlying contextuality that does not rely on metaphysical claims
+about the nonexistence of values or observer-dependent epistemology. Definite
+outcomes exist within contexts; what fails is the assumption of a
+context-independent effective description.
+
+Together with companion QM shadow papers relating probability, classicality,
+measurement, and undecidability, this work completes a coherent basin-and-
+selection account of foundational quantum phenomena. Contextuality, measurement
+order dependence, and outcome selection are revealed as structural necessities
+rather than interpretational accidents.
+
+The shadow-bridge methodology once again demonstrates its explanatory power. By
+identifying disparate four-dimensional phenomena as projections of a single
+higher-level structure, Modal Triplet Theory explains not only what quantum
+mechanics does, but why it must take the form it does.
+\begin{thebibliography}{99}
+
+\bibitem{MTT-Admissibility}
+P.~Nero,
+\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255621}
+
+\bibitem{MTT-Foundation}
+P.~Nero,
+\emph{Modal Triplet Theory: Foundation},
+Zenodo preprint, September 2025.
+\url{https://doi.org/10.5281/zenodo.16949762}
+
+\bibitem{MTT-FixedPoints}
+P.~Nero,
+\emph{Fixed Points I--VI: Complete Coherence Spine},
+Zenodo preprints, August 2025.
+\url{https://doi.org/10.5281/zenodo.16948748}
+
+\bibitem{MTT-ProjectionAdmissibility}
+P.~Nero,
+\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255838}
+
+\bibitem{MTT-Closure}
+P.~Nero,
+\emph{Closure and Inevitability in Modal Triplet Theory},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255510}
+
+\bibitem{MTT-CoherenceCapacity}
+P.~Nero,
+\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255905}
+
+\bibitem{MTT-CoherenceDynamics}
+P.~Nero,
+\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18256048}
+
+\bibitem{MTT-QM}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
+Zenodo preprint, September 2025.
+\url{https://doi.org/10.5281/zenodo.17074246}
+
+\bibitem{MTT-QFT}
+P.~Nero,
+\emph{From MTT to Quantum Field Theory},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17068816}
+
+\bibitem{MTT-GR}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to General Relativity},
+Zenodo preprint, October 2025.
+\url{https://doi.org/10.5281/zenodo.16950597}
+
+\bibitem{MTT-UVQG}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17077671}
+
+\bibitem{MTT-Measurement}
+P.~Nero,
+\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17177404}
+
+\bibitem{MTT-Irreversibility}
+P.~Nero,
+\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18256408}
+
+\bibitem{MTT-Bell-Beables}
+P.~Nero,
+\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17076300}
+
+\bibitem{MTT-Bell-Temporal}
+P.~Nero,
+\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
+Zenodo preprint, August 2025.
+\url{https://doi.org/10.5281/zenodo.18208884}
+
+\bibitem{MTT-Stochastic}
+P.~Nero,
+\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18254862}
+
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,613 @@
+% main.tex  (FP2)
+% Fixed Points II: Fixed Points in a 10D Modal Model
+% Uses: series.sty (v3) and refs.bib
+\documentclass[11pt]{article}
+\usepackage{series}
+
+% ---------------------------
+% Paper metadata (override series defaults)
+% ---------------------------
+\renewcommand{\PartRoman}{II}
+\hypersetup{
+  unicode=true,
+  pdftitle={Fixed Points II: Fixed Points in a 10D Modal Model},
+  pdfauthor={Peter Nero}
+}
+
+% ---------------------------
+% Local (paper) notation
+% ---------------------------
+\newcommand{\Mten}{\ensuremath{M_{10}}}
+\newcommand{\Yfour}{\ensuremath{Y^{4}}}
+\newcommand{\Xsix}{\ensuremath{X^{6}}}
+
+
+\newcommand{\Aop}{A}
+
+\newcommand{\HoneF}{\ensuremath{H^{1}_{F}}}
+\newcommand{\Ltwo}{\ensuremath{L^{2}}}
+
+\newcommand{\Lcoh}{L_{\mathrm{coh}}}
+
+\newcommand{\kcen}{\kappa_{\mathrm{cen}}}
+\newcommand{\Nil}{\mathrm{Nil}}
+\newcommand{\Nilthree}{\mathrm{Nil}_{3}}
+
+% For headings/bookmarks if needed
+% series.sty already defines \FPpdf; keep a fallback just in case.
+\providecommand{\FPpdf}[2]{\texorpdfstring{#1}{#2}}
+
+\title{Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model}
+\author{Peter Nero}
+\date{July 2026}
+
+\begin{document}
+\maketitle
+\seriestagline
+
+\begin{abstract}
+We apply the corrected FP--I machinery to a ten-dimensional control setting
+$\Mten=\Yfour\times\Xsix$. The compact six-manifold $\Xsix$ carries three
+compatible vertical structures represented by strongly commuting nonnegative
+self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion
+maps and is not inferred from ranks $1<2<3$. A shared central-circle/$U(1)$
+datum is bundle or connection data on $\Xsix$ and is not counted as a seventh
+internal product dimension. We prove existence of projected time--$\tau$
+fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or
+strong monotonicity. A projected fixed point is promoted to a full equilibrium
+only under a strict Lyapunov identity. Fiber gaps control only the noncoherent
+$Q$ sector and are never used as coherent damping.
+\end{abstract}
+
+\section*{Revision note for this edition}
+\addcontentsline{toc}{section}{Revision note for this edition}
+\begin{description}
+\item[Supersedes.] \emph{Fixed Points II: Fixed Points in a 10D Modal Model},
+version~2.
+\item[Reason.] The previous realization overcounted a shared circle, left
+operator commutation and nesting implicit, used the fiber gap as coherent
+damping, and did not adequately distinguish a projected time-step fixed point
+from an equilibrium.
+\item[Resolution.] Version~3 uses $M_{10}=Y_4\times X_6$, strongly commuting
+vertical operators, typed overlap/nesting, separate coherent coercivity, and a
+strict Lyapunov gate for equilibrium promotion.
+\item[Retained result.] Schauder/Darbo existence and conditional coherent
+uniqueness survive in the corrected ten-dimensional control realization.
+\item[Remaining boundary.] The q79 carrier, Fu--Yau topology, physical time,
+and Lorentzian dynamics require independent source and completion theorems.
+\end{description}
+
+\tableofcontents
+
+% ============================================================
+\section{Introduction and scope}
+We consider $\Mten=\Yfour\times\Xsix$, where $(\Yfour,g_Y)$ is a complete
+Riemannian analytic/control manifold and $\Xsix$ is compact. The Riemannian base
+may model a Cauchy-slice control geometry or Euclideanized problem, but is not
+identified here with physical Lorentzian spacetime. The internal space carries
+three vertical structures indexed by $n=1,2,3$, each equipped with a
+\emph{nonnegative} self-adjoint vertical operator and a uniform spectral gap.
+We adopt throughout the corrected FP--I series conventions:
+\begin{itemize}
+\item Laplacians are \emph{nonnegative} ($\Delta\ge 0$), and dissipative flows are written
+      $\partial_t\Psi=-\Aop\Psi-N(\Psi)$.
+\item The coherent projector $\Pcoh$ is the joint fiber-harmonic projector, and
+      $\Qcoh:=\Id-\Pcoh$.
+\item Semigroup smoothing is recorded in the global safe form
+      $\|\Aop^{1/2}e^{-t\Aop}\Qcoh\|\lesssim (1+t^{-1/2})e^{-\lambda t}$
+      (cf.\ analytic semigroup bounds in \cite{Amann1995,Henry1981}).
+\end{itemize}
+This alignment is what allows FP--III and later papers to reuse damping/smoothing
+constants without sign drift.
+
+The parameter $t$ in the parabolic flow and the step $\tau$ below are
+stabilization parameters. A physical Lorentzian evolution $U(t_2,t_1)$ and any
+relation to this control flow require a separate theorem.
+
+Our goals are:
+(i) existence of coherent fixed points via Schauder (compact base) or Darbo (noncompact base with confinement);
+(ii) uniqueness via a Fundamental Contractivity Condition (FCC) on the coherent sector;
+(iii) explicit constants in standard geometries.
+General dynamical-systems context may be compared with \cite{Temam1997}.
+
+We also cite here FP--I as the foundational reference for the projection/fixed-point strategy:
+see \cite{Nero2025FP1}.
+
+% ============================================================
+\section{Geometry and functional setup}
+
+\subsection{Internal bundles and harmonic alignment}
+Let $\Xsix$ be a compact six-manifold. On the common internal Hilbert space
+$L^2(\Xsix)$ let $A_n(y)$, $n=1,2,3$, denote the nonnegative self-adjoint
+operators associated with the selected vertical structures. These structures
+may overlap. They are nested only if a concrete realization supplies bundle
+injections or operator intertwiners; rank labels alone do not do so. No product
+decomposition into three disjoint fibers is assumed. The shared central circle
+is encoded by a common circle cycle, foliation, or $U(1)$ line-bundle
+connection on $\Xsix$. Its line-bundle data do not add the dimension of the
+bundle total space to $\dim\Xsix$.
+
+\begin{remark}[Current q79 carrier]
+In the current q79 specialization, the ranks $1$, $2$, and $3$ refer to the
+trace line, trace-zero plane, and a reused full rank-three spectral-cover
+carrier. These are direct lanes, not globally ordered sheets. The fixed-point
+theorems use only the declared operators and therefore do not require a nested
+sheet interpretation.
+\end{remark}
+
+We assume bounded internal geometry and smooth bounded dependence on
+$y\in\Yfour$ as in FP--I. A concrete MTT realization must specify $\Xsix$, the
+three operators, their domains, and the shared-circle action.
+
+\begin{assumption}[Strong commutation of vertical operators]\label{ass:strong-comm}
+For every $y$, the spectral measures of $A_1(y),A_2(y),A_3(y)$ commute. Their
+common domain is dense, their weighted form sum is closed, and the commutation
+and domain bounds are uniform in $y$. Equivalently, the three operators admit a
+joint spectral calculus on the common internal Hilbert space.
+\end{assumption}
+
+\subsection{Fiber Laplacians and gaps}
+Write $A_n(y)$ for the \emph{nonnegative} vertical Laplace-type operator
+(or the vertical part of the spinor Laplacian in the spinor option). Each $A_n(y)$
+has discrete spectrum with $0$ the harmonic eigenvalue. We assume a uniform gap
+\begin{equation}\label{eq:gap}
+\lamstar := \inf_{y\in \Yfour}\ \min_{1\le n\le 3}\ \lambda_1\!\big(A_n(y)\big) \;>\;0,
+\end{equation}
+and constant harmonic rank in $y$.
+
+\paragraph{Explicit gaps in standard fibers.}
+For $S^1_\ell$ (length $\ell$), $\lambda_1=(2\pi/\ell)^2$.
+For a flat torus $T^m$ with side lengths $L_j$, $\lambda_1=(2\pi)^2\min_j L_j^{-2}$.
+For the round $\FPpdf{$S^3$}{S3}$ (radius $1$), $\lambda_1=3$ (see, e.g., \cite{Chavel1984}).
+Nilmanifold factors with bounded geometry admit a uniform positive lower bound on $\lambda_1$
+once the metric class is fixed (bounded geometry prevents collapse).
+
+\subsection{Fields, norms, and (optional) spinors}
+We work with complex scalar fields by default; all results extend to sections of a fixed
+Hermitian bundle with compatible connection.
+
+\paragraph{Anisotropic norm.}
+Let
+\[
+\HoneF := \bigcap_{n=1}^3\mathrm{dom}(A_n^{1/2}),
+\qquad
+\|\Psi\|_{\HoneF}^{2}:=\|\Psi\|_{\Ltwo}^{2}
++\sum_{n=1}^3\|A_n^{1/2}\Psi\|_{\Ltwo}^{2},
+\]
+with the natural common form domain. This is the joint vertical anisotropic
+norm for the possibly overlapping structures. Under strong commutation it is
+equivalent to the form norm of the weighted vertical sum when the weights
+$\kappa_n$ are bounded above and below away from zero.
+
+\subsection{Joint harmonic projector}
+Let $\Pi_n(y)$ be the $\Ltwo$--orthogonal projector onto $\ker A_n(y)$ and define
+the joint projector fiberwise by
+\[
+\Pcoh(y) := \Pi_1(y)\,\Pi_2(y)\,\Pi_3(y).
+\]
+We view $\Pcoh$ as the induced projector on $\Ltwo(\Mten)$ acting fiberwise.
+
+\begin{lemma}[Commutation and range]\label{lem:comm-range}
+Under Assumption~\ref{ass:strong-comm}, the spectral projectors commute. Hence
+\[
+\Pcoh(y)=\Pi_1(y)\Pi_2(y)\Pi_3(y),
+\qquad
+\Ran \Pcoh(y)=\bigcap_{n=1}^{3}\ker A_n(y).
+\]
+\end{lemma}
+
+\begin{lemma}[Boundedness on $H^1$]\label{lem:Pcoh-H1}
+Under the gap condition \eqref{eq:gap} and bounded fiber geometry, the joint projector
+$\Pcoh:H^{1}\to H^{1}$ is bounded with
+\[
+\|\Pcoh\|_{H^{1}\to H^{1}}\le C_{\Pi},
+\]
+and $\Ran \Pcoh$ is closed in $H^{1}$.
+\end{lemma}
+
+\begin{remark}[Reference for Riesz projector bounds]
+Uniform control of fiberwise Riesz projectors on Sobolev scales follows from the Riesz--Dunford formula
+and parameter-dependent elliptic regularity; see \cite{Kato1976,Hebey2000}.
+\end{remark}
+
+% ============================================================
+\section{Flow, projection, and fixed points}
+
+\subsection{Parabolic generator and smoothing}
+Let $\Delta_Y\ge0$ be the Riemannian Laplacian of the base control geometry
+(or the Laplacian on a selected Riemannian Cauchy slice with declared boundary
+conditions). It is not the Lorentzian d'Alembertian. We study
+\begin{equation}\label{eq:flow}
+\partial_t\Psi
+= -\Bigl(\sum_{n=1}^{3}\kappa_n A_n + \varepsilon \Delta_{Y}\Bigr)\Psi
+- N(\Psi),
+\qquad
+\kappa_n>0,\ \varepsilon\in[0,1].
+\end{equation}
+Denote the time--$\tau$ map by $\Phi_\tau$ and set
+\[
+\Qcoh := \Id-\Pcoh,
+\qquad
+\Aop := \sum_{n=1}^{3}\kappa_n A_n + \varepsilon \Delta_Y .
+\]
+Define rates
+\[
+\lambda_n := \inf_{y\in\Yfour}\lambda_1\!\big(A_n(y)\big)>0,
+\qquad
+\lambda_{\Aop} := \min_{1\le n\le 3}\kappa_n \lambda_n.
+\]
+Under strong commutation, $\lambda_{\Aop}$ is a lower bound for the vertical
+form sum on $\Ran \Qcoh$.
+
+\begin{assumption}[Projector commutation for the base-regularized model]\label{ass:projector-comm}
+The common domain is preserved by $\Pcoh$ and $[\Aop,\Pcoh]=0$. If the vertical
+operators depend on $y$, this includes control of the commutator
+$[\Delta_Y,\Pcoh]$; it is not automatic from strong commutation of the
+$A_n$. Models with nonzero commutator require explicit leakage terms and are
+outside the exact invariant-sector theorem below.
+\end{assumption}
+
+By analytic semigroup theory (e.g.\ \cite{Amann1995,Henry1981}) and
+Assumption~\ref{ass:projector-comm},
+for $t>0$ one has
+\begin{equation}\label{eq:semigroup}
+\|\Aop^{1/2}e^{-t\Aop}\Qcoh\|_{\Ltwo\to\Ltwo}
+\le C\,(1+t^{-1/2})e^{-\lambda_{\Aop}t},
+\qquad
+\|e^{-t\Aop}\Pcoh\|_{\Ltwo\to\Ltwo}\le 1.
+\end{equation}
+For two solutions let $w=\Psi_1-\Psi_2$. Duhamel's formula gives the
+sector-correct estimate
+\begin{align}
+\|\Qcoh w(t)\|_{\HoneF}
+&\le C(1+t^{-1/2})e^{-\lambda_{\Aop}t}
+\|\Qcoh w(0)\|_{\Ltwo}\nonumber\\
+&\quad+C\int_0^t(1+(t-s)^{-1/2})e^{-\lambda_{\Aop}(t-s)}
+\|\Qcoh(N(\Psi_1(s))-N(\Psi_2(s)))\|_{\Ltwo}\,\dd s.
+\label{eq:Q-duhamel}
+\end{align}
+No factor $e^{-\lambda_{\Aop}t}$ is asserted for $\Pcoh w$. On the invariant
+coherent sector its dynamics are instead
+\begin{equation}
+\partial_t u=-\varepsilon\Delta_Yu-\Pcoh N(u),
+\qquad u=\Pcoh u,
+\label{eq:P-flow}
+\end{equation}
+and require base coercivity or coherent monotonicity for contraction.
+
+\begin{remark}[Base lower-order terms]
+If the $\Qcoh$ equation includes first/zero-order terms with relative bound
+$C_Y\ge0$, replace the noncoherent decay margin by
+$\lambda_{\Aop}-C_Y$. This modification remains a $\Qcoh$-sector statement.
+\end{remark}
+
+\subsection{Coherence invariance and the projected map}
+\begin{assumption}[Coherence invariance]\label{ass:coh-inv}
+We assume Assumption~\ref{ass:projector-comm} and
+$N(\Ran\Pcoh)\subset \Ran\Pcoh$.
+\end{assumption}
+
+We apply fixed-point principles to
+\[
+T_\tau := \Pcoh\circ \Phi_\tau:\ D\to \Ran\Pcoh\cap \Ltwo,
+\]
+where $D\subset \Ran\Pcoh\cap \Ltwo$ is a closed bounded set (specified in
+\S\ref{subsec:exist}).
+
+\begin{assumption}[Strict Lyapunov identity]\label{ass:lyapunov}
+There is a functional $\mathcal E$ bounded below on the invariant set such that
+every sufficiently regular trajectory satisfies
+\[
+\mathcal E(\Phi_tu)+c\int_0^t\|\partial_s\Phi_su\|_{\Ltwo}^2\,\dd s
+=\mathcal E(u),\qquad c>0.
+\]
+For a gradient flow this follows from $N=\nabla V$ with the required domain and
+regularity. It is not implied by semilinearity alone.
+\end{assumption}
+
+\begin{proposition}[Projected step fixed point and equilibrium promotion]\label{prop:proj-eq}
+Under Assumption~\ref{ass:coh-inv}, a point
+$\Psi^\ast\in\Ran\Pcoh$ with $T_\tau(\Psi^\ast)=\Psi^\ast$ is a fixed point of
+the time--$\tau$ stabilization map. If Assumption~\ref{ass:lyapunov} also holds,
+then it is a genuine equilibrium:
+$\Phi_t(\Psi^\ast)=\Psi^\ast$ for all $t\ge0$.
+\end{proposition}
+
+\begin{proof}
+Coherence invariance gives
+$T_\tau(\Psi^\ast)=\Phi_\tau(\Psi^\ast)=\Psi^\ast$. The Lyapunov identity on
+$[0,\tau]$ then has equal endpoint energies, so its nonnegative dissipation
+integral vanishes. Hence $\partial_t\Phi_t(\Psi^\ast)=0$ and the orbit is
+stationary. Without the Lyapunov identity, a time--$\tau$ fixed point could be
+a nonstationary periodic point.
+\end{proof}
+
+\subsection{Uniqueness via the FCC (anisotropic norm)}
+\begin{theorem}[Fundamental contractivity on the coherent sector]\label{thm:FCC}
+Let
+\[
+\Lcoh := \mathrm{Lip}\bigl(\Pcoh N|_{\Ran \Pcoh}\bigr).
+\]
+Then for $\Psi_1,\Psi_2\in\Ran\Pcoh$,
+\[
+\|\Phi_\tau(\Psi_1)-\Phi_\tau(\Psi_2)\|_{\Ltwo}
+\le e^{\Lcoh\tau}\|\Psi_1-\Psi_2\|_{\Ltwo},
+\]
+and since $\|\cdot\|_{\HoneF}=\|\cdot\|_{\Ltwo}$ on $\Ran\Pcoh$, the same holds in $\HoneF$.
+Moreover, $T_\tau=\Pcoh\Phi_\tau$ is a Banach contraction on the declared
+coherent phase space provided either:
+\begin{enumerate}[label=\textup{(\alph*)}]
+\item \textbf{Base diffusion:} $\varepsilon>0$ and the nonnegative
+      $\Delta_Y$ has a PoincarÃ© gap $\mu_Y>0$ on a specified invariant
+      subspace (for example mean-zero functions or Dirichlet boundary data), with
+      $\varepsilon\mu_Y>\Lcoh$; then
+      \[
+      \|T_\tau(\Psi_1)-T_\tau(\Psi_2)\|_{\Ltwo}\le e^{-(\varepsilon\mu_Y-\Lcoh)\tau}\|\Psi_1-\Psi_2\|_{\Ltwo}.
+      \]
+\item \textbf{Strong monotonicity:} there exists $\mu>0$ such that
+      $\langle \Pcoh N(u)-\Pcoh N(v),u-v\rangle_{\Ltwo}\ge \mu\|u-v\|_{\Ltwo}^2$
+      for all $u,v\in\Ran\Pcoh$; then
+      \[
+      \|T_\tau(\Psi_1)-T_\tau(\Psi_2)\|_{\Ltwo}\le e^{-\mu\tau}\|\Psi_1-\Psi_2\|_{\Ltwo}.
+      \]
+\end{enumerate}
+\end{theorem}
+
+\begin{remark}[Base zero mode]
+On a compact boundaryless connected base, scalar constants lie in
+$\ker\Delta_Y$. Therefore base diffusion gives no coherent contraction on the
+full scalar space. One must remove/fix the mean, impose boundary conditions, or
+use coherent strong monotonicity.
+\end{remark}
+
+\begin{remark}[Why fiber smoothing does not contract on $\Ran\Pcoh$]
+On $\Ran\Pcoh$ one has $\nabla_F\Psi=0$, hence $\|\Psi\|_{\HoneF}=\|\Psi\|_{\Ltwo}$ and
+$\Qcoh=0$. Thus contraction must come from \emph{base} dissipation (case (a)) or coherent monotonicity (case (b)),
+not from the fiber semigroup estimate \eqref{eq:semigroup}.
+\end{remark}
+
+\subsection{Existence without contraction: Schauder and Darbo}\label{subsec:exist}
+
+\begin{assumption}[Confinement for noncompact bases]\label{ass:conf}
+If $\Yfour$ is noncompact, assume the energy includes a confining base potential $V(y)\to\infty$
+as $r(y):=\dist_Y(y,y_0)\to\infty$, yielding uniform tail control on energy sublevels
+(as in FP--I’s confinement hypothesis).
+\end{assumption}
+
+\begin{assumption}[Base smoothing for compactness]\label{ass:base-smooth}
+For the Schauder/Darbo existence routes we assume \emph{base smoothing} is present, e.g.\
+$\varepsilon>0$ in \eqref{eq:flow} (or one works with a base-regularized generator as in FP--I).
+This ensures $\Phi_\tau$ maps bounded sets in $\Ltwo$ into sets bounded in $H^1$ on compact base regions,
+so Rellich compactness applies.
+\end{assumption}
+
+\begin{lemma}[Coherent affine bound]\label{lem:affine}
+Assume one of the two contraction hypotheses in Theorem~\ref{thm:FCC}, with
+coherent contraction rate
+\[
+\rho_{\mathrm{coh}}=
+\begin{cases}
+\varepsilon\mu_Y-\Lcoh,&\text{base-gap case},\\
+\mu,&\text{strong-monotonicity case}.
+\end{cases}
+\]
+Set $q_{\mathrm{coh}}(\tau)=e^{-\rho_{\mathrm{coh}}\tau}$ and
+$B_{\mathrm{coh}}(\tau)=\|T_\tau(0)\|_{\Ltwo}$. Then
+\[
+\|T_\tau(\Psi)\|_{\Ltwo}
+\le q_{\mathrm{coh}}(\tau)\|\Psi\|_{\Ltwo}+B_{\mathrm{coh}}(\tau)
+\]
+for coherent $\Psi$. No $\Qcoh$-sector gap enters this estimate.
+\end{lemma}
+
+\begin{corollary}[Invariant/absorbing ball]\label{cor:ball}
+If $q_{\mathrm{coh}}(\tau)<1$ in Lemma~\ref{lem:affine}, then
+\[
+D_R := \{\Psi\in \Ran\Pcoh\cap \Ltwo:\ \|\Psi\|_{\Ltwo}\le R\},
+\qquad
+R\ge \frac{B_{\mathrm{coh}}(\tau)}{1-q_{\mathrm{coh}}(\tau)},
+\]
+is forward invariant for $T_\tau$ and absorbing in the coherent $\Ltwo$ metric.
+\end{corollary}
+
+\begin{theorem}[Schauder: compact base]\label{thm:schauder}
+Assume $\Yfour$ is compact and Assumption~\ref{ass:base-smooth} holds. Then
+$T_\tau=\Pcoh\Phi_\tau$ maps bounded $L^2$ sets into sets relatively compact
+in $L^2$. If a nonempty $D\subset\Ran\Pcoh\cap\Ltwo$ is $L^2$-closed,
+bounded, convex, and satisfies $T_\tau(D)\subset D$, then $T_\tau$ has a fixed
+point in $D$.
+\end{theorem}
+
+\begin{lemma}[Condensing via compact-local/small-tail decomposition]\label{lem:condensing}
+Assume Assumptions~\ref{ass:base-smooth} and \ref{ass:conf}. Let
+$D_M$ be a forward-invariant energy sublevel that is bounded in $H^1$ and has
+the uniform tail control of Assumption~\ref{ass:conf}. Let $\alpha(\cdot)$ be
+the Kuratowski measure of noncompactness in $\Ltwo$. Then $\Phi_\tau$ is
+\emph{Sadovski\u{\i}-condensing} on $D_M$: for every bounded
+$E\subset D_M$ with $\alpha(E)>0$,
+\[
+\alpha(\Phi_\tau(E))<\alpha(E).
+\]
+\end{lemma}
+
+\begin{proof}[Proof sketch (same mechanism as FP--I, but adapted)]
+Fix a bounded set $E$ in a forward-invariant energy sublevel. Let $\chi_R\in C_c^\infty(\Yfour)$ be a cutoff
+equal to $1$ on $\{r\le R\}$ and supported on $\{r\le 2R\}$, and extend $\chi_R$ to $\Mten$ by $\chi_R\circ\pi$.
+Define the output decomposition
+\[
+K_R(\Psi_0):=(\chi_R\circ\pi)\,\Phi_\tau(\Psi_0),
+\qquad
+S_R(\Psi_0):=(1-\chi_R\circ\pi)\,\Phi_\tau(\Psi_0).
+\]
+Confinement gives uniform small tails: $\sup_{\Psi_0\in E}\|S_R(\Psi_0)\|_{\Ltwo}\to 0$ as $R\to\infty$.
+Base smoothing (Assumption~\ref{ass:base-smooth}) implies that for each fixed $R$, the set $K_R(E)$
+is relatively compact in $\Ltwo$ (Rellich on the compact base region $\{r\le 2R\}$ plus smoothing in $H^1$).
+Hence $\alpha(K_R(E))=0$, and by standard properties of $\alpha$,
+\[
+\alpha(\Phi_\tau(E))=\alpha(K_R(E)+S_R(E))\le \alpha(K_R(E)) + 2\sup_{\Psi_0\in E}\|S_R(\Psi_0)\|_{\Ltwo}
+=2\sup_{\Psi_0\in E}\|S_R(\Psi_0)\|_{\Ltwo}.
+\]
+Choose $R$ so large that the right-hand side is $<\alpha(E)$, giving $\alpha(\Phi_\tau(E))<\alpha(E)$.
+\end{proof}
+
+\begin{theorem}[Darbo--Sadovski\u{\i}: noncompact base with confinement]\label{thm:darbo}
+Assume $\Yfour$ is noncompact and Assumptions~\ref{ass:conf} and \ref{ass:base-smooth} hold.
+Let $D\subset \Ran\Pcoh\cap\Ltwo$ be nonempty, $L^2$-closed, bounded,
+convex, and invariant under $T_\tau$. Since $\Pcoh$ is an $L^2$-orthogonal
+projection of norm one, Lemma~\ref{lem:condensing} implies that $T_\tau$ is
+condensing on $D$. Hence $T_\tau$ has a fixed point in $D$.
+\end{theorem}
+
+\begin{remark}[No full-map decay from the fiber gap]
+The margin $\lambda_{\Aop}-C_Y-\Lip$ can sharpen estimates for the
+$\Qcoh$ component. It cannot imply
+$\alpha(\Phi_\tau(E))\le\theta(\tau)\alpha(E)$ with
+$\theta(\tau)\to0$ for the full map unless the coherent component has its own
+base or monotonicity contraction.
+\end{remark}
+
+\subsection{Damping estimates and effective rates}
+Let $\Psi=\Pcoh\Psi+\Qcoh\Psi$ and write $\Psi^\perp:=\Qcoh\Psi$.
+Assuming coherence invariance and that $N$ is $\Lip$--Lipschitz on the
+invariant set considered, compare $\Psi$ with $\Pcoh\Psi$ to obtain
+\[
+\frac{d}{dt}\|\Psi^\perp\|_{\Ltwo}^{2}
+\le -2\lambda_{\Aop}\|\Psi^\perp\|_{\Ltwo}^{2} + 2C_Y\|\Psi^\perp\|_{\Ltwo}^{2} + 2\Lip \|\Psi^\perp\|_{\Ltwo}^{2}.
+\]
+Hence the effective decay rate satisfies
+\begin{equation}\label{eq:eta}
+\eta \ge \lambda_{\Aop}-C_Y-\Lip.
+\end{equation}
+This governs noncoherent $\Ltwo$ decay only. Higher-norm control follows from
+the sector-correct Duhamel estimate~\eqref{eq:Q-duhamel} under its regularity
+hypotheses. It does not imply coherent or full $H^1$ decay.
+
+% ============================================================
+\section{Examples}
+
+\subsection{Product of circles and tori}
+Let $\Xsix=T^2_1\times T^2_2\times T^2_3$. Let $A_n$ contain the
+nonnegative Laplacian in the $T_n^2$ directions, and let a common $U(1)$
+connection encode the selected central-circle holonomy without adding another
+product factor. For rectangular tori,
+\[
+\lambda_n
+=\min\Bigl\{(2\pi/\ell_{u_n})^2,\ (2\pi/\ell_{v_n})^2\Bigr\}
+>0,
+\]
+for the first nonconstant mode of that factor. These gaps control $\Qcoh$;
+the FCC margin still requires base coercivity or coherent monotonicity.
+
+\subsection{Sphere case (\FPpdf{$S^3$}{S3})}
+If one selected vertical operator has round-$S^3$ leaves of radius one, its
+first positive eigenvalue is $3$ (see \cite{Chavel1984}). This is an
+operator-level gap example, not a claim that three disjoint $S^3$ factors fit
+inside $\Xsix$ or that the coherent sector contracts.
+
+\subsection{Nilmanifold auxiliary model}
+On a compact six-manifold carrying a nilmanifold foliation or on an auxiliary
+Lens--Nil model carrying a nilpotent vertical operator, a noncollapsing
+bounded-geometry family has a
+uniform positive first nonzero eigenvalue once its metric class is fixed. The
+actual embedding, shared-circle action, and commutation with the other two
+operators must be checked in the concrete model. This example does not identify
+$L(3,1)\times\Nilthree$ with the selected q79/Fu--Yau compactification.
+
+\subsection{Toward Physical Interpretation (programmatic note)}
+While this paper is purely mathematical, the following schematic links guide later work:
+\begin{itemize}
+\item The three strongly commuting operators encode compatible, possibly
+      overlapping modal structures on the same internal space.
+\item The coherent sector $\Ran\Pcoh$ consists of fiberwise zero modes (only base dependence remains).
+\item Spectral gaps $\lambda_n$ set decay rates of nonzero fiber modes; in KK heuristics this corresponds
+      to mass scales $m_n\sim \lambda_n^{1/2}$ for excitations.
+\item A projected step fixed point is an equilibrium only when the strict
+      Lyapunov hypothesis of Proposition~\ref{prop:proj-eq} is verified.
+\end{itemize}
+
+% ============================================================
+\section{Concluding remarks}
+We established conditional existence and uniqueness results for projected
+stabilization-step fixed points on $\Mten=\Yfour\times\Xsix$ with three
+strongly commuting vertical operators. Equilibrium promotion requires a strict
+Lyapunov identity. The analysis is a Riemannian control model; physical
+interpretations and Lorentzian dynamics are deferred.
+
+% ============================================================
+\appendix
+
+\section{Contraction on the coherent sector: details}
+Throughout, let $T_\tau=\Pcoh\Phi_\tau$ act on the declared coherent phase
+space and write $\Lcoh:=\mathrm{Lip}(\Pcoh N|_{\Ran\Pcoh})$.
+Coherence invariance means $[\Aop,\Pcoh]=0$ and $\Pcoh N(\Ran\Pcoh)\subset\Ran\Pcoh$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:FCC} (baseline)]
+If $\Psi_i(0)\in\Ran\Pcoh$, then $\Phi_t(\Psi_i)\in\Ran\Pcoh$ for all $t\ge 0$.
+Set $u(t):=\Phi_t(\Psi_1)-\Phi_t(\Psi_2)\in\Ran\Pcoh$. Then
+$\partial_t u = -\Pcoh\bigl(N(\Phi_t(\Psi_1))-N(\Phi_t(\Psi_2))\bigr)$, hence
+$\frac{d}{dt}\|u\|_{\Ltwo}\le \Lcoh\|u\|_{\Ltwo}$ and Grönwall yields the bound.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:FCC}(a) (base diffusion)]
+Assume $\varepsilon>0$ and the nonnegative $\Delta_Y$ has a PoincarÃ© gap
+$\mu_Y>0$ on the declared mean-zero or boundary-conditioned coherent
+subspace. On that subspace the linear generator is $-\varepsilon\Delta_Y$,
+so for $u(t)$ as above,
+\[
+\frac{d}{dt}\|u\|_{\Ltwo}^2 \le -2(\varepsilon\mu_Y-\Lcoh)\|u\|_{\Ltwo}^2,
+\]
+and Grönwall gives the stated contraction.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:FCC}(b) (strong monotonicity)]
+Assume $\langle \Pcoh N(u)-\Pcoh N(v),u-v\rangle_{\Ltwo}\ge \mu\|u-v\|_{\Ltwo}^2$ on $\Ran\Pcoh$.
+Then $\frac{d}{dt}\|u\|_{\Ltwo}^2\le -2\mu\|u\|_{\Ltwo}^2$ and Grönwall yields the contraction.
+\end{proof}
+
+\section{Spectral gap and damping inequality}
+Let $\Psi=\Pcoh\Psi+\Qcoh\Psi$ and $\Psi^\perp:=\Qcoh\Psi$. For solutions of \eqref{eq:flow},
+using that $\Aop\ge \lambda_{\Aop}I$ on $\Ran\Qcoh$ and that $N$ is $\Lip$--Lipschitz on the invariant set,
+one obtains
+\[
+\frac{d}{dt}\|\Psi^\perp(t)\|_{\Ltwo}^2
+\le -2(\lambda_{\Aop}-C_Y-\Lip)\|\Psi^\perp(t)\|_{\Ltwo}^2,
+\]
+which integrates to the exponential estimate consistent with \eqref{eq:eta}.
+
+\section{Riesz projector bounds and base potentials}
+For each $n$, let $A_n(y)\ge0$ be the nonnegative vertical operator defined in
+Section~2 and fix a circle $\Gamma$ of radius $\lamstar/2$ centered at $0$
+inside the spectral gap (uniform in $y$).
+The fiberwise Riesz projector is
+\[
+\Pi_n(y) = \frac{1}{2\pi i}\int_\Gamma (z-A_n(y))^{-1}\,dz.
+\]
+Strong commutation gives the joint projector
+$\Pcoh(y)=\Pi_1(y)\Pi_2(y)\Pi_3(y)$, with
+$\|\Pcoh\|_{\Ltwo\to\Ltwo}\le 1$. Differentiating with respect to a base coordinate $y^\alpha$ gives
+\[
+\partial_\alpha \Pi_n(y)
+=\frac{1}{2\pi i}\int_\Gamma (z-A_n(y))^{-1}\,(\partial_\alpha A_n(y))\,(z-A_n(y))^{-1}\,dz,
+\]
+hence
+\[
+\|\partial_\alpha \Pi_n(y)\|_{\Ltwo\to\Ltwo}
+\le \frac{C}{\lamstar^{2}}\|\partial_\alpha A_n(y)\|_{H^2\to \Ltwo}.
+\]
+Under bounded internal geometry and $C^m$ base dependence,
+$\|\partial_\alpha A_n(y)\|_{H^2\to \Ltwo}$ is uniformly bounded,
+so $\|\partial_\alpha \Pcoh(y)\|_{\Ltwo\to\Ltwo}\le C'_\Pi$ and
+\[
+\|\Pcoh \Psi\|_{H^1}\le (1+C'_\Pi)\|\Psi\|_{H^1}.
+\]
+This is the standard mechanism behind Lemma~\ref{lem:Pcoh-H1}; see \cite{Kato1976,Hebey2000}.
+
+\paragraph{Base potentials.}
+Adding a nonnegative confining potential $V(y)$ improves tail coercivity on $\Yfour$ and underlies Darbo on noncompact bases,
+but does not change the fiber operators $A_n(y)$ and hence does not change $\lamstar$ or $\lambda_{\Aop}$.
+
+% ============================================================
+\bibliographystyle{plain}
+\bibliography{references.bib}
+
+\end{document}

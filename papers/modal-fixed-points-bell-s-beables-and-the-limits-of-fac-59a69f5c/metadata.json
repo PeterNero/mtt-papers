@@ -1,0 +1,88 @@
+{
+  "abstract": "Bell\u2019s theorem rules out local hidden-variable models under measurement independence (MI) and factorization (local causality). We revisit Bell\u2019s program in the setting of the ten-dimensional modal fixed-point dynamics of Modal Triplet Theory (MTT). The fundamental beables are local modal fields on M=Y^4\\times B_1\\times B_2\\times B_3 subject to a global fixed-point constraint. Their projection to four dimensions preserves MI and operational no-signaling but necessarily violates factorization. We formalize the probability space of seeds (\\Xi,\\Sigma,\\mu), prove no-signaling by mapping outcome probabilities exactly to the Born rule on \\mathcal{H}_{\\mathrm{QM}} via the observable map \\mathsf{P}=I\\circ\\Pi, and show that MI + (QM agreement) \\Rightarrow failure of factorization by CHSH. Thus the observed nonlocal correlations are a projection artifact of local 10D beables. We compare with Kaluza\u2013Klein and discuss implications.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "September 8, 2025",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.17076300",
+    "created": "2025-09-08T09:13:15.496896+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.17076301",
+    "files": [
+      {
+        "checksum": "md5:fe92d392867852aaeb850dce8971916d",
+        "content_url": "https://zenodo.org/api/records/17076301/files/Modal_Triplet_Theory__Modal_Fixed_Points__Bell_s_Beables__and_the_Limits_of_Factorization%20(1).pdf/content",
+        "key": "Modal_Triplet_Theory__Modal_Fixed_Points__Bell_s_Beables__and_the_Limits_of_Factorization (1).pdf",
+        "size": 327130
+      }
+    ],
+    "id": "17076301",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2025-09-08",
+    "record_url": "https://zenodo.org/records/17076301",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: Modal Fixed Points, Bell's Beables, and the Limits of Factorization",
+    "updated": "2025-09-08T09:13:15.869774+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "c45e2e411f580e70acdfacde7931a2f9e25946fd2670c119c6cdebb8924031a5",
+  "paper_id": "modal-fixed-points-bell-s-beables-and-the-limits-of-fac-59a69f5c",
+  "paper_md_sha256": "3c2d3d9364cddb7d28f41df65e23daf58be28a34e990da8547aaed6bdf2a0509",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 3395,
+      "path": "main.bib",
+      "sha256": "522cf2bc7befdcb7ab0e86eb6ddf257908fb36d856f4528eec13acbff5ee5771"
+    },
+    {
+      "bytes": 28786,
+      "path": "main.tex",
+      "sha256": "c45e2e411f580e70acdfacde7931a2f9e25946fd2670c119c6cdebb8924031a5"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "9 Bell, Entanglement & Time/_work/Modal_Triplet_Theory__Modal_Fixed_Points__Bell_s_Beables__and_the_Limits_of_Factorization"
+  },
+  "source_tree_sha256": "70692d776e569ea532033f2103d1b3b9520b6c898e26f342b59a5e6e8d1ae50d",
+  "title": "Modal Fixed Points, Bell\u2019s Beables, and the Limits of Factorization: A Local 10D Ontology with Operational No-Signaling",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17076300",
+      "created": "2025-09-08T09:13:15.496896+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.17076301",
+      "files": [
+        {
+          "checksum": "md5:fe92d392867852aaeb850dce8971916d",
+          "content_url": "https://zenodo.org/api/records/17076301/files/Modal_Triplet_Theory__Modal_Fixed_Points__Bell_s_Beables__and_the_Limits_of_Factorization%20(1).pdf/content",
+          "key": "Modal_Triplet_Theory__Modal_Fixed_Points__Bell_s_Beables__and_the_Limits_of_Factorization (1).pdf",
+          "size": 327130
+        }
+      ],
+      "id": "17076301",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2025-09-08",
+      "record_url": "https://zenodo.org/records/17076301",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: Modal Fixed Points, Bell's Beables, and the Limits of Factorization",
+      "updated": "2025-09-08T09:13:15.869774+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

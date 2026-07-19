@@ -1,0 +1,511 @@
+---
+abstract: |
+  Local quantum field theory writes interactions as pointwise products, for example $`\int_X \lambda \phi(x)^4\,dx`$. In perturbation theory these contact vertices generate coincidence limits, momentum-conservation delta functions, and ultraviolet singularities. Building on the preceding papers on Dirac deltas, coherent Green functions, gauge fixing, and measurement effects, this paper develops the contact-interaction member of the same projection-kernel program. The central claim is narrow: a point-local interaction vertex is the zero-width limit of a finite coherent overlap vertex.
+
+  The mathematical core is an approximate-identity theorem. Given a bounded smoothing kernel $`K_\epsilon(x,y)`$, define the smeared field $`\phi_\epsilon(x)=\int_X K_\epsilon(x,y)\phi(y)\,dy`$ and the finite overlap interaction
+  ``` math
+  S_{\mathrm{int},\epsilon}[\phi]
+    = \frac{\lambda}{4!}\int_X \phi_\epsilon(x)^4\,dx .
+  ```
+  For smooth fields, $`S_{\mathrm{int},\epsilon}\to S_{\mathrm{int}}=
+  \frac{\lambda}{4!}\int_X\phi(x)^4\,dx`$ as $`\epsilon\downarrow0`$. On a compact spectral model, replacing the identity by a finite spectral projector $`\Pi_\Lambda`$ yields a finite vertex tensor and finite coincident covariance in the retained sector. In momentum space, heat-kernel smearing multiplies propagators and vertices by rapidly decaying form factors, turning point-contact singularities into finite coherent-overlap expressions before the sharp limit is taken.
+
+  The MTT interpretation is that ordinary contact interactions are not primitive zero-width events. They are downstream idealizations of finite admissible overlap among coherent modes. Renormalization is therefore re-read, not abolished, as the repair procedure needed when a downstream theory replaces finite coherent overlap by a point-local delta/contact idealization. The paper proves the kernel-convergence, general $`n`$-point sharp-limit, and finite-cutoff statements; broader claims about physical renormalization are presented as structural interpretation and research program, not as completed phenomenology. We also emphasize that admissible kernels are not arbitrary regulators: they must respect the causal, symmetry, and quotient structures of the effective theory.
+author:
+- Peter Nero
+current_version: unversioned
+date: April 2026
+generated_from_main_tex_sha256: cb272180e6bf044e4bb9332ede3a7441bccf1aae43aa2785b8c06a33ebba3785
+paper_id: contact-interactions-and-renormalization-as-over-sharp-c2cfaa22
+release_state: not_matched_to_zenodo
+title: |
+  Contact Interactions and Renormalization as Over–Sharp Projection  
+  Finite Coherent Overlap Vertices in Modal Triplet Theory
+---
+
+# Purpose and claim discipline
+
+The preceding papers established four projection-kernel replacements:
+``` math
+\delta(x-y)\leadsto K_{\mathrm{coh}}(x,y),
+\qquad
+LG=\delta\leadsto LG_{\mathrm{coh}}=K_{\mathrm{coh}},
+```
+``` math
+\delta(G[A])\leadsto \mathcal K_{\epsilon}(G[A]),
+\qquad
+|x\rangle\langle x|\leadsto E_x^\epsilon .
+```
+The present paper treats the next major occurrence of delta-like structure: contact interactions.
+
+In ordinary local field theory, an interaction such as
+``` math
+S_{\mathrm{int}}[\phi]=\frac{\lambda}{4!}\int_X \phi(x)^4\,dx
+```
+is point-local. In perturbation theory this point-locality appears as coincidence limits, delta functions enforcing exact vertex bookkeeping, and ultraviolet divergences.
+
+The central thesis is:
+``` math
+\boxed{\text{A contact interaction is the zero-width limit of a finite coherent overlap vertex.}}
+```
+
+## Non-claims
+
+This paper does not claim that renormalization is unnecessary, that all quantum field theories become finite by the same smearing rule, or that a complete Standard Model calculation is performed here. The claims are narrower.
+
+<div class="center">
+
+| **Level** | **Claim** |
+|:---|:---|
+| Proved | Smeared overlap vertices converge to local contact vertices on smooth fields. |
+| Proved | Finite spectral projection yields finite-dimensional vertex tensors and finite coincident covariance in the retained sector. |
+| Standard analytic fact | Heat-kernel or spectral damping improves ultraviolet behavior in loop integrals. |
+| MTT interpretation | Local contact vertices are singular downstream shadows of finite coherent overlap. |
+| Research program | Renormalization can be partly re-read as repair of over-sharp projection. |
+
+</div>
+
+## Physical admissibility caveat
+
+A finite-width vertex is not automatically a physically acceptable replacement for a local interaction. Generic nonlocal smearing can spoil microcausality, reflection positivity, unitarity, Ward identities, or BRST consistency. The present paper therefore distinguishes two notions:
+``` math
+\text{arbitrary regulator kernel}
+\qquad\text{versus}\qquad
+\text{admissible coherent projection kernel}.
+```
+Only the second has the intended MTT status. An admissible kernel must be generated by the same coherent-sector projection, overlap geometry, and symmetry constraints that define the effective theory. In gauge theories, for example, finite-width vertices must preserve the relevant Ward or Slavnov–Taylor identities. In Lorentzian settings, they must also be compatible with causal propagation on the admissible slab.
+
+Thus the paper proves convergence and finiteness statements for controlled kernels, but does not claim that arbitrary smearing produces a consistent QFT.
+
+# Local contact vertices and their hidden delta structure
+
+A local quartic vertex can be written formally as
+``` math
+S_{\mathrm{int}}[\phi]
+=\frac{\lambda}{4!}\int_X \phi(x)^4\,dx .
+```
+Equivalently, it is the four-field functional
+``` math
+S_{\mathrm{int}}[\phi]
+=
+\frac{\lambda}{4!}
+\int_{X^4}
+V_{\delta}(x_1,x_2,x_3,x_4)
+\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)
+\,dx_1\cdots dx_4,
+```
+where the contact vertex distribution is
+``` math
+V_{\delta}(x_1,x_2,x_3,x_4)
+=
+\int_X
+\prod_{j=1}^{4}\delta(x-x_j)\,dx .
+```
+Thus the local vertex already contains a product of selection kernels. It says that all four fields interact at exactly the same point. The MTT diagnostic asks: what finite coherent overlap has been idealized as this exact coincidence?
+
+# Finite coherent overlap vertices
+
+Let $`K_\epsilon(x,y)`$ be a family of smooth kernels on a compact Riemannian manifold $`(X,g)`$. Assume $`K_\epsilon`$ is an approximate identity: for every smooth $`f`$,
+``` math
+K_\epsilon f(x):=\int_X K_\epsilon(x,y)f(y)\,dy\longrightarrow f(x)
+```
+in $`C^\infty(X)`$ as $`\epsilon\downarrow0`$. Examples include heat kernels $`H_\epsilon=e^{-\epsilon\Delta}`$ and spectral cutoffs approaching the identity.
+
+Define the smeared field
+``` math
+\phi_\epsilon(x)=K_\epsilon\phi(x)
+=\int_XK_\epsilon(x,y)\phi(y)\,dy .
+```
+The finite coherent overlap vertex is
+``` math
+S_{\mathrm{int},\epsilon}[\phi]
+=
+\frac{\lambda}{4!}\int_X \phi_\epsilon(x)^4\,dx .
+```
+Equivalently,
+``` math
+S_{\mathrm{int},\epsilon}[\phi]
+=
+\frac{\lambda}{4!}
+\int_{X^4}
+V_\epsilon(x_1,x_2,x_3,x_4)
+\prod_{j=1}^4\phi(x_j)\,
+dx_1\cdots dx_4,
+```
+where
+``` math
+V_\epsilon(x_1,x_2,x_3,x_4)
+=
+\int_X\prod_{j=1}^{4}K_\epsilon(x,x_j)\,dx .
+```
+For finite $`\epsilon`$, the vertex no longer forces exact coincidence. It couples fields whose support overlaps within the coherent resolution scale of $`K_\epsilon`$.
+
+# Theorem: overlap vertices converge to contact vertices
+
+<div class="theorem">
+
+**Theorem 1** (Contact vertex as sharp-overlap limit). *Let $`X`$ be compact and let $`K_\epsilon`$ be an approximate identity on $`C^\infty(X)`$. For every $`\phi\in C^\infty(X)`$,
+``` math
+S_{\mathrm{int},\epsilon}[\phi]\longrightarrow
+S_{\mathrm{int}}[\phi]
+=
+\frac{\lambda}{4!}\int_X\phi(x)^4\,dx
+```
+as $`\epsilon\downarrow0`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Since $`K_\epsilon\phi\to\phi`$ in $`C^\infty(X)`$, in particular $`K_\epsilon\phi\to\phi`$ uniformly. Write $`\phi_\epsilon=K_\epsilon\phi`$. Then
+``` math
+|\phi_\epsilon^4-\phi^4|
+=
+|\phi_\epsilon-\phi|\,
+|\phi_\epsilon^3+\phi_\epsilon^2\phi+\phi_\epsilon\phi^2+\phi^3|.
+```
+Uniform convergence implies $`\sup_X|\phi_\epsilon-\phi|\to0`$, while $`\phi_\epsilon`$ and $`\phi`$ are uniformly bounded for sufficiently small $`\epsilon`$. Hence $`\phi_\epsilon^4\to\phi^4`$ uniformly. Since $`X`$ has finite volume,
+``` math
+\int_X \phi_\epsilon(x)^4\,dx \to \int_X\phi(x)^4\,dx .
+```
+Multiplying by $`\lambda/4!`$ gives the result. ◻
+
+</div>
+
+<div class="corollary">
+
+**Corollary 2** (Contact distribution as vertex limit). *In the distributional sense on $`X^4`$,
+``` math
+V_\epsilon(x_1,x_2,x_3,x_4)\to
+V_\delta(x_1,x_2,x_3,x_4)
+=
+\int_X\prod_{j=1}^4\delta(x-x_j)\,dx .
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* For a test function of product form $`F(x_1,x_2,x_3,x_4)=\prod_{j=1}^4\phi_j(x_j)`$, the pairing with $`V_\epsilon`$ is
+``` math
+\int_X\prod_{j=1}^4(K_\epsilon\phi_j)(x)\,dx,
+```
+which converges to
+``` math
+\int_X\prod_{j=1}^4\phi_j(x)\,dx,
+```
+the pairing with $`V_\delta`$. Finite linear combinations of product test functions are dense in the usual test-function topology on compact products; continuity gives the general case. ◻
+
+</div>
+
+# General $`n`$-point overlap vertices
+
+The quartic case is not special. For an $`n`$-field local vertex, define
+``` math
+V_{\delta}^{(n)}(x_1,\ldots,x_n)
+=
+\int_X\prod_{j=1}^{n}\delta(x-x_j)\,dx ,
+```
+so that the corresponding local interaction is
+``` math
+S_{\mathrm{int}}^{(n)}[\phi]
+=
+\frac{\lambda_n}{n!}
+\int_{X^n}
+V_{\delta}^{(n)}(x_1,\ldots,x_n)
+\prod_{j=1}^{n}\phi(x_j)\,dx_1\cdots dx_n
+=
+\frac{\lambda_n}{n!}\int_X\phi(x)^n\,dx .
+```
+The finite overlap replacement is
+``` math
+V_{\epsilon}^{(n)}(x_1,\ldots,x_n)
+=
+\int_X\prod_{j=1}^{n}K_\epsilon(x,x_j)\,dx ,
+```
+and
+``` math
+S_{\mathrm{int},\epsilon}^{(n)}[\phi]
+=
+\frac{\lambda_n}{n!}\int_X (K_\epsilon\phi)(x)^n\,dx .
+```
+
+<div class="proposition">
+
+**Proposition 3** (General $`n`$-point sharp-overlap limit). *Let $`X`$ be compact, let $`K_\epsilon`$ be an approximate identity on $`C^\infty(X)`$, and let $`n\ge2`$. For every $`\phi\in C^\infty(X)`$,
+``` math
+S_{\mathrm{int},\epsilon}^{(n)}[\phi]
+\longrightarrow
+S_{\mathrm{int}}^{(n)}[\phi]
+=
+\frac{\lambda_n}{n!}\int_X\phi(x)^n\,dx .
+```
+Moreover $`V_{\epsilon}^{(n)}\to V_{\delta}^{(n)}`$ in distributions on $`X^n`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The functional convergence follows from $`K_\epsilon\phi\to\phi`$ uniformly and the identity
+``` math
+a^n-b^n=(a-b)\sum_{r=0}^{n-1}a^{n-1-r}b^r .
+```
+Uniform boundedness of $`K_\epsilon\phi`$ for small $`\epsilon`$ gives uniform convergence of $`(K_\epsilon\phi)^n`$ to $`\phi^n`$, and compactness of $`X`$ permits integration.
+
+For the distributional statement, pair $`V_{\epsilon}^{(n)}`$ with product test functions $`\prod_{j=1}^n\phi_j(x_j)`$. The pairing is
+``` math
+\int_X\prod_{j=1}^n(K_\epsilon\phi_j)(x)\,dx,
+```
+which converges to
+``` math
+\int_X\prod_{j=1}^n\phi_j(x)\,dx.
+```
+Density of finite sums of product test functions in the test-function topology on $`X^n`$ extends the result. ◻
+
+</div>
+
+This general form is the useful one for perturbation theory: every point-local $`n`$-leg vertex is the sharp limit of a finite coherent $`n`$-fold overlap.
+
+# Finite spectral projection and finite vertex tensors
+
+A particularly clean model uses a finite spectral projector. Let
+``` math
+\Pi_\Lambda f
+=
+\sum_{\lambda_n\le\Lambda}\langle\phi_n,f\rangle\phi_n
+```
+be the spectral projector for a nonnegative Laplace-type operator on compact $`X`$. Define
+``` math
+\phi_\Lambda=\Pi_\Lambda\phi .
+```
+The projected quartic interaction is
+``` math
+S_{\mathrm{int},\Lambda}[\phi]
+=
+\frac{\lambda}{4!}\int_X(\Pi_\Lambda\phi)(x)^4\,dx .
+```
+Expanding
+``` math
+\Pi_\Lambda\phi=\sum_{\lambda_a\le\Lambda}\phi_a\,e_a(x)
+```
+gives
+``` math
+S_{\mathrm{int},\Lambda}
+=
+\frac{\lambda}{4!}
+\sum_{a,b,c,d\in I_\Lambda}
+V_{abcd}\,\phi_a\phi_b\phi_c\phi_d,
+```
+where $`I_\Lambda=\{a:\lambda_a\le\Lambda\}`$ and
+``` math
+V_{abcd}=\int_X e_a(x)e_b(x)e_c(x)e_d(x)\,dx .
+```
+For finite $`\Lambda`$, this is a finite-dimensional tensor. There are no coincident-point products of distributions inside the retained sector.
+
+<div class="proposition">
+
+**Proposition 4** (Finite coincident covariance in a finite coherent sector). *Let $`C_\Lambda=\Pi_\Lambda L^{-1}\Pi_\Lambda`$, where $`L`$ is strictly positive on $`L^2(X)`$. Then $`C_\Lambda`$ has smooth finite-rank kernel
+``` math
+C_\Lambda(x,y)=\sum_{\lambda_n\le\Lambda}\frac{e_n(x)e_n^\ast(y)}{\mu_n},
+```
+where $`L e_n=\mu_n e_n`$ in the diagonal case. In particular, $`C_\Lambda(x,x)<\infty`$ for every $`x\in X`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The sum contains finitely many smooth terms, each with finite coefficient $`1/\mu_n`$. Therefore $`C_\Lambda(x,y)`$ is smooth and finite-rank. Evaluating at $`x=y`$ gives a finite sum of finite numbers. ◻
+
+</div>
+
+This proposition is the rigorous finite-cutoff version of the slogan:
+``` math
+\boxed{\text{coincident-point singularities arise only after the coherent cutoff is removed}.}
+```
+
+# Momentum-space model on the flat torus
+
+Let $`X=\mathbb T^d`$ and use Fourier modes
+``` math
+e_k(x)=\frac{1}{(2\pi)^{d/2}}e^{ik\cdot x},
+\qquad k\in\mathbb Z^d.
+```
+For $`L_m=-\Delta+m^2`$, the free covariance is
+``` math
+C(k)=\frac{1}{|k|^2+m^2}.
+```
+
+A sharp spectral cutoff retains $`|k|\le\Lambda`$. The projected covariance is
+``` math
+C_\Lambda(x,y)=\frac{1}{(2\pi)^d}
+\sum_{|k|\le\Lambda}
+\frac{e^{ik\cdot(x-y)}}{|k|^2+m^2}.
+```
+For finite $`\Lambda`$, $`C_\Lambda(x,x)`$ is finite:
+``` math
+C_\Lambda(x,x)=\frac{1}{(2\pi)^d}
+\sum_{|k|\le\Lambda}
+\frac{1}{|k|^2+m^2}<\infty .
+```
+As $`\Lambda\to\infty`$, this diagonal quantity diverges for $`d\ge2`$, logarithmically in $`d=2`$ and by power law in $`d\ge3`$. This is the standard ultraviolet coincidence problem.
+
+A heat-filtered version replaces the sharp cutoff by
+``` math
+C_\tau(k)=\frac{e^{-\tau |k|^2}}{|k|^2+m^2}.
+```
+Then
+``` math
+C_\tau(x,x)=\frac{1}{(2\pi)^d}
+\sum_{k\in\mathbb Z^d}
+\frac{e^{-\tau |k|^2}}{|k|^2+m^2}<\infty
+```
+for every $`\tau>0`$. The divergence reappears only as $`\tau\downarrow0`$.
+
+Thus the finite coherent kernel does not “solve” the local theory by magic. It displays exactly where the singularity enters: at the zero-width limit.
+
+# Loop integrals and over-sharp projection
+
+In Euclidean momentum space, the one-loop tadpole in a local scalar theory contains the formal integral
+``` math
+I_{\mathrm{local}}=\int_{\mathbb R^d}\frac{d^dk}{(2\pi)^d}\frac{1}{k^2+m^2},
+```
+which diverges for $`d\ge2`$. A heat-coherent replacement gives
+``` math
+I_\tau=\int_{\mathbb R^d}\frac{d^dk}{(2\pi)^d}
+\frac{e^{-\tau k^2}}{k^2+m^2}.
+```
+For every $`\tau>0`$, $`I_\tau<\infty`$. The local divergent integral is recovered as $`\tau\downarrow0`$.
+
+This illustrates the structural point:
+``` math
+\boxed{\text{UV divergence is often the cost of taking a coherent overlap width to zero}.}
+```
+The statement is intentionally limited. It does not replace the full renormalization program. It explains why renormalization is encountered precisely where local field theory forms products or loops at exact coincidence.
+
+# Regulator versus coherent projection kernel
+
+Mathematically, the kernels introduced above resemble familiar regulators. A heat factor $`e^{-\tau k^2}`$, a spectral cutoff $`\Pi_\Lambda`$, or a smooth compactly supported kernel can all improve ultraviolet behavior. The MTT interpretation is not that regulators are new. Rather, it changes the status of the finite object.
+
+``` math
+\begin{array}{c|c}
+\text{Ordinary regulator use} & \text{MTT coherent-kernel reading}\\
+\hline
+\text{auxiliary computational device} & \text{finite admissible overlap structure}\\
+\text{removed after renormalization} & \text{may encode physical coherence scale}\\
+\text{not usually part of ontology} & \text{downstream shadow of projection}\\
+\text{chosen for convenience} & \text{constrained by coherent-sector geometry}
+\end{array}
+```
+
+Therefore the claim is not simply “add a cutoff.” The claim is that in an MTT-compatible description the finite kernel is the prior object, and the local contact vertex is the idealized limit. Ordinary renormalization remains necessary when one insists on taking that local limit.
+
+# Renormalization as repair of over-sharp projection
+
+From the present viewpoint, renormalization has a two-sided interpretation.
+
+First, it is the standard and indispensable method for defining local QFT after singular limits have been taken. Nothing in this paper challenges that.
+
+Second, it can be structurally re-read as a repair mechanism:
+``` math
+\text{finite overlap vertex}
+\longrightarrow
+\text{zero-width contact vertex}
+\longrightarrow
+\text{coincident singularities}
+\longrightarrow
+\text{renormalization}.
+```
+In MTT terms, the local theory has projected away the finite overlap structure and then must restore predictivity by absorbing the consequences into parameters, counterterms, or running couplings.
+
+Thus:
+``` math
+\boxed{\text{renormalization repairs the downstream theory after admissible overlap has been idealized as point contact}.}
+```
+This is not a new computational scheme by itself. It is a structural reinterpretation of why the scheme is needed. In particular, the existence of a finite kernel does not abolish renormalization in the sharp local limit. It identifies the finite object whose removal creates the singular problem that renormalization then controls.
+
+# MTT interpretation
+
+The MTT reading is direct.
+
+<div class="center">
+
+| **Standard QFT object** | **MTT reading** |
+|:---|:---|
+| $`\delta(x-y)`$ | singular identity kernel |
+| $`\phi(x)^4`$ | zero-width contact overlap |
+| $`V_\delta`$ | exact coincidence selection among four fields |
+| $`V_\epsilon`$ | finite coherent overlap vertex |
+| finite $`\Lambda`$ or $`\tau>0`$ | retained coherent sector / admissible resolution |
+| coincident singularity | failure of zero-width contact idealization |
+| counterterms/running | repair of over-sharp projection in the effective theory |
+
+</div>
+
+The native MTT object is not the local vertex $`V_\delta`$, but the finite overlap vertex $`V_{\mathrm{coh}}`$. The local vertex is the singular downstream limit.
+
+# Scope of the physical claim
+
+The mathematical statements above are deliberately weaker than the possible physical interpretation. What is proved is that contact vertices arise as sharp limits of finite overlap vertices and that finite spectral sectors remove coincident distributional products inside the retained sector. What is not proved here is that a particular experimentally correct quantum field theory is obtained by a chosen kernel.
+
+The physical MTT claim is conditional:
+
+``` math
+\boxed{
+\text{If an effective local QFT is the sharp limit of an admissible coherent projection,}
+\quad
+\text{then its contact vertices should be read as zero-width overlap limits.}
+}
+```
+
+This conditional form is important. It avoids the false inference that any smoothing kernel is physically meaningful. Only kernels tied to the admissibility, symmetry, and projection structure of the underlying theory qualify as coherent kernels in the MTT sense.
+
+# Relation to the previous papers
+
+The present paper extends the sequence as follows.
+
+<div class="center">
+
+| **Previous paper** | **Replacement** |
+|:---|:---|
+| Delta foundation | $`\delta(x-y)\leadsto K_{\mathrm{coh}}(x,y)`$ |
+| Green functions | $`LG=\delta\leadsto LG_{\mathrm{coh}}=K_{\mathrm{coh}}`$ |
+| Gauge fixing | $`\delta(G[A])\leadsto`$ finite gauge tube |
+| Measurement | $`|x\rangle\langle x|\leadsto`$ finite POVM effect |
+| This paper | $`\phi(x)^4\leadsto`$ finite coherent overlap vertex |
+
+</div>
+
+The common pattern is now visible:
+``` math
+\boxed{\text{singular local object}=\text{zero-width limit of bounded admissible kernel}.}
+```
+
+# Scope of proof
+
+The proof content of this paper is deliberately modest.
+
+<div class="center">
+
+| **Claim** | **Status** |
+|:---|:---|
+| Smeared smooth vertices converge to contact vertices | proved |
+| Finite spectral sectors have finite vertex tensors | proved |
+| Finite spectral covariance has finite diagonal | proved |
+| Heat damping makes tadpole-type integrals finite | standard analytic fact, illustrated |
+| General $`n`$-point contact vertices arise as sharp overlap limits | proved for smooth fields |
+| Arbitrary smearing preserves locality, unitarity, and gauge symmetry | not claimed |
+| All QFT renormalization is solved by MTT kernels | not claimed |
+| The Standard Model has been recalculated with these kernels | not claimed |
+
+</div>
+
+# Conclusion
+
+Contact interactions are among the most important places where physics writes an exact local object and then pays for it through singularities and renormalization. This paper has shown that the local quartic vertex can be obtained as the zero-width limit of a finite coherent overlap vertex. At finite spectral bandwidth or finite heat-kernel width, the vertex is a bounded overlap tensor and coincident covariance is finite inside the retained sector.
+
+The MTT interpretation is that contact interactions are not primitive point events. They are downstream singular shadows of finite admissible overlap. Renormalization is then re-read as the repair procedure required when a downstream QFT replaces finite coherent overlap by point-local contact.
+
+The guiding diagnostic remains:
+``` math
+\boxed{\text{where a local theory writes exact contact, ask what coherent overlap has been collapsed}.}
+```

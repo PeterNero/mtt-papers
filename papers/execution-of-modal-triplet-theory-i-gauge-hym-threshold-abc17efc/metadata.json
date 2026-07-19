@@ -1,0 +1,91 @@
+{
+  "abstract": "We replace the obsolete few-TeV Calabi\u2013Yau benchmark with the current audited execution status of the MTT gauge, Hermitian Yang\u2013Mills (HYM), threshold, and axion sectors. The selected gauge profile is transported by SMDR v1.3 to Q=M_t and enters an eight-row positive-definite precision object. Embedded renormalized-Standard-Model equivalence closes at the adopted one-shared-physical-primitive/profile standard. On the selected q79/F/m1 rank-two bundle, the literal Cech\u2013HYM witness closes, including the finite cocycle and continuum tail certificates. The internal K_{\\mathrm{threshold}} response ledger also closes, but physical threshold/mass rows remain admitted profile data rather than strict MTT-emitted values. The old fitted Kahler moduli, exceptional-cycle thresholds, and axion normalizations are withdrawn. Strong CP remains open because the complete E_6 color anomaly cancels and no selected flux/threshold axion-current map has yet supplied a nonzero effective anomaly.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v3",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262313",
+    "created": "2026-01-15T21:18:04.393981+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262314",
+    "files": [
+      {
+        "checksum": "md5:a5e36a8285c535667a834dc36e1b2d1e",
+        "content_url": "https://zenodo.org/api/records/18262314/files/Execution_of_Modal_Triplet_Theory_I__Gauge__Axion__and_Threshold_Sectors_v2%20(3).pdf/content",
+        "key": "Execution_of_Modal_Triplet_Theory_I__Gauge__Axion__and_Threshold_Sectors_v2 (3).pdf",
+        "size": 301021
+      }
+    ],
+    "id": "18262314",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262314",
+    "resource_type": "publication",
+    "title": "Execution of Modal Triplet Theory I: Gauge, K\u00e4hler, Axion, and Threshold Sectors",
+    "updated": "2026-01-15T21:18:04.878589+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "7f156a42c6219ef3ea766fd3b739ea47f9f19b138c7992e826cb612be12c9020",
+  "paper_id": "execution-of-modal-triplet-theory-i-gauge-hym-threshold-abc17efc",
+  "paper_md_sha256": "abba704b40e9b8a913918816cd9180d4974f1ccb13ca560e142dbf1cb2f5f7d4",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
+    "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
+    "selected_revision": true,
+    "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Execution_of_Modal_Triplet_Theory_I__Gauge__Axion__and_Threshold_Sectors_v2"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 11766,
+      "path": "main.tex",
+      "sha256": "7f156a42c6219ef3ea766fd3b739ea47f9f19b138c7992e826cb612be12c9020"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Execution_of_Modal_Triplet_Theory_I__Gauge__Axion__and_Threshold_Sectors_v3"
+  },
+  "source_tree_sha256": "1b5c171652c1dafbb30e6e4fa26d347d38f47e18a220db444ce3f3e342f4f47a",
+  "title": "Execution of Modal Triplet Theory I: Gauge, HYM, Threshold, and Axion Status after True-SM Closure",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262313",
+      "created": "2026-01-15T21:18:04.393981+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262314",
+      "files": [
+        {
+          "checksum": "md5:a5e36a8285c535667a834dc36e1b2d1e",
+          "content_url": "https://zenodo.org/api/records/18262314/files/Execution_of_Modal_Triplet_Theory_I__Gauge__Axion__and_Threshold_Sectors_v2%20(3).pdf/content",
+          "key": "Execution_of_Modal_Triplet_Theory_I__Gauge__Axion__and_Threshold_Sectors_v2 (3).pdf",
+          "size": 301021
+        }
+      ],
+      "id": "18262314",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262314",
+      "resource_type": "publication",
+      "title": "Execution of Modal Triplet Theory I: Gauge, K\u00e4hler, Axion, and Threshold Sectors",
+      "updated": "2026-01-15T21:18:04.878589+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

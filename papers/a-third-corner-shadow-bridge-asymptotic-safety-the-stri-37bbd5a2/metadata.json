@@ -1,0 +1,88 @@
+{
+  "abstract": "Modal Triplet Theory (MTT) selects physically viable effective descriptions through a coherent-sector admissibility constraint. A bounded projection with a finite spectral gap \\lambda_\\ast>0 and controlled truncation defines a coherent sector whose admissible configurations form a stability-selected fixed-point structure, referred to as the coherent spine. Effective physical laws arise only within this admissible sector, and their breakdown coincides with loss of admissibility. Previous work established that, within a string corner where a two-dimensional sigma-model encoding exists, perturbative string theory and infrared General Relativity arise as distinct but equivalent shadows of the same coherent admissibility constraint. In this paper we extend this correspondence by identifying a third encoding: functional renormalization-group asymptotic safety. Under explicit assumptions of controlled encoding and scheme conjugacy, we prove that coherent-spine fixed points, worldsheet renormalization-group fixed points, and functional renormalization-group ultraviolet fixed points are equivalent diagnostics of a single upstairs admissibility condition, up to controlled truncation error of order O(\\lambda_\\ast^{-1}). This establishes a triple-corner equivalence between perturbative string theory, asymptotic safety, and coherent-sector fixed points, and yields cross-framework predictions including matching spectra of leading irrelevant operators and correlated breakdown surfaces.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262055",
+    "created": "2026-01-15T20:36:13.323547+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262056",
+    "files": [
+      {
+        "checksum": "md5:c4bd62c10f592d82ac69b87af69efbfc",
+        "content_url": "https://zenodo.org/api/records/18262056/files/A_Third_Corner_Shadow_Bridge__Asymptotic_Safety__the_String_Corner__and_the_Coherent_Spine_in_Modal_Triplet_Theory%20(4).pdf/content",
+        "key": "A_Third_Corner_Shadow_Bridge__Asymptotic_Safety__the_String_Corner__and_the_Coherent_Spine_in_Modal_Triplet_Theory (4).pdf",
+        "size": 357451
+      }
+    ],
+    "id": "18262056",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262056",
+    "resource_type": "publication",
+    "title": "A Third-Corner Shadow Bridge in Modal Triplet Theory",
+    "updated": "2026-01-15T20:36:13.794000+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "0efc533c2bdce93117368279fefe7552bd914782518963086d6e48d7d06c24c3",
+  "paper_id": "a-third-corner-shadow-bridge-asymptotic-safety-the-stri-37bbd5a2",
+  "paper_md_sha256": "af122d44cc5b36903c46a3e98bc4a986721c2dd11a521b7c0c8b593309de3a05",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 43870,
+      "path": "main.tex",
+      "sha256": "0efc533c2bdce93117368279fefe7552bd914782518963086d6e48d7d06c24c3"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "12 Quantum Gravity/_work/A_Third_Corner_Shadow_Bridge__Asymptotic_Safety__the_String_Corner__and_the_Coherent_Spine_in_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "8a3792057fe7e82cbf5348cf91c8daa9bcc358f5987b5c5cbc818b27663520d2",
+  "title": "A Third-Corner Shadow Bridge: Asymptotic Safety, the String Corner, and the Coherent Spine in Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262055",
+      "created": "2026-01-15T20:36:13.323547+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262056",
+      "files": [
+        {
+          "checksum": "md5:c4bd62c10f592d82ac69b87af69efbfc",
+          "content_url": "https://zenodo.org/api/records/18262056/files/A_Third_Corner_Shadow_Bridge__Asymptotic_Safety__the_String_Corner__and_the_Coherent_Spine_in_Modal_Triplet_Theory%20(4).pdf/content",
+          "key": "A_Third_Corner_Shadow_Bridge__Asymptotic_Safety__the_String_Corner__and_the_Coherent_Spine_in_Modal_Triplet_Theory (4).pdf",
+          "size": 357451
+        }
+      ],
+      "id": "18262056",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262056",
+      "resource_type": "publication",
+      "title": "A Third-Corner Shadow Bridge in Modal Triplet Theory",
+      "updated": "2026-01-15T20:36:13.794000+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

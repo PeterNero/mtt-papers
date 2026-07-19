@@ -1,0 +1,1646 @@
+\documentclass[11pt]{article}
+
+\usepackage{series}   % house style
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\geometry{margin=1in}
+
+\title{Modal Triplet Theory:\\
+Admissibility, Encodings, and the Structure of Physical Description}
+
+\author{Peter Nero}
+\date{January 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Modal Triplet Theory (MTT) is a framework for determining when and how physical description is possible. Rather than postulating a single fundamental encoding, MTT identifies admissibility conditions under which stable observables, effective dynamics, and probabilistic structure exist, and shows that many familiar physical frameworks arise as optimized encodings valid within specific admissible regimes. This paper provides a roadmap and dictionary for the MTT corpus. We define the core assumptions and objects, summarize the universal theorems on existence and robustness, distinguish between primary encodings and reconstruction results, and clarify the role of boundary regimes where physical description fails. No new derivations are presented; the purpose is organizational and conceptual, providing a unified map of results already established across the literature.
+\end{abstract}
+
+\tableofcontents
+
+% -------------------------------------------------
+\section{Purpose and Scope}
+% -------------------------------------------------
+
+This paper serves as a roadmap and dictionary for Modal Triplet Theory. Its purpose is not to introduce new physical claims or to re-derive existing results, but to organize a growing body of work into a coherent conceptual structure. Over time, MTT has been developed through a series of papers addressing quantum foundations, quantum gravity, gauge theory, string compactifications, renormalization group methods, and boundary phenomena such as measurement and collapse. While these results are tightly connected, their relationships are not always explicit to readers encountering the framework for the first time.
+
+The present paper has three goals. First, it defines the standing assumptions and core objects that are used throughout the MTT corpus, fixing terminology and scope. Second, it summarizes the universal theorems that are assumed in subsequent work, thereby clarifying which results are foundational and which are applications. Third, it classifies the various MTT papers by role, distinguishing between reconstruction results, primary encodings (“corners”), overlap analyses, and boundary-regime studies.
+
+This paper is intentionally non-derivational. All proofs, constructions, and calculations appear in the cited works. Here we focus on structure, dependency, and domain of validity. In particular, we emphasize that MTT is not a collection of competing theories but a framework in which physical description is conditional, admits multiple encodings, and terminates at well-defined boundaries.
+
+\noindent\textbf{Scope guardrail.}
+This paper introduces no new postulates, regimes, constructions, or predictions.
+All substantive claims are proved in the cited works; the present document is strictly organizational.
+
+\subsection{The Structural Encoding Series and Cross-Cutting Programs}
+
+The papers labeled A0--D1 constitute the clarified structural spine of Modal Triplet Theory.
+Their purpose is not to introduce new dynamics, reconstructions, or numerical results, but to
+formalize the conditions under which reduced physical description can exist, persist, and
+terminate. Collectively, these works define admissibility, classify the possible failures of global
+description, and identify the minimal encoding responses forced by those failures.
+
+Papers A0--A2 establish the core framework: admissibility-first description, coherent kinematics
+defined without spacetime or dynamics, and intrinsic limits on prediction and computation.
+Paper B0 proves that all failures of global coherence reduce to exactly three obstruction types:
+circle, lens, and nil. Papers B1--B3 show that these obstructions force unique encoding responses,
+identified respectively with gravity (kinematic consistency), gauge structure (redundancy
+bookkeeping), and quantization (discrete constraint encoding). Papers B4 and B5 analyze the
+coexistence and saturation of these encodings, explaining structural rigidity and the emergence
+of unified or string-like frameworks without postulation. Paper C demonstrates existence and
+non-uniqueness of realizations of the structural core and encoding responses, while preserving
+strict separation between structure and instantiation. Paper D1 interprets cosmological dark-sector
+phenomena as regimes of encoding failure or decoupling rather than as evidence for new particles
+or modified gravity.
+
+Together, the A0--D1 series fixes the interpretive rules for the entire MTT corpus. All subsequent
+reconstruction, numerical, phenomenological, and application-level papers must be read as
+operating within the admissibility conditions, obstruction classification, and encoding logic
+established here.
+
+Two cross-cutting series run through the corpus and stabilize interpretation without introducing
+new standing axioms. The \emph{Projection-First Reframing} series translates MTT’s admissibility-first
+stance into a conservative diagnostic vocabulary for familiar foundational puzzles, including
+vacuum selection, quantum gravity, string theory, dark sectors, and computation. These papers
+identify category errors arising from assumptions of global validity, global invertibility, or
+globally meaningful energy bookkeeping, and function as corpus-level constraints on which
+questions are well posed within admissible regimes.
+
+The \emph{Coherence Capacity} program introduces a unifying control quantity that orders
+admissibility loss across boundary phenomena. Coherence capacity provides a shared bookkeeping
+language for horizons, area laws, entropy bounds, irreversible selection, and the global breakdown
+of description. It does not replace existing encodings such as QM, QFT, or GR; rather, it organizes
+boundary regimes by supplying an invariant margin, identifying bottlenecks, and explaining why
+multiple encodings terminate sharply and in correlated ways when capacity is exhausted.
+
+Together, these cross-cutting programs prevent overextension of deep-interior encodings into
+inadmissible regimes and make explicit which failures of description are structural rather than
+dynamical.
+
+A newer branch of the corpus sharpens the dependency order of MTT without changing its
+standing axioms or the fixed-point realization base. In this branch, upstream proto-spinorial
+closure is identified as a carrier-level structural result prior to spacetime; a companion origin
+paper organizes the staged emergence of bookkeeping order, Lorentzian encoding, gravity, and
+matter from pointwise internal embedding; a companion interpretive book reclassifies string
+theory and M-theory through admissibility rather than primitive ontology; and a closure-strain
+paper develops the qualitative organization of Standard Model structure on this newer carrier
+language while leaving quantitative closure to later execution tiers. These works do not revise
+the A0--D1 spine. They clarify how later reconstruction, encoding, and phenomenological papers
+should be staged relative to that spine.
+
+
+
+% -------------------------------------------------
+\section{Standing Assumptions and Core Objects}
+% -------------------------------------------------
+
+Modal Triplet Theory is built on a small set of standing assumptions concerning the existence and interpretation of physical description. These assumptions are not specific to any particular encoding or model and are used uniformly across the corpus.
+
+\subsection{Standing assumptions}
+
+\begin{enumerate}[label=\textbf{SA.\arabic*}]
+\item \textbf{Modal configuration space.}  
+Physical systems are described at a fundamental level by configurations in a high-dimensional modal space. In many applications this space is ten-dimensional, comprising four spacetime directions and six internal or modal directions, but the framework does not depend on a specific dimensional split.
+
+\item \textbf{Conditional projection to observables.}  
+Observable physics is obtained via a projection from modal configurations to effective degrees of freedom. This projection is not assumed to be globally valid; its existence and stability are conditional.
+
+\item \textbf{Admissibility.}  
+A configuration is admissible if the projection to observables is bounded, spectrally separated, and dynamically stable. Only admissible configurations support physical description in the usual sense (states, observables, probabilities).
+
+\item \textbf{Domain of physics.}  
+Physical description exists if and only if admissibility holds. Outside admissible regions, mathematical evolution may exist, but it does not define physical observables, probabilities, or effective dynamics.
+\end{enumerate}
+
+These assumptions replace the traditional notion that physics is defined everywhere in configuration space with a conditional notion of physicality.
+
+\subsection{Core objects}
+
+The following objects appear throughout the MTT literature and are fixed here for reference:
+
+\begin{itemize}
+\item \textbf{Admissible region:} a subset of modal configuration space on which the projection to observables is bounded and stable.
+\item \textbf{Coherent sector:} the subspace of configurations supporting stable, low-variance observables.
+\item \textbf{Coherent projector:} the map from modal configurations to effective observables, defined only on admissible regions.
+\item \textbf{Stability margin:} a quantitative measure of distance to admissibility failure.
+\item \textbf{Universality class:} a class of admissible configurations whose observable physics is insensitive to microscopic details.
+\item \textbf{Selection event:} an irreversible transition between coherent basins within an admissible region.
+\item \textbf{Selection front:} the boundary-layer regime in which admissibility holds marginally and physical description becomes ill-conditioned.
+\end{itemize}
+
+Precise definitions and mathematical constructions of these objects are given in the foundational papers cited throughout this roadmap.
+
+Recent upstream papers introduce additional vocabulary---including proto-localization scaffolds,
+pointwise internal embedding, proto-spinors, triadic carriers, alignment references, and closure
+costs---to sharpen dependency order upstream of Lorentzian spacetime encodings. These terms
+should be read as derived structural or representational layers internal to the existing admissibility
+framework, not as new standing assumptions and not as replacements for the modal configuration
+space or the fixed-point realization program.
+
+\paragraph{Bundle Geometry}
+In Modal Triplet Theory, the canonical formulation of structure is geometric:
+the theory is defined on a modal $10$-dimensional bundle equipped with
+three irreducible geometric components (circle, lens, nil).
+What may appear as ``abstract'' invariants are not prior to this geometry,
+but rather shorthand descriptions obtained when the explicit bundle structure
+is suppressed.
+All admissibility constraints originate in the geometry of the modal bundle
+itself, and lower-dimensional realizations inherit these constraints as shadows,
+not as independent abstractions.
+\subsection*{Geometric Dictionary}
+\begin{itemize}
+  \item \textbf{Circle}: global loop-consistency and curvature data of the modal bundle
+  (realized in $3+1$D as geometry, inertia, and gravitational bookkeeping).
+  \item \textbf{Lens}: overlap, redundancy, and equivalence structure of bundle sections
+  (realized as gauge symmetry and identity under multiple representations).
+  \item \textbf{Nil}: spectral termination and non-invertibility of projection operators
+  (realized as quantization, discrete outcomes, and record formation).
+\end{itemize}
+No additional meanings of these terms are employed.
+
+
+% -------------------------------------------------
+\section{Core Theorems and Universal Results}
+% -------------------------------------------------
+
+A number of results are established once and assumed in subsequent work. This section summarizes these results without proof, serving as a reference point for later sections.
+
+\subsection{Existence and stability}
+
+The foundational results of MTT establish the existence of admissible regions and coherent sectors under broad conditions. Fixed-point theorems guarantee the existence of stable coherent basins, while contractivity results ensure dynamical attraction toward these basins within admissible domains. These results justify treating admissible regions as physically meaningful and dynamically robust.
+
+\subsection{Universality and robustness}
+
+Within an admissible region, observable physics depends only weakly on microscopic details. Universality theorems show that variations in geometry, coupling, or internal structure that preserve admissibility lead to equivalent effective descriptions up to controlled errors. This explains why very different microscopic models often produce indistinguishable low-energy physics.
+
+\subsection{Failure modes}
+
+Admissibility can fail when spectral gaps close, projectors become unbounded, or stability margins vanish. In such cases the projection to observables ceases to be well defined. Importantly, admissibility failure is not interpreted as the onset of exotic physics but as the termination of physical description itself. This distinction underlies the interpretation of boundary regimes discussed later in this paper.
+
+These core theorems are not re-derived in later work; they form the shared foundation on which all encodings, reconstructions, and boundary analyses rest.
+
+\subsection*{Implications of the core theorems}
+For later reference, we record three consequences that will be used implicitly throughout the corpus:
+\begin{enumerate}[label=\textbf{(I\arabic*)}]
+\item Universality applies \emph{within} admissible regions and coherent universality classes, not across inadmissible domains.
+\item Admissibility failure terminates the applicability of physical description; it does not introduce new degrees of freedom by fiat.
+\item Encodings are local charts on admissible space. Overlaps, when present, must be stated as controlled correspondences on shared domains.
+\end{enumerate}
+
+\paragraph{Structural Closure and Inevitability.}
+Recent closure results show that several features often treated as interpretive
+choices---irreversibility, probabilistic updating, and loss of global invertibility---are
+not optional add-ons but structural consequences of admissibility and projection.
+In particular, once bounded coherent projection and stability margins are assumed,
+no globally invertible effective dynamics can exist across admissibility boundaries.
+These results eliminate a broad class of alternative interpretations that attempt to
+retain global reversibility while preserving stable records.
+
+
+
+% -------------------------------------------------
+\section{Reconstruction Results: Recovering Known Physics}
+% -------------------------------------------------
+
+A significant subset of the MTT corpus consists of reconstruction results, often labeled “MTT to X,” where X denotes a familiar physical framework. These papers demonstrate that standard theories emerge as effective descriptions within admissible regions. They do not define new encodings or alternative foundations.
+
+\subsection{Role of reconstruction papers}
+
+Reconstruction papers serve two purposes. First, they show that MTT reproduces known physics where that physics is known to work. Second, they identify the domains of validity and breakdown of familiar frameworks in terms of admissibility conditions. In this way, reconstruction results anchor the framework empirically without expanding the space of admissible regimes.
+In practice, most laboratory and astrophysical tests probe deep interior regions of admissible space,
+far from boundary regimes, which explains the broad empirical success of reconstructed frameworks.
+
+
+\subsection{Recovered frameworks}
+
+Under the standing assumptions and core theorems summarized above, the following effective
+frameworks are recovered as admissible descriptions on restricted domains of modal
+configuration space. In each case, the framework is valid only within the regime where the
+coherent projector remains bounded and dynamically stable.
+\paragraph{Quantization as an effective encoding.}
+Within this classification, quantization is treated as an effective encoding rather than as a
+foundational operation. Hilbert spaces, operator algebras, BRST/BV structures, and perturbative
+expansions arise as stable representational shadows of admissible coherent-sector dynamics, not
+as primitive postulates. In particular, quantized descriptions are valid only within regimes where
+the coherent projector remains bounded and dynamically stable; outside such regimes, no global
+quantized description exists.
+
+
+\begin{itemize}
+
+\item \textbf{Quantum mechanics:}
+Hilbert space structure, self-adjoint observables, unitary Schr\"odinger evolution, the Born
+rule, and generalized measurements (POVMs) arise as effective descriptions of coherent
+sectors under stable projection. Probabilities and classical limits emerge from basin
+structure rather than postulates.
+
+\item \textbf{Pilot--wave (de~Broglie--Bohm) dynamics:}
+Deterministic trajectory dynamics guided by a wavefunction arise as a regime-limited
+reconstruction within admissible coherent basins. This encoding is non-generic and fails
+structurally at admissibility boundaries such as measurement or selection events.
+
+\item \textbf{Quantum field theory:}
+Local quantum field theory, including operator algebras, renormalization, and perturbative
+scattering, emerges as a controlled effective description on admissible slabs with sufficient
+spectral separation and bounded truncation error.
+
+\item \textbf{Quantum field theory on curved spacetime:}
+QFT on a fixed but dynamical background metric is recovered as a semiclassical encoding
+on admissible regimes where spacetime geometry varies slowly relative to coherence scales.
+
+\item \textbf{General relativity:}
+Einstein gravity appears as the infrared geometric encoding of admissible configurations,
+with diffeomorphism invariance and the equivalence principle arising from stability and
+consistency of coherent projection rather than fundamental symmetry postulates.
+
+\item \textbf{Asymptotic safety and functional renormalization group gravity:}
+Renormalization-group fixed points and asymptotically safe behavior arise as admissible
+ultraviolet encodings of the same coherent fixed point, with truncation dependence
+interpreted as proximity to admissibility boundaries.
+
+\item \textbf{Standard Model structure:}
+The Standard Model gauge group, chiral fermion content, family replication, anomaly
+cancellation, electroweak symmetry breaking, and qualitative mass hierarchies are recovered
+as topological and spectral consequences of admissibility and coherent-sector structure.
+
+\item \textbf{Noncommutative geometry and spectral action formulations:}
+Spectral triples, operator-algebraic geometry, and the spectral action arise as alternative
+encodings of coherent overlap structure in regimes dominated by spectral and algebraic
+data rather than spacetime locality.
+
+\item \textbf{Loop quantum gravity:}
+Spin-network kinematics, discrete area and volume spectra, and holonomy--flux algebras
+are recovered as admissible encodings of coherent fixed-point geometry under projection,
+rather than as fundamental discretizations.
+
+\item \textbf{Kaluza--Klein theory and extra-dimensional reductions:}
+Higher-dimensional geometric encodings and Kaluza--Klein mode towers arise as admissible
+compressions of modal bundle structure, explaining charge quantization and effective
+four-dimensional fields.
+
+\item \textbf{Perturbative quantum gravity:}
+A quantized graviton field theory with local amplitudes,
+BRST/BV structure, unitarity, and causal propagation is recovered as an effective encoding
+on admissible slabs with sufficient spectral separation and bounded truncation error. This
+description is regime-limited and fails at admissibility boundaries.
+
+\item \textbf{Constructive quantum gravity (existence results):}
+Nonperturbative existence, gauge-invariant
+Hilbert space construction, and controlled infrared scattering are established separately as
+constructive results within admissible domains (see Section~10). These results do not define
+a new encoding but certify where quantum-gravitational descriptions exist nonperturbatively.
+
+\item \textbf{String theory (worldsheet and spacetime formulations):}
+Perturbative string theory, worldsheet conformal field theory, and spacetime effective
+actions arise as admissible encodings of coherent modal dynamics, with worldsheet
+consistency conditions corresponding to admissibility constraints.
+
+\item \textbf{Effective field theory:}
+Wilsonian effective field theory arises as an inevitable projection-based encoding, with
+cutoffs identified as admissibility boundaries, renormalization group flow as induced
+effective evolution, and universality as stability under projection.
+
+\item \textbf{Stochastic and non-Markovian dynamics:}
+Indivisible, non-Markovian stochastic processes arise as the projected shadow of
+deterministic modal dynamics when global invertibility fails, providing a unified account
+of quantum randomness and classical irreversibility.
+
+\item \textbf{Algebraic quantum field theory (AQFT):} Local nets of observable algebras arise from
+admissible chart families and overlap structure, yielding isotony, locality, and the absence
+of a global algebra without assuming a background spacetime or global Hilbert space.
+This provides the regime-limited algebraic encoding underlying QFT locality and horizon
+termination in admissibility-first terms.
+
+\item \textbf{Coherent kinematics:} Position, motion, and propagation are defined in MTT as chart-persistence
+of coherent structures across overlapping admissible domains, with worldlines arising as equivalence
+classes of chart-relative supports and termination at merge–split or loss-of-admissible-continuation
+events. This supplies the kinematic layer implicitly used in QM/QFT/GR reconstructions.
+
+\end{itemize}
+
+Recent companion papers sharpen the staging of several entries in this list. In particular,
+spacetime spinors are now organized as downstream encodings of an upstream proto-spinorial
+carrier; Standard Model organization is further developed through closure-strain and alignment
+language; and string/M-theory reconstructions are accompanied by an admissibility-first
+reinterpretation that clarifies their status as regime-dependent encodings rather than primitive
+ontology. These additions do not change the reconstruction results themselves, but they refine
+how the recovered frameworks are positioned within the broader corpus.
+
+All recovered frameworks are regime-limited encodings rather than globally valid theories.
+Their domains of applicability, overlap relations, and failure modes are determined by
+admissibility, stability margins, and controlled truncation rather than by independent
+postulates.
+
+
+% -------------------------------------------------
+\section{Primary Encodings: Corners of Admissible Space}
+% -------------------------------------------------
+
+While reconstruction results demonstrate how familiar physical frameworks arise deep inside admissible regions, a different class of results identifies \emph{primary encodings}. An encoding is a mathematical language or formalism that provides an efficient and approximately closed description of physics within a specific admissible regime. Encodings are not fundamental theories; they are optimized charts on admissible regions of modal configuration space.
+
+Primary encodings differ from reconstruction results in that they are not derived as generic deep-interior limits;
+rather, they provide optimized descriptions of specific admissible regimes where a particular mathematical language
+is natural and efficient.
+
+
+Different encodings may describe the same admissible region, and no single encoding is expected to apply globally. The existence of multiple encodings reflects the conditional nature of physical description rather than theoretical redundancy.
+
+\subsection{Definition of a primary encoding}
+
+A primary encoding is characterized by four elements:
+\begin{enumerate}
+\item a regime definition, specifying which control parameters are small or large;
+\item a mathematical language optimized for that regime;
+\item a validity statement, identifying what is accurately captured;
+\item a breakdown criterion, specifying where the encoding fails.
+\end{enumerate}
+
+Encodings should therefore be understood as local charts rather than as competing foundations.
+
+\subsection{Calabi--Yau (string) encoding}
+
+In the torsion-free $\mathrm{SU}(3)$ regime, admissible configurations admit an efficient description in terms of Calabi--Yau geometry and worldsheet conformal field theory. This encoding captures moduli, supersymmetry, and perturbative string dynamics accurately within its domain of validity.
+
+Breakdown occurs when geometric degenerations close spectral gaps or violate boundedness, at which point neither the worldsheet nor the associated four-dimensional effective field theory provides a controlled description.
+
+\subsection{Strominger and heterotic flux encoding}
+
+Allowing controlled torsion leads to the Strominger system and heterotic flux compactifications. In this regime, admissibility supports a genuine selection principle: stable fixed points correspond to solutions of coupled geometric and gauge-field equations.
+
+This encoding is notable because it replaces vacuum choice with dynamical selection. In invariant subsectors, admissibility reduces continuous freedom to discrete loci, providing explicit examples of landscape collapse within a controlled class of models.
+
+\subsection{General relativity as an infrared encoding}
+
+At large scales and low curvature, admissible configurations admit a spacetime encoding in terms of general relativity. Einstein’s equations arise as the infrared geometric description of admissible dynamics.
+
+This encoding overlaps with the string encoding in regimes where both curvature and coupling are small. Its breakdown at high curvature or strong mixing signals the approach to admissibility boundaries rather than the failure of gravitational dynamics per se.
+
+\subsection{Asymptotic safety and functional renormalization group encoding}
+
+In regimes where theory-space descriptions are efficient, admissible dynamics can be encoded in terms of renormalization group flows and ultraviolet fixed points. Within this encoding, asymptotic safety appears as a shadow of a more fundamental admissible structure.
+
+Truncation and regulator dependence are interpreted as artifacts of working in a projected theory space near admissibility boundaries, rather than as indicators of multiple fundamental ultraviolet completions.
+
+\subsection{Twistor encoding}
+
+In high-coherence, near-integrable regimes, twistor methods provide an efficient encoding of dynamics. This encoding captures scattering and integrable subsectors accurately where truncation corrections are suppressed.
+
+Twistor methods fail sharply outside this regime, reflecting the loss of coherence rather than a gradual breakdown of integrability. This sharp termination is characteristic of admissibility-based encodings.
+
+\subsection{Measurement and collapse encoding}
+
+Near admissibility boundaries, stochastic and collapse-like descriptions become effective. These encodings capture selection events and irreversible outcomes in regimes where coherent superpositions are no longer stable.
+
+Such descriptions are not fundamental modifications of dynamics but effective encodings valid near selection fronts.
+
+\subsection{Encodings as Overlapping Admissible Domains}
+\label{sec:overlapping-encodings}
+
+Modal Triplet Theory does not posit a single privileged effective description of physical
+reality. Instead, it organizes physical descriptions according to \emph{admissibility}:
+the existence of a controlled, stable projection from the underlying modal dynamics to an
+effective sector with autonomous laws.
+
+Within this framework, what are commonly referred to as ``theories'' (for example, general
+relativity, quantum field theory, string-based constructions, or thermodynamic descriptions)
+are more precisely understood as \emph{encodings}: stable coordinate charts on the same
+underlying modal dynamics, each valid only on restricted admissible domains. An encoding is
+characterized by the variables it employs, the form of its effective evolution equations, and
+the regime in which the coherent projector remains well-defined and bounded.
+
+Importantly, admissible domains of different encodings need not be disjoint. On the
+contrary, Modal Triplet Theory generically predicts \emph{overlapping admissible regions},
+in which multiple encodings provide consistent and mutually compatible descriptions of the
+same physical situations. For example, general relativity appears as a highly rigid geometric
+encoding within a subset of the broader quantum field theoretic domain, while string-based
+or flux constructions occupy more constrained regions in which spectral gaps and projection
+regularity are maintained by additional topological or anomaly-cancellation conditions.
+
+Not all named frameworks correspond to independent encodings. Certain structures—such as
+flux choices, anomaly cancellation conditions, worldsheet or functional renormalization group
+flows, or the Strominger system in heterotic compactifications—are more accurately described
+as \emph{admissibility constraints} or \emph{selection surfaces}. These do not introduce new
+effective variables or autonomous dynamics, but instead restrict where a given encoding
+exists within the admissible control space. In particular, such constraints often select
+lower-dimensional submanifolds or isolated points within a broader encoding domain,
+explaining the appearance of discrete or highly constrained solution sets without invoking a
+fundamental ``landscape.''
+
+Admissibility boundaries play a distinct role. At such boundaries, the coherent projector
+loses a global right inverse, and no single effective encoding remains valid. Phenomena
+traditionally described as measurement collapse, black-hole information loss, or
+thermodynamic irreversibility arise precisely at these boundaries, where effective evolution
+becomes non-invertible in the projected description despite remaining deterministic at the
+modal level.
+
+In this sense, Modal Triplet Theory is not a ``theory of everything'' in the sense of replacing
+existing frameworks. Rather, it provides a \emph{structural account of why multiple effective
+descriptions coexist}, why each is valid where it is, and why each must fail where it does.
+Apparent incompatibilities between physical frameworks are thereby reframed as consequences
+of differing admissibility domains, rather than as contradictions in underlying dynamics.
+
+% ============================================================
+%  Section: Entanglement as Preferred Encoding in the
+%  Admissibility–Encoding Framework
+%  (for inclusion in "Admissibility, Encodings, and the
+%   Structure of Physical Description")
+% ============================================================
+
+\section{Entanglement as Preferred Encoding}
+\label{sec:entanglement_encoding}
+
+\subsection{Entanglement is not a separate corner}
+\label{sec:ent_not_corner}
+
+Within the admissibility–encoding framework, it is important to clarify the status of
+entanglement. Entanglement is \emph{not} introduced here as an additional ``corner'' or
+independent physical regime. Rather, it is a \emph{generic structural feature} of coherent
+states deep inside admissible domains, and therefore belongs to the interior of the
+quantum-mechanical (QM/QFT) encodings already discussed.
+
+In particular, entanglement does not signal a breakdown of locality or admissibility.
+Instead, it reflects the fact that the coherent projector $\Pi$ imposes global constraints
+on modal configurations, while the observable map
+\begin{equation}
+P := I \circ \Pi
+\end{equation}
+is many-to-one. As a consequence, the effective 4D description generically admits
+non-factorizing states even when the underlying dynamics are local and causal.
+
+Thus, entanglement should be understood as an \emph{encoding property}, not as a distinct
+dynamical phenomenon.
+
+\subsection{Encoding efficiency and the preference for non-factorization}
+\label{sec:encoding_efficiency}
+
+The central observation motivating this section is the following:
+
+\begin{quote}
+\emph{Among admissible coherent configurations, non-factorizing (entangled) descriptions are
+typically more efficient encodings than fully factorized particle descriptions.}
+\end{quote}
+
+This statement has a precise meaning in MTT. Because the observable map $P$ is non-invertible,
+many distinct upstairs modal configurations project to the same downstairs state. The
+effective description is therefore intrinsically \emph{compressed}. Encodings that minimize
+the number of independent degrees of freedom required to represent correlations are favored
+under projection.
+
+Factorized descriptions,
+\[
+\rho \;\approx\; \rho_A \otimes \rho_B \otimes \cdots ,
+\]
+impose additional constraints: they require that correlations between subsystems vanish or
+remain dynamically negligible. Such constraints are \emph{not} generically preserved by the
+coherent evolution and therefore correspond to special, lower-dimensional subsets of the
+admissible state space.
+
+By contrast, globally constrained (entangled) states encode correlations once, at the level
+of the global configuration, rather than maintaining separate bookkeeping for each subsystem.
+From the perspective of admissibility and projection, this constitutes a lower descriptive
+and dynamical overhead.
+
+\subsection{Local coherence, global coherence, and subsystem partitions}
+\label{sec:local_global_coherence}
+
+The apparent tension between stable ``particle identities'' and entanglement is resolved by
+distinguishing two notions of coherence:
+
+\begin{itemize}
+\item \textbf{Local coherence}, which stabilizes particle properties such as mass, spin,
+charge, and family. These correspond to robust basins in admissible configuration space and
+are protected by spectral gaps and FCC margins.
+
+\item \textbf{Global coherence}, which constrains relative degrees of freedom across spatially
+separated regions. This coherence is responsible for entanglement and does not, by itself,
+destroy local particle identity.
+\end{itemize}
+
+Entanglement thus corresponds to a globally coherent configuration whose local projections
+still lie within stable particle basins. No contradiction arises: particles remain particles,
+but they are not encoded as independent tensor factors unless additional constraints enforce
+such a partition.
+
+\subsection{Measurement and the emergence of factorized encodings}
+\label{sec:measurement_partition}
+
+The appearance of factorized particle outcomes is explained by the encoding logic near
+admissibility boundaries.
+
+Measurement is treated in MTT as a localized disturbance followed by stabilization into a
+record-compatible basin. Record formation imposes new constraints that refine the admissible
+basin structure and favor encodings in which subsystems are effectively decoupled. In this
+regime, factorized or approximately factorized descriptions become the \emph{preferred}
+encoding because they are dynamically stable under the new constraints.
+
+From the encoding perspective, ``collapse'' is therefore not the destruction of a physical
+state, but a forced transition from a globally entangled encoding to a partitioned encoding
+that supports stable records. This transition occurs near selection fronts, where the
+non-invertibility of $P$ becomes operationally relevant.
+
+\subsection{Entanglement growth, scaling, and limits}
+\label{sec:ent_scaling}
+
+Larger entangled systems arise by chaining local interactions and ancilla-mediated couplings,
+which extend global coherence constraints across more degrees of freedom. However, admissibility
+imposes limits on scalable entanglement.
+
+As system size grows, maintaining global coherence becomes increasingly sensitive to
+disturbances. Near admissibility thresholds, boundary-layer behavior (selection fronts)
+appears: small perturbations can trigger sharp transitions to partitioned encodings. This
+provides a structural explanation for the observed difficulty of sustaining macroscopic
+entanglement and for the fragility of large-scale quantum coherence.
+
+\subsection{Quantum computation as encoding management}
+\label{sec:qc_encoding}
+
+In this framework, a quantum computer is an engineered system designed to remain deep within
+an admissible basin where globally entangled encodings are stable. Quantum gates correspond to
+controlled local disturbances that steer the coherent configuration without forcing basin
+transitions. Error correction is naturally interpreted as active basin management, preventing
+drift toward admissibility boundaries.
+
+The computational advantage of quantum systems arises because entanglement provides a
+compressed encoding of correlations that would require exponentially many parameters in a
+fully factorized description. The ultimate limits of quantum computation are set not only by
+noise, but by proximity to selection fronts where entanglement-preserving encodings cease to
+be admissible.
+
+\subsection{Summary}
+\label{sec:ent_summary_encoding}
+
+Within the admissibility–encoding framework of Modal Triplet Theory, entanglement is neither
+mysterious nor exceptional. It is the generic coherent encoding favored by global projection
+and admissibility selection. Particle-local, factorized descriptions are conditional encodings
+that emerge when locality, interaction structure, or measurement records enforce subsystem
+partitions.
+
+Seen in this light, entanglement, measurement, decoherence, and classicality are not separate
+postulates but different encoding regimes of a single underlying coherent structure, with
+sharp transitions governed by admissibility and selection fronts.
+
+% -------------------------------------------------
+\section{Shared Control Parameters and the Superset Structure}
+% -------------------------------------------------
+
+The existence of multiple encodings raises a natural question: why do apparently disparate frameworks repeatedly identify similar structures, constraints, and breakdowns? The answer lies in the presence of shared control parameters governing admissibility.
+
+\subsection{Shared control parameters}
+
+Across all encodings, the following quantities play a central role:
+\begin{itemize}
+\item spectral gap size;
+\item boundedness of the coherent projector;
+\item stability margin and contractivity;
+\item truncation depth or resolution;
+\item noise and disturbance scale;
+\item curvature remainders and higher-order corrections;
+\item coherence budget and admissible horizon.
+\end{itemize}
+
+Different encodings emphasize different subsets of these parameters, but they tune the same underlying structure.
+
+\subsection{Interpretation of the superset proposal}
+
+In this sense, Modal Triplet Theory functions as a \emph{superset} framework: it defines the full space of admissibility control parameters, while individual encodings correspond to fixing or simplifying subsets of these parameters.
+
+For example, string compactifications typically fix truncation depth and emphasize geometric control, while functional renormalization group approaches emphasize flow in theory space. Twistor methods focus on regimes where mixing corrections are suppressed, and collapse encodings emphasize noise and disturbance scales. All of these are coordinate choices on the same admissible structure.
+These shared control parameters are not introduced as freely tunable inputs:
+they are constrained by admissibility (boundedness, spectral separation, and stability) and are therefore structural,
+with different encodings exposing different subsets of the same underlying control data.
+
+
+\subsection{Consequences}
+
+The superset interpretation explains why different research programs converge on similar constraints despite using different languages. It also clarifies why no single encoding is globally valid: each freezes certain control parameters while neglecting others.
+
+Understanding encodings as projections of a shared admissible structure replaces competition between frameworks with complementarity. Apparent disagreements arise from working in different coordinate systems on the same underlying space.
+
+% -------------------------------------------------
+\section{Overlaps and Shadow Bridges Between Encodings}
+% -------------------------------------------------
+
+Because encodings are local descriptions optimized for specific admissible regimes, no single encoding is expected to apply globally. Nevertheless, distinct encodings may describe overlapping subsets of admissible space. Understanding these overlaps is essential for clarifying the relationships between different frameworks and for avoiding false dichotomies between approaches.
+
+In this section we formalize the notion of overlap, classify different types of overlap, and summarize the results established in the literature.
+
+\subsection{Definition of overlap}
+
+An overlap between two encodings exists when there is a non-empty intersection of their domains of validity. In such a region, both encodings provide accurate descriptions of the same admissible configurations, possibly using different variables or mathematical languages.
+
+An overlap does not imply global equivalence. It requires neither that the encodings agree outside the intersection nor that one can be smoothly extended into the domain of the other. The relevant question is whether a controlled map exists between the descriptions within the overlapping region.
+
+\paragraph{Upstairs and downstairs overlap.}
+We distinguish overlap at the level of admissible modal configurations (\emph{upstairs overlap}) from overlap at the level of
+effective projected descriptions (\emph{downstairs overlap}). An upstairs overlap exists when two primary encodings are
+simultaneously admissible for the same modal configurations. A \emph{shadow bridge} is a result establishing a controlled relation
+between the corresponding downstairs (e.g.\ four-dimensional) description.
+
+\begin{center}
+\fbox{
+\begin{minipage}{0.94\linewidth}
+\textbf{Definition (Shadow Bridge).}
+
+A \emph{shadow bridge} is a result showing that two apparently independent
+four-dimensional diagnostic structures are shadows of the same admissibility
+and projection machinery. The bridge is established by explicitly constructing
+a relation between diagnostics obtained via different admissible derivational
+routes, and by demonstrating that both diagnostics are valid and fail under
+the same admissibility conditions.
+
+A shadow bridge does not assert global equivalence of theories, shared ontology,
+or identification of underlying configurations. It relates effective diagnostics
+within a common admissible regime and explains their joint success and joint failure.
+\end{minipage}
+}
+\end{center}
+
+\begin{center}
+\fbox{
+\begin{minipage}{0.94\linewidth}
+\textbf{Shadow Bridge (Operational Definition).}
+
+A shadow-bridge paper establishes a structured relation between distinct
+four-dimensional diagnostics derived from the same admissibility framework.
+Such a paper is constructed as follows:
+
+\begin{enumerate}
+\item \textbf{Shared admissibility assumptions.}
+Identify the admissibility, stability, truncation, and coherence conditions
+assumed in both derivations. These conditions define the physical regime
+being probed and ensure that the same projection and selection machinery
+is operative, without requiring identification of individual modal
+configurations or ontological equivalence of encodings.
+
+\item \textbf{Distinct derivational routes.}
+Show that the shared admissibility assumptions lead, via different
+calculational routes, to distinct four-dimensional diagnostic structures
+(e.g.\ spacetime field equations, renormalization-group conditions,
+measurement thresholds, or computability bounds).
+
+\item \textbf{Explicit construction of a diagnostic bridge.}
+Explicitly construct a bridge relating the diagnostics obtained in the
+previous step. The bridge may take the form of a mapping, equivalence
+relation, shared constraint, scaling correspondence, or common boundary
+condition. The bridge is derived, not assumed.
+
+\item \textbf{Shared boundary of validity.}
+Demonstrate that both diagnostics are valid only within the same admissible
+regime and that both fail or change character at the same admissibility
+boundary (e.g.\ selection fronts, horizons, truncation limits, or coherence
+horizons).
+
+\item \textbf{Validation.}
+Validate the constructed bridge by showing that it either reproduces an
+already-known correspondence (where such a correspondence exists), or
+explains why independent approaches are forced to introduce compatible
+constraints, regulators, or caveats in the absence of a recognized bridge.
+\end{enumerate}
+
+A shadow-bridge paper explains why different effective diagnostics agree
+where they do and fail where they do, because they are projections
+(shadows) of the same admissibility structure.
+\end{minipage}
+}
+\end{center}
+
+
+\subsection{Upstairs overlaps (admissible-region intersections)}
+The following are the principal upstairs overlaps discussed or implied in the corpus. These are intersections of admissible
+domains in modal configuration space and are conceptually prior to any statements about four-dimensional relations.
+
+\begin{enumerate}[label=\textbf{O\arabic*}]
+\item \textbf{Calabi--Yau $\cap$ Strominger (flux) overlap.} The torsion-free $\mathrm{SU}(3)$ corner appears as a boundary of the torsional Strominger/heterotic flux admissible region.
+\item \textbf{Strominger (flux) $\cap$ invariant flux slice overlap.} Left-invariant ans\"atze form a restricted subfamily within the broader flux admissible region, exhibiting discrete admissible loci.
+\item \textbf{GR $\cap$ string overlap.} Low-curvature, weak-coupling regimes admit both spacetime (IR) and worldsheet (string) encodings for the same admissible configurations.
+\item \textbf{String $\cap$ asymptotic safety overlap.} In UV-controlled admissible regimes near the coherent UV endpoint, both worldsheet/string diagnostics and FRG diagnostics apply.
+\item \textbf{GR $\cap$ asymptotic safety overlap.} In admissible basins spanning IR and UV scales, geometric IR encoding and FRG encoding coexist on overlapping domains.
+\item \textbf{Twistor $\cap$ GR/string overlap.} High-coherence near-integrable regimes admit both twistor encoding and geometric/worldsheet encodings on a shared admissible subset.
+\item \textbf{Boundary overlap surfaces.} Measurement, black-hole horizons, cosmological initial regimes, and RG truncation breakdown correspond to shared admissibility boundaries, not to shared deep-interior encodings.
+\item \textbf{Coherent gravity $\cap$ gauge-admissible sector overlap.}
+There exists a non-empty admissible overlap domain consisting of coherent gravitational
+configurations that simultaneously support bounded coherent projection with spectral
+separation (including SPT damping) and a stable gauge-constraint structure. In this overlap,
+the coherent projector remains bounded on the relevant Sobolev scales, spectral gaps remain
+open, and gauge constraints close consistently, allowing BRST lifting to be defined without
+destabilizing projection. This domain excludes selection-front and boundary-layer regimes
+where stability margins vanish, projectors become ill-conditioned, or gauge lifting fails.
+The existence of this overlap underlies the quantization shadow bridge (B7), explaining
+why quantized gravitational descriptions are valid within restricted admissible regimes and
+terminate sharply outside them.
+
+\end{enumerate}
+
+\subsection{Downstairs shadow bridges (validated overlap relations)}
+Shadow-bridge papers establish controlled relations between effective (downstairs) descriptions on an upstairs overlap domain,
+or controlled correspondence of breakdown surfaces at admissibility boundaries.
+
+\begin{enumerate}[label=\textbf{B\arabic*}]
+\item \textbf{GR $\leftrightarrow$ string shadow bridge.} Einstein dynamics and worldsheet $\beta=0$ (Weyl invariance) are dual diagnostics of the same admissibility constraint on the GR$\cap$string overlap.
+\item \textbf{Asymptotic safety as a truncation shadow.} FRG fixed points observed in truncations arise as shadows of a coherent-sector UV endpoint on the AS overlap domain, explaining regulator/truncation dependence.
+\item \textbf{Third-corner shadow bridge.} A controlled triple correspondence links string-corner fixed points, AS-corner fixed points, and coherent-spine structure on their shared admissible overlap.
+\item \textbf{ETH--MBL shadow bridge.} Thermalization and localization are unified as basin-structure limits, with a controlled knee regime and shared diagnostics.
+\item \textbf{Boundary shadow bridges.} Selection-front dynamics and projection-induced irreversibility provide a shared account of collapse-like behavior, horizon breakdown, and the termination of global effective laws.
+\item \textbf{Algorithmic shadow bridge.} Undecidability of selection events is established as the algorithmic shadow of admissibility boundaries and finite coherence budgets.
+\item \textbf{Inflationary measures $\leftrightarrow$ Born rule shadow bridge.} A single basin–measure functional defined
+on an admissible coherent sector yields (i) outcome weights in quantum measurement (Born rule)
+and (ii) admissibility-weighted distributions over inflationary histories that are normalizable without
+ad hoc cutoffs. This establishes the inflationary measure problem and the origin of quantum
+probabilities as distinct shadows of the same upstairs admissibility structure, with shared breakdown
+at admissibility boundaries (selection fronts / capacity exhaustion).
+\item \textbf{Quantization as a shadow of coherent-sector projection.}
+Quantized gravitational descriptions—characterized by Hilbert space structure, BRST/BV
+gauge invariance, unitary time evolution, and local amplitudes—arise as a regime-restricted
+shadow of coherent-sector projection within admissible domains. This shadow is realized
+constructively through the sequence of constructive quantum gravity results: Borel
+summability of the transverse–traceless sector (Constructive Quantum Gravity~I), BRST
+lifting and construction of the physical Hilbert space (Constructive Quantum Gravity~II),
+and controlled infrared limits and scattering on admissible slabs (Constructive Quantum
+Gravity~III). Within these domains, standard quantized-field-theoretic diagnostics apply
+and are validated.
+
+This shadow is distinct from ultraviolet-completion shadows such as asymptotic safety or
+string-theoretic encodings. Quantization explains the emergence of quantum structure
+where admissibility holds, while ultraviolet-completion shadows explain why certain
+high-energy descriptions remain controlled. When admissibility fails—e.g.\ when spectral
+gaps close, projector bounds are lost, or stability margins vanish—the quantization shadow
+breaks down, and no global Hilbert space or S-matrix description exists. This breakdown
+coincides with the boundary regimes analyzed in the constructive quantum gravity and
+coherence-capacity papers.
+
+\end{enumerate}
+
+\paragraph{Quantization and ultraviolet completion as distinct shadows.}
+It is important to distinguish quantization from ultraviolet-completion mechanisms in the shadow
+bridge classification. Quantized gravity—characterized by Hilbert space structure, BRST
+invariance, unitarity, and local amplitudes—appears as a regime-restricted shadow of coherent-sector
+projection within admissible domains. By contrast, ultraviolet-completion frameworks such as
+asymptotic safety, string theory, or loop-gravity constructions correspond to distinct shadows that
+encode ultraviolet control or truncation behavior. These shadows address different diagnostics and
+should not be conflated: quantization explains the emergence of quantum structure where it exists,
+while ultraviolet-completion shadows explain why certain high-energy descriptions remain
+controlled.
+
+\subsection{Interpretation}
+Upstairs overlaps are structural facts about admissible domains; shadow bridges are validated statements about the induced effective
+descriptions on those overlaps. This separation prevents conflating admissibility intersections with equivalence of theories, and it clarifies
+why multiple research programs can agree locally while failing to provide global unification.
+
+% ============================================================
+% Roadmap Section 6 — Tables: (1) Upstairs overlaps, (2) Shadow bridges
+% Two separate tables, as requested.
+% ============================================================
+
+% ------------------------------------------------------------
+% Table 1: Upstairs overlaps (admissible-regime overlaps / corner intersections)
+% ------------------------------------------------------------
+\subsection*{Upstairs overlaps (admissible-regime overlaps)}
+\begin{center}
+\small
+\begin{tabular}{|p{3.8cm}|p{4.2cm}|p{5.2cm}|p{3.4cm}|}
+\hline
+\textbf{Overlap (corner $\cap$ corner)} &
+\textbf{Admissible regime (informal)} &
+\textbf{What the overlap enables (4D use)} &
+\textbf{Encodings / theories that ``use'' it} \\
+\hline
+GR corner $\cap$ String corner &
+Low curvature, weak coupling, slowly varying backgrounds &
+Spacetime EFT and worldsheet consistency diagnostics apply to the same admissible regime. &
+GR (spacetime EFT), perturbative string (worldsheet RG), QFT on curved spacetime \\
+\hline
+String corner $\cap$ Asymptotic Safety (AS/FRG) corner &
+UV-controlled admissible regime near coherent UV endpoint; truncations controlled &
+Worldsheet and FRG diagnostics apply to the same admissible UV regime; explains shared UV softening phenomena. &
+Perturbative string (worldsheet RG), AS/FRG gravity (theory space), entire form-factor/UV-softened effective gravities \\
+\hline
+GR corner $\cap$ AS/FRG corner &
+Admissible basin spanning IR geometry and UV RG structure &
+IR geometric description and UV RG diagnostics both meaningful and mutually constraining. &
+GR (IR encoding), AS/FRG (UV encoding), constructive IR scattering where applicable \\
+\hline
+Calabi--Yau corner $\cap$ Strominger/flux corner &
+Small torsion / near-CY boundary of heterotic flux regime &
+CY tools remain usable while flux selection becomes active; clarifies moduli directions that exit admissibility. &
+CY compactification technology, heterotic flux/Strominger system, EFT moduli methods \\
+\hline
+Strominger/flux corner $\cap$ invariant flux subcorner &
+Left-invariant (ansatz-restricted) subsector inside full flux regime &
+Concrete discrete admissible loci appear as explicit examples of selection within a controlled class. &
+Flux compactification builders, ansatz-based classifications, discrete-locus demonstrations \\
+\hline
+Twistor corner $\cap$ GR/String corner &
+High coherence, near self-dual, mass-suppressed regime &
+Holomorphic/twistor encoding coexists with geometric/worldsheet encodings as a special high-coherence face. &
+Twistor methods, special GR sectors, twistor-string/amplitude formalisms where applicable \\
+\hline
+Boundary overlap surfaces (selection-front boundary) &
+Marginal admissibility: stability margins small; projection ill-conditioned &
+Shared breakdown surfaces: horizons, early-universe boundary, measurement thresholds, RG truncation crises. &
+Cosmology measures, black hole physics, measurement theory, RG truncation practice \\
+\hline
+\end{tabular}
+\end{center}
+
+% ------------------------------------------------------------
+% Table 2: Shadow bridges (validated 4D diagnostic bridges)
+% ------------------------------------------------------------
+\subsection*{Shadow bridges (validated 4D diagnostic bridges)}
+\begin{center}
+\small
+\begin{tabular}{|p{3.8cm}|p{4.6cm}|p{5.0cm}|p{3.2cm}|}
+\hline
+\textbf{Bridged pair/triple} &
+\textbf{Bridge papers (examples)} &
+\textbf{Constructed bridge (what is related in 4D)} &
+\textbf{Bridge type} \\
+\hline
+GR $\leftrightarrow$ String &
+\emph{Why GR Falls Out of String Theory};
+\emph{Why GR and String Theory Are the Same Admissibility Constraint} &
+Construct a map between spacetime IR stability diagnostics (Einstein equations + controlled corrections) and
+worldsheet consistency diagnostics ($\beta=0$/RG fixed points), valid in the shared admissible regime. &
+Strong (diagnostic correspondence) \\
+\hline
+String $\leftrightarrow$ AS/FRG &
+\emph{Asymptotic Safety as a Truncation Shadow of a Coherent UV Endpoint};
+(string--AS leg of \emph{Third-Corner Shadow Bridge}) &
+Construct a relation between FRG fixed-point structure in truncations and a coherent UV endpoint functional;
+explains scheme/truncation dependence as shadow behavior. &
+Strong (UV endpoint / truncation shadow) \\
+\hline
+GR $\leftrightarrow$ String $\leftrightarrow$ AS/FRG &
+\emph{A Third Corner Shadow Bridge} &
+Construct a controlled three-way correspondence between worldsheet RG fixed points, FRG UV fixed points,
+and coherent-spine fixed-point structure on the shared admissible domain; predicts correlated breakdown surfaces. &
+Strong (triple-corner bridge) \\
+\hline
+ETH $\leftrightarrow$ MBL &
+\emph{ETH and Many--Body Localization as a Single Shadow--Bridge Problem} &
+Construct a single basin-mechanism diagnostic that yields ETH as rapid mixing into a dominant basin and
+MBL as basin fragmentation with suppressed escape; includes a Kramers-type knee regime. &
+Dynamical (phase/transport bridge) \\
+\hline
+Measurement/Collapse $\leftrightarrow$ Black holes $\leftrightarrow$ Cosmology &
+\emph{Projection, Probability, and Irreversibility};
+\emph{Black Hole Information Loss and Quantum Measurement Collapse};
+\emph{Selection Fronts and Boundary-Layer Physics} &
+Construct a unified boundary diagnostic: loss of factorization / basin exit / selection-front threshold
+as the common mechanism behind collapse-like outcomes, horizon-scale breakdown, and cosmological irreversibility. &
+Boundary (shared breakdown structure) \\
+\hline
+Selection fronts $\leftrightarrow$ Computation &
+\emph{Computational Irreducibility from Projection} &
+Construct the bridge between physical selection-event occurrence before an admissible horizon and
+algorithmic undecidability; shows computability limits as an algorithmic shadow of admissibility boundaries. &
+Algorithmic (undecidability bridge) \\
+\hline
+\end{tabular}
+\end{center}
+
+
+% -------------------------------------------------
+\section{Boundary Regimes: Landscape, Selection Fronts, and Irreducibility}
+% -------------------------------------------------
+
+The preceding sections have described admissible regions, primary encodings, and their overlaps. Equally important is understanding where and how these descriptions terminate. Modal Triplet Theory does not assume that physical description extends throughout configuration space; instead, it treats the existence of observables, probabilities, and effective dynamics as conditional. This section summarizes the boundary regimes at which physical description fails and clarifies their interpretation.
+
+\subsection{The landscape problem as a boundary issue}
+
+Traditional formulations of the landscape problem assume that physics is defined everywhere in configuration space and that vacuum selection amounts to choosing among many equally physical possibilities. From the admissibility-first perspective, this assumption is incorrect. Only configurations lying in admissible regions support physical description, while large portions of configuration space are non-physical.
+
+The landscape problem is therefore reinterpreted as a mis-posed question. Rather than asking which vacuum is selected, one must ask where physical description is possible at all. This reframing dissolves the need for statistical or anthropic selection and explains why scanning procedures fail to converge: they attempt to compare configurations that do not support observables or probabilities in the first place.
+
+\subsection{Selection fronts as boundary-layer regimes}
+
+Admissible regions are not separated from non-admissible ones by smooth transitions. Instead, they terminate in boundary-layer regimes, referred to as selection fronts. In these regimes admissibility still holds, but stability margins are small and the projection to observables becomes ill-conditioned.
+
+Selection fronts are characterized by metastability, large deviations, and sharp threshold behavior. Effective descriptions may remain valid over finite times or local regions but fail abruptly under global extension. Importantly, selection fronts are not new phases of physics; they mark the boundary beyond which physical description ceases to exist.
+
+These boundary-layer regimes explain why many physical processes exhibit abrupt, non-perturbative behavior, even when control parameters appear small. They also clarify why attempts to extend effective field theory or renormalization group methods smoothly up to critical regimes encounter intrinsic ambiguities.
+
+\subsection{Algorithmic irreducibility at admissibility boundaries}
+
+A further consequence of selection-front dynamics is algorithmic irreducibility. Near admissibility boundaries, physical questions often take the form of deciding whether a selection event occurs before admissibility is lost. Such questions are well defined within the boundary-layer regime but cannot, in general, be decided by any algorithm.
+
+This undecidability does not arise from computational complexity or lack of precision. It is a structural consequence of non-invertible projection, finite stability margins, and the existence of irreversible selection events. In this sense, computational irreducibility is the algorithmic shadow of selection-front physics.
+
+Outside admissible regions, such questions are not merely undecidable but meaningless, as no physical observables exist. Algorithmic irreducibility therefore resides precisely at the boundary where physical description is marginally valid.
+
+\subsection{Physical interpretation of boundary regimes}
+
+Boundary regimes appear across many physical contexts:
+\begin{itemize}
+\item in cosmology, as the initial boundary beyond which probabilistic description fails;
+\item in black hole physics, as horizons where global unitarity and factorization break down;
+\item in quantum measurement, as the transition from coherent superpositions to irreversible outcomes;
+\item in renormalization group analyses, as truncation breakdown near critical surfaces.
+\end{itemize}
+
+In all cases, the breakdown of description is not interpreted as the onset of exotic dynamics but as the loss of the conditions required for physical observables to exist. Selection fronts and irreducibility provide a unified language for describing these terminations across encodings.
+
+\subsection{Summary}
+
+Boundary regimes play a central role in the MTT framework. They explain why the landscape problem is ill posed, why sharp non-perturbative behavior is ubiquitous, and why global effective laws fail in a structured and universal manner. Together with admissibility and encodings, they complete the picture of physical description as local, conditional, and bounded.
+Boundary regimes therefore do not mark ignorance but the limits of applicability of physical description:
+within admissible regions, predictivity is preserved and sharpened by controlled truncation and stability margins.
+
+
+% -------------------------------------------------
+\section{Constructive Status and Existence Results}
+% -------------------------------------------------
+
+A recurring concern in foundational frameworks is whether the proposed structures exist beyond formal or perturbative constructions. Modal Triplet Theory addresses this concern through a sequence of constructive results establishing non-perturbative existence and physical meaning within admissible regimes. This section summarizes the constructive status of the framework and clarifies what is and is not claimed.
+
+\subsection{Constructive quantum gravity}
+
+The constructive quantum gravity program establishes the existence of quantum dynamics and observables within admissible sectors, without assuming global validity of effective descriptions.
+
+The first stage demonstrates non-perturbative existence through Borel summability of filtered perturbative expansions in the transverse--traceless sector. This result shows that quantum amplitudes exist as well-defined objects within admissible domains.
+
+The second stage constructs the physical Hilbert space via BRST lifting, establishing gauge-invariant observables and demonstrating independence from gauge-fixing choices within admissible regimes.
+
+The third stage analyzes the infrared limit and scattering theory. It proves that asymptotic states and unitary scattering exist on admissible slabs, such as asymptotically flat regions, while explicitly showing that no global S-matrix exists across non-admissible boundaries.
+
+Together, these results provide a constructive backbone for the framework: where admissibility holds, quantum theory exists non-perturbatively; where it fails, physical description terminates.
+
+\subsection{Interpretation of constructive results}
+
+The constructive results do not assert global unitarity, global Hilbert spaces, or universal scattering theory. Instead, they establish that physical description exists precisely where admissibility conditions are satisfied and fails elsewhere. This aligns with the interpretation of boundary regimes developed in Section 7.
+
+In particular:
+\begin{itemize}
+\item Unitarity is a property of admissible slabs, not a global axiom.
+\item Scattering theory exists where asymptotic structure is admissible.
+\item Beyond admissibility boundaries, questions of unitarity or information conservation are not well defined.
+\end{itemize}
+These constructive results show that restricting unitarity to admissible slabs is not a loss of consistency,
+but the strongest form of it: unitarity is asserted exactly where the structures required to define it exist.
+
+These clarifications prevent overextension of constructive results and ensure consistency with the admissibility-first framework.
+
+\subsection{Status summary}
+
+The constructive program closes a key loop in the MTT corpus. It confirms that admissible regions are not merely formal constructs but support fully defined quantum dynamics and observables, while also demonstrating that breakdowns at admissibility boundaries are intrinsic and unavoidable.
+
+---
+
+% -------------------------------------------------
+\section{Consolidated Corner Matrix}
+% -------------------------------------------------
+
+To provide a compact overview of the framework, this section presents a consolidated matrix summarizing the roles, domains, and status of all major components of the MTT corpus. The matrix is intended as a reference tool, not as a substitute for the detailed analyses in the cited works.
+
+\subsection{Matrix overview}
+
+Each entry in the matrix specifies:
+
+\begin{enumerate}
+\item the conceptual layer to which the result belongs;
+\item the associated paper or papers;
+\item the role played within the framework;
+\item the current status of closure.
+\end{enumerate}
+
+\paragraph{Normative use.}
+The matrix is intended to be normative as well as descriptive: each new paper should occupy exactly one primary role
+and one conceptual layer, with dependencies stated explicitly.
+
+\subsection{Corner matrix}
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Layer} & \textbf{Item} & \textbf{Role} & \textbf{Status} \\
+\hline
+Meta & Landscape diagnosis & Problem redefinition & Closed \\
+\hline
+Core & Admissibility \& universality & Axioms and theorems & Closed \\
+\hline
+
+Core & Coherent kinematics layer & Chart-persistence & Closed \\
+\hline
+Core & Proto-spinorial carrier & Upstream carrier classification & Mostly closed \\
+\hline
+Meta/Core & Generative origin ordering & Dependency-order clarification & Mostly closed \\
+
+\hline
+Boundary & Selection fronts & Boundary-layer regime & Closed \\
+\hline
+Boundary & Algorithmic irreducibility & Undecidability at boundary & Closed \\
+\hline
+Encoding & Calabi--Yau (string) & Primary encoding & Mostly closed \\
+\hline
+Encoding & Strominger / flux & Selection encoding & Closed \\
+\hline
+Encoding & Invariant flux slice & Discrete loci example & Closed \\
+\hline
+Encoding & General relativity & Infrared encoding & Closed \\
+\hline
+Encoding & Asymptotic safety / FRG & Theory-space encoding & Closed \\
+\hline
+Encoding & Twistor theory & High-coherence encoding & Mostly closed \\
+\hline
+Encoding & Collapse / measurement & Boundary encoding & Closed \\
+\hline
+Reconstruction & QM, QFT, GR, SM, NCG & Recovery of known physics & Closed \\
+\hline
+Reconstruction & AQFT net structure & Nets from admissible charts  & Closed\\
+\hline
+Reconstruction & Closure-strain SM organization & Structural organization / sequel & Open\\
+\hline
+Meta & String/M-theory admissibility reinterpretation & Branch map / reclassification & Mostly closed\\
+\hline
+
+Constructive & Perturbative quantum gravity & Existence proofs & Closed \\
+\hline
+Constructive & Constructive quantum gravity & Existence proofs & Closed \\
+\hline
+Numerics & Parameter determination & Phenomenology & Open \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Interpretation}
+
+The matrix illustrates that the conceptual structure of Modal Triplet Theory is largely closed at the structural level. Core assumptions, admissibility, encodings, overlaps, and boundary regimes are all established and interrelated. What remains open is not the existence or consistency of the framework but the numerical determination of continuous parameters and detailed phenomenology within admissible regions.
+% -------------------------------------------------
+\section{Closed Results, Open Problems, and Extension Rules}
+% -------------------------------------------------
+
+A central goal of this roadmap is to distinguish clearly between results that are structurally complete and problems that remain open. This distinction is essential for preventing both overclaiming and unnecessary proliferation of speculative extensions. In this section we summarize what is closed, what remains open, and how future work should be assessed for inclusion within the framework.
+
+\subsection{Structurally closed results}
+
+At the level of structure and principle, Modal Triplet Theory is largely complete. The following components are established and internally consistent:
+
+\begin{itemize}
+\item The admissibility-first definition of physical description.
+\item The existence and robustness of coherent sectors and admissible regions.
+\item Universality of observable physics within admissible classes.
+\item Recovery of known physical frameworks (quantum mechanics, quantum field theory, general relativity, the Standard Model, and noncommutative geometry) as effective descriptions.
+\item Identification of multiple primary encodings optimized for distinct admissible regimes.
+\item Controlled overlaps and shadow bridges between encodings.
+\item Boundary regimes, including the reformulation of the landscape problem, selection fronts, and algorithmic irreducibility.
+\item Constructive existence of quantum dynamics and scattering within admissible slabs.
+\end{itemize}
+
+These results together define a coherent and closed conceptual framework. No additional axioms are required to interpret the existing corpus.
+
+\subsection{Partially closed and open problems}
+
+What remains open is not the structure of the framework but its quantitative realization in specific regimes. In particular:
+
+\begin{itemize}
+\item \textbf{Numerical closure.}  
+  Continuous parameters such as Yukawa couplings, mixing angles, and cosmological scales require numerical evaluation of overlap integrals and renormalization-group flow within admissible regions.
+\item \textbf{Phenomenology.}  
+  Connecting admissibility constraints to precision experimental data remains an ongoing program.
+\item \textbf{Observational probes of boundaries.}  
+  Empirical access to admissibility boundaries (e.g.\ coherence ceilings, black hole horizons, early-universe regimes) is limited but may become feasible in future experiments.
+\end{itemize}
+
+These open problems are quantitative rather than conceptual. Their resolution does not require modification of the framework but further analytical and numerical work within it.
+
+\subsection{Extension rules}
+
+To maintain conceptual coherence, future work should be guided by explicit extension criteria. A new paper belongs within the MTT corpus if and only if it introduces at least one of the following:
+
+\begin{enumerate}
+\item A previously unidentified admissible regime characterized by new control parameters.
+\item A new encoding that efficiently describes a known admissible regime.
+\item A new controlled overlap or boundary analysis between existing encodings.
+\end{enumerate}
+
+Conversely, work that merely reformulates existing results without adding new regimes, encodings, or boundary insights should be treated as expository rather than foundational.
+
+These rules ensure that the framework remains extensible without conceptual drift.
+
+% -------------------------------------------------
+\section{Conclusion}
+% -------------------------------------------------
+
+Modal Triplet Theory provides a structured account of when and how physical description is possible. By treating admissibility as a prerequisite rather than an assumption, the framework explains the emergence of familiar physical theories, the coexistence of multiple encodings, and the sharp termination of description at well-defined boundaries.
+
+This roadmap has organized the existing MTT corpus into a coherent whole. It has clarified the roles of foundational assumptions, reconstruction results, primary encodings, overlaps, boundary regimes, and constructive existence proofs. In doing so, it has shown that the apparent diversity of approaches addressed by MTT reflects a single underlying structure rather than a proliferation of unrelated ideas.
+
+Future work will refine numerical predictions and explore experimental consequences, but the conceptual architecture is in place. Physical description is local, conditional, and bounded—and Modal Triplet Theory provides a framework for understanding its structure and limits.
+% ============================================================
+% Classification system (drop-in .tex block)
+% ============================================================
+
+\section{Classification System Used in This Index}
+
+Each paper in the Modal Triplet Theory corpus is assigned \emph{exactly one} primary
+classification and \emph{exactly one} conceptual layer. The labels are organizational (not
+evaluative) and are used to make the role, dependencies, and scope of each paper explicit.
+
+\subsection{Primary classifications}
+
+\begin{description}[leftmargin=!,labelwidth=4.6cm]
+\item[Meta / Diagnosis] Problem-level reframings and corpus-level positioning statements; defines
+what questions are well-posed and what is assumed.
+\item[Core / Axiomatic] Standing assumptions, core objects, and universal theorems used throughout
+the corpus.
+\item[Reconstruction] Derivations showing how established frameworks (QM, QFT, GR, SM, NCG, etc.)
+arise as effective descriptions within admissible regions.
+\item[Primary Encoding] Optimized mathematical encodings (“corners”) valid within specific admissible
+regimes (e.g.\ CY/string corner, Strominger/flux corner, AS/FRG corner, twistor corner).
+\item[Overlap / Shadow Bridge] Controlled overlap results linking two or more encodings on a shared
+admissible domain (often via controlled conjugacy or matched diagnostics).
+\item[Boundary Regime] Analyses of admissibility failure and the termination of physical description
+(e.g.\ selection fronts, horizons, undecidability/irreducibility).
+\item[Constructive Existence] Nonperturbative existence proofs (e.g.\ constructive QG, BRST lifting,
+scattering where meaningful).
+\item[Numerics / Phenomenology] Quantitative closure work: determination of continuous parameters,
+RG running, amplitudes, benchmark predictions, tiered execution.
+\item[Extension (Non-fundamental)] Downstream applications beyond fundamental physics (e.g.\ biology,
+agency) that use MTT concepts without modifying the core framework.
+\end{description}
+
+\subsection{Conceptual layers}
+
+\begin{description}[leftmargin=!,labelwidth=3.0cm]
+\item[Layer 0 --- Meta] Diagnosis, positioning, and corpus architecture.
+\item[Layer 1 --- Core] Axioms, standing assumptions, universal theorems.
+\item[Layer 2 --- Boundary] Selection fronts, admissibility failure, algorithmic limits.
+\item[Layer 3 --- Reconstruction] Recovery of standard physics inside admissible regions.
+\item[Layer 4 --- Encodings] Primary encodings (“corners”) and overlap/shadow-bridge links.
+\item[Layer 5 --- Constructive] Nonperturbative existence proofs.
+\item[Layer 6 --- Numerics] Quantitative closure and phenomenology.
+\end{description}
+
+\subsection{Status labels}
+
+\begin{description}[leftmargin=!,labelwidth=2.6cm]
+\item[Closed] Structurally complete at the conceptual level.
+\item[Mostly closed] Conceptually complete; minor refinements/extensions possible.
+\item[Open] Quantitative/phenomenological program ongoing.
+\end{description}
+
+% ============================================================
+% Index tables split by layer (drop-in .tex block)
+% ============================================================
+
+\section{Index of Papers and Classification (Tables by Layer)}
+
+\subsection{Layer 0 --- Meta}
+
+\begin{center}
+\small
+\begin{tabular}{|p{7.2cm}|p{3.6cm}|p{3.6cm}|p{1.6cm}|}
+\hline
+\textbf{Title} & \textbf{Primary classification} & \textbf{Depends on} & \textbf{Status}\\
+\hline
+When Is a Configuration Physical? Rethinking the Vacuum Selection Problem
+& Meta / Diagnosis & Core axioms & Closed\\
+\hline
+Modal Triplet Theory as a Superset
+& Meta / Diagnosis & Core axioms & Closed\\
+\hline
+Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description
+& Meta / Diagnosis & Entire corpus & Closed\\
+\hline
+Closure and Inevitability in Modal Triplet Theory &
+Meta / Diagnosis & Core axioms & Closed \\
+\hline
+Modal Triplet Theory: Parameters, Closure, and Structural Falsifiability &
+Meta / Diagnosis & Core axioms & Closed \\
+\hline
+World-in-World Genesis: A Proto-Geometric Origin of Time, Gravity, Matter, and Quantization in MTT
+& Meta / Diagnosis (Dependency Order)
+& Core axioms, Fixed Points, Coherence capacity
+& Mostly closed\\
+\hline
+From Strings to Admissibility: String Theory and M-Theory Re-read Through Modal Triplet Theory
+& Meta / Diagnosis (Interpretive Branch Map)
+& String/M-theory corner papers, Proto-spinor / bridge branch
+& Mostly closed\\
+\hline
+
+\end{tabular}
+\end{center}
+
+\subsection{Layer 1 --- Core}
+
+\begin{center}
+\small
+\begin{tabular}{|p{7.2cm}|p{3.6cm}|p{3.6cm}|p{1.6cm}|}
+\hline
+\textbf{Title} & \textbf{Primary classification} & \textbf{Depends on} & \textbf{Status}\\
+\hline
+Modal Triplet Theory: Foundation
+& Core / Axiomatic & -- & Closed\\
+\hline
+Fixed Points I--VI (Complete Coherence Spine)
+& Core / Axiomatic & Foundation & Closed\\
+\hline
+Universality and Robustness of the Coherent Sector
+& Core / Axiomatic & Fixed Points & Closed\\
+\hline
+Coherent-Sector Universality and Controlled Truncation
+& Core / Axiomatic & Fixed Points & Closed\\
+\hline
+Coherent Universality and the Inevitability of Projection-Based Quantum Theories
+& Core / Universality Classification
+& Empirical constraints, Core axioms
+& Closed\\
+\hline
+Coherent Kinematics in Modal Triplet Theory: Position, Motion, and Chart-Persistence of Coherent Structures
+& Core / Axiomatic (Kinematics Layer) & Fixed Points & Closed \\
+\hline
+The Proto-Spinor: Triadic Closure from Pointwise Internal Embedding
+& Core / Axiomatic (Upstream Carrier Classification)
+& Core axioms, Coherence capacity
+& Mostly closed \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Layer 2 --- Boundary}
+
+\begin{center}
+\small
+\begin{tabular}{|p{7.2cm}|p{3.6cm}|p{3.6cm}|p{1.6cm}|}
+\hline
+\textbf{Title} & \textbf{Primary classification} & \textbf{Depends on} & \textbf{Status}\\
+\hline
+Selection Fronts and Boundary-Layer Physics at the Admissibility Threshold
+& Boundary Regime & Core axioms & Closed\\
+\hline
+Computational Irreducibility from Projection: Undecidability of Selection Events
+& Boundary Regime & Selection fronts & Closed\\
+\hline
+Projection, Probability, and Irreversibility
+& Boundary Regime & Boundary regime & Closed\\
+\hline
+Black Hole Information Loss and Quantum Measurement Collapse
+& Boundary Regime & Boundary regime & Closed\\
+\hline
+Photons, Entanglement, and Null Updating in Modal Triplet Theory &
+Boundary Regime & Core axioms & Closed \\
+\hline
+Bell, Beables, Entanglement, and Time
+& Boundary Regime
+& Core axioms
+& Closed
+\\
+\hline
+Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory
+& Boundary Regime
+& Boundary regime
+& Closed
+\\
+\hline
+Measurement as Disturbance and Stabilization in Modal Triplet Theory
+& Boundary Regime
+& Core axioms
+& Closed
+\\
+\hline
+Signature Selection and Exclusion in Modal Triplet Theory
+& Boundary Regime
+& Core axioms, Fixed Points
+& Closed
+\\
+\hline
+Entanglement, Locality, and Measurement from Coherent Sector Dynamics
+& Boundary Regime
+& Core axioms, Fixed Points, AQFT
+& Closed\\
+\hline
+Determinism Without Superdeterminism: Projection-Induced Stochasticity, Non-Randomness, and Cascading Stabilization in Modal Triplet Theory
+& Boundary Regime
+& Core axioms, Fixed Points, Projection/Admissibility
+& Closed\\
+\hline
+Gravitationally Induced Collapse as an Effective Limit of Coherence Breakdown in Modal Triplet Theory
+& Boundary Regime
+& Core axioms, Fixed Points, Projection/Admissibility
+& Closed\\
+\hline
+Why Quantum Contextuality and Measurement Order Dependence Are the Same Phenomenon
+& Boundary Regime
+& Core axioms, Fixed Points, Projection/Admissibility
+& Closed\\
+\hline
+Why Decoherence Cannot Replace Measurement: A Projection-Based Shadow Bridge in Modal Triplet Theory
+& Boundary Regime
+& Core axioms, Fixed Points, Projection/Admissibility
+& Closed\\
+\hline
+Measurement-Induced Phase Transitions as a Shadow of Coherence Basin Dynamics
+& Boundary Regime
+& Core axioms, Fixed Points, Projection/Admissibility
+& Closed\\
+\hline
+
+\end{tabular}
+\end{center}
+
+\subsection{Layer 3 --- Reconstruction}
+
+\begin{center}
+\small
+\begin{tabular}{|p{7.2cm}|p{3.6cm}|p{3.6cm}|p{1.6cm}|}
+\hline
+\textbf{Title} & \textbf{Primary classification} & \textbf{Depends on} & \textbf{Status}\\
+\hline
+From MTT to Quantum Mechanics
+& Reconstruction & Core axioms & Closed\\
+\hline
+Why the Born Rule and the Classical Limit Are the Same Problem
+& Reconstruction & QM reconstruction & Closed\\
+\hline
+From MTT to Quantum Field Theory
+& Reconstruction & QM reconstruction & Closed\\
+\hline
+From MTT to Quantum Field Theory on Curved Spacetime
+& Reconstruction & QFT reconstruction & Closed\\
+\hline
+From MTT to General Relativity
+& Reconstruction & Core axioms & Closed\\
+\hline
+From MTT to the Standard Model
+& Reconstruction & Topology-only constraints & Closed*\\
+\hline
+From MTT to Noncommutative Geometry
+& Reconstruction & Core axioms & Closed\\
+\hline
+From MTT to Loop Quantum Gravity
+& Reconstruction & Core axioms & Closed\\
+\hline
+From MTT to Kaluza--Klein Theory
+& Reconstruction & Core axioms & Closed\\
+\hline
+From MTT to Pilot--Wave Dynamics &
+Reconstruction & QM reconstruction & Closed \\
+\hline
+Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity
+& Reconstruction
+& Core axioms
+& Closed
+\\
+\hline
+Electromagnetic Helicity as a Coherent-Sector Chern--Simons Functional in Modal Triplet Theory
+& Reconstruction (Invariants)
+& Core axioms, Fixed Points, Projection/Admissibility
+& Closed\\
+\hline
+Fermions in Loop Quantum Gravity from Modal Triplet Theory: Coherent Compression, Berry Terms, and Absence of Doubling
+& Reconstruction (Matter/Dynamics)
+& Core axioms, Fixed Points, Projection/Admissibility
+& Closed\\
+\hline
+Topological Phases of Matter as Admissible Overlap Structures
+& Reconstruction (Phases/Invariants)
+& Core axioms, Projection/Admissibility
+& Closed\\
+\hline
+Topology-Only Constraints and Forbidden Operators in Modal Triplet Theory
+& Reconstruction (Topology/Constraints)
+& Core axioms, Projection/Admissibility
+& Closed\\
+\hline
+The Spectral Action as a Shadow of Coherent Fixed-Point Geometry
+& Reconstruction (NCG/Matter Couplings)
+& Core axioms, Fixed Points, Projection/Admissibility
+& Closed\\
+\hline
+Loop Quantum Gravity as a Shadow of Coherent Fixed-Point Dynamics
+& Reconstruction (Quantum Geometry)
+& Core axioms, Fixed Points, Projection/Admissibility
+& Closed\\
+\hline
+From Modal Triplet Theory to Algebraic Quantum Field Theory
+& Reconstruction (AQFT) & Core axioms, Coherent kinematics & Closed \\
+\hline
+Modal Diagrammatics: The Origin of Feynman Rules from Coherent Modal Geometry
+& Reconstruction (Perturbative Structure) & Core axioms, Fixed Points, AQFT/pAQFT & Closed \\
+\hline
+Deterministic Projection, Diffusive Limits, and Knee–Like Threshold Transitions
+& Reconstruction (Threshold / Selection Dynamics) & Boundary regime, Selection fronts & Closed \\
+\hline
+Closure-Strain Geometry and the Structure of the Standard Model
+& Reconstruction (Standard Model Organization) & Proto-spinor branch, Topology-only / SM reconstruction & Open \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Layer 4 --- Encodings and Overlaps}
+
+\begin{center}
+\small
+\begin{tabular}{|p{7.2cm}|p{3.6cm}|p{3.6cm}|p{1.6cm}|}
+\hline
+\textbf{Title} & \textbf{Primary classification} & \textbf{Depends on} & \textbf{Status}\\
+\hline
+From MTT to Calabi--Yau Compactifications
+& Primary Encoding & Core axioms & Mostly closed\\
+\hline
+From MTT to the Strominger System
+& Primary Encoding & Fixed Points & Closed\\
+\hline
+MTT as a Selection Principle for Heterotic Flux Compactifications
+& Primary Encoding & Strominger system & Closed\\
+\hline
+Flux Compactifications in Heterotic String Theory
+& Primary Encoding & Strominger system & Closed\\
+\hline
+From MTT to String Theory
+& Primary Encoding & Core axioms & Closed\\
+\hline
+From MTT to M-Theory
+& Primary Encoding & Core axioms & Closed\\
+\hline
+Modal Triplet Theory and Asymptotic Safety
+& Primary Encoding & Core axioms & Closed\\
+\hline
+Twistor Encodings as High-Coherence Limits of MTT
+& Primary Encoding & Core axioms & Mostly closed\\
+\hline
+Causal Sets as an Effective Limit of MTT
+& Primary Encoding & Core axioms & Closed\\
+\hline
+Causal Sets as Event-Selection Shadows of Coherence Breakdown
+& Primary Encoding & Causal set encoding & Closed\\
+\hline
+Why General Relativity Falls Out of String Theory
+& Overlap / Shadow Bridge & GR + String & Closed\\
+\hline
+Why General Relativity and String Theory Are the Same Admissibility Constraint
+& Overlap / Shadow Bridge & GR + String & Closed\\
+\hline
+Asymptotic Safety as a Truncation Shadow of a Coherent UV Endpoint
+& Overlap / Shadow Bridge & AS encoding & Closed\\
+\hline
+A Third-Corner Shadow Bridge
+& Overlap / Shadow Bridge & String + AS & Closed\\
+\hline
+ETH and Many-Body Localization as a Single Shadow--Bridge Problem
+& Overlap / Shadow Bridge & Fixed Points & Closed\\
+\hline
+Effective Field Theory as a Shadow of Projection--Admissible Dynamics &
+Primary Encoding & Core axioms & Closed \\
+\hline
+The Central Circle: Inertia, Mass, Gravity, and Time as Shared Coherence
+Bookkeeping in Modal Triplet Theory
+& Primary Encoding
+& Core axioms, Coherence capacity
+& Closed \\
+\hline
+Inflationary Measures and the Born Rule as a Single Shadow–Bridge Problem
+& Overlap / Shadow Bridge & Boundary regime, QM reconstruction & Closed \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Layer 5 --- Constructive Existence}
+
+\begin{center}
+\small
+\begin{tabular}{|p{7.2cm}|p{3.6cm}|p{3.6cm}|p{1.6cm}|}
+\hline
+\textbf{Title} & \textbf{Primary classification} & \textbf{Depends on} & \textbf{Status}\\
+\hline
+Constructive Quantum Gravity I: Borel Summability of the TT Sector
+& Constructive Existence & Core axioms & Closed\\
+\hline
+Constructive Quantum Gravity II: BRST Lifting and the Physical Hilbert Space
+& Constructive Existence & QG I & Closed\\
+\hline
+Constructive Quantum Gravity III: Infrared Limit and Scattering under SPT Damping
+& Constructive Existence & QG II & Closed\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Layer 6 --- Numerics / Phenomenology}
+
+\begin{center}
+\small
+\begin{tabular}{|p{7.2cm}|p{3.6cm}|p{3.6cm}|p{1.6cm}|}
+\hline
+\textbf{Title} & \textbf{Primary classification} & \textbf{Depends on} & \textbf{Status}\\
+\hline
+Quantum Amplitudes from Modal Geometry
+& Numerics / Phenomenology & Reconstruction results & Open\\
+\hline
+Theta Closure I--V
+& Numerics / Phenomenology & Core axioms & Open\\
+\hline
+Superset Determinations in MTT
+& Numerics / Phenomenology & Superset structure & Open\\
+\hline
+Geometry--Light Relations
+& Numerics / Phenomenology & Core axioms & Open\\
+\hline
+Execution I--II
+& Numerics / Phenomenology & CY encoding & Open\\
+\hline
+Tiered Roadmap for Calculations
+& Numerics / Phenomenology & Numerics track & Open\\
+\hline
+Baseline Scales and Phenomenological Consistency in Modal Triplet Theory
+& Numerics / Phenomenology
+& Core axioms, Reconstruction results
+& Open\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Extension (Non-fundamental)}
+
+\begin{center}
+\small
+\begin{tabular}{|p{7.2cm}|p{3.6cm}|p{3.6cm}|p{1.6cm}|}
+\hline
+\textbf{Title} & \textbf{Primary classification} & \textbf{Depends on} & \textbf{Status}\\
+\hline
+A Projection--First Reframing of Physics
+& Meta / Diagnosis & Core axioms & Closed \\
+\hline
+A Projection--First Reframing of Information, Computation, and Undecidability
+& Boundary Regime & Selection fronts & Closed \\
+\hline
+A Projection-First Reframing of String Theory
+& Meta / Diagnosis & Core axioms & Closed \\
+\hline
+A Projection-First Reframing of Dark Matter and Dark Energy
+& Meta / Diagnosis & Core axioms & Closed \\
+\hline
+Horizons, Area Laws, and Entropy from Coherence Capacity Bottlenecks
+
+& Boundary Regime & Coherence capacity & Closed \\
+\hline
+Particles and Forces as Coherence Basins and Capacity Gradients
+
+& Reconstruction & Coherence capacity dynamics & Closed \\
+\hline
+Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion
+& Primary Encoding & Coherence capacity & Closed \\
+\hline
+The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description
+& Meta / Diagnosis & Core axioms & Closed \\
+\hline
+A Projection--First Reframing of Physics
+& Meta / Diagnosis & Core axioms & Closed \\
+\hline
+A Projection--First Reframing of Quantum Gravity
+& Boundary Regime & Admissibility failure / horizons & Closed \\
+\hline
+A Projection--First Reframing of Information, Computation, and Undecidability
+& Boundary Regime & Selection fronts & Closed \\
+\hline
+Field-Structured Dissipative Protocells
+& Extension (Non-fundamental) & Core axioms & Open\\
+\hline
+Bioelectric--Quantum Evolution Loop
+& Extension (Non-fundamental) & Core axioms & Open\\
+\hline
+From Modal Geometry to Bioelectric Evolution
+& Extension (Non-fundamental) & Core axioms & Open\\
+\hline
+Integration of MTT and BEQ
+& Extension (Non-fundamental) & Core axioms & Open\\
+\hline
+Biased Indeterminism and the Bioelectric--Quantum Brain
+& Extension (Non-fundamental) & Core axioms & Open\\
+\hline
+Tilting Quantum Effects in Biology
+& Extension (Non-fundamental) & Core axioms & Open\\
+\hline
+Between Chance and Choice
+& Extension (Non-fundamental) & Core axioms & Open\\
+\hline
+Capacity-Gated Projection Dynamics: A Concrete Algorithmic Realization
+of Admissibility-Limited Description
+& Boundary Regime
+& Core axioms, Selection fronts
+& Closed \\
+\hline
+Projection-Limited Coherence: A Structural Theory of Effective Description
+from Fundamental Physics to Consciousness and Civilization
+& Meta / Diagnosis
+& Core axioms
+& Closed \\
+\hline
+Projection-Induced Network Geometry
+& Primary Encoding
+& Core axioms, Admissibility
+& Closed \\
+\hline
+\end{tabular}
+\end{center}
+
+\bigskip
+\nocite{*}
+\bibliographystyle{plain} % or abbrv, unsrt, alpha, etc
+\bibliography{main}
+
+\end{document}
+

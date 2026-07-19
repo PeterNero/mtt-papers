@@ -1,0 +1,88 @@
+{
+  "abstract": "We present a structural classification result for quantum theories capable of reproducing irreversible measurement, stable classical outcomes, relativistic locality, finite predictivity, and observed matter structure. Starting from minimal empirical requirements rather than model-specific assumptions, we derive a sequence of inevitability theorems: effective noninvertible projection, admissible basins with finite stability margins, smooth spectral suppression of ultraviolet modes, discrete selection events at the encoding level, and topology-driven constraints on matter representations and operators are all forced. These conditions define a coherent universality class. We show that all successful existing approaches\u2014collapse models, measurement-induced transitions, asymptotic safety, loop quantum gravity, causal set theory, and noncommutative geometry\u2014implement partial shadows of this class, while structurally distinct alternatives fail one or more necessary conditions. Modal Triplet Theory provides a minimal explicit realization of the class, but the classification result does not depend on MTT-specific constructions. The apparent plurality of quantum gravity and measurement theories is therefore illusory: viable frameworks are constrained to a single universality class characterized by projection, admissibility, and spectral truncation.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18261806",
+    "created": "2026-01-16T11:37:56.226388+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18268193",
+    "files": [
+      {
+        "checksum": "md5:227612928884fbe09063e90f9f6da295",
+        "content_url": "https://zenodo.org/api/records/18268193/files/Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2%20(2).pdf/content",
+        "key": "Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2 (2).pdf",
+        "size": 224420
+      }
+    ],
+    "id": "18268193",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-16",
+    "record_url": "https://zenodo.org/records/18268193",
+    "resource_type": "publication",
+    "title": "Coherent Universality and the Inevitability of Projection-Based Quantum Theories",
+    "updated": "2026-01-16T11:37:57.364729+00:00",
+    "version": "v2.0"
+  },
+  "main_tex_sha256": "02fb8ea83b0bfbc1a5ba154c321e8220c0a6dc912c3aa1d3e349e01504095c0f",
+  "paper_id": "coherent-universality-and-the-inevitability-of-projecti-d9e28e29",
+  "paper_md_sha256": "4fa4eac9a70bda6cb73c7ce249f489e7147957ff3f54093518662f017dea6613",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 18915,
+      "path": "main.tex",
+      "sha256": "02fb8ea83b0bfbc1a5ba154c321e8220c0a6dc912c3aa1d3e349e01504095c0f"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2"
+  },
+  "source_tree_sha256": "608876916e0ec7451ef430bffff435230573ee44b622a22bea095494e073b5ec",
+  "title": "Coherent Universality and the Inevitability of Projection-Based Quantum Theories A structural classification of viable measurement, spacetime, and matter frameworks",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261806",
+      "created": "2026-01-16T11:37:56.226388+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18268193",
+      "files": [
+        {
+          "checksum": "md5:227612928884fbe09063e90f9f6da295",
+          "content_url": "https://zenodo.org/api/records/18268193/files/Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2%20(2).pdf/content",
+          "key": "Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2 (2).pdf",
+          "size": 224420
+        }
+      ],
+      "id": "18268193",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-16",
+      "record_url": "https://zenodo.org/records/18268193",
+      "resource_type": "publication",
+      "title": "Coherent Universality and the Inevitability of Projection-Based Quantum Theories",
+      "updated": "2026-01-16T11:37:57.364729+00:00",
+      "version": "v2.0"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "abstract": "We derive pilot\u2013wave (de Broglie\u2013Bohm) dynamics as an effective, intra\u2013basin description of Modal Triplet Theory (MTT). Starting from the deterministic modal flow on the full configuration space X = Y^4 \\times B_1 \\times B_2 \\times B_3, we show that the coherent projection and observable pushforward induce (i) a Schr\u00f6dinger evolution on the reduced observable Hilbert space, (ii) a conserved probability current on configuration space, and (iii) a canonical characteristic flow whose integral curves coincide with Bohmian guidance equations. No additional hidden variables, stochastic postulates, or ontological assumptions are introduced. We further prove that pilot\u2013wave dynamics are valid only within admissible coherence basins where the coherent projection is stable. At admissibility boundaries\u2014including measurement, horizon formation, and cosmological selection events\u2014the pilot\u2013wave description necessarily breaks down, while the underlying MTT dynamics remain deterministic and well-defined. Pilot\u2013wave theory is therefore shown to be a regime\u2013limited shadow of MTT rather than a fundamental theory. This establishes Bohmian mechanics as a semiclassical gauge of MTT, clarifies its domain of validity, and resolves its foundational tensions with probability, measurement, and relativistic causality.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262377",
+    "created": "2026-01-15T21:31:18.738475+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262378",
+    "files": [
+      {
+        "checksum": "md5:e37a0898e48713d189f39577f4a8b3da",
+        "content_url": "https://zenodo.org/api/records/18262378/files/Modal_Triplet_Theory__From_MTT_to_Pilot__Wave_Dynamics%20(1).pdf/content",
+        "key": "Modal_Triplet_Theory__From_MTT_to_Pilot__Wave_Dynamics (1).pdf",
+        "size": 354334
+      }
+    ],
+    "id": "18262378",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262378",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: From MTT to Pilot\u2013Wave Dynamics",
+    "updated": "2026-01-15T21:31:19.165323+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "caf50c330af256c69d1dae3fba2aa66565f635c9d804efdf4666f17ad13bdf7d",
+  "paper_id": "modal-triplet-theory-from-mtt-to-pilot-wave-dynamics",
+  "paper_md_sha256": "4bdc78ac6299158a1a79fcf186e6185533a608f2f90519cc7166804dc3e57fc8",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 27308,
+      "path": "main.tex",
+      "sha256": "caf50c330af256c69d1dae3fba2aa66565f635c9d804efdf4666f17ad13bdf7d"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Pilot__Wave_Dynamics"
+  },
+  "source_tree_sha256": "c28ad3a169b8350730abdfa51c50e75efe6164cbec6a1da7cb49afdc779313b6",
+  "title": "Modal Triplet Theory: From MTT to Pilot\u2013Wave Dynamics",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262377",
+      "created": "2026-01-15T21:31:18.738475+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262378",
+      "files": [
+        {
+          "checksum": "md5:e37a0898e48713d189f39577f4a8b3da",
+          "content_url": "https://zenodo.org/api/records/18262378/files/Modal_Triplet_Theory__From_MTT_to_Pilot__Wave_Dynamics%20(1).pdf/content",
+          "key": "Modal_Triplet_Theory__From_MTT_to_Pilot__Wave_Dynamics (1).pdf",
+          "size": 354334
+        }
+      ],
+      "id": "18262378",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262378",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: From MTT to Pilot\u2013Wave Dynamics",
+      "updated": "2026-01-15T21:31:19.165323+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

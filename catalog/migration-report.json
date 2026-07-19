@@ -1,0 +1,12 @@
+{
+  "canonical_papers": 138,
+  "current_sources_newer_than_release": 31,
+  "pandoc_warning_papers": 12,
+  "papers_with_zenodo_release": 119,
+  "papers_without_zenodo_match": 19,
+  "schema": "mtt.paper-migration-report.v1",
+  "superseded_projects_excluded": 28,
+  "zenodo_records": 120,
+  "zenodo_records_matched": 119,
+  "zenodo_records_unmatched": 1
+}

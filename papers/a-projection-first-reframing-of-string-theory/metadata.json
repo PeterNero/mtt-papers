@@ -1,0 +1,88 @@
+{
+  "abstract": "String theory is widely regarded as the most successful ultraviolet framework for quantum gravity, yet its conceptual status remains unsettled. Are strings and branes fundamental constituents of nature, or are they effective devices whose success reflects a deeper structural constraint? This paper develops a projection-first reframing of string theory in which the distinguishing features of the subject\u2014extended excitations, closed-string universality of gravity, boundary-localized gauge sectors, holography, modular finiteness, and the apparent landscape\u2014are interpreted as consequences of finite admissibility of physical description rather than as evidence for a literal string ontology. The reframing adopts a conservative stance. No new dynamical principles are introduced, no modification of worldsheet or target-space equations is proposed, and no claims are made about the ultimate microscopic degrees of freedom beyond effective description. Instead, the paper identifies which structural conditions any stable, local, predictive description must satisfy and shows how string-theoretic constructions can be organized as admissible encodings optimized for maintaining those conditions at high energy. In this view, quantization is not a universal procedure but a representational strategy valid only within admissible regimes; the special role of closed-string modes reflects the global bookkeeping required to maintain consistency of projected descriptions; D-branes are interpreted as admissibility boundaries that localize certain constraint-carrying modes; and holography is understood as the survival of description on lower-dimensional loci when bulk encoding becomes inadmissible. The landscape is reinterpreted as a catalogue of mathematically consistent encodings, most of which fail admissibility and therefore do not correspond to physically realizable descriptions. The goal is explanatory rather than competitive: to provide a vocabulary in which string theory\u2019s characteristic successes and limitations are natural consequences of projection and finite admissibility, and to clarify how string-theoretic language interfaces with other projection-based encodings, including semiclassical gravity, effective field theory, and the constructive quantum-gravity results established elsewhere in the corpus.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18330706",
+    "created": "2026-01-21T19:50:48.879306+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18330707",
+    "files": [
+      {
+        "checksum": "md5:e97d5d010063ca99ecdbd9312b48c730",
+        "content_url": "https://zenodo.org/api/records/18330707/files/A_Projection_First_Reframing_of_String_Theory%20(1).pdf/content",
+        "key": "A_Projection_First_Reframing_of_String_Theory (1).pdf",
+        "size": 201694
+      }
+    ],
+    "id": "18330707",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18330707",
+    "resource_type": "publication",
+    "title": "A Projection-First Reframing of String Theory",
+    "updated": "2026-01-21T19:50:49.231331+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "9cdfee1342d620fe56ec052896560fcea3a72d0c9d64afb945af5540c25be602",
+  "paper_id": "a-projection-first-reframing-of-string-theory",
+  "paper_md_sha256": "15d483f507858f1b234086adf9c041584a63835ff017d7b173c1190c157a1545",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 33882,
+      "path": "main.tex",
+      "sha256": "9cdfee1342d620fe56ec052896560fcea3a72d0c9d64afb945af5540c25be602"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "19 A project-first reframing/_work/A_Projection_First_Reframing_of_String_Theory (1)"
+  },
+  "source_tree_sha256": "543812f55fbd5712892da237f3e0194f07a68e6d79405d0cd3d10dad1256818b",
+  "title": "A Projection-First Reframing of String Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18330706",
+      "created": "2026-01-21T19:50:48.879306+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18330707",
+      "files": [
+        {
+          "checksum": "md5:e97d5d010063ca99ecdbd9312b48c730",
+          "content_url": "https://zenodo.org/api/records/18330707/files/A_Projection_First_Reframing_of_String_Theory%20(1).pdf/content",
+          "key": "A_Projection_First_Reframing_of_String_Theory (1).pdf",
+          "size": 201694
+        }
+      ],
+      "id": "18330707",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18330707",
+      "resource_type": "publication",
+      "title": "A Projection-First Reframing of String Theory",
+      "updated": "2026-01-21T19:50:49.231331+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

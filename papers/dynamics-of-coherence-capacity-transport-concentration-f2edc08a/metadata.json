@@ -1,0 +1,88 @@
+{
+  "abstract": "We develop the dynamical theory of coherence capacity introduced in Coherence Capacity as the Fundamental Resource of Effective Physics. Coherence capacity is defined as the finite stability margin that allows a projection-based effective description to remain predictive. Under minimal axioms, we show that coherence capacity admits a local transport law and behaves as a conserved resource within admissible regimes. We prove that capacity transport generically exhibits focusing, leading to concentration, bottleneck formation, and exhaustion on codimension-one surfaces. These results provide the dynamical substrate for gravitational attraction, horizon formation, thermalization, and irreversibility, without modifying fundamental dynamics or introducing new degrees of freedom. All transport statements are effective/encoding-level, slab-local, and conditional on regularity and constitutive closure assumptions stated explicitly below.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18256048",
+    "created": "2026-01-21T04:54:06.115966+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18322062",
+    "files": [
+      {
+        "checksum": "md5:4b2bbc3e3198576be73dd2abbeb331e4",
+        "content_url": "https://zenodo.org/api/records/18322062/files/Dynamics_of_Coherence_Capacity__Transport__Concentration__and_Exhaustion_v2%20(2).pdf/content",
+        "key": "Dynamics_of_Coherence_Capacity__Transport__Concentration__and_Exhaustion_v2 (2).pdf",
+        "size": 209262
+      }
+    ],
+    "id": "18322062",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18322062",
+    "resource_type": "publication",
+    "title": "Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion",
+    "updated": "2026-01-21T04:54:06.464102+00:00",
+    "version": "v2.0"
+  },
+  "main_tex_sha256": "c919040c692d60f6e438afbe8a443d7fd3aa0a8740fcf110e1fc88f5fef605bc",
+  "paper_id": "dynamics-of-coherence-capacity-transport-concentration-f2edc08a",
+  "paper_md_sha256": "cd4bad472dc3244f3d4b3e964b4ad6791f8abd59e317f7ca5db45f7117312603",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 14052,
+      "path": "main.tex",
+      "sha256": "c919040c692d60f6e438afbe8a443d7fd3aa0a8740fcf110e1fc88f5fef605bc"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "14 Coherence Capacity Program/_work/Dynamics_of_Coherence_Capacity__Transport__Concentration__and_Exhaustion_v2"
+  },
+  "source_tree_sha256": "881ca7a4fad3670fe25697a625cbfc8c768ecd45d79b2e253dda569e58c14326",
+  "title": "Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18256048",
+      "created": "2026-01-21T04:54:06.115966+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18322062",
+      "files": [
+        {
+          "checksum": "md5:4b2bbc3e3198576be73dd2abbeb331e4",
+          "content_url": "https://zenodo.org/api/records/18322062/files/Dynamics_of_Coherence_Capacity__Transport__Concentration__and_Exhaustion_v2%20(2).pdf/content",
+          "key": "Dynamics_of_Coherence_Capacity__Transport__Concentration__and_Exhaustion_v2 (2).pdf",
+          "size": 209262
+        }
+      ],
+      "id": "18322062",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18322062",
+      "resource_type": "publication",
+      "title": "Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion",
+      "updated": "2026-01-21T04:54:06.464102+00:00",
+      "version": "v2.0"
+    }
+  ]
+}

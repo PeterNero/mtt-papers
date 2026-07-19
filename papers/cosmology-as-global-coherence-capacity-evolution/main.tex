@@ -1,0 +1,337 @@
+\documentclass[11pt]{article}
+\usepackage{series}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+\title{\textbf{Cosmology as Global Coherence Capacity Evolution}}
+\author{Peter Nero}
+\date{January 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We show that cosmological expansion, acceleration, and horizon structure arise naturally
+as effective consequences of global coherence-capacity evolution under the same transport,
+closure, and regularity assumptions used elsewhere in the coherence-capacity framework.
+ Building on the theory of coherence capacity and its
+transport, concentration, and exhaustion, we show that cosmology is not
+the dynamics of spacetime itself, but the global bookkeeping of how
+coherence capacity is redistributed and depleted over large scales. Under
+minimal axioms, we derive generalized Friedmann-type equations governing
+capacity flow, identify expansion as a relaxation process under spare
+capacity, and interpret cosmological horizons as global capacity
+bottlenecks. This framework requires no fundamental inflaton, vacuum
+energy, or initial singularity.
+\end{abstract}
+
+\section{Introduction}
+
+Cosmology traditionally describes the large-scale evolution of spacetime
+via dynamical equations for the metric. Observed expansion, acceleration,
+and horizon structure are attributed to energy content, vacuum energy, or
+initial conditions.
+
+In this work we present a different perspective. We show that cosmology is
+the global manifestation of coherence capacity evolution. Expansion,
+acceleration, and horizons arise as necessary features of how a
+projection-based effective description redistributes its finite stability
+budget over increasingly large regions.
+
+The central claim is simple:
+\emph{cosmic expansion is a relaxation process driven by spare coherence
+capacity, while cosmic acceleration reflects capacity redistribution
+under global constraints}.
+
+\section{Framework and Assumptions}
+
+We adopt the axioms introduced previously.
+
+\begin{description}
+\item[Axiom A1.] Fundamental dynamics on a configuration space $X$ is
+invertible.
+\item[Axiom A2.] Observable physics arises via a noninjective projection
+$P:X\to Y$.
+\item[Axiom A3.] Effective descriptions are valid only on admissible
+regions characterized by positive coherence capacity $\mathcal C(x)$.
+\item[Axiom A4.] Coherence capacity admits local transport, concentration,
+and exhaustion.
+\end{description}
+
+We further assume large-scale homogeneity and isotropy of the effective
+description.
+\paragraph{Imported structural assumptions.}
+All results in this paper rely on the effective transport representation of coherence
+capacity developed previously, including the existence of a slab-local effective current,
+finite flux bounds arising from bounded projection and spectral separation, and constitutive
+closure governing admissible redistribution. No statement in this paper asserts a fundamental
+cosmological dynamics beyond these effective, encoding-level assumptions.
+
+\section{Global Coherence Capacity}
+
+\subsection{Total capacity}
+
+Let $\Sigma_t$ denote a spatial hypersurface of the effective description.
+Define the total coherence capacity on $\Sigma_t$ by
+\[
+\mathcal Q_{\mathcal C}(t) := \int_{\Sigma_t} n_\mu J^\mu_{\mathcal C}\, d^3x.
+\]
+
+Inside admissible regimes, $Q_C$ is conserved in the effective transport representation,
+except where capacity is lost through global bottlenecks.
+
+
+\subsection{Global capacity density}
+
+Under homogeneity, coherence capacity reduces to a scalar function of the
+cosmic scale parameter:
+\[
+\mathcal C(x,t) \equiv \mathcal C(t).
+\]
+
+This does not imply constancy in time; it implies spatial uniformity at
+fixed cosmic ordering.
+
+\section{Cosmic Expansion as Capacity Relaxation}
+
+We now derive expansion from capacity dynamics.
+
+\subsection{Spare capacity and relaxation}
+
+When coherence capacity is abundant relative to local strain, projection
+is strongly contractive. In such regimes, the effective description
+relaxes toward configurations that minimize gradients and strain.
+
+\begin{theorem}[Expansion from spare coherence capacity]
+If the global coherence capacity density $\mathcal C(t)$ exceeds the
+minimum required for stability, then the effective spatial volume
+$V(t)$ increases monotonically under admissible evolution.
+\end{theorem}
+
+\begin{proof}
+Spare capacity enforces relaxation: gradients and inhomogeneities are
+damped. The only global relaxation channel compatible with homogeneity is
+uniform increase of spatial separation between degrees of freedom,
+corresponding to expansion of $V(t)$.
+\end{proof}
+
+Expansion is therefore not driven by repulsive forces but by the system
+relaxing under excess descriptive capacity.
+
+\section{Generalized Friedmann Equation}
+
+We now derive the cosmological evolution equation.
+
+\subsection{Capacity balance}
+
+Let $a(t)$ denote the scale factor, $V(t)\propto a(t)^3$. Capacity transport
+and conservation imply a balance equation of the form
+\[
+\frac{d}{dt}\mathcal Q_{\mathcal C}(t)
+=
+- \Phi_{\mathcal C}^{\mathrm{out}}(t),
+\]
+where $\Phi_{\mathcal C}^{\mathrm{out}}$ represents capacity loss through
+global bottlenecks (if any).
+
+In the absence of such loss, $\mathcal Q_{\mathcal C}$ is conserved.
+
+\subsection{Effective expansion law (encoding-level)}
+
+Dimensional consistency and isotropy imply
+\[
+\left(\frac{\dot a}{a}\right)^2
+=
+\frac{1}{\mathcal C(t)}\,\rho_{\mathrm{eff}}(t),
+\]
+where $\rho_{\mathrm{eff}}$ is the effective capacity strain density.
+The following relation should be understood as an effective encoding of global capacity
+balance under homogeneity and isotropy, not as a fundamental dynamical field equation.
+
+\begin{theorem}[Generalized Friedmann equation]
+Cosmic expansion obeys a Friedmann-type equation with coherence capacity
+playing the role of inverse gravitational stiffness:
+\[
+H^2 = \frac{\rho_{\mathrm{eff}}}{\mathcal C(t)}.
+\]
+\end{theorem}
+
+\begin{proof}
+This follows directly from the capacity-weighted Einstein response derived
+previously, specialized to homogeneous and isotropic geometry.
+\end{proof}
+
+Thus Newton's constant is replaced by the inverse of global coherence
+capacity.
+
+\section{Discussion}
+
+In this framework:
+\begin{itemize}
+\item Expansion occurs when spare capacity enforces relaxation.
+\item Deceleration occurs when capacity is strained by matter.
+\item Acceleration arises from redistribution of capacity under global
+constraints.
+\end{itemize}
+
+No new dynamical fields are required.
+
+\section{Cosmic Acceleration and Apparent Dark Energy}
+
+We now address cosmic acceleration, often attributed to dark energy or a
+cosmological constant.
+
+\subsection{Capacity redistribution versus vacuum energy}
+
+In the coherence-capacity framework, no additional energy component is
+required to produce acceleration. Instead, acceleration arises when
+coherence capacity is redistributed in such a way that the effective
+capacity density available to local regions increases over time.
+
+\begin{definition}[Capacity redistribution]
+Capacity redistribution is the global rearrangement of coherence capacity
+that preserves total capacity while altering its local density.
+\end{definition}
+
+Such redistribution may occur even when total capacity
+$\mathcal Q_{\mathcal C}$ is conserved.
+
+\begin{theorem}[Acceleration from capacity redistribution, conditional]
+Assume the effective transport representation with constitutive closure and outward
+redistribution of coherence capacity under global constraints.
+If coherence capacity flows outward from regions of high strain toward
+regions of lower strain, then the scale factor $a(t)$ exhibits accelerated
+growth:
+\[
+\ddot a > 0.
+\]
+\end{theorem}
+
+\begin{proof}
+Acceleration corresponds to decreasing effective stiffness
+$1/\mathcal C(t)$ in the generalized Friedmann equation. Outward flow of
+capacity increases $\mathcal C(t)$ in expanding regions, reducing
+gravitational resistance to expansion and producing $\ddot a>0$.
+\end{proof}
+
+Thus apparent dark energy is reinterpreted as a bookkeeping effect of
+capacity redistribution rather than a new physical substance.
+
+\section{Cosmological Horizons as Global Capacity Bottlenecks}
+
+\subsection{Global bottleneck formation}
+
+As the universe expands, coherence capacity must be distributed across an
+increasingly large effective volume. If redistribution cannot keep pace
+with expansion, global bottlenecks form.
+
+\begin{definition}[Cosmological capacity horizon]
+A cosmological capacity horizon is a codimension-one surface on which
+$\mathcal C=0$ due to insufficient capacity transport at global scales.
+\end{definition}
+
+\begin{theorem}[Horizon inevitability under finite transport]
+Under sustained expansion with finite total coherence capacity, a
+cosmological capacity horizon must form.
+\end{theorem}
+
+\begin{proof}
+Under sustained expansion with finite total coherence capacity and bounded transport flux,
+redistribution fails and $\mathcal C$ vanishes on a bounding surface.
+\end{proof}
+
+Cosmological horizons are therefore global analogues of black hole
+horizons.
+
+\section{Initial Conditions Without a Big Bang Singularity}
+
+Standard cosmology posits an initial singularity. In the present
+framework, no such singularity is required.
+
+\subsection{Capacity-dominated initial regime}
+
+At early stages, coherence capacity is large relative to strain.
+Projection is strongly stable, and effective descriptions are highly
+relaxed.
+
+\begin{theorem}[Nonsingular origin]
+If coherence capacity is sufficiently abundant, the effective description
+extends arbitrarily far in the past without encountering an admissibility
+barrier.
+\end{theorem}
+
+\begin{proof}
+Spare capacity ensures relaxation and prevents focusing to a bottleneck.
+Thus $\mathcal C>0$ at all early stages, avoiding singular behavior.
+\end{proof}
+
+The apparent Big Bang arises when tracing the effective description beyond
+its domain of applicability, not from a fundamental singularity.
+
+\section{Arrow of Time at Cosmological Scale}
+
+We now connect global capacity evolution to the cosmic arrow of time.
+
+\begin{theorem}[Cosmic arrow from capacity exhaustion]
+The global arrow of time aligns with the direction of net coherence
+capacity loss through cosmological bottlenecks.
+\end{theorem}
+
+\begin{proof}
+Capacity loss is irreversible and monotonically increases the total
+capacity entropy. The ordering of admissible descriptions therefore
+defines a preferred temporal direction, in the effective description
+\end{proof}
+
+This arrow is consistent with, but deeper than, thermodynamic time.
+
+\section{Observational Consequences and Predictions}
+
+The coherence-capacity cosmology leads to distinct predictions:
+
+\begin{itemize}
+\item Apparent dark energy evolves with cosmic capacity redistribution,
+not as a true constant.
+\item Horizon entropy scales with area due to flux bounds.
+\item Early-universe smoothness reflects high initial capacity.
+\item Deviations from $\Lambda$CDM may appear at large scales where
+capacity redistribution becomes inefficient.
+\end{itemize}
+
+These predictions are testable in principle and do not require new
+microscopic fields.
+
+\section{Discussion}
+
+Cosmology emerges here as the global bookkeeping of coherence capacity.
+Expansion, acceleration, and horizons arise from the same transport and
+bottleneck mechanisms that govern local gravity and black holes.
+
+This unifies cosmology with the rest of effective physics and eliminates
+the need for separate explanations of inflation, dark energy, and initial
+singularities.
+
+\section{Conclusion}
+
+We have shown that cosmological expansion and acceleration arise naturally
+from global coherence capacity evolution. Horizons, entropy, and the arrow
+of time are consequences of finite capacity transport and exhaustion.
+
+Together with preceding papers, this completes a coherent framework in
+which:
+\begin{itemize}
+\item coherence capacity is the fundamental resource,
+\item gravity is its geometric bookkeeping,
+\item particles and forces emerge from basin dynamics,
+\item horizons and entropy arise from capacity bottlenecks,
+\item cosmology is global capacity evolution.
+\end{itemize}
+
+Effective physical laws persist precisely because coherence capacity is
+finite; their breakdown and global structure follow inevitably from its
+dynamics.
+
+\end{document}

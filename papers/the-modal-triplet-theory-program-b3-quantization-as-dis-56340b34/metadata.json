@@ -1,0 +1,93 @@
+{
+  "abstract": "We show that quantization arises as a necessary encoding class once reduced descriptions encounter nil obstructions, i.e. termination of admissible describability. In the Modal Triplet Theory (MTT) framework, quantization is not introduced as a postulate, a correspondence principle, or a rule for promoting classical observables to operators. Rather, it is identified as the unique encoding response that preserves coherent structure when continuous descriptive degrees of freedom are no longer admissible. We demonstrate that nil obstructions force collapse of continuous families of descriptions and select discrete survivors that are stable under admissible refinement. These discrete structures constitute the content of quantization. Topological and combinatorial invariants play a central role, while probability appears only conditionally when invariant measures exist. No Hilbert space, operator algebra, or measurement axiom is assumed at the structural level. This paper completes the encoding-class triad of the Modal Triplet Theory Program. Together with gravity as kinematic consistency encoding (circle) and gauge structure as redundancy encoding (lens), quantization is shown to arise as an inevitable response to termination of describability (nil).",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18355058",
+    "created": "2026-01-23T20:07:11.941415+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18355059",
+    "files": [
+      {
+        "checksum": "md5:0cb3574e4769a08603cf9ad16f2d12ce",
+        "content_url": "https://zenodo.org/api/records/18355059/files/The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding%20(1).pdf/content",
+        "key": "The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding (1).pdf",
+        "size": 219997
+      }
+    ],
+    "id": "18355059",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-23",
+    "record_url": "https://zenodo.org/records/18355059",
+    "resource_type": "publication",
+    "title": "The Modal Triplet Theory Program B3: Quantization as Discrete Constraint Encoding",
+    "updated": "2026-01-23T20:07:12.377557+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "2023954f859998ed1d26b2b5db66d7b899af95444994ae21344c661d3e7f3412",
+  "paper_id": "the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34",
+  "paper_md_sha256": "79e3cf93bd50092aeb2cf03ba260db94fd6451107039b5f986eeb3d42293510d",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 33326,
+      "path": "main.bib",
+      "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
+    },
+    {
+      "bytes": 31913,
+      "path": "main.tex",
+      "sha256": "2023954f859998ed1d26b2b5db66d7b899af95444994ae21344c661d3e7f3412"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding"
+  },
+  "source_tree_sha256": "024d2ed8d82c4604f5b67c576d621126c15c5913330ed8d5729596f62da16b1f",
+  "title": "The Modal Triplet Theory Program B3: Quantization as Discrete Constraint Encoding in the Modal Triplet Theory Program",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18355058",
+      "created": "2026-01-23T20:07:11.941415+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18355059",
+      "files": [
+        {
+          "checksum": "md5:0cb3574e4769a08603cf9ad16f2d12ce",
+          "content_url": "https://zenodo.org/api/records/18355059/files/The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding%20(1).pdf/content",
+          "key": "The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding (1).pdf",
+          "size": 219997
+        }
+      ],
+      "id": "18355059",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-23",
+      "record_url": "https://zenodo.org/records/18355059",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B3: Quantization as Discrete Constraint Encoding",
+      "updated": "2026-01-23T20:07:12.377557+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "abstract": "We introduce a class of dynamical systems in which evolution is governed by admissibility constraints imposed by finite coherence capacity rather than by optimization, energy minimization, or utility functions. The system evolves according to a local update rule while representational strain remains within capacity. When this capacity is exhausted, continuation of the current effective description becomes inadmissible and the system undergoes a forced regime transition induced by projection. A central feature of the framework is that projection is many-to-one and non-invertible, mapping underlying configurations to an admissibility-dependent effective state space. When capacity is sufficient, the effective description factorizes into independent agent-level states. As capacity is reduced, such factorization may fail, forcing the system to adopt a joint effective state spanning multiple agents. Admissibility is therefore evaluated collectively on the projected relational description, yielding non-factorizable, entanglement-like coordination without communication, shared objectives, or global control. We provide an explicit, runnable algorithm implementing capacity-gated projection dynamics with strictly local, real-time updates and no look-ahead. The resulting dynamics exhibit hesitation, channeling, boundary-layer behavior, and discrete selection events that resemble decision-making or adaptive coordination, yet arise purely from structural constraints on effective description. The model serves as a constructive existence proof for projection-limited dynamics and provides a testbed for studying selection, irreversibility, and regime change in physical, biological, and artificial systems.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18274654",
+    "created": "2026-01-17T19:03:36.204380+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18283389",
+    "files": [
+      {
+        "checksum": "md5:541165ac4248adf7d72aaaf10fdd9dba",
+        "content_url": "https://zenodo.org/api/records/18283389/files/Capacity_Gated_Projection_Dynamics_v2%20(2).pdf/content",
+        "key": "Capacity_Gated_Projection_Dynamics_v2 (2).pdf",
+        "size": 294866
+      }
+    ],
+    "id": "18283389",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-17",
+    "record_url": "https://zenodo.org/records/18283389",
+    "resource_type": "publication",
+    "title": "Capacity-Gated Projection Dynamics",
+    "updated": "2026-01-17T19:03:36.707572+00:00",
+    "version": "v2.0"
+  },
+  "main_tex_sha256": "1fbb30c72c1808bf3337e6a8e7eb5ca2d842448246ba385b527b4726c14aff20",
+  "paper_id": "capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90",
+  "paper_md_sha256": "7adf35fcc347a16ac0bff94554f7ae4e5c44c57b6211378e90ba29f73daea4a9",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 61378,
+      "path": "main.tex",
+      "sha256": "1fbb30c72c1808bf3337e6a8e7eb5ca2d842448246ba385b527b4726c14aff20"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "14 Coherence Capacity Program/_work/Capacity_Gated_Projection_Dynamics_v2 (1)"
+  },
+  "source_tree_sha256": "f754ed9d8fb984fd48c41dbce87752195963d55d1a7e1d31def61bc58a118e38",
+  "title": "Capacity-Gated Projection Dynamics: A Concrete Algorithmic Realization of Admissibility-Limited Description",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18274654",
+      "created": "2026-01-17T19:03:36.204380+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18283389",
+      "files": [
+        {
+          "checksum": "md5:541165ac4248adf7d72aaaf10fdd9dba",
+          "content_url": "https://zenodo.org/api/records/18283389/files/Capacity_Gated_Projection_Dynamics_v2%20(2).pdf/content",
+          "key": "Capacity_Gated_Projection_Dynamics_v2 (2).pdf",
+          "size": 294866
+        }
+      ],
+      "id": "18283389",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-17",
+      "record_url": "https://zenodo.org/records/18283389",
+      "resource_type": "publication",
+      "title": "Capacity-Gated Projection Dynamics",
+      "updated": "2026-01-17T19:03:36.707572+00:00",
+      "version": "v2.0"
+    }
+  ]
+}

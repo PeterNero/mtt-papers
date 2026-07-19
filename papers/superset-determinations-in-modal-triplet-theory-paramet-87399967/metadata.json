@@ -1,0 +1,91 @@
+{
+  "abstract": "We reformulate the MTT superset program as an audited parameter-identifiability framework. The former one-loop gauge crossings, fitted \\zeta ratios, minimum-norm threshold vector, common scale K, and claimed \\alpha_s(M_Z) cross-prediction are withdrawn. Their inputs and scale choices were not independent. The current authority instead closes embedded renormalized-Standard-Model equivalence at a one-shared-physical-primitive, measured-profile standard, using selected SMDR v1.3 transport and a complete eight-row covariance. We classify every output as structural theorem, calibration, replay/profile coordinate, diagnostic, or held-out prediction. This preserves the superset strategy as a rigorous tool for comparing encodings while preventing fitted values from being promoted into source theorems.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v3",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262209",
+    "created": "2026-01-15T21:10:42.347862+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262210",
+    "files": [
+      {
+        "checksum": "md5:ba8aa9a55618b993f05fc8e0d0fb2bfb",
+        "content_url": "https://zenodo.org/api/records/18262210/files/Superset_Determinations_in_Modal_Triplet_Theory_v2%20(3).pdf/content",
+        "key": "Superset_Determinations_in_Modal_Triplet_Theory_v2 (3).pdf",
+        "size": 344039
+      }
+    ],
+    "id": "18262210",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262210",
+    "resource_type": "publication",
+    "title": "Superset Determinations in Modal Triplet Theory",
+    "updated": "2026-01-15T21:10:43.060179+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "b3f6f66e15a3eec3efc6e0c135dcbfb831e858cb0e3011448cdb78b84b278ec9",
+  "paper_id": "superset-determinations-in-modal-triplet-theory-paramet-87399967",
+  "paper_md_sha256": "9d67de4d738da18b53e490e8c10a490123eff61593dcc14990ecc3fe809c28c3",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
+    "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
+    "selected_revision": true,
+    "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Superset_Determinations_in_Modal_Triplet_Theory_v2"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 12277,
+      "path": "main.tex",
+      "sha256": "b3f6f66e15a3eec3efc6e0c135dcbfb831e858cb0e3011448cdb78b84b278ec9"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Superset_Determinations_in_Modal_Triplet_Theory_v3"
+  },
+  "source_tree_sha256": "324eecf89e35a173769bbb0005688d34384d513f69c1c43b4981821571ef3c00",
+  "title": "Superset Determinations in Modal Triplet Theory: Parameter Identifiability after True-SM Closure",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262209",
+      "created": "2026-01-15T21:10:42.347862+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262210",
+      "files": [
+        {
+          "checksum": "md5:ba8aa9a55618b993f05fc8e0d0fb2bfb",
+          "content_url": "https://zenodo.org/api/records/18262210/files/Superset_Determinations_in_Modal_Triplet_Theory_v2%20(3).pdf/content",
+          "key": "Superset_Determinations_in_Modal_Triplet_Theory_v2 (3).pdf",
+          "size": 344039
+        }
+      ],
+      "id": "18262210",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262210",
+      "resource_type": "publication",
+      "title": "Superset Determinations in Modal Triplet Theory",
+      "updated": "2026-01-15T21:10:43.060179+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

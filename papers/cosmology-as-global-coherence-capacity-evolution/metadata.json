@@ -1,0 +1,88 @@
+{
+  "abstract": "We show that cosmological expansion, acceleration, and horizon structure arise naturally as effective consequences of global coherence-capacity evolution under the same transport, closure, and regularity assumptions used elsewhere in the coherence-capacity framework. Building on the theory of coherence capacity and its transport, concentration, and exhaustion, we show that cosmology is not the dynamics of spacetime itself, but the global bookkeeping of how coherence capacity is redistributed and depleted over large scales. Under minimal axioms, we derive generalized Friedmann-type equations governing capacity flow, identify expansion as a relaxation process under spare capacity, and interpret cosmological horizons as global capacity bottlenecks. This framework requires no fundamental inflaton, vacuum energy, or initial singularity.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18256381",
+    "created": "2026-01-21T04:56:22.697692+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18322077",
+    "files": [
+      {
+        "checksum": "md5:2ae64df85c483e119ebfc93fb2869389",
+        "content_url": "https://zenodo.org/api/records/18322077/files/Cosmology_as_Global_Coherence_Capacity_Evolution_v2.pdf/content",
+        "key": "Cosmology_as_Global_Coherence_Capacity_Evolution_v2.pdf",
+        "size": 207895
+      }
+    ],
+    "id": "18322077",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18322077",
+    "resource_type": "publication",
+    "title": "Cosmology as Global Coherence Capacity Evolution",
+    "updated": "2026-01-21T04:56:23.020297+00:00",
+    "version": "v2.0"
+  },
+  "main_tex_sha256": "8bb44638d3e5c58da9ec842e549ea915e5d26760cb26e0502efebdf6639484d9",
+  "paper_id": "cosmology-as-global-coherence-capacity-evolution",
+  "paper_md_sha256": "1587834fdf6e9fcb3a0851f2cf8b913568ac4a9068d1cd8c3bf5646d22536757",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 12317,
+      "path": "main.tex",
+      "sha256": "8bb44638d3e5c58da9ec842e549ea915e5d26760cb26e0502efebdf6639484d9"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "14 Coherence Capacity Program/_work/Cosmology_as_Global_Coherence_Capacity_Evolution_v2"
+  },
+  "source_tree_sha256": "8f7b6bd2382cbad0c121e8b4f811204ae33bdd2bc99c7ac5dae5cb4ba5ebb68d",
+  "title": "Cosmology as Global Coherence Capacity Evolution",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18256381",
+      "created": "2026-01-21T04:56:22.697692+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18322077",
+      "files": [
+        {
+          "checksum": "md5:2ae64df85c483e119ebfc93fb2869389",
+          "content_url": "https://zenodo.org/api/records/18322077/files/Cosmology_as_Global_Coherence_Capacity_Evolution_v2.pdf/content",
+          "key": "Cosmology_as_Global_Coherence_Capacity_Evolution_v2.pdf",
+          "size": 207895
+        }
+      ],
+      "id": "18322077",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18322077",
+      "resource_type": "publication",
+      "title": "Cosmology as Global Coherence Capacity Evolution",
+      "updated": "2026-01-21T04:56:23.020297+00:00",
+      "version": "v2.0"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "abstract": "We identify a single structural resource underlying effective physical descriptions: a finite coherence capacity, defined as the stability margin that allows a projection-based description to remain predictive under disturbance. We consider a general class of theories in which observable physics arises via a noninvertible projection from a higher-dimensional configuration space with invertible dynamics. Under minimal axioms, we prove that exhaustion of coherence capacity necessarily induces noninvertibility of the effective evolution, forcing irreversibility in the observable description despite invertibility of the underlying dynamics. Measurement collapse, thermalization, and black hole information loss are shown to be instances of the same admissibility transition. We further show that spatial variation of coherence capacity induces a geometric response identical in form to Einstein gravity, with Newton\u2019s constant emerging as a conversion factor between coherence capacity and curvature units. The framework is independent of any specific microscopic model; Modal Triplet Theory is cited only as a concrete realization of the axioms.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v3",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18255905",
+    "created": "2026-01-21T04:51:47.104673+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18322036",
+    "files": [
+      {
+        "checksum": "md5:2b814bcf3d906cfd90e7bb7e6616c779",
+        "content_url": "https://zenodo.org/api/records/18322036/files/Coherence_Capacity_as_the_Fundamental_Resource_of_Effective_Physics_v3.pdf/content",
+        "key": "Coherence_Capacity_as_the_Fundamental_Resource_of_Effective_Physics_v3.pdf",
+        "size": 241496
+      }
+    ],
+    "id": "18322036",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18322036",
+    "resource_type": "publication",
+    "title": "Coherence Capacity as the Fundamental Resource of Effective Physics",
+    "updated": "2026-01-21T04:51:47.589393+00:00",
+    "version": "v3.0"
+  },
+  "main_tex_sha256": "a9645bdd5aa97068c0263d6ad23e16c10def6fe68b569c62d3d07cd85d2ea0f4",
+  "paper_id": "coherence-capacity-as-the-fundamental-resource-of-effec-cd41c322",
+  "paper_md_sha256": "6f491b5a9b26eb328e9efa183b0fea4d669ed485e46d86ff3e718e44a3eec116",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 15388,
+      "path": "main.tex",
+      "sha256": "a9645bdd5aa97068c0263d6ad23e16c10def6fe68b569c62d3d07cd85d2ea0f4"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "14 Coherence Capacity Program/_work/Coherence_Capacity_as_the_Fundamental_Resource_of_Effective_Physics_v3"
+  },
+  "source_tree_sha256": "b0bd2aa65b19087e895bf7c3dc6e1cd57ee30a9dab6be12fb5220f3bb7703cb3",
+  "title": "Coherence Capacity as the Fundamental Resource of Effective Physics",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255905",
+      "created": "2026-01-21T04:51:47.104673+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18322036",
+      "files": [
+        {
+          "checksum": "md5:2b814bcf3d906cfd90e7bb7e6616c779",
+          "content_url": "https://zenodo.org/api/records/18322036/files/Coherence_Capacity_as_the_Fundamental_Resource_of_Effective_Physics_v3.pdf/content",
+          "key": "Coherence_Capacity_as_the_Fundamental_Resource_of_Effective_Physics_v3.pdf",
+          "size": 241496
+        }
+      ],
+      "id": "18322036",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18322036",
+      "resource_type": "publication",
+      "title": "Coherence Capacity as the Fundamental Resource of Effective Physics",
+      "updated": "2026-01-21T04:51:47.589393+00:00",
+      "version": "v3.0"
+    }
+  ]
+}

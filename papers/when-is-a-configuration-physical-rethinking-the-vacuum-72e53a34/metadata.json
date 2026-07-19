@@ -1,0 +1,88 @@
+{
+  "abstract": "Despite decades of progress in quantum gravity, string theory, cosmology, and effective field theory, no consensus has emerged on how to select a unique or sharply constrained vacuum describing observed physics. This persistent difficulty is commonly framed as a problem of combinatorics, statistics, or anthropic weighting over a large landscape of vacua. In this work we argue that the difficulty may instead reflect a mis-posed question: the assumption that physics is defined throughout configuration space. We observe that core physical notions\u2014Hilbert spaces, probability, effective field theory, and renormalization group flow\u2014already presuppose stability, boundedness, and spectral separation, none of which are guaranteed globally. As a consequence, selection cannot meaningfully act pointwise on vacua but must instead operate on admissible regions defined by dynamical and spectral inequalities. These regions need not be connected or accessible by continuous deformation, rendering standard landscape searches ineffective by construction. The goal of this paper is not to propose a new fundamental theory, but to clarify the conceptual structure underlying vacuum selection and to explain why existing approaches have struggled to converge.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18255207",
+    "created": "2026-01-15T10:12:41.199676+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18255208",
+    "files": [
+      {
+        "checksum": "md5:0f37a91e4860e475effcbdaad8b6b4f2",
+        "content_url": "https://zenodo.org/api/records/18255208/files/When_Is_a_Configuration_Physical____Rethinking_the_Vacuum_Selection_Problem%20(3).pdf/content",
+        "key": "When_Is_a_Configuration_Physical____Rethinking_the_Vacuum_Selection_Problem (3).pdf",
+        "size": 191954
+      }
+    ],
+    "id": "18255208",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18255208",
+    "resource_type": "publication",
+    "title": "When Is a Configuration Physical? Rethinking the Vacuum Selection Problem",
+    "updated": "2026-01-15T10:12:41.528650+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "8bd1d842881d1cf59f64b4333159bd3ba8318667d783ffd1cc650ba1a0138b68",
+  "paper_id": "when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34",
+  "paper_md_sha256": "8b895381d437167040840b61984b514a5e7aca419a6eb59f5711bb5cc8255fd9",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 20381,
+      "path": "main.tex",
+      "sha256": "8bd1d842881d1cf59f64b4333159bd3ba8318667d783ffd1cc650ba1a0138b68"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/When_Is_a_Configuration_Physical____Rethinking_the_Vacuum_Selection_Problem"
+  },
+  "source_tree_sha256": "ec567e23089752a1bd498bab27c28e5d805f96eed555f818fc3cad78554db5bb",
+  "title": "When Is a Configuration Physical? Rethinking the Vacuum Selection Problem",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255207",
+      "created": "2026-01-15T10:12:41.199676+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18255208",
+      "files": [
+        {
+          "checksum": "md5:0f37a91e4860e475effcbdaad8b6b4f2",
+          "content_url": "https://zenodo.org/api/records/18255208/files/When_Is_a_Configuration_Physical____Rethinking_the_Vacuum_Selection_Problem%20(3).pdf/content",
+          "key": "When_Is_a_Configuration_Physical____Rethinking_the_Vacuum_Selection_Problem (3).pdf",
+          "size": 191954
+        }
+      ],
+      "id": "18255208",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18255208",
+      "resource_type": "publication",
+      "title": "When Is a Configuration Physical? Rethinking the Vacuum Selection Problem",
+      "updated": "2026-01-15T10:12:41.528650+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "abstract": "We present a unified structural account of photons in Modal Triplet Theory (MTT). In MTT, physical description arises from admissible coherent configurations on a higher-dimensional modal space, projected to an effective four-dimensional encoding. Within this framework, photons are identified as massless gauge-coherence modes whose preferred physical encoding is global and non-factorizing. Localization, particle-like behavior, and discrete detection events emerge only when admissibility constraints enforce a partition of this encoding, as in interaction or measurement. We show that null propagation at the speed of light arises as the unique admissible updating of massless gauge coherence under stability and contractivity conditions, rather than as a kinematic postulate. Wave\u2013particle duality is reinterpreted as a choice of encoding valid on different admissible domains. Gravitational lensing and redshift are described as continuous re-encodings of the same stretched coherence constraint under varying admissibility geometry, without invoking forces acting on localized particles. Photons near horizons provide a particularly transparent illustration of the framework. Horizons are identified as admissibility barriers across which the observable map loses a global right inverse, forcing exterior re-encoding. The resulting thermal description is shown to be consistent with Hawking\u2019s equations and is interpreted as a basin-measure shadow of restricted encoding, structurally analogous to measurement-induced probabilities. Time is treated as an encoding-dependent construct associated with coherence rebalancing and record formation; massless gauge modes admit atemporal encodings along null updating directions. This paper does not modify the equations of quantum electrodynamics, general relativity, or quantum field theory on curved spacetime. Rather, it clarifies their structural origin within MTT and unifies photon propagation, entanglement, measurement, horizons, and thermality as manifestations of a single admissibility\u2013encoding framework.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262339",
+    "created": "2026-01-15T21:24:19.435890+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262340",
+    "files": [
+      {
+        "checksum": "md5:2ce704f1f21111ad12ee713896068959",
+        "content_url": "https://zenodo.org/api/records/18262340/files/Photons__Entanglement__and_Null_Updating_in_Modal_Triplet_Theory%20(1).pdf/content",
+        "key": "Photons__Entanglement__and_Null_Updating_in_Modal_Triplet_Theory (1).pdf",
+        "size": 296843
+      }
+    ],
+    "id": "18262340",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262340",
+    "resource_type": "publication",
+    "title": "Photons, Entanglement, and Null Updating in Modal Triplet Theory",
+    "updated": "2026-01-15T21:24:19.956695+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "329a10040e2426aca5fb3c300c80485f4d7b5ce083238a6835ef9a4025042dd9",
+  "paper_id": "photons-entanglement-and-null-updating-in-modal-triplet-theory",
+  "paper_md_sha256": "3473528f5c4954a68720dfd15124630a69ec060300aaae1c45c020af6de9b999",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 41406,
+      "path": "main.tex",
+      "sha256": "329a10040e2426aca5fb3c300c80485f4d7b5ce083238a6835ef9a4025042dd9"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Photons__Entanglement__and_Null_Updating_in_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "f24476f2a303549a1cae9f2db3589e4dad4592334ca15abb6ff17bf94e358500",
+  "title": "Photons, Entanglement, and Null Updating in Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262339",
+      "created": "2026-01-15T21:24:19.435890+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262340",
+      "files": [
+        {
+          "checksum": "md5:2ce704f1f21111ad12ee713896068959",
+          "content_url": "https://zenodo.org/api/records/18262340/files/Photons__Entanglement__and_Null_Updating_in_Modal_Triplet_Theory%20(1).pdf/content",
+          "key": "Photons__Entanglement__and_Null_Updating_in_Modal_Triplet_Theory (1).pdf",
+          "size": 296843
+        }
+      ],
+      "id": "18262340",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262340",
+      "resource_type": "publication",
+      "title": "Photons, Entanglement, and Null Updating in Modal Triplet Theory",
+      "updated": "2026-01-15T21:24:19.956695+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

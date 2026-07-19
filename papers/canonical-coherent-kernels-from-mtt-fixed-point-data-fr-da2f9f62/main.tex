@@ -1,0 +1,681 @@
+\documentclass[11pt]{article}
+\usepackage{series}
+
+\hypersetup{
+  pdftitle={Canonical Coherent Kernels from MTT Fixed-Point Data},
+  pdfauthor={Peter Nero}
+}
+
+\title{\textbf{Canonical Coherent Kernels from MTT Fixed-Point Data}\\
+\large From the Delta Dictionary to Execution-Level Corrections}
+\author{Peter Nero}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Earlier papers in the delta--projection sequence established a structural dictionary:
+Dirac delta distributions arise as singular limits of finite kernels, shells, filters, windows,
+measurement effects, and thin layers. That dictionary is mathematically legitimate but does
+not by itself determine new physics, because an arbitrary finite kernel is only a regulator.
+The execution-level problem is the reverse direction: derive the finite kernel from MTT data.
+
+This paper proves the canonical fixed-point version of that reverse direction. In an admissible
+MTT fixed-point regime, the data consist of a nonnegative self-adjoint linearized operator
+\(A\), a bounded coherent projector \(P=\Pi_{\mathrm{coh}}\), a complementary incoherent projector
+\(Q=I-P\), a spectral gap on the incoherent sector, and a proper-time/coherence scale
+\(\tau>0\). These data canonically define the coherent kernel
+\[
+        K_{\mathrm{MTT}}(x,y;\tau)
+        =
+        \langle x|\,P e^{-\tau A}P\,|y\rangle .
+\]
+Equivalently, in a spectral representation,
+\[
+        K_{\mathrm{MTT}}(x,y;\tau)
+        =
+        \sum_{n\in{\rm coh}} e^{-\tau\lambda_n}
+        \phi_n(x)\phi_n^\ast(y).
+\]
+We prove that this kernel is smooth for positive proper time, is functorial under unitary
+re-encoding, acts as a controlled sector-identity on the coherent sector, suppresses incoherent
+components by the fixed-point spectral gap, and converges to the usual Dirac delta only in the
+joint limit of complete coherent bandwidth and vanishing proper-time width.
+
+Thus the delta replacement is not arbitrary:
+\[
+        \delta(x-y)
+        \quad\leadsto\quad
+        K_{\mathrm{MTT}}(x,y;\tau),
+\]
+with finite corrections controlled by \((A,P,\tau,\lambda^\ast)\). This converts the previous
+delta dictionary into an execution rule: MTT fixed-point data determine the finite kernel,
+and the finite kernel determines the deviation from the sharp standard object.
+\end{abstract}
+
+\seriestagline
+
+\tableofcontents
+
+\section{Purpose and claim discipline}
+
+The earlier delta--projection papers established statements of the form
+\[
+        K_\epsilon \longrightarrow \delta
+\]
+or
+\[
+        \text{finite object} \longrightarrow \text{sharp standard object}.
+\]
+Those statements explain why delta distributions recur across physics, but they do not yet
+select a physical finite kernel. The missing execution-level direction is
+\[
+        \text{MTT fixed-point data}
+        \Longrightarrow
+        K_{\mathrm{coh}}
+        \Longrightarrow
+        \text{finite correction}.
+\]
+
+This paper proves that direction in the fixed-point regime.
+
+\begin{quote}
+\textbf{Central claim.}
+In an admissible fixed-point regime, the finite replacement of the Dirac delta is not chosen
+freely. It is the projected heat/proper-time kernel determined by the same operator and
+projector data that define coherent stabilization.
+\end{quote}
+
+\subsection*{What is proved}
+
+We prove, in a standard compact spectral setting and in the corresponding Hilbert-space
+operator language, that fixed-point data \((A,P,\tau)\) determine a canonical bounded/smoothing
+operator
+\[
+        B_\tau:=P e^{-\tau A}P
+\]
+and hence a kernel \(K_{\mathrm{MTT}}\). We give explicit error estimates comparing \(B_\tau\)
+with the full identity and with the coherent-sector identity.
+
+\subsection*{What is not claimed}
+
+We do not claim here that all numerical values of \(\tau\), spectral gaps, or carrier-induced
+operators have been computed in every physical sector. The point is sharper: once a fixed-point
+sector supplies \((A,P,\tau)\), the finite kernel is fixed by functional calculus and is no
+longer arbitrary.
+
+\section{Analytic setting}
+
+Let \(X\) be a compact smooth Riemannian manifold without boundary, or a compact manifold
+with boundary equipped with a self-adjoint elliptic boundary condition. More generally, one
+may replace scalar functions by sections of a Hermitian vector bundle; for readability we use
+the scalar notation.
+
+Let
+\[
+        A\ge 0
+\]
+be a nonnegative self-adjoint Laplace-type operator on \(L^2(X)\) with compact resolvent.
+Let
+\[
+        A\phi_n=\lambda_n\phi_n,\qquad
+        0\le \lambda_0\le \lambda_1\le \cdots,
+\]
+be an orthonormal spectral resolution, with eigenvalues repeated according to multiplicity.
+
+\begin{assumption}[Fixed-point spectral data]\label{ass:fpdata}
+We are given:
+\begin{enumerate}[label=(\roman*)]
+\item a bounded orthogonal projector \(P\) on \(L^2(X)\);
+\item \(Q:=I-P\);
+\item commutation \(PA=AP\) on \(\operatorname{Dom}(A)\);
+\item an incoherent-sector gap
+\[
+        A|_{\operatorname{Ran}Q}\ge \lambda^\ast Q
+        \quad\text{for some}\quad \lambda^\ast>0;
+\]
+\item a proper-time/coherence scale \(\tau>0\).
+\end{enumerate}
+\end{assumption}
+
+\begin{remark}
+In the fixed-point papers \(P\) is the coherent projector \(\Pi_{\mathrm{coh}}\), often defined by
+Riesz spectral calculus on the fiber/internal operator. The gap \(\lambda^\ast\) is the uniform
+positive spectral gap above the coherent modes. The operator \(A\) is the linearized damping
+or elliptic operator controlling stabilization near the fixed-point sector.
+\end{remark}
+
+\begin{definition}[Canonical MTT coherent operator]\label{def:Btau}
+Under \cref{ass:fpdata}, define
+\[
+        B_\tau:=P e^{-\tau A}P .
+\]
+When \(B_\tau\) has an integral kernel, we write
+\[
+        K_{\mathrm{MTT}}(x,y;\tau)
+        :=
+        \langle x|B_\tau|y\rangle .
+\]
+\end{definition}
+
+Because \(P\) commutes with \(A\), the spectral form is transparent. If \(P\phi_n=p_n\phi_n\)
+with \(p_n\in\{0,1\}\), then
+\[
+        B_\tau f
+        =
+        \sum_{n}p_n e^{-\tau\lambda_n}\langle \phi_n,f\rangle\phi_n,
+\]
+and the kernel is
+\[
+        K_{\mathrm{MTT}}(x,y;\tau)
+        =
+        \sum_{n:p_n=1}
+        e^{-\tau\lambda_n}\phi_n(x)\phi_n^\ast(y).
+\]
+
+\section{Existence, smoothness, and covariance of the canonical kernel}
+
+\begin{theorem}[Kernel existence and smoothing]\label{thm:smoothing}
+Assume \cref{ass:fpdata}. For every \(\tau>0\), \(e^{-\tau A}\) is a smoothing trace-class
+operator. Consequently \(B_\tau=P e^{-\tau A}P\) is bounded and trace class. If \(P\) is a
+spectral projector of \(A\), then \(B_\tau\) has a smooth kernel
+\[
+        K_{\mathrm{MTT}}(\cdot,\cdot;\tau)\in C^\infty(X\times X).
+\]
+If \(P\) is finite rank, the same conclusion holds even at \(\tau=0\), with \(B_0=P\).
+\end{theorem}
+
+\begin{proof}
+Since \(A\) is a nonnegative self-adjoint elliptic operator with compact resolvent,
+the spectral theorem gives
+\[
+        e^{-\tau A}f
+        =
+        \sum_n e^{-\tau\lambda_n}\langle \phi_n,f\rangle\phi_n.
+\]
+For every \(N\ge 0\),
+\[
+        A^N e^{-\tau A}
+\]
+is bounded, because \(\lambda^N e^{-\tau\lambda}\) is bounded on \([0,\infty)\).
+Elliptic regularity then implies that \(e^{-\tau A}\) maps distributions to smooth functions.
+On a compact manifold, \(e^{-\tau A}\) is trace class for \(\tau>0\), and has a smooth heat
+kernel. Multiplication on both sides by the bounded spectral projector \(P\), which commutes
+with \(A\), preserves trace class and smoothness of the kernel. If \(P\) is finite rank,
+\(P\) is a finite sum of smooth eigenfunction projectors, hence has a smooth kernel at
+\(\tau=0\). 
+\end{proof}
+
+\begin{theorem}[Re-encoding covariance]\label{thm:covariance}
+Let \(U:L^2(X)\to L^2(X')\) be a unitary re-encoding. Define
+\[
+        A'=UAU^{-1},\qquad P'=UPU^{-1}.
+\]
+Then the canonical coherent operator transforms as
+\[
+        B'_\tau=P'e^{-\tau A'}P'=UB_\tau U^{-1}.
+\]
+Thus the construction of \(B_\tau\) depends only on the fixed-point operator data up to
+unitary re-encoding.
+\end{theorem}
+
+\begin{proof}
+Functional calculus is covariant under unitary conjugation:
+\[
+        e^{-\tau A'}=e^{-\tau UAU^{-1}}=Ue^{-\tau A}U^{-1}.
+\]
+Therefore
+\[
+        P'e^{-\tau A'}P'
+        =
+        (UPU^{-1})(Ue^{-\tau A}U^{-1})(UPU^{-1})
+        =
+        U(Pe^{-\tau A}P)U^{-1}.
+\]
+\end{proof}
+
+\section{Sector identity and error estimates}
+
+The canonical kernel should not be confused with the full Dirac identity kernel. It is an
+identity-like object on the retained coherent sector, with explicit error terms.
+
+\begin{assumption}[Coherent bandwidth]\label{ass:band}
+For some \(\Lambda_{\mathrm{coh}}\ge 0\),
+\[
+        \sigma(A|_{\operatorname{Ran}P})\subset[0,\Lambda_{\mathrm{coh}}].
+\]
+\end{assumption}
+
+\begin{remark}
+If \(P\) is the harmonic zero-mode projector, then \(\Lambda_{\mathrm{coh}}=0\) and
+\(B_\tau=P\) exactly. If \(P\) retains a finite coherent band, then
+\(\Lambda_{\mathrm{coh}}\) is the largest retained coherent eigenvalue.
+\end{remark}
+
+\begin{theorem}[Coherent-sector identity estimate]\label{thm:sector}
+Assume \cref{ass:fpdata,ass:band}. For every \(f\in L^2(X)\),
+\[
+        \norm{Pf-B_\tau f}_{L^2}
+        \le
+        \bigl(1-e^{-\tau\Lambda_{\mathrm{coh}}}\bigr)\norm{Pf}_{L^2}.
+\]
+Consequently,
+\[
+        \norm{f-B_\tau f}_{L^2}
+        \le
+        \norm{Qf}_{L^2}
+        +
+        \bigl(1-e^{-\tau\Lambda_{\mathrm{coh}}}\bigr)\norm{Pf}_{L^2}.
+\]
+\end{theorem}
+
+\begin{proof}
+Since \(P\) commutes with \(A\), \(B_\tau f=e^{-\tau A}Pf\). Thus
+\[
+        Pf-B_\tau f
+        =
+        (I-e^{-\tau A})Pf.
+\]
+On \(\operatorname{Ran}P\), the spectral values of \(A\) lie in
+\([0,\Lambda_{\mathrm{coh}}]\). Hence
+\[
+        \norm{(I-e^{-\tau A})P}_{L^2\to L^2}
+        =
+        \sup_{\lambda\in\sigma(A|_{\operatorname{Ran}P})}
+        |1-e^{-\tau\lambda}|
+        \le
+        1-e^{-\tau\Lambda_{\mathrm{coh}}}.
+\]
+This proves the first estimate. The second follows from
+\[
+        f-B_\tau f
+        =
+        Qf+(Pf-B_\tau f)
+\]
+and the triangle inequality.
+\end{proof}
+
+\begin{corollary}[Small-\(\tau\) sector correction]\label{cor:smalltau}
+Under \cref{ass:fpdata,ass:band},
+\[
+        \norm{Pf-B_\tau f}_{L^2}
+        \le
+        \tau\Lambda_{\mathrm{coh}}\norm{Pf}_{L^2}.
+\]
+\end{corollary}
+
+\begin{proof}
+Use \(1-e^{-x}\le x\) for \(x\ge0\).
+\end{proof}
+
+\begin{theorem}[Incoherent damping estimate]\label{thm:gap}
+Assume \cref{ass:fpdata}. Then
+\[
+        \norm{e^{-\tau A}Q}_{L^2\to L^2}
+        \le
+        e^{-\tau\lambda^\ast}.
+\]
+More generally, for \(s\ge0\),
+\[
+        \norm{A^{s/2}e^{-\tau A}Q}_{L^2\to L^2}
+        \le
+        \sup_{\lambda\ge\lambda^\ast}\lambda^{s/2}e^{-\tau\lambda}.
+\]
+\end{theorem}
+
+\begin{proof}
+On \(\operatorname{Ran}Q\), the spectral theorem and the gap assumption give
+\(\lambda\ge\lambda^\ast\). Therefore
+\[
+        \norm{e^{-\tau A}Q}
+        =
+        \sup_{\lambda\in\sigma(A|_{\operatorname{Ran}Q})}e^{-\tau\lambda}
+        \le e^{-\tau\lambda^\ast}.
+\]
+The higher estimate is identical after multiplying the spectral multiplier by
+\(\lambda^{s/2}\).
+\end{proof}
+
+\section{Recovery of the Dirac delta}
+
+The canonical MTT kernel is finite. The Dirac delta is recovered only under an idealizing
+limit.
+
+Let \(P_N:=\mathbf 1_{[0,\Lambda_N]}(A)\) be an increasing family of spectral projectors
+with \(\Lambda_N\to\infty\). Let
+\[
+        B_{N,\tau}:=P_Ne^{-\tau A}P_N.
+\]
+
+\begin{theorem}[Joint sharp limit]\label{thm:sharp}
+Let \(f\in C^\infty(X)\). Suppose \(\Lambda_N\to\infty\) and \(\tau_N\downarrow0\). Then
+\[
+        B_{N,\tau_N}f\to f
+\]
+in \(C^\infty(X)\). Equivalently, the kernels of \(B_{N,\tau_N}\) converge to
+\(\delta(x-y)\) in the distributional sense on \(X\times X\).
+\end{theorem}
+
+\begin{proof}
+Write
+\[
+        f-B_{N,\tau_N}f
+        =
+        (I-P_N)f
+        +
+        P_N(I-e^{-\tau_N A})P_Nf.
+\]
+The first term tends to zero in all Sobolev norms because spectral projectors converge
+strongly to the identity on smooth functions, and smooth spectral coefficients decay rapidly.
+For the second term, fix a Sobolev index \(s\). Choose \(M>s\). Since \(f\in C^\infty\),
+\[
+        \sum_n (1+\lambda_n)^M |\langle \phi_n,f\rangle|^2<\infty.
+\]
+For each fixed \(n\), \(1-e^{-\tau_N\lambda_n}\to0\). The summand is dominated by a
+multiple of \((1+\lambda_n)^M|\langle\phi_n,f\rangle|^2\) for \(N\) large enough and
+\(M\) chosen above \(s\). Dominated convergence gives convergence to zero in \(H^s\).
+Since \(s\) is arbitrary, Sobolev embedding gives convergence in \(C^\infty\). The
+distributional kernel statement is the usual kernel form of convergence to the identity.
+\end{proof}
+
+\begin{corollary}[Meaning of the delta limit]\label{cor:meaning}
+The Dirac delta is not the fixed-point kernel itself. It is the joint idealization in which:
+\begin{enumerate}[label=(\roman*)]
+\item coherent bandwidth becomes complete;
+\item proper-time width tends to zero;
+\item the incoherent complement is no longer discarded.
+\end{enumerate}
+In finite-capacity MTT, the physically selected object is \(K_{\mathrm{MTT}}\), not
+\(\delta\).
+\end{corollary}
+
+\section{Execution rule for downstream delta replacements}
+
+We can now state the execution rule.
+
+\begin{definition}[MTT delta replacement]\label{def:replacement}
+In a fixed-point regime with data \((A,P,\tau)\), every downstream occurrence of an
+identity/source/constraint delta that belongs to the same coherent chart is replaced by the
+canonical kernel
+\[
+        \delta(x-y)
+        \quad\rightsquigarrow\quad
+        K_{\mathrm{MTT}}(x,y;\tau)
+        =
+        \langle x|Pe^{-\tau A}P|y\rangle.
+\]
+\end{definition}
+
+This is not an arbitrary smoothing prescription. It is determined by the fixed-point data.
+
+\begin{theorem}[Uniqueness within the heat/proper-time class]\label{thm:heatunique}
+Among positive self-adjoint contraction semigroups generated by the fixed-point operator
+\(A\), the one-parameter family \(e^{-\tau A}\) is uniquely determined by \(A\). Therefore,
+once \(P\) and \(\tau\) are fixed, the operator \(B_\tau=Pe^{-\tau A}P\) is unique.
+\end{theorem}
+
+\begin{proof}
+By the spectral theorem, a nonnegative self-adjoint operator \(A\) determines a unique
+strongly continuous contraction semigroup \(T_\tau=e^{-\tau A}\). Conversely, the
+generator of such a semigroup is unique by the Hille--Yosida theorem. Therefore the
+proper-time filter associated with the fixed-point generator is fixed. Multiplying on the
+left and right by the fixed coherent projector \(P\) gives a unique \(B_\tau\).
+\end{proof}
+
+\begin{remark}
+The theorem does not say that no other regulator can be written down. It says that if the
+kernel is required to be the heat/proper-time filter generated by the same operator governing
+MTT stabilization, then the kernel is fixed by the fixed-point data.
+\end{remark}
+
+\section{Finite corrections in standard structures}
+
+\subsection{Green functions}
+
+Let \(L\) be a positive self-adjoint invertible operator commuting with \(A\) and \(P\). The
+ordinary point-source Green equation
+\[
+        LG=I
+\]
+has kernel form
+\[
+        LG(x,y)=\delta(x-y).
+\]
+The MTT coherent Green operator is
+\[
+        G_\tau^{\mathrm{MTT}}:=L^{-1}B_\tau.
+\]
+It satisfies
+\[
+        LG_\tau^{\mathrm{MTT}}=B_\tau,
+\]
+or in kernels,
+\[
+        L_xG_\tau^{\mathrm{MTT}}(x,y)=K_{\mathrm{MTT}}(x,y;\tau).
+\]
+
+\begin{proposition}[Green-function correction]\label{prop:green}
+Assume \(L^{-1}\) is bounded on the Hilbert space under consideration. Then
+\[
+        \norm{L^{-1}-G_\tau^{\mathrm{MTT}}}
+        \le
+        \norm{L^{-1}}\,
+        \norm{I-B_\tau}.
+\]
+On a coherent-band input \(f=Pf\),
+\[
+        \norm{L^{-1}f-G_\tau^{\mathrm{MTT}}f}
+        \le
+        \norm{L^{-1}}\,
+        \bigl(1-e^{-\tau\Lambda_{\mathrm{coh}}}\bigr)\norm{f}.
+\]
+\end{proposition}
+
+\begin{proof}
+The first estimate follows from
+\[
+        L^{-1}-L^{-1}B_\tau=L^{-1}(I-B_\tau).
+\]
+The second estimate uses \cref{thm:sector}.
+\end{proof}
+
+\subsection{Canonical commutators}
+
+The sharp canonical commutator
+\[
+        [\phi(x),\pi(y)]=i\hbar\delta(x-y)
+\]
+is replaced inside the coherent chart by
+\[
+        [\phi_{\mathrm{coh}}(x),\pi_{\mathrm{coh}}(y)]
+        =
+        i\hbar K_{\mathrm{MTT}}(x,y;\tau).
+\]
+The correction is controlled by the same sector error estimates. This is not loss of locality
+as arbitrary nonlocality; it is finite coherent-sector locality determined by \(A,P,\tau\).
+
+\subsection{Contact vertices}
+
+A local \(n\)-point contact vertex can be written schematically as
+\[
+        V_\delta^{(n)}(x_1,\ldots,x_n)
+        =
+        \int_X\prod_{j=1}^n \delta(x-x_j)\,\dd x.
+\]
+The fixed-point replacement is
+\[
+        V_{\mathrm{MTT}}^{(n)}(x_1,\ldots,x_n;\tau)
+        =
+        \int_X\prod_{j=1}^n K_{\mathrm{MTT}}(x,x_j;\tau)\,\dd x.
+\]
+Thus the contact interaction is not softened by an arbitrary profile; it is softened by the
+coherent kernel selected by the same fixed-point data.
+
+\subsection{Measurement effects}
+
+The distributional position effect
+\[
+        |x\rangle\langle x|
+\]
+is replaced by a finite coherent effect with kernel
+\[
+        E_x^{\mathrm{MTT}}(y,z;\tau)
+        =
+        K_{\mathrm{MTT}}(y,x;\tau)K_{\mathrm{MTT}}^\ast(z,x;\tau).
+\]
+The width of the measurement effect is therefore controlled by the proper-time/coherence scale
+and spectral structure of the fixed-point sector.
+
+\subsection{Noise kernels}
+
+A temporal fixed-point operator \(A_t\) with memory scale \(\tau\) selects the correlation
+kernel
+\[
+        C_{\mathrm{MTT}}(t,s)
+        =
+        \langle t|e^{-\tau A_t}|s\rangle
+\]
+rather than an exact white-noise delta. In Markov limits this may approach
+\[
+        D\delta(t-s),
+\]
+but the finite-memory kernel is the execution-level object.
+
+\section{Worked example: circle with massive operator}
+
+Let \(X=S^1\) with coordinate \(\theta\in[0,2\pi)\), and take
+\[
+        A_m=-\partial_\theta^2+m^2,\qquad m>0.
+\]
+The eigenfunctions are
+\[
+        \phi_n(\theta)=\frac{1}{\sqrt{2\pi}}e^{in\theta},
+        \qquad
+        \lambda_n=n^2+m^2.
+\]
+Let
+\[
+        P_N=\sum_{|n|\le N}|\phi_n\rangle\langle\phi_n|.
+\]
+Then
+\[
+        K_{N,\tau}^{\mathrm{MTT}}(\theta,\theta')
+        =
+        \frac{1}{2\pi}
+        \sum_{|n|\le N}
+        e^{-\tau(n^2+m^2)}e^{in(\theta-\theta')}.
+\]
+For fixed \(N\), this is a smooth finite kernel. For \(N\to\infty\), it becomes the heat
+kernel of \(A_m\):
+\[
+        K_{\infty,\tau}^{\mathrm{MTT}}(\theta,\theta')
+        =
+        e^{-\tau m^2}
+        \frac{1}{2\pi}
+        \sum_{n\in\bbZ}e^{-\tau n^2}e^{in(\theta-\theta')}.
+\]
+As \(\tau\downarrow0\), this tends distributionally to the periodic delta
+\[
+        \delta_{S^1}(\theta-\theta').
+\]
+
+The finite correction to a coherent-band identity is explicit:
+\[
+        \norm{P_Nf-B_{N,\tau}f}_{L^2}^2
+        =
+        \sum_{|n|\le N}
+        \left(1-e^{-\tau(n^2+m^2)}\right)^2|f_n|^2.
+\]
+Thus the correction is mode-resolved and directly computable from the fixed-point spectral
+data.
+
+\section{Programmatic consequence}
+
+The previous delta papers established the forward structural dictionary:
+\[
+        \text{finite kernel}\longrightarrow \delta.
+\]
+This paper supplies the fixed-point reverse direction:
+\[
+        (A,P,\tau,\lambda^\ast)
+        \longrightarrow
+        K_{\mathrm{MTT}}
+        \longrightarrow
+        \text{finite correction}.
+\]
+
+\begin{quote}
+\textbf{Execution principle.}
+In any admissible fixed-point chart, replace delta distributions not by arbitrary mollifiers,
+but by the projected heat/proper-time kernel selected by the fixed-point operator and
+coherent projector.
+\end{quote}
+
+This is the point at which the delta dictionary becomes predictive in principle. Once a
+sector supplies numerical or geometric data for \(A\), \(P\), \(\tau\), and \(\lambda^\ast\), the
+corrections to point sources, commutators, contact interactions, measurement effects, and
+noise kernels are fixed.
+
+\section{Conclusion}
+
+The central problem after the delta--projection dictionary was not whether finite kernels
+can converge to Dirac deltas. They can. The execution problem was whether MTT selects a
+specific finite kernel.
+
+In the fixed-point regime, the answer is yes. The fixed-point data determine
+\[
+        B_\tau=P e^{-\tau A}P
+\]
+and hence
+\[
+        K_{\mathrm{MTT}}(x,y;\tau)
+        =
+        \langle x|Pe^{-\tau A}P|y\rangle.
+\]
+This kernel is smooth for positive proper time, covariant under admissible re-encoding,
+identity-like on the coherent sector with explicit error bounds, suppresses incoherent modes
+by the spectral gap, and tends to the Dirac delta only under the idealizing limit of complete
+bandwidth and vanishing proper-time width.
+
+Thus the program is no longer merely:
+\[
+        \delta=\text{singular limit of some finite object}.
+\]
+It becomes:
+\[
+        \boxed{
+        \text{MTT fixed-point data select the finite object.}
+        }
+\]
+
+\begin{thebibliography}{9}
+
+\bibitem{Kato}
+T. Kato,
+\emph{Perturbation Theory for Linear Operators},
+Springer, 1995.
+
+\bibitem{ReedSimon}
+M. Reed and B. Simon,
+\emph{Methods of Modern Mathematical Physics I: Functional Analysis},
+Academic Press, 1980.
+
+\bibitem{Davies}
+E. B. Davies,
+\emph{Heat Kernels and Spectral Theory},
+Cambridge University Press, 1989.
+
+\bibitem{Taylor}
+M. E. Taylor,
+\emph{Partial Differential Equations II: Qualitative Studies of Linear Equations},
+Springer, 2011.
+
+\bibitem{HillePhillips}
+E. Hille and R. S. Phillips,
+\emph{Functional Analysis and Semi-Groups},
+American Mathematical Society, 1957.
+
+\end{thebibliography}
+
+\end{document}

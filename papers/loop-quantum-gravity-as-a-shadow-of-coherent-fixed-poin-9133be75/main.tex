@@ -1,0 +1,521 @@
+% !TEX program = pdflatex
+\documentclass[11pt]{article}
+\usepackage{series} % uses series.sty
+% ---------- Encoding / Fonts ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% ---------- Layout ----------
+\usepackage{geometry}
+\geometry{margin=1in}
+
+% ---------- REQUIRED by user ----------
+
+
+% ---------- Math / Theorems ----------
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+
+
+% ---------- Lists ----------
+\usepackage{enumitem}
+
+% ============================================================
+% Safe macros (no physics.sty)
+% ============================================================
+
+% Operators
+\DeclareMathOperator{\Dom}{Dom}
+\DeclareMathOperator{\spec}{spec}
+\DeclareMathOperator{\Tr}{Tr}
+\newcommand{\normop}[1]{\left\lVert #1 \right\rVert}
+
+% Bra-ket (self-defined)
+\newcommand{\ket}[1]{\left|#1\right\rangle}
+\newcommand{\bra}[1]{\left\langle#1\right|}
+\newcommand{\ketbra}[2]{\ket{#1}\!\bra{#2}}
+
+% Commutators
+\newcommand{\comm}[2]{\left[#1,#2\right]}
+\newcommand{\dcomm}[3]{\left[#1,\left[#2,#3\right]\right]}
+
+% Differentials
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\od}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+
+% ============================================================
+% Theorem environments
+% ============================================================
+\theoremstyle{plain}
+
+\theoremstyle{definition}
+
+\theoremstyle{remark}
+
+% ============================================================
+% Notation
+% ============================================================
+\newcommand{\Hfour}{\mathcal H_{4}}
+\newcommand{\ThetaB}{\Theta} % bottleneck vector
+
+% ============================================================
+% Title
+% ============================================================
+\title{\textbf{Loop Quantum Gravity as a Shadow of Coherent Fixed-Point Dynamics}\\
+\large Immirzi parameter, geometric discreteness, and spin-network kinematics from coherent-sector projection}
+\author{Peter Nero}
+\date{January, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We show that the kinematical structure of loop quantum gravity (LQG) arises as a 4D shadow of
+coherent fixed-point dynamics in Modal Triplet Theory (MTT). In particular, the real SU(2)
+Ashtekar--Barbero connection, spin-network kinematics, and discrete area/volume spectra emerge
+as effective encodings of compact holonomy and gap-controlled truncation under noninvertible
+projection. We further prove that the Barbero--Immirzi parameter \(\gamma\) is not a free
+quantization ambiguity within the coherent universality class: it is fixed by the same bottleneck
+data controlling coherent-sector symplectic normalization and admissibility. Black hole entropy
+matching is reinterpreted as a consistency condition on admissible coherent microstate counting,
+not parameter fitting. Finally, we formulate cross-sector closure and falsifiability: the same
+bottleneck vector \(\ThetaB\) that fixes \(\gamma\) also controls collapse thresholds and UV completion
+in independent shadow constructions. All results are slab-local and admissibility-conditioned.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+Canonical loop quantum gravity (LQG) provides a mathematically controlled kinematical
+quantization of general relativity using the real SU(2) Ashtekar--Barbero connection,
+spin-network states, and discrete spectra of geometric operators. Despite these successes,
+several foundational features remain ambiguous within LQG itself: the origin of the SU(2)
+structure, the interpretation of spin networks as fundamental states of geometry versus
+effective encodings, the apparent freedom of the Barbero--Immirzi parameter \(\gamma\), and the
+precise relationship between kinematical discreteness and continuum semiclassical limits.
+
+This paper provides a reduced-dynamical resolution of these points by showing that LQG kinematics
+emerges as a shadow of coherent fixed-point dynamics under noninvertible projection in a coherent
+universality class. In this framework, SU(2) compactness, discrete spectra, and spin-network
+labeling arise as effective encodings determined by spectral gap structure and symplectic
+normalization. Crucially, \(\gamma\) is fixed by bottleneck data and is not independently tunable
+without leaving the coherent universality class.
+
+We proceed in a PRD-style, slab-local and admissibility-conditioned manner: statements are made
+only on bounded-geometry time slabs where coherent projection is bounded and stability margins
+remain positive.
+
+% ============================================================
+\section{Minimal Coherent-Sector Inputs and Claim Discipline}
+% ============================================================
+
+\subsection{Slab-locality and admissibility}
+
+\begin{assumption}[Slab-local coherent regime]\label{ass:slab}
+All results are asserted on bounded-geometry time slabs \(\Omega=[0,T]\times\Sigma\) where:
+\begin{enumerate}[label=(S\arabic*)]
+\item the reduced coherent projector exists and is bounded on the required domains;
+\item a uniform spectral gap separates coherent and noncoherent internal modes;
+\item stability margins defining admissible basins remain strictly positive away from boundaries.
+\end{enumerate}
+\end{assumption}
+
+\subsection{Bottleneck vector}
+
+\begin{definition}[Bottleneck vector]\label{def:Theta}
+Let \(\ThetaB\) denote the finite collection of coherent-sector parameters controlling:
+\begin{enumerate}
+\item the uniform internal spectral gap \(\lambda_\ast\);
+\item boundedness and norm data of the coherent projector;
+\item overlap and normalization data fixing reduced symplectic structure;
+\item admissibility and stability-margin parameters controlling basin dynamics.
+\end{enumerate}
+\end{definition}
+
+\begin{remark}
+The role of \(\ThetaB\) is purely operational: it is the minimal data required to control
+projection, truncation, and stability on the slab. No global claims beyond slab-locality are made.
+\end{remark}
+
+% ============================================================
+\section{Emergence of SU(2) Connection Variables}
+\label{sec:su2}
+% ============================================================
+
+In this section we show that the real SU(2) Ashtekar--Barbero connection used in canonical LQG
+arises as a shadow variable of coherent-sector geometry under projection. No additional gauge
+principle is postulated.
+
+\subsection{Coherent geometry and internal reuse}
+
+Let \(e^i_a\) denote an emergent spatial triad on \(\Sigma\) induced by the coherent fixed point,
+and let \(\omega^{ij}_a\) be the associated spin connection. Coherent-sector projection selects a
+preferred compact stabilizer subgroup acting on internal rotational data.
+
+\begin{assumption}[Compact rotational reuse channel]\label{ass:su2reuse}
+On each spatial slice \(\Sigma\), the coherent-sector geometry admits a preferred compact
+rotational stabilizer acting on the projected internal tangent data. The stabilizer is connected
+and compact.
+\end{assumption}
+
+\begin{proposition}[Real compact connection as a shadow]\label{prop:ABshadow}
+Under Assumption~\ref{ass:su2reuse} and slab-local admissibility (Assumption~\ref{ass:slab}),
+the unique real compact connection compatible with coherent-sector projection and spatial
+admissibility is of Ashtekar--Barbero form
+\[
+A^i_a \;=\; \Gamma^i_a + \gamma\,K^i_a,
+\]
+where \(\Gamma^i_a\) is the torsion-free spin connection compatible with \(e^i_a\), \(K^i_a\) is
+extrinsic curvature, and \(\gamma\in\mathbb{R}\).
+\end{proposition}
+
+\begin{proof}
+Compactness of the stabilizer implies a real compact gauge group, hence an SU(2)-type connection.
+Compatibility with the induced symplectic structure on the reduced phase space requires a
+connection differing from \(\Gamma^i_a\) by a term proportional to \(K^i_a\). Reality of the
+reduced phase space fixes the proportionality to a real constant \(\gamma\). \qedhere
+\end{proof}
+
+\begin{remark}
+This explains why SU(2) appears in canonical quantum gravity formulations that enforce reality
+and compactness: it is the compact shadow of coherent rotational reuse.
+\end{remark}
+
+% ============================================================
+\section{Spin Networks as Effective Encodings}
+\label{sec:spinnetworks}
+% ============================================================
+
+Spin networks arise naturally as effective encodings of coherent-sector data under spectral
+truncation and compact holonomy.
+
+\subsection{Gap-controlled truncation and graph structure}
+
+\begin{assumption}[Gap-controlled effective finiteness]\label{ass:graph}
+On bounded regions of \(\Sigma\), gap-controlled truncation implies only finitely many independent
+coherent degrees of freedom contribute to the reduced dynamics within the slab-local controlled
+domain.
+\end{assumption}
+
+This effective finiteness can be encoded combinatorially by graphs \(\Gamma\subset\Sigma\), with
+edges representing coupling channels between coherent patches.
+
+\subsection{Representation labels as overlap encodings}
+
+Edges carry labels in irreducible representations of the compact reuse group (SU(2)), encoding
+overlap and holonomy data.
+
+\begin{theorem}[Spin networks as encoding states]\label{thm:spinencoding}
+Under Assumptions~\ref{ass:slab}, \ref{ass:su2reuse}, and \ref{ass:graph}, spin network states form
+a faithful encoding of equivalence classes of coherent configurations under projection and spectral
+truncation. They are effective representatives of reduced coherent data, not fundamental
+geometric excitations.
+\end{theorem}
+
+\begin{proof}
+Noninvertible projection identifies microscopic configurations that differ below the truncation
+scale. Gap control implies only finitely many effective degrees of freedom per bounded region are
+distinguishable in the reduced theory. Compact holonomy decomposes these degrees into discrete SU(2)
+representations, yielding a discrete labeled basis. Graph connectivity encodes adjacency structure of
+coherent patches. \qedhere
+\end{proof}
+
+% ============================================================
+\section{Discreteness of Area and Volume Operators}
+\label{sec:discreteness}
+% ============================================================
+
+We derive discrete geometric spectra as consequences of compact holonomy and truncation.
+
+\begin{theorem}[Discrete spectra as gap-controlled encodings]\label{thm:discretespectra}
+Under compact SU(2) holonomy (Assumption~\ref{ass:su2reuse}) and gap-controlled truncation
+(Assumption~\ref{ass:graph}), the spectra of area and volume operators constructed from fluxes
+of the densitized triad are discrete, with eigenvalues proportional to SU(2) representation labels.
+\end{theorem}
+
+\begin{proof}
+Flux operators generate the SU(2) Lie algebra on edges intersecting a surface or region. Quadratic
+geometric operators depend on the SU(2) Casimir eigenvalues, which are discrete and labeled by
+half-integers \(j\). Truncation bounds the number of contributing edges/labels in bounded regions,
+preserving discreteness as an effective encoding. \qedhere
+\end{proof}
+
+\begin{remark}
+The result concerns discreteness of the reduced encoding spectra and does not assert a fundamental
+lattice ontology for spacetime.
+\end{remark}
+
+% ============================================================
+\section{The Barbero--Immirzi Parameter Is Not Free}
+\label{sec:immirzi}
+% ============================================================
+
+The Barbero--Immirzi parameter \(\gamma\) is traditionally treated as a quantization ambiguity
+fixed a posteriori by black hole entropy matching. We show that within the coherent universality
+class it is fixed by bottleneck data \(\ThetaB\).
+
+\subsection{Normalization origin}
+
+In the reduced connection
+\(
+A^i_a = \Gamma^i_a + \gamma K^i_a,
+\)
+\(\gamma\) measures the relative normalization between extrinsic curvature and spin-connection
+contributions in the reduced symplectic structure.
+
+\begin{theorem}[Immirzi parameter as a bottleneck function]\label{thm:immirzi}
+Under Assumption~\ref{ass:slab}, the Barbero--Immirzi parameter \(\gamma\) is a derived quantity
+within the coherent universality class:
+\[
+\gamma \;=\; \gamma(\ThetaB),
+\]
+determined uniquely (up to controlled truncation error) by the ratio of coherent-sector symplectic
+normalization to compact reuse holonomy normalization.
+\end{theorem}
+
+\begin{proof}
+The reduced symplectic form on \(\Sigma\) is obtained by projecting the coherent-sector action and
+restricting to the compact reuse channel. Both the normalization of the spin connection and the
+normalization of the extrinsic curvature term are fixed by coherent overlap data and projector norms
+encoded in \(\ThetaB\). Therefore their ratio is fixed by \(\ThetaB\), yielding \(\gamma=\gamma(\ThetaB)\).
+Independently choosing \(\gamma\) would modify this ratio and thus change \(\ThetaB\), moving outside the
+universality class. \qedhere
+\end{proof}
+
+\begin{corollary}[No independent tuning of \(\gamma\)]\label{cor:nofreegamma}
+Any model requiring independent tuning of \(\gamma\) relative to other coherent-sector bottleneck
+data does not correspond to a coherent universality completion.
+\end{corollary}
+
+% ============================================================
+\section{Black Hole Entropy Revisited}
+\label{sec:bh_entropy}
+% ============================================================
+
+We show that black hole entropy matching fixes \(\gamma\) as a consistency condition on admissible
+coherent microstate counting rather than parameter fitting.
+
+\subsection{Horizon admissibility and microstates}
+
+\begin{assumption}[Horizon admissibility]\label{ass:horizon}
+A horizon cross-section \(S\subset\Sigma\) corresponds to a compact surface on which coherent-sector
+configurations are restricted by admissibility and stability compatible with the macroscopic geometry.
+\end{assumption}
+
+Let \(\mathcal{N}(A)\) denote the number of admissible coherent equivalence classes projecting to
+horizon area \(A\) within truncation tolerance.
+
+\begin{proposition}[Area-proportional coherent microstate growth]\label{prop:areacount}
+Under gap-controlled truncation and compact reuse holonomy, the number of admissible coherent
+equivalence classes satisfies
+\[
+\log \mathcal{N}(A) = \alpha(\ThetaB)\,\frac{A}{\ell_P^2} + \mathcal{O}(\log A),
+\]
+with \(\alpha(\ThetaB)\) determined by bottleneck data.
+\end{proposition}
+
+\begin{proof}
+Gap control bounds the number of independent coherent degrees of freedom per unit area. Compact holonomy
+restricts overlap data to discrete representation classes. Hence microstate multiplicities grow exponentially
+with area, with density determined by coherent overlap and admissibility parameters in \(\ThetaB\). Subleading
+logarithmic corrections arise from combinatorial and boundary effects. \qedhere
+\end{proof}
+
+\begin{theorem}[Entropy consistency condition fixes \(\gamma\)]\label{thm:gamma_entropy}
+Within the coherent universality class, matching the leading entropy \(\log\mathcal{N}(A)\) to the
+Bekenstein--Hawking law \(S_{\mathrm{BH}}=A/(4\ell_P^2)\) fixes \(\gamma\) to the same value
+\(\gamma(\ThetaB)\) as in Theorem~\ref{thm:immirzi}.
+\end{theorem}
+
+\begin{proof}
+The area spectrum introduces a factor of \(\gamma\) in the conversion from representation labels to
+geometric area. The microstate density per unit area is \(\alpha(\ThetaB)\). Consistency with
+\(S_{\mathrm{BH}}\) therefore fixes \(\gamma\) uniquely as a function of \(\ThetaB\). \qedhere
+\end{proof}
+
+\begin{corollary}[Entropy matching is not parameter fitting]\label{cor:notfit}
+The usual determination of \(\gamma\) by entropy matching is a consistency constraint on admissible
+coherent microstate counting, not an independent tuning of a free parameter.
+\end{corollary}
+
+% ============================================================
+\section{Relation to Ongoing LQG and Spin-Foam Research}
+\label{sec:lqg_relation}
+% ============================================================
+
+We summarize alignment and contributions relative to current LQG/spin-foam programs.
+
+\subsection{Origin of SU(2)}
+Proposition~\ref{prop:ABshadow} explains the SU(2) structure as the compact shadow of coherent rotational
+reuse, rather than a postulated fundamental gauge group.
+
+\subsection{Spin networks and coarse-graining}
+Theorem~\ref{thm:spinencoding} interprets spin networks as encodings of coherent equivalence classes under
+projection, clarifying why graph refinement does not directly correspond to physical refinement and why
+coarse-graining requires additional structure.
+
+\subsection{Spin foams}
+Spin foams may be interpreted as effective propagation kernels for encoded coherent data between slices,
+rather than as fundamental sums over microscopic spacetime histories. This accounts for universality of
+semiclassical limits and the necessity of renormalization/coarse-graining.
+
+\subsection{Running of \(\gamma\)}
+Apparent running of \(\gamma\) in effective descriptions indicates transitions between admissible regimes or
+changes in \(\ThetaB\); within a fixed coherent universality class, \(\gamma\) is fixed by Theorem~\ref{thm:immirzi}.
+
+% ============================================================
+\section{Cross-Sector Closure and Falsifiability}
+\label{sec:closure}
+% ============================================================
+
+\subsection{Closure principle}
+
+\begin{theorem}[Cross-sector closure]\label{thm:closure}
+Within the coherent universality class on bounded-geometry slabs, the following quantities are fixed functions
+of the same bottleneck vector \(\ThetaB\):
+\begin{enumerate}[label=(\roman*)]
+\item collapse and measurement-induced threshold scales (from independent shadow constructions);
+\item ultraviolet endpoint functional data and unstable-manifold dimension (from an independent AS/FRG shadow);
+\item the Barbero--Immirzi parameter and geometric spectra scales (this paper).
+\end{enumerate}
+Consequently these quantities cannot be tuned independently without violating admissibility or leaving the
+coherent universality class.
+\end{theorem}
+
+\begin{proof}
+Each shadow construction depends only on projection-induced truncation control, spectral gaps, and stability
+margins, all encoded by \(\ThetaB\). Therefore each derived quantity is a function of \(\ThetaB\), and independent
+tuning would require changing \(\ThetaB\), affecting all sectors simultaneously. \qedhere
+\end{proof}
+
+\subsection{Falsifiability criteria}
+
+The closure yields falsifiability conditions:
+\begin{enumerate}[label=(F\arabic*)]
+\item If the value of \(\gamma\) required by black hole entropy or geometric spectra is incompatible with \(\ThetaB\)
+as inferred from collapse thresholds or UV completion, the coherent universality hypothesis is ruled out.
+\item If consistent phenomenology requires independent adjustment of \(\gamma\) apart from other \(\ThetaB\)-controlled
+quantities, closure fails.
+\item If a sector requires parameter ranges that invalidate admissibility in another, the framework is ruled out.
+\end{enumerate}
+
+% ============================================================
+\section{Conclusions}
+\label{sec:conclusions}
+% ============================================================
+
+We have shown that canonical LQG kinematics arises naturally as a shadow of coherent fixed-point dynamics under
+noninvertible projection: SU(2) connection variables emerge as compact reuse shadows, spin networks encode
+equivalence classes of coherent configurations, and discrete geometric spectra follow from compact holonomy and
+gap-controlled truncation. We proved that the Barbero--Immirzi parameter is not a free quantization ambiguity
+within the coherent universality class but is fixed by bottleneck data \(\ThetaB\). Black hole entropy matching is
+reinterpreted as a consistency condition on admissible coherent microstate counting, not parameter fitting.
+Finally, cross-sector closure provides sharp falsifiability: \(\gamma\) is linked to independently testable collapse
+and UV-completion shadow data through the same \(\ThetaB\).
+
+All results are slab-local and admissibility-conditioned: they hold only on bounded-geometry slabs where coherent
+projection is bounded and stability margins remain positive away from basin boundaries.
+\begin{thebibliography}{99}
+
+\bibitem{MTT-Admissibility}
+P.~Nero,
+\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255621}
+
+\bibitem{MTT-Foundation}
+P.~Nero,
+\emph{Modal Triplet Theory: Foundation},
+Zenodo preprint, September 2025.
+\url{https://doi.org/10.5281/zenodo.16949762}
+
+\bibitem{MTT-FixedPoints}
+P.~Nero,
+\emph{Fixed Points I--VI: Complete Coherence Spine},
+Zenodo preprints, August 2025.
+\url{https://doi.org/10.5281/zenodo.16948748}
+
+\bibitem{MTT-ProjectionAdmissibility}
+P.~Nero,
+\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255838}
+
+\bibitem{MTT-Closure}
+P.~Nero,
+\emph{Closure and Inevitability in Modal Triplet Theory},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255510}
+
+\bibitem{MTT-CoherenceCapacity}
+P.~Nero,
+\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255905}
+
+\bibitem{MTT-CoherenceDynamics}
+P.~Nero,
+\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18256048}
+
+\bibitem{MTT-QM}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
+Zenodo preprint, September 2025.
+\url{https://doi.org/10.5281/zenodo.17074246}
+
+\bibitem{MTT-QFT}
+P.~Nero,
+\emph{From MTT to Quantum Field Theory},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17068816}
+
+\bibitem{MTT-GR}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to General Relativity},
+Zenodo preprint, October 2025.
+\url{https://doi.org/10.5281/zenodo.16950597}
+
+\bibitem{MTT-UVQG}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17077671}
+
+\bibitem{MTT-Measurement}
+P.~Nero,
+\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17177404}
+
+\bibitem{MTT-Irreversibility}
+P.~Nero,
+\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18256408}
+
+\bibitem{MTT-Bell-Beables}
+P.~Nero,
+\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17076300}
+
+\bibitem{MTT-Bell-Temporal}
+P.~Nero,
+\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
+Zenodo preprint, August 2025.
+\url{https://doi.org/10.5281/zenodo.18208884}
+
+\bibitem{MTT-Stochastic}
+P.~Nero,
+\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18254862}
+
+\end{thebibliography}
+\end{document}

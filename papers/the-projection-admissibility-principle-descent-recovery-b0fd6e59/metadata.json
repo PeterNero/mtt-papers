@@ -1,0 +1,91 @@
+{
+  "abstract": "We replace the former noninvertibility obstruction by a typed theory of projection, descent, recovery, and admissibility. For an upper evolution \\Phi_t, an initial reduction P_0, and a final reduction P_t, four different questions arise. A right section selects one compatible upper representative; a left decoder recovers the actual upper input; an autonomous reduced map exists exactly when upper evolution respects the initial equivalence classes; and an effective merger is noninjectivity of that reduced map. Noninjectivity of a cross-level projection does not forbid a right section. We prove the correct factor-through theorem, a valid no-right-section criterion for a genuinely contractive reduced self-map, a section-conditioning diagnostic, and locality descent for fiberwise coherent compression of a local operator net. Probability requires an upper measure and disintegration; entropy, irreversibility, and an arrow of time require additional structures. Applications to open systems, Wilsonian reduction, exterior gravity, and MTT are consequently reconstructions or conditional realizations rather than corollaries of noninjectivity alone.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18255838",
+    "created": "2026-01-15T11:08:25.600116+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18255839",
+    "files": [
+      {
+        "checksum": "md5:a6e591730a31f6d141670e495a73ff79",
+        "content_url": "https://zenodo.org/api/records/18255839/files/The_Projection__Admissibility_Principle__Structural_Constraints_on_Effective_Physical_Description%20(4).pdf/content",
+        "key": "The_Projection__Admissibility_Principle__Structural_Constraints_on_Effective_Physical_Description (4).pdf",
+        "size": 350529
+      }
+    ],
+    "id": "18255839",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18255839",
+    "resource_type": "publication",
+    "title": "The Projection\u2013Admissibility Principle: Structural Constraints on Effective Physical Description",
+    "updated": "2026-01-15T11:08:26.085801+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "acc359d7928deff1b576809ec51b5ea5026db097b0306da65ce828aef5f5245c",
+  "paper_id": "the-projection-admissibility-principle-descent-recovery-b0fd6e59",
+  "paper_md_sha256": "f7a2bb6e4fdce7bf1823c63ec8d37790db1c8fa15cfbd045ac617079c948eefa",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/PROJECTION_ADMISSIBILITY_V2_REVISION_AUDIT.md",
+    "revision_evidence_sha256": "bf0cf2b293e6d965442482adaa2dcc47c2efc533982417aae0ca7262b2fa9987",
+    "selected_revision": true,
+    "superseded_source_path": "3 Core Foundations/_work/The_Projection__Admissibility_Principle__Structural_Constraints_on_Effective_Physical_Description (1)"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 17536,
+      "path": "main.tex",
+      "sha256": "acc359d7928deff1b576809ec51b5ea5026db097b0306da65ce828aef5f5245c"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "3 Core Foundations/revised_tex_vnext/The_Projection__Admissibility_Principle__Descent__Recovery__and_Structural_Constraints_v2"
+  },
+  "source_tree_sha256": "1aad41bedce33011e1e13889520fb603ee58693dc6eed374499f15d45d4ed9ee",
+  "title": "The Projection\u2013Admissibility Principle Descent, Recovery, and Structural Constraints on Effective Description",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255838",
+      "created": "2026-01-15T11:08:25.600116+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18255839",
+      "files": [
+        {
+          "checksum": "md5:a6e591730a31f6d141670e495a73ff79",
+          "content_url": "https://zenodo.org/api/records/18255839/files/The_Projection__Admissibility_Principle__Structural_Constraints_on_Effective_Physical_Description%20(4).pdf/content",
+          "key": "The_Projection__Admissibility_Principle__Structural_Constraints_on_Effective_Physical_Description (4).pdf",
+          "size": 350529
+        }
+      ],
+      "id": "18255839",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18255839",
+      "resource_type": "publication",
+      "title": "The Projection\u2013Admissibility Principle: Structural Constraints on Effective Physical Description",
+      "updated": "2026-01-15T11:08:26.085801+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

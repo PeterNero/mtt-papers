@@ -1,0 +1,83 @@
+{
+  "abstract": "We give a proof-forward account of temporal Bell inequalities (Leggett\u2013Garg) in Modal Triplet Theory (MTT). We show: (i) any temporally factorized realist model satisfies the Leggett\u2013Garg bound; (ii) MTT generically violates temporal factorization because coherent histories are globally constrained by the coherence projector and fixed-point selection; (iii) nevertheless, operational no-retro-signaling holds (later measurement choices do not change earlier observable marginals); and (iv) therefore MTT reproduces the standard quantum Leggett\u2013Garg violations without retrocausal signaling and without abandoning realism of the underlying modal configuration. Spatial Bell nonlocality and temporal Bell violations are identified as two projections of the same global-consistency mechanism.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18208884",
+    "created": "2026-01-10T18:22:38.204820+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18208885",
+    "files": [
+      {
+        "checksum": "md5:dfeeaffc12a3ed70f7bfb5924ab5bf42",
+        "content_url": "https://zenodo.org/api/records/18208885/files/Temporal_Bell_Inequalities_and_Global_Consistency_in_Modal_Triplet_Theory%20(1).pdf/content",
+        "key": "Temporal_Bell_Inequalities_and_Global_Consistency_in_Modal_Triplet_Theory (1).pdf",
+        "size": 202952
+      }
+    ],
+    "id": "18208885",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-10",
+    "record_url": "https://zenodo.org/records/18208885",
+    "resource_type": "publication",
+    "title": "Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory",
+    "updated": "2026-01-10T18:22:38.702232+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "fbf9cb11f14918c433eb9a8ea778e4e27ff908ab7e99d3002bf9dbddd06f12ea",
+  "paper_id": "temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb",
+  "paper_md_sha256": "510e07e48dedbc47fa03c0b8759d733a598bcb6394c2be2041fe4cd6a704c9ca",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 21186,
+      "path": "main.tex",
+      "sha256": "fbf9cb11f14918c433eb9a8ea778e4e27ff908ab7e99d3002bf9dbddd06f12ea"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "9 Bell, Entanglement & Time/_work/Temporal_Bell_Inequalities_and_Global_Consistency_in_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "8fadd77b7e1fd73d125eac86d65b9564e6fd6fdfc2285d11eacbaef963330a19",
+  "title": "Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18208884",
+      "created": "2026-01-10T18:22:38.204820+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18208885",
+      "files": [
+        {
+          "checksum": "md5:dfeeaffc12a3ed70f7bfb5924ab5bf42",
+          "content_url": "https://zenodo.org/api/records/18208885/files/Temporal_Bell_Inequalities_and_Global_Consistency_in_Modal_Triplet_Theory%20(1).pdf/content",
+          "key": "Temporal_Bell_Inequalities_and_Global_Consistency_in_Modal_Triplet_Theory (1).pdf",
+          "size": 202952
+        }
+      ],
+      "id": "18208885",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-10",
+      "record_url": "https://zenodo.org/records/18208885",
+      "resource_type": "publication",
+      "title": "Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory",
+      "updated": "2026-01-10T18:22:38.702232+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "abstract": "Gauge theory contains an explicit version of the projection architecture developed in Modal Triplet Theory (MTT). The full field space \\mathcal A contains redundant representatives related by a gauge group \\mathcal G, while the physical configuration space is the quotient \\mathcal A/\\mathcal G. A gauge condition G[A]=0 is therefore not a physical law imposed on the quotient itself, but a local representative section of the quotient map. This paper develops the MTT interpretation of gauge fixing as admissible section selection. The gauge-fixing delta \\delta(G[A]) is identified as the singular zero-width limit of a representative-selection kernel, the Faddeev\u2013Popov determinant is the Jacobian of the projection from gauge-orbit coordinates to slice coordinates, ghost fields are quotient-measure bookkeeping variables, BRST cohomology is the algebraic implementation of admissible quotienting, and Gribov ambiguity is the failure of a global admissible section. The mathematical core is deliberately modest. We first prove a finite-dimensional slice formula showing that the Faddeev\u2013Popov determinant is exactly the transverse projection Jacobian for a local quotient. We then state the corresponding regularized infinite-dimensional functional identity under the usual formal assumptions of gauge-fixed path integration. Finally, we reinterpret these standard structures through the MTT triad: lens structure carries gauge redundancy, nil structure appears in sharp representative selection, and circle structure carries return/conservation bookkeeping. The result is a worked sequel to the delta-projection paper: gauge fixing becomes the cleanest example of a Dirac delta functioning as the singular shadow of admissible projection.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "unversioned",
+  "date": "April 2026",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "b0f05a0f5c023e0c7b332b337a39615a8e1220d78faa36bff956b5d6c9d283ca",
+  "paper_id": "gauge-fixing-as-admissible-section-selection-in-modal-t-459e029d",
+  "paper_md_sha256": "667bf54f842c06235e88cfbc2778cbcf2fa167c6770cc71716c2dec8532bdb56",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 22348,
+      "path": "gauge_fixing_admissible_section_selection_strengthened.tex",
+      "sha256": "b0f05a0f5c023e0c7b332b337a39615a8e1220d78faa36bff956b5d6c9d283ca"
+    },
+    {
+      "bytes": 22348,
+      "path": "main.tex",
+      "sha256": "b0f05a0f5c023e0c7b332b337a39615a8e1220d78faa36bff956b5d6c9d283ca"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "5 Dirac Delta/_work/Gauge_Fixing_as_Admissible_Section_Selection_in_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "00ff5953dc55a0da1c6274b728e248f553fbe03b1ff56e2fb66062cc19f93762",
+  "title": "Gauge Fixing as Admissible Section Selection in Modal Triplet Theory Faddeev\u2013Popov Determinants, Ghosts, BRST, and Gribov Ambiguity as Projection Geometry",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

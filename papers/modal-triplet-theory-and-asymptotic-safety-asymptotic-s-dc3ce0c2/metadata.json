@@ -1,0 +1,88 @@
+{
+  "abstract": "We establish a rigorous bridge between Modal Triplet Theory (MTT) and functional renormalization group (FRG) formulations of quantum gravity, clarifying the precise sense in which asymptotic safety (AS) arises as a controlled shadow of MTT\u2019s coherent sector. Working on a bounded-geometry time slab and within the coherent universality class, we define a background-covariant FRG effective average action \\Gamma_k and a discrete renormalization-group (RG) step map \\mathcal{R}_b:\\Gamma_k\\mapsto\\Gamma_{bk}. Using the spectral proper-time (SPT) Gaussian ultraviolet damping derived from the coherent projector, we prove: (i) existence of a UV endpoint functional \\Gamma_\\infty=\\lim_{k\\to\\infty}\\Gamma_k in a Banach space of analytic local plus entire form-factor actions equipped with a majorant-series norm; (ii) scheme stability of \\Gamma_\\infty under admissible regulator variations within the coherent universality class; and (iii) compactness of the RG-step linearization at \\Gamma_\\infty, yielding a finite-dimensional unstable manifold (the MTT-native analogue of finite relevant directions). As a corollary, fixed points observed in AS-style truncations are obtained as shadows of \\Gamma_\\infty under continuous truncation and canonical rescaling.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18261529",
+    "created": "2026-01-15T19:28:36.968659+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18261530",
+    "files": [
+      {
+        "checksum": "md5:16a7e7c0388dde30de3a6ed7c4b0bd23",
+        "content_url": "https://zenodo.org/api/records/18261530/files/Modal_Triplet_Theory_and_Asymptotic_Safety__Asymptotic_Safety_as_the_Controlled_FRG_Shadow_of_the_Coherent_Sector_UV_Endpoint%20(3).pdf/content",
+        "key": "Modal_Triplet_Theory_and_Asymptotic_Safety__Asymptotic_Safety_as_the_Controlled_FRG_Shadow_of_the_Coherent_Sector_UV_Endpoint (3).pdf",
+        "size": 349247
+      }
+    ],
+    "id": "18261530",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18261530",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory and Asymptotic Safety",
+    "updated": "2026-01-15T19:28:37.322349+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "21d659a087c42322508369e81095080a1e8ae4bd7399f4693ef329257886106d",
+  "paper_id": "modal-triplet-theory-and-asymptotic-safety-asymptotic-s-dc3ce0c2",
+  "paper_md_sha256": "9c2ad2245e422ce416c7b10e11ee8b87bfdd46016f7547833fdc4e5d18fa18cc",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 18856,
+      "path": "main.tex",
+      "sha256": "21d659a087c42322508369e81095080a1e8ae4bd7399f4693ef329257886106d"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "12 Quantum Gravity/_work/Modal_Triplet_Theory_and_Asymptotic_Safety__Asymptotic_Safety_as_the_Controlled_FRG_Shadow_of_the_Coherent_Sector_UV_Endpoint"
+  },
+  "source_tree_sha256": "f466f2640b0d9ed49d50098ae33e06ce64d36cab82b3a46f067a4ce09021b620",
+  "title": "Modal Triplet Theory and Asymptotic Safety Asymptotic Safety as the Controlled FRG Shadow of the Coherent-Sector UV Endpoint",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261529",
+      "created": "2026-01-15T19:28:36.968659+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18261530",
+      "files": [
+        {
+          "checksum": "md5:16a7e7c0388dde30de3a6ed7c4b0bd23",
+          "content_url": "https://zenodo.org/api/records/18261530/files/Modal_Triplet_Theory_and_Asymptotic_Safety__Asymptotic_Safety_as_the_Controlled_FRG_Shadow_of_the_Coherent_Sector_UV_Endpoint%20(3).pdf/content",
+          "key": "Modal_Triplet_Theory_and_Asymptotic_Safety__Asymptotic_Safety_as_the_Controlled_FRG_Shadow_of_the_Coherent_Sector_UV_Endpoint (3).pdf",
+          "size": 349247
+        }
+      ],
+      "id": "18261530",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18261530",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and Asymptotic Safety",
+      "updated": "2026-01-15T19:28:37.322349+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

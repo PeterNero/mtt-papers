@@ -1,0 +1,88 @@
+{
+  "abstract": "We give a complete, first\u2013principles derivation of nonrelativistic quantum mechanics from Modal Triplet Theory. Starting with the 10D tri\u2013bundle geometry and the fixed\u2013point (coherent) sector, we construct the observable map \\mathsf{P}=I\\circ\\Pi, the reduced symplectic/Hilbert structure, and\u2014crucially\u2014the self\u2013adjoint reduced Hamiltonian H_{\\mathrm{obs}} via closed, semibounded quadratic forms (KLMN/Friedrichs). Unitary dynamics U(t)=e^{-itH_{\\mathrm{obs}}/\\hbar} then follow by Stone\u2019s theorem. A constructive reconstruction theorem shows that for a broad Kato\u2013Rellich class, any Schr\u00f6dinger operator H_{\\mathrm{target}}=-\\frac{\\hbar^2}{2m}\\Delta+V(x) is realized exactly as H_{\\mathrm{obs}} by suitable (fixed) MTT background/boundary data. Measurement, the Born rule, and POVMs are obtained without postulates: modal re\u2013coherence defines exponential weights; a functional\u2013equation argument plus Gleason\u2013Busch yields the unique probability law \\mu_\\psi(P)=\\langle\\psi,P\\psi\\rangle; POVMs arise from a Naimark/Stinespring dilation realized within the coherent modal sector. We treat time\u2013dependent H_{\\mathrm{obs}}(t) (Kato propagators), uncertainty (via spectral theory for compressed generators), stationary\u2013phase correspondence to the Feynman kernel, and open systems (Lindblad) via a weak\u2013coupling limit of modal disturbances. The result is a self\u2013contained, referee\u2013proof derivation of QM from Modal Triplet Theory, with no hand\u2013waving and with every operator\u2013theoretic step made precise.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v3",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.17074246",
+    "created": "2026-01-15T19:01:37.731357+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18261329",
+    "files": [
+      {
+        "checksum": "md5:a0b422dd16db01fad06473e838260cdf",
+        "content_url": "https://zenodo.org/api/records/18261329/files/Modal_Triplet_Theory__From_MTT_to_Quantum_Mechanics_v3.pdf/content",
+        "key": "Modal_Triplet_Theory__From_MTT_to_Quantum_Mechanics_v3.pdf",
+        "size": 505491
+      }
+    ],
+    "id": "18261329",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18261329",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: From MTT to Quantum Mechanics",
+    "updated": "2026-01-15T19:01:38.171866+00:00",
+    "version": "v3.0"
+  },
+  "main_tex_sha256": "3a6fad37855b33e4d47b87d5116b0fde4deb851fee09568f15c1c7d06137730c",
+  "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+  "paper_md_sha256": "f6f43da9e2498456942f8cc43df78b37a6cd2fd526bd8bba84be7acf15f726e2",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 2638,
+      "path": "main.bib",
+      "sha256": "643ade6bb11c50582783e5459b33d1ca7f55a88211a1380af877421e94e18af6"
+    },
+    {
+      "bytes": 72767,
+      "path": "main.tex",
+      "sha256": "3a6fad37855b33e4d47b87d5116b0fde4deb851fee09568f15c1c7d06137730c"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "6 Quantum Mechanics/_work/Modal_Triplet_Theory__From_MTT_to_Quantum_Mechanics_v3"
+  },
+  "source_tree_sha256": "a266e8adf74c38d0c2e33505f01aa04de4e8f8feececbf18d07ca9cbcde26231",
+  "title": "Modal Triplet Theory: From MTT to Quantum Mechanics",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17074246",
+      "created": "2026-01-15T19:01:37.731357+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18261329",
+      "files": [
+        {
+          "checksum": "md5:a0b422dd16db01fad06473e838260cdf",
+          "content_url": "https://zenodo.org/api/records/18261329/files/Modal_Triplet_Theory__From_MTT_to_Quantum_Mechanics_v3.pdf/content",
+          "key": "Modal_Triplet_Theory__From_MTT_to_Quantum_Mechanics_v3.pdf",
+          "size": 505491
+        }
+      ],
+      "id": "18261329",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18261329",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: From MTT to Quantum Mechanics",
+      "updated": "2026-01-15T19:01:38.171866+00:00",
+      "version": "v3.0"
+    }
+  ]
+}

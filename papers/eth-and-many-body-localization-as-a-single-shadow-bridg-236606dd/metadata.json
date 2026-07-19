@@ -1,0 +1,88 @@
+{
+  "abstract": "Thermalization (ETH) and its failure (MBL) are usually treated as distinct dynamical phenomena. We present a Type-A 4D shadow-bridge result: within Modal Triplet Theory (MTT), both arise as regime limits of a single projection-induced basin mechanism controlled by the same coherent projector \\Pi, spectral gap \\lambda^\\ast, and stability margins. We make this precise by formalizing a coarse-graining channel \\mathcal{E}_\\varepsilon and a reduced CPTP dynamics \\{\\mathcal{T}_t\\} on density operators. Admissible basins are defined as invariant, contractive sets in an operational metric induced by a chosen observable family. We then prove: (i) dynamical ETH for local observables is equivalent to rapid mixing into a dominant thermal basin, in the sense of an induced basin-label process; (ii) MBL in the sense of stable memory and quasi-local integrals of motion is equivalent to basin fragmentation with suppressed inter-basin escape on a specified slab-time scaling; (iii) the ETH\u2013MBL crossover is governed by collapse of basin margins and admits a Kramers-type knee regime under explicit barrier assumptions; (iv) monitored circuit transitions are the same margin-collapse diagnostic driven by measurement rate. The results are slab-local and admissibility-conditioned, consistent with the MTT fixed-point spine, and yield falsifiable predictions for memory retention, echo protocols, entanglement scaling, and noise sensitivity.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18261959",
+    "created": "2026-01-15T20:20:07.276818+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18261960",
+    "files": [
+      {
+        "checksum": "md5:1915bc11f673a478777ae99c7e363615",
+        "content_url": "https://zenodo.org/api/records/18261960/files/ETH_and_Many__Body_Localization_as_a_Single_Shadow__Bridge_Problem%20(3).pdf/content",
+        "key": "ETH_and_Many__Body_Localization_as_a_Single_Shadow__Bridge_Problem (3).pdf",
+        "size": 279310
+      }
+    ],
+    "id": "18261960",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18261960",
+    "resource_type": "publication",
+    "title": "ETH and Many\u2013Body Localization as a Single Structural Problem",
+    "updated": "2026-01-15T20:20:07.669140+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "6eb191be1b8ff19409e3f5729ae89fe6b65267d99b49740e036dfe79f3a343e6",
+  "paper_id": "eth-and-many-body-localization-as-a-single-shadow-bridg-236606dd",
+  "paper_md_sha256": "1c10539584cdf0d784547dab5db31c01346b6b911da812b202609de34a5907fc",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 24836,
+      "path": "main.tex",
+      "sha256": "6eb191be1b8ff19409e3f5729ae89fe6b65267d99b49740e036dfe79f3a343e6"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/ETH_and_Many__Body_Localization_as_a_Single_Shadow__Bridge_Problem"
+  },
+  "source_tree_sha256": "57591de5dbc8de54c8438925029b7b53a5b8cdaceab05bbcff5ca86b4c32cdb3",
+  "title": "ETH and Many\u2013Body Localization as a Single Shadow\u2013Bridge Problem A rigorous projection\u2013based basin framework unifying ETH, MBL, and monitored transitions",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261959",
+      "created": "2026-01-15T20:20:07.276818+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18261960",
+      "files": [
+        {
+          "checksum": "md5:1915bc11f673a478777ae99c7e363615",
+          "content_url": "https://zenodo.org/api/records/18261960/files/ETH_and_Many__Body_Localization_as_a_Single_Shadow__Bridge_Problem%20(3).pdf/content",
+          "key": "ETH_and_Many__Body_Localization_as_a_Single_Shadow__Bridge_Problem (3).pdf",
+          "size": 279310
+        }
+      ],
+      "id": "18261960",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18261960",
+      "resource_type": "publication",
+      "title": "ETH and Many\u2013Body Localization as a Single Structural Problem",
+      "updated": "2026-01-15T20:20:07.669140+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

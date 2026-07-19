@@ -1,0 +1,493 @@
+---
+abstract: |
+  We show that gravity arises as a necessary encoding class once coherent kinematics is defined in the absence of a global reduced description. Building on the structural core of Modal Triplet Theory and its kinematic formulation, we demonstrate that stabilization of kinematic persistence across overlapping descriptions in the presence of circle obstructions requires additional bookkeeping structure. This structure enforces consistency of admissible continuation around closed overlap chains and couples all kinematic degrees of freedom universally.
+
+  Gravity is therefore not introduced as a fundamental interaction, dynamical law, or geometric axiom. It is identified as the unique encoding that resolves loop-dependent kinematic inconsistency by organizing overlap compatibility. Geometric notions such as connection, curvature, and metric structure appear as realizations of this encoding in suitable realization classes, but are not assumed at the structural level.
+
+  This paper establishes gravity as an inevitable response to the coexistence of local describability, kinematic persistence, and global obstruction, and prepares the ground for subsequent encoding-class papers on gauge structure and quantization.
+author:
+- Peter Nero
+current_version: v1.0
+date: January 2026
+generated_from_main_tex_sha256: b84404efbfe82ed0545cfe699795e7b70173f0e705ba6a0621ee61d963ad2d3d
+paper_id: the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38
+release_state: zenodo_released
+released_version: v1.0
+title: |
+  The Modal Triplet Theory Program B1:  
+  Gravity as Kinematic Consistency Encoding  
+  in the Modal Triplet Theory Program
+zenodo_doi: 10.5281/zenodo.18355020
+zenodo_record_id: 18355020
+zenodo_url: "https://zenodo.org/records/18355020"
+---
+
+# Introduction and Scope
+
+The preceding papers in the Modal Triplet Theory Program establish three key results. First, local reduced descriptions exist only on admissible domains and cannot be extended globally. Second, kinematics can be defined intrinsically in terms of admissible continuation across overlapping encodings, without assuming spacetime or dynamics. Third, failure of global coherence admits an exhaustive classification into three obstruction types: circle, lens, and nil.
+
+The purpose of the present paper is to analyze the structural consequences of *circle* obstructions for kinematics. Circle obstructions represent loop-dependent failure of identity persistence: transporting a coherent structure along two different closed chains of admissible overlaps yields inequivalent results. As shown previously, such obstructions are unavoidable in any system that admits local describability, kinematic persistence, and global obstruction.
+
+We show that the existence of circle obstructions forces the introduction of an additional encoding class whose sole role is to enforce consistency of kinematic continuation across overlapping descriptions. This encoding class is what is commonly identified as gravity. Crucially, gravity does not appear here as a force, a field, or a geometric background. It appears as bookkeeping: a structure that tracks and compensates for loop-dependent inconsistency in kinematic continuation.
+
+Throughout this paper, we adopt the following guiding principles:
+
+- Gravity is an *encoding*, not an interaction.
+
+- Geometry is a *realization* of that encoding, not its definition.
+
+- Universality of gravitational coupling follows from universality of kinematic persistence.
+
+- No dynamical equations are assumed or derived at the structural level.
+
+The results of this paper are therefore independent of any specific geometric or field-theoretic realization. They apply to all realization classes compatible with the structural core and kinematic framework of Modal Triplet Theory.
+
+<div class="remark">
+
+*Remark 1* (Position in the series). This paper depends only on the structural core, coherent kinematics, and the classification of obstruction types developed earlier in the series. It precedes papers on gauge structure, quantization, and unified encodings, and should be read before any realization-specific treatment of gravity or geometry.
+
+</div>
+
+# Circle Obstructions and the Need for Kinematic Bookkeeping
+
+In this section we show that coherent kinematics, as defined purely in terms of admissible continuation across overlapping encodings, is insufficient to ensure global consistency in the presence of circle obstructions. This insufficiency forces the introduction of an additional encoding whose sole role is to track and compensate for loop-dependent kinematic inconsistency.
+
+## Pure kinematics and path dependence
+
+Recall that in the kinematic framework, motion is defined as admissible continuation across chains of overlapping encodings, and worldlines are equivalence classes of such continuation chains.
+
+In the absence of circle obstructions, admissible continuation is path independent: transporting a coherent structure along different continuation chains between the same initial and final encodings yields equivalent results.
+
+However, when a circle obstruction is present, this path independence fails.
+
+<div class="definition">
+
+**Definition 2** (Kinematic path dependence). A kinematic system exhibits *path dependence* if there exist admissible continuation chains
+``` math
+\mathcal E_{\alpha_1} \to \mathcal E_{\alpha_2} \to \cdots \to \mathcal E_{\alpha_n}
+\quad \text{and} \quad
+\mathcal E_{\alpha_1} \to \mathcal E_{\beta_2} \to \cdots \to \mathcal E_{\alpha_n}
+```
+with the same endpoints such that the induced representations of a coherent structure at $`\mathcal E_{\alpha_n}`$ are not admissibly equivalent.
+
+</div>
+
+Path dependence is the operational manifestation of a circle obstruction in the kinematic setting.
+
+## Breakdown of kinematic identity
+
+Path dependence has immediate consequences for kinematic identity.
+
+<div class="lemma">
+
+**Lemma 3**. *In the presence of a circle obstruction, kinematic identity defined solely by admissible continuation is ill-defined globally.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Let two continuation chains with the same endpoints yield inequivalent representations of a coherent structure. Then there is no encoding-independent criterion for identifying the two endpoints as representing the same kinematic state. Therefore identity persistence depends on the path chosen, and global kinematic identity fails. ◻
+
+</div>
+
+This failure is structural and cannot be repaired by refining the admissible cover or by choosing different local representatives.
+
+## Why kinematics alone cannot resolve circle obstructions
+
+One might attempt to resolve path dependence by modifying the definition of admissible continuation or by restricting allowed continuation chains. Such attempts fail.
+
+<div class="lemma">
+
+**Lemma 4**. *No restriction of admissible continuation consistent with local describability can eliminate kinematic path dependence arising from circle obstructions.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Circle obstructions are invariant under admissible refinement and re-encoding. Any restriction that removes path dependence on one closed chain will introduce inconsistency on another, or will eliminate admissible continuation entirely, collapsing kinematics into nil. Therefore path dependence cannot be resolved within kinematics alone. ◻
+
+</div>
+
+Thus, pure kinematics is insufficient once circle obstructions exist.
+
+## Need for additional bookkeeping
+
+The failure of kinematic identity indicates the need for additional structure.
+
+<div class="remark">
+
+*Remark 5*. To restore consistency of kinematic persistence, the theory must track how representations change along different continuation chains and compensate for path dependence. This requires an additional encoding whose role is not to define motion, but to enforce consistency of motion.
+
+</div>
+
+This additional encoding must satisfy two requirements:
+
+1.  it must assign compensating data to continuation chains so that equivalent endpoints can be identified consistently;
+
+2.  it must act universally on all coherent structures, since kinematic persistence applies universally.
+
+## Universality of the required encoding
+
+Because circle obstructions arise from overlap structure rather than from particular kinds of coherent structure, the required bookkeeping must be universal.
+
+<div class="lemma">
+
+**Lemma 6**. *Any encoding that resolves kinematic path dependence must couple universally to all coherent structures admitting kinematic persistence.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Circle obstructions are properties of the encoding atlas and its overlaps, not of individual coherent structures. Therefore any compensating encoding must apply uniformly wherever admissible continuation is defined. ◻
+
+</div>
+
+This universality property distinguishes the required encoding from other encoding classes, such as those addressing lens or nil obstructions.
+
+## Preview: gravity as bookkeeping
+
+The observations above motivate the definition of a new encoding class.
+
+<div class="remark">
+
+*Remark 7*. The encoding required to resolve kinematic path dependence introduced by circle obstructions is precisely what is identified as gravity. Its function is to assign compensating data to continuation chains so that kinematic identity is well-defined despite loop-dependent inconsistency.
+
+</div>
+
+In the next section we define this *kinematic consistency encoding* abstractly and show that it is uniquely characterized by the requirements identified here.
+
+# The Kinematic Consistency Encoding
+
+We now introduce the encoding class required to resolve kinematic path dependence arising from circle obstructions. This encoding is defined abstractly and structurally, without assuming geometry, fields, or dynamical laws.
+
+<div class="definition">
+
+**Definition 8** (Path compensation). Let $`\Pi(N)`$ denote the path groupoid of the atlas nerve $`N`$. A *path compensation* is a functor
+``` math
+C : \Pi(N) \to \mathrm{Aut}(\mathcal E)
+```
+assigning to each admissible continuation path an automorphism of encoding data, such that $`C`$ is trivial on identity paths and respects path concatenation.
+
+</div>
+
+## Encoding role and requirements
+
+From the preceding section, the required encoding must satisfy the following properties:
+
+1.  **Consistency enforcement:** it must compensate for path-dependent changes in representation induced by admissible continuation around closed overlap chains;
+
+2.  **Universality:** it must apply uniformly to all coherent structures admitting kinematic persistence;
+
+3.  **Local definability:** it must be definable on admissible domains and respect overlap consistency;
+
+4.  **Non-redundancy:** it must not reduce to a lens-type redundancy or to a restriction of admissible continuation.
+
+Any encoding failing to satisfy these requirements cannot resolve circle obstructions without collapsing into lens or nil.
+
+## Definition of the kinematic consistency encoding
+
+We now define the encoding formally.
+
+<div class="definition">
+
+**Definition 9** (Kinematic consistency encoding). A *kinematic consistency encoding* is an admissible encoding class that assigns to each admissible continuation chain additional compensating data such that:
+
+1.  for any two admissible continuation chains with the same endpoints, the combined effect of continuation and compensation yields admissibly equivalent representations;
+
+2.  compensation is trivial on contractible continuation chains and nontrivial precisely when a circle obstruction is present;
+
+3.  compensation respects overlap consistency and admissible re-encoding.
+
+</div>
+
+The compensating data associated with this encoding do not represent new coherent structures; they encode consistency conditions on continuation.
+
+<div class="remark">
+
+*Remark 10*. Lens redundancy acts fiberwise and does not alter transport invariants on closed paths. By contrast, kinematic consistency compensation acts on continuation paths and changes loop transport data. The two structures therefore resolve distinct obstruction types and are not interchangeable.
+
+</div>
+
+## Resolution of path dependence
+
+The primary function of the kinematic consistency encoding is to restore path-independent kinematic identity.
+
+<div id="thm:necessity-bookkeeping" class="theorem">
+
+**Theorem 11** (Necessity of kinematic consistency bookkeeping). *Suppose a theory admits local describability, kinematic persistence, and circle obstructions. If kinematic path dependence is resolved by any admissible modification of the descriptive framework, then that modification must introduce a compensating structure assigning data to continuation paths in the atlas nerve such that:*
+
+1.  *compensations compose functorially along path concatenation;*
+
+2.  *compensations are trivial on contractible paths;*
+
+3.  *compensations cancel loop-dependent discrepancies on closed paths.*
+
+*Any such compensating structure is equivalent, up to admissible re-encoding, to a kinematic consistency encoding.*
+
+</div>
+
+<div class="corollary">
+
+**Corollary 12** (Resolution of kinematic path dependence). *Kinematic path dependence induced by circle obstructions is resolved if and only if a kinematic consistency encoding (or an admissibly equivalent encoding) is introduced.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* (*If*) Given a kinematic consistency encoding, compensating data assigned to continuation chains ensure that the net effect of transport around any closed chain is admissibly equivalent to the identity, restoring path-independent identification of endpoints.
+
+(*Only if*) In the absence of such an encoding, path-dependent inequivalence of endpoints persists by definition of circle obstruction. No modification of pure kinematics suffices, as shown previously. Therefore a kinematic consistency encoding is necessary. ◻
+
+</div>
+
+## Uniqueness up to admissible equivalence
+
+We now show that the kinematic consistency encoding is unique in its role.
+
+<div class="theorem">
+
+**Theorem 13** (Uniqueness of the kinematic consistency encoding). *Any admissible encoding that resolves kinematic path dependence induced by circle obstructions is equivalent, up to admissible re-encoding, to a kinematic consistency encoding.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Let $`\mathcal G`$ be an admissible encoding resolving path dependence. By universality, $`\mathcal G`$ assigns compensating data to all continuation chains. By local definability and overlap consistency, this data must compose consistently on overlaps. By non-redundancy, it cannot be absorbed into local representative choice. Therefore $`\mathcal G`$ satisfies the defining properties of a kinematic consistency encoding and differs from any other such encoding only by admissible re-encoding. ◻
+
+</div>
+
+## Gravity as encoding
+
+We are now in a position to identify gravity within the MTT framework.
+
+<div class="remark">
+
+*Remark 14* (Gravity as encoding). The kinematic consistency encoding defined above is what is conventionally identified as gravity. In Modal Triplet Theory, gravity is not a force or a dynamical field, but the unique encoding that enforces consistency of kinematic persistence in the presence of circle obstructions.
+
+</div>
+
+This identification is structural and does not depend on any particular realization.
+
+## No dynamical assumptions
+
+We emphasize that no equations of motion or dynamical laws have been introduced.
+
+<div class="remark">
+
+*Remark 15*. The kinematic consistency encoding specifies *what* bookkeeping is required to resolve path dependence, not *how* that bookkeeping evolves. Dynamical equations, when present, arise only in specific realization classes and are not part of the encoding definition.
+
+</div>
+
+## Preview: geometric realizations
+
+In the next section we show that, in realization classes admitting smooth structure, the kinematic consistency encoding naturally takes the form of geometric data such as connections and curvature. These structures will be shown to be realizations of the encoding defined here, not its definition.
+
+# Geometric Realizations of the Kinematic Consistency Encoding
+
+In this section we show how the kinematic consistency encoding introduced above is realized in classes of models admitting smooth structure. Geometry appears here not as a foundational assumption, but as the minimal mathematical framework capable of implementing the compensating data required to resolve kinematic path dependence.
+
+## Realization assumptions
+
+We explicitly restrict attention to realization classes in which smooth structures are available.
+
+<div id="ass:smooth-realization" class="assumption">
+
+**Assumption 16** (Smooth realization class). Assume that admissible encodings admit realizations on smooth manifolds such that:
+
+1.  admissible domains are represented by smooth coordinate charts;
+
+2.  admissible re-encodings on overlaps are smooth transition maps;
+
+3.  admissible continuation chains admit smooth refinement.
+
+</div>
+
+This assumption does not constrain the structural results of the previous sections; it specifies only the realization class in which geometric objects can be meaningfully defined.
+
+## Transition data and bundle structure
+
+We now show that overlap consistency and compensating data naturally organize into bundle structure.
+
+<div id="thm:bundle-realization" class="theorem">
+
+**Theorem 17** (Bundle realization of consistency encoding). *Under Assumption <a href="#ass:smooth-realization" data-reference-type="ref" data-reference="ass:smooth-realization">16</a>, the transition data associated with admissible re-encodings and kinematic consistency compensation define a principal bundle over each admissible domain, unique up to admissible equivalence.*
+
+</div>
+
+<div class="remark">
+
+*Remark 18* (Cocycle versus curvature). Overlap consistency ensures that transition maps satisfy the Čech cocycle condition and therefore define a principal bundle. Circle obstructions do not correspond to failure of the cocycle condition, but to failure of flatness of the associated transport structure. The role of the kinematic consistency encoding is therefore not to repair the bundle cocycle, but to introduce a connection whose curvature encodes the circle obstruction as nontrivial holonomy.
+
+</div>
+
+## Connections as realization of compensating data
+
+We now identify the geometric object that realizes the compensating data of the kinematic consistency encoding.
+
+<div id="thm:connection-realization" class="theorem">
+
+**Theorem 19** (Connection realization). *In a smooth realization class, the compensating data of the kinematic consistency encoding is realized by a connection on the principal bundle defined in Theorem <a href="#thm:bundle-realization" data-reference-type="ref" data-reference="thm:bundle-realization">17</a>.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Kinematic compensation assigns data to infinitesimal continuation segments such that path-dependent discrepancies cancel on closed loops. In a smooth setting, this is equivalent to specifying parallel transport rules along infinitesimal paths.
+
+The unique structure implementing infinitesimal parallel transport compatible with bundle transition data is a connection. Therefore the compensating data is realized by a connection on the principal bundle. ◻
+
+</div>
+
+## Curvature as circle obstruction
+
+We now show that curvature is the geometric manifestation of circle obstruction.
+
+<div id="thm:curvature-circle" class="theorem">
+
+**Theorem 20** (Curvature realization of circle). *In a smooth realization class, the curvature of the connection associated with the kinematic consistency encoding vanishes if and only if no circle obstruction is present.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* If the curvature vanishes, parallel transport is path independent on contractible loops, and no circle obstruction exists. Conversely, if a circle obstruction is present, path-dependent transport persists, which is detected infinitesimally by nonvanishing curvature. This equivalence is standard in the theory of connections and holonomy. ◻
+
+</div>
+
+Thus, curvature is not an additional postulate; it is the realization of the structural circle invariant.
+
+## Metric structure as secondary
+
+We emphasize that metric structure is not required at the encoding level.
+
+<div class="remark">
+
+*Remark 21*. The kinematic consistency encoding requires only parallel transport and holonomy. Metric structure, when present, serves to compare magnitudes or define action functionals, but is not required to define or resolve circle obstructions.
+
+</div>
+
+Metrics therefore appear only in further specialization of realization classes, not as part of the definition of gravity.
+
+## Universality of geometric coupling
+
+We now recover the universal coupling property of gravity.
+
+<div id="thm:universal-coupling" class="theorem">
+
+**Theorem 22** (Universality of coupling). *In any smooth realization of the kinematic consistency encoding, the associated geometric structures couple universally to all coherent structures admitting kinematic persistence.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* By definition, the kinematic consistency encoding applies to all admissible continuation chains. Therefore the associated connection and curvature affect parallel transport of all coherent structures equally. No encoding-relative charge or selection can screen this coupling. ◻
+
+</div>
+
+This universality is structural rather than dynamical.
+
+## Summary
+
+In smooth realization classes, the kinematic consistency encoding is realized as bundle geometry equipped with a connection whose curvature encodes circle obstructions. Geometry therefore appears as bookkeeping required to stabilize kinematic identity under continuation, not as a foundational input.
+
+# Relation to Causal Structure and Horizons
+
+In this section we connect the kinematic consistency encoding to the causal structure derived in coherent kinematics. We show that gravity, understood as bookkeeping of kinematic consistency, is required to stabilize causal cones, null boundaries, and horizons under refinement.
+
+## Causal cones under admissible continuation
+
+Recall from the kinematic framework that admissible continuation induces a causal partial order on encodings and worldlines, with associated causal cones.
+
+In the absence of circle obstructions, causal cones are path independent and stable under refinement. However, when circle obstructions are present, causal relations themselves become path dependent.
+
+<div class="lemma">
+
+**Lemma 23**. *In the presence of a circle obstruction, causal precedence defined purely by admissible continuation is path dependent.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* A circle obstruction implies the existence of two admissible continuation chains with the same endpoints but inequivalent induced representations. Since causal precedence is defined in terms of admissible continuation, its evaluation depends on the continuation path chosen. Therefore causal relations are not invariant under refinement. By the definition of worldline equivalence in the coherent kinematics framework, causal precedence is defined in terms of admissible continuation yielding equivalent endpoint representations, not merely the existence of any path. ◻
+
+</div>
+
+This instability is incompatible with a consistent notion of causal structure.
+
+## Stabilization of causal structure
+
+We now show that the kinematic consistency encoding stabilizes causal relations.
+
+<div id="thm:causal-stabilization" class="theorem">
+
+**Theorem 24** (Causal stabilization). *In the presence of circle obstructions, causal cones and null boundaries are well-defined and path independent if and only if the kinematic consistency encoding is introduced.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* (*If*) The compensating data provided by the kinematic consistency encoding ensures that continuation along different paths yields admissibly equivalent results. Therefore causal precedence and null/timelike classification are independent of the chosen continuation chain.
+
+(*Only if*) Without compensating data, path-dependent continuation persists by definition of circle obstruction, and causal relations depend on the path chosen. Thus causal structure cannot be stabilized. ◻
+
+</div>
+
+## Null boundaries and geometric realization
+
+Null boundaries identified in coherent kinematics correspond to minimal admissible continuation.
+
+<div class="remark">
+
+*Remark 25*. In smooth realizations, stabilization of null boundaries by the kinematic consistency encoding corresponds to the emergence of null hypersurfaces with well-defined geometric properties. This correspondence is realizational rather than definitional.
+
+</div>
+
+Thus, structures commonly identified as light cones arise as stabilized kinematic boundaries.
+
+## Horizons and termination
+
+We now examine the relation between gravity and kinematic horizons.
+
+<div id="thm:horizon-stabilization" class="theorem">
+
+**Theorem 26** (Horizon stabilization). *In the presence of circle obstructions, the location and persistence of kinematic horizons are invariant under refinement if and only if the kinematic consistency encoding is present.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Horizons are boundaries of admissible continuation. Without compensating data, the position of such boundaries depends on the continuation path and refinement choice. With the kinematic consistency encoding, admissible continuation is path independent up to equivalence, and horizon boundaries are therefore stable features of the kinematic structure. ◻
+
+</div>
+
+This shows that gravity stabilizes not only motion but also the termination of motion.
+
+## Irreversibility and gravitational bookkeeping
+
+We revisit irreversibility in the presence of gravity-as-encoding.
+
+<div class="remark">
+
+*Remark 27*. Irreversibility derived kinematically remains irreversible under the introduction of the kinematic consistency encoding. Gravity stabilizes irreversible structure but does not eliminate it. This explains why gravitational dynamics respects but does not reverse the arrow of kinematic irreversibility.
+
+</div>
+
+## Preview: dynamical realizations
+
+The present paper has treated gravity purely as an encoding enforcing kinematic consistency. In subsequent realization papers, one may introduce action principles or dynamical equations governing the evolution of the geometric data. Such dynamics are not required to define gravity as an encoding and are therefore logically downstream of the present analysis.
+
+# Summary and Outlook
+
+In this paper we have shown that gravity arises as a necessary encoding class once coherent kinematics is defined in the absence of global reduced description. Starting from the structural core of Modal Triplet Theory and its kinematic formulation, we demonstrated that circle obstructions introduce unavoidable path dependence in admissible continuation. Pure kinematics is insufficient to resolve this inconsistency.
+
+We proved that resolution of kinematic path dependence requires the introduction of an additional encoding whose sole role is to enforce consistency of identity persistence across overlapping descriptions. This encoding is uniquely characterized by universality, non-redundancy, and local definability. Within the MTT framework, this encoding is identified as gravity.
+
+Crucially, gravity is not introduced here as a force, a field, or a geometric axiom. It is defined as bookkeeping: an encoding that compensates for loop-dependent kinematic inconsistency. In realization classes admitting smooth structure, this bookkeeping is realized as bundle geometry with connection and curvature, but such geometric structures are consequences of the encoding rather than its definition.
+
+We further showed that gravity stabilizes causal structure derived from coherent kinematics. Causal cones, null boundaries, and horizons become invariant under refinement only when the kinematic consistency encoding is present. Gravity therefore couples universally to all coherent structures admitting kinematic persistence, not because of an interaction postulate, but because kinematics itself is universal.
+
+The results of this paper complete the identification of gravity within the Modal Triplet Theory Program. Together with the prior classification of circle, lens, and nil obstructions, they establish gravity as the unique response to loop-dependent failure of global coherence.
+
+Subsequent papers in the series develop the remaining encoding classes forced by structural obstructions. Gauge structure is treated as a redundancy encoding addressing lens obstructions, while quantization is treated as a discrete constraint encoding associated with nil and topological termination. Unified encoding frameworks arise when multiple obstruction types are resolved simultaneously. Separate realization papers introduce dynamics and explicit geometric models without altering the structural conclusions established here.
+
+In this way, gravity appears not as a fundamental ingredient of the theory, but as an inevitable encoding response to the coexistence of local describability, kinematic persistence, and global obstruction.

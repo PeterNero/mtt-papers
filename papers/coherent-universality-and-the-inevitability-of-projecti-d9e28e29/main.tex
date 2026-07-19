@@ -1,0 +1,471 @@
+% !TEX program = pdflatex
+\documentclass[11pt]{article}
+% ---------- REQUIRED ----------
+\usepackage{series} % required by user
+
+% ---------- Encoding / Fonts ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% ---------- Layout ----------
+\usepackage{geometry}
+\geometry{margin=1in}
+
+
+
+% ---------- Math / Theorems ----------
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+
+
+% ---------- Lists ----------
+\usepackage{enumitem}
+
+% ============================================================
+% Safe macros (no physics.sty)
+% ============================================================
+
+\DeclareMathOperator{\spec}{spec}
+
+\newcommand{\normop}[1]{\left\lVert #1 \right\rVert}
+
+% ============================================================
+% Theorem environments
+% ============================================================
+\theoremstyle{plain}
+
+\theoremstyle{definition}
+
+\theoremstyle{remark}
+
+% ============================================================
+% Title
+% ============================================================
+\title{\textbf{Coherent Universality and the Inevitability of Projection-Based Quantum Theories}\\
+\large A structural classification of viable measurement, spacetime, and matter frameworks}
+\author{Peter Nero}
+\date{January, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present a structural classification result for quantum theories capable of
+reproducing irreversible measurement, stable classical outcomes, relativistic
+locality, finite predictivity, and observed matter structure. Starting from
+minimal empirical requirements rather than model-specific assumptions, we derive
+a sequence of inevitability theorems: effective noninvertible projection,
+admissible basins with finite stability margins, smooth spectral suppression of
+ultraviolet modes, discrete selection events at the encoding level, and
+topology-driven constraints on matter representations and operators are all
+forced. These conditions define a coherent universality class. We show that all
+successful existing approaches—collapse models, measurement-induced transitions,
+asymptotic safety, loop quantum gravity, causal set theory, and noncommutative
+geometry—implement partial shadows of this class, while structurally distinct
+alternatives fail one or more necessary conditions. Modal Triplet Theory provides
+a minimal explicit realization of the class, but the classification result does
+not depend on MTT-specific constructions. The apparent plurality of quantum
+gravity and measurement theories is therefore illusory: viable frameworks are
+constrained to a single universality class characterized by projection,
+admissibility, and spectral truncation.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Introduction: The False Plurality of Quantum Frameworks}
+% ============================================================
+
+Modern theoretical physics offers a wide range of approaches to quantum
+measurement, spacetime structure, ultraviolet completion, and matter
+organization. These include objective collapse models, decoherence-based
+accounts, asymptotic safety, loop quantum gravity, causal set theory,
+noncommutative geometry, and effective field theory extensions.
+
+Despite their apparent diversity, successful approaches repeatedly reproduce
+the same structural features: irreversible measurement with stable records,
+discrete events without a fundamental spacetime lattice, ultraviolet softening
+with finite predictivity, and anomaly-free, charge-quantized matter sectors.
+
+This suggests that these features are not optional modeling choices but forced by
+the combination of empirical requirements. In this paper we show that this is
+indeed the case.
+
+% ============================================================
+\section{Minimal Empirical Requirements}
+% ============================================================
+
+We isolate empirical facts only, without interpretive commitments.
+
+\begin{assumption}[Measurement irreversibility]\label{ass:measurement}
+Any viable theory must reproduce:
+\begin{enumerate}[label=(M\arabic*)]
+\item irreversible measurement outcomes at the effective level;
+\item stability of macroscopic records;
+\item reproducibility of outcomes under repeated measurement.
+\end{enumerate}
+\end{assumption}
+
+\begin{assumption}[Predictivity and locality]\label{ass:predictivity}
+A viable theory must admit finite predictivity at accessible energies and respect
+relativistic locality and Lorentz covariance at least statistically.
+\end{assumption}
+
+\begin{assumption}[Observed matter structure]\label{ass:matter}
+A viable theory must reproduce:
+\begin{enumerate}[label=(Q\arabic*)]
+\item chiral fermions with gauge interactions;
+\item anomaly-free representations;
+\item quantized charges with observed fractional values;
+\item absence or extreme suppression of rapid baryon and lepton number violation.
+\end{enumerate}
+\end{assumption}
+
+% ============================================================
+\section{Necessity of Effective Noninvertible Projection}
+\label{sec:projection}
+% ============================================================
+
+\begin{theorem}[Necessity of effective noninvertible projection]
+\label{thm:projection}
+Let an effective physical description be closed under physically admissible
+operations. Then any theory satisfying Assumption~\ref{ass:measurement} must
+implement an effectively noninvertible projection at the level of observable
+dynamics.
+\end{theorem}
+
+\begin{proof}
+Assume the effective dynamics is invertible and that the description is closed
+under admissible operations. Then for any effective evolution map there exists an
+inverse map that is also admissible.
+
+Operational irreversibility requires that no physically admissible protocol
+restores a pre-measurement state together with its macroscopic record. If the
+effective dynamics were invertible within the admissible class, such a protocol
+would exist, contradicting record stability and irreversibility. Therefore
+irreversibility at the effective level requires noninvertible projection.
+\qedhere
+\end{proof}
+
+\begin{remark}
+This statement does not deny microscopic unitarity. It asserts that any closed
+effective description reproducing irreversible measurement must incorporate
+coarse-graining or projection that is noninvertible within the admissible
+operational class.
+\end{remark}
+
+% ============================================================
+\section{Necessity of Admissible Basins}
+\label{sec:basins}
+% ============================================================
+
+\begin{theorem}[Necessity of admissible basins]
+\label{thm:basins}
+Any theory satisfying Assumptions~\ref{ass:measurement} and
+\ref{ass:predictivity} must admit dynamically stable basins with finite stability
+margins in its projected state space.
+\end{theorem}
+
+\begin{proof}
+Without stable basins, arbitrarily small perturbations would destabilize
+macroscopic outcomes, violating record stability and reproducibility. Linear
+decoherence suppresses interference but does not select stable outcomes. Finite
+stability margins are therefore required.
+\qedhere
+\end{proof}
+
+\begin{corollary}
+Outcome transitions must exhibit threshold or knee behavior as control parameters
+cross basin boundaries.
+\end{corollary}
+
+% ============================================================
+\section{Equivalence-Class Necessity of Spectral Suppression}
+\label{sec:spectral}
+% ============================================================
+
+\begin{theorem}[Equivalence-class necessity of spectral suppression]
+\label{thm:spectral_truncation}
+Any theory satisfying locality, Lorentz covariance, and
+Assumption~\ref{ass:predictivity} must implement an effective ultraviolet
+suppression mechanism whose induced propagator or kernel belongs to the
+equivalence class of smooth spectral suppression (e.g.\ proper-time damping or
+complete Bernstein/Stieltjes form).
+\end{theorem}
+
+\begin{proof}
+Finite predictivity requires suppression of ultraviolet contributions. Hard
+cutoffs violate Lorentz covariance, while generic higher-derivative completions
+introduce ghosts or infinite parameter freedom. Known viable mechanisms—such as
+asymptotic safety fixed-point behavior, string modular invariance, and entire
+form-factor gravity—differ in implementation but induce equivalent smooth
+spectral suppression at the level of effective kernels. \qedhere
+\end{proof}
+
+% ============================================================
+\section{Inevitability of Discrete Selection Events}
+\label{sec:events}
+% ============================================================
+
+\begin{definition}[Selection event]
+A selection event is the irreversible transition of a projected trajectory
+between admissible basins.
+\end{definition}
+
+\begin{theorem}[Discrete event inevitability (effective level)]
+\label{thm:events}
+Projection with admissible basin structure necessarily produces discrete
+selection events at the resolution scale implied by truncation tolerance. These
+events are discrete in the effective encoding, though they may correspond to
+extended or smeared regions in the underlying microscopic description.
+\end{theorem}
+
+\begin{proof}
+Basins are separated by finite margins. Transitions occur only when admissibility
+fails within the resolution set by truncation tolerance. At this effective level,
+events are isolated and countable. \qedhere
+\end{proof}
+
+\begin{corollary}
+The resulting effective event structure is locally finite and partially ordered,
+recovering causal-set–like descriptions without postulating fundamental pointlike
+discreteness.
+\end{corollary}
+
+% ============================================================
+\section{Inevitability of Standard-Model-Like Matter Structure}
+\label{sec:matter}
+% ============================================================
+
+\begin{theorem}[Anomaly freedom inevitability]
+Any matter sector compatible with projection-induced admissibility must be
+anomaly-free.
+\end{theorem}
+
+\begin{theorem}[Charge quantization inevitability]
+Quantized U(1) charges with a discrete rational lattice are unavoidable in any
+theory satisfying the preceding structural requirements.
+\end{theorem}
+
+\begin{theorem}[Forbidden operator inevitability]
+Operators mediating rapid baryon or lepton number violation are forbidden or
+parametrically suppressed by admissibility constraints independent of dynamics.
+\end{theorem}
+
+\begin{corollary}
+Among anomaly-free, charge-quantized, admissible matter sectors with chiral
+fermions, the Standard Model represents a near-minimal solution.
+\end{corollary}
+
+% ============================================================
+\section{Coherent Universality Class}
+\label{sec:universality}
+% ============================================================
+
+\begin{definition}[Coherent universality class]
+A theory belongs to the coherent universality class if it implements, at the
+effective level:
+\begin{enumerate}[label=(U\arabic*)]
+\item noninvertible projection;
+\item admissible basins with finite margins;
+\item smooth spectral suppression of ultraviolet modes;
+\item discrete selection events without fundamental lattices;
+\item admissible matter representations satisfying topology-only constraints.
+\end{enumerate}
+\end{definition}
+
+% ============================================================
+\section{Embedding Existing Approaches}
+\label{sec:embedding}
+% ============================================================
+
+Collapse models implement noninvertible projection and outcome stabilization, but
+often lack full basin structure and cross-sector closure.
+
+Decoherence-based approaches implement spectral suppression but preserve
+invertibility and do not select outcomes.
+
+Asymptotic safety implements ultraviolet suppression and finite predictivity; its
+scheme dependence reflects projection effects.
+
+Loop quantum gravity captures kinematical truncation and discrete encodings but
+does not implement selection dynamics.
+
+Causal set theory captures the event-level shadow but postulates discreteness
+rather than deriving it from basin transitions.
+
+Noncommutative geometry captures overlap-geometry and matter admissibility but
+does not encode projection or selection.
+
+Each successful approach implements a subset of the universality requirements.
+
+\section{Universality versus inevitability}
+
+The terms ``universality'' and ``inevitability'' are closely related in a projection-first framework
+but are not identical. This section fixes the distinction used throughout the corpus.
+
+\subsection{Universality (stability class statement)}
+
+Universality refers to insensitivity of the effective coherent description to microscopic detail
+\emph{within} an admissible regime. Formally, it is a stability property: multiple distinct
+microscopic realizations produce equivalent effective evolution operators on $\mathcal H_{\mathrm{coh}}$
+up to controlled (gap-suppressed) error.
+
+Universality therefore depends on:
+(i) persistence of controlled truncation,
+(ii) bounded projector regularity, and
+(iii) bounded mixing between coherent and discarded sectors.
+
+\subsection{Inevitability (conditional closure statement)}
+
+Inevitability refers to a different claim: \emph{given} the minimal empirical requirements stated
+in this paper, any viable framework must implement an effective structure that lies in the same
+coherent universality class. This is a conditional closure theorem, not a claim that all microscopic
+theories literally coincide.
+
+In particular:
+\begin{itemize}
+  \item Universality says: many microscopics yield the same effective behavior in admissible regimes.
+  \item Inevitability says: any successful framework must realize projection, admissibility, and spectral
+  suppression at the effective level (possibly in different mathematical languages).
+\end{itemize}
+
+\subsection{What this paper does not claim}
+
+No claim is made that:
+\begin{itemize}
+  \item the microscopic ontology is unique,
+  \item the coherent universality class extends beyond admissible regimes,
+  \item the detailed Standard Model parameter values are fixed without additional bottleneck data.
+\end{itemize}
+
+The purpose of inevitability results is to rule out structurally incompatible approaches, not to
+eliminate the possibility of multiple microscopic realizations within the admissible equivalence class.
+
+% ============================================================
+\section{No-Go Results}
+\label{sec:nogo}
+% ============================================================
+
+Purely unitary effective theories fail irreversibility; decoherence-only models
+fail selection; fundamental spacetime lattices violate Lorentz covariance;
+generic unconstrained EFTs allow inadmissible operators; and ad hoc collapse
+models without closure fail cross-sector consistency. These approaches lie
+outside the coherent universality class.
+
+% ============================================================
+\section{Conclusions}
+% ============================================================
+
+We have established a classification result: any theory reproducing irreversible
+measurement, stable classicality, finite predictivity, relativistic locality, and
+observed matter structure must implement effective projection, admissible basins,
+smooth spectral suppression, discrete selection events, and topology-driven
+matter constraints. These conditions define a coherent universality class.
+
+Modal Triplet Theory provides a minimal explicit realization of this class, but
+the classification does not depend on MTT-specific constructions. The apparent
+plurality of quantum gravity and measurement theories is therefore illusory:
+viable frameworks are constrained to a single universality class, differing only
+in which shadows of the underlying structure are made explicit.
+\begin{thebibliography}{99}
+
+\bibitem{MTT-Admissibility}
+P.~Nero,
+\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255621}
+
+\bibitem{MTT-Foundation}
+P.~Nero,
+\emph{Modal Triplet Theory: Foundation},
+Zenodo preprint, September 2025.
+\url{https://doi.org/10.5281/zenodo.16949762}
+
+\bibitem{MTT-FixedPoints}
+P.~Nero,
+\emph{Fixed Points I--VI: Complete Coherence Spine},
+Zenodo preprints, August 2025.
+\url{https://doi.org/10.5281/zenodo.16948748}
+
+\bibitem{MTT-ProjectionAdmissibility}
+P.~Nero,
+\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255838}
+
+\bibitem{MTT-Closure}
+P.~Nero,
+\emph{Closure and Inevitability in Modal Triplet Theory},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255510}
+
+\bibitem{MTT-CoherenceCapacity}
+P.~Nero,
+\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255905}
+
+\bibitem{MTT-CoherenceDynamics}
+P.~Nero,
+\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18256048}
+
+\bibitem{MTT-QM}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
+Zenodo preprint, September 2025.
+\url{https://doi.org/10.5281/zenodo.17074246}
+
+\bibitem{MTT-QFT}
+P.~Nero,
+\emph{From MTT to Quantum Field Theory},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17068816}
+
+\bibitem{MTT-GR}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to General Relativity},
+Zenodo preprint, October 2025.
+\url{https://doi.org/10.5281/zenodo.16950597}
+
+\bibitem{MTT-UVQG}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17077671}
+
+\bibitem{MTT-Measurement}
+P.~Nero,
+\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17177404}
+
+\bibitem{MTT-Irreversibility}
+P.~Nero,
+\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18256408}
+
+\bibitem{MTT-Bell-Beables}
+P.~Nero,
+\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17076300}
+
+\bibitem{MTT-Bell-Temporal}
+P.~Nero,
+\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
+Zenodo preprint, August 2025.
+\url{https://doi.org/10.5281/zenodo.18208884}
+
+\bibitem{MTT-Stochastic}
+P.~Nero,
+\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18254862}
+
+\end{thebibliography}
+\end{document}

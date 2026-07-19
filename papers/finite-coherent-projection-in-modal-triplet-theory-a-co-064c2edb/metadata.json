@@ -1,0 +1,38 @@
+{
+  "abstract": "Many of the central structures of modern physics appear in distinct formalisms: Dirac delta localization, spectral wave propagation, finite measurement records, gauge redundancy, scattering amplitudes, quantized spectra, entangled correlations, and geometric curvature. Modal Triplet Theory (MTT) suggests that these are not unrelated phenomena. They are downstream projection shadows of finite coherent admissibility. The central analytic object is the admissible coherent projection operator \\begin{equation} B_{\\rm adm} = P\\chi(A)\\mathrm e^{-\\tau A}\\chi(A)P, \\end{equation} where A is a sectoral stabilization or admissibility operator, P is the coherent-sector projector, \\chi(A) is an admissible spectral window, and \\tau is the damping-selected proper-time/heat-time scale. In a local representation, the kernel \\begin{equation} K_{\\rm adm}(x,y)=\\langle x|B_{\\rm adm}|y\\rangle \\end{equation} is a finite source, response, or detector-amplitude kernel whose sharp limit recovers the Dirac delta. In a spectral representation, the same object is a weighted coherent modal structure, \\begin{equation} K_{\\rm adm}(x,y) = \\sum_{n\\in\\mathrm{coh}} \\chi(\\lambda_n)^2\\mathrm e^{-\\tau\\lambda_n} \\phi_n(x)\\phi_n^\\ast(y), \\end{equation} whose retained phases generate interference. This paper proposes that the same finite projection architecture also organizes scattering, gauge, electromagnetism, gravity, quantization, superposition, entanglement, and measurement. In flat spectral charts, e^{-\\tau A} produces Gaussian high-mode damping and finite propagator corrections. In gauge sectors, P must be quotient-compatible, so finite filtering acts only on gauge-admissible physical content or through gauge-covariant operators. In gravity, the corresponding projector must be diffeomorphism-compatible, because geometry itself is the object whose local representatives must glue globally. In quantization, admissible spectra arise from Circle phase closure, Lens quotient consistency, and Nil survivor selection. In entanglement, joint coherent sectors need not factor into independent local sectors. In measurement, finite effects and survivor-basin stabilization replace primitive collapse by context-dependent projection and selection. The result is a structural unification theorem: local deltas, spectral waves, finite records, gauge representatives, geometric gluing, quantized survivor spectra, and entangled joint coherences are distinct shadows of one finite coherent projection architecture. The claim is not that all numerical sector data are already derived. Rather, the claim is that MTT identifies the common operator-theoretic mechanism by which these structures arise and specifies the sector-by-sector execution tasks needed for empirical closure.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "April 2026",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "2cda12ec30370284ca3ace1940298e95897058fbe2efae85ae6aca1275ced03b",
+  "paper_id": "finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb",
+  "paper_md_sha256": "be2b0eb880e39e8ea142356238e674c858d3a240aa71c883c9cc74bda9a0ac83",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 564484,
+      "path": "main.tex",
+      "sha256": "2cda12ec30370284ca3ace1940298e95897058fbe2efae85ae6aca1275ced03b"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "5 Dirac Delta/_work/Finite_Coherent_Projection_in_Modal_Triplet_Theory_v2"
+  },
+  "source_tree_sha256": "7359bcedd5b19f9b53456facbcdbfce7fbdeee2bed53faa4f070bbb29bf6a81d",
+  "title": "Finite Coherent Projection in Modal Triplet Theory A Common Architecture for Duality, Gauge, Gravity, Quantization, Entanglement, and Measurement",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

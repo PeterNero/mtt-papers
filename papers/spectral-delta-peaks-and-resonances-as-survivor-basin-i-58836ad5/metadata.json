@@ -1,0 +1,43 @@
+{
+  "abstract": "Dirac delta functions appear in spectral physics as sharp energy levels, stable-particle poles, density-of-states atoms, spectral functions, and exact normal-mode decompositions. In ordinary notation one writes terms such as \\rho(E)=\\sum_n \\delta(E-E_n), \\qquad A(\\omega)=2\\pi Z\\,\\delta(\\omega-\\omega_0)+\\cdots . This paper develops the spectral sequel to the delta-projection program in Modal Triplet Theory (MTT). The core mathematical statement is standard but structurally decisive: Lorentzian/Breit\u2013Wigner kernels form approximate identities, and delta peaks are recovered only in the zero-width or infinite-lifetime limit. A stable spectral delta is therefore the singular idealization of a finite-width survivor mode. We prove the weak convergence of Lorentzian kernels to the Dirac delta, derive the same kernel from exponential decay in time, and state the corresponding spectral-measure smearing theorem. We then interpret sharp spectral atoms, resonances, finite lifetimes, LSZ poles, and density-of-states peaks through the MTT lens: a delta peak is the downstream encoding of a survivor basin whose lifetime and coherence width have been idealized as infinite stability and zero spectral width. This does not deny exact bound-state eigenvalues in self-adjoint spectral theory. Rather, it separates exact mathematical spectral atoms from the physical idealization involved when finite-resolution, finite-lifetime effective descriptions are written as exact deltas.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "unversioned",
+  "date": "April 2026",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "da4a2852063dd59a2384cf5ebafb503e1f0908dc53039e156bb2a06fa64eef04",
+  "paper_id": "spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5",
+  "paper_md_sha256": "5ea7a0b411dcc7332b32ea1d6d96ad53c110096ea7f4c06a3eb806c91416d1f8",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 18239,
+      "path": "main.tex",
+      "sha256": "da4a2852063dd59a2384cf5ebafb503e1f0908dc53039e156bb2a06fa64eef04"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    },
+    {
+      "bytes": 18239,
+      "path": "spectral_delta_peaks_resonances_survivor_basins_strengthened.tex",
+      "sha256": "da4a2852063dd59a2384cf5ebafb503e1f0908dc53039e156bb2a06fa64eef04"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "5 Dirac Delta/_work/Spectral_Delta_Peaks_and_Resonances_as_Survivor_Basin_Idealizations"
+  },
+  "source_tree_sha256": "00872a730fcb31bd015c00f00979b51e9b3afc135a3180f27c3d10ba25de9593",
+  "title": "Spectral Delta Peaks and Resonances as Survivor-Basin Idealizations Finite Lifetime, Lorentzian Kernels, and the Delta Limit in Modal Triplet Theory",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

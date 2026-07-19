@@ -1,0 +1,88 @@
+{
+  "abstract": "The inflationary measure problem and the origin of quantum probabilities are traditionally treated as independent foundational issues in cosmology and quantum mechanics. In this work we argue that these problems share a common structural origin. Using the framework of Modal Triplet Theory (MTT), we construct a shadow bridge between inflationary probability measures and the quantum Born rule. The bridge identifies both as distinct projections of a single basin\u2013measure functional defined on an admissible coherent sector of an underlying modal dynamics. We derive a class of admissibility\u2013weighted distributions over inflationary histories, show that they are normalizable without arbitrary cutoffs, and demonstrate that they reproduce the qualitative features of observed flatness while avoiding runaway eternal inflation. As a concrete validation, we weight standard inflationary models by the induced distribution over e\u2013folds and compare their predictions for (n_s,r) against current observational constraints, without fitting potentials or introducing ad hoc measures. Plateau\u2013type models align robustly with the admissibility\u2013weighted region, while chaotic monomial models do not. We conclude with a speculative discussion of the early universe as a large coherent basin and the implications for time, entropy, and quantum measurement.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18330674",
+    "created": "2026-01-21T20:58:34.261237+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18330675",
+    "files": [
+      {
+        "checksum": "md5:e21f769eb79e6bd4a24b0aa39323744a",
+        "content_url": "https://zenodo.org/api/records/18330675/files/Inflationary_Measures_and_the_Born_Rule_as_a_Single_Shadow__Bridge_Problem%20(2).pdf/content",
+        "key": "Inflationary_Measures_and_the_Born_Rule_as_a_Single_Shadow__Bridge_Problem (2).pdf",
+        "size": 288202
+      }
+    ],
+    "id": "18330675",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18330675",
+    "resource_type": "publication",
+    "title": "Inflationary Measures and the Born Rule as a Single Shadow\u2013Bridge Problem",
+    "updated": "2026-01-21T20:58:34.648823+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "f08582062bddcdc51ee25b51193a005d75ca5e314eab898af96ff0fe879fcb2c",
+  "paper_id": "inflationary-measures-and-the-born-rule-as-a-single-sha-388b32c2",
+  "paper_md_sha256": "f8990077d689bd97d616bebaa0ddc948bd7599acc4210cd0ec8a52eeab56d56d",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 24330,
+      "path": "main.tex",
+      "sha256": "f08582062bddcdc51ee25b51193a005d75ca5e314eab898af96ff0fe879fcb2c"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "11 General Relativity & Geometry/_work/Inflationary_Measures_and_the_Born_Rule_as_a_Single_Shadow__Bridge_Problem"
+  },
+  "source_tree_sha256": "3c48cc8eef280e2ff3fdf43888c8d8585aefe8cb8a24916013e55c0c4c8dcaef",
+  "title": "Inflationary Measures and the Born Rule as a Single Shadow\u2013Bridge Problem A Modal Triplet Theory Perspective",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18330674",
+      "created": "2026-01-21T20:58:34.261237+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18330675",
+      "files": [
+        {
+          "checksum": "md5:e21f769eb79e6bd4a24b0aa39323744a",
+          "content_url": "https://zenodo.org/api/records/18330675/files/Inflationary_Measures_and_the_Born_Rule_as_a_Single_Shadow__Bridge_Problem%20(2).pdf/content",
+          "key": "Inflationary_Measures_and_the_Born_Rule_as_a_Single_Shadow__Bridge_Problem (2).pdf",
+          "size": 288202
+        }
+      ],
+      "id": "18330675",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18330675",
+      "resource_type": "publication",
+      "title": "Inflationary Measures and the Born Rule as a Single Shadow\u2013Bridge Problem",
+      "updated": "2026-01-21T20:58:34.648823+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

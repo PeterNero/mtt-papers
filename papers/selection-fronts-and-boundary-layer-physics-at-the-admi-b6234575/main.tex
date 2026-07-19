@@ -1,0 +1,236 @@
+\documentclass[11pt]{article}
+
+\usepackage{series}   % house style
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\geometry{margin=1in}
+
+\title{Selection Fronts and Boundary-Layer Physics\\
+at the Admissibility Threshold}
+
+\author{Peter Nero}
+\date{January, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Recent work has suggested that the long-standing difficulty of vacuum selection in quantum gravity and high-energy theory reflects a mis-posed question: the assumption that physics is defined throughout configuration space. In admissibility-first approaches, physical description exists only on stability-selected regions, while large portions of configuration space are non-physical. In this paper we investigate the dynamical behavior near the boundary of admissibility. We argue that this boundary defines a distinct physical regime, which we call a \emph{selection front}. Near the admissibility threshold, dynamics is governed by boundary-layer behavior characterized by large deviations, metastability, and non-perturbative sensitivity to control parameters. Standard effective descriptions fail in a controlled but abrupt manner. We analyze the universal features of selection fronts and explore their consequences for cosmology, black hole physics, quantum measurement, and the limits of effective field theory.
+\end{abstract}
+
+\tableofcontents
+
+% -------------------------------------------------
+\section{Introduction}
+% -------------------------------------------------
+
+In many approaches to fundamental physics, vacuum selection is framed as the problem of identifying preferred configurations within a large space of formally consistent possibilities. String theory, cosmology, and effective field theory each provide examples in which this space is vast, and selection is often deferred to statistical, dynamical, or anthropic arguments. Despite extensive effort, no consensus has emerged on how a unique or sharply constrained vacuum describing observed physics should be selected.
+
+Recent analyses have suggested that this difficulty may reflect a deeper issue: the assumption that physical description is defined throughout configuration space. Core physical structures---Hilbert spaces, probability measures, effective field theories, and renormalization group flows---are not automatic consequences of formal consistency. They presuppose stability, boundedness, and spectral separation, none of which are guaranteed globally. When these conditions fail, the language of physics itself ceases to apply.
+
+If physical description exists only on admissible regions of configuration space, an immediate question arises: \emph{what is the nature of the transition between admissible and non-admissible regimes?} In this work we argue that this transition is not a featureless limit but a distinct physical regime with universal properties. We refer to this regime as a \emph{selection front}. Near the admissibility threshold, physical dynamics is dominated by boundary-layer behavior characterized by large deviations, metastability, and non-perturbative sensitivity to control parameters.
+
+The purpose of this paper is to characterize selection fronts as genuine physical regimes, to analyze their dynamical structure, and to explore their implications across cosmology, quantum gravity, and quantum measurement. We do not assume a specific microscopic theory, but focus instead on general features implied by the existence of admissibility boundaries.
+
+% -------------------------------------------------
+\section{Admissibility Boundaries and Selection Fronts}
+% -------------------------------------------------
+
+Admissibility conditions define the domain within which physical description is meaningful. They are typically expressed as inequalities: bounds on operator norms, spectral gaps, curvature remainders, or stability eigenvalues. Let $\varepsilon > 0$ denote a collective control parameter measuring distance to the admissibility boundary, with $\varepsilon = 0$ marking marginal admissibility.
+
+Standard physical reasoning implicitly assumes that the limit $\varepsilon \to 0^+$ is smooth. In such a picture, one expects physical behavior to degrade gradually, with effective descriptions remaining approximately valid until $\varepsilon$ becomes sufficiently negative. This assumption fails once the conditional nature of physical structure is taken seriously.
+
+We define a \emph{selection front} as the boundary-layer regime $\varepsilon \gtrsim 0$ in which admissibility is marginally satisfied. In this regime, physical observables remain definable but are no longer governed by typical fluctuations or perturbative corrections. Instead, dynamics is dominated by rare events, large deviations, and escape processes from metastable coherent basins.
+
+The selection front is not an ordinary phase transition within a physical theory. It marks the breakdown of the conditions required to define the theory itself. Crossing the selection front does not lead to a new phase of physics but to the absence of physical description. For this reason, the selection front must be treated as a distinct regime rather than as a limiting case of standard dynamics.
+
+Several features distinguish selection fronts from conventional instabilities:
+\begin{itemize}
+\item Abruptness: observables can change discontinuously as $\varepsilon \to 0^+$.
+\item Non-perturbativity: perturbative expansions fail even when $\varepsilon$ is small but positive.
+\item Universality: behavior near the front depends weakly on microscopic details.
+\item Protocol dependence: outcomes depend sensitively on noise, disturbance, and boundary conditions.
+\end{itemize}
+
+These features suggest that the correct mathematical description of selection fronts involves boundary-layer analysis, large deviation theory, and stochastic stability rather than smooth effective field theory methods.
+% -------------------------------------------------
+\section{Boundary-Layer Dynamics Near the Admissibility Threshold}
+% -------------------------------------------------
+
+The defining feature of a selection front is that physical description remains marginally well defined, yet ordinary perturbative reasoning fails. This section characterizes the dynamical behavior in this boundary-layer regime and explains why standard effective methods break down in a controlled but abrupt manner.
+
+\subsection{Control parameters and scaling toward the boundary}
+
+Let $\varepsilon > 0$ denote a collective control parameter measuring distance to the admissibility boundary, with $\varepsilon = 0$ marking marginal admissibility. The precise definition of $\varepsilon$ depends on context---it may represent a spectral gap, a boundedness margin of a projector, a curvature remainder, or a stability eigenvalue---but its qualitative role is universal.
+
+Deep inside an admissible region ($\varepsilon \gg 0$), physical dynamics is governed by typical fluctuations around stable configurations, and perturbative expansions in small corrections are valid. As $\varepsilon \to 0^+$, however, the separation of scales underlying these expansions collapses. Small disturbances no longer remain confined to local neighborhoods, and rare excursions become dynamically relevant.
+
+Crucially, the limit $\varepsilon \to 0^+$ is not smooth. Although $\varepsilon$ may be arbitrarily small, the character of the dynamics changes qualitatively once typical fluctuation amplitudes become comparable to the stability margin. This marks the onset of boundary-layer behavior.
+
+\subsection{Metastability and escape from coherent basins}
+
+Near the admissibility threshold, physical states may be viewed as residing in metastable coherent basins separated by effective barriers. Within a basin, dynamics is approximately deterministic and well described by standard equations of motion. However, fluctuations---whether intrinsic or induced by external disturbance---can drive rare transitions out of the basin.
+
+A minimal effective description of such behavior is provided by stochastic differential equations of the Ornstein--Uhlenbeck or Kramers type,
+\begin{equation}
+\dot{x} = -\nabla V(x) + \sqrt{D}\,\eta(t),
+\end{equation}
+where $V(x)$ represents an effective stability potential, $D$ is a noise or disturbance scale, and $\eta(t)$ is normalized stochastic forcing. The admissibility boundary corresponds to the disappearance of confining barriers in $V(x)$.
+
+In the regime $0 < \varepsilon \ll 1$, escape times from coherent basins scale non-perturbatively,
+\begin{equation}
+\tau_{\text{escape}} \sim \exp\!\left(\frac{\Delta V}{D}\right),
+\end{equation}
+where $\Delta V$ vanishes as $\varepsilon \to 0^+$. As a result, even arbitrarily small disturbances can dominate long-time behavior once $\varepsilon$ falls below a critical threshold. This explains why selection fronts are intrinsically sensitive to noise, protocol, and boundary conditions.
+
+\subsection{Failure of perturbative effective descriptions}
+
+Standard effective field theory and renormalization group arguments rely on two assumptions: that corrections are small relative to leading-order dynamics, and that rare events are exponentially suppressed relative to typical fluctuations. Both assumptions fail in the boundary-layer regime.
+
+As $\varepsilon \to 0^+$, corrections to effective dynamics become comparable to leading terms over sufficiently long timescales. Perturbative expansions cease to be asymptotic, and RG flows encounter non-analytic behavior associated with barrier crossing and metastability loss. Importantly, this breakdown is not gradual: physical observables may appear stable over short times while exhibiting abrupt qualitative changes when rare events dominate.
+
+This explains why attempts to extend EFT or RG reasoning smoothly up to critical regimes often produce ambiguous or regulator-dependent results. Such behavior is not a technical defect but a signal that the underlying assumptions of smooth effective description no longer apply.
+
+\subsection{Universality of boundary-layer behavior}
+
+Despite the failure of perturbative control, the qualitative behavior near selection fronts is universal. It depends weakly on microscopic details and strongly on the structure of the admissibility boundary. Different systems---geometric compactifications, RG flows, cosmological dynamics, or measurement processes---exhibit the same features when approaching marginal stability:
+\begin{itemize}
+\item dominance of large deviations,
+\item exponential sensitivity to disturbance,
+\item sharp thresholds rather than smooth crossovers,
+\item protocol-dependent outcomes.
+\end{itemize}
+
+This universality arises because boundary-layer dynamics is governed by generic properties of metastable systems near loss of confinement, rather than by the detailed form of the microscopic equations.
+
+\subsection{Interpretation}
+
+The selection front should therefore be understood as a genuine physical regime, not merely a limiting case of standard dynamics. It is the regime in which physics is still definable but no longer robust. Beyond the front ($\varepsilon \le 0$), the conditions required for physical description fail altogether, and notions such as states, observables, or probabilities lose operational meaning.
+
+% -------------------------------------------------
+\section{Physical Consequences of Selection Fronts}
+% -------------------------------------------------
+
+Selection fronts are not rare or exotic features confined to specific models. They arise generically whenever physical description is conditioned on stability, boundedness, and spectral separation. In this section we examine several domains in which selection-front dynamics provides a unified explanation for sharp, threshold-like phenomena that have resisted smooth effective descriptions.
+
+\subsection{Cosmology and the problem of initial conditions}
+
+Cosmological models often treat initial conditions as elements of a probability distribution defined over a space of configurations. This presupposes that probability is well defined arbitrarily close to the initial state and that nearby configurations admit comparable physical descriptions. Selection-front dynamics challenges both assumptions.
+
+Near an admissibility boundary, probability measures become ill defined: fluctuations are no longer typical, rare events dominate, and outcomes depend sensitively on noise, protocol, or coarse-graining. As a result, the limit toward early cosmological times is governed by boundary-layer behavior rather than by smooth extrapolation of late-time effective equations.
+
+This perspective explains why attempts to define global measures in inflationary or pre-inflationary cosmology encounter persistent ambiguities. The difficulty is not merely technical, but structural: probability is being applied in a regime where the conditions for probabilistic description are marginal or absent.
+
+\subsection{Black hole formation and evaporation thresholds}
+
+Black hole physics exhibits several striking threshold phenomena: critical collapse, horizon formation, and apparent loss of information. Standard descriptions often attempt to treat these processes within globally unitary frameworks, extending effective field theory or semiclassical gravity beyond their domains of validity.
+
+From a selection-front perspective, black hole formation corresponds to approaching an admissibility boundary in which coherence and boundedness conditions fail. Near this boundary, metastable coherent descriptions persist for finite times but are eventually overwhelmed by rare excursions and large deviations. The abrupt appearance of horizons and associated loss of global unitary description are therefore expected features of boundary-layer dynamics, not paradoxes.
+
+Similarly, black hole evaporation need not be described as a smooth, globally unitary process. Instead, the breakdown of effective description near the selection front naturally leads to regime-dependent behavior in which scattering theory, Hilbert-space factorization, and global time evolution fail sharply.
+
+\subsection{Quantum measurement and collapse-like behavior}
+
+Quantum measurement presents a paradigmatic example of sharp, non-perturbative behavior that resists smooth dynamical explanation. In standard accounts, measurement outcomes are introduced either axiomatically or through appeals to environmental decoherence, both of which leave the emergence of definite outcomes conceptually unresolved.
+
+In a selection-front framework, measurement processes naturally probe the boundary between coherent and incoherent regimes. As stability margins shrink, rare excursions dominate and metastable superpositions become unsustainable. Collapse-like behavior emerges as a dynamical consequence of crossing a selection front, rather than as a fundamental modification of quantum dynamics.
+
+\subsection{Breakdown of smooth effective descriptions}
+
+Across these examples, a common pattern emerges: sharp physical transitions occur where smooth effective descriptions were expected to apply. Selection-front dynamics explains this pattern by identifying a regime in which the assumptions underlying effective field theory, renormalization group flow, and unitary evolution cease to hold.
+
+Rather than indicating inconsistency or incompleteness of the underlying theory, such breakdowns signal the approach to admissibility boundaries. In this sense, sharp transitions are not failures of physical law but indicators of the conditional nature of physical description itself.
+% -------------------------------------------------
+\section{Universality of Selection Fronts}
+% -------------------------------------------------
+
+The physical phenomena discussed in the previous sections arise in settings that appear, at first sight, to be unrelated: early-universe cosmology, black hole dynamics, quantum measurement, and the breakdown of effective field theory. The unifying feature among these systems is not their microscopic dynamics but the presence of an admissibility boundary beyond which physical description ceases to be well defined. This section explains why selection fronts exhibit universal behavior across such disparate domains.
+
+\subsection{Independence from microscopic details}
+
+Selection fronts arise whenever physical description depends on stability, boundedness, or spectral separation. The precise microscopic origin of these conditions---whether geometric, algebraic, or dynamical---is largely irrelevant near the admissibility boundary. What matters is that a control parameter governing stability approaches a critical value at which confining structure is lost.
+
+As a result, the detailed form of the underlying equations of motion does not control behavior near the selection front. Instead, dynamics is governed by generic properties of metastable systems near loss of confinement. This explains why large deviation theory, Kramers-type escape, and stochastic stability analysis provide accurate descriptions across otherwise unrelated physical settings.
+
+\subsection{Relation to critical phenomena}
+
+Selection fronts share certain features with phase transitions and critical points, such as sensitivity to control parameters and the appearance of non-analytic behavior. However, they differ in a crucial respect. Conventional phase transitions occur within a well-defined physical theory, separating distinct phases that are each physically meaningful. Selection fronts instead mark the boundary of physical description itself.
+
+Crossing a phase transition leads to a new phase with its own effective description. Crossing a selection front leads to the absence of any effective description. For this reason, selection fronts cannot be treated as conventional critical points or smooth crossovers. They represent the termination of the domain on which physical reasoning applies.
+
+\subsection{Universality across encodings}
+
+The universality of selection fronts implies that different theoretical frameworks encounter similar boundary-layer behavior when approaching admissibility limits, even if their internal languages differ. Geometric compactifications, functional renormalization group flows, worldsheet consistency conditions, and algebraic descriptions of observables all exhibit sharp transitions when stability margins are exhausted.
+
+This perspective clarifies why apparently competing approaches frequently identify analogous phenomena---fixed points, critical surfaces, or special subsectors---without achieving global unification. Each framework provides a partial encoding of the same underlying admissibility structure, valid only within its respective domain.
+
+% -------------------------------------------------
+\section{Relation to Existing Frameworks}
+% -------------------------------------------------
+
+The admissibility-first perspective and the associated selection-front dynamics do not replace existing frameworks in quantum gravity, cosmology, or high-energy theory. Rather, they clarify the domains in which those frameworks are valid and explain why each encounters sharp limitations near certain regimes.
+
+\subsection{Inflationary cosmology and measure problems}
+
+Inflationary models often rely on probabilistic reasoning over large spaces of initial conditions or vacua. Measure problems arise when probabilities diverge or become regulator-dependent, leading to ambiguity in predictions. From the selection-front perspective, such difficulties are expected when probability is applied beyond its admissible domain.
+
+Near the initial cosmological boundary, stability margins shrink and selection-front dynamics dominates. Probability measures cease to be well defined in this regime, and outcomes depend sensitively on noise, coarse-graining, and boundary conditions. Selection fronts therefore provide a structural explanation for why global inflationary measures fail to converge.
+
+\subsection{Asymptotic safety and truncation dependence}
+
+Asymptotic safety scenarios identify fixed points in theory space that control ultraviolet behavior. In practice, these fixed points are found using truncated functional renormalization group flows, and results often exhibit regulator and truncation dependence.
+
+Within an admissibility-first framework, such behavior reflects the approach to a selection front in theory space. Truncations probe only a projection of the full admissible region, and near the admissibility boundary small changes in truncation scheme can produce large qualitative differences. The appearance of fixed points is therefore interpreted as evidence of an underlying admissible basin rather than as proof of a unique ultraviolet completion.
+
+\subsection{Holography and information-theoretic descriptions}
+
+Holographic dualities suggest that certain gravitational systems admit alternative descriptions in terms of lower-dimensional quantum theories. While these dualities have been extremely fruitful, their domain of validity is often limited to highly symmetric or strongly constrained settings.
+
+Selection fronts clarify why holographic descriptions appear precisely where they do. They correspond to regimes of high coherence and strong stability margins, where redundant encodings of observables are possible. As admissibility boundaries are approached, this redundancy breaks down, and holographic descriptions fail sharply rather than gradually.
+
+\subsection{Quantum measurement}
+
+Foundational approaches to quantum measurement typically assume that quantum description is globally valid and seek mechanisms to explain the emergence of definite outcomes. Selection-front dynamics provides an alternative perspective: measurement processes naturally drive systems toward admissibility boundaries, where coherent superpositions become unsustainable and collapse-like behavior emerges.
+
+This interpretation does not require modification of quantum dynamics deep within admissible regions. Instead, it attributes measurement outcomes to boundary-layer effects at the edge of coherence, explaining both the abruptness and context dependence of measurement.
+
+% -------------------------------------------------
+\section{Observational and Experimental Consequences}
+% -------------------------------------------------
+
+Although selection fronts arise at the boundary of physical description, they lead to concrete, testable implications. These implications are qualitative rather than numerical, but they are robust and falsifiable in principle.
+
+\subsection{Sharp thresholds}
+
+Selection fronts predict that certain physical transitions should exhibit sharp threshold behavior rather than smooth crossover. Examples include critical phenomena in gravitational collapse, abrupt loss of coherence in measurement-like processes, and sudden breakdown of effective descriptions in high-energy or high-curvature regimes.
+
+\subsection{Protocol dependence}
+
+Near admissibility boundaries, outcomes depend sensitively on noise, disturbance, and experimental protocol. Repeated experiments probing marginal regimes may therefore yield irreproducible or context-dependent results, even when underlying dynamics is well defined deep within admissible regions.
+
+\subsection{Limits of scalable coherence}
+
+Selection fronts imply upper bounds on sustainable quantum coherence and entanglement depth. Attempts to scale quantum systems beyond these bounds should encounter abrupt loss of coherence rather than gradual degradation.
+
+\subsection{Gravitational and cosmological signatures}
+
+In cosmology and strong-gravity settings, selection fronts suggest that certain regimes may be fundamentally inaccessible to probabilistic description. Observational evidence for well-defined global probabilities arbitrarily close to initial cosmological boundaries or across black hole horizons would challenge the selection-front picture.
+
+% -------------------------------------------------
+\section{Conclusion}
+% -------------------------------------------------
+
+Selection fronts provide a unified dynamical explanation for sharp, non-perturbative behavior observed across cosmology, quantum gravity, and quantum measurement. They mark the boundary of physical description, not a transition between alternative physical phases.
+
+By recognizing selection fronts as genuine physical regimes, one can understand longstanding puzzles---from vacuum selection to information loss---as consequences of the conditional nature of physics rather than as failures of fundamental law. This perspective shifts emphasis from enumerating possibilities to identifying stability constraints that delimit the domain of physical description.
+
+% -------------------------------------------------
+\appendix
+\section{Note on Concrete Realizations}
+% -------------------------------------------------
+
+While the present work has been intentionally theory-agnostic, explicit realizations of admissibility-based selection frameworks exist in the literature. In such constructions, physical observables, effective dynamics, and probabilistic descriptions are defined only on stability-selected sectors of a larger formal configuration space and fail outside those sectors. These examples serve as existence proofs that admissibility-first and selection-front dynamics are mathematically consistent and physically viable, without requiring vacuum selection or anthropic weighting.
+
+\end{document}

@@ -1,0 +1,308 @@
+\documentclass[11pt]{article}
+\usepackage{series}
+\usepackage{mathrsfs}
+
+\title{Proto-Spinor Closure and Worldsheet Encoding\\
+in Modal Triplet Theory\\
+\large Corrected fourth edition: a conditional local bridge}
+\author{Peter Nero}
+\date{July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We formulate the proto-spinor/worldsheet relation as a typed local bridge
+rather than a derivation of string theory.  Near an aligned q79-compatible
+background, a bridge map sends proto-spinor and closure-strain perturbations to
+worldsheet coupling perturbations.  If its derivative intertwines the two
+quadratic forms and its nonlinear remainder is controlled, the two descriptions
+have the same quadratic admissibility test on the selected subspace.  We give
+the precise domain, codomain, error estimate, and block conditions.  Circle,
+lens, and nil label shared phase, finite transport, and anchoring blocks; they
+are not assumed to be literal product factors.  Weyl, Dirac, Majorana, and
+twistor languages remain conditional charts.  Worldsheet Weyl invariance,
+modular consistency, anomaly cancellation, ghosts, and target-space equations
+are independent gates.  The selected q79 trace carrier supplies a concrete
+global target for the bridge, but the same-source connection intertwiner is
+still required.
+\end{abstract}
+
+\section*{Revision note for this edition}
+\addcontentsline{toc}{section}{Revision note for this edition}
+\begin{description}
+\item[Supersedes.] \emph{Proto-Spinor Closure and Worldsheet Encoding in Modal
+Triplet Theory}, version~3.
+\item[Reason.] The shadow correspondence lacked one explicit source-to-target
+map, a declared validity ball, a nonlinear error estimate, and separation from
+full worldsheet consistency.
+\item[Resolution.] Version~4 defines a $C^2$ bridge map, proves Hessian
+intertwining implies quadratic diagnostic agreement with cubic error, and
+lists the independent Weyl, modular, ghost, anomaly, and beta-function gates.
+\item[Retained result.] The earlier blockwise matching survives as a
+conditional local bridge near alignment.
+\item[Remaining boundary.] The normalized q79 bridge derivative and all
+global worldsheet/string consistency tests must still be executed.
+\end{description}
+
+\tableofcontents
+
+\section{Scope}
+
+This paper proves a local equivalence of quadratic diagnostics under explicit
+hypotheses.  It does not prove:
+\begin{itemize}
+\item that a worldsheet is the unique extension of proto-spinor data;
+\item that MTT derives string theory, critical dimension, modular invariance,
+or a target-space compactification;
+\item that a local quadratic bridge extends to the full nonlinear theory; or
+\item that a matching number of carrier components identifies two global
+bundles.
+\end{itemize}
+
+\section{The two configuration spaces}
+
+Let $\mathcal C_{\rm ps}$ be a Sobolev manifold of local proto-spinor,
+connection, and strain data near an aligned background $u_\ast$.  A tangent
+vector is written
+\[
+ u=(u_{\rm circ},u_{\rm lens},u_{\rm nil})
+ \in E_1\oplus E_2\oplus E_3,
+\]
+where the labels denote operator/carrier roles.  In the selected q79 interface
+their target ranks are $1,2,3$.
+
+Let $\mathcal C_{\rm ws}$ be a Sobolev manifold of worldsheet couplings near a
+background $c_\ast$,
+\[
+ c=(G,B,\Phi,A,\mathcal V,\ldots),
+\]
+with worldsheet metric coupling $G$, antisymmetric field $B$, dilaton $\Phi$,
+gauge connection $A$, and any declared boundary or potential couplings
+$\mathcal V$.  The ellipsis is not permission to omit fields needed by the
+chosen string model; all active couplings must be listed in an application.
+
+\begin{definition}[Typed bridge map]
+A proto-spinor/worldsheet bridge on neighborhoods
+$U\subset\mathcal C_{\rm ps}$ and $V\subset\mathcal C_{\rm ws}$ is a $C^2$ map
+\[
+ \mathcal B:U\longrightarrow V,
+ \qquad \mathcal B(u_\ast)=c_\ast.
+\]
+Its derivative at the background is denoted
+$L=D\mathcal B(u_\ast)$.
+\end{definition}
+
+This definition replaces an analogy between symbols by a map with a domain,
+codomain, and regularity class.
+
+\section{Local remainder control}
+
+Assume $D\mathcal B$ is locally Lipschitz with constant $M_B$.  Taylor's
+theorem gives
+\[
+ \mathcal B(u_\ast+u)
+ =c_\ast+Lu+r_B(u),
+ \qquad
+ \|r_B(u)\|_{\rm ws}\le\frac{M_B}{2}\|u\|_{\rm ps}^2.
+\]
+
+Let the two diagnostics have expansions
+\begin{align*}
+ \mathcal J_{\rm ps}(u_\ast+u)
+ &=\mathcal J_{\rm ps}(u_\ast)
+ +\frac12\langle u,H_{\rm ps}u\rangle+R_{\rm ps}(u),\\
+ \mathcal J_{\rm ws}(c_\ast+v)
+ &=\mathcal J_{\rm ws}(c_\ast)
+ +\frac12\langle v,H_{\rm ws}v\rangle+R_{\rm ws}(v),
+\end{align*}
+with cubic bounds on the declared balls.
+
+\begin{theorem}[Conditional quadratic bridge]
+Let $E_{\rm sel}\subset T_{u_\ast}\mathcal C_{\rm ps}$ be a closed selected
+subspace.  Suppose $L$ is injective on $E_{\rm sel}$ and
+\[
+ L^*H_{\rm ws}L=H_{\rm ps}\quad\text{on }E_{\rm sel}.
+\]
+If the displayed Taylor and cubic bounds hold, then there is $C>0$ such that
+for sufficiently small $u\in E_{\rm sel}$,
+\[
+ \left|
+ [\mathcal J_{\rm ws}(\mathcal B(u_\ast+u))-\mathcal J_{\rm ws}(c_\ast)]
+ -[\mathcal J_{\rm ps}(u_\ast+u)-\mathcal J_{\rm ps}(u_\ast)]
+ \right|
+ \le C\|u\|_{\rm ps}^3.
+\]
+\end{theorem}
+
+\begin{proof}
+Insert $v=Lu+r_B(u)$ into the worldsheet expansion.  The pure quadratic term
+equals the proto-spinor quadratic term by the intertwining identity.  Every
+term containing $r_B$ is at least cubic because $r_B=O(\|u\|^2)$, and the two
+declared Taylor remainders are cubic.  Their constants combine into $C$.
+\end{proof}
+
+\begin{corollary}[Local admissibility equivalence]
+If both Hessians are coercive on the selected subspaces, then for sufficiently
+small perturbations the bridge preserves strict local admissibility and the
+Morse index on $E_{\rm sel}$.
+\end{corollary}
+
+This is the rigorous content of the earlier ``shadow bridge.''  It is local,
+quadratic to leading order, and conditional on a constructed $\mathcal B$.
+
+\section{Blockwise carrier map}
+
+Suppose the selected proto-spinor tangent carrier decomposes as
+\[
+ E_{\rm sel}=E_1\oplus E_2\oplus E_3,
+ \qquad \dim(E_1,E_2,E_3)=(1,2,3),
+\]
+and choose corresponding worldsheet coupling blocks $W_1,W_2,W_3$.  A
+block-preserving derivative has form
+\[
+ L=L_1\oplus L_2\oplus L_3,
+ \qquad L_j:E_j\to W_j.
+\]
+If
+\[
+ H_{\rm ps}=\bigoplus_j H_{{\rm ps},j},
+ \qquad
+ H_{\rm ws}=\bigoplus_j H_{{\rm ws},j},
+ \qquad
+ L_j^*H_{{\rm ws},j}L_j=H_{{\rm ps},j},
+\]
+then the bridge theorem holds blockwise.
+
+The roles may be read as follows, provided an application constructs the
+actual maps:
+\begin{description}
+\item[Circle block.] Common $U(1)$ phase/holonomy may map to a compact
+worldsheet scalar, Wilson line, or phase coupling.
+\item[Lens block.] Finite/projective transport may map to orbifold or twisted
+sector data.
+\item[Nil block.] Triangular anchoring or boundary termination may map to
+boundary couplings, filtration data, or a nilpotent differential.
+\end{description}
+
+These are typed possibilities, not a proof that the target worldsheet contains
+a literal circle, lens space, or Nil manifold.
+
+\section{The selected q79 target}
+
+The q79 degree-three cover supplies
+\[
+ \mathcal H_{\rm q79}
+ =L_{\rm shared}\otimes
+ (\mathcal O\oplus\mathcal A_0\oplus\mathcal A),
+ \qquad \operatorname{rank}=1+2+3.
+\]
+This gives a concrete source for the block ranks.  It does not yet provide the
+bridge derivative $L$.  To do so one must construct normalized q79 zero modes
+and evaluate how their metric, $B$-field, connection, and scalar variations
+enter the worldsheet sigma-model couplings.
+
+The required same-source diagram is
+\[
+\begin{array}{ccc}
+ E_{\rm strain}&\xrightarrow{\mathfrak I_{\rm WW\to q79}}&
+ \mathcal H_{\rm q79}\\
+ \downarrow &&\downarrow D\mathcal B_{\rm q79}\\
+ T\mathcal C_{\rm ps}&\xrightarrow{L}&T\mathcal C_{\rm ws}.
+\end{array}
+\]
+Both routes must agree, and the covariant derivatives and Hessians must
+intertwine.  Equality of ranks does not make the square commute.
+
+\section{Why two-dimensionality is not forced}
+
+A two-dimensional worldsheet is a distinguished encoding because local
+sigma-model couplings, conformal methods, and string propagation live there.
+But no theorem in the proto-spinor carrier alone excludes a worldline, a
+higher-dimensional defect, a lattice transfer system, or an operator-algebraic
+encoding.  Uniqueness would require a classification theorem with assumptions
+strong enough to single out a two-dimensional local conformal theory.
+
+Accordingly, this paper treats the worldsheet as a selected target-compatible
+extended chart, not as an inevitable consequence of failed three-dimensional
+closure.
+
+\section{Spinorial and twistor chart languages}
+
+The internal proto-spinor is conditional on a lift of rank-three orientation
+data.  A spacetime Weyl or Dirac spinor additionally requires a Lorentzian spin
+bundle and Dirac operator.  A Majorana chart requires a compatible antilinear
+real structure and charge constraints.  A twistor chart requires the relevant
+conformal and integrability conditions.
+
+These descriptions may coexist on one coherent slab and be related by typed
+maps.  Their coexistence demonstrates representational flexibility, not that
+one chart dynamically produces the others.
+
+\section{Worldsheet consistency gates}
+
+Even an exact local quadratic bridge does not define a consistent string
+theory.  A selected application must address:
+\begin{enumerate}
+\item vanishing beta functions or a controlled off-shell worldsheet RG flow;
+\item Weyl anomaly and criticality, including ghosts and central charge;
+\item modular invariance and the spin-structure/GSO sum where applicable;
+\item gauge and gravitational anomaly cancellation;
+\item boundary conditions, open/closed consistency, and tadpoles;
+\item unitarity and the physical state conditions; and
+\item the map from worldsheet beta functions to target-space field equations,
+including the order in $\alpha'$ and truncation error.
+\end{enumerate}
+
+For heterotic Fu--Yau backgrounds, satisfaction of the Hull--Strominger system
+is powerful target-space evidence but does not automatically prove all-order
+worldsheet conformal invariance.
+
+\section{Relation to finite SM calculations}
+
+The selected finite-algebra and renormalized-SM packets establish equivalence
+at the declared one-shared-physical-primitive/profile standard.  Those packets
+do not require a worldsheet derivation and therefore remain valid independently
+of this bridge.  Conversely, a worldsheet bridge cannot promote measured
+profile input into strict no-knob source selection unless its normalized
+overlap integrals and transport scheme emit the values independently.
+
+\section{Execution protocol}
+
+To promote the bridge beyond its current conditional status:
+\begin{enumerate}
+\item choose one selected q79 Fu--Yau background and its HYM connection;
+\item compute normalized harmonic/Dirac representatives for the three carrier
+blocks;
+\item differentiate the sigma-model coupling map to obtain $L$;
+\item compute $H_{\rm ps}$ and $H_{\rm ws}$ from the same action and verify
+$L^*H_{\rm ws}L=H_{\rm ps}$ with interval or exact certificates;
+\item bound $D^2\mathcal B$ and both cubic remainders on an explicit ball; and
+\item run the independent worldsheet consistency gates.
+\end{enumerate}
+
+\section{Conclusion}
+
+The proto-spinor/worldsheet relation is now a precise, testable local theorem.
+The bridge preserves quadratic admissibility when its derivative intertwines
+the Hessians, with a cubic error bound.  The selected q79 carrier gives the
+right finite block target, while the actual normalized derivative and global
+worldsheet consistency remain to be computed.  This is meaningful progress
+without claiming that the existence of a proto-spinor forces string theory.
+
+\begin{thebibliography}{9}
+\bibitem{Polchinski}
+J.~Polchinski, \emph{String Theory}, Vols. 1--2, Cambridge University Press,
+1998.
+
+\bibitem{FuYau}
+J.-X.~Fu and S.-T.~Yau,
+\emph{The theory of superstring with flux on non-Kahler manifolds and the
+complex Monge--Ampere equation}, J. Differential Geom. 78 (2008).
+
+\bibitem{MTTBridge}
+P.~Nero, \emph{Selected q79 Trace-Split CLN Carrier and World-in-World
+Bridge}, internal theorem packet, 2026.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,93 @@
+{
+  "abstract": "Abrupt threshold phenomena\u2014such as collapse\u2013like transitions, sharp metastable escape, or rapid post\u2013selection relaxation\u2014are often modeled by introducing intrinsic stochasticity, explicit discontinuities, or ad hoc collapse rules. In this paper we show that none of these are necessary. We construct a fully deterministic, finite\u2013dimensional dynamical system whose non\u2013injective projection onto an observed variable produces stochastic effective behavior and a sharp, finite\u2013strength knee transition in first\u2013passage statistics. Using rigorous deterministic homogenization for chaotic fast subsystems, we derive an Ornstein\u2013Uhlenbeck limit for the projected coordinate and prove convergence of exit probabilities to those of the limiting diffusion. The knee arises when an effective stability margin crosses zero, separating a noise\u2013activated escape regime from deterministic expulsion. We further show that such knee behavior cannot be reproduced by fixed, protocol\u2013independent linear Markov generators without additional state\u2013dependent structure. The result provides a minimal, explicit stress test for projection\u2013based descriptions and clarifies how sudden effective transitions can arise from smooth, invertible dynamics.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18330721",
+    "created": "2026-01-21T19:54:38.303646+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18330722",
+    "files": [
+      {
+        "checksum": "md5:f9339f8658fb03bf55f7a51e7f2b329c",
+        "content_url": "https://zenodo.org/api/records/18330722/files/Deterministic_Projection__Diffusive_Limits__and_Knee__Like_Threshold_Transitions%20(2).pdf/content",
+        "key": "Deterministic_Projection__Diffusive_Limits__and_Knee__Like_Threshold_Transitions (2).pdf",
+        "size": 303652
+      }
+    ],
+    "id": "18330722",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18330722",
+    "resource_type": "publication",
+    "title": "Deterministic Projection, Diffusive Limits, and Knee-Like Threshold Transitions",
+    "updated": "2026-01-21T19:54:38.788414+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "f7b77ff9af4cb2c380e9c6980b1a00093f394dbf3730c12eac0633cadf101bdf",
+  "paper_id": "deterministic-projection-diffusive-limits-and-knee-like-a0b81ad7",
+  "paper_md_sha256": "5085920cbb5326dc9485ae05ad987039107080db26cc3a3b40ea3d1dff1fdbb5",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 2686,
+      "path": "main.bib",
+      "sha256": "482c19655ead341c71dd0015adaaf26ea0674a5891a73e83eca9373de20e4bd6"
+    },
+    {
+      "bytes": 31560,
+      "path": "main.tex",
+      "sha256": "f7b77ff9af4cb2c380e9c6980b1a00093f394dbf3730c12eac0633cadf101bdf"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Deterministic_Projection__Diffusive_Limits__and_Knee__Like_Threshold_Transitions"
+  },
+  "source_tree_sha256": "74d064c78c6c9856619a354354299397884958118a117b83190cb43fc28e4e81",
+  "title": "Deterministic Projection, Diffusive Limits, and Knee\u2013Like Threshold Transitions",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18330721",
+      "created": "2026-01-21T19:54:38.303646+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18330722",
+      "files": [
+        {
+          "checksum": "md5:f9339f8658fb03bf55f7a51e7f2b329c",
+          "content_url": "https://zenodo.org/api/records/18330722/files/Deterministic_Projection__Diffusive_Limits__and_Knee__Like_Threshold_Transitions%20(2).pdf/content",
+          "key": "Deterministic_Projection__Diffusive_Limits__and_Knee__Like_Threshold_Transitions (2).pdf",
+          "size": 303652
+        }
+      ],
+      "id": "18330722",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18330722",
+      "resource_type": "publication",
+      "title": "Deterministic Projection, Diffusive Limits, and Knee-Like Threshold Transitions",
+      "updated": "2026-01-21T19:54:38.788414+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

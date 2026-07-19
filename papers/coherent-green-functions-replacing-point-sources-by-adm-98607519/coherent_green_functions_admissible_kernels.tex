@@ -1,0 +1,475 @@
+\documentclass[11pt]{article}
+\usepackage{series}
+
+\hypersetup{
+  pdftitle={Coherent Green Functions: Replacing Point Sources by Admissible Kernels in Modal Triplet Theory},
+  pdfauthor={Peter Nero},
+  pdfsubject={Modal Triplet Theory, Green functions, Dirac delta, admissible projection},
+  pdfkeywords={Modal Triplet Theory, Dirac delta, Green functions, projection kernels, fixed points, QFT}
+}
+
+\title{Coherent Green Functions:\\Replacing Point Sources by Admissible Kernels in Modal Triplet Theory}
+\author{Peter Nero}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+\seriestagline
+
+\begin{abstract}
+The preceding paper identified Dirac delta functions as singular shadows of admissible projection: a delta is the zero-width limit of a bounded coherent projection kernel. The present paper develops the first worked sequel. We replace the standard point-source Green equation
+\[
+LG(x,y)=\delta(x-y)
+\]
+by the coherent Green equation
+\[
+LG_{\mathrm{coh}}(x,y)=K_{\mathrm{coh}}(x,y),
+\]
+where \(K_{\mathrm{coh}}\) is a bounded admissible identity kernel on a retained coherent sector. The mathematical core is elementary but important: for a positive self-adjoint elliptic operator \(L\), finite spectral projectors and heat-kernel filters produce smooth finite-width sources, smooth responses, finite diagonal values, and distributional convergence to the ordinary Green kernel only in the singular limit. Thus the standard Green function is recovered, but as an ideal endpoint rather than a primitive object.
+
+Within Modal Triplet Theory (MTT), this supplies the first concrete replacement rule for delta-supported physics. Point particles, point charges, local disturbances, propagator sources, and contact interactions are re-read as downstream zero-width idealizations of finite coherent source kernels. This does not discard standard Green functions; it factors them into two layers: a physically admissible finite-width response and a singular continuum limit. The result provides a rigorous bridge from the delta/projection principle to a usable computational object: the coherent Green function.
+\end{abstract}
+
+\tableofcontents
+
+\section{Purpose and claim discipline}
+
+The previous paper established the following structural thesis:
+\[
+\delta(x-y)=\text{singular limit of coherent projection kernels}.
+\]
+The present paper asks for the first concrete physical construction that follows from that thesis.
+
+The natural starting point is the Green equation. In standard continuum physics, the response of a linear operator \(L\) to a point source is encoded by
+\begin{equation}
+LG(x,y)=\delta(x-y).
+\end{equation}
+This formula is mathematically powerful, but it builds in an idealization: the source has zero spatial width and exact point support.
+
+The MTT replacement is:
+\begin{equation}
+LG_{\mathrm{coh}}(x,y)=K_{\mathrm{coh}}(x,y),
+\end{equation}
+where \(K_{\mathrm{coh}}\) is the kernel of a bounded coherent projection or admissibility filter.
+
+\subsection*{Non-claims}
+
+This paper does not claim that ordinary Green functions are wrong. It does not claim that all point-source methods should be abandoned. It does not compute numerical finite-width corrections for a specific experimental system. Its narrower claim is:
+\[
+\boxed{
+\text{The point-source Green function is the singular limit of coherent finite-source Green functions.}
+}
+\]
+This is proved in standard spectral settings and then interpreted inside MTT.
+
+\section{Standard Green functions and the hidden delta}
+
+Let \(X\) be a compact smooth Riemannian manifold without boundary, or a compact domain with self-adjoint elliptic boundary conditions. Let \(L\) be a positive self-adjoint elliptic operator of order two on \(L^2(X)\). For concreteness one may take
+\[
+L=\Delta+m^2,\qquad m^2>0,
+\]
+where \(\Delta\ge 0\) is the nonnegative Laplacian.
+
+Let \(\{ \phi_n\}_{n=0}^\infty\) be an orthonormal eigenbasis:
+\[
+L\phi_n=\mu_n\phi_n,\qquad 0<\mu_0\le \mu_1\le\cdots,\qquad \mu_n\to\infty.
+\]
+The standard Green kernel is formally
+\begin{equation}
+G(x,y)=\sum_{n=0}^\infty \frac{\phi_n(x)\phi_n^*(y)}{\mu_n}.
+\end{equation}
+It satisfies
+\begin{equation}
+L_xG(x,y)=\delta(x-y)
+\end{equation}
+in the distributional sense.
+
+The key point is that the singularity of \(G\) is not only a property of \(L^{-1}\). It is also a property of the source:
+\[
+\delta(x-y).
+\]
+If the source is replaced by a finite-width kernel, the response is correspondingly regularized.
+
+\section{Coherent source kernels}
+
+\begin{definition}[Spectral coherent source kernel]
+For \(\Lambda>0\), define the spectral projector
+\[
+\Pi_\Lambda f=\sum_{\mu_n\le \Lambda}\langle \phi_n,f\rangle\phi_n.
+\]
+Its kernel is
+\begin{equation}
+K_\Lambda(x,y)=\sum_{\mu_n\le \Lambda}\phi_n(x)\phi_n^*(y).
+\end{equation}
+\end{definition}
+
+For finite \(\Lambda\), \(K_\Lambda\) is a finite-rank smooth kernel. It is not the full identity kernel on \(L^2(X)\). It is the identity kernel only on the retained spectral subspace
+\[
+\operatorname{Ran}\Pi_\Lambda.
+\]
+
+\begin{definition}[Heat coherent source kernel]
+For \(\tau>0\), define the heat kernel of \(\Delta\) by
+\[
+H_\tau(x,y)=\sum_{n=0}^\infty e^{-\tau \lambda_n}\phi_n(x)\phi_n^*(y),
+\]
+where \(\Delta\phi_n=\lambda_n\phi_n\). This is a positive smoothing approximate identity.
+\end{definition}
+
+The sharp spectral kernel \(K_\Lambda\) and the heat kernel \(H_\tau\) play different roles:
+\[
+K_\Lambda=\text{band-limited identity kernel},
+\]
+while
+\[
+H_\tau=\text{positive smoothing identity kernel}.
+\]
+Both converge to \(\delta(x-y)\) in a singular limit, but only \(H_\tau\) is automatically positive and smoothing in the probabilistic sense.
+
+\section{Coherent Green functions}
+
+\begin{definition}[Spectral coherent Green function]
+The spectral coherent Green function is
+\begin{equation}
+G_\Lambda(x,y):=(L^{-1}\Pi_\Lambda)(x,y)
+=\sum_{\mu_n\le \Lambda}\frac{\phi_n(x)\phi_n^*(y)}{\mu_n}.
+\end{equation}
+\end{definition}
+
+It satisfies the finite-source equation
+\begin{equation}
+L_xG_\Lambda(x,y)=K_\Lambda(x,y).
+\end{equation}
+
+\begin{definition}[Heat coherent Green function]
+For a heat source \(H_\tau\), define
+\begin{equation}
+G_\tau(x,y):=(L^{-1}H_\tau)(x,y).
+\end{equation}
+If \(L=\Delta+m^2\) and \(H_\tau=e^{-\tau\Delta}\), then
+\begin{equation}
+G_\tau = L^{-1}e^{-\tau\Delta}.
+\end{equation}
+It satisfies
+\begin{equation}
+L_xG_\tau(x,y)=H_\tau(x,y).
+\end{equation}
+\end{definition}
+
+\section{Main theorem: coherent Green functions converge to the point-source Green function}
+
+\begin{theorem}[Spectral coherent Green convergence]
+Let \(L\) be a positive self-adjoint elliptic operator of order two on a compact smooth domain as above. Let \(G_\Lambda=L^{-1}\Pi_\Lambda\). Then:
+\begin{enumerate}
+\item For each finite \(\Lambda\), \(G_\Lambda(x,y)\) is smooth on \(X\times X\).
+\item \(L_xG_\Lambda(x,y)=K_\Lambda(x,y)\).
+\item As \(\Lambda\to\infty\), \(G_\Lambda\to G=L^{-1}\) in the distributional kernel sense.
+\item For every test function \(f\in C^\infty(X)\),
+\[
+G_\Lambda f:=\int_XG_\Lambda(x,y)f(y)\,dy
+\longrightarrow
+Gf:=L^{-1}f
+\]
+in \(C^\infty(X)\).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Because \(L\) is positive, self-adjoint, elliptic, and defined on a compact domain with self-adjoint boundary conditions, it has a complete orthonormal eigenbasis \(\{\phi_n\}\) with eigenvalues \(\mu_n\to\infty\). The finite spectral sum defining \(G_\Lambda\) is smooth, proving (1).
+
+Applying \(L_x\) termwise gives
+\[
+L_xG_\Lambda(x,y)
+=
+\sum_{\mu_n\le\Lambda}\phi_n(x)\phi_n^*(y)
+=
+K_\Lambda(x,y),
+\]
+proving (2).
+
+Let \(f=\sum f_n\phi_n\). Then
+\[
+G_\Lambda f=\sum_{\mu_n\le\Lambda}\frac{f_n}{\mu_n}\phi_n,
+\qquad
+Gf=\sum_{n=0}^\infty\frac{f_n}{\mu_n}\phi_n.
+\]
+For any Sobolev index \(s\),
+\[
+\norm{Gf-G_\Lambda f}_{H^s}^2
+=
+\sum_{\mu_n>\Lambda}(1+\mu_n)^s \frac{|f_n|^2}{\mu_n^2}.
+\]
+Since \(f\in C^\infty(X)\), its spectral coefficients decay rapidly, so the right-hand side tends to zero for every \(s\). Thus \(G_\Lambda f\to Gf\) in all Sobolev norms, hence in \(C^k\) for every finite \(k\) by Sobolev embedding. This proves (3) and (4). 
+\end{proof}
+
+\begin{corollary}[Coherent Green functions are regularized point-source responses]
+For finite \(\Lambda\), the equation
+\[
+LG_\Lambda=K_\Lambda
+\]
+is a smooth finite-source response. The ordinary point-source equation
+\[
+LG=\delta
+\]
+is recovered only in the singular limit \(\Lambda\to\infty\).
+\end{corollary}
+
+\section{Heat-kernel version}
+
+The spectral cutoff theorem is useful because it directly matches finite coherent subspaces. The heat-kernel version is often physically cleaner because the source is positive and localized.
+
+\begin{theorem}[Heat coherent Green convergence]
+Let \(L=\Delta+m^2\) with \(m^2>0\) on a compact Riemannian manifold or compact domain with self-adjoint boundary conditions. Define
+\[
+G_\tau=L^{-1}e^{-\tau\Delta}.
+\]
+Then:
+\begin{enumerate}
+\item \(G_\tau(x,y)\) is smooth for every \(\tau>0\);
+\item \(L_xG_\tau(x,y)=H_\tau(x,y)\);
+\item as \(\tau\downarrow0\), \(G_\tau\to G=L^{-1}\) distributionally;
+\item for every \(f\in C^\infty(X)\), \(G_\tau f\to Gf\) in \(C^\infty(X)\).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Since \(e^{-\tau\Delta}\) is smoothing for \(\tau>0\), \(G_\tau=L^{-1}e^{-\tau\Delta}\) has a smooth kernel. The identity \(L_xG_\tau=H_\tau\) follows from applying \(L\) to \(L^{-1}H_\tau\).
+
+In the eigenbasis of \(\Delta\), one has
+\[
+G_\tau f=\sum_{n=0}^\infty \frac{e^{-\tau\lambda_n}}{\lambda_n+m^2} f_n\phi_n,
+\qquad
+Gf=\sum_{n=0}^\infty \frac{1}{\lambda_n+m^2} f_n\phi_n.
+\]
+For smooth \(f\), rapid decay of \(f_n\) and dominated convergence in every Sobolev norm imply \(G_\tau f\to Gf\). 
+\end{proof}
+
+\section{Finite diagonal values and coincidence singularities}
+
+One of the main reasons point-source Green functions create difficulties in QFT and classical field theory is the diagonal limit \(G(x,x)\). For a genuine point-source Green function, this is often singular. For coherent Green functions it is finite.
+
+\begin{proposition}[Finite diagonal for finite spectral response]
+For finite \(\Lambda\),
+\begin{equation}
+G_\Lambda(x,x)=\sum_{\mu_n\le\Lambda}\frac{|\phi_n(x)|^2}{\mu_n}
+\end{equation}
+is finite for every \(x\in X\).
+\end{proposition}
+
+\begin{proof}
+The sum contains only finitely many smooth terms.
+\end{proof}
+
+\begin{remark}
+As \(\Lambda\to\infty\), this diagonal may diverge depending on the dimension and the operator. The divergence is not mysterious in the present framework: it is the cost of driving a finite coherent response toward a zero-width point source.
+\end{remark}
+
+This gives a precise version of the renormalization intuition introduced in the preceding paper:
+\[
+\boxed{
+\text{coincident-point singularities arise when finite coherent kernels are forced to the delta limit.}
+}
+\]
+
+\section{MTT interpretation}
+
+Within MTT, the coherent projector \(\Pi_{\mathrm{coh}}\) is not normally an increasing full-space spectral cutoff. It is a sector projector: it selects the admissible coherent sector determined by the fixed-point regime, spectral gap, and admissibility conditions.
+
+Thus \(K_{\mathrm{coh}}\) should not be confused with a literal approximation to the identity on all of \(L^2(X)\). It is an identity kernel only inside the retained coherent sector.
+
+\begin{definition}[MTT coherent Green equation]
+Given a coherent sector with projection kernel \(K_{\mathrm{coh}}\), the MTT coherent Green function is defined by
+\begin{equation}
+LG_{\mathrm{coh}}(x,y)=K_{\mathrm{coh}}(x,y),
+\end{equation}
+or equivalently
+\begin{equation}
+G_{\mathrm{coh}}=L^{-1}\Pi_{\mathrm{coh}}
+\end{equation}
+whenever \(L^{-1}\) is defined on the sector under consideration.
+\end{definition}
+
+The ordinary point-source Green function is recovered only if one idealizes the coherent-sector identity as a full local identity:
+\[
+K_{\mathrm{coh}}(x,y)\leadsto \delta(x-y).
+\]
+
+\begin{remark}[Sector identity versus full identity]
+The distinction is crucial. A coherent projector may erase many upstream distinctions and still act as the identity on the retained effective variables. Thus \(K_{\mathrm{coh}}\) is not ``almost the identity'' on the full upstream space. It is the exact or approximate identity on the downstream admissible sector.
+\end{remark}
+
+\section{Point particles, point charges, and finite source kernels}
+
+A point particle or point charge is usually encoded as
+\[
+\rho(x)=q\delta(x-x_0).
+\]
+The coherent replacement is
+\[
+\rho_{\mathrm{coh}}(x)=qK_{\mathrm{coh}}(x,x_0),
+\]
+or, in the heat-kernel model,
+\[
+\rho_\tau(x)=qH_\tau(x,x_0).
+\]
+
+The field equation becomes
+\[
+L\varphi_{\mathrm{coh}}=\rho_{\mathrm{coh}},
+\]
+with solution
+\[
+\varphi_{\mathrm{coh}}(x)=qG_{\mathrm{coh}}(x,x_0).
+\]
+
+In the heat model:
+\[
+\varphi_\tau(x)=qG_\tau(x,x_0).
+\]
+As \(\tau\downarrow0\), this converges to the standard point-source potential.
+
+\section{Contact interactions as coherent overlaps}
+
+A local contact interaction is often modeled by a zero-range kernel:
+\[
+V(x,y)=g\delta(x-y).
+\]
+The coherent replacement is
+\[
+V_{\mathrm{coh}}(x,y)=gK_{\mathrm{coh}}(x,y).
+\]
+For a quartic field interaction, the point-local expression
+\[
+\lambda\phi^4(x)
+\]
+can be replaced by an overlap vertex
+\[
+\lambda\int_{X^4}V_{\mathrm{coh}}(x_1,x_2,x_3,x_4)
+\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)\,dx_1\cdots dx_4,
+\]
+where a simple coherent model is
+\[
+V_{\mathrm{coh}}(x_1,x_2,x_3,x_4)
+=
+\int_X K_{\mathrm{coh}}(z,x_1)K_{\mathrm{coh}}(z,x_2)
+K_{\mathrm{coh}}(z,x_3)K_{\mathrm{coh}}(z,x_4)\,dz.
+\]
+
+This is the vertex-level analogue of the Green-function replacement:
+\[
+\delta \leadsto K_{\mathrm{coh}}.
+\]
+
+\section{Retarded and causal Green functions}
+
+The preceding sections used elliptic Green functions because the spectral theory is clean. Hyperbolic propagation requires causal support. The corresponding replacement is not
+\[
+G_{\mathrm{ret}}\delta
+\]
+as a point impulse, but a finite-source retarded response:
+\[
+L G_{\mathrm{ret,coh}} = K_{\mathrm{coh}}
+\]
+with support controlled by the causal propagation of the finite source.
+
+A basic model is
+\[
+G_{\mathrm{ret,coh}} = G_{\mathrm{ret}}\circ \Pi_{\mathrm{coh}}.
+\]
+If \(G_{\mathrm{ret}}\) has future-lightcone support and \(\Pi_{\mathrm{coh}}\) is spatial/internal on a fixed time slab, the causal response is the retarded propagation of an admissible source rather than an acausal point impulse.
+
+\begin{remark}[Scope]
+A fully rigorous hyperbolic version requires specifying the spacetime function spaces, wavefront-set control, and causal support assumptions. This paper only records the structural replacement. The elliptic and heat-kernel theorems above are the rigorous core.
+\end{remark}
+
+\section{Diagnostics and finite-width effects}
+
+The coherent Green-function replacement suggests several concrete diagnostics.
+
+\begin{enumerate}
+\item \textbf{Softened point sources.} Point-particle or point-charge singularities should be replaced by finite kernels at the coherence scale.
+\item \textbf{Finite diagonal response.} Coincident-point quantities are finite before the delta limit is taken.
+\item \textbf{Modified contact scattering.} Zero-range interactions acquire form factors determined by \(K_{\mathrm{coh}}\).
+\item \textbf{Resolution-dependent propagators.} Propagators become \(L^{-1}\Pi_{\mathrm{coh}}\), not \(L^{-1}\) on all modes.
+\item \textbf{Renormalization reinterpretation.} Divergences track the cost of taking \(K_{\mathrm{coh}}\to\delta\) too aggressively.
+\end{enumerate}
+
+\section{Relation to the delta/projection paper}
+
+The preceding paper established the general diagnostic:
+\[
+\text{find the delta} \quad\Rightarrow\quad \text{identify the hidden projection}.
+\]
+The present paper executes the first instance:
+\[
+LG=\delta
+\quad\Rightarrow\quad
+LG_{\mathrm{coh}}=K_{\mathrm{coh}}.
+\]
+
+Thus the Green function is not abandoned. It is reclassified:
+\[
+\boxed{
+\text{ordinary Green function}=\text{singular limit of coherent finite-source response}.
+}
+\]
+
+\section{Conclusion}
+
+The Dirac delta enters Green-function theory as the ideal point source. MTT suggests that this should not be treated as primitive. The native object is a bounded admissible kernel: a finite coherent identity on the retained sector.
+
+The rigorous theorem is simple: finite spectral Green functions \(G_\Lambda=L^{-1}\Pi_\Lambda\) and heat-filtered Green functions \(G_\tau=L^{-1}e^{-\tau\Delta}\) are smooth finite-source responses that converge distributionally to the ordinary Green function only in the singular limit. Their diagonal values are finite before that limit is taken.
+
+This provides the first worked sequel to the delta/projection principle. It turns the slogan
+\[
+\delta=\text{singular shadow of projection}
+\]
+into the operational replacement
+\[
+LG=\delta
+\quad\leadsto\quad
+LG_{\mathrm{coh}}=K_{\mathrm{coh}}.
+\]
+
+The next natural steps are to apply the same replacement to gauge fixing, measurement kernels, and perturbative QFT vertices.
+
+\begin{thebibliography}{9}
+
+\bibitem{Hormander}
+L. H{\"o}rmander,
+\emph{The Analysis of Linear Partial Differential Operators},
+Springer.
+
+\bibitem{Taylor}
+M. E. Taylor,
+\emph{Partial Differential Equations I--III},
+Springer.
+
+\bibitem{Roe}
+J. Roe,
+\emph{Elliptic Operators, Topology and Asymptotic Methods},
+Chapman and Hall/CRC.
+
+\bibitem{Gilkey}
+P. Gilkey,
+\emph{Invariance Theory, the Heat Equation, and the Atiyah--Singer Index Theorem},
+CRC Press.
+
+\bibitem{ReedSimon}
+M. Reed and B. Simon,
+\emph{Methods of Modern Mathematical Physics},
+Academic Press.
+
+\bibitem{NeroDelta}
+P. Nero,
+\emph{Dirac Delta Functions as Singular Shadows of Admissible Projection in Modal Triplet Theory},
+2026.
+
+\bibitem{NeroFP}
+P. Nero,
+\emph{Fixed Points over Multi-Bundle Manifolds} and related Fixed Points series papers,
+2025--2026.
+
+\end{thebibliography}
+
+\end{document}

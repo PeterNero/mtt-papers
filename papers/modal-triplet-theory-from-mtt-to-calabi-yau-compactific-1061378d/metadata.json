@@ -1,0 +1,88 @@
+{
+  "abstract": "We prove that Modal Triplet Theory (MTT) contains a Calabi\u2013Yau (CY) corner: there exist coherent fixed points whose internal six\u2013manifold is Calabi\u2013Yau and for which the MTT fixed\u2013point projection produces exactly the same ten\u2013dimensional background, worldsheet \\sigma\u2013model, and four\u2013dimensional effective theory as standard CY compactifications. We further show that the additional MTT admissibility constraints\u2014a uniform spectral gap above zero modes, bounded harmonic/projector maps, and commuting modal Laplacians across the three gauge layers\u2014are compatible with (and often automatic on) compact CY backgrounds equipped with Hermitian Yang\u2013Mills bundles. Consequently, MTT does not break CY physics; it selects a thick, well\u2013controlled subset and correlates parameters that ordinary CY model building treats as independent. We then import the full CY machinery (spectra, Yukawas, thresholds, mirror symmetry) and explicitly recast it as functions of MTT parameters, deriving new low\u2013energy correlations. A worked T^6/\\mathbb{Z}_3 resolution example illustrates all checks and parameter maps.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "September 7, 2025",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.17071246",
+    "created": "2025-09-07T07:29:49.120477+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.17071247",
+    "files": [
+      {
+        "checksum": "md5:e08e7ec4faf9de352bda480a8b896831",
+        "content_url": "https://zenodo.org/api/records/17071247/files/Modal_Triplet_Theory__From_MTT_to_Calabi__Yau_Compactifications%20(1).pdf/content",
+        "key": "Modal_Triplet_Theory__From_MTT_to_Calabi__Yau_Compactifications (1).pdf",
+        "size": 323423
+      }
+    ],
+    "id": "17071247",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2025-09-07",
+    "record_url": "https://zenodo.org/records/17071247",
+    "resource_type": "publication",
+    "title": "Modal Triplet Theory: From MTT to Calabi--Yau Compactifications",
+    "updated": "2025-09-07T07:29:49.466137+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "f8634107ddc4b8f2b3c97e7c2db66e3932c2f6cb2821b0bfa2ce7ef27e9c3a16",
+  "paper_id": "modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d",
+  "paper_md_sha256": "fd34ae70c21933f887d341812c3b9877900faebbc1e9d81d3ce8e2d2b4d42243",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 4287,
+      "path": "main.bib",
+      "sha256": "dde0f337a409f4e4e727940727cc9fd3bdbe2265489b763531161a6cb6ebe520"
+    },
+    {
+      "bytes": 20053,
+      "path": "main.tex",
+      "sha256": "f8634107ddc4b8f2b3c97e7c2db66e3932c2f6cb2821b0bfa2ce7ef27e9c3a16"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_Calabi__Yau_Compactifications"
+  },
+  "source_tree_sha256": "0e48b81d05f1721e8c048251ccb9ea9d3228f711761d54ea6734ec1205aaa5ec",
+  "title": "Modal Triplet Theory: From MTT to Calabi\u2013Yau Compactifications: Existence, Compatibility, and Phenomenology",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17071246",
+      "created": "2025-09-07T07:29:49.120477+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.17071247",
+      "files": [
+        {
+          "checksum": "md5:e08e7ec4faf9de352bda480a8b896831",
+          "content_url": "https://zenodo.org/api/records/17071247/files/Modal_Triplet_Theory__From_MTT_to_Calabi__Yau_Compactifications%20(1).pdf/content",
+          "key": "Modal_Triplet_Theory__From_MTT_to_Calabi__Yau_Compactifications (1).pdf",
+          "size": 323423
+        }
+      ],
+      "id": "17071247",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2025-09-07",
+      "record_url": "https://zenodo.org/records/17071247",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: From MTT to Calabi--Yau Compactifications",
+      "updated": "2025-09-07T07:29:49.466137+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

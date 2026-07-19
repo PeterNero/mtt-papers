@@ -1,0 +1,88 @@
+{
+  "abstract": "We show how quantum field theory arises as an effective statistical representation of coherence basin ensembles, under the same admissibility, regularity, and coarse-graining assumptions used elsewhere in the coherence-capacity framework. We show that quantum fields arise as collective variables encoding statistics of localized coherence basins, while quantum states correspond to ensemble distributions over admissible basins. Correlation functions, operators, and Hilbert-space structure emerge as bookkeeping devices for basin statistics, rather than fundamental ontological entities. This reconstruction explains the origin of operator algebras, superposition, and probabilistic measurement without postulating fundamental wave functions or fields.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18256429",
+    "created": "2026-01-21T04:58:25.570218+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18322089",
+    "files": [
+      {
+        "checksum": "md5:2479529b98bc39417f4de8cc5aee55b2",
+        "content_url": "https://zenodo.org/api/records/18322089/files/Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2%20(1).pdf/content",
+        "key": "Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2 (1).pdf",
+        "size": 190291
+      }
+    ],
+    "id": "18322089",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18322089",
+    "resource_type": "publication",
+    "title": "Quantum Field Theory Reconstruction from Coherence Basin Statistics",
+    "updated": "2026-01-21T04:58:25.980185+00:00",
+    "version": "v2.0"
+  },
+  "main_tex_sha256": "dd5d9aab4b0197e1f124b67fb7889c07c395820c54ac3dc92993bfb2bd1b4e4a",
+  "paper_id": "quantum-field-theory-reconstruction-from-coherence-basi-ef12097a",
+  "paper_md_sha256": "abe0f058aef41b203568aed80b16379d2a0336b6d34b32ce54d40c100fcf87cc",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 14484,
+      "path": "main.tex",
+      "sha256": "dd5d9aab4b0197e1f124b67fb7889c07c395820c54ac3dc92993bfb2bd1b4e4a"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "14 Coherence Capacity Program/_work/Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2"
+  },
+  "source_tree_sha256": "ae4190d560651eefe5c0accac4f766306f02c7a6a9744841ce8dcea572b37d3b",
+  "title": "Quantum Field Theory Reconstruction from Coherence Basin Statistics",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18256429",
+      "created": "2026-01-21T04:58:25.570218+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18322089",
+      "files": [
+        {
+          "checksum": "md5:2479529b98bc39417f4de8cc5aee55b2",
+          "content_url": "https://zenodo.org/api/records/18322089/files/Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2%20(1).pdf/content",
+          "key": "Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2 (1).pdf",
+          "size": 190291
+        }
+      ],
+      "id": "18322089",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18322089",
+      "resource_type": "publication",
+      "title": "Quantum Field Theory Reconstruction from Coherence Basin Statistics",
+      "updated": "2026-01-21T04:58:25.980185+00:00",
+      "version": "v2.0"
+    }
+  ]
+}

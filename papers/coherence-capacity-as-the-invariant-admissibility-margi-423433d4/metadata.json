@@ -1,0 +1,88 @@
+{
+  "abstract": "Across the Modal Triplet Theory (MTT) corpus, effective physical descriptions are shown to exist only within restricted admissible domains controlled by spectral gaps, projector regularity, and truncation stability. Outside these domains, effective evolution becomes irreversible despite invertibility of the underlying dynamics. In this paper we extract and formalize the invariant structure underlying these results. We show that all MTT admissibility conditions define a single finite stability margin, which we term coherence capacity. Coherence capacity is not an additional dynamical field, but a scalar measure of how much projection-based effective description can be supported before controlled truncation fails. We prove, in MTT-native language, that exhaustion of coherence capacity implies the nonexistence of a global measurable section of the coherent projection, yielding effective irreversibility as a structural necessity. This formulation does not modify existing MTT constructions; it compresses them, making explicit which aspects of MTT are contingent and which are unavoidable in any projection-based theory with finite control margins.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v3",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18255975",
+    "created": "2026-01-21T04:52:56.600701+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18322057",
+    "files": [
+      {
+        "checksum": "md5:ccb4c3a3127619ab74466142ea1c6f79",
+        "content_url": "https://zenodo.org/api/records/18322057/files/Coherence_Capacity_as_the_Invariant_Admissibility_Margin_of_Modal_Triplet_Theory_v3.pdf/content",
+        "key": "Coherence_Capacity_as_the_Invariant_Admissibility_Margin_of_Modal_Triplet_Theory_v3.pdf",
+        "size": 271266
+      }
+    ],
+    "id": "18322057",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18322057",
+    "resource_type": "publication",
+    "title": "Coherence Capacity as the Invariant Admissibility Margin of Modal Triplet Theory",
+    "updated": "2026-01-21T04:52:57.024992+00:00",
+    "version": "v3.0"
+  },
+  "main_tex_sha256": "7af26b805cf9d8eeef642d19a2a017de6def912b1dee55e99e36c431268a4ffe",
+  "paper_id": "coherence-capacity-as-the-invariant-admissibility-margi-423433d4",
+  "paper_md_sha256": "6ea36f9561b67fdacc34a3b94ada986ac2bdeef63b4aedfe4e38b3714d3c711d",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 15107,
+      "path": "main.tex",
+      "sha256": "7af26b805cf9d8eeef642d19a2a017de6def912b1dee55e99e36c431268a4ffe"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "14 Coherence Capacity Program/_work/Coherence_Capacity_as_the_Invariant_Admissibility_Margin_of_Modal_Triplet_Theory_v3"
+  },
+  "source_tree_sha256": "b2c1aa4f9429acc372ea9a724be541648cd5df1e9fb0234b97dd023024a3ba06",
+  "title": "Coherence Capacity as the Invariant Admissibility Margin of Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255975",
+      "created": "2026-01-21T04:52:56.600701+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18322057",
+      "files": [
+        {
+          "checksum": "md5:ccb4c3a3127619ab74466142ea1c6f79",
+          "content_url": "https://zenodo.org/api/records/18322057/files/Coherence_Capacity_as_the_Invariant_Admissibility_Margin_of_Modal_Triplet_Theory_v3.pdf/content",
+          "key": "Coherence_Capacity_as_the_Invariant_Admissibility_Margin_of_Modal_Triplet_Theory_v3.pdf",
+          "size": 271266
+        }
+      ],
+      "id": "18322057",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18322057",
+      "resource_type": "publication",
+      "title": "Coherence Capacity as the Invariant Admissibility Margin of Modal Triplet Theory",
+      "updated": "2026-01-21T04:52:57.024992+00:00",
+      "version": "v3.0"
+    }
+  ]
+}

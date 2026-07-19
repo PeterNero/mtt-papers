@@ -1,0 +1,198 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathtools}
+\usepackage{bm}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cite}
+\usepackage{mathtools}
+\usepackage[numbers]{natbib} 
+\usepackage[nameinlink,capitalise]{cleveref}
+
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\Nil}{\mathrm{Nil}}
+\newcommand{\Trgrav}{\mathrm{Tr}_{\mathrm{grav}}}
+\newcommand{\Rplus}{R_{+}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\Kahler}{K\"ahler}
+\newcommand{\J}{J}
+\newcommand{\Om}{\Omega}
+\newcommand{\LensNil}{\text{Lens}\times\text{Nil}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\vol}{\mathrm{vol}}
+\newcommand{\MTT}{Modal Triplet Theory}
+\newcommand{\Hcoh}{\mathcal{H}_{\text{coh}}}
+\newcommand{\Dprop}{\Delta_{\mathrm{prop}}}
+\newcommand{\DBV}{\Delta_{\mathrm{BV}}}
+\newcommand{\Fform}{F}
+\newcommand{\LSPT}{\Lambda}
+\newcommand{\lamgap}{\lambda_{\ast}}
+\newcommand{\alphap}{\alpha'}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{note}[theorem]{Note}
+% --- Custom Commands ---
+
+\theoremstyle{definition}
+\theoremstyle{plain}
+\theoremstyle{remark}
+
+% cross-referencing helpers
+\newcommand{\secref}[1]{Section~\ref{#1}}
+\newcommand{\appref}[1]{Appendix~\ref{#1}}
+\newcommand{\thmref}[1]{Theorem~\ref{#1}}
+\newcommand{\propref}[1]{Proposition~\ref{#1}}
+\newcommand{\lemref}[1]{Lemma~\ref{#1}}
+
+\title{Modal Triplet Theory: From MTT to String Theory:\\
+A First-Principles Embedding with Worldsheet Projection}
+\author{\normalsize Peter Nero}
+\date{September 6, 2025}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present a bridge from Modal Triplet Theory (MTT) to perturbative string theory.
+Starting from a ten-dimensional coherent fixed point
+\((\mathcal{M}_{10},G_{MN},B_{MN},\Phi;A_{M})\), we show:
+(i) a bounded worldsheet projection \(\Pi_{\mathrm{ws}}\) produces the Polyakov/RNS actions;
+(ii) vanishing worldsheet $\beta$--functions holds to the same order in $\alphap$ as the MTT string-frame action,
+yielding ``fixed point $\Rightarrow$ conformal background'' to controlled order, up to local field redefinitions;
+(iii) Green--Schwarz anomaly cancellation and tadpole constraints follow from the MTT topological data with
+$\alphap/4$ normalization and the torsional spin connection $\Rplus$;
+(iv) compactifications (Calabi--Yau and torsional SU(3)) and gauge bundles emerge from modal holonomy and curvature-gap dynamics;
+(v) T-duality is exact spectral equivalence on $S^{1}$, while S-duality is formulated as a modal-landscape conjecture. We record an AdS corner where a GKPW-type functional emerges at the fixed point
+\end{abstract}
+
+\tableofcontents
+
+% =========================================================
+\section{Introduction and motivation}
+MTT posits a ten-dimensional field ontology with three internal bundles and a bounded joint projector.
+A contractive flow yields a unique fixed point $\Psi^{*}$ that governs low-energy physics.  
+We ask: when does $\Psi^{*}$ define a string-consistent background?
+Answer: (i) map $(G,B,\Phi;A)$ to target-space data; (ii) derive worldsheet actions by $\Pi_{\mathrm{ws}}$;
+(iii) show $\beta=0$ to controlled order in $\alphap$, consistent with the Strominger slice and the 11D lift.
+
+% =========================================================
+\section{Target-space data from MTT and trace conventions}
+At the fixed point, identify:
+\begin{equation}
+H = dB - \frac{\alphap}{4}\big(\omega_{3}(A)-\omega_{3}(\omega_{+})\big), \qquad
+dH = \frac{\alphap}{4}\left(\Trgrav \Rplus\wedge \Rplus - \Tr F\wedge F\right).
+\label{eq:GS}
+\end{equation}
+Here $\omega_{+}$ is the Bismut/Hull connection with curvature $\Rplus$.
+
+\paragraph{Trace conventions.}
+We use $\Tr$ for the gauge adjoint trace, normalized so that $\Tr(T^{2})=1$ for any abelian generator $T$,
+and $\Trgrav$ for the vector trace on $\mathfrak{so}(d)$.  
+These conventions match our heterotic flux compactifications and Strominger selection paper.
+
+\paragraph{Scheme remark.}
+$\beta$-function equations are scheme-dependent at $O(\alphap^{2})$; we always mean equality up to local field redefinitions
+that preserve on-shell amplitudes.
+
+% =========================================================
+\section{Worldsheet action from a bounded projection}
+Let $X:\Sigma\to\mathcal{M}_{10}$. Pull back via $\Pi_{\mathrm{ws}}$.  
+The bosonic action is
+\begin{equation}
+S_{\text{bos}} = -\frac{1}{4\pi\alphap}\!\int_{\Sigma}\!\!\sqrt{-h}\,h^{ab}G_{MN}\partial_{a}X^{M}\partial_{b}X^{N}
++ \frac{1}{4\pi\alphap}\!\int_{\Sigma}\!\!\epsilon^{ab}B_{MN}\partial_{a}X^{M}\partial_{b}X^{N}
++ \frac{1}{4\pi}\!\int_{\Sigma}\!\!\sqrt{-h}\,\Phi R^{(2)}.
+\end{equation}
+In RNS, fermions couple via the pullback spin connection; the full action is
+$S_{\mathrm{ws}}=S_{\text{bos}}+S_{\text{ferm}}+S_{\text{ghosts}}$.  
+BRST nilpotency $\Leftrightarrow$ $\beta=0$ at controlled order.
+
+% =========================================================
+\section{Vanishing $\beta$ functions from the fixed point}
+At leading order in $\alphap$:
+\begin{align}
+\beta^{G}_{MN} &= \alphap\!\left(R_{MN} - \tfrac{1}{4}H_{MPQ}H_{N}{}^{PQ} + 2\nabla_{M}\nabla_{N}\Phi\right)+\cO(\alphap^{2}),\\
+\beta^{B}_{MN} &= \alphap\!\left(-\tfrac{1}{2}\nabla^{P}H_{PMN} + \nabla^{P}\Phi\,H_{PMN}\right)+\cO(\alphap^{2}),\\
+\beta^{\Phi} &= \frac{D-26}{6} - \frac{\alphap}{2}\Big(\nabla^{2}\Phi - 2(\nabla\Phi)^{2} + \tfrac{1}{12}H^{2}\Big)+\cO(\alphap^{2}),
+\end{align}
+with $D=10$ for superstrings (ghost/fermion shifts cancel the constant).  
+The gauge $\beta$ enforces HYM.
+
+\begin{theorem}[Fixed point $\Rightarrow$ $\beta=0$ to order $\alphap^{n}$]
+If the MTT string-frame action matches 10D supergravity+$\alphap$ corrections to $\alphap^{n}$
+and $\Psi^{*}$ solves the projected EL equations with $\Rplus$, then $(G,B,\Phi;A)$ satisfies $\beta^{G}=\beta^{B}=\beta^{\Phi}=0$ to $\alphap^{n}$,
+up to field redefinitions.
+\end{theorem}
+
+% =========================================================
+\section{Consistency: anomalies, Bianchi, supersymmetry}
+With \eqref{eq:GS}, anomaly cancellation is manifest.
+
+\begin{proposition}
+If $\int_{C_{4}}\Tr F^{2} = \int_{C_{4}}\Trgrav R_{+}^{2}$ for all 4-cycles $C_{4}\subset X_{6}$,
+then the Bianchi identity holds at the fixed point.
+\end{proposition}
+
+\begin{remark}
+In the torsional SU(3) slice (balanced metrics, HYM bundles), the Hull–Strominger system arises:
+$d(e^{-2\Phi}J^{2})=0$, $F^{0,2}=J\lrcorner F=0$, $H=i(\bar\partial-\partial)J$, $dH=\frac{\alphap}{4}(\Trgrav R_{+}^{2}-\Tr F^{2})$.
+Our selection theorem proves strict convexity: the Strominger solution is the unique minimizer = MTT fixed point  (\cite{NeroStrominger2025}).
+\end{remark}
+
+\paragraph{Modular invariance.}
+In the CY/toroidal corner, the one-loop partition function is modular-invariant; $\tau_{2}\to 0$ maps to $\tau_{2}\to\infty$,
+ensuring UV finiteness. See our UV paper for a full derivation  (\cite{NeroQG2025}).
+
+% =========================================================
+\section{Compactification and 4D EFT}
+The 10D action reduces to
+\begin{equation}
+S_{4}=\frac{1}{2\kappa_{4}^{2}}\int d^{4}x\sqrt{-g_{4}}\left(R_{4}-\tfrac{1}{2}G_{IJ}\partial\varphi^{I}\partial\varphi^{J}-V_{\text{eff}}(\varphi)\right)
++ S_{\text{gauge}}+S_{\text{Yuk}}+\cdots,
+\end{equation}
+with
+\begin{equation}
+\frac{1}{g_{4}^{2}}=\frac{1}{g_{10}^{2}}\,\mathrm{Vol}(X_{6})\,e^{-2\Phi_{0}}.
+\end{equation}
+Yukawas come from internal overlaps. In MTT, curvature–gap dynamics fix $V_{\text{eff}}$.
+
+% =========================================================
+\section{Dualities and holography}
+\paragraph{T-duality.}
+On $S^{1}_{R}$: $M^{2}=n^{2}/R^{2}+w^{2}R^{2}/\alphap^{2}+\cdots$ invariant under $(n,w;R)\mapsto(w,n;\alphap/R)$.  
+\paragraph{S-duality.}
+Conjectural map exchanging weak/strong fixed points $g_{s}\leftrightarrow 1/g_{s}$ and topological sectors.  
+\paragraph{Holography.}
+At AdS fixed points, $Z_{\text{bulk}}[\phi_{0}]=e^{-S_{\text{on-shell}}[\phi_{0}]}$ produces boundary correlators.
+
+% =========================================================
+\section{Alignment}
+The torsional SU(3) slice selection theorem proves uniqueness of Strominger solutions  (\cite{NeroStrominger2025}).
+The 11D lift reproduces shifted $G_{4}$ quantization and M5 anomaly  (\cite{NeroMtheory2025}).
+Together, the string, flux, and M-theory slices are mutually consistent.
+
+% =========================================================
+\section{Conclusions}
+We have embedded perturbative string theory within MTT with consistent conventions,
+avoiding regressions. Fixed points yield target data; $\Pi_{\mathrm{ws}}$ gives worldsheet actions;
+$\beta=0$ follows to order $\alphap^{n}$ with $\Rplus$; anomaly cancellation is manifest; compactifications,
+dualities, and holography align with heterotic flux selection and 11D lifts.
+
+\bigskip
+\nocite{*}
+\bibliographystyle{plain} % or abbrv, unsrt, alpha, etc
+\bibliography{main}
+
+\end{document}
+\typeout{get arXiv to do 4 passes: Label(s) may have changed. Rerun}

@@ -1,0 +1,88 @@
+{
+  "abstract": "We derive a Tier\u20131 layer of predictions in Modal Triplet Theory (MTT) using topology and admissibility alone, without invoking renormalization group flow, collapse dynamics, or spectral actions. Matter fields are modeled as globally admissible sections of overlap bundles formed from three internal bundles. This immediately quantizes hypercharge on a discrete lattice determined by integral cohomology, forbids anomalous representations as topological obstructions in determinant line bundles, and excludes broad classes of baryon- and lepton-number violating operators (including leading proton decay operators) as globally inadmissible bundle products. We also obtain topological constraints on neutrino mass terms: Majorana masses require a global real structure on the relevant overlap bundle. These results supply early falsifiability criteria independent of Planck-scale dynamics. All statements are slab-local and admissibility-conditioned, but require no dynamics beyond global definability of overlap sections.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18261773",
+    "created": "2026-01-15T19:54:19.755571+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18261774",
+    "files": [
+      {
+        "checksum": "md5:4a5d578a2e594935dc51fa98fcae11a9",
+        "content_url": "https://zenodo.org/api/records/18261774/files/Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory%20(2).pdf/content",
+        "key": "Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory (2).pdf",
+        "size": 281504
+      }
+    ],
+    "id": "18261774",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18261774",
+    "resource_type": "publication",
+    "title": "Topology-Only Constraints and Forbidden Operators in Modal Triplet Theory",
+    "updated": "2026-01-15T19:54:20.203429+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "6b499ecf6a39c5ab945542e7ca01cf2863157ebcd20d8c5d3dd9761923c7823b",
+  "paper_id": "topology-only-constraints-and-forbidden-operators-in-mo-90db2212",
+  "paper_md_sha256": "ba604740ff84c204ba866eb0f06115c7c4bee4feb898e131270c9185ebdf6333",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 21172,
+      "path": "main.tex",
+      "sha256": "6b499ecf6a39c5ab945542e7ca01cf2863157ebcd20d8c5d3dd9761923c7823b"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "b99905decca1bd68e14f08eec6572be44d06b346ebb462ae46d63bdfb728f074",
+  "title": "Topology-Only Constraints and Forbidden Operators in Modal Triplet Theory Anomaly cancellation, hypercharge quantization, and early falsifiability from overlap bundles",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261773",
+      "created": "2026-01-15T19:54:19.755571+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18261774",
+      "files": [
+        {
+          "checksum": "md5:4a5d578a2e594935dc51fa98fcae11a9",
+          "content_url": "https://zenodo.org/api/records/18261774/files/Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory%20(2).pdf/content",
+          "key": "Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory (2).pdf",
+          "size": 281504
+        }
+      ],
+      "id": "18261774",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18261774",
+      "resource_type": "publication",
+      "title": "Topology-Only Constraints and Forbidden Operators in Modal Triplet Theory",
+      "updated": "2026-01-15T19:54:20.203429+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

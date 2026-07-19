@@ -1,0 +1,93 @@
+{
+  "abstract": "We show that gravity arises as a necessary encoding class once coherent kinematics is defined in the absence of a global reduced description. Building on the structural core of Modal Triplet Theory and its kinematic formulation, we demonstrate that stabilization of kinematic persistence across overlapping descriptions in the presence of circle obstructions requires additional bookkeeping structure. This structure enforces consistency of admissible continuation around closed overlap chains and couples all kinematic degrees of freedom universally. Gravity is therefore not introduced as a fundamental interaction, dynamical law, or geometric axiom. It is identified as the unique encoding that resolves loop-dependent kinematic inconsistency by organizing overlap compatibility. Geometric notions such as connection, curvature, and metric structure appear as realizations of this encoding in suitable realization classes, but are not assumed at the structural level. This paper establishes gravity as an inevitable response to the coexistence of local describability, kinematic persistence, and global obstruction, and prepares the ground for subsequent encoding-class papers on gauge structure and quantization.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18355019",
+    "created": "2026-01-23T20:03:27.705835+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18355020",
+    "files": [
+      {
+        "checksum": "md5:064a8c0651cc689c08afcd807ed27958",
+        "content_url": "https://zenodo.org/api/records/18355020/files/The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding%20(1).pdf/content",
+        "key": "The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding (1).pdf",
+        "size": 241059
+      }
+    ],
+    "id": "18355020",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-23",
+    "record_url": "https://zenodo.org/records/18355020",
+    "resource_type": "publication",
+    "title": "The Modal Triplet Theory Program B1: Gravity as Kinematic Consistency Encoding",
+    "updated": "2026-01-23T20:03:28.150092+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "b84404efbfe82ed0545cfe699795e7b70173f0e705ba6a0621ee61d963ad2d3d",
+  "paper_id": "the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38",
+  "paper_md_sha256": "6b41f6c23745d9ad3f958858f1dc47c98621f797ebbfd6e2314635a7cb2bb10d",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 33326,
+      "path": "main.bib",
+      "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
+    },
+    {
+      "bytes": 30235,
+      "path": "main.tex",
+      "sha256": "b84404efbfe82ed0545cfe699795e7b70173f0e705ba6a0621ee61d963ad2d3d"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding"
+  },
+  "source_tree_sha256": "ce68d15d1e65e403958c3a2ffa34b60fe052d1b1fcf37c6853d9ad0e9398eb03",
+  "title": "The Modal Triplet Theory Program B1: Gravity as Kinematic Consistency Encoding in the Modal Triplet Theory Program",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18355019",
+      "created": "2026-01-23T20:03:27.705835+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18355020",
+      "files": [
+        {
+          "checksum": "md5:064a8c0651cc689c08afcd807ed27958",
+          "content_url": "https://zenodo.org/api/records/18355020/files/The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding%20(1).pdf/content",
+          "key": "The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding (1).pdf",
+          "size": 241059
+        }
+      ],
+      "id": "18355020",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-23",
+      "record_url": "https://zenodo.org/records/18355020",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B1: Gravity as Kinematic Consistency Encoding",
+      "updated": "2026-01-23T20:03:28.150092+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

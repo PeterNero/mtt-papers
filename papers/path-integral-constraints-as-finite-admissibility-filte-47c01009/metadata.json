@@ -1,0 +1,43 @@
+{
+  "abstract": "Delta functionals occur throughout path-integral physics: as hard constraints, gauge-fixing conditions, phase-space reductions, Lagrange-multiplier insertions, and exact selection of histories. In standard formalism they are usually treated as distributional devices. This paper continues the delta/projection program by showing that a delta functional may be understood as the zero-width limit of a finite admissibility filter over histories. The rigorous core is finite-dimensional: for a smooth constraint map C:M\\to\\mathbb R^m with 0 a regular value, normalized Gaussian filters \\mathcal K_\\varepsilon(C(x))=(2\\pi\\varepsilon^2)^{-m/2}\\exp(-|C(x)|^2/2\\varepsilon^2) converge, as measures, to the surface delta \\delta(C(x))\\,dx, including the standard Jacobian factor from the coarea formula. The infinite-dimensional path-integral statement is then treated as a formal extension requiring regularization. In MTT language, the hard delta \\delta[C] is the singular limit of a finite admissibility weight \\exp[-J_{\\mathrm{adm}}/\\epsilon^2]. This also clarifies the relation between multiplier representations, large-penalty localization, and finite admissibility tubes, and unifies the interpretation of classical constraint shells, gauge-fixing deltas, and path-integral restrictions: exact constraint enforcement is the zero-width idealization of finite admissibility selection.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "unversioned",
+  "date": "April 2026",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "9c9b073f278d04d4f5f3963fdc3fcd829e1bbe4374860ba64b726b5b6b218e92",
+  "paper_id": "path-integral-constraints-as-finite-admissibility-filte-47c01009",
+  "paper_md_sha256": "f5deb0eabce070c7bfaf4ead989352821f7224560e0e0e047299cef95d869249",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 16531,
+      "path": "main.tex",
+      "sha256": "9c9b073f278d04d4f5f3963fdc3fcd829e1bbe4374860ba64b726b5b6b218e92"
+    },
+    {
+      "bytes": 16531,
+      "path": "path_integral_constraints_finite_admissibility_filters_strengthened.tex",
+      "sha256": "9c9b073f278d04d4f5f3963fdc3fcd829e1bbe4374860ba64b726b5b6b218e92"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "5 Dirac Delta/_work/Path_Integral_Constraints_as_Finite_Admissibility_Filters"
+  },
+  "source_tree_sha256": "74cbcaa1d09889f2cb68d496013a2c1b2940b91e948141edcfde21d0eddd18d2",
+  "title": "Path Integral Constraints as Finite Admissibility Filters Delta Functionals, Soft Constraints, and Projection in Modal Triplet Theory",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

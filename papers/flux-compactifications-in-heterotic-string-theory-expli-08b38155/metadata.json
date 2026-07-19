@@ -1,0 +1,88 @@
+{
+  "abstract": "We construct explicit heterotic flux compactifications on non-K\u00e4hler manifolds satisfying the Hull\u2013Strominger system and the Green\u2013Schwarz anomaly cancellation condition. Working with left-invariant SU(3) structures, we present concrete examples on Iwasawa and Lens\\timesNil geometries in which the torsion, gauge bundle data, and curvature contributions can be computed explicitly and matched componentwise. The resulting solutions exhibit sharply constrained parameter loci, illustrating how the combined geometric, bundle, and flux conditions restrict admissible compactifications. These constructions provide controlled test cases for heterotic compactifications beyond the Calabi\u2013Yau setting.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v3",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.17072372",
+    "created": "2026-01-10T09:53:11.552957+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18205997",
+    "files": [
+      {
+        "checksum": "md5:b179cf719126bedce773879944073f01",
+        "content_url": "https://zenodo.org/api/records/18205997/files/Flux_Compactifications_in_Heterotic_String_Theory_v3%20(2).pdf/content",
+        "key": "Flux_Compactifications_in_Heterotic_String_Theory_v3 (2).pdf",
+        "size": 452151
+      }
+    ],
+    "id": "18205997",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-10",
+    "record_url": "https://zenodo.org/records/18205997",
+    "resource_type": "publication",
+    "title": "Flux Compactifications in Heterotic String Theory",
+    "updated": "2026-01-19T14:43:51.994662+00:00",
+    "version": "v3.0"
+  },
+  "main_tex_sha256": "5b729318803c8e0b5bc9d43351d82bb5f85ec781c4c4c65882b0fa6ba436bedb",
+  "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+  "paper_md_sha256": "a15f3759735eeef5e7967df27c8af9ad0e38db93ddb4fca84226ff2ed878177a",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 45647,
+      "path": "main.tex",
+      "sha256": "5b729318803c8e0b5bc9d43351d82bb5f85ec781c4c4c65882b0fa6ba436bedb"
+    },
+    {
+      "bytes": 11054,
+      "path": "references.bib",
+      "sha256": "bb6a6e575da56ebd37e3f0245fea8eb889e6d1eded364ec5cb4016d37461c9d2"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Flux_Compactifications_in_Heterotic_String_Theory_v3"
+  },
+  "source_tree_sha256": "18f2499a29d92c2d415480fbd1af4c4b663de706da6db2dad629aecd76add3c0",
+  "title": "Flux Compactifications in Heterotic String Theory: Explicit Solutions on the Iwasawa Manifold and Lens\\timesNil Geometries",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17072372",
+      "created": "2026-01-10T09:53:11.552957+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18205997",
+      "files": [
+        {
+          "checksum": "md5:b179cf719126bedce773879944073f01",
+          "content_url": "https://zenodo.org/api/records/18205997/files/Flux_Compactifications_in_Heterotic_String_Theory_v3%20(2).pdf/content",
+          "key": "Flux_Compactifications_in_Heterotic_String_Theory_v3 (2).pdf",
+          "size": 452151
+        }
+      ],
+      "id": "18205997",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-10",
+      "record_url": "https://zenodo.org/records/18205997",
+      "resource_type": "publication",
+      "title": "Flux Compactifications in Heterotic String Theory",
+      "updated": "2026-01-19T14:43:51.994662+00:00",
+      "version": "v3.0"
+    }
+  ]
+}

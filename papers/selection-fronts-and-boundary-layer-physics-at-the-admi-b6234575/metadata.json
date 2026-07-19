@@ -1,0 +1,88 @@
+{
+  "abstract": "Recent work has suggested that the long-standing difficulty of vacuum selection in quantum gravity and high-energy theory reflects a mis-posed question: the assumption that physics is defined throughout configuration space. In admissibility-first approaches, physical description exists only on stability-selected regions, while large portions of configuration space are non-physical. In this paper we investigate the dynamical behavior near the boundary of admissibility. We argue that this boundary defines a distinct physical regime, which we call a selection front. Near the admissibility threshold, dynamics is governed by boundary-layer behavior characterized by large deviations, metastability, and non-perturbative sensitivity to control parameters. Standard effective descriptions fail in a controlled but abrupt manner. We analyze the universal features of selection fronts and explore their consequences for cosmology, black hole physics, quantum measurement, and the limits of effective field theory.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262388",
+    "created": "2026-01-15T21:35:54.281541+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262389",
+    "files": [
+      {
+        "checksum": "md5:768761d55ee881d09fc55aab789ab669",
+        "content_url": "https://zenodo.org/api/records/18262389/files/Selection_Fronts_and_Boundary_Layer_Physics_at_the_Admissibility_Threshold%20(2).pdf/content",
+        "key": "Selection_Fronts_and_Boundary_Layer_Physics_at_the_Admissibility_Threshold (2).pdf",
+        "size": 245555
+      }
+    ],
+    "id": "18262389",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262389",
+    "resource_type": "publication",
+    "title": "Selection Fronts and Boundary-Layer Physics at the Admissibility Threshold",
+    "updated": "2026-01-15T21:35:54.734289+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "6d88f36245d2b534fbc8d21a78e204945537d5fc342353c2a25ca944420d79b2",
+  "paper_id": "selection-fronts-and-boundary-layer-physics-at-the-admi-b6234575",
+  "paper_md_sha256": "5b59f06d718fd16e926c877a6c29b4ace3c1483da9a38257e7908025be2e0ecf",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 25462,
+      "path": "main.tex",
+      "sha256": "6d88f36245d2b534fbc8d21a78e204945537d5fc342353c2a25ca944420d79b2"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Selection_Fronts_and_Boundary_Layer_Physics_at_the_Admissibility_Threshold"
+  },
+  "source_tree_sha256": "eb16fa61bbb186ebbfe26914c258ffd558260f241b5a50b3efe28036971d3bca",
+  "title": "Selection Fronts and Boundary-Layer Physics at the Admissibility Threshold",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262388",
+      "created": "2026-01-15T21:35:54.281541+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262389",
+      "files": [
+        {
+          "checksum": "md5:768761d55ee881d09fc55aab789ab669",
+          "content_url": "https://zenodo.org/api/records/18262389/files/Selection_Fronts_and_Boundary_Layer_Physics_at_the_Admissibility_Threshold%20(2).pdf/content",
+          "key": "Selection_Fronts_and_Boundary_Layer_Physics_at_the_Admissibility_Threshold (2).pdf",
+          "size": 245555
+        }
+      ],
+      "id": "18262389",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262389",
+      "resource_type": "publication",
+      "title": "Selection Fronts and Boundary-Layer Physics at the Admissibility Threshold",
+      "updated": "2026-01-15T21:35:54.734289+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

@@ -1,0 +1,718 @@
+\documentclass[11pt]{article}
+
+\usepackage{series}
+
+\renewcommand\SeriesName{Modal Triplet Theory}
+\renewcommand\SeriesShort{Admissible Projection}
+\renewcommand\PartRoman{I}
+\renewcommand\PartArabic{1}
+\renewcommand\PartsInSeries{I}
+
+\title{\Large Dirac Delta Functions as Singular Shadows of Admissible Projection\\
+\large A Fixed-Point and Gauge-Theoretic Formulation in Modal Triplet Theory}
+\author{Peter Nero}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+\seriestagline
+
+\begin{abstract}
+Dirac delta distributions appear throughout physics as identity kernels, point sources,
+constraint enforcers, measurement idealizations, gauge-fixing devices, and conservation
+laws at interaction vertices. Their ubiquity is usually treated as a technical feature of
+continuum mathematics. This paper isolates a structural explanation compatible with
+Modal Triplet Theory (MTT): a Dirac delta is the singular downstream limit of an
+admissible projection when finite-width selection, coherent-sector truncation, or
+representative choice is idealized to zero width.
+
+The mathematical core is deliberately narrow. We prove that spectral projection kernels
+on a compact elliptic setting converge to the Dirac delta in the distributional sense, and
+we record the corresponding heat-kernel approximate identity. These standard analytic
+facts provide the rigorous anchor for the MTT interpretation: the native object in a
+finite-capacity coherent regime is not the exact identity kernel \(\delta(x-y)\), but a
+bounded coherent kernel \(K_{\mathrm{coh}}(x,y)\) induced by a coherent projector
+\(\Pi_{\mathrm{coh}}\). The delta is recovered only after an infinite-resolution or
+zero-width limit.
+
+We then apply this projection reading to Green kernels, canonical commutators, contact
+interactions, path-integral constraints, measurement, fixed-point basin selection, and
+gauge fixing. Gauge theory displays the same architecture explicitly: gauge freedom is
+uncollapsed projection redundancy, gauge fixing is local representative selection, the
+gauge-fixing delta is a singular section-selection kernel, and the Faddeev--Popov
+determinant is the projection Jacobian. The paper does not replace distribution theory,
+QFT, or gauge theory. It supplies a diagnostic principle: wherever a physical theory writes
+a Dirac delta, one should ask which finite admissible projection, filter, basin, or quotient
+operation has been idealized as exact.
+\end{abstract}
+
+\tableofcontents
+
+\section{Purpose and claim discipline}
+
+The purpose of this paper is to isolate a recurring mathematical pattern in physical
+theories and reinterpret it through the projection-first architecture of MTT.
+
+The recurring pattern is the Dirac delta. It appears as:
+\begin{enumerate}
+\item the identity kernel \(\delta(x-y)\);
+\item a point source \(\delta(x-x_0)\);
+\item a hard constraint \(\delta(C[x])\);
+\item a sharp measurement outcome;
+\item a gauge-fixing slice selector;
+\item a conservation law at interaction vertices;
+\item a spectral selector \(\delta(E-E_n)\);
+\item a contact interaction or coincidence-limit singularity.
+\end{enumerate}
+
+The central claim is structural:
+\[
+\boxed{\text{a Dirac delta marks where a finite admissible process has been
+idealized as exact zero-width selection.}}
+\]
+
+\subsection{Non-claims}
+
+This paper does not claim:
+\begin{enumerate}
+\item that distribution theory is mathematically invalid;
+\item that ordinary QFT must be reformulated from scratch;
+\item that the coherent-kernel replacement is numerically evaluated here for all physical sectors;
+\item that every delta function has the same microscopic realization;
+\item that the proposed reading alone solves renormalization, measurement, or quantum gravity.
+\end{enumerate}
+
+The narrower claim is:
+
+\begin{quote}
+In any MTT-compatible effective description, a Dirac delta should be read as a
+singular encoding of a bounded projection, admissibility filter, survivor-basin
+selection, or representative-choice operation whenever that effective description
+arises by coherent truncation or quotienting.
+\end{quote}
+
+\section{Fixed-point backbone: projection before delta}
+
+The fixed-point framework supplies the analytic backbone for the present proposal.  The
+basic structure is
+\begin{equation}
+T_t=\Pi_{\mathrm{coh}}\circ \Phi_t,
+\end{equation}
+where \(\Phi_t\) is a smoothing or dissipative flow on the underlying modal configuration
+space and \(\Pi_{\mathrm{coh}}\) is a bounded coherent projector onto the joint harmonic or
+coherent sector.  The map \(T_t\) is the projected evolution whose fixed points define
+stable coherent regimes.
+
+If \(\Pi_{\mathrm{coh}}\) admits an integral kernel \(K_{\mathrm{coh}}\), then
+\begin{equation}
+(\Pi_{\mathrm{coh}}f)(x)=\int_X K_{\mathrm{coh}}(x,y)f(y)\,\dd y.
+\end{equation}
+Standard continuum physics often uses instead
+\begin{equation}
+f(x)=\int_X \delta(x-y)f(y)\,\dd y.
+\end{equation}
+The difference is the difference between a finite admissible identity and an ideal exact
+identity.  The MTT replacement principle is therefore
+\begin{equation}
+\boxed{\delta(x-y)\quad\leadsto\quad K_{\mathrm{coh}}(x,y).}
+\end{equation}
+
+\begin{definition}[Finite coherent identity kernel]
+Let \(\Pi_{\mathrm{coh}}\) be a bounded projection on a Hilbert space of fields over a
+domain \(X\).  If \(\Pi_{\mathrm{coh}}\) is represented by a distributional or smooth kernel
+\(K_{\mathrm{coh}}(x,y)\), then \(K_{\mathrm{coh}}\) is called the finite coherent identity
+kernel of that effective regime. It acts as an identity only on \(\Ran(\Pi_{\mathrm{coh}})\).
+\end{definition}
+
+\begin{remark}
+The phrase ``identity kernel'' is sector-relative.  A finite coherent kernel need not be
+the identity on the full upstream function space.  It is the identity on the retained
+admissible sector and a filter on everything else.
+\end{remark}
+
+\section{Spectral gaps and finite width}
+
+The fixed-point framework assumes a positive spectral separation between coherent and
+incoherent sectors.  In a standard elliptic model,
+\begin{equation}
+A|_{\Ran(Q)}\geq \lambda^\ast>0,\qquad Q=\Id-\Pi_{\mathrm{coh}}.
+\end{equation}
+This yields damping estimates of the form
+\begin{equation}
+\norm{A^{1/2}e^{-tA}Q}\lesssim t^{-1/2}e^{-\lambda^\ast t}.
+\end{equation}
+
+The interpretation used below is:
+\[
+\boxed{\text{finite spectral gap and finite damping margin imply finite projection width.}}
+\]
+The delta limit corresponds to an idealization in which coherent projection becomes
+infinitely sharp.  MTT does not begin with this sharpness.  It begins with bounded
+projection, finite spectral separation, and controlled truncation.
+
+A canonical model for the replacement is the heat kernel
+\begin{equation}
+H_\tau(x,y)\sim (4\pi \tau)^{-d/2}\exp\left(-\frac{\dist(x,y)^2}{4\tau}\right),
+\end{equation}
+with
+\begin{equation}
+\delta(x-y)=\lim_{\tau\downarrow 0}H_\tau(x,y)
+\end{equation}
+in the distributional sense.
+
+\section{Spectral projection kernels and the Dirac delta}
+
+This section supplies the narrow mathematical anchor.  The aim is not to prove that every
+occurrence of a Dirac delta in physics has the same origin.  The aim is to prove the
+precise analytic statement that a Dirac delta arises as the distributional limit of
+increasingly complete projection kernels.
+
+\begin{assumption}[Compact elliptic setting]\label{ass:compact-elliptic}
+Let \((X,g)\) be a compact smooth Riemannian manifold without boundary, or a compact
+domain with boundary equipped with a self-adjoint elliptic boundary condition. Let
+\(\Delta\geq 0\) be a nonnegative Laplace-type operator on \(L^2(X)\).  Let
+\[
+0\leq \lambda_0\leq \lambda_1\leq \lambda_2\leq \cdots
+\]
+be its eigenvalues, repeated with multiplicity, and let \(\{\phi_n\}_{n=0}^\infty\) be an
+orthonormal eigenbasis satisfying
+\begin{equation}
+\Delta \phi_n=\lambda_n\phi_n .
+\end{equation}
+\end{assumption}
+
+For \(\Lambda>0\), define the spectral projector
+\begin{equation}
+\Pi_\Lambda f=\sum_{\lambda_n\leq \Lambda}\ip{\phi_n}{f}\phi_n .
+\end{equation}
+Its Schwartz kernel is
+\begin{equation}
+K_\Lambda(x,y)=\sum_{\lambda_n\leq \Lambda}\phi_n(x)\overline{\phi_n(y)} .
+\end{equation}
+Then
+\begin{equation}
+(\Pi_\Lambda f)(x)=\int_X K_\Lambda(x,y)f(y)\,\dd\mathrm{vol}_g(y).
+\end{equation}
+
+\begin{theorem}[Spectral projection kernels converge to the Dirac delta]\label{thm:spectral-delta}
+Under \cref{ass:compact-elliptic}, for every \(f\in C^\infty(X)\),
+\begin{equation}
+\lim_{\Lambda\to\infty}\int_X K_\Lambda(x,y)f(y)\,\dd\mathrm{vol}_g(y)=f(x),
+\end{equation}
+with convergence in \(C^\infty(X)\).  Equivalently,
+\begin{equation}
+K_\Lambda(x,y)\longrightarrow \delta(x-y)
+\end{equation}
+in the sense of distributions on \(X\times X\), where \(\delta(x-y)\) denotes the kernel
+of the identity operator with respect to the Riemannian volume measure.
+\end{theorem}
+
+\begin{proof}
+By the spectral theorem, \(\{\phi_n\}\) is a complete orthonormal basis of \(L^2(X)\).
+Hence every \(f\in L^2(X)\) has the expansion
+\[
+f=\sum_{n=0}^{\infty} f_n\phi_n,\qquad f_n=\ip{\phi_n}{f},
+\]
+with convergence in \(L^2\).  For \(f\in C^\infty(X)\), elliptic regularity gives rapid
+decay of spectral coefficients: for every integer \(m\geq 0\),
+\begin{equation}
+\sum_{n=0}^{\infty}(1+\lambda_n)^m|f_n|^2<\infty .
+\end{equation}
+
+The truncated projection is
+\[
+\Pi_\Lambda f=\sum_{\lambda_n\leq \Lambda}f_n\phi_n,
+\]
+so
+\[
+f-\Pi_\Lambda f=\sum_{\lambda_n>\Lambda}f_n\phi_n.
+\]
+For every Sobolev index \(s\geq 0\),
+\begin{equation}
+\norm{f-\Pi_\Lambda f}_{H^s}^2
+=\sum_{\lambda_n>\Lambda}(1+\lambda_n)^s|f_n|^2 .
+\end{equation}
+The right-hand side tends to zero as \(\Lambda\to\infty\), because \(f\) is smooth and
+therefore has finite \(H^s\)-norm for every \(s\).  Hence \(\Pi_\Lambda f\to f\) in all
+Sobolev norms.  By Sobolev embedding, the convergence is in \(C^k\) for every finite
+\(k\).  Therefore
+\[
+\lim_{\Lambda\to\infty}(\Pi_\Lambda f)(x)=f(x)
+\]
+smoothly in \(x\).
+
+Since
+\[
+(\Pi_\Lambda f)(x)=\int_X K_\Lambda(x,y)f(y)\,\dd\mathrm{vol}_g(y),
+\]
+we obtain the stated convergence.  This is precisely the distributional defining property
+of the Dirac delta kernel.  Therefore \(K_\Lambda\to\delta\) distributionally on
+\(X\times X\).
+\end{proof}
+
+\begin{corollary}[Finite projection kernels are regularized deltas]\label{cor:finite-proj}
+For finite \(\Lambda\), \(K_\Lambda(x,y)\) is a finite-rank smooth kernel. It acts as the
+identity on \(\Ran(\Pi_\Lambda)\) and as a truncation on the full space.  Thus
+\(K_\Lambda\) is a finite-resolution identity kernel, while \(\delta(x-y)\) is the
+infinite-bandwidth identity kernel.
+\end{corollary}
+
+\begin{proof}
+Finite-rank smoothness follows from the finite sum defining \(K_\Lambda\).  The identity
+property on \(\Ran(\Pi_\Lambda)\) follows from idempotence:
+\(\Pi_\Lambda^2=\Pi_\Lambda\).  The limiting statement is \cref{thm:spectral-delta}.
+\end{proof}
+
+\begin{corollary}[MTT reading]\label{cor:mtt-reading}
+If the coherent sector of an MTT fixed-point regime is represented by a bounded spectral
+projector \(\Pi_{\mathrm{coh}}\), then its kernel
+\begin{equation}
+K_{\mathrm{coh}}(x,y)=\langle x|\Pi_{\mathrm{coh}}|y\rangle
+\end{equation}
+is the MTT-native replacement for the exact identity kernel \(\delta(x-y)\) on that
+regime.  The Dirac delta is recovered only when the coherent projection is idealized as
+complete, infinitely sharp, and free of finite-capacity remainder.
+\end{corollary}
+
+\begin{remark}
+\Cref{cor:mtt-reading} is interpretive rather than an additional analytic theorem.  The
+analytic theorem is the distributional convergence of spectral projection kernels.  The MTT
+claim is that physical deltas should be read through this projection structure whenever the
+relevant effective theory arises from coherent truncation.
+\end{remark}
+
+\section{Heat kernels as admissibility kernels}
+
+Spectral cutoffs are not the only regularized identity kernels.  Heat kernels provide the
+smoothest and most physically useful model.
+
+Let \(H_\tau(x,y)\) be the heat kernel of \(\Delta\):
+\begin{equation}
+e^{-\tau\Delta}f(x)=\int_X H_\tau(x,y)f(y)\,\dd\mathrm{vol}_g(y).
+\end{equation}
+Spectrally,
+\begin{equation}
+H_\tau(x,y)=\sum_{n=0}^{\infty}e^{-\tau\lambda_n}\phi_n(x)\overline{\phi_n(y)}.
+\end{equation}
+
+\begin{theorem}[Heat-kernel approximate identity]\label{thm:heat}
+For every \(f\in C^\infty(X)\),
+\begin{equation}
+\lim_{\tau\downarrow 0}\int_X H_\tau(x,y)f(y)\,\dd\mathrm{vol}_g(y)=f(x)
+\end{equation}
+in \(C^\infty(X)\).  Equivalently,
+\begin{equation}
+H_\tau(x,y)\to \delta(x-y)
+\end{equation}
+distributionally as \(\tau\downarrow 0\).
+\end{theorem}
+
+\begin{proof}
+The heat semigroup \(e^{-\tau\Delta}\) converges strongly to the identity on every Sobolev
+space \(H^s(X)\).  For smooth \(f\), this convergence holds in all Sobolev norms and hence,
+by Sobolev embedding, in \(C^k\) for every \(k\).  The kernel formulation gives the stated
+distributional convergence.
+\end{proof}
+
+\begin{remark}[Projection versus heat smoothing]
+A sharp spectral projector \(\Pi_\Lambda\) gives a band-limited coherent identity.  A heat
+kernel \(H_\tau\) gives a soft coherent identity with exponential high-frequency suppression.
+Both converge to \(\delta\) in singular limits.  In MTT applications, heat/proper-time kernels
+are often more natural because finite damping and finite coherence capacity are represented
+by exponential suppression rather than a hard spectral wall.
+\end{remark}
+
+\section{Inverse principle: delta as diagnostic}
+
+\begin{definition}[Delta diagnostic]\label{def:delta-diagnostic}
+The delta diagnostic is the following rule: whenever a physical theory contains a Dirac
+delta, ask which finite projection, admissibility filter, survivor-basin selection,
+representative choice, or coherent identity kernel has been idealized to zero width.
+\end{definition}
+
+This principle does not deny standard calculations.  It identifies where the calculation has
+hidden a projection step.
+
+\begin{example}[Green kernel]
+The equation
+\begin{equation}
+LG(x,y)=\delta(x-y)
+\end{equation}
+states that \(G\) is the response to a perfectly localized source.  The coherent replacement is
+\begin{equation}
+LG_{\mathrm{coh}}(x,y)=K_{\mathrm{coh}}(x,y).
+\end{equation}
+Thus the point source is replaced by an admissibly localized source.
+\end{example}
+
+\begin{example}[Canonical commutator]
+The standard equal-time relation
+\begin{equation}
+[\phi(t,x),\pi(t,y)]=i\hbar\delta(x-y)
+\end{equation}
+is replaced, in a projected coherent sector, by
+\begin{equation}
+[\phi_{\mathrm{coh}}(t,x),\pi_{\mathrm{coh}}(t,y)]
+=i\hbar K_{\mathrm{coh}}(x,y).
+\end{equation}
+Locality is not destroyed.  It becomes coherent-sector-local rather than infinitely sharp.
+\end{example}
+
+\section{Fixed points and delta concentration}
+
+In ordinary dynamical systems, convergence to a stable fixed point is often represented
+distributionally as
+\begin{equation}
+\rho_t\to \delta_{x_\ast}.
+\end{equation}
+In MTT this should be refined.  A fixed point \(\Psi_\ast\) of
+\begin{equation}
+T_t=\Pi_{\mathrm{coh}}\circ\Phi_t
+\end{equation}
+is the center of a stabilized coherent basin, not necessarily a literal zero-width state of the
+full upstream dynamics.
+
+The MTT-native statement is
+\begin{equation}
+\rho_t\to \rho_{\mathrm{basin},\Psi_\ast},
+\end{equation}
+where \(\rho_{\mathrm{basin},\Psi_\ast}\) has finite width determined by projection resolution,
+damping margins, disturbance floors, and the size of the basin of attraction.  The delta
+appears only in the singular limit:
+\begin{equation}
+\rho_{\mathrm{basin},\Psi_\ast}\to\delta_{\Psi_\ast}.
+\end{equation}
+
+\begin{proposition}[Projected fixed-point delta]\label{prop:fixed-delta}
+Suppose an admissible projected dynamics \(T_t\) has an attracting fixed point \(\Psi_\ast\)
+with a basin whose effective distribution at time \(t\) is \(\rho_t\). If \(\rho_t\) converges
+weakly to a probability measure \(\rho_\ast\) supported in a finite coherent basin
+\(B_\ast\), then the notation \(\rho_t\to\delta_{\Psi_\ast}\) is valid only after the further
+idealization that \(B_\ast\) has zero effective width.
+\end{proposition}
+
+\begin{proof}
+Weak convergence to \(\delta_{\Psi_\ast}\) means that all continuous test observables take the
+value associated with the single point \(\Psi_\ast\).  If the limiting measure is supported on
+a finite basin \(B_\ast\), then observables that vary across \(B_\ast\) distinguish
+\(\rho_\ast\) from \(\delta_{\Psi_\ast}\).  The delta notation is therefore justified only when
+the retained observable algebra cannot resolve the basin width, or in the additional
+zero-width limit.
+\end{proof}
+
+\section{Disturbance--damping balance and nonzero width}
+
+The fixed-point disturbance analysis supports the finite-width replacement.  For a
+non-harmonic mode with damping margin \(\gamma_{n,k}>0\) and disturbance strength
+\(\delta_{n,k}\), the Ornstein--Uhlenbeck regime gives
+\begin{equation}
+\sigma^2_{n,k}=\frac{\delta_{n,k}}{2\gamma_{n,k}}.
+\end{equation}
+Thus exact delta collapse requires either
+\begin{equation}
+\delta_{n,k}\to 0
+\end{equation}
+or
+\begin{equation}
+\gamma_{n,k}\to\infty.
+\end{equation}
+Neither is generic in finite-capacity MTT.  A Gaussian model for the finite stabilized kernel is
+\begin{equation}
+K_{\gamma,\delta}(x,x_0)\sim
+\exp\left[-\frac{(x-x_0)^2}{2\sigma^2}\right],
+\qquad
+\sigma^2=\frac{\delta}{2\gamma}.
+\end{equation}
+
+\section{Gauge as uncollapsed projection; delta as collapsed projection}
+
+Gauge theory provides the clearest standard example of the same architecture.
+
+Let \(\mathcal A\) be a space of gauge fields and \(\mathcal G\) the gauge group.  The
+physical configuration space is the quotient
+\begin{equation}
+\mathcal A/\mathcal G.
+\end{equation}
+The projection
+\begin{equation}
+\mathcal A\to\mathcal A/\mathcal G
+\end{equation}
+is many-to-one.  Gauge freedom is the visible persistence of that non-injectivity:
+\[
+\boxed{\text{gauge freedom}=\text{uncollapsed projection redundancy}.}
+\]
+In MTT language, this is lens structure.
+
+Gauge fixing imposes a condition
+\begin{equation}
+G[A]=0.
+\end{equation}
+This selects a representative slice through each gauge orbit.  The Faddeev--Popov identity
+has the formal form
+\begin{equation}
+1=\Delta_{\mathrm{FP}}[A]\int \mathcal D\alpha\,
+\delta(G[A^\alpha]).
+\end{equation}
+Here \(A^\alpha\) parameterizes a gauge orbit, \(\delta(G[A^\alpha])\) selects the slice,
+and \(\Delta_{\mathrm{FP}}\) corrects the quotient measure.
+
+\begin{proposition}[Faddeev--Popov determinant as projection Jacobian]\label{prop:fp}
+Assume a local gauge slice \(G[A]=0\) intersects gauge orbits transversely near \(A\).  Then
+the Faddeev--Popov factor
+\begin{equation}
+\Delta_{\mathrm{FP}}[A]
+=\left|\det D_\alpha(G[A^\alpha])\right|
+\end{equation}
+is the Jacobian of the projection from orbit coordinates to the chosen local slice.
+\end{proposition}
+
+\begin{proof}
+Locally decompose a neighborhood of \(A\) into coordinates \((s,\alpha)\), where \(s\)
+parametrizes the gauge slice and \(\alpha\) parametrizes the gauge orbit.  The gauge condition
+maps orbit coordinates to the constraint value \(G[A^\alpha]\).  If the intersection is
+transverse, \(D_\alpha G[A^\alpha]\) is invertible in the orbit directions.  The standard
+change-of-variables formula then contributes the absolute determinant
+\(\left|\det D_\alpha(G[A^\alpha])\right|\), which is precisely the Faddeev--Popov factor.
+\end{proof}
+
+Thus:
+\[
+\boxed{\delta(G[A])=\text{singular shadow of representative selection},}
+\]
+and
+\[
+\boxed{\Delta_{\mathrm{FP}}[A]=\text{projection Jacobian}.}
+\]
+
+\subsection{Ghosts as quotient bookkeeping}
+
+The determinant may be represented by ghost fields:
+\begin{equation}
+\Delta_{\mathrm{FP}}[A]=
+\int \mathcal D\bar c\,\mathcal Dc\,e^{iS_{\mathrm{ghost}}[\bar c,c,A]}.
+\end{equation}
+In MTT terms:
+\[
+\boxed{\text{ghosts encode the local measure cost of quotienting lens redundancy}.}
+\]
+They are not physical particles in the ordinary sense.  They are bookkeeping fields for the
+projection Jacobian.
+
+\subsection{Gribov copies}
+
+Gauge fixing may fail globally. A gauge slice may intersect one orbit multiple times.  These
+are Gribov copies. In MTT language:
+\[
+\boxed{\text{Gribov copies}=\text{failure of global admissible section}.}
+\]
+This matches the MTT principle that reduced descriptions are local encodings, not globally
+valid ontologies.
+
+\subsection{BRST}
+
+BRST symmetry algebraically controls the quotient:
+\begin{equation}
+Q_{\mathrm{BRST}}^2=0,\qquad
+\mathcal H_{\mathrm{phys}}=\ker Q_{\mathrm{BRST}}/\im Q_{\mathrm{BRST}}.
+\end{equation}
+MTT reading:
+\[
+\boxed{\text{physical states}=\text{admissible quotient classes modulo null redundancy}.}
+\]
+
+\section{Path integrals and admissibility filters}
+
+Path integrals often impose constraints using hard deltas:
+\begin{equation}
+Z=\int \mathcal D\phi\,\delta(C[\phi])e^{iS[\phi]/\hbar}.
+\end{equation}
+MTT replaces this with a finite admissibility kernel:
+\begin{equation}
+\delta(C[\phi])\quad\leadsto\quad \mathcal K_{\mathrm{adm}}[C[\phi]].
+\end{equation}
+A standard Gaussian model is
+\begin{equation}
+\mathcal K_{\mathrm{adm}}[C]
+=\exp\left(-\frac{1}{2\epsilon_{\mathrm{adm}}^2}\norm{C}^2\right).
+\end{equation}
+Thus
+\begin{equation}
+Z_{\mathrm{MTT}}=
+\int \mathcal D\phi\,
+\exp\left(\frac{i}{\hbar}S[\phi]
+-\frac{1}{2\epsilon_{\mathrm{adm}}^2}\norm{C[\phi]}^2\right).
+\end{equation}
+The hard delta is recovered as
+\begin{equation}
+\delta(C)=\lim_{\epsilon_{\mathrm{adm}}\to 0}\mathcal K_{\mathrm{adm}}[C].
+\end{equation}
+
+\section{Measurement as finite survivor-basin selection}
+
+An ideal position measurement uses projectors
+\begin{equation}
+P_x=|x\rangle\langle x|,
+\end{equation}
+with distributional kernel
+\begin{equation}
+\langle y|P_x|z\rangle=\delta(y-x)\delta(z-x).
+\end{equation}
+MTT replaces this with a finite coherent effect:
+\begin{equation}
+E_x^{\mathrm{coh}}(y,z)
+=K_{\mathrm{coh}}(y,x)\overline{K_{\mathrm{coh}}(z,x)}.
+\end{equation}
+The probability becomes
+\begin{equation}
+p(x)=\langle \psi|E_x^{\mathrm{coh}}|\psi\rangle.
+\end{equation}
+The post-measurement state is not a point delta but a stabilized survivor basin:
+\begin{equation}
+\psi\mapsto \frac{M_x^{\mathrm{coh}}\psi}{\norm{M_x^{\mathrm{coh}}\psi}}.
+\end{equation}
+Thus:
+\[
+\boxed{\text{measurement collapse}=\text{finite basin selection idealized as delta collapse}.}
+\]
+
+\section{QFT applications}
+
+\subsection{Green functions}
+
+Standard:
+\begin{equation}
+LG(x,y)=\delta(x-y).
+\end{equation}
+MTT-coherent:
+\begin{equation}
+LG_{\mathrm{coh}}(x,y)=K_{\mathrm{coh}}(x,y).
+\end{equation}
+
+\subsection{Contact interactions}
+
+A local interaction such as \(\lambda\phi^4(x)\) can be written as a zero-width overlap.  The
+coherent replacement is
+\begin{equation}
+\lambda\int dx_1\cdots dx_4\,
+V_{\mathrm{coh}}(x_1,x_2,x_3,x_4)
+\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4),
+\end{equation}
+where
+\begin{equation}
+V_{\mathrm{coh}}\sim
+\int dx\,K_{\mathrm{coh}}(x,x_1)K_{\mathrm{coh}}(x,x_2)
+K_{\mathrm{coh}}(x,x_3)K_{\mathrm{coh}}(x,x_4).
+\end{equation}
+Point-local interaction is the zero-width limit of coherent overlap.
+
+\subsection{Momentum conservation deltas}
+
+At a standard vertex,
+\begin{equation}
+(2\pi)^4\delta^{(4)}\left(\sum_i p_i\right)
+\end{equation}
+enforces exact bookkeeping closure.  MTT reads this as the sharp limit of an
+overlap-conservation kernel:
+\begin{equation}
+\delta^{(4)}\left(\sum_i p_i\right)
+\quad\leadsto\quad
+K_{\mathrm{book}}\left(\sum_i p_i\right),
+\end{equation}
+where \(K_{\mathrm{book}}\) has width determined by coherent-sector resolution and finite
+interaction support.
+
+\section{Renormalization as repair of over-sharp projection}
+
+Many ultraviolet divergences arise from products or limits of distributions at coincident
+points:
+\begin{equation}
+\delta(x-x),\qquad G(x,x),\qquad \phi^n(x)\text{ at one point}.
+\end{equation}
+The MTT interpretation is:
+\[
+\boxed{\text{UV divergence often signals that a finite-width projection has been replaced by a zero-width delta}.}
+\]
+Renormalization then becomes, at least in part, the downstream repair mechanism required
+after over-sharp projection. This does not eliminate renormalization. It explains why
+renormalization appears exactly where the idealized continuum theory compresses admissible
+overlap structure into pointlike coincidence.
+
+\section{Triadic placement: circle, lens, nil}
+
+The proto-spinor carrier
+\begin{equation}
+\Xi=(\Psi,C,L,N)
+\end{equation}
+provides a useful classification.
+
+\begin{center}
+\begin{tabular}{ll}
+Carrier role & Delta/gauge interpretation\\
+\hline
+\(C\): circle bookkeeping & phase, return, conservation kernels\\
+\(L\): lens redundancy & gauge freedom, equivalence classes, quotienting\\
+\(N\): nil survivorship & selection, thresholds, collapse, discrete outcomes
+\end{tabular}
+\end{center}
+
+Thus:
+\begin{equation}
+\text{gauge}\subset L,\qquad
+\delta\text{-selection}\subset N,\qquad
+\text{conservation deltas}\subset C.
+\end{equation}
+More carefully, delta functions can appear as singular shadows in all three sectors:
+circle deltas enforce exact return/bookkeeping closure; lens deltas enforce representative
+selection in a redundancy class; nil deltas enforce survivor selection at a threshold.
+
+\section{Research program}
+
+The practical method is:
+\begin{enumerate}
+\item Locate every Dirac delta in a physical formulation.
+\item Classify its role: identity, source, constraint, representative selection, conservation,
+measurement, or spectral selection.
+\item Identify the corresponding MTT structure: coherent kernel, admissibility filter, basin
+kernel, lens quotient, circle bookkeeping, or nil selection.
+\item Replace the delta with a bounded kernel.
+\item Study the corrections induced by finite width.
+\end{enumerate}
+
+The highest-priority targets are:
+\begin{enumerate}
+\item canonical commutators;
+\item propagators;
+\item gauge fixing and Faddeev--Popov determinants;
+\item measurement projectors;
+\item path-integral constraints;
+\item point-particle sources in GR and QFT;
+\item contact interactions and UV divergences;
+\item spectral delta peaks and finite-lifetime resonances.
+\end{enumerate}
+
+\section{Conclusion}
+
+The Dirac delta is one of the most ubiquitous mathematical objects in physics.  In standard
+usage it implements identity, localization, constraint, conservation, or selection.  In MTT
+these roles share a common structural origin: each is a downstream idealization of projection
+under finite admissibility.
+
+The fixed-point framework supplies the analytic core.  Coherent projection is bounded;
+smoothing suppresses incoherent modes; spectral gaps control resolution; disturbance--damping
+balance leaves finite width; projected fixed points represent stabilized coherent basins.  The
+literal Dirac delta appears only when this finite structure is idealized to zero width.
+
+Gauge theory confirms the same pattern from another direction.  Gauge freedom records
+uncollapsed projection redundancy; gauge fixing imposes representative selection; the
+Faddeev--Popov determinant is the projection Jacobian; ghosts encode quotient-measure
+bookkeeping; Gribov ambiguities mark global section failure.
+
+The central principle is:
+\[
+\boxed{\text{Every Dirac delta is a diagnostic of hidden projection.}}
+\]
+Where standard physics writes \(\delta\), MTT asks what bounded coherent kernel,
+admissibility filter, survivor basin, or gauge-section selection has been collapsed into
+singular notation.
+
+\end{document}

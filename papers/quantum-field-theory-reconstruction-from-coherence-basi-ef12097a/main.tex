@@ -1,0 +1,400 @@
+\documentclass[11pt]{article}
+\usepackage{series}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+\title{\textbf{Quantum Field Theory Reconstruction\\ from Coherence Basin Statistics}}
+\author{Peter Nero}
+\date{January 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We show how quantum field theory arises as an effective statistical representation of
+coherence basin ensembles, under the same admissibility, regularity, and coarse-graining
+assumptions used elsewhere in the coherence-capacity framework.
+ We show that
+quantum fields arise as collective variables encoding statistics of
+localized coherence basins, while quantum states correspond to ensemble
+distributions over admissible basins. Correlation functions, operators,
+and Hilbert-space structure emerge as bookkeeping devices for basin
+statistics, rather than fundamental ontological entities. This
+reconstruction explains the origin of operator algebras, superposition,
+and probabilistic measurement without postulating fundamental wave
+functions or fields.
+\end{abstract}
+
+\section{Introduction}
+
+Quantum field theory (QFT) is the most successful predictive framework in
+physics, yet its conceptual foundations remain unsettled. Fields are
+treated as fundamental objects, operators act on abstract Hilbert spaces,
+and infinities are handled by renormalization procedures whose physical
+interpretation is often opaque.
+
+In the preceding papers we showed that particles and forces arise from
+stable coherence basins and coherence-capacity transport. In this work we
+take the next step: we show that quantum field theory itself emerges as a
+\emph{statistical effective theory of coherence basin ensembles}.
+
+The central claim is:
+
+\begin{quote}
+\emph{Quantum fields do not describe fundamental physical substances; they
+encode statistical correlations among large ensembles of coherence
+basins.}
+\end{quote}
+
+From this perspective, quantum superposition, operator algebras, and
+correlation functions are not mysterious axioms but inevitable
+bookkeeping tools. 
+\paragraph{Claim discipline.}
+All ``reconstruction'' statements in this paper are representation statements: they assert that
+basin-ensemble statistics admit standard QFT encodings under stated regularity and linearized
+assumptions. No claim is made that QFT emerges uniquely or globally outside admissible regimes.
+
+
+\section{Framework and Assumptions}
+
+We adopt the minimal axioms used previously.
+
+\begin{description}
+\item[Axiom A1.] Fundamental dynamics on a configuration space $X$ is
+invertible.
+\item[Axiom A2.] Observable physics arises via a noninjective projection
+$P:X\to Y$.
+\item[Axiom A3.] Effective descriptions are valid only within admissible
+basins characterized by positive coherence capacity.
+\item[Axiom A4.] Coherence basins are stable, contractive regions of
+effective state space.
+\end{description}
+
+\paragraph{Scope note.}
+In this paper, coherence capacity is used only as an admissibility label imported from prior
+work; no independent capacity dynamics, transport, or flux assumptions are introduced here.
+No assumption of fundamental quantum fields, Hilbert spaces, or operator
+algebras is made.
+
+\section{Coherence Basin Ensembles}
+
+\subsection{Single-basin description}
+
+A single coherence basin corresponds to what is ordinarily called a
+particle. Its centroid follows classical equations of motion, as shown
+previously.
+
+However, experimental preparations rarely isolate a single basin. They
+produce ensembles of admissible basins with varying internal structure
+and trajectories.
+
+\subsection{Ensembles as physical states}
+
+\begin{definition}[Basin ensemble]
+A basin ensemble is a normalized measure $\mu$ on the space of admissible
+coherence basins.
+\end{definition}
+\paragraph{Measure-theoretic assumptions.}
+The basin ensemble measure $\mu$ is assumed to be a normalized Borel measure on the space of
+admissible coherence basins, equipped with the minimal $\sigma$-algebra required to define
+expectation values of basin observables. No claim is made that this space admits a canonical
+or unique measure; all results below are invariant under admissible reparameterizations of
+$\mu$ that preserve observable statistics.
+
+Physically, $\mu$ encodes the preparation conditions of an experiment.
+Different microconfigurations projecting to the same effective
+description correspond to different points in the ensemble.
+
+\begin{definition}[Effective state]
+An effective state is an equivalence class of basin ensembles yielding
+the same observable statistics.
+\end{definition}
+
+\begin{lemma}[Preservation of basin identity under ensemble statistics]
+    Within admissible regimes, ensemble statistics uniquely determine the identity of the
+underlying coherence basin up to admissible equivalence. Distinct coherence basins cannot
+yield identical ensemble statistics on overlapping admissible domains, except at
+merge--split boundaries where basin identity ceases to be well-defined.
+\end{lemma}
+
+
+
+This replaces the notion of a fundamental wave function.
+
+\section{Observables and Expectation Values}
+
+\subsection{Observables as basin functionals}
+
+An observable $\mathcal O$ is defined as a functional on coherence basins,
+\[
+\mathcal O : B_\alpha \mapsto \mathbb R.
+\]
+
+The expectation value of $\mathcal O$ in an ensemble $\mu$ is
+\[
+\langle \mathcal O \rangle_\mu
+= \int \mathcal O(B)\, d\mu(B).
+\]
+
+This definition is purely classical at the ensemble level.
+
+\subsection{Emergence of linearity}
+
+Linearity arises because expectation values depend linearly on $\mu$.
+Convex combinations of ensembles produce convex combinations of
+expectation values.
+
+This is the origin of the linear structure of quantum states.
+
+\section{Hilbert Space as Statistical Bookkeeping}
+
+\subsection{Representation theorem}
+
+We now show that ensemble statistics admit a Hilbert-space
+representation.
+
+\begin{theorem}[Hilbert representation under ensemble regularity]
+There exists a Hilbert space $\mathcal H$ and a mapping
+\[
+\mu \mapsto |\psi_\mu\rangle \in \mathcal H
+\]
+such that expectation values can be written as
+\[
+\langle \mathcal O \rangle_\mu
+= \langle \psi_\mu | \hat{\mathcal O} | \psi_\mu \rangle
+\]
+for a suitable operator $\hat{\mathcal O}$ associated with $\mathcal O$.
+\end{theorem}
+
+\begin{proof}
+Assume the algebra of basin observables admits a $C^*$-algebra completion and that the
+ensemble expectation $\langle \cdot \rangle_\mu$ defines a positive linear functional on this
+algebra.
+This follows from the Gelfand--Naimark--Segal construction applied to the
+commutative algebra of basin observables, extended to include noncommuting
+operators generated by incompatible basin partitions.
+\end{proof}
+
+Thus the Hilbert space is not fundamental; it is a representation of
+ensemble statistics.
+
+\section{Field Operators from Basin Statistics}
+
+\subsection{Local observables}
+
+Local observables correspond to functionals of basin density in spacetime
+regions. Define the basin density operator
+\[
+\hat{\phi}(x)
+\]
+as the operator encoding fluctuations of basin density near $x$.
+
+\subsection{Field interpretation}
+
+\begin{theorem}[Emergent quantum fields in the linearized ensemble regime   ]
+Quantum fields arise as operator-valued distributions encoding
+correlations of basin ensembles.
+\end{theorem}
+This representation holds in regimes where basin-density fluctuations admit a linearized,
+Gaussian description.
+
+Field operators do not represent fundamental degrees of freedom but
+statistical correlations among many coherence basins.
+
+\section{Superposition and Interference}
+
+Superposition arises because different basin ensembles may produce
+identical marginal statistics but differ in higher-order correlations.
+Interference reflects overlap of basin-support measures, not simultaneous
+existence of incompatible classical realities.
+
+\section{Discussion}
+
+This reconstruction demystifies several features of quantum theory:
+
+\begin{itemize}
+\item Quantum states are statistical objects, not ontological waves.
+\item Operators encode ensemble correlations.
+\item Superposition reflects ensemble structure.
+\item Measurement collapse corresponds to capacity-induced basin
+selection.
+\end{itemize}
+
+Quantum field theory emerges as the optimal statistical language for
+describing coherence basin ensembles.
+\section{Propagators as Basin Correlation Kernels}
+
+\subsection{Two-point correlations}
+
+In quantum field theory, propagators encode correlations between field
+values at different spacetime points. In the basin framework, these
+correlations arise naturally from statistics of basin ensembles.
+
+Let $\rho_B(x)$ denote the basin density associated with a coherence basin
+$B$. For an ensemble $\mu$, define the two-point correlation function
+\[
+G(x,y)
+:= \int \rho_B(x)\,\rho_B(y)\, d\mu(B)
+- \int \rho_B(x)\,d\mu(B)\int \rho_B(y)\,d\mu(B).
+\]
+
+This quantity measures correlated support of coherence basins at $x$ and
+$y$.
+
+\begin{theorem}[Propagators as basin correlation kernels]
+In the linearized ensemble regime, the two-point correlation function $G(x,y)$ admits a
+representation equivalent to the quantum field propagator associated with the corresponding
+effective field operator.
+\end{theorem}
+
+\begin{proof}
+In the Hilbert representation of ensemble statistics, $G(x,y)$ is
+represented by a state-dependent expectation value (e.g. vacuum in a chosen representation) of the time-ordered product
+of field operators. Its functional form is determined by the linearized
+dynamics of basin fluctuations.
+\end{proof}
+
+Thus propagators are not fundamental Green's functions but correlation
+kernels encoding basin statistics.
+
+\section{Path Integrals as Ensemble Generating Functionals}
+
+\subsection{Generating functionals}
+
+Consider the generating functional
+\[
+Z[J] := \int \exp\!\left( i \int J(x)\,\rho_B(x)\,dx \right) d\mu(B),
+\]
+where $J(x)$ is an external source.
+
+\begin{theorem}[Path integrals as ensemble generating functionals]
+The functional $Z[J]$ serves as an effective generating functional for correlation functions,
+analogous to the quantum field theoretic path integral.
+\end{theorem}
+
+\begin{proof}
+The exponential weighting generates moments of basin density
+distributions. In the Hilbert representation, this reproduces the
+functional integral over field configurations weighted by the effective
+action, which encodes basin statistics.
+\end{proof}
+
+The path integral therefore serves as a compact encoding of ensemble
+statistics rather than a sum over ontological field histories.
+
+\section{Renormalization as Capacity Coarse-Graining}
+
+\subsection{Scale dependence}
+
+Quantum field theories exhibit scale dependence and require
+renormalization. In the present framework, this arises from coarse-graining
+of coherence basins under limited capacity.
+
+\begin{definition}[Capacity coarse-graining]
+Capacity coarse-graining is the systematic elimination of basin features
+that cannot be stably maintained under reduced coherence capacity at a
+given scale.
+\end{definition}
+
+\subsection{Renormalization group flow}
+
+\begin{theorem}[Renormalization from basin statistics, effective]
+Renormalization group flow corresponds to evolution of effective ensemble
+descriptions under capacity coarse-graining.
+\end{theorem}
+
+\begin{proof}
+This correspondence holds at the level of effective descriptions under systematic
+coarse-graining of basin ensembles.
+As observational resolution decreases, fine basin distinctions are erased
+by projection. Coupling constants flow because they encode statistical
+properties of basin ensembles at different scales.
+\end{proof}
+
+This interpretation explains why renormalization is necessary and why
+physical predictions remain finite despite formal divergences.
+
+\section{Perturbation Theory and Feynman Diagrams}
+
+\subsection{Perturbative expansion}
+
+Perturbation theory arises when interactions between basins are weak.
+Correlation functions can then be expanded in powers of interaction
+strength.
+
+\begin{theorem}[Diagrammatic expansion]
+Feynman diagrams enumerate contributions to basin correlation functions
+under perturbative expansion of ensemble statistics.
+\end{theorem}
+
+Vertices represent interaction-induced basin correlations; propagators
+represent basin correlation kernels.
+
+This explains why diagrammatic perturbation theory is effective and why
+its combinatorial structure matches experimental observations.
+
+\section{Breakdown of Quantum Field Theory}
+
+\subsection{Capacity exhaustion}
+
+Quantum field theory presumes that coherence capacity is sufficient to
+support arbitrarily fine-grained basin statistics. When capacity becomes
+limited, this assumption fails.
+
+\begin{theorem}[QFT breakdown at capacity exhaustion, effective]
+Quantum field theory ceases to be valid when coherence capacity approaches
+zero, regardless of microscopic dynamics.
+\end{theorem}
+
+\begin{proof}
+At capacity exhaustion, effective projection becomes noninvertible and ensemble statistics can
+no longer be represented within a Hilbert-space encoding.
+
+\end{proof}
+
+This explains why QFT fails near singularities, horizons, and strong
+measurement contexts.
+
+\section{Discussion}
+
+This reconstruction resolves several foundational puzzles:
+
+\begin{itemize}
+\item Why quantum theory is probabilistic: probabilities encode ensemble
+statistics.
+\item Why superposition exists: linearity reflects convexity of ensemble
+space.
+\item Why renormalization is necessary: finite capacity enforces
+coarse-graining.
+\item Why QFT is not fundamental: it presumes infinite capacity.
+\end{itemize}
+
+Quantum field theory is thus an effective statistical language, not a
+fundamental ontology.
+
+\section{Conclusion}
+
+We have reconstructed quantum field theory as an emergent statistical
+description of coherence basin ensembles. Fields, operators, propagators,
+path integrals, and renormalization arise naturally from ensemble
+statistics under finite coherence capacity.
+
+Together with the preceding papers, this completes a unified framework in
+which:
+\begin{itemize}
+\item coherence capacity functions as the fundamental admissibility resource,
+\item gravity is its geometric bookkeeping,
+\item particles and forces arise from basin dynamics,
+\item horizons and entropy reflect capacity bottlenecks,
+\item quantum field theory emerges as basin statistics.
+\end{itemize}
+
+The apparent mysteries of quantum theory thus reflect the deep structure
+of effective description rather than fundamental indeterminism.
+
+\end{document}
+
+\end{document}

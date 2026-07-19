@@ -1,0 +1,91 @@
+{
+  "abstract": "We reassess whether the weak mixing angle provides a redundant test of the selected MTT gauge profile. Let r_{21}=I_2/I_1=g_1^2/g_2^2, with g_1=\\sqrt{5/3}\\,g_Y. Then \\sin^2\\theta_W=3r_{21}/(5+3r_{21}) at the same scale and in the same scheme. For the selected SMDR profile at Q=M_t, this gives \\sin^2\\theta_W=0.2346644\\pm0.0000433. Because r_{21} was itself obtained from the measured (g_Y,g_2) profile, this equality is an exact algebraic round trip, not a held-out prediction. Supplying an absolute g_2 from (G_F,m_W) does not remove that circularity. A genuine redundancy test requires an MTT source theorem selecting r_{21} without electroweak gauge data, followed by independent common-scheme transport. The obsolete one-loop 5~\\mathrm{TeV} calculation and its precision-prediction claim are withdrawn.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262145",
+    "created": "2026-01-15T20:48:10.106633+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262146",
+    "files": [
+      {
+        "checksum": "md5:7e06b42fcccfb2246295680594222567",
+        "content_url": "https://zenodo.org/api/records/18262146/files/Theta_Closure_in_Modal_Triplet_Theory_V__Redundant_Determination_from_Gauge_Couplings_and_the_Weak_Mixing_Angle%20(1).pdf/content",
+        "key": "Theta_Closure_in_Modal_Triplet_Theory_V__Redundant_Determination_from_Gauge_Couplings_and_the_Weak_Mixing_Angle (1).pdf",
+        "size": 328388
+      }
+    ],
+    "id": "18262146",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262146",
+    "resource_type": "publication",
+    "title": "Theta Closure in Modal Triplet Theory V: Redundant Determination of the Weak Mixing Angle",
+    "updated": "2026-01-15T20:48:10.460451+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "733bd0c5287818b91a87c6c965ced61b540a04f54f9dcf7f381d72d0681c641c",
+  "paper_id": "theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c",
+  "paper_md_sha256": "4f69d11b3e118c266c740e612e83fa13d122ca1be5588732f1ecf042fde8c99e",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
+    "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
+    "selected_revision": true,
+    "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_V__Redundant_Determination_from_Gauge_Couplings_and_the_Weak_Mixing_Angle"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 10543,
+      "path": "main.tex",
+      "sha256": "733bd0c5287818b91a87c6c965ced61b540a04f54f9dcf7f381d72d0681c641c"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_V__Redundant_Determination_from_Gauge_Couplings_and_the_Weak_Mixing_Angle_v2"
+  },
+  "source_tree_sha256": "fdce3d778c603bd196e3e05425ca955cceabca42021bfc4ba7ea0afa04ed48e0",
+  "title": "Theta Closure in Modal Triplet Theory V: Weak-Angle Round Trip and the Non-Circularity Criterion",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262145",
+      "created": "2026-01-15T20:48:10.106633+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262146",
+      "files": [
+        {
+          "checksum": "md5:7e06b42fcccfb2246295680594222567",
+          "content_url": "https://zenodo.org/api/records/18262146/files/Theta_Closure_in_Modal_Triplet_Theory_V__Redundant_Determination_from_Gauge_Couplings_and_the_Weak_Mixing_Angle%20(1).pdf/content",
+          "key": "Theta_Closure_in_Modal_Triplet_Theory_V__Redundant_Determination_from_Gauge_Couplings_and_the_Weak_Mixing_Angle (1).pdf",
+          "size": 328388
+        }
+      ],
+      "id": "18262146",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262146",
+      "resource_type": "publication",
+      "title": "Theta Closure in Modal Triplet Theory V: Redundant Determination of the Weak Mixing Angle",
+      "updated": "2026-01-15T20:48:10.460451+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

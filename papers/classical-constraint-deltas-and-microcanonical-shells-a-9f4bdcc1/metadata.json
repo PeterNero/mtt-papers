@@ -1,0 +1,43 @@
+{
+  "abstract": "Dirac delta functions enter classical and statistical mechanics most prominently as constraint distributions, for example in microcanonical measures \\rho_E(z)\\propto \\delta(H(z)-E) and in phase-space integrals restricted to a constraint surface. In the delta/projection program of Modal Triplet Theory (MTT), such deltas are not treated as primitive objects. They are re-read as singular limits of finite admissibility shells: finite-thickness neighborhoods around constraint surfaces that become exact only when the allowed tolerance is sent to zero. This paper develops the classical/statistical-mechanical member of that program. We prove a coarea-based shell theorem: for a regular value E of a smooth Hamiltonian H:M\\to\\mathbb R, normalized approximate identities \\eta_\\varepsilon(H(z)-E) converge distributionally to the surface delta \\delta(H-E), with the standard coarea measure d\\Sigma/\\left\\lvert \\nabla H \\right\\rvert. We then formulate finite-thickness microcanonical shells, show their convergence to the sharp microcanonical measure, and interpret the result in MTT language: \\delta(H-E) is the zero-thickness limit of an admissibility shell around a bookkeeping constraint. The paper also distinguishes three layers often conflated in formal notation: exact constraint surfaces, finite experimental/thermodynamic tolerance shells, and singular delta notation. The result is a concrete extension of the delta/projection program from QFT and measurement to classical and statistical mechanics.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "unversioned",
+  "date": "April 2026",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "8ce883c7bbdaf736a51ebbf1b04a0722785727258a329765ebc628e2d74b4049",
+  "paper_id": "classical-constraint-deltas-and-microcanonical-shells-a-9f4bdcc1",
+  "paper_md_sha256": "1a5619674a8750b274aa48d3c626a213e589a5b906fa309afc0325a61b04119c",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 17566,
+      "path": "classical_constraints_microcanonical_admissibility_shells_strengthened.tex",
+      "sha256": "8ce883c7bbdaf736a51ebbf1b04a0722785727258a329765ebc628e2d74b4049"
+    },
+    {
+      "bytes": 17566,
+      "path": "main.tex",
+      "sha256": "8ce883c7bbdaf736a51ebbf1b04a0722785727258a329765ebc628e2d74b4049"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "5 Dirac Delta/_work/Classical_Constraint_Deltas_and_Microcanonical_Shells__Admissibility_Shell_Limits_in_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "44cd63ea86cf2afa9ace2c1c5ce588a0902f791753671aa570a1a2d5ed255ce2",
+  "title": "Classical Constraint Deltas and Microcanonical Shells Admissibility-Shell Limits in Modal Triplet Theory",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

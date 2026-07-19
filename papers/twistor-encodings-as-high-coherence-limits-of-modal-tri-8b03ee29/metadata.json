@@ -1,0 +1,86 @@
+{
+  "abstract": "Penrose twistor theory provides a powerful holomorphic encoding of massless, self-dual, and conformally invariant sectors of four-dimensional field theories, yet has long resisted interpretation as a fundamental description of nature. In this paper we show that twistor theory arises naturally as an effective encoding of a distinguished high-coherence regime of Modal Triplet Theory (MTT). Using the coherent-sector projection, spectral-gap control, and controlled truncation framework of MTT, we define a precise twistor corner in which twistor methods are valid, explain their efficiency and limitations, and derive a sharp criterion for their breakdown. Technically, we identify the twistor corner as the regime in which noncoherent modes are suppressed, mass-generation effects are negligible, scale variation is slow, and the coherent gauge or gravitational sector is near self-dual. We prove that in this regime the coherent dynamics admits a Schur\u2013Feshbach reduced generator whose correction term is suppressed by the inverse spectral gap. Twistor encoding is valid precisely while this controlled truncation correction remains below an admissibility threshold. When the gap collapses or coherent\u2013noncoherent mixing grows beyond threshold, the induced evolution on coherent data becomes kernel-valued, signaling a genuine MTT selection event and forcing re-projection into a new admissible basin. This work situates twistor theory within a broader theory of coherence, selection, and irreversibility, explaining both its remarkable successes and its intrinsic domain of validity.",
+  "authors": [],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18255154",
+    "created": "2026-01-15T10:09:04.392874+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18255155",
+    "files": [
+      {
+        "checksum": "md5:77a77a2636a59ccfe957e7b62b09c268",
+        "content_url": "https://zenodo.org/api/records/18255155/files/Twistor_Encodings_as_High_Coherence_Limits_of_Modal_Triplet_Theory%20(5).pdf/content",
+        "key": "Twistor_Encodings_as_High_Coherence_Limits_of_Modal_Triplet_Theory (5).pdf",
+        "size": 319805
+      }
+    ],
+    "id": "18255155",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18255155",
+    "resource_type": "publication",
+    "title": "Twistor Encodings as High-Coherence Limits of Modal Triplet Theory",
+    "updated": "2026-01-15T10:09:04.793808+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "0c25787aa20c061590224a56ffa9757558739957b6dc297800e31e8bcbd94bba",
+  "paper_id": "twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29",
+  "paper_md_sha256": "56c2ebe74e5c37825723a73a56b4dd20bf98d0960d72669ddd75590b28ca3126",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 42402,
+      "path": "main.tex",
+      "sha256": "0c25787aa20c061590224a56ffa9757558739957b6dc297800e31e8bcbd94bba"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/Twistor_Encodings_as_High_Coherence_Limits_of_Modal_Triplet_Theory"
+  },
+  "source_tree_sha256": "93d1f89748ccca89d078f23ed68e3dcc9b04cf96ebb17289787caa6b6e4f443e",
+  "title": "Twistor Encodings as High Coherence Limits of Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255154",
+      "created": "2026-01-15T10:09:04.392874+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18255155",
+      "files": [
+        {
+          "checksum": "md5:77a77a2636a59ccfe957e7b62b09c268",
+          "content_url": "https://zenodo.org/api/records/18255155/files/Twistor_Encodings_as_High_Coherence_Limits_of_Modal_Triplet_Theory%20(5).pdf/content",
+          "key": "Twistor_Encodings_as_High_Coherence_Limits_of_Modal_Triplet_Theory (5).pdf",
+          "size": 319805
+        }
+      ],
+      "id": "18255155",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18255155",
+      "resource_type": "publication",
+      "title": "Twistor Encodings as High-Coherence Limits of Modal Triplet Theory",
+      "updated": "2026-01-15T10:09:04.793808+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

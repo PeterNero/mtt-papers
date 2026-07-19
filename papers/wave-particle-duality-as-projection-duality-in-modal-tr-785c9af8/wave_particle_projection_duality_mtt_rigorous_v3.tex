@@ -1,0 +1,1531 @@
+\documentclass[11pt]{article}
+\usepackage{series}
+
+\renewcommand\SeriesName{Modal Triplet Theory}
+\renewcommand\SeriesShort{Projection Duality}
+\renewcommand\PartRoman{I}
+\renewcommand\PartArabic{1}
+\renewcommand\PartsInSeries{I}
+
+\title{Wave--Particle Duality as Projection Duality in Modal Triplet Theory\\
+\large Pointlike Delta Shadows and Wavelike Spectral Shadows of a Single Coherent Kernel}
+\author{Peter Nero}
+\date{April 2026}
+
+% Paper-specific notation
+\newcommand{\Kadm}{K_{\mathrm{adm}}}
+\newcommand{\Badm}{B_{\mathrm{adm}}}
+\newcommand{\ta}{\tau_{\mathrm{adm}}}
+\newcommand{\epsadm}{\epsilon_{\mathrm{adm}}}
+\newcommand{\Leff}{\Lambda_{\mathrm{eff}}}
+\newcommand{\Hcoh}{\mathcal H_{\mathrm{coh}}}
+\newcommand{\Hinc}{\mathcal H_{\mathrm{inc}}}
+\newcommand{\Dab}{D_{ab}}
+\newcommand{\Dmat}{D}
+\newcommand{\Kdet}{K_{\mathrm{det}}}
+\newcommand{\Efx}{E_x}
+\newcommand{\calE}{\mathcal E}
+\newcommand{\calD}{\mathcal D}
+\newcommand{\calA}{\mathcal A}
+\newcommand{\calR}{\mathcal R}
+\newcommand{\calK}{\mathcal K}
+\newcommand{\coh}{\mathrm{coh}}
+\newcommand{\inc}{\mathrm{inc}}
+\newcommand{\loc}{\mathrm{loc}}
+\newcommand{\spec}{\mathrm{spec}}
+\newcommand{\MTT}{\mathrm{MTT}}
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\vis}{\mathrm{vis}}
+\newcommand{\Meas}{\mathsf M}
+\newcommand{\Basin}{\mathcal B}
+\newcommand{\CND}{\mathrm{CND}}
+
+
+\begin{document}
+\maketitle
+\seriestagline
+
+\begin{abstract}
+Wave--particle duality is usually presented as a primitive feature of quantum theory:
+microscopic systems propagate as extended wave amplitudes, interfere through coherent
+phase relations, and yet appear as localized particle-like events under measurement.
+Modal Triplet Theory (MTT) reframes this duality as a projection phenomenon. The
+apparent opposition between ``wave'' and ``particle'' is not fundamental. It arises because
+one finite coherent-sector excitation admits two downstream shadows: a local delta-like
+shadow and a spectral phase-coherent shadow.
+
+In an admissible MTT fixed-point regime, the relevant object is the finite coherent kernel
+\[
+  \Badm
+  =
+  P\chi(A)e^{-\ta A}\chi(A)P,
+\]
+where \(A\) is the fixed-point stabilization operator, \(P\) is the coherent-sector
+projector, \(\chi(A)\) is the admissible spectral window, and
+\[
+  \ta
+  =
+  \lambda_\ast^{-1}\log(C_Q/\epsadm)
+\]
+is the damping-selected proper-time/heat-time scale. In the local representation, the kernel
+\[
+  \Kadm(x,y)=\langle x|\Badm|y\rangle
+\]
+defines a finite localization profile and recovers the Dirac delta only in the sharp limit.
+This is the particle shadow. In the spectral representation,
+\[
+  \Kadm(x,y)
+  =
+  \sum_{n\in \coh}
+  \chi(\lambda_n)^2 e^{-\ta\lambda_n}
+  \phi_n(x)\phi_n^\ast(y),
+\]
+the same object appears as a weighted coherent modal structure whose phase evolution
+produces interference. This is the wave shadow.
+
+The paper strengthens this statement in three ways. First, the delta limit is stated as
+a distributional convergence theorem. Second, branch damping is formulated as a Schur
+product quantum channel, with the positivity condition \(D\succeq0\) ensuring complete
+positivity and trace preservation. Third, finite detector effects are treated as normalized
+POVM kernels, so localized detection is a finite survivor-basin selection process rather than
+a primitive collapse postulate. The double-slit experiment is then a canonical example:
+branch coherence gives interference, while which-way selection damps off-diagonal branch
+terms and leaves localized events.
+
+The main result is a projection-duality theorem: wave-like interference and particle-like
+localization are not competing ontologies but complementary effective descriptions induced
+by different projections of one coherent-sector excitation. Standard quantum mechanics is
+recovered in the sharp coherent limit; MTT supplies the deeper projection architecture from
+which the dual shadows arise.
+\end{abstract}
+
+\tableofcontents
+
+\section{Purpose and claim discipline}
+
+The purpose of this paper is to show that wave--particle duality follows naturally from
+the projection architecture of Modal Triplet Theory. The preceding delta-projection sequence
+established that Dirac delta distributions should not be read as primitive physical objects
+where finite coherent support is relevant. Rather, they arise as singular shadows of finite
+admissible kernels. The fixed-point kernel construction then replaced arbitrary smoothing by
+a canonical admissible operator
+\begin{equation}
+  \Badm
+  =
+  P\chi(A)e^{-\ta A}\chi(A)P.
+  \label{eq:badm}
+\end{equation}
+The present paper applies that same operator to the central interpretive tension of quantum
+mechanics: why the same quantum system behaves like an extended wave in interference
+experiments and like a localized particle in detection events.
+
+\begin{quote}
+\emph{Central claim.}
+Wave-like interference and particle-like localization are two downstream projection shadows
+of one finite coherent-sector excitation.
+\end{quote}
+
+Equivalently,
+\[
+  \boxed{\text{wave--particle duality}=\text{projection duality}.}
+\]
+
+This paper does not claim that standard quantum mechanics is false. It does not deny the
+usefulness of wavefunctions, Hilbert spaces, amplitudes, density matrices, POVMs, or
+projection-valued idealizations. Instead, it explains why those structures appear: they are
+effective descriptions obtained after coherent projection, spectral phase evolution, and
+survivor-basin selection.
+
+This paper also does not claim that particles are ordinary extended classical blobs. The MTT
+claim is more precise. The underlying object is not a little ball, and it is not a classical wave
+spread through space. It is a stable coherent-sector excitation. That excitation can appear
+pointlike when probed locally and wavelike when represented spectrally.
+
+Thus
+\[
+  \text{particle}\neq \text{literal mathematical point},
+\]
+and
+\[
+  \text{wave}\neq \text{separate physical substance}.
+\]
+Rather,
+\[
+  \text{particle shadow}
+  =
+  \text{localized delta-limit representation},
+\]
+while
+\[
+  \text{wave shadow}
+  =
+  \text{spectral phase-coherent representation}.
+\]
+Both are generated by the same admissible MTT kernel.
+
+\begin{remark}[Structural rather than numerical claim]
+The paper is a structural synthesis. It does not compute all sector-specific numerical
+parameters. Numerical predictions require the concrete sector data \(A\), \(P\), \(\chi\),
+\(\lambda_\ast\), \(C_Q\), \(\epsadm\), and the relevant detector or branch-separation metric.
+The claim here is that, once those data are supplied by an admissible fixed-point sector, no
+independent wave--particle switch or arbitrary smoothing width remains.
+\end{remark}
+
+\section{Operational meanings of wave-like and particle-like behavior}
+
+The words ``wave'' and ``particle'' can easily become metaphysical. We therefore fix their
+operational meanings.
+
+\begin{definition}[Particle-like behavior]
+A coherent excitation is said to display particle-like behavior in a measurement context if:
+\begin{enumerate}[label=(\roman*)]
+  \item detector outcomes are localized relative to the detector resolution;
+  \item repeated trials produce discrete detection records;
+  \item the finite detector or source kernel is narrow compared with the measurement scale;
+  \item the ideal point-event description is recovered as a delta/PVM limit.
+\end{enumerate}
+Thus particle-like behavior means localized effective detection, not literal point ontology.
+\end{definition}
+
+\begin{definition}[Wave-like behavior]
+A coherent excitation is said to display wave-like behavior in an interference context if:
+\begin{enumerate}[label=(\roman*)]
+  \item the retained coherent sector supports superposition of alternatives or modes;
+  \item relative phase information is preserved;
+  \item observable probabilities contain off-diagonal cross terms;
+  \item these cross terms can be operationally measured as interference or visibility.
+\end{enumerate}
+Thus wave-like behavior means phase-coherent interference, not a separate classical medium.
+\end{definition}
+
+These definitions make the goal precise. We will show that a single admissible coherent
+kernel produces both operational behaviors under different downstream projections.
+
+\section{Analytic setting and fixed-point input}
+
+Let \(X\) be a compact smooth Riemannian manifold, or a compact manifold with a
+self-adjoint elliptic boundary condition. The scalar notation below may be replaced by
+sections of a Hermitian vector bundle. Let
+\[
+  \calH=L^2(X)
+\]
+for concreteness.
+
+\begin{remark}[Compact and noncompact charts]
+The compact setting is used to state spectral decompositions and kernel convergence cleanly.
+Flat noncompact charts, such as \(X=\bbR^d\), are treated by Fourier transform and
+tempered-distribution convergence against Schwartz test functions. None of the conceptual
+claims below depend on compactness; compactness is a technical convenience for the theorem
+statements.
+\end{remark}
+
+Let \(A\ge0\) be a nonnegative self-adjoint elliptic or Laplace-type operator with compact
+resolvent. Let
+\[
+  A\phi_n=\lambda_n\phi_n,
+  \qquad
+  0\le \lambda_0\le\lambda_1\le\cdots,
+\]
+be an orthonormal spectral resolution, with eigenvalues repeated according to multiplicity.
+
+\begin{assumption}[Admissible fixed-point sector]
+We are given:
+\begin{enumerate}[label=(\roman*)]
+  \item an isolated coherent spectral cluster \(\Omega_{\coh}\subset\sigma(A)\);
+  \item the corresponding orthogonal Riesz/spectral projector
+  \[
+    P=\frac{1}{2\pi i}\oint_{\Gamma}(z-A)^{-1}\,\dd z,
+  \]
+  where \(\Gamma\) encloses \(\Omega_{\coh}\) and no discarded spectrum;
+  \item \(Q=I-P\);
+  \item consequently \([P,A]=0\) on the relevant domain and \(P\) preserves the smooth
+  spectral domain generated by \(A\);
+  \item an incoherent-sector gap \(A|_{\Ran Q}\ge \lambda_\ast I\) for some
+  \(\lambda_\ast>0\);
+  \item a bounded spectral acceptance window \(0\le\chi\le1\), with \(\chi(A)\) subordinate
+  to the same spectral split and commuting with \(P\);
+  \item a leakage estimate
+  \[
+    \norm{Q\Phi_tQ}\le C_Qe^{-\lambda_\ast t},
+    \qquad t\ge0,
+  \]
+  and an admissibility tolerance \(0<\epsadm<1\).
+\end{enumerate}
+\end{assumption}
+
+The damping-selected proper-time/heat-time scale is
+\begin{equation}
+  \ta
+  =
+  \frac{1}{\lambda_\ast}
+  \log\left(\frac{C_Q}{\epsadm}\right),
+  \label{eq:tauadm}
+\end{equation}
+whenever \(C_Q>\epsadm\). If \(C_Q\le \epsadm\), this criterion does not force a positive
+damping time and one may replace \(\ta\) by
+\[
+  \ta
+  =
+  \max\left\{
+  0,\,
+  \lambda_\ast^{-1}\log(C_Q/\epsadm)
+  \right\}.
+\]
+For the nontrivial case we use \cref{eq:tauadm}.
+
+\begin{definition}[Admissible coherent operator and kernel]
+The admissible coherent operator is
+\[
+  \Badm
+  =
+  P\chi(A)e^{-\ta A}\chi(A)P.
+\]
+When \(\Badm\) has a Schwartz kernel, we denote it by
+\[
+  \Kadm(x,y)=\langle x|\Badm|y\rangle.
+\]
+\end{definition}
+
+\begin{remark}[Sector identity, not universal identity]
+Unless \(P=I\) and \(\chi(A)=I\), \(\Badm\) is not the full identity. It is an identity-like
+object on the retained coherent sector, with finite damping and finite spectral acceptance.
+This distinction is central: pointlike behavior is a downstream limit, not a primitive
+upstream assumption.
+\end{remark}
+
+
+\begin{assumption}[Coherent phase generator]
+The wave-like phase evolution is generated by a self-adjoint coherent Hamiltonian
+\(H_{\coh}\) on \(\Ran P\), or equivalently by a strongly continuous unitary group
+\[
+  U_t=e^{-itH_{\coh}}
+  \qquad\text{on }\Ran P.
+\]
+The damping/stabilization operator \(A\) and the coherent phase generator \(H_{\coh}\) need
+not be identical. The former selects finite admissible support; the latter transports phases
+inside the retained coherent sector.
+\end{assumption}
+
+\section{The common-source kernel}
+
+The central mathematical fact is that the same object has local and spectral representations.
+
+\begin{theorem}[Kernel dual-representation theorem]
+\label{thm:dual-representation}
+Under the admissible fixed-point assumptions, the operator \(\Badm\) has the spectral action
+\[
+  \Badm f
+  =
+  \sum_n p_n\chi(\lambda_n)^2e^{-\ta\lambda_n}
+  \ip{\phi_n}{f}\phi_n,
+\]
+where \(p_n\in\{0,1\}\) is the eigenvalue of \(P\) on \(\phi_n\). If \(e^{-\ta A}\) is smoothing
+and \(P,\chi(A)\) are spectral functions of \(A\), then \(\Badm\) has a smooth kernel
+\[
+  \Kadm(x,y)
+  =
+  \sum_{n:p_n=1}
+  \chi(\lambda_n)^2e^{-\ta\lambda_n}
+  \phi_n(x)\phi_n^\ast(y).
+  \label{eq:spectral-kernel}
+\]
+Thus the same operator admits:
+\begin{enumerate}[label=(\roman*)]
+  \item a local kernel representation \(\Kadm(x,y)\);
+  \item a spectral modal representation \cref{eq:spectral-kernel}.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Since \(A\) is self-adjoint with compact resolvent, the spectral theorem gives
+\[
+  e^{-\ta A}f=\sum_n e^{-\ta\lambda_n}\ip{\phi_n}{f}\phi_n.
+\]
+Because \(P\) and \(\chi(A)\) commute with \(A\), they are diagonal in the same spectral
+resolution in the spectral-projector case. Thus
+\[
+  P\chi(A)e^{-\ta A}\chi(A)P f
+  =
+  \sum_n p_n\chi(\lambda_n)^2e^{-\ta\lambda_n}
+  \ip{\phi_n}{f}\phi_n.
+\]
+For \(\ta>0\), \(e^{-\ta A}\) is smoothing for elliptic \(A\) on compact \(X\). Multiplication
+by bounded spectral projectors and windows preserves boundedness, and in the purely
+spectral-window case preserves the smooth kernel representation on the retained sector.
+The displayed kernel is the corresponding Schwartz kernel.
+\end{proof}
+
+\begin{remark}[Interpretive separation]
+\Cref{thm:dual-representation} is mathematical. The physical interpretation comes later:
+the local representation supplies the particle-like localization shadow, while the spectral
+representation supplies the wave-like phase-coherence shadow.
+\end{remark}
+
+\section{The precise delta limit}
+
+To avoid treating the delta limit as a slogan, we state the sharp-limit theorem explicitly.
+
+Let \(P_N=\mathbf 1_{[0,\Lambda_N]}(A)\), with \(\Lambda_N\to\infty\), and let
+\(\tau_N\downarrow0\). Define
+\begin{equation}
+  B_{N,\tau_N}
+  =
+  P_N e^{-\tau_N A}P_N.
+  \label{eq:BNtau}
+\end{equation}
+
+\begin{theorem}[Distributional recovery of the Dirac kernel]
+\label{thm:delta-limit}
+For every \(f\in C^\infty(X)\),
+\[
+  B_{N,\tau_N}f\to f
+\]
+in \(C^\infty(X)\), provided \(\Lambda_N\to\infty\) and \(\tau_N\downarrow0\). Equivalently,
+the kernels \(K_{N,\tau_N}(x,y)\) of \(B_{N,\tau_N}\) converge to \(\delta(x-y)\) in the
+distributional sense on \(X\times X\).
+\end{theorem}
+
+\begin{proof}
+Write
+\[
+  f-B_{N,\tau_N}f
+  =
+  (I-P_N)f+P_N(I-e^{-\tau_NA})P_Nf.
+\]
+The first term tends to zero in every Sobolev norm because spectral projectors converge
+strongly to the identity on smooth functions and smooth spectral coefficients decay rapidly.
+For the second term, fix a Sobolev index \(s\). Choose \(M>s\). Since \(f\in C^\infty(X)\),
+\[
+  \sum_n (1+\lambda_n)^M\abs{\ip{\phi_n}{f}}^2<\infty.
+\]
+For each fixed \(n\), \(1-e^{-\tau_N\lambda_n}\to0\). The summand is dominated by a
+constant multiple of \((1+\lambda_n)^M\abs{\ip{\phi_n}{f}}^2\) for \(N\) sufficiently large.
+Dominated convergence gives convergence to zero in \(H^s\). Since \(s\) is arbitrary,
+Sobolev embedding gives convergence in \(C^\infty\). The kernel statement is the standard
+distributional form of convergence to the identity operator.
+\end{proof}
+
+\begin{corollary}[Particle shadow as sharp local limit]
+The ideal point source \(\delta(x-y)\) is not the native finite object in an admissible MTT
+sector. It is recovered only when coherent bandwidth becomes complete and the proper-time
+width tends to zero.
+\end{corollary}
+
+\section{Particle shadow: localized finite kernels}
+
+The particle-like aspect appears when the coherent kernel is probed locally. An ideal point
+source centered at \(x_0\) is written
+\[
+  \rho_{x_0}^{\mathrm{point}}(x)=\delta(x-x_0).
+\]
+MTT replaces the point source by the finite local response amplitude
+\[
+  k_{x_0}^{\mathrm{MTT}}(x)
+  =
+  \Kadm(x,x_0).
+\]
+For positive heat kernels this may itself be read as a smeared source density. In general,
+however, \(\Kadm(x,x_0)\) is an amplitude or response kernel and need not be nonnegative.
+Detection probabilities are obtained from associated effects such as
+\[
+  E_{x_0}=|k_{x_0}\rangle\langle k_{x_0}|,
+\]
+not by assuming that the kernel value itself is always a probability density.
+
+\begin{definition}[Effective pointlikeness]
+A finite localization kernel is effectively pointlike at detector resolution \(\ell_{\det}\) if its
+characteristic width \(\ell_{\coh}\) satisfies
+\[
+  \ell_{\coh}\ll \ell_{\det}.
+\]
+In flat heat-kernel models, \(\ell_{\coh}\sim 2\sqrt{\ta}\), so effective pointlikeness means
+\[
+  2\sqrt{\ta}\ll \ell_{\det}.
+\]
+Equivalently, if \(\Leff=\ta^{-1/2}\), pointlike behavior at probe energy \(E\) requires
+\[
+  E\ll \Leff,
+\]
+up to experiment-dependent tolerance factors.
+\end{definition}
+
+\begin{example}[Flat heat-kernel profile]
+On \(X=\bbR^d\) with \(A=-\Delta\), \(P=I\), and \(\chi=1\), the heat kernel is
+\[
+  K_\tau(x,y)
+  =
+  (4\pi\tau)^{-d/2}
+  \exp\left(-\frac{\abs{x-y}^2}{4\tau}\right).
+\]
+As \(\tau\downarrow0\), \(K_\tau(x,y)\to\delta(x-y)\) distributionally. For finite \(\tau\),
+the object has finite coherent width. It appears pointlike only to probes that cannot resolve
+that width.
+\end{example}
+
+The particle is therefore not a literal mathematical point. It is the local delta shadow of a
+finite coherent excitation.
+
+\section{Wave shadow: spectral phase coherence}
+
+The wave-like aspect appears when the same coherent excitation is represented spectrally.
+A retained coherent state may be written
+\[
+  \psi_{\coh}(x)
+  =
+  \sum_{n\in\coh}c_n\phi_n(x).
+\]
+If \(H_{\coh}\) is the coherent-sector phase generator, then
+\[
+  \psi_{\coh}(t)
+  =
+  e^{-itH_{\coh}}\psi_{\coh}(0),
+\]
+or, in modes,
+\[
+  \psi_{\coh}(x,t)
+  =
+  \sum_{n\in\coh}
+  c_ne^{-i\omega_nt}\phi_n(x).
+\]
+
+\begin{proposition}[Interference from retained phase relations]
+Let a coherent excitation decompose into two retained branches,
+\[
+  \psi=\psi_a+\psi_b.
+\]
+If both branches remain in the same coherent sector and their relative phase is retained, then
+the intensity contains the cross term
+\[
+  \abs{\psi}^2
+  =
+  \abs{\psi_a}^2+\abs{\psi_b}^2
+  +
+  2\operatorname{Re}(\psi_a^\ast\psi_b).
+\]
+Thus wave-like interference is the operational signature of retained off-diagonal coherence.
+\end{proposition}
+
+\begin{proof}
+The identity follows by expanding \((\psi_a+\psi_b)^\ast(\psi_a+\psi_b)\). The physical
+content is that the cross term is observable only when the downstream description retains
+the relative phase between the two branches.
+\end{proof}
+
+The wave is therefore not a separate substance. It is the spectral phase shadow of the same
+coherent excitation whose local shadow appears particle-like.
+
+\section{Branch damping as a quantum channel}
+
+The informal rule
+\[
+  \rho_{ab}\mapsto D_{ab}\rho_{ab}
+\]
+must be mathematically valid. In particular, it should define a completely positive
+trace-preserving map on the retained branch density matrix.
+
+Let \(\{a\}_{a=1}^N\) label a finite branch decomposition and let
+\[
+  \rho=(\rho_{ab})_{a,b=1}^N
+\]
+be the density matrix in that branch basis.
+
+\begin{definition}[Schur branch-damping map]
+Let \(D=(D_{ab})\) be a complex \(N\times N\) matrix. Define
+\[
+  \calE_D(\rho)=D\circ \rho,
+\]
+where \(\circ\) denotes entrywise, or Schur, product:
+\[
+  (\calE_D(\rho))_{ab}=D_{ab}\rho_{ab}.
+\]
+\end{definition}
+
+\begin{theorem}[Complete positivity of admissible branch damping]
+\label{thm:schur-channel}
+If \(D\succeq0\) is positive semidefinite and \(D_{aa}=1\) for all \(a\), then
+\[
+  \calE_D(\rho)=D\circ\rho
+\]
+is completely positive and trace preserving.
+\end{theorem}
+
+\begin{proof}
+This is the standard Schur-product construction of a dephasing channel; it uses the Schur
+product theorem and the usual Kraus characterization of completely positive maps
+\cite{HornJohnson,Paulsen,NielsenChuang}. Since \(D\succeq0\), there exist vectors
+\(v_a\) in a finite-dimensional Hilbert space such that \(D_{ab}=\ip{v_b}{v_a}\). Let
+\(v_a^\mu\) be their components in an orthonormal basis
+and define diagonal Kraus operators
+\[
+  M_\mu=\sum_a v_a^\mu |a\rangle\langle a|.
+\]
+Then
+\[
+  \sum_\mu M_\mu \rho M_\mu^\ast
+\]
+has matrix entries
+\[
+  \sum_\mu v_a^\mu \rho_{ab}\overline{v_b^\mu}
+  =
+  \ip{v_b}{v_a}\rho_{ab}
+  =
+  D_{ab}\rho_{ab}.
+\]
+Thus \(\calE_D\) is completely positive. Since \(D_{aa}=1\), the diagonal entries are unchanged,
+so \(\tr(\calE_D(\rho))=\tr(\rho)\).
+\end{proof}
+
+\begin{corollary}[Consistency condition for MTT damping factors]
+A proposed MTT branch-damping family \(D_{ab}\) is an admissible retained-sector quantum
+operation if
+\[
+  D\succeq0,
+  \qquad
+  D_{aa}=1.
+\]
+Thus damping factors are not arbitrary visibility multipliers. They must define a positive
+Schur multiplier on branch density matrices.
+\end{corollary}
+
+\begin{proposition}[Gaussian branch-distance damping is admissible]
+\label{prop:gaussian-damping}
+Let \(r_a\) be points in a real Hilbert space and let
+\[
+  D_{ab}
+  =
+  \exp\left(-\frac{\tau}{2}\norm{r_a-r_b}^2\right),
+  \qquad \tau\ge0.
+\]
+Then \(D\succeq0\) and \(D_{aa}=1\). Hence \(D\circ\rho\) is a completely positive
+trace-preserving branch-damping map.
+\end{proposition}
+
+\begin{proof}
+The Gaussian kernel \(G_\tau(r,s)=\exp[-\tau\norm{r-s}^2/2]\) is positive definite on real
+Hilbert spaces. For finite-dimensional branch data this follows by the Fourier representation
+of the Gaussian after embedding the finite span of the \(r_a\) into \(\bbR^m\). Therefore the
+finite Gram matrix \(D_{ab}=G_\tau(r_a,r_b)\) is positive semidefinite. The diagonal entries
+are \(D_{aa}=1\).
+\end{proof}
+
+\begin{definition}[Conditionally negative branch separation]
+A symmetric matrix \(\Lambda=(\Lambda_{ab})\) with \(\Lambda_{aa}=0\) is conditionally
+negative definite if
+\[
+  \sum_{a,b}\overline{c_a}c_b\Lambda_{ab}\le0
+  \qquad
+  \text{whenever }\sum_a c_a=0.
+\]
+\end{definition}
+
+\begin{proposition}[Schoenberg admissibility criterion]
+\label{prop:schoenberg}
+If \(\Lambda\) is conditionally negative definite, then for every \(\tau\ge0\)
+\[
+  D_{ab}=e^{-\tau\Lambda_{ab}}
+\]
+is positive semidefinite and satisfies \(D_{aa}=1\). Hence \(D\circ\rho\) is an admissible
+branch-damping channel.
+\end{proposition}
+
+\begin{proof}
+This is Schoenberg's theorem on conditionally negative kernels and positive definite
+exponentials. The Gaussian distance kernel in \cref{prop:gaussian-damping} is the special
+case \(\Lambda_{ab}=\norm{r_a-r_b}^2/2\).
+\end{proof}
+
+\begin{remark}[Branch-separation scales]
+A scalar expression \(D_{ab}=e^{-\ta\Lambda_{ab}}\) is safe when \(\Lambda\) is conditionally
+negative definite, or when it arises from a positive kernel such as \cref{prop:gaussian-damping}.
+In general, the matrix \(D\), not merely the pairwise numbers \(\Lambda_{ab}\), must satisfy
+complete-positivity constraints.
+\end{remark}
+
+\section{Measurement as finite survivor-basin selection}
+
+In ordinary notation, an ideal position measurement is represented by the sharp projector
+\[
+  |x\rangle\langle x|.
+\]
+In MTT this is a singular idealization. A physical detector has finite resolution, finite
+disturbance strength, finite coherence capacity, and finite admissible support. Its effects are
+therefore represented by a POVM, in the standard operational sense of generalized quantum
+measurement \cite{NielsenChuang}.
+
+\begin{definition}[Finite detector-effect kernel]
+Let \(k_x\in\Hcoh\) be a detector response vector centered at outcome \(x\). Define
+\[
+  E_x=|k_x\rangle\langle k_x|.
+\]
+In coordinate notation,
+\[
+  E_x(y,z)=K_{\det}(y,x)K_{\det}^\ast(z,x).
+\]
+The detector kernel is a detector-sector instance of the same admissible-kernel construction:
+\[
+  B_{\det}
+  =
+  P_{\det}\chi_{\det}(A_{\det})
+  e^{-\tau_{\det}A_{\det}}
+  \chi_{\det}(A_{\det})P_{\det}.
+\]
+Thus \(K_{\det}\) is not a new arbitrary smearing profile; it is the measurement-device
+realization of the finite coherent kernel.
+\end{definition}
+
+\begin{assumption}[Retained-sector POVM normalization]
+For a closed retained detector model,
+\[
+  \int E_x\,\dd x=I_{\coh}.
+  \label{eq:povm-normalization}
+\]
+For an open detector model with unobserved discarded channels, one has instead
+\[
+  \int E_x\,\dd x\le I_{\coh}.
+\]
+The closed case is used for probability-conserving detection records.
+\end{assumption}
+
+\begin{proposition}[Probability conservation for finite detector effects]
+If \(\rho\) is a retained-sector density matrix and \(\{E_x\}\) satisfies
+\[
+  \int E_x\,\dd x=I_{\coh},
+\]
+then
+\[
+  p(x)=\tr(\rho E_x)
+\]
+is normalized:
+\[
+  \int p(x)\,\dd x=1.
+\]
+\end{proposition}
+
+\begin{proof}
+Using linearity and the POVM normalization,
+\[
+  \int p(x)\,\dd x
+  =
+  \int \tr(\rho E_x)\,\dd x
+  =
+  \tr\left(\rho\int E_x\,\dd x\right)
+  =
+  \tr(\rho I_{\coh})
+  =
+  \tr(\rho)
+  =
+  1.
+\]
+\end{proof}
+
+Measurement is therefore not a primitive jump from wave to particle. It is the sequence
+\[
+  \text{coherent evolution}
+  \to
+  \text{localized disturbance}
+  \to
+  \text{projection}
+  \to
+  \text{survivor-basin stabilization}.
+\]
+The sharp PVM is recovered only in the ideal limit \(E_x\to |x\rangle\langle x|\).
+
+\section{Device-dependent disturbance and exact records}
+
+Different measurement devices do not merely reveal the same downstream shadow with different
+labels. They implement different finite couplings, different detector kernels, and sometimes
+different survivor-basin partitions. In MTT a measurement arrangement \(\Meas\) is specified by
+device-sector data
+\[
+  (A_{\Meas},P_{\Meas},\chi_{\Meas},\tau_{\Meas},\{E_i^{(\Meas)}\}_{i\in I}).
+\]
+It therefore determines both a POVM and a branch-distance kernel. For branches \(a,b\), the
+same upstream coherent excitation may acquire different damping factors under different
+apparatuses:
+\[
+  D_{ab}^{(\Meas)}
+  =
+  \exp[-\tau_{\Meas}\Lambda_{ab}^{(\Meas)}],
+\]
+subject to the complete-positivity condition of \cref{thm:schur-channel} or
+\cref{prop:schoenberg}.
+
+\begin{definition}[Measurement context]
+A measurement context is an admissible device-sector projection
+\[
+  \Meas:\rho\longmapsto
+  \{p_i=\tr(\rho E_i^{(\Meas)})\}_{i\in I}
+\]
+together with a stabilization map assigning the post-interaction configuration to survivor
+basins \(\{B_i^{(\Meas)}\}\).
+\end{definition}
+
+\begin{proposition}[Device dependence of particle-like records]
+Let two devices \(\Meas\) and \(\Meas'\) couple to the same coherent input state but induce
+different detector effects or different branch-distance kernels. Then they need not preserve
+the same interference visibility, nor select the same effective branch basis. What is exact is
+the stabilized record inside the chosen measurement context:
+\[
+  \Psi\longmapsto B_i^{(\Meas)}
+\]
+after disturbance, projection, and re-coherence.
+\end{proposition}
+
+\begin{proof}
+The probabilities and coherences measured by a device are determined by its POVM effects
+and branch-damping matrix. If \(E_i^{(\Meas)}\neq E_i^{(\Meas')}\) or
+\(D^{(\Meas)}\neq D^{(\Meas')}\), the downstream statistics and visibility differ. Once a
+particular device coupling drives the configuration into a survivor basin, the stabilized
+record is discrete within that context. Thus exact records are contextual stabilized outcomes,
+not non-disturbing revelations of a context-independent point property.
+\end{proof}
+
+\begin{remark}[Weak, strong, and quantum-eraser regimes]
+A weak which-way device has \(D_{12}^{(\Meas)}\) close to one and only partially reduces
+visibility. A strong which-way device has \(D_{12}^{(\Meas)}\) close to zero and yields
+particle-like records. A quantum-eraser arrangement changes the final device projection so
+that the branch marker is measured in a basis where conditional coherences can reappear.
+In MTT language, the eraser does not undo a literal past trajectory; it changes the downstream
+survivor-basin partition used to read the branch-marked state.
+\end{remark}
+
+
+
+\section{Double-slit experiment in operator form}
+
+The double-slit experiment is the cleanest illustration of projection duality.
+
+Let \(|\psi_1\rangle\) and \(|\psi_2\rangle\) be the two branch amplitudes after the slits,
+including their complex weights. The normalized outgoing state is
+\[
+  |\psi\rangle
+  =
+  \frac{|\psi_1\rangle+|\psi_2\rangle}{\sqrt{\mathcal N}},
+  \qquad
+  \mathcal N=\norm{\psi_1+\psi_2}^2,
+\]
+and, to avoid clutter, the normalization factor is absorbed into the branch amplitudes below. The pre-detection density matrix decomposes into
+\[
+  \rho
+  =
+  \rho_{11}+\rho_{22}+\rho_{12}+\rho_{21},
+\]
+where
+\[
+  \rho_{ab}=|\psi_a\rangle\langle\psi_b|.
+\]
+
+A branch-damping channel maps
+\[
+  \rho
+  \mapsto
+  \rho'
+  =
+  \rho_{11}+\rho_{22}
+  +
+  D_{12}\rho_{12}
+  +
+  D_{21}\rho_{21},
+\]
+with \(D_{11}=D_{22}=1\), \(D_{21}=D_{12}^\ast\), and \(D\succeq0\).
+
+For a screen effect \(E_x\), the detected intensity is
+\[
+  I_{\MTT}(x)
+  =
+  \tr(\rho' E_x).
+\]
+In the ideal narrow-screen limit this gives
+\begin{equation}
+  I_{\MTT}(x)
+  =
+  \abs{\psi_1(x)}^2
+  +
+  \abs{\psi_2(x)}^2
+  +
+  2D_{12}\operatorname{Re}\left[\psi_1^\ast(x)\psi_2(x)\right],
+  \label{eq:slit-intensity}
+\end{equation}
+for real \(D_{12}\in[0,1]\). More generally, the phase of \(D_{12}\) shifts the interference
+phase.
+
+\begin{proof}[Derivation of \cref{eq:slit-intensity}]
+Using \(E_x\approx |x\rangle\langle x|\),
+\[
+  \tr(\rho_{11}E_x)=\abs{\psi_1(x)}^2,\qquad
+  \tr(\rho_{22}E_x)=\abs{\psi_2(x)}^2,
+\]
+and
+\[
+  \tr(\rho_{12}E_x)=\psi_2^\ast(x)\psi_1(x),
+  \qquad
+  \tr(\rho_{21}E_x)=\psi_1^\ast(x)\psi_2(x).
+\]
+Adding the damped off-diagonal terms gives \cref{eq:slit-intensity}.
+\end{proof}
+
+No which-way selection corresponds to
+\[
+  D_{12}\approx1,
+\]
+so the interference term survives. Strong which-way selection corresponds to
+\[
+  D_{12}\approx0,
+\]
+so the interference term is suppressed and the downstream record becomes particle-like.
+
+\subsection{Visibility}
+
+For symmetric slits with equal single-branch intensities and ideal visibility \(V_0\), define
+\[
+  V=\frac{I_{\max}-I_{\min}}{I_{\max}+I_{\min}}.
+\]
+
+\begin{proposition}[Visibility damping]
+\label{prop:visibility}
+In the symmetric two-branch case with real \(0\le D_{12}\le1\),
+\[
+  V_{\MTT}=D_{12}V_0.
+\]
+\end{proposition}
+
+\begin{proof}
+In a symmetric two-branch interference pattern the undamped intensity may be written
+locally as
+\[
+  I_0(x)=\bar I(x)\bigl[1+V_0\cos\varphi(x)\bigr],
+\]
+where \(\bar I(x)\) is the slowly varying envelope and \(V_0\) is the ideal fringe
+visibility. The Schur damping channel multiplies only the off-diagonal coherence and hence
+only the modulation term. Therefore
+\[
+  I_{\MTT}(x)=\bar I(x)\bigl[1+D_{12}V_0\cos\varphi(x)\bigr].
+\]
+Consequently
+\[
+  \frac{I_{\max}-I_{\min}}{I_{\max}+I_{\min}}=D_{12}V_0.
+\]
+\end{proof}
+
+This gives an operational bridge:
+\[
+  D_{12}\approx1
+  \Rightarrow
+  \text{wave-like interference},
+\]
+while
+\[
+  D_{12}\approx0
+  \Rightarrow
+  \text{particle-like which-way behavior}.
+\]
+In standard two-path language this is the same tradeoff measured by visibility and which-way
+distinguishability; the MTT contribution is to identify \(D_{12}\) with an admissible
+branch-coherence survival factor rather than with an independent postulate \cite{Englert}.
+
+\begin{remark}[Not ordinary propagation decoherence]
+The factor \(D_{12}\) in this paper is a retained-sector branch-coherence factor. It is not
+assumed to be a propagation-length decoherence exponent. Propagation-dependent damping
+would require an additional open-system or environmental dynamics not assumed here.
+\end{remark}
+
+\section{Further experimental modules}
+
+The double-slit experiment is the minimal example. The same projection-duality pattern also
+organizes several standard quantum experiments.
+
+\subsection{Stern--Gerlach splitting}
+
+A Stern--Gerlach device does not test an abstract spin property without context. It supplies
+a magnetic-field gradient, hence a measurement context \(\Meas_{\hat n}\) associated with an
+axis \(\hat n\). The branch basis is
+\[
+  \{|\uparrow_{\hat n}\rangle,|\downarrow_{\hat n}\rangle\},
+\]
+and the spatial detector separates the two spin-correlated beams. In MTT terms the apparatus
+creates two survivor basins,
+\[
+  B_{\uparrow}^{(\hat n)},\qquad B_{\downarrow}^{(\hat n)},
+\]
+and a strong device drives
+\[
+  D_{\uparrow\downarrow}^{(\hat n)}\approx0.
+\]
+The outcome is exact within the chosen apparatus context: a spot in the upper or lower basin.
+Changing the magnet orientation changes the measurement context and therefore the branch
+basis selected by the device. Thus exact records are compatible with contextual disturbance.
+
+\subsection{Mach--Zehnder interferometer}
+
+A Mach--Zehnder interferometer is a controlled two-branch system. With no which-path marker,
+the two path branches remain coherent and recombine:
+\[
+  D_{12}\approx1.
+\]
+A phase shifter changes the relative phase \(\varphi\), producing output probabilities of the
+form
+\[
+  p_{\pm}=\frac12\bigl(1\pm V_0\cos\varphi\bigr)
+\]
+in the ideal balanced case. A which-path marker changes the branch-damping matrix, yielding
+\[
+  p_{\pm}^{\MTT}
+  =
+  \frac12\bigl(1\pm D_{12}V_0\cos\varphi\bigr).
+\]
+The apparatus therefore interpolates continuously between wave-like recombination and
+particle-like path records.
+
+\subsection{Delayed-choice and quantum eraser arrangements}
+
+Delayed-choice experiments change the final projection context after the branches have been
+prepared. In MTT this does not require retrocausal alteration of a past particle path. The
+branch-marked state retains or loses operational interference depending on the final
+survivor-basin partition. A quantum eraser measures the marker in a basis that groups branch
+records into coherent conditional subensembles. Thus unconditional interference may remain
+absent while conditional fringes reappear. The MTT distinction is:
+\[
+  \text{unconditional record}
+  \neq
+  \text{conditional survivor-basin partition}.
+\]
+
+\subsection{Matter-wave interferometry and diffraction}
+
+Electron, neutron, atom, and molecule diffraction are direct examples of the same structure.
+The local detection event is particle-like because the detector effect is narrow, while the
+propagating object is wave-like because retained modal phases remain coherent across paths or
+grating openings. Finite mass changes the coherent phase generator \(H_{\coh}\), not the
+projection-duality architecture:
+\[
+  \psi_{\coh}(t)=e^{-itH_{\coh}}\psi_{\coh}(0).
+\]
+
+\subsection{Hong--Ou--Mandel-type indistinguishability}
+
+Two-particle interference experiments emphasize that interference is not merely a property of
+single-particle trajectories. The relevant branches may be alternatives in a multi-particle
+configuration space. If the alternatives are indistinguishable within the detector context, their
+off-diagonal coherences survive. If auxiliary labels make them distinguishable, the corresponding
+branch-damping factor decreases. Thus the same Schur-channel logic applies to configuration
+branches, not only to spatial paths.
+
+\section{The wave--particle projection-duality theorem}
+
+We can now state the central result.
+
+\begin{theorem}[Wave--particle projection duality]
+\label{thm:projection-duality}
+Let \((A,P,\chi,\ta)\) define an admissible fixed-point coherent sector with operator
+\[
+  \Badm=P\chi(A)e^{-\ta A}\chi(A)P.
+\]
+Assume:
+\begin{enumerate}[label=(\roman*)]
+  \item \(A\) is nonnegative self-adjoint and has a coherent spectral sector selected by \(P\);
+  \item \(\chi(A)\) is subordinate to the admissible coherent spectral window;
+  \item \(\ta\) is fixed by discarded-sector damping and admissibility tolerance;
+  \item coherent evolution preserves relative phase inside \(\Ran P\);
+  \item detector effects form finite POVMs on the retained sector;
+  \item branch damping is implemented by an admissible Schur channel \(D\circ\rho\).
+\end{enumerate}
+Then the same coherent-sector excitation has two downstream operational shadows:
+\begin{enumerate}[label=(\alph*)]
+  \item a particle-like shadow, given by local finite localization kernels that recover
+  \(\delta(x-y)\) in the sharp limit;
+  \item a wave-like shadow, given by spectral coherent modes whose retained relative phases
+  generate interference.
+\end{enumerate}
+Measurement or which-way selection damps off-diagonal branch coherences. Hence
+wave-like interference and particle-like localization are not distinct ontological primitives.
+They are complementary projection shadows of one finite coherent-sector excitation.
+\end{theorem}
+
+\begin{proof}
+The local statement follows from \cref{thm:delta-limit}: finite kernels converge to the
+Dirac identity only in the joint sharp limit. Therefore local probing of a narrow finite kernel
+yields effective particle-like localization.
+
+The spectral statement follows from \cref{thm:dual-representation}: the same operator
+\(\Badm\) has a retained modal expansion. Coherent evolution multiplies retained modes by
+phases \(e^{-i\omega_nt}\), and superpositions of retained branches produce cross terms in
+observable probabilities.
+
+The measurement statement follows from the POVM normalization result and
+\cref{thm:schur-channel}. Finite detector effects produce normalized probabilities, while
+admissible Schur damping suppresses off-diagonal branch coherences without violating
+complete positivity or trace preservation.
+
+Thus the same coherent-sector excitation yields wave-like or particle-like behavior depending
+on which downstream projection context is applied. This proves the projection-duality claim.
+\end{proof}
+
+\[
+  \boxed{\text{wave--particle duality}=\text{projection duality}.}
+\]
+
+\section{Recovery of standard quantum mechanics}
+
+MTT does not discard standard quantum mechanics. It recovers it in appropriate limits.
+
+\begin{proposition}[Recovery limits]
+The standard formulas are recovered under the following limiting conditions:
+\begin{enumerate}[label=(\roman*)]
+  \item If \(D_{ab}=1\) for all retained branches, interference is fully coherent.
+  \item If \(D_{ab}=0\) for \(a\ne b\), the retained state reduces to an incoherent branch
+  mixture.
+  \item If \(K_{\det}\) tends to a delta detector response, \(E_x\to |x\rangle\langle x|\).
+  \item If \(P\chi(A)^2P\to I\) and \(\ta\to0\), then \(\Kadm(x,y)\to\delta(x-y)\).
+\end{enumerate}
+\end{proposition}
+
+Thus the ordinary wavefunction appears as the coherent spectral shadow,
+\[
+  \psi(x,t)=\sum_n c_ne^{-iE_nt}\phi_n(x),
+\]
+the ordinary point measurement appears as the sharp detector limit,
+\[
+  E_x\to |x\rangle\langle x|,
+\]
+and the ordinary point source appears as the sharp kernel limit,
+\[
+  \Kadm(x,y)\to\delta(x-y).
+\]
+
+\section{Compatibility with basin-measure and measurement papers}
+
+This paper is designed to sit between two earlier MTT measurement results. The first
+identifies Born probabilities with basin weights of an invariant basin-measure functional.
+The second interprets measurement as localized disturbance followed by re-coherence,
+projection, and stabilization into one admissible basin. The present paper adds a different
+piece: it identifies the wave--particle contrast with the survival or suppression of
+off-diagonal branch coherence.
+
+\subsection{Outcome frequencies versus interference visibility}
+
+The branch-damping channel used above controls interference visibility. It does not by
+itself assign outcome frequencies. Outcome frequencies are supplied by the basin-measure
+functional. Let \(\{B_i\}_{i\in I}\) be the stabilized outcome basins inside an admissible
+coherent slab, and let \(\mu\) be the invariant basin measure. Then the basin-measure
+probability of outcome \(i\) is
+\[
+  p_i
+  =
+  \frac{\mu(B_i)}{\sum_{j\in I}\mu(B_j)}.
+\]
+The basin-measure statement requires the usual measurement assumptions: a stationary
+slab or ensemble measure \(\mu\), a measurable partition by survivor basins
+\(\{B_i\}_{i\in I}\), and almost-sure finite capture into exactly one stabilized basin. Under
+those hypotheses, \(p_i\) is a basin-measure weight rather than an interference-visibility
+factor.
+
+The role of \(D_{ab}\) is different: it controls whether coherent alternatives remain
+visible as interference before stabilization. Thus the duality paper separates two questions
+that are often conflated:
+\[
+\begin{aligned}
+  &\text{which stabilized outcome occurs?}\\
+  &\text{how much branch coherence remains before selection?}
+\end{aligned}
+\]
+
+\begin{proposition}[Compatibility with basin-measure probabilities]
+Assume a normalized detector POVM \(\{E_i\}_{i\in I}\) whose effects represent finite
+survivor basins. Assume also a stationary slab measure \(\mu\), a measurable survivor-basin
+partition \(\{B_i\}_{i\in I}\), and almost-sure finite capture into one basin, so that
+\[
+  p_i=\mu(B_i)/\sum_j\mu(B_j).
+\]
+If the pre-selection coherence between alternatives is damped by a CPTP Schur channel
+\(\calE_D\), then branch visibility is modified by \(D\), while the stabilized outcome
+weights are still computed by the basin measures of the survivor basins.
+\end{proposition}
+
+\begin{proof}
+The Schur channel acts on off-diagonal branch coherences and preserves trace by
+\cref{thm:schur-channel}. The basin-measure rule assigns probabilities after the
+stabilizing basin-capture event and depends only on the measurable basin partition.
+Therefore Schur damping changes interference terms in pre-selection observables but does
+not replace the basin-measure rule for stabilized outcomes.
+\end{proof}
+
+\subsection{Disturbance strength and smooth wave--particle crossover}
+
+The disturbance-stabilization paper describes double-slit behavior as a smooth crossover:
+weak which-way disturbance leaves the phase-sector floor small and interference survives;
+strong disturbance pushes the configuration across an admissibility threshold and stabilizes
+single-path basins. The present formalism expresses the same statement by letting the
+branch-separation scale depend on the detector disturbance strength \(\delta\):
+\[
+  D_{12}(\delta)
+  =
+  \exp\bigl[-\tau_{\mathrm{det}}\Lambda_{12}^{\mathrm{det}}(\delta)\bigr].
+\]
+If \(\Lambda_{12}^{\mathrm{det}}(\delta)\) is nondecreasing, then \(D_{12}(\delta)\) is
+nonincreasing. Fringe visibility therefore decreases continuously as which-way
+distinguishability increases:
+\[
+  V_{\MTT}(\delta)
+  =
+  D_{12}(\delta)V_0.
+\]
+This is the rigorous version of the earlier qualitative claim that wave--particle behavior is
+not an ontological switch but a controlled transition between admissible projection regimes.
+
+\begin{remark}[OU floors and finite detector width]
+The disturbance-stabilization analysis also implies that detector kernels generally possess
+irreducible disturbance--damping floors. In a linearized OU regime one expects a lower-width
+estimate of the form
+\[
+  \ell_{\mathrm{eff}}^2\gtrsim \frac{\delta}{2\gamma},
+\]
+where \(\delta\) is disturbance power and \(\gamma\) is the damping margin. Thus the sharp
+PVM limit is useful notation, but finite POVMs are the physically native measurement
+objects in MTT.
+\end{remark}
+
+
+\section{Relation to existing accounts}
+
+The claim is not that no previous framework addressed wave--particle duality. Many did.
+
+\subsection{Complementarity}
+
+Standard complementarity, beginning with Bohr's analysis \cite{Bohr}, states that wave-like and particle-like descriptions are revealed by
+different experimental arrangements. MTT preserves this insight but gives it a projection
+mechanism:
+\[
+  \Psi_{\coh}
+  \to
+  \begin{cases}
+  \text{spectral phase shadow},\\
+  \text{localized survivor-basin shadow}.
+  \end{cases}
+\]
+The descriptions are complementary because downstream projections are non-invertible.
+
+\subsection{Decoherence}
+
+Decoherence theory \cite{Zurek,Schlosshauer} explains suppression of off-diagonal density-matrix terms through environmental
+entanglement. MTT uses a similar mathematical form,
+\[
+  \rho_{ab}\mapsto D_{ab}\rho_{ab},
+\]
+but interprets admissible damping as a projection/selection effect tied to coherent-sector
+data. Environmental decoherence may be one physical mechanism realizing such damping,
+but it is not the only admissibility mechanism.
+
+\subsection{Pilot-wave theory}
+
+Pilot-wave theory \cite{Bohm} keeps both a particle configuration and a guiding wave as real structures.
+MTT instead treats local particle behavior and spectral wave behavior as two downstream
+shadows of one coherent-sector excitation. The ontology is therefore not a particle-plus-wave
+dual ontology, but a projection-duality account.
+
+\subsection{Quantum field theory}
+
+Quantum field theory already treats particles as excitations of fields and uses local
+distributions, propagators, and detector models. MTT is compatible with that operational
+success, but reinterprets point-local distributions as sharp limits of finite coherent kernels.
+
+\subsection{String and extended-object accounts}
+
+String theory \cite{Polchinski} replaces point particles with extended strings, whose low-resolution behavior
+can appear pointlike and whose vibrational modes define spectra. MTT is different: the common
+source is not a fundamental one-dimensional object but a finite admissible coherent kernel
+selected by projection and damping data. The pointlike and wavelike aspects are kernel
+shadows, not merely geometric extension versus vibration.
+
+\begin{remark}[Relation to earlier MTT measurement papers]
+Earlier MTT measurement papers supply the basin-measure and disturbance-stabilization
+sides of the story: probabilities arise from relative basin weights, finite POVMs are native
+survivor-basin effects, and ideal collapse is a singular sharp-basin limit. The present paper
+does not rederive those results. It uses them to explain why the same coherent excitation
+has a wave-like phase-coherence shadow before selection and a particle-like localized
+survivor shadow after selection.
+\end{remark}
+
+\begin{remark}[Novelty statement]
+The novelty is not that finite kernels, wavefunctions, or decoherence factors exist. The
+novelty is the unified selection architecture: the same admissible coherent kernel has a
+local delta-shadow, a spectral phase-shadow, and a measurement-selection shadow, with its
+width fixed by damping/admissibility data rather than by an external regulator choice.
+\end{remark}
+
+\section{Relation to propagators and point interactions}
+
+The same structure appears in propagators. In a flat Euclidean coherent chart with
+\(A=-\Delta\), the MTT-corrected scalar propagator is
+\[
+  \Delta_{\mathrm{adm}}(k)
+  =
+  \frac{e^{-\ta k^2}}{k^2+m^2}.
+\]
+This is the propagator-level expression of finite coherent support.
+
+Point sources are replaced by coherent kernels:
+\[
+  \delta(x-y)\rightsquigarrow \Kadm(x,y).
+\]
+Point contact interactions are similarly replaced by finite coherent-overlap vertices.
+A local \(n\)-point contact profile
+\[
+  \int_X \prod_{j=1}^n \delta(x-x_j)\,\dd x
+\]
+is replaced by
+\[
+  \int_X \prod_{j=1}^n \Kadm(x,x_j)\,\dd x.
+\]
+Thus the point-particle limit, local source limit, and contact-interaction limit are singular
+shadows of finite coherent support.
+
+\section{Relation to branch coherence in other sectors}
+
+The double-slit branch damping structure is not special to spatial slits. It is a general
+coherent-branch phenomenon.
+
+For neutrino mass branches, the analogous admissible damping factor is
+\[
+  D_{ij}^{\nu}
+  =
+  \exp(-\tau_{\nu,\mathrm{adm}}\abs{\Delta m_{ij}^2}),
+\]
+or, after inserting the neutrino-sector damping scale,
+\[
+  D_{ij}^{\nu}
+  =
+  \exp\left[
+  -
+  \frac{\abs{\Delta m_{ij}^2}}{\lambda_{\ast,\nu}}
+  \log\left(\frac{C_{Q,\nu}L_\nu}{d_{\nu,\mathrm{basin}}}\right)
+  \right].
+\]
+For double-slit spatial branches, the analogous expression is
+\[
+  D_{12}^{\mathrm{slit}}
+  =
+  \exp(-\tau_{\mathrm{det}}\Lambda_{12}^{\mathrm{det}}),
+\]
+provided the resulting branch matrix is positive semidefinite or arises from a positive
+branch-distance kernel. The operators and scales differ, but the structure is the same:
+\[
+\begin{aligned}
+  \text{coherent branch superposition}
+  &\longrightarrow
+  \text{phase evolution} \\
+  &\longrightarrow
+  \text{possible damping by admissibility or selection}.
+\end{aligned}
+\]
+
+\section{Failure modes and domain of validity}
+
+Stating the failure modes is part of the rigor of the result.
+
+\begin{enumerate}[label=(\roman*)]
+  \item If no isolated coherent spectral sector exists, the projector \(P\) is not canonically
+  defined.
+  \item If \(P\) is not a spectral/Riesz projector or otherwise fails to preserve the smooth
+  domain of \(A\), smooth-kernel claims require additional regularity assumptions.
+  \item If the discarded-sector gap vanishes, \(\lambda_\ast=0\), the damping time may diverge
+  and no finite admissible kernel is selected by this mechanism.
+  \item If \(\chi(A)\) is tuned independently of the spectral split, it becomes a regulator choice
+  rather than an admissible MTT window.
+  \item If \(H_{\coh}\) does not generate coherent unitary phase evolution on \(\Ran P\), the
+  wave-shadow portion must be replaced by the appropriate open-system evolution.
+  \item If detector effects do not form a normalized POVM, probability either leaks into
+  unobserved channels or must be renormalized by an explicit conditioning rule.
+  \item If a proposed branch-damping matrix \(D\) is not positive semidefinite, the map
+  \(\rho\mapsto D\circ\rho\) is not a completely positive quantum operation.
+  \item If the finite kernel width is experimentally resolvable, the point-particle approximation
+  fails and finite-width corrections should appear.
+  \item If the measurement device is changed, the relevant POVM, branch basis, and damping
+  matrix may change; exact records are exact only inside the specified device context.
+\end{enumerate}
+
+These are not defects of the theorem. They are its boundary conditions.
+
+\section{Phenomenological consequences}
+
+The paper is primarily structural, but it gives immediate scaling consequences.
+
+\subsection{Pointlike bounds}
+
+If no substructure is resolved up to an energy scale \(E\), then the effective coherence scale
+must satisfy
+\[
+  \Leff\gtrsim E.
+\]
+More carefully, if deviations are bounded at fractional level \(\eta\), then in flat sectors
+\[
+  \ta E^2\lesssim \eta.
+\]
+
+\subsection{Interference visibility}
+
+For a two-branch interference experiment,
+\[
+  V_{\MTT}=D_{ab}V_0.
+\]
+Thus visibility constraints bound the product
+\[
+  \tau_{\mathrm{sel}}\Lambda_{ab}
+\]
+or, in distance-kernel realizations, the distinguishability distance between branches.
+
+\subsection{Detector resolution}
+
+Pointlike detection requires
+\[
+  2\sqrt{\tau_{\mathrm{det}}}\ll \ell_{\mathrm{det}}
+\]
+in heat-kernel models. If the detector kernel becomes comparable to the detector resolution,
+finite-width corrections to ideal point events may become operationally meaningful.
+
+\begin{remark}[No numerical overclaim]
+These are scaling consequences. Numerical predictions require sector-specific computation of
+the relevant operator \(A\), projector \(P\), spectral window \(\chi\), damping gap
+\(\lambda_\ast\), admissibility tolerance, and detector coupling data.
+\end{remark}
+
+\section{Conclusion}
+
+Wave--particle duality is not a primitive paradox in Modal Triplet Theory. It is the downstream
+appearance of one coherent-sector excitation under two different projections.
+
+The particle-like aspect is the local shadow:
+\[
+  \Kadm(x,y)\to\delta(x-y).
+\]
+The wave-like aspect is the spectral shadow:
+\[
+  \psi_{\coh}(x,t)
+  =
+  \sum_{n\in\coh}
+  c_ne^{-i\omega_nt}\phi_n(x).
+\]
+Measurement is finite survivor-basin selection:
+\[
+  \rho_{ab}\mapsto D_{ab}\rho_{ab},
+\]
+implemented, when closed, by a completely positive trace-preserving Schur channel and a
+normalized detector POVM.
+
+The double-slit experiment then becomes transparent. When both branches remain coherently
+admissible, interference appears. When detector coupling separates the branches into
+distinguishable survivor basins, interference is damped and localized events remain.
+
+Thus the quantum object is not forced to be either a wave or a particle. In MTT, both are
+downstream shadows of one finite coherent excitation, revealed differently by spectral
+evolution, local probing, and admissible selection.
+
+\[
+  \boxed{\text{Wave--particle duality is projection duality.}}
+\]
+
+\begin{thebibliography}{20}
+
+\bibitem{ReedSimon}
+M. Reed and B. Simon,
+\emph{Methods of Modern Mathematical Physics I: Functional Analysis},
+Academic Press.
+
+\bibitem{Davies}
+E. B. Davies,
+\emph{Heat Kernels and Spectral Theory},
+Cambridge University Press.
+
+\bibitem{GlimmJaffe}
+J. Glimm and A. Jaffe,
+\emph{Quantum Physics: A Functional Integral Point of View},
+Springer.
+
+\bibitem{Zurek}
+W. H. Zurek,
+Decoherence, einselection, and the quantum origins of the classical,
+\emph{Reviews of Modern Physics} 75, 715--775.
+
+\bibitem{Schlosshauer}
+M. Schlosshauer,
+\emph{Decoherence and the Quantum-to-Classical Transition},
+Springer.
+
+\bibitem{Bohr}
+N. Bohr,
+The quantum postulate and the recent development of atomic theory,
+\emph{Nature} 121, 580--590.
+
+\bibitem{Bohm}
+D. Bohm,
+A suggested interpretation of the quantum theory in terms of hidden variables,
+\emph{Physical Review} 85, 166--193.
+
+\bibitem{FeynmanHibbs}
+R. P. Feynman and A. R. Hibbs,
+\emph{Quantum Mechanics and Path Integrals},
+McGraw--Hill.
+
+\bibitem{MTTDelta}
+P. Nero,
+\emph{Dirac Delta Functions as Singular Shadows of Admissible Projection},
+MTT Delta--Projection sequence.
+
+\bibitem{MTTKernel}
+P. Nero,
+\emph{Canonical Coherent Kernels from MTT Fixed-Point Data},
+MTT Delta--Projection sequence.
+
+\bibitem{MTTDamping}
+P. Nero,
+\emph{Deriving the MTT Coherence Scale from Fixed-Point Damping},
+MTT Delta--Projection sequence.
+
+
+\bibitem{Schoenberg}
+I. J. Schoenberg,
+Metric spaces and positive definite functions,
+\emph{Transactions of the American Mathematical Society} 44, 522--536.
+
+\bibitem{Englert}
+B.-G. Englert,
+Fringe visibility and which-way information: An inequality,
+\emph{Physical Review Letters} 77, 2154--2157.
+
+\bibitem{HornJohnson}
+R. A. Horn and C. R. Johnson,
+\emph{Matrix Analysis},
+Cambridge University Press.
+
+\bibitem{Paulsen}
+V. Paulsen,
+\emph{Completely Bounded Maps and Operator Algebras},
+Cambridge University Press.
+
+\bibitem{NielsenChuang}
+M. A. Nielsen and I. L. Chuang,
+\emph{Quantum Computation and Quantum Information},
+Cambridge University Press.
+
+\bibitem{Polchinski}
+J. Polchinski,
+\emph{String Theory, Volumes 1 and 2},
+Cambridge University Press.
+
+\bibitem{MTTBornBridge}
+P. Nero,
+\emph{Inflationary Measures and the Born Rule as a Single Shadow--Bridge Problem},
+MTT Shadow--Bridge sequence.
+
+\bibitem{MTTDisturbance}
+P. Nero,
+\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
+MTT Measurement sequence.
+
+\bibitem{MTTMeasurement}
+P. Nero,
+\emph{Measurement Effects as Finite Survivor-Basin Kernels},
+MTT Delta--Projection sequence.
+
+\end{thebibliography}
+
+\end{document}

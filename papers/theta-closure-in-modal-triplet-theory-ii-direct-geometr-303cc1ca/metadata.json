@@ -1,0 +1,91 @@
+{
+  "abstract": "We re-execute the Route A geometric overlap ansatz against the selected multi-loop gauge-profile targets of Paper I. In its stated dimensionless normalization, the round-S^2 effective lens base and isotropic compact Heisenberg nilmanifold can be retargeted analytically to (f_2R_{\\mathrm{lens}})^2=0.2555137R_1, \\qquad c=0.9948493R_1. The associated spectral lower bounds remain above the assumed dimensionless admissibility floor. This proves existence of a calibrated representative in the declared auxiliary ansatz. It does not prove that the full lens space reduces to this S^2 model, identify the Lens\u2013Nil representative with the selected q79/Fu\u2013Yau compactification, select a geometry uniquely by MTT, or make the gauge couplings held-out predictions. The shared circle is common U(1) phase/holonomy data, not an additional factor in a S^1\\times L(3,1)\\times\\mathrm{Nil}_3 manifold. The old 5~\\mathrm{TeV} target pair is withdrawn.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18262079",
+    "created": "2026-01-15T20:38:52.213581+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18262080",
+    "files": [
+      {
+        "checksum": "md5:603f3d62df7d15dcdaba47d96cd3b121",
+        "content_url": "https://zenodo.org/api/records/18262080/files/Theta_Closure_in_Modal_Triplet_Theory_II__Direct_Geometric_Realization_of_Nonabelian_Overlaps%20(2).pdf/content",
+        "key": "Theta_Closure_in_Modal_Triplet_Theory_II__Direct_Geometric_Realization_of_Nonabelian_Overlaps (2).pdf",
+        "size": 340205
+      }
+    ],
+    "id": "18262080",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18262080",
+    "resource_type": "publication",
+    "title": "Theta Closure in Modal Triplet Theory II: Direct Geometric Realization of Nonabelian Overlaps",
+    "updated": "2026-01-15T20:38:52.573802+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "6405db714b4a6ebf99e649d5c0e4a761584753dc2d9379fa478843a4a0fc6422",
+  "paper_id": "theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca",
+  "paper_md_sha256": "516640dcc5ee9966b71778a867a917cd0a3b978437fb21ac96556f4a4da43d7b",
+  "release_state": "zenodo_released",
+  "revision": {
+    "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
+    "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
+    "selected_revision": true,
+    "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_II__Direct_Geometric_Realization_of_Nonabelian_Overlaps"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 16580,
+      "path": "main.tex",
+      "sha256": "6405db714b4a6ebf99e649d5c0e4a761584753dc2d9379fa478843a4a0fc6422"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_II__Direct_Geometric_Realization_of_Nonabelian_Overlaps_v2"
+  },
+  "source_tree_sha256": "d13d71a7d270375c3c3cf966feddfed41b6d56e018b24454431fe9ff6f832d2d",
+  "title": "Theta Closure in Modal Triplet Theory II: Direct Geometric Realization of Selected Gauge-Profile Overlaps",
+  "version_relation": "current_source_newer_than_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262079",
+      "created": "2026-01-15T20:38:52.213581+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18262080",
+      "files": [
+        {
+          "checksum": "md5:603f3d62df7d15dcdaba47d96cd3b121",
+          "content_url": "https://zenodo.org/api/records/18262080/files/Theta_Closure_in_Modal_Triplet_Theory_II__Direct_Geometric_Realization_of_Nonabelian_Overlaps%20(2).pdf/content",
+          "key": "Theta_Closure_in_Modal_Triplet_Theory_II__Direct_Geometric_Realization_of_Nonabelian_Overlaps (2).pdf",
+          "size": 340205
+        }
+      ],
+      "id": "18262080",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18262080",
+      "resource_type": "publication",
+      "title": "Theta Closure in Modal Triplet Theory II: Direct Geometric Realization of Nonabelian Overlaps",
+      "updated": "2026-01-15T20:38:52.573802+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

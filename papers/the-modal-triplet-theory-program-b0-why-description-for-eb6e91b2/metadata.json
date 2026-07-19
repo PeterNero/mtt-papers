@@ -1,0 +1,93 @@
+{
+  "abstract": "We classify the possible ways in which global coherence can fail in any theory that admits local reduced descriptions with overlap consistency and identity persistence. Working purely at the structural level and without assuming geometry, bundles, dynamics, or dimensionality, we show that there exist exactly three and only three obstruction types: loop inconsistency (circle), redundancy of representation (lens), and failure of representability (nil). These obstructions are exhaustive and mutually irreducible. We further demonstrate that any realization capable of supporting all three obstruction types simultaneously in a stable and non-degenerate manner must exhibit a tri-layer overlap structure. When combined with continuity and kinematic persistence requirements, the minimal such realization is equivalent, up to admissible re-encoding, to a ten-dimensional configuration space composed of a four-dimensional effective base and three independent internal layers. Geometry and bundle structure are shown to arise as the minimal bookkeeping framework required to encode circle, lens, and nil consistently, rather than as fundamental axioms. This work provides the missing classification link between the structural core of Modal Triplet Theory and its encoding-class and realization papers, explaining why gravity, gauge redundancy, and termination of description are inevitable structural responses to local describability and global obstruction.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18354989",
+    "created": "2026-01-23T20:01:46.017244+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18354990",
+    "files": [
+      {
+        "checksum": "md5:d4788b3c4f853a0d1b37a41b1104e6b4",
+        "content_url": "https://zenodo.org/api/records/18354990/files/The_Modal_Triplet_Theory_Program_B0__Why_Description_Forces_Circle__Lens__and_Nil%20(1).pdf/content",
+        "key": "The_Modal_Triplet_Theory_Program_B0__Why_Description_Forces_Circle__Lens__and_Nil (1).pdf",
+        "size": 347032
+      }
+    ],
+    "id": "18354990",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-23",
+    "record_url": "https://zenodo.org/records/18354990",
+    "resource_type": "publication",
+    "title": "The Modal Triplet Theory Program B0: Why Description Forces Circle, Lens, and Nil",
+    "updated": "2026-01-23T20:01:46.557006+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "59d38668889be0238e068f7b2f021792f5be47a83a2aaf596748c21864fe96b4",
+  "paper_id": "the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2",
+  "paper_md_sha256": "f770ff483e863550bf15dab5e843e322c758b84a8fb40f3d8e879c63d3548672",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 33326,
+      "path": "main.bib",
+      "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
+    },
+    {
+      "bytes": 54789,
+      "path": "main.tex",
+      "sha256": "59d38668889be0238e068f7b2f021792f5be47a83a2aaf596748c21864fe96b4"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B0__Why_Description_Forces_Circle__Lens__and_Nil"
+  },
+  "source_tree_sha256": "8702f4b9e223fb4e72b3a5302e29ab4158962028c2a1e1f4f6d20a6038645f8e",
+  "title": "The Modal Triplet Theory Program B0: Why Description Forces Circle, Lens, and Nil and Why the Minimal Continuous Realization Is Ten-Dimensional",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18354989",
+      "created": "2026-01-23T20:01:46.017244+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18354990",
+      "files": [
+        {
+          "checksum": "md5:d4788b3c4f853a0d1b37a41b1104e6b4",
+          "content_url": "https://zenodo.org/api/records/18354990/files/The_Modal_Triplet_Theory_Program_B0__Why_Description_Forces_Circle__Lens__and_Nil%20(1).pdf/content",
+          "key": "The_Modal_Triplet_Theory_Program_B0__Why_Description_Forces_Circle__Lens__and_Nil (1).pdf",
+          "size": 347032
+        }
+      ],
+      "id": "18354990",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-23",
+      "record_url": "https://zenodo.org/records/18354990",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B0: Why Description Forces Circle, Lens, and Nil",
+      "updated": "2026-01-23T20:01:46.557006+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

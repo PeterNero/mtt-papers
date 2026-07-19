@@ -1,0 +1,83 @@
+{
+  "abstract": "In Modal Triplet Theory (MTT), the problem of measurement is not solved by introducing collapse, hidden variables, or branching worlds. Instead, measurement is understood as an ordinary episode of the evolve\u2013project cycle on the ten-dimensional arena M_{10}=Y\\times X_6. A measuring device acts as a localized disturbance: a disturbance that pushes a coherent mode off the quiet submanifold defined by three commuting filters. The system then undergoes re-coherence: local smoothing damps high-frequency jitter, while global projection selects the admissible harmonic content. The outcome of measurement is the stabilized branch into which the system falls. Born probabilities emerge from the relative basin volumes of these branches, not from fundamental indeterminacy. Uncertainty relations are interpreted as Ornstein\u2013Uhlenbeck (OU) floors: finite widths that remain after balancing disturbance against damping. Famous quantum experiments\u2014double-slit interference, Stern\u2013Gerlach spin splitting, Bell correlations, quantum Zeno, Ramsey echoes\u2014are reinterpreted in this framework as specific ways in which localized disturbances stress the modal geometry and how coherence is restored. The result is a deterministic ten-dimensional ontology that produces effective stochasticity in four dimensions, with clear predictions for reversibility curves, threshold knees, and noise-assisted switching.",
+  "authors": [
+    "Peter Nero January 2026"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v5",
+  "date": "",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.17177404",
+    "created": "2026-01-21T19:32:53.523117+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18330568",
+    "files": [
+      {
+        "checksum": "md5:d8a79c35115963e14cb53452c3e771b9",
+        "content_url": "https://zenodo.org/api/records/18330568/files/Measurement_as_Disturbance_and_Stabilization_in_Modal_Triplet_Theory_v5.pdf/content",
+        "key": "Measurement_as_Disturbance_and_Stabilization_in_Modal_Triplet_Theory_v5.pdf",
+        "size": 314531
+      }
+    ],
+    "id": "18330568",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-21",
+    "record_url": "https://zenodo.org/records/18330568",
+    "resource_type": "publication",
+    "title": "Measurement as Disturbance and Stabilization in Modal Triplet Theory",
+    "updated": "2026-01-21T19:32:53.995897+00:00",
+    "version": "v5.0"
+  },
+  "main_tex_sha256": "f058d9e5a6041eacc846fcee7565f974ba7395073942f0cfec63124ab80c910d",
+  "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+  "paper_md_sha256": "8aa5e90d9c0e0f525f75a6c4f90bc29d9094e7ad974513960b7cbe0a97e2a74f",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 51122,
+      "path": "main.tex",
+      "sha256": "f058d9e5a6041eacc846fcee7565f974ba7395073942f0cfec63124ab80c910d"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "8 Measurement, Selection & Computation/_work/Measurement_as_Disturbance_and_Stabilization_in_Modal_Triplet_Theory_v5"
+  },
+  "source_tree_sha256": "0018746cb70323341f66c5e8f179d717cb3e315ad56b72cf06eccfa92700383d",
+  "title": "Measurement as Disturbance and Stabilization in Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17177404",
+      "created": "2026-01-21T19:32:53.523117+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18330568",
+      "files": [
+        {
+          "checksum": "md5:d8a79c35115963e14cb53452c3e771b9",
+          "content_url": "https://zenodo.org/api/records/18330568/files/Measurement_as_Disturbance_and_Stabilization_in_Modal_Triplet_Theory_v5.pdf/content",
+          "key": "Measurement_as_Disturbance_and_Stabilization_in_Modal_Triplet_Theory_v5.pdf",
+          "size": 314531
+        }
+      ],
+      "id": "18330568",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-21",
+      "record_url": "https://zenodo.org/records/18330568",
+      "resource_type": "publication",
+      "title": "Measurement as Disturbance and Stabilization in Modal Triplet Theory",
+      "updated": "2026-01-21T19:32:53.995897+00:00",
+      "version": "v5.0"
+    }
+  ]
+}

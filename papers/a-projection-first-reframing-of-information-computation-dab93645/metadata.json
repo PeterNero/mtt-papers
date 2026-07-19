@@ -1,0 +1,88 @@
+{
+  "abstract": "",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18255794",
+    "created": "2026-01-15T11:03:42.587128+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18255795",
+    "files": [
+      {
+        "checksum": "md5:89fc1f2ebbcf4f8f7b75c5fab2296810",
+        "content_url": "https://zenodo.org/api/records/18255795/files/A_Projection_First_Reframing_of_Information__Computation__and_Undecidability%20(3).pdf/content",
+        "key": "A_Projection_First_Reframing_of_Information__Computation__and_Undecidability (3).pdf",
+        "size": 155829
+      }
+    ],
+    "id": "18255795",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18255795",
+    "resource_type": "publication",
+    "title": "Projection-First Reframing of Information, Computation, and Undecidability",
+    "updated": "2026-01-15T11:03:43.178883+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "cc9c815c01c2b6ccc81f844fb011fbb8347513bec8f81fd5c16eb1cdb798d81b",
+  "paper_id": "a-projection-first-reframing-of-information-computation-dab93645",
+  "paper_md_sha256": "30e7d41508b952a934316f86420fd5d5264da69f58337e619e33ae2ff5b4d969",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 20235,
+      "path": "main.tex",
+      "sha256": "cc9c815c01c2b6ccc81f844fb011fbb8347513bec8f81fd5c16eb1cdb798d81b"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "19 A project-first reframing/_work/A_Projection_First_Reframing_of_Information__Computation__and_Undecidability (1)"
+  },
+  "source_tree_sha256": "b82e55bcb0533a540c5c1b68c5583ec83ae2661ff9b2696cd8064fdeb90443c4",
+  "title": "A Projection-First Reframing of Information, Computation, and Undecidability",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255794",
+      "created": "2026-01-15T11:03:42.587128+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18255795",
+      "files": [
+        {
+          "checksum": "md5:89fc1f2ebbcf4f8f7b75c5fab2296810",
+          "content_url": "https://zenodo.org/api/records/18255795/files/A_Projection_First_Reframing_of_Information__Computation__and_Undecidability%20(3).pdf/content",
+          "key": "A_Projection_First_Reframing_of_Information__Computation__and_Undecidability (3).pdf",
+          "size": 155829
+        }
+      ],
+      "id": "18255795",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18255795",
+      "resource_type": "publication",
+      "title": "Projection-First Reframing of Information, Computation, and Undecidability",
+      "updated": "2026-01-15T11:03:43.178883+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

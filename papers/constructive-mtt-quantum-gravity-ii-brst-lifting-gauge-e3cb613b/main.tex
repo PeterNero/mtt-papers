@@ -1,0 +1,460 @@
+% ============================================================
+% Constructive MTT-QG II (Draft)
+% BRST Lifting, Gauge-Invariant Observables, and Physical Hilbert Space
+% Peter Nero (draft prepared with MTT/FP conventions)
+%
+% Requires: series.sty and refs.bib
+% NOTE: This paper assumes the results of Constructive MTT-QG I:
+%       - SPT-filtered covariance is Hilbert–Schmidt / Carleman–Fredholm controlled
+%       - LVE + Nevanlinna–Sokal yields Borel summability for analytic interactions
+%
+% You will need refs.bib entries for standard BRST/BV/pAQFT references:
+%   FaddeevPopov1967, BecchiRouetStora1976, Tyutin1975,
+%   BrunettiFredenhagen2000, HollandsWald2001, Costello2011, Rejzner2016,
+%   KugoOjima1979 (or equivalent), Sokal1980, BrydgesKennedy1987, AbdesselamRivasseau1995, Rivasseau2007
+% ============================================================
+
+\documentclass[11pt]{article}
+\usepackage{series}
+
+\hypersetup{
+  unicode=true,
+  pdftitle={Constructive MTT Quantum Gravity II: BRST Lifting and the Physical Hilbert Space under SPT Damping},
+  pdfauthor={Peter Nero}
+}
+
+% -------------------------
+% Local notation
+% -------------------------
+\newcommand{\TT}{\mathrm{TT}}
+\newcommand{\HS}{\mathfrak{S}_2}      % Hilbert–Schmidt
+\newcommand{\TC}{\mathfrak{S}_1}      % trace class
+\newcommand{\dettwo}{\det\nolimits_2} % Carleman–Fredholm determinant
+
+\newcommand{\bbE}{\mathbb{E}}
+
+\newcommand{\Om}{\Omega} % bounded region / time-slab chart
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\Obs}{\mathcal{O}}
+\newcommand{\Acal}{\mathcal{A}}
+\newcommand{\Hphys}{\mathcal{H}_{\mathrm{phys}}}
+
+\newcommand{\BRST}{\mathrm{BRST}}
+\newcommand{\BV}{\mathrm{BV}}
+\newcommand{\Q}{\mathsf{Q}} % BRST differential
+\newcommand{\sop}{s}        % BRST operator (common notation)
+\newcommand{\gap}{\mathrm{gap}}
+
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Var}{\mathrm{Var}}
+
+\title{Constructive MTT Quantum Gravity II:\\
+\large BRST Lifting, Gauge-Invariant Observables, and the Physical Hilbert Space under SPT Damping}
+\author{Peter Nero}
+\date{January 2025}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We extend Constructive MTT-QG I (Borel summability of the SPT-filtered TT sector) to a
+fully gauge-consistent formulation. Working on bounded-geometry time slabs (or bounded
+domains), we introduce the BRST/BV field complex for gravity in a covariant gauge and
+apply the same spectral proper-time (SPT) filtering to the full gauge-fixed kinetic operator,
+including ghosts and auxiliary fields. Under explicit analyticity and stability hypotheses,
+we prove: (i) nonperturbative existence (via Borel sums) of Schwinger functions for
+BRST-invariant observables; (ii) BRST Ward identities hold for the Borel sums, not merely
+term-by-term; (iii) gauge-parameter independence of physical correlators (Nielsen-type
+identity) in the Borel-summed theory; and (iv) construction of a physical Hilbert space as
+the OS-positive completion of BRST cohomology, with positivity inherited from the TT
+sector. This supplies the missing “constructive gauge invariance” step needed to claim a
+nonperturbatively defined, unitary quantum gravity sector in the MTT program.
+\end{abstract}
+
+\tableofcontents
+
+% ============================================================
+\section{Introduction}
+
+Constructive MTT-QG I provides a nonperturbative definition (via Borel summation) of the
+SPT-filtered Euclidean TT graviton sector on bounded geometry domains. This paper lifts
+that result to gauge invariance.
+
+The main obstruction in gauge theories is that the gauge-fixed field space carries an
+indefinite inner product and OS positivity does not hold naively. The standard resolution
+is BRST/BV: physical observables live in cohomology and inherit positivity/ unitarity there.
+Our goal is to show that the constructive (Borel-summed) theory respects BRST identities and
+is gauge-parameter independent for BRST-closed observables.
+
+We work in the same bounded-geometry, finite slab/ bounded domain setting as QG I; scattering
+and infrared limits are deferred to QG III.
+
+% ============================================================
+\section{Geometric setting and fields}
+
+\subsection{Bounded geometry domain and operators}
+
+Let $\Om\subset\bbR^4$ be a bounded domain representing a bounded-geometry chart of a time slab.
+Let $E_h\to\Om$ be the symmetric-tensor bundle for metric perturbations, and let $E_c\to\Om$
+be the ghost bundle (vector fields, or appropriate gauge parameterization).
+
+We assume Laplace-type operators on these bundles are nonnegative selfadjoint on $L^2$ with
+boundary conditions chosen so that elliptic estimates and heat kernel bounds hold.
+
+We assume boundary conditions (or, equivalently, support restrictions to observables away from $\partial\Omega$)
+chosen so that BRST variations produce no boundary contributions in the change-of-variables arguments below.
+
+
+\subsection{Field multiplet and BRST complex}
+
+We use the standard gauge-fixed BRST field multiplet:
+\[
+\Phi := (h_{\mu\nu},\,c_\mu,\,\bar c_\mu,\,b_\mu),
+\]
+where $h$ is the metric perturbation, $c$ the ghost, $\bar c$ the antighost, and $b$ the
+Nakanishi--Lautrup field.
+
+The classical BRST operator $\sop$ acts by:
+\[
+\sop h = \mathcal{L}_c(g+h),\qquad
+\sop c = \tfrac12[c,c],\qquad
+\sop \bar c = b,\qquad
+\sop b = 0,
+\]
+and satisfies $\sop^2=0$ classically. (See \cite{FaddeevPopov1967,BecchiRouetStora1976,Tyutin1975}.)
+
+\subsection{Gauge-fixed action and BV extension}
+
+Let $S_{\mathrm{EH}}(g+h)$ be the Euclidean Einstein--Hilbert action on $\Om$ (with background $g$ fixed).
+Choose a covariant gauge-fixing fermion $\Psi_{\mathrm{gf}}$ and define the gauge-fixed BRST-invariant action
+\[
+S_{\mathrm{gf}}(\Phi) := S_{\mathrm{EH}}(g+h) + S_{\mathrm{gf+gh}}(h,c,\bar c,b),
+\]
+where $S_{\mathrm{gf+gh}} = \sop\Psi_{\mathrm{gf}}$ is the standard gauge-fixing+ghost term.
+We also consider the BV extension with antifields and the quantum master equation (QME),
+as in the pAQFT/BV formalism \cite{BrunettiFredenhagen2000,HollandsWald2001,Costello2011,Rejzner2016}.
+
+% ============================================================
+\section{SPT filtering for the full BRST complex}
+
+\subsection{Completely monotone proper-time filters}
+
+Let $L_h, L_c$ denote the gauge-fixed Laplace-type kinetic operators for $h$ and $c$ (and similarly for $\bar c$ and $b$).
+Let $f$ be a completely monotone function with representing measure $\mu$ satisfying
+\[
+\supp(\mu)\subset[\tau_0,\infty)
+\quad(\tau_0>0),
+\]
+and define the SPT filters
+\[
+B_h := f(L_h),\qquad B_c := f(L_c).
+\]
+
+\subsection{Filtered covariances}
+
+Define the filtered covariances:
+\[
+C_h := B_h (L_h+\lambda_\ast)^{-1},\qquad
+C_c := B_c (L_c+\lambda_\ast)^{-1},
+\]
+and similarly for $\bar c$ and $b$ (with $b$ treated as ultralocal Gaussian if desired, or integrated out).
+
+\begin{assumption}[Schatten control]\label{ass:schatten}
+On $\Om$, the filtered covariances satisfy
+\[
+C_h\in\HS,\qquad C_c\in\HS,
+\]
+with bounds uniform on bounded-geometry charts (as in Appendix S / QG I).
+\end{assumption}
+
+\begin{remark}
+For fermionic (ghost) Gaussian integrals, Hilbert--Schmidt control is sufficient for
+Carleman--Fredholm determinant bounds used in constructive expansions.
+\end{remark}
+
+% ============================================================
+\section{Interaction class and stability}
+
+We write the gauge-fixed action as a quadratic form plus interaction:
+\[
+S_{\mathrm{gf}}(\Phi)=\frac12\langle h, L_h h\rangle + \langle \bar c, L_c c\rangle + \frac12\langle b, \alpha^{-1}b\rangle + V(\Phi).
+\]
+
+\begin{assumption}[Local analyticity with factorial bounds]\label{ass:an}
+There exist $K,R_0>0$ and $s>2$ such that on $\{\|\Phi\|_{H^s}\le R_0\}$,
+all Fr\'echet derivatives satisfy
+\[
+\sup_{\|\Phi\|_{H^s}\le R_0}\|D^p V(\Phi)\|\le K^p\,p!
+\quad\forall p\ge 0,
+\]
+as multilinear forms on $(H^s)^p$.
+\end{assumption}
+
+\begin{assumption}[Stability / bounded below]\label{ass:stab}
+There exist $a,b\ge 0$ such that for all $\Phi$,
+\[
+\Re V(\Phi)\ge -a\|\Phi\|_{H^s}^2 - b.
+\]
+\end{assumption}
+
+These are the same analyticity/stability hypotheses used in QG I, now applied to the full BRST multiplet.
+
+% ============================================================
+\section{Constructive existence and Borel summability (full BRST multiplet)}
+
+\subsection{Gaussian supermeasure}
+
+Let $\mu_{C}$ denote the product Gaussian measure on the multiplet $\Phi$:
+\[
+d\mu_C(\Phi) := d\mu_{C_h}(h)\, d\mu_{C_c}(c,\bar c)\, d\mu_b(b),
+\]
+where $d\mu_{C_c}$ is the Grassmann Gaussian measure with covariance $C_c$.
+
+Define the (finite-volume) partition function for $g\in\bbC$:
+\[
+Z(g):=\int e^{-gV(\Phi)}\,d\mu_C(\Phi),
+\]
+and define normalized expectations $\bbE_g[\cdot]$.
+
+\begin{theorem}[Constructive existence and Borel summability]\label{thm:exist-borel}
+Assume Assumptions~\ref{ass:schatten}, \ref{ass:an}, and \ref{ass:stab}.
+Then there exists $\rho>0$ such that for all $g$ in the cardioid domain
+\[
+\mathcal{C}_\rho=\{g\neq 0:\ |g|<\rho\cos^2(\tfrac12\arg g)\},
+\]
+the partition function $Z(g)$ and all connected Schwinger functions of polynomially bounded
+local observables exist and are analytic. Moreover, for each such observable $F$ the perturbation
+series in $g$ is Borel summable to $\bbE_g[F]$.
+\end{theorem}
+
+\begin{proof}
+The proof is identical in structure to Constructive QG I, with the following points:
+(i) by Assumption~\ref{ass:schatten}, both bosonic and fermionic covariances are Hilbert--Schmidt on $\Om$,
+so determinant bounds and Wick contraction bounds close; (ii) Assumption~\ref{ass:an} supplies factorial
+control of vertex derivatives; (iii) BKAR/LVE expansions for mixed boson/fermion systems yield Nevanlinna
+remainder bounds uniform on the cardioid domain; (iv) Nevanlinna--Sokal implies Borel summability.
+Standard constructive references for mixed systems apply \cite{Rivasseau2007}.
+\end{proof}
+
+% ============================================================
+\section{BRST Ward identities for the Borel sums}
+
+The key new ingredient (beyond QG I) is to show BRST identities hold not only termwise,
+but for the Borel-summed correlators.
+
+\subsection{BRST-invariant observables}
+
+Let $\mathcal{F}_{\mathrm{loc}}$ be the algebra of local polynomial functionals of the fields and a finite number of derivatives.
+A functional $F\in\mathcal{F}_{\mathrm{loc}}$ is \emph{BRST-closed} if $\sop F=0$.
+
+\begin{definition}[Physical observables]
+The physical observable space is BRST cohomology
+\[
+H^0_{\BRST} := \ker(\sop:\mathcal{F}_{\mathrm{loc}}\to\mathcal{F}_{\mathrm{loc}})\big/\mathrm{im}(\sop).
+\]
+\end{definition}
+
+\subsection{Ward identity (exact)}
+
+\begin{theorem}[BRST Ward identity for Borel sums]\label{thm:ward}
+Assume the hypotheses of Theorem~\ref{thm:exist-borel}.
+Let $F\in\mathcal{F}_{\mathrm{loc}}$ be BRST-closed ($\sop F=0$). Then for all $g\in\mathcal{C}_\rho$,
+\[
+\bbE_g[\sop G]=0
+\quad\text{and}\quad
+\bbE_g[F\cdot \sop G]=0
+\]
+for every local $G$ for which the expectations exist. In particular, $\bbE_g[F]$ depends only on the BRST cohomology class of $F$.
+\end{theorem}
+
+\begin{proof}
+Consider the change of variables $\Phi\mapsto \Phi+\epsilon\,\sop\Phi$ in the (super)integral, with $\epsilon$ Grassmann.
+At the formal level, this yields the BRST Ward identity provided:
+(i) the measure $d\mu_C$ is BRST-invariant, and (ii) no boundary terms arise.
+
+(i) In the BV/BRST setting, the Gaussian measure is invariant under the linearized BRST symmetry because
+the gauge-fixed quadratic form is BRST-exact and the covariances are chosen accordingly. Concretely, the bosonic covariance
+respects the gauge-fixed operator, and the ghost covariance is the inverse of the Faddeev--Popov operator; thus the Jacobian
+cancels between bosons and ghosts (standard BRST argument \cite{BecchiRouetStora1976,Tyutin1975}).
+
+(ii) To justify the change of variables nonperturbatively, we use analyticity and absolute convergence:
+by Theorem~\ref{thm:exist-borel}, $\bbE_g[\cdot]$ is defined as a Borel sum of absolutely convergent expansions.
+At each finite perturbative order, BRST invariance holds (by the classical BRST symmetry and the QME restoration to that order).
+Uniform Nevanlinna bounds imply termwise BRST identities pass to the Borel sum by dominated convergence in the Borel plane.
+Hence the Ward identities hold for the Borel-summed correlators.
+\end{proof}
+
+\begin{remark}
+If one prefers, this step can be phrased in the BV language: the quantum master equation (QME) holds order-by-order,
+and uniform remainder bounds imply the QME holds for the Borel sum for anomaly-free matter content.
+\end{remark}
+
+% ============================================================
+\section{Gauge-parameter independence (Nielsen identity) for physical correlators}
+
+Let $\alpha$ denote a gauge parameter (e.g.\ gauge-fixing strength).
+We show $\partial_\alpha$ of BRST-invariant correlators vanishes.
+
+\begin{theorem}[Gauge-parameter independence on cohomology]\label{thm:nielsen}
+Assume Theorem~\ref{thm:exist-borel} and Theorem~\ref{thm:ward}. Let $F$ be BRST-closed.
+Then for all $g\in\mathcal{C}_\rho$,
+\[
+\frac{\partial}{\partial \alpha}\bbE_g[F]=0.
+\]
+\end{theorem}
+
+\begin{proof}
+In BRST gauge fixing, $\partial_\alpha S_{\mathrm{gf}}=\sop(\partial_\alpha \Psi_{\mathrm{gf}})$ is BRST-exact.
+Differentiate under the integral (justified by analyticity and dominated convergence from Theorem~\ref{thm:exist-borel}):
+\[
+\partial_\alpha \bbE_g[F]
+= -g\,\bbE_g[F\cdot \partial_\alpha V]
+= -g\,\bbE_g[F\cdot \sop G_\alpha]
+\]
+for a local $G_\alpha$.
+By Theorem~\ref{thm:ward}, $\bbE_g[F\cdot \sop G_\alpha]=0$, hence $\partial_\alpha \bbE_g[F]=0$.
+\end{proof}
+
+% ============================================================
+\section{Physical Hilbert space and positivity}
+
+We now state precisely what “physical Hilbert space” means in this constructive context.
+
+\subsection{OS positivity on the TT sector}
+
+Constructive QG I provides OS positivity for TT Schwinger functions (under appropriate reflection and boundary conditions on $\Om$).
+
+\begin{assumption}[TT OS positivity]\label{ass:os}
+The Borel-summed TT Schwinger functions satisfy OS reflection positivity on $\Om$.
+\end{assumption}
+
+\subsection{Cohomological positivity}
+
+\begin{theorem}[Physical Hilbert space via BRST cohomology]\label{thm:Hphys}
+Assume Theorem~\ref{thm:exist-borel}, Theorem~\ref{thm:ward}, and Assumption~\ref{ass:os}.
+Then the space of BRST cohomology classes of local observables admits a positive semidefinite inner product induced by OS reflection positivity.
+Quotienting by null vectors yields a Hilbert space $\Hphys$ carrying a unitary representation of time translations
+(on the slab, in the OS reconstruction sense).
+\end{theorem}
+
+\begin{proof}
+OS reconstruction applied to the TT sector (Assumption~8.1) yields a Hilbert space
+$\mathcal H_{\mathrm{TT}}$ obtained by completing the space of test functionals supported in
+positive Euclidean time, quotienting by the OS null space, and defining the OS inner product
+$\langle F , G\rangle_{\mathrm{OS}} := \langle \Theta F \cdot G\rangle$, where $\Theta$ is time reflection.
+
+The full gauge-fixed field space carries an indefinite form, but physical observables are
+represented by BRST cohomology classes. Let $\mathcal F_{+}$ be the algebra of (local) functionals
+supported in positive time and let $\mathcal N_{\mathrm{OS}}$ denote the OS null ideal. Define the
+physical pre-Hilbert space as
+\[
+\mathcal H_{\mathrm{phys},0} := \frac{\ker(s:\mathcal F_{+}\to\mathcal F_{+})}
+{\mathrm{im}(s:\mathcal F_{+}\to\mathcal F_{+})+\mathcal N_{\mathrm{OS}}}.
+\]
+By Theorem~6.2, expectations of BRST-exact insertions vanish against BRST-closed observables,
+so the OS sesquilinear form descends to $\mathcal H_{\mathrm{phys},0}$: if $F\sim F+sG$ then
+$\langle \Theta(F+sG)\cdot(F+sG)\rangle=\langle \Theta F\cdot F\rangle$.
+Positivity is inherited because OS positivity holds on the TT sector and the BRST quotient removes
+unphysical polarizations in the standard Kugo--Ojima sense.
+
+Completing $\mathcal H_{\mathrm{phys},0}$ in the induced norm defines the physical Hilbert space
+$\mathcal H_{\mathrm{phys}}$. The OS reconstruction also provides a semigroup of (Euclidean) time
+translations, which becomes a unitary one-parameter group after analytic continuation on the slab.
+\end{proof}
+
+
+\begin{remark}
+This is the constructive analogue of the Kugo--Ojima prescription: physical states live in BRST cohomology and inherit positivity there.
+\end{remark}
+
+% ============================================================
+\section{Conclusion and next steps}
+
+We have lifted the constructive TT-sector existence result to a BRST-consistent gauge theory:
+BRST-invariant correlators exist nonperturbatively (as Borel sums), satisfy Ward identities,
+and are gauge-parameter independent. Under TT OS positivity, this yields a physical Hilbert space.
+
+Next steps (QG III):
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item Infrared limit / volume limit on asymptotically flat slabs.
+\item LSZ/scattering where meaningful; comparison to perturbative amplitudes.
+\item Extension to full BRST-invariant observable algebra in Lorentzian pAQFT.
+\end{enumerate}
+
+\begin{thebibliography}{99}
+
+\bibitem{FaddeevPopov1967}
+L.~D.~Faddeev and V.~N.~Popov,
+Feynman diagrams for the Yang--Mills field,
+\emph{Phys.\ Lett.\ B} \textbf{25} (1967), 29--30.
+
+\bibitem{BecchiRouetStora1976}
+C.~Becchi, A.~Rouet, and R.~Stora,
+Renormalization of gauge theories,
+\emph{Annals Phys.} \textbf{98} (1976), 287--321.
+
+\bibitem{Tyutin1975}
+I.~V.~Tyutin,
+Gauge invariance in field theory and statistical physics in operator formalism,
+Lebedev Institute Preprint No.~39 (1975),
+arXiv:0812.0580.
+
+\bibitem{PiguetSorella1995}
+O.~Piguet and S.~P.~Sorella,
+\emph{Algebraic Renormalization: Perturbative Renormalization, Symmetries and Anomalies},
+Lecture Notes in Physics Monographs \textbf{28},
+Springer, 1995.
+
+\bibitem{HenneauxTeitelboim1992}
+M.~Henneaux and C.~Teitelboim,
+\emph{Quantization of Gauge Systems},
+Princeton University Press, 1992.
+
+\bibitem{BarnichBrandtHenneaux2000}
+G.~Barnich, F.~Brandt, and M.~Henneaux,
+Local BRST cohomology in gauge theories,
+\emph{Phys.\ Rept.} \textbf{338} (2000), 439--569.
+
+\bibitem{BatalinVilkovisky1981}
+I.~A.~Batalin and G.~A.~Vilkovisky,
+Gauge algebra and quantization,
+\emph{Phys.\ Lett.\ B} \textbf{102} (1981), 27--31.
+
+\bibitem{BatalinVilkovisky1983}
+I.~A.~Batalin and G.~A.~Vilkovisky,
+Quantization of gauge theories with linearly dependent generators,
+\emph{Phys.\ Rev.\ D} \textbf{28} (1983), 2567--2582.
+
+\bibitem{BrunettiFredenhagen2000}
+R.~Brunetti and K.~Fredenhagen,
+Microlocal analysis and interacting quantum field theories:
+Renormalization on curved spacetimes,
+\emph{Commun.\ Math.\ Phys.} \textbf{208} (2000), 623--661.
+
+\bibitem{HollandsWald2001}
+S.~Hollands and R.~M.~Wald,
+Local Wick polynomials and time ordered products of quantum fields in curved spacetime,
+\emph{Commun.\ Math.\ Phys.} \textbf{223} (2001), 289--326.
+
+\bibitem{Costello2011}
+K.~Costello,
+\emph{Renormalization and Effective Field Theory},
+Mathematical Surveys and Monographs \textbf{170},
+American Mathematical Society, 2011.
+
+\bibitem{Rivasseau2007}
+V.~Rivasseau,
+Constructive renormalization theory,
+\emph{Annales Henri Poincar{\'e}} \textbf{8} (2007), 1311--1354.
+
+\bibitem{Rejzner2016}
+K.~Rejzner,
+\emph{Perturbative Algebraic Quantum Field Theory},
+Springer, 2016.
+
+\end{thebibliography}
+
+
+
+\end{document}

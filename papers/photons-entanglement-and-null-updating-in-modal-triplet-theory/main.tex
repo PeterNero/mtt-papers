@@ -1,0 +1,853 @@
+\documentclass[11pt]{article}
+
+% --- Series style ---
+\usepackage{series}
+
+% --- Math and layout ---
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+
+% --- Metadata ---
+\title{Photons, Entanglement, and Null Updating in Modal Triplet Theory}
+\author{Peter Nero}
+\date{January 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present a unified structural account of photons in Modal Triplet Theory (MTT). In MTT,
+physical description arises from admissible coherent configurations on a higher-dimensional
+modal space, projected to an effective four-dimensional encoding. Within this framework,
+photons are identified as massless gauge-coherence modes whose preferred physical encoding
+is global and non-factorizing. Localization, particle-like behavior, and discrete detection
+events emerge only when admissibility constraints enforce a partition of this encoding, as
+in interaction or measurement.
+
+We show that null propagation at the speed of light arises as the unique admissible updating
+of massless gauge coherence under stability and contractivity conditions, rather than as a
+kinematic postulate. Wave--particle duality is reinterpreted as a choice of encoding valid on
+different admissible domains. Gravitational lensing and redshift are described as continuous
+re-encodings of the same stretched coherence constraint under varying admissibility geometry,
+without invoking forces acting on localized particles.
+
+Photons near horizons provide a particularly transparent illustration of the framework.
+Horizons are identified as admissibility barriers across which the observable map loses a
+global right inverse, forcing exterior re-encoding. The resulting thermal description is
+shown to be consistent with Hawking's equations and is interpreted as a basin-measure shadow
+of restricted encoding, structurally analogous to measurement-induced probabilities. Time
+is treated as an encoding-dependent construct associated with coherence rebalancing and
+record formation; massless gauge modes admit atemporal encodings along null updating
+directions.
+
+This paper does not modify the equations of quantum electrodynamics, general relativity, or
+quantum field theory on curved spacetime. Rather, it clarifies their structural origin within
+MTT and unifies photon propagation, entanglement, measurement, horizons, and thermality as
+manifestations of a single admissibility--encoding framework.
+\end{abstract}
+
+% ============================================================
+%  What Is a Photon?
+%  Coherent Encoding and Null Propagation in Modal Triplet Theory
+% ============================================================
+
+\section{Introduction}
+\label{sec:introduction}
+
+Photons occupy a central role in quantum theory, general relativity, and quantum field
+theory, yet their ontological status remains conceptually fragmented. In standard quantum
+mechanics, photons are treated as excitations of the electromagnetic field whose states may
+be delocalized, entangled, or sharply localized depending on experimental context. In
+relativistic field theory, they are massless gauge bosons propagating along null directions.
+In gravitational settings, photons undergo lensing, redshift, and horizon-induced thermality.
+Despite the mathematical consistency of these descriptions, they are rarely unified into a
+single structural picture.
+
+Modal Triplet Theory (MTT) provides a framework in which these disparate descriptions arise
+as different encodings of a single underlying coherent structure. In MTT, the fundamental
+object is not a particle propagating through spacetime, but a coherent modal configuration
+defined on a higher-dimensional configuration space and projected into an effective
+four-dimensional description. Within this framework, photons emerge as massless
+gauge-coherence modes whose natural encoding is global and non-factorizing.
+
+The purpose of this paper is to give a precise account of what a photon \emph{is} in MTT, and
+to show how null propagation, wave--particle duality, entanglement, gravitational lensing,
+redshift, horizons, and Hawking radiation arise as consequences of admissibility and encoding,
+rather than as independent postulates. The treatment is not intended to modify the equations
+of quantum electrodynamics or general relativity, but to clarify their structural origin and
+interpretation within the MTT framework.
+
+In particular, we argue that:
+\begin{itemize}
+\item The preferred encoding of a photon is a globally stretched, entangled gauge-coherence
+state.
+\item Null propagation arises as the only admissible updating of such coherence under the
+fundamental contractivity and stability conditions.
+\item Localization and ``particle-like'' behavior appear only when measurement or interaction
+enforces a partition of the coherent encoding.
+\item Gravitational effects on photons correspond to continuous re-encoding of the same
+coherence constraint under varying admissibility geometry.
+\item Horizons represent admissibility barriers where a global encoding fails, yielding
+thermal exterior descriptions consistent with Hawking radiation.
+\end{itemize}
+
+This paper is intended as a structural synthesis and interpretive clarification, building on
+the technical results of the MTT$\Rightarrow$QM, MTT$\Rightarrow$GR, measurement, entanglement,
+and horizons papers, and situating photons within the broader admissibility--encoding
+framework.
+
+---
+
+\section{Coherent Encoding of Gauge Fields}
+\label{sec:coherent_gauge_encoding}
+
+\subsection{Modal configuration space and projection}
+\label{sec:modal_space_projection}
+
+In Modal Triplet Theory, physical description begins with a modal configuration space
+\begin{equation}
+M_{10} = Y^{4} \times B_1 \times B_2 \times B_3 ,
+\end{equation}
+where $Y^{4}$ is the emergent four-dimensional spacetime and $B_i$ are compact internal
+modal fibers. Physical states are not identified with arbitrary configurations on $M_{10}$,
+but with those lying in the coherent sector defined by the joint harmonic projector
+$\Pi = \Pi_{B_1}\Pi_{B_2}\Pi_{B_3}$.
+
+The observable map
+\begin{equation}
+P := I \circ \Pi
+\end{equation}
+projects coherent modal configurations to effective four-dimensional states. This map is
+many-to-one: distinct modal configurations may project to the same observable state. As a
+result, the effective description is intrinsically compressed, and different encodings of
+the same physical situation may coexist on different admissible domains.
+
+\subsection{Photons as massless gauge-coherence modes}
+\label{sec:photon_definition}
+
+Within this framework, a photon corresponds to a massless gauge-coherence mode of the
+coherent sector. Such a mode has two defining properties:
+
+\begin{enumerate}
+\item It carries no internal coherence inertia: there is no mass term or internal
+rebalancing cost associated with maintaining the mode.
+\item Its admissibility is governed entirely by gauge coherence constraints and the
+stability of the coherent projector.
+\end{enumerate}
+
+Because of the absence of internal inertia, there is no preferred localization scale for a
+photon in the coherent sector. The natural encoding of a photon is therefore not a localized
+particle state but a globally stretched coherence constraint whose support may extend across
+large null-connected regions of spacetime.
+
+In this sense, a single-photon state is generically entangled across spacetime modes
+(direction, frequency, polarization), and factorized descriptions correspond to special
+encodings imposed by additional constraints.
+
+\subsection{Null propagation as admissible updating}
+\label{sec:null_propagation}
+
+Although the preferred encoding of a photon is global, coherence constraints must still be
+updated consistently with the modal dynamics. Admissibility imposes strong restrictions on
+how this updating may occur.
+
+Static gauge-coherence configurations are generically inadmissible: without updating, they
+violate stability conditions and erode the contractivity margins required for a coherent
+sector to persist. Superluminal updating is likewise inadmissible, as it would violate the
+locality and boundedness assumptions underlying the modal dynamics.
+
+The only admissible updating for a massless gauge-coherence mode is therefore along null
+directions of the emergent spacetime geometry. Null propagation is not imposed as a kinematic
+postulate but arises as the unique way to update a globally stretched coherence constraint
+without destroying admissibility.
+
+Thus photon propagation at speed $c$ is reinterpreted as:
+\begin{quote}
+\emph{Null updating of a globally entangled gauge-coherence encoding under admissibility
+constraints.}
+\end{quote}
+
+This interpretation reproduces all standard predictions of Maxwell theory and quantum
+electrodynamics while clarifying why localization and propagation are conceptually distinct.
+
+\subsection{Position, momentum, and conditional localization}
+\label{sec:position_momentum}
+
+In this picture, momentum labels the orientation and phase structure of the null updating,
+and is intrinsic to the stretched coherence encoding. Position, by contrast, is not an
+intrinsic property of the photon prior to interaction or measurement. Localization requires
+an enforced partition of the encoding, typically associated with record formation or strong
+interaction with matter.
+
+Accordingly, wave--particle duality is understood as an encoding choice:
+\begin{itemize}
+\item Wave-like behavior corresponds to the globally stretched, non-factorizing encoding.
+\item Particle-like behavior corresponds to a localized encoding forced by admissibility
+constraints near measurement or interaction boundaries.
+\end{itemize}
+
+No contradiction arises, as these encodings are valid on different admissible domains and
+cannot generally be maintained simultaneously.
+% ============================================================
+%  Supplementary Photon Subsections:
+%  Polarization/Helicity, Virtual Photons, and Causality
+% ============================================================
+
+\subsection{Polarization and Helicity}
+\label{sec:polarization_helicity}
+
+Photons carry spin-$1$ and are observed to possess two physical polarization states,
+corresponding to helicity $\pm 1$. In the Modal Triplet Theory framework, polarization and
+helicity are not properties of a localized particle but internal orientations of the
+gauge-coherence encoding under admissible null updating.
+
+Helicity conservation reflects the topological stability of massless gauge coherence:
+for a null-updating mode with no internal rebalancing cost, only two transverse orientations
+are admissible. Parallel transport of polarization is therefore governed by admissibility
+geometry rather than by forces acting on a localized spin degree of freedom. Effects such as
+gravitational Faraday rotation and polarization transport in curved spacetime correspond to
+continuous re-orientation of the internal gauge-coherence structure under admissible null
+updating.
+
+This interpretation preserves all standard results regarding photon polarization while
+clarifying that helicity is a global encoding constraint rather than an intrinsic property
+of a point-like object.
+
+\subsection{Virtual Photons and Perturbative Encodings}
+\label{sec:virtual_photons}
+
+In perturbative quantum field theory, interactions are often represented in terms of
+``virtual photons.'' Within the MTT framework, such objects do not correspond to admissible
+coherent gauge modes. Instead, they are internal elements of a \emph{perturbative encoding}
+used to approximate interaction constraints within a particular calculational scheme.
+
+Virtual photons do not propagate as physical degrees of freedom, do not obey null updating,
+and are not subject to admissibility requirements in the same sense as real photons. They
+are bookkeeping devices that arise when interactions are expanded around a factorized
+encoding of the coherent sector. Consequently, no ontological significance is assigned to
+virtual photons beyond their role in organizing perturbative corrections.
+
+This distinction avoids common interpretive confusions and reinforces the separation
+between physical coherent encodings and auxiliary calculational constructs.
+
+\subsection{Locality, Causality, and Global Encoding}
+\label{sec:causality_locality}
+
+The use of globally stretched and entangled encodings does not compromise locality or
+causality in the effective four-dimensional description. Admissibility enforces that all
+coherence updates occur locally and propagate causally with respect to the emergent
+spacetime geometry.
+
+In particular:
+\begin{itemize}
+\item Operator commutators vanish outside the light cone in the effective description,
+preserving microcausality.
+\item No superluminal signaling is possible, even though the preferred encoding may be
+globally non-factorizing.
+\item Apparent instantaneous correlations reflect global consistency of a single coherent
+configuration rather than physical influence.
+\end{itemize}
+
+Thus global encoding should not be conflated with global interaction. The distinction
+between encoding scope and dynamical updating is essential: coherence may be shared
+globally, but its admissible evolution remains strictly local.
+
+
+% ============================================================
+%  Section 6: Gravitational Lensing and Redshift
+% ============================================================
+
+\section{Gravitational Lensing and Redshift as Re-encoding}
+\label{sec:lensing_redshift}
+
+\subsection{Spacetime geometry as admissibility bookkeeping}
+\label{sec:geometry_bookkeeping}
+
+In Modal Triplet Theory, spacetime geometry does not enter as a fundamental interaction
+acting on particles, but as an emergent bookkeeping structure encoding which coherence
+updates are admissible. Curvature, light cones, and geodesics summarize how coherent
+configurations may be transported without violating stability, boundedness, and the
+fundamental contractivity condition.
+
+In particular, null directions in the emergent metric encode the admissible updating
+directions for massless gauge-coherence modes. Variations in spacetime geometry therefore
+correspond to variations in admissibility structure, rather than to forces acting on
+localized objects.
+
+\subsection{Gravitational lensing}
+\label{sec:lensing}
+
+Gravitational lensing is commonly described as the deflection of photon trajectories by a
+gravitational field. In the MTT framework, this description is replaced by a purely
+structural statement:
+
+\begin{quote}
+\emph{Gravitational lensing is the continuous deformation of admissible null updating
+directions for a globally stretched gauge-coherence encoding.}
+\end{quote}
+
+Because a photon is encoded as a massless gauge-coherence constraint with global support,
+it does not ``experience'' local forces or impulses. Instead, the null directions along
+which coherence may be updated bend in response to the local admissibility geometry. The
+photon's stretched encoding must follow these admissible null directions, yielding the
+observed lensing effect.
+
+This interpretation immediately explains several robust features of gravitational
+lensing:
+\begin{itemize}
+\item Lensing is achromatic, as it depends only on admissible null structure and not on
+internal photon properties.
+\item Phase coherence and interference can be preserved over cosmological distances,
+since the encoding remains globally coherent.
+\item Polarization transport follows geometric rules, reflecting the transport of gauge
+coherence rather than particle deflection.
+\end{itemize}
+
+No additional interaction mechanism is required beyond the admissibility constraints that
+define the emergent spacetime geometry.
+
+\subsection{Gravitational redshift}
+\label{sec:gravitational_redshift}
+
+Gravitational redshift is traditionally described as a photon losing energy as it climbs
+out of a gravitational potential. In the MTT framework, this language is replaced by a
+relative-encoding interpretation.
+
+Frequency is not an intrinsic property of a massless gauge-coherence mode. Instead, it is
+defined relationally, with respect to local clocks. Clocks, in turn, are massive systems
+whose internal coherence requires time-like rebalancing and therefore provides a local
+time scale.
+
+When a photon is emitted and later absorbed in regions with different admissibility
+geometry, the same globally stretched coherence constraint is re-encoded relative to
+different local clock structures. The mismatch between these encodings appears as a
+frequency shift.
+
+Thus:
+\begin{quote}
+\emph{Gravitational redshift arises because the same coherent photon encoding is referenced
+to different local time encodings at emission and detection.}
+\end{quote}
+
+No intrinsic change occurs in the photon itself. The redshift reflects a change in the
+encoding context, not an energy loss along the photon's path.
+
+\subsection{Cosmological redshift}
+\label{sec:cosmological_redshift}
+
+Cosmological redshift admits an analogous interpretation. As the admissibility geometry
+evolves with cosmic expansion, the null updating structure of spacetime is continuously
+re-parameterized. A photon propagating across cosmological distances remains a single
+stretched coherent encoding, but its frequency is re-expressed relative to the evolving
+clock structure of comoving observers.
+
+Cosmological redshift is therefore a cumulative re-encoding effect associated with the
+global evolution of admissibility geometry, rather than a gradual stretching of a
+localized wave or loss of photon energy.
+
+\subsection{Persistence of coherence over large distances}
+\label{sec:coherence_persistence}
+
+A natural question is why photon coherence can persist over extremely large distances,
+even in the presence of curvature and expansion. The MTT answer is straightforward: massless
+gauge-coherence modes carry no internal rebalancing cost and therefore accumulate no
+intrinsic decoherence during admissible propagation.
+
+Decoherence arises only through interactions that force partitioning of the encoding
+(scattering, absorption, or measurement). In the absence of such interactions, the
+globally stretched encoding remains admissible and coherent regardless of distance or
+elapsed coordinate time.
+
+\subsection{Summary}
+\label{sec:lensing_redshift_summary}
+
+Gravitational lensing and redshift are thus unified within a single MTT mechanism:
+\begin{itemize}
+\item Lensing reflects the deformation of admissible null updating directions.
+\item Redshift reflects the re-encoding of the same global coherence relative to different
+local clock structures.
+\item Neither effect requires intrinsic changes to the photon or particle-like forces.
+\end{itemize}
+
+Both phenomena follow inevitably from the interpretation of spacetime geometry as
+admissibility bookkeeping for coherent encodings.
+% ============================================================
+%  Section 7: Photons Near Horizons and Hawking Radiation
+% ============================================================
+
+\section{Photons Near Horizons and Hawking Radiation}
+\label{sec:horizons_hawking}
+
+\subsection{Horizons as admissibility barriers}
+\label{sec:horizons_admissibility}
+
+In the MTT framework, a black hole horizon is not primarily a locus of divergent curvature
+or violent local physics. Instead, it is an \emph{admissibility barrier}: a codimension-one
+boundary across which the observable map
+\begin{equation}
+P = I \circ \Pi
+\end{equation}
+ceases to admit a global right inverse on the full algebra of coherent configurations.
+
+Outside the horizon, a coherent encoding exists that supports a consistent four-dimensional
+description. Inside the horizon, coherent configurations continue to exist at the modal
+level, but they are no longer jointly encodable with the exterior in a single admissible
+chart. This loss of global encodability is the defining structural feature of a horizon in
+MTT.
+
+\subsection{Photon coherence approaching a horizon}
+\label{sec:photon_near_horizon}
+
+As discussed in previous sections, a photon is naturally encoded as a globally stretched,
+massless gauge-coherence constraint whose admissible updating occurs along null directions.
+Far from a horizon, this encoding remains stable and coherent across large spacetime regions.
+
+As the photon approaches a horizon, the admissibility geometry changes. While local null
+updating remains well-defined, the global encoding that spans both the exterior and interior
+regions becomes marginal. In MTT terms, the stretched photon encoding enters a
+\emph{selection-front regime}, where stability margins shrink and the projector loses
+regularity across the horizon.
+
+Crucially, nothing singular occurs in the underlying modal dynamics. The breakdown is not in
+the evolution of coherence itself, but in the ability of the exterior encoding to represent
+that coherence globally.
+
+\subsection{Infinite redshift as encoding mismatch}
+\label{sec:infinite_redshift}
+
+From the perspective of an exterior observer, photons approaching a horizon exhibit an
+infinite redshift. In the MTT framework, this effect has a clear encoding interpretation.
+
+Frequency is defined relative to local clocks, which are massive systems with internal
+coherence requiring time-like rebalancing. Near a horizon, the admissibility geometry causes
+the relation between exterior clock encodings and the stretched photon coherence to become
+singular. The same global coherence constraint is therefore re-encoded as arbitrarily low
+frequency when referenced to exterior time.
+
+This infinite redshift reflects the failure of a single encoding to remain valid across the
+horizon, rather than any intrinsic change in the photon.
+
+\subsection{Forced re-encoding and the emergence of thermality}
+\label{sec:forced_reencoding}
+
+Once the stretched photon encoding crosses the admissibility barrier associated with the
+horizon, the exterior description must adopt a restricted encoding that excludes interior
+degrees of freedom. The exterior observer's algebra is therefore incomplete, and the global
+coherent configuration must be re-expressed in terms of exterior-admissible basins.
+
+This situation is structurally identical to measurement-induced collapse: in both cases, a
+restriction of admissibility forces a re-encoding of a globally coherent configuration into
+a set of mutually exclusive, record-compatible outcomes.
+
+In the horizon case, the admissible exterior basins are labeled continuously by asymptotic
+frequency $\omega$. The weights assigned to these basins are given by the same universal
+basin-measure functional that governs measurement probabilities. In the stationary,
+semiclassical regime, this yields
+\begin{equation}
+p(\omega) \propto e^{-\beta \omega},
+\end{equation}
+with $\beta$ identified with the inverse Hawking temperature.
+
+\subsection{Consistency with Hawking's equations}
+\label{sec:hawking_consistency}
+
+The above interpretation does not modify the standard equations used to derive Hawking
+radiation. The wave equation on a fixed black hole background, the Bogoliubov transformation
+relating in- and out-modes, and the resulting thermal spectrum remain unchanged.
+
+In MTT terms, these equations describe the behavior of the exterior encoding near an
+admissibility barrier. The appearance of a thermal density matrix is a direct consequence of
+restricting a globally coherent configuration to a subalgebra that does not admit a global
+inverse under $P$.
+
+Thus Hawking radiation is understood as the horizon-barrier instance of a general MTT
+principle: whenever admissibility forces a non-invertible projection, the effective
+description becomes probabilistic, with weights determined by the invariant basin measure.
+
+\subsection{Information, unitarity, and irreversibility}
+\label{sec:information_unitarity}
+
+At the modal level, evolution remains deterministic and unitary. No information is destroyed
+in the full configuration space. The apparent loss of information associated with Hawking
+radiation arises entirely from the use of a restricted encoding that cannot represent all
+degrees of freedom simultaneously.
+
+This is the same structural mechanism responsible for the appearance of irreversibility and
+probability in measurement processes. Horizons and measurements are therefore unified as
+instances of admissibility barriers, differing only in the nature of the restriction
+(geometric versus instrumental).
+
+\subsection{Summary}
+\label{sec:horizons_summary}
+
+Photons near horizons provide a particularly clear illustration of the MTT encoding
+framework:
+\begin{itemize}
+\item Photons remain globally coherent massless gauge modes at the modal level.
+\item Horizons correspond to admissibility barriers where global encodings fail.
+\item Exterior observers are forced to re-encode photon coherence into thermal basins.
+\item Hawking radiation emerges as a basin-measure shadow of this forced re-encoding.
+\end{itemize}
+
+In this way, photon propagation, gravitational redshift, horizons, thermality, and
+irreversibility are unified within a single admissibility-based framework.
+% ============================================================
+%  Section 8: Time, Entanglement, and Photon Encoding
+% ============================================================
+
+\section{Time, Entanglement, and Photon Encoding}
+\label{sec:time_entanglement}
+
+\subsection{Time as an encoding-dependent concept}
+\label{sec:time_encoding}
+
+Within Modal Triplet Theory, time is not a primitive parameter attached uniformly to all
+degrees of freedom. Rather, time emerges as part of an effective encoding that orders
+admissible updates of coherent configurations. This distinction is already implicit in the
+MTT$\Rightarrow$QM and MTT$\Rightarrow$GR constructions, where the modal evolution parameter
+labels updates upstairs, while physical time appears only in the effective four-dimensional
+description.
+
+In particular, time becomes meaningful when internal coherence must be rebalanced or when
+records impose an ordering of events. Degrees of freedom that require no internal
+rebalancing admit encodings in which no intrinsic notion of elapsed time is defined.
+
+\subsection{Absence of intrinsic time for photons}
+\label{sec:photon_time}
+
+Photons, as massless gauge-coherence modes, carry no internal coherence inertia and therefore
+no internal clock. Along admissible null updating directions, there is no accumulation of
+proper time associated with the photon encoding. This is consistent with the vanishing of
+proper time along null worldlines in relativistic geometry, but in MTT it is given a
+structural explanation: pure gauge coherence does not require time-like rebalancing to
+maintain admissibility.
+
+Consequently, a photon encoded as a globally stretched coherence constraint does not
+``experience'' time between emission and absorption. Temporal ordering appears only in the
+encoding adopted by massive systems (sources, detectors, clocks) that interact with the
+photon and impose time-like constraints.
+
+\subsection{Entangled photons and shared coherence-time structure}
+\label{sec:entangled_photon_time}
+
+When photons are entangled, they are not represented as independent coherent encodings with
+separate time parameters. Instead, the entangled system corresponds to a single globally
+coherent configuration whose encoding does not factorize into subsystems. In this regime,
+there is no meaningful notion of separate photon times or a shared clock in the usual sense.
+
+Rather, the entangled photons share a common coherence-time structure that is effectively
+atemporal until interactions or measurements enforce a partition. This explains why
+entanglement correlations appear independent of spatial separation and why no time delay is
+associated with the establishment of correlations: there is no internal temporal degree of
+freedom to synchronize or propagate.
+
+\subsection{Emergence of time ordering at interaction and measurement}
+\label{sec:time_emergence}
+
+Time ordering becomes unavoidable when a photon interacts strongly with matter or when a
+measurement produces a stable record. In these situations, the encoding must partition the
+global coherence into subsystems that maintain independent stability. This partitioning
+introduces time-like rebalancing costs and therefore a local notion of elapsed time.
+
+For example:
+\begin{itemize}
+\item Emission and absorption events are time-ordered relative to the clocks of the emitting
+and detecting systems.
+\item Scattering processes impose causal sequencing through local interactions.
+\item Measurement enforces record-compatible encodings that necessarily carry time stamps.
+\end{itemize}
+
+Thus time appears not as a universal background parameter, but as a feature of encodings that
+support stable, localized records.
+
+\subsection{Compatibility with relativistic causality}
+\label{sec:relativistic_time}
+
+The absence of intrinsic photon time does not violate relativistic causality. All physical
+updates propagate locally and causally in the emergent spacetime geometry, and no superluminal
+signaling is possible. The atemporality of photon encoding reflects the absence of internal
+time-like structure, not the absence of causal order in interactions.
+
+Observers always describe events using their own local clocks, and these descriptions are
+consistent across frames because the admissible null structure underlying photon propagation
+is Lorentz invariant in the effective encoding.
+
+\subsection{Wave--particle duality revisited}
+\label{sec:wave_particle_time}
+
+The time dependence of photon behavior further clarifies wave--particle duality. Wave-like
+behavior corresponds to a globally coherent, atemporal encoding in which interference and
+delocalization are admissible. Particle-like behavior corresponds to a localized, time-ordered
+encoding enforced by measurement or interaction constraints.
+
+These encodings are mutually exclusive because they impose incompatible requirements on
+coherence and time ordering. The apparent duality is therefore a manifestation of switching
+between admissible encodings rather than a fundamental ambiguity in the nature of the photon.
+
+% ============================================================
+%  Subsection: The Speed of Light as a Coherence Limit
+% ============================================================
+
+\subsection{The Speed of Light as a Coherence Limit}
+\label{sec:speed_of_light}
+
+The preceding sections have described photon propagation as null updating of a globally
+stretched gauge-coherence encoding. We now make explicit what the speed of light $c$
+represents in the MTT framework.
+
+In Modal Triplet Theory, $c$ is not defined operationally as the speed of photons, nor
+introduced axiomatically via Lorentz invariance. Instead, it arises as a structural property
+of admissibility.
+
+The coherent sector exists only if coherence updates can be stabilized by the joint
+projector $\Pi$ and the fundamental contractivity condition remains satisfied. This imposes
+a maximum admissible rate at which coherent constraints may be updated across the emergent
+spacetime description. Updates exceeding this rate would outpace stabilization, rendering
+the coherent encoding ill-defined.
+
+This maximum admissible update rate is identified with the speed of light $c$.
+
+Null directions in the emergent spacetime geometry correspond precisely to updates that
+transport coherence without requiring internal rebalancing. Massless gauge-coherence modes
+admit only such null updates, and therefore propagate at exactly $c$. Massive modes require
+time-like rebalancing and consequently propagate at subluminal speeds. Spacelike updates,
+corresponding to faster-than-null propagation, are inadmissible.
+
+In this sense, the universality of $c$ reflects the universality of admissibility constraints
+across the coherent sector. The role of $c$ in relativistic causality, electromagnetic
+propagation, gravitational horizons, and thermality follows directly from its status as the
+coherence limit of physical description.
+
+Thus the speed of light is reinterpreted as:
+\begin{quote}
+\emph{the maximum rate at which coherent constraints can be updated while preserving
+admissibility, stability, and boundedness of the effective encoding.}
+\end{quote}
+
+\subsection{Summary}
+\label{sec:time_summary}
+
+The MTT interpretation of photons yields a coherent account of time and entanglement:
+\begin{itemize}
+\item Time is an encoding-dependent construct associated with coherence rebalancing and
+record formation.
+\item Photons, as massless gauge-coherence modes, admit atemporal encodings along null
+updating directions.
+\item Entangled photons share a single global coherence structure without separate internal
+times.
+\item Temporal ordering emerges only when interactions or measurements enforce partition.
+\end{itemize}
+
+This perspective integrates naturally with the admissibility--encoding framework and
+completes the structural account of photon behavior across quantum, relativistic, and
+gravitational regimes.
+% ============================================================
+%  Section 9: Discussion and Outlook
+% ============================================================
+
+\section{Discussion and Outlook}
+\label{sec:discussion_outlook}
+
+\subsection{What has (and has not) been changed}
+\label{sec:what_changed}
+
+The account presented in this paper does not alter the equations of quantum electrodynamics,
+general relativity, or quantum field theory on curved spacetime. Maxwell's equations, null
+propagation, gravitational lensing, redshift, and Hawking's thermal spectrum remain exactly
+as in the standard formulations.
+
+What changes is the \emph{structural interpretation} of these equations within Modal Triplet
+Theory. Photons are no longer treated as localized particles whose behavior must be reconciled
+piecemeal across different regimes. Instead, they are understood as massless gauge-coherence
+modes whose preferred encoding is global and non-factorizing, with localization, particle-like
+behavior, and thermality arising only when admissibility constraints enforce a change of
+encoding.
+
+This distinction allows phenomena that are usually treated separately—wave--particle
+duality, entanglement, redshift, horizons, and measurement—to be understood as manifestations
+of a single underlying mechanism.
+
+\subsection{Relation to standard interpretations}
+\label{sec:relation_interpretations}
+
+The MTT account of photons differs from common interpretations in several respects:
+
+\begin{itemize}
+\item It does not require an observer-dependent collapse postulate; encoding changes are
+triggered by admissibility constraints rather than by observation.
+\item It does not invoke many-worlds branching; globally coherent configurations are unique
+upstairs, and apparent branching reflects non-invertibility of the observable map.
+\item It does not treat thermality or information loss as fundamental; both arise from the
+use of restricted encodings across admissibility barriers.
+\end{itemize}
+
+At the same time, the MTT picture is compatible with algebraic QFT insights regarding
+non-factorization of local algebras and with semiclassical derivations of Hawking radiation.
+It should therefore be viewed as a synthesis rather than a replacement of existing results.
+
+\subsection{Photons as a unifying case study}
+\label{sec:photons_unifying}
+
+Photons provide a particularly transparent case study because they sit at the intersection
+of quantum theory, relativity, and gravity. Their lack of internal inertia exposes the
+distinction between global coherence and local encoding more clearly than in massive systems.
+
+In the MTT framework, photons illustrate how:
+\begin{itemize}
+\item global entanglement can be the preferred physical encoding,
+\item null propagation arises from admissibility rather than kinematic assumption,
+\item localization is conditional and measurement-driven,
+\item horizons act as encoding barriers rather than physical singularities.
+\end{itemize}
+
+These lessons generalize to other gauge fields and, with appropriate modifications, to
+gravitational waves and massive particles.
+
+\subsection{Implications for quantum gravity and information}
+\label{sec:implications_qg}
+
+By treating horizons as admissibility barriers and Hawking radiation as forced re-encoding,
+MTT offers a structural resolution of the black hole information problem. Information is not
+destroyed at the modal level; it becomes inaccessible to a particular encoding. This places
+black hole thermality and measurement-induced irreversibility on the same conceptual footing.
+
+More broadly, the admissibility--encoding framework suggests that many puzzles traditionally
+framed as paradoxes arise from insisting on a single encoding outside its domain of validity.
+Recognizing and respecting encoding boundaries may therefore be essential for progress in
+quantum gravity.
+
+\subsection{Limitations and open questions}
+\label{sec:limitations}
+
+The present work is primarily interpretive and structural. Several important questions remain
+open:
+\begin{itemize}
+\item A fully explicit microphysical derivation of horizon parameters (e.g.\ the Hawking
+temperature) within MTT remains to be developed.
+\item The quantitative limits of coherence persistence and selection-front behavior in
+realistic environments require further analysis.
+\item Extensions to interacting gauge theories and strongly coupled regimes merit separate
+treatment.
+\end{itemize}
+
+Addressing these questions will require combining the encoding perspective developed here
+with detailed calculations in specific admissible realizations.
+
+\subsection{Outlook}
+\label{sec:outlook}
+
+The interpretation of photons presented in this paper illustrates how Modal Triplet Theory
+can unify diverse physical phenomena through a single admissibility-based framework. By
+emphasizing encoding over ontology and projection over postulate, MTT provides a language in
+which quantum mechanics, relativity, and thermality appear as complementary descriptions of
+the same underlying coherent structure.
+
+Future work will extend this analysis to other fields and interactions, and will explore how
+the admissibility--encoding viewpoint can guide both conceptual understanding and practical
+calculations in quantum gravity, cosmology, and quantum information.
+
+\begin{thebibliography}{99}
+
+\bibitem{MTT-Admissibility}
+P.~Nero,
+\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255621}
+
+\bibitem{MTT-Foundation}
+P.~Nero,
+\emph{Modal Triplet Theory: Foundation},
+Zenodo preprint, September 2025.
+\url{https://doi.org/10.5281/zenodo.16949762}
+
+\bibitem{MTT-FixedPoints}
+P.~Nero,
+\emph{Fixed Points I--VI: Complete Coherence Spine},
+Zenodo preprints, August 2025.
+\url{https://doi.org/10.5281/zenodo.16948748}
+
+\bibitem{MTT-ProjectionAdmissibility}
+P.~Nero,
+\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255838}
+
+\bibitem{MTT-Closure}
+P.~Nero,
+\emph{Closure and Inevitability in Modal Triplet Theory},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255510}
+
+\bibitem{MTT-CoherenceCapacity}
+P.~Nero,
+\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18255905}
+
+\bibitem{MTT-CoherenceDynamics}
+P.~Nero,
+\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18256048}
+
+\bibitem{MTT-QM}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
+Zenodo preprint, September 2025.
+\url{https://doi.org/10.5281/zenodo.17074246}
+
+\bibitem{MTT-QFT}
+P.~Nero,
+\emph{From MTT to Quantum Field Theory},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17068816}
+
+\bibitem{MTT-GR}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to General Relativity},
+Zenodo preprint, October 2025.
+\url{https://doi.org/10.5281/zenodo.16950597}
+
+\bibitem{MTT-UVQG}
+P.~Nero,
+\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17077671}
+
+\bibitem{MTT-Measurement}
+P.~Nero,
+\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17177404}
+
+\bibitem{MTT-Irreversibility}
+P.~Nero,
+\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18256408}
+
+\bibitem{MTT-Bell-Beables}
+P.~Nero,
+\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
+Zenodo preprint, 2025.
+\url{https://doi.org/10.5281/zenodo.17076300}
+
+\bibitem{MTT-Bell-Temporal}
+P.~Nero,
+\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
+Zenodo preprint, August 2025.
+\url{https://doi.org/10.5281/zenodo.18208884}
+
+\bibitem{MTT-Stochastic}
+P.~Nero,
+\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
+Zenodo preprint, January 2026.
+\url{https://doi.org/10.5281/zenodo.18254862}
+
+\end{thebibliography}
+\end{document}

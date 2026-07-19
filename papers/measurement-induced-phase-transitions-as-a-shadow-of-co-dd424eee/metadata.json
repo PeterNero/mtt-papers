@@ -1,0 +1,88 @@
+{
+  "abstract": "Measurement-induced phase transitions (MIPTs) in monitored many-body systems and collapse-like irreversibility in measurement contexts are typically treated as distinct phenomena. We show that they arise as two effective 4D shadows of the same reduced-dynamical mechanism: noninvertible projection onto an admissible coherent sector with basin stabilization. We formulate a general projected evolution map for reduced states, define admissible basins via contractivity margins, and prove that both MIPTs and collapse thresholds correspond to the same loss of contractivity at basin boundaries. We then establish a finite-strength nonanalytic crossover (knee) theorem via a local Ornstein\u2013Uhlenbeck/Kramers reduction near basin boundaries, and prove protocol dependence and Zeno/anti-Zeno structure as unavoidable consequences of noncommutativity between probing and projection. Finally, we show that linear time-homogeneous measurement-only or decoherence-only models cannot reproduce the combined phenomena (knees, protocol dependence, and Zeno/anti-Zeno coexistence) without introducing state-dependent stabilization equivalent to basin dynamics. The results are slab-local and admissibility-conditioned: they apply on bounded-geometry time slabs where controlled truncation and positive stability margins hold. This provides a unifying reduced-dynamical bridge that aligns with, and contributes to, ongoing experimental and theoretical work on monitored circuits, continuous measurement, and irreversibility.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18261631",
+    "created": "2026-01-15T19:38:23.246393+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18261632",
+    "files": [
+      {
+        "checksum": "md5:3106c63d5507570d49114e3273ad08d0",
+        "content_url": "https://zenodo.org/api/records/18261632/files/Measurement_Induced_Phase_Transitions_as_a_Shadow_of_Coherence_Basin_Dynamics%20(2).pdf/content",
+        "key": "Measurement_Induced_Phase_Transitions_as_a_Shadow_of_Coherence_Basin_Dynamics (2).pdf",
+        "size": 325086
+      }
+    ],
+    "id": "18261632",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18261632",
+    "resource_type": "publication",
+    "title": "Measurement-Induced Phase Transitions in Modal Triplet Theory",
+    "updated": "2026-01-15T19:38:23.663991+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "43e4db0108d380c235d57caae1ae9a111f8c7137e931c3560809ac7c6f54ee18",
+  "paper_id": "measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee",
+  "paper_md_sha256": "d984e02d316c8d87e50508859d128c83b507c7cbf55879759b623244355a672a",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 32707,
+      "path": "main.tex",
+      "sha256": "43e4db0108d380c235d57caae1ae9a111f8c7137e931c3560809ac7c6f54ee18"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "8 Measurement, Selection & Computation/_work/Measurement_Induced_Phase_Transitions_as_a_Shadow_of_Coherence_Basin_Dynamics"
+  },
+  "source_tree_sha256": "7d06e25d2e91afad116b363258c4ce94bd1d5dcd3f95ca6789f568d5ccd5f53c",
+  "title": "Measurement-Induced Phase Transitions as a Shadow of Coherence Basin Dynamics A projection-induced bridge between monitored-circuit transitions and collapse thresholds",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261631",
+      "created": "2026-01-15T19:38:23.246393+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18261632",
+      "files": [
+        {
+          "checksum": "md5:3106c63d5507570d49114e3273ad08d0",
+          "content_url": "https://zenodo.org/api/records/18261632/files/Measurement_Induced_Phase_Transitions_as_a_Shadow_of_Coherence_Basin_Dynamics%20(2).pdf/content",
+          "key": "Measurement_Induced_Phase_Transitions_as_a_Shadow_of_Coherence_Basin_Dynamics (2).pdf",
+          "size": 325086
+        }
+      ],
+      "id": "18261632",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18261632",
+      "resource_type": "publication",
+      "title": "Measurement-Induced Phase Transitions in Modal Triplet Theory",
+      "updated": "2026-01-15T19:38:23.663991+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

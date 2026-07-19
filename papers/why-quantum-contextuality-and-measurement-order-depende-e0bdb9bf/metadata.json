@@ -1,0 +1,88 @@
+{
+  "abstract": "Quantum contextuality and measurement order dependence are traditionally treated as distinct foundational problems. Contextuality is formulated as a logical obstruction to noncontextual hidden-variable models, while order dependence is treated as a dynamical disturbance effect in sequential measurements. In this work we show that, within Modal Triplet Theory (MTT), these two phenomena arise as complementary shadows of the same projection-based structure. Operational measurement contexts are modeled as instruments, each inducing\u2014via the same upstairs MTT ingredients (coherent-sector projector, spectral gap, and admissibility data)\u2014a context-dependent reduced channel, an admissible domain, and an associated basin atlas on the reduced four-dimensional state space. Contextuality is identified with the impossibility of a single global admissible basin assignment compatible with all context-induced atlases. Measurement order dependence is the dynamical manifestation of the same obstruction: sequential enforcement of incompatible atlases yields history-dependent basin capture with positive measure. Basin atlases are formalized as measurable invariant partitions, atlas incompatibility is defined via the absence of a common admissible refinement, and a central Contextuality\u2013Order Bridge Theorem is proved establishing equivalence between global nonrefinability and order dependence. The framework aligns with Kochen\u2013Specker theorems, contextuality inequalities, weak-measurement persistence, and sequential measurement experiments, while remaining consistent with MTT selection dynamics and the basin-measure reconstruction of the Born rule.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1.0",
+  "date": "January, 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18261924",
+    "created": "2026-01-15T20:13:51.129623+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.18261925",
+    "files": [
+      {
+        "checksum": "md5:539789dc37ecbada0387e086c7f4af07",
+        "content_url": "https://zenodo.org/api/records/18261925/files/Why_Quantum_Contextuality_and_Measurement_Order_Dependence_Are_the_Same_Phenomenon%20(3).pdf/content",
+        "key": "Why_Quantum_Contextuality_and_Measurement_Order_Dependence_Are_the_Same_Phenomenon (3).pdf",
+        "size": 292601
+      }
+    ],
+    "id": "18261925",
+    "match_kind": "title_or_file",
+    "match_score": 1.0,
+    "publication_date": "2026-01-15",
+    "record_url": "https://zenodo.org/records/18261925",
+    "resource_type": "publication",
+    "title": "Why Quantum Contextuality and Measurement Order Dependence Are the Same Phenomenon",
+    "updated": "2026-01-15T20:13:51.559172+00:00",
+    "version": "v1.0"
+  },
+  "main_tex_sha256": "759876282dc7aaffb23603b42feb2a4bef9d6a3a3019ee07a8b3f42a33188fd5",
+  "paper_id": "why-quantum-contextuality-and-measurement-order-depende-e0bdb9bf",
+  "paper_md_sha256": "432b8c2e07c3c1ebef2f672bf3ad06665650f9d5a117ecc1c9afc872fe79ecee",
+  "release_state": "zenodo_released",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 32253,
+      "path": "main.tex",
+      "sha256": "759876282dc7aaffb23603b42feb2a4bef9d6a3a3019ee07a8b3f42a33188fd5"
+    },
+    {
+      "bytes": 4186,
+      "path": "series.sty",
+      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "8 Measurement, Selection & Computation/_work/Why_Quantum_Contextuality_and_Measurement_Order_Dependence_Are_the_Same_Phenomenon"
+  },
+  "source_tree_sha256": "fb80283ef33cdee41a2dea8c13d1438e0a8ac32a0a0136fd8a8b31fdd3a4360b",
+  "title": "Why Quantum Contextuality and Measurement Order Dependence Are the Same Phenomenon A Projection-Based Shadow Bridge in Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261924",
+      "created": "2026-01-15T20:13:51.129623+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18261925",
+      "files": [
+        {
+          "checksum": "md5:539789dc37ecbada0387e086c7f4af07",
+          "content_url": "https://zenodo.org/api/records/18261925/files/Why_Quantum_Contextuality_and_Measurement_Order_Dependence_Are_the_Same_Phenomenon%20(3).pdf/content",
+          "key": "Why_Quantum_Contextuality_and_Measurement_Order_Dependence_Are_the_Same_Phenomenon (3).pdf",
+          "size": 292601
+        }
+      ],
+      "id": "18261925",
+      "match_kind": "title_or_file",
+      "match_score": 1.0,
+      "publication_date": "2026-01-15",
+      "record_url": "https://zenodo.org/records/18261925",
+      "resource_type": "publication",
+      "title": "Why Quantum Contextuality and Measurement Order Dependence Are the Same Phenomenon",
+      "updated": "2026-01-15T20:13:51.559172+00:00",
+      "version": "v1.0"
+    }
+  ]
+}
