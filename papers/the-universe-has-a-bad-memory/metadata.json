@@ -1,0 +1,33 @@
+{
+  "abstract": "A book-length interpretive account of persistence, finite capacity, admissible projection and reusable coherence across physics, life, mind and cosmology. The second revised edition distinguishes established science, structural interpretation and conditional Modal Triplet Theory extensions.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v6",
+  "date": "2026",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "847d31b83a43f221acd49e9a469b25d6d0c544d7e0e7b437956fac21d779e8bc",
+  "paper_id": "the-universe-has-a-bad-memory",
+  "paper_md_sha256": "582988facf2a8e83458b14d4395750d8bf1b4bbd01dbb7372046a10eb4111ad6",
+  "release_state": "not_matched_to_zenodo",
+  "revision": {
+    "selected_revision": false
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 519436,
+      "path": "main.tex",
+      "sha256": "847d31b83a43f221acd49e9a469b25d6d0c544d7e0e7b437956fac21d779e8bc"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "obsidian-books/The_Universe_Has_a_Bad_Memory/The_Universe_Has_a_Bad_Memory__Why_Physics_Holds__Second_Revised_Edition_v6.tex"
+  },
+  "source_tree_sha256": "a3f380960e2a7569e589efc665841049693194afc8a42a03baffb47792db1099",
+  "title": "The Universe Has a Bad Memory",
+  "version_relation": "unknown",
+  "zenodo_releases": []
+}

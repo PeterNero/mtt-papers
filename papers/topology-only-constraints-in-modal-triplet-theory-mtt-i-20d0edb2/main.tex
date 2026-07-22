@@ -1,421 +1,756 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
+
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
-\usepackage{bm}
+\usepackage{array}
 \usepackage{microtype}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
 
-\title{Topology--Only Constraints in Modal Triplet Theory (MTT):
-Indices, Anomalies, and Line--Bundle Triviality}
+\title{Topological Consistency Conditions in Modal Triplet Theory:\\
+Internal Indices, Charge Lattices, and Holonomy}
 \author{Peter Nero}
-\date{January 2026}
+\date{July 2026}
 
-% --- Theorem environments ---
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 
-% --- Macros ---
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\R}{\mathbb{R}}
-\newcommand{\cO}{\mathcal{O}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\ind}{\operatorname{ind}}
+\newcommand{\Hol}{\operatorname{Hol}}
+\newcommand{\tr}{\operatorname{tr}}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We establish the Tier--1 ``low--hanging fruit'' predictions of the Modal Triplet Theory (MTT) rigorously, using only topology, group theory, and selection rules---\emph{no internal metric or harmonic integrals}. On a smooth oriented spin four--manifold $Y_4$, with three determinant line bundles obeying flux balance and pairwise twist sectors defined by the line bundles $L_{ij}$, we prove: (i) chiral family numbers come from a Dirac index formula; (ii) a topological criterion for Dirac vs.\ Majorana masses; (iii) absence of the SU(2) Witten global anomaly for three families; (iv) exact Standard--Model hypercharges from MTT difference charges; (v) full cancellation of all local gauge/gravitational anomalies; (vi) strong--CP relaxation via a central PQ--like symmetry with integer domain--wall number; (vii) forbiddance of many baryon/lepton number violating operators by line--bundle triviality; (viii) equality of photon and graviton wave speeds in the GR--compatible EFT; and (ix) the holonomy determinant/phase sum rule implied by the canonical trivialization $L_{12}\!\otimes L_{23}\!\otimes L_{31}\!\cong\!\mathbb C$.
+This revised paper separates topology-only obstructions from representation
+checks and from physical source theorems. Chiral multiplicity is an index on
+the compact internal six-manifold $X_6$, not on physical spacetime. For an
+$SU(r)$ bundle $E\to X_6$, the spin-Dirac index is
+$\ind D_E^+=\frac12\int_{X_6}c_3(E)$. The current q79 branch constructs smooth
+non-pullback bundles with $\int c_3=\pm6$, and therefore index $\pm3$, but its
+holomorphic gerbe lift, balanced Hermitian--Yang--Mills connection, and
+differential Bianchi representative remain open. Abelian charges are integer
+characters: a field of integer charge $n$ is valued in $L^{\otimes n}$ and its
+physical convention is $Y=n/N_0$. The former ``exact hypercharge'' argument is
+only a reconstruction after observed charge differences are inserted. A newer
+finite-branch theorem is stronger: on the selected chiral carrier, anomaly
+constraints select the primitive relative-charge vector
+$6Y=(1,-4,2,-3,6,0)$ and the faithful gauge group
+$(SU(3)\times SU(2)\times U(1))/\Z_6$. We prove the resulting anomaly checks,
+the correct character criterion for a bare Majorana bilinear, the distinction
+between topological, holomorphic, equivariant, flat, and holonomy
+trivializations, the conditional common-principal-symbol result for photon and
+graviton cones, and the correctly normalized one-loop beta coefficients.
+Peccei--Quinn dynamics, particular baryon/lepton operator exclusions, physical
+family realization, and neutrino ontology remain conditional or open at the
+precisely stated gates.
 \end{abstract}
 
 \tableofcontents
 
-% ============================================================
-\section{Setting and Notation}
-Let $Y_4$ be a smooth, oriented, \emph{spin} four--manifold. The MTT Triplet data consist of three Hermitian line bundles
+\section*{Revision note for version 2}
+\addcontentsline{toc}{section}{Revision note for version 2}
+\begin{description}[style=nextline]
+\item[Supersedes.]
+\emph{Topology--Only Constraints in Modal Triplet Theory (MTT): Indices,
+Anomalies, and Line--Bundle Triviality}, version~1.
+\item[Reason.]
+Version~1 placed the family index on physical $Y_4$, treated inserted
+hypercharges as a prediction, confused ordinary line-bundle triviality with
+gauge-equivariant triviality and trivial holonomy, and promoted several
+conditional Standard Model checks to topology-only predictions.
+\item[Resolution.]
+Version~2 types the physical and internal bases separately, replaces fractional
+line-bundle powers by integer characters, corrects the Majorana and
+renormalization-group formulas, and incorporates the current q79 and finite
+Standard Model theorem packets at their declared scope.
+\item[Retained content.]
+Index theory, Chern-class obstructions, anomaly sums, tensor-product holonomy,
+and principal-symbol comparisons remain useful exact tools when their displayed
+hypotheses hold.
+\item[Remaining boundary.]
+Topology does not by itself select the physical compactification, gauge
+connection, low-energy representation, coupling values, PQ current, operator
+coefficients, or Lorentzian action.
+\end{description}
+
+\section{Logical levels and geometric types}
+
+We use three claim levels throughout.
+
+\begin{enumerate}[label=\textbf{L\arabic*.},leftmargin=*]
+\item \emph{Mathematical identity or obstruction}: a theorem about declared
+manifolds, bundles, connections, or representations.
+\item \emph{Selected-branch theorem}: an exact or certified result inside a
+named current MTT packet, with all of that packet's premises retained.
+\item \emph{Physical realization}: a theorem that the selected branch supplies
+the fields, action, state, normalization, and reduction used by observation.
+\end{enumerate}
+
+An L1 result is not automatically L2, and an L2 result is not automatically
+L3. In particular, a topological existence theorem for a bundle does not select
+a holomorphic structure or a physical gauge vacuum.
+
+Let $M_4$ denote physical Lorentzian spacetime and let $X_6$ denote a compact
+internal six-manifold. A ten-dimensional reduction, when used, is based on an
+appropriate fibration or local product with these two typed factors; no claim
+below identifies $M_4$ with $X_6$. Let $E\to X_6$ be an internal complex gauge
+bundle. Its internal Dirac or Dolbeault index can count net four-dimensional
+chiral zero modes after the reduction hypotheses are supplied.
+
+For an effective $U(1)$ factor over $M_4$, let $P_Y\to M_4$ be the principal
+bundle and
 \[
-\det B_1,\ \det B_2,\ \det B_3 \ \longrightarrow\ Y_4,\qquad
-\alpha_i:=c_1(\det B_i)\in H^2(Y_4,\Z),
+ L_Y=P_Y\times_{\chi_1}\C,
+ \qquad \chi_n(e^{i\vartheta})=e^{in\vartheta},\quad n\in\Z.
 \]
-obeying the \emph{flux balance}
-\begin{equation}\label{eq:flux-balance}
-\alpha_1+\alpha_2+\alpha_3=0.
+A field with integer character $n$ is valued in $L_Y^{\otimes n}$, in addition
+to its spin and nonabelian bundles. Fractional tensor powers are not used.
+
+Pairwise MTT lines $L_{ij}$ may live on an internal or effective base, but the
+base must be stated. The same symbol must not be used to move an index from
+$X_6$ to $M_4$.
+
+\section{The family index belongs to the internal space}
+
+\begin{theorem}[Twisted spin-Dirac index in six dimensions]
+\label{thm:internal-index}
+Let $X_6$ be a closed spin six-manifold and let $E\to X_6$ be a complex vector
+bundle. Then
+\[
+ \ind D_E^+
+ =\left\langle \widehat A(TX_6)\operatorname{ch}(E),[X_6]\right\rangle.
+\]
+If $c_1(E)=0$, then
+\begin{equation}
+ \ind D_E^+=\frac12\int_{X_6}c_3(E).
+ \label{eq:su-index}
 \end{equation}
-For each ordered pair $(i,j)$ define the twisting bundle
-\[
-L_{ij}:=\det B_i\otimes \det B_j,\qquad c_1(L_{ij})=\alpha_i+\alpha_j.
-\]
-All Tier--1 statements below are formulated purely in terms of these pairwise twist bundles,
-their Chern classes, and standard representation bookkeeping on $Y^4$. No additional ``triple''
-twisting line bundle is introduced: the only twisting data used throughout are the $L_{ij}$.
-
-
-\begin{remark}[Canonical trivialization]
-From \eqref{eq:flux-balance} one has
-\[
-c_1(L_{12}\otimes L_{23}\otimes L_{31})
-=(\alpha_1+\alpha_2)+(\alpha_2+\alpha_3)+(\alpha_3+\alpha_1)
-=2(\alpha_1+\alpha_2+\alpha_3)=0.
-\]
-Hence $L_{12}\otimes L_{23}\otimes L_{31}$ is topologically trivial. In what follows we
-fix a unitary trivialization
-\begin{equation}\label{eq:trivialization}
-L_{12}\otimes L_{23}\otimes L_{31}\ \cong\ \mathbb C.
-\end{equation}
-which underlies the holonomy phase sum rule and the allowance of Yukawa--type trilinears.
-\end{remark}
-
-When discussing hypercharge, we use \emph{difference charges}
-\begin{equation}\label{eq:diff-charges}
-Y_{ij}:=y_i-y_j,\qquad y_1+y_2+y_3=0,
-\end{equation}
-so every $U(1)$ charge is a difference of node potentials $y_i$ with vanishing sum.
-
-% ============================================================
-\section{Family Number by Index (Topology Only)}
-Let $D$ be the \emph{chiral} Dirac operator on $Y_4$; for any Hermitian line bundle $L\!\to\!Y_4$ denote by $D\otimes L$ the twisted Dirac operator.
-
-\begin{theorem}[Atiyah--Singer on $Y_4$]\label{thm:index}
-For any Hermitian line bundle $L\to Y_4$,
-\[
-\mathrm{Index}(D\otimes L)\;=\;\int_{Y_4}\Big(\frac12\,c_1(L)^2-\frac1{24}\,p_1(TY_4)\Big)\ \in\ \Z.
-\]
-Hence for each bifundamental sector $(i,j)$,
-\[
-N_{ij}:=\mathrm{Index}(D\otimes L_{ij})=\int_{Y_4}\Big(\frac12\,c_1(L_{ij})^2-\frac1{24}\,p_1(TY_4)\Big).
-\]
+The sign assigned to particles rather than conjugate particles is a chirality
+convention; the magnitude is convention-independent.
 \end{theorem}
 
 \begin{proof}
-The Atiyah--Singer formula gives $\mathrm{Index}(D\otimes L)=\int_{Y_4}\hat A(TY_4)\,\mathrm{ch}(L)$. On a $4$--manifold, $\hat A=1-\frac{p_1}{24}$ and $\mathrm{ch}(L)=1+c_1+\frac12 c_1^2$. Taking the degree--$4$ component yields the stated expression.
+The first formula is the Atiyah--Singer index theorem
+\cite{AtiyahSinger1968}. In degree six,
+\[
+ \widehat A=1-\frac1{24}p_1+\cdots,
+ \qquad
+ \operatorname{ch}_1(E)=c_1(E),
+ \qquad
+ \operatorname{ch}_3(E)=\frac16
+ (c_1^3-3c_1c_2+3c_3).
+\]
+Only $\operatorname{ch}_3-(p_1/24)\operatorname{ch}_1$ contributes. When
+$c_1(E)=0$, this is $c_3(E)/2$.
 \end{proof}
 
-\begin{corollary}[Three families on $K3$]\label{cor:K3}
-For $Y_4=K3$, $\int p_1=-48$ so $-\!\int \frac{p_1}{24}=2$. If $c_1(L_{ij})^2=2$, then
-\(
-N_{ij}=\frac12\cdot 2 + 2=3.
-\)
+On a compact complex threefold with a holomorphic bundle, the corresponding
+Dolbeault statement is
+\[
+ \chi(X_6,E)=\int_{X_6}\operatorname{Td}(TX_6)\operatorname{ch}(E).
+\]
+The analytic zero-mode interpretation additionally requires the relevant
+complex, connection, and reduction hypotheses. This is the established
+heterotic logic: net generations are an internal Dirac index, not a Dirac
+index of physical spacetime \cite{CandelasEtAl1985}.
+
+\begin{corollary}[Exact q79 smooth index candidate]
+\label{cor:q79-index}
+On the current q79 rank-one Fu--Yau topology, the shared-circle clutching
+construction gives smooth non-pullback $SU(3)$ bundles $E_g$ with
+\[
+ \int_{X_6}c_3(E_g)=2k,\qquad k=+3\ \hbox{or}\ -3.
+\]
+Whenever the spin-Dirac operator is formed on this smooth data,
+$\ind D_{E_g}^+=+3$ or $-3$.
 \end{corollary}
 
-% ============================================================
-\section{Dirac vs.\ Majorana: a Topological Criterion}
-\begin{theorem}[Gauge--invariant Majorana mass]\label{thm:majorana}
-Let $\Psi$ be a left--handed Weyl fermion valued in a line bundle $L\to Y_4$. A local Majorana mass term
-\(
-\frac12 m\,\Psi^T C\,\Psi+\mathrm{h.c.}
-\)
-is gauge invariant if and only if
-\begin{equation}\label{eq:Maj-criterion}
-L^{\otimes 2}\ \cong\ \mathbb C\qquad\Longleftrightarrow\qquad 2\,c_1(L)=0\ \text{ in }H^2(Y_4,\Z).
+\begin{proof}
+The q79 clutching theorem computes $\int c_3(E_g)=2k$ from the winding of
+$g:P_\delta\to SU(3)$ along the shared circle
+\cite{MTTq79Chiral}. Equation~\eqref{eq:su-index} gives the index.
+\end{proof}
+
+\begin{remark}[What Corollary~\ref{cor:q79-index} does not yet prove]
+The K3-pullback visible bundle has $c_3=0$ and zero net chiral index, even
+though a K3 cohomology calculation produces three slots and three conjugate
+slots. The non-pullback smooth construction repairs the topological index but
+does not yet furnish the selected holomorphic inverse-gerbe transform,
+balanced Hermitian--Yang--Mills connection, or differential Bianchi identity.
+The integral gerbe restriction is now proved zero, but a flat holomorphic class
+$\beta_C$ and the subsequent analytic promotion remain open
+\cite{MTTq79Gerbe}. Thus ``index three exists'' is established at L1; ``the
+selected q79 physical vacuum has three net families'' remains an L3 target.
+\end{remark}
+
+The executable current chiral packet
+$\C^3_{\rm family}\otimes\mathcal H_{16}$ is a separate L2 result. It closes
+the finite representation and anomaly table once that selected family carrier
+is adopted. It does not replace the analytic promotion just listed.
+
+\section{Integer charge lattices and the hypercharge question}
+
+\begin{proposition}[Characters, line powers, and physical normalization]
+\label{prop:charge-lattice}
+The character group of $U(1)$ is $\Z$. If $L_Y$ is the line associated with its
+primitive character, every associated one-dimensional representation is
+$L_Y^{\otimes n}$ for a unique $n\in\Z$. A physical hypercharge convention has
+the form
+\begin{equation}
+ Y=\frac{n}{N_0},
+ \label{eq:charge-normalization}
 \end{equation}
-If $H^2(Y_4,\Z)$ has no $2$--torsion (e.g.\ $K3$), \eqref{eq:Maj-criterion} is equivalent to $c_1(L)=0$ (hence $L\cong \overline L$).
-\end{theorem}
-
-\begin{proof}
-The Majorana bilinear is a section of $L\otimes L$; gauge invariance demands $L^{\otimes 2}$ be trivial. In cohomology this is $2c_1(L)=0$. If $H^2$ is torsion--free, $2c_1=0$ implies $c_1=0$.
-\end{proof}
-
-\begin{remark}
-Applied to the neutrino sector $(2,3)$, Majorana masses are allowed iff $2c_1(L_{23})=0$; on torsion--free $H^2$ this reduces to $c_1(L_{23})=0$. Otherwise light neutrinos are Dirac.
-\end{remark}
-
-% ============================================================
-\section{SU(2) Witten Global Anomaly: Parity Test}
-\begin{theorem}[Absence of SU(2) global anomaly for three families]\label{thm:Witten}
-The SU(2) global anomaly is absent if and only if the total number of left--handed SU(2) doublets is even. In the SM per family, $Q_L:(\mathbf 3,\mathbf 2)$ and $L_L:(\mathbf 1,\mathbf 2)$ give $3+1=4$ doublets (even). For three families this is $12$ (even); hence no global SU(2) anomaly.
-\end{theorem}
-
-\begin{proof}
-Witten's anomaly is the mod--$2$ index classified by $\pi_4(SU(2))=\Z_2$ and equals the parity of SU(2) doublets counted as left Weyl fields. The stated counts are even.
-\end{proof}
-
-\begin{remark}[Parity via indices]
-Writing $N_{12},N_{23}$ for family numbers in the quark and lepton SU(2) doublet sectors, the parity is $3N_{12}+N_{23}\ (\mathrm{mod}\ 2)$, which vanishes for $N_{12}=N_{23}=3$.
-\end{remark}
-
-% ============================================================
-\section{Exact SM Hypercharges from Difference Charges}
-Let $Y_{ij}=y_i-y_j$ with $y_1+y_2+y_3=0$. Choose the identification
-\[
-Y(Q_L)=y_1-y_2,\quad Y(u_R)=y_1-y_3,\quad Y(L)=y_3-y_2,
-\]
-and use conjugation (sign flip) for $d_R,e_R$ as needed.
-
-\begin{theorem}[Unique solution reproducing SM charges]\label{thm:hypercharge}
-The system
-\[
-y_1-y_2=\tfrac{1}{6},\qquad y_1-y_3=\tfrac{2}{3},\qquad y_3-y_2=-\tfrac{1}{2},\qquad y_1+y_2+y_3=0
-\]
-has the unique solution
-\[
-y_1=\frac{5}{18},\qquad y_2=\frac{1}{9},\qquad y_3=-\frac{7}{18}.
-\]
-This yields
-\[
-Y(Q_L)=\tfrac{1}{6},\quad Y(u_R)=\tfrac{2}{3},\quad Y(d_R)=-\tfrac{1}{3},\quad
-Y(L)=-\tfrac{1}{2},\quad Y(e_R)=-1,\quad Y(\nu_R)=0,
-\]
-i.e.\ precisely the SM hypercharges.
-The overall normalization is fixed by choosing the smallest nonzero hypercharge unit
-to be $1/6$, matching the conventional Standard Model normalization.
-
-\end{theorem}
-
-\begin{proof}
-Subtract the third equation from the first to check consistency with the second. Solve the three linear equations and verify the sum constraint; then apply conjugation for $d_R,e_R$.
-\end{proof}
-
-% ============================================================
-\section{All Local Anomalies Cancel (Per Family)}
-We compute with \emph{left--handed} Weyl fields only; right--handed SM fermions are represented as left--handed conjugates with opposite hypercharge.
-
-\begin{theorem}[Anomaly cancellation]\label{thm:anomalies}
-With the hypercharges of Theorem~\ref{thm:hypercharge}, per family one has
-\[
-[SU(3)]^2U(1)_Y = 0,\quad [SU(2)]^2U(1)_Y = 0,\quad [U(1)_Y]^3=0,\quad \mathrm{grav}^2 U(1)_Y=0.
-\]
-\end{theorem}
-
-\begin{proof}
-\textbf{(i) $[SU(3)]^2U(1)$:} Sum $Y$ over left Weyl triplets (the Dynkin index $T(\mathbf 3)$ is common and factors out):
-\[
-2\,Y(Q_L)+Y(u_L^c)+Y(d_L^c)=2\cdot\tfrac{1}{6}+(-\tfrac{2}{3})+(\tfrac{1}{3})=0.
-\]
-\textbf{(ii) $[SU(2)]^2U(1)$:} Sum $Y$ over doublets:
-\[
-3\,Y(Q_L)+Y(L)=3\cdot\tfrac{1}{6}+(-\tfrac{1}{2})=\tfrac{1}{2}-\tfrac{1}{2}=0.
-\]
-\textbf{(iii) $\mathrm{grav}^2 U(1)$:} Sum $Y$ over all left Weyl fields with multiplicities:
-\[
-6\cdot \tfrac{1}{6} + 3\cdot(-\tfrac{2}{3}) + 3\cdot(\tfrac{1}{3}) + 2\cdot(-\tfrac{1}{2}) + 1\cdot(+1)
-=1-2+1-1+1=0.
-\]
-\textbf{(iv) $[U(1)]^3$:} Sum $Y^3$ with multiplicities:
-\[
-6\Big(\tfrac{1}{6}\Big)^3 + 3\Big(-\tfrac{2}{3}\Big)^3 + 3\Big(\tfrac{1}{3}\Big)^3 + 2\Big(-\tfrac{1}{2}\Big)^3 + 1\cdot(1)^3
-=\frac{1}{36}-\frac{8}{9}+\frac{1}{9}-\frac{1}{4}+1=0.
-\]
-All vanish.
-\end{proof}
-
-% ============================================================
-\section{Strong--CP Relaxation and Domain--Wall Number}
-\begin{theorem}[Central PQ--like symmetry $\Rightarrow \theta_{\rm QCD}\to 0$]\label{thm:PQ}
-Suppose a global $U(1)_{\rm cen}$ with Goldstone mode $a/f_a$ has a QCD anomaly
-\(
-\frac{a}{f_a}\,\frac{g_s^2}{16\pi^2}\mathrm{tr}(G\tilde G)
-\)
-with integer coefficient $N_{\rm DW}\neq 0$. Then the vacuum relaxes to $\theta_{\rm eff}=\theta_{\rm QCD}+a/f_a=0$, i.e.\ $\theta_{\rm QCD}$ is dynamically canceled.
-\end{theorem}
-
-\begin{proof}
-Standard Peccei--Quinn mechanism: the anomalous axial rotation shifts $\theta_{\rm QCD}$ by $a/f_a$; the nonperturbative effective potential $V\propto \cos(\theta_{\rm eff})$ is minimized at $\theta_{\rm eff}=0$.
-\end{proof}
-
-\begin{proposition}[Domain--wall number is group--theoretic]\label{prop:NDW}
-The domain--wall number equals the color anomaly coefficient
-\[
-N_{\rm DW}=\sum_{\text{colored Weyl }\psi} 2\,T(R_\psi)\,Q_{\rm cen}(\psi)\ \in\ \Z,
-\]
-fixed by representation content and central charges (no geometry). One may choose charges with $N_{\rm DW}=1$.
-\end{proposition}
-
-% ============================================================
-\section{Operator Selection: Forbiddance by Line--Bundle Triviality}
-A local gauge invariant built from fields $\Phi_a$ in sectors $(i_a,j_a)$ lives in
-\[
-\bigotimes_{a} L_{i_a j_a}.
-\]
-It is gauge invariant only if the tensor product is \emph{trivial}.
-
-\begin{theorem}[Generic forbiddance of many B/L--violating terms]\label{thm:forbid}
-Any trilinear composed of three identical bifundamentals requires
-\(
-L_{ij}^{\otimes 3}\cong \mathbb C\ \Leftrightarrow\ 3\,c_1(L_{ij})=0.
-\)
-On manifolds with torsion--free $H^2(Y_4,\Z)$ this forces $c_1(L_{ij})=0$; generically false. Hence such operators are forbidden. Conversely, the identity \eqref{eq:trivialization} ensures the \emph{Yukawa--type} trilinear with one field from each pair $(12),(23),(31)$ is allowed.
-\end{theorem}
-
-\begin{proof}
-Triviality of a tensor product of line bundles is equivalent to the vanishing of the sum of their first Chern classes. Apply this to $L_{ij}^{\otimes 3}$. The Yukawa allowance follows because $c_1(L_{12}){+}c_1(L_{23}){+}c_1(L_{31})=0$.
-\end{proof}
-
-% ============================================================
-\section{Equality of Wave Speeds $c_{\rm em}=c_{\rm grav}$ in the EFT}
-\begin{theorem}[Common characteristic cone]\label{thm:c-equals-c}
-In the GR--compatible EFT with Einstein--Hilbert gravity and minimally coupled Maxwell/Yang--Mills, the principal symbols of the gauge--fixed linearized field operators are
-\[
-p(\xi)=g^{\mu\nu}\xi_\mu\xi_\nu\,\mathbb 1,
-\]
-so photons and gravitons propagate on the same null cone of $g$: $c_{\rm em}=c_{\rm grav}$.
-\end{theorem}
-
-\begin{proof}
-Maxwell in Lorenz gauge: $(\square_g A_\nu - R_\nu{}^\mu A_\mu)=0$ has principal symbol $g^{\mu\nu}\xi_\mu\xi_\nu\,\delta^\alpha{}_\beta$. Linearized Einstein in de Donder gauge leads to the Lichnerowicz operator with principal part $\square_g h_{\mu\nu}$, with the same principal symbol. Thus the characteristic sets coincide.
-\end{proof}
-
-% ============================================================
-\section{Holonomy Determinant/Phase Sum Rule}
-\begin{theorem}[Phase sum rule]\label{thm:phase-sum}
-Let $U_{ij}(\gamma)$ be the parallel--transport (holonomy) on $L_{ij}$ along a closed loop $\gamma\subset Y_4$. Then
-\[
-\det U_{12}(\gamma)\cdot \det U_{23}(\gamma)\cdot \det U_{31}(\gamma)=1,
-\]
-equivalently,
-\(
-\arg\det U_{12}+\arg\det U_{23}+\arg\det U_{31}\in 2\pi\Z.
-\)
-\end{theorem}
-
-\begin{proof}
-Equip each $L_{ij}$ with its unitary Chern connection $A_{ij}$. The induced connection on the tensor product is $A_{12}{+}A_{23}{+}A_{31}$. By \eqref{eq:trivialization} this lives on the trivial bundle and admits a covariantly constant nonzero section, hence $A_{12}{+}A_{23}{+}A_{31}=d\chi$ for some gauge function $\chi$. Integrating around $\gamma$ gives $\exp\big(i\oint_\gamma(A_{12}+A_{23}+A_{31})\big)=\exp(i\oint_\gamma d\chi)=1$.
-\end{proof}
-
-
-\section{One--Loop RG Sign Structure (Representation--Only)}
-
-\begin{proposition}[Qualitative one--loop flow (sign is representation--only)]\label{prop:RG-signs}
-Fix the beta--function convention
-\[
-\beta(g)\;:=\;\mu\,\frac{dg}{d\mu}
-\;=\;-\frac{g^3}{16\pi^2}\,b_0 \;+\; O(g^5).
-\]
-For a gauge factor $G$ with adjoint Casimir $C_A$, Weyl fermions in reps $R_f$
-and complex scalars in reps $R_s$, the one--loop coefficient is
-\[
-b_0 \;=\; \frac{11}{3}C_A
-\;-\;\frac{4}{3}\sum_f T(R_f)
-\;-\;\frac{1}{6}\sum_s T(R_s).
-\]
-In this convention, asymptotic freedom is equivalent to $b_0>0$.
-For Standard Model field content, one has $b_0^{SU(3)}>0$ and $b_0^{SU(2)}>0$ (asymptotically free),
-while $b_0^{U(1)}<0$ (not asymptotically free; Landau pole in the UV / IR--free flow).
-No geometry enters: only representation theory and multiplicities.
+where $N_0>0$ specifies the normalization. Topology quantizes $n$; it does not
+by itself determine the gauge coupling or a conventional unit $N_0$.
 \end{proposition}
 
 \begin{proof}
-Standard one--loop calculation; the sign depends only on $C_A$, Dynkin indices $T(R)$,
-and multiplicities of the matter representations.
+Continuous homomorphisms $U(1)\to U(1)$ are
+$e^{i\vartheta}\mapsto e^{in\vartheta}$ with $n\in\Z$. Associated-line tensor
+products add character integers.
 \end{proof}
 
+\subsection{The former difference-charge result}
 
-% ============================================================
-\section{Conclusions}
-Within the MTT Triplet framework, the Tier--1 predictions above are \emph{fully established} using only topology and group theory. They include exact family counts, a sharp Dirac/Majorana criterion, absence of the SU(2) global anomaly for three families, exact SM hypercharges from difference charges, complete local anomaly cancellation, a PQ--like resolution of strong--CP with an integer domain--wall number, powerful operator selection/forbiddance statements, equality of low--energy wave speeds, and the holonomy phase sum rule, . These results require no internal metric or harmonic analysis and form the rigorous base on which geometry--light (Tier~2) and calibratable (Tier~3) calculations can build.
+Let $Y_{ij}=y_i-y_j$ and fix $y_1+y_2+y_3=0$. If one inserts
+\[
+ y_1-y_2=\frac16,\qquad
+ y_1-y_3=\frac23,\qquad
+ y_3-y_2=-\frac12,
+\]
+then linear algebra gives
+\[
+ (y_1,y_2,y_3)=\left(\frac5{18},\frac19,-\frac7{18}\right).
+\]
+This is an exact coordinate reconstruction of the three inserted differences.
+It neither derives those differences nor determines the remaining matter rows
+without extra identifications. Version~1's ``unique exact SM hypercharges''
+theorem is therefore withdrawn as a prediction.
 
-\section*{Change Log (Version 2)}
+\subsection{A stronger current finite-branch theorem}
 
-\begin{itemize}
-  \item Removed legacy ``two-of-three'' wording and replaced it with topology-only language
-        phrased in terms of the pairwise twisting line bundles $L_{ij}$.
-  \item Clarified that the Tier--1 results use only topology, index theory, and anomaly bookkeeping;
-        no spectral survivability claims are made here (those are handled in the Fixed Points synthesis
-        and the physics-facing MTT derivations).
-  \item No theorems or proofs were changed; only terminology and framing were updated.
+The current finite Standard Model packet supplies a different argument that was
+not available to version~1.
+
+\begin{theorem}[Selected relative hypercharge direction]
+\label{thm:selected-hypercharge}
+Assume the selected finite chiral carrier with left-handed rows
+$(Q,u^c,d^c,L,e^c,N^c)$ and the three abelian sheet phases
+$(\alpha,\mu,\nu)$. Assume their integer row charges are
+\begin{align*}
+ n_Q&=-\mu,& n_{u^c}&=\mu-\alpha,&
+ n_{d^c}&=\alpha+\mu,\\
+ n_L&=-\alpha,& n_{e^c}&=2\alpha,&
+ n_{N^c}&=\alpha-\nu.
+\end{align*}
+The $SU(2)^2U(1)$ and gravitational-$U(1)$ anomaly equations are
+\[
+ \alpha+3\mu=0,\qquad \alpha-\nu=0.
+\]
+Their integer kernel is one-dimensional and has primitive generator
+$(\alpha,\mu,\nu)=(3,-1,3)$. It emits
+\begin{equation}
+ (n_Q,n_{u^c},n_{d^c},n_L,n_{e^c},n_{N^c})
+ =(1,-4,2,-3,6,0).
+ \label{eq:integer-hypercharge}
+\end{equation}
+In the convention $N_0=6$, this is the Standard Model relative hypercharge
+vector
+\[
+ 6Y=(1,-4,2,-3,6,0).
+\]
+\end{theorem}
+
+\begin{proof}
+The two displayed equations have rational nullspace generated by
+$(3,-1,3)$. Its entries have greatest common divisor one, so it is the
+primitive integer generator up to an overall sign. Substitution gives
+Equation~\eqref{eq:integer-hypercharge}. The cubic anomaly polynomial on this
+sheet family factorizes as
+\[
+ 6\alpha^2(\alpha+3\mu)+(\alpha-\nu)^3,
+\]
+and therefore vanishes on the same line. This is the exact calculation in the
+selected neutral-summand theorem \cite{MTTHypercharge}.
+\end{proof}
+
+This theorem selects relative integer charges inside the supplied finite edge
+structure. It is not a topology-only consequence of $c_1(L)$, and the choice
+$N_0=6$ states the conventional physical normalization. On the same carrier,
+the selected native bundle automorphisms give the local group
+$SU(3)\times SU(2)\times U(1)$, and center enumeration gives the faithful form
+\begin{equation}
+ G_{\rm SM}=\frac{SU(3)\times SU(2)\times U(1)}{\Z_6}.
+ \label{eq:global-sm-group}
+\end{equation}
+This is an exact L2 theorem for the selected carrier, not a consequence of the
+old difference-potential equations \cite{MTTNativeGauge}.
+
+\section{Local and global anomaly checks}
+
+Use left-handed Weyl fields throughout. With the integer charges in
+Equation~\eqref{eq:integer-hypercharge}, one family has
+\[
+ Q:(\mathbf{3},\mathbf{2})_1,\quad
+ u^c:(\overline{\mathbf{3}},\mathbf{1})_{-4},\quad
+ d^c:(\overline{\mathbf{3}},\mathbf{1})_2,\quad
+ L:(\mathbf{1},\mathbf{2})_{-3},\quad
+ e^c:(\mathbf{1},\mathbf{1})_6,\quad
+ N^c:(\mathbf{1},\mathbf{1})_0.
+\]
+
+\begin{theorem}[Anomaly cancellation on the selected rows]
+\label{thm:anomaly-table}
+The perturbative gauge and mixed anomaly coefficients vanish on each supplied
+family:
+\begin{align*}
+ SU(3)^3 &: 2-1-1=0,\\
+ SU(3)^2U(1) &: \tfrac12\bigl(2(1)-4+2\bigr)=0,\\
+ SU(2)^2U(1) &: \tfrac12\bigl(3(1)-3\bigr)=0,\\
+ \mathrm{grav}^2U(1) &: 6(1)+3(-4)+3(2)+2(-3)+6=0,\\
+ U(1)^3 &: 6(1)^3+3(-4)^3+3(2)^3+2(-3)^3+6^3=0.
+\end{align*}
+The $SU(2)^3$ perturbative anomaly vanishes because the doublet is
+pseudoreal.
+\end{theorem}
+
+\begin{proof}
+The equations are the traces of one or three gauge generators over the listed
+left-handed representation, including color and weak multiplicities. The
+common Dynkin index $T(\mathbf3)=T(\mathbf2)=1/2$ is displayed in the mixed
+nonabelian sums.
+\end{proof}
+
+\begin{theorem}[Witten parity check for the selected doublets]
+\label{thm:witten}
+For a spin four-dimensional $SU(2)$ theory containing only the Standard Model
+isospin-$1/2$ rows, the original Witten obstruction is absent. There are three
+colored $Q$ doublets and one $L$ doublet per family, hence $4$ per family and
+$12$ on the selected three-family carrier.
+\end{theorem}
+
+\begin{proof}
+An odd number of left-handed $SU(2)$ doublets has the mod-$2$ global anomaly
+\cite{Witten1982}. Both $4$ and $12$ are even.
+\end{proof}
+
+Theorems~\ref{thm:anomaly-table} and \ref{thm:witten} are exact consistency
+checks on one supplied representation packet. They do not independently select
+the representation or the number of families. The current A46 packet performs
+all these checks on the same $48$-dimensional chiral carrier
+\cite{MTTChiralCarrier}; that consolidation is a genuine advance over the
+version~1 bookkeeping.
+
+\section{Bare Majorana masses require an invariant character}
+
+\begin{theorem}[One-dimensional gauge-character criterion]
+\label{thm:majorana-character}
+Let a left-handed Weyl field $\psi$ transform in a one-dimensional character
+$\chi$ of a gauge group $G$. A bare bilinear
+$m\psi^T C\psi/2+\mathrm{h.c.}$ is gauge invariant if and only if
+\begin{equation}
+ \chi^2=1
+ \label{eq:character-square}
+\end{equation}
+as a character of $G$, equivalently the bilinear admits a
+$G$-equivariant trivialization. For a continuous $U(1)$ character $n$, this
+requires $n=0$. For a $\Z_N$ character $k$, it requires
+$2k=0\pmod N$.
+\end{theorem}
+
+\begin{proof}
+Under $g\in G$, the bilinear acquires the factor $\chi(g)^2$. It is invariant
+for every $g$ exactly when Equation~\eqref{eq:character-square} holds. The two
+special cases follow from their character groups.
+\end{proof}
+
+If $L_\chi$ is the associated ordinary line bundle, gauge invariance implies
+$L_\chi^{\otimes2}$ is equivariantly trivial and therefore
+$2c_1(L_\chi)=0$. The converse is false: ordinary topological triviality of a
+particular background bundle does not erase a nontrivial gauge character.
+Moreover, a scalar of opposite charge, a Higgs insertion, or a higher
+dimensional Weinberg operator can make an effective Majorana term invariant
+even when a bare term is forbidden. Version~1's topological ``if and only if''
+and its conclusion ``otherwise neutrinos are Dirac'' are withdrawn.
+
+On the current ambient $\Z_{1344}$ packet, the exact self-character solutions
+are $k=0$ and $k=672$. The selected CP labels are not such characters. The
+current source emits a Dirac-neutrino channel, but exclusivity of that channel,
+the absolute mass scale, and a separately admissible Majorana operator remain
+open \cite{MTTNeutrinoCP}.
+
+\section{Five distinct notions of triviality}
+
+For a complex line bundle with connection, the following notions must not be
+identified.
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.25\textwidth}
+                >{\raggedright\arraybackslash}p{0.65\textwidth}}
+\hline
+Notion & Condition and meaning \\
+\hline
+Smooth topological triviality & $c_1(L)=0$; a smooth nowhere-zero section exists. \\
+Holomorphic triviality & $L\cong\mathcal O$ in the holomorphic category; $c_1=0$ alone can leave a nontrivial class in $\operatorname{Pic}^0$. \\
+Gauge-equivariant triviality & The relevant tensor representation contains the trivial character or singlet. \\
+Flatness & The chosen connection has curvature $F_\nabla=0$. \\
+Trivial holonomy & $\Hol_\nabla(\gamma)=1$ for every closed loop; equivalently a global parallel frame exists. \\
+\hline
+\end{tabular}
+\end{center}
+
+Smooth complex line bundles over the manifolds considered here are classified
+by $c_1$, but a smooth trivialization does not select a flat connection, a
+parallel frame, or a holomorphic trivialization.
+
+\subsection{The pairwise tensor product}
+
+Suppose line bundles $B_i$ on one declared base obey
+\[
+ \alpha_i=c_1(B_i),\qquad \alpha_1+\alpha_2+\alpha_3=0,
+\]
+and define $L_{ij}=B_i\otimes B_j$.
+
+\begin{lemma}[Topological product identity]
+\label{lem:top-product}
+The underlying smooth line bundle
+$L_{12}\otimes L_{23}\otimes L_{31}$ is topologically trivial.
+\end{lemma}
+
+\begin{proof}
+Its first Chern class is
+\[
+ (\alpha_1+\alpha_2)+(\alpha_2+\alpha_3)+(\alpha_3+\alpha_1)
+ =2(\alpha_1+\alpha_2+\alpha_3)=0.
+\]
+Classification of smooth complex line bundles by $H^2(-,\Z)$ gives the claim.
+The trivialization exists but is not canonical from this equation alone.
+\end{proof}
+
+\subsection{Operator selection}
+
+\begin{proposition}[Conditional global operator test]
+\label{prop:operator-test}
+Let fields $\Phi_a$ transform in representations $R_a$ and $U(1)$ characters
+$n_a$. With no charged spurion, compensator, or additional field insertion, a
+constant-coefficient monomial can be gauge invariant only if
+\[
+ \mathbf{1}\subset\bigotimes_a R_a,\qquad \sum_a n_a=0.
+\]
+For line carriers this gives an equivariant trivialization of the total line.
+A nonzero total first Chern class is a topological obstruction. Vanishing total
+$c_1$ is only an allowance: nonabelian contraction, statistics, locality,
+holomorphic structure, and the actual coupling functional remain separate.
+\end{proposition}
+
+\begin{proof}
+A gauge-invariant scalar is an invariant vector in the tensor product
+representation. $U(1)$ characters multiply, so their integers add. The
+associated invariant line is topologically trivial, proving the obstruction.
+\end{proof}
+
+Consequently, $3c_1(L_{ij})\ne0$ obstructs a constant trilinear made only from
+three fields in that one line sector. Lemma~\ref{lem:top-product} removes this
+particular topological obstruction for a $(12)(23)(31)$ trilinear, but it does
+not generate a Yukawa coupling. Nor does the obstruction by itself identify
+specific baryon- or lepton-number violating Standard Model operators. Those
+claims require the complete field-to-bundle dictionary and all allowed scalar
+insertions.
+
+\subsection{Holonomy}
+
+Equip the $L_{ij}$ with unitary connections $\nabla_{ij}$ and let
+$\nabla_\otimes$ be their tensor-product connection.
+
+\begin{theorem}[Exact tensor-product holonomy statement]
+\label{thm:holonomy}
+For every closed loop $\gamma$,
+\[
+ \Hol_{\nabla_\otimes}(\gamma)
+ =\Hol_{\nabla_{12}}(\gamma)
+  \Hol_{\nabla_{23}}(\gamma)
+  \Hol_{\nabla_{31}}(\gamma).
+\]
+The product equals one for every loop if a connection-preserving
+trivialization identifies $\nabla_\otimes$ with the trivial connection.
+Topological triviality from Lemma~\ref{lem:top-product} alone does not imply
+this conclusion.
+\end{theorem}
+
+\begin{proof}
+Parallel transport on a tensor product is the tensor product of the parallel
+transports. A connection-preserving trivialization gives a global parallel
+unit section and therefore unit holonomy. For the failure of the converse,
+take the trivial line over $S^1$ with
+$\nabla=d+i a\,d\vartheta$. It has $c_1=0$ and $F_\nabla=0$, but its holonomy is
+$e^{-2\pi i a}$, which is nontrivial when $a\notin\Z$.
+\end{proof}
+
+Thus the phase-sum rule is a valid conditional connection theorem, not a
+consequence of flux balance alone.
+
+\section{Strong CP and the conditional PQ mechanism}
+
+\begin{theorem}[Conditional Peccei--Quinn relaxation]
+\label{thm:pq}
+Assume a compact axion $a/f_a$, an approximate global shift symmetry, a
+nonzero QCD anomaly coefficient $N$, adequate suppression of explicit
+PQ-breaking terms, and a QCD effective potential whose physical minimum is at
+the CP-conserving point. Then the potential depends on
+\[
+ \theta_{\rm eff}=\theta_{\rm QCD}+N\frac{a}{f_a}
+\]
+and dynamical minimization relaxes $\theta_{\rm eff}$ to zero modulo its
+periodicity.
+\end{theorem}
+
+\begin{proof}
+The anomalous shift moves the QCD theta angle into the dynamical axion
+coordinate. Under the stated potential and quality assumptions, minimization
+selects the CP-conserving class. This is the Peccei--Quinn mechanism
+\cite{PecceiQuinn1977}.
+\end{proof}
+
+The physical domain-wall number counts inequivalent minima after charge
+normalization and identifications by any unbroken discrete subgroup. It is not
+universally equal to an unnormalized anomaly sum. The current MTT audit finds
+that the complete selected $E_6$ $27$ has zero central $Q_\psi$ color anomaly:
+three matter $16_1$ contributions $+12$ are canceled by the colored
+$10_{-2}$ partners $-12$. A matter-only threshold diagnostic would instead
+give $N_{\rm DW}=3$, not one. No selected flux/threshold axion-current anomaly
+matching map currently promotes that diagnostic to a physical result
+\cite{MTTStrongCP}. Strong CP therefore remains open in MTT; the conditional
+Theorem~\ref{thm:pq} is not a topology-only solution.
+
+\section{Equal characteristic cones are an action-level theorem}
+
+\begin{theorem}[Common principal cone]
+\label{thm:principal-cone}
+Assume a Lorentzian metric $g$, the two-derivative Einstein--Hilbert action,
+minimally coupled Maxwell theory, standard gauge fixing, and no
+Lorentz-violating constitutive or higher-derivative principal terms. The
+gauge-fixed linearized Maxwell and Einstein operators have principal symbols
+proportional to
+\[
+ g^{\mu\nu}\xi_\mu\xi_\nu
+\]
+on their respective field components. Their local geometric-optics
+characteristic cones therefore coincide.
+\end{theorem}
+
+\begin{proof}
+In Lorenz gauge the Maxwell operator has principal part $\Box_g A_\mu$. In de
+Donder gauge the linearized Einstein operator has principal part
+$\Box_g h_{\mu\nu}$. Curvature and mass terms are lower order and do not alter
+the characteristic set.
+\end{proof}
+
+This proves the conditional vacuum statement often denoted
+$c_{\rm em}=c_{\rm grav}$. It does not derive the assumed action from topology,
+nor does it exclude dispersion from additional principal operators.
+
+\section{Correct one-loop representation coefficients}
+
+Fix
+\[
+ \beta(g)=\mu\frac{dg}{d\mu}
+ =-\frac{g^3}{16\pi^2}b_0+O(g^5).
+\]
+
+\begin{proposition}[Weyl/Dirac and real/complex counting]
+\label{prop:beta}
+For a simple gauge factor,
+\begin{equation}
+ b_0=\frac{11}{3}C_2(G)
+ -\frac{2}{3}\sum_{\text{Weyl }f}T(R_f)
+ -\frac{1}{3}\sum_{\text{complex }s}T(R_s).
+ \label{eq:beta-correct}
+\end{equation}
+Equivalently, a Dirac fermion contributes $4T(R)/3$ and a real scalar
+contributes $T(R)/6$. With three Standard Model families and one complex Higgs
+doublet,
+\[
+ b_0^{SU(3)}=7,\qquad
+ b_0^{SU(2)}=\frac{19}{6},\qquad
+ b_0^{Y}=-\frac{41}{6}.
+\]
+For $g_1=\sqrt{5/3}\,g_Y$, the last value is $b_0^{1}=-41/10$.
+\end{proposition}
+
+\begin{proof}
+Equation~\eqref{eq:beta-correct} is the standard one-loop general-gauge-theory
+coefficient \cite{MachacekVaughn1983}. Two Weyl fields make one Dirac field,
+and two real scalars make one complex scalar. For $SU(3)$, the Standard Model
+Weyl sum gives $b_0=11-4=7$. For $SU(2)$ it gives
+$22/3-4-1/6=19/6$. For physical hypercharge,
+$\sum_f Y_f^2=10$ and the complex Higgs sum is $1/2$, giving
+$-(2/3)10-(1/3)(1/2)=-41/6$.
+\end{proof}
+
+These signs and coefficients follow from imported perturbative QFT and supplied
+representations. They are not topology-only MTT predictions. Version~1 used
+the Dirac coefficient for Weyl fields and half the complex-scalar coefficient;
+that formula is corrected here.
+
+\section{Current result ledger}
+
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.29\textwidth}
+                >{\raggedright\arraybackslash}p{0.20\textwidth}
+                >{\raggedright\arraybackslash}p{0.41\textwidth}}
+\hline
+Claim & Current status & Exact boundary \\
+\hline
+Internal family index & Established L1 & Index is on $X_6$; physical zero-mode realization needs the selected analytic compactification. \\
+q79 three-index bundle & Topological L1 established & Smooth $c_3=\pm6$ bundles exist; holomorphic gerbe/HYM/Bianchi promotion remains open. \\
+Difference charges & Encoding only & The old equations reconstruct inserted observed differences. \\
+Relative hypercharge vector & Selected L2 established & A50 selects the primitive vector on the supplied finite chiral edge packet; $N_0$ states normalization. \\
+Gauge group and $/\Z_6$ & Selected L2 established & Exact on the native selected carrier; physical compactification promotion is separate. \\
+Local and Witten anomalies & Selected L2 established & Exact consistency checks on the supplied rows, not independent selection of them. \\
+Dirac/Majorana criterion & Character theorem established & Current packet emits a Dirac channel; exclusivity, absolute scale, and Majorana completion remain open. \\
+Operator forbiddance & Conditional obstruction & Nonzero total $c_1$ obstructs a constant term; specific B/L claims need the full dictionary and compensator audit. \\
+Holonomy phase sum & Conditional connection theorem & Requires a connection-preserving trivialization, not merely $c_1=0$. \\
+PQ/strong CP & Open physically & Standard PQ theorem is conditional; selected MTT anomalous current and matching map are missing. \\
+Photon/graviton cone & Conditional action theorem & Holds for common standard principal symbols; not selected by topology. \\
+One-loop RG signs & Imported QFT check & Correct once the Standard Model representation and perturbative action are supplied. \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Conclusion}
+
+Topology supplies powerful integer obstructions and indices, but it does not
+perform every physical selection. The strongest corrected result is a clean
+composition: internal index theory gives the required family-count target;
+the q79 branch now realizes that target by smooth non-pullback
+$c_3=\pm6$ bundles; the selected finite carrier independently closes the
+relative hypercharge, global gauge-group, and anomaly algebra. The remaining
+work is correspondingly sharp: promote the q79 smooth bundle to the selected
+holomorphic/HYM/Bianchi vacuum and prove that its reduction realizes the same
+finite carrier and action. PQ dynamics, neutrino ontology, particular
+operator exclusions, couplings, and propagation laws retain their independent
+source gates.
+
+\section*{Version 2 delta}
+\addcontentsline{toc}{section}{Version 2 delta}
+\begin{itemize}[leftmargin=*]
+\item Moved the family index from physical four-space to internal $X_6$ and
+replaced the K3-spacetime example by the six-dimensional $c_3$ formula.
+\item Added the exact q79 smooth $c_3=\pm6$ candidate and its explicit analytic
+promotion boundary.
+\item Replaced fractional charge bundles by integer powers
+$L_Y^{\otimes n}$ with $Y=n/N_0$.
+\item Reclassified the old hypercharge equations as an inserted-data encoding
+and added the newer A50 anomaly-kernel theorem as a separate selected result.
+\item Added the selected native $G_{\rm SM}/\Z_6$ theorem and consolidated
+anomaly table at their finite-carrier scope.
+\item Replaced ordinary $L^{\otimes2}$ topological triviality by the correct
+gauge-character criterion for bare Majorana masses.
+\item Separated smooth, holomorphic, equivariant, flat, and holonomy
+triviality; corrected the phase-sum proof.
+\item Narrowed operator forbiddance, PQ relaxation, and equal wave speed to
+their actual conditional hypotheses.
+\item Corrected one-loop coefficients for Weyl versus Dirac fermions and real
+versus complex scalars.
+\item Replaced the claim that all Tier--1 predictions are fully established by
+the auditable status ledger above.
 \end{itemize}
+
 \begin{thebibliography}{99}
 
-\bibitem{MTT-Admissibility}
-P.~Nero,
-\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255621}
+\bibitem{AtiyahSinger1968}
+M.~F. Atiyah and I.~M. Singer,
+\emph{The index of elliptic operators: I},
+Annals of Mathematics \textbf{87} (1968), 484--530.
+\url{https://doi.org/10.2307/1970715}
 
-\bibitem{MTT-Foundation}
-P.~Nero,
-\emph{Modal Triplet Theory: Foundation},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.16949762}
+\bibitem{CandelasEtAl1985}
+P.~Candelas, G.~T. Horowitz, A.~Strominger, and E.~Witten,
+\emph{Vacuum configurations for superstrings},
+Nuclear Physics B \textbf{258} (1985), 46--74.
+\url{https://doi.org/10.1016/0550-3213(85)90602-9}
 
-\bibitem{MTT-FixedPoints}
-P.~Nero,
-\emph{Fixed Points I--VI: Complete Coherence Spine},
-Zenodo preprints, August 2025.
-\url{https://doi.org/10.5281/zenodo.16948748}
+\bibitem{Witten1982}
+E.~Witten,
+\emph{An $SU(2)$ anomaly},
+Physics Letters B \textbf{117} (1982), 324--328.
+\url{https://doi.org/10.1016/0370-2693(82)90728-6}
 
-\bibitem{MTT-ProjectionAdmissibility}
-P.~Nero,
-\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255838}
+\bibitem{MachacekVaughn1983}
+M.~E. Machacek and M.~T. Vaughn,
+\emph{Two-loop renormalization group equations in a general quantum field
+theory. I. Wave function renormalization},
+Nuclear Physics B \textbf{222} (1983), 83--103.
+\url{https://doi.org/10.1016/0550-3213(83)90610-7}
 
-\bibitem{MTT-Closure}
-P.~Nero,
-\emph{Closure and Inevitability in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255510}
+\bibitem{PecceiQuinn1977}
+R.~D. Peccei and H.~R. Quinn,
+\emph{CP conservation in the presence of pseudoparticles},
+Physical Review Letters \textbf{38} (1977), 1440--1443.
+\url{https://doi.org/10.1103/PhysRevLett.38.1440}
 
-\bibitem{MTT-CoherenceCapacity}
-P.~Nero,
-\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255905}
+\bibitem{FuYau2006}
+J.-X. Fu and S.-T. Yau,
+\emph{The theory of superstring with flux on non-Kahler manifolds and the
+complex Monge--Ampere equation},
+Journal of Differential Geometry \textbf{78} (2009), 369--428.
+\url{https://arxiv.org/abs/hep-th/0604063}
 
-\bibitem{MTT-CoherenceDynamics}
+\bibitem{MTTq79Chiral}
 P.~Nero,
-\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256048}
+\emph{MTT Selected q79 Non-Pullback Chiral Visible Bundle and Full $SU(9)$
+Holonomy Selection}, theorem packet (2026).
+\url{https://github.com/PeterNero/mtt-sm-parity-closure/blob/2d7465f60a9d2a0333a5c32a94311d048aeb435d/proof_corpus/MTT_Selected_q79NonPullbackChiralVisibleBundleAndFullSU9HolonomySelection_v1.md}
 
-\bibitem{MTT-QM}
+\bibitem{MTTq79Gerbe}
 P.~Nero,
-\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.17074246}
+\emph{MTT Selected q79 Twisted Spectral Gerbe Lift, HYM and Bianchi Execution},
+theorem packet (2026).
+\url{https://github.com/PeterNero/mtt-sm-parity-closure/blob/2d7465f60a9d2a0333a5c32a94311d048aeb435d/proof_corpus/MTT_Selected_q79TwistedSpectralGerbeLiftHYMAndBianchiExecution_v1.md}
 
-\bibitem{MTT-QFT}
+\bibitem{MTTChiralCarrier}
 P.~Nero,
-\emph{From MTT to Quantum Field Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17068816}
+\emph{MTT Selected Typed Family--Gauge Carrier and Diagonal SM Representation
+Theorem}, theorem packet (2026).
+\url{https://github.com/PeterNero/mtt-sm-parity-closure/blob/2d7465f60a9d2a0333a5c32a94311d048aeb435d/proof_corpus/MTT_Selected_TypedFamilyGaugeCarrierAndDiagonalSMRepresentationTheorem_v1.md}
 
-\bibitem{MTT-GR}
+\bibitem{MTTNativeGauge}
 P.~Nero,
-\emph{Modal Triplet Theory: From MTT to General Relativity},
-Zenodo preprint, October 2025.
-\url{https://doi.org/10.5281/zenodo.16950597}
+\emph{MTT Selected Native Bundle--Automorphism Gauge Group or
+Parameter--Assumption Audit}, theorem packet (2026).
+\url{https://github.com/PeterNero/mtt-sm-parity-closure/blob/2d7465f60a9d2a0333a5c32a94311d048aeb435d/proof_corpus/MTT_Selected_NativeBundleAutomorphismGaugeGroup_or_ParameterAssumptionAudit_v1.md}
 
-\bibitem{MTT-UVQG}
+\bibitem{MTTHypercharge}
 P.~Nero,
-\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17077671}
+\emph{MTT Selected Neutral Algebra Summand or Equivalent Axiom Revision},
+theorem packet (2026).
+\url{https://github.com/PeterNero/mtt-sm-parity-closure/blob/2d7465f60a9d2a0333a5c32a94311d048aeb435d/proof_corpus/MTT_Selected_NeutralAlgebraSummandOrEquivalentAxiomRevision_v1.md}
 
-\bibitem{MTT-Measurement}
+\bibitem{MTTNeutrinoCP}
 P.~Nero,
-\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17177404}
+\emph{MTT Selected Neutrino and Strong--CP Strict--Upgrade Attack}, theorem
+packet (2026).
+\url{https://github.com/PeterNero/mtt-sm-parity-closure/blob/2d7465f60a9d2a0333a5c32a94311d048aeb435d/proof_corpus/MTT_Selected_NeutrinoAndStrongCP_StrictUpgradeAttack_v1.md}
 
-\bibitem{MTT-Irreversibility}
+\bibitem{MTTStrongCP}
 P.~Nero,
-\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256408}
-
-\bibitem{MTT-Bell-Beables}
-P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17076300}
-
-\bibitem{MTT-Bell-Temporal}
-P.~Nero,
-\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
-Zenodo preprint, August 2025.
-\url{https://doi.org/10.5281/zenodo.18208884}
-
-\bibitem{MTT-Stochastic}
-P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18254862}
+\emph{MTT Selected $E_6$ Central--Generator QCD Anomaly Audit}, theorem packet
+(2026).
+\url{https://github.com/PeterNero/mtt-sm-parity-closure/blob/2d7465f60a9d2a0333a5c32a94311d048aeb435d/proof_corpus/MTT_Selected_E6CentralGeneratorQCDAnomalyAudit_v1.md}
 
 \end{thebibliography}
 

@@ -8,9 +8,11 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import unicodedata
 import urllib.parse
 import urllib.request
+from contextlib import contextmanager
 from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any, Iterable
@@ -96,6 +98,74 @@ def safe_remove_tree(path: Path, parent: Path) -> None:
         shutil.rmtree(resolved)
 
 
+def sync_staged_tree(source: Path, destination: Path, parent: Path) -> None:
+    """Mirror a staged tree without replacing the destination directory handle."""
+    source_resolved = source.resolve()
+    destination_resolved = destination.resolve()
+    root = parent.resolve()
+    source_resolved.relative_to(root)
+    destination_resolved.relative_to(root)
+    if source_resolved == root or destination_resolved == root:
+        raise ValueError("refusing to synchronize a repository root")
+
+    destination.mkdir(parents=True, exist_ok=True)
+    source_files = {
+        path.relative_to(source)
+        for path in source.rglob("*")
+        if path.is_file()
+    }
+    source_directories = {
+        path.relative_to(source)
+        for path in source.rglob("*")
+        if path.is_dir()
+    }
+
+    for destination_file in sorted(destination.rglob("*"), reverse=True):
+        if not destination_file.is_file():
+            continue
+        if destination_file.relative_to(destination) not in source_files:
+            destination_file.unlink()
+
+    for destination_directory in sorted(destination.rglob("*"), reverse=True):
+        if not destination_directory.is_dir():
+            continue
+        if destination_directory.relative_to(destination) not in source_directories:
+            destination_directory.rmdir()
+
+    for source_directory in sorted(source_directories):
+        (destination / source_directory).mkdir(parents=True, exist_ok=True)
+    for relative in sorted(source_files):
+        target = destination / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source / relative, target)
+
+    safe_remove_tree(source, parent)
+
+
+def install_staging(staging: Path) -> None:
+    sync_staged_tree(staging / "papers", REPO_ROOT / "papers", REPO_ROOT)
+    destination = REPO_ROOT / "catalog"
+    safe_remove_tree(destination, REPO_ROOT)
+    (staging / "catalog").replace(destination)
+    catalog_destination = REPO_ROOT / "CATALOG.md"
+    if catalog_destination.exists():
+        catalog_destination.unlink()
+    (staging / "CATALOG.md").replace(catalog_destination)
+    safe_remove_tree(staging, REPO_ROOT)
+
+
+def native_projects(config: dict[str, Any]) -> dict[Path, dict[str, Any]]:
+    rows: dict[Path, dict[str, Any]] = {}
+    for entry in config.get("native_projects") or []:
+        project = (REPO_ROOT / entry["path"]).resolve()
+        if project in rows:
+            raise ValueError(f"duplicate native project path: {project}")
+        if not (project / "main.tex").is_file():
+            raise FileNotFoundError(f"native project lacks main.tex: {project}")
+        rows[project] = entry
+    return rows
+
+
 def discover_projects(source_root: Path, config: dict[str, Any]) -> list[Path]:
     projects: list[Path] = []
     for source_name in config["source_roots"]:
@@ -112,7 +182,20 @@ def discover_projects(source_root: Path, config: dict[str, Any]) -> list[Path]:
 
     discovered = {relative_posix(path, source_root): path for path in projects}
     replacements = config["replacements"]
-    superseded = {row["superseded_project"] for row in replacements}
+    native_rows = list((config.get("native_projects") or []))
+    native_superseded = {
+        row["superseded_project"]
+        for row in native_rows
+        if row.get("superseded_project")
+    }
+    replacement_superseded = {row["superseded_project"] for row in replacements}
+    duplicate_superseded = replacement_superseded & native_superseded
+    if duplicate_superseded:
+        raise ValueError(
+            "projects cannot be superseded by both replacement mechanisms: "
+            + ", ".join(sorted(duplicate_superseded))
+        )
+    superseded = replacement_superseded | native_superseded
     selected = {row["selected_project"] for row in replacements}
 
     missing_old = sorted(superseded - set(discovered))
@@ -136,10 +219,19 @@ def discover_projects(source_root: Path, config: dict[str, Any]) -> list[Path]:
         )
 
     canonical = [path for relative, path in discovered.items() if relative not in superseded]
+    canonical.extend(native_projects(config))
     expected = int(config["expected_canonical_papers"])
     if len(canonical) != expected:
         raise ValueError(f"expected {expected} canonical papers, found {len(canonical)}")
-    return sorted(canonical, key=lambda path: relative_posix(path, source_root).lower())
+    native_by_path = native_projects(config)
+
+    def source_key(path: Path) -> str:
+        native = native_by_path.get(path.resolve())
+        if native:
+            return str(native["source_provenance"]).lower()
+        return relative_posix(path, source_root).lower()
+
+    return sorted(canonical, key=source_key)
 
 
 def render_inlines(items: Iterable[dict[str, Any]]) -> str:
@@ -194,18 +286,37 @@ def pandoc_source(project: Path) -> str:
     return "\n".join(lines) + "\n"
 
 
-def pandoc_metadata(project: Path) -> tuple[str, list[str], str, str]:
-    completed = subprocess.run(
-        ["pandoc", "--from=latex", "--to=json"],
-        cwd=project,
-        input=pandoc_source(project),
-        capture_output=True,
-        text=True,
+@contextmanager
+def pandoc_input(project: Path) -> Iterable[str]:
+    with tempfile.NamedTemporaryFile(
+        mode="w",
         encoding="utf-8",
-        errors="replace",
-        timeout=90,
-        check=False,
-    )
+        newline="\n",
+        suffix=".tex",
+        prefix=".mtt-pandoc-",
+        dir=project,
+        delete=False,
+    ) as handle:
+        handle.write(pandoc_source(project))
+        temporary = Path(handle.name)
+    try:
+        yield temporary.name
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
+def pandoc_metadata(project: Path) -> tuple[str, list[str], str, str]:
+    with pandoc_input(project) as source:
+        completed = subprocess.run(
+            ["pandoc", "--from=latex", "--to=json", source],
+            cwd=project,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=90,
+            check=False,
+        )
     if completed.returncode != 0:
         raise RuntimeError(f"Pandoc metadata failed for {project}: {completed.stderr}")
     payload = json.loads(completed.stdout)
@@ -437,13 +548,20 @@ def copy_canonical_file(source: Path, destination: Path) -> None:
     destination.write_bytes(payload)
 
 
-def copy_project(source: Path, target: Path) -> list[dict[str, Any]]:
+def copy_project(
+    source: Path, target: Path, *, exclude_generated: bool = False
+) -> list[dict[str, Any]]:
     target.mkdir(parents=True, exist_ok=True)
     files: list[dict[str, Any]] = []
     for source_file in sorted(source.rglob("*")):
         if not source_file.is_file():
             continue
         relative = source_file.relative_to(source)
+        if exclude_generated and relative.as_posix() in {
+            "metadata.json",
+            "paper.md",
+        }:
+            continue
         if not should_copy(relative):
             continue
         destination = target / relative
@@ -468,6 +586,7 @@ def build_markdown(
     release_state: str,
     main_hash: str,
     latest_release: dict[str, Any] | None,
+    date_override: str = "",
 ) -> tuple[str, str]:
     command = [
         "pandoc",
@@ -484,6 +603,8 @@ def build_markdown(
         "-M",
         f"generated_from_main_tex_sha256={main_hash}",
     ]
+    if date_override:
+        command.extend(["-M", f"date={date_override}"])
     if latest_release:
         command.extend(
             [
@@ -497,17 +618,17 @@ def build_markdown(
                 f"zenodo_url={latest_release['record_url']}",
             ]
         )
-    completed = subprocess.run(
-        command,
-        cwd=project,
-        input=pandoc_source(project),
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        timeout=120,
-        check=False,
-    )
+    with pandoc_input(project) as source:
+        completed = subprocess.run(
+            [*command, source],
+            cwd=project,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=120,
+            check=False,
+        )
     if completed.returncode != 0:
         raise RuntimeError(f"Pandoc Markdown failed for {project}: {completed.stderr}")
     if len(completed.stdout.strip()) < 200:
@@ -519,26 +640,64 @@ def build_markdown(
 
 
 def prepare_paper_records(
-    projects: list[Path], source_root: Path, config: dict[str, Any]
+    projects: list[Path],
+    source_root: Path,
+    config: dict[str, Any],
+    prior_papers: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
     replacement_by_selected = {
         row["selected_project"]: row for row in config["replacements"]
     }
     papers: list[dict[str, Any]] = []
     used_ids: set[str] = set()
+    native_by_path = native_projects(config)
+    prior_by_id = {str(row.get("paper_id") or ""): row for row in prior_papers}
     for project in projects:
-        source_path = relative_posix(project, source_root)
+        native = native_by_path.get(project.resolve())
+        source_path = (
+            str(native["source_provenance"])
+            if native
+            else relative_posix(project, source_root)
+        )
         title, authors, date, abstract = pandoc_metadata(project)
+        title = str(native.get("title") or title) if native else title
         title = title or fallback_title(project.name)
-        paper_id = slugify(title)
+        authors = list(native.get("authors") or authors) if native else authors
+        date = str(native.get("date") or date) if native else date
+        abstract = str(native.get("abstract") or abstract) if native else abstract
+        replacement = replacement_by_selected.get(source_path) if not native else None
+        configured_paper_id = replacement.get("paper_id") if replacement else None
+        paper_id = (
+            str(native.get("paper_id") or slugify(title))
+            if native
+            else str(configured_paper_id or slugify(title))
+        )
         if paper_id in used_ids:
             suffix = hashlib.sha1(source_path.encode("utf-8")).hexdigest()[:8]
             prefix_length = PAPER_ID_MAX_LENGTH - len(suffix) - 1
             paper_id = paper_id[:prefix_length].rstrip("-") + "-" + suffix
         used_ids.add(paper_id)
 
+        source_text = (project / "main.tex").read_text(
+            encoding="utf-8-sig", errors="replace"
+        )
+        dynamic_date = bool(
+            re.search(r"\\date\s*\{\s*\\today\s*\}", source_text)
+        )
+        if dynamic_date:
+            prior = prior_by_id.get(paper_id)
+            if prior and prior.get("date"):
+                date = str(prior["date"])
+
         aliases = [title, fallback_title(project.name)]
-        replacement = replacement_by_selected.get(source_path)
+        if native and native.get("superseded_project"):
+            replacement = {
+                "superseded_project": native["superseded_project"],
+                "revision_evidence": str(
+                    native.get("revision_evidence") or "REVISION_AUDIT.md"
+                ),
+                "native_successor": True,
+            }
         if replacement:
             old_project = source_root / replacement["superseded_project"]
             old_title, _, _, _ = pandoc_metadata(old_project)
@@ -554,11 +713,17 @@ def prepare_paper_records(
                 "authors": authors,
                 "date": date,
                 "abstract": abstract,
-                "current_version": project_version(project.name),
+                "current_version": (
+                    str(native.get("current_version") or project_version(project.name))
+                    if native
+                    else project_version(project.name)
+                ),
                 "legacy_source_path": source_path,
                 "normalized_aliases": normalized_aliases,
                 "replacement": replacement,
                 "project": project,
+                "native": bool(native),
+                "dynamic_date": dynamic_date,
             }
         )
     return papers
@@ -619,7 +784,13 @@ def migrate(args: argparse.Namespace) -> dict[str, Any]:
     source_root = args.source_root.resolve()
     config = load_json(CONFIG_PATH)
     projects = discover_projects(source_root, config)
-    papers = prepare_paper_records(projects, source_root, config)
+    prior_catalog_path = REPO_ROOT / "catalog" / "papers.json"
+    prior_papers = (
+        load_json(prior_catalog_path).get("papers") or []
+        if prior_catalog_path.is_file()
+        else []
+    )
+    papers = prepare_paper_records(projects, source_root, config, prior_papers)
 
     zenodo_cache = REPO_ROOT / "catalog" / "zenodo-records.json"
     if args.refresh_zenodo or not zenodo_cache.is_file():
@@ -644,7 +815,9 @@ def migrate(args: argparse.Namespace) -> dict[str, Any]:
     for paper in papers:
         paper_id = paper["paper_id"]
         target = staged_papers / paper_id
-        source_files = copy_project(paper["project"], target)
+        source_files = copy_project(
+            paper["project"], target, exclude_generated=paper["native"]
+        )
         main_hash = sha256_file(target / "main.tex")
         releases = matches[paper_id]
         latest = releases[0] if releases else None
@@ -658,13 +831,20 @@ def migrate(args: argparse.Namespace) -> dict[str, Any]:
         replacement = paper["replacement"]
         revision: dict[str, Any] = {"selected_revision": bool(replacement)}
         if replacement:
-            evidence = source_root / replacement["revision_evidence"]
+            if replacement.get("native_successor"):
+                evidence = paper["project"] / replacement["revision_evidence"]
+                evidence_path = (
+                    Path("papers") / paper_id / replacement["revision_evidence"]
+                ).as_posix()
+            else:
+                evidence = source_root / replacement["revision_evidence"]
+                evidence_path = replacement["revision_evidence"]
             revision_target = target / "REVISION_AUDIT.md"
             copy_canonical_file(evidence, revision_target)
             revision.update(
                 {
                     "superseded_source_path": replacement["superseded_project"],
-                    "revision_evidence_path": replacement["revision_evidence"],
+                    "revision_evidence_path": evidence_path,
                     "revision_evidence_sha256": sha256_file(revision_target),
                 }
             )
@@ -676,6 +856,7 @@ def migrate(args: argparse.Namespace) -> dict[str, Any]:
             release_state,
             main_hash,
             latest,
+            paper["date"] if paper["dynamic_date"] else "",
         )
         if warnings:
             pandoc_warnings.append({"paper_id": paper_id, "warnings": warnings})
@@ -741,7 +922,11 @@ def migrate(args: argparse.Namespace) -> dict[str, Any]:
     report = {
         "schema": "mtt.paper-migration-report.v1",
         "canonical_papers": len(output_papers),
-        "superseded_projects_excluded": len(config["replacements"]),
+        "superseded_projects_excluded": len(config["replacements"])
+        + sum(
+            bool(row.get("superseded_project"))
+            for row in (config.get("native_projects") or [])
+        ),
         "zenodo_records": len(zenodo_records),
         "zenodo_records_matched": len(matched_record_ids),
         "zenodo_records_unmatched": len(unmatched_zenodo),
@@ -791,15 +976,7 @@ def migrate(args: argparse.Namespace) -> dict[str, Any]:
         newline="\n",
     )
 
-    for name in ("papers", "catalog"):
-        destination = REPO_ROOT / name
-        safe_remove_tree(destination, REPO_ROOT)
-        (staging / name).replace(destination)
-    catalog_destination = REPO_ROOT / "CATALOG.md"
-    if catalog_destination.exists():
-        catalog_destination.unlink()
-    (staging / "CATALOG.md").replace(catalog_destination)
-    safe_remove_tree(staging, REPO_ROOT)
+    install_staging(staging)
     return report
 
 

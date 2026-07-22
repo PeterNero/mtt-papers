@@ -1,6 +1,5 @@
 \documentclass[11pt]{article}
 \usepackage{series}
-\usepackage{mathrsfs}
 
 \title{Modal Triplet Theory: Foundations}
 \author{Peter Nero}
@@ -32,24 +31,34 @@ independent obligations inherited by every downstream MTT realization. A
 rank-three world-in-world comparison field and the selected q79 trace-split
 carrier are included as a typed geometry interface: their matching component
 counts do not by themselves derive a ten-dimensional manifold, Lorentzian
-spacetime, or a global intertwiner.
+spacetime, or a global intertwiner. The shared-circle claim is upgraded from
+fiberwise analogy to an exact finite differential-line theorem: one universal
+flat $\mathbb Z_{64}$ line pulls back coherently to the q79 SpinC determinant,
+the $1+2+3$ carrier, the root-plane complex structure, and the finite Reynolds
+Hessian. Boothby--Wang geometry independently identifies lens and Heisenberg
+nil manifolds as parallel curved prequantum circle bundles over different
+bases. These results are compatible but not identical, and neither compact
+circle flow is physical Lorentzian time.
 \end{abstract}
 
 \section*{Revision note for this edition}
 \addcontentsline{toc}{section}{Revision note for this edition}
 \begin{description}
-\item[Supersedes.] \emph{Modal Triplet Theory: Foundation}, version~6.
-\item[Reason.] The previous foundation did not keep joint spectral
-compatibility, semigroup stability, fixed-point type, reduction domains,
-physical time, signature, and internal geometry as independent hypotheses.
-\item[Resolution.] Version~7 rebuilds the functional-analytic spine, corrects
-the fixed-point and Schur--Feshbach gates, separates all scales and evolution
-parameters, and adds the typed world-in-world/q79 geometry interface.
+\item[Supersedes.] \emph{Modal Triplet Theory: Foundations}, version~7.
+\item[Reason.] Version~7 correctly typed the shared circle as line-bundle
+data, but it did not yet distinguish the curved Boothby--Wang Lens/Nil
+realizations from the later exact flat q79 differential-line theorem, nor did
+it record the resulting finite connection, holonomy, and Hessian identities.
+\item[Resolution.] Version~8 retains the functional-analytic spine and adds
+the universal q79 flat differential line, its SpinC/CLN/root-plane/finite-
+Hessian pullbacks, the parallel Boothby--Wang realization theorem, and the
+conditional polarized-section readout.
 \item[Retained result.] The coherent-projector and basin-local fixed-point
 architecture survives as a conditional control-and-reduction framework.
-\item[Remaining boundary.] Physical field equations, probability, particle
-content, numerical selection, and the same-source strain-to-q79 intertwiner
-remain downstream obligations.
+\item[Remaining boundary.] The flat finite theorem does not identify the
+nonzero-Chern physical HYM connection, prove the local strain-to-q79 continuum
+intertwiner, select a physical Hilbert space, or identify compact Reeb flow
+with time.
 \end{description}
 
 \tableofcontents
@@ -80,10 +89,10 @@ state space, local evolution law, observable map, and empirical interpretation.
 
 \subsection{Abstract Hilbert-bundle form}
 
-Let $Y$ be a smooth base and let $\mathscr H\to Y$ be a real or complex
+Let $Y$ be a smooth base and let $\mathcal E\to Y$ be a real or complex
 separable Hilbert bundle. A state belongs to a declared Sobolev space
 \[
- \mathcal H=H^s(Y;\mathscr H),
+\mathcal H=H^s(Y;\mathcal E),
 \]
 with $s$ chosen so that every nonlinear map and operator domain used below is
 well defined. The abstract results are dimension neutral.
@@ -167,6 +176,131 @@ local strain decomposition. Such an identification requires a same-source
 bundle-and-connection intertwiner. The line bundle $L_{\rm shared}$ carries
 common $U(1)$ phase or holonomy data; it is neither an extra product dimension
 nor physical Lorentzian time.
+
+\subsection{Universal q79 differential line and finite operator square}
+
+The phrase ``one shared circle'' has a global meaning only after its
+classifying maps and connection are retained. Let
+$\mathcal L_{64}^{\rm univ}\to B_\nabla\mathbb Z_{64}$ be the universal flat
+Hermitian line associated to the primitive character
+\[
+ \chi_1(n)=\exp(2\pi\mathrm i n/64).
+\]
+On the unbranched q79 sheet stack, let
+$c_{\rm sheet}:B^\circ\to BS_3$ classify the sheet local system. Since
+$S_3^{\rm ab}\cong\mathbb Z_2$, there is exactly one nontrivial homomorphism
+to $\mathbb Z_{64}$,
+\[
+ h_{S_3}(\sigma)=32\,\epsilon(\sigma),
+ \qquad \epsilon(\sigma)=
+ \begin{cases}0,&\sigma\text{ even},\\1,&\sigma\text{ odd}.
+ \end{cases}
+\]
+Put
+\[
+ c_{\rm sh}=B(h_{S_3})\circ c_{\rm sheet},
+ \qquad
+ (L_{\rm sh},\nabla_{\rm sh})
+ =c_{\rm sh}^{*}(\mathcal L_{64}^{\rm univ},\nabla_{64}).
+\]
+For both admissible odd roots $r\in\{1,33\}$,
+\[
+ \chi_r\circ h_{S_3}=\operatorname{sgn}.
+\]
+Thus the associated determinant sign line and $L_{\rm sh}$ are canonically
+parallel-isomorphic: their connections and every loop holonomy agree, not
+merely their fiber dimensions.
+
+\begin{theorem}[Finite shared-line and Hessian intertwiner]
+\label{thm:shared-line}
+On the selected q79 flat root-stack symbol, the same pullback
+$L_{\rm sh}$ tensors all three trace lanes
+\[
+ \mathcal H_{\rm CLN}
+ =L_{\rm sh}\otimes(\mathcal O\oplus\mathcal A_0\oplus\mathcal A).
+\]
+Its scalar holonomy commutes with the trace, trace-zero, and full projectors,
+with the root-plane quarter-turn $J_{DE}$, and with the normalized finite
+Reynolds operators
+\[
+ P_{\rm Haar}=\frac1{6}\sum_{g\in S_3}\rho(g),
+ \qquad
+ H_{\rm fin}=\kappa_{\rm fin}(I-P_{\rm Haar}).
+\]
+For the selected two-copy sheet/edge representation,
+\[
+ \operatorname{rank}P_{\rm Haar}=2,
+ \qquad
+ \operatorname{spec}(H_{\rm fin}/\kappa_{\rm fin})
+ =\{0^{\times2},1^{\times4}\},
+ \qquad H_{\rm TT}=\kappa_{\rm fin}I_2.
+\]
+The lifted Hessian is exactly
+$I_{L_{\rm sh}}\otimes H_{\rm fin}$ and introduces no dimensionless fit.
+\end{theorem}
+
+\begin{proof}
+The character identity gives the parallel determinant-line isomorphism.
+Scalar line holonomy commutes with every finite sheet operator. Haar averaging
+is an orthogonal projector, so $I-P_{\rm Haar}$ is the complementary
+projector. Direct decomposition of the selected two-copy permutation
+representation gives the displayed ranks and spectrum. Tensoring by the same
+line preserves these identities and proves the intertwining statement.
+\end{proof}
+
+The theorem is exact at flat differential-character and finite-symbol tier.
+It does not identify $\nabla_{\rm sh}$ with a nonflat physical HYM connection:
+a flat trace-free carrier has vanishing real characteristic curvature, whereas
+the active physical bundle has nonzero $c_2$. The continuum target is a
+spectral-symbol functor and a unitary parallel Hessian comparison, not literal
+equality of those connections.
+
+\subsection{Boothby--Wang Lens and Nil realizations}
+
+Let $(B,\omega)$ be an integral symplectic manifold. The Boothby--Wang
+construction produces a principal circle bundle
+\[
+ U(1)\longrightarrow P_k\xrightarrow{\pi}B,
+ \qquad c_1(P_k)=k[\omega],
+\]
+with connection/contact form $\alpha_k$ satisfying, in the chosen
+normalization,
+\[
+ d\alpha_k=2\pi k\,\pi^*\omega.
+\]
+For $B=\mathbb{CP}^1$ this total space is the lens space $L(k,1)$; hence
+$k=3$ gives $L(3,1)$ exactly at bundle-topology level. For an integral area
+form on $T^2$, the total space is a quotient of the Heisenberg group by a
+lattice and is a three-dimensional contact nilmanifold
+\cite{BoothbyWang,ContactBlowup}.
+
+Consequently Lens and Nil are parallel realizations of one prequantization
+schema over different bases and curvature classes. They are not literally
+nested manifolds. Nor are they one literal line bundle: the rigorous common
+target is the differential classifier $BU(1)_\nabla$ with separate maps
+\[
+ c_{\rm Lens}:\mathbb{CP}^1\to BU(1)_\nabla,
+ \qquad
+ c_{\rm Nil}:T^2\to BU(1)_\nabla.
+\]
+The flat q79 classifying map factors through
+$B_\nabla\mathbb Z_{64}\to BU(1)_\nabla$. Because the Boothby--Wang
+connections above have nonzero curvature while the q79 root-stack line is
+flat on $B^\circ$, the constructions cannot be identified connection by
+connection. A stronger MTT ``same circle'' theorem would have to select the
+three classifying maps and coherent comparison $2$-cells on a declared
+correspondence space.
+
+After a polarization, weight-$m$ equivariant functions on $P_k$ correspond to
+sections of the associated line $L^m$. In a positive holomorphic polarization
+this gives the familiar readout
+\[
+ \mathcal H_m=H^0(B,L^m).
+\]
+This is a conditional geometric-quantization Hilbert space, not a Hilbert
+space selected by the abstract MTT axioms. The periodic Reeb flow is the
+vertical phase action and must not be identified with noncompact physical
+time \cite{Woodhouse}.
 
 \section{Three independent evolution parameters}
 
@@ -497,9 +631,9 @@ contour.
 reset, including conservation and probability data.
 \item \textbf{Physical hyperbolicity:} principal symbol, constraints, causal
 domain, and relation between $t$ and $\tau$.
-\item \textbf{Scale separation:} internal gap $\lambda_{\rm int}$, coherent
-contraction scale, external four-dimensional cutoff $\Lambda_{4D}$, curvature
-scale, and RG scale $\mu$.
+\item \textbf{Scale separation:} record the internal gap
+$\lambda_{\rm int}$, coherent contraction scale, four-dimensional cutoff,
+curvature scale, and RG scale $\mu$.
 \item \textbf{Numerical provenance:} source-independent inputs, fitted inputs,
 branch selection, uncertainty, and held-out outputs.
 \end{enumerate}
@@ -544,7 +678,9 @@ matching, cosmology, or numerical prediction. Those are downstream
 obligations governed by the admissibility ledger. Nor does equality of the
 local $1+2+3$ strain dimensions and the q79 $1+2+3$ trace-split ranks prove the
 same-source intertwiner needed to identify their metrics, connections, and
-vertical operators.
+vertical operators. Theorem~\ref{thm:shared-line} closes the common flat line
+and finite Hessian square inside the q79 carrier; it does not close that
+local-to-continuum identification.
 
 \section{Conclusion}
 
@@ -554,6 +690,9 @@ stability is proved, which fixed-point conclusion is available, how reduction
 is typed, and where physical assumptions enter. Its value is precisely this
 separation: later realizations can now be tested against explicit gates rather
 than inheriting conclusions from an undifferentiated appeal to coherence.
+The shared-circle sector now illustrates the intended discipline particularly
+well: a curved Boothby--Wang schema, an exact flat q79 differential line, and
+a conditional polarized Hilbert readout coexist without being conflated.
 
 \begin{thebibliography}{99}
 
@@ -576,6 +715,26 @@ K.-J.~Engel and R.~Nagel,
 K.~Deimling,
 \newblock \emph{Nonlinear Functional Analysis},
 \newblock Springer, 1985.
+
+\bibitem{BoothbyWang}
+W.~M.~Boothby and H.~C.~Wang,
+\newblock On contact manifolds,
+\newblock \emph{Annals of Mathematics} 68 (1958), 721--734.
+
+\bibitem{ContactBlowup}
+R.~Casals, D.~M.~Pancholi, and F.~Presas,
+\newblock Contact blow-up,
+\newblock \emph{Expositiones Mathematicae} 33 (2015), 97--123.
+
+\bibitem{Woodhouse}
+N.~M.~J.~Woodhouse,
+\newblock \emph{Geometric Quantization}, second edition,
+\newblock Oxford University Press, 1992.
+
+\bibitem{SharedLinePacket}
+P.~Nero,
+\newblock \emph{q79 Universal Shared Differential Line and Finite-Operator
+Intertwiner}, executable theorem packet, 2026.
 
 \end{thebibliography}
 

@@ -1,11 +1,11 @@
 {
-  "abstract": "We extract the exact geometry of closure strain from earlier Standard-Model interpretations. For an invertible rank-three comparison field, polar or Iwasawa reduction removes three orientation directions and leaves six strain directions. With a selected orthonormal flag these split orthogonally into scalar, traceless-diagonal, and shear sectors of dimensions 1+2+3. We give explicit projectors and a norm identity, explain the relation and distinction between symmetric shear and the Heisenberg nil algebra, and state precisely what a closure Hessian proves. In particular, Hessian positivity does not select a unique Higgs, three families, Standard Model charges, confinement, mixing, or CP violation. Those identifications require representation, connection, action, and source theorems. Current q79 and finite-algebra calculations are incorporated at their declared profile-equivalence tier, and the missing same-source intertwiner from the local strain normal form to the selected q79 carrier is isolated.",
+  "abstract": "We extract the exact geometry of closure strain from earlier Standard-Model interpretations. For an invertible rank-three comparison field, polar or Iwasawa reduction removes three orientation directions and leaves six strain directions. With a selected orthonormal flag these split orthogonally into scalar, traceless-diagonal, and shear sectors of dimensions 1+2+3. We give explicit projectors and a norm identity, explain the relation and distinction between symmetric shear and the Heisenberg nil algebra, and state precisely what a closure Hessian proves. In particular, Hessian positivity does not select a unique Higgs, three families, Standard Model charges, confinement, mixing, or CP violation. Those identifications require representation, connection, action, and source theorems. Current q79 and finite-algebra calculations are incorporated at their declared profile-equivalence tier, and the q79-side finite bridge is sharpened: one universal flat differential line commutes with the 1+2+3 lane projectors and lifts the normalized Reynolds Hessian exactly. This closes connection/holonomy and Hessian naturality at finite-symbol tier. The same-source continuum intertwiner from the local strain normal form to the nonzero-Chern physical HYM carrier remains isolated and open.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v6",
+  "current_version": "v7",
   "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.19535510",
@@ -32,22 +32,22 @@
     "updated": "2026-04-12T10:25:14.934705+00:00",
     "version": "v5.0"
   },
-  "main_tex_sha256": "374634f40a1898c6c48759356955e2a616980c295d5b05b1f6b08774f7da04f2",
+  "main_tex_sha256": "74d3c373eb93296f354425a22f027fbbbb04e4ac225f128bf2fb5aa5102037c1",
   "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
-  "paper_md_sha256": "30a8c5a98e795b96c9a0393a2739e272f945337efab917b23aa5e851fe5719fb",
+  "paper_md_sha256": "9b59569ae19c83064fb32b1552c0f71ea434e1f1aa361c91f50cc84f7e3a2232",
   "release_state": "zenodo_released",
   "revision": {
-    "revision_evidence_path": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md",
-    "revision_evidence_sha256": "340f4cb2ee4e5a22a1b008aa1c57109cdd148da74ef36fcec0913ef20dc527b1",
+    "revision_evidence_path": "10 ProtoSpinor/revised_tex_vnext/CLOSURE_STRAIN_V7_SHARED_LINE_REVISION_AUDIT.md",
+    "revision_evidence_sha256": "e2e553d34b273b3d93b7dedd25d7f15c396f1ef995f6dc2c512dfb7bf1a18d0a",
     "selected_revision": true,
     "superseded_source_path": "10 ProtoSpinor/_work/Closure_Strain_Geometry_and_the_Structure_of_the_Standard_Model_v5"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 15516,
+      "bytes": 17925,
       "path": "main.tex",
-      "sha256": "374634f40a1898c6c48759356955e2a616980c295d5b05b1f6b08774f7da04f2"
+      "sha256": "74d3c373eb93296f354425a22f027fbbbb04e4ac225f128bf2fb5aa5102037c1"
     },
     {
       "bytes": 4221,
@@ -56,10 +56,10 @@
     }
   ],
   "source_provenance": {
-    "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/Closure_Strain_Geometry__Local_Normal_Forms_and_Conditional_Matter_Encodings_v6"
+    "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/Closure_Strain_Geometry__Local_Normal_Forms_and_Conditional_Matter_Encodings_v7"
   },
-  "source_tree_sha256": "521fc125ca9639ae8b72d5d93067f9a21c5d4768cece99a2f2fede1074d4e479",
-  "title": "Closure-Strain Geometry: Local Normal Forms and Conditional Matter Encodings Corrected sixth edition",
+  "source_tree_sha256": "b0da83510f1ef23360b9ea33b82c92d140a525fe2500faae772b7febe0306976",
+  "title": "Closure-Strain Geometry: Local Normal Forms and Conditional Matter Encodings Corrected seventh edition",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {

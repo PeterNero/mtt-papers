@@ -1,12 +1,12 @@
 {
-  "abstract": "We show that gravitationally induced collapse in the sense of Penrose and the Di\u00f3si\u2013Penrose (DP) model arises as a controlled effective limit of coherence breakdown in Modal Triplet Theory (MTT). Starting from projected coherent-sector dynamics, we derive a reduced nonunitary evolution whose leading contribution in a curvature-dominated regime reduces to a Newtonian double-commutator kernel of DP type, yielding the collapse timescale \\tau \\sim \\hbar/E_G. We then prove that this regime is nongeneric: outside it, projection-induced reduced dynamics necessarily exhibits additional structure, including finite-strength threshold (knee) behavior, protocol dependence, and Zeno/anti-Zeno crossovers. We establish no-go results showing that gravity-only collapse generators depending solely on mass density cannot reproduce this structure without introducing state-dependent stabilization variables equivalent to a projection\u2013basin mechanism. Finally, we formulate cross-sector closure: the parameters governing the reduced collapse dynamics are tied to the same spectral\u2013geometric bottlenecks that control gravitational stability and effective field theory under controlled truncation. These results identify Penrose/DP collapse as a valid shadow law in a restricted universality class, but not a fundamental principle.",
+  "abstract": "This corrected successor proves a Penrose-Schoenberg completion theorem. The selected Einstein/TEGR static constraint gives the regulated Newton self-energy as one half of a squared Green-Hilbert distance. Its pairwise matrix is conditionally negative definite, so exp(-t E_G/hbar) is a CPTP pure-dephasing semigroup whose generator is exactly the regulated Diosi-Penrose double commutator. This closes positivity and Markovian completion, while leaving the external smearing, effective Newton scale, exact MTT rate-selection identity, controlled environmental limit, and objective outcome instrument as explicit source obligations.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v3",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261599",
     "created": "2026-01-15T19:35:24.245991+00:00",
@@ -32,32 +32,45 @@
     "updated": "2026-01-15T19:35:24.913129+00:00",
     "version": "v1.0"
   },
-  "main_tex_sha256": "b729be7593163f5782f4bdc41fd3772fd1093b17385f185268d63afef86d04e2",
+  "main_tex_sha256": "16111263ce94fdfa4cf9f57a4ab6bd80bdeb32e7fd55df158ef11691bd4eab3e",
   "paper_id": "gravitationally-induced-collapse-as-an-effective-limit-d74eb471",
-  "paper_md_sha256": "8070155fdd71dc4e097af65682b3cfca6c9d8c38588d3fd0bc5b487bb87298ee",
+  "paper_md_sha256": "50f570c2cd2a4e58c66ee554471701793851fda1f8c91a87a9342504e2c3486f",
   "release_state": "zenodo_released",
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/gravitationally-induced-collapse-as-an-effective-limit-d74eb471/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "26a6cc596994141e9586d7831f99b6c6e5849e43874c5714d3299cd3b46e8b5f",
+    "selected_revision": true,
+    "superseded_source_path": "6 Quantum Mechanics/_work/Gravitationally_Induced_Collapse_as_an_Effective_Limit_of_Coherence_Breakdown_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 36841,
+      "bytes": 26934,
       "path": "main.tex",
-      "sha256": "b729be7593163f5782f4bdc41fd3772fd1093b17385f185268d63afef86d04e2"
+      "sha256": "16111263ce94fdfa4cf9f57a4ab6bd80bdeb32e7fd55df158ef11691bd4eab3e"
+    },
+    {
+      "bytes": 4237,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "26a6cc596994141e9586d7831f99b6c6e5849e43874c5714d3299cd3b46e8b5f"
     },
     {
       "bytes": 4186,
       "path": "series.sty",
       "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+    },
+    {
+      "bytes": 5058,
+      "path": "verify_penrose_schoenberg_completion.py",
+      "sha256": "a00bcf80d9653d0b889518280f9a3b7447bb6da8b2fc083c2eea1303afdb690c"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "6 Quantum Mechanics/_work/Gravitationally_Induced_Collapse_as_an_Effective_Limit_of_Coherence_Breakdown_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "7a30e12a4d46499616b7fa59934f8d3d4983f661ba2998e62a972685cd86e9df",
-  "title": "Gravitationally Induced Collapse as an Effective Limit of Coherence Breakdown in Modal Triplet Theory",
-  "version_relation": "matches_latest_release",
+  "source_tree_sha256": "4fc9f24fc0fb99bc68b5a907f7b5fd22771bf1825cf5b5f31499b282bede168d",
+  "title": "Gravitationally Induced Collapse in Modal Triplet Theory: A Penrose-Schoenberg Completion and Source Contract",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18261599",

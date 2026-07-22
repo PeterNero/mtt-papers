@@ -37,6 +37,13 @@ The old grouped tree remains migration provenance only. New paper work should
 begin here and update an existing stable paper directory rather than create a
 new topical group.
 
+Projects listed under `native_projects` in `config/migration.json` are authored
+directly in this flat repository and are preserved when the legacy corpus is
+rebuilt. This is the path both for new works and for canonical successors that
+must not recreate the old grouped authoring tree. A successor declares its
+`superseded_project` and repository-local `revision_evidence`; migration then
+excludes the legacy source while preserving its publication lineage.
+
 ## Rebuild
 
 ```powershell

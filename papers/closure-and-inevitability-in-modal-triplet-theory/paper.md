@@ -1,140 +1,339 @@
 ---
 abstract: |
-  Modal Triplet Theory (MTT) has been developed across a corpus of technical papers establishing the emergence of quantum mechanics, quantum field theory, spacetime geometry, irreversibility, and cosmology from a common projection-based architecture. While these results are rigorous and mutually consistent, their logical necessity has remained distributed across multiple constructions and realizations.
-
-  This paper provides conceptual closure to the MTT corpus. We extract the minimal structural axioms implicit throughout the theory, identify the invariant admissibility margin governing all effective descriptions, and state a single obstruction theorem from which irreversibility, probability, universality, and geometric response follow as unavoidable consequences. No new dynamics, degrees of freedom, or assumptions are introduced.
-
-  The goal is deliberately hybrid in tone: mathematically conservative, but conceptually explicit. The results summarized here were not postulated at the outset of MTT; they were forced upon the theory by its own internal consistency. This paper makes that inevitability visible.
+  This paper replaces the former claim that a single projection obstruction makes the observed form of physics inevitable. Projection, recovery, autonomous descent, effective merger, stochastic reduction, locality, and physical realization are different mathematical questions and require different hypotheses. We give a typed closure map for these questions. An autonomous reduced evolution exists exactly when upper evolution preserves the fibers of the initial reduction. An effective merger prevents recovery of the prior effective state, while noninjectivity of a cross-level map prevents exact upper decoding but does not prevent representative selection. A stochastic reduced kernel requires an upper probability measure and disintegration; stationary mixing supplies a conditional correlation law but does not select Born weights. Microcausality descends only for a local upper net under fiberwise compatible compression. Fixed-point robustness, complex Hilbert structure, Born probabilities, Einstein dynamics, and entropy normalization consequently remain separate theorem targets. The result is a conditional dependency theorem for the Modal Triplet Theory corpus, not an inevitability theorem.
 author:
 - Peter Nero
-current_version: v1.0
-date: January 2026
-generated_from_main_tex_sha256: c3be32592beef37d6dd484023cd1e1d094e8d782e9997fdb6b733f3c0963c8c4
+current_version: v2
+date: July 2026
+generated_from_main_tex_sha256: eeaf6c8d03c4400bcf85e69e749229d06769cbbbf0fd3dac515ef6680d2b6ec4
 paper_id: closure-and-inevitability-in-modal-triplet-theory
 release_state: zenodo_released
 released_version: v1.0
-title: Closure and Inevitability in Modal Triplet Theory
+title: Conditional Closure Relations in Modal Triplet Theory
 zenodo_doi: 10.5281/zenodo.18255511
 zenodo_record_id: 18255511
 zenodo_url: "https://zenodo.org/records/18255511"
 ---
 
-# Motivation: Why Closure Is Needed
+# Revision note for this edition
 
-The Modal Triplet Theory corpus establishes a wide range of results, including:
+Supersedes.  
+Version 1, *Closure and Inevitability in Modal Triplet Theory*.
 
-- the existence of coherent fixed points under projection,
+Reason.  
+Version 1 conflated a right section, a left decoder, autonomous descent, and reversal of effective time evolution. It then inferred probability, Hilbert structure, gravity, horizons, and entropy from that conflation.
 
-- robustness and universality under controlled truncation,
+Resolution.  
+Version 2 withdraws the single obstruction and replaces it with separately typed projection, measure, locality, stability, and physical realization statements.
 
-- the emergence of Hilbert-space quantum mechanics and Born statistics,
+Retained result.  
+Projection and admissibility remain useful organizers of the corpus, and effective descriptions can lose distinctions present in an upper description.
 
-- quantum field theory as a statistical effective description,
+Remaining boundary.  
+Born weights, complex Hilbert structure, complete QFT reconstruction, gravitational normalization, horizon entropy, and a physical arrow of time require independent source and realization theorems.
 
-- spacetime geometry and gravity as consistency bookkeeping,
+# Scope: closure as a dependency map
 
-- horizons, entropy, and irreversibility as structural phenomena.
+The earlier edition proposed one “projection–admissibility obstruction” and presented several physical structures as unavoidable consequences. That central theorem is withdrawn. Its failure is a type error: choosing one preimage, recovering the actual preimage, evolving an equivalence class, and reversing an effective dynamics are not the same operation.
 
-Each of these results is derived with explicit technical assumptions and rigorous control. What has remained implicit, however, is the sense in which these phenomena are not optional. They are not separate constructions stitched together by interpretation; they are consequences of a single structural fact shared by all effective physical descriptions in the theory.
+The corrected purpose of this paper is narrower and more useful. It records which conclusions follow from which hypotheses, and it identifies where an additional theorem is required. In this sense, *closure* means a closed logical dependency graph. It does not mean that every node in the graph has already been derived from a common axiom set.
 
-The purpose of the present paper is to make that structure explicit. We do not modify Modal Triplet Theory. We identify the minimal assumptions it already uses and show why, once they are accepted, the qualitative form of observed physics cannot be otherwise.
+No probability, entropy, geometry, complex scalar field, or physical time is inferred below from a bare map of sets. Whenever a result is topological, metric, measure-theoretic, or operator-algebraic, its hypotheses are stated in that category.
 
-# Levels of Description
+# Typed projection and evolution data
 
-All results in the MTT corpus rely on a separation between two levels of description.
+Let $`A`$ be an admissible upper state domain and let
+``` math
+\Phi_t:A\longrightarrow X_t
+```
+be an upper evolution. Invertibility of $`\Phi_t`$ is not required for the typing results in this section. Let
+``` math
+P_0:A\longrightarrow Y_0,
+  \qquad
+  P_t:\Phi_t(A)\longrightarrow Y_t
+```
+be surjective reductions onto their declared effective images, and set
+``` math
+T_t=P_t\circ\Phi_t:A\longrightarrow Y_t.
+```
+The initial effective equivalence relation is
+``` math
+x\sim_0x'
+  \quad\Longleftrightarrow\quad
+  P_0(x)=P_0(x').
+```
 
-1.  **Fundamental configuration space.** A high-dimensional space equipped with deterministic, invertible dynamics.
+<div class="definition">
 
-2.  **Effective observable description.** A reduced description obtained via projection, truncation, or coarse-graining, defined only on a restricted admissible domain.
+**Definition 1** (Representative section). A representative section is a map $`S_t:Y_t\to A`$ satisfying
+``` math
+T_t\circ S_t=\operatorname{id}_{Y_t}.
+```
+It selects one compatible upper representative for each attained final effective state.
 
-Observable physics is never identified with the full configuration space, but with equivalence classes defined by a noninjective mapping. This structural fact is the origin of all subsequent phenomena.
+</div>
 
-# Minimal Axioms
+<div class="definition">
 
-The following axioms are not new. Each appears explicitly or implicitly throughout the MTT literature.
+**Definition 2** (Exact upper decoder). An exact upper decoder is a map $`D_t:T_t(A)\to A`$ satisfying
+``` math
+D_t\circ T_t=\operatorname{id}_{A}.
+```
+It recovers the actual upper input, not merely a compatible representative.
 
-#### Axiom A1 (Invertible Fundamental Dynamics).
+</div>
 
-The fundamental evolution on the configuration space is deterministic and invertible.
+<div class="definition">
 
-#### Axiom A2 (Noninjective Projection).
+**Definition 3** (Autonomous reduced evolution). An autonomous reduced evolution is a map $`F_t:Y_0\to Y_t`$ satisfying
+``` math
+F_t\circ P_0=P_t\circ\Phi_t.
+```
 
-Observable states are defined via a projection from the configuration space that identifies multiple microscopic configurations.
+</div>
 
-#### Axiom A3 (Admissible Domain).
+<div class="definition">
 
-There exists a nonempty domain on which the projection-based effective description is stable and predictive.
+**Definition 4** (Effective merger). If $`F_t`$ exists, an effective merger is a pair $`y\ne y'`$ in $`Y_0`$ for which $`F_t(y)=F_t(y')`$.
 
-#### Axiom A4 (Finite Admissibility Margin).
+</div>
 
-Stability of the effective description is controlled by a finite margin that can be exhausted under disturbance.
+The four equations have different domains and different logical gates. They must not be used interchangeably.
 
-No assumption of stochasticity, collapse, fundamental time asymmetry, or additional microscopic dynamics is made.
+# Projection, descent, and recovery
 
-# Coherence Capacity as the Invariant Core
+<div id="thm:typed" class="theorem">
 
-Across the corpus, admissibility is enforced through a collection of technical conditions: spectral gaps, bounded projectors, contractive fixed points, truncation error control, and regularity assumptions. While technically distinct, these conditions all quantify the same underlying resource: the remaining margin by which a projection-based description remains valid.
+**Theorem 5** (Typed descent and recovery). *For the data above:*
 
-We refer to this invariant margin as *coherence capacity*. Coherence capacity is any scalar functional that is strictly positive if and only if all admissibility conditions hold, and that vanishes precisely at admissibility boundaries.
+1.  *A set-theoretic representative section exists when $`T_t`$ is surjective and the relevant choice principle is available. A continuous, measurable, local, smooth, or Lipschitz section requires a theorem in that category.*
 
-Coherence capacity is not an additional dynamical field or observable. It is a diagnostic encoding how much effective description can be supported before projection fails.
+2.  *An exact upper decoder exists if and only if $`T_t`$ is injective, with the decoder defined on $`T_t(A)`$.*
 
-# The Obstruction Theorem
+3.  *An autonomous reduced evolution exists if and only if
+    ``` math
+    \begin{equation}
+      P_0(x)=P_0(x')
+      \quad\Longrightarrow\quad
+      P_t(\Phi_t x)=P_t(\Phi_t x')
+      \label{eq:factor}
+    \end{equation}
+    ```
+    for every $`x,x'\in A`$. When it exists, $`F_t`$ is unique.*
 
-We now state the central inevitability result.
+4.  *If <a href="#eq:factor" data-reference-type="eqref" data-reference="eq:factor">[eq:factor]</a> holds and two distinct initial effective states merge, then no map $`E_t:Y_t\to Y_0`$ can satisfy $`E_t\circ F_t=\operatorname{id}_{Y_0}`$.*
 
-#### Theorem (Projection–Admissibility Obstruction).
+</div>
 
-Assume Axioms A1–A4. If a trajectory of the fundamental dynamics crosses a point where coherence capacity vanishes, then no global measurable right inverse of the effective evolution exists.
+<div class="proof">
 
-#### Interpretation.
+*Proof.* The first statement is the section condition for a surjection. If $`D_tT_t=\operatorname{id}_A`$ and $`T_t(x)=T_t(x')`$, applying $`D_t`$ gives $`x=x'`$. Conversely, an injective $`T_t`$ has an inverse on its image. For the third statement, necessity follows by applying $`F_t`$ to equal initial effective states. If <a href="#eq:factor" data-reference-type="eqref" data-reference="eq:factor">[eq:factor]</a> holds, define
+``` math
+F_t(P_0x):=P_t(\Phi_tx).
+```
+The implication makes this independent of the representative, while surjectivity of $`P_0`$ gives existence and uniqueness. Finally, if $`F_t(y)=F_t(y')`$ and $`E_tF_t`$ were the identity, then applying $`E_t`$ would give $`y=y'`$, contradicting the merger assumption. ◻
 
-Although the fundamental dynamics remains invertible, the effective observable evolution becomes noninvertible once admissibility is lost. This noninvertibility is structural: it follows from projection and finite capacity, not from randomness, noise, or information destruction.
+</div>
 
-# Inevitable Consequences
+<div class="corollary">
 
-The obstruction theorem yields, without further assumptions:
+**Corollary 6** (Fiber splitting). *If there are $`x,x'\in A`$ with $`P_0(x)=P_0(x')`$ but $`P_t(\Phi_tx)\ne P_t(\Phi_tx')`$, then no autonomous reduced map $`F_t`$ exists on the declared state space $`Y_0`$.*
 
-1.  **Irreversibility:** effective time evolution cannot be globally reversed once admissibility boundaries are crossed.
+</div>
 
-2.  **Probability:** outcomes are weighted by basin measures over admissible preimages.
+<div class="corollary">
 
-3.  **Universality:** observable physics depends only on coarse control data, not on microscopic realization.
+**Corollary 7** (Merger and effective recovery). *An effective merger obstructs unique recovery of the prior effective state. It does not, by itself, obstruct selection of a compatible upper representative for a final state.*
 
-4.  **Hilbert-space structure:** linear state spaces and operator algebras arise as bookkeeping devices for ensemble statistics.
+</div>
 
-5.  **Geometry and gravity:** spatial variation of admissibility margins induces a geometric response equivalent to Einstein gravity at leading order.
+<div class="example">
 
-6.  **Horizons and entropy:** capacity bottlenecks enforce information loss and area-scaling entropy.
+**Example 8** (Why noninjectivity is insufficient). The projection
+``` math
+r:\mathbb R^2\to\mathbb R,
+  \qquad r(x,z)=x,
+```
+is noninjective, but $`s(x)=(x,0)`$ satisfies $`r\circ s=\operatorname{id}_{\mathbb R}`$. Thus noninjectivity rules out recovery of the actual pair $`(x,z)`$ from $`x`$; it does not rule out choosing one pair above each $`x`$.
 
-These phenomena are not separate postulates. They are manifestations of the same structural obstruction.
+</div>
 
-# Universality Classes and Breakdown Modes
+There is a valid no-section result when the map is a reduced self-map and its image is provably too small. For example, let $`(Y,d)`$ have finite diameter $`D>0`$ and let $`G:Y\to Y`$ obey
+``` math
+d(Gy,Gy')\leq \kappa d(y,y')+c\varepsilon,
+  \qquad 0\leq\kappa<1.
+```
+Then $`\operatorname{diam}G(Y)\leq\kappa D+c\varepsilon`$. If $`(1-\kappa)D>c\varepsilon`$, the map is not surjective and therefore has no section $`S:Y\to Y`$ with $`GS=\operatorname{id}_Y`$. This metric theorem does not apply to $`T_t:A\to Y_t`$ merely because $`T_t`$ is noninjective.
 
-Modal Triplet Theory does not claim universality beyond admissible regimes. Breakdown occurs in structured and classifiable ways, including spectral gap closure, loss of projector regularity, violation of contractivity, and exhaustion of coherence capacity.
+# Admissibility is a vector of declared gates
 
-Each breakdown mode corresponds to a distinct failure of effective description and determines which results survive and which fail. This structure explains both the power and the limits of effective physical laws.
+Let $`m_1,\ldots,m_N`$ be continuous margins and define
+``` math
+A_t^\delta
+  =\{x:m_j(t,x)\geq\delta\text{ for every }j\}.
+```
+The margins may encode domain control, spectral separation, complementary damping, leakage, contraction, truncation error, section conditioning, or hyperbolicity. First exit from $`A_t^0`$ says only that at least one declared condition has failed. The failed component must be identified before a conclusion is drawn.
 
-# What This Theory Does Not Claim
+A scalar such as
+``` math
+C(t,x)=\min_j \frac{m_j(t,x)}{s_j},
+  \qquad s_j>0,
+```
+can summarize a chosen normalized list of margins. Its value depends on the list, scales, and aggregation rule. It is therefore a useful diagnostic, not a universal invariant “coherence capacity” unless a realization proves independence from those choices.
 
-For clarity, we emphasize that Modal Triplet Theory:
+Loss of an admissibility margin does not automatically select a successor state, create a probability law, or establish a physical singularity. One must stop the reduced description, derive continuation from the upper dynamics, or supply a typed reset or boundary law with its own consistency proof.
 
-- does not modify the predictions of quantum mechanics or quantum field theory within their domains of validity,
+# Measure-dependent stochastic reduction
 
-- does not introduce new fundamental forces or particles,
+Projection does not create a probability measure. Let $`A,Y_0,Y_t`$ be standard Borel spaces, let $`P_0`$ be measurable, and let $`\mu`$ be a probability measure on $`A`$. Write $`\{\mu_y\}`$ for a regular conditional distribution of $`x`$ given $`P_0(x)=y`$.
 
-- does not violate unitarity of the fundamental dynamics,
+<div id="thm:kernel" class="theorem">
 
-- does not claim uniqueness of microscopic realization.
+**Theorem 9** (Conditional reduced kernel). *For every measurable $`B\subseteq Y_t`$, define
+``` math
+K_t(y,B)
+  :=\mu_y\bigl(\{x:P_t(\Phi_tx)\in B\}\bigr).
+```
+Then $`K_t`$ is a Markov kernel from $`Y_0`$ to $`Y_t`$, up to $`(P_0)_\#\mu`$-null sets. If autonomous descent holds, then
+``` math
+K_t(y,\cdot)=\delta_{F_t(y)}
+```
+for almost every $`y`$.*
 
-MTT explains why familiar theories arise and why they fail, not how to replace them with new dynamics.
+</div>
+
+<div class="proof">
+
+*Proof.* Regular conditional distributions exist on standard Borel spaces. Measurability and countable additivity pass through the measurable preimage in the definition of $`K_t`$. Under descent, $`P_t\Phi_tx=F_t(P_0x)`$ is constant on each conditional fiber, so the conditional law is a point mass. ◻
+
+</div>
+
+Mixing and invariance sharpen this construction without selecting its measure. Suppose now that $`P_0=P_t=P`$, that $`\Phi_t`$ preserves $`\mu`$, and put $`\nu=P_\#\mu`$. Then
+``` math
+\begin{equation}
+ \int_C K_t(y,D)\,\nu(\mathrm dy)
+ =\mu\bigl(P^{-1}(C)\cap\Phi_t^{-1}(P^{-1}(D))\bigr)
+ \label{eq:mixing}
+\end{equation}
+```
+for measurable $`C,D\subseteq Y`$. If $`\Phi_t`$ is mixing, the right-hand side tends to $`\nu(C)\nu(D)`$. The projected two-time law is therefore stationary and inherits the mixing limit. It is genuinely stochastic at time $`t`$ only where $`K_t(y,\cdot)`$ is non-Dirac. Moreover, these pairwise kernels need not satisfy the Chapman–Kolmogorov equations unless an additional lumpability or Markov theorem is proved.
+
+Different upper measures on the same projection fibers can give different kernels. Neither fiber cardinality, invariance, nor mixing selects the Born rule. A Born-weight result must identify the physical state/measure and prove the quadratic weight functional independently.
+
+# Locality under compatible compression
+
+Let $`\pi:M\to Y`$ be a physical bundle and let
+``` math
+P=\int_Y^{\oplus}P_y\,\mathrm d\nu(y)
+```
+be a decomposable fiberwise projector. Suppose $`O\mapsto\mathcal A_M(\pi^{-1}O)`$ is an isotonic upper local net. Define
+``` math
+\mathcal A_M^P(O)
+  =\{A\in\mathcal A_M(\pi^{-1}O):[A,P]=0\}
+```
+and
+``` math
+\mathcal A_Y(O)
+  =\{PAP|_{\operatorname{Ran}P}:A\in\mathcal A_M^P(O)\}.
+```
+
+<div id="thm:locality" class="theorem">
+
+**Theorem 10** (Locality descent). *The compressed net $`\mathcal A_Y`$ is isotonic. If upper observables assigned to spacelike separated base regions commute, then their compatible compressions commute. Hence microcausality descends on the $`P`$-compatible subalgebra.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Upper inclusion gives compressed inclusion. For $`[A,P]=[B,P]=0`$,
+``` math
+[PAP,PBP]|_{\operatorname{Ran}P}
+ =P[A,B]P|_{\operatorname{Ran}P},
+```
+which vanishes whenever the upper commutator vanishes. ◻
+
+</div>
+
+This theorem does not construct the upper local net, prove Lorentz covariance, or imply factorization of states. A projector nonlocal over the base, or an observable that does not preserve $`\operatorname{Ran}P`$, lies outside its scope.
+
+# Fixed points and conditional universality
+
+Projection equivalence classes alone do not establish universality. A useful local result comes from uniform stability. For instance, let $`G_\lambda`$ be contractions on a common complete invariant domain with constant $`\kappa<1`$, and suppose
+``` math
+\sup_x d(G_\lambda x,G_{\lambda'}x)\leq\eta.
+```
+If $`x_\lambda`$ and $`x_{\lambda'}`$ are their fixed points, then
+``` math
+d(x_\lambda,x_{\lambda'})
+ \leq \frac{\eta}{1-\kappa}.
+```
+This follows by inserting and subtracting $`G_\lambda(x_{\lambda'})`$ and applying the contraction bound. Such estimates support basin-local robustness under a declared perturbation class. They do not prove that every microscopic model flows to the same physical theory.
+
+The corrected MTT Foundation and Fixed Points sequence provide conditional instances of existence, damping, curved-projector continuation, and stability under their stated gap, domain, covariance, and contraction hypotheses. Each instance must still be connected to a selected physical realization before it becomes a physical universality statement.
+
+# The corrected MTT closure map
+
+The present corpus supports the following dependency statements.
+
+Projection and autonomous descent.  
+Theorem <a href="#thm:typed" data-reference-type="ref" data-reference="thm:typed">5</a> supplies the exact factor-through gate. A selected MTT operator must separately prove that its evolution preserves the chosen projection fibers.
+
+Probability and Born weights.  
+Theorem <a href="#thm:kernel" data-reference-type="ref" data-reference="thm:kernel">9</a> constructs a conditional reduced kernel after an upper measure is supplied. The physical measure and the Born quadratic functional are independent source targets; they are not consequences of projection multiplicity.
+
+Complex Hilbert structure.  
+If a realization already acts on a complex Hilbert bundle, coherent compression can inherit that structure. Projection alone does not derive the complex field, inner product, completeness, or the physical observable algebra.
+
+QFT locality.  
+Theorem <a href="#thm:locality" data-reference-type="ref" data-reference="thm:locality">10</a> preserves isotony and microcausality for a compatible compressed net. It does not by itself supply the net, state, spectrum condition, scattering theory, or renormalized dynamics.
+
+Gravity.  
+The current q79 proof corpus contains a conditional composition in which one discrete physical-realization declaration $`A_{\mathrm{QG}}`$, one binary causal boundary mark $`A_{\mathrm{causal}}`$, a selected global comparison field, and a same-source metric-factorization rule give a global Lorentzian coframe and the TEGR/Einstein two-derivative bulk class. This is not a consequence of projection alone. The gravitational normalization and cosmological term remain independent open coordinates.
+
+Irreversibility and temporal direction.  
+Effective merger prevents recovery of a prior effective state. A physical arrow additionally requires an oriented evolution and an asymmetric condition such as a semigroup law, a monotone functional, or boundary data. The binary causal representative does not by itself derive a thermodynamic arrow.
+
+Horizons and entropy.  
+Exterior restriction can discard distinctions, but horizon entropy requires a specified state, entropy functional, dynamics, and normalization theorem. Area scaling is not a map-theoretic corollary.
+
+Thus the corrected closure statement is conditional: several mechanisms can be composed when their interfaces and source data are proved. Their mere presence in one interpretive architecture does not collapse them into one theorem.
+
+# Changes from Version 1
+
+Version 2 makes the following substantive changes.
+
+1.  It retitles the work to remove the unsupported claim of physical inevitability.
+
+2.  It withdraws the former Projection–Admissibility Obstruction and all corollaries that depended on it alone.
+
+3.  It replaces the old obstruction by the typed descent-and-recovery Theorem <a href="#thm:typed" data-reference-type="ref" data-reference="thm:typed">5</a>.
+
+4.  It replaces the proposed universal scalar coherence capacity by a declared vector of admissibility margins; scalar aggregation is explicitly normalization dependent.
+
+5.  It derives a reduced stochastic kernel only after measure and disintegration data are supplied, and distinguishes this from Born-weight selection.
+
+6.  It states the exact compatibility hypotheses under which locality descends through compression.
+
+7.  It records fixed-point robustness, Hilbert structure, QFT completion, gravity, temporal direction, and entropy as separate conditional branches.
+
+8.  It updates the gravity branch to the present q79 conditional $`A_{\mathrm{QG}}+A_{\mathrm{causal}}`$ tier while retaining the open normalization boundary.
 
 # Conclusion
 
-The Modal Triplet Theory corpus already contains a unifying structural result: effective physics exists only while projection remains admissible under a finite coherence capacity. When this capacity is exhausted, irreversibility, probability, and breakdown are unavoidable.
+Projection is a powerful structural operation, but it is not a generator of all physical law. It defines fibers, can obstruct exact recovery, and—when fiber preservation holds—supports autonomous descent. Measures and disintegration produce conditional stochastic laws. Compatible compression can preserve locality. Stability estimates can establish controlled universality. None of these conclusions licenses the others without their additional hypotheses.
 
-This paper provides closure by making that structure explicit. Modal Triplet Theory is not merely a framework for reconstructing known physics; it is a demonstration that once projection and finite admissibility are admitted, the observed form of physics is inevitable.
+The resulting MTT program is more sharply testable than the inevitability claim it replaces. For each proposed physical reconstruction, the remaining task is explicit: identify the upper object, prove descent through the selected projection, provide any required measure or boundary data, and verify the physical normalization. Conditional closure is achieved when that chain is complete and auditable.
 
-The theory does not tell us what the world fundamentally *is*. It tells us why any stable, local, and predictive description of the world must take the form we observe.
+<div class="thebibliography">
 
-Physics is not the dynamics of the world. It is the dynamics of what remains observable.
+9
+
+P. Nero, *The Projection–Admissibility Principle: Descent, Recovery, and Structural Constraints on Effective Description*, version 2, 2026.
+
+P. Nero, *Modal Triplet Theory: Foundation*, version 7, 2026.
+
+P. Nero, *Fixed Points I–VI*, corrected editions, 2026.
+
+P. Nero, *q79 Selected Lorentzian Coframe and Causal Representative Closure*, technical theorem packet, 2026.
+
+</div>

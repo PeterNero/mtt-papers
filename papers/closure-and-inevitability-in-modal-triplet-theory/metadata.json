@@ -1,12 +1,12 @@
 {
-  "abstract": "Modal Triplet Theory (MTT) has been developed across a corpus of technical papers establishing the emergence of quantum mechanics, quantum field theory, spacetime geometry, irreversibility, and cosmology from a common projection-based architecture. While these results are rigorous and mutually consistent, their logical necessity has remained distributed across multiple constructions and realizations. This paper provides conceptual closure to the MTT corpus. We extract the minimal structural axioms implicit throughout the theory, identify the invariant admissibility margin governing all effective descriptions, and state a single obstruction theorem from which irreversibility, probability, universality, and geometric response follow as unavoidable consequences. No new dynamics, degrees of freedom, or assumptions are introduced. The goal is deliberately hybrid in tone: mathematically conservative, but conceptually explicit. The results summarized here were not postulated at the outset of MTT; they were forced upon the theory by its own internal consistency. This paper makes that inevitability visible.",
+  "abstract": "This paper replaces the former claim that one projection obstruction makes the observed form of physics inevitable. It gives a typed dependency map separating representative selection, exact decoding, autonomous descent, effective merger, measure-dependent stochastic reduction, locality under compatible compression, fixed-point robustness and physical realization. Born weights, complex Hilbert structure, complete QFT reconstruction, gravitational normalization, entropy and a physical arrow of time remain independent theorem targets.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18255510",
     "created": "2026-01-15T10:40:40.064824+00:00",
@@ -32,19 +32,27 @@
     "updated": "2026-01-15T10:40:40.705425+00:00",
     "version": "v1.0"
   },
-  "main_tex_sha256": "c3be32592beef37d6dd484023cd1e1d094e8d782e9997fdb6b733f3c0963c8c4",
+  "main_tex_sha256": "eeaf6c8d03c4400bcf85e69e749229d06769cbbbf0fd3dac515ef6680d2b6ec4",
   "paper_id": "closure-and-inevitability-in-modal-triplet-theory",
-  "paper_md_sha256": "e03ae15753cebacf865421c792e59d7d990bee2633075e88392b0f9b00f33992",
+  "paper_md_sha256": "7b84b11fe269f6e5b4d0ce5923f18e9d262618e171ec72f9b755542c7eea55e7",
   "release_state": "zenodo_released",
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/closure-and-inevitability-in-modal-triplet-theory/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "9ee1867308dd650db1ecaac429f9c9cac2291dfec496abdf63317d12203e95ba",
+    "selected_revision": true,
+    "superseded_source_path": "2 Meta & Diagnosis & Universality/_work/Closure_and_Inevitability_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 8462,
+      "bytes": 18492,
       "path": "main.tex",
-      "sha256": "c3be32592beef37d6dd484023cd1e1d094e8d782e9997fdb6b733f3c0963c8c4"
+      "sha256": "eeaf6c8d03c4400bcf85e69e749229d06769cbbbf0fd3dac515ef6680d2b6ec4"
+    },
+    {
+      "bytes": 6539,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "9ee1867308dd650db1ecaac429f9c9cac2291dfec496abdf63317d12203e95ba"
     },
     {
       "bytes": 4186,
@@ -55,9 +63,9 @@
   "source_provenance": {
     "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Closure_and_Inevitability_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "5e3d38c81a176647a143852ce1f0b5424e1dc95cacb1c33ad14390cd294e1810",
-  "title": "Closure and Inevitability in Modal Triplet Theory",
-  "version_relation": "matches_latest_release",
+  "source_tree_sha256": "1645fd7bb63dce868251e2451158327367da6f8d8115cb0bec300694415d1b4b",
+  "title": "Conditional Closure Relations in Modal Triplet Theory",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18255510",

@@ -1,12 +1,12 @@
 {
-  "abstract": "We give a fully constructive result for the transverse\u2013traceless (TT) graviton sector of Modal Triplet Theory (MTT) under the spectral proper\u2013time (SPT) damping mechanism. Assuming bounded geometry on a finite time slab (or bounded coordinate domain), we use a completely monotone proper\u2013time filter with a positive proper\u2013time gap \\tau_0>0 to define a filtered covariance C satisfying a Gaussian ultraviolet bound \\widehat C(k)\\lesssim e^{-\\tau_0|k|^2}/(|k|^2+\\lambda_\\ast). For local analytic interactions (including finite truncations of the TT-expanded Einstein\u2013Hilbert density), we prove existence of the Euclidean functional integral, analyticity in a cardioid domain, and Borel summability of connected Schwinger functions via the Loop Vertex Expansion (BKAR forest formula) and a Nevanlinna\u2013Sokal remainder bound. This provides a nonperturbative definition (via Borel sum) of the SPT-filtered TT sector and supplies the constructive core needed for a fully UV-controlled treatment of the physical TT sector within the MTT quantum gravity framework.",
+  "abstract": "This corrected successor separates existence of the SPT-filtered Gaussian measure, finite-cutoff Borel summability, and removal of the cutoff. A positive proper-time gap makes the bounded-volume covariance trace class and gives all finite Sobolev moments. Nonnegative quartic finite-mode interactions are Borel summable with an exact positive-ray Borel-Laplace representation, and weighted convergence of Borel transforms is proved sufficient for cutoff removal. Selection and stability of the gravitational interaction, uniform constructive bounds, the physical removal limit, and BRST/BV reconstruction remain explicit gates.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2025",
+  "current_version": "v2",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18209683",
     "created": "2026-01-10T21:20:37.281095+00:00",
@@ -32,24 +32,32 @@
     "updated": "2026-01-10T21:20:37.595169+00:00",
     "version": "v1.0"
   },
-  "main_tex_sha256": "396c64bf6dd2bde70a0c93ae948a9e31e3a010fc9666debee05888e58b8a8dd8",
+  "main_tex_sha256": "aa82b60175fea01f25a1a8544d7c4ab24ca53678ffcef4c470952c196f8cbf62",
   "paper_id": "constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014",
-  "paper_md_sha256": "1ef0dc869fdaa34bfe9ddba364301207921e0e826f9b8373dc58dd1561cd543b",
+  "paper_md_sha256": "fa88553a173158eaf51e95cc227ef2df3a6f5d52632b3011e47d308af820f28e",
   "release_state": "zenodo_released",
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "ae73e21640e39f76b8d054fbd2291971862fa938e29a74cc47518d048083b72f",
+    "selected_revision": true,
+    "superseded_source_path": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_I__Borel_Summability_of_the_SPT_Filtered_TT_Sector"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 26066,
+      "bytes": 16328,
       "path": "main.tex",
-      "sha256": "396c64bf6dd2bde70a0c93ae948a9e31e3a010fc9666debee05888e58b8a8dd8"
+      "sha256": "aa82b60175fea01f25a1a8544d7c4ab24ca53678ffcef4c470952c196f8cbf62"
     },
     {
       "bytes": 1031,
       "path": "refs.bib",
       "sha256": "b2ef3d7c778a09ec27f2d7eaa7a6ae234105a3a69d50d61a172fc73c9bb86ccf"
+    },
+    {
+      "bytes": 2755,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "ae73e21640e39f76b8d054fbd2291971862fa938e29a74cc47518d048083b72f"
     },
     {
       "bytes": 15705,
@@ -60,9 +68,9 @@
   "source_provenance": {
     "legacy_source_path": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_I__Borel_Summability_of_the_SPT_Filtered_TT_Sector"
   },
-  "source_tree_sha256": "66121fd36f8b510c27c16c5708bc452677f0493775d329bdfad66459868502fe",
-  "title": "Constructive MTT Quantum Gravity I: Borel Summability of the SPT-Filtered TT Sector",
-  "version_relation": "matches_latest_release",
+  "source_tree_sha256": "769e83ffe4f6648ded68f0aa2b532b4973e8cdf662f5acd7441c7d2f2de08e9b",
+  "title": "Constructive MTT Quantum Gravity I: Finite-Volume SPT Gaussian Control and a Conditional Borel-Summability Contract",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18209683",

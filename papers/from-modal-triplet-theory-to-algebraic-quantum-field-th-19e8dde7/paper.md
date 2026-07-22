@@ -1,402 +1,373 @@
 ---
 abstract: |
-  Algebraic quantum field theory (AQFT) provides a formulation of quantum field theory in which physical content is encoded in a net of local observable algebras, without reference to a global Hilbert space or preferred coordinates. While this framework captures locality and causal structure in a robust, representation-independent manner, it typically assumes a background spacetime and a prescribed notion of localization.
-
-  In this paper, we show that an AQFT-style net structure arises naturally within Modal Triplet Theory (MTT) as a consequence of admissibility, coherent projection, and basin stability. Starting from admissible chart families and their overlap structure, we construct local observable algebras associated with admissible domains and demonstrate that these algebras assemble into a net (precosheaf) satisfying isotony, locality, and the absence of a global algebra. No background spacetime, fundamental causal order, or global section is assumed.
-
-  The resulting algebraic structure is not postulated but induced by representability constraints intrinsic to MTT. In this sense, AQFT appears as a downstream encoding of admissible chart structure rather than as a foundational axiom system. The construction clarifies the structural origin of locality, horizon phenomena, and the breakdown of global descriptions, and situates algebraic quantum field theory within the broader MTT framework.
+  This paper replaces the former claim that algebraic quantum field theory (AQFT) follows from admissible charts alone. Two structures must be kept separate. An admissibility-indexed precosheaf is a pregeometric covariant functor only after its algebras and extension morphisms are supplied; overlap or failure of joint representability does not create commutators or imply locality. A physical Haag–Kastler net instead requires a selected Lorentzian base, an upper local operator net, and a localization-preserving coherent reduction. For a decomposable orthogonal projector $`P`$, we prove that compression of the $`P`$-compatible upper subalgebras preserves isotony and spacelike commutation. This is the rigorous MTT-to-AQFT bridge currently available. We also show why absence of a global admissible chart does not forbid an abstract quasilocal algebra or categorical colimit. It may obstruct a single chart-induced physical realization, but states, faithful representations, horizon behavior, and irreversibility require separate theorems. The result is a conditional locality-descent theorem and a precise ledger of the data still required for a full AQFT reconstruction.
 author:
 - Peter Nero
-current_version: v1.0
-date: January 2026
-generated_from_main_tex_sha256: 6684658a78fef0b3fdf1db8d5d580ff94eb5c4e2405499aed261c6aaa3f08288
+current_version: v2
+date: July 2026
+generated_from_main_tex_sha256: 41cb82cd5d3ee0151f9dbe4bea1d31a19e16c64671dd9c9f2a27450f3e9d00a8
 paper_id: from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7
 release_state: zenodo_released
 released_version: v1.0
 title: |
-  From Modal Triplet Theory to Algebraic Quantum Field Theory  
-  Local Nets from Admissible Charts and Coherent Basin Persistence
+  Admissibility Precosheaves and Conditional AQFT Nets  
+  in Modal Triplet Theory
 zenodo_doi: 10.5281/zenodo.18330770
 zenodo_record_id: 18330770
 zenodo_url: "https://zenodo.org/records/18330770"
 ---
 
-# Introduction
+# Revision note for this edition
 
-Algebraic quantum field theory organizes physical content in terms of local observable algebras associated with spacetime regions, related by inclusion morphisms and compatibility conditions. This net structure provides a powerful and flexible framework for encoding locality, causality, and representation independence, and has proven particularly robust in curved spacetimes and in situations where a preferred vacuum or global Hilbert space is unavailable.
+Supersedes.  
+Version 1, *From Modal Triplet Theory to Algebraic Quantum Field Theory: Local Nets from Admissible Charts and Coherent Basin Persistence*.
 
-At the same time, the AQFT framework typically presupposes a background notion of localization: spacetime regions are taken as primitive, and locality is imposed as an axiom rather than derived. The theory specifies how observables are assigned to regions, but does not address why physical description should be local, partial, or patchwise in the first place. As a result, the net structure, while operationally successful, remains conceptually upstream of an assumed spacetime organization.
+Reason.  
+Version 1 inferred commutation from non-joint representability, assumed extension of every smaller-chart observable, and identified absence of a global chart with absence of an abstract global algebra.
 
-Modal Triplet Theory approaches physical description from a different direction. Rather than postulating spacetime or locality, MTT begins with the observation that coherent projection and stable description are only available on restricted admissible domains. The Fixed-Point series establishes the existence and stability of coherent basins on such domains, together with the absence of a global section selecting consistent descriptions across all admissible regions. Physical description is therefore intrinsically local and conditional: it must be assembled from overlapping partial charts rather than derived from a single global representation.
+Resolution.  
+Version 2 distinguishes the pregeometric chart functor from the physical Haag–Kastler net and bases physical locality on an upper local net plus coherent locality descent.
 
-Recent work has clarified the kinematic implications of this structure. In particular, position and motion can be defined in MTT as properties of how coherent structures persist across overlapping admissible charts, rather than as transport through a background configuration space. Worldlines arise as equivalence classes of chart-relative representations, and their termination corresponds to merge–split events or loss of admissible continuation rather than to breakdown of underlying dynamics. These results make explicit the sense in which physical persistence and irreversibility are consequences of representability constraints.
+Retained result.  
+Admissible charts can index a useful partial algebraic description when their algebra objects and transition morphisms are explicitly given.
 
-The purpose of the present paper is to show that the same admissible chart structure that underlies MTT kinematics also induces an algebraic net of observables in the sense of AQFT. We demonstrate that to each admissible domain one can associate a local observable algebra generated by coherent projection, and that the overlap structure of admissible charts endows these algebras with a natural precosheaf structure. Isotony follows from admissible inclusion, locality from the impossibility of joint representability, and the absence of a global algebra from the no–global–section results of the Fixed-Point theory.
+Open boundary.  
+A selected upper QFT net, state space, covariance, spectrum/positivity, time-slice property, nonperturbative continuum limit, and the chart-to-region intertwiner remain independent obligations.
 
-Importantly, this construction introduces no new physical assumptions. It does not posit a fundamental spacetime, causal order, or global algebraic structure. Instead, it shows that the defining features of algebraic quantum field theory arise as downstream consequences of admissibility, coherent projection, and basin persistence. In this sense, AQFT appears not as an alternative foundation but as an emergent organizational layer within Modal Triplet Theory.
+# Scope and correction of the chart-only argument
 
-The paper is organized as follows. Section 2 reviews the minimal algebraic and categorical notions required from AQFT and summarizes the MTT ingredients used in the construction. Section 3 interprets admissible charts as proto-regions and defines local observable algebras induced by coherent projection. Section 4 establishes the net (precosheaf) structure and derives isotony and overlap consistency. Section 5 analyzes locality and the absence of a global algebra as structural consequences of representability constraints. Section 6 situates the resulting construction relative to standard AQFT formulations and clarifies its scope and limitations. We conclude with a discussion of implications for horizons, irreversibility, and the relationship between kinematics and observables in quantum field theory.
+AQFT assigns algebras to causally localized spacetime regions and relates them by injective algebra morphisms . Locally covariant QFT packages analogous data as a covariant functor on globally hyperbolic spacetimes and causal embeddings . Neither framework obtains Einstein causality merely from the absence of a common coordinate chart.
 
-# Background and Scope
+The former edition tried to derive three conclusions directly from MTT admissible charts:
 
-This section fixes notation and scope. We recall only the minimal algebraic structure required from algebraic quantum field theory and summarize the Modal Triplet Theory ingredients used in the construction. No familiarity with the full Haag–Kastler framework is assumed, and no additional axioms are introduced.
+1.  inclusion of charts was said to extend every observable and hence prove isotony;
 
-## Minimal algebraic structure
+2.  failure of joint representability was said to force commutation; and
 
-Algebraic quantum field theory associates to each spacetime region $`\mathcal{O}`$ a unital $`*`$–algebra $`\mathcal{A}(\mathcal{O})`$ of observables. These algebras are organized into a net, or more precisely a precosheaf, over the poset of regions, satisfying structural properties such as isotony and locality. In this paper we focus on the following minimal features:
+3.  absence of one global chart was said to forbid a global algebra.
 
-- **Local algebras:** To each region $`\mathcal{O}`$ one assigns an algebra $`\mathcal{A}(\mathcal{O})`$ encoding observables accessible within that region.
+All three steps are invalid without additional structure. Extension is a map that must be defined and proved compatible. A commutator is meaningful only after both operands are represented in a common algebra. An abstract inductive limit or colimit need not be represented by any one indexing object.
 
-- **Isotony:** If $`\mathcal{O}_1 \subset \mathcal{O}_2`$, then there is an injective homomorphism
-  ``` math
-  \mathcal{A}(\mathcal{O}_1) \hookrightarrow \mathcal{A}(\mathcal{O}_2).
-  ```
-
-- **Locality:** Observables associated with sufficiently separated regions are compatible or commuting, reflecting the impossibility of joint localization.
-
-- **No global algebra:** In general there is no single algebra encoding all observables across all regions in a manner compatible with locality and isotony.
-
-These properties may be formulated categorically by viewing regions as objects of a poset category and algebras as objects of a target category, with inclusion maps defining morphisms. The resulting assignment defines a precosheaf rather than a sheaf, reflecting the directionality of algebra extension.
-
-In standard AQFT, the regions $`\mathcal{O}`$ are subsets of a background spacetime manifold equipped with causal structure. In the present work, no such background is assumed. Instead, the role of regions will be played by admissible domains arising from Modal Triplet Theory.
-
-## Admissible domains and coherent projection
-
-Modal Triplet Theory is built on the observation that stable and predictive physical description is available only on restricted domains where coherent projection is controlled. These admissible domains are characterized by bounded coherent projectors, uniform spectral separation, and stability under truncated evolution.
-
-Concretely, let $`X`$ denote the modal configuration space representing equivalence classes of slab–local coherent states under controlled projection. An admissible domain $`A \subset X`$ is a subset on which the coherent projector $`\Pi_{\mathrm{coh}}`$ exists and satisfies the bounds required for stable effective description. The truncated evolution
+The corrected construction therefore has three stages:
 ``` math
-T_\tau := \Pi_{\mathrm{coh}} \circ \Phi_\tau
+\begin{aligned}
+ \text{admissibility precosheaf}
+ &\longrightarrow \text{selected Lorentzian upper net}\\
+ &\longrightarrow \text{coherently compressed physical net}.
+\end{aligned}
 ```
-acts contractively on coherent basins supported within such domains.
+The first arrow requires an explicit chart-to-region and algebra intertwiner. The second is the locality-descent theorem proved below.
 
-To each admissible domain $`A_\alpha`$ one associates an effective description
-``` math
-P_\alpha := I \circ \Pi_{\mathrm{coh}}\big|_{A_\alpha},
-```
-where $`I`$ denotes the interpretation map assigning physical meaning to the projected data. A pair $`(A_\alpha, P_\alpha)`$ will be referred to as an admissible chart.
+# The AQFT target
 
-Admissible charts are intrinsically partial. Distinct charts may overlap, and on overlaps their induced descriptions agree only up to controlled error. In general, no single admissible chart covers all of $`X`$, and no global section selecting compatible representatives across all charts exists.
-
-## Overlap structure and representability
-
-The collection of admissible charts carries a natural overlap structure. Two charts $`(A_\alpha, P_\alpha)`$ and $`(A_\beta, P_\beta)`$ are said to overlap if $`A_\alpha \cap A_\beta \neq \varnothing`$ and both projections remain admissible on the intersection. On such overlaps, the induced effective descriptions are compatible in the sense required by truncation control and spectral separation.
-
-This overlap structure plays a role analogous to region inclusion in algebraic quantum field theory. However, it is not defined by geometry but by representability constraints: an overlap exists precisely when a coherent structure may be consistently described in both charts.
-
-The absence of a global admissible chart implies that these overlaps cannot be extended arbitrarily. As a result, the family of admissible charts forms a patchwork of partial descriptions rather than a global atlas. This feature underlies irreversibility, horizon phenomena, and the failure of global observability in Modal Triplet Theory.
-
-## Scope of the construction
-
-In what follows, we show that the admissible chart structure described above induces a net of local observable algebras in direct analogy with AQFT. The construction is local and conditional: all statements hold only on admissible domains and their overlaps, and no global algebraic structure is asserted.
-
-We do not attempt to reconstruct the full Haag–Kastler framework, nor do we address issues of representation theory, vacuum selection, or global covariance. Our aim is narrower and structural: to demonstrate that isotony, locality, and the absence of a global algebra arise inevitably once physical description is constrained to admissible charts with controlled overlaps.
-
-With this background in place, we now proceed to construct local observable algebras associated with admissible domains and to show how their overlap structure induces an algebraic net.
-
-# Local Observable Algebras from Admissible Charts
-
-We now construct the local algebraic objects that will form the net structure. The guiding principle is that observables are not defined globally, but only relative to admissible charts where coherent projection is controlled. The algebraic structure therefore arises from representability rather than from an assumed spacetime localization.
-
-## Observables induced by coherent projection
-
-Let $`(A_\alpha, P_\alpha)`$ be an admissible chart, with
-``` math
-P_\alpha = I \circ \Pi_{\mathrm{coh}}\big|_{A_\alpha}.
-```
-The projected data $`P_\alpha(A_\alpha)`$ supports a family of admissible diagnostics, i.e. functionals that remain stable under truncated evolution and are invariant under admissible reparameterizations.
-
-We define an observable on $`A_\alpha`$ to be any functional $`\mathcal{O}`$ of the projected data satisfying:
-
-- **Admissibility:** $`\mathcal{O}`$ is well-defined on $`P_\alpha(A_\alpha)`$ and stable under controlled perturbations within $`A_\alpha`$.
-
-- **Projection invariance:** $`\mathcal{O}`$ depends only on the coherent projection $`\Pi_{\mathrm{coh}}`$, not on discarded modal directions.
-
-- **Stability:** $`\mathcal{O}`$ remains bounded under iteration of the truncated evolution $`T_\tau = \Pi_{\mathrm{coh}} \circ \Phi_\tau`$ on $`A_\alpha`$.
-
-Typical examples include expectation values of effective fields, spectral diagnostics, localization functionals, and other quantities used in downstream reconstructions. No assumption is made that observables separate points of $`X`$; they separate only those configurations distinguishable under admissible projection.
-
-## Definition of the local algebra
+Let $`(Y,g)`$ be a time-oriented globally hyperbolic Lorentzian spacetime, and let $`\mathcal K(Y)`$ be a chosen poset of relatively compact causally convex open regions. Write $`\mathbf{Alg}`$ for a category of unital $`*`$-algebras (or $`C^*`$-algebras) and unital injective $`*`$-homomorphisms.
 
 <div class="definition">
 
-**Definition 1** (Local observable algebra). Given an admissible chart $`(A_\alpha, P_\alpha)`$, define $`\mathcal{A}(A_\alpha)`$ to be the algebra generated by all admissible observables on $`A_\alpha`$, closed under addition, multiplication, and adjoint where defined.
+**Definition 1** (Physical local net). A local net is a covariant functor
+``` math
+\mathfrak A:\mathcal K(Y)\longrightarrow\mathbf{Alg}.
+```
+For an inclusion $`O_1\subseteq O_2`$, functoriality supplies an injective map $`\iota_{12}:\mathfrak A(O_1)\to\mathfrak A(O_2)`$. Identifying its image with a subalgebra gives isotony,
+``` math
+O_1\subseteq O_2
+ \quad\Longrightarrow\quad
+ \mathfrak A(O_1)\subseteq\mathfrak A(O_2).
+```
 
 </div>
-
-The precise algebraic completion (e.g. norm closure, $`C^*`$–structure) depends on the downstream encoding and is not fixed here. For the present structural analysis, it suffices that $`\mathcal{A}(A_\alpha)`$ forms a unital $`*`$–algebra capturing all observables representable on $`A_\alpha`$.
-
-This algebra encodes all physical information accessible within the chart. Observables outside $`\mathcal{A}(A_\alpha)`$ are not undefined in principle, but are not representable within that admissible domain.
-
-## Restriction and compatibility on overlaps
-
-Let $`(A_\alpha, P_\alpha)`$ and $`(A_\beta, P_\beta)`$ be admissible charts with nonempty overlap $`A_{\alpha\beta} = A_\alpha \cap A_\beta`$. On this overlap, both projections are admissible and agree up to controlled error.
-
-Any observable $`\mathcal{O} \in \mathcal{A}(A_\alpha)`$ admits a restriction to $`A_{\alpha\beta}`$ by evaluating it on $`P_\alpha(A_{\alpha\beta})`$. By overlap compatibility, this restriction agrees with the corresponding restriction of $`\mathcal{A}(A_\beta)`$ up to admissible equivalence.
-
-Thus, observables on overlapping charts are not independent. They are related by restriction maps induced by admissible projection. These maps are injective whenever the overlap preserves distinguishability of observables.
-
-## Interpretation
-
-The algebra $`\mathcal{A}(A_\alpha)`$ should be understood as the full algebra of observables accessible within a given partial description of the system. It is not a subalgebra of a global algebra, since no such global object exists. Instead, it is defined intrinsically by the admissible chart itself.
-
-This viewpoint differs from traditional formulations in which local algebras are obtained by restricting a global algebra to regions. Here, locality precedes global structure: algebras exist first, and their relationships are determined by admissible overlap.
-
-In the next section, we show that the collection $`\{ \mathcal{A}(A_\alpha) \}`$, together with the restriction maps induced by admissible overlap and inclusion, forms a net (precosheaf) in direct analogy with algebraic quantum field theory.
-
-# Net Structure and Isotony
-
-We now show that the collection of local observable algebras constructed in the previous section assembles into a net in the sense of algebraic quantum field theory. The net structure is not imposed but follows directly from admissible inclusion and overlap of charts.
-
-## The category of admissible charts
-
-Let $`\mathcal{C}`$ denote the category whose objects are admissible charts $`(A_\alpha, P_\alpha)`$. A morphism
-``` math
-(A_\alpha, P_\alpha) \longrightarrow (A_\beta, P_\beta)
-```
-exists whenever $`A_\alpha \subset A_\beta`$ and the projection $`P_\beta`$ remains admissible on $`A_\alpha`$. Composition of morphisms is given by inclusion of admissible domains, and identity morphisms correspond to trivial inclusions.
-
-This category encodes the admissible overlap and inclusion structure of partial descriptions. It is not a poset in general, since admissibility is not purely set-theoretic but depends on truncation control and spectral separation. Nevertheless, it plays the same organizational role as the poset of spacetime regions in standard AQFT.
-
-## Algebra assignment
-
-To each object $`(A_\alpha, P_\alpha)`$ of $`\mathcal{C}`$ we assign the local observable algebra $`\mathcal{A}(A_\alpha)`$ defined in Section 3. To each morphism
-``` math
-(A_\alpha, P_\alpha) \longrightarrow (A_\beta, P_\beta)
-```
-we assign a homomorphism
-``` math
-\iota_{\alpha\beta} : \mathcal{A}(A_\alpha) \hookrightarrow \mathcal{A}(A_\beta),
-```
-defined by extending observables from $`A_\alpha`$ to $`A_\beta`$ via admissible projection.
-
-These maps are injective whenever the inclusion preserves the distinguishability of observables, which is guaranteed by admissibility. In particular, no observable defined on $`A_\alpha`$ is identified with zero upon extension to $`A_\beta`$ unless it is already trivial under coherent projection.
-
-## Isotony
-
-<div class="proposition">
-
-**Proposition 2** (Isotony). *If $`(A_\alpha, P_\alpha)`$ and $`(A_\beta, P_\beta)`$ are admissible charts with $`A_\alpha \subset A_\beta`$, then
-``` math
-\mathcal{A}(A_\alpha) \subset \mathcal{A}(A_\beta)
-```
-as a subalgebra, via the inclusion map $`\iota_{\alpha\beta}`$.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Let $`\mathcal{O} \in \mathcal{A}(A_\alpha)`$. By definition, $`\mathcal{O}`$ is a functional of the coherent projection $`\Pi_{\mathrm{coh}}`$ restricted to $`A_\alpha`$ and remains admissible under truncated evolution. Since $`A_\alpha \subset A_\beta`$ and $`P_\beta`$ is admissible on $`A_\alpha`$, the same functional defines an observable on $`A_\beta`$ by extension. Stability and projection invariance are preserved under admissible inclusion, so $`\mathcal{O}`$ defines an element of $`\mathcal{A}(A_\beta)`$. The mapping is injective by admissibility, establishing isotony. ◻
-
-</div>
-
-Isotony therefore arises directly from admissible inclusion and does not rely on any geometric notion of containment.
-
-## Precosheaf structure
-
-The assignment
-``` math
-(A_\alpha, P_\alpha) \;\longmapsto\; \mathcal{A}(A_\alpha)
-```
-together with the inclusion maps $`\iota_{\alpha\beta}`$ defines a covariant functor from the category of admissible charts $`\mathcal{C}`$ to the category of $`*`$–algebras. This functor constitutes a *precosheaf* of algebras over $`\mathcal{C}`$.
-
-Unlike a sheaf, this structure does not assert that algebras on overlapping charts glue uniquely to a larger algebra. Instead, it encodes the directed extension of observables along admissible inclusions. This distinction reflects the absence of a global admissible chart and is essential for the emergence of irreversibility and horizon phenomena.
-
-## Comparison with standard AQFT nets
-
-In standard algebraic quantum field theory, nets are indexed by spacetime regions ordered by inclusion. Here, the indexing objects are admissible charts ordered by representability. Despite this difference, the structural features coincide:
-
-- local algebras are assigned to partial domains of description;
-
-- inclusion of domains induces inclusion of algebras;
-
-- the resulting structure is covariant and local;
-
-- no global algebra is assumed or required.
-
-The essential distinction is that the present construction does not presuppose a background spacetime. The net structure is instead forced by the overlap and inclusion properties of admissible charts arising from coherent projection.
-
-In the next section, we analyze how locality and commutativity arise from representability constraints within this net structure.
-
-# Locality from Representability Constraints
-
-In algebraic quantum field theory, locality is typically imposed as a commutativity condition between observables associated with spacelike separated regions. In the present construction, no background spacetime or causal metric is assumed. Instead, locality emerges as a consequence of representability constraints: observables commute or decouple precisely when they cannot be jointly represented within a single admissible chart.
-
-## Joint representability
-
-Let $`(A_\alpha, P_\alpha)`$ and $`(A_\beta, P_\beta)`$ be admissible charts. Observables from $`\mathcal{A}(A_\alpha)`$ and $`\mathcal{A}(A_\beta)`$ are said to be *jointly representable* if there exists an admissible chart $`(A_\gamma, P_\gamma)`$ such that
-``` math
-A_\alpha \cup A_\beta \subset A_\gamma
-```
-and both projections $`P_\alpha`$ and $`P_\beta`$ remain admissible on $`A_\gamma`$.
-
-Joint representability therefore means that the observables associated with both charts may be realized simultaneously within a single partial description. When such a chart exists, observables from $`\mathcal{A}(A_\alpha)`$ and $`\mathcal{A}(A_\beta)`$ can be embedded into the larger algebra $`\mathcal{A}(A_\gamma)`$ and compared directly.
-
-## Failure of joint representability
-
-In general, admissible charts cannot be arbitrarily enlarged. Truncation control, spectral separation, or basin stability may fail when attempting to represent multiple domains simultaneously. When no admissible chart contains both $`A_\alpha`$ and $`A_\beta`$, observables associated with these charts cannot be jointly represented.
-
-This failure of joint representability is structural. It does not reflect ignorance or coarse-graining, but a genuine limitation imposed by coherent projection. In such cases, there exists no admissible domain on which observables from $`\mathcal{A}(A_\alpha)`$ and $`\mathcal{A}(A_\beta)`$ are simultaneously meaningful.
-
-## Locality
 
 <div class="definition">
 
-**Definition 3** (Locality). Two admissible charts $`(A_\alpha, P_\alpha)`$ and $`(A_\beta, P_\beta)`$ are said to be *separated* if no admissible chart exists on which both are jointly representable.
-
-</div>
-
-This notion of separation replaces spacelike separation in the absence of background geometry. It is a purely representational condition.
-
-<div class="proposition">
-
-**Proposition 4** (Locality as non-comparability). *If $`(A_\alpha,P_\alpha)`$ and $`(A_\beta,P_\beta)`$ admit no joint admissible extension, then there exists no admissible domain on which observables from $`\mathcal{A}(A_\alpha)`$ and $`\mathcal{A}(A_\beta)`$ can be compared nontrivially. Whenever a downstream encoding provides a common algebraic realization (e.g. a curved-spacetime AQFT net), the images of these observables lie in commuting (or graded-commuting) subalgebras when the corresponding regions are causally disjoint.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Suppose that observables $`\mathcal{O}_\alpha \in \mathcal{A}(A_\alpha)`$ and $`\mathcal{O}_\beta \in \mathcal{A}(A_\beta)`$ did not commute or interfere nontrivially. Then their joint action would define a meaningful observable relationship. Such a relationship would require a domain on which both observables are simultaneously representable, contradicting the assumption of separation. Hence, noncommutativity is incompatible with failure of joint representability, and observables associated with separated charts must commute or decouple. ◻
-
-</div>
-
-This argument mirrors the AQFT rationale for commutativity at spacelike separation, but without invoking a causal metric. Locality arises because incompatible observables cannot be jointly realized within any admissible description.
-
-## Emergent causal interpretation
-
-When an effective spacetime encoding exists, the separation defined above coincides with spacelike separation in the usual sense. Charts whose supports cannot be jointly embedded within an admissible domain project to regions outside each other’s characteristic cones, and the representability constraint reproduces the familiar causal ordering.
-
-However, the present construction does not rely on this interpretation. Locality is primary, and causal structure appears only as a downstream encoding of representability constraints.
-
-## Relation to standard AQFT locality
-
-In standard AQFT, locality is imposed as an axiom reflecting relativistic causality. Here, locality is derived as a theorem: it follows from the impossibility of joint representability under coherent projection. The two notions agree whenever an effective spacetime description is valid, but the present formulation clarifies why locality may fail or require modification near horizons, strong coupling, or merge–split events.
-
-In the next section, we show that the same structural constraints forbid the existence of a global observable algebra and explain the termination of net extensions at horizons and measurement boundaries.
-
-# Absence of a Global Algebra and Horizon Phenomena
-
-A defining feature of algebraic quantum field theory is the absence, in general, of a single global observable algebra compatible with locality and isotony. In the present construction, this feature is not assumed but follows directly from the admissible chart structure of Modal Triplet Theory.
-
-## No–global–section and no global algebra
-
-The Fixed-Point results of Modal Triplet Theory establish that, in general, there exists no global admissible chart covering the entire modal configuration space. Coherent projection, spectral separation, and truncation control can be maintained only on restricted domains, and these domains cannot be consistently extended to a single global section.
-
-A global observable algebra would require precisely such a global admissible chart. To define a single algebra containing all local observables as subalgebras, one would need a domain on which all observables are jointly representable and compatible under coherent projection. The absence of a global section therefore forbids the existence of a global algebra.
-
-<div class="proposition">
-
-**Proposition 5** (No global algebra). *There exists no global observable algebra $`\mathcal{A}_{\mathrm{global}}`$ such that
+**Definition 2** (Einstein causality). The net is local if, whenever $`O_1`$ and $`O_2`$ are spacelike separated,
 ``` math
-\mathcal{A}(A_\alpha) \subset \mathcal{A}_{\mathrm{global}}
-\quad \text{for all admissible charts } (A_\alpha, P_\alpha),
+[\mathfrak A(O_1),\mathfrak A(O_2)]=0
 ```
-with inclusions compatible with admissible overlap and locality.*
+inside a declared common ambient algebra. For a graded field net, the ordinary commutator is replaced by the graded commutator.
+
+</div>
+
+These two conditions are only part of a physical AQFT. Depending on the target, one must also address covariance, a state space, spectrum or microlocal-spectrum conditions, additivity, the time-slice axiom, duality, superselection structure, and a suitable continuum dynamics. The time-slice property is a dynamical theorem even in established perturbative constructions, rather than a consequence of isotony alone .
+
+If the region system is directed and the morphisms are injective, its $`C^*`$-inductive limit gives a quasilocal algebra
+``` math
+\mathfrak A_{\mathrm{ql}}
+ =\varinjlim_{O\in\mathcal K(Y)}\mathfrak A(O).
+```
+The limit is an abstract universal object. It need not equal $`\mathfrak A(O_*)`$ for a largest region $`O_*`$, and no largest region need exist.
+
+# The pregeometric admissibility category
+
+Let $`\mathcal C_{\mathrm{adm}}`$ be a category whose objects are declared MTT admissible contexts
+``` math
+\alpha=(U_\alpha,P_\alpha,\mathcal D_\alpha,\mathbf m_\alpha),
+```
+where $`U_\alpha`$ is a domain, $`P_\alpha`$ a coherent reduction, $`\mathcal D_\alpha`$ the required operator-domain data, and $`\mathbf m_\alpha`$ a vector of admissibility margins. Raw set inclusion $`U_\alpha\subseteq U_\beta`$ is not yet an algebra morphism.
+
+<div class="definition">
+
+**Definition 3** (Admissibility precosheaf). An admissibility precosheaf is a covariant functor
+``` math
+\mathfrak B:\mathcal C_{\mathrm{adm}}\longrightarrow\mathbf{Alg}.
+```
+A morphism $`u:\alpha\to\beta`$ includes, or is represented by, a specified unital injective $`*`$-homomorphism
+``` math
+j_u:\mathfrak B(\alpha)\longrightarrow\mathfrak B(\beta)
+```
+satisfying $`j_{\operatorname{id}}=\operatorname{id}`$ and $`j_{v\circ u}=j_v\circ j_u`$.
+
+</div>
+
+This definition is useful but conditional. The chart domains and projectors do not determine $`\mathfrak B(\alpha)`$, and overlap alone does not determine $`j_u`$.
+
+<div id="prop:noextension" class="proposition">
+
+**Proposition 4** (No automatic extension). *An inclusion $`U_\alpha\subseteq U_\beta`$ and admissibility of both charts do not imply that every observable in $`\mathfrak B(\alpha)`$ extends to $`\mathfrak B(\beta)`$, nor that any extension is unique or injective.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Suppose such a global algebra existed. Then all local observables would be jointly representable within a single algebraic structure, implying the existence of a global admissible domain on which coherent projection remains controlled. This contradicts the no–global–section result of the Fixed-Point theory. Hence no such global algebra can exist. ◻
+*Proof.* Extension is additional algebraic data. The same pair of domains can be assigned a constant algebra functor, inequivalent matrix algebras, quotient algebras, or algebras with no selected homomorphism between them. None of these choices is fixed by set inclusion or positivity of admissibility margins. If a restriction map from the larger domain is supplied, it runs in the opposite direction and still need not possess a section. ◻
 
 </div>
 
-#### Remark (Global algebra vs global admissibility).
+<div class="proposition">
 
-The statement “no global algebra” in this section refers to the absence of a single algebra induced by a *global admissible chart* on the MTT configuration level. This does not contradict the existence of a global field algebra $`\mathcal{A}(M,g)`$ within a downstream QFT encoding: $`\mathcal{A}(M,g)`$ is an effective inductive-limit type object assembled from local generators on $`(M,g)`$ and does not correspond to a globally admissible coherent projection upstairs. The obstruction is therefore representational rather than algebraic.
+**Proposition 5** (Non-comparability is not commutation). *Suppose $`\alpha`$ and $`\beta`$ have no common comparison object in $`\mathcal C_{\mathrm{adm}}`$. This fact alone implies neither $`[A,B]=0`$ nor $`[A,B]\ne0`$ for $`A\in\mathfrak B(\alpha)`$ and $`B\in\mathfrak B(\beta)`$.*
 
-The absence of a global algebra is therefore not a limitation of the formalism, but a structural consequence of representability constraints.
+</div>
 
-## Termination of net extensions
+<div class="proof">
 
-The net structure constructed in Sections 4 and 5 may be extended only as long as admissible overlaps exist. When truncation control or spectral separation fails, further extension of the net becomes impossible. At such points, the directed system of algebras terminates.
+*Proof.* Without morphisms into a common algebra, the product $`AB`$ and hence the commutator $`AB-BA`$ are not typed. A value cannot be inferred for an expression that has not been defined. If a later physical realization maps both observables into a common algebra, their commutator is determined by that realization and its locality theorem. ◻
 
-These termination points correspond to boundaries of representability. Beyond them, coherent structures may persist in the modal configuration space, but they no longer admit a localized algebraic description. The algebraic net therefore reflects not the existence of physical degrees of freedom, but the limits of their describability.
+</div>
 
-## Horizons and measurement boundaries
+Thus $`\mathfrak B`$ records which partial descriptions and extensions have actually been constructed. It is a pregeometric organization of representability, not yet a Haag–Kastler net. In particular it has no notion of spacelike separation until a causal localization functor is supplied.
 
-In effective spacetime encodings, horizons mark regions beyond which observables cannot be extended or compared. In the present framework, horizons arise when admissible chart families supporting the net fail to extend further. The algebraic net terminates not because observables cease to exist, but because no admissible domain supports their continued joint representation.
+# Physical realization data
 
-The same interpretation applies to measurement-induced cutoffs and decoherence events. Measurement does not destroy observables at the modal level; rather, it induces a loss of admissible overlap that prevents continuation of the net structure. Irreversibility follows because the lost overlap cannot, in general, be reconstructed.
+The physical construction requires the following independent hypotheses.
 
-## Irreversibility and algebraic history
+Lorentzian base.  
+A selected, time-oriented, globally hyperbolic four-dimensional base $`(Y,g)`$ and a bundle $`\pi:M\to Y`$.
 
-Because the admissible chart structure lacks a global section, the net of algebras cannot be extended or inverted globally. While local extensions may be reversible, merge events and representability failure permanently eliminate certain algebraic inclusions. As a result, the algebraic history defined by the net possesses an intrinsic arrow.
+Upper local theory.  
+A concrete upper net
+``` math
+O\longmapsto\mathfrak A_U(\pi^{-1}O)\subseteq\mathcal B(\mathcal H_U)
+```
+that is isotonic and local on $`\mathcal K(Y)`$.
 
-This irreversibility is structural rather than dynamical. It does not arise from non-invertible microscopic evolution, but from the impossibility of maintaining coherent projection across all domains simultaneously. The algebraic arrow of time thus mirrors the kinematic irreversibility of chart persistence established in earlier work.
+Coherent reduction.  
+A decomposable orthogonal projector
+``` math
+P=\int_Y^\oplus P_y\,\mathrm d\nu(y)
+```
+on the upper Hilbert bundle. Decomposability prevents the reduction itself from mixing unrelated base fibers.
 
-## Summary
+Compatibility.  
+Physical observables are taken from the subalgebra that preserves the coherent sector,
+``` math
+\mathfrak A_U^P(O)
+ :=\{A\in\mathfrak A_U(\pi^{-1}O):[A,P]=0\}.
+```
+For a graded net, $`P`$ is also required to be even.
 
-The absence of a global observable algebra, the termination of net extensions at horizons, and the emergence of irreversibility are all consequences of the same underlying fact: physical description in Modal Triplet Theory is necessarily partial. Algebraic quantum field theory appears as a downstream organization of these partial descriptions, valid precisely where admissible overlap permits and failing where it does not.
+FP VI does not construct these data from the fixed-point spine alone. It proves that an instantaneous spatially bilocal kernel is insufficient for causality and identifies a local hyperbolic mediator theory as the consistent completion route . A selected completion must still supply the upper local net. The corrected Projection–Admissibility paper then supplies the compression theorem .
 
-In the final section, we compare the resulting structure with standard AQFT formulations and clarify the scope and limitations of the present construction.
+# Coherent locality descent
 
-# Relation to Standard Algebraic Quantum Field Theory
+For $`O\in\mathcal K(Y)`$ define
+``` math
+\begin{equation}
+ \mathfrak A_P(O)
+ :=\{PAP|_{P\mathcal H_U}:A\in\mathfrak A_U^P(O)\}
+ \subseteq\mathcal B(P\mathcal H_U).
+ \label{eq:compressed-net}
+\end{equation}
+```
 
-We now compare the net structure induced by Modal Triplet Theory with standard formulations of algebraic quantum field theory. The purpose of this comparison is not to reproduce the full Haag–Kastler framework, but to clarify which structural features arise generically from admissibility and which depend on additional assumptions.
+<div id="thm:descent" class="theorem">
 
-## Structural correspondences
+**Theorem 6** (Conditional MTT locality descent). *Under the physical realization hypotheses above, $`O\mapsto\mathfrak A_P(O)`$ is an isotonic local net. If the upper net is $`C^*`$-algebraic, each $`\mathfrak A_P(O)`$ is a $`C^*`$-algebra. The graded statement also holds when $`P`$ is even and upper locality is graded locality.*
 
-Several defining features of AQFT appear naturally in the present construction:
+</div>
 
-- **Local algebras:** To each admissible domain there corresponds a local observable algebra encoding all representable observables on that domain.
+<div class="proof">
 
-- **Isotony:** Inclusion of admissible domains induces injective homomorphisms of algebras.
+*Proof.* For $`A,B\in\mathfrak A_U^P(O)`$, commutation with $`P`$ gives
+``` math
+(PAP)(PBP)|_{P\mathcal H_U}=PABP|_{P\mathcal H_U},
+ \qquad
+ (PAP)^*=PA^*P.
+```
+Thus compression is a unital $`*`$-homomorphism on the compatible subalgebra, and its image is a unital $`*`$-algebra. A $`*`$-homomorphic image of a $`C^*`$-algebra is $`C^*`$-algebraic after the standard quotient/image identification.
 
-- **Locality:** Observables associated with separated charts commute or decouple, reflecting failure of joint representability.
+If $`O_1\subseteq O_2`$, upper isotony gives $`\mathfrak A_U^P(O_1)\subseteq\mathfrak A_U^P(O_2)`$, hence $`\mathfrak A_P(O_1)\subseteq\mathfrak A_P(O_2)`$. If $`O_1`$ and $`O_2`$ are spacelike separated and $`A,B`$ belong to their respective compatible upper algebras, then
+``` math
+[PAP,PBP]|_{P\mathcal H_U}
+ =P[A,B]P|_{P\mathcal H_U}=0
+```
+by upper locality. Replacing commutators by graded commutators proves the graded case. ◻
 
-- **Absence of a global algebra:** No single algebra contains all local algebras as compatible subalgebras.
+</div>
 
-These features coincide precisely with the structural core of algebraic quantum field theory. The essential difference lies not in the algebraic organization itself, but in the origin of the indexing structure.
+The theorem is inheritance, not creation. It cannot prove locality unless the upper theory is already local, and it says nothing about an upper observable that fails to preserve $`P\mathcal H_U`$. Likewise, a nondecomposable projector may mix base support and lies outside the declared physical interpretation.
 
-## Indexing by admissibility rather than spacetime
+# The missing chart-to-region intertwiner
 
-In standard AQFT, the net is indexed by spacetime regions ordered by geometric inclusion. In the present framework, the net is indexed by admissible charts ordered by representability and truncation control. Spacetime regions appear only as downstream encodings of chart-relative supports.
+The pregeometric and physical constructions are connected only after a selected interface is provided. Let
+``` math
+L:\mathcal K(Y)\longrightarrow\mathcal C_{\mathrm{adm}}
+```
+assign an admissible context to each physical region. Suppose there are $`*`$-homomorphisms
+``` math
+\rho_O:\mathfrak B(L(O))\longrightarrow\mathfrak A_P(O).
+```
 
-As a result, locality is not imposed as a causal axiom but derived from representability constraints. When an effective spacetime description exists, the admissible chart ordering reproduces the usual causal and geometric ordering of regions. When such a description fails, the algebraic net correspondingly ceases to extend.
+<div id="prop:naturality" class="proposition">
 
-## Conditional validity of AQFT axioms
+**Proposition 7** (Naturality gate). *The admissibility precosheaf represents the physical net only if, for every $`O_1\subseteq O_2`$, the naturality equation
+``` math
+\begin{equation}
+ \rho_{O_2}\circ j_{12}
+ =\iota_{12}\circ\rho_{O_1}
+ \label{eq:naturality}
+\end{equation}
+```
+holds. If every $`\rho_O`$ is an isomorphism, the two nets are naturally isomorphic. If they are merely homomorphisms, the interface is a reduction or representation, not an equivalence.*
 
-Many additional axioms commonly imposed in AQFT, such as additivity, Haag duality, or global covariance, depend on further assumptions about the structure of admissible domains and their overlaps. In the present construction, these properties may hold locally within restricted chart families but cannot be expected to hold globally.
+</div>
 
-This conditional validity should be regarded as a feature rather than a defect. It explains why algebraic quantum field theory performs exceptionally well in weakly curved, weakly coupled regimes while requiring modification near horizons, strong coupling, or phase transitions.
+<div class="proof">
 
-## Comparison with curved spacetime AQFT
+*Proof.* Commutativity is exactly the naturality condition. Componentwise isomorphisms define a natural isomorphism; weaker components do not. ◻
 
-In curved spacetime AQFT, the absence of a preferred vacuum and the reliance on local algebras are often motivated pragmatically. The present framework provides a structural explanation: the lack of a global admissible chart forbids the existence of a global algebra or state.
+</div>
 
-From this perspective, curved spacetime AQFT appears as a special case of the general admissible-net structure induced by Modal Triplet Theory, valid in regimes where admissible chart families align with geometric regions of spacetime.
+Equation <a href="#eq:naturality" data-reference-type="eqref" data-reference="eq:naturality">[eq:naturality]</a>, together with a selected $`L`$, is the precise replacement for the former assertion that chart overlap automatically becomes physical localization.
 
-## What the present construction does not provide
+# Global algebras, states, and representations
 
-For clarity, we emphasize that the present work does not attempt to derive:
+Absence of a terminal or largest object in $`\mathcal C_{\mathrm{adm}}`$ means that no one admissible chart represents every context. It does not imply that the diagram $`\mathfrak B`$ lacks a categorical colimit, and it does not imply that the physical net lacks a quasilocal algebra.
 
-- a specific representation of the local algebras on a Hilbert space;
+<div class="proposition">
 
-- a preferred vacuum or thermal state;
+**Proposition 8** (Compatible states and the inductive limit). *Let $`\{\mathfrak A_P(O),\iota_{12}\}`$ be a directed unital $`C^*`$-net. A state $`\omega`$ on $`\mathfrak A_{\mathrm{ql}}`$ restricts to a compatible family $`\omega_O`$. Conversely, a compatible family satisfying
+``` math
+\omega_{O_2}\circ\iota_{12}=\omega_{O_1}
+```
+defines a state on the algebraic inductive limit and hence on its $`C^*`$-completion.*
 
-- exact Lorentz covariance or global symmetry groups;
+</div>
 
-- a complete classification of superselection sectors.
+<div class="proof">
 
-These features belong to downstream reconstructions and may be recovered when additional structure is available. The role of the present construction is instead to explain why an algebraic net structure exists at all and why it is necessarily local and partial.
+*Proof.* Restriction gives compatibility by functoriality. Conversely, define the functional on an equivalence class represented by $`A\in\mathfrak A_P(O)`$ as $`\omega_O(A)`$. Compatibility makes the value independent of the representative. Positivity, normalization, and boundedness pass to the completion. ◻
 
-## Interpretive summary
+</div>
 
-From the standpoint of Modal Triplet Theory, algebraic quantum field theory is not a fundamental starting point but an emergent organizational layer. Its axioms encode the minimal structural requirements imposed by admissibility, coherent projection, and basin stability.
+Therefore a no-state claim must prove failure of compatible physical state data, not merely failure of a global chart. Similarly, every abstract $`C^*`$-algebra has a faithful Hilbert-space representation, while a *selected chart-induced representation satisfying all MTT admissibility conditions* may fail to exist. Those are different statements.
 
-Seen in this light, AQFT does not impose locality on physics. Rather, locality reflects the fact that physical description itself is only available on overlapping admissible charts, and cannot be globalized without violating coherence.
+# Horizons and irreversibility are separate targets
 
-# Conclusion and Outlook
+A physical AQFT can assign algebras to regions on both sides of a causal horizon. Restriction to an observer’s wedge, a thermal or modular property, and loss of operational access depend on the spacetime, net, and state. A boundary of an MTT admissible chart may obstruct continuation of that chart or of one selected representation, but it becomes a physical horizon only after the map $`L`$ and the relevant causal statement are proved.
 
-In this paper we have shown that the defining structural features of algebraic quantum field theory arise naturally within Modal Triplet Theory as consequences of admissibility, coherent projection, and basin stability. Starting from admissible charts and their overlap structure, we constructed local observable algebras and demonstrated that these algebras assemble into a net (precosheaf) satisfying isotony, locality, and the absence of a global algebra. No background spacetime, causal metric, or global section was assumed.
+Likewise, neither a missing global chart nor a failed extension map establishes an arrow of time. Irreversibility needs oriented dynamics plus an asymmetric property such as noninvertible effective evolution, a monotone entropy or Lyapunov functional, or boundary data. The local-net theorem is neutral on that question.
 
-From the MTT perspective, the algebraic net is not a fundamental postulate but an organizational shadow of representability constraints. Observables are local because coherent projection is controlled only on restricted domains. Locality arises because joint representability fails beyond admissible overlap. The absence of a global algebra reflects the no–global–section result of the Fixed-Point theory. Horizons, measurement boundaries, and irreversible loss of observability appear as natural termination points of the net rather than as singular dynamical events.
+# Current MTT-to-AQFT status
 
-Together with recent work on kinematics, which defines position, motion, and worldlines as properties of chart persistence rather than transport through a background space, the present construction completes a missing structural layer of Modal Triplet Theory. Kinematics explains how coherent structures persist across admissible descriptions; the algebraic net explains how observables are organized on those descriptions. Neither structure requires spacetime or locality as primitive inputs, yet both recover familiar spacetime-based frameworks when effective encodings are available.
+The current corpus supports the following scoped ledger.
 
-The resulting picture places algebraic quantum field theory downstream of Modal Triplet Theory rather than alongside it as an alternative foundation. AQFT captures the minimal algebraic organization compatible with partial, local, and non-global description. Modal Triplet Theory explains why those conditions hold in the first place.
+Admissibility-indexed precosheaf.  
+Available as a conditional pregeometric construction once algebra objects and extension morphisms are specified. It is not forced by chart overlap alone.
 
-Several directions for further work suggest themselves. One may analyze specific classes of admissible chart families and characterize which additional AQFT axioms hold within them. One may study how renormalization group flow and scale dependence appear as changes of effective description within fixed coherent basins. Finally, one may investigate how different downstream encodings—quantum mechanical, field-theoretic, or gravitational—impose distinct algebraic constraints on admissible nets.
+Physical Lorentzian base.  
+The selected q79 branch currently supplies a conditional global Lorentzian coframe and causal representative after the discrete $`A_{\mathrm{QG}}`$ realization declaration and one binary $`A_{\mathrm{causal}}`$ boundary mark. This does not itself construct a QFT net.
 
-None of these extensions alter the central conclusion of the present work: locality, algebraic organization, and the limits of observability are not fundamental postulates, but consequences of coherent projection and admissibility. Algebraic quantum field theory emerges precisely where and when those consequences permit.
+Upper local theory.  
+FP VI identifies a local hyperbolic parent as the valid causal completion route but does not select its field content, gauge algebra, couplings, state, or operator net.
+
+Locality descent.  
+Theorem <a href="#thm:descent" data-reference-type="ref" data-reference="thm:descent">6</a> is exact under its stated upper-net and projector hypotheses. This is the currently rigorous AQFT-style bridge.
+
+Perturbative observable branch.  
+A current selected-SM result gives a conditional perturbative observable functor, while importing standard BRST/Faddeev–Popov quantization rather than deriving it from MTT.
+
+Constructive finite-domain QFT.  
+Current SPT-filtered TT/BRST functional integrals provide conditional finite-domain Borel and Ward-identity results. Infinite volume, the full chiral Standard Model, Lorentzian reconstruction, and a complete nonperturbative BRST Hilbert space remain open .
+
+Full AQFT equivalence.  
+Open. The corpus has not yet supplied one selected upper local net together with the naturality interface <a href="#eq:naturality" data-reference-type="eqref" data-reference="eq:naturality">[eq:naturality]</a>, physical state space, covariance, spectrum condition, time-slice theorem, continuum completion, and target-equivalence certificate.
+
+# Scoped reconstruction theorem
+
+<div id="thm:scoped" class="theorem">
+
+**Theorem 9** (Scoped MTT–AQFT relation). *The corrected MTT corpus supports the following implications:*
+
+1.  *admissible contexts can carry a pregeometric precosheaf when their algebras and functorial extension maps are supplied;*
+
+2.  *a selected Lorentzian base, a local upper net, and a decomposable coherent projector produce the physical local net <a href="#eq:compressed-net" data-reference-type="eqref" data-reference="eq:compressed-net">[eq:compressed-net]</a> on the compatible subalgebra;*
+
+3.  *upper isotony and Einstein causality descend to that physical net; and*
+
+4.  *a natural chart-to-region interface identifies the pregeometric and physical nets only to the degree expressed by its component maps.*
+
+*No commutation relation follows from non-joint representability. No absence of an abstract quasilocal algebra, state, faithful abstract representation, horizon law, or temporal arrow follows from absence of a global admissible chart.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The first item is the definition and functoriality requirement of $`\mathfrak B`$. The second and third are Theorem <a href="#thm:descent" data-reference-type="ref" data-reference="thm:descent">6</a>. The fourth is Proposition <a href="#prop:naturality" data-reference-type="ref" data-reference="prop:naturality">7</a>. The final exclusions follow from the typing arguments and the inductive-limit state proposition above. ◻
+
+</div>
+
+# Changes from Version 1
+
+Version 2 makes the following theorem-level corrections.
+
+1.  It replaces the chart-only AQFT derivation by separate pregeometric and physical constructions.
+
+2.  It removes the inference from failure of joint representability to commutation.
+
+3.  It removes automatic observable extension and requires declared functorial morphisms.
+
+4.  It derives physical isotony from upper algebra inclusion and coherent compression.
+
+5.  It derives physical locality from upper spacelike commutation, not from chart non-comparability.
+
+6.  It restores the possible quasilocal inductive limit and distinguishes it from a single global admissible chart.
+
+7.  It replaces claims of automatic horizons and irreversibility by their actual state, causal, and dynamical theorem requirements.
+
+8.  It adds the chart-to-region naturality gate and updates the QFT status to the current conditional/finite-domain frontier.
+
+# Conclusion
+
+MTT currently has a rigorous but conditional AQFT bridge. A local upper theory can be compressed to a coherent physical sector without losing isotony or spacelike commutation, provided the reduction is fiberwise and the observables preserve that sector. This is meaningful progress: it shows that coherent reduction need not destroy an already established local algebraic structure.
+
+The result does not make locality emerge from non-comparability. Nor does it construct the upper QFT, the physical state, or the chart-to-region map. Separating those obligations gives the program a precise next target: select one local Lorentzian upper theory from MTT data and prove the naturality and equivalence conditions linking its compressed net to the admissibility precosheaf.
+
+<div class="thebibliography">
+
+9
+
+R. Haag and D. Kastler, *An Algebraic Approach to Quantum Field Theory*, Journal of Mathematical Physics **5** (1964), 848–861, doi:10.1063/1.1704187.
+
+R. Brunetti, K. Fredenhagen, and R. Verch, *The Generally Covariant Locality Principle—A New Paradigm for Local Quantum Physics*, Communications in Mathematical Physics **237** (2003), 31–68, arXiv:math-ph/0112041.
+
+B. Chilian and K. Fredenhagen, *The Time Slice Axiom in Perturbative Quantum Field Theory on Globally Hyperbolic Spacetimes*, arXiv:0802.1642.
+
+P. Nero, *The Projection–Admissibility Principle: Descent, Recovery, and Structural Constraints on Effective Description*, version 2, 2026.
+
+P. Nero, *Fixed Points VI: Formal Synthesis and Physical Interpretations*, corrected version 4, 2026.
+
+P. Nero, *Modal Triplet Theory: A Typed Relationship Atlas*, version 3, 2026.
+
+P. Nero, *MTT Selected Quantization and Nonperturbative-QFT Strict-Upgrade Audit*, technical audit version 1, 2026.
+
+</div>

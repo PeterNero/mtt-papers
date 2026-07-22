@@ -1,622 +1,638 @@
-% !TEX program = pdflatex
+% Gravitationally induced collapse, corrected successor (v3)
 \documentclass[11pt]{article}
-\usepackage{series} % uses series.sty (uploaded by user)
+\usepackage{series}
 
-% --- Encoding / fonts ---
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{microtype}
+\hypersetup{
+  unicode=true,
+  pdftitle={Gravitationally Induced Collapse in MTT: A Penrose-Schoenberg Completion and Source Contract},
+  pdfauthor={Peter Nero}
+}
 
-% --- Geometry ---
-\usepackage{geometry}
-\geometry{margin=1in}
-
-% --- Required by user ---
-
-
-% --- Math packages ---
-\usepackage{amsmath,amssymb,amsthm,mathtools}
-
-% --- Hyperlinks ---
-
-% --- Lists ---
-\usepackage{enumitem}
-
-% =========================
-%  Safe macros (no physics)
-% =========================
-
-% Basic operators
-\DeclareMathOperator{\Dom}{Dom}
-\DeclareMathOperator{\spec}{spec}
 \DeclareMathOperator{\Tr}{Tr}
+\newcommand{\T}{\mathcal T}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cP}{\mathbf P}
+\newcommand{\cQ}{\mathbf Q}
+\newcommand{\R}{\mathcal R}
+\newcommand{\J}{\mathcal J}
+\newcommand{\D}{\mathcal D}
 
-% Identity, norms
-\newcommand{\normop}[1]{\left\lVert #1 \right\rVert}
-
-% Dirac-like notation (self-defined, no external package)
-\newcommand{\ket}[1]{\left|#1\right\rangle}
-\newcommand{\bra}[1]{\left\langle#1\right|}
-\newcommand{\ketbra}[2]{\ket{#1}\!\bra{#2}}
-
-% Commutator / double commutator (explicit)
-\newcommand{\comm}[2]{\left[#1,#2\right]}
-\newcommand{\dcomm}[3]{\left[#1,\left[#2,#3\right]\right]}
-
-
-\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
-\newcommand{\od}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
-
-% =========================
-%  Theorem environments
-% =========================
-\theoremstyle{plain}
-
-\theoremstyle{definition}
-
-\theoremstyle{remark}
-
-% =========================
-%  Notation
-% =========================
-\newcommand{\Hten}{\mathcal H_{10}}
-\newcommand{\Hcoh}{\mathcal H_{\mathrm{coh}}}
-\newcommand{\Hnc}{\mathcal H_{\mathrm{nc}}}
-\newcommand{\Hfour}{\mathcal H_{4}}
-\newcommand{\PiC}{\Pi}
-\newcommand{\Qop}{Q}
-% Stress components
-\newcommand{\curv}{\mathrm{curv}}
-\newcommand{\env}{\mathrm{env}}
-\newcommand{\meas}{\mathrm{meas}}
-
-% Liouvillian components
-\newcommand{\coh}{\mathrm{coh}}
-\newcommand{\nc}{\mathrm{nc}}
-\newcommand{\grav}{\mathrm{grav}}
-\newcommand{\ind}{\mathrm{ind}}
-
-
-
-\title{\textbf{Gravitationally Induced Collapse as an Effective Limit of Coherence Breakdown in Modal Triplet Theory}}
+\title{\textbf{Gravitationally Induced Collapse in Modal Triplet Theory}\\
+\large A Penrose--Schoenberg Completion and Source Contract}
 \author{Peter Nero}
-\date{January, 2026}
+\date{July 2026\\Version 3}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We show that gravitationally induced collapse in the sense of Penrose and the Diósi--Penrose (DP) model arises as a controlled effective limit of coherence breakdown in Modal Triplet Theory (MTT). Starting from projected coherent-sector dynamics, we derive a reduced nonunitary evolution whose leading contribution in a curvature-dominated regime reduces to a Newtonian double-commutator kernel of DP type, yielding the collapse timescale \(\tau \sim \hbar/E_G\). We then prove that this regime is nongeneric: outside it, projection-induced reduced dynamics necessarily exhibits additional structure, including finite-strength threshold (``knee'') behavior, protocol dependence, and Zeno/anti-Zeno crossovers. We establish no-go results showing that gravity-only collapse generators depending solely on mass density cannot reproduce this structure without introducing state-dependent stabilization variables equivalent to a projection--basin mechanism. Finally, we formulate cross-sector closure: the parameters governing the reduced collapse dynamics are tied to the same spectral--geometric bottlenecks that control gravitational stability and effective field theory under controlled truncation. These results identify Penrose/DP collapse as a valid shadow law in a restricted universality class, but not a fundamental principle.
+This corrected successor asks when a Di\'osi--Penrose (DP) law can arise as an
+effective shadow of Modal Triplet Theory (MTT). Completely positive reduction and
+lifting channels give an exact Nakajima--Zwanzig memory identity; a Davies--GKSL
+generator still requires an independently justified weak-coupling, Markov and secular
+limit. The new result is a Penrose--Schoenberg completion theorem. Conditional on the
+selected two-derivative Einstein/TEGR action, its static weak-field constraint and a
+declared external smearing map, the Newton self-energy of two branch mass densities
+is one half of a squared Hilbert-space distance. Its pairwise matrix is therefore
+conditionally negative definite, so $\exp[-tE_G/\hbar]$ defines a completely positive,
+trace-preserving dephasing semigroup for every finite branch set. Its generator is
+exactly the regulated DP double commutator, and it is the unique population-preserving
+pure-dephasing semigroup with those real Penrose rates. This closes positivity and
+Markovian completion; it does not make Penrose's provisional lifetime estimate an MTT
+source theorem. MTT must still select the external regularization, the exact
+$E_G/\hbar$ rate law (or an equivalent correlation kernel), and, for objective
+single-outcome collapse, a stochastic instrument and probability rule. Thus the DP
+law is a rigorous restricted completion, not yet a derived fundamental law of MTT.
 \end{abstract}
 
 \tableofcontents
 
-% ============================================================
-\section{Introduction}
-% ============================================================
+\section{Revision verdict}
 
-Penrose proposed that macroscopic quantum superpositions involving distinct spacetime geometries are unstable and reduce on a timescale \(\tau \sim \hbar/E_G\), where \(E_G\) is the Newtonian self-energy of the difference between mass distributions. The Diósi--Penrose (DP) model gives a related 4D master equation featuring a Newtonian double-commutator kernel. Such models provide useful effective diagnostics but raise three structural issues: (i) why the Newton kernel should be fundamental rather than emergent; (ii) why additional parameters (smearing, dissipation, colored noise) are required for mathematical and physical consistency; and (iii) why sharp threshold and protocol-dependent phenomena (including Zeno/anti-Zeno behavior and measurement-induced transitions) appear generically in controlled quantum experiments.
+The original paper contained a useful physical proposal but advertised several
+conditional steps as derivations. Version 2 repaired the open-system typing. This
+version additionally separates a gravitational energy theorem from a collapse-rate
+selection theorem. The strongest proven chain is
+\begin{align*}
+\text{selected Einstein/TEGR law}
+&\xRightarrow{\text{static weak field + smearing}} E_{G,\ell}
+   =\tfrac12\|r_a-r_b\|^2\\
+&\xRightarrow{\text{exact Penrose rate rule}}
+   e^{-tE_{G,\ell}/\hbar}\ \text{CPTP semigroup}\\
+&\Longleftrightarrow \text{regulated DP generator on the branch algebra}.
+\end{align*}
+An independent open-system route remains
+\begin{align*}
+ \text{typed reduction/lifting}
+ &\Longrightarrow\text{exact memory equation}\\
+ &\xRightarrow{\text{Davies + Newton source}}
+ \text{the same DP generator}.
+\end{align*}
+Neither route selects its marked hypotheses from projection, curvature dominance,
+an internal gap, or the present $q=79$ geometry alone.
 
-This paper treats Penrose/DP collapse as an effective phenomenon and derives it as a controlled limit of a broader reduced dynamics induced by projection in Modal Triplet Theory (MTT). We then prove that outside this limit additional structure is unavoidable and cannot be reproduced by gravity-only generators without introducing state-dependent stabilization variables that reconstruct the projection--basin mechanism.
+The compactification is written throughout as $Y_4\times X_6$. No decomposition
+$X_6=B_1\times B_2\times B_3$ is assumed. This is compatible with the selected
+Fu--Yau candidate and with the local $1<2<3$ filtration without identifying the
+filtration with a product topology.
 
-% ============================================================
-\section{Minimal MTT Structure Used Here}
-% ============================================================
+\section{Typed shadow dynamics}
 
-\subsection{Geometry and Hilbert spaces}
+\subsection{Reduction and lifting channels}
 
-\begin{definition}[MTT product manifold]
-Let
+Let $\cH_U$ be an upstairs Hilbert space at a finite spectral cutoff and let
+$\cH_S$ be the retained four-dimensional system space. Write
+$\T(\cH)$ for trace-class operators on $\cH$. Assume completely positive,
+trace-preserving maps
 \[
-M_{10} \;=\; Y_4 \times B_1 \times B_2 \times B_3,
+ \R:\T(\cH_U)\to\T(\cH_S),\qquad
+ \J:\T(\cH_S)\to\T(\cH_U),
+ \qquad \R\J=I_{\T(\cH_S)}.
 \]
-where \(Y_4\) is a smooth globally hyperbolic Lorentzian 4-manifold and each \(B_i\) is a compact smooth Riemannian manifold of bounded geometry. Let \(\Hten := L^2(M_{10};E)\) be the Hilbert space of square-integrable sections of a fixed Hermitian bundle \(E\to M_{10}\).
-\end{definition}
-
-\subsection{Coherent projector and spectral gap}
-
-\begin{assumption}[Commuting internal Laplace-type operators and coherent projector]\label{ass:cohproj}
-For each \(i\in\{1,2,3\}\) let \(\Delta_{B_i}\ge 0\) be a self-adjoint Laplace-type operator acting along \(B_i\). Assume the operators commute. Let \(\Pi_{B_i}\) be the orthogonal projector onto \(\ker \Delta_{B_i}\). Define
+Define superoperators on $\T(\cH_U)$ by
 \[
-\PiC := \Pi_{B_1}\Pi_{B_2}\Pi_{B_3}.
+ \cP=\J\R,\qquad \cQ=I-\cP.
 \]
-Assume \(\PiC\) extends boundedly on the Sobolev scales needed below.
-\end{assumption}
 
-\begin{assumption}[Uniform spectral gap]\label{ass:gap}
-Let \(\Qop := \Id - \PiC\). There exists \(\lambda_\ast>0\) such that for the internal operator
-\[
-\Delta_{\mathrm{int}} := \Delta_{B_1}+\Delta_{B_2}+\Delta_{B_3},
-\]
-we have
-\[
-\Delta_{\mathrm{int}}\big|_{\Ran(\Qop)} \;\ge\; \lambda_\ast\,\Id,
-\]
-in the sense of quadratic forms.
-\end{assumption}
-
-\begin{definition}[Coherent and noncoherent subspaces]
-Define \(\Hcoh := \Ran(\PiC)\subset \Hten\) and \(\Hnc := \Ran(\Qop)\subset \Hten\), so \(\Hten = \Hcoh \oplus \Hnc\).
-\end{definition}
-
-\subsection{Dynamics and observable pushforward}
-
-\begin{assumption}[Well-posed 10D evolution]\label{ass:flow}
-Let \(\Phi_t:\Hten\to \Hten\) be a deterministic evolution map generated by a well-posed analytic flow on a bounded-geometry slab, strongly continuous in \(t\), and such that the induced evolution on density operators is well-defined on the trace-class domain considered.
-\end{assumption}
-
-\begin{definition}[Observable map]\label{def:P}
-Let \(I\) denote normalized fiber integration over \(B_1\times B_2\times B_3\) (defined on a dense subspace and extending boundedly on the domains of interest). Define the observable map
-\[
-P := I\circ \PiC.
-\]
-Let \(\Hfour\) denote the \(L^2(Y_4)\)-closure of \(\Ran(P)\).
-\end{definition}
-
-\begin{remark}
-The map \(P\) is generally many-to-one. Consequently, induced effective dynamics on observables need not be invertible or unitary even when \(\Phi_t\) is deterministic and unitary on an extended space; this is a structural feature of reduction by projection.
-\end{remark}
-
-% ============================================================
-\section{Reduced Dynamics and an Induced Nonunitary Generator}
-% ============================================================
-
-\subsection{Reduced density operator}
-
-Let \(\Psi(t)\in\Hten\) be a (pure) 10D state along the evolution \(\Phi_t\). Define the reduced (observable) density operator
-\begin{equation}\label{eq:rho}
-\rho(t) \;:=\; P\,\ketbra{\Psi(t)}{\Psi(t)}\,P^\dagger,
-\end{equation}
-interpreted as a positive trace-class operator on \(\Hfour\) for initial data in the controlled domain.
-
-\subsection{Coherent/noncoherent splitting of the generator}
-
-We work with the evolution of density operators on \(\Hten\). Let \(\mathcal{L}_{10}\) denote the generator on trace-class operators (e.g.\ Liouvillian form in the unitary case, or more general). Assume a splitting consistent with \(\Hten=\Hcoh\oplus \Hnc\).
-
-\begin{assumption}[Generator splitting]\label{ass:gensplit}
-There exist (densely defined) linear maps on trace-class operators such that
-\[
-\mathcal{L}_{10} = \mathcal{L}_{\coh} + \mathcal{L}_{\nc} + \mathcal{V},
-\]
-where \(\mathcal{L}_{\nc}\) generates relaxation on \(\Ran(\Qop)\) controlled by \(\lambda_\ast\), and \(\mathcal{V}\) couples coherent and noncoherent sectors. The coupling is such that a second-order weak-coupling expansion is valid on the slab (Assumption~\ref{ass:weakcoupling}).
-\end{assumption}
-
-\subsection{Projection equation and Markovian approximation}
-
-Define the superoperator \(\mathcal{P}\) by \(\mathcal{P}(X)=PXP^\dagger\) and \(\mathcal{Q}:=\Id-\mathcal{P}\).
-
-The Nakajima--Zwanzig identity yields an exact reduced equation for \(\rho(t)=\mathcal{P}\varrho(t)\), where \(\varrho(t)\) is the 10D density operator:
-\begin{equation}\label{eq:NZ}
-\od{}{t}\rho(t) \;=\; \mathcal{P}\mathcal{L}_{10}\mathcal{P}\rho(t)\;+\;\int_0^t \mathcal{K}(t-s)\rho(s)\,\dd s \;+\; \mathcal{I}(t),
-\end{equation}
-with memory kernel \(\mathcal{K}(t)=\mathcal{P}\mathcal{L}_{10}\,e^{t\mathcal{Q}\mathcal{L}_{10}\mathcal{Q}}\mathcal{Q}\mathcal{L}_{10}\mathcal{P}\), and inhomogeneity \(\mathcal{I}(t)\) determined by \(\mathcal{Q}\varrho(0)\).
-
-\begin{assumption}[Controlled truncation / weak coupling / rapid decay]\label{ass:weakcoupling}
-On the time slab of interest:
-\begin{enumerate}[label=(W\arabic*)]
-\item The semigroup on the noncoherent sector decays: there exist \(C>0\) such that
-\[
-\normop{e^{t\mathcal{Q}\mathcal{L}_{10}\mathcal{Q}}} \le C e^{-\lambda_\ast t}\quad (t\ge 0),
-\]
-on the operator norms used for the memory bound.
-\item The inhomogeneous term \(\mathcal{I}(t)\) is negligible on the slab (e.g.\ by preparation in the controlled manifold) or can be absorbed into a renormalization of initial conditions.
-\item The coupling is weak enough that truncation at second order in \(\mathcal{V}\) is consistent and yields a completely positive reduced generator (standard Davies-type condition).
-\end{enumerate}
-\end{assumption}
-
-\begin{theorem}[Induced Lindblad-type reduced generator (controlled approximation on a slab)]\label{thm:lindblad}
-Assume \ref{ass:cohproj}--\ref{ass:weakcoupling}. Then on the slab, the reduced evolution admits the following \emph{controlled Markovian approximation}:
-
-\begin{equation}\label{eq:lindblad}
-\od{}{t}\rho(t) \;=\; -\frac{i}{\hbar}\comm{H_{\mathrm{eff}}}{\rho(t)} \;+\; \mathcal{D}_{\mathrm{ind}}[\rho(t)] \;+\; \mathcal{R}_{\lambda_\ast}[\rho(t)],
-\end{equation}
-where:
-\begin{enumerate}[label=(\roman*)]
-\item \(H_{\mathrm{eff}}\) is an effective self-adjoint Hamiltonian on \(\Hfour\);
-\item \(\mathcal{D}_{\mathrm{ind}}\) is a completely positive dissipator of Gorini--Kossakowski--Sudarshan--Lindblad (GKSL) type;
-\item the remainder satisfies \(\normop{\mathcal{R}_{\lambda_\ast}} \le C'\lambda_\ast^{-1}\) on the slab for some constant \(C'\) determined by the bounded-geometry and coupling norms.
-\end{enumerate}
-In particular, the statement is not an exact identity but an approximation with an explicit remainder bounded by \(C'\lambda_\ast^{-1}\) on the slab.
-
+\begin{theorem}[Correct projection type]\label{thm:typed}
+The map $\cP$ is a completely positive, trace-preserving idempotent:
+$\cP^2=\cP$. Its range is $\J(\T(\cH_S))$. In particular, $\cP$ acts on
+density operators; it is not a vector-space projector on $\cH_U$ inserted into a
+Liouville-space formula.
 \end{theorem}
 
 \begin{proof}
-Under Assumption~\ref{ass:weakcoupling}(W1)--(W3), the memory kernel in \eqref{eq:NZ} is integrable and dominated by an exponentially decaying bound. Define the time-local generator by replacing \(\rho(s)\) with \(\rho(t)\) in the memory integral and extending the upper limit to infinity; the error is bounded by the exponential tail and the Lipschitz continuity of the reduced flow on the slab. This produces a bounded correction of order \(\lambda_\ast^{-1}\). Complete positivity of \(\mathcal{D}_{\mathrm{ind}}\) follows from the standard weak-coupling limit construction (Davies) when the coupling and decay hypotheses hold; equivalently, one may employ the second-order cumulant expansion with a positive Kossakowski matrix. The Hamiltonian part arises from the anti-self-adjoint component of the reduced generator. \qedhere
+Complete positivity and trace preservation are stable under composition. Moreover
+\[
+ \cP^2=\J\R\J\R=\J(\R\J)\R=\J\R=\cP.
+\]
+The range statement follows from $\cP X=\J(\R X)$ and $\cP\J Y=\J Y$.
 \end{proof}
 
-% ============================================================
-\section{Penrose--Diósi Limit in a Curvature-Dominated Regime}
-% ============================================================
+\subsection{Normalized coherent filtering}
 
-\subsection{Curvature-dominated (Penrose) regime}
+A physically interesting coherent filter may instead be a CP,
+trace-nonincreasing map $\mathcal F$. It does not generally output a state.
 
-Consider two semiclassical 4D branches \(A,B\) with mass densities \(\rho_A(\mathbf x)\), \(\rho_B(\mathbf x)\) on a spatial hypersurface, and let \(\delta\rho := \rho_A-\rho_B\).
-
-\begin{definition}[Coherence-stress decomposition]\label{def:Sigma}
-We decompose coherence stress into
+\begin{proposition}[Conditional normalization]\label{prop:normalization}
+For a density operator $\rho$ with
+$p(\rho)=\Tr\mathcal F(\rho)>0$, the conditional retained state is
 \[
-\Sigma \;=\; \Sigma_{\curv}+\Sigma_{\env}+\Sigma_{\meas},
+ \rho_{\mathcal F}=\frac{\mathcal F(\rho)}{p(\rho)}.
 \]
-where \(\Sigma_{\curv}\) is curvature-induced stress (dominant when spacetime response differs significantly between branches), \(\Sigma_{\env}\) arises from environment-induced monitoring/noise, and \(\Sigma_{\meas}\) encodes explicit measurement protocol back-action.
-\end{definition}
+The map $\rho\mapsto\rho_{\mathcal F}$ is nonlinear unless $p(\rho)$ is constant
+on the state space. Therefore an unnormalized filtered operator cannot be used as a
+deterministic reduced density matrix, and postselection cannot silently be replaced
+by linear open-system evolution.
+\end{proposition}
 
-\begin{remark}
-In this paper, \(\Sigma_{\curv}\) is extracted from the \emph{linearized (Newtonian/weak-field) gravitational response} of the emergent 4D geometry to branch-dependent mass densities, i.e.\ from the Poisson/linearized-Einstein Green's function; we do not invoke semiclassical backreaction through \(\langle T_{\mu\nu}\rangle\) as an input in defining \(\Sigma_{\curv}\).
-\end{remark}
+\begin{proof}
+The quotient has unit trace and is positive. If the normalized map were affine for
+all mixtures, comparing a mixture of two states with different success probabilities
+would contradict the state-dependent denominator. Hence affinity requires constant
+success probability on the relevant convex set.
+\end{proof}
 
-\begin{definition}[Penrose regime]\label{def:PenroseRegime}
-We say the system lies in the Penrose regime on a slab if:
-\begin{enumerate}[label=(P\arabic*)]
-\item \(\Sigma_{\curv} \gg \Sigma_{\env},\Sigma_{\meas}\) throughout the episode;
-\item the Newtonian approximation to the gravitational response on relevant scales is valid;
-\item controlled truncation (Assumption~\ref{ass:weakcoupling}) holds on the slab.
+\section{Exact memory before Markov approximation}
+
+Let $\cL$ be a bounded generator on $\T(\cH_U)$; this is automatic at a finite
+spectral cutoff. Let $X(t)=e^{t\cL}X_0$.
+
+\begin{theorem}[Nakajima--Zwanzig identity]\label{thm:NZ}
+The retained component obeys the exact equation
+\begin{align}
+\frac{d}{dt}\cP X(t)
+={}&\cP\cL\cP X(t)
++\cP\cL\cQ e^{t\cQ\cL\cQ}\cQ X_0 \nonumber\\
+&+\int_0^t
+\cP\cL\cQ e^{(t-s)\cQ\cL\cQ}
+\cQ\cL\cP X(s)\,ds .
+\label{eq:NZ}
+\end{align}
+If $X_0=\J\rho_0$, the inhomogeneous second term vanishes. The final term remains
+a memory kernel unless an additional limit controls it.
+\end{theorem}
+
+\begin{proof}
+Apply $\cP$ and $\cQ$ to $\dot X=\cL X$. Variation of constants gives
+\[
+\cQ X(t)=e^{t\cQ\cL\cQ}\cQ X_0+
+\int_0^t e^{(t-s)\cQ\cL\cQ}\cQ\cL\cP X(s)\,ds.
+\]
+Substitution in the $\cP$ equation yields \eqref{eq:NZ}.
+\end{proof}
+
+Equation~\eqref{eq:NZ} is the correct exact output of projection
+~\cite{Nakajima1958,Zwanzig1960}. It is generally
+non-Markovian. Complete positivity of the exact reduced channel
+$\R e^{t\cL}\J$ does not imply that its time-local generator exists or has GKSL
+form at each time.
+
+\section{When a GKSL generator is justified}
+
+Consider a system--environment Hamiltonian at finite cutoff,
+\[
+ H_\lambda=H_S+H_E+\lambda\sum_\alpha A_\alpha\otimes B_\alpha,
+\]
+with a stationary environmental state $\rho_E$. Let
+\[
+ C_{\alpha\beta}(t)=
+\Tr_E\!\left(\rho_E B_\alpha(t)B_\beta(0)\right).
+\]
+
+\begin{assumption}[Davies source conditions]\label{ass:Davies}
+The initial state is factorized at the preparation time; the correlations are
+stationary and integrable strongly enough for the weak-coupling limit; the rescaled
+time is $t=\lambda^{-2}\tau$; and the secular average over distinct Bohr frequencies
+exists. The Fourier matrices
+\[
+ \gamma_{\alpha\beta}(\omega)=
+\int_{-\infty}^{\infty}e^{i\omega t}C_{\alpha\beta}(t)\,dt
+\]
+are finite.
+\end{assumption}
+
+\begin{theorem}[Conditional Davies--GKSL limit]\label{thm:Davies}
+Under Assumption~\ref{ass:Davies} and the standard finite-system weak-coupling
+convergence hypotheses, the interaction-picture reduced dynamics converges on
+bounded rescaled-time intervals to a completely positive semigroup. Its generator is
+\[
+ \cL_D(\rho)=-i[H_{\rm LS},\rho]
++\sum_{\omega,\alpha,\beta}\gamma_{\alpha\beta}(\omega)
+\left(
+A_\beta(\omega)\rho A_\alpha(\omega)^\dagger
+-\frac12\{A_\alpha(\omega)^\dagger A_\beta(\omega),\rho\}
+\right).
+\]
+The matrices $\gamma(\omega)$ are positive semidefinite. Without this or another
+explicit Markovian limit, Theorem~\ref{thm:NZ} does not imply a GKSL equation.
+\end{theorem}
+
+\begin{proof}
+This is the Davies weak-coupling theorem~\cite{Davies1974} applied to the declared source data.
+Positivity of the correlation Fourier matrices is the positive-type/Bochner step
+that produces complete positivity in the GKSL form
+~\cite{GKSL1976,Lindblad1976}. The theorem is conditional here because MTT has
+not yet emitted the required correlation functions.
+\end{proof}
+
+\section{The precise Di\'osi--Penrose limit}
+
+\subsection{Newton self-energy from the gravitational constraint}
+
+Let $G_{\rm eff}>0$ be the coefficient appearing in the selected four-dimensional
+Einstein/TEGR law. Let $s_\ell$ be a normalized real spatial smearing function and
+write $\mu_{a,\ell}=s_\ell*\mu_a$ for the regulated mass density of branch $a$.
+Define
+\[
+ K_\ell(\mathbf x,\mathbf y)=
+ G_{\rm eff}\int_{\mathbb R^3}\!\!\int_{\mathbb R^3}
+ \frac{s_\ell(\mathbf x-\mathbf u)s_\ell(\mathbf y-\mathbf v)}
+ {|\mathbf u-\mathbf v|}\,d^3u\,d^3v.
+\]
+Its Fourier multiplier is
+$4\pi G_{\rm eff}|\widehat s_\ell(\mathbf k)|^2/|\mathbf k|^2\geq0$, so it is a positive
+quadratic-form kernel on its regulated domain.
+
+\begin{theorem}[Newton-constraint energy theorem]\label{thm:NewtonEnergy}
+Assume the static weak-field limit of the selected MTT gravitational law obeys the
+Poisson constraint
+\[
+ -\Delta u_a=4\pi G_{\rm eff}\mu_{a,\ell},
+ \qquad u_a(\mathbf x)\longrightarrow0\quad(|\mathbf x|\longrightarrow\infty).
+\]
+For regulated densities for which the displayed integrals are finite, the positive
+incompatibility energy of branches $a,b$ is
+\begin{align}
+ E_{ab}^{(G,\ell)}
+ &:=\frac{1}{8\pi G_{\rm eff}}
+ \int_{\mathbb R^3}|\nabla(u_a-u_b)|^2\,d^3x \label{eq:field-energy}\\
+ &=\frac12\int d^3x\,d^3y\,
+ \delta\mu_{ab}(\mathbf x)K_\ell(\mathbf x,\mathbf y)
+ \delta\mu_{ab}(\mathbf y), \qquad
+ \delta\mu_{ab}:=\mu_a-\mu_b. \label{eq:newton-energy}
+\end{align}
+In particular $E_{ab}^{(G,\ell)}\geq0$, and it uses the same $G_{\rm eff}$ as the
+gravitational action rather than a new collapse-sector coupling.
+\end{theorem}
+
+\begin{proof}
+The decaying solution is
+$u_a(\mathbf x)=G_{\rm eff}\int
+\mu_{a,\ell}(\mathbf y)|\mathbf x-\mathbf y|^{-1}d^3y$.
+Integration by parts and the Poisson equation give
+\[
+ \frac{1}{8\pi G_{\rm eff}}\int|\nabla\delta u|^2
+ =\frac{1}{2}\int\delta u\,\delta\mu_\ell
+ =\frac{G_{\rm eff}}{2}\int
+ \frac{\delta\mu_\ell(\mathbf x)\delta\mu_\ell(\mathbf y)}
+ {|\mathbf x-\mathbf y|}\,d^3x\,d^3y.
+\]
+Moving the two smearings from the densities to the Green kernel yields
+\eqref{eq:newton-energy}. Positivity is immediate from \eqref{eq:field-energy}.
+\end{proof}
+
+The theorem is the controlled Newtonian content of the selected two-derivative
+gravity law. It derives the spatial quadratic form once $G_{\rm eff}$, the boundary
+condition and $s_\ell$ are supplied. It does not select the value of $G_{\rm eff}$ or
+the external smearing map.
+
+\subsection{Penrose energy is an admissible branch metric}
+
+Let $\{|a\rangle\}_{a=1}^N$ be a finite set of approximate joint eigenstates of the
+regulated mass-density operators. Define vectors in the real Hilbert space
+$L^2(\mathbb R^3;\mathbb R^3)$ by
+\[
+ r_a=\frac{\nabla u_a}{\sqrt{4\pi G_{\rm eff}}}.
+\]
+Theorem~\ref{thm:NewtonEnergy} says exactly that
+\[
+ E_{ab}^{(G,\ell)}=\frac{1}{2}\|r_a-r_b\|^2.
+\]
+
+\begin{theorem}[Penrose--Schoenberg completely positive completion]
+\label{thm:PenroseSchoenberg}
+On the finite branch algebra define
+\[
+ \Gamma_{ab}:=\frac{E_{ab}^{(G,\ell)}}{\hbar},\qquad
+ M_{ab}(t):=e^{-t\Gamma_{ab}}.
+\]
+Then:
+\begin{enumerate}
+\item $\Gamma$ is conditionally negative definite;
+\item $M(t)$ is positive semidefinite with $M_{aa}(t)=1$ for every $t\geq0$;
+\item
+\[
+ \T_t(\rho):=M(t)\circ\rho
+\]
+is a completely positive, trace-preserving, population-preserving semigroup; and
+\item its generator is the regulated DP generator
+\begin{equation}
+ \D_{\rm DP}(\rho)=
+ -\frac1{2\hbar}\int d^3x\,d^3y\,
+ K_\ell(\mathbf x,\mathbf y)
+ [\widehat\mu(\mathbf x),[\widehat\mu(\mathbf y),\rho]].
+ \label{eq:DP-generator}
+\end{equation}
+It is the unique strongly continuous, time-homogeneous Schur semigroup on this
+branch algebra which preserves populations, has no additional diagonal Hamiltonian
+phase, and has infinitesimal real decay rates $\Gamma_{ab}$.
 \end{enumerate}
-\end{definition}
-
-\subsection{Coherent resolution scale}
-
-In the coherent truncation, the reduced description cannot resolve arbitrarily sharp densities. We encode this by an effective spatial resolution (smearing) scale.
-
-\begin{proposition}[Coherent resolution scale]\label{prop:ellcoh}
-Under Assumption~\ref{ass:gap}, there exists a characteristic length \(\ell_{\coh}\) such that observables in \(\Hfour\) are effectively band-limited at spatial frequencies above \(\sim \lambda_\ast^{1/2}\), and one may take
-\[
-\ell_{\coh} \asymp \lambda_\ast^{-1/2},
-\]
-up to constants depending on representation and bounded geometry.
-\end{proposition}
+\end{theorem}
 
 \begin{proof}
-The uniform gap \(\lambda_\ast\) separates coherent (harmonic) and noncoherent modes of \(\Delta_{\mathrm{int}}\). Controlled truncation bounds the contribution of noncoherent components by resolvent estimates proportional to \(\lambda_\ast^{-1}\). Translating the spectral bound into an effective spatial resolution on 4D observables yields a minimal length scale inversely proportional to the square root of the gap (standard in elliptic/spectral truncations). \qedhere
-\end{proof}
-
-\subsection{Emergence of the DP kernel}
-
-Let \(\hat\mu(\mathbf x)\) be the \(\ell_{\coh}\)-smeared mass density operator on \(\Hfour\).
-
-\begin{proposition}[Newtonian DP kernel]\label{prop:DP}
-Assume Definition~\ref{def:PenroseRegime} and Theorem~\ref{thm:lindblad}. Then the leading gravitational contribution to \(\mathcal{D}_{\mathrm{ind}}\) is
-\begin{equation}\label{eq:DP}
-\mathcal{D}_{\grav}[\rho]
-=
--\frac{1}{\hbar}\int_{\mathbb R^3}\!\!\int_{\mathbb R^3}
-\frac{G}{|\mathbf x-\mathbf y|}\;
-\dcomm{\hat\mu(\mathbf x)}{\hat\mu(\mathbf y)}{\rho}\;
-\dd^3x\,\dd^3y
-\;+\; \mathcal{R}_{\lambda_\ast}[\rho],
-\end{equation}
-with \(\normop{\mathcal{R}_{\lambda_\ast}} \le C'\lambda_\ast^{-1}\) on the slab.
-\end{proposition}
-
-\begin{proof}
-In the Penrose regime, the dominant contribution to the coupling \(\mathcal{V}\) entering the second-order reduced dissipator arises from curvature-sensitive channels sourced by mass density differences. The second-order term in \(\mathcal{V}\) produces a quadratic form in the coupling observable. In the Newtonian limit, the relevant Green's function is the Poisson kernel \(G/|\mathbf x-\mathbf y|\). The GKSL structure yields the double commutator. Smearing at scale \(\ell_{\coh}\) is inherited from the coherent truncation (Proposition~\ref{prop:ellcoh}). The remainder is bounded by the same \(\lambda_\ast^{-1}\) estimate as in Theorem~\ref{thm:lindblad}. A detailed expansion is provided in Appendix~\ref{app:B}. \qedhere
-\end{proof}
-
-\subsection{Penrose self-energy and timescale}
-
-Define the gravitational self-energy of the difference distribution:
-\begin{equation}\label{eq:EG}
-E_G(\delta\rho)
-:= \frac{G}{2}\int_{\mathbb R^3}\!\!\int_{\mathbb R^3}
-\frac{\delta\rho(\mathbf x)\,\delta\rho(\mathbf y)}{|\mathbf x-\mathbf y|}\;\dd^3x\,\dd^3y,
-\end{equation}
-with \(\delta\rho\) implicitly smeared at \(\ell_{\coh}\).
-
-\begin{corollary}[Penrose shadow law]\label{cor:PenroseShadow}
-Under the assumptions of Proposition~\ref{prop:DP}, off-diagonal reduced coherences decay with characteristic rate proportional to \(E_G/\hbar\), and the corresponding timescale satisfies
+For complex $c_a$ with $\sum_a c_a=0$, expansion of the squared distance gives
 \[
-\tau \asymp \frac{\hbar}{E_G},
+ \sum_{a,b}\overline{c_a}c_b\Gamma_{ab}
+ =-\frac{1}{\hbar}\left\|\sum_a c_a r_a\right\|^2\leq0.
 \]
-up to order-one universality factors and the controlled truncation remainder \(\mathcal{O}(\lambda_\ast^{-1})\).
+Thus $\Gamma$ is conditionally negative definite. Schoenberg's theorem
+~\cite{Schoenberg1938} implies $M(t)\succeq0$ for all $t\geq0$.
+Because $M_{aa}=1$, the Schur multiplier has a Gram/Stinespring representation and
+is CPTP. Entrywise multiplication shows $M(t+s)=M(t)\circ M(s)$.
+
+On a matrix unit $|a\rangle\langle b|$, the double commutator in
+\eqref{eq:DP-generator} multiplies by
+$\delta\mu_{ab}(\mathbf x)\delta\mu_{ab}(\mathbf y)$. Hence
+\[
+ \D_{\rm DP}(|a\rangle\langle b|)
+ =-\frac{E_{ab}^{(G,\ell)}}{\hbar}|a\rangle\langle b|
+ =-\Gamma_{ab}|a\rangle\langle b|,
+\]
+which is the generator of $\T_t$. Finally, a strongly continuous scalar semigroup
+on each matrix unit with derivative $-\Gamma_{ab}$ at zero is
+$e^{-t\Gamma_{ab}}$; this proves uniqueness in the declared Schur class.
+\end{proof}
+
+This theorem is the missing specialization of the corpus's general Schoenberg
+criterion: the physical branch separation is now the Newton field-energy distance,
+not an arbitrary damping matrix. Penrose obtained this self-energy from the squared
+difference of branch free-fall fields, but described its conversion into a lifetime
+only as a provisional order estimate~\cite{Penrose1996}. The theorem proves the
+mathematical completion of an exact rate rule; it does not promote that rule to a
+selected MTT law.
+
+\begin{corollary}[Davies realization of the same generator]\label{cor:DPDavies}
+If the independently controlled Davies source in
+Theorem~\ref{thm:Davies} couples through $\widehat\mu(\mathbf x)$ and its relevant
+zero-frequency Kossakowski kernel is
+$K_\ell(\mathbf x,\mathbf y)/\hbar$, then its dissipator is
+\eqref{eq:DP-generator} and its branch rates are
+$E_{ab}^{(G,\ell)}/\hbar$.
 \end{corollary}
 
 \begin{proof}
-In the basis diagonalizing \(\hat\mu(\mathbf x)\) and for branch superpositions with difference distribution \(\delta\rho\), the double commutator produces exponential damping of off-diagonal terms with exponent given by the quadratic form induced by the Newton kernel, which is exactly \(E_G/\hbar\) at leading order. The remainder term yields bounded corrections suppressed by \(\lambda_\ast^{-1}\) on the slab. \qedhere
+Diagonalizing the positive kernel gives commuting Hermitian Lindblad operators.
+Their GKSL sum is \eqref{eq:DP-generator}; evaluation on branch matrix units was
+performed in Theorem~\ref{thm:PenroseSchoenberg}.
 \end{proof}
 
-% ============================================================
-\section{Threshold (Knee) Behavior from Basin Geometry}
-% ============================================================
+\subsection{Gaussian realization is not an outcome theorem}
 
-\subsection{Admissible basins}
-
-\begin{assumption}[Admissible basin decomposition]\label{ass:basins}
-The coherent reduced state space relevant to the experiment decomposes into admissible basins \(\{\mathcal{B}_\alpha\}\) such that:
-\begin{enumerate}[label=(B\arabic*)]
-\item For each basin \(\mathcal{B}_\alpha\), the induced map (or continuous-time generator) is contractive on \(\mathcal{B}_\alpha\) with a strictly positive margin.
-\item Basin boundaries correspond to loss of contractivity along at least one direction.
-\item Under small perturbations of protocol parameters, the local boundary structure varies continuously.
-\end{enumerate}
-\end{assumption}
-
-\subsection{OU reduction near boundary and knee theorem}
-
-Let \(u\) parametrize the locally least stable direction near a boundary point, and let \(s\) denote a scalar protocol strength.
-
-\begin{assumption}[Local OU reduction]\label{ass:OU}
-Near a basin boundary and on the time window of interest, the reduced dynamics of \(u\) is approximated by
+\begin{proposition}[Random-unitary realization and outcome obstruction]
+\label{prop:unravelling}
+Let $V=\operatorname{span}\{r_a\}$ and let $W_t$ be standard Brownian motion on
+$V$. The diagonal random unitary
 \[
-\dot u(t) = -\gamma(s)\,u(t) + \eta(t),
+ U_t(W)|a\rangle=
+ \exp\!\left[-\frac{i}{\sqrt\hbar}\langle r_a,W_t\rangle\right]|a\rangle
 \]
-where \(\gamma(s)\) is continuous in \(s\), and \(\eta(t)\) is mean-zero Gaussian white noise with covariance \(2D\,\delta(t-t')\), with \(D>0\).
-\end{assumption}
-
-\begin{lemma}[Existence of finite critical point]\label{lem:crit}
-Under Assumptions~\ref{ass:basins} and \ref{ass:OU}, there exists \(s_\ast\) such that \(\gamma(s_\ast)=0\), with \(\gamma(s)>0\) for stable basin confinement and \(\gamma(s)<0\) for deterministic expulsion.
-\end{lemma}
-
-\begin{proof}
-By (B1) there exists a stable region where \(\gamma(s)>0\). By (B2), at boundary contact contractivity fails along the least stable direction, implying \(\gamma(s)\le 0\). Continuity in \(s\) (B3) implies a zero crossing \(s_\ast\). \qedhere
-\end{proof}
-
-\begin{theorem}[Threshold (knee) behavior]\label{thm:knee}
-Under Assumptions~\ref{ass:basins} and \ref{ass:OU}, for times \(t\) long compared to microscopic correlation times but within the slab, the basin-exit probability admits an exponential survival form
+satisfies
 \[
-P_{\mathrm{coll}}(s,t) = 1-e^{-\Gamma(s)t},
+ \T_t(\rho)=\mathbb E\bigl[U_t(W)\rho U_t(W)^\dagger\bigr].
 \]
-with an exit rate \(\Gamma(s)\) that exhibits a finite-strength crossover at \(s=s_\ast\). Moreover, \(\Gamma(s)\) admits an interpolation of sigmoid type:
-\[
-\Gamma(s)\approx \Gamma_0\frac{1}{1+\exp\left(\frac{s_\ast-s}{\delta s}\right)},
-\]
-where \(\delta s\) is proportional to the diffusion scale \(D\) divided by \(\left|\gamma'(s_\ast)\right|\).
-\end{theorem}
-
-\begin{proof}
-For \(s<s_\ast\), \(\gamma(s)>0\) and the OU process admits a stationary distribution; first-exit from \(u<0\) into \(u>0\) is noise-activated. Standard Kramers theory bounds the exit rate by \(\Gamma(s)\sim \exp(-\Delta V(s)/D)\), with \(\Delta V(s)\propto \gamma(s)\). For \(s>s_\ast\), \(\gamma(s)<0\) and the deterministic drift term drives \(u(t)\) away from the boundary, producing rapid exit on timescale \(\sim |\gamma(s)|^{-1}\). Matching these regimes yields a crossover whose width is set by the diffusion scale and the slope at criticality. Appendix~\ref{app:A} provides a detailed derivation of the OU/Kramers bounds and the interpolation scale. \qedhere
-\end{proof}
-
-\begin{proposition}[No knee from mass-density-only linear generators]\label{prop:noknee}
-Let a collapse model on \(\Hfour\) be generated by a linear, time-homogeneous dissipator that depends only on mass density (including fixed-parameter DP-type kernels). If protocol parameters \(s\) enter only through state preparation (not through the generator), then the collapse/exponential decay rate varies smoothly in \(s\) and cannot display a finite-strength nonanalytic threshold of the form in Theorem~\ref{thm:knee}.
+Consequently the DP density-operator semigroup alone does not select objective
+single-outcome collapse: it admits an unravelling in which every individual state
+evolves unitarily with a random phase.
 \end{proposition}
 
 \begin{proof}
-If the generator \(\mathcal{L}\) is independent of \(s\), then \(\rho(t)=e^{t\mathcal{L}}\rho(0;s)\). Any dependence on \(s\) arises solely through \(\rho(0;s)\). For linear semigroups on trace-class operators, decay rates are determined by the spectrum of \(\mathcal{L}\), which is independent of \(s\); thus no sign change of an internal restoring rate \(\gamma(s)\) can occur. Finite-strength knees require \(s\)-dependence of the generator or additional state-dependent structure. \qedhere
-\end{proof}
-
-% ============================================================
-\section{Protocol Dependence and Zeno/Anti-Zeno Crossover}
-% ============================================================
-
-\subsection{Protocol map}
-
-Let \(s\) denote probe strength and \(\Delta t\) probe interval. Define a protocol-cycle reduced map
+The Gaussian characteristic function gives
 \[
-\mathcal{M}_{s,\Delta t}(\rho) := P\,\Phi^{(s)}_{\Delta t}\!\big(P^\dagger\rho P\big)\,P^\dagger.
+ \mathbb E\exp\!\left[-\frac{i}{\sqrt\hbar}
+ \langle r_a-r_b,W_t\rangle\right]
+ =\exp\!\left[-\frac{t}{2\hbar}\|r_a-r_b\|^2\right]
+ =e^{-tE_{ab}^{(G,\ell)}/\hbar}.
 \]
-After \(n\) cycles (time \(t=n\Delta t\)), \(\rho(t)=(\mathcal{M}_{s,\Delta t})^n(\rho_0)\).
-
-\begin{theorem}[Zeno/anti-Zeno crossover]\label{thm:zeno}
-Under Assumptions~\ref{ass:cohproj}--\ref{ass:weakcoupling} and basin structure (Assumption~\ref{ass:basins}), there exist finite protocol scales \((s_Z,\Delta t_Z)\) such that:
-\begin{enumerate}[label=(\roman*)]
-\item (Zeno regime) For sufficiently large \(s\) and sufficiently small \(\Delta t\), basin exit is suppressed and \(\Gamma_{\mathrm{coll}}(s,\Delta t)\to 0\).
-\item (Anti-Zeno regime) For intermediate \((s,\Delta t)\) near \((s_Z,\Delta t_Z)\), basin exit is enhanced: \(\Gamma_{\mathrm{coll}}(s,\Delta t)>\Gamma_{\mathrm{coll}}(0)\).
-\end{enumerate}
-\end{theorem}
-
-\begin{proof}
-For large \(s\) and small \(\Delta t\), repeated application of \(\mathcal{M}_{s,\Delta t}\) confines the state to the most stable subspace associated with the basin, suppressing excursions along unstable directions; this is the standard Zeno mechanism in a reduced map setting. For intermediate \((s,\Delta t)\), the probe injects fluctuations aligned with the least stable direction and effectively lowers the Kramers barrier, increasing the exit rate; this is the anti-Zeno enhancement. The existence of a finite crossover scale follows from continuity of the induced generator in \(s\) and \(\Delta t\) together with the sign-change structure near basin boundaries (Lemma~\ref{lem:crit}). \qedhere
+This is exactly the Schur multiplier of
+Theorem~\ref{thm:PenroseSchoenberg}. Since this unravelling has no state-vector
+reduction, the ensemble channel cannot by itself choose a collapse ontology,
+instrument, outcome probabilities or realized branch. A nonlinear collapse
+unravelling such as the Di\'osi construction~\cite{Diosi1989} is additional data.
 \end{proof}
 
-\begin{proposition}[No protocol dependence for gravity-only generators]\label{prop:noprotocol}
-Let \(\dot\rho=\mathcal{L}\rho\) with \(\mathcal{L}\) a fixed linear generator depending only on mass density (e.g.\ DP kernel with fixed parameters) and independent of \((s,\Delta t)\). Then \(\Gamma_{\mathrm{coll}}\) cannot depend on protocol parameters \((s,\Delta t)\) except through initial-state preparation; Zeno/anti-Zeno crossovers require generator dependence on the protocol or additional state variables.
+\begin{corollary}[What curvature dominance does not prove]
+The statement that discarded modes are curvature dominated does not determine their
+two-point correlation function and therefore does not select a Davies realization.
+The selected Einstein/TEGR constraint fixes the Newton spatial form only after its
+effective coupling, boundary condition and external smearing are declared. It still
+does not prove the exact Penrose rate rule, Markov additivity, or an objective
+single-outcome process.
+\end{corollary}
+
+\subsection{No smearing length from an internal gap alone}
+
+\begin{proposition}[Scale-typing obstruction]\label{prop:scale}
+Let $\lambda_{\rm int}$ be an eigenvalue of an internal operator on $X_6$. The datum
+$\lambda_{\rm int}$ alone cannot canonically define an external spatial smearing
+length on $Y_4$. Such a definition requires an explicit metric normalization and an
+intertwiner, modulus, or response map that converts internal spectral units into
+external length units.
 \end{proposition}
 
 \begin{proof}
-If \(\mathcal{L}\) is independent of \((s,\Delta t)\), then the semigroup \(e^{t\mathcal{L}}\) has fixed spectral decay structure. Protocol variation affects only \(\rho_0\). Any systematic dependence of decay rates on \((s,\Delta t)\) (including suppression/enhancement regimes) requires \((s,\Delta t)\)-dependence of the generator or nonlinear state dependence. \qedhere
+Rescale the internal and external metrics independently. The internal eigenvalue
+changes under the internal rescaling while an external length changes under the
+external rescaling. No relation between them is invariant under these independent
+changes unless extra cross-sector data constrain the rescalings. Therefore
+$\ell_{\rm coh}=\lambda_{\rm int}^{-1/2}$ is at most an internal length before such
+a map is supplied.
 \end{proof}
 
-% ============================================================
-\section{Cross-Sector Closure}
-% ============================================================
+The regularization is experimentally consequential, not a cosmetic cure of the
+point-source divergence. A dedicated spontaneous-radiation search rules out the
+natural parameter-free DP version and places a lower bound on the effective nuclear
+mass-density radius~\cite{Donadi2021}. Any MTT-selected $s_\ell$ must therefore be
+transported to the experiment's convention and tested rather than chosen only for
+formal convenience.
 
-\begin{definition}[Bottleneck vector]\label{def:Theta}
-Let \(\Theta\) denote the finite set of spectral--geometric parameters controlling coherent-sector reduction on the slab, including:
-\(\lambda_\ast\) (uniform gap), projector bounds, curvature--gap coefficients, and damping/disturbance margins.
-\end{definition}
+\section{Thresholds, knees and protocols}
 
-\begin{theorem}[Cross-sector closure]\label{thm:closure}
-Assume controlled truncation and coherent-sector universality on the slab. Then the parameters governing:
-\begin{enumerate}[label=(\roman*)]
-\item the DP/Penrose shadow kernel (Section 4), including the effective smearing scale \(\ell_{\coh}\);
-\item threshold scales \(s_\ast,\delta s\) (Section 6);
-\item protocol crossover scales \((s_Z,\Delta t_Z)\) (Section 7);
-\end{enumerate}
-are functions of the common bottleneck vector \(\Theta\), up to controlled truncation errors of order \(\lambda_\ast^{-1}\).
+\begin{theorem}[Analytic finite-time response]\label{thm:analytic}
+Let $s\mapsto\cL(s)$ be a real-analytic family of bounded GKSL generators on a
+finite-dimensional state space. For fixed $t<\infty$, initial state $\rho_0(s)$ and
+observable $A(s)$ analytic in $s$, the response
+\[
+ f_t(s)=\Tr\!\left(A(s)e^{t\cL(s)}\rho_0(s)\right)
+\]
+is analytic. Hence a literal finite-strength nonanalytic knee cannot be inferred
+from such a family without a nonanalytic source, a stopping/conditioning operation,
+or a singular long-time, zero-noise, thermodynamic, or continuum limit.
 \end{theorem}
 
 \begin{proof}
-The DP/Penrose kernel depends on the coherent resolution scale, fixed by \(\lambda_\ast\) via Proposition~\ref{prop:ellcoh}, and on the same coupling norms that enter the truncation control. Threshold behavior depends on the sign change of the effective restoring rate \(\gamma(s)\), whose slope and noise floor are determined by damping and disturbance parameters arising from the truncated sector, hence by \(\Theta\). Protocol crossover scales depend on the interplay between probing and contraction margins, again fixed by the same stability parameters. Controlled truncation ensures that dependence on microscopic details beyond \(\Theta\) is suppressed by \(\lambda_\ast^{-1}\). \qedhere
+The exponential series for $e^{t\cL(s)}$ converges locally uniformly in operator
+norm, and each term is analytic. Composition with analytic finite-dimensional data
+and the trace preserves analyticity.
 \end{proof}
 
-\begin{proposition}[Absence of closure in gravity-only models]\label{prop:noclosure}
-Penrose/DP collapse models treated as fundamental laws introduce collapse parameters (e.g.\ smearing length, effective noise temperature) that are not constrained by gravitational coupling, EFT thresholds, or stability margins. Thus they do not enforce cross-sector closure unless augmented by additional structure equivalent to \(\Theta\).
+\begin{proposition}[Finite-noise OU crossing is smooth]\label{prop:OU}
+For the Ornstein--Uhlenbeck process
+\[
+ dX_t=-\gamma(s)X_t\,dt+\sqrt{2D(s)}\,dW_t
+\]
+in a bounded interval with absorbing endpoints, if $\gamma$ and $D>0$ vary smoothly,
+then the finite-domain mean first-passage solution varies smoothly through
+$\gamma=0$. A logistic knee may approximate a rapid crossover but is not an exact
+threshold theorem without a specified singular limit.
 \end{proposition}
 
 \begin{proof}
-In gravity-only collapse models, the collapse kernel parameters are set independently (or fitted) and are not derived from a unified spectral--geometric control structure. There is no mechanism tying these parameters to stability margins or EFT truncation errors. Therefore cross-sector consistency is not enforced and must be imposed externally, which is precisely the absence of closure. \qedhere
+The mean exit time solves a uniformly elliptic second-order boundary-value problem
+with smooth coefficients. Standard parameter dependence for this finite-domain
+problem is smooth while $D$ remains strictly positive. The sign change of the drift
+does not destroy ellipticity.
 \end{proof}
 
-% ============================================================
-\section{Experimental Diagnostics and Falsifiability}
-% ============================================================
+Repeated interventions can produce Zeno or anti-Zeno behavior, but the sign of the
+crossover depends on the instrument, interval and spectral density. It is not forced
+by noninvertible projection alone. A valid MTT prediction must therefore emit the
+instrument and environment correlation data, rather than label protocol dependence
+as universal.
 
-The theoretical results yield concrete, falsifiable diagnostics:
+\section{Cross-sector source contract}
 
-\begin{enumerate}[label=(D\arabic*)]
-\item \textbf{Penrose regime scaling:} In curvature-dominated conditions, decay rates scale with \(E_G/\hbar\) (Corollary~\ref{cor:PenroseShadow}).
-\item \textbf{Knee behavior:} Varying probe strength produces finite-strength threshold structure in exit probabilities (Theorem~\ref{thm:knee}).
-\item \textbf{Protocol dependence:} At fixed geometry (fixed \(E_G\)), varying \((s,\Delta t)\) modifies collapse behavior, including Zeno/anti-Zeno crossover (Theorem~\ref{thm:zeno}).
-\item \textbf{Closure constraints:} Parameters inferred from reduced dynamics must be consistent with independent stability constraints encoded by \(\Theta\) (Theorem~\ref{thm:closure}).
+Theorem~\ref{thm:PenroseSchoenberg} removes a mathematical consistency blocker:
+once the exact Penrose rate matrix is supplied, complete positivity and the DP
+generator are automatic. The remaining physical promotion target is therefore
+sharper. Let $\Theta_{\rm MTT}$ denote selected geometric data. A direct fundamental
+route must construct
+\begin{equation}
+ \Theta_{\rm MTT}\longmapsto
+ \bigl(G_{\rm eff},s_\ell,\widehat\mu,mathcal A_{ab}(t),
+       \{\mathcal I_a\}\bigr),
+ \label{eq:direct-source-map}
+\end{equation}
+where $\mathcal A_{ab}$ is the branch-coherence functional and
+$\{\mathcal I_a\}$ is included only if objective outcomes are claimed. The decisive
+rate-selection identity is
+\begin{equation}
+ -\left.\frac{d}{dt}\log|\mathcal A_{ab}(t)|\right|_{t=0}
+ =\frac{E_{ab}^{(G,\ell)}}{\hbar}
+ \quad\text{for every retained pair }a,b.
+ \label{eq:rate-selection-target}
+\end{equation}
+Time-homogeneous Markov composition then gives
+$\mathcal A_{ab}(t)=e^{-tE_{ab}^{(G,\ell)}/\hbar}$ up to a separately declared
+diagonal Hamiltonian phase.
+
+Alternatively, an environmental derivation must supply one source map
+\[
+\Theta_{\rm MTT}\longmapsto
+ \bigl(\R,\J,C_{\alpha\beta}(t),K_\ell,\ell,
+ H_{\rm LS},\text{preparation and secular limits}\bigr)
+\]
+with connection and unit conventions fixed. The following checks are then required:
+\begin{enumerate}
+\item $\R$ and $\J$ are CPTP and $\R\J=I$ on the declared retained state space;
+\item the selected two-derivative action has the stated $G_{\rm eff}$ and its
+static constraint yields Theorem~\ref{thm:NewtonEnergy};
+\item the external smearing map $s_\ell$ is selected in physical units and is
+compatible with experimental bounds;
+\item the direct route proves \eqref{eq:rate-selection-target}, or the environmental
+route proves the remaining correlation conditions below;
+\item the correlation functions are positive type and satisfy the weak-coupling
+hypotheses;
+\item their Fourier kernel equals the regularized Newton kernel in the claimed regime;
+\item the approximation error is bounded on a declared time interval; and
+\item any objective-collapse claim supplies a normalized stochastic instrument or
+nonlinear state process and proves its outcome probabilities, rather than inferring
+single outcomes from the ensemble master equation.
 \end{enumerate}
 
-A gravity-only collapse model cannot reproduce (D2)--(D4) without adding protocol/state dependence equivalent to a projection--basin mechanism.
+Current MTT results now supply more of this chain than version 2 recorded. The finite
+$q=79$ TT operator and the same-source two-derivative Einstein/TEGR action fix the
+gravitational tensor shape, and Theorem~\ref{thm:NewtonEnergy} fixes the Newton
+self-energy form in terms of the still-open $G_{\rm eff}$ and $s_\ell$. They do not
+yet prove \eqref{eq:rate-selection-target}, emit the corresponding environmental
+mass-density correlation function, or select a single-outcome instrument. These are
+distinct obligations; none should be hidden inside the word ``projection.''
 
-% ============================================================
-\section{Conclusions}
-% ============================================================
+\section{Version delta}
 
-We derived the DP double-commutator kernel and Penrose timescale \(\tau\asymp \hbar/E_G\) as a controlled effective limit of projection-induced reduced dynamics in MTT, valid in a curvature-dominated universality regime. We proved that outside this regime, admissible basin structure and noninvertible projection imply finite-strength threshold behavior and protocol dependence, including Zeno/anti-Zeno crossovers, which cannot arise from gravity-only mass-density-dependent linear generators. Finally, we established cross-sector closure: the parameters governing the reduced collapse dynamics are functions of the same spectral--geometric bottlenecks that control truncation and stability. Therefore Penrose/DP collapse is a valid shadow law in a restricted universality class, not a fundamental principle. All statements are slab-local and admissibility-conditioned: the controlled truncation, the Markovian approximation, and the basin/threshold analysis are asserted only on bounded-geometry time slabs where the coherent projector is bounded and the stability margins defining admissible basins remain positive.
+Relative to version 2, this successor:
+\begin{itemize}
+\item derives the regulated Newton self-energy from the static weak-field
+Einstein/TEGR constraint rather than treating its spatial form as an arbitrary bath
+kernel;
+\item proves that the pairwise Penrose energies are squared Hilbert distances and
+therefore conditionally negative definite;
+\item constructs the CPTP Penrose--Schoenberg semigroup and proves that its generator
+is exactly the DP double commutator;
+\item proves uniqueness inside the declared population-preserving pure-dephasing
+Markov class;
+\item shows that the same channel has a random-unitary Gaussian unravelling and hence
+does not by itself prove objective single outcomes;
+\item separates the direct Penrose-rate route from the Davies correlation-source
+route; and
+\item reduces the frontier to the selected external smearing, $G_{\rm eff}$, exact
+rate identity, controlled limit and outcome instrument.
+\end{itemize}
 
+All version-2 repairs remain in force: typed reduction/lifting, normalized filters,
+the exact memory equation, the Davies hypotheses, the scale-typing obstruction and
+the no-literal-knee results are not reopened.
 
-% ============================================================
-% Appendices
-% ============================================================
-\appendix
+\section{Conclusion}
 
-\section{OU/Kramers Reduction Near Basin Boundaries}\label{app:A}
+The spatial part of the DP proposal is now substantially less mysterious. Once the
+selected Einstein/TEGR law is placed in its static weak-field regime, branch
+incompatibility is the positive Newton field energy and therefore a squared Hilbert
+distance. The Penrose rate matrix consequently has a unique CPTP pure-dephasing
+Markov completion, whose generator is exactly the DP double commutator. This is a
+real theorem-level advance over merely assuming that a Kossakowski matrix is
+positive.
 
-We justify the OU/Kramers mechanism underlying Theorem~\ref{thm:knee}.
-
-\subsection{Linearization and diffusion}
-Under Assumption~\ref{ass:OU}, the boundary-normal coordinate satisfies
-\[
-\dot u = -\gamma(s)u + \eta(t),
-\qquad
-\mathbb{E}[\eta(t)]=0,
-\qquad
-\mathbb{E}[\eta(t)\eta(t')]=2D\delta(t-t').
-\]
-For \(\gamma(s)>0\), the OU process is stationary with variance \(\mathbb{E}[u^2]=D/\gamma(s)\).
-
-\subsection{Exit rate for \texorpdfstring{$s<s_\ast$}{s<s*}}
-Fix an absorbing boundary at \(u=0\) (exit). Standard first-passage analysis for OU processes yields an exponentially small exit rate as \(D\to 0\) or as the basin stability increases. In the presence of a smooth effective potential \(V_s(u)=\frac12\gamma(s)u^2\) on \(u<0\), Kramers theory bounds the mean exit time by
-\[
-\mathbb{E}[\tau_{\mathrm{exit}}] \sim \exp\!\left(\frac{\Delta V(s)}{D}\right),
-\]
-with \(\Delta V(s)\propto \gamma(s)\) for fixed basin thickness scale.
-
-\subsection{Exit for \texorpdfstring{$s>s_\ast$}{s>s*}}
-For \(\gamma(s)<0\), the drift is unstable and \(u(t)\) is expelled from the basin with characteristic time \(|\gamma(s)|^{-1}\), producing rapid exit.
-
-\subsection{Crossover}
-Because \(\gamma(s)\) crosses zero at \(s_\ast\) and varies continuously, the exit rate transitions sharply between noise-activated and drift-dominated regimes. The crossover width is controlled by the diffusion scale \(D\) and the slope \(\gamma'(s_\ast)\), yielding a sigmoid interpolation consistent with Theorem~\ref{thm:knee}.
-
-\section{Weak-Coupling Derivation of the DP Kernel}\label{app:B}
-
-We detail the second-order reduction leading to \eqref{eq:DP}.
-
-\subsection{Second-order reduced generator}
-Under Assumption~\ref{ass:weakcoupling}, the Markovian reduced dissipator can be written (formally) as
-\[
-\mathcal{D}_{\ind}[\rho]
-=
-\int_0^\infty \mathcal{P}\mathcal{V}\,e^{t\mathcal{Q}\mathcal{L}_{10}\mathcal{Q}}\,\mathcal{V}\mathcal{P}\,\rho\;\dd t
-\;+\;\text{h.c.},
-\]
-where exponential decay of \(e^{t\mathcal{Q}\mathcal{L}_{10}\mathcal{Q}}\) is controlled by \(\lambda_\ast\).
-
-\subsection{Curvature-dominated coupling observable}
-In the Penrose regime, the dominant coupling observable is the (smeared) mass density \(\hat\mu(\mathbf x)\), because curvature-sensitive noncoherent modes couple primarily through mass-energy content in the Newtonian limit. Thus, to leading order, \(\mathcal{V}\) contributes quadratically in \(\hat\mu\).
-
-\subsection{Newtonian Green's function}
-In the nonrelativistic limit, the gravitational response is governed by the Poisson equation, whose Green's function is \(1/|\mathbf x-\mathbf y|\). Therefore the quadratic form induced by the coupling yields the kernel \(G/|\mathbf x-\mathbf y|\) in the reduced dissipator, giving
-\[
-\mathcal{D}_{\grav}[\rho]
-=
--\frac{1}{\hbar}\int\!\!\int \frac{G}{|\mathbf x-\mathbf y|}\;\dcomm{\hat\mu(\mathbf x)}{\hat\mu(\mathbf y)}{\rho}\,\dd^3x\,\dd^3y,
-\]
-matching \eqref{eq:DP}.
-
-\subsection{Smearing from coherent resolution}
-The coherent truncation imposes a resolution scale \(\ell_{\coh}\asymp \lambda_\ast^{-1/2}\), so \(\hat\mu\) and \(\delta\rho\) are understood as smeared at \(\ell_{\coh}\). This regularizes short-distance divergences and fixes the effective smearing scale in the DP limit.
+The remaining gap is also exact. Penrose's argument motivates but does not derive
+the equality between MTT's physical branch-decay rate and $E_G/\hbar$. MTT must select
+that identity or an equivalent Davies correlation kernel, the external smearing and
+effective Newton normalization, and controlled errors. Moreover, the ensemble DP
+channel does not select a realized outcome; an objective-collapse claim additionally
+needs a stochastic instrument and probability theorem. Version 3 therefore closes
+the gravitational-metric and completely-positive-completion layers without claiming
+that the source-selection or measurement problem is already solved.
 
 \begin{thebibliography}{99}
+\bibitem{Nakajima1958}
+S.~Nakajima, \emph{On quantum theory of transport phenomena}, Progress of
+Theoretical Physics \textbf{20}, 948--959 (1958).
 
-\bibitem{MTT-Admissibility}
-P.~Nero,
-\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255621}
+\bibitem{Zwanzig1960}
+R.~Zwanzig, \emph{Ensemble method in the theory of irreversibility}, Journal of
+Chemical Physics \textbf{33}, 1338--1341 (1960),
+doi:10.1063/1.1731409.
 
-\bibitem{MTT-Foundation}
-P.~Nero,
-\emph{Modal Triplet Theory: Foundation},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.16949762}
+\bibitem{Davies1974}
+E.~B.~Davies, \emph{Markovian master equations}, Communications in Mathematical
+Physics \textbf{39}, 91--110 (1974), doi:10.1007/BF01608389.
 
-\bibitem{MTT-FixedPoints}
-P.~Nero,
-\emph{Fixed Points I--VI: Complete Coherence Spine},
-Zenodo preprints, August 2025.
-\url{https://doi.org/10.5281/zenodo.16948748}
+\bibitem{GKSL1976}
+V.~Gorini, A.~Kossakowski and E.~C.~G.~Sudarshan,
+\emph{Completely positive dynamical semigroups of N-level systems},
+Journal of Mathematical Physics \textbf{17}, 821--825 (1976),
+doi:10.1063/1.522979.
 
-\bibitem{MTT-ProjectionAdmissibility}
-P.~Nero,
-\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255838}
+\bibitem{Lindblad1976}
+G.~Lindblad, \emph{On the generators of quantum dynamical semigroups},
+Communications in Mathematical Physics \textbf{48}, 119--130 (1976),
+doi:10.1007/BF01608499.
 
-\bibitem{MTT-Closure}
-P.~Nero,
-\emph{Closure and Inevitability in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255510}
+\bibitem{Diosi1987}
+L.~Di\'osi, \emph{A universal master equation for the gravitational violation of
+quantum mechanics}, Physics Letters A \textbf{120}, 377--381 (1987),
+doi:10.1016/0375-9601(87)90681-5.
 
-\bibitem{MTT-CoherenceCapacity}
-P.~Nero,
-\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255905}
+\bibitem{Diosi1989}
+L.~Di\'osi, \emph{Models for universal reduction of macroscopic quantum
+fluctuations}, Physical Review A \textbf{40}, 1165--1174 (1989),
+doi:10.1103/PhysRevA.40.1165.
 
-\bibitem{MTT-CoherenceDynamics}
-P.~Nero,
-\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256048}
+\bibitem{Penrose1996}
+R.~Penrose, \emph{On gravity's role in quantum state reduction},
+General Relativity and Gravitation \textbf{28}, 581--600 (1996),
+doi:10.1007/BF02105068.
 
-\bibitem{MTT-QM}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.17074246}
+\bibitem{Schoenberg1938}
+I.~J.~Schoenberg, \emph{Metric spaces and positive definite functions},
+Transactions of the American Mathematical Society \textbf{44}, 522--536 (1938),
+doi:10.2307/1989894.
 
-\bibitem{MTT-QFT}
-P.~Nero,
-\emph{From MTT to Quantum Field Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17068816}
-
-\bibitem{MTT-GR}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to General Relativity},
-Zenodo preprint, October 2025.
-\url{https://doi.org/10.5281/zenodo.16950597}
-
-\bibitem{MTT-UVQG}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17077671}
-
-\bibitem{MTT-Measurement}
-P.~Nero,
-\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17177404}
-
-\bibitem{MTT-Irreversibility}
-P.~Nero,
-\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256408}
-
-\bibitem{MTT-Bell-Beables}
-P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17076300}
-
-\bibitem{MTT-Bell-Temporal}
-P.~Nero,
-\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
-Zenodo preprint, August 2025.
-\url{https://doi.org/10.5281/zenodo.18208884}
-
-\bibitem{MTT-Stochastic}
-P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18254862}
-
+\bibitem{Donadi2021}
+S.~Donadi, K.~Piscicchia, C.~Curceanu et al.,
+\emph{Underground test of gravity-related wave function collapse},
+Nature Physics \textbf{17}, 74--78 (2021),
+doi:10.1038/s41567-020-1008-4.
 \end{thebibliography}
+
 \end{document}

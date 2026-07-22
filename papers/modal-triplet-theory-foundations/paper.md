@@ -1,11 +1,11 @@
 ---
 abstract: |
-  We give a corrected functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle $`M_{10}\to Y_4`$ with compact Riemannian fiber $`X_6`$; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and Banach, Schur–Feshbach, projector-stability, and basin-robustness statements are given with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner.
+  We give a corrected functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle $`M_{10}\to Y_4`$ with compact Riemannian fiber $`X_6`$; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and Banach, Schur–Feshbach, projector-stability, and basin-robustness statements are given with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat $`\mathbb Z_{64}`$ line pulls back coherently to the q79 SpinC determinant, the $`1+2+3`$ carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby–Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time.
 author:
 - Peter Nero
-current_version: v7
+current_version: v8
 date: July 2026
-generated_from_main_tex_sha256: 7b7ea991bf6a669385b4cec959641f79c9088b76d1444b581b7aef230f7ab3ab
+generated_from_main_tex_sha256: 67b2cd3bb94fe446e2dbde09e93350fd6cc7500fb3dacd6619da134197b450c9
 paper_id: modal-triplet-theory-foundations
 release_state: zenodo_released
 released_version: v6.0
@@ -20,19 +20,19 @@ zenodo_url: "https://zenodo.org/records/18268125"
 # Revision note for this edition
 
 Supersedes.  
-*Modal Triplet Theory: Foundation*, version 6.
+*Modal Triplet Theory: Foundations*, version 7.
 
 Reason.  
-The previous foundation did not keep joint spectral compatibility, semigroup stability, fixed-point type, reduction domains, physical time, signature, and internal geometry as independent hypotheses.
+Version 7 correctly typed the shared circle as line-bundle data, but it did not yet distinguish the curved Boothby–Wang Lens/Nil realizations from the later exact flat q79 differential-line theorem, nor did it record the resulting finite connection, holonomy, and Hessian identities.
 
 Resolution.  
-Version 7 rebuilds the functional-analytic spine, corrects the fixed-point and Schur–Feshbach gates, separates all scales and evolution parameters, and adds the typed world-in-world/q79 geometry interface.
+Version 8 retains the functional-analytic spine and adds the universal q79 flat differential line, its SpinC/CLN/root-plane/finite- Hessian pullbacks, the parallel Boothby–Wang realization theorem, and the conditional polarized-section readout.
 
 Retained result.  
 The coherent-projector and basin-local fixed-point architecture survives as a conditional control-and-reduction framework.
 
 Remaining boundary.  
-Physical field equations, probability, particle content, numerical selection, and the same-source strain-to-q79 intertwiner remain downstream obligations.
+The flat finite theorem does not identify the nonzero-Chern physical HYM connection, prove the local strain-to-q79 continuum intertwiner, select a physical Hilbert space, or identify compact Reeb flow with time.
 
 # Status, scope, and logical vocabulary
 
@@ -65,9 +65,9 @@ The word “physical” is reserved for a realization equipped with a selected s
 
 ## Abstract Hilbert-bundle form
 
-Let $`Y`$ be a smooth base and let $`\mathscr H\to Y`$ be a real or complex separable Hilbert bundle. A state belongs to a declared Sobolev space
+Let $`Y`$ be a smooth base and let $`\mathcal E\to Y`$ be a real or complex separable Hilbert bundle. A state belongs to a declared Sobolev space
 ``` math
-\mathcal H=H^s(Y;\mathscr H),
+\mathcal H=H^s(Y;\mathcal E),
 ```
 with $`s`$ chosen so that every nonlinear map and operator domain used below is well defined. The abstract results are dimension neutral.
 
@@ -128,6 +128,92 @@ where $`\mathcal A_0=\ker\operatorname{Tr}`$. The corresponding common carrier i
 ```
 This proves the selected rank filtration, not its identification with the local strain decomposition. Such an identification requires a same-source bundle-and-connection intertwiner. The line bundle $`L_{\rm shared}`$ carries common $`U(1)`$ phase or holonomy data; it is neither an extra product dimension nor physical Lorentzian time.
 
+## Universal q79 differential line and finite operator square
+
+The phrase “one shared circle” has a global meaning only after its classifying maps and connection are retained. Let $`\mathcal L_{64}^{\rm univ}\to B_\nabla\mathbb Z_{64}`$ be the universal flat Hermitian line associated to the primitive character
+``` math
+\chi_1(n)=\exp(2\pi\mathrm i n/64).
+```
+On the unbranched q79 sheet stack, let $`c_{\rm sheet}:B^\circ\to BS_3`$ classify the sheet local system. Since $`S_3^{\rm ab}\cong\mathbb Z_2`$, there is exactly one nontrivial homomorphism to $`\mathbb Z_{64}`$,
+``` math
+h_{S_3}(\sigma)=32\,\epsilon(\sigma),
+ \qquad \epsilon(\sigma)=
+ \begin{cases}0,&\sigma\text{ even},\\1,&\sigma\text{ odd}.
+ \end{cases}
+```
+Put
+``` math
+c_{\rm sh}=B(h_{S_3})\circ c_{\rm sheet},
+ \qquad
+ (L_{\rm sh},\nabla_{\rm sh})
+ =c_{\rm sh}^{*}(\mathcal L_{64}^{\rm univ},\nabla_{64}).
+```
+For both admissible odd roots $`r\in\{1,33\}`$,
+``` math
+\chi_r\circ h_{S_3}=\operatorname{sgn}.
+```
+Thus the associated determinant sign line and $`L_{\rm sh}`$ are canonically parallel-isomorphic: their connections and every loop holonomy agree, not merely their fiber dimensions.
+
+<div id="thm:shared-line" class="theorem">
+
+**Theorem 1** (Finite shared-line and Hessian intertwiner). *On the selected q79 flat root-stack symbol, the same pullback $`L_{\rm sh}`$ tensors all three trace lanes
+``` math
+\mathcal H_{\rm CLN}
+ =L_{\rm sh}\otimes(\mathcal O\oplus\mathcal A_0\oplus\mathcal A).
+```
+Its scalar holonomy commutes with the trace, trace-zero, and full projectors, with the root-plane quarter-turn $`J_{DE}`$, and with the normalized finite Reynolds operators
+``` math
+P_{\rm Haar}=\frac1{6}\sum_{g\in S_3}\rho(g),
+ \qquad
+ H_{\rm fin}=\kappa_{\rm fin}(I-P_{\rm Haar}).
+```
+For the selected two-copy sheet/edge representation,
+``` math
+\operatorname{rank}P_{\rm Haar}=2,
+ \qquad
+ \operatorname{spec}(H_{\rm fin}/\kappa_{\rm fin})
+ =\{0^{\times2},1^{\times4}\},
+ \qquad H_{\rm TT}=\kappa_{\rm fin}I_2.
+```
+The lifted Hessian is exactly $`I_{L_{\rm sh}}\otimes H_{\rm fin}`$ and introduces no dimensionless fit.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The character identity gives the parallel determinant-line isomorphism. Scalar line holonomy commutes with every finite sheet operator. Haar averaging is an orthogonal projector, so $`I-P_{\rm Haar}`$ is the complementary projector. Direct decomposition of the selected two-copy permutation representation gives the displayed ranks and spectrum. Tensoring by the same line preserves these identities and proves the intertwining statement. ◻
+
+</div>
+
+The theorem is exact at flat differential-character and finite-symbol tier. It does not identify $`\nabla_{\rm sh}`$ with a nonflat physical HYM connection: a flat trace-free carrier has vanishing real characteristic curvature, whereas the active physical bundle has nonzero $`c_2`$. The continuum target is a spectral-symbol functor and a unitary parallel Hessian comparison, not literal equality of those connections.
+
+## Boothby–Wang Lens and Nil realizations
+
+Let $`(B,\omega)`$ be an integral symplectic manifold. The Boothby–Wang construction produces a principal circle bundle
+``` math
+U(1)\longrightarrow P_k\xrightarrow{\pi}B,
+ \qquad c_1(P_k)=k[\omega],
+```
+with connection/contact form $`\alpha_k`$ satisfying, in the chosen normalization,
+``` math
+d\alpha_k=2\pi k\,\pi^*\omega.
+```
+For $`B=\mathbb{CP}^1`$ this total space is the lens space $`L(k,1)`$; hence $`k=3`$ gives $`L(3,1)`$ exactly at bundle-topology level. For an integral area form on $`T^2`$, the total space is a quotient of the Heisenberg group by a lattice and is a three-dimensional contact nilmanifold .
+
+Consequently Lens and Nil are parallel realizations of one prequantization schema over different bases and curvature classes. They are not literally nested manifolds. Nor are they one literal line bundle: the rigorous common target is the differential classifier $`BU(1)_\nabla`$ with separate maps
+``` math
+c_{\rm Lens}:\mathbb{CP}^1\to BU(1)_\nabla,
+ \qquad
+ c_{\rm Nil}:T^2\to BU(1)_\nabla.
+```
+The flat q79 classifying map factors through $`B_\nabla\mathbb Z_{64}\to BU(1)_\nabla`$. Because the Boothby–Wang connections above have nonzero curvature while the q79 root-stack line is flat on $`B^\circ`$, the constructions cannot be identified connection by connection. A stronger MTT “same circle” theorem would have to select the three classifying maps and coherent comparison $`2`$-cells on a declared correspondence space.
+
+After a polarization, weight-$`m`$ equivariant functions on $`P_k`$ correspond to sections of the associated line $`L^m`$. In a positive holomorphic polarization this gives the familiar readout
+``` math
+\mathcal H_m=H^0(B,L^m).
+```
+This is a conditional geometric-quantization Hilbert space, not a Hilbert space selected by the abstract MTT axioms. The periodic Reeb flow is the vertical phase action and must not be identified with noncompact physical time .
+
 # Three independent evolution parameters
 
 The foundation distinguishes:
@@ -150,7 +236,7 @@ Well-posedness is imposed on a declared interval and invariant domain; global we
 
 <div id="ass:joint" class="assumption">
 
-**Assumption 1** (Joint spectral structure). For each base point, the $`A_i`$ are nonnegative self-adjoint operators whose spectral measures strongly commute. Their quadratic forms have a common dense domain. Equivalently, a realization may provide one nonnegative self-adjoint total internal operator $`A_{\rm int}`$ directly.
+**Assumption 2** (Joint spectral structure). For each base point, the $`A_i`$ are nonnegative self-adjoint operators whose spectral measures strongly commute. Their quadratic forms have a common dense domain. Equivalently, a realization may provide one nonnegative self-adjoint total internal operator $`A_{\rm int}`$ directly.
 
 </div>
 
@@ -168,7 +254,7 @@ provided the form sum is well defined. The coherent projector is then the spectr
 
 <div id="ass:gap" class="assumption">
 
-**Assumption 2** (Internal gap and Sobolev boundedness). There is $`\lambda_{\rm int}>0`$ such that, in quadratic-form sense,
+**Assumption 3** (Internal gap and Sobolev boundedness). There is $`\lambda_{\rm int}>0`$ such that, in quadratic-form sense,
 ``` math
 A_{\rm int}\succeq\lambda_{\rm int}Q,
 ```
@@ -190,7 +276,7 @@ This estimate, rather than spectral abscissa alone, is authoritative for a nonno
 
 <div class="proposition">
 
-**Proposition 3** (Gap-to-decay under a bounded perturbation). *Suppose $`Q\mathcal H`$ is invariant and
+**Proposition 4** (Gap-to-decay under a bounded perturbation). *Suppose $`Q\mathcal H`$ is invariant and
 ``` math
 L_{QQ}=-\kappa A_{\rm int}|_{Q\mathcal H}+B_Q,
  \qquad \kappa>0,quad B_Q\in\mathcal B(Q\mathcal H).
@@ -249,7 +335,7 @@ T_\tau=P R_\tau|_K.
 
 <div id="thm:existence" class="theorem">
 
-**Theorem 4** (Projected time-step existence). *Assume $`T_\tau(K)\subset K`$ and either:*
+**Theorem 5** (Projected time-step existence). *Assume $`T_\tau(K)\subset K`$ and either:*
 
 1.  *$`T_\tau:K\to K`$ is continuous and compact; or*
 
@@ -269,13 +355,13 @@ The conclusion is a *projected time-step fixed point*. It is not named an equili
 
 <div id="thm:promotion" class="theorem">
 
-**Theorem 5** (Strict-Lyapunov equilibrium promotion). *Suppose $`P\mathcal H`$ is invariant, so that $`P R_\tau u_\ast=R_\tau u_\ast=u_\ast`$, and along the orbit
+**Theorem 6** (Strict-Lyapunov equilibrium promotion). *Suppose $`P\mathcal H`$ is invariant, so that $`P R_\tau u_\ast=R_\tau u_\ast=u_\ast`$, and along the orbit
 ``` math
 \mathcal C(R_\tau u)-\mathcal C(u)
  =-\int_0^\tau\mathcal D(R_su)\,ds,
  \qquad\mathcal D\ge0,
 ```
-where $`\mathcal D(v)=0`$ exactly when $`F(v)=0`$. Then the fixed point from Theorem <a href="#thm:existence" data-reference-type="ref" data-reference="thm:existence">4</a> is an equilibrium.*
+where $`\mathcal D(v)=0`$ exactly when $`F(v)=0`$. Then the fixed point from Theorem <a href="#thm:existence" data-reference-type="ref" data-reference="thm:existence">5</a> is an equilibrium.*
 
 </div>
 
@@ -287,7 +373,7 @@ where $`\mathcal D(v)=0`$ exactly when $`F(v)=0`$. Then the fixed point from The
 
 <div id="thm:banach" class="theorem">
 
-**Theorem 6** (Banach gate). *If $`K`$ is complete, $`T_\tau(K)\subset K`$, and
+**Theorem 7** (Banach gate). *If $`K`$ is complete, $`T_\tau(K)\subset K`$, and
 ``` math
 \|T_\tau u-T_\tau v\|\le q\|u-v\|,
  \qquad0\le q<1,
@@ -312,7 +398,7 @@ with domain $`P\mathcal H\oplus\mathcal D(L_{QQ})`$. Assume:
 
 <div id="thm:feshbach" class="theorem">
 
-**Theorem 7** (Schur–Feshbach equation). *Under these hypotheses, solving $`L(p,q)=(f_P,f_Q)`$ is equivalent to
+**Theorem 8** (Schur–Feshbach equation). *Under these hypotheses, solving $`L(p,q)=(f_P,f_Q)`$ is equivalent to
 ``` math
 S p=f_P-L_{PQ}L_{QQ}^{-1}f_Q,
  \qquad
@@ -343,7 +429,7 @@ This is a local linear reduction near the reference state. Nonlinear truncation 
 
 <div class="proposition">
 
-**Proposition 8** (Riesz-projector stability). *Let $`A(\epsilon)`$ be a norm-resolvent-continuous family and let a contour $`\Gamma`$ remain in the resolvent set while enclosing one isolated cluster. Then
+**Proposition 9** (Riesz-projector stability). *Let $`A(\epsilon)`$ be a norm-resolvent-continuous family and let a contour $`\Gamma`$ remain in the resolvent set while enclosing one isolated cluster. Then
 ``` math
 P(\epsilon)=\frac{1}{2\pi i}\oint_\Gamma(z-A(\epsilon))^{-1}\,dz
 ```
@@ -353,7 +439,7 @@ is norm continuous and has constant finite rank. This proves projector stability
 
 <div id="thm:robust" class="theorem">
 
-**Theorem 9** (Basin-local fixed-point robustness). *Let $`T,\widetilde T:K\to K`$ be contractions on the same complete invariant domain with contraction constant at most $`q<1`$. If
+**Theorem 10** (Basin-local fixed-point robustness). *Let $`T,\widetilde T:K\to K`$ be contractions on the same complete invariant domain with contraction constant at most $`q<1`$. If
 ``` math
 \sup_{u\in K}\|T(u)-\widetilde T(u)\|\le\varepsilon,
 ```
@@ -378,7 +464,7 @@ Let $`r:X\to Y_{\rm eff}`$ be a surjective reduction map on a microscopic state 
 
 <div id="thm:descent" class="theorem">
 
-**Theorem 10** (Autonomous descent criterion). *There exists a unique reduced map $`\overline\Phi:Y_{\rm eff}\to Y_{\rm eff}`$ satisfying
+**Theorem 11** (Autonomous descent criterion). *There exists a unique reduced map $`\overline\Phi:Y_{\rm eff}\to Y_{\rm eff}`$ satisfying
 ``` math
 \overline\Phi\circ r=r\circ\Phi
 ```
@@ -450,7 +536,7 @@ Every realization must record the following entries independently:
 
 13. **Physical hyperbolicity:** principal symbol, constraints, causal domain, and relation between $`t`$ and $`\tau`$.
 
-14. **Scale separation:** internal gap $`\lambda_{\rm int}`$, coherent contraction scale, external four-dimensional cutoff $`\Lambda_{4D}`$, curvature scale, and RG scale $`\mu`$.
+14. **Scale separation:** record the internal gap $`\lambda_{\rm int}`$, coherent contraction scale, four-dimensional cutoff, curvature scale, and RG scale $`\mu`$.
 
 15. **Numerical provenance:** source-independent inputs, fitted inputs, branch selection, uncertainty, and held-out outputs.
 
@@ -468,15 +554,15 @@ Lorentzian hyperbolicity, constraint propagation, and a domain-of-dependence the
 
 <div id="thm:foundation" class="theorem">
 
-**Theorem 11** (Scoped MTT foundation). *Assume the dimension-neutral Hilbert-bundle architecture, joint spectral structure, internal gap, stable complementary semigroup, and the separately listed hypotheses for a chosen fixed-point theorem. Then the model possesses a bounded coherent decomposition and a projected time-step fixed point. Under strict Lyapunov and invariance hypotheses that point is an equilibrium. Under the Banach gate it is unique in the declared basin. Under the Schur–Feshbach hypotheses the local linear complementary sector can be eliminated with the displayed error bound. Under contraction and map-closeness hypotheses the fixed point is basin-locally robust. Autonomous reduced dynamics exists exactly under the descent criterion.*
+**Theorem 12** (Scoped MTT foundation). *Assume the dimension-neutral Hilbert-bundle architecture, joint spectral structure, internal gap, stable complementary semigroup, and the separately listed hypotheses for a chosen fixed-point theorem. Then the model possesses a bounded coherent decomposition and a projected time-step fixed point. Under strict Lyapunov and invariance hypotheses that point is an equilibrium. Under the Banach gate it is unique in the declared basin. Under the Schur–Feshbach hypotheses the local linear complementary sector can be eliminated with the displayed error bound. Under contraction and map-closeness hypotheses the fixed point is basin-locally robust. Autonomous reduced dynamics exists exactly under the descent criterion.*
 
 </div>
 
-None of these conclusions supplies a physical probability law, Lorentzian field equation, quantum representation, particle spectrum, Standard Model matching, cosmology, or numerical prediction. Those are downstream obligations governed by the admissibility ledger. Nor does equality of the local $`1+2+3`$ strain dimensions and the q79 $`1+2+3`$ trace-split ranks prove the same-source intertwiner needed to identify their metrics, connections, and vertical operators.
+None of these conclusions supplies a physical probability law, Lorentzian field equation, quantum representation, particle spectrum, Standard Model matching, cosmology, or numerical prediction. Those are downstream obligations governed by the admissibility ledger. Nor does equality of the local $`1+2+3`$ strain dimensions and the q79 $`1+2+3`$ trace-split ranks prove the same-source intertwiner needed to identify their metrics, connections, and vertical operators. Theorem <a href="#thm:shared-line" data-reference-type="ref" data-reference="thm:shared-line">1</a> closes the common flat line and finite Hessian square inside the q79 carrier; it does not close that local-to-continuum identification.
 
 # Conclusion
 
-The corrected Foundation provides a typed and noncircular spine for the MTT corpus. It identifies what the triplet and projector mean, how complementary stability is proved, which fixed-point conclusion is available, how reduction is typed, and where physical assumptions enter. Its value is precisely this separation: later realizations can now be tested against explicit gates rather than inheriting conclusions from an undifferentiated appeal to coherence.
+The corrected Foundation provides a typed and noncircular spine for the MTT corpus. It identifies what the triplet and projector mean, how complementary stability is proved, which fixed-point conclusion is available, how reduction is typed, and where physical assumptions enter. Its value is precisely this separation: later realizations can now be tested against explicit gates rather than inheriting conclusions from an undifferentiated appeal to coherence. The shared-circle sector now illustrates the intended discipline particularly well: a curved Boothby–Wang schema, an exact flat q79 differential line, and a conditional polarized Hilbert readout coexist without being conflated.
 
 <div class="thebibliography">
 
@@ -489,5 +575,13 @@ T. Kato, *Perturbation Theory for Linear Operators*, Springer, 1995.
 K.-J. Engel and R. Nagel, *One-Parameter Semigroups for Linear Evolution Equations*, Springer, 2000.
 
 K. Deimling, *Nonlinear Functional Analysis*, Springer, 1985.
+
+W. M. Boothby and H. C. Wang, On contact manifolds, *Annals of Mathematics* 68 (1958), 721–734.
+
+R. Casals, D. M. Pancholi, and F. Presas, Contact blow-up, *Expositiones Mathematicae* 33 (2015), 97–123.
+
+N. M. J. Woodhouse, *Geometric Quantization*, second edition, Oxford University Press, 1992.
+
+P. Nero, *q79 Universal Shared Differential Line and Finite-Operator Intertwiner*, executable theorem packet, 2026.
 
 </div>

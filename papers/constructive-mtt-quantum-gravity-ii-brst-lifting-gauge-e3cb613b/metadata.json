@@ -1,12 +1,12 @@
 {
-  "abstract": "We extend Constructive MTT-QG I (Borel summability of the SPT-filtered TT sector) to a fully gauge-consistent formulation. Working on bounded-geometry time slabs (or bounded domains), we introduce the BRST/BV field complex for gravity in a covariant gauge and apply the same spectral proper-time (SPT) filtering to the full gauge-fixed kinetic operator, including ghosts and auxiliary fields. Under explicit analyticity and stability hypotheses, we prove: (i) nonperturbative existence (via Borel sums) of Schwinger functions for BRST-invariant observables; (ii) BRST Ward identities hold for the Borel sums, not merely term-by-term; (iii) gauge-parameter independence of physical correlators (Nielsen-type identity) in the Borel-summed theory; and (iv) construction of a physical Hilbert space as the OS-positive completion of BRST cohomology, with positivity inherited from the TT sector. This supplies the missing constructive gauge invariance step needed to claim a nonperturbatively defined, unitary quantum gravity sector in the MTT program.",
+  "abstract": "This corrected paper replaces the claim that separately SPT-filtered graviton and ghost covariances already yield a nonperturbative unitary gravity theory. It proves a shared-filter BRST chain theorem, a finite-cutoff quantum Ward theorem, a uniform Borel-inheritance theorem, and a conditional cohomological Osterwalder-Schrader reconstruction theorem. Independent filters, TT positivity alone, and permanent Gaussian damping do not supply the missing interfaces. The selected gravitational quantum measure, QME, constructive removal limits, and physical reflection positivity remain explicit exit gates.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2025",
+  "current_version": "v2",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18209696",
     "created": "2026-01-10T21:24:41.229180+00:00",
@@ -32,19 +32,27 @@
     "updated": "2026-01-10T21:24:41.577502+00:00",
     "version": "v1.0"
   },
-  "main_tex_sha256": "9ae584c1c1c2c37246fbf074067a786fe952057ba1b15523f5e95f73c692b312",
+  "main_tex_sha256": "bc2d5cadb02e3c99e96998df4d0eacb8e94f5fe35b8be6983e92ded41f3c1381",
   "paper_id": "constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b",
-  "paper_md_sha256": "009e60cb78328aa7d0e1fd35b4400e89f3d3c9851ca77f4831eb1b20b164f02a",
+  "paper_md_sha256": "ecdea9511b6f2c6a8c72c671b865a52963f3f559195abb2f433110272f8de311",
   "release_state": "zenodo_released",
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "e198cb8f12f5efa993c89503cf31325077c5781fad1558a2eeb59e9add8bed95",
+    "selected_revision": true,
+    "superseded_source_path": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_II__BRST_Lifting__Gauge_Invariant_Observables__and_the_Physical_Hilbert_Space_under_SPT_Damping"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 19441,
+      "bytes": 28712,
       "path": "main.tex",
-      "sha256": "9ae584c1c1c2c37246fbf074067a786fe952057ba1b15523f5e95f73c692b312"
+      "sha256": "bc2d5cadb02e3c99e96998df4d0eacb8e94f5fe35b8be6983e92ded41f3c1381"
+    },
+    {
+      "bytes": 11304,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "e198cb8f12f5efa993c89503cf31325077c5781fad1558a2eeb59e9add8bed95"
     },
     {
       "bytes": 15705,
@@ -55,9 +63,9 @@
   "source_provenance": {
     "legacy_source_path": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_II__BRST_Lifting__Gauge_Invariant_Observables__and_the_Physical_Hilbert_Space_under_SPT_Damping"
   },
-  "source_tree_sha256": "8e9035a60b57c688df01d7a6267d42e70543712b22b10560b2a9965aa0c83112",
-  "title": "Constructive MTT Quantum Gravity II: BRST Lifting, Gauge-Invariant Observables, and the Physical Hilbert Space under SPT Damping",
-  "version_relation": "matches_latest_release",
+  "source_tree_sha256": "c0c2ba9fe4a511ce800131126c9e403ffe40c18754a7cf1d31ef039ae1ba1ede",
+  "title": "Constructive MTT Quantum Gravity II: A Conditional BRST/BV Compatibility and Physical-State Reconstruction Contract for SPT-Filtered Models",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18209696",

@@ -1,6 +1,118 @@
 {
   "schema": "mtt.paper-migration-config.v1",
-  "expected_canonical_papers": 138,
+  "expected_canonical_papers": 139,
+  "native_projects": [
+    {
+      "abstract": "This revised paper separates topology-only obstructions from representation checks and physical source theorems. It places chiral multiplicity on the internal six-manifold, reports the exact q79 smooth c3=+/-6 index candidate with its analytic promotion gate, uses integer U(1) characters, incorporates the selected finite-branch hypercharge and anomaly theorems at their declared scope, and corrects Majorana, holonomy, wave-cone, operator-selection, PQ, and one-loop beta-function claims.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2",
+      "path": "papers/topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "13 Standard Model & Topology-Only Constraints/_work/Topology__Only_Constraints_in_Modal_Triplet_Theory",
+      "superseded_project": "13 Standard Model & Topology-Only Constraints/_work/Topology__Only_Constraints_in_Modal_Triplet_Theory",
+      "title": "Topological Consistency Conditions in Modal Triplet Theory: Internal Indices, Charge Lattices, and Holonomy"
+    },
+    {
+      "abstract": "This corrected successor separates existence of the SPT-filtered Gaussian measure, finite-cutoff Borel summability, and removal of the cutoff. A positive proper-time gap makes the bounded-volume covariance trace class and gives all finite Sobolev moments. Nonnegative quartic finite-mode interactions are Borel summable with an exact positive-ray Borel-Laplace representation, and weighted convergence of Borel transforms is proved sufficient for cutoff removal. Selection and stability of the gravitational interaction, uniform constructive bounds, the physical removal limit, and BRST/BV reconstruction remain explicit gates.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014",
+      "path": "papers/constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_I__Borel_Summability_of_the_SPT_Filtered_TT_Sector",
+      "superseded_project": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_I__Borel_Summability_of_the_SPT_Filtered_TT_Sector",
+      "title": "Constructive MTT Quantum Gravity I: Finite-Volume SPT Gaussian Control and a Conditional Borel-Summability Contract"
+    },
+    {
+      "abstract": "This corrected paper replaces the claim that separately SPT-filtered graviton and ghost covariances already yield a nonperturbative unitary gravity theory. It proves a shared-filter BRST chain theorem, a finite-cutoff quantum Ward theorem, a uniform Borel-inheritance theorem, and a conditional cohomological Osterwalder-Schrader reconstruction theorem. Independent filters, TT positivity alone, and permanent Gaussian damping do not supply the missing interfaces. The selected gravitational quantum measure, QME, constructive removal limits, and physical reflection positivity remain explicit exit gates.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b",
+      "path": "papers/constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_II__BRST_Lifting__Gauge_Invariant_Observables__and_the_Physical_Hilbert_Space_under_SPT_Damping",
+      "superseded_project": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_II__BRST_Lifting__Gauge_Invariant_Observables__and_the_Physical_Hilbert_Space_under_SPT_Damping",
+      "title": "Constructive MTT Quantum Gravity II: A Conditional BRST/BV Compatibility and Physical-State Reconstruction Contract for SPT-Filtered Models"
+    },
+    {
+      "abstract": "This corrected successor proves a Penrose-Schoenberg completion theorem. The selected Einstein/TEGR static constraint gives the regulated Newton self-energy as one half of a squared Green-Hilbert distance. Its pairwise matrix is conditionally negative definite, so exp(-t E_G/hbar) is a CPTP pure-dephasing semigroup whose generator is exactly the regulated Diosi-Penrose double commutator. This closes positivity and Markovian completion, while leaving the external smearing, effective Newton scale, exact MTT rate-selection identity, controlled environmental limit, and objective outcome instrument as explicit source obligations.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v3",
+      "date": "July 2026",
+      "paper_id": "gravitationally-induced-collapse-as-an-effective-limit-d74eb471",
+      "path": "papers/gravitationally-induced-collapse-as-an-effective-limit-d74eb471",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "6 Quantum Mechanics/_work/Gravitationally_Induced_Collapse_as_an_Effective_Limit_of_Coherence_Breakdown_in_Modal_Triplet_Theory",
+      "superseded_project": "6 Quantum Mechanics/_work/Gravitationally_Induced_Collapse_as_an_Effective_Limit_of_Coherence_Breakdown_in_Modal_Triplet_Theory",
+      "title": "Gravitationally Induced Collapse in Modal Triplet Theory: A Penrose-Schoenberg Completion and Source Contract"
+    },
+    {
+      "abstract": "This corrected successor separates descent of upstairs dynamics, recovery from shadow data, and selection of probability measures. It proves the fiber-preservation criterion for deterministic descent, injectivity on a declared code as the criterion for exact recovery, and reversibility of a quotient when the fiber relation is preserved in both time directions. It also proves that arbitrary finite probability vectors can be represented by basin volumes, so basin representation alone derives neither Born, Hawking nor cosmological weights. Measurement instruments and islands are updates or restricted recovery; a common MTT source remains conditional on one selected upper measure and three explicit pushforwards.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v3",
+      "date": "July 2026",
+      "paper_id": "projection-probability-and-irreversibility-shadow-bridg-a86c97e5",
+      "path": "papers/projection-probability-and-irreversibility-shadow-bridg-a86c97e5",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "8 Measurement, Selection & Computation/_work/Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2",
+      "superseded_project": "8 Measurement, Selection & Computation/_work/Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2",
+      "title": "Projection, Probability, and Irreversibility: A Descent, Recovery, and Measure-Separation Framework for MTT Shadow Bridges"
+    },
+    {
+      "abstract": "This paper replaces the claim that AQFT follows from admissible charts alone. It distinguishes a conditional admissibility-indexed precosheaf from a physical Haag--Kastler net and proves the rigorous bridge currently available: a decomposable coherent projector preserves isotony and spacelike commutation on the compatible subalgebra of an already local upper net. Failure of joint representability does not imply commutation, chart inclusion does not automatically extend observables, and absence of a global chart does not forbid a quasilocal algebra or colimit.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+      "path": "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "7 Quantum Field Theory/_work/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory",
+      "superseded_project": "7 Quantum Field Theory/_work/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory",
+      "title": "Admissibility Precosheaves and Conditional AQFT Nets in Modal Triplet Theory"
+    },
+    {
+      "abstract": "This paper replaces the former claim that one projection obstruction makes the observed form of physics inevitable. It gives a typed dependency map separating representative selection, exact decoding, autonomous descent, effective merger, measure-dependent stochastic reduction, locality under compatible compression, fixed-point robustness and physical realization. Born weights, complex Hilbert structure, complete QFT reconstruction, gravitational normalization, entropy and a physical arrow of time remain independent theorem targets.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "closure-and-inevitability-in-modal-triplet-theory",
+      "path": "papers/closure-and-inevitability-in-modal-triplet-theory",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "2 Meta & Diagnosis & Universality/_work/Closure_and_Inevitability_in_Modal_Triplet_Theory",
+      "superseded_project": "2 Meta & Diagnosis & Universality/_work/Closure_and_Inevitability_in_Modal_Triplet_Theory",
+      "title": "Conditional Closure Relations in Modal Triplet Theory"
+    },
+    {
+      "abstract": "A book-length interpretive account of persistence, finite capacity, admissible projection and reusable coherence across physics, life, mind and cosmology. The second revised edition distinguishes established science, structural interpretation and conditional Modal Triplet Theory extensions.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v6",
+      "date": "2026",
+      "paper_id": "the-universe-has-a-bad-memory",
+      "path": "papers/the-universe-has-a-bad-memory",
+      "source_provenance": "obsidian-books/The_Universe_Has_a_Bad_Memory/The_Universe_Has_a_Bad_Memory__Why_Physics_Holds__Second_Revised_Edition_v6.tex",
+      "title": "The Universe Has a Bad Memory"
+    }
+  ],
   "source_roots": [
     "0 Index Corpus",
     "1 Core & Encodings",
@@ -37,8 +149,8 @@
     },
     {
       "superseded_project": "3 Core Foundations/_work/Modal_Triplet_Theory__Foundation_v6 (1)",
-      "selected_project": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__Foundation_v7",
-      "revision_evidence": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V7_REVISION_AUDIT.md"
+      "selected_project": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__Foundation_v8",
+      "revision_evidence": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V8_SHARED_LINE_REVISION_AUDIT.md"
     },
     {
       "superseded_project": "3 Core Foundations/_work/Modal_Triplet_Theory__MTT_as_a_Superset_v2",
@@ -92,8 +204,9 @@
     },
     {
       "superseded_project": "10 ProtoSpinor/_work/Closure_Strain_Geometry_and_the_Structure_of_the_Standard_Model_v5",
-      "selected_project": "10 ProtoSpinor/revised_tex_vnext/Closure_Strain_Geometry__Local_Normal_Forms_and_Conditional_Matter_Encodings_v6",
-      "revision_evidence": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md"
+      "selected_project": "10 ProtoSpinor/revised_tex_vnext/Closure_Strain_Geometry__Local_Normal_Forms_and_Conditional_Matter_Encodings_v7",
+      "revision_evidence": "10 ProtoSpinor/revised_tex_vnext/CLOSURE_STRAIN_V7_SHARED_LINE_REVISION_AUDIT.md",
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60"
     },
     {
       "superseded_project": "10 ProtoSpinor/_work/Proto_Spinor_Closure_and_Worldsheet_Encoding_in_Modal_Triplet_Theory_v3",
@@ -102,8 +215,9 @@
     },
     {
       "superseded_project": "10 ProtoSpinor/_work/The_Proto_Spinor__Triadic_Closure_from_Pointwise_Internal_Embedding_v4",
-      "selected_project": "10 ProtoSpinor/revised_tex_vnext/The_Proto_Spinor__Conditional_Spinorial_Closure_and_q79_Interface_v5",
-      "revision_evidence": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md"
+      "selected_project": "10 ProtoSpinor/revised_tex_vnext/The_Proto_Spinor__Conditional_Spinorial_Closure_and_q79_Interface_v6",
+      "revision_evidence": "10 ProtoSpinor/revised_tex_vnext/PROTO_SPINOR_V6_SHARED_LINE_REVISION_AUDIT.md",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8"
     },
     {
       "superseded_project": "10 ProtoSpinor/_work/World_in_World_Genesis__A_Proto_Geometric_Origin_of_Time__Gravity__Matter__and_Quantization_in_Modal_Triplet_Theory_v4",

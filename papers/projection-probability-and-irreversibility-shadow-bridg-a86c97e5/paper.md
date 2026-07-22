@@ -1,600 +1,315 @@
 ---
 abstract: |
-  We develop a unified framework within Modal Triplet Theory (MTT) connecting three apparently independent problems in 4D physics: quantum measurement collapse, black hole information loss, and the origin of probability in cosmology. In MTT, effective 4D physics arises as a shadow of deterministic dynamics on a higher configuration space under a noninvertible coherent projection. We introduce admissibility barriers—loci where the projection fails to be stably invertible due to gap closure, projector discontinuity, or basin rearrangement—and prove a general noninvertibility theorem: whenever trajectories cross such a barrier, the induced 4D shadow dynamics admits no global reconstruction map, despite invertibility of the upstairs evolution.
-
-  We show that (i) quantum measurement collapse and (ii) black hole information loss are two instantiations of this same projection-induced noninvertibility, differing only in the physical realization of the barrier. We further show that Born probabilities, Hawking thermal weights, and cosmological initial-condition measures arise from a single basin-measure functional evaluated across different admissibility barriers, within the coherent universality class. Inflationary attractors and decoherence-based branching are identified as partial shadows that detect basin structure but cannot fix probability weights without access to the upstairs invariant measure.
-
-  Finally, we incorporate results on computational irreducibility: there exist admissibility barriers for which basin membership is algorithmically undecidable, ruling out any uniform decoding protocol that would restore full information after barrier crossing. The framework clarifies the status of island constructions, POVM updates, and Everettian interpretations as partial inversions or refusals of projection rather than restorations of global 4D invertibility.
+  This corrected successor separates three mathematical questions that the earlier shadow-bridge paper conflated: whether upstairs dynamics descends to a deterministic shadow map, whether an upstairs state can be recovered from shadow data, and whether probability laws in measurement, black-hole radiation and cosmology have one selected common source. We prove the exact fiber-preservation criterion for descent and the injectivity-on-a-code criterion for exact recovery. These results correct the earlier right-inverse argument: a noninjective surjection may have a measurable section, while still failing to recover the lost state. We also prove that noninjective projection alone does not imply an arrow of time; a quotient is reversible when its fiber equivalence relation is invariant in both time directions. At the probabilistic level, one upper measure and three explicit outcome maps do yield three pushforwards, but arbitrary target weights can always be represented by basin sizes, so basin representation alone derives neither the Born rule, Hawking weights nor a cosmological measure. Measurement instruments and island constructions are consequently described as updates or recovery on restricted codes/algebras, not as global inverses. The three physical domains remain useful structural shadow bridges. Their theorem-level unification requires an MTT-selected upper measure, explicit pushforward maps and independent derivations of all three target laws.
 author:
 - Peter Nero
-current_version: v2
-date: January, 2026
-generated_from_main_tex_sha256: dccc393aba624bb65e240318ad4258bd98fe71e72e8f37faa7dbfa0ec11b6efc
+current_version: v3
+date: |
+  July 2026  
+  Version 3
+generated_from_main_tex_sha256: 619c935fea0a867af0a668eea6427a517e2d09b6fe02dbd885d143fb51b0ecfd
 paper_id: projection-probability-and-irreversibility-shadow-bridg-a86c97e5
 release_state: zenodo_released
 released_version: v1.0
 title: |
   Projection, Probability, and Irreversibility:  
-  Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory
+  A Descent, Recovery, and Measure-Separation Framework for MTT Shadow Bridges
 zenodo_doi: 10.5281/zenodo.18262041
 zenodo_record_id: 18262041
 zenodo_url: "https://zenodo.org/records/18262041"
 ---
 
-# Scope, Motivation, and Claim Discipline
+# Correction and claim tiers
 
-This paper bridges three long-standing problems traditionally treated separately:
+The paper studies an invertible upstairs flow and a many-to-one shadow description. It does not claim that the current MTT corpus has derived quantum measurement, black-hole evaporation or cosmological probabilities from one measure. The corrected claim tiers are:
 
-1.  **Quantum measurement collapse**: why deterministic unitary evolution yields definite outcomes with probabilistic weights.
+1.  **Exact mathematics:** descent, reversibility, restricted recovery, pushforward and nonuniqueness theorems.
 
-2.  **Black hole information loss**: why semiclassical evaporation appears to map pure states to mixed thermal exterior states.
+2.  **Established domain mathematics:** quantum instruments and code recovery, semiclassical Hawking radiation, and measures on declared cosmological model spaces.
 
-3.  **Cosmic initial conditions**: why the universe begins in a highly special state and why any probability measure on cosmic histories exists.
+3.  **MTT shadow bridges:** possible common structural interpretations, conditional on source maps that have not yet been selected.
 
-The central claim is structural: these are shadows of deterministic upstairs dynamics under a noninvertible projection across admissibility barriers.
+The MTT geometry is denoted $`Y_4\times X_6`$. The local Circle–Lens–Nil filtration is not used as a literal product topology. No result below depends on identifying compact phase with physical time.
 
-## Claim discipline
+# Descent of upstairs dynamics
 
-We separate three layers:
-
-1.  **Mathematical spine (proved):** deterministic invertible evolution $`\Phi_t`$ on a configuration space $`\mathcal X`$, a measurable shadow map $`P`$, and the consequence that barrier-crossing noninjectivity implies the shadow evolution admits no measurable right-inverse.
-
-2.  **Structural identifications:** measurement, horizons, and early cosmology correspond to distinct physical realizations of admissibility barriers.
-
-3.  **Phenomenological alignment:** mainstream “patches” (decoherence, POVMs, islands, inflationary measures) align with partial inversions/re-encodings on restricted algebras or partial basin detection.
-
-We do not re-derive the Born rule or Hawking spectrum from microphysics here; we show they are instances of a common basin-measure mechanism, under stated identifications and within the coherent universality regime.
-
-<div class="remark">
-
-*Remark 1* (Unitarity vs invertibility). “Unitarity” in this paper means invertibility of the upstairs evolution. The central statement is that invertibility does not descend through noninvertible projection; the 4D shadow can be noninvertible even when the full theory is invertible.
-
-</div>
-
-# Upstairs Dynamics, Projection, and Admissibility Barriers
-
-## Configuration space and invertible evolution
-
-Let $`(\mathcal X,\mathcal B)`$ be a standard Borel space representing the full MTT configuration space on a bounded-geometry slab. Let
+Let $`\mathcal X`$ and $`\mathcal Y`$ be standard Borel spaces, let $`P:\mathcal X\to\mathcal Y`$ be a measurable surjection, and let $`\Phi_t:\mathcal X\to\mathcal X`$ be a measurable bijection. Define the fiber equivalence relation
 ``` math
-\Phi_t:\mathcal X\to\mathcal X
-```
-be a deterministic, invertible, measurable flow, with measurable inverse $`\Phi_{-t}`$.
-
-## Coherent projector and observable map
-
-Let $`\Pi:\mathcal X\to\mathcal X_{\mathrm{coh}}`$ be the coherent projector selecting dynamically stable configurations (spectral gap $`\lambda_*>0`$, FCC margins positive in the admissible regime). Let $`I:\mathcal X_{\mathrm{coh}}\to\mathcal Y`$ be the observable pushforward to an effective 4D state space $`\mathcal Y`$ (e.g. a Hilbert-state or algebraic state). Define
-``` math
-P := I\circ \Pi:\mathcal X\to\mathcal Y.
+x\sim_P x'\quad\Longleftrightarrow\quad P(x)=P(x').
 ```
 
-<div class="remark">
+<div id="thm:descent" class="theorem">
 
-*Remark 2* (Boundary conditions). If the effective 4D description is realized on a slab/domain with boundary, we assume standard well-posed elliptic/hyperbolic boundary conditions are chosen so that the coherent projection and flow are defined and the slab-local analysis applies. This does not affect the measure-theoretic arguments below.
-
-</div>
-
-## Admissibility
-
-We assume there exists an admissible subset $`\mathcal A\subset \mathcal X`$ where coherent evolution is well-controlled (bounded geometry, gap persists, projector regular, stability margins positive).
-
-<div id="def:barrier" class="definition">
-
-**Definition 3** (Admissibility barrier). A measurable set $`\mathcal B\subset\mathcal X`$ is an admissibility barrier if:
-
-1.  $`\mathcal X\setminus\mathcal B = \mathcal U_+\sqcup \mathcal U_-`$ with $`\mathcal U_\pm`$ measurable and nonempty;
-
-2.  $`\Pi`$ (or the admissibility constraints defining $`\mathcal U_\pm`$) is regular on each $`\mathcal U_\pm`$, but there is no globally measurable right-inverse for $`\Pi`$ across $`\mathcal U_+\cup\mathcal U_-`$;
-
-3.  there exists $`y\in\mathcal Y`$ such that $`P^{-1}(y)`$ intersects both $`\mathcal U_+`$ and $`\mathcal U_-`$.
-
-</div>
-
-<div id="lem:barrier-operational" class="lemma">
-
-**Lemma 4** (Operational sufficient conditions for an admissibility barrier). *Let $`P:\mathcal X\to\mathcal Y`$ be measurable and let $`\mathcal X\setminus\mathcal B=\mathcal U_+\sqcup\mathcal U_-`$ with $`\mathcal U_\pm`$ measurable and nonempty. If there exist $`x_+\in\mathcal U_+`$ and $`x_-\in\mathcal U_-`$, $`x_+\neq x_-`$, with
+**Theorem 1** (Descent theorem). *There exists a map $`T_t:\mathcal Y\to\mathcal Y`$ satisfying
 ``` math
-P(x_+)=P(x_-),
+\begin{equation}
+ T_t\circ P=P\circ\Phi_t
+\label{eq:descent}
+\end{equation}
 ```
-then Definition <a href="#def:barrier" data-reference-type="ref" data-reference="def:barrier">3</a>(B3) holds (fiber overlap). If additionally there is no globally measurable right-inverse for $`\Pi`$ across $`\mathcal U_+\cup\mathcal U_-`$, then $`\mathcal B`$ is an admissibility barrier and Theorem <a href="#thm:barrier" data-reference-type="ref" data-reference="thm:barrier">9</a> applies (for times $`t`$ for which $`\Phi_t(\mathcal U_\pm)`$ have positive measure).*
-
-</div>
-
-<div class="remark">
-
-*Remark 5* (Physical sufficient conditions). Measurement: context change produces two distinct upstairs configurations with the same coarse pointer record under $`P`$, landing in different admissible regions. Black holes: distinct interior/exterior microstates project to the same exterior coarse algebra/state. Cosmology: distinct early-time admissible histories project to the same late-time coarse observables.
-
-</div>
-
-# Barrier Crossing Implies Shadow Noninvertibility
-
-<div class="definition">
-
-**Definition 6** (Shadow evolution map). Define the shadow map at time $`t`$ by
+if and only if
 ``` math
-T_t := P\circ \Phi_t:\mathcal X\to\mathcal Y.
+\begin{equation}
+ P(x)=P(x')\quad\Longrightarrow\quad
+ P(\Phi_t x)=P(\Phi_t x')
+\label{eq:fiber}
+\end{equation}
 ```
-
-</div>
-
-<div class="definition">
-
-**Definition 7** (Right-invertibility (reconstruction)). We say $`T_t`$ admits a measurable right-inverse if there exists a measurable map $`S_t:\mathcal Y\to\mathcal X`$ such that
-``` math
-T_t\circ S_t=\mathrm{Id}_{\mathcal Y}.
-```
-
-</div>
-
-<div class="remark">
-
-*Remark 8* (Why right inverse?). A right inverse formalizes reconstruction: given a shadow state $`y\in\mathcal Y`$, $`S_t(y)`$ would produce an upstairs configuration whose shadow is $`y`$. A left inverse would require injectivity of $`T_t`$, which is exactly what fails at barrier crossing.
-
-</div>
-
-<div id="thm:barrier" class="theorem">
-
-**Theorem 9** (Admissibility-barrier noninvertibility). *Assume:*
-
-1.  *$`\Phi_t`$ is invertible and measurable;*
-
-2.  *$`P`$ is measurable;*
-
-3.  *$`\mathcal B`$ is an admissibility barrier with regions $`\mathcal U_\pm`$ as in Definition <a href="#def:barrier" data-reference-type="ref" data-reference="def:barrier">3</a>.*
-
-*Then for any time $`t`$ such that $`\Phi_t(\mathcal U_+)`$ and $`\Phi_t(\mathcal U_-)`$ both have positive measure and Definition <a href="#def:barrier" data-reference-type="ref" data-reference="def:barrier">3</a>(B3) holds for some $`y\in\mathcal Y`$, the map $`T_t`$ admits no measurable right-inverse.*
+for all $`x,x'\in\mathcal X`$. If it exists, $`T_t`$ is unique. It is measurable whenever the quotient map has the corresponding measurable factorization property.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* By Definition <a href="#def:barrier" data-reference-type="ref" data-reference="def:barrier">3</a>(B3) there exist $`x_+\in\mathcal U_+`$ and $`x_-\in\mathcal U_-`$ with $`x_+\neq x_-`$ and $`P(x_+)=P(x_-)=y`$. Since $`\Phi_t`$ is invertible, $`\Phi_t(x_+)\neq\Phi_t(x_-)`$. But
+*Proof.* If $`T_t`$ exists, applying it to $`P(x)=P(x')`$ gives condition <a href="#eq:fiber" data-reference-type="eqref" data-reference="eq:fiber">[eq:fiber]</a>. Conversely, define $`T_t(y)=P(\Phi_t x)`$ for any $`x`$ with $`P(x)=y`$. Condition <a href="#eq:fiber" data-reference-type="eqref" data-reference="eq:fiber">[eq:fiber]</a> makes the definition independent of the representative. Surjectivity gives uniqueness. ◻
+
+</div>
+
+Thus a many-to-one shadow does not automatically possess autonomous shadow dynamics. When the fiber-preservation condition fails, two upstairs representatives of one shadow state have different shadow futures. The correct output is then a relation, stochastic kernel, memory-dependent evolution, or an enlarged state, not a single-valued $`T_t`$.
+
+<div id="thm:reversible" class="theorem">
+
+**Theorem 2** (Reversible quotient criterion). *Suppose $`\{\Phi_t\}_{t\in\mathbb R}`$ is a measurable group and the fiber relation is preserved by every $`\Phi_t`$, positive and negative. Then the descended maps form a group,
 ``` math
-T_t(x_+) = P(\Phi_t(x_+)),\qquad T_t(x_-) = P(\Phi_t(x_-)).
+T_{t+s}=T_tT_s,\qquad T_t^{-1}=T_{-t}.
 ```
-If $`T_t`$ had a measurable right-inverse $`S_t`$, then $`T_t(S_t(y))=y`$ would define a single-valued reconstruction for $`y`$. However, the existence of two distinct preimages across the barrier means no single-valued measurable map can act as a right-inverse on a set of positive measure while satisfying $`T_t\circ S_t=\mathrm{Id}_{\mathcal Y}`$. Therefore no measurable right-inverse exists. ◻
+Consequently, noninjectivity of $`P`$ alone does not imply irreversible shadow dynamics or an arrow of time.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Using surjectivity of $`P`$ and <a href="#eq:descent" data-reference-type="eqref" data-reference="eq:descent">[eq:descent]</a>,
+``` math
+T_{t+s}P=P\Phi_{t+s}=P\Phi_t\Phi_s=T_tP\Phi_s=T_tT_sP.
+```
+Therefore $`T_{t+s}=T_tT_s`$. Taking $`s=-t`$ gives the inverse. ◻
+
+</div>
+
+Irreversibility can arise if only a forward semigroup descends, if the retained description is repeatedly coarse-grained, if an environment is traced out, or if a boundary/initial condition selects one branch. Each requires its own theorem.
+
+# Recovery is not a right inverse of a surjection
+
+The earlier paper argued that noninjectivity forbids a right inverse. This is false. For example, $`P:\mathbb R\to[0,\infty)`$, $`P(x)=x^2`$, is noninjective but has the measurable section $`S(y)=\sqrt y`$ with $`P S=\mathrm{Id}`$. The section chooses a representative; it does not recover the sign of the original input.
+
+Let $`\mathcal C\subseteq\mathcal X`$ be a declared code or admissible subset. At time $`t`$, exact state recovery means a map
+``` math
+R_t:P(\Phi_t\mathcal C)\to\Phi_t\mathcal C
+```
+such that
+``` math
+R_t(P(\Phi_t x))=\Phi_t x\qquad(x\in\mathcal C).
+```
+
+<div id="thm:recovery" class="theorem">
+
+**Theorem 3** (Exact restricted-recovery theorem). *An exact recovery map $`R_t`$ exists if and only if $`P|_{\Phi_t\mathcal C}`$ is injective. If $`\Phi_t\mathcal C`$ is Borel, the spaces are standard Borel and $`P|_{\Phi_t\mathcal C}`$ is a Borel injection, then its inverse on the image is Borel measurable.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* If $`R_t`$ exists and $`P(z)=P(z')`$ for $`z,z'\in\Phi_t\mathcal C`$, then $`z=R_tP(z)=R_tP(z')=z'`$. Conversely, injectivity defines the inverse of the restriction. The measurable statement is the standard Borel injection theorem. ◻
 
 </div>
 
 <div class="corollary">
 
-**Corollary 10** (Upstairs invertibility does not descend). *Even if $`\Phi_t`$ is invertible/unitary upstairs, the induced 4D shadow dynamics $`T_t`$ is not globally reconstructible once barrier-crossing noninjectivity occurs.*
+**Corollary 4** (No global recovery after a collision). *If two distinct states in the declared code have the same shadow image, no recovery map can restore both. A section may still return one representative, but cannot be an inverse on the original code.*
 
 </div>
 
-# Measurement Collapse as Barrier Crossing and Partial Inversion
+This is the correct mathematical form of an admissibility barrier: either descent fails because a fiber splits into different shadow futures, or recovery fails because the shadow channel identifies distinct code states. Gap closure or projector discontinuity may cause such a failure, but the failure must be checked rather than inferred from terminology.
 
-## Measurement contexts and basin structure
+# Quantum channels and restricted codes
 
-A measurement context $`C`$ (instrument/POVM specification) restricts admissibility to a subset $`\mathcal A_C\subset\mathcal X`$ and induces outcome basins $`\{\mathcal A_i\}`$ corresponding to stable pointer sectors. A measurement interaction corresponds to a context change $`C\to C'`$ that may force trajectories across a measurement barrier $`\mathcal B_{\mathrm{meas}}`$.
+Let $`\mathcal N`$ be a completely positive trace-preserving channel and let $`\mathcal C`$ now denote a set of density operators on a code subspace.
 
-<div class="definition">
+<div id="prop:channel" class="proposition">
 
-**Definition 11** (Measurement barrier). $`\mathcal B_{\mathrm{meas}}`$ is an admissibility barrier whose crossing corresponds (in the shadow) to the onset of stable outcome basins for the post-context admissible set.
-
-</div>
-
-<div class="proposition">
-
-**Proposition 12** (Collapse as shadow noninvertibility). *Measurement collapse is an instance of Theorem <a href="#thm:barrier" data-reference-type="ref" data-reference="thm:barrier">9</a>: after crossing $`\mathcal B_{\mathrm{meas}}`$, the shadow map admits no global reconstruction on $`\mathcal Y`$.*
+**Proposition 5** (Channel recovery obstruction). *If there are distinct $`\rho,\sigma\in\mathcal C`$ with $`\mathcal N(\rho)=\mathcal N(\sigma)`$, no channel $`\mathcal R`$ can satisfy $`\mathcal R\mathcal N(\omega)=\omega`$ for every $`\omega\in\mathcal C`$. Exact recovery is therefore a code-relative property, not a global consequence of projection.*
 
 </div>
 
-## POVM update as partial right-inversion on restricted state spaces
+<div class="proof">
 
-Let $`\mathcal A(\mathcal Y)`$ denote the shadow observable algebra, and for outcome $`i`$ define the compatible subalgebra
+*Proof.* Applying a purported recovery channel to the equality would give $`\rho=\sigma`$. ◻
+
+</div>
+
+For a finite-dimensional quantum code and noise operators $`E_a`$, the Knill–Laflamme conditions 
 ``` math
-\mathcal A_i := \{A\in\mathcal A(\mathcal Y)\mid [A,E_i]=0\},
+P_{\mathcal C}E_a^\dagger E_bP_{\mathcal C}=\alpha_{ab}P_{\mathcal C}
 ```
-where $`E_i`$ is the POVM element.
+are the standard necessary and sufficient conditions for exact correction of the declared error set. Island and entanglement-wedge reconstruction should be compared with this restricted algebra/code language. They are not global inverses from all radiation states to a unique microscopic bulk state.
 
-<div class="definition">
+## Measurement instruments are updates
 
-**Definition 13** (State restriction map). Let $`\mathrm{States}(\mathcal A_i)`$ denote the state space on $`\mathcal A_i`$. Define the restriction/evaluation map
+A quantum instrument is a family of completely positive trace-nonincreasing maps $`\{\mathcal I_i\}`$ whose sum is trace preserving. Its probabilities and conditional states are
 ``` math
-F_{\mathcal A_i}:\mathcal X\to \mathrm{States}(\mathcal A_i),\qquad
-F_{\mathcal A_i}(x) := \omega_{P(\Phi_t(x))}\big|_{\mathcal A_i},
+p_i=\mathop{\mathrm{Tr}}\mathcal I_i(\rho),\qquad
+ \rho_i=\frac{\mathcal I_i(\rho)}{p_i}\quad(p_i>0).
 ```
-where $`\omega_{P(\Phi_t(x))}`$ denotes the induced shadow state.
+This is a selected operational law. It is not a right inverse of premeasurement dynamics. Projection language may encode the outcome partition, but it does not derive the instrument, the Born functional, or objective single-outcome collapse.
+
+# Coarse graining and entropy
+
+Information loss, entropy growth and dynamical noninvertibility are related but not identical.
+
+<div id="prop:entropy" class="proposition">
+
+**Proposition 6** (No entropy arrow from noninjectivity alone). *A noninjective channel or shadow map does not by itself imply monotonic increase of von Neumann entropy. Unital quantum channels do not decrease entropy in finite dimension, but general nonunital channels may decrease it. Likewise, Theorem <a href="#thm:reversible" data-reference-type="ref" data-reference="thm:reversible">2</a> provides noninjective projections with reversible quotient dynamics.*
 
 </div>
 
-<div id="prop:povm-partial-inverse" class="proposition">
+<div class="proof">
 
-**Proposition 14** (POVM update as partial right-inversion on restricted algebras). *For each outcome $`i`$, there exists a map
+*Proof.* The unital statement follows from majorization. As a counterexample for general channels, amplitude damping sends every state asymptotically to a pure ground state, so some mixed-state entropies decrease. The reversible quotient statement follows from Theorem <a href="#thm:reversible" data-reference-type="ref" data-reference="thm:reversible">2</a>. ◻
+
+</div>
+
+A physical arrow therefore needs additional input: an initial-condition asymmetry, a dissipative semigroup, repeated coarse graining, a bath state, or a branch selection rule. The current MTT branch axiom may serve as such input only after its physical source and compatibility conditions are proved.
+
+# One upper measure and three pushforwards
+
+Let $`(\mathcal X,\Sigma,\mu)`$ be a probability space and let $`O_j:\mathcal X\to\mathcal Y_j`$ be measurable maps for $`j\in\{\mathrm{meas},\mathrm{BH},\mathrm{cos}\}`$.
+
+<div id="thm:push" class="theorem">
+
+**Theorem 7** (Common-source pushforward theorem). *Each domain receives the probability measure
 ``` math
-S_i:\mathrm{States}(\mathcal A_i)\to\mathcal X
+\nu_j=(O_j)_*\mu,\qquad
+ \nu_j(A)=\mu(O_j^{-1}(A)).
 ```
-such that
+For a finite outcome partition $`B_{j,a}=O_j^{-1}(\{a\})`$, its weights are $`\nu_j(a)=\mu(B_{j,a})`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* This is the definition of pushforward measure. Measurability makes inverse images events, and countable additivity and normalization are inherited from $`\mu`$. ◻
+
+</div>
+
+This theorem says exactly what a common basin measure would mean. To use it physically, one must provide the same explicit $`\mu`$ and all three selected maps. Merely writing three unrelated measures with the same symbol does not establish a common source.
+
+<div id="thm:nonunique" class="theorem">
+
+**Theorem 8** (Basin representation is not a derivation). *Let $`(p_1,\ldots,p_n)`$ be any probability vector. On the atomless probability space $`([0,1],\mathcal B,dx)`$ there exists a measurable partition $`[0,1]=B_1\sqcup\cdots\sqcup B_n`$ with $`dx(B_i)=p_i`$. There are generally infinitely many such partitions. Hence reproducing target probabilities as basin volumes has no predictive content unless the measure and basins are selected independently of those target probabilities.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Let $`a_0=0`$ and $`a_i=\sum_{k\leq i}p_k`$, and take $`B_i=[a_{i-1},a_i)`$, with the final endpoint included. Measure-preserving rearrangements generate further partitions with the same weights. ◻
+
+</div>
+
+# The three probability laws remain distinct
+
+## Born probabilities
+
+For a density operator $`\rho`$ and projective outcomes $`\Pi_i`$, the Born weights are
 ``` math
-F_{\mathcal A_i}\circ S_i = \mathrm{Id}_{\mathrm{States}(\mathcal A_i)}.
+p_i=\mathop{\mathrm{Tr}}(\rho\Pi_i).
 ```
-In general, no such right inverse exists for the full state map into $`\mathrm{States}(\mathcal A(\mathcal Y))`$ once barrier-crossing noninjectivity occurs.*
+Gleason’s theorem  shows, under its dimension and additivity hypotheses, that probability measures on the projection lattice have this density-operator form. It does not select $`\rho`$, an MTT outcome map, or a physical collapse mechanism. A basin model derives Born weights only if its independently selected pushforward is proved equal to this functional for all allowed states and measurement contexts.
 
-</div>
+## Hawking weights
 
-<div class="remark">
+Semiclassical Hawking occupation factors  arise from quantum-field mode propagation and Bogoliubov coefficients on a black-hole background. They are not a probability measure on the same sample space as a laboratory quantum instrument merely because both contain normalized weights. A common-source MTT theorem must construct $`O_{\mathrm{BH}}`$ and recover the temperature, greybody factors and state dependence, not insert them as basin labels.
 
-*Remark 15*. This is the measurement analogue of islands: reconstruction is possible only on a restricted state-space of observables, not pointwise on the full shadow description.
+Island formulae and entanglement-wedge reconstruction   provide entropy and recovery statements in declared gravitational/holographic settings. Their natural comparison here is restricted recovery on a code algebra. They do not establish the global MTT projection or a common Born–Hawking measure.
 
-</div>
+## Cosmological measures
 
-# Black Hole Horizons as Admissibility Barriers
-
-We now apply the admissibility-barrier framework to gravitational collapse and black hole evaporation. The goal is not to model horizon microphysics, but to identify the structural mechanism by which information loss arises in the 4D shadow.
-
-## Horizon-induced loss of admissibility
-
-Consider a collapse–evaporation history on a bounded-geometry slab. In the MTT framework, degrees of freedom that become confined to the black hole interior are no longer admissible for the coherent 4D shadow once the horizon forms and persists through evaporation.
-
-<div class="definition">
-
-**Definition 16** (Horizon barrier). The horizon barrier $`\mathcal B_{\mathrm{hor}}`$ is an admissibility barrier separating configurations whose coherent projection yields only exterior-accessible degrees of freedom from configurations requiring interior (noncoherent) modes for reconstruction.
-
-</div>
-
-<div class="remark">
-
-*Remark 17*. This definition abstracts from the details of quantum gravity. It encodes only the fact that interior degrees of freedom are not part of the admissible coherent sector available to exterior observers.
-
-</div>
-
-## Information loss as shadow noninvertibility
-
-<div class="proposition">
-
-**Proposition 18** (Black hole information loss). *Once trajectories cross $`\mathcal B_{\mathrm{hor}}`$, the shadow evolution map $`T_t`$ admits no global measurable right inverse. The apparent mapping of pure initial states to mixed exterior radiation states is therefore an instance of Theorem <a href="#thm:barrier" data-reference-type="ref" data-reference="thm:barrier">9</a>.*
-
-</div>
-
-<div class="remark">
-
-*Remark 19*. This result does not deny invertibility of the upstairs evolution. It asserts that the coherent projection discards interior information in a way that forbids global reconstruction at the 4D level.
-
-</div>
-
-# Page Curve, Islands, and Partial Reconstruction
-
-We now confront the modern Page-curve and island-program directly.
-
-## What the island formula accomplishes
-
-Island constructions modify the entropy computation for radiation by enlarging the region whose entanglement wedge is included. Operationally, this corresponds to redefining the observable algebra used to compute entropy.
-
-Let $`\mathcal A(\mathcal Y)`$ denote the full shadow observable algebra, and let $`\mathcal A_{\mathrm{island}}\subset\mathcal A(\mathcal Y)`$ denote the restricted algebra selected by the island prescription.
-
-## Islands as partial right inverses
-
-<div class="proposition">
-
-**Proposition 20** (Islands as partial inversion). *There exists a map
-``` math
-S_t^{(\mathrm{island})}:\mathrm{States}(\mathcal A_{\mathrm{island}})\to\mathcal X
-```
-such that
-``` math
-F_{\mathcal A_{\mathrm{island}}}\circ S_t^{(\mathrm{island})}
-= \mathrm{Id}_{\mathrm{States}(\mathcal A_{\mathrm{island}})},
-```
-where $`F_{\mathcal A_{\mathrm{island}}}`$ is the restriction map defined analogously to $`F_{\mathcal A_i}`$ in Proposition <a href="#prop:povm-partial-inverse" data-reference-type="ref" data-reference="prop:povm-partial-inverse">14</a>.*
-
-</div>
-
-<div class="remark">
-
-*Remark 21*. Islands restore effective reconstructability only on a restricted algebra. By Theorem <a href="#thm:barrier" data-reference-type="ref" data-reference="thm:barrier">9</a>, no global reconstruction map on $`\mathcal A(\mathcal Y)`$ can exist once horizon-induced fiber overlap occurs.
-
-</div>
-
-## Interpretation
-
-Island constructions do not refute information loss in the shadow sense. They demonstrate that certain coarse-grained observables admit partial reconstruction. This is structurally identical to POVM updates in measurement theory.
-
-# Basin Measures and Probability in the Coherent Universality Class
-
-We now turn to probability.
-
-## Invariant measure assumption
-
-<div id="def:mu-coh" class="definition">
-
-**Definition 22** (Coherent universality class invariant measure). We assume the existence of a $`\Phi_t`$-invariant probability measure $`\mu`$ on the admissible coherent sector $`\mathcal A`$, fixed either by uniqueness within the coherent universality class or by prior MTT $`\to`$ QM derivations identifying $`\mu`$ with squared-amplitude weights. The existence and uniqueness of $`\mu`$ are not re-derived here.
-
-</div>
-
-## Basin-measure functional
-
-Let $`\mathcal B`$ be an admissibility barrier inducing a basin decomposition
-``` math
-\mathcal A = \bigsqcup_{i\in I}\mathcal A_i.
-```
-
-<div class="definition">
-
-**Definition 23** (Basin-measure functional). Define
-``` math
-W_i := \frac{\mu(\mathcal A_i)}{\sum_{j\in I}\mu(\mathcal A_j)}.
-```
-
-</div>
-
-## Born weights (structural identification)
-
-<div class="proposition">
-
-**Proposition 24** (Born weights as basin measures (structural identification)). *Under the measurement barrier $`\mathcal B_{\mathrm{meas}}`$, the observed Born weights $`p_i=\|\Pi_i\psi\|^2`$ coincide with the basin-measure functional $`W_i`$ when $`\mu`$ is identified with the squared-amplitude measure established in prior MTT$`\to`$QM results.*
-
-</div>
-
-<div class="remark">
-
-*Remark 25*. This is a structural identification. No independent derivation of the Born rule is claimed here.
-
-</div>
-
-## Hawking weights (semiclassical identification)
-
-<div class="proposition">
-
-**Proposition 26** (Hawking weights as basin measures (semiclassical identification)). *Under the horizon barrier $`\mathcal B_{\mathrm{hor}}`$, the thermal weights $`p_\omega\propto e^{-\beta\omega}`$ observed in Hawking radiation coincide with the basin-measure functional $`W_\omega`$ when $`\mu`$ is identified with the invariant measure on exterior-admissible configurations in the standard semiclassical regime.*
-
-</div>
-
-<div class="remark">
-
-*Remark 27*. No derivation of $`\beta`$ or of horizon microphysics is attempted here. The identification is made under the usual semiclassical correspondence.
-
-</div>
-
-## Basin-measure principle
-
-<div id="thm:basin-measure" class="theorem">
-
-**Theorem 28** (Basin-measure theorem in the coherent universality class). *Let $`(\mathcal X,\Phi_t)`$ be an MTT system with admissible coherent sector $`\mathcal A`$. Assume there exists a unique (up to equivalence) $`\Phi_t`$-invariant probability measure $`\mu`$ on $`\mathcal A`$ associated with the coherent universality class.*
-
-*Let $`\mathcal B\subset\mathcal X`$ be an admissibility barrier satisfying hypotheses (H1)–(H3) of Definition <a href="#def:barrier" data-reference-type="ref" data-reference="def:barrier">3</a>, and suppose that:*
-
-1.  *$`\mathcal B`$ induces a measurable basin decomposition
-    ``` math
-    \mathcal A = \bigsqcup_{i\in I} \mathcal A_i
-    ```
-    with $`\mu(\mathcal A_i)>0`$ for at least one $`i`$;*
-
-2.  *the restriction of $`\mu`$ to $`\mathcal A\setminus\mathcal B`$ is invariant under $`\Phi_t`$ up to sets of measure zero;*
-
-3.  *the shadow observables under consideration depend only on basin membership (i.e. are $`\mu`$-almost everywhere constant on each $`\mathcal A_i`$).*
-
-**Then*, conditional on these assumptions, the probability weights observed in the 4D shadow dynamics after crossing $`\mathcal B`$ coincide with the basin-measure functional
-``` math
-W_i := \frac{\mu(\mathcal A_i)}{\sum_{j\in I}\mu(\mathcal A_j)}.
-```*
-
-</div>
-
-<div class="remark">
-
-*Remark 29*. The content of the theorem is an implication under explicit hypotheses, not a claim of universality over all possible measures or barriers.
-
-</div>
+A cosmological probability law requires a declared solution/history space, symplectic or other measure, gauge quotient, cutoff and conditioning prescription  . Even a canonical measure on a finite model can become ambiguous after regularization of an infinite ensemble. Inflationary attraction can change distributions dynamically but does not by itself select the initial measure. Therefore a cosmological basin map is another independent source obligation.
 
 <div class="corollary">
 
-**Corollary 30**. *Quantum measurement probabilities and black hole thermal probabilities are shadows of the same upstairs invariant measure evaluated across different admissibility barriers.*
+**Corollary 9** (Measure-separation verdict). *The Born, Hawking and cosmological laws may be three pushforwards of one upper MTT measure, but the current corpus has not proved that statement. Until one $`(\mathcal X,\mu)`$ and three explicit maps are supplied, the relationship is a structural shadow bridge rather than theorem-level probability equivalence.*
 
 </div>
 
-# Cosmic Initial Conditions and the Born Rule
+# Computational irreducibility
 
-We now complete the probability side of the shadow-bridge program by unifying quantum measurement probabilities and cosmological initial-condition measures.
+<div id="prop:undecidable" class="proposition">
 
-## Two probability problems
-
-Quantum theory and cosmology both contain unresolved probability problems:
-
-- In quantum mechanics, probabilities enter via the Born rule, which is usually taken as an axiom or justified via symmetry, Gleason-type theorems, or decision-theoretic arguments.
-
-- In cosmology, probabilities enter via measures on initial conditions or histories, often introduced ad hoc (inflationary measures, anthropic weighting, volume cutoffs).
-
-Despite their different contexts, both problems concern the same question: why deterministic dynamics gives rise to probabilistic outcomes at all.
-
-## Cosmic admissibility barrier
-
-In the MTT framework, the earliest epoch at which a coherent four-dimensional description becomes valid defines a cosmological admissibility barrier $`\mathcal B_{\mathrm{cosmo}}`$. Crossing this barrier partitions the admissible configuration space into basins corresponding to macroscopically distinct cosmological histories.
-
-<div class="proposition">
-
-**Proposition 31** (Cosmic basin decomposition). *Crossing $`\mathcal B_{\mathrm{cosmo}}`$ induces a decomposition
-``` math
-\mathcal A = \bigsqcup_{i\in I}\mathcal A_i^{\mathrm{cosmo}},
-```
-where each basin corresponds to a distinct class of coherent cosmological histories.*
+**Proposition 10** (Conditional undecidability transfer). *Suppose an MTT basin-membership problem is computably defined and there is a computable reduction from the halting problem to it. Then no algorithm decides membership for all admissible inputs.*
 
 </div>
 
-## Born rule as microscopic limit
+<div class="proof">
 
-At microscopic scales, measurement barriers induce analogous basin decompositions. The Born rule arises as the restriction of the same basin-measure functional to microscopic admissibility barriers.
-
-<div id="thm:born-cosmic" class="theorem">
-
-**Theorem 32** (Born–cosmic probability equivalence theorem). *Assume the hypotheses of Theorem <a href="#thm:basin-measure" data-reference-type="ref" data-reference="thm:basin-measure">28</a>. Assume further that:*
-
-1.  *for microscopic admissibility barriers $`\mathcal B_{\mathrm{meas}}`$, the invariant measure $`\mu`$ induces squared-amplitude weights on outcome basins, as established in prior MTT$`\to`$QM results;*
-
-2.  *for macroscopic cosmological admissibility barriers $`\mathcal B_{\mathrm{cosmo}}`$, the same measure $`\mu`$ restricts to a well-defined measure on coherent cosmic-history basins.*
-
-*Then the Born rule probabilities in quantum measurement and the probability measures on cosmic initial conditions are restrictions of the same basin-measure functional $`W_i`$ associated with $`\mu`$, evaluated across $`\mathcal B_{\mathrm{meas}}`$ and $`\mathcal B_{\mathrm{cosmo}}`$ respectively.*
+*Proof.* Such a decision algorithm, composed with the reduction, would decide the halting problem. ◻
 
 </div>
 
-<div class="remark">
+This conditional proposition is exact but does not establish undecidability for a specific MTT barrier. That requires an explicit encoding and reduction. Complexity or sensitive dependence alone is insufficient.
 
-*Remark 33*. This theorem asserts a structural unification, not a new derivation of either probability rule. Any consistent modification of one must entail a modification of the other.
+# MTT promotion contract
 
-</div>
+A theorem unifying the three domains must emit:
 
-# Inflationary Attractors as Partial Basin Shadows
+1.  a selected upstairs measurable or quantum state space $`\mathcal X`$;
 
-We now confront standard inflationary approaches to the cosmological measure problem.
+2.  one normalized measure/state $`\mu`$ selected without using the three target laws;
 
-## What inflation gets right
+3.  a flow or channel and a proof of the descent condition on each claimed domain;
 
-Inflationary dynamics correctly identifies:
+4.  explicit outcome maps $`O_{\mathrm{meas}},O_{\mathrm{BH}},O_{\mathrm{cos}}`$;
 
-1.  strong contraction of large regions of phase space;
+5.  a proof that their pushforwards equal the Born, Hawking and cosmological laws, including domain-specific corrections;
 
-2.  dominance of a subset of trajectories at late times;
+6.  declared code algebras and recovery maps for every island or measurement claim;
 
-3.  effective basin structure in reduced cosmological variables.
+7.  an independent source of any time arrow or entropy monotonicity; and
 
-These features correspond to basin dominance in the shadow dynamics.
+8.  a computable reduction before any MTT undecidability claim is promoted.
 
-## What inflation cannot fix
+The current finite $`q=79`$ operators, shared-circle candidate and preprojection language program may help construct these objects. They do not yet provide the selected measurement capture measure identified as open in the quantization audit.
 
-However, inflationary dynamics alone cannot define a unique probability measure:
+# Version delta
 
-1.  no distinguished invariant measure is provided;
+Relative to the previous version, this successor:
 
-2.  regulator dependence persists (youngness paradox, Boltzmann brains);
+- replaces the false no-right-inverse argument by the descent and exact-recovery theorems;
 
-3.  no admissibility barrier separating allowed from disallowed histories is identified.
+- distinguishes a measurable section from recovery of the original state;
 
-## Shadow-bridge diagnosis
+- proves that a noninjective shadow can still have reversible quotient dynamics;
 
-In MTT terms, inflationary attractors are partial shadows of the basin structure but lack access to the upstairs invariant measure $`\mu`$ and admissibility barrier $`\mathcal B_{\mathrm{cosmo}}`$.
+- treats POVM instruments and islands as updates or restricted code recovery;
 
-<div class="theorem">
+- separates structural analogies from a common probability measure;
 
-**Theorem 34** (Attractor–Born parallel). *Inflationary attractors and decoherence-based branching are structurally identical approximations: both detect basin dominance but cannot determine probability weights without reference to the upstairs invariant measure.*
+- proves the nonuniqueness of basin representations of arbitrary weights;
 
-</div>
+- no longer identifies Born, Hawking and cosmological weights without one upper measure and three derived pushforwards;
 
-<div class="remark">
+- makes entropy growth and the time arrow independent source obligations; and
 
-*Remark 35*. This explains why inflationary measure problems persist despite attractor dynamics.
-
-</div>
-
-# Everettian Interpretations and the Shadow-Bridge
-
-Everettian (many-worlds) interpretations maintain that the universal wavefunction evolves unitarily and that collapse is illusory.
-
-## The Everettian refusal
-
-From the shadow-bridge perspective, Everettian interpretations correspond to refusing the projection $`P`$ as physically operative, treating the upstairs state as the sole physical object.
-
-## Consequences of refusing projection
-
-This choice implies:
-
-1.  no closed autonomous 4D effective theory exists;
-
-2.  irreversibility and probabilities must be reconstructed branch-relatively;
-
-3.  admissibility barriers are treated as epistemic rather than physical.
-
-## Structural comparison
-
-<div class="theorem">
-
-**Theorem 36** (Everett–shadow dichotomy). *Everettian interpretations and the shadow-bridge framework differ by whether the projection $`P`$ is treated as physically operative. If $`P`$ is operative, barrier-crossing noninvertibility is unavoidable; if it is refused, 4D physics is not closed and remains branch-relative.*
-
-</div>
-
-<div class="remark">
-
-*Remark 37*. This is a structural theory-choice criterion, not an empirical refutation of Everettian interpretations. This theorem characterizes a structural distinction between classes of effective descriptions; it does not constitute an empirical refutation of Everettian interpretations.
-
-</div>
-
-# Computational Irreducibility and Undecidability
-
-The shadow-bridge framework is strengthened by results on computational irreducibility.
-
-## Undecidability of basin membership
-
-As shown in , there exist admissibility barriers for which basin membership of pre-barrier configurations is algorithmically undecidable.
-
-<div class="proposition">
-
-**Proposition 38** (Undecidability of reconstruction (existential)). *There exist admissibility barriers for which no uniform algorithm decides, in finite time, which basin a given pre-barrier configuration belongs to.*
-
-</div>
-
-<div class="remark">
-
-*Remark 39* (Scope of undecidability). Undecidability here is existential: particular instances may be decidable, but no general decoding protocol can succeed uniformly across all admissibility-barrier crossings.
-
-</div>
-
-## Implications
-
-This implies:
-
-1.  information loss is principled, not merely practical;
-
-2.  no general decoding protocol can restore full information after barrier crossing;
-
-3.  partial inversions (POVM updates, islands) cannot be promoted to global reconstruction.
+- reduces computational irreducibility to a conditional transfer theorem pending an explicit MTT reduction.
 
 # Conclusion
 
-We have shown that quantum measurement collapse, black hole information loss, and the origin of probability in cosmology are shadows of a single mechanism in Modal Triplet Theory: projection-induced noninvertibility across admissibility barriers.
-
-Deterministic upstairs dynamics remains invertible, but the 4D shadow loses invertibility whenever basin structure rearranges. Measurement collapse, horizon formation, and cosmic initial-condition selection are distinct physical realizations of this same transition.
-
-Born probabilities, Hawking thermal weights, and cosmological measures arise from a single basin-measure functional within the coherent universality class. Inflationary attractors and decoherence detect basin structure but cannot fix probability weights without access to the upstairs invariant measure. Everettian interpretations avoid collapse by refusing projection, at the cost of abandoning a closed 4D effective theory.
-
-Finally, computational irreducibility establishes that information loss is not merely a practical limitation but a principled consequence of projection.
-
-Together, these results position the shadow-bridge framework as a unifying explanation of probability and irreversibility across quantum mechanics, gravity, and cosmology.
+Projection can hide information, obstruct autonomous descent, or prevent recovery, but these are different statements. The corrected mathematics identifies exactly which one holds. Likewise, basin measures can represent probabilities, but representation is not derivation. Measurement, black-hole reconstruction and cosmology remain genuinely suggestive MTT shadow bridges because all involve restricted observables, coarse descriptions and source-selection problems. Their strong unification is still open: it requires one selected upper measure and three independently computed pushforwards. This narrower formulation preserves the useful idea while making every future promotion testable.
 
 <div class="thebibliography">
 
-99
+99 A. M. Gleason, *Measures on the closed subspaces of a Hilbert space*, Journal of Mathematics and Mechanics **6**, 885–893 (1957), doi:10.1512/iumj.1957.6.56050.
 
-J. Barnett and L. Smolin, *Fermion doubling in loop quantum gravity*, Phys. Rev. D **92**, 064022 (2015).
+E. Knill and R. Laflamme, *A theory of quantum error-correcting codes*, Physical Review A **55**, 900–911 (1997), arXiv:quant-ph/9604034.
 
-R. Gambini and J. Pullin, *No fermion doubling in quantum geometry*, Int. J. Mod. Phys. D **24**, 1542001 (2015).
+D. Petz, *Sufficient subalgebras and the relative entropy of states of a von Neumann algebra*, Communications in Mathematical Physics **105**, 123–131 (1986).
 
-J. Zhang, Y. Liu, and M. Han, *Fermion doubling and its suppression in loop quantum gravity*, arXiv:2205.12208.
+S. W. Hawking, *Particle creation by black holes*, Communications in Mathematical Physics **43**, 199–220 (1975), doi:10.1007/BF02345020.
 
-J. Lewandowski and C. Zhang, *Dirac field on loop quantum gravity*, Phys. Rev. D **105**, 124025 (2022).
+G. W. Gibbons, S. W. Hawking and J. M. Stewart, *A natural measure on the set of all universes*, Nuclear Physics B **281**, 736–751 (1987), doi:10.1016/0550-3213(87)90425-1.
 
-H. B. Nielsen and M. Ninomiya, *No Go Theorem for Regularizing Chiral Fermions*, Phys. Lett. B **105**, 219–223 (1981).
+G. Penington, *Entanglement wedge reconstruction and the information paradox*, Journal of High Energy Physics **2020**, 2 (2020), arXiv:1905.08255.
 
-P. Nero, *Computational Irreducibility from Projection: Undecidability of Selection Events in Coherent Quantum Dynamics*, arXiv:XXXX.YYYY.
-
-P. Nero, *Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255621>
-
-P. Nero, *Modal Triplet Theory: Foundation*, Zenodo preprint, September 2025. <https://doi.org/10.5281/zenodo.16949762>
-
-P. Nero, *Fixed Points I–VI: Complete Coherence Spine*, Zenodo preprints, August 2025. <https://doi.org/10.5281/zenodo.16948748>
-
-P. Nero, *The Projection–Admissibility Principle: Structural Constraints on Effective Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255838>
-
-P. Nero, *Closure and Inevitability in Modal Triplet Theory*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255510>
-
-P. Nero, *Coherence Capacity as the Fundamental Resource of Effective Physics*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255905>
-
-P. Nero, *Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18256048>
-
-P. Nero, *Modal Triplet Theory: From MTT to Quantum Mechanics*, Zenodo preprint, September 2025. <https://doi.org/10.5281/zenodo.17074246>
-
-P. Nero, *From MTT to Quantum Field Theory*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17068816>
-
-P. Nero, *Modal Triplet Theory: From MTT to General Relativity*, Zenodo preprint, October 2025. <https://doi.org/10.5281/zenodo.16950597>
-
-P. Nero, *Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17077671>
-
-P. Nero, *Measurement as Disturbance and Stabilization in Modal Triplet Theory*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17177404>
-
-P. Nero, *Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18256408>
-
-P. Nero, *Modal Fixed Points, Bell’s Beables, and the Limits of Factorization*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17076300>
-
-P. Nero, *Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory*, Zenodo preprint, August 2025. <https://doi.org/10.5281/zenodo.18208884>
-
-P. Nero, *From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18254862>
+A. Almheiri, N. Engelhardt, D. Marolf and H. Maxfield, *The entropy of bulk quantum fields and the entanglement wedge of an evaporating black hole*, Journal of High Energy Physics **2019**, 63 (2019).
 
 </div>

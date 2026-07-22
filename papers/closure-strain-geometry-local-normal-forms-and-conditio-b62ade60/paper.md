@@ -1,18 +1,18 @@
 ---
 abstract: |
-  We extract the exact geometry of closure strain from earlier Standard-Model interpretations. For an invertible rank-three comparison field, polar or Iwasawa reduction removes three orientation directions and leaves six strain directions. With a selected orthonormal flag these split orthogonally into scalar, traceless-diagonal, and shear sectors of dimensions $`1+2+3`$. We give explicit projectors and a norm identity, explain the relation and distinction between symmetric shear and the Heisenberg nil algebra, and state precisely what a closure Hessian proves. In particular, Hessian positivity does not select a unique Higgs, three families, Standard Model charges, confinement, mixing, or CP violation. Those identifications require representation, connection, action, and source theorems. Current q79 and finite-algebra calculations are incorporated at their declared profile-equivalence tier, and the missing same-source intertwiner from the local strain normal form to the selected q79 carrier is isolated.
+  We extract the exact geometry of closure strain from earlier Standard-Model interpretations. For an invertible rank-three comparison field, polar or Iwasawa reduction removes three orientation directions and leaves six strain directions. With a selected orthonormal flag these split orthogonally into scalar, traceless-diagonal, and shear sectors of dimensions $`1+2+3`$. We give explicit projectors and a norm identity, explain the relation and distinction between symmetric shear and the Heisenberg nil algebra, and state precisely what a closure Hessian proves. In particular, Hessian positivity does not select a unique Higgs, three families, Standard Model charges, confinement, mixing, or CP violation. Those identifications require representation, connection, action, and source theorems. Current q79 and finite-algebra calculations are incorporated at their declared profile-equivalence tier, and the q79-side finite bridge is sharpened: one universal flat differential line commutes with the $`1+2+3`$ lane projectors and lifts the normalized Reynolds Hessian exactly. This closes connection/holonomy and Hessian naturality at finite-symbol tier. The same-source continuum intertwiner from the local strain normal form to the nonzero-Chern physical HYM carrier remains isolated and open.
 author:
 - Peter Nero
-current_version: v6
+current_version: v7
 date: July 2026
-generated_from_main_tex_sha256: 374634f40a1898c6c48759356955e2a616980c295d5b05b1f6b08774f7da04f2
+generated_from_main_tex_sha256: 74d3c373eb93296f354425a22f027fbbbb04e4ac225f128bf2fb5aa5102037c1
 paper_id: closure-strain-geometry-local-normal-forms-and-conditio-b62ade60
 release_state: zenodo_released
 released_version: v5.0
 title: |
   Closure-Strain Geometry:  
   Local Normal Forms and Conditional Matter Encodings  
-  Corrected sixth edition
+  Corrected seventh edition
 zenodo_doi: 10.5281/zenodo.19535511
 zenodo_record_id: 19535511
 zenodo_url: "https://zenodo.org/records/19535511"
@@ -21,19 +21,19 @@ zenodo_url: "https://zenodo.org/records/19535511"
 # Revision note for this edition
 
 Supersedes.  
-*Closure-Strain Geometry and the Structure of the Standard Model*, version 5.
+*Closure-Strain Geometry: Local Normal Forms and Conditional Matter Encodings*, version 6.
 
 Reason.  
-The six-dimensional strain count was overpromoted into unique Higgs, family, charge, confinement, mixing, and CP theorems, while flag dependence and the distinction between symmetric shear and the nil Lie algebra were hidden.
+Version 6 correctly left the physical local-to-q79 intertwiner open, but it predates the exact q79 universal-line and finite-Hessian square and therefore understates what is already closed on the target side.
 
 Resolution.  
-Version 6 proves explicit orthogonal $`1+2+3`$ projectors, states their selected-flag dependence, separates Iwasawa nil from shear, and imports finite-SM results only at their certified profile tier.
+Version 7 retains the local $`1+2+3`$ theorem and adds the flat differential-line pullback, finite Reynolds projector, exact Hessian spectrum, and the precise curved-HYM nonpromotion guard.
 
 Retained result.  
 The local strain normal form and the executed embedded renormalized-SM profile branch both survive, as distinct results.
 
 Remaining boundary.  
-Their physical identification requires the same-source q79 intertwiner; strict no-knob branch and value selection remain stronger upgrades.
+Their physical identification still requires the same-source metric, connection, and continuum-HYM intertwiner; strict no-knob branch and value selection remain stronger upgrades.
 
 # Purpose and status
 
@@ -237,6 +237,42 @@ For the selected degree-three cover,
  (\mathcal O\oplus\mathcal A_0\oplus\mathcal A),
  \qquad \operatorname{rank}=1+2+3.
 ```
+
+On the q79 branch complement, the unique nontrivial map
+``` math
+h_{S_3}:S_3\to\mathbb Z_{64},
+ \qquad h_{S_3}(\sigma)=32\,\epsilon(\sigma),
+```
+pulls the universal flat weight-one line over $`B_\nabla\mathbb Z_{64}`$ back to the SpinC determinant sign line for either admissible odd root. Denote this specified pullback by $`(L_{\rm sh},\nabla_{\rm sh})`$.
+
+<div class="theorem">
+
+**Theorem 5** (Closed q79 finite target square). *The same line $`L_{\rm sh}`$ tensors all three q79 lanes and its scalar holonomy commutes with their projectors. For the selected two-copy sheet/edge symbol,
+``` math
+P_{\rm Haar}=\frac1{6}\sum_{g\in S_3}\rho(g),
+ \qquad
+ H_{\rm fin}=\kappa_{\rm fin}(I-P_{\rm Haar})
+```
+satisfy
+``` math
+\operatorname{rank}P_{\rm Haar}=2,
+ \qquad
+ \operatorname{spec}(H_{\rm fin}/\kappa_{\rm fin})
+ =\{0^{\times2},1^{\times4}\},
+ \qquad H_{\rm TT}=\kappa_{\rm fin}I_2.
+```
+The lifted operator is exactly $`I_{L_{\rm sh}}\otimes H_{\rm fin}`$. Thus the q79 connection/holonomy line and finite Hessian square are closed without a dimensionless fit.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The character identity $`\chi_r\circ h_{S_3}=\operatorname{sgn}`$ gives the parallel determinant-line pullback. Scalar holonomy commutes with every sheet operator. Haar averaging is an orthogonal projector, and decomposition of the selected representation gives the displayed ranks and spectrum. ◻
+
+</div>
+
+This theorem closes the target-side finite square, not the physical bridge. The flat root-stack line cannot equal the nonzero-Chern physical HYM connection. Likewise, it supplies no map from the local world-in-world strain bundle.
+
 The local strain bundle has the same rank profile. The needed map is
 ``` math
 \mathfrak I:
@@ -248,7 +284,7 @@ The local strain bundle has the same rank profile. The needed map is
 
 <div class="theorem">
 
-**Theorem 5** (Requirements for physical promotion). *Rank matching promotes to a same-source physical identification only if $`\mathfrak I`$ is a global bundle isomorphism and, on the selected domains,
+**Theorem 6** (Requirements for physical promotion). *Rank matching promotes to a same-source physical identification only if $`\mathfrak I`$ is a global bundle isomorphism and, on the selected domains,
 ``` math
 \mathfrak I^*G_{\rm HYM}=G_{\rm strain},
  \qquad
@@ -266,7 +302,7 @@ with analogous identities for the retarded and overlap kernels used to emit the 
 
 </div>
 
-Constructing this map is the decisive remaining foundation theorem for using the local closure-strain geometry as the source of the q79 numerical carrier.
+Constructing this map is the decisive remaining foundation theorem for using the local closure-strain geometry as the source of the q79 numerical carrier. It is no longer necessary to reconstruct the q79 finite target square while doing so; that square is the closed codomain of the required intertwiner.
 
 # Status ledger
 
@@ -278,6 +314,7 @@ Constructing this map is the decisive remaining foundation theorem for using the
 | $`6=1+2+3`$ strain split | proved with flag | exact orthogonal projectors |
 | Iwasawa $`SO(3)AN`$ dimensions | proved | local/group normal form |
 | q79 trace-split rank carrier | selected theorem | global rank $`1+2+3`$ carrier |
+| q79 shared line and finite Hessian | proved at finite-symbol tier | connection, holonomy, projector, and Hessian square |
 | Finite SM algebra and profile operator | closed at declared profile tier | embedded renormalized-SM equivalence |
 | Unique Higgs from Hessian | not a theorem | requires representation and alignment source |
 | Three families from three lanes | not a theorem | requires index/monodromy source |
@@ -288,7 +325,7 @@ Constructing this map is the decisive remaining foundation theorem for using the
 
 # Conclusion
 
-Closure-strain geometry supplies a useful and exact six-dimensional local normal form. Its real achievement is the explicit $`1+2+3`$ decomposition and its compatibility target with the selected q79 carrier. Standard Model organization becomes credible only when the finite representation and source packets are cited at their actual tier. The paper therefore replaces broad inevitability claims with one concrete bridge theorem capable of promoting the local geometry into the already executed numerical branch.
+Closure-strain geometry supplies a useful and exact six-dimensional local normal form. Its real achievement is the explicit $`1+2+3`$ decomposition and its compatibility target with the selected q79 carrier. The target is now stronger than a rank match: its common flat differential line and normalized finite Hessian square are exact. Standard Model organization becomes credible only when the finite representation and source packets are cited at their actual tier. The paper therefore replaces broad inevitability claims with one concrete bridge theorem capable of promoting the local geometry into the already executed numerical branch.
 
 <div class="thebibliography">
 
@@ -297,5 +334,7 @@ Closure-strain geometry supplies a useful and exact six-dimensional local normal
 A. Connes, *Noncommutative Geometry*, Academic Press, 1994.
 
 P. Nero, *MTT Current True SM Closure Consolidated Ledger*, internal theorem and verification packet, 2026.
+
+P. Nero, *q79 Universal Shared Differential Line and Finite-Operator Intertwiner*, executable theorem packet, 2026.
 
 </div>

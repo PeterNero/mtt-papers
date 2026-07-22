@@ -1,12 +1,12 @@
 {
   "counts": {
-    "canonical_papers": 138,
-    "current_sources_newer_than_release": 31,
+    "canonical_papers": 139,
+    "current_sources_newer_than_release": 37,
     "pandoc_warning_papers": 12,
     "papers_with_zenodo_release": 119,
-    "papers_without_zenodo_match": 19,
+    "papers_without_zenodo_match": 20,
     "schema": "mtt.paper-migration-report.v1",
-    "superseded_projects_excluded": 28,
+    "superseded_projects_excluded": 35,
     "zenodo_records": 120,
     "zenodo_records_matched": 119,
     "zenodo_records_unmatched": 1
@@ -541,6 +541,84 @@
       ]
     },
     {
+      "abstract": "This paper replaces the claim that AQFT follows from admissible charts alone. It distinguishes a conditional admissibility-indexed precosheaf from a physical Haag--Kastler net and proves the rigorous bridge currently available: a decomposable coherent projector preserves isotony and spacelike commutation on the compatible subalgebra of an already local upper net. Failure of joint representability does not imply commutation, chart inclusion does not automatically extend observables, and absence of a global chart does not forbid a quasilocal algebra or colimit.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v2",
+      "date": "July 2026",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.18330769",
+        "created": "2026-01-21T20:01:20.099899+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.18330770",
+        "files": [
+          {
+            "checksum": "md5:e6c46aff22e13a0d5a98bfc86dc4e184",
+            "content_url": "https://zenodo.org/api/records/18330770/files/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory%20(3).pdf/content",
+            "key": "From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory (3).pdf",
+            "size": 320453
+          }
+        ],
+        "id": "18330770",
+        "match_kind": "title_or_file",
+        "match_score": 1.0,
+        "publication_date": "2026-01-21",
+        "record_url": "https://zenodo.org/records/18330770",
+        "resource_type": "publication",
+        "title": "From Modal Triplet Theory to Algebraic Quantum Field Theory: Local Nets from Admissible Charts",
+        "updated": "2026-01-21T20:01:20.472468+00:00",
+        "version": "v1.0"
+      },
+      "main_tex_sha256": "41cb82cd5d3ee0151f9dbe4bea1d31a19e16c64671dd9c9f2a27450f3e9d00a8",
+      "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+      "paper_md_sha256": "e0a5714d99826a3ffde7f599d8f8440dd22c8e08f4a8f2ba265cd44f37732e87",
+      "release_state": "zenodo_released",
+      "revision": {
+        "revision_evidence_path": "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "65d313e8c04e1676da4540da74b58e970ba429d62674a9c5ec1012cf54376649",
+        "selected_revision": true,
+        "superseded_source_path": "7 Quantum Field Theory/_work/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory"
+      },
+      "source_provenance": {
+        "legacy_source_path": "7 Quantum Field Theory/_work/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory"
+      },
+      "source_tree_sha256": "846f3ef6af26603dbf866b9945fc4091e81c95a7479503f07c11cb1ab3a22140",
+      "title": "Admissibility Precosheaves and Conditional AQFT Nets in Modal Triplet Theory",
+      "version_relation": "current_source_newer_than_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18330769",
+          "created": "2026-01-21T20:01:20.099899+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.18330770",
+          "files": [
+            {
+              "checksum": "md5:e6c46aff22e13a0d5a98bfc86dc4e184",
+              "content_url": "https://zenodo.org/api/records/18330770/files/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory%20(3).pdf/content",
+              "key": "From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory (3).pdf",
+              "size": 320453
+            }
+          ],
+          "id": "18330770",
+          "match_kind": "title_or_file",
+          "match_score": 1.0,
+          "publication_date": "2026-01-21",
+          "record_url": "https://zenodo.org/records/18330770",
+          "resource_type": "publication",
+          "title": "From Modal Triplet Theory to Algebraic Quantum Field Theory: Local Nets from Admissible Charts",
+          "updated": "2026-01-21T20:01:20.472468+00:00",
+          "version": "v1.0"
+        }
+      ]
+    },
+    {
       "abstract": "We show that asymptotic safety in functional renormalization group (FRG) gravity arises as a truncation shadow of a well-defined ultraviolet (UV) endpoint functional generated by projection-induced spectral proper-time (SPT) damping in a coherent universality class. Working on bounded-geometry time slabs and within an admissible regulator class, we prove Gaussian-damped shell integrability of the FRG flow and construct a UV endpoint functional \\Gamma_\\infty in a Banach space of analytic local plus entire form-factor actions. We establish scheme stability of \\Gamma_\\infty under admissible regulator variations, prove that the linearized RG step at \\Gamma_\\infty has a finite-dimensional unstable manifold, and demonstrate that fixed points observed in finite truncations are shadows of \\Gamma_\\infty under canonical rescaling. These results explain regulator dependence, finite predictivity, and the appearance of nonlocal form factors in ongoing asymptotic safety studies as consequences of projecting an underlying UV endpoint, rather than as fundamental features of the full theory. All statements are slab-local and admissibility-conditioned.",
       "authors": [
         "Peter Nero"
@@ -1044,81 +1122,6 @@
       "zenodo_releases": []
     },
     {
-      "abstract": "Modal Triplet Theory (MTT) has been developed across a corpus of technical papers establishing the emergence of quantum mechanics, quantum field theory, spacetime geometry, irreversibility, and cosmology from a common projection-based architecture. While these results are rigorous and mutually consistent, their logical necessity has remained distributed across multiple constructions and realizations. This paper provides conceptual closure to the MTT corpus. We extract the minimal structural axioms implicit throughout the theory, identify the invariant admissibility margin governing all effective descriptions, and state a single obstruction theorem from which irreversibility, probability, universality, and geometric response follow as unavoidable consequences. No new dynamics, degrees of freedom, or assumptions are introduced. The goal is deliberately hybrid in tone: mathematically conservative, but conceptually explicit. The results summarized here were not postulated at the outset of MTT; they were forced upon the theory by its own internal consistency. This paper makes that inevitability visible.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January 2026",
-      "latest_zenodo_release": {
-        "concept_doi": "10.5281/zenodo.18255510",
-        "created": "2026-01-15T10:40:40.064824+00:00",
-        "creators": [
-          "Nero, Peter"
-        ],
-        "doi": "10.5281/zenodo.18255511",
-        "files": [
-          {
-            "checksum": "md5:882cef2ff140d6f60c217bc2c59c6bc7",
-            "content_url": "https://zenodo.org/api/records/18255511/files/Closure_and_Inevitability_in_Modal_Triplet_Theory%20(1).pdf/content",
-            "key": "Closure_and_Inevitability_in_Modal_Triplet_Theory (1).pdf",
-            "size": 219469
-          }
-        ],
-        "id": "18255511",
-        "match_kind": "title_or_file",
-        "match_score": 1.0,
-        "publication_date": "2026-01-15",
-        "record_url": "https://zenodo.org/records/18255511",
-        "resource_type": "publication",
-        "title": "Closure and Inevitability in Modal Triplet Theory",
-        "updated": "2026-01-15T10:40:40.705425+00:00",
-        "version": "v1.0"
-      },
-      "main_tex_sha256": "c3be32592beef37d6dd484023cd1e1d094e8d782e9997fdb6b733f3c0963c8c4",
-      "paper_id": "closure-and-inevitability-in-modal-triplet-theory",
-      "paper_md_sha256": "e03ae15753cebacf865421c792e59d7d990bee2633075e88392b0f9b00f33992",
-      "release_state": "zenodo_released",
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Closure_and_Inevitability_in_Modal_Triplet_Theory"
-      },
-      "source_tree_sha256": "5e3d38c81a176647a143852ce1f0b5424e1dc95cacb1c33ad14390cd294e1810",
-      "title": "Closure and Inevitability in Modal Triplet Theory",
-      "version_relation": "matches_latest_release",
-      "zenodo_releases": [
-        {
-          "concept_doi": "10.5281/zenodo.18255510",
-          "created": "2026-01-15T10:40:40.064824+00:00",
-          "creators": [
-            "Nero, Peter"
-          ],
-          "doi": "10.5281/zenodo.18255511",
-          "files": [
-            {
-              "checksum": "md5:882cef2ff140d6f60c217bc2c59c6bc7",
-              "content_url": "https://zenodo.org/api/records/18255511/files/Closure_and_Inevitability_in_Modal_Triplet_Theory%20(1).pdf/content",
-              "key": "Closure_and_Inevitability_in_Modal_Triplet_Theory (1).pdf",
-              "size": 219469
-            }
-          ],
-          "id": "18255511",
-          "match_kind": "title_or_file",
-          "match_score": 1.0,
-          "publication_date": "2026-01-15",
-          "record_url": "https://zenodo.org/records/18255511",
-          "resource_type": "publication",
-          "title": "Closure and Inevitability in Modal Triplet Theory",
-          "updated": "2026-01-15T10:40:40.705425+00:00",
-          "version": "v1.0"
-        }
-      ]
-    },
-    {
       "abstract": "We formulate a ten-dimensional effective action compatible with closure-strain and q79 carrier data. The metric, bundle M_{10}\\to Y_4, compact fiber, field representations, and derivative expansion are declared realization inputs. The action is an ansatz on a specified regime, not the most general action and not a derivation of gravity from projection. We give the conditions under which a closure Hessian contributes to canonically normalized pole masses, a rank-one alignment projector yields one Higgs doublet, an internal operator has discrete spectrum, and a four-dimensional mode truncation is consistent. Curvature is defined through explicit connections rather than inferred from nonuniform strain. The selected q79 Fu\u2013Yau branch is the compactification candidate, while Lens\u2013Nil remains auxiliary. Existing finite-matrix and Standard-Model profile calculations are incorporated at their declared embedded-renormalized-SM tier; their profile inputs and imported BRST quantization are not reclassified as no-knob consequences of this action.",
       "authors": [
         "Peter Nero"
@@ -1197,13 +1200,13 @@
       ]
     },
     {
-      "abstract": "We extract the exact geometry of closure strain from earlier Standard-Model interpretations. For an invertible rank-three comparison field, polar or Iwasawa reduction removes three orientation directions and leaves six strain directions. With a selected orthonormal flag these split orthogonally into scalar, traceless-diagonal, and shear sectors of dimensions 1+2+3. We give explicit projectors and a norm identity, explain the relation and distinction between symmetric shear and the Heisenberg nil algebra, and state precisely what a closure Hessian proves. In particular, Hessian positivity does not select a unique Higgs, three families, Standard Model charges, confinement, mixing, or CP violation. Those identifications require representation, connection, action, and source theorems. Current q79 and finite-algebra calculations are incorporated at their declared profile-equivalence tier, and the missing same-source intertwiner from the local strain normal form to the selected q79 carrier is isolated.",
+      "abstract": "We extract the exact geometry of closure strain from earlier Standard-Model interpretations. For an invertible rank-three comparison field, polar or Iwasawa reduction removes three orientation directions and leaves six strain directions. With a selected orthonormal flag these split orthogonally into scalar, traceless-diagonal, and shear sectors of dimensions 1+2+3. We give explicit projectors and a norm identity, explain the relation and distinction between symmetric shear and the Heisenberg nil algebra, and state precisely what a closure Hessian proves. In particular, Hessian positivity does not select a unique Higgs, three families, Standard Model charges, confinement, mixing, or CP violation. Those identifications require representation, connection, action, and source theorems. Current q79 and finite-algebra calculations are incorporated at their declared profile-equivalence tier, and the q79-side finite bridge is sharpened: one universal flat differential line commutes with the 1+2+3 lane projectors and lifts the normalized Reynolds Hessian exactly. This closes connection/holonomy and Hessian naturality at finite-symbol tier. The same-source continuum intertwiner from the local strain normal form to the nonzero-Chern physical HYM carrier remains isolated and open.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v6",
+      "current_version": "v7",
       "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.19535510",
@@ -1230,21 +1233,21 @@
         "updated": "2026-04-12T10:25:14.934705+00:00",
         "version": "v5.0"
       },
-      "main_tex_sha256": "374634f40a1898c6c48759356955e2a616980c295d5b05b1f6b08774f7da04f2",
+      "main_tex_sha256": "74d3c373eb93296f354425a22f027fbbbb04e4ac225f128bf2fb5aa5102037c1",
       "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
-      "paper_md_sha256": "30a8c5a98e795b96c9a0393a2739e272f945337efab917b23aa5e851fe5719fb",
+      "paper_md_sha256": "9b59569ae19c83064fb32b1552c0f71ea434e1f1aa361c91f50cc84f7e3a2232",
       "release_state": "zenodo_released",
       "revision": {
-        "revision_evidence_path": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md",
-        "revision_evidence_sha256": "340f4cb2ee4e5a22a1b008aa1c57109cdd148da74ef36fcec0913ef20dc527b1",
+        "revision_evidence_path": "10 ProtoSpinor/revised_tex_vnext/CLOSURE_STRAIN_V7_SHARED_LINE_REVISION_AUDIT.md",
+        "revision_evidence_sha256": "e2e553d34b273b3d93b7dedd25d7f15c396f1ef995f6dc2c512dfb7bf1a18d0a",
         "selected_revision": true,
         "superseded_source_path": "10 ProtoSpinor/_work/Closure_Strain_Geometry_and_the_Structure_of_the_Standard_Model_v5"
       },
       "source_provenance": {
-        "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/Closure_Strain_Geometry__Local_Normal_Forms_and_Conditional_Matter_Encodings_v6"
+        "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/Closure_Strain_Geometry__Local_Normal_Forms_and_Conditional_Matter_Encodings_v7"
       },
-      "source_tree_sha256": "521fc125ca9639ae8b72d5d93067f9a21c5d4768cece99a2f2fede1074d4e479",
-      "title": "Closure-Strain Geometry: Local Normal Forms and Conditional Matter Encodings Corrected sixth edition",
+      "source_tree_sha256": "b0da83510f1ef23360b9ea33b82c92d140a525fe2500faae772b7febe0306976",
+      "title": "Closure-Strain Geometry: Local Normal Forms and Conditional Matter Encodings Corrected seventh edition",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
@@ -1753,14 +1756,92 @@
       ]
     },
     {
-      "abstract": "We give a fully constructive result for the transverse\u2013traceless (TT) graviton sector of Modal Triplet Theory (MTT) under the spectral proper\u2013time (SPT) damping mechanism. Assuming bounded geometry on a finite time slab (or bounded coordinate domain), we use a completely monotone proper\u2013time filter with a positive proper\u2013time gap \\tau_0>0 to define a filtered covariance C satisfying a Gaussian ultraviolet bound \\widehat C(k)\\lesssim e^{-\\tau_0|k|^2}/(|k|^2+\\lambda_\\ast). For local analytic interactions (including finite truncations of the TT-expanded Einstein\u2013Hilbert density), we prove existence of the Euclidean functional integral, analyticity in a cardioid domain, and Borel summability of connected Schwinger functions via the Loop Vertex Expansion (BKAR forest formula) and a Nevanlinna\u2013Sokal remainder bound. This provides a nonperturbative definition (via Borel sum) of the SPT-filtered TT sector and supplies the constructive core needed for a fully UV-controlled treatment of the physical TT sector within the MTT quantum gravity framework.",
+      "abstract": "This paper replaces the former claim that one projection obstruction makes the observed form of physics inevitable. It gives a typed dependency map separating representative selection, exact decoding, autonomous descent, effective merger, measure-dependent stochastic reduction, locality under compatible compression, fixed-point robustness and physical realization. Born weights, complex Hilbert structure, complete QFT reconstruction, gravitational normalization, entropy and a physical arrow of time remain independent theorem targets.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January 2025",
+      "current_version": "v2",
+      "date": "July 2026",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.18255510",
+        "created": "2026-01-15T10:40:40.064824+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.18255511",
+        "files": [
+          {
+            "checksum": "md5:882cef2ff140d6f60c217bc2c59c6bc7",
+            "content_url": "https://zenodo.org/api/records/18255511/files/Closure_and_Inevitability_in_Modal_Triplet_Theory%20(1).pdf/content",
+            "key": "Closure_and_Inevitability_in_Modal_Triplet_Theory (1).pdf",
+            "size": 219469
+          }
+        ],
+        "id": "18255511",
+        "match_kind": "title_or_file",
+        "match_score": 1.0,
+        "publication_date": "2026-01-15",
+        "record_url": "https://zenodo.org/records/18255511",
+        "resource_type": "publication",
+        "title": "Closure and Inevitability in Modal Triplet Theory",
+        "updated": "2026-01-15T10:40:40.705425+00:00",
+        "version": "v1.0"
+      },
+      "main_tex_sha256": "eeaf6c8d03c4400bcf85e69e749229d06769cbbbf0fd3dac515ef6680d2b6ec4",
+      "paper_id": "closure-and-inevitability-in-modal-triplet-theory",
+      "paper_md_sha256": "7b84b11fe269f6e5b4d0ce5923f18e9d262618e171ec72f9b755542c7eea55e7",
+      "release_state": "zenodo_released",
+      "revision": {
+        "revision_evidence_path": "papers/closure-and-inevitability-in-modal-triplet-theory/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "9ee1867308dd650db1ecaac429f9c9cac2291dfec496abdf63317d12203e95ba",
+        "selected_revision": true,
+        "superseded_source_path": "2 Meta & Diagnosis & Universality/_work/Closure_and_Inevitability_in_Modal_Triplet_Theory"
+      },
+      "source_provenance": {
+        "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Closure_and_Inevitability_in_Modal_Triplet_Theory"
+      },
+      "source_tree_sha256": "1645fd7bb63dce868251e2451158327367da6f8d8115cb0bec300694415d1b4b",
+      "title": "Conditional Closure Relations in Modal Triplet Theory",
+      "version_relation": "current_source_newer_than_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18255510",
+          "created": "2026-01-15T10:40:40.064824+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.18255511",
+          "files": [
+            {
+              "checksum": "md5:882cef2ff140d6f60c217bc2c59c6bc7",
+              "content_url": "https://zenodo.org/api/records/18255511/files/Closure_and_Inevitability_in_Modal_Triplet_Theory%20(1).pdf/content",
+              "key": "Closure_and_Inevitability_in_Modal_Triplet_Theory (1).pdf",
+              "size": 219469
+            }
+          ],
+          "id": "18255511",
+          "match_kind": "title_or_file",
+          "match_score": 1.0,
+          "publication_date": "2026-01-15",
+          "record_url": "https://zenodo.org/records/18255511",
+          "resource_type": "publication",
+          "title": "Closure and Inevitability in Modal Triplet Theory",
+          "updated": "2026-01-15T10:40:40.705425+00:00",
+          "version": "v1.0"
+        }
+      ]
+    },
+    {
+      "abstract": "This corrected successor separates existence of the SPT-filtered Gaussian measure, finite-cutoff Borel summability, and removal of the cutoff. A positive proper-time gap makes the bounded-volume covariance trace class and gives all finite Sobolev moments. Nonnegative quartic finite-mode interactions are Borel summable with an exact positive-ray Borel-Laplace representation, and weighted convergence of Borel transforms is proved sufficient for cutoff removal. Selection and stability of the gravitational interaction, uniform constructive bounds, the physical removal limit, and BRST/BV reconstruction remain explicit gates.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v2",
+      "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18209683",
         "created": "2026-01-10T21:20:37.281095+00:00",
@@ -1786,19 +1867,22 @@
         "updated": "2026-01-10T21:20:37.595169+00:00",
         "version": "v1.0"
       },
-      "main_tex_sha256": "396c64bf6dd2bde70a0c93ae948a9e31e3a010fc9666debee05888e58b8a8dd8",
+      "main_tex_sha256": "aa82b60175fea01f25a1a8544d7c4ab24ca53678ffcef4c470952c196f8cbf62",
       "paper_id": "constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014",
-      "paper_md_sha256": "1ef0dc869fdaa34bfe9ddba364301207921e0e826f9b8373dc58dd1561cd543b",
+      "paper_md_sha256": "fa88553a173158eaf51e95cc227ef2df3a6f5d52632b3011e47d308af820f28e",
       "release_state": "zenodo_released",
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "ae73e21640e39f76b8d054fbd2291971862fa938e29a74cc47518d048083b72f",
+        "selected_revision": true,
+        "superseded_source_path": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_I__Borel_Summability_of_the_SPT_Filtered_TT_Sector"
       },
       "source_provenance": {
         "legacy_source_path": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_I__Borel_Summability_of_the_SPT_Filtered_TT_Sector"
       },
-      "source_tree_sha256": "66121fd36f8b510c27c16c5708bc452677f0493775d329bdfad66459868502fe",
-      "title": "Constructive MTT Quantum Gravity I: Borel Summability of the SPT-Filtered TT Sector",
-      "version_relation": "matches_latest_release",
+      "source_tree_sha256": "769e83ffe4f6648ded68f0aa2b532b4973e8cdf662f5acd7441c7d2f2de08e9b",
+      "title": "Constructive MTT Quantum Gravity I: Finite-Volume SPT Gaussian Control and a Conditional Borel-Summability Contract",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.18209683",
@@ -1828,14 +1912,14 @@
       ]
     },
     {
-      "abstract": "We extend Constructive MTT-QG I (Borel summability of the SPT-filtered TT sector) to a fully gauge-consistent formulation. Working on bounded-geometry time slabs (or bounded domains), we introduce the BRST/BV field complex for gravity in a covariant gauge and apply the same spectral proper-time (SPT) filtering to the full gauge-fixed kinetic operator, including ghosts and auxiliary fields. Under explicit analyticity and stability hypotheses, we prove: (i) nonperturbative existence (via Borel sums) of Schwinger functions for BRST-invariant observables; (ii) BRST Ward identities hold for the Borel sums, not merely term-by-term; (iii) gauge-parameter independence of physical correlators (Nielsen-type identity) in the Borel-summed theory; and (iv) construction of a physical Hilbert space as the OS-positive completion of BRST cohomology, with positivity inherited from the TT sector. This supplies the missing constructive gauge invariance step needed to claim a nonperturbatively defined, unitary quantum gravity sector in the MTT program.",
+      "abstract": "This corrected paper replaces the claim that separately SPT-filtered graviton and ghost covariances already yield a nonperturbative unitary gravity theory. It proves a shared-filter BRST chain theorem, a finite-cutoff quantum Ward theorem, a uniform Borel-inheritance theorem, and a conditional cohomological Osterwalder-Schrader reconstruction theorem. Independent filters, TT positivity alone, and permanent Gaussian damping do not supply the missing interfaces. The selected gravitational quantum measure, QME, constructive removal limits, and physical reflection positivity remain explicit exit gates.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January 2025",
+      "current_version": "v2",
+      "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18209696",
         "created": "2026-01-10T21:24:41.229180+00:00",
@@ -1861,19 +1945,22 @@
         "updated": "2026-01-10T21:24:41.577502+00:00",
         "version": "v1.0"
       },
-      "main_tex_sha256": "9ae584c1c1c2c37246fbf074067a786fe952057ba1b15523f5e95f73c692b312",
+      "main_tex_sha256": "bc2d5cadb02e3c99e96998df4d0eacb8e94f5fe35b8be6983e92ded41f3c1381",
       "paper_id": "constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b",
-      "paper_md_sha256": "009e60cb78328aa7d0e1fd35b4400e89f3d3c9851ca77f4831eb1b20b164f02a",
+      "paper_md_sha256": "ecdea9511b6f2c6a8c72c671b865a52963f3f559195abb2f433110272f8de311",
       "release_state": "zenodo_released",
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "e198cb8f12f5efa993c89503cf31325077c5781fad1558a2eeb59e9add8bed95",
+        "selected_revision": true,
+        "superseded_source_path": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_II__BRST_Lifting__Gauge_Invariant_Observables__and_the_Physical_Hilbert_Space_under_SPT_Damping"
       },
       "source_provenance": {
         "legacy_source_path": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_II__BRST_Lifting__Gauge_Invariant_Observables__and_the_Physical_Hilbert_Space_under_SPT_Damping"
       },
-      "source_tree_sha256": "8e9035a60b57c688df01d7a6267d42e70543712b22b10560b2a9965aa0c83112",
-      "title": "Constructive MTT Quantum Gravity II: BRST Lifting, Gauge-Invariant Observables, and the Physical Hilbert Space under SPT Damping",
-      "version_relation": "matches_latest_release",
+      "source_tree_sha256": "c0c2ba9fe4a511ce800131126c9e403ffe40c18754a7cf1d31ef039ae1ba1ede",
+      "title": "Constructive MTT Quantum Gravity II: A Conditional BRST/BV Compatibility and Physical-State Reconstruction Contract for SPT-Filtered Models",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.18209696",
@@ -3477,81 +3564,6 @@
       ]
     },
     {
-      "abstract": "Algebraic quantum field theory (AQFT) provides a formulation of quantum field theory in which physical content is encoded in a net of local observable algebras, without reference to a global Hilbert space or preferred coordinates. While this framework captures locality and causal structure in a robust, representation-independent manner, it typically assumes a background spacetime and a prescribed notion of localization. In this paper, we show that an AQFT-style net structure arises naturally within Modal Triplet Theory (MTT) as a consequence of admissibility, coherent projection, and basin stability. Starting from admissible chart families and their overlap structure, we construct local observable algebras associated with admissible domains and demonstrate that these algebras assemble into a net (precosheaf) satisfying isotony, locality, and the absence of a global algebra. No background spacetime, fundamental causal order, or global section is assumed. The resulting algebraic structure is not postulated but induced by representability constraints intrinsic to MTT. In this sense, AQFT appears as a downstream encoding of admissible chart structure rather than as a foundational axiom system. The construction clarifies the structural origin of locality, horizon phenomena, and the breakdown of global descriptions, and situates algebraic quantum field theory within the broader MTT framework.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January 2026",
-      "latest_zenodo_release": {
-        "concept_doi": "10.5281/zenodo.18330769",
-        "created": "2026-01-21T20:01:20.099899+00:00",
-        "creators": [
-          "Nero, Peter"
-        ],
-        "doi": "10.5281/zenodo.18330770",
-        "files": [
-          {
-            "checksum": "md5:e6c46aff22e13a0d5a98bfc86dc4e184",
-            "content_url": "https://zenodo.org/api/records/18330770/files/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory%20(3).pdf/content",
-            "key": "From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory (3).pdf",
-            "size": 320453
-          }
-        ],
-        "id": "18330770",
-        "match_kind": "title_or_file",
-        "match_score": 1.0,
-        "publication_date": "2026-01-21",
-        "record_url": "https://zenodo.org/records/18330770",
-        "resource_type": "publication",
-        "title": "From Modal Triplet Theory to Algebraic Quantum Field Theory: Local Nets from Admissible Charts",
-        "updated": "2026-01-21T20:01:20.472468+00:00",
-        "version": "v1.0"
-      },
-      "main_tex_sha256": "6684658a78fef0b3fdf1db8d5d580ff94eb5c4e2405499aed261c6aaa3f08288",
-      "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
-      "paper_md_sha256": "b97e2b64f944b589d522c9b5c44766239811b6cb9bcfa3b0dbdb08845dcd510f",
-      "release_state": "zenodo_released",
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "7 Quantum Field Theory/_work/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory"
-      },
-      "source_tree_sha256": "be38175172cc6172761566be718ece94413a641eb23239c6e196520363a24be0",
-      "title": "From Modal Triplet Theory to Algebraic Quantum Field Theory Local Nets from Admissible Charts and Coherent Basin Persistence",
-      "version_relation": "matches_latest_release",
-      "zenodo_releases": [
-        {
-          "concept_doi": "10.5281/zenodo.18330769",
-          "created": "2026-01-21T20:01:20.099899+00:00",
-          "creators": [
-            "Nero, Peter"
-          ],
-          "doi": "10.5281/zenodo.18330770",
-          "files": [
-            {
-              "checksum": "md5:e6c46aff22e13a0d5a98bfc86dc4e184",
-              "content_url": "https://zenodo.org/api/records/18330770/files/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory%20(3).pdf/content",
-              "key": "From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory (3).pdf",
-              "size": 320453
-            }
-          ],
-          "id": "18330770",
-          "match_kind": "title_or_file",
-          "match_score": 1.0,
-          "publication_date": "2026-01-21",
-          "record_url": "https://zenodo.org/records/18330770",
-          "resource_type": "publication",
-          "title": "From Modal Triplet Theory to Algebraic Quantum Field Theory: Local Nets from Admissible Charts",
-          "updated": "2026-01-21T20:01:20.472468+00:00",
-          "version": "v1.0"
-        }
-      ]
-    },
-    {
       "abstract": "We derive Noncommutative Geometry (NCG), in the sense of Connes\u2019 spectral triples, from the coherent fixed-point sector of Modal Triplet Theory (MTT). Under the standing modules (bounded geometry, spectral gap, joint harmonic projector, smoothing flow, convex energy), we show: (i) the observable algebra acts faithfully on the projected Hilbert space, giving an almost-commutative spectral triple (A,H,D;J,\\Gamma); (ii) the Dirac operator D descends from the projected MTT Dirac/Laplacian structure, with compact resolvent and bounded commutators; (iii) the KO-dimension and real structure are inherited from the spin bundle; (iv) the Connes\u2013Chamseddine spectral action \\mathrm{Tr}f(D/\\Lambda) reproduces Einstein\u2013Hilbert + Yang\u2013Mills + scalar potential, with coefficients fixed by the modal bottleneck vector \\Theta; (v) inner fluctuations D\\mapsto D+A+J A J^{-1} generate the full SM gauge sector and the Higgs as a finite connection, with unimodularity yielding U(1)_Y\\times SU(2)_L\\times SU(3)_c; and (vi) renormalization and consistency match the FRG/pAQFT picture used in the MTT amplitudes and QG papers. Hence MTT provides a first-principles derivation of spectral triples, the spectral action,and the SM embedding within NCG, coherent with its containments of GR, QFT, SM, and UV-finite QG. Our renormalization discussion uses the functional renormalization group (FRG) and perturbative algebraic QFT (pAQFT).",
       "authors": [
         "Peter Nero"
@@ -3730,14 +3742,14 @@
       ]
     },
     {
-      "abstract": "We show that gravitationally induced collapse in the sense of Penrose and the Di\u00f3si\u2013Penrose (DP) model arises as a controlled effective limit of coherence breakdown in Modal Triplet Theory (MTT). Starting from projected coherent-sector dynamics, we derive a reduced nonunitary evolution whose leading contribution in a curvature-dominated regime reduces to a Newtonian double-commutator kernel of DP type, yielding the collapse timescale \\tau \\sim \\hbar/E_G. We then prove that this regime is nongeneric: outside it, projection-induced reduced dynamics necessarily exhibits additional structure, including finite-strength threshold (knee) behavior, protocol dependence, and Zeno/anti-Zeno crossovers. We establish no-go results showing that gravity-only collapse generators depending solely on mass density cannot reproduce this structure without introducing state-dependent stabilization variables equivalent to a projection\u2013basin mechanism. Finally, we formulate cross-sector closure: the parameters governing the reduced collapse dynamics are tied to the same spectral\u2013geometric bottlenecks that control gravitational stability and effective field theory under controlled truncation. These results identify Penrose/DP collapse as a valid shadow law in a restricted universality class, but not a fundamental principle.",
+      "abstract": "This corrected successor proves a Penrose-Schoenberg completion theorem. The selected Einstein/TEGR static constraint gives the regulated Newton self-energy as one half of a squared Green-Hilbert distance. Its pairwise matrix is conditionally negative definite, so exp(-t E_G/hbar) is a CPTP pure-dephasing semigroup whose generator is exactly the regulated Diosi-Penrose double commutator. This closes positivity and Markovian completion, while leaving the external smearing, effective Newton scale, exact MTT rate-selection identity, controlled environmental limit, and objective outcome instrument as explicit source obligations.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January, 2026",
+      "current_version": "v3",
+      "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18261599",
         "created": "2026-01-15T19:35:24.245991+00:00",
@@ -3763,19 +3775,22 @@
         "updated": "2026-01-15T19:35:24.913129+00:00",
         "version": "v1.0"
       },
-      "main_tex_sha256": "b729be7593163f5782f4bdc41fd3772fd1093b17385f185268d63afef86d04e2",
+      "main_tex_sha256": "16111263ce94fdfa4cf9f57a4ab6bd80bdeb32e7fd55df158ef11691bd4eab3e",
       "paper_id": "gravitationally-induced-collapse-as-an-effective-limit-d74eb471",
-      "paper_md_sha256": "8070155fdd71dc4e097af65682b3cfca6c9d8c38588d3fd0bc5b487bb87298ee",
+      "paper_md_sha256": "50f570c2cd2a4e58c66ee554471701793851fda1f8c91a87a9342504e2c3486f",
       "release_state": "zenodo_released",
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/gravitationally-induced-collapse-as-an-effective-limit-d74eb471/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "26a6cc596994141e9586d7831f99b6c6e5849e43874c5714d3299cd3b46e8b5f",
+        "selected_revision": true,
+        "superseded_source_path": "6 Quantum Mechanics/_work/Gravitationally_Induced_Collapse_as_an_Effective_Limit_of_Coherence_Breakdown_in_Modal_Triplet_Theory"
       },
       "source_provenance": {
         "legacy_source_path": "6 Quantum Mechanics/_work/Gravitationally_Induced_Collapse_as_an_Effective_Limit_of_Coherence_Breakdown_in_Modal_Triplet_Theory"
       },
-      "source_tree_sha256": "7a30e12a4d46499616b7fa59934f8d3d4983f661ba2998e62a972685cd86e9df",
-      "title": "Gravitationally Induced Collapse as an Effective Limit of Coherence Breakdown in Modal Triplet Theory",
-      "version_relation": "matches_latest_release",
+      "source_tree_sha256": "4fc9f24fc0fb99bc68b5a907f7b5fd22771bf1825cf5b5f31499b282bede168d",
+      "title": "Gravitationally Induced Collapse in Modal Triplet Theory: A Penrose-Schoenberg Completion and Source Contract",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.18261599",
@@ -4661,13 +4676,13 @@
       ]
     },
     {
-      "abstract": "We give a corrected functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle M_{10}\\to Y_4 with compact Riemannian fiber X_6; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and Banach, Schur\u2013Feshbach, projector-stability, and basin-robustness statements are given with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner.",
+      "abstract": "We give a corrected functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle M_{10}\\to Y_4 with compact Riemannian fiber X_6; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and Banach, Schur\u2013Feshbach, projector-stability, and basin-robustness statements are given with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat \\mathbb Z_{64} line pulls back coherently to the q79 SpinC determinant, the 1+2+3 carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby\u2013Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v7",
+      "current_version": "v8",
       "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.16949762",
@@ -4694,20 +4709,20 @@
         "updated": "2026-01-16T11:34:24.315287+00:00",
         "version": "v6.0"
       },
-      "main_tex_sha256": "7b7ea991bf6a669385b4cec959641f79c9088b76d1444b581b7aef230f7ab3ab",
+      "main_tex_sha256": "67b2cd3bb94fe446e2dbde09e93350fd6cc7500fb3dacd6619da134197b450c9",
       "paper_id": "modal-triplet-theory-foundations",
-      "paper_md_sha256": "20612ea84a986b0399a2d022e50e4791cc1e369db80741a53e6fc26f317baf0e",
+      "paper_md_sha256": "3ee00b51a5d7c6307d1405e30ce1eecf3d6f0f1f0828d5bc90029e28de5b60e0",
       "release_state": "zenodo_released",
       "revision": {
-        "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V7_REVISION_AUDIT.md",
-        "revision_evidence_sha256": "9e1162cf8272c018b5f9bb10f8122eb61e32695e00fb5173a1b23edd749ad09a",
+        "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V8_SHARED_LINE_REVISION_AUDIT.md",
+        "revision_evidence_sha256": "41c4b12215fa1c6f3603459e55f1fc8de23ca1f41bf7b472374f55b4d107e415",
         "selected_revision": true,
         "superseded_source_path": "3 Core Foundations/_work/Modal_Triplet_Theory__Foundation_v6 (1)"
       },
       "source_provenance": {
-        "legacy_source_path": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__Foundation_v7"
+        "legacy_source_path": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__Foundation_v8"
       },
-      "source_tree_sha256": "85d90db523e6458685a9ef6a5eda6084480d858fa9d1de8db5ac7e865473a66c",
+      "source_tree_sha256": "aae67b31b83d79f0c90582ad41dc42eec2450392107dc96ed830c752b53bc2bc",
       "title": "Modal Triplet Theory: Foundations",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
@@ -6239,14 +6254,14 @@
       ]
     },
     {
-      "abstract": "We develop a unified framework within Modal Triplet Theory (MTT) connecting three apparently independent problems in 4D physics: quantum measurement collapse, black hole information loss, and the origin of probability in cosmology. In MTT, effective 4D physics arises as a shadow of deterministic dynamics on a higher configuration space under a noninvertible coherent projection. We introduce admissibility barriers\u2014loci where the projection fails to be stably invertible due to gap closure, projector discontinuity, or basin rearrangement\u2014and prove a general noninvertibility theorem: whenever trajectories cross such a barrier, the induced 4D shadow dynamics admits no global reconstruction map, despite invertibility of the upstairs evolution. We show that (i) quantum measurement collapse and (ii) black hole information loss are two instantiations of this same projection-induced noninvertibility, differing only in the physical realization of the barrier. We further show that Born probabilities, Hawking thermal weights, and cosmological initial-condition measures arise from a single basin-measure functional evaluated across different admissibility barriers, within the coherent universality class. Inflationary attractors and decoherence-based branching are identified as partial shadows that detect basin structure but cannot fix probability weights without access to the upstairs invariant measure. Finally, we incorporate results on computational irreducibility: there exist admissibility barriers for which basin membership is algorithmically undecidable, ruling out any uniform decoding protocol that would restore full information after barrier crossing. The framework clarifies the status of island constructions, POVM updates, and Everettian interpretations as partial inversions or refusals of projection rather than restorations of global 4D invertibility.",
+      "abstract": "This corrected successor separates descent of upstairs dynamics, recovery from shadow data, and selection of probability measures. It proves the fiber-preservation criterion for deterministic descent, injectivity on a declared code as the criterion for exact recovery, and reversibility of a quotient when the fiber relation is preserved in both time directions. It also proves that arbitrary finite probability vectors can be represented by basin volumes, so basin representation alone derives neither Born, Hawking nor cosmological weights. Measurement instruments and islands are updates or restricted recovery; a common MTT source remains conditional on one selected upper measure and three explicit pushforwards.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v2",
-      "date": "January, 2026",
+      "current_version": "v3",
+      "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18262040",
         "created": "2026-01-15T20:33:15.293536+00:00",
@@ -6272,18 +6287,21 @@
         "updated": "2026-01-15T20:33:15.635906+00:00",
         "version": "v1.0"
       },
-      "main_tex_sha256": "dccc393aba624bb65e240318ad4258bd98fe71e72e8f37faa7dbfa0ec11b6efc",
+      "main_tex_sha256": "619c935fea0a867af0a668eea6427a517e2d09b6fe02dbd885d143fb51b0ecfd",
       "paper_id": "projection-probability-and-irreversibility-shadow-bridg-a86c97e5",
-      "paper_md_sha256": "88ab69ec1e50f368dfb66d5200ab6b1d321ada186c38326a9f99c98e35eaec91",
+      "paper_md_sha256": "31b44396d705077141b40a26b033a6029d6a4c1f69e9484d5dbb21abcc161099",
       "release_state": "zenodo_released",
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/projection-probability-and-irreversibility-shadow-bridg-a86c97e5/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "604909b83c074285c5d98d1e692274d10f99eb732cca5277d8267a4fea0e8d2e",
+        "selected_revision": true,
+        "superseded_source_path": "8 Measurement, Selection & Computation/_work/Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2"
       },
       "source_provenance": {
         "legacy_source_path": "8 Measurement, Selection & Computation/_work/Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2"
       },
-      "source_tree_sha256": "5ec11243e24e828103d1ab5f4c537847d9f5a0ca2ddce0d59f48a2e878db1a41",
-      "title": "Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory",
+      "source_tree_sha256": "ce81e129f694be3634bab25f5ace4347ddafe1b101168b4b373deaa45fb22137",
+      "title": "Projection, Probability, and Irreversibility: A Descent, Recovery, and Measure-Separation Framework for MTT Shadow Bridges",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
@@ -7924,13 +7942,13 @@
       ]
     },
     {
-      "abstract": "We isolate the part of the proto-spinor construction that is mathematically forced after its geometric premises are stated. A world-in-world field is a section of \\operatorname{Hom}(TP,TI) for oriented rank-three bundles; its nine local components do not multiply manifold dimensions. If closure data must retain the nontrivial loop class in SO(3), the faithful continuous double-cover carrier is spinorial and is represented through \\operatorname{Spin}(3)\\cong SU(2). This is a conditional lifting theorem, not a derivation of internal dimension three or of physical fermions from admissibility alone. For the selected q79 degree-three spectral cover we record the exact trace split of ranks 1+2, the common 1+2+3 carrier, and the local binary-dihedral lift of signed sheet monodromy. Strict global Spin closure remains equivalent to a branch-relator sign or obstruction-class calculation. Circle, lens, and nil are retained as phase, finite-transport, and anchoring roles, rather than asserted to be an exhaustive literal product topology. Lorentzian spinors, masses, Higgs modes, and particle assignments are downstream realization problems with explicit gates.",
+      "abstract": "We isolate the part of the proto-spinor construction that is mathematically forced after its geometric premises are stated. A world-in-world field is a section of \\operatorname{Hom}(TP,TI) for oriented rank-three bundles; its nine local components do not multiply manifold dimensions. If closure data must retain the nontrivial loop class in SO(3), the faithful continuous double-cover carrier is spinorial and is represented through \\operatorname{Spin}(3)\\cong SU(2). This is a conditional lifting theorem, not a derivation of internal dimension three or of physical fermions from admissibility alone. For the selected q79 degree-three spectral cover we record the exact trace split of ranks 1+2, the common 1+2+3 carrier, and the local binary-dihedral lift of signed sheet monodromy. The shared circle is now a specified pullback of one universal flat \\mathbb Z_{64} differential line, not merely an isomorphic fiber. Its determinant, CLN, root-plane, and finite-Hessian actions intertwine exactly. The BHT and Hori fiber transforms share one orthogonal complex structure J_{\\rm FM}, and the binary sheet group has exactly two conjugate \\pm i phase-root lifts for which (\\pm iJ_{\\rm FM})^2=I. Strict global Spin closure remains equivalent to a branch-relator obstruction calculation; the closed result is SpinC and finite symbolic. Circle, lens, and nil remain typed phase, finite-transport, and anchoring roles. Lorentzian spinors, masses, and particle assignments remain downstream realization problems.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v5",
+      "current_version": "v6",
       "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.19534665",
@@ -7957,21 +7975,21 @@
         "updated": "2026-04-12T09:25:21.924116+00:00",
         "version": "v4.0"
       },
-      "main_tex_sha256": "1641742a6db9de7132741b4553e8cbb439f2d6ca71ea06774c9668798ac3bb6a",
+      "main_tex_sha256": "16295755bf35438965e5eab38d8004f2831e888b0706a0548abccc0091073ce5",
       "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
-      "paper_md_sha256": "916e3cb2aaec09ec81aeef65081df7f6e924b0be8e39d01baf7e826886b641b2",
+      "paper_md_sha256": "10a51b1205ca244b69b44da6622c7bc02320697916ae7c6c8df9f8659254896a",
       "release_state": "zenodo_released",
       "revision": {
-        "revision_evidence_path": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md",
-        "revision_evidence_sha256": "340f4cb2ee4e5a22a1b008aa1c57109cdd148da74ef36fcec0913ef20dc527b1",
+        "revision_evidence_path": "10 ProtoSpinor/revised_tex_vnext/PROTO_SPINOR_V6_SHARED_LINE_REVISION_AUDIT.md",
+        "revision_evidence_sha256": "f9a68185f10ba1ad1efa94acea460e06a404be794f54763d1dd5b4b9f783757d",
         "selected_revision": true,
         "superseded_source_path": "10 ProtoSpinor/_work/The_Proto_Spinor__Triadic_Closure_from_Pointwise_Internal_Embedding_v4"
       },
       "source_provenance": {
-        "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/The_Proto_Spinor__Conditional_Spinorial_Closure_and_q79_Interface_v5"
+        "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/The_Proto_Spinor__Conditional_Spinorial_Closure_and_q79_Interface_v6"
       },
-      "source_tree_sha256": "93cf168e2a7b50687ae522476eb79f1ed463575f7f60acde68134c81afdd1452",
-      "title": "The Proto-Spinor: Conditional Spinorial Closure and the q79 Interface Corrected fifth edition",
+      "source_tree_sha256": "4f784cee6518139c106b3a484d072b794209b1908736f22b4f9e9583f3b320e4",
+      "title": "The Proto-Spinor: Conditional Spinorial Closure and the q79 Interface Corrected sixth edition",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
@@ -8075,6 +8093,31 @@
           "version": "v1.0"
         }
       ]
+    },
+    {
+      "abstract": "A book-length interpretive account of persistence, finite capacity, admissible projection and reusable coherence across physics, life, mind and cosmology. The second revised edition distinguishes established science, structural interpretation and conditional Modal Triplet Theory extensions.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v6",
+      "date": "2026",
+      "latest_zenodo_release": null,
+      "main_tex_sha256": "847d31b83a43f221acd49e9a469b25d6d0c544d7e0e7b437956fac21d779e8bc",
+      "paper_id": "the-universe-has-a-bad-memory",
+      "paper_md_sha256": "582988facf2a8e83458b14d4395750d8bf1b4bbd01dbb7372046a10eb4111ad6",
+      "release_state": "not_matched_to_zenodo",
+      "revision": {
+        "selected_revision": false
+      },
+      "source_provenance": {
+        "legacy_source_path": "obsidian-books/The_Universe_Has_a_Bad_Memory/The_Universe_Has_a_Bad_Memory__Why_Physics_Holds__Second_Revised_Edition_v6.tex"
+      },
+      "source_tree_sha256": "a3f380960e2a7569e589efc665841049693194afc8a42a03baffb47792db1099",
+      "title": "The Universe Has a Bad Memory",
+      "version_relation": "unknown",
+      "zenodo_releases": []
     },
     {
       "abstract": "We present a conditional \\Theta\u2013closure realization relating Standard Model gauge couplings to internal geometric overlap integrals. Measured source data are transported with SMDR v1.3 into the full-Standard-Model \\overline{\\mathrm{MS}} scheme at Q=M_t. In the normalization used here, the resulting profile targets are I_2/I_1=0.5110273\\pm0.0001231,\\qquad I_3/I_1=0.158335\\pm0.001098. They are calibrated profile coordinates, not first-principles predictions of the gauge couplings. We formulate the admissibility and spectral-gap conditions under which an internal realization may reproduce these targets. To address the normalization of nonabelian harmonics, we introduce a high\u2013coherence (twistor) corner with declared period and gauge-kinetic normalizations. An O(\\lambda_Q^{-1}) overlap estimate is conditional on explicit projector and representative perturbation bounds. The old 4.2\u20135~\\mathrm{TeV} crossing and its identification with a physical coherence, gap, or quantum-gravity scale are withdrawn. The scale Q=M_t is a renormalization and matching convention only. Explicit geometric realization must therefore be re-executed against the new target pair.",
@@ -8467,6 +8510,84 @@
       ]
     },
     {
+      "abstract": "This revised paper separates topology-only obstructions from representation checks and physical source theorems. It places chiral multiplicity on the internal six-manifold, reports the exact q79 smooth c3=+/-6 index candidate with its analytic promotion gate, uses integer U(1) characters, incorporates the selected finite-branch hypercharge and anomaly theorems at their declared scope, and corrects Majorana, holonomy, wave-cone, operator-selection, PQ, and one-loop beta-function claims.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v2",
+      "date": "July 2026",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.18260713",
+        "created": "2026-01-15T18:06:17.833927+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.18260714",
+        "files": [
+          {
+            "checksum": "md5:88bfacd7528fbcd39f7f9a4b7b0558b5",
+            "content_url": "https://zenodo.org/api/records/18260714/files/Topology__Only_Constraints_in_Modal_Triplet_Theory%20(4).pdf/content",
+            "key": "Topology__Only_Constraints_in_Modal_Triplet_Theory (4).pdf",
+            "size": 285400
+          }
+        ],
+        "id": "18260714",
+        "match_kind": "title_or_file",
+        "match_score": 1.0,
+        "publication_date": "2026-01-15",
+        "record_url": "https://zenodo.org/records/18260714",
+        "resource_type": "publication",
+        "title": "Topology-Only Constraints in Modal Triplet Theory: Indices, Anomalies, and Line-Bundle Triviality",
+        "updated": "2026-01-15T18:06:18.218867+00:00",
+        "version": "v1.0"
+      },
+      "main_tex_sha256": "df10a06948aaf8b32b6d379625a3066a4d9f37e998b26e58aee6d5309a5ae3bc",
+      "paper_id": "topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2",
+      "paper_md_sha256": "5ba334f608c2b93aa7fa94f9df7c1b6102a25c5fc9b0d1c7f0d95989d70d1b8d",
+      "release_state": "zenodo_released",
+      "revision": {
+        "revision_evidence_path": "papers/topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "3b47d0f94b10fd7dbff26696ad001d2b446c99375970b05046f5793b96002323",
+        "selected_revision": true,
+        "superseded_source_path": "13 Standard Model & Topology-Only Constraints/_work/Topology__Only_Constraints_in_Modal_Triplet_Theory"
+      },
+      "source_provenance": {
+        "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Topology__Only_Constraints_in_Modal_Triplet_Theory"
+      },
+      "source_tree_sha256": "398633de43a56091e49eece0561303da4e770a76068132d95cd860f034e2bdf7",
+      "title": "Topological Consistency Conditions in Modal Triplet Theory: Internal Indices, Charge Lattices, and Holonomy",
+      "version_relation": "current_source_newer_than_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18260713",
+          "created": "2026-01-15T18:06:17.833927+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.18260714",
+          "files": [
+            {
+              "checksum": "md5:88bfacd7528fbcd39f7f9a4b7b0558b5",
+              "content_url": "https://zenodo.org/api/records/18260714/files/Topology__Only_Constraints_in_Modal_Triplet_Theory%20(4).pdf/content",
+              "key": "Topology__Only_Constraints_in_Modal_Triplet_Theory (4).pdf",
+              "size": 285400
+            }
+          ],
+          "id": "18260714",
+          "match_kind": "title_or_file",
+          "match_score": 1.0,
+          "publication_date": "2026-01-15",
+          "record_url": "https://zenodo.org/records/18260714",
+          "resource_type": "publication",
+          "title": "Topology-Only Constraints in Modal Triplet Theory: Indices, Anomalies, and Line-Bundle Triviality",
+          "updated": "2026-01-15T18:06:18.218867+00:00",
+          "version": "v1.0"
+        }
+      ]
+    },
+    {
       "abstract": "Topological phases of matter exhibit robustness, quantized response, and protected boundary modes that are not explained by local symmetry breaking or microscopic Hamiltonian details. We present a structural account of topological phases based on coarse\u2013grained projection and global admissibility of local effective descriptions. We show that phases correspond to admissible basins of coarse\u2013grained dynamics, and that topological phases arise precisely when locally well\u2013defined effective descriptions fail to admit a globally consistent completion. Topological invariants appear as obstruction classes of overlap structures, explaining quantization and robustness. Bulk\u2013boundary correspondence follows inevitably: boundary modes arise as compensating degrees of freedom required to restore local consistency at interfaces. The framework applies equally to interacting and disordered systems with a spectral gap or mobility gap and does not rely on band topology or free\u2013fermion assumptions.",
       "authors": [
         "Peter Nero"
@@ -8612,81 +8733,6 @@
           "resource_type": "publication",
           "title": "Topology-Only Constraints and Forbidden Operators in Modal Triplet Theory",
           "updated": "2026-01-15T19:54:20.203429+00:00",
-          "version": "v1.0"
-        }
-      ]
-    },
-    {
-      "abstract": "We establish the Tier\u20131 low\u2013hanging fruit predictions of the Modal Triplet Theory (MTT) rigorously, using only topology, group theory, and selection rules\u2014no internal metric or harmonic integrals. On a smooth oriented spin four\u2013manifold Y_4, with three determinant line bundles obeying flux balance and pairwise twist sectors defined by the line bundles L_{ij}, we prove: (i) chiral family numbers come from a Dirac index formula; (ii) a topological criterion for Dirac vs. Majorana masses; (iii) absence of the SU(2) Witten global anomaly for three families; (iv) exact Standard\u2013Model hypercharges from MTT difference charges; (v) full cancellation of all local gauge/gravitational anomalies; (vi) strong\u2013CP relaxation via a central PQ\u2013like symmetry with integer domain\u2013wall number; (vii) forbiddance of many baryon/lepton number violating operators by line\u2013bundle triviality; (viii) equality of photon and graviton wave speeds in the GR\u2013compatible EFT; and (ix) the holonomy determinant/phase sum rule implied by the canonical trivialization L_{12}\\!\\otimes L_{23}\\!\\otimes L_{31}\\!\\cong\\!\\mathbb C.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January 2026",
-      "latest_zenodo_release": {
-        "concept_doi": "10.5281/zenodo.18260713",
-        "created": "2026-01-15T18:06:17.833927+00:00",
-        "creators": [
-          "Nero, Peter"
-        ],
-        "doi": "10.5281/zenodo.18260714",
-        "files": [
-          {
-            "checksum": "md5:88bfacd7528fbcd39f7f9a4b7b0558b5",
-            "content_url": "https://zenodo.org/api/records/18260714/files/Topology__Only_Constraints_in_Modal_Triplet_Theory%20(4).pdf/content",
-            "key": "Topology__Only_Constraints_in_Modal_Triplet_Theory (4).pdf",
-            "size": 285400
-          }
-        ],
-        "id": "18260714",
-        "match_kind": "title_or_file",
-        "match_score": 1.0,
-        "publication_date": "2026-01-15",
-        "record_url": "https://zenodo.org/records/18260714",
-        "resource_type": "publication",
-        "title": "Topology-Only Constraints in Modal Triplet Theory: Indices, Anomalies, and Line-Bundle Triviality",
-        "updated": "2026-01-15T18:06:18.218867+00:00",
-        "version": "v1.0"
-      },
-      "main_tex_sha256": "cc019b39d72feaf6a7feb926cda2e60ee224b2fa46aee8538a19b052f9bc6c3f",
-      "paper_id": "topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2",
-      "paper_md_sha256": "19e15c103eee4f957e1327e527b6d6a4f085749d08b0b9b04e30f3593517b0cb",
-      "release_state": "zenodo_released",
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Topology__Only_Constraints_in_Modal_Triplet_Theory"
-      },
-      "source_tree_sha256": "f64332db80b4e591929e829e143fb064983920739fae8d113c72a1cd444a3fea",
-      "title": "Topology\u2013Only Constraints in Modal Triplet Theory (MTT): Indices, Anomalies, and Line\u2013Bundle Triviality",
-      "version_relation": "matches_latest_release",
-      "zenodo_releases": [
-        {
-          "concept_doi": "10.5281/zenodo.18260713",
-          "created": "2026-01-15T18:06:17.833927+00:00",
-          "creators": [
-            "Nero, Peter"
-          ],
-          "doi": "10.5281/zenodo.18260714",
-          "files": [
-            {
-              "checksum": "md5:88bfacd7528fbcd39f7f9a4b7b0558b5",
-              "content_url": "https://zenodo.org/api/records/18260714/files/Topology__Only_Constraints_in_Modal_Triplet_Theory%20(4).pdf/content",
-              "key": "Topology__Only_Constraints_in_Modal_Triplet_Theory (4).pdf",
-              "size": 285400
-            }
-          ],
-          "id": "18260714",
-          "match_kind": "title_or_file",
-          "match_score": 1.0,
-          "publication_date": "2026-01-15",
-          "record_url": "https://zenodo.org/records/18260714",
-          "resource_type": "publication",
-          "title": "Topology-Only Constraints in Modal Triplet Theory: Indices, Anomalies, and Line-Bundle Triviality",
-          "updated": "2026-01-15T18:06:18.218867+00:00",
           "version": "v1.0"
         }
       ]

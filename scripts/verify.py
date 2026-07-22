@@ -114,7 +114,11 @@ def verify() -> dict[str, int]:
             matched_record_ids.append(str(release["id"]))
             assert release["record_url"].startswith("https://zenodo.org/records/")
 
-    assert selected_revisions == len(config["replacements"])
+    expected_selected_revisions = len(config["replacements"]) + sum(
+        bool(row.get("superseded_project"))
+        for row in (config.get("native_projects") or [])
+    )
+    assert selected_revisions == expected_selected_revisions
     assert len(matched_record_ids) == len(set(matched_record_ids))
     zenodo_ids = {str(record["id"]) for record in zenodo["records"]}
     unmatched_ids = {str(record["id"]) for record in unmatched["records"]}
@@ -124,6 +128,7 @@ def verify() -> dict[str, int]:
     assert report["zenodo_records"] == len(zenodo_ids)
     assert report["zenodo_records_matched"] == len(matched_record_ids)
     assert report["zenodo_records_unmatched"] == len(unmatched_ids)
+    assert report["superseded_projects_excluded"] == expected_selected_revisions
 
     serialized = json.dumps(catalog) + json.dumps(report)
     assert "C:\\\\Users\\\\" not in serialized

@@ -1,60 +1,48 @@
-# MTT Foundation v7 Revision Audit
+# Foundation v8 Shared-Line Revision Audit
 
-## Source lineage
+**Date:** 2026-07-22  
+**Selected source:** `Modal_Triplet_Theory__Foundation_v8/main.tex`  
+**Supersedes:** Foundation v7
 
-- Source: `_work/Modal_Triplet_Theory__Foundation_v6 (1)`
-- Revised: `revised_tex_vnext/Modal_Triplet_Theory__Foundation_v7`
-- The v6 project remains untouched.
+## Current status
 
-## Required corrections evaluated
+Version 8 retains the complete v7 functional-analytic foundation and adds the
+closed q79 universal flat differential-line theorem, the finite Reynolds
+Hessian square, and the Boothby-Wang Lens/Nil comparison. The result is exact
+at flat differential-character and finite-symbol tier. The physical nonflat
+HYM connection, local strain-to-q79 continuum intertwiner, and physical state
+space remain open.
 
-| Finding | v6 evaluation | v7 action |
-|---|---|---|
-| Separate abstract architecture from physical dimensions | The base/bundle description was neither fully dimension-neutral nor tied cleanly to the canonical physical realization | Gives a dimension-neutral Hilbert bundle and a separate `M_10 -> Y_4` realization with compact `X_6` fiber |
-| Preserve the shared circle without creating seven internal dimensions | Nested fibers and an auxiliary circle obscured dimension counting | Treats the central circle as a principal or line bundle over `X_6`; dimensions are added only for proved product factors |
-| Require joint operator compatibility | Base-only warping was claimed to prove commutation | Requires strong commutation of spectral measures or one selected total internal operator |
-| Separate stabilization, physical time, and RG scale | A single semiflow parameter carried physical implications downstream | Distinguishes `R_tau`, `U(t_2,t_1)`, and `mu`, requiring a bridge theorem for any identification |
-| Correct generator sign | A positive/accretive operator was conflated with a decaying generator | Uses `L_QQ=-kappa A_int+B_Q` and proves decay only when the damping margin is positive |
-| Make nonnormal estimates safe | Analyticity plus spectral language was used as an automatic exponential bound | Makes `||exp(t L_QQ)||<=M_Q exp(-omega_Q t)` the authoritative bound |
-| Separate all logical gates | Gap, existence, contraction, truncation, and selection remained partially entangled | Adds an explicit independent-gates section including projector stability, invariance, equilibrium promotion, and continuation |
-| Correct fixed-point terminology | A fixed point of `P R_tau` was called a projected equilibrium | Calls it a projected time-step fixed point until invariance and a strict Lyapunov identity prove stationarity |
-| Give actual existence hypotheses | Existence was inserted as an assumption and restated as a proposition | Supplies Schauder and Darbo–Sadovskii alternatives on a closed bounded convex invariant set |
-| State Banach correctly | Completeness/invariance of the contraction domain was not established | Requires a complete invariant domain `K` and `q<1` |
-| Correct Schur/Feshbach typing | The block inverse and products lacked domains | States closedness, graph-norm boundedness, resolvent, and product assumptions before deriving the Schur equation |
-| Restrict truncation scope | A linearized Schur estimate was promoted to controlled nonlinear truncation | Labels it local linear reduction and lists the additional nonlinear remainder and time-control obligation |
-| Narrow universality | Small block changes were called universality without a common basin theorem | Replaces this with a basin-local contraction perturbation bound `epsilon/(1-q)` |
-| Separate projector and dynamical stability | These were treated as one gap consequence | Gives a norm-resolvent Riesz-projector theorem and explicitly withholds dynamical stability |
-| Type projection, recovery, and descent | Decoder, section, and reduced dynamics were not distinguished | Adds the factor-through criterion, right section, exact left inverse, and effective-merger distinctions |
-| Treat selection reset honestly | The reset was said not to modify the underlying dynamics | Classifies it as a hybrid law and requires continuation, conservation, measurability, and probability data |
-| Correct Lorentzian signature source | A positive coherent Gram form was available for downstream signature claims | States that positive Gram forms cannot be Lorentzian and uses the physical principal symbol |
-| Separate scales | Internal gap was at risk of becoming a universal coherence or external cutoff scale | Separates internal gap, contraction, four-dimensional cutoff, curvature, and RG scales |
-| Add a complete admissibility ledger | No single checklist prevented downstream gate substitution | Adds fifteen independent geometry, operator, dynamics, scale, selection, and provenance entries |
+## Changes in this version
 
-## Resulting scope
+1. Replaced the informal phrase "one shared circle" by a typed pullback from
+   the universal flat line over `B_nabla Z64`.
+2. Added the unique nontrivial `S3 -> Z64` map and proved that both admissible
+   odd roots pull back to the same SpinC determinant sign line.
+3. Added the exact common-line action on the `1+2+3` CLN carrier, root-plane
+   complex structure, Haar projector, finite Hessian and TT block.
+4. Added the Boothby-Wang theorem identifying `L(k,1)` and Heisenberg
+   nilmanifolds as parallel prequantum circle bundles over different bases.
+5. Added the polarized-section readout `H^0(B,L^m)` as a conditional geometric
+   quantization construction, not an MTT-selected Hilbert space.
+6. Preserved the guard that compact circle/Reeb flow is not Lorentzian time.
 
-Foundation v7 is a conditional functional-analytic architecture. It proves
-projected fixed-point, equilibrium-promotion, local reduction, projector
-stability, basin robustness, and autonomous-descent results under explicit
-hypotheses. It does not derive physical time, Lorentzian equations, quantum
-probability, particle content, Standard Model data, cosmology, or numerical
-predictions.
+## Evidence used
 
-## Downstream authority
+- `Q79_UNIVERSAL_SHARED_DIFFERENTIAL_LINE_AND_FINITE_OPERATOR_INTERTWINER_v1.md`
+- `q79_universal_shared_line_intertwiner.packet.json`
+- `Q79_BHT_HORI_CLIFFORD_POLARIZATION_AND_DOUBLE_RETURN_v1.md`
+- `Q79_BINARY_SHEET_FM_SHARED_ROOT_AND_SPINC_RETURN_v1.md`
+- Boothby and Wang, *On contact manifolds* (1958)
+- Casals, Pancholi and Presas, *Contact blow-up* (2015)
 
-The corrected dependency order is now:
+## Nonpromotion guards
 
-1. Foundation v7.
-2. Corrected Fixed Points I–VI.
-3. Projection, descent, recovery, and admissibility.
-4. Controlled reconstructions and physical realizations.
-5. Numerical execution and phenomenology.
+- The flat q79 root-stack line is not the curved Boothby-Wang Lens or Nil
+  connection.
+- A common target `BU(1)_nabla` does not by itself prove that MTT selects the
+  classifying maps or their coherent comparison cells.
+- The finite Hessian intertwiner is not a continuum HYM Hessian theorem.
+- A polarized section space is a readout after extra geometric choices, not a
+  derivation of quantum mechanics or the Born rule.
 
-## Validation
-
-- Foundation v7 permanent theorem audit passes.
-- All six Fixed Points permanent theorem audits continue to pass.
-- The migration and verifier scripts pass Python syntax validation.
-- TeX environment nesting passes.
-- PDF compilation remains blocked by the previously identified local MiKTeX
-  dependency `amsthm.sty`; this is an environment issue rather than a detected
-  Foundation source error.

@@ -1,11 +1,11 @@
 {
-  "abstract": "We give a corrected functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle M_{10}\\to Y_4 with compact Riemannian fiber X_6; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and Banach, Schur\u2013Feshbach, projector-stability, and basin-robustness statements are given with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner.",
+  "abstract": "We give a corrected functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle M_{10}\\to Y_4 with compact Riemannian fiber X_6; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and Banach, Schur\u2013Feshbach, projector-stability, and basin-robustness statements are given with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat \\mathbb Z_{64} line pulls back coherently to the q79 SpinC determinant, the 1+2+3 carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby\u2013Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v7",
+  "current_version": "v8",
   "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949762",
@@ -32,22 +32,22 @@
     "updated": "2026-01-16T11:34:24.315287+00:00",
     "version": "v6.0"
   },
-  "main_tex_sha256": "7b7ea991bf6a669385b4cec959641f79c9088b76d1444b581b7aef230f7ab3ab",
+  "main_tex_sha256": "67b2cd3bb94fe446e2dbde09e93350fd6cc7500fb3dacd6619da134197b450c9",
   "paper_id": "modal-triplet-theory-foundations",
-  "paper_md_sha256": "20612ea84a986b0399a2d022e50e4791cc1e369db80741a53e6fc26f317baf0e",
+  "paper_md_sha256": "3ee00b51a5d7c6307d1405e30ce1eecf3d6f0f1f0828d5bc90029e28de5b60e0",
   "release_state": "zenodo_released",
   "revision": {
-    "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V7_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "9e1162cf8272c018b5f9bb10f8122eb61e32695e00fb5173a1b23edd749ad09a",
+    "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V8_SHARED_LINE_REVISION_AUDIT.md",
+    "revision_evidence_sha256": "41c4b12215fa1c6f3603459e55f1fc8de23ca1f41bf7b472374f55b4d107e415",
     "selected_revision": true,
     "superseded_source_path": "3 Core Foundations/_work/Modal_Triplet_Theory__Foundation_v6 (1)"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 23786,
+      "bytes": 30365,
       "path": "main.tex",
-      "sha256": "7b7ea991bf6a669385b4cec959641f79c9088b76d1444b581b7aef230f7ab3ab"
+      "sha256": "67b2cd3bb94fe446e2dbde09e93350fd6cc7500fb3dacd6619da134197b450c9"
     },
     {
       "bytes": 4186,
@@ -56,9 +56,9 @@
     }
   ],
   "source_provenance": {
-    "legacy_source_path": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__Foundation_v7"
+    "legacy_source_path": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__Foundation_v8"
   },
-  "source_tree_sha256": "85d90db523e6458685a9ef6a5eda6084480d858fa9d1de8db5ac7e865473a66c",
+  "source_tree_sha256": "aae67b31b83d79f0c90582ad41dc42eec2450392107dc96ed830c752b53bc2bc",
   "title": "Modal Triplet Theory: Foundations",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
