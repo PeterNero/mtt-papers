@@ -36,6 +36,11 @@
   "paper_id": "the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113",
   "paper_md_sha256": "6dd78f19bf8c0939a89796d0c7c4128923e42068581ba492856f663b9d07cd78",
   "release_state": "zenodo_released",
+  "result_refs": [
+    "native_gauge_group",
+    "neutral_summand_hypercharge",
+    "typed_family_representation"
+  ],
   "revision": {
     "revision_evidence_path": "papers/the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113/REVISION_AUDIT.md",
     "revision_evidence_sha256": "5b1ee58920c406701b0f9e921b68f2a226869654d50835f23b0e2d9de042d19e",

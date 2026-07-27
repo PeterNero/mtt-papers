@@ -69,6 +69,12 @@ def verify() -> dict[str, int]:
         metadata = load_json(metadata_path)
         assert metadata["paper_id"] == paper_id
         assert metadata["title"] == paper["title"]
+        assert metadata["result_refs"] == paper["result_refs"]
+        assert metadata["result_refs"] == sorted(set(metadata["result_refs"]))
+        assert all(
+            isinstance(result_id, str) and result_id
+            for result_id in metadata["result_refs"]
+        )
         assert metadata["main_tex_sha256"] == sha256_file(main_tex)
         assert metadata["paper_md_sha256"] == sha256_file(markdown)
         assert metadata["source_tree_sha256"] == canonical_hash(metadata["source_files"])

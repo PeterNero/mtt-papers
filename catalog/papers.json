@@ -50,6 +50,7 @@
       "paper_id": "a-projection-first-reframing-of-dark-matter-and-dark-energy",
       "paper_md_sha256": "14fff266f9e04e97e0e98e6cd043ac9915d2fa7818cd410b160b0d81ede38e55",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -125,6 +126,7 @@
       "paper_id": "a-projection-first-reframing-of-information-computation-dab93645",
       "paper_md_sha256": "30e7d41508b952a934316f86420fd5d5264da69f58337e619e33ae2ff5b4d969",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -200,6 +202,7 @@
       "paper_id": "a-projection-first-reframing-of-physics",
       "paper_md_sha256": "f4bf8d7f3591e9c31d18a4b8bb2c113b0bfc41143c0a14d49710b46a67cdcbeb",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -275,6 +278,7 @@
       "paper_id": "a-projection-first-reframing-of-quantum-gravity",
       "paper_md_sha256": "efdece98518bc845bc018fcff27bb1994a70e1a673cc04926b9dee034a67206d",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -350,6 +354,7 @@
       "paper_id": "a-projection-first-reframing-of-string-theory",
       "paper_md_sha256": "15d483f507858f1b234086adf9c041584a63835ff017d7b173c1190c157a1545",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -425,6 +430,7 @@
       "paper_id": "a-third-corner-shadow-bridge-asymptotic-safety-the-stri-37bbd5a2",
       "paper_md_sha256": "af122d44cc5b36903c46a3e98bc4a986721c2dd11a521b7c0c8b593309de3a05",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -500,6 +506,7 @@
       "paper_id": "a-tiered-roadmap-for-calculations-in-modal-triplet-theo-da081863",
       "paper_md_sha256": "328f09c1bee718ed7b758787bbbc421289921116263acd5cd3c850a283057338",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
         "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
@@ -578,6 +585,7 @@
       "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
       "paper_md_sha256": "e0a5714d99826a3ffde7f599d8f8440dd22c8e08f4a8f2ba265cd44f37732e87",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/REVISION_AUDIT.md",
         "revision_evidence_sha256": "65d313e8c04e1676da4540da74b58e970ba429d62674a9c5ec1012cf54376649",
@@ -656,6 +664,7 @@
       "paper_id": "asymptotic-safety-as-a-truncation-shadow-of-a-coherent-05df2176",
       "paper_md_sha256": "9a06db6422fad119bf0ae08aa0e4ab85be4ad360826237fcf614c9621e2947cc",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -731,6 +740,7 @@
       "paper_id": "baseline-scales-and-phenomenological-consistency-in-mod-b28fa79e",
       "paper_md_sha256": "d06a70cecb5eda757b5c485b0379b015b16494f564f13b30196803b75f2aaf24",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/BASELINE_SCALES_V2_REVISION_AUDIT.md",
         "revision_evidence_sha256": "c6ac53537625aa4e3c63900e28d3ad65b68e8763db5843595dfceac290d9b681",
@@ -809,6 +819,7 @@
       "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
       "paper_md_sha256": "a6c28c00ad18279729735bb238fd8a94f08c58851ba3105564a4a472e7a53198",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -860,6 +871,7 @@
       "paper_id": "canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62",
       "paper_md_sha256": "ba035de2e9acea9947b04b0bd5375ec45ce13c25905dd50ae6799f1fd8e6d5c0",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -909,6 +921,7 @@
       "paper_id": "capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90",
       "paper_md_sha256": "7adf35fcc347a16ac0bff94554f7ae4e5c44c57b6211378e90ba29f73daea4a9",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -984,6 +997,7 @@
       "paper_id": "causal-sets-as-an-effective-limit-of-modal-triplet-theory",
       "paper_md_sha256": "ee82b057a364f6cd0c3fdd6f114373a579fb11cbb6782e4b8847e9b571e4af74",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -1059,6 +1073,7 @@
       "paper_id": "causal-sets-as-event-selection-shadows-of-coherence-bre-7bca8116",
       "paper_md_sha256": "8371110236f0fa418042e177226f6741439479adfe1a005e039b2cab5077d83b",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -1110,6 +1125,7 @@
       "paper_id": "classical-constraint-deltas-and-microcanonical-shells-a-9f4bdcc1",
       "paper_md_sha256": "1a5619674a8750b274aa48d3c626a213e589a5b906fa309afc0325a61b04119c",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -1159,6 +1175,7 @@
       "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
       "paper_md_sha256": "2c1bc723c57bd670874bce25cb664e8cdf0625197746e282356fff1e7c1d13d0",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md",
         "revision_evidence_sha256": "340f4cb2ee4e5a22a1b008aa1c57109cdd148da74ef36fcec0913ef20dc527b1",
@@ -1237,6 +1254,7 @@
       "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
       "paper_md_sha256": "9b59569ae19c83064fb32b1552c0f71ea434e1f1aa361c91f50cc84f7e3a2232",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "10 ProtoSpinor/revised_tex_vnext/CLOSURE_STRAIN_V7_SHARED_LINE_REVISION_AUDIT.md",
         "revision_evidence_sha256": "e2e553d34b273b3d93b7dedd25d7f15c396f1ef995f6dc2c512dfb7bf1a18d0a",
@@ -1315,6 +1333,7 @@
       "paper_id": "coherence-capacity-as-the-fundamental-resource-of-effec-cd41c322",
       "paper_md_sha256": "6f491b5a9b26eb328e9efa183b0fea4d669ed485e46d86ff3e718e44a3eec116",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -1390,6 +1409,7 @@
       "paper_id": "coherence-capacity-as-the-invariant-admissibility-margi-423433d4",
       "paper_md_sha256": "6ea36f9561b67fdacc34a3b94ada986ac2bdeef63b4aedfe4e38b3714d3c711d",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -1441,6 +1461,7 @@
       "paper_id": "coherent-green-functions-replacing-point-sources-by-adm-98607519",
       "paper_md_sha256": "0cf75f4b90434a430a8edfe290abf58128c3bde83fe2d43f0640b200da747233",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -1490,6 +1511,7 @@
       "paper_id": "coherent-kinematics-in-modal-triplet-theory-chart-persi-359fefe8",
       "paper_md_sha256": "2724e3365350d2ec6111beb09aad7b4e82119ab55f19fe501addc86b838e2067",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/COHERENT_KINEMATICS_V2_REVISION_AUDIT.md",
         "revision_evidence_sha256": "8a1d29ae832900a9d9f4e6c193b7115593a04dd2de44be43aba4ec4a058ac433",
@@ -1568,6 +1590,7 @@
       "paper_id": "coherent-universality-and-the-inevitability-of-projecti-d9e28e29",
       "paper_md_sha256": "4fa4eac9a70bda6cb73c7ce249f489e7147957ff3f54093518662f017dea6613",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -1643,6 +1666,7 @@
       "paper_id": "coherent-sector-universality-and-controlled-truncation-0ccddc56",
       "paper_md_sha256": "92e8e60a33ee440ccfc0c52df1d679d0a876375e2c98f29a91a7bc87f1d17654",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -1718,6 +1742,7 @@
       "paper_id": "computational-irreducibility-from-projection-undecidabi-6cc6aafd",
       "paper_md_sha256": "b36a47c03fb84794b1e7556b4717c3e43f5cce932f54f654c79b70ba281a80fb",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -1793,6 +1818,7 @@
       "paper_id": "closure-and-inevitability-in-modal-triplet-theory",
       "paper_md_sha256": "7b84b11fe269f6e5b4d0ce5923f18e9d262618e171ec72f9b755542c7eea55e7",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/closure-and-inevitability-in-modal-triplet-theory/REVISION_AUDIT.md",
         "revision_evidence_sha256": "9ee1867308dd650db1ecaac429f9c9cac2291dfec496abdf63317d12203e95ba",
@@ -1871,6 +1897,7 @@
       "paper_id": "constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014",
       "paper_md_sha256": "fa88553a173158eaf51e95cc227ef2df3a6f5d52632b3011e47d308af820f28e",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014/REVISION_AUDIT.md",
         "revision_evidence_sha256": "ae73e21640e39f76b8d054fbd2291971862fa938e29a74cc47518d048083b72f",
@@ -1949,6 +1976,7 @@
       "paper_id": "constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b",
       "paper_md_sha256": "ecdea9511b6f2c6a8c72c671b865a52963f3f559195abb2f433110272f8de311",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b/REVISION_AUDIT.md",
         "revision_evidence_sha256": "e198cb8f12f5efa993c89503cf31325077c5781fad1558a2eeb59e9add8bed95",
@@ -2027,6 +2055,7 @@
       "paper_id": "constructive-mtt-quantum-gravity-iii-infrared-limit-asy-6f8b88d9",
       "paper_md_sha256": "1918f7e44300ede61285ba5ed3ab67562c0d7f6198ed91b05a33fd9e63ff94e2",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2078,6 +2107,7 @@
       "paper_id": "contact-interactions-and-renormalization-as-over-sharp-c2cfaa22",
       "paper_md_sha256": "948bde5152c30eb4f01e915479f05b809d82509249f58032c3a4155b4c8b4bf7",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2127,6 +2157,7 @@
       "paper_id": "cosmology-as-global-coherence-capacity-evolution",
       "paper_md_sha256": "1587834fdf6e9fcb3a0851f2cf8b913568ac4a9068d1cd8c3bf5646d22536757",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2178,6 +2209,7 @@
       "paper_id": "deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3",
       "paper_md_sha256": "7b72bba76cb011f943762ac5ba768afb55815b48ad1fb589bc6f609ebe3608d3",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2227,6 +2259,7 @@
       "paper_id": "determinism-without-superdeterminism-projection-induced-0e405923",
       "paper_md_sha256": "30a47d788eb7edb7be3a5f699cc1e4b0505d457be3d92630d0ff38c39edd7f68",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2302,6 +2335,7 @@
       "paper_id": "deterministic-projection-diffusive-limits-and-knee-like-a0b81ad7",
       "paper_md_sha256": "5085920cbb5326dc9485ae05ad987039107080db26cc3a3b40ea3d1dff1fdbb5",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2353,6 +2387,7 @@
       "paper_id": "dirac-delta-functions-as-singular-shadows-of-admissible-6e0ddf3f",
       "paper_md_sha256": "94cf383e93e352ab262726c3f90abaab3c92b4b3a57f789db3fc6ba5fed0eb9a",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2402,6 +2437,7 @@
       "paper_id": "dynamics-of-coherence-capacity-transport-concentration-f2edc08a",
       "paper_md_sha256": "cd4bad472dc3244f3d4b3e964b4ad6791f8abd59e317f7ca5db45f7117312603",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2477,6 +2513,7 @@
       "paper_id": "effective-field-theory-as-a-shadow-of-projection-admiss-ec123406",
       "paper_md_sha256": "c6ec8694cf1db833f3db94488f23b1c192d59d73b6575da4f57fc19bd8b077b5",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2552,6 +2589,7 @@
       "paper_id": "electromagnetic-helicity-as-a-coherent-sector-chern-sim-0cc7ca40",
       "paper_md_sha256": "c41c4fd364358fffd0fb7bd5e19faaf58e714f646fab5f804806296713c71f85",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2627,6 +2665,7 @@
       "paper_id": "entanglement-locality-and-measurement-from-coherent-sec-110e8cbe",
       "paper_md_sha256": "b239aa6cef1b69fcc9891f2ff5157e0dce426d6079873e423904347a3b05cdcf",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2702,6 +2741,7 @@
       "paper_id": "eth-and-many-body-localization-as-a-single-shadow-bridg-236606dd",
       "paper_md_sha256": "1c10539584cdf0d784547dab5db31c01346b6b911da812b202609de34a5907fc",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2777,6 +2817,7 @@
       "paper_id": "execution-of-modal-triplet-theory-i-gauge-hym-threshold-abc17efc",
       "paper_md_sha256": "abba704b40e9b8a913918816cd9180d4974f1ccb13ca560e142dbf1cb2f5f7d4",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
         "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
@@ -2855,6 +2896,7 @@
       "paper_id": "execution-of-modal-triplet-theory-ii-flavor-ckm-neutral-42604e2f",
       "paper_md_sha256": "982ad9f6ecd23e080d0bb36e27ee9860f9285d056af4b6cb4ce120689cd5a50e",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
         "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
@@ -2933,6 +2975,7 @@
       "paper_id": "fermions-in-loop-quantum-gravity-from-modal-triplet-the-c9d451aa",
       "paper_md_sha256": "716b6db3b1d8463aa0a278a7d629d3de760855ff0da291eb8a2666a64440c6ca",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -2984,6 +3027,7 @@
       "paper_id": "finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb",
       "paper_md_sha256": "be2b0eb880e39e8ea142356238e674c858d3a240aa71c883c9cc74bda9a0ac83",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -3009,6 +3053,7 @@
       "paper_id": "finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c",
       "paper_md_sha256": "f89bb45b5868479590d93b7aa8960fe53ff731205897cb8f222d2fa6a10009f9",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -3058,6 +3103,7 @@
       "paper_id": "fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce",
       "paper_md_sha256": "1422733cf8e85472863392f978d6a7f2e51cf3d058e4878936adc33177431e69",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_I_V6_REVISION_AUDIT.md",
         "revision_evidence_sha256": "8699734fcc8d633345c266d5811c0e535cd80f7ae10934519d52d16b8f1a1d2b",
@@ -3136,6 +3182,7 @@
       "paper_id": "fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534",
       "paper_md_sha256": "3b3921071ff6e1a7a86edd5f85263c38fbbae955594ac08b147bb27d1759b1e5",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/REVISION_AUDIT.md",
         "revision_evidence_sha256": "4c3f8c9fcdcd7905145c99c6be9ffcc2640bd586894c353811a3f46b8d26e892",
@@ -3214,6 +3261,7 @@
       "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
       "paper_md_sha256": "a652a00c0b3034c404c0181e84ee2af385a8eca4ab8fd60540aa0892f4e432f0",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_III_V4_REVISION_AUDIT.md",
         "revision_evidence_sha256": "6c4a92b34ada6d4a62dd5fc19e08d98adff0cacfd10cd956b0f6e571ed3bdd5b",
@@ -3292,6 +3340,7 @@
       "paper_id": "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce",
       "paper_md_sha256": "74d9a8965019af5d4e718462d8dc971f6a07dc918a362488eaa4c5b104c15ecf",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce/REVISION_AUDIT.md",
         "revision_evidence_sha256": "fe8bec06e6028cb8e1ef49ae30a3c622c684e5da3b106385bf14663a107bf456",
@@ -3370,6 +3419,7 @@
       "paper_id": "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8",
       "paper_md_sha256": "513f04b666e3398947055dc99daf7e1eb3bec4d8d5fa844f69a58fe7930e2f4f",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_V_V6_REVISION_AUDIT.md",
         "revision_evidence_sha256": "729a5f5e9a04e8b03073e3efabb1df82e7068d125f298883db1810d6130cd77d",
@@ -3448,6 +3498,7 @@
       "paper_id": "fixed-points-vi-formal-synthesis-and-physical-interpretations",
       "paper_md_sha256": "b27cb876ceaa0c28933eefa07efd3fcfe5306d62e5423e29d7db24a66883b824",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations/REVISION_AUDIT.md",
         "revision_evidence_sha256": "31997381bb1796b4fbd1ebed6048226ba10e31de22def03ed34c5dcb02006d13",
@@ -3526,6 +3577,7 @@
       "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
       "paper_md_sha256": "a15f3759735eeef5e7967df27c8af9ad0e38db93ddb4fca84226ff2ed878177a",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -3601,6 +3653,7 @@
       "paper_id": "from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3",
       "paper_md_sha256": "24576b1473400019e835ca7dafa155fb00cf81e4613914cb39690c6cbc18eed2",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -3652,6 +3705,7 @@
       "paper_id": "gauge-fixing-as-admissible-section-selection-in-modal-t-459e029d",
       "paper_md_sha256": "667bf54f842c06235e88cfbc2778cbcf2fa167c6770cc71716c2dec8532bdb56",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -3701,6 +3755,7 @@
       "paper_id": "geometry-light-relations-in-modal-triplet-theory-exact-1a5eeb7e",
       "paper_md_sha256": "57e051ec9962986808e718d18270f89a981d442ba9657308b51b7933432a3fa3",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
         "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
@@ -3779,6 +3834,7 @@
       "paper_id": "gravitationally-induced-collapse-as-an-effective-limit-d74eb471",
       "paper_md_sha256": "50f570c2cd2a4e58c66ee554471701793851fda1f8c91a87a9342504e2c3486f",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/gravitationally-induced-collapse-as-an-effective-limit-d74eb471/REVISION_AUDIT.md",
         "revision_evidence_sha256": "26a6cc596994141e9586d7831f99b6c6e5849e43874c5714d3299cd3b46e8b5f",
@@ -3857,6 +3913,7 @@
       "paper_id": "horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71",
       "paper_md_sha256": "d186a6d60af3e222e6d29fefc65181b22a66da4cfb4a27ea34b2a3b821f33420",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -3932,6 +3989,7 @@
       "paper_id": "inflationary-measures-and-the-born-rule-as-a-single-sha-388b32c2",
       "paper_md_sha256": "f8990077d689bd97d616bebaa0ddc948bd7599acc4210cd0ec8a52eeab56d56d",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -4007,6 +4065,7 @@
       "paper_id": "loop-quantum-gravity-as-a-shadow-of-coherent-fixed-poin-9133be75",
       "paper_md_sha256": "5df4016b871c04f4c30040d775ac8243289f645a02efac30cc206f58556ae250",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -4082,6 +4141,7 @@
       "paper_id": "lorentzian-base-compatibility-and-signature-stability-i-6ac3fbb9",
       "paper_md_sha256": "b2f71c255eb810f7ea2c28978edee3e5614badbdc6a3f9e83d5677097ede3db2",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/SIGNATURE_STABILITY_V2_REVISION_AUDIT.md",
         "revision_evidence_sha256": "c5cf22c11a5f0f59b422554a3033ff4e5bd61a5ea7310585336699e3953f09c4",
@@ -4160,6 +4220,7 @@
       "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
       "paper_md_sha256": "8aa5e90d9c0e0f525f75a6c4f90bc29d9094e7ad974513960b7cbe0a97e2a74f",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -4211,6 +4272,7 @@
       "paper_id": "measurement-effects-as-finite-survivor-basin-kernels-pr-eb7737ce",
       "paper_md_sha256": "cffd2425d878506048ba33f5dc85ebfee5446c7b11f3b1f78ed9e9a5ecb5cce1",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -4260,6 +4322,7 @@
       "paper_id": "measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee",
       "paper_md_sha256": "d984e02d316c8d87e50508859d128c83b507c7cbf55879759b623244355a672a",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -4335,6 +4398,7 @@
       "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
       "paper_md_sha256": "e52b70501350a0ac091092cc002ae79d9323af69e1adcc627cd0045d860200a3",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -4410,6 +4474,7 @@
       "paper_id": "modal-fixed-points-bell-s-beables-and-the-limits-of-fac-59a69f5c",
       "paper_md_sha256": "3c2d3d9364cddb7d28f41df65e23daf58be28a34e990da8547aaed6bdf2a0509",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -4485,6 +4550,7 @@
       "paper_id": "modal-triplet-theory-and-asymptotic-safety-asymptotic-s-dc3ce0c2",
       "paper_md_sha256": "9c2ad2245e422ce416c7b10e11ee8b87bfdd46016f7547833fdc4e5d18fa18cc",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -4560,6 +4626,7 @@
       "paper_id": "modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731",
       "paper_md_sha256": "feb9a4561beef7a9f9d91ec598db252de603606f921ac80a934f9b63096dd791",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/RELATIONSHIP_ATLAS_V3_REVISION_AUDIT.md",
         "revision_evidence_sha256": "3b102b9b57c20084c1491086c311c4d56d2650beff2f17ec763472c8bf67e30b",
@@ -4638,6 +4705,7 @@
       "paper_id": "modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed",
       "paper_md_sha256": "18f013db2061368a1bb22f4d8f451a78e43e29f0bf4063214fc335ee9717ac71",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -4713,6 +4781,7 @@
       "paper_id": "modal-triplet-theory-foundations",
       "paper_md_sha256": "3ee00b51a5d7c6307d1405e30ce1eecf3d6f0f1f0828d5bc90029e28de5b60e0",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V8_SHARED_LINE_REVISION_AUDIT.md",
         "revision_evidence_sha256": "41c4b12215fa1c6f3603459e55f1fc8de23ca1f41bf7b472374f55b4d107e415",
@@ -4791,6 +4860,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0",
       "paper_md_sha256": "0c7e1e80f254b6920c03218b65260009e3e3f7f960940a59f6b2945a0abd7ebb",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -4866,6 +4936,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d",
       "paper_md_sha256": "fd34ae70c21933f887d341812c3b9877900faebbc1e9d81d3ce8e2d2b4d42243",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -4941,6 +5012,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-general-relativity",
       "paper_md_sha256": "711c6a7a91b5838eded15f1e6d85d0c71371d2fb4e510ad8f6001e207325c1c5",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5016,6 +5088,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
       "paper_md_sha256": "0adb06e4cc530a5e0cf9c534112636b1fdf0c0eb174ff864027085fc12cb6b77",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5091,6 +5164,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-kaluza-klein-theory",
       "paper_md_sha256": "78fd96bee7acc8cf07471896cbe0c8a1d848a210d07d22c2004ecffcb239f3a7",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5166,6 +5240,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-loop-quantum-gravity-a-4ae4b130",
       "paper_md_sha256": "052f4db8bb3d1fae4d7ce094e24deaa1055715c3c2c306a1af7ecb2ae8e119b2",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5241,6 +5316,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880",
       "paper_md_sha256": "da0346ef781845be2d689132431e39ebf5a0f144e16cb91ed8a0e530bbd4b1eb",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5316,6 +5392,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-pilot-wave-dynamics",
       "paper_md_sha256": "4bdc78ac6299158a1a79fcf186e6185533a608f2f90519cc7166804dc3e57fc8",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5391,6 +5468,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
       "paper_md_sha256": "a448c05dc327ca672751cab523b8e888b22c03c83d69ba9e47bdc73c2e28a12a",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5466,6 +5544,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
       "paper_md_sha256": "f6f43da9e2498456942f8cc43df78b37a6cd2fd526bd8bba84be7acf15f726e2",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5541,6 +5620,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
       "paper_md_sha256": "74fe4649ca0f0b24621394f269019a94f6bdade18e3f538438bb5d1a305c963a",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5616,6 +5696,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-string-theory-a-first-4b1100fc",
       "paper_md_sha256": "097e1a4e21b8009cda9a035676dc653d3fe8454896a83af9cd772cda17a2e33a",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5691,6 +5772,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
       "paper_md_sha256": "4bd00083cdd789977b170d819d8cb5187d48242c9fedcf74832fe0f98d0bc6ff",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5766,6 +5848,7 @@
       "paper_id": "modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927",
       "paper_md_sha256": "f911d420ea901a5bc4b6bbfc11b2f7411c96914c81dbff522ca1c4125e896e8f",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5841,6 +5924,7 @@
       "paper_id": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
       "paper_md_sha256": "faaf8b39d03b1e06b23e82128145b899429fa74128f6f9d843a5a34b6366006e",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5892,6 +5976,7 @@
       "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
       "paper_md_sha256": "f49c1028525ed88facc2ef423f17ed86df7fe3bdd707dfae33502efc4385a2b6",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5941,6 +6026,7 @@
       "paper_id": "modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7",
       "paper_md_sha256": "40ec92761cbc2b99497b4c8531ce62cb39f1375458d61492020e76407148c526",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -5992,6 +6078,7 @@
       "paper_id": "momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685",
       "paper_md_sha256": "2d7321c2f861bb101dc92647732b6c79d64b49f8aef3886e33c180f246c6cd1b",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6017,6 +6104,7 @@
       "paper_id": "mtt-gpt-corpus-index-grouped-reference",
       "paper_md_sha256": "b0031fbef295fcd713f588fdcef317b27762381a922bfd4be38fabb0b56f9629",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6042,6 +6130,7 @@
       "paper_id": "mtt-corrected-contact-loops-and-finite-one-loop-tadpole-cdd66d8e",
       "paper_md_sha256": "ce5dc4480fd283a2fc348345435edb9aad72b6dda98532ac1639776d1b044de6",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6067,6 +6156,7 @@
       "paper_id": "mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f",
       "paper_md_sha256": "dfc7a70dea08c706226e5610d614d69efca48c77a8cc537f626c4b943317df9e",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6116,6 +6206,7 @@
       "paper_id": "particles-and-forces-as-coherence-basins-and-capacity-gradients",
       "paper_md_sha256": "7607dbe7a2cc82fbe2e5f3914254dc5e1f6b34508a9b629c9a5f28533e259207",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6167,6 +6258,7 @@
       "paper_id": "path-integral-constraints-as-finite-admissibility-filte-47c01009",
       "paper_md_sha256": "f5deb0eabce070c7bfaf4ead989352821f7224560e0e0e047299cef95d869249",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6216,6 +6308,7 @@
       "paper_id": "photons-entanglement-and-null-updating-in-modal-triplet-theory",
       "paper_md_sha256": "3473528f5c4954a68720dfd15124630a69ec060300aaae1c45c020af6de9b999",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6291,6 +6384,7 @@
       "paper_id": "projection-probability-and-irreversibility-shadow-bridg-a86c97e5",
       "paper_md_sha256": "31b44396d705077141b40a26b033a6029d6a4c1f69e9484d5dbb21abcc161099",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/projection-probability-and-irreversibility-shadow-bridg-a86c97e5/REVISION_AUDIT.md",
         "revision_evidence_sha256": "604909b83c074285c5d98d1e692274d10f99eb732cca5277d8267a4fea0e8d2e",
@@ -6369,6 +6463,7 @@
       "paper_id": "projection-induced-network-geometry-sprouting-hidden-co-6919523e",
       "paper_md_sha256": "e85b3d5d74f96de1935f8fe2e236ee9f22762bf7f8bf3f6f3751bc37a918c2bd",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6442,6 +6537,7 @@
       "paper_id": "projection-limited-coherence-a-structural-theory-of-eff-3343fe62",
       "paper_md_sha256": "3f24ea06db4c46f2807b951aefd3ed97cc69885e9523e8b930696d8bec168d05",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6517,6 +6613,7 @@
       "paper_id": "proto-spinor-closure-and-worldsheet-encoding-in-modal-t-6a9d7abf",
       "paper_md_sha256": "c7d4d7ce0f07dc1720ea9030f8f1bf4091cfd6aa5c64f9cf6ee998b4f2c097dc",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md",
         "revision_evidence_sha256": "340f4cb2ee4e5a22a1b008aa1c57109cdd148da74ef36fcec0913ef20dc527b1",
@@ -6595,6 +6692,7 @@
       "paper_id": "quantum-field-theory-reconstruction-from-coherence-basi-ef12097a",
       "paper_md_sha256": "abe0f058aef41b203568aed80b16379d2a0336b6d34b32ce54d40c100fcf87cc",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6670,6 +6768,7 @@
       "paper_id": "selection-fronts-and-boundary-layer-physics-at-the-admi-b6234575",
       "paper_md_sha256": "5b59f06d718fd16e926c877a6c29b4ace3c1483da9a38257e7908025be2e0ecf",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6721,6 +6820,7 @@
       "paper_id": "spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5",
       "paper_md_sha256": "5ea7a0b411dcc7332b32ea1d6d96ad53c110096ea7f4c06a3eb806c91416d1f8",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6770,6 +6870,7 @@
       "paper_id": "superset-determinations-in-modal-triplet-theory-paramet-87399967",
       "paper_md_sha256": "9d67de4d738da18b53e490e8c10a490123eff61593dcc14990ecc3fe809c28c3",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
         "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
@@ -6848,6 +6949,7 @@
       "paper_id": "temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb",
       "paper_md_sha256": "510e07e48dedbc47fa03c0b8759d733a598bcb6394c2be2041fe4cd6a704c9ca",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -6923,6 +7025,7 @@
       "paper_id": "the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793",
       "paper_md_sha256": "4b06cfe4af58019dab9254e215c55d454a44fc54b17790e2a2ba310da4fe887b",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "10 The Book on Modal Triplet Theory/BOOK_V10_CURRENT_CORPUS_RECONCILIATION_AUDIT_2026-07-15.md",
         "revision_evidence_sha256": "4f4b566954e245234ed3794268a0411530a59ab0cd6d9916143db7648e10579c",
@@ -7001,6 +7104,7 @@
       "paper_id": "the-central-circle-inertia-mass-gravity-and-time-as-sha-5faa2369",
       "paper_md_sha256": "4d7b8276a3c3ab380f62edb0eeb7f139d916c42455ba53ce62c4d9a5aaeb8623",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -7076,6 +7180,7 @@
       "paper_id": "the-modal-triplet-theory-program-a0-a-structural-theory-bebae240",
       "paper_md_sha256": "da315414aa9d5c3e394c4816674dba4e725759e4445721a76839c1bb058baade",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/the-modal-triplet-theory-program-a0-a-structural-theory-bebae240/REVISION_AUDIT.md",
         "revision_evidence_sha256": "29d01823d687b94090ab575f45282761c32dc9852b4c401198ed87ba6bdb0b8b",
@@ -7154,6 +7259,7 @@
       "paper_id": "the-modal-triplet-theory-program-a1-coherent-kinematics",
       "paper_md_sha256": "3f79d464e79c488f90d189e5499636802214a24a6fe82fe9a31fd1cc5b5ca8a6",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/the-modal-triplet-theory-program-a1-coherent-kinematics/REVISION_AUDIT.md",
         "revision_evidence_sha256": "62f7e3c3c737b55aaf4cc57387dd24fb35429500db857b25faf73aec24b4e750",
@@ -7232,6 +7338,7 @@
       "paper_id": "the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad",
       "paper_md_sha256": "f5b37b9875392d278f255e98a98a318308903a963b18d8e05f3164a2a002ff22",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad/REVISION_AUDIT.md",
         "revision_evidence_sha256": "ea1bfdc0c893030c6117d8ccc2795caead63c4545c55f73a8f9648a276a8dc3c",
@@ -7310,6 +7417,7 @@
       "paper_id": "the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2",
       "paper_md_sha256": "869ceffb5ad692d23be2eaf1f9e7fa1d4c229b64b41f399467f98de0067f380c",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2/REVISION_AUDIT.md",
         "revision_evidence_sha256": "e0f39544eaa42eb0ecef77dabf303c6269af860482d020e359bd77d7b540beac",
@@ -7388,6 +7496,7 @@
       "paper_id": "the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38",
       "paper_md_sha256": "b99245ea84bd2795bc6874ad1ca244778cd533895293be5262ba6db2624c4b3f",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38/REVISION_AUDIT.md",
         "revision_evidence_sha256": "18a9f15bd19d31ba66406149d7ac6e3c1fcee69a73bc18b13b0c5a0053a4599f",
@@ -7466,6 +7575,7 @@
       "paper_id": "the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a",
       "paper_md_sha256": "f6a241bd50423a0da0642ef730c7b17cefcc46e1c7055a67d75d391ef0c23ed6",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a/REVISION_AUDIT.md",
         "revision_evidence_sha256": "76401118da9a0529403b024a9ca7193ab175cf7e133d71214cad2957c21168af",
@@ -7544,6 +7654,7 @@
       "paper_id": "the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34",
       "paper_md_sha256": "6780601f2b19c1f55f1e3a7f2360bf8383ad2cf4da289e3e58faa7066ea08bf8",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34/REVISION_AUDIT.md",
         "revision_evidence_sha256": "11cb7d0e78e81a31edfabef1474d81eb5803289b27e9c48900387b82ab78fd6c",
@@ -7622,6 +7733,11 @@
       "paper_id": "the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113",
       "paper_md_sha256": "6dd78f19bf8c0939a89796d0c7c4128923e42068581ba492856f663b9d07cd78",
       "release_state": "zenodo_released",
+      "result_refs": [
+        "native_gauge_group",
+        "neutral_summand_hypercharge",
+        "typed_family_representation"
+      ],
       "revision": {
         "revision_evidence_path": "papers/the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113/REVISION_AUDIT.md",
         "revision_evidence_sha256": "5b1ee58920c406701b0f9e921b68f2a226869654d50835f23b0e2d9de042d19e",
@@ -7700,6 +7816,7 @@
       "paper_id": "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
       "paper_md_sha256": "b790156f4f8bf4a98b70a5f4ac14a8be386b6df8279ff9392d358f864f530c89",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -7775,6 +7892,7 @@
       "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
       "paper_md_sha256": "d969459b78f1fa39c4150ae6b7db2980a1d9e6a25d5df804a25b1a020b215665",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -7850,6 +7968,7 @@
       "paper_id": "the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707",
       "paper_md_sha256": "eae7840f2e21fc040fff241d3c3aa38a4654856fe591f961263d311e7b1e1f80",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -7925,6 +8044,7 @@
       "paper_id": "the-projection-admissibility-principle-descent-recovery-b0fd6e59",
       "paper_md_sha256": "f7a2bb6e4fdce7bf1823c63ec8d37790db1c8fa15cfbd045ac617079c948eefa",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/PROJECTION_ADMISSIBILITY_V2_REVISION_AUDIT.md",
         "revision_evidence_sha256": "bf0cf2b293e6d965442482adaa2dcc47c2efc533982417aae0ca7262b2fa9987",
@@ -8003,6 +8123,7 @@
       "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
       "paper_md_sha256": "10a51b1205ca244b69b44da6622c7bc02320697916ae7c6c8df9f8659254896a",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "10 ProtoSpinor/revised_tex_vnext/PROTO_SPINOR_V6_SHARED_LINE_REVISION_AUDIT.md",
         "revision_evidence_sha256": "f9a68185f10ba1ad1efa94acea460e06a404be794f54763d1dd5b4b9f783757d",
@@ -8081,6 +8202,7 @@
       "paper_id": "the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987",
       "paper_md_sha256": "e9a84dee14e6b7fca3a90a3600f5df35eda3241e17aba208c6a05e5caa4e5f7c",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -8132,6 +8254,7 @@
       "paper_id": "the-universe-has-a-bad-memory",
       "paper_md_sha256": "582988facf2a8e83458b14d4395750d8bf1b4bbd01dbb7372046a10eb4111ad6",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -8181,6 +8304,7 @@
       "paper_id": "theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f",
       "paper_md_sha256": "5ea019fb89cd14cb0b619cee5f8864400029a06a5ce336684adbf6ebe021ad1b",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
         "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
@@ -8259,6 +8383,7 @@
       "paper_id": "theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca",
       "paper_md_sha256": "516640dcc5ee9966b71778a867a917cd0a3b978437fb21ac96556f4a4da43d7b",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
         "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
@@ -8337,6 +8462,7 @@
       "paper_id": "theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643",
       "paper_md_sha256": "baee614424b2343ca399374f079aee51d3b603565e4971d28141e7e5d779017f",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
         "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
@@ -8415,6 +8541,7 @@
       "paper_id": "theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5",
       "paper_md_sha256": "20654d47d6f34953fa15fab44658b041d97a3d98c729159dfb6b9038df800964",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
         "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
@@ -8493,6 +8620,7 @@
       "paper_id": "theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c",
       "paper_md_sha256": "4f69d11b3e118c266c740e612e83fa13d122ca1be5588732f1ecf042fde8c99e",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
         "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
@@ -8571,6 +8699,7 @@
       "paper_id": "topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2",
       "paper_md_sha256": "5ba334f608c2b93aa7fa94f9df7c1b6102a25c5fc9b0d1c7f0d95989d70d1b8d",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2/REVISION_AUDIT.md",
         "revision_evidence_sha256": "3b47d0f94b10fd7dbff26696ad001d2b446c99375970b05046f5793b96002323",
@@ -8649,6 +8778,7 @@
       "paper_id": "topological-phases-of-matter-as-admissible-overlap-stru-837dec46",
       "paper_md_sha256": "f9a068518c540f963005e1ef3f65756e97a4620dd3f730e80a72113fa81634f8",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -8724,6 +8854,7 @@
       "paper_id": "topology-only-constraints-and-forbidden-operators-in-mo-90db2212",
       "paper_md_sha256": "ba604740ff84c204ba866eb0f06115c7c4bee4feb898e131270c9185ebdf6333",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -8797,6 +8928,7 @@
       "paper_id": "twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29",
       "paper_md_sha256": "56c2ebe74e5c37825723a73a56b4dd20bf98d0960d72669ddd75590b28ca3126",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -8872,6 +9004,7 @@
       "paper_id": "universality-and-robustness-of-the-coherent-sector-in-m-a64842b3",
       "paper_md_sha256": "aaa630c40ac716695fa58e4ee87526b3412840e891069cc005452bbb8d014a3c",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -8923,6 +9056,7 @@
       "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
       "paper_md_sha256": "76fc61bc31f8e634b55e1c3e5040f092cac7be828523fdfddcc86e801629285f",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -8972,6 +9106,7 @@
       "paper_id": "when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34",
       "paper_md_sha256": "8b895381d437167040840b61984b514a5e7aca419a6eb59f5711bb5cc8255fd9",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -9023,6 +9158,7 @@
       "paper_id": "white-noise-and-markov-limits-as-delta-correlation-idea-854be499",
       "paper_md_sha256": "da795a5baa6b3cb912251a2e4983d64808233ed110babcf7896285a187c60448",
       "release_state": "not_matched_to_zenodo",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -9072,6 +9208,7 @@
       "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
       "paper_md_sha256": "f3a1aa86800a75abca3707a65c2d4955a24c10342fbf70aa45ebd233ff6358d7",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -9147,6 +9284,7 @@
       "paper_id": "why-general-relativity-and-string-theory-are-the-same-a-98920533",
       "paper_md_sha256": "136c3bb04a7f676648ca32b53f4f19240f0ab679a230558bd72edf6c00883b73",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -9222,6 +9360,7 @@
       "paper_id": "why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7",
       "paper_md_sha256": "793e7ce46f4a02495745c7a447033370ce91f029687b0334a3275e9677dc5d31",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -9297,6 +9436,7 @@
       "paper_id": "why-quantum-contextuality-and-measurement-order-depende-e0bdb9bf",
       "paper_md_sha256": "432b8c2e07c3c1ebef2f672bf3ad06665650f9d5a117ecc1c9afc872fe79ecee",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -9372,6 +9512,7 @@
       "paper_id": "why-quantum-theory-must-be-complex-a-soler-admissibilit-b7674be8",
       "paper_md_sha256": "8baaa285f6dcccccc670949bab9a5a4188f3aa9bfe00320fb3f810e81268e888",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -9447,6 +9588,7 @@
       "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
       "paper_md_sha256": "a0425ed0788c4cfc308de0fa2c1187dde8a2501ef18b19b96e1e6de50cc71725",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "selected_revision": false
       },
@@ -9522,6 +9664,7 @@
       "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
       "paper_md_sha256": "8c716790c0d78ee0ef010d8a961442b5d5b4c040b92cdd30af47e018163bd841",
       "release_state": "zenodo_released",
+      "result_refs": [],
       "revision": {
         "revision_evidence_path": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md",
         "revision_evidence_sha256": "340f4cb2ee4e5a22a1b008aa1c57109cdd148da74ef36fcec0913ef20dc527b1",

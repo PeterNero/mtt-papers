@@ -665,6 +665,11 @@ def prepare_paper_records(
         authors = list(native.get("authors") or authors) if native else authors
         date = str(native.get("date") or date) if native else date
         abstract = str(native.get("abstract") or abstract) if native else abstract
+        result_refs = (
+            sorted({str(item) for item in native.get("result_refs") or [] if str(item)})
+            if native
+            else []
+        )
         replacement = replacement_by_selected.get(source_path) if not native else None
         configured_paper_id = replacement.get("paper_id") if replacement else None
         paper_id = (
@@ -713,6 +718,7 @@ def prepare_paper_records(
                 "authors": authors,
                 "date": date,
                 "abstract": abstract,
+                "result_refs": result_refs,
                 "current_version": (
                     str(native.get("current_version") or project_version(project.name))
                     if native
@@ -871,6 +877,7 @@ def migrate(args: argparse.Namespace) -> dict[str, Any]:
             "authors": paper["authors"],
             "date": paper["date"],
             "abstract": paper["abstract"],
+            "result_refs": paper["result_refs"],
             "current_version": current_version,
             "canonical_tex": "main.tex",
             "canonical_markdown": "paper.md",
@@ -897,6 +904,7 @@ def migrate(args: argparse.Namespace) -> dict[str, Any]:
                     "authors",
                     "date",
                     "abstract",
+                    "result_refs",
                     "current_version",
                     "canonical_tex",
                     "canonical_markdown",

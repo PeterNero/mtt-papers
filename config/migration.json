@@ -109,6 +109,11 @@
       "date": "July 2026",
       "paper_id": "the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113",
       "path": "papers/the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113",
+      "result_refs": [
+        "native_gauge_group",
+        "neutral_summand_hypercharge",
+        "typed_family_representation"
+      ],
       "revision_evidence": "REVISION_AUDIT.md",
       "source_provenance": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B4__Encoding_Intersections_and_Structural_Rigidity",
       "superseded_project": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B4__Encoding_Intersections_and_Structural_Rigidity",
