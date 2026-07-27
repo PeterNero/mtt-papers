@@ -1,12 +1,12 @@
 {
   "counts": {
     "canonical_papers": 139,
-    "current_sources_newer_than_release": 39,
+    "current_sources_newer_than_release": 40,
     "pandoc_warning_papers": 12,
     "papers_with_zenodo_release": 119,
     "papers_without_zenodo_match": 20,
     "schema": "mtt.paper-migration-report.v1",
-    "superseded_projects_excluded": 40,
+    "superseded_projects_excluded": 41,
     "zenodo_records": 120,
     "zenodo_records_matched": 119,
     "zenodo_records_unmatched": 1
@@ -7195,14 +7195,14 @@
       ]
     },
     {
-      "abstract": "We analyze limits of computation, prediction, and control that arise as structural consequences of admissible description in the Modal Triplet Theory (MTT) framework. Without invoking complexity theory, algorithmic randomness, or resource constraints, we show that finite admissibility, kinematic persistence, and selection fronts impose intrinsic limits on what can be predicted or decided within any admissible encoding. We introduce the notion of admissible prediction depth and show that, in the presence of selection fronts and nil obstructions, well-posed questions about future kinematic continuation can be undecidable within the theory. These limits are structural rather than epistemic: they persist even with infinite computational power and perfect local information. The results clarify the relationship between physical prediction, computation, and description. They show that undecidability and loss of predictability arise from the same structural sources as irreversibility, horizons, and quantization, and do not require additional postulates about information or observers.",
+      "abstract": "We separate four notions that were conflated in the first version of Program A2: finite admissible prediction depth, underdetermination at a branching relation, algorithmic undecidability, and computational lower bounds. Prediction depth is a chart- and protocol-relative iteration diagnostic. It is finite only under a certified finite barrier along the declared continuations; finite depth alone does not imply undecidability. A selection reachability problem becomes algorithmically undecidable if a selected MTT realization robustly and uniformly embeds a universal two-counter machine, preserves every finite machine prefix, and identifies halting with a selected target event. We prove this conditional transfer theorem and also prove the complementary finite-capacity result: a fixed finite carrier with computable transitions has decidable reachability and therefore cannot satisfy the unbounded embedding contract. Neither non-Markovianity, noninjective projection, branching, nor nil termination supplies that contract by itself. Computational irreducibility additionally requires a specified computation model and a lower-bound theorem. Probability, quantization, physical time, and universal limits of control remain separate source obligations.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January, 2026",
+      "current_version": "v2",
+      "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18354965",
         "created": "2026-01-23T20:00:08.457733+00:00",
@@ -7228,19 +7228,22 @@
         "updated": "2026-01-23T20:00:08.939137+00:00",
         "version": "v1.0"
       },
-      "main_tex_sha256": "4b72d576a13c75e79f613ce8c74eaefc8f37ee216397389ad622ac931ca82fb4",
+      "main_tex_sha256": "ec74c511a8291103777f6b9da9f88eeed9e23300922d04c09ae7aa533f4f46dd",
       "paper_id": "the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad",
-      "paper_md_sha256": "9e4c7f1ca260d3dd7f4d6e20a70316fd38e4e7c26fbe29f0cecda56ddc004ef7",
+      "paper_md_sha256": "f5b37b9875392d278f255e98a98a318308903a963b18d8e05f3164a2a002ff22",
       "release_state": "zenodo_released",
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "ea1bfdc0c893030c6117d8ccc2795caead63c4545c55f73a8f9648a276a8dc3c",
+        "selected_revision": true,
+        "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits"
       },
       "source_provenance": {
         "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits"
       },
-      "source_tree_sha256": "ceb73fdf8bbdc868131a3e9c57461f873d4dcb334969423662c35f57d40db7db",
-      "title": "The Modal Triplet Theory Program A2: Computation and Predictive Limits in the Modal Triplet Theory Program",
-      "version_relation": "matches_latest_release",
+      "source_tree_sha256": "07d45488c55d200248c1c33828ffdac4ad0a5f98da9ae01a33f968350be8c235",
+      "title": "The Modal Triplet Theory Program A2: Conditional Computability and Finite Prediction Depth",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.18354965",

@@ -1,774 +1,596 @@
 \documentclass[11pt]{article}
+
 \usepackage{series}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb,amsfonts}
 \usepackage{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
 
 \geometry{margin=1in}
 
-
 % ---------- metadata ----------
-\title{The Modal Triplet Theory Program A2:\\ Computation and Predictive Limits\\
-in the Modal Triplet Theory Program}
+\title{The Modal Triplet Theory Program A2:\\
+Conditional Computability and Finite Prediction Depth}
 \author{Peter Nero}
-\date{January, 2026}
+\date{July 2026}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-We analyze limits of computation, prediction, and control that arise as
-structural consequences of admissible description in the Modal Triplet Theory
-(MTT) framework. Without invoking complexity theory, algorithmic randomness, or
-resource constraints, we show that finite admissibility, kinematic persistence,
-and selection fronts impose intrinsic limits on what can be predicted or decided
-within any admissible encoding.
-
-We introduce the notion of admissible prediction depth and show that, in the
-presence of selection fronts and nil obstructions, well-posed questions about
-future kinematic continuation can be undecidable within the theory. These limits
-are structural rather than epistemic: they persist even with infinite
-computational power and perfect local information.
-
-The results clarify the relationship between physical prediction, computation,
-and description. They show that undecidability and loss of predictability arise
-from the same structural sources as irreversibility, horizons, and quantization,
-and do not require additional postulates about information or observers.
+We separate four notions that were conflated in the first version of Program
+A2: finite admissible prediction depth, underdetermination at a branching
+relation, algorithmic undecidability, and computational lower bounds.
+Prediction depth is a chart- and protocol-relative iteration diagnostic.  It
+is finite only under a certified finite barrier along the declared
+continuations; finite depth alone does not imply undecidability.  A selection
+reachability problem becomes algorithmically undecidable if a selected MTT
+realization robustly and uniformly embeds a universal two-counter machine,
+preserves every finite machine prefix, and identifies halting with a selected
+target event.  We prove this conditional transfer theorem and also prove the
+complementary finite-capacity result: a fixed finite carrier with computable
+transitions has decidable reachability and therefore cannot satisfy the
+unbounded embedding contract.  Neither non-Markovianity, noninjective
+projection, branching, nor nil termination supplies that contract by itself.
+Computational irreducibility additionally requires a specified computation
+model and a lower-bound theorem.  Probability, quantization, physical time,
+and universal limits of control remain separate source obligations.
 \end{abstract}
+
+\section*{Revision note for version 2}
+\addcontentsline{toc}{section}{Revision note for version 2}
+\paragraph{Supersedes.}
+Version~1 of Program A2.
+\paragraph{Reason.}
+The former paper used ``undecidable'' for several different failures of
+prediction and inferred algorithmic undecidability from finite admissibility,
+branching, and nil termination without a declared input language or reduction.
+It also combined unbounded counter storage with a finite admissibility horizon.
+\paragraph{Resolution.}
+Version~2 introduces a computable reachability presentation, states the exact
+robust two-counter embedding contract, proves undecidability only conditional
+on that contract, and proves that a fixed finite carrier cannot realize it.
+It also gives correctly scoped prediction-depth and control statements.
+\paragraph{Retained content.}
+Prediction as admissible continuation, protocol-relative prediction depth,
+and the distinction between local prediction and a global effective
+description remain useful.
+\paragraph{Open boundary.}
+No selected MTT realization is presently proved to implement unbounded,
+robust counter storage and operations.  No complexity lower bound, Born
+measure, quantization theorem, physical time variable, or universal controller
+no-go follows from A2 alone.
 
 \tableofcontents
 \newpage
 
-% ============================================================
-\section{Introduction and Scope}
+\section{Scope and Logical Separation}
 
-The structural core of Modal Triplet Theory establishes that reduced descriptions
-are local, that global coherence is generically obstructed, and that admissible
-descriptions are constrained by overlap consistency and refinement stability.
-Coherent kinematics then defines motion, causality, horizons, and irreversibility
-without assuming spacetime or dynamics. Subsequent papers identify gravity,
-gauge structure, and quantization as encoding responses forced by specific
-obstruction types.
+Program A0 supplies typed upper evolution, reductions, admissible domains, and
+an iteration-count prediction-depth diagnostic~\cite{A0}.  Program A1 supplies
+chart-persistence kinematics and only a conditional bridge to physical
+spacetime propagation~\cite{A1}.  The present paper adds a computability layer.
+It does not turn descriptive order into physical time or a chart obstruction
+into a theorem of mathematical logic.
 
-The purpose of the present paper is to analyze the consequences of these
-structural features for computation and prediction. We ask a simple but
-fundamental question:
+\subsection{Four different questions}
 
-\begin{quote}
-\emph{What can be predicted, computed, or decided within a framework in which
-descriptions are local, admissibility is finite, and kinematic continuation may
-terminate?}
-\end{quote}
+Let a finite string describe an initial state and a protocol.  The following
+questions are distinct.
+\begin{enumerate}[label=(\roman*)]
+\item \emph{Semantic determinacy:} does the selected data define one
+continuation, several continuations, or no continuation?
+\item \emph{Decidability:} is there an algorithm that returns the correct
+yes/no answer on every input in a declared language?
+\item \emph{Complexity:} among algorithms that decide the language, what
+resources are required as a function of input length?
+\item \emph{Simulation cost:} for a specified trajectory, how much work is
+required to reproduce a chosen number of steps?
+\end{enumerate}
+Branching may make an actual branch underdetermined while existential or
+universal reachability remains decidable.  A long simulation may be expensive
+without being undecidable.  Conversely, undecidability is a uniform statement
+over an infinite input family, not a claim that every instance is hard.
 
-We show that the answer is: \emph{not everything that is well-defined}. Even
-questions that are sharply posed in the kinematic framework may lack definite
-answers within any admissible encoding. These limitations arise not from lack of
-data, computational resources, or noise, but from the structure of admissible
-description itself.
-
-The analysis in this paper relies only on:
-\begin{itemize}
-\item the structural core of Modal Triplet Theory;
-\item coherent kinematics and admissible continuation;
-\item the existence of selection fronts and nil obstructions.
-\end{itemize}
-
-No assumptions are made about:
-\begin{itemize}
-\item algorithmic complexity;
-\item probabilistic computation;
-\item observers or measurement postulates;
-\item computational resources.
-\end{itemize}
-
-The resulting limits are therefore intrinsic to the theory and apply to all
-realization classes compatible with the MTT framework.
-
-\begin{remark}[Position in the series]
-This paper belongs to the A-layer of the Modal Triplet Theory Program. It derives
-structural consequences of admissibility and kinematics, but introduces no new
-encoding classes. It precedes and motivates interpretive papers on the dark
-sector and complements the encoding-class papers on gravity, gauge, and
-quantization.
+\begin{remark}[Terminology]
+In this paper, ``undecidable'' has its standard algorithmic meaning.  A question
+outside the domain of an encoding is \emph{undefined} there.  A question with
+several admissible answers is \emph{underdetermined} until a selector is added.
+Neither condition is renamed undecidability.
 \end{remark}
 
-% ============================================================
-% Next section will be:
-% \section{Prediction as Admissible Continuation}
-% ============================================================
-\section{Prediction as Admissible Continuation}
+\section{Computable Admissible Presentations}
 
-In the Modal Triplet Theory framework, prediction is not defined as extrapolation
-of a state in time, but as determination of admissible continuation of coherent
-structure across overlapping encodings. In this section we formalize prediction
-accordingly.
+Computability requires more structure than a topological atlas.
 
-\subsection{Predictive questions}
-
-A predictive question concerns the future continuation of a coherent structure.
-
-\begin{definition}[Predictive question]
-A \emph{predictive question} is a well-posed query of the form:
-\begin{quote}
-Given a coherent structure represented in an admissible encoding
-$\mathcal E_\alpha$, does admissible continuation exist to a specified set of
-encodings $\{\mathcal E_\beta\}$?
-\end{quote}
-\end{definition}
-
-Predictive questions are therefore questions about the existence and properties
-of continuation chains, not about numerical values at future times.
-
-\subsection{Prediction without global time}
-
-Because there is no global time parameter in the kinematic framework, prediction
-is inherently relational.
-
-\begin{remark}
-Prediction does not require an external notion of time. The ordering relevant to
-prediction is the kinematic ordering induced by admissible continuation, as
-defined in coherent kinematics.
-\end{remark}
-
-This distinguishes prediction from time-evolution in classical dynamical
-systems.
-
-\subsection{Admissible prediction}
-
-We now define prediction formally.
-
-\begin{definition}[Admissible prediction]
-An \emph{admissible prediction} is the determination, within an admissible
-encoding, of whether a given predictive question has a definite answer under all
-admissible refinements of the encoding atlas.
-\end{definition}
-
-An admissible prediction must be stable under refinement; otherwise it does not
-constitute a well-defined prediction in the MTT sense.
-
-\subsection{Prediction versus simulation}
-
-Simulation is not prediction in this framework.
-
-\begin{remark}
-A simulation may generate particular continuation chains under specific choices
-of encoding or gauge, but such results are not admissible predictions unless they
-are invariant under all admissible refinements. Prediction is therefore strictly
-stronger than simulation.
-\end{remark}
-
-This distinction will be crucial when discussing undecidability.
-
-\subsection{Determinacy and indeterminacy}
-
-We now distinguish deterministic from indeterminate predictive questions.
-
-\begin{definition}[Determinately predictable question]
-A predictive question is \emph{determinately predictable} if all admissible
-continuation chains compatible with the initial encoding yield the same answer.
-\end{definition}
-
-\begin{definition}[Indeterminate predictive question]
-A predictive question is \emph{indeterminate} if admissible continuation chains
-yield different answers, or if admissible continuation terminates before the
-question can be resolved.
-\end{definition}
-
-Indeterminacy here is structural and does not imply randomness.
-
-\subsection{Sources of predictive indeterminacy}
-
-There are two primary sources of indeterminacy.
-
+\begin{definition}[Computable admissible presentation]\label{def:presentation}
+A computable admissible presentation is a tuple
+\[
+ \mathfrak C=(\Sigma,S,\iota,F,A,H)
+\]
+with the following data.
 \begin{itemize}
-\item \textbf{Branching at selection fronts:} multiple admissible continuations
-exist, leading to different outcomes.
-\item \textbf{Termination at nil obstructions:} continuation ceases before the
-question can be resolved.
+\item $\Sigma$ is a finite alphabet and $S\subseteq\Sigma^\ast$ is a decidable
+set of finite state descriptions, equipped with a computable
+rational-valued metric $d_S$ when robustness is claimed.
+\item $\iota:\Sigma^\ast\to S$ is a total computable input encoder on the
+declared input language.
+\item $F:S\rightharpoonup S$ is a partial computable one-step map for one fixed
+protocol, with decidable domain.
+\item $A\subseteq S$ is a decidable admissible set.
+\item $H\subseteq A$ is a decidable target or selection-event set.
 \end{itemize}
+An orbit is followed only while $F$ is defined and remains in $A$.
+\end{definition}
 
-Both sources arise from admissibility constraints, not from lack of information.
+The deterministic definition is sufficient for the reduction below.  A
+branching system instead uses a computably presented relation
+$R\subseteq S\times S$ and must declare whether reachability means
+``there exists a branch'' or ``every branch.''
 
-\subsection{No global predictive map}
+\begin{definition}[Selection reachability language]\label{def:sel}
+For a presentation $\mathfrak C$, define
+\[
+\operatorname{SEL}(\mathfrak C)
+:=
+\left\{
+w\in\Sigma^\ast:
+\begin{array}{l}
+\text{for some }n\geq0,\ F^k(\iota(w))\text{ is defined and in }A\\
+\text{for }0\leq k\leq n,\text{ and }F^n(\iota(w))\in H
+\end{array}
+\right\}.
+\]
+\end{definition}
 
-We now state a basic limitation.
+Because a target hit has a finite witness, this language is recursively
+enumerable under Definition~\ref{def:presentation}.  Decidability requires
+more: a decision procedure must also halt on every nonmember.
 
-\begin{theorem}[No global predictive map]
-There exists no globally defined map assigning definite answers to all predictive
-questions consistent with admissible continuation.
-\end{theorem}
+\subsection{Finite recognizable horizons}
+
+\begin{proposition}[Decidability with recognizable termination]
+\label{prop:recognizable}
+Suppose every orbit of $\mathfrak C$ reaches $H$, leaves $A$, or repeats a
+previous state after finitely many steps, and each of these events is
+recognizable from the finite state description.  Then
+$\operatorname{SEL}(\mathfrak C)$ is decidable.
+\end{proposition}
 
 \begin{proof}
-A global predictive map would require a global encoding capable of resolving all
-continuation questions. This contradicts finite admissibility and the existence
-of nil obstructions.
+Simulate the orbit while storing visited states.  Accept on entering $H$.
+Reject on leaving $A$, on an undefined transition, or on the first repeated
+state.  By hypothesis one of these cases occurs after finitely many steps.
 \end{proof}
 
-\subsection{Preview: prediction depth}
-
-Prediction may be possible locally even when global prediction fails.
-
 \begin{remark}
-The extent to which prediction remains possible before encountering branching or
-termination is quantified by admissible prediction depth, introduced in the next
-section.
+A finite horizon is not enough if its endpoint is only a semantic statement
+that the chosen encoding no longer represents the intended upper object and
+there is no effective test for that loss.  Conversely, an instance-dependent
+horizon need not be known in advance if exit is effectively recognizable.
+The algorithm may simply simulate until the recognizable exit.
 \end{remark}
 
-% ============================================================
-% Next section will be:
-% \section{Admissible Prediction Depth}
-% ============================================================
 \section{Admissible Prediction Depth}
 
-In this section we quantify the extent to which prediction remains possible
-within the Modal Triplet Theory framework. We introduce the notion of admissible
-prediction depth, which measures how far admissible continuation can proceed
-before encountering branching or termination that renders prediction
-indeterminate.
+We now retain the useful A2 diagnostic in a form compatible with A0.
 
-\subsection{Local versus global predictability}
-
-Although global prediction is impossible, local prediction may remain viable for
-finite extents.
-
-\begin{remark}
-The absence of a global predictive map does not imply that all predictive
-questions are indeterminate. Rather, predictability is local and bounded, and
-its limits are determined by admissibility structure.
-\end{remark}
-
-This motivates a quantitative notion of predictive reach.
-
-\subsection{Definition of prediction depth}
-
-We now define prediction depth intrinsically.
-
-\begin{definition}[Admissible prediction depth]
-Let $\mathcal E_\alpha$ be an admissible encoding representing a coherent
-structure. The \emph{admissible prediction depth} $D(\mathcal E_\alpha)$ is the
-supremum of lengths of admissible continuation chains starting at
-$\mathcal E_\alpha$ such that all predictive questions along those chains are
-determinately predictable.
+\begin{definition}[Protocol-relative prediction depth]
+Let $T_{A,\pi}:P_0(A)\rightharpoonup P_0(A)$ be a declared reduced step map for
+an admissible domain $A$ and protocol $\pi$.  For $x\in A$, set
+\[
+N_{\max}(x;A,\pi)
+:=
+\sup\left\{
+n\in\mathbb N:
+T_{A,\pi}^{k}(P_0x)\text{ is defined and in }P_0(A)
+\text{ for }0\leq k\leq n
+\right\}.
+\]
 \end{definition}
 
-The length of a continuation chain is measured by the number of admissible
-continuation steps, not by time or distance.
+This number counts iterations.  A conversion to elapsed time, proper time,
+distance, energy, or an information budget requires a realization-specific
+bridge.
 
-\subsection{Finite prediction depth}
-
-Finite admissibility implies that prediction depth is generically finite.
-
-\begin{theorem}[Finite prediction depth]
-For any admissible encoding $\mathcal E_\alpha$, the admissible prediction depth
-$D(\mathcal E_\alpha)$ is finite whenever selection fronts or nil obstructions
-exist in its kinematic reach.
+\begin{theorem}[Certified finite depth]\label{thm:depth}
+If there is an integer $d<\infty$ such that every declared continuation from
+$P_0x$ either leaves $P_0(A)$, becomes undefined, or reaches a separately
+declared branch ambiguity by step $d$, then
+\[
+N_{\max}(x;A,\pi)\leq d
+\]
+for the corresponding continuation convention.
 \end{theorem}
 
 \begin{proof}
-Selection fronts introduce branching of admissible continuation, rendering
-predictive questions indeterminate beyond the front. Nil obstructions terminate
-continuation entirely. In either case, continuation chains of arbitrary length
-cannot remain determinately predictable. Therefore $D(\mathcal E_\alpha)$ is
-finite.
+No continuation satisfying the defining conditions can contain more than
+$d$ admissible, unambiguous steps.
 \end{proof}
 
-\subsection{Dependence on initial encoding}
-
-Prediction depth depends on where one starts in the encoding atlas.
-
-\begin{remark}
-Different admissible encodings may have different prediction depths, even when
-representing the same underlying coherent structure. Prediction depth is thus an
-encoding-relative quantity.
+\begin{remark}[What does not prove finite depth]
+The mere existence of a selection front or nil boundary somewhere in a
+reachable graph does not give a uniform bound on every path.  One must prove
+that the declared paths meet the barrier in finite depth, or supply a
+coercive margin or ranking function that yields such a bound.
 \end{remark}
 
-This dependence reflects the absence of a privileged global encoding.
-
-\subsection{Refinement stability}
-
-Prediction depth is stable under admissible refinement.
-
-\begin{lemma}
-Admissible refinement of the encoding atlas does not increase prediction depth.
-\end{lemma}
+\begin{proposition}[Refinement monotonicity under a projection contract]
+\label{prop:refinement}
+Let a refined transition system project stepwise to a coarse one, let every
+refined admissible path project to a coarse admissible path, and let the
+refined determinacy criterion imply the coarse criterion.  Then refined
+prediction depth cannot exceed coarse prediction depth.
+\end{proposition}
 
 \begin{proof}
-Refinement may reveal additional selection fronts or nil obstructions, but cannot
-eliminate existing ones. Therefore refinement can only decrease or preserve
-prediction depth, not increase it.
+Every refined path counted at depth $n$ produces a coarse path counted at
+depth $n$.  Taking suprema gives the claim.
 \end{proof}
 
-This monotonicity is essential for the structural nature of prediction limits.
+Without this path-projection contract, refinement can expose an obstruction,
+remove a spurious obstruction, or change the protocol, so monotonicity is not
+automatic.
 
-\subsection{Prediction depth versus computational power}
+\section{Branching, Nil Boundaries, and Algorithms}
 
-Prediction depth is not a resource limitation.
-
-\begin{remark}
-Finite prediction depth persists even with unlimited computational resources and
-perfect local information. It reflects structural limits on admissible
-continuation, not algorithmic complexity or computational cost.
-\end{remark}
-
-\subsection{Local predictability regions}
-
-Despite finite depth, extended regions of predictability may exist.
-
-\begin{definition}[Predictability region]
-A \emph{predictability region} is a subset of the encoding atlas in which
-admissible prediction depth exceeds a specified threshold.
-\end{definition}
-
-Such regions correspond to regimes in which effective theories appear
-deterministic over extended extents.
-
-\subsection{Preview: undecidability}
-
-Finite prediction depth implies that certain predictive questions cannot be
-decided within the theory.
-
-\begin{remark}
-In the next section we show that, in the presence of branching and termination,
-there exist well-posed predictive questions that are undecidable within any
-admissible encoding, independently of computational power.
-\end{remark}
-
-% ============================================================
-% Next section will be:
-% \section{Undecidability of Kinematic Questions}
-% ============================================================
-\section{Undecidability of Kinematic Questions}
-
-In this section we show that finite admissible prediction depth implies the
-existence of well-posed predictive questions that are undecidable within the
-Modal Triplet Theory framework. This undecidability is structural rather than
-computational: it persists even with unlimited computational resources and
-perfect local information.
-
-\subsection{Well-posed kinematic questions}
-
-We begin by clarifying what is meant by undecidability in this context.
-
-\begin{definition}[Well-posed kinematic question]
-A \emph{well-posed kinematic question} is a predictive question whose statement
-is invariant under admissible re-encoding and refinement of the encoding atlas.
-\end{definition}
-
-Such questions are unambiguous and meaningful within the theory.
-
-\subsection{Decidability within an admissible encoding}
-
-Decidability is defined relative to admissible encodings.
-
-\begin{definition}[Decidable predictive question]
-A well-posed kinematic question is \emph{decidable} if there exists an admissible
-procedure, definable within the encoding framework, that yields a definite answer
-in finite admissible continuation steps.
-\end{definition}
-
-A question that fails this criterion is undecidable.
-
-\subsection{Undecidability from branching}
-
-Selection fronts induce branching of admissible continuation.
-
-\begin{lemma}
-If a predictive question depends on which branch of a selection front is taken,
-then it is undecidable.
-\end{lemma}
+\begin{proposition}[Branching is not undecidability]\label{prop:branch}
+Suppose a computable, finitely branching relation $R$ returns an effective
+finite successor list for each state.  For a fixed finite depth $d$, both
+\[
+\exists\text{ a branch reaching }H\text{ by }d
+\quad\text{and}\quad
+\forall\text{ branches, }H\text{ is reached by }d
+\]
+are decidable.
+\end{proposition}
 
 \begin{proof}
-At a selection front, multiple admissible continuation chains exist, yielding
-different outcomes. No admissible refinement can select a unique continuation
-without violating admissibility. Therefore no admissible procedure can determine
-the outcome uniquely.
+Enumerate the finite computation tree to depth $d$ and inspect its leaves.
 \end{proof}
 
-\subsection{Undecidability from termination}
+Thus a branch selector may be absent even though reachability questions are
+algorithmically decidable.  Conversely, an infinite computable transition
+system can have an undecidable reachability language even when each state has
+only one successor.
 
-Nil obstructions induce termination of continuation.
-
-\begin{lemma}
-If a predictive question requires continuation beyond a nil obstruction to be
-resolved, then it is undecidable.
-\end{lemma}
+\begin{proposition}[Nil boundary semantics]\label{prop:nil}
+If a chart continuation is undefined beyond a certified nil boundary, then a
+question whose semantics requires that continuation is undefined in that
+chart system.  It becomes a yes/no decision problem only after a total
+extension, rejection convention, or alternative chart relation is specified.
+\end{proposition}
 
 \begin{proof}
-By definition, no admissible continuation exists beyond a nil obstruction.
-Therefore no admissible procedure can evaluate the question.
+A partial map has no value outside its domain.  Algorithmic decidability is a
+property of a total Boolean-valued decision problem, so the missing semantic
+value must first be completed by declared data.
 \end{proof}
 
-\subsection{Existence of undecidable questions}
-
-We now state the main result of this section.
-
-\begin{theorem}[Structural undecidability]
-In the presence of selection fronts or nil obstructions, there exist well-posed
-kinematic questions that are undecidable within any admissible encoding.
-\end{theorem}
-
-\begin{proof}
-By finite prediction depth, there exists a bound beyond which determinately
-predictable continuation fails. Construct a question whose resolution requires
-continuation beyond this bound. By the preceding lemmas, such a question is
-undecidable.
-\end{proof}
-
-\subsection{Independence from computational power}
-
-We emphasize the nature of this undecidability.
-
-\begin{remark}
-The undecidability established here does not arise from computational complexity
-or algorithmic limitations. It persists even if the computational agent has
-unlimited resources and perfect access to local encoding data. The obstruction
-lies in admissibility, not in computation.
-\end{remark}
-
-\subsection{Relation to classical undecidability}
-
-This structural undecidability is distinct from, but compatible with, classical
-notions.
-
-\begin{remark}
-Classical undecidability results (e.g.\ Turing undecidability) concern limits of
-formal computation. The present result concerns limits of physical prediction
-imposed by admissible description. The two notions may coincide in specific
-realizations, but neither reduces to the other.
-\end{remark}
-
-\subsection{Scope of undecidable questions}
-
-Not all predictive questions are undecidable.
-
-\begin{remark}
-Undecidability arises only for questions whose resolution depends on continuation
-across selection fronts or nil obstructions. Many local questions remain
-decidable within finite predictability regions.
-\end{remark}
-
-\subsection{Preview: limits of control}
-
-Undecidability has direct implications for control and intervention.
-
-\begin{remark}
-In the next section we show that structural undecidability also limits the extent
-to which coherent structures can be controlled or steered by admissible
-interventions.
-\end{remark}
-
-% ============================================================
-% Next section will be:
-% \section{Limits of Control and Intervention}
-% ============================================================
-\section{Limits of Control and Intervention}
-
-In this section we analyze the consequences of finite admissible prediction depth
-and structural undecidability for control and intervention. We show that limits
-on prediction imply corresponding limits on the ability to steer, regulate, or
-force outcomes within the Modal Triplet Theory framework.
-
-\subsection{Control as constrained intervention}
-
-We first define what is meant by control in an encoding-relative setting.
-
-\begin{definition}[Admissible intervention]
-An \emph{admissible intervention} is a modification of the encoding conditions or
-initial representation that is itself admissible and preserves overlap
-consistency and refinement stability.
-\end{definition}
-
-Interventions are therefore subject to the same admissibility constraints as
-descriptions.
-
-\begin{definition}[Control problem]
-A \emph{control problem} is a specification of a desired property of future
-admissible continuation, together with a proposed admissible intervention
-intended to enforce that property.
-\end{definition}
-
-Control is meaningful only insofar as the outcome of the intervention is
-predictable.
-
-\subsection{Dependence of control on prediction}
-
-We now establish the dependence of control on prediction.
-
-\begin{lemma}
-If a predictive question associated with a control problem is undecidable, then
-the control problem is not solvable within any admissible encoding.
-\end{lemma}
-
-\begin{proof}
-A control problem requires determining whether an intervention will enforce a
-desired outcome. If the corresponding predictive question is undecidable, no
-admissible procedure can establish that the intervention succeeds. Therefore the
-control problem is unsolvable within the theory.
-\end{proof}
-
-Thus, undecidability directly limits control.
-
-\subsection{Control failure at selection fronts}
-
-Selection fronts introduce intrinsic limits on intervention.
-
-\begin{lemma}
-No admissible intervention can deterministically select a unique branch at a
-selection front without violating admissibility.
-\end{lemma}
-
-\begin{proof}
-At a selection front, multiple admissible continuation branches exist. Any
-intervention that forces one branch while excluding others would render the
-excluded branches inadmissible, contradicting admissibility constraints. Hence
-no admissible intervention can enforce deterministic selection.
-\end{proof}
-
-This establishes that branching cannot be controlled away.
-
-\subsection{Control failure at nil obstructions}
-
-Nil obstructions impose even stronger limits.
-
-\begin{lemma}
-No admissible intervention can enforce continuation beyond a nil obstruction.
-\end{lemma}
-
-\begin{proof}
-By definition of nil obstruction, no admissible encoding exists beyond the
-obstruction. Any intervention attempting to enforce continuation would require
-introducing an inadmissible description. Therefore such intervention is
-forbidden.
-\end{proof}
-
-Thus termination is uncontrollable.
-
-\subsection{Local versus global control}
-
-Control may remain possible in restricted regimes.
-
-\begin{remark}
-Within predictability regions of finite but nonzero prediction depth, admissible
-interventions may influence outcomes locally. However, such control is always
-bounded by the nearest selection front or nil obstruction.
-\end{remark}
-
-This explains why effective control appears possible in many physical systems
-despite fundamental limits.
-
-\subsection{No universal control strategy}
-
-We now state the global limitation.
-
-\begin{theorem}[No universal control strategy]
-There exists no admissible intervention strategy that can enforce arbitrary
-desired outcomes across all admissible continuation chains.
-\end{theorem}
-
-\begin{proof}
-A universal control strategy would require resolving all predictive questions and
-overriding all branching and termination behavior. This contradicts the existence
-of undecidable predictive questions and nil obstructions established earlier.
-\end{proof}
-
-\subsection{Control versus determinism}
-
-The limits of control do not imply lack of determinism.
-
-\begin{remark}
-Failure of control does not imply indeterministic dynamics. It reflects limits on
-what can be enforced or steered within admissible description. Deterministic
-behavior may exist locally even where control fails globally.
-\end{remark}
-
-\subsection{Implications}
-
-The structural limits on control have broad implications.
-
-\begin{remark}
-These results imply that no observer, agent, or apparatus—regardless of
-capability—can bypass admissibility constraints to enforce outcomes beyond
-prediction depth. Limits of control are therefore as fundamental as limits of
-prediction.
-\end{remark}
-
-\subsection{Preview: relation to quantization and horizons}
-
-Limits of control are closely related to other structural features.
-
-\begin{remark}
-Selection fronts, horizons, and quantization boundaries represent points at which
-control necessarily fails. These features are unified by the admissibility
-structure of the theory.
-\end{remark}
-
-% ============================================================
-% Next section will be:
-% \section{Relation to Quantization and Probability}
-% ============================================================
-\section{Relation to Quantization and Probability}
-
-In this section we relate the limits of prediction and control derived above to
-the discrete constraint encoding identified as quantization and to the
-conditional notion of probability developed in the Modal Triplet Theory
-framework. We show that predictive limits, undecidability, and quantization are
-not independent phenomena, but manifestations of the same admissibility
-structure.
-
-\subsection{Prediction depth and discrete survivors}
-
-Finite admissible prediction depth implies that continuation eventually
-encounters selection fronts or nil obstructions.
-
-\begin{remark}
-When admissible prediction depth is exhausted due to a nil obstruction, only
-discrete survivors remain admissible. Thus the boundary of predictability
-coincides with the boundary at which quantization becomes structurally relevant.
-\end{remark}
-
-Prediction therefore transitions from deterministic continuation to discrete
-classification.
-
-\subsection{Undecidability and quantization}
-
-Undecidable predictive questions are closely tied to discrete constraint
-encoding.
-
-\begin{lemma}
-If a predictive question is undecidable due to termination at a nil obstruction,
-then its resolution, if any, must be expressed in terms of discrete survivors.
-\end{lemma}
-
-\begin{proof}
-Termination of admissible continuation implies that no further continuous
-description is possible. Any remaining descriptive content must therefore be
-drawn from discrete survivors selected by stability under refinement.
-\end{proof}
-
-This shows that undecidability and quantization share a common structural origin.
-
-\subsection{Probability as a secondary structure}
-
-Probability does not resolve undecidability.
-
-\begin{remark}
-The introduction of probability does not convert undecidable predictive
-questions into decidable ones. Probability assigns weights to discrete survivors
-when invariant measures exist, but it does not extend admissible prediction
-depth or restore lost continuation.
-\end{remark}
-
-Thus probability is subordinate to admissibility and quantization.
-
-\subsection{Conditional probabilistic prediction}
-
-Probabilistic prediction is possible only under additional conditions.
-
-\begin{definition}[Probabilistic predictive question]
-A predictive question is \emph{probabilistically predictive} if:
-\begin{enumerate}[label=(\roman*)]
-\item admissible continuation terminates at a discrete survivor set $\mathcal S$;
-\item an invariant measure exists on $\mathcal S$.
+\section{Two-Counter Machines and the Missing MTT Contract}
+
+A deterministic two-counter machine has a finite control set $Q$, two
+registers in $\mathbb N$, and instructions
+\textsc{inc}, \textsc{decjz}, and \textsc{halt}.  A fixed universal machine
+can receive its program and input through the initial register values.
+Its halting language is undecidable~\cite{Minsky,Turing}.
+
+\begin{definition}[Robust uniform MTT embedding]\label{def:embedding}
+Let $\mathcal M$ be a fixed universal two-counter machine with configuration
+set
+\[
+\operatorname{Conf}(\mathcal M)=Q\times\mathbb N^2
+\]
+and partial step map $\tau$.  A robust uniform embedding of $\mathcal M$ into
+an MTT presentation consists of:
+\begin{enumerate}[label=(E\arabic*)]
+\item a computable injective code
+$J:\operatorname{Conf}(\mathcal M)\to A$ and a total computable reduction map
+$g$ from machine inputs to presentation inputs such that
+\[
+\iota(g(w))=J(c_0(w));
+\]
+\item \emph{step fidelity},
+\[
+F(J(c))=J(\tau(c))
+\]
+for every nonhalting configuration on every encoded run;
+\item \emph{unbounded admissible persistence}: every finite prefix of every
+encoded machine run remains in the domain of $F$ and in $A$;
+\item \emph{target fidelity}: $J(c)\in H$ if and only if $c$ is a halting
+configuration;
+\item \emph{uniformity}: $F,A,H$, and the decoding convention are fixed
+independently of the input;
+\item \emph{robustness}: there is a computable positive rational radius
+$\delta(c)$ such that
+\[
+U_c:=\{s\in S:d_S(s,J(c))<\delta(c)\}
+\]
+is nonempty, lies in $A$, has constant target membership, and, when
+$\tau(c)$ is defined,
+\[
+F(U_c)\subseteq U_{\tau(c)}.
+\]
 \end{enumerate}
 \end{definition}
 
-In this case, prediction yields a probability distribution rather than a
-deterministic outcome.
+Condition (E3) does not require an infinite amount of storage at any finite
+step.  It requires a system with no fixed global counter cap across the
+entire input family and all finite run prefixes.  This is precisely the
+condition missing from a construction that supplies only a finite admissible
+horizon.
 
-\subsection{No probabilistic control beyond nil}
-
-Probability does not restore control.
-
-\begin{lemma}
-Probabilistic weighting of discrete survivors does not permit admissible control
-beyond selection fronts or nil obstructions.
-\end{lemma}
+\begin{theorem}[Conditional selection-reachability undecidability]
+\label{thm:undecidable}
+If a selected MTT realization satisfies
+Definition~\ref{def:embedding}, then its selection reachability language is
+undecidable.  More precisely,
+\[
+\operatorname{HALT}_{\mathcal M}
+\leq_m
+\operatorname{SEL}(\mathfrak C).
+\]
+\end{theorem}
 
 \begin{proof}
-Probabilistic weighting assigns likelihoods to outcomes but does not alter which
-outcomes are admissible. Therefore it cannot enforce or exclude specific
-continuations beyond the admissibility boundary.
+Given a machine input $w$, compute $g(w)$ and hence the corresponding initial
+MTT code $\iota(g(w))=J(c_0(w))$.  Conditions (E2) and (E3) identify every
+finite MTT prefix with
+the corresponding machine prefix.  By (E4), the MTT orbit reaches $H$ if and
+only if $\mathcal M$ halts on $w$.  Therefore an algorithm deciding
+$\operatorname{SEL}(\mathfrak C)$ would decide the halting language of the
+fixed universal two-counter machine, a contradiction.  Conditions (E5) and
+(E6) ensure that the reduction is not hidden in an input-dependent controller
+and is stable on the declared neighborhoods.
 \end{proof}
 
-This reinforces the structural nature of control limits.
-
-\subsection{Relation to measurement}
-
-Measurement outcomes are discrete and terminal.
-
-\begin{remark}
-Measurement, understood as selection among discrete survivors, coincides with
-the exhaustion of admissible prediction depth. The unpredictability of outcomes
-reflects undecidability of continuation, not lack of information.
+\begin{remark}[Current MTT status]
+The theorem is exact and conditional.  Projection, non-Markovianity, stable
+records, locality, or basin language alone does not construct $J$, $F$, the
+zero test, an unbounded admissible register, or the neighborhoods $U_c$.
+The current corpus has not supplied all six embedding clauses for a selected
+physical MTT realization.
 \end{remark}
 
-\subsection{Unified perspective}
+\section{Finite Capacity Is a No-Go for the Strong Claim}
 
-We now summarize the unified picture.
+\begin{theorem}[Fixed-capacity reachability]\label{thm:finite}
+Let $Q$ be finite and suppose each of two counters is bounded by a fixed
+$C<\infty$.  For any deterministic transition rule on
+\[
+Q\times\{0,\ldots,C\}^2,
+\]
+halting reachability is decidable.
+\end{theorem}
+
+\begin{proof}
+There are at most $|Q|(C+1)^2$ configurations.  Simulate from the initial
+configuration.  Accept on halting.  If a configuration repeats before
+halting, determinism makes the subsequent orbit periodic, so reject.
+\end{proof}
+
+\begin{corollary}[Capacity obstruction]
+A selected realization with one fixed finite state carrier and computable
+transition table cannot satisfy Definition~\ref{def:embedding}.  A family of
+larger finite truncations is not enough unless the passage to arbitrarily
+large admissible prefixes is itself uniform and proved.
+\end{corollary}
+
+\begin{proof}
+Finite-state reachability is decidable by the same repeated-state argument,
+whereas Theorem~\ref{thm:undecidable} would make the embedded halting language
+undecidable.
+\end{proof}
+
+There are two coherent research targets:
+\begin{enumerate}
+\item prove a genuinely unbounded selected MTT carrier with robust operations
+and no premature admissibility exit; or
+\item retain a finite carrier and state only finite-horizon simulation and
+verification results.
+\end{enumerate}
+The second target can still be physically and computationally valuable, but it
+does not establish universal undecidability.
+
+\section{Complexity and ``Full Simulation''}
+
+\begin{definition}[Decision-time complexity]
+Fix an encoding of inputs, a machine model, and a size function $|w|$.  A
+decision-time lower bound for a language $L$ is a theorem that every deciding
+algorithm in the declared model uses at least the stated resources on an
+infinite family of inputs~\cite{HartmanisStearns}.
+\end{definition}
 
 \begin{remark}
-Finite admissibility implies finite prediction depth. Finite prediction depth
-implies undecidability of certain kinematic questions. Termination of
-predictability implies collapse to discrete survivors. Discrete survivors are
-organized by quantization. Probability appears only conditionally when invariant
-measures exist. These are not separate assumptions but consequences of the same
-structural constraints.
+Non-Markovianity says that a chosen reduced state is not sufficient for
+autonomous one-step prediction.  Enlarging the state by memory variables may
+restore Markovian evolution.  This fact neither proves undecidability nor a
+complexity lower bound.
 \end{remark}
 
-% ============================================================
-% Next section will be:
-% \section{Summary and Outlook}
-% ============================================================
-\section{Summary and Outlook}
+\begin{remark}
+Finite capacity usually makes a fixed model easier to decide by exhaustive
+state exploration, though the state count can be large.  It does not by
+itself imply computational irreducibility.
+\end{remark}
 
-In this paper we have analyzed limits of computation, prediction, and control as
-structural consequences of admissible description in the Modal Triplet Theory
-framework. Without invoking complexity theory, algorithmic randomness, or
-resource constraints, we showed that finite admissibility, coherent kinematics,
-and selection fronts impose intrinsic limits on what can be predicted or decided
-within any admissible encoding.
+The phrase ``prediction requires full simulation'' can mean at least three
+different things:
+\begin{enumerate}
+\item no closed-form shortcut is presently known;
+\item a particular prediction algorithm follows every step;
+\item every correct algorithm requires resources comparable to stepwise
+simulation.
+\end{enumerate}
+Only the third is a lower-bound claim, and it requires a formal computation
+model and proof.  Theorem~\ref{thm:undecidable} establishes no such bound for
+decidable instances and no claim about all MTT trajectories.
 
-Prediction was defined as determination of admissible continuation rather than as
-time evolution. We showed that although local prediction may be possible within
-restricted regions of the encoding atlas, admissible prediction depth is
-generically finite. Selection fronts induce branching of admissible continuation,
-while nil obstructions terminate continuation entirely. Both mechanisms render
-certain well-posed kinematic questions undecidable within the theory.
+\section{Conditional Consequences for Control}
 
-We further demonstrated that undecidability implies corresponding limits on
-control and intervention. No admissible intervention can deterministically select
-among branches at a selection front or enforce continuation beyond a nil
-obstruction. These limits are structural rather than epistemic: they persist even
-with unlimited computational power and perfect local information.
+\begin{definition}[Universal intervention verifier]
+Let $\mathcal U$ be an effectively presented family of admissible
+interventions containing a no-intervention element $u_0$.  A universal
+intervention verifier is a total algorithm $V(w,u)$ that returns ``yes'' if
+the orbit obtained from input $w$ under intervention $u$ reaches $H$, and
+``no'' otherwise.
+\end{definition}
 
-The results clarify the relationship between predictive limits, quantization, and
-probability. Exhaustion of admissible prediction depth coincides with collapse of
-continuous description and the emergence of discrete survivors organized by the
-discrete constraint encoding identified as quantization. Probability appears only
-conditionally, when invariant measures exist on discrete survivor sets, and does
-not restore lost predictability or control.
+\begin{proposition}[Conditional intervention-verifier obstruction]
+\label{prop:control}
+On a realization satisfying Definition~\ref{def:embedding}, no universal
+intervention verifier exists for a family containing the no-intervention
+element $u_0$.
+\end{proposition}
 
-Together with the structural core and coherent kinematics, the present analysis
-completes the A-layer of the Modal Triplet Theory Program. It shows that limits of
-prediction, undecidability, irreversibility, and quantization boundaries arise
-from the same admissibility structure that forbids global reduced description.
-These limits are not failures of theory or computation, but unavoidable features
-of any framework that admits local description and global obstruction.
+\begin{proof}
+The map $w\mapsto V(g(w),u_0)$ would decide whether the uncontrolled encoded
+orbit reaches $H$.  It would therefore decide
+$\operatorname{HALT}_{\mathcal M}$, contradicting
+Theorem~\ref{thm:undecidable}.
+\end{proof}
 
-Subsequent papers in the series build on these results. Encoding-class papers show
-how gravity, gauge structure, and quantization arise as forced responses to
-specific obstruction types, while realization papers construct explicit models
-that instantiate these encodings. Interpretive papers explore how these
-structural limits manifest phenomenologically, including in cosmology and the
-dark sector.
+This result does not forbid local feedback control, control on a decidable
+subclass, probabilistic control, controller synthesis without a complete
+verifier, or a verifier that sometimes returns ``unknown.''  Branching also
+does not imply that interventions cannot alter branch weights or admissible
+successors; that is a dynamical question.
 
-In this way, Modal Triplet Theory provides a unified explanation for why
-prediction, control, and computation are fundamentally limited in physical
-theories, and why those limits are inseparable from the structures we identify as
-gravity, gauge symmetry, and quantization.
+\section{What A2 Does Not Derive}
 
-% ============================================================
-% End of Paper A2
+\subsection{Probability}
+
+An algorithmic no-go does not select a probability measure.  A probability
+statement needs a measurable space, a normalized state or measure, and an
+outcome map.  Undecidability is compatible with deterministic, stochastic,
+or set-valued dynamics and therefore does not imply the Born rule.
+
+\subsection{Quantization}
+
+A finite survivor set may be discrete, but discreteness at one truncation is
+not a quantization theorem.  Quantization requires a selected algebra,
+representation, spectrum or integral condition, and a source relation to the
+physical observables.
+
+\subsection{Time, horizons, and irreversibility}
+
+$N_{\max}$ is an iteration count.  It is not a physical time or a spacetime
+horizon.  A noncompact ordering variable, a Lorentzian metric, and a
+hyperbolic propagation law require their own bridge.  Likewise, a partial or
+noninjective reduced map does not by itself prove thermodynamic
+irreversibility.
+
+\subsection{Upper dynamics}
+
+Encoding termination says that the declared chart no longer supplies a
+compatible representation.  It does not prove that upper evolution
+terminates.  A different chart, extension, or upper description may remain
+available.
+
+\section{Scoped A2 Theorem}
+
+\begin{theorem}[Conditional computability and prediction-depth package]
+\label{thm:scope}
+For a declared MTT chart-transition system:
+\begin{enumerate}
+\item prediction depth is a chart- and protocol-relative iteration diagnostic;
+\item it is finite under the certified barrier hypothesis of
+Theorem~\ref{thm:depth};
+\item refinement monotonicity holds under the projection contract of
+Proposition~\ref{prop:refinement};
+\item finite-depth branching and nil boundaries represent underdetermination
+or partial semantics, not algorithmic undecidability by themselves;
+\item a robust uniform universal two-counter embedding implies undecidable
+selection reachability by Theorem~\ref{thm:undecidable};
+\item a fixed finite carrier has decidable reachability and cannot satisfy
+that unbounded embedding contract; and
+\item complexity, full-simulation, probability, quantization, physical time,
+and universal control claims require additional hypotheses.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Items 1--3 follow from the definitions and
+Theorem~\ref{thm:depth}--Proposition~\ref{prop:refinement}.  Item~4 is
+Propositions~\ref{prop:branch} and~\ref{prop:nil}.  Items~5 and~6 are
+Theorems~\ref{thm:undecidable} and~\ref{thm:finite}.  Item~7 records the
+missing structures identified in the preceding sections.
+\end{proof}
+
+\section{Version Delta and Research Frontier}
+
+Relative to version~1, this revision:
+\begin{itemize}
+\item withdraws the unsupported no-global-predictive-map theorem;
+\item replaces generic structural undecidability by a conditional many-one
+reduction;
+\item states the six-clause robust embedding contract explicitly;
+\item corrects the conflict between unbounded counters and fixed finite
+admissibility capacity;
+\item distinguishes branching, undefined continuation, undecidability,
+complexity lower bounds, and simulation cost;
+\item narrows the control result to an intervention-verifier consequence of
+the same reduction; and
+\item removes the claimed derivation of quantization, measurement
+probabilities, horizons, and irreversibility from prediction depth.
+\end{itemize}
+
+The decisive constructive frontier is now precise: exhibit, in one selected
+MTT realization, a computable carrier and step map satisfying
+(E1)--(E6), especially unbounded admissible persistence and a robust zero
+test.  Until then, the corpus supports finite prediction-depth diagnostics
+and finite simulations, but not a universal MTT undecidability theorem.
+
+\section{Conclusion}
+
+Finite admissibility can limit the range of a chosen description without
+making its reachability language undecidable.  Branching can leave an outcome
+unselected without making existential or universal reachability
+uncomputable.  A nil boundary can make continuation undefined without
+supplying a Boolean decision problem.  These distinctions do not weaken the
+MTT program; they isolate the missing theorem.
+
+If a selected realization robustly embeds a universal two-counter machine and
+preserves every finite run prefix, undecidable selection reachability follows
+immediately and rigorously.  If the realization instead has one fixed finite
+capacity, reachability is decidable.  Program A2 therefore converts a broad
+claim into a clean fork between an explicit universality construction and an
+honest finite-horizon computational model.
+
+\begin{thebibliography}{9}
+
+\bibitem{A0}
+P. Nero,
+\emph{The Modal Triplet Theory Program A0: A Structural Theory of Reduced
+Description}, version 2, 2026.
+
+\bibitem{A1}
+P. Nero,
+\emph{The Modal Triplet Theory Program A1: Coherent Kinematics}, version 2,
+2026.
+
+\bibitem{Minsky}
+M. Minsky,
+\emph{Computation: Finite and Infinite Machines},
+Prentice-Hall, 1967.
+
+\bibitem{Turing}
+A. M. Turing,
+``On computable numbers, with an application to the
+Entscheidungsproblem,''
+\emph{Proceedings of the London Mathematical Society} 42 (1936), 230--265.
+
+\bibitem{HartmanisStearns}
+J. Hartmanis and R. E. Stearns,
+``On the computational complexity of algorithms,''
+\emph{Transactions of the American Mathematical Society} 117 (1965), 285--306.
+
+\bibitem{Moore}
+C. Moore,
+``Unpredictability and undecidability in dynamical systems,''
+\emph{Physical Review Letters} 64 (1990), 2354--2357.
+
+\end{thebibliography}
+
 \end{document}

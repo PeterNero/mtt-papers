@@ -31,6 +31,20 @@
       "title": "The Modal Triplet Theory Program A1: Coherent Kinematics"
     },
     {
+      "abstract": "We separate four notions that were conflated in the first version of Program A2: finite admissible prediction depth, underdetermination at a branching relation, algorithmic undecidability, and computational lower bounds. Prediction depth is a chart- and protocol-relative iteration diagnostic. It is finite only under a certified finite barrier along the declared continuations; finite depth alone does not imply undecidability. A selection reachability problem becomes algorithmically undecidable if a selected MTT realization robustly and uniformly embeds a universal two-counter machine, preserves every finite machine prefix, and identifies halting with a selected target event. We prove this conditional transfer theorem and also prove the complementary finite-capacity result: a fixed finite carrier with computable transitions has decidable reachability and therefore cannot satisfy the unbounded embedding contract. Neither non-Markovianity, noninjective projection, branching, nor nil termination supplies that contract by itself. Computational irreducibility additionally requires a specified computation model and a lower-bound theorem. Probability, quantization, physical time, and universal limits of control remain separate source obligations.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad",
+      "path": "papers/the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits",
+      "superseded_project": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits",
+      "title": "The Modal Triplet Theory Program A2: Conditional Computability and Finite Prediction Depth"
+    },
+    {
       "abstract": "We apply the corrected FP–I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. In the q79 realization the 1<2<3 flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
       "authors": [
         "Peter Nero"
