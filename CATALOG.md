@@ -1,6 +1,6 @@
 # MTT Paper Catalog
 
-Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **45**.
+Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **46**.
 
 The list is alphabetical and intentionally has no topical grouping.
 
@@ -118,7 +118,7 @@ The list is alphabetical and intentionally has no topical grouping.
 | The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang-Mills Realization | v2 | [v1.0](https://zenodo.org/records/18355037) | [TeX](papers/the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a/paper.md) |
 | The Modal Triplet Theory Program B3: Discrete Survivor Filters and Conditional Quantum Reconstruction | v2 | [v1.0](https://zenodo.org/records/18355059) | [TeX](papers/the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34/paper.md) |
 | The Modal Triplet Theory Program B4: Typed Encoding Intersections, Conditional Rigidity, and Standard Model Compatibility | v2 | [v1.0](https://zenodo.org/records/18355086) | [TeX](papers/the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113/paper.md) |
-| The Modal Triplet Theory Program B5: Saturated and Unified Encodings in the Modal Triplet Theory Program | v1.0 | [v1.0](https://zenodo.org/records/18355130) | [TeX](papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f/paper.md) |
+| The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations | v2 | [v1.0](https://zenodo.org/records/18355130) | [TeX](papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f/paper.md) |
 | The Modal Triplet Theory Program C: Realizing the Modal Triplet Core with Geometric and Bundle Models | v1.0 | [v1.0](https://zenodo.org/records/18355143) | [TeX](papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/paper.md) |
 | The Modal Triplet Theory Program D1: The Dark Sector as Missing Encodings in the Modal Triplet Theory Program | v1.0 | [v1.0](https://zenodo.org/records/18355167) | [TeX](papers/the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707/paper.md) |
 | The Projection–Admissibility Principle Descent, Recovery, and Structural Constraints on Effective Description | v2 | [v1.0](https://zenodo.org/records/18255839) | [TeX](papers/the-projection-admissibility-principle-descent-recovery-b0fd6e59/main.tex) / [Markdown](papers/the-projection-admissibility-principle-descent-recovery-b0fd6e59/paper.md) |

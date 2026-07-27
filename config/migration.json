@@ -120,6 +120,23 @@
       "title": "The Modal Triplet Theory Program B4: Typed Encoding Intersections, Conditional Rigidity, and Standard Model Compatibility"
     },
     {
+      "abstract": "We replace an absolute notion of encoding saturation by a typed and testable relative notion. A saturation contract specifies a category of candidate realizations, its equivalences, a complete list of constraints and boundary data, and a class of allowed factorizations. A realization is saturated relative to that contract when it satisfies every declared constraint and admits no nontrivial allowed factorization. For a finite-dimensional local model with declared variable and constraint blocks, we prove that first-order factorization is exactly detected by the connected components of the bipartite derivative-incidence graph. Connected incidence gives infinitesimal indecomposability; together with an injective combined derivative, it gives a locally isolated, infinitesimally indecomposable realization. Countermodels show that saturation alone does not force extended carriers, a critical dimension, anomalies, or duality. One-dimensional carriers, worldsheets, critical dimensions, anomaly cancellation, and dualities are retained as conditional realization results under explicit hypotheses. The exact q=79 arithmetic branch is recorded without promoting the still-open physical Hull-Strominger, worldsheet, and all-scale completion rows.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
+      "path": "papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
+      "result_refs": [
+        "q79_exact_theorem"
+      ],
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings",
+      "superseded_project": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings",
+      "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations"
+    },
+    {
       "abstract": "We apply the corrected FP–I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. In the q79 realization the 1<2<3 flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
       "authors": [
         "Peter Nero"

@@ -1,12 +1,12 @@
 {
   "counts": {
     "canonical_papers": 139,
-    "current_sources_newer_than_release": 45,
+    "current_sources_newer_than_release": 46,
     "pandoc_warning_papers": 12,
     "papers_with_zenodo_release": 119,
     "papers_without_zenodo_match": 20,
     "schema": "mtt.paper-migration-report.v1",
-    "superseded_projects_excluded": 46,
+    "superseded_projects_excluded": 47,
     "zenodo_records": 120,
     "zenodo_records_matched": 119,
     "zenodo_records_unmatched": 1
@@ -7779,14 +7779,14 @@
       ]
     },
     {
-      "abstract": "We analyze encoding frameworks that attempt to resolve circle, lens, and nil obstructions simultaneously and maximally within a single reduced description. In the Modal Triplet Theory (MTT) framework, gravity, gauge structure, and quantization arise as distinct encoding responses to these obstructions. When one seeks a single encoding in which all three responses are fully integrated, additional constraints emerge that drastically restrict admissible structure. We show that such saturated encodings are highly constrained and exhibit features commonly associated with string-theoretic and related frameworks, including extended fundamental objects, anomaly saturation, constrained dimensionality, and limited freedom of deformation. These features are shown to arise from admissibility, overlap consistency, and refinement stability, rather than from postulated microscopic dynamics. The analysis does not assume string theory or any specific formalism. Instead, it explains why string-like frameworks appear when encoding constraints are pushed to their maximal simultaneous resolution. Saturated encodings are therefore interpreted as extreme but natural points in the space of admissible descriptions, not as fundamental theories.",
+      "abstract": "We replace an absolute notion of encoding saturation by a typed and testable relative notion. A saturation contract specifies a category of candidate realizations, its equivalences, a complete list of constraints and boundary data, and a class of allowed factorizations. A realization is saturated relative to that contract when it satisfies every declared constraint and admits no nontrivial allowed factorization. For a finite-dimensional local model with declared variable and constraint blocks, we prove that first-order factorization is exactly detected by the connected components of the bipartite derivative-incidence graph. Connected incidence gives infinitesimal indecomposability; together with an injective combined derivative, it gives a locally isolated, infinitesimally indecomposable realization. Countermodels show that saturation alone does not force extended carriers, a critical dimension, anomalies, or duality. One-dimensional carriers, worldsheets, critical dimensions, anomaly cancellation, and dualities are retained as conditional realization results under explicit hypotheses. The exact q=79 arithmetic branch is recorded without promoting the still-open physical Hull-Strominger, worldsheet, and all-scale completion rows.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January, 2026",
+      "current_version": "v2",
+      "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18355129",
         "created": "2026-01-23T20:11:43.824043+00:00",
@@ -7812,20 +7812,25 @@
         "updated": "2026-01-23T20:11:44.424923+00:00",
         "version": "v1.0"
       },
-      "main_tex_sha256": "08f278d8d7c681eb7e7bf0dd9e5679fd9b731727033c28111f994cae940dfb95",
+      "main_tex_sha256": "a9a278bc71e7bb6d96a2dbb99e4a890c9a06a421947262fd9fd2471af9a0fb3a",
       "paper_id": "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
-      "paper_md_sha256": "b790156f4f8bf4a98b70a5f4ac14a8be386b6df8279ff9392d358f864f530c89",
+      "paper_md_sha256": "d0cf20fad4a25d313308de99a35c12df5c0b49e2bbc042bf39e49c7e64784fdf",
       "release_state": "zenodo_released",
-      "result_refs": [],
+      "result_refs": [
+        "q79_exact_theorem"
+      ],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "d4870671dbf26e8d0ce61fe16f5b2b62052411366c831c052abba7859a64f477",
+        "selected_revision": true,
+        "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings"
       },
       "source_provenance": {
         "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings"
       },
-      "source_tree_sha256": "b27c21ea679acca4bf5aed3cfa0dc73b279cffafce9f907a86700360d4fde016",
-      "title": "The Modal Triplet Theory Program B5: Saturated and Unified Encodings in the Modal Triplet Theory Program",
-      "version_relation": "matches_latest_release",
+      "source_tree_sha256": "dd289086533a057d38c5537af886e6fd8a41755a7196ffeddee95b08a220b764",
+      "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.18355129",

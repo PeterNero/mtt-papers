@@ -1,817 +1,635 @@
 ---
 abstract: |
-  We analyze encoding frameworks that attempt to resolve circle, lens, and nil obstructions simultaneously and maximally within a single reduced description. In the Modal Triplet Theory (MTT) framework, gravity, gauge structure, and quantization arise as distinct encoding responses to these obstructions. When one seeks a single encoding in which all three responses are fully integrated, additional constraints emerge that drastically restrict admissible structure.
+  We replace an absolute notion of “encoding saturation” by a typed and testable relative notion. A saturation contract specifies a category of candidate realizations, its equivalences, a complete list of constraints and boundary data, and a class of allowed factorizations. A realization is saturated relative to that contract when it satisfies every declared constraint and admits no nontrivial allowed factorization. Saturation can therefore change when the candidate class, constraint inventory, equivalence, or factorization class changes.
 
-  We show that such *saturated encodings* are highly constrained and exhibit features commonly associated with string-theoretic and related frameworks, including extended fundamental objects, anomaly saturation, constrained dimensionality, and limited freedom of deformation. These features are shown to arise from admissibility, overlap consistency, and refinement stability, rather than from postulated microscopic dynamics.
+  For a finite-dimensional local model with declared variable and constraint blocks, we prove that first-order factorization is exactly detected by the connected components of the bipartite derivative-incidence graph. A connected active graph gives infinitesimal indecomposability; together with an injective combined derivative, it gives a locally isolated, infinitesimally indecomposable realization. This is a genuine conditional saturation theorem.
 
-  The analysis does not assume string theory or any specific formalism. Instead, it explains why string-like frameworks appear when encoding constraints are pushed to their maximal simultaneous resolution. Saturated encodings are therefore interpreted as extreme but natural points in the space of admissible descriptions, not as fundamental theories.
+  The stronger claims in the first version do not follow from saturation alone. We give explicit countermodels showing that a complete, rigid, indecomposable constraint system need not contain extended carriers, a critical dimension, or a nontrivial duality. A one-dimensional carrier is minimal only after one requires a nonconstant continuous loop or nontrivial holonomy. Critical dimensions require an explicit anomaly or central-charge defect. Duality requires an explicit invertible comparison preserving the declared dynamics and observables. String-like and brane-like structures are consequently realization classes, not inevitable consequences of three obstruction labels.
+
+  We also separate existence, local rigidity, uniqueness within a declared candidate class, physical selection, and empirical adequacy. The current selected q=79 arithmetic theorem supplies an exact finite branch, but the physical visible-hidden Hull–Strominger endpoints, the remaining seven rows of the twelve-row worldsheet contract, and an all-scale nonperturbative completion remain open. Program B5 therefore provides a rigorous language and a finite indecomposability test for unified encodings. It does not derive string theory, a numerical critical dimension, or the physical selection of a saturated universe.
 author:
 - Peter Nero
-current_version: v1.0
-date: January, 2026
-generated_from_main_tex_sha256: 08f278d8d7c681eb7e7bf0dd9e5679fd9b731727033c28111f994cae940dfb95
+current_version: v2
+date: July 2026
+generated_from_main_tex_sha256: a9a278bc71e7bb6d96a2dbb99e4a890c9a06a421947262fd9fd2471af9a0fb3a
 paper_id: the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f
 release_state: zenodo_released
 released_version: v1.0
 title: |
   The Modal Triplet Theory Program B5:  
-  Saturated and Unified Encodings  
-  in the Modal Triplet Theory Program
+  Relative Saturation, Conditional Extended Carriers,  
+  and String-Like Realizations
 zenodo_doi: 10.5281/zenodo.18355130
 zenodo_record_id: 18355130
 zenodo_url: "https://zenodo.org/records/18355130"
 ---
 
-# Introduction and Scope
+# Revision note for version 2
 
-The Modal Triplet Theory Program establishes that reduced descriptions are local and that failure of global coherence admits three and only three obstruction types: circle, lens, and nil. Previous papers identified the encoding responses forced by these obstructions individually—gravity, gauge structure, and quantization—and analyzed the consequences of requiring their simultaneous coexistence within a single descriptive framework.
+<div class="description">
 
-The purpose of the present paper is to investigate what happens when this coexistence requirement is pushed to its extreme. We ask the following question:
+Version 1 of Program B5.
 
-> *What structural features emerge when a single encoding framework attempts to resolve circle, lens, and nil obstructions fully and simultaneously, without delegating responsibility to separate encoding layers?*
+Version 1 defined saturation by inseparability and then used that definition to claim that pointlike carriers fail, one-dimensional carriers are forced, critical dimensions appear, all anomalies cancel internally, and dualities are mandatory. The required categories, anomaly classes, carrier hypotheses, dimension equations, equivalences, and selection rule were not supplied.
 
-We show that such *saturated encodings* are exceptionally rigid and exhibit properties that are not present in generic encoding intersections. These properties include extended fundamental structures, severe restrictions on dimensionality, constrained representation content, and automatic anomaly saturation. The resulting frameworks closely resemble string-theoretic constructions, though no string postulate is assumed.
+Version 2 makes saturation relative to a declared contract, proves an exact derivative-incidence criterion for first-order indecomposability, and supplies countermodels to every withdrawn unconditional implication. Extended carriers, critical dimensions, anomaly cancellation, worldsheets, and dualities are retained as conditional realization results under explicit hypotheses.
 
-Throughout this paper we emphasize that saturated encodings are neither fundamental nor inevitable. They represent extreme points in the space of admissible encodings where all obstruction responses are integrated into a single unified structure. Their existence explains why string-like frameworks arise naturally in attempts at unification, while also clarifying why such frameworks are not unique or compulsory.
+Combining several constraints in one source can make a model much less decomposable; extended-carrier and string-like realizations are important unification candidates; and local rigidity can be informative without global uniqueness.
 
-<div class="remark">
-
-*Remark 1* (Position in the series). This paper follows the analysis of encoding intersections and structural rigidity and precedes realization papers that construct explicit geometric or algebraic models. It introduces no new obstruction types or encoding responses, but examines the consequences of maximal simultaneous resolution of all three existing obstructions.
+No exhaustive candidate category, selected physical string background, complete q=79 worldsheet theory, all-scale quantum completion, or theorem selecting one saturated realization is established here.
 
 </div>
 
-# From Encoding Intersections to Saturation
+# Scope and Dependencies
 
-In this section we distinguish between *encoding intersections*, analyzed in the previous paper, and the stronger notion of *encoding saturation*. While encoding intersections require compatibility of multiple encoding responses, saturated encodings require that these responses be integrated into a single, indivisible descriptive framework.
+Program B5 begins after the typed intersection theory of Program B4. It does not infer a unified theory directly from the words circle, lens, and nil. Program A0 supplies typed reductions, quotient relations, and factorization criteria . Program B0 treats circle, lens, and nil as useful but nonexhaustive obstruction profiles . Programs B1–B3 state the additional geometric, gauge, and quantum data needed before those profiles become physical theories . Program B4 defines a common realization locus and separates compatibility, local rigidity, persistence, and global uniqueness .
 
-## Encoding intersection versus encoding saturation
+The question addressed here is narrower:
 
-We begin by clarifying the distinction.
+> Given a fully declared intersection contract, when do its constraint blocks fail to split into independent subsystems, and what additional assumptions are needed before that indecomposability can be realized by strings, worldsheets, critical dimensions, anomalies, or dualities?
+
+## Terminology boundary
+
+The word *saturation* has several standard mathematical meanings. Ideal saturation $`I:f^\infty`$, saturation of a sublattice, a saturated subsheaf, and the contract-relative notion introduced below are different constructions. An exact computation involving one of the first three does not prove descriptive saturation unless a map between the two notions is supplied.
+
+## Current q=79 evidence
+
+One later selected result is relevant as a boundary marker. The exact q=79 packet proves, on its stated finite branch, that
+``` math
+q\equiv 15\pmod {64},
+ \qquad
+ q\equiv 2\pmod 7,
+ \qquad
+ q\equiv 79\pmod {448}.
+```
+This is an exact finite arithmetic result . The integer $`79`$ is not a spacetime dimension, a worldsheet central charge, or a proof of string criticality.
+
+The current physical string branch remains conditional:
+
+1.  the selected visible and hidden non-pullback holomorphic bundles and their common positive HYM chamber are not yet constructed;
+
+2.  the q=79 worldsheet contract is complete in five of twelve declared rows; and
+
+3.  all-genus or other nonperturbative completion, positivity, and asymptotic control remain open.
+
+Those open rows are not assumptions silently imported into the theorems below.
+
+# A Relative Saturation Contract
+
+## Typed data
+
+<div id="def:contract" class="definition">
+
+**Definition 1** (Saturation contract). A *saturation contract* is a tuple
+``` math
+\mathfrak C
+ =
+ \bigl(
+ \mathcal C,\sim,\mathcal M,\{F_\alpha\}_{\alpha\in A},
+ \mathcal B,\mathcal D,\mathcal R
+ \bigr)
+```
+with the following data:
+
+1.  a category or structured class $`\mathcal C`$ of candidate realizations;
+
+2.  an equivalence relation or groupoid $`\sim`$ of admissible re-encodings;
+
+3.  a moduli object $`\mathcal M`$, or a local slice after quotienting the declared equivalences;
+
+4.  a finite or otherwise controlled inventory of constraint maps $`F_\alpha:\mathcal M\to W_\alpha`$;
+
+5.  declared variable and constraint blocks $`\mathcal B`$;
+
+6.  a class $`\mathcal D`$ of factorizations that count as a genuine separation of responsibilities; and
+
+7.  regularity, source, boundary, and domain data $`\mathcal R`$.
+
+</div>
+
+The index set $`A`$ may contain geometric transport, bundle cocycle, gauge, quantum, anomaly, overlap, boundary, and refinement constraints. The labels are bookkeeping devices. Their equations need not be independent.
 
 <div class="definition">
 
-**Definition 2** (Encoding intersection). An *encoding intersection* is an admissible descriptive framework in which multiple encoding responses (gravity, gauge structure, quantization) coexist as distinct but compatible layers, each addressing a different obstruction type.
+**Definition 2** (Contract-complete realization). The common realization locus is
+``` math
+\mathcal Z_{\mathfrak C}
+ =
+ \left\{
+ [x]\in\mathcal M/{\sim}:
+ F_\alpha(x)=0\ \text{for every }\alpha\in A,
+ \ \text{and }\mathcal R\text{ holds}
+ \right\}.
+```
+A point $`[x]\in\mathcal Z_{\mathfrak C}`$ is *contract complete*.
 
 </div>
 
-Encoding intersections allow separation of responsibilities: different encoding responses may act on different aspects of the reduced description.
+Completeness is relative to the declared inventory. The phrase “all constraints” means every row in $`A`$, not every obstruction that could be invented in a larger theory.
+
+## Allowed factorization
+
+<div id="def:factorization" class="definition">
+
+**Definition 3** (Local contract factorization). Let $`[x]\in\mathcal Z_{\mathfrak C}`$. A nontrivial local factorization in the class $`\mathcal D`$ consists of:
+
+1.  a neighborhood $`U`$ of $`[x]`$ and an allowed equivalence $`U\simeq U_1\times U_2`$, with both factors nontrivial;
+
+2.  a partition $`A=A_1\sqcup A_2`$; and
+
+3.  maps $`\widetilde F_\alpha`$ such that, under the equivalence,
+    ``` math
+    F_\alpha=
+     \begin{cases}
+     \widetilde F_\alpha\circ\pi_1,&\alpha\in A_1,\\
+     \widetilde F_\alpha\circ\pi_2,&\alpha\in A_2.
+     \end{cases}
+    ```
+
+Boundary data, sources, and equivalences must factor in the same declared sense.
+
+</div>
+
+<div id="def:saturation" class="definition">
+
+**Definition 4** (Relative saturation). A contract-complete realization is *$`\mathcal D`$-saturated* when it admits no nontrivial local factorization from Definition <a href="#def:factorization" data-reference-type="ref" data-reference="def:factorization">3</a>. It is *globally $`\mathcal D`$-saturated* when no such factorization exists on its full connected component.
+
+</div>
+
+This definition says what is inseparable and which splittings were tested. It does not build a carrier, action, anomaly theory, or physical selector.
+
+<div id="prop:relative" class="proposition">
+
+**Proposition 5** (Saturation is contract relative). *Relative saturation is not an intrinsic predicate of an untyped object. Changing the constraint inventory, candidate category, equivalence, block decomposition, or allowed factorization class can change its truth value.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Adding a constraint can remove a point from $`\mathcal Z_{\mathfrak C}`$. Enlarging $`\mathcal D`$ can admit a previously forbidden factorization. Refining a variable block can expose a splitting hidden by a coarse block, while quotienting by a larger equivalence can identify factors that were previously distinct. Therefore the predicate depends on the displayed contract data. ◻
+
+</div>
+
+# The Derivative-Incidence Criterion
+
+## Blocked linearization
+
+Let $`\mathcal M`$ be a smooth finite-dimensional local slice near a contract-complete point $`x`$. Write
+``` math
+V=T_x\mathcal M=\bigoplus_{i\in I}V_i,
+ \qquad
+ W=\bigoplus_{j\in J}W_j,
+ \qquad
+ L=DF_x:V\longrightarrow W,
+```
+where $`F=(F_j)_{j\in J}`$. Discard constraint blocks with zero derivative. If a variable block has no incident derivative, it is a free first-order factor and is retained as an isolated vertex.
 
 <div class="definition">
 
-**Definition 3** (Encoding saturation). A *saturated encoding* is an admissible descriptive framework in which the responses to circle, lens, and nil obstructions are no longer separable, but are implemented simultaneously and inseparably within a single encoding structure.
+**Definition 6** (Derivative-incidence graph). The bipartite graph $`G_x`$ has variable vertices $`I`$, constraint vertices $`J`$, and an edge $`i\!-\!j`$ exactly when
+``` math
+L_j|_{V_i}\ne 0.
+```
 
 </div>
-
-Saturation therefore represents a limit point of encoding coexistence.
-
-## Motivation for saturation
-
-One may ask why saturation should be considered at all.
-
-<div class="remark">
-
-*Remark 4*. Encoding intersections already explain much of observed physical structure. However, attempts at unification often impose additional constraints requiring that gravity, gauge structure, and quantization not merely coexist, but arise from a common descriptive mechanism. Such attempts naturally push toward saturation.
-
-</div>
-
-Saturation is thus not required by the MTT core, but is motivated by unification goals.
-
-## Structural consequences of saturation
-
-Encoding saturation imposes stronger constraints than simple coexistence.
-
-<div class="lemma">
-
-**Lemma 5**. *In a saturated encoding, no admissible decomposition exists that assigns circle, lens, and nil obstructions to independent encoding layers.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* By definition of saturation, all obstruction responses are implemented within a single encoding framework. Any attempt to decompose responsibilities would reintroduce a layered structure and therefore violate saturation. ◻
-
-</div>
-
-This indivisibility is the source of many distinctive features of saturated encodings.
-
-## Loss of pointlike descriptive freedom
-
-A key immediate consequence of saturation is the loss of pointlike encoding freedom.
-
-<div class="remark">
-
-*Remark 6*. In encoding intersections, pointlike descriptions may persist because different obstruction responses can be handled separately. In saturated encodings, local pointlike descriptions must simultaneously satisfy kinematic consistency, redundancy bookkeeping, and discrete constraint requirements, which is generically impossible.
-
-</div>
-
-This observation motivates the emergence of extended descriptive objects.
-
-## Constraint amplification
-
-Saturation amplifies constraints.
-
-<div class="lemma">
-
-**Lemma 7**. *Constraints imposed by individual encoding responses become mutually reinforcing under saturation, eliminating degrees of freedom that would remain admissible in an intersection framework.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Each encoding response restricts admissible descriptions along a different structural dimension. When these restrictions are enforced simultaneously within a single encoding, admissible variations that satisfy one constraint but violate another are eliminated. The remaining admissible structures are therefore far more constrained than in the intersection case. ◻
-
-</div>
-
-## Emergence of new structural features
-
-The amplified constraints lead to qualitatively new features.
-
-<div class="remark">
-
-*Remark 8*. Extended fundamental structures, restricted dimensionality, and automatic anomaly saturation are not added assumptions in saturated encodings. They emerge as consequences of enforcing all obstruction responses simultaneously and indivisibly.
-
-</div>
-
-These features will be analyzed in the subsequent sections.
-
-## Relation to earlier results
-
-We emphasize continuity with earlier papers.
-
-<div class="remark">
-
-*Remark 9*. Saturated encodings do not contradict the encoding intersection analysis of the previous paper. They represent extreme points within the same encoding space, where compatibility constraints are pushed to their maximal simultaneous resolution.
-
-</div>
-
-## Preview: extended consistency carriers
-
-The next section shows that saturation generically excludes pointlike encodings and forces the introduction of extended objects as carriers of consistency.
-
-<div class="remark">
-
-*Remark 10*. In the next section we demonstrate that extended objects arise as the minimal structures capable of simultaneously encoding kinematic consistency, redundancy bookkeeping, and discrete constraint enforcement.
-
-</div>
-
-# Failure of Pointlike Encodings under Saturation
-
-In this section we show that saturated encodings generically exclude pointlike descriptive structures. The failure of pointlike encodings follows from the simultaneous and inseparable enforcement of kinematic consistency, redundancy bookkeeping, and discrete constraint requirements.
-
-## Pointlike encodings
-
-We begin by clarifying what is meant by a pointlike encoding.
 
 <div class="definition">
 
-**Definition 11** (Pointlike encoding). A *pointlike encoding* is a reduced description in which coherent structure is represented by localized, zero-dimensional carriers whose admissibility can be assessed independently at each point of the encoding domain.
+**Definition 7** (First-order block factorization). A *first-order block factorization* is a pair of nonempty partitions
+``` math
+I=I_1\sqcup I_2,
+ \qquad
+ J=J_1\sqcup J_2
+```
+such that
+``` math
+L_j|_{V_i}=0
+ \quad\text{whenever}\quad
+ (i,j)\in(I_1\times J_2)\cup(I_2\times J_1).
+```
 
 </div>
 
-Pointlike encodings are common in non-saturated frameworks, including classical field theories and many effective quantum descriptions.
+<div id="thm:incidence" class="theorem">
 
-## Pointlike encoding and separated constraints
-
-In encoding intersections, pointlike descriptions may persist.
-
-<div class="remark">
-
-*Remark 12*. When gravity, gauge structure, and quantization are implemented as separable encoding layers, pointlike encodings can satisfy each constraint independently: gauge redundancy acts locally, gravity enforces kinematic consistency globally, and quantization restricts local spectra.
-
-</div>
-
-This separability allows pointlike descriptions to survive.
-
-## Incompatibility with saturation
-
-Under saturation, this separability is lost.
-
-<div class="lemma">
-
-**Lemma 13**. *In a saturated encoding, pointlike descriptions cannot simultaneously satisfy kinematic consistency, redundancy bookkeeping, and discrete constraint requirements.*
+**Theorem 8** (Incidence criterion for infinitesimal indecomposability). *After deleting zero constraint blocks, $`L`$ has a nontrivial first-order block factorization if and only if the derivative-incidence graph $`G_x`$ is disconnected with a partition containing variable vertices on both sides. Consequently, a connected $`G_x`$ proves first-order indecomposability relative to the declared blocks.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Kinematic consistency requires that identity be preserved under admissible continuation across overlaps, which introduces nonlocal constraints. Redundancy bookkeeping requires tracking equivalence classes of representations across domains, also introducing nonlocal structure. Discrete constraint encoding requires stability of descriptive content under refinement, which excludes arbitrary local variation. A pointlike encoding, whose admissibility is assessed purely locally, cannot satisfy all three requirements simultaneously within a single inseparable framework. ◻
+*Proof.* Suppose the displayed partitions give a first-order factorization. Every nonzero derivative entry joins $`I_1`$ only to $`J_1`$ or $`I_2`$ only to $`J_2`$. There is no edge crossing between the two vertex sets, so $`G_x`$ is disconnected.
+
+Conversely, let $`G_x=G_1\sqcup G_2`$ be a disconnection with variable vertices in both components. Put $`I_k=I\cap G_k`$ and $`J_k=J\cap G_k`$. No edge joins $`I_1`$ to $`J_2`$ or $`I_2`$ to $`J_1`$, which is exactly the vanishing condition for a first-order block factorization. More than two components can be grouped into two nonempty collections. ◻
 
 </div>
 
-Thus pointlike encodings fail structurally under saturation.
+<div id="cor:rigid-saturation" class="corollary">
 
-## Failure modes of pointlike descriptions
+**Corollary 9** (Locally rigid infinitesimal saturation). *Assume $`F(x)=0`$, $`G_x`$ is connected, and $`DF_x`$ is injective. Then $`x`$ is locally isolated in $`F^{-1}(0)`$ and first-order indecomposable relative to the declared blocks.*
 
-The failure manifests in several ways.
+</div>
 
-- **Kinematic failure:** pointlike carriers cannot maintain consistent identity under loop-dependent continuation.
+<div class="proof">
 
-- **Redundancy failure:** gauge equivalence cannot be organized purely locally without introducing inconsistencies.
+*Proof.* Theorem <a href="#thm:incidence" data-reference-type="ref" data-reference="thm:incidence">8</a> gives first-order indecomposability. If $`n=\dim V`$, injectivity supplies an $`n\times n`$ nonzero minor after choosing $`n`$ target coordinates. The inverse function theorem applied to those components makes their common zero locally unique. Hence the full zero set is locally $`\{x\}`$. ◻
 
-- **Discrete instability:** refinement destroys pointlike discrete labels unless they are embedded in extended structures.
+</div>
 
-Each failure reflects a different obstruction response acting inseparably.
+<div class="remark">
 
-## Necessity of extended carriers
+*Remark 10* (Exact scope). Connected incidence is a statement about the displayed linearized blocks. It does not exclude a nonlinear change of variables that factors the contract, nor does it establish global uniqueness. Injectivity is sufficient for local isolation, not necessary: singular equations can also have isolated zeros.
 
-The failure of pointlike encodings motivates the introduction of extended structures.
+</div>
+
+## A finite exact example
+
+Let $`\mathcal M=\mathbb R^3`$ with scalar variable blocks and define
+``` math
+F(x_1,x_2,x_3)
+ =
+ \begin{pmatrix}
+ x_1+x_2\\
+ x_2+x_3\\
+ x_3+x_1
+ \end{pmatrix}.
+```
+The derivative matrix is
+``` math
+L=
+ \begin{pmatrix}
+ 1&1&0\\
+ 0&1&1\\
+ 1&0&1
+ \end{pmatrix},
+ \qquad
+ \det L=2.
+```
+Its incidence graph is a six-cycle, hence connected, and $`L`$ is invertible. The origin is therefore locally rigid and first-order indecomposable.
+
+This example is deliberately point-valued. It contains no extended carrier, worldsheet, critical dimension, anomaly polynomial, or duality. It proves that even the conjunction of completeness, rigidity, and first-order indecomposability does not imply any of those additional structures.
+
+# What Saturation Does Not Force
+
+## Pointlike data remain possible
+
+A pointwise field is not the same as a collection of independent points. Sections of a bundle are evaluated pointwise while their derivatives, connections, boundary conditions, and gauge transformations couple values across the base. Conversely, a finite-dimensional or zero-dimensional model can have a connected constraint graph, as the preceding example shows.
+
+Therefore the old implication
+``` math
+\text{saturation}\Longrightarrow
+ \text{failure of all pointlike encodings}
+```
+is false without a separate definition of pointlike locality and a theorem showing that every allowed local model violates a named constraint.
+
+## The conditional carrier-minimality theorem
+
+There is a valid narrower statement behind the earlier intuition.
+
+<div id="thm:loop-dimension" class="theorem">
+
+**Theorem 11** (Minimal dimension for continuous loop support). *Let $`K`$ be a compact metric carrier required to contain a nonconstant continuous loop. Then its covering dimension satisfies
+``` math
+\dim K\ge 1.
+```
+The bound is sharp because $`S^1`$ has covering dimension one and supports a non-nullhomotopic loop.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* A compact metric space of covering dimension zero is totally disconnected. The image of $`S^1`$ under a continuous map is connected. If the map is nonconstant, its image contains more than one point, contradicting total disconnectedness. The circle supplies the sharp example. ◻
+
+</div>
+
+<div class="remark">
+
+*Remark 12*. The theorem is conditional on continuous loop support. An interval is one-dimensional but has trivial fundamental group. A circle supports holonomy but does not by itself supply a gauge group, a nil/refinement law, a worldsheet action, a quantum measure, or anomaly cancellation.
+
+</div>
+
+## Worldsheet-like sweeps
+
+Suppose a one-dimensional carrier $`K`$ is propagated through an additional parameter $`t\in I`$ by a sufficiently regular family of maps $`\gamma_t:K\to X`$. The evaluation map
+``` math
+\Gamma:K\times I\longrightarrow X,
+ \qquad
+ \Gamma(k,t)=\gamma_t(k),
+```
+has a two-dimensional parameter domain when $`K`$ is one-dimensional. This is a *worldsheet-like sweep*. Calling it a physical worldsheet additionally requires at least:
+
+1.  a target geometry and field space;
+
+2.  an action and boundary conditions;
+
+3.  gauge fixing and a quantum measure or operator construction;
+
+4.  local and global anomaly control; and
+
+5.  observables and a physical interpretation.
+
+The product $`K\times I`$ alone proves none of these rows.
+
+# Anomaly Completeness and Critical Dimensions
+
+## The anomaly inventory must be declared
+
+<div id="def:anomaly-contract" class="definition">
+
+**Definition 13** (Anomaly contract). An *anomaly contract* consists of:
+
+1.  a field and symmetry content;
+
+2.  a quantum construction and regularization domain;
+
+3.  a list $`\mathcal A=\{\alpha_r\}_{r\in R}`$ of local, global, mixed, gravitational, or worldsheet anomaly classes that are defined for that model;
+
+4.  the cohomology, determinant-line, cobordism, BRST, or Ward-identity groups in which those classes live; and
+
+5.  an allowed mechanism class $`\mathcal K`$ of counterterms, inflow, Green–Schwarz terms, or additional sectors.
+
+</div>
 
 <div class="definition">
 
-**Definition 14** (Extended consistency carrier). An *extended consistency carrier* is a reduced descriptive object whose admissibility and identity are defined over extended regions of the encoding domain rather than at isolated points.
+**Definition 14** (Anomaly complete). A model is *$`(\mathcal A,\mathcal K)`$-anomaly complete* when every declared class is zero or is trivialized by a displayed mechanism in $`\mathcal K`$, with the compatibility equations checked.
 
 </div>
 
-Extended carriers allow simultaneous enforcement of nonlocal constraints.
+The phrase “all potential anomalies cancel” has no invariant meaning without Definition <a href="#def:anomaly-contract" data-reference-type="ref" data-reference="def:anomaly-contract">13</a>. Classical failure of a bundle cocycle is also not automatically a quantum anomaly.
 
-## Minimality of extension
+In established string constructions, criticality and anomaly cancellation are obtained from explicit worldsheet central-charge, gauge, gravitational, and inflow equations . Their existence supports string-like realizations of a sufficiently rich contract. It does not show that abstract indecomposability creates those equations.
 
-Extension is not arbitrary.
+## A conditional criticality theorem
 
-<div class="lemma">
+<div id="thm:critical" class="theorem">
 
-**Lemma 15**. *Extended consistency carriers must possess minimal dimensional extension to support simultaneous resolution of circle, lens, and nil obstructions.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Extension must be sufficient to encode loop consistency (circle), redundancy tracking (lens), and discrete refinement stability (nil). Insufficient extension fails to support one or more of these requirements, while excessive extension introduces redundancy without additional structural benefit. ◻
-
-</div>
-
-This minimal extension is the origin of string-like structures.
-
-## Interpretive note
-
-We emphasize the structural nature of this result.
-
-<div class="remark">
-
-*Remark 16*. Extended consistency carriers are not introduced as physical objects or dynamical entities. They are the minimal descriptive structures capable of supporting saturated encoding requirements. Their appearance precedes any interpretation as strings, branes, or other extended physical objects.
-
-</div>
-
-## Preview: extended objects as consistency carriers
-
-The next section analyzes the properties of extended carriers in more detail and shows why one-dimensional extended objects are the minimal viable choice in many realization classes.
-
-<div class="remark">
-
-*Remark 17*. In the next section we show that one-dimensional extended carriers naturally emerge as minimal structures capable of supporting saturation, leading to string-like frameworks.
-
-</div>
-
-# Extended Objects as Consistency Carriers
-
-In this section we analyze the minimal properties required of extended consistency carriers in saturated encodings. We show that one-dimensional extended structures emerge as the minimal objects capable of simultaneously supporting kinematic consistency, redundancy bookkeeping, and discrete constraint enforcement.
-
-## Requirements on extended carriers
-
-An extended consistency carrier must satisfy three structural requirements.
-
-1.  **Loop support:** it must support nontrivial closed transport needed to encode circle obstructions.
-
-2.  **Redundancy tracking:** it must support consistent identification of equivalent representations along its extent.
-
-3.  **Refinement stability:** it must admit discrete classification that survives admissible refinement near nil boundaries.
-
-These requirements constrain the dimensionality of admissible carriers.
-
-## Exclusion of zero-dimensional carriers
-
-Zero-dimensional carriers fail immediately.
-
-<div class="lemma">
-
-**Lemma 18**. *Zero-dimensional (pointlike) carriers cannot satisfy the requirements of saturated encodings.*
+**Theorem 15** (Analytic anomaly-zero criterion). *Fix all realization data except a real dimension parameter $`d`$ in an open interval $`U`$. Suppose the net anomaly or central-charge defect
+``` math
+a:U\longrightarrow\mathbb R
+```
+is real analytic and not identically zero. Then the admissible set
+``` math
+\{d\in U:a(d)=0\}
+```
+is discrete. It is finite on every compact subinterval whose neighborhood is contained in $`U`$.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Pointlike carriers cannot support nontrivial loop transport, cannot encode redundancy along their extent, and cannot stabilize discrete structure under refinement. Therefore they fail all three requirements. ◻
+*Proof.* Zeros of a nonzero real-analytic function are isolated. An infinite set of zeros in such a compact subinterval would have an accumulation point, forcing $`a`$ to vanish identically by the identity theorem, a contradiction  . ◻
 
 </div>
 
-## Minimal dimensional extension
+<div class="remark">
 
-We now determine the minimal extension required.
+*Remark 16* (Why the hypothesis matters). If $`a\equiv0`$, every $`d`$ is allowed. If $`a(d)=(d-10)(d-26)`$, two values survive. If $`a(d)=\sin(\pi d)`$, infinitely many isolated values survive. The word “anomaly” alone selects none of these functions. Moreover, ordinary spacetime dimension is already integer-valued; merely observing discreteness does not derive a critical dimension.
 
-<div class="lemma">
+</div>
 
-**Lemma 19**. *One-dimensional extended carriers are the minimal structures capable of supporting all three requirements simultaneously.*
+For several continuous moduli, one equation generally leaves a positive-dimensional zero locus. A discrete solution then requires the appropriate rank, transversality, compactness, or arithmetic hypotheses, as in Program B4.
+
+# Duality Requires a Certificate
+
+## Typed duality data
+
+<div id="def:duality" class="definition">
+
+**Definition 17** (Duality certificate). A duality between two realization descriptions $`X`$ and $`Y`$ consists of:
+
+1.  typed source and target state or configuration spaces;
+
+2.  maps or functors $`D:X\to Y`$ and $`E:Y\to X`$;
+
+3.  inverse or natural-equivalence identities on the declared domains;
+
+4.  preservation of actions, equations, symplectic or operator structures, and boundary conditions as applicable;
+
+5.  an observable correspondence, including normalization and uncertainty; and
+
+6.  matching anomaly and quantum-consistency data.
+
+</div>
+
+Different theories use different subsets of this list, but an identification cannot be inferred merely because two descriptions address similar obstructions. Standard examples such as target-space T-duality are supported by explicit transformations and quantum consistency checks  .
+
+<div id="prop:duality" class="proposition">
+
+**Proposition 18** (Quotienting does not manufacture duality). *If a certified duality is included in the equivalence relation $`\sim`$, then the quotient $`\mathcal M/{\sim}`$ identifies the dual descriptions. The existence of a saturated point in $`\mathcal M/{\sim}`$ does not, conversely, construct a duality certificate.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* A one-dimensional carrier supports closed loops and holonomy along its extent, allowing representation of circle obstructions. It provides a natural ordering along which redundancy bookkeeping can be consistently tracked. Discrete structures associated with refinement stability can be assigned to segments or topological classes of the carrier. Higher-dimensional carriers also satisfy these requirements, but are not minimal. ◻
+*Proof.* The first statement is the definition of a quotient by a declared equivalence. For the converse, take a contract whose moduli space is one point and whose category has only its identity morphism. The point is contract complete and admits no nontrivial factorization, but there are no two distinct descriptions and no nontrivial duality. Alternatively, two isolated saturated points can be placed in a discrete category with no morphism between them. ◻
 
 </div>
 
-Thus one-dimensional extension is sufficient and minimal.
+Thus duality webs are possible and important features of particular saturated realizations. They are not forced by relative saturation itself.
 
-## Higher-dimensional carriers and redundancy
+# String-Like Realizations
 
-Higher-dimensional carriers introduce additional degrees of freedom.
+## Realization package
 
-<div class="remark">
+<div id="def:string-package" class="definition">
 
-*Remark 20*. While two- or higher-dimensional extended carriers can support saturation, they introduce redundant descriptive freedom not required by admissibility. Such carriers correspond to non-minimal saturated encodings and are therefore structurally disfavored.
+**Definition 19** (String-like realization package). A *string-like realization package* for a saturation contract contains:
 
-</div>
+1.  a one-dimensional carrier $`K`$, its allowed topologies and labels;
 
-Minimal saturated encodings therefore select one-dimensional carriers.
+2.  a worldsheet or swept domain $`\Sigma`$ and target data $`X`$;
 
-## Worldsheet-like structures
+3.  a field/configuration space and an action $`S`$ with boundary conditions;
 
-Extended carriers naturally sweep out higher-dimensional structures under continuation.
+4.  a gauge and quantum construction, including its state or measure data;
 
-<div class="remark">
+5.  a declared anomaly contract and explicit trivializations;
 
-*Remark 21*. Under admissible continuation, one-dimensional extended carriers generate two-dimensional swept surfaces in the encoding domain. These surfaces play the role of worldsheets in realization classes, though no worldsheet postulate is assumed here.
+6.  overlap, refinement, and compactification maps;
 
-</div>
+7.  every claimed duality certificate; and
 
-This explains the appearance of worldsheet formulations in saturated frameworks.
-
-## Interpretive caution
-
-We emphasize again the structural nature of this result.
-
-<div class="remark">
-
-*Remark 22*. The emergence of one-dimensional extended carriers does not assert the existence of physical strings. It identifies the minimal descriptive structures required to support saturated encoding. Interpretation as physical objects is a realization- dependent step.
+8.  a map from this package into the variables and constraints of $`\mathfrak C`$.
 
 </div>
 
-## Preview: dimensional constraints
+<div id="prop:string" class="proposition">
 
-The existence of extended carriers imposes additional constraints on admissible dimensionality.
-
-<div class="remark">
-
-*Remark 23*. In the next section we show that saturated encodings with extended carriers admit only restricted ambient dimensionalities, leading to critical dimension phenomena familiar from string-like frameworks.
-
-</div>
-
-# Dimensional Constraints and Criticality
-
-In this section we show that saturated encodings with extended consistency carriers admit only restricted ambient dimensionalities. These dimensional constraints arise from admissibility, overlap consistency, and refinement stability, and lead naturally to critical-dimension phenomena familiar from string-like frameworks.
-
-## Dimensional freedom in non-saturated encodings
-
-In encoding intersections, ambient dimensionality is weakly constrained.
-
-<div class="remark">
-
-*Remark 24*. When gravity, gauge structure, and quantization are implemented as separable encoding layers, the dimensionality of the realization space may vary widely. Different realizations may exist in different dimensions without violating admissibility.
-
-</div>
-
-Thus, dimensional freedom is generic outside saturation.
-
-## Dimensional constraints under saturation
-
-Saturation imposes additional requirements.
-
-<div class="lemma">
-
-**Lemma 25**. *In a saturated encoding with extended consistency carriers, ambient dimensionality must support consistent continuation, redundancy bookkeeping, and discrete constraint enforcement simultaneously along the carrier.*
+**Proposition 20** (Conditional realization criterion). *If the map in Definition <a href="#def:string-package" data-reference-type="ref" data-reference="def:string-package">19</a> is type preserving, sends every declared equation and boundary condition of the package to the corresponding row of $`\mathfrak C`$, and its image is contract complete and $`\mathcal D`$-indecomposable, then the package realizes a saturated encoding.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Extended carriers sweep out nonlocal structures under admissible continuation. For overlap consistency and refinement stability to hold, the ambient space must admit sufficient degrees of freedom to accommodate these structures without self-intersection, obstruction, or inconsistency. This imposes nontrivial constraints on admissible dimensionality. ◻
+*Proof.* Type preservation makes the image a candidate in $`\mathcal C`$. Vanishing of every constraint and satisfaction of the boundary data place it in $`\mathcal Z_{\mathfrak C}`$. The assumed absence of an allowed factorization is exactly Definition <a href="#def:saturation" data-reference-type="ref" data-reference="def:saturation">4</a>. ◻
 
 </div>
 
-## Criticality from anomaly saturation
+The proposition is a certificate template, not a proof that such a package exists. It also does not make its carrier ontologically fundamental.
 
-Dimensional constraints are sharpened by anomaly considerations.
+## Branes and higher carriers
 
-<div class="lemma">
+Higher-dimensional carriers can be included by replacing $`K`$ with a $`p`$-dimensional object and giving the corresponding action, gauge symmetries, charges, anomalies, and dualities. The loop-minimality theorem does not exclude them. It says only that dimension one is the smallest possible continuous carrier dimension under a nonconstant-loop requirement. It does not order physical models by plausibility.
 
-**Lemma 26**. *Anomaly cancellation in saturated encodings imposes discrete constraints on ambient dimensionality.*
+## A useful but limited interpretation
 
-</div>
+String-like frameworks are natural *examples* to test against a rich saturation contract because they combine extended carriers, gauge data, gravity-sensitive consistency conditions, anomaly equations, and explicit dualities. The logical direction is
+``` math
+\text{complete string package}
+ \Longrightarrow
+ \text{candidate saturated realization},
+```
+after the map and indecomposability test are proved. The reverse implication is invalid.
 
-<div class="proof">
+# Existence Is Not Physical Selection
 
-*Proof.* As shown previously, anomaly cancellation is required for admissibility when gravity, gauge, and quantization coexist. In saturated encodings, anomaly cancellation conditions depend explicitly on the dimensionality of the ambient space in which extended carriers are realized. Only specific dimensions permit simultaneous cancellation of all encoding anomalies. ◻
+## Four different claims
 
-</div>
+For clarity, the following statements must remain separate:
 
-This leads to critical dimensions.
+<div class="description">
 
-## Critical dimension phenomenon
+$`\mathcal Z_{\mathfrak C}\ne\varnothing`$.
 
-We now state the structural result.
+A point is isolated in the declared quotient topology.
 
-<div class="theorem">
+Exactly one equivalence class survives in the fully enumerated candidate class.
 
-**Theorem 27** (Critical dimensionality of saturated encodings). *Saturated encodings with extended one-dimensional consistency carriers admit only discrete sets of ambient dimensionalities. Generic dimensional choices are inadmissible.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Extended carriers impose geometric and topological constraints on overlap structure. Anomaly cancellation further restricts admissible dimensions. The intersection of these constraints is discrete, yielding isolated admissible dimensionalities. ◻
-
-</div>
-
-## Relation to familiar critical dimensions
-
-We emphasize the interpretation.
-
-<div class="remark">
-
-*Remark 28*. The appearance of critical dimensions in saturated encodings does not require assumption of string theory, conformal invariance, or specific dynamical constraints. It arises as a structural consequence of maximal admissibility.
+A common source law, initial/boundary condition, or independently justified selection functional chooses that class and yields observables.
 
 </div>
 
-Thus critical dimensions are explained, not postulated.
+Empirical adequacy is a fifth statement: the resulting observables must agree with held-out measurements with a convention map and uncertainty budget.
 
-## Non-uniqueness of critical dimensions
+<div class="proposition">
 
-Criticality does not imply uniqueness.
-
-<div class="remark">
-
-*Remark 29*. Multiple discrete critical dimensions may exist, corresponding to different saturated encoding frameworks. The presence of critical dimensionality reflects structural rigidity, not uniqueness of realization.
-
-</div>
-
-## Interpretive caution
-
-We stress again the limits of the result.
-
-<div class="remark">
-
-*Remark 30*. The present analysis does not predict a specific numerical dimension. It explains why dimensionality becomes discrete and constrained under saturation. Specific critical values arise only in particular realization classes.
-
-</div>
-
-## Preview: anomaly saturation and dualities
-
-Dimensional constraints interact with deeper consistency conditions.
-
-<div class="remark">
-
-*Remark 31*. In the next section we show that anomaly saturation and duality relations emerge naturally in saturated encodings, further constraining admissible frameworks.
-
-</div>
-
-# Anomaly Saturation and Dualities
-
-In this section we show that saturated encodings not only require anomaly cancellation, but typically enforce *anomaly saturation*: the condition that all admissible anomalies are canceled in the strongest possible sense. We further show that duality relations emerge as structural identifications between apparently distinct descriptions that resolve the same obstruction data.
-
-## From anomaly cancellation to anomaly saturation
-
-In encoding intersections, anomaly cancellation is required for admissibility. In saturated encodings, this requirement becomes stronger.
-
-<div class="definition">
-
-**Definition 32** (Anomaly saturation). An encoding exhibits *anomaly saturation* if all potential encoding anomalies—gauge, gravitational, mixed, and higher-order—are simultaneously canceled without introducing auxiliary or external compensating structures.
-
-</div>
-
-Anomaly saturation requires that the encoding framework itself internally resolves all consistency failures.
-
-## Why saturation forces stronger constraints
-
-Saturation eliminates fallback mechanisms.
-
-<div class="remark">
-
-*Remark 33*. In non-saturated frameworks, residual anomalies may sometimes be tolerated by introducing additional sectors or external compensations. Saturated encodings do not permit such separation: all consistency conditions must be resolved internally within a single descriptive framework.
-
-</div>
-
-This dramatically restricts admissible structure.
-
-## Duality as consistency identification
-
-We now explain the origin of duality.
-
-<div class="definition">
-
-**Definition 34** (Duality). A *duality* is an admissible identification between two distinct encoding descriptions that assign equivalent obstruction data and satisfy identical admissibility, overlap consistency, and refinement stability conditions.
-
-</div>
-
-Dualities are therefore identifications of descriptions, not symmetries of underlying reality.
-
-## Dualities forced by saturation
-
-Saturation naturally produces dualities.
-
-<div class="lemma">
-
-**Lemma 35**. *In a saturated encoding, descriptions that differ only by redistribution of obstruction-resolution responsibilities must be identified.*
+**Proposition 21** (No selection from existence alone). *If a contract has two inequivalent complete saturated realizations and no selection functional or source law distinguishing them, neither is physically selected by the contract.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* If two descriptions resolve circle, lens, and nil obstructions in different but structurally equivalent ways, then treating them as distinct would introduce redundancy in the encoding space. Saturation requires elimination of such redundancy, forcing identification of these descriptions via duality. ◻
+*Proof.* Both realizations satisfy exactly the predicates encoded by the contract. Any rule choosing one must therefore use information not present in those predicates. Without such additional data, the choice is underdetermined. ◻
 
 </div>
 
-Thus dualities are forced identifications, not optional equivalences.
+This remains true when each point is locally rigid. Local isolation does not compare separated components.
 
-## Self-consistency under refinement
+# Current Theorem Ledger
 
-Dualities stabilize refinement.
+## Results proved in this revision
 
-<div class="remark">
+1.  Saturation is a contract-relative conjunction of completeness and indecomposability.
 
-*Remark 36*. Duality relations ensure that refinement of encoding descriptions does not generate inequivalent saturated frameworks. Without such identifications, refinement would proliferate inconsistent or redundant encodings, violating saturation.
+2.  The connected components of the derivative-incidence graph exactly detect first-order block factorization relative to declared finite blocks.
 
-</div>
+3.  Connected incidence plus injective combined derivative gives local rigidity and infinitesimal indecomposability.
 
-This explains why dualities are ubiquitous in saturated frameworks.
+4.  Continuous nonconstant-loop support requires carrier dimension at least one, and $`S^1`$ makes the bound sharp.
 
-## Relation to extended carriers
+5.  A nonzero analytic anomaly defect has isolated dimension zeros.
 
-Dualities often relate descriptions based on different extended carriers.
+6.  Quotienting by a duality identifies a duality only after that duality has been constructed.
 
-<div class="remark">
+7.  Explicit countermodels show that relative saturation alone forces none of extended carriers, critical dimensions, worldsheets, anomalies, or nontrivial dualities.
 
-*Remark 37*. Descriptions employing extended carriers of different apparent size or topology may nevertheless encode identical obstruction data. Dualities identify such descriptions as equivalent, reflecting the fact that consistency, not geometry, is primary.
+## Conditional realization statements
 
-</div>
+1.  A one-dimensional carrier is minimal only for a declared continuous-loop requirement.
 
-This prepares the ground for string-like dualities.
+2.  A worldsheet-like sweep follows from a one-dimensional carrier plus an independent continuation parameter; a physical worldsheet requires the remaining action and quantum rows.
 
-## Non-uniqueness and web structure
+3.  Critical dimensions follow only from an explicit nontrivial anomaly or central-charge equation.
 
-Dualities typically form networks rather than isolated pairs.
+4.  A string-like package realizes saturation only after all contract maps, equations, anomalies, domains, and the indecomposability test are supplied.
 
-<div class="remark">
+## Claims not proved
 
-*Remark 38*. In saturated encodings, duality relations often form webs connecting multiple descriptions. These webs reflect the rigidity and internal consistency of the encoding rather than an underlying physical multiplicity.
+This paper does not prove:
 
-</div>
+- that circle, lens, and nil exhaust all obstruction types;
 
-This explains why unified frameworks exhibit rich duality structures.
+- that unified descriptions must be saturated;
 
-## Interpretive caution
+- that saturated descriptions must be extended or string-like;
 
-We emphasize again the structural nature of these results.
+- that one-dimensional carriers are physically preferred;
 
-<div class="remark">
+- that a numerical critical dimension is selected;
 
-*Remark 39*. Dualities are not postulated symmetries and do not imply physical equivalence of distinct ontological pictures. They express equivalence of descriptive encodings forced by maximal admissibility.
+- that anomaly cancellation or duality follows automatically;
 
-</div>
+- that the q=79 finite branch is a complete string vacuum;
 
-## Preview: string-like frameworks
+- that a physical branch is uniquely selected; or
 
-The features identified here closely resemble properties of string-theoretic constructions.
+- that an all-scale quantum-gravity theory has been constructed.
 
-<div class="remark">
+# A Reusable Saturation Audit
 
-*Remark 40*. In the next section we show how string-like frameworks arise as concrete examples of saturated encodings, without assuming strings as fundamental objects.
+A future paper claiming a saturated or unified encoding should provide the following finite audit.
 
-</div>
+1.  **Candidate class:** objects, morphisms, regularity, topology, and boundary conditions.
 
-# String-Like Frameworks as Examples of Saturated Encodings
+2.  **Equivalence:** every quotient or gauge identification.
 
-In this section we analyze string-like frameworks as concrete examples of saturated encodings. The goal is not to derive string theory, nor to privilege any particular formalism, but to explain why frameworks with string-like features arise naturally when encoding saturation is enforced.
+3.  **Constraint inventory:** explicit maps, targets, and source data.
 
-## What is meant by “string-like”
+4.  **Factorization class:** which decompositions count as separate layers.
 
-We begin by clarifying terminology.
+5.  **Local test:** blocked derivative, incidence graph, rank, and kernel after quotienting.
 
-<div class="definition">
+6.  **Global test:** components, nonlinear changes of variables, and global decompositions.
 
-**Definition 41** (String-like encoding). A *string-like encoding* is a saturated encoding framework in which the minimal extended consistency carriers are one-dimensional and whose admissible descriptions are organized by their embeddings, interactions, and refinements.
+7.  **Carrier test:** topology and the exact property requiring extension.
 
-</div>
+8.  **Anomaly test:** fields, anomaly classes, mechanisms, and checked trivializations.
 
-String-like here refers to structural properties, not to a specific quantization procedure or ontology.
+9.  **Dimension test:** the actual equation whose zero set is claimed to be critical.
 
-## Emergence of string-like features
+10. **Duality test:** maps, inverses, domains, dynamics, and observables.
 
-From the preceding sections, saturated encodings exhibit the following features:
+11. **Selection test:** source law or independent selector.
 
-- one-dimensional extended consistency carriers;
+12. **Empirical test:** observables, conventions, uncertainties, and held-out comparisons.
 
-- worldsheet-like swept structures under continuation;
+Failure of one row identifies the missing theorem. It does not invalidate the rows already proved.
 
-- restricted ambient dimensionality;
+# Conclusion
 
-- anomaly saturation rather than mere cancellation;
+The useful content of saturation is not that maximal consistency mysteriously creates strings. It is that a declared family of constraints can become genuinely coupled and nonfactorizable. The derivative-incidence graph gives a finite exact test of that coupling at first order, and the rank criterion from Program B4 can simultaneously establish local isolation.
 
-- pervasive duality relations.
+Extended carriers, worldsheets, anomaly equations, critical dimensions, and dualities remain powerful realization mechanisms. Their hypotheses must be shown, not hidden inside the word saturation. Likewise, the existence or rigidity of one realization does not select it physically. This corrected formulation preserves the unification program while turning its strongest claims into explicit mathematical obligations.
 
-These features collectively characterize string-like frameworks.
+<div class="thebibliography">
 
-<div class="remark">
+99
 
-*Remark 42*. None of these features were postulated. Each arose as a consequence of maximal simultaneous resolution of circle, lens, and nil obstructions.
+P. Nero, *The Modal Triplet Theory Program A0: Typed Reduction, Admissibility, and Conditional Reconstruction*, MTT paper series, version 2, 2026.
 
-</div>
+P. Nero, *The Modal Triplet Theory Program B0: Obstruction Profiles and Conditional Encoding Responses*, MTT paper series, version 2, 2026.
 
-## Why string-like frameworks are rigid
+P. Nero, *The Modal Triplet Theory Program B1: Conditional Geometric Reconstruction and the Gravity Encoding*, MTT paper series, version 2, 2026.
 
-String-like frameworks are exceptionally constrained.
+P. Nero, *The Modal Triplet Theory Program B2: Conditional Gauge Reconstruction from Principal-Bundle Data*, MTT paper series, version 2, 2026.
 
-<div class="lemma">
+P. Nero, *The Modal Triplet Theory Program B3: Discrete Survivor Filters and Conditional Quantum Reconstruction*, MTT paper series, version 2, 2026.
 
-**Lemma 43**. *String-like saturated encodings admit far fewer admissible deformations than generic encoding intersections.*
+P. Nero, *The Modal Triplet Theory Program B4: Typed Encoding Intersections, Conditional Rigidity, and Standard Model Compatibility*, MTT paper series, version 2, 2026.
 
-</div>
+P. Nero, *Consolidated Exact $`\mathbb Z_{64}`$ to $`q=79`$ Closure Theorem*, current selected result packet, SHA-256 prefix `ccacd5227f91ab08`, 2026.
 
-<div class="proof">
+A. Hatcher, *Algebraic Topology*, Cambridge University Press, 2002.
 
-*Proof.* Any deformation must preserve:
+S. G. Krantz and H. R. Parks, *A Primer of Real Analytic Functions*, second edition, Birkhauser, 2002.
 
-1.  kinematic consistency along extended carriers;
+L. Alvarez-Gaume and E. Witten, Gravitational anomalies, *Nuclear Physics B* **234** (1984), 269–330.
 
-2.  redundancy bookkeeping along their extent;
+M. B. Green and J. H. Schwarz, Anomaly cancellations in supersymmetric $`D=10`$ gauge theory and superstring theory, *Physics Letters B* **149** (1984), 117–122.
 
-3.  discrete refinement stability;
+T. H. Buscher, Path-integral derivation of quantum duality in nonlinear sigma-models, *Physics Letters B* **201** (1988), 466–472.
 
-4.  anomaly saturation.
-
-Generic deformations violate at least one of these conditions, rendering the encoding inadmissible. ◻
-
-</div>
-
-This explains the rigidity observed in string-like constructions.
-
-## Non-uniqueness of string-like frameworks
-
-Despite rigidity, string-like frameworks are not unique.
-
-<div class="remark">
-
-*Remark 44*. Multiple inequivalent saturated encodings may exist that share string-like features. These may differ in gauge content, matter representations, ambient dimension, or discrete structure, while remaining saturated.
-
-</div>
-
-This aligns with the existence of multiple string-theoretic formulations.
-
-## Duality webs revisited
-
-String-like frameworks often exhibit rich duality structures.
-
-<div class="remark">
-
-*Remark 45*. Dualities between string-like descriptions identify different realizations of the same saturated encoding. These identifications are forced by saturation and refinement stability, not by symmetry principles.
-
-</div>
-
-The resulting duality webs reflect internal consistency rather than physical multiplicity.
-
-## Extended objects beyond strings
-
-We emphasize that string-like does not exhaust possibilities.
-
-<div class="remark">
-
-*Remark 46*. While one-dimensional extended carriers are minimal, higher-dimensional extended carriers may appear in non-minimal saturated encodings. Such frameworks may exhibit brane-like structures or other extended objects. These are not required by saturation but may arise in particular realizations.
-
-</div>
-
-## Interpretive limits
-
-We stress again the scope of the result.
-
-<div class="remark">
-
-*Remark 47*. The appearance of string-like frameworks does not imply that physical reality is fundamentally stringy. It implies that when one attempts to resolve all structural obstructions within a single encoding, string-like descriptions are among the simplest admissible solutions.
-
-</div>
-
-## Relation to earlier corpus
-
-This perspective reconciles earlier appearances of string-like ideas.
-
-<div class="remark">
-
-*Remark 48*. In earlier stages of the MTT corpus, string-like structures appeared as candidate fundamental theories. The present analysis reinterprets them as saturated encoding frameworks—extreme but natural solutions to maximal admissibility constraints.
-
-</div>
-
-## Preview: alternatives and deformations
-
-The final section discusses the limits of saturation.
-
-<div class="remark">
-
-*Remark 49*. In the next section we discuss alternative saturated encodings, possible deformations, and why saturation itself is not obligatory within the MTT framework.
-
-</div>
-
-# Non-Uniqueness, Alternatives, and Limits of Saturation
-
-In this final section we clarify the scope and limits of saturated encodings. While saturation provides a powerful explanation for the emergence of string-like frameworks, it is neither required by the Modal Triplet Theory core nor unique in its realizations.
-
-## Saturation is not obligatory
-
-We first emphasize that saturation is an optional extremal condition.
-
-<div class="remark">
-
-*Remark 50*. The Modal Triplet Theory Program does not require saturated encodings. Encoding intersections, in which gravity, gauge structure, and quantization coexist as distinct but compatible responses, are sufficient to describe large classes of physical phenomena. Saturation arises only when one demands maximal unification within a single descriptive framework.
-
-</div>
-
-Thus, the existence of saturated encodings does not privilege them as fundamental.
-
-## Existence of alternative saturated encodings
-
-Saturation does not imply uniqueness.
-
-<div class="remark">
-
-*Remark 51*. Multiple inequivalent saturated encodings may exist, differing in ambient dimensionality, gauge content, discrete structure, or realization details. These alternatives correspond to distinct solutions of maximal admissibility rather than to deformations of a single framework.
-
-</div>
-
-This explains the multiplicity of string-like constructions without invoking a landscape of physically realized vacua.
-
-## Deformations away from saturation
-
-We now consider departures from saturation.
-
-<div class="lemma">
-
-**Lemma 52**. *Small deformations of a saturated encoding typically break saturation while preserving partial encoding coexistence.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Saturation requires simultaneous and inseparable resolution of circle, lens, and nil obstructions. Small deformations generically reintroduce separability of encoding responses, converting a saturated encoding into an encoding intersection or eliminating admissibility entirely. ◻
-
-</div>
-
-This explains why string-like frameworks appear rigid but not absolutely fixed.
-
-## Hierarchy of descriptive frameworks
-
-The results of this paper fit into a broader hierarchy.
-
-<div class="remark">
-
-*Remark 53*. Encoding frameworks may be ordered by degree of integration:
-
-- descriptive encodings (E1–E9);
-
-- encoding intersections (e.g. Standard Model–like frameworks);
-
-- saturated encodings (string-like frameworks).
-
-Each level introduces additional constraints and rigidity.
-
-</div>
-
-No level is privileged by the core theory.
-
-## Interpretive implications
-
-We stress the interpretive consequences.
-
-<div class="remark">
-
-*Remark 54*. Saturated encodings explain why string-like frameworks arise naturally in unification attempts, but they do not imply that nature must be described by a saturated encoding. Observational success depends on which obstruction types are active and at what scales, not on maximal unification.
-
-</div>
-
-This resolves long-standing confusion between mathematical consistency and physical necessity.
-
-## Relation to realization papers
-
-Saturation is a structural notion, not a constructive one.
-
-<div class="remark">
-
-*Remark 55*. The present analysis does not construct explicit saturated models. Such constructions belong to realization papers, which explore concrete geometric, bundle-based, or algebraic instantiations of saturated encodings. The structural results here constrain, but do not determine, those realizations.
-
-</div>
-
-## Summary
-
-We summarize the conclusions of this paper.
-
-<div class="remark">
-
-*Remark 56*. Saturated encodings represent extreme points in the space of admissible descriptions, where circle, lens, and nil obstructions are resolved simultaneously and inseparably. They exhibit extended consistency carriers, restricted dimensionality, anomaly saturation, and duality structures. These features explain the emergence and rigidity of string-like frameworks without postulating strings as fundamental objects.
-
-</div>
-
-## Outlook
-
-This paper completes the B-layer of the Modal Triplet Theory Program.
-
-<div class="remark">
-
-*Remark 57*. Together with prior papers on obstruction classification, gravity, gauge structure, quantization, and encoding intersections, the present work shows how a wide range of physical frameworks arise as structured responses to the limits of describability. Subsequent work focuses on explicit realizations (C-layer) and phenomenological interpretation (D-layer), including cosmology and the dark sector.
+J. Polchinski, *String Theory, Volume I: An Introduction to the Bosonic String*, Cambridge University Press, 1998.
 
 </div>
