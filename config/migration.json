@@ -73,6 +73,20 @@
       "title": "The Modal Triplet Theory Program B1: Loop-Transport Consistency and the Conditional Gravity Realization"
     },
     {
+      "abstract": "We formulate gauge redundancy as a precise lens-type realization rather than as the unique response to every nonfaithful description. For a declared group action G acting on A, the orbit map q:A to A/G identifies gauge-related representatives. At the set level, every invariant map factors uniquely through this quotient. That universal property organizes redundancy but does not select the group, action, bundle, connection, observables, or dynamics. We separate two global-section questions that were conflated in the first version. A principal bundle P to Y is globally defined by its transition cocycle even when it has no global section; a global section exists precisely when P is trivial. A field-space gauge fixing is instead a section of the orbit map on a specified regularity class and orbit stratum. Nonunique representatives alone do not obstruct such a section. A genuine global gauge-fixing obstruction must be proved in the chosen topological, smooth, or stacky category, as in Gribov-Singer phenomena. On a supplied principal bundle, a connection gives local gauge potentials and covariant curvature. Yang-Mills dynamics follows only after one supplies a base metric, structure group, invariant bilinear form, coupling, matter representation, boundary conditions, and local action. Other gauge-invariant actions exist, so lens-type redundancy does not prove uniqueness of Yang-Mills theory or select the Standard Model gauge group.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a",
+      "path": "papers/the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding",
+      "superseded_project": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding",
+      "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang-Mills Realization"
+    },
+    {
       "abstract": "We apply the corrected FP–I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. In the q79 realization the 1<2<3 flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
       "authors": [
         "Peter Nero"

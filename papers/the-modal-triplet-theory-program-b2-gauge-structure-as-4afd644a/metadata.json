@@ -1,12 +1,12 @@
 {
-  "abstract": "We show that gauge structure arises as a necessary encoding class once local describability and overlap consistency coexist with lens obstructions, i.e. with non-unique but consistent local representations. In the Modal Triplet Theory (MTT) framework, gauge is not postulated as a symmetry of underlying reality and is not introduced as a field-theoretic axiom. Rather, it is identified as bookkeeping of descriptive redundancy: the unique encoding that organizes and compensates for the non-uniqueness of admissible local sections while preserving overlap consistency and kinematic persistence. We define gauge transformations as admissible automorphisms of encoding fibers, and show that gauge freedom is unavoidable whenever lens obstructions are present and global canonical representatives do not exist. We further show that in smooth realization classes, redundancy bookkeeping is realized by bundle structure with a connection-like object implementing consistent comparison of redundant representatives. This connection is distinct in role from the kinematic consistency encoding identified with gravity: gravity resolves circle obstructions (loop inconsistency), while gauge resolves lens obstructions (non-unique lifts). The analysis clarifies the structural origin of gauge universality and prepares the ground for quantization as the encoding response to nil obstructions.",
+  "abstract": "We formulate gauge redundancy as a precise lens-type realization rather than as the unique response to every nonfaithful description. For a declared group action G acting on A, the orbit map q:A to A/G identifies gauge-related representatives. At the set level, every invariant map factors uniquely through this quotient. That universal property organizes redundancy but does not select the group, action, bundle, connection, observables, or dynamics. We separate two global-section questions that were conflated in the first version. A principal bundle P to Y is globally defined by its transition cocycle even when it has no global section; a global section exists precisely when P is trivial. A field-space gauge fixing is instead a section of the orbit map on a specified regularity class and orbit stratum. Nonunique representatives alone do not obstruct such a section. A genuine global gauge-fixing obstruction must be proved in the chosen topological, smooth, or stacky category, as in Gribov-Singer phenomena. On a supplied principal bundle, a connection gives local gauge potentials and covariant curvature. Yang-Mills dynamics follows only after one supplies a base metric, structure group, invariant bilinear form, coupling, matter representation, boundary conditions, and local action. Other gauge-invariant actions exist, so lens-type redundancy does not prove uniqueness of Yang-Mills theory or select the Standard Model gauge group.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18355036",
     "created": "2026-01-23T20:05:21.925757+00:00",
@@ -32,12 +32,15 @@
     "updated": "2026-01-23T20:05:22.385854+00:00",
     "version": "v1.0"
   },
-  "main_tex_sha256": "72d198f4e94ee37ec4e5339ee001451746a4deb9305994285f071b04df1dd7ba",
+  "main_tex_sha256": "9d862d31d90d2db5c4cac6baf5b7375e3f5865ba5492a86922c85a889d6118a7",
   "paper_id": "the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a",
-  "paper_md_sha256": "37a17f2a574df2e99ef231d3eae8b3976e26d8a75799eb1ccaf229a716c28b7b",
+  "paper_md_sha256": "f6a241bd50423a0da0642ef730c7b17cefcc46e1c7055a67d75d391ef0c23ed6",
   "release_state": "zenodo_released",
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "76401118da9a0529403b024a9ca7193ab175cf7e133d71214cad2957c21168af",
+    "selected_revision": true,
+    "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -47,9 +50,14 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 27222,
+      "bytes": 26300,
       "path": "main.tex",
-      "sha256": "72d198f4e94ee37ec4e5339ee001451746a4deb9305994285f071b04df1dd7ba"
+      "sha256": "9d862d31d90d2db5c4cac6baf5b7375e3f5865ba5492a86922c85a889d6118a7"
+    },
+    {
+      "bytes": 5509,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "76401118da9a0529403b024a9ca7193ab175cf7e133d71214cad2957c21168af"
     },
     {
       "bytes": 4186,
@@ -60,9 +68,9 @@
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding"
   },
-  "source_tree_sha256": "ed2397f9379c78d83c73a57d4315bcd10978211af245e0a0332788352b33189b",
-  "title": "The Modal Triplet Theory Program B2: Gauge Structure as Redundancy Encoding in the Modal Triplet Theory Program",
-  "version_relation": "matches_latest_release",
+  "source_tree_sha256": "1ea48c109aa10505d5d95c1ff8d5b81cd35db2d3a1893ebfa890408a66c7cba5",
+  "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang-Mills Realization",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18355036",

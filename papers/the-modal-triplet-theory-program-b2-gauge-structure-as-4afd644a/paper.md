@@ -1,447 +1,558 @@
 ---
 abstract: |
-  We show that gauge structure arises as a necessary encoding class once local describability and overlap consistency coexist with lens obstructions, i.e. with non-unique but consistent local representations. In the Modal Triplet Theory (MTT) framework, gauge is not postulated as a symmetry of underlying reality and is not introduced as a field-theoretic axiom. Rather, it is identified as bookkeeping of descriptive redundancy: the unique encoding that organizes and compensates for the non-uniqueness of admissible local sections while preserving overlap consistency and kinematic persistence.
+  We formulate gauge redundancy as a precise lens-type realization rather than as the unique response to every nonfaithful description. For a declared group action $`\mathcal G\curvearrowright\mathcal A`$, the orbit map $`q:\mathcal A\to\mathcal A/\mathcal G`$ identifies gauge-related representatives. At the set level, every invariant map factors uniquely through this quotient. That universal property organizes redundancy but does not select the group, action, bundle, connection, observables, or dynamics.
 
-  We define gauge transformations as admissible automorphisms of encoding fibers, and show that gauge freedom is unavoidable whenever lens obstructions are present and global canonical representatives do not exist. We further show that in smooth realization classes, redundancy bookkeeping is realized by bundle structure with a connection-like object implementing consistent comparison of redundant representatives. This connection is distinct in role from the kinematic consistency encoding identified with gravity: gravity resolves circle obstructions (loop inconsistency), while gauge resolves lens obstructions (non-unique lifts). The analysis clarifies the structural origin of gauge universality and prepares the ground for quantization as the encoding response to nil obstructions.
+  We separate two global-section questions that were conflated in the first version. A principal bundle $`P\to Y`$ is globally defined by its transition cocycle even when it has no global section; a global section exists precisely when $`P`$ is trivial. A field-space gauge fixing is instead a section of the orbit map on a specified regularity class and orbit stratum. Nonunique representatives alone do not obstruct such a section. A genuine global gauge-fixing obstruction must be proved in the chosen topological, smooth, or stacky category, as in Gribov–Singer phenomena.
+
+  On a supplied principal bundle, a connection gives local gauge potentials and covariant curvature. Yang–Mills dynamics follows only after one supplies a base metric, structure group, invariant bilinear form, coupling, matter representation, boundary conditions, and local action. Other gauge-invariant actions exist, so lens-type redundancy does not prove uniqueness of Yang–Mills theory or select the Standard Model gauge group. Program B2 therefore establishes a typed redundancy and gauge-fixing framework plus a conditional Yang–Mills realization.
 author:
 - Peter Nero
-current_version: v1.0
-date: January 2026
-generated_from_main_tex_sha256: 72d198f4e94ee37ec4e5339ee001451746a4deb9305994285f071b04df1dd7ba
+current_version: v2
+date: July 2026
+generated_from_main_tex_sha256: 9d862d31d90d2db5c4cac6baf5b7375e3f5865ba5492a86922c85a889d6118a7
 paper_id: the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a
 release_state: zenodo_released
 released_version: v1.0
 title: |
   The Modal Triplet Theory Program B2:  
-  Gauge Structure as Redundancy Encoding  
-  in the Modal Triplet Theory Program
+  Gauge Redundancy, Global Sections, and the Conditional Yang–Mills Realization
 zenodo_doi: 10.5281/zenodo.18355037
 zenodo_record_id: 18355037
 zenodo_url: "https://zenodo.org/records/18355037"
 ---
 
-# Introduction and Scope
+# Revision note for version 2
 
-The structural core of Modal Triplet Theory establishes that reduced descriptions exist only locally on admissible domains, that such descriptions must be related by controlled re-encoding on overlaps, and that no single global reduced encoding exists. Coherent kinematics then defines motion and causal structure as persistence across overlapping admissible encodings, without assuming spacetime or dynamical laws. A subsequent classification identifies three and only three obstruction types to global coherence: circle, lens, and nil.
+<div class="description">
 
-The purpose of the present paper is to analyze the structural consequences of *lens* obstructions. A lens obstruction is the failure of global coherence by *redundancy*: multiple admissible local representatives exist that are mutually consistent on overlaps, but no canonical global choice exists. In such regimes, kinematic persistence and overlap consistency remain intact, but the reduced description is not unique. This non-uniqueness is neither contradiction (circle) nor termination of description (nil). It is an independent obstruction type and therefore demands its own encoding response.
+Version 1 of Program B2.
 
-We show that lens obstructions force the introduction of an additional encoding class whose sole role is to organize descriptive redundancy. This encoding class is what is conventionally identified as gauge structure. In MTT terms, gauge is not a fundamental physical symmetry; it is the unique bookkeeping structure that compensates for the non-uniqueness of admissible local sections while preserving consistent reduced description.
+The first version treated nonunique representatives as a failure of global description, asserted that every lens obstruction forces a unique gauge encoding, conflated a section of a spacetime principal bundle with a section of the field-space orbit map, and described connections and Yang–Mills structure as if they followed from redundancy alone.
 
-Throughout this paper we adhere to three principles:
+Version 2 fixes the acting group and category, proves the quotient universal property, distinguishes the two section problems, and makes global gauge fixing a typed right-inverse question. Principal bundles and connections are canonical gauge realizations only after their geometric data are supplied. Yang–Mills equations are derived only from a declared local action.
 
-- Gauge is an *encoding* of redundancy, not a postulated interaction or field.
+Gauge transformations can organize redundant representatives; invariant quantities factor through gauge orbits; local potentials are related by bundle transition functions; and a connection compares local representatives without selecting a preferred gauge.
 
-- Gauge transformations are *automorphisms of representation*, not transformations of underlying reality.
-
-- Geometric objects commonly associated with gauge theory (bundles, connections) appear only as *realizations* of the redundancy encoding, not as axioms of the structural theory.
-
-We emphasize the separation between gauge and gravity in the MTT program. Gravity, treated elsewhere, arises as kinematic consistency bookkeeping required to resolve circle obstructions (loop-dependent inconsistency). Gauge arises here as redundancy bookkeeping required to resolve lens obstructions (non-unique but consistent representation). The two encodings are structurally distinct, though they may couple in particular realizations.
-
-<div class="remark">
-
-*Remark 1* (Position in the series). This paper depends only on the structural core, coherent kinematics, and the circle–lens–nil obstruction classification. It follows the gravity-as-encoding paper and precedes the quantization paper, in which nil obstructions are shown to force discrete constraint encodings. Realization-specific constructions of gauge bundles and connections are deferred to the geometric realization papers.
+No theorem here selects the gauge group, principal bundle, global gauge fixing, Standard Model representation content, coupling constants, anomaly cancellation, or a unique Yang–Mills action from the lens profile.
 
 </div>
 
-# Lens Obstructions as Non-Unique Local Lifts
+# Scope and Imported Data
 
-In this section we formalize lens obstructions in a manner suitable for defining gauge structure as an encoding class. The key idea is that lens obstructions correspond to non-uniqueness of admissible local lifts of coherent structure, without contradiction or failure of representability.
+Program A0 supplies typed reductions, admissible domains, and exact factorization criteria . Program B0 defines a lens profile as nonfaithfulness, redundancy, or multiple effective representatives under a declared reduction; it does not identify every lens profile with a lens space or gauge theory . Program B1 proves that smooth transport becomes a connection only on a supplied bundle and warns that internal gauge transport and frame transport are different physical types .
 
-## Local lifts and redundancy
+The present paper asks:
 
-Let $`\mathcal E_\alpha = (A_\alpha, Z_\alpha, E_\alpha, \ldots)`$ be an admissible encoding on domain $`A_\alpha`$.
+> When does descriptive redundancy have the mathematical form of gauge redundancy, when does a global gauge choice fail, and what additional data are required to obtain Yang–Mills dynamics?
 
-<div class="definition">
+The answer has four levels:
 
-**Definition 2** (Local lift). A *local lift* of a coherent structure on $`A_\alpha`$ is a choice of representative in the encoding fiber $`Z_\alpha`$ consistent with admissibility and overlap constraints.
+1.  a group action and its quotient;
 
-</div>
+2.  a principal bundle and its local sections;
 
-Local describability requires the existence of at least one admissible local lift on each admissible domain. Lens obstructions arise when such lifts are not unique.
+3.  a connection and field-space gauge fixing; and
 
-## Definition of lens obstruction (refined)
+4.  a local gauge-invariant action.
 
-We now restate lens obstructions in terms appropriate for gauge structure.
+Each level imports data not contained in the coarse predicate “more than one representative survives.”
 
-<div class="definition">
+# Typed Redundancy and the Orbit Quotient
 
-**Definition 3** (Lens obstruction (structural)). A *lens obstruction* exists on an admissible domain if the encoding fibers admit a nontrivial automorphism (isotropy) group acting on local lifts such that:
+## A declared action
 
-1.  multiple admissible local lifts of the same coherent structure exist;
+<div id="def:gauge-datum" class="definition">
 
-2.  these lifts are related by admissible fiber automorphisms;
+**Definition 1** (Gauge-redundancy datum). A *gauge-redundancy datum* consists of:
 
-3.  the automorphism structure persists under admissible refinement and cannot be absorbed into overlap re-encoding.
+1.  a configuration object $`\mathcal A`$ in a declared category;
 
-</div>
+2.  a group or group object $`\mathcal G`$;
 
-Thus, lens obstructions represent redundancy of representation without inconsistency.
+3.  an action $`\mathcal G\curvearrowright\mathcal A`$; and
 
-<div class="remark">
+4.  a declaration of which subgroup acts redundantly, including its boundary and asymptotic conditions.
 
-*Remark 4* (Lens versus gauge). A lens obstruction is a *structural condition*: the existence of non-unique but admissible local lifts related by persistent isotropy of encoding fibers. Gauge structure is not identified with the lens obstruction itself, but with the *encoding response* required to organize and compensate for that redundancy. Thus, lens denotes the obstruction, while gauge denotes the encoding that resolves it. This distinction is structural and holds independently of any particular physical realization.
-
-</div>
-
-## Lens versus circle and nil
-
-It is important to distinguish lens obstructions sharply from the other two obstruction types.
-
-- Lens obstructions do not involve path dependence; transporting different lifts along admissible continuation chains yields equivalent results.
-
-- Lens obstructions do not involve termination; admissible descriptions exist everywhere in the domain.
-
-<div class="remark">
-
-*Remark 5*. If non-uniqueness of lifts could be eliminated by refining the admissible cover or by admissible re-encoding, then the obstruction would not be a genuine lens. Lens obstructions are precisely those redundancies that persist under all such operations.
-
-</div>
-
-## Fiberwise characterization
-
-Lens obstructions are fiberwise in nature.
-
-<div class="lemma">
-
-**Lemma 6**. *Lens obstructions correspond to nontrivial automorphism structure of encoding fibers.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Multiple admissible local lifts correspond to distinct points in the same encoding fiber that are related by admissible re-encoding and produce identical coherent content. The set of such transformations forms a nontrivial automorphism group acting on the fiber. ◻
-
-</div>
-
-This automorphism structure is the structural origin of gauge freedom.
-
-## Absence of global lift
-
-Lens obstructions prevent the existence of a global lift.
-
-<div class="theorem">
-
-**Theorem 7** (Non-existence of a global lift). *If a lens obstruction exists on an admissible domain, then no globally defined admissible lift exists that is compatible with all local encodings.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* A global lift would select a single representative in each encoding fiber. However, the existence of a persistent nontrivial automorphism group implies that any such choice can be transformed into an inequivalent admissible lift. Therefore no choice is invariant under admissible re-encoding, and no global lift can exist. ◻
-
-</div>
-
-## Interpretation
-
-We emphasize that lens obstructions do not indicate ambiguity or incompleteness of the underlying system.
-
-<div class="remark">
-
-*Remark 8*. Lens obstructions encode descriptive redundancy, not physical indeterminacy. They indicate that multiple representations are equally valid descriptions of the same coherent structure.
-
-</div>
-
-This redundancy must be organized to preserve overlap consistency and kinematic persistence. In the next section we show that this organization uniquely defines gauge transformations as admissible automorphisms of encoding fibers.
-
-# Gauge Transformations as Fiber Automorphisms
-
-We now formalize gauge transformations in the Modal Triplet Theory framework. Gauge transformations are not postulated as symmetries of an underlying physical space; they arise as the natural automorphisms associated with lens obstructions, i.e. with non-unique but admissible local lifts of coherent structure.
-
-## Automorphisms of encoding fibers
-
-Let $`\mathcal E_\alpha = (A_\alpha, Z_\alpha, E_\alpha, \ldots)`$ be an admissible encoding, and let $`z \in Z_\alpha`$ be a local lift of a coherent structure.
-
-<div class="definition">
-
-**Definition 9** (Fiber automorphism). A *fiber automorphism* at $`\mathcal E_\alpha`$ is an admissible map
+At the set level, the orbit of $`A\in\mathcal A`$ is
 ``` math
-g_\alpha : Z_\alpha \to Z_\alpha
+[A]=\{u\cdot A:u\in\mathcal G\},
 ```
-such that:
-
-1.  $`g_\alpha`$ preserves coherent content, i.e. $`E_\alpha^{-1}(z)`$ and $`E_\alpha^{-1}(g_\alpha(z))`$ represent the same coherent structure;
-
-2.  $`g_\alpha`$ is compatible with admissible re-encoding on overlaps;
-
-3.  $`g_\alpha`$ is invertible up to admissible equivalence.
-
-</div>
-
-The set of all such automorphisms forms a group under composition.
-
-## Gauge transformations
-
-We now identify gauge transformations with fiber automorphisms.
-
-<div class="definition">
-
-**Definition 10** (Gauge transformation). A *gauge transformation* is a fiber automorphism arising from a lens obstruction, i.e. an admissible transformation that maps one local lift of a coherent structure to another equally admissible lift without altering any observable or kinematic content.
-
-</div>
-
-Gauge transformations therefore act on representations, not on the underlying coherent structures themselves.
-
-## Gauge encoding versus physical realizations
-
-Gauge structure, as defined in this paper, is an encoding class that resolves lens obstructions by organizing redundancy of representation. It does not correspond to any particular physical interaction.
-
-<div class="remark">
-
-*Remark 11*. Electromagnetism, weak interactions, and strong interactions are *distinct realizations* of gauge encoding, characterized by different gauge groups, representations, and dynamics. The existence of gauge encoding does not imply the existence of any particular force; it implies only that some redundancy bookkeeping must exist wherever lens obstructions are present.
-
-</div>
-
-<div class="remark">
-
-*Remark 12*. Different coherent structures may admit different local isotropy groups, and there is no requirement that a single gauge group act universally on all structures. Universality of gauge encoding refers to the inevitability of redundancy bookkeeping when lens obstructions exist, not to universality of a specific gauge interaction.
-
-</div>
-
-## Local nature of gauge freedom
-
-Gauge transformations are defined locally on admissible domains.
-
-<div class="remark">
-
-*Remark 13*. Gauge freedom is local because lens obstructions are local: redundancy of lifts is detected within encoding fibers on admissible domains. Global gauge transformations exist only when compatible local automorphisms can be chosen on all domains, which is generically obstructed.
-
-</div>
-
-This locality is structural, not imposed.
-
-## Gauge equivalence
-
-Gauge transformations induce an equivalence relation on local lifts.
-
-<div class="definition">
-
-**Definition 14** (Gauge equivalence). Two local lifts $`z_1, z_2 \in Z_\alpha`$ are *gauge equivalent* if there exists a gauge transformation $`g_\alpha`$ such that $`z_2 = g_\alpha(z_1)`$.
-
-</div>
-
-Physical (coherent) content is invariant under gauge equivalence.
-
-## Gauge invariants
-
-Because gauge transformations encode redundancy, only gauge-invariant quantities are meaningful descriptors of coherent structure.
-
-<div class="definition">
-
-**Definition 15** (Gauge-invariant quantity). A *gauge-invariant quantity* is a function or diagnostic on encoding fibers that is constant on gauge-equivalence classes.
-
-</div>
-
-<div class="remark">
-
-*Remark 16*. Gauge invariants arise naturally as those features of the encoding that descend to the quotient by fiber automorphisms. This quotient is the maximal reduced description compatible with lens obstructions.
-
-</div>
-
-## Distinction from gravity
-
-We emphasize the distinction between gauge and gravity encodings.
-
-<div class="remark">
-
-*Remark 17*. Gauge transformations resolve redundancy of representation (lens obstructions). They do not resolve path-dependent inconsistency of continuation (circle obstructions). Conversely, the kinematic consistency encoding identified as gravity resolves circle obstructions but does not eliminate redundancy of local lifts. The two encodings address distinct structural problems and must not be conflated.
-
-</div>
-
-## Uniqueness of gauge encoding
-
-We now show that gauge structure is the unique encoding response to lens obstructions.
-
-<div class="theorem">
-
-**Theorem 18** (Universality of redundancy encoding). *Any admissible resolution of lens obstructions must factor through the quotient groupoid obtained by modding encoding fibers by their isotropy (automorphism) action. Consequently, any such resolution is equivalent, up to admissible re-encoding, to a redundancy encoding implemented by fiber automorphisms.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Any admissible redundancy-resolution functor must identify all gauge-equivalent lifts while preserving overlap consistency. This is precisely the universal property of the quotient groupoid defined by fiber isotropy. Therefore any such resolution factors uniquely through this quotient and is equivalent to the gauge (redundancy) encoding. ◻
-
-</div>
-
-<div class="remark">
-
-*Remark 19* (Universality of gauge revisited). Universality of gauge structure in this context means that whenever lens obstructions exist, some redundancy encoding must be present locally. It does not mean that a single gauge group acts on all coherent structures. Different lens obstructions may induce different local isotropy groups in different encodings.
-
-</div>
-
-<div class="theorem">
-
-**Theorem 20** (Uniqueness of gauge encoding). *Any admissible encoding that resolves lens obstructions while preserving overlap consistency and kinematic persistence is equivalent, up to admissible re-encoding, to a redundancy encoding implemented by fiber automorphisms.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Let $`\mathcal G`$ be an encoding resolving lens obstructions. By definition, it must identify all admissible local lifts as equivalent representations of the same coherent structure. This identification defines an equivalence relation on encoding fibers generated by admissible automorphisms. Any alternative encoding that preserves coherent content and overlap consistency must factor through this equivalence. Therefore $`\mathcal G`$ is equivalent, up to admissible re-encoding, to a redundancy encoding realized by fiber automorphisms. ◻
-
-</div>
-
-## Preview: gauge fixing and connections
-
-While gauge transformations encode redundancy, one may choose specific representatives for calculational or practical purposes.
-
-<div class="remark">
-
-*Remark 21*. Gauge fixing corresponds to a non-canonical choice of local section within a gauge-equivalence class. Such choices do not alter the underlying encoding structure and may fail globally due to lens obstructions.
-
-</div>
-
-In the next section we analyze gauge fixing and show how, in smooth realization classes, gauge redundancy is organized by bundle structure and connection-like objects distinct from gravitational connections.
-
-# Gauge Fixing and Redundancy Bookkeeping
-
-In this section we analyze gauge fixing within the redundancy encoding framework and show how bookkeeping of redundancy gives rise to connection-like structures in smooth realization classes. We emphasize throughout that these structures are not gravitational: they resolve redundancy (lens obstructions), not kinematic path dependence (circle obstructions).
-
-## Gauge fixing as section selection
-
-Gauge fixing corresponds to selecting a representative from each gauge-equivalence class.
-
-<div class="definition">
-
-**Definition 22** (Gauge fixing). A *gauge fixing* on an admissible domain $`A_\alpha`$ is a choice of local section
+and the orbit map is
 ``` math
-s_\alpha : A_\alpha \to Z_\alpha
+q:\mathcal A\longrightarrow\mathcal A/\mathcal G,\qquad q(A)=[A].
 ```
-such that $`s_\alpha(x)`$ selects a single representative from each gauge-equivalence class in the encoding fiber over $`x`$.
 
 </div>
 
-Gauge fixing is therefore a choice of description, not a structural operation.
+The category matters. A set-theoretic orbit space, a topological quotient, a smooth quotient, and the quotient stack $`[\mathcal A/\mathcal G]`$ retain different information. In particular, the stack remembers stabilizer groups that a coarse orbit space can discard.
 
-## Non-canonicity of gauge fixing
+<div id="def:lens" class="definition">
 
-We now show that gauge fixing is generically non-canonical.
+**Definition 2** (Gauge lens-type realization). The datum of Definition <a href="#def:gauge-datum" data-reference-type="ref" data-reference="def:gauge-datum">1</a> is a *gauge lens-type realization* when the orbit map is noninjective on the declared domain:
+``` math
+A\ne A'\quad\text{and}\quad q(A)=q(A')
+```
+for at least one pair. It is a *gauge-fixing obstruction* only when the orbit map has no section of the required regularity on the required domain or stratum.
 
-<div class="theorem">
+</div>
 
-**Theorem 23** (Non-existence of global gauge fixing). *If a lens obstruction exists, then no globally admissible gauge fixing exists.*
+This separates redundancy from obstruction. Redundancy says that an orbit contains several representatives. Obstruction says that no globally compatible representative can be selected in a specified category.
+
+## The quotient universal property
+
+<div id="thm:quotient" class="theorem">
+
+**Theorem 3** (Set-level invariant factorization). *Let $`Z`$ be a set. A map $`F:\mathcal A\to Z`$ is gauge invariant,
+``` math
+F(u\cdot A)=F(A)
+ \qquad
+ (u\in\mathcal G,\ A\in\mathcal A),
+```
+if and only if there is a unique map $`\overline F:\mathcal A/\mathcal G\to Z`$ such that
+``` math
+F=\overline F\circ q.
+```*
 
 </div>
 
 <div class="proof">
 
-*Proof.* A global gauge fixing is a global section selecting one representative per gauge-equivalence class. Such a section would be invariant under all fiber automorphisms. This contradicts the existence of a nontrivial isotropy group acting on the fibers. Hence no global gauge fixing exists. ◻
+*Proof.* If $`F`$ is invariant, define $`\overline F([A])=F(A)`$. Invariance makes this well defined. Since $`q`$ is surjective, the factorization determines $`\overline F`$ uniquely. The converse is immediate because $`q(u\cdot A)=q(A)`$. ◻
 
 </div>
 
-<div class="remark">
+<div class="corollary">
 
-*Remark 24*. Local gauge fixing may exist on individual admissible domains, but cannot be extended consistently across the entire atlas.
+**Corollary 4** (What is universal). *The orbit quotient is universal for invariant set-valued diagnostics. This does not make one physical gauge theory universal or unique.*
 
 </div>
 
-## Gauge transitions on overlaps
+In a topological or smooth category, the same conclusion requires the corresponding categorical quotient and continuity or smoothness of $`\overline F`$. Such a quotient may be singular or fail to be a manifold.
 
-On overlaps of admissible domains, different gauge fixings are related by gauge transformations.
+## Nonuniqueness is not failure
+
+<div id="prop:redundancy" class="proposition">
+
+**Proposition 5** (Redundancy alone is not a global obstruction). *Noninjectivity of $`q`$ neither implies that the underlying principal bundle is undefined nor proves that a global field-space gauge fixing fails.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The trivial bundle $`Y\times G`$ is globally defined and has a global section, yet its connection space has many representatives related by nonconstant gauge transformations. Conversely, failure of a global section of a nontrivial principal bundle concerns $`P\to Y`$, while field-space gauge fixing concerns $`q:\mathcal A\to\mathcal A/\mathcal G`$. These are different maps. ◻
+
+</div>
+
+## Invariant versus complete observables
 
 <div class="definition">
 
-**Definition 25** (Gauge transition). Let $`s_\alpha`$ and $`s_\beta`$ be gauge fixings on overlapping admissible domains $`A_\alpha`$ and $`A_\beta`$. The *gauge transition* on $`A_{\alpha\beta}`$ is the gauge transformation $`g_{\alpha\beta}`$ such that
+**Definition 6** (Separating invariant family). A family of invariant functions $`\{F_i:\mathcal A\to Z_i\}_{i\in I}`$ is *separating* on a domain if
 ``` math
-s_\beta(x) = g_{\alpha\beta}(x)\, s_\alpha(x)
+F_i(A)=F_i(A')\text{ for all }i
+ \quad\Longrightarrow\quad
+ q(A)=q(A').
 ```
-for all $`x \in A_{\alpha\beta}`$.
 
 </div>
 
-Gauge transitions encode how different local gauge choices are related.
+Gauge invariance alone does not imply separation of orbits. A selected observable family may be incomplete. Consequently, failure of chosen diagnostics to distinguish two configurations is not by itself proof that the configurations are gauge equivalent.
 
-## Redundancy bookkeeping
+# Principal Bundles and the First Section Problem
 
-Because gauge fixing is non-canonical, redundancy must be tracked explicitly.
+## Global bundles from local data
 
-<div class="remark">
+Let $`Y`$ be a paracompact smooth manifold, $`G`$ a Lie group, and $`\{U_\alpha\}`$ an open cover. Smooth transition functions
+``` math
+g_{\beta\alpha}:U_\alpha\cap U_\beta\longrightarrow G
+```
+with
+``` math
+g_{\alpha\alpha}=e,\qquad
+ g_{\alpha\beta}=g_{\beta\alpha}^{-1},\qquad
+ g_{\gamma\beta}g_{\beta\alpha}=g_{\gamma\alpha}
+```
+on triple overlaps glue the local products $`U_\alpha\times G`$ into a globally defined principal $`G`$-bundle $`P\to Y`$ .
 
-*Remark 26*. Redundancy bookkeeping assigns data to overlaps that records how local gauge choices differ. This bookkeeping ensures consistency of reduced descriptions without privileging any particular gauge.
+<div id="prop:no-section-required" class="proposition">
 
-</div>
-
-This bookkeeping role is the defining function of gauge structure in MTT.
-
-## Smooth realizations and gauge connections
-
-We now show how redundancy bookkeeping is realized geometrically in smooth settings.
-
-<div class="theorem">
-
-**Theorem 27** (Gauge connection realization). *In smooth realization classes, redundancy bookkeeping is realized by a connection-like object on a principal bundle whose structure group is the gauge automorphism group of encoding fibers.*
+**Proposition 7** (No preferred section is required). *The bundle $`P`$ is globally defined by the transition cocycle. Its definition does not require a preferred global section.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Gauge transitions $`g_{\alpha\beta}(x)`$ define smooth maps on overlaps. Consistency of these transitions under refinement and composition requires infinitesimal control of how gauge choices vary. The unique structure implementing such control is a connection on the associated principal bundle. This connection records how to compare gauge choices infinitesimally without selecting a preferred global representative. ◻
+*Proof.* The quotient of the disjoint union $`\coprod_\alpha U_\alpha\times G`$ by
+``` math
+(x,h)_\alpha\sim(x,g_{\beta\alpha}(x)h)_\beta
+```
+is well defined and transitive precisely because of the cocycle equation. Local products supply the bundle charts. ◻
 
 </div>
 
-<div class="remark">
+## When a spacetime section exists
 
-*Remark 28* (Electromagnetism as a mixed realization). Electromagnetism provides an important example in which lens and circle obstructions coexist within a single realization. The U(1) phase redundancy of electromagnetism realizes a lens obstruction resolved by gauge encoding, while the associated holonomy around closed loops realizes a circle obstruction. The present separation of gauge and gravity reflects a distinction of structural roles, not a claim that physical theories realize only one obstruction type at a time.
+<div id="thm:bundle-section" class="theorem">
 
-</div>
-
-## Distinction from gravitational connection
-
-We stress the distinction between gauge connections and gravitational connections.
-
-<div class="remark">
-
-*Remark 29*. Gauge connections arise to track redundancy of representation (lens obstructions). Gravitational connections arise to resolve kinematic path dependence (circle obstructions). Although both are realized geometrically as connections, they encode distinct structural roles and should not be conflated.
+**Theorem 8** (Principal-bundle section criterion). *A principal $`G`$-bundle $`P\to Y`$ admits a continuous global section if and only if it is continuously trivial. In the smooth category, it admits a smooth global section if and only if it is smoothly trivial.*
 
 </div>
 
-This distinction is structural and persists independently of particular realization choices.
+<div class="proof">
 
-## Gauge invariance revisited
-
-Gauge invariance is now seen as invariance under redundancy bookkeeping.
-
-<div class="remark">
-
-*Remark 30*. Gauge invariance expresses the fact that physical (coherent) content is invariant under changes of representative within a gauge-equivalence class. It is not a symmetry of the underlying system, but a statement about redundancy of description.
+*Proof.* If $`s:Y\to P`$ is a section, the map
+``` math
+Y\times G\longrightarrow P,\qquad (x,h)\longmapsto s(x)h
+```
+is a principal-bundle isomorphism, with the corresponding regularity. The trivial bundle has the section $`x\mapsto(x,e)`$. ◻
 
 </div>
 
-## Preview: coupling to other encodings
+Thus lack of a global section is a nontriviality statement about $`P\to Y`$. It is not a claim that the bundle lacks global meaning.
 
-Gauge structure may interact with other encoding classes in particular realizations.
+## Three section notions
 
-<div class="remark">
+The word “section” is used for three different maps:
 
-*Remark 31*. In unified or saturated encodings, gauge redundancy bookkeeping may couple to kinematic consistency bookkeeping (gravity) or to discrete constraint encodings (quantization). Such couplings are realization-dependent and do not alter the structural separation of encoding roles established here.
+Bundle section.  
+$`s:Y\to P`$, with $`\pi_P\circ s=\operatorname{id}_Y`$.
+
+Associated-field section.  
+$`\phi:Y\to E=P\times_\rho V`$, describing a field in an associated bundle.
+
+Orbit-map gauge fixing.  
+$`\sigma:\mathcal Q_0\to\mathcal A_0`$, with $`q\circ\sigma=\operatorname{id}_{\mathcal Q_0}`$ on a declared field-space domain or stratum.
+
+Existence of one does not imply existence of the others.
+
+# Gauge Transformations and Connections
+
+## Vertical automorphisms
+
+For a fixed principal bundle $`P\to Y`$, its gauge group is
+``` math
+\mathcal G(P)=\operatorname{Aut}_Y(P),
+```
+the $`G`$-equivariant bundle automorphisms covering $`\operatorname{id}_Y`$. Equivalently, under standard identifications,
+``` math
+\mathcal G(P)\cong\Gamma(\operatorname{Ad}P),
+\qquad
+\operatorname{Ad}P=P\times_{\operatorname{Ad}}G.
+```
+
+Let $`\mathcal A(P)`$ denote the affine space of principal connections on $`P`$. Locally, a connection is represented by a Lie-algebra-valued one-form $`A_\alpha`$. A local gauge transformation $`u_\alpha:U_\alpha\to G`$ acts by
+``` math
+A_\alpha\longmapsto A_\alpha^{u_\alpha}
+ =u_\alpha^{-1}A_\alpha u_\alpha+u_\alpha^{-1}du_\alpha.
+```
+The curvature
+``` math
+F_{A_\alpha}=dA_\alpha+A_\alpha\wedge A_\alpha
+```
+transforms covariantly:
+``` math
+F_{A_\alpha^{u_\alpha}}
+ =u_\alpha^{-1}F_{A_\alpha}u_\alpha.
+```
+
+<div id="prop:global-connection" class="proposition">
+
+**Proposition 9** (Local potentials, global connection). *Local potentials satisfying the connection transition law on overlaps define one global principal connection. Distinct local potentials related by gauge transformations can therefore represent the same global connection data in different local sections.*
 
 </div>
 
-<div class="remark">
+<div class="proof">
 
-*Remark 32* (Circle realizations and gravity). Circle obstructions denote loop-dependent failure of global coherence. Different encodings may realize this obstruction in different regimes. When circle affects internal or phase transport, electromagnetism provides a minimal realization. When circle affects kinematic persistence itself—worldlines, causal cones, and horizons—a gravity-like kinematic consistency encoding is forced. These are distinct realizations of the same structural invariant.
+*Proof.* The overlap law is exactly the compatibility condition for local connection one-forms to arise as pullbacks of one principal connection by local sections. Changing a local section produces the displayed gauge-transformation law. ◻
 
 </div>
 
-# Summary and Outlook
+## Redundant and physical transformations
 
-In this paper we have identified gauge structure as a necessary encoding class arising from lens obstructions in the Modal Triplet Theory framework. Lens obstructions correspond to non-unique but admissible local representations of coherent structure, with full overlap consistency and kinematic persistence. Such redundancy cannot be eliminated by refinement or admissible re-encoding and therefore requires explicit bookkeeping.
+The choice of $`\mathcal G`$ must include boundary conditions. Transformations that approach the identity at a boundary may be declared redundant, while large, asymptotic, or boundary-supported transformations can act on charges or edge degrees of freedom. Quotienting by the wrong group can erase physical data. Program B2 therefore does not identify every vertical-looking transformation with pure redundancy.
 
-We showed that this bookkeeping is uniquely implemented by a redundancy encoding whose transformations act as automorphisms of encoding fibers. Gauge transformations are thus not symmetries of an underlying physical arena, but automorphisms of representation that relate equally valid local lifts. Gauge equivalence expresses invariance of coherent content under changes of representative, and gauge fixing corresponds to a non-canonical choice of local section that cannot be extended globally in the presence of lens obstructions.
+## Gauge and circle profiles may coexist
 
-In smooth realization classes, redundancy bookkeeping is realized geometrically by principal bundles equipped with connection-like objects that track transitions between local gauge choices. These gauge connections are structurally distinct from the gravitational connections introduced to resolve circle obstructions. Although both appear as connections in geometric realizations, they encode different kinds of bookkeeping: gauge resolves redundancy of representation, while gravity resolves path-dependent kinematic inconsistency.
+A gauge connection has holonomy around loops. Its orbit redundancy is a lens-type feature, while its return transport is a circle-type feature in the terminology of Program B0. The profiles can coexist in one realization. This is another reason not to identify one obstruction label with one unique physical sector.
 
-The results of this paper complete the identification of gauge structure within the Modal Triplet Theory Program. Together with the gravity-as-encoding paper, they establish that two of the three fundamental obstruction types—circle and lens—require distinct and unavoidable encoding responses. The remaining obstruction type, nil, corresponds to termination of describability and motivates a discrete constraint encoding, treated in the subsequent paper on quantization.
+# Field-Space Gauge Fixing: The Second Section Problem
 
-More broadly, this analysis clarifies why gauge structure is universal yet unobservable directly, why gauge fixing is inherently non-canonical, and why gauge symmetry appears as a freedom of description rather than as a property of underlying reality. These features are not postulated; they are forced by the structure of local describability and overlap consistency.
+## The orbit map
 
-Subsequent papers in the series develop the encoding response to nil obstructions (quantization), analyze the intersection and saturation of multiple encoding classes (including the Standard Model and string-theoretic frameworks), and construct explicit realizations in geometric and bundle-based models. No additional structural assumptions are introduced downstream.
+Fix a Sobolev or smooth completion $`\mathcal A_k(P)`$, a compatible gauge group $`\mathcal G_{k+1}(P)`$, boundary conditions, and a domain or orbit stratum $`\mathcal A_0\subseteq\mathcal A_k(P)`$. Let
+``` math
+\mathcal Q_0=q(\mathcal A_0).
+```
 
-In this way, gauge structure emerges as an inevitable component of any coherent descriptive framework once redundancy of representation is present, completing the lens branch of the circle–lens–nil triad.
+<div id="def:gauge-fixing" class="definition">
 
-<div class="remark">
+**Definition 10** (Global field-space gauge fixing). A *global gauge fixing* in a declared category is a section
+``` math
+\sigma:\mathcal Q_0\longrightarrow\mathcal A_0,
+\qquad
+ q\circ\sigma=\operatorname{id}_{\mathcal Q_0},
+```
+with the required continuity, smoothness, locality, covariance, or other regularity.
 
-*Remark 33* (Universality clarified). Universality of gauge structure in the Modal Triplet Theory framework means that whenever lens obstructions exist, some redundancy encoding must exist locally. It does not mean that a single gauge group, interaction, or coupling acts on all coherent structures. Different realizations may exhibit different gauge groups, or none at all, depending on the presence and nature of lens obstructions.
+</div>
+
+<div id="thm:gauge-fixing" class="theorem">
+
+**Theorem 11** (Typed gauge-fixing obstruction criterion). *The gauge lens-type realization has a global gauge-fixing obstruction in the declared category exactly when the orbit map $`q:\mathcal A_0\to\mathcal Q_0`$ has no section with the declared regularity.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* This is the right-inverse definition of a section. Its value is the typing: the domain, orbit stratum, quotient, boundary conditions, and regularity cannot be omitted. ◻
+
+</div>
+
+Noninjectivity of $`q`$ is necessary for nontrivial redundancy but does not decide Theorem <a href="#thm:gauge-fixing" data-reference-type="ref" data-reference="thm:gauge-fixing">11</a>. Some actions admit global slices; others do not.
+
+## Stabilizers and singular strata
+
+The stabilizer of $`A`$ is
+``` math
+\mathcal G_A=\{u\in\mathcal G:u\cdot A=A\}.
+```
+If stabilizers vary, the coarse quotient is generally stratified rather than a smooth manifold. On a free proper finite-dimensional action, the orbit map is a principal $`\mathcal G`$-bundle and a global section exists exactly when that bundle is trivial. Infinite-dimensional gauge theory requires analytic completions and slice theorems before this analogy may be used.
+
+<div id="prop:local-global" class="proposition">
+
+**Proposition 12** (Local slices do not imply a global slice). *Suppose a slice theorem supplies local sections of $`q`$ near every orbit in $`\mathcal Q_0`$. It does not follow that these local sections glue to one global section.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* On overlaps, two local slices differ by transition functions valued in the gauge group or residual stabilizer. A global slice requires these transitions to be a trivial cocycle in the chosen category. Local existence alone does not prove that. ◻
+
+</div>
+
+## Gribov–Singer phenomena
+
+For important nonabelian gauge theories on compact bases, no single global continuous gauge choice covers the full configuration space under the usual hypotheses. This is the content of Gribov–Singer-type results  . They are examples of Theorem <a href="#thm:gauge-fixing" data-reference-type="ref" data-reference="thm:gauge-fixing">11</a>, not a theorem that every redundancy action has the same obstruction.
+
+Practical gauge conditions such as Coulomb, Lorenz, or axial gauge must record:
+
+1.  the function space and regularity;
+
+2.  the allowed gauge group and boundary behavior;
+
+3.  the orbit stratum and stabilizers;
+
+4.  residual gauge transformations; and
+
+5.  whether the condition is local, global, unique, or only perturbative.
+
+# Conditional Yang–Mills Realization
+
+## Required data
+
+<div id="ass:ym" class="assumption">
+
+**Assumption 13** (Yang–Mills realization). Supply:
+
+1.  an oriented pseudo-Riemannian base $`(Y,g)`$;
+
+2.  a principal $`G`$-bundle $`P\to Y`$;
+
+3.  a connection $`A`$ with curvature $`F_A`$;
+
+4.  an $`\operatorname{Ad}`$-invariant nondegenerate bilinear form $`B`$ on $`\mathfrak g=\operatorname{Lie}(G)`$;
+
+5.  a coupling normalization $`g_{\rm YM}`$;
+
+6.  boundary conditions and, if present, matter representations and a matter action.
+
+</div>
+
+The pure Yang–Mills action is
+``` math
+S_{\rm YM}[A]
+ =-\frac{1}{2g_{\rm YM}^2}
+ \int_Y B(F_A\wedge *F_A).
+```
+
+<div id="thm:ym" class="theorem">
+
+**Theorem 14** (Gauge invariance and Yang–Mills equation). *Under Assumption <a href="#ass:ym" data-reference-type="ref" data-reference="ass:ym">13</a>, the action is invariant under gauge transformations preserving the declared boundary conditions. Its stationary points under compactly supported connection variations satisfy
+``` math
+d_A *F_A=0.
+```
+With a gauge-covariant matter action, the right-hand side is the corresponding covariantly conserved current.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Curvature transforms by conjugation. $`\operatorname{Ad}`$-invariance of $`B`$ makes the integrand gauge invariant. For a variation $`A\mapsto A+ta`$,
+``` math
+\left.\frac{d}{dt}\right|_{t=0}F_{A+ta}=d_Aa.
+```
+Integration by parts, using the boundary conditions, gives
+``` math
+\delta S_{\rm YM}
+ =-\frac{1}{g_{\rm YM}^2}
+ \int_Y B(a\wedge d_A*F_A),
+```
+up to the dimension- and sign-dependent conventional placement of $`*`$. Arbitrariness of $`a`$ yields the equation. ◻
+
+</div>
+
+## Redundancy does not select the action
+
+<div id="thm:no-unique-ym" class="theorem">
+
+**Theorem 15** (No unique Yang–Mills theory from a lens profile). *The gauge lens-type data of Definition <a href="#def:lens" data-reference-type="ref" data-reference="def:lens">2</a> do not determine a unique gauge group, principal bundle, invariant pairing, coupling, matter representation, or local action.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Different groups, including $`U(1)`$, $`SU(2)`$, and product groups, all act nontrivially on connection spaces. Even after $`(Y,G,P)`$ are fixed, distinct $`\operatorname{Ad}`$-invariant bilinear forms and coupling coefficients can be used. In four dimensions one may add the gauge-invariant topological term
+``` math
+\theta\int_Y B(F_A\wedge F_A),
+```
+and effective actions may include gauge-invariant higher-derivative operators. These choices leave the existence of gauge orbits unchanged while altering the action or quantum theory. Hence the coarse redundancy predicate cannot select them. ◻
+
+</div>
+
+For a compact simple Lie algebra, an invariant symmetric bilinear form is unique up to scale, but that statement already imports the group and simplicity. Product and abelian factors admit additional couplings or kinetic mixing. A uniqueness theorem for a particular Yang–Mills action must state its dimension, locality, derivative order, parity, field content, and equivalence relation.
+
+# Relation to Gravity, Quantization, and the Standard Model
+
+## Gauge versus gravitational connections
+
+Program B1 and this paper both use connections because connections encode smooth parallel transport. The physical typing differs:
+
+- a gravitational Levi–Civita or spin connection acts on tangent, frame, coframe, or spin geometry after a metric is supplied;
+
+- an internal gauge connection acts on a declared internal principal bundle and its associated matter representations.
+
+These may be combined in one product or extension bundle, but equality is not implied by shared formalism.
+
+## Quantization is downstream
+
+Gauge quotienting is a classical structural operation. BRST/BV complexes, ghosts, gauge-fixed propagators, Hilbert spaces, path integrals, anomalies, and quantum states require independent constructions. No Born probability or complex-Hilbert theorem follows from the orbit quotient.
+
+## No Standard Model selection at B2
+
+The Standard Model requires, among other data:
+
+- the global form of the gauge group;
+
+- representations and hypercharge normalization;
+
+- anomaly cancellation;
+
+- chiral family content;
+
+- Higgs and Yukawa sectors;
+
+- coupling values and scale transport; and
+
+- an observable comparison map.
+
+Program B2 supplies none of these from redundancy alone. Later finite-carrier and q79 results may provide compatible realizations at their declared tiers, but B2 cannot retroactively convert compatibility into uniqueness or no-parameter prediction.
+
+# Scoped B2 Theorem
+
+<div id="thm:scoped" class="theorem">
+
+**Theorem 16** (Gauge redundancy with conditional Yang–Mills realization). *For the typed data declared in this paper:*
+
+1.  *a gauge lens-type realization is a noninjective orbit map for a declared group action;*
+
+2.  *invariant set-valued diagnostics factor uniquely through the orbit quotient;*
+
+3.  *nonunique representatives do not imply failure of a global bundle or a global field-space gauge fixing;*
+
+4.  *a principal bundle is globally defined by its cocycle and has a global section exactly when it is trivial;*
+
+5.  *a field-space gauge fixing is a section of the orbit map on a declared domain, stratum, and regularity class;*
+
+6.  *local slices do not by themselves provide a global slice;*
+
+7.  *a supplied principal connection yields the standard local gauge potential and curvature laws; and*
+
+8.  *Yang–Mills equations follow from the action of Assumption <a href="#ass:ym" data-reference-type="ref" data-reference="ass:ym">13</a>, while the lens profile alone selects neither that action nor the gauge group.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Items 1–2 are Definition <a href="#def:lens" data-reference-type="ref" data-reference="def:lens">2</a> and Theorem <a href="#thm:quotient" data-reference-type="ref" data-reference="thm:quotient">3</a>. Item 3 is Proposition <a href="#prop:redundancy" data-reference-type="ref" data-reference="prop:redundancy">5</a>. Item 4 is Proposition <a href="#prop:no-section-required" data-reference-type="ref" data-reference="prop:no-section-required">7</a> and Theorem <a href="#thm:bundle-section" data-reference-type="ref" data-reference="thm:bundle-section">8</a>. Items 5–6 are Theorem <a href="#thm:gauge-fixing" data-reference-type="ref" data-reference="thm:gauge-fixing">11</a> and Proposition <a href="#prop:local-global" data-reference-type="ref" data-reference="prop:local-global">12</a>. Item 7 is Proposition <a href="#prop:global-connection" data-reference-type="ref" data-reference="prop:global-connection">9</a>. Item 8 is Theorems <a href="#thm:ym" data-reference-type="ref" data-reference="thm:ym">14</a> and <a href="#thm:no-unique-ym" data-reference-type="ref" data-reference="thm:no-unique-ym">15</a>. ◻
+
+</div>
+
+# Version Delta and Research Frontier
+
+Relative to version 1, this revision:
+
+- replaces “gauge is necessary and unique” by a typed group-action and quotient construction;
+
+- retains the quotient universal property only in its stated category;
+
+- separates multiple representatives from failure of a section;
+
+- distinguishes sections of $`P\to Y`$, associated fields, and the field-space orbit map;
+
+- states that a principal bundle is global even without a global section;
+
+- makes gauge-fixing obstruction a right-inverse theorem on a specified domain and regularity class;
+
+- treats Gribov–Singer results as realization-specific no-go theorems, not as consequences of redundancy alone;
+
+- distinguishes redundant gauge transformations from boundary or asymptotic transformations that may carry physical charges;
+
+- permits lens and circle profiles to coexist in one gauge connection; and
+
+- derives Yang–Mills equations only from an explicit action while withdrawing uniqueness of the group and dynamics.
+
+The next source theorem must start from one selected upper MTT carrier and emit:
+
+1.  the internal structure group and its global form;
+
+2.  the principal/associated bundles and transition cocycles;
+
+3.  the physical redundancy subgroup including boundary conditions;
+
+4.  the connection, invariant pairing, and action normalization;
+
+5.  the chiral matter representations and anomaly certificate; and
+
+6.  a commuting descent to the accepted finite operators and observables.
+
+Until then, B2 is a rigorous gauge-redundancy framework and conditional Yang–Mills reconstruction, not a derivation of the Standard Model gauge sector.
+
+# Conclusion
+
+Gauge redundancy is a particularly clear realization of the lens profile once the acting group and quotient are declared. Its exact universal statement is the factorization of invariant diagnostics through the orbit space. That statement organizes representatives; it does not imply that a global bundle fails to exist or that no gauge fixing is possible.
+
+The geometry becomes precise on a supplied principal bundle. Local sections give local potentials, a connection gives their compatible transport, and curvature transforms covariantly. A global spacetime section and a global field-space gauge fixing remain different questions. Yang–Mills dynamics then requires a metric, invariant pairing, coupling, boundary conditions, and action. This revised hierarchy retains the useful MTT insight that gauge freedom can encode redundancy while removing uniqueness and inevitability claims that the lens profile alone cannot prove.
+
+<div class="thebibliography">
+
+99
+
+P. Nero, *The Modal Triplet Theory Program A0: A Structural Theory of Reduced Description*, revised v2, 2026.
+
+P. Nero, *The Modal Triplet Theory Program B0: Circle–Lens–Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations*, revised v2, 2026.
+
+P. Nero, *The Modal Triplet Theory Program B1: Loop-Transport Consistency and the Conditional Gravity Realization*, revised v2, 2026.
+
+S. Kobayashi and K. Nomizu, *Foundations of Differential Geometry*, volume I, Wiley, 1963.
+
+N. Steenrod, *The Topology of Fibre Bundles*, Princeton University Press, 1951.
+
+V. N. Gribov, “Quantization of non-Abelian gauge theories,” *Nuclear Physics B* 139 (1978), 1–19.
+
+I. M. Singer, “Some remarks on the Gribov ambiguity,” *Communications in Mathematical Physics* 60 (1978), 7–12.
+
+D. S. Freed and K. K. Uhlenbeck, *Instantons and Four-Manifolds*, Springer, 1984.
+
+C. N. Yang and R. L. Mills, “Conservation of isotopic spin and isotopic gauge invariance,” *Physical Review* 96 (1954), 191–195.
 
 </div>
