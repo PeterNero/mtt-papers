@@ -1,4 +1,25 @@
-# Fixed Points IV v4 Revision Audit
+# Fixed Points IV v5 Revision Audit
+
+## v5 delta (July 2026)
+
+The v5 update consumes the canonically verified
+`mtt-qm-source-proof` head `1615da7` and extends FP IV exactly where its
+curved-projector analysis meets the q79 continuum/finite interface.
+
+| New result | v5 action |
+|---|---|
+| Universal connection/projective-module naturality is closed | Adds exact transport of the supplied connection, curvature, coupled differential, and functorial Hessian |
+| A smooth finite matrix projector is not a finite Fourier or Galerkin cutoff | Adds the explicit matrix-size versus mode-cutoff distinction |
+| The Cech compiler requires a connection correction | States that the projector alone generally carries the Grassmann connection, not the physical HYM connection |
+| `PHP` is exact precisely when `QHP=0` | Adds the invariant-subspace criterion |
+| Nonzero `QHP` requires complementary-sector elimination | Adds the exact Feshbach-Schur operator and identifies its self-energy as same-source data |
+| The six-coordinate strain carrier is nonlinear | Adds the reduced-Green shorted Hessian `(J G_Q J*)^{-1}` and its variational proof |
+| Universal contracts are closed but the actual q79 diagram remains `0/3` | Leaves endpoint, action, physical Hessian, finite-subspace, and execution rows open |
+
+The update also corrects two TeX transcription errors in the leakage formulas:
+`\quad` and `\sup` are restored. No numerical physical result is promoted.
+
+## Prior v4 correction retained
 
 ## Source lineage
 

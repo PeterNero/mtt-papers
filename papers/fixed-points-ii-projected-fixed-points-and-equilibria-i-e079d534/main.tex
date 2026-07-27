@@ -50,9 +50,11 @@ We apply the corrected FP--I machinery to a ten-dimensional control setting
 $\Mten=\Yfour\times\Xsix$. The compact six-manifold $\Xsix$ carries three
 compatible vertical structures represented by strongly commuting nonnegative
 self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion
-maps and is not inferred from ranks $1<2<3$. A shared central-circle/$U(1)$
-datum is bundle or connection data on $\Xsix$ and is not counted as a seventh
-internal product dimension. We prove existence of projected time--$\tau$
+maps and is not inferred from ranks $1<2<3$. In the q79 realization the
+$1<2<3$ flag acts on a separate lane tensor factor, not inside an irreducible
+HYM gauge bundle, while the shared circle is a separate flat line factor and
+is not counted as a seventh internal product dimension. We prove existence of
+projected time--$\tau$
 fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or
 strong monotonicity. A projected fixed point is promoted to a full equilibrium
 only under a strict Lyapunov identity. Fiber gaps control only the noncoherent
@@ -62,19 +64,24 @@ $Q$ sector and are never used as coherent damping.
 \section*{Revision note for this edition}
 \addcontentsline{toc}{section}{Revision note for this edition}
 \begin{description}
-\item[Supersedes.] \emph{Fixed Points II: Fixed Points in a 10D Modal Model},
-version~2.
-\item[Reason.] The previous realization overcounted a shared circle, left
-operator commutation and nesting implicit, used the fiber gap as coherent
-damping, and did not adequately distinguish a projected time-step fixed point
-from an equilibrium.
-\item[Resolution.] Version~3 uses $M_{10}=Y_4\times X_6$, strongly commuting
-vertical operators, typed overlap/nesting, separate coherent coercivity, and a
-strict Lyapunov gate for equilibrium promotion.
+\item[Supersedes.] \emph{Fixed Points II: Projected Fixed Points and
+Equilibria in a 10D Modal Model}, version~3.
+\item[Reason.] The version~3 correction fixed the ten-dimensional control
+geometry but still described the q79 $1<2<3$ carrier too loosely. The exact
+projective-module theorem excludes placing a nontrivial parallel flag inside
+an irreducible stable HYM factor and distinguishes post-projection finite
+algebra from a physical Galerkin subspace.
+\item[Resolution.] Version~4 retains the corrected FP theorem and places the
+rank flag on an external lane tensor factor, with the shared differential line
+as a separate flat scalar factor. It also records that the 27-state algebra is
+post-projection data and that the six-coordinate strain carrier is a nonlinear
+quotient shadow rather than a linear subspace of the physical HYM carrier.
 \item[Retained result.] Schauder/Darbo existence and conditional coherent
 uniqueness survive in the corrected ten-dimensional control realization.
-\item[Remaining boundary.] The q79 carrier, Fu--Yau topology, physical time,
-and Lorentzian dynamics require independent source and completion theorems.
+\item[Remaining boundary.] The selected visible/hidden q79 HYM endpoints,
+physical action and Hessian, finite invariant subspace or Feshbach execution,
+physical time, and Lorentzian dynamics require independent source and
+completion theorems.
 \end{description}
 
 \tableofcontents
@@ -127,12 +134,30 @@ is encoded by a common circle cycle, foliation, or $U(1)$ line-bundle
 connection on $\Xsix$. Its line-bundle data do not add the dimension of the
 bundle total space to $\dim\Xsix$.
 
-\begin{remark}[Current q79 carrier]
-In the current q79 specialization, the ranks $1$, $2$, and $3$ refer to the
-trace line, trace-zero plane, and a reused full rank-three spectral-cover
-carrier. These are direct lanes, not globally ordered sheets. The fixed-point
-theorems use only the declared operators and therefore do not require a nested
-sheet interpretation.
+\begin{remark}[Current q79 carrier and type boundary]
+The current q79 preprojection architecture is
+\[
+\mathcal E_{\rm pre}
+=\Gamma(E_{\rm HYM})\widehat\otimes H_{\rm lane}
+\widehat\otimes L_{\rm shared}.
+\]
+The projectors
+$p_1=\operatorname{diag}(1,0,0)$,
+$p_2=\operatorname{diag}(1,1,0)$, and $p_3=I_3$ act only on
+$H_{\rm lane}$. They encode the relative $1<2<3$ lanes without reducing the
+holonomy of an irreducible stable HYM gauge factor. The common differential
+line $L_{\rm shared}$ is a separate flat scalar factor and is not identified
+with the curved HYM bundle. This placement is forced by the scalar commutant
+of an irreducible stable HYM factor \cite{NeroQMSP2026}.
+
+Two further type distinctions are essential. The accepted 27-state finite
+algebra is post-projection source data, not a rank-27 Galerkin subspace of the
+rank-102 physical deformation carrier. Likewise, the six real strain
+coordinates are an orientation-forgetting nonlinear quotient shadow of
+spectral data; there is no corresponding equivariant linear rank-six
+subspace of $\operatorname{Herm}(3)$. The fixed-point theorems below use only
+the declared operators and do not promote either finite object to the
+physical continuum Hessian.
 \end{remark}
 
 We assume bounded internal geometry and smooth bounded dependence on
@@ -158,7 +183,7 @@ and constant harmonic rank in $y$.
 \paragraph{Explicit gaps in standard fibers.}
 For $S^1_\ell$ (length $\ell$), $\lambda_1=(2\pi/\ell)^2$.
 For a flat torus $T^m$ with side lengths $L_j$, $\lambda_1=(2\pi)^2\min_j L_j^{-2}$.
-For the round $\FPpdf{$S^3$}{S3}$ (radius $1$), $\lambda_1=3$ (see, e.g., \cite{Chavel1984}).
+For the round $S^3$ (radius $1$), $\lambda_1=3$ (see, e.g., \cite{Chavel1984}).
 Nilmanifold factors with bounded geometry admit a uniform positive lower bound on $\lambda_1$
 once the metric class is fixed (bounded geometry prevents collapse).
 
@@ -592,7 +617,7 @@ $\|\Pcoh\|_{\Ltwo\to\Ltwo}\le 1$. Differentiating with respect to a base coordin
 hence
 \[
 \|\partial_\alpha \Pi_n(y)\|_{\Ltwo\to\Ltwo}
-\le \frac{C}{\lamstar^{2}}\|\partial_\alpha A_n(y)\|_{H^2\to \Ltwo}.
+\le \frac{C}{(\lamstar)^2}\|\partial_\alpha A_n(y)\|_{H^2\to \Ltwo}.
 \]
 Under bounded internal geometry and $C^m$ base dependence,
 $\|\partial_\alpha A_n(y)\|_{H^2\to \Ltwo}$ is uniformly bounded,

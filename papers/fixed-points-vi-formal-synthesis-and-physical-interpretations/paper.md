@@ -1,11 +1,11 @@
 ---
 abstract: |
-  We synthesize the corrected FP–I–V results without promoting their control parameter, projections, or diagnostics into an unproved fundamental field theory. The rigorous spine consists of conditional projected fixed-point existence, strict-Lyapunov promotion to equilibrium, joint-mode damping and disturbance floors, perturbative persistence of a curved spectral cluster, curvature leakage, intrinsic first-order centroid modulation, frozen linear Ornstein–Uhlenbeck covariance, canonical-correlation bounds, and declared admissibility exits. We distinguish three logical levels throughout: inherited theorem, conditional model completion, and physical interpretation. A Lorentzian gauge/gravity action, quantum covariance, particle identities, merger, measurement, and cosmology belong to the latter two levels unless additional source and equivalence theorems are supplied. We also correct the Gaussian Lyapunov sign and nonnormal resolvent bounds, and show why an instantaneous equal-time bilocal kernel is not microcausal merely because it leaves the principal symbol unchanged. A local mediator is the consistent route to causal overlap dynamics.
+  We synthesize the corrected FP–I–V results without promoting their control parameter, projections, or diagnostics into an unproved fundamental field theory. The rigorous spine consists of conditional projected fixed-point existence, strict-Lyapunov promotion to equilibrium, joint-mode damping and disturbance floors, perturbative persistence of a curved spectral cluster, curvature leakage, intrinsic first-order centroid modulation, frozen linear Ornstein–Uhlenbeck covariance, canonical-correlation bounds, and declared admissibility exits. We distinguish three logical levels throughout: inherited theorem, conditional model completion, and physical interpretation. A Lorentzian gauge/gravity action, quantum covariance, particle identities, merger, measurement, and cosmology belong to the latter two levels unless additional source and equivalence theorems are supplied. We also correct the Gaussian Lyapunov sign and nonnormal resolvent bounds, and show why an instantaneous equal-time bilocal kernel is not microcausal merely because it leaves the principal symbol unchanged. A local mediator is the consistent route to causal overlap dynamics. A separate, explicitly non-FP ledger records later scoped q79 geometry, quantum-operation, and QFT advances without retroactively promoting them to conclusions of the fixed-point series.
 author:
 - Peter Nero
-current_version: v4
+current_version: v5
 date: July 2026
-generated_from_main_tex_sha256: 85d19c9bd43defa7faa9c0c3604591a5605895d63654d9fdd3c13349af347bda
+generated_from_main_tex_sha256: 157290d65e16bd049602c487b8a0dd76a39485bf2b5df7a3f9423d6d9f3fdcae
 paper_id: fixed-points-vi-formal-synthesis-and-physical-interpretations
 release_state: zenodo_released
 released_version: v3.0
@@ -20,19 +20,19 @@ zenodo_url: "https://zenodo.org/records/18203151"
 # Revision note for this edition
 
 Supersedes.  
-*Fixed Points VI: Formal Synthesis and Physical Interpretations*, version 3.
+*Fixed Points VI: Formal Synthesis and Physical Interpretations*, version 4.
 
 Reason.  
-The former synthesis promoted conditional control results into gravity, quantum, merger, measurement, and causality claims, while retaining a wrong Lyapunov sign, nonnormal resolvent shortcut, and instantaneous bilocal microcausality claim.
+Version 4 correctly narrowed the FP series, but it predates the exact q79 lane-factor, projective-module, connection-compiler and nonlinear strain-quotient results, as well as later scoped QM and QFT closures. Without a separate status layer, “not derived by FP” could be misread as “not achieved anywhere downstream.”
 
 Resolution.  
-Version 4 separates inherited theorem, conditional completion, and interpretation; corrects covariance and nonnormal estimates; and replaces the bilocal claim by a local-mediator causality route.
+Version 5 preserves the FP theorem boundary, corrects the q79 preprojection types, and adds an independently sourced downstream ledger with exact closure counts and nonpromotion clauses.
 
 Retained result.  
 The complete FP–I–V fixed-point, damping, curvature, covariance, and admissibility spine survives at its declared theorem tier.
 
 Remaining boundary.  
-A Lorentzian master action, quantum covariance, particle ontology, measurement law, and cosmology remain downstream programs.
+Selected HYM endpoints and action, the physical q79 Hessian/reduction, universal apparatus and actualization, a fixed-coupling continuum QFT, selected global state, RG/matching, and cosmology remain downstream programs.
 
 # Logical levels and common geometry
 
@@ -47,7 +47,7 @@ A mathematically specified extra model whose conclusions hold if that model and 
 Physical interpretation.  
 A proposed reading that is not established by the fixed-point theorems alone.
 
-Let $`\mathcal H`$ be the declared control Hilbert space. The joint internal operator is constructed from three declared vertical operators using the strong-commutation and domain hypotheses of FP II. Circle–lens–nil labels refer here to obstruction, rank, or operator data; they do not assert a literal product or nesting of three manifolds. In the current q79 specialization the ranks $`1`$, $`2`$, and $`3`$ are trace, trace-zero, and reused-full carrier lanes. The auxiliary $`L(3,1)\times\mathrm{Nil}_3`$ model is not identified with the q79/Fu–Yau compactification. The shared circle is common $`U(1)`$ phase/holonomy data and is counted once.
+Let $`\mathcal H`$ be the declared control Hilbert space. The joint internal operator is constructed from three declared vertical operators using the strong-commutation and domain hypotheses of FP II. Circle–lens–nil labels refer here to obstruction, rank, or operator data; they do not assert a literal product or nesting of three manifolds. In the current q79 specialization the ranks $`1`$, $`2`$, and $`3`$ act on an external lane tensor factor, not inside an irreducible stable HYM gauge bundle. The shared differential line is a separate flat scalar tensor factor. The accepted 27-state algebra is post-projection source data, not a rank-27 Galerkin subspace of the rank-102 physical deformation carrier. The six-coordinate strain carrier is a nonlinear orientation-forgetting quotient shadow, not a linear rank-six subspace of $`\operatorname{Herm}(3)`$ . The auxiliary $`L(3,1)\times\mathrm{Nil}_3`$ model is not identified with the q79/Fu–Yau compactification. The shared circle is common $`U(1)`$ phase/holonomy data and is counted once.
 
 The coherent projector $`P`$ is the joint spectral projector. A product of three bundle projectors is permitted only when those projectors strongly commute; otherwise the product need not be an orthogonal projector. Write $`Q=I-P`$.
 
@@ -222,6 +222,22 @@ If a mass term depends on curvature, such as $`M_a^2=m_a^2+\xi_aR`$, its metric 
 
 Three internal structures do not by themselves prove three gauge factors, bosonic or fermionic statistics, bifundamental matter, the Standard Model particle assignment, anomaly cancellation, or equivalence with a quantum field theory. Those require independent representation, source, and matching theorems.
 
+# Independent downstream q79 status
+
+This section is a status reconciliation against the canonically verified q79 source repository at commit `1615da7` . None of the items below is presented as a consequence of the FP I–VI theorems.
+
+#### Geometry-to-operator bridge.
+
+For a supplied finite-rank Hermitian bundle and unitary connection, exact projective-module connection, curvature, coupled-differential and functorial Hessian transport is closed at $`10/10`$. The explicit Cech projector plus connection-correction compiler is closed at $`12/12`$, and the intrinsic relative-phase quotient with reduced-Green shorted Hessian is closed at $`14/14`$. These are universal or conditional constructions. The actual same-source q79 instantiation remains $`0/3`$: selected visible/hidden HYM endpoints, their physical action-derived Hessian, and an intrinsic finite subspace with either vanishing compression residual or an executed Feshbach identity are not yet supplied.
+
+#### Canonical quantum operation.
+
+The selected q79 binary one-anchor recorder has an exact commuting output algebra, stopped-output measure, and quadratic $`P/Q`$ probabilities for every declared preparation in that apparatus context. This closes the operational Born-output tier without a new stochastic primitive, fit, or observed probability. It does not prove a source rule for every apparatus, derive probability semantics before the normal-state formalism, or select one ontically actual history.
+
+#### Quantum field theory.
+
+The framed free massless Dirac even-observable net is closed at its selected q79 tier. Independently, the selected finite SM carrier has been composed through classical BV, gauge-fixed Green-hyperbolic/equicausal structure, a formal anomaly-free all-orders QME, formal positive physical state spaces, and presentation transport. A literal physical C-star reference net is closed at $`\lambda=0`$. At nonzero coupling, an actual finite-regulator C-star landing is closed at $`5/5`$, while only the normalized same-source first tangent is accepted in the physical continuum-promotion table ($`1/9`$). The finite spectral chiral measure is closed on each certified connected gapped presentation orbit ($`7/7`$), but its selected full-domain extension remains $`0/4`$. Fixed-coupling continuum convergence and uniqueness, a selected global interacting state, numerical RG/matching, and nonperturbative completion remain open.
+
 # Bilocal overlap and causality
 
 Consider an equal-parameter interaction of the form
@@ -266,7 +282,7 @@ Gauge forces, Lorentzian motion, quantum uncertainty, Gaussian entanglement, dec
 
 #### Not derived by this series.
 
-The present theorems do not derive boson/fermion identity, particle masses, Standard Model representations, merger or collapse rules, the Born rule, measurement outcomes, emergent time, inflation, horizons, or a cosmological arrow of time. These may motivate later work but are not conclusions of FP I–VI.
+The present theorems do not derive boson/fermion identity, particle masses, Standard Model representations, merger or collapse rules, the Born rule, measurement outcomes, emergent time, inflation, horizons, or a cosmological arrow of time. Section <a href="#sec:downstream-status" data-reference-type="ref" data-reference="sec:downstream-status">9</a> records independent scoped results on some of these bridges; their existence does not make them conclusions of FP I–VI.
 
 # Synthesis theorem and remaining obligations
 
@@ -290,7 +306,7 @@ The present theorems do not derive boson/fermion identity, particle masses, Stan
 
 </div>
 
-The principal remaining obligations for a physical theory are therefore constructive rather than interpretive: select the physical state space and operator from MTT geometry; derive a local causal action or evolution; prove the relation between its solutions and the FP control flow; derive field content and couplings; and establish empirical matching without importing the target observables as source data.
+The principal remaining obligations for a physical theory are therefore constructive rather than interpretive: emit the selected visible/hidden HYM endpoints; derive the upper action and physical rank-102 Hessian; execute its invariant finite restriction or Feshbach/shorted reduction; extend the canonical quantum operation beyond one binary apparatus if that stronger claim is intended; construct the fixed-nonzero-coupling continuum QFT and a selected global state; prove the relation between physical evolution and the FP control flow; and complete RG, uncertainty, and empirical matching without importing target observables as source data.
 
 # Conclusion
 
@@ -302,16 +318,18 @@ The corrected Fixed Points series is a coherent conditional control and spectral
 
 P. Nero, *Fixed Points I: Fixed Points over Multi–Bundle Manifolds*, revised v6, 2026.
 
-P. Nero, *Fixed Points II: Fixed Points in a 10D Modal Model*, revised v3, 2026.
+P. Nero, *Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model*, revised v4, 2026.
 
 P. Nero, *Fixed Points III: Disturbance–Damping Balance and Stability*, revised v4, 2026.
 
-P. Nero, *Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions on Bundle Manifolds*, revised v4, 2026.
+P. Nero, *Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions on Bundle Manifolds*, revised v5, 2026.
 
 P. Nero, *Fixed Points V: Curvature Coupling, Multi–Structure Dynamics, and Admissibility Barriers*, revised v6, 2026.
 
 G. Da Prato and J. Zabczyk, *Stochastic Equations in Infinite Dimensions*, Cambridge University Press, 1992.
 
 R. Simon, Peres–Horodecki separability criterion for continuous variable systems, *Physical Review Letters* **84** (2000), 2726–2729.
+
+P. Nero, *q79 Quantum Source, Quantum Field, and Geometry-to-Operator Theorem Packets*, `mtt-qm-source-proof`, commit `1615da7`, 27 July 2026.
 
 </div>

@@ -1,4 +1,24 @@
-# Fixed Points II v3 Revision Audit
+# Fixed Points II v4 Revision Audit
+
+## v4 delta (July 2026)
+
+The v4 update consumes the canonically verified
+`mtt-qm-source-proof` head `1615da7` without changing the FP II existence,
+uniqueness, or equilibrium-promotion theorem.
+
+| New result | v4 action |
+|---|---|
+| A nontrivial parallel `1<2<3` flag cannot lie inside an irreducible stable HYM gauge factor | Places `p1 < p2 < p3` on the external lane tensor factor |
+| The shared differential line is a separate flat scalar factor | Separates it from both the curved HYM bundle and dimension counting |
+| The accepted 27-state algebra is post-projection source data | Explicitly excludes interpreting it as a rank-27 physical Galerkin subspace |
+| The six-coordinate strain carrier is a nonlinear orientation-forgetting quotient shadow | Explicitly excludes a linear rank-six subspace of `Herm(3)` |
+| Universal projective/quotient constructions pass, while the physical q79 rows remain `0/3` | Records the open endpoint, action, Hessian, finite-reduction, and Lorentzian bridges without promoting them |
+| Two latent TeX defects blocked compilation | Removes nested math around an ordinary-text `S^3` and avoids a double superscript on `\lamstar` |
+
+No FP II fixed-point hypothesis was weakened or replaced. This is a type and
+scope correction at the q79 realization boundary.
+
+## Prior v3 correction retained
 
 ## Source lineage
 
@@ -38,4 +58,3 @@ proves projected stabilization-step fixed-point existence and coherent
 uniqueness under explicit hypotheses. Equilibrium promotion requires the strict
 Lyapunov identity. It does not select the physical MTT topology, prove
 Lorentzian dynamics, or derive coherent contraction from internal gaps.
-

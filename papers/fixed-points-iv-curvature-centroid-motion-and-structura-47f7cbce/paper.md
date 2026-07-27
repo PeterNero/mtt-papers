@@ -1,11 +1,11 @@
 ---
 abstract: |
-  We rebuild curvature coupling and structural transitions on the corrected FP–I–III spine. A Laplace-type operator is normalized as $`L=\nabla^\ast\nabla+\mathcal R`$. Curvature can shift the spectral cluster, mix coherent and noncoherent sectors, and create a leakage floor. If $`\|\mathcal R\|<\lambda_\ast/2`$, the full curved operator retains a separated low cluster and defines a new Riesz projector; if one retains the unperturbed projector, the term $`Q\mathcal RP`$ must appear explicitly. Centroids are defined intrinsically by a Karcher mean inside a convex normal ball. A first-order gradient parent flow yields a first-order modulation law; a Newtonian law requires a separately specified inertial parent equation. Absolute interaction bounds give $`|E_{\rm int}|\le C\mathcal O`$, while attraction or repulsion needs a sign hypothesis. Structural transitions are controlled by a Lyapunov mountain- pass/work theorem, and exit detection is separated from selection of the post-transition basin.
+  We rebuild curvature coupling and structural transitions on the corrected FP–I–III spine. A Laplace-type operator is normalized as $`L=\nabla^\ast\nabla+\mathcal R`$. Curvature can shift the spectral cluster, mix coherent and noncoherent sectors, and create a leakage floor. If $`\|\mathcal R\|<\lambda_\ast/2`$, the full curved operator retains a separated low cluster and defines a new Riesz projector; if one retains the unperturbed projector, the term $`Q\mathcal RP`$ must appear explicitly. Centroids are defined intrinsically by a Karcher mean inside a convex normal ball. A first-order gradient parent flow yields a first-order modulation law; a Newtonian law requires a separately specified inertial parent equation. Absolute interaction bounds give $`|E_{\rm int}|\le C\mathcal O`$, while attraction or repulsion needs a sign hypothesis. Structural transitions are controlled by a Lyapunov mountain- pass/work theorem, and exit detection is separated from selection of the post-transition basin. We also state the exact projective-module transport and finite-reduction boundary: a supplied connection and its Hessian transport naturally, bare compression is exact only on an invariant subspace, and otherwise the Feshbach or reduced-Green operator is required.
 author:
 - Peter Nero
-current_version: v4
+current_version: v5
 date: July 2026
-generated_from_main_tex_sha256: d221a7469e5147701d19ae27eaf684d5bc45122485d4f54ef5d4b1ebedcca13c
+generated_from_main_tex_sha256: 8831c511e66cbc05c4d017941ae4f71118f13e9bf7f085543040f3786fe9bdc2
 paper_id: fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce
 release_state: zenodo_released
 released_version: v2.0
@@ -20,19 +20,19 @@ zenodo_url: "https://zenodo.org/records/18202984"
 # Revision note for this edition
 
 Supersedes.  
-*Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions*, version 3.
+*Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions*, version 4.
 
 Reason.  
-Curvature-induced projector motion and leakage were omitted, overlap magnitude was used to infer interaction sign, and a first-order parent flow was promoted to Newtonian centroid motion and post-exit selection.
+Version 4 corrected curvature leakage and transition claims but did not state when a curved continuum Hessian is represented exactly by finite projective-module data or when a compressed matrix is the physical effective operator.
 
 Resolution.  
-Version 4 uses the full Laplace-type operator and curved Riesz projector, introduces the explicit $`Q\mathcal RP`$ leakage term, defines Karcher centroids, and separates work-limited exit from basin selection.
+Version 5 retains the curved Riesz-projector analysis and adds exact connection/Hessian transport, the invariant-subspace versus Feshbach–Schur criterion, and the reduced-Green shorted Hessian for nonlinear strain coordinates. It also distinguishes a finite matrix-valued smooth projector from a Fourier or Galerkin truncation.
 
 Retained result.  
 Curved-cluster persistence, leakage bounds, intrinsic first-order modulation, and barrier exclusion survive conditionally.
 
 Remaining boundary.  
-Attraction, inertia, and the post-transition state require signed interactions or a separately specified physical parent law.
+The selected q79 HYM endpoints, action, physical Hessian and finite subspace remain open, as do attraction, inertia, and post-transition selection without a specified physical parent law.
 
 # Inherited control framework
 
@@ -93,12 +93,63 @@ Using $`P_{\mathcal R}`$ eliminates linear leakage because $`[L,P_{\mathcal R}]=
 
 For base-dependent curvature and projectors, modulation and locality estimates also require bounds on $`\nabla\mathcal R`$, $`\nabla P_{\mathcal R}`$, and any commutator with the base control operator. These gradient terms are not contained in the scalar loss $`\rho_Q`$.
 
+# Exact projective transport and finite reduction
+
+The curved spectral projector above should not be confused with a finite projective-module presentation of a supplied bundle. Let $`X`$ be compact and let $`(E,h,\nabla)`$ be a supplied finite-rank Hermitian bundle with unitary connection. The universal-connection construction gives a finite $`N`$, a fiberwise isometry
+``` math
+U:E\longrightarrow X\times\mathbb C^N,
+\qquad p_{\rm mod}=UU^\ast\in M_N(C^\infty(X)),
+```
+such that
+``` math
+p_{\rm mod}\,d(Us)=U\nabla s,
+\qquad
+p_{\rm mod}(dp_{\rm mod})\wedge(dp_{\rm mod})p_{\rm mod}
+=UF_\nabla U^\ast.
+```
+Consequently, a coupled differential and any gauge-fixed Hessian constructed functorially from the same supplied connection, metric, gauge slice, and action transport exactly under $`U`$ . This preserves nonzero Chern data; it does not flatten the connection.
+
+Here “finite” refers only to the ambient matrix size $`N`$. The entries of $`p_{\rm mod}(x)`$ are smooth functions and can contain infinitely many base modes. Thus $`p_{\rm mod}`$ is not, by itself, a finite Fourier, Toeplitz, or Galerkin cutoff. Given endpoint Cech data, metrics, a finite good cover, partition of unity, and local physical connection forms, the verified connection compiler emits the projector together with its connection correction. The projector alone carries only the partition-induced Grassmann connection and is not generally the physical HYM connection. Neither construction selects the physical q79 endpoints.
+
+<div id="thm:finite-reduction" class="theorem">
+
+**Theorem 2** (Exact finite-reduction criterion). *Let $`H=H^\ast`$ be the transported physical Hessian, let $`P_f`$ be a finite orthogonal projector preserving its declared domain, and put $`Q_f=I-P_f`$. Then the bare compression $`P_fHP_f`$ is the exact restriction of $`H`$ to $`\operatorname{Ran}P_f`$ if and only if
+``` math
+Q_fHP_f=0.
+```
+If this residual is nonzero and $`Q_f(H-z)Q_f`$ is invertible, the exact finite operator at spectral parameter $`z`$ is the Feshbach–Schur map
+``` math
+F_{P_f}(H-z)
+=P_f(H-z)P_f
+-P_fHQ_f\,[Q_f(H-z)Q_f]^{-1}Q_fHP_f.
+```
+The second term is a same-source complementary-sector self-energy, not an independent fit parameter.*
+
+</div>
+
+<div id="thm:shorted-hessian" class="theorem">
+
+**Theorem 3** (Reduced-Green strain Hessian). *Let $`H_Q>0`$ be the gauge-fixed physical Hessian after removal of its declared harmonic kernel, let $`G_Q=H_Q^{-1}`$, and let $`J=d\Phi_{\rm strain}`$ be the differential of a declared nonlinear strain symbol at a regular point. If $`J`$ has full target rank and $`JG_QJ^\ast>0`$, then the exact effective Hessian on strain variations is
+``` math
+H_{\rm strain}=(JG_QJ^\ast)^{-1}.
+```
+Indeed, for every target variation $`y`$,
+``` math
+\min_{Jx=y}\frac12\langle x,H_Qx\rangle
+=\frac12\langle y,(JG_QJ^\ast)^{-1}y\rangle.
+```
+Thus the effective operator integrates out the complementary physical fields and forgotten phase/orientation directions. It is a quotient or shorted Hessian, not the restriction of $`H_Q`$ to a linear rank-six subspace.*
+
+</div>
+
+For the current q79 program these are closed universal theorems and exact finite witnesses. Their physical instantiation remains open until the visible/hidden HYM endpoints, action-derived Hessian, regular quotient domain, and intrinsic finite subspace are supplied and either $`Q_fHP_f=0`$ or the displayed Feshbach equality is executed.
+
 # Curvature leakage and stability floor
 
 Consider
 ``` math
 \partial_t\Psi=-(A_0+\mathcal R)\Psi-N(\Psi)+F,
-\qquad p=P\Psi,quad q=Q\Psi.
+\qquad p=P\Psi,\quad q=Q\Psi.
 ```
 Assume unperturbed coherence invariance $`QN(p)=0`$ and the one-sided estimate
 ``` math
@@ -108,7 +159,7 @@ Assume unperturbed coherence invariance $`QN(p)=0`$ and the one-sided estimate
 
 <div id="thm:leakage" class="theorem">
 
-**Theorem 2** (Noncoherent leakage bound). *Let
+**Theorem 4** (Noncoherent leakage bound). *Let
 ``` math
 \gamma_Q:=\lambda_\ast-L_Q-\rho_Q>0.
 ```
@@ -132,7 +183,7 @@ Consequently,
 If $`p`$ and $`QF`$ are uniformly bounded, then
 ``` math
 \limsup_{t\to\infty}\|q(t)\|
-\le\frac{\ell_{QP}\sup_t\|p(t)\|+sup_t\|QF(t)\|}{\gamma_Q}.
+\le\frac{\ell_{QP}\sup_t\|p(t)\|+\sup_t\|QF(t)\|}{\gamma_Q}.
 ```*
 
 </div>
@@ -150,7 +201,7 @@ be the normalized density measure. Assume its support lies in a geodesically con
 
 <div class="definition">
 
-**Definition 3** (Karcher centroid). The centroid is the unique minimizer
+**Definition 5** (Karcher centroid). The centroid is the unique minimizer
 ``` math
 X(t)=\operatorname*{argmin}_{z\in Y}
 \frac12\int_Y d_Y(z,y)^2\,d\nu_t(y).
@@ -171,7 +222,7 @@ Define the positive tangent Gram matrix $`G_{ij}(X)=\langle\partial_{X^i}\Psi_X,
 
 <div id="thm:modulation" class="theorem">
 
-**Theorem 4** (First-order modulation law). *For the first-order gradient flow $`\partial_t\Psi=-\nabla C(\Psi)`$, assume the profile decomposition is unique, $`G(X)`$ is uniformly invertible, and the remainder and curvature-gradient terms are controlled. Projection onto the tangent space gives
+**Theorem 6** (First-order modulation law). *For the first-order gradient flow $`\partial_t\Psi=-\nabla C(\Psi)`$, assume the profile decomposition is unique, $`G(X)`$ is uniformly invertible, and the remainder and curvature-gradient terms are controlled. Projection onto the tangent space gives
 ``` math
 G_{ij}(X)\dot X^j=-\partial_iV_{\rm eff}(X)+\varepsilon_i(t),
 ```
@@ -191,7 +242,7 @@ Let $`\mathcal O(\Psi_1,\Psi_2)\ge0`$ be a declared overlap functional.
 
 <div id="ass:cross" class="assumption">
 
-**Assumption 5** (Absolute cross-term control). All quadratic and nonlinear cross terms obey
+**Assumption 7** (Absolute cross-term control). All quadratic and nonlinear cross terms obey
 ``` math
 |E_{\rm int}|\le C_{\rm int}\mathcal O(\Psi_1,\Psi_2).
 ```
@@ -202,7 +253,7 @@ This assumption yields exactly the displayed absolute estimate. It does not yiel
 
 <div id="thm:sign" class="theorem">
 
-**Theorem 6** (Signed interaction criterion). *If a model additionally proves $`E_{\rm int}\le-c\mathcal O`$ with $`c>0`$, overlap lowers the energy and is energetically attractive. If it proves $`E_{\rm int}\ge c\mathcal O`$, overlap raises the energy and is energetically repulsive. Neither sign follows from overlap magnitude alone.*
+**Theorem 8** (Signed interaction criterion). *If a model additionally proves $`E_{\rm int}\le-c\mathcal O`$ with $`c>0`$, overlap lowers the energy and is energetically attractive. If it proves $`E_{\rm int}\ge c\mathcal O`$, overlap raises the energy and is energetically repulsive. Neither sign follows from overlap magnitude alone.*
 
 </div>
 
@@ -222,7 +273,7 @@ where $`\Gamma_{-+}`$ is the set of continuous paths joining the two basins.
 
 <div id="thm:barrier" class="theorem">
 
-**Theorem 7** (Energy-barrier exclusion with work). *Assume trajectories are continuous in the energy topology and satisfy
+**Theorem 9** (Energy-barrier exclusion with work). *Assume trajectories are continuous in the energy topology and satisfy
 ``` math
 C[\Psi(t)]\le C[\Psi(0)]+W_{\rm ext}(t),
 \qquad W_{\rm ext}(t)\le W_\ast.
@@ -235,13 +286,13 @@ Noise-driven transitions require probabilistic exit estimates and are not covere
 
 <div id="thm:exit" class="theorem">
 
-**Theorem 8** (Exit does not determine selection). *Let $`\mathcal A`$ be an admissible region and $`\tau_{\rm exit}=\inf\{t:\Psi(t)\notin\mathcal A\}`$. Finite $`\tau_{\rm exit}`$ detects loss of admissibility only. Identification of the post-exit basin requires a separate basin-accessibility and convergence or selection theorem.*
+**Theorem 10** (Exit does not determine selection). *Let $`\mathcal A`$ be an admissible region and $`\tau_{\rm exit}=\inf\{t:\Psi(t)\notin\mathcal A\}`$. Finite $`\tau_{\rm exit}`$ detects loss of admissibility only. Identification of the post-exit basin requires a separate basin-accessibility and convergence or selection theorem.*
 
 </div>
 
 # Conclusion
 
-Curvature is not merely a scalar subtraction from a damping margin. It can shift the spectral cluster, rotate the coherent projector, and leak coherent amplitude into the old noncoherent sector. FP IV v4 makes those effects explicit. Centroid motion is intrinsic and first order for a gradient parent flow; interaction signs and dynamic merger require additional hypotheses; and barrier crossing is controlled by total energy plus work. These corrected statements preserve the useful curvature and transition program without claiming that overlap or positive damping alone selects a new physical basin.
+Curvature is not merely a scalar subtraction from a damping margin. It can shift the spectral cluster, rotate the coherent projector, and leak coherent amplitude into the old noncoherent sector. FP IV v5 makes those effects explicit and adds the exact boundary between natural projective transport, bare compression, Feshbach reduction, and nonlinear shorting. Centroid motion is intrinsic and first order for a gradient parent flow; interaction signs and dynamic merger require additional hypotheses; and barrier crossing is controlled by total energy plus work. These corrected statements preserve the useful curvature and transition program without claiming that a finite projector, overlap, or positive damping alone selects a physical basin.
 
 <div class="thebibliography">
 
@@ -256,5 +307,7 @@ R. Temam, *Infinite-Dimensional Dynamical Systems in Mechanics and Physics*, Ap
 D. Henry, *Geometric Theory of Semilinear Parabolic Equations*, Lecture Notes in Mathematics, Vol. 840, Springer-Verlag, Berlin, 1981.
 
 E. Hebey, *Nonlinear Analysis on Manifolds: Sobolev Spaces and Inequalities*, Courant Lecture Notes, Vol. 5, American Mathematical Society, Providence, 2000.
+
+P. Nero, *q79 Covariant Projective-Module HYM Symbol Naturality, Explicit Cech Connection Compiler, and Intrinsic Spectral-Strain Quotient/Shorted-Hessian Theorems*, `mtt-qm-source-proof`, commit `1615da7`, 27 July 2026.
 
 </div>

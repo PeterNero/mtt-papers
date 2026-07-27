@@ -1,4 +1,25 @@
-# Fixed Points VI v4 Revision Audit
+# Fixed Points VI v5 Revision Audit
+
+## v5 delta (July 2026)
+
+The v5 synthesis consumes the canonically verified
+`mtt-qm-source-proof` head `1615da7` while preserving the distinction between
+an FP theorem and an independent downstream theorem.
+
+| New result | v5 action |
+|---|---|
+| Exact external-lane placement and separate shared flat line | Corrects the q79 common-geometry paragraph |
+| The 27-state algebra is post-projection, and the six-coordinate strain carrier is a nonlinear quotient shadow | Prevents either object from being retyped as a physical Galerkin subspace |
+| Universal projective naturality, Cech compilation, and shorted-Hessian contracts close at `10/10`, `12/12`, and `14/14` | Adds a separate geometry-to-operator status paragraph while retaining physical `0/3` |
+| Canonical binary recorder output measure is exact | Records operational closure only for the declared `P/Q` apparatus; universal apparatus and actualization remain open |
+| Free Dirac/AQFT and formal BV/QME tiers have advanced | Records their exact scoped tiers without calling them FP consequences |
+| Finite nonzero-coupling C-star landing is `5/5`, continuum promotion `1/9`, orbitwise chiral measure `7/7`, full-domain extension `0/4` | Replaces the outdated undifferentiated QFT boundary by current accepted counts |
+
+No selected upper-MTT Lorentzian action, physical q79 endpoint, universal Born
+law, interacting continuum QFT, selected global state, or empirical
+equivalence claim is promoted.
+
+## Prior v4 correction retained
 
 ## Source lineage
 

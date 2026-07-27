@@ -1,13 +1,13 @@
 ---
 abstract: |
-  We apply the corrected FP–I machinery to a ten-dimensional control setting $`\ensuremath{M_{10}}=\ensuremath{Y^{4}}\times\ensuremath{X^{6}}`$. The compact six-manifold $`\ensuremath{X^{6}}`$ carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks $`1<2<3`$. A shared central-circle/$`U(1)`$ datum is bundle or connection data on $`\ensuremath{X^{6}}`$ and is not counted as a seventh internal product dimension. We prove existence of projected time–$`\tau`$ fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent $`Q`$ sector and are never used as coherent damping.
+  We apply the corrected FP–I machinery to a ten-dimensional control setting $`\ensuremath{M_{10}}=\ensuremath{Y^{4}}\times\ensuremath{X^{6}}`$. The compact six-manifold $`\ensuremath{X^{6}}`$ carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks $`1<2<3`$. In the q79 realization the $`1<2<3`$ flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–$`\tau`$ fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent $`Q`$ sector and are never used as coherent damping.
 author:
 - Peter Nero
 bibliography:
 - references.bib
-current_version: v3
+current_version: v4
 date: July 2026
-generated_from_main_tex_sha256: 84fc139fa0bf2217e1c8ce0443498b36816a1ceeb510290f87208834568d6656
+generated_from_main_tex_sha256: 35f2c2747373e0b701538743a13eb82c020e0e01eeea7851e21bd83611fdf964
 paper_id: fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534
 release_state: zenodo_released
 released_version: v2.0
@@ -22,19 +22,19 @@ zenodo_url: "https://zenodo.org/records/18202914"
 # Revision note for this edition
 
 Supersedes.  
-*Fixed Points II: Fixed Points in a 10D Modal Model*, version 2.
+*Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model*, version 3.
 
 Reason.  
-The previous realization overcounted a shared circle, left operator commutation and nesting implicit, used the fiber gap as coherent damping, and did not adequately distinguish a projected time-step fixed point from an equilibrium.
+The version 3 correction fixed the ten-dimensional control geometry but still described the q79 $`1<2<3`$ carrier too loosely. The exact projective-module theorem excludes placing a nontrivial parallel flag inside an irreducible stable HYM factor and distinguishes post-projection finite algebra from a physical Galerkin subspace.
 
 Resolution.  
-Version 3 uses $`M_{10}=Y_4\times X_6`$, strongly commuting vertical operators, typed overlap/nesting, separate coherent coercivity, and a strict Lyapunov gate for equilibrium promotion.
+Version 4 retains the corrected FP theorem and places the rank flag on an external lane tensor factor, with the shared differential line as a separate flat scalar factor. It also records that the 27-state algebra is post-projection data and that the six-coordinate strain carrier is a nonlinear quotient shadow rather than a linear subspace of the physical HYM carrier.
 
 Retained result.  
 Schauder/Darbo existence and conditional coherent uniqueness survive in the corrected ten-dimensional control realization.
 
 Remaining boundary.  
-The q79 carrier, Fu–Yau topology, physical time, and Lorentzian dynamics require independent source and completion theorems.
+The selected visible/hidden q79 HYM endpoints, physical action and Hessian, finite invariant subspace or Feshbach execution, physical time, and Lorentzian dynamics require independent source and completion theorems.
 
 # Introduction and scope
 
@@ -62,7 +62,15 @@ Let $`\ensuremath{X^{6}}`$ be a compact six-manifold. On the common internal Hil
 
 <div class="remark">
 
-*Remark 1* (Current q79 carrier). In the current q79 specialization, the ranks $`1`$, $`2`$, and $`3`$ refer to the trace line, trace-zero plane, and a reused full rank-three spectral-cover carrier. These are direct lanes, not globally ordered sheets. The fixed-point theorems use only the declared operators and therefore do not require a nested sheet interpretation.
+*Remark 1* (Current q79 carrier and type boundary). The current q79 preprojection architecture is
+``` math
+\mathcal E_{\rm pre}
+=\Gamma(E_{\rm HYM})\widehat\otimes H_{\rm lane}
+\widehat\otimes L_{\rm shared}.
+```
+The projectors $`p_1=\operatorname{diag}(1,0,0)`$, $`p_2=\operatorname{diag}(1,1,0)`$, and $`p_3=I_3`$ act only on $`H_{\rm lane}`$. They encode the relative $`1<2<3`$ lanes without reducing the holonomy of an irreducible stable HYM gauge factor. The common differential line $`L_{\rm shared}`$ is a separate flat scalar factor and is not identified with the curved HYM bundle. This placement is forced by the scalar commutant of an irreducible stable HYM factor .
+
+Two further type distinctions are essential. The accepted 27-state finite algebra is post-projection source data, not a rank-27 Galerkin subspace of the rank-102 physical deformation carrier. Likewise, the six real strain coordinates are an orientation-forgetting nonlinear quotient shadow of spectral data; there is no corresponding equivariant linear rank-six subspace of $`\operatorname{Herm}(3)`$. The fixed-point theorems below use only the declared operators and do not promote either finite object to the physical continuum Hessian.
 
 </div>
 
@@ -87,7 +95,7 @@ and constant harmonic rank in $`y`$.
 
 #### Explicit gaps in standard fibers.
 
-For $`S^1_\ell`$ (length $`\ell`$), $`\lambda_1=(2\pi/\ell)^2`$. For a flat torus $`T^m`$ with side lengths $`L_j`$, $`\lambda_1=(2\pi)^2\min_j L_j^{-2}`$. For the round $`\texorpdfstring{$S^3$}{S3}`$ (radius $`1`$), $`\lambda_1=3`$ (see, e.g., ). Nilmanifold factors with bounded geometry admit a uniform positive lower bound on $`\lambda_1`$ once the metric class is fixed (bounded geometry prevents collapse).
+For $`S^1_\ell`$ (length $`\ell`$), $`\lambda_1=(2\pi/\ell)^2`$. For a flat torus $`T^m`$ with side lengths $`L_j`$, $`\lambda_1=(2\pi)^2\min_j L_j^{-2}`$. For the round $`S^3`$ (radius $`1`$), $`\lambda_1=3`$ (see, e.g., ). Nilmanifold factors with bounded geometry admit a uniform positive lower bound on $`\lambda_1`$ once the metric class is fixed (bounded geometry prevents collapse).
 
 ## Fields, norms, and (optional) spinors
 
@@ -477,7 +485,7 @@ Strong commutation gives the joint projector $`\Pi_{\mathrm{coh}}(y)=\Pi_1(y)\Pi
 hence
 ``` math
 \|\partial_\alpha \Pi_n(y)\|_{\ensuremath{L^{2}}\to\ensuremath{L^{2}}}
-\le \frac{C}{\ensuremath{\lambda^{\ast}}^{2}}\|\partial_\alpha A_n(y)\|_{H^2\to \ensuremath{L^{2}}}.
+\le \frac{C}{(\ensuremath{\lambda^{\ast}})^2}\|\partial_\alpha A_n(y)\|_{H^2\to \ensuremath{L^{2}}}.
 ```
 Under bounded internal geometry and $`C^m`$ base dependence, $`\|\partial_\alpha A_n(y)\|_{H^2\to \ensuremath{L^{2}}}`$ is uniformly bounded, so $`\|\partial_\alpha \Pi_{\mathrm{coh}}(y)\|_{\ensuremath{L^{2}}\to\ensuremath{L^{2}}}\le C'_\Pi`$ and
 ``` math
