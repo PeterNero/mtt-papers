@@ -1,12 +1,12 @@
 {
-  "abstract": "We analyze the structural consequences of simultaneously resolving multiple obstruction types within a single reduced description. In the Modal Triplet Theory (MTT) framework, gravity, gauge structure, and quantization arise as distinct encoding responses to circle, lens, and nil obstructions respectively. When a single descriptive framework must accommodate all three responses coherently, the space of admissible encodings becomes highly constrained. We show that intersections of encoding classes generically exhibit strong structural rigidity: only a small set of compatible algebraic and representational structures survive admissibility, overlap consistency, and refinement stability. The Standard Model of particle physics is interpreted as a prominent example of such an encoding intersection, rather than as a fundamental or unique theory. This perspective explains why the Standard Model is rigid, anomaly-free, and highly constrained, while also clarifying why it is not final. The analysis does not derive specific coupling constants or parameters, nor does it assume any particular dynamics. It establishes instead that certain structural features of the Standard Model follow from the necessity of simultaneously resolving kinematic consistency, redundancy bookkeeping, and discrete constraint encodings within a single framework.",
+  "abstract": "We give a typed formulation of encoding intersections and determine when such an intersection is actually rigid. Compatibility means that a declared set of geometric, redundancy, quantum, anomaly, and overlap constraints has at least one common realization. Local rigidity means that a realization is isolated after the declared equivalences have been quotiented. Infinitesimal rigidity, persistence, and global uniqueness are different properties. On a finite-dimensional moduli chart, if the combined constraint map has injective derivative at a solution, that solution is locally isolated. For clean transverse constraint submanifolds, the intersection dimension is the ambient dimension minus the sum of codimensions. These theorems make rigidity conditional on the category, representation class, topology, overlap maps, anomaly equations, and deformation notion. Mere coexistence of three labels does not imply rigidity: a compatible intersection can contain a continuum, and several isolated realizations can all be locally rigid. Within the fixed selected finite MTT carrier, later exact packets establish a 48-state family-diagonal chiral representation, the faithful global group (SU(3) x SU(2) x U(1))/Z6, and a unique anomaly-free hypercharge line for the completed finite algebra. They prove one selected compatibility branch, not an exhaustive classification of alternative representations, topologies, actions, or ultraviolet completions.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v2",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18355085",
     "created": "2026-01-23T20:10:11.884054+00:00",
@@ -32,12 +32,15 @@
     "updated": "2026-01-23T20:10:12.698838+00:00",
     "version": "v1.0"
   },
-  "main_tex_sha256": "498fbc58d177335a41210378439ffe333eca0ae3191cba6298ffd9decfdbd16c",
+  "main_tex_sha256": "9dd288f66e799860ce95c94b719651973b14a91057a68322eb7386d01997e9a4",
   "paper_id": "the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113",
-  "paper_md_sha256": "2bf127409260615d8ec299af637b60423e8f8d6b65bdfc6197b81f761fc4de9c",
+  "paper_md_sha256": "6dd78f19bf8c0939a89796d0c7c4128923e42068581ba492856f663b9d07cd78",
   "release_state": "zenodo_released",
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "5b1ee58920c406701b0f9e921b68f2a226869654d50835f23b0e2d9de042d19e",
+    "selected_revision": true,
+    "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B4__Encoding_Intersections_and_Structural_Rigidity"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -47,9 +50,14 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 32605,
+      "bytes": 31970,
       "path": "main.tex",
-      "sha256": "498fbc58d177335a41210378439ffe333eca0ae3191cba6298ffd9decfdbd16c"
+      "sha256": "9dd288f66e799860ce95c94b719651973b14a91057a68322eb7386d01997e9a4"
+    },
+    {
+      "bytes": 7676,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "5b1ee58920c406701b0f9e921b68f2a226869654d50835f23b0e2d9de042d19e"
     },
     {
       "bytes": 4186,
@@ -60,9 +68,9 @@
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B4__Encoding_Intersections_and_Structural_Rigidity"
   },
-  "source_tree_sha256": "0d20d2fd41b757fccb43fe67d90e84cf58898ae3e0c608a5bd1f6b0cfb3ceb6b",
-  "title": "The Modal Triplet Theory Program B4: Encoding Intersections and Structural Rigidity in the Modal Triplet Theory Program The Standard Model as an Encoding Intersection",
-  "version_relation": "matches_latest_release",
+  "source_tree_sha256": "5470599cfb3d34832dbb17f72453b2ab729eb701dc3bf120efeae2247dfb252f",
+  "title": "The Modal Triplet Theory Program B4: Typed Encoding Intersections, Conditional Rigidity, and Standard Model Compatibility",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18355085",

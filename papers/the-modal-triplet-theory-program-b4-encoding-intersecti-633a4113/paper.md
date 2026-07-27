@@ -1,676 +1,574 @@
 ---
 abstract: |
-  We analyze the structural consequences of simultaneously resolving multiple obstruction types within a single reduced description. In the Modal Triplet Theory (MTT) framework, gravity, gauge structure, and quantization arise as distinct encoding responses to circle, lens, and nil obstructions respectively. When a single descriptive framework must accommodate all three responses coherently, the space of admissible encodings becomes highly constrained.
+  We give a typed formulation of encoding intersections and determine when such an intersection is actually rigid. Compatibility means that a declared set of geometric, redundancy, quantum, anomaly, and overlap constraints has at least one common realization. Local rigidity means that a realization is isolated after the declared equivalences have been quotiented. Infinitesimal rigidity, persistence, and global uniqueness are different properties.
 
-  We show that intersections of encoding classes generically exhibit strong structural rigidity: only a small set of compatible algebraic and representational structures survive admissibility, overlap consistency, and refinement stability. The Standard Model of particle physics is interpreted as a prominent example of such an encoding intersection, rather than as a fundamental or unique theory.
+  On a finite-dimensional moduli chart, if the combined constraint map has injective derivative at a solution, that solution is locally isolated. For clean transverse constraint submanifolds, the intersection dimension is the ambient dimension minus the sum of codimensions. These theorems make rigidity conditional on the category, representation class, topology, overlap maps, anomaly equations, and deformation notion. Mere coexistence of three labels does not imply rigidity: a compatible intersection can contain a continuum, and several isolated realizations can all be locally rigid.
 
-  This perspective explains why the Standard Model is rigid, anomaly-free, and highly constrained, while also clarifying why it is not final. The analysis does not derive specific coupling constants or parameters, nor does it assume any particular dynamics. It establishes instead that certain structural features of the Standard Model follow from the necessity of simultaneously resolving kinematic consistency, redundancy bookkeeping, and discrete constraint encodings within a single framework.
+  We distinguish classical bundle-cocycle consistency from quantum gauge anomalies. Anomaly cancellation is necessary for a declared chiral quantum gauge realization but does not select a unique group or representation. Within the fixed selected finite MTT carrier, later exact packets establish a 48-state family-diagonal chiral representation, the faithful global group $`(SU(3)\times SU(2)\times U(1))/\mathbb Z_6`$, and a unique anomaly-free hypercharge line for the completed finite algebra. We reproduce the relevant anomaly cancellations and state their exact scope. They prove one selected compatibility branch, not an exhaustive classification of alternative representations, topologies, actions, or ultraviolet completions. Program B4 therefore supplies a conditional rigidity theorem and a Standard Model compatibility certificate, not a uniqueness theorem for the observed theory.
 author:
 - Peter Nero
-current_version: v1.0
-date: January, 2026
-generated_from_main_tex_sha256: 498fbc58d177335a41210378439ffe333eca0ae3191cba6298ffd9decfdbd16c
+current_version: v2
+date: July 2026
+generated_from_main_tex_sha256: 9dd288f66e799860ce95c94b719651973b14a91057a68322eb7386d01997e9a4
 paper_id: the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113
 release_state: zenodo_released
 released_version: v1.0
 title: |
   The Modal Triplet Theory Program B4:  
-  Encoding Intersections and Structural Rigidity  
-  in the Modal Triplet Theory Program  
-  The Standard Model as an Encoding Intersection
+  Typed Encoding Intersections, Conditional Rigidity,  
+  and Standard Model Compatibility
 zenodo_doi: 10.5281/zenodo.18355086
 zenodo_record_id: 18355086
 zenodo_url: "https://zenodo.org/records/18355086"
 ---
 
-# Introduction and Scope
+# Revision note for version 2
 
-The Modal Triplet Theory Program establishes that reduced descriptions are local, that global coherence is generically obstructed, and that three and only three structural obstruction types exist: circle, lens, and nil. Previous papers in the series identified the encoding responses forced by these obstructions: gravity as kinematic consistency encoding, gauge structure as redundancy encoding, and quantization as discrete constraint encoding.
+<div class="description">
 
-The purpose of the present paper is to analyze what happens when these encoding responses must coexist within a single descriptive framework. We ask the following question:
+Version 1 of Program B4.
 
-> *What structural constraints arise when a reduced description must simultaneously resolve circle, lens, and nil obstructions?*
+The first version called triple intersections generically rigid without specifying a topology, deformation class, independent constraint equations, or quotient by equivalence. It also conflated classical overlap failure with quantum anomaly and moved from Standard Model consistency to an informal explanation of its exceptional selection.
 
-We show that such coexistence generically leads to strong rigidity. Many encoding choices that are admissible when considered in isolation become incompatible when combined. The surviving encodings form a narrow intersection characterized by constrained algebraic structure, limited representation content, and topological consistency conditions.
+Version 2 defines compatibility, local rigidity, infinitesimal rigidity, persistence, and global uniqueness separately. It proves a full-rank local rigidity criterion and a transverse intersection dimension theorem, states the required representation/anomaly/overlap contract, and gives explicit nonuniqueness countermodels.
 
-The Standard Model of particle physics is interpreted here as an example of such an encoding intersection. In this view, the Standard Model is not fundamental and not unique in principle, but it is structurally rigid because it simultaneously implements:
+Combining independently meaningful constraints can narrow a realization space; anomaly equations can remove candidate chiral representations; and the Standard Model furnishes an important compatible realization.
 
-- gauge redundancy bookkeeping (lens resolution);
-
-- kinematic consistency constraints compatible with gravity (circle resolution);
-
-- discrete survivor structure enforced by quantization (nil resolution).
-
-Throughout this paper we emphasize that the analysis is structural rather than dynamical. No equations of motion, symmetry-breaking mechanisms, or parameter values are assumed or derived. The goal is to explain *why a theory like the Standard Model exists at all* within the space of admissible encodings, not to claim that it is the final or unique description of nature.
-
-<div class="remark">
-
-*Remark 1* (Position in the series). This paper belongs to the B-layer of the Modal Triplet Theory Program. It depends on the prior identification of gravity, gauge structure, and quantization as distinct encoding classes, and it precedes papers on saturated or unified encodings and on concrete geometric realizations. No new obstruction types or encoding classes are introduced here.
+No theorem here exhausts all gauge groups, global quotients, representations, bundle topologies, anomaly mechanisms, actions, quantum completions, or beyond-Standard-Model branches. Consequently no global uniqueness or inevitability claim is made.
 
 </div>
 
-# Simultaneous Resolution of Obstruction Types
+# Scope, Dependencies, and Current Evidence
 
-In this section we formalize what it means for multiple obstruction types to be resolved within a single reduced description. We show that simultaneous resolution is not automatic: encoding responses that are admissible in isolation may become incompatible when required to coexist.
+Program A0 supplies typed reductions, equivalence relations, admissible domains, and exact factorization criteria . Program B0 treats circle, lens, and nil as nonexhaustive profiles rather than literal factors or unique physical theories . Program B1 obtains gravitational geometry only after a Lorentzian metric, physical carrier, and action are supplied  . Program B2 obtains gauge theory only after a group action, principal bundle, connection, invariant pairing, and action are supplied  . Program B3 separates a discrete survivor filter from a complex quantum reconstruction .
 
-## Encoding coexistence
+Program B4 therefore does not intersect three words. It intersects explicitly typed realization classes whose data have already been declared.
 
-We recall that in the Modal Triplet Theory framework, each obstruction type forces a distinct encoding response:
+## Later selected-branch results
 
-- circle obstructions force kinematic consistency encoding (gravity);
+Three later results are directly relevant:
 
-- lens obstructions force redundancy encoding (gauge structure);
+A46.  
+A 48-state, three-family chiral carrier $`\mathbb C^3_{\rm family}\otimes\mathcal H_{16}`$ with family-diagonal gauge action and an exact anomaly table .
 
-- nil obstructions force discrete constraint encoding (quantization).
+A47.  
+Native unitary automorphisms $`U(1)`$, $`SU(2)`$, and $`SU(3)`$ on the selected rank carriers, with faithful kernel $`\mathbb Z_6`$ on the A46 matter rows  .
 
-Each encoding class is defined independently and resolves a specific failure of global coherence.
+A50.  
+For the completed fixed finite algebra and the A46 spectrum, a one-dimensional anomaly-free abelian phase nullspace with primitive hypercharge vector .
 
-<div class="definition">
+All three are derived-exact at their declared finite selected-branch tier. They strengthen the existence side of this paper. Their own claim boundaries exclude exhaustive ultraviolet selection, full no-knob Standard Model values, and classification of all alternative carriers.
 
-**Definition 2** (Encoding coexistence). A reduced description is said to exhibit *encoding coexistence* if it admits a single admissible encoding framework in which multiple encoding responses are simultaneously active and mutually compatible.
+# Typed Encoding-Intersection Data
 
-</div>
+## The category must be fixed
 
-Encoding coexistence is therefore a property of the intersection of encoding classes.
+<div id="def:intersection-datum" class="definition">
 
-## Nontriviality of coexistence
+**Definition 1** (Intersection datum). An *encoding-intersection datum* consists of:
 
-Encoding coexistence is not guaranteed.
+1.  a category or structured class $`\mathcal E`$ of candidate realizations;
 
-<div class="remark">
+2.  an equivalence relation or groupoid of admissible re-encodings;
 
-*Remark 3*. An encoding that resolves a single obstruction type may fail to admit any extension that simultaneously resolves additional obstruction types. For example, an encoding that resolves lens obstructions via redundancy bookkeeping may be incompatible with discrete constraint encoding required by nil obstructions.
+3.  a topology, smooth structure, or deformation functor when rigidity is to be discussed;
 
-</div>
+4.  constraint predicates or maps for geometric transport, redundancy, quantum reconstruction, anomalies, and overlap compatibility; and
 
-This nontriviality is the source of rigidity.
-
-## Compatibility constraints
-
-We now identify general compatibility requirements.
-
-<div class="definition">
-
-**Definition 4** (Encoding compatibility). Two encoding classes are *compatible* if there exists at least one admissible encoding framework that implements both encoding responses without violating admissibility, overlap consistency, or refinement stability.
+5.  declared boundary conditions, regularity, and source data.
 
 </div>
 
-Compatibility is symmetric but not transitive.
+Examples of data hidden by an untyped “encoding space” include spacetime dimension and signature, spin or $`\mathrm{Spin}^c`$ structure, the global form of a gauge group, principal-bundle topology, matter representations, the observable algebra, and the class of allowed deformations.
 
-## Triple compatibility
+## Constraint loci
 
-The case of interest in this paper is triple compatibility.
-
-<div class="definition">
-
-**Definition 5** (Triple encoding compatibility). A reduced description exhibits *triple compatibility* if it simultaneously implements:
-
-1.  kinematic consistency encoding (gravity);
-
-2.  redundancy encoding (gauge);
-
-3.  discrete constraint encoding (quantization).
-
-</div>
-
-Triple compatibility corresponds to simultaneous resolution of circle, lens, and nil obstructions.
-
-## Structural tension between encodings
-
-We now explain why triple compatibility is highly constraining.
-
-<div class="remark">
-
-*Remark 6*. Each encoding response imposes constraints on admissible description:
-
-- gravity constrains admissible continuation and causal structure;
-
-- gauge constrains representation redundancy and automorphism structure;
-
-- quantization constrains admissible descriptive sets to discrete survivors.
-
-These constraints act on different aspects of the reduced description, but they interact through overlap consistency and refinement stability.
-
-</div>
-
-The interaction of these constraints sharply restricts the space of admissible encodings.
-
-## Failure modes of coexistence
-
-Encoding coexistence may fail in several ways.
-
-- Gravity–gauge incompatibility: redundancy bookkeeping conflicts with kinematic consistency constraints.
-
-- Gauge–quantization incompatibility: discrete constraint encoding removes continuous gauge redundancy.
-
-- Gravity–quantization incompatibility: discrete survivors fail to support consistent kinematic continuation.
-
-Only special encoding frameworks avoid all three failure modes.
-
-## Emergence of rigidity
-
-We now state the central qualitative result.
-
-<div class="theorem">
-
-**Theorem 7** (Rigidity from encoding coexistence). *The space of admissible encodings exhibiting triple compatibility is structurally rigid: generic perturbations of encoding structure destroy compatibility.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Each encoding response imposes independent admissibility constraints. The intersection of these constraint sets is generically small. Small changes to encoding structure typically violate at least one compatibility condition, eliminating triple coexistence. ◻
-
-</div>
-
-This rigidity is structural rather than dynamical.
-
-## Interpretive note
-
-Rigidity does not imply uniqueness.
-
-<div class="remark">
-
-*Remark 8*. Structural rigidity implies that admissible encoding intersections form a narrow set, not necessarily a single element. Multiple distinct encoding frameworks may exist, but they are isolated and highly constrained.
-
-</div>
-
-## Preview: general rigidity theorem
-
-In the next section we make the notion of rigidity precise and show that structural rigidity follows from admissibility and refinement stability alone, independent of any specific physical realization.
-
-# Rigidity from Encoding Intersection
-
-In this section we make the notion of rigidity introduced previously precise. Rigidity here refers to the structural property that admissible encodings exhibiting simultaneous resolution of multiple obstruction types form an isolated and highly constrained subset of the space of all admissible encodings.
-
-## Space of admissible encodings
-
-We begin by clarifying what is meant by the “space” of encodings.
-
-<div class="definition">
-
-**Definition 9** (Encoding space). The *encoding space* is the set of all admissible encoding frameworks compatible with the Modal Triplet Theory core, equipped with the equivalence relation induced by admissible re-encoding and refinement.
-
-</div>
-
-Elements of the encoding space are not parameterized by continuous variables in general; they form a structured set defined by admissibility constraints.
-
-## Constraint sets induced by encodings
-
-Each encoding response induces a constraint subset of the encoding space.
-
-<div class="definition">
-
-**Definition 10** (Constraint subset). Given an encoding response (gravity, gauge, or quantization), the corresponding *constraint subset* is the set of encodings in the encoding space that implement that response while preserving admissibility and refinement stability.
-
-</div>
-
-We denote these subsets by:
+After quotienting or choosing a local slice for the declared equivalences, let $`\mathcal M`$ denote a moduli object of candidate realizations. Write
 ``` math
-\mathcal C_{\mathrm{grav}}, \quad
-\mathcal C_{\mathrm{gauge}}, \quad
-\mathcal C_{\mathrm{quant}}.
+\mathcal C_{\mathrm{geo}},\quad \mathcal C_{\mathrm{red}},\quad \mathcal C_{\mathrm{qm}},\quad \mathcal C_{\mathrm{an}},\quad \mathcal C_{\mathrm{ov}}
+ \subseteq \mathcal M
+```
+for the loci satisfying the supplied geometric, redundancy, quantum, anomaly, and overlap contracts. The common solution locus is
+``` math
+\mathcal Z
+ =
+ \mathcal C_{\mathrm{geo}}\cap\mathcal C_{\mathrm{red}}\cap\mathcal C_{\mathrm{qm}}\cap\mathcal C_{\mathrm{an}}\cap\mathcal C_{\mathrm{ov}}.
+```
+The five labels are organizational. They need not be independent, smooth, or nonempty.
+
+<div class="definition">
+
+**Definition 2** (Compatibility and realization). The datum is *compatible* when $`\mathcal Z\ne\varnothing`$. A *realization* is an equivalence class $`[e]\in\mathcal Z`$.
+
+</div>
+
+Compatibility is an existence statement. Exhibiting one realization proves nonemptiness and nothing about the number of other realizations.
+
+## Four different rigidity predicates
+
+<div id="def:local-rigidity" class="definition">
+
+**Definition 3** (Local rigidity). A realization $`[e]\in\mathcal Z`$ is *locally rigid* if it is isolated in $`\mathcal Z`$ with the declared quotient topology.
+
+</div>
+
+<div id="def:inf-rigidity" class="definition">
+
+**Definition 4** (Infinitesimal rigidity). On a smooth local moduli chart where the constraints are represented by a map $`F`$, a solution $`e`$ is *infinitesimally rigid* if
+``` math
+\ker dF_e=\{0\}.
 ```
 
-## Intersection structure
-
-Triple compatibility corresponds to the intersection:
-``` math
-\mathcal C_{\mathrm{grav}} \cap
-\mathcal C_{\mathrm{gauge}} \cap
-\mathcal C_{\mathrm{quant}}.
-```
-
-This intersection need not be large and is generically empty unless additional structural conditions are met.
-
-## Definition of rigidity
-
-We now define rigidity formally.
+</div>
 
 <div class="definition">
 
-**Definition 11** (Structural rigidity). An encoding intersection is *structurally rigid* if any admissible perturbation of the encoding framework (consistent with admissibility and local describability) moves the encoding outside at least one of the constraint subsets $`\mathcal C_{\mathrm{grav}}`$, $`\mathcal C_{\mathrm{gauge}}`$, or $`\mathcal C_{\mathrm{quant}}`$.
+**Definition 5** (Global uniqueness). The datum is *globally unique* if $`\mathcal Z`$ contains exactly one equivalence class.
 
 </div>
-
-Rigid intersections are isolated points or isolated families in the encoding space.
-
-## Generic rigidity of triple intersections
-
-We now establish the generic rigidity result.
-
-<div class="theorem">
-
-**Theorem 12** (Generic rigidity of triple encoding intersections). *The intersection
-``` math
-\mathcal C_{\mathrm{grav}} \cap
-\mathcal C_{\mathrm{gauge}} \cap
-\mathcal C_{\mathrm{quant}}
-```
-is structurally rigid.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Each constraint subset imposes independent admissibility requirements on the encoding structure:
-
-- gravity imposes constraints on admissible continuation and causal stability;
-
-- gauge imposes constraints on fiber automorphism structure and redundancy bookkeeping;
-
-- quantization imposes constraints on allowable descriptive sets and discreteness.
-
-These constraints act on distinct but interacting aspects of the encoding. Small perturbations of encoding structure generically violate at least one constraint, removing the encoding from the triple intersection. Therefore the triple intersection is structurally rigid. ◻
-
-</div>
-
-## Rigidity without uniqueness
-
-Rigidity does not imply uniqueness.
-
-<div class="remark">
-
-*Remark 13*. Structural rigidity implies that admissible encoding intersections form a narrow and isolated set, but does not imply that only a single encoding framework exists. Multiple isolated frameworks may exist, potentially corresponding to different physical realizations or extensions.
-
-</div>
-
-## Interpretive consequences
-
-Rigidity explains why certain descriptive frameworks appear highly constrained.
-
-<div class="remark">
-
-*Remark 14*. The structural rigidity of triple encoding intersections explains why theories that simultaneously exhibit gravity, gauge structure, and quantization are rare and resistant to deformation. This rarity is structural rather than accidental.
-
-</div>
-
-## Preview: gauge content and representation constraints
-
-The next step is to analyze how rigidity manifests concretely in the structure of gauge redundancy and representation content.
-
-<div class="remark">
-
-*Remark 15*. In the next section we show that structural rigidity strongly constrains the allowed gauge groups, representations, and anomaly structure of admissible encoding intersections.
-
-</div>
-
-# Gauge Content and Representation Constraints
-
-In this section we analyze how structural rigidity manifests in the gauge sector of encoding intersections. We show that simultaneous compatibility with kinematic consistency (gravity), redundancy bookkeeping (gauge), and discrete constraint encoding (quantization) imposes strong restrictions on admissible gauge groups and representation content.
-
-## Gauge redundancy under triple compatibility
-
-Gauge structure resolves lens obstructions by introducing fiber automorphisms. In isolation, the choice of gauge group and representation content is largely unconstrained. However, triple compatibility sharply restricts this freedom.
-
-<div class="remark">
-
-*Remark 16*. Gauge redundancy must coexist with:
-
-- kinematic consistency constraints imposed by gravity;
-
-- discrete survivor constraints imposed by quantization.
-
-These additional requirements rule out most otherwise admissible gauge structures.
-
-</div>
-
-## Constraint from kinematic consistency
-
-Gravity encoding constrains how gauge degrees of freedom may vary.
-
-<div class="lemma">
-
-**Lemma 17**. *In a triple-compatible encoding, gauge transformations must preserve kinematic equivalence classes of worldlines.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Gravity stabilizes kinematic persistence by enforcing path-independent identity of worldlines. Any gauge transformation that altered kinematic equivalence classes would reintroduce path dependence, violating kinematic consistency. Therefore admissible gauge transformations must act trivially on worldline identity. ◻
-
-</div>
-
-This rules out gauge structures that mix or permute kinematically distinct continuation classes.
-
-## Constraint from discrete survivors
-
-Quantization further constrains gauge content.
-
-<div class="lemma">
-
-**Lemma 18**. *In a triple-compatible encoding, gauge representations must preserve discrete survivor structure.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Discrete survivors are selected by stability under admissible refinement. Gauge transformations that map a discrete survivor to a continuously connected family of descriptions would violate refinement stability. Therefore admissible gauge representations must act within discrete survivor classes. ◻
-
-</div>
-
-This excludes large classes of representations that would otherwise be allowed.
-
-## Representation rigidity
-
-The combined constraints lead to rigidity.
-
-<div class="theorem">
-
-**Theorem 19** (Gauge representation rigidity). *In a triple-compatible encoding, the admissible gauge representations form a rigid and highly constrained set. Generic representations are incompatible with either kinematic consistency or discrete constraint encoding.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* By the preceding lemmas, admissible representations must simultaneously:
-
-1.  preserve kinematic equivalence classes;
-
-2.  preserve discrete survivor structure;
-
-3.  respect redundancy bookkeeping under lens obstructions.
-
-These requirements severely restrict representation content. Small perturbations of representation structure generically violate at least one condition, destroying triple compatibility. ◻
-
-</div>
-
-## Emergence of chiral and anomaly-sensitive structures
-
-Rigidity has further consequences.
-
-<div class="remark">
-
-*Remark 20*. Representations that satisfy the above constraints often exhibit chirality and sensitivity to anomaly cancellation conditions. This is not imposed by symmetry principles, but emerges from the requirement that gauge redundancy coexist with gravity and quantization without inconsistency.
-
-</div>
-
-This observation prepares the analysis of anomaly cancellation.
-
-## Constraint on gauge group size
-
-Gauge group complexity is also limited.
-
-<div class="lemma">
-
-**Lemma 21**. *Triple compatibility disfavors excessively large or unconstrained gauge groups.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Larger gauge groups typically admit representations that violate either kinematic consistency or discrete survivor preservation. Restricting to representations that avoid such violations eliminates most large or arbitrary gauge groups from the triple intersection. ◻
-
-</div>
-
-This explains why admissible gauge groups tend to be modest in size and highly structured.
-
-## Interpretive note
-
-The constraints derived here are structural.
-
-<div class="remark">
-
-*Remark 22*. The emergence of constrained gauge content should not be interpreted as a derivation of a specific physical theory. It reflects the narrowing of admissible encoding intersections under triple compatibility, not the selection of unique dynamics or parameters.
-
-</div>
-
-## Preview: anomaly cancellation
-
-The next section shows that anomaly cancellation conditions arise naturally as admissibility constraints in triple-compatible encodings.
-
-<div class="remark">
-
-*Remark 23*. In the next section we demonstrate that failure of anomaly cancellation leads to breakdown of overlap consistency or refinement stability, rendering such encodings inadmissible.
-
-</div>
-
-# Anomaly Cancellation as an Admissibility Constraint
-
-In this section we show that anomaly cancellation conditions arise as structural admissibility constraints in triple-compatible encoding intersections. Anomalies are interpreted not as quantum loop effects, but as failures of overlap consistency or refinement stability in the presence of gauge, gravity, and quantization encodings.
-
-## Structural meaning of anomalies
-
-We begin by defining anomalies in an encoding-relative manner.
 
 <div class="definition">
 
-**Definition 24** (Encoding anomaly). An *encoding anomaly* occurs when a proposed encoding framework fails to satisfy admissibility, overlap consistency, or refinement stability after simultaneously implementing gravity, gauge, and quantization encodings.
+**Definition 6** (Persistence). A solution *persists* under a declared parameter perturbation if a nearby solution exists for every sufficiently small allowed parameter, with the declared regularity.
 
 </div>
 
-An anomaly is therefore a structural inconsistency of description rather than a dynamical effect.
+Local rigidity, infinitesimal rigidity, persistence, and global uniqueness do not imply one another without additional hypotheses. In particular, an overdetermined isolated solution can disappear under a small perturbation.
 
-## Overlap consistency and gauge redundancy
+# Conditional Rigidity Theorems
 
-Gauge structure requires that redundancy bookkeeping be compatible on overlaps of admissible domains.
+## A full-rank criterion
 
-<div class="lemma">
+<div id="thm:jacobian" class="theorem">
 
-**Lemma 25**. *If gauge redundancy bookkeeping fails to compose consistently on triple overlaps, the encoding is inadmissible.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Overlap consistency requires that local re-encodings compose associatively up to admissible equivalence. Failure of this condition implies that no consistent reduced description exists on triple overlaps, violating admissibility. ◻
-
-</div>
-
-Such failures correspond to gauge anomalies.
-
-## Interaction with kinematic consistency
-
-Gravity encoding imposes additional constraints.
-
-<div class="lemma">
-
-**Lemma 26**. *If gauge redundancy transformations alter kinematic equivalence classes of worldlines, the combined encoding violates kinematic consistency.*
+**Theorem 7** (Injective-Jacobian local rigidity). *Let $`\mathcal M`$ be a smooth $`n`$-manifold, let $`F:\mathcal M\to\mathbb R^m`$ be smooth with $`m\ge n`$, and let $`e\in F^{-1}(0)`$. If
+``` math
+\mathop{\mathrm{rank}}dF_e=n,
+```
+then $`e`$ is locally isolated in $`F^{-1}(0)`$.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Kinematic consistency encoding enforces path-independent identity of worldlines. Gauge transformations that alter kinematic equivalence reintroduce circle obstructions at the kinematic level, contradicting gravity encoding. ◻
+*Proof.* Since $`dF_e`$ is injective, there is a linear projection $`L:\mathbb R^m\to\mathbb R^n`$ such that $`d(L\circ F)_e`$ is invertible. By the inverse-function theorem, $`L\circ F`$ is a diffeomorphism from a neighborhood of $`e`$ onto a neighborhood of zero. In that neighborhood, $`F(x)=0`$ implies $`(L\circ F)(x)=0`$, hence $`x=e`$. ◻
 
 </div>
 
-This rules out anomalous gauge actions that fail to respect gravitational consistency.
+<div class="remark">
 
-## Interaction with discrete constraint encoding
+*Remark 8* (Quotient directions). If a group acts by equivalences, orbit directions normally lie in the kernel of the unquotiented derivative. Theorem <a href="#thm:jacobian" data-reference-type="ref" data-reference="thm:jacobian">7</a> must be applied on a valid local slice or to the deformation complex modulo infinitesimal automorphisms.
 
-Quantization further restricts admissibility.
+</div>
 
-<div class="lemma">
+## Transverse intersections
 
-**Lemma 27**. *If gauge redundancy transformations fail to preserve discrete survivor classes, the encoding violates refinement stability near nil boundaries.*
+<div id="thm:transverse" class="theorem">
+
+**Theorem 9** (Dimension of a transverse compatibility locus). *Let $`\mathcal M`$ be an $`n`$-manifold and let $`C_1,\ldots,C_k\subseteq\mathcal M`$ be embedded submanifolds of codimensions $`c_1,\ldots,c_k`$. If they meet transversely at every point of their common intersection, then that intersection is a submanifold of dimension
+``` math
+n-\sum_{j=1}^k c_j.
+```
+In particular, dimension zero gives local discreteness; positive dimension gives continuous compatible deformations .*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Discrete survivors must remain invariant under all admissible re-encodings. Gauge transformations that mix or destroy discrete survivor structure violate the discrete constraint encoding and render the description inadmissible. ◻
+*Proof.* Locally represent each $`C_j`$ as the regular zero set of a submersion. Transversality says that the combined derivative is surjective. The regular-value theorem applied to the combined map gives the stated dimension. ◻
 
 </div>
 
-This excludes anomalies that are invisible classically but destroy quantized structure.
+<div class="corollary">
 
-## Anomaly cancellation as necessity
-
-We now state the central result.
-
-<div class="theorem">
-
-**Theorem 28** (Anomaly cancellation as admissibility condition). *A gauge encoding is admissible in a triple-compatible encoding intersection if and only if all encoding anomalies cancel, i.e. if and only if gauge redundancy bookkeeping is consistent with kinematic consistency and discrete constraint encodings.*
+**Corollary 10** (What a rigidity certificate must show). *A finite-dimensional local rigidity claim is certified by an explicit constraint map and a rank or equivalent deformation-complex calculation after all equivalence directions are removed. Merely listing several requirements does not establish their independence.*
 
 </div>
 
-<div class="proof">
+## Three counterexamples
 
-*Proof.* (*If*) If anomalies cancel, overlap consistency, kinematic consistency, and refinement stability are preserved, and the encoding remains admissible.
+<div id="prop:continuum" class="proposition">
 
-(*Only if*) If any anomaly remains uncanceled, at least one of overlap consistency, kinematic consistency, or discrete survivor preservation fails, rendering the encoding inadmissible. ◻
-
-</div>
-
-## Rigidity of anomaly-free encodings
-
-Anomaly cancellation further tightens rigidity.
-
-<div class="remark">
-
-*Remark 29*. The requirement of anomaly cancellation removes entire families of otherwise plausible gauge encodings from the triple intersection. Anomaly-free encodings form a discrete and rigid subset of the already narrow compatibility space.
-
-</div>
-
-This explains why anomaly-free theories appear exceptional rather than generic.
-
-## Interpretive consequences
-
-We emphasize the structural nature of anomaly cancellation.
-
-<div class="remark">
-
-*Remark 30*. Anomaly cancellation is not imposed as a consistency condition of quantum field theory, nor derived from perturbative calculations. It is a structural requirement of admissible description once gravity, gauge, and quantization are simultaneously present.
-
-</div>
-
-## Preview: the Standard Model as an encoding intersection
-
-We are now prepared to analyze a concrete example.
-
-<div class="remark">
-
-*Remark 31*. In the next section we show how the Standard Model realizes a triple-compatible, anomaly-free encoding intersection, and why small deviations from its structure typically violate admissibility.
-
-</div>
-
-# The Standard Model as an Encoding Intersection
-
-In this section we interpret the Standard Model of particle physics as a concrete example of a triple-compatible encoding intersection. The purpose is not to derive the Standard Model uniquely, but to explain why a theory with its structural features exists at all and why it exhibits exceptional rigidity.
-
-## Structural features of the Standard Model
-
-At the level relevant to this analysis, the Standard Model is characterized by the following structural properties:
-
-- the presence of nonabelian and abelian gauge redundancy;
-
-- compatibility with gravitational kinematic consistency;
-
-- discrete representation content and quantized charges;
-
-- cancellation of gauge, gravitational, and mixed anomalies.
-
-These features are taken here as descriptive facts, not as axioms.
-
-## Lens resolution: gauge redundancy
-
-The Standard Model implements gauge redundancy as required by lens obstructions.
-
-<div class="remark">
-
-*Remark 32*. The gauge structure of the Standard Model provides redundancy bookkeeping for non-unique local lifts of coherent structure. Gauge transformations act as fiber automorphisms preserving physical content, in accordance with the redundancy encoding identified earlier.
-
-</div>
-
-This places the Standard Model squarely within the gauge encoding class.
-
-## Circle compatibility: kinematic consistency
-
-The Standard Model is compatible with kinematic consistency encoding.
-
-<div class="remark">
-
-*Remark 33*. The Standard Model admits coupling to gravity without violating kinematic consistency of worldlines. Gauge transformations act trivially on kinematic identity, and anomaly cancellation ensures that gauge redundancy does not reintroduce path-dependent kinematic inconsistency.
-
-</div>
-
-This compatibility is nontrivial and excludes many otherwise plausible gauge structures.
-
-## Nil resolution: discrete constraint encoding
-
-The Standard Model exhibits quantized structure consistent with nil resolution.
-
-<div class="remark">
-
-*Remark 34*. The discrete representation content and charge quantization of the Standard Model reflect stability under admissible refinement near nil obstructions. These features are naturally organized by the discrete constraint encoding identified with quantization.
-
-</div>
-
-Continuous deformation of representation content typically destroys this stability.
-
-## Triple compatibility and rigidity
-
-We now summarize the intersection.
-
-<div class="theorem">
-
-**Theorem 35** (Standard Model as triple-compatible encoding). *The Standard Model realizes a triple-compatible encoding intersection resolving circle, lens, and nil obstructions simultaneously.*
+**Proposition 11** (Compatibility need not be rigid). *Three compatible constraint labels can have a continuous common solution set.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Gauge redundancy resolves lens obstructions. Anomaly cancellation and coupling to gravity preserve kinematic consistency, resolving circle obstructions at the kinematic level. Discrete representation content and charge quantization satisfy the requirements of discrete constraint encoding. Together, these features establish triple compatibility. ◻
+*Proof.* Take $`\mathcal M=\mathbb R^2`$ and let all three constraint loci be
+``` math
+C_1=C_2=C_3=\{(x,y):y=0\}.
+```
+Their common intersection is a line. Repeating one condition under three names adds no codimension. ◻
 
 </div>
 
-## Explanation of rigidity
+<div id="prop:two-points" class="proposition">
 
-The exceptional rigidity of the Standard Model follows structurally.
+**Proposition 12** (Local rigidity need not give uniqueness). *Every point of a compatibility locus can be locally rigid while the datum has more than one realization.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Take $`\mathcal M=\mathbb R`$ and $`F(x)=x^2-1`$. The solution locus is $`\{-1,+1\}`$. Both points are isolated and have nonzero derivative, but neither is globally selected. ◻
+
+</div>
 
 <div class="remark">
 
-*Remark 36*. Small perturbations of gauge group, representation content, or anomaly structure typically violate at least one of the triple compatibility conditions. This explains why the Standard Model admits few consistent deformations despite not being unique in principle.
+*Remark 13* (Full rank is sufficient, not necessary). The equation $`F(x)=x^2=0`$ has an isolated solution at $`0`$, although $`dF_0=0`$. Singular methods may prove rigidity where Theorem <a href="#thm:jacobian" data-reference-type="ref" data-reference="thm:jacobian">7</a> does not apply.
 
 </div>
 
-Rigidity is therefore structural, not accidental.
+## The word “generic”
 
-## Non-uniqueness and extensions
+A genericity theorem requires a topology or measure on the space of constraint maps, a perturbation class, and a transversality or prevalence theorem. Even then, it answers a question inside that chosen ensemble. Program B4 makes no unqualified claim that geometric, gauge, and quantum compatibility is generically empty, finite, or rigid.
 
-Triple compatibility does not imply uniqueness.
+# Representation, Overlap, and Quantum Contracts
 
-<div class="remark">
+## Representation class
 
-*Remark 37*. Other encoding intersections may exist that also satisfy triple compatibility, potentially corresponding to extensions or alternatives to the Standard Model. Such possibilities are constrained but not excluded by the present analysis.
+A gauge-representation constraint is meaningful only after fixing:
+
+1.  the local Lie algebra and global group;
+
+2.  the base dimension, signature, and spin structure;
+
+3.  the allowed principal bundles and topological sectors;
+
+4.  the matter and scalar representation category;
+
+5.  chirality, reality, and family assumptions;
+
+6.  boundary conditions and allowed large transformations; and
+
+7.  the equivalence relation on representations.
+
+A discrete list of irreducible representations can make every list entry isolated in the discrete topology. This does not make one entry globally unique. Conversely, continuous coupling or moduli directions can remain after the representation labels are fixed.
+
+## Overlap contract
+
+Let $`P\to X`$ be a principal $`G`$-bundle with local transition functions $`g_{\alpha\beta}`$. The classical bundle-gluing condition is
+``` math
+g_{\alpha\beta}g_{\beta\gamma}g_{\gamma\alpha}=e
+```
+on triple overlaps. A connection, associated matter bundle, and any survivor or quantum source map must transform compatibly with this cocycle.
+
+<div class="definition">
+
+**Definition 14** (Typed overlap compatibility). A candidate intersection is *overlap compatible* when all declared transition maps satisfy their cocycle laws and every structure map in the intersection commutes with those transitions on its stated domain.
 
 </div>
 
-This leaves room for beyond-Standard-Model physics without undermining the structural explanation.
+Failure of this classical cocycle condition means that the proposed bundle or descent datum was not constructed. It is not, by itself, a quantum gauge anomaly.
 
-## Interpretive caution
+## Quantum contract
 
-We emphasize the limits of the present result.
+By Program B3, a quantum layer requires at least a complex observable algebra, a positive state, a representation, dynamics, and effects or instruments. Gauge symmetry must act by the declared automorphisms and be compatible with the physical state or constraint construction. A finite representation table and anomaly cancellation do not alone supply this quantum contract.
 
-<div class="remark">
+# Anomalies: Necessary Constraints, Not a Selection Theorem
 
-*Remark 38*. The analysis presented here does not derive specific gauge groups, coupling constants, mass hierarchies, or symmetry-breaking mechanisms. It explains why the Standard Model has the structural features it does, not why it has its precise numerical parameters.
+## Classical and quantum obstructions
 
-</div>
+A local quantum gauge anomaly is an obstruction to preserving the gauge Ward or BRST identities after quantization. In perturbative chiral gauge theory it is represented by local cohomological descent data and group-theoretic anomaly coefficients. A global anomaly is a possible nontrivial phase or determinant- line obstruction under a large gauge transformation. These depend on the dimension, global group, representations, base topology, and spin data  .
 
-## Preview: saturated and unified encodings
+<div id="prop:anomaly-necessary" class="proposition">
 
-The Standard Model does not resolve all obstruction types maximally.
-
-<div class="remark">
-
-*Remark 39*. In the next paper we analyze saturated or unified encoding frameworks in which circle, lens, and nil obstructions are resolved simultaneously and maximally, leading to string-theoretic and related constructions.
+**Proposition 15** (Anomaly cancellation is necessary but not sufficient). *For a declared chiral quantum gauge realization, cancellation of every anomaly included in its consistency contract is necessary for gauge invariance. Cancellation alone does not prove existence, locality, unitarity, ultraviolet completion, or uniqueness of the theory.*
 
 </div>
 
-# Summary and Outlook
+<div class="proof">
 
-In this paper we have analyzed the structural consequences of simultaneously resolving circle, lens, and nil obstructions within a single reduced description. In the Modal Triplet Theory framework, these obstructions force distinct encoding responses—gravity as kinematic consistency encoding, gauge structure as redundancy encoding, and quantization as discrete constraint encoding. Requiring all three responses to coexist imposes strong compatibility constraints.
+*Proof.* A nonzero anomaly obstructs the declared gauge identity, so the candidate fails that contract. For the converse limitation, anomaly coefficients depend only on part of the theory’s data. Distinct actions, couplings, global groups, matter sectors, and vector-like extensions can have the same vanishing coefficients. ◻
 
-We showed that encoding coexistence is highly nontrivial and generically rigid. While individual encoding classes admit wide freedom when considered in isolation, their intersection is sharply constrained by admissibility, overlap consistency, refinement stability, and anomaly cancellation. The resulting encoding intersections form a narrow and isolated subset of the encoding space.
+</div>
 
-Within this framework, the Standard Model of particle physics was interpreted as a concrete example of a triple-compatible encoding intersection. Its gauge redundancy, compatibility with gravitational kinematic consistency, discrete and quantized representation content, and anomaly cancellation were shown to fit naturally as structural requirements of encoding coexistence. This explains the remarkable rigidity of the Standard Model without claiming that it is fundamental or unique.
+## Anomaly equations do not fix abelian normalization
 
-Importantly, the present analysis does not derive specific gauge groups, couplings, symmetry-breaking mechanisms, or mass spectra. Those features belong to particular realizations and dynamics, not to the structural encoding level. The result is instead an explanation of *why theories with Standard Model–like structure exist at all* within the space of admissible reduced descriptions, and why small deformations are typically inconsistent.
+<div id="thm:scaling" class="theorem">
 
-The rigidity identified here leaves room for extensions and alternatives. Multiple isolated encoding intersections may exist, potentially corresponding to beyond–Standard–Model frameworks. Such possibilities are constrained by the same admissibility and compatibility conditions and are therefore expected to be rare and highly structured.
+**Theorem 16** (Homogeneous hypercharge-scaling no-go). *Fix the nonabelian representations of a four-dimensional chiral gauge theory. Suppose a nonzero hypercharge vector $`Y`$ cancels the mixed $`G^2U(1)`$, mixed gravitational-$`U(1)`$, and $`U(1)^3`$ anomalies. Then $`cY`$ also cancels them for every real $`c`$. Thus anomaly cancellation alone cannot isolate a nonzero abelian normalization.*
 
-This paper completes the analysis of encoding intersections within the Modal Triplet Theory Program. Subsequent work proceeds in two directions. First, we analyze *saturated or unified encodings* in which circle, lens, and nil obstructions are resolved maximally within a single framework, leading to string-theoretic and related constructions. Second, we develop explicit realizations of the encoding classes identified here, constructing geometric, bundle-based, and algebraic models that instantiate the structural results without modifying them.
+</div>
 
-In this way, the Modal Triplet Theory Program explains not only why gravity, gauge structure, and quantization arise, but also why their coexistence leads to exceptional rigidity in the space of admissible physical theories.
+<div class="proof">
+
+*Proof.* The mixed nonabelian and gravitational coefficients are homogeneous linear functions of $`Y`$, while the cubic coefficient is homogeneous of degree three. Their zero sets are invariant under $`Y\mapsto cY`$. ◻
+
+</div>
+
+A primitive charge lattice, global $`U(1)`$ group, coupling convention, or other normalization condition must therefore be fixed. A50 does precisely more than solve homogeneous anomaly equations: it works inside a selected finite algebra, fixes the phase coordinates, and selects the primitive null vector in that declared representation.
+
+## Anomaly-free extensions
+
+<div id="prop:vectorlike" class="proposition">
+
+**Proposition 17** (Vector-like extension counterexample). *Let a four-dimensional chiral gauge representation be perturbatively anomaly-free. Adding a left-handed representation $`R_y`$ together with its conjugate $`\overline R_{-y}`$ leaves all local perturbative gauge and mixed gravitational anomaly coefficients unchanged.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The two members contribute opposite cubic nonabelian indices, opposite $`G^2U(1)`$ and gravitational-$`U(1)`$ coefficients, and opposite $`U(1)^3`$ coefficients. Their sum vanishes. ◻
+
+</div>
+
+Global anomalies and the rest of the physical contract must still be checked. Nevertheless, Proposition <a href="#prop:vectorlike" data-reference-type="ref" data-reference="prop:vectorlike">17</a> gives infinitely many representation categories in which anomaly cancellation cannot by itself select the Standard Model.
+
+# A Standard Model Compatibility Packet
+
+## Declared chiral carrier
+
+Use left-handed Weyl fields and one neutral singlet per family:
+``` math
+\begin{array}{c|c|c|c|c}
+\text{field} & SU(3) & SU(2) & Y & \text{multiplicity}\\
+\hline
+Q     & \mathbf 3             & \mathbf 2 & 1/6  & 6\\
+u^c   & \overline{\mathbf 3}  & \mathbf 1 & -2/3 & 3\\
+d^c   & \overline{\mathbf 3}  & \mathbf 1 & 1/3  & 3\\
+L     & \mathbf 1             & \mathbf 2 & -1/2 & 2\\
+e^c   & \mathbf 1             & \mathbf 1 & 1    & 1\\
+N^c   & \mathbf 1             & \mathbf 1 & 0    & 1
+\end{array}
+```
+This is the one-family $`\mathcal H_{16}`$ used by A46. Three family copies give the 48-state chiral carrier.
+
+## Exact local anomaly sums
+
+Using the fundamental quadratic index $`T(\mathbf 3)=T(\mathbf 2)=1/2`$, the one-family mixed anomalies are
+``` math
+\begin{aligned}
+\mathcal A_{SU(3)^2U(1)}
+ &=2\left(\frac12\right)\left(\frac16\right)
+   +\left(\frac12\right)\left(-\frac23\right)
+   +\left(\frac12\right)\left(\frac13\right)=0,\\
+\mathcal A_{SU(2)^2U(1)}
+ &=3\left(\frac12\right)\left(\frac16\right)
+   +\left(\frac12\right)\left(-\frac12\right)=0.
+\end{aligned}
+```
+The abelian and mixed gravitational coefficients are
+``` math
+\begin{aligned}
+\mathcal A_{U(1)^3}
+ &=6\left(\frac16\right)^3
+  +3\left(-\frac23\right)^3
+  +3\left(\frac13\right)^3
+  +2\left(-\frac12\right)^3+1^3+0^3=0,\\
+\mathcal A_{\mathrm{grav}^2U(1)}
+ &=6\left(\frac16\right)
+  +3\left(-\frac23\right)
+  +3\left(\frac13\right)
+  +2\left(-\frac12\right)+1+0=0.
+\end{aligned}
+```
+For the cubic $`SU(3)`$ anomaly, $`Q`$ contributes two fundamentals and $`u^c,d^c`$ contribute two antifundamentals, so
+``` math
+\mathcal A_{SU(3)^3}=2-1-1=0.
+```
+There is no perturbative cubic $`SU(2)`$ anomaly for these pseudoreal representations. The Witten global anomaly cancels because one family has three color copies of the $`Q`$ doublet plus one $`L`$ doublet, hence four weak doublets; three families have twelve . These are exactly the rows certified in A46.
+
+## Faithful global group
+
+The direct product $`SU(3)\times SU(2)\times U(1)`$ does not act faithfully on the displayed matter rows. A47 enumerates the centers and obtains the diagonal kernel $`\mathbb Z_6`$. On that selected carrier the faithful global group is
+``` math
+G_{\mathrm{SM}}
+ =
+ \frac{SU(3)\times SU(2)\times U(1)_Y}{\mathbb Z_6}.
+```
+This is stronger than specifying the Lie algebra $`\mathfrak{su}(3)\oplus\mathfrak{su}(2)\oplus\mathfrak u(1)`$, because it records the global action on the matter representation.
+
+## The selected hypercharge line
+
+In A50 the abelian phase coordinates $`(\alpha_{\mathbb C},\mu_{M_3},\nu_{\mathbb C_N})`$ satisfy two independent linear anomaly equations,
+``` math
+\alpha_{\mathbb C}+3\mu_{M_3}=0,
+ \qquad
+ \alpha_{\mathbb C}-\nu_{\mathbb C_N}=0.
+```
+Their nullspace is one-dimensional with primitive vector
+``` math
+(3,-1,3),
+```
+which emits
+``` math
+6Y=(1,-4,2,-3,6,0)
+```
+on $`(Q,u^c,d^c,L,e^c,N^c)`$. The cubic anomaly then vanishes. The word “unique” here means one anomaly-free phase line inside the fixed completed finite algebra and A46 edge representation. It does not quantify over other algebras, particle lists, global groups, or ultraviolet mechanisms.
+
+## Geometric and quantum scope
+
+On a supplied four-dimensional Lorentzian spin background, these matter representations can be coupled covariantly to the corresponding gauge bundle. That establishes compatibility with background geometry; it does not derive Einstein gravity or quantize gravity. Likewise, a quantum Standard Model requires a gauge-fixed or gauge-invariant quantum field construction, states, renormalization, and observables. The representation and anomaly packet is necessary input to that construction, not its replacement.
+
+<div id="thm:sm" class="theorem">
+
+**Theorem 18** (Scoped Standard Model compatibility). *Fix:*
+
+1.  *a four-dimensional Lorentzian spin background and admissible gauge bundles;*
+
+2.  *the A46 three-family chiral carrier;*
+
+3.  *the A47 faithful global group $`G_{\mathrm{SM}}`$; and*
+
+4.  *the A50 selected hypercharge line.*
+
+*Then the displayed local gauge and mixed gravitational anomaly coefficients vanish, the $`SU(2)`$ Witten parity obstruction vanishes, and the gauge action is compatible with the declared family-diagonal representation. This proves a nonempty selected representation/anomaly intersection.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The local and global anomaly calculations are given above and are multiplied, without changing zero or even parity, by the three family copies. A47 identifies the faithful kernel of the action, and A50 identifies the primitive abelian phase line on the same finite carrier. ◻
+
+</div>
+
+# Why This Does Not Select the Standard Model Globally
+
+## Existence is not exhaustiveness
+
+Theorem <a href="#thm:sm" data-reference-type="ref" data-reference="thm:sm">18</a> exhibits one point in a declared compatibility locus. It does not prove that:
+
+- every other global gauge group or quotient has been classified;
+
+- every anomaly-free chiral or vector-like representation has been excluded;
+
+- every bundle topology or spin background has been considered;
+
+- every Green–Schwarz, inflow, or ultraviolet cancellation mechanism has been excluded;
+
+- the Higgs, Yukawa, flavor, neutrino, or symmetry-breaking sectors are uniquely selected; or
+
+- the measured couplings and masses follow from the same source.
+
+The neutral singlet $`N^c`$ itself illustrates the role of the representation class: because it has $`Y=0`$ and is nonabelian-neutral, adding or removing it does not change the elementary gauge anomaly sums above, although it changes the finite geometry and neutrino sector. A49-A50 select it through additional finite-geometry axioms, not through the anomaly table alone.
+
+## Local versus global uniqueness
+
+A46-A50 can establish uniqueness statements inside a fixed carrier: the faithful kernel of one action, the minimal completion under declared finite-geometry axioms, and the abelian null line in one phase space. These are valuable local or conditional selection results. Proposition  <a href="#prop:two-points" data-reference-type="ref" data-reference="prop:two-points">12</a> shows why they cannot be promoted to global uniqueness without a proof that the candidate class itself is exhaustive.
+
+## Required exhaustive-selection certificate
+
+<div id="def:selection" class="definition">
+
+**Definition 19** (Exhaustive selection certificate). An *exhaustive selection certificate* for the observed Standard Model must:
+
+1.  specify the candidate category and equivalence relation;
+
+2.  fix the dimension, signature, spin data, global gauge-group class, bundle topologies, and representation bounds;
+
+3.  state all overlap, locality, anomaly, quantum, and action constraints;
+
+4.  prove that every candidate is represented in the classification;
+
+5.  decide every candidate against the same constraints;
+
+6.  prove that the surviving quotient has exactly one element, or report all survivors; and
+
+7.  independently verify any computational enumeration and exactness bounds.
+
+</div>
+
+Without items 1–4, failure to find an alternative is only a search result. Without item 5, constraints may have been applied asymmetrically. Without item 6, local rigidity has been mistaken for uniqueness.
+
+# Scoped B4 Theorem
+
+<div id="thm:scoped" class="theorem">
+
+**Theorem 20** (Typed intersections and conditional rigidity). *For the declared data of this paper:*
+
+1.  *compatibility is nonemptiness of a common typed constraint locus;*
+
+2.  *one compatible realization does not imply local rigidity or uniqueness;*
+
+3.  *an injective combined Jacobian on a quotient moduli chart is sufficient for local rigidity;*
+
+4.  *a clean transverse intersection has the dimension stated in Theorem <a href="#thm:transverse" data-reference-type="ref" data-reference="thm:transverse">9</a>;*
+
+5.  *anomaly cancellation is necessary for the corresponding chiral quantum gauge contract but is not sufficient for a unique theory;*
+
+6.  *homogeneous anomaly equations do not fix nonzero abelian normalization;*
+
+7.  *vector-like pairs preserve local perturbative anomaly cancellation;*
+
+8.  *A46-A50 prove one exact selected finite representation/anomaly branch and the conditional uniqueness statements internal to that branch; and*
+
+9.  *global Standard Model uniqueness would require the exhaustive certificate of Definition <a href="#def:selection" data-reference-type="ref" data-reference="def:selection">19</a>.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Items 1–2 follow from the definitions and Propositions <a href="#prop:continuum" data-reference-type="ref" data-reference="prop:continuum">11</a>–<a href="#prop:two-points" data-reference-type="ref" data-reference="prop:two-points">12</a>. Item 3 is Theorem <a href="#thm:jacobian" data-reference-type="ref" data-reference="thm:jacobian">7</a>; item 4 is Theorem <a href="#thm:transverse" data-reference-type="ref" data-reference="thm:transverse">9</a>. Item 5 is Proposition <a href="#prop:anomaly-necessary" data-reference-type="ref" data-reference="prop:anomaly-necessary">15</a>; item 6 is Theorem <a href="#thm:scaling" data-reference-type="ref" data-reference="thm:scaling">16</a>; item 7 is Proposition <a href="#prop:vectorlike" data-reference-type="ref" data-reference="prop:vectorlike">17</a>. Item 8 is the scoped content of Theorem <a href="#thm:sm" data-reference-type="ref" data-reference="thm:sm">18</a> and the cited exact packets. Item 9 is the distinction between one selected branch and quantification over the candidate category. ◻
+
+</div>
+
+# Version Delta and Research Frontier
+
+Relative to version 1, this revision:
+
+- withdraws the untyped claim that triple intersections are generically rigid;
+
+- makes the category, equivalence relation, topology, deformation class, and constraint maps explicit;
+
+- separates compatibility, local rigidity, infinitesimal rigidity, persistence, and global uniqueness;
+
+- proves a full-rank local rigidity theorem and a transverse dimension theorem;
+
+- supplies continuum-compatible and multiple-isolated-solution counterexamples;
+
+- makes representation rigidity conditional on a fixed global group, topology, representation class, and quotient;
+
+- distinguishes classical bundle-cocycle failure from local and global quantum anomalies;
+
+- proves that anomaly cancellation alone cannot fix abelian normalization or exclude vector-like extensions;
+
+- replaces the old “Standard Model resolves circle, lens, and nil” theorem by a typed representation/anomaly compatibility theorem;
+
+- incorporates the exact A46, A47, and A50 selected finite-branch results at their declared scope; and
+
+- states the exhaustive classification certificate required for any global Standard Model selection claim.
+
+The next rigidity frontier is not another qualitative intersection argument. It is an explicit deformation complex or finite candidate classifier for a declared upper MTT source. The source must emit the geometry, global gauge group, representations, anomaly complex, quantum action, and overlap maps. After quotienting automorphisms, its tangent cohomology or Jacobian must be computed. Global selection then requires an exhaustive classification of all allowed disconnected branches.
+
+# Conclusion
+
+Intersections can be powerful. Independent constraints can reduce a large candidate space to isolated realizations, and the rank and transversality theorems state exactly when that happens locally. But the narrowing is a property of specified equations in a specified category, not a consequence of counting the words circle, lens, and nil.
+
+The Standard Model provides a concrete compatibility success. In the selected finite MTT branch, the chiral carrier, anomaly table, faithful $`\mathbb Z_6`$ quotient, and shared hypercharge line are exact and mutually consistent. This is stronger than an analogy. Its honest meaning is also narrower than inevitability: it establishes one selected branch and several conditional uniqueness statements inside that branch.
+
+Program B4 now provides the missing logical bridge. Compatibility proves existence, a Jacobian or deformation complex proves local rigidity, and an exhaustive classification proves global uniqueness. Keeping those three certificates separate allows later MTT results to strengthen the Standard Model case without repeatedly turning a successful realization into an unsupported theorem that no alternative exists.
+
+<div class="thebibliography">
+
+99
+
+P. Nero, *The Modal Triplet Theory Program A0: A Structural Theory of Reduced Description*, revised v2, 2026.
+
+P. Nero, *The Modal Triplet Theory Program B0: Circle–Lens–Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations*, revised v2, 2026.
+
+P. Nero, *The Modal Triplet Theory Program B1: Loop-Transport Consistency and the Conditional Gravity Realization*, revised v2, 2026.
+
+P. Nero, *The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang–Mills Realization*, revised v2, 2026.
+
+P. Nero, *The Modal Triplet Theory Program B3: Discrete Survivor Filters and Conditional Quantum Reconstruction*, revised v2, 2026.
+
+P. Nero, *Typed Family-Diagonal Chiral Standard Model Representation and Anomaly Table*, MTT results reproducibility capsule, result `typed_family_representation`, SHA-256 `528af6955b3b7207a9db178d14d95cb4078f895f946a7d204fa680bc5754f657`, 2026.
+
+P. Nero, *Native Bundle-Automorphism Gauge Group and $`\mathbb Z_6`$ Kernel*, MTT results reproducibility capsule, result `native_gauge_group`, SHA-256 `eeb8c7bb501d151a53ba2df109654e34ea4735560338c86e978107c9b5678582`, 2026.
+
+P. Nero, *Selected Neutral Summand and Unique Anomaly-Free Shared Hypercharge Line*, MTT results reproducibility capsule, result `neutral_summand_hypercharge`, SHA-256 `89a1bb179af408da9d1d8408a9063331d21c8e429bb7a9bb52976bbf857e172c`, 2026.
+
+V. Guillemin and A. Pollack, *Differential Topology*, Prentice–Hall, 1974.
+
+J. M. Lee, *Introduction to Smooth Manifolds*, second edition, Springer, 2013.
+
+R. A. Bertlmann, *Anomalies in Quantum Field Theory*, Oxford University Press, 1996.
+
+A. Bilal, “Lectures on anomalies,” arXiv:0802.0634, 2008.
+
+E. Witten, “An $`SU(2)`$ anomaly,” *Physics Letters B* 117 (1982), 324–328.
+
+</div>

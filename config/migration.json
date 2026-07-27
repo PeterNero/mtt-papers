@@ -101,6 +101,20 @@
       "title": "The Modal Triplet Theory Program B3: Discrete Survivor Filters and Conditional Quantum Reconstruction"
     },
     {
+      "abstract": "We give a typed formulation of encoding intersections and determine when such an intersection is actually rigid. Compatibility means that a declared set of geometric, redundancy, quantum, anomaly, and overlap constraints has at least one common realization. Local rigidity means that a realization is isolated after the declared equivalences have been quotiented. Infinitesimal rigidity, persistence, and global uniqueness are different properties. On a finite-dimensional moduli chart, if the combined constraint map has injective derivative at a solution, that solution is locally isolated. For clean transverse constraint submanifolds, the intersection dimension is the ambient dimension minus the sum of codimensions. These theorems make rigidity conditional on the category, representation class, topology, overlap maps, anomaly equations, and deformation notion. Mere coexistence of three labels does not imply rigidity: a compatible intersection can contain a continuum, and several isolated realizations can all be locally rigid. Within the fixed selected finite MTT carrier, later exact packets establish a 48-state family-diagonal chiral representation, the faithful global group (SU(3) x SU(2) x U(1))/Z6, and a unique anomaly-free hypercharge line for the completed finite algebra. They prove one selected compatibility branch, not an exhaustive classification of alternative representations, topologies, actions, or ultraviolet completions.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113",
+      "path": "papers/the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B4__Encoding_Intersections_and_Structural_Rigidity",
+      "superseded_project": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B4__Encoding_Intersections_and_Structural_Rigidity",
+      "title": "The Modal Triplet Theory Program B4: Typed Encoding Intersections, Conditional Rigidity, and Standard Model Compatibility"
+    },
+    {
       "abstract": "We apply the corrected FP–I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. In the q79 realization the 1<2<3 flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
       "authors": [
         "Peter Nero"
