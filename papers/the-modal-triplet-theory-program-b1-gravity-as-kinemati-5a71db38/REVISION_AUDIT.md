@@ -122,8 +122,15 @@ The revision retains the useful core of Program B1:
 
 ## Resulting scope
 
-Program B1 v2 is a conditional reconstruction theorem. It establishes the
-mathematical bridge
+Program B1 v2 is a conditional reconstruction theorem. It proves that
+path-independent carrier values are exactly the holonomy-fixed values, that an
+endpoint-only trivialization requires trivial holonomy, and that smooth local
+transport corresponds to a connection only on a supplied bundle. Gravity
+becomes canonical only after a Lorentzian metric and physical frame carrier
+are supplied; causal cones and Einstein dynamics additionally require a local
+principal symbol and a selected action.
+
+The resulting mathematical bridge is
 
 ```text
 typed loop transport

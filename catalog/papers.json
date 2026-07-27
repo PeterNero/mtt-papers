@@ -7390,14 +7390,14 @@
       "release_state": "zenodo_released",
       "revision": {
         "revision_evidence_path": "papers/the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "25e8cbeb733c75724da8cdab4e3649cbc44200321936b968db70474f6d5abf3f",
+        "revision_evidence_sha256": "18a9f15bd19d31ba66406149d7ac6e3c1fcee69a73bc18b13b0c5a0053a4599f",
         "selected_revision": true,
         "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding"
       },
       "source_provenance": {
         "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding"
       },
-      "source_tree_sha256": "b5c556bb74a5c9027e8d04f1630fa5c1895bde282876cf60c5736bf19d3526d8",
+      "source_tree_sha256": "51dd65ab12e84ef06a90230611397a1939fadc00c89b0bdf056f474b722eb296",
       "title": "The Modal Triplet Theory Program B1: Loop-Transport Consistency and the Conditional Gravity Realization",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
