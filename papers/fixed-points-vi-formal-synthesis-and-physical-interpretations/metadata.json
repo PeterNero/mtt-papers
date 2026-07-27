@@ -37,10 +37,10 @@
   "paper_md_sha256": "b27cb876ceaa0c28933eefa07efd3fcfe5306d62e5423e29d7db24a66883b824",
   "release_state": "zenodo_released",
   "revision": {
-    "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_VI_V4_REVISION_AUDIT.md",
+    "revision_evidence_path": "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations/REVISION_AUDIT.md",
     "revision_evidence_sha256": "31997381bb1796b4fbd1ebed6048226ba10e31de22def03ed34c5dcb02006d13",
     "selected_revision": true,
-    "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v3"
+    "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -48,6 +48,11 @@
       "bytes": 22897,
       "path": "main.tex",
       "sha256": "157290d65e16bd049602c487b8a0dd76a39485bf2b5df7a3f9423d6d9f3fdcae"
+    },
+    {
+      "bytes": 7214,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "31997381bb1796b4fbd1ebed6048226ba10e31de22def03ed34c5dcb02006d13"
     },
     {
       "bytes": 15705,
@@ -58,7 +63,7 @@
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4"
   },
-  "source_tree_sha256": "2695062c4d9a3a2ed4ed920e5a7310f58ba3dc2fbd2c398364ff440b1de52af6",
+  "source_tree_sha256": "3168899488778ca30ec99f26ffbe6f0a67c52876704c746374927dac57461747",
   "title": "Fixed Points VI: Formal Synthesis and Physical Interpretations",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [

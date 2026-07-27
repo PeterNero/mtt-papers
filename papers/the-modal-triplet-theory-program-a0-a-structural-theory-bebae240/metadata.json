@@ -1,12 +1,12 @@
 {
-  "abstract": "We present a clean, non-circular formulation of Modal Triplet Theory (MTT): a conditional framework governing when stable reduced descriptions exist, how they relate, and why no global reduced description is possible. The theory is formulated abstractly in terms of projection, admissibility, and contractive induced dynamics, with explicit realizations treated as non-axiomatic instantiations.",
+  "abstract": "We give a typed, conditional formulation of Modal Triplet Theory as a theory of reduced description. A representative section, an exact upper decoder, autonomous reduced evolution, and merger of effective states solve four different mathematical problems; none follows merely from noninjectivity of a projection. We prove the factor-through criterion for autonomous descent, a finite-diameter obstruction for a genuinely contractive reduced self-map, exact basin-local fixed-point results, and controlled approximate-orbit estimates. Admissibility boundaries are defined by explicit margins and section or projector conditioning rather than by assuming the desired obstruction. The encoding atlas and its relations are consequently local and conditional. Probability, irreversibility, physical time, and any concrete physical realization require their own measure, evolution, and source hypotheses.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18354783",
     "created": "2026-01-23T19:56:18.472909+00:00",
@@ -32,12 +32,15 @@
     "updated": "2026-01-23T19:56:18.960635+00:00",
     "version": "v1.0"
   },
-  "main_tex_sha256": "5ba6c248295a7d530e6da6b4f64c9532574cd59fc7afb22df838e3c603c3628b",
+  "main_tex_sha256": "5dbb43da0e2daee658f496af709ff2003b7b060d1ba1c22501ef90adbeb0e69b",
   "paper_id": "the-modal-triplet-theory-program-a0-a-structural-theory-bebae240",
-  "paper_md_sha256": "6428f106a2a9cf06e02f6b3941a28ad85b19bee762c9aa275a97adaa6b163263",
+  "paper_md_sha256": "da315414aa9d5c3e394c4816674dba4e725759e4445721a76839c1bb058baade",
   "release_state": "zenodo_released",
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/the-modal-triplet-theory-program-a0-a-structural-theory-bebae240/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "29d01823d687b94090ab575f45282761c32dc9852b4c401198ed87ba6bdb0b8b",
+    "selected_revision": true,
+    "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A0__A_Structural_Theory_of_Reduced_Description"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -47,9 +50,14 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 35516,
+      "bytes": 46145,
       "path": "main.tex",
-      "sha256": "5ba6c248295a7d530e6da6b4f64c9532574cd59fc7afb22df838e3c603c3628b"
+      "sha256": "5dbb43da0e2daee658f496af709ff2003b7b060d1ba1c22501ef90adbeb0e69b"
+    },
+    {
+      "bytes": 4420,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "29d01823d687b94090ab575f45282761c32dc9852b4c401198ed87ba6bdb0b8b"
     },
     {
       "bytes": 4186,
@@ -60,9 +68,9 @@
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A0__A_Structural_Theory_of_Reduced_Description"
   },
-  "source_tree_sha256": "f9e3d889e28431f94c29e34bcd4775a5fcac0f08da572d3c1f960d7bd7aa36ba",
+  "source_tree_sha256": "046caff3550bc5b6e38b440c2f2cc3dba11b5bf8174ea32fc6b6b23a635e4a72",
   "title": "The Modal Triplet Theory Program A0: A Structural Theory of Reduced Description",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18354783",

@@ -114,11 +114,24 @@ def verify() -> dict[str, int]:
             matched_record_ids.append(str(release["id"]))
             assert release["record_url"].startswith("https://zenodo.org/records/")
 
-    expected_selected_revisions = len(config["replacements"]) + sum(
-        bool(row.get("superseded_project"))
+    native_successors = [
+        row
         for row in (config.get("native_projects") or [])
+        if row.get("superseded_project")
+    ]
+    native_superseded = {
+        str(row["superseded_project"]) for row in native_successors
+    }
+    terminal_replacements = [
+        row
+        for row in config["replacements"]
+        if str(row["selected_project"]) not in native_superseded
+    ]
+    expected_selected_revisions = len(terminal_replacements) + len(native_successors)
+    assert selected_revisions == expected_selected_revisions, (
+        selected_revisions,
+        expected_selected_revisions,
     )
-    assert selected_revisions == expected_selected_revisions
     assert len(matched_record_ids) == len(set(matched_record_ids))
     zenodo_ids = {str(record["id"]) for record in zenodo["records"]}
     unmatched_ids = {str(record["id"]) for record in unmatched["records"]}
@@ -128,7 +141,11 @@ def verify() -> dict[str, int]:
     assert report["zenodo_records"] == len(zenodo_ids)
     assert report["zenodo_records_matched"] == len(matched_record_ids)
     assert report["zenodo_records_unmatched"] == len(unmatched_ids)
-    assert report["superseded_projects_excluded"] == expected_selected_revisions
+    expected_lineage_edges = len(config["replacements"]) + len(native_successors)
+    assert report["superseded_projects_excluded"] == expected_lineage_edges, (
+        report["superseded_projects_excluded"],
+        expected_lineage_edges,
+    )
 
     serialized = json.dumps(catalog) + json.dumps(report)
     assert "C:\\\\Users\\\\" not in serialized

@@ -37,10 +37,10 @@
   "paper_md_sha256": "3b3921071ff6e1a7a86edd5f85263c38fbbae955594ac08b147bb27d1759b1e5",
   "release_state": "zenodo_released",
   "revision": {
-    "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_II_V3_REVISION_AUDIT.md",
+    "revision_evidence_path": "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/REVISION_AUDIT.md",
     "revision_evidence_sha256": "4c3f8c9fcdcd7905145c99c6be9ffcc2640bd586894c353811a3f46b8d26e892",
     "selected_revision": true,
-    "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v2"
+    "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v3"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -55,6 +55,11 @@
       "sha256": "44a1a93d9ac677cefb17ccb0926f415a4e5e0676a7baaf5d35d8a025a28907df"
     },
     {
+      "bytes": 5345,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "4c3f8c9fcdcd7905145c99c6be9ffcc2640bd586894c353811a3f46b8d26e892"
+    },
+    {
       "bytes": 15705,
       "path": "series.sty",
       "sha256": "deaaf90be0b98130189531a83e121ad3934803f4844f2b10571046aec3b3ed3f"
@@ -63,7 +68,7 @@
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v3"
   },
-  "source_tree_sha256": "fd17d908cdba4ac2f87703e30c1eda57f6528606de813198445d83233e054c84",
+  "source_tree_sha256": "eb6d0f1192290e817df81732d814702a98adbe22a513d7a16d7f963c30373457",
   "title": "Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [

@@ -3,6 +3,62 @@
   "expected_canonical_papers": 139,
   "native_projects": [
     {
+      "abstract": "We give a typed, conditional formulation of Modal Triplet Theory as a theory of reduced description. A representative section, an exact upper decoder, autonomous reduced evolution, and merger of effective states solve four different mathematical problems; none follows merely from noninjectivity of a projection. We prove the factor-through criterion for autonomous descent, a finite-diameter obstruction for a genuinely contractive reduced self-map, exact basin-local fixed-point results, and controlled approximate-orbit estimates. Admissibility boundaries are defined by explicit margins and section or projector conditioning rather than by assuming the desired obstruction. The encoding atlas and its relations are consequently local and conditional. Probability, irreversibility, physical time, and any concrete physical realization require their own measure, evolution, and source hypotheses.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "the-modal-triplet-theory-program-a0-a-structural-theory-bebae240",
+      "path": "papers/the-modal-triplet-theory-program-a0-a-structural-theory-bebae240",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A0__A_Structural_Theory_of_Reduced_Description",
+      "superseded_project": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A0__A_Structural_Theory_of_Reduced_Description",
+      "title": "The Modal Triplet Theory Program A0: A Structural Theory of Reduced Description"
+    },
+    {
+      "abstract": "We apply the corrected FP–I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. In the q79 realization the 1<2<3 flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v4",
+      "date": "July 2026",
+      "paper_id": "fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534",
+      "path": "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "4 Fixed Points/revised_tex_vnext/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v3",
+      "superseded_project": "4 Fixed Points/revised_tex_vnext/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v3",
+      "title": "Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model"
+    },
+    {
+      "abstract": "We rebuild curvature coupling and structural transitions on the corrected FP–I–III spine. A Laplace-type operator is normalized as L=\\nabla^\\ast\\nabla+\\mathcal R. Curvature can shift the spectral cluster, mix coherent and noncoherent sectors, and create a leakage floor. If \\|\\mathcal R\\|<\\lambda_\\ast/2, the full curved operator retains a separated low cluster and defines a new Riesz projector; if one retains the unperturbed projector, the term Q\\mathcal RP must appear explicitly. Centroids are defined intrinsically by a Karcher mean inside a convex normal ball. A first-order gradient parent flow yields a first-order modulation law; a Newtonian law requires a separately specified inertial parent equation. Absolute interaction bounds give |E_{\\rm int}|\\le C\\mathcal O, while attraction or repulsion needs a sign hypothesis. Structural transitions are controlled by a Lyapunov mountain-pass/work theorem, and exit detection is separated from selection of the post-transition basin. We also state the exact projective-module transport and finite-reduction boundary: a supplied connection and its Hessian transport naturally, bare compression is exact only on an invariant subspace, and otherwise the Feshbach or reduced-Green operator is required.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v5",
+      "date": "July 2026",
+      "paper_id": "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce",
+      "path": "papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "4 Fixed Points/revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4",
+      "superseded_project": "4 Fixed Points/revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4",
+      "title": "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions"
+    },
+    {
+      "abstract": "We synthesize the corrected FP–I–V results without promoting their control parameter, projections, or diagnostics into an unproved fundamental field theory. The rigorous spine consists of conditional projected fixed-point existence, strict-Lyapunov promotion to equilibrium, joint-mode damping and disturbance floors, perturbative persistence of a curved spectral cluster, curvature leakage, intrinsic first-order centroid modulation, frozen linear Ornstein–Uhlenbeck covariance, canonical-correlation bounds, and declared admissibility exits. We distinguish three logical levels throughout: inherited theorem, conditional model completion, and physical interpretation. A Lorentzian gauge/gravity action, quantum covariance, particle identities, merger, measurement, and cosmology belong to the latter two levels unless additional source and equivalence theorems are supplied. We also correct the Gaussian Lyapunov sign and nonnormal resolvent bounds, and show why an instantaneous equal-time bilocal kernel is not microcausal merely because it leaves the principal symbol unchanged. A local mediator is the consistent route to causal overlap dynamics. A separate, explicitly non-FP ledger records later scoped q79 geometry, quantum-operation, and QFT advances without retroactively promoting them to conclusions of the fixed-point series.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v5",
+      "date": "July 2026",
+      "paper_id": "fixed-points-vi-formal-synthesis-and-physical-interpretations",
+      "path": "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4",
+      "superseded_project": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4",
+      "title": "Fixed Points VI: Formal Synthesis and Physical Interpretations"
+    },
+    {
       "abstract": "This revised paper separates topology-only obstructions from representation checks and physical source theorems. It places chiral multiplicity on the internal six-manifold, reports the exact q79 smooth c3=+/-6 index candidate with its analytic promotion gate, uses integer U(1) characters, incorporates the selected finite-branch hypercharge and anomaly theorems at their declared scope, and corrects Majorana, holonomy, wave-cone, operator-selection, PQ, and one-loop beta-function claims.",
       "authors": [
         "Peter Nero"

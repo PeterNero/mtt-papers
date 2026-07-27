@@ -1,13 +1,13 @@
 ---
 abstract: |
-  We present a clean, non-circular formulation of Modal Triplet Theory (MTT): a conditional framework governing when stable reduced descriptions exist, how they relate, and why no global reduced description is possible. The theory is formulated abstractly in terms of projection, admissibility, and contractive induced dynamics, with explicit realizations treated as non-axiomatic instantiations.
+  We give a typed, conditional formulation of Modal Triplet Theory (MTT) as a theory of reduced description. A representative section, an exact upper decoder, autonomous reduced evolution, and merger of effective states solve four different mathematical problems; none follows merely from noninjectivity of a projection. We prove the factor-through criterion for autonomous descent, a finite-diameter obstruction for a genuinely contractive reduced self-map, exact basin-local fixed-point results, and controlled approximate-orbit estimates. Admissibility boundaries are defined by explicit margins and section or projector conditioning rather than by assuming the desired obstruction. The encoding atlas and its relations are consequently local and conditional. Probability, irreversibility, physical time, and any concrete physical realization require their own measure, evolution, and source hypotheses.
 author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v1.0
-date: January 2026
-generated_from_main_tex_sha256: 5ba6c248295a7d530e6da6b4f64c9532574cd59fc7afb22df838e3c603c3628b
+current_version: v2
+date: July 2026
+generated_from_main_tex_sha256: 5dbb43da0e2daee658f496af709ff2003b7b060d1ba1c22501ef90adbeb0e69b
 paper_id: the-modal-triplet-theory-program-a0-a-structural-theory-bebae240
 release_state: zenodo_released
 released_version: v1.0
@@ -19,27 +19,60 @@ zenodo_record_id: 18354784
 zenodo_url: "https://zenodo.org/records/18354784"
 ---
 
+# Revision note for version 2
+
+#### Supersedes.
+
+Version 1 of Program A0.
+
+#### Reason.
+
+The former text conflated representative selection with microscopic recovery, treated an additive-error estimate as a Banach contraction, and promoted several conditional atlas statements to universal theorems.
+
+#### Resolution.
+
+Version 2 installs the projection–descent and recovery classification, exact basin-local FCC, the finite-diameter self-map obstruction, explicit margin barriers, and a typed distinction between physical evolution and auxiliary stabilization. It also corrects the direction of encoding factorization and scopes probability, records, selection, and global relations.
+
+#### Retained content.
+
+Finite admissibility, local encoding charts, coherence margins, and the total chart-of-charts remain the structural core.
+
+#### Open boundary.
+
+No physical measure, Born rule, arrow of time, reset law, spacetime dynamics, or concrete MTT realization is derived in A0.
+
 # Part I: Abstract Framework
 
-# Definitions and Conventions
+# Typed Data and Admissibility
 
-This section fixes notation and logical order. All definitions are purely mathematical. No physical interpretation is assumed.
+This section fixes notation and logical order. All definitions are mathematical; physical interpretation is an additional assignment.
 
-## Abstract projection system
+## Upper evolution and reductions
 
 <div class="definition">
 
-**Definition 1** (Abstract system). An abstract projection system is a triple
+**Definition 1** (Typed projection system). A typed projection system at parameter $`t`$ consists of
 ``` math
-(X,\;\Phi,\;P)
+(X_0,X_t,\Phi_t;\;Y_0,Y_t,P_0,P_t)
 ```
 where:
 
-- $`X`$ is a standard measurable space,
+- $`X_0`$ and $`X_t`$ are standard Borel spaces, equipped with metrics when metric estimates are used;
 
-- $`\Phi : X \to X`$ is an invertible measurable evolution (or flow $`\Phi_t`$),
+- $`\Phi_t:X_0\to X_t`$ is a measurable upper evolution map;
 
-- $`P : X \to Y`$ is a measurable, generally non-injective map into a reduced space $`Y`$.
+- $`P_0:X_0\to Y_0`$ and $`P_t:X_t\to Y_t`$ are measurable reductions, surjective onto their declared effective images.
+
+The cross-level output map is
+``` math
+Q_t:=P_t\circ\Phi_t:X_0\longrightarrow Y_t.
+```
+
+</div>
+
+<div class="remark">
+
+*Remark 2* (Evolution semantics). No invertibility is needed for the typing results below. In an application, $`\Phi_t`$ must be declared either as physical evolution, with its own well-posedness, causal or hyperbolic hypotheses, or as an auxiliary stabilization map or semigroup. An auxiliary parameter is not physical time, and contraction of an auxiliary semigroup is not by itself physical irreversibility.
 
 </div>
 
@@ -47,7 +80,7 @@ where:
 
 <div class="definition">
 
-**Definition 2** (Tolerance). Fix $`\varepsilon>0`$. Two points $`y_1,y_2\in Y`$ are indistinguishable if
+**Definition 3** (Tolerance). Fix $`\varepsilon>0`$. Two points $`y_1,y_2`$ in a declared reduced metric space are $`\varepsilon`$-indistinguishable if
 ``` math
 d_Y(y_1,y_2)\le \varepsilon,
 ```
@@ -55,60 +88,179 @@ where $`d_Y`$ is a chosen pseudometric.
 
 </div>
 
-## Admissible domains
+## Representative selection, recovery, and descent
 
 <div class="definition">
 
-**Definition 3** (Admissible domain). A subset $`A\subset X`$ is admissible if:
+**Definition 4** (Representative section). A representative section for $`Q_t`$ is a map $`S_t:Y_t\to X_0`$ satisfying
+``` math
+Q_t\circ S_t=\operatorname{id}_{Y_t}.
+```
+It chooses one compatible upper representative. It does not recover the upper state that actually produced the reduced datum.
 
-1.  $`P|_A`$ is measurable and locally regular;
+</div>
 
-2.  there exists a measurable section
-    ``` math
-    S_A : P(A)\to A
-    ```
-    such that $`P\circ S_A = \mathrm{id}`$ up to tolerance, and such that $`S_A`$ is *robust* on $`P(A)`$ (e.g. stable in measure under $`\varepsilon`$-perturbations of $`y\in P(A)`$);
+<div class="definition">
 
-3.  there exists a (possibly non-singleton) protocol index set $`\Pi_A`$ and, for each $`\pi\in\Pi_A`$, a measurable section
+**Definition 5** (Exact upper decoder). An exact upper decoder is a map $`D_t:Q_t(X_0)\to X_0`$ satisfying
+``` math
+D_t\circ Q_t=\operatorname{id}_{X_0}.
+```
+It recovers the actual upper input.
+
+</div>
+
+<div class="definition">
+
+**Definition 6** (Autonomous reduced evolution). An autonomous reduced evolution is a map $`F_t:Y_0\to Y_t`$ satisfying
+``` math
+F_t\circ P_0=P_t\circ\Phi_t.
+```
+
+</div>
+
+<div class="definition">
+
+**Definition 7** (Effective merger). If $`F_t`$ exists, an effective merger occurs when distinct $`y,y'\in Y_0`$ satisfy $`F_t(y)=F_t(y')`$.
+
+</div>
+
+<div id="thm:descent-recovery" class="theorem">
+
+**Theorem 8** (Projection–descent and recovery). *For the typed data above:*
+
+1.  *a set-theoretic representative section exists when $`Q_t`$ is surjective and the relevant choice principle is available; measurable, continuous, local, or Lipschitz sections require corresponding selection theorems;*
+
+2.  *an exact decoder exists if and only if $`Q_t`$ is injective, in which case it is the inverse of $`Q_t`$ on its image;*
+
+3.  *an autonomous reduced evolution exists if and only if
     ``` math
-    S_{A,\pi}:P(A)\to A
+    \begin{equation}
+    P_0(x)=P_0(x')
+    \quad\Longrightarrow\quad
+    P_t(\Phi_t x)=P_t(\Phi_t x')
+    \label{eq:descent}
+    \end{equation}
     ```
-    such that $`P\circ S_{A,\pi}=\mathrm{id}`$ up to tolerance, and an induced reduced map
+    for all $`x,x'\in X_0`$, and it is then unique;*
+
+4.  *if <a href="#eq:descent" data-reference-type="eqref" data-reference="eq:descent">[eq:descent]</a> holds and two distinct initial effective states have the same final image, then $`F_t`$ is noninjective and the prior effective state cannot be decoded uniquely from the final one.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The first item is the definition of a section of a surjection. If $`D_tQ_t=\operatorname{id}`$ and $`Q_t(x)=Q_t(x')`$, applying $`D_t`$ gives $`x=x'`$. Conversely, an injective map has an inverse on its image. For the third item, necessity follows by applying $`F_t`$ to equal $`P_0`$-images. Under <a href="#eq:descent" data-reference-type="eqref" data-reference="eq:descent">[eq:descent]</a>, define
+``` math
+F_t(P_0x):=P_t(\Phi_tx).
+```
+The implication makes this independent of the representative, and surjectivity of $`P_0`$ onto $`Y_0`$ gives existence and uniqueness. The final item is immediate from the definition of injectivity. ◻
+
+</div>
+
+<div class="corollary">
+
+**Corollary 9** (Noninjectivity is not a right-section obstruction). *Noninjectivity of $`Q_t`$ rules out exact microscopic recovery, not representative selection. Surjectivity, together with the required regularity category, is the gate for a right section.*
+
+</div>
+
+## Admissible domains and explicit margins
+
+<div class="definition">
+
+**Definition 10** (Declared margins). Let $`m_1,\ldots,m_r`$ be continuous real-valued margins on a metric upper domain. They may encode such requirements as operator-domain control, spectral separation, bounded leakage, truncation error, section conditioning, or physical hyperbolicity. For $`\delta\ge0`$, set
+``` math
+A^\delta:=\{x:m_j(x)\ge\delta\text{ for every }j\}.
+```
+
+</div>
+
+<div class="definition">
+
+**Definition 11** (Admissible domain). A subset $`A\subset X_0`$ is admissible for a declared protocol family $`\Pi_A`$ if:
+
+1.  $`A\subset A^\delta`$ for some $`\delta>0`$ and $`P_0|_A`$ is measurable;
+
+2.  for each $`\pi\in\Pi_A`$ there is a representative section $`S_{A,\pi}:P_0(A)\to A`$ of $`P_0|_A`$ in the declared regularity category;
+
+3.  a declared upper step $`R_{A,\pi}:A\to X_0`$ induces a well-typed section-dependent self-map
     ``` math
-    T_{A,\pi} := P\circ\Phi_{\tau(\pi)}\circ S_{A,\pi}:P(A)\to P(A)
+    T_{A,\pi}:=P_0\circ R_{A,\pi}\circ S_{A,\pi}
+       :P_0(A)\longrightarrow P_0(A);
     ```
-    that is well-defined and stable.
+
+4.  the fixed-point, encoding, or approximation contract invoked on $`A`$ is stated explicitly and verified on its own invariant domain.
 
 </div>
 
 <div class="axiom">
 
-**Axiom 1** (Finite admissibility). *There exists no admissible domain $`A`$ with $`A=X`$.*
+**Axiom 1** (Finite admissibility). *For the declared theory class, there is no single domain $`A=X_0`$ and protocol family for which all required positive-margin, regularity, and closure contracts hold. Equivalently, no one globally valid admissible encoding exists at this adopted axiom tier.*
 
 </div>
 
-## Fundamental Contractivity Condition
+<div class="remark">
+
+*Remark 12*. Finite admissibility excludes a single globally valid *admissible encoding* by definition. It does not, by itself, exclude a global relation, a set-theoretic section, or even an autonomous reduced map.
+
+</div>
+
+## Basin-local Fundamental Contractivity Condition
+
+<div id="def:fcc" class="definition">
+
+**Definition 13** (Exact basin-local FCC). Fix $`A`$, $`\pi`$, and $`T:=T_{A,\pi}`$. A basin contract is a nonempty complete metric subspace $`D_\alpha\subset P_0(A)`$ such that
+``` math
+T(D_\alpha)\subseteq D_\alpha,
+\qquad
+d_Y(Tu,Tv)\le q_\alpha d_Y(u,v)
+```
+for all $`u,v\in D_\alpha`$, where $`0\le q_\alpha<1`$. FCC means this exact, basin-local contract, not one contraction on a union of outcome basins.
+
+</div>
+
+<div id="thm:basin-fixed-point" class="theorem">
+
+**Theorem 14** (Basin-local fixed point). *Every basin $`D_\alpha`$ satisfying Definition <a href="#def:fcc" data-reference-type="ref" data-reference="def:fcc">13</a> contains a unique fixed point $`y_\alpha^\ast`$, and
+``` math
+d_Y(T^ny,y_\alpha^\ast)\le
+q_\alpha^n d_Y(y,y_\alpha^\ast)
+\quad(y\in D_\alpha).
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* This is Banach’s fixed-point theorem on the complete invariant domain $`D_\alpha`$. ◻
+
+</div>
 
 <div class="definition">
 
-**Definition 4** (FCC). An admissible domain $`A`$ satisfies FCC if for each $`\pi\in\Pi_A`$ there exist constants $`0<\kappa_\pi<1`$ and $`c_\pi<\infty`$ such that
+**Definition 15** (Approximate orbit contract). On an invariant domain $`D`$, an approximate orbit contract is
 ``` math
-d_Y\!\big(T_{A,\pi}(y),T_{A,\pi}(y')\big)
-\le \kappa_\pi\, d_Y(y,y') + c_\pi\,\varepsilon
-\quad \forall y,y'\in P(A).
+d_Y(Tu,Tv)\le\kappa d_Y(u,v)+c\varepsilon,
+\qquad 0\le\kappa<1.
 ```
 
 </div>
 
-<div class="remark">
+<div id="prop:approximate" class="proposition">
 
-*Remark 5*. Different $`\pi\in\Pi_A`$ represent distinct admissible protocol/context choices. All stability, basin, and encoding statements in this document apply pointwise in $`\pi`$.
+**Proposition 16** (Approximate pairwise estimate). *If two forward orbits remain in $`D`$, then
+``` math
+d_Y(T^nu,T^nv)
+\le \kappa^n d_Y(u,v)
+ \frac{1-\kappa^n}{1-\kappa}\,c\varepsilon.
+```
+This estimate alone neither makes $`T`$ a Banach contraction nor proves that $`T`$ has a fixed point.*
 
 </div>
 
-<div class="remark">
+<div class="proof">
 
-*Remark 6*. FCC is a *local* property of an admissible domain $`A`$ together with a chosen section $`S_A`$, hence of the induced reduced map $`T_A`$. It is not assumed to hold globally on $`X`$.
+*Proof.* Iterate the affine recurrence for the distance. ◻
 
 </div>
 
@@ -116,27 +268,7 @@ d_Y\!\big(T_{A,\pi}(y),T_{A,\pi}(y')\big)
 
 <div class="definition">
 
-**Definition 7** (Fixed-point set). A subset $`\mathfrak S\subset P(A)`$ is a fixed-point set if
-``` math
-\sup_{y\in\mathfrak S} d_Y\!\big(T_A(y),y\big)\le c_\ast\,\varepsilon.
-```
-
-</div>
-
-<div class="theorem">
-
-**Theorem 8** (Existence of fixed points). *If FCC holds on $`A`$, then $`T_A`$ admits at least one fixed-point set $`\mathfrak S\subset P(A)`$.*
-
-</div>
-
-<div class="definition">
-
-**Definition 9** (Basin). A basin is a subset $`B\subset P(A)`$ such that
-``` math
-\limsup_{n\to\infty}
-\mathrm{dist}_Y\!\big(T_A^n(y),\mathfrak S\big)\le c_B\,\varepsilon
-\quad \forall y\in B.
-```
+**Definition 17** (Basin). A basin is an invariant domain $`D_\alpha`$ equipped with either the exact FCC contract of Definition <a href="#def:fcc" data-reference-type="ref" data-reference="def:fcc">13</a>, or a separately stated stability theorem. Distinct outcome basins are not combined into one Banach domain.
 
 </div>
 
@@ -144,31 +276,43 @@ d_Y\!\big(T_{A,\pi}(y),T_{A,\pi}(y')\big)
 
 <div class="definition">
 
-**Definition 10** (Admissibility modules). Let $`\{g_i(x)\}`$ measure violation of admissibility conditions, with $`g_i(x)\le 0`$ indicating validity.
-
-</div>
-
-<div class="definition">
-
-**Definition 11** (Coherence capacity). Define
+**Definition 18** (Coherence capacity). For declared margins $`m_j`$, define the diagnostic
 ``` math
-C(x) := \min_i (-g_i(x)).
+C(x):=\min_j m_j(x).
 ```
-Then $`C(x)>0`$ implies admissibility and $`C(x)=0`$ marks saturation.
+Thus $`C(x)>0`$ records positive slack in every declared condition and $`C(x)=0`$ records saturation of at least one condition.
 
 </div>
 
 ## Admissibility barriers
 
+<div id="def:admissibility-barrier" class="definition">
+
+**Definition 19** (Margin boundary and barrier). For a declared contract, let
+``` math
+X_{\rm adm}:=\{x:C(x)>0\},
+\qquad
+\partial X_{\rm adm}:=\overline{X_{\rm adm}}
+   \setminus\operatorname{int}(X_{\rm adm}).
+```
+A pathwise admissibility barrier is a subset $`\mathcal B\subseteq\partial X_{\rm adm}`$ across which a specified positive margin cannot be continued. The failed margin must be named.
+
+</div>
+
 <div class="definition">
 
-**Definition 12** (Admissibility barrier). A measurable set $`\mathcal B\subset X`$ is an admissibility barrier if:
+**Definition 20** (Section-conditioning diagnostic). For Lipschitz representative sections of $`Q_t`$, define
+``` math
+\kappa_{\rm sec}(t):=
+\inf\{\operatorname{Lip}(S_t):Q_tS_t=\operatorname{id}_{Y_t}\},
+```
+with $`\kappa_{\rm sec}(t)=+\infty`$ if no Lipschitz section exists.
 
-1.  $`X\setminus\mathcal B`$ contains at least two admissible regions $`A_+`$ and $`A_-`$;
+</div>
 
-2.  there exists $`y\in Y`$ with $`P^{-1}(y)\cap A_+\neq\varnothing`$ and $`P^{-1}(y)\cap A_-\neq\varnothing`$;
+<div class="remark">
 
-3.  no measurable section $`S:P(A_+\cup A_-)\to A_+\cup A_-`$ exists with $`P\circ S=\mathrm{id}`$ up to tolerance.
+*Remark 21*. Blow-up of $`\kappa_{\rm sec}`$, loss of surjectivity, or failure of bounded Riesz-projector continuation can supply explicit barrier margins in a realization. None is assumed merely to manufacture an obstruction, and none alone is a physical singularity or state-selection law.
 
 </div>
 
@@ -176,7 +320,7 @@ Then $`C(x)>0`$ implies admissibility and $`C(x)=0`$ marks saturation.
 
 <div class="assumption">
 
-**Assumption 13** (Invariant measure). On an admissible domain $`A`$, there exists an invariant or stationary measure $`\mu`$ preserved by $`\Phi`$.
+**Assumption 22** (Measure data, only when invoked). For probabilistic statements, supply either a preparation probability measure $`\mu`$ on the relevant upper domain or a stationary probability measure $`\nu`$ for a declared self-map. Invariance means $`R_\#\mu=\mu`$ for $`R:A\to A`$, or $`T_\#\nu=\nu`$ for $`T:Y_A\to Y_A`$; it is not meaningful without a same-space map.
 
 </div>
 
@@ -184,13 +328,13 @@ Then $`C(x)>0`$ implies admissibility and $`C(x)=0`$ marks saturation.
 
 <div class="definition">
 
-**Definition 14** (Encoding). An encoding is a tuple
+**Definition 23** (Encoding). An encoding is a tuple
 ``` math
 \mathcal E=(A,\;Z,\;E,\;F,\;\varepsilon)
 ```
-where $`A`$ is admissible and
+where $`A`$ is admissible, $`Z`$ is a normed space, $`E:P_0(A)\to Z`$, and
 ``` math
-E(T_A(y)) = F(E(y)) + \delta(y),
+E(T_{A,\pi}(y)) = F(E(y)) + \delta(y),
 \quad \|\delta(y)\|\le c\,\varepsilon.
 ```
 
@@ -198,7 +342,7 @@ E(T_A(y)) = F(E(y)) + \delta(y),
 
 <div class="remark">
 
-*Remark 15*. Coherence capacity $`C(x)`$ is not an observable, not a conserved quantity, and not a dynamical degree of freedom. It is a diagnostic margin (a stability/condition number) organizing when admissible encodings exist and when they fail.
+*Remark 24*. Coherence capacity $`C(x)`$ is not an observable, not a conserved quantity, and not a dynamical degree of freedom. It is a diagnostic margin (a stability/condition number) organizing when admissible encodings exist and when they fail.
 
 </div>
 
@@ -212,46 +356,47 @@ E(T_A(y)) = F(E(y)) + \delta(y),
 
 <div class="remark">
 
-*Remark 16*. Local sections $`S_{A,\pi}`$ may exist on admissible domains. Admissibility barriers assert the obstruction to extending such choices to a single global section across domains. Thus “local representability” does not imply global reconstructibility.
+*Remark 25*. Local sections $`S_{A,\pi}`$ may exist on admissible domains. Whether they extend is a separate selection and conditioning problem. Thus local representability does not imply stable global representability, but neither does it logically forbid a set-theoretic global section.
 
 </div>
 
 ## Failure modes
 
-The framework is silent if:
+The corresponding conclusions are unavailable if:
 
-- no admissible domain satisfies FCC;
+- no complete invariant basin satisfies FCC where a fixed point is claimed;
 
 - no invariant measure exists where probability is claimed;
 
-- no measurable section exists anywhere;
+- no representative section exists in the required regularity category;
 
-- basins are not robust under perturbations.
+- the declared margins, factorization, or robustness estimates fail.
 
 # Core Structural Results
 
-All results in this section are conditional on the existence of an admissible domain $`A`$ with section $`S_A`$ and reduced map
-``` math
-T_A := P \circ \Phi_\tau \circ S_A .
-```
+Fix an admissible domain $`A`$, protocol $`\pi`$, and the well-typed self-map $`T:=T_{A,\pi}`$.
 
-## Universality under contractive projection
+## Basin-local stability
 
 <div class="theorem">
 
-**Theorem 17** (Universality under FCC). *Assume FCC holds on an admissible domain $`A`$. Then for all $`y,y'\in P(A)`$,
+**Theorem 26** (Universality within one exact basin). *If $`D_\alpha`$ satisfies exact basin-local FCC, then every two orbits in $`D_\alpha`$ converge to the same unique fixed point:
 ``` math
-\limsup_{n\to\infty}
-d_Y\!\big(T_A^n(y),T_A^n(y')\big)
-\;\le\;
-\frac{c}{1-\kappa}\,\varepsilon .
+\lim_{n\to\infty}d_Y(T^ny,T^ny')=0
+\qquad(y,y'\in D_\alpha).
 ```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Apply Theorem <a href="#thm:basin-fixed-point" data-reference-type="ref" data-reference="thm:basin-fixed-point">14</a> to both orbits, or use $`d_Y(T^ny,T^ny')\le q_\alpha^n d_Y(y,y')`$. ◻
 
 </div>
 
 <div class="remark">
 
-*Remark 18*. This expresses convergence to a common fixed-point set up to a tolerance floor. No exact equality or limit point is assumed.
+*Remark 27* (No cross-basin conclusion). Separate invariant basins may contain separate fixed points. Neither exact FCC nor Proposition <a href="#prop:approximate" data-reference-type="ref" data-reference="prop:approximate">16</a> may be applied to their union unless that union independently satisfies the required complete invariant contract.
 
 </div>
 
@@ -259,33 +404,29 @@ d_Y\!\big(T_A^n(y),T_A^n(y')\big)
 
 <div class="definition">
 
-**Definition 19** (Admissible prediction depth). Fix an admissible domain $`A`$ and protocol $`\pi\in\Pi_A`$. For $`x\in A`$, define the admissible prediction depth
+**Definition 28** (Admissible prediction depth). Fix an admissible domain $`A`$ and protocol $`\pi\in\Pi_A`$. For $`x\in A`$, define the admissible prediction depth
 ``` math
+\begin{aligned}
 N_{\max}(x;A,\pi,\varepsilon)
-:=
-\sup\Big\{n\in\mathbb{N}\ \Big|\ \text{the reduced iterates }
-T_{A,\pi}^k(P(x)) \text{ remain within } P(A) \text{ for all } k\le n\Big\}.
+:=\sup\big\{n\in\mathbb{N}\ \big|\ &
+T_{A,\pi}^k(P_0(x))\in P_0(A)\\
+&\text{for every }0\le k\le n\big\}.
+\end{aligned}
 ```
 
 </div>
 
 <div class="remark">
 
-*Remark 20*. $`N_{\max}`$ provides a regime-intrinsic notion of finite predictivity without invoking external time. In boundary layers ($`0<C\ll 1`$), $`N_{\max}`$ is typically small; deep in stable basins it may be large.
+*Remark 29*. $`N_{\max}`$ is an iteration-count diagnostic. Its relation to physical time or to the size of a margin must be proved in a realization.
 
 </div>
 
 ## Computational limits (optional)
 
-<div class="proposition">
-
-**Proposition 21** (Conditional undecidability of selection questions). *In regimes where admissibility depends on protocol choice and where prediction depth $`N_{\max}(x;A,\pi,\varepsilon)`$ is finite but instance-dependent, there exist well-posed decision problems about reduced evolution and selection (e.g. whether a specified basin is entered before admissibility is lost) that are not decidable by any uniform algorithm from finite descriptions of initial reduced data and protocol parameters.*
-
-</div>
-
 <div class="remark">
 
-*Remark 22*. This proposition is included as an optional structural consequence layer. Its role is to record that finite admissibility and protocol-dependent projection can imply limits of computability beyond practical complexity.
+*Remark 30*. Finite, instance-dependent prediction depth does not imply undecidability. An undecidability result requires a specified input language and a reduction from a known undecidable problem to a declared reachability or admissibility question. A0 supplies no such reduction.
 
 </div>
 
@@ -293,124 +434,169 @@ T_{A,\pi}^k(P(x)) \text{ remain within } P(A) \text{ for all } k\le n\Big\}.
 
 <div class="corollary">
 
-**Corollary 23** (Forgetting). *Let $`y,y'\in P(A)`$ belong to the same basin. Then all distinctions between $`y`$ and $`y'`$ not preserved by the fixed-point set $`\mathfrak S`$ are suppressed under iteration of $`T_A`$ up to tolerance.*
-
-</div>
-
-## Projection–admissibility obstruction
-
-<div class="theorem">
-
-**Theorem 24** (Projection–admissibility obstruction). *Let $`\mathcal B\subset X`$ be an admissibility barrier. There exists no measurable section
+**Corollary 31** (Basin-local metric forgetting). *For $`y,y'`$ in one exact FCC basin,
 ``` math
-S : P(A_+\cup A_-)\to A_+\cup A_-
+d_Y(T^ny,T^ny')\longrightarrow0.
 ```
-satisfying $`P\circ S=\mathrm{id}`$ up to tolerance, where $`A_+`$ and $`A_-`$ are admissible regions separated by $`\mathcal B`$.*
+Under only the approximate orbit contract,
+``` math
+\limsup_{n\to\infty}d_Y(T^ny,T^ny')
+\le \frac{c\varepsilon}{1-\kappa},
+```
+provided both orbits remain in the same invariant domain. This is a metric statement; information or entropy claims require additional structures.*
+
+</div>
+
+## A valid reduced-self-map obstruction
+
+<div id="thm:diameter-obstruction" class="theorem">
+
+**Theorem 32** (Finite-diameter contraction obstruction). *Let $`(Y_A,d)`$ have finite positive diameter $`D`$, and let $`G:Y_A\to Y_A`$ satisfy
+``` math
+d(Gy,Gy')\le\kappa d(y,y')+c\varepsilon,
+\qquad0\le\kappa<1.
+```
+Then
+``` math
+\operatorname{diam}G(Y_A)\le\kappa D+c\varepsilon.
+```
+If $`(1-\kappa)D>c\varepsilon`$, then $`G`$ is not surjective and has no right section $`S:Y_A\to Y_A`$ with $`G\circ S=\operatorname{id}_{Y_A}`$.*
 
 </div>
 
 <div class="proof">
 
-*Sketch.* Existence of such a section would contradict the definition of $`\mathcal B`$ as an admissibility barrier. ◻
+*Proof.* Take the supremum of the displayed estimate over all pairs. Under the strict inequality, the image diameter is smaller than $`D`$, whereas a surjective image would be all of $`Y_A`$ and would have diameter $`D`$. ◻
 
 </div>
-
-## Irreversibility of reduced dynamics
-
-<div class="theorem">
-
-**Theorem 25** (Irreversibility). *On any admissible domain $`A`$ satisfying FCC, the reduced map $`T_A`$ is not invertible up to tolerance on $`P(A)`$.*
-
-</div>
-
-<div class="proof">
-
-*Sketch.* Non-injectivity of $`P`$ implies that multiple points in $`A`$ map to the same $`y\in P(A)`$. FCC ensures contraction of their images under $`T_A`$, preventing reconstruction of preimages. ◻
-
-</div>
-
-Irreversibility is therefore structural, not dynamical.
-
-## Probability from basin structure (conditional)
-
-Assume the existence of an invariant measure $`\mu`$ on $`A`$.
 
 <div class="remark">
 
-*Remark 26*. Assume the basin sets $`B_i\subset P(A)`$ are measurable with respect to the $`\sigma`$-algebra induced on $`P(A)`$ by $`P`$.
+*Remark 33*. Theorem <a href="#thm:diameter-obstruction" data-reference-type="ref" data-reference="thm:diameter-obstruction">32</a> concerns a self-map of one reduced space. It cannot be applied to a cross-level map merely because the latter is noninjective.
+
+</div>
+
+## Recovery and irreversibility are separate
+
+<div class="proposition">
+
+**Proposition 34** (Recovery classification). *For the typed maps of Theorem <a href="#thm:descent-recovery" data-reference-type="ref" data-reference="thm:descent-recovery">8</a>:*
+
+1.  *noninjectivity of $`Q_t`$ obstructs exact upper recovery;*
+
+2.  *noninjectivity of an existing $`F_t`$ obstructs recovery of the prior effective state;*
+
+3.  *neither fact alone proves a physical arrow of time.*
+
+*A physical arrow additionally needs oriented dynamics and an asymmetric property such as a noninvertible physical semigroup, a monotone Lyapunov or entropy functional, or a boundary condition.*
+
+</div>
+
+## Measure-dependent reduced probability
+
+<div id="thm:reduced-kernel" class="theorem">
+
+**Theorem 35** (Measure-dependent reduced kernel). *Let $`A`$ and $`P_0(A)`$ be standard Borel spaces, let $`\mu`$ be a probability measure on $`A`$, and let $`\{\mu_y\}`$ be a regular conditional distribution of $`x`$ given $`P_0(x)=y`$. For a measurable upper step $`R:A\to X_0`$, define
+``` math
+K(y,B):=\mu_y\{x:P_0(Rx)\in B\}.
+```
+Then $`K`$ is a Markov kernel, up to the usual $`(P_0)_\#\mu`$-null sets. If $`P_0R`$ descends to $`F`$ on $`P_0(A)`$, then $`K(y,\cdot)=\delta_{F(y)}`$ almost everywhere.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Regular conditional distributions exist on standard Borel spaces. Measurability and countable additivity pass through the measurable preimage. Under autonomous descent, $`P_0(Rx)`$ is constant on each conditional fiber. ◻
 
 </div>
 
 <div class="definition">
 
-**Definition 27** (Basin weights). Let $`\{B_i\}`$ be the basin partition of $`P(A)`$. Define
+**Definition 36** (Basin weights). Let $`\{B_i\}`$ be a measurable partition of $`P_0(A)`$ and let $`\mu`$ be a declared probability measure on $`A`$. Define
 ``` math
 W_i :=
-\frac{\mu\big(P^{-1}(B_i)\cap A\big)}
-{\sum_j \mu\big(P^{-1}(B_j)\cap A\big)} .
+\mu\big(P_0^{-1}(B_i)\cap A\big),
 ```
+or condition and renormalize this expression on a declared selection event.
 
 </div>
 
-<div class="theorem">
+<div class="remark">
 
-**Theorem 28** (Conditional probability theorem). *If a selection event forces choice among basins $`\{B_i\}`$, the weights $`W_i`$ define consistent outcome probabilities.*
-
-</div>
-
-If no invariant measure exists, no canonical basin weighting is asserted; only basin structure and record/selection ordering remain meaningful at the reduced level.
-
-## Maximality of admissible content
-
-<div class="theorem">
-
-**Theorem 29** (Maximality on overlaps). *Let $`\mathcal E_1`$ and $`\mathcal E_2`$ be admissible encodings with overlapping domains. Then on the overlap there exists a controlled re-encoding relating their reduced descriptions up to tolerance.*
+*Remark 37*. The weights are probabilities because $`\mu`$ was supplied, not because the projection has fibers. Different upper measures can induce different weights and kernels. No Born rule is asserted.
 
 </div>
 
-<div class="corollary">
+## Re-encoding criterion on overlaps
 
-**Corollary 30** (No stronger reduced description). *There exists no admissible encoding whose reduced variables contain strictly more stable descriptive content than that induced by $`P`$.*
+<div id="thm:encoding-factor" class="theorem">
 
-</div>
-
-## No global reduced description
-
-<div class="theorem">
-
-**Theorem 31** (No global encoding). *There exists no encoding defined on all of $`X`$.*
+**Theorem 38** (Exact encoding factorization). *Let $`E_1:Y\to Z_1`$ and $`E_2:Y\to Z_2`$. A map $`f:E_1(Y)\to Z_2`$ satisfying $`E_2=f\circ E_1`$ exists if and only if
+``` math
+E_1(y)=E_1(y')\quad\Longrightarrow\quad E_2(y)=E_2(y')
+```
+for all $`y,y'\in Y`$. When it exists, $`f`$ is unique on $`E_1(Y)`$.*
 
 </div>
 
 <div class="proof">
 
-*Sketch.* By finite admissibility, no admissible domain covers $`X`$. ◻
+*Proof.* Necessity is immediate. For sufficiency define $`f(E_1(y)):=E_2(y)`$; the implication makes this well-defined. ◻
 
 </div>
 
-## Interpretive remark
+<div class="remark">
 
-All results above concern reduced descriptions as mathematical objects. Any physical interpretation is an external assignment.
+*Remark 39*. Overlap of domains alone does not produce a re-encoding. Approximate factorization requires a quantitative fiber-consistency estimate and a controlled extension in the declared regularity class. A0 therefore makes no universal maximal-content claim.
+
+</div>
+
+## Finite admissibility and global scope
+
+<div class="proposition">
+
+**Proposition 40** (No global admissible encoding at the adopted axiom tier). *Under the finite-admissibility axiom, no object satisfying the definition of an admissible encoding has domain $`X_0`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* This is the direct content of the axiom and the definition of an encoding. ◻
+
+</div>
+
+<div class="remark">
+
+*Remark 41*. This proposition does not prohibit a global relation or a global reduced map that fails one of the adopted admissibility margins.
+
+</div>
 
 # Part II: Encodings and Boundaries
 
 # Encoding Atlas
 
-This section lists admissible encodings as local charts on neighborhoods of stable basins of the reduced map
+This section lists admissible encodings as local charts on neighborhoods of stable basins. Fix $`A`$ and $`\pi`$ and write
 ``` math
-T_A := P \circ \Phi_\tau \circ S_A .
+Y_A:=P_0(A),
+\qquad T_A:=T_{A,\pi}:Y_A\to Y_A .
 ```
 Each encoding is specified by sufficient inequality contracts involving the contraction constant $`\kappa`$, tolerance $`\varepsilon`$, and coherence capacity $`C`$.
 
 <div class="remark">
 
-*Remark 32* (Contract nature of atlas inequalities). The inequalities in this atlas are *sufficient contracts* guaranteeing that an encoding closes to tolerance on the stated domain. They are not classification theorems: failure of a listed inequality does not imply that no encoding exists.
+*Remark 42* (Contract nature of atlas inequalities). The inequalities in this atlas are *sufficient contracts* guaranteeing that an encoding closes to tolerance on the stated domain. They are not classification theorems: failure of a listed inequality does not imply that no encoding exists.
+
+</div>
+
+<div class="remark">
+
+*Remark 43* (Status of numerical thresholds). Numerical coefficients displayed below are declared chart-design thresholds, not universal constants derived by A0. A physical realization must justify or replace them and verify every associated closure estimate.
 
 </div>
 
 ## Chart-local control quantities
 
-The following quantities are *chart-local*: they are defined only when the corresponding encoding supplies the structures needed to define them. They are not global invariants of $`(X,\Phi,P)`$.
+The following quantities are *chart-local*: they are defined only when the corresponding encoding supplies the structures needed to define them. They are not global invariants of the typed projection system.
 
 - Basin separation scale (when a basin partition exists):
   ``` math
@@ -433,7 +619,7 @@ All inequalities below are sufficient but not necessary.
 
 #### Existence hypothesis
 
-The reduced space $`P(A)`$ admits a finite or effectively finite collection of basins $`\{B_i\}`$ with well-defined separation.
+The reduced space $`Y_A`$ admits a finite or effectively finite collection of basins $`\{B_i\}`$ with well-defined separation.
 
 #### Validity conditions
 
@@ -445,9 +631,9 @@ C_{\min} &\ge C_1 > 0.
 \end{align}
 ```
 
-#### Closure
+#### Closure contract
 
-There exists a linear map $`F`$ on $`Z`$ such that
+The chart is admitted only if a linear map $`F`$ on $`Z`$ is supplied and verified to satisfy
 ``` math
 E(T_A(y)) = F(E(y)) + \delta(y),
 \quad \|\delta(y)\|\le c_1\,\varepsilon .
@@ -455,7 +641,7 @@ E(T_A(y)) = F(E(y)) + \delta(y),
 
 #### Failure
 
-Occurs when basin separation is lost, $`\kappa\to 1`$, or $`C_{\min}\to 0`$.
+This chart contract fails when basin separation is lost, $`\kappa\to 1`$, or $`C_{\min}\to 0`$; another encoding may still exist.
 
 ## Encoding E$`_2`$: Local Patch Algebra Chart
 
@@ -478,9 +664,9 @@ On overlaps $`A_{\alpha\beta}`$,
 \le c_2\,\varepsilon .
 ```
 
-#### Obstruction
+#### Obstruction contract
 
-Any attempted global choice of coordinates yields a glue error exceeding $`\varepsilon`$.
+A claimed global obstruction must be exhibited by incompatible transition cocycles or a proved lower bound forcing every glue error above $`\varepsilon`$. Local overlap alone is not an obstruction.
 
 #### Failure
 
@@ -497,7 +683,7 @@ Variations of basin representatives are slow enough that a second-order truncati
 ``` math
 \begin{align}
 C_{\min} &\ge C_3 > 0, \\
-0.2 \le \kappa &\le 0.9.
+q_\alpha &\le 1-s_3<1
 \end{align}
 ```
 
@@ -506,8 +692,9 @@ Let $`\eta_3`$ denote the ratio of neglected higher-order terms to retained seco
 \eta_3 \le c_3\,\varepsilon .
 ```
 
-#### Closure
+#### Closure contract
 
+One must verify
 ``` math
 E(T_A(y)) = E(y) + \mathcal{D}[E(y)] + \delta(y),
 \quad \|\delta(y)\|\le c_3'\,\varepsilon .
@@ -535,8 +722,9 @@ C_{\min} &\ge C_4 > 0, \\
 
 Here $`\rho_N`$ denotes a chart-local bound on the cumulative contribution of discarded coordinates.
 
-#### Closure
+#### Closure contract
 
+One must verify
 ``` math
 E(T_A(y)) = F(E(y)) + \delta(y),
 \quad \|\delta(y)\|\le c_4'\,\varepsilon .
@@ -557,14 +745,14 @@ There exists an auxiliary representation $`Z_{\mathrm{aux}}`$ in which the reduc
 ``` math
 \begin{align}
 \|\beta(E(y))\| &\le c_5\,\varepsilon, \\
-\rho(D\beta) &\le 1 - s_5, \\
+\|D\beta\| &\le 1 - s_5, \\
 C_{\min} &\ge C_5 > 0.
 \end{align}
 ```
 
-#### Closure
+#### Closure contract
 
-Auxiliary flow remains within tolerance of a fixed point.
+The auxiliary map must preserve a complete neighborhood and satisfy an exact contraction there, or a separate fixed-point existence theorem must be provided. A spectral-radius bound alone is insufficient for a nonnormal linearization.
 
 #### Failure
 
@@ -586,19 +774,19 @@ C_{\min} &\ge C_6 > 0.
 \end{align}
 ```
 
-#### Closure
+#### Closure contract
 
-Dynamics depend only on spectral data up to tolerance.
+Dependence on spectral data only, with its error bound, must be verified for the declared operator domain.
 
 #### Failure
 
 Spectral gap closure or operator norm divergence.
 
-## Encoding E$`_7`$: Event-Selection Chart
+## Encoding E$`_7`$: Boundary and Reset Chart
 
 #### Existence hypothesis
 
-Capacity varies sharply enough that isolated selection events occur.
+Capacity reaches a declared boundary and an additional continuation or reset rule $`J_e`$ is supplied.
 
 #### Validity conditions
 
@@ -609,7 +797,7 @@ Capacity varies sharply enough that isolated selection events occur.
 \end{align}
 ```
 
-Selection labels must be stable under $`\varepsilon`$-perturbations, and post-selection basins must satisfy FCC with positive slack.
+Reset labels must be stable under $`\varepsilon`$-perturbations, $`J_e`$ must be measurable, and any required conservation law must be checked. Post-reset basins must satisfy FCC with positive slack. If probabilities are assigned, a measure or stochastic kernel must also be supplied.
 
 #### Failure
 
@@ -621,45 +809,47 @@ This encoding applies when no single-valued reduced evolution is admissible, but
 
 #### Existence hypothesis
 
-- No admissible section $`S_A`$ exists that yields a single-valued reduced map on any neighborhood of interest.
+- The descent criterion <a href="#eq:descent" data-reference-type="eqref" data-reference="eq:descent">[eq:descent]</a> fails on the neighborhood of interest, so no autonomous single-valued reduced map exists there.
 
-- The universal reduced relation
+- The typed reduced relation
   ``` math
-  \mathcal{R} := \{(y,y')\in Y\times Y \mid \exists x\in X:\ y=P(x),\ y'=P(\Phi_\tau(x))\}
+  \mathcal{R}_t :=
+  \{(P_0x,P_t\Phi_tx):x\in X_0\}\subseteq Y_0\times Y_t
   ```
-  admits a stable restriction on a subset of $`Y\times Y`$.
+  admits a stable restriction.
 
 #### Variables
 
 The reduced data are not points in a coordinate space, but *relations*:
 ``` math
-Z_{\mathrm{rel}} \subset Y\times Y.
+Z_{\mathrm{rel}} \subseteq Y_0\times Y_t.
 ```
 
 #### Chart map
 
 ``` math
-E : P(A) \to \mathcal{P}(Y),
+E : Y_0 \to \mathcal{P}(Y_t),
 \qquad
-E(y) := \{y' \mid (y,y')\in\mathcal{R}\},
+E(y) := \{y' \mid (y,y')\in\mathcal{R}_t\},
 ```
-where $`\mathcal{P}(Y)`$ denotes the power set of $`Y`$.
+where $`\mathcal{P}(Y_t)`$ denotes the power set of $`Y_t`$.
 
-#### Closure
+#### Closure contract
 
-Relational composition closes up to tolerance:
+For a declared semigroup $`\Phi_{s+t}=\Phi_s\Phi_t`$ with compatible time-indexed reductions, relational composition must be checked in the typed form
 ``` math
-(y,y')\in Z_{\mathrm{rel}},\ (y',y'')\in Z_{\mathrm{rel}}
-\;\Rightarrow\;
-(y,y'')\in Z_{\mathrm{rel}} \ \text{up to } \varepsilon.
+\mathcal{R}_s\circ\mathcal{R}_t
+\subseteq \mathcal{R}_{s+t}
+\quad\text{up to the declared tolerance}.
 ```
+Transitivity of one fixed-time relation is not automatic.
 
 #### Validity conditions
 
 ``` math
 \begin{align}
 C_{\min} &\ge C_8 > 0, \\
-\text{No admissible single-valued } T_A &\text{ exists on the domain.}
+\text{Autonomous descent} &\text{ fails on the domain.}
 \end{align}
 ```
 
@@ -667,13 +857,13 @@ C_{\min} &\ge C_8 > 0, \\
 
 - Relational structure becomes unstable or dense;
 
-- No controlled restriction of $`\mathcal{R}`$ exists;
+- No controlled restriction of $`\mathcal{R}_t`$ exists;
 
 - Coherence capacity collapses globally.
 
 #### Remarks
 
-This encoding represents the weakest admissible description short of total loss of describability. It captures persistent constraints on allowed transitions without introducing local coordinates, states, or probabilities.
+This encoding is one possible weak description when deterministic descent fails. It captures persistent constraints on allowed transitions without introducing local coordinates, states, or probabilities.
 
 ## Encoding E$`_9`$: Statistical Ensemble Chart
 
@@ -697,15 +887,15 @@ Z_{\mathrm{stat}} := \{\text{empirical distributions, moments, or coarse summari
 #### Chart map
 
 ``` math
-E : P(A) \to Z_{\mathrm{stat}},
+E : Y_A \to Z_{\mathrm{stat}},
 \qquad
 E(y) := \lim_{N\to\infty} \frac{1}{N}\sum_{k=1}^N \mathcal{O}(T_A^k(y)),
 ```
 whenever the limit exists for the chosen summary observable $`\mathcal{O}`$.
 
-#### Closure
+#### Closure contract
 
-Ensemble evolution closes approximately:
+The chart is admitted only if ensemble evolution closes approximately:
 ``` math
 E(T_A(y)) = F(E(y)) + \delta(y),
 \qquad \|\delta(y)\|\le c_9\,\varepsilon,
@@ -731,21 +921,15 @@ C_{\min} &\ge C_9 > 0, \\
 
 #### Remarks
 
-This encoding is strictly weaker than probabilistic encodings. It captures stable statistical structure without invoking probability, random variables, or stochastic dynamics.
-
-<div class="remark">
-
-*Remark 33* (Interpretive correspondence (non-axiomatic)). In phenomenological applications, regimes dominated by Encoding E$`_9`$ (statistical ensemble structure without local realization) correspond to effects commonly attributed to unseen clustering sources, while regimes dominated by Encoding E$`_8`$ (pure relational transition structure) correspond to uniform large-scale drift without localized sources. No new degrees of freedom are introduced by either encoding.
-
-</div>
+This empirical-summary encoding does not itself invoke probability, random variables, or stochastic dynamics. It is not universally ordered above or below the relational encoding; comparison requires a proved re-encoding.
 
 ## Atlas summary
 
-Admissible encodings range from strong coordinate descriptions to purely relational and statistical encodings. As coherence capacity decreases, admissible encodings weaken in the order
+Admissible encodings range from coordinate descriptions to relational and statistical summaries. In a particular realization one may observe a schematic transition
 ``` math
 E_1 \;\to\; \cdots \;\to\; E_7 \;\to\; E_9 \;\to\; E_8,
 ```
-with $`E_8`$ representing the final admissible relational structure before total loss of describability.
+but A0 does not prove this ordering. Each arrow requires an overlap factorization and a verified margin comparison.
 
 # Admissibility Boundaries and Selection
 
@@ -753,19 +937,19 @@ This section analyzes the failure of admissible reduced descriptions. All notion
 
 ## Admissibility barriers
 
-We recall the definition of an admissibility barrier from Definition <a href="#def:admissibility-barrier" data-reference-type="ref" data-reference="def:admissibility-barrier">[def:admissibility-barrier]</a>. No additional structure is assumed here.
+We recall the definition of an admissibility barrier from Definition <a href="#def:admissibility-barrier" data-reference-type="ref" data-reference="def:admissibility-barrier">19</a>. No additional structure is assumed here.
 
 ## Termination of encodings
 
-<div class="theorem">
+<div class="proposition">
 
-**Theorem 34** (Termination at barriers). *Let $`\mathcal{E}=(A,Z,E,F,\varepsilon)`$ be an admissible encoding. If a trajectory intersects an admissibility barrier $`\mathcal{B}`$, then $`\mathcal{E}`$ cannot be extended across $`\mathcal{B}`$.*
+**Proposition 44** (Loss of an encoding certificate at a barrier). *Let $`\mathcal{E}=(A,Z,E,F,\varepsilon)`$ be an admissible encoding. If a trajectory reaches a barrier at which one of $`\mathcal E`$’s required margins vanishes, then the existing certificate for $`\mathcal E`$ ends there. Continuation requires a new proof restoring that margin, a different encoding, or an additional continuation law.*
 
 </div>
 
 <div class="proof">
 
-*Sketch.* Extension would require a measurable section of $`P`$ across the barrier, contradicting the defining property of $`\mathcal{B}`$. ◻
+*Proof.* Positive slack in every declared margin is part of admissibility. At the named zero margin, that hypothesis is no longer available. ◻
 
 </div>
 
@@ -773,23 +957,22 @@ We recall the definition of an admissibility barrier from Definition <a href="#
 
 <div class="definition">
 
-**Definition 35** (Selection event). A selection event is a transition of a trajectory from one admissible basin to another when admissibility modules saturate and FCC no longer holds uniformly along the trajectory.
+**Definition 45** (Declared selection or reset event). A selection event consists of a margin crossing together with a supplied continuation rule
+``` math
+J_e:\mathcal B_e\times\Lambda_e\longrightarrow
+\bigcup_\alpha D_\alpha,
+```
+where $`\Lambda_e`$ contains any extra label or random input. The rule must be typed, measurable in probabilistic uses, and compatible with every claimed conservation law.
 
 </div>
 
-Selection is defined without reference to outcomes or measurement.
+Margin saturation alone terminates a certificate; it does not choose an outcome or construct $`J_e`$.
 
 ## Irreversibility of selection
 
-<div class="theorem">
+<div class="proposition">
 
-**Theorem 36** (Irreversibility of selection). *Selection events are irreversible for all admissible reduced descriptions.*
-
-</div>
-
-<div class="proof">
-
-*Sketch.* Non-injectivity of $`P`$ combined with loss of FCC prevents reconstruction of pre-selection basin membership from post-selection reduced data. ◻
+**Proposition 46** (Conditional effective irreversibility). *A declared reset is irreversible at the effective level if its induced map from pre-event effective states to post-event effective states is noninjective. Exact upper recovery is impossible if the corresponding typed upper-to-output map is noninjective. Neither statement follows from loss of FCC alone, and neither establishes a physical arrow of time without an oriented asymmetric evolution law.*
 
 </div>
 
@@ -797,218 +980,181 @@ Selection is defined without reference to outcomes or measurement.
 
 <div class="definition">
 
-**Definition 37** (Boundary layer). A boundary layer is a region where admissibility holds but
+**Definition 47** (Boundary layer). A $`\delta`$-boundary layer for the declared margins is
 ``` math
-0 < C(x) \ll 1 .
+\mathcal L_\delta:=\{x:0<C(x)\le\delta\}.
 ```
-
-</div>
-
-<div class="theorem">
-
-**Theorem 38** (Universality in boundary layers). *All admissible encodings exhibit qualitatively similar behavior in boundary layers, independent of coordinate choice.*
-
-</div>
-
-Such behavior includes sensitivity amplification and loss of global closure.
-
-## Records
-
-<div class="definition">
-
-**Definition 39** (Record). A record is a reduced structure that remains invariant under subsequent admissible reduced evolution after a selection event.
-
-</div>
-
-<div class="theorem">
-
-**Theorem 40** (Record formation). *If the post-selection basin satisfies FCC with positive slack, then records necessarily form.*
-
-</div>
-
-Records induce a partial order on selection events.
-
-## Probability at boundaries (conditional)
-
-Assume the existence of an invariant measure $`\mu`$ on an admissible domain $`A`$.
-
-<div class="theorem">
-
-**Theorem 41** (Boundary probability). *When a selection event forces a choice among basins $`\{B_i\}`$, the basin weights
-``` math
-W_i =
-\frac{\mu(P^{-1}(B_i)\cap A)}
-{\sum_j \mu(P^{-1}(B_j)\cap A)}
-```
-define consistent selection probabilities.*
-
-</div>
-
-If no invariant measure exists, no probabilistic statement is made.
-
-## No global reversibility
-
-<div class="theorem">
-
-**Theorem 42** (No global reversibility). *There exists no reduced description that is reversible across all admissibility barriers.*
-
-</div>
-
-## Boundary summary
-
-Admissibility barriers mark the limits of reduced description. At such limits, encodings must either terminate or be replaced by distinct encodings on other admissible domains.
-
-# Part III: Structural Closure
-
-# Category of Admissible Encodings
-
-This section formalizes relations between admissible encodings using category-theoretic language. All constructions are local to admissible domains and respect tolerance.
-
-## Objects
-
-<div class="definition">
-
-**Definition 43** (Encoding object). An object $`\mathcal{E}`$ of the category $`\mathbf{AdmEnc}`$ is a tuple
-``` math
-\mathcal{E} = (A,\;Z,\;E,\;F,\;\varepsilon)
-```
-where:
-
-- $`A\subset X`$ is an admissible domain satisfying FCC;
-
-- $`Z`$ is a reduced coordinate space;
-
-- $`E : P(A)\to Z`$ is a chart map;
-
-- $`F : Z\to Z`$ is a closure map satisfying
-  ``` math
-  E(T_A(y)) = F(E(y)) + \delta(y),
-  \quad \|\delta(y)\|\le c\,\varepsilon;
-  ```
-
-- $`\varepsilon>0`$ is the tolerance.
-
-</div>
-
-Objects are local coordinate charts on neighborhoods of stable basins.
-
-## Morphisms
-
-<div class="definition">
-
-**Definition 44** (Re-encoding morphism). Let $`\mathcal{E}_1=(A_1,Z_1,E_1,F_1,\varepsilon)`$ and $`\mathcal{E}_2=(A_2,Z_2,E_2,F_2,\varepsilon)`$.
-
-A morphism
-``` math
-f:\mathcal{E}_1 \to \mathcal{E}_2
-```
-exists if $`A_{12}:=A_1\cap A_2\neq\varnothing`$ and there is a map $`f:Z_1\to Z_2`$ such that
-``` math
-E_2(y) = f(E_1(y)) + \delta_{12}(y),
-\quad \|\delta_{12}(y)\|\le c_{12}\,\varepsilon
-```
-for all $`y\in P(A_{12})`$.
-
-</div>
-
-Morphisms represent controlled re-encodings on overlaps.
-
-## Composition
-
-Morphisms compose by ordinary composition of maps on reduced spaces. Composition is defined only on triple overlaps $`A_1\cap A_2\cap A_3`$ and accumulated error must remain bounded by a constant multiple of $`\varepsilon`$.
-
-## Quotient by tolerance
-
-<div class="definition">
-
-**Definition 45** (Tolerance equivalence). Two morphisms $`f,g:\mathcal{E}_1\to\mathcal{E}_2`$ are equivalent if
-``` math
-\sup_{y\in P(A_{12})}\|f(E_1(y)) - g(E_1(y))\|
-\le c\,\varepsilon .
-```
-
-</div>
-
-Let $`\mathbf{AdmEnc}/\!\sim`$ denote the quotient category.
-
-## Coherent encoding on a domain
-
-<div class="definition">
-
-**Definition 46** (Coherent encoding). Given an admissible domain $`A`$ with section $`S_A`$ and reduced map $`T_A`$, define the coherent encoding
-``` math
-\mathcal{C}_A := (A,\;P(A),\;\mathrm{id},\;T_A,\;\varepsilon).
-```
-
-</div>
-
-## Local universal factorization
-
-<div class="theorem">
-
-**Theorem 47** (Local factorization). *Let $`\mathcal{E}`$ be an encoding defined on an admissible domain $`A`$. Then there exists a unique morphism
-``` math
-f_{\mathcal{E}}:\mathcal{E}\to\mathcal{C}_A
-```
-in $`\mathbf{AdmEnc}/\!\sim`$.*
-
-</div>
-
-This expresses that all admissible encodings on $`A`$ reduce to the same coherent content on $`P(A)`$.
-
-## Local terminality
-
-<div class="theorem">
-
-**Theorem 48** (Local terminality). *For a fixed admissible domain $`A`$, the coherent encoding $`\mathcal{C}_A`$ is terminal in the full subcategory of $`\mathbf{AdmEnc}/\!\sim`$ consisting of encodings defined on $`A`$.*
 
 </div>
 
 <div class="remark">
 
-*Remark 49*. Terminality is local in $`A`$. No claim of global terminality is made.
+*Remark 48*. Small margin identifies proximity to failure only for the declared contract. Sensitivity amplification, coordinate independence, or common scaling between encodings requires a comparison theorem for their margins.
 
 </div>
 
-## Obstruction to global objects
-
-<div class="theorem">
-
-**Theorem 50** (No extension across barriers). *Let $`\mathcal{E}_+`$ and $`\mathcal{E}_-`$ be encodings defined on admissible domains $`A_+`$ and $`A_-`$ separated by an admissibility barrier. There exists no encoding defined on $`A_+\cup A_-`$ that restricts to both.*
-
-</div>
-
-<div class="corollary">
-
-**Corollary 51** (No global encoding). *There exists no object of $`\mathbf{AdmEnc}`$ whose domain is all of $`X`$.*
-
-</div>
-
-## Probability as a functor (conditional)
-
-Assume the existence of an invariant measure $`\mu`$ on an admissible domain $`A`$.
+## Records
 
 <div class="definition">
 
-**Definition 52** (Selection functor). Define a functor
+**Definition 49** (Record). A record for $`T`$ is a measurable map $`R_{\rm rec}`$ on a forward-invariant post-event domain such that
 ``` math
-\mathsf{Sel} : \mathbf{AdmEnc} \to \mathbf{Prob}
+R_{\rm rec}\circ T=R_{\rm rec}.
 ```
-mapping encodings on $`A`$ to probability spaces whose weights are given by basin measures, and morphisms to pushforward maps.
 
 </div>
 
-<div class="theorem">
+<div class="proposition">
 
-**Theorem 53** (Functorial probability). *Probability assignments are functorial images of basin partitions under $`\mathsf{Sel}`$.*
+**Proposition 50** (Record persistence). *Once such an $`R_{\rm rec}`$ is supplied, its value is constant along every forward orbit in its domain.*
 
 </div>
 
-If no invariant measure exists, $`\mathsf{Sel}`$ is undefined.
+<div class="proof">
+
+*Proof.* Iterate the defining identity. ◻
+
+</div>
+
+FCC alone does not construct a nontrivial record. A partial order on events also requires an oriented event relation and record compatibility.
+
+## Probability at boundaries (conditional)
+
+Let $`\mu`$ be a declared upper probability measure and let $`\{B_i\}`$ be a measurable partition of the post-event reduced domain. The conditional numbers
+``` math
+W_i =
+\frac{\mu(P_0^{-1}(B_i)\cap A_e)}
+{\sum_j \mu(P_0^{-1}(B_j)\cap A_e)}
+```
+are probabilities when the denominator is positive. They describe the chosen measure and event domain $`A_e`$; they are not selected by the barrier and are not asserted to be Born weights.
+
+## No global reversibility
+
+<div class="remark">
+
+*Remark 51*. Finite admissibility rules out one globally certified admissible encoding at the adopted axiom tier. It does not by itself rule out an invertible global relation, a reversible upper evolution, or a different reduced description whose hypotheses are not those of A0.
+
+</div>
+
+## Boundary summary
+
+Admissibility barriers mark the limits of a named certificate. At such a limit one must stop, prove a continuation, switch to another verified encoding, or supply a reset law. Selection, probability, records, and irreversibility are separate gates.
+
+# Part III: Structural Closure
+
+# Exact and Controlled Relations Between Encodings
+
+Category language is exact. We therefore define an exact category first and keep tolerance errors as explicit controlled data rather than silently quotienting by a relation that may fail to be a congruence.
+
+## The exact local category
+
+Fix one admissible domain $`A`$, protocol $`\pi`$, reduced space $`Y_A=P_0(A)`$, and self-map $`T_A`$.
+
+<div class="definition">
+
+**Definition 52** (Exact encoding object). An object of $`\mathbf{AdmEnc}_0(A,T_A)`$ is a triple
+``` math
+\mathcal E=(Z,E,F)
+```
+with $`E:Y_A\to Z`$, $`F:Z\to Z`$, and
+``` math
+E\circ T_A=F\circ E.
+```
+
+</div>
+
+<div class="definition">
+
+**Definition 53** (Exact re-encoding morphism). A morphism $`f:\mathcal E_1\to\mathcal E_2`$ is a map $`f:Z_1\to Z_2`$ satisfying
+``` math
+E_2=f\circ E_1,
+\qquad
+f\circ F_1=F_2\circ f
+\quad\text{on }E_1(Y_A).
+```
+
+</div>
+
+<div class="proposition">
+
+**Proposition 54**. *Identity maps and ordinary composition make $`\mathbf{AdmEnc}_0(A,T_A)`$ a category.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Both factorization identities are preserved by identity maps and by composition. ◻
+
+</div>
+
+## The correctly oriented universal object
+
+<div class="definition">
+
+**Definition 55** (Identity encoding).
+``` math
+\mathcal C_A:=(Y_A,\operatorname{id}_{Y_A},T_A).
+```
+
+</div>
+
+<div id="thm:initiality" class="theorem">
+
+**Theorem 56** (Local initiality). *$`\mathcal C_A`$ is initial in $`\mathbf{AdmEnc}_0(A,T_A)`$. For every exact encoding $`\mathcal E=(Z,E,F)`$, the unique morphism $`\mathcal C_A\to\mathcal E`$ is $`E`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The object identity $`E\circ T_A=F\circ E`$ is exactly the dynamical intertwining condition. The equation $`E=f\circ\operatorname{id}`$ forces $`f=E`$. ◻
+
+</div>
+
+<div class="proposition">
+
+**Proposition 57** (Recovery from an encoding). *A morphism $`\mathcal E\to\mathcal C_A`$ exists if and only if $`\operatorname{id}_{Y_A}`$ factors through $`E`$. Equivalently,
+``` math
+E(y)=E(y')\Longrightarrow y=y',
+```
+and a suitable inverse on $`E(Y_A)`$ exists in the declared regularity category.*
+
+</div>
+
+<div class="remark">
+
+*Remark 58*. Version 1 reversed this arrow and called $`\mathcal C_A`$ terminal. A general encoding can discard reduced information, so recovery of $`Y_A`$ from its coordinates is an additional injectivity and regularity theorem.
+
+</div>
+
+## Controlled approximate re-encodings
+
+For approximate encodings, retain an explicit defect
+``` math
+\|E\circ T_A-F\circ E\|\le\eta
+```
+on a declared domain. A controlled arrow $`f:\mathcal E_1\to\mathcal E_2`$ records both a factorization defect $`\|E_2-fE_1\|\le\eta_f`$ and a dynamical-intertwining defect. If $`g`$ is $`L_g`$-Lipschitz, then the factorization defect of $`g\circ f`$ is at most
+``` math
+\eta_g+L_g\eta_f.
+```
+Thus controlled arrows compose with an explicit error budget. A quotient category may be formed only after the proposed tolerance relation is proved to be an equivalence relation compatible with this composition; A0 does not assume such a quotient.
+
+## Overlaps and global scope
+
+For encodings on $`A_1`$ and $`A_2`$, first restrict to $`Y_{12}:=P_0(A_1\cap A_2)`$. Theorem <a href="#thm:encoding-factor" data-reference-type="ref" data-reference="thm:encoding-factor">38</a>, plus the declared regularity and error estimates, decides whether a transition map exists. Nonempty overlap alone is insufficient.
+
+The finite-admissibility axiom excludes an exact or controlled *admissible* object whose domain is all of $`X_0`$. A particular pair of charts fails to glue only when a transition obstruction or incompatible margin is actually proved.
+
+## Pushforward probability as an optional functor
+
+Let $`\nu`$ be a declared probability measure on $`Y_A`$, and restrict to measurable exact encodings and measurable morphisms. Assign to $`\mathcal E=(Z,E,F)`$ the pushforward probability space $`(Z,E_\#\nu)`$, and to $`f:\mathcal E_1\to\mathcal E_2`$ the measurable pushforward map $`f`$. Since $`E_2=fE_1`$,
+``` math
+(E_2)_\#\nu=f_\#(E_1)_\#\nu,
+```
+so this assignment is a functor to probability spaces. The functor uses the supplied $`\nu`$; category structure does not create it.
 
 ## Category summary
 
-The category $`\mathbf{AdmEnc}`$ formalizes local reduced descriptions and their relations. Its quotient by tolerance admits local terminal objects but no global object.
+The identity encoding is locally initial, not terminal. Arrows out of it are encodings; arrows back to it are recovery maps. Approximate arrows carry error budgets, and global gluing remains a separate descent problem.
 
 # Part IV: Total Atlas
 
@@ -1020,37 +1166,39 @@ This section introduces a global object that *contains* all admissible encodings
 
 <div class="definition">
 
-**Definition 54** (Encoding fiber). Let $`(X,\Phi,P)`$ be an abstract projection system with tolerance $`\varepsilon`$. For each $`x\in X`$, define the encoding fiber
+**Definition 59** (Encoding fiber). For each $`x\in X_0`$, define
 ``` math
-\mathrm{Enc}(x) := \{\mathcal{E}=(A,Z,E,F,\varepsilon)\in \mathbf{AdmEnc} \mid x\in A\}.
+\mathrm{Enc}(x):=
+\{\mathcal E:\mathcal E\text{ is a verified exact or controlled encoding
+on some }A\ni x\}.
 ```
 
 </div>
 
 <div class="remark">
 
-*Remark 55*. $`\mathrm{Enc}(x)`$ is the set of all reduced descriptions available at $`x`$. Finite admissibility implies $`\mathrm{Enc}(x)`$ may be empty for some $`x`$.
+*Remark 60*. $`\mathrm{Enc}(x)`$ is the set of all reduced descriptions available at $`x`$. Finite admissibility says no single verified chart has domain $`X_0`$; it does not imply that any point is uncovered by the union of local charts.
 
 </div>
 
-## Encoding fibration
+## Total encoding family
 
 <div class="definition">
 
-**Definition 56** (Encoding fibration). Define the total encoding space
+**Definition 61** (Total encoding projection). Define the total encoding space
 ``` math
-\mathbb{E} := \{(x,\mathcal{E}) \mid x\in X,\ \mathcal{E}\in \mathrm{Enc}(x)\},
+\mathbb{E} := \{(x,\mathcal{E}) \mid x\in X_0,\ \mathcal{E}\in \mathrm{Enc}(x)\},
 ```
 with projection map
 ``` math
-\pi:\mathbb{E}\to X,\qquad \pi(x,\mathcal{E})=x.
+\pi:\mathbb{E}\to X_0,\qquad \pi(x,\mathcal{E})=x.
 ```
 
 </div>
 
 <div class="remark">
 
-*Remark 57*. The fiber $`\pi^{-1}(x)`$ is canonically identified with $`\mathrm{Enc}(x)`$. The object $`\pi:\mathbb{E}\to X`$ is not itself an encoding; it is a *bundle of encodings*.
+*Remark 62*. The fiber $`\pi^{-1}(x)`$ is canonically identified with $`\mathrm{Enc}(x)`$. Without a topology and local trivializations, $`\pi`$ is a set-theoretic fibered family, not a fiber bundle. It is not itself an encoding.
 
 </div>
 
@@ -1058,25 +1206,27 @@ with projection map
 
 <div class="definition">
 
-**Definition 58** (Encodability set). Define the encodable subset of $`X`$ by
+**Definition 63** (Encodability set). Define the encodable subset of $`X_0`$ by
 ``` math
-X_{\mathrm{enc}} := \{x\in X \mid \mathrm{Enc}(x)\neq\varnothing\}.
+X_{\mathrm{enc}} := \{x\in X_0 \mid \mathrm{Enc}(x)\neq\varnothing\}.
 ```
 
 </div>
 
 <div class="definition">
 
-**Definition 59** (Encoding boundary set). Define the encoding boundary set as
+**Definition 64** (Encoding boundary set). Define the topological boundary as
 ``` math
-\partial X_{\mathrm{enc}} := \overline{X_{\mathrm{enc}}}\setminus X_{\mathrm{enc}}.
+\partial X_{\mathrm{enc}} :=
+\overline{X_{\mathrm{enc}}}
+\setminus\operatorname{int}(X_{\mathrm{enc}}).
 ```
 
 </div>
 
 <div class="remark">
 
-*Remark 60*. Points in $`\partial X_{\mathrm{enc}}`$ are precisely those at which encoding availability collapses. This notion is global and does not presuppose a codimension-one geometric boundary.
+*Remark 65*. Boundary points are accumulation points of both encodable and non-interior behavior. A claim that availability actually collapses there requires upper-semicontinuity or a specific margin theorem.
 
 </div>
 
@@ -1086,7 +1236,7 @@ The atlas in Section 3 provides *sufficient contracts* in terms of local contro
 
 <div class="definition">
 
-**Definition 61** (Chart viability functional). For an encoding $`\mathcal{E}`$ and a point $`x\in X`$, define a chart viability score
+**Definition 66** (Chart viability functional). For an encoding $`\mathcal{E}`$ and a point $`x\in X_0`$, define a chart viability score
 ``` math
 \mathcal{V}_{\mathcal{E}}(x) \in \mathbb{R}
 ```
@@ -1100,13 +1250,13 @@ as any scalar functional such that:
 
 <div class="remark">
 
-*Remark 62*. $`\mathcal{V}_{\mathcal{E}}`$ is not unique; it is a diagnostic that packages the inequality contracts of $`\mathcal{E}`$ into a single scalar.
+*Remark 67*. $`\mathcal{V}_{\mathcal{E}}`$ is not unique; it is a diagnostic that packages the inequality contracts of $`\mathcal{E}`$ into a single scalar. Scores for different encodings are comparable only after a common normalization is declared.
 
 </div>
 
 <div class="definition">
 
-**Definition 63** (Maximal viability). Define the maximal viability at $`x`$ by
+**Definition 68** (Maximal viability). Define the maximal viability at $`x`$ by
 ``` math
 \mathcal{V}^\ast(x) := \sup_{\mathcal{E}\in \mathrm{Enc}(x)} \mathcal{V}_{\mathcal{E}}(x),
 ```
@@ -1116,7 +1266,7 @@ with the convention $`\mathcal{V}^\ast(x)=-\infty`$ if $`\mathrm{Enc}(x)=\varnot
 
 <div class="remark">
 
-*Remark 64*. $`\mathcal{V}^\ast(x)`$ measures the best available reduced description at $`x`$. The encoding boundary set $`\partial X_{\mathrm{enc}}`$ corresponds to collapse of $`\mathcal{V}^\ast`$ to nonpositivity in any neighborhood representation.
+*Remark 69*. With a common normalization, $`\mathcal{V}^\ast(x)`$ is a best-margin diagnostic. Relating its sign or continuity to $`\partial X_{\mathrm{enc}}`$ requires additional regularity of the encoding family.
 
 </div>
 
@@ -1126,17 +1276,17 @@ We now define a global topological summary of chart overlap.
 
 <div class="definition">
 
-**Definition 65** (Overlap relation). Two encodings $`\mathcal{E}_i=(A_i,\dots)`$ and $`\mathcal{E}_j=(A_j,\dots)`$ overlap if
+**Definition 70** (Overlap relation). Two encodings $`\mathcal{E}_i=(A_i,\dots)`$ and $`\mathcal{E}_j=(A_j,\dots)`$ overlap if
 ``` math
 A_i\cap A_j \neq \varnothing
 ```
-and there exists a re-encoding morphism on the overlap in $`\mathbf{AdmEnc}/\!\sim`$.
+and there exists an exact re-encoding morphism or a controlled arrow with an explicit error budget on the overlap.
 
 </div>
 
 <div class="definition">
 
-**Definition 66** (Atlas nerve). Let $`\{\mathcal{E}_\alpha\}`$ be a chosen family of encodings. The nerve $`\mathcal{N}`$ is the simplicial complex whose:
+**Definition 71** (Atlas nerve). Let $`\{\mathcal{E}_\alpha\}`$ be a chosen family of encodings. The nerve $`\mathcal{N}`$ is the simplicial complex whose:
 
 - vertices are encodings $`\mathcal{E}_\alpha`$;
 
@@ -1146,26 +1296,27 @@ and there exists a re-encoding morphism on the overlap in $`\mathbf{AdmEnc}/\!\s
 
 <div class="remark">
 
-*Remark 67*. Holes or obstruction cycles in $`\mathcal{N}`$ represent failures of global gluing and encode barrier structure at the atlas level.
+*Remark 72*. The nerve records the combinatorics of a chosen cover. A hole in the nerve is not automatically a gluing obstruction; that conclusion requires the appropriate good-cover hypotheses and a nontrivial transition cocycle or cohomology class.
 
 </div>
 
 ## Universal reduced relation
 
-Finite admissibility forbids a global single-valued reduced evolution on $`Y`$. The correct global object is a relation.
+Independently of whether deterministic descent holds, the typed data define a global relation.
 
 <div class="definition">
 
-**Definition 68** (Universal reduced relation). Define the universal reduced relation $`\mathcal{R}\subset Y\times Y`$ by
+**Definition 73** (Universal reduced relation). Define
 ``` math
-\mathcal{R} := \{(y,y')\in Y\times Y \mid \exists x\in X \text{ such that } y=P(x),\ y'=P(\Phi_\tau(x))\}.
+\mathcal{R}_t:=
+\{(P_0x,P_t\Phi_tx):x\in X_0\}\subseteq Y_0\times Y_t.
 ```
 
 </div>
 
 <div class="remark">
 
-*Remark 69*. $`\mathcal{R}`$ is always well-defined and global, even when no global reduced map exists. On an admissible domain $`A`$ with section $`S_A`$, $`\mathcal{R}`$ restricts to the graph of the single-valued reduced map $`T_A`$ on $`P(A)`$.
+*Remark 74*. $`\mathcal{R}_t`$ is always well-defined. It is the graph of a single-valued map $`F_t:Y_0\to Y_t`$ exactly when the descent criterion <a href="#eq:descent" data-reference-type="eqref" data-reference="eq:descent">[eq:descent]</a> holds. A representative section chooses one value from compatible upper representatives; it does not make the full relation a graph when descent fails.
 
 </div>
 
@@ -1173,18 +1324,18 @@ Finite admissibility forbids a global single-valued reduced evolution on $`Y`$. 
 
 The total atlas consists of:
 
-- the encoding fibration $`\pi:\mathbb{E}\to X`$ capturing all admissible encodings as fibers;
+- the total encoding projection $`\pi:\mathbb{E}\to X_0`$;
 
-- the maximal viability field $`\mathcal{V}^\ast`$ diagnosing where any encoding is possible;
+- the normalized viability diagnostic $`\mathcal{V}^\ast`$, when a common normalization is supplied;
 
-- the overlap nerve $`\mathcal{N}`$ summarizing gluing and obstruction structure;
+- the overlap nerve $`\mathcal{N}`$ recording the chosen cover and its controlled transition data;
 
-- the universal reduced relation $`\mathcal{R}\subset Y\times Y`$ capturing global reduced transitions.
+- the typed relation $`\mathcal{R}_t\subseteq Y_0\times Y_t`$.
 
-No single global encoding is asserted; instead the theory provides a global *chart-of-charts* object that makes admissibility limits explicit.
+No single global admissible encoding is asserted. The chart-of-charts records local availability without converting local contracts into a global physical law.
 
 # Conclusion
 
-Modal Triplet Theory is presented here as a conditional, non-self-sealing framework. It asserts no ontology and no universal effective law. Instead, it classifies when reduced descriptions exist, how they must relate, and why they necessarily fail beyond finite admissibility. All claims are local, tolerance-bounded, and structurally enforced by projection and contractive dynamics.
+Modal Triplet Theory is presented here as a conditional, non-self-sealing framework. It asserts no ontology and no universal effective law. Instead, it gives checkable gates for representative selection, exact recovery, autonomous descent, basin-local stability, controlled re-encoding, and measure-dependent probability. Finite admissibility is a stated axiom about certified encodings, not a consequence of noninjectivity. Every stronger conclusion must identify the margin, measure, dynamics, or physical source theorem that supplies it.
 
 Any physical interpretation is an external assignment layered atop the mathematical structure developed herein.

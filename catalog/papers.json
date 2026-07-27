@@ -1,12 +1,12 @@
 {
   "counts": {
     "canonical_papers": 139,
-    "current_sources_newer_than_release": 37,
+    "current_sources_newer_than_release": 38,
     "pandoc_warning_papers": 12,
     "papers_with_zenodo_release": 119,
     "papers_without_zenodo_match": 20,
     "schema": "mtt.paper-migration-report.v1",
-    "superseded_projects_excluded": 35,
+    "superseded_projects_excluded": 39,
     "zenodo_records": 120,
     "zenodo_records_matched": 119,
     "zenodo_records_unmatched": 1
@@ -3137,15 +3137,15 @@
       "paper_md_sha256": "3b3921071ff6e1a7a86edd5f85263c38fbbae955594ac08b147bb27d1759b1e5",
       "release_state": "zenodo_released",
       "revision": {
-        "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_II_V3_REVISION_AUDIT.md",
+        "revision_evidence_path": "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/REVISION_AUDIT.md",
         "revision_evidence_sha256": "4c3f8c9fcdcd7905145c99c6be9ffcc2640bd586894c353811a3f46b8d26e892",
         "selected_revision": true,
-        "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v2"
+        "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v3"
       },
       "source_provenance": {
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v3"
       },
-      "source_tree_sha256": "fd17d908cdba4ac2f87703e30c1eda57f6528606de813198445d83233e054c84",
+      "source_tree_sha256": "eb6d0f1192290e817df81732d814702a98adbe22a513d7a16d7f963c30373457",
       "title": "Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
@@ -3255,7 +3255,7 @@
       ]
     },
     {
-      "abstract": "We rebuild curvature coupling and structural transitions on the corrected FP\u2013I\u2013III spine. A Laplace-type operator is normalized as L=\\nabla^\\ast\\nabla+\\mathcal R. Curvature can shift the spectral cluster, mix coherent and noncoherent sectors, and create a leakage floor. If \\|\\mathcal R\\|<\\lambda_\\ast/2, the full curved operator retains a separated low cluster and defines a new Riesz projector; if one retains the unperturbed projector, the term Q\\mathcal RP must appear explicitly. Centroids are defined intrinsically by a Karcher mean inside a convex normal ball. A first-order gradient parent flow yields a first-order modulation law; a Newtonian law requires a separately specified inertial parent equation. Absolute interaction bounds give |E_{\\rm int}|\\le C\\mathcal O, while attraction or repulsion needs a sign hypothesis. Structural transitions are controlled by a Lyapunov mountain- pass/work theorem, and exit detection is separated from selection of the post-transition basin. We also state the exact projective-module transport and finite-reduction boundary: a supplied connection and its Hessian transport naturally, bare compression is exact only on an invariant subspace, and otherwise the Feshbach or reduced-Green operator is required.",
+      "abstract": "We rebuild curvature coupling and structural transitions on the corrected FP\u2013I\u2013III spine. A Laplace-type operator is normalized as L=\\nabla^\\ast\\nabla+\\mathcal R. Curvature can shift the spectral cluster, mix coherent and noncoherent sectors, and create a leakage floor. If \\|\\mathcal R\\|<\\lambda_\\ast/2, the full curved operator retains a separated low cluster and defines a new Riesz projector; if one retains the unperturbed projector, the term Q\\mathcal RP must appear explicitly. Centroids are defined intrinsically by a Karcher mean inside a convex normal ball. A first-order gradient parent flow yields a first-order modulation law; a Newtonian law requires a separately specified inertial parent equation. Absolute interaction bounds give |E_{\\rm int}|\\le C\\mathcal O, while attraction or repulsion needs a sign hypothesis. Structural transitions are controlled by a Lyapunov mountain-pass/work theorem, and exit detection is separated from selection of the post-transition basin. We also state the exact projective-module transport and finite-reduction boundary: a supplied connection and its Hessian transport naturally, bare compression is exact only on an invariant subspace, and otherwise the Feshbach or reduced-Green operator is required.",
       "authors": [
         "Peter Nero"
       ],
@@ -3293,15 +3293,15 @@
       "paper_md_sha256": "74d9a8965019af5d4e718462d8dc971f6a07dc918a362488eaa4c5b104c15ecf",
       "release_state": "zenodo_released",
       "revision": {
-        "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_IV_V4_REVISION_AUDIT.md",
+        "revision_evidence_path": "papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce/REVISION_AUDIT.md",
         "revision_evidence_sha256": "fe8bec06e6028cb8e1ef49ae30a3c622c684e5da3b106385bf14663a107bf456",
         "selected_revision": true,
-        "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v3"
+        "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4"
       },
       "source_provenance": {
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4"
       },
-      "source_tree_sha256": "7d69cf15f8f14db8db34fa46d7f0c6bc79b279b40bd47af56c770a643cf808bb",
+      "source_tree_sha256": "25dec06aff521ca6119c37cacef345a76f0dd0ccfd4aafca94faa14f2505fcd1",
       "title": "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
@@ -3449,15 +3449,15 @@
       "paper_md_sha256": "b27cb876ceaa0c28933eefa07efd3fcfe5306d62e5423e29d7db24a66883b824",
       "release_state": "zenodo_released",
       "revision": {
-        "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_VI_V4_REVISION_AUDIT.md",
+        "revision_evidence_path": "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations/REVISION_AUDIT.md",
         "revision_evidence_sha256": "31997381bb1796b4fbd1ebed6048226ba10e31de22def03ed34c5dcb02006d13",
         "selected_revision": true,
-        "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v3"
+        "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4"
       },
       "source_provenance": {
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4"
       },
-      "source_tree_sha256": "2695062c4d9a3a2ed4ed920e5a7310f58ba3dc2fbd2c398364ff440b1de52af6",
+      "source_tree_sha256": "3168899488778ca30ec99f26ffbe6f0a67c52876704c746374927dac57461747",
       "title": "Fixed Points VI: Formal Synthesis and Physical Interpretations",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
@@ -7039,14 +7039,14 @@
       ]
     },
     {
-      "abstract": "We present a clean, non-circular formulation of Modal Triplet Theory (MTT): a conditional framework governing when stable reduced descriptions exist, how they relate, and why no global reduced description is possible. The theory is formulated abstractly in terms of projection, admissibility, and contractive induced dynamics, with explicit realizations treated as non-axiomatic instantiations.",
+      "abstract": "We give a typed, conditional formulation of Modal Triplet Theory as a theory of reduced description. A representative section, an exact upper decoder, autonomous reduced evolution, and merger of effective states solve four different mathematical problems; none follows merely from noninjectivity of a projection. We prove the factor-through criterion for autonomous descent, a finite-diameter obstruction for a genuinely contractive reduced self-map, exact basin-local fixed-point results, and controlled approximate-orbit estimates. Admissibility boundaries are defined by explicit margins and section or projector conditioning rather than by assuming the desired obstruction. The encoding atlas and its relations are consequently local and conditional. Probability, irreversibility, physical time, and any concrete physical realization require their own measure, evolution, and source hypotheses.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January 2026",
+      "current_version": "v2",
+      "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18354783",
         "created": "2026-01-23T19:56:18.472909+00:00",
@@ -7072,19 +7072,22 @@
         "updated": "2026-01-23T19:56:18.960635+00:00",
         "version": "v1.0"
       },
-      "main_tex_sha256": "5ba6c248295a7d530e6da6b4f64c9532574cd59fc7afb22df838e3c603c3628b",
+      "main_tex_sha256": "5dbb43da0e2daee658f496af709ff2003b7b060d1ba1c22501ef90adbeb0e69b",
       "paper_id": "the-modal-triplet-theory-program-a0-a-structural-theory-bebae240",
-      "paper_md_sha256": "6428f106a2a9cf06e02f6b3941a28ad85b19bee762c9aa275a97adaa6b163263",
+      "paper_md_sha256": "da315414aa9d5c3e394c4816674dba4e725759e4445721a76839c1bb058baade",
       "release_state": "zenodo_released",
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/the-modal-triplet-theory-program-a0-a-structural-theory-bebae240/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "29d01823d687b94090ab575f45282761c32dc9852b4c401198ed87ba6bdb0b8b",
+        "selected_revision": true,
+        "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A0__A_Structural_Theory_of_Reduced_Description"
       },
       "source_provenance": {
         "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A0__A_Structural_Theory_of_Reduced_Description"
       },
-      "source_tree_sha256": "f9e3d889e28431f94c29e34bcd4775a5fcac0f08da572d3c1f960d7bd7aa36ba",
+      "source_tree_sha256": "046caff3550bc5b6e38b440c2f2cc3dba11b5bf8174ea32fc6b6b23a635e4a72",
       "title": "The Modal Triplet Theory Program A0: A Structural Theory of Reduced Description",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.18354783",
