@@ -87,6 +87,20 @@
       "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang-Mills Realization"
     },
     {
+      "abstract": "We determine exactly what a nil-type termination of an admissible description does and does not imply. Failure of a declared chart or continuation map does not by itself collapse nearby admissible states to a discrete set. A finite survivor set follows, for example, when a smooth constraint map C from an n-manifold to R^n is transverse to zero and its zero set is compact. Discrete spectral values follow under a different hypothesis: a self-adjoint operator on a Hilbert space has discrete finite-multiplicity spectrum when its resolvent is compact. Neither conclusion follows from the nil label alone. These results define a useful MTT discrete survivor filter, but they do not uniquely characterize quantum mechanics. Finite classical state machines, Morse critical sets, symbolic labels, and topological winding sectors also give discrete survivors. Moreover, discreteness does not supply a noncommutative observable algebra, a complex Hilbert space, canonical commutation or anticommutation relations, dynamics, measurement instruments, or the Born rule. Indeed, exact finite-dimensional canonical commutation relations are impossible by the trace of a commutator. We therefore formulate quantum mechanics as a conditional reconstruction. Given a complex unital C*-algebra, a positive normalized state, a representation or the associated GNS construction, a dynamical law, and effects or instruments, the standard operator and probability structures are available.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34",
+      "path": "papers/the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding",
+      "superseded_project": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding",
+      "title": "The Modal Triplet Theory Program B3: Discrete Survivor Filters and Conditional Quantum Reconstruction"
+    },
+    {
       "abstract": "We apply the corrected FP–I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. In the q79 realization the 1<2<3 flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
       "authors": [
         "Peter Nero"

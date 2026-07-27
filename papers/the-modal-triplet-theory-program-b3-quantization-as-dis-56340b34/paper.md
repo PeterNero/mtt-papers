@@ -1,615 +1,568 @@
 ---
 abstract: |
-  We show that quantization arises as a necessary encoding class once reduced descriptions encounter nil obstructions, i.e. termination of admissible describability. In the Modal Triplet Theory (MTT) framework, quantization is not introduced as a postulate, a correspondence principle, or a rule for promoting classical observables to operators. Rather, it is identified as the unique encoding response that preserves coherent structure when continuous descriptive degrees of freedom are no longer admissible.
+  We determine exactly what a nil-type termination of an admissible description does and does not imply. Failure of a declared chart or continuation map does not by itself collapse nearby admissible states to a discrete set. A finite survivor set follows, for example, when a smooth constraint map $`C:M^n\to\mathbb R^n`$ is transverse to zero and its zero set is compact. Discrete spectral values follow under a different hypothesis: a self-adjoint operator on a Hilbert space has discrete finite-multiplicity spectrum when its resolvent is compact. Neither conclusion follows from the nil label alone.
 
-  We demonstrate that nil obstructions force collapse of continuous families of descriptions and select discrete survivors that are stable under admissible refinement. These discrete structures constitute the content of quantization. Topological and combinatorial invariants play a central role, while probability appears only conditionally when invariant measures exist. No Hilbert space, operator algebra, or measurement axiom is assumed at the structural level.
+  These results define a useful MTT *discrete survivor filter*, but they do not uniquely characterize quantum mechanics. Finite classical state machines, Morse critical sets, symbolic labels, and topological winding sectors also give discrete survivors. Moreover, discreteness does not supply a noncommutative observable algebra, a complex Hilbert space, canonical commutation or anticommutation relations, dynamics, measurement instruments, or the Born rule. Indeed, exact finite-dimensional canonical commutation relations are impossible by the trace of a commutator.
 
-  This paper completes the encoding-class triad of the Modal Triplet Theory Program. Together with gravity as kinematic consistency encoding (circle) and gauge structure as redundancy encoding (lens), quantization is shown to arise as an inevitable response to termination of describability (nil).
+  We therefore formulate quantum mechanics as a conditional reconstruction. Given a complex unital C\*-algebra, a positive normalized state, a representation or the associated GNS construction, a dynamical law, and effects or instruments, the standard operator and probability structures are available. Program B3 establishes the discrete-filter and compact-resolvent bridges and records the remaining same-source obligations; it does not derive complex quantum mechanics from nil termination.
 author:
 - Peter Nero
-current_version: v1.0
-date: January 2026
-generated_from_main_tex_sha256: 2023954f859998ed1d26b2b5db66d7b899af95444994ae21344c661d3e7f3412
+current_version: v2
+date: July 2026
+generated_from_main_tex_sha256: f719c0c41119e9f88685a6b19116de36b529e5e72a1fad131aba2c4dd270eea5
 paper_id: the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34
 release_state: zenodo_released
 released_version: v1.0
 title: |
   The Modal Triplet Theory Program B3:  
-  Quantization as Discrete Constraint Encoding  
-  in the Modal Triplet Theory Program
+  Discrete Survivor Filters and Conditional Quantum Reconstruction
 zenodo_doi: 10.5281/zenodo.18355059
 zenodo_record_id: 18355059
 zenodo_url: "https://zenodo.org/records/18355059"
 ---
 
-# Introduction and Scope
+# Revision note for version 2
 
-The Modal Triplet Theory Program establishes that reduced descriptions are necessarily local, that global coherence is generically obstructed, and that failure of global coherence admits an exhaustive classification into three structural obstruction types: circle, lens, and nil. Previous papers in the series analyzed the encoding responses forced by circle obstructions (gravity) and lens obstructions (gauge structure).
+<div class="description">
 
-The purpose of the present paper is to analyze the structural consequences of *nil* obstructions. A nil obstruction occurs when no admissible reduced description exists on a region: the encoding fiber is empty and admissible continuation terminates. Nil is neither inconsistency nor redundancy; it is the failure of describability itself.
+Version 1 of Program B3.
 
-We show that nil obstructions force the introduction of a discrete constraint encoding whose role is to preserve coherent structure when continuous descriptions fail. This encoding is what is conventionally identified as quantization. In the MTT framework, quantization is therefore not a modification of classical dynamics, nor a statement about microscopic ontology. It is the unique encoding response to termination of admissibility.
+The first version inferred that a nil obstruction forces continuous families to collapse, treated discrete survivor structure as the unique content of quantization, and moved from discreteness to measurement language without independent algebraic, dynamical, or probabilistic inputs.
 
-Throughout this paper we adopt the following principles:
+Version 2 separates chart-extension failure from a selected survivor constraint. It proves conditional finite-survivor and compact-resolvent theorems, gives nonquantum countermodels, proves the finite-dimensional canonical-commutator no-go, and states the extra data required for a genuine quantum reconstruction.
 
-- Quantization is an *encoding*, not a dynamical rule.
+Nil-type termination can motivate a survivor filter; compact or topological constraints can produce robust discrete labels; and discreteness alone carries no intrinsic probability distribution.
 
-- Discreteness arises from structural constraints, not from axiomatic postulates.
-
-- Probability is conditional and secondary; it appears only when invariant measures exist.
-
-- Topological and combinatorial invariants play the primary role in selecting admissible discrete structures.
-
-The analysis is structural and applies to all realization classes compatible with the MTT core. Familiar mathematical formalisms of quantum theory appear only as realizations of the discrete constraint encoding and are not assumed in the definition.
-
-<div class="remark">
-
-*Remark 1* (Position in the series). This paper completes the encoding-class analysis forced by the circle–lens–nil classification. It follows the gravity and gauge papers and precedes works on unified encodings, concrete realizations, and phenomenological interpretation. No additional structural assumptions beyond those of the MTT core and obstruction classification are introduced.
+No theorem here selects a complex C\*-algebra, Hilbert representation, quantum state, CCR/CAR representation, Hamiltonian, measurement instrument, Born weights, or physical outcome from the nil profile alone.
 
 </div>
 
-# Nil Obstructions and Collapse of Continuous Description
+# Scope and Imported Data
 
-In this section we analyze the structural consequences of nil obstructions for reduced description. We show that nil obstructions force the collapse of continuous descriptive degrees of freedom and necessitate a discrete constraint encoding.
+Program A0 supplies typed reductions, admissible domains, exact factorization criteria, and controlled approximate descent . Program B0 treats circle, lens, and nil as coarse profiles rather than an exhaustive classification or a list of literal topological factors . In that usage, a nil profile records failure of a declared chart, decoder, transition, or continuation to extend. Programs B1 and B2 show how physical gravity and gauge theory arise only after their own geometric and dynamical data are supplied .
 
-## Nil revisited
+The present paper asks:
 
-Recall that a nil obstruction is defined as the absence of any admissible reduced encoding on a region.
+> Under which additional hypotheses does a nil-adjacent admissibility problem have discrete survivors, and what further structures are needed before those survivors constitute quantum mechanics?
+
+The distinction is essential. The empty fiber of one reduction can coexist with a perfectly continuous upper evolution or with a different admissible chart. Even when the selected survivor set is finite, a finite set is not a Hilbert space, an observable algebra, a probability law, or a quantum measurement theory.
+
+# Nil Profiles and Survivor Data
+
+## Typed termination
+
+<div id="def:nil" class="definition">
+
+**Definition 1** (Nil-type profile). Let $`X`$ be an upper state space, let $`D\subseteq X`$ be the domain of a declared reduction or chart
+``` math
+\pi:D\longrightarrow Y,
+```
+and let $`\mathcal C`$ be a declared class of admissible extensions. A point $`x\in\overline D`$ has a *nil-type profile relative to $`(\pi,D,\mathcal C)`$* when $`\pi`$ has no extension in $`\mathcal C`$ to any allowed neighborhood of $`x`$.
+
+</div>
+
+This is a relative predicate. It depends on the map, its domain, the allowed category, and the extension class. It does not say that $`x`$ is absent from $`X`$, that upper dynamics terminates, or that every other chart fails.
+
+<div id="prop:nil-not-discrete" class="proposition">
+
+**Proposition 2** (Termination does not imply discreteness). *A nil-type profile in the sense of Definition <a href="#def:nil" data-reference-type="ref" data-reference="def:nil">1</a> does not imply that the admissible states in $`D`$, in $`\overline D`$, or in a neighboring chart form a discrete set.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Let $`X=\mathbb R`$, $`D=(-\infty,0)`$, $`Y=\mathbb R`$, and
+``` math
+\pi(x)=\frac{1}{x}.
+```
+In the category of finite continuous real-valued maps, $`\pi`$ has no extension to a neighborhood of $`0`$, so $`0`$ has a nil-type profile. Nevertheless $`D`$ is a continuum. Failure of the selected decoder therefore does not collapse the upper or admissible domain to isolated points. ◻
+
+</div>
+
+<div class="remark">
+
+*Remark 3*. The example is deliberately elementary. The same logical separation applies to singular coordinate systems, blow-up charts, finite-band decoders, and effective descriptions whose conditioning fails at a boundary.
+
+</div>
+
+## A separate survivor predicate
+
+<div id="def:survivor" class="definition">
+
+**Definition 4** (Survivor datum). A *survivor datum* is a tuple
+``` math
+(M,C,K,\sim),
+```
+where $`M`$ is a declared state or parameter space, $`C:M\to V`$ is a constraint map into a declared target, $`K\subseteq M`$ is the controlled domain, and $`\sim`$ is the declared equivalence relation. Its raw and reduced survivor sets are
+``` math
+\mathcal S_{\rm raw}=K\cap C^{-1}(0),
+ \qquad
+ \mathcal S=\mathcal S_{\rm raw}/\sim.
+```
+
+</div>
+
+The nil profile can motivate the choice of $`C`$ or $`K`$, but it does not determine them. Discreteness is a theorem about this survivor datum.
 
 <div class="definition">
 
-**Definition 2** (Nil obstruction). A *nil obstruction* exists at a point or region if the encoding fiber is empty, i.e. no admissible local description applies.
+**Definition 5** (Discrete survivor filter). A survivor datum is a *discrete survivor filter* when its reduced survivor set $`\mathcal S`$ is discrete in the declared quotient topology. It is a *finite survivor filter* when $`\mathcal S`$ is finite.
 
 </div>
 
-Nil is not inconsistency (circle) and not redundancy (lens); it is the failure of describability itself.
+The quotient must be stated. A continuous gauge orbit can represent one reduced survivor, while an unquotiented presentation remains continuous.
 
-## Termination of admissible continuation
+# When Constraints Actually Give Discrete Survivors
 
-Nil obstructions manifest kinematically as termination.
+## The transverse compact theorem
 
-<div class="lemma">
+<div id="thm:regular-value" class="theorem">
 
-**Lemma 3**. *If a continuation chain encounters a nil obstruction, then no admissible continuation exists beyond that point.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* By definition of nil obstruction, no admissible encoding exists in that region. Therefore no admissible continuation chain can be extended through or beyond it. ◻
-
-</div>
-
-This termination is structural and independent of any realization.
-
-## Collapse of continuous families
-
-We now examine the effect of nil on continuous descriptive degrees of freedom.
-
-<div class="theorem">
-
-**Theorem 4** (Collapse of continuous description). *In the presence of a nil obstruction, any continuous family of admissible reduced descriptions collapses: only isolated or discrete descriptive structures may remain admissible.*
+**Theorem 6** (Regular survivor dimension). *Let $`M`$ be a smooth $`n`$-manifold, let $`C:M\to\mathbb R^r`$ be smooth, and suppose that $`0`$ is a regular value of $`C`$. Then
+``` math
+C^{-1}(0)
+```
+is either empty or a smooth submanifold of dimension $`n-r`$.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Assume a continuous family of admissible descriptions persists in a neighborhood of a nil obstruction. Then admissibility would extend continuously into the nil region, contradicting the definition of nil. Therefore continuity of description cannot be maintained across a nil boundary. Only discrete survivors that do not require continuity of admissibility can remain. ◻
+*Proof.* This is the regular-value theorem: surjectivity of $`dC_x:T_xM\to\mathbb R^r`$ for every $`x\in C^{-1}(0)`$ supplies local coordinates in which $`C^{-1}(0)`$ is cut out by $`r`$ coordinate equations  . ◻
+
+</div>
+
+<div id="cor:finite" class="corollary">
+
+**Corollary 7** (Compact transverse finite-survivor theorem). *Under the hypotheses of Theorem <a href="#thm:regular-value" data-reference-type="ref" data-reference="thm:regular-value">6</a>, if $`r=n`$ and $`C^{-1}(0)`$ is compact, then $`C^{-1}(0)`$ is finite.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The regular-value theorem makes $`C^{-1}(0)`$ a zero-dimensional manifold, hence a discrete topological space. A compact discrete space is finite. ◻
 
 </div>
 
 <div class="remark">
 
-*Remark 5*. This collapse does not require any notion of limit or divergence; it follows purely from the incompatibility of continuity with absence of admissible encoding.
+*Remark 8* (What each hypothesis does). Transversality gives local isolation. Equal source and constraint dimensions give dimension zero. Compactness rules out infinitely many isolated solutions escaping to infinity. None of these properties is contained in the word “nil.”
 
 </div>
 
-## Discrete survivors
+## Why dimension counting alone is insufficient
 
-The collapse of continuous description selects discrete structures.
+If $`r<n`$, a regular survivor set has positive dimension $`n-r`$ and therefore retains continuous families. If $`r>n`$, transversality to zero forces an empty preimage. If zero is singular, the preimage can be discrete, continuous, stratified, or nonreduced. For example,
+``` math
+C(x,y)=x^2
+```
+has the continuous zero set $`\{0\}\times\mathbb R`$ even though one equation vanishes to higher order. Thus a count of equations is only informative when rank and domain hypotheses are certified.
+
+## Quotient survivors
+
+<div id="prop:quotient-finite" class="proposition">
+
+**Proposition 9** (Finite raw set implies finite reduced set). *If $`\mathcal S_{\rm raw}`$ is finite, then $`\mathcal S_{\rm raw}/\sim`$ is finite for every equivalence relation $`\sim`$. The converse need not hold.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* A quotient map cannot create more equivalence classes than there are elements. For the converse, a nontrivial group can act transitively on an infinite or continuous raw set, producing a one-point quotient. ◻
+
+</div>
+
+This proposition prevents a common conflation: reduced discreteness can result from a quotient rather than from isolated upper states.
+
+## Robustness under perturbation
+
+<div id="prop:persistence" class="proposition">
+
+**Proposition 10** (Local persistence of a transverse survivor). *Let $`C_\lambda:M^n\to\mathbb R^n`$ depend smoothly on a finite-dimensional parameter $`\lambda`$. If $`C_0(x_0)=0`$ and $`dC_0|_{x_0}`$ is invertible, then for all sufficiently small $`\lambda`$ there is a unique nearby smooth branch $`x(\lambda)`$ with $`C_\lambda(x(\lambda))=0`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Apply the implicit-function theorem to $`(x,\lambda)\mapsto C_\lambda(x)`$ at $`(x_0,0)`$. ◻
+
+</div>
+
+The proposition gives a precise replacement for the former phrase “stable under arbitrary refinement.” Stability must be tied to a topology, perturbation class, and nonsingularity margin.
+
+# Classical Sources of Discrete Survivors
+
+Discrete labels are not unique to quantum theory.
+
+## Finite deterministic systems
+
+Let $`F:S\to S`$ be a deterministic map on a finite set. Its states, cycles, basins, and transition graph are all discrete. No complex amplitude, noncommutative observable algebra, or Born rule is present. This is already a counterexample to the implication
+``` math
+\text{discrete survivors}\Longrightarrow\text{quantum mechanics}.
+```
+
+## Morse critical points
+
+Let $`M`$ be compact and let $`f:M\to\mathbb R`$ be a Morse function. Its critical points are isolated and therefore finite. They are the zeros of $`df`$, with nondegenerate Hessian, and are robust in the usual Morse-theoretic sense. This is a smooth classical realization of Corollary <a href="#cor:finite" data-reference-type="ref" data-reference="cor:finite">7</a>.
+
+## Symbolic dynamics
+
+A finite alphabet supplies discrete symbols and a finite directed graph supplies discrete admissibility rules. Bi-infinite symbolic trajectories can nevertheless form an uncountable compact space. Thus “discrete alphabet” does not even imply a discrete trajectory space. Symbolic dynamics illustrates both the usefulness and the limits of discrete encodings .
+
+## Topological sectors
+
+Maps $`S^1\to S^1`$ are classified up to homotopy by an integer degree. The sector label is discrete, although each sector contains continuous families of maps. Likewise, characteristic classes and winding numbers can label components without quantizing all local degrees of freedom .
+
+<div class="remark">
+
+*Remark 11* (Conclusion from the countermodels). A discrete survivor filter is a broad structural response available to classical, topological, combinatorial, and quantum models. It is canonical only at the level of the declared constraint problem, not as a unique identification with quantum mechanics.
+
+</div>
+
+# Spectral Discreteness Is a Separate Theorem
+
+## Compact resolvent
 
 <div class="definition">
 
-**Definition 6** (Discrete survivor). A *discrete survivor* is a reduced descriptive structure that remains admissible under arbitrarily fine admissible refinement near a nil obstruction.
+**Definition 12** (Compact resolvent). Let $`A`$ be a densely defined closed operator on a Hilbert space $`\mathcal H`$ with nonempty resolvent set. It has *compact resolvent* if
+``` math
+(A-zI)^{-1}
+```
+is compact for one, and hence every, $`z`$ in the resolvent set.
 
 </div>
 
-Discrete survivors are isolated in the space of descriptions and are stable under refinement.
+<div id="thm:compact-resolvent" class="theorem">
 
-## Stability under refinement
-
-Stability is the key distinguishing feature of discrete survivors.
-
-<div class="lemma">
-
-**Lemma 7**. *A reduced descriptive structure is a discrete survivor if and only if it is stable under admissible refinement in the presence of a nil obstruction.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* If a structure is stable under refinement, then arbitrarily fine refinement does not introduce new admissible alternatives, so the structure persists as an isolated description. Conversely, if a structure is not isolated, refinement would generate nearby admissible descriptions, contradicting the collapse imposed by nil. ◻
-
-</div>
-
-## No continuous resolution of nil
-
-One might attempt to resolve nil obstructions by modifying admissibility or relaxing continuity.
-
-<div class="lemma">
-
-**Lemma 8**. *No modification of continuous descriptive structure can resolve a nil obstruction without eliminating admissible description entirely.*
+**Theorem 13** (Self-adjoint compact-resolvent spectrum). *Let $`A`$ be self-adjoint on a complex Hilbert space and have compact resolvent. Then $`\operatorname{spec}(A)\subset\mathbb R`$ consists only of isolated eigenvalues of finite multiplicity, with no finite accumulation point. If $`\mathcal H`$ is infinite-dimensional, the eigenvalues can accumulate only at infinity  .*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Nil is defined as the absence of admissible description. Any attempt to extend continuous description across a nil region either violates admissibility or reintroduces an admissible encoding, contradicting the definition of nil. Therefore continuous resolution is impossible. ◻
+*Proof.* For $`z\notin\mathbb R`$, the resolvent $`R_z=(A-zI)^{-1}`$ is compact and normal. The spectral theorem for compact normal operators gives nonzero eigenvalues of finite multiplicity whose only possible accumulation point is zero. The spectral mapping $`\mu=(\lambda-z)^{-1}`$ transfers these values to eigenvalues of $`A`$ and turns accumulation at zero into escape of $`|\lambda|`$ to infinity. ◻
 
 </div>
 
-## Interpretation
+## What the theorem imports
 
-Nil obstructions therefore force a structural transition:
+Theorem <a href="#thm:compact-resolvent" data-reference-type="ref" data-reference="thm:compact-resolvent">13</a> assumes:
 
-<div class="remark">
+1.  a Hilbert space;
 
-*Remark 9*. When nil obstructions are present, the theory must abandon continuous descriptive degrees of freedom and restrict attention to discrete survivors. This transition is not a dynamical process but a constraint on what descriptions remain admissible.
+2.  a densely defined operator and its domain;
 
-</div>
+3.  closedness and self-adjointness;
 
-## Preview: quantization as encoding
+4.  a nonempty resolvent set; and
 
-The necessity of discrete survivors motivates the definition of a discrete constraint encoding.
+5.  compactness of the resolvent.
 
-<div class="remark">
+A nil-type chart failure supplies none of these. Conversely, a finite matrix has a finite spectrum for elementary algebraic reasons, even if it came from a classical discretization. A finite Galerkin truncation therefore cannot, by itself, prove compact resolvent or the spectrum of its continuum parent.
 
-*Remark 10*. The encoding that organizes and preserves discrete survivors under admissible refinement is what is conventionally identified as quantization. In the next section we define this encoding abstractly and show that it is uniquely forced by nil obstructions.
+## Topological and spectral discreteness differ
 
-</div>
+A topological sector label classifies connected components or homotopy classes. A spectral value is an eigenvalue of a declared operator. Either can be discrete while the other is absent. Identifying them requires an explicit map from the topological or constraint data to the operator and a theorem that preserves the relevant spectrum.
 
-# Discrete Constraint Encoding and Quantization
+# The Quantum Structures That Discreteness Does Not Supply
 
-We now define the encoding class forced by nil obstructions. This encoding organizes the discrete survivors identified in the previous section and ensures their stability under admissible refinement. In the Modal Triplet Theory framework, this encoding is identified as quantization.
+## Seven logically separate layers
 
-## Role of the discrete constraint encoding
+For this paper, a quantum reconstruction distinguishes:
 
-From the analysis of nil obstructions, the required encoding must satisfy the following properties:
+1.  a survivor or outcome label set;
 
-1.  it must preserve discrete survivors under arbitrarily fine admissible refinement;
+2.  a complex linear state carrier;
 
-2.  it must exclude continuous degrees of freedom that are incompatible with nil;
+3.  a noncommutative involutive observable algebra;
 
-3.  it must be definable locally on admissible domains and respect overlap consistency;
+4.  a representation of that algebra;
 
-4.  it must not reduce to redundancy bookkeeping (lens) or kinematic consistency bookkeeping (circle).
+5.  canonical relations, when relevant;
 
-Any encoding failing to satisfy these properties cannot resolve nil obstructions without reintroducing inadmissible continuous structure.
+6.  dynamics; and
 
-## Definition of discrete constraint encoding
+7.  states, effects, instruments, and probabilities.
 
-We now define the encoding formally.
+No implication from item 1 to items 2–7 is valid without additional hypotheses.
 
-<div class="definition">
+## Commutativity is not decided by a set
 
-**Definition 11** (Discrete constraint encoding). A *discrete constraint encoding* is an admissible encoding class that restricts reduced descriptions to discrete survivor sets selected by stability under admissible refinement, and excludes all continuous descriptive degrees of freedom incompatible with nil obstructions.
+For a finite set $`S`$, the algebra $`C(S)`$ of complex functions is commutative. The matrix algebra $`M_N(\mathbb C)`$ is noncommutative. Both may be built over the same number $`N`$ of labels. Therefore cardinality or discreteness cannot select the observable product.
 
-</div>
+## Complex amplitudes are not decided by a circle
 
-The discrete constraint encoding does not generate discreteness; it records and organizes the discreteness forced by nil.
+A supplied Hermitian line bundle with $`U(1)`$ connection can carry phase and holonomy. It does not by itself select a complex Hilbert space of physical states, an inner product, linear superposition, or a representation of observables. Real and quaternionic quantum formalisms also show that the scalar field is an independent structural choice. A shared MTT circle may participate in a complex reconstruction only through a proved connection- preserving source map.
 
-## Resolution of nil obstructions
+## Finite-dimensional CCR no-go
 
-We now show that discrete constraint encoding is necessary and sufficient to resolve nil obstructions.
+<div id="thm:ccr-no-go" class="theorem">
 
-<div class="theorem">
-
-**Theorem 12** (Resolution of nil by discrete constraint encoding). *Nil obstructions can be resolved, in the sense of preserving coherent structure across admissible domains, if and only if a discrete constraint encoding is introduced.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* (*If*) Given a discrete constraint encoding, admissible description is restricted to discrete survivors that remain stable under refinement near nil boundaries. These survivors provide a consistent reduced description without requiring continuity across nil regions.
-
-(*Only if*) In the absence of a discrete constraint encoding, any attempt to preserve coherent structure across nil obstructions would require continuous descriptive degrees of freedom, contradicting the collapse of continuity forced by nil. Therefore no resolution is possible without such an encoding. ◻
-
-</div>
-
-## Uniqueness of the discrete constraint encoding
-
-We now establish the uniqueness of quantization as an encoding response to nil.
-
-<div class="theorem">
-
-**Theorem 13** (Uniqueness of discrete constraint encoding). *Any admissible encoding that preserves coherent structure in the presence of nil obstructions is equivalent, up to admissible re-encoding, to a discrete constraint encoding.*
+**Theorem 14** (No exact finite-dimensional canonical commutator). *Let $`Q,P\in M_N(\mathbb C)`$ and let $`\hbar\ne0`$. Then
+``` math
+[Q,P]=i\hbar I_N
+```
+is impossible.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Let $`\mathcal Q`$ be an admissible encoding resolving nil obstructions. By definition, $`\mathcal Q`$ must restrict descriptions to structures stable under arbitrarily fine admissible refinement. This restriction induces a discrete selection on the space of possible descriptions. Any such encoding factors through the quotient that identifies all inadmissible continuous variations, which is precisely the discrete constraint encoding. Therefore $`\mathcal Q`$ is equivalent to a discrete constraint encoding. ◻
+*Proof.* The cyclicity of the finite-dimensional trace gives
+``` math
+\operatorname{tr}[Q,P]
+ =\operatorname{tr}(QP)-\operatorname{tr}(PQ)=0.
+```
+The proposed right-hand side has trace $`i\hbar N\ne0`$. ◻
 
 </div>
 
-## Quantization as encoding
+Exact bosonic CCR representations therefore require an infinite-dimensional setting and careful unbounded-operator domains, or a Weyl-algebra formulation. A finite survivor matrix may approximate selected observables, but it is not an exact CCR representation merely because it has discrete states.
 
-We are now in a position to identify quantization within the MTT framework.
+## CAR is also an input
 
-<div class="remark">
+For finitely many fermionic modes, the CAR algebra has finite-dimensional matrix representations. This possibility does not make CAR follow from finiteness. One must still supply generators $`a_j,a_j^*`$ and prove
+``` math
+\{a_j,a_k^*\}=\delta_{jk}I,
+ \qquad
+ \{a_j,a_k\}=0.
+```
+The distinction between the CCR no-go and finite-mode CAR representations is another reason to keep “discrete” and “quantum” separate.
 
-*Remark 14* (Quantization as encoding). The discrete constraint encoding defined above is what is conventionally identified as quantization. In Modal Triplet Theory, quantization is not a rule for promoting classical observables to operators, nor a statement about microscopic ontology. It is the unique encoding response to termination of describability imposed by nil obstructions.
+# Conditional C\*-Algebraic Quantum Reconstruction
 
-</div>
+## Reconstruction datum
 
-## No dynamical assumptions
+<div id="ass:quantum" class="assumption">
 
-As with gravity and gauge encodings, quantization is defined structurally.
+**Assumption 15** (Quantum reconstruction datum). Supply:
 
-<div class="remark">
+1.  a complex unital C\*-algebra $`\mathfrak A`$ of observables;
 
-*Remark 15*. The discrete constraint encoding specifies *what* descriptive structures remain admissible in the presence of nil obstructions, not *how* those structures evolve. Dynamical laws and operator formalisms appear only in specific realization classes and are not part of the encoding definition.
+2.  a state $`\omega:\mathfrak A\to\mathbb C`$, meaning a positive linear functional with $`\omega(I)=1`$;
 
-</div>
+3.  a strongly continuous dynamical law, either a one-parameter group $`\alpha_t`$ of \*-automorphisms or a declared open-system evolution;
 
-## Preview: topology and combinatorics
+4.  a class of effects $`0\le E\le I`$ and, for sequential measurements, a specified instrument; and
 
-The selection of discrete survivors is closely tied to topological and combinatorial invariants.
-
-<div class="remark">
-
-*Remark 16*. In the next section we show how topological and combinatorial structures naturally organize discrete survivors and why such invariants play a central role in quantized descriptions.
-
-</div>
-
-# Topology and Combinatorial Invariants
-
-In this section we show that discrete survivors selected by nil obstructions are naturally organized by topological and combinatorial invariants. These invariants do not introduce new structure; they classify the discrete descriptive remnants that remain admissible when continuous descriptions collapse.
-
-## Why topology becomes relevant
-
-When continuous descriptive degrees of freedom are excluded by nil obstructions, only structures invariant under admissible refinement can persist.
-
-<div class="remark">
-
-*Remark 17*. Refinement-invariant structures are necessarily discrete and global in nature. Topology and combinatorics provide precisely such invariants: they remain well defined under arbitrary local refinement and do not depend on metric or smooth structure.
+5.  a source map relating the selected MTT survivor, bundle, or operator data to $`\mathfrak A`$, $`\omega`$, the dynamics, and the effects.
 
 </div>
 
-Thus, topology enters quantization not as a geometric axiom, but as a consequence of refinement stability.
+## GNS representation
 
-## Discrete invariants under refinement
+<div id="thm:gns" class="theorem">
 
-We formalize the notion of refinement-invariant discrete data.
-
-<div class="definition">
-
-**Definition 18** (Refinement-invariant discrete invariant). A *refinement-invariant discrete invariant* is a discrete label or quantity assigned to a reduced description such that:
-
-1.  it is preserved under admissible refinement of encodings;
-
-2.  it cannot be continuously deformed within the admissible description space;
-
-3.  it distinguishes inequivalent discrete survivors.
-
-</div>
-
-Examples include winding numbers, intersection indices, combinatorial charges, and other discrete classification data.
-
-## Topological classification of survivors
-
-Discrete survivors are classified by their invariants.
-
-<div class="theorem">
-
-**Theorem 19** (Topological organization of discrete survivors). *Discrete survivors selected by nil obstructions decompose into equivalence classes labeled by refinement-invariant topological or combinatorial invariants.*
+**Theorem 16** (Conditional Hilbert reconstruction). *Under the first two items of Assumption <a href="#ass:quantum" data-reference-type="ref" data-reference="ass:quantum">15</a>, there exist a complex Hilbert space $`\mathcal H_\omega`$, a unital \*-representation
+``` math
+\pi_\omega:\mathfrak A\longrightarrow B(\mathcal H_\omega),
+```
+and a cyclic unit vector $`\Omega_\omega`$ such that
+``` math
+\omega(A)
+ =\langle\Omega_\omega,\pi_\omega(A)\Omega_\omega\rangle
+ \qquad(A\in\mathfrak A).
+```
+The cyclic representation is unique up to unitary equivalence  .*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Let $`\mathcal S`$ denote the set of discrete survivors near a nil boundary. Any two elements of $`\mathcal S`$ that differ by a refinement-invariant discrete invariant cannot be related by admissible re-encoding or refinement. Conversely, if no such invariant distinguishes them, refinement stability implies they represent the same survivor. Therefore $`\mathcal S`$ decomposes into equivalence classes labeled by such invariants. ◻
+*Proof.* On $`\mathfrak A`$, define $`\langle A,B\rangle_\omega=\omega(A^*B)`$ and quotient by the null left ideal $`N_\omega=\{A:\omega(A^*A)=0\}`$. Complete the quotient to $`\mathcal H_\omega`$. Left multiplication defines $`\pi_\omega`$, and the class of $`I`$ defines $`\Omega_\omega`$. The standard cyclicity and uniqueness argument gives the result. ◻
 
 </div>
 
-This classification replaces continuous parameterization.
+<div class="remark">
 
-## Exclusion of continuous parameters
+*Remark 17*. The theorem reconstructs a representation from the supplied pair $`(\mathfrak A,\omega)`$. It does not select either member of that pair from a survivor set.
 
-Topology explains why continuous parameters are excluded.
+</div>
 
-<div class="lemma">
+## Conditional Born probabilities
 
-**Lemma 20**. *Any continuous parameter labeling discrete survivors is incompatible with refinement stability in the presence of nil obstructions.*
+<div id="prop:born" class="proposition">
+
+**Proposition 18** (Probabilities after state and effect are supplied). *For every effect $`E\in\mathfrak A`$,
+``` math
+p_\omega(E)=\omega(E)
+```
+lies in $`[0,1]`$. In the GNS representation,
+``` math
+p_\omega(E)
+ =\langle\Omega_\omega,\pi_\omega(E)\Omega_\omega\rangle.
+```
+For a vector state and a projection, this is the usual Born expression.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* A continuous parameter would admit arbitrarily small variations. Under refinement, such variations would generate nearby admissible descriptions, contradicting the isolation required of discrete survivors. Therefore continuous parameters cannot label admissible discrete survivors. ◻
+*Proof.* Positivity gives $`\omega(E)\ge0`$. Since $`I-E\ge0`$, $`1-\omega(E)=\omega(I-E)\ge0`$. The GNS identity gives the second formula. ◻
 
 </div>
 
-## Relation to familiar quantum discreteness
+This is a probability evaluation theorem, not a probability source theorem. It does not derive $`\omega`$, the effect $`E`$, a detector, a capture process, or one realized outcome.
 
-The discreteness encountered here encompasses, but does not assume, familiar quantum phenomena.
+## Dynamics and Stone’s theorem
 
-<div class="remark">
+<div id="thm:stone" class="theorem">
 
-*Remark 21*. Discrete spectra, quantized charges, and topological quantum numbers commonly encountered in physical theories are realizations of refinement-invariant discrete invariants. Their appearance is explained here as a structural consequence of nil obstructions, not as a postulate of quantum theory.
-
-</div>
-
-## Combinatorial structures
-
-Not all discrete invariants are topological in the geometric sense.
-
-<div class="remark">
-
-*Remark 22*. In some realizations, discrete survivors are organized by purely combinatorial data (graph connectivity, adjacency relations, incidence structures) rather than by geometric topology. The present framework accommodates both cases, as only refinement invariance is required.
+**Theorem 19** (Conditional Hamiltonian generator). *Let $`U:\mathbb R\to\mathcal U(\mathcal H)`$ be a strongly continuous one-parameter unitary group. There is a unique self-adjoint operator $`H`$ such that
+``` math
+U(t)=e^{-itH}
+```
+ .*
 
 </div>
 
-## Independence from realization details
+A C\*-dynamical system $`(\mathfrak A,\alpha_t)`$ is unitarily implemented in the GNS representation of an invariant state under the standard construction. The existence of dynamics, invariance of the state, and the physical normalization of $`H`$ remain additional inputs; a discrete spectrum does not choose them.
 
-The role of topology and combinatorics is structural, not realizational.
+## Measurement and records
 
-<div class="remark">
+An effect assigns a probability to one event. A quantum instrument additionally specifies outcome probabilities and state updates. Repeatability, decoherence, records, detector thresholds, and objective history selection are further dynamical statements. Nil termination alone proves none of them. In particular, “one survivor remains” is not a collapse theorem unless the physical instrument and state-update map have been derived.
 
-*Remark 23*. The appearance of topological or combinatorial invariants does not depend on the existence of a smooth manifold or geometric background. Such invariants classify discrete survivors in any realization class compatible with nil obstructions.
+# The MTT Quantum Source Contract
 
-</div>
+## Same-source requirement
 
-## Preview: probability and measurement
+An MTT realization reaches quantum-mechanical reconstruction only if one selected upper source emits compatible instances of all the structures in Assumption <a href="#ass:quantum" data-reference-type="ref" data-reference="ass:quantum">15</a>. Combining an independently chosen survivor set, an unrelated matrix algebra, an observed probability vector, and a fitted Hamiltonian is a profile replay, not a source theorem.
 
-Discrete classification alone does not assign weights or probabilities to survivors.
+<div id="def:certificate" class="definition">
 
-<div class="remark">
+**Definition 20** (MTT quantum source certificate). An *MTT quantum source certificate* consists of:
 
-*Remark 24*. Probability arises only when additional structure—such as invariant measures on discrete survivor sets—exists. In the absence of such structure, quantization yields discrete possibilities without probabilistic interpretation. This issue is addressed in the next section.
+1.  a hash-addressed upper carrier and admissibility domain;
 
-</div>
+2.  a survivor or constraint operator with a proved domain and quotient;
 
-# Conditional Probability and Measurement
+3.  a complex C\*-algebra and representation emitted from that carrier;
 
-In this section we analyze the status of probability and measurement within the discrete constraint encoding framework. We show that probability is not a primitive ingredient of quantization, but a conditional structure that arises only when additional invariant measures exist on the space of discrete survivors.
+4.  selected CCR, CAR, or finite observable relations with exact or controlled-error certificates;
 
-## Absence of intrinsic probability
+5.  selected dynamics with domain, self-adjointness or complete-positivity conditions, and normalization;
 
-Discrete survivors selected by nil obstructions are classified by refinement- invariant discrete data. This classification alone does not assign probabilities.
+6.  a positive normalized state and selected effects or instruments;
 
-<div class="remark">
+7.  a commuting source map connecting the upper data to each lower object; and
 
-*Remark 25*. Quantization, as defined by the discrete constraint encoding, yields a discrete set of admissible descriptions but does not endow them with any intrinsic probabilistic weighting. Discreteness does not imply randomness.
-
-</div>
-
-Thus, probability is not forced by nil obstructions.
-
-## Invariant measures on survivor sets
-
-Probability enters only when discrete survivor sets admit invariant measures.
-
-<div class="definition">
-
-**Definition 26** (Invariant measure on discrete survivors). Let $`\mathcal S`$ be a discrete survivor set. An *invariant measure* on $`\mathcal S`$ is a probability measure $`\mu`$ such that $`\mu`$ is preserved under all admissible re-encodings and refinement operations.
+8.  an independent verifier that distinguishes exact, controlled, profile-replay, and open rows.
 
 </div>
 
-Invariant measures are additional structures, not consequences of quantization.
+## What current finite carriers can establish
 
-## Conditional probability
+A finite projected algebra can be an exact object when the theory explicitly selects that finite algebra. It can establish finite spectral data, noncommutative matrix products, finite-mode CAR, and exact finite traces. It cannot establish exact bosonic CCR by Theorem <a href="#thm:ccr-no-go" data-reference-type="ref" data-reference="thm:ccr-no-go">14</a>. Nor does an exact finite trace automatically become the physical quantum state or detector probability. Those identifications require the source certificate of Definition <a href="#def:certificate" data-reference-type="ref" data-reference="def:certificate">20</a>.
 
-We now define probability conditionally.
+## Relation to circle and lens profiles
 
-<div class="definition">
+The profiles can coexist:
 
-**Definition 27** (Conditional probability). Probability is defined on a discrete survivor set $`\mathcal S`$ if and only if an invariant measure $`\mu`$ exists on $`\mathcal S`$. In that case, probabilities are given by $`\mu`$; in the absence of such a measure, no probabilistic interpretation is defined.
+- circle-type transport can act as phase or connection data;
 
-</div>
+- lens-type quotienting can encode redundant representatives; and
 
-<div class="remark">
+- a nil-adjacent constraint can select a survivor sector.
 
-*Remark 28*. This definition matches the treatment of probability in the structural core of Modal Triplet Theory. Probability is conditional on the existence of invariant measures and is not universally available.
+Compatibility of these roles is not automatic commutativity. Their actions, domains, quotient order, and connection transport must be supplied and checked. No exhaustive “one profile, one physical theory” triad is asserted.
 
-</div>
+# Scoped B3 Theorem
 
-## Measurement as selection among survivors
+<div id="thm:scoped" class="theorem">
 
-Measurement is not an axiom but a kinematic event.
+**Theorem 21** (Discrete filters and conditional quantum reconstruction). *For the typed data and hypotheses of this paper:*
 
-<div class="definition">
+1.  *failure of a declared chart or decoder to extend does not by itself imply a discrete state or survivor set;*
 
-**Definition 29** (Measurement). A *measurement* is a selection event in which admissible continuation terminates and a particular discrete survivor is realized.
+2.  *a smooth constraint $`C:M^n\to\mathbb R^n`$ transverse to zero has isolated zeros, and a compact zero set is finite;*
 
-</div>
+3.  *classical finite-state, Morse, symbolic, and topological systems can produce discrete survivor labels;*
 
-Measurement corresponds to the encounter of a nil obstruction followed by selection among discrete survivors.
+4.  *a self-adjoint operator with compact resolvent has discrete finite-multiplicity spectrum, but that conclusion imports a Hilbert space, operator domain, self-adjointness, and compactness;*
 
-## Measurement without collapse postulate
+5.  *a discrete set selects neither a noncommutative algebra nor complex amplitudes;*
 
-No collapse postulate is assumed.
+6.  *exact finite-dimensional bosonic CCR are impossible, while finite-mode CAR still require an independently supplied algebra;*
 
-<div class="remark">
+7.  *a complex C\*-algebra and state admit the GNS representation;*
 
-*Remark 30*. Selection among discrete survivors is forced structurally by admissibility constraints. It does not require an additional collapse axiom or modification of dynamics. The appearance of collapse is the manifestation of termination of describability.
+8.  *Born probabilities follow for supplied effects and a supplied state; and*
 
-</div>
+9.  *a Hamiltonian generator follows from supplied strongly continuous unitary dynamics.*
 
-## Repeatability and records
-
-Repeatable measurement outcomes correspond to stable discrete survivors.
-
-<div class="lemma">
-
-**Lemma 31**. *A discrete survivor that is stable under admissible refinement defines a repeatable measurement outcome.*
+*Consequently, a discrete survivor filter is a useful nil-type response but is not a derivation or unique characterization of complex quantum mechanics.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Stability under refinement ensures that subsequent admissible continuation cannot alter the survivor label. Therefore the outcome persists and can be recorded. ◻
+*Proof.* Item 1 is Proposition <a href="#prop:nil-not-discrete" data-reference-type="ref" data-reference="prop:nil-not-discrete">2</a>. Item 2 is Theorem <a href="#thm:regular-value" data-reference-type="ref" data-reference="thm:regular-value">6</a> and Corollary <a href="#cor:finite" data-reference-type="ref" data-reference="cor:finite">7</a>. Item 3 is established by the countermodels above. Item 4 is Theorem <a href="#thm:compact-resolvent" data-reference-type="ref" data-reference="thm:compact-resolvent">13</a>. Item 5 follows from the commutative and matrix-algebra counterexamples and the independent scalar-field choice. Item 6 is Theorem <a href="#thm:ccr-no-go" data-reference-type="ref" data-reference="thm:ccr-no-go">14</a> and the subsequent CAR discussion. Items 7–9 are Theorem <a href="#thm:gns" data-reference-type="ref" data-reference="thm:gns">16</a>, Proposition <a href="#prop:born" data-reference-type="ref" data-reference="prop:born">18</a>, and Theorem <a href="#thm:stone" data-reference-type="ref" data-reference="thm:stone">19</a>. ◻
 
 </div>
 
-## Born-type rules as emergent
+# Version Delta and Research Frontier
 
-When invariant measures exist, familiar probabilistic rules may emerge.
+Relative to version 1, this revision:
 
-<div class="remark">
+- replaces the claimed collapse of every continuous family at a nil boundary by a counterexample and a typed extension-failure definition;
 
-*Remark 32*. In specific realization classes, invariant measures may take forms that reproduce Born-type probability rules. Such results are realizational and do not alter the structural role of quantization as discrete constraint encoding.
+- introduces a separate survivor datum with explicit constraint, domain, and quotient;
 
-</div>
+- proves finite survivors only under transversality, equal constraint dimension, and compactness;
 
-## No universal probability
+- replaces informal refinement stability by an implicit-function theorem with a declared perturbation class;
 
-Finally, we emphasize the limits of probabilistic interpretation.
+- records classical finite-state, Morse, symbolic, and topological countermodels;
 
-<div class="theorem">
+- separates topological-sector discreteness from operator-spectrum discreteness;
 
-**Theorem 33** (No universal probability). *There exists no universally defined probability measure applicable to all quantized descriptions in the Modal Triplet Theory framework.*
+- states the compact-resolvent spectral theorem with all imported hypotheses;
 
-</div>
+- separates outcome labels, complex state carriers, observable algebras, representations, canonical relations, dynamics, and probability;
 
-<div class="proof">
+- proves that exact finite-dimensional bosonic CCR are impossible;
 
-*Proof.* Probability requires an invariant measure. Such measures may exist in some discrete survivor sets but not in others. Therefore no universal probability assignment is possible. ◻
+- moves complex Hilbert, C\*-algebraic, CCR/CAR, dynamics, measurement, and Born claims into independent reconstruction theorems; and
 
-</div>
+- withdraws the claims that quantization is the unique response to nil or that the circle–lens–nil profiles exhaust physical gravity, gauge theory, and quantum mechanics.
 
-## Preview: relation to other encodings
+The next source theorem must provide one selected MTT carrier satisfying Definition <a href="#def:certificate" data-reference-type="ref" data-reference="def:certificate">20</a>. In particular, it must emit the observable algebra, state, representation, dynamics, and effects from the same source as the survivor filter, with exact or controlled transport between them. A finite matrix or a discrete label set alone does not close this frontier.
 
-Probability interacts with other encoding classes only indirectly.
+# Conclusion
 
-<div class="remark">
+Nil-type termination remains a useful warning: a declared reduced description has reached the end of its admissible domain. It can motivate a search for robust survivor data. The revised mathematics shows, however, that the survivors become discrete only when an actual constraint or spectral theorem makes them discrete.
 
-*Remark 34*. Gauge and gravity encodings constrain which discrete survivors exist and how they are organized, but they do not in themselves define probabilistic weights. The interaction between probability, gauge, and gravity arises only in particular realization classes.
+That distinction strengthens the MTT program. The compact transverse theorem gives an exact finite-survivor route, and the compact-resolvent theorem gives an exact spectral route. Their hypotheses can be tested. Classical countermodels then show where the quantum claim begins: complex linearity, noncommutative observables, canonical relations, dynamics, states, and measurement effects must all be sourced.
 
-</div>
+Program B3 therefore supplies a rigorous discrete-filter layer and a clear quantum reconstruction contract. It does not call every discrete structure quantum. A later selected-source theorem can now succeed by filling explicit mathematical slots rather than by relying on the ambiguity of the word “quantization.”
 
-# Relation to Gravity and Gauge Encodings
+<div class="thebibliography">
 
-In this section we clarify how the discrete constraint encoding associated with quantization interacts with the kinematic consistency encoding (gravity) and the redundancy encoding (gauge). Each encoding resolves a distinct obstruction type, and their coexistence is structured rather than competitive.
+99
 
-## Distinct obstruction roles
+P. Nero, *The Modal Triplet Theory Program A0: A Structural Theory of Reduced Description*, revised v2, 2026.
 
-We recall the correspondence established in the Modal Triplet Theory framework:
+P. Nero, *The Modal Triplet Theory Program B0: Circle–Lens–Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations*, revised v2, 2026.
 
-<div class="center">
+P. Nero, *The Modal Triplet Theory Program B1: Loop-Transport Consistency and the Conditional Gravity Realization*, revised v2, 2026.
 
-| Obstruction | Encoding response |    Structural role     |
-|:-----------:|:-----------------:|:----------------------:|
-|   Circle    |      Gravity      | Kinematic consistency  |
-|    Lens     |       Gauge       | Redundancy bookkeeping |
-|     Nil     |   Quantization    |  Discrete constraint   |
+P. Nero, *The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang–Mills Realization*, revised v2, 2026.
 
-</div>
+J. M. Lee, *Introduction to Smooth Manifolds*, second edition, Springer, 2013.
 
-Each encoding addresses a distinct failure of global coherence and therefore cannot replace the others.
+A. Hatcher, *Algebraic Topology*, Cambridge University Press, 2002.
 
-## Quantization does not resolve circle or lens
+D. Lind and B. Marcus, *An Introduction to Symbolic Dynamics and Coding*, Cambridge University Press, 1995.
 
-Quantization resolves termination of describability, not inconsistency or redundancy.
+M. Reed and B. Simon, *Methods of Modern Mathematical Physics I: Functional Analysis*, revised edition, Academic Press, 1980.
 
-<div class="lemma">
+J. B. Conway, *A Course in Functional Analysis*, second edition, Springer, 1990.
 
-**Lemma 35**. *The discrete constraint encoding does not resolve circle or lens obstructions.*
+G. J. Murphy, *C\*-Algebras and Operator Theory*, Academic Press, 1990.
 
-</div>
+O. Bratteli and D. W. Robinson, *Operator Algebras and Quantum Statistical Mechanics I*, second edition, Springer, 1987.
 
-<div class="proof">
-
-*Proof.* Discrete constraint encoding restricts admissible descriptions to discrete survivors. It does not modify overlap transport rules (required for circle) nor does it identify redundant lifts (required for lens). Therefore it cannot restore kinematic path independence or eliminate redundancy of representation. ◻
+M. H. Stone, “On one-parameter unitary groups in Hilbert space,” *Annals of Mathematics* 33 (1932), 643–648.
 
 </div>
-
-This establishes that quantization is structurally orthogonal to gravity and gauge.
-
-## Gravity and gauge constrain discrete survivors
-
-Although quantization does not resolve circle or lens, those encodings constrain which discrete survivors are admissible.
-
-<div class="remark">
-
-*Remark 36*. Gravity encoding constrains discrete survivors by stabilizing causal structure and kinematic continuation near nil boundaries. Gauge encoding constrains discrete survivors by organizing redundancy of representation within each survivor class.
-
-</div>
-
-Thus, discrete constraint encoding operates within boundaries shaped by gravity and gauge.
-
-## Compatibility of encodings
-
-We now state the compatibility result.
-
-<div class="theorem">
-
-**Theorem 37** (Compatibility of encoding classes). *The gravity, gauge, and quantization encodings are mutually compatible: they may coexist without contradiction in a single realization, each addressing a distinct obstruction type.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Each encoding modifies a different structural aspect of reduced description: gravity modifies path-dependent transport, gauge modifies fiber redundancy, and quantization modifies admissible descriptive sets. Since these aspects are orthogonal, the encodings commute structurally and may be applied simultaneously. ◻
-
-</div>
-
-## Hierarchical interaction
-
-While compatible, the encodings interact hierarchically.
-
-<div class="remark">
-
-*Remark 38*. Gravity acts at the level of kinematic persistence and causal structure. Gauge acts at the level of representational redundancy. Quantization acts at the level of admissible descriptive existence. This hierarchy determines the order in which constraints become active under refinement.
-
-</div>
-
-This hierarchy explains why gravity and gauge often appear in classical regimes, while quantization becomes dominant near nil boundaries.
-
-## Mixed realizations
-
-Many familiar physical theories realize more than one encoding simultaneously.
-
-<div class="remark">
-
-*Remark 39*. Electromagnetism provides a realization in which gauge (lens) and circle obstructions coexist within a single U(1) bundle, while quantization restricts allowed charge and flux values discretely. Nonabelian gauge theories and gravitational theories provide further examples of mixed realizations.
-
-</div>
-
-The present framework accommodates such coexistence without conflation.
-
-## No unification at the encoding level
-
-Finally, we emphasize the limits of unification.
-
-<div class="remark">
-
-*Remark 40*. Unification of gravity, gauge, and quantization does not occur at the level of structural obstructions or encoding classes. It may occur only at the level of specific realizations that simultaneously resolve multiple obstruction types. Such unification is contingent and does not alter the distinct structural roles identified here.
-
-</div>
-
-## Preview: unified and saturated encodings
-
-The coexistence of multiple encodings motivates the study of saturated encoding frameworks.
-
-<div class="remark">
-
-*Remark 41*. In subsequent papers we analyze encoding frameworks that simultaneously resolve circle, lens, and nil obstructions in a single realization. Such frameworks include, but are not limited to, string-theoretic and related constructions.
-
-</div>
-
-# Summary and Outlook
-
-In this paper we have identified quantization as a necessary encoding class arising from nil obstructions in the Modal Triplet Theory framework. Nil obstructions correspond to termination of admissible describability: regions in which no continuous reduced description can exist. Such obstructions are neither inconsistency (circle) nor redundancy (lens), but failure of description itself.
-
-We showed that nil obstructions force collapse of continuous descriptive degrees of freedom and select discrete survivors that remain stable under admissible refinement. The organization and preservation of these discrete survivors requires a discrete constraint encoding, which we identified with quantization. In this framework, quantization is not a postulate, a correspondence principle, or a rule for operator promotion; it is the unique encoding response that allows coherent structure to persist when continuity is structurally forbidden.
-
-Topology and combinatorial invariants were shown to play a central role in classifying discrete survivors. These invariants arise not from geometric assumptions, but from refinement stability. Probability was shown to be secondary and conditional: it appears only when invariant measures exist on discrete survivor sets, and no universal probabilistic assignment is implied by quantization itself. Measurement was interpreted as a selection event associated with nil boundaries, without invoking collapse axioms or observer-dependent postulates.
-
-We further clarified the relation between quantization, gravity, and gauge encodings. Each encoding resolves a distinct obstruction type—nil, circle, and lens respectively—and the three are structurally compatible. Quantization does not resolve kinematic path dependence or redundancy of representation, but operates within the constraints imposed by gravity and gauge encodings. Their interaction is hierarchical rather than competitive, explaining the coexistence of classical, gauge, and quantum structures in familiar physical theories.
-
-Together with the preceding papers on gravity as kinematic consistency encoding and gauge structure as redundancy encoding, the present work completes the encoding-class triad forced by the circle–lens–nil classification. These three encodings exhaust the necessary structural responses to failure of global coherence in reduced description.
-
-Subsequent papers in the Modal Triplet Theory Program explore two directions. First, unified or saturated encoding frameworks are analyzed, in which multiple obstruction types are resolved simultaneously within a single realization. Second, concrete realization papers construct explicit geometric, bundle-based, and algebraic models that instantiate the encoding classes identified here, without altering the structural conclusions of the present analysis.
-
-In this way, quantization appears not as a mystery of microscopic physics, but as an inevitable consequence of the limits of describability itself.

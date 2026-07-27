@@ -1,12 +1,12 @@
 {
-  "abstract": "We show that quantization arises as a necessary encoding class once reduced descriptions encounter nil obstructions, i.e. termination of admissible describability. In the Modal Triplet Theory (MTT) framework, quantization is not introduced as a postulate, a correspondence principle, or a rule for promoting classical observables to operators. Rather, it is identified as the unique encoding response that preserves coherent structure when continuous descriptive degrees of freedom are no longer admissible. We demonstrate that nil obstructions force collapse of continuous families of descriptions and select discrete survivors that are stable under admissible refinement. These discrete structures constitute the content of quantization. Topological and combinatorial invariants play a central role, while probability appears only conditionally when invariant measures exist. No Hilbert space, operator algebra, or measurement axiom is assumed at the structural level. This paper completes the encoding-class triad of the Modal Triplet Theory Program. Together with gravity as kinematic consistency encoding (circle) and gauge structure as redundancy encoding (lens), quantization is shown to arise as an inevitable response to termination of describability (nil).",
+  "abstract": "We determine exactly what a nil-type termination of an admissible description does and does not imply. Failure of a declared chart or continuation map does not by itself collapse nearby admissible states to a discrete set. A finite survivor set follows, for example, when a smooth constraint map C from an n-manifold to R^n is transverse to zero and its zero set is compact. Discrete spectral values follow under a different hypothesis: a self-adjoint operator on a Hilbert space has discrete finite-multiplicity spectrum when its resolvent is compact. Neither conclusion follows from the nil label alone. These results define a useful MTT discrete survivor filter, but they do not uniquely characterize quantum mechanics. Finite classical state machines, Morse critical sets, symbolic labels, and topological winding sectors also give discrete survivors. Moreover, discreteness does not supply a noncommutative observable algebra, a complex Hilbert space, canonical commutation or anticommutation relations, dynamics, measurement instruments, or the Born rule. Indeed, exact finite-dimensional canonical commutation relations are impossible by the trace of a commutator. We therefore formulate quantum mechanics as a conditional reconstruction. Given a complex unital C*-algebra, a positive normalized state, a representation or the associated GNS construction, a dynamical law, and effects or instruments, the standard operator and probability structures are available.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18355058",
     "created": "2026-01-23T20:07:11.941415+00:00",
@@ -32,12 +32,15 @@
     "updated": "2026-01-23T20:07:12.377557+00:00",
     "version": "v1.0"
   },
-  "main_tex_sha256": "2023954f859998ed1d26b2b5db66d7b899af95444994ae21344c661d3e7f3412",
+  "main_tex_sha256": "f719c0c41119e9f88685a6b19116de36b529e5e72a1fad131aba2c4dd270eea5",
   "paper_id": "the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34",
-  "paper_md_sha256": "79e3cf93bd50092aeb2cf03ba260db94fd6451107039b5f986eeb3d42293510d",
+  "paper_md_sha256": "6780601f2b19c1f55f1e3a7f2360bf8383ad2cf4da289e3e58faa7066ea08bf8",
   "release_state": "zenodo_released",
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "11cb7d0e78e81a31edfabef1474d81eb5803289b27e9c48900387b82ab78fd6c",
+    "selected_revision": true,
+    "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -47,9 +50,14 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 31913,
+      "bytes": 29825,
       "path": "main.tex",
-      "sha256": "2023954f859998ed1d26b2b5db66d7b899af95444994ae21344c661d3e7f3412"
+      "sha256": "f719c0c41119e9f88685a6b19116de36b529e5e72a1fad131aba2c4dd270eea5"
+    },
+    {
+      "bytes": 6939,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "11cb7d0e78e81a31edfabef1474d81eb5803289b27e9c48900387b82ab78fd6c"
     },
     {
       "bytes": 4186,
@@ -60,9 +68,9 @@
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding"
   },
-  "source_tree_sha256": "024d2ed8d82c4604f5b67c576d621126c15c5913330ed8d5729596f62da16b1f",
-  "title": "The Modal Triplet Theory Program B3: Quantization as Discrete Constraint Encoding in the Modal Triplet Theory Program",
-  "version_relation": "matches_latest_release",
+  "source_tree_sha256": "492113cd5f8b08012814f536eef038b8a416fdd9f811a6778bfe81659fb6dbf3",
+  "title": "The Modal Triplet Theory Program B3: Discrete Survivor Filters and Conditional Quantum Reconstruction",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18355058",
