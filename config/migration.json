@@ -137,6 +137,23 @@
       "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations"
     },
     {
+      "abstract": "This paper gives a typed realization dictionary for Modal Triplet Theory. In the canonical physical specialization M10=Y4 x X6, coordinate factors of the compact internal space, vector bundles, Hermitian line bundles, vertical operators, and spectral projectors are distinct objects. We prove the joint-projector theorem under strong commutation and the discrete-spectrum theorem under compact resolvent. We record the exact local world-in-world decomposition Mat(3,R)=so(3)+(1+2+3) strain components and distinguish it from the selected q=79 global carrier L_shared tensor (O+A0+A). Equality of ranks does not construct the required connection-, operator-, and Hessian-preserving continuum intertwiner. The shared circle is line-bundle phase and holonomy data, not physical time or a seventh internal dimension. The old no-global-chart, automatic discrete-spectrum, forced extended-carrier, worldsheet, and duality claims are withdrawn. The invalid old Iwasawa construction and literal Circle-Lens-Nil product are quarantined. Realization nonuniqueness is proved to limit physical predictivity until a source law selects one realization and supplies its dynamics and observable map.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "result_refs": [
+        "q79_exact_theorem"
+      ],
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_C__Realizing_the_Modal_Triplet_Core",
+      "superseded_project": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_C__Realizing_the_Modal_Triplet_Core",
+      "title": "The Modal Triplet Theory Program C: A Typed Dictionary for Geometric, Bundle, and Operator Realizations"
+    },
+    {
       "abstract": "We apply the corrected FP–I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. In the q79 realization the 1<2<3 flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
       "authors": [
         "Peter Nero"

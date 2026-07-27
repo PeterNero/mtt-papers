@@ -1,794 +1,593 @@
 ---
 abstract: |
-  This paper develops explicit realizations of the structural and encoding results established in the Modal Triplet Theory (MTT) Program. No new obstruction types, encoding responses, or axioms are introduced. Instead, we construct concrete geometric, bundle-theoretic, and operator-based models that instantiate the structural core, coherent kinematics, and the encoding responses to circle, lens, and nil obstructions.
+  This paper gives a typed realization dictionary for the Modal Triplet Theory (MTT) program. In the canonical physical specialization,
+  ``` math
+  M_{10}=Y_4\times X_6,
+  ```
+  where $`Y_4`$ is the four-dimensional Lorentzian spacetime and $`X_6`$ is the compact Riemannian internal space. Coordinate factors of $`X_6`$, vector bundles over $`X_6`$, Hermitian line bundles, vertical operators, and spectral projectors are distinct objects and cannot be interchanged by notation. A modal lane is therefore represented by a typed triple $`(\mathcal E_i,A_i,P_i)`$, not by an additional coordinate manifold.
 
-  We show how familiar mathematical structures—manifolds, atlases, bundles, connections, curvature, and discrete spectra—arise naturally as realizations of admissibility, overlap consistency, and refinement stability. Geometry is not assumed as fundamental; it appears as a bookkeeping framework required to realize kinematic consistency (gravity encoding), redundancy bookkeeping (gauge encoding), and discrete survivor structure (quantization encoding).
+  We prove the conditional operator statements needed by this dictionary. Strongly commuting self-adjoint vertical operators have a well-defined joint spectral projector, while compact resolvent, not the mere presence of discrete labels, is what gives a discrete spectrum. We also record the exact local spatial-triplet decomposition
+  ``` math
+  \operatorname{Mat}(3,\mathbb R)
+   =
+   \mathfrak{so}(3)\oplus
+   \mathbb RI_3\oplus\mathcal D_0\oplus\mathcal O,
+   \qquad 9=3+(1+2+3),
+  ```
+  for a comparison field $`Q_{\mathrm{WW}}\in\Gamma(\operatorname{Hom}(TP,TI))`$. This is a component decomposition after a flag is chosen; it is not a multiplication of manifold dimensions.
 
-  Multiple inequivalent realizations are exhibited, emphasizing that no single geometric model is privileged. The purpose of this paper is not to identify the “true” spacetime or fundamental degrees of freedom, but to demonstrate existence, consistency, and non-uniqueness of realizations compatible with the MTT core. The theory itself remains entirely structural and independent of any specific realization.
+  On the selected q=79 degree-three carrier, the global rank profile $`1+2+3`$ is realized by
+  ``` math
+  L_{\mathrm{shared}}\otimes
+   (\mathcal O\oplus\mathcal A_0\oplus\mathcal A).
+  ```
+  The shared circle is line-bundle phase and holonomy data, counted once and not identified with physical time. Equality of the local and global rank profiles does not construct their connection-preserving intertwiner. The physical visible-hidden HYM endpoints, the continuum geometry-to-operator intertwiner, the selected continuum Hessian, the upper action, the general Born source theorem, and the complete worldsheet contract remain open.
+
+  Version 1 correctly emphasized realization nonuniqueness, but several of its stronger claims were invalid. Absence of a global reduced description does not by itself forbid a global coordinate chart; an operator realization need not have discrete spectrum; and saturation does not automatically force extended carriers, worldsheets, or dualities. The old explicit Iwasawa bundle construction and literal Circle–Lens–Nil product topology are quarantined as proof sources. The corrected conclusion is sharper: realizations can establish mathematical existence and compatibility, but nonuniqueness prevents physical prediction until a source law selects one realization and supplies its dynamics and observable map.
 author:
 - Peter Nero
-current_version: v1.0
-date: January 2026
-generated_from_main_tex_sha256: 888b00ae0a235416cb101469d5ad53030caad843ce70b84571d5b17c67f41869
+current_version: v2
+date: July 2026
+generated_from_main_tex_sha256: 1a4cb7fc6b0e554d2dec3e6b5246497f69f2a775b2540feed268f4a8915c56f4
 paper_id: the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c
 release_state: zenodo_released
 released_version: v1.0
 title: |
   The Modal Triplet Theory Program C:  
-  Realizing the Modal Triplet Core with Geometric and Bundle Models
+  A Typed Dictionary for Geometric, Bundle,  
+  and Operator Realizations
 zenodo_doi: 10.5281/zenodo.18355143
 zenodo_record_id: 18355143
 zenodo_url: "https://zenodo.org/records/18355143"
 ---
 
-# Introduction and Scope
+# Revision note for version 2
 
-The preceding papers in the Modal Triplet Theory Program establish a complete structural and encoding-level framework for reduced description. The structural core identifies admissibility, overlap consistency, and the impossibility of global reduced description. Coherent kinematics defines motion, causality, horizons, and irreversibility without assuming spacetime or dynamics. The B-layer papers show that three and only three encoding responses are forced by structural obstructions: gravity as kinematic consistency encoding (circle), gauge structure as redundancy encoding (lens), and quantization as discrete constraint encoding (nil). Further work analyzes the coexistence and saturation of these encodings.
+<div class="description">
 
-At this stage, no geometric, topological, or algebraic structure has been assumed. The theory is complete at the level of necessity: it specifies what *must* exist if reduced description is to be possible, but it does not specify *how* those necessities are implemented. The purpose of the present paper is to address this final question.
+Version 1.0 of Program C.
 
-We construct explicit realizations of the Modal Triplet Theory framework in familiar mathematical languages. These realizations include:
+The first version did not distinguish coordinate factors, bundles, line bundles, operators, and projectors. It also inferred the absence of global charts, purely discrete spectra, one-dimensional carriers, worldsheets, and dualities from premises that do not imply those conclusions.
 
-- smooth manifolds and atlases realizing admissible kinematic continuation;
+Version 2 supplies the authoritative type dictionary, fixes the canonical physical product $`M_{10}=Y_4\times X_6`$, proves the valid conditional geometric and spectral statements, adds counterexamples to the withdrawn claims, and connects the local spatial-triplet representation to the selected q=79 carrier only through an explicitly open intertwiner contract.
 
-- principal and associated bundles realizing redundancy bookkeeping;
+Geometry, bundles, and operators remain useful realization languages. Different mathematical realizations can instantiate the same abstract constraint pattern, and their nonuniqueness is an important fact.
 
-- connections and curvature realizing kinematic consistency;
-
-- spectral and operator constructions realizing discrete survivor structure;
-
-- extended geometric carriers realizing saturated encoding frameworks.
-
-Throughout, geometry is treated as *derivative*. It is introduced only where necessary to implement constraints already established at the structural level. Nothing in this paper is required for the validity of the theory itself. If a particular realization is rejected or replaced, the core results of Modal Triplet Theory remain unchanged.
-
-<div class="remark">
-
-*Remark 1* (Realization dependence). All constructions in this paper are realization-dependent. They are examples, existence proofs, and working models. They do not introduce new obstructions, encoding responses, or structural principles. No realization is claimed to be fundamental or unique.
+This paper does not select a physical realization, derive an action or Born rule, construct the physical visible-hidden HYM pair, execute the continuum q=79 Hessian, or complete a worldsheet theory.
 
 </div>
 
-This distinction between structure and realization is essential. Confusion between the two has historically led to geometric or dynamical frameworks being mistaken for fundamental principles. Modal Triplet Theory explicitly avoids this by separating necessity (A- and B-layers) from instantiation (C-layer).
+# Scope and Logical Status
 
-The organization of the paper is as follows. In Section 2 we summarize the structural requirements that any realization must satisfy. Section 3 constructs minimal geometric realizations of coherent kinematics. Section 4 introduces bundle and connection realizations of gauge and gravity encodings. Section 5 develops spectral and operator realizations of discrete constraint encoding. Section 6 examines extended geometric realizations associated with saturated encodings. Section 7 discusses non-uniqueness, limitations, and relation to standard physical formalisms.
+Program C begins after the typed structural and intersection results of Programs A0–B5. Its task is not to prove that a familiar physical theory is inevitable. Its task is to answer a narrower question:
 
-The role of this paper is therefore deliberately modest but essential: it shows that the Modal Triplet Theory Program is not only structurally consistent, but also realizable in concrete mathematical terms, without compromising its core principles.
+> What mathematical data must be supplied for an MTT constraint pattern to be realized by a spacetime, an internal geometry, bundles, line bundles, operators, and selected spectral sectors?
 
-<div class="remark">
+A *realization* in this paper means a typed map from declared abstract data into a mathematical model that preserves the specified relations. Calling two objects “circle-like,” “lens-like,” or “nil-like” is not such a map. A realization certificate must identify domains, codomains, equivalences, connections, equations, boundary conditions, and any source data used in its construction.
 
-*Remark 2* (Position in the program). This paper is the first in the C-layer of the Modal Triplet Theory Program. It follows all structural and encoding-level results and precedes phenomenological and interpretive work. Readers interested only in structural necessity may omit this paper without loss of logical completeness.
+## Five statuses that must remain separate
 
-</div>
+We use the following hierarchy.
 
-# Structural Requirements for Realizations
+Representation.  
+Abstract data are mapped into mathematical objects with the required types.
 
-In this section we summarize the structural constraints that any concrete realization of the Modal Triplet Theory framework must satisfy. These constraints are not additional assumptions; they are direct consequences of the A- and B-layer results established earlier in the program. The role of this section is to make explicit what any admissible realization must implement.
+Conditional reconstruction.  
+A known formalism is recovered after its additional hypotheses are supplied.
 
-## Locality and admissible domains
+Selected source realization.  
+One candidate is selected by a declared source law independent of the target observable.
 
-Any realization must reflect the fundamental locality of reduced description.
+Physical completion.  
+The selected realization has a state space, dynamics, observables, probability rule where required, and a convention map.
 
-<div class="assumption">
+Empirical adequacy.  
+Held-out observables agree within a declared uncertainty model.
 
-**Assumption 3** (Local realizability). A realization must admit a family of local domains $`\{A_\alpha\}`$ such that each domain supports a reduced description consistent with admissibility, and such that no single domain supports a globally valid reduced description.
+No status follows merely from the one above it. In particular, an elegant representation is not yet a source theorem, and a source theorem is not yet a quantum or phenomenological completion.
 
-</div>
+# Canonical Physical Carrier
 
-This requirement excludes realizations that assume a single global coordinate system or globally valid state description.
+## Product specialization
 
-## Overlap consistency
+<div id="def:product" class="definition">
 
-Local realizations must glue consistently.
-
-<div class="assumption">
-
-**Assumption 4** (Overlap consistency). On overlaps $`A_\alpha \cap A_\beta`$, local realizations must admit transition maps that preserve coherent content and satisfy compatibility on triple overlaps up to admissible equivalence.
-
-</div>
-
-This requirement is the realization-level expression of overlap consistency in the structural core.
-
-## Realization of kinematic continuation
-
-Any realization must support coherent kinematics.
-
-<div class="assumption">
-
-**Assumption 5** (Kinematic continuation). The realization must support admissible continuation of coherent structures across overlapping domains, allowing the construction of worldlines as equivalence classes of continuation chains.
-
-</div>
-
-This excludes realizations that lack a notion of persistence across overlaps.
-
-## Circle realization requirement
-
-If circle obstructions are present, the realization must encode loop-dependent consistency data.
-
-<div class="assumption">
-
-**Assumption 6** (Circle realization). A realization must provide a structure capable of representing nontrivial holonomy or loop-dependent obstruction data associated with admissible continuation around closed overlap chains.
-
-</div>
-
-This requirement motivates the appearance of connection-like and curvature-like objects in realizations, without assuming them a priori.
-
-## Lens realization requirement
-
-If lens obstructions are present, the realization must support redundancy bookkeeping.
-
-<div class="assumption">
-
-**Assumption 7** (Lens realization). A realization must admit nontrivial automorphism structure of local descriptive data, together with a consistent way of identifying gauge-equivalent representations across overlaps.
-
-</div>
-
-This requirement motivates bundle-like structures with internal symmetry, but does not assume any specific gauge group.
-
-## Nil realization requirement
-
-If nil obstructions are present, the realization must restrict admissible descriptions appropriately.
-
-<div class="assumption">
-
-**Assumption 8** (Nil realization). A realization must support termination of admissible description and selection of discrete survivors that remain stable under refinement near nil boundaries.
-
-</div>
-
-This requirement excludes realizations that enforce global continuity or determinism everywhere.
-
-## Separation of structure and realization
-
-We emphasize what realizations must *not* do.
-
-<div class="remark">
-
-*Remark 9*. A realization must not introduce new obstruction types, encoding responses, or global consistency principles. It must implement, not extend, the structural and encoding-level results of the Modal Triplet Theory Program.
-
-</div>
-
-## Minimality and non-uniqueness
-
-Realizations are not unique.
-
-<div class="remark">
-
-*Remark 10*. Multiple inequivalent realizations may satisfy the above requirements. Some may be more convenient, symmetric, or computationally tractable than others, but no realization is structurally privileged by the theory.
-
-</div>
-
-## Interpretive caution
-
-We reiterate the interpretive stance.
-
-<div class="remark">
-
-*Remark 11*. Structures introduced in realizations—manifolds, bundles, operators, extended objects—should be understood as bookkeeping devices required to implement admissibility and consistency. They are not claims about fundamental ontology.
-
-</div>
-
-## Preview: minimal geometric realizations
-
-With these requirements in place, we now turn to explicit constructions.
-
-<div class="remark">
-
-*Remark 12*. In the next section we construct minimal geometric realizations of coherent kinematics, showing how manifolds and atlases arise as convenient—but not necessary—realization choices.
-
-</div>
-
-# Minimal Geometric Realizations of Coherent Kinematics
-
-In this section we construct minimal geometric realizations of coherent kinematics as developed in the A-layer of the Modal Triplet Theory Program. Geometry is introduced here as a convenient realization of admissible continuation and overlap structure, not as a fundamental postulate.
-
-## Why geometry appears as a realization
-
-Coherent kinematics requires only the existence of admissible continuation across overlapping local descriptions. It does not require geometry, distance, or metrics. However, certain mathematical structures provide especially efficient realizations of these requirements.
-
-<div class="remark">
-
-*Remark 13*. Smooth manifolds and atlases provide a compact way to encode locality, overlap, and continuation. Their appearance in realizations reflects convenience and expressiveness, not necessity.
-
-</div>
-
-## Local charts as admissible domains
-
-We begin by realizing admissible domains as coordinate charts.
-
-<div class="definition">
-
-**Definition 14** (Geometric chart realization). A *geometric chart realization* of an admissible domain $`A_\alpha`$ is a smooth coordinate chart $`(U_\alpha,\varphi_\alpha)`$, where $`U_\alpha`$ is an open set of a smooth manifold $`M`$ and $`\varphi_\alpha: U_\alpha \to \mathbb{R}^n`$ is a local coordinate map.
-
-</div>
-
-Each chart represents a local reduced description consistent with admissibility.
-
-## Atlas structure and overlap maps
-
-Overlap consistency is realized by atlas transition functions.
-
-<div class="definition">
-
-**Definition 15** (Overlap map). Given two overlapping chart realizations $`(U_\alpha,\varphi_\alpha)`$ and $`(U_\beta,\varphi_\beta)`$, the *overlap map* is the smooth transition function
+**Definition 1** (Canonical product realization). The canonical physical product realization used in this paper is
 ``` math
-\varphi_{\beta\alpha} = \varphi_\beta \circ \varphi_\alpha^{-1}
+M_{10}=Y_4\times X_6,
 ```
-defined on $`\varphi_\alpha(U_\alpha \cap U_\beta)`$.
+where $`Y_4`$ is a four-dimensional globally hyperbolic Lorentzian manifold and $`X_6`$ is a compact six-dimensional Riemannian manifold. Physical causal propagation is carried by $`Y_4`$. Positive elliptic internal operators act vertically on $`X_6`$.
 
 </div>
 
-Overlap maps implement admissible re-encoding at the realization level.
+A nontrivial bundle $`\pi:M_{10}\to Y_4`$ may replace the global product in a more general realization, with local trivializations $`\pi^{-1}(U)\simeq U\times X_6`$. Whenever the product notation is used below, however, it means Definition <a href="#def:product" data-reference-type="ref" data-reference="def:product">1</a>; it never means three independent three-manifolds or a compact time circle.
 
-## Admissible continuation as geometric continuation
-
-We now show how admissible continuation is realized geometrically.
+## Coordinate factors
 
 <div class="definition">
 
-**Definition 16** (Geometric continuation). A *geometric continuation* is a continuous or smooth curve $`\gamma`$ in $`M`$ such that for each parameter value, $`\gamma`$ lies in some chart $`U_\alpha`$, and successive segments of $`\gamma`$ lie in overlapping charts.
+**Definition 2** (Coordinate factor). A *coordinate factor* $`F_i`$ is a manifold occurring in a proved product decomposition
+``` math
+X_6\simeq F_1\times\cdots\times F_r.
+```
+Its dimension contributes to $`\dim X_6`$.
 
 </div>
 
-Geometric continuation realizes admissible continuation as defined in coherent kinematics.
+<div id="prop:dimension" class="proposition">
 
-## Worldlines as equivalence classes of curves
-
-Worldlines emerge naturally.
-
-<div class="remark">
-
-*Remark 17*. Two geometric curves represent the same worldline if they are related by reparameterization and admissible re-encoding across overlapping charts. This realizes worldlines as equivalence classes of geometric continuations, in direct correspondence with the abstract definition in A1.
-
-</div>
-
-Thus geometric curves are representatives, not fundamental objects.
-
-## Causal ordering and cones
-
-Causal structure appears as an ordering relation on continuations.
-
-<div class="remark">
-
-*Remark 18*. The partial ordering induced by admissible continuation can be realized geometrically by restricting allowable tangent directions of curves. In suitable realizations, this produces cone-like structures analogous to causal cones, but no metric is required at this stage.
-
-</div>
-
-Causality is therefore realized geometrically but defined structurally.
-
-## Absence of global charts
-
-The impossibility of global reduced description appears geometrically as the absence of a global chart.
-
-<div class="theorem">
-
-**Theorem 19** (No global chart). *If the structural core forbids a global reduced description, then no single global coordinate chart can cover the realization manifold $`M`$ while preserving admissibility.*
+**Proposition 3** (Dimension bookkeeping). *If $`X_6\simeq F_1\times F_2\times F_3`$, then
+``` math
+\dim F_1+\dim F_2+\dim F_3=6.
+```
+If the factors have equal dimension, each has dimension two.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* A global chart would define a single global reduced description compatible with all admissible domains. This contradicts the impossibility of global reduced description established in the structural core. ◻
+*Proof.* Dimension is additive under finite products of manifolds. The equal-factor statement follows from $`3\dim F_i=6`$. ◻
 
 </div>
 
-This theorem explains why atlas structure is unavoidable.
+A principal $`U(1)`$ bundle or Hermitian line bundle over $`X_6`$ is not a fourth coordinate factor. Consequently
+``` math
+S^1_{\mathrm{shared}}\times F_1\times F_2\times F_3
+```
+is seven-dimensional when each $`F_i`$ is two-dimensional and cannot be used as $`X_6`$.
 
-## Dimensionality as a realization choice
+# The Authoritative Type Dictionary
 
-The dimension of the manifold is not fixed by kinematics alone.
+## Objects and their roles
 
-<div class="remark">
+<div class="tabularx">
 
-*Remark 20*. The dimension $`n`$ of the realization manifold is a realization choice subject to constraints from encoding responses (e.g. gravity, gauge, quantization), but is not determined by coherent kinematics itself. Dimensional constraints arise only when additional encoding requirements are imposed.
-
-</div>
-
-This prepares later discussions of critical dimensionality.
-
-## Limits of geometric realization
-
-Not all kinematic features require smooth geometry.
-
-<div class="remark">
-
-*Remark 21*. Certain admissible kinematic structures—such as branching at selection fronts or termination at nil obstructions—may be awkward or singular in smooth geometric realizations. Alternative realizations (e.g. stratified spaces or combinatorial structures) may be more appropriate in such regimes.
-
-</div>
-
-This emphasizes non-uniqueness of realizations.
-
-## Preview: bundles and consistency bookkeeping
-
-Geometric realizations of kinematics are only the first step.
-
-<div class="remark">
-
-*Remark 22*. In the next section we introduce bundle and connection structures as realizations of redundancy bookkeeping (gauge) and kinematic consistency (gravity), building on the geometric framework established here.
+@P0.15P0.28Y@ Symbol & Type & Meaning and exclusion  
+$`Y_4`$ & Lorentzian manifold & Physical spacetime. It carries causal evolution; it is not a compact phase circle.  
+$`X_6`$ & Compact Riemannian manifold & Internal coordinate space in $`M_{10}=Y_4\times X_6`$.  
+$`F_i`$ & Manifold factor of $`X_6`$ & An actual coordinate factor only after a product decomposition is proved.  
+$`\mathcal E_i`$ & Hermitian vector bundle over $`X_6`$ & Internal representation or field carrier. Its rank is not a coordinate dimension.  
+$`L_{\mathrm{shared}}`$ & Hermitian line bundle with connection & Common phase or holonomy data. It is counted once and is not physical time.  
+$`A_i`$ & Self-adjoint vertical operator on sections of $`\mathcal E_i`$ & An operator with a stated domain; it is neither a coordinate nor a bundle.  
+$`P_i`$ & Spectral projector of $`A_i`$ & A bounded idempotent selecting a declared spectral cluster.  
+$`P_{\mathrm{coh}}`$ & Joint coherent projector & The product $`P_1P_2P_3`$ only under strong commutation, or a spectral projector of one total internal operator.  
+$`Q_{\mathrm{WW}}`$ & Section of $`\operatorname{Hom}(TP,TI)`$ & Local world-in-world comparison field between rank-three bundles; never a projector.  
+$`\mathcal O\oplus\mathcal A_0\oplus\mathcal A`$ & Rank $`1+2+3`$ q=79 carrier & Selected global trace-split representation. Matching ranks do not identify it with the local strain bundle.  
 
 </div>
 
-# Bundle and Connection Realizations of Gauge and Gravity
+<div id="prop:types" class="proposition">
 
-In this section we show how bundle and connection structures arise naturally as realizations of the redundancy and kinematic consistency encodings identified in the B-layer. These structures are not assumed as fundamental ingredients; they are introduced as minimal bookkeeping devices required to implement lens and circle obstruction responses in a geometric realization.
-
-## From overlap structure to bundles
-
-Overlap consistency of local realizations motivates bundle structure.
-
-<div class="remark">
-
-*Remark 23*. In the geometric realizations of Section 3, admissible domains are represented by charts with smooth overlap maps. When redundancy (lens obstructions) is present, overlap maps are no longer unique: multiple equally admissible re-encodings exist. This redundancy is naturally organized by bundle structures.
-
-</div>
-
-<div class="definition">
-
-**Definition 24** (Principal bundle realization). A *principal bundle realization* consists of:
-
-- a base manifold $`M`$ realizing admissible kinematic domains;
-
-- a structure group $`G`$ representing fiber automorphisms (gauge redundancy);
-
-- local trivializations compatible with admissible overlap maps.
-
-</div>
-
-Here $`G`$ is not postulated a priori; it emerges from the automorphism structure required to resolve lens obstructions.
-
-## Gauge connections as redundancy bookkeeping
-
-We now realize gauge encoding geometrically.
-
-<div class="remark">
-
-*Remark 25*. Gauge encoding resolves lens obstructions by organizing redundancy of local lifts. In geometric realizations, this redundancy bookkeeping is implemented by connections on principal bundles.
-
-</div>
-
-<div class="definition">
-
-**Definition 26** (Gauge connection realization). A *gauge connection* is a connection on a principal bundle whose parallel transport encodes consistent comparison of gauge-equivalent representations across overlapping domains.
-
-</div>
-
-Gauge connections track redundancy; they do not encode kinematic consistency.
-
-## Gravity connections as kinematic consistency bookkeeping
-
-We now distinguish gravitational connections.
-
-<div class="remark">
-
-*Remark 27*. Gravity encoding resolves circle obstructions by enforcing path-independent kinematic identity of worldlines. This requirement is independent of gauge redundancy and must be realized separately.
-
-</div>
-
-<div class="definition">
-
-**Definition 28** (Gravitational connection realization). A *gravitational connection* is a connection-like structure on the base manifold $`M`$ whose parallel transport enforces consistent kinematic continuation of worldlines across overlapping domains.
-
-</div>
-
-This connection acts on kinematic identity rather than on internal redundancy.
-
-## Curvature as realization of circle obstruction
-
-We now interpret curvature.
-
-<div class="remark">
-
-*Remark 29*. In geometric realizations, curvature measures failure of flatness of a connection. For gravitational connections, nonzero curvature realizes the circle obstruction: loop-dependent kinematic inconsistency is encoded as nontrivial holonomy.
-
-</div>
-
-This aligns exactly with the structural role of circle obstructions.
-
-## Separation of gauge and gravity
-
-It is essential to keep the two roles distinct.
-
-<div class="theorem">
-
-**Theorem 30** (Structural separation of connections). *Gauge connections and gravitational connections realize distinct encoding responses and must not be identified, even though both are represented mathematically as connections.*
+**Proposition 4** (Type noninterchangeability). *A coordinate factor, a vector bundle, a line bundle, an unbounded operator, and a spectral projector cannot be identified solely because they are assigned the same modal label.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Gauge connections resolve redundancy of representation (lens obstructions). Gravitational connections resolve kinematic path dependence (circle obstructions). These act on different aspects of the descriptive structure and correspond to distinct obstruction types. Identifying them would collapse lens and circle, contradicting the obstruction classification. ◻
+*Proof.* A coordinate factor is an object in a manifold category. A vector or line bundle has a projection to a base and transition functions. An unbounded operator has a domain in a space of sections. A projector is a bounded idempotent endomorphism. These objects have different domains, codomains, composition laws, and invariants. An identification therefore requires explicit functors or intertwining maps preserving those structures. ◻
 
 </div>
 
-## Metric structures as optional realizations
+Unqualified notation such as $`B_i`$ is deprecated when it could mean a base, bundle, factor, boundary, or filter. The symbols in Table <a href="#tab:dictionary" data-reference-type="ref" data-reference="tab:dictionary">[tab:dictionary]</a> are used throughout the corrected corpus.
 
-Metrics may be introduced but are not required.
+# Modal Lanes and Vertical Operators
 
-<div class="remark">
-
-*Remark 31*. Metric tensors may be introduced in realizations to measure lengths, angles, or action functionals. However, metric structure is not required to implement either gauge redundancy or kinematic consistency encoding. Metrics are therefore auxiliary realization choices, not structural necessities.
-
-</div>
-
-## Universality and coupling
-
-Universality of coupling appears naturally.
-
-<div class="remark">
-
-*Remark 32*. Gravitational connections act on all kinematically persistent structures and are therefore universal. Gauge connections act only on structures exhibiting redundancy and are therefore selective. This difference reflects structural roles, not phenomenological assumptions.
-
-</div>
-
-## Non-uniqueness of bundle realizations
-
-Multiple realizations exist.
-
-<div class="remark">
-
-*Remark 33*. Different choices of structure group, bundle topology, and connection type may realize the same underlying encoding responses. No single bundle realization is privileged by the theory.
-
-</div>
-
-## Preview: spectral and operator realizations
-
-Bundle realizations are not the only option.
-
-<div class="remark">
-
-*Remark 34*. In the next section we introduce spectral and operator-based realizations of quantization and discrete constraint encoding, showing how Hilbert-space-like structures arise without being assumed.
-
-</div>
-
-# Spectral and Operator Realizations of Discrete Constraint Encoding
-
-In this section we construct spectral and operator-based realizations of the discrete constraint encoding identified with quantization. These realizations exhibit Hilbert-space-like structures, operators, and discrete spectra, while preserving the strictly structural role of quantization established in the B-layer. No operator postulates or measurement axioms are assumed.
-
-## Motivation for spectral realizations
-
-Discrete constraint encoding restricts admissible descriptions to discrete survivors that remain stable under refinement near nil obstructions. Spectral and operator frameworks provide an efficient mathematical language for encoding such discrete structure.
-
-<div class="remark">
-
-*Remark 35*. Operator and spectral constructions are not fundamental in Modal Triplet Theory. They are convenient realizations for organizing discrete survivor sets and their relations.
-
-</div>
-
-## Discrete survivor spaces
-
-We begin by realizing discrete survivors as basis elements.
+## The typed modal triple
 
 <div class="definition">
 
-**Definition 36** (Discrete survivor space). A *discrete survivor space* is a countable set $`\mathcal S`$ whose elements label refinement-stable discrete descriptions selected by nil obstructions.
+**Definition 5** (Vertical modal lane). A vertical modal lane on $`X_6`$ is a triple
+``` math
+(\mathcal E_i,A_i,P_i),\qquad i=1,2,3,
+```
+where $`\mathcal E_i\to X_6`$ is a Hermitian bundle, $`A_i`$ is a nonnegative self-adjoint operator on a declared dense domain in $`L^2(X_6;\mathcal E_i)`$, and
+``` math
+P_i=\mathbf 1_{I_i}(A_i)
+```
+is the spectral projector for a declared isolated Borel set $`I_i`$.
 
 </div>
 
-No linear structure is assumed at this stage.
+If the three bundles differ, a common Hilbert bundle or specified embeddings must be supplied before the operators can be multiplied. Writing three operator symbols side by side does not create a common domain.
 
-## Hilbert-like realizations
+## Joint spectral selection
 
-Linear structure may be introduced as a realization choice.
+<div id="ass:strong" class="assumption">
 
-<div class="definition">
-
-**Definition 37** (Hilbert-like realization). A *Hilbert-like realization* of a discrete survivor space $`\mathcal S`$ is a Hilbert space $`\mathcal H`$ with an orthonormal basis $`\{\,|s\rangle : s \in \mathcal S\,\}`$, where basis elements correspond to discrete survivors.
+**Assumption 6** (Strong commutation). After transport to one Hilbert space, the spectral measures of $`A_1,A_2,A_3`$ commute. Equivalently, the operators admit a joint functional calculus. Their quadratic forms have a common dense domain.
 
 </div>
 
-This construction introduces linearity for convenience, not necessity.
+<div id="thm:joint" class="theorem">
 
-## Operators as refinement-stable observables
-
-We now define operators.
-
-<div class="definition">
-
-**Definition 38** (Refinement-stable operator). A *refinement-stable operator* is a linear operator on $`\mathcal H`$ whose spectrum and eigenvectors are invariant under admissible refinement of the underlying encoding.
-
-</div>
-
-Such operators represent observables compatible with discrete constraint encoding.
-
-## Spectral discreteness
-
-Discrete constraint encoding is realized spectrally.
-
-<div class="lemma">
-
-**Lemma 39**. *In a Hilbert-like realization of discrete constraint encoding, all admissible observables have purely discrete spectra.*
+**Theorem 7** (Joint coherent projector). *Under Assumption <a href="#ass:strong" data-reference-type="ref" data-reference="ass:strong">6</a>,
+``` math
+P_{\mathrm{coh}}=P_1P_2P_3
+```
+is an orthogonal projector independent of the order of the factors, and
+``` math
+\operatorname{Ran}P_{\mathrm{coh}}
+ =
+ \bigcap_{i=1}^3\operatorname{Ran}P_i.
+```*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Admissible observables must preserve discrete survivor structure. Continuous spectral components would correspond to continuously deformable descriptions, contradicting refinement stability near nil obstructions. Therefore admissible spectra are discrete. ◻
+*Proof.* Strong commutation makes the spectral projectors pairwise commuting. The product of finitely many commuting orthogonal projectors is an orthogonal projector. Its range is their range intersection. ◻
 
 </div>
 
-This explains spectral discreteness without postulating quantization rules.
+<div id="cor:sum" class="corollary">
 
-## Commutativity and incompatibility
-
-Operator algebras reflect structural constraints.
-
-<div class="remark">
-
-*Remark 40*. Non-commutativity of operators arises when different discrete classifications cannot be simultaneously refined. This incompatibility is structural, not a reflection of measurement disturbance or fundamental randomness.
-
-</div>
-
-Thus uncertainty relations appear as realization artifacts of incompatible discrete constraints.
-
-## Measurement revisited
-
-Measurement is realized spectrally.
-
-<div class="remark">
-
-*Remark 41*. In operator realizations, measurement corresponds to projection onto a discrete survivor subspace. This realizes selection at nil boundaries without invoking a collapse axiom.
-
-</div>
-
-## Probability as optional structure
-
-Probability enters only conditionally.
-
-<div class="remark">
-
-*Remark 42*. If an invariant measure exists on the discrete survivor space, it may be realized as a density operator or state vector norm on $`\mathcal H`$. In the absence of such a measure, no probabilistic interpretation is required.
-
-</div>
-
-This matches exactly the conditional probability framework of the A-layer.
-
-## Relation to standard quantum formalisms
-
-We clarify the connection to familiar frameworks.
-
-<div class="remark">
-
-*Remark 43*. Standard quantum mechanical formalisms correspond to particular Hilbert-like realizations of discrete constraint encoding, augmented with additional dynamical assumptions. Modal Triplet Theory explains why such formalisms work where they do, without identifying them as fundamental.
-
-</div>
-
-## Limits of operator realizations
-
-Operator realizations are not universal.
-
-<div class="remark">
-
-*Remark 44*. In regimes dominated by relational or statistical encodings (E8, E9), spectral and operator realizations may be inappropriate or incomplete. Discrete constraint encoding does not require Hilbert space realizations in all contexts.
-
-</div>
-
-## Preview: extended realizations and saturation
-
-Spectral realizations do not exhaust possibilities.
-
-<div class="remark">
-
-*Remark 45*. In saturated encodings, discrete constraint encoding interacts with extended consistency carriers. In the next section we examine geometric realizations of such extended structures.
-
-</div>
-
-# Extended Geometric Realizations and Saturated Frameworks
-
-In this section we construct geometric realizations of saturated encodings, in which the responses to circle, lens, and nil obstructions are implemented simultaneously and inseparably. These realizations exhibit extended geometric structures analogous to those appearing in string-like frameworks, while remaining strictly realization-dependent.
-
-## From point particles to extended carriers
-
-As shown in the B-layer analysis, saturated encodings generically exclude pointlike descriptive carriers. We now realize this exclusion geometrically.
-
-<div class="remark">
-
-*Remark 46*. In a geometric realization, a pointlike carrier corresponds to a localized curve or event whose admissibility can be assessed independently. Under saturation, such localization fails to support simultaneous kinematic consistency, redundancy bookkeeping, and discrete constraint enforcement.
-
-</div>
-
-This motivates the introduction of extended geometric carriers.
-
-## One-dimensional extended carriers
-
-The minimal extended carriers are one-dimensional.
-
-<div class="definition">
-
-**Definition 47** (Geometric extended carrier). A *geometric extended carrier* is a one-dimensional embedded or immersed submanifold $`\Sigma \subset M`$ whose admissibility and identity are defined globally along its extent rather than pointwise.
-
-</div>
-
-These carriers realize the minimal extension required by saturation.
-
-## Continuation and swept surfaces
-
-Under admissible continuation, extended carriers generate higher-dimensional structures.
-
-<div class="remark">
-
-*Remark 48*. As an extended carrier propagates through overlapping admissible domains, its continuation sweeps out a two-dimensional surface in the realization manifold. This surface plays the role of a worldsheet in realization terms, though no worldsheet axiom is assumed.
-
-</div>
-
-Worldsheets therefore emerge as derived geometric objects.
-
-## Consistency along extended carriers
-
-Extended carriers support simultaneous bookkeeping.
-
-<div class="lemma">
-
-**Lemma 49**. *Extended geometric carriers admit simultaneous realization of:*
-
-1.  *kinematic consistency via gravitational connection transport;*
-
-2.  *redundancy bookkeeping via gauge connections along the carrier;*
-
-3.  *discrete constraint enforcement via refinement-stable labels attached to the carrier.*
+**Corollary 8** (Single total operator). *Suppose the nonnegative quadratic-form sum $`A_{\mathrm{int}}=A_1+A_2+A_3`$ is closed. Then
+``` math
+\ker A_{\mathrm{int}}=\bigcap_{i=1}^3\ker A_i.
+```
+Thus the zero spectral projector of $`A_{\mathrm{int}}`$ may be used as $`P_{\mathrm{coh}}`$ without separately multiplying the $`P_i`$.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* The extended nature of the carrier provides sufficient structure to support parallel transport, gauge identification, and discrete labeling consistently along its length. Pointlike carriers lack this capacity. ◻
+*Proof.* For $`u`$ in the common form domain,
+``` math
+\langle u,A_{\mathrm{int}}u\rangle
+ =
+ \sum_i\langle u,A_i u\rangle.
+```
+All summands are nonnegative, so the sum vanishes exactly when every summand vanishes. ◻
 
 </div>
 
-## Geometric realization of dualities
+## When discreteness is valid
 
-Dualities arise naturally.
+<div id="thm:compact" class="theorem">
 
-<div class="remark">
-
-*Remark 50*. Different geometric embeddings of extended carriers that encode identical obstruction-resolution data are related by admissible re-encoding. Such identifications realize duality relations geometrically, without postulating symmetries or equivalences at the fundamental level.
+**Theorem 9** (Compact-resolvent discreteness). *Let $`A`$ be self-adjoint, bounded below, and have compact resolvent on a separable Hilbert space. Then its spectrum consists of eigenvalues of finite multiplicity with no finite accumulation point, apart from the standard possibility of accumulation at infinity.*
 
 </div>
 
-This aligns geometric dualities with structural dualities identified in B7.
+<div class="proof">
 
-## Non-uniqueness of extended realizations
-
-Extended geometric realizations are not unique.
-
-<div class="remark">
-
-*Remark 51*. Multiple inequivalent geometric embeddings of extended carriers may realize the same saturated encoding. Differences in embedding dimension, topology, or parametrization do not correspond to distinct structural encodings unless they alter obstruction resolution.
+*Proof.* For $`z`$ in the resolvent set, $`(A-z)^{-1}`$ is compact and normal. The spectral theorem for compact normal operators gives a discrete nonzero spectrum with finite-dimensional eigenspaces. Applying $`\lambda\mapsto(\lambda-z)^{-1}`$ transfers this statement to $`A`$. ◻
 
 </div>
 
-This explains the multiplicity of string-like realizations.
+The compact-resolvent hypothesis is essential. Multiplication by $`x`$ on $`L^2([0,1])`$ is bounded and self-adjoint with spectrum $`[0,1]`$. It is an operator realization with continuous spectrum. Therefore the version 1 claim that every admissible observable has purely discrete spectrum is withdrawn.
 
-## Relation to standard string constructions
+## Measurement and probability boundary
 
-We clarify the connection to familiar frameworks.
+A spectral projector supplies a mathematical event or selected subspace. It does not by itself supply a state, a probability measure, a detector model, or an objective history. The selected q=79 one-anchor recorder closes an exact restricted capture statement on its declared commuting output algebra, but the general Born-source problem remains open. Program C therefore makes no universal measurement or probability claim.
 
-<div class="remark">
+# The Local Spatial-Triplet Representation
 
-*Remark 52*. Standard string-theoretic constructions correspond to particular geometric realizations of extended consistency carriers equipped with additional dynamical, conformal, or quantization assumptions. Modal Triplet Theory explains why such constructions are consistent when they are, without identifying them as fundamental.
+## World-in-world comparison field
 
-</div>
+Let $`TP`$ and $`TI`$ be oriented rank-three Euclidean vector bundles over a common base $`B`$. A local comparison field is
+``` math
+Q_{\mathrm{WW}}\in\Gamma\!\left(\operatorname{Hom}(TP,TI)\right).
+```
+After choosing local orthonormal frames, $`Q_{\mathrm{WW}}`$ is a $`3\times3`$ matrix. Its nine entries are components of one linear map, not nine coordinate dimensions.
 
-## Limits of geometric saturation
+<div id="thm:spatial" class="theorem">
 
-Not all realizations can be saturated.
-
-<div class="remark">
-
-*Remark 53*. Some geometric realizations support only partial encoding coexistence. Saturation is a strong condition and may fail in realizations that are otherwise admissible. This failure does not undermine the theory; it reflects the non-obligatory nature of saturation.
-
-</div>
-
-## Preview: non-uniqueness and realizational freedom
-
-We now prepare to conclude the realization analysis.
-
-<div class="remark">
-
-*Remark 54*. In the final section we summarize realizational freedom, limitations, and the relationship between geometric, bundle, spectral, and extended realizations.
-
-</div>
-
-# Non-Uniqueness, Limitations, and Relation to Physical Formalisms
-
-In this final section we summarize the scope and limitations of the realization program developed in this paper. We emphasize the non-uniqueness of realizations, clarify their relationship to standard physical formalisms, and reiterate the strict separation between structural necessity and realizational choice in the Modal Triplet Theory Program.
-
-## Non-uniqueness of realizations
-
-The constructions presented in this paper are not unique.
-
-<div class="remark">
-
-*Remark 55*. Multiple inequivalent geometric, bundle-theoretic, spectral, and extended realizations may satisfy the structural and encoding-level requirements of Modal Triplet Theory. Differences in manifold structure, bundle topology, operator algebra, or extended carrier embedding do not correspond to distinct theories unless they alter the resolution of circle, lens, or nil obstructions.
+**Theorem 10** (Orientation-strain and $`1+2+3`$ split). *At a nonsingular comparison background,
+``` math
+\operatorname{Mat}(3,\mathbb R)
+ =
+ \mathfrak{so}(3)\oplus\operatorname{Sym}(3,\mathbb R).
+```
+After an orthonormal flag is selected,
+``` math
+\operatorname{Sym}(3,\mathbb R)
+ =
+ \mathbb RI_3\oplus\mathcal D_0\oplus\mathcal O,
+```
+where $`\mathcal D_0`$ is the traceless diagonal subspace and $`\mathcal O`$ is the symmetric off-diagonal subspace. Their dimensions are
+``` math
+3,\qquad 1,\qquad 2,\qquad 3.
+```*
 
 </div>
 
-Non-uniqueness is therefore a feature, not a defect.
+<div class="proof">
 
-## Limits of geometric realizations
-
-Geometry is a powerful but limited realization language.
-
-<div class="remark">
-
-*Remark 56*. While smooth manifolds, bundles, and connections provide efficient realizations of coherent kinematics and encoding responses, they may become inadequate or singular near selection fronts, nil boundaries, or in regimes dominated by relational or statistical encodings. Alternative realizations (e.g. stratified, combinatorial, or algebraic models) may be more appropriate in such regimes.
+*Proof.* Every real matrix has the unique orthogonal decomposition
+``` math
+Q=\tfrac12(Q-Q^\mathsf T)+\tfrac12(Q+Q^\mathsf T).
+```
+The first summand is antisymmetric and has dimension three. Relative to the selected flag, a symmetric matrix decomposes uniquely into its scalar trace, traceless diagonal part, and symmetric off-diagonal part. These spaces have dimensions one, two, and three and are mutually orthogonal for the Frobenius inner product. ◻
 
 </div>
 
-No single realization language is universally valid.
+With one separate ordering scalar, the exact component identity is
+``` math
+1+3\times3=(1+3)+(1+2+3)=4+6=10.
+```
+It does not prove $`TM_{10}\simeq TY_4\oplus TX_6`$, choose Lorentzian signature, or select the q=79 global topology. Those require transition functions, metrics, connections, and a physical source law.
 
-## Relation to General Relativity
+## Why the old no-global-chart theorem fails
 
-General Relativity appears as a special realization.
+Version 1 claimed that the absence of a global reduced description forbids a global coordinate chart. The implication is not valid without an additional faithfulness axiom equating reduced descriptions with coordinate charts. Coordinate coverage is a property of a manifold and its atlas; descriptive admissibility is extra model data. A manifold diffeomorphic to $`\mathbb R^n`$ has a global chart while one may still impose context-dependent or non-global reduced descriptions on fields over it. Conversely, $`S^n`$ lacks a single global chart for topological reasons unrelated to MTT admissibility. Atlas structure is therefore a permitted realization, not a derived necessity of reduced-description failure.
 
-<div class="remark">
+# The Selected q=79 Global Carrier
 
-*Remark 57*. General Relativity corresponds to a class of geometric realizations in which the gravitational encoding is implemented via a metric-compatible connection on a four-dimensional manifold, together with additional dynamical assumptions. Modal Triplet Theory explains why such realizations are consistent and powerful, but does not identify them as fundamental or unique.
+## Trace-split rank profile
+
+Let $`\pi_C:C\to B`$ be the selected degree-three spectral cover and put
+``` math
+\mathcal A=(\pi_C)_*\mathcal O_C,\qquad
+ \mathcal A_0=\ker\!\left(\operatorname{Tr}:\mathcal A\to\mathcal O_B\right).
+```
+Then
+``` math
+\operatorname{rank}\mathcal O_B=1,\qquad
+ \operatorname{rank}\mathcal A_0=2,\qquad
+ \operatorname{rank}\mathcal A=3.
+```
+The selected global carrier is
+``` math
+\mathcal H_{\mathrm{CLN}}
+ =
+ L_{\mathrm{shared}}\otimes
+ \left(\mathcal O_B\oplus\mathcal A_0\oplus\mathcal A\right),
+ \qquad
+ \operatorname{rank}\mathcal H_{\mathrm{CLN}}=1+2+3=6.
+```
+
+The exact arithmetic selector on the declared finite branch is
+``` math
+q\equiv15\pmod{64},\qquad
+ q\equiv2\pmod7,\qquad
+ q\equiv79\pmod{448}.
+```
+This proves the selected finite residue class, not a spacetime dimension or a critical worldsheet dimension.
+
+## The shared line
+
+The corrected Foundation constructs one universal flat $`\mathbb Z_{64}`$ differential line whose declared pullbacks give the q=79 SpinC determinant sign line, the finite $`1+2+3`$ carrier phase, the root-plane complex structure, and the finite Reynolds-Hessian square. This is stronger than saying that several isomorphic circles happen to occur: the connection and holonomy are part of the comparison.
+
+The result is finite and flat. It does not identify the nonzero-Chern physical HYM connection, and the compact phase circle is not the noncompact ordering variable of physical time.
+
+## The missing local-to-global intertwiner
+
+<div id="def:intertwiner" class="definition">
+
+**Definition 11** (Continuum realization intertwiner). A continuum realization intertwiner is a bundle map
+``` math
+\mathfrak I:
+ \mathbb RI_3\oplus\mathcal D_0\oplus\mathcal O
+ \longrightarrow
+ L_{\mathrm{shared}}\otimes
+ \left(\mathcal O_B\oplus\mathcal A_0\oplus\mathcal A\right)
+```
+over a declared base map, together with:
+
+1.  compatible transition functions and an isometric fiber map;
+
+2.  preservation of the $`1+2+3`$ filtrations;
+
+3.  equality or controlled conjugacy of the relevant connections;
+
+4.  intertwining of covariant derivatives and vertical operators; and
+
+5.  equality or a certified comparison of the physical Hessians.
 
 </div>
 
-Thus GR is a realization, not a postulate.
+<div class="proposition">
 
-## Relation to quantum field theory
-
-Quantum field theory is likewise a realization.
-
-<div class="remark">
-
-*Remark 58*. Quantum field theory corresponds to realizations in which gauge redundancy and discrete constraint encoding are implemented via operator algebras on Hilbert spaces, supplemented by specific dynamical prescriptions. The success of QFT is explained by its compatibility with lens and nil encodings in appropriate regimes, not by any claim of fundamental completeness.
+**Proposition 12** (Rank matching is insufficient). *The equality $`1+2+3=1+2+3`$ does not imply the existence of $`\mathfrak I`$.*
 
 </div>
 
-Operator formalisms are therefore derivative.
+<div class="proof">
 
-## Relation to string-like frameworks
-
-String-like theories appear as saturated realizations.
-
-<div class="remark">
-
-*Remark 59*. String-theoretic constructions correspond to geometric realizations of saturated encodings, in which extended carriers, dimensional constraints, anomaly saturation, and dualities are implemented explicitly. Modal Triplet Theory explains why such frameworks arise naturally under maximal admissibility, while also clarifying why they are neither obligatory nor unique.
+*Proof.* Equal-rank bundles can have different characteristic classes, holonomies, or connections and need not be isomorphic. Even isomorphic bundles can carry operators that are not conjugate. Each row in Definition <a href="#def:intertwiner" data-reference-type="ref" data-reference="def:intertwiner">11</a> is therefore independent of rank equality. ◻
 
 </div>
 
-This resolves long-standing interpretive confusion.
+Constructing this same-source map on the physical q=79 HYM complex is the current continuum geometry-to-operator blocker. It is not closed by the finite shared-line theorem.
 
-## What realizations cannot do
+# Bundles, Line Bundles, and Connections
 
-It is important to state what realizations do not provide.
+## Three connection types
 
-<div class="remark">
+The following connection data must be kept typed.
 
-*Remark 60*. Realizations do not determine numerical parameters, coupling constants, mass spectra, or symmetry-breaking patterns. Such features depend on additional dynamical input and are not fixed by the structural core or encoding responses of Modal Triplet Theory.
+1.  A spacetime connection acts on $`TY_4`$, its frame bundle, or a spin bundle and participates in the Lorentzian field equations.
 
-</div>
+2.  A gauge connection acts on a principal or associated internal bundle over $`Y_4`$ or $`M_{10}`$.
 
-Structural explanation is distinct from phenomenological fitting.
+3.  A vertical HYM connection acts on a holomorphic bundle over $`X_6`$ and satisfies the declared complex and stability equations.
 
-## Role of the C-layer in the program
+These connections may interact in one action or anomaly equation. They are not equal merely because each admits parallel transport.
 
-We summarize the role of this paper.
+<div class="proposition">
 
-<div class="remark">
-
-*Remark 61*. The C-layer demonstrates existence and consistency of concrete models compatible with the Modal Triplet Theory core. It does not extend the theory, add new principles, or privilege any particular realization. Readers concerned only with structural necessity may omit this layer without loss of logical completeness.
-
-</div>
-
-This separation is essential to the integrity of the program.
-
-## Summary
-
-We conclude with a brief summary.
-
-<div class="remark">
-
-*Remark 62*. This paper has shown how the abstract structures and encoding responses of Modal Triplet Theory can be realized concretely using geometric, bundle-theoretic, spectral, and extended constructions. Geometry, gauge structure, quantization, and string-like features appear as realization choices required to implement structural constraints, not as fundamental axioms. Multiple realizations are possible, none of which is structurally privileged.
+**Proposition 13** (Typed connection comparison). *An identification of two connection realizations requires a bundle map $`U:E\to E'`$ satisfying
+``` math
+U\circ\nabla=\nabla'\circ U
+```
+on a common declared domain. Similar holonomy language alone does not give such an identification.*
 
 </div>
 
-## Outlook
+<div class="proof">
 
-The realization program opens several directions.
+*Proof.* A connection is a differential operator obeying a Leibniz rule on sections of a particular bundle. Conjugacy by $`U`$ is exactly the condition that parallel transport and covariant differentiation agree under the comparison. ◻
 
-<div class="remark">
+</div>
 
-*Remark 63*. Future work may explore specific realizations tailored to particular physical regimes, investigate non-geometric or hybrid realization frameworks, and connect realization choices to phenomenological constraints. Such work complements, but does not modify, the structural conclusions of the Modal Triplet Theory Program.
+## Curvature is not the whole circle story
+
+Nonzero curvature can produce infinitesimal loop holonomy, but flat connections can also have nontrivial global holonomy on a non-simply-connected base. Thus a circle or loop response may be represented by curvature, flat monodromy, or both. Version 1’s identification of circle obstruction with nonzero curvature is replaced by this connection-and-holonomy contract.
+
+## Current physical bundle boundary
+
+Reference Fu–Yau and Hull–Strominger geometries establish relevant mathematical existence results. The selected MTT branch still requires an explicit visible $`U_{\eta=9}`$ bundle and a genuine hidden twisted-holomorphic locally free carrier in one positive Gauduchon/HYM chamber, with anomaly and Bianchi compatibility. Until those endpoints are constructed from the selected source, no reference geometry is the physical MTT compactification.
+
+# Realization Contracts and Physical Selection
+
+<div id="def:contract" class="definition">
+
+**Definition 14** (Realization contract). A realization contract is a tuple
+``` math
+\mathfrak R=
+ \left(
+ \mathcal S,\mathcal C,\sim,\Phi,
+ \mathcal E_{\mathrm{eq}},
+ \mathcal B_{\partial},
+ \mathcal D_{\mathrm{dyn}},
+ \mathcal O_{\mathrm{obs}}
+ \right),
+```
+where $`\mathcal S`$ is the typed abstract source, $`\mathcal C`$ is the candidate category, $`\sim`$ is the declared equivalence, $`\Phi`$ is the realization map, $`\mathcal E_{\mathrm{eq}}`$ is the equation inventory, $`\mathcal B_{\partial}`$ is the boundary/domain inventory, $`\mathcal D_{\mathrm{dyn}}`$ is the dynamics, and $`\mathcal O_{\mathrm{obs}}`$ is the observable map.
+
+</div>
+
+A purely mathematical realization may omit the final two rows, but then it must not be called a physical completion.
+
+<div id="thm:nonunique" class="theorem">
+
+**Theorem 15** (Nonuniqueness limits prediction). *Suppose two inequivalent realizations $`R_1,R_2\in\mathcal C/{\sim}`$ satisfy the same structural source data and all declared mathematical equations, but an observable has different values,
+``` math
+\mathcal O(R_1)\ne\mathcal O(R_2).
+```
+Then the structural source data do not predict $`\mathcal O`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Both values are compatible with all premises. If the premises determined a unique value, the two values would have to agree. A selector, probability measure on realizations, or stronger source law is therefore required. ◻
+
+</div>
+
+This theorem states the principal limitation of the C-layer. Demonstrating many compatible realizations is useful for consistency and model discovery, but increases, rather than removes, underdetermination unless an independent selection law is supplied.
+
+## A minimum realization certificate
+
+Every claimed physical realization should report:
+
+1.  source objects and source hashes;
+
+2.  candidate category and equivalence relation;
+
+3.  base, fibers, bundles, ranks, and transition functions;
+
+4.  connections, domains, operator closures, and spectral assumptions;
+
+5.  equations, boundary conditions, and anomaly inventory;
+
+6.  the selector and every continuous or discrete primitive;
+
+7.  dynamics, state space, probability law, and observable map;
+
+8.  approximation errors, uncertainty transport, and held-out tests.
+
+Missing rows define the theorem boundary; they are not filled by analogy.
+
+# Relations to Standard Physical Formalisms
+
+<div class="tabularx">
+
+@P0.14P0.33Y@ Framework & Realization data that MTT can organize & Data not supplied by the dictionary alone  
+General relativity & Lorentzian base, frame/spin bundles, connection, curvature, local comparison field & Einstein–Hilbert or alternative action, stress tensor, field equations, hyperbolicity, normalization, and empirical solution.  
+Gauge theory and SM & Principal and associated bundles, representations, connections, finite projectors, anomaly tables & Selected continuum action, couplings, masses, RG transport, quantum state, and no-knob source values.  
+Quantum mechanics & Hilbert spaces, self-adjoint operators, spectral projectors, finite recorder models & General state preparation, Born source theorem, dynamics, detector model, and ontic-history rule.  
+Quantum field theory & Field bundles, local operators, classical BV complexes, finite representations & Selected renormalized quantum measure, nonperturbative completion, positivity, RG matching, and scattering/observable comparison.  
+String theory & Internal complex geometry, bundles, extended-carrier candidates, anomaly and duality contracts & Complete worldsheet action, GSO and analytic data, IR SCFT, selected physical bundle pair, and all-scale completion.  
+
+</div>
+
+The current q=79 worldsheet contract is complete in five of twelve declared rows. A two-parameter sweep of a one-dimensional carrier is only a surface; it is not a quantum worldsheet until the missing target, action, gauge, boundary, anomaly, quantization, and observable data are supplied.
+
+# Quarantined and Retired Realizations
+
+## Old explicit Iwasawa construction
+
+The Iwasawa manifold is a valid and useful complex non-Kahler manifold. What is withdrawn is the older MTT-specific construction that asserted a selected stable bundle, coefficient-level physical anomaly cancellation, and normalized Yukawa output without the required source, stability, and same-branch certificates. Those old values are not evidence for the selected q=79 physical branch. Iwasawa may be used as an auxiliary mathematical test geometry only when every theorem is restated and verified on its own hypotheses.
+
+## Literal Circle–Lens–Nil products
+
+The literal manifold $`S^1\times L(3,1)\times\mathrm{Nil}_3`$ is seven-dimensional. It is not the six-dimensional $`X_6`$ in Definition <a href="#def:product" data-reference-type="ref" data-reference="def:product">1</a>. The six-manifold $`L(3,1)\times\mathrm{Nil}_3`$ is also not the selected q=79 Fu–Yau topology; their global invariants differ. Circle–Lens–Nil remains useful as a filtration, operator profile, or parallel bundle schema, not as an automatic literal nesting of manifolds.
+
+## Claims withdrawn from version 1
+
+The following implications are explicitly withdrawn:
+
+1.  no global reduced description $`\Rightarrow`$ no global coordinate chart;
+
+2.  discrete survivors $`\Rightarrow`$ every observable has discrete spectrum;
+
+3.  nil selection $`\Rightarrow`$ Hilbert space, projection measurement, or Born probability;
+
+4.  saturation $`\Rightarrow`$ point carriers fail;
+
+5.  saturation $`\Rightarrow`$ a one-dimensional carrier or worldsheet is forced;
+
+6.  equivalent explanatory purpose $`\Rightarrow`$ a physical duality;
+
+7.  circle, lens, and nil labels $`\Rightarrow`$ GR, QFT, or string theory is explained or selected.
+
+Programs B4 and B5 provide the correct typed intersection and contract-relative saturation replacements.
+
+# Current Realization Ledger
+
+<div class="tabularx">
+
+@Y P0.19P0.35@ Object & Status & Exact boundary  
+Canonical $`M_{10}=Y_4\times X_6`$ notation & Declared physical specialization & Not derived by the abstract triplet or the $`3\times3`$ component count.  
+Coordinate/bundle/operator/projector dictionary & Closed in this paper & Types and required comparison maps are explicit.  
+Joint coherent projector & Conditional theorem & Requires a common Hilbert space and strong commutation, or one total operator.  
+Discrete vertical spectrum & Conditional theorem & Requires compact resolvent or another explicit discreteness theorem.  
+Local spatial $`3+(1+2+3)`$ split & Exact & Flag-dependent component theorem; not global geometry.  
+Selected q=79 rank-$`1+2+3`$ carrier & Exact on selected finite carrier & Does not identify the local strain bundle.  
+Universal flat shared line and finite Hessian square & Exact finite theorem & Does not produce the physical nonzero-Chern HYM connection.  
+Physical visible-hidden bundle pair & Open: B.HS.01 & Explicit common HYM chamber and anomaly/Bianchi certificate required.  
+Continuum local-to-q79 intertwiner & Open: B.GEO.01 & Transition, metric, connection, derivative, operator, and Hessian rows required.  
+Selected rank-102 continuum execution & Open: B.OP.01 & Nineteen physical blocks, kernel removal, inverse and radii bounds required.  
+Upper action and automorphism transfer & Open: B.ACTION.01 & One selected upper differential/action must reproduce the lower structures.  
+General Born source theorem & Open: B.QM.01 & The restricted one-anchor result does not cover every apparatus context.  
+Complete q=79 worldsheet contract & Open: B.QG.01 & Currently five of twelve declared rows.  
+
+</div>
+
+# Conclusion
+
+Program C now has one precise job: to prevent category mistakes while turning abstract MTT data into mathematical models. The canonical physical specialization is $`M_{10}=Y_4\times X_6`$. Coordinate factors contribute to the dimension of $`X_6`$; bundles carry representations; line bundles carry phase and holonomy; vertical operators act on sections; spectral projectors select modes; and the local spatial triplet is a representation-theoretic $`1+2+3`$ split of strain components.
+
+Several concrete advances survive this discipline. The local $`3+(1+2+3)`$ decomposition is exact. Joint projectors and discrete spectra follow under standard, explicit operator hypotheses. The selected q=79 carrier has an exact global $`1+2+3`$ rank profile, and one universal flat shared line controls several finite pullbacks with their connection and holonomy retained.
+
+The remaining difficulty is no longer hidden by notation. The same-source continuum intertwiner, physical HYM endpoints, executed continuum operator, upper action, general Born source, and complete worldsheet theory are independent obligations. Until a source law selects one full realization, nonuniqueness is a limit on physical predictivity, not evidence that every realization is physically equivalent.
+
+<div class="thebibliography">
+
+99
+
+P. Nero, *The Modal Triplet Theory Program A0: Typed Reduction and Structural Scope*, revised edition, 2026.
+
+P. Nero, *The Modal Triplet Theory Program B4: Typed Encoding Intersections and Conditional Rigidity*, revised edition, 2026.
+
+P. Nero, *The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations*, version 2, 2026.
+
+P. Nero, *Modal Triplet Theory: Foundations*, version 8, 2026.
+
+P. Nero, *World-in-World Genesis: Local Comparison Geometry and a Globalization Program*, corrected fifth edition, 2026.
+
+P. Nero, *Consolidated Exact $`\mathbb Z_{64}`$-to-$`q=79`$ Closure Theorem*, current exact authority packet, 2026.
+
+T. Kato, *Perturbation Theory for Linear Operators*, Springer, 1995.
+
+M. Reed and B. Simon, *Methods of Modern Mathematical Physics IV: Analysis of Operators*, Academic Press, 1978.
+
+D. Husemoller, *Fibre Bundles*, Springer, third edition, 1994.
+
+S. Kobayashi and K. Nomizu, *Foundations of Differential Geometry, Volume I*, Wiley, 1963.
+
+J.-X. Fu and S.-T. Yau, The theory of superstring with flux on non-Kahler manifolds and the complex Monge–Ampere equation, *Journal of Differential Geometry* 78 (2008), 369–428.
 
 </div>

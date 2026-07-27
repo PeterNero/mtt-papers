@@ -1,12 +1,12 @@
 {
-  "abstract": "This paper develops explicit realizations of the structural and encoding results established in the Modal Triplet Theory (MTT) Program. No new obstruction types, encoding responses, or axioms are introduced. Instead, we construct concrete geometric, bundle-theoretic, and operator-based models that instantiate the structural core, coherent kinematics, and the encoding responses to circle, lens, and nil obstructions. We show how familiar mathematical structures\u2014manifolds, atlases, bundles, connections, curvature, and discrete spectra\u2014arise naturally as realizations of admissibility, overlap consistency, and refinement stability. Geometry is not assumed as fundamental; it appears as a bookkeeping framework required to realize kinematic consistency (gravity encoding), redundancy bookkeeping (gauge encoding), and discrete survivor structure (quantization encoding). Multiple inequivalent realizations are exhibited, emphasizing that no single geometric model is privileged. The purpose of this paper is not to identify the true spacetime or fundamental degrees of freedom, but to demonstrate existence, consistency, and non-uniqueness of realizations compatible with the MTT core. The theory itself remains entirely structural and independent of any specific realization.",
+  "abstract": "This paper gives a typed realization dictionary for Modal Triplet Theory. In the canonical physical specialization M10=Y4 x X6, coordinate factors of the compact internal space, vector bundles, Hermitian line bundles, vertical operators, and spectral projectors are distinct objects. We prove the joint-projector theorem under strong commutation and the discrete-spectrum theorem under compact resolvent. We record the exact local world-in-world decomposition Mat(3,R)=so(3)+(1+2+3) strain components and distinguish it from the selected q=79 global carrier L_shared tensor (O+A0+A). Equality of ranks does not construct the required connection-, operator-, and Hessian-preserving continuum intertwiner. The shared circle is line-bundle phase and holonomy data, not physical time or a seventh internal dimension. The old no-global-chart, automatic discrete-spectrum, forced extended-carrier, worldsheet, and duality claims are withdrawn. The invalid old Iwasawa construction and literal Circle-Lens-Nil product are quarantined. Realization nonuniqueness is proved to limit physical predictivity until a source law selects one realization and supplies its dynamics and observable map.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18355142",
     "created": "2026-01-23T20:13:19.041207+00:00",
@@ -32,13 +32,18 @@
     "updated": "2026-01-23T20:13:19.534546+00:00",
     "version": "v1.0"
   },
-  "main_tex_sha256": "888b00ae0a235416cb101469d5ad53030caad843ce70b84571d5b17c67f41869",
+  "main_tex_sha256": "1a4cb7fc6b0e554d2dec3e6b5246497f69f2a775b2540feed268f4a8915c56f4",
   "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
-  "paper_md_sha256": "d969459b78f1fa39c4150ae6b7db2980a1d9e6a25d5df804a25b1a020b215665",
+  "paper_md_sha256": "79349ca7c957240439255ca8fbc5725be0b38da31240853486d036b31c3f057b",
   "release_state": "zenodo_released",
-  "result_refs": [],
+  "result_refs": [
+    "q79_exact_theorem"
+  ],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "1af33bd37553e39a201a4a014a3c5ace3a1002fdc698dbf19e769f61242357a2",
+    "selected_revision": true,
+    "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_C__Realizing_the_Modal_Triplet_Core"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -48,9 +53,19 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 37149,
+      "bytes": 376322,
+      "path": "main.pdf",
+      "sha256": "9d649d315e4131c3ad5f00e3f9fe93ad7ac8a6446bb3224cfec4e25a74382d34"
+    },
+    {
+      "bytes": 33195,
       "path": "main.tex",
-      "sha256": "888b00ae0a235416cb101469d5ad53030caad843ce70b84571d5b17c67f41869"
+      "sha256": "1a4cb7fc6b0e554d2dec3e6b5246497f69f2a775b2540feed268f4a8915c56f4"
+    },
+    {
+      "bytes": 10941,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "1af33bd37553e39a201a4a014a3c5ace3a1002fdc698dbf19e769f61242357a2"
     },
     {
       "bytes": 4186,
@@ -61,9 +76,9 @@
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_C__Realizing_the_Modal_Triplet_Core"
   },
-  "source_tree_sha256": "f2dead14d3650a5c850d30ef9f0658a670f9f12f1eabc07f49c9dcb1958747c3",
-  "title": "The Modal Triplet Theory Program C: Realizing the Modal Triplet Core with Geometric and Bundle Models",
-  "version_relation": "matches_latest_release",
+  "source_tree_sha256": "1460dd95faf6bafe17e325b9cee3f1c848e58b3df001b6eea588378df9c394c5",
+  "title": "The Modal Triplet Theory Program C: A Typed Dictionary for Geometric, Bundle, and Operator Realizations",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18355142",
