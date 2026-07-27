@@ -1,6 +1,6 @@
 # MTT Paper Catalog
 
-Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **41**.
+Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **42**.
 
 The list is alphabetical and intentionally has no topical grouping.
 
@@ -114,7 +114,7 @@ The list is alphabetical and intentionally has no topical grouping.
 | The Modal Triplet Theory Program A1: Coherent Kinematics | v2 | [v1.0](https://zenodo.org/records/18354943) | [TeX](papers/the-modal-triplet-theory-program-a1-coherent-kinematics/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-a1-coherent-kinematics/paper.md) |
 | The Modal Triplet Theory Program A2: Conditional Computability and Finite Prediction Depth | v2 | [v1.0](https://zenodo.org/records/18354966) | [TeX](papers/the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad/paper.md) |
 | The Modal Triplet Theory Program B0: Circle-Lens-Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations | v2 | [v1.0](https://zenodo.org/records/18354990) | [TeX](papers/the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2/paper.md) |
-| The Modal Triplet Theory Program B1: Gravity as Kinematic Consistency Encoding in the Modal Triplet Theory Program | v1.0 | [v1.0](https://zenodo.org/records/18355020) | [TeX](papers/the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38/paper.md) |
+| The Modal Triplet Theory Program B1: Loop-Transport Consistency and the Conditional Gravity Realization | v2 | [v1.0](https://zenodo.org/records/18355020) | [TeX](papers/the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38/paper.md) |
 | The Modal Triplet Theory Program B2: Gauge Structure as Redundancy Encoding in the Modal Triplet Theory Program | v1.0 | [v1.0](https://zenodo.org/records/18355037) | [TeX](papers/the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a/paper.md) |
 | The Modal Triplet Theory Program B3: Quantization as Discrete Constraint Encoding in the Modal Triplet Theory Program | v1.0 | [v1.0](https://zenodo.org/records/18355059) | [TeX](papers/the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34/paper.md) |
 | The Modal Triplet Theory Program B4: Encoding Intersections and Structural Rigidity in the Modal Triplet Theory Program The Standard Model as an Encoding Intersection | v1.0 | [v1.0](https://zenodo.org/records/18355086) | [TeX](papers/the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113/paper.md) |

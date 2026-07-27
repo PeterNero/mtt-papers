@@ -1,12 +1,12 @@
 {
   "counts": {
     "canonical_papers": 139,
-    "current_sources_newer_than_release": 41,
+    "current_sources_newer_than_release": 42,
     "pandoc_warning_papers": 12,
     "papers_with_zenodo_release": 119,
     "papers_without_zenodo_match": 20,
     "schema": "mtt.paper-migration-report.v1",
-    "superseded_projects_excluded": 42,
+    "superseded_projects_excluded": 43,
     "zenodo_records": 120,
     "zenodo_records_matched": 119,
     "zenodo_records_unmatched": 1
@@ -7351,14 +7351,14 @@
       ]
     },
     {
-      "abstract": "We show that gravity arises as a necessary encoding class once coherent kinematics is defined in the absence of a global reduced description. Building on the structural core of Modal Triplet Theory and its kinematic formulation, we demonstrate that stabilization of kinematic persistence across overlapping descriptions in the presence of circle obstructions requires additional bookkeeping structure. This structure enforces consistency of admissible continuation around closed overlap chains and couples all kinematic degrees of freedom universally. Gravity is therefore not introduced as a fundamental interaction, dynamical law, or geometric axiom. It is identified as the unique encoding that resolves loop-dependent kinematic inconsistency by organizing overlap compatibility. Geometric notions such as connection, curvature, and metric structure appear as realizations of this encoding in suitable realization classes, but are not assumed at the structural level. This paper establishes gravity as an inevitable response to the coexistence of local describability, kinematic persistence, and global obstruction, and prepares the ground for subsequent encoding-class papers on gauge structure and quantization.",
+      "abstract": "We determine exactly what follows from circle-type return memory in a typed encoding atlas. A composable family of invertible comparison maps defines a transport functor and a holonomy group. A carrier value descends to a path-independent global value precisely when it is fixed by that holonomy group. Nontrivial holonomy therefore need not be an inconsistency: one may retain the transport data, restrict to the fixed sector, or pass to a declared quotient. It obstructs only an endpoint-only trivialization. Under standard smoothness and locality hypotheses, transport on a supplied principal bundle is represented by a connection, but the circle profile alone selects neither the bundle, structure group, representation, nor connection. Flat connections can have nontrivial global holonomy, so return memory does not imply curvature. Gravity is a canonical realization only after additional physical data are supplied: a smooth base, a Lorentzian metric or equivalent physical principal symbol, and the tangent, frame, coframe, or spin carrier. The metric then has a unique torsion-free compatible Levi-Civita connection. Causal cones come from the principal symbol of a selected local hyperbolic equation, and Einstein dynamics follows only after an Einstein-Hilbert or equivalent local action is selected. Thus Program B1 establishes a precise loop-transport bridge and a conditional gravity realization, not the inevitability or uniqueness of gravity from obstruction taxonomy alone.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January 2026",
+      "current_version": "v2",
+      "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18355019",
         "created": "2026-01-23T20:03:27.705835+00:00",
@@ -7384,19 +7384,22 @@
         "updated": "2026-01-23T20:03:28.150092+00:00",
         "version": "v1.0"
       },
-      "main_tex_sha256": "b84404efbfe82ed0545cfe699795e7b70173f0e705ba6a0621ee61d963ad2d3d",
+      "main_tex_sha256": "b8c33c9d49d333c32693bf87e583adf8418d6e627c7ecf533ed7c3566354d81c",
       "paper_id": "the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38",
-      "paper_md_sha256": "6b41f6c23745d9ad3f958858f1dc47c98621f797ebbfd6e2314635a7cb2bb10d",
+      "paper_md_sha256": "b99245ea84bd2795bc6874ad1ca244778cd533895293be5262ba6db2624c4b3f",
       "release_state": "zenodo_released",
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "25e8cbeb733c75724da8cdab4e3649cbc44200321936b968db70474f6d5abf3f",
+        "selected_revision": true,
+        "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding"
       },
       "source_provenance": {
         "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding"
       },
-      "source_tree_sha256": "ce68d15d1e65e403958c3a2ffa34b60fe052d1b1fcf37c6853d9ad0e9398eb03",
-      "title": "The Modal Triplet Theory Program B1: Gravity as Kinematic Consistency Encoding in the Modal Triplet Theory Program",
-      "version_relation": "matches_latest_release",
+      "source_tree_sha256": "b5c556bb74a5c9027e8d04f1630fa5c1895bde282876cf60c5736bf19d3526d8",
+      "title": "The Modal Triplet Theory Program B1: Loop-Transport Consistency and the Conditional Gravity Realization",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.18355019",

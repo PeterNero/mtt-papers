@@ -59,6 +59,20 @@
       "title": "The Modal Triplet Theory Program B0: Circle-Lens-Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations"
     },
     {
+      "abstract": "We determine exactly what follows from circle-type return memory in a typed encoding atlas. A composable family of invertible comparison maps defines a transport functor and a holonomy group. A carrier value descends to a path-independent global value precisely when it is fixed by that holonomy group. Nontrivial holonomy therefore need not be an inconsistency: one may retain the transport data, restrict to the fixed sector, or pass to a declared quotient. It obstructs only an endpoint-only trivialization. Under standard smoothness and locality hypotheses, transport on a supplied principal bundle is represented by a connection, but the circle profile alone selects neither the bundle, structure group, representation, nor connection. Flat connections can have nontrivial global holonomy, so return memory does not imply curvature. Gravity is a canonical realization only after additional physical data are supplied: a smooth base, a Lorentzian metric or equivalent physical principal symbol, and the tangent, frame, coframe, or spin carrier. The metric then has a unique torsion-free compatible Levi-Civita connection. Causal cones come from the principal symbol of a selected local hyperbolic equation, and Einstein dynamics follows only after an Einstein-Hilbert or equivalent local action is selected. Thus Program B1 establishes a precise loop-transport bridge and a conditional gravity realization, not the inevitability or uniqueness of gravity from obstruction taxonomy alone.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38",
+      "path": "papers/the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding",
+      "superseded_project": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding",
+      "title": "The Modal Triplet Theory Program B1: Loop-Transport Consistency and the Conditional Gravity Realization"
+    },
+    {
       "abstract": "We apply the corrected FP–I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. In the q79 realization the 1<2<3 flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
       "authors": [
         "Peter Nero"
