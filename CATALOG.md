@@ -1,6 +1,6 @@
 # MTT Paper Catalog
 
-Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **47**.
+Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **48**.
 
 The list is alphabetical and intentionally has no topical grouping.
 
@@ -120,7 +120,7 @@ The list is alphabetical and intentionally has no topical grouping.
 | The Modal Triplet Theory Program B4: Typed Encoding Intersections, Conditional Rigidity, and Standard Model Compatibility | v2 | [v1.0](https://zenodo.org/records/18355086) | [TeX](papers/the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113/paper.md) |
 | The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations | v2 | [v1.0](https://zenodo.org/records/18355130) | [TeX](papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f/paper.md) |
 | The Modal Triplet Theory Program C: A Typed Dictionary for Geometric, Bundle, and Operator Realizations | v2 | [v1.0](https://zenodo.org/records/18355143) | [TeX](papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/paper.md) |
-| The Modal Triplet Theory Program D1: The Dark Sector as Missing Encodings in the Modal Triplet Theory Program | v1.0 | [v1.0](https://zenodo.org/records/18355167) | [TeX](papers/the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707/paper.md) |
+| The Modal Triplet Theory Program D1: A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract | v2 | [v1.0](https://zenodo.org/records/18355167) | [TeX](papers/the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707/paper.md) |
 | The Projection–Admissibility Principle Descent, Recovery, and Structural Constraints on Effective Description | v2 | [v1.0](https://zenodo.org/records/18255839) | [TeX](papers/the-projection-admissibility-principle-descent-recovery-b0fd6e59/main.tex) / [Markdown](papers/the-projection-admissibility-principle-descent-recovery-b0fd6e59/paper.md) |
 | The Proto-Spinor: Conditional Spinorial Closure and the q79 Interface Corrected sixth edition | v6 | [v4.0](https://zenodo.org/records/19534666) | [TeX](papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/main.tex) / [Markdown](papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/paper.md) |
 | The Spectral Action as a Shadow of Coherent Fixed-Point Geometry Standard Model couplings, Higgs sector, and noncommutative geometry from Modal Triplet Theory | v1.0 | [v1.0](https://zenodo.org/records/18261750) | [TeX](papers/the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987/main.tex) / [Markdown](papers/the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987/paper.md) |

@@ -7,877 +7,648 @@
 
 \geometry{margin=1in}
 
-
-% ---------- metadata ----------
-\title{The Modal Triplet Theory Program D1:\\ The Dark Sector as Missing Encodings
-in the Modal Triplet Theory Program}
+\title{The Modal Triplet Theory Program D1:\\
+A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract}
 \author{Peter Nero}
-\date{January, 2026}
+\date{July 2026}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-We reinterpret dark matter and dark energy as phenomenological regimes arising
-from restricted availability of admissible encodings in the Modal Triplet Theory
-(MTT) framework. No new obstruction types or encoding responses are introduced.
-Instead, dark sector phenomena are shown to emerge when local descriptive
-encodings fail or decouple, leaving only relational or statistical encodings
-active.
+This paper formulates a projection-first dark-sector hypothesis within Modal
+Triplet Theory (MTT) and identifies exactly what would be required to turn it
+into a physical model.  The retained idea is that a reduced description may
+have an availability profile in which statistical or relational encodings
+remain usable while more local encodings do not.  We prove, however, that an
+availability profile alone cannot determine a stress-energy tensor, a modified
+field equation, an equation of state, or a perturbation spectrum.  In
+particular, statistical encoding does not imply cold, pressureless,
+collisionless matter, and relational encoding does not imply accelerated
+expansion.
 
-Dark matter is associated with regimes dominated by statistical ensemble
-encodings (E9), in which matter influences kinematic consistency and curvature
-through aggregate effects but lacks stable local descriptive structure. Dark
-energy is associated with regimes dominated by relational encodings (E8), in
-which global transition structure persists while local matter descriptions are
-absent or ineffective.
-
-This perspective explains the universality, gravitational coupling, and apparent
-non-interaction of the dark sector without postulating new particles, forces, or
-fields. The dark sector is not fundamental; it reflects descriptive incompleteness
-rather than new ontology. Observational consequences are discussed at the level
-of effective behavior, without modifying the structural or encoding-level results
-of the theory.
+We therefore replace the former identification of dark matter with E9 and dark
+energy with E8 by two explicit hypotheses.  Each requires a selected covariant
+source map or a selected diffeomorphism-invariant effective action.  We derive
+the associated conservation condition and state separate background,
+linear-perturbation, lensing, cluster-collision, cosmic-microwave-background,
+baryon-acoustic-oscillation, structure-growth, and equation-of-state gates.
+The current MTT result is consequently an organized candidate taxonomy and a
+completion contract, not a derivation of the observed dark sector.  This
+revision records which earlier claims are retained, withdrawn, or left open.
 \end{abstract}
 
 \tableofcontents
 \newpage
 
-% ============================================================
-\section{Introduction and Scope}
+\section{Status, Purpose, and Logical Tier}
 
-Observations in cosmology and astrophysics indicate the presence of gravitational
-effects not accounted for by visible matter and radiation. These effects are
-commonly attributed to dark matter and dark energy, often modeled as new
-particle species, exotic fluids, or modifications of gravitational dynamics.
-Despite extensive effort, no direct non-gravitational detection of dark sector
-degrees of freedom has been confirmed.
+Observations constrain a successful cosmological model through several
+independent channels.  The cosmic microwave background (CMB), baryon acoustic
+oscillations (BAO), weak lensing, galaxy clustering, supernova distances, and
+cluster collisions do not merely ask whether an additional gravitational
+effect exists; together they constrain its background evolution, perturbations,
+clustering, lensing response, and interactions
+\cite{Planck2018CosmologicalParameters,Clowe2006BulletCluster,
+DESY3Cosmology,DESIDR2Cosmology}.
 
-The purpose of the present paper is to reinterpret these phenomena within the
-Modal Triplet Theory Program. Rather than introducing new encodings, obstruction
-types, or dynamical laws, we show that dark sector behavior arises naturally as a
-consequence of \emph{missing or ineffective encodings} in certain regimes of
-admissible description.
+The purpose of this paper is narrower.  It asks whether restrictions on the
+availability of reduced encodings could organize candidate explanations of
+dark-sector phenomenology.  The answer is:
+\begin{quote}
+\emph{possibly as a hypothesis, but not from encoding absence alone.}
+\end{quote}
 
-In the MTT framework, reduced descriptions are local and encoding-dependent.
-Multiple descriptive encodings (E1--E9) may be admissible in different regimes,
-and no single encoding is guaranteed to be globally available. When local
-descriptive encodings (such as operator, spectral, or field-based charts) fail
-or decouple, only relational or statistical encodings may remain admissible.
-These regimes manifest observationally as dark sector phenomena.
-
-Specifically, we argue that:
-\begin{itemize}
-\item \emph{Dark matter} corresponds to regimes dominated by statistical ensemble
-encoding (E9), in which aggregate distributions influence kinematic consistency
-and curvature without stable local degrees of freedom.
-\item \emph{Dark energy} corresponds to regimes dominated by relational encoding
-(E8), in which global transition structure persists while local matter
-descriptions are absent or dynamically ineffective.
-\end{itemize}
-
-In this interpretation, the dark sector is not a new form of matter or energy,
-but a manifestation of descriptive incompleteness. It couples gravitationally
-because gravity encodes kinematic consistency universally, but it lacks gauge
-and local interaction signatures because those encodings are not active.
-
-\begin{remark}[Interpretive scope]
-This paper introduces no new encoding responses and no new structural
-assumptions. It interprets existing observations as consequences of restricted
-encoding availability. The structural and encoding-level results of the Modal
-Triplet Theory Program remain unchanged.
+\begin{remark}[Current status]
+The results proved here are classification and non-identifiability results.
+No selected MTT action, covariant dark-sector stress tensor, cosmological
+solution, likelihood, or held-out numerical prediction is supplied.  Thus this
+paper is interpretive and diagnostic.  It is not a replacement for
+$\Lambda$CDM, particle dark matter, or a specified modified-gravity theory.
 \end{remark}
 
-The organization of the paper is as follows. In Section~2 we summarize the
-encoding landscape and clarify what it means for an encoding to be ``missing''
-or ineffective. Section~3 analyzes dark matter as a statistical-encoding-dominated
-regime. Section~4 analyzes dark energy as a relational-encoding-dominated regime.
-Section~5 discusses observational consequences and constraints. Section~6
-addresses common objections and alternative interpretations. Section~7
-summarizes the results and places the dark sector interpretation within the
-broader MTT program.
+The central correction to version 1 is the distinction between three claims:
+\begin{enumerate}[label=(\roman*)]
+\item an encoding is unavailable in a reduced description;
+\item a covariant source or modified field equation is selected;
+\item that dynamics reproduces the observed dark-sector data.
+\end{enumerate}
+Claim (i) does not imply (ii), and claim (ii) does not imply (iii).
 
-\begin{remark}[Position in the program]
-This paper belongs to the D-layer of the Modal Triplet Theory Program. It is
-interpretive and phenomenological. Readers interested only in structural
-necessity or encoding responses may omit this paper without loss of logical
-completeness.
-\end{remark}
+\subsection{Position in the MTT program}
 
-% ============================================================
-% Next section will be:
-% \section{Encoding Availability and Descriptive Regimes}
-% ============================================================
-\section{Encoding Availability and Descriptive Regimes}
+Program C distinguishes spacetime coordinates, internal bundles, connections,
+operators, spectral projectors, and reduced descriptions as different typed
+objects \cite{Nero2026ProgramC}.  This paper adopts that discipline.  An
+``encoding'' is not a substance, a coordinate, a stress tensor, or an
+interaction merely because the same verbal label occurs in several
+descriptions.
 
-In this section we formalize the notion of encoding availability and explain how
-different descriptive regimes arise within the Modal Triplet Theory framework.
-The dark sector interpretation depends crucially on the fact that not all
-admissible encodings are available or effective in all regimes.
+The D-layer is therefore downstream of the following missing construction:
+\[
+\text{MTT source data}
+\longrightarrow
+\text{selected covariant dynamics}
+\longrightarrow
+\text{cosmological observables}.
+\]
+The first arrow is not supplied by naming an E8 or E9 regime.
 
-\subsection{Encoding availability}
+\section{A Typed Encoding-Availability Hypothesis}
 
-The Modal Triplet Theory Program allows multiple descriptive encodings
-(E1--E9) to coexist in principle, but does not require them to be simultaneously
-admissible everywhere.
+\subsection{Spacetime and availability data}
 
-\begin{definition}[Encoding availability]
-An encoding is said to be \emph{available} in a region if it admits an admissible
-reduced description satisfying locality, overlap consistency, and refinement
-stability in that region.
+Let $(Y_4,g)$ be a time-oriented Lorentzian spacetime.  Let
+\[
+\mathcal E=\{E_1,\ldots,E_9\}
+\]
+denote a fixed catalogue of reduced encoding types.  Nothing in this notation
+identifies an $E_i$ with a physical field or source.
+
+\begin{definition}[Availability profile]
+An \emph{availability profile} is a map
+\[
+\alpha:Y_4\longrightarrow \mathcal A,
+\]
+where $\mathcal A$ records which encoding contracts are satisfied in each
+region.  In the simplest bookkeeping model,
+$\mathcal A\subseteq\{0,1\}^9$; a continuous profile may instead take values
+in $[0,1]^9$ once a quantitative availability functional has been defined.
 \end{definition}
 
-Encoding availability is therefore a regime-dependent property, not a global
-feature of the theory.
-
-\subsection{Encoding failure and decoupling}
-
-Encodings may become unavailable in two distinct ways.
-
-\begin{definition}[Encoding failure]
-An encoding fails in a region if no admissible reduced description of that type
-exists there.
+\begin{definition}[Available encoding]
+An encoding $E_i$ is available on an open set $U\subseteq Y_4$ if its declared
+domain, codomain, overlap, locality, and stability conditions are all satisfied
+on $U$.  It is unavailable if at least one declared condition fails.
 \end{definition}
-
-\begin{definition}[Encoding decoupling]
-An encoding decouples in a region if it remains formally admissible but does not
-contribute dynamically or observationally to kinematic persistence or
-consistency.
-\end{definition}
-
-Both mechanisms lead to effective absence of an encoding in that regime.
-
-\subsection{Hierarchy of descriptive encodings}
-
-Different encodings carry different descriptive power.
 
 \begin{remark}
-Local operator, field-theoretic, or spectral encodings (E1--E6) require strong
-regularity and stability conditions. Relational (E8) and statistical (E9)
-encodings are weaker: they persist even when local structure is degraded or
+Availability is relative to an explicit encoding contract.  It is not an
+observer-independent physical scalar until a law defining $\alpha$ from
+pre-projection data has been supplied.
+\end{remark}
+
+\subsection{The E8 and E9 labels}
+
+For the present hypothesis, E8 and E9 have only the following meanings.
+
+\begin{definition}[Relational profile, E8]
+An E8 profile retains a declared set of relations or transition data while
+some specified local descriptions are unavailable.
+\end{definition}
+
+\begin{definition}[Statistical profile, E9]
+An E9 profile retains a probability measure, state, or ensemble functional on
+a declared measurable state space while some specified local descriptions are
 unavailable.
-\end{remark}
-
-This hierarchy explains why E8 and E9 often dominate in extreme or poorly
-resolved regimes.
-
-\subsection{Descriptive regimes}
-
-We now define descriptive regimes.
-
-\begin{definition}[Descriptive regime]
-A \emph{descriptive regime} is a region of admissible description characterized
-by the subset of encodings that remain available or effective.
 \end{definition}
 
-Different regimes may admit different subsets of E1--E9.
+The measure or state in the E9 definition is mandatory.  Calling a description
+``statistical'' without specifying its measurable space and probability law
+does not define an encoding.
 
-\subsection{Transition between regimes}
-
-Transitions between descriptive regimes are generic.
-
-\begin{remark}
-As admissibility conditions change—for example due to scale, refinement,
-instability, or horizon effects—encodings may become unavailable or decouple.
-Such transitions do not require new physics; they reflect changes in descriptive
-capacity.
-\end{remark}
-
-These transitions are central to the interpretation of the dark sector.
-
-\subsection{Gravity as universal bookkeeping}
-
-Gravity remains active across all regimes.
-
-\begin{remark}
-Gravity encoding enforces kinematic consistency universally. It remains operative
-even when other encodings fail or decouple. This universality explains why dark
-sector phenomena couple gravitationally in all observed regimes.
-\end{remark}
-
-By contrast, gauge and local matter encodings may become ineffective.
-
-\subsection{Dark sector as a regime, not an entity}
-
-We emphasize the interpretive stance.
-
-\begin{remark}
-The dark sector is not identified with a new substance, field, or interaction.
-It is identified with descriptive regimes in which only relational (E8) or
-statistical (E9) encodings remain available, while local descriptive encodings
-are absent or dynamically irrelevant.
-\end{remark}
-
-This reframing eliminates the need for additional ontology.
-
-\subsection{Preview: dark matter and dark energy}
-
-We now prepare the specific analyses.
-
-\begin{remark}
-In the next section we analyze dark matter as a regime dominated by statistical
-ensemble encoding (E9), while in Section~4 we analyze dark energy as a regime
-dominated by relational encoding (E8).
-\end{remark}
-
-% ============================================================
-% Next section will be:
-% \section{Dark Matter as Statistical-Encoding Dominance}
-% ============================================================
-\section{Dark Matter as Statistical-Encoding Dominance}
-
-In this section we interpret dark matter phenomena as arising from descriptive
-regimes dominated by statistical ensemble encoding (E9). In such regimes,
-aggregate structure remains admissible and gravitationally active, while local
-descriptive encodings are absent, unstable, or dynamically ineffective.
-
-\subsection{Statistical ensemble encoding (E9)}
-
-We briefly recall the role of E9 encodings.
-
-\begin{remark}
-Statistical ensemble encoding (E9) describes systems in terms of aggregate or
-distributional properties rather than local degrees of freedom. It remains
-admissible when detailed local structure cannot be stably resolved, provided
-sufficient statistical regularity persists.
-\end{remark}
-
-E9 does not require:
-\begin{itemize}
-\item localized particles;
-\item well-defined local fields;
-\item operator or spectral descriptions.
-\end{itemize}
-
-It requires only stable ensemble-level behavior.
-
-\subsection{Loss of local descriptive encodings}
-
-Dark matter regimes are characterized by loss or decoupling of local encodings.
-
-\begin{remark}
-In many astrophysical and cosmological regimes, local operator, field-theoretic,
-or particle-based encodings (E1--E6) may fail due to instability, coarse-graining,
-or lack of admissible refinement. When this occurs, only statistical encodings
-remain available.
-\end{remark}
-
-The absence of local encodings does not imply absence of structure, but absence
-of local describability.
-
-\subsection{Gravitational activity of statistical encodings}
-
-Statistical encodings remain gravitationally active.
-
-\begin{lemma}
-In a regime dominated by statistical encoding (E9), aggregate distributions
-contribute to kinematic consistency encoding and therefore source gravitational
-effects.
-\end{lemma}
+\begin{proposition}[Availability is not ontology]
+Neither $\alpha_i=0$ nor $\alpha_i=1$ determines the existence or absence of a
+particle, field, fluid, stress tensor, or metric degree of freedom.
+\end{proposition}
 
 \begin{proof}
-Gravity encoding enforces kinematic consistency universally, independent of the
-descriptive encoding used. Statistical encodings contribute aggregate structure
-that affects admissible continuation and curvature bookkeeping, and therefore
-enter gravitational consistency conditions.
+The codomain of $\alpha$ records satisfaction of descriptive contracts.
+Particle content, fields, fluids, and metric dynamics belong to different
+typed spaces.  No map from $\mathcal A$ to any of those spaces has been given,
+so no such conclusion follows.
 \end{proof}
 
-This explains why dark matter influences gravitational dynamics despite lacking
-local interactions.
+\section{The Availability-Only Non-Selection Theorem}
 
-\subsection{Absence of non-gravitational interactions}
+The main mathematical result of this revision is that the old physical
+identifications were underdetermined.
 
-Statistical dominance explains the non-interacting character of dark matter.
-
-\begin{remark}
-Gauge interactions require local descriptive encodings with well-defined
-redundancy structure. In regimes where only statistical encoding is available,
-such redundancy bookkeeping cannot be implemented locally. As a result,
-non-gravitational interactions are suppressed or absent.
-\end{remark}
-
-This explains the failure of direct detection experiments without invoking new
-forces or symmetries.
-
-\subsection{Effective mass and clustering}
-
-Dark matter exhibits effective mass and clustering behavior.
-
-\begin{remark}
-Statistical encodings admit stable aggregate distributions that can cluster under
-gravitational consistency encoding. These distributions behave effectively as
-mass sources, despite lacking particle interpretation.
-\end{remark}
-
-Thus dark matter appears massive and clumped without being particulate.
-
-\subsection{Scale dependence}
-
-Statistical dominance is scale-dependent.
-
-\begin{remark}
-At sufficiently small scales, local encodings may re-emerge and statistical
-encoding may break down. At sufficiently large scales, statistical encoding
-becomes dominant. This explains why dark matter effects are prominent at galactic
-and cosmological scales but suppressed at laboratory scales.
-\end{remark}
-
-No new scale-dependent physics is required.
-
-\subsection{Comparison with particle dark matter}
-
-We contrast this interpretation with particle models.
-
-\begin{remark}
-Particle dark matter models introduce new local degrees of freedom to explain
-gravitational anomalies. The statistical-encoding interpretation explains the
-same phenomena without introducing new ontology, attributing them instead to the
-absence of local descriptive encodings.
-\end{remark}
-
-The two approaches make different predictions regarding non-gravitational
-interactions.
-
-\subsection{Structural advantages}
-
-The statistical-encoding interpretation has several advantages.
-
-\begin{itemize}
-\item It explains universal gravitational coupling naturally.
-\item It explains non-detection in non-gravitational channels.
-\item It avoids fine-tuning of particle properties.
-\item It aligns with admissibility and refinement constraints.
-\end{itemize}
-
-These features follow structurally, not by design.
-
-\subsection{Interpretive caution}
-
-We emphasize the scope of the claim.
-
-\begin{remark}
-This interpretation does not exclude the existence of new particles or fields in
-nature. It asserts only that dark matter phenomena do not require them at the
-structural level. Statistical-encoding dominance provides a sufficient and
-economical explanation within the Modal Triplet Theory framework.
-\end{remark}
-
-\subsection{Preview: dark energy}
-
-Dark matter and dark energy arise from different descriptive regimes.
-
-\begin{remark}
-In the next section we analyze dark energy as a regime dominated by relational
-encoding (E8), where global transition structure persists while even statistical
-local structure is ineffective.
-\end{remark}
-
-% ============================================================
-% Next section will be:
-% \section{Dark Energy as Relational-Encoding Dominance}
-% ============================================================
-\section{Dark Energy as Relational-Encoding Dominance}
-
-In this section we interpret dark energy phenomena as arising from descriptive
-regimes dominated by relational encoding (E8). In such regimes, global transition
-structure remains admissible while local descriptive encodings—both operator and
-statistical—are ineffective or absent. The resulting behavior manifests
-observationally as large-scale acceleration or repulsive effective dynamics.
-
-\subsection{Relational encoding (E8)}
-
-We recall the defining features of E8.
-
-\begin{remark}
-Relational encoding (E8) describes systems purely in terms of admissible
-transitions and relations between configurations, without reference to local
-state variables, fields, or ensemble distributions. It is the weakest descriptive
-encoding in the MTT framework, but also the most robust.
-\end{remark}
-
-E8 persists when:
-\begin{itemize}
-\item local structure is absent or ill-defined;
-\item statistical regularity is insufficient to define ensembles;
-\item only global consistency constraints remain admissible.
-\end{itemize}
-
-\subsection{Loss of local and statistical encodings}
-
-Dark energy regimes represent a further degradation of descriptive capacity.
-
-\begin{remark}
-In contrast to dark matter regimes, where statistical encoding (E9) remains
-available, dark energy regimes are characterized by failure or decoupling of both
-local encodings (E1--E6) and statistical encodings (E9). Only relational encoding
-(E8) remains admissible.
-\end{remark}
-
-This represents the weakest nontrivial descriptive regime.
-
-\subsection{Global consistency without local structure}
-
-Relational encoding still constrains kinematic consistency.
-
-\begin{lemma}
-In a regime dominated by relational encoding, global transition structure
-continues to influence kinematic consistency even in the absence of local
-descriptive content.
-\end{lemma}
+\begin{theorem}[Availability-only non-selection]
+\label{thm:nonselection}
+Let $(Y_4,g)$ and an availability profile $\alpha$ be fixed.  If the premises
+place no condition on an action, field equation, or source map, then they do
+not select a unique gravitational source or spacetime dynamics.
+\end{theorem}
 
 \begin{proof}
-Gravity encoding enforces kinematic consistency universally and acts on admissible
-continuation relations themselves. Relational encoding supplies exactly such
-relations, allowing global structure to affect admissible continuation without
-local matter content.
+Keep the same $(Y_4,\alpha)$.  One admissible completion may assign no
+additional action,
+\[
+S_{\rm enc}^{(0)}[g,\alpha]=0,
+\qquad
+T_{\mu\nu}^{(0)}=0.
+\]
+A second completion may assign
+\[
+S_{\rm enc}^{(\Lambda)}[g,\alpha]
+=-\int_{Y_4}\sqrt{-g}\,\Lambda_{\rm eff}\,d^4x,
+\qquad
+T_{\mu\nu}^{(\Lambda)}
+=-\Lambda_{\rm eff}g_{\mu\nu},
+\]
+where
+\[
+T_{\mu\nu}
+:=-\frac{2}{\sqrt{-g}}
+\frac{\delta S_{\rm enc}}{\delta g^{\mu\nu}}.
+\]
+Both completions have the same availability profile, yet their sources and
+metric equations differ whenever $\Lambda_{\rm eff}\ne0$.  Therefore
+availability data alone do not select the source or dynamics.
 \end{proof}
 
-Thus dark energy influences large-scale kinematics despite lacking local degrees
-of freedom.
+\begin{corollary}[No source from absence]
+The unavailability of local encodings does not by itself source curvature.
+\end{corollary}
 
-\subsection{Effective repulsive behavior}
+\begin{corollary}[No dark-sector identification from labels]
+An E9 label alone does not derive dark matter, and an E8 label alone does not
+derive dark energy.
+\end{corollary}
 
-Relational dominance produces effective acceleration.
+\subsection{Why E9 does not imply cold dark matter}
 
-\begin{remark}
-When only relational encoding remains, admissible continuation is constrained
-primarily by global consistency rather than by local mass or energy content.
-This can manifest as effective repulsive behavior or accelerated expansion in
-geometric realizations.
+A statistical state can describe many inequivalent effective media.  At the
+level of a homogeneous stress tensor,
+\[
+T_{\mu\nu}=(\rho+p)u_\mu u_\nu+p g_{\mu\nu}+\pi_{\mu\nu},
+\]
+the E9 label fixes none of $\rho$, $p$, $u^\mu$, or $\pi_{\mu\nu}$.
+
+\begin{proposition}[Equation-of-state underdetermination]
+The existence of an E9 statistical encoding does not imply
+\[
+p=0,\qquad c_s^2=0,\qquad \pi_{\mu\nu}=0,
+\]
+and hence does not imply cold, pressureless, collisionless behavior.
+\end{proposition}
+
+\begin{proof}
+Probability measures exist for dust, radiation, warm fluids, interacting
+fluids, and systems with anisotropic stress.  These descriptions share the
+property ``statistical'' but have different equations of state, sound speeds,
+collision terms, and perturbation evolution.  The label therefore cannot
+select one of them.
+\end{proof}
+
+\subsection{Why E8 does not imply acceleration}
+
+For a spatially homogeneous and isotropic solution of Einstein gravity,
+\[
+\frac{\ddot a}{a}
+=-\frac{4\pi G}{3}(\rho+3p)+\frac{\Lambda}{3}.
+\]
+
+\begin{proposition}[Acceleration is dynamical]
+An E8 relational encoding does not determine the sign of $\ddot a$.
+\end{proposition}
+
+\begin{proof}
+The sign depends on the source combination $\rho+3p$, a cosmological term, or
+the corresponding terms in a modified metric equation.  The definition of E8
+specifies none of them.  The same E8 profile is therefore compatible with
+accelerating, coasting, or decelerating solutions.
+\end{proof}
+
+\section{The Covariant Completion Contract}
+
+A physical promotion requires one of two typed routes.
+
+\subsection{Route A: an effective source action}
+
+Specify fields or source variables $\chi$.  If the availability profile is
+dynamical, include it among those variables and specify its equation of
+motion.  A diffeomorphism-invariant functional then has the form
+\[
+S_{\rm enc}[g,\chi,\alpha].
+\]
+and equations obtained by varying all dynamical arguments.  Define
+\[
+T_{\mu\nu}^{\rm enc}
+:=-\frac{2}{\sqrt{-g}}
+\frac{\delta S_{\rm enc}}{\delta g^{\mu\nu}}.
+\]
+The metric equation may then take the form
+\[
+G_{\mu\nu}+\Lambda g_{\mu\nu}
+=8\pi G\left(T_{\mu\nu}^{\rm visible}
++T_{\mu\nu}^{\rm enc}\right).
+\]
+
+\begin{theorem}[On-shell covariant conservation]
+\label{thm:conservation}
+If $S_{\rm enc}$ is diffeomorphism invariant and the Euler--Lagrange equations
+hold for every spacetime-dependent nonmetric argument, including $\alpha$ when
+it is dynamical, then
+\[
+\nabla^\mu T_{\mu\nu}^{\rm enc}=0.
+\]
+\end{theorem}
+
+\begin{proof}
+Under an infinitesimal diffeomorphism generated by $\xi^\mu$, the metric
+variation is
+$\delta g^{\mu\nu}=-2\nabla^{(\mu}\xi^{\nu)}$.
+The Euler--Lagrange terms of all nonmetric variables vanish on shell.
+Diffeomorphism invariance and integration by parts then give
+\[
+0=\delta S_{\rm enc}
+=-\int_{Y_4}\sqrt{-g}\,
+(\nabla^\mu T_{\mu\nu}^{\rm enc})\xi^\nu\,d^4x.
+\]
+Since $\xi^\nu$ is arbitrary, the result follows.
+\end{proof}
+
+\begin{remark}[External availability profiles]
+If $\alpha$ is prescribed rather than varied, its Euler--Lagrange response
+does not vanish in the Noether identity.  Separate conservation of
+$T_{\mu\nu}^{\rm enc}$ then need not hold.  A completed model must either make
+$\alpha$ dynamical, prove that its response term vanishes on the claimed
+background, or state the resulting covariant exchange law.
 \end{remark}
 
-No negative-energy fields or exotic fluids are required.
+\subsection{Route B: a modified metric equation}
 
-\subsection{Homogeneity and isotropy}
-
-Dark energy appears homogeneous.
-
-\begin{remark}
-Relational encoding lacks localized structure by definition. Its effects are
-therefore naturally homogeneous and isotropic at large scales, consistent with
-observational properties attributed to dark energy.
-\end{remark}
-
-This homogeneity is structural, not imposed.
-
-\subsection{Persistence across scales}
-
-Relational dominance is scale-sensitive but persistent.
+Alternatively, specify a covariant tensor
+\[
+\mathcal E_{\mu\nu}[g,\alpha,\chi]
+=8\pi G\,T_{\mu\nu}^{\rm visible}.
+\]
+This route must state its initial-value problem, propagating degrees of freedom,
+stability conditions, and divergence identity.  In particular, consistency
+requires
+\[
+\nabla^\mu \mathcal E_{\mu\nu}=0
+\]
+on the declared solution space, or an explicitly balanced exchange equation.
 
 \begin{remark}
-At sufficiently large scales or late times, relational encoding may dominate as
-local and statistical encodings become ineffective. Once dominant, E8 effects
-persist uniformly because no finer local description is available to break them.
+Calling the proposal ``unchanged gravity'' commits it to Route A with a
+nonzero effective source.  Calling it ``not a new source'' generally commits
+it to Route B.  Version 1 implicitly used both descriptions.  A completed
+model must choose and execute one.
 \end{remark}
 
-This explains the cosmological nature of dark energy phenomena.
+\subsection{Selection and parameter provenance}
 
-\subsection{Comparison with cosmological constant models}
+Whichever route is used, an MTT derivation must provide:
+\begin{enumerate}[label=\arabic*.]
+\item the domain and codomain of the source map;
+\item the pre-projection data on which it depends;
+\item the selector that fixes its functional form;
+\item all dimensional scales and dimensionless parameters;
+\item the conservation or exchange identity;
+\item a well-posed and stable evolution problem;
+\item an observable map and uncertainty model;
+\item a separation of fitted, calibrated, and held-out quantities.
+\end{enumerate}
 
-We contrast this interpretation with standard models.
+A freely chosen action that reproduces cosmology would be a legitimate
+effective model, but not yet an MTT selection theorem.
 
-\begin{remark}
-Cosmological constant models posit a new constant energy density. The relational-
-encoding interpretation explains similar phenomenology without introducing new
-constants, interpreting acceleration as a consequence of missing local
-descriptions rather than additional energy content.
-\end{remark}
+\section{Dark-Matter Promotion Gates}
 
-This reframing shifts emphasis from dynamics to description.
+The corrected hypothesis is:
 
-\subsection{Structural advantages}
+\begin{conjecture}[E9 dark-matter hypothesis]
+\label{conj:dm}
+There exists a selected MTT source construction whose relevant reduced
+description factors through an E9 statistical state and whose effective
+dynamics pass the dark-matter gates below.
+\end{conjecture}
 
-The relational-encoding interpretation has several advantages.
+This conjecture does not say that dark matter \emph{is} missing description.
+It proposes a possible factorization of a future source law.
 
+\subsection{Background and perturbation requirements}
+
+At minimum, a candidate must derive a background density and pressure and the
+linear perturbation variables
+\[
+\delta\rho,\quad \delta p,\quad \theta,\quad \pi_{\mu\nu}.
+\]
+To reproduce a cold-dark-matter limit over a stated range, it must show, with
+error bounds,
+\[
+|w|=\left|\frac{p}{\rho}\right|\ll1,\qquad
+c_s^2=\frac{\delta p}{\delta\rho}\ll1,
+\]
+and control anisotropic stress and any collision or drag term.  These
+properties cannot be inserted by redefining ``statistical.''
+
+\subsection{Independent observational gates}
+
+The candidate must be executed against:
+\begin{enumerate}[label=\textbf{DM\arabic*.}]
+\item \textbf{CMB:} acoustic-peak heights, lensing, and the transfer functions
+through recombination;
+\item \textbf{BAO and growth:} background distances and growth observables
+such as $f\sigma_8$;
+\item \textbf{weak and strong lensing:} the relation between dynamical and
+lensing potentials;
+\item \textbf{cluster collisions:} spatial offsets among lensing mass,
+galaxies, and baryonic gas, including Bullet-Cluster-type systems
+\cite{Clowe2006BulletCluster};
+\item \textbf{nonlinear structure:} halo abundance, profiles, substructure,
+and the matter power spectrum;
+\item \textbf{local tests:} any transition scale at which the proposed
+availability law changes behavior.
+\end{enumerate}
+
+Planck's CMB analysis constrains a successful baseline model far beyond a
+generic statement of gravitational clustering
+\cite{Planck2018CosmologicalParameters}.  DES weak-lensing and galaxy-clustering
+analyses add independent structure-growth information
+\cite{DESY3Cosmology}.  Passing only rotation-curve or direct-detection
+considerations is therefore insufficient.
+
+\section{Dark-Energy Promotion Gates}
+
+The corrected second hypothesis is:
+
+\begin{conjecture}[E8 dark-energy hypothesis]
+\label{conj:de}
+There exists a selected MTT source or metric construction whose relevant
+reduced description factors through E8 relational data and whose effective
+dynamics pass the dark-energy gates below.
+\end{conjecture}
+
+\subsection{Background requirement}
+
+Under Route A in Einstein gravity, accelerated expansion requires an effective
+source satisfying
+\[
+\rho_{\rm eff}+3p_{\rm eff}<0
+\]
+over the relevant epoch.  Under Route B, the modified metric terms must imply
+the corresponding acceleration while preserving consistency and stability.
+The function $H(z)$ or an equivalent background solution must be derived.
+
+\subsection{Perturbations and stability}
+
+The model must also specify dark-sector perturbations or prove their absence.
+It must control:
+\[
+\delta\rho_{\rm eff},\quad
+\delta p_{\rm eff},\quad
+c_s^2,\quad
+\pi_{\mu\nu},
+\]
+as applicable, and exclude ghost, gradient, and unacceptable strong-coupling
+instabilities on its claimed domain.
+
+\subsection{Independent observational gates}
+
+A physical model must confront:
+\begin{enumerate}[label=\textbf{DE\arabic*.}]
+\item supernova luminosity distances;
+\item BAO distance ratios and expansion history;
+\item CMB distance, lensing, and early-time consistency;
+\item structure growth and weak lensing;
+\item the equation-of-state history $w(z)$ or the model's direct alternative;
+\item correlations among all fitted probes and a held-out test.
+\end{enumerate}
+
+The observational target is not frozen to one verbal description.  Planck
+found broad success for base $\Lambda$CDM in its final CMB analysis
+\cite{Planck2018CosmologicalParameters}, while DESI DR2 reports increasingly
+precise BAO constraints and examines departures from a cosmological constant
+in combination with other probes \cite{DESIDR2Cosmology}.  A future MTT
+completion must be tested against the data likelihoods, not declared
+compatible from the E8 label.
+
+\section{What the Hypothesis Does and Does Not Explain}
+
+\subsection{Logical economy}
+
+The availability viewpoint establishes a logical possibility: gravitationally
+inferred phenomena need not, before a source theory is known, be identified
+with one particular microscopic ontology.  This is a useful warning against
+premature identification.  It does not show that no new particles, fields, or
+modified dynamics are required by nature.
+
+\begin{proposition}[Non-ontology is not an explanation]
+Showing that a new microscopic object is not logically forced is weaker than
+constructing a model that reproduces the observations.
+\end{proposition}
+
+\begin{proof}
+The former excludes a logical implication.  The latter requires a selected
+dynamics and agreement with data.  Theorem~\ref{thm:nonselection} shows that
+the availability premise leaves those dynamics undetermined.
+\end{proof}
+
+\subsection{Direct detection}
+
+The absence of a confirmed non-gravitational dark-matter signal does not by
+itself favor the E9 hypothesis.  Many particle models predict suppressed or
+experiment-dependent signals, and the E9 proposal has no detection-rate
+calculation.  Conversely, a robust non-gravitational signal would rule out
+only those completed E9 models that explicitly predict its absence.
+
+\subsection{Modified gravity}
+
+Before Route A or Route B is specified, the proposal cannot be distinguished
+from an effective source theory or a modified-gravity theory.  That distinction
+is made by equations, not by interpretation.
+
+\subsection{Homogeneity and clustering}
+
+Relational data need not be homogeneous, and statistical data need not
+cluster.  Homogeneity, isotropy, and clustering are properties of a state and
+its dynamics.  They are not consequences of the words ``relational'' and
+``statistical.''
+
+\section{Relation to Current MTT Results}
+
+\subsection{Typed realization results}
+
+The revised Program C supplies a typed language for internal geometry,
+bundles, connections, operators, projectors, and reduced descriptions
+\cite{Nero2026ProgramC}.  D1 uses that language negatively: no internal
+operator or availability label is promoted to a spacetime source without a
+declared map.
+
+\subsection{Results that do not close D1}
+
+The following results, even when valid in their own scopes, do not supply the
+missing cosmological source:
 \begin{itemize}
-\item It explains universality and homogeneity naturally.
-\item It avoids fine-tuning of vacuum energy.
-\item It introduces no new fields or particles.
-\item It aligns with admissibility and kinematic consistency.
+\item existence or stability of a fixed point;
+\item a finite internal branch selector;
+\item a shared line bundle or central phase circle;
+\item an internal rank profile or finite matrix;
+\item a coherent spectral projector;
+\item a local world-in-world component decomposition.
+\end{itemize}
+To contribute to D1, such data must enter a selected action or field equation
+and survive dimensional reduction with a proved source and observable map.
+
+\subsection{Current readiness tier}
+
+We use the following audit scale:
+\begin{center}
+\begin{tabular}{|c|p{9.5cm}|}
+\hline
+Tier & Requirement \\ \hline
+DS0 & Typed availability hypothesis and non-identifiability theorem. \\ \hline
+DS1 & Selected covariant source map or modified metric equation. \\ \hline
+DS2 & Stable homogeneous cosmological solutions. \\ \hline
+DS3 & Linear perturbations and observable transfer functions. \\ \hline
+DS4 & Nonlinear lensing, structure, and cluster-collision execution. \\ \hline
+DS5 & Joint likelihood, provenance, uncertainty, and held-out tests. \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{remark}[Audited readiness]
+This paper closes DS0.  Tiers DS1--DS5 remain open.  No numerical dark-sector
+result is claimed.
+\end{remark}
+
+\section{A Non-Circular Research Program}
+
+The most efficient continuation is ordered by logical dependence.
+
+\subsection{Step 1: select the source law}
+
+Construct a pre-projection functional whose reduction produces either
+$S_{\rm enc}$ or $\mathcal E_{\mu\nu}$.  Prove covariance, specify every
+parameter, and show why the selected form is preferred over the
+counterexamples in Theorem~\ref{thm:nonselection}.
+
+\subsection{Step 2: derive conservation and well-posedness}
+
+Use Theorem~\ref{thm:conservation} or the corresponding modified-gravity
+identity.  Establish the initial-value problem and stability domain before
+fitting cosmology.
+
+\subsection{Step 3: solve the background}
+
+Derive $H(z)$, the density evolution, and any transition law for availability.
+Do not infer these functions from the data and then call the construction a
+prediction.
+
+\subsection{Step 4: execute perturbations}
+
+Derive scalar, vector, and tensor perturbations as applicable.  Compute the
+CMB, lensing, BAO, and growth observables using a reproducible solver.
+
+\subsection{Step 5: execute nonlinear and held-out tests}
+
+Confront cluster collisions and nonlinear structure, publish the likelihood
+and covariance treatment, and reserve at least one informative data product
+as a held-out test.
+
+\section{Falsifiability}
+
+The uncompleted availability hypothesis is not yet a quantitative physical
+model and therefore has no unique observational prediction.  A completed
+model becomes falsifiable through its selected equations.
+
+\begin{definition}[Model-level falsifier]
+A model-level falsifier is a predeclared observable or consistency condition
+whose failure lies outside the model's propagated uncertainty and declared
+validity domain.
+\end{definition}
+
+Examples include:
+\begin{itemize}
+\item failure of covariant conservation or the declared exchange law;
+\item a ghost or gradient instability in the claimed cosmological epoch;
+\item incompatible CMB peak or lensing spectra;
+\item incorrect BAO or supernova distances;
+\item incorrect growth or weak-lensing predictions;
+\item failure in merging clusters or nonlinear structure;
+\item a held-out likelihood decisively worse than the stated comparator.
 \end{itemize}
 
-These features follow structurally.
-
-\subsection{Interpretive caution}
-
-We emphasize again the scope of the claim.
-
-\begin{remark}
-This interpretation does not assert that dark energy is literally relational
-encoding. It asserts that dark energy phenomena are well explained by regimes in
-which only relational encoding remains admissible. Other explanations are not
-excluded, but are not required at the structural level.
-\end{remark}
-
-\subsection{Preview: observational consequences}
-
-We now prepare to discuss observational implications.
-
-\begin{remark}
-In the next section we analyze observational consequences and constraints of the
-dark sector interpreted as missing encodings, and contrast them with particle
-and modified-gravity models.
-\end{remark}
-
-% ============================================================
-% Next section will be:
-% \section{Observational Consequences and Constraints}
-% ============================================================
-\section{Observational Consequences and Constraints}
-
-In this section we discuss observational consequences of interpreting the dark
-sector as arising from missing or ineffective encodings. The goal is not to
-derive new cosmological models or predict numerical parameters, but to clarify
-how known observational features are naturally accommodated and which classes of
-observations are most sensitive to encoding availability.
-
-\subsection{Gravitational coupling only}
-
-A central observational feature of the dark sector is its apparent coupling
-solely through gravity.
-
-\begin{remark}
-In the Modal Triplet Theory framework, gravity encoding enforces kinematic
-consistency universally and remains operative in all descriptive regimes. By
-contrast, gauge and local matter encodings may fail or decouple. This explains
-why dark sector phenomena interact gravitationally while exhibiting no
-electromagnetic, weak, or strong signatures.
-\end{remark}
-
-This behavior is structural and does not depend on new interaction postulates.
-
-\subsection{Galaxy rotation curves and clustering}
-
-Dark matter effects in galaxies and clusters are naturally reproduced.
-
-\begin{remark}
-In regimes dominated by statistical encoding (E9), aggregate distributions
-contribute to gravitational consistency and may cluster under kinematic
-constraints. Such clustering reproduces the effective mass distributions inferred
-from galaxy rotation curves and gravitational lensing, without requiring
-localized particle degrees of freedom.
-\end{remark}
-
-The success of standard dark matter phenomenology is therefore preserved.
-
-\subsection{Large-scale structure formation}
-
-Statistical encoding supports structure formation.
-
-\begin{remark}
-Statistical ensemble encodings admit large-scale correlations and hierarchical
-clustering. These features are compatible with observed large-scale structure and
-cosmic web formation, provided appropriate initial conditions and refinement
-histories are realized.
-\end{remark}
-
-No modification of gravitational dynamics is required.
-
-\subsection{Cosmic acceleration and homogeneity}
-
-Dark energy observations are likewise accommodated.
-
-\begin{remark}
-Relational encoding (E8) lacks localized structure and therefore manifests
-homogeneously at large scales. Its influence on kinematic consistency may appear
-as effective accelerated expansion in geometric realizations, consistent with
-supernova and cosmic microwave background observations.
-\end{remark}
-
-This behavior arises without introducing a cosmological constant or exotic
-fields.
-
-\subsection{Redshift dependence and cosmic epochs}
-
-Encoding availability may vary with cosmic epoch.
-
-\begin{remark}
-The relative availability of local, statistical, and relational encodings may
-change as refinement conditions evolve over cosmic time. This allows dark matter
-and dark energy phenomena to dominate at different epochs without invoking
-time-varying constants or new dynamical sectors.
-\end{remark}
-
-Such evolution is descriptive rather than dynamical.
-
-\subsection{Consistency with precision cosmology}
-
-The encoding interpretation is compatible with existing constraints.
-
-\begin{remark}
-Because the present framework does not alter gravitational encoding or introduce
-new propagating degrees of freedom, it is compatible with precision tests of
-General Relativity, cosmic microwave background anisotropies, and baryon acoustic
-oscillation measurements at the level of effective behavior.
-\end{remark}
-
-Detailed numerical modeling belongs to realization-specific studies.
-
-\subsection{Absence of direct detection signals}
-
-The lack of non-gravitational detection is naturally explained.
-
-\begin{remark}
-Direct detection experiments presuppose local particle or field encodings. In
-statistical- or relational-dominated regimes, such encodings are unavailable or
-ineffective, rendering direct detection intrinsically unlikely rather than
-merely experimentally challenging.
-\end{remark}
-
-This shifts interpretation from experimental failure to descriptive limitation.
-
-\subsection{Distinction from modified gravity models}
-
-We contrast with alternative approaches.
-
-\begin{remark}
-Modified gravity models alter the kinematic consistency encoding itself. The
-present interpretation leaves gravity unchanged and attributes dark sector
-phenomena to restricted encoding availability. This distinction leads to
-different expectations in regimes where local encodings re-emerge.
-\end{remark}
-
-This provides a principled way to discriminate interpretations.
-
-\subsection{Potential discriminators}
-
-Although conservative, the framework suggests qualitative discriminators.
-
-\begin{remark}
-Observations sensitive to the emergence or breakdown of local descriptive
-structure—such as environments with extreme refinement instability or horizon
-effects—may distinguish between particle-based dark matter models and
-encoding-regime interpretations.
-\end{remark}
-
-Such discriminators are structural rather than parametric.
-
-\subsection{Interpretive restraint}
-
-We reiterate the scope of observational claims.
-
-\begin{remark}
-The present analysis does not claim new quantitative predictions. It demonstrates
-compatibility with existing observations and offers an alternative explanatory
-framework. Detailed phenomenological modeling requires specific realization
-choices and lies beyond the scope of this paper.
-\end{remark}
-
-\subsection{Preview: objections and alternatives}
-
-We now prepare to address common objections.
-
-\begin{remark}
-In the next section we address potential objections to the encoding interpretation
-of the dark sector and compare it with alternative explanatory frameworks.
-\end{remark}
-
-% ============================================================
-% Next section will be:
-% \section{Objections, Alternatives, and Clarifications}
-% ============================================================
-\section{Objections, Alternatives, and Clarifications}
-
-In this section we address common objections to the interpretation of the dark
-sector as arising from missing or ineffective encodings. We also clarify the
-relationship between the present framework and alternative approaches, including
-particle dark matter and modified gravity models.
-
-\subsection{``Is this just modified gravity?''}
-
-A frequent objection is that any explanation of dark sector phenomena without
-new particles implicitly modifies gravity.
-
-\begin{remark}
-The present framework does not modify gravitational dynamics or the kinematic
-consistency encoding identified with gravity. Gravity remains universal and
-unchanged. Dark sector phenomena arise because gravity continues to operate even
-when other encodings (local matter or gauge encodings) are unavailable or
-ineffective.
-\end{remark}
-
-Thus, the explanation attributes dark sector effects to descriptive regimes, not
-to altered gravitational laws.
-
-\subsection{``Is this just an effective field theory in disguise?''}
-
-Another objection is that statistical or relational encodings are merely coarse-
-grained effective descriptions of underlying local degrees of freedom.
-
-\begin{remark}
-Effective field theories presuppose the existence of underlying local encodings
-that are integrated out or averaged over. In contrast, the present framework
-allows for regimes in which no admissible local encoding exists at all. In such
-regimes, statistical or relational encodings are not approximations but the only
-available descriptions.
-\end{remark}
-
-This distinction is structural rather than epistemic.
-
-\subsection{``Does this deny the existence of dark matter particles?''}
-
-The interpretation is sometimes misread as denying the existence of new particles.
-
-\begin{remark}
-The present analysis does not deny the existence of new particles or fields. It
-asserts only that dark sector phenomena do not require them at the structural
-level. Particle-based explanations remain possible but are not forced by
-admissibility.
-\end{remark}
-
-This maintains compatibility with future discoveries.
-
-\subsection{``Why does dark matter cluster like matter?''}
-
-Dark matter exhibits clustering behavior similar to ordinary matter.
-
-\begin{remark}
-Statistical ensemble encoding (E9) admits stable aggregate distributions that
-cluster under gravitational kinematic consistency. Clustering therefore reflects
-gravitational organization of aggregate structure, not the presence of localized
-particles.
-\end{remark}
-
-This explains clustering without invoking particle trajectories.
-
-\subsection{``Why does dark energy appear uniform?''}
-
-Dark energy appears homogeneous and isotropic.
-
-\begin{remark}
-Relational encoding (E8) lacks localized descriptive content by definition. Its
-effects therefore manifest uniformly at large scales. Homogeneity is a
-structural consequence of relational dominance, not an imposed symmetry.
-\end{remark}
-
-This matches observed large-scale uniformity.
-
-\subsection{Comparison with particle dark matter models}
-
-We contrast the present interpretation with particle-based models.
-
-\begin{remark}
-Particle dark matter models introduce new local degrees of freedom to explain
-gravitational anomalies. The encoding-regime interpretation attributes the same
-phenomena to absence of local descriptive encodings. Both approaches are
-logically consistent; the latter is more economical at the structural level.
-\end{remark}
-
-The two approaches may be distinguished phenomenologically in regimes where local
-encoding re-emerges.
-
-\subsection{Comparison with modified gravity}
-
-We also contrast with modified gravity theories.
-
-\begin{remark}
-Modified gravity models alter the kinematic consistency encoding itself. The
-present framework leaves gravity intact and explains dark sector behavior through
-restricted encoding availability. This leads to different expectations in strong-
-field or high-resolution regimes.
-\end{remark}
-
-This distinction is principled and testable.
-
-\subsection{``Is this unfalsifiable?''}
-
-A common concern is falsifiability.
-
-\begin{remark}
-The encoding interpretation is falsifiable in the following sense: observation
-of robust, non-gravitational interactions of dark sector phenomena would require
-the existence of local descriptive encodings, contradicting the regime
-assumptions. Conversely, persistent absence of such interactions supports the
-interpretation.
-\end{remark}
-
-Falsifiability is therefore structural rather than parametric.
-
-\subsection{Scope and restraint}
-
-We restate the limits of the claims.
-
-\begin{remark}
-This paper does not propose a new cosmological model, does not fit data, and does
-not predict numerical parameters. It provides an interpretive framework that
-organizes existing observations in terms of encoding availability.
-\end{remark}
-
-This restraint is intentional.
-
-\subsection{Preview: summary and outlook}
-
-We now conclude the analysis.
-
-\begin{remark}
-In the final section we summarize the dark sector interpretation and place it
-within the overall architecture of the Modal Triplet Theory Program.
-\end{remark}
-
-% ============================================================
-% Next section will be:
-% \section{Summary and Outlook}
-% ============================================================
-\section{Summary and Outlook}
-
-In this paper we have reinterpreted dark matter and dark energy as phenomenological
-manifestations of restricted encoding availability in the Modal Triplet Theory
-framework. No new obstruction types, encoding responses, or dynamical principles
-were introduced. Instead, dark sector phenomena were shown to arise naturally
-when certain descriptive encodings fail or decouple, leaving only weaker but more
-robust encodings active.
-
-Dark matter was interpreted as a regime dominated by statistical ensemble
-encoding (E9), in which aggregate structure remains admissible and
-gravitationally active despite the absence of stable local descriptive
-encodings. This interpretation explains the gravitational clustering of dark
-matter, its apparent mass-like behavior, and the persistent absence of
-non-gravitational interactions without postulating new particles or forces.
-
-Dark energy was interpreted as a regime dominated by relational encoding (E8), in
-which only global transition structure remains admissible. In such regimes,
-gravitational kinematic consistency acts on relations rather than on local or
-statistical matter content, producing effective large-scale acceleration,
-homogeneity, and isotropy. This explanation avoids introducing a cosmological
-constant or exotic energy component and instead attributes acceleration to
-descriptive incompleteness.
-
-Throughout, gravity played a special role as a universal encoding that remains
-operative across all descriptive regimes. Gauge and local matter encodings were
-shown to be regime-dependent and may fail or decouple without violating
-structural consistency. This distinction explains why the dark sector couples
-gravitationally while remaining invisible to non-gravitational probes.
-
-The dark sector interpretation developed here is intentionally conservative. It
-does not deny the possible existence of new particles, fields, or modifications
-of gravity. Rather, it demonstrates that such additions are not structurally
-required to explain observed dark sector phenomena. The interpretation is
-falsifiable in a structural sense: robust detection of non-gravitational
-interactions associated with dark sector effects would contradict the encoding
-regime assumptions underlying this framework.
-
-This paper completes the D-layer of the Modal Triplet Theory Program. Together
-with the A-layer (structural core, coherent kinematics, predictive limits),
-the B-layer (encoding responses and their coexistence), and the C-layer
-(realizations), it demonstrates that a wide range of physical phenomena—gravity,
-gauge structure, quantization, rigidity of the Standard Model, string-like
-frameworks, and dark sector behavior—can be understood as consequences of the
-limits of describability rather than as independent postulates.
-
-Future work may pursue several directions. Detailed realization-dependent
-cosmological models may be constructed to explore quantitative consequences of
-encoding-regime transitions. Observational probes sensitive to the emergence or
-breakdown of local descriptive structure may provide discriminators between
-encoding-based and particle-based explanations. More broadly, the encoding
-availability perspective may offer insight into other regimes where effective
-descriptions fail or reorganize.
-
-In this way, the Modal Triplet Theory Program provides a unified conceptual
-framework in which both visible and dark aspects of the universe arise from the
-same structural principles governing what can—and cannot—be described.
-
-% ============================================================
-% End of Paper D1
+The absence of a direct-detection signal is not, by itself, a positive
+prediction of the present paper.
+
+\section{Version 2 Revision Record}
+
+Version 2 is a structural correction, not a boundary-only erratum.
+
+\begin{enumerate}[label=\arabic*.]
+\item The title and abstract now label the proposal as a projection-first
+dark-sector hypothesis.
+\item The E8 and E9 profiles are typed as reduced-description data.
+\item The availability-only non-selection theorem proves that these profiles
+do not determine a stress tensor or metric dynamics.
+\item The former claims that E9 explains pressureless clustering and
+non-interaction are withdrawn.
+\item The former claims that E8 produces homogeneity and acceleration are
+withdrawn.
+\item A covariant action/source route and a modified-metric route are stated
+separately.
+\item On-shell conservation is proved for a diffeomorphism-invariant source
+action.
+\item CMB, BAO, lensing, cluster-collision, structure-growth, and
+equation-of-state tests are made mandatory before physical promotion.
+\item Compatibility with precision cosmology is no longer asserted without
+execution.
+\item The current result is recorded as tier DS0; all physical tiers DS1--DS5
+remain open.
+\end{enumerate}
+
+\section{Conclusion}
+
+The projection-first idea survives in a precise form.  MTT may classify
+regimes in which different reduced encodings are available, and E8/E9 labels
+may help organize future source constructions.  What does not survive is the
+claim that missing encodings already explain the observed dark sector.
+
+Availability does not determine stress-energy.  Statistical description does
+not determine cold dark matter.  Relational description does not determine
+accelerated expansion.  The next decisive object is a selected covariant
+source action or modified field equation, followed by background,
+perturbative, nonlinear, and held-out observational execution.  Until that
+chain is supplied, Program D1 is a disciplined hypothesis and research
+contract rather than a dark-sector theory.
+
+\bibliographystyle{plain}
+\bibliography{main}
 
 \end{document}

@@ -1,12 +1,12 @@
 {
   "counts": {
     "canonical_papers": 139,
-    "current_sources_newer_than_release": 47,
+    "current_sources_newer_than_release": 48,
     "pandoc_warning_papers": 12,
     "papers_with_zenodo_release": 119,
     "papers_without_zenodo_match": 20,
     "schema": "mtt.paper-migration-report.v1",
-    "superseded_projects_excluded": 48,
+    "superseded_projects_excluded": 49,
     "zenodo_records": 120,
     "zenodo_records_matched": 119,
     "zenodo_records_unmatched": 1
@@ -7941,14 +7941,14 @@
       ]
     },
     {
-      "abstract": "We reinterpret dark matter and dark energy as phenomenological regimes arising from restricted availability of admissible encodings in the Modal Triplet Theory (MTT) framework. No new obstruction types or encoding responses are introduced. Instead, dark sector phenomena are shown to emerge when local descriptive encodings fail or decouple, leaving only relational or statistical encodings active. Dark matter is associated with regimes dominated by statistical ensemble encodings (E9), in which matter influences kinematic consistency and curvature through aggregate effects but lacks stable local descriptive structure. Dark energy is associated with regimes dominated by relational encodings (E8), in which global transition structure persists while local matter descriptions are absent or ineffective. This perspective explains the universality, gravitational coupling, and apparent non-interaction of the dark sector without postulating new particles, forces, or fields. The dark sector is not fundamental; it reflects descriptive incompleteness rather than new ontology. Observational consequences are discussed at the level of effective behavior, without modifying the structural or encoding-level results of the theory.",
+      "abstract": "This paper formulates a projection-first dark-sector hypothesis within Modal Triplet Theory (MTT) and identifies exactly what would be required to turn it into a physical model. The retained idea is that a reduced description may have an availability profile in which statistical or relational encodings remain usable while more local encodings do not. We prove, however, that an availability profile alone cannot determine a stress-energy tensor, a modified field equation, an equation of state, or a perturbation spectrum. In particular, statistical encoding does not imply cold, pressureless, collisionless matter, and relational encoding does not imply accelerated expansion. We replace the former identification of dark matter with E9 and dark energy with E8 by two explicit hypotheses. Each requires a selected covariant source map or a selected diffeomorphism-invariant effective action. We derive the associated conservation condition and state separate background, linear-perturbation, lensing, cluster-collision, cosmic-microwave-background, baryon-acoustic-oscillation, structure-growth, and equation-of-state gates. The current MTT result is consequently an organized candidate taxonomy and a completion contract, not a derivation of the observed dark sector.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January, 2026",
+      "current_version": "v2",
+      "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18355166",
         "created": "2026-01-23T20:14:52.937887+00:00",
@@ -7974,20 +7974,23 @@
         "updated": "2026-01-23T20:14:53.398397+00:00",
         "version": "v1.0"
       },
-      "main_tex_sha256": "5d23090e8f374548787f2a37ee43711bbf1d50adc960f4e37d7d5533e26a11ae",
+      "main_tex_sha256": "a0ffcea05082d9482a32486f94c0a963cd7a03828b0e627473a8db53f9d5df1a",
       "paper_id": "the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707",
-      "paper_md_sha256": "eae7840f2e21fc040fff241d3c3aa38a4654856fe591f961263d311e7b1e1f80",
+      "paper_md_sha256": "94cffef381b676cce7aa68ae85e4f9af2d303404faeaf115d703b41217083dd2",
       "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "80899562be60be2cb5f8cb55a8083bc7d98f69c9f9b36d14a2103c42e2ab3d7d",
+        "selected_revision": true,
+        "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings"
       },
       "source_provenance": {
         "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings"
       },
-      "source_tree_sha256": "3af2a44588b8a9209c40c37c9d72a355b631d22062de3299aa5e3656b19ea0e3",
-      "title": "The Modal Triplet Theory Program D1: The Dark Sector as Missing Encodings in the Modal Triplet Theory Program",
-      "version_relation": "matches_latest_release",
+      "source_tree_sha256": "474e76461d037d2a6873d72a62259ed6436db5c1cb9a3ca86f5a6cf8fc39878c",
+      "title": "The Modal Triplet Theory Program D1: A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.18355166",

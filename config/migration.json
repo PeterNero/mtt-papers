@@ -154,6 +154,20 @@
       "title": "The Modal Triplet Theory Program C: A Typed Dictionary for Geometric, Bundle, and Operator Realizations"
     },
     {
+      "abstract": "This paper formulates a projection-first dark-sector hypothesis within Modal Triplet Theory (MTT) and identifies exactly what would be required to turn it into a physical model. The retained idea is that a reduced description may have an availability profile in which statistical or relational encodings remain usable while more local encodings do not. We prove, however, that an availability profile alone cannot determine a stress-energy tensor, a modified field equation, an equation of state, or a perturbation spectrum. In particular, statistical encoding does not imply cold, pressureless, collisionless matter, and relational encoding does not imply accelerated expansion. We replace the former identification of dark matter with E9 and dark energy with E8 by two explicit hypotheses. Each requires a selected covariant source map or a selected diffeomorphism-invariant effective action. We derive the associated conservation condition and state separate background, linear-perturbation, lensing, cluster-collision, cosmic-microwave-background, baryon-acoustic-oscillation, structure-growth, and equation-of-state gates. The current MTT result is consequently an organized candidate taxonomy and a completion contract, not a derivation of the observed dark sector.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707",
+      "path": "papers/the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings",
+      "superseded_project": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings",
+      "title": "The Modal Triplet Theory Program D1: A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract"
+    },
+    {
       "abstract": "We apply the corrected FP–I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. In the q79 realization the 1<2<3 flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
       "authors": [
         "Peter Nero"
