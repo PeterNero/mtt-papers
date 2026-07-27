@@ -1,6 +1,7 @@
 \documentclass[11pt]{article}
+
 \usepackage{series}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb,amsfonts}
 \usepackage{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
@@ -8,1299 +9,591 @@
 \geometry{margin=1in}
 
 % ---------- metadata ----------
-\title{The Modal Triplet Theory Program B0:\\ Why Description Forces Circle, Lens, and Nil\\
-and Why the Minimal Continuous Realization Is Ten-Dimensional}
+\title{The Modal Triplet Theory Program B0:\\
+Circle--Lens--Nil as an Obstruction Taxonomy\\
+and Its Minimal Curvature Realizations}
 \author{Peter Nero}
-\date{January, 2026}
+\date{July 2026}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-We classify the possible ways in which global coherence can fail in any theory that admits
-local reduced descriptions with overlap consistency and identity persistence.
-Working purely at the structural level and without assuming geometry, bundles, dynamics,
-or dimensionality, we show that there exist exactly three and only three obstruction types:
-loop inconsistency (circle), redundancy of representation (lens), and failure of
-representability (nil). These obstructions are exhaustive and mutually irreducible.
-
-We further demonstrate that any realization capable of supporting all three obstruction
-types simultaneously in a stable and non-degenerate manner must exhibit a tri-layer overlap
-structure. When combined with continuity and kinematic persistence requirements, the
-minimal such realization is equivalent, up to admissible re-encoding, to a ten-dimensional
-configuration space composed of a four-dimensional effective base and three independent
-internal layers. Geometry and bundle structure are shown to arise as the minimal bookkeeping
-framework required to encode circle, lens, and nil consistently, rather than as fundamental
-axioms.
-
-This work provides the missing classification link between the structural core of Modal
-Triplet Theory and its encoding-class and realization papers, explaining why gravity,
-gauge redundancy, and termination of description are inevitable structural responses to
-local describability and global obstruction.
+We formulate circle, lens, and nil (CLN) as three coarse, typed profiles of an
+encoding atlas rather than as an exhaustive list of all possible descent
+obstructions.  Circle records nontrivial return transport around a composable
+loop; lens records nonfaithfulness or redundancy of a reduction; nil records
+failure of a declared chart or transition to extend.  These predicates concern
+different mathematical data, can occur independently or together, and are
+invariant under suitably compatible re-encoding.  They do not by themselves
+imply a literal circle, lens-space, or nilmanifold factor.  We distinguish
+holonomy from curvature by exhibiting a flat connection on $S^1$ with
+nontrivial holonomy.  A six-dimensional lower bound follows only in the
+restricted realization class where three profiles are represented by
+nonzero curvature two-forms on independent transverse coordinate factors:
+each factor then has dimension at least two, giving $2+2+2=6$.  If a separate
+four-dimensional physical base is supplied and dimensions add, the familiar
+$4+6=10$ realization follows; neither the four-dimensional base nor
+ten-dimensional necessity is selected by B0.  The shared circle is common
+phase or holonomy data and is counted once.
 \end{abstract}
+
+\section*{Revision note for version 2}
+\addcontentsline{toc}{section}{Revision note for version 2}
+\paragraph{Supersedes.}
+Version~1 of Program B0.
+\paragraph{Reason.}
+The former paper claimed an exhaustive, mutually irreducible three-type
+classification without fixing a category or higher descent problem.  It also
+identified nontrivial holonomy with nonzero curvature and promoted a
+four-dimensional input plus a conditional six-dimensional construction to a
+forced ten-dimensional conclusion.
+\paragraph{Resolution.}
+Version~2 replaces the exclusivity theorem by a typed coarse taxonomy, proves
+re-encoding invariance only under explicit compatibility, separates flat
+holonomy from curvature, and confines the $2+2+2$ lower bound to independent
+transverse nonzero-curvature realizations.  Dimension addition and the
+four-dimensional base are stated as hypotheses.
+\paragraph{Retained content.}
+Return memory, descriptive redundancy, and chart termination remain useful
+CLN diagnostics, and geometric circle-bundle models remain important examples.
+\paragraph{Open boundary.}
+No theorem here proves that CLN exhausts higher descent, that a lens space or
+nilmanifold is physically selected, that the three roles are globally nested,
+that physical time is a compact circle, or that spacetime must be
+ten-dimensional.
 
 \tableofcontents
 \newpage
 
-% ============================================================
-\section{Introduction and Scope}
+\section{Scope and Imported Data}
 
-The structural core of Modal Triplet Theory establishes general conditions under which
-reduced descriptions exist, how such descriptions relate on overlaps, and why no single
-global reduced description can exist. These results are formulated abstractly, in terms of
-projection, admissibility, and identity persistence, and make no assumptions about geometry,
-spacetime, bundles, gauge structure, or dimensionality.
+Program A0 supplies typed reductions, representative sections, exact recovery,
+autonomous descent, and admissibility domains~\cite{A0}.  Program A1 supplies
+chart transitions and encoding trajectories, with physical causality entering
+only after a Lorentzian and hyperbolic bridge~\cite{A1}.  Program A2 separates
+chart partiality and branch underdetermination from algorithmic
+undecidability~\cite{A2}.  B0 classifies three recurring \emph{diagnostics} of
+these structures.
 
-However, once local describability and global obstruction are taken seriously, a natural
-question arises: \emph{what forms of failure of global coherence are actually possible, and
-why do the same geometric and gauge-like structures appear so universally across effective
-physical theories?} The purpose of the present paper is to answer this question at the level
-of structural classification.
+The word ``obstruction'' is used in a broad encoding sense.  It does not assert
+a specific cohomology class unless a coefficient object, cover, cocycle degree,
+and equivalence relation are declared.
 
-We show that the failure of global coherence in a locally describable system admits an
-exhaustive and minimal classification. Any such failure must appear as one of three distinct
-types: inconsistency detected only around closed overlap chains (circle), non-uniqueness of
-local representation without contradiction (lens), or complete loss of representability
-(nil). No fourth obstruction type is possible under the assumptions of local describability
-and overlap consistency.
-
-Having classified the obstruction types, we then address the question of realization.
-We ask: \emph{what minimal kind of structure can support all three obstructions
-simultaneously, without degenerating one into another?} We show that a tri-layer overlap
-architecture is the minimal solution. Furthermore, when continuity and kinematic
-persistence are required, this tri-layer structure admits a minimal continuous realization
-equivalent, up to admissible re-encoding, to a ten-dimensional configuration space.
-
-Throughout this work, geometry and bundle structure are treated not as fundamental inputs
-but as emergent bookkeeping frameworks forced by the need to encode overlap consistency,
-redundancy, and termination of description. The results of this paper therefore do not
-postulate gravity, gauge symmetry, or dimensionality; instead, they explain why these
-structures arise inevitably once local description and global obstruction are both present.
-
-\begin{remark}[Relation to the series]
-This paper depends only on the structural core of Modal Triplet Theory and its kinematic
-interpretation of persistence across admissible overlaps. It precedes and motivates the
-encoding-class papers on gravity, gauge structure, quantization, and unified encodings, as
-well as the realization paper on geometric and bundle models. No realization-specific
-assumptions are used in the classification arguments presented here.
-\end{remark}
-
-% ============================================================
-% Next section will be:
-% \section{Structural Assumptions and the Meaning of Global Coherence}
-% ============================================================
-\section{Structural Assumptions and Global Coherence}
-
-In this section we state explicitly the structural assumptions imported from the core
-of Modal Triplet Theory and clarify what is meant by global coherence and its failure.
-No geometric, topological, or dynamical assumptions are introduced.
-
-\subsection{Local describability}
-
-\begin{assumption}[Local describability]
-There exists a collection of admissible domains $\{A_\alpha\}$ covering the region of
-interest such that on each $A_\alpha$ a reduced description is well-defined.
-Equivalently, there exist local encodings
-\[
-\mathcal E_\alpha = (A_\alpha, Z_\alpha, E_\alpha, \ldots)
-\]
-with associated local sections selecting representatives of coherent structure.
-\end{assumption}
-
-Local describability asserts only that reduced descriptions exist \emph{locally};
-it does not assume the existence of any globally valid reduced description.
-
-\subsection{Overlap consistency}
-
-\begin{assumption}[Overlap consistency]
-On any nonempty overlap $A_{\alpha\beta} := A_\alpha \cap A_\beta$, the corresponding
-local encodings are related by admissible re-encoding maps
-\[
-f_{\alpha\beta} : Z_\alpha \to Z_\beta
-\]
-that preserve coherent content up to admissible equivalence.
-\end{assumption}
-
-Overlap consistency ensures that different local descriptions of the same underlying
-coherent structure do not contradict one another on shared domains.
-
-\subsection{Identity persistence}
-
-\begin{assumption}[Identity persistence]
-If a coherent structure is representable on a chain of overlapping admissible domains,
-then its identity can be tracked consistently across that chain, up to admissible
-re-encoding equivalence.
-\end{assumption}
-
-This assumption underlies the kinematic notion of persistence developed in the
-coherent kinematics paper. It does not assume trajectories, spacetime, or equations
-of motion; it requires only that ``being the same'' is a meaningful notion locally.
-
-\subsection{Finite admissibility and global obstruction}
-
-\begin{assumption}[Finite admissibility]
-There exists no single admissible domain that covers the entire region of interest.
-Equivalently, no global section of the reduced description exists.
-\end{assumption}
-
-Finite admissibility is the structural statement that global coherence is generically
-obstructed. It is not a statement about experimental limitation or lack of information,
-but a property of the reduced description itself.
-
-\subsection{Global coherence}
-
-We now formalize the notion whose failure we seek to classify.
-
-\begin{definition}[Global coherence]
-A system is said to admit global coherence if there exists a single reduced encoding
-$\mathcal E = (A, Z, E, \ldots)$ with $A$ equal to the entire region of interest, such
-that all local descriptions arise as restrictions of $\mathcal E$.
-\end{definition}
-
-Global coherence therefore requires the existence of a global section compatible with
-all local encodings and all overlap relations.
-
-\begin{definition}[Failure of global coherence]
-Failure of global coherence occurs when local describability and overlap consistency
-hold, but no such global encoding exists.
-\end{definition}
-
-\subsection{The classification problem}
-
-Given the assumptions above, the central question addressed in this paper is:
-
-\begin{quote}
-\emph{In a system that is locally describable, overlap-consistent, and admits identity
-persistence but fails to be globally coherent, what distinct structural modes of failure
-are possible?}
-\end{quote}
-
-The remainder of this work shows that this question has a sharp and exhaustive answer.
-Under the stated assumptions, failure of global coherence must take one of exactly three
-forms, which we classify in the following sections.
-
-% ============================================================
-% Next section will be:
-% \section{Exhaustive Classification of Obstruction Types}
-% ============================================================
-% ============================================================
-\section{Obstruction Types as Invariants of the Encoding Atlas}
-
-In this section we formalize what is meant by an ``obstruction type'' and show
-that failure of global coherence admits an exhaustive classification into exactly
-three inequivalent classes. The classification is stated in terms of invariants
-of the encoding atlas and is therefore stable under admissible refinement and
-re-encoding.
-
-\subsection{The encoding atlas and its nerve}
-
-We briefly recall the structural objects introduced in the Modal Triplet Theory
-core.
-
-Let $\{A_\alpha\}$ be an admissible cover of the region of interest, with
-associated local encodings
-\[
-\mathcal E_\alpha = (A_\alpha, Z_\alpha, E_\alpha, \ldots).
-\]
-On nonempty overlaps $A_{\alpha\beta}$ there exist admissible re-encoding maps
-\[
-f_{\alpha\beta} : Z_\alpha \to Z_\beta,
-\]
-defined up to admissible equivalence.
-
-These data define a groupoid of encodings and a simplicial object, the
-\emph{atlas nerve} $N$, whose $k$-simplices correspond to nonempty $(k+1)$-fold
-overlaps of admissible domains.
-
-\subsection{Global coherence and descent}
-
-Global coherence is equivalent to the existence of a global object descending
-from the local encodings.
-
-\begin{definition}[Global object]
-A \emph{global object} is a choice of representatives in each $Z_\alpha$
-together with compatibility on all overlaps such that all re-encoding maps
-compose consistently on the atlas nerve.
-\end{definition}
-
-Failure of global coherence is therefore a failure of descent: local data exist,
-but cannot be glued into a global object.
-
-\subsection{Obstruction types as atlas invariants}
-
-We now define precisely what is meant by an obstruction \emph{type}.
-
-\begin{definition}[Obstruction type]
-An \emph{obstruction type} is an equivalence class of failures of global descent
-that:
-\begin{enumerate}[label=(\roman*)]
-\item is invariant under admissible refinement of the cover;
-\item is invariant under admissible re-encoding;
-\item cannot be eliminated by local modification of representatives;
-\item corresponds to a distinct failure mode of the descent problem.
-\end{enumerate}
-\end{definition}
-
-Two failures of global coherence are of the same obstruction type if they define
-the same invariant class on the atlas nerve or encoding fibration.
-
-\subsection{Three invariant failure modes}
-
-Under the assumptions of local describability, overlap consistency, identity
-persistence, and finite admissibility, exactly three inequivalent obstruction
-types can arise.
-
-\begin{theorem}[Exhaustive obstruction classification]
-Any obstruction to global coherence is equivalent, under admissible refinement
-and re-encoding, to exactly one of the following:
-\begin{enumerate}[label=(\roman*)]
-\item \textbf{Circle:} a nontrivial holonomy class on a $1$-cycle of the atlas
-nerve, corresponding to path-dependent inconsistency of transport;
-\item \textbf{Lens:} a nontrivial isotropy or automorphism class of encoding
-fibers, corresponding to non-unique but consistent local lifts;
-\item \textbf{Nil:} a nontrivial complement of the encodable set
-$X_{\mathrm{enc}} \subset X$, corresponding to empty encoding fibers.
-\end{enumerate}
-No fourth inequivalent obstruction type exists.
-\end{theorem}
-
-\subsection{Interpretation of the three types}
-
-The three obstruction types correspond to distinct descent failures:
-
+\begin{definition}[Typed encoding atlas]\label{def:atlas}
+A typed encoding atlas consists of:
 \begin{itemize}
-\item Circle obstructs descent by path dependence on loops in the nerve.
-\item Lens obstructs descent by non-uniqueness of lifts even when compatibility
-holds.
-\item Nil obstructs descent by failure of existence of local lifts.
+\item upper domains $U_\alpha\subseteq X$;
+\item effective images $Z_\alpha$ and reductions
+$P_\alpha:U_\alpha\to Z_\alpha$;
+\item declared overlap domains $D_{\beta\alpha}\subseteq Z_\alpha$;
+\item partial transition maps or relations
+$f_{\beta\alpha}:D_{\beta\alpha}\rightharpoonup Z_\beta$; and
+\item equivalence relations $\simeq_\alpha$ specifying when two effective
+representatives carry the same declared content.
 \end{itemize}
-
-These failure modes are mutually irreducible: circle cannot be absorbed into
-lens, lens cannot be absorbed into nil, and nil cannot be resolved by refinement.
-
-\begin{remark}
-Formulated in this way, the classification is a theorem about the descent problem
-for the encoding atlas. It does not rely on logical case-splitting, but on the
-structure of the atlas nerve and the encoding fibration.
-\end{remark}
-
-% ============================================================
-% The following sections specialize these three obstruction types:
-% Section 4: Circle
-% Section 5: Lens
-% Section 6: Nil
-
-
-\subsection{Classification theorem}
-
-\begin{theorem}[Exhaustive obstruction classification]
-Under the assumptions of local describability, overlap consistency,
-identity persistence, and finite admissibility, any obstruction to global
-coherence must be of exactly one of the following three types:
-\begin{enumerate}[label=(\roman*)]
-\item \textbf{Circle}: loop inconsistency detected only on closed chains of
-overlapping admissible domains;
-\item \textbf{Lens}: non-uniqueness of admissible local representation without
-contradiction;
-\item \textbf{Nil}: failure of representability, i.e.\ absence of any admissible
-encoding on a region.
-\end{enumerate}
-No fourth obstruction type is possible.
-\end{theorem}
-
-\subsection{Proof sketch}
-
-We sketch the argument, emphasizing structural necessity rather than
-construction.
-
-Consider an attempt to extend local descriptions to a global encoding.
-Failure of this attempt must manifest in one of the following ways:
-
-\paragraph{Case 1: Path-dependent inconsistency.}
-Suppose that for every point there exists at least one admissible local
-description, and that pairwise overlaps are consistent, but transporting a
-coherent structure along two distinct chains of overlapping domains yields
-inequivalent results. By identity persistence, such inconsistency can only be
-detected when the two chains form a closed loop. This defines an obstruction
-visible only on closed overlap chains, which we call a \emph{circle}.
-
-\paragraph{Case 2: Redundant but consistent descriptions.}
-Suppose that for every point there exist admissible local descriptions, and
-that all overlap relations are consistent, but that the local description is
-not unique. If multiple admissible sections represent the same coherent
-structure with no canonical global choice, then global coherence fails by
-non-uniqueness rather than contradiction. This defines a \emph{lens} obstruction.
-
-\paragraph{Case 3: Failure of representability.}
-Finally, suppose that there exist regions on which no admissible local
-description applies. In this case, global coherence fails because the reduced
-description ceases to exist. This defines a \emph{nil} obstruction.
-
-These cases are mutually exclusive and collectively exhaustive. Any apparent
-alternative failure mode reduces to one of them: path dependence reduces to
-circle, non-canonical choice reduces to lens, and absence of description
-reduces to nil. Therefore no fourth obstruction type exists.
-\hfill$\square$
-
-\subsection{Irreducibility of the three types}
-
-It is important to note that the three obstruction types are irreducible to
-one another under admissible re-encoding.
-
-\begin{remark}
-A circle obstruction cannot be removed by choosing a different local
-representative, and therefore cannot be reduced to a lens. A lens obstruction
-does not involve contradiction and therefore cannot be reduced to nil. Nil
-represents the absence of description and therefore cannot be reduced to either
-circle or lens. Each obstruction type represents a distinct structural failure
-mode.
-\end{remark}
-
-\subsection{Interpretive note}
-
-The terminology \emph{circle}, \emph{lens}, and \emph{nil} is descriptive rather
-than metaphorical. Each name refers to the minimal structural pattern by which
-the corresponding obstruction is detected: closed overlap chains, asymmetric
-projection--reconstruction pairs, and empty encoding fibers, respectively.
-
-% ============================================================
-% Next section will be:
-% \section{Circle: Loop Inconsistency and Holonomy}
-% ============================================================
-\section{Circle: Loop Inconsistency and Holonomy}
-
-We now analyze the first obstruction type identified in the classification
-theorem: \emph{circle}. This obstruction captures the failure of identity
-persistence detected only on closed chains of overlapping admissible domains.
-
-\subsection{Closed overlap chains}
-
-Let $\{A_\alpha\}$ be an admissible cover, and consider a finite sequence of
-domains
-\[
-A_{\alpha_1}, A_{\alpha_2}, \ldots, A_{\alpha_n}
-\]
-such that each consecutive overlap $A_{\alpha_i\alpha_{i+1}}$ is nonempty, and
-$A_{\alpha_n\alpha_1}$ is also nonempty. Such a sequence defines a
-\emph{closed overlap chain}.
-
-On each overlap $A_{\alpha_i\alpha_{i+1}}$ there exists an admissible
-re-encoding map
-\[
-f_{\alpha_i\alpha_{i+1}} : Z_{\alpha_i} \to Z_{\alpha_{i+1}}
-\]
-relating the local descriptions.
-
-\subsection{Definition of circle}
-
-\begin{definition}[Circle obstruction]
-A \emph{circle} obstruction exists if there is a closed overlap chain such that
-the composition of admissible re-encoding maps around the loop satisfies
-\[
-f_{\alpha_n\alpha_1} \circ f_{\alpha_{n-1}\alpha_n} \circ \cdots \circ
-f_{\alpha_1\alpha_2}
-\;\not\sim\;
-\mathrm{id}_{Z_{\alpha_1}},
-\]
-where $\sim$ denotes admissible equivalence.
+All composites below are restricted to their actual domains.
 \end{definition}
 
-Thus, although each pairwise overlap is consistent, identity persistence fails
-when descriptions are transported around the loop.
+\begin{remark}
+A representative section of a surjective reduction may exist even when the
+reduction is noninjective.  Redundancy, exact upper recovery, and descent are
+therefore separate questions, as proved in Program A0.
+\end{remark}
 
-\subsection{Minimality of triple overlaps}
+\section{Three Coarse Obstruction Profiles}
 
-The circle obstruction cannot be detected on pairwise overlaps alone.
-At least three overlapping domains are required.
+\subsection{Circle: return memory}
 
-\begin{lemma}
-If all admissible overlap chains have length at most two, then any apparent
-loop inconsistency can be removed by admissible re-encoding, and no genuine
-circle obstruction exists.
-\end{lemma}
+\begin{definition}[Circle profile]\label{def:circle}
+Let
+\[
+\gamma=(\alpha_0,\alpha_1,\ldots,\alpha_n=\alpha_0)
+\]
+be a closed composable chain.  On the common domain of definition, let
+\[
+h_\gamma
+:=
+f_{\alpha_0\alpha_{n-1}}\circ\cdots\circ
+f_{\alpha_2\alpha_1}\circ f_{\alpha_1\alpha_0}.
+\]
+The chain has a \emph{circle profile} if $h_\gamma$ is not equivalent to the
+identity under the declared chart equivalence.
+\end{definition}
 
-\begin{proof}[Sketch]
-With only pairwise overlaps, any composition of re-encoding maps can be reduced
-to a single transition between two charts. Any nontrivial effect can therefore
-be absorbed into a redefinition of the local representative, reducing the
-obstruction to a lens rather than a circle.
+Circle therefore means return memory, monodromy, or holonomy.  Whether it is an
+inconsistency, a gauge transformation, or a lawful local-system action depends
+on the target category.
+
+\subsection{Lens: redundancy}
+
+\begin{definition}[Lens profile]\label{def:lens}
+A reduction $P_\alpha:U_\alpha\to Z_\alpha$ has a \emph{lens profile} on a
+set $V\subseteq Z_\alpha$ if some $z\in V$ has two distinct upper
+representatives,
+\[
+x\neq x',
+\qquad
+P_\alpha(x)=P_\alpha(x')=z,
+\]
+or, more generally, if the declared representation functor is not faithful on
+the relevant objects or arrows.
+\end{definition}
+
+Lens therefore means quotient, projective, finite-sheet, or other redundancy.
+It does not imply that a representative section is absent, that reduced
+dynamics fails to descend, or that the global topology is a lens space.
+
+\subsection{Nil: partiality or extension failure}
+
+\begin{definition}[Nil profile]\label{def:nil}
+A chart system has a \emph{nil profile} at a boundary datum $z$ if a declared
+continuation or transition required by the encoding problem has no value at
+$z$, and no extension in the declared atlas satisfies the stated compatibility
+conditions.
+\end{definition}
+
+Nil therefore means termination or anchoring of the chosen encoding problem.
+It does not imply that the upper object or upper evolution ceases to exist.
+Nor does it imply a nilpotent Lie algebra without an additional triangular
+realization.
+
+\section{Independence, Coexistence, and Invariance}
+
+\begin{proposition}[Logical independence]\label{prop:independence}
+None of the predicates in Definitions~\ref{def:circle}--\ref{def:nil}
+implies either of the other two without additional hypotheses.
+\end{proposition}
+
+\begin{proof}
+A flat complex line over $S^1$ with nontrivial monodromy has a circle profile
+but can use injective local state descriptions and a globally defined
+transport, so lens and nil need not occur.  The set map
+$\{a,b\}\to\{\ast\}$ has a lens profile but no nontrivial loop or extension
+boundary.  A partial identity map on $[0,1)$ that is not extended at $1$ has
+a nil profile but is injective and has no loop.  These examples separate the
+three predicates.
 \end{proof}
 
-This establishes that circle obstructions are intrinsically associated with
-\emph{triple overlap structure}.
-
-\subsection{Circle as shared obstruction}
-
-A crucial feature of the circle obstruction is that it is not localized within
-any single chart or encoding. Instead, it resides entirely in the compatibility
-data between encodings.
-
-\begin{remark}
-The circle obstruction is \emph{shared}: it cannot be attributed to the base
-description alone or to any internal layer alone. It arises from the failure of
-simultaneous consistency of all overlap relations around a loop.
+\begin{remark}[Coexistence]
+The profiles are not mutually exclusive.  A partial many-to-one chart system
+may also carry nontrivial return transport.  A primary CLN label can be
+assigned by a diagnostic decision tree, but the ordering of that tree is a
+convention, not a theorem of irreducibility.
 \end{remark}
 
-This shared character is what later forces any bookkeeping structure to couple
-base and internal descriptions universally.
+\begin{proposition}[First-order diagnostic completeness]
+\label{prop:firstorder}
+Fix a finite chart query and test only:
+\begin{enumerate}[label=(\roman*)]
+\item existence of every required transition;
+\item uniqueness or faithfulness of the required representation; and
+\item identity of every required closed-chain return.
+\end{enumerate}
+If a test fails, it is diagnosed respectively by nil, lens, or circle after
+any earlier failures have been recorded.  If no test fails, this diagnostic
+detects no CLN profile.
+\end{proposition}
 
-\subsection{Circle and holonomy}
+\begin{proof}
+This is the exhaustive decision tree for the three declared predicates.
+\end{proof}
 
-Although no geometric structure has been assumed, the formal pattern exhibited
-by a circle obstruction is that of \emph{holonomy}: the outcome of transporting
-identity around a loop depends on the path taken.
-
-\begin{remark}
-The appearance of holonomy-like behavior here is purely structural. It arises
-from local describability and overlap consistency together with global
-obstruction, and does not presuppose a connection, curvature, or manifold.
+\begin{remark}[No universal exhaustiveness]
+Proposition~\ref{prop:firstorder} is not a classification of all mathematical
+obstructions.  Higher Cech or gerbe descent, nonabelian coherence, analytic
+blow-up, spectral-domain failure, non-Hausdorff quotients, and other
+realization-specific phenomena require their own objects and equivalences.
+An exhaustive theorem would have to specify a category or higher category of
+encodings, its morphisms and refinements, and the full descent problem.
 \end{remark}
 
-In later papers, this structure will be shown to necessitate connection- and
-curvature-like bookkeeping when one attempts to stabilize identity persistence
-under refinement.
+\begin{definition}[Compatible re-encoding]
+Two typed atlases are compatibly re-encoded if there are chartwise
+isomorphisms $g_\alpha:Z_\alpha\to Z'_\alpha$ and corresponding upper
+isomorphisms that preserve reductions, equivalence relations, transition
+domains, and transition maps:
+\[
+g_\beta\circ f_{\beta\alpha}
+=
+f'_{\beta\alpha}\circ g_\alpha
+\]
+where both sides are defined.
+\end{definition}
 
-\subsection{Relation to other obstruction types}
-
-It is important to distinguish circle from the other obstruction types.
-
-\begin{itemize}
-\item A circle obstruction involves contradiction detected only on closed
-chains; it cannot be removed by choosing a different local representative.
-\item A lens obstruction involves non-uniqueness without contradiction; no loop
-is required.
-\item A nil obstruction involves absence of any admissible description.
-\end{itemize}
-
-\begin{remark}
-If a purported loop inconsistency can be eliminated by a redefinition of local
-representatives, then the obstruction is not a circle but a lens. Genuine circle
-obstructions are therefore precisely those that survive all admissible
-re-encodings.
-\end{remark}
-
-\subsection{Preview of consequences}
-
-The existence of circle obstructions has two immediate consequences that will
-be developed in subsequent sections:
+\begin{theorem}[Profile invariance under compatible re-encoding]
+\label{thm:invariance}
+Under a compatible re-encoding:
 \begin{enumerate}
-\item it forces any stable realization to include additional bookkeeping
-structure to track loop-dependent inconsistency;
-\item it couples base and internal descriptions, preventing their independent
-global specification.
+\item a return map changes by conjugation,
+$h'_\gamma=g_{\alpha_0}h_\gamma g_{\alpha_0}^{-1}$;
+\item reduction-fiber multiplicity and faithfulness are preserved; and
+\item the existence or nonexistence of a compatible transition extension is
+preserved.
 \end{enumerate}
-
-These consequences underpin the later emergence of geometric and gravitational
-encoding structures.
-
-% ============================================================
-% Next section will be:
-% \section{Lens: Redundancy and Non-Unique Representation}
-% ============================================================
-\section{Lens: Redundancy and Non-Unique Representation}
-
-We now analyze the second obstruction type identified in the classification
-theorem: \emph{lens}. Unlike circle, which involves contradiction detected on
-closed overlap chains, lens captures failure of global coherence through
-non-uniqueness of local representation without inconsistency.
-
-\subsection{Non-unique local sections}
-
-Consider an admissible domain $A_\alpha$ with local encoding
-\[
-\mathcal E_\alpha = (A_\alpha, Z_\alpha, E_\alpha, \ldots).
-\]
-Local describability requires the existence of at least one admissible section
-selecting a representative of coherent structure. However, admissibility does
-not require this section to be unique.
-
-\begin{definition}[Lens obstruction]
-A \emph{lens} obstruction exists if there are multiple admissible local sections
-or encodings representing the same coherent structure on a domain, such that:
-\begin{enumerate}[label=(\roman*)]
-\item all representations are mutually consistent on overlaps;
-\item no canonical global choice of representative exists;
-\item any two choices are related by admissible re-encoding.
-\end{enumerate}
-\end{definition}
-
-Thus, lens represents redundancy of description rather than contradiction.
-
-\subsection{Projection--reconstruction asymmetry}
-
-The defining structural feature of lens is an asymmetry between projection and
-reconstruction.
-
-\begin{remark}
-Lens obstructions arise whenever the reduced description involves a projection
-that forgets information, together with a reconstruction (section) that is not
-unique. Projection maps may be canonical, while reconstruction maps are
-necessarily choice-dependent.
-\end{remark}
-
-This asymmetry ensures that multiple admissible representations coexist, all
-equally valid, but none privileged.
-
-\subsection{Lens as descriptive redundancy}
-
-A lens obstruction does not indicate a failure of consistency. Instead, it
-indicates that the same coherent structure admits multiple internal
-representations.
-
-\begin{remark}
-Lens obstructions encode redundancy of description, not multiplicity of
-underlying entities. They therefore represent a structural symmetry of the
-encoding rather than a symmetry of the system being described.
-\end{remark}
-
-This distinction will later be essential for understanding gauge structure as an
-encoding phenomenon rather than a fundamental physical symmetry.
-
-\subsection{Minimality of lens}
-
-Lens obstructions can occur already on pairwise overlaps and do not require
-closed overlap chains.
-
-\begin{lemma}
-Lens obstructions can exist in the absence of circle obstructions.
-\end{lemma}
-
-\begin{proof}[Sketch]
-Non-unique local sections may exist even when all overlap transition maps are
-path-independent. In this case, redundancy persists but no loop inconsistency
-arises.
-\end{proof}
-
-This distinguishes lens sharply from circle.
-
-\subsection{Lens and irreducibility}
-
-Lens obstructions are irreducible to the other obstruction types.
-
-\begin{itemize}
-\item A lens obstruction does not involve contradiction and therefore cannot be
-reduced to a circle.
-\item A lens obstruction does not involve absence of description and therefore
-cannot be reduced to nil.
-\end{itemize}
-
-\begin{remark}
-If redundancy can be removed by a single admissible global choice, then the
-obstruction is not a genuine lens. A genuine lens exists precisely when
-redundancy is unavoidable.
-\end{remark}
-
-\subsection{Preview of consequences}
-
-The existence of lens obstructions has two key consequences that will be
-developed later:
-\begin{enumerate}
-\item it necessitates bookkeeping of descriptive redundancy across overlaps;
-\item it gives rise to gauge-like encoding structures when realizations are
-introduced.
-\end{enumerate}
-
-Lens therefore captures the structural origin of gauge freedom without invoking
-fields, connections, or group actions.
-
-% ============================================================
-% Next section will be:
-% \section{Nil: Termination of Describability}
-% ============================================================
-\section{Nil: Termination of Describability}
-
-We now analyze the third and final obstruction type identified in the
-classification theorem: \emph{nil}. Unlike circle and lens, which arise from
-inconsistencies or redundancies among admissible descriptions, nil represents
-the complete failure of local describability itself.
-
-\subsection{Absence of admissible encodings}
-
-Nil arises when the conditions for admissibility fail entirely.
-
-\begin{definition}[Nil obstruction]
-A \emph{nil} obstruction exists on a region if there is no admissible local
-encoding applicable to that region. Equivalently, the encoding fiber over that
-region is empty.
-\end{definition}
-
-Nil therefore represents not inconsistency of description, nor multiplicity of
-representation, but the absence of any reduced description.
-
-\subsection{Nil versus non-existence}
-
-It is essential to distinguish nil from ontological non-existence.
-
-\begin{remark}
-Nil does not assert that the underlying system ceases to exist. It asserts only
-that no admissible reduced description applies. The obstruction is descriptive,
-not ontological.
-\end{remark}
-
-This distinction is crucial for later interpretation of horizons, collapse, and
-singular behavior.
-
-\subsection{Structural origin of nil}
-
-Nil obstructions arise whenever the admissibility conditions themselves are
-violated, for example when:
-\begin{itemize}
-\item no local section exists;
-\item overlap consistency fails irreparably;
-\item contractivity or stability conditions break down;
-\item truncation or projection errors exceed tolerance.
-\end{itemize}
-
-These failures cannot be repaired by re-encoding or refinement.
-
-\subsection{Nil as a boundary object}
-
-Nil plays the role of a boundary in the space of admissible descriptions.
-
-\begin{remark}
-Nil corresponds to the boundary of the encoding atlas: it is the locus at which
-the atlas fails to admit any chart. In categorical terms, it acts as a zero
-object for admissible encodings.
-\end{remark}
-
-This boundary character underlies the irreversibility associated with nil.
-
-\subsection{Irreversibility and termination}
-
-Once a nil obstruction is encountered, no continuation of the reduced
-description is possible across that region.
-
-\begin{lemma}
-Nil obstructions are terminal: once encountered along a chain of admissible
-descriptions, they cannot be passed through or undone by admissible re-encoding.
-\end{lemma}
-
-\begin{proof}[Sketch]
-By definition, no admissible encoding exists in a nil region. Any attempt to
-extend a reduced description across such a region would therefore violate local
-describability.
-\end{proof}
-
-This terminal character distinguishes nil sharply from circle and lens.
-
-\subsection{Nil and kinematic termination}
-
-In the kinematic interpretation of persistence across admissible overlaps, nil
-corresponds to termination of motion or history.
-
-\begin{remark}
-In coherent kinematics, nil appears as the endpoint of worldlines, horizons of
-representability, or collapse of record persistence. These interpretations are
-derived, not assumed.
-\end{remark}
-
-\subsection{Nil and irreducibility}
-
-Nil obstructions are irreducible to the other obstruction types.
-
-\begin{itemize}
-\item Nil is not redundancy and therefore cannot be reduced to lens.
-\item Nil is not contradiction and therefore cannot be reduced to circle.
-\end{itemize}
-
-\begin{remark}
-If an apparent absence of description can be removed by refining the admissible
-cover or choosing a different encoding, then the obstruction is not nil. A
-genuine nil obstruction exists only when all admissible descriptions fail.
-\end{remark}
-
-\subsection{Preview of consequences}
-
-Nil obstructions complete the classification of failure modes of global
-coherence. Together with circle and lens, they will determine the minimal
-architectural requirements for any realization capable of supporting local
-describability, redundancy, and termination simultaneously.
-
-% ============================================================
-% Next section will be:
-% \section{Minimal Coexistence: Why Three Layers Are Required}
-% ============================================================
-% ============================================================
-\section{Minimal Coexistence: Why Three Layers Are Required}\label{sec:sec7}
-
-Having classified the three obstruction types—circle, lens, and nil—as
-inequivalent invariants of the encoding atlas, we now address the question of
-\emph{coexistence}. Specifically, we ask what minimal architectural structure is
-capable of supporting all three obstruction types simultaneously, in a stable
-and non-degenerate manner.
-
-\subsection{Structural meaning of a layer}
-
-We begin by making precise what is meant by a \emph{layer} in this context.
-
-\begin{definition}[Independent layer]
-A \emph{layer} is an independent structural carrier of encoding data such that:
-\begin{enumerate}[label=(\roman*)]
-\item it admits local sections and overlap re-encodings;
-\item its local automorphism group (lens redundancy) acts nontrivially on its
-encoding data;
-\item its transition data cannot be absorbed into the automorphism group of any
-other single layer under admissible re-encoding.
-\end{enumerate}
-\end{definition}
-
-The third condition expresses independence: loop or overlap defects associated
-with one layer cannot be reinterpreted purely as redundancy in another.
-
-\subsection{Single-layer degeneracy}
-
-We first consider the possibility that all obstruction types could be supported
-within a single layer.
-
-\begin{lemma}
-A single-layer architecture cannot support non-degenerate coexistence of circle,
-lens, and nil obstructions.
-\end{lemma}
-
-\begin{proof}[Sketch]
-In a single layer, any loop-dependent inconsistency detected on closed overlap
-chains can always be absorbed into a redefinition of local representatives,
-because the full transition structure acts within a single automorphism group.
-Thus circle obstructions reduce to lens obstructions. Alternatively, failure of
-representability collapses directly to nil. No independent circle obstruction
-can persist.
-\end{proof}
-
-This shows that one layer is insufficient.
-
-\subsection{Two-layer architectures and gauge-removability}
-
-We next consider architectures with two independent layers.
-
-\begin{lemma}
-In a two-layer architecture satisfying the independence conditions above, any
-loop obstruction is admissibly equivalent to a lens obstruction.
-\end{lemma}
-
-\begin{proof}[Sketch]
-With two layers, transition data live in a product of two automorphism groups.
-Any loop defect detected on a closed overlap chain can be decomposed into a pair
-of layer-wise transformations. Because there are only two layers, the resulting
-defect can always be absorbed into a redefinition of representatives in one
-layer relative to the other. Equivalently, the loop holonomy lies entirely within
-the combined isotropy group of the encoding fibers. Under admissible re-encoding,
-such defects reduce to non-uniqueness of representation rather than genuine
-path-dependent inconsistency.
-\end{proof}
-
-\begin{remark}
-This result does not assert that two-layer systems cannot exhibit holonomy in an
-abstract groupoid sense. It asserts that, under the MTT notion of admissible
-re-encoding and layer independence, such holonomy is not an invariant obstruction
-type and therefore does not constitute a genuine circle.
-\end{remark}
-
-Thus, two layers are insufficient to stabilize circle as an independent
-obstruction.
-
-\subsection{Tri-layer necessity}
-
-We now show that three layers suffice and are minimal.
-
-\begin{theorem}[Tri-layer minimality]
-Three independent layers are the minimal structural architecture capable of
-supporting non-degenerate coexistence of circle, lens, and nil obstructions.
-\end{theorem}
-
-\begin{proof}[Sketch]
-With three independent layers, pairwise overlaps support lens obstructions via
-layer-wise redundancy, while triple overlaps support genuine cocycle data that
-cannot be absorbed into the automorphism group of any single layer. Loop defects
-detected on three-layer overlap chains therefore survive admissible re-encoding
-as invariant circle obstructions. Nil remains possible through simultaneous
-failure of all layers. Minimality follows from the preceding lemmas.
-\end{proof}
-
-\subsection{Shared obstruction and universal coupling}
-
-A key feature of the tri-layer architecture is that the circle obstruction is
-\emph{shared} across all layers.
-
-\begin{remark}
-In a tri-layer system, the circle obstruction resides in the compatibility data
-among all three layers simultaneously. It cannot be attributed to any single
-layer and therefore couples all layers and the base description universally.
-This shared character underlies the later emergence of geometric and
-gravitational encoding structures.
-\end{remark}
-
-\subsection{Stability under refinement}
-
-Finally, we note that the tri-layer architecture is stable under admissible
-refinement.
-
-\begin{remark}
-Architectures with fewer layers fail to stabilize all three obstruction types
-under refinement, while architectures with additional layers introduce
-redundancy without generating new obstruction classes. Three layers therefore
-represent the minimal stable architecture.
-\end{remark}
-
-
-% ============================================================
-% Next section will be:
-% \section{From Tri-Layer Structure to Minimal Continuous Realization}
-% ============================================================
-% ============================================================
-\section{From Tri-Layer Structure to Minimal Continuous Realization}
-\label{sec:sec8}
-
-In this section we pass from the purely structural tri-layer result to a
-rigorous statement about minimal \emph{continuous representability}.
-To obtain a fully rigorous argument, we specify a realization class in which:
-(i) encodings are modeled by smooth local trivializations,
-(ii) overlap data defines Čech cocycles,
-(iii) circle obstructions correspond to nontrivial holonomy (curvature) classes.
-
-No claim of ontological dimensionality is made; the conclusion is a statement of
-representability up to admissible re-encoding.
-
-\subsection{Realization class and precise meaning of ``circle''}
-\label{subsec:realization-class}
-
-We fix a realization class sufficient to make the obstruction invariants
-geometric (bundle-theoretic) objects.
-
-\begin{assumption}[Smooth atlas realization]
-\label{ass:smooth-atlas}
-Let $A\subset X$ be an admissible domain. Assume that on $P(A)$ there exists a
-finite or locally finite admissible cover $\{U_\alpha\}$ such that:
-\begin{enumerate}[label=(\roman*)]
-\item each $U_\alpha$ is a smooth manifold (or smooth submanifold of a common
-ambient manifold);
-\item each encoding chart on $U_\alpha$ is a smooth local trivialization with
-transition maps $g_{\alpha\beta}$ on overlaps $U_{\alpha\beta}$;
-\item the transition maps form a Čech 1-cocycle with values in a structure group
-$G$ (possibly protocol-indexed), i.e.
-\[
-g_{\alpha\beta} g_{\beta\gamma} g_{\gamma\alpha} = e
-\quad \text{on } U_{\alpha\beta\gamma},
-\]
-up to admissible equivalence.
-\end{enumerate}
-\end{assumption}
-
-\begin{assumption}[Circle realized as nontrivial holonomy]
-\label{ass:circle-holonomy}
-Assume that, in this realization class, a circle obstruction corresponds to a
-nontrivial holonomy/curvature class of a $G$-bundle with connection on $P(A)$.
-Equivalently: there exists a principal $G$-bundle $P_G\to P(A)$ with a
-connection whose curvature is not identically zero on $P(A)$.
-\end{assumption}
-
-\begin{remark}
-Assumption~\ref{ass:circle-holonomy} is a realization hypothesis:
-it specifies how the abstract circle invariant is represented in the smooth
-realization class. It is the minimal standard way to make ``circle'' rigorous
-as a stable invariant under refinement.
-\end{remark}
-
-\subsection{Why each independent layer requires at least two continuous coordinates}
-\label{subsec:two-per-layer}
-
-We now prove a lower bound on the continuous coordinate dimension required per
-independent layer to support a stable circle obstruction in the realization
-class above.
-
-\begin{definition}[Layer carrier]
-A \emph{layer carrier} is the minimal smooth manifold factor $B$ (in a local
-product-type representation) on which one independent layer of transition data
-acts nontrivially.
-\end{definition}
-
-\begin{theorem}[No stable circle on one-dimensional layer carriers]
-\label{thm:no-circle-1d}
-Under Assumptions~\ref{ass:smooth-atlas}--\ref{ass:circle-holonomy}, a
-one-dimensional layer carrier cannot support a stable circle obstruction.
-Consequently, any independent layer carrier must satisfy $\dim B \ge 2$.
+Hence the three profile predicates are invariant.
 \end{theorem}
 
 \begin{proof}
-Let $B$ be a connected smooth 1-manifold (possibly with boundary).
-In the realization class, the circle obstruction is represented by a principal
-$G$-bundle with connection whose curvature is nonzero somewhere on the domain.
-Curvature is a horizontal $\mathfrak{g}$-valued 2-form $F\in \Omega^2(\cdot;\mathfrak g)$.
-However, on a 1-manifold $B$ one has
-\[
-\Omega^2(B) = \{0\},
-\]
-since there are no nonzero differential 2-forms on a 1-dimensional manifold.
-Therefore any connection restricted to a 1D carrier has identically vanishing
-curvature. In particular, no nontrivial curvature/holonomy class can be supported
-\emph{as a local, stable, infinitesimal invariant}. Any apparent loop effect on a
-1D carrier is necessarily global and can be absorbed into representative choice,
-hence reduces to a lens-type redundancy rather than a circle invariant in the
-sense of Assumption~\ref{ass:circle-holonomy}.
-
-Thus a one-dimensional carrier cannot realize the circle invariant as a stable
-curvature class. Therefore $\dim B\ge 2$ is necessary for an independent layer.
+The transition intertwining identities telescope around a closed chain and
+give the conjugation formula.  Bijective upper and lower re-encodings preserve
+equality and inequality within reduction fibers.  The same commuting squares
+transport an extension in either direction, so extension existence is
+preserved.
 \end{proof}
 
-\begin{remark}
-This argument is fully rigorous and uses only the standard fact that curvature is
-a 2-form and 2-forms vanish on 1D manifolds. It does not assume any specific
-dynamics.
-\end{remark}
+\section{Holonomy Is Not Curvature}
 
-\subsection{Internal dimensional lower bound for tri-layer coexistence}
-\label{subsec:internal6}
-
-We now combine tri-layer minimality (Section~\ref{sec:sec7}) with
-Theorem~\ref{thm:no-circle-1d}.
-
-\begin{theorem}[Six-dimensional internal lower bound]
-\label{thm:internal6}
-Assume tri-layer minimality holds (Section~\ref{sec:sec7}) and that each layer
-admits a smooth realization satisfying
-Assumptions~\ref{ass:smooth-atlas}--\ref{ass:circle-holonomy}.
-Then any continuous realization supporting non-degenerate coexistence of circle,
-lens, and nil requires internal dimension at least six:
+Let $\theta$ be the angular coordinate on $S^1=\mathbb R/2\pi\mathbb Z$ and
+consider the trivial complex line with connection
 \[
-\dim B_{\mathrm{internal}} \ge 3 \cdot 2 = 6.
+\nabla=d+\mathrm i a\,d\theta,
+\qquad a\in\mathbb R.
 \]
+Its curvature is
+\[
+F_\nabla=d(\mathrm i a\,d\theta)=0,
+\]
+but its holonomy around the positively oriented circle is
+\[
+\operatorname{Hol}_{S^1}(\nabla)
+=
+\exp(-2\pi\mathrm i a),
+\]
+which is nontrivial when $a\notin\mathbb Z$.
+
+\begin{theorem}[Flat circle profile]\label{thm:flat}
+A one-dimensional carrier can support nontrivial return holonomy with zero
+curvature.  Therefore nontrivial circle-profile data does not imply a
+nonzero curvature two-form or a two-dimensional carrier.
 \end{theorem}
 
 \begin{proof}
-By tri-layer minimality, three independent layers are required.
-By Theorem~\ref{thm:no-circle-1d}, each independent layer carrier has dimension
-at least 2. Independence implies these carriers contribute additively to the
-internal coordinate dimension. Hence
-\[
-\dim B_{\mathrm{internal}} \ge 2 + 2 + 2 = 6.
-\]
+The connection above is flat and has the displayed nontrivial holonomy.
 \end{proof}
 
-\subsection{Base dimension requirement as an explicit realization axiom}
-\label{subsec:base4}
+More generally, flat bundles encode representations of the fundamental group,
+while curvature controls infinitesimal holonomy~\cite{KobayashiNomizu}.  Global
+monodromy can therefore survive when curvature vanishes identically.
 
-The minimal base dimension depends on what class of kinematic persistence one
-requires. To keep this section fully rigorous without importing a separate
-dimension-selection theorem, we state the base requirement as an explicit
-realization assumption.
-
-\begin{assumption}[Four-dimensional kinematic base]
-\label{ass:base4}
-In the realization class considered in this paper, kinematic persistence is
-required in the sense of the coherent kinematics layer, and the effective base
-manifold supporting that kinematics has dimension
-\[
-\dim Y = 4.
-\]
-\end{assumption}
-
-\begin{remark}
-Assumption~\ref{ass:base4} packages the kinematic dimension-selection content of
-the kinematics program into the present paper. If a separate theorem-level
-derivation of $\dim Y=4$ is supplied elsewhere, this assumption can be replaced
-by a reference.
-\end{remark}
-
-\subsection{Minimal continuous representability: the ten-dimensional bound}
-\label{subsec:tenD}
-
-We now state and prove the dimensional representability bound.
-
-\begin{theorem}[Minimal continuous representability by a ten-dimensional space]
-\label{thm:tenD}
-Assume:
-\begin{enumerate}[label=(\roman*)]
-\item tri-layer minimality (Section~\ref{sec:sec7});
-\item the smooth atlas realization and circle-as-holonomy assumptions
-(Assumptions~\ref{ass:smooth-atlas}--\ref{ass:circle-holonomy});
-\item the four-dimensional kinematic base assumption (Assumption~\ref{ass:base4}).
-\end{enumerate}
-Then any continuous realization supporting non-degenerate coexistence of circle,
-lens, and nil obstructions is \emph{representable}, up to admissible re-encoding,
-by a configuration space of dimension at least ten:
-\[
-\dim M \;\ge\; \dim Y + \dim B_{\mathrm{internal}} \;\ge\; 4 + 6 \;=\; 10.
-\]
-Moreover, the bound is sharp in the realization class: it is achieved by a
-product-type representation
-\[
-M \simeq Y_4 \times B_1 \times B_2 \times B_3,
-\qquad \dim B_i = 2.
-\]
-\end{theorem}
-
-\begin{proof}
-By Assumption~\ref{ass:base4}, $\dim Y = 4$.
-By Theorem~\ref{thm:internal6}, $\dim B_{\mathrm{internal}}\ge 6$.
-Therefore any product-type representative has dimension at least $4+6=10$.
-
-Sharpness: choose three independent layer carriers $B_i$ each of dimension 2.
-Then $\dim(B_1\times B_2\times B_3)=6$ and hence $\dim M = 4+6=10$.
-Such a representation is admissible in the realization class by construction,
-and supports the required tri-layer obstruction structure.
-\end{proof}
-
-\begin{remark}[Representability, not ontology]
-Theorem~\ref{thm:tenD} asserts representability up to admissible re-encoding
-within the stated realization class. It does not assert that the physical world
-is fundamentally ten-dimensional.
-\end{remark}
-
-\subsection{Bundle geometry as bookkeeping (consequence, not assumption)}
-\label{subsec:bundle-bookkeeping}
-
-Finally, we record the rigorous sense in which bundle geometry is selected as a
-bookkeeping framework.
-
-\begin{corollary}[Bundle geometry is the minimal bookkeeping framework]
-\label{cor:bundle-bookkeeping}
-Under Assumptions~\ref{ass:smooth-atlas}--\ref{ass:circle-holonomy}, the data of
-local charts, overlap maps, and circle holonomy define a principal bundle with
-connection on $P(A)$, unique up to admissible equivalence on the domain.
+\begin{corollary}[When two dimensions are required]
+If a realization explicitly requires a nonzero differential two-form
+$F\in\Omega^2(B)$, then $\dim B\geq2$.
 \end{corollary}
 
 \begin{proof}
-By Assumption~\ref{ass:smooth-atlas}, the transition maps form a cocycle defining
-a principal $G$-bundle (standard Čech construction). By
-Assumption~\ref{ass:circle-holonomy}, the circle invariant is represented by a
-nontrivial connection curvature, so a connection exists on that bundle. Uniqueness
-up to admissible equivalence follows from standard gauge equivalence of cocycles
-and connections on overlaps.
+The exterior square of a vector space of dimension zero or one is zero.
 \end{proof}
 
-\begin{remark}
-This corollary makes precise that bundle geometry is not postulated: it is the
-canonical mathematical packaging of overlap consistency, redundancy, and holonomy
-once a smooth realization class is chosen.
+This corollary applies to a \emph{nonzero-curvature realization class}; it does
+not apply to the general circle profile of Definition~\ref{def:circle}.
+
+\section{Lens and Nil as Geometric Examples, Not Consequences}
+
+The names lens and nil have useful geometric models.
+
+\subsection{Lens-space model}
+
+The lens space $L(p,1)$ is the quotient $S^3/\mathbb Z_p$.  Up to orientation,
+it is also the unit-circle bundle of a complex line bundle over
+$S^2\cong\mathbb{CP}^1$ with first Chern number $p$~\cite{BoothbyWang}.
+Its finite quotient and
+projective structure make it a natural \emph{example} of lens-profile
+bookkeeping.  A many-to-one reduction does not, however, select $p$, a Chern
+class, or a lens-space total space.
+
+\subsection{Nilmanifold model}
+
+Let $H_3(\mathbb R)$ be the upper-unitriangular Heisenberg group,
+\[
+n(x,y,z)=
+\begin{pmatrix}
+1&x&z\\
+0&1&y\\
+0&0&1
+\end{pmatrix}.
+\]
+Its multiplication contains the triangular cross-term
+\[
+n(x,y,z)n(x',y',z')
+=
+n(x+x',y+y',z+z'+xy').
+\]
+Quotient by the integer lattice gives the compact Heisenberg nilmanifold
+$\mathrm{Nil}_3$, a circle bundle over $T^2$~\cite{Thurston}.  This is a
+natural model of
+triangular transport or anchoring.  Chart termination alone does not select
+this group, its lattice, or its metric.
+
+\begin{remark}[Parallel circle bundles]
+$L(p,1)$ and $\mathrm{Nil}_3$ are circle-bundle total spaces over different
+bases and with different topology.  They are not literally nested.  A string
+such as
+\[
+S^1\subset L(p,1)\subset\mathrm{Nil}_3
+\]
+is therefore not a general manifold construction.  The lawful recursive
+object is a filtration of carrier or operator data, with any global
+circle-bundle realizations supplied separately.
 \end{remark}
 
+\section{The Conditional 2+2+2 Curvature Realization}
 
-% ============================================================
-% Next section will be:
-% \section{Consequences for Encoding Classes}
-% ============================================================
-\section{Consequences for Encoding Classes}
-
-The results obtained in this work are structural and realizational, not
-phenomenological. Their significance lies in constraining the possible
-\emph{encoding classes} that can exist downstream in Modal Triplet Theory.
-In this section we summarize how the circle--lens--nil classification and the
-tri-layer minimality result determine the form of all subsequent encoding-class
-papers.
-
-\subsection{Encoding classes versus realizations}
-
-An encoding class specifies a \emph{form of description}—a language in which
-reduced structures may be expressed—while a realization specifies a concrete
-implementation of that language.
-
-\begin{remark}
-The present paper constrains encoding classes but does not select particular
-realizations. Bundle geometry, manifolds, connections, and spectral operators
-appear only when encoding classes are realized concretely.
-\end{remark}
-
-The obstruction classification therefore precedes and constrains all encoding
-papers, regardless of how they are later realized.
-
-\subsection{Gravity as kinematic consistency encoding}
-
-The circle obstruction represents loop-dependent inconsistency in identity
-persistence. Any encoding class that stabilizes identity across closed overlap
-chains must therefore introduce additional bookkeeping structure.
-
-\begin{remark}
-The encoding class commonly identified as gravity arises as the unique encoding
-that resolves circle obstructions by enforcing consistency of kinematic
-persistence across overlapping descriptions.
-\end{remark}
-
-This result does not assume geometry or field equations. It asserts only that
-some encoding of consistency is unavoidable once circle obstructions exist.
-Geometric and gravitational structures are realizations of this encoding class.
-
-\subsection{Gauge structure as redundancy encoding}
-
-Lens obstructions represent unavoidable redundancy of description.
-
-\begin{remark}
-Gauge structure arises as the encoding class that organizes and compensates for
-lens obstructions. Gauge freedom is therefore redundancy of encoding, not a
-symmetry of underlying reality.
-\end{remark}
-
-This explains the universality and unobservability of gauge degrees of freedom
-across physical theories.
-
-\subsection{Quantization as discrete constraint encoding}
-
-Nil obstructions represent termination of describability.
-
-\begin{remark}
-Discrete spectra and quantization arise as encoding responses to nil
-obstructions, in which continuous descriptions fail and only discrete,
-topologically protected structures remain admissible.
-\end{remark}
-
-Quantization is therefore an encoding constraint, not an independent postulate.
-
-\subsection{Unified and maximal encodings}
-
-Encoding classes need not exist independently. In some regimes, multiple
-obstruction types may be active simultaneously.
-
-\begin{remark}
-Encoding frameworks that simultaneously resolve circle, lens, and nil
-obstructions represent maximal or saturated encodings. Such encodings naturally
-exhibit features associated with unified frameworks, including coupled gravity,
-gauge redundancy, and quantization constraints.
-\end{remark}
-
-The existence of such encodings is constrained by the tri-layer and minimal
-dimensionality results derived above.
-
-\subsection{Relation to dark sector interpretations}
-
-The dark sector phenomena addressed elsewhere in the series are interpreted as
-regimes in which only weaker encoding classes remain admissible.
-
-\begin{itemize}
-\item Statistical encoding classes dominate when local representability fails
-but aggregate structure persists.
-\item Relational encoding classes dominate when even statistical descriptions
-fail and only transition constraints remain.
-\end{itemize}
-
-These interpretations rely directly on the obstruction classification and do not
-introduce new structure.
-
-\subsection{Position in the series}
-
-This paper completes the structural classification required to motivate all
-subsequent encoding-class papers in the Modal Triplet Theory program.
-
-\begin{remark}
-The logical sequence is as follows:
-\begin{enumerate}[label=(\roman*)]
-\item structural core establishes local describability and global obstruction;
-\item coherent kinematics defines persistence and motion;
-\item the present work classifies obstruction types and minimal coexistence;
-\item encoding-class papers address gravity, gauge, quantization, and unification;
-\item realization papers instantiate these encodings concretely.
+\begin{definition}[Independent transverse curvature realization]
+\label{def:curvatureclass}
+An independent transverse three-profile curvature realization consists of a
+smooth internal base $B$, subbundles
+$H_C,H_L,H_N\subseteq TB$, three declared line or principal bundles with
+connections $\nabla_C,\nabla_L,\nabla_N$, and their curvature two-forms
+$F_C,F_L,F_N$ such that:
+\begin{enumerate}[label=(R\arabic*)]
+\item $H_C\oplus H_L\oplus H_N$ injects as a direct subbundle of $TB$;
+\item $F_i|_{\Lambda^2H_i}$ is nonzero somewhere for
+$i\in\{C,L,N\}$; and
+\item the three factors are independent coordinate channels rather than
+three labels on one reused tangent plane.
 \end{enumerate}
+\end{definition}
+
+\begin{theorem}[Minimal nonzero-curvature realization]
+\label{thm:six}
+Every realization satisfying Definition~\ref{def:curvatureclass} obeys
+\[
+\dim B
+\geq
+\operatorname{rank}H_C+
+\operatorname{rank}H_L+
+\operatorname{rank}H_N
+\geq 2+2+2=6.
+\]
+The lower bound is sharp within this realization class.
+\end{theorem}
+
+\begin{proof}
+A nonzero alternating two-form on $H_i$ requires
+$\operatorname{rank}H_i\geq2$.  Direct-sum transversality adds the three
+ranks, proving the lower bound.  For sharpness, take
+$B=S^2_C\times S^2_L\times S^2_N$.  On each factor use the Hopf circle
+bundle with its standard connection, and let $F_i$ be the pullback of its
+nonzero curvature form to $B$.  Then $\dim B=6$ and all three conditions
+hold.
+\end{proof}
+
+\begin{remark}[What the theorem does not say]
+The theorem does not show that every CLN profile needs curvature, that the
+three channels must be transverse in nature, or that the realizing
+six-manifold is unique.  Without (R1)--(R3), dimensions need not add.  Reused,
+overlapping, quotient, or discrete data can occupy fewer independent
+coordinate directions.
 \end{remark}
 
-\subsection{Outlook}
+\section{Dimension Bookkeeping and the 4+6 Branch}
 
-By showing that exactly three obstruction types exist and that their stable
-coexistence forces a tri-layer architecture with a minimal continuous
-realization, this work removes arbitrariness from the appearance of geometric,
-gauge, and quantum structures in effective physical theories.
-
-The remaining papers in the series build upon this classification to explore
-specific encoding classes and their realizations, without revisiting the
-structural inevitabilities established here.
-
-% ============================================================
-\section{Compatibility with the Modal Triplet Theory Core}
-
-We briefly summarize how the obstruction classification developed in this work
-maps directly onto the structural objects introduced in the core of Modal Triplet
-Theory.
-
-\subsection{Encoding atlas and obstruction types}
-
-In the MTT core, admissible descriptions are organized into an encoding atlas,
-with fibers
+\begin{proposition}[Conditional dimension additivity]\label{prop:additivity}
+If a physical realization is supplied as a product
 \[
-\mathrm{Enc}(x)
+M=Y\times X
 \]
-over points $x \in X$, and overlap relations encoded by admissible re-encodings.
-Failure of global coherence corresponds to failure of descent in this atlas.
+of smooth manifolds, or as a smooth fiber bundle with base $Y$ and fiber $X$,
+then
+\[
+\dim M=\dim Y+\dim X.
+\]
+If $\dim Y=4$ and $\dim X=6$, then $\dim M=10$.
+\end{proposition}
 
-The three obstruction types classified here correspond to distinct invariant
-features of this structure:
+\begin{proof}
+For a product, $T_{(y,x)}M\cong T_yY\oplus T_xX$.  For a smooth fiber bundle,
+local trivializations give the same dimension sum.
+\end{proof}
 
+\begin{remark}[The four-dimensional base is input]
+B0 does not select $\dim Y=4$, Lorentzian signature, three spatial
+directions, or a physical time variable.  These are supplied by a later
+physical realization or selection theorem.  Consequently B0 proves no
+unconditional ten-dimensional necessity.
+\end{remark}
+
+\subsection{The world-in-world component count}
+
+Let $P$ and $I$ have rank-three tangent spaces and let
+\[
+Q_x\in\operatorname{Hom}(T_xP,T_xI)\cong\operatorname{Mat}(3,\mathbb R).
+\]
+The number $3\times3=9$ counts components of $Q_x$, not dimensions of a
+manifold product.  With inner products and positive determinant, polar
+decomposition gives locally
+\[
+\operatorname{Mat}(3,\mathbb R)
+=
+\mathfrak{so}(3)\oplus\operatorname{Sym}(3,\mathbb R),
+\qquad
+9=3+6.
+\]
+Further,
+\[
+\operatorname{Sym}(3,\mathbb R)
+=
+\mathbb RI_3\oplus\mathcal D_0\oplus\mathcal O,
+\qquad
+6=1+2+3.
+\]
+Thus the component census
+\[
+1+3\times3=(1+3)+(1+2+3)=4+6
+\]
+is exact as local linear algebra after the ordering component is supplied.
+It is not, by itself, a globalization to $Y^4\times X^6$.
+
+\subsection{The shared circle}
+
+A common $U(1)$ phase or holonomy line may be pulled through all three carrier
+lanes.  If it is the same line, it is counted once.  Treating that line as a
+bundle fiber and then adding another Cartesian circle double-counts it.
+Physical time is not identified with the compact phase circle without a
+separate noncompact lift and dynamical bridge.
+
+\section{Current MTT Interpretation}
+
+The corrected structural reading is:
+\begin{description}
+\item[Circle.] Shared phase, return memory, or holonomy.
+\item[Lens.] Finite, projective, signed-sheet, or quotient transport.
+\item[Nil.] Triangular transport, anchoring, or termination in a selected
+operator filtration.
+\end{description}
+
+This taxonomy can be represented by a rank pattern such as $1+2+3$ without
+asserting three nested manifolds.  In the current q79 program, the trace line,
+trace-zero plane, and reused rank-three carrier are a later selected carrier
+construction.  Equality of ranks does not identify that carrier with the local
+world-in-world strain space; a same-source connection and Hessian intertwiner
+is still required.
+
+The smooth model $L(3,1)\times\mathrm{Nil}_3$ remains a lawful auxiliary
+six-manifold.  It is not thereby the selected q79 Fu--Yau compactification.
+B0 supplies no theorem identifying those global spaces.
+
+\section{Consequences for Downstream Papers}
+
+\begin{enumerate}
+\item A gravity paper may use circle-profile holonomy only after it supplies a
+connection, metric, and field equation.  Holonomy alone is not Einstein
+gravity.
+\item A gauge paper may use lens-profile redundancy only after it supplies a
+group action, principal or associated bundle, connection, and dynamics.
+\item A quantization paper may use nil-profile termination only after it
+supplies an algebra, representation, spectral or integral condition, and
+physical observable map.
+\item A proto-spinor paper may use CLN as typed carrier roles.  Spinorial,
+particle, mass, and statistics claims need their separate structures.
+\item A ten-dimensional action may use $Y^4\times X^6$ as a declared
+realization.  B0 does not derive that action or its base dimension.
+\end{enumerate}
+
+\section{Scoped B0 Theorem}
+
+\begin{theorem}[Circle--lens--nil taxonomy with conditional curvature bound]
+\label{thm:scope}
+For a typed encoding atlas:
+\begin{enumerate}
+\item Definitions~\ref{def:circle}--\ref{def:nil} give three distinct coarse
+profiles: return memory, reduction redundancy, and extension failure;
+\item the profiles are logically independent, may coexist, and are invariant
+under compatible re-encoding;
+\item the three-predicate decision tree is exhaustive only for its declared
+first-order diagnostic, not for arbitrary higher descent;
+\item nontrivial holonomy can be flat and one-dimensional;
+\item if all three profiles are separately represented by nonzero curvature
+two-forms on independent transverse factors, the internal carrier has
+dimension at least six, and $2+2+2=6$ is sharp in that class; and
+\item a ten-dimensional $4+6$ realization follows only after a separate
+four-dimensional base and dimension-additive product or fiber-bundle structure
+are supplied.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Items 1--3 are Definitions~\ref{def:circle}--\ref{def:nil},
+Propositions~\ref{prop:independence}--\ref{prop:firstorder}, and
+Theorem~\ref{thm:invariance}.  Item~4 is Theorem~\ref{thm:flat}.  Item~5 is
+Theorem~\ref{thm:six}.  Item~6 is
+Proposition~\ref{prop:additivity} and its stated hypotheses.
+\end{proof}
+
+\section{Version Delta and Research Frontier}
+
+Relative to version~1, this revision:
 \begin{itemize}
-\item \textbf{Circle} corresponds to a nontrivial holonomy class on $1$-cycles of
-the atlas nerve $N$, detected as path dependence of admissible transport around
-closed overlap chains.
-\item \textbf{Lens} corresponds to nontrivial isotropy of encoding fibers
-$\mathrm{Enc}(x)$, i.e.\ multiple admissible local sections related by
-re-encoding automorphisms.
-\item \textbf{Nil} corresponds to empty encoding fibers, defining the boundary of
-the encodable region $X_{\mathrm{enc}} \subset X$.
+\item replaces ``exactly three and only three'' by a nonexhaustive typed
+taxonomy plus an explicitly bounded first-order decision tree;
+\item withdraws mutual irreducibility and tri-layer necessity as universal
+theorems;
+\item distinguishes flat monodromy from curvature and gives an explicit flat
+$S^1$ example;
+\item makes dimension additivity depend on independent transverse coordinate
+factors;
+\item retains $2+2+2=6$ only as the sharp minimum of the declared
+nonzero-curvature realization class;
+\item states that the four-dimensional base is imported, not selected;
+\item removes unconditional ten-dimensional necessity; and
+\item separates CLN carrier roles from literal lens-space, nilmanifold, product,
+or nesting claims.
 \end{itemize}
 
-These three invariants exhaust the possible failures of global descent in the
-encoding atlas.
+The next theorem target is not another dimension count.  It is a same-source
+global intertwiner from the local $1+2+3$ strain decomposition to the selected
+q79 carrier, preserving transitions, the shared line, connections, inner
+products, Hessians, and the operators used downstream.
 
-\subsection{Relation to the universal reduced relation}
-
-The universal reduced relation
-\[
-\mathcal R \subset Y \times Y
-\]
-introduced in the MTT core provides a global object encoding admissible reduced
-transitions. Circle obstructions correspond to nontrivial composition of
-$\mathcal R$ along loops in the atlas nerve, lens obstructions correspond to
-non-unique lifts of $\mathcal R$ to encoding fibers, and nil obstructions
-correspond to regions where $\mathcal R$ admits no admissible lift at all.
-
-\subsection{Role in the series}
-
-The present paper refines the core statement that no global reduced encoding
-exists by classifying \emph{how} such failure can occur. Subsequent papers in the
-series treat gravity, gauge structure, and quantization as encoding responses to
-circle, lens, and nil obstructions respectively, while realization papers
-construct explicit geometric models satisfying the representability conditions
-identified here.
-
-No additional structural assumptions beyond those of the MTT core are introduced
-in this classification.
-
-% ============================================================
-% End of main body
-% ============================================================
 \section{Conclusion}
 
-In this work we have addressed a single structural question: given local
-describability, overlap consistency, identity persistence, and the absence of a
-global reduced description, what forms of failure of global coherence are
-possible, and what minimal architectures can support them simultaneously?
+Circle, lens, and nil remain useful because they ask three different questions:
+what returns after a loop, how many representatives survive a reduction, and
+where a chosen encoding stops.  Their usefulness does not require an
+unsupported exhaustiveness theorem.
 
-We have shown that the answer is sharp. Exactly three and only three obstruction
-types exist: loop inconsistency detected on closed overlap chains (circle),
-redundancy of local representation without contradiction (lens), and termination
-of describability (nil). These obstruction types are exhaustive and mutually
-irreducible; no fourth mode of failure is compatible with the stated structural
-assumptions.
+The dimensional conclusion is likewise precise.  Three independent
+nonzero-curvature channels require at least six transverse dimensions, and
+this bound is attained.  Flat return memory can require less.  Ten dimensions
+arise when a four-dimensional physical base is separately supplied and paired
+with a six-dimensional internal realization.  This scoped result is strong
+enough to organize the later MTT program without treating taxonomy as topology
+or an input base as a derived theorem.
 
-We further demonstrated that non-degenerate coexistence of circle, lens, and nil
-requires a tri-layer architectural structure. Architectures with fewer layers
-collapse one obstruction type into another, while architectures with additional
-layers introduce redundancy without increasing structural capacity. When
-continuity and kinematic persistence are imposed as realization requirements,
-this tri-layer structure admits a minimal continuous realization equivalent, up
-to admissible re-encoding, to a ten-dimensional configuration space composed of a
-four-dimensional effective base and three independent internal layers.
+\begin{thebibliography}{9}
 
-Throughout, geometry, bundle structure, and dimensionality have not been
-assumed. Instead, they appear as minimal bookkeeping frameworks selected by the
-need to encode shared loop obstructions, redundancy, and termination
-consistently. The results therefore explain why geometric, gauge, and quantum
-structures arise so universally in effective physical theories, without
-postulating them as fundamental.
+\bibitem{A0}
+P. Nero,
+\emph{The Modal Triplet Theory Program A0: A Structural Theory of Reduced
+Description}, version 2, 2026.
 
-This paper completes the structural classification required to motivate the
-encoding-class papers that follow in the Modal Triplet Theory series. Those works
-develop gravity as a kinematic consistency encoding, gauge structure as a
-redundancy encoding, quantization as a discrete constraint encoding, and unified
-frameworks as saturated encodings, as well as concrete geometric and bundle
-realizations. No additional structural assumptions are introduced downstream.
+\bibitem{A1}
+P. Nero,
+\emph{The Modal Triplet Theory Program A1: Coherent Kinematics},
+version 2, 2026.
 
-The classification presented here establishes that the familiar architectures of
-modern theoretical physics are not arbitrary constructions, but inevitable
-responses to the coexistence of local describability and global obstruction.
+\bibitem{A2}
+P. Nero,
+\emph{The Modal Triplet Theory Program A2: Conditional Computability and
+Finite Prediction Depth}, version 2, 2026.
+
+\bibitem{KobayashiNomizu}
+S. Kobayashi and K. Nomizu,
+\emph{Foundations of Differential Geometry}, volume I,
+Wiley, 1963.
+
+\bibitem{BoothbyWang}
+W. M. Boothby and H. C. Wang,
+``On contact manifolds,''
+\emph{Annals of Mathematics} 68 (1958), 721--734.
+
+\bibitem{Thurston}
+W. P. Thurston,
+\emph{Three-Dimensional Geometry and Topology}, volume 1,
+Princeton University Press, 1997.
+
+\end{thebibliography}
 
 \end{document}

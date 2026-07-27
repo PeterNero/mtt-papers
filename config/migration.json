@@ -45,6 +45,20 @@
       "title": "The Modal Triplet Theory Program A2: Conditional Computability and Finite Prediction Depth"
     },
     {
+      "abstract": "We formulate circle, lens, and nil (CLN) as three coarse, typed profiles of an encoding atlas rather than as an exhaustive list of all possible descent obstructions. Circle records nontrivial return transport around a composable loop; lens records nonfaithfulness or redundancy of a reduction; nil records failure of a declared chart or transition to extend. These predicates concern different mathematical data, can occur independently or together, and are invariant under suitably compatible re-encoding. They do not by themselves imply a literal circle, lens-space, or nilmanifold factor. We distinguish holonomy from curvature by exhibiting a flat connection on S1 with nontrivial holonomy. A six-dimensional lower bound follows only in the restricted realization class where three profiles are represented by nonzero curvature two-forms on independent transverse coordinate factors: each factor then has dimension at least two, giving 2+2+2=6. If a separate four-dimensional physical base is supplied and dimensions add, the familiar 4+6=10 realization follows; neither the four-dimensional base nor ten-dimensional necessity is selected by B0. The shared circle is common phase or holonomy data and is counted once.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2",
+      "path": "papers/the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B0__Why_Description_Forces_Circle__Lens__and_Nil",
+      "superseded_project": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B0__Why_Description_Forces_Circle__Lens__and_Nil",
+      "title": "The Modal Triplet Theory Program B0: Circle-Lens-Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations"
+    },
+    {
       "abstract": "We apply the corrected FP–I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. In the q79 realization the 1<2<3 flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
       "authors": [
         "Peter Nero"
