@@ -1,6 +1,6 @@
 # MTT Paper Catalog
 
-Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **38**.
+Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **39**.
 
 The list is alphabetical and intentionally has no topical grouping.
 
@@ -111,7 +111,7 @@ The list is alphabetical and intentionally has no topical grouping.
 | The Book on Modal Triplet Theory A Typed Interpretive Overview of the Current Program What is proved, reconstructed, calibrated, and still open | v10 | [v9.0](https://zenodo.org/records/18268250) | [TeX](papers/the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793/main.tex) / [Markdown](papers/the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793/paper.md) |
 | The Central Circle: Inertia, Mass, Gravity, and Time as Shared Coherence Bookkeeping in Modal Triplet Theory | v1.0 | [v1.0](https://zenodo.org/records/18283408) | [TeX](papers/the-central-circle-inertia-mass-gravity-and-time-as-sha-5faa2369/main.tex) / [Markdown](papers/the-central-circle-inertia-mass-gravity-and-time-as-sha-5faa2369/paper.md) |
 | The Modal Triplet Theory Program A0: A Structural Theory of Reduced Description | v2 | [v1.0](https://zenodo.org/records/18354784) | [TeX](papers/the-modal-triplet-theory-program-a0-a-structural-theory-bebae240/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-a0-a-structural-theory-bebae240/paper.md) |
-| The Modal Triplet Theory Program A1: Coherent Kinematics | v1.0 | [v1.0](https://zenodo.org/records/18354943) | [TeX](papers/the-modal-triplet-theory-program-a1-coherent-kinematics/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-a1-coherent-kinematics/paper.md) |
+| The Modal Triplet Theory Program A1: Coherent Kinematics | v2 | [v1.0](https://zenodo.org/records/18354943) | [TeX](papers/the-modal-triplet-theory-program-a1-coherent-kinematics/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-a1-coherent-kinematics/paper.md) |
 | The Modal Triplet Theory Program A2: Computation and Predictive Limits in the Modal Triplet Theory Program | v1.0 | [v1.0](https://zenodo.org/records/18354966) | [TeX](papers/the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad/paper.md) |
 | The Modal Triplet Theory Program B0: Why Description Forces Circle, Lens, and Nil and Why the Minimal Continuous Realization Is Ten-Dimensional | v1.0 | [v1.0](https://zenodo.org/records/18354990) | [TeX](papers/the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2/paper.md) |
 | The Modal Triplet Theory Program B1: Gravity as Kinematic Consistency Encoding in the Modal Triplet Theory Program | v1.0 | [v1.0](https://zenodo.org/records/18355020) | [TeX](papers/the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38/paper.md) |
