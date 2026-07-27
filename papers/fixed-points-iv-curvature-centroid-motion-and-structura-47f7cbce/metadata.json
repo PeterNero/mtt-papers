@@ -38,7 +38,7 @@
   "release_state": "zenodo_released",
   "revision": {
     "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_IV_V4_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "e66f94fe3bc65a10071fce29c95c9c1fe13e245a31a649d8a251ad67756ac359",
+    "revision_evidence_sha256": "fe8bec06e6028cb8e1ef49ae30a3c622c684e5da3b106385bf14663a107bf456",
     "selected_revision": true,
     "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v3"
   },

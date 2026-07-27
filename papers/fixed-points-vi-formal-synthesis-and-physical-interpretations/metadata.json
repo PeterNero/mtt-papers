@@ -38,7 +38,7 @@
   "release_state": "zenodo_released",
   "revision": {
     "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_VI_V4_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "a5823073a6e49ea2fb4251d7a1e3b7ff3a3a315c3586a160a302a58c98cf6f48",
+    "revision_evidence_sha256": "31997381bb1796b4fbd1ebed6048226ba10e31de22def03ed34c5dcb02006d13",
     "selected_revision": true,
     "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v3"
   },

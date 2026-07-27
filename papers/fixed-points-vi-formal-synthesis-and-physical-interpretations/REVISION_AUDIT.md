@@ -69,18 +69,18 @@ equivalence claim is promoted.
 
 ## Resulting series-level achievement
 
-FP VI v4 consolidates, without reopening, the corrected achievements of FP
+FP VI v5 consolidates, without reopening, the corrected achievements of FP
 I–V: projected fixed-point existence under explicit compactness hypotheses,
 strict-Lyapunov equilibrium promotion, joint-mode stability and disturbance
 floors, curved-cluster persistence and leakage, intrinsic modulation, frozen
-linear covariance/correlation, and admissibility exit diagnostics. It gives a
-precise list of the constructive bridges still required for a physical theory.
+linear covariance/correlation, and admissibility exit diagnostics. Its separate
+downstream ledger records the current scoped q79 geometry, operational QM, and
+QFT achievements without turning them into FP conclusions. It gives a precise
+list of the constructive bridges still required for a physical theory.
 
 ## Validation
 
-- FP I through FP VI permanent theorem audits pass.
-- The FP VI migration and verifier scripts pass Python syntax validation.
-- TeX environment nesting passes.
-- PDF compilation remains blocked by the previously identified local MiKTeX
-  dependency `amsthm.sty`; this is an environment issue rather than a detected
-  FP VI source error.
+- The canonical `mtt-qm-source-proof` verifier passes at commit `1615da7`.
+- The 139-paper repository verifier passes after Markdown and hash regeneration.
+- Three `pdflatex` passes compile FP VI v5 with resolved citations and
+  cross-references.

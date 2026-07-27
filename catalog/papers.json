@@ -3138,7 +3138,7 @@
       "release_state": "zenodo_released",
       "revision": {
         "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_II_V3_REVISION_AUDIT.md",
-        "revision_evidence_sha256": "9f9d7e18b24c843b04a98bf8a0d8b134decb1a5191c0070f12b10c92f8ed9f99",
+        "revision_evidence_sha256": "4c3f8c9fcdcd7905145c99c6be9ffcc2640bd586894c353811a3f46b8d26e892",
         "selected_revision": true,
         "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v2"
       },
@@ -3294,7 +3294,7 @@
       "release_state": "zenodo_released",
       "revision": {
         "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_IV_V4_REVISION_AUDIT.md",
-        "revision_evidence_sha256": "e66f94fe3bc65a10071fce29c95c9c1fe13e245a31a649d8a251ad67756ac359",
+        "revision_evidence_sha256": "fe8bec06e6028cb8e1ef49ae30a3c622c684e5da3b106385bf14663a107bf456",
         "selected_revision": true,
         "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v3"
       },
@@ -3450,7 +3450,7 @@
       "release_state": "zenodo_released",
       "revision": {
         "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_VI_V4_REVISION_AUDIT.md",
-        "revision_evidence_sha256": "a5823073a6e49ea2fb4251d7a1e3b7ff3a3a315c3586a160a302a58c98cf6f48",
+        "revision_evidence_sha256": "31997381bb1796b4fbd1ebed6048226ba10e31de22def03ed34c5dcb02006d13",
         "selected_revision": true,
         "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v3"
       },

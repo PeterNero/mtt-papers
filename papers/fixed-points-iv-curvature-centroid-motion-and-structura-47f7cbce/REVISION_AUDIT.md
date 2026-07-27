@@ -59,18 +59,16 @@ The update also corrects two TeX transcription errors in the leakage formulas:
 
 ## Resulting scope
 
-FP IV v4 proves perturbative persistence of the selected low spectral cluster,
+FP IV v5 proves perturbative persistence of the selected low spectral cluster,
 quantifies curvature-induced leakage when the old projector is retained, and
 gives intrinsic first-order centroid modulation for the gradient-flow model.
-It also supplies correctly scoped interaction and transition theorems. It does
-not claim that curvature, overlap, or barrier exit by itself selects a physical
-post-transition state.
+It additionally proves the exact projective-transport and
+compression/Feshbach/shorted-Hessian boundary for supplied source data. It does
+not claim that the finite presentation selects the physical q79 endpoint,
+Hessian, or post-transition state.
 
 ## Validation
 
-- FP I through FP IV permanent theorem audits pass.
-- The FP IV migration and verifier scripts pass Python syntax validation.
-- TeX environment nesting passes.
-- PDF compilation remains blocked by the previously identified local MiKTeX
-  dependency `amsthm.sty`; this is an environment issue rather than a detected
-  FP IV source error.
+- The canonical `mtt-qm-source-proof` verifier passes at commit `1615da7`.
+- The 139-paper repository verifier passes after Markdown and hash regeneration.
+- Two `pdflatex` passes compile FP IV v5 with resolved citations and references.

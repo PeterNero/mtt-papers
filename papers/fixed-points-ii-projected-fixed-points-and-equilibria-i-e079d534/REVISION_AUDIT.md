@@ -53,8 +53,18 @@ scope correction at the q79 realization boundary.
 
 ## Resulting scope
 
-FP II v3 is a conditional Riemannian control-model specialization of FP I. It
+FP II v4 is a conditional Riemannian control-model specialization of FP I. It
 proves projected stabilization-step fixed-point existence and coherent
 uniqueness under explicit hypotheses. Equilibrium promotion requires the strict
-Lyapunov identity. It does not select the physical MTT topology, prove
-Lorentzian dynamics, or derive coherent contraction from internal gaps.
+Lyapunov identity. Its q79 realization now places the `1<2<3` flag on an
+external lane factor and keeps the shared flat line, post-projection 27-state
+algebra, and nonlinear strain quotient correctly typed. It does not select the
+physical HYM endpoints or action, prove Lorentzian dynamics, or derive coherent
+contraction from internal gaps.
+
+## Validation
+
+- The canonical `mtt-qm-source-proof` verifier passes at commit `1615da7`.
+- The 139-paper repository verifier passes after Markdown and hash regeneration.
+- `pdflatex`, `bibtex`, and two final `pdflatex` passes compile FP II v4 with
+  resolved citations and references.
