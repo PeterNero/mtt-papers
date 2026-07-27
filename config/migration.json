@@ -168,6 +168,20 @@
       "title": "The Modal Triplet Theory Program D1: A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract"
     },
     {
+      "abstract": "This paper is the organizational roadmap for Modal Triplet Theory (MTT). It does not add a new physical derivation. It fixes the types, dependency order, and proof tiers needed to read the corpus without promoting analogies or target-compatible reconstructions into source theorems. A projection, a representative section, an exact upper decoder, autonomous reduced evolution, and effective-state merger solve different mathematical problems. Ordinary noninjectivity does not remove a right inverse; autonomous descent instead requires preservation of projection fibers. For physical ten-dimensional realizations we adopt the canonical convention pi:M10 -> Y4 with six-dimensional fiber X6. The modal triplet is represented by typed vertical bundles, operators, and projectors. It is not three extra coordinate factors. A compact shared circle is line-bundle phase or holonomy data and is not Lorentzian time or a seventh internal coordinate. Circle-Lens-Nil is retained as a useful obstruction taxonomy, not an exhaustive theorem forcing unique gravity, gauge, and quantum responses. We prove the corresponding conditional 4+6 realization statement and state the exact limits of that result. The roadmap classifies relations to quantum mechanics, quantum field theory, general relativity, the Standard Model, strings, quantum gravity, and AQFT by what is typed, reconstructed, selected, calibrated, or still open. Failure of one controlled chart means that chart has lost its certified domain; it does not imply that every mathematical or physical description has ceased to exist. Paper-level status is a dated snapshot, while the current A/B ledger and selected source hashes remain authoritative.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v12",
+      "date": "July 2026",
+      "paper_id": "modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed",
+      "path": "papers/modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "1 Core & Encodings/_work/Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11",
+      "superseded_project": "1 Core & Encodings/_work/Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11",
+      "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description: A Typed and Tiered Corpus Roadmap"
+    },
+    {
       "abstract": "We apply the corrected FP–I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. In the q79 realization the 1<2<3 flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
       "authors": [
         "Peter Nero"

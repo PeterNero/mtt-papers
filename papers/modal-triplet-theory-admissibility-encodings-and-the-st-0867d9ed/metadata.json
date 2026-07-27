@@ -1,12 +1,12 @@
 {
-  "abstract": "Modal Triplet Theory (MTT) is a framework for determining when and how physical description is possible. Rather than postulating a single fundamental encoding, MTT identifies admissibility conditions under which stable observables, effective dynamics, and probabilistic structure exist, and shows that many familiar physical frameworks arise as optimized encodings valid within specific admissible regimes. This paper provides a roadmap and dictionary for the MTT corpus. We define the core assumptions and objects, summarize the universal theorems on existence and robustness, distinguish between primary encodings and reconstruction results, and clarify the role of boundary regimes where physical description fails. No new derivations are presented; the purpose is organizational and conceptual, providing a unified map of results already established across the literature.",
+  "abstract": "This paper is the organizational roadmap for Modal Triplet Theory (MTT). It does not add a new physical derivation. It fixes the types, dependency order, and proof tiers needed to read the corpus without promoting analogies or target-compatible reconstructions into source theorems. A projection, a representative section, an exact upper decoder, autonomous reduced evolution, and effective-state merger solve different mathematical problems. Ordinary noninjectivity does not remove a right inverse; autonomous descent instead requires preservation of projection fibers. For physical ten-dimensional realizations we adopt the canonical convention pi:M10 -> Y4 with six-dimensional fiber X6. The modal triplet is represented by typed vertical bundles, operators, and projectors. It is not three extra coordinate factors. A compact shared circle is line-bundle phase or holonomy data and is not Lorentzian time or a seventh internal coordinate. Circle-Lens-Nil is retained as a useful obstruction taxonomy, not an exhaustive theorem forcing unique gravity, gauge, and quantum responses. We prove the corresponding conditional 4+6 realization statement and state the exact limits of that result. The roadmap classifies relations to quantum mechanics, quantum field theory, general relativity, the Standard Model, strings, quantum gravity, and AQFT by what is typed, reconstructed, selected, calibrated, or still open. Failure of one controlled chart means that chart has lost its certified domain; it does not imply that every mathematical or physical description has ceased to exist. Paper-level status is a dated snapshot, while the current A/B ledger and selected source hashes remain authoritative.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v11",
-  "date": "January 2026",
+  "current_version": "v12",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262454",
     "created": "2026-04-12T11:01:16.239124+00:00",
@@ -32,25 +32,33 @@
     "updated": "2026-04-12T11:01:16.827487+00:00",
     "version": "v11.0"
   },
-  "main_tex_sha256": "05123cdde5dcea6de34752d82562c478958429d9b8ea5c4449ff021f64488de2",
+  "main_tex_sha256": "698ec706e1d9ae9e1774e4901595d1dd9f60f407d9d3579de637f2d07f04784b",
   "paper_id": "modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed",
-  "paper_md_sha256": "18f013db2061368a1bb22f4d8f451a78e43e29f0bf4063214fc335ee9717ac71",
+  "paper_md_sha256": "18a54e5724d00537a451d1c083d6d5077876ba61970ca412d6ed06fb3485e86e",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "69f6af047a12efbb6be4d2e68947d2c73d24528708aef86788e4496456b76e67",
+    "selected_revision": true,
+    "superseded_source_path": "1 Core & Encodings/_work/Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 38518,
+      "bytes": 38830,
       "path": "main.bib",
-      "sha256": "792604f625b505575b5b19914fd6f12e7434e62dc7e787d01765db4ef33599d8"
+      "sha256": "a38a9b989925483bd05866dee4cdcc359608f36b30ee5b1340078d3715d8c4dc"
     },
     {
-      "bytes": 94222,
+      "bytes": 373717,
+      "path": "main.pdf",
+      "sha256": "1279eb5d3b461388b743895162a82100afe978a85f64ac6f9db9f372b705e0d2"
+    },
+    {
+      "bytes": 28721,
       "path": "main.tex",
-      "sha256": "05123cdde5dcea6de34752d82562c478958429d9b8ea5c4449ff021f64488de2"
+      "sha256": "698ec706e1d9ae9e1774e4901595d1dd9f60f407d9d3579de637f2d07f04784b"
     },
     {
       "bytes": 92730,
@@ -68,6 +76,11 @@
       "sha256": "7e4ed114d64deccecb0cb22cbae32b8194e89e11183ce15c974a0503e8d99e83"
     },
     {
+      "bytes": 6830,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "69f6af047a12efbb6be4d2e68947d2c73d24528708aef86788e4496456b76e67"
+    },
+    {
       "bytes": 4186,
       "path": "series.sty",
       "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
@@ -76,9 +89,9 @@
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11"
   },
-  "source_tree_sha256": "3f65f5dec24e76b0beb47194da746ac9b11e516480b4b155255f43c67009e362",
-  "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description",
-  "version_relation": "matches_latest_release",
+  "source_tree_sha256": "fe8932bbdb5e63b2a39644cf5c6eaf4e91baff3a2a0b594c8417d0c505956164",
+  "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description: A Typed and Tiered Corpus Roadmap",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18262454",

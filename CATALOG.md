@@ -1,6 +1,6 @@
 # MTT Paper Catalog
 
-Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **48**.
+Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **49**.
 
 The list is alphabetical and intentionally has no topical grouping.
 
@@ -73,7 +73,7 @@ The list is alphabetical and intentionally has no topical grouping.
 | Modal Fixed Points, Bell’s Beables, and the Limits of Factorization: A Local 10D Ontology with Operational No-Signaling | v1.0 | [v1.0](https://zenodo.org/records/17076301) | [TeX](papers/modal-fixed-points-bell-s-beables-and-the-limits-of-fac-59a69f5c/main.tex) / [Markdown](papers/modal-fixed-points-bell-s-beables-and-the-limits-of-fac-59a69f5c/paper.md) |
 | Modal Triplet Theory and Asymptotic Safety Asymptotic Safety as the Controlled FRG Shadow of the Coherent-Sector UV Endpoint | v1.0 | [v1.0](https://zenodo.org/records/18261530) | [TeX](papers/modal-triplet-theory-and-asymptotic-safety-asymptotic-s-dc3ce0c2/main.tex) / [Markdown](papers/modal-triplet-theory-and-asymptotic-safety-asymptotic-s-dc3ce0c2/paper.md) |
 | Modal Triplet Theory: A Typed Relationship Atlas Reconstructions, Embeddings, Reductions, and Open Bridges | v3 | [v2.0](https://zenodo.org/records/18206006) | [TeX](papers/modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731/main.tex) / [Markdown](papers/modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731/paper.md) |
-| Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description | v11 | [v11.0](https://zenodo.org/records/19535807) | [TeX](papers/modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed/main.tex) / [Markdown](papers/modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed/paper.md) |
+| Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description: A Typed and Tiered Corpus Roadmap | v12 | [v11.0](https://zenodo.org/records/19535807) | [TeX](papers/modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed/main.tex) / [Markdown](papers/modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed/paper.md) |
 | Modal Triplet Theory: Foundations | v8 | [v6.0](https://zenodo.org/records/18268125) | [TeX](papers/modal-triplet-theory-foundations/main.tex) / [Markdown](papers/modal-triplet-theory-foundations/paper.md) |
 | Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity | v4 | [v4.0](https://zenodo.org/records/18329495) | [TeX](papers/modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0/main.tex) / [Markdown](papers/modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0/paper.md) |
 | Modal Triplet Theory: From MTT to Calabi–Yau Compactifications: Existence, Compatibility, and Phenomenology | v1.0 | [v1.0](https://zenodo.org/records/17071247) | [TeX](papers/modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d/main.tex) / [Markdown](papers/modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d/paper.md) |
