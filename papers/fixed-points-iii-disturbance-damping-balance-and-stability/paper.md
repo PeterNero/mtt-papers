@@ -7,7 +7,7 @@ bibliography:
 - refs.bib
 current_version: v4
 date: July 2026
-generated_from_main_tex_sha256: bf98d12988915667364c8dd5f3a8b44466202b89fc8d94dc400c1238b22ab5eb
+generated_from_main_tex_sha256: c9c404e85c420a04c41fc0b527162f1f34643c2fbfbb5f365b87921040188f9b
 paper_id: fixed-points-iii-disturbance-damping-balance-and-stability
 release_state: zenodo_released
 released_version: v2.0
@@ -40,7 +40,7 @@ Coherent disturbances, nonlinear invariant laws, and physical stochastic interpr
 
 We use the corrected FP–I/II control framework. The compact internal space carries strongly commuting nonnegative self-adjoint operators $`A_1,A_2,A_3`$ on one common Hilbert space. Their joint harmonic projector is $`P`$, with $`Q=I-P`$. All stability results below concern $`Q\Psi`$ unless coherent forcing is explicitly introduced. The stabilization parameter is not physical Lorentzian time.
 
-Deterministic fixed points of a time-step map and stochastic invariant measures are different objects. Existence of the former is inherited from FP–I/II under their invariant-set and compactness/condensing hypotheses. Existence of the latter requires a Markov/Feller and tightness argument stated separately below.
+Deterministic fixed points of a time-step map and stochastic invariant measures are different objects. Existence of the former is inherited from FP–I/II under their invariant-set and compactness/condensing hypotheses. Existence of the latter requires a Markov/Feller and tightness argument stated separately below. For analytic-semigroup and dissipative-flow background, see ; for stochastic evolution and exact Ornstein–Uhlenbeck processes, see . The companion analytic framework is .
 
 # Joint modal decomposition
 
@@ -342,6 +342,6 @@ The same bound is uniform for a smoothly base-dependent family remaining in $`\m
 
 <div class="proof">
 
-*Proof.* The first positive eigenvalue varies continuously on this compact metric family and is positive for every compact connected fiber, so it attains a positive minimum. ◻
+*Proof.* The first positive eigenvalue varies continuously on this compact metric family and is positive for every compact connected fiber, so it attains a positive minimum; compare the spectral-geometric background in . ◻
 
 </div>

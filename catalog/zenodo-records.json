@@ -2,6 +2,29 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.16948748",
+      "created": "2026-07-28T15:24:04.656341+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21649308",
+      "files": [
+        {
+          "checksum": "md5:36e4acc815e929b223099d9ff7c48344",
+          "content_url": "https://zenodo.org/api/records/21649308/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 446335
+        }
+      ],
+      "id": "21649308",
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21649308",
+      "resource_type": "publication",
+      "title": "Fixed Points I: Fixed Points over Multi\u2013Bundle Manifolds",
+      "updated": "2026-07-28T15:24:05.073766+00:00",
+      "version": "v6"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18262454",
       "created": "2026-04-12T11:01:16.239124+00:00",
       "creators": [
@@ -2483,29 +2506,6 @@
       "resource_type": "publication",
       "title": "Fixed Points II: Fixed Points in a 10D Modal Model",
       "updated": "2026-01-09T21:37:42.260207+00:00",
-      "version": "v2.0"
-    },
-    {
-      "concept_doi": "10.5281/zenodo.16948748",
-      "created": "2026-01-09T21:29:28.858607+00:00",
-      "creators": [
-        "Nero, Peter"
-      ],
-      "doi": "10.5281/zenodo.18202884",
-      "files": [
-        {
-          "checksum": "md5:38901413b1d414e5d408968322711f51",
-          "content_url": "https://zenodo.org/api/records/18202884/files/Fixed_Points_I__Fixed_Points_over_Multi_Bundle_Manifolds_v5%20(1).pdf/content",
-          "key": "Fixed_Points_I__Fixed_Points_over_Multi_Bundle_Manifolds_v5 (1).pdf",
-          "size": 378792
-        }
-      ],
-      "id": "18202884",
-      "publication_date": "2026-01-09",
-      "record_url": "https://zenodo.org/records/18202884",
-      "resource_type": "publication",
-      "title": "Fixed Points I: Fixed Points over Multi\u2013Bundle Manifolds",
-      "updated": "2026-01-09T21:29:29.357820+00:00",
       "version": "v2.0"
     },
     {

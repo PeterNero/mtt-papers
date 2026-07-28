@@ -7,7 +7,7 @@ bibliography:
 - references.bib
 current_version: v4
 date: July 2026
-generated_from_main_tex_sha256: 35f2c2747373e0b701538743a13eb82c020e0e01eeea7851e21bd83611fdf964
+generated_from_main_tex_sha256: 886337d171ca309ebce8913f4515e23ecd3aae126d87d0ea029bd5a143bdcf00
 paper_id: fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534
 release_state: zenodo_released
 released_version: v2.0
@@ -477,7 +477,13 @@ For each $`n`$, let $`A_n(y)\ge0`$ be the nonnegative vertical operator defined 
 ``` math
 \Pi_n(y) = \frac{1}{2\pi i}\int_\Gamma (z-A_n(y))^{-1}\,dz.
 ```
-Strong commutation gives the joint projector $`\Pi_{\mathrm{coh}}(y)=\Pi_1(y)\Pi_2(y)\Pi_3(y)`$, with $`\|\Pi_{\mathrm{coh}}\|_{\ensuremath{L^{2}}\to\ensuremath{L^{2}}}\le 1`$. Differentiating with respect to a base coordinate $`y^\alpha`$ gives
+Strong commutation gives the joint projector
+``` math
+\Pi_{\mathrm{coh}}(y)=\Pi_1(y)\Pi_2(y)\Pi_3(y),
+\qquad
+\|\Pi_{\mathrm{coh}}\|_{\ensuremath{L^{2}}\to\ensuremath{L^{2}}}\le 1.
+```
+Differentiating with respect to a base coordinate $`y^\alpha`$ gives
 ``` math
 \partial_\alpha \Pi_n(y)
 =\frac{1}{2\pi i}\int_\Gamma (z-A_n(y))^{-1}\,(\partial_\alpha A_n(y))\,(z-A_n(y))^{-1}\,dz,

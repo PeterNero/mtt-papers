@@ -5,7 +5,7 @@ author:
 - Peter Nero
 current_version: v5
 date: July 2026
-generated_from_main_tex_sha256: 8831c511e66cbc05c4d017941ae4f71118f13e9bf7f085543040f3786fe9bdc2
+generated_from_main_tex_sha256: 99056c23cd96f8a7ec1268117b81463376d7819c2669b3e6ed42a55d0db306ef
 paper_id: fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce
 release_state: zenodo_released
 released_version: v2.0
@@ -38,7 +38,7 @@ The selected q79 HYM endpoints, action, physical Hessian and finite subspace rem
 
 We use the corrected FP–I/II Riemannian control geometry, joint internal operators, and projected stabilization flow. The projector $`P`$ below is the unperturbed joint harmonic projector and $`Q=I-P`$. FP–III supplies separate deterministic and stochastic disturbance bounds. No statement here identifies the stabilization parameter with physical Lorentzian time.
 
-Existence of a projected step fixed point is inherited only after the corrected Schauder/Darbo hypotheses are verified. Promotion to a full equilibrium uses the strict Lyapunov identity of FP–II.
+Existence of a projected step fixed point requires the corrected invariant-set conditions and the stated Schauder or Darbo hypotheses. Promotion to a full equilibrium uses the strict Lyapunov identity of FP–II.
 
 # Curved Laplace-type operator
 

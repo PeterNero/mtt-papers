@@ -14,13 +14,13 @@ date: July 2026
 generated_from_main_tex_sha256: 82cd4c9064a42306bf80185a6259d6b86e111bb251fa625c7cb79079dc2715a2
 paper_id: fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce
 release_state: zenodo_released
-released_version: v2.0
+released_version: v6
 title: |
   Fixed Points I: Fixed Points over Multi–Bundle Manifolds  
   A conditional functional-analytic framework with spectral-bundle projections
-zenodo_doi: 10.5281/zenodo.18202884
-zenodo_record_id: 18202884
-zenodo_url: "https://zenodo.org/records/18202884"
+zenodo_doi: 10.5281/zenodo.21649308
+zenodo_record_id: 21649308
+zenodo_url: "https://zenodo.org/records/21649308"
 ---
 
 *Part I of VI in the Fixed Point series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*

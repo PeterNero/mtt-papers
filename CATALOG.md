@@ -1,6 +1,6 @@
 # MTT Paper Catalog
 
-Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **51**.
+Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **50**.
 
 The list is alphabetical and intentionally has no topical grouping.
 
@@ -51,7 +51,7 @@ The list is alphabetical and intentionally has no topical grouping.
 | Fermions in Loop Quantum Gravity from Modal Triplet Theory: Coherent Compression, Berry Terms, and Absence of Doubling | v1.0 | [v1.0](https://zenodo.org/records/18261946) | [TeX](papers/fermions-in-loop-quantum-gravity-from-modal-triplet-the-c9d451aa/main.tex) / [Markdown](papers/fermions-in-loop-quantum-gravity-from-modal-triplet-the-c9d451aa/paper.md) |
 | Finite Coherent Projection in Modal Triplet Theory A Common Architecture for Duality, Gauge, Gravity, Quantization, Entanglement, and Measurement | v2 | not matched | [TeX](papers/finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb/main.tex) / [Markdown](papers/finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb/paper.md) |
 | Finite-Time Scattering and S-Matrix Deltas as Asymptotic Bookkeeping Limits Energy–Momentum Conservation Deltas from Admissible Transition Windows | unversioned | not matched | [TeX](papers/finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c/main.tex) / [Markdown](papers/finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c/paper.md) |
-| Fixed Points I: Fixed Points over Multi–Bundle Manifolds A conditional functional-analytic framework with spectral-bundle projections | v6 | [v2.0](https://zenodo.org/records/18202884) | [TeX](papers/fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce/main.tex) / [Markdown](papers/fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce/paper.md) |
+| Fixed Points I: Fixed Points over Multi–Bundle Manifolds A conditional functional-analytic framework with spectral-bundle projections | v6 | [v6](https://zenodo.org/records/21649308) | [TeX](papers/fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce/main.tex) / [Markdown](papers/fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce/paper.md) |
 | Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model | v4 | [v2.0](https://zenodo.org/records/18202914) | [TeX](papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/main.tex) / [Markdown](papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/paper.md) |
 | Fixed Points III: Disturbance–Damping Balance and Stability | v4 | [v2.0](https://zenodo.org/records/18202941) | [TeX](papers/fixed-points-iii-disturbance-damping-balance-and-stability/main.tex) / [Markdown](papers/fixed-points-iii-disturbance-damping-balance-and-stability/paper.md) |
 | Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions | v5 | [v2.0](https://zenodo.org/records/18202984) | [TeX](papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce/main.tex) / [Markdown](papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce/paper.md) |

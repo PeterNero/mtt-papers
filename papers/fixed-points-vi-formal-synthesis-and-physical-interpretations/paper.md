@@ -5,7 +5,7 @@ author:
 - Peter Nero
 current_version: v5
 date: July 2026
-generated_from_main_tex_sha256: 157290d65e16bd049602c487b8a0dd76a39485bf2b5df7a3f9423d6d9f3fdcae
+generated_from_main_tex_sha256: c3addd0db3ff1fdd7dfc9c90762f20ef8e80aa085e439a5de38895962fbec7e8
 paper_id: fixed-points-vi-formal-synthesis-and-physical-interpretations
 release_state: zenodo_released
 released_version: v3.0
@@ -32,7 +32,7 @@ Retained result.
 The complete FP–I–V fixed-point, damping, curvature, covariance, and admissibility spine survives at its declared theorem tier.
 
 Remaining boundary.  
-Selected HYM endpoints and action, the physical q79 Hessian/reduction, universal apparatus and actualization, a fixed-coupling continuum QFT, selected global state, RG/matching, and cosmology remain downstream programs.
+Selected HYM endpoints and action, the physical q79 Hessian and reduction, universal apparatus and actualization, a fixed-coupling continuum QFT, selected global state, RG and matching, and cosmology remain downstream programs.
 
 # Logical levels and common geometry
 
@@ -209,12 +209,14 @@ For affine observables of a frozen Gaussian system, FP V supplies finite-grid a
 
 A local Lorentzian gauge/gravity/matter action may be appended as a *conditional completion*, for example schematically
 ``` math
-S_{\rm cand}=\int\sqrt{-g}\left[
- \frac{M_{\rm Pl}^2}{2}R-\Lambda
- -\frac14\sum_r\operatorname{tr}F_r^2
- -\sum_a|D\varphi_a|^2-V(\varphi)
- +\sum_b\bar\psi_b(i\gamma^\mu D_\mu-M_b)\psi_b
- \right]d^4x.
+\begin{aligned}
+S_{\rm cand}=\int\sqrt{-g}\,\Bigl[
+&\frac{M_{\rm Pl}^2}{2}R-\Lambda
+-\frac14\sum_r\operatorname{tr}F_r^2\\
+&-\sum_a|D\varphi_a|^2-V(\varphi)
++\sum_b\bar\psi_b(i\gamma^\mu D_\mu-M_b)\psi_b
+\Bigr]\,d^4x.
+\end{aligned}
 ```
 The FP I–V theorems do not select the gauge group, representations, number of fields, couplings, Yukawa matrices, or potential. Nor do they prove that the gradient control flow is the Euler–Lagrange evolution of $`S_{\rm cand}`$.
 
@@ -274,7 +276,7 @@ This local parent theory is the preferred route if overlap dynamics is meant to 
 
 #### Supported within the declared control model.
 
-The series supports coherent/noncoherent projection under operator-domain hypotheses, conditional fixed points, strict-Lyapunov equilibrium promotion, damping estimates and disturbance floors, perturbative curved-cluster persistence, curvature leakage, intrinsic first-order centroid modulation, frozen linear covariance, and admissibility exit diagnostics.
+The declared model supports projection into coherent and noncoherent sectors under operator-domain hypotheses. It also supports conditional fixed points, strict-Lyapunov equilibrium promotion, damping estimates and disturbance floors, perturbative curved-cluster persistence, curvature leakage, intrinsic first-order centroid modulation, frozen linear covariance, and admissibility exit diagnostics.
 
 #### Conditional after adding a model.
 

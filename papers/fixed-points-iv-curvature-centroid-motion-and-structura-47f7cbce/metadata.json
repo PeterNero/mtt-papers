@@ -32,9 +32,9 @@
     "updated": "2026-01-09T21:59:01.201032+00:00",
     "version": "v2.0"
   },
-  "main_tex_sha256": "8831c511e66cbc05c4d017941ae4f71118f13e9bf7f085543040f3786fe9bdc2",
+  "main_tex_sha256": "99056c23cd96f8a7ec1268117b81463376d7819c2669b3e6ed42a55d0db306ef",
   "paper_id": "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce",
-  "paper_md_sha256": "74d9a8965019af5d4e718462d8dc971f6a07dc918a362488eaa4c5b104c15ecf",
+  "paper_md_sha256": "7aa20b7f6186defc3ab0abf908cd615633cdbccfda4fc3f054ee7235e2bf5283",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
@@ -46,9 +46,14 @@
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 17242,
+      "bytes": 354008,
+      "path": "main.pdf",
+      "sha256": "6dff56c3bd477b263a4332c4a8bedb97e8c6dec91bb5bedec3caae16f4e521be"
+    },
+    {
+      "bytes": 17257,
       "path": "main.tex",
-      "sha256": "8831c511e66cbc05c4d017941ae4f71118f13e9bf7f085543040f3786fe9bdc2"
+      "sha256": "99056c23cd96f8a7ec1268117b81463376d7819c2669b3e6ed42a55d0db306ef"
     },
     {
       "bytes": 3592,
@@ -69,7 +74,7 @@
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4"
   },
-  "source_tree_sha256": "25dec06aff521ca6119c37cacef345a76f0dd0ccfd4aafca94faa14f2505fcd1",
+  "source_tree_sha256": "cf8c27f3bd2c0c58c387187a6229701ccbabf3c7ffbb46f9b19e1538174b7946",
   "title": "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [

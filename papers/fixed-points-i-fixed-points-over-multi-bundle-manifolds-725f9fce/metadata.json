@@ -9,32 +9,32 @@
   "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16948748",
-    "created": "2026-01-09T21:29:28.858607+00:00",
+    "created": "2026-07-28T15:24:04.656341+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18202884",
+    "doi": "10.5281/zenodo.21649308",
     "files": [
       {
-        "checksum": "md5:38901413b1d414e5d408968322711f51",
-        "content_url": "https://zenodo.org/api/records/18202884/files/Fixed_Points_I__Fixed_Points_over_Multi_Bundle_Manifolds_v5%20(1).pdf/content",
-        "key": "Fixed_Points_I__Fixed_Points_over_Multi_Bundle_Manifolds_v5 (1).pdf",
-        "size": 378792
+        "checksum": "md5:36e4acc815e929b223099d9ff7c48344",
+        "content_url": "https://zenodo.org/api/records/21649308/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 446335
       }
     ],
-    "id": "18202884",
+    "id": "21649308",
     "match_kind": "title_or_file",
     "match_score": 1.0,
-    "publication_date": "2026-01-09",
-    "record_url": "https://zenodo.org/records/18202884",
+    "publication_date": "2026-07-28",
+    "record_url": "https://zenodo.org/records/21649308",
     "resource_type": "publication",
     "title": "Fixed Points I: Fixed Points over Multi\u2013Bundle Manifolds",
-    "updated": "2026-01-09T21:29:29.357820+00:00",
-    "version": "v2.0"
+    "updated": "2026-07-28T15:24:05.073766+00:00",
+    "version": "v6"
   },
   "main_tex_sha256": "82cd4c9064a42306bf80185a6259d6b86e111bb251fa625c7cb79079dc2715a2",
   "paper_id": "fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce",
-  "paper_md_sha256": "9c26882d14f32e4a2fd387a41c1235c94480a75042a0ee31a367e33bbbd30d38",
+  "paper_md_sha256": "64899e93d676eda040f535e631f6505d090046e7e4e5bdf1c1beb6cc48a2aade",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
@@ -71,32 +71,32 @@
   },
   "source_tree_sha256": "316f43751b22595a75e2692f041fc2fbf22a2fefb21e79f9872e6f463de9b78d",
   "title": "Fixed Points I: Fixed Points over Multi\u2013Bundle Manifolds A conditional functional-analytic framework with spectral-bundle projections",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.16948748",
-      "created": "2026-01-09T21:29:28.858607+00:00",
+      "created": "2026-07-28T15:24:04.656341+00:00",
       "creators": [
         "Nero, Peter"
       ],
-      "doi": "10.5281/zenodo.18202884",
+      "doi": "10.5281/zenodo.21649308",
       "files": [
         {
-          "checksum": "md5:38901413b1d414e5d408968322711f51",
-          "content_url": "https://zenodo.org/api/records/18202884/files/Fixed_Points_I__Fixed_Points_over_Multi_Bundle_Manifolds_v5%20(1).pdf/content",
-          "key": "Fixed_Points_I__Fixed_Points_over_Multi_Bundle_Manifolds_v5 (1).pdf",
-          "size": 378792
+          "checksum": "md5:36e4acc815e929b223099d9ff7c48344",
+          "content_url": "https://zenodo.org/api/records/21649308/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 446335
         }
       ],
-      "id": "18202884",
+      "id": "21649308",
       "match_kind": "title_or_file",
       "match_score": 1.0,
-      "publication_date": "2026-01-09",
-      "record_url": "https://zenodo.org/records/18202884",
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21649308",
       "resource_type": "publication",
       "title": "Fixed Points I: Fixed Points over Multi\u2013Bundle Manifolds",
-      "updated": "2026-01-09T21:29:29.357820+00:00",
-      "version": "v2.0"
+      "updated": "2026-07-28T15:24:05.073766+00:00",
+      "version": "v6"
     }
   ]
 }
