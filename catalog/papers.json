@@ -3099,9 +3099,9 @@
         "updated": "2026-01-09T21:29:29.357820+00:00",
         "version": "v2.0"
       },
-      "main_tex_sha256": "21f2ef8766799a30325362f66b0f2610c63b14e3d34e804746ad77affb9f9d4d",
+      "main_tex_sha256": "82cd4c9064a42306bf80185a6259d6b86e111bb251fa625c7cb79079dc2715a2",
       "paper_id": "fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce",
-      "paper_md_sha256": "1422733cf8e85472863392f978d6a7f2e51cf3d058e4878936adc33177431e69",
+      "paper_md_sha256": "9c26882d14f32e4a2fd387a41c1235c94480a75042a0ee31a367e33bbbd30d38",
       "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
@@ -3113,7 +3113,7 @@
       "source_provenance": {
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_I__Fixed_Points_over_Multi_Bundle_Manifolds_v6"
       },
-      "source_tree_sha256": "b9917312e7581fda574023f4fb355ba5fda186b138f60980e73918b0915e8dd8",
+      "source_tree_sha256": "316f43751b22595a75e2692f041fc2fbf22a2fefb21e79f9872e6f463de9b78d",
       "title": "Fixed Points I: Fixed Points over Multi\u2013Bundle Manifolds A conditional functional-analytic framework with spectral-bundle projections",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [

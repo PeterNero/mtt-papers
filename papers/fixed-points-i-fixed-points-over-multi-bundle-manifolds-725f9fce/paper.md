@@ -11,7 +11,7 @@ bibliography:
 - refs.bib
 current_version: v6
 date: July 2026
-generated_from_main_tex_sha256: 21f2ef8766799a30325362f66b0f2610c63b14e3d34e804746ad77affb9f9d4d
+generated_from_main_tex_sha256: 82cd4c9064a42306bf80185a6259d6b86e111bb251fa625c7cb79079dc2715a2
 paper_id: fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce
 release_state: zenodo_released
 released_version: v2.0
@@ -277,9 +277,9 @@ D_M:= \{\Psi\in H^1(B_{\mathrm{int}}):\ C[\Psi]\le M\}.
 
 **Assumption 18** (Coherence invariance). We say coherence invariance holds if
 ``` math
-N(\mathrm{Ran}(\Pi_{\mathrm{coh}}))\subset \mathrm{Ran}(\Pi_{\mathrm{coh}}),
-\qquad\text{(and hence the coherent sector is invariant under the flow).}
+N(\mathrm{Ran}(\Pi_{\mathrm{coh}}))\subset \mathrm{Ran}(\Pi_{\mathrm{coh}}).
 ```
+Under this condition the coherent sector is invariant under the flow.
 
 </div>
 
@@ -610,7 +610,7 @@ If $`W`$ is also bounded above, the norm $`\|\cdot\|_{\varepsilon}`$ is equivale
 \le L\|u-v\|_{L^2}\|w\|_{L^2}
 \le \frac{L}{w_0}\|u-v\|_\varepsilon\|w\|_\varepsilon.
 ```
-Thus $`F`$ has continuity constant $`1+L/w_0`$ and strong-monotonicity constant $`1-L/w_0`$. Galerkin orthogonality and the standard nonlinear CÃ©a argument give the displayed ratio. Strong monotonicity also gives uniqueness of the finite-dimensional solution. ◻
+Thus $`F`$ has continuity constant $`1+L/w_0`$ and strong-monotonicity constant $`1-L/w_0`$. Galerkin orthogonality and the standard nonlinear Céa argument give the displayed ratio. Strong monotonicity also gives uniqueness of the finite-dimensional solution. ◻
 
 </div>
 
@@ -686,7 +686,7 @@ such that $`\|\Pi_{\mathrm{coh}}\|_{H^1_F\to H^1_F}\le C_\Pi`$. If the fibers ar
 
 <div id="ass:PS" class="assumption">
 
-**Assumption 52** (Analyticity and Palais–Smale). $`C`$ is real-analytic and satisfies a Palais–Smale condition on energy sublevels: if $`C[\Psi_n]`$ is bounded and $`\|\nabla C(\Psi_n)\|_{L^2}\to 0`$, then $`(\Psi_n)`$ has a convergent subsequence in $`H^1`$. We also assume the orbit under consideration remains in a bounded energy sublevel on which the gradient flow is precompact in $`H^1`$ and the local Åojasiewicz–Simon inequality is valid near every cluster point.
+**Assumption 52** (Analyticity and Palais–Smale). $`C`$ is real-analytic and satisfies a Palais–Smale condition on energy sublevels: if $`C[\Psi_n]`$ is bounded and $`\|\nabla C(\Psi_n)\|_{L^2}\to 0`$, then $`(\Psi_n)`$ has a convergent subsequence in $`H^1`$. We also assume the orbit under consideration remains in a bounded energy sublevel on which the gradient flow is precompact in $`H^1`$ and the local Łojasiewicz–Simon inequality is valid near every cluster point.
 
 </div>
 
@@ -708,7 +708,7 @@ If coherence invariance holds and $`\Psi(0)\in \mathrm{Ran}(\Pi_{\mathrm{coh}})`
 
 <div class="corollary">
 
-**Corollary 55** (Exponential rate under nondegeneracy). *If, in addition, the limiting equilibrium is nondegenerate in the relevant phase space—equivalently, the local Åojasiewicz–Simon exponent is $`1/2`$, for example because the linearized Hessian has a positive spectral gap after quotienting exact symmetries—then $`\|\Psi(t)-\Psi_\infty\|_{H^1}\le Ce^{-\eta t}`$ for some $`\eta>0`$. Uniqueness by itself does not imply an exponential rate.*
+**Corollary 55** (Exponential rate under nondegeneracy). *If, in addition, the limiting equilibrium is nondegenerate in the relevant phase space—equivalently, the local Łojasiewicz–Simon exponent is $`1/2`$, for example because the linearized Hessian has a positive spectral gap after quotienting exact symmetries—then $`\|\Psi(t)-\Psi_\infty\|_{H^1}\le Ce^{-\eta t}`$ for some $`\eta>0`$. Uniqueness by itself does not imply an exponential rate.*
 
 </div>
 

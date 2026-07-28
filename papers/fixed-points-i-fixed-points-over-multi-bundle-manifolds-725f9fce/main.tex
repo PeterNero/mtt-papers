@@ -56,8 +56,8 @@ We establish from first principles:
 (iii) analytic-semigroup well-posedness and smoothing for $\Phi_t$;
 (iv) existence of projected fixed points by a variational method on the coherent sector; alternatively by Schauder (compact base with base-regularized smoothing) or by Darbo using the Kuratowski measure under a confining base potential;
 (v) uniqueness either from strong convexity on the coherent sector or via an inertial-manifold reduction under a clean spectral gap condition;
-(vi) quantitative Galerkin approximation for the uniformly elliptic steady problem with Céa-type quasi-optimal error;
-(vii) examples (with explicit constants) and Łojasiewicz--Simon convergence.
+(vi) quantitative Galerkin approximation for the uniformly elliptic steady problem with C\'ea-type quasi-optimal error;
+(vii) examples (with explicit constants) and \L{}ojasiewicz--Simon convergence.
 All results are analytic/control statements under the displayed hypotheses. The
 Riemannian base is not automatically physical Lorentzian spacetime, the flow
 parameter is not automatically physical time, and the abstract fiber product
@@ -195,7 +195,7 @@ with norm
 
 \begin{remark}[Why $H^1_F$ is the correct space for fiber coercivity]
 The fiber operator $\Delta_F$ controls $\|\nabla_F\Psi\|_{L^2}$ but does not control $\|\nabla_Y\Psi\|_{L^2}$.
-Thus a Poincaré-type inequality driven solely by $\Delta_F$ fails on the full $H^1(\Bint)$, while it holds naturally in $H^1_F$.
+Thus a Poincar\'e-type inequality driven solely by $\Delta_F$ fails on the full $H^1(\Bint)$, while it holds naturally in $H^1_F$.
 This is the key coercivity correction used throughout the series.
 \end{remark}
 
@@ -319,9 +319,9 @@ On $\Ran(\PiCoh)$ the flow reduces to an ODE $\partial_t u=-\PiCoh N(u)$ (when c
 \begin{assumption}[Coherence invariance]\label{ass:coh-inv}
 We say coherence invariance holds if
 \[
-N(\Ran(\PiCoh))\subset \Ran(\PiCoh),
-\qquad\text{(and hence the coherent sector is invariant under the flow).}
+N(\Ran(\PiCoh))\subset \Ran(\PiCoh).
 \]
+Under this condition the coherent sector is invariant under the flow.
 \end{assumption}
 
 \subsection{Projected map and identification of equilibria}
@@ -614,7 +614,7 @@ V_\varepsilon^\ast$. Then for all $u,v$ in that set,
 \]
 where $\mu_\varepsilon := 1-L/w_0>0$.
 \end{lemma}
-\begin{theorem}[Céa-type quasi-optimal error in the energy norm]\label{thm:cea}
+\begin{theorem}[C\'ea-type quasi-optimal error in the energy norm]\label{thm:cea}
 Assume Lemma~\ref{lem:strongmonoF}. Let $V_N\subset V_\varepsilon$ be a finite-dimensional Galerkin space and let
 $\Psi^\ast$ solve $\widetilde A_\varepsilon\Psi + N(\Psi)=0$.
 Let $\Psi_N\in V_N$ satisfy the Galerkin condition
@@ -645,7 +645,7 @@ $\|\cdot\|_\varepsilon$. Moreover,
 \]
 Thus $F$ has continuity constant $1+L/w_0$ and strong-monotonicity
 constant $1-L/w_0$. Galerkin orthogonality and the standard nonlinear
-CÃ©a argument give the displayed ratio. Strong monotonicity also gives
+C\'ea argument give the displayed ratio. Strong monotonicity also gives
 uniqueness of the finite-dimensional solution.
 \end{proof}
 \begin{remark}
@@ -654,7 +654,7 @@ The conversion to the energy norm $\|\cdot\|_\varepsilon$ uses the inequality
 \[
 \|u\|_{L^2}\le w_0^{-1/2}\|u\|_\varepsilon,
 \]
-which explains the appearance of the factor $(1+L/w_0)$ in the Céa constant.
+which explains the appearance of the factor $(1+L/w_0)$ in the C\'ea constant.
 \end{remark}
 
 
@@ -712,17 +712,17 @@ $\|\Psi\|_{H^1_F}=\|\Psi\|_{L^2}$. More generally, on $\Ran(\PiCoh)$ all Sobolev
 \end{lemma}
 
 % ------------------------------------------------------------
-\section{\FPpdf{Łojasiewicz--Simon}{Lojasiewicz--Simon} convergence of the gradient flow}
+\section{\FPpdf{\L{}ojasiewicz--Simon}{Lojasiewicz--Simon} convergence of the gradient flow}
 
 \begin{assumption}[Analyticity and Palais--Smale]\label{ass:PS}
 $C$ is real-analytic and satisfies a Palais--Smale condition on energy sublevels:
 if $C[\Psi_n]$ is bounded and $\|\nabla C(\Psi_n)\|_{L^2}\to 0$, then $(\Psi_n)$ has a convergent subsequence in $H^1$.
 We also assume the orbit under consideration remains in a bounded energy
 sublevel on which the gradient flow is precompact in $H^1$ and the local
-Åojasiewicz--Simon inequality is valid near every cluster point.
+\L{}ojasiewicz--Simon inequality is valid near every cluster point.
 \end{assumption}
 
-\begin{theorem}[Łojasiewicz--Simon convergence]
+\begin{theorem}[\L{}ojasiewicz--Simon convergence]
 Assume Assumption~\ref{ass:PS}. For any solution $\Psi(t)$ of \eqref{eq:flow} with initial data in an energy sublevel,
 there exists $\Psi_\infty$ with $\nabla C(\Psi_\infty)=0$ and
 \[
@@ -732,12 +732,12 @@ If coherence invariance holds and $\Psi(0)\in \Ran(\PiCoh)$, then $\Psi_\infty\i
 \end{theorem}
 
 \begin{remark}[Reference]
-The underlying Łojasiewicz--Simon inequality and convergence mechanism originate with \cite{Simon1983}.
+The underlying \L{}ojasiewicz--Simon inequality and convergence mechanism originate with \cite{Simon1983}.
 \end{remark}
 
 \begin{corollary}[Exponential rate under nondegeneracy]
 If, in addition, the limiting equilibrium is nondegenerate in the relevant
-phase space---equivalently, the local Åojasiewicz--Simon exponent is
+phase space---equivalently, the local \L{}ojasiewicz--Simon exponent is
 $1/2$, for example because the linearized Hessian has a positive spectral
 gap after quotienting exact symmetries---then
 $\|\Psi(t)-\Psi_\infty\|_{H^1}\le Ce^{-\eta t}$ for some $\eta>0$.
