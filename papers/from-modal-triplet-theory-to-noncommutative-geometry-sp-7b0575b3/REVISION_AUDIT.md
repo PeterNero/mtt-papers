@@ -4,6 +4,16 @@ Date: 2026-07-28
 
 Status: implemented as a new TeX successor; v3 preserved
 
+## Current version delta
+
+Version 4 replaces v3's claimed first-principles derivation with a typed
+almost-commutative profile encoding. It incorporates the exact A44--A51 finite
+chain through the neutral completion, native gauge group, explicit finite
+bimodule, anomaly-free hypercharge line, one-Higgs projector, and profile
+traces; it also records A52's universal-normalization no-go and moment
+ambiguity. Physical Wick selection, source-derived finite Dirac values,
+continuum q79 realization, and nonperturbative quantum transport remain open.
+
 ## Source and disposition
 
 - Superseded source:
