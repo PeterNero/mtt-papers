@@ -1,12 +1,12 @@
 {
-  "abstract": "Decoherence is widely regarded as sufficient to explain the emergence of classical behavior and, in many accounts, as eliminating the need for a distinct measurement postulate. In this work we show that this belief rests on a structural conflation. Within Modal Triplet Theory (MTT), decoherence and measurement arise as distinct shadows of a single projection-based mechanism. Decoherence corresponds to contractive, unitary dynamics within admissible basins of the reduced state space, while measurement corresponds to discrete, irreversible transitions between basins enforced by noninvertible projection and admissibility loss. Decoherence is therefore necessary for stability but insufficient for outcome selection. This distinction is derived using the same coherent-sector projector, spectral gap, and basin structure that underlie other shadow-bridge results in MTT. Alignment with decoherence theory, quantum Darwinism, continuous measurement, and objective-collapse models is shown to validate the framework while explaining their persistent limitations. The measurement problem is reframed as a structural issue of admissibility rather than an interpretational choice.",
+  "abstract": "Decoherence suppresses interference and stabilizes preferred records, but a nonselective decoherence channel does not contain an outcome label, a conditional state update, or a rule that one outcome is realized. This revision makes the separation exact in finite-dimensional quantum theory and states its consequence for Modal Triplet Theory. A pointer dephasing channel is completely positive and trace preserving, removes off-diagonal pointer blocks, and preserves pointer populations. The same nonselective channel is compatible with distinct outcome instruments having different probability laws, so the channel alone selects neither outcomes nor probabilities. An MTT basin boundary or chart exit likewise does not choose a successor basin. A completed model must provide an outcome-indexed instrument or normalized selection-completion kernel and its source. The current canonical q79 binary recorder supplies an exact stopped-output law on its declared finite domain, while general apparatus contexts and objective single-history actualization remain open.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v2",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261892",
     "created": "2026-01-15T20:09:27.643404+00:00",
@@ -32,20 +32,33 @@
     "updated": "2026-01-15T20:09:28.040300+00:00",
     "version": "v1.0"
   },
-  "main_tex_sha256": "9128b63a8527d106a5df6a6cdb84697dc22dc17ab6a84996fa1d56923bdb4402",
+  "main_tex_sha256": "c0118f95260a40cfd73ce6bc8c62a07c0f2aedc493329dab906568af9fdc7681",
   "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
-  "paper_md_sha256": "f3a1aa86800a75abca3707a65c2d4955a24c10342fbf70aa45ebd233ff6358d7",
+  "paper_md_sha256": "dca30e9e22aece4d119290e6211e3e42811b71c87d606ab3c0cf405a1bd0ad85",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "bb4d3fd3767672ef2773cfd74d679732b4527922e97c930a520a2c1025970879",
+    "selected_revision": true,
+    "superseded_source_path": "8 Measurement, Selection & Computation/_work/Why_Decoherence_Cannot_Replace_Measurement__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 32905,
+      "bytes": 343537,
+      "path": "main.pdf",
+      "sha256": "795472bd762fe0c63311d3cf7f75495317bc95448ad940f1d9515b8910b09592"
+    },
+    {
+      "bytes": 22119,
       "path": "main.tex",
-      "sha256": "9128b63a8527d106a5df6a6cdb84697dc22dc17ab6a84996fa1d56923bdb4402"
+      "sha256": "c0118f95260a40cfd73ce6bc8c62a07c0f2aedc493329dab906568af9fdc7681"
+    },
+    {
+      "bytes": 5206,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "bb4d3fd3767672ef2773cfd74d679732b4527922e97c930a520a2c1025970879"
     },
     {
       "bytes": 4186,
@@ -56,9 +69,9 @@
   "source_provenance": {
     "legacy_source_path": "8 Measurement, Selection & Computation/_work/Why_Decoherence_Cannot_Replace_Measurement__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "ce9b682b5c1ce1a22f86f38339c3b9b880ef8dde158bfbe5d4f3a17d227bd02d",
-  "title": "Why Decoherence Cannot Replace Measurement A Projection-Based Shadow Bridge in Modal Triplet Theory",
-  "version_relation": "matches_latest_release",
+  "source_tree_sha256": "9e13b6d2febac01e0a4dd80200c15a6c29ba412a3f9d93beddff23c64ad328f1",
+  "title": "Why Decoherence Cannot Replace Measurement: Suppression, Selection, and the Missing Completion Map in Modal Triplet Theory",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18261892",

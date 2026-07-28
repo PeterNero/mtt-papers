@@ -1,6 +1,6 @@
 # MTT Paper Catalog
 
-Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **50**.
+Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **51**.
 
 The list is alphabetical and intentionally has no topical grouping.
 
@@ -138,7 +138,7 @@ The list is alphabetical and intentionally has no topical grouping.
 | Wave–Particle Duality as Projection Duality in Modal Triplet Theory Pointlike Delta Shadows and Wavelike Spectral Shadows of a Single Coherent Kernel | v4 | not matched | [TeX](papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex) / [Markdown](papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/paper.md) |
 | When Is a Configuration Physical? Rethinking the Vacuum Selection Problem | v1.0 | [v1.0](https://zenodo.org/records/18255208) | [TeX](papers/when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34/main.tex) / [Markdown](papers/when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34/paper.md) |
 | White Noise and Markov Limits as Delta-Correlation Idealizations Finite Memory, Colored Disturbances, and OU Floors in Modal Triplet Theory | unversioned | not matched | [TeX](papers/white-noise-and-markov-limits-as-delta-correlation-idea-854be499/main.tex) / [Markdown](papers/white-noise-and-markov-limits-as-delta-correlation-idea-854be499/paper.md) |
-| Why Decoherence Cannot Replace Measurement A Projection-Based Shadow Bridge in Modal Triplet Theory | v1.0 | [v1.0](https://zenodo.org/records/18261893) | [TeX](papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/main.tex) / [Markdown](papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/paper.md) |
+| Why Decoherence Cannot Replace Measurement: Suppression, Selection, and the Missing Completion Map in Modal Triplet Theory | v2 | [v1.0](https://zenodo.org/records/18261893) | [TeX](papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/main.tex) / [Markdown](papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/paper.md) |
 | Why General Relativity and String Theory Are the Same Admissibility Constraint A Technical Shadow–Bridge Between IR Geometry and Worldsheet RG in Modal Triplet Theory | v1.0 | [v1.0](https://zenodo.org/records/18261980) | [TeX](papers/why-general-relativity-and-string-theory-are-the-same-a-98920533/main.tex) / [Markdown](papers/why-general-relativity-and-string-theory-are-the-same-a-98920533/paper.md) |
 | Why GR Falls Out of String Theory: A Coherent-Admissibility Shadow Bridge in Modal Triplet Theory | v1.0 | [v1.0](https://zenodo.org/records/18262012) | [TeX](papers/why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7/main.tex) / [Markdown](papers/why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7/paper.md) |
 | Why Quantum Contextuality and Measurement Order Dependence Are the Same Phenomenon A Projection-Based Shadow Bridge in Modal Triplet Theory | v1.0 | [v1.0](https://zenodo.org/records/18261925) | [TeX](papers/why-quantum-contextuality-and-measurement-order-depende-e0bdb9bf/main.tex) / [Markdown](papers/why-quantum-contextuality-and-measurement-order-depende-e0bdb9bf/paper.md) |
