@@ -479,6 +479,19 @@
       "revision_evidence": "10 The Book on Modal Triplet Theory/BOOK_V10_CURRENT_CORPUS_RECONCILIATION_AUDIT_2026-07-15.md"
     },
     {
+      "superseded_project": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry_v3",
+      "selected_project": "15 Discrete & Spectral & Operator Geometric Theories/revised_tex_vnext/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry_v4",
+      "revision_evidence": "15 Discrete & Spectral & Operator Geometric Theories/revised_tex_vnext/NCG_V4_REVISION_AUDIT.md",
+      "paper_id": "from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3",
+      "result_refs": [
+        "finite_inner_fluctuation",
+        "native_gauge_group",
+        "neutral_summand_hypercharge",
+        "physical_df_96",
+        "typed_family_representation"
+      ]
+    },
+    {
       "superseded_project": "18 Theta-Closure & Execution Program/_work/A_Tiered_Roadmap_for_Calculations_in_Modal_Triplet_Theory__MTT__v2",
       "selected_project": "18 Theta-Closure & Execution Program/revised_tex_vnext/A_Tiered_Roadmap_for_Calculations_in_Modal_Triplet_Theory__MTT__v3",
       "revision_evidence": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md"

@@ -6,7 +6,7 @@
     "papers_with_zenodo_release": 119,
     "papers_without_zenodo_match": 20,
     "schema": "mtt.paper-migration-report.v1",
-    "superseded_projects_excluded": 52,
+    "superseded_projects_excluded": 53,
     "zenodo_records": 120,
     "zenodo_records_matched": 119,
     "zenodo_records_unmatched": 1
@@ -3616,14 +3616,14 @@
       ]
     },
     {
-      "abstract": "We derive Noncommutative Geometry (NCG), in the sense of Connes\u2019 spectral triples, from the coherent fixed-point sector of Modal Triplet Theory (MTT). Under the standing modules (bounded geometry, spectral gap, joint harmonic projector, smoothing flow, convex energy), we show: (i) the observable algebra acts faithfully on the projected Hilbert space, giving an almost-commutative spectral triple (A,H,D;J,\\Gamma); (ii) the Dirac operator D descends from the projected MTT Dirac/Laplacian structure, with compact resolvent and bounded commutators; (iii) the KO-dimension and real structure are inherited from the spin bundle; (iv) the Connes\u2013Chamseddine spectral action \\mathrm{Tr}f(D/\\Lambda) reproduces Einstein\u2013Hilbert + Yang\u2013Mills + scalar potential, with coefficients fixed by the modal bottleneck vector \\Theta; (v) inner fluctuations D\\mapsto D+A+J A J^{-1} generate the full SM gauge sector and the Higgs as a finite connection, with unimodularity yielding U(1)_Y\\times SU(2)_L\\times SU(3)_c; and (vi) renormalization and consistency match the FRG/pAQFT picture used in the MTT amplitudes and QG papers. Hence MTT provides a first-principles derivation of spectral triples, the spectral action,and the SM embedding within NCG, coherent with its containments of GR, QFT, SM, and UV-finite QG. Our renormalization discussion uses the functional renormalization group (FRG) and perturbative algebraic QFT (pAQFT).",
+      "abstract": "We give a corrected relation between Modal Triplet Theory (MTT) and noncommutative geometry (NCG). A coherent fixed-point projector does not by itself derive a spectral triple, the Standard Model finite algebra, a Wick rotation, or the spectral action. We prove the precise compression theorem that is available when a projector reduces an already specified real even spectral triple. We then record the stronger finite results now available in the selected MTT branch. The family factor is separated from the rank 1<2<3 gauge carrier; an explicit three-family chiral representation and the faithful group (SU(3)\\times SU(2)\\times U(1)_Y)/\\mathbb{Z}_6 are obtained; and the finite real-even triple is completed at profile tier by the additional neutral complex summand \\mathbb{C}_{N}. Direct enumeration of all 676 finite one-form basis pairs gives a raw rank-twelve scalar space, consisting of three Higgs-doublet modules. The selected q79/proto-spinor alignment projector has rank four and leaves one complex Higgs doublet. These are finite, reproducible results, but the entries of D_{F} remain profile data. The four-dimensional compact Riemannian spin triple, Wick dictionary, cutoff function, and spectral moments are not derived by the fixed-point construction. Moreover, the selected pure-Standard-Model running branch rules out one universal gauge normalization: the best common-scale coupling ratio remains 1.046656046. A positive overlap kinetic metric reconstructs the profile couplings exactly but uses two measured relative coordinates. Thus MTT currently supplies a typed almost-commutative profile encoding with an executed finite factor, not a first-principles derivation of NCG or a no-knob derivation of the Standard Model.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v3",
-      "date": "September 19, 2025",
+      "current_version": "v4",
+      "date": "July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.17162075",
         "created": "2025-09-19T18:41:05.666571+00:00",
@@ -3649,19 +3649,28 @@
         "updated": "2025-09-19T18:41:05.994718+00:00",
         "version": "v1.0"
       },
-      "main_tex_sha256": "7e5f37f5a59ddce8e293d5feaf817a7f6f7aa4c0321dff7259daa5bd985e0d7f",
+      "main_tex_sha256": "91b68b1e7ca2d96fe2cf602804b28a29f34b78dbe2842fbcca3af20af43d765e",
       "paper_id": "from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3",
-      "paper_md_sha256": "24576b1473400019e835ca7dafa155fb00cf81e4613914cb39690c6cbc18eed2",
+      "paper_md_sha256": "f7a7904a0ac91f73dd423961acb442bf77a93d97a34224068b9e9726d237c267",
       "release_state": "zenodo_released",
-      "result_refs": [],
+      "result_refs": [
+        "finite_inner_fluctuation",
+        "native_gauge_group",
+        "neutral_summand_hypercharge",
+        "physical_df_96",
+        "typed_family_representation"
+      ],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "15 Discrete & Spectral & Operator Geometric Theories/revised_tex_vnext/NCG_V4_REVISION_AUDIT.md",
+        "revision_evidence_sha256": "06e2018ffba4d22b58f96cbdf4abdc8ff3b09440edd2cbead219be1c5c36cc22",
+        "selected_revision": true,
+        "superseded_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry_v3"
       },
       "source_provenance": {
-        "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry_v3"
+        "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/revised_tex_vnext/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry_v4"
       },
-      "source_tree_sha256": "6c7facea812751fb80ea6c53bb6d14189f34e52dd6209962694897683a1782d2",
-      "title": "From Modal Triplet Theory to Noncommutative Geometry: Spectral Triples, Spectral Action, and the Standard Model Embedding",
+      "source_tree_sha256": "7839cdde859d918146fa9e1a7a05ac95d397c4f072e09563e1ff789718fa20d6",
+      "title": "From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier (Corrected fourth edition)",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {

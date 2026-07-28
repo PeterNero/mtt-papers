@@ -43,6 +43,13 @@ def verify() -> dict[str, int]:
     papers = catalog.get("papers") or []
     expected = int(config["expected_canonical_papers"])
     assert len(papers) == expected, (len(papers), expected)
+    replacement_result_refs = {
+        str(row["selected_project"]): sorted(
+            {str(item) for item in row.get("result_refs") or [] if str(item)}
+        )
+        for row in config["replacements"]
+        if row.get("result_refs")
+    }
 
     paper_root = ROOT / "papers"
     directories = sorted(path for path in paper_root.iterdir() if path.is_dir())
@@ -80,6 +87,11 @@ def verify() -> dict[str, int]:
         assert metadata["source_tree_sha256"] == canonical_hash(metadata["source_files"])
         assert metadata["source_provenance"]["legacy_source_path"]
         assert not Path(metadata["source_provenance"]["legacy_source_path"]).is_absolute()
+        expected_replacement_refs = replacement_result_refs.get(
+            metadata["source_provenance"]["legacy_source_path"]
+        )
+        if expected_replacement_refs is not None:
+            assert metadata["result_refs"] == expected_replacement_refs
 
         for source_file in metadata["source_files"]:
             path = directory / source_file["path"]

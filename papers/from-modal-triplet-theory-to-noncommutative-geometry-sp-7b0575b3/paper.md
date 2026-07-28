@@ -1,151 +1,501 @@
 ---
 abstract: |
-  We derive Noncommutative Geometry (NCG), in the sense of Connes’ spectral triples, from the coherent fixed-point sector of Modal Triplet Theory (MTT). Under the standing modules (bounded geometry, spectral gap, joint harmonic projector, smoothing flow, convex energy), we show: (i) the observable algebra acts faithfully on the projected Hilbert space, giving an almost-commutative spectral triple $`(A,H,D;J,\Gamma)`$; (ii) the Dirac operator $`D`$ descends from the projected MTT Dirac/Laplacian structure, with compact resolvent and bounded commutators; (iii) the KO-dimension and real structure are inherited from the spin bundle; (iv) the Connes–Chamseddine spectral action $`\mathrm{Tr}f(D/\Lambda)`$ reproduces Einstein–Hilbert $`+`$ Yang–Mills $`+`$ scalar potential, with coefficients fixed by the modal bottleneck vector $`\Theta`$; (v) inner fluctuations $`D\mapsto D+A+J A J^{-1}`$ generate the full SM gauge sector and the Higgs as a finite connection, with unimodularity yielding $`U(1)_Y\times SU(2)_L\times SU(3)_c`$; and (vi) renormalization and consistency match the FRG/pAQFT picture used in the MTT amplitudes and QG papers. Hence MTT provides a first-principles derivation of spectral triples, the spectral action,and the SM embedding within NCG, coherent with its containments of GR, QFT, SM, and UV-finite QG. Our renormalization discussion uses the functional renormalization group (FRG) and perturbative algebraic QFT (pAQFT).
+  We give a corrected relation between Modal Triplet Theory (MTT) and noncommutative geometry (NCG). A coherent fixed-point projector does not by itself derive a spectral triple, the Standard Model finite algebra, a Wick rotation, or the spectral action. We prove the precise compression theorem that is available when a projector reduces an already specified real even spectral triple. We then record the stronger finite results now available in the selected MTT branch. The family factor is separated from the rank $`1<2<3`$ gauge carrier; an explicit three-family chiral representation and the faithful group
+  ``` math
+  (SU(3)\times SU(2)\times U(1)_Y)/\mathbb{Z}_6
+  ```
+  are obtained; and the finite real-even triple is completed at profile tier by the additional neutral complex summand $`\mathbb{C}_{N}`$. Direct enumeration of all $`676`$ finite one-form basis pairs gives a raw rank-twelve scalar space, consisting of three Higgs-doublet modules. The selected q79/proto-spinor alignment projector has rank four and leaves one complex Higgs doublet. These are finite, reproducible results, but the entries of $`D_{F}`$ remain profile data. The four-dimensional compact Riemannian spin triple, Wick dictionary, cutoff function, and spectral moments are not derived by the fixed-point construction. Moreover, the selected pure-Standard-Model running branch rules out one universal gauge normalization: the best common-scale coupling ratio remains $`1.046656046`$. A positive overlap kinetic metric reconstructs the profile couplings exactly but uses two measured relative coordinates. Thus MTT currently supplies a typed almost-commutative profile encoding with an executed finite factor, not a first-principles derivation of NCG or a no-knob derivation of the Standard Model.
 author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v3
-date: September 19, 2025
-generated_from_main_tex_sha256: 7e5f37f5a59ddce8e293d5feaf817a7f6f7aa4c0321dff7259daa5bd985e0d7f
+current_version: v4
+date: July 2026
+generated_from_main_tex_sha256: 91b68b1e7ca2d96fe2cf602804b28a29f34b78dbe2842fbcca3af20af43d765e
 paper_id: from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3
 release_state: zenodo_released
 released_version: v1.0
-title: |
-  **From Modal Triplet Theory to Noncommutative Geometry:  
-  Spectral Triples, Spectral Action, and the Standard Model Embedding**
+title: "**From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier (Corrected fourth edition)**"
 zenodo_doi: 10.5281/zenodo.17162076
 zenodo_record_id: 17162076
 zenodo_url: "https://zenodo.org/records/17162076"
 ---
 
-# Introduction
+# Revision note for this edition
 
-#### Aim.
+**Supersedes.** *From Modal Triplet Theory to Noncommutative Geometry: Spectral Triples, Spectral Action, and the Standard Model Embedding*, version 3.
 
-We show that the Connes–Chamseddine Noncommutative Geometry (NCG) framework—spectral triples and the spectral action—emerges directly from the MTT coherent fixed point.
+**Reason.** Version 3 assumed the Standard Model finite algebra, treated Euclidean spectral data as if they descended automatically from a physical MTT realization, and claimed that the bottleneck vector fixed spectral-action coefficients without an executed source theorem.
 
-#### Strategy.
+**Resolution.** Version 4 separates projection, finite geometry, Euclidean product-triple data, Wick rotation, spectral-action moments, renormalization, and measured profile coordinates. It incorporates the verified A44–A52 finite-geometry chain and its no-go results.
 
-Starting from the MTT modules $`(\mathrm{G},\mathrm{S},\Pi,\mathrm{F},\mathrm{E})`$, we construct an almost-commutative spectral triple $`(A,H,D;J,\Gamma)`$, verify the axioms (compact resolvent, bounded commutators, real structure, order-one condition, orientability, Poincaré duality), and map the spectral-action coefficients to the bottleneck vector $`\Theta`$.
+**Retained result.** Given the declared Euclidean spin triple and the selected finite profile triple, standard almost-commutative NCG reconstructs the corresponding bosonic operator content.
 
-#### Hypotheses and conventions.
+**Remaining boundary.** A physical Lorentzian-to-Euclidean dictionary, source-derived $`D_{F}`$ values, a selected proper-time measure and overlap metric, nonperturbative quantum transport, and a same-source physical q79 continuum realization remain open.
 
-(H1) We work in Euclidean signature and assume $`(Y_4,g)`$ is a compact, oriented Riemannian spin manifold of bounded geometry. (H2) The internal modal base is $`B_1\oplus B_2\oplus B_3`$ with bounded geometry and a uniform spectral gap; $`\Pi`$ denotes the joint harmonic projector. (H3) The observable algebra acts faithfully on the projected Hilbert space. (H4) Charge conjugation on $`Y_4`$ and the internal finite geometry induce a real structure on the product triple. Modules $`(\mathrm{G},\mathrm{S},\Pi,\mathrm{F},\mathrm{E})`$ are assumed throughout.
+# Status and logical scope
 
-# MTT $`\to`$ almost-commutative spectral triples
+This paper concerns a relation among three different constructions:
 
-<div id="def:AC" class="definition">
+1.  a coherent or fixed-point projection in MTT;
 
-**Definition 1** (MTT$`\to`$almost-commutative spectral triple). Let $`A_M=C^\infty(Y_4)`$ and $`D_M`$ be the Dirac operator on $`Y_4`$ with grading $`\gamma_5`$ and real structure $`J_M`$. Let the finite triple $`(A_F,H_F,D_F;J_F,\gamma_F)`$ encode the internal (modal) data, with $`A_F=\mathbb{C}\oplus\mathbb{H}\oplus M_3(\mathbb{C})`$ acting in the standard way on $`H_F`$. Define the product triple
-``` math
-A:=A_M\otimes A_F,\quad
-H:=L^2(Y_4,S)\otimes H_F,\quad
-D:=D_M\otimes \mathbf{1}+\gamma_5\otimes D_F,\quad
-J:=J_M\otimes J_F,\quad
-\Gamma:=\gamma_5\otimes \gamma_F.
-```
+2.  a finite real-even spectral triple encoding the selected particle representation; and
+
+3.  a four-dimensional Euclidean almost-commutative product triple and its spectral action.
+
+They are not interchangeable. In particular, a projector is not an algebra, a spectral gap is not a Dirac operator, and a finite representation is not a Wick rotation.
+
+<div class="definition">
+
+**Definition 1** (Status vocabulary). In this paper:
+
+- *exact* means an algebraic identity or finite calculation verified from the cited packet without measured continuous values;
+
+- *profile* means a reconstruction using an accepted Standard Model parameter profile;
+
+- *imported* means a standard NCG or QFT theorem used after its hypotheses are supplied independently; and
+
+- *open* means that the current MTT source does not emit the required object.
 
 </div>
 
-<div id="thm:axioms" class="theorem">
+**Exact carrier.** The rank-$`1<2<3`$ carrier and weak real structure are selected up to unitary or phase equivalence; the family factor remains separate.
 
-**Theorem 2** (Spectral triple axioms, KO-dimension, order-one). *Under (H1)–(H4), $`(A,H,D;J,\Gamma)`$ in <a href="#def:AC" data-reference-type="ref+Label" data-reference="def:AC">1</a> is a real, even spectral triple: (a) $`(D-i)^{-1}`$ is compact; (b) $`[D,a]`$ is bounded $`\forall\,a\in A`$; (c) the real structure and grading obey the KO-dimension relations for KO$`=4+6\equiv 2\pmod 8`$; (d) the order-one condition holds,
+**Exact representation.** The $`48`$-state family-diagonal representation, anomaly table, gauge group, and global $`\mathbb{Z}_6`$ quotient are executed.
+
+**Mixed finite triple.** The representation and finite axioms are exact finite calculations; physical entries of $`D_{F}`$ use the accepted profile.
+
+**Mixed scalar sector.** The one-form enumeration and rank statements are finite calculations; the Yukawa traces use profile $`D_{F}`$.
+
+**Imported/open spacetime.** The Euclidean product triple is standard NCG input; MTT has not derived its physical Wick dictionary.
+
+**Open/profile normalization.** Only certain spectral products are identifiable; the current overlap metric uses measured relative gauge coordinates.
+
+# The spectral-triple contract
+
+<div class="definition">
+
+**Definition 2** (Real even spectral triple). A real even spectral triple is data
 ``` math
-\big[\,[D,a],\,J b J^{-1}\big]\;=\;0
-\qquad\text{for all } a,b\in A.
-```*
+(\mathcal{A},\mathcal{H},D,J,\Gamma,\pi)
+```
+where $`\mathcal{A}`$ is a unital involutive algebra represented faithfully by bounded operators $`\pi(a)`$ on the complex Hilbert space $`\mathcal{H}`$, $`D`$ is self-adjoint with compact resolvent, and
+``` math
+[D,\pi(a)]\in\mathcal{B}(\mathcal{H})
+ \qquad (a\in\mathcal{A}).
+```
+The grading and real structure obey the declared KO-sign table, and the order-zero and order-one conditions are
+``` math
+[\pi(a),J\pi(b)J^{-1}]=0,\qquad
+ [[D,\pi(a)],J\pi(b)J^{-1}]=0.
+```
+Orientability and Poincare duality are additional requirements; they do not follow merely from compact resolvent and bounded commutators.
 
-*Moreover, the triple is orientable and satisfies Poincaré duality.*
+</div>
+
+This definition makes the missing data in a projection-only argument visible. A coherent subspace can be useful without carrying a faithful algebra action, a self-adjoint Dirac operator, a real structure, or a nondegenerate intersection form.
+
+## What a fixed-point projection can preserve
+
+<div id="thm:compression" class="theorem">
+
+**Theorem 3** (Reducing-projector spectral-triple theorem). *Let $`(\mathcal{A},\mathcal{H},D,J,\Gamma,\pi)`$ be a real even spectral triple and let $`P`$ be an orthogonal projection such that:*
+
+1.  *$`P`$ commutes with $`\pi(a)`$ for every $`a\in\mathcal{A}`$;*
+
+2.  *$`P`$ reduces $`D`$, equivalently it commutes with the spectral projections of $`D`$;*
+
+3.  *$`P`$ commutes with $`J`$ and $`\Gamma`$; and*
+
+4.  *the restricted representation $`\pi_P(a)=P\pi(a)|_{P\mathcal{H}}`$ is faithful.*
+
+*Then
+``` math
+(\mathcal{A},P\mathcal{H},D_P,J_P,\Gamma_P,\pi_P),
+ \qquad D_P=D|_{P\mathcal{H}},
+```
+is a real even spectral triple with the inherited KO signs and order-zero and order-one relations. Orientability and Poincare duality are inherited only when the compressed Hochschild cycle and intersection pairing satisfy the corresponding axioms.*
 
 </div>
 
 <div class="proof">
 
-*Idea.* Compact resolvent and bounded commutators follow from ellipticity on compact $`Y_4`$ and bounded geometry . The KO-relations use KO$`(Y_4)=4`$, KO$`(F)=6`$, hence KO$`=2`$ with the sign table of . The order-one condition for $`A_F=\mathbb{C}\oplus\mathbb{H}\oplus M_3(\mathbb{C})`$ in the standard representation is classical . Orientability and Poincaré duality follow from the Hochschild cycle and the local index formula . ◻
+*Proof.* Because $`P`$ reduces $`D`$, the restriction $`D_P`$ is self-adjoint. On $`P\mathcal{H}`$,
+``` math
+(D_P-i)^{-1}=P(D-i)^{-1}P,
+```
+which is compact. For $`a\in\mathcal{A}`$,
+``` math
+[D_P,\pi_P(a)]=P[D,\pi(a)]P,
+```
+so the commutator is bounded. Commutation of $`P`$ with $`J`$ and $`\Gamma`$ restricts the real and graded relations, while the order-zero and order-one identities follow by compression. Faithfulness is assumed explicitly. Neither a Hochschild orientation cycle nor nondegeneracy of the finite intersection form is implied by these operator restrictions. ◻
 
 </div>
 
-# Spectral action and asymptotics from MTT
+<div id="cor:projection-limit" class="corollary">
 
-#### Definition.
-
-For a positive, even cut-off $`f`$ and scale $`\Lambda>0`$,
-``` math
-S_{\mathrm{spec}}(f,\Lambda)\;:=\;\mathrm{Tr}\,f(D/\Lambda).
-```
-
-#### Asymptotics.
-
-As $`\Lambda\to\infty`$ one has the standard expansion
-``` math
-\begin{equation}
-\label{eq:spec-exp}
-S_{\mathrm{spec}}(f,\Lambda)\ \sim\ \sum_{k\ge 0} f_{4-2k}\,\Lambda^{\,4-2k}\,a_{2k}(D^{2})
-\;+\; f(0)\,\zeta_{D}(0),
-\tag{1}
-\end{equation}
-```
-``` math
-f_{n}\;:=\;\frac{1}{\Gamma(n/2)}\int_{0}^{\infty} f(u)\,u^{\frac{n}{2}-1}\,du,
-\quad\text{and}\quad
-a_{2k}(D^{2})\ \text{are the Seeley–DeWitt coefficients of }D^{2}\ \text{\cite{Seeley1967,Vassilevich2003,Gilkey1975}}.
-```
-For $`D=D_M\otimes \mathbf{1}+\gamma_5\otimes D_F`$ the leading terms yield the Einstein–Hilbert and cosmological terms, Yang–Mills actions, and a scalar (Higgs) potential .
-
-<div id="thm:spec-from-MTT" class="theorem">
-
-**Theorem 3** (MTT$`\to`$spectral action). *At the MTT coherent fixed point, taking $`\Lambda=\Lambda_{\mathrm{gap}}`$, the coefficients $`a_{2k}(D^2)`$ are functions of the bottleneck vector $`\Theta`$ (spectral gaps, volumes, harmonic norms, curvature overlaps). Hence the gravitational and gauge couplings in <a href="#eq:spec-exp" data-reference-type="eqref" data-reference="eq:spec-exp">[eq:spec-exp]</a> are functions of $`\Theta`$, consistent with the overlap/running map used in the MTT amplitudes paper.*
+**Corollary 4** (Limit of fixed-point reasoning). *A fixed-point or harmonic projector alone does not construct a spectral triple. It must either act on prior spectral-triple data as in <a href="#thm:compression" data-reference-type="ref+Label" data-reference="thm:compression">3</a>, or an independent theorem must construct the algebra, representation, Dirac domain, real structure, grading, and finite axioms on its image.*
 
 </div>
 
-# Finite algebra, inner fluctuations, and the SM embedding
+This is the precise separation between the MTT fixed-point architecture and the NCG encoding. The corrected MTT Foundation supplies typed Hilbert-bundle, projector, gap, and stability hypotheses; it does not automatically supply the inputs of <a href="#thm:compression" data-reference-type="ref+Label" data-reference="thm:compression">3</a>.
 
-#### Finite algebra and representation.
+# The finite MTT carrier and the algebra no-go
 
-We take $`A_F=\mathbb{C}\oplus\mathbb{H}\oplus M_3(\mathbb{C})`$ with its standard representation on $`H_F`$ as in the Connes–Chamseddine NCG–SM model . The unimodularity condition removes the extra $`U(1)`$ and yields the SM gauge group
+## The qutrit algebra is not the Standard Model algebra
+
+The selected finite qutrit package is
 ``` math
-G\;=\;U(1)_Y\times SU(2)_L\times SU(3)_c.
+\mathcal{A}_{Q}=\mathbb{C}_{\mathrm{family}}^3\otimes M_3(\mathbb{C})
+    \cong M_3(\mathbb{C})\oplus M_3(\mathbb{C})\oplus M_3(\mathbb{C}).
+```
+The original three-summand Standard Model candidate is
+``` math
+\mathcal{A}_{F}^{(0)}=\mathbb{C}\oplus\mathbb{H}\oplus M_3(\mathbb{C}).
 ```
 
-#### Inner fluctuations and Higgs.
+<div id="prop:no-direct" class="proposition">
 
-Let $`A=\sum_i a_i [D,b_i]\in\Omega_D^1(A)`$. Inner fluctuations $`D\mapsto D_A:=D+A+J A J^{-1}`$ produce gauge fields in the continuous directions and a finite connection (the Higgs) from the internal part. The corresponding bosonic action is generated by the spectral action <a href="#eq:spec-exp" data-reference-type="eqref" data-reference="eq:spec-exp">[eq:spec-exp]</a> .
-
-<div id="prop:inner-fluct" class="prop">
-
-**Proposition 4** (Inner fluctuations generate gauge *and* Higgs). *With $`A\in\Omega_D^1(A)`$, the fluctuation $`D\mapsto D_A`$ yields the SM gauge potentials and a Higgs multiplet from the finite connection. The couplings $`(g_{1},g_{2},g_{3})`$ and the Higgs-sector coefficients are overlap integrals fixed by $`\Theta`$.*
+**Proposition 5** (No direct algebra identification). *There is no real involutive-algebra isomorphism $`\mathcal{A}_{Q}\cong\mathcal{A}_{F}^{(0)}`$.*
 
 </div>
 
-#### Fermions and Yukawas.
+<div class="proof">
 
-$`H`$ contains SM fermions in the usual representation; three families arise from triple overlaps in the MTT geometry. The finite Dirac operator $`D_F`$ encodes Yukawa matrices (and, if present, Majorana masses) in a way compatible with KO$`(F)=6`$ and the order-one condition .
-
-<div id="thm:SM-embedding" class="theorem">
-
-**Theorem 5** (NCG–SM content from MTT). *The MTT$`\to`$NCG embedding reproduces the SM gauge and fermion content and Higgs sector of the Connes–Chamseddine model, with all coefficients controlled by $`\Theta`$.*
+*Proof.* The real dimensions are
+``` math
+\dim_{\mathbb{R}}\mathcal{A}_{Q}=54,\qquad
+ \dim_{\mathbb{R}}\mathcal{A}_{F}^{(0)}=24.
+```
+Their centers also have different real dimensions:
+``` math
+\dim_{\mathbb{R}}Z(\mathcal{A}_{Q})=6,\qquad
+ \dim_{\mathbb{R}}Z(\mathcal{A}_{F}^{(0)})=5.
+```
+Either invariant rules out an isomorphism. ◻
 
 </div>
 
-# Renormalization and consistency
+The lane-wise corner construction of A44 is an exact abstract reduction, but A45 corrects its physical interpretation: the $`\mathbb{C}^3`$ label is the family/character factor and cannot simultaneously be used as three family-dependent gauge-rank lanes. The physical construction therefore keeps
+``` math
+\mathcal{H}_{\mathrm{chiral}}
+   =\mathbb{C}^3_{\mathrm{family}}\otimes\mathcal{H}_{16},
+ \qquad
+ \rho_{\mathrm{gauge}}
+   =\mathbf{1}_3\otimes\rho_{16},
+```
+and builds the gauge factor separately from the selected rank flag.
 
-#### Running.
+## Native automorphisms and the global gauge group
 
-Heat-kernel/FRG flow of spectral-action couplings matches the renormalization map used in the MTT amplitudes paper; see for the effective average action and for pAQFT on curved backgrounds.
+On the selected rank-one, rank-two, and determinant-trivial rank-three carriers, the automorphism groups are
+``` math
+U(1),\qquad USp(2)\cong SU(2),\qquad SU(3).
+```
+The rank-two result uses the selected symplectic antiunitary $`J=\epsilon K`$, and the rank-three result uses the determinant-trivial carrier. On the explicit chiral representation the diagonal central kernel is $`\mathbb{Z}_6`$. Thus the faithful low-energy group is
+``` math
+G_{\mathrm{SM}}
+   =\frac{SU(3)\times SU(2)\times U(1)_Y}{\mathbb{Z}_6}.
+```
+The associated $`48`$-state three-family chiral representation contains the rows $`Q,u^c,d^c,L,e^c,N^c`$ and passes the local and global anomaly tests in the A46–A47 packets .
 
-#### Consistency with MTT containments.
+# The completed finite real-even triple
 
-The NCG embedding is compatible with the MTT containments of GR (metric sector), QFT (Hilbert/CCR), SM (gauge/fermion families), and UV-finite QG (Stieltjes/Bernstein OS positivity and SPT Gaussian damping). The same $`\Theta`$ that fixes the spectral-action couplings also controls overlaps in the QG and EFT/KK analyses.
+## Why the neutral summand is required
 
-#### Superset bottleneck.
+The explicit particle-antiparticle construction has complex dimension $`96`$. For the accepted charged and neutral profile matrices, the finite Dirac operator satisfies self-adjointness, oddness, KO-dimension-six reality, order zero, and order one. The three-summand candidate $`\mathcal{A}_{F}^{(0)}`$, however, fails two remaining finite axioms:
 
-Superset bottleneck. As in the Superset paper, the same bottleneck vector $`\Theta`$ (gaps, harmonic norms, volumes, curvature/overlap integrals) controls the spectral-action coefficients here; hence the gravitational, gauge, and Yukawa sectors are predicted jointly.
+- the $`N_R:\mathbb{C}\!-\!\mathbb{C}`$ self-edge obstructs the required orientation; and
 
-# Conclusions and outlook
+- the antisymmetric $`3\times3`$ intersection form has determinant zero.
 
-We constructed a first-principles MTT$`\to`$NCG embedding: an almost-commutative spectral triple with the correct KO/real/grading structure; an explicit spectral-action expansion whose coefficients are functions of $`\Theta`$; and an inner-fluctuation mechanism that generates SM gauge bosons and the Higgs with unimodularity giving the SM gauge group. The construction is consistent with the rest of the MTT program (GR, QFT, SM, and UV-finite QG).
+The minimal selected completion is
+``` math
+\mathcal{A}_{F}=\mathbb{C}\oplus\mathbb{H}\oplus M_3(\mathbb{C})\oplus\mathbb{C}_{N},
+```
+where
+``` math
+\mathbb{C}_{N}=\operatorname{End}_{\mathbb{C}}(1_M),\qquad 1_M=N^c.
+```
+Only the neutral edge is changed, from $`\mathbb{C}\!-\!\mathbb{C}`$ to $`\mathbb{C}_{N}\!-\!\mathbb{C}`$. The completion has an explicit $`17`$-term Hochschild zero-cycle and intersection determinant $`4`$ per family, hence $`324`$ for the three-family product. No continuous parameter or new state is added.
 
-#### Outlook.
+## One physical abelian circle
 
-\(i\) Compute $`\Theta`$-dependent coupling unification and threshold corrections from <a href="#eq:spec-exp" data-reference-type="eqref" data-reference="eq:spec-exp">[eq:spec-exp]</a>; (ii) compare $`\Theta`$-predicted Yukawa textures with data; (iii) explore neutrino sectors (Majorana masses), seesaw, and possible grand-unified finite algebras.
+Let $`(\alpha,\mu,\nu)`$ denote the phases of $`\mathbb{C},M_3(\mathbb{C}),\mathbb{C}_{N}`$. The independent anomaly equations are
+``` math
+\alpha+3\mu=0,\qquad \alpha-\nu=0.
+```
+Their primitive integer null vector is
+``` math
+(\alpha,\mu,\nu)=(3,-1,3),
+```
+which gives
+``` math
+6Y(Q,u^c,d^c,L,e^c,N^c)
+   =(1,-4,2,-3,6,0).
+```
+The cubic anomaly vanishes on the same line, whereas an independent $`\mathbb{C}_{N}`$ phase is anomalous. Distinct algebra sheets therefore share one anomaly-free physical hypercharge circle.
+
+<div id="thm:finite" class="theorem">
+
+**Theorem 6** (Current finite-triple result). *The A45–A50 packet chain defines an explicit three-family real-even finite triple on the completed algebra $`\mathcal{A}_{F}`$ at the declared profile tier. The representation, KO signs, order-zero and order-one identities, orientability, Poincare pairing, anomaly-free hypercharge line, and global $`\mathbb{Z}_6`$ quotient are finite executable statements. The numerical entries of $`D_{F}`$, including Yukawa and Majorana data, remain accepted profile coordinates rather than source-derived MTT predictions.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The representation and anomaly table are A46; the native automorphism group and central quotient are A47; the explicit bimodule is A48; the finite Dirac and three-summand obstruction are A49; and the neutral completion and unique abelian anomaly-free line are A50. Their hash-addressed artifacts and independent verifiers are recorded in the curated result repository . The profile status of the entries of $`D_{F}`$ is part of the A49 contract and is not changed by the algebraic checks. ◻
+
+</div>
+
+# Finite one-forms and the Higgs sector
+
+For the completed finite triple, define
+``` math
+\Omega_{D_{F}}^{1}(\mathcal{A}_{F})
+   =\operatorname{span}\{\rho(a)[D_{F},\rho(b)]:a,b\in\mathcal{A}_{F}\}.
+```
+The A51 calculation evaluates all $`26\times26=676`$ real-algebra basis pairs and then imposes self-adjoint real fluctuations
+``` math
+A_{\mathrm{real}}=A+J_FAJ_F^{-1}.
+```
+
+<div id="prop:higgs" class="proposition">
+
+**Proposition 7** (Raw scalar multiplicity and selected projection). *The unrestricted real fluctuation space has real rank $`12`$ and decomposes into three rank-four scalar-doublet modules,
+``` math
+H_{\mathrm{up}},\qquad
+ H_{\mathrm{down/charged\ lepton}},\qquad
+ H_{\mathrm{neutrino}}.
+```
+Consequently the raw completed finite triple is not automatically the one-Higgs Standard Model. The selected q79/proto-spinor alignment rule
+``` math
+H_{\mathrm{up}}=H_{\mathrm{neutrino}}=H,\qquad
+ H_{\mathrm{down}}=H_{\mathrm{charged\ lepton}}
+   =-\epsilon\overline{H}
+```
+defines a self-adjoint idempotent rank-four submodule and removes the eight unwanted real scalar directions.*
+
+</div>
+
+The finite execution reports inclusion residual $`6.152\times10^{-15}`$ in its floating-point realization. The surviving module is one complex $`SU(2)`$ doublet of hypercharge $`+1/2`$, with pseudoreality supplying its conjugate channels. This is an executed finite selection. It is not yet a derivation of the same projector from the physical nonzero-Chern q79 HYM connection.
+
+For three families, the finite gauge traces are
+``` math
+k_Y:k_2:k_3=10:6:6.
+```
+After the conventional $`5/3`$ hypercharge normalization they become $`6:6:6`$. The accepted profile $`D_{F}`$ gives
+``` math
+a=\operatorname{Tr}(Y^\dagger Y)=3.15667873398489,\qquad
+ b=\operatorname{Tr}((Y^\dagger Y)^2)=3.31696406124945,
+```
+``` math
+\frac{b}{a^2}=0.332874093710992.
+```
+These are profile traces at $`M_Z`$, not high-scale predictions.
+
+# Euclidean product triple and the Wick contract
+
+Let $`(Y_E,g_E)`$ be a compact oriented four-dimensional Riemannian spin manifold with spin triple
+``` math
+\bigl(C^\infty(Y_E),L^2(Y_E,S_E),D_E^{(4)},J_E,\gamma_5\bigr).
+```
+Given the finite factor of <a href="#thm:finite" data-reference-type="ref+Label" data-reference="thm:finite">6</a>, the standard product data are
+``` math
+\begin{aligned}
+ \mathcal{A}&=C^\infty(Y_E)\otimes\mathcal{A}_{F},\\
+ \mathcal{H}&=L^2(Y_E,S_E)\otimes\mathcal{H}_{F},\\
+ D_{\mathrm{prod}}
+   &=D_E^{(4)}\otimes\mathbf{1}+\gamma_5\otimes D_{F}.
+\end{aligned}
+```
+
+<div id="thm:product" class="theorem">
+
+**Theorem 8** (Conditional product-triple theorem). *If the Euclidean spin triple and the finite real-even triple satisfy the standard sign, order, orientation, and nondegeneracy hypotheses, then their graded product is an almost-commutative real even spectral triple. Inner fluctuations generate the associated gauge fields and finite scalar modules.*
+
+</div>
+
+This is a standard NCG theorem ; it is not a theorem that MTT has selected $`(Y_E,g_E)`$ or its Dirac operator.
+
+<div class="definition">
+
+**Definition 9** (Physical Wick contract). A physical use of <a href="#thm:product" data-reference-type="ref+Label" data-reference="thm:product">8</a> requires, at minimum:
+
+1.  a Lorentzian spin background and causal field domain;
+
+2.  a declared analytic continuation to the Euclidean background;
+
+3.  maps for spinors, gauge fields, scalar fields, actions, and boundary conditions;
+
+4.  a contour and inverse domain controlling singularities and zero modes; and
+
+5.  a theorem relating Euclidean correlation functions or determinants to Lorentzian observables.
+
+</div>
+
+The spectral-action formulation is intrinsically Euclidean at this stage. Wick rotation and the removal of unphysical fermion doubling require a separate prescription . A compact phase circle or the q79 shared differential line is not physical time and does not supply this contract automatically.
+
+# Spectral action: conditional output and no-go results
+
+For a positive cutoff profile $`f`$ and scale $`\Lambda`$, write the bosonic spectral action in the convention
+``` math
+S_B(f,\Lambda)=\operatorname{Tr}f(D_{\mathrm{prod}}^2/\Lambda^2).
+```
+Under the usual heat-kernel hypotheses,
+``` math
+S_B(f,\Lambda)
+ \sim \Lambda^4 f_4 a_0(D_{\mathrm{prod}}^2)
+     +\Lambda^2 f_2 a_2(D_{\mathrm{prod}}^2)
+     +f_0 a_4(D_{\mathrm{prod}}^2)+\cdots,
+```
+where, in this convention,
+``` math
+f_4=\int_0^\infty f(u)u\,du,\qquad
+ f_2=\int_0^\infty f(u)\,du,\qquad
+ f_0=f(0).
+```
+The heat-kernel theorem produces cosmological, Einstein–Hilbert, Yang–Mills, scalar kinetic and potential, and nonminimal curvature terms from the supplied product triple .
+
+## What the finite execution closes
+
+Combining <a href="#thm:product" data-reference-type="ref+Label" data-reference="thm:product">8</a> with <a href="#prop:higgs" data-reference-type="ref+Label" data-reference="prop:higgs">7</a> closes the bosonic *operator content* at profile tier: three gauge terms, one Higgs covariant kinetic term and potential, and the standard gravitational terms. It does not fix absolute coefficients until the base geometry, cutoff data, field normalization, and RG transport are supplied.
+
+## Universal gauge normalization is excluded
+
+Equal normalized finite traces with one universal $`f_0`$ and identity kinetic metric would require
+``` math
+g_1^{\mathrm{GUT}}(Q)=g_2(Q)=g_3(Q)
+```
+at one scale. On the selected pure-Standard-Model running branch, A52 finds the best one-loop point
+``` math
+Q_{\mathrm{best}}=1.71709699661\times10^{14}\ {\rm GeV},
+```
+``` math
+(g_1,g_2,g_3)
+   =(0.556290097,0.535101507,0.560067228),
+\qquad
+ \frac{\max g_i}{\min g_i}=1.046656046.
+```
+The archived multi-loop trajectory has the same failure.
+
+<div id="prop:gauge-nogo" class="proposition">
+
+**Proposition 10** (Universal-normalization no-go). *On the selected pure-Standard-Model profile branch, no single universal spectral moment with identity gauge kinetic metric reproduces all three running gauge couplings.*
+
+</div>
+
+The exact profile reconstruction instead uses
+``` math
+K_{\mathrm{gauge}}
+   =\operatorname{diag}
+     (1.9568425763574,1,0.309837025907476),
+\qquad
+ f_0=0.397408225924864,
+```
+in $`g_i^{-2}=6f_0K_i`$, with residual $`4.578\times10^{-16}`$. Its two relative entries are the two measured relative coupling coordinates. They add no parameters beyond the Standard Model profile but are not MTT predictions.
+
+## Moment identifiability
+
+The displayed action determines only
+``` math
+f_0K_i,\qquad f_2\Lambda^2,\qquad f_4\Lambda^4.
+```
+
+<div id="prop:moments" class="proposition">
+
+**Proposition 11** (Spectral-moment identifiability). *The spectral action above cannot separately determine $`\Lambda,f_2,f_4`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* For every $`c>0`$, the transformation
+``` math
+\Lambda\mapsto c\Lambda,\qquad
+ f_2\mapsto f_2/c^2,\qquad
+ f_4\mapsto f_4/c^4
+```
+leaves $`f_2\Lambda^2`$ and $`f_4\Lambda^4`$ unchanged. ◻
+
+</div>
+
+The former claim that a fixed-point gap alone fixes the cutoff function, spectral moments, Newton normalization, and vacuum term is therefore withdrawn. A selected proper-time measure and source-derived overlap metric would be needed for that stronger result.
+
+# Relation to q79, fixed points, and quantum field theory
+
+## The shared circle
+
+The finite triple has distinct complex algebra sheets but one anomaly-free hypercharge circle. The corrected Foundation and Proto-Spinor papers also identify a universal flat q79 differential line and finite carrier actions. The equality of these roles is not automatic. A physical identification must preserve the selected connections, covariant derivatives, Hessians, and holonomies. The nonzero-Chern HYM realization and its local strain-to-q79 continuum intertwiner remain open.
+
+## Renormalization
+
+The A03 observable functor recovers perturbative Standard Model observables after importing the standard gauge-fixed renormalized action and BRST/Faddeev–Popov quantization. That result is compatible with the finite NCG encoding but does not derive quantization from the spectral triple. Conversely, the Euclidean spectral action does not establish a nonperturbative Lorentzian QFT, a quantum BV pushforward, or ultraviolet completeness. The v3 claim that FRG, pAQFT, and the MTT quantum-gravity program “match” from the common vector $`\Theta`$ is therefore replaced by this typed compatibility statement.
+
+# Tiered synthesis theorem
+
+<div id="thm:synthesis" class="theorem">
+
+**Theorem 12** (Selected MTT–NCG encoding theorem). *Assume:*
+
+1.  *the exact selected finite carrier, chiral representation, native gauge automorphisms, neutral completion, and anomaly-free circle of A45–A50;*
+
+2.  *the accepted profile $`D_{F}`$ and the selected rank-four scalar projector executed in A51;*
+
+3.  *an independently supplied compact four-dimensional Euclidean spin triple; and*
+
+4.  *a cutoff profile, scale, field normalization, and RG convention.*
+
+*Then the standard almost-commutative product construction gives a real even spectral triple and reproduces the bosonic Standard Model operator content with one Higgs doublet at the declared profile tier.*
+
+*The conclusion does not derive:*
+
+1.  *the physical Lorentzian spacetime or its Wick rotation;*
+
+2.  *the accepted entries of $`D_{F}`$ from source geometry;*
+
+3.  *a universal spectral normalization on the pure-SM branch;*
+
+4.  *a unique cutoff function, scale, or spectral moments;*
+
+5.  *a no-knob Standard Model parameter point; or*
+
+6.  *the renormalized quantum theory or ultraviolet completion.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The finite premises give <a href="#thm:finite" data-reference-type="ref+Label" data-reference="thm:finite">6</a> and <a href="#prop:higgs" data-reference-type="ref+Label" data-reference="prop:higgs">7</a>. The imported Euclidean premise gives <a href="#thm:product" data-reference-type="ref+Label" data-reference="thm:product">8</a>; the standard heat-kernel expansion then gives the bosonic operator content. The six exclusions follow respectively from the missing Wick contract, the profile status of $`D_{F}`$, the no-go in <a href="#prop:gauge-nogo" data-reference-type="ref+Label" data-reference="prop:gauge-nogo">10</a>, the degeneracy in <a href="#prop:moments" data-reference-type="ref+Label" data-reference="prop:moments">11</a>, the open source-value program, and the absence of a quantum transport theorem. ◻
+
+</div>
+
+# Reproducibility and remaining frontier
+
+The finite results used here are archived in the curated calculation repository . The principal result identifiers are:
+
+- **A46:** `typed_family_representation`; the $`48`$-state representation and anomaly table.
+
+- **A47:** `native_gauge_group`; native $`U(1)`$, $`SU(2)`$, $`SU(3)`$ automorphisms and the $`\mathbb{Z}_6`$ quotient.
+
+- **A49:** `physical_df_96`; the explicit profile $`96\times96`$ finite Dirac operator and finite-axiom tests.
+
+- **A50:** `neutral_summand_hypercharge`; the neutral completion and unique anomaly-free hypercharge line.
+
+- **A51:** `finite_inner_fluctuation`; the $`676`$-pair one-form execution, selected one-Higgs projector, and finite traces.
+
+The next strict mathematical exits are:
+
+1.  construct the physical nonpullback q79 HYM endpoints and the connection-preserving continuum intertwiner;
+
+2.  derive the entries of $`D_{F}`$ and the overlap kinetic metric without measured profile coordinates;
+
+3.  select a proper-time measure and determine the identifiable spectral products from source geometry;
+
+4.  supply the Lorentzian/Wick and physical-state contracts; and
+
+5.  complete renormalized quantum transport with an uncertainty and observable-comparison theorem.
+
+# Conclusion
+
+The corrected result is narrower than v3 and materially stronger than a disclaimer. MTT now has an executed finite almost-commutative profile encoding: the family and gauge carriers are correctly typed, the finite real-even triple is completed, the anomaly-free circle and global gauge group are explicit, and the finite one-form calculation explains why a selected projector is needed to obtain one Higgs doublet. The same analysis also identifies exact obstructions: the qutrit algebra cannot simply be renamed as the Standard Model algebra, the uncompleted three-summand finite triple fails orientation and duality, the raw fluctuation space has three doublets, and a single universal spectral normalization fails on the selected pure-SM running branch. What remains is not “derive NCG again.” It is to source the Euclidean/Lorentzian bridge, finite values, overlap metric, and spectral moments from one physical MTT geometry.

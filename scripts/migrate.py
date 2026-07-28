@@ -665,12 +665,15 @@ def prepare_paper_records(
         authors = list(native.get("authors") or authors) if native else authors
         date = str(native.get("date") or date) if native else date
         abstract = str(native.get("abstract") or abstract) if native else abstract
-        result_refs = (
-            sorted({str(item) for item in native.get("result_refs") or [] if str(item)})
-            if native
-            else []
-        )
         replacement = replacement_by_selected.get(source_path) if not native else None
+        result_source = native if native else (replacement or {})
+        result_refs = sorted(
+            {
+                str(item)
+                for item in result_source.get("result_refs") or []
+                if str(item)
+            }
+        )
         configured_paper_id = replacement.get("paper_id") if replacement else None
         paper_id = (
             str(native.get("paper_id") or slugify(title))
