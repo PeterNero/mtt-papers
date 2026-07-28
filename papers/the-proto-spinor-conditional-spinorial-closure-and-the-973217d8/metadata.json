@@ -46,6 +46,11 @@
   "schema": "mtt.paper.v1",
   "source_files": [
     {
+      "bytes": 345546,
+      "path": "main.pdf",
+      "sha256": "63227daf0fc9bde0400671159845f87b08589ae66fbf0eaa316f3b25b4672228"
+    },
+    {
       "bytes": 21335,
       "path": "main.tex",
       "sha256": "16295755bf35438965e5eab38d8004f2831e888b0706a0548abccc0091073ce5"
@@ -59,7 +64,7 @@
   "source_provenance": {
     "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/The_Proto_Spinor__Conditional_Spinorial_Closure_and_q79_Interface_v6"
   },
-  "source_tree_sha256": "4f784cee6518139c106b3a484d072b794209b1908736f22b4f9e9583f3b320e4",
+  "source_tree_sha256": "4e48a18cd958f635b1e1f2eaf4ff16f820a6d00c2aa74bb8e3a519f365430f95",
   "title": "The Proto-Spinor: Conditional Spinorial Closure and the q79 Interface Corrected sixth edition",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
