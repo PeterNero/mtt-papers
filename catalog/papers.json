@@ -9190,7 +9190,7 @@
       "zenodo_releases": []
     },
     {
-      "abstract": "Decoherence suppresses interference and stabilizes preferred records, but a nonselective decoherence channel does not contain an outcome label, a conditional state update, or a rule that one outcome is realized. This revision makes the separation exact in finite-dimensional quantum theory and states its consequence for Modal Triplet Theory. A pointer dephasing channel is completely positive and trace preserving, removes off-diagonal pointer blocks, and preserves pointer populations. The same nonselective channel is compatible with distinct outcome instruments having different probability laws, so the channel alone selects neither outcomes nor probabilities. An MTT basin boundary or chart exit likewise does not choose a successor basin. A completed model must provide an outcome-indexed instrument or normalized selection-completion kernel and its source. The current canonical q79 binary recorder supplies an exact stopped-output law on its declared finite domain, while general apparatus contexts and objective single-history actualization remain open.",
+      "abstract": "Measurement is not taken to be a fundamental act, observer intervention, or separate kind of physics. It is an ordinary system-apparatus-environment process described with a retained record; discarding that record leaves a nonselective channel. This revision makes the data distinction exact in finite-dimensional quantum theory and states its consequence for Modal Triplet Theory. A pointer dephasing channel is completely positive and trace preserving, removes off-diagonal pointer blocks, and preserves pointer populations. The same nonselective channel is compatible with distinct outcome instruments having different probability laws, so the channel alone specifies neither records nor their probabilities. An MTT basin boundary or chart exit likewise does not choose a successor basin. A complete outcome-resolved model must provide an instrument or normalized continuation kernel and its source. The current canonical q79 binary recorder supplies an exact stopped-output law on its declared finite domain, while general apparatus contexts and objective single-history actualization remain open.",
       "authors": [
         "Peter Nero"
       ],
@@ -9223,22 +9223,22 @@
         "updated": "2026-01-15T20:09:28.040300+00:00",
         "version": "v1.0"
       },
-      "main_tex_sha256": "c0118f95260a40cfd73ce6bc8c62a07c0f2aedc493329dab906568af9fdc7681",
+      "main_tex_sha256": "55be9d5bb52b2876f9aed827e1e8cc70b83877453e999d22ff97b5c78deb5ef2",
       "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
-      "paper_md_sha256": "dca30e9e22aece4d119290e6211e3e42811b71c87d606ab3c0cf405a1bd0ad85",
+      "paper_md_sha256": "42afafadccea23a7550162a91195208b1568ee3cffe009d87b2c6f6c0d338944",
       "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "bb4d3fd3767672ef2773cfd74d679732b4527922e97c930a520a2c1025970879",
+        "revision_evidence_sha256": "f3052ba05778f83e90f163ba63646dd527b724d6702863a4eb06e7eb3387da8b",
         "selected_revision": true,
         "superseded_source_path": "8 Measurement, Selection & Computation/_work/Why_Decoherence_Cannot_Replace_Measurement__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory"
       },
       "source_provenance": {
         "legacy_source_path": "8 Measurement, Selection & Computation/_work/Why_Decoherence_Cannot_Replace_Measurement__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory"
       },
-      "source_tree_sha256": "9e13b6d2febac01e0a4dd80200c15a6c29ba412a3f9d93beddff23c64ad328f1",
-      "title": "Why Decoherence Cannot Replace Measurement: Suppression, Selection, and the Missing Completion Map in Modal Triplet Theory",
+      "source_tree_sha256": "d63d8415e5e9bf6d4b686c5ce5b874f10e4f094124e1e8bb5c1b858f7e6b088f",
+      "title": "Why Decoherence Cannot Replace Measurement: Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {

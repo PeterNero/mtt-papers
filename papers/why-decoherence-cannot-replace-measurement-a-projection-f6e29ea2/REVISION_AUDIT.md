@@ -22,10 +22,12 @@ did not consistently respect that thesis. It repeatedly replaced the missing
 selection law with assertions that noninvertible projection, admissibility
 loss, or a basin boundary enforces capture.
 
-Version 2 makes the distinction exact. A decoherence channel is a
-nonselective completely positive trace-preserving map. A measurement
-completion is an outcome-indexed instrument or normalized continuation kernel.
-The former does not determine the latter.
+Version 2 makes the distinction exact without giving measurement fundamental
+status. Measurement is an ordinary system--apparatus--environment interaction
+described with its record retained. A decoherence channel is the
+record-discarded, nonselective completely positive trace-preserving
+description. An outcome-resolved description is an instrument or normalized
+continuation kernel. The former does not determine the latter.
 
 ## Required corrections
 
@@ -38,7 +40,7 @@ derived.
 **Resolution:** Version 2 states a conditional typed basin theorem. If a
 selected source emits basins, basin-preserving channels, record algebra, and a
 completion instrument, then decoherence and measurement can be represented as
-intra- and inter-basin operations.
+intra- and inter-basin resolutions of the same ordinary physical process.
 
 **Status:** Resolved.
 
@@ -105,6 +107,10 @@ Those are the stronger open rows in `B.QM.01`.
 
 ## Additional contextual repairs
 
+- Measurement is explicitly treated as ordinary record-forming physics, not a
+  privileged act, observer intervention, or separate dynamical law.
+- The completion map completes the effective description; it is not an extra
+  operation performed by nature.
 - Noninjectivity is no longer called the source of irreversibility or
   selection.
 - Quantum Darwinism is discussed as record redundancy, not as a theory that

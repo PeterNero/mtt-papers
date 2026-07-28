@@ -1,25 +1,27 @@
 ---
 abstract: |
-  Decoherence suppresses interference and stabilizes preferred records, but a nonselective decoherence channel does not contain an outcome label, a conditional state update, or a rule that one outcome is realized. We make this separation exact in finite-dimensional quantum theory and then state its consequence for Modal Triplet Theory (MTT). For a pointer resolution $`\{P_a\}`$, the dephasing channel $`\Delta_P(\rho)=\sum_aP_a\rho P_a`$ is completely positive and trace preserving, removes every off-diagonal pointer block, and preserves all pointer populations. We prove that the same nonselective channel is compatible with distinct outcome instruments having different probability laws. Hence the channel alone selects neither outcomes nor probabilities.
+  Measurement is not taken to be a fundamental act, an observer intervention, or a separate kind of physics. It is an ordinary system–apparatus–environment process described with a retained physical record. If that record is discarded, the same coupling is represented only by a nonselective channel. Decoherence can suppress interference and stabilize preferred records, but the record-discarded channel does not contain an outcome label or a conditional state update. We make this data distinction exact in finite-dimensional quantum theory and then state its consequence for Modal Triplet Theory (MTT). For a pointer resolution $`\{P_a\}`$, the dephasing channel $`\Delta_P(\rho)=\sum_aP_a\rho P_a`$ is completely positive and trace preserving, removes every off-diagonal pointer block, and preserves all pointer populations. We prove that the same nonselective channel is compatible with distinct outcome instruments having different probability laws. Hence the channel alone specifies neither records nor their probabilities.
 
-  An MTT basin boundary or chart exit has the same logical limitation: it marks the failure of a supplied effective chart, but it does not choose a successor basin. A completed measurement model must additionally provide an outcome-indexed completely positive instrument or a normalized selection-completion kernel, together with its source and domain. This yields a rigorous conditional bridge: decoherence may represent intra-basin suppression, whereas measurement requires inter-basin completion data. The current canonical q79 binary recorder supplies an exact stopped-output law on its declared finite domain, but general apparatus contexts and objective single-history actualization remain open. The paper therefore retains the decoherence-versus-selection distinction while withdrawing any inference of capture, Born probabilities, irreversibility, or objective outcomes from projection, noninjectivity, admissibility loss, or chart exit alone.
+  An MTT basin boundary or chart exit has the same logical limitation: it marks the failure of a supplied effective chart, but it does not choose a successor basin. A complete outcome-resolved model must additionally provide an outcome-indexed completely positive instrument or a normalized selection-completion kernel, together with its source and domain. This yields a rigorous conditional bridge between record-discarded intra-basin suppression and record-resolved inter-basin continuation. Both are ordinary physical dynamics; the distinction concerns which data the effective description retains. The current canonical q79 binary recorder supplies an exact stopped-output law on its declared finite domain, but general apparatus contexts and objective single-history actualization remain open. The paper therefore retains the decoherence-versus-selection distinction while withdrawing any inference of capture, Born probabilities, irreversibility, or objective outcomes from projection, noninjectivity, admissibility loss, or chart exit alone.
 author:
 - Peter Nero
 current_version: v2
 date: July 2026
-generated_from_main_tex_sha256: c0118f95260a40cfd73ce6bc8c62a07c0f2aedc493329dab906568af9fdc7681
+generated_from_main_tex_sha256: 55be9d5bb52b2876f9aed827e1e8cc70b83877453e999d22ff97b5c78deb5ef2
 paper_id: why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2
 release_state: zenodo_released
 released_version: v1.0
 title: |
   **Why Decoherence Cannot Replace Measurement  
-  Suppression, Selection, and the Missing Completion Map in Modal Triplet Theory**
+  Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory**
 zenodo_doi: 10.5281/zenodo.18261893
 zenodo_record_id: 18261893
 zenodo_url: "https://zenodo.org/records/18261893"
 ---
 
 # Scope and Claim Tier
+
+Throughout this paper, “measurement” names no privileged physical process. It means an ordinary interaction whose macroscopic record is included in the description. The title’s phrase “cannot replace” is therefore a statement about information: a record-discarded marginal cannot provide the outcome-resolved data that were discarded.
 
 Environment-induced decoherence is a dynamical account of interference suppression and pointer stability . The definite-outcome problem asks for something else: why an individual run has a recorded outcome, what its conditional post-measurement state is, and what law governs the alternatives. Conflating these questions obscures both the success of decoherence and the data still required for measurement.
 
@@ -29,7 +31,7 @@ This revision separates four claim tiers.
 
 2.  **Exact result of this paper.** A dephasing channel does not determine an instrument, and loss of an effective chart does not determine a continuation kernel.
 
-3.  **Conditional MTT bridge.** If a selected MTT descent emits basins, basin-preserving channels, and an inter-basin completion instrument, then decoherence and measurement can be represented as intra- and inter-basin operations.
+3.  **Conditional MTT bridge.** If a selected MTT descent emits basins, basin-preserving channels, and an inter-basin completion instrument, then record-discarded and record-resolved descriptions can be represented as intra- and inter-basin operations of the same physical system.
 
 4.  **Current selected finite-domain result.** The canonical q79 binary one-anchor recorder emits an operational stopped-output measure and second-moment capture descent on its declared domain . This is not yet a universal apparatus theorem or an objective single-history theorem.
 
@@ -96,9 +98,9 @@ The off-diagonal blocks vanish, but the output is not either conditional state $
 
 </div>
 
-# Measurement Requires an Instrument
+# Outcome-Resolved Processes Require an Instrument
 
-An outcome-resolved measurement is not represented by its nonselective channel alone.
+An ordinary physical coupling can be represented at two resolutions. If its classical record is discarded, it gives a nonselective channel. If the record is retained, it gives an outcome-resolved instrument.
 
 <div id="def:instrument" class="definition">
 
@@ -119,7 +121,7 @@ is trace preserving. For input $`\rho`$ it defines
 
 </div>
 
-The instrument contains three pieces absent from a nonselective channel: an outcome index, its probability, and its conditional update. If one also claims that exactly one ontic history is actualized, the operational instrument must be supplemented by a statement identifying what constitutes that realized event. The instrument predicts records; the existence of an objective single-history ontology is a further claim.
+The instrument contains three pieces absent from the record-discarded channel: an outcome index, its probability, and its conditional update. This does not introduce a fundamental measurement postulate. It is the outcome-resolved bookkeeping of the same kind of physical interaction. If one additionally claims that exactly one ontic history is actualized, that stronger ontology must identify what constitutes the realized event; it is not required for the ordinary operational meaning of a detector record.
 
 <div id="thm:underdetermination" class="theorem">
 
@@ -149,7 +151,7 @@ have the same nonselective channel $`\Delta_P`$. On $`\lvert+\rangle\langle+\rve
 
 </div>
 
-The artificial family $`\mathcal J^{(q)}`$ is not proposed as a physical detector. Its purpose is logical: the channel does not encode which instrument is physical. A source theorem must select the detector coupling, readout algebra, and instrument independently of the observed target probabilities.
+The artificial family $`\mathcal J^{(q)}`$ is not proposed as a physical detector. Its purpose is logical: after the record is discarded, the channel does not encode which outcome-resolved process produced it. A source theorem must select the detector coupling, readout algebra, and instrument independently of the observed target probabilities.
 
 # The Missing Selection-Completion Map
 
@@ -183,11 +185,11 @@ Its nonselective continuation is the barycenter
 
 </div>
 
-A deterministic continuation is the special case in which the kernel is a point mass. An affine completely positive realization is more strongly encoded by an instrument. Definition <a href="#def:kernel" data-reference-type="ref" data-reference="def:kernel">7</a> is deliberately minimal: it exposes exactly the data that the phrase “capture into a basin” must supply.
+A deterministic continuation is the special case in which the kernel is a point mass. An affine completely positive realization is more strongly encoded by an instrument. Definition <a href="#def:kernel" data-reference-type="ref" data-reference="def:kernel">7</a> is deliberately minimal: it completes the effective mathematical description; it does not add a special physical act. It exposes exactly the data that the phrase “capture into a basin” must supply.
 
 <div id="prop:chart" class="proposition">
 
-**Proposition 8** (Chart exit is not completion). *The statement that a trajectory reaches $`\partial U`$ does not determine $`K_\partial`$. If two successor regions $`\mathcal B_0,\mathcal B_1`$ contain states $`\sigma_0,\sigma_1`$, then both
+**Proposition 8** (Chart exit does not determine continuation). *The statement that a trajectory reaches $`\partial U`$ does not determine $`K_\partial`$. If two successor regions $`\mathcal B_0,\mathcal B_1`$ contain states $`\sigma_0,\sigma_1`$, then both
 ``` math
 K^{(0)}_\partial(a,d\sigma\mid\eta)
  =\delta_{a0}\delta_{\sigma_0}(d\sigma)
@@ -231,7 +233,7 @@ The useful core of the original paper can now be stated without overclaiming.
 
 <div id="thm:bridge" class="theorem">
 
-**Theorem 10** (Conditional suppression–selection bridge). *In a typed basin model, a channel $`\mathcal D_a`$ that suppresses off-diagonal pointer blocks while preserving $`\mathcal B_a`$ is an intra-basin operation. A completion kernel with support in $`\mathcal B_b`$, $`b\neq a`$, is an inter-basin operation. The former does not determine the latter.*
+**Theorem 10** (Conditional record-discarded–record-resolved bridge). *In a typed basin model, a channel $`\mathcal D_a`$ that suppresses off-diagonal pointer blocks while preserving $`\mathcal B_a`$ is an intra-basin operation. A completion kernel with support in $`\mathcal B_b`$, $`b\neq a`$, is an inter-basin operation. These may be two resolutions of one ordinary physical system–apparatus process. The record-discarded channel does not determine the record-resolved kernel.*
 
 </div>
 
@@ -245,13 +247,13 @@ This theorem retains the intended distinction:
 ``` math
 \boxed{
 \begin{aligned}
-\text{decoherence} &\longleftrightarrow
+\text{record discarded} &\longleftrightarrow
   \text{intra-basin suppression and record stabilization},\\
-\text{measurement completion} &\longleftrightarrow
+\text{record retained} &\longleftrightarrow
   \text{an outcome-indexed inter-basin instrument or kernel}.
 \end{aligned}}
 ```
-The arrow is a typed representation, not a proof that both sides have already been emitted by one universal MTT source.
+The arrow is a typed representation, not an ontological division into “measurement physics” and ordinary physics, and not a proof that both sides have already been emitted by one universal MTT source.
 
 # What Current MTT Results Supply
 
@@ -273,7 +275,7 @@ That theorem closes an operational finite-domain row; it does not prove:
 
 Those statements require their own same-source theorems.
 
-# Relation to Standard Measurement Theory
+# Relation to Standard Outcome-Resolved Dynamics
 
 ## Decoherence and pointer stability
 
@@ -281,7 +283,7 @@ Standard decoherence theory derives suppression of interference in reduced state
 
 ## Instruments and trajectories
 
-The Davies–Lewis instrument formalism associates classical outcome statistics and conditional quantum operations with a measurement . Quantum-trajectory descriptions add a monitored record and an unravelling of a nonselective master equation. Different unravellings can represent the same ensemble channel, so the master equation alone does not select a unique record process. MTT must therefore emit its physical readout and instrument, not merely reproduce a reduced channel.
+The Davies–Lewis instrument formalism associates classical outcome statistics and conditional quantum operations with a measurement . Quantum-trajectory descriptions add a monitored record and an unravelling of a nonselective master equation. Different unravellings can represent the same ensemble channel, so the master equation alone does not select a unique record process. This is not evidence for a special measurement force. It says only that MTT must emit the ordinary detector coupling, physical readout, and outcome-resolved instrument, not merely reproduce their record-discarded reduced channel.
 
 ## Redundant records
 
@@ -313,9 +315,9 @@ No algorithmic undecidability theorem follows from the existence of basin bounda
 
 An operational instrument predicts the distribution and conditional state of records. It does not by itself settle whether one ontic history is fundamental, emergent, or interpretation-relative. Any stronger single-history claim must identify an actualization object and prove its relation to the instrument.
 
-# Promotion Contract
+# Outcome-Resolved Dynamics Promotion Contract
 
-A universal MTT measurement theorem must emit, from one selected source:
+A universal MTT detector-and-record theorem must emit, from one selected source:
 
 1.  the physical state and observable algebras;
 
@@ -343,6 +345,8 @@ Relative to version 1, this revision:
 
 - retains the distinction between intra-basin suppression and inter-basin selection;
 
+- states explicitly that measurement is ordinary record-forming physics, not a fundamental act or observer-dependent postulate;
+
 - defines decoherence as a nonselective channel and proves its exact suppression properties;
 
 - adds an explicit quantum instrument and a selection-completion kernel;
@@ -361,9 +365,9 @@ Relative to version 1, this revision:
 
 # Conclusion
 
-Decoherence cannot replace measurement because the two objects have different mathematical types. A nonselective channel can erase off-diagonal pointer blocks and stabilize records while containing no outcome index. Measurement requires an instrument or completion kernel that supplies outcome probabilities and conditional updates. The same channel can be completed by different instruments, and the same chart exit can be continued by different kernels.
+Measurement is ordinary physics. Nothing in this paper gives it a fundamental status, a privileged observer, or a separate force. The title means only that a record-discarded description cannot supply the outcome-resolved data it omits. A nonselective channel can erase off-diagonal pointer blocks and stabilize records while containing no outcome index. Retaining the record requires an instrument or completion kernel that supplies outcome probabilities and conditional updates. The same channel can be associated with different outcome-resolved instruments, and the same chart exit can be continued by different kernels.
 
-This does not invalidate the MTT basin picture. It makes the picture precise. Intra-basin suppression and inter-basin completion form a coherent conditional bridge once both are emitted from selected source data. MTT already has an exact operational completion on one canonical finite q79 recorder domain. Extending that result to general apparatus contexts, controlled memory effects, and any objective single-history claim is the remaining frontier.
+This does not invalidate the MTT basin picture. It makes the picture precise. Intra-basin suppression and inter-basin record formation may be stages or resolutions of one physical process once both are emitted from selected source data. MTT already has an exact operational account on one canonical finite q79 recorder domain. Extending that result to general apparatus contexts and controlled memory effects is the operational frontier. Objective single-history actualization is a separate, stronger question, not part of what makes an ordinary interaction a measurement.
 
 <div class="thebibliography">
 
