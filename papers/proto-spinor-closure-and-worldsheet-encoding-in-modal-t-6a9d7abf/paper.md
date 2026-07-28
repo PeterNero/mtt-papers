@@ -5,7 +5,7 @@ author:
 - Peter Nero
 current_version: v4
 date: July 2026
-generated_from_main_tex_sha256: 5b4e97c569629755ba734b9f7b9e55cfa361675a8ba2657a6b5f9de0dbc5bb0b
+generated_from_main_tex_sha256: 31c584615515c8e6c07b393b6e8b33be77d7a1dca442051be56d389c3dad159d
 paper_id: proto-spinor-closure-and-worldsheet-encoding-in-modal-t-6a9d7abf
 release_state: zenodo_released
 released_version: v3.0
@@ -33,7 +33,7 @@ Retained result.
 The earlier blockwise matching survives as a conditional local bridge near alignment.
 
 Remaining boundary.  
-The normalized q79 bridge derivative and all global worldsheet/string consistency tests must still be executed.
+The normalized q79 bridge derivative and all global worldsheet and string consistency tests must still be executed.
 
 # Scope
 

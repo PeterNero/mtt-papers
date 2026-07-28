@@ -6612,9 +6612,9 @@
         "updated": "2026-04-12T10:42:41.536620+00:00",
         "version": "v3.0"
       },
-      "main_tex_sha256": "5b4e97c569629755ba734b9f7b9e55cfa361675a8ba2657a6b5f9de0dbc5bb0b",
+      "main_tex_sha256": "31c584615515c8e6c07b393b6e8b33be77d7a1dca442051be56d389c3dad159d",
       "paper_id": "proto-spinor-closure-and-worldsheet-encoding-in-modal-t-6a9d7abf",
-      "paper_md_sha256": "c7d4d7ce0f07dc1720ea9030f8f1bf4091cfd6aa5c64f9cf6ee998b4f2c097dc",
+      "paper_md_sha256": "b1503992bf47b3f81aedb8ce91ded01481d899a62ec00508a32dea70a4423a0a",
       "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
@@ -6626,7 +6626,7 @@
       "source_provenance": {
         "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/Proto_Spinor_Closure_and_Worldsheet_Encoding_in_Modal_Triplet_Theory_v4"
       },
-      "source_tree_sha256": "58c4c4a8ab3a5a3162260575905eec90c3de1b78db5294a08a16a0074e868ee3",
+      "source_tree_sha256": "e25677ca2f9dcd64844f94a5f306f3035f02575c0eee9127bfa0faa54cee0c1c",
       "title": "Proto-Spinor Closure and Worldsheet Encoding in Modal Triplet Theory Corrected fourth edition: a conditional local bridge",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
