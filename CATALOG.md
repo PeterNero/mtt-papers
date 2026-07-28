@@ -1,6 +1,6 @@
 # MTT Paper Catalog
 
-Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **49**.
+Canonical papers: **139**. Zenodo-linked papers: **119**. Current sources newer than their latest release: **50**.
 
 The list is alphabetical and intentionally has no topical grouping.
 
@@ -107,7 +107,7 @@ The list is alphabetical and intentionally has no topical grouping.
 | Selection Fronts and Boundary-Layer Physics at the Admissibility Threshold | v1.0 | [v1.0](https://zenodo.org/records/18262389) | [TeX](papers/selection-fronts-and-boundary-layer-physics-at-the-admi-b6234575/main.tex) / [Markdown](papers/selection-fronts-and-boundary-layer-physics-at-the-admi-b6234575/paper.md) |
 | Spectral Delta Peaks and Resonances as Survivor-Basin Idealizations Finite Lifetime, Lorentzian Kernels, and the Delta Limit in Modal Triplet Theory | unversioned | not matched | [TeX](papers/spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5/main.tex) / [Markdown](papers/spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5/paper.md) |
 | Superset Determinations in Modal Triplet Theory: Parameter Identifiability after True-SM Closure | v3 | [v1.0](https://zenodo.org/records/18262210) | [TeX](papers/superset-determinations-in-modal-triplet-theory-paramet-87399967/main.tex) / [Markdown](papers/superset-determinations-in-modal-triplet-theory-paramet-87399967/paper.md) |
-| Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory | v1.0 | [v1.0](https://zenodo.org/records/18208885) | [TeX](papers/temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb/main.tex) / [Markdown](papers/temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb/paper.md) |
+| Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory: A Conditional Sequential-Instrument Analysis | v2 | [v1.0](https://zenodo.org/records/18208885) | [TeX](papers/temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb/main.tex) / [Markdown](papers/temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb/paper.md) |
 | The Book on Modal Triplet Theory A Typed Interpretive Overview of the Current Program What is proved, reconstructed, calibrated, and still open | v10 | [v9.0](https://zenodo.org/records/18268250) | [TeX](papers/the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793/main.tex) / [Markdown](papers/the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793/paper.md) |
 | The Central Circle: Inertia, Mass, Gravity, and Time as Shared Coherence Bookkeeping in Modal Triplet Theory | v1.0 | [v1.0](https://zenodo.org/records/18283408) | [TeX](papers/the-central-circle-inertia-mass-gravity-and-time-as-sha-5faa2369/main.tex) / [Markdown](papers/the-central-circle-inertia-mass-gravity-and-time-as-sha-5faa2369/paper.md) |
 | The Modal Triplet Theory Program A0: A Structural Theory of Reduced Description | v2 | [v1.0](https://zenodo.org/records/18354784) | [TeX](papers/the-modal-triplet-theory-program-a0-a-structural-theory-bebae240/main.tex) / [Markdown](papers/the-modal-triplet-theory-program-a0-a-structural-theory-bebae240/paper.md) |
