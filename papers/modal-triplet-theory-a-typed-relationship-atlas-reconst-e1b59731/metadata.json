@@ -32,9 +32,9 @@
     "updated": "2026-01-10T09:54:41.699668+00:00",
     "version": "v2.0"
   },
-  "main_tex_sha256": "aae85312757bd71c5fdd7c07925587fdfba076380d22bc3d4eedcdf4342d18e2",
+  "main_tex_sha256": "0cf640fdbecd48cae2e4f2c2bb2a6e3ebfebb475709f76d7872116826427bdc3",
   "paper_id": "modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731",
-  "paper_md_sha256": "feb9a4561beef7a9f9d91ec598db252de603606f921ac80a934f9b63096dd791",
+  "paper_md_sha256": "2dd8a15d6a407721b314667f3a4879326b1394d896052d4c1a117ae14a430e01",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
@@ -51,15 +51,15 @@
       "sha256": "c0981daabac3f27c1b89f2db8830f245a4cb8d223d7af4308fdf0a91015d7eab"
     },
     {
-      "bytes": 21662,
+      "bytes": 21705,
       "path": "main.tex",
-      "sha256": "aae85312757bd71c5fdd7c07925587fdfba076380d22bc3d4eedcdf4342d18e2"
+      "sha256": "0cf640fdbecd48cae2e4f2c2bb2a6e3ebfebb475709f76d7872116826427bdc3"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__A_Typed_Relationship_Atlas_v3"
   },
-  "source_tree_sha256": "3c4edd30bcb99405364f286876c0babe0cd874dc78fb4b81f9798f89c7e46468",
+  "source_tree_sha256": "caf19fd3c23f8cceee78cfbb5bf9382cedadb46ba065c3d0b7f83994939cb77c",
   "title": "Modal Triplet Theory: A Typed Relationship Atlas Reconstructions, Embeddings, Reductions, and Open Bridges",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [

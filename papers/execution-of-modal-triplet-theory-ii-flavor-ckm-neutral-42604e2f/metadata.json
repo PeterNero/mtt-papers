@@ -32,9 +32,9 @@
     "updated": "2026-01-15T21:20:40.426559+00:00",
     "version": "v1.0"
   },
-  "main_tex_sha256": "e95911d86da7e40bd5897236a2fe58a93d04a7daa3295c2fe8df025ae5d5ab6b",
+  "main_tex_sha256": "4ac011fb75ec65e91a9ba184a87cee084f781623867bc33305521f27819320d2",
   "paper_id": "execution-of-modal-triplet-theory-ii-flavor-ckm-neutral-42604e2f",
-  "paper_md_sha256": "982ad9f6ecd23e080d0bb36e27ee9860f9285d056af4b6cb4ce120689cd5a50e",
+  "paper_md_sha256": "4ef63cf97b55bfb4378e4444b96fe382e8ea4765ed7026d9b89edc219d304428",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
@@ -46,9 +46,9 @@
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 11864,
+      "bytes": 11886,
       "path": "main.tex",
-      "sha256": "e95911d86da7e40bd5897236a2fe58a93d04a7daa3295c2fe8df025ae5d5ab6b"
+      "sha256": "4ac011fb75ec65e91a9ba184a87cee084f781623867bc33305521f27819320d2"
     },
     {
       "bytes": 4186,
@@ -59,7 +59,7 @@
   "source_provenance": {
     "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v3"
   },
-  "source_tree_sha256": "21851112fdd25c9c4c0024306715b52bbf788676fed1873de1cbc73dec6352e4",
+  "source_tree_sha256": "65638d8e0e9ba77e1343c7ae5d51af56dbe97f52465c7060afcb3f454da240ee",
   "title": "Execution of Modal Triplet Theory II: Flavor, CKM, Neutral, and Higgs Status after True-SM Closure",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [

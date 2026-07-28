@@ -7,7 +7,7 @@ bibliography:
 - main.bib
 current_version: v2
 date: July 2026
-generated_from_main_tex_sha256: 5dbb43da0e2daee658f496af709ff2003b7b060d1ba1c22501ef90adbeb0e69b
+generated_from_main_tex_sha256: 07c65fe7125f9565297ac63d3fb97298e351f01b394fcd18a81a5cd9556eea3a
 paper_id: the-modal-triplet-theory-program-a0-a-structural-theory-bebae240
 release_state: zenodo_released
 released_version: v1.0

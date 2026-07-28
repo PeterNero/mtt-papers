@@ -5,7 +5,7 @@ author:
 - Peter Nero
 current_version: v3
 date: July 2026
-generated_from_main_tex_sha256: aae85312757bd71c5fdd7c07925587fdfba076380d22bc3d4eedcdf4342d18e2
+generated_from_main_tex_sha256: 0cf640fdbecd48cae2e4f2c2bb2a6e3ebfebb475709f76d7872116826427bdc3
 paper_id: modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731
 release_state: zenodo_released
 released_version: v2.0

@@ -32,9 +32,9 @@
     "updated": "2026-01-23T19:56:18.960635+00:00",
     "version": "v1.0"
   },
-  "main_tex_sha256": "5dbb43da0e2daee658f496af709ff2003b7b060d1ba1c22501ef90adbeb0e69b",
+  "main_tex_sha256": "07c65fe7125f9565297ac63d3fb97298e351f01b394fcd18a81a5cd9556eea3a",
   "paper_id": "the-modal-triplet-theory-program-a0-a-structural-theory-bebae240",
-  "paper_md_sha256": "da315414aa9d5c3e394c4816674dba4e725759e4445721a76839c1bb058baade",
+  "paper_md_sha256": "d6b0cb77ec15a52d75285b53e98e48600e62e49acdff83d5813ffde2fbc142db",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
@@ -51,9 +51,9 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 46145,
+      "bytes": 46399,
       "path": "main.tex",
-      "sha256": "5dbb43da0e2daee658f496af709ff2003b7b060d1ba1c22501ef90adbeb0e69b"
+      "sha256": "07c65fe7125f9565297ac63d3fb97298e351f01b394fcd18a81a5cd9556eea3a"
     },
     {
       "bytes": 4420,
@@ -69,7 +69,7 @@
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A0__A_Structural_Theory_of_Reduced_Description"
   },
-  "source_tree_sha256": "046caff3550bc5b6e38b440c2f2cc3dba11b5bf8174ea32fc6b6b23a635e4a72",
+  "source_tree_sha256": "f2bd480aa04d1091cf0a38edd4990c5e10024cdd5f63efcb4f894c35cdf1a14c",
   "title": "The Modal Triplet Theory Program A0: A Structural Theory of Reduced Description",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [

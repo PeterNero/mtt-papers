@@ -5,7 +5,7 @@ author:
 - Peter Nero
 current_version: v3
 date: July 2026
-generated_from_main_tex_sha256: e95911d86da7e40bd5897236a2fe58a93d04a7daa3295c2fe8df025ae5d5ab6b
+generated_from_main_tex_sha256: 4ac011fb75ec65e91a9ba184a87cee084f781623867bc33305521f27819320d2
 paper_id: execution-of-modal-triplet-theory-ii-flavor-ckm-neutral-42604e2f
 release_state: zenodo_released
 released_version: v1.0
