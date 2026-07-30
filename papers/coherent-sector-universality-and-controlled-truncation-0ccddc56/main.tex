@@ -1,279 +1,1017 @@
 \documentclass[11pt]{article}
-\usepackage{series}
 
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{geometry}
-\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
 \usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,capitalise]{cleveref}
 
-\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
 
-\title{Coherent-Sector Universality and Controlled Truncation\\
-in Modal Triplet Theory}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\1}{\mathbf 1}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\spec}{\operatorname{spec}}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\MTT}{Modal Triplet Theory}
+
+\title{\vspace{-1em}
+Coherent-Sector Reduction in Modal Triplet Theory:\\[0.25em]
+\large Feshbach Control, Projector Stability, and Local Universality}
 \author{Peter Nero}
-\date{January 2026}
+\date{Version 2, July 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We develop a general framework for coherent-sector reduction in Modal Triplet Theory (MTT), establishing precise conditions under which effective truncations of internal modular temporal structure are mathematically controlled and physically robust. We define a class of admissible internal geometries characterized by bounded geometry, spectral gap conditions, and projector regularity, and prove that for this class the dynamics admits a controlled reduction to a coherent sector with explicit error bounds. We further show that such reductions define a universality class stable under small perturbations of the microscopic structure. A comparative appendix situates these results alongside other controlled reduction frameworks in high-energy theory, emphasizing structural parallels without asserting formal equivalence. This work provides a methods-level foundation for the effective use of MTT across models.
+A coherent-sector truncation is controlled only after the retained
+subspace, the full closed operator, its block domains, the spectral
+parameter, the eliminated-sector resolvent, and the comparison norm have
+all been specified.  A spectral gap by itself is not a complete
+truncation theorem.
+
+This paper gives a domain-explicit coherent-sector reduction for a
+self-adjoint block operator on
+\(\cH=\cH_P\oplus\cH_Q\).  It first resolves a basic ambiguity: if \(P\)
+is the exact spectral projector of the same operator \(T\), then \(P\)
+reduces \(T\), the off-diagonal blocks vanish, and the truncation is exact.
+A nonzero Feshbach correction therefore requires a projector selected from
+a reference operator, symmetry, Galerkin space, or approximate coherent
+criterion.
+
+For such a reference-selected projector, write
+\[
+ T=
+ \begin{pmatrix}A&B\\ C&D\end{pmatrix}.
+\]
+At every declared \(z\in\rho(D)\), the exact reduced operator is the
+Feshbach--Schur map
+\[
+ F_T(z)=A-z-B(D-z)^{-1}C.
+\]
+The omitted-sector self-energy obeys the actual product estimate
+\[
+ \|B(D-z)^{-1}C\|
+ \leq
+ \|B\|\,\|(D-z)^{-1}\|\,\|C\|,
+\]
+and, for self-adjoint \(D\), the middle factor is
+\(\dist(z,\spec D)^{-1}\).  We prove the corresponding inverse formula,
+give a two-mode example, derive Riesz-projector stability under bounded
+perturbations, and establish a local operator-norm robustness bound with
+all block variations shown explicitly.
+
+These results define a controlled local class, not a global universality
+theorem.  Resolvent closeness does not imply uniform-in-time dynamical
+closeness, graph-norm or form robustness requires separate hypotheses, and
+an internal one-parameter unitary is not physical time without a
+model-specific clock and intertwining theorem.  The result is a rigorous
+methods paper and an executable certificate format for future
+\MTT{} reductions.
 \end{abstract}
+
+\section*{Revision note: Version 2}
+\addcontentsline{toc}{section}{Revision note: Version 2}
+\begin{description}[leftmargin=2.5cm,style=nextline]
+\item[Supersedes]
+Version 2 supersedes Version 1.0, DOI
+\href{https://doi.org/10.5281/zenodo.18261354}
+{10.5281/zenodo.18261354}.
+
+\item[Reason]
+Version 1 left the block domains and spectral parameter implicit, used
+\((QTQ)^{-1}\) without a stated resolvent condition, replaced the exact
+off-diagonal resolvent product by a schematic
+\(\|\delta T\|^2/\Delta\), called generic commutator bounds ``bounded
+geometry,'' and promoted local projector stability to broad physical
+universality and emergent time.
+
+\item[Resolution]
+The revision distinguishes an exact spectral projector from a
+reference-selected projector; defines a closed block-operator problem;
+states and proves the Feshbach inverse formula at \(z\in\rho(D)\); derives
+the exact product, resolvent-distance, Riesz-projector, and block-variation
+bounds; identifies the norm in every robustness statement; and separates
+spectral reduction from time-domain dynamics and physical clock
+interpretation.
+
+\item[Retained content]
+The useful claim survives locally: a selected low sector can be a
+controlled effective description when the eliminated block has a
+certified resolvent region and the off-diagonal couplings are quantitatively
+small there.
+
+\item[Remaining boundary]
+\MTT{} does not yet provide one universal continuum operator, coherent
+projector, physical clock, or connection-preserving transfer theorem to
+which this abstract certificate applies across all encodings.  Those are
+model-specific source obligations.
+\end{description}
 
 \tableofcontents
 
-\section{Introduction}
+\section{The corrected question}
+\label{sec:intro}
 
-Modal Triplet Theory (MTT) posits that observable temporal dynamics emerge from a deeper internal structure endowed with modular, algebraic, or discretized features. While various realizations of this idea have been explored, a persistent foundational question remains: under what conditions is it legitimate to replace the full internal modular dynamics with an effective description governing observable physics?
+The original question was:
+\begin{quote}
+When may the full internal description be replaced by a smaller coherent
+sector without losing the behavior relevant to a declared calculation?
+\end{quote}
+The answer depends on what ``behavior'' means.  A resolvent, a spectral
+cluster, a finite-time unitary, a semigroup, a quadratic form, and a list
+of observables require different estimates.  No single gap statement
+controls all of them automatically.
 
-This paper addresses that question at the level of general structure rather than specific models. Our aim is not to compute particular spectra or solutions, but to establish when and why such computations may be trusted. To that end, we develop a framework for identifying dynamically coherent subsectors of the internal theory and for controlling the errors incurred by truncation to those subsectors.
+This paper treats the resolvent and spectral-projector problem first.  It
+uses standard Feshbach--Schur and perturbation theory
+\cite{Feshbach1962,Kato1995,GriesemerHasler2008}.  The \MTT{} contribution
+is a typed certificate that records exactly which version of this standard
+mathematics is being used and prevents a local reduction from being
+promoted to a universal physical claim.
 
-The central claim of this work is that, under suitable geometric and spectral assumptions, effective temporal dynamics in MTT are universal: they depend only weakly on microscopic details and are stable under perturbations. This claim is made precise through the notions of coherent sectors, controlled truncation, and universality classes.
+\subsection{The six objects that must be distinguished}
 
-\section{Internal Modular Framework}
-
-\subsection{Internal Hilbert Space and Dynamics}
-
-Let $\mathcal{H}$ be a separable Hilbert space representing the internal modular degrees of freedom of the theory. We assume that $\mathcal{H}$ carries a representation of a $*$-algebra $\mathcal{A}$ of internal observables.
-
-Dynamics are generated by a densely defined self-adjoint operator
-\[
-T : \mathcal{D}(T) \subset \mathcal{H} \to \mathcal{H},
-\]
-referred to as the modular generator. No assumption is made at this stage regarding whether $T$ is fundamental or emergent.
-
-\subsection{Bounded Geometry}
-
-\begin{definition}[Bounded Geometry]
-The internal geometry is said to have \emph{bounded geometry} if the following conditions hold:
-\begin{enumerate}[label=(\roman*)]
-    \item Operator norms of commutators among generators of $\mathcal{A}$ are uniformly bounded.
-    \item Any geometric or algebraic invariants controlling local structure (e.g.\ curvature analogues, structure constants) are bounded above.
+\begin{enumerate}[leftmargin=2em]
+\item A \emph{reference operator} \(G\) may be used to identify a candidate
+      coherent subspace.
+\item An orthogonal projector \(P\) selects that subspace; \(Q=\1-P\).
+\item The \emph{full operator} \(T\) is the object actually being reduced.
+\item A spectral parameter \(z\) specifies the resolvent problem.
+\item A comparison norm states the sense in which the reduction is
+      controlled.
+\item A physical interpretation map states whether the reduced parameter
+      describes energy, modular flow, Euclidean evolution, or physical
+      time.
 \end{enumerate}
-\end{definition}
 
-This assumption excludes pathological ultraviolet behavior and ensures stability of spectral properties under perturbation.
+If \(G=T\) and \(P\) is an exact spectral projector of \(T\), the reduction
+has no off-diagonal correction.  If \(P\) is selected from \(G\neq T\), a
+finite basis, or another coherent criterion, the coupling to \(Q\cH\)
+must be measured.
 
-\section{Spectral Structure and Projectors}
+\subsection{What is not claimed}
 
-\subsection{Spectral Gap}
+The paper does not prove that:
+\begin{itemize}[leftmargin=2em]
+\item every \MTT{} encoding has a common coherent projector;
+\item a finite projected operator converges to a selected continuum
+      operator;
+\item operator-norm robustness implies graph-norm, form, or semigroup
+      robustness;
+\item a resolvent approximation is uniformly accurate for arbitrary
+      evolution times;
+\item the internal generator is a physical Hamiltonian; or
+\item distinct compactifications or microscopic theories are physically
+      equivalent merely because one reduced block is close.
+\end{itemize}
 
-Let $\sigma(T)$ denote the spectrum of $T$.
+\section{Why an exact spectral projector gives no correction}
+\label{sec:exactP}
 
-\begin{assumption}[Spectral Gap]
-There exists a decomposition
+Let \(T\) be self-adjoint on a dense domain \(\cD(T)\subset\cH\).  Its
+spectral measure is denoted by \(E_T(\cdot)\).
+
+\begin{proposition}[Exact spectral projectors reduce their operator]
+\label{prop:reducing}
+For every Borel set \(I\subset\RR\), the projector \(P=E_T(I)\) preserves
+\(\cD(T)\), commutes with \(T\) on \(\cD(T)\), and satisfies
 \[
-\sigma(T) = \sigma_{\mathrm{low}} \cup \sigma_{\mathrm{high}},
+  PTQ=0,
+  \qquad
+  QTP=0,
+  \qquad Q=\1-P.
 \]
-such that
+Consequently
 \[
-\inf \sigma_{\mathrm{high}} - \sup \sigma_{\mathrm{low}} = \Delta > 0.
+  T=T_P\oplus T_Q
+\]
+on \(P\cH\oplus Q\cH\), and truncation to the exact spectral subspace has
+zero Feshbach self-energy.
+\end{proposition}
+
+\begin{proof}
+The spectral functional calculus gives
+\(E_T(I)E_T(J)=E_T(I\cap J)\) and
+\[
+  T=\int_{\RR}\lambda\,\dd E_T(\lambda).
+\]
+Hence \(P\) commutes with every bounded spectral function and preserves
+the domain defined by
+\(\int\lambda^2\,\dd\langle E_T(\lambda)x,x\rangle<\infty\).
+Thus \(PTx=TPx\) for \(x\in\cD(T)\).  Since \(PQ=0\),
+\(PTQ=TPQ=0\), and similarly \(QTP=0\).  The direct-sum statement
+follows.
+\end{proof}
+
+This proposition exposes a hidden circularity in many informal reduction
+arguments.  One cannot simultaneously define \(P\) as the exact spectral
+projector of \(T\) and then estimate a nonzero coupling \(PTQ\).  To obtain
+a nontrivial reduction, at least one of the following must be true:
+\begin{enumerate}[leftmargin=2em]
+\item \(P\) is spectral for a reference operator \(G\), while
+      \(T=G+V\);
+\item \(P\) is a Galerkin or finite-element projector;
+\item \(P\) is selected by symmetry, topology, localization, or another
+      criterion not reducing \(T\); or
+\item \(P\) approximates, rather than equals, the target spectral
+      projector.
+\end{enumerate}
+The source and status of \(P\) are therefore part of every truncation
+certificate.
+
+\section{The closed block-operator problem}
+\label{sec:blocks}
+
+Fix an orthogonal decomposition
+\[
+  \cH=\cH_P\oplus\cH_Q,
+  \qquad
+  \cH_P=P\cH,\quad \cH_Q=Q\cH.
+\]
+The following assumptions give a clean theorem while still allowing
+unbounded diagonal blocks.
+
+\begin{assumption}[Block domain and bounded coupling]
+\label{ass:block}
+The operators
+\[
+ A:\cD(A)\subset\cH_P\to\cH_P,
+ \qquad
+ D:\cD(D)\subset\cH_Q\to\cH_Q
+\]
+are self-adjoint.  The off-diagonal maps
+\[
+ B:\cH_Q\to\cH_P,
+ \qquad
+ C:\cH_P\to\cH_Q
+\]
+are bounded and satisfy \(C=B^*\).  The full operator is
+\[
+ T=
+ \begin{pmatrix}
+ A&B\\ C&D
+ \end{pmatrix},
+ \qquad
+ \cD(T)=\cD(A)\oplus\cD(D).
 \]
 \end{assumption}
 
-The low-lying spectrum $\sigma_{\mathrm{low}}$ defines candidate coherent degrees of freedom.
+By the bounded-perturbation theorem, \(T\) is self-adjoint.  This setup is
+not the most general Feshbach framework, but its domains and norms are
+unambiguous.  Unbounded off-diagonal couplings require relative-bound,
+quadratic-form, or graph-norm hypotheses and are outside the theorem below.
 
-\subsection{Projector Regularity}
-
-Let $P$ denote the orthogonal projector onto the spectral subspace associated with $\sigma_{\mathrm{low}}$.
-
-\begin{assumption}[Projector Regularity]
-Under small perturbations $T \mapsto T + \delta T$ preserving bounded geometry, the projector $P$ varies continuously in operator norm.
-\end{assumption}
-
-This condition ensures that the coherent sector is not destroyed by small deformations of the microscopic structure.
-
-\section{Coherent Sectors}
-
-\subsection{Definition}
-
-\begin{definition}[Coherent Sector]
-The coherent sector is the subspace
+\begin{definition}[Declared resolvent region]
+A set \(\Omega\subset\CC\) is an eliminated-sector resolvent region if
 \[
-\mathcal{H}_{\mathrm{coh}} := P \mathcal{H}.
+  \Omega\subset\rho(D)
+  \quad\text{and}\quad
+  r_\Omega:=
+  \sup_{z\in\Omega}\|(D-z)^{-1}\|<\infty.
 \]
+For self-adjoint \(D\),
+\[
+  \|(D-z)^{-1}\|
+  =
+  \frac{1}{\dist(z,\spec D)}
+\]
+for \(z\notin\spec D\).
 \end{definition}
 
-Physically, $\mathcal{H}_{\mathrm{coh}}$ represents a collection of internal modes that evolve collectively and are dynamically isolated from higher excitations to leading order.
+A real gap \(\Delta\) is useful only after the location of \(z\) is
+declared.  For example, if
+\(\dist(\Omega,\spec D)\geq g>0\), then
+\(r_\Omega\leq g^{-1}\).  Writing only \(1/\Delta\) hides this dependence.
 
-\subsection{Effective Dynamics}
+\section{Exact Feshbach reduction}
+\label{sec:feshbach}
 
-The projected generator
+\begin{definition}[Feshbach--Schur map]
+For \(z\in\rho(D)\), define
 \[
-T_{\mathrm{eff}} := P T P
+  R_D(z)=(D-z)^{-1},
+  \qquad
+  \Sigma_T(z)=BR_D(z)C,
 \]
-defines the leading-order effective dynamics within the coherent sector.
-
-\section{Controlled Truncation}
-
-\subsection{Truncation Error}
-
-Let $Q := 1 - P$ denote the complementary projector. Standard resolvent methods yield an effective correction term
+and
 \[
-\Delta T := - P T Q (Q T Q)^{-1} Q T P,
+  F_T(z)=A-z-\Sigma_T(z)
 \]
-whenever $(Q T Q)^{-1}$ exists.
+on \(\cD(A)\subset\cH_P\).
+\end{definition}
+The operator \(\Sigma_T(z)\) is the eliminated-sector self-energy.  It is
+bounded under \cref{ass:block}; the reduced operator \(F_T(z)\) remains
+closed on \(\cD(A)\).
 
-\begin{theorem}[Controlled Truncation]
-Under the assumptions of bounded geometry, spectral gap $\Delta$, and projector regularity, the truncation error satisfies
+\begin{theorem}[Feshbach inverse formula]
+\label{thm:feshbach}
+Assume \cref{ass:block} and let \(z\in\rho(D)\).  Then
 \[
-\|\Delta T\| \leq C \frac{\| \delta T \|^2}{\Delta},
+ z\in\rho(T)
+ \quad\Longleftrightarrow\quad
+ 0\in\rho(F_T(z)).
 \]
-for some constant $C$ depending only on geometric bounds.
+When these equivalent conditions hold,
+\[
+(T-z)^{-1}
+=
+\begin{pmatrix}
+F_T(z)^{-1}
+&
+-F_T(z)^{-1}BR_D(z)
+\\[0.3em]
+-R_D(z)CF_T(z)^{-1}
+&
+R_D(z)+R_D(z)CF_T(z)^{-1}BR_D(z)
+\end{pmatrix}.
+\]
+In particular,
+\[
+  P(T-z)^{-1}P=F_T(z)^{-1}
+\]
+on \(\cH_P\).
 \end{theorem}
 
 \begin{proof}
-The estimate follows from standard operator perturbation theory combined with the spectral gap assumption, which bounds the resolvent of $Q T Q$ by $\Delta^{-1}$.
+On \(\cD(A)\oplus\cD(D)\), factor
+\[
+T-z
+=
+\begin{pmatrix}
+\1&BR_D(z)\\ 0&\1
+\end{pmatrix}
+\begin{pmatrix}
+F_T(z)&0\\ C&D-z
+\end{pmatrix}.
+\]
+The first factor is boundedly invertible.  The second is invertible exactly
+when \(F_T(z)\) is invertible, because \(D-z\) is already invertible.  The
+inverse of the two triangular factors gives the displayed block formula.
+Domain compatibility follows from
+\(\operatorname{ran}R_D(z)\subset\cD(D)\).
 \end{proof}
 
-\subsection{Interpretation}
+The theorem is exact.  It does not say that \(A\) alone is an accurate
+replacement.  That approximation is controlled by \(\Sigma_T(z)\).
 
-The error bound shows that truncation becomes increasingly accurate as the gap increases or as perturbations become smoother. Crucially, no fine-tuning of microscopic parameters is required.
+\begin{corollary}[Actual truncation-error product]
+\label{cor:product}
+For every \(z\in\rho(D)\),
+\[
+  \|\Sigma_T(z)\|
+  \leq
+  \|B\|\,\|R_D(z)\|\,\|C\|.
+\]
+If \(D\) is self-adjoint, then
+\[
+  \|\Sigma_T(z)\|
+  \leq
+  \frac{\|B\|\,\|C\|}
+       {\dist(z,\spec D)}.
+\]
+Under \(C=B^*\), this becomes
+\[
+  \|\Sigma_T(z)\|
+  \leq
+  \frac{\|B\|^2}
+       {\dist(z,\spec D)}.
+\]
+\end{corollary}
 
-\section{Universality and Robustness}
+\begin{proof}
+The first inequality is submultiplicativity of the operator norm.  The
+second uses the self-adjoint resolvent identity
+\(\|R_D(z)\|=\dist(z,\spec D)^{-1}\); the last uses
+\(\|B^*\|=\|B\|\).
+\end{proof}
 
-\subsection{Universality Classes}
+The schematic expression \(\|\delta T\|^2/\Delta\) is therefore valid only
+after proving that the same bounded perturbation supplies both
+off-diagonal blocks and that the declared spectral region remains at
+distance at least \(\Delta\) from \(\spec D\).  The product form is the
+general statement.
 
-\begin{definition}[Coherent-Sector Universality Class]
-Two internal modular geometries belong to the same universality class if their effective generators agree up to controlled truncation errors.
-\end{definition}
+\subsection{A two-mode example}
 
-Within a universality class, observable temporal dynamics are insensitive to many microscopic details.
+\begin{example}[One retained and one eliminated mode]
+Let
+\[
+  T=
+  \begin{pmatrix}
+    a&b\\ \overline b&d
+  \end{pmatrix},
+  \qquad a,d\in\RR,
+\]
+and let \(P\) retain the first coordinate.  For \(z\neq d\),
+\[
+  F_T(z)
+  =
+  a-z-\frac{|b|^2}{d-z}.
+\]
+Moreover,
+\[
+  \det(T-z)=(d-z)F_T(z).
+\]
+Thus the self-energy has exact magnitude
+\[
+  |\Sigma_T(z)|=\frac{|b|^2}{|d-z|}.
+\]
+The numerator measures coupling to the omitted mode; the denominator
+measures spectral distance from it.  If \(P\) were instead the exact
+spectral projector of \(T\), the matrix in the corresponding eigenbasis
+would be diagonal and \(b=0\).
+\end{example}
 
-\subsection{Stability Under Perturbations}
+This example contains the whole mechanism.  A large gap cannot compensate
+for an unspecified or unbounded coupling, and a small coupling does not
+help at a pole of the eliminated resolvent.
 
-\begin{theorem}[Robustness]
-Small perturbations preserving bounded geometry do not destroy the spectral gap, projector regularity, or coherent-sector dynamics, up to bounded corrections.
+\section{Projector selection and stability}
+\label{sec:projector}
+
+Let \(G\) be a self-adjoint reference operator and let a positively
+oriented closed contour \(\Gamma\subset\rho(G)\) surround an isolated
+spectral cluster.  With the resolvent convention used in this paper, the
+Riesz projector is
+\[
+  P
+  =
+  -\frac{1}{2\pi i}
+  \oint_\Gamma (G-z)^{-1}\,\dd z.
+\]
+For self-adjoint \(G\), this agrees with the corresponding spectral
+projector.
+
+\begin{theorem}[Riesz-projector stability]
+\label{thm:riesz}
+Let \(V=V^*\) be bounded and set \(G_V=G+V\).  Define
+\[
+  M_0=\sup_{z\in\Gamma}\|(G-z)^{-1}\|.
+\]
+If \(M_0\|V\|<1\), then
+\(\Gamma\subset\rho(G_V)\), the perturbed projector
+\[
+  P_V
+  =
+  -\frac{1}{2\pi i}
+  \oint_\Gamma(G_V-z)^{-1}\,\dd z
+\]
+is well defined, and
+\[
+\|P_V-P\|
+\leq
+\frac{\operatorname{length}(\Gamma)}{2\pi}
+\frac{M_0^2\|V\|}{1-M_0\|V\|}.
+\]
+If the right-hand side is less than one and \(P\) has finite rank, then
+\(\operatorname{rank}P_V=\operatorname{rank}P\).
 \end{theorem}
 
-This establishes structural stability of emergent time in MTT.
+\begin{proof}
+For \(z\in\Gamma\),
+\[
+G_V-z
+=
+\bigl[\1+V(G-z)^{-1}\bigr](G-z).
+\]
+The Neumann series gives
+\[
+\|(G_V-z)^{-1}\|
+\leq
+\frac{M_0}{1-M_0\|V\|}.
+\]
+The second resolvent identity gives
+\[
+(G_V-z)^{-1}-(G-z)^{-1}
+=
+-(G_V-z)^{-1}V(G-z)^{-1}.
+\]
+Integrating its norm around \(\Gamma\) yields the displayed bound.  Two
+orthogonal projections at distance less than one have isomorphic ranges;
+for finite rank their ranks agree.
+\end{proof}
 
-\section{Implications for Modal  Triplet Theory}
+This theorem makes projector regularity a conclusion under explicit
+conditions, not an independent slogan.  Davis--Kahan subspace-angle
+estimates provide related sharp bounds for self-adjoint spectral
+subspaces \cite{DavisKahan1970}.
 
-The framework developed here provides a systematic justification for effective descriptions in MTT. It explains why disparate microscopic constructions may yield equivalent phenomenology and clarifies which assumptions are essential.
+\subsection{What ``bounded geometry'' does not mean here}
 
-This positions MTT alongside other mature theoretical frameworks in which effective dynamics are governed by universality rather than microscopic detail.
+In differential geometry, bounded geometry normally includes precise
+metric conditions such as a positive injectivity-radius bound and
+curvature-derivative bounds.  Bounded commutators in an operator
+representation are not, by themselves, equivalent to that notion.
 
-\section{Outlook}
-
-Possible extensions include interacting coherent sectors, dynamical gap generation, coupling to external degrees of freedom, and numerical exploration of universality classes.
-
-\appendix
-
-\section{Structural Parallels with Other Frameworks}
-
-The control mechanisms developed here exhibit structural parallels with:
-\begin{itemize}
-    \item controlled flux compactifications,
-    \item generalized geometric constraint systems,
-    \item consistent truncations in exceptional field theory.
+This paper therefore avoids using ``bounded geometry'' as a catch-all
+hypothesis.  Its analytic inputs are instead listed directly:
+\begin{itemize}[leftmargin=2em]
+\item self-adjointness and domains of \(A\) and \(D\);
+\item boundedness of \(B\) and \(C\);
+\item a declared common resolvent region;
+\item operator-norm perturbations where operator-norm conclusions are
+      claimed; and
+\item a contour and Neumann margin where projector stability is claimed.
 \end{itemize}
-These parallels are conceptual rather than formal.
+If an application uses geometric boundedness to prove these rows, that
+geometric theorem belongs in the application.
 
-\section{Limitations}
+\section{Local robustness with all blocks visible}
+\label{sec:robust}
 
-If the spectral gap closes or projector regularity fails, coherent-sector reduction may break down. Chaotic or critical internal geometries lie outside the present framework.
+Consider two block operators \(T_0\) and \(T_1\) on the same decomposition
+and domains:
+\[
+T_j=
+\begin{pmatrix}
+A_j&B_j\\ C_j&D_j
+\end{pmatrix},
+\qquad j=0,1.
+\]
+Let
+\[
+ R_j(z)=(D_j-z)^{-1},
+ \qquad
+ \Sigma_j(z)=B_jR_j(z)C_j.
+\]
 
-\section*{Conclusion}
+\begin{theorem}[Operator-norm block robustness]
+\label{thm:robust}
+Suppose \(z\in\rho(D_0)\cap\rho(D_1)\) and
+\[
+\|R_j(z)\|\leq r,\qquad
+\|B_j\|\leq b,\qquad
+\|C_j\|\leq c.
+\]
+Set
+\[
+\alpha=\|A_1-A_0\|,\quad
+\beta=\|B_1-B_0\|,\quad
+\gamma=\|C_1-C_0\|,\quad
+\delta=\|D_1-D_0\|.
+\]
+Here the differences are bounded operators on the indicated fixed
+spaces.  Then
+\[
+\|\Sigma_1(z)-\Sigma_0(z)\|
+\leq
+\beta r c
++b r^2\delta c
++b r\gamma,
+\]
+and
+\[
+\|F_{T_1}(z)-F_{T_0}(z)\|
+\leq
+\alpha+\beta r c+b r^2\delta c+b r\gamma.
+\]
+\end{theorem}
 
-This paper provides a rigorous methods-level foundation for Modal  Triplet Theory, establishing when and why effective temporal dynamics are controlled, robust, and universal.
-\begin{thebibliography}{99}
+\begin{proof}
+Insert and subtract intermediate products:
+\[
+\begin{aligned}
+\Sigma_1-\Sigma_0
+={}&(B_1-B_0)R_1C_1\\
+&+B_0(R_1-R_0)C_1\\
+&+B_0R_0(C_1-C_0).
+\end{aligned}
+\]
+The resolvent identity gives
+\[
+  R_1-R_0=-R_1(D_1-D_0)R_0,
+\]
+so \(\|R_1-R_0\|\leq r^2\delta\).  Submultiplicativity gives the
+self-energy bound.  Since
+\[
+F_{T_1}(z)-F_{T_0}(z)
+=(A_1-A_0)-(\Sigma_1-\Sigma_0),
+\]
+the final estimate follows.
+\end{proof}
 
-\bibitem{MTT-Admissibility}
-P.~Nero,
-\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255621}
+\begin{corollary}[Common resolvent region from one reference]
+\label{cor:neumann}
+If \(z\in\rho(D_0)\) and
+\[
+ \|(D_0-z)^{-1}\|\,\|D_1-D_0\|<1,
+\]
+then \(z\in\rho(D_1)\) and
+\[
+\|(D_1-z)^{-1}\|
+\leq
+\frac{\|(D_0-z)^{-1}\|}
+ {1-\|(D_0-z)^{-1}\|\,\|D_1-D_0\|}.
+\]
+\end{corollary}
 
-\bibitem{MTT-Foundation}
-P.~Nero,
-\emph{Modal Triplet Theory: Foundation},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.16949762}
+This is the precise local content of robustness in the present paper.  It
+does not cover changing domains, relatively bounded unbounded
+perturbations, form convergence, strong-resolvent convergence, or
+semigroup convergence.  Those are different topologies with different
+theorems \cite{Kato1995,ReedSimonI1980}.
 
-\bibitem{MTT-FixedPoints}
-P.~Nero,
-\emph{Fixed Points I--VI: Complete Coherence Spine},
-Zenodo preprints, August 2025.
-\url{https://doi.org/10.5281/zenodo.16948748}
+\section{What ``universality'' can mean}
+\label{sec:universality}
 
-\bibitem{MTT-ProjectionAdmissibility}
-P.~Nero,
-\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255838}
+Version 1 called two microscopic geometries universal when their effective
+generators agreed up to controlled error.  Approximate agreement at one
+tolerance is not automatically an equivalence relation: errors accumulate
+under composition.
 
-\bibitem{MTT-Closure}
-P.~Nero,
-\emph{Closure and Inevitability in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255510}
+\begin{definition}[Reduced-resolvent comparison functional]
+Let two controlled records have retained spaces
+\(\cH_{P,0}\) and \(\cH_{P,1}\) of equal Hilbert dimension and a common
+region
+\[
+  \Omega\subset
+  \rho(T_0)\cap\rho(D_0)\cap\rho(T_1)\cap\rho(D_1).
+\]
+Define
+\[
+d_\Omega(T_0,T_1)
+=
+\inf_U\;
+\sup_{z\in\Omega}
+\left\|
+ U F_{T_0}(z)^{-1}U^*-F_{T_1}(z)^{-1}
+\right\|,
+\]
+where the infimum is over declared unitaries
+\(U:\cH_{P,0}\to\cH_{P,1}\).  If no such identification is supplied, set
+\(d_\Omega=\infty\).
+\end{definition}
 
-\bibitem{MTT-CoherenceCapacity}
-P.~Nero,
-\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255905}
+The inverse formula identifies each bounded term in this definition with
+the compressed resolvent \(P_j(T_j-z)^{-1}P_j\).  We call \(d_\Omega\) a
+comparison functional rather than a metric: an application may restrict
+the allowed unitaries, and metric axioms then require separate closure
+conditions on that class.
+An \(\varepsilon\)-neighborhood under \(d_\Omega\) is a useful local
+comparison class.  Exact zero comparison can define a reduced
+equivalence after quotienting declared presentation redundancies.  Finite
+\(\varepsilon\)-closeness is tolerance dependent and should be reported as
+such.
 
-\bibitem{MTT-CoherenceDynamics}
-P.~Nero,
-\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256048}
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{L{0.23\textwidth}YY}
+\toprule
+Statement & Data required & What it does not imply \\
+\midrule
+Same retained rank
+& Stable Riesz projectors and rank certificate
+& Same reduced operator or physics \\
+Close reduced resolvents
+& Common \(\Omega\), unitary identification, operator norm
+& Uniform long-time dynamics \\
+Close spectra
+& Spectral metric and multiplicity control
+& Close eigenvectors or observables \\
+Close projectors
+& Gap/contour and perturbation norm
+& Dynamical stability \\
+Same effective observables
+& Observation maps and error budget
+& Same microscopic theory \\
+Physical equivalence
+& Full state, observable, dynamics, and comparison functor
+& Follows from no single row above \\
+\bottomrule
+\end{tabularx}
+\caption{Several notions often compressed into ``universality.''}
+\label{tab:universality}
+\end{table}
 
-\bibitem{MTT-QM}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.17074246}
+The paper therefore uses \emph{local universality} only for a declared
+neighborhood in a declared reduced metric.  It makes no claim that all
+viable quantum, gravitational, or compactification models occupy one
+class.
 
-\bibitem{MTT-QFT}
-P.~Nero,
-\emph{From MTT to Quantum Field Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17068816}
+\section{Resolvent control is not uniform dynamical control}
+\label{sec:dynamics}
 
-\bibitem{MTT-GR}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to General Relativity},
-Zenodo preprint, October 2025.
-\url{https://doi.org/10.5281/zenodo.16950597}
+The Feshbach map is naturally an energy- or spectral-parameter-dependent
+object.  Additional work is required to turn it into a statement about
+\(e^{-itT}\).
 
-\bibitem{MTT-UVQG}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17077671}
+\begin{proposition}[A finite-time Duhamel bound]
+\label{prop:duhamel}
+Let \(T=T_{\rm diag}+W\) be bounded and self-adjoint, where
+\[
+T_{\rm diag}=A\oplus D
+\]
+and \(W\) contains the off-diagonal blocks.  Then
+\[
+\|e^{-itT}-e^{-itT_{\rm diag}}\|
+\leq |t|\,\|W\|.
+\]
+Consequently
+\[
+\|Pe^{-itT}P-e^{-itA}P\|
+\leq |t|\,\|W\|.
+\]
+\end{proposition}
 
-\bibitem{MTT-Measurement}
-P.~Nero,
-\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17177404}
+\begin{proof}
+Duhamel's formula gives
+\[
+e^{-itT}-e^{-itT_{\rm diag}}
+=
+-i\int_0^t
+e^{-i(t-s)T}W e^{-isT_{\rm diag}}\,\dd s.
+\]
+Both unitary factors have norm one, so integration gives the bound.
+Compression by \(P\) cannot increase the norm.
+\end{proof}
 
-\bibitem{MTT-Irreversibility}
-P.~Nero,
-\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256408}
+This estimate is first order in the coupling and grows with the time
+horizon.  Gap-improved adiabatic, Schrieffer--Wolff, or superadiabatic
+estimates are possible under additional hypotheses
+\cite{BravyiDiVincenzoLoss2011}, but they are not consequences of
+\cref{cor:product} alone.
 
-\bibitem{MTT-Bell-Beables}
-P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17076300}
+\begin{example}[No uniform-in-time conclusion from a small generator error]
+On the one-dimensional Hilbert space let \(H_0=0\) and
+\(H_\varepsilon=\varepsilon\).  Their generators differ by
+\(\varepsilon\), and their resolvents are close on compact sets away from
+zero.  Yet at \(t=\pi/\varepsilon\),
+\[
+\|e^{-itH_\varepsilon}-e^{-itH_0}\|=2.
+\]
+Thus small operator or resolvent error does not imply uniform closeness for
+arbitrarily long times.
+\end{example}
 
-\bibitem{MTT-Bell-Temporal}
-P.~Nero,
-\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
-Zenodo preprint, August 2025.
-\url{https://doi.org/10.5281/zenodo.18208884}
+\section{An internal generator is not automatically physical time}
+\label{sec:time}
 
-\bibitem{MTT-Stochastic}
-P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18254862}
+Every self-adjoint \(T\) generates a strongly continuous unitary group
+\[
+  U_T(s)=e^{-isT}
+\]
+by Stone's theorem \cite{ReedSimonI1980}.  This mathematical parameter
+\(s\) need not be the time read by a physical clock.  It might label a
+modular flow, an internal phase, a Euclidean interpolation, or an auxiliary
+spectral transformation.
 
-\end{thebibliography}
+A physical-time claim requires additional data such as:
+\begin{enumerate}[leftmargin=2em]
+\item a physical state and observable algebra;
+\item a clock or operational time protocol;
+\item a physical Hamiltonian \(H_{\rm phys}\);
+\item an embedding or decoding map
+      \(J:\cH_{\rm phys}\to\cH_P\); and
+\item an exact or controlled intertwining relation, for example
+\[
+  J e^{-itH_{\rm phys}}
+  =
+  e^{-i\theta(t)A_{\rm eff}}J
+  +E(t),
+  \qquad
+  \|E(t)\|\leq\varepsilon(t),
+\]
+on a declared interval and domain.
+\end{enumerate}
+Without these rows, this paper establishes spectral reduction, not the
+emergence of observed time.
+
+\section{A complete controlled-reduction certificate}
+\label{sec:certificate}
+
+\begin{definition}[Controlled coherent-sector certificate]
+A controlled coherent-sector certificate on \(\Omega\) contains:
+\[
+\mathfrak C_{\rm red}
+=
+\bigl(
+\cH,G,T,P,Q,
+\cD(A),\cD(D),
+A,B,C,D,
+\Omega,r_\Omega,
+\mathfrak n,\varepsilon,
+\pi
+\bigr),
+\]
+where \(\mathfrak n\) names the comparison norm,
+\(\varepsilon\) is the proved error budget, and \(\pi\) records the
+provenance and status of every input.
+\end{definition}
+
+At minimum, the certificate should answer:
+\begin{enumerate}[leftmargin=2em]
+\item What selected \(P\), and is it exact, approximate, or finite?
+\item Which operator is being reduced?
+\item Are the block domains fixed and dense?
+\item Is each off-diagonal block bounded, relatively bounded, or only
+      form bounded?
+\item What is the spectral region \(\Omega\)?
+\item How is \(\Omega\subset\rho(D)\) certified?
+\item Which norm or topology is controlled?
+\item Is the approximation \(A\), \(F_T(z)\), or a further
+      energy-independent operator?
+\item What parameter range preserves the projector rank and resolvent
+      margin?
+\item What observable or physical interpretation is attached afterward?
+\end{enumerate}
+
+\subsection{Finite and numerical execution}
+
+For a finite matrix or Galerkin truncation, an executable certificate can
+report:
+\begin{itemize}[leftmargin=2em]
+\item exact dimensions and basis hashes;
+\item Hermiticity residuals and interval enclosures;
+\item the projector source and
+      \(\|(I-P)GP\|\);
+\item interval bounds for \(\spec D\) or singular values of \(D-z\);
+\item certified norms of \(B\), \(C\), and \(R_D(z)\);
+\item the self-energy product and the resulting reduced resolvent error;
+\item projector-angle or contour bounds under perturbation; and
+\item roundoff, discretization, and continuum-transfer errors as separate
+      rows.
+\end{itemize}
+The finite calculation is exact for the finite object if performed with
+exact or interval-certified arithmetic.  It becomes a continuum theorem
+only after a convergence and domain-transfer result is supplied.
+
+\section{Relation to MTT and established mathematics}
+\label{sec:relation}
+
+\subsection{Established operator theory}
+
+The Schur complement and Feshbach map are standard tools.  Their
+isospectral and inverse properties are established in operator-theoretic
+forms, including smooth variants
+\cite{Feshbach1962,GriesemerHasler2008}.  Spectral projections, closed
+operators, bounded perturbations, and resolvent convergence belong to
+classical perturbation theory \cite{Kato1995,ReedSimonI1980}.
+Davis--Kahan theory controls rotations of self-adjoint spectral subspaces
+\cite{DavisKahan1970}.
+
+Accordingly, this paper does not claim the Feshbach formula or Riesz
+projection as new \MTT{} mathematics.  Its contribution is the correction
+and integration:
+\begin{itemize}[leftmargin=2em]
+\item exact spectral projectors are separated from reference-selected
+      projectors;
+\item the actual product bound replaces a proxy slogan;
+\item every theorem states its domain, parameter, norm, and perturbation
+      class;
+\item local reduction is not relabeled as global universality; and
+\item spectral flow is not relabeled as physical time.
+\end{itemize}
+
+\subsection{MTT ownership and use}
+
+The \MTT{} Foundation owns the general admissibility ledger and status
+semantics \cite{MTTFoundation2026}.  The normalized-capacity paper owns
+the rowwise slack, scale, provenance, and bottleneck conventions
+\cite{CapacityMargin2026}.  This paper owns only the coherent-sector
+operator certificate, the exact-projector correction, the domain-explicit
+Feshbach specialization, the local block-robustness estimate, and the
+resolvent-versus-time boundary.
+
+Later \MTT{} papers may cite this certificate, but they must still construct
+their own \(G,T,P\), prove the relevant domain and resolvent rows, and
+attach a physical interpretation map.  Citation does not fill those
+objects.
+
+\section{Claim status and limitations}
+\label{sec:status}
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{L{0.29\textwidth}L{0.18\textwidth}Y}
+\toprule
+Statement & Status here & Boundary \\
+\midrule
+Exact spectral \(P\) reduces \(T\)
+& Proved
+& Self-adjoint spectral calculus \\
+Feshbach inverse formula
+& Imported and specialized
+& Assumption \ref{ass:block}, \(z\in\rho(D)\) \\
+Self-energy product bound
+& Proved
+& Operator norm and bounded off-diagonal blocks \\
+Riesz-projector stability
+& Proved
+& Bounded perturbation and fixed contour \\
+Block robustness
+& Proved
+& Fixed domains and bounded operator differences \\
+Finite-time Duhamel control
+& Proved
+& Bounded self-adjoint generators \\
+Graph/form/semigroup robustness
+& Open per application
+& Requires different hypotheses \\
+Continuum transfer
+& Open per application
+& Requires convergence and domain control \\
+Physical-time emergence
+& Not established
+& Requires clock and intertwining theorem \\
+Global MTT universality
+& Not claimed
+& Requires common source and physical equivalence maps \\
+\bottomrule
+\end{tabularx}
+\caption{Claim status in Version 2.}
+\label{tab:status}
+\end{table}
+
+\section{Completion and falsifiability contract}
+\label{sec:completion}
+
+A model-specific \MTT{} application is complete at the controlled
+resolvent-reduction tier only if it supplies:
+\begin{enumerate}[leftmargin=2em]
+\item a selected, reproducible reference operator \(G\);
+\item a projector \(P\) with rank and stability certificate;
+\item the full operator \(T\) and all block domains;
+\item verified off-diagonal maps \(B\) and \(C\);
+\item a nonempty spectral region \(\Omega\subset\rho(D)\);
+\item a certified resolvent margin and self-energy product;
+\item a reduced operator and declared comparison norm;
+\item a numerical or analytic error budget;
+\item a continuum-transfer theorem if the source is finite; and
+\item a physical observation or time map if physical dynamics is claimed.
+\end{enumerate}
+
+The reduction fails in its declared regime if the selected rank changes,
+the contour meets the spectrum, the eliminated resolvent loses its bound,
+the off-diagonal product exceeds the tolerance, the domain assumptions
+fail, or a held-out observable lies outside the certified error budget.
+Those failure modes make the framework testable rather than merely
+descriptive.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Coherent-sector reduction is a precise operator problem, not a consequence
+of the word ``coherence.''  If the retained projector is exactly spectral
+for the full operator, the sector already reduces the operator and there
+is no self-energy.  If the projector comes from a reference or
+approximation, the omitted sector contributes the exact
+Feshbach--Schur term \(B(D-z)^{-1}C\).
+
+The resulting control has three visible ingredients: coupling into the
+omitted sector, resolvent distance within that sector, and coupling back.
+Projector stability follows from a separate contour and perturbation
+margin.  Robustness is local to the norm, domains, region, and block
+variations actually bounded.
+
+This corrected formulation gives \MTT{} a reusable and rigorous reduction
+certificate.  It does not yet identify a universal coherent projector,
+derive physical time, or prove equivalence of different microscopic
+theories.  Those stronger statements require model-specific source,
+continuum, dynamics, and observation maps.
+
+\section*{Reproducibility statement}
+\addcontentsline{toc}{section}{Reproducibility statement}
+
+All displayed estimates can be checked directly from the block
+factorization, resolvent identity, Neumann series, Riesz contour, and
+Duhamel formula printed in the paper.  No numerical result or measured
+physical constant is used.  A model-specific application should publish
+its matrices or closed-operator data and the certificate listed in
+\cref{sec:certificate}.
+
+\bibliographystyle{plain}
+\bibliography{main}
+
 \end{document}

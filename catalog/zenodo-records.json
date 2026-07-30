@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18261353",
+      "created": "2026-07-30T21:32:31.916965+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21710429",
+      "files": [
+        {
+          "checksum": "md5:2bfab49b739ef2023493dd8ca8ef9234",
+          "content_url": "https://zenodo.org/api/records/21710429/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 391432
+        }
+      ],
+      "id": "21710429",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21710429",
+      "resource_type": "publication",
+      "title": "Coherent-Sector Reduction in Modal Triplet Theory: Feshbach Control, Projector Stability, and Local Universality",
+      "updated": "2026-07-30T21:32:32.322409+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18255207",
       "created": "2026-07-30T21:17:19.437413+00:00",
       "creators": [

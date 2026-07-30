@@ -904,6 +904,14 @@
       "reviewed_main_tex_sha256": "09e9d317a083fde3e014121b005c249bbf0d11f79098c9c79065f9d7bb59b2f7",
       "reviewed_pdf_sha256": "fb1cb03c6082bb143e99fb6ef14e7f9e3609c8ab41fe326a59999227384cc5c6",
       "reviewed_source_tree_sha256": "c2d64437574595c63c99a6268ea44ab01674f1756e14f8d67dfb98568d5e6d07"
+    },
+    "coherent-sector-universality-and-controlled-truncation-0ccddc56": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 2 rebuilds coherent-sector truncation as a domain-explicit operator-reduction theorem. It proves that an exact spectral projector of the full self-adjoint operator makes the off-diagonal blocks vanish; distinguishes reference-selected, Galerkin, symmetry, and approximate projectors; states the Feshbach inverse formula at a declared spectral parameter; replaces the schematic squared-error slogan by the exact off-diagonal resolvent product; corrects the positively oriented Riesz-contour sign; proves projector and all-block operator-norm stability; defines a bounded reduced-resolvent comparison functional; separates spectral control from arbitrary long-time dynamics and physical time; preserves imported operator-theory ownership; and the complete 14-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "a64dbb79461e71fbafa2b1f902a357f07595615f3d78f52c48292b8af40aa048",
+      "reviewed_pdf_sha256": "05283cb1cabeb634624eb2fdcc8098cc70715b35dc49b373d2e107792ef53a45",
+      "reviewed_source_tree_sha256": "0827309394230fab4c0fc78e2c77d61bb9c26b754b0cfbcf2fd265ad609fa843"
     }
   }
 }

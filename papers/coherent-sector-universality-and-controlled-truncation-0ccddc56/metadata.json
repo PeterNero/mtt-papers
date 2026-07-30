@@ -1,65 +1,97 @@
 {
-  "abstract": "We develop a general framework for coherent-sector reduction in Modal Triplet Theory (MTT), establishing precise conditions under which effective truncations of internal modular temporal structure are mathematically controlled and physically robust. We define a class of admissible internal geometries characterized by bounded geometry, spectral gap conditions, and projector regularity, and prove that for this class the dynamics admits a controlled reduction to a coherent sector with explicit error bounds. We further show that such reductions define a universality class stable under small perturbations of the microscopic structure. A comparative appendix situates these results alongside other controlled reduction frameworks in high-energy theory, emphasizing structural parallels without asserting formal equivalence. This work provides a methods-level foundation for the effective use of MTT across models.",
+  "abstract": "A coherent-sector truncation is controlled only after the retained subspace, full closed operator, block domains, spectral parameter, eliminated-sector resolvent, and comparison norm have all been specified. A spectral gap alone is not a complete truncation theorem. This paper gives a domain-explicit coherent-sector reduction for a self-adjoint block operator. It first resolves a basic ambiguity: an exact spectral projector of the same operator reduces that operator, so its off-diagonal blocks vanish and the truncation is exact. A nonzero Feshbach correction therefore requires a projector selected from a reference operator, symmetry, Galerkin space, or approximate coherent criterion. For a reference-selected projector, the paper states the exact Feshbach-Schur reduction at a declared spectral parameter and bounds the omitted-sector self-energy by the product of the two coupling norms and the eliminated-sector resolvent norm. It proves the inverse formula, gives a two-mode example, derives Riesz-projector stability under bounded perturbations, and establishes local operator-norm robustness with all block variations explicit. These results define a controlled local comparison class, not a global universality theorem. Resolvent closeness does not imply uniform-in-time dynamical closeness; graph-norm and form robustness require separate hypotheses; and an internal one-parameter unitary is not physical time without a model-specific clock and intertwining theorem. The result is a rigorous methods paper and an executable certificate format for future Modal Triplet Theory reductions.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "Version 2, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261353",
-    "created": "2026-01-15T19:06:34.157025+00:00",
+    "created": "2026-07-30T21:32:31.916965+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18261354",
+    "doi": "10.5281/zenodo.21710429",
     "files": [
       {
-        "checksum": "md5:828c636c9e6d0d4f4a6bf1dab3e39c27",
-        "content_url": "https://zenodo.org/api/records/18261354/files/Coherent_Sector_Universality_and_Controlled_Truncation_in_Modal_Triplet_Theory%20(4).pdf/content",
-        "key": "Coherent_Sector_Universality_and_Controlled_Truncation_in_Modal_Triplet_Theory (4).pdf",
-        "size": 253832
+        "checksum": "md5:2bfab49b739ef2023493dd8ca8ef9234",
+        "content_url": "https://zenodo.org/api/records/21710429/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 391432
       }
     ],
-    "id": "18261354",
-    "match_kind": "title_or_file",
+    "id": "21710429",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18261354",
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21710429",
     "resource_type": "publication",
-    "title": "Coherent-Sector Universality and Controlled Truncation in Modal Triplet Theory",
-    "updated": "2026-01-15T19:06:34.838057+00:00",
-    "version": "v1.0"
+    "title": "Coherent-Sector Reduction in Modal Triplet Theory: Feshbach Control, Projector Stability, and Local Universality",
+    "updated": "2026-07-30T21:32:32.322409+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "ed7c3a90b693c3ebc3d01285422275c3f3c5f452518de13b2e6446c865054ffa",
+  "main_tex_sha256": "a64dbb79461e71fbafa2b1f902a357f07595615f3d78f52c48292b8af40aa048",
   "paper_id": "coherent-sector-universality-and-controlled-truncation-0ccddc56",
-  "paper_md_sha256": "92e8e60a33ee440ccfc0c52df1d679d0a876375e2c98f29a91a7bc87f1d17654",
+  "paper_md_sha256": "2e8d52a3f20cb184c97ea5d2a6397ff26ed3b2b7b8e800e8e250ee8a67951f4d",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/coherent-sector-universality-and-controlled-truncation-0ccddc56/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "b706f2bbffc74e00800899ea3741356f32b9dd7436f5296d6a00694ca22b5385",
+    "selected_revision": true
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 11264,
+      "bytes": 31712,
       "path": "main.tex",
-      "sha256": "ed7c3a90b693c3ebc3d01285422275c3f3c5f452518de13b2e6446c865054ffa"
+      "sha256": "a64dbb79461e71fbafa2b1f902a357f07595615f3d78f52c48292b8af40aa048"
     },
     {
-      "bytes": 15299,
-      "path": "series.sty",
-      "sha256": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
+      "bytes": 2360,
+      "path": "main.bib",
+      "sha256": "f822bfa74fdbfd80020a2c1a410accc48d2a771bb36436ab2d3096fb08ceea54"
+    },
+    {
+      "bytes": 391432,
+      "path": "main.pdf",
+      "sha256": "05283cb1cabeb634624eb2fdcc8098cc70715b35dc49b373d2e107792ef53a45"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Coherent_Sector_Universality_and_Controlled_Truncation_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "1a7d54923ae1b58aca34d77b15ba4c04fafb67424ecd3e28f32b66f2710c20b3",
-  "title": "Coherent-Sector Universality and Controlled Truncation in Modal Triplet Theory",
+  "source_tree_sha256": "0827309394230fab4c0fc78e2c77d61bb9c26b754b0cfbcf2fd265ad609fa843",
+  "title": "Coherent-Sector Reduction in Modal Triplet Theory: Feshbach Control, Projector Stability, and Local Universality",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261353",
+      "created": "2026-07-30T21:32:31.916965+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21710429",
+      "files": [
+        {
+          "checksum": "md5:2bfab49b739ef2023493dd8ca8ef9234",
+          "content_url": "https://zenodo.org/api/records/21710429/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 391432
+        }
+      ],
+      "id": "21710429",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21710429",
+      "resource_type": "publication",
+      "title": "Coherent-Sector Reduction in Modal Triplet Theory: Feshbach Control, Projector Stability, and Local Universality",
+      "updated": "2026-07-30T21:32:32.322409+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18261353",
       "created": "2026-01-15T19:06:34.157025+00:00",

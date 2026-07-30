@@ -12,21 +12,21 @@ Canonical papers audited: **139**.
 | --- | ---: |
 | critical | 7 |
 | major | 7 |
-| moderate | 4 |
+| moderate | 3 |
 | light | 7 |
 | low | 1 |
-| reviewed | 111 |
+| reviewed | 112 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 36 |
+| argument_flow | 35 |
 | conclusion | 12 |
-| concrete_foothold | 38 |
+| concrete_foothold | 37 |
 | object_intuition | 88 |
-| orientation | 46 |
+| orientation | 47 |
 | result_interpretation | 12 |
 
 ## Revision Queue
@@ -48,7 +48,6 @@ Canonical papers audited: **139**.
 | major | major | `computational-irreducibility-from-projection-undecidabi-6cc6aafd` | 9 | 190.1 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | major | major | `cosmology-as-global-coherence-capacity-evolution` | 8 | 134.6 | 5/7 | object_intuition, concrete_foothold |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
-| moderate | moderate | `coherent-sector-universality-and-controlled-truncation-0ccddc56` | 7 | 148.6 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | moderate | moderate | `universality-and-robustness-of-the-coherent-sector-in-m-a64842b3` | 4 | 333.5 | 3/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold |
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
@@ -79,6 +78,7 @@ Canonical papers audited: **139**.
 | reviewed | critical | `gravitationally-induced-collapse-as-an-effective-limit-d74eb471` | 13 | 149.1 | 4/7 | orientation, object_intuition, result_interpretation |
 | reviewed | major | `theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f` | 13 | 249.2 | 7/7 | - |
 | reviewed | major | `topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2` | 13 | 211.5 | 5/7 | orientation, object_intuition |
+| reviewed | major | `coherent-sector-universality-and-controlled-truncation-0ccddc56` | 12 | 223.2 | 5/7 | orientation, object_intuition |
 | reviewed | major | `fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8` | 12 | 157.5 | 7/7 | - |
 | reviewed | major | `from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3` | 12 | 211.6 | 5/7 | object_intuition, argument_flow |
 | reviewed | major | `modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731` | 12 | 205.0 | 6/7 | object_intuition |
