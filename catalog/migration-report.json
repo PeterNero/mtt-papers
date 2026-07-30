@@ -6,7 +6,7 @@
   "papers_without_zenodo_match": 1,
   "schema": "mtt.paper-migration-report.v1",
   "superseded_projects_excluded": 54,
-  "zenodo_records": 234,
-  "zenodo_records_matched": 234,
+  "zenodo_records": 235,
+  "zenodo_records_matched": 235,
   "zenodo_records_unmatched": 0
 }

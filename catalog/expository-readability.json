@@ -4,15 +4,15 @@
   "papers": 139,
   "priority_counts": {
     "critical": 10,
-    "light": 13,
+    "light": 12,
     "low": 1,
     "major": 11,
     "moderate": 6,
     "reference_ready": 2,
-    "reviewed": 96
+    "reviewed": 97
   },
   "missing_dimension_counts": {
-    "argument_flow": 44,
+    "argument_flow": 43,
     "conclusion": 16,
     "concrete_foothold": 44,
     "limitations": 1,
@@ -1312,28 +1312,27 @@
     },
     {
       "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
-      "title": "Flux Compactifications in Heterotic String Theory: Explicit Solutions on the Iwasawa Manifold and Lens\\timesNil Geometries",
-      "total_words": 4767,
-      "narrative_words": 3937,
-      "formal_results": 4,
-      "proofs": 1,
-      "narrative_words_per_result": 984.2,
+      "title": "Auditing Heterotic Flux Compactifications on Iwasawa and Lens\u2013Nil Geometries: Bundle Obstructions and a q=79 Fu\u2013Yau Completion Contract",
+      "total_words": 3775,
+      "narrative_words": 2941,
+      "formal_results": 7,
+      "proofs": 6,
+      "narrative_words_per_result": 420.1,
       "orientation": true,
       "object_intuition": false,
-      "argument_flow": false,
+      "argument_flow": true,
       "result_interpretation": true,
       "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
-      "coverage_dimensions": 5,
-      "audit_priority": "light",
+      "coverage_dimensions": 6,
+      "audit_priority": "reviewed",
       "heuristic_priority": "light",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "review_note": "Rebuilt as a rigorous audit: the local Iwasawa balanced geometry is retained with corrected torsion, the nonclosed Chern datum and nonintegrable Dolbeault matrix are exposed, the unique minimal repair is proved gauge-redundant and non-simple, the former Bianchi/generation/Yukawa claims are withdrawn, Lens-Nil is reclassified as auxiliary, and the q79 Fu-Yau completion gates are stated at their current tiers; exact verifier passes, managed result references are current, and the 12-page PDF was visually inspected.",
       "missing_dimensions": [
-        "object_intuition",
-        "argument_flow"
+        "object_intuition"
       ]
     },
     {

@@ -1,0 +1,14 @@
+{
+  "schema": "mtt.paper.bundle-audit.v1",
+  "arithmetic": "exact rational Laurent polynomials",
+  "checks": {
+    "printed_residual_is_exact_expected_nonzero": true,
+    "repaired_maurer_cartan_residual_vanishes": true,
+    "B1_complex_gauge_identity": true,
+    "B2_complex_gauge_identity": true,
+    "B3_complex_gauge_identity": true,
+    "holomorphic_commutant_dimension_is_two": true
+  },
+  "commutant_dimension": 2,
+  "passed": true
+}

@@ -1,6 +1,14 @@
 {
   "schema": "mtt.expository-review-decisions.v1",
   "papers": {
+    "flux-compactifications-in-heterotic-string-theory-expli-08b38155": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Rebuilt as a rigorous audit: the local Iwasawa balanced geometry is retained with corrected torsion, the nonclosed Chern datum and nonintegrable Dolbeault matrix are exposed, the unique minimal repair is proved gauge-redundant and non-simple, the former Bianchi/generation/Yukawa claims are withdrawn, Lens-Nil is reclassified as auxiliary, and the q79 Fu-Yau completion gates are stated at their current tiers; exact verifier passes, managed result references are current, and the 12-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "1ced1fa62136d291d0e58bd033f68c42cd51c3086f56236c94c2080b9387d461",
+      "reviewed_pdf_sha256": "4f9ae09d3e8ad9f1eed3b9a2ea7dadeffd06f9c82920c362f68d1fa7eb5726d6",
+      "reviewed_source_tree_sha256": "0a40e02ff1119244b5f7e66224ffa617d14c6f88e4a01abe4d6707e1ab31c604"
+    },
     "a-projection-first-reframing-of-quantum-gravity": {
       "status": "reviewed",
       "reviewed_on": "2026-07-29",

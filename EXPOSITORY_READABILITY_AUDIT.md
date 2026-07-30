@@ -13,16 +13,16 @@ Canonical papers audited: **139**.
 | critical | 10 |
 | major | 11 |
 | moderate | 6 |
-| light | 13 |
+| light | 12 |
 | low | 1 |
-| reviewed | 96 |
+| reviewed | 97 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 44 |
+| argument_flow | 43 |
 | conclusion | 16 |
 | concrete_foothold | 44 |
 | limitations | 1 |
@@ -64,7 +64,6 @@ Canonical papers audited: **139**.
 | light | light | `modal-triplet-theory-from-mtt-to-quantum-mechanics` | 14 | 459.6 | 6/7 | object_intuition |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
 | light | light | `modal-triplet-theory-from-mtt-to-pilot-wave-dynamics` | 6 | 400.2 | 5/7 | object_intuition, concrete_foothold |
-| light | light | `flux-compactifications-in-heterotic-string-theory-expli-08b38155` | 4 | 984.2 | 5/7 | object_intuition, argument_flow |
 | light | light | `why-general-relativity-and-string-theory-are-the-same-a-98920533` | 4 | 927.2 | 5/7 | object_intuition, conclusion |
 | light | light | `effective-field-theory-as-a-shadow-of-projection-admiss-ec123406` | 3 | 1040.3 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | light | light | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 1 | 7592.0 | 6/7 | object_intuition |
@@ -117,6 +116,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014` | 7 | 251.7 | 7/7 | - |
 | reviewed | moderate | `entanglement-locality-and-measurement-from-coherent-sec-110e8cbe` | 7 | 379.0 | 6/7 | object_intuition |
 | reviewed | moderate | `finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb` | 7 | 269.3 | 4/7 | orientation, object_intuition, argument_flow |
+| reviewed | light | `flux-compactifications-in-heterotic-string-theory-expli-08b38155` | 7 | 420.1 | 6/7 | object_intuition |
 | reviewed | moderate | `measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e` | 7 | 334.3 | 4/7 | orientation, argument_flow, result_interpretation |
 | reviewed | moderate | `mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f` | 7 | 253.0 | 6/7 | object_intuition |
 | reviewed | moderate | `temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb` | 7 | 350.7 | 7/7 | - |

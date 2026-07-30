@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.17072372",
+      "created": "2026-07-30T15:20:09.617485+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21705964",
+      "files": [
+        {
+          "checksum": "md5:bb1a0764b0eea2362e81fb9fba6f6acf",
+          "content_url": "https://zenodo.org/api/records/21705964/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 379674
+        }
+      ],
+      "id": "21705964",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21705964",
+      "resource_type": "publication",
+      "title": "Auditing Heterotic Flux Compactifications on Iwasawa and Lens\u2013Nil Geometries: Bundle Obstructions and a q=79 Fu\u2013Yau Completion Contract",
+      "updated": "2026-07-30T15:20:10.331271+00:00",
+      "version": "v4"
+    },
+    {
       "concept_doi": "10.5281/zenodo.21704911",
       "created": "2026-07-30T14:02:29.297622+00:00",
       "creators": [

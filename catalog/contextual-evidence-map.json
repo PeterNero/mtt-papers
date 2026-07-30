@@ -114,6 +114,12 @@
       "A01/strict_pew_row",
       "A05/strict_upgrade_ledger"
     ],
+    "heterotic4": [
+      "A19/hym_wiener_contraction",
+      "A07/literal_cech_witness",
+      "A11/q79_exact_audit",
+      "A11/q79_exact_theorem"
+    ],
     "gr1": [
       "A13/gr_tt_support"
     ],
@@ -158,6 +164,16 @@
     ]
   },
   "papers": {
+    "flux-compactifications-in-heterotic-string-theory-expli-08b38155": {
+      "direct_result_ids": [
+        "A19/hym_wiener_contraction",
+        "A07/literal_cech_witness",
+        "A11/q79_exact_audit",
+        "A11/q79_exact_theorem"
+      ],
+      "result_set": "heterotic4",
+      "scope": "The q79 arithmetic theorem and audit, literal finite rank-two Cech witness, and rank-two Wiener-contraction certificate are used directly at their declared finite, topological, or rank-two analytic tiers. They do not construct the missing physical rank-three visible-hidden bundle, differential Green-Schwarz representative, flux gerbe, or worldsheet theory. The paper's SU3 repair obstruction is checked by its own exact local verifier and is not relabeled as a promoted q79 HYM endpoint."
+    },
     "a-third-corner-shadow-bridge-asymptotic-safety-the-stri-37bbd5a2": {
       "direct_result_ids": [],
       "result_set": "open1",

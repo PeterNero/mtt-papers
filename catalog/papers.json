@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 54,
-    "zenodo_records": 234,
-    "zenodo_records_matched": 234,
+    "zenodo_records": 235,
+    "zenodo_records_matched": 235,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -404,7 +404,7 @@
       ]
     },
     {
-      "abstract": "String theory supplies a highly constrained language for extended excitations, quantum gravity, gauge sectors, duality, and compactification. A projection-first viewpoint can organize these structures as possible encodings of a richer source, but projection alone does not force strings, branes, a worldsheet, a critical dimension, modular invariance, or a graviton. This paper separates the internal results of perturbative string theory from their proposed interpretation in Modal Triplet Theory. A valid MTT-to-string bridge must construct target fields, a worldsheet action and measure, Weyl and modular consistency, anomaly cancellation, factorization, and the relevant observable dictionary from the same selected source. The q79 Fu\u2013Yau branch is the present compatible candidate. Its twelve-row heterotic worldsheet contract has five available rows, two partial rows, and five open rows. The resulting claim is a structured string-encoding program, not a derivation of string theory from projection or a completed ultraviolet theory.",
+      "abstract": "String theory supplies a highly constrained language for extended excitations, quantum gravity, gauge sectors, duality, and compactification. A projection-first viewpoint can organize these structures as possible encodings of a richer source, but projection alone does not force strings, branes, a worldsheet, a critical dimension, modular invariance, or a graviton. This paper separates the internal results of perturbative string theory from their proposed interpretation in Modal Triplet Theory. A valid MTT-to-string bridge must construct target fields, a worldsheet action and measure, Weyl and modular consistency, anomaly cancellation, factorization, and the relevant observable dictionary from the same selected source. The q79 Fu–Yau branch is the present compatible candidate. Its twelve-row heterotic worldsheet contract has five available rows, two partial rows, and five open rows. The resulting claim is a structured string-encoding program, not a derivation of string theory from projection or a completed ultraviolet theory.",
       "authors": [
         "Peter Nero"
       ],
@@ -612,7 +612,7 @@
       ]
     },
     {
-      "abstract": "An admissibility-indexed precosheaf is a pregeometric covariant functor only after its algebras and extension morphisms are supplied; overlap or failure of joint representability does not create commutators or imply locality. A physical Haag\u2013Kastler net instead requires a selected Lorentzian base, an upper local operator net, and a localization-preserving coherent reduction. For a decomposable orthogonal projector P, we prove that compression of the P-compatible upper subalgebras preserves isotony and spacelike commutation. This is the rigorous MTT-to-AQFT bridge currently available. We also show why absence of a global admissible chart does not forbid an abstract quasilocal algebra or categorical colimit. The current q79 source now also supplies a selected free twisted-Dirac construction whose even CAR observable net has locality, covariance, the time-slice property, and nonempty positive Hadamard state space through standard AQFT results. The chart-to-region natural equivalence and the nonperturbative interacting C-star completion remain open.",
+      "abstract": "An admissibility-indexed precosheaf is a pregeometric covariant functor only after its algebras and extension morphisms are supplied; overlap or failure of joint representability does not create commutators or imply locality. A physical Haag–Kastler net instead requires a selected Lorentzian base, an upper local operator net, and a localization-preserving coherent reduction. For a decomposable orthogonal projector P, we prove that compression of the P-compatible upper subalgebras preserves isotony and spacelike commutation. This is the rigorous MTT-to-AQFT bridge currently available. We also show why absence of a global admissible chart does not forbid an abstract quasilocal algebra or categorical colimit. The current q79 source now also supplies a selected free twisted-Dirac construction whose even CAR observable net has locality, covariance, the time-slice property, and nonempty positive Hadamard state space through standard AQFT results. The chart-to-region natural equivalence and the nonperturbative interacting C-star completion remain open.",
       "authors": [
         "Peter Nero"
       ],
@@ -1003,7 +1003,116 @@
       ]
     },
     {
-      "abstract": "We provide a typed scale and provenance ledger for Modal Triplet Theory (MTT). The internal vertical gap, complementary stabilization rate, coherent contraction rate, four-dimensional EFT cutoff, curvature scale, Planck scale, and renormalization scale are distinct objects. The internal gap is an internal mass or truncation scale only after the operator normalization and physical action are specified; it does not automatically damp high four-dimensional energy or satisfy particle, fifth-force, Lorentz-violation, gravitational-wave, general-relativistic, or cosmological bounds. We state the conditional Kaluza\u2013Klein-type bridge under which internal eigenvalues become four-dimensional masses, retain the Foundation's Schur\u2013Feshbach truncation estimate, and define a formal consistency set built from sourced observable-response maps. A phenomenological consistency claim requires a nonempty common set or an exhibited parameter witness with theory errors and provenance. No such numerical witness is constructed here, so this paper makes no prediction and no assertion of present empirical viability. Its purpose is to prevent scale conflation and to specify exactly what downstream calculations must supply.",
+      "abstract": "We determine which parts of two proposed heterotic flux constructions survive the full Hull–Strominger proof obligations. The diagonal invariant Hermitian structure on the Iwasawa manifold is balanced, and its torsion and dH are computed exactly. The proposed bundle, however, does not exist as claimed. One of its alleged first-Chern forms is not closed; the monad maps were not constructed as global sections; the printed Dolbeault operator is not integrable; and a connection on the stated trivial smooth rank-three carrier cannot have third Chern number six. Within the declared one-entry repair ansatz, the Maurer–Cartan equation has a unique signed repair, but the repaired family is a single complex-gauge orbit with a non-scalar holomorphic commutant, so it cannot supply the claimed stable bundle. The old anomaly, three-generation, and normalized-Yukawa conclusions therefore do not follow. The Lens–Nil model is a balanced real SU(3)-structure comparison model, but its almost-complex structure is non-integrable and hence it is not a Hull–Strominger compactification. We finish by separating the exact q=79 finite and rank-two Hermitian–Yang–Mills evidence from the still-open physical rank-three problem, and state a typed completion contract for a future Fu–Yau endpoint.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v4",
+      "date": "July 2026, Version 4",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.17072372",
+        "created": "2026-07-30T15:20:09.617485+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21705964",
+        "files": [
+          {
+            "checksum": "md5:bb1a0764b0eea2362e81fb9fba6f6acf",
+            "content_url": "https://zenodo.org/api/records/21705964/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 379674
+          }
+        ],
+        "id": "21705964",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21705964",
+        "resource_type": "publication",
+        "title": "Auditing Heterotic Flux Compactifications on Iwasawa and Lens–Nil Geometries: Bundle Obstructions and a q=79 Fu–Yau Completion Contract",
+        "updated": "2026-07-30T15:20:10.331271+00:00",
+        "version": "v4"
+      },
+      "main_tex_sha256": "1ced1fa62136d291d0e58bd033f68c42cd51c3086f56236c94c2080b9387d461",
+      "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+      "paper_md_sha256": "599a0d3e7afe72b00da78fc62730b8bdbb1ab7f3d6357b25b61edd40f84664b9",
+      "release_state": "zenodo_released",
+      "result_refs": [
+        "hym_wiener_contraction",
+        "literal_cech_witness",
+        "q79_exact_audit",
+        "q79_exact_theorem"
+      ],
+      "revision": {
+        "revision_evidence_path": "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "32c57c2c738d8eae8003ad5ee067c30cd48c97a1383174908434b47a3ea1dc14",
+        "selected_revision": true,
+        "superseded_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Flux_Compactifications_in_Heterotic_String_Theory_v3"
+      },
+      "source_provenance": {
+        "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Flux_Compactifications_in_Heterotic_String_Theory_v3"
+      },
+      "source_tree_sha256": "0a40e02ff1119244b5f7e66224ffa617d14c6f88e4a01abe4d6707e1ab31c604",
+      "title": "Auditing Heterotic Flux Compactifications on Iwasawa and Lens–Nil Geometries: Bundle Obstructions and a q=79 Fu–Yau Completion Contract",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.17072372",
+          "created": "2026-07-30T15:20:09.617485+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21705964",
+          "files": [
+            {
+              "checksum": "md5:bb1a0764b0eea2362e81fb9fba6f6acf",
+              "content_url": "https://zenodo.org/api/records/21705964/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 379674
+            }
+          ],
+          "id": "21705964",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21705964",
+          "resource_type": "publication",
+          "title": "Auditing Heterotic Flux Compactifications on Iwasawa and Lens–Nil Geometries: Bundle Obstructions and a q=79 Fu–Yau Completion Contract",
+          "updated": "2026-07-30T15:20:10.331271+00:00",
+          "version": "v4"
+        },
+        {
+          "concept_doi": "10.5281/zenodo.17072372",
+          "created": "2026-01-10T09:53:11.552957+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.18205997",
+          "files": [
+            {
+              "checksum": "md5:b179cf719126bedce773879944073f01",
+              "content_url": "https://zenodo.org/api/records/18205997/files/Flux_Compactifications_in_Heterotic_String_Theory_v3%20(2).pdf/content",
+              "key": "Flux_Compactifications_in_Heterotic_String_Theory_v3 (2).pdf",
+              "size": 452151
+            }
+          ],
+          "id": "18205997",
+          "match_kind": "title_or_file",
+          "match_score": 1.0,
+          "publication_date": "2026-01-10",
+          "record_url": "https://zenodo.org/records/18205997",
+          "resource_type": "publication",
+          "title": "Flux Compactifications in Heterotic String Theory",
+          "updated": "2026-01-19T14:43:51.994662+00:00",
+          "version": "v3.0"
+        }
+      ]
+    },
+    {
+      "abstract": "We provide a typed scale and provenance ledger for Modal Triplet Theory (MTT). The internal vertical gap, complementary stabilization rate, coherent contraction rate, four-dimensional EFT cutoff, curvature scale, Planck scale, and renormalization scale are distinct objects. The internal gap is an internal mass or truncation scale only after the operator normalization and physical action are specified; it does not automatically damp high four-dimensional energy or satisfy particle, fifth-force, Lorentz-violation, gravitational-wave, general-relativistic, or cosmological bounds. We state the conditional Kaluza–Klein-type bridge under which internal eigenvalues become four-dimensional masses, retain the Foundation's Schur–Feshbach truncation estimate, and define a formal consistency set built from sourced observable-response maps. A phenomenological consistency claim requires a nonempty common set or an exhibited parameter witness with theory errors and provenance. No such numerical witness is constructed here, so this paper makes no prediction and no assertion of present empirical viability. Its purpose is to prevent scale conflation and to specify exactly what downstream calculations must supply.",
       "authors": [
         "Peter Nero"
       ],
@@ -1204,7 +1313,7 @@
           "publication_date": "2026-01-21",
           "record_url": "https://zenodo.org/records/18330675",
           "resource_type": "publication",
-          "title": "Inflationary Measures and the Born Rule as a Single Shadow\u2013Bridge Problem",
+          "title": "Inflationary Measures and the Born Rule as a Single Shadow–Bridge Problem",
           "updated": "2026-01-21T20:58:34.648823+00:00",
           "version": "v1.0"
         }
@@ -1495,7 +1604,7 @@
       ]
     },
     {
-      "abstract": "We formulate a ten-dimensional effective action compatible with closure-strain and q79 carrier data. The metric, the bundle from M10 to Y4, the compact fiber, field representations, and the derivative expansion are declared realization inputs. The action is an ansatz on a specified regime, not the most general action and not a derivation of gravity from projection. We give the conditions under which a closure Hessian contributes to canonically normalized pole masses, a rank-one alignment projector yields one Higgs doublet, an internal operator has discrete spectrum, and a four-dimensional mode truncation is consistent. Curvature is defined through explicit connections rather than inferred from nonuniform strain. The selected q79 Fu\u2013Yau branch is the compactification candidate, while Lens\u2013Nil remains auxiliary. Existing finite-matrix and Standard-Model profile calculations are incorporated at their declared embedded-renormalized-SM tier; their profile inputs and imported BRST quantization are not reclassified as no-knob consequences of this action.",
+      "abstract": "We formulate a ten-dimensional effective action compatible with closure-strain and q79 carrier data. The metric, the bundle from M10 to Y4, the compact fiber, field representations, and the derivative expansion are declared realization inputs. The action is an ansatz on a specified regime, not the most general action and not a derivation of gravity from projection. We give the conditions under which a closure Hessian contributes to canonically normalized pole masses, a rank-one alignment projector yields one Higgs doublet, an internal operator has discrete spectrum, and a four-dimensional mode truncation is consistent. Curvature is defined through explicit connections rather than inferred from nonuniform strain. The selected q79 Fu–Yau branch is the compactification candidate, while Lens–Nil remains auxiliary. Existing finite-matrix and Standard-Model profile calculations are incorporated at their declared embedded-renormalized-SM tier; their profile inputs and imported BRST quantization are not reclassified as no-knob consequences of this action.",
       "authors": [
         "Peter Nero"
       ],
@@ -1703,7 +1812,7 @@
       ]
     },
     {
-      "abstract": "We identify a single structural resource underlying effective physical descriptions: a finite coherence capacity, defined as the stability margin that allows a projection-based description to remain predictive under disturbance. We consider a general class of theories in which observable physics arises via a noninvertible projection from a higher-dimensional configuration space with invertible dynamics. Under minimal axioms, we prove that exhaustion of coherence capacity necessarily induces noninvertibility of the effective evolution, forcing irreversibility in the observable description despite invertibility of the underlying dynamics. Measurement collapse, thermalization, and black hole information loss are shown to be instances of the same admissibility transition. We further show that spatial variation of coherence capacity induces a geometric response identical in form to Einstein gravity, with Newton\u2019s constant emerging as a conversion factor between coherence capacity and curvature units. The framework is independent of any specific microscopic model; Modal Triplet Theory is cited only as a concrete realization of the axioms.",
+      "abstract": "We identify a single structural resource underlying effective physical descriptions: a finite coherence capacity, defined as the stability margin that allows a projection-based description to remain predictive under disturbance. We consider a general class of theories in which observable physics arises via a noninvertible projection from a higher-dimensional configuration space with invertible dynamics. Under minimal axioms, we prove that exhaustion of coherence capacity necessarily induces noninvertibility of the effective evolution, forcing irreversibility in the observable description despite invertibility of the underlying dynamics. Measurement collapse, thermalization, and black hole information loss are shown to be instances of the same admissibility transition. We further show that spatial variation of coherence capacity induces a geometric response identical in form to Einstein gravity, with Newton’s constant emerging as a conversion factor between coherence capacity and curvature units. The framework is independent of any specific microscopic model; Modal Triplet Theory is cited only as a concrete realization of the axioms.",
       "authors": [
         "Peter Nero"
       ],
@@ -1959,7 +2068,7 @@
       ]
     },
     {
-      "abstract": "This paper studies continuum-derived fermion operators on graph-labelled spaces in Modal Triplet Theory (MTT) and loop quantum gravity (LQG). For a self-adjoint continuum Dirac operator with compact resolvent, exact spectral compression preserves, without spectral pollution, every eigenvalue in the selected finite window. For a graded Dirac operator, a symmetric spectral window also preserves the chiral index. Any unitary presentation of that finite subspace on graph data inherits these facts. The construction avoids lattice doubling because it is continuum-derived and generally nonlocal; it does not yet construct a local graph Dirac operator or derive the continuum fermion source from MTT. Separately, a smooth constant-rank family of projectors carries the exact Kato\u2013Berry connection, but such a family requires an explicit gapped band bundle. The paper therefore gives a rigorous no-spurious-spectrum benchmark and a finite source contract, not a completed chiral-fermion quantization in LQG.",
+      "abstract": "This paper studies continuum-derived fermion operators on graph-labelled spaces in Modal Triplet Theory (MTT) and loop quantum gravity (LQG). For a self-adjoint continuum Dirac operator with compact resolvent, exact spectral compression preserves, without spectral pollution, every eigenvalue in the selected finite window. For a graded Dirac operator, a symmetric spectral window also preserves the chiral index. Any unitary presentation of that finite subspace on graph data inherits these facts. The construction avoids lattice doubling because it is continuum-derived and generally nonlocal; it does not yet construct a local graph Dirac operator or derive the continuum fermion source from MTT. Separately, a smooth constant-rank family of projectors carries the exact Kato–Berry connection, but such a family requires an explicit gapped band bundle. The paper therefore gives a rigorous no-spurious-spectrum benchmark and a finite source contract, not a completed chiral-fermion quantization in LQG.",
       "authors": [
         "Peter Nero"
       ],
@@ -2142,7 +2251,7 @@
       ]
     },
     {
-      "abstract": "We formulate coherent kinematics as an encoding-level construction and separate it from physical causal motion. An admissible chart is a typed reduction from an upper state domain to an effective description, with transition maps on controlled overlaps. Position is a declared localization functional of chart support. An encoding trajectory is generated by an actual upper path that remains representable through a compatible chain of charts; equivalent chart descriptions define the same encoding worldline. Regularity of this worldline requires regular upper evolution and regular chart and localization maps\u2014contractivity alone is insufficient. Physical timelike and null classification, finite propagation, and locality come only after a selected local hyperbolic realization and its principal symbol are supplied. Chart ordering alone is not a causal order. Effective mergers are noninjectivity of an autonomous reduced map, while a split requires additional multivalued, stochastic, or hybrid continuation data. At a horizon, failure of an exterior decoder or chart continuation does not imply termination of the underlying physical worldline. These distinctions retain chart persistence as a useful MTT kinematic language without deriving relativity, exclusion principles, measurement outcomes, or irreversibility from projection alone.",
+      "abstract": "We formulate coherent kinematics as an encoding-level construction and separate it from physical causal motion. An admissible chart is a typed reduction from an upper state domain to an effective description, with transition maps on controlled overlaps. Position is a declared localization functional of chart support. An encoding trajectory is generated by an actual upper path that remains representable through a compatible chain of charts; equivalent chart descriptions define the same encoding worldline. Regularity of this worldline requires regular upper evolution and regular chart and localization maps—contractivity alone is insufficient. Physical timelike and null classification, finite propagation, and locality come only after a selected local hyperbolic realization and its principal symbol are supplied. Chart ordering alone is not a causal order. Effective mergers are noninjectivity of an autonomous reduced map, while a split requires additional multivalued, stochastic, or hybrid continuation data. At a horizon, failure of an exterior decoder or chart continuation does not imply termination of the underlying physical worldline. These distinctions retain chart persistence as a useful MTT kinematic language without deriving relativity, exclusion principles, measurement outcomes, or irreversibility from projection alone.",
       "authors": [
         "Peter Nero"
       ],
@@ -2246,7 +2355,7 @@
       ]
     },
     {
-      "abstract": "We present a structural classification result for quantum theories capable of reproducing irreversible measurement, stable classical outcomes, relativistic locality, finite predictivity, and observed matter structure. Starting from minimal empirical requirements rather than model-specific assumptions, we derive a sequence of inevitability theorems: effective noninvertible projection, admissible basins with finite stability margins, smooth spectral suppression of ultraviolet modes, discrete selection events at the encoding level, and topology-driven constraints on matter representations and operators are all forced. These conditions define a coherent universality class. We show that all successful existing approaches\u2014collapse models, measurement-induced transitions, asymptotic safety, loop quantum gravity, causal set theory, and noncommutative geometry\u2014implement partial shadows of this class, while structurally distinct alternatives fail one or more necessary conditions. Modal Triplet Theory provides a minimal explicit realization of the class, but the classification result does not depend on MTT-specific constructions. The apparent plurality of quantum gravity and measurement theories is therefore illusory: viable frameworks are constrained to a single universality class characterized by projection, admissibility, and spectral truncation.",
+      "abstract": "We present a structural classification result for quantum theories capable of reproducing irreversible measurement, stable classical outcomes, relativistic locality, finite predictivity, and observed matter structure. Starting from minimal empirical requirements rather than model-specific assumptions, we derive a sequence of inevitability theorems: effective noninvertible projection, admissible basins with finite stability margins, smooth spectral suppression of ultraviolet modes, discrete selection events at the encoding level, and topology-driven constraints on matter representations and operators are all forced. These conditions define a coherent universality class. We show that all successful existing approaches—collapse models, measurement-induced transitions, asymptotic safety, loop quantum gravity, causal set theory, and noncommutative geometry—implement partial shadows of this class, while structurally distinct alternatives fail one or more necessary conditions. Modal Triplet Theory provides a minimal explicit realization of the class, but the classification result does not depend on MTT-specific constructions. The apparent plurality of quantum gravity and measurement theories is therefore illusory: viable frameworks are constrained to a single universality class characterized by projection, admissibility, and spectral truncation.",
       "authors": [
         "Peter Nero"
       ],
@@ -2398,7 +2507,7 @@
       ]
     },
     {
-      "abstract": "Sol\u00e8r's theorem classifies an orthomodular generalized Hilbert space containing an infinite orthonormal sequence as a real, complex, or quaternionic Hilbert space. This classification does not by itself select the complex field. We add a separate finite-composition requirement: a system of dimension d over the selected field has the full self-adjoint matrix space as its unnormalized state/effect space; a composite of dimensions a and b has dimension ab over the same field; and independent product effects are tomographically complete. The resulting dimension identity holds for complex Hermitian matrices and fails, by explicit nonzero defects, for real symmetric and quaternionic Hermitian matrices whenever a and b are both greater than one. Complex Hilbert space is therefore rigid within this declared reconstruction class. The conclusion is conditional and representation-sensitive: complex quantum theory can be realified by adjoining an orthogonal complex-structure operator, and alternative composite rules fall outside the theorem. Applied to MTT, the result identifies exact missing premises rather than deriving them. The current q79 finite quantum model and finite complex polarization are compatible with the complex branch, but MTT has not yet sourced the required infinite orthogonality and standard locally tomographic composition from one physical upper construction.",
+      "abstract": "Solèr's theorem classifies an orthomodular generalized Hilbert space containing an infinite orthonormal sequence as a real, complex, or quaternionic Hilbert space. This classification does not by itself select the complex field. We add a separate finite-composition requirement: a system of dimension d over the selected field has the full self-adjoint matrix space as its unnormalized state/effect space; a composite of dimensions a and b has dimension ab over the same field; and independent product effects are tomographically complete. The resulting dimension identity holds for complex Hermitian matrices and fails, by explicit nonzero defects, for real symmetric and quaternionic Hermitian matrices whenever a and b are both greater than one. Complex Hilbert space is therefore rigid within this declared reconstruction class. The conclusion is conditional and representation-sensitive: complex quantum theory can be realified by adjoining an orthogonal complex-structure operator, and alternative composite rules fall outside the theorem. Applied to MTT, the result identifies exact missing premises rather than deriving them. The current q79 finite quantum model and finite complex polarization are compatible with the complex branch, but MTT has not yet sourced the required infinite orthogonality and standard locally tomographic composition from one physical upper construction.",
       "authors": [
         "Peter Nero"
       ],
@@ -2427,7 +2536,7 @@
         "publication_date": "2026-07-29",
         "record_url": "https://zenodo.org/records/21666024",
         "resource_type": "publication",
-        "title": "Complex-Hilbert Rigidity under Sol\u00e8r, Local Tomography, and Standard Composition A Conditional MTT Reconstruction Theorem",
+        "title": "Complex-Hilbert Rigidity under Solèr, Local Tomography, and Standard Composition A Conditional MTT Reconstruction Theorem",
         "updated": "2026-07-29T08:52:43.400170+00:00",
         "version": "v2"
       },
@@ -2446,7 +2555,7 @@
         "legacy_source_path": "6 Quantum Mechanics/_work/Why_Quantum_Theory_Must_Be_Complex__A_Sol_er__Admissibility_Rigidity_Theorem_in_Modal_Triplet_Theory"
       },
       "source_tree_sha256": "7a9e4390c793491a5e8668f82be68353adb7c6e504cbc022e96f5fe441c739ea",
-      "title": "Complex-Hilbert Rigidity under Sol\u00e8r, Local Tomography, and Standard Composition A Conditional MTT Reconstruction Theorem",
+      "title": "Complex-Hilbert Rigidity under Solèr, Local Tomography, and Standard Composition A Conditional MTT Reconstruction Theorem",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -2470,7 +2579,7 @@
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21666024",
           "resource_type": "publication",
-          "title": "Complex-Hilbert Rigidity under Sol\u00e8r, Local Tomography, and Standard Composition A Conditional MTT Reconstruction Theorem",
+          "title": "Complex-Hilbert Rigidity under Solèr, Local Tomography, and Standard Composition A Conditional MTT Reconstruction Theorem",
           "updated": "2026-07-29T08:52:43.400170+00:00",
           "version": "v2"
         },
@@ -2495,7 +2604,7 @@
           "publication_date": "2026-01-21",
           "record_url": "https://zenodo.org/records/18330649",
           "resource_type": "publication",
-          "title": "Why Quantum Theory Must Be Complex: A Sol\u00e8r\u2013Admissibility Rigidity Theorem",
+          "title": "Why Quantum Theory Must Be Complex: A Solèr–Admissibility Rigidity Theorem",
           "updated": "2026-01-21T19:43:00.721951+00:00",
           "version": "v1.0"
         }
@@ -2682,7 +2791,7 @@
       ]
     },
     {
-      "abstract": "This paper separates three constructive questions: existence of the filtered Gaussian measure, Borel summability at a finite spectral cutoff, and removal of that cutoff for a selected gravitational interaction. On a bounded-geometry Euclidean domain, a positive proper-time gap makes the spectral proper-time (SPT) covariance trace class, not merely Hilbert\u2013Schmidt. It therefore defines a centered Borel Gaussian measure on the stated TT Hilbert space and has almost-sure Sobolev regularity of every finite order. We then prove ordinary Borel summability for finite-dimensional nonnegative quartic interactions and give an exact Borel\u2013Laplace representation on the positive coupling ray. Finally, we prove a sufficient weighted-Borel convergence criterion for cutoff removal. These results do not establish Borel summability of the TT-expanded Einstein\u2013Hilbert action: its sectorial stability, a selected interaction and filter, cutoff-uniform constructive bounds, and convergence of the Borel transforms remain separate obligations. The result is a rigorous finite-volume constructive core and a precise input contract for the BRST/BV successor, rather than a nonperturbative construction of MTT gravity.",
+      "abstract": "This paper separates three constructive questions: existence of the filtered Gaussian measure, Borel summability at a finite spectral cutoff, and removal of that cutoff for a selected gravitational interaction. On a bounded-geometry Euclidean domain, a positive proper-time gap makes the spectral proper-time (SPT) covariance trace class, not merely Hilbert–Schmidt. It therefore defines a centered Borel Gaussian measure on the stated TT Hilbert space and has almost-sure Sobolev regularity of every finite order. We then prove ordinary Borel summability for finite-dimensional nonnegative quartic interactions and give an exact Borel–Laplace representation on the positive coupling ray. Finally, we prove a sufficient weighted-Borel convergence criterion for cutoff removal. These results do not establish Borel summability of the TT-expanded Einstein–Hilbert action: its sectorial stability, a selected interaction and filter, cutoff-uniform constructive bounds, and convergence of the Borel transforms remain separate obligations. The result is a rigorous finite-volume constructive core and a precise input contract for the BRST/BV successor, rather than a nonperturbative construction of MTT gravity.",
       "authors": [
         "Peter Nero"
       ],
@@ -2779,14 +2888,14 @@
           "publication_date": "2026-01-10",
           "record_url": "https://zenodo.org/records/18209684",
           "resource_type": "publication",
-          "title": "Constructive MTT Quantum Gravity I: Borel Summability of the SPT-Filtered Transverse\u2013Traceless Sector",
+          "title": "Constructive MTT Quantum Gravity I: Borel Summability of the SPT-Filtered Transverse–Traceless Sector",
           "updated": "2026-01-10T21:20:37.595169+00:00",
           "version": "v1.0"
         }
       ]
     },
     {
-      "abstract": "This paper gives a typed compatibility contract for BRST lifting, gauge independence, Borel summation, and reflection positivity in the Modal Triplet Theory quantum-gravity program. First, a common bounded functional calculus preserves a linear BRST complex when the kinetic Laplacians, spectral projections, domains, and boundary conditions intertwine the differential; independently chosen filters do not ensure this. Second, an exact finite-cutoff quantum BRST measure gives Ward identities and gauge-fixing independence by super-Stokes, while Borel summation preserves a linear Ward identity only under a common analytic domain and uniform Gevrey-one remainder bounds. Third, BRST cohomology yields a physical pre-Hilbert space only when reflection positivity is proved on the full BRST-closed positive-time observable algebra and exact classes lie in the reflection null radical. Positivity on the TT subspace alone is insufficient. We also prove that a nonzero positive Kallen\u2013Lehmann measure cannot have permanent Gaussian decay in the same Euclidean spectral variable, so the old SPT positivity argument cannot be used. The result is a rigorous conditional theorem and an explicit exit certificate. Current MTT data provide useful finite classical and free-field inputs, but not yet the selected gravitational quantum measure, quantum master equation, constructive Borel theorem, or physical reflection-positivity theorem required by that certificate.",
+      "abstract": "This paper gives a typed compatibility contract for BRST lifting, gauge independence, Borel summation, and reflection positivity in the Modal Triplet Theory quantum-gravity program. First, a common bounded functional calculus preserves a linear BRST complex when the kinetic Laplacians, spectral projections, domains, and boundary conditions intertwine the differential; independently chosen filters do not ensure this. Second, an exact finite-cutoff quantum BRST measure gives Ward identities and gauge-fixing independence by super-Stokes, while Borel summation preserves a linear Ward identity only under a common analytic domain and uniform Gevrey-one remainder bounds. Third, BRST cohomology yields a physical pre-Hilbert space only when reflection positivity is proved on the full BRST-closed positive-time observable algebra and exact classes lie in the reflection null radical. Positivity on the TT subspace alone is insufficient. We also prove that a nonzero positive Kallen–Lehmann measure cannot have permanent Gaussian decay in the same Euclidean spectral variable, so the old SPT positivity argument cannot be used. The result is a rigorous conditional theorem and an explicit exit certificate. Current MTT data provide useful finite classical and free-field inputs, but not yet the selected gravitational quantum measure, quantum master equation, constructive Borel theorem, or physical reflection-positivity theorem required by that certificate.",
       "authors": [
         "Peter Nero"
       ],
@@ -2890,7 +2999,7 @@
       ]
     },
     {
-      "abstract": "This paper separates a massive or infrared-regulated scattering benchmark from the physical massless-graviton problem in Modal Triplet Theory quantum gravity. A positive transverse-traceless mass gap does not describe the physical massless graviton, and finite-volume Gaussian and BRST results do not by themselves construct the local Lorentzian theory required by Haag\u2013Ruelle scattering. The paper proves the operator statement that for isometric incoming and outgoing wave operators, the scattering operator is only a contraction in general and is unitary exactly when their ranges coincide. It also proves that a normalized SPT factor leaves the leading massless soft pole unchanged. Standard massive Haag\u2013Ruelle theory is retained as a conditional benchmark after its full axioms are supplied. The physical gravity route instead requires a selected Lorentzian BRST theory, asymptotic null geometry, soft-charge control, dressed states or inclusive observables, infrared-regulator removal, and an appropriate completeness theorem. Current MTT data do not yet provide that packet. The paper therefore supplies a precise infrared dependency theorem and executable exit contract, not a unitary MTT gravity S-matrix.",
+      "abstract": "This paper separates a massive or infrared-regulated scattering benchmark from the physical massless-graviton problem in Modal Triplet Theory quantum gravity. A positive transverse-traceless mass gap does not describe the physical massless graviton, and finite-volume Gaussian and BRST results do not by themselves construct the local Lorentzian theory required by Haag–Ruelle scattering. The paper proves the operator statement that for isometric incoming and outgoing wave operators, the scattering operator is only a contraction in general and is unitary exactly when their ranges coincide. It also proves that a normalized SPT factor leaves the leading massless soft pole unchanged. Standard massive Haag–Ruelle theory is retained as a conditional benchmark after its full axioms are supplied. The physical gravity route instead requires a selected Lorentzian BRST theory, asymptotic null geometry, soft-charge control, dressed states or inclusive observables, infrared-regulator removal, and an appropriate completeness theorem. Current MTT data do not yet provide that packet. The paper therefore supplies a precise infrared dependency theorem and executable exit contract, not a unitary MTT gravity S-matrix.",
       "authors": [
         "Peter Nero"
       ],
@@ -2994,7 +3103,7 @@
       ]
     },
     {
-      "abstract": "Quantum contextuality and sequential measurement order effects are related, but they are not the same mathematical phenomenon. Kochen\u2013Specker contextuality is a static obstruction to gluing locally compatible value assignments into one global noncontextual assignment. An order effect is a dynamical statement about the noncommuting composition of quantum instruments, including their state-update maps. We formulate both structures explicitly and prove two separation results. First, projective qubit measurements exhibit an exact order effect even though the original projective Kochen\u2013Specker obstruction does not apply in dimension two. Second, two instruments can have the same effects and identical one-step outcome probabilities while producing different sequential statistics. Effect or valuation data therefore cannot determine order dependence. A common MTT carrier may nevertheless source both structures. We state the required context-indexed source, instrument, measure, and naturality data for such a unification and identify the missing comparison theorem. The current q79 binary one-anchor recorder supplies an exact stopped-output law for one restricted apparatus domain; it does not yet provide the family of contexts needed for a contextuality theorem or a general contextuality\u2013order equivalence.",
+      "abstract": "Quantum contextuality and sequential measurement order effects are related, but they are not the same mathematical phenomenon. Kochen–Specker contextuality is a static obstruction to gluing locally compatible value assignments into one global noncontextual assignment. An order effect is a dynamical statement about the noncommuting composition of quantum instruments, including their state-update maps. We formulate both structures explicitly and prove two separation results. First, projective qubit measurements exhibit an exact order effect even though the original projective Kochen–Specker obstruction does not apply in dimension two. Second, two instruments can have the same effects and identical one-step outcome probabilities while producing different sequential statistics. Effect or valuation data therefore cannot determine order dependence. A common MTT carrier may nevertheless source both structures. We state the required context-indexed source, instrument, measure, and naturality data for such a unification and identify the missing comparison theorem. The current q79 binary one-anchor recorder supplies an exact stopped-output law for one restricted apparatus domain; it does not yet provide the family of contexts needed for a contextuality theorem or a general contextuality–order equivalence.",
       "authors": [
         "Peter Nero"
       ],
@@ -3411,7 +3520,7 @@
         "publication_date": "2026-07-29",
         "record_url": "https://zenodo.org/records/21665960",
         "resource_type": "publication",
-        "title": "Deterministic Projection, Diffusive Limits, and Knee\u2013Like Threshold Transitions",
+        "title": "Deterministic Projection, Diffusive Limits, and Knee–Like Threshold Transitions",
         "updated": "2026-07-29T08:50:27.766647+00:00",
         "version": "v2"
       },
@@ -3430,7 +3539,7 @@
         "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Deterministic_Projection__Diffusive_Limits__and_Knee__Like_Threshold_Transitions"
       },
       "source_tree_sha256": "57cb506b762ea0325f9d7ff140c1a5e123e1b9c5a5490b53b31b4474a5ad3202",
-      "title": "Deterministic Projection, Diffusive Limits, and Knee\u2013Like Threshold Transitions",
+      "title": "Deterministic Projection, Diffusive Limits, and Knee–Like Threshold Transitions",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -3454,7 +3563,7 @@
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21665960",
           "resource_type": "publication",
-          "title": "Deterministic Projection, Diffusive Limits, and Knee\u2013Like Threshold Transitions",
+          "title": "Deterministic Projection, Diffusive Limits, and Knee–Like Threshold Transitions",
           "updated": "2026-07-29T08:50:27.766647+00:00",
           "version": "v2"
         },
@@ -3641,7 +3750,7 @@
       ]
     },
     {
-      "abstract": "Wilsonian effective field theory (EFT) is among the most successful frameworks in modern physics, yet its conceptual status remains ambiguous. EFT is explicitly non-fundamental, non-invertible, and valid only within restricted regimes. Renormalization group (RG) flow is irreversible, universality is ubiquitous, and breakdown at strong coupling or high curvature is expected rather than anomalous. In this paper we show that these features are not contingent properties of quantum field theories, but structural consequences of projection under finite admissibility. Building on the Projection\u2013Admissibility Principle, we identify Wilsonian coarse-graining as a noninjective projection from underlying dynamics to an effective description. The cutoff is interpreted as an admissibility boundary, RG flow as induced effective evolution, and universality as equivalence under projection. No new dynamics or ultraviolet completion is proposed. Instead, EFT is shown to be the inevitable form of any stable, finite, predictive description. We further clarify how Modal Triplet Theory (MTT) provides an explicit realization in which EFT arises as a shadow of coherent-sector projection.",
+      "abstract": "Wilsonian effective field theory (EFT) is among the most successful frameworks in modern physics, yet its conceptual status remains ambiguous. EFT is explicitly non-fundamental, non-invertible, and valid only within restricted regimes. Renormalization group (RG) flow is irreversible, universality is ubiquitous, and breakdown at strong coupling or high curvature is expected rather than anomalous. In this paper we show that these features are not contingent properties of quantum field theories, but structural consequences of projection under finite admissibility. Building on the Projection–Admissibility Principle, we identify Wilsonian coarse-graining as a noninjective projection from underlying dynamics to an effective description. The cutoff is interpreted as an admissibility boundary, RG flow as induced effective evolution, and universality as equivalence under projection. No new dynamics or ultraviolet completion is proposed. Instead, EFT is shown to be the inevitable form of any stable, finite, predictive description. We further clarify how Modal Triplet Theory (MTT) provides an explicit realization in which EFT arises as a shadow of coherent-sector projection.",
       "authors": [
         "Peter Nero"
       ],
@@ -3670,7 +3779,7 @@
         "publication_date": "2026-01-15",
         "record_url": "https://zenodo.org/records/18262361",
         "resource_type": "publication",
-        "title": "Effective Field Theory as a Shadow of Projection\u2013Admissible Dynamics",
+        "title": "Effective Field Theory as a Shadow of Projection–Admissible Dynamics",
         "updated": "2026-01-15T21:28:54.799599+00:00",
         "version": "v1.0"
       },
@@ -3686,7 +3795,7 @@
         "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Effective_Field_Theory_as_a_Shadow_of_Projection__Admissible_Dynamics"
       },
       "source_tree_sha256": "49bde456040740c6ab4325897f4e52c70d3ac433743b40647c279499b7768429",
-      "title": "Effective Field Theory as a Shadow of Projection\u2013Admissible Dynamics Wilsonian Renormalization under Finite Admissibility",
+      "title": "Effective Field Theory as a Shadow of Projection–Admissible Dynamics Wilsonian Renormalization under Finite Admissibility",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -3710,14 +3819,14 @@
           "publication_date": "2026-01-15",
           "record_url": "https://zenodo.org/records/18262361",
           "resource_type": "publication",
-          "title": "Effective Field Theory as a Shadow of Projection\u2013Admissible Dynamics",
+          "title": "Effective Field Theory as a Shadow of Projection–Admissible Dynamics",
           "updated": "2026-01-15T21:28:54.799599+00:00",
           "version": "v1.0"
         }
       ]
     },
     {
-      "abstract": "We construct a fully rigorous electromagnetic helicity/Chern\u2013Simons (CS) functional on the finite-rank coherent electromagnetic line bundle selected by MTT\u2019s joint harmonic (Riesz) projector \\Pi_{\\mathrm{coh}}(t,x). Because the projector varies over the base, the induced coherent connection necessarily contains Berry/Grassmann (projector) terms; ignoring them makes the curvature and balance laws incorrect. We (i) define the induced coherent connection and compute its curvature including the Berry term; (ii) define both the physical, unnormalized coherent helicity H_{\\mathrm{coh}}=\\int_\\Sigma \\bm A^{\\mathrm{coh}}\\cdot\\bm B^{\\mathrm{coh}}\\,d^3x and the Hopf-normalized CS functional Q_{\\mathrm{coh}}=\\frac{1}{16\\pi^2}\\int_\\Sigma \\mathcal A^{\\mathrm{coh}}\\wedge d_\\Sigma\\mathcal A^{\\mathrm{coh}}; (iii) prove exact balance laws with explicit remainder \\mathcal R_\\Pi(t) that captures projector variation/noncommutation; and (iv) bound \\mathcal R_\\Pi(t) in terms of \\|\\partial_t\\Pi\\| and \\|d_\\Sigma\\Pi\\| with an explicit admissible-slab constant C_\\Pi:=\\sup_{\\mathcal U}\\max\\{\\|\\partial_t\\Pi\\|,\\|d_\\Sigma\\Pi\\|\\}. We connect \\|\\partial_t\\Pi\\| to standard spectral projector perturbation bounds via Riesz calculus and a uniform spectral gap, in the precise manner used in the MTT fixed-point spine. Finally, we state the MTT-aligned admissibility result: on admissible coherent slabs the functionals are well-defined and conserved up to a remainder controlled by the admissibility margin; at barrier/exit events this control can fail, providing the mathematically correct sense in which admissibility/FCC replaces homotopy protection.",
+      "abstract": "We construct a fully rigorous electromagnetic helicity/Chern–Simons (CS) functional on the finite-rank coherent electromagnetic line bundle selected by MTT’s joint harmonic (Riesz) projector \\Pi_{\\mathrm{coh}}(t,x). Because the projector varies over the base, the induced coherent connection necessarily contains Berry/Grassmann (projector) terms; ignoring them makes the curvature and balance laws incorrect. We (i) define the induced coherent connection and compute its curvature including the Berry term; (ii) define both the physical, unnormalized coherent helicity H_{\\mathrm{coh}}=\\int_\\Sigma \\bm A^{\\mathrm{coh}}\\cdot\\bm B^{\\mathrm{coh}}\\,d^3x and the Hopf-normalized CS functional Q_{\\mathrm{coh}}=\\frac{1}{16\\pi^2}\\int_\\Sigma \\mathcal A^{\\mathrm{coh}}\\wedge d_\\Sigma\\mathcal A^{\\mathrm{coh}}; (iii) prove exact balance laws with explicit remainder \\mathcal R_\\Pi(t) that captures projector variation/noncommutation; and (iv) bound \\mathcal R_\\Pi(t) in terms of \\|\\partial_t\\Pi\\| and \\|d_\\Sigma\\Pi\\| with an explicit admissible-slab constant C_\\Pi:=\\sup_{\\mathcal U}\\max\\{\\|\\partial_t\\Pi\\|,\\|d_\\Sigma\\Pi\\|\\}. We connect \\|\\partial_t\\Pi\\| to standard spectral projector perturbation bounds via Riesz calculus and a uniform spectral gap, in the precise manner used in the MTT fixed-point spine. Finally, we state the MTT-aligned admissibility result: on admissible coherent slabs the functionals are well-defined and conserved up to a remainder controlled by the admissibility margin; at barrier/exit events this control can fail, providing the mathematically correct sense in which admissibility/FCC replaces homotopy protection.",
       "authors": [
         "Peter Nero"
       ],
@@ -3746,7 +3855,7 @@
         "publication_date": "2026-01-15",
         "record_url": "https://zenodo.org/records/18261452",
         "resource_type": "publication",
-        "title": "Electromagnetic Helicity and Chern\u2013Simons Structure in Modal Triplet Theory",
+        "title": "Electromagnetic Helicity and Chern–Simons Structure in Modal Triplet Theory",
         "updated": "2026-01-15T19:19:41.795767+00:00",
         "version": "v2.0"
       },
@@ -3762,7 +3871,7 @@
         "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/Electromagnetic_Helicity_as_a_Coherent_Sector__Chern__Simons_Functional_in_Modal_Triplet_Theory_v2"
       },
       "source_tree_sha256": "5e238dcea7b9f5eb0c9b815b3e820a7e45c0a14552bc1627af86142ba2a2709c",
-      "title": "Electromagnetic Helicity as a Coherent-Sector Chern\u2013Simons Functional in Modal Triplet Theory Rank-One Abelian Sector, Correct Hopf Normalization, and Admissibility-Controlled Remainders",
+      "title": "Electromagnetic Helicity as a Coherent-Sector Chern–Simons Functional in Modal Triplet Theory Rank-One Abelian Sector, Correct Hopf Normalization, and Admissibility-Controlled Remainders",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -3786,7 +3895,7 @@
           "publication_date": "2026-01-15",
           "record_url": "https://zenodo.org/records/18261452",
           "resource_type": "publication",
-          "title": "Electromagnetic Helicity and Chern\u2013Simons Structure in Modal Triplet Theory",
+          "title": "Electromagnetic Helicity and Chern–Simons Structure in Modal Triplet Theory",
           "updated": "2026-01-15T19:19:41.795767+00:00",
           "version": "v2.0"
         }
@@ -3897,7 +4006,7 @@
       ]
     },
     {
-      "abstract": "Thermalization (ETH) and its failure (MBL) are usually treated as distinct dynamical phenomena. We present a Type-A 4D shadow-bridge result: within Modal Triplet Theory (MTT), both arise as regime limits of a single projection-induced basin mechanism controlled by the same coherent projector \\Pi, spectral gap \\lambda^\\ast, and stability margins. We make this precise by formalizing a coarse-graining channel \\mathcal{E}_\\varepsilon and a reduced CPTP dynamics \\{\\mathcal{T}_t\\} on density operators. Admissible basins are defined as invariant, contractive sets in an operational metric induced by a chosen observable family. We then prove: (i) dynamical ETH for local observables is equivalent to rapid mixing into a dominant thermal basin, in the sense of an induced basin-label process; (ii) MBL in the sense of stable memory and quasi-local integrals of motion is equivalent to basin fragmentation with suppressed inter-basin escape on a specified slab-time scaling; (iii) the ETH\u2013MBL crossover is governed by collapse of basin margins and admits a Kramers-type knee regime under explicit barrier assumptions; (iv) monitored circuit transitions are the same margin-collapse diagnostic driven by measurement rate. The results are slab-local and admissibility-conditioned, consistent with the MTT fixed-point spine, and yield falsifiable predictions for memory retention, echo protocols, entanglement scaling, and noise sensitivity.",
+      "abstract": "Thermalization (ETH) and its failure (MBL) are usually treated as distinct dynamical phenomena. We present a Type-A 4D shadow-bridge result: within Modal Triplet Theory (MTT), both arise as regime limits of a single projection-induced basin mechanism controlled by the same coherent projector \\Pi, spectral gap \\lambda^\\ast, and stability margins. We make this precise by formalizing a coarse-graining channel \\mathcal{E}_\\varepsilon and a reduced CPTP dynamics \\{\\mathcal{T}_t\\} on density operators. Admissible basins are defined as invariant, contractive sets in an operational metric induced by a chosen observable family. We then prove: (i) dynamical ETH for local observables is equivalent to rapid mixing into a dominant thermal basin, in the sense of an induced basin-label process; (ii) MBL in the sense of stable memory and quasi-local integrals of motion is equivalent to basin fragmentation with suppressed inter-basin escape on a specified slab-time scaling; (iii) the ETH–MBL crossover is governed by collapse of basin margins and admits a Kramers-type knee regime under explicit barrier assumptions; (iv) monitored circuit transitions are the same margin-collapse diagnostic driven by measurement rate. The results are slab-local and admissibility-conditioned, consistent with the MTT fixed-point spine, and yield falsifiable predictions for memory retention, echo protocols, entanglement scaling, and noise sensitivity.",
       "authors": [
         "Peter Nero"
       ],
@@ -3926,7 +4035,7 @@
         "publication_date": "2026-01-15",
         "record_url": "https://zenodo.org/records/18261960",
         "resource_type": "publication",
-        "title": "ETH and Many\u2013Body Localization as a Single Structural Problem",
+        "title": "ETH and Many–Body Localization as a Single Structural Problem",
         "updated": "2026-01-15T20:20:07.669140+00:00",
         "version": "v1.0"
       },
@@ -3942,7 +4051,7 @@
         "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/ETH_and_Many__Body_Localization_as_a_Single_Shadow__Bridge_Problem"
       },
       "source_tree_sha256": "80101f509b655eb1ee0ce764e5e0bdef3032aa5145b4bb0f12d9b6308ab1e41a",
-      "title": "ETH and Many\u2013Body Localization as a Single Shadow\u2013Bridge Problem A rigorous projection\u2013based basin framework unifying ETH, MBL, and monitored transitions",
+      "title": "ETH and Many–Body Localization as a Single Shadow–Bridge Problem A rigorous projection–based basin framework unifying ETH, MBL, and monitored transitions",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -3966,7 +4075,7 @@
           "publication_date": "2026-01-15",
           "record_url": "https://zenodo.org/records/18261960",
           "resource_type": "publication",
-          "title": "ETH and Many\u2013Body Localization as a Single Structural Problem",
+          "title": "ETH and Many–Body Localization as a Single Structural Problem",
           "updated": "2026-01-15T20:20:07.669140+00:00",
           "version": "v1.0"
         }
@@ -4070,7 +4179,7 @@
           "publication_date": "2026-01-15",
           "record_url": "https://zenodo.org/records/18262314",
           "resource_type": "publication",
-          "title": "Execution of Modal Triplet Theory I: Gauge, K\u00e4hler, Axion, and Threshold Sectors",
+          "title": "Execution of Modal Triplet Theory I: Gauge, Kähler, Axion, and Threshold Sectors",
           "updated": "2026-01-15T21:18:04.878589+00:00",
           "version": "v1.0"
         }
@@ -4734,7 +4843,7 @@
       ]
     },
     {
-      "abstract": "We develop a conditional fixed-point framework for gradient flows on internal fiber products of smooth bundles over a base manifold. The fibers are compact and have uniformly bounded geometry. We construct spectral-bundle projections onto the joint harmonic sector and study flows generated by coercive analytic energies on the internal fiber product. The paper establishes the geometric and anisotropic Sobolev setting, uniform first-order Sobolev bounds for the coherent projector, analytic-semigroup well-posedness and smoothing, projected fixed-point existence by variational, Schauder, or Darbo methods, coherent uniqueness under strong convexity or a clean spectral-gap reduction, quantitative Galerkin approximation, explicit examples, and \u0141ojasiewicz\u2013Simon convergence. All results are analytic and control-theoretic statements under the displayed hypotheses. The Riemannian base is not automatically physical Lorentzian spacetime, the flow parameter is not automatically physical time, and the abstract fiber product does not by itself select the canonical MTT internal topology.",
+      "abstract": "We develop a conditional fixed-point framework for gradient flows on internal fiber products of smooth bundles over a base manifold. The fibers are compact and have uniformly bounded geometry. We construct spectral-bundle projections onto the joint harmonic sector and study flows generated by coercive analytic energies on the internal fiber product. The paper establishes the geometric and anisotropic Sobolev setting, uniform first-order Sobolev bounds for the coherent projector, analytic-semigroup well-posedness and smoothing, projected fixed-point existence by variational, Schauder, or Darbo methods, coherent uniqueness under strong convexity or a clean spectral-gap reduction, quantitative Galerkin approximation, explicit examples, and Łojasiewicz–Simon convergence. All results are analytic and control-theoretic statements under the displayed hypotheses. The Riemannian base is not automatically physical Lorentzian spacetime, the flow parameter is not automatically physical time, and the abstract fiber product does not by itself select the canonical MTT internal topology.",
       "authors": [
         "Peter Nero"
       ],
@@ -4763,7 +4872,7 @@
         "publication_date": "2026-07-29",
         "record_url": "https://zenodo.org/records/21657157",
         "resource_type": "publication",
-        "title": "Fixed Points I: Fixed Points over Multi\u2013Bundle Manifolds A conditional functional-analytic framework with spectral-bundle projections",
+        "title": "Fixed Points I: Fixed Points over Multi–Bundle Manifolds A conditional functional-analytic framework with spectral-bundle projections",
         "updated": "2026-07-29T08:50:34.433424+00:00",
         "version": "v7"
       },
@@ -4782,7 +4891,7 @@
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_I__Fixed_Points_over_Multi_Bundle_Manifolds_v6"
       },
       "source_tree_sha256": "ee60c3545a45195706c5b4ba06d3e9d3978a7d1c62c7aa965696dc29b3786ed3",
-      "title": "Fixed Points I: Fixed Points over Multi\u2013Bundle Manifolds A conditional functional-analytic framework with spectral-bundle projections",
+      "title": "Fixed Points I: Fixed Points over Multi–Bundle Manifolds A conditional functional-analytic framework with spectral-bundle projections",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -4806,7 +4915,7 @@
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21657157",
           "resource_type": "publication",
-          "title": "Fixed Points I: Fixed Points over Multi\u2013Bundle Manifolds A conditional functional-analytic framework with spectral-bundle projections",
+          "title": "Fixed Points I: Fixed Points over Multi–Bundle Manifolds A conditional functional-analytic framework with spectral-bundle projections",
           "updated": "2026-07-29T08:50:34.433424+00:00",
           "version": "v7"
         },
@@ -4831,7 +4940,7 @@
           "publication_date": "2026-07-28",
           "record_url": "https://zenodo.org/records/21649308",
           "resource_type": "publication",
-          "title": "Fixed Points I: Fixed Points over Multi\u2013Bundle Manifolds",
+          "title": "Fixed Points I: Fixed Points over Multi–Bundle Manifolds",
           "updated": "2026-07-28T15:24:05.073766+00:00",
           "version": "v6"
         }
@@ -4967,7 +5076,7 @@
       ]
     },
     {
-      "abstract": "We develop disturbance\u2013damping stability on the joint spectral decomposition of the Fixed Points II internal operators. For each noncoherent joint mode, its one-sided nonlinear damping margin is the linear damping rate minus the nonlinear Lipschitz allowance. Deterministic force amplitude and stochastic noise power are treated as distinct quantities. We prove separate deterministic input-to-state and stochastic second-moment floors whenever the damping margin is positive. Gaussian invariant laws and necessity of the sign condition are asserted only for exact Ornstein\u2013Uhlenbeck dynamics or robust worst-case stability. Bundlewise results use separate stochastic trace and deterministic weighted-series conditions. Finally, deterministic homogenization is made conditional on an enhanced functional central-limit theorem, tightness, and rough-path convergence, with the effective covariance given by the symmetrized Green\u2013Kubo integral.",
+      "abstract": "We develop disturbance–damping stability on the joint spectral decomposition of the Fixed Points II internal operators. For each noncoherent joint mode, its one-sided nonlinear damping margin is the linear damping rate minus the nonlinear Lipschitz allowance. Deterministic force amplitude and stochastic noise power are treated as distinct quantities. We prove separate deterministic input-to-state and stochastic second-moment floors whenever the damping margin is positive. Gaussian invariant laws and necessity of the sign condition are asserted only for exact Ornstein–Uhlenbeck dynamics or robust worst-case stability. Bundlewise results use separate stochastic trace and deterministic weighted-series conditions. Finally, deterministic homogenization is made conditional on an enhanced functional central-limit theorem, tightness, and rough-path convergence, with the effective covariance given by the symmetrized Green–Kubo integral.",
       "authors": [
         "Peter Nero"
       ],
@@ -4996,7 +5105,7 @@
         "publication_date": "2026-07-29",
         "record_url": "https://zenodo.org/records/21655371",
         "resource_type": "publication",
-        "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
+        "title": "Fixed Points III: Disturbance–Damping Balance and Stability",
         "updated": "2026-07-29T08:50:35.802432+00:00",
         "version": "v5"
       },
@@ -5015,7 +5124,7 @@
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v4"
       },
       "source_tree_sha256": "c458f07fe535e5b332a8f173a0dd00da4460ea1e14eb7c9b96250b7b32edd49b",
-      "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
+      "title": "Fixed Points III: Disturbance–Damping Balance and Stability",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -5039,7 +5148,7 @@
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21655371",
           "resource_type": "publication",
-          "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
+          "title": "Fixed Points III: Disturbance–Damping Balance and Stability",
           "updated": "2026-07-29T08:50:35.802432+00:00",
           "version": "v5"
         },
@@ -5064,7 +5173,7 @@
           "publication_date": "2026-07-28",
           "record_url": "https://zenodo.org/records/21650395",
           "resource_type": "publication",
-          "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
+          "title": "Fixed Points III: Disturbance–Damping Balance and Stability",
           "updated": "2026-07-28T16:37:05.916383+00:00",
           "version": "v4"
         },
@@ -5096,7 +5205,7 @@
       ]
     },
     {
-      "abstract": "We develop curvature coupling and structural transitions on the canonical Fixed Points I\u2013III spine. A Laplace-type operator is separated into its connection Laplacian and curvature contribution. Curvature can shift the spectral cluster, mix coherent and noncoherent sectors, and create a leakage floor. When the curvature term is smaller than half the unperturbed spectral gap, the full curved operator retains a separated low cluster and defines a new Riesz projector; retaining the unperturbed projector instead requires an explicit leakage term. Centroids are defined intrinsically by a Karcher mean inside a convex normal ball. A first-order gradient parent flow yields a first-order modulation law, while a Newtonian law requires a separately specified inertial parent equation. Absolute interaction bounds do not determine attraction or repulsion without a sign hypothesis. Structural transitions are controlled by a Lyapunov mountain-pass and work theorem, and exit detection is separated from selection of the post-transition basin. We also state the projective-module transport and finite-reduction boundary: a supplied connection and its Hessian transport naturally, bare compression is exact only on an invariant subspace, and otherwise the Feshbach or reduced-Green operator is required.",
+      "abstract": "We develop curvature coupling and structural transitions on the canonical Fixed Points I–III spine. A Laplace-type operator is separated into its connection Laplacian and curvature contribution. Curvature can shift the spectral cluster, mix coherent and noncoherent sectors, and create a leakage floor. When the curvature term is smaller than half the unperturbed spectral gap, the full curved operator retains a separated low cluster and defines a new Riesz projector; retaining the unperturbed projector instead requires an explicit leakage term. Centroids are defined intrinsically by a Karcher mean inside a convex normal ball. A first-order gradient parent flow yields a first-order modulation law, while a Newtonian law requires a separately specified inertial parent equation. Absolute interaction bounds do not determine attraction or repulsion without a sign hypothesis. Structural transitions are controlled by a Lyapunov mountain-pass and work theorem, and exit detection is separated from selection of the post-transition basin. We also state the projective-module transport and finite-reduction boundary: a supplied connection and its Hessian transport naturally, bare compression is exact only on an invariant subspace, and otherwise the Feshbach or reduced-Green operator is required.",
       "authors": [
         "Peter Nero"
       ],
@@ -5225,7 +5334,7 @@
       ]
     },
     {
-      "abstract": "We formulate multi-structure covariance and admissibility diagnostics on the canonical FP\u2013I\u2013IV spine. Curvature enters through the full Laplace-type operator and its curved spectral projector, not through an unproved affine eigenvalue rule. Exact Gaussian claims are restricted to frozen linear Ornstein\u2013Uhlenbeck systems. The scalar OU baseline is imported from Fixed Points III, its canonical owner, and the genuinely multi-structure stationary covariance derived here satisfies a Lyapunov equation, and block-diagonal damping gives a correct cross-covariance and canonical-correlation estimate. Admissibility is encoded by a finite or trace-controlled family of declared spectral, damping, and performance margins. The resulting deficit score detects exit but is neither a force nor an energy unless a separate variational source theorem is supplied. For affine Gaussian margin observables we prove finite-grid and continuous-time exit bounds. Cross-correlation controls simultaneous exits on a declared observation grid; it does not by itself prove localization, non-propagation, or selection of a post-exit state.",
+      "abstract": "We formulate multi-structure covariance and admissibility diagnostics on the canonical FP–I–IV spine. Curvature enters through the full Laplace-type operator and its curved spectral projector, not through an unproved affine eigenvalue rule. Exact Gaussian claims are restricted to frozen linear Ornstein–Uhlenbeck systems. The scalar OU baseline is imported from Fixed Points III, its canonical owner, and the genuinely multi-structure stationary covariance derived here satisfies a Lyapunov equation, and block-diagonal damping gives a correct cross-covariance and canonical-correlation estimate. Admissibility is encoded by a finite or trace-controlled family of declared spectral, damping, and performance margins. The resulting deficit score detects exit but is neither a force nor an energy unless a separate variational source theorem is supplied. For affine Gaussian margin observables we prove finite-grid and continuous-time exit bounds. Cross-correlation controls simultaneous exits on a declared observation grid; it does not by itself prove localization, non-propagation, or selection of a post-exit state.",
       "authors": [
         "Peter Nero"
       ],
@@ -5354,7 +5463,7 @@
       ]
     },
     {
-      "abstract": "We synthesize the canonical FP\u2013I\u2013V results without promoting their control parameter, projections, or diagnostics into an unproved fundamental field theory. The rigorous spine consists of conditional projected fixed-point existence, strict-Lyapunov promotion to equilibrium, joint-mode damping and disturbance floors, perturbative persistence of a curved spectral cluster, curvature leakage, intrinsic first-order centroid modulation, frozen linear Ornstein\u2013Uhlenbeck covariance, canonical-correlation bounds, and declared admissibility exits. We distinguish three logical levels throughout: inherited theorem, conditional model completion, and physical interpretation. All inherited results are restated as self-contained contracts and cited to their canonical paper; FP VI does not reproduce their theorem/proof blocks. Its own formal results are limited to the bilocal-causality obstruction and the local-mediator completion. A Lorentzian gauge/gravity action, quantum covariance, particle identities, merger, measurement, and cosmology belong to the latter two levels unless additional source and equivalence theorems are supplied. The Gaussian Lyapunov sign and nonnormal resolvent bounds are stated in their domain-valid forms, and we show why an instantaneous equal-time bilocal kernel is not microcausal merely because it leaves the principal symbol unchanged. A local mediator is the consistent route to causal overlap dynamics. A separate, explicitly non-FP ledger records later scoped q79 geometry, quantum-operation, and QFT advances without retroactively promoting them to conclusions of the fixed-point series.",
+      "abstract": "We synthesize the canonical FP–I–V results without promoting their control parameter, projections, or diagnostics into an unproved fundamental field theory. The rigorous spine consists of conditional projected fixed-point existence, strict-Lyapunov promotion to equilibrium, joint-mode damping and disturbance floors, perturbative persistence of a curved spectral cluster, curvature leakage, intrinsic first-order centroid modulation, frozen linear Ornstein–Uhlenbeck covariance, canonical-correlation bounds, and declared admissibility exits. We distinguish three logical levels throughout: inherited theorem, conditional model completion, and physical interpretation. All inherited results are restated as self-contained contracts and cited to their canonical paper; FP VI does not reproduce their theorem/proof blocks. Its own formal results are limited to the bilocal-causality obstruction and the local-mediator completion. A Lorentzian gauge/gravity action, quantum covariance, particle identities, merger, measurement, and cosmology belong to the latter two levels unless additional source and equivalence theorems are supplied. The Gaussian Lyapunov sign and nonnormal resolvent bounds are stated in their domain-valid forms, and we show why an instantaneous equal-time bilocal kernel is not microcausal merely because it leaves the principal symbol unchanged. A local mediator is the consistent route to causal overlap dynamics. A separate, explicitly non-FP ledger records later scoped q79 geometry, quantum-operation, and QFT advances without retroactively promoting them to conclusions of the fixed-point series.",
       "authors": [
         "Peter Nero"
       ],
@@ -5478,82 +5587,6 @@
           "resource_type": "publication",
           "title": "Fixed Points VI: Formal Synthesis and Physical Interpretations",
           "updated": "2026-01-09T22:36:55.425906+00:00",
-          "version": "v3.0"
-        }
-      ]
-    },
-    {
-      "abstract": "We construct explicit heterotic flux compactifications on non-K\u00e4hler manifolds satisfying the Hull\u2013Strominger system and the Green\u2013Schwarz anomaly cancellation condition. Working with left-invariant SU(3) structures, we present concrete examples on Iwasawa and Lens\\timesNil geometries in which the torsion, gauge bundle data, and curvature contributions can be computed explicitly and matched componentwise. The resulting solutions exhibit sharply constrained parameter loci, illustrating how the combined geometric, bundle, and flux conditions restrict admissible compactifications. These constructions provide controlled test cases for heterotic compactifications beyond the Calabi\u2013Yau setting.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v3",
-      "date": "January 2026",
-      "latest_zenodo_release": {
-        "concept_doi": "10.5281/zenodo.17072372",
-        "created": "2026-01-10T09:53:11.552957+00:00",
-        "creators": [
-          "Nero, Peter"
-        ],
-        "doi": "10.5281/zenodo.18205997",
-        "files": [
-          {
-            "checksum": "md5:b179cf719126bedce773879944073f01",
-            "content_url": "https://zenodo.org/api/records/18205997/files/Flux_Compactifications_in_Heterotic_String_Theory_v3%20(2).pdf/content",
-            "key": "Flux_Compactifications_in_Heterotic_String_Theory_v3 (2).pdf",
-            "size": 452151
-          }
-        ],
-        "id": "18205997",
-        "match_kind": "title_or_file",
-        "match_score": 1.0,
-        "publication_date": "2026-01-10",
-        "record_url": "https://zenodo.org/records/18205997",
-        "resource_type": "publication",
-        "title": "Flux Compactifications in Heterotic String Theory",
-        "updated": "2026-01-19T14:43:51.994662+00:00",
-        "version": "v3.0"
-      },
-      "main_tex_sha256": "5b729318803c8e0b5bc9d43351d82bb5f85ec781c4c4c65882b0fa6ba436bedb",
-      "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
-      "paper_md_sha256": "a15f3759735eeef5e7967df27c8af9ad0e38db93ddb4fca84226ff2ed878177a",
-      "release_state": "zenodo_released",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Flux_Compactifications_in_Heterotic_String_Theory_v3"
-      },
-      "source_tree_sha256": "18f2499a29d92c2d415480fbd1af4c4b663de706da6db2dad629aecd76add3c0",
-      "title": "Flux Compactifications in Heterotic String Theory: Explicit Solutions on the Iwasawa Manifold and Lens\\timesNil Geometries",
-      "version_relation": "matches_latest_release",
-      "zenodo_releases": [
-        {
-          "concept_doi": "10.5281/zenodo.17072372",
-          "created": "2026-01-10T09:53:11.552957+00:00",
-          "creators": [
-            "Nero, Peter"
-          ],
-          "doi": "10.5281/zenodo.18205997",
-          "files": [
-            {
-              "checksum": "md5:b179cf719126bedce773879944073f01",
-              "content_url": "https://zenodo.org/api/records/18205997/files/Flux_Compactifications_in_Heterotic_String_Theory_v3%20(2).pdf/content",
-              "key": "Flux_Compactifications_in_Heterotic_String_Theory_v3 (2).pdf",
-              "size": 452151
-            }
-          ],
-          "id": "18205997",
-          "match_kind": "title_or_file",
-          "match_score": 1.0,
-          "publication_date": "2026-01-10",
-          "record_url": "https://zenodo.org/records/18205997",
-          "resource_type": "publication",
-          "title": "Flux Compactifications in Heterotic String Theory",
-          "updated": "2026-01-19T14:43:51.994662+00:00",
           "version": "v3.0"
         }
       ]
@@ -5724,7 +5757,7 @@
         "publication_date": "2026-07-30",
         "record_url": "https://zenodo.org/records/21703917",
         "resource_type": "publication",
-        "title": "Gauge Fixing as Admissible Section Selection in Modal Triplet Theory Faddeev\u2013Popov Determinants, Ghosts, BRST, and Gribov Ambiguity as Projection Geometry",
+        "title": "Gauge Fixing as Admissible Section Selection in Modal Triplet Theory Faddeev–Popov Determinants, Ghosts, BRST, and Gribov Ambiguity as Projection Geometry",
         "updated": "2026-07-30T12:54:50.621054+00:00",
         "version": "v1"
       },
@@ -5743,7 +5776,7 @@
         "legacy_source_path": "5 Dirac Delta/_work/Gauge_Fixing_as_Admissible_Section_Selection_in_Modal_Triplet_Theory"
       },
       "source_tree_sha256": "56a8cc84b6cc8bebd292af35b98016d7a0618a7ce0ffa3096e5792803733b049",
-      "title": "Gauge Fixing as Admissible Section Selection in Modal Triplet Theory Faddeev\u2013Popov Determinants, Ghosts, BRST, and Gribov Ambiguity as Projection Geometry",
+      "title": "Gauge Fixing as Admissible Section Selection in Modal Triplet Theory Faddeev–Popov Determinants, Ghosts, BRST, and Gribov Ambiguity as Projection Geometry",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -5767,7 +5800,7 @@
           "publication_date": "2026-07-30",
           "record_url": "https://zenodo.org/records/21703917",
           "resource_type": "publication",
-          "title": "Gauge Fixing as Admissible Section Selection in Modal Triplet Theory Faddeev\u2013Popov Determinants, Ghosts, BRST, and Gribov Ambiguity as Projection Geometry",
+          "title": "Gauge Fixing as Admissible Section Selection in Modal Triplet Theory Faddeev–Popov Determinants, Ghosts, BRST, and Gribov Ambiguity as Projection Geometry",
           "updated": "2026-07-30T12:54:50.621054+00:00",
           "version": "v1"
         }
@@ -5961,7 +5994,7 @@
         "publication_date": "2026-07-29",
         "record_url": "https://zenodo.org/records/21665977",
         "resource_type": "publication",
-        "title": "Geometry\u2013Light Relations in Modal Triplet Theory: Exact Identities, Conditional Bounds, and Principal Symbols",
+        "title": "Geometry–Light Relations in Modal Triplet Theory: Exact Identities, Conditional Bounds, and Principal Symbols",
         "updated": "2026-07-29T08:50:57.593054+00:00",
         "version": "v3"
       },
@@ -5980,7 +6013,7 @@
         "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Geometry__Light_Relations_in_Modal_Triplet_Theory__MTT__v3"
       },
       "source_tree_sha256": "9fa703ee4775afc2132a7131e445314b913cd895dfdfcc6da01a5c367aa7f7ad",
-      "title": "Geometry\u2013Light Relations in Modal Triplet Theory: Exact Identities, Conditional Bounds, and Principal Symbols",
+      "title": "Geometry–Light Relations in Modal Triplet Theory: Exact Identities, Conditional Bounds, and Principal Symbols",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -6004,7 +6037,7 @@
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21665977",
           "resource_type": "publication",
-          "title": "Geometry\u2013Light Relations in Modal Triplet Theory: Exact Identities, Conditional Bounds, and Principal Symbols",
+          "title": "Geometry–Light Relations in Modal Triplet Theory: Exact Identities, Conditional Bounds, and Principal Symbols",
           "updated": "2026-07-29T08:50:57.593054+00:00",
           "version": "v3"
         },
@@ -6029,7 +6062,7 @@
           "publication_date": "2026-01-15",
           "record_url": "https://zenodo.org/records/18262180",
           "resource_type": "publication",
-          "title": "Geometry\u2013Light Relations in Modal Triplet Theory",
+          "title": "Geometry–Light Relations in Modal Triplet Theory",
           "updated": "2026-01-15T20:57:24.424809+00:00",
           "version": "v1.0"
         }
@@ -6065,7 +6098,7 @@
         "publication_date": "2026-07-29",
         "record_url": "https://zenodo.org/records/21665978",
         "resource_type": "publication",
-        "title": "Gravitationally Induced Collapse in Modal Triplet Theory A Penrose\u2013Schoenberg Completion and Source Contract",
+        "title": "Gravitationally Induced Collapse in Modal Triplet Theory A Penrose–Schoenberg Completion and Source Contract",
         "updated": "2026-07-29T08:50:58.779583+00:00",
         "version": "v3"
       },
@@ -6084,7 +6117,7 @@
         "legacy_source_path": "6 Quantum Mechanics/_work/Gravitationally_Induced_Collapse_as_an_Effective_Limit_of_Coherence_Breakdown_in_Modal_Triplet_Theory"
       },
       "source_tree_sha256": "1159e24eae665322ed1307bb62bfaff77d9ffed20f084aa95b3ecdc7c13ffab3",
-      "title": "Gravitationally Induced Collapse in Modal Triplet Theory A Penrose\u2013Schoenberg Completion and Source Contract",
+      "title": "Gravitationally Induced Collapse in Modal Triplet Theory A Penrose–Schoenberg Completion and Source Contract",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -6108,7 +6141,7 @@
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21665978",
           "resource_type": "publication",
-          "title": "Gravitationally Induced Collapse in Modal Triplet Theory A Penrose\u2013Schoenberg Completion and Source Contract",
+          "title": "Gravitationally Induced Collapse in Modal Triplet Theory A Penrose–Schoenberg Completion and Source Contract",
           "updated": "2026-07-29T08:50:58.779583+00:00",
           "version": "v3"
         },
@@ -6216,7 +6249,7 @@
       ]
     },
     {
-      "abstract": "This paper develops an interpretive comparison between loop quantum gravity (LQG) and the coherent fixed-point sector of Modal Triplet Theory (MTT). The comparison is useful, but it is not a derivation of LQG from projection. Fixed-point stability, finite survivor sectors, compact reuse channels, and noninvertible projection suggest why graph-based states and discrete labels can be effective descriptions of coherent geometry. They do not by themselves construct the Ashtekar\u2013Barbero phase space, the holonomy\u2013flux algebra, the Ashtekar\u2013Lewandowski state, area and volume operators, quantum constraints, or spin-foam amplitudes. Those objects require the explicit canonical and representation data stated in the companion technical paper. In particular, the Barbero\u2013Immirzi parameter is selected by MTT only if the same four-dimensional source that fixes the parity-even gravitational action also emits a normalized parity-odd Holst coefficient. That coefficient is currently open. The result is a disciplined shadow dictionary: it identifies a plausible overlap regime, explains what fixed-point geometry contributes, and gives concrete conditions under which the analogy would become a mathematical embedding.",
+      "abstract": "This paper develops an interpretive comparison between loop quantum gravity (LQG) and the coherent fixed-point sector of Modal Triplet Theory (MTT). The comparison is useful, but it is not a derivation of LQG from projection. Fixed-point stability, finite survivor sectors, compact reuse channels, and noninvertible projection suggest why graph-based states and discrete labels can be effective descriptions of coherent geometry. They do not by themselves construct the Ashtekar–Barbero phase space, the holonomy–flux algebra, the Ashtekar–Lewandowski state, area and volume operators, quantum constraints, or spin-foam amplitudes. Those objects require the explicit canonical and representation data stated in the companion technical paper. In particular, the Barbero–Immirzi parameter is selected by MTT only if the same four-dimensional source that fixes the parity-even gravitational action also emits a normalized parity-odd Holst coefficient. That coefficient is currently open. The result is a disciplined shadow dictionary: it identifies a plausible overlap regime, explains what fixed-point geometry contributes, and gives concrete conditions under which the analogy would become a mathematical embedding.",
       "authors": [
         "Peter Nero"
       ],
@@ -6424,7 +6457,7 @@
       ]
     },
     {
-      "abstract": "Measurement is an ordinary physical interaction, but an adequate mathematical description must distinguish three stages: apparatus coupling, completion into an outcome-resolved transition, and stabilization of the resulting record. This paper formulates that distinction for Modal Triplet Theory (MTT). A localized coupling may displace a state from a quiet coherent regime, and contractive dynamics inside a selected record basin may then stabilize a repeatable record. Neither fact chooses a basin. We therefore introduce the missing transition-completion object: a normalized kernel, or in quantum language an instrument, that assigns both an outcome probability and a post-outcome state. We prove that one global contraction cannot support multiple stable outcomes, derive the exact normalization and conditional-state laws of a completion kernel, and distinguish failure of unique decoding from the possible existence of a representative section. Decoherence suppresses interference within an outcome algebra but does not select one instrument element. The Born rule requires a selected preparation law and a basin\u2013trace or instrument\u2013trace equality. The current q79 binary one-anchor recorder supplies such an exact stopped-output law on its declared domain; arbitrary apparatus contexts and objective one-history selection remain open. An Ornstein\u2013Uhlenbeck variance is retained only as a conditional linear-response model and is not identified with the Heisenberg uncertainty principle.",
+      "abstract": "Measurement is an ordinary physical interaction, but an adequate mathematical description must distinguish three stages: apparatus coupling, completion into an outcome-resolved transition, and stabilization of the resulting record. This paper formulates that distinction for Modal Triplet Theory (MTT). A localized coupling may displace a state from a quiet coherent regime, and contractive dynamics inside a selected record basin may then stabilize a repeatable record. Neither fact chooses a basin. We therefore introduce the missing transition-completion object: a normalized kernel, or in quantum language an instrument, that assigns both an outcome probability and a post-outcome state. We prove that one global contraction cannot support multiple stable outcomes, derive the exact normalization and conditional-state laws of a completion kernel, and distinguish failure of unique decoding from the possible existence of a representative section. Decoherence suppresses interference within an outcome algebra but does not select one instrument element. The Born rule requires a selected preparation law and a basin–trace or instrument–trace equality. The current q79 binary one-anchor recorder supplies such an exact stopped-output law on its declared domain; arbitrary apparatus contexts and objective one-history selection remain open. An Ornstein–Uhlenbeck variance is retained only as a conditional linear-response model and is not identified with the Heisenberg uncertainty principle.",
       "authors": [
         "Peter Nero"
       ],
@@ -6528,7 +6561,7 @@
       ]
     },
     {
-      "abstract": "Measurement-induced phase transitions (MIPTs) in monitored many-body systems and collapse-like irreversibility in measurement contexts are typically treated as distinct phenomena. We show that they arise as two effective 4D shadows of the same reduced-dynamical mechanism: noninvertible projection onto an admissible coherent sector with basin stabilization. We formulate a general projected evolution map for reduced states, define admissible basins via contractivity margins, and prove that both MIPTs and collapse thresholds correspond to the same loss of contractivity at basin boundaries. We then establish a finite-strength nonanalytic crossover (knee) theorem via a local Ornstein\u2013Uhlenbeck/Kramers reduction near basin boundaries, and prove protocol dependence and Zeno/anti-Zeno structure as unavoidable consequences of noncommutativity between probing and projection. Finally, we show that linear time-homogeneous measurement-only or decoherence-only models cannot reproduce the combined phenomena (knees, protocol dependence, and Zeno/anti-Zeno coexistence) without introducing state-dependent stabilization equivalent to basin dynamics. The results are slab-local and admissibility-conditioned: they apply on bounded-geometry time slabs where controlled truncation and positive stability margins hold. This provides a unifying reduced-dynamical bridge that aligns with, and contributes to, ongoing experimental and theoretical work on monitored circuits, continuous measurement, and irreversibility.",
+      "abstract": "Measurement-induced phase transitions (MIPTs) in monitored many-body systems and collapse-like irreversibility in measurement contexts are typically treated as distinct phenomena. We show that they arise as two effective 4D shadows of the same reduced-dynamical mechanism: noninvertible projection onto an admissible coherent sector with basin stabilization. We formulate a general projected evolution map for reduced states, define admissible basins via contractivity margins, and prove that both MIPTs and collapse thresholds correspond to the same loss of contractivity at basin boundaries. We then establish a finite-strength nonanalytic crossover (knee) theorem via a local Ornstein–Uhlenbeck/Kramers reduction near basin boundaries, and prove protocol dependence and Zeno/anti-Zeno structure as unavoidable consequences of noncommutativity between probing and projection. Finally, we show that linear time-homogeneous measurement-only or decoherence-only models cannot reproduce the combined phenomena (knees, protocol dependence, and Zeno/anti-Zeno coexistence) without introducing state-dependent stabilization equivalent to basin dynamics. The results are slab-local and admissibility-conditioned: they apply on bounded-geometry time slabs where controlled truncation and positive stability margins hold. This provides a unifying reduced-dynamical bridge that aligns with, and contributes to, ongoing experimental and theoretical work on monitored circuits, continuous measurement, and irreversibility.",
       "authors": [
         "Peter Nero"
       ],
@@ -6604,7 +6637,7 @@
       ]
     },
     {
-      "abstract": "Feynman diagrams and their associated rules appear across a wide range of physical theories, including relativistic quantum field theory, classical statistical field theory, condensed\u2013matter systems, and effective descriptions of gravity. Their ubiquity is often attributed to the quantization of fields, yet closely related diagrammatic structures arise in contexts with no intrinsic quantum interpretation. This raises a conceptual question: why does the same perturbative grammar recur so universally? In this paper we propose and develop an explanatory viewpoint based on Modal Triplet Theory (MTT). Building on recent results that derive algebraic quantum field theory (AQFT) and perturbative amplitudes rigorously from coherent modal geometry, we show that the essential structure underlying Feynman rules already exists at the level of coherent modal fluctuations around stable fixed points. Propagator\u2013 and vertex\u2013like objects arise as the inverse of the quadratic form governing coherent fluctuations and as higher variations of the modal action, respectively. Diagrammatic expansions then follow inevitably from Gaussian combinatorics, independently of quantization prescriptions, Hilbert spaces, or path integrals. This modal diagrammatics perspective does not replace the AQFT or pAQFT constructions, which remain essential for causal locality, renormalization control, and global consistency. Rather, it explains why those rigorous frameworks necessarily reproduce the familiar diagrammatic rules when projected to four\u2013dimensional spacetime. We further show how internal overlap integrals, selection rules, and curvature\u2013gap thresholds emerge naturally as vertex factors and propagator spectra in the projected theory. Finally, we discuss broader implications of this viewpoint. It clarifies why classical statistical field theories also admit Feynman diagrams, suggests an interpretation of quantumness as a particular coherence regime rather than a fundamental ontology, and offers a coherent way to understand the limited domain of validity of perturbative quantum gravity. The result is a unifying conceptual account of diagrammatics as the universal perturbative language of coherent systems.",
+      "abstract": "Feynman diagrams and their associated rules appear across a wide range of physical theories, including relativistic quantum field theory, classical statistical field theory, condensed–matter systems, and effective descriptions of gravity. Their ubiquity is often attributed to the quantization of fields, yet closely related diagrammatic structures arise in contexts with no intrinsic quantum interpretation. This raises a conceptual question: why does the same perturbative grammar recur so universally? In this paper we propose and develop an explanatory viewpoint based on Modal Triplet Theory (MTT). Building on recent results that derive algebraic quantum field theory (AQFT) and perturbative amplitudes rigorously from coherent modal geometry, we show that the essential structure underlying Feynman rules already exists at the level of coherent modal fluctuations around stable fixed points. Propagator– and vertex–like objects arise as the inverse of the quadratic form governing coherent fluctuations and as higher variations of the modal action, respectively. Diagrammatic expansions then follow inevitably from Gaussian combinatorics, independently of quantization prescriptions, Hilbert spaces, or path integrals. This modal diagrammatics perspective does not replace the AQFT or pAQFT constructions, which remain essential for causal locality, renormalization control, and global consistency. Rather, it explains why those rigorous frameworks necessarily reproduce the familiar diagrammatic rules when projected to four–dimensional spacetime. We further show how internal overlap integrals, selection rules, and curvature–gap thresholds emerge naturally as vertex factors and propagator spectra in the projected theory. Finally, we discuss broader implications of this viewpoint. It clarifies why classical statistical field theories also admit Feynman diagrams, suggests an interpretation of quantumness as a particular coherence regime rather than a fundamental ontology, and offers a coherent way to understand the limited domain of validity of perturbative quantum gravity. The result is a unifying conceptual account of diagrammatics as the universal perturbative language of coherent systems.",
       "authors": [
         "Peter Nero"
       ],
@@ -6992,7 +7025,7 @@
       ]
     },
     {
-      "abstract": "This paper determines exactly how far the present Modal Triplet Theory (MTT) gravity program reaches into loop quantum gravity (LQG). It proves an exact conditional composition theorem. If the selected four-dimensional MTT action contains a normalized Holst term and if a global three-plus-one splitting, time gauge, nondegenerate tetrad, and required boundary conditions are supplied, then the standard canonical reduction yields the real Ashtekar\u2013Barbero pair. In the convention used here, the coefficient ratio fixes the Immirzi parameter as its negative inverse. Current MTT results conditionally recover the two-derivative Einstein/TEGR tensor structure, but do not yet emit this parity-odd coefficient; therefore they do not yet predict the Immirzi parameter. The LOST representation, geometric spectra, constraint quantization, and EPRL/FK amplitudes are separately inherited only after their standard hypotheses and constructions are added. This establishes a precise LQG interface and a finite exit contract without treating imported LQG machinery as an MTT derivation.",
+      "abstract": "This paper determines exactly how far the present Modal Triplet Theory (MTT) gravity program reaches into loop quantum gravity (LQG). It proves an exact conditional composition theorem. If the selected four-dimensional MTT action contains a normalized Holst term and if a global three-plus-one splitting, time gauge, nondegenerate tetrad, and required boundary conditions are supplied, then the standard canonical reduction yields the real Ashtekar–Barbero pair. In the convention used here, the coefficient ratio fixes the Immirzi parameter as its negative inverse. Current MTT results conditionally recover the two-derivative Einstein/TEGR tensor structure, but do not yet emit this parity-odd coefficient; therefore they do not yet predict the Immirzi parameter. The LOST representation, geometric spectra, constraint quantization, and EPRL/FK amplitudes are separately inherited only after their standard hypotheses and constructions are added. This establishes a precise LQG interface and a finite exit contract without treating imported LQG machinery as an MTT derivation.",
       "authors": [
         "Peter Nero"
       ],
@@ -7433,7 +7466,7 @@
       ]
     },
     {
-      "abstract": "We develop a functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle over a four-dimensional base with compact six-dimensional Riemannian fiber; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and the existence, Lyapunov-promotion, and Banach gates are stated in self-contained form but imported from Fixed Points I, their canonical theorem source. Schur\u2013Feshbach, projector-stability, and basin-robustness statements are given with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface; their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat cyclic line of order 64 pulls back coherently to the q79 SpinC determinant, the 1+2+3 carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby\u2013Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time.",
+      "abstract": "We develop a functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle over a four-dimensional base with compact six-dimensional Riemannian fiber; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and the existence, Lyapunov-promotion, and Banach gates are stated in self-contained form but imported from Fixed Points I, their canonical theorem source. Schur–Feshbach, projector-stability, and basin-robustness statements are given with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface; their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat cyclic line of order 64 pulls back coherently to the q79 SpinC determinant, the 1+2+3 carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby–Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time.",
       "authors": [
         "Peter Nero"
       ],
@@ -7562,7 +7595,7 @@
       ]
     },
     {
-      "abstract": "We prove that Modal Triplet Theory (MTT) contains a Calabi\u2013Yau (CY) corner: there exist coherent fixed points whose internal six\u2013manifold is Calabi\u2013Yau and for which the MTT fixed\u2013point projection produces exactly the same ten\u2013dimensional background, worldsheet \\sigma\u2013model, and four\u2013dimensional effective theory as standard CY compactifications. We further show that the additional MTT admissibility constraints\u2014a uniform spectral gap above zero modes, bounded harmonic/projector maps, and commuting modal Laplacians across the three gauge layers\u2014are compatible with (and often automatic on) compact CY backgrounds equipped with Hermitian Yang\u2013Mills bundles. Consequently, MTT does not break CY physics; it selects a thick, well\u2013controlled subset and correlates parameters that ordinary CY model building treats as independent. We then import the full CY machinery (spectra, Yukawas, thresholds, mirror symmetry) and explicitly recast it as functions of MTT parameters, deriving new low\u2013energy correlations. A worked T^6/\\mathbb{Z}_3 resolution example illustrates all checks and parameter maps.",
+      "abstract": "We prove that Modal Triplet Theory (MTT) contains a Calabi–Yau (CY) corner: there exist coherent fixed points whose internal six–manifold is Calabi–Yau and for which the MTT fixed–point projection produces exactly the same ten–dimensional background, worldsheet \\sigma–model, and four–dimensional effective theory as standard CY compactifications. We further show that the additional MTT admissibility constraints—a uniform spectral gap above zero modes, bounded harmonic/projector maps, and commuting modal Laplacians across the three gauge layers—are compatible with (and often automatic on) compact CY backgrounds equipped with Hermitian Yang–Mills bundles. Consequently, MTT does not break CY physics; it selects a thick, well–controlled subset and correlates parameters that ordinary CY model building treats as independent. We then import the full CY machinery (spectra, Yukawas, thresholds, mirror symmetry) and explicitly recast it as functions of MTT parameters, deriving new low–energy correlations. A worked T^6/\\mathbb{Z}_3 resolution example illustrates all checks and parameter maps.",
       "authors": [
         "Peter Nero"
       ],
@@ -7607,7 +7640,7 @@
         "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_Calabi__Yau_Compactifications"
       },
       "source_tree_sha256": "0e48b81d05f1721e8c048251ccb9ea9d3228f711761d54ea6734ec1205aaa5ec",
-      "title": "Modal Triplet Theory: From MTT to Calabi\u2013Yau Compactifications: Existence, Compatibility, and Phenomenology",
+      "title": "Modal Triplet Theory: From MTT to Calabi–Yau Compactifications: Existence, Compatibility, and Phenomenology",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -7638,7 +7671,7 @@
       ]
     },
     {
-      "abstract": "We present a first-principles derivation of Kaluza\u2013Klein (KK) compactification from Modal Triplet Theory (MTT), embedding the standard KK framework into MTT\u2019s geometric/topological fixed-point structure. Starting from the MTT higher-dimensional configuration space and modal gap data, we show that the internal space B_{\\rm KK}, its scale R_{\\rm KK}, and the zero-mode spectrum are selected by a finite set of algebraic and integral constraints in a left-invariant basis. We formalize these constraints as a fixed-point compactification condition (FCC) and prove an equivalence (background level) between solving the higher-dimensional field equations in the left-invariant sector and solving the FCC. We then prove that the familiar 10D\\to4D compactification (with a compact B_6) is equivalent, at background and zero-mode level, to the 9D\\to3D projection description used in the fixed-point series (Riemannian submersion with compact six-dimensional fibers). The 4D Planck mass, gauge couplings, and KK masses are calculable geometric invariants of B_{\\rm KK} set by MTT gap parameters. Throughout we keep the presentation conservative and theory-agnostic on matter content, with a short outlook to phenomenology.",
+      "abstract": "We present a first-principles derivation of Kaluza–Klein (KK) compactification from Modal Triplet Theory (MTT), embedding the standard KK framework into MTT’s geometric/topological fixed-point structure. Starting from the MTT higher-dimensional configuration space and modal gap data, we show that the internal space B_{\\rm KK}, its scale R_{\\rm KK}, and the zero-mode spectrum are selected by a finite set of algebraic and integral constraints in a left-invariant basis. We formalize these constraints as a fixed-point compactification condition (FCC) and prove an equivalence (background level) between solving the higher-dimensional field equations in the left-invariant sector and solving the FCC. We then prove that the familiar 10D\\to4D compactification (with a compact B_6) is equivalent, at background and zero-mode level, to the 9D\\to3D projection description used in the fixed-point series (Riemannian submersion with compact six-dimensional fibers). The 4D Planck mass, gauge couplings, and KK masses are calculable geometric invariants of B_{\\rm KK} set by MTT gap parameters. Throughout we keep the presentation conservative and theory-agnostic on matter content, with a short outlook to phenomenology.",
       "authors": [
         "Peter Nero"
       ],
@@ -7683,7 +7716,7 @@
         "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Kaluza__Klein_Theory"
       },
       "source_tree_sha256": "f41dab5e6e108a188246e2485cd2cbdd63ab74fb73a76548469e90175eff82ba",
-      "title": "Modal Triplet Theory: From MTT to Kaluza\u2013Klein Theory",
+      "title": "Modal Triplet Theory: From MTT to Kaluza–Klein Theory",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -7714,7 +7747,7 @@
       ]
     },
     {
-      "abstract": "We construct a rigorous bridge from Modal Triplet Theory (MTT) to M -theory. Starting from a ten-dimensional coherent fixed point and its 11D circle lift, we derive: (i) the 11D supergravity field content (G_{MN},C^{(3)}) and flux G_4=\\mathrm{d}C^{(3)} as modal composites; (ii) the 11D action with Chern\u2013Simons and curvature terms, and the full field equations including the G_4\\wedge G_4 source; (iii) the shifted G_4 quantization [G_4/2\\pi]-\\tfrac12\\lambda\\in H^4(M_{11},\\mathbb{Z}) and M5 anomaly inflow; (iv) worldvolume actions for M2 and M5 via a well-defined projection \\Pi_{\\mathrm{WV}} (with \\kappa-symmetry and self-duality), giving the correct tensions and Wess\u2013Zumino couplings; (v) dimensional reductions to type IIA (including brane descendants); and (vi) a predictive low-energy map to 4D EFT parameters fixed by modal gaps and topology. The result is a first-principles derivation of the 11D framework\u2014fields, equations, branes, and consistency conditions\u2014from the fixed-point sector of MTT.",
+      "abstract": "We construct a rigorous bridge from Modal Triplet Theory (MTT) to M -theory. Starting from a ten-dimensional coherent fixed point and its 11D circle lift, we derive: (i) the 11D supergravity field content (G_{MN},C^{(3)}) and flux G_4=\\mathrm{d}C^{(3)} as modal composites; (ii) the 11D action with Chern–Simons and curvature terms, and the full field equations including the G_4\\wedge G_4 source; (iii) the shifted G_4 quantization [G_4/2\\pi]-\\tfrac12\\lambda\\in H^4(M_{11},\\mathbb{Z}) and M5 anomaly inflow; (iv) worldvolume actions for M2 and M5 via a well-defined projection \\Pi_{\\mathrm{WV}} (with \\kappa-symmetry and self-duality), giving the correct tensions and Wess–Zumino couplings; (v) dimensional reductions to type IIA (including brane descendants); and (vi) a predictive low-energy map to 4D EFT parameters fixed by modal gaps and topology. The result is a first-principles derivation of the 11D framework—fields, equations, branes, and consistency conditions—from the fixed-point sector of MTT.",
       "authors": [
         "Peter Nero"
       ],
@@ -7790,7 +7823,7 @@
       ]
     },
     {
-      "abstract": "We derive pilot\u2013wave (de Broglie\u2013Bohm) dynamics as an effective, intra\u2013basin description of Modal Triplet Theory (MTT). Starting from the deterministic modal flow on the full configuration space X = Y^4 \\times B_1 \\times B_2 \\times B_3, we show that the coherent projection and observable pushforward induce (i) a Schr\u00f6dinger evolution on the reduced observable Hilbert space, (ii) a conserved probability current on configuration space, and (iii) a canonical characteristic flow whose integral curves coincide with Bohmian guidance equations. No additional hidden variables, stochastic postulates, or ontological assumptions are introduced. We further prove that pilot\u2013wave dynamics are valid only within admissible coherence basins where the coherent projection is stable. At admissibility boundaries\u2014including measurement, horizon formation, and cosmological selection events\u2014the pilot\u2013wave description necessarily breaks down, while the underlying MTT dynamics remain deterministic and well-defined. Pilot\u2013wave theory is therefore shown to be a regime\u2013limited shadow of MTT rather than a fundamental theory. This establishes Bohmian mechanics as a semiclassical gauge of MTT, clarifies its domain of validity, and resolves its foundational tensions with probability, measurement, and relativistic causality.",
+      "abstract": "We derive pilot–wave (de Broglie–Bohm) dynamics as an effective, intra–basin description of Modal Triplet Theory (MTT). Starting from the deterministic modal flow on the full configuration space X = Y^4 \\times B_1 \\times B_2 \\times B_3, we show that the coherent projection and observable pushforward induce (i) a Schrödinger evolution on the reduced observable Hilbert space, (ii) a conserved probability current on configuration space, and (iii) a canonical characteristic flow whose integral curves coincide with Bohmian guidance equations. No additional hidden variables, stochastic postulates, or ontological assumptions are introduced. We further prove that pilot–wave dynamics are valid only within admissible coherence basins where the coherent projection is stable. At admissibility boundaries—including measurement, horizon formation, and cosmological selection events—the pilot–wave description necessarily breaks down, while the underlying MTT dynamics remain deterministic and well-defined. Pilot–wave theory is therefore shown to be a regime–limited shadow of MTT rather than a fundamental theory. This establishes Bohmian mechanics as a semiclassical gauge of MTT, clarifies its domain of validity, and resolves its foundational tensions with probability, measurement, and relativistic causality.",
       "authors": [
         "Peter Nero"
       ],
@@ -7819,7 +7852,7 @@
         "publication_date": "2026-01-15",
         "record_url": "https://zenodo.org/records/18262378",
         "resource_type": "publication",
-        "title": "Modal Triplet Theory: From MTT to Pilot\u2013Wave Dynamics",
+        "title": "Modal Triplet Theory: From MTT to Pilot–Wave Dynamics",
         "updated": "2026-01-15T21:31:19.165323+00:00",
         "version": "v1.0"
       },
@@ -7835,7 +7868,7 @@
         "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Pilot__Wave_Dynamics"
       },
       "source_tree_sha256": "f073ddc2575617bbe973bd70f6bad486ad0951e59e78d3dc4911d601118d3412",
-      "title": "Modal Triplet Theory: From MTT to Pilot\u2013Wave Dynamics",
+      "title": "Modal Triplet Theory: From MTT to Pilot–Wave Dynamics",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -7859,14 +7892,14 @@
           "publication_date": "2026-01-15",
           "record_url": "https://zenodo.org/records/18262378",
           "resource_type": "publication",
-          "title": "Modal Triplet Theory: From MTT to Pilot\u2013Wave Dynamics",
+          "title": "Modal Triplet Theory: From MTT to Pilot–Wave Dynamics",
           "updated": "2026-01-15T21:31:19.165323+00:00",
           "version": "v1.0"
         }
       ]
     },
     {
-      "abstract": "We give a complete, first\u2013principles derivation of nonrelativistic quantum mechanics from Modal Triplet Theory. Starting with the 10D tri\u2013bundle geometry and the fixed\u2013point (coherent) sector, we construct the observable map \\mathsf{P}=I\\circ\\Pi, the reduced symplectic/Hilbert structure, and\u2014crucially\u2014the self\u2013adjoint reduced Hamiltonian H_{\\mathrm{obs}} via closed, semibounded quadratic forms (KLMN/Friedrichs). Unitary dynamics U(t)=e^{-itH_{\\mathrm{obs}}/\\hbar} then follow by Stone\u2019s theorem. A constructive reconstruction theorem shows that for a broad Kato\u2013Rellich class, any Schr\u00f6dinger operator H_{\\mathrm{target}}=-\\frac{\\hbar^2}{2m}\\Delta+V(x) is realized exactly as H_{\\mathrm{obs}} by suitable (fixed) MTT background/boundary data. Measurement, the Born rule, and POVMs are obtained without postulates: modal re\u2013coherence defines exponential weights; a functional\u2013equation argument plus Gleason\u2013Busch yields the unique probability law \\mu_\\psi(P)=\\langle\\psi,P\\psi\\rangle; POVMs arise from a Naimark/Stinespring dilation realized within the coherent modal sector. We treat time\u2013dependent H_{\\mathrm{obs}}(t) (Kato propagators), uncertainty (via spectral theory for compressed generators), stationary\u2013phase correspondence to the Feynman kernel, and open systems (Lindblad) via a weak\u2013coupling limit of modal disturbances. The result is a self\u2013contained, referee\u2013proof derivation of QM from Modal Triplet Theory, with no hand\u2013waving and with every operator\u2013theoretic step made precise.",
+      "abstract": "We give a complete, first–principles derivation of nonrelativistic quantum mechanics from Modal Triplet Theory. Starting with the 10D tri–bundle geometry and the fixed–point (coherent) sector, we construct the observable map \\mathsf{P}=I\\circ\\Pi, the reduced symplectic/Hilbert structure, and—crucially—the self–adjoint reduced Hamiltonian H_{\\mathrm{obs}} via closed, semibounded quadratic forms (KLMN/Friedrichs). Unitary dynamics U(t)=e^{-itH_{\\mathrm{obs}}/\\hbar} then follow by Stone’s theorem. A constructive reconstruction theorem shows that for a broad Kato–Rellich class, any Schrödinger operator H_{\\mathrm{target}}=-\\frac{\\hbar^2}{2m}\\Delta+V(x) is realized exactly as H_{\\mathrm{obs}} by suitable (fixed) MTT background/boundary data. Measurement, the Born rule, and POVMs are obtained without postulates: modal re–coherence defines exponential weights; a functional–equation argument plus Gleason–Busch yields the unique probability law \\mu_\\psi(P)=\\langle\\psi,P\\psi\\rangle; POVMs arise from a Naimark/Stinespring dilation realized within the coherent modal sector. We treat time–dependent H_{\\mathrm{obs}}(t) (Kato propagators), uncertainty (via spectral theory for compressed generators), stationary–phase correspondence to the Feynman kernel, and open systems (Lindblad) via a weak–coupling limit of modal disturbances. The result is a self–contained, referee–proof derivation of QM from Modal Triplet Theory, with no hand–waving and with every operator–theoretic step made precise.",
       "authors": [
         "Peter Nero"
       ],
@@ -8018,7 +8051,7 @@
       ]
     },
     {
-      "abstract": "We present a bridge from Modal Triplet Theory (MTT) to perturbative string theory. Starting from a ten-dimensional coherent fixed point (\\mathcal{M}_{10},G_{MN},B_{MN},\\Phi;A_{M}), we show: (i) a bounded worldsheet projection \\Pi_{\\mathrm{ws}} produces the Polyakov/RNS actions; (ii) vanishing worldsheet \\beta\u2013functions holds to the same order in \\alpha' as the MTT string-frame action, yielding fixed point \\Rightarrow conformal background to controlled order, up to local field redefinitions; (iii) Green\u2013Schwarz anomaly cancellation and tadpole constraints follow from the MTT topological data with \\alpha'/4 normalization and the torsional spin connection R_{+}; (iv) compactifications (Calabi\u2013Yau and torsional SU(3)) and gauge bundles emerge from modal holonomy and curvature-gap dynamics; (v) T-duality is exact spectral equivalence on S^{1}, while S-duality is formulated as a modal-landscape conjecture. We record an AdS corner where a GKPW-type functional emerges at the fixed point",
+      "abstract": "We present a bridge from Modal Triplet Theory (MTT) to perturbative string theory. Starting from a ten-dimensional coherent fixed point (\\mathcal{M}_{10},G_{MN},B_{MN},\\Phi;A_{M}), we show: (i) a bounded worldsheet projection \\Pi_{\\mathrm{ws}} produces the Polyakov/RNS actions; (ii) vanishing worldsheet \\beta–functions holds to the same order in \\alpha' as the MTT string-frame action, yielding fixed point \\Rightarrow conformal background to controlled order, up to local field redefinitions; (iii) Green–Schwarz anomaly cancellation and tadpole constraints follow from the MTT topological data with \\alpha'/4 normalization and the torsional spin connection R_{+}; (iv) compactifications (Calabi–Yau and torsional SU(3)) and gauge bundles emerge from modal holonomy and curvature-gap dynamics; (v) T-duality is exact spectral equivalence on S^{1}, while S-duality is formulated as a modal-landscape conjecture. We record an AdS corner where a GKPW-type functional emerges at the fixed point",
       "authors": [
         "Peter Nero"
       ],
@@ -8094,7 +8127,7 @@
       ]
     },
     {
-      "abstract": "We extend the Modal Triplet Theory (MTT) bridge from the torsion\u2013free SU(3) (Calabi\u2013Yau) slice to the non\u2013K\u00e4hler, flux slice governed by the Hull\u2013Strominger system, and upgrade the result from admissibility to true selection by MTT. On a compact complex threefold with trivial canonical bundle, conformally balanced metric, NS\u2013NS three\u2013form \\widehat{H}, and a Hermitian\u2013Yang\u2013Mills (HYM) bundle, we formulate twisted Standing Assumptions (SA.F1\u2013SA.F4) ensuring contractivity of the projected flow and the existence of a unique coherent fixed point. We then construct a selection potential \\Xi in the torsional SU(3) slice and prove: (i) its stationary points coincide with solutions of the Hull\u2013Strominger system (with the Bismut/Hull connection on TX); (ii) under SA.F1\u2013SA.F4, \\Xi is strictly convex near a Strominger solution, hence that solution is the unique local minimizer; (iii) the MTT fixed point coincides with this minimizer and is globally attractive in the coherent sector. A reference implementation on the Fu\u2013Yau class (torus bundles over K3 and K3\u2013orbifolds) verifies twisted spectral gaps, bounded projectors, and commuting torsionful Laplacians. Compactification choice is replaced by fixed\u2013point selection also in the non\u2013K\u00e4hler regime; technically, this yields controlled truncations, built\u2013in decoherence, and correlated low\u2013energy data in the presence of flux, fully parallel to the CY case.",
+      "abstract": "We extend the Modal Triplet Theory (MTT) bridge from the torsion–free SU(3) (Calabi–Yau) slice to the non–Kähler, flux slice governed by the Hull–Strominger system, and upgrade the result from admissibility to true selection by MTT. On a compact complex threefold with trivial canonical bundle, conformally balanced metric, NS–NS three–form \\widehat{H}, and a Hermitian–Yang–Mills (HYM) bundle, we formulate twisted Standing Assumptions (SA.F1–SA.F4) ensuring contractivity of the projected flow and the existence of a unique coherent fixed point. We then construct a selection potential \\Xi in the torsional SU(3) slice and prove: (i) its stationary points coincide with solutions of the Hull–Strominger system (with the Bismut/Hull connection on TX); (ii) under SA.F1–SA.F4, \\Xi is strictly convex near a Strominger solution, hence that solution is the unique local minimizer; (iii) the MTT fixed point coincides with this minimizer and is globally attractive in the coherent sector. A reference implementation on the Fu–Yau class (torus bundles over K3 and K3–orbifolds) verifies twisted spectral gaps, bounded projectors, and commuting torsionful Laplacians. Compactification choice is replaced by fixed–point selection also in the non–Kähler regime; technically, this yields controlled truncations, built–in decoherence, and correlated low–energy data in the presence of flux, fully parallel to the CY case.",
       "authors": [
         "Peter Nero"
       ],
@@ -8139,7 +8172,7 @@
         "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System"
       },
       "source_tree_sha256": "32457a2fa741f79e51b5af61649b1f397f64910e6c97f14bc93cd2af59673c43",
-      "title": "Modal Triplet Theory: From MTT to the Strominger (Heterotic Flux) System Selection of Non\u2013K\u00e4hler SU(3) Geometry by a Fixed\u2013Point Principle",
+      "title": "Modal Triplet Theory: From MTT to the Strominger (Heterotic Flux) System Selection of Non–Kähler SU(3) Geometry by a Fixed–Point Principle",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -8322,7 +8355,7 @@
       ]
     },
     {
-      "abstract": "This paper separates three levels of the current Modal Triplet Theory (MTT) quantum-gravity program. First, an exact finite-carrier result supplies internal transverse-traceless support, while a separate controlled reduction recovers the four-dimensional Einstein action only under declared higher-dimensional action, truncation, gap, and normalization hypotheses. Second, once the resulting local Einstein\u2013matter effective action, Wilson coefficients, state, gauge fixing, and scheme are supplied, standard background-field and BV/BRST methods give fixed-order perturbative quantum-GR equivalence. This is an imported parity construction, not a derivation of the quantum measure or Wilson coefficients from MTT. The two-derivative theory is not ultraviolet complete: its counterterm order grows with loop number and the two-loop pure-gravity divergence is nonzero. Third, the selected compatible ultraviolet route is the q79 Fu\u2013Yau heterotic branch. A conditional inheritance theorem gives absence of local ultraviolet divergences at each fixed genus and multiplicity if an exact modular, anomaly-free heterotic worldsheet theory with factorization, GSO projection, and BV vertices is supplied. The current q79 worldsheet contract has five of twelve rows available, two partial, and five open. The physical nonpullback holomorphic/HYM bundles, complete Green\u2013Schwarz representative, exact worldsheet SCFT, string-field realization, infrared completion, all-genus control, and nonperturbative definition remain open. The resulting claim is therefore low-energy quantum-gravity parity plus a sharply specified heterotic completion program, not completed ultraviolet quantum gravity.",
+      "abstract": "This paper separates three levels of the current Modal Triplet Theory (MTT) quantum-gravity program. First, an exact finite-carrier result supplies internal transverse-traceless support, while a separate controlled reduction recovers the four-dimensional Einstein action only under declared higher-dimensional action, truncation, gap, and normalization hypotheses. Second, once the resulting local Einstein–matter effective action, Wilson coefficients, state, gauge fixing, and scheme are supplied, standard background-field and BV/BRST methods give fixed-order perturbative quantum-GR equivalence. This is an imported parity construction, not a derivation of the quantum measure or Wilson coefficients from MTT. The two-derivative theory is not ultraviolet complete: its counterterm order grows with loop number and the two-loop pure-gravity divergence is nonzero. Third, the selected compatible ultraviolet route is the q79 Fu–Yau heterotic branch. A conditional inheritance theorem gives absence of local ultraviolet divergences at each fixed genus and multiplicity if an exact modular, anomaly-free heterotic worldsheet theory with factorization, GSO projection, and BV vertices is supplied. The current q79 worldsheet contract has five of twelve rows available, two partial, and five open. The physical nonpullback holomorphic/HYM bundles, complete Green–Schwarz representative, exact worldsheet SCFT, string-field realization, infrared completion, all-genus control, and nonperturbative definition remain open. The resulting claim is therefore low-energy quantum-gravity parity plus a sharply specified heterotic completion program, not completed ultraviolet quantum gravity.",
       "authors": [
         "Peter Nero"
       ],
@@ -8401,7 +8434,7 @@
       ]
     },
     {
-      "abstract": "We present a first\u2013principles derivation of perturbative quantum field theory amplitudes from Modal Triplet Theory (MTT). Starting from the coherent fixed\u2013point sector of the modal configuration space, we employ the MTT \\rightarrow QFT projection to obtain a locally covariant algebraic quantum field theory (AQFT) on a globally hyperbolic four\u2013dimensional spacetime. Within this framework we construct the local net of observables, establish algebraic propagation via the time\u2013slice axiom, and define interacting quantum fields using perturbative algebraic quantum field theory (pAQFT). Feynman rules, loop corrections, and renormalization are derived as consequences of the algebraic construction rather than postulated. Dimensional regularization with minimal subtraction and the covariant functional renormalization group are recovered as concrete realizations of the underlying algebraic renormalization freedom. We identify the precise conditions under which scattering amplitudes exist, formulate amplitudes via Haag\u2013Ruelle/LSZ theory in admissible scattering regimes, and distinguish them from local or in\u2013in observables in generic curved or time\u2013dependent backgrounds. All effective couplings, masses, and mixing parameters are determined by bounded overlap integrals and curvature\u2013gap data intrinsic to Modal Triplet Theory. When evaluated with identical low\u2013energy inputs, the resulting amplitudes coincide with those of the Standard Model. The construction yields a complete and logically closed amplitudes layer for MTT, bridging modal geometry to perturbative quantum field theory in a mathematically rigorous and regime\u2013aware manner.",
+      "abstract": "We present a first–principles derivation of perturbative quantum field theory amplitudes from Modal Triplet Theory (MTT). Starting from the coherent fixed–point sector of the modal configuration space, we employ the MTT \\rightarrow QFT projection to obtain a locally covariant algebraic quantum field theory (AQFT) on a globally hyperbolic four–dimensional spacetime. Within this framework we construct the local net of observables, establish algebraic propagation via the time–slice axiom, and define interacting quantum fields using perturbative algebraic quantum field theory (pAQFT). Feynman rules, loop corrections, and renormalization are derived as consequences of the algebraic construction rather than postulated. Dimensional regularization with minimal subtraction and the covariant functional renormalization group are recovered as concrete realizations of the underlying algebraic renormalization freedom. We identify the precise conditions under which scattering amplitudes exist, formulate amplitudes via Haag–Ruelle/LSZ theory in admissible scattering regimes, and distinguish them from local or in–in observables in generic curved or time–dependent backgrounds. All effective couplings, masses, and mixing parameters are determined by bounded overlap integrals and curvature–gap data intrinsic to Modal Triplet Theory. When evaluated with identical low–energy inputs, the resulting amplitudes coincide with those of the Standard Model. The construction yields a complete and logically closed amplitudes layer for MTT, bridging modal geometry to perturbative quantum field theory in a mathematically rigorous and regime–aware manner.",
       "authors": [
         "Peter Nero"
       ],
@@ -8446,7 +8479,7 @@
         "legacy_source_path": "7 Quantum Field Theory/_work/Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2"
       },
       "source_tree_sha256": "271a8597f741d656e12f4f314edab6b8ecaa2e9d70f78e577d1061173feac602",
-      "title": "Modal Triplet Theory: Quantum Amplitudes from Modal Geometry A First\u2013Principles Derivation of Feynman Rules, Running, and Phenomenology",
+      "title": "Modal Triplet Theory: Quantum Amplitudes from Modal Geometry A First–Principles Derivation of Feynman Rules, Running, and Phenomenology",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -8506,7 +8539,7 @@
         "publication_date": "2026-07-30",
         "record_url": "https://zenodo.org/records/21704388",
         "resource_type": "publication",
-        "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward\u2013Noether Closure and the MTT Bookkeeping Boundary",
+        "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward–Noether Closure and the MTT Bookkeeping Boundary",
         "updated": "2026-07-30T13:27:55.100890+00:00",
         "version": "v1"
       },
@@ -8525,7 +8558,7 @@
         "legacy_source_path": "5 Dirac Delta/_work/Momentum_Conservation_Deltas_and_Bookkeeping_Closure_Exact_Vertex_Conservation"
       },
       "source_tree_sha256": "0e4e88dfc5b8f1368116ce0ea63c68871df0967a5f1eae5afbda08321d57c7f4",
-      "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward\u2013Noether Closure and the MTT Bookkeeping Boundary",
+      "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward–Noether Closure and the MTT Bookkeeping Boundary",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -8549,7 +8582,7 @@
           "publication_date": "2026-07-30",
           "record_url": "https://zenodo.org/records/21704388",
           "resource_type": "publication",
-          "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward\u2013Noether Closure and the MTT Bookkeeping Boundary",
+          "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward–Noether Closure and the MTT Bookkeeping Boundary",
           "updated": "2026-07-30T13:27:55.100890+00:00",
           "version": "v1"
         }
@@ -8659,7 +8692,7 @@
       ]
     },
     {
-      "abstract": "We present a unified structural account of photons in Modal Triplet Theory (MTT). In MTT, physical description arises from admissible coherent configurations on a higher-dimensional modal space, projected to an effective four-dimensional encoding. Within this framework, photons are identified as massless gauge-coherence modes whose preferred physical encoding is global and non-factorizing. Localization, particle-like behavior, and discrete detection events emerge only when admissibility constraints enforce a partition of this encoding, as in interaction or measurement. We show that null propagation at the speed of light arises as the unique admissible updating of massless gauge coherence under stability and contractivity conditions, rather than as a kinematic postulate. Wave\u2013particle duality is reinterpreted as a choice of encoding valid on different admissible domains. Gravitational lensing and redshift are described as continuous re-encodings of the same stretched coherence constraint under varying admissibility geometry, without invoking forces acting on localized particles. Photons near horizons provide a particularly transparent illustration of the framework. Horizons are identified as admissibility barriers across which the observable map loses a global right inverse, forcing exterior re-encoding. The resulting thermal description is shown to be consistent with Hawking\u2019s equations and is interpreted as a basin-measure shadow of restricted encoding, structurally analogous to measurement-induced probabilities. Time is treated as an encoding-dependent construct associated with coherence rebalancing and record formation; massless gauge modes admit atemporal encodings along null updating directions. This paper does not modify the equations of quantum electrodynamics, general relativity, or quantum field theory on curved spacetime. Rather, it clarifies their structural origin within MTT and unifies photon propagation, entanglement, measurement, horizons, and thermality as manifestations of a single admissibility\u2013encoding framework.",
+      "abstract": "We present a unified structural account of photons in Modal Triplet Theory (MTT). In MTT, physical description arises from admissible coherent configurations on a higher-dimensional modal space, projected to an effective four-dimensional encoding. Within this framework, photons are identified as massless gauge-coherence modes whose preferred physical encoding is global and non-factorizing. Localization, particle-like behavior, and discrete detection events emerge only when admissibility constraints enforce a partition of this encoding, as in interaction or measurement. We show that null propagation at the speed of light arises as the unique admissible updating of massless gauge coherence under stability and contractivity conditions, rather than as a kinematic postulate. Wave–particle duality is reinterpreted as a choice of encoding valid on different admissible domains. Gravitational lensing and redshift are described as continuous re-encodings of the same stretched coherence constraint under varying admissibility geometry, without invoking forces acting on localized particles. Photons near horizons provide a particularly transparent illustration of the framework. Horizons are identified as admissibility barriers across which the observable map loses a global right inverse, forcing exterior re-encoding. The resulting thermal description is shown to be consistent with Hawking’s equations and is interpreted as a basin-measure shadow of restricted encoding, structurally analogous to measurement-induced probabilities. Time is treated as an encoding-dependent construct associated with coherence rebalancing and record formation; massless gauge modes admit atemporal encodings along null updating directions. This paper does not modify the equations of quantum electrodynamics, general relativity, or quantum field theory on curved spacetime. Rather, it clarifies their structural origin within MTT and unifies photon propagation, entanglement, measurement, horizons, and thermality as manifestations of a single admissibility–encoding framework.",
       "authors": [
         "Peter Nero"
       ],
@@ -9126,7 +9159,7 @@
       ]
     },
     {
-      "abstract": "Empirical studies of biological, physical, and engineered networks reveal robust structural features that defy explanation by local optimization rules. In particular, junction motifs exhibit hidden correlations among branching angles, thickness ratios, and node degrees, and frequently display sprouting behavior in which a thin branch emerges approximately orthogonal to an otherwise straight dominant channel. Existing explanations typically appeal to variational principles or string\u2013theoretic minimal surfaces. In this work we show that neither optimization nor string theory is required. Working entirely within Modal Triplet Theory (MTT), we derive these network phenomena directly from projection-limited coherent description. The central mechanism is admissibility: effective network configurations exist only as shadows of an underlying coherent sector, selected by spectral gaps, bounded projectors, and stability margins. We prove that the nonexistence of a global reconstruction map forces hidden compatibility constraints among local network observables, ruling out purely local generative models. We further show that near the boundary of admissibility, only a restricted class of local deformations preserves coherence. These admissibility-preserving deformations correspond precisely to empirical sprouts. Using operator-theoretic bounds and a Schur\u2013complement analysis, we demonstrate that thin branches couple perturbatively to a dominant transport channel, while bending the dominant channel consumes coherence capacity coercively. This yields a quantitative prediction: the maximal admissible sprout thickness ratio scales as the square root of the coherence capacity, \\rho_{\\mathrm{th}} \\sim \\sqrt{C}. We derive statistical concentration results showing that sprout motifs become dominant in boundary-layer ensembles and provide a concrete empirical protocol for testing these predictions using capacity proxies such as curvature, crowding, or taper gradients. Our results establish sprouting as a universal boundary-stabilization phenomenon inherent to projection-limited descriptions, unifying disparate network observations under a single structural principle and extending the scope of MTT beyond quantum and geometric settings to complex networks.",
+      "abstract": "Empirical studies of biological, physical, and engineered networks reveal robust structural features that defy explanation by local optimization rules. In particular, junction motifs exhibit hidden correlations among branching angles, thickness ratios, and node degrees, and frequently display sprouting behavior in which a thin branch emerges approximately orthogonal to an otherwise straight dominant channel. Existing explanations typically appeal to variational principles or string–theoretic minimal surfaces. In this work we show that neither optimization nor string theory is required. Working entirely within Modal Triplet Theory (MTT), we derive these network phenomena directly from projection-limited coherent description. The central mechanism is admissibility: effective network configurations exist only as shadows of an underlying coherent sector, selected by spectral gaps, bounded projectors, and stability margins. We prove that the nonexistence of a global reconstruction map forces hidden compatibility constraints among local network observables, ruling out purely local generative models. We further show that near the boundary of admissibility, only a restricted class of local deformations preserves coherence. These admissibility-preserving deformations correspond precisely to empirical sprouts. Using operator-theoretic bounds and a Schur–complement analysis, we demonstrate that thin branches couple perturbatively to a dominant transport channel, while bending the dominant channel consumes coherence capacity coercively. This yields a quantitative prediction: the maximal admissible sprout thickness ratio scales as the square root of the coherence capacity, \\rho_{\\mathrm{th}} \\sim \\sqrt{C}. We derive statistical concentration results showing that sprout motifs become dominant in boundary-layer ensembles and provide a concrete empirical protocol for testing these predictions using capacity proxies such as curvature, crowding, or taper gradients. Our results establish sprouting as a universal boundary-stabilization phenomenon inherent to projection-limited descriptions, unifying disparate network observations under a single structural principle and extending the scope of MTT beyond quantum and geometric settings to complex networks.",
       "authors": [
         "Peter Nero"
       ],
@@ -9202,7 +9235,7 @@
       ]
     },
     {
-      "abstract": "Across physics, biology, cognition, artificial intelligence, and large-scale social systems, effective descriptions exhibit recurring features: (i) stability only within bounded regimes, (ii) abrupt irreversible breakdowns, (iii) hidden correlations among variables treated as independent, and (iv) long-horizon behavior that admits no general shortcut prediction even when underlying dynamics are deterministic. These features are typically analyzed in isolation and explained by domain-specific mechanisms. This paper gives a unifying structural framework\u2014projection-limited coherence\u2014that explains these features without assuming any particular substrate or equation of motion. The framework isolates four minimal ingredients: (1) an underlying measurable dynamical system (\\mathsf{X},\\mathcal{B}(\\mathsf{X}),\\Phi_t), (2) a many-to-one measurable projection \\Pi:\\mathsf{X}\\to\\mathsf{Y} defining effective (shadow) variables, (3) a finite coherence capacity controlling the domain where truncation is well-posed, and (4) generic nonexistence of a global measurable section (right-inverse) for \\Pi across admissibility boundaries. From these alone we prove: (A) structural irreversibility of shadow evolution even when \\Phi_t is invertible, (B) computational irreducibility of basin membership and outcome selection for broad classes of systems with nontrivial boundary structure, and (C) hidden compatibility constraints among shadow variables arising from shared pre-images, yielding nonlocal relations without causal interaction. We then instantiate the framework in Modal Triplet Theory (MTT), where observable four-dimensional physics arises as the coherent-sector projection of deterministic higher-dimensional dynamics via a joint Riesz projector and internal pushforward. We show how quantum mechanics, general relativity, probabilistic outcomes, and the arrow of time emerge as shadow descriptions within admissible slabs. Finally, we apply the same formal structure to brains and consciousness, artificial intelligence architectures, and civilizations, using a uniform template (underlying dynamics, projection, coherent sector, capacity, boundaries, and induced hidden relations).",
+      "abstract": "Across physics, biology, cognition, artificial intelligence, and large-scale social systems, effective descriptions exhibit recurring features: (i) stability only within bounded regimes, (ii) abrupt irreversible breakdowns, (iii) hidden correlations among variables treated as independent, and (iv) long-horizon behavior that admits no general shortcut prediction even when underlying dynamics are deterministic. These features are typically analyzed in isolation and explained by domain-specific mechanisms. This paper gives a unifying structural framework—projection-limited coherence—that explains these features without assuming any particular substrate or equation of motion. The framework isolates four minimal ingredients: (1) an underlying measurable dynamical system (\\mathsf{X},\\mathcal{B}(\\mathsf{X}),\\Phi_t), (2) a many-to-one measurable projection \\Pi:\\mathsf{X}\\to\\mathsf{Y} defining effective (shadow) variables, (3) a finite coherence capacity controlling the domain where truncation is well-posed, and (4) generic nonexistence of a global measurable section (right-inverse) for \\Pi across admissibility boundaries. From these alone we prove: (A) structural irreversibility of shadow evolution even when \\Phi_t is invertible, (B) computational irreducibility of basin membership and outcome selection for broad classes of systems with nontrivial boundary structure, and (C) hidden compatibility constraints among shadow variables arising from shared pre-images, yielding nonlocal relations without causal interaction. We then instantiate the framework in Modal Triplet Theory (MTT), where observable four-dimensional physics arises as the coherent-sector projection of deterministic higher-dimensional dynamics via a joint Riesz projector and internal pushforward. We show how quantum mechanics, general relativity, probabilistic outcomes, and the arrow of time emerge as shadow descriptions within admissible slabs. Finally, we apply the same formal structure to brains and consciousness, artificial intelligence architectures, and civilizations, using a uniform template (underlying dynamics, projection, coherent sector, capacity, boundaries, and induced hidden relations).",
       "authors": [],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
@@ -10102,7 +10135,7 @@
       ]
     },
     {
-      "abstract": "We give a typed, conditional formulation of Modal Triplet Theory (MTT) as a theory of reduced description. A representative section, an exact upper decoder, autonomous reduced evolution, and merger of effective states solve four different mathematical problems; none follows merely from noninjectivity of a projection. We import the canonical factor-through, finite-diameter, and disintegration results from the Projection\u2013Admissibility paper, then prove A0's basin-local fixed-point, encoding-factorization, and controlled approximate-orbit results. Admissibility boundaries are defined by explicit margins and section or projector conditioning rather than by assuming the desired obstruction. The encoding atlas and its relations are consequently local and conditional. Probability, irreversibility, physical time, and any concrete physical realization require their own measure, evolution, and source hypotheses.",
+      "abstract": "We give a typed, conditional formulation of Modal Triplet Theory (MTT) as a theory of reduced description. A representative section, an exact upper decoder, autonomous reduced evolution, and merger of effective states solve four different mathematical problems; none follows merely from noninjectivity of a projection. We import the canonical factor-through, finite-diameter, and disintegration results from the Projection–Admissibility paper, then prove A0's basin-local fixed-point, encoding-factorization, and controlled approximate-orbit results. Admissibility boundaries are defined by explicit margins and section or projector conditioning rather than by assuming the desired obstruction. The encoding atlas and its relations are consequently local and conditional. Probability, irreversibility, physical time, and any concrete physical realization require their own measure, evolution, and source hypotheses.",
       "authors": [
         "Peter Nero"
       ],
@@ -10206,7 +10239,7 @@
       ]
     },
     {
-      "abstract": "We formulate coherent kinematics as an encoding-level construction and separate it from physical causal motion. The formal gluing, regularity, finite-propagation, and physical-bridge results are imported from the focused Coherent Kinematics paper, which is their canonical theorem source; the present program paper organizes their role without duplicating their proofs. An admissible chart is a typed reduction from an upper state domain to an effective description, with transition maps on controlled overlaps. Position is a declared localization functional of chart support. An encoding trajectory is generated by an actual upper path that remains representable through a compatible chain of charts; equivalent chart descriptions define the same encoding worldline. Regularity of this worldline requires regular upper evolution and regular chart and localization maps\u2014contractivity alone is insufficient. Physical timelike and null classification, finite propagation, locality, and operator microcausality enter only after the corresponding Lorentzian, hyperbolic, or local-algebraic structures are supplied. Chart ordering alone is not a causal order. Effective mergers are failures of injectivity of an autonomous reduced map, while splits, selections, probabilities, and records require additional continuation, instrument, measure, and stability data. Failure of an exterior decoder or chart continuation does not imply termination of the underlying upper evolution or a physical worldline. These distinctions retain chart persistence as a useful pregeometric MTT language without deriving relativity, measurement outcomes, or a temporal arrow from projection alone.",
+      "abstract": "We formulate coherent kinematics as an encoding-level construction and separate it from physical causal motion. The formal gluing, regularity, finite-propagation, and physical-bridge results are imported from the focused Coherent Kinematics paper, which is their canonical theorem source; the present program paper organizes their role without duplicating their proofs. An admissible chart is a typed reduction from an upper state domain to an effective description, with transition maps on controlled overlaps. Position is a declared localization functional of chart support. An encoding trajectory is generated by an actual upper path that remains representable through a compatible chain of charts; equivalent chart descriptions define the same encoding worldline. Regularity of this worldline requires regular upper evolution and regular chart and localization maps—contractivity alone is insufficient. Physical timelike and null classification, finite propagation, locality, and operator microcausality enter only after the corresponding Lorentzian, hyperbolic, or local-algebraic structures are supplied. Chart ordering alone is not a causal order. Effective mergers are failures of injectivity of an autonomous reduced map, while splits, selections, probabilities, and records require additional continuation, instrument, measure, and stability data. Failure of an exterior decoder or chart continuation does not imply termination of the underlying upper evolution or a physical worldline. These distinctions retain chart persistence as a useful pregeometric MTT language without deriving relativity, measurement outcomes, or a temporal arrow from projection alone.",
       "authors": [
         "Peter Nero"
       ],
@@ -10443,7 +10476,7 @@
         "publication_date": "2026-07-29",
         "record_url": "https://zenodo.org/records/21652638",
         "resource_type": "publication",
-        "title": "The Modal Triplet Theory Program B0: Circle\u2013Lens\u2013Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations",
+        "title": "The Modal Triplet Theory Program B0: Circle–Lens–Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations",
         "updated": "2026-07-29T08:51:58.230388+00:00",
         "version": "v2"
       },
@@ -10462,7 +10495,7 @@
         "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B0__Why_Description_Forces_Circle__Lens__and_Nil"
       },
       "source_tree_sha256": "44967c2d1ea209fad9fe2bc66a19c1fa7761a35c5aaf4b00b65be613a97b7fbc",
-      "title": "The Modal Triplet Theory Program B0: Circle\u2013Lens\u2013Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations",
+      "title": "The Modal Triplet Theory Program B0: Circle–Lens–Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -10486,7 +10519,7 @@
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21652638",
           "resource_type": "publication",
-          "title": "The Modal Triplet Theory Program B0: Circle\u2013Lens\u2013Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations",
+          "title": "The Modal Triplet Theory Program B0: Circle–Lens–Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations",
           "updated": "2026-07-29T08:51:58.230388+00:00",
           "version": "v2"
         },
@@ -10518,7 +10551,7 @@
       ]
     },
     {
-      "abstract": "We determine exactly what follows from circle-type return memory in a typed encoding atlas. A composable family of invertible comparison maps defines a transport functor and a holonomy group. A carrier value descends to a path-independent global value precisely when it is fixed by that holonomy group. Nontrivial holonomy therefore need not be an inconsistency: one may retain the transport data, restrict to the fixed sector, or pass to a declared quotient. It obstructs only an endpoint-only trivialization. Under standard smoothness and locality hypotheses, transport on a supplied principal bundle is represented by a connection, but the circle profile alone selects neither the bundle, structure group, representation, nor connection. Flat connections can have nontrivial global holonomy, so return memory does not imply curvature. Gravity is a canonical realization only after additional physical data are supplied: a smooth base, a Lorentzian metric or equivalent physical principal symbol, and the tangent, frame, coframe, or spin carrier. The metric then has a unique torsion-free compatible Levi\u2013Civita connection. Causal cones come from the principal symbol of a selected local hyperbolic equation, and Einstein dynamics follows only after an Einstein\u2013Hilbert or equivalent local action is selected. Thus Program B1 establishes a precise loop-transport bridge and a conditional gravity realization, not the inevitability or uniqueness of gravity from obstruction taxonomy alone.",
+      "abstract": "We determine exactly what follows from circle-type return memory in a typed encoding atlas. A composable family of invertible comparison maps defines a transport functor and a holonomy group. A carrier value descends to a path-independent global value precisely when it is fixed by that holonomy group. Nontrivial holonomy therefore need not be an inconsistency: one may retain the transport data, restrict to the fixed sector, or pass to a declared quotient. It obstructs only an endpoint-only trivialization. Under standard smoothness and locality hypotheses, transport on a supplied principal bundle is represented by a connection, but the circle profile alone selects neither the bundle, structure group, representation, nor connection. Flat connections can have nontrivial global holonomy, so return memory does not imply curvature. Gravity is a canonical realization only after additional physical data are supplied: a smooth base, a Lorentzian metric or equivalent physical principal symbol, and the tangent, frame, coframe, or spin carrier. The metric then has a unique torsion-free compatible Levi–Civita connection. Causal cones come from the principal symbol of a selected local hyperbolic equation, and Einstein dynamics follows only after an Einstein–Hilbert or equivalent local action is selected. Thus Program B1 establishes a precise loop-transport bridge and a conditional gravity realization, not the inevitability or uniqueness of gravity from obstruction taxonomy alone.",
       "authors": [
         "Peter Nero"
       ],
@@ -10622,7 +10655,7 @@
       ]
     },
     {
-      "abstract": "We formulate gauge redundancy as a precise lens-type realization rather than as the unique response to every nonfaithful description. For a declared group action on a field space, the orbit map identifies gauge-related representatives. At the set level, every invariant map factors uniquely through this quotient. That universal property organizes redundancy but does not select the group, action, bundle, connection, observables, or dynamics. We separate two global-section questions that were conflated in the first version. A principal bundle is globally defined by its transition cocycle even when it has no global section; a global section exists precisely when the bundle is trivial. A field-space gauge fixing is instead a section of the orbit map on a specified regularity class and orbit stratum. Nonunique representatives alone do not obstruct such a section. A genuine global gauge-fixing obstruction must be proved in the chosen topological, smooth, or stacky category, as in Gribov\u2013Singer phenomena. On a supplied principal bundle, a connection gives local gauge potentials and covariant curvature. Yang\u2013Mills dynamics follows only after one supplies a base metric, structure group, invariant bilinear form, coupling, matter representation, boundary conditions, and local action. Other gauge-invariant actions exist, so lens-type redundancy does not prove uniqueness of Yang\u2013Mills theory or select the Standard Model gauge group. Program B2 therefore establishes a typed redundancy and gauge-fixing framework plus a conditional Yang\u2013Mills realization.",
+      "abstract": "We formulate gauge redundancy as a precise lens-type realization rather than as the unique response to every nonfaithful description. For a declared group action on a field space, the orbit map identifies gauge-related representatives. At the set level, every invariant map factors uniquely through this quotient. That universal property organizes redundancy but does not select the group, action, bundle, connection, observables, or dynamics. We separate two global-section questions that were conflated in the first version. A principal bundle is globally defined by its transition cocycle even when it has no global section; a global section exists precisely when the bundle is trivial. A field-space gauge fixing is instead a section of the orbit map on a specified regularity class and orbit stratum. Nonunique representatives alone do not obstruct such a section. A genuine global gauge-fixing obstruction must be proved in the chosen topological, smooth, or stacky category, as in Gribov–Singer phenomena. On a supplied principal bundle, a connection gives local gauge potentials and covariant curvature. Yang–Mills dynamics follows only after one supplies a base metric, structure group, invariant bilinear form, coupling, matter representation, boundary conditions, and local action. Other gauge-invariant actions exist, so lens-type redundancy does not prove uniqueness of Yang–Mills theory or select the Standard Model gauge group. Program B2 therefore establishes a typed redundancy and gauge-fixing framework plus a conditional Yang–Mills realization.",
       "authors": [
         "Peter Nero"
       ],
@@ -10651,7 +10684,7 @@
         "publication_date": "2026-07-29",
         "record_url": "https://zenodo.org/records/21652648",
         "resource_type": "publication",
-        "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang\u2013Mills Realization",
+        "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang–Mills Realization",
         "updated": "2026-07-29T08:52:00.605225+00:00",
         "version": "v2"
       },
@@ -10670,7 +10703,7 @@
         "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding"
       },
       "source_tree_sha256": "689f4004a7852a93edb266a9b3c452f24ada6db916bb80c717bf05a052a6d20c",
-      "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang\u2013Mills Realization",
+      "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang–Mills Realization",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -10694,7 +10727,7 @@
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21652648",
           "resource_type": "publication",
-          "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang\u2013Mills Realization",
+          "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang–Mills Realization",
           "updated": "2026-07-29T08:52:00.605225+00:00",
           "version": "v2"
         },
@@ -10938,7 +10971,7 @@
       ]
     },
     {
-      "abstract": "We replace an absolute notion of encoding saturation by a typed and testable relative notion. A saturation contract specifies a category of candidate realizations, its equivalences, a complete list of constraints and boundary data, and a class of allowed factorizations. A realization is saturated relative to that contract when it satisfies every declared constraint and admits no nontrivial allowed factorization. Saturation can therefore change when the candidate class, constraint inventory, equivalence, or factorization class changes. For a finite-dimensional local model with declared variable and constraint blocks, we prove that first-order factorization is exactly detected by the connected components of the bipartite derivative-incidence graph. A connected active graph gives infinitesimal indecomposability; together with an injective combined derivative, it gives a locally isolated, infinitesimally indecomposable realization. This is a genuine conditional saturation theorem. The stronger claims in the first version do not follow from saturation alone. We give explicit countermodels showing that a complete, rigid, indecomposable constraint system need not contain extended carriers, a critical dimension, or a nontrivial duality. A one-dimensional carrier is minimal only after one requires a nonconstant continuous loop or nontrivial holonomy. Critical dimensions require an explicit anomaly or central-charge defect. Duality requires an explicit invertible comparison preserving the declared dynamics and observables. String-like and brane-like structures are consequently realization classes, not inevitable consequences of three obstruction labels. We also separate existence, local rigidity, uniqueness within a declared candidate class, physical selection, and empirical adequacy. The current selected q=79 arithmetic theorem supplies an exact finite branch, but the physical visible-hidden Hull\u2013Strominger endpoints, the remaining seven rows of the twelve-row worldsheet contract, and an all-scale nonperturbative completion remain open. Program B5 therefore provides a rigorous language and a finite indecomposability test for unified encodings. It does not derive string theory, a numerical critical dimension, or the physical selection of a saturated universe.",
+      "abstract": "We replace an absolute notion of encoding saturation by a typed and testable relative notion. A saturation contract specifies a category of candidate realizations, its equivalences, a complete list of constraints and boundary data, and a class of allowed factorizations. A realization is saturated relative to that contract when it satisfies every declared constraint and admits no nontrivial allowed factorization. Saturation can therefore change when the candidate class, constraint inventory, equivalence, or factorization class changes. For a finite-dimensional local model with declared variable and constraint blocks, we prove that first-order factorization is exactly detected by the connected components of the bipartite derivative-incidence graph. A connected active graph gives infinitesimal indecomposability; together with an injective combined derivative, it gives a locally isolated, infinitesimally indecomposable realization. This is a genuine conditional saturation theorem. The stronger claims in the first version do not follow from saturation alone. We give explicit countermodels showing that a complete, rigid, indecomposable constraint system need not contain extended carriers, a critical dimension, or a nontrivial duality. A one-dimensional carrier is minimal only after one requires a nonconstant continuous loop or nontrivial holonomy. Critical dimensions require an explicit anomaly or central-charge defect. Duality requires an explicit invertible comparison preserving the declared dynamics and observables. String-like and brane-like structures are consequently realization classes, not inevitable consequences of three obstruction labels. We also separate existence, local rigidity, uniqueness within a declared candidate class, physical selection, and empirical adequacy. The current selected q=79 arithmetic theorem supplies an exact finite branch, but the physical visible-hidden Hull–Strominger endpoints, the remaining seven rows of the twelve-row worldsheet contract, and an all-scale nonperturbative completion remain open. Program B5 therefore provides a rigorous language and a finite indecomposability test for unified encodings. It does not derive string theory, a numerical critical dimension, or the physical selection of a saturated universe.",
       "authors": [
         "Peter Nero"
       ],
@@ -11462,7 +11495,7 @@
         "publication_date": "2026-07-29",
         "record_url": "https://zenodo.org/records/21652659",
         "resource_type": "publication",
-        "title": "The Projection\u2013Admissibility Principle Descent, Recovery, and Structural Constraints on Effective Description",
+        "title": "The Projection–Admissibility Principle Descent, Recovery, and Structural Constraints on Effective Description",
         "updated": "2026-07-29T08:52:17.007206+00:00",
         "version": "v2"
       },
@@ -11481,7 +11514,7 @@
         "legacy_source_path": "3 Core Foundations/revised_tex_vnext/The_Projection__Admissibility_Principle__Descent__Recovery__and_Structural_Constraints_v2"
       },
       "source_tree_sha256": "1b9b0012d65df51a63a25227a07ff4891495d66c34c77ca54b9d5e4b9306dc8b",
-      "title": "The Projection\u2013Admissibility Principle Descent, Recovery, and Structural Constraints on Effective Description",
+      "title": "The Projection–Admissibility Principle Descent, Recovery, and Structural Constraints on Effective Description",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -11505,7 +11538,7 @@
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21652659",
           "resource_type": "publication",
-          "title": "The Projection\u2013Admissibility Principle Descent, Recovery, and Structural Constraints on Effective Description",
+          "title": "The Projection–Admissibility Principle Descent, Recovery, and Structural Constraints on Effective Description",
           "updated": "2026-07-29T08:52:17.007206+00:00",
           "version": "v2"
         },
@@ -11530,7 +11563,7 @@
           "publication_date": "2026-01-15",
           "record_url": "https://zenodo.org/records/18255839",
           "resource_type": "publication",
-          "title": "The Projection\u2013Admissibility Principle: Structural Constraints on Effective Physical Description",
+          "title": "The Projection–Admissibility Principle: Structural Constraints on Effective Physical Description",
           "updated": "2026-01-15T11:08:26.085801+00:00",
           "version": "v1.0"
         }
@@ -11770,7 +11803,7 @@
       ]
     },
     {
-      "abstract": "We show that the Connes\u2013Chamseddine spectral action and the associated noncommutative geometric formulation of the Standard Model arise as four-dimensional shadows of coherent fixed-point geometry under projection and truncation in Modal Triplet Theory (MTT). The almost-commutative spectral triple\u2014including its finite algebra, fermionic Hilbert space, and Dirac operator\u2014emerges as an effective encoding of coherent-sector overlap geometry. The cutoff scale and cutoff function of the spectral action are fixed (up to admissible reparametrization) by the coherent spectral gap and spectral proper-time (SPT) damping, eliminating their apparent arbitrariness. Gauge couplings, Yukawa matrices, and Higgs-sector parameters are not independently tunable within a coherent universality class, but are fixed functions of a single bottleneck vector \\Theta that also controls collapse thresholds, spacetime event density, ultraviolet completion, and canonical geometric discreteness in independent shadow constructions. All results are slab-local and admissibility-conditioned.",
+      "abstract": "We show that the Connes–Chamseddine spectral action and the associated noncommutative geometric formulation of the Standard Model arise as four-dimensional shadows of coherent fixed-point geometry under projection and truncation in Modal Triplet Theory (MTT). The almost-commutative spectral triple—including its finite algebra, fermionic Hilbert space, and Dirac operator—emerges as an effective encoding of coherent-sector overlap geometry. The cutoff scale and cutoff function of the spectral action are fixed (up to admissible reparametrization) by the coherent spectral gap and spectral proper-time (SPT) damping, eliminating their apparent arbitrariness. Gauge couplings, Yukawa matrices, and Higgs-sector parameters are not independently tunable within a coherent universality class, but are fixed functions of a single bottleneck vector \\Theta that also controls collapse thresholds, spacetime event density, ultraviolet completion, and canonical geometric discreteness in independent shadow constructions. All results are slab-local and admissibility-conditioned.",
       "authors": [
         "Peter Nero"
       ],
@@ -12083,7 +12116,7 @@
         "publication_date": "2026-07-29",
         "record_url": "https://zenodo.org/records/21666011",
         "resource_type": "publication",
-        "title": "Theta Closure in Modal Triplet Theory III: Conditional Twistor\u2013Action Matching and Normalization Audit",
+        "title": "Theta Closure in Modal Triplet Theory III: Conditional Twistor–Action Matching and Normalization Audit",
         "updated": "2026-07-29T08:52:22.608484+00:00",
         "version": "v2"
       },
@@ -12102,7 +12135,7 @@
         "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_III__Twistor_Action_Matching_and_Independent_Normalization_v2"
       },
       "source_tree_sha256": "b8b809dead31075bb25f0b39ea81a2dabe9db7096dadf164aac4ba702eb3012c",
-      "title": "Theta Closure in Modal Triplet Theory III: Conditional Twistor\u2013Action Matching and Normalization Audit",
+      "title": "Theta Closure in Modal Triplet Theory III: Conditional Twistor–Action Matching and Normalization Audit",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -12126,7 +12159,7 @@
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21666011",
           "resource_type": "publication",
-          "title": "Theta Closure in Modal Triplet Theory III: Conditional Twistor\u2013Action Matching and Normalization Audit",
+          "title": "Theta Closure in Modal Triplet Theory III: Conditional Twistor–Action Matching and Normalization Audit",
           "updated": "2026-07-29T08:52:22.608484+00:00",
           "version": "v2"
         },
@@ -12151,7 +12184,7 @@
           "publication_date": "2026-01-15",
           "record_url": "https://zenodo.org/records/18262098",
           "resource_type": "publication",
-          "title": "Theta Closure in Modal Triplet Theory III: Twistor\u2013Action Matching and Independent Normalization",
+          "title": "Theta Closure in Modal Triplet Theory III: Twistor–Action Matching and Independent Normalization",
           "updated": "2026-01-15T20:41:33.461092+00:00",
           "version": "v1.0"
         }
@@ -12470,7 +12503,7 @@
       ]
     },
     {
-      "abstract": "Topological phases of matter exhibit robustness, quantized response, and protected boundary modes that are not explained by local symmetry breaking or microscopic Hamiltonian details. We present a structural account of topological phases based on coarse\u2013grained projection and global admissibility of local effective descriptions. We show that phases correspond to admissible basins of coarse\u2013grained dynamics, and that topological phases arise precisely when locally well\u2013defined effective descriptions fail to admit a globally consistent completion. Topological invariants appear as obstruction classes of overlap structures, explaining quantization and robustness. Bulk\u2013boundary correspondence follows inevitably: boundary modes arise as compensating degrees of freedom required to restore local consistency at interfaces. The framework applies equally to interacting and disordered systems with a spectral gap or mobility gap and does not rely on band topology or free\u2013fermion assumptions.",
+      "abstract": "Topological phases of matter exhibit robustness, quantized response, and protected boundary modes that are not explained by local symmetry breaking or microscopic Hamiltonian details. We present a structural account of topological phases based on coarse–grained projection and global admissibility of local effective descriptions. We show that phases correspond to admissible basins of coarse–grained dynamics, and that topological phases arise precisely when locally well–defined effective descriptions fail to admit a globally consistent completion. Topological invariants appear as obstruction classes of overlap structures, explaining quantization and robustness. Bulk–boundary correspondence follows inevitably: boundary modes arise as compensating degrees of freedom required to restore local consistency at interfaces. The framework applies equally to interacting and disordered systems with a spectral gap or mobility gap and does not rely on band topology or free–fermion assumptions.",
       "authors": [
         "Peter Nero"
       ],
@@ -12515,7 +12548,7 @@
         "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/Topological_Phases_of_Matter_as_Admissible_Overlap_Structures"
       },
       "source_tree_sha256": "3b91fc45247971aae64cf7ce526a2766df8590a469e6f84ee626e4c0d10b3590",
-      "title": "Topological Phases of Matter as Admissible Overlap Structures A projection\u2013based account of robustness and bulk\u2013boundary correspondence",
+      "title": "Topological Phases of Matter as Admissible Overlap Structures A projection–based account of robustness and bulk–boundary correspondence",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -12546,7 +12579,7 @@
       ]
     },
     {
-      "abstract": "We derive a Tier\u20131 layer of predictions in Modal Triplet Theory (MTT) using topology and admissibility alone, without invoking renormalization group flow, collapse dynamics, or spectral actions. Matter fields are modeled as globally admissible sections of overlap bundles formed from three internal bundles. This immediately quantizes hypercharge on a discrete lattice determined by integral cohomology, forbids anomalous representations as topological obstructions in determinant line bundles, and excludes broad classes of baryon- and lepton-number violating operators (including leading proton decay operators) as globally inadmissible bundle products. We also obtain topological constraints on neutrino mass terms: Majorana masses require a global real structure on the relevant overlap bundle. These results supply early falsifiability criteria independent of Planck-scale dynamics. All statements are slab-local and admissibility-conditioned, but require no dynamics beyond global definability of overlap sections.",
+      "abstract": "We derive a Tier–1 layer of predictions in Modal Triplet Theory (MTT) using topology and admissibility alone, without invoking renormalization group flow, collapse dynamics, or spectral actions. Matter fields are modeled as globally admissible sections of overlap bundles formed from three internal bundles. This immediately quantizes hypercharge on a discrete lattice determined by integral cohomology, forbids anomalous representations as topological obstructions in determinant line bundles, and excludes broad classes of baryon- and lepton-number violating operators (including leading proton decay operators) as globally inadmissible bundle products. We also obtain topological constraints on neutrino mass terms: Majorana masses require a global real structure on the relevant overlap bundle. These results supply early falsifiability criteria independent of Planck-scale dynamics. All statements are slab-local and admissibility-conditioned, but require no dynamics beyond global definability of overlap sections.",
       "authors": [
         "Peter Nero"
       ],
@@ -12622,7 +12655,7 @@
       ]
     },
     {
-      "abstract": "Penrose twistor theory provides a powerful holomorphic encoding of massless, self-dual, and conformally invariant sectors of four-dimensional field theories, yet has long resisted interpretation as a fundamental description of nature. In this paper we show that twistor theory arises naturally as an effective encoding of a distinguished high-coherence regime of Modal Triplet Theory (MTT). Using the coherent-sector projection, spectral-gap control, and controlled truncation framework of MTT, we define a precise twistor corner in which twistor methods are valid, explain their efficiency and limitations, and derive a sharp criterion for their breakdown. Technically, we identify the twistor corner as the regime in which noncoherent modes are suppressed, mass-generation effects are negligible, scale variation is slow, and the coherent gauge or gravitational sector is near self-dual. We prove that in this regime the coherent dynamics admits a Schur\u2013Feshbach reduced generator whose correction term is suppressed by the inverse spectral gap. Twistor encoding is valid precisely while this controlled truncation correction remains below an admissibility threshold. When the gap collapses or coherent\u2013noncoherent mixing grows beyond threshold, the induced evolution on coherent data becomes kernel-valued, signaling a genuine MTT selection event and forcing re-projection into a new admissible basin. This work situates twistor theory within a broader theory of coherence, selection, and irreversibility, explaining both its remarkable successes and its intrinsic domain of validity.",
+      "abstract": "Penrose twistor theory provides a powerful holomorphic encoding of massless, self-dual, and conformally invariant sectors of four-dimensional field theories, yet has long resisted interpretation as a fundamental description of nature. In this paper we show that twistor theory arises naturally as an effective encoding of a distinguished high-coherence regime of Modal Triplet Theory (MTT). Using the coherent-sector projection, spectral-gap control, and controlled truncation framework of MTT, we define a precise twistor corner in which twistor methods are valid, explain their efficiency and limitations, and derive a sharp criterion for their breakdown. Technically, we identify the twistor corner as the regime in which noncoherent modes are suppressed, mass-generation effects are negligible, scale variation is slow, and the coherent gauge or gravitational sector is near self-dual. We prove that in this regime the coherent dynamics admits a Schur–Feshbach reduced generator whose correction term is suppressed by the inverse spectral gap. Twistor encoding is valid precisely while this controlled truncation correction remains below an admissibility threshold. When the gap collapses or coherent–noncoherent mixing grows beyond threshold, the induced evolution on coherent data becomes kernel-valued, signaling a genuine MTT selection event and forcing re-projection into a new admissible basin. This work situates twistor theory within a broader theory of coherence, selection, and irreversibility, explaining both its remarkable successes and its intrinsic domain of validity.",
       "authors": [],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
@@ -12696,7 +12729,7 @@
       ]
     },
     {
-      "abstract": "A persistent criticism of higher-dimensional and string-inspired frameworks is that their physical predictions depend on finely tuned geometric choices and therefore inherit a large vacuum degeneracy (the landscape). In this paper we show that this criticism does not apply to Modal Triplet Theory (MTT). Building on the Fixed Points series, the Fundamental Contractivity Condition (FCC), the RG\u2013FCC stability theorem, Constructive MTT\u2013QG I\u2013III, and the string/M-theory bridge papers, we prove that the existence, stability, and physical relevance of the coherent sector are universal within a broad class of geometric and spectral models. Calabi\u2013Yau compactifications, heterotic flux vacua (including Strominger systems), and M-theory backgrounds arise as controlled sublimits of the same coherent universality class, while the vast majority of nominal string vacua are excluded by coherence admissibility. This establishes that MTT predictions depend only on the coherent universality class and that the string landscape is reduced to a sharply constrained admissible set.",
+      "abstract": "A persistent criticism of higher-dimensional and string-inspired frameworks is that their physical predictions depend on finely tuned geometric choices and therefore inherit a large vacuum degeneracy (the landscape). In this paper we show that this criticism does not apply to Modal Triplet Theory (MTT). Building on the Fixed Points series, the Fundamental Contractivity Condition (FCC), the RG–FCC stability theorem, Constructive MTT–QG I–III, and the string/M-theory bridge papers, we prove that the existence, stability, and physical relevance of the coherent sector are universal within a broad class of geometric and spectral models. Calabi–Yau compactifications, heterotic flux vacua (including Strominger systems), and M-theory backgrounds arise as controlled sublimits of the same coherent universality class, while the vast majority of nominal string vacua are excluded by coherence admissibility. This establishes that MTT predictions depend only on the coherent universality class and that the string landscape is reduced to a sharply constrained admissible set.",
       "authors": [
         "Peter Nero"
       ],
@@ -12772,7 +12805,7 @@
       ]
     },
     {
-      "abstract": "Despite decades of progress in quantum gravity, string theory, cosmology, and effective field theory, no consensus has emerged on how to select a unique or sharply constrained vacuum describing observed physics. This persistent difficulty is commonly framed as a problem of combinatorics, statistics, or anthropic weighting over a large landscape of vacua. In this work we argue that the difficulty may instead reflect a mis-posed question: the assumption that physics is defined throughout configuration space. We observe that core physical notions\u2014Hilbert spaces, probability, effective field theory, and renormalization group flow\u2014already presuppose stability, boundedness, and spectral separation, none of which are guaranteed globally. As a consequence, selection cannot meaningfully act pointwise on vacua but must instead operate on admissible regions defined by dynamical and spectral inequalities. These regions need not be connected or accessible by continuous deformation, rendering standard landscape searches ineffective by construction. The goal of this paper is not to propose a new fundamental theory, but to clarify the conceptual structure underlying vacuum selection and to explain why existing approaches have struggled to converge.",
+      "abstract": "Despite decades of progress in quantum gravity, string theory, cosmology, and effective field theory, no consensus has emerged on how to select a unique or sharply constrained vacuum describing observed physics. This persistent difficulty is commonly framed as a problem of combinatorics, statistics, or anthropic weighting over a large landscape of vacua. In this work we argue that the difficulty may instead reflect a mis-posed question: the assumption that physics is defined throughout configuration space. We observe that core physical notions—Hilbert spaces, probability, effective field theory, and renormalization group flow—already presuppose stability, boundedness, and spectral separation, none of which are guaranteed globally. As a consequence, selection cannot meaningfully act pointwise on vacua but must instead operate on admissible regions defined by dynamical and spectral inequalities. These regions need not be connected or accessible by continuous deformation, rendering standard landscape searches ineffective by construction. The goal of this paper is not to propose a new fundamental theory, but to clarify the conceptual structure underlying vacuum selection and to explain why existing approaches have struggled to converge.",
       "authors": [
         "Peter Nero"
       ],
@@ -13022,7 +13055,7 @@
         "legacy_source_path": "11 General Relativity & Geometry/_work/Why_General_Relativity_and_String_Theory_Are_the_Same_Admissibility_Constraint"
       },
       "source_tree_sha256": "649c06a7ba26a6403b9fc76a9a6f0bb99880a58ff2f34f3dafd4a34589f4d565",
-      "title": "Why General Relativity and String Theory Are the Same Admissibility Constraint A Technical Shadow\u2013Bridge Between IR Geometry and Worldsheet RG in Modal Triplet Theory",
+      "title": "Why General Relativity and String Theory Are the Same Admissibility Constraint A Technical Shadow–Bridge Between IR Geometry and Worldsheet RG in Modal Triplet Theory",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
         {
@@ -13053,7 +13086,7 @@
       ]
     },
     {
-      "abstract": "In perturbative string theory, the requirement of quantum Weyl invariance of the worldsheet sigma model yields vanishing beta functions whose leading-order content reproduces the Einstein field equations for the target-space metric, together with equations for additional background fields and higher-curvature corrections. In Modal Triplet Theory (MTT), an independent line of analysis shows that coherent-sector admissibility and stability under coarse-graining select Einstein\u2013Hilbert dynamics as the unique infrared effective description, again with controlled higher-curvature corrections governed by a spectral gap \\lambda_\\ast. In this work we establish, under explicit encoding and scheme-equivalence hypotheses, that these two consistency conditions are equivalent shadows of a single upstairs admissibility constraint. We define the string corner as the regime in which coherent overlap data admit a two-dimensional sigma-model encoding, and we show that coherent admissibility is equivalent, up to controlled truncation error \\mathcal{O}(\\lambda_\\ast^{-1}), to the existence of a worldsheet renormalization-group fixed point, which is in turn equivalent to satisfaction of the infrared Einstein equations with suppressed corrections. General Relativity and perturbative string theory are thus shown to be dual diagnostics of the same coherent fixed-point condition, rather than one being derived from the other.",
+      "abstract": "In perturbative string theory, the requirement of quantum Weyl invariance of the worldsheet sigma model yields vanishing beta functions whose leading-order content reproduces the Einstein field equations for the target-space metric, together with equations for additional background fields and higher-curvature corrections. In Modal Triplet Theory (MTT), an independent line of analysis shows that coherent-sector admissibility and stability under coarse-graining select Einstein–Hilbert dynamics as the unique infrared effective description, again with controlled higher-curvature corrections governed by a spectral gap \\lambda_\\ast. In this work we establish, under explicit encoding and scheme-equivalence hypotheses, that these two consistency conditions are equivalent shadows of a single upstairs admissibility constraint. We define the string corner as the regime in which coherent overlap data admit a two-dimensional sigma-model encoding, and we show that coherent admissibility is equivalent, up to controlled truncation error \\mathcal{O}(\\lambda_\\ast^{-1}), to the existence of a worldsheet renormalization-group fixed point, which is in turn equivalent to satisfaction of the infrared Einstein equations with suppressed corrections. General Relativity and perturbative string theory are thus shown to be dual diagnostics of the same coherent fixed-point condition, rather than one being derived from the other.",
       "authors": [
         "Peter Nero"
       ],
@@ -13129,7 +13162,7 @@
       ]
     },
     {
-      "abstract": "We give the precise mathematical content of the world-in-world proposal and separate it from its physical interpretation. The central object is a comparison field between two oriented rank-three bundles. Its nine local components split, at a nonsingular background, into three orientation and six strain directions. A selected flag resolves the strain sector into scalar, diagonal-shape, and shear sectors of dimensions 1+2+3. Thus one ordering coordinate plus a three-by-three comparison field decomposes as four outer and six internal components. This is an exact component identity, not ordinary manifold-dimension multiplication, and it does not derive a ten-dimensional spacetime, Lorentzian signature, gravity, matter, or quantization. We state the missing globalization theorem to the selected q79 Fu\u2013Yau carrier, distinguish the shared phase circle from physical time, and formulate the additional gates needed for each proposed physical emergence. The resulting paper is a rigorous local geometry theorem plus a falsifiable research program.",
+      "abstract": "We give the precise mathematical content of the world-in-world proposal and separate it from its physical interpretation. The central object is a comparison field between two oriented rank-three bundles. Its nine local components split, at a nonsingular background, into three orientation and six strain directions. A selected flag resolves the strain sector into scalar, diagonal-shape, and shear sectors of dimensions 1+2+3. Thus one ordering coordinate plus a three-by-three comparison field decomposes as four outer and six internal components. This is an exact component identity, not ordinary manifold-dimension multiplication, and it does not derive a ten-dimensional spacetime, Lorentzian signature, gravity, matter, or quantization. We state the missing globalization theorem to the selected q79 Fu–Yau carrier, distinguish the shared phase circle from physical time, and formulate the additional gates needed for each proposed physical emergence. The resulting paper is a rigorous local geometry theorem plus a falsifiable research program.",
       "authors": [
         "Peter Nero"
       ],
