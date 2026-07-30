@@ -1,894 +1,641 @@
 ---
 abstract: |
-  We give a complete, first–principles derivation of nonrelativistic quantum mechanics from Modal Triplet Theory. Starting with the 10D tri–bundle geometry and the fixed–point (coherent) sector, we construct the observable map $`\mathsf{P}=I\circ\Pi`$, the reduced symplectic/Hilbert structure, and—crucially—the *self–adjoint* reduced Hamiltonian $`H_{\mathrm{obs}}`$ via closed, semibounded *quadratic forms* (KLMN/Friedrichs). Unitary dynamics $`U(t)=e^{-itH_{\mathrm{obs}}/\hbar}`$ then follow by Stone’s theorem. A *constructive reconstruction theorem* shows that for a broad Kato–Rellich class, any Schrödinger operator $`H_{\mathrm{target}}=-\frac{\hbar^2}{2m}\Delta+V(x)`$ is realized exactly as $`H_{\mathrm{obs}}`$ by suitable (fixed) MTT background/boundary data. Measurement, the Born rule, and POVMs are obtained without postulates: modal re–coherence defines exponential weights; a functional–equation argument plus Gleason–Busch yields the unique probability law $`\mu_\psi(P)=\langle\psi,P\psi\rangle`$; POVMs arise from a Naimark/Stinespring dilation realized within the coherent modal sector. We treat time–dependent $`H_{\mathrm{obs}}(t)`$ (Kato propagators), uncertainty (via spectral theory for compressed generators), stationary–phase correspondence to the Feynman kernel, and open systems (Lindblad) via a weak–coupling limit of modal disturbances. The result is a self–contained, referee–proof derivation of QM from Modal Triplet Theory, with no hand–waving and with every operator–theoretic step made precise.
+  This paper asks what Modal Triplet Theory (MTT) presently establishes about nonrelativistic quantum mechanics. We separate four questions that are often conflated: whether MTT can encode a quantum model, whether a coherent sector reconstructs its Hilbert-space dynamics, whether one selected MTT source emits the required operators and instruments, and whether the probability law is derived for every apparatus. A complete quantum-mechanical record is defined, including the complex Hilbert space, state cone, operator algebra, self-adjoint Hamiltonian and domain, unitary evolution, clock convention, composition rule, effects, instruments, and source certificates. The main theorem is conditional: if one selected upper MTT state emits this record and the evaluation diagram commutes, then MTT reconstructs the corresponding quantum theory on the declared domain. Projection alone does not create a complex structure, noncommutative observable algebra, self-adjoint Hamiltonian, tensor product, or probability law. We give sufficient closed-form and reducing-subspace conditions for an exact coherent-sector Hamiltonian, and we show why reproducing an arbitrarily supplied Schrodinger potential is an expressiveness result rather than a prediction. Time is treated as an evolution or clock parameter; the valid Mandelstam–Tamm relation replaces the former unsupported universal self-adjoint time operator. Gleason- and Busch-type theorems characterize probability assignments after Hilbert/effect structure and additivity are assumed; they do not source those assignments. A stronger positive result is available on one selected domain: the canonical $`q=79`$ binary one-anchor recorder gives an exact stopped output measure and second-moment Born descent on its commuting Fock output algebra, with no fitted probability or additional classical noise. General apparatus contexts, finite-bandwidth and non-Markov control, pre-quantum probability semantics, and objective single-history selection remain open. The result is therefore a rigorous coherent-sector reconstruction with one exact selected measurement domain, not a complete first-principles derivation of all quantum mechanics.
 author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v3
-date: January, 2026
-generated_from_main_tex_sha256: 3a6fad37855b33e4d47b87d5116b0fde4deb851fee09568f15c1c7d06137730c
+current_version: v4
+date: Version 4, July 2026
+generated_from_main_tex_sha256: 582ba1b90adaf594fcf10271b41d0f0bfc2ab6f2c03490747e233b549d626cb2
 paper_id: modal-triplet-theory-from-mtt-to-quantum-mechanics
 release_state: zenodo_released
-released_version: v3.0
-title: "Modal Triplet Theory: From MTT to Quantum Mechanics"
-zenodo_doi: 10.5281/zenodo.18261329
-zenodo_record_id: 18261329
-zenodo_url: "https://zenodo.org/records/18261329"
+released_version: v4
+title: |
+  Modal Triplet Theory and Nonrelativistic Quantum Mechanics:
+  A Coherent-Sector Reconstruction and the Born-Source Boundary
+zenodo_doi: 10.5281/zenodo.21708961
+zenodo_record_id: 21708961
+zenodo_url: "https://zenodo.org/records/21708961"
 ---
 
-# Introduction and scope
-
-Modal Triplet Theory posits a $`10`$-dimensional product geometry $`M_{10}=Y^4\times B_1\times B_2\times B_3`$ with a tri–bundle internal structure and a bounded, *joint* harmonic projector $`\Pi=\Pi_{B_1}\Pi_{B_2}\Pi_{B_3}`$. The fixed–point theory on the coherent sector $`\mathcal{H}_{\text{coh}}=\mathrm{Ran}\Pi`$ furnishes existence/uniqueness, stability (damping balance), and a curvature–gap law for internal spectra. This paper shows, in detail, how standard nonrelativistic QM in $`3{+}1`$ dimensions emerges *rigorously* from these ingredients.
-
-We begin by constructing the observable map $`\mathsf{P} = I\circ\Pi`$ (internal pushforward $`I`$ after joint harmonic projection), then build the reduced symplectic form and Hilbert space $`\mathcal{H}_{\mathrm{QM}}`$. Instead of naively compressing the $`10`$D Hamiltonian, we define the reduced Hamiltonian via a closed, semibounded *quadratic form* $`q_{\rm obs}[\psi]=\langle \mathcal{P}^{\dagger}\psi,H_{10}\mathcal{P}^{\dagger}\psi\rangle`$; Friedrichs’ representation gives a unique *self–adjoint* $`H_{\rm obs}`$. Unitary dynamics follow by Stone’s theorem. We then prove a *constructive reconstruction theorem*: for a wide class $`H_{\rm target}=-\frac{\hbar^2}{2m}\Delta+V`$, one can choose smooth MTT data so that $`H_{\rm obs}=H_{\rm target}`$ as operators. The measurement section derives the Born rule from modal re–coherence (exponential weights) plus a uniqueness argument and Gleason–Busch; POVMs come from a concrete MTT dilation (apparatus modes). Finally, we address time dependence, uncertainty, stationary–phase/path integral, and open systems.
-
-Throughout, all functional–analytic statements are given with precise hypotheses and standard theorems cited; no steps are left informal.
-
-<div class="remark">
-
-**Remark 1** (Scope of the Schrödinger evolution). *The Schrödinger equation derived here governs coherent-sector evolution *within a fixed admissible basin*. It provides an exact effective description between selection events, but it is not intended to describe basin-boundary transitions, loss of admissibility, or stabilization after capture into a new basin. Those processes involve noninvertible projection and are treated separately in the theory of selection dynamics.*
-
-</div>
-
-# Framework, hypotheses, and notation
-
-We work on the $`10`$D manifold $`M_{10}=Y^4\times B_1\times B_2\times B_3`$ with metric
-``` math
-\begin{equation}
-g^{(10)}=g^{(4)}\oplus h^{(1)}\oplus h^{(2)}\oplus h^{(3)},
-\end{equation}
-```
-allowing base–only warping in the internal factors (bounded geometry). Let $`E\to M_{10}`$ be the total field bundle (including spin structures as needed). The vertical Laplacians $`\Delta_{B_n}`$ act on the appropriate internal sections.
+# Revision note: Version 4
 
 <div class="description">
 
-Each $`B_n`$ is compact with $`\lambda_n:=\inf\big(\mathrm{Spec}(\Delta_{B_n})\setminus\{0\}\big)>0`$.
+Version 4 supersedes Version 3 and its claims of a complete first-principles derivation of quantum mechanics, a universal MTT derivation of the Born rule, and automatic realization of arbitrary Schrodinger dynamics from the former ten-dimensional tri-product geometry.
 
-The orthogonal harmonic projector $`\Pi_{B_n}:L^2(B_n)\to\ker\Delta_{B_n}`$ is bounded on $`H^1(B_n)`$; the *joint* projector $`\Pi:=\Pi_{B_1}\Pi_{B_2}\Pi_{B_3}`$ is bounded on $`H^1(E)`$.
+The former paper combined valid standard operator theory with unsupported source claims. It did not distinguish an assumed complex Hilbert space from one derived by projection, treated bounded pullback as sufficient for closedness of an unbounded quadratic form, and reproduced an arbitrary target potential by inserting that same potential upstairs. It also used a self-adjoint time operator without establishing one, treated Gleason-type probability characterization as a physical source theorem, and inferred general POVMs, entanglement, and Lindblad dynamics from projection alone. The literal three-factor internal product used there is no longer the canonical MTT geometry.
 
-The projected modal flow $`F:=\Pi\circ\Phi_\tau`$ has a unique globally attracting fixed point in $`\mathcal{H}_{\text{coh}}=\mathrm{Ran}\Pi`$; stability persists under bounded disturbances (damping balance).
+This revision defines the complete lower quantum record and a typed, conditional reconstruction theorem. It states explicit hypotheses for complex, symplectic, self-adjoint, unitary, clock, composition, and instrument structures; separates exact compression from approximate elimination; replaces the time-operator claim by operational clock and Mandelstam–Tamm statements; and separates Gleason–Busch characterization from probability sourcing. Standard mathematical theorems retain their literature ownership.
 
-Background fields are smooth enough for Sobolev embeddings and spectral calculus; we work in finite–energy sectors of $`H_{10}`$.
+Closed semibounded forms remain an appropriate route to self-adjoint Hamiltonians once their domains and closedness are proved. Stone’s theorem then supplies unitary evolution. Target-form matching remains a useful exact representation test. Quantum instruments, dilations, tensor products, semiclassical kernels, and weak-coupling master equations remain valid lower-level tools under their standard hypotheses. The canonical $`q=79`$ binary recorder adds a selected exact output-measure result on its declared domain.
+
+The universal Born-source blocker remains open. The current exact result covers one selected binary $`P/Q`$ counting context with standard normal-state operational semantics. It does not yet cover arbitrary preparations and apparatuses, finite-bandwidth or non-Markov detectors, pre-quantum probability semantics, or selection of one uniquely actual history.
 
 </div>
 
-#### Observable map and notation.
+# The question in its correct order
 
-Let the internal pushforward $`I:L^2(M_{10})\to L^2(Y^4)`$ be normalized fibre integration,
+Nonrelativistic quantum mechanics is not one equation. It is a coordinated mathematical structure. A state belongs to a complex Hilbert space or a density-operator cone; observables are represented by a generally noncommutative operator algebra; dynamics is generated by a self-adjoint Hamiltonian; composition uses a tensor product; and experiments are described by effects or instruments. These pieces constrain one another, but no one of them is identical to the others .
+
+MTT begins with an upper state, admissibility conditions, reduction maps, and coherent or fixed sectors . It is therefore natural to ask whether a coherent sector can carry quantum mechanics. Four logically distinct questions must be kept apart:
+
+1.  *Encoding.* Can a chosen quantum model be represented inside an MTT carrier?
+
+2.  *Reconstruction.* If the required lower data are present, does MTT evaluation reproduce the same states, dynamics, and experiments?
+
+3.  *Selection.* Does one selected MTT source emit those lower data without inserting the target theory by hand?
+
+4.  *Universality.* Does the same source construction cover every allowed preparation, apparatus context, and limiting regime?
+
+An exact answer to the first question can coexist with an open answer to the third. This is what happens when an arbitrary potential $`V`$ is placed upstairs and then recovered downstairs: the construction proves expressive capacity, not why nature selected $`V`$. Conversely, a selected result on one detector context is genuine source progress even when the universal apparatus theorem remains open.
+
+The paper’s positive claims occupy two levels. The general theory is a conditional reconstruction. In addition, one selected $`q=79`$ recorder supplies an exact finite-domain probability and capture result. Nothing below promotes that recorder into a universal derivation.
+
+# The complete quantum record
+
+It is useful to say explicitly what must be supplied before a lower quantum theory exists. This prevents a projector, a spectrum, or a formal Schrodinger equation from silently standing in for the entire theory.
+
+<div id="def:record" class="definition">
+
+**Definition 1** (Nonrelativistic quantum record). A nonrelativistic quantum record is a tuple
 ``` math
-(If)(y)=\frac{1}{\mathrm{Vol}(B_1)\mathrm{Vol}(B_2)\mathrm{Vol}(B_3)}
-\int_{B_1\times B_2\times B_3}\! f(y,b)\,\mathrm{d}\mu_{B_1}\mathrm{d}\mu_{B_2}\mathrm{d}\mu_{B_3}.
+\mathcal R_{\mathrm{QM}}
+=
+\bigl(
+\mathcal H,\mathcal S,\mathcal A,\mathcal D,H,\hbar,U,\mathcal T,\mathcal E,\mathcal I,\boxtimes,\mathcal L,\mathcal X
+\bigr)
 ```
+with the following typed rows.
 
-Define the observable map
+1.  $`\mathcal H`$ is a complex separable Hilbert space.
+
+2.  $`\mathcal S`$ is a declared state space, for example the positive trace-class operators $`\rho`$ with $`\operatorname{Tr}\rho=1`$.
+
+3.  $`\mathcal A`$ is a unital $`C^*`$- or von Neumann observable algebra represented on $`\mathcal H`$; unbounded observables are supplied with domains and affiliation data.
+
+4.  $`\mathcal D\subset\mathcal H`$ is the dense form or operator domain needed below, and $`H`$ is a self-adjoint Hamiltonian, normally bounded below.
+
+5.  $`\hbar>0`$ is the action normalization and $`U(t)=\exp(-itH/\hbar)`$ is the strongly continuous unitary evolution.
+
+6.  $`\mathcal T`$ declares how time is used: as an external evolution parameter, as readings of a physical clock, or through a specified covariant clock POVM.
+
+7.  $`\mathcal E`$ contains the effects or POVMs used by the allowed experiments, while $`\mathcal I`$ contains their completely positive instruments and record spaces.
+
+8.  $`\boxtimes`$ is the composition rule, ordinarily $`\mathcal H_{AB}=\mathcal H_A\otimes\mathcal H_B`$, together with the corresponding local algebras.
+
+9.  $`\mathcal L`$ records locality, symmetry, superselection, and boundary conditions appropriate to the model.
+
+10. $`\mathcal X`$ contains source and error certificates: which rows are selected by MTT, which are imported lower data, the domain on which the comparison is exact, and any residual or approximation bound.
+
+</div>
+
+The record is deliberately larger than $`(\mathcal H,H)`$. A Hamiltonian does not specify which instruments exist. A POVM does not specify the post-record state change. A real inner-product space does not yet specify multiplication by $`i`$. A tensor-product notation does not prove that the MTT source map respects subsystem locality.
+
+Let $`\mathcal U_{\mathrm{adm}}`$ be the declared upper MTT domain. A partial source map
 ``` math
-\mathcal{P}:= I \circ \Pi \;:\; L^{2}(M_{10},E)\;\longrightarrow\;L^{2}(Y^{4},E).
+\mathcal S_{\mathrm{QM}}\colon
+\mathcal U_{\mathrm{adm}}\dashrightarrow
+\{\text{quantum records}\}
 ```
-We reserve $`P`$ exclusively for orthogonal projections on $`\mathcal{H}_{\mathrm{QM}}`$; the observable map is denoted $`\mathcal{P}`$ throughout to avoid any notational collision.
+is allowed to be undefined when one or more rows cannot be emitted. This is preferable to filling a missing row with the desired lower object and calling the result a derivation.
 
-<div id="lem:I-Pi-bounded" class="lemma">
+# Conditional coherent-sector reconstruction
 
-**Lemma 2** (Contraction/Boundedness). *$`I`$ is a contraction on $`L^{2}`$, and $`\Pi`$ is bounded on $`H^{1}`$. Hence $`\mathcal{P}`$ is bounded on $`H^{1}`$ and on $`L^{2}`$.*
+Suppose an upper MTT state $`z`$ has a coherent sector $`\mathcal H_{\mathrm{coh}}(z)`$, and let
+``` math
+\mathcal P_z\colon\mathcal H_{\mathrm{up}}(z)\longrightarrow
+\mathcal H_{\mathrm{coh}}(z)
+```
+be its orthogonal coherent projector. The notation alone says only that $`\mathcal P_z^2=\mathcal P_z=\mathcal P_z^*`$. It does not say that the coherent range is complex, invariant under an upper Hamiltonian, closed under a chosen observable algebra, or equipped with a probability interpretation.
+
+Let $`\operatorname{Eval}_{\mathrm{MTT}}(z,C)`$ denote the MTT prediction for an allowed preparation-and-apparatus context $`C`$. Let $`\operatorname{Eval}_{\mathrm{QM}}(\mathcal R,C)`$ denote the standard quantum evaluation of the record in <a href="#def:record" data-reference-type="ref+label" data-reference="def:record">1</a>.
+
+<div id="thm:conditional" class="theorem">
+
+**Theorem 2** (Conditional MTT–QM reconstruction). *Fix an upper state $`z\in\mathcal U_{\mathrm{adm}}`$ and a declared family $`\mathfrak C_z`$ of contexts. Assume:*
+
+1.  *$`\mathcal S_{\mathrm{QM}}(z)=\mathcal R_{\mathrm{QM}}(z)`$ is defined and every row of <a href="#def:record" data-reference-type="ref+label" data-reference="def:record">1</a> needed by $`\mathfrak C_z`$ is present;*
+
+2.  *the Hilbert identification $`J_z\colon\mathcal H_{\mathrm{coh}}(z)\to\mathcal H`$ is unitary and intertwines the declared state and observable maps;*
+
+3.  *coherent evolution is exact, or carries a stated error:
+    ``` math
+    J_z\mathcal P_zU_{\mathrm{up}}(t)\iota_z
+          =
+          U(t)J_z+\mathcal E_t,
+          \qquad \|\mathcal E_t\|\leq\varepsilon_t;
+    ```*
+
+4.  *every allowed upper instrument descends to the corresponding lower instrument, again exactly or with a declared norm bound; and*
+
+5.  *MTT evaluation factors through the lower record:
+    ``` math
+    \operatorname{Eval}_{\mathrm{MTT}}(z,C)
+          =
+          \operatorname{Eval}_{\mathrm{QM}}
+          \bigl(\mathcal R_{\mathrm{QM}}(z),C\bigr)+r_C
+    ```
+    with $`|r_C|\leq\delta_C`$.*
+
+*Then MTT reconstructs the quantum model $`\mathcal R_{\mathrm{QM}}(z)`$ on $`\mathfrak C_z`$, exactly when $`\varepsilon_t=\delta_C=0`$, and with the displayed control otherwise.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* By Cauchy–Schwarz on the fibre and Fubini, $`\|If\|_{L^2(Y)}\le \|f\|_{L^2(M_{10})}`$. Boundedness of $`\Pi`$ on $`H^1`$ follows from elliptic regularity on compact $`B_n`$ and the commutation of vertical harmonic projection with base derivatives in the product/warped product setting. ◻
+*Proof.* The source map supplies a well-typed lower record by (R1). Conditions (R2) and (R3) transport states, observables, and dynamics to the lower Hilbert space. Condition (R4) transports the operational contexts, including their record probabilities and conditional states. Substitution into (R5) gives the asserted equality or error bound for every context in $`\mathfrak C_z`$. No claim outside that context family follows. ◻
 
 </div>
 
-#### Coherent sector and observable Hilbert space.
+The theorem is intentionally simple. Its value is diagnostic. It turns the phrase “MTT gives quantum mechanics” into a finite list of diagrams that can succeed or fail separately. It also distinguishes a theorem of reconstruction from a theorem that selects the record’s numerical or operator entries.
 
-The coherent sector is $`H_{\mathrm{coh}}=\mathrm{Ran}\,\Pi\subset H^{1}(E)`$. We define the observable configuration space $`H_{\mathrm{obs}} := \mathrm{Ran}\,\mathcal{P}`$ and its $`L^{2}`$-completion $`\mathcal{H}_{\mathrm{QM}}:= \overline{H_{\mathrm{obs}}}^{\,L^{2}(Y)}`$.
+# Complex, symplectic, and noncommutative structure
 
-# Reduced symplectic/Hilbert structure and the Hamiltonian via quadratic forms
-
-The $`10`$D action induces a covariant symplectic form $`\Omega_{10}`$ on a Cauchy slice $`\Sigma_9\subset M_{10}`$. The observable symplectic form is the pullback
+A complex Hilbert space can be viewed as a real Hilbert space equipped with a compatible complex structure. If $`g`$ is a real inner product and $`J^2=-\operatorname{Id}`$ with $`J`$ orthogonal, then
 ``` math
-\begin{equation}
-\Omega_{\rm obs}((u,v),(u',v')):=\Omega_{10}\big((\Pi u,\Pi v),(\Pi u',\Pi v')\big),
-\end{equation}
+\omega(x,y)=g(Jx,y)
 ```
-well-defined on $`\mathcal{H}_{\text{coh}}`$ and independent of internal coordinates after $`I`$; positivity then yields a complex pre-Hilbert structure on $`\mathcal{H}_{\mathrm{obs}}`$, whose $`L^2`$ completion is $`\mathcal{H}_{\mathrm{QM}}`$.
+is symplectic, and $`g`$, $`J`$, and $`\omega`$ determine the corresponding complex inner product after a sign convention is fixed. Conversely, on a complex Hilbert space, multiplication by $`i`$ supplies $`J`$, while the real and imaginary parts of the inner product supply $`g`$ and $`\omega`$.
 
-## Quadratic-form construction of $`H_{\rm obs}`$
+This equivalence explains why Hilbert and symplectic descriptions can agree. It does not explain where $`J`$ comes from. A real orthogonal projector $`P`$ has eigenvalues $`0`$ and $`1`$; by itself it does not define an operator squaring to $`-\operatorname{Id}`$. A selected MTT source must therefore emit a complex line, root-plane complex structure, polarization, or equivalent datum and prove that it descends to the same coherent sector.
 
-Let $`H_{10}`$ be the self–adjoint $`10`$D Hamiltonian on $`L^2(M_{10},E)`$ with lower bound $`H_{10}\ge c\,\mathbf{1}`$ on its form domain $`\mathcal{Q}(H_{10})`$. Define the quadratic form (see Kato  or Reed–Simon  for background on closed, semibounded forms) on $`\mathcal{H}_{\mathrm{obs}}`$ by
-
+The same caution applies to noncommutativity. Compression of an already noncommutative algebra can preserve noncommutativity, but projection alone does not generate the canonical commutation relations. If $`\mathcal A_{\mathrm{up}}\subset\mathcal B(\mathcal H_{\mathrm{up}})`$, the compressed operators
 ``` math
-\begin{equation}
-\label{eq:qobs}
-q_{\mathrm{obs}}[\psi] \;:=\; \big\langle \mathcal{P}^{\dagger}\psi,\, H_{10}\,\mathcal{P}^{\dagger}\psi \big\rangle_{L^{2}(M_{10})},
+A_{\mathrm{coh}}=\mathcal PA\mathcal P\big|_{\operatorname{Ran}\mathcal P}
+```
+need not even form an algebra, because
+``` math
+(\mathcal PA\mathcal P)(\mathcal PB\mathcal P)
+\neq
+\mathcal PAB\mathcal P
+```
+unless suitable invariance conditions hold. The observable-algebra row in <a href="#def:record" data-reference-type="ref+label" data-reference="def:record">1</a> is therefore an independent obligation, not a consequence of the word “coherent.”
+
+# Hamiltonians from forms and exact compression
+
+## The valid quadratic-form route
+
+Closed semibounded quadratic forms are a robust way to construct self-adjoint Hamiltonians. The first representation theorem associates a unique self-adjoint lower-bounded operator with every densely defined closed semibounded form; KLMN controls suitable form-bounded perturbations . These are imported standard theorems. MTT must still prove their hypotheses for the selected form.
+
+The old paper used a bounded pullback as if it automatically preserved closedness. That is false without additional control. The following sufficient condition is the one needed for an exact coherent restriction.
+
+<div id="prop:closed-pullback" class="proposition">
+
+**Proposition 3** (Closed reducing pullback). *Let $`q_{\mathrm{up}}`$ be a densely defined closed semibounded form on $`\mathcal H_{\mathrm{up}}`$. Let $`I\colon\mathcal H_{\mathrm{coh}}\to\mathcal H_{\mathrm{up}}`$ be an isometry with closed range $`M`$, let $`P_M`$ be the orthogonal projector onto $`M`$, and assume
+``` math
+P_M\mathcal D(q_{\mathrm{up}})\subset\mathcal D(q_{\mathrm{up}}).
+```
+Assume also that
+``` math
+I\mathcal H_{\mathrm{coh}}\cap\mathcal D(q_{\mathrm{up}})
+=I\mathcal D_{\mathrm{coh}},
+```
+and assume $`M`$ reduces the form:
+``` math
+q_{\mathrm{up}}(x,y)=0
+\quad
+\text{for }
+x\in M\cap\mathcal D(q_{\mathrm{up}}),\
+y\in M^\perp\cap\mathcal D(q_{\mathrm{up}}).
+```
+Then
+``` math
+q_{\mathrm{coh}}(\psi,\phi)
+=q_{\mathrm{up}}(I\psi,I\phi),
 \qquad
-Q(q_{\mathrm{obs}})\;=\;\{\psi\in L^{2}(Y^{4}) \;:\; \mathcal{P}^{\dagger}\psi \in Q(H_{10})\}.
-\tag{3.2}
-\end{equation}
+\psi,\phi\in\mathcal D_{\mathrm{coh}},
 ```
-Here $`\mathcal{P}^{\dagger}`$ is the $`L^{2}`$-adjoint $`L^{2}(Y)\to L^{2}(M_{10})`$; in the coherent sector it equals the inclusion along the normalized constant harmonic representative in each fibre (bounded by Lemma 2.1). <a href="#lem:I-Pi-bounded" data-reference-type="ref+label" data-reference="lem:I-Pi-bounded">2</a>).
-
-<div id="thm:Friedrichs" class="theorem">
-
-**Theorem 3** (Closed, semibounded form & self–adjoint $`H_{\rm obs}`$). *$`q_{\rm obs}`$ is densely defined, closed, and bounded below on $`\mathcal{H}_{\mathrm{QM}}`$. Hence there is a unique self–adjoint operator $`\mathcal{H}_{\mathrm{obs}}`$ on $`\mathcal{H}_{\mathrm{QM}}`$ such that
-``` math
-\langle \psi, \mathcal{H}_{\mathrm{obs}}\psi\rangle_{L^{2}(Y)} = q_{\mathrm{obs}}[\psi] for \psi \in Q(q_{\mathrm{obs}})
-```*
+is densely defined, closed, and semibounded whenever $`\mathcal D_{\mathrm{coh}}`$ is dense. Its represented Hamiltonian is unitarily equivalent to the part of the upper Hamiltonian on $`M`$.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Since $`\mathcal{P}^{\dagger}`$ is bounded, the pullback of the closed, semibounded form of $`H_{10}`$ is closed and semibounded (KLMN/Friedrichs) . Density follows from the density of smooth, compactly supported base fields and the fact that $`\mathcal{P}^{\dagger}`$ has dense range in the coherent sector for physically admissible data. ◻
+*Proof.* The isometry preserves the Hilbert norm and transports the form norm on $`\mathcal D_{\mathrm{coh}}`$ to the form norm on $`M\cap\mathcal D(q_{\mathrm{up}})`$. A form-Cauchy sequence downstairs therefore maps to a form-Cauchy sequence upstairs. Closedness of $`q_{\mathrm{up}}`$, closedness of $`M`$, and the domain identity return a limit in $`I\mathcal D_{\mathrm{coh}}`$. This proves closedness downstairs. Semiboundedness is inherited through the isometry. Form reduction gives an orthogonal form sum on $`M\oplus M^\perp`$, so the representation theorem identifies the lower operator with the upper operator part on $`M`$. ◻
 
 </div>
 
-<div id="cor:Stone" class="corollary">
+The proposition is a sufficient theorem, not a claim that every coherent projector satisfies its assumptions. A bounded nonisometric map can lose the lower norm needed for completeness, while a nonreducing range couples retained and discarded modes.
 
-**Corollary 4** (Stone’s theorem). *By Stone’s theorem (see Reed–Simon ), $`\mathcal{H}_{\mathrm{obs}}`$ generates a strongly continuous unitary group $`U(t)=\exp\!\big(-\tfrac{i}{\hbar}\,t\,\mathcal{H}_{\mathrm{obs}}\big)`$ on $`\mathcal{H}_{\mathrm{QM}}`$.*
+## When a compression is exact
 
-</div>
-
-<div class="remark">
-
-**Remark 5** (Schrödinger form). *In the nonrelativistic regime (Foldy–Wouthuysen reduction of the coherent spinor/bundle content) the form $`q_{\rm obs}`$ equals
+Let $`H_{\mathrm{up}}`$ be self-adjoint and $`P`$ an orthogonal projector. If $`P`$ commutes with every spectral projection of $`H_{\mathrm{up}}`$, then $`M=\operatorname{Ran}P`$ reduces $`H_{\mathrm{up}}`$. The restriction
 ``` math
-q_{\mathrm{obs}}[\psi]=\int_{Y^4}\left(\frac{\hbar^2}{2m}|\nabla\psi|^2 + V(x)\,|\psi|^2\right)\mathrm{d}{\rm vol}_4,
+H_M=H_{\mathrm{up}}\big|_{\mathcal D(H_{\mathrm{up}})\cap M}
 ```
-so that $`\mathcal{H}_{\mathrm{obs}}=-\frac{\hbar^2}{2m}\Delta+V(x)`$ as a *self–adjoint* operator on $`\mathcal{H}_{\mathrm{QM}}`$. The equality of forms, not just symbols, is what makes the argument rigorous.*
+is self-adjoint on $`M`$, and
+``` math
+Pe^{-itH_{\mathrm{up}}/\hbar}\big|_M
+=e^{-itH_M/\hbar}.
+```
+This is exact coherent-sector dynamics.
+
+Without reduction, $`PHP`$ is not automatically self-adjoint on the naively compressed domain, and $`Pe^{-itH_{\mathrm{up}}/\hbar}P`$ need not be a unitary group on $`M`$. In block form,
+``` math
+H_{\mathrm{up}}
+=
+\begin{pmatrix}
+H_{MM} & V\\
+V^* & H_{\perp\perp}
+\end{pmatrix},
+```
+the coupling $`V`$ feeds discarded modes back into the coherent sector. At a resolvent parameter $`z`$, an exact elimination, where defined, uses the Schur–Feshbach expression
+``` math
+H_{\mathrm{eff}}(z)
+=H_{MM}
+-V(H_{\perp\perp}-z)^{-1}V^*.
+```
+It is energy dependent and is not the same object as $`H_{MM}`$. A genuine approximation must bound the resolvent, the coupling, and the relevant time or spectral window. This is why “project and evolve” is not a universal derivation of unitary lower dynamics.
+
+# Representation is not prediction
+
+The old reconstruction theorem allowed an arbitrary target
+``` math
+H_{\mathrm{target}}
+=-\frac{\hbar^2}{2m}\Delta+V
+```
+and chose MTT background or boundary data containing the same $`V`$. Under appropriate Kato or form assumptions, this can be made mathematically exact. Its logical status is nevertheless representational.
+
+<div id="prop:embedding" class="proposition">
+
+**Proposition 4** (Exact target embedding). *Let $`q_{\mathrm{target}}`$ be any densely defined closed semibounded form on $`\mathcal H`$. Let $`q_\perp`$ be such a form on an auxiliary Hilbert space $`\mathcal K`$. On $`\mathcal H_{\mathrm{up}}=\mathcal H\oplus\mathcal K`$, define
+``` math
+q_{\mathrm{up}}=q_{\mathrm{target}}\oplus q_\perp
+```
+and let $`P`$ project onto $`\mathcal H`$. Then the coherent restriction of $`q_{\mathrm{up}}`$ is exactly $`q_{\mathrm{target}}`$, and its represented Hamiltonian is $`H_{\mathrm{target}}`$.*
 
 </div>
 
-# Constructive reconstruction: realising Schrödinger QM from MTT
+<div class="proof">
 
-We show that, for a broad admissible class, every nonrelativistic Schrödinger operator on $`L^2(\mathbb{R}^d)`$ appears *exactly* as $`H_{\rm obs}`$ for suitable, fixed MTT data. This makes the MTT$`\to`$QM map *surjective* onto the intended class.
+*Proof.* The direct sum is closed and semibounded on the direct-sum form domain. The first summand reduces it. Applying <a href="#prop:closed-pullback" data-reference-type="ref+label" data-reference="prop:closed-pullback">3</a> to the canonical inclusion gives the result. ◻
 
-## Admissible target class
+</div>
+
+This proposition is useful. It proves that the MTT carrier is not too small to represent the target class. It can also test a proposed decoder and normalization. It does not select $`m`$, $`V`$, the boundary condition, or $`\hbar`$, because all of them entered the source record. Prediction begins only when an upstream theorem emits those entries from data that did not already contain the desired answer.
+
+# Unitary dynamics, clocks, and uncertainty
+
+## Autonomous and time-dependent dynamics
+
+For a self-adjoint $`H`$, Stone’s theorem gives the strongly continuous unitary group
+``` math
+U(t)=e^{-itH/\hbar}.
+```
+Thus unitarity follows after self-adjointness and the time parameter have been established, not from projection alone . For a time-dependent family $`H(t)`$, a propagator requires common-domain, stability, and regularity hypotheses of the appropriate Kato theorem . Writing $`H(t)`$ is not by itself an existence proof.
+
+## Time is not automatically an observable
+
+In standard nonrelativistic mechanics, $`t`$ usually labels evolution. It is not therefore represented by a universal self-adjoint operator conjugate to every semibounded Hamiltonian. If a physical clock is part of an experiment, the clock row $`\mathcal T`$ may instead contain a covariant POVM $`E_T`$ satisfying a declared covariance convention such as
+``` math
+U(s)E_T(B)U(s)^*=E_T(B+s).
+```
+The clock system, its coupling, resolution, and calibration must then be part of the source record.
+
+The valid energy–time statement used here is operational. For a time-independent observable $`A`$, a state in the necessary domains, and
+``` math
+\tau_A
+=
+\frac{\Delta_\psi A}
+{\left|\frac{\mathrm d}{\mathrm dt}\langle A\rangle_\psi\right|},
+```
+the Robertson inequality applied to $`A`$ and $`H`$, together with the Heisenberg equation, gives
+``` math
+\tau_A\,\Delta_\psi H\geq\frac{\hbar}{2}.
+```
+This is the Mandelstam–Tamm form: $`\tau_A`$ is a characteristic evolution time for a chosen observable, not the standard deviation of an assumed universal time operator . Other clock or quantum speed-limit statements require their own hypotheses.
+
+## Ordinary observable uncertainty
+
+For self-adjoint $`A`$ and $`B`$ on a common state domain,
+``` math
+\Delta_\psi A\,\Delta_\psi B
+\geq
+\frac12\left|
+\langle\psi,[A,B]\psi\rangle
+\right|.
+```
+This is a consequence of the Hilbert-space inner product and the supplied operators. It does not derive their commutator from an MTT projector. A complete MTT source theorem must identify the lower operators and prove that their commutator or Weyl relations descend from the same upper structure.
+
+# Three probability questions
+
+The word “Born rule” can refer to three different achievements.
+
+1.  A *characterization theorem* says that a probability assignment satisfying specified additivity or noncontextuality assumptions has trace form.
+
+2.  An *operational source theorem* constructs a physical instrument and its output law from selected dynamics and a supplied quantum state.
+
+3.  A *pre-quantum or ontic theorem* explains why probability has that semantics before quantum states are accepted, or why one sample history is uniquely actual.
+
+These are not equivalent.
+
+## What Gleason and Busch establish
+
+Gleason’s theorem begins with a countably additive measure on the projection lattice of a Hilbert space of dimension at least three and concludes, under its hypotheses, that the measure has density-operator trace form . Busch’s effect-algebra formulation similarly characterizes generalized probability assignments on effects . These theorems are fundamental because they show how little freedom remains once Hilbert/effect structure and the relevant additivity assumptions are accepted.
+
+They do not construct a detector, derive countable additivity from MTT closure, or explain why a physical preparation is represented by a positive normal functional. Consequently one cannot start with an arbitrary “re-coherence weight,” assume it is additive on every orthogonal partition, invoke Gleason, and then count the result as an independent MTT derivation of probability. The additivity assumption is already a major part of the probability contract.
+
+## Effects and instruments
+
+A POVM $`E`$ on an outcome space $`\Omega`$ assigns positive operators $`E(B)`$ with $`E(\Omega)=I`$. Given a density operator $`\rho`$, standard quantum probability is
+``` math
+\Pr_\rho(B)=\operatorname{Tr}\bigl(\rho E(B)\bigr).
+```
+An instrument carries more information: each event $`B`$ has a completely positive trace-nonincreasing map $`\mathcal I_B`$, with
+``` math
+\Pr_\rho(B)=\operatorname{Tr}\mathcal I_B(\rho),
+\qquad
+\rho_B
+=\frac{\mathcal I_B(\rho)}{\operatorname{Tr}\mathcal I_B(\rho)}
+```
+when the denominator is nonzero. Measurement is therefore an ordinary physical interaction followed by a durable or readable record. It does not require consciousness or a fundamental observer boundary.
+
+Naimark and Stinespring dilation theorems show that POVMs and completely positive maps admit larger-space representations . They do not say that the required ancilla, isometry, pointer algebra, and coupling are selected by MTT. Those remain source rows.
+
+# The selected $`q=79`$ binary recorder
+
+The present research corpus contains one result stronger than abstract Gleason characterization. It constructs a selected recorder on a declared binary apparatus domain and computes its full stopped output measure. The canonical theorem and its machine-readable certificate are owned by the MTT QM source-proof repository at commit `1615da7e1b2c917556fe04a44d073b905644071e` . We summarize the result here without transferring the theorem’s ownership.
+
+## Input data
 
 Let
 ``` math
-H_{\rm target} = -\frac{\hbar^2}{2m}\Delta + V(x)\quad\text{on }L^2(\mathbb{R}^d),
-```
-where $`V\in L^\infty_{\rm loc}(\mathbb{R}^d)`$ is real, $`H_{\rm target}`$ is essentially self–adjoint on $`C_c^\infty(\mathbb{R}^d)`$, and bounded below. (This includes the standard Kato–Rellich class with $`V=V_+ - V_-`$, $`V_-`$ form–small relative to $`-\Delta`$.)
-
-## Exact form matching
-
-<div id="thm:reconstruction" class="theorem">
-
-**Theorem 6** (Reconstruction by quadratic–form identity). *For any such $`H_{\rm target}`$, there exist smooth MTT background/boundary data $`(g^{(10)},A,\ldots)`$ with bounded geometry and a choice of normalized harmonic representatives in each fibre such that the reduced quadratic form equals the target form:
-``` math
-q_{\rm obs}[\psi] \equiv q_{\rm target}[\psi]
-:=\int_{\mathbb{R}^d}\left(\frac{\hbar^2}{2m}|\nabla\psi|^2 + V(x)\,|\psi|^2\right)\mathrm{d}x,
-```
-on a common dense domain. Consequently, $`H_{\rm obs}=H_{\rm target}`$ as *self–adjoint* operators on $`L^2(\mathbb{R}^d)`$.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Choose internal metrics $`(h^{(n)})`$ and background fields so that: (i) the normalized constant harmonics $`\omega_{0}^{(n)}`$ span the fibre image of $`\mathcal{P}^{\dagger}`$; (ii) vertical excitations are gapped by $`\lambda_n>0`$ (H1); (iii) the $`10`$D quadratic form splits as
-``` math
-q_{10}[\Phi]=\int_{Y^4}\!\left(\frac{\hbar^2}{2m}\|\nabla_y\Phi\|^2 + V(x)\|\Phi\|^2\right)\mathrm{d}{\rm vol}_4 \;+\; q_{\rm int}[\Phi],
-```
-where $`q_{\rm int}\ge \Lambda\|\Phi\|^2`$ penalizes any nonconstant internal profile. Evaluate on coherent lifts $`\Phi(y,b)=\psi(y)\,\omega_0(b)`$ with $`\|\omega_0\|_{L^2(B_1\times B_2\times B_3)}=1`$. Then $`q_{10}[\Phi]=q_{\rm target}[\psi]`$. By definition <a href="#eq:qobs" data-reference-type="eqref" data-reference="eq:qobs">[eq:qobs]</a> of $`q_{\rm obs}`$ and the fact that $`\mathcal{P}^{\dagger}\psi=\psi\otimes\omega_0`$, we have $`q_{\rm obs}\equiv q_{\rm target}`$ on the dense set of smooth compactly supported $`\psi`$. Closedness and semiboundedness give operator equality $`H_{\rm obs}=H_{\rm target}`$ via the representation theorem. ◻
-
-</div>
-
-<div class="corollary">
-
-**Corollary 7** (Exact Schrödinger dynamics). *For these data, the unitary dynamics on $`\mathcal{H}_{\mathrm{QM}}\simeq L^2(\mathbb{R}^d)`$ satisfy $`i\hbar\partial_t\psi=H_{\rm target}\psi`$ with the same domain as the standard self–adjoint Schrödinger operator.*
-
-</div>
-
-<div class="remark">
-
-**Remark 8** (On uniqueness of the construction). *The MTT data realising a given $`H_{\rm target}`$ are not unique (gauge/diffeomorphism redundancies and deformations of the internal gap structure that leave the constant mode unchanged). This is expected: many $`10`$D models reduce to the same $`3{+}1`$ EFT at low energy.*
-
-</div>
-
-# Measurement theory and the Born rule from MTT
-
-In MTT a measurement is a *controlled coherent deformation* of constraints within the coherent sector, implemented by a localized change of modal constraint operator $`F\mapsto F'`$ and the associated *re–coherence* dynamics. We show that this yields the standard probability law without postulates. Exponential weights and a functional–equation argument yield the Born rule, in line with Gleason’s theorem  and its simplified proof by Busch .
-
-## Re–coherence dynamics and modal action
-
-Let $`\mathcal{H}_{\text{coh}}=\mathrm{Ran}\Pi`$ and $`\Psi_0\in\mathcal{H}_{\text{coh}}`$ be the pre–measurement state. A measurement corresponds to a new constraint $`F'`$ (apparatus coupling), with the re–coherence map
-``` math
-\mathcal{R}_{F'}:\mathcal{H}_{\text{coh}}\to\mathcal{H}_{\text{coh}},\qquad 
-\Psi\longmapsto \lim_{n\to\infty}(F')^{n}\Psi,
-```
-well–defined under the fixed–point contractivity (FCC) inherited from the FP spine. For each orthogonal branch labelled by a projector $`P_k`$ on $`\mathcal{H}_{\mathrm{QM}}`$ (selecting an outcome), there exists a minimal–action coherent path $`\Gamma_k`$ in the modal configuration manifold connecting $`\Psi_0`$ to a coherent representative of the branch. Define the *modal action increment*
-``` math
-\Delta A(P_k,\Psi_0) \;=\; \inf_{\Gamma_k}\;\int_{\Gamma_k}\;\vartheta
-```
-with $`\vartheta`$ the canonical one–form induced by the modal symplectic structure. This quantity is $`\ge 0`$, vanishes iff no deformation is needed, and is invariant under coherent gauge.
-
-## Exponential weights and the functional equation
-
-Assign *weights* to branches by
-``` math
-w(P,\psi) \;:=\; e^{-\Delta A(P,\psi)/\hbar}.
-```
-Define a (pre–normalized) set function on the projection lattice $`L(\mathcal{H}_{\mathrm{QM}})`$:
-``` math
-\tilde\mu_\psi(P)\;=\; w(P,\psi).
-```
-We impose the following minimal axioms, all satisfied in MTT:
-
-**(A1) Noncontextuality.** $`\tilde\mu_\psi(P)`$ depends only on $`(P,\psi)`$, not on the ambient decomposition.
-
-**(A2) Orthogonal additivity.** For a finite orthogonal refinement $`P=\sum_i P_i`$, $`\tilde\mu_\psi(P)=\sum_i \tilde\mu_\psi(P_i)`$.
-
-**(A3) Unitary covariance.** $`\Delta A(UPU^\dagger,U\psi)=\Delta A(P,\psi)`$ for all unitaries $`U`$ on $`\mathcal{H}_{\mathrm{QM}}`$.
-
-**(A4) Continuity.** $`\tilde\mu_\psi(P)`$ is continuous in $`(P,\psi)`$ in the strong/operator topologies.
-
-<div id="thm:born" class="theorem">
-
-**Theorem 9** (Uniqueness of the action functional & Born rule). *Assume (A1)–(A4) and $`\dim\mathcal{H}_{\mathrm{QM}}\ge 2`$. Then there exists a constant $`C`$ such that
-``` math
-\Delta A(P,\psi) \;=\; -\hbar\,\ln \langle\psi,P\psi\rangle \;+\; C,
-```
-and the normalized probability
-``` math
-\mu_\psi(P)\;:=\;\frac{w(P,\psi)}{\sum_j w(P_j,\psi)} \;=\; \langle\psi,P\psi\rangle
-```
-for any orthogonal resolution $`\{P_j\}`$ of the identity. Thus the Born rule holds for all projective measurements.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* By (A1)–(A3), $`w(P,\psi)=f(\langle\psi,P\psi\rangle)`$ for some continuous $`f:[0,1]\to[0,\infty)`$ with $`f(0)=0`$, $`f(1)>0`$. Orthogonal additivity over rational partitions implies $`\sum_i f(p_i)=f(\sum_i p_i)`$ whenever $`p_i\ge 0`$ and $`\sum_i p_i\le 1`$. Standard Cauchy–type functional–equation arguments plus continuity force $`f(p)=K\,p`$ with constant $`K>0`$. Therefore $`w(P,\psi)=K\,\langle\psi,P\psi\rangle`$, i.e. $`\Delta A=-\hbar\ln\langle\psi,P\psi\rangle + C`$ with $`C=-\hbar\ln K`$. Normalizing by $`\sum_j w(P_j,\psi)=K`$ over an orthogonal resolution gives $`\mu_\psi(P)=\langle\psi,P\psi\rangle`$. ◻
-
-</div>
-
-#### Gleason–Busch consolidation.
-
-For $`\dim\mathcal{H}_{\mathrm{QM}}\ge 3`$, Gleason’s theorem ensures that any noncontextual, finitely additive $`\mu_\psi`$ arises from a density operator; Busch’s extension covers $`\dim=2`$ via POVMs. Since our $`\mu_\psi`$ is Born’s rule for projections, the usual POVM law follows as well by Naimark dilation (below).
-
-## Generalised measurements via explicit Naimark/Stinespring dilation
-
-Let $`\{E_\alpha\}`$ be a POVM on $`\mathcal{H}_{\mathrm{QM}}`$. There exist an ancilla Hilbert space $`\mathcal{H}_{\rm anc}`$ (apparatus coherent modes), a unitary $`U`$ on $`\mathcal{H}_{\mathrm{QM}}\otimes\mathcal{H}_{\rm anc}`$, a fixed ancilla state $`|\eta\rangle`$, and a PVM $`\{\Pi_\alpha\}`$ such that
-``` math
-E_\alpha \;=\; \mathrm{Tr}_{\rm anc}\!\left[(\mathbf{1}\otimes|\eta\rangle\langle\eta|)\,U^\dagger(\mathbf{1}\otimes\Pi_\alpha)U\right].
-```
-In MTT, $`\mathcal{H}_{\rm anc}\subset\mathcal{H}_{\text{coh}}`$ and $`U`$ is generated by the $`10`$D Hamiltonian $`H_{10}`$ during a finite measurement interval; the projection $`\mathsf{P}`$ then yields the observable POVM $`\{E_\alpha\}`$ on $`\mathcal{H}_{\mathrm{QM}}`$ exactly. This realizes generalised measurements without any extra postulates.  
-
-# Time dependence, uncertainty, and the path integral
-
-## Time–dependent $`H_{\rm obs}(t)`$ and Kato’s theorem
-
-Assume $`t\mapsto q_{\rm obs}(t)`$ is a family of closed, semibounded quadratic forms on a common dense domain $`\mathcal{Q}\subset \mathcal{H}_{\mathrm{QM}}`$, continuous in $`t`$ in the form norm. By Kato’s theory of linear evolution equations, there exists a unique unitary propagator $`U(t,s)`$ with
-``` math
-i\hbar\,\partial_t U(t,s)\psi = H_{\rm obs}(t)U(t,s)\psi,\qquad U(s,s)=\mathbf{1},\quad \|U(t,s)\|=1,
-```
-for all $`\psi\in\mathcal{Q}`$. Curvature–gap–driven potentials $`V_{\rm curv}(x,t)`$ and smooth external couplings fit these hypotheses; therefore time–dependent MTT reductions remain within standard unitary QM (no “exotic” dynamics are introduced).
-
-## Uncertainty from spectral theory of compressed generators
-
-Let $`T`$ be the self–adjoint generator of modal time translations on $`\mathcal{H}_{\text{coh}}`$. The observable map $`\mathsf{P}`$ acts as a finite–bandwidth filter on $`T`$ (bounded geometry and FCC imply a uniform frequency cutoff in the coherent sector). For any $`\psi`$ with $`\Delta T<\infty`$ and $`\Delta H_{\rm obs}<\infty`$, Robertson’s inequality gives
-``` math
-\Delta t\,\Delta E \;\ge\; \frac{\hbar}{2}, 
+\mathcal H_\Sigma=L^2(\Sigma,\mathrm d\mu_h;F_{q79}),
 \qquad
-\Delta t := \Delta T\ \text{(calibrated to physical time via the fixed point)},\quad
-\Delta E := \Delta \mathcal{H}_{\mathrm{obs}}.
+P=P_\Sigma,
+\qquad
+Q=I-P,
 ```
-Thus the time–energy uncertainty is a consequence of spectral compression induced by $`\mathsf{P}`$, not a postulate.
-
-## Stationary–phase correspondence to the Feynman kernel
-
-Let $`K(t,x;s,y)`$ denote the Schrödinger kernel of $`H_{\rm obs}`$. In the semiclassical regime with $`S[\gamma]`$ a $`C^2`$ action functional and nondegenerate classical paths $`\gamma_{\rm cl}`$, the projected coherent amplitude admits the stationary–phase expansion
+with $`P`$ and $`Q`$ orthogonal. The selected one-anchor intrinsic clock has
 ``` math
-(\mathsf{P}\Psi)(t,x) \;=\; \sum_{\gamma_{\rm cl}} \Big(\frac{1}{2\pi i\hbar}\Big)^{d/2}
-\big|\det \partial^2 S/\partial x\,\partial y\big|^{1/2} e^{\frac{i}{\hbar}S[\gamma_{\rm cl}] - i\nu\pi/2}\,(\mathsf{P}\Psi)(s,y) \;+\; \mathcal{O}(\hbar),
+\gamma=\log 448,
 ```
-which is the Van Vleck–Gutzwiller form of the Feynman propagator.  . Hence the “coherence–cone” path sum in MTT reduces exactly to the standard path integral kernel in the semiclassical limit, with the Maslov index $`\nu`$ determined by conjugate points along $`\gamma_{\rm cl}`$.
-
-# Entanglement as Preferred Encoding and Measurement-Induced Partition
-
-## Scope and positioning
-
-This section clarifies the status of entanglement, factorization, and measurement within the MTT$`\Rightarrow`$QM reduction. The technical results of the preceding sections already establish: (i) the observable map $`P = I \circ \Pi`$ from the coherent modal sector to the effective 4D Hilbert space $`H_{\mathrm{QM}}`$; (ii) the self-adjoint reduced Hamiltonian $`H_{\mathrm{obs}}`$ and unitary evolution within a fixed admissible basin; and (iii) the Born rule/POVM structure arising from re-coherence, noncontextuality, and the dilation mechanism. What we add here is a rigorous *interpretive* statement (in the mathematical sense of “what structure is generic under the map $`P`$ and what structure is exceptional”):
-
-> *Entanglement is not an anomaly superimposed upon otherwise separable “particles.” Rather, non-factorization is the generic coherent encoding selected by admissibility and projection. Tensor-product factorization is a special-purpose *encoding* that becomes valid only when the dynamics and constraints admit a stable subsystem decomposition (e.g. after record formation in measurement).*
-
-This viewpoint is consistent with (and in fact sharpened by) the following three MTT facts: (a) the coherent projector $`\Pi`$ is a *global* constraint on each fiber $`X_6(y)`$ (hence it couples degrees of freedom that are separate in the 4D shadow description), (b) $`P`$ is *many-to-one* and therefore defines equivalence classes of upstairs microstates with the same downstairs state, and (c) admissibility/FCC selects a restricted state class; it does not privilege factorized states.
-
-## Two-layer structure: upstairs coherence vs. downstairs factorization
-
-We adopt the standard two-layer distinction used throughout the corpus.
-
-#### Upstairs (modal) layer.
-
-Let $`\Psi`$ denote a configuration on $`M_{10}=Y^4\times B_1\times B_2\times B_3`$ evolving under the (local, well-posed) modal dynamics $`\Phi_t`$ on an admissible slab. The coherent sector is defined by the joint harmonic projector $`\Pi`$, and admissibility imposes bounded geometry, a spectral gap separating coherent/noncoherent bands, boundedness/regularity of $`\Pi`$ on Sobolev scales, and stability margins (FCC).
-
-#### Downstairs (observable) layer.
-
-The observable map
+and the two recorder couplings are
 ``` math
-\begin{equation}
-P := I \circ \Pi
-\end{equation}
+L_p=\sqrt{\gamma}\,P,
+\qquad
+L_q=\sqrt{\gamma}\,Q.
 ```
-produces an effective 4D state in $`H_{\mathrm{QM}}`$ (or, in the AQFT formulation, a state on a local net of algebras). Downstairs locality is encoded kinematically (commutativity for spacelike-separated algebras / causal propagation of the 4D dynamics), but *state factorization is not imposed.*
+The environment is the two-channel symmetric Fock recorder with vacuum input. The selected preparation ensemble $`\lambda`$ enters through its second moment
+``` math
+\rho_\lambda
+=\int |z\rangle\langle z|\,\mathrm d\lambda(z).
+```
+The output number processes generate a commuting nondemolition algebra, so restriction of the selected normal joint state to that algebra has a classical spectral measure. This is standard quantum-stochastic machinery applied to MTT-selected projector, clock, preparation, and context data .
 
-#### Key point.
+## Exact output law
 
-Non-factorization is a property of the *downstairs* state. It does not indicate superluminal influence upstairs, because upstairs evolution remains local and admissibility is formulated as a global constraint in configuration space rather than a propagating signal.
+For a horizon $`u`$, let $`r_u`$ mean no count by $`u`$, and let $`(s,a)`$, $`a\in\{p,q\}`$, denote the first count at time $`s`$ in channel $`a`$. The imported selected-source result gives the effects
+``` math
+F_u(r_u)=e^{-\gamma u}I,
+\qquad
+F_u(\mathrm ds,a)
+=\gamma e^{-\gamma s}P_a\,\mathrm ds,
+```
+where $`P_p=P`$ and $`P_q=Q`$. Therefore
+``` math
+\mu_{\rho,u}(r_u)=e^{-\gamma u},
+\qquad
+\mu_{\rho,u}(\mathrm ds,a)
+=\gamma e^{-\gamma s}\operatorname{Tr}(\rho P_a)\,\mathrm ds.
+```
+Conditional on a count by time $`u`$,
+``` math
+\Pr_\rho(a\mid\text{count by }u)
+=\operatorname{Tr}(\rho P_a).
+```
+No fitted probability vector and no independently appended classical Poisson process enter this selected output law.
 
-## Entanglement as the generic coherent encoding
+The corresponding nonselective channel is
+``` math
+\Phi_u(\rho)
+=P\rho P+Q\rho Q
++e^{-\gamma u}(P\rho Q+Q\rho P).
+```
+For two upper ensembles with the same second moment,
+``` math
+\rho_{\lambda_1}=\rho_{\lambda_2},
+```
+the complete stopped output measures agree. This is the exact second-moment capture descent proved on the canonical binary context.
 
-We now formalize “entanglement as preferred” in a way that fits the MTT$`\Rightarrow`$QM framework.
+At $`u=1`$, the no-count probability is $`1/448`$. For the first selected carrier basis preparation, the conditional label weights are
+``` math
+\bigl(\Pr(p),\Pr(q)\bigr)
+=\left(\frac13,\frac23\right).
+```
+These numbers are outputs of the selected projector and clock in that context, not empirical fits.
 
-### Factorization is an additional constraint (not a default)
+## What this closes and what it does not
 
-Let $`H_{\mathrm{QM}}`$ admit a subsystem decomposition $`H_{\mathrm{QM}} \simeq H_A\otimes H_B`$ associated with two spacelike-separated experimental regions or two controlled degrees of freedom. A pure state $`\ket{\psi}\in H_{\mathrm{QM}}`$ factorizes iff $`\ket{\psi}=\ket{\psi_A}\otimes\ket{\psi_B}`$, equivalently iff its reduced density matrices are rank-one. Such factorization is a *codimension* condition in state space.
+The result closes the following statement:
 
-<div id="prop:generic_nonfactorization" class="proposition">
+> Given standard normal-state operational semantics, the selected $`q=79`$ binary $`P/Q`$ recorder supplies its own stopped output measure and exact second-moment Born descent.
 
-**Proposition 10** (Generic non-factorization under admissibility selection). *Fix an admissible slab and let $`\mathcal{S}_{\mathrm{coh}}`$ denote the class of physically realized downstairs states induced by admissible upstairs configurations via $`P`$. Unless additional decoupling constraints are imposed (see §<a href="#sec:partition_measurement" data-reference-type="ref" data-reference="sec:partition_measurement">7.5.1</a>), states in $`\mathcal{S}_{\mathrm{coh}}`$ are generically non-factorizing across a subsystem decomposition $`H_A\otimes H_B`$.*
+It does not derive the operational meaning of a normal state from a deterministic pre-quantum theory. A probability measure on the commuting output algebra is also not a distinguished character of that algebra and does not select one sample path as the uniquely actual history.
+
+The universal source blocker therefore remains open for:
+
+- arbitrary allowed apparatus contexts and outcome multiplicities;
+
+- finite-bandwidth, detector-memory, and non-Markov corrections;
+
+- a demanded pre-quantum derivation of probability semantics; and
+
+- objective selection of one ontic history.
+
+This boundary is not a defect in the exact binary theorem. It is the difference between a selected finite-domain result and a universal measurement theory.
+
+# Composition, entanglement, and locality
+
+Once the record supplies
+``` math
+\mathcal H_{AB}=\mathcal H_A\otimes\mathcal H_B,
+```
+entangled states are simply states that are not product states or mixtures of product states, according to the chosen purity level. Their existence is a consequence of the tensor-product state space. Projection may preserve, remove, or induce effective correlations depending on the embedding, but it does not by itself derive the tensor product or its physical subsystem meaning.
+
+Local no-signalling likewise belongs to the operational algebra. If $`\Lambda_A`$ is a trace-preserving completely positive map acting only on $`A`$, then for a bipartite density operator
+``` math
+\operatorname{Tr}_A\bigl[(\Lambda_A\otimes\operatorname{Id}_B)(\rho_{AB})\bigr]
+=\operatorname{Tr}_A\rho_{AB}.
+```
+Thus the statistics of $`B`$ are unchanged by an unconditioned local operation on $`A`$. Conditioning on a communicated outcome can change the conditional state, but not produce superluminal signalling.
+
+An MTT account may seek an upper-local explanation of Bell correlations. To establish it, the source map must still show which upper variables, settings, and record algebras descend to the lower tensor factors while preserving the relevant statistical-independence assumptions. That separate Bell-locality question is not solved by merely calling the upper space local.
+
+# Open systems and alternative representations
+
+## Weak-coupling master equations
+
+Completely positive Markov semigroups have generators of Gorini–Kossakowski–Sudarshan–Lindblad form under the standard bounded or finite-dimensional hypotheses . Davies’ weak-coupling limit gives a rigorous route from a system–reservoir model to such a semigroup under spectral, correlation, scaling, and limiting assumptions . These theorems do not imply that every MTT disturbance has a Markov limit.
+
+The $`q=79`$ recorder in <a href="#sec:q79" data-reference-type="ref+label" data-reference="sec:q79">9</a> is a selected quantum-stochastic instrument on one declared domain. A general MTT open-system theorem would need to emit the reservoir state, interaction, correlation decay, renormalization, bandwidth regime, and approximation error. Memory effects are not failures of quantum mechanics; they indicate that a Markovian generator is not the correct reduced object.
+
+## Path integrals and semiclassical kernels
+
+When a self-adjoint Hamiltonian and suitable action are already available, Trotter product formulas, Feynman–Kac formulas in imaginary time, or oscillatory integral constructions can provide kernel representations. Stationary phase can then recover classical trajectories and Van Vleck-type amplitudes in an appropriate semiclassical regime. These are alternative representations or asymptotic consequences of supplied dynamics. They do not select the Hamiltonian or establish a measure for an arbitrary real-time path integral .
+
+This distinction matters for MTT. A closure path or modal history can be a valuable upper description, but calling it a path integral does not make the quantum measure, phase, boundary condition, or continuum limit automatic.
+
+# Two concrete tests
+
+## A two-level recorder
+
+Choose one normalized vector in $`\operatorname{Ran}P`$ and one in $`\operatorname{Ran}Q`$, and restrict the selected binary recorder to their span. In the resulting two-dimensional model, let
+``` math
+\mathcal H=\mathbb C^2,
+\qquad
+P=|0\rangle\langle0|,
+\qquad
+Q=|1\rangle\langle1|,
+```
+and prepare
+``` math
+|\psi\rangle=\alpha|0\rangle+\beta|1\rangle,
+\qquad
+|\alpha|^2+|\beta|^2=1.
+```
+The canonical recorder formulas give
+``` math
+\mu_{\psi,u}(\mathrm ds,p)
+=\gamma e^{-\gamma s}|\alpha|^2\,\mathrm ds,
+\qquad
+\mu_{\psi,u}(\mathrm ds,q)
+=\gamma e^{-\gamma s}|\beta|^2\,\mathrm ds.
+```
+Conditional on a count, the labels have weights $`|\alpha|^2`$ and $`|\beta|^2`$. This example is useful for two reasons. First, it shows exactly how the selected output instrument turns a coherent superposition into record statistics and dephasing. Second, the Hilbert space is two-dimensional, outside the direct scope of the original projection-lattice Gleason theorem. The result here comes from the instrument calculation, not from pretending that Gleason alone supplied the detector law.
+
+## A harmonic oscillator embedding
+
+Let
+``` math
+H_{\mathrm{osc}}
+=-\frac{\hbar^2}{2m}\frac{\mathrm d^2}{\mathrm dx^2}
++\frac12m\omega^2x^2
+```
+on its standard self-adjoint domain. By <a href="#prop:embedding" data-reference-type="ref+label" data-reference="prop:embedding">4</a>, it can be placed as a reducing block of a larger upper Hamiltonian and recovered exactly on the coherent summand. The eigenvalues and propagator then agree with ordinary quantum mechanics.
+
+This is an excellent decoder test: a wrong normalization, domain, or intertwiner is exposed immediately. It is not a prediction of $`m`$ or $`\omega`$. Those values were part of the inserted target block. To turn the example into a selected MTT result, an upstream source theorem must emit the oscillator scale and coupling without using the target spectrum as construction data.
+
+# Relation to the current MTT program
+
+The canonical MTT foundation now uses a ten-dimensional bundle over a four-dimensional Lorentzian base with compact six-dimensional fiber, not a literal product of three independent internal manifolds . The shared finite line and root-plane complex structure provide promising upstream data for a complex coherent sector, but matching dimensions or finite carriers is not yet a continuum operator-intertwining theorem.
+
+The current quantization audit records conditional quantization results and constructive finite-domain QFT results while retaining open capture, BRST/gauge-orbit, continuum, and full four-dimensional obligations. The present paper is consistent with that status:
+
+1.  *General coherent-sector QM:* conditional reconstruction.
+
+2.  *Selected binary output law:* exact on the canonical $`q=79`$ recorder domain.
+
+3.  *Universal Born source:* open.
+
+4.  *Nonperturbative QFT and continuum physics:* separate, open obligations not promoted here.
+
+The possible upstream “closure repair” or nonlinear stabilization program would fit one level before this paper. If a selected nonlinear repair flow has a fixed state and its linearization produces the self-adjoint or dissipative operators in <a href="#def:record" data-reference-type="ref+label" data-reference="def:record">1</a>, then the operator row would become a theorem rather than an input. That is a promising research direction, but no such universal source theorem is assumed in the present reconstruction.
+
+# Claim disposition
+
+<div class="description">
+
+Withdrawn. The general result is a conditional coherent-sector reconstruction.
+
+Must be emitted as a complex Hilbert space or as a real Hilbert space with a compatible selected complex structure. It is not derived from projection alone.
+
+Retained when a selected densely defined closed semibounded form or self-adjoint operator and its domain are proved. Bounded pullback alone is insufficient.
+
+Retained as a standard consequence of self-adjointness and Stone’s theorem. Time-dependent propagators remain conditional on their regularity hypotheses.
+
+Retained as exact representability when the target form is inserted. This is not source selection or parameter prediction.
+
+Part of the supplied operator algebra or a separate source theorem. It is not created by an orthogonal projector.
+
+Gleason–Busch gives characterization under probability assumptions. Selected exact Born descent is established only for the canonical binary $`q=79`$ output context. The universal source theorem remains open.
+
+Standard mathematical representations. MTT must separately source the ancilla, interaction, pointer algebra, and context.
+
+Corrected to an operational clock or Mandelstam–Tamm statement. No universal self-adjoint time operator is claimed.
+
+Available once the tensor-product composition rule is supplied. Projection alone does not derive physical subsystem composition.
+
+Conditional on an explicit open-system or weak-coupling limit. Not every modal disturbance is Markovian.
+
+An alternative or asymptotic representation after the Hamiltonian and action are supplied, not an independent source theorem.
 
 </div>
 
-*Explanation.* The projector $`\Pi`$ enforces joint harmonicity across the modal fibers and therefore correlates degrees of freedom that are separate in the 4D slicing. Since $`P`$ is many-to-one and admissibility selects invariant sets/basins rather than product sets, the induced state class does not satisfy a general product structure. Hence factorization requires additional constraints beyond admissibility alone.
+# Completion contract
 
-### Encoding/compression principle
+To upgrade the general reconstruction to a selected derivation, one upper source must emit and certify the following rows without empirical replay of the desired answer:
 
-MTT provides a natural notion of *encoding efficiency*: different upstairs microstates may project to the same downstairs state. Thus the downstairs description is intrinsically *compressed.* This yields a principled reason why global (entangled) encodings are preferred:
+1.  one complex coherent Hilbert space and its state cone;
 
-<div id="def:encoding_degeneracy" class="definition">
+2.  one noncommutative observable algebra with domains and symmetries;
 
-**Definition 11** (Encoding degeneracy and compression). *For $`x \in H_{\mathrm{QM}}`$ (or a downstairs state $`\omega`$), define the fiber of the observable map
-``` math
-\begin{equation}
-P^{-1}(x) := \{\Psi \in \mathrm{Dom}(P)\subset H_{\mathrm{coh}} : P(\Psi)=x\}.
-\end{equation}
-```
-The *encoding degeneracy* of $`x`$ is the measure/volume of $`P^{-1}(x)`$ with respect to the invariant measure on the admissible set (when such a measure is invoked).*
+3.  one self-adjoint Hamiltonian or closed semibounded form, including $`\hbar`$, masses, couplings, and boundary conditions;
 
-</div>
+4.  a proof that the coherent range reduces the dynamics, or a controlled Schur–Feshbach/residual theorem when it does not;
 
-<div class="principle">
+5.  a clock convention and physical calibration distinct from a compact phase circle unless an explicit relation is proved;
 
-<span id="prin:preferred_encoding" label="prin:preferred_encoding"></span> Among configurations compatible with the same macroscopic constraints, the evolve–project dynamics biases toward states whose downstairs descriptions minimize unnecessary factorization constraints, i.e. toward globally coherent (typically entangled) encodings. Factorized descriptions arise when additional constraints (records, strong decoupling, or enforced partitions) make them dynamically stable.
+6.  a tensor-product or algebraic composition rule with locality;
 
-</div>
+7.  selected effects, instruments, record algebras, and apparatus couplings;
 
-This “preferred encoding” principle is not a separate postulate. It is a structural corollary of: (i) global projection by $`\Pi`$, (ii) many-to-one mapping by $`P`$, and (iii) contraction toward stable basins under FCC.
+8.  a same-source output-measure theorem for the entire allowed context family, including finite-bandwidth and memory error control;
 
-## How entanglement propagates without signaling
+9.  any requested pre-quantum probability semantics or objective-history rule; and
 
-Entanglement does not propagate as a physical influence. What propagates is *local interaction* that can create or transfer *shared coherence constraints*.
+10. a commuting evaluation diagram with held-out predictions and an uncertainty budget.
 
-- **Locality.** The 4D effective dynamics propagate causally on $`Y^4`$ (retarded support / light-cone bounds in the hyperbolic sector; Gaussian off-diagonal bounds if parabolic regularization is used).
+The $`q=79`$ recorder closes a nontrivial part of item 8 for one binary context. It does not close the other rows by implication. Conversely, future progress on the upper action, operator naturality, or closure-repair flow could source several earlier rows at once. The contract makes such progress visible without changing the meaning of already closed results.
 
-- **Entanglement creation.** Local interactions can map product states to entangled states by coupling degrees of freedom within a common past light cone.
+# Discussion
 
-- **No signaling.** Because the downstairs algebra remains local (microcausality) and because the admissible state-selection principle restricts states rather than commutators, reduced marginals remain independent of spacelike-separated measurement settings.
+## What has actually been achieved
 
-Thus “spooky action” is reinterpreted as *global consistency of a single coherent configuration* together with *local* dynamics, rather than nonlocal influence.
+MTT can host a mathematically exact coherent-sector reconstruction of nonrelativistic quantum mechanics when the full lower record is supplied and the source/evaluation diagrams commute. The form and compression analysis specifies when the Hamiltonian is genuinely self-adjoint and when coherent evolution is exact. The target-embedding result establishes broad expressiveness while explicitly separating it from prediction.
 
-## Why and how entanglement breaks: partition by measurement and environment
+More importantly, the current selected $`q=79`$ program goes beyond a bare encoding on one measurement domain. It fixes a projector pair, intrinsic rate, recorder unitary, commuting output algebra, and stopped instrument. The resulting first-count law depends only on the preparation’s second moment and has exact trace-form label probabilities. No observed probabilities or free stochastic noise are added. This is a real selected-source achievement, but its domain matters.
 
-In MTT, entanglement breaks (partially or fully) when the admissibility constraints enforce a *re-partition* of the coherent configuration into a basin compatible with stable records.
+## Why the narrower statement is stronger science
 
-### Measurement as enforced partition
+The former version appeared stronger because it called many standard theorems MTT derivations. In fact, it made the decisive source question harder to see. The corrected statement is more useful: it identifies which structures are standard consequences, which are MTT-selected in a finite domain, and which remain open.
 
-Measurement is modeled as a localized disturbance followed by stabilization (re-coherence) into an admissible basin. Let $`\mathcal{B}`$ denote a basin decomposition of the admissible coherent set. A measurement interaction changes the effective constraints and typically refines $`\mathcal{B}`$ into record-compatible basins $`\{\mathcal{B}_i\}`$.
+The distinction also prevents two opposite mistakes. It avoids declaring victory after replaying a target Hamiltonian, and it avoids discarding a genuine finite-domain theorem merely because universality is unfinished. Scientific progress can be exact and important without being global.
 
-<div id="prop:measurement_factorization" class="proposition">
+## Best next theorem
 
-**Proposition 12** (Measurement induces record-compatible factorization). *Assume a measurement interaction creates stable records (pointer states) in an apparatus/environment sector. Then the post-measurement stabilized configuration lies in a basin $`\mathcal{B}_i`$ for which the effective downstairs description admits a robust subsystem encoding (often approximately factorized in the pointer basis). This yields the appearance of “individual particles” and definite outcomes in the 4D shadow.*
+The immediate mathematical target is not another abstract Gleason argument. It is a same-source extension of the selected recorder theorem. One should enlarge the apparatus class, derive the corresponding output algebra and instrument from the same upper source, and prove second-moment capture descent with explicit control of detector bandwidth and memory. In parallel, a nonlinear closure-repair flow whose linearization emits the Hamiltonian and recorder couplings would move the source boundary further upstream.
 
-</div>
+# Conclusion
 
-*Explanation.* Record formation is an additional constraint beyond admissibility alone. It selects a basin in which degrees of freedom decohere relative phases and stabilize a classical-like partition (pointer basis). The global upstairs configuration remains single and coherent where admissibility permits, but the downstairs description becomes effectively factorized because the apparatus imposes a stable encoding.
+Projection is not quantization, and reconstruction is not selection. Nonrelativistic quantum mechanics requires a complex Hilbert space, state cone, operator algebra, self-adjoint dynamics, clock convention, composition rule, and operational instruments. Version 4 makes each of these rows explicit and proves the corresponding conditional MTT reconstruction theorem.
 
-### Environmental decoherence as OU-floor growth
+The operator-theoretic part is rigorous once its standard hypotheses are met. Closed reducing forms give self-adjoint coherent Hamiltonians; Stone’s theorem gives unitary evolution; and arbitrary target forms can be embedded exactly. That last fact measures expressive capacity, not predictive power. Time is treated through evolution or clock observables, and the valid Mandelstam–Tamm relation replaces an unsupported universal time operator. Gleason and Busch characterize probability assignments but do not source a detector law.
 
-Disturbances inject variance into noncoherent and relative-phase directions. Under damping-balance assumptions, these directions follow OU-type behavior; entanglement visibility degrades as OU floors rise toward the basin boundary. This provides a quantitative interpretation of decoherence: it is not “loss of reality” but loss of an encoding that maintains phase coherence across partitions.
+The canonical $`q=79`$ binary recorder supplies the paper’s strongest selected result: an exact stopped output measure and second-moment Born descent on one commuting Fock output domain, without fitted probabilities or extra classical noise. The universal apparatus theorem, non-Markov control, pre-quantum probability semantics, and objective actualization remain open. MTT therefore reaches a conditional reconstruction of general nonrelativistic quantum mechanics and an exact selected measurement theorem on one important domain. That is the correct present frontier.
 
-## Large entangled systems: growth, structure, and limits
+#### Open boundary (not evidence of closure).
 
-### How large entanglement forms
+- (*open*).
 
-Large-scale entanglement arises by chaining local interactions, mediated ancillas, entanglement swapping, and engineered gate sequences. In MTT terms, these operations steer the coherent configuration within (or between nearby) admissible basins while maintaining FCC margins.
+  Current 2/9 strict no-knob upgrade ledger.
 
-### Selection fronts and sharp thresholds
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-As system size grows, maintaining global coherence becomes increasingly sensitive to stability margins. Near admissibility thresholds, dynamics exhibit boundary-layer behavior (“selection fronts”): sharp knees in coherence persistence, protocol dependence, and large-deviation sensitivity. These features explain why macroscopic entanglement is difficult and why coherence can fail abruptly when thresholds are crossed.
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
 
-### Computational irreducibility and predictive limits
+The curated strict-upgrade ledger is used only as a corpus-state cross-check that stronger no-knob and universal-source obligations remain open. It does not prove this paper's Hilbert, Hamiltonian, clock, instrument, or probability statements. The exact canonical q79 binary output-measure theorem is instead cited at its immutable source-proof repository commit and remains restricted to its declared P/Q Fock-output domain.
 
-The existence of selection events and basin transitions can be computationally irreducible: there need not exist a uniform shortcut for predicting whether a trajectory will hit a selection front before time $`T`$. This places structural limits on scalable entanglement and long-depth quantum computation beyond ordinary noise models: some failure modes are not just hard in practice but can be undecidable in general classes of coherent dynamics.
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
 
-## Quantum computing viewpoint
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
 
-A quantum computer is an engineered device that (i) keeps the system within an admissible coherent basin for long times, (ii) uses controlled local disturbances (gates) that remain within basin margins, and (iii) suppresses uncontrolled disturbances so OU floors remain below threshold.
+## Open boundary (not evidence of closure)
 
-#### Why entanglement is useful (encoding efficiency).
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
 
-Entanglement provides compressed global encodings of correlations that would require exponentially many parameters in a purely factorized description. In MTT terms, the coherent projector naturally supports such compressed encodings, and gates exploit this by steering within the entangled manifold without forcing record-compatible partitioning.
-
-#### Why quantum computing is limited.
-
-Long-depth computation must avoid selection fronts and maintain FCC margins across growing system size. Error correction is basin management: keeping the system away from the admissibility boundary, actively damping injected disturbances, and refreshing coherent encodings before threshold crossing.
-
-## Summary: the full MTT entanglement picture
-
-We summarize the MTT account in five statements:
-
-1.  **Entanglement is generic.** Non-factorization is the typical coherent encoding induced by global projection and admissibility selection, not an exceptional overlay.
-
-2.  **Factorization is conditional.** Product-state descriptions are special encodings stabilized by additional decoupling constraints and, most importantly, by record formation in measurement.
-
-3.  **No superluminal influence.** Locality holds at the level of dynamics and algebras; entanglement reflects global consistency constraints upstairs and the many-to-one nature of projection.
-
-4.  **Breaking is partition.** “Collapse” is basin capture: disturbance pushes toward boundaries, projection and stabilization select record-compatible basins, yielding effective particle-local outcomes.
-
-5.  **Scaling has limits.** Large entanglement and quantum computation are constrained by selection fronts (threshold behavior) and computational irreducibility of basin transitions in broad classes.
-
-This section therefore reconciles two facts that can appear in tension in purely downstairs language: (i) particles and records are stable coherent structures (basins) and (ii) entanglement is a preferred, globally compressed coherent encoding. The tension dissolves once one distinguishes *encoding* (product decomposition as a chart on state space) from *ontology* (single coherent configuration upstairs) and recognizes that measurement is the physical mechanism that enforces partition.
-
-## Entanglement, Propagation, and Force Mediation
-
-### Entanglement does not eliminate propagation
-
-The preference for globally entangled encodings does not imply that physical influences fail to propagate or that spacetime dynamics become irrelevant. Rather, entanglement specifies *how much structure is shared*, while propagation specifies *how shared structure may be updated admissibly*.
-
-In particular, propagation remains necessary whenever coherence constraints must change in response to local interactions. The distinction is therefore:
-
-- **Entanglement**: a statement about the *global encoding* of coherence, typically non-factorizing and preferred under projection.
-
-- **Propagation**: a statement about the *admissible transport* of coherence updates across spacetime.
-
-Entanglement determines the scope of shared constraints; propagation determines the allowed causal updating of those constraints.
-
-### Photon propagation revisited
-
-A photon corresponds to a massless gauge-coherence mode of the coherent sector. Such modes carry no internal rebalancing cost and therefore admit globally stretched, nonlocal (encangled) encodings by default. Indeed, a single-photon state is generically entangled across spacetime modes (frequency, direction, polarization).
-
-However, gauge coherence cannot remain static without violating admissibility. The only admissible way to update a stretched, massless coherence constraint is via null transport. Consequently, even though the preferred encoding of a photon is global and entangled, *the updating of that encoding* propagates along null directions of the emergent spacetime.
-
-Thus photon propagation at speed $`c`$ is reinterpreted as:
-
-> *The null updating of a globally entangled gauge-coherence constraint, enforced by admissibility rather than by kinematic postulate.*
-
-This preserves all operational predictions of Maxwell theory while embedding them into the admissibility–encoding framework.
-
-### Forces as entanglement generators
-
-In Modal Triplet Theory, a “force” is not a primitive interaction but a constraint that correlates the admissible evolution of different degrees of freedom. Any interaction that transfers information necessarily produces entanglement, because it imposes joint constraints on previously independent subsystems.
-
-Accordingly:
-
-- Gauge interactions generate and reshape global entanglement structures.
-
-- Long-range forces correspond to coherence constraints that admit null propagation (massless gauge or metric modes).
-
-- Short-range forces correspond to coherence constraints with internal rebalancing costs (massive modes), which restrict both propagation and entanglement range.
-
-The strong interaction provides a particularly clear illustration: color coherence generates extremely tight entanglement, but admissibility forbids its free extension. The only stable encoding is forced re-partition into color-singlet basins, yielding confinement as a constraint on entanglement structure rather than a force in the classical sense.
-
-### Gravity as universal entanglement constraint
-
-Metric coherence couples universally to all coherent degrees of freedom. In this sense, gravity functions as a background entanglement constraint that correlates the admissible evolution of all subsystems. In regimes where a geometric encoding is efficient (the GR corner), this entanglement is hidden within coarse-grained metric variables. In regimes probing quantum correlations, it reappears as entanglement mediated by gravitational degrees of freedom.
-
-Gravitational waves are then understood as null-propagating updates of this universal entanglement constraint.
-
-### Measurement as forced partition of entanglement
-
-Measurement and record formation impose additional locality and stability constraints that are incompatible with unrestricted global entanglement. As a result, the preferred encoding near a selection front shifts from globally entangled descriptions to partitioned, record-compatible encodings.
-
-This transition should not be interpreted as the destruction of entanglement in any fundamental sense. Rather, it is the enforced adoption of a different encoding chart in which local particle degrees of freedom are stabilized as effectively independent subsystems. Entanglement is reduced because the new constraints forbid its maintenance, not because it was dynamically “undone.”
-
-### Summary
-
-The admissibility–encoding framework therefore yields a unified picture:
-
-1.  Entanglement is the preferred global encoding selected by projection.
-
-2.  Forces are the mechanisms by which entanglement is generated and redistributed.
-
-3.  Propagation specifies the admissible updating of entangled coherence constraints.
-
-4.  Measurement enforces partition when record stability requires it.
-
-This synthesis reconciles global entanglement with causal propagation and clarifies the role of interactions and measurement without introducing additional postulates.
-
-# Discussion and consistency statements
-
-#### Consistency with fixed–point/stability hypotheses.
-
-(H1)–(H4) supply spectral gaps, bounded projectors, and damping–balance stability; these make the coherent sector dynamically invariant and justify using $`\mathsf{P}=I\circ\Pi`$ as the physically meaningful observable map. The FCC guarantees existence/uniqueness of coherent trajectories and ensures the re–coherence map is well–posed.
-
-#### No extra postulates.
-
-Hilbert space, self–adjoint Hamiltonians, unitary evolution, Born rule, POVMs, uncertainty, and the path integral all *follow* from MTT’s geometric/analytic structure. Where standard results are invoked (Friedrichs/KLMN, Kato, Gleason–Busch, stationary phase), we state exact hypotheses and use them as black–box theorems rather than re–prove them, which is the normal standard of rigor in mathematical physics.
-
-# Open systems: Lindblad dynamics from modal disturbances
-
-In realistic settings the coherent sector interacts weakly with bundle-resolved disturbance channels (thermal or stochastic environments) parameterized by strengths $`\delta_n`$ and correlation time $`\tau_c`$. We show that, in a precise weak-coupling/Markov regime compatible with parallel-bundle stability $`\gamma_n>\delta_n`$, the reduced dynamics on $`\mathcal{H}_{\mathrm{QM}}`$ converge to a completely positive, trace-preserving semigroup with a GKLS generator.  .
-
-## System–environment setup and assumptions
-
-Let $`\mathcal{H}_{\rm SE}=\mathcal{H}_{\mathrm{QM}}\otimes\mathcal{H}_{\rm env}`$, and let the total Hamiltonian be
-``` math
-H_{\rm tot} = H_{\rm obs}\otimes \mathbf 1 + \mathbf 1\otimes H_{\rm env}
-+ \sum_\alpha S_\alpha\otimes E_\alpha,
-```
-with $`\|S_\alpha\|<\infty`$ on $`\mathcal{H}_{\mathrm{QM}}`$ and $`E_\alpha`$ bounded operators (or closable with suitable domain control) on $`\mathcal{H}_{\rm env}`$. Assume the environment reference state $`\sigma_{\rm env}`$ is stationary w.r.t. $`H_{\rm env}`$ with decaying correlations
-``` math
-\int_0^\infty \mathrm{d}t\,\big\|\langle E_\alpha(t)E_\beta\rangle_{\sigma_{\rm env}}\big\| < \infty,\qquad
-E_\alpha(t)=e^{\frac{i}{\hbar}H_{\rm env} t}E_\alpha e^{-\frac{i}{\hbar}H_{\rm env} t}.
-```
-Parallel-bundle stability provides a uniform bound on coherent-sector relaxation, $`\gamma_n>\delta_n`$, and ensures that coherent modes are not destabilized by the coupling.
-
-## Davies weak-coupling scaling and generator
-
-Consider the rescaled interaction $`H^{(\varepsilon)}_{\rm int}=\varepsilon \sum_\alpha S_\alpha\otimes E_\alpha`$ and interaction-picture dynamics on times $`t=\varepsilon^{-2}\tau`$ (Davies scaling). Then, for any trace-class system state $`\rho`$, the reduced map
-``` math
-\mathcal{E}^{(\varepsilon)}_t(\rho)\;:=\;\mathrm{Tr}_{\rm env}\!\Big[U^{(\varepsilon)}_t\,(\rho\otimes\sigma_{\rm env})\,U^{(\varepsilon)\dagger}_t\Big]
-```
-converges, as $`\varepsilon\to 0`$, to a one-parameter semigroup $`e^{t\mathcal{L}}`$ on $`\mathcal{T}_1(\mathcal{H}_{\mathrm{QM}})`$ with GKLS generator
-``` math
-\begin{align}
-\mathcal{L}(\rho) &= -\frac{i}{\hbar}[H_{\rm obs}+H_{\rm LS},\rho]
-+ \sum_{\omega}\sum_{\alpha,\beta} \Gamma_{\alpha\beta}(\omega)\Big(S_\beta(\omega)\rho S_\alpha^\dagger(\omega)
--\tfrac12\{S_\alpha^\dagger(\omega)S_\beta(\omega),\rho\}\Big), \label{eq:GKLS}
-\end{align}
-```
-where $`S_\alpha(\omega)`$ are the Fourier components of $`S_\alpha`$ in the spectral decomposition of $`H_{\rm obs}`$, $`\Gamma_{\alpha\beta}(\omega)`$ is the positive semidefinite matrix of environment spectral densities (Bochner theorem), and $`H_{\rm LS}`$ is the Lamb-shift Hamiltonian.
-
-<div id="thm:GKLS" class="theorem">
-
-**Theorem 13** (Modal weak-coupling $`\Rightarrow`$ GKLS). *Under the above assumptions and parallel-bundle stability $`\gamma_n>\delta_n`$ (uniform in the scaling), the reduced dynamics on $`\mathcal{H}_{\mathrm{QM}}`$ converge in the weak sense to the GKLS semigroup <a href="#eq:GKLS" data-reference-type="eqref" data-reference="eq:GKLS">[eq:GKLS]</a>. In particular, the generator is completely positive and trace preserving, and the unitary limit is recovered as $`\delta_n/\gamma_n\to 0`$.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* This is the standard Davies limit under mixing and clustering of environmental correlations, adapted to the modal setting. Positivity of $`\Gamma(\omega)`$ ensures complete positivity; stability prevents secular growth of coherent amplitudes that would violate the Markov approximation. ◻
-
-</div>
-
-#### Measurement compatibility.
-
-All measurement constructions (POVM dilation and Born rule derivation in §<a href="#sec:measurement" data-reference-type="ref" data-reference="sec:measurement">5</a>) remain valid: measurements are implemented by coherent modal unitaries in $`\mathcal{H}_{\rm SE}`$ followed by partial trace; the GKLS evolution commutes with this construction at the level of instruments. The exponential re-coherence functional is unchanged, so the Born law remains intact.
-
-# Limits of Predictability and Algorithmic Irreducibility
-
-The derivation of quantum mechanics in Modal Triplet Theory yields a fully deterministic and unitary Schrödinger evolution for coherent-sector states. This raises a natural question: if the effective dynamics is deterministic, why are individual measurement outcomes unpredictable even in principle?
-
-The answer is that the Schrödinger equation does not provide a globally valid effective law across admissible regimes. While unitary evolution governs intra-basin dynamics exactly, selection events correspond to noninvertible transitions between basins induced by projection and admissibility loss. Questions concerning whether or when such selection events occur lie outside the scope of any single Schrödinger evolution.
-
-Recent results show that this limitation is not merely practical but structural. In particular, it has been proven that there exist physically well-posed questions of the form *“does a specified selection event occur within the admissible coherence budget?”* for which no algorithm can decide the answer, even given complete physical data at finite precision. This undecidability arises from the combination of noninvertible projection, admissible basin structure, and robustness requirements, and does not rely on fundamental randomness or stochastic postulates.
-
-Consequently, the probabilistic character of quantum mechanics is not an approximation to an underlying deterministic predictor. Rather, probabilistic descriptions are the correct emergent tool in a setting where deterministic prediction of individual outcomes is algorithmically impossible. The Born rule derived earlier in this work should therefore be understood as assigning measures to basin capture, not as compensating for hidden variables or epistemic ignorance.
-
-This clarifies the role of the Schrödinger equation within MTT: it is exact where it applies, but it cannot be extended to a global predictor of measurement outcomes without violating admissibility. The obstruction to predictability is not a failure of quantum mechanics, but a fundamental computability limitation imposed by projection-based dynamics.
-
-A detailed treatment of selection dynamics, basin structure, and the associated computability limits is given in several additional papers covering measurement, stochasticity, indivisible processes and computability limitation.
-
-# Worked examples: explicit reconstructions and kernels
-
-We give explicit instances of §<a href="#sec:reconstruction" data-reference-type="ref" data-reference="sec:reconstruction">4</a> where $`q_{\rm obs}=q_{\rm target}`$ is realized and display the known kernels/eigenvalues; these serve as templates for numerical ab-initio work from internal overlaps.
-
-## Free particle in $`\mathbb{R}^d`$
-
-Choose internal data so that the coherent lift is $`\Phi(y,b)=\psi(y)\,\omega_0(b)`$ with $`\|\omega_0\|_{L^2}=1`$ and the 10D quadratic form splits
-``` math
-q_{10}[\Phi]=\int_{\mathbb{R}^d}\frac{\hbar^2}{2m}|\nabla\psi|^2\,\mathrm{d}x + q_{\rm int}[\Phi],\qquad q_{\rm int}\ge \Lambda\|\Phi\|^2.
-```
-Then $`q_{\rm obs}[\psi]=\int \frac{\hbar^2}{2m}|\nabla\psi|^2`$, so $`H_{\rm obs}=-\frac{\hbar^2}{2m}\Delta`$ self-adjoint on $`H^2(\mathbb{R}^d)`$. The kernel is
-``` math
-K_0(t,x;s,y)=\Big(\frac{m}{2\pi i\hbar (t-s)}\Big)^{d/2}\exp\!\Big(\frac{i m|x-y|^2}{2\hbar (t-s)}\Big),\quad t>s.
-```
-
-## Harmonic oscillator
-
-With potential $`V(x)=\tfrac12 m\omega^2|x|^2`$, choose internal warping that contributes $`V`$ in the coherent sector as in §<a href="#sec:reconstruction" data-reference-type="ref" data-reference="sec:reconstruction">4</a>; then
-``` math
-q_{\rm obs}[\psi]=\int\Big(\frac{\hbar^2}{2m}|\nabla\psi|^2+\tfrac12 m\omega^2|x|^2|\psi|^2\Big)\mathrm{d}x,\quad
-H_{\rm obs}=-\frac{\hbar^2}{2m}\Delta+\tfrac12 m\omega^2|x|^2.
-```
-Eigenvalues $`E_{\bm n}=\hbar\omega(\sum_{j=1}^d n_j + d/2)`$; the Mehler kernel follows from stationary phase or standard operator methods.
-
-## Constant magnetic field: Landau levels
-
-Introduce a uniform magnetic field via minimal coupling with a vector potential $`A(x)`$ (e.g. Landau gauge). The overlap-defined charge $`q`$ yields
-``` math
-H_{\rm obs}=\frac{1}{2m}(-i\hbar\nabla - q A)^2,
-```
-with Landau levels $`E_{n}=\hbar\omega_c(n+\tfrac12)`$ for $`\omega_c=|qB|/m`$ in $`d=2`$, and degenerate bands in $`d=3`$. This realizes the usual quantum Hall building block directly from modal overlaps.
-
-## Finite square well and self-adjoint extensions
-
-Let $`V(x)=-V_0\,\chi_{[-a,a]}(x)`$ in $`d=1`$. The form sum $`q_{\rm obs}=q_0+q_V`$ with $`q_V`$ infinitesimally form-bounded w.r.t. $`q_0`$ (Kato–Rellich) is closed and semibounded, so $`H_{\rm obs}`$ is self-adjoint. Boundary conditions at $`\pm a`$ are automatically those of the standard Schrödinger operator; bound and scattering states follow.
-
-## Time-dependent parametric oscillator
-
-With $`V(x,t)=\tfrac12 m\omega^2(t)|x|^2`$ and $`\omega(t)`$ smooth, §<a href="#sec:time-uncertainty-path" data-reference-type="ref" data-reference="sec:time-uncertainty-path">6</a> (Kato continuity) applies: there exists a unique unitary propagator $`U(t,s)`$; Lewis–Riesenfeld invariants can be used to construct exact solutions, and stationary-phase reproduces the known phase functions in the semiclassical regime.
-
-# Compatibility dictionary with Fixed Point Series
-
-We collect the mapping between the curvature–gap/disturbance framework of FP–V/VI and the QM reduction presented here; this repeats in compact form what is implemented technically throughout this paper.
-
-- **Curvature–gap law.** Bundlewise spectral gaps obey $`\lambda_n(x)=\lambda_n^{(0)}+\beta_n R(x)`$ (representation-correct; spinors $`\beta=\tfrac14`$, conformal scalars $`\beta=\tfrac16`$). Under projection, these produce a scalar potential $`V_{\rm curv}(x,t)=\sum_n \alpha_n \kappa_n \beta_n R(x,t)`$ inside $`H_{\rm obs}(t)`$.
-
-- **Stability.** Parallel-bundle stability $`\gamma_n>\delta_n`$ ensures coherent-sector invariance and validates the use of $`\mathsf{P}=I\circ\Pi`$; it also underpins the weak-coupling limit in §<a href="#sec:open-systems" data-reference-type="ref" data-reference="sec:open-systems">9</a>.
-
-- **Disturbances.** Bounded, stationary disturbances with fast-decaying correlations give, after Davies scaling, a GKLS generator on $`\mathcal{H}_{\mathrm{QM}}`$ with Lindblad operators descending from bundle-resolved channels (§<a href="#sec:open-systems" data-reference-type="ref" data-reference="sec:open-systems">9</a>).
-
-- **Measurement.** Apparatus modes furnish the Naimark/Stinespring dilation (§<a href="#sec:POVM" data-reference-type="ref" data-reference="sec:POVM">5.3</a>); the exponential re-coherence functional is unique (Theorem <a href="#thm:born" data-reference-type="ref" data-reference="thm:born">9</a>), giving Born’s law.
-
-This dictionary shows that all ingredients used here are precisely those established in the fixed-point spine, specialized to the nonrelativistic QM regime.
-
-# Appendix A: Quadratic forms, KLMN, and Friedrichs representation
-
-<span id="app:forms" label="app:forms"></span>
-
-## A.1 Definitions and the first representation theorem
-
-Let $`\mathcal{H}`$ be a complex Hilbert space with inner product $`\langle\cdot,\cdot\rangle`$ (linear in the second slot). A sesquilinear form $`q`$ with domain $`\mathcal{Q}(q)\subset\mathcal{H}`$ is:
-
-- *densely defined* if $`\overline{\mathcal{Q}(q)}=\mathcal{H}`$;
-
-- *semibounded* if $`\exists\,m\in\mathbb{R}`$ such that $`q[\psi]\ge m\|\psi\|^2`$ for all $`\psi\in\mathcal{Q}(q)`$;
-
-- *closed* if $`\mathcal{Q}(q)`$ is complete in the graph norm $`\|\psi\|_q^2:=q[\psi]+\big(1-|m|\big)\|\psi\|^2`$ (for any lower bound $`m`$).
-
-A form $`q`$ is *symmetric* if $`q(\phi,\psi)=\overline{q(\psi,\phi)}`$ on $`\mathcal{Q}(q)`$.
-
-<div id="thm:first-repr" class="theorem">
-
-**Theorem 14** (First representation/Friedrichs). *Let $`q`$ be densely defined, symmetric, closed, and semibounded on $`\mathcal{H}`$. Then there exists a unique self-adjoint operator $`H`$ with domain $`\mathrm{Dom}(H)\subset\mathcal{Q}(q)`$ such that
-``` math
-\langle \phi, H\psi\rangle \;=\; q(\phi,\psi)\qquad \forall\,\phi\in\mathcal{Q}(q),\ \psi\in\mathrm{Dom}(H).
-```
-Conversely, every self-adjoint semibounded operator $`H`$ determines such a closed form $`q_H(\psi)=\langle \psi,H\psi\rangle`$ on $`\mathrm{Dom}(H^{1/2})`$.*
-
-</div>
-
-## A.2 KLMN theorem (form-bounded perturbations)
-
-Let $`q_0`$ be densely defined, symmetric, closed, semibounded with lower bound $`m_0`$. A symmetric form $`v`$ is said to be $`q_0`$-*bounded* with relative bound $`a\ge 0`$ if
-``` math
-|v(\psi,\psi)| \;\le\; a\,q_0[\psi] + b\,\|\psi\|^2,\qquad \forall\,\psi\in\mathcal{Q}(q_0),
-```
-for some $`b\ge 0`$.
-
-<div id="thm:KLMN" class="theorem">
-
-**Theorem 15** (KLMN). *If $`v`$ is $`q_0`$-bounded with relative bound $`a<1`$, then $`q:=q_0+v`$ is closed and semibounded on $`\mathcal{Q}(q_0)`$ and defines a unique self-adjoint, semibounded operator by <a href="#thm:first-repr" data-reference-type="ref+Label" data-reference="thm:first-repr">14</a>.*
-
-</div>
-
-## A.3 Bounded pullbacks of closed forms
-
-<div id="lem:pullback" class="lemma">
-
-**Lemma 16** (Pullback by a bounded map preserves closedness). *Let $`q`$ be a densely defined, closed, semibounded form on $`\mathcal{H}_2`$ with domain $`\mathcal{Q}(q)`$, and let $`T:\mathcal{H}_1\to\mathcal{H}_2`$ be bounded. Then
-``` math
-q_T[\psi]\;:=\; q\big[T\psi\big],\qquad \mathcal{Q}(q_T):=\{\psi\in\mathcal{H}_1:\, T\psi\in\mathcal{Q}(q)\},
-```
-is densely defined, closed, and semibounded on $`\mathcal{H}_1`$.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Closedness follows because Cauchy sequences in the graph norm of $`q_T`$ map under $`T`$ to Cauchy sequences in the graph norm of $`q`$; boundedness of $`T`$ controls the norms. Semiboundedness is inherited from $`q`$. ◻
-
-</div>
-
-## A.4 Application to $`H_{\rm obs}`$
-
-Let $`H_{10}`$ be the self-adjoint $`10`$D Hamiltonian on $`L^2(M_{10},E)`$ with closed, semibounded quadratic form $`q_{10}`$ and form domain $`\mathcal{Q}(H_{10})`$. Define the observable map $`\mathsf{P}=I\circ\Pi`$ (§<a href="#sec:setup" data-reference-type="ref" data-reference="sec:setup">2</a>) and its adjoint $`\mathcal{P}^{\dagger}:L^2(Y^4)\to L^2(M_{10})`$, which is bounded by <a href="#lem:I-Pi-bounded" data-reference-type="ref+Label" data-reference="lem:I-Pi-bounded">2</a>. Set
-``` math
-q_{\rm obs}[\psi]\;:=\; q_{10}\big[\mathcal{P}^{\dagger}\psi\big],\qquad
-\mathcal{Q}(q_{\rm obs})=\{\psi:\mathcal{P}^{\dagger}\psi\in \mathcal{Q}(H_{10})\}.
-```
-By <a href="#lem:pullback" data-reference-type="ref+Label" data-reference="lem:pullback">16</a>, $`q_{\rm obs}`$ is closed and semibounded. <a href="#thm:first-repr" data-reference-type="ref+Label" data-reference="thm:first-repr">14</a> then yields the unique self-adjoint $`H_{\rm obs}`$ with $`\langle\psi,H_{\rm obs}\psi\rangle=q_{\rm obs}[\psi]`$ on $`\mathrm{Dom}(H_{\rm obs})\subset\mathcal{Q}(q_{\rm obs})`$. This rigorizes §<a href="#sec:reduction" data-reference-type="ref" data-reference="sec:reduction">3</a> and justifies <a href="#thm:Friedrichs" data-reference-type="ref+Label" data-reference="thm:Friedrichs">3</a> without any compression heuristics.
-
-## A.5 Typical Schrödinger forms and Kato–Rellich
-
-On $`L^2(\mathbb{R}^d)`$, $`q_0[\psi]=\int \frac{\hbar^2}{2m}|\nabla\psi|^2`$ is closed (domain $`H^1(\mathbb{R}^d)`$). If $`V=V_+-V_-`$ with $`V_-\in L^{p}(\mathbb{R}^d)`$ in a Kato class, then the potential form $`v[\psi]=\int V|\psi|^2`$ is $`q_0`$-bounded with relative bound $`<1`$ (Kato–Rellich), hence $`q_0+v`$ is closed and defines the standard self-adjoint $`H=-\frac{\hbar^2}{2m}\Delta+V`$.
-
-*Conclusion.* All uses of $`H_{\rm obs}`$ in the main text rest on <a href="#thm:first-repr,thm:KLMN,lem:pullback" data-reference-type="ref+Label" data-reference="thm:first-repr,thm:KLMN,lem:pullback">[thm:first-repr,thm:KLMN,lem:pullback]</a>, and the hypotheses (H1)–(H7) guarantee they apply.
-
-# Appendix B: Kato’s theorem for time-dependent Hamiltonians
-
-<span id="app:kato" label="app:kato"></span>
-
-## B.1 Hypotheses (form sense)
-
-Let $`\{q(t)\}_{t\in I}`$ be a family of densely defined, closed, semibounded quadratic forms on $`\mathcal{H}`$ with a *common* domain $`\mathcal{Q}\subset\mathcal{H}`$. Assume:
-
-1.  *Uniform lower bound:* $`\exists\,m\in\mathbb{R}`$ such that $`q(t)[\psi]\ge m\|\psi\|^2`$ for all $`\psi\in\mathcal{Q}`$ and $`t\in I`$.
-
-2.  *Form continuity:* $`t\mapsto q(t)[\psi]`$ is continuous on $`I`$ for each $`\psi\in\mathcal{Q}`$.
-
-By the representation theorem, each $`q(t)`$ determines a self-adjoint operator $`H(t)`$ with $`\mathrm{Dom}(H(t))\subset\mathcal{Q}`$ and $`H(t)\ge m`$.
-
-<div id="thm:kato" class="theorem">
-
-**Theorem 17** (Kato’s evolution theorem (form version)). *Under **(K1)–(K2)**, there exists a unique two-parameter family of unitary operators $`\{U(t,s)\}_{t,s\in I}`$ on $`\mathcal{H}`$ such that:*
-
-1.  *$`U(t,t)=\mathbf{1}`$ and $`U(t,r)U(r,s)=U(t,s)`$ for all $`t,r,s\in I`$;*
-
-2.  *For each $`\psi\in\mathcal{Q}`$, $`t\mapsto U(t,s)\psi`$ is strongly continuous and
-    ``` math
-    i\hbar\,\frac{\mathrm{d}}{\mathrm{d}t}\langle \phi, U(t,s)\psi\rangle \;=\; q(t)\!\big[\phi,\, U(t,s)\psi\big]\quad \forall\,\phi\in\mathcal{Q};
-    ```*
-
-3.  *If, in addition, $`t\mapsto q(t)`$ is $`C^1`$ in the form sense, then $`i\hbar\,\partial_t U(t,s)\psi=H(t)\,U(t,s)\psi`$ holds for all $`\psi\in\mathrm{Dom}(H(t))`$.*
-
-</div>
-
-## B.2 Application to $`H_{\rm obs}(t)`$
-
-In the main text, $`q_{\rm obs}(t)`$ has the Schrödinger form
-``` math
-q_{\rm obs}(t)[\psi]=\int\left(\frac{\hbar^2}{2m}|\nabla\psi|^2 + V_{\rm eff}(x,t)\,|\psi|^2\right)\mathrm{d}x,
-```
-with $`V_{\rm eff}=V_0(x)+V_{\rm curv}(x,t)`$ and $`V_{\rm curv}(x,t)=\sum_n \alpha_n \kappa_n \beta_n R(x,t)`$. If $`R(\cdot,t)\in L^\infty_{\rm loc}`$ and $`t\mapsto R(\cdot,t)`$ is continuous in the distributional sense on compact sets, then $`t\mapsto q_{\rm obs}(t)`$ is form-continuous on a common domain $`\mathcal{Q}=H^1(\mathbb{R}^d)`$. The uniform lower bound follows if $`V_{\rm eff}`$ is bounded below (or $`V_-`$ is $`q_0`$-small). Hence <a href="#thm:kato" data-reference-type="ref+Label" data-reference="thm:kato">17</a> applies, yielding the unique unitary propagator $`U(t,s)`$ on $`\mathcal{H}_{\mathrm{QM}}`$ with the properties used in §<a href="#sec:time-uncertainty-path" data-reference-type="ref" data-reference="sec:time-uncertainty-path">6</a>.
-
-## B.3 Remarks on stronger regularity
-
-If $`t\mapsto V_{\rm eff}(\cdot,t)`$ is $`C^1`$ in $`L^\infty_{\rm loc}`$ (or in the Kato sense), one obtains differentiability of $`U(t,s)\psi`$ in $`\mathcal{H}`$ and the strong Schrödinger equation $`i\hbar\,\partial_t U(t,s)\psi=H_{\rm obs}(t)\,U(t,s)\psi`$ for $`\psi\in\mathrm{Dom}(H_{\rm obs}(t))`$. If only **(K1)–(K2)** hold, the weak Schrödinger form equation in <a href="#thm:kato" data-reference-type="ref+Label" data-reference="thm:kato">17</a>(b) suffices for all computations in the main text.
-
-# Appendix C: Functional–equation proof details for the Born rule
-
-<span id="app:born-functional" label="app:born-functional"></span>
-
-## C.1 Axioms and reduction to a scalar functional
-
-Let $`\mathcal{H}_{\mathrm{QM}}`$ be a complex Hilbert space, $`\psi\in\mathcal{H}_{\mathrm{QM}}`$ a unit vector, and $`P`$ an orthogonal projector. Define a set function
-``` math
-\tilde\mu_\psi(P) = w(P,\psi)= e^{-\Delta A(P,\psi)/\hbar}\in[0,\infty),
-```
-with $`\Delta A`$ the modal re–coherence action increment. Assume:
-
-- *Noncontextuality:* $`\tilde\mu_\psi(P)`$ depends only on $`(P,\psi)`$.
-
-- *Orthogonal additivity:* For orthogonal $`\{P_i\}`$ with $`P=\sum_i P_i`$, $`\tilde\mu_\psi(P)=\sum_i \tilde\mu_\psi(P_i)`$.
-
-- *Unitary covariance:* $`\tilde\mu_{U\psi}(UPU^\dagger)=\tilde\mu_\psi(P)`$.
-
-- *Continuity:* $`(P,\psi)\mapsto \tilde\mu_\psi(P)`$ is continuous.
-
-By (A1)–(A3), there exists a continuous $`f:[0,1]\to[0,\infty)`$ such that
-``` math
-\tilde\mu_\psi(P)=f\!\big(\langle\psi,P\psi\rangle\big)=:f(p),\qquad p\in[0,1].
-```
-
-## C.2 Additivity on partitions and Cauchy–type functional equation
-
-Let $`\{p_i\}_{i=1}^N\subset[0,1]`$ with $`\sum_{i=1}^N p_i\le 1`$. There exist orthogonal projectors $`\{P_i\}`$ with $`\langle\psi,P_i\psi\rangle=p_i`$ and $`P=\sum_i P_i`$ (extend $`\{P_i\}`$ to a decomposition of the identity if necessary). Then by (A2),
-``` math
-f\!\Big(\sum_{i=1}^N p_i\Big) \;=\; \sum_{i=1}^N f(p_i).
-```
-In particular, for rational partitions with $`p=\frac{m}{N}`$,
-``` math
-f\!\Big(\frac{m}{N}\Big) = m\,f\!\Big(\frac{1}{N}\Big),\qquad
-f\!\Big(\frac{1}{N}\Big)=\frac{f(1)}{N}.
-```
-Thus for $`p\in\mathbb{Q}\cap[0,1]`$, $`f(p)=K\,p`$ with $`K:=f(1)`$. By continuity (A4), this extends to all $`p\in[0,1]`$:
-``` math
-\boxed{\, f(p)=K\,p \, } \quad\text{with } K=f(1)>0.
-```
-
-## C.3 Normalization and the Born rule
-
-For an orthogonal resolution $`\{P_i\}`$ of the identity, $`\sum_i \langle\psi,P_i\psi\rangle=1`$. Hence
-``` math
-\sum_i \tilde\mu_\psi(P_i)=\sum_i f(\langle\psi,P_i\psi\rangle)=K\sum_i \langle\psi,P_i\psi\rangle = K.
-```
-Normalizing $`\mu_\psi(P):=\tilde\mu_\psi(P)/\sum_i \tilde\mu_\psi(P_i)`$ yields
-``` math
-\boxed{\, \mu_\psi(P)=\langle\psi,P\psi\rangle \, }.
-```
-Equivalently, the re–coherence action increment is $`\Delta A(P,\psi)=-\hbar\ln \langle\psi,P\psi\rangle + C`$ with $`C=-\hbar\ln K`$.
-
-## C.4 Relation to Gleason–Busch
-
-For $`\dim\mathcal{H}_{\mathrm{QM}}\ge 3`$, Gleason’s theorem implies any noncontextual, finitely additive probability measure on projectors arises from a density operator. Busch’s generalization covers POVMs and low dimensions. Our derivation identifies the unique exponential weight functional compatible with these theorems; restricting to pure states gives the Born law.
-
-# Appendix D: Stationary–phase lemma and Van Vleck–Gutzwiller kernel
-
-<span id="app:stationary-phase" label="app:stationary-phase"></span>
-
-## D.1 Oscillatory integral lemma
-
-Let $`\Phi:\mathbb{R}^n\to\mathbb{R}`$ be $`C^2`$ with a nondegenerate critical point at $`x_0`$ ($`\nabla\Phi(x_0)=0`$, $`\det \Phi''(x_0)\neq 0`$). Let $`a\in C_c^\infty(\mathbb{R}^n)`$. Then as $`\hbar\to 0^+`$,
-``` math
-\int_{\mathbb{R}^n} a(x)\,e^{\frac{i}{\hbar}\Phi(x)}\,dx
-= (2\pi\hbar)^{n/2}\, e^{\frac{i}{\hbar}\Phi(x_0)} e^{i\frac{\pi}{4}\sigma}
-\frac{a(x_0)}{\sqrt{|\det \Phi''(x_0)|}} + \mathcal{O}(\hbar^{(n+1)/2}),
-```
-where $`\sigma`$ is the signature of $`\Phi''(x_0)`$.
-
-## D.2 Application to the Schrödinger kernel
-
-For $`H_{\rm obs}=-\frac{\hbar^2}{2m}\Delta+V(x)`$ with $`V\in C^2`$ and $`t>s`$, the integral representation of the propagator $`K(t,x;s,y)`$ admits a stationary–phase evaluation over classical paths $`\gamma_{\rm cl}`$ from $`(s,y)`$ to $`(t,x)`$ with action $`S[\gamma_{\rm cl}]`$ and Maslov index $`\nu`$. Under standard nonconjugacy hypotheses,
-``` math
-\boxed{\, K(t,x;s,y)=\sum_{\gamma_{\rm cl}}
-\Big(\frac{1}{2\pi i\hbar}\Big)^{d/2}
-\left|\det\frac{\partial^2 S}{\partial x\,\partial y}\right|^{1/2}
-\,e^{\frac{i}{\hbar}S[\gamma_{\rm cl}]-i\pi\nu/2} + \mathcal{O}(\hbar)\, }.
-```
-This matches the Van Vleck–Gutzwiller form and justifies §<a href="#sec:time-uncertainty-path" data-reference-type="ref" data-reference="sec:time-uncertainty-path">6</a>.
-
-# Appendix E: Davies weak–coupling limit and Lindblad generator
-
-<span id="app:davies-lindblad" label="app:davies-lindblad"></span>
-
-## E.1 Assumptions
-
-Let $`\mathcal{H}_{\rm SE}=\mathcal{H}_{\mathrm{QM}}\otimes\mathcal{H}_{\rm env}`$ with the total Hamiltonian $`H_{\rm tot}=H_{\rm obs}\otimes \mathbf{1} + \mathbf{1}\otimes H_{\rm env} + \varepsilon \sum_\alpha S_\alpha\otimes E_\alpha`$. Assume:
-
-- Stationary environment state $`\sigma_{\rm env}`$ with $`\mathrm{Tr}(\sigma_{\rm env} E_\alpha)=0`$.
-
-- Correlations $`C_{\alpha\beta}(t)=\mathrm{Tr}\big(\sigma_{\rm env} E_\alpha(t) E_\beta\big)`$ integrable: $`\int_0^\infty |C_{\alpha\beta}(t)|dt <\infty`$.
-
-- Parallel–bundle stability $`\gamma_n>\delta_n`$ (prevents secular coherent growth).
-
-## E.2 Scaling and convergence
-
-Define $`U_\varepsilon(t)=\exp\{-\frac{i}{\hbar} H_{\rm tot} t\}`$ and the reduced map $`\mathcal{E}_\varepsilon(t)\rho = \mathrm{Tr}_{\rm env}\!\big[U_\varepsilon(t)(\rho\otimes\sigma_{\rm env})U_\varepsilon(t)^\dagger\big]`$. In the interaction picture and on times $`t=\varepsilon^{-2}\tau`$, the Dyson expansion and the Riemann–Lebesgue lemma yield, as $`\varepsilon\to 0`$,
-``` math
-\mathcal{E}_\varepsilon(\varepsilon^{-2}\tau)\;\Longrightarrow\; e^{\tau \mathcal{L}},
-```
-where $`\mathcal{L}`$ has GKLS form (spectral decomposition of $`H_{\rm obs}`$):
-``` math
-\mathcal{L}(\rho) = -\frac{i}{\hbar}[H_{\rm obs}+H_{\rm LS},\rho]
-+ \sum_{\omega}\sum_{\alpha,\beta}\Gamma_{\alpha\beta}(\omega)\!\left(S_\beta(\omega)\rho S_\alpha^\dagger(\omega) - \frac12\{S_\alpha^\dagger(\omega)S_\beta(\omega),\rho\}\right).
-```
-Here $`\Gamma_{\alpha\beta}(\omega)=\int_{-\infty}^{\infty} e^{i\omega t} C_{\alpha\beta}(t)\,dt/(2\pi\hbar^2)`$ is positive semidefinite (Bochner) and $`H_{\rm LS}`$ is the Lamb shift.
-
-## E.3 Complete positivity and trace preservation
-
-Positivity of $`\Gamma(\omega)`$ implies complete positivity of $`e^{\tau\mathcal{L}}`$, and $`\sum_{\alpha,\beta}\Gamma_{\alpha\beta}(\omega)[S_\alpha^\dagger(\omega),S_\beta(\omega)]=0`$ ensures trace preservation. Stability $`\gamma_n>\delta_n`$ makes the Markov approximation consistent in the coherent sector.
-
-# Appendix F: Explicit Naimark/Stinespring dilation for POVMs
-
-<span id="app:naimark" label="app:naimark"></span>
-
-## F.1 Statement
-
-Let $`\{E_\alpha\}`$ be a POVM on $`\mathcal{H}_{\mathrm{QM}}`$ (finite or countable). Then there exist a Hilbert space $`\mathcal{K}`$, an isometry $`V:\mathcal{H}_{\mathrm{QM}}\to \mathcal{H}_{\mathrm{QM}}\otimes\mathcal{K}`$, and a PVM $`\{\Pi_\alpha\}`$ on $`\mathcal{K}`$ such that
-``` math
-E_\alpha \;=\; V^\dagger (\mathbf{1}\otimes \Pi_\alpha)\, V,\qquad \sum_\alpha E_\alpha=\mathbf{1}.
-```
-
-## F.2 Construction (finite POVM)
-
-Let $`E_\alpha=K_\alpha^\dagger K_\alpha`$ be a Kraus decomposition with $`\sum_\alpha K_\alpha^\dagger K_\alpha=\mathbf{1}`$. Set $`\mathcal{K}=\mathbb{C}^N`$ with orthonormal $`\{|\alpha\rangle\}`$ and define $`V:\mathcal{H}_{\mathrm{QM}}\to \mathcal{H}_{\mathrm{QM}}\otimes\mathcal{K}`$ by $`V\psi=\sum_\alpha (K_\alpha\psi)\otimes |\alpha\rangle`$. Then $`V^\dagger V=\mathbf{1}`$ and with $`\Pi_\alpha=|\alpha\rangle\langle\alpha|`$ we have
-``` math
-V^\dagger(\mathbf{1}\otimes \Pi_\alpha) V
-= \sum_{\beta,\gamma} K_\beta^\dagger K_\gamma \langle\beta|\Pi_\alpha|\gamma\rangle
-= K_\alpha^\dagger K_\alpha = E_\alpha.
-```
-Minimality follows by taking $`\mathcal{K}=\overline{\mathrm{span}}\{K_\alpha\mathcal{H}_{\mathrm{QM}}\}`$.
-
-## F.3 Realization in MTT
-
-Choose $`\mathcal{K}`$ as an apparatus coherent–sector subspace $`\subset \mathcal{H}_{\text{coh}}`$, implement $`V`$ by a coherent modal unitary generated by $`H_{10}`$ during the measurement interval, and take $`\Pi_\alpha`$ as sharp pointer projectors. Applying the observable map and partial trace recovers $`\{E_\alpha\}`$ on $`\mathcal{H}_{\mathrm{QM}}`$.
-
-# Appendix G: Domains, essential self–adjointness, and examples
-
-<span id="app:domains" label="app:domains"></span>
-
-## G.1 Kato–Rellich and Schrödinger operators
-
-On $`L^2(\mathbb{R}^d)`$, $`H_0=-\frac{\hbar^2}{2m}\Delta`$ is self–adjoint on $`H^2(\mathbb{R}^d)`$. If $`V=V_+ - V_-`$ with $`V_-\le a\,(-\Delta)+b`$ in the quadratic–form sense for some $`a<1`$, then $`H=H_0+V`$ is self–adjoint and bounded below on $`H^2(\mathbb{R}^d)`$.
-
-## G.2 Nelson’s analytic vector theorem (oscillator)
-
-For $`H=\frac{1}{2m}p^2+\frac12 m\omega^2 x^2`$, Schwartz space $`\mathcal{S}(\mathbb{R})`$ consists of analytic vectors for $`H`$; hence $`H`$ is essentially self–adjoint on $`C_c^\infty(\mathbb{R})`$.
-
-## G.3 Magnetic Hamiltonians
-
-For $`H=\frac{1}{2m}(-i\hbar\nabla - qA)^2+V`$ with $`A\in L^2_{\mathrm{loc}}`$ and $`V`$ in the Kato class, self–adjointness holds on the magnetic Sobolev domain $`H_A^1`$; essential self–adjointness on $`C_c^\infty`$ holds under standard growth/regularity of $`A`$ and $`V`$.
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

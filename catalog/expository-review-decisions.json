@@ -9,6 +9,14 @@
       "reviewed_pdf_sha256": "97e9b13e5a1979e66992e775e62e2203b40608ea8264fb57c5f6239d3d5e20ae",
       "reviewed_source_tree_sha256": "b7be645a82c8906c98ee175cb6acaa2daebc2070738bbcf2fe791dbb4c8ab07c"
     },
+    "modal-triplet-theory-from-mtt-to-quantum-mechanics": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Rebuilt as a standalone explanatory coherent-sector reconstruction and Born-source boundary. The paper defines the complete Hilbert, state, observable, Hamiltonian, unitary, clock, instrument, composition, locality, and source record; proves a conditional MTT-QM reconstruction theorem, a sufficient closed reducing-form pullback, and an exact target-embedding result while classifying the latter as expressiveness rather than prediction; separates complex structure and noncommutativity from projection; replaces the invalid universal self-adjoint time operator by clock-POVM and Mandelstam-Tamm statements; separates Gleason-Busch characterization from probability sourcing; imports the exact selected q79 binary stopped output-measure and second-moment descent result only on its declared Fock-output domain; treats measurement as an ordinary physical interaction and record; narrows entanglement, path-integral, and Lindblad claims to their standard hypotheses; retains B.QM.01 as globally open; and the complete 18-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "582ba1b90adaf594fcf10271b41d0f0bfc2ab6f2c03490747e233b549d626cb2",
+      "reviewed_pdf_sha256": "11d3c508932549006540c512b4db81ebe0f70bcbf7ade04928996ef7c4367f0c",
+      "reviewed_source_tree_sha256": "0e8425ba20399ce79fbc3b26f1a591aadd37dd6a1fb1eefb90fb60a5acba2bf9"
+    },
     "modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880": {
       "status": "reviewed",
       "reviewed_on": "2026-07-30",

@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.17074246",
+      "created": "2026-07-30T18:56:27.085692+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21708961",
+      "files": [
+        {
+          "checksum": "md5:c3d8f2859ca4a0e81adb7fd28d9fe2fe",
+          "content_url": "https://zenodo.org/api/records/21708961/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 439310
+        }
+      ],
+      "id": "21708961",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21708961",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and Nonrelativistic Quantum Mechanics: A Coherent-Sector Reconstruction and the Born-Source Boundary",
+      "updated": "2026-07-30T18:56:27.462272+00:00",
+      "version": "v4"
+    },
+    {
       "concept_doi": "10.5281/zenodo.17038313",
       "created": "2026-07-30T18:31:10.210729+00:00",
       "creators": [

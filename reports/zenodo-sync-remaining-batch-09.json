@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T18:56:10+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21708961",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "c3d8f2859ca4a0e81adb7fd28d9fe2fe",
+      "local_pdf_sha256": "11d3c508932549006540c512b4db81ebe0f70bcbf7ade04928996ef7c4367f0c",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v4"
+    }
+  ]
+}
