@@ -11,11 +11,11 @@ Canonical papers audited: **139**.
 | Priority | Papers |
 | --- | ---: |
 | critical | 10 |
-| major | 11 |
+| major | 10 |
 | moderate | 6 |
 | light | 12 |
 | low | 1 |
-| reviewed | 97 |
+| reviewed | 98 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -27,7 +27,7 @@ Canonical papers audited: **139**.
 | concrete_foothold | 44 |
 | limitations | 1 |
 | object_intuition | 93 |
-| orientation | 36 |
+| orientation | 37 |
 | result_interpretation | 16 |
 
 ## Revision Queue
@@ -49,7 +49,6 @@ Canonical papers audited: **139**.
 | major | major | `coherence-capacity-as-the-fundamental-resource-of-effec-cd41c322` | 11 | 140.5 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | major | major | `horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71` | 11 | 102.7 | 5/7 | object_intuition, concrete_foothold |
 | major | major | `quantum-field-theory-reconstruction-from-coherence-basi-ef12097a` | 11 | 107.5 | 5/7 | object_intuition, concrete_foothold |
-| major | major | `modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83` | 10 | 210.3 | 6/7 | object_intuition |
 | major | major | `particles-and-forces-as-coherence-basins-and-capacity-gradients` | 10 | 124.0 | 5/7 | object_intuition, concrete_foothold |
 | major | major | `computational-irreducibility-from-projection-undecidabi-6cc6aafd` | 9 | 190.1 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | major | major | `cosmology-as-global-coherence-capacity-evolution` | 8 | 134.6 | 5/7 | object_intuition, concrete_foothold |
@@ -100,6 +99,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `the-projection-admissibility-principle-descent-recovery-b0fd6e59` | 11 | 176.0 | 6/7 | object_intuition |
 | reviewed | major | `coherent-kinematics-in-modal-triplet-theory-chart-persi-359fefe8` | 10 | 151.1 | 4/7 | orientation, object_intuition, concrete_foothold |
 | reviewed | major | `fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce` | 10 | 234.6 | 7/7 | - |
+| reviewed | major | `modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83` | 10 | 232.0 | 5/7 | orientation, object_intuition |
 | reviewed | major | `projection-probability-and-irreversibility-shadow-bridg-a86c97e5` | 10 | 217.9 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | major | `closure-and-inevitability-in-modal-triplet-theory` | 9 | 215.7 | 7/7 | - |
 | reviewed | major | `coherent-green-functions-replacing-point-sources-by-adm-98607519` | 9 | 236.1 | 7/7 | - |

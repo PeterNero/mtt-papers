@@ -1,497 +1,516 @@
 ---
 abstract: |
-  We extend the Modal Triplet Theory (MTT) bridge from the torsion–free SU(3) (Calabi–Yau) slice to the *non–Kähler, flux* slice governed by the Hull–Strominger system, and upgrade the result from admissibility to *true selection by MTT*. On a compact complex threefold with trivial canonical bundle, conformally balanced metric, NS–NS three–form $`\widehat{H}`$, and a Hermitian–Yang–Mills (HYM) bundle, we formulate *twisted* Standing Assumptions (SA.F1–SA.F4) ensuring contractivity of the projected flow and the existence of a *unique coherent fixed point*. We then construct a *selection potential* $`\Xi`$ in the torsional SU(3) slice and prove: (i) its stationary points coincide with solutions of the Hull–Strominger system (with the Bismut/Hull connection on $`TX`$); (ii) under SA.F1–SA.F4, $`\Xi`$ is strictly convex near a Strominger solution, hence that solution is the *unique local minimizer*; (iii) the MTT fixed point coincides with this minimizer and is globally attractive in the coherent sector. A reference implementation on the Fu–Yau class (torus bundles over K3 and K3–orbifolds) verifies twisted spectral gaps, bounded projectors, and commuting *torsionful* Laplacians. Compactification “choice” is replaced by *fixed–point selection* also in the non–Kähler regime; technically, this yields *controlled truncations*, *built–in decoherence*, and *correlated low–energy data* in the presence of flux, fully parallel to the CY case.
+  The Hull–Strominger system couples a conformally balanced Hermitian metric, holomorphic gauge bundles, Hermitian–Yang–Mills connections, torsion, and the differential Green–Schwarz identity on one compact complex threefold. This paper asks a precise question: when does a fixed point of a Modal Triplet Theory evolution determine a solution of that system? We define a typed bridge from an upstairs MTT configuration space to Hull–Strominger data and prove exact and residual fixed-point descent theorems. Exact descent requires the bridge to intertwine the selected MTT flow with a lower geometric flow, such as the Anomaly flow together with the required bundle evolutions. Approximate intertwining yields only a quantified equation residual. These results establish a conditional correspondence, not compactification selection. The former selection-potential, global-convexity, and automatic Fu–Yau claims are withdrawn. Established Fu–Yau and Anomaly-flow results provide a mathematically appropriate lower target, while the selected $`q=79`$ program still lacks one common rank-three visible–hidden Hull–Strominger tuple and a connection-preserving intertwiner from the MTT carrier.
 author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v1.0
-date: September 7 2025
-generated_from_main_tex_sha256: b1025edbb6bbc19a45b4ef870a1bc35a97562b76e053565820605d38139434c1
+current_version: v2
+date: Version 2, July 2026
+generated_from_main_tex_sha256: c7cbe4cc0ebe987609ae16a2520b6df9bf18aff70c503657b6a356a7ba2cba2d
 paper_id: modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  Modal Triplet Theory: From MTT to the Strominger (Heterotic Flux) System  
-  Selection of Non–Kähler SU(3) Geometry by a Fixed–Point Principle
-zenodo_doi: 10.5281/zenodo.17071767
-zenodo_record_id: 17071767
-zenodo_url: "https://zenodo.org/records/17071767"
+  Modal Triplet Theory and the Hull–Strominger System:
+  A Conditional Fixed-Point Correspondence and the $`q=79`$ Completion Boundary
+zenodo_doi: 10.5281/zenodo.21707236
+zenodo_record_id: 21707236
+zenodo_url: "https://zenodo.org/records/21707236"
 ---
 
-# Introduction and Motivation
+# Revision note: Version 2
 
-#### MTT in brief.
+<div class="description">
 
-Modal Triplet Theory (MTT) posits a ten–dimensional modal geometry with three orthogonal internal bundles over a $`4`$D base and a joint harmonic projector defining the coherent sector. A dissipative flow $`\Phi_t`$ on field space, composed with the projector, yields a contractive map whose unique fixed point $`\Psi^*`$ projects to observed low–energy physics. The Calabi–Yau (CY) slice reproduces standard string backgrounds and effective dynamics while adding analytic control (spectral gaps, bounded projectors, commuting modal Laplacians) .
+Version 2 supersedes Version 1 and its claim that MTT had uniquely selected a non-Kähler heterotic compactification.
 
-#### Aim.
+The earlier argument used a “twisted differential” even though the anomaly equation generally gives $`\mathrm dH\ne0`$, inferred a contraction without a verified contraction constant, and treated an indefinite constrained functional as a coercive strictly convex selection potential. It also assembled Fu–Yau, Iwasawa, bundle, and MTT ingredients that had not been constructed on one common carrier.
 
-We generalize the CY construction to the heterotic *flux* regime: compact complex threefolds with trivial canonical bundle, non–Kähler (conformally balanced) metrics, nonzero flux and HYM bundles, subject to the *Hull–Strominger system* . Beyond *compliance*, we prove *selection*: we build a torsional SU(3) *selection potential* $`\Xi`$ and show that its unique local minimizer (under SA.F) is exactly the Strominger solution realized by the MTT fixed point.
+This version removes the invalid selection functional and replaces it with a typed flow-intertwining contract. It proves exactly what follows from an intertwiner, gives the corresponding residual estimate, and separates lower Hull–Strominger existence from MTT source selection.
 
-#### Key corrections vs. prior draft.
+The Hull–Strominger equations, the use of conformally balanced geometry and Hermitian–Yang–Mills data, fixed-point methods as a possible bridge, and Fu–Yau geometry as the strongest established lower-space target are retained.
 
-\(i\) We use the *gauge–invariant Green–Schwarz 3–form* $`\widehat{H}`$ (not a globally exact $`H`$), with $`\mathrm{d}\widehat{H}=\frac{\alpha'}{4}\big(\mathrm{Tr}F\wedge F-\mathrm{Tr}R^+\wedge R^+\big)`$. (ii) We endow $`\Xi`$ with $`|\widehat{H}|^2`$ and the Chern–Simons couplings, ensuring global gauge invariance (gerbe picture). (iii) We give full proofs (twisted gap, bounded projector, commuting torsionful blocks, Lyapunov descent, strict convexity, fixed point $`=`$ minimizer).
+MTT must still construct one selected $`q=79`$ physical visible–hidden background and prove that its upper evolution descends to the required geometric and bundle flows with the same connections, traces, and global flux data.
 
-#### Contributions.
+</div>
 
-- Twisted Standing Assumptions (SA.F1–SA.F4) and a *Flux Fixed–Point Theorem*.
+# The question and the answer
 
-- A *selection potential* $`\Xi`$ for $`(g,J,\Omega,\Phi;B,A)`$ using $`\widehat{H}`$; Euler–Lagrange equations $`\Leftrightarrow`$ Hull–Strominger with $`R^+`$.
+## Why a fixed-point bridge is attractive
 
-- *Strict convexity* of $`\Xi`$ near a Strominger solution $`\Rightarrow`$ *unique local minimum*; equality with the MTT fixed point and global attraction in the coherent sector.
+The Hull–Strominger system is not one equation. It is an assembly of complex geometry, gauge theory, a differential anomaly equation, and global flux data. MTT, in turn, is organized around admissible carriers, projected sectors, and fixed-point evolution. It is therefore natural to ask whether an MTT fixed point can be transported into a heterotic fixed point.
 
-- Fu–Yau implementation: admissibility checks and consistency.
-
-- (Case study) Fu–Yau class (Sec. <a href="#sec:FuYau" data-reference-type="ref" data-reference="sec:FuYau">8</a>); see also *Appendix <a href="#app:iwasawa" data-reference-type="ref" data-reference="app:iwasawa">14</a>* for a compact nilmanifold (Iwasawa) realization.
-
-#### Organisation.
-
-Section <a href="#sec:Prelim" data-reference-type="ref" data-reference="sec:Prelim">2</a> fixes function spaces, gauges, and $`\widehat{H}`$. Section <a href="#sec:Strominger" data-reference-type="ref" data-reference="sec:Strominger">3</a> recalls SU(3) torsion and the Strominger system. Section <a href="#sec:TwistedSA" data-reference-type="ref" data-reference="sec:TwistedSA">4</a> proves SA.F1–SA.F4 and the fixed–point theorem. Section <a href="#sec:Selection" data-reference-type="ref" data-reference="sec:Selection">5</a> constructs $`\Xi`$ and proves selection. Sections <a href="#sec:WS" data-reference-type="ref" data-reference="sec:WS">6</a>–<a href="#sec:FuYau" data-reference-type="ref" data-reference="sec:FuYau">8</a> discuss worldsheet $`\beta=0`$, HYM/Bianchi, and the Fu–Yau case. Appendices provide operator estimates, linearization, and commuting–block details.
-
-# Preliminaries: Function Spaces, Gauges, and Green–Schwarz 3–form
-
-## Function spaces and bounded geometry
-
-All manifolds are smooth, compact, without boundary. Metrics, connections, and forms live in Sobolev spaces $`H^s`$ for $`s`$ large (or $`C^{k,\alpha}`$ Hölder spaces), with *bounded geometry* hypotheses: uniform bounds on curvature and a positive injectivity radius. Norms $`\|\cdot\|_{H^s}`$, $`\|\cdot\|_{C^{k,\alpha}}`$ are taken with respect to a fixed background.
-
-## Gauge choices and slices
-
-We work modulo diffeomorphisms and gauge:
-
-- *Metric*: DeTurck gauge for $`g`$ (fix a background connection to eliminate diffeo freedom in elliptic variations).
-
-- *Gauge field*: unitary Coulomb gauge for $`A`$ (with respect to $`g`$) to fix $`\mathcal{G}`$.
-
-- *B–field*: $`B`$ is a *bundle 2–gerbe* connection; we work in local potentials and fix a gerbe gauge slice (Coulomb–type) consistent with large gauge transformations.
-
-## Green–Schwarz 3–form and Bismut connection
-
-Define the Chern–Simons 3–forms
+The attraction of this idea should not obscure the logical order. A fixed point in one space is not automatically a fixed point in another. One needs a map between the spaces, and that map must respect the evolutions. This paper supplies that missing mathematical sentence:
 ``` math
-\omega_3(A)=\mathrm{Tr}\!\big(A\wedge \mathrm{d}A+\tfrac{2}{3}A\wedge A\wedge A\big),\quad
-\omega_3(\omega^+)=\mathrm{Tr}\!\big(\omega^+\wedge \mathrm{d}\omega^+ +\tfrac{2}{3}\omega^+\wedge \omega^+\wedge \omega^+\big),
+\begin{CD}
+\mathcal U_{\mathrm{MTT}} @>{R_\tau}>> \mathcal U_{\mathrm{MTT}}\\
+@V{\mathfrak B}VV @VV{\mathfrak B}V\\
+\mathcal Y_{\mathrm{HS}} @>{S_\tau}>> \mathcal Y_{\mathrm{HS}} .
+\end{CD}
 ```
-with $`\omega^+`$ the Bismut connection on $`TX`$ and curvature $`R^+`$. The *gauge–invariant* Green–Schwarz 3–form is
+Here $`R_\tau`$ is a selected MTT stabilization evolution, $`S_\tau`$ is a declared lower geometric evolution, and $`\mathfrak B`$ is a typed bridge. The commuting square is an assumption until its rows are derived from one source.
+
+## What is proved
+
+The paper owns three limited results.
+
+1.  Exact flow intertwining sends an MTT fixed point to a lower fixed point.
+
+2.  A bounded intertwining defect sends an MTT fixed point only to a lower approximate solution, with the same explicit defect bound.
+
+3.  Local uniqueness or selection requires an invariant contraction basin and cannot be inferred from fixed-point correspondence alone.
+
+These are mathematical bridge theorems. They do not prove that MTT already provides the hypotheses.
+
+## Dependency map
+
+The argument has five layers:
 ``` math
-\begin{equation}
-\label{eq:GHat}
-\widehat{H} \;=\; \mathrm{d}B\;-\;\frac{\alpha'}{4}\,\big(\omega_3(A)-\omega_3(\omega^+)\big),\qquad
-\mathrm{d}\widehat{H} \;=\; \frac{\alpha'}{4}\,\big(\mathrm{Tr}F\wedge F-\mathrm{Tr}R^+\wedge R^+\big).
-\end{equation}
+\begin{split}
+\text{one Hull--Strominger carrier}
+&\longrightarrow \text{lower residuals and lower flow}\\
+&\longrightarrow \text{typed MTT-to-lower bridge}\\
+&\longrightarrow \text{intertwining certificate}\\
+&\longrightarrow \text{fixed-point descent}\\
+&\longrightarrow \text{physical completion tests}.
+\end{split}
 ```
-Throughout, the tangent–bundle connection in the Bianchi identity is $`R^+`$ (Bismut/Hull choice compatible with heterotic SUSY) .
+Sections <a href="#sec:hs" data-reference-type="ref" data-reference="sec:hs">2</a> and <a href="#sec:flow" data-reference-type="ref" data-reference="sec:flow">3</a> explain the first two layers. Sections <a href="#sec:bridge" data-reference-type="ref" data-reference="sec:bridge">4</a>–<a href="#sec:selection" data-reference-type="ref" data-reference="sec:selection">6</a> prove the bridge results. Sections <a href="#sec:audit" data-reference-type="ref" data-reference="sec:audit">7</a>–<a href="#sec:frontier" data-reference-type="ref" data-reference="sec:frontier">10</a> state what survives physically.
 
-## Gerbe covariance of $`\widehat{H}`$
+# One Hull–Strominger object
 
-The $`B`$-field is a Deligne 2-gerbe connection with connective structure. Local variations $`\delta B`$ are taken within a fixed differential cohomology class consistent with large gauge transformations; $`\widehat{H}`$ is the globally defined curvature. The functional $`\Xi`$ depends on $`B`$ only via $`\widehat{H}`$ and Chern–Simons forms, hence is gauge invariant. Variations are implemented by refining open covers and using a partition-of-unity argument; boundary terms cancel by the Bianchi constraint enforced by $`K`$.
+## Fields and convention
 
-## Auxiliary multiplier for the Green–Schwarz definition
+Fix a compact complex threefold $`X`$ with nowhere-vanishing holomorphic $`(3,0)`$-form $`\Omega`$. Let $`\omega`$ be a positive Hermitian form, $`\Phi`$ a dilaton, and $`V_{\mathrm{vis}},V_{\mathrm{hid}}`$ holomorphic Hermitian bundles with unitary connections $`A_{\mathrm{vis}},A_{\mathrm{hid}}`$. Fix also a metric connection $`\nabla`$ on $`TX`$. Its choice is part of the data, not a notation that may be changed between equations.
 
-We treat $`\widehat H`$ as an independent 3form variable and impose its Green–Schwarz definition by a 2form Lagrange multiplier $`\Lambda\in\Omega^2(X)`$:
+We use
 ``` math
-\widehat H \;=\; \mathrm{d}B - \frac{\alpha'}{4}\big(\omega_3(A)-\omega_3(\omega^+)\big).
+\mathrm d^c=\mathrm i\partial\bar\partial,\qquad
+H=\mathrm d^c\omega
 ```
-This ensures global gauge invariance and makes the Euler–Lagrange variations with respect to $`B`$, $`\widehat H`$, $`A`$, and $`\omega^+`$ fully consistent.
+as a convention for the torsion equation. Numerical factors in $`\mathrm d^c`$ and trace normalizations vary in the literature; every comparison below presupposes one convention fixed throughout.
 
-# SU(3)–Structure with Torsion and the Hull–Strominger System
-
-## SU(3) structure and torsion classes
-
-Let $`(X^6,J,\Omega)`$ be a complex threefold with Hermitian form $`J`$ and holomorphic $`(3,0)`$–form $`\Omega`$; intrinsic torsion decomposes into $`W_1,\dots,W_5`$. The CY case has $`W_i=0`$. In heterotic flux vacua typically $`W_1=W_2=0`$ (integrable complex structure), while $`W_3`$ and $`W_4,W_5`$ encode torsion and dilaton.
-
-## Bismut connection and conformally balanced metrics
-
-The *Bismut* connection $`\nabla^+=\nabla^{\mathrm{LC}}+\tfrac12 T`$ preserves $`(g,J)`$ with totally skew torsion $`T=\widehat{H}`$ (torsionful connection); a Hermitian metric is *conformally balanced* if $`d(e^{-2\Phi}J^2)=0`$ (Gauduchon class).
-
-## Hull–Strominger system
-
-Given $`(X,J,\Omega)`$ with $`K_X`$ trivial, Hermitian metric $`J`$, dilaton $`\Phi`$, holomorphic bundle $`(E,A)`$, and $`\widehat{H}`$ as in <a href="#eq:GHat" data-reference-type="eqref" data-reference="eq:GHat">[eq:GHat]</a>,
+In this convention the first-order equations include
 ``` math
 \begin{align}
-  & d\!\left(e^{-2\Phi}J\wedge J\right)=0, \quad \text{(conformally balanced)} \label{eq:balanced}\\
-  & \widehat{H} = i(\bar\partial-\partial)J\ -\ \frac{\alpha'}{4}\big(\omega_3(A)-\omega_3(\omega^+)\big), \label{eq:BismutTorsion}\\
-  & F^{0,2}=0,\qquad J\lrcorner F=0, \quad \text{(HYM on $E$)} \label{eq:HYM}\\
-  & \mathrm{d}\widehat{H}=\frac{\alpha'}{4}\Big(\mathrm{Tr}\,F\wedge F - \mathrm{Tr}\,R^+\!\wedge R^+\Big). \quad \text{(Bianchi / anomaly)} \label{eq:Bianchi}
+\mathrm d\!\left(\|\Omega\|_\omega\omega^2\right)&=0,
+\label{eq:balanced}\\
+F_a^{0,2}=0,\qquad F_a\wedge\omega^2&=0,
+\quad a\in\{\mathrm{vis},\mathrm{hid}\},
+\label{eq:gauge-hym}\\
+R_\nabla^{0,2}=0,\qquad R_\nabla\wedge\omega^2&=0,
+\label{eq:tangent-instanton}\\
+\mathrm dH&=\frac{\alpha'}4\left(
+\operatorname{tr}R_\nabla\wedge R_\nabla
+-\operatorname{tr}F_{\mathrm{vis}}\wedge F_{\mathrm{vis}}
+-\operatorname{tr}F_{\mathrm{hid}}\wedge F_{\mathrm{hid}}\right).
+\label{eq:bianchi}
 \end{align}
 ```
-These are necessary and sufficient for $`4`$D $`\mathcal N{=}1`$ heterotic SUSY at leading order in $`\alpha'`$. .
+The tangent-instanton row is included when required by the chosen first-order equations-of-motion convention .
 
-# Twisted Admissibility and the Flux Fixed–Point Theorem
+## Global data are a separate row
 
-## Twisted Standing Assumptions (SA.F1–SA.F4)
+Writing $`H=\mathrm dB+`$ Chern–Simons terms is local notation. Globally, the $`B`$-field is gerbe data and the Green–Schwarz condition is differential cohomological. A topological equality of second Chern classes is necessary in common settings but does not identify the differential four-form representatives in <a href="#eq:bianchi" data-reference-type="ref+label" data-reference="eq:bianchi">[eq:bianchi]</a>. Likewise, a smooth vector bundle with the desired Chern classes is not yet a holomorphic stable bundle with an HYM connection.
 
-Let $`X`$ be compact complex with $`K_X`$ trivial, $`(J,\Omega)`$, Hermitian $`g`$, $`\widehat{H}`$ as in <a href="#eq:GHat" data-reference-type="eqref" data-reference="eq:GHat">[eq:GHat]</a>, and holomorphic bundle $`(E,A)`$.
+<div id="def:lower" class="definition">
 
-**SA.F1 (Twisted spectral gap).** Let $`d_{\widehat{H}}:=\mathrm{d}+\widehat{H}\wedge`$ (or equivalently use Bismut Laplacians; see also for twisted de Rham complexes). The *twisted Laplacian*
+**Definition 1** (Complete lower datum). A point $`y\in\mathcal Y_{\mathrm{HS}}`$ is a tuple
 ``` math
-\Delta^{(\widehat{H})} \;=\; d_{\widehat{H}}\delta_{\widehat{H}}+\delta_{\widehat{H}} d_{\widehat{H}}
+y=(X,\Omega,\omega,\Phi,V_{\mathrm{vis}},V_{\mathrm{hid}},
+A_{\mathrm{vis}},A_{\mathrm{hid}},\nabla,H,\mathfrak g_H)
 ```
-is elliptic with discrete spectrum on compact $`X`$. On bounded–geometry families, there exists a uniform positive lower bound $`\lambda_*^{(\widehat{H})}>0`$ on the first nonzero eigenvalue.
+in which all objects live on the same $`X`$, use one trace convention, and $`\mathfrak g_H`$ denotes the global gerbe or differential-cohomological flux datum. Gauge-equivalent tuples represent the same point.
 
-<div id="lem:gap" class="lemma">
+</div>
 
-**Lemma 1** (Uniform twisted gap). *Assume bounded geometry (curvature bounds, injectivity radius $`\ge \iota_0`$) and $`\|\widehat{H}\|_{C^1}\le H_0`$. Then
+<div id="def:residual" class="definition">
+
+**Definition 2** (Hull–Strominger residual). After gauge fixing and choosing Sobolev completions, let $`\mathcal R_{\mathrm{HS}}(y)`$ be the vector consisting of the left-hand sides of <a href="#eq:balanced,eq:gauge-hym,eq:tangent-instanton,eq:bianchi" data-reference-type="ref+label" data-reference="eq:balanced,eq:gauge-hym,eq:tangent-instanton,eq:bianchi">[eq:balanced,eq:gauge-hym,eq:tangent-instanton,eq:bianchi]</a>, together with the global patching defect. Thus
 ``` math
-\lambda_1\big(\Delta^{(\widehat{H})}\big)\ \ge\ \lambda_1(\Delta)\ -\ C(\iota_0,\|Rm\|_\infty)\,H_0,
+\mathcal R_{\mathrm{HS}}(y)=0
 ```
-hence for $`H_0`$ small relative to the Cheeger/Buser constant one has $`\lambda_*^{(\widehat{H})}\ge \tfrac12 \lambda_1(\Delta)>0`$.*
+means that every declared lower row is satisfied on one common tuple.
 
 </div>
 
-<div class="proof">
+The residual formulation is intentionally unforgiving. It prevents a metric from one construction, a bundle from another, and a topological identity from a third from being advertised as one solution.
 
-*Proof.* Write $`\Delta^{(\widehat{H})}=\Delta+\mathsf{Q}_1(\nabla)+\mathsf{Q}_0`$, where $`\mathsf{Q}_1,\mathsf{Q}_0`$ are first/zero order with operator norms bounded by $`C H_0`$. Kato–Rellich gives relative boundedness; min–max plus Cheeger/Buser estimate for $`\Delta`$   yields the claim.
+# The appropriate lower flow
 
-*Cheeger–Buser step.* For the Hodge Laplacian $`\Delta`$ on $`k`$-forms, $`\lambda_1(\Delta)\ge \tfrac{h^2}{4}`$ with $`h`$ the (form) isoperimetric constant. Hence $`\lambda_1\big(\Delta^{(\widehat{H})}\big)\ge \tfrac{h^2}{4}-C\|\widehat{H}\|_{C^1}`$.
+## Anomaly flow
 
-*Constants.* All constants $`C, c`$ depend only on the bounded-geometry data $`\big(\|Rm(g)\|_{C^0}, \operatorname{inj}(X,g)^{-1}\big)`$ and the uniform $`C^1`$ bound on $`\widehat{H}`$; they are uniform on the admissible family. ◻
-
-</div>
-
-**SA.F2 (Bounded twisted projector).** Let $`\Pi^{(\widehat{H})}`$ be the orthogonal projector onto twisted harmonic forms. Then $`\Pi^{(\widehat{H})}:H^s\to H^s`$ is bounded for all $`s\in\mathbb{R}`$, with norm controlled uniformly on the admissible family.
-
-<div id="lem:proj" class="lemma">
-
-**Lemma 2** (Resolvent control $`\Rightarrow`$ bounded projector). *For a small circle $`\Gamma`$ around $`0`$ in the resolvent set, $`\Pi^{(\widehat{H})}=\frac{1}{2\pi i}\oint_\Gamma(\Delta^{(\widehat{H})}-z)^{-1}\mathrm{d}z.`$ Parameter–dependent elliptic estimates and Lemma <a href="#lem:gap" data-reference-type="ref" data-reference="lem:gap">1</a> imply $`\|(\Delta^{(\widehat{H})}-z)^{-1}\|_{H^s\to H^s}\le C_s`$ uniformly; hence $`\|\Pi^{(\widehat{H})}\|_{H^s\to H^s}\le C_s`$.*
-
-**Constants.* The bounds $`C_s`$ depend only on $`s`$ and the bounded-geometry data (as above) and on the uniform $`C^1`$ bound for $`\widehat{H}`$; they are uniform over the admissible family.*
-
-</div>
-
-**SA.F3 (Commuting torsionful modal blocks).** Assume $`(g,\widehat{H})`$ are block–diagonal with respect to the three internal bundles and that $`\widehat{H}=\sum_i \widehat{H}_i`$ with $`\widehat{H}_i`$ supported on block $`i`$ (and any common $`S^1`$). Then the vertical twisted Laplacians commute: $`[\,\Delta^{(\widehat{H})}_{B_i},\,\Delta^{(\widehat{H})}_{B_j}\,]=0.`$
-
-<div id="lem:commute" class="lemma">
-
-**Lemma 3** (Block commutation). *Under the above split, $`d_{\widehat{H}}=\sum_i (d_{(i)}+\widehat{H}_i\wedge)`$ and the terms act on disjoint coordinates. Hence $`\Delta^{(\widehat{H})}=\sum_i \Delta^{(\widehat{H})}_{B_i}`$ and the summands commute.*
-
-</div>
-
-**SA.F4 (Well–posedness and smoothing).** The parabolic generator
-``` math
-\partial_t\Psi \;=\; -\Big(\sum_{i=1}^3 \kappa_i\,\Delta^{(\widehat{H})}_{B_i} + \varepsilon\,\Delta_Y\Big)\Psi \;-\; N(\Psi)
-```
-is uniformly elliptic; the semigroup $`\Phi_t`$ is analytic and smoothing. On sublevels where $`N`$ is locally Lipschitz with constant $`L`$, the usual $`M_1(t)e^{Lt}`$ bounds hold (as in ).
-
-## Flux Fixed–Point Theorem
-
-<div id="thm:FluxFixedPoint" class="theorem">
-
-**Theorem 4** (Flux fixed point & uniqueness). *Assume SA.F1–SA.F4 and use $`\nabla^+`$ on $`TX`$. Then there exists $`\tau>0`$ such that
-``` math
-T_\tau \;=\; \Pi^{(\widehat{H})}_{\mathrm{coh}}\circ \Phi_\tau
-```
-is a contraction on $`(\mathrm{Ran}\,\Pi^{(\widehat{H})}_{\mathrm{coh}},\|\cdot\|_{H^1})`$. Consequently, $`T_\tau`$ admits a *unique* coherent fixed point $`\Psi^*`$, attracting all Picard iterates geometrically.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Combine Lemmas <a href="#lem:gap" data-reference-type="ref" data-reference="lem:gap">1</a>–<a href="#lem:proj" data-reference-type="ref" data-reference="lem:proj">2</a> with standard parabolic smoothing to get $`\|\Phi_\tau\|_{L^2\to H^1}\le M_1(\tau)e^{L\tau}`$ and $`\|\Pi^{(\widehat{H})}\|_{H^1\to H^1}\le C_\Pi`$. Choose $`\tau`$ with $`C_\Pi M_1(\tau)e^{L\tau}<1`$; then Banach contraction applies. ◻
-
-</div>
-
-# Selection Potential and MTT Selection in the Flux Slice
-
-## Configuration space and constraints
-
-Fix a compact complex threefold $`X`$ with $`K_X\simeq \mathcal O_X`$ and complex structure $`J`$ (thus $`W_1=W_2=0`$). Let
-``` math
-\mathcal{C}=\big\{(g,\Phi,B;A):\ g\ \text{Hermitian on }(X,J),\ \Phi\in C^\infty,\ B\in\Omega^2,\ A\ \text{unitary on fixed holomorphic }E\big\},
-```
-modulo diffeomorphisms, unitary gauge, and gerbe gauge. Define $`\widehat{H}`$ by <a href="#eq:GHat" data-reference-type="eqref" data-reference="eq:GHat">[eq:GHat]</a>. Fix a topological sector (Chern data, cohomology class of $`\widehat{H}`$ compatible with <a href="#eq:Bianchi" data-reference-type="eqref" data-reference="eq:Bianchi">[eq:Bianchi]</a>).
-
-## Selection potential with Green–Schwarz 3–form
-
-In string frame, set
+There is an established geometric flow designed for this setting. In a fixed holomorphic and bundle ansatz, the Anomaly flow evolves the positive $`(2,2)`$-form $`\|\Omega\|_\omega\omega^2`$ by an equation of the form
 ``` math
 \begin{equation}
-\label{eq:XiDefFixed}
-\begin{aligned}
-\Xi[g,\Phi,B;A,\omega^+;\widehat H,K,\Lambda]\;=&\;
-\int_X e^{-2\Phi}\Big(R(g)+4|\nabla\Phi|_g^2-\tfrac12|\widehat H|_g^2\Big)\,\mathrm{vol}_g \\
-&\;+\;\frac{1}{2g_{10}^2}\int_X e^{-2\Phi}\,\mathrm{Tr}(F_A\wedge *F_A) \\
-&\;+\;\int_X K\wedge\Big(\mathrm{d}\widehat H-\tfrac{\alpha'}{4}(\mathrm{Tr}F_A\wedge F_A-\mathrm{Tr}R^+\wedge R^+)\Big)\\
-&\;+\;\int_X \Lambda\wedge\Big(\widehat H-\mathrm{d}B+\tfrac{\alpha'}{4}(\omega_3(A)-\omega_3(\omega^+))\Big)\\
-&\;+\;\sum_{n,k}\frac{\delta_{n,k}}{2\,\gamma_{n,k}}\, .
-\end{aligned}
+\partial_\tau\!\left(\|\Omega\|_\omega\omega^2\right)
+=\mathrm i\partial\bar\partial\omega
+-\frac{\alpha'}4\left(
+\operatorname{tr}R_\nabla\wedge R_\nabla
+-\operatorname{tr}F_{\mathrm{vis}}\wedge F_{\mathrm{vis}}
+-\operatorname{tr}F_{\mathrm{hid}}\wedge F_{\mathrm{hid}}\right).
+\label{eq:anomaly-flow}
 \end{equation}
 ```
+The exact analytic formulation depends on the selected tangent connection and on whether bundle metrics are fixed or evolved. The flow preserves the conformally balanced condition under its hypotheses, and its stationary points solve the anomaly equation. Short-time existence is known in the original setting, and convergence is known in important Fu–Yau ansatz classes .
 
-where $`\omega^+`$ is the Bismut connection, $`R^+`$ its curvature, and $`\gamma_{n,k}=\kappa_{n,k}\lambda^{(\widehat{H})}_{n,k}-L`$ (OU variance floor).
+The existence of <a href="#eq:anomaly-flow" data-reference-type="ref+label" data-reference="eq:anomaly-flow">[eq:anomaly-flow]</a> is important for MTT because it gives a genuine lower repair dynamics. It does not prove that an MTT flow equals it. Nor does the metric flow by itself construct the holomorphic bundles or their HYM metrics. Those rows must be fixed consistently or coupled to appropriate bundle heat flows.
 
-<div class="remark">
+## A lower semigroup is local to its domain
 
-**Remark 5**. *(i) $`B`$ enters only via $`\widehat{H}`$ and Chern–Simons forms; large gauge transformations are respected. (ii) We impose the normalization $`\int_X e^{-2\Phi}\mathrm{vol}_g=1`$ to remove trivial rescalings.*
-
-</div>
-
-## Euler–Lagrange equations = Hull–Strominger
-
-<div id="thm:ELStromingerFixed" class="theorem">
-
-**Theorem 6** (Euler–Lagrange $`\Leftrightarrow`$ Strominger). *Critical points of $`\Xi`$ on $`\mathcal{C}\times\Omega^4`$ obey the Hull–Strominger system <a href="#eq:balanced" data-reference-type="eqref" data-reference="eq:balanced">[eq:balanced]</a>–<a href="#eq:Bianchi" data-reference-type="eqref" data-reference="eq:Bianchi">[eq:Bianchi]</a> with $`R^+`$. Conversely, any smooth solution of <a href="#eq:balanced" data-reference-type="eqref" data-reference="eq:balanced">[eq:balanced]</a>–<a href="#eq:Bianchi" data-reference-type="eqref" data-reference="eq:Bianchi">[eq:Bianchi]</a> is a critical point of $`\Xi`$.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Varying $`K`$ enforces <a href="#eq:Bianchi" data-reference-type="eqref" data-reference="eq:Bianchi">[eq:Bianchi]</a>. Varying $`B`$ (hence $`\widehat{H}`$) with fixed gerbe class yields $`\mathrm{d}(e^{-2\Phi}*\widehat{H})=0`$, equivalent to <a href="#eq:balanced" data-reference-type="eqref" data-reference="eq:balanced">[eq:balanced]</a> on a complex threefold together with <a href="#eq:BismutTorsion" data-reference-type="eqref" data-reference="eq:BismutTorsion">[eq:BismutTorsion]</a>. Metric/dilaton variations give the $`(G,B,\Phi)`$ Euler–Lagrange system equivalent to worldsheet $`\beta=0`$ at leading $`\alpha'`$, which is known to be equivalent to <a href="#eq:balanced" data-reference-type="eqref" data-reference="eq:balanced">[eq:balanced]</a>–<a href="#eq:BismutTorsion" data-reference-type="eqref" data-reference="eq:BismutTorsion">[eq:BismutTorsion]</a> with $`R^+`$. . Variation of $`A`$ in the holomorphic class gives HYM on a Gauduchon metric (Li–Yau), i.e. <a href="#eq:HYM" data-reference-type="eqref" data-reference="eq:HYM">[eq:HYM]</a>. The OU term is constant under deterministic variations. The converse follows by substitution.
-
-*Constants.* Coercivity and continuity constants depend only on bounded-geometry data and a uniform bound on $`\|\widehat{H}\|_{C^1}`$; they are uniform on the admissible family. ◻
-
-</div>
-
-## Existence of minimizers
-
-<div id="prop:existence" class="proposition">
-
-**Proposition 7** (Direct method). *In a fixed topological sector, under bounded geometry and SA.F1–SA.F2, $`\Xi`$ is bounded below and sequentially weakly lower semicontinuous on $`\mathcal{C}`$ modulo symmetries (with the normalization $`\int e^{-2\Phi}\mathrm{vol}_g=1`$). Hence $`\Xi`$ admits a minimizer.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Elliptic inequalities bound $`\|R\|_{H^{-1}}`$, $`\|\nabla\Phi\|_{L^2}`$, $`\|\widehat{H}\|_{L^2}`$, and $`\|F\|_{L^2}`$ in terms of $`\Xi`$; SA.F1 and bounded geometry give compact embeddings (Rellich) modulo fixed gauges; lower semicontinuity holds by convexity of quadratic terms and continuity of the Chern–Simons constraint via $`K`$. The OU term is nonnegative and continuous.
-
-*Constants.* All constants are uniform on the admissible family and depend only on bounded-geometry data and the fixed Sobolev index used for compactness. ◻
-
-</div>
-
-## Strict convexity near a Strominger solution
-
-<div id="thm:convexity" class="theorem">
-
-**Theorem 8** (Positive Hessian). *Let $`(g_0,\Phi_0,B_0;A_0)`$ solve <a href="#eq:balanced" data-reference-type="eqref" data-reference="eq:balanced">[eq:balanced]</a>–<a href="#eq:Bianchi" data-reference-type="eqref" data-reference="eq:Bianchi">[eq:Bianchi]</a> and satisfy SA.F1–SA.F4. Fix gauges as in Section <a href="#sec:Prelim" data-reference-type="ref" data-reference="sec:Prelim">2</a>. Then there exists $`c>0`$ and a neighborhood $`\mathcal U`$ such that, for all $`\mathsf u`$ orthogonal to symmetry directions,
+Let $`\mathcal D_{\mathrm{HS}}\subset\mathcal Y_{\mathrm{HS}}`$ be a gauge-fixed domain on which a lower evolution $`S_\tau`$ is well posed. Depending on the theorem being imported, $`S_\tau`$ may be a local semiflow rather than a global semigroup. We require only
 ``` math
-\delta^2\Xi\big|_{(g_0,\Phi_0,B_0;A_0)}[\mathsf u,\mathsf u]\ \ge\ c\,\|\mathsf u\|{_{H^1}}^2.
+S_0=\operatorname{id},\qquad
+S_{\tau+\sigma}=S_\tau S_\sigma
 ```
-In particular, the solution is a *unique local minimizer* in $`\mathcal U`$.*
+whenever both sides are defined.
+
+<div id="ass:stationary" class="assumption">
+
+**Assumption 3** (Stationary-point identification). On a declared invariant domain $`\mathcal D_0\subset\mathcal D_{\mathrm{HS}}`$,
+``` math
+\operatorname{Fix}(S)=\{y\in\mathcal D_0:\mathcal R_{\mathrm{HS}}(y)=0\}.
+```
+
+</div>
+
+This assumption packages the bundle and global rows that a metric-only Anomaly flow does not automatically enforce. In a Fu–Yau ansatz with fixed valid HYM data, it can be discharged by the corresponding existence and flow theorems. It is not currently discharged on the selected physical $`q=79`$ tuple.
+
+## Why the old twisted complex cannot be used
+
+<div id="lem:twisted" class="lemma">
+
+**Lemma 4** (Anomaly obstruction to the naive twisted differential). *Let $`H`$ be a real three-form and define $`d_H=\mathrm d+H\wedge`$ on differential forms. Then
+``` math
+d_H^2=(\mathrm dH)\wedge.
+```
+Consequently $`d_H`$ is not a cochain differential on a generic heterotic background with nonzero Green–Schwarz four-form.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Linearize the system in fixed gauges; the principal symbol of the linearized operator is block–diagonal with entries the twisted Laplacians on the respective bundles (metric/dilaton via $`\Delta^{(\widehat{H})}`$ acting on symmetric 2–tensors and scalars; $`B`$ via $`\Delta^{(\widehat{H})}`$ on 2–forms; bundle via the Yang–Mills Laplacian). SA.F1 yields a uniform lower bound on the principal part; SA.F4 provides elliptic/smoothing control; SA.F2 controls projector pieces. If a kernel remains from true moduli, the OU term adds a positive quadratic form (weights $`\gamma_{n,k}^{-1}`$), lifting them. A Gårding inequality then gives the stated coercivity.
-
-*Constants.* The coercivity constant $`c`$ depends only on the bounded-geometry data, uniform $`\|\widehat{H}\|_{C^1}`$ bounds, and the spectral gap $`\lambda_*^{(\widehat{H})}`$; it is uniform on the admissible family. ◻
-
-</div>
-
-<div class="remark">
-
-**Remark 9** (OU variance term). *The OU term in $`\Xi`$ depends on the twisted eigenvalues $`\lambda^{(\widehat{H})}_{n,k}`$ via $`\gamma_{n,k}=\kappa_{n,k}\lambda^{(\widehat{H})}_{n,k}-L`$. In the Lyapunov inequalities we can drop this nonnegative term to obtain a lower bound, hence it never obstructs descent. In the Hessian analysis, its second variation contributes a nonnegative quadratic form along directions where $`\delta\lambda^{(\widehat{H})}_{n,k}\neq 0`$, and therefore can lift residual flat directions. Our coercivity estimate does not rely on it, but it strengthens positivity if present.*
-
-</div>
-
-## Lyapunov descent and equality with the fixed point
-
-<div id="prop:Lyap" class="proposition">
-
-**Proposition 10** (Strict Lyapunov for $`\Phi_t`$ and $`T_\tau`$). *Along the flow $`\Phi_t`$ one has
+*Proof.* The graded Leibniz rule gives
 ``` math
-\frac{\mathrm{d}}{\mathrm{d}t}\,\Xi(\Phi_t U)\ \le\ -\,c_0 \,\big\|\Pi^{(\widehat{H})}_{\mathrm{coh}}\nabla\Xi(\Phi_t U)\big\|_{H^{-1}}^2
+(\mathrm d+H\wedge)^2
+=\mathrm dH\wedge+H\wedge H\wedge.
 ```
-for some $`c_0>0`$. For the discrete map $`T_\tau=\Pi^{(\widehat{H})}_{\mathrm{coh}}\circ\Phi_\tau`$, there exists $`\eta>0`$ (independent of $`U`$) such that
+Because $`H`$ has odd degree, $`H\wedge H=0`$. The stated identity follows. ◻
+
+</div>
+
+Thus the earlier “twisted harmonic projector” cannot be justified by twisted de Rham cohomology unless $`\mathrm dH=0`$. A corrected operator must instead come from a specified Bismut/Hull covariant Laplacian, an elliptic deformation complex, or the gauge-fixed Hessian of a selected action. Its domain, kernel removal, and spectral gap must be proved for that operator.
+
+# The typed MTT bridge
+
+## Upper data
+
+Let $`\mathcal U_{\mathrm{MTT}}`$ denote an MTT configuration space after quotienting or fixing its declared redundancies. A point $`u`$ may contain the common circle line, local $`1<2<3`$ filtration, global $`q=79`$ carrier data, projectors, connections, and upper fields. Let $`R_\tau`$ be a selected MTT stabilization flow on a domain $`\mathcal D_{\mathrm{MTT}}`$.
+
+This notation does not assume that such a physical continuum flow has already been constructed. It identifies exactly where that future result enters.
+
+<div id="def:bridge" class="definition">
+
+**Definition 5** (Typed bridge). A typed MTT-to-Hull–Strominger bridge is a map
 ``` math
-\Xi(T_\tau U)\ \le\ \Xi(U)\ -\ \eta\,\big\|\Pi^{(\widehat{H})}_{\mathrm{coh}}\nabla\Xi(U)\big\|_{H^{-1}}^2.
+\mathfrak B:\mathcal D_{\mathrm{MTT}}\longrightarrow\mathcal D_0
+```
+whose output is a complete lower datum in the sense of Definition <a href="#def:lower" data-reference-type="ref" data-reference="def:lower">1</a>. It must provide the following rows without changing carrier or source:
+
+<div class="center">
+
+| Row | Required image under $`\mathfrak B`$ |
+|:---|:---|
+| Carrier | one complex threefold $`X`$, complex structure, and $`\Omega`$ |
+| Metric | positive $`\omega`$ and dilaton $`\Phi`$ |
+| Visible sector | rank-three physical holomorphic bundle and connection |
+| Hidden sector | compatible hidden bundle or sheaf and connection |
+| Tangent sector | one declared connection $`\nabla`$ and curvature |
+| Flux | $`H`$, trace convention, gerbe patching, and quantization |
+| Dynamics | tangent map carrying the upper vector field to the lower one |
+
+</div>
+
+</div>
+
+The shared circle can enter this bridge as common line-bundle phase or holonomy data, counted once. That role does not identify it with Lorentzian time and does not by itself construct $`X`$, $`V_{\mathrm{vis}}`$, or the Green–Schwarz class.
+
+## Exact intertwining
+
+<div id="def:intertwiner" class="definition">
+
+**Definition 6** (Flow intertwiner). The bridge $`\mathfrak B`$ intertwines the flows on a common interval $`I`$ if
+``` math
+\begin{equation}
+\mathfrak B\circ R_\tau=S_\tau\circ\mathfrak B,
+\qquad \tau\in I,
+\label{eq:intertwine}
+\end{equation}
+```
+where both sides are defined.
+
+</div>
+
+Infinitesimally, if the two flows have differentiable vector fields $`\mathcal F_{\mathrm{MTT}}`$ and $`\mathcal F_{\mathrm{HS}}`$, exact intertwining requires
+``` math
+\begin{equation}
+D\mathfrak B_u\,\mathcal F_{\mathrm{MTT}}(u)
+=\mathcal F_{\mathrm{HS}}(\mathfrak B(u)).
+\label{eq:generator-intertwine}
+\end{equation}
+```
+Equation <a href="#eq:generator-intertwine" data-reference-type="eqref" data-reference="eq:generator-intertwine">[eq:generator-intertwine]</a> is the continuum operator source obligation. Matching only fixed-point labels or dimensions does not prove it.
+
+# Fixed-point descent
+
+<div id="thm:descent" class="theorem">
+
+**Theorem 7** (Conditional fixed-point descent). *Let $`R_\tau`$, $`S_\tau`$, and $`\mathfrak B`$ be as above. Suppose $`\mathfrak B`$ satisfies <a href="#eq:intertwine" data-reference-type="ref+label" data-reference="eq:intertwine">[eq:intertwine]</a> and $`u_\ast\in\mathcal D_{\mathrm{MTT}}`$ is fixed by $`R_\tau`$ for every $`\tau\in I`$. Then $`\mathfrak B(u_\ast)`$ is fixed by $`S_\tau`$ for every $`\tau\in I`$. If Assumption <a href="#ass:stationary" data-reference-type="ref" data-reference="ass:stationary">3</a> holds, then
+``` math
+\mathcal R_{\mathrm{HS}}(\mathfrak B(u_\ast))=0.
 ```*
 
 </div>
 
 <div class="proof">
 
-*Proof.* $`\Phi_t`$ is generated by a sectorial, maximally dissipative operator on the coherent sector; the chain rule plus elliptic regularity yields the stated differential inequality with $`c_0`$ from SA.F1–SA.F4. For $`T_\tau`$, use firm non-expansiveness of $`\Pi^{(\widehat{H})}_{\mathrm{coh}}`$ and the smoothing estimate $`\|\Phi_\tau - (I-\tau \mathcal{A})\|_{H^{-1}\to H^{1}}\le C\tau^{3/2}`$ with $`\mathcal{A}`$ the twisted elliptic part; a Krasnosel’skiı̆–Mann argument (strong monotonicity of $`\nabla\Xi`$ on the slice) gives the discrete descent.
-
-*Constants.* $`c_0,\eta`$ depend only on the spectral gap $`\lambda_*^{(\widehat{H})}`$, Lipschitz constant $`L`$ of $`N`$ on the sublevel, and bounded-geometry data; they are uniform on the admissible family. ◻
-
-</div>
-
-<div id="thm:Selection" class="theorem">
-
-**Theorem 11** (MTT selection). *Under SA.F1–SA.F4, in a fixed topological sector, the MTT fixed point $`\Psi^*`$ coincides with the *unique local minimizer* of $`\Xi`$ (Theorems <a href="#thm:ELStromingerFixed" data-reference-type="ref" data-reference="thm:ELStromingerFixed">6</a> and <a href="#thm:convexity" data-reference-type="ref" data-reference="thm:convexity">8</a>) and attracts all coherent iterates.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* By Theorem <a href="#thm:FluxFixedPoint" data-reference-type="ref" data-reference="thm:FluxFixedPoint">4</a>, $`T_\tau`$ is a contraction with unique fixed point. By Proposition <a href="#prop:Lyap" data-reference-type="ref" data-reference="prop:Lyap">10</a>, $`\Xi`$ strictly decreases along $`T_\tau`$ unless at a critical point; Theorem <a href="#thm:convexity" data-reference-type="ref" data-reference="thm:convexity">8</a> gives uniqueness of the local minimum. Hence the fixed point equals the minimizer and is globally attractive in the coherent sector. ◻
-
-</div>
-
-# Worldsheet $`\sigma`$–Model and $`\beta=0`$ in the Flux Slice
-
-In the MTT$`\to`$String dictionary , the target fields $`(G,B,\Phi)`$ are pulled back from the coherent fixed point. The worldsheet $`\sigma`$–model (Polyakov action with Kalb–Ramond field) yields leading $`\beta`$–functions:
+*Proof.* For every permitted $`\tau`$,
 ``` math
-\beta^{(G)}_{MN}\sim R_{MN}-\tfrac14 \widehat{H}_{MPQ}\widehat{H}_N{}^{PQ}+2\nabla_M\nabla_N\Phi,\quad
-\beta^{(B)}_{MN}\sim -\tfrac12\nabla^P \widehat{H}_{PMN}+\nabla^P\Phi\,\widehat{H}_{PMN}.
+S_\tau(\mathfrak B(u_\ast))
+=\mathfrak B(R_\tau u_\ast)
+=\mathfrak B(u_\ast).
 ```
-Vanishing $`\beta`$ at the fixed point—together with using $`\nabla^+`$ on $`TX`$—is equivalent to the Strominger system <a href="#eq:balanced" data-reference-type="eqref" data-reference="eq:balanced">[eq:balanced]</a>–<a href="#eq:Bianchi" data-reference-type="eqref" data-reference="eq:Bianchi">[eq:Bianchi]</a> at leading order in $`\alpha'`$ . The heterotic gauge $`\beta`$ yields HYM on Gauduchon metrics (Li–Yau).
+The residual conclusion is exactly Assumption <a href="#ass:stationary" data-reference-type="ref" data-reference="ass:stationary">3</a>. ◻
 
-# HYM on Gauduchon Metrics and Anomaly Cancellation
+</div>
 
-The Donaldson–Uhlenbeck–Yau correspondence extends beyond Kähler: on a compact complex manifold with a Gauduchon metric, slope–stable holomorphic bundles admit HYM connections . This furnishes <a href="#eq:HYM" data-reference-type="eqref" data-reference="eq:HYM">[eq:HYM]</a>. In torsional heterotic backgrounds the natural tangent connection entering <a href="#eq:Bianchi" data-reference-type="eqref" data-reference="eq:Bianchi">[eq:Bianchi]</a> is the torsionful Bismut/Hull connection $`\nabla^+`$; $`R^+`$ is the SUSY choice (equivalent to $`R^-`$ up to $`\mathcal{O}(\alpha')`$ field redefinitions).
+<div class="remark">
 
-# Worked Case: The Fu–Yau Class
+*Remark 8* (One-way character). The theorem is descent, not equivalence. A lower solution $`y_\ast`$ lifts to an MTT fixed point only if $`y_\ast\in\operatorname{Ran}(\mathfrak B)`$ and an upper preimage is fixed. Uniqueness of the lift additionally requires control of the fibers of $`\mathfrak B`$.
 
-#### Geometry.
+</div>
 
-Let $`\pi:X\to \mathrm{K3}`$ be a principal $`T^2`$–bundle with complex structure and $`K_X\simeq\mathcal{O}_X`$. Fu–Yau identified conformally balanced metrics with $`\widehat{H}=i(\bar\partial-\partial)J-\frac{\alpha'}{4}(\omega_3(A)-\omega_3(\omega^+))`$ and solved <a href="#eq:balanced" data-reference-type="eqref" data-reference="eq:balanced">[eq:balanced]</a>–<a href="#eq:Bianchi" data-reference-type="eqref" data-reference="eq:Bianchi">[eq:Bianchi]</a> for suitable topological data.  .
+## Residual descent
 
-For a complementary compact nilmanifold model with explicit left-invariant data, see Appendix <a href="#app:iwasawa" data-reference-type="ref" data-reference="app:iwasawa">14</a>.
+Exact commuting diagrams are demanding. A numerical or perturbative bridge usually supplies a defect.
 
-#### Admissibility checks (SA.F).
+<div id="prop:defect" class="proposition">
 
-- *Twisted spectral gap (SA.F1).* On compact $`X`$ with bounded geometry, $`\Delta^{(\widehat{H})}`$ is elliptic with discrete spectrum; Lemma <a href="#lem:gap" data-reference-type="ref" data-reference="lem:gap">1</a> bounds $`\lambda_1(\Delta^{(\widehat{H})})`$ below uniformly on controlled families.
-
-- *Bounded twisted projector (SA.F2).* Lemma <a href="#lem:proj" data-reference-type="ref" data-reference="lem:proj">2</a>.
-
-- *Commuting torsionful blocks (SA.F3).* Choose $`(g,\widehat{H})`$ split fiber/base; then Lemma <a href="#lem:commute" data-reference-type="ref" data-reference="lem:commute">3</a> applies.
-
-- *Smoothing (SA.F4).* The twisted parabolic generator enjoys the same semigroup bounds as in CY .
-
-<div class="proposition">
-
-**Proposition 12** (Model lower bound on $`\lambda_1(\Delta^{(\widehat{H})})`$ for Fu–Yau). *On a principal $`T^2`$-bundle over K3 with product-type ansatz $`g=\epsilon^{-2}g_{T^2}\oplus g_{K3}`$ and $`\widehat{H}`$ supported in the base plus basic components, there exists $`\epsilon_0>0`$ and $`c_*>0`$ such that for all $`0<\epsilon\le \epsilon_0`$ one has $`\lambda_1(\Delta^{(\widehat{H})})\ge c_*`$.*
+**Proposition 9** (Generator-defect bound). *Suppose $`\mathfrak B`$ is differentiable and, on a domain $`\mathcal V`$,
+``` math
+\left\|
+D\mathfrak B_u\,\mathcal F_{\mathrm{MTT}}(u)
+-\mathcal F_{\mathrm{HS}}(\mathfrak B(u))
+\right\|_{\mathcal Y}
+\le \varepsilon .
+```
+If $`\mathcal F_{\mathrm{MTT}}(u_\ast)=0`$, then
+``` math
+\left\|\mathcal F_{\mathrm{HS}}(\mathfrak B(u_\ast))\right\|_{\mathcal Y}
+\le\varepsilon .
+```*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Use separation of variables: the first nonzero eigenvalue on the small fiber is $`\gtrsim \epsilon^2`$, while the base contribution is bounded below by the K3 isoperimetric constant; $`\widehat{H}`$ enters as a first-order perturbation bounded uniformly in $`\epsilon`$, so Kato–Rellich preserves a uniform gap. ◻
+*Proof.* Insert $`\mathcal F_{\mathrm{MTT}}(u_\ast)=0`$ into the defect inequality. ◻
 
 </div>
 
-#### HYM and Bianchi.
+This proposition is deliberately modest. A small flow residual is not an exact background. To infer a nearby exact solution one needs a separate inverse-function, Newton–Kantorovich, or a posteriori theorem with a gauge-fixed derivative, inverse bound, nonlinear remainder estimate, and a verified radius.
 
-Pick a slope–stable holomorphic bundle on the Gauduchon metric; by Li–Yau it carries an HYM connection. Use $`\nabla^+`$ on $`TX`$ in the Bianchi identity to complete a Strominger solution.
+# What selection would additionally require
 
-#### Conclusion.
+<div id="prop:contraction" class="proposition">
 
-Fu–Yau manifolds furnish an *admissible flux slice* for MTT; by Theorems <a href="#thm:convexity" data-reference-type="ref" data-reference="thm:convexity">8</a> and <a href="#thm:Selection" data-reference-type="ref" data-reference="thm:Selection">11</a> they realize a *selected* (unique local minimizing) Strominger geometry coincident with the MTT fixed point.
-
-# Discussion and Outlook
-
-We have promoted the heterotic non–Kähler flux slice from *compliance* to *selection* inside MTT: twisted admissibility (SA.F1–SA.F4) grants a contraction/uniqueness theorem, while the Green–Schwarz–corrected selection potential $`\Xi`$ yields existence and *strict convexity* at the Strominger solution, hence unique local minimization. Equality of minimizer and fixed point follows from Lyapunov descent. As in the CY corner, this provides selection, controlled truncations, built–in decoherence, and correlated low–energy data.
-
-#### Scope in $`\alpha'`$.
-
-All target-space equations are matched to worldsheet $`\beta`$-functions at leading order in $`\alpha'`$. Higher-derivative corrections can be incorporated into $`\Xi`$ as additional local functionals; the contraction and Lyapunov parts of the proof depend only on sectoriality and bounded geometry and therefore persist qualitatively when such terms are perturbative.
-
-# Elliptic and Resolvent Estimates for $`\Delta^{(\widehat{H})}`$
-
-Write $`\Delta^{(\widehat{H})}=\Delta+\mathsf{Q}_1(\nabla)+\mathsf{Q}_0`$ with $`\|\mathsf{Q}_1\|+\|\mathsf{Q}_0\|\le C\|\widehat{H}\|_{C^1}`$. On compact bounded–geometry manifolds, parameter–dependent elliptic estimates give
+**Proposition 10** (Contraction-basin criterion). *Let $`(\mathcal B,d)`$ be a nonempty complete invariant subset of $`\mathcal D_{\mathrm{HS}}`$. If for some $`\tau_0>0`$
 ``` math
-\|u\|_{H^{s+2}}\ \le\ C\Big(\|(\Delta^{(\widehat{H})}-z)u\|_{H^{s}} + (1+|z|)\|u\|_{H^{s}}\Big),
+d(S_{\tau_0}y,S_{\tau_0}z)\le q\,d(y,z),
+\qquad y,z\in\mathcal B,\qquad 0\le q<1,
 ```
-uniform in $`z`$ on circles excluding the spectrum. Consequently, the resolvent $`(\Delta^{(\widehat{H})}-z)^{-1}`$ is bounded $`H^s\to H^s`$ uniformly on such circles, proving Lemma <a href="#lem:proj" data-reference-type="ref" data-reference="lem:proj">2</a>. Lemma <a href="#lem:gap" data-reference-type="ref" data-reference="lem:gap">1</a> follows from min–max and Cheeger/Buser for $`\Delta`$ plus relative boundedness of $`\mathsf{Q}_1,\mathsf{Q}_0`$.
+then $`S_{\tau_0}`$ has exactly one fixed point in $`\mathcal B`$, and its Picard iterates converge geometrically to that point.*
 
-# Linearization and Positive Hessian
+</div>
 
-Linearize $`\Xi`$ at a Strominger background in fixed gauges. The second variation is
+<div class="proof">
+
+*Proof.* This is the Banach fixed-point theorem on $`\mathcal B`$. ◻
+
+</div>
+
+The content lies in proving the invariant complete basin and the number $`q<1`$. Parabolic smoothing alone does not do this. A schematic estimate of the form $`C_\Pi M(\tau)e^{L\tau}`$ proves contraction only after one establishes that it is strictly below one for a specified $`\tau`$ on a specified domain.
+
+<div id="prop:no-selection" class="proposition">
+
+**Proposition 11** (Correspondence does not imply selection). *Suppose $`\mathfrak B`$ intertwines two flows. If the lower flow has two fixed points in $`\mathfrak B(\mathcal D_{\mathrm{MTT}})`$, intertwining alone cannot select one of them.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The identity map on a space with a flow having two fixed points is already an intertwiner and selects neither. Additional basin, initial-data, variational, or source information is necessary. ◻
+
+</div>
+
+Consequently the phrase “MTT selects the compactification” requires more than <a href="#thm:descent" data-reference-type="ref+label" data-reference="thm:descent">7</a>. It requires a selected upper initial condition or branch, a complete invariant basin, uniqueness within the physically relevant quotient, and a proof that no other admissible basin realizes the same observables.
+
+# Audit of the former selection argument
+
+## The functional was not a selection theorem
+
+The previous version introduced a functional $`\Xi`$ containing the string-frame curvature term, $`H`$- and Yang–Mills terms, Lagrange multipliers, and a spectral variance term. It then claimed:
 ``` math
-\delta^2\Xi[\mathsf u,\mathsf u]\ =\ \langle \mathcal L \mathsf u,\ \mathsf u\rangle_{L^2} \ +\ \text{l.o.t.},
+\operatorname{Crit}(\Xi)
+\Longleftrightarrow
+\{\text{Hull--Strominger{} solutions}\},
+\qquad
+D^2\Xi>0.
 ```
-where $`\mathcal L`$ is block–diagonal at leading order with entries the twisted Laplacians on the metric/dilaton ($`\Delta^{(\widehat{H})}`$ acting on symmetric 2–tensors and scalars), on $`B`$ ($`\Delta^{(\widehat{H})}`$ on 2–forms), and on the bundle ($`\Delta_A`$ acting on $`\mathfrak{u}(E)`$–valued 1–forms). SA.F1 yields $`\langle \mathcal L \mathsf u,\mathsf u\rangle\ge c\|\mathsf u\|_{H^1}^2`$ modulo symmetries; the OU variance term contributes $`+\sum \gamma_{n,k}^{-1}|u_{n,k}|^2`$, lifting residual moduli. This proves Theorem <a href="#thm:convexity" data-reference-type="ref" data-reference="thm:convexity">8</a>.
+Neither implication was established.
 
-# Commuting Torsionful Blocks: Details
+First-order supersymmetry equations are not generally identical to the Euler–Lagrange equations of the ten-dimensional action. Under additional instanton and perturbative assumptions, solutions of the supersymmetry and Bianchi equations can imply the equations of motion, but that is not a variational equivalence . Second, scalar curvature and multiplier terms do not give an evidently bounded-below functional. Third, positivity of a principal elliptic block does not control all lower-order couplings or moduli. Finally, a spectral scalar cannot be asserted to lift every geometric and bundle modulus without its actual second variation.
 
-If $`g=\bigoplus_i g_i`$ and $`\widehat{H}=\sum_i \widehat{H}_i`$ with $`\widehat{H}_i`$ supported on block $`i`$ (and possibly a common $`S^1`$), then in block coordinates one has
+Accordingly, this version does not use $`\Xi`$, does not claim global attraction, and does not identify an MTT fixed point with a unique minimizer. An action-derived repair flow remains a valuable future target, but it must be constructed before its Hessian or Lyapunov properties are quoted.
+
+## Connection and torsion bookkeeping
+
+The gauge-invariant three-form should satisfy both the local Chern–Simons description and the global differential-cohomological patching law. Once $`H`$ is used for that gauge-invariant object, the supersymmetry torsion equation is $`H=\mathrm d^c\omega`$ in the chosen convention. Subtracting the Chern–Simons terms a second time from the torsion equation double counts them.
+
+The tangent connection $`\nabla`$ also cannot be changed silently between the torsion equation, Bianchi identity, anomaly flow, and equations-of-motion claim. Different choices may define different Hull–Strominger systems .
+
+# Fu–Yau, Iwasawa, and the current MTT evidence
+
+## What established mathematics supplies
+
+Fu and Yau constructed solutions on non-Kähler torus bundles over K3 under specific topological, bundle, and analytic hypotheses . Later work extended and reorganized these constructions, including solutions with torus symmetry and tangent HYM connections . The Anomaly flow is known to converge in a Fu–Yau ansatz for controlled initial data .
+
+These results prove that the lower target is mathematically inhabited. They do not show that the selected MTT $`q=79`$ carrier is one of those solutions, nor that its upper flow descends to the Anomaly flow.
+
+## The q79 rows must not be merged
+
+The current MTT corpus contains several nontrivial but separate results:
+
+1.  exact finite arithmetic selecting the $`q=79`$ branch;
+
+2.  smooth rank-three topological candidates with index $`\pm3`$;
+
+3.  an exact finite rank-two Cech witness;
+
+4.  a certified finite rank-two HYM approximation; and
+
+5.  a rank-two Wiener-algebra existence and local-uniqueness certificate.
+
+The packets and verifiers are curated in Ref. . The rank-two analytic theorem does not change its bundle rank, Chern classes, or carrier. The topological rank-three candidate is not yet a stable holomorphic visible bundle with an HYM connection.
+
+The physical completion therefore still needs, on one $`X_{79}`$:
+
+<div class="center">
+
+| Gate | Required object | Current state |
+|:---|:---|:---|
+| G1 | complex $`X_{79}`$, $`\Omega`$, and positive balanced Fu–Yau metric | candidate/partial |
+| V1 | rank-three visible holomorphic stable bundle with index $`\pm3`$ | open |
+| V2 | compatible hidden holomorphic data | open |
+| H1 | visible, hidden, and tangent instantons in one chamber | rank-two evidence |
+| A1 | differential Green–Schwarz identity with fixed traces | open |
+| Q1 | global gerbe and flux quantization | open |
+| B1 | connection-preserving MTT bridge and flow intertwiner | open |
+
+</div>
+
+This is the physical content of the open blockers $`B.\mathrm{HS}.01`$ and $`B.\mathrm{GEO}.01`$.
+
+## The corrected role of Iwasawa and Lens–Nil
+
+The Iwasawa manifold remains a useful source of explicit balanced $`SU(3)`$-structure calculations. The companion bundle audit shows, however, that the earlier printed rank-three bundle, Bianchi match, and selected-background conclusion do not survive. Other valid Iwasawa Hull–Strominger solutions exist in the literature; their existence does not repair that specific MTT construction.
+
+Likewise,
 ``` math
-d_{\widehat{H}}=\sum_i (d_{(i)}+\widehat{H}_i\wedge),\qquad \delta_{\widehat{H}}=\sum_i (\delta_{(i)}+\iota(\widehat{H}_i)),
+\text{local Circle--Lens--Nil filtration}
+\not\equiv L(3,1)\times\mathrm{Nil}_3
+\not\equiv X_{79}.
 ```
-and each summand acts only on block $`i`$. Hence $`\Delta^{(\widehat{H})}=\sum_i \Delta^{(\widehat{H})}_{B_i}`$ and $`[\,\Delta^{(\widehat{H})}_{B_i},\Delta^{(\widehat{H})}_{B_j}\,]=0`$.
+Lens and Nil may remain auxiliary finite, spectral, or transport labels. They are not a substitute for the integrable complex geometry and global bundle data in Definition <a href="#def:lower" data-reference-type="ref" data-reference="def:lower">1</a>.
 
-# Detailed Variations in $`(B,\widehat H,K,\Lambda)`$
+# Worldsheet and physical interpretation
 
-We work at fixed topology and in the gauges of §<a href="#sec:Prelim" data-reference-type="ref" data-reference="sec:Prelim">2</a>. The only nontrivial variations from $`\Xi`$ in <a href="#eq:XiDefFixed" data-reference-type="eqref" data-reference="eq:XiDefFixed">[eq:XiDefFixed]</a> are in the $`|\widehat H|^2`$ term and the two constraint terms.
+A first-order Hull–Strominger background is an important string-theoretic object, but it is not by itself a complete four-dimensional model. A worldsheet completion requires the relevant anomaly, conformal, modular, factorization, and GSO data. Four-dimensional physics additionally requires the massless cohomology, representation embedding, normalized kinetic terms, overlap integrals, moduli treatment, and quantum corrections.
 
-#### (i) Variation in $`K`$.
+The fixed-point bridge therefore has a precise interpretation:
 
-``` math
-\delta_K \Xi \;=\; \int_X \delta K \wedge \Big(\mathrm{d}\widehat H-\tfrac{\alpha'}{4}(\mathrm{Tr}F\wedge F-\mathrm{Tr}R^+\wedge R^+)\Big),
-```
-so the Euler–Lagrange equation is the Bianchi identity $`\mathrm{d}\widehat H=\tfrac{\alpha'}{4}(\mathrm{Tr}F\wedge F-\mathrm{Tr}R^+\wedge R^+)`$.
+- it can explain how an upper MTT equilibrium becomes a lower geometric equilibrium;
 
-#### (ii) Variation in $`\Lambda`$.
+- it can transport a certified residual and its error budget;
 
-``` math
-\delta_\Lambda \Xi \;=\; \int_X \delta\Lambda \wedge \Big(\widehat H-\mathrm{d}B+\tfrac{\alpha'}{4}(\omega_3(A)-\omega_3(\omega^+))\Big),
-```
-imposing the *definition* of $`\widehat H`$ as the Green–Schwarz 3form: $`\widehat H=\mathrm{d}B-\tfrac{\alpha'}{4}(\omega_3(A)-\omega_3(\omega^+))`$.
+- it cannot create missing bundles or flux data;
 
-#### (iii) Variation in $`\widehat H`$.
+- it cannot turn a conditional encoding into source selection; and
 
-Using $`\delta |\widehat H|^2=2\langle \widehat H,\delta\widehat H\rangle`$ and integrating by parts in the $`K`$ term,
-``` math
-\delta_{\widehat H}\Xi \;=\; -\int_X e^{-2\Phi}\langle \widehat H,\delta\widehat H\rangle\,\mathrm{vol}_g
-\;+\;\int_X K\wedge \mathrm{d}(\delta\widehat H)\;+\;\int_X \Lambda\wedge \delta\widehat H .
-```
-With $`\mathrm{d}(K\wedge \delta\widehat H)=\mathrm{d}K\wedge \delta\widehat H - K\wedge \mathrm{d}(\delta\widehat H)`$ and no boundary, this gives
-``` math
-\delta_{\widehat H}\Xi \;=\; \int_X \big(-e^{-2\Phi}*\widehat H+\mathrm{d}K+\Lambda\big)\wedge \delta\widehat H .
-```
-Hence the equation of motion is
-``` math
-\begin{equation}
-\label{eq:EL1}
-e^{-2\Phi}*\widehat H\;=\;\mathrm{d}K+\Lambda .
-\end{equation}
-```
+- it does not derive low-energy masses or couplings without additional normalized overlap and transport maps.
 
-#### (iv) Variation in $`B`$.
+# A concrete completion program
 
-Only the $`\Lambda`$ term contributes:
-``` math
-\delta_B\Xi \;=\; -\int_X \Lambda\wedge \mathrm{d}(\delta B)\;=\;\int_X \mathrm{d}\Lambda \wedge \delta B .
-```
-Thus $`\mathrm{d}\Lambda=0`$. We may absorb the closed form $`\Lambda`$ into $`K`$ (or set $`\Lambda=0`$ by choosing the gauge slice for $`K`$), so <a href="#eq:EL1" data-reference-type="eqref" data-reference="eq:EL1">[eq:EL1]</a> becomes
-``` math
-\mathrm{d}\!\big(e^{-2\Phi}*\widehat H\big)\;=\;0,
-```
-i.e. the weighted $`B`$–equation of motion.
+The revised bridge suggests an efficient order of work.
 
-#### (v) Variations in $`A`$ and $`\omega^+`$.
+1.  Construct the physical rank-three visible bundle on the selected Fu–Yau-oriented $`q=79`$ carrier and prove stability.
 
-The standard identities $`\delta\omega_3(A)=2\mathrm{Tr}(\delta A\wedge F)+\mathrm{d}\,\mathrm{Tr}(A\wedge \delta A)`$ and the analogous one for $`\omega^+`$ show that the only bulk contribution from the constraints is $`-\tfrac{\alpha'}{2}\int_X K\wedge \mathrm{Tr}(\delta A\wedge F)`$ and $`+\tfrac{\alpha'}{2}\int_X K\wedge \mathrm{Tr}(\delta\omega^+\wedge R^+)`$, which combine with the Yang–Mills and Einstein terms. In the holomorphic class and for Gauduchon metrics, the gauge Euler–Lagrange equations reduce to the HYM conditions used in §<a href="#sec:HYM" data-reference-type="ref" data-reference="sec:HYM">7</a>.
+2.  Construct compatible hidden and tangent instantons in the same metric chamber.
 
-# Iwasawa as a concrete Strominger background
+3.  Solve the differential Green–Schwarz equation with fixed traces and provide global gerbe data.
 
-## E.1Background and SU(3) structure
+4.  Define the MTT configuration space and its selected continuum vector field on that same tuple.
 
-Let $`X = \Gamma\backslash H_3(\mathbb{C})`$ be the Iwasawa manifold with the standard left-invariant $`(1,0)`$-coframe $`(\omega_1,\omega_2,\omega_3)`$ obeying $`d\omega_1=d\omega_2=0`$, $`d\omega_3=\omega_1\wedge\omega_2`$. Set the Hermitian form and holomorphic volume form
-``` math
-J=\frac{\mathrm{i}}{2}\sum_{j=1}^3 \omega_j\wedge\bar\omega_j,\qquad \Omega=\omega_1\wedge\omega_2\wedge\omega_3.
-```
-Then $`X`$ is complex parallelizable and $`J`$ is balanced ($`d(J^2)=0`$). With the Bismut connection $`\nabla_+`$ on $`TX`$, the torsion is $`T=H_b=\mathrm{i}(\bar\partial-\partial)J`$, consistent with the Green–Schwarz definition used in the main text. *Reference model and notation as in A02.* :contentReference\[oaicite:9\]index=9
+5.  Define every row of $`\mathfrak B`$, including connection and domain maps.
 
-## E.2Strominger data and the Bianchi identity
+6.  Prove <a href="#eq:generator-intertwine" data-reference-type="ref+label" data-reference="eq:generator-intertwine">[eq:generator-intertwine]</a>, or emit a certified defect bound.
 
-Use $`\nabla_+`$ on $`TX`$ and take a left-invariant SU(3)-instanton $`A`$ on a holomorphic bundle $`E\to X`$ (explicit left-invariant abelian instantons exist on Iwasawa). Define the gauge-invariant Green–Schwarz three-form
-``` math
-H_b = dB - \frac{\alpha'}{4}\big(\omega_3(A)-\omega_3(\omega_+)\big),\qquad
-dH_b = \frac{\alpha'}{4}\big(\mathrm{Tr}F\wedge F - \mathrm{Tr}R_+\wedge R_+\big).
-```
-Then, with $`J`$ balanced and $`A`$ of HYM type, the *Hull–Strominger system* $`d(e^{-2\Phi}J\wedge J)=0`$, $`F^{0,2}=0`$, $`J\lrcorner F=0`$, and the Bianchi identity above is satisfied. This matches the conventions and equations in Sections 2–3 of the main text. :contentReference\[oaicite:10\]index=10 :contentReference\[oaicite:11\]index=11
+7.  Use <a href="#thm:descent" data-reference-type="ref+label" data-reference="thm:descent">7</a> or <a href="#prop:defect" data-reference-type="ref+label" data-reference="prop:defect">9</a>; if selection is claimed, independently prove the contraction-basin hypotheses of <a href="#prop:contraction" data-reference-type="ref+label" data-reference="prop:contraction">10</a>.
 
-## E.3Twisted admissibility (SA.F) on Iwasawa
+This program is stricter than the previous selection-potential route, but it also uses more of the mathematics that already exists. In particular, the Anomaly flow supplies the correct lower fixed-point language instead of inventing a second unverified flow.
 
-Let $`\Delta(H_b)`$ be the twisted Laplacian for $`d_{H_b}=d+H_b\wedge`$. On a fixed compact Iwasawa metric:
+# Conclusion
 
-- **Twisted spectral gap (SA.F1).** $`\lambda_1(\Delta(H_b))>0`$, with a uniform lower bound on bounded-geometry families. This is a direct instance of Lemma 4.1 (min–max/Cheeger–Buser for $`\Delta`$ plus Kato–Rellich for the $`H_b`$-terms).
+The viable relationship between MTT and the Hull–Strominger system is a conditional fixed-point correspondence. Its central object is not an assumed selection potential but a typed, connection-preserving flow intertwiner. If that intertwiner and one upper fixed point are supplied, fixed-point descent is exact. If only a defect estimate is supplied, the result is an approximate lower solution until an a posteriori theorem closes the residual.
 
-- **Bounded twisted projector (SA.F2).** The twisted harmonic projector $`\Pi(H_b):H^s\to H^s`$ is bounded for all $`s`$, by the resolvent representation and parameter-dependent elliptic estimates (Lemma 4.2).
+Fu–Yau geometry and the Anomaly flow make this route mathematically credible. The current $`q=79`$ finite, topological, and rank-two results make it nonempty as an MTT research program. They do not yet provide the common rank-three visible–hidden background or the intertwiner. Those two objects, not another reformulation of the old potential, are the present frontier.
 
-(See A02 for the same statements in this concrete model.) :contentReference\[oaicite:12\]index=12 :contentReference\[oaicite:13\]index=13
+#### Rows used directly in this paper.
 
-## E.4Selection: minimizer $`=`$ MTT fixed point
+- (*numeric certified*).
 
-Let $`\Xi`$ be the selection potential of Sec. 5. By Theorem 5.2 (EL $`\Leftrightarrow`$ Strominger), any Iwasawa Strominger background is a critical point. Near a left-invariant solution $`(J_0,\Phi_0,B_0;A_0)`$, the Hessian is strictly positive modulo symmetries (Theorem 5.4), and $`\Xi`$ is a strict Lyapunov function for the coherent flow and the discrete map $`T_\tau`$ (Proposition 5.6). Hence the coherent MTT fixed point exists, is unique, and *equals* the unique local minimizer, i.e. the Iwasawa Strominger solution (A02 Theorem 1). :contentReference\[oaicite:14\]index=14 :contentReference\[oaicite:15\]index=15
+  Weighted-theta Fourier-tail and Wiener contraction certificate.
 
-#### Remark (on SA.F3).
+- (*derived exact*).
 
-R02–12 uses SA.F3 (commuting torsionful blocks) for split geometries; on Iwasawa the torsion couples invariant blocks and we may work with the *global* twisted projector $`\Pi(H_b)`$ instead. The contraction/Lyapunov arguments rely only on SA.F1–SA.F2 plus smoothing (SA.F4), which hold here. :contentReference\[oaicite:16\]index=16
+  Literal 81-entry, 729-cocycle finite Cech witness.
 
-## E.5Literature pointers
+- (*derived exact*).
 
-Invariant Strominger solutions on nilmanifolds (including Iwasawa) are well documented and are consistent with the Bismut/Hull choice used here; see Fu–Yau and subsequent invariant constructions, e.g. .
+  Executable q=79 exact-branch audit.
+
+- (*derived exact*).
+
+  CRT q=79 theorem on the selected exact branch.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The q79 arithmetic theorem and audit, literal finite rank-two Cech witness, and rank-two Wiener-contraction certificate provide direct evidence only at their declared finite, topological, or rank-two analytic tiers. They do not construct the common physical rank-three visible-hidden Hull-Strominger background, differential Green-Schwarz representative, flux gerbe, worldsheet endpoint, or the typed MTT-to-Anomaly-flow intertwiner required by the conditional fixed-point theorem.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Rows used directly in this paper
+
+- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
+- `A07/literal_cech_witness` (**DERIVED_EXACT**): Literal 81-entry, 729-cocycle finite Cech witness.
+- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
+- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

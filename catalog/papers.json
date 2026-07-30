@@ -6,9 +6,9 @@
     "papers_with_zenodo_release": 138,
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
-    "superseded_projects_excluded": 54,
-    "zenodo_records": 235,
-    "zenodo_records_matched": 235,
+    "superseded_projects_excluded": 55,
+    "zenodo_records": 236,
+    "zenodo_records_matched": 236,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -7233,6 +7233,115 @@
       ]
     },
     {
+      "abstract": "The Hull–Strominger system couples a conformally balanced Hermitian metric, holomorphic gauge bundles, Hermitian–Yang–Mills connections, torsion, and the differential Green–Schwarz identity on one compact complex threefold. This paper asks a precise question: when does a fixed point of a Modal Triplet Theory evolution determine a solution of that system? We define a typed bridge from an upstairs MTT configuration space to Hull–Strominger data and prove exact and residual fixed-point descent theorems. Exact descent requires the bridge to intertwine the selected MTT flow with a lower geometric flow, such as the Anomaly flow together with the required bundle evolutions. Approximate intertwining yields only a quantified equation residual. These results establish a conditional correspondence, not compactification selection. The former selection-potential, global-convexity, and automatic Fu–Yau claims are withdrawn. Established Fu–Yau and Anomaly-flow results provide a mathematically appropriate lower target, while the selected q=79 program still lacks one common rank-three visible–hidden Hull–Strominger tuple and a connection-preserving intertwiner from the MTT carrier.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v2",
+      "date": "Version 2, July 2026",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.17071766",
+        "created": "2026-07-30T16:25:07.586713+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21707236",
+        "files": [
+          {
+            "checksum": "md5:8f83ff8c4a31581ea557228a5f56528e",
+            "content_url": "https://zenodo.org/api/records/21707236/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 398463
+          }
+        ],
+        "id": "21707236",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21707236",
+        "resource_type": "publication",
+        "title": "Modal Triplet Theory and the Hull–Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary",
+        "updated": "2026-07-30T16:25:07.966761+00:00",
+        "version": "v2"
+      },
+      "main_tex_sha256": "c7cbe4cc0ebe987609ae16a2520b6df9bf18aff70c503657b6a356a7ba2cba2d",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "paper_md_sha256": "7755c84179047b6c8c1ab1c70cf22714e73be8eeaacf07ce555dd5a27ffacbc9",
+      "release_state": "zenodo_released",
+      "result_refs": [
+        "hym_wiener_contraction",
+        "literal_cech_witness",
+        "q79_exact_audit",
+        "q79_exact_theorem"
+      ],
+      "revision": {
+        "revision_evidence_path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "63e4b4928f1be425e5b69193f9bd4a3676e249d10439985d34593ccc0dfe700d",
+        "selected_revision": true,
+        "superseded_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System"
+      },
+      "source_provenance": {
+        "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System"
+      },
+      "source_tree_sha256": "9fcb390f92eec3716cc7a8bd0e926c1980d55bb0fc38713496b9a4a22eed9f93",
+      "title": "Modal Triplet Theory and the Hull–Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.17071766",
+          "created": "2026-07-30T16:25:07.586713+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21707236",
+          "files": [
+            {
+              "checksum": "md5:8f83ff8c4a31581ea557228a5f56528e",
+              "content_url": "https://zenodo.org/api/records/21707236/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 398463
+            }
+          ],
+          "id": "21707236",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21707236",
+          "resource_type": "publication",
+          "title": "Modal Triplet Theory and the Hull–Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary",
+          "updated": "2026-07-30T16:25:07.966761+00:00",
+          "version": "v2"
+        },
+        {
+          "concept_doi": "10.5281/zenodo.17071766",
+          "created": "2025-09-07T09:22:46.624564+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.17071767",
+          "files": [
+            {
+              "checksum": "md5:8cf14f0d2b32bfecca4f924d07b04cd4",
+              "content_url": "https://zenodo.org/api/records/17071767/files/Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System%20(3).pdf/content",
+              "key": "Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System (3).pdf",
+              "size": 390169
+            }
+          ],
+          "id": "17071767",
+          "match_kind": "title_or_file",
+          "match_score": 1.0,
+          "publication_date": "2025-09-07",
+          "record_url": "https://zenodo.org/records/17071767",
+          "resource_type": "publication",
+          "title": "Modal Triplet Theory: From MTT to the Strominger (Heterotic Flux) System",
+          "updated": "2025-09-07T09:22:47.010389+00:00",
+          "version": "v1.0"
+        }
+      ]
+    },
+    {
       "abstract": "We replace the former universal MTT as a Superset theorem with a typed atlas of relationships between Modal Triplet Theory (MTT) and established frameworks. A derivation, reconstruction, embedding, controlled reduction, conditional bridge, calibration, and interpretive correspondence are different claims and require different certificates. The current MTT Foundation and Fixed Points series establish an internal spectral/control spine, but do not by themselves derive General Relativity, the Born rule, interacting quantum field theory, the Standard Model, string theory, a unique heterotic vacuum, or a UV-finite unitary quantum gravity. The strongest current cross-framework results are conditional operator reductions, coherent locality descent, and product-action internal-mode reconstructions. We give a formal containment-certificate checklist and prove an underdetermination theorem: if inequivalent MTT realizations have the same target observables, target agreement cannot select a unique realization. Shared parameter names likewise do not prove shared physical knobs without one sourced map into all sectors. This atlas records the present status of GR, QM, QFT/AQFT, SM, EFT, KK, NCG, string/flux, quantum-gravity, LQG, asymptotic-safety, and causal-set links, and sets explicit gates for upgrading any of them. MTT remains a unification program with several rigorous internal modules, not a proved superset of all listed theories.",
       "authors": [
         "Peter Nero"
@@ -8122,82 +8231,6 @@
           "resource_type": "publication",
           "title": "Modal Triplet Theory: From MTT to String Theory",
           "updated": "2025-09-06T11:21:21.111673+00:00",
-          "version": "v1.0"
-        }
-      ]
-    },
-    {
-      "abstract": "We extend the Modal Triplet Theory (MTT) bridge from the torsion–free SU(3) (Calabi–Yau) slice to the non–Kähler, flux slice governed by the Hull–Strominger system, and upgrade the result from admissibility to true selection by MTT. On a compact complex threefold with trivial canonical bundle, conformally balanced metric, NS–NS three–form \\widehat{H}, and a Hermitian–Yang–Mills (HYM) bundle, we formulate twisted Standing Assumptions (SA.F1–SA.F4) ensuring contractivity of the projected flow and the existence of a unique coherent fixed point. We then construct a selection potential \\Xi in the torsional SU(3) slice and prove: (i) its stationary points coincide with solutions of the Hull–Strominger system (with the Bismut/Hull connection on TX); (ii) under SA.F1–SA.F4, \\Xi is strictly convex near a Strominger solution, hence that solution is the unique local minimizer; (iii) the MTT fixed point coincides with this minimizer and is globally attractive in the coherent sector. A reference implementation on the Fu–Yau class (torus bundles over K3 and K3–orbifolds) verifies twisted spectral gaps, bounded projectors, and commuting torsionful Laplacians. Compactification choice is replaced by fixed–point selection also in the non–Kähler regime; technically, this yields controlled truncations, built–in decoherence, and correlated low–energy data in the presence of flux, fully parallel to the CY case.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "September 7 2025",
-      "latest_zenodo_release": {
-        "concept_doi": "10.5281/zenodo.17071766",
-        "created": "2025-09-07T09:22:46.624564+00:00",
-        "creators": [
-          "Nero, Peter"
-        ],
-        "doi": "10.5281/zenodo.17071767",
-        "files": [
-          {
-            "checksum": "md5:8cf14f0d2b32bfecca4f924d07b04cd4",
-            "content_url": "https://zenodo.org/api/records/17071767/files/Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System%20(3).pdf/content",
-            "key": "Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System (3).pdf",
-            "size": 390169
-          }
-        ],
-        "id": "17071767",
-        "match_kind": "title_or_file",
-        "match_score": 1.0,
-        "publication_date": "2025-09-07",
-        "record_url": "https://zenodo.org/records/17071767",
-        "resource_type": "publication",
-        "title": "Modal Triplet Theory: From MTT to the Strominger (Heterotic Flux) System",
-        "updated": "2025-09-07T09:22:47.010389+00:00",
-        "version": "v1.0"
-      },
-      "main_tex_sha256": "b1025edbb6bbc19a45b4ef870a1bc35a97562b76e053565820605d38139434c1",
-      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
-      "paper_md_sha256": "4bd00083cdd789977b170d819d8cb5187d48242c9fedcf74832fe0f98d0bc6ff",
-      "release_state": "zenodo_released",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System"
-      },
-      "source_tree_sha256": "32457a2fa741f79e51b5af61649b1f397f64910e6c97f14bc93cd2af59673c43",
-      "title": "Modal Triplet Theory: From MTT to the Strominger (Heterotic Flux) System Selection of Non–Kähler SU(3) Geometry by a Fixed–Point Principle",
-      "version_relation": "matches_latest_release",
-      "zenodo_releases": [
-        {
-          "concept_doi": "10.5281/zenodo.17071766",
-          "created": "2025-09-07T09:22:46.624564+00:00",
-          "creators": [
-            "Nero, Peter"
-          ],
-          "doi": "10.5281/zenodo.17071767",
-          "files": [
-            {
-              "checksum": "md5:8cf14f0d2b32bfecca4f924d07b04cd4",
-              "content_url": "https://zenodo.org/api/records/17071767/files/Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System%20(3).pdf/content",
-              "key": "Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System (3).pdf",
-              "size": 390169
-            }
-          ],
-          "id": "17071767",
-          "match_kind": "title_or_file",
-          "match_score": 1.0,
-          "publication_date": "2025-09-07",
-          "record_url": "https://zenodo.org/records/17071767",
-          "resource_type": "publication",
-          "title": "Modal Triplet Theory: From MTT to the Strominger (Heterotic Flux) System",
-          "updated": "2025-09-07T09:22:47.010389+00:00",
           "version": "v1.0"
         }
       ]

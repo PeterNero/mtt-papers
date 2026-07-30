@@ -1,6 +1,14 @@
 {
   "schema": "mtt.expository-review-decisions.v1",
   "papers": {
+    "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Rebuilt as a conditional fixed-point correspondence: the invalid twisted differential, coercive selection potential, automatic contraction, global-minimizer, and selected Fu-Yau claims are withdrawn; a typed MTT-to-Hull-Strominger bridge, exact flow-intertwining descent theorem, generator-defect bound, and separate contraction-basin criterion are supplied; q79 finite/topological/rank-two evidence is retained at its declared tiers through the managed reproducibility section, and the 12-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "c7cbe4cc0ebe987609ae16a2520b6df9bf18aff70c503657b6a356a7ba2cba2d",
+      "reviewed_pdf_sha256": "b061207fb5a80642231191614310d6339e3019c2892500ecd5353c55bdbd5ad2",
+      "reviewed_source_tree_sha256": "9fcb390f92eec3716cc7a8bd0e926c1980d55bb0fc38713496b9a4a22eed9f93"
+    },
     "flux-compactifications-in-heterotic-string-theory-expli-08b38155": {
       "status": "reviewed",
       "reviewed_on": "2026-07-30",

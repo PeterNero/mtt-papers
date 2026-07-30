@@ -3,6 +3,26 @@
   "expected_canonical_papers": 139,
   "native_projects": [
     {
+      "abstract": "The Hull-Strominger system couples a conformally balanced Hermitian metric, holomorphic gauge bundles, Hermitian-Yang-Mills connections, torsion, and the differential Green-Schwarz identity on one compact complex threefold. This paper asks a precise question: when does a fixed point of a Modal Triplet Theory evolution determine a solution of that system? We define a typed bridge from an upstairs MTT configuration space to Hull-Strominger data and prove exact and residual fixed-point descent theorems. Exact descent requires the bridge to intertwine the selected MTT flow with a lower geometric flow, such as the Anomaly flow together with the required bundle evolutions. Approximate intertwining yields only a quantified equation residual. These results establish a conditional correspondence, not compactification selection. The former selection-potential, global-convexity, and automatic Fu-Yau claims are withdrawn. Established Fu-Yau and Anomaly-flow results provide a mathematically appropriate lower target, while the selected q=79 program still lacks one common rank-three visible-hidden Hull-Strominger tuple and a connection-preserving intertwiner from the MTT carrier.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "result_refs": [
+        "hym_wiener_contraction",
+        "literal_cech_witness",
+        "q79_exact_audit",
+        "q79_exact_theorem"
+      ],
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System",
+      "superseded_project": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System",
+      "title": "Modal Triplet Theory and the Hull-Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary"
+    },
+    {
       "abstract": "We give a typed, conditional formulation of Modal Triplet Theory as a theory of reduced description. A representative section, an exact upper decoder, autonomous reduced evolution, and merger of effective states solve four different mathematical problems; none follows merely from noninjectivity of a projection. We prove the factor-through criterion for autonomous descent, a finite-diameter obstruction for a genuinely contractive reduced self-map, exact basin-local fixed-point results, and controlled approximate-orbit estimates. Admissibility boundaries are defined by explicit margins and section or projector conditioning rather than by assuming the desired obstruction. The encoding atlas and its relations are consequently local and conditional. Probability, irreversibility, physical time, and any concrete physical realization require their own measure, evolution, and source hypotheses.",
       "authors": [
         "Peter Nero"

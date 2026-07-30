@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.17071766",
+      "created": "2026-07-30T16:25:07.586713+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21707236",
+      "files": [
+        {
+          "checksum": "md5:8f83ff8c4a31581ea557228a5f56528e",
+          "content_url": "https://zenodo.org/api/records/21707236/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 398463
+        }
+      ],
+      "id": "21707236",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21707236",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and the Hull\u2013Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary",
+      "updated": "2026-07-30T16:25:07.966761+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.17072372",
       "created": "2026-07-30T15:20:09.617485+00:00",
       "creators": [
