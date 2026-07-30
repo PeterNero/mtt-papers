@@ -17,6 +17,14 @@
       "reviewed_pdf_sha256": "11d3c508932549006540c512b4db81ebe0f70bcbf7ade04928996ef7c4367f0c",
       "reviewed_source_tree_sha256": "0e8425ba20399ce79fbc3b26f1a591aadd37dd6a1fb1eefb90fb60a5acba2bf9"
     },
+    "modal-triplet-theory-from-mtt-to-pilot-wave-dynamics": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Rebuilt as a standalone explanatory regime-limited pilot-wave reconstruction. The paper defines the complete physical-configuration, Hilbert, Hamiltonian, wavefunction, current, nodal-set, guidance-flow, actual-configuration, equilibrium, apparatus, locality, and source record; proves one conditional MTT-pilot-wave reconstruction theorem; retains standard continuity, polar, guidance, equivariance, and effective-wavefunction mathematics under their literature hypotheses; exposes divergence-free current ambiguity and the initial-equilibrium source boundary; replaces the false no-right-inverse and no-global-guidance claims by typed regularity, decoder, current, maximal-flow, continuation, and instrument criteria; separates physical configuration-space nonlocality, Bell factorization, operational no-signalling, and upper-world locality; imports the exact selected q79 binary stopped output-measure theorem only on its declared domain; removes unsupported measurement, horizon, cosmology, relativistic, and zero-noise claims; supplies two worked examples and a twelve-row completion contract; retains B.QM.01 as globally open; and the complete 17-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "526a94a428c2f79cea7ec6be60af0db9d2d0384d9dec36286e64809f67223e1d",
+      "reviewed_pdf_sha256": "81f7fa937c61d3ccd3cde63f5da74ecab8d725448bcb18d3039e1293f4e51fc4",
+      "reviewed_source_tree_sha256": "3dac8fc35dfa09819ed9dd2ef33643bd9fce5178c7369d96a4b8e219f2ec1160"
+    },
     "modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880": {
       "status": "reviewed",
       "reviewed_on": "2026-07-30",

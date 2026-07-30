@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18262377",
+      "created": "2026-07-30T19:23:22.339789+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21709225",
+      "files": [
+        {
+          "checksum": "md5:2032f25092103fadc489114ea3ea1b37",
+          "content_url": "https://zenodo.org/api/records/21709225/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 456049
+        }
+      ],
+      "id": "21709225",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21709225",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and Pilot\u2013Wave Dynamics: A Regime-Limited Configuration-Space Reconstruction",
+      "updated": "2026-07-30T19:23:22.826912+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.17074246",
       "created": "2026-07-30T18:56:27.085692+00:00",
       "creators": [

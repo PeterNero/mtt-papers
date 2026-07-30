@@ -4,19 +4,19 @@
   "papers": 139,
   "priority_counts": {
     "critical": 9,
-    "light": 11,
+    "light": 10,
     "low": 1,
     "major": 8,
     "moderate": 4,
     "reference_ready": 2,
-    "reviewed": 104
+    "reviewed": 105
   },
   "missing_dimension_counts": {
     "argument_flow": 38,
     "conclusion": 12,
-    "concrete_foothold": 43,
+    "concrete_foothold": 42,
     "object_intuition": 91,
-    "orientation": 43,
+    "orientation": 44,
     "result_interpretation": 12
   },
   "forbidden_boilerplate_hits": [],
@@ -1975,28 +1975,28 @@
     },
     {
       "paper_id": "modal-triplet-theory-from-mtt-to-pilot-wave-dynamics",
-      "title": "Modal Triplet Theory: From MTT to Pilot\u2013Wave Dynamics",
-      "total_words": 2914,
-      "narrative_words": 2401,
-      "formal_results": 6,
-      "proofs": 4,
-      "narrative_words_per_result": 400.2,
-      "orientation": true,
+      "title": "Modal Triplet Theory and Pilot\u2013Wave Dynamics: A Regime-Limited Configuration-Space Reconstruction",
+      "total_words": 5328,
+      "narrative_words": 3334,
+      "formal_results": 2,
+      "proofs": 1,
+      "narrative_words_per_result": 1667.0,
+      "orientation": false,
       "object_intuition": false,
       "argument_flow": true,
       "result_interpretation": true,
-      "concrete_foothold": false,
+      "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
       "coverage_dimensions": 5,
-      "audit_priority": "light",
+      "audit_priority": "reviewed",
       "heuristic_priority": "light",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "review_note": "Rebuilt as a standalone explanatory regime-limited pilot-wave reconstruction. The paper defines the complete physical-configuration, Hilbert, Hamiltonian, wavefunction, current, nodal-set, guidance-flow, actual-configuration, equilibrium, apparatus, locality, and source record; proves one conditional MTT-pilot-wave reconstruction theorem; retains standard continuity, polar, guidance, equivariance, and effective-wavefunction mathematics under their literature hypotheses; exposes divergence-free current ambiguity and the initial-equilibrium source boundary; replaces the false no-right-inverse and no-global-guidance claims by typed regularity, decoder, current, maximal-flow, continuation, and instrument criteria; separates physical configuration-space nonlocality, Bell factorization, operational no-signalling, and upper-world locality; imports the exact selected q79 binary stopped output-measure theorem only on its declared domain; removes unsupported measurement, horizon, cosmology, relativistic, and zero-noise claims; supplies two worked examples and a twelve-row completion contract; retains B.QM.01 as globally open; and the complete 17-page PDF was visually inspected.",
       "missing_dimensions": [
-        "object_intuition",
-        "concrete_foothold"
+        "orientation",
+        "object_intuition"
       ]
     },
     {

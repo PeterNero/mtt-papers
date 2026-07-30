@@ -13,9 +13,9 @@ Canonical papers audited: **139**.
 | critical | 9 |
 | major | 8 |
 | moderate | 4 |
-| light | 11 |
+| light | 10 |
 | low | 1 |
-| reviewed | 104 |
+| reviewed | 105 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -24,9 +24,9 @@ Canonical papers audited: **139**.
 | --- | ---: |
 | argument_flow | 38 |
 | conclusion | 12 |
-| concrete_foothold | 43 |
+| concrete_foothold | 42 |
 | object_intuition | 91 |
-| orientation | 43 |
+| orientation | 44 |
 | result_interpretation | 12 |
 
 ## Revision Queue
@@ -55,7 +55,6 @@ Canonical papers audited: **139**.
 | moderate | moderate | `universality-and-robustness-of-the-coherent-sector-in-m-a64842b3` | 4 | 333.5 | 3/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold |
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
-| light | light | `modal-triplet-theory-from-mtt-to-pilot-wave-dynamics` | 6 | 400.2 | 5/7 | object_intuition, concrete_foothold |
 | light | light | `why-general-relativity-and-string-theory-are-the-same-a-98920533` | 4 | 927.2 | 5/7 | object_intuition, conclusion |
 | light | light | `effective-field-theory-as-a-shadow-of-projection-admiss-ec123406` | 3 | 1040.3 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | light | light | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 1 | 7592.0 | 6/7 | object_intuition |
@@ -149,6 +148,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `baseline-scales-and-phenomenological-consistency-in-mod-b28fa79e` | 2 | 865.5 | 3/7 | orientation, object_intuition, result_interpretation, concrete_foothold |
 | reviewed | light | `causal-sets-as-event-selection-shadows-of-coherence-bre-7bca8116` | 2 | 714.0 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | light | `fixed-points-vi-formal-synthesis-and-physical-interpretations` | 2 | 1715.5 | 6/7 | orientation |
+| reviewed | light | `modal-triplet-theory-from-mtt-to-pilot-wave-dynamics` | 2 | 1667.0 | 5/7 | orientation, object_intuition |
 | reviewed | low | `modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d` | 2 | 1162.0 | 7/7 | - |
 | reviewed | light | `path-integral-constraints-as-finite-admissibility-filte-47c01009` | 2 | 877.5 | 5/7 | object_intuition, argument_flow |
 | reviewed | low | `the-modal-triplet-theory-program-d2-matter-antimatter-a-ba5f86ec` | 2 | 1352.0 | 7/7 | - |

@@ -1,891 +1,1086 @@
 \documentclass[11pt]{article}
 
-\usepackage{series} % Modal Triplet Theory series style
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{geometry}
-\geometry{margin=1in}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,capitalise]{cleveref}
 
-\title{Modal Triplet Theory: From MTT to Pilot--Wave Dynamics}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\MTT}{Modal Triplet Theory}
+
+% Keep multi-paragraph managed evidence rows on separate list lines.
+\let\MTToriginalitem\item
+\renewcommand{\item}{\par\MTToriginalitem}
+
+\title{\vspace{-1em}
+Modal Triplet Theory and Pilot--Wave Dynamics:\\[0.25em]
+\large A Regime-Limited Configuration-Space Reconstruction}
 \author{Peter Nero}
-\date{January, 2026}
+\date{Version 2, July 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We derive pilot--wave (de Broglie--Bohm) dynamics as an effective, intra--basin
-description of Modal Triplet Theory (MTT).
-Starting from the deterministic modal flow on the full configuration space
-$X = Y^4 \times B_1 \times B_2 \times B_3$,
-we show that the coherent projection and observable pushforward induce
-(i) a Schr\"odinger evolution on the reduced observable Hilbert space,
-(ii) a conserved probability current on configuration space,
-and (iii) a canonical characteristic flow whose integral curves coincide
-with Bohmian guidance equations.
-No additional hidden variables, stochastic postulates, or ontological
-assumptions are introduced.
+This paper asks a deliberately narrower question than its predecessor:
+when does a Modal Triplet Theory (MTT) description reconstruct the standard
+nonrelativistic de Broglie--Bohm dynamics?  We first specify the complete
+lower pilot--wave record.  In addition to a complex Hilbert space and
+self-adjoint Schrodinger Hamiltonian, that record contains a physical
+configuration manifold, an actual configuration, a selected probability
+current, a guidance field and maximal flow, an equilibrium measure,
+subsystem and instrument data, a locality contract, and source and error
+certificates.  For a regular spinless scalar Schrodinger model the standard
+current obeys a continuity equation, and \(v=j/|\psi|^2\) defines the usual
+guidance law away from nodes.  Equivariance then propagates an initially
+chosen \(|\psi|^2\) distribution.  These facts are standard lower-level
+mathematics: continuity alone neither selects the actual configuration nor
+derives the initial equilibrium distribution, and it does not uniquely
+select the current because divergence-free modifications preserve the same
+continuity equation.
 
-We further prove that pilot--wave dynamics are valid only within
-admissible coherence basins where the coherent projection is stable.
-At admissibility boundaries---including measurement, horizon formation,
-and cosmological selection events---the pilot--wave description necessarily
-breaks down, while the underlying MTT dynamics remain deterministic and well-defined.
-Pilot--wave theory is therefore shown to be a regime--limited shadow
-of MTT rather than a fundamental theory.
+The MTT result is therefore conditional.  If one selected upper state emits
+the full pilot--wave record and its state, dynamics, configuration decoder,
+current, instruments, and records form commuting descent diagrams, then MTT
+reconstructs Bohmian trajectories and their operational statistics on the
+declared interval.  The current canonical geometry is a ten-dimensional
+bundle over a four-dimensional Lorentzian base with a compact
+six-dimensional fibre; the former literal
+\(Y^4\times B_1\times B_2\times B_3\) product is not used.  Failure of the
+reconstruction means that a required current, decoder, flow, or stable
+continuation is unavailable.  It does not follow from the absence of a
+right inverse, and it does not establish that Bohmian mechanics is globally
+impossible.  Standard global-existence results in fact cover broad
+Hamiltonian classes for almost every equilibrium initial configuration.
 
-This establishes Bohmian mechanics as a semiclassical gauge of MTT,
-clarifies its domain of validity, and resolves its foundational tensions
-with probability, measurement, and relativistic causality.
+Entangled guidance is explicitly nonlocal in physical configuration space.
+Operational no-signalling can nevertheless hold in quantum equilibrium,
+while an MTT claim of upper-world locality requires a separate descent
+theorem preserving settings, local algebras, records, and independence
+assumptions.  Measurement is treated as an ordinary system--apparatus
+interaction with an effective conditional wavefunction, not automatically
+as an admissibility-barrier crossing.  The selected \(q=79\) binary recorder
+provides an exact stopped operational output measure on its declared
+commuting Fock domain, but it does not yet source arbitrary Bohmian
+equilibrium ensembles or one uniquely actual history.  The paper thus
+establishes a precise regime-limited reconstruction and a finite completion
+contract, not a universal derivation or a no-hidden-variable theorem.
 \end{abstract}
 
+\section*{Revision note: Version 2}
+\addcontentsline{toc}{section}{Revision note: Version 2}
+\begin{description}[leftmargin=2.5cm,style=nextline]
+\item[Supersedes]
+Version 2 supersedes Version 1.0, DOI
+\href{https://doi.org/10.5281/zenodo.18262378}
+{10.5281/zenodo.18262378}.
+
+\item[Reason]
+The former paper combined standard continuity and guidance formulas with
+unsupported MTT source claims.  It began from the retired literal
+three-factor internal product, called the Bohmian configuration no
+additional hidden variable, treated equivariance as an independent
+derivation of the Born measure, and inferred measurement, horizon, and
+cosmological transitions from the absence of a measurable right inverse.
+It also asserted a no-global-guidance theorem contradicted in scope by
+standard almost-sure global-existence results.
+
+\item[Resolution]
+This revision defines the full lower pilot--wave record, separates standard
+Bohmian mathematics from MTT source selection, and proves a typed
+conditional reconstruction theorem.  It makes nodal and regularity domains
+explicit, records the current-selection ambiguity, replaces the
+right-inverse criterion by failures of current descent, configuration
+decoding, flow existence, or stable continuation, and separates
+configuration-space nonlocality from operational no-signalling and any
+claimed upper-world locality.
+
+\item[Retained content]
+For a supplied scalar Schrodinger model, the standard probability current,
+guidance field, polar Hamilton--Jacobi representation, and equivariance
+calculation remain valid under their usual hypotheses.  They provide a
+useful lower target for MTT reconstruction.
+
+\item[Remaining boundary]
+MTT has not yet selected a universal pilot--wave record from one source.
+In particular, the actual configuration, the standard current rather than
+an equivariant alternative, the initial equilibrium distribution, arbitrary
+apparatus contexts, relativistic foliation data, and one actual history are
+not all derived.  The universal Born-source blocker remains open outside the
+selected \(q=79\) binary recorder domain.
+\end{description}
+
 \tableofcontents
-\newpage
 
-%--------------------------------------------------
-\section{Introduction and Scope}
-%--------------------------------------------------
+\section{The question in its correct order}
+\label{sec:question}
 
-Pilot--wave theory (also known as de Broglie--Bohm theory) provides a deterministic
-reformulation of nonrelativistic quantum mechanics by supplementing the Schr\"odinger
-wavefunction with configuration--space trajectories guided by the wave phase.
-While mathematically consistent, pilot--wave theory is widely regarded as
-ontologically ad hoc, probabilistically incomplete, and difficult to extend
-beyond nonrelativistic quantum mechanics.
+Pilot--wave mechanics is not merely the Schrodinger equation written in
+polar form.  It is a theory with two coupled pieces of state:
+\begin{enumerate}[leftmargin=2em]
+\item a wavefunction \(\psi_t\) evolving on configuration space; and
+\item an actual configuration \(Q_t\) guided by that wavefunction.
+\end{enumerate}
+The first piece is shared with ordinary nonrelativistic quantum mechanics.
+The second is additional ontic data relative to a wavefunction-only account.
+Calling it ``hidden'' does not make it fictitious; the term means that the
+configuration is not generally available with arbitrary precision while it
+still enters the law of motion.  Bohm's original construction was explicitly
+presented in those terms \cite{Bohm1952I,Bohm1952II}.
 
-Modal Triplet Theory (MTT), by contrast, derives quantum mechanics as an effective
-four--dimensional shadow of deterministic dynamics on a higher--dimensional
-modal configuration space.
-In MTT, quantum states, probabilities, and measurement outcomes arise
-from coherent projection and admissibility constraints rather than from
-fundamental indeterminism or added hidden variables.
-
-The purpose of this paper is to show that pilot--wave dynamics are not an
-independent alternative to standard quantum mechanics, but rather
-an \emph{effective characteristic description} of MTT in regimes where:
-
-\begin{itemize}
-  \item the coherent projector is stable,
-  \item the effective Schr\"odinger evolution is valid,
-  \item and no admissibility barrier is crossed.
-\end{itemize}
-
-Within this regime, Bohmian guidance equations arise canonically
-from the conserved probability current associated with the MTT--derived
-Schr\"odinger evolution.
-Outside this regime, pilot--wave theory necessarily fails, while MTT remains
-consistent and deterministic.
-
-\subsection*{Claim Discipline}
-
-We distinguish three layers of statements:
-
-\begin{enumerate}
-  \item \textbf{Proved (MTT-native):}
-  deterministic modal flow, coherent projection, existence of Schr\"odinger
-  evolution, Born measure, and admissibility constraints.
-
-  \item \textbf{Derived (this paper):}
-  emergence of pilot--wave guidance equations as characteristic flows
-  of the MTT Schr\"odinger layer.
-
-  \item \textbf{Excluded claims:}
-  pilot--wave ontology as fundamental, global validity across selection events,
-  or replacement of MTT by Bohmian mechanics.
+MTT begins elsewhere: with an upper state, admissibility conditions,
+geometric or operator carriers, and evaluation maps to observable records
+\cite{MTTFoundation2026}.  The corrected MTT-to-QM paper distinguishes
+encoding, reconstruction, source selection, and universality
+\cite{MTTQM2026}.  The same distinction is indispensable here:
+\begin{enumerate}[leftmargin=2em]
+\item \emph{Encoding:} can upper data represent a wavefunction and a
+      configuration trajectory?
+\item \emph{Reconstruction:} if all lower rows are supplied, do the MTT and
+      Bohmian evaluations agree?
+\item \emph{Selection:} does a selected MTT source emit the Hamiltonian,
+      wavefunction, current, actual configuration, and equilibrium law?
+\item \emph{Universality:} does the same construction work for every
+      allowed preparation, apparatus, interaction, and relativistic regime?
 \end{enumerate}
 
-All derivations are valid \emph{only within admissible coherence basins},
-as emphasized throughout the MTT corpus.
+This paper answers the second question under explicit hypotheses.  It also
+identifies exactly which parts of the third question are presently closed
+on a finite domain and which remain open.  It does not convert a conditional
+reconstruction into a universal derivation by changing vocabulary.
 
-%--------------------------------------------------
-\section{MTT Framework and Notation}
-%--------------------------------------------------
+\section{The complete pilot--wave record}
+\label{sec:record}
 
-\subsection{Modal Configuration Space}
+A useful audit begins by writing down everything the lower theory needs.
+This avoids silently treating a wavefunction, a continuity equation, or a
+projector as the whole theory.
 
-Modal Triplet Theory posits a configuration space
+\begin{definition}[Spinless nonrelativistic pilot--wave record]
+\label{def:record}
+A pilot--wave record on a time interval \(I\) is a tuple
 \[
-X \;=\; Y^4 \times B_1 \times B_2 \times B_3,
-\]
-where:
-\begin{itemize}
-  \item $Y^4$ is the emergent spacetime manifold,
-  \item each $B_i$ is a compact modal fiber equipped with a Laplace--type operator.
-\end{itemize}
-
-Let $\Phi_\tau : X \to X$ denote the deterministic modal evolution,
-assumed invertible and well-posed on admissible domains.
-
-\subsection{Coherent Projection and Observable Pushforward}
-
-Define the joint harmonic projector
-\[
-\Pi := \Pi_{B_1} \Pi_{B_2} \Pi_{B_3},
-\]
-where $\Pi_{B_i}$ projects onto $\ker \Delta_{B_i}$.
-The coherent sector is
-\[
-\mathcal{H}_{\mathrm{coh}} := \mathrm{Ran}(\Pi).
-\]
-
-Observable states are obtained via the pushforward
-\[
-P := I \circ \Pi,
-\]
-where $I$ integrates over the internal modal fibers.
-
-The effective (shadow) evolution is
-\[
-T_\tau := P \circ \Phi_\tau.
-\]
-
-\subsection{Admissibility}
-
-An admissible domain $\mathcal{A} \subset X$ is one on which:
-\begin{enumerate}
-  \item the spectral gaps defining $\Pi$ remain open,
-  \item $\Pi$ is bounded and regular,
-  \item truncation errors remain controlled under iteration of $T_\tau$.
-\end{enumerate}
-
-Admissibility is \emph{not global}.
-Crossing its boundary produces selection events and effective irreversibility.
-
-\subsection{Reduced Hilbert Space and Schr\"odinger Layer}
-
-On each admissible basin, the observable sector admits:
-\begin{itemize}
-  \item a Hilbert space $\mathcal{H}_{\mathrm{obs}}$,
-  \item a self-adjoint Hamiltonian $H_{\mathrm{obs}}$,
-  \item unitary evolution $U(t)=e^{-iH_{\mathrm{obs}}t/\hbar}$.
-\end{itemize}
-
-This construction is reviewed in detail in the MTT$\to$QM derivation
-and will be taken as established here.
-
-\bigskip
-\noindent
-\textbf{In the next section}, we derive the configuration--space probability
-current and show how Bohmian guidance equations arise as characteristic flows.
-%==================================================
-\section{Configuration--Space Schr\"odinger Dynamics}
-%==================================================
-
-We now specialize to the standard nonrelativistic regime of the
-MTT--derived observable theory.
-All statements in this section are valid \emph{within a fixed admissible
-coherence basin}.
-
-\subsection{Configuration Observables}
-
-Let $q \in \mathbb{R}^{3N}$ denote a configuration observable
-(e.g.\ particle positions in the nonrelativistic limit).
-The observable Hilbert space takes the form
-\[
-\mathcal{H}_{\mathrm{obs}} \;\simeq\; L^2(\mathbb{R}^{3N}, dq).
-\]
-
-The MTT--derived Hamiltonian has the standard Schr\"odinger form
-\begin{equation}
-H_{\mathrm{obs}}
-\;=\;
-\sum_{k=1}^N
-\left(
--\frac{\hbar^2}{2m_k}\nabla_k^2
-\right)
-\;+\;
-V(q,t),
-\label{eq:Hobs}
-\end{equation}
-where $V$ may include external, interaction, and effective potentials
-arising from modal truncation.
-
-\subsection{Unitary Evolution}
-
-The observable state $\psi(q,t)$ evolves according to
-\begin{equation}
-i\hbar\,\partial_t \psi(q,t)
-\;=\;
-H_{\mathrm{obs}}\,\psi(q,t),
-\label{eq:Schrodinger}
-\end{equation}
-with $\|\psi(t)\|_{L^2}$ conserved for all $t$ such that the trajectory
-remains in the admissible basin.
-
-\begin{remark}
-This evolution is exact only \emph{between} selection events.
-MTT makes no claim that a single global Schr\"odinger equation governs
-all times.
-\end{remark}
-
-%==================================================
-\section{Probability Density and Continuity}
-%==================================================
-
-\subsection{Born Density}
-
-Define the configuration--space density
-\begin{equation}
-\rho(q,t) := |\psi(q,t)|^2.
-\end{equation}
-
-In MTT, $\rho$ is not postulated but arises as the unique noncontextual
-measure compatible with modal re--coherence and projection.
-Within an admissible basin, $\rho$ is conserved by unitary evolution.
-
-\subsection{Probability Current}
-
-For each configuration component $x_k \in \mathbb{R}^3$,
-define the probability current
-\begin{equation}
-j_k(q,t)
-:=
-\frac{\hbar}{m_k}
-\operatorname{Im}\!\left(
-\psi^*(q,t)\,\nabla_k \psi(q,t)
-\right).
-\label{eq:current}
-\end{equation}
-
-\subsection{Continuity Equation}
-
-\begin{theorem}[Continuity Equation]
-Within an admissible coherence basin, the density $\rho$ and currents
-$\{j_k\}$ satisfy
-\begin{equation}
-\partial_t \rho(q,t)
-+
-\sum_{k=1}^N \nabla_k \cdot j_k(q,t)
-\;=\;
-0.
-\label{eq:continuity}
-\end{equation}
-\end{theorem}
-
-\begin{proof}
-Equation \eqref{eq:continuity} follows from the self--adjointness of
-$H_{\mathrm{obs}}$ and the unitarity of the evolution \eqref{eq:Schrodinger}.
-The proof is standard and relies only on integration by parts.
-\end{proof}
-
-\begin{remark}
-Global probability conservation across all times is \emph{not} asserted.
-At admissibility boundaries, the effective description changes and
-\eqref{eq:continuity} need not hold.
-\end{remark}
-
-%==================================================
-\section{Polar Decomposition and Hamilton--Jacobi Form}
-%==================================================
-
-\subsection{Polar Representation}
-
-Write the wavefunction in polar form
-\begin{equation}
-\psi(q,t) = R(q,t)\,e^{iS(q,t)/\hbar},
-\qquad
-R \ge 0.
-\label{eq:polar}
-\end{equation}
-
-Then $\rho = R^2$ and the current becomes
-\begin{equation}
-j_k(q,t)
+\cR_{\mathrm{PW}}
 =
-\rho(q,t)\,
-\frac{\nabla_k S(q,t)}{m_k}.
-\label{eq:currentS}
-\end{equation}
-
-\subsection{Quantum Hamilton--Jacobi Equation}
-
-Substituting \eqref{eq:polar} into the Schr\"odinger equation and
-separating real and imaginary parts yields:
-\begin{align}
-\partial_t \rho
-+
-\sum_{k=1}^N \nabla_k \cdot
-\left(
-\rho\,\frac{\nabla_k S}{m_k}
-\right)
-&= 0,
-\\[0.5em]
-\partial_t S
-+
-\sum_{k=1}^N
-\frac{(\nabla_k S)^2}{2m_k}
-+
-V(q,t)
-+
-Q(q,t)
-&= 0,
-\label{eq:HJ}
-\end{align}
-where the quantum potential is
-\begin{equation}
-Q(q,t)
-:=
--
-\sum_{k=1}^N
-\frac{\hbar^2}{2m_k}
-\frac{\nabla_k^2 R}{R}.
-\label{eq:Q}
-\end{equation}
-
-\begin{remark}
-In MTT, $Q$ is not interpreted as a new fundamental force.
-It encodes projection--induced curvature of the effective description.
-\end{remark}
-
-%==================================================
-\section{Pilot--Wave Guidance as Characteristic Flow}
-%==================================================
-
-We now arrive at the central result.
-
-\subsection{Velocity Field on Configuration Space}
-
-Define the configuration--space velocity field
-\begin{equation}
-v_k(q,t)
-:=
-\frac{j_k(q,t)}{\rho(q,t)}
-=
-\frac{\nabla_k S(q,t)}{m_k}.
-\label{eq:velocity}
-\end{equation}
-
-This object is well-defined wherever $\rho>0$.
-
-\subsection{Characteristic Curves}
-
-Let $q(t) = (x_1(t),\dots,x_N(t))$ be an integral curve of $v$:
-\begin{equation}
-\dot x_k(t) = v_k(q(t),t).
-\label{eq:guidance}
-\end{equation}
-
-\subsection{Main Theorem}
-
-\begin{theorem}[Emergent Pilot--Wave Dynamics]
-Within an admissible coherence basin of Modal Triplet Theory,
-the integral curves of the configuration--space velocity field
-\eqref{eq:velocity} satisfy the de Broglie--Bohm guidance equations
-\eqref{eq:guidance}.
-
-These curves provide a deterministic characteristic description
-of the MTT--derived Schr\"odinger evolution.
-\end{theorem}
-
-\begin{proof}
-Equation \eqref{eq:guidance} follows identically from
-definitions \eqref{eq:current} and \eqref{eq:velocity}.
-No additional assumptions are introduced.
-\end{proof}
-
-\begin{remark}[Interpretive Status]
-MTT does \emph{not} postulate particles or trajectories as fundamental.
-The guidance equations arise as a \emph{derived kinematic structure}
-once a configuration observable is chosen.
-\end{remark}
-
-\begin{remark}[Domain of Validity]
-The guidance law is valid only while the effective Schr\"odinger
-description holds.
-At admissibility boundaries, the characteristic flow need not extend
-smoothly and pilot--wave dynamics may fail.
-\end{remark}
-
-%==================================================
-\section{Equivariance and Born Measure}
-%==================================================
-
-\subsection{Equivariance}
-
-\begin{theorem}[Equivariance]
-If initial configurations are distributed according to
-$\rho(q,t_0)=|\psi(q,t_0)|^2$,
-then under the guidance flow \eqref{eq:guidance},
-\[
-\rho(q,t)=|\psi(q,t)|^2
+\bigl(
+\cQ,\dd q,\cH,\cD,H,\hbar,\psi,U,
+j,v,\cN,\Phi,Q_0,\mu_{\mathrm{eq}},
+\cI,\cL,\cX
+\bigr)
 \]
-for all $t$ within the admissible basin.
-\end{theorem}
-
-\begin{proof}
-Equivariance follows directly from the continuity equation
-\eqref{eq:continuity} and the definition of the velocity field
-\eqref{eq:velocity}.
-\end{proof}
-
-\begin{remark}
-In pilot--wave theory, equivariance is often invoked to justify the
-Born rule.
-In MTT, the Born measure is derived independently;
-equivariance appears as a consistency check rather than a postulate.
-\end{remark}
-
-\bigskip
-\noindent
-\textbf{In Part III}, we will:
-\begin{itemize}
-  \item extend the derivation to entangled and nonlocal systems,
-  \item analyze measurement and admissibility breakdown,
-  \item and relate pilot--wave trajectories to MTT’s indivisible
-  stochastic processes.
-\end{itemize}
-%==================================================
-\section{Entanglement and Configuration--Space Nonlocality}
-%==================================================
-
-\subsection{Entangled States}
-
-Let $\psi(q,t)$ be an $N$--particle wavefunction on
-$\mathbb{R}^{3N}$ that does not factorize:
-\[
-\psi(q,t) \neq \prod_{k=1}^N \psi_k(x_k,t).
-\]
-
-In such cases, the configuration--space current
-\eqref{eq:current} and velocity field \eqref{eq:velocity}
-are intrinsically nonlocal in physical space.
-
-\subsection{Nonlocal Guidance}
-
-For entangled $\psi$, the velocity of particle $k$ is
-\begin{equation}
-\dot x_k(t)
-=
-\frac{1}{m_k}
-\nabla_k S(x_1,\dots,x_N,t),
-\end{equation}
-which depends instantaneously on the full configuration
-$q=(x_1,\dots,x_N)$.
-
-This is the familiar nonlocality of pilot--wave theory.
-
-\subsection{MTT Interpretation}
-
-In MTT, this nonlocality is not attributed to superluminal
-forces or signals.
-Instead, it reflects the fact that the coherent projector
-$\Pi$ acts globally on the modal configuration space.
-
-Observable locality is preserved at the level of operator
-algebras on $Y^4$; nonlocal correlations arise from
-projection constraints rather than from causal influence.
-
-\begin{remark}
-MTT therefore accommodates Bell--inequality violations
-without violating microcausality or relativistic consistency.
-\end{remark}
-
-%==================================================
-\section{Measurement as Admissibility Breakdown}
-%==================================================
-
-\subsection{Limits of the Schr\"odinger Layer}
-
-The Schr\"odinger evolution \eqref{eq:Schrodinger}
-and its associated guidance equations
-are valid only within a fixed admissible coherence basin.
-
-When the system--apparatus interaction drives the modal
-configuration toward the boundary of admissibility,
-the coherent projector ceases to be stably invertible.
-
-\subsection{Admissibility Barriers}
-
-\begin{definition}[Admissibility Barrier]
-A subset $\mathcal{B}\subset X$ is an admissibility barrier
-if:
-\begin{enumerate}
-  \item the spectral gap defining $\Pi$ closes or becomes unstable,
-  \item $\Pi$ ceases to admit a measurable right inverse,
-  \item multiple modal states project to the same observable state.
+with the following typed rows.
+\begin{enumerate}[leftmargin=2.2em]
+\item \(\cQ\) is the physical configuration manifold and \(\dd q\) its
+      reference measure.  For \(N\) distinguishable spinless particles in
+      Euclidean space, \(\cQ=\mathbb R^{3N}\).
+\item \(\cH=L^2(\cQ,\dd q)\) is the complex wavefunction Hilbert space.
+      The dense domain \(\cD\) and the self-adjoint Hamiltonian \(H\) are
+      specified, including masses, potentials, boundary conditions, and any
+      gauge connection.
+\item \(\hbar>0\), \(U(t)\), and
+      \(\psi_t=U(t-t_0)\psi_{t_0}\) specify the wave evolution on \(I\).
+\item \(j^{\psi}\) is a selected configuration-space current satisfying
+      the relevant continuity equation.  The velocity
+      \(v^\psi=j^\psi/|\psi|^2\) is defined on its declared nonnodal domain.
+\item \(\cN_t=\{q:\psi_t(q)=0\}\) is the nodal set, and
+      \(\Phi^\psi_{t,t_0}\) is the maximal measurable or classical flow of
+      \(v^{\psi}\) on its domain.
+\item \(Q_0\in\cQ\setminus\cN_{t_0}\) is the actual initial configuration,
+      and \(Q_t=\Phi^\psi_{t,t_0}(Q_0)\) whenever the flow exists.
+\item \(\mu_{\mathrm{eq},t}(\dd q)=|\psi_t(q)|^2\dd q\), after
+      normalization, is the candidate quantum-equilibrium measure.
+      The record states whether this is an assumption, a typicality
+      postulate, a selected source result, or only an operational
+      distribution.
+\item \(\cI\) contains subsystem, apparatus, pointer, conditional
+      wavefunction, and output-instrument data.
+\item \(\cL\) records composition, configuration-space nonlocality,
+      physical-space causal structure, operational no-signalling, and any
+      relativistic foliation or covariance data.
+\item \(\cX\) contains provenance, source, regularity, and error
+      certificates, together with the precise interval and context family
+      on which the comparison is exact.
 \end{enumerate}
 \end{definition}
 
-Crossing $\mathcal{B}$ induces effective irreversibility
-in the projected dynamics.
+The tuple is intentionally larger than \((\psi,Q)\).  A formula for
+\(v^\psi\) is meaningless before the configuration manifold and current are
+chosen.  A self-adjoint Hamiltonian does not by itself select an actual
+configuration.  Equivariance does not state why an ensemble began in
+equilibrium.  A nonrelativistic configuration-space flow does not supply a
+relativistic foliation.  Measurement requires a system--apparatus dynamics
+and a pointer record, not merely a reference to a ``basin boundary.''
 
-\subsection{Measurement Event}
+\subsection{Scope of the present lower model}
 
-A measurement corresponds to a trajectory $\Phi_\tau(x)$
-crossing an admissibility barrier.
-After this crossing:
-\begin{itemize}
-  \item the prior Schr\"odinger evolution no longer applies globally,
-  \item the guidance field $v(q,t)$ may cease to exist,
-  \item the observable state must be reinitialized in a new basin.
-\end{itemize}
+The detailed formulas below concern scalar, spinless particles with a real
+potential.  Spin, magnetic vector potentials, identical-particle
+configuration spaces, field ontologies, stochastic jump models, and
+relativistic extensions require modified currents and additional rows.  The
+paper does not infer those extensions from the scalar case.
 
-\begin{remark}
-This replaces the notion of ``collapse'' with a precise
-structural mechanism: loss of admissibility.
-\end{remark}
+On \(\cQ=\mathbb R^{3N}\), take
+\begin{equation}
+H
+=
+\sum_{k=1}^{N}
+-\frac{\hbar^2}{2m_k}\Delta_k
++V(q,t),
+\label{eq:H}
+\end{equation}
+where the domain, boundary conditions, and hypotheses needed for
+self-adjoint propagation are supplied.  Time-dependent Hamiltonians need
+their own propagator theorem; writing \(H(t)\) is not enough
+\cite{ReedSimon1972}.
 
-%==================================================
-\section{Failure of Global Pilot--Wave Dynamics}
-%==================================================
+\section{The standard lower dynamics}
+\label{sec:lower}
 
-\subsection{Why Bohmian Mechanics Cannot Be Global}
+\subsection{Continuity and current}
 
-Pilot--wave theory assumes:
-\begin{itemize}
-  \item a single global wavefunction $\psi(q,t)$,
-  \item continuous guidance trajectories for all times.
-\end{itemize}
+Let \(\psi\) be regular enough that the following operations are justified
+and suppose
+\begin{equation}
+i\hbar\,\partial_t\psi=H\psi.
+\label{eq:schrodinger}
+\end{equation}
+For the scalar Hamiltonian \cref{eq:H}, define
+\begin{equation}
+\rho^\psi(q,t)=|\psi(q,t)|^2,
+\qquad
+j_k^\psi(q,t)
+=
+\frac{\hbar}{m_k}
+\operatorname{Im}\!\left(
+\psi(q,t)^*\nabla_k\psi(q,t)
+\right).
+\label{eq:current}
+\end{equation}
+Multiplying \cref{eq:schrodinger} by \(\psi^*\), subtracting its complex
+conjugate, and using that \(V\) is real gives
+\begin{equation}
+\partial_t\rho^\psi
++\sum_{k=1}^{N}\nabla_k\!\cdot j_k^\psi=0.
+\label{eq:continuity}
+\end{equation}
+This is local conservation on configuration space.  Conservation of the
+integral additionally requires the appropriate boundary flux to vanish.
 
-MTT shows that these assumptions fail generically:
-\begin{itemize}
-  \item Schr\"odinger evolution is basin--scoped,
-  \item admissibility breakdown forces re--projection,
-  \item no global measurable inverse of $P$ exists.
-\end{itemize}
+Where \(\rho^\psi>0\), the standard Bohmian velocity is
+\begin{equation}
+v_k^\psi(q,t)
+=
+\frac{j_k^\psi(q,t)}{\rho^\psi(q,t)}
+=
+\frac{\hbar}{m_k}
+\operatorname{Im}
+\frac{\nabla_k\psi(q,t)}{\psi(q,t)}.
+\label{eq:velocity}
+\end{equation}
+An actual configuration then obeys
+\begin{equation}
+\frac{\dd Q_k(t)}{\dd t}
+=v_k^{\psi_t}(Q_t).
+\label{eq:guidance}
+\end{equation}
+The trajectory is an integral curve of a selected velocity field.  It is
+not the same object as the probability current, and neither object is an
+observable record by definition.
 
-\begin{theorem}[No Global Guidance Law]
-There exists no globally defined guidance field
-$v(q,t)$ whose integral curves describe all observable
-dynamics across admissibility barriers.
+\subsection{Polar form and the quantum potential}
+
+On a simply connected nonnodal patch, write
+\[
+\psi=R\,e^{iS/\hbar},
+\qquad R>0.
+\]
+Then
+\[
+j_k^\psi=R^2\frac{\nabla_kS}{m_k},
+\qquad
+v_k^\psi=\frac{\nabla_kS}{m_k}.
+\]
+Separating the real and imaginary parts of the Schrodinger equation yields
+\begin{align}
+\partial_t(R^2)
++\sum_k\nabla_k\!\cdot
+\left(R^2\frac{\nabla_kS}{m_k}\right)&=0,
+\label{eq:polar-continuity}\\
+\partial_tS
++\sum_k\frac{|\nabla_kS|^2}{2m_k}
++V+Q^\psi&=0,
+\label{eq:quantum-hj}\\
+Q^\psi
+&=
+-\sum_k\frac{\hbar^2}{2m_k}\frac{\Delta_kR}{R}.
+\label{eq:quantum-potential}
+\end{align}
+These identities are a useful representation of the supplied Schrodinger
+dynamics.  They do not show that \(Q^\psi\) is an independently selected MTT
+force or curvature.  Such an identification would require a source map
+equating a particular upper geometric quantity with \cref{eq:quantum-potential}.
+
+\subsection{Why the guidance law is not forced by continuity alone}
+\label{sec:current-ambiguity}
+
+The standard current in \cref{eq:current} is natural and has the expected
+Euclidean and Galilean behavior.  Nevertheless, the continuity equation
+alone does not make it unique.  If a sufficiently regular field
+\(w=(w_1,\ldots,w_N)\) satisfies
+\[
+\sum_k\nabla_k\!\cdot w_k=0,
+\]
+then \(j'=j+w\) obeys the same continuity equation, and
+\[
+v'=\frac{j+w}{\rho}
+\]
+is also equivariant wherever it is defined.  Boundary, covariance,
+minimality, locality-in-configuration-space, and subsystem conditions can
+reduce this freedom, but they are additional selection criteria.
+
+This matters for MTT.  Reconstructing the standard pilot--wave theory
+requires the source map to emit the standard current, or a theorem showing
+that the MTT symmetries and composition rules select it.  Defining
+\(v=j/\rho\) after choosing \(j\) is a valid construction; it is not a proof
+that MTT uniquely derived the choice.
+
+\section{Equivariance and the probability boundary}
+\label{sec:equivariance}
+
+Suppose the flow \(\Phi^\psi_{t,t_0}\) exists and is unique on the interval
+under consideration.  If an ensemble density \(f_t\) is transported by
+\cref{eq:guidance}, it obeys
+\[
+\partial_tf_t+\sum_k\nabla_k\!\cdot(f_tv_k^\psi)=0.
+\]
+By \cref{eq:continuity}, \(\rho^\psi_t=|\psi_t|^2\) obeys the same transport
+equation.  Under the relevant uniqueness conditions,
+\begin{equation}
+f_{t_0}=|\psi_{t_0}|^2
+\quad\Longrightarrow\quad
+f_t=|\psi_t|^2.
+\label{eq:equivariance}
+\end{equation}
+This is equivariance.  It is central to Bohmian mechanics and to the
+quantum-equilibrium analysis of Durr, Goldstein, and Zanghi
+\cite{DurrGoldsteinZanghi1992}.
+
+Equivariance propagates a distribution; it does not select the initial
+distribution.  An MTT source theorem would have to explain why the
+preparation ensemble, typicality measure, or operational state has the
+equilibrium form before \cref{eq:equivariance} can be called a derivation of
+the Born law.  This is the same distinction made in the corrected MTT-to-QM
+record between:
+\begin{enumerate}[leftmargin=2em]
+\item characterization of a probability assignment;
+\item physical sourcing of an instrument and its output law; and
+\item selection of one ontic history.
+\end{enumerate}
+
+\subsection{The selected \texorpdfstring{\(q=79\)}{q=79} binary recorder}
+
+One current MTT result is stronger than an abstract probability
+characterization.  On a selected binary \(P/Q\) apparatus domain, the
+canonical \(q=79\) one-anchor recorder constructs a commuting Fock output
+algebra and gives the stopped effects
+\begin{equation}
+F_u(r_u)=e^{-\gamma u}I,
+\qquad
+F_u(\dd s,a)
+=\gamma e^{-\gamma s}P_a\,\dd s,
+\qquad
+\gamma=\log448,
+\label{eq:q79-effects}
+\end{equation}
+where \(a\in\{p,q\}\), \(P_p=P\), and \(P_q=I-P\).  Thus its selected normal
+state gives
+\begin{equation}
+\mu_{\rho,u}(r_u)=e^{-\gamma u},
+\qquad
+\mu_{\rho,u}(\dd s,a)
+=\gamma e^{-\gamma s}\Tr(\rho P_a)\,\dd s.
+\label{eq:q79-law}
+\end{equation}
+The source theorem and certificate are owned by the dedicated source-proof
+repository \cite{Q79Recorder2026}; the corrected MTT-to-QM paper explains
+their operational role \cite{MTTQM2026}.
+
+Equations \cref{eq:q79-effects,eq:q79-law} are not a fitted probability
+vector.  They close an exact stopped output measure and second-moment
+capture descent on that declared binary domain.  They do not choose a
+Bohmian configuration \(Q_0\), prove that all configuration ensembles have
+density \(|\psi|^2\), cover arbitrary apparatuses, or select one sample
+history as uniquely actual.  The universal Born-source problem therefore
+remains open even though this finite-domain operational result is exact.
+
+\section{Conditional MTT reconstruction}
+\label{sec:mtt}
+
+\subsection{Current geometric setting}
+
+The canonical MTT geometry used here is a bundle
+\[
+\pi_X:X^{10}\longrightarrow Y^4
+\]
+over a four-dimensional Lorentzian base, with a compact
+six-dimensional internal fibre and whatever connection, metric, and
+operator data the selected source supplies \cite{MTTFoundation2026}.  The
+old literal expression
+\[
+Y^4\times B_1\times B_2\times B_3
+\]
+is not used as a physical proof source.  Rank-\(1<2<3\) filtrations and
+Circle--Lens--Nil encodings may organize operator sectors, but they are not
+three independent compact manifolds whose harmonic projectors
+automatically generate a Bohmian theory.
+
+Let \(\cU_{\mathrm{adm}}\) be the declared upper domain.  A partial source map
+\[
+\cS_{\mathrm{PW}}\colon
+\cU_{\mathrm{adm}}\dashrightarrow
+\{\text{pilot--wave records}\}
+\]
+may be undefined when one or more rows of \cref{def:record} cannot be
+emitted.  Let
+\(\operatorname{Eval}_{\mathrm{MTT}}(z,C)\) denote the MTT prediction for an
+allowed context \(C\), and let
+\(\operatorname{Eval}_{\mathrm{PW}}(\cR,C)\) denote the standard
+pilot--wave evaluation of a complete record.
+
+\begin{theorem}[Conditional MTT--pilot--wave reconstruction]
+\label{thm:conditional}
+Fix \(z\in\cU_{\mathrm{adm}}\), a time interval \(I\), and a family
+\(\mathfrak C_z\) of preparation--apparatus contexts.  Assume:
+\begin{enumerate}[label=(PW\arabic*),leftmargin=3em]
+\item the selected source map emits a complete record
+      \(\cS_{\mathrm{PW}}(z)=\cR_{\mathrm{PW}}(z)\) for the rows needed by
+      \(\mathfrak C_z\);
+\item a unitary identification of the coherent wave sector with
+      \(L^2(\cQ,\dd q)\) intertwines the supplied state and Hamiltonian,
+      exactly or with a declared propagation error;
+\item a configuration decoder \(D_z\) emits \(Q_0\) and intertwines the
+      upper continuation with the maximal lower flow:
+      \[
+      D_z\!\left(\Phi^{\mathrm{up}}_{t,t_0}(u_0)\right)
+      =
+      \Phi^{\psi}_{t,t_0}\!\left(D_z(u_0)\right)
+      \]
+      on the stated domain, exactly or with a declared trajectory error;
+\item the selected lower current is the standard current
+      \cref{eq:current}, or an explicitly declared alternative, and its
+      descent diagram commutes;
+\item allowed apparatus couplings, pointer records, and conditional states
+      descend to the lower instrument data in \(\cI\); and
+\item for every \(C\in\mathfrak C_z\),
+      \[
+      \operatorname{Eval}_{\mathrm{MTT}}(z,C)
+      =
+      \operatorname{Eval}_{\mathrm{PW}}
+      \bigl(\cR_{\mathrm{PW}}(z),C\bigr)+r_C,
+      \qquad |r_C|\leq\delta_C .
+      \]
+\end{enumerate}
+Then MTT reconstructs the declared pilot--wave dynamics and context
+statistics on \(I\), exactly when all displayed errors vanish and with the
+declared control otherwise.
 \end{theorem}
 
 \begin{proof}
-At admissibility barriers, multiple modal states map to
-the same observable state under $P$.
-A globally defined $v(q,t)$ would require a measurable
-right inverse of $P$, which does not exist.
+Condition (PW1) supplies every typed lower object instead of inferring it
+from a projector.  Condition (PW2) transports the wave evolution.
+Conditions (PW3) and (PW4) transport the actual configuration and selected
+guidance law.  Condition (PW5) supplies the physical experiment rather than
+identifying measurement with a geometric slogan.  Substitution into (PW6)
+gives the asserted equality or error bound for each allowed context.  No
+claim outside \(I\) or \(\mathfrak C_z\) follows.
 \end{proof}
 
-\begin{remark}
-This is not a deficiency of MTT but a theorem.
-It explains why pilot--wave theory must be regime--limited.
-\end{remark}
+The theorem is a reconstruction theorem, not a source theorem.  Its value is
+that it exposes every place where the stronger claim can fail.  It also
+prevents a decoded trajectory from being counted twice: once as an assumed
+upper coordinate and again as a derived lower configuration.
 
-%==================================================
-\section{Relation to Indivisible Stochastic Processes}
-%==================================================
-
-\subsection{History--Dependent Kernels}
-
-MTT induces a probability measure on histories
-\[
-(q_0,q_1,\dots)\in (\mathbb{R}^{3N})^{\mathbb{N}}
-\]
-with conditional kernels
-\[
-K_{\Delta\tau}(q_{k+1}\mid q_0,\dots,q_k)
-\propto
-\exp\!\left(
--\frac{\Delta A(q_{k+1}\mid q_0,\dots,q_k)}{\hbar}
-\right),
-\]
-where $\Delta A$ is the modal action increment.
-
-These kernels are generically non--Markovian.
-
-\subsection{Bohmian Limit}
-
-In regimes where:
-\begin{itemize}
-  \item the action increment is sharply peaked,
-  \item admissibility is stable,
-  \item internal moduli decouple,
-\end{itemize}
-the kernels concentrate on the characteristic flow:
-\[
-K_{\Delta\tau}(\cdot\mid q_0,\dots,q_k)
-\;\to\;
-\delta\!\left(
-q_{k+1} - \Phi^{(v)}_{\Delta\tau}(q_k)
-\right),
-\]
-where $\Phi^{(v)}$ is the flow generated by
-$v=j/\rho$.
-
-\begin{theorem}[Pilot--Wave as Zero--Noise Limit]
-Pilot--wave dynamics arise as the zero--noise,
-peaked--kernel limit of the MTT indivisible stochastic
-process within an admissible basin.
-\end{theorem}
-
-\begin{remark}
-Outside this limit, deterministic Bohmian trajectories
-are replaced by history--dependent stochastic evolution,
-even though the underlying modal dynamics remain deterministic.
-\end{remark}
-
-%==================================================
-\section{Summary of the MTT--to--Pilot--Wave Mapping}
-%==================================================
+\subsection{Representation, reconstruction, and selection}
 
 \begin{center}
-\begin{tabular}{|l|l|}
-\hline
-\textbf{Pilot--Wave Concept} & \textbf{MTT Origin} \\
-\hline
-Wavefunction $\psi$ &
-Coherent--sector state under $P=\Pi\circ I$ \\[0.3em]
-Born density $|\psi|^2$ &
-Derived basin measure \\[0.3em]
-Probability current $j$ &
-Unitarity of $H_{\mathrm{obs}}$ \\[0.3em]
-Guidance equation &
-Characteristic flow of $j/\rho$ \\[0.3em]
-Nonlocality &
-Global action of coherent projector \\[0.3em]
-Collapse &
-Admissibility barrier crossing \\[0.3em]
-Quantum equilibrium &
-Consistency, not postulate \\[0.3em]
-Global trajectories &
-\emph{Forbidden} by noninvertibility \\[0.3em]
-\hline
-\end{tabular}
+\small
+\begin{tabularx}{\textwidth}{@{}p{0.19\textwidth}X X@{}}
+\toprule
+Object & What lower mathematics supplies & What an MTT source must still establish \\
+\midrule
+Wavefunction
+& Evolution once \(\cH,H,\psi_0\) are supplied
+& Selection of \(\cH,H,\psi_0\), domains, and normalization \\
+Current
+& Formula \cref{eq:current} for the scalar Hamiltonian
+& Why that current, rather than an equivariant modification, descends \\
+Configuration
+& A trajectory once \(Q_0\) and \(v^\psi\) are supplied
+& Physical decoder and selection or provenance of \(Q_0\) \\
+Equilibrium
+& Propagation of \(|\psi|^2\) by equivariance
+& Initial equilibrium, typicality, or preparation source \\
+Measurement
+& Conditional/effective wavefunction from a complete apparatus model
+& Apparatus, pointer, record, and source diagrams \\
+No-signalling
+& Standard operational marginals in equilibrium
+& Upper-to-lower locality map preserving settings and records \\
+\bottomrule
+\end{tabularx}
 \end{center}
 
-\bigskip
-\noindent
-\textbf{In Part IV (final)}, we will:
-\begin{itemize}
-  \item synthesize the results,
-  \item contrast MTT, pilot--wave, and Everett interpretations,
-  \item state precise conclusions and limits of applicability.
-\end{itemize}
-%==================================================
-\section{Comparison with Interpretations of Quantum Mechanics}
-%==================================================
+\section{Nodes, existence, and the corrected boundary}
+\label{sec:existence}
 
-We briefly situate the present derivation relative to other major interpretations
-of quantum mechanics.
+\subsection{The nodal problem}
 
-\subsection{Copenhagen-Type Interpretations}
-
-Copenhagen interpretations treat the Schr\"odinger equation as fundamental
-but supplement it with axiomatic measurement postulates.
-Collapse is taken as primitive and non-unitary.
-
-By contrast, in MTT:
-\begin{itemize}
-  \item the Schr\"odinger equation is derived rather than postulated,
-  \item collapse is replaced by admissibility breakdown,
-  \item no additional axioms beyond deterministic modal evolution are required.
+The quotient in \cref{eq:velocity} is undefined on
+\(\cN_t=\{\psi_t=0\}\), and singular interactions can introduce further
+singular sets.  A pointwise guidance formula therefore does not by itself
+give a global flow.  One needs:
+\begin{itemize}[leftmargin=2em]
+\item a self-adjoint Hamiltonian and a wavefunction with the required
+      regularity;
+\item local existence and uniqueness of the velocity ODE off the singular
+      set;
+\item control of escape to infinity and approach to nodes or collision
+      sets; and
+\item a measure statement identifying the exceptional initial
+      configurations.
 \end{itemize}
 
-\subsection{Everett / Many-Worlds}
+These issues have been studied directly in Bohmian mechanics.  Berndl,
+Durr, Goldstein, Peruzzi, and Zanghi prove global existence for a large
+class of potentials for typical equilibrium initial configurations, despite
+the singular velocity at nodes \cite{BerndlEtAl1995}.  Therefore the former
+paper's unconditional theorem that no global guidance law can exist was too
+strong.
 
-Everettian interpretations retain universal unitary evolution
-and deny physical collapse.
-However, they require an additional interpretation of branching
-and a nontrivial justification of the Born rule.
+\subsection{What can genuinely fail in an MTT reconstruction}
 
-In MTT:
-\begin{itemize}
-  \item unitary evolution is only intra-basin,
-  \item branching corresponds to admissibility basin structure,
-  \item probabilities arise from basin measures, not branch counting.
-\end{itemize}
-
-Thus MTT agrees with Everett that collapse is not fundamental,
-but rejects the claim of globally valid unitary evolution.
-
-\subsection{Pilot--Wave Theory}
-
-Pilot--wave theory restores determinism by introducing
-configuration trajectories guided by the wavefunction.
-
-The present paper shows that:
-\begin{itemize}
-  \item pilot--wave guidance equations are \emph{derived} in MTT,
-  \item they require no additional ontological postulates,
-  \item and they are valid only within admissible coherence basins.
-\end{itemize}
-
-MTT therefore subsumes pilot--wave theory as an effective description,
-while explaining its scope limitations.
-
-%==================================================
-\section{Main Results}
-%==================================================
-
-We summarize the principal results of this paper.
-
-\begin{enumerate}
-  \item Modal Triplet Theory admits a deterministic modal flow
-  on the full configuration space $X$.
-
-  \item Coherent projection and observable pushforward
-  induce an effective Schr\"odinger evolution
-  on admissible coherence basins.
-
-  \item The associated probability current defines
-  a canonical configuration--space velocity field.
-
-  \item The integral curves of this velocity field
-  coincide with de Broglie--Bohm guidance equations.
-
-  \item No hidden variables, stochastic postulates,
-  or additional ontology are introduced.
-
-  \item Pilot--wave dynamics are valid only intra--basin;
-  they necessarily fail at admissibility barriers.
-
-  \item Measurement corresponds to admissibility breakdown,
-  not to physical collapse or branching.
-
-  \item Outside the pilot--wave regime,
-  MTT induces indivisible stochastic processes
-  on observable histories.
+For a chosen upper state and context, the reconstruction can cease to be
+certified if any of the following occurs:
+\begin{enumerate}[leftmargin=2em]
+\item the lower Hamiltonian or wavefunction leaves its declared regularity
+      domain;
+\item the selected current no longer descends or the continuity error
+      exceeds its bound;
+\item the actual lower trajectory reaches the boundary of the maximal flow;
+\item the configuration decoder is undefined, nonphysical, or no longer
+      intertwines upper and lower continuation;
+\item the coherent wave-sector identification ceases to be stable within
+      its error budget; or
+\item an apparatus context lies outside the family for which the instrument
+      diagram was proved.
 \end{enumerate}
+These are meaningful failures of a theorem's hypotheses.  They say that the
+present MTT-to-pilot-wave comparison has ended or must be replaced by a
+different effective record.
 
-%==================================================
-\section{Interpretive Statement}
-%==================================================
+By contrast, a right inverse of the projection is not required for a
+Bohmian velocity field.  The lower field depends on the lower
+\(\psi_t\), current, and configuration.  Many upper states may decode to the
+same lower state without making \(j^\psi/|\psi|^2\) undefined.  Noninjectivity
+may obstruct recovering the upper history from lower data, but that is an
+inverse problem, not a no-guidance theorem.
 
-The derivation presented here establishes the following:
+\subsection{Stable continuation rather than a universal barrier}
 
+An ``admissibility boundary'' can still be useful terminology when it is
+defined by a concrete loss of regularity, spectral gap, decoder, or error
+control.  It must not automatically be identified with every measurement,
+black-hole horizon, or cosmological selection event.  Each such physical
+identification requires its own model and theorem.
+
+The correct conclusion is modest and useful:
 \begin{quote}
-\emph{Pilot--wave theory is not a fundamental alternative to quantum mechanics,
-but an emergent characteristic description of Modal Triplet Theory
-valid only within admissible coherence basins.}
+Pilot--wave reconstruction is certified only on the interval and context
+family for which the wave, current, decoder, flow, and instrument diagrams
+remain defined and controlled.
+\end{quote}
+This is regime limitation.  It is not a proof that the underlying Bohmian
+model or the upper MTT state must terminate there.
+
+\section{Measurement and effective collapse}
+\label{sec:measurement}
+
+Measurement is a physical interaction.  Let \(x\) denote subsystem
+coordinates and \(y\) apparatus coordinates.  A measurement-like unitary
+interaction can produce
+\begin{equation}
+\Psi(x,y)
+=
+\sum_\alpha c_\alpha\,
+\varphi_\alpha(x)\,\Phi_\alpha(y),
+\label{eq:measurement-state}
+\end{equation}
+where the pointer packets \(\Phi_\alpha\) have macroscopically disjoint
+supports in \(y\).  In Bohmian mechanics the apparatus has an actual
+configuration \(Y\).  If \(Y\) lies in the support of one packet
+\(\Phi_{\alpha_0}\), the conditional subsystem wavefunction is, after
+normalization,
+\[
+\psi_{\mathrm{cond}}(x)=\Psi(x,Y)
+\approx\varphi_{\alpha_0}(x).
+\]
+The universal wavefunction need not undergo a fundamental collapse.  The
+subsystem has an effective wavefunction associated with the branch occupied
+by the actual apparatus configuration
+\cite{DurrGoldsteinZanghi1992}.
+
+This account still needs an initial ensemble or typicality law to recover
+Born frequencies.  It also needs the complete apparatus dynamics and
+pointer partition.  The apparatus does not gain a special metaphysical
+status because it is called a measuring device.
+
+For MTT, two comparison routes are possible:
+\begin{enumerate}[leftmargin=2em]
+\item reconstruct the standard Bohmian apparatus account, including its
+      actual pointer configuration and effective wavefunction; or
+\item construct a different selected MTT instrument and prove that its
+      operational records agree with the target experiment.
+\end{enumerate}
+The \(q=79\) binary recorder realizes the second route on one selected
+domain.  It does not automatically provide the first route's actual
+configuration.  Conversely, a Bohmian effective collapse does not prove
+that an MTT spectral gap closed or that the upper state crossed a universal
+admissibility barrier.
+
+\section{Entanglement, nonlocality, and no-signalling}
+\label{sec:locality}
+
+\subsection{Configuration-space nonlocality is explicit}
+
+For an entangled \(N\)-particle wavefunction, the velocity of particle \(k\)
+depends on the full configuration:
+\[
+\dot Q_k(t)
+=
+\frac{\hbar}{m_k}
+\operatorname{Im}
+\frac{\nabla_k\psi_t}{\psi_t}
+\bigl(Q_1(t),\ldots,Q_N(t)\bigr).
+\]
+This is not local dynamics in ordinary three-space.  As a simple
+instantaneous illustration in one dimension, take
+\[
+\psi(x_1,x_2)
+=C\,e^{-a(x_1^2+x_2^2)}e^{i\kappa x_1x_2},
+\qquad a>0 .
+\]
+Then
+\[
+v_1=\frac{\hbar\kappa}{m_1}x_2,
+\qquad
+v_2=\frac{\hbar\kappa}{m_2}x_1.
+\]
+Each velocity depends on the distant coordinate.  Replacing the phrase
+``physical-space nonlocal'' by ``global projection'' does not remove this
+mathematical fact.
+
+\subsection{Three distinct locality statements}
+
+The following claims must be separated:
+\begin{enumerate}[leftmargin=2em]
+\item \emph{Upper dynamical locality:} the fundamental MTT equations use
+      local differential operators or causal propagation on their upper
+      base.
+\item \emph{Bell factorization:} conditioned on a complete variable, joint
+      outcome probabilities factor into local response probabilities.
+\item \emph{Operational no-signalling:} changing an unconditioned operation
+      in one laboratory does not change the observed marginal statistics in
+      a spacelike separated laboratory.
+\end{enumerate}
+Bell experiments exclude the usual measurement-independent factorizable
+completion of the observed correlations.  They do not imply controllable
+superluminal signalling.  The corrected MTT Bell paper therefore adopts the
+consistent package of upper-local dynamics, microcausality, operational
+no-signalling, and globally nonfactorizing states
+\cite{Bell1964,MTTBell2026}.
+
+Standard Bohmian mechanics is nonlocal in the second, physical
+configuration-space sense.  In quantum equilibrium it reproduces standard
+quantum marginal statistics and hence operational no-signalling.  Away
+from equilibrium, hidden-variable signalling can in general reappear;
+equilibrium is therefore part of the no-signalling contract rather than an
+optional decoration \cite{Valentini1991}.
+
+\subsection{What an upper-local MTT explanation must prove}
+
+Let \(a,b\) be laboratory settings, \(A,B\) their records, and \(z\) an
+upper state.  A satisfactory descent theorem must identify:
+\[
+(z,a,b)
+\longmapsto
+\bigl(\psi_{a,b},Q_{a,b},\cI^A_a,\cI^B_b,A,B\bigr)
+\]
+while preserving the claimed upper causal structure, the lower local
+algebras, the setting choices, the relevant independence assumptions, and
+the operational marginal identities.  It must also explain where the
+lower configuration-space nonlocal dependence enters.
+
+Without that commuting diagram, ``local upstairs'' and ``no-signalling
+downstairs'' are separate statements.  A global coherent projector can be
+part of a proposed mechanism, but merely naming it does not prove either
+Bell factorization or no-signalling.
+
+\section{A worked nonnodal example}
+\label{sec:example}
+
+Consider a one-dimensional free particle with initial width
+\(\sigma_0>0\), mean position \(x_0\), and mean momentum \(p_0\).  Write
+\[
+\tau=\frac{\hbar t}{2m\sigma_0^2},
+\qquad
+x_c(t)=x_0+\frac{p_0}{m}t .
+\]
+Up to the standard normalization and global phase, the evolved Gaussian is
+\begin{equation}
+\psi(x,t)
+=
+(1+i\tau)^{-1/2}
+\exp\!\left[
+-\frac{(x-x_c(t))^2}{4\sigma_0^2(1+i\tau)}
++\frac{i}{\hbar}
+\left(p_0(x-x_0)-\frac{p_0^2t}{2m}\right)
+\right].
+\label{eq:gaussian}
+\end{equation}
+It has no nodes.  Differentiating its phase gives
+\begin{equation}
+v^\psi(x,t)
+=
+\frac{p_0}{m}
++\frac{\hbar\tau}{2m\sigma_0^2(1+\tau^2)}
+\bigl(x-x_c(t)\bigr).
+\label{eq:gaussian-velocity}
+\end{equation}
+The integral curve through \(X_0\) is
+\begin{equation}
+X(t)
+=x_c(t)+(X_0-x_0)\sqrt{1+\tau^2}.
+\label{eq:gaussian-flow}
+\end{equation}
+Substitution verifies \(\dot X=v^\psi(X,t)\).  If the initial ensemble is
+Gaussian with density \(|\psi(x,0)|^2\), the scaling in
+\cref{eq:gaussian-flow} transports it to \(|\psi(x,t)|^2\).
+
+This example demonstrates exactly what the lower mathematics does.  Given
+the Hamiltonian, wavefunction, standard current, and \(X_0\), the trajectory
+is computable and equivariance is explicit.  It does not explain why MTT
+selected the free Hamiltonian, the width, the momentum, the standard
+current, the actual \(X_0\), or the equilibrium ensemble.  A successful MTT
+source map must emit those rows or state which are experimental
+preparations.
+
+\section{Relation to other MTT encodings}
+\label{sec:relations}
+
+\subsection{The corrected QM reconstruction}
+
+The MTT-to-QM paper supplies the controlling lower quantum record and the
+conditional coherent-sector reconstruction theorem \cite{MTTQM2026}.  The
+present paper does not re-prove that work.  It adds the rows specific to a
+pilot--wave completion:
+\[
+\text{physical configuration}
++\text{actual point}
++\text{selected current}
++\text{guidance flow}
++\text{equilibrium provenance}.
+\]
+Thus pilot--wave reconstruction is strictly stronger in data than
+wavefunction reconstruction.  It may be conceptually attractive, but it is
+not obtained for free.
+
+\subsection{Wave--particle operator duality}
+
+The corrected wave--particle paper shows how a supplied positive filtered
+operator can have local-kernel and spectral-coherence representations, with
+instruments needed for operational outcome claims
+\cite{MTTWaveParticle2026}.  A Bohmian trajectory is not identical to that
+paper's local kernel.  To connect them, one would need a theorem mapping the
+selected operator's state and current to the configuration decoder and
+guidance flow in \cref{def:record}.  The two encodings are compatible
+targets, not already-proved identical objects.
+
+\subsection{Indivisible stochastic processes}
+
+A history-dependent kernel may concentrate around a deterministic flow in a
+small-noise or large-deviation limit.  To identify that limiting flow with
+\cref{eq:guidance}, one must prove:
+\begin{enumerate}[leftmargin=2em]
+\item the kernel and scaling are selected from the same MTT source;
+\item the rate functional has the Bohmian flow as its unique minimizer on
+      the declared domain;
+\item concentration is uniform enough to pass to the desired observables;
+      and
+\item nodes and basin changes remain controlled.
+\end{enumerate}
+Without these rows, ``pilot wave is the zero-noise limit'' is a research
+proposal, not a theorem.  Version 2 therefore removes the former
+unqualified zero-noise claim.
+
+\section{Claim disposition}
+\label{sec:claims}
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}
+>{\raggedright\arraybackslash}p{0.29\textwidth}
+>{\raggedright\arraybackslash}p{0.18\textwidth}
+>{\raggedright\arraybackslash}X@{}}
+\toprule
+Former claim & Decision & Current statement \\
+\midrule
+Literal \(Y^4\times B_1\times B_2\times B_3\) is the physical source
+& Retire
+& Use the current ten-dimensional bundle over a four-dimensional base with
+  compact six-dimensional fibre. \\
+Projection derives the Schrodinger record
+& Withdraw globally
+& The corrected QM theorem is a conditional coherent-sector reconstruction
+  with one selected binary recorder domain. \\
+Guidance follows with no additional ontology
+& Correct
+& The standard velocity follows after a current is selected, but the actual
+  configuration is additional ontic data relative to \(\psi\) alone. \\
+Continuity uniquely selects Bohmian guidance
+& Withdraw
+& Divergence-free current modifications preserve continuity; current
+  selection is a source row. \\
+Equivariance derives the Born measure
+& Narrow
+& Equivariance propagates an initially supplied equilibrium density. \\
+No right inverse implies no global guidance
+& Withdraw
+& Guidance requires lower wave/current/flow data, not inversion of the
+  upper projection. \\
+Measurement is an admissibility crossing
+& Reclassify
+& Measurement is an ordinary interaction and record; an MTT boundary
+  mechanism requires a separate theorem. \\
+Pilot wave necessarily fails at horizons and cosmological selection
+& Withdraw
+& No such conclusion follows from the nonrelativistic reconstruction. \\
+Upper locality resolves Bohmian nonlocality
+& Narrow
+& The lower guidance remains configuration-space nonlocal; operational
+  no-signalling and upper locality need an explicit descent contract. \\
+Pilot wave is an MTT zero-noise limit
+& Open
+& A selected kernel, rate functional, concentration theorem, and domain
+  control are required. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Completion contract}
+\label{sec:completion}
+
+The reconstruction becomes a selected MTT pilot--wave theorem only when the
+following rows are supplied from one controlled source or are explicitly
+declared experimental inputs.
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}p{0.06\textwidth}p{0.27\textwidth}X@{}}
+\toprule
+Row & Required object & Exit certificate \\
+\midrule
+PW1 & Quantum record
+& Selected or imported \(\cH,H,\psi_0,\hbar,U\), with domains and errors. \\
+PW2 & Physical configuration
+& A configuration manifold and position ontology compatible with the
+  selected particle sector. \\
+PW3 & Actual configuration
+& A same-source decoder emitting \(Q_0\), without replaying the desired
+  lower trajectory as an input. \\
+PW4 & Current selection
+& A symmetry/composition theorem selecting \(j^\psi\), or a declared
+  alternative with empirical equivalence bounds. \\
+PW5 & Flow
+& Existence, uniqueness, nodal/collision control, and exceptional-set
+  measure on the claimed interval. \\
+PW6 & Equilibrium source
+& A preparation, typicality, or operational theorem supplying the initial
+  \(|\psi|^2\) law on the claimed context family. \\
+PW7 & Apparatus descent
+& System--apparatus coupling, pointer partition, conditional state, and
+  record instrument from the same source. \\
+PW8 & Locality
+& A commuting upper-to-lower map preserving settings, local algebras,
+  records, independence assumptions, and no-signalling marginals. \\
+PW9 & Regime boundary
+& A concrete regularity, decoder, current, flow, or error criterion; no
+  right-inverse surrogate. \\
+PW10 & Relativistic extension
+& A covariant or foliation-equipped law with an explicit empirical and
+  causal contract. \\
+PW11 & Stochastic limit
+& Selected kernel and rate functional with a proved concentration limit to
+  the same guidance flow. \\
+PW12 & Objective history
+& If demanded, a theorem selecting one actual history rather than only a
+  measure on output records. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The present status is mixed.  Standard lower mathematics supplies
+\cref{eq:continuity,eq:velocity,eq:equivariance} under its hypotheses.
+The \(q=79\) recorder supplies an exact selected operational output measure
+for one binary domain.  The full same-source rows PW2--PW8 and PW10--PW12
+are not all closed.  This paper therefore does not close the universal
+Born-source blocker.
+
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{What has actually been achieved}
+
+Version 2 preserves a concrete positive result.  Whenever MTT emits a
+regular scalar quantum record, a physical configuration, the standard
+current, an initial actual point, and commuting dynamics, the resulting
+lower characteristic flow is exactly the standard de Broglie--Bohm flow.
+This gives a clean target for simulations and for future source theorems.
+The worked Gaussian shows that the target is computationally explicit, not
+merely verbal.
+
+The paper also gives a more useful negative diagnosis than the former
+right-inverse argument.  The reconstruction boundary is now a finite list
+of typed failures: wave regularity, current descent, configuration decoding,
+flow existence, coherent continuation, or instrument scope.  Each can be
+tested separately.
+
+\subsection{Why the narrower result is stronger science}
+
+The former paper appeared stronger because it described every lower object
+as already derived.  That wording hid the real research frontier.  Once the
+configuration and current-selection rows are exposed, the next theorem is
+sharply posed:
+\begin{quote}
+Construct one selected MTT source whose canonical physical configuration
+decoder and symmetry/composition data select the standard Bohmian current,
+and prove that its continuation intertwines with the maximal guidance flow.
+\end{quote}
+This theorem would be genuinely new.  Repeating the continuity equation
+would not discharge it.
+
+\subsection{Relation to the Born-source program}
+
+The exact binary recorder is relevant because it demonstrates that MTT can
+source a nontrivial operational output law without fitting its probability
+weights.  But an operational normal-state measure and a Bohmian equilibrium
+ensemble answer different questions.  A future unification must show that
+the same selected source emits:
+\[
+\rho_{\mathrm{upper}}
+\longmapsto
+\begin{cases}
+\text{normal output state on the recorder algebra},\\
+\text{actual configuration or history},\\
+\text{equilibrium/typicality measure on configurations},
+\end{cases}
+\]
+and that these outputs agree for every admitted apparatus context.  Until
+then, neither result should be used to overstate the other.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The standard pilot--wave equations are mathematically clear once their
+complete lower record is supplied.  The Schrodinger equation gives the
+standard current, the current and density define a velocity away from
+nodes, an actual configuration follows that velocity, and an initially
+\(|\psi|^2\)-distributed ensemble remains equivariant.  The existence of
+this chain does not by itself source its inputs or make the guidance current
+unique.
+
+MTT can reconstruct that chain on a declared domain if one selected upper
+state emits the wave, Hamiltonian, physical configuration, actual point,
+current, flow, instruments, and locality data and if the descent diagrams
+commute.  That is the paper's theorem.  It is conditional, precise, and
+testable.
+
+The corrected interpretation is therefore:
+\begin{quote}
+Pilot--wave dynamics are a possible regime-limited lower reconstruction of
+MTT, not yet a universally selected consequence of MTT and not a
+no-hidden-variable reformulation.
+\end{quote}
+The selected \(q=79\) recorder is genuine finite-domain progress on
+operational probability.  The next decisive step is a same-source
+configuration-and-current theorem, followed by equilibrium, apparatus, and
+locality descent on the same branch.
+
+\bibliographystyle{plain}
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The curated strict-upgrade ledger is used only as a corpus-state cross-check that stronger universal source-selection obligations remain open. It does not prove this paper's physical-configuration decoder, actual configuration, current selection, equilibrium source, guidance flow, apparatus descent, or locality contract. The exact canonical q79 binary output-measure theorem is instead cited at its immutable source-proof repository commit and remains restricted to its declared P/Q Fock-output domain; it is not a universal Bohmian equilibrium or one-history theorem.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
 \end{quote}
 
-From the MTT perspective:
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
 \begin{itemize}
-  \item determinism is fundamental,
-  \item probability is structural,
-  \item nonlocal correlations arise from projection,
-  \item and irreversibility is unavoidable at admissibility boundaries.
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
 \end{itemize}
 
-Pilot--wave mechanics correctly captures the semiclassical,
-deterministic limit of this structure,
-but cannot be globally extended without contradiction.
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
-%==================================================
-\section{Outlook}
-%==================================================
+\bibliography{main}
 
-Several directions follow naturally from this work.
-
-\begin{itemize}
-  \item \textbf{Relativistic extension:}
-  Pilot--wave dynamics for relativistic fields arise
-  from the same MTT framework without preferred foliations.
-
-  \item \textbf{Quantum field theory:}
-  Particle creation and annihilation correspond to
-  basin transitions rather than trajectory endpoints.
-
-  \item \textbf{Quantum gravity:}
-  Horizon formation and evaporation are admissibility events,
-  explaining information loss without violating determinism.
-
-  \item \textbf{Cosmology:}
-  Initial condition selection and probability measures
-  are unified with quantum measurement under the same mechanism.
-\end{itemize}
-
-In this sense, Modal Triplet Theory provides a unifying
-framework in which the successes of pilot--wave theory are retained,
-its foundational problems are resolved,
-and its limitations are rendered unavoidable and precise.
-\begin{thebibliography}{99}
-
-\bibitem{MTT-Admissibility}
-P.~Nero,
-\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255621}
-
-\bibitem{MTT-Foundation}
-P.~Nero,
-\emph{Modal Triplet Theory: Foundation},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.16949762}
-
-\bibitem{MTT-FixedPoints}
-P.~Nero,
-\emph{Fixed Points I--VI: Complete Coherence Spine},
-Zenodo preprints, August 2025.
-\url{https://doi.org/10.5281/zenodo.16948748}
-
-\bibitem{MTT-ProjectionAdmissibility}
-P.~Nero,
-\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255838}
-
-\bibitem{MTT-Closure}
-P.~Nero,
-\emph{Closure and Inevitability in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255510}
-
-\bibitem{MTT-CoherenceCapacity}
-P.~Nero,
-\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255905}
-
-\bibitem{MTT-CoherenceDynamics}
-P.~Nero,
-\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256048}
-
-\bibitem{MTT-QM}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.17074246}
-
-\bibitem{MTT-QFT}
-P.~Nero,
-\emph{From MTT to Quantum Field Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17068816}
-
-\bibitem{MTT-GR}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to General Relativity},
-Zenodo preprint, October 2025.
-\url{https://doi.org/10.5281/zenodo.16950597}
-
-\bibitem{MTT-UVQG}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17077671}
-
-\bibitem{MTT-Measurement}
-P.~Nero,
-\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17177404}
-
-\bibitem{MTT-Irreversibility}
-P.~Nero,
-\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256408}
-
-\bibitem{MTT-Bell-Beables}
-P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17076300}
-
-\bibitem{MTT-Bell-Temporal}
-P.~Nero,
-\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
-Zenodo preprint, August 2025.
-\url{https://doi.org/10.5281/zenodo.18208884}
-
-\bibitem{MTT-Stochastic}
-P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18254862}
-
-\end{thebibliography}
 \end{document}

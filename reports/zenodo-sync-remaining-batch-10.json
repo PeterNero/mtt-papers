@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T19:22:48+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21709225",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "2032f25092103fadc489114ea3ea1b37",
+      "local_pdf_sha256": "81f7fa937c61d3ccd3cde63f5da74ecab8d725448bcb18d3039e1293f4e51fc4",
+      "paper_id": "modal-triplet-theory-from-mtt-to-pilot-wave-dynamics",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    }
+  ]
+}
