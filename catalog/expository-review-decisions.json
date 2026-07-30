@@ -896,6 +896,14 @@
       "reviewed_main_tex_sha256": "583fd0ce8b87b0ba74250755c01add519d39405f6f4752007bab1f5e50317223",
       "reviewed_pdf_sha256": "3b57e3367e71b6b7c3cc0f55ab14830719f8a17ff0068beb69dc162fa0b6a876",
       "reviewed_source_tree_sha256": "b769cd7887c3f3d054fbd30bbec755295b8400a0234375d535e017f6a94365f7"
+    },
+    "when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 2 rebuilds the admissibility-first vacuum essay as a typed distinction among formal existence, chart validity, kinematic admissibility, dynamical or statistical realization, and empirical identification. It proves that one-chart failure cannot establish global nonexistence, that an admissibility predicate cannot uniquely select when inequivalent candidates survive, and that disconnected admissible components do not by themselves imply physical inaccessibility; defines a complete vacuum-selection record; distinguishes deterministic, stochastic, ensemble, tunneling, EFT, swampland, and anthropic roles; uses current q79, finite Cech, projected-HYM, and Wiener evidence only as bounded contextual certificates; withdraws the unsupported landscape-convergence and unique-vacuum implications; and the complete 16-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "09e9d317a083fde3e014121b005c249bbf0d11f79098c9c79065f9d7bb59b2f7",
+      "reviewed_pdf_sha256": "fb1cb03c6082bb143e99fb6ef14e7f9e3609c8ab41fe326a59999227384cc5c6",
+      "reviewed_source_tree_sha256": "c2d64437574595c63c99a6268ea44ab01674f1756e14f8d67dfb98568d5e6d07"
     }
   }
 }

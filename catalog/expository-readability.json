@@ -4,19 +4,19 @@
   "papers": 139,
   "priority_counts": {
     "critical": 7,
-    "light": 8,
+    "light": 7,
     "low": 1,
     "major": 7,
     "moderate": 4,
     "reference_ready": 2,
-    "reviewed": 110
+    "reviewed": 111
   },
   "missing_dimension_counts": {
     "argument_flow": 36,
     "conclusion": 12,
-    "concrete_foothold": 39,
+    "concrete_foothold": 38,
     "object_intuition": 88,
-    "orientation": 45,
+    "orientation": 46,
     "result_interpretation": 12
   },
   "forbidden_boilerplate_hits": [],
@@ -3320,28 +3320,28 @@
     },
     {
       "paper_id": "when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34",
-      "title": "When Is a Configuration Physical? Rethinking the Vacuum Selection Problem",
-      "total_words": 2533,
-      "narrative_words": 2533,
-      "formal_results": 0,
-      "proofs": 0,
-      "narrative_words_per_result": 2533.0,
-      "orientation": true,
+      "title": "When Is a Configuration Physical? Admissibility, Chart Failure, and the Logic of Vacuum Selection",
+      "total_words": 4694,
+      "narrative_words": 3002,
+      "formal_results": 6,
+      "proofs": 3,
+      "narrative_words_per_result": 500.3,
+      "orientation": false,
       "object_intuition": false,
       "argument_flow": true,
       "result_interpretation": true,
-      "concrete_foothold": false,
+      "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
       "coverage_dimensions": 5,
-      "audit_priority": "light",
+      "audit_priority": "reviewed",
       "heuristic_priority": "light",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "review_note": "Version 2 rebuilds the admissibility-first vacuum essay as a typed distinction among formal existence, chart validity, kinematic admissibility, dynamical or statistical realization, and empirical identification. It proves that one-chart failure cannot establish global nonexistence, that an admissibility predicate cannot uniquely select when inequivalent candidates survive, and that disconnected admissible components do not by themselves imply physical inaccessibility; defines a complete vacuum-selection record; distinguishes deterministic, stochastic, ensemble, tunneling, EFT, swampland, and anthropic roles; uses current q79, finite Cech, projected-HYM, and Wiener evidence only as bounded contextual certificates; withdraws the unsupported landscape-convergence and unique-vacuum implications; and the complete 16-page PDF was visually inspected.",
       "missing_dimensions": [
-        "object_intuition",
-        "concrete_foothold"
+        "orientation",
+        "object_intuition"
       ]
     },
     {

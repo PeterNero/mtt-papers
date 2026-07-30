@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18255207",
+      "created": "2026-07-30T21:17:19.437413+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21710258",
+      "files": [
+        {
+          "checksum": "md5:26038185697f3974be6dfedc50353655",
+          "content_url": "https://zenodo.org/api/records/21710258/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 386636
+        }
+      ],
+      "id": "21710258",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21710258",
+      "resource_type": "publication",
+      "title": "When Is a Configuration Physical? Admissibility, Chart Failure, and the Logic of Vacuum Selection",
+      "updated": "2026-07-30T21:17:20.000347+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18262388",
       "created": "2026-07-30T21:01:15.231548+00:00",
       "creators": [

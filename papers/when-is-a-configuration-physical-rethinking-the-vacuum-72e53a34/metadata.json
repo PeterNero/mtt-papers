@@ -1,65 +1,96 @@
 {
-  "abstract": "Despite decades of progress in quantum gravity, string theory, cosmology, and effective field theory, no consensus has emerged on how to select a unique or sharply constrained vacuum describing observed physics. This persistent difficulty is commonly framed as a problem of combinatorics, statistics, or anthropic weighting over a large landscape of vacua. In this work we argue that the difficulty may instead reflect a mis-posed question: the assumption that physics is defined throughout configuration space. We observe that core physical notions\u2014Hilbert spaces, probability, effective field theory, and renormalization group flow\u2014already presuppose stability, boundedness, and spectral separation, none of which are guaranteed globally. As a consequence, selection cannot meaningfully act pointwise on vacua but must instead operate on admissible regions defined by dynamical and spectral inequalities. These regions need not be connected or accessible by continuous deformation, rendering standard landscape searches ineffective by construction. The goal of this paper is not to propose a new fundamental theory, but to clarify the conceptual structure underlying vacuum selection and to explain why existing approaches have struggled to converge.",
+  "abstract": "Vacuum selection involves several logically different questions that are often compressed into one. A configuration can exist as a mathematical solution, admit a controlled effective chart, satisfy a chosen set of stability and consistency tests, be reached with nonzero weight under a dynamics or measure, and agree with observations. None of these statements implies all the others. This paper gives an admissibility-first account of the problem while correcting two overly strong inferences. First, failure of one chart or one certificate does not prove that the underlying mathematical configuration does not exist. Global exclusion requires either a chart-independent obstruction or a transition-compatible exhaustion of the allowed atlas. Second, exclusion is not selection. If two configurations remain admissible, the admissibility predicate alone supplies neither a unique outcome nor a probability distribution. Selection additionally requires a declared dynamics, initial law, measure, conditioning rule, optimization principle, or other source of relative weight. We formalize these distinctions with a typed vacuum-selection record that contains the candidate space and equivalence relation, admissibility rows, chart transitions, dynamics or ensemble, initial data, stopping and reset semantics, observation map, conditioning event, and normalization certificate. We also show why disconnected admissible components do not by themselves imply physical inaccessibility: that conclusion depends on whether the selected evolution is continuous, permits jumps or tunneling, or changes charts. The resulting framework preserves the useful core of the admissibility-first proposal. It turns consistency, stability, and controlled-description tests into a provenance-aware filter before statistical or dynamical selection is attempted. Current finite Modal Triplet Theory calculations provide examples of such certificates at explicitly limited tiers. They do not yet define a global vacuum measure, prove exhaustion of all branches, or select one observed universe.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v2",
+  "date": "Version 2, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18255207",
-    "created": "2026-01-15T10:12:41.199676+00:00",
+    "created": "2026-07-30T21:17:19.437413+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18255208",
+    "doi": "10.5281/zenodo.21710258",
     "files": [
       {
-        "checksum": "md5:0f37a91e4860e475effcbdaad8b6b4f2",
-        "content_url": "https://zenodo.org/api/records/18255208/files/When_Is_a_Configuration_Physical____Rethinking_the_Vacuum_Selection_Problem%20(3).pdf/content",
-        "key": "When_Is_a_Configuration_Physical____Rethinking_the_Vacuum_Selection_Problem (3).pdf",
-        "size": 191954
+        "checksum": "md5:26038185697f3974be6dfedc50353655",
+        "content_url": "https://zenodo.org/api/records/21710258/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 386636
       }
     ],
-    "id": "18255208",
-    "match_kind": "title_or_file",
+    "id": "21710258",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18255208",
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21710258",
     "resource_type": "publication",
-    "title": "When Is a Configuration Physical? Rethinking the Vacuum Selection Problem",
-    "updated": "2026-01-15T10:12:41.528650+00:00",
-    "version": "v1.0"
+    "title": "When Is a Configuration Physical? Admissibility, Chart Failure, and the Logic of Vacuum Selection",
+    "updated": "2026-07-30T21:17:20.000347+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "8bd1d842881d1cf59f64b4333159bd3ba8318667d783ffd1cc650ba1a0138b68",
+  "main_tex_sha256": "09e9d317a083fde3e014121b005c249bbf0d11f79098c9c79065f9d7bb59b2f7",
   "paper_id": "when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34",
-  "paper_md_sha256": "8b895381d437167040840b61984b514a5e7aca419a6eb59f5711bb5cc8255fd9",
+  "paper_md_sha256": "d0ff4c71dd8bbdcaec1dc6cc9970c20cf8df6f89f14a4f856b17658341a0e2df",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_sha256": "72d7fc24889477fb7e73bdf638452d78de83e4f316ade800d5c92622bf7a6607",
+    "selected_revision": true
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 20381,
+      "bytes": 39201,
       "path": "main.tex",
-      "sha256": "8bd1d842881d1cf59f64b4333159bd3ba8318667d783ffd1cc650ba1a0138b68"
+      "sha256": "09e9d317a083fde3e014121b005c249bbf0d11f79098c9c79065f9d7bb59b2f7"
     },
     {
-      "bytes": 3784,
-      "path": "series.sty",
-      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+      "bytes": 4140,
+      "path": "main.bib",
+      "sha256": "a78df58531a00c5f3f7779553c61ee1163a54d21dc93d034315186700326ab97"
+    },
+    {
+      "bytes": 386636,
+      "path": "main.pdf",
+      "sha256": "fb1cb03c6082bb143e99fb6ef14e7f9e3609c8ab41fe326a59999227384cc5c6"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/When_Is_a_Configuration_Physical____Rethinking_the_Vacuum_Selection_Problem"
   },
-  "source_tree_sha256": "6a2a82e293b409a5f3c1d32c3a4fd52124b8efb7c7224218954878554b652202",
-  "title": "When Is a Configuration Physical? Rethinking the Vacuum Selection Problem",
+  "source_tree_sha256": "c2d64437574595c63c99a6268ea44ab01674f1756e14f8d67dfb98568d5e6d07",
+  "title": "When Is a Configuration Physical? Admissibility, Chart Failure, and the Logic of Vacuum Selection",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255207",
+      "created": "2026-07-30T21:17:19.437413+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21710258",
+      "files": [
+        {
+          "checksum": "md5:26038185697f3974be6dfedc50353655",
+          "content_url": "https://zenodo.org/api/records/21710258/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 386636
+        }
+      ],
+      "id": "21710258",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21710258",
+      "resource_type": "publication",
+      "title": "When Is a Configuration Physical? Admissibility, Chart Failure, and the Logic of Vacuum Selection",
+      "updated": "2026-07-30T21:17:20.000347+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18255207",
       "created": "2026-01-15T10:12:41.199676+00:00",

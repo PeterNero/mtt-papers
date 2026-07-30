@@ -13,9 +13,9 @@ Canonical papers audited: **139**.
 | critical | 7 |
 | major | 7 |
 | moderate | 4 |
-| light | 8 |
+| light | 7 |
 | low | 1 |
-| reviewed | 110 |
+| reviewed | 111 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -24,9 +24,9 @@ Canonical papers audited: **139**.
 | --- | ---: |
 | argument_flow | 36 |
 | conclusion | 12 |
-| concrete_foothold | 39 |
+| concrete_foothold | 38 |
 | object_intuition | 88 |
-| orientation | 45 |
+| orientation | 46 |
 | result_interpretation | 12 |
 
 ## Revision Queue
@@ -58,7 +58,6 @@ Canonical papers audited: **139**.
 | light | light | `modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8` | 0 | 9868.0 | 6/7 | object_intuition |
 | light | light | `modal-triplet-theory-parameters-closure-and-structural-ae734bf0` | 0 | 4982.0 | 5/7 | object_intuition, concrete_foothold |
 | light | light | `photons-entanglement-and-null-updating-in-modal-triplet-theory` | 0 | 5021.0 | 6/7 | object_intuition |
-| light | light | `when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34` | 0 | 2533.0 | 5/7 | object_intuition, concrete_foothold |
 | low | low | `projection-induced-network-geometry-sprouting-hidden-co-6919523e` | 17 | 552.5 | 7/7 | - |
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
 | reviewed | critical | `fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce` | 43 | 69.9 | 7/7 | - |
@@ -119,6 +118,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0` | 6 | 354.2 | 7/7 | - |
 | reviewed | light | `modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927` | 6 | 464.5 | 5/7 | orientation, object_intuition |
 | reviewed | low | `the-modal-triplet-theory-program-a1-coherent-kinematics` | 6 | 461.2 | 7/7 | - |
+| reviewed | light | `when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34` | 6 | 500.3 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `white-noise-and-markov-limits-as-delta-correlation-idea-854be499` | 6 | 241.3 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `why-quantum-contextuality-and-measurement-order-depende-e0bdb9bf` | 6 | 385.7 | 6/7 | orientation |
 | reviewed | moderate | `world-in-world-genesis-local-comparison-geometry-and-a-9e600e73` | 6 | 314.7 | 7/7 | - |

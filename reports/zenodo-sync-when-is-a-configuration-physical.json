@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T21:17:02+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21710258",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "26038185697f3974be6dfedc50353655",
+      "local_pdf_sha256": "fb1cb03c6082bb143e99fb6ef14e7f9e3609c8ab41fe326a59999227384cc5c6",
+      "paper_id": "when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    }
+  ]
+}
