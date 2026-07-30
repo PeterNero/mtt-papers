@@ -680,6 +680,38 @@
       "reviewed_main_tex_sha256": "05ec296cd03a047f127a56cff3b01e00dcf6d28d5e472ae064318f74ff60a45b",
       "reviewed_pdf_sha256": "f0d2ec82c10e0add68ccf65fd75aaba26cba34bc13b543440a6b503841d2f372",
       "reviewed_source_tree_sha256": "6311e14545e5e6dea73b1496aa062713ca8ba53150b081ab0eb70c29eead9f9d"
+    },
+    "canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 1 replaces the universal delta-replacement claim by an exact typed projected heat-kernel theorem, proves harmonic-projector degeneracy and gap estimates, and requires explicit intertwiners plus symmetry, support, gauge and measurement compatibility before physical reuse; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "54abab1f209b263464450b4c6873b0b22713195eb43c7022ee91438ce7d36c7f",
+      "reviewed_pdf_sha256": "0c3237fb0d39ccb2e606b10c3266c17492d03ff8b364c94b7e52f8127306a52c",
+      "reviewed_source_tree_sha256": "a080a716debd7cc8d53282126b0607c0d235df4e3a8aa503e292b6ef9136fdaa"
+    },
+    "coherent-green-functions-replacing-point-sources-by-adm-98607519": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 1 retains exact elliptic spectral and heat-filtered Green-function convergence while separating band-limited sources from physical source selection, causal propagation, gauge/BRST consistency, locality and renormalization; 12-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "55041b3beddd6e57ff9324dceed9c0c51b7e81f4671f5c86bd2c9fe803ee9881",
+      "reviewed_pdf_sha256": "f23a7aa38b881f2302d74e5487ef1cb4b3a557cff7ee223f3262c363d50c9886",
+      "reviewed_source_tree_sha256": "a269f6fcca37e1fddd556a6f7d3cd4bd7060ee0290d1280aa6de960399a3b57d"
+    },
+    "gauge-fixing-as-admissible-section-selection-in-modal-t-459e029d": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 1 preserves the rigorous finite-dimensional local-slice/Jacobian result, distinguishes formal Faddeev-Popov and BRST encodings, and adds orbit-type, Gribov, Singer, anomaly and gauge-parameter-independence boundaries; 11-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "de03c5e3cc1db0ec6e3eaab559cafe2544c4afbeb995b8a6fe7acd8d3e127df8",
+      "reviewed_pdf_sha256": "6cf25f1b5ed5089d2015799ce16d5e07aa1ed3c618ea0ee4a2584144b1c97386",
+      "reviewed_source_tree_sha256": "56a8cc84b6cc8bebd292af35b98016d7a0618a7ce0ffa3096e5792803733b049"
+    },
+    "classical-constraint-deltas-and-microcanonical-shells-a-9f4bdcc1": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 1 proves normalized shell convergence by coarea reduction with a quantitative finite-width certificate, distinguishes Hamiltonian invariance from ergodicity, and leaves the shell profile, target energy and reduced measure as explicit source obligations; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "c660d446d9990dfe60a154c43d593b0cabb8c8a69b68557d696623cc88127b81",
+      "reviewed_pdf_sha256": "7f3603caaafc5b03dc54d56851df93d8308f5228bab6b20d0fb0393031c393da",
+      "reviewed_source_tree_sha256": "fc6c8928cb602ad8fb1a2e2e141b78fe6bed280fa2ea836435937bb12723ce25"
     }
   }
 }

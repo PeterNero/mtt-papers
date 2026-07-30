@@ -1,20 +1,47 @@
 {
-  "abstract": "Earlier papers in the delta\u2013projection sequence established a structural dictionary: Dirac delta distributions arise as singular limits of finite kernels, shells, filters, windows, measurement effects, and thin layers. That dictionary is mathematically legitimate but does not by itself determine new physics, because an arbitrary finite kernel is only a regulator. The execution-level problem is the reverse direction: derive the finite kernel from MTT data. This paper proves the canonical fixed-point version of that reverse direction. In an admissible MTT fixed-point regime, the data consist of a nonnegative self-adjoint linearized operator A, a bounded coherent projector P=\\Pi_{\\mathrm{coh}}, a complementary incoherent projector Q=I-P, a spectral gap on the incoherent sector, and a proper-time/coherence scale \\tau>0. These data canonically define the coherent kernel K_{\\mathrm{MTT}}(x,y;\\tau) = \\langle x|\\,P e^{-\\tau A}P\\,|y\\rangle . Equivalently, in a spectral representation, K_{\\mathrm{MTT}}(x,y;\\tau) = \\sum_{n\\in{\\rm coh}} e^{-\\tau\\lambda_n} \\phi_n(x)\\phi_n^\\ast(y). We prove that this kernel is smooth for positive proper time, is functorial under unitary re-encoding, acts as a controlled sector-identity on the coherent sector, suppresses incoherent components by the fixed-point spectral gap, and converges to the usual Dirac delta only in the joint limit of complete coherent bandwidth and vanishing proper-time width. Thus the delta replacement is not arbitrary: \\delta(x-y) \\quad\\leadsto\\quad K_{\\mathrm{MTT}}(x,y;\\tau), with finite corrections controlled by (A,P,\\tau,\\lambda^\\ast). This converts the previous delta dictionary into an execution rule: MTT fixed-point data determine the finite kernel, and the finite kernel determines the deviation from the sharp standard object.",
+  "abstract": "This paper isolates the exact projected heat-kernel statement available from declared fixed-point data. On a specified compact Riemannian internal space, Euclidean problem, or spatial Cauchy-slice Hilbert space, a nonnegative self-adjoint elliptic operator A, a reducing orthogonal projector P, and a positive proper-time parameter determine a unique projected heat operator. We prove smoothness in the elliptic spectral setting, covariance under unitary equivalence, coherent-band error estimates, and the joint distributional limit to the full identity. If AP is zero, the projected heat operator equals P, so proper time creates no additional smoothing on the retained sector. Gap damping applies to the complementary evolution, while the projected operator annihilates that complement. These facts do not authorize a universal replacement of spacetime deltas, canonical commutators, gauge constraints, or local vertices. Such a replacement is a new physical model unless a selected realization supplies the operator domain, operator, projector, and scale, and separately proves locality or causal support, covariance, gauge or BRST compatibility, and the relevant algebraic identities. The result is therefore a conditional execution interface, not a derivation of a universal MTT regulator.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "unversioned",
-  "date": "2026-07-19",
-  "latest_zenodo_release": null,
-  "main_tex_sha256": "6a2e297137a1f3f58ead9ac5a392d7fc71fe486f16a0773160b38c58b71b6494",
+  "current_version": "v1",
+  "date": "July 2026, Version 1",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.21703906",
+    "created": "2026-07-30T12:54:41.649671+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.21703907",
+    "files": [
+      {
+        "checksum": "md5:d11772163b594f1d24e948d943309b66",
+        "content_url": "https://zenodo.org/api/records/21703907/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 357017
+      }
+    ],
+    "id": "21703907",
+    "match_kind": "published_draft_reconciliation",
+    "match_score": 1.0,
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21703907",
+    "resource_type": "publication",
+    "title": "Projected Heat Kernels from MTT Fixed-Point Data Conditional Sector Identities and the Physical-Replacement Boundary",
+    "updated": "2026-07-30T12:54:42.346504+00:00",
+    "version": "v1"
+  },
+  "main_tex_sha256": "54abab1f209b263464450b4c6873b0b22713195eb43c7022ee91438ce7d36c7f",
   "paper_id": "canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62",
-  "paper_md_sha256": "9418456d17acc2ddc18f016c5423d6b2cc41c3b986cd8d3223dca864e486108c",
-  "release_state": "not_matched_to_zenodo",
+  "paper_md_sha256": "d35d57d299c24a8b1395c6f934dc77c36967f3561b81cfe0d3f67088970007c5",
+  "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "e2d04279c57b97b229bfb831831f9aaff9e831b959b6822e97437f9b24031da2",
+    "selected_revision": true,
+    "superseded_source_path": "5 Dirac Delta/_work/Canonical_Coherent_Kernels_from_MTT_Fixed_Point_Data"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -24,9 +51,9 @@
       "sha256": "6a2e297137a1f3f58ead9ac5a392d7fc71fe486f16a0773160b38c58b71b6494"
     },
     {
-      "bytes": 21411,
+      "bytes": 24017,
       "path": "main.tex",
-      "sha256": "6a2e297137a1f3f58ead9ac5a392d7fc71fe486f16a0773160b38c58b71b6494"
+      "sha256": "54abab1f209b263464450b4c6873b0b22713195eb43c7022ee91438ce7d36c7f"
     },
     {
       "bytes": 3784,
@@ -37,8 +64,34 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Canonical_Coherent_Kernels_from_MTT_Fixed_Point_Data"
   },
-  "source_tree_sha256": "71ad6070410390a627ec298ce892933af14de040a0a17ecfbbffa97769f378fb",
-  "title": "Canonical Coherent Kernels from MTT Fixed-Point Data From the Delta Dictionary to Execution-Level Corrections",
-  "version_relation": "unknown",
-  "zenodo_releases": []
+  "source_tree_sha256": "a080a716debd7cc8d53282126b0607c0d235df4e3a8aa503e292b6ef9136fdaa",
+  "title": "Projected Heat Kernels from MTT Fixed-Point Data Conditional Sector Identities and the Physical-Replacement Boundary",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.21703906",
+      "created": "2026-07-30T12:54:41.649671+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21703907",
+      "files": [
+        {
+          "checksum": "md5:d11772163b594f1d24e948d943309b66",
+          "content_url": "https://zenodo.org/api/records/21703907/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 357017
+        }
+      ],
+      "id": "21703907",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21703907",
+      "resource_type": "publication",
+      "title": "Projected Heat Kernels from MTT Fixed-Point Data Conditional Sector Identities and the Physical-Replacement Boundary",
+      "updated": "2026-07-30T12:54:42.346504+00:00",
+      "version": "v1"
+    }
+  ]
 }

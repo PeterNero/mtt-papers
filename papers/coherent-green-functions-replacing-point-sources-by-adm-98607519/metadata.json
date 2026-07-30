@@ -1,20 +1,47 @@
 {
-  "abstract": "The preceding paper identified Dirac delta functions as singular shadows of admissible projection: a delta is the zero-width limit of a bounded coherent projection kernel. The present paper develops the first worked sequel. We replace the standard point-source Green equation LG(x,y)=\\delta(x-y) by the coherent Green equation LG_{\\mathrm{coh}}(x,y)=K_{\\mathrm{coh}}(x,y), where K_{\\mathrm{coh}} is a bounded admissible identity kernel on a retained coherent sector. The mathematical core is elementary but important: for a positive self-adjoint elliptic operator L, finite spectral projectors and heat-kernel filters produce smooth finite-width sources, smooth responses, finite diagonal values, and distributional convergence to the ordinary Green kernel only in the singular limit. A worked circle model with L_m=-\\partial_\\theta^2+m^2 displays the replacement explicitly: L_mG_N=K_N and L_mG_\\tau=H_\\tau, with the point-source equation recovered only as N\\to\\infty or \\tau\\downarrow0. Thus the standard Green function is recovered, but as an ideal endpoint rather than a primitive object. Within Modal Triplet Theory (MTT), this supplies the first concrete replacement rule for delta-supported physics. Point particles, point charges, local disturbances, propagator sources, and contact interactions are re-read as downstream zero-width idealizations of finite coherent source kernels. This does not discard standard Green functions; it factors them into two layers: a physically admissible finite-width response and a singular continuum limit. The result provides a rigorous bridge from the delta/projection principle to a usable computational object: the coherent Green function.",
+  "abstract": "This paper develops a worked finite-source sequel to the observation that a Dirac delta can arise as the zero-width limit of a bounded projection kernel. For a positive self-adjoint elliptic operator, finite spectral projectors and heat-kernel filters produce smooth finite-width sources, smooth responses, finite diagonal values, and distributional convergence to the ordinary Green kernel only in the singular limit. A worked circle model displays both the band-limited and heat-filtered constructions explicitly and recovers the point-source equation as the bandwidth tends to infinity or the heat scale tends to zero. Within Modal Triplet Theory, these results provide a conditional downstream interface rather than a universal replacement rule. A selected physical realization must still supply the elliptic operator, projector or filter, its width, and the map from an internal or Euclidean spectral problem to the claimed external source. It must also prove that covariance, gauge constraints, locality or causal support, and boundary conditions survive. Different finite kernels can share the same sharp limit while giving different finite predictions. The rigorous result is therefore the elliptic response theorem and its singular limit; physical kernel selection remains open.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "unversioned",
-  "date": "April 2026",
-  "latest_zenodo_release": null,
-  "main_tex_sha256": "be1c419a1346e73e19640a7d75dff26f4078063ed0c49e94618c666739cfe2bd",
+  "current_version": "v1",
+  "date": "July 2026, Version 1",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.21703914",
+    "created": "2026-07-30T12:54:48.475622+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.21703915",
+    "files": [
+      {
+        "checksum": "md5:bca9da5404b325b6463d510dbbccfcc0",
+        "content_url": "https://zenodo.org/api/records/21703915/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 370307
+      }
+    ],
+    "id": "21703915",
+    "match_kind": "published_draft_reconciliation",
+    "match_score": 1.0,
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21703915",
+    "resource_type": "publication",
+    "title": "Coherent Green Functions from Declared Projection Kernels Elliptic Results and the MTT Source Boundary",
+    "updated": "2026-07-30T12:54:48.787855+00:00",
+    "version": "v1"
+  },
+  "main_tex_sha256": "55041b3beddd6e57ff9324dceed9c0c51b7e81f4671f5c86bd2c9fe803ee9881",
   "paper_id": "coherent-green-functions-replacing-point-sources-by-adm-98607519",
-  "paper_md_sha256": "0000a6430c4683cf8839bc90307ee30bfb2af28dfc9359d403118abbed3525f0",
-  "release_state": "not_matched_to_zenodo",
+  "paper_md_sha256": "f47b3f45a2d22de8186165812d9acbcafdbb1632acfe4b09c43c434d52e4d383",
+  "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/coherent-green-functions-replacing-point-sources-by-adm-98607519/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "7b491fc003c964e0e6387f0cc2d596290aff93c30d19743cf5eb47d7e84bf874",
+    "selected_revision": true,
+    "superseded_source_path": "5 Dirac Delta/_work/Coherent_Green_Functions__Replacing_Point_Sources_by_Admissible_Kernels_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -29,9 +56,9 @@
       "sha256": "6d07eb847e6c0fe7dc3270cfeb1d9a52254cd12c997a4f45785d6bc8418bcc09"
     },
     {
-      "bytes": 21895,
+      "bytes": 24375,
       "path": "main.tex",
-      "sha256": "be1c419a1346e73e19640a7d75dff26f4078063ed0c49e94618c666739cfe2bd"
+      "sha256": "55041b3beddd6e57ff9324dceed9c0c51b7e81f4671f5c86bd2c9fe803ee9881"
     },
     {
       "bytes": 3784,
@@ -42,8 +69,34 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Coherent_Green_Functions__Replacing_Point_Sources_by_Admissible_Kernels_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "7df4d51b87d834b5d323a9c737bf741bcb8869f30bcba7cbab272268f56c73c9",
-  "title": "Coherent Green Functions: Replacing Point Sources by Admissible Kernels in Modal Triplet Theory",
-  "version_relation": "unknown",
-  "zenodo_releases": []
+  "source_tree_sha256": "a269f6fcca37e1fddd556a6f7d3cd4bd7060ee0290d1280aa6de960399a3b57d",
+  "title": "Coherent Green Functions from Declared Projection Kernels Elliptic Results and the MTT Source Boundary",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.21703914",
+      "created": "2026-07-30T12:54:48.475622+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21703915",
+      "files": [
+        {
+          "checksum": "md5:bca9da5404b325b6463d510dbbccfcc0",
+          "content_url": "https://zenodo.org/api/records/21703915/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 370307
+        }
+      ],
+      "id": "21703915",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21703915",
+      "resource_type": "publication",
+      "title": "Coherent Green Functions from Declared Projection Kernels Elliptic Results and the MTT Source Boundary",
+      "updated": "2026-07-30T12:54:48.787855+00:00",
+      "version": "v1"
+    }
+  ]
 }

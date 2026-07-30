@@ -1,40 +1,46 @@
 ---
 abstract: |
-  Earlier papers in the delta–projection sequence established a structural dictionary: Dirac delta distributions arise as singular limits of finite kernels, shells, filters, windows, measurement effects, and thin layers. That dictionary is mathematically legitimate but does not by itself determine new physics, because an arbitrary finite kernel is only a regulator. The execution-level problem is the reverse direction: derive the finite kernel from MTT data.
-
-  This paper proves the canonical fixed-point version of that reverse direction. In an admissible MTT fixed-point regime, the data consist of a nonnegative self-adjoint linearized operator $`A`$, a bounded coherent projector $`P=\Pi_{\mathrm{coh}}`$, a complementary incoherent projector $`Q=I-P`$, a spectral gap on the incoherent sector, and a proper-time/coherence scale $`\tau>0`$. These data canonically define the coherent kernel
+  This paper isolates the exact projected-heat-kernel statement available from declared fixed-point data. On a specified compact Riemannian internal space, Euclidean problem, or spatial Cauchy-slice Hilbert space, let $`A`$ be a nonnegative self-adjoint elliptic operator, let $`P`$ be a reducing orthogonal projector, and let $`\tau>0`$. Functional calculus then uniquely defines
   ``` math
   K_{\mathrm{MTT}}(x,y;\tau)
           =
           \langle x|\,P e^{-\tau A}P\,|y\rangle .
   ```
-  Equivalently, in a spectral representation,
-  ``` math
-  K_{\mathrm{MTT}}(x,y;\tau)
-          =
-          \sum_{n\in{\rm coh}} e^{-\tau\lambda_n}
-          \phi_n(x)\phi_n^\ast(y).
-  ```
-  We prove that this kernel is smooth for positive proper time, is functorial under unitary re-encoding, acts as a controlled sector-identity on the coherent sector, suppresses incoherent components by the fixed-point spectral gap, and converges to the usual Dirac delta only in the joint limit of complete coherent bandwidth and vanishing proper-time width.
+  We prove smoothness in the elliptic spectral setting, covariance under unitary equivalence, coherent-band error estimates, and the joint distributional limit to the full identity. The harmonic case is important: if $`AP=0`$, then $`Pe^{-\tau A}P=P`$, so $`\tau`$ creates no additional smoothing on the retained sector. Gap damping concerns $`e^{-\tau A}Q`$; the projected operator $`Pe^{-\tau A}P`$ instead annihilates $`Q`$.
 
-  Thus the delta replacement is not arbitrary:
-  ``` math
-  \delta(x-y)
-          \quad\leadsto\quad
-          K_{\mathrm{MTT}}(x,y;\tau),
-  ```
-  with finite corrections controlled by $`(A,P,\tau,\lambda^\ast)`$. This converts the previous delta dictionary into an execution rule: MTT fixed-point data determine the finite kernel, and the finite kernel determines the deviation from the sharp standard object.
+  These facts do not authorize a universal replacement of spacetime deltas, canonical commutators, gauge constraints, or local vertices. Such a replacement is a new physical model unless a selected realization supplies the operator domain, $`A`$, $`P`$, and $`\tau`$, and separately proves locality or causal support, covariance, gauge/BRST compatibility, and the relevant algebraic identities. The result is therefore a conditional execution interface, not a derivation of a universal MTT regulator.
 author:
 - Peter Nero
-current_version: unversioned
-date: 2026-07-19
-generated_from_main_tex_sha256: 6a2e297137a1f3f58ead9ac5a392d7fc71fe486f16a0773160b38c58b71b6494
+current_version: v1
+date: July 2026, Version 1
+generated_from_main_tex_sha256: 54abab1f209b263464450b4c6873b0b22713195eb43c7022ee91438ce7d36c7f
 paper_id: canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62
-release_state: not_matched_to_zenodo
+release_state: zenodo_released
+released_version: v1
 title: |
-  **Canonical Coherent Kernels from MTT Fixed-Point Data**  
-  From the Delta Dictionary to Execution-Level Corrections
+  **Projected Heat Kernels from MTT Fixed-Point Data**
+  Conditional Sector Identities and the Physical-Replacement Boundary
+zenodo_doi: 10.5281/zenodo.21703907
+zenodo_record_id: 21703907
+zenodo_url: "https://zenodo.org/records/21703907"
 ---
+
+# Version 1 Revision Note
+
+Supersedes
+The unversioned manuscript *Canonical Coherent Kernels from MTT Fixed-Point Data*.
+
+Reason
+The earlier manuscript did not declare whether $`A`$ acted internally, on a spatial slice, or in Euclidean signature; it blurred harmonic projection with heat smoothing and promoted a sector kernel to a universal delta, CCR, source, and interaction replacement.
+
+Resolution
+This version types the operator domain, proves explicitly that $`AP=0`$ gives $`Pe^{-\tau A}P=P`$, separates $`Q`$-sector damping from the projected kernel, and adds locality, covariance, causal, gauge, and algebra-preservation gates to every physical use.
+
+Retained result
+Functional calculus uniquely determines the projected heat operator and displayed spectral error bounds from compatible realization data.
+
+Remaining boundary
+Current MTT fixed-point theory does not select one such triple for every physical sector or prove that replacing a standard distribution preserves the target theory’s causal and gauge structure.
 
 # Purpose and claim discipline
 
@@ -57,7 +63,7 @@ Those statements explain why delta distributions recur across physics, but they 
 
 This paper proves that direction in the fixed-point regime.
 
-> **Central claim.** In an admissible fixed-point regime, the finite replacement of the Dirac delta is not chosen freely. It is the projected heat/proper-time kernel determined by the same operator and projector data that define coherent stabilization.
+> **Conditional construction.** After a realization has specified the operator domain and compatible data $`(A,P,\tau)`$, the projected heat operator is not chosen freely. Whether that operator represents a physical source, identity, or regulator is a separate theorem for the target sector.
 
 ## What is proved
 
@@ -69,7 +75,7 @@ and hence a kernel $`K_{\mathrm{MTT}}`$. We give explicit error estimates compar
 
 ## What is not claimed
 
-We do not claim here that all numerical values of $`\tau`$, spectral gaps, or carrier-induced operators have been computed in every physical sector. The point is sharper: once a fixed-point sector supplies $`(A,P,\tau)`$, the finite kernel is fixed by functional calculus and is no longer arbitrary.
+We do not claim that all numerical values of $`\tau`$, spectral gaps, or carrier-induced operators have been computed, or that an internal stabilization operator automatically acts on external spacetime variables. Once a fixed-point sector supplies a typed $`(A,P,\tau)`$, the corresponding projected heat kernel is fixed within that realization. No statement about an unrelated delta distribution follows without an intertwiner identifying the two domains.
 
 # Analytic setting
 
@@ -112,9 +118,15 @@ be an orthonormal spectral resolution, with eigenvalues repeated according to mu
 
 </div>
 
+<div id="rem:typing" class="remark">
+
+*Remark 3* (Domain typing). The compact elliptic theorem is Riemannian. It may describe an internal fiber, a Euclidean problem, or an operator on a spatial Cauchy slice after those data are supplied. It is not by itself a Lorentzian spacetime heat kernel. Passing to a hyperbolic or retarded problem requires a separate domain, support, and wavefront-set analysis.
+
+</div>
+
 <div id="def:Btau" class="definition">
 
-**Definition 3** (Canonical MTT coherent operator). Under <a href="#ass:fpdata" data-reference-type="ref+label" data-reference="ass:fpdata">1</a>, define
+**Definition 4** (Canonical MTT coherent operator). Under <a href="#ass:fpdata" data-reference-type="ref+label" data-reference="ass:fpdata">1</a>, define
 ``` math
 B_\tau:=P e^{-\tau A}P .
 ```
@@ -145,7 +157,7 @@ K_{\mathrm{MTT}}(x,y;\tau)
 
 <div id="thm:smoothing" class="theorem">
 
-**Theorem 4** (Kernel existence and smoothing). *Assume <a href="#ass:fpdata" data-reference-type="ref+label" data-reference="ass:fpdata">1</a>. For every $`\tau>0`$, $`e^{-\tau A}`$ is a smoothing trace-class operator. Consequently $`B_\tau=P e^{-\tau A}P`$ is bounded and trace class. If $`P`$ is a spectral projector of $`A`$, then $`B_\tau`$ has a smooth kernel
+**Theorem 5** (Kernel existence and smoothing). *Assume <a href="#ass:fpdata" data-reference-type="ref+label" data-reference="ass:fpdata">1</a>. For every $`\tau>0`$, $`e^{-\tau A}`$ is a smoothing trace-class operator. Consequently $`B_\tau=P e^{-\tau A}P`$ is bounded and trace class. If $`P`$ is a spectral projector of $`A`$, then $`B_\tau`$ has a smooth kernel
 ``` math
 K_{\mathrm{MTT}}(\cdot,\cdot;\tau)\in C^\infty(X\times X).
 ```
@@ -171,7 +183,7 @@ is bounded, because $`\lambda^N e^{-\tau\lambda}`$ is bounded on $`[0,\infty)`$.
 
 <div id="thm:covariance" class="theorem">
 
-**Theorem 5** (Re-encoding covariance). *Let $`U:L^2(X)\to L^2(X')`$ be a unitary re-encoding. Define
+**Theorem 6** (Re-encoding covariance). *Let $`U:L^2(X)\to L^2(X')`$ be a unitary re-encoding. Define
 ``` math
 A'=UAU^{-1},\qquad P'=UPU^{-1}.
 ```
@@ -207,7 +219,7 @@ The canonical kernel should not be confused with the full Dirac identity kernel.
 
 <div id="ass:band" class="assumption">
 
-**Assumption 6** (Coherent bandwidth). For some $`\Lambda_{\mathrm{coh}}\ge 0`$,
+**Assumption 7** (Coherent bandwidth). For some $`\Lambda_{\mathrm{coh}}\ge 0`$,
 ``` math
 \sigma(A|_{\operatorname{Ran}P})\subset[0,\Lambda_{\mathrm{coh}}].
 ```
@@ -216,13 +228,29 @@ The canonical kernel should not be confused with the full Dirac identity kernel.
 
 <div class="remark">
 
-*Remark 7*. If $`P`$ is the harmonic zero-mode projector, then $`\Lambda_{\mathrm{coh}}=0`$ and $`B_\tau=P`$ exactly. If $`P`$ retains a finite coherent band, then $`\Lambda_{\mathrm{coh}}`$ is the largest retained coherent eigenvalue.
+*Remark 8*. If $`P`$ is the harmonic zero-mode projector, then $`\Lambda_{\mathrm{coh}}=0`$ and $`B_\tau=P`$ exactly. If $`P`$ retains a finite coherent band, then $`\Lambda_{\mathrm{coh}}`$ is the largest retained coherent eigenvalue.
+
+</div>
+
+<div id="prop:harmonic" class="proposition">
+
+**Proposition 9** (Harmonic-projector degeneracy). *If $`AP=PA=0`$, then
+``` math
+Pe^{-\tau A}P=P
+```
+for every $`\tau\ge0`$. Thus the proper-time parameter produces no further smoothing inside the harmonic sector.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Functional calculus gives $`e^{-\tau A}P=P`$ when $`AP=0`$, and left multiplication by $`P`$ leaves $`P`$ unchanged. ◻
 
 </div>
 
 <div id="thm:sector" class="theorem">
 
-**Theorem 8** (Coherent-sector identity estimate). *Assume <a href="#ass:fpdata,ass:band" data-reference-type="ref+label" data-reference="ass:fpdata,ass:band">[ass:fpdata,ass:band]</a>. For every $`f\in L^2(X)`$,
+**Theorem 10** (Coherent-sector identity estimate). *Assume <a href="#ass:fpdata,ass:band" data-reference-type="ref+label" data-reference="ass:fpdata,ass:band">[ass:fpdata,ass:band]</a>. For every $`f\in L^2(X)`$,
 ``` math
 \left\lVert Pf-B_\tau f \right\rVert_{L^2}
         \le
@@ -268,7 +296,7 @@ and the triangle inequality. ◻
 
 <div id="cor:smalltau" class="corollary">
 
-**Corollary 9** (Small-$`\tau`$ sector correction). *Under <a href="#ass:fpdata,ass:band" data-reference-type="ref+label" data-reference="ass:fpdata,ass:band">[ass:fpdata,ass:band]</a>,
+**Corollary 11** (Small-$`\tau`$ sector correction). *Under <a href="#ass:fpdata,ass:band" data-reference-type="ref+label" data-reference="ass:fpdata,ass:band">[ass:fpdata,ass:band]</a>,
 ``` math
 \left\lVert Pf-B_\tau f \right\rVert_{L^2}
         \le
@@ -285,7 +313,7 @@ and the triangle inequality. ◻
 
 <div id="thm:gap" class="theorem">
 
-**Theorem 10** (Incoherent damping estimate). *Assume <a href="#ass:fpdata" data-reference-type="ref+label" data-reference="ass:fpdata">1</a>. Then
+**Theorem 12** (Incoherent damping estimate). *Assume <a href="#ass:fpdata" data-reference-type="ref+label" data-reference="ass:fpdata">1</a>. Then
 ``` math
 \left\lVert e^{-\tau A}Q \right\rVert_{L^2\to L^2}
         \le
@@ -324,7 +352,7 @@ B_{N,\tau}:=P_Ne^{-\tau A}P_N.
 
 <div id="thm:sharp" class="theorem">
 
-**Theorem 11** (Joint sharp limit). *Let $`f\in C^\infty(X)`$. Suppose $`\Lambda_N\to\infty`$ and $`\tau_N\downarrow0`$. Then
+**Theorem 13** (Joint sharp limit). *Let $`f\in C^\infty(X)`$. Suppose $`\Lambda_N\to\infty`$ and $`\tau_N\downarrow0`$. Then
 ``` math
 B_{N,\tau_N}f\to f
 ```
@@ -352,7 +380,7 @@ For each fixed $`n`$, $`1-e^{-\tau_N\lambda_n}\to0`$. The summand is dominated b
 
 <div id="cor:meaning" class="corollary">
 
-**Corollary 12** (Meaning of the delta limit). *The Dirac delta is not the fixed-point kernel itself. It is the joint idealization in which:*
+**Corollary 14** (Meaning of the delta limit). *The Dirac delta is not the fixed-point kernel itself. It is the joint idealization in which:*
 
 1.  *coherent bandwidth becomes complete;*
 
@@ -360,17 +388,17 @@ For each fixed $`n`$, $`1-e^{-\tau_N\lambda_n}\to0`$. The summand is dominated b
 
 3.  *the incoherent complement is no longer discarded.*
 
-*In finite-capacity MTT, the physically selected object is $`K_{\mathrm{MTT}}`$, not $`\delta`$.*
+*At finite bandwidth the declared model object is $`K_{\mathrm{MTT}}`$, not the full identity distribution. Calling it physically selected requires a source theorem for the particular realization.*
 
 </div>
 
-# Execution rule for downstream delta replacements
+# Eligibility contract for downstream use
 
-We can now state the execution rule.
+The mathematical construction gives an execution rule only after the target distribution has been identified with the same typed sector.
 
 <div id="def:replacement" class="definition">
 
-**Definition 13** (MTT delta replacement). In a fixed-point regime with data $`(A,P,\tau)`$, every downstream occurrence of an identity/source/constraint delta that belongs to the same coherent chart is replaced by the canonical kernel
+**Definition 15** (Eligible projected-kernel substitution). A downstream identity or source distribution is eligible for substitution only when: (i) it acts on the same Hilbert or bundle domain as $`A`$ and $`P`$; (ii) a selected intertwiner identifies the target variables with that domain; and (iii) the substitution preserves every required symmetry, constraint, support, and algebraic identity. Under those hypotheses the declared model may use
 ``` math
 \delta(x-y)
         \quad\rightsquigarrow\quad
@@ -381,11 +409,11 @@ We can now state the execution rule.
 
 </div>
 
-This is not an arbitrary smoothing prescription. It is determined by the fixed-point data.
+Within the heat/proper-time class this is not an arbitrary smoothing prescription. The eligibility hypotheses, however, are additional physical content and cannot be inferred from functional calculus alone.
 
 <div id="thm:heatunique" class="theorem">
 
-**Theorem 14** (Uniqueness within the heat/proper-time class). *Among positive self-adjoint contraction semigroups generated by the fixed-point operator $`A`$, the one-parameter family $`e^{-\tau A}`$ is uniquely determined by $`A`$. Therefore, once $`P`$ and $`\tau`$ are fixed, the operator $`B_\tau=Pe^{-\tau A}P`$ is unique.*
+**Theorem 16** (Uniqueness within the heat/proper-time class). *Among positive self-adjoint contraction semigroups generated by the fixed-point operator $`A`$, the one-parameter family $`e^{-\tau A}`$ is uniquely determined by $`A`$. Therefore, once $`P`$ and $`\tau`$ are fixed, the operator $`B_\tau=Pe^{-\tau A}P`$ is unique.*
 
 </div>
 
@@ -397,7 +425,7 @@ This is not an arbitrary smoothing prescription. It is determined by the fixed-p
 
 <div class="remark">
 
-*Remark 15*. The theorem does not say that no other regulator can be written down. It says that if the kernel is required to be the heat/proper-time filter generated by the same operator governing MTT stabilization, then the kernel is fixed by the fixed-point data.
+*Remark 17*. The theorem does not say that no other regulator can be written down. It says that if the kernel is required to be the heat/proper-time filter generated by the same operator governing MTT stabilization, then the kernel is fixed by the fixed-point data.
 
 </div>
 
@@ -428,7 +456,7 @@ L_xG_\tau^{\mathrm{MTT}}(x,y)=K_{\mathrm{MTT}}(x,y;\tau).
 
 <div id="prop:green" class="proposition">
 
-**Proposition 16** (Green-function correction). *Assume $`L^{-1}`$ is bounded on the Hilbert space under consideration. Then
+**Proposition 18** (Green-function correction). *Assume $`L^{-1}`$ is bounded on the Hilbert space under consideration. Then
 ``` math
 \left\lVert L^{-1}-G_\tau^{\mathrm{MTT}} \right\rVert
         \le
@@ -451,7 +479,7 @@ On a coherent-band input $`f=Pf`$,
 ``` math
 L^{-1}-L^{-1}B_\tau=L^{-1}(I-B_\tau).
 ```
-The second estimate uses <a href="#thm:sector" data-reference-type="ref+label" data-reference="thm:sector">8</a>. ◻
+The second estimate uses <a href="#thm:sector" data-reference-type="ref+label" data-reference="thm:sector">10</a>. ◻
 
 </div>
 
@@ -461,13 +489,13 @@ The sharp canonical commutator
 ``` math
 [\phi(x),\pi(y)]=i\hbar\delta(x-y)
 ```
-is replaced inside the coherent chart by
+belongs to the symplectic algebra of the field theory. Writing instead
 ``` math
 [\phi_{\mathrm{coh}}(x),\pi_{\mathrm{coh}}(y)]
         =
         i\hbar K_{\mathrm{MTT}}(x,y;\tau).
 ```
-The correction is controlled by the same sector error estimates. This is not loss of locality as arbitrary nonlocality; it is finite coherent-sector locality determined by $`A,P,\tau`$.
+defines a projected or modified symplectic algebra; it is not a consequence of the heat-kernel theorem. A physical use must prove nondegeneracy on the retained quotient, covariance, microcausality, and compatibility with the field equations. Without those checks the formula is only a candidate finite-sector model.
 
 ## Contact vertices
 
@@ -477,13 +505,13 @@ V_\delta^{(n)}(x_1,\ldots,x_n)
         =
         \int_X\prod_{j=1}^n \delta(x-x_j)\,\mathrm{d}x.
 ```
-The fixed-point replacement is
+A finite-overlap candidate is
 ``` math
 V_{\mathrm{MTT}}^{(n)}(x_1,\ldots,x_n;\tau)
         =
         \int_X\prod_{j=1}^n K_{\mathrm{MTT}}(x,x_j;\tau)\,\mathrm{d}x.
 ```
-Thus the contact interaction is not softened by an arbitrary profile; it is softened by the coherent kernel selected by the same fixed-point data.
+At nonzero width this is generally a nonlocal effective interaction. It requires a local parent mediator or an independent EFT, gauge/BRST, and causality analysis before it can replace a local vertex.
 
 ## Measurement effects
 
@@ -491,17 +519,17 @@ The distributional position effect
 ``` math
 |x\rangle\langle x|
 ```
-is replaced by a finite coherent effect with kernel
+suggests a positive finite candidate effect with kernel
 ``` math
 E_x^{\mathrm{MTT}}(y,z;\tau)
         =
         K_{\mathrm{MTT}}(y,x;\tau)K_{\mathrm{MTT}}^\ast(z,x;\tau).
 ```
-The width of the measurement effect is therefore controlled by the proper-time/coherence scale and spectral structure of the fixed-point sector.
+To obtain a measurement model, these effects must form a normalized POVM and must be coupled to a declared apparatus instrument. The projected kernel alone does not supply either requirement.
 
 ## Noise kernels
 
-A temporal fixed-point operator $`A_t`$ with memory scale $`\tau`$ selects the correlation kernel
+If an independently selected temporal operator $`A_t`$ and memory scale $`\tau`$ are supplied, they define the candidate correlation kernel
 ``` math
 C_{\mathrm{MTT}}(t,s)
         =
@@ -511,7 +539,7 @@ rather than an exact white-noise delta. In Markov limits this may approach
 ``` math
 D\delta(t-s),
 ```
-but the finite-memory kernel is the execution-level object.
+but neither $`A_t`$ nor its identification with the internal fixed-point operator follows from the elliptic theorem above.
 
 # Worked example: circle with massive operator
 
@@ -574,15 +602,13 @@ This paper supplies the fixed-point reverse direction:
         \text{finite correction}.
 ```
 
-> **Execution principle.** In any admissible fixed-point chart, replace delta distributions not by arbitrary mollifiers, but by the projected heat/proper-time kernel selected by the fixed-point operator and coherent projector.
+> **Execution principle.** For an eligible same-domain occurrence, use the projected heat/proper-time kernel supplied by the declared realization and retain the target theory’s symmetry, support, and algebra checks as explicit obligations.
 
-This is the point at which the delta dictionary becomes predictive in principle. Once a sector supplies numerical or geometric data for $`A`$, $`P`$, $`\tau`$, and $`\lambda^\ast`$, the corrections to point sources, commutators, contact interactions, measurement effects, and noise kernels are fixed.
+This makes the delta dictionary computational inside a declared sector. Point sources, commutators, contact interactions, measurement effects, and noise kernels are not thereby identified with one another; each requires its own admissible intertwiner and consistency theorem.
 
 # Conclusion
 
-The central problem after the delta–projection dictionary was not whether finite kernels can converge to Dirac deltas. They can. The execution problem was whether MTT selects a specific finite kernel.
-
-In the fixed-point regime, the answer is yes. The fixed-point data determine
+The central mathematical question is whether declared fixed-point data determine a specific projected heat kernel. They do:
 ``` math
 B_\tau=P e^{-\tau A}P
 ```
@@ -592,18 +618,19 @@ K_{\mathrm{MTT}}(x,y;\tau)
         =
         \langle x|Pe^{-\tau A}P|y\rangle.
 ```
-This kernel is smooth for positive proper time, covariant under admissible re-encoding, identity-like on the coherent sector with explicit error bounds, suppresses incoherent modes by the spectral gap, and tends to the Dirac delta only under the idealizing limit of complete bandwidth and vanishing proper-time width.
+This kernel is smooth in the compact elliptic setting, covariant under unitary equivalence, and identity-like on a retained finite band with explicit error bounds. In the harmonic case it reduces exactly to $`P`$. The separate semigroup $`e^{-\tau A}Q`$ is gap-damped. A family with complete bandwidth and vanishing proper time tends to the full identity distribution.
 
 Thus the program is no longer merely:
 ``` math
 \delta=\text{singular limit of some finite object}.
 ```
-It becomes:
+The rigorous conclusion is therefore:
 ``` math
 \boxed{
-        \text{MTT fixed-point data select the finite object.}
+        \text{typed fixed-point data determine a conditional sector kernel.}
         }
 ```
+Promoting that kernel to a physical modification remains a realization-specific source and consistency problem.
 
 <div class="thebibliography">
 

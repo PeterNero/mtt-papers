@@ -10,18 +10,39 @@ abstract: |
   ```
   where $`K_{\mathrm{coh}}`$ is a bounded admissible identity kernel on a retained coherent sector. The mathematical core is elementary but important: for a positive self-adjoint elliptic operator $`L`$, finite spectral projectors and heat-kernel filters produce smooth finite-width sources, smooth responses, finite diagonal values, and distributional convergence to the ordinary Green kernel only in the singular limit. A worked circle model with $`L_m=-\partial_\theta^2+m^2`$ displays the replacement explicitly: $`L_mG_N=K_N`$ and $`L_mG_\tau=H_\tau`$, with the point-source equation recovered only as $`N\to\infty`$ or $`\tau\downarrow0`$. Thus the standard Green function is recovered, but as an ideal endpoint rather than a primitive object.
 
-  Within Modal Triplet Theory (MTT), this supplies the first concrete replacement rule for delta-supported physics. Point particles, point charges, local disturbances, propagator sources, and contact interactions are re-read as downstream zero-width idealizations of finite coherent source kernels. This does not discard standard Green functions; it factors them into two layers: a physically admissible finite-width response and a singular continuum limit. The result provides a rigorous bridge from the delta/projection principle to a usable computational object: the coherent Green function.
+  Within Modal Triplet Theory (MTT), these theorems provide a conditional downstream interface rather than a universal replacement rule. A selected physical realization must still supply $`L`$, the projector or filter, its width, and the map from an internal or Euclidean spectral problem to the claimed external source. It must also prove that covariance, gauge constraints, locality or causal support, and boundary conditions survive. Different finite kernels can share the same sharp limit while giving different finite predictions. The rigorous result is therefore the elliptic response theorem and its singular limit; physical kernel selection remains open.
 author:
 - Peter Nero
-current_version: unversioned
-date: April 2026
-generated_from_main_tex_sha256: be1c419a1346e73e19640a7d75dff26f4078063ed0c49e94618c666739cfe2bd
+current_version: v1
+date: July 2026, Version 1
+generated_from_main_tex_sha256: 55041b3beddd6e57ff9324dceed9c0c51b7e81f4671f5c86bd2c9fe803ee9881
 paper_id: coherent-green-functions-replacing-point-sources-by-adm-98607519
-release_state: not_matched_to_zenodo
+release_state: zenodo_released
+released_version: v1
 title: |
-  Coherent Green Functions:  
-  Replacing Point Sources by Admissible Kernels in Modal Triplet Theory
+  Coherent Green Functions from Declared Projection Kernels
+  Elliptic Results and the MTT Source Boundary
+zenodo_doi: 10.5281/zenodo.21703915
+zenodo_record_id: 21703915
+zenodo_url: "https://zenodo.org/records/21703915"
 ---
+
+# Version 1 Revision Note
+
+Supersedes
+The unversioned manuscript *Coherent Green Functions: Replacing Point Sources by Admissible Kernels in Modal Triplet Theory*.
+
+Reason
+The earlier text correctly proved spectral and heat-kernel limits but treated a declared finite kernel as physically selected and extended compact elliptic conclusions to point particles, retarded propagators, contact interactions, and renormalization without the necessary source and symmetry theorems.
+
+Resolution
+This version retains the spectral mathematics, types the result as an elliptic or Euclidean construction, distinguishes a sector identity from the full identity, and makes covariance, gauge, locality, causal-support, and boundary compatibility explicit gates.
+
+Retained result
+For a supplied positive self-adjoint elliptic $`L`$, finite spectral and heat-filtered Green operators are smooth finite-source responses and converge distributionally to the ordinary Green kernel in the sharp limit.
+
+Remaining boundary
+No theorem here selects the finite kernel or its width from MTT geometry, and the hyperbolic, gauge, and interacting extensions remain separate constructions.
 
 # Purpose and claim discipline
 
@@ -49,7 +70,7 @@ where $`K_{\mathrm{coh}}`$ is the kernel of a bounded coherent projection or adm
 
 ## Non-claims
 
-This paper does not claim that ordinary Green functions are wrong. It does not claim that all point-source methods should be abandoned. It does not compute numerical finite-width corrections for a specific experimental system. Its narrower claim is:
+This paper does not claim that ordinary Green functions are wrong. It does not claim that all point-source methods should be abandoned. It does not compute numerical finite-width corrections for a specific experimental system, select a physical kernel from MTT geometry, or derive a Lorentzian retarded replacement from the compact elliptic calculation. Its narrower claim is:
 
 <div class="center">
 
@@ -471,11 +492,11 @@ The finite kernels are not approximations in a vague philosophical sense. They a
 
 In one dimension the massive Green function itself has a finite diagonal value, so this example should not be used as a model of coincident-point ultraviolet divergence. Its role is narrower and cleaner: it shows explicitly how the point source is replaced by a coherent finite source, and how the ordinary delta source is recovered as a limit. In higher dimensions, the same replacement also regularizes diagonal singularities before the limit is taken.
 
-# MTT interpretation
+# MTT interpretation and source boundary
 
 Within MTT, the coherent projector $`\Pi_{\mathrm{coh}}`$ is not normally an increasing full-space spectral cutoff. It is a sector projector: it selects the admissible coherent sector determined by the fixed-point regime, spectral gap, and admissibility conditions.
 
-Thus $`K_{\mathrm{coh}}`$ should not be confused with a literal approximation to the identity on all of $`L^2(X)`$. It is an identity kernel only inside the retained coherent sector.
+Thus $`K_{\mathrm{coh}}`$ should not be confused with a literal approximation to the identity on all of $`L^2(X)`$. It is an identity kernel only inside the retained coherent sector. Moreover, calling that sector physical requires a selected operator, projector, boundary condition, and intertwiner from the relevant MTT carrier.
 
 <div class="definition">
 
@@ -495,7 +516,7 @@ whenever $`L^{-1}`$ is defined on the sector under consideration.
 
 </div>
 
-The ordinary point-source Green function is recovered only if one idealizes the coherent-sector identity as a full local identity:
+The ordinary point-source Green function is recovered only if one takes a family whose retained sectors exhaust the full domain and whose width tends to zero:
 ``` math
 K_{\mathrm{coh}}(x,y)\leadsto \delta(x-y).
 ```
@@ -503,6 +524,12 @@ K_{\mathrm{coh}}(x,y)\leadsto \delta(x-y).
 <div class="remark">
 
 *Remark 11* (Sector identity versus full identity). The distinction is crucial. A coherent projector may erase many upstream distinctions and still act as the identity on the retained effective variables. Thus $`K_{\mathrm{coh}}`$ is not “almost the identity” on the full upstream space. It is the exact or approximate identity on the downstream admissible sector.
+
+</div>
+
+<div class="remark">
+
+*Remark 12* (Physical compatibility gates). Even when $`K_{\mathrm{coh}}`$ is fixed mathematically, a physical substitution must preserve the structures used by the target theory. For a scalar elliptic problem these include covariance and boundary conditions. For gauge fields they also include the constraint complex and Ward or BRST identities. For Lorentzian propagation they include causal support and wavefront-set conditions. None of these follows from smoothness of the elliptic kernel alone.
 
 </div>
 
@@ -588,7 +615,7 @@ If $`G_{\mathrm{ret}}`$ has future-lightcone support and $`\Pi_{\mathrm{coh}}`$ 
 
 <div class="remark">
 
-*Remark 12* (Scope). A fully rigorous hyperbolic version requires specifying the spacetime function spaces, wavefront-set control, and causal support assumptions. This paper only records the structural replacement. The elliptic and heat-kernel theorems above are the rigorous core.
+*Remark 13* (Scope). A fully rigorous hyperbolic version requires specifying the spacetime function spaces, wavefront-set control, and causal support assumptions. This paper only records the structural replacement. The elliptic and heat-kernel theorems above are the rigorous core.
 
 </div>
 
@@ -596,15 +623,15 @@ If $`G_{\mathrm{ret}}`$ has future-lightcone support and $`\Pi_{\mathrm{coh}}`$ 
 
 The coherent Green-function replacement suggests several concrete diagnostics.
 
-1.  **Softened point sources.** Point-particle or point-charge singularities should be replaced by finite kernels at the coherence scale.
+1.  **Finite-source models.** A supplied extended preparation or source can be represented by a finite kernel; point-source physics is not universally replaced.
 
 2.  **Finite diagonal response.** Coincident-point quantities are finite before the delta limit is taken.
 
-3.  **Modified contact scattering.** Zero-range interactions acquire form factors determined by $`K_{\mathrm{coh}}`$.
+3.  **Modified contact scattering.** A declared nonlocal EFT interaction can acquire form factors determined by $`K_{\mathrm{coh}}`$; this is not implied by the free Green equation.
 
 4.  **Resolution-dependent propagators.** Propagators become $`L^{-1}\Pi_{\mathrm{coh}}`$, not $`L^{-1}`$ on all modes.
 
-5.  **Renormalization reinterpretation.** Divergences track the cost of taking $`K_{\mathrm{coh}}\to\delta`$ too aggressively.
+5.  **Renormalization question.** A finite filter may soften selected integrals, but renormalization, Ward identities, reflection positivity, and Lorentzian unitarity require independent analysis.
 
 # Relation to the delta/projection paper
 
@@ -628,11 +655,11 @@ Thus the Green function is not abandoned. It is reclassified:
 
 # Conclusion
 
-The Dirac delta enters Green-function theory as the ideal point source. MTT suggests that this should not be treated as primitive. The native object is a bounded admissible kernel: a finite coherent identity on the retained sector.
+The Dirac delta enters Green-function theory as the ideal point source. A declared finite kernel gives a legitimate alternative source model and a controlled sharp limit. The mathematics alone does not decide which source is physically realized.
 
 The rigorous theorem is simple: finite spectral Green functions $`G_\Lambda=L^{-1}\Pi_\Lambda`$ and heat-filtered Green functions $`G_\tau=L^{-1}e^{-\tau\Delta}`$ are smooth finite-source responses that converge distributionally to the ordinary Green function only in the singular limit. Their diagonal values are finite before that limit is taken.
 
-This provides the first worked sequel to the delta/projection principle. It turns the slogan
+This provides a worked conditional interface for the delta/projection principle. It turns the mathematical relation
 ``` math
 \delta=\text{singular shadow of projection}
 ```
@@ -643,7 +670,7 @@ LG=\delta
 LG_{\mathrm{coh}}=K_{\mathrm{coh}}.
 ```
 
-The next natural steps are to apply the same replacement to gauge fixing, measurement kernels, and perturbative QFT vertices.
+The next step is not automatic substitution in other theories. It is to derive a selected kernel and prove the required covariance, gauge, causal, and interacting consistency conditions in each target domain.
 
 <div class="thebibliography">
 

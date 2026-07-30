@@ -1,0 +1,62 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T12:54:19+00:00",
+  "mode": "sync",
+  "papers": 4,
+  "ready": 4,
+  "results": [
+    {
+      "draft_id": "21703907",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "d11772163b594f1d24e948d943309b66",
+      "local_pdf_sha256": "0c3237fb0d39ccb2e606b10c3266c17492d03ff8b364c94b7e52f8127306a52c",
+      "paper_id": "canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v1"
+    },
+    {
+      "draft_id": "21703909",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "3570a67b2be9f9c9f7e963196d3ca65c",
+      "local_pdf_sha256": "7f3603caaafc5b03dc54d56851df93d8308f5228bab6b20d0fb0393031c393da",
+      "paper_id": "classical-constraint-deltas-and-microcanonical-shells-a-9f4bdcc1",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v1"
+    },
+    {
+      "draft_id": "21703915",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "bca9da5404b325b6463d510dbbccfcc0",
+      "local_pdf_sha256": "f23a7aa38b881f2302d74e5487ef1cb4b3a557cff7ee223f3262c363d50c9886",
+      "paper_id": "coherent-green-functions-replacing-point-sources-by-adm-98607519",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v1"
+    },
+    {
+      "draft_id": "21703917",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "a73c30018d18bd8f075cc2f4631528ed",
+      "local_pdf_sha256": "6cf25f1b5ed5089d2015799ce16d5e07aa1ed3c618ea0ee4a2584144b1c97386",
+      "paper_id": "gauge-fixing-as-admissible-section-selection-in-modal-t-459e029d",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v1"
+    }
+  ]
+}

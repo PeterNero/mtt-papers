@@ -2,6 +2,106 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.21703916",
+      "created": "2026-07-30T12:54:50.245178+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21703917",
+      "files": [
+        {
+          "checksum": "md5:a73c30018d18bd8f075cc2f4631528ed",
+          "content_url": "https://zenodo.org/api/records/21703917/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 315508
+        }
+      ],
+      "id": "21703917",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21703917",
+      "resource_type": "publication",
+      "title": "Gauge Fixing as Admissible Section Selection in Modal Triplet Theory Faddeev\u2013Popov Determinants, Ghosts, BRST, and Gribov Ambiguity as Projection Geometry",
+      "updated": "2026-07-30T12:54:50.621054+00:00",
+      "version": "v1"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21703914",
+      "created": "2026-07-30T12:54:48.475622+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21703915",
+      "files": [
+        {
+          "checksum": "md5:bca9da5404b325b6463d510dbbccfcc0",
+          "content_url": "https://zenodo.org/api/records/21703915/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 370307
+        }
+      ],
+      "id": "21703915",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21703915",
+      "resource_type": "publication",
+      "title": "Coherent Green Functions from Declared Projection Kernels Elliptic Results and the MTT Source Boundary",
+      "updated": "2026-07-30T12:54:48.787855+00:00",
+      "version": "v1"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21703908",
+      "created": "2026-07-30T12:54:45.853638+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21703909",
+      "files": [
+        {
+          "checksum": "md5:3570a67b2be9f9c9f7e963196d3ca65c",
+          "content_url": "https://zenodo.org/api/records/21703909/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 352779
+        }
+      ],
+      "id": "21703909",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21703909",
+      "resource_type": "publication",
+      "title": "Finite Microcanonical Shells and Their Sharp Constraint Limit Coarea Geometry, Quantitative Bias, and the MTT Source Boundary",
+      "updated": "2026-07-30T12:54:46.320171+00:00",
+      "version": "v1"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21703906",
+      "created": "2026-07-30T12:54:41.649671+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21703907",
+      "files": [
+        {
+          "checksum": "md5:d11772163b594f1d24e948d943309b66",
+          "content_url": "https://zenodo.org/api/records/21703907/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 357017
+        }
+      ],
+      "id": "21703907",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21703907",
+      "resource_type": "publication",
+      "title": "Projected Heat Kernels from MTT Fixed-Point Data Conditional Sector Identities and the Physical-Replacement Boundary",
+      "updated": "2026-07-30T12:54:42.346504+00:00",
+      "version": "v1"
+    },
+    {
       "concept_doi": "10.5281/zenodo.19535234",
       "created": "2026-07-29T08:52:45.657006+00:00",
       "creators": [

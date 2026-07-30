@@ -13,14 +13,18 @@ abstract: |
   and converges to $`A_f(E)/A_1(E)`$. When the two density-of-states functions are locally Lipschitz, an explicit first-order error bound separates shell width, kernel shape, observable variation, and normalization bias. On a symplectic phase space, every shell whose density depends only on $`H`$ is exactly invariant under the Hamiltonian flow; ergodicity is not needed for invariance and is not proved here. Critical energies, noncompact shells, ensemble equivalence, and a physical choice of shell profile require separate hypotheses. In Modal Triplet Theory (MTT), the result supplies a rigorous downstream target: selected geometry may emit a finite energy-tolerance profile, but neither the coarea theorem nor the sharp limit selects that profile or its width.
 author:
 - Peter Nero
-current_version: unversioned
+current_version: v1
 date: July 2026, Version 1
 generated_from_main_tex_sha256: c660d446d9990dfe60a154c43d593b0cabb8c8a69b68557d696623cc88127b81
 paper_id: classical-constraint-deltas-and-microcanonical-shells-a-9f4bdcc1
-release_state: not_matched_to_zenodo
+release_state: zenodo_released
+released_version: v1
 title: |
   Finite Microcanonical Shells and Their Sharp Constraint Limit
   Coarea Geometry, Quantitative Bias, and the MTT Source Boundary
+zenodo_doi: 10.5281/zenodo.21703909
+zenodo_record_id: 21703909
+zenodo_url: "https://zenodo.org/records/21703909"
 ---
 
 # Version 1 Revision Note

@@ -1,6 +1,7 @@
 
 \documentclass[11pt]{article}
 \usepackage{series}
+\usepackage{array}
 
 \hypersetup{
   pdftitle={Gauge Fixing as Admissible Section Selection in Modal Triplet Theory},
@@ -12,7 +13,7 @@
 \title{\textbf{Gauge Fixing as Admissible Section Selection in Modal Triplet Theory}\\
 \large Faddeev--Popov Determinants, Ghosts, BRST, and Gribov Ambiguity as Projection Geometry}
 \author{Peter Nero}
-\date{April 2026}
+\date{July 2026, Version 1}
 
 \newcommand{\A}{\mathcal A}
 \newcommand{\G}{\mathcal G}
@@ -31,8 +32,28 @@
 \begin{abstract}
 Gauge theory contains an explicit version of the projection architecture developed in Modal Triplet Theory (MTT). The full field space \(\A\) contains redundant representatives related by a gauge group \(\G\), while the physical configuration space is the quotient \(\A/\G\). A gauge condition \(G[A]=0\) is therefore not a physical law imposed on the quotient itself, but a local representative section of the quotient map. This paper develops the MTT interpretation of gauge fixing as admissible section selection. The gauge-fixing delta \(\delta(G[A])\) is identified as the singular zero-width limit of a representative-selection kernel, the Faddeev--Popov determinant is the Jacobian of the projection from gauge-orbit coordinates to slice coordinates, ghost fields are quotient-measure bookkeeping variables, BRST cohomology is the algebraic implementation of admissible quotienting, and Gribov ambiguity is the failure of a global admissible section.
 
-The mathematical core is deliberately modest. We first prove a finite-dimensional slice formula showing that the Faddeev--Popov determinant is exactly the transverse projection Jacobian for a local quotient. We then state the corresponding regularized infinite-dimensional functional identity under the usual formal assumptions of gauge-fixed path integration. Finally, we reinterpret these standard structures through the MTT triad: lens structure carries gauge redundancy, nil structure appears in sharp representative selection, and circle structure carries return/conservation bookkeeping. The result is a worked sequel to the delta-projection paper: gauge fixing becomes the cleanest example of a Dirac delta functioning as the singular shadow of admissible projection.
+The mathematical core is deliberately modest. We first prove a finite-dimensional slice formula showing that the Faddeev--Popov determinant is exactly the transverse projection Jacobian for a local quotient. We then state the corresponding regularized infinite-dimensional functional identity under the usual formal assumptions of gauge-fixed path integration. Finally, we give a typed MTT interpretation of these standard structures. The section language is exact, but the assignment of lens, circle, and nil roles is an encoding dictionary rather than a derivation of gauge theory. A gauge section chooses a representative of an orbit; it neither inverts the quotient globally nor recovers a unique ontic configuration. The actual global obstruction depends on the topology and orbit stratification of the declared gauge bundle.
 \end{abstract}
+
+\section*{Version 1 Revision Note}
+\addcontentsline{toc}{section}{Version 1 Revision Note}
+\begin{description}
+\item[Supersedes] The unversioned April 2026 manuscript with the same title.
+\item[Reason] The local-section language was sound, but the text did not
+state sharply enough that a right inverse chooses a representative rather
+than recovering unique ontology, and it treated the MTT triadic dictionary
+as more than an interpretation of standard gauge geometry.
+\item[Resolution] This version separates the rigorous finite-dimensional
+slice theorem, the regulated formal field-theory identity, and the MTT
+encoding.  It records free-action and transversality hypotheses, orbit
+strata and stabilizers, and the genuine global-section obstruction.
+\item[Retained result] Locally, a transverse gauge condition defines a
+representative section and its Faddeev--Popov determinant is the associated
+orbit-to-slice Jacobian.
+\item[Remaining boundary] The paper does not construct a global gauge
+section, a nonperturbative gauge measure, or an MTT-selected BV/BRST
+quantization.
+\end{description}
 
 \seriestagline
 
@@ -102,6 +123,14 @@ such that
 \]
 Equivalently, \(s\) chooses one representative \(A=s([A])\) from each orbit in \(U\).
 \end{definition}
+
+\begin{remark}[A section is not ontic recovery]
+The identity \(\pi\circ s=\id_U\) is a right-inverse relation.  It says that
+the selected representative projects back to the same gauge orbit.  It does
+not make \(\pi\) injective, reconstruct all representatives, or identify
+\(s([A])\) as a unique ontic field configuration.  Different admissible
+sections can encode the same physical orbit.
+\end{remark}
 
 \begin{remark}[MTT reading]
 The quotient projection \(\pi:\A\to\A/\G\) is a lens-type projection. Its fibers are equivalence classes of redundant representatives. Gauge freedom is not additional physical content; it is the visible non-injectivity of the representation map.
@@ -312,7 +341,7 @@ This is not a new gauge theory. It is a reinterpretation of the standard gauge-f
 
 The abstract projection-Jacobian statement becomes especially transparent in the standard Lorenz gauge.
 
-\subsection{Abelian \(U(1)\)}
+\subsection{\texorpdfstring{Abelian \(U(1)\)}{Abelian U(1)}}
 
 Let \(A_\mu\) be an Abelian gauge potential and let
 \[
@@ -381,7 +410,10 @@ Ghosts interact in the non-Abelian case because the projection Jacobian depends 
 \end{remark}
 
 \begin{center}
-\begin{tabular}{p{0.26\textwidth}p{0.28\textwidth}p{0.36\textwidth}}
+\begin{tabular}{
+>{\raggedright\arraybackslash}p{0.26\textwidth}
+>{\raggedright\arraybackslash}p{0.28\textwidth}
+>{\raggedright\arraybackslash}p{0.36\textwidth}}
 \hline
 Case & Faddeev--Popov operator & Interpretation\\
 \hline
@@ -466,13 +498,20 @@ In the present language:
 }
 \]
 
-This is not an accidental technical nuisance. It is a structural warning: the quotient projection may have nontrivial global topology, and no single downstream chart can cover it without ambiguity.
+This is not an accidental technical nuisance. It is a structural warning:
+the quotient projection may have nontrivial global topology, and no single
+downstream chart can cover it without ambiguity.  For a free action this is
+the global-section problem for the principal gauge bundle
+\(\A\to\A/\G\).  When stabilizers occur, the quotient is stratified and the
+principal-bundle picture applies only orbit-type by orbit-type.  The
+Faddeev--Popov operator can also lose invertibility at a Gribov horizon, so a
+local slice theorem cannot be promoted to a global gauge choice.
 
 \begin{remark}[MTT alignment]
 MTT expects reduced descriptions to be local encoding regimes with controlled overlap, not global primitive ontologies. The Gribov problem is therefore a standard gauge-theoretic example of a general MTT principle: representative choice can be locally admissible while globally obstructed.
 \end{remark}
 
-\section{Triadic placement}
+\section{Triadic placement as an encoding dictionary}
 
 The MTT proto-spinorial carrier is written schematically as
 \[
@@ -480,7 +519,9 @@ The MTT proto-spinorial carrier is written schematically as
 \]
 where \(C\) carries return/bookkeeping, \(L\) carries lens redundancy transport, and \(N\) carries nil termination or survivor selection.
 
-Gauge theory maps naturally into this structure:
+The following table is a proposed typed encoding of standard gauge-theory
+objects.  It does not derive the gauge group, BRST differential, or measure
+from the proto-spinor:
 
 \begin{center}
 \begin{tabular}{p{0.28\textwidth}p{0.25\textwidth}p{0.37\textwidth}}
@@ -515,7 +556,9 @@ The present paper gives a practical diagnostic:
 \item Identify the quotient projection.
 \item Identify the local gauge section.
 \item Compute the projection Jacobian.
-\item Replace sharp \(\delta(G[A])\) by a finite admissibility kernel if one wants the MTT-native description.
+\item If a finite representative-selection kernel is introduced, treat it
+as a declared gauge-fixing regularization and verify that the BRST/BV
+identities and gauge-parameter independence survive.
 \item Check whether the local section extends globally; if not, Gribov-type obstruction is expected.
 \end{enumerate}
 
@@ -531,7 +574,13 @@ This suggests several later developments:
 
 \section{Conclusion}
 
-Gauge theory provides the cleanest standard example of the delta-projection principle. The full field space contains redundant representatives; the physical space is a quotient; gauge freedom is uncollapsed projection non-injectivity; gauge fixing chooses a local representative; the gauge-fixing delta is the singular zero-width selection kernel; the Faddeev--Popov determinant is the projection Jacobian; ghosts are quotient-measure bookkeeping variables; BRST cohomology implements admissible quotienting algebraically; and Gribov ambiguity marks the failure of global section choice.
+Gauge theory provides a clean standard example of quotient and section
+geometry.  The full field space contains redundant representatives; the
+physical space is a quotient; gauge fixing chooses a local representative;
+the Faddeev--Popov determinant is the local orbit-to-slice Jacobian; ghosts
+represent that determinant in the perturbative functional formalism; BRST
+cohomology encodes gauge-invariant classes; and Gribov ambiguity obstructs a
+single global section.
 
 Thus the central conclusion is:
 \[
@@ -543,5 +592,30 @@ Gauge fixing is admissible section selection, and Faddeev--Popov is its projecti
 }
 \]
 
-This result strengthens the broader MTT research program. It shows that the delta-projection idea is not merely a metaphor about point sources. It is already present in one of the most mature parts of modern field theory: the mathematics of gauge redundancy and its quotient.
+The MTT contribution is interpretive: its projection and section vocabulary
+can organize these established structures without replacing them.  A finite
+gauge-selection kernel or an MTT-sourced BRST complex remains a separate
+construction, not a consequence of the local slice theorem.
+
+\begin{thebibliography}{9}
+\bibitem{FaddeevPopov1967}
+L.~D. Faddeev and V.~N. Popov,
+\emph{Feynman diagrams for the Yang--Mills field},
+Physics Letters B \textbf{25} (1967), 29--30.
+
+\bibitem{Gribov1978}
+V.~N. Gribov,
+\emph{Quantization of non-Abelian gauge theories},
+Nuclear Physics B \textbf{139} (1978), 1--19.
+
+\bibitem{Singer1978}
+I.~M. Singer,
+\emph{Some remarks on the Gribov ambiguity},
+Communications in Mathematical Physics \textbf{60} (1978), 7--12.
+
+\bibitem{HenneauxTeitelboim1992}
+M. Henneaux and C. Teitelboim,
+\emph{Quantization of Gauge Systems},
+Princeton University Press, 1992.
+\end{thebibliography}
 \end{document}
