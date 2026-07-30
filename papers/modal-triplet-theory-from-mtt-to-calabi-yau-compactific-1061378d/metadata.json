@@ -1,65 +1,98 @@
 {
-  "abstract": "We prove that Modal Triplet Theory (MTT) contains a Calabi\u2013Yau (CY) corner: there exist coherent fixed points whose internal six\u2013manifold is Calabi\u2013Yau and for which the MTT fixed\u2013point projection produces exactly the same ten\u2013dimensional background, worldsheet \\sigma\u2013model, and four\u2013dimensional effective theory as standard CY compactifications. We further show that the additional MTT admissibility constraints\u2014a uniform spectral gap above zero modes, bounded harmonic/projector maps, and commuting modal Laplacians across the three gauge layers\u2014are compatible with (and often automatic on) compact CY backgrounds equipped with Hermitian Yang\u2013Mills bundles. Consequently, MTT does not break CY physics; it selects a thick, well\u2013controlled subset and correlates parameters that ordinary CY model building treats as independent. We then import the full CY machinery (spectra, Yukawas, thresholds, mirror symmetry) and explicitly recast it as functions of MTT parameters, deriving new low\u2013energy correlations. A worked T^6/\\mathbb{Z}_3 resolution example illustrates all checks and parameter maps.",
+  "abstract": "A Calabi–Yau compactification is not specified by a six-dimensional metric alone. It also requires topology, complex and Kähler data, gauge bundles and connections, anomaly cancellation, a supersymmetry convention, and a declared worldsheet or effective-field-theory approximation. This paper asks what Modal Triplet Theory (MTT) presently establishes about that complete object. We define a typed realization map from an upper MTT configuration to a lower Calabi–Yau compactification record and prove the corresponding conditional realization theorem: if one MTT source emits every required row and its reduction factors through the standard compactification functional, then both descriptions give the same declared lower data. This is an exact embedding statement, not a derivation or selection of a unique Calabi–Yau vacuum. We also isolate the analytic conditions under which spectral gaps, harmonic projectors, and commuting modal operators are available. A positive gap and bounded harmonic projector hold for each fixed compact elliptic problem; uniformity over moduli and operator commutation require additional non-collapsing or product hypotheses. A flat six-torus gives an elementary compatibility witness but not realistic four-dimensional phenomenology. The selected q=79 Fu–Yau program is a distinct non-Kähler torsional branch and cannot serve as a proof of a strict Calabi–Yau corner. The outcome is a precise and reusable realization contract, with unique-vacuum selection, moduli stabilization, and phenomenological prediction retained as independent open problems.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "September 7, 2025",
+  "current_version": "v2",
+  "date": "Version 2, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17071246",
-    "created": "2025-09-07T07:29:49.120477+00:00",
+    "created": "2026-07-30T17:09:53.276001+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.17071247",
+    "doi": "10.5281/zenodo.21707791",
     "files": [
       {
-        "checksum": "md5:e08e7ec4faf9de352bda480a8b896831",
-        "content_url": "https://zenodo.org/api/records/17071247/files/Modal_Triplet_Theory__From_MTT_to_Calabi__Yau_Compactifications%20(1).pdf/content",
-        "key": "Modal_Triplet_Theory__From_MTT_to_Calabi__Yau_Compactifications (1).pdf",
-        "size": 323423
+        "checksum": "md5:f020375dbeccdd3876292e264a78648a",
+        "content_url": "https://zenodo.org/api/records/21707791/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 413578
       }
     ],
-    "id": "17071247",
-    "match_kind": "title_or_file",
+    "id": "21707791",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2025-09-07",
-    "record_url": "https://zenodo.org/records/17071247",
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21707791",
     "resource_type": "publication",
-    "title": "Modal Triplet Theory: From MTT to Calabi--Yau Compactifications",
-    "updated": "2025-09-07T07:29:49.466137+00:00",
-    "version": "v1.0"
+    "title": "Modal Triplet Theory and Calabi–Yau Compactification: A Conditional Realization Map and Its Selection Boundary",
+    "updated": "2026-07-30T17:09:53.689116+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "f8634107ddc4b8f2b3c97e7c2db66e3932c2f6cb2821b0bfa2ce7ef27e9c3a16",
+  "main_tex_sha256": "5490709d5571e2621bca3b483faac66dec52cbc36ad7375b68f76d1e4ad47e8c",
   "paper_id": "modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d",
-  "paper_md_sha256": "fd34ae70c21933f887d341812c3b9877900faebbc1e9d81d3ce8e2d2b4d42243",
+  "paper_md_sha256": "8e141bfd2f7b9823766dbcd59fe3f6758b983c3c807ae1fc7047bd60c2fbed14",
   "release_state": "zenodo_released",
-  "result_refs": [],
+  "result_refs": [
+    "hym_wiener_contraction",
+    "literal_cech_witness",
+    "q79_exact_audit",
+    "q79_exact_theorem"
+  ],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "b938e5e4444a524fc423d058d4191d37cdb3876041b6fad3bc20e23f07ad1caa",
+    "selected_revision": true,
+    "superseded_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_Calabi__Yau_Compactifications"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 4287,
+      "bytes": 4255,
       "path": "main.bib",
-      "sha256": "dde0f337a409f4e4e727940727cc9fd3bdbe2265489b763531161a6cb6ebe520"
+      "sha256": "491f391dc6840b6d1ce2eb3a6d46d3b7cc8b48fc81f5827899a2178ce48a244f"
     },
     {
-      "bytes": 20053,
+      "bytes": 32325,
       "path": "main.tex",
-      "sha256": "f8634107ddc4b8f2b3c97e7c2db66e3932c2f6cb2821b0bfa2ce7ef27e9c3a16"
+      "sha256": "5490709d5571e2621bca3b483faac66dec52cbc36ad7375b68f76d1e4ad47e8c"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_Calabi__Yau_Compactifications"
   },
-  "source_tree_sha256": "0e48b81d05f1721e8c048251ccb9ea9d3228f711761d54ea6734ec1205aaa5ec",
-  "title": "Modal Triplet Theory: From MTT to Calabi\u2013Yau Compactifications: Existence, Compatibility, and Phenomenology",
+  "source_tree_sha256": "1697635607534450dc9ac7ab7cb23d7eac538df5f4e8e78a62fdda50f2cbc00b",
+  "title": "Modal Triplet Theory and Calabi–Yau Compactification: A Conditional Realization Map and Its Selection Boundary",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17071246",
+      "created": "2026-07-30T17:09:53.276001+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21707791",
+      "files": [
+        {
+          "checksum": "md5:f020375dbeccdd3876292e264a78648a",
+          "content_url": "https://zenodo.org/api/records/21707791/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 413578
+        }
+      ],
+      "id": "21707791",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21707791",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and Calabi–Yau Compactification: A Conditional Realization Map and Its Selection Boundary",
+      "updated": "2026-07-30T17:09:53.689116+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.17071246",
       "created": "2025-09-07T07:29:49.120477+00:00",

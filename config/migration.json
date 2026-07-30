@@ -43,6 +43,26 @@
       "title": "Modal Triplet Theory and Heterotic Vacuum Selection: What Finite Ansatz Calculations Prove, What Attraction Adds, and What Physical Selection Still Requires"
     },
     {
+      "abstract": "A Calabi-Yau compactification is not specified by a six-dimensional metric alone. It also requires topology, complex and Kahler data, gauge bundles and connections, anomaly cancellation, a supersymmetry convention, and a declared worldsheet or effective-field-theory approximation. This paper asks what Modal Triplet Theory presently establishes about that complete object. We define a typed realization map from an upper MTT configuration to a lower Calabi-Yau compactification record and prove the corresponding conditional realization theorem: if one MTT source emits every required row and its reduction factors through the standard compactification functional, then both descriptions give the same declared lower data. This is an exact embedding statement, not a derivation or selection of a unique Calabi-Yau vacuum. We also isolate the analytic conditions under which spectral gaps, harmonic projectors, and commuting modal operators are available. A positive gap and bounded harmonic projector hold for each fixed compact elliptic problem; uniformity over moduli and operator commutation require additional non-collapsing or product hypotheses. A flat six-torus gives an elementary compatibility witness but not realistic four-dimensional phenomenology. The selected q=79 Fu-Yau program is a distinct non-Kahler torsional branch and cannot serve as a proof of a strict Calabi-Yau corner. The outcome is a precise and reusable realization contract, with unique-vacuum selection, moduli stabilization, and phenomenological prediction retained as independent open problems.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d",
+      "path": "papers/modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d",
+      "result_refs": [
+        "hym_wiener_contraction",
+        "literal_cech_witness",
+        "q79_exact_audit",
+        "q79_exact_theorem"
+      ],
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_Calabi__Yau_Compactifications",
+      "superseded_project": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_Calabi__Yau_Compactifications",
+      "title": "Modal Triplet Theory and Calabi-Yau Compactification: A Conditional Realization Map and Its Selection Boundary"
+    },
+    {
       "abstract": "We give a typed, conditional formulation of Modal Triplet Theory as a theory of reduced description. A representative section, an exact upper decoder, autonomous reduced evolution, and merger of effective states solve four different mathematical problems; none follows merely from noninjectivity of a projection. We prove the factor-through criterion for autonomous descent, a finite-diameter obstruction for a genuinely contractive reduced self-map, exact basin-local fixed-point results, and controlled approximate-orbit estimates. Admissibility boundaries are defined by explicit margins and section or projector conditioning rather than by assuming the desired obstruction. The encoding atlas and its relations are consequently local and conditional. Probability, irreversibility, physical time, and any concrete physical realization require their own measure, evolution, and source hypotheses.",
       "authors": [
         "Peter Nero"

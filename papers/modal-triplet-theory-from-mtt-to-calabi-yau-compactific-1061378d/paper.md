@@ -1,255 +1,459 @@
 ---
 abstract: |
-  We prove that Modal Triplet Theory (MTT) contains a Calabi–Yau (CY) corner: there exist coherent fixed points whose internal six–manifold is Calabi–Yau and for which the MTT fixed–point projection produces exactly the same ten–dimensional background, worldsheet $`\sigma`$–model, and four–dimensional effective theory as standard CY compactifications. We further show that the additional MTT admissibility constraints—a uniform spectral gap above zero modes, bounded harmonic/projector maps, and commuting modal Laplacians across the three gauge layers—are compatible with (and often automatic on) compact CY backgrounds equipped with Hermitian Yang–Mills bundles. Consequently, MTT does not “break” CY physics; it selects a thick, well–controlled subset and correlates parameters that ordinary CY model building treats as independent. We then import the full CY machinery (spectra, Yukawas, thresholds, mirror symmetry) and explicitly recast it as functions of MTT parameters, deriving new low–energy correlations. A worked $`T^6/\mathbb{Z}_3`$ resolution example illustrates all checks and parameter maps.
+  A Calabi–Yau compactification is not specified by a six-dimensional metric alone. It also requires topology, complex and Kähler data, gauge bundles and connections, anomaly cancellation, a supersymmetry convention, and a declared worldsheet or effective-field-theory approximation. This paper asks what Modal Triplet Theory (MTT) presently establishes about that complete object. We define a typed realization map from an upper MTT configuration to a lower Calabi–Yau compactification record and prove the corresponding conditional realization theorem: if one MTT source emits every required row and its reduction factors through the standard compactification functional, then both descriptions give the same declared lower data. This is an exact embedding statement, not a derivation or selection of a unique Calabi–Yau vacuum. We also isolate the analytic conditions under which spectral gaps, harmonic projectors, and commuting modal operators are available. A positive gap and bounded harmonic projector hold for each fixed compact elliptic problem; uniformity over moduli and operator commutation require additional non-collapsing or product hypotheses. A flat six-torus gives an elementary compatibility witness but not realistic four-dimensional phenomenology. The selected $`q=79`$ Fu–Yau program is a distinct non-Kähler torsional branch and cannot serve as a proof of a strict Calabi–Yau corner. The outcome is a precise and reusable realization contract, with unique-vacuum selection, moduli stabilization, and phenomenological prediction retained as independent open problems.
 author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v1.0
-date: September 7, 2025
-generated_from_main_tex_sha256: f8634107ddc4b8f2b3c97e7c2db66e3932c2f6cb2821b0bfa2ce7ef27e9c3a16
+current_version: v2
+date: Version 2, July 2026
+generated_from_main_tex_sha256: 5490709d5571e2621bca3b483faac66dec52cbc36ad7375b68f76d1e4ad47e8c
 paper_id: modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  **Modal Triplet Theory: From MTT to Calabi–Yau Compactifications:  
-  Existence, Compatibility, and Phenomenology**
-zenodo_doi: 10.5281/zenodo.17071247
-zenodo_record_id: 17071247
-zenodo_url: "https://zenodo.org/records/17071247"
+  Modal Triplet Theory and Calabi–Yau Compactification:
+  A Conditional Realization Map and Its Selection Boundary
+zenodo_doi: 10.5281/zenodo.21707791
+zenodo_record_id: 21707791
+zenodo_url: "https://zenodo.org/records/21707791"
 ---
 
-# Introduction
+# Revision note: Version 2
 
-#### Aim.
+<div class="description">
 
-MTT provides a ten–dimensional geometric framework in which four–dimensional physics arises from a coherent fixed point of a curvature–gap flow on a triplet of orthogonal internal bundles and a bounded projection to a coherent sector. We ask whether the familiar Calabi–Yau compactifications lie inside this framework and, if so, whether the extra MTT constraints refine rather than obstruct that class.(see Nero MTT Foundations ).
+Version 2 supersedes Version 1 and its assertion that MTT had already proved and selected a Calabi–Yau corner with the same worldsheet theory and four-dimensional phenomenology as a standard compactification.
 
-#### Contributions.
+The former paper treated vanishing torsion classes as though MTT had derived them, inferred a unique compactification from compatibility conditions, and used a smooth metric path to change Lens–Nil topology into torus topology. It also asserted generic commutation of bundle Laplacians, imported worldsheet and low-energy data without their source assumptions, and described an omitted $`T^6/\mathbb Z_3`$ calculation as a worked example.
 
-(C1) *Existence of a CY corner (Theorems <a href="#thm:cy-vanishW" data-reference-type="ref" data-reference="thm:cy-vanishW">1</a>–<a href="#thm:cy-constructive" data-reference-type="ref" data-reference="thm:cy-constructive">3</a>).* There exist MTT parameter loci (vanishing torsion classes, $`H=0`$, constant dilaton) with CY internal geometry via an abstract SU(3)–structure route and a constructive torus/orbifold resolution route.  
-(C2) *Compatibility of MTT constraints on CY (Theorems <a href="#thm:gap" data-reference-type="ref" data-reference="thm:gap">5</a>-<a href="#thm:commute" data-reference-type="ref" data-reference="thm:commute">7</a>).* On compact CYs with bounded geometry and HYM bundles, SA.1 (positive spectral gap), SA.4 (bounded harmonic/projector), and commuting Laplacians hold on thick regions.  
-(C3) *Indistinguishability of physics at the CY corner (Theorems <a href="#thm:ws-eq" data-reference-type="ref" data-reference="thm:ws-eq">9</a>–<a href="#thm:eft-eq" data-reference-type="ref" data-reference="thm:eft-eq">10</a>).* The worldsheet CFT and 4D EFT coincide with standard CY compactifications.  
-(C4) *Import of CY machinery (Sec. <a href="#sec:import" data-reference-type="ref" data-reference="sec:import">6</a>).* Parameter maps express CY data as MTT functions, yielding correlations among couplings and hierarchies.
+This revision replaces those claims with a typed realization contract. It separates lower Calabi–Yau existence, heterotic bundle and anomaly data, worldsheet completion, four-dimensional reduction, moduli stabilization, and MTT source selection. The spectral statements are restricted to their valid fixed-background or uniformly controlled-family forms, and operator commutation is proved only for a genuine product factorization.
 
-# Preliminaries: MTT, SU(3)–structure, and admissibility
+Calabi–Yau geometry is retained as a legitimate lower realization target. Standard Ricci-flat, HYM, spectral, cohomological, and dimensional-reduction machinery remains available once its full hypotheses are supplied.
 
-## MTT internal geometry and admissibility
-
-The internal sector consists of three orthogonal bundles $`B_1,B_2,B_3`$ in a six–manifold $`X_6`$ with block–diagonal metric and commuting scalar Laplacians. The joint projector $`\Pi=\Pi_{B_1}\Pi_{B_2}\Pi_{B_3}`$ maps to the coherent sector. Standing assumptions (SA): SA.1 (uniform spectral gap $`\lambda_\ast>0`$); SA.2 (well–posedness/smoothing); SA.3 (compact/condensing); SA.4 (bounded projector).
-
-#### Convention on eigenvalues.
-
-Throughout, $`\Delta\!\ge 0`$ denotes the (scalar or bundle) Laplacian with lowest eigenvalue $`\lambda_0=0`$ on constants (or parallel sections). We write $`\lambda_1(\Delta)`$ for the *first nonzero* eigenvalue. SA.1 refers to the existence of a uniform gap $`\lambda_1(\Delta)\ge \lambda_\ast>0`$ above the zero modes.
-
-## SU(3)–structure and torsion classes
-
-An SU(3)–structure $`(J,\Omega)`$ on $`X_6`$ yields torsion classes $`W_1,\ldots,W_5`$ from the decompositions $`dJ`$ and $`d\Omega`$; vanishing torsion ($`W_i=0`$) is equivalent to $`X_6`$ being Kähler and Ricci–flat (Calabi–Yau). (see Nero FP6 )
-
-## HYM bundles, Laplacians, and projectors
-
-On a holomorphic bundle $`E\to X`$ with unitary connection $`\nabla`$, the HYM conditions are $`F^{0,2}=0`$ and $`J\!\lrcorner F=0`$. Elliptic theory on compact bounded–geometry manifolds ensures boundedness of the Hodge projector $`P_H`$ on Sobolev scales.
-
-# Existence of a Calabi–Yau corner inside MTT
-
-## Abstract SU(3)–structure route
-
-<div id="thm:cy-vanishW" class="theorem">
-
-**Theorem 1** (CY locus via vanishing torsion classes). *If the SU(3)–structure $`(J(\theta),\Omega(\theta))`$ induced by MTT parameters $`\theta`$ obeys $`W_i(\theta_0)=0`$ for $`i=1,\dots,5`$ with $`H(\theta_0)=0`$ and constant dilaton, then $`(X_6;J(\theta_0),\Omega(\theta_0))`$ is Calabi–Yau, and the MTT fixed point reproduces a standard CY background.*
+No current MTT theorem selects a unique Calabi–Yau topology, complex structure, Kähler class, stable visible–hidden bundle pair, worldsheet CFT, or stabilized four-dimensional vacuum. The selected $`q=79`$ physical Hull–Strominger endpoint remains a separate open construction.
 
 </div>
 
-<div class="remark">
+# The question and the corrected answer
 
-**Remark 2**. *In layered MTT geometries, $`W_i`$ are analytic in small warp/twist parameters; setting warps and nil twists to zero and aligning complex frames yields $`W_i=0`$ (explicit checks in the torus/orbifold class).*
+## Why Calabi–Yau geometry is a natural target
 
-</div>
+Compact Calabi–Yau threefolds organize a large and mathematically controlled class of ten-to-four-dimensional string compactifications. Their complex geometry supports holomorphic bundles and cohomological spectrum calculations; Yau’s theorem supplies a Ricci-flat Kähler metric in each chosen Kähler class; and dimensional reduction turns the chosen geometric record into a four-dimensional effective theory .
 
-## Constructive torus/orbifold resolution route
+MTT is organized differently. It begins with an upper carrier, admissibility conditions, projection or decoding maps, and fixed-point dynamics. The natural question is therefore not whether the word “Calabi–Yau” can be attached to an MTT parameter limit. It is whether one selected upper object emits the complete lower record needed by a compactification and whether the declared reduction respects that record.
 
-<div id="thm:cy-constructive" class="theorem">
+## What this paper establishes
 
-**Theorem 3** (Constructive CY corner). *There exist MTT parameter choices (vanishing warps/twists) for which $`X_6`$ is $`T^6`$ or a crepant resolution $`\hat X_6`$ of $`T^6/\Gamma`$ with $`\Gamma\subset SU(3)`$. Then $`(J,\Omega)`$ is torsion–free and $`(X_6,g)`$ is CY. In the torus limit the Laplacian splits into commuting blocks; commutation persists on the resolved CY.*
+This paper owns three limited results.
 
-</div>
+1.  It defines the complete lower record that an MTT-to-Calabi–Yau map must emit.
 
-## HYM bundles on the CY corner
+2.  It proves the conditional realization statement obtained when every row of that record and the reduction factorization are supplied.
 
-<div id="prop:hym-split" class="proposition">
+3.  It identifies which common MTT analytic requirements are automatic for a fixed compact elliptic problem and which require extra uniformity or product assumptions.
 
-**Proposition 4**. *Let $`E=E_1\otimes E_2\otimes E_3`$ with HYM $`\nabla_i`$ on a CY $`(X,g)`$. Then $`\nabla=\nabla_1\otimes 1\otimes 1+
-1\otimes \nabla_2\otimes 1+1\otimes 1\otimes \nabla_3`$ is HYM on $`E`$.*
+The result is a compatibility and bookkeeping theorem. It does not construct the missing MTT source or choose one point in the Calabi–Yau landscape.
 
-</div>
+## Logical dependency map
 
-# Compatibility of MTT constraints on CY
-
-## SA.1: Spectral gap on compact CYs
-
-<div id="thm:gap" class="theorem">
-
-**Theorem 5** (Positive spectral gap; uniform on thick regions). *On a compact CY $`(X,g)`$, the first nonzero eigenvalue $`\lambda_1(\Delta)`$ of the (scalar) Laplacian is positive. On bounded–geometry families ($`|{\rm Rm}|\le K_0`$, $`{\rm inj}\ge \iota_0>0`$, $`{\rm diam}\le D_0`$) one has a uniform lower bound $`\lambda_1\ge c(K_0,\iota_0,D_0)>0`$ (Cheeger–Buser).*
-
-</div>
-
-*Proof sketch.* Positivity of $`\lambda_1`$ on compact manifolds is standard; Cheeger’s inequality $`\lambda_1\ge h^2/4`$ and Buser’s converse control $`\lambda_1`$ by the isoperimetric constant $`h`$. Uniform positivity on bounded-geometry families ($`|{\rm Rm}|\le K_0`$, $`{\rm inj}\ge\iota_0`$, $`{\rm diam}\le D_0`$) follows from uniform isoperimetric bounds. (see Cheeger , Buser , and Taylor ) $`\square`$
-
-## SA.4: Bounded Hodge projector
-
-<div id="thm:proj" class="theorem">
-
-**Theorem 6** (Boundedness of the harmonic projector). *On compact bounded–geometry CYs, $`P_H:H^s\to H^s`$ is bounded for all $`s\in\mathbb{R}`$.*
-
-</div>
-
-*Proof sketch.* On compact bounded-geometry manifolds, elliptic regularity and the pseudodifferential parametrix for $`\Delta`$ imply that the Green operator $`G=\Delta^{-1}`$ is bounded $`H^{s-2}\!\to H^s`$ and $`P_H=I-\Delta G`$ is bounded $`H^s\!\to H^s`$ for all $`s`$; see . $`\square`$
-
-## Commuting modal Laplacians
-
-<div id="thm:commute" class="theorem">
-
-**Theorem 7** (Commuting bundle Laplacians for split HYM). *Let $`(E_i,\nabla_i)`$ be Hermitian bundles with unitary connections on $`(X,g)`$, and $`E=\bigotimes_{i=1}^3 E_i`$ with product metric/connection $`\nabla=\sum_i 1\otimes\cdots\otimes \nabla_i \otimes\cdots\otimes 1`$. Write $`\Delta_i=\nabla_i^*\nabla_i`$ acting as $`1\otimes\cdots\otimes\Delta_i\otimes\cdots\otimes 1`$ on sections of $`E`$. Then $`\Delta_i`$ and $`\Delta_j`$ act on different tensor factors and commute on $`C^\infty(E)`$, hence on the $`L^2`$ domain closure. Therefore the joint spectral projector $`\Pi=\Pi_1\Pi_2\Pi_3`$ is well-defined and bounded on Sobolev scales.*
-
-</div>
-
-<div class="remark">
-
-**Remark 8**. *In torus/orbifold CYs with block metrics, the scalar Laplacian splits $`\Delta=\Delta_1+\Delta_2+\Delta_3`$ with $`[\Delta_i,\Delta_j]=0`$, giving a commuting structure also on functions.*
-
-</div>
-
-# Indistinguishability of physics at the CY corner
-
-## Worldsheet
-
-<div id="thm:ws-eq" class="theorem">
-
-**Theorem 9** (Worldsheet equivalence). *At the CY locus with $`H=0`$ and constant dilaton, the MTT worldsheet projection produces the same Polyakov/RNS action and BRST/CFT data as in standard CY compactification. *Reference.* For $`H=0`$ and $`SU(3)`$ holonomy, the $`(2,2)`$ SCFT background and BRST structure coincide with standard CY compactification; see e.g. .*
-
-</div>
-
-## 4D effective theory
-
-<div id="thm:eft-eq" class="theorem">
-
-**Theorem 10** (4D EFT equivalence). *Dimensional reduction on the CY locus yields the same 4D massless spectrum, Kähler potential, gauge kinetic functions, and Yukawa couplings as standard CY compactifications with the same HYM bundle and moduli.*
-
-</div>
-
-# Importing CY machinery as MTT functions
-
-## Parameter map
-
-Let $`\Theta_{\rm MTT}`$ denote MTT parameters (gap scales, block volumes $`v_i`$, discrete lens/orbifold data, warp/twist). At the CY corner:
+The corrected order is
 ``` math
-\Theta_{\rm MTT}\longmapsto
-\begin{cases}
-\text{K\"ahler moduli }t_A=\int_{\Sigma_A}\!J,\\
-\text{Complex moduli }z_\alpha\text{ from periods of }\Omega,\\
-\text{Bundle moduli }u_I\text{ (HYM).}
-\end{cases}
+\begin{split}
+\text{selected upper MTT state}
+&\longrightarrow \text{typed lower geometric record}\\
+&\longrightarrow \text{Calabi--Yau and bundle equations}\\
+&\longrightarrow \text{worldsheet completion at a declared order}\\
+&\longrightarrow \text{four-dimensional reduction}\\
+&\longrightarrow \text{stabilized vacuum and observables}.
+\end{split}
 ```
-Volume combinations of blocks give $`t_A(\Theta_{\rm MTT})`$.
+An implication may be used only after its own hypotheses have been checked. In particular, a Ricci-flat metric does not choose a bundle, a bundle does not by itself define an exact conformal field theory, and a massless four-dimensional spectrum does not stabilize its moduli.
 
-## Kähler potential, prepotential, special geometry
+# The lower object that must be realized
 
-With $`J=\sum_A t_A\omega_A`$ and $`\kappa_{ABC}=\int\omega_A\wedge\omega_B\wedge\omega_C`$, $`F(t)=\tfrac{1}{6}\kappa_{ABC}t_At_Bt_C+\cdots`$, $`K=-\log\!\left(\mathrm{i}\int\Omega\wedge\bar\Omega\right)`$, so special geometry is inherited as functions of $`\Theta_{\rm MTT}`$.
+## Geometric Calabi–Yau datum
 
-## Gauge kinetic functions
+<div id="def:cy-record" class="definition">
 
-For $`\{ \omega_a\}`$ a basis, $`f_{ab}=\frac{1}{2\kappa_{10}^2}\int\omega_a\wedge\!\ast\omega_b`$ becomes $`f_{ab}(\Theta_{\rm MTT})`$; block volumes correlate entries.
+**Definition 1** (Geometric Calabi–Yau record). A geometric Calabi–Yau record in complex dimension three is
+``` math
+\mathcal C_{\mathrm{geom}}
+  =(X,I,\Omega,[\omega],g),
+```
+where $`X`$ is a compact connected smooth six-manifold, $`I`$ is an integrable complex structure, $`\Omega`$ is a nowhere-vanishing holomorphic $`(3,0)`$-form, $`[\omega]`$ is a Kähler class, and $`g`$ is the Ricci-flat Kähler metric in that class. We use “Calabi–Yau” in the inclusive sense $`\operatorname{Hol}(g)\subseteq SU(3)`$; exact $`SU(3)`$-holonomy is a separate condition when four-dimensional $`N=1`$ supersymmetry rather than an enhanced theory is intended.
+
+</div>
+
+For a fixed compact Kähler manifold with $`c_1(X)=0`$, Yau’s theorem gives a unique Ricci-flat Kähler metric in each fixed Kähler class . This is not uniqueness of the manifold, complex structure, or Kähler class. Those choices vary in families and can change the resulting physics.
+
+An equivalent differential-geometric presentation uses an $`SU(3)`$ structure $`(\omega,\Omega)`$. If
+``` math
+\mathrm d\omega=0,\qquad \mathrm d\Omega=0,
+```
+with the usual algebraic compatibility and positivity conditions, then the structure is torsion-free and the metric has holonomy contained in $`SU(3)`$. The vanishing of intrinsic torsion is a test on a supplied structure; it does not show that MTT has emitted such a structure.
+
+## Heterotic data are additional
+
+For the heterotic interpretation emphasized in the MTT corpus, the lower record must be enlarged to
+``` math
+\mathcal C_{\mathrm{het}}=
+(X,I,\Omega,\omega,g;
+ V_{\mathrm{vis}},A_{\mathrm{vis}};
+ V_{\mathrm{hid}},A_{\mathrm{hid}};
+ \nabla,H,\Phi,\mathcal G_B).
+```
+Here $`V_{\mathrm{vis}}`$ and $`V_{\mathrm{hid}}`$ are holomorphic gauge bundles, $`A_{\mathrm{vis}}`$ and $`A_{\mathrm{hid}}`$ are unitary connections, $`\nabla`$ is a declared connection on $`TX`$, $`H`$ is the three-form flux, $`\Phi`$ is the dilaton, and $`\mathcal G_B`$ denotes the global $`B`$-field or gerbe data.
+
+In the strict unwarped Calabi–Yau limit one normally imposes
+``` math
+H=0,\qquad \mathrm d\Phi=0,\qquad
+F_a^{0,2}=0,\qquad F_a\wedge\omega^2=0
+\quad(a=\mathrm{vis},\mathrm{hid}),
+```
+together with the anomaly condition
+``` math
+0=\mathrm dH=\frac{\alpha'}4
+\left(\operatorname{tr}R_\nabla\wedge R_\nabla
+-\operatorname{tr}F_{\mathrm{vis}}\wedge F_{\mathrm{vis}}
+-\operatorname{tr}F_{\mathrm{hid}}\wedge F_{\mathrm{hid}}\right)
+```
+in one fixed trace convention, possibly modified by a declared five-brane class. A topological equality of second Chern classes is necessary in the usual setting but does not automatically identify the differential four-form representatives.
+
+The Donaldson–Uhlenbeck–Yau correspondence supplies HYM connections on slope-polystable holomorphic bundles; it does not turn an arbitrary smooth bundle into a supersymmetric gauge background . The visible and hidden bundles, their stability chambers, and the tangent-connection convention must therefore be part of the input or of a separate derivation.
+
+## Worldsheet and effective-theory rows
+
+Target-space supergravity equations are not identical to an exact worldsheet construction. A heterotic model must additionally specify the sigma-model field content, gauge bundle, anomaly cancellation, GSO projection, modular invariance, and the perturbative order at which conformal invariance is claimed. The standard embedding has a familiar $`(2,2)`$ description; general stable bundles lead instead to $`(0,2)`$ models. Equality of target metrics alone does not prove equality of the complete CFT.
+
+Likewise, a four-dimensional theory requires a declared reduction scheme, normalizations, quantum corrections, and an energy range. Its massless spectrum depends on bundle-valued cohomology, not only on the Hodge numbers of $`X`$. Its couplings depend on normalized modes and moduli. Stabilizing those moduli is a further dynamical problem .
+
+<div id="tab:rows">
+
+| Row | Data or certificate required |
+|:---|:---|
+| Topology | Compact complex threefold, canonical bundle and global quotient or resolution data. |
+| Metric | Kähler class and its Ricci-flat representative; exact holonomy if required. |
+| Gauge | Holomorphic visible and hidden bundles, stability chamber, HYM connections and structure-group embedding. |
+| Anomaly | One trace convention, tangent connection, differential Bianchi identity and global $`B`$-field data. |
+| Supersymmetry | Declared ten-dimensional theory, spinors, flux/dilaton regime and perturbative order. |
+| Worldsheet | CFT or sigma-model completion, anomalies, GSO and modular data. |
+| Four dimensions | Reduction functional, normalized zero modes, corrections and validity scale. |
+| Stabilization | Potential or dynamics fixing the relevant geometric and bundle moduli. |
+| MTT source | One selected upper carrier that emits all preceding rows and preserves their connections under reduction. |
+
+The rows that were conflated in Version 1.
+
+</div>
+
+# The MTT realization contract
+
+## Typed source and reduction maps
+
+Let $`\mathcal U_{\mathrm{MTT}}`$ be a declared upper configuration space and let
+``` math
+\mathcal R_{\mathrm{CY}}:\mathcal U_{\mathrm{MTT}}\dashrightarrow
+\mathcal M_{\mathrm{CY}}
+```
+be a possibly partial map into the space of records listed in <a href="#tab:rows" data-reference-type="ref+label" data-reference="tab:rows">1</a>. The map is typed: it must say which upper fields produce the complex structure, Kähler form, bundles, connections, flux, dilaton, and global data. Isomorphic bundles without an identified connection-preserving map are not yet the same physical row.
+
+Let $`\mathcal D_{\mathrm{std}}`$ denote a standard compactification or dimensional-reduction functional on its domain, and let $`\mathcal D_{\mathrm{MTT}}`$ be the lower description assigned by MTT. The factorization condition is
+``` math
+\mathcal D_{\mathrm{MTT}}
+=\mathcal D_{\mathrm{std}}\circ\mathcal R_{\mathrm{CY}}
+\quad\text{on a declared domain } \mathcal U_0\subseteq\mathcal U_{\mathrm{MTT}}.
+```
+This equation is the precise replacement for the old phrase “MTT produces exactly the same physics.”
+
+<div id="def:complete-realization" class="definition">
+
+**Definition 2** (Complete MTT–CY realization). An upper state $`u_\ast\in\mathcal U_0`$ is a complete MTT–CY realization at a declared perturbative order if:
+
+1.  $`\mathcal R_{\mathrm{CY}}(u_\ast)`$ is defined and supplies every required row of <a href="#tab:rows" data-reference-type="ref+label" data-reference="tab:rows">1</a>;
+
+2.  the geometric, HYM, anomaly, and supersymmetry equations hold in one common convention on that one record;
+
+3.  the worldsheet and effective-theory claims are restricted to the orders for which their completion data have been supplied; and
+
+4.  the factorization equation for $`\mathcal D_{\mathrm{MTT}}`$ holds at $`u_\ast`$.
+
+</div>
+
+<div id="thm:conditional-realization" class="theorem">
+
+**Theorem 3** (Conditional Calabi–Yau realization). *If $`u_\ast`$ satisfies <a href="#def:complete-realization" data-reference-type="ref+label" data-reference="def:complete-realization">2</a>, then $`\mathcal R_{\mathrm{CY}}(u_\ast)`$ is a Calabi–Yau compactification record at the declared order, and every observable in the domain of $`\mathcal D_{\mathrm{std}}`$ satisfies
+``` math
+\mathcal D_{\mathrm{MTT}}(u_\ast)
+=\mathcal D_{\mathrm{std}}\!\left(\mathcal R_{\mathrm{CY}}(u_\ast)\right).
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The first two hypotheses place the lower record in the domain of the standard compactification functional. The third fixes the approximation level and prevents a target-space solution from being promoted to an exact worldsheet statement. The fourth hypothesis is precisely the displayed identity. No existence or uniqueness assertion beyond the supplied record is used. ◻
+
+</div>
+
+<div class="remark">
+
+*Remark 4* (Why the theorem matters). The theorem is intentionally conditional. Its value is that it identifies the exact upstream construction that would turn compatibility into a derivation. Merely finding parameters for which a written torsion class vanishes does not satisfy the source-map or factorization rows.
+
+</div>
+
+## What realization does not imply
+
+Even a complete realization does not by itself show:
+
+- that the realized topology or bundle is unique;
+
+- that the corresponding fixed point attracts generic initial data;
+
+- that a preparation or branch law selects it physically;
+
+- that all moduli are stabilized; or
+
+- that its low-energy parameters agree with experiment.
+
+These are higher rungs of the selection ladder developed in the companion heterotic-selection paper . They are not reproved here.
+
+# Analytic compatibility: what is automatic and what is not
+
+## A fixed compact background
+
+<div id="prop:fixed-spectrum" class="proposition">
+
+**Proposition 5** (Fixed-background spectral admissibility). *Let $`L`$ be a nonnegative self-adjoint elliptic operator of Laplace type on a Hermitian vector bundle over a fixed compact manifold. Then $`L`$ has discrete spectrum with finite-dimensional kernel,
+``` math
+\lambda_\ast
+=\min\bigl(\operatorname{Spec}(L)\setminus\{0\}\bigr)>0,
+```
+and the orthogonal projector $`P_{\operatorname{Ker}L}`$ extends boundedly on every Sobolev space $`H^s`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Compact resolvent gives a discrete spectrum of finite multiplicity with no finite accumulation point. Elliptic regularity makes the kernel smooth and finite dimensional. The spectral projector is therefore smoothing of finite rank and is bounded on all Sobolev scales. ◻
+
+</div>
+
+This proposition supports a fixed-background MTT gap and projector check. It does not supply one numerical gap uniformly over all complex structures, Kähler classes, bundle moduli, or degenerating metrics.
+
+## Uniformity over a family
+
+For a parameter family $`L_t`$, a uniform bound $`\inf_t\lambda_\ast(L_t)>0`$ requires a controlled parameter domain. Typical sufficient hypotheses include precompact bounded geometry, uniformly elliptic coefficients, fixed operator domain, and no jump in kernel dimension. Degeneration, collapse, or an eigenvalue crossing zero destroys the claimed uniform constant. Thus a “thick region” must be specified and certified; compactness of each fiber separately is not enough.
+
+## When modal Laplacians commute
+
+<div id="lem:product-commutation" class="lemma">
+
+**Lemma 6** (Exact product commutation). *Let
+``` math
+X=X_1\times X_2\times X_3,\qquad
+E=E_1\boxtimes E_2\boxtimes E_3
+```
+carry product metrics and product connections. On the Hilbert tensor product, define
+``` math
+L_1=L_{E_1}\otimes I\otimes I,\quad
+L_2=I\otimes L_{E_2}\otimes I,\quad
+L_3=I\otimes I\otimes L_{E_3}.
+```
+Then the self-adjoint closures of $`L_i`$ strongly commute, their spectral projectors commute, and the product Laplacian is
+``` math
+L_E=L_1+L_2+L_3.
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Each operator acts on a different tensor factor. Their spectral measures are tensor products with the identity measures on the other factors, so the spectral projections commute. The product formula follows on the algebraic tensor core and extends to the self-adjoint closure. ◻
+
+</div>
+
+This lemma does not apply to three arbitrary connections over the same base. For a tensor-product bundle on one manifold, covariant derivatives act along the same tangent directions and the rough Laplacian generally contains mixed terms. Commutation must then be calculated, not inferred from notation. Moreover, resolving an orbifold usually destroys exact product factorization even when a torus limit had it.
+
+## HYM compatibility is conditional
+
+If holomorphic bundles $`E_i`$ are HYM in one Kähler chamber, their tensor product connection has curvature
+``` math
+F_{E_1\otimes E_2}
+=F_{E_1}\otimes I+I\otimes F_{E_2}.
+```
+Its contracted curvature is the sum of the two central HYM constants. This is a useful construction, but it does not establish stability, the desired structure group, anomaly cancellation, or a visible-sector index. Those remain separate rows.
+
+# An exact compatibility witness and its limits
+
+## The flat six-torus
+
+Let
+``` math
+X=T^2_1\times T^2_2\times T^2_3
+```
+with complex coordinates $`z^1,z^2,z^3`$,
+``` math
+\omega=\frac{\mathrm i}{2}\sum_{a=1}^3\mathrm dz^a\wedge\mathrm d\bar z^a,
+\qquad
+\Omega=\mathrm dz^1\wedge\mathrm dz^2\wedge\mathrm dz^3.
+```
+Then $`\mathrm d\omega=\mathrm d\Omega=0`$, the product metric is flat, and the scalar Laplacian splits into three strongly commuting factors. With trivial flat visible, hidden, and tangent connections and $`H=0`$, the differential Bianchi identity vanishes term by term. This gives a completely explicit lower compatibility witness for the geometric, spectral, product, and leading-order anomaly rows.
+
+The witness is deliberately modest. The torus has holonomy strictly smaller than $`SU(3)`$, produces enhanced supersymmetry, and the trivial gauge choice does not yield a chiral Standard-Model-like spectrum. It also does not prove that an MTT source emits the record. It shows only that the lower target class is nonempty and that MTT-style analytic conditions are not mutually inconsistent with a simple Calabi–Yau background.
+
+## Why the former orbifold example is withdrawn
+
+The previous version named a $`T^6/\mathbb Z_3`$ resolution but omitted the promised construction. A valid orbifold model would have to specify the group action, fixed loci, crepant resolution, Kähler chamber, gauge shift or bundle, twisted sectors, anomaly constraints, and the relation between orbifold and resolved descriptions . Exact product commutation need not persist after resolution. Without those rows there is no worked compactification and no parameter map to audit.
+
+# What Calabi–Yau machinery may be inherited
+
+## Massless fields
+
+Once $`X`$ and a holomorphic bundle $`V`$ are supplied, candidate massless fields are organized by bundle-valued cohomology groups. For example, the multiplicity of a representation associated with a bundle $`U`$ is computed from groups such as $`H^1(X,U)`$, subject to the chosen embedding and conventions. This is a conditional calculation on $`(X,V)`$; Hodge numbers of $`X`$ alone do not determine the charged spectrum.
 
 ## Yukawa couplings
 
-Geometric: $`Y_{\alpha\beta\gamma}=\int\Omega\wedge\partial_\alpha\partial_\beta\partial_\gamma\Omega(z(\Theta_{\rm MTT}))`$. Bundle matter: $`Y_{ijk}\sim \int\Omega\wedge\psi^{(a)}_i\wedge\psi^{(b)}_j\wedge\psi^{(c)}_k`$ with $`\psi`$ harmonic reps, hence $`Y_{ijk}(\Theta_{\rm MTT})`$.
-
-## Thresholds and one–loop running
-
-One–loop thresholds depend on spectra/Ray–Singer torsions, hence on $`(X,g)`$ and thus on $`\Theta_{\rm MTT}`$.
-
-## Mirror symmetry
-
-Mirror exchanges complex/Kähler moduli; via $`\Theta_{\rm MTT}\mapsto (t,z)`$ this induces a dual map on the mirror.
-
-# Worked example: $`T^6/\mathbb{Z}_3`$ resolution
-
-# Implications and predictions
-
-Because the CY corner is a subset of admissible MTT fixed points, we obtain:
-
-- **Controlled EFT.** SA.1 enforces KK scale separation $`m_{\rm KK}^2\gtrsim \lambda_\ast`$.
-
-- **Correlated couplings.** Block volumes $`v_i`$ determine Kähler moduli combinations, correlating $`g_1,g_2,g_3`$.
-
-- **Yukawa textures.** Commuting projectors yield selection rules compatible with CY cohomology products.
-
-- **Reduced landscape.** Bounded geometry/commutation eliminate degenerations and incompatible bundles.
-
-# Conclusions
-
-We proved the CY corner exists inside MTT, that MTT constraints are compatible/automatic on compact CY+HYM, and that physics is indistinguishable from standard CY compactifications at this locus. We gave a parameter map that imports CY machinery as MTT functions, producing low–energy correlations, with a torus/orbifold resolution example illustrating all checks.
-
-# SU(3) torsion classes
-
-With $`(J,\Omega)`$ an SU(3)–structure, torsion classes arise by projecting $`dJ`$ and $`d\Omega`$ onto SU(3) irreps; $`W_i=0`$ $`\Leftrightarrow`$ $`X`$ is Kähler and $`d\Omega=0`$ $`\Rightarrow c_1(X)=0`$ (CY).
-
-# Elliptic estimates and bounded projectors
-
-On compact bounded–geometry manifolds: Green operator $`G=\Delta^{-1}`$ is bounded $`H^{s-2}\!\to H^s`$, $`P_H=I-\Delta G`$ is bounded $`H^s\!\to H^s`$, and Cheeger/Buser give $`\lambda_1\ge h^2/4`$.
-
-# Commuting Laplacians for split HYM bundles
-
-For $`E=\bigotimes_{i=1}^3 E_i`$ with HYM $`\nabla_i`$, the induced $`\Delta_i`$ commute and the joint projector exists.
-
-# Mirror symmetry and thresholds
-
-Quick reference: $`K_{\rm cs}(z,\bar z)=-\log\big(\mathrm{i}\int \Omega\wedge \bar\Omega\big)`$, $`F_{\rm cl}(t)=\tfrac{1}{6}\kappa t^3+\cdots`$; thresholds involve determinants of Laplacians (Ray–Singer).
-
-# From the Lens/NIL baseline to the CY corner: explicit SA constants and deformation
-
-## E.1Baseline geometry and block operators
-
-Let $`X_6\simeq S^1_{\rm cen}\times \Sigma_1\times \Sigma_2\times \Sigma_3`$ with block–diagonal metric. On the triplet $`\{B_n\}`$ take the concrete baseline
+For normalized harmonic representatives $`\psi_i`$, a holomorphic Yukawa coupling has the schematic form
 ``` math
-B_1 \simeq S^1_{\rm cen}\times F_1,\qquad
-B_2 \simeq S^1_{\rm cen}\times L(3,1),\qquad
-B_3 \simeq S^1_{\rm cen}\times\big(L(3,1)\times \Gamma\backslash{\rm Nil}_3\big),
+Y_{ijk}\sim
+\int_X\Omega\wedge
+\psi_i\wedge\psi_j\wedge\psi_k,
 ```
-allowing mild warping $`f(\theta)=1+\alpha\cos\theta`$ with $`|\alpha|<1`$ on each block. Denote vertical scalar Laplacians by $`\Delta_{B_n}`$ and the coherent projector by $`\Pi_{\rm coh}=\Pi_{B_1}\Pi_{B_2}\Pi_{B_3}`$.
+with bundle contractions and normalization factors fixed by the model. Writing $`Y_{ijk}=Y_{ijk}(\Theta_{\mathrm{MTT}})`$ is justified only after the source map derives $`X,\Omega,V,\psi_i`$ and their normalization from $`\Theta_{\mathrm{MTT}}`$. Otherwise the equation is a change of variables, not a prediction.
 
-## E.2Explicit spectral gaps (SA.1)
+## Gauge and gravitational couplings
 
-On $`S^1_{\rm cen}`$ of length $`\ell_\theta`$, $`\lambda_1(S^1)=(2\pi/\ell_\theta)^2`$. On $`L(3,1)`$ with a fixed bounded–geometry metric, Cheeger–Buser implies $`\lambda_1\ge h^2/4=:c_{\rm lens}>0`$; on $`\Gamma\backslash{\rm Nil}_3`$ in the non–collapsing regime, $`\lambda_1\ge h^2/4=:c_{\rm nil}>0`$. Warping by $`f(\theta)`$ preserves lower bounds up to controlled constants (bi–Lipschitz). Hence for the vertical Laplacians
-``` math
-\lambda_\ast:=\min\!\left\{(2\pi/\ell_\theta)^2,\;c_{\rm lens},\;c_{\rm nil}\right\}>0.
-```
+Dimensional reduction similarly yields volume- and dilaton-dependent gauge and gravitational couplings. Such formulas become MTT predictions only if the relevant volume, dilaton, normalization, and threshold data are selected upstream. A spectral gap can control a Kaluza–Klein scale on a fixed background, but it does not by itself fix the overall compactification scale.
 
-## E.3Bounded projectors (SA.4) and semigroup smoothing (SA.2)
+## Moduli and stabilization
 
-With resolvent contours of radius $`\lambda_\ast/2`$, parameter–dependent elliptic theory gives $`\|(\Delta_{B_n}-z)^{-1}\|_{H^s\to H^s}\le C_s(\lambda_\ast)`$, hence $`\|\Pi_{B_n}\|_{H^s\to H^s}\le C_s`$ and $`\|\Pi_{\rm coh}\|_{H^1\to H^1}\le C_\Pi`$ uniformly. The parabolic generator
-``` math
-A:=\kappa_1\Delta_{B_1}+\kappa_2\Delta_{B_2}+\kappa_3\Delta_{B_3}+\varepsilon\,\Delta_{\rm hor}-N,
-```
-is sectorial; its semigroup satisfies
-``` math
-\|\Phi_t\|_{L^2\to H^1}\le M_1(t)e^{Lt},\qquad M_1(t)\lesssim (1+t^{-1/2})e^{-\lambda_\ast t}.
-```
+Yau’s theorem leaves the complex and Kähler moduli unspecified. Bundle holomorphy can obstruct some complex-structure deformations through the Atiyah map, and explicit models can stabilize subsets of moduli . Other moduli require additional perturbative or nonperturbative effects. Therefore “the MTT fixed point is stable” and “all compactification moduli are stabilized” are different statements about different operators.
 
-Here $`\Delta_{\rm hor}`$ denotes the horizontal Laplacian associated to the base (if present in the flow; otherwise take $`\varepsilon=0`$).
+## Mirror symmetry and thresholds
 
-## E.4Commutation (SA.3) and contraction (FCC)
+Mirror symmetry, threshold corrections, and special geometry may be studied after a model and approximation scheme are fixed. They are not automatic consequences of a three-block notation. In particular, an MTT duality map must be constructed and shown to intertwine the relevant period, bundle, and quantum data before it can be identified with a mirror map.
 
-Block–diagonality implies $`[\Delta_{B_i},\Delta_{B_j}]=0`$ and commuting spectral projectors. Choosing $`\tau>0`$ so that
-``` math
-C_\Pi\,M_1(\tau)\,e^{L\tau}<1,
-```
-the projected time–$`\tau`$ map $`T_\tau=\Pi_{\rm coh}\circ \Phi_\tau`$ is a contraction on $`{\rm Ran}\,\Pi_{\rm coh}`$, hence a unique coherent fixed point exists.
+# Relation to the $`q=79`$ and Lens–Nil programs
 
-## E.5Deformation to the CY corner
+## Three geometries that must not be identified
 
-Set $`\alpha\to 0`$ and flatten the Lens and Nil layers by a smooth path of bounded–geometry metrics toward flat tori on each block. In this limit the vertical Laplacian becomes a sum of torus Laplacians and the torsion classes vanish ($`W_i=0`$). Thus the internal geometry reaches the CY corner. Because the FCC is open, the contraction persists along the path and the CY selection statements (worldsheet/4D equivalence and parameter map) apply unchanged.
+<div class="center">
 
-#### Remark.
+| Object | Geometric type | Correct role |
+|:---|:---|:---|
+| Strict CY branch | Compact Ricci-flat Kähler threefold, normally $`H=0`$ in the unwarped heterotic limit | A possible lower realization target for the contract in <a href="#sec:contract" data-reference-type="ref+label" data-reference="sec:contract">3</a>. |
+| $`q=79`$ Fu–Yau branch | Non-Kähler complex threefold with torsion and nonzero flux | The strongest current target for the selected heterotic program; it belongs to the Hull–Strominger problem, not to a strict Calabi–Yau corner . |
+| Lens–Nil construction | Auxiliary balanced or rank/operator comparison model; the audited almost-complex model is non-integrable | Useful for local calculations or filtration intuition, but not a physical CY or Hull–Strominger proof source . |
 
-The Lens/NIL baseline is not itself Calabi–Yau; it is a calibrated admissible starting point that carries uniform constants and preserves commutation. The deformation provides a concrete bridge to the CY class while keeping the MTT selection intact.
+</div>
+
+A smooth family of metrics on one fixed manifold cannot change its diffeomorphism type. Consequently, “flattening” Lens and Nil factors does not turn their manifold into a torus or a Calabi–Yau threefold. A topology change, surgery, quotient, resolution, or entirely new carrier would have to be constructed explicitly.
+
+## What the current repository results contribute
+
+The current MTT program has exact finite $`q=79`$ arithmetic, a literal finite rank-two Cech witness, a certified finite projected HYM approximation, and a selected rank-two continuum HYM witness with a Wiener contraction certificate. These are substantial results at their declared tiers. They do not provide a Calabi–Yau topology, a rank-three visible bundle, a hidden bundle, or an MTT-to-CY source map. They therefore appear here as contextual evidence and reusable tools, not as direct proof of <a href="#thm:conditional-realization" data-reference-type="ref+label" data-reference="thm:conditional-realization">3</a>.
+
+The companion Hull–Strominger paper states the required flow-intertwining bridge . The physical visible–hidden endpoint still requires one common carrier with the required bundles, HYM connections, anomaly identity, and global flux data.
+
+# Selection and completion boundary
+
+## Compatibility, existence, and selection
+
+Three claims must remain distinct.
+
+<div class="description">
+
+The lower equations and MTT analytic requirements can hold simultaneously. The torus witness establishes this in a simple non-phenomenological case.
+
+One selected upper state emits a complete lower record and the MTT reduction factors through the standard compactification. This is the hypothesis of <a href="#thm:conditional-realization" data-reference-type="ref+label" data-reference="thm:conditional-realization">3</a>; it has not yet been constructed.
+
+An MTT preparation, evolution, or branch law chooses that realization among alternatives. This requires more than equation solving or local isolation.
+
+</div>
+
+## A completion contract
+
+To promote the present paper from a conditional map to a physical Calabi–Yau result, a future construction must provide:
+
+1.  a selected compact complex threefold $`X`$, not merely a local $`SU(3)`$-structure ansatz;
+
+2.  an MTT-derived complex structure, Kähler class, holomorphic volume form, and Ricci-flat metric;
+
+3.  explicit visible and hidden holomorphic bundles in a common stability chamber, with HYM connections;
+
+4.  the differential anomaly identity and global $`B`$-field data in one convention;
+
+5.  a source map preserving the relevant connections and holonomies;
+
+6.  the worldsheet completion and perturbative order actually claimed;
+
+7.  a dimensional-reduction factorization with normalized modes; and
+
+8.  a stabilization and selection mechanism if a unique physical vacuum is claimed.
+
+These rows are deliberately stronger than a list of matching dimensions or isomorphic abstract groups. They identify the actual object on which the calculation is performed.
+
+# Claim audit and conclusion
+
+## Disposition of Version 1 claims
+
+<div class="center">
+
+| Former claim | Status | Version 2 resolution |
+|:---|:---|:---|
+| MTT proves a Calabi–Yau corner | Withdrawn | Replaced by a conditional typed realization theorem. |
+| Vanishing torsion selects a unique CY | Withdrawn | It tests a supplied structure; Yau uniqueness is only within a fixed Kähler class. |
+| MTT and standard worldsheet theories coincide | Conditional | Requires the full sigma-model/CFT, anomaly, GSO and modular rows. |
+| The four-dimensional EFT is automatically identical | Conditional | Holds only under the explicit reduction factorization. |
+| Compactness gives a uniform spectral gap over moduli | Corrected | A fixed background has a gap; a family needs uniform control. |
+| Three bundle Laplacians commute generically | Withdrawn | Exact commutation is proved for a genuine product carrier. |
+| Lens–Nil deforms smoothly to a CY torus | Withdrawn | Metric deformation cannot change topology. |
+| $`T^6/\mathbb Z_3`$ is a worked phenomenological example | Withdrawn | The required resolution, bundle and spectrum data were absent. |
+| CY formulas give new MTT predictions | Withdrawn | They are conditional evaluation formulas until their inputs are selected upstream. |
+
+</div>
+
+## Conclusion
+
+Calabi–Yau geometry remains a valuable realization target for MTT, but the correct relation is now precise. Standard geometry can certify a lower record once topology, metric, bundle, anomaly, worldsheet, and reduction data are supplied. MTT contributes a proposed upper origin and selection mechanism. The bridge between them is the typed source map and reduction factorization of <a href="#sec:contract" data-reference-type="ref+label" data-reference="sec:contract">3</a>.
+
+This reformulation preserves the useful mathematical content while removing an unsupported claim of uniqueness. It also clarifies the research choice: a strict Calabi–Yau branch would require a new selected source record, whereas the current $`q=79`$ program is pursuing the different, non-Kähler Fu–Yau/Hull–Strominger route. Neither branch should borrow the other’s topology as a proof shortcut.
+
+#### Corpus-state cross-checks.
+
+- (*numeric certified*).
+
+  Weighted-theta Fourier-tail and Wiener contraction certificate.
+
+- (*derived exact*).
+
+  Literal 81-entry, 729-cocycle finite Cech witness.
+
+- (*derived exact*).
+
+  Executable q=79 exact-branch audit.
+
+- (*derived exact*).
+
+  CRT q=79 theorem on the selected exact branch.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The exact q79 arithmetic, finite rank-two Cech witness, and rank-two Wiener-contraction certificate are contextual evidence for adjacent non-Kahler heterotic work. They do not directly prove a strict Calabi-Yau topology, metric, stable visible-hidden bundle pair, MTT-to-CY source map, worldsheet completion, or stabilized four-dimensional vacuum.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Corpus-state cross-checks
+
+- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
+- `A07/literal_cech_witness` (**DERIVED_EXACT**): Literal 81-entry, 729-cocycle finite Cech witness.
+- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
+- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

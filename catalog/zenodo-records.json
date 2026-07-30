@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.17071246",
+      "created": "2026-07-30T17:09:53.276001+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21707791",
+      "files": [
+        {
+          "checksum": "md5:f020375dbeccdd3876292e264a78648a",
+          "content_url": "https://zenodo.org/api/records/21707791/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 413578
+        }
+      ],
+      "id": "21707791",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21707791",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and Calabi\u2013Yau Compactification: A Conditional Realization Map and Its Selection Boundary",
+      "updated": "2026-07-30T17:09:53.689116+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.17072926",
       "created": "2026-07-30T16:50:26.821947+00:00",
       "creators": [

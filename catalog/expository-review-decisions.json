@@ -1,6 +1,14 @@
 {
   "schema": "mtt.expository-review-decisions.v1",
   "papers": {
+    "modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Rebuilt as a conditional Calabi-Yau realization map. The paper separates topology, Ricci-flat metric, visible-hidden HYM bundle data, anomaly cancellation, worldsheet completion, four-dimensional reduction, moduli stabilization, and MTT source selection; proves the conditional realization theorem, fixed-background spectral admissibility, and exact product-commutation lemma; withdraws unique-CY selection, generic Laplacian commutation, Lens-Nil topology deformation, the incomplete T6/Z3 example, and automatic phenomenology; classifies q79 Fu-Yau as a distinct non-Kahler branch; and the 13-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "5490709d5571e2621bca3b483faac66dec52cbc36ad7375b68f76d1e4ad47e8c",
+      "reviewed_pdf_sha256": "bae3be86b2e8a4f3c20ea2ff8724d499600518e9c63f40465488abe6c4689235",
+      "reviewed_source_tree_sha256": "1697635607534450dc9ac7ab7cb23d7eac538df5f4e8e78a62fdda50f2cbc00b"
+    },
     "modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927": {
       "status": "reviewed",
       "reviewed_on": "2026-07-30",

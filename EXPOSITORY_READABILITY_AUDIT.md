@@ -11,23 +11,23 @@ Canonical papers audited: **139**.
 | Priority | Papers |
 | --- | ---: |
 | critical | 10 |
-| major | 9 |
+| major | 8 |
 | moderate | 6 |
 | light | 12 |
 | low | 1 |
-| reviewed | 99 |
+| reviewed | 100 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 42 |
-| conclusion | 15 |
+| argument_flow | 41 |
+| conclusion | 14 |
 | concrete_foothold | 44 |
-| object_intuition | 93 |
-| orientation | 38 |
-| result_interpretation | 15 |
+| object_intuition | 92 |
+| orientation | 39 |
+| result_interpretation | 14 |
 
 ## Revision Queue
 
@@ -51,7 +51,6 @@ Canonical papers audited: **139**.
 | major | major | `particles-and-forces-as-coherence-basins-and-capacity-gradients` | 10 | 124.0 | 5/7 | object_intuition, concrete_foothold |
 | major | major | `computational-irreducibility-from-projection-undecidabi-6cc6aafd` | 9 | 190.1 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | major | major | `cosmology-as-global-coherence-capacity-evolution` | 8 | 134.6 | 5/7 | object_intuition, concrete_foothold |
-| major | major | `modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d` | 8 | 192.0 | 3/7 | object_intuition, argument_flow, result_interpretation, conclusion |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | moderate | moderate | `coherent-sector-universality-and-controlled-truncation-0ccddc56` | 7 | 148.6 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | moderate | moderate | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 7 | 311.9 | 4/7 | object_intuition, argument_flow, concrete_foothold |
@@ -135,6 +134,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `determinism-without-superdeterminism-projection-induced-0e405923` | 5 | 395.6 | 5/7 | orientation, object_intuition |
 | reviewed | light | `inflationary-measures-and-the-born-rule-as-a-single-sha-388b32c2` | 5 | 438.4 | 6/7 | orientation |
 | reviewed | light | `measurement-effects-as-finite-survivor-basin-kernels-pr-eb7737ce` | 5 | 404.2 | 5/7 | orientation, object_intuition |
+| reviewed | light | `modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d` | 5 | 524.6 | 6/7 | orientation |
 | reviewed | moderate | `momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685` | 5 | 311.6 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | reviewed | low | `constructive-mtt-quantum-gravity-iii-infrared-limit-asy-6f8b88d9` | 4 | 621.0 | 7/7 | - |
 | reviewed | light | `contact-interactions-and-renormalization-as-over-sharp-c2cfaa22` | 4 | 485.0 | 6/7 | object_intuition |

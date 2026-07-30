@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T17:09:38+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21707791",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "f020375dbeccdd3876292e264a78648a",
+      "local_pdf_sha256": "bae3be86b2e8a4f3c20ea2ff8724d499600518e9c63f40465488abe6c4689235",
+      "paper_id": "modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    }
+  ]
+}
