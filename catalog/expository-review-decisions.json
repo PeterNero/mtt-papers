@@ -1,6 +1,14 @@
 {
   "schema": "mtt.expository-review-decisions.v1",
   "papers": {
+    "modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Rebuilt as an explanatory conditional eleven-dimensional low-energy encoding contract. The paper distinguishes M-theory from the CJS low-energy limit; defines the complete Lorentzian spin, gravitino, differential C-field, action, source, brane, anomaly, quantum-scope, and reduction record; proves the conditional realization theorem and projector nonselection proposition; imports rather than duplicates standard action, shifted-flux, M2/M5, anomaly-inflow, and type-IIA results; corrects the D8 descent error; separates the shared phase circle and q79 heterotic branch from an unproved M-theory lift; withdraws stabilization and phenomenology claims; and the 16-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "fa72334c6f5c7edb1f947e216c170ce788db0f3452e744bc36317674f1f75f5a",
+      "reviewed_pdf_sha256": "208f45bff5328a1b3c29dfa40ee7127e866c6696a7afe167241f0087781b3924",
+      "reviewed_source_tree_sha256": "1214b55cef119adc3006f973561a9d86903cadfa87fda8896e1a54a9c4cc8d11"
+    },
     "modal-triplet-theory-from-mtt-to-string-theory-a-first-4b1100fc": {
       "status": "reviewed",
       "reviewed_on": "2026-07-30",

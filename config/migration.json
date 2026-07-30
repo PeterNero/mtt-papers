@@ -83,6 +83,26 @@
       "title": "Modal Triplet Theory and Perturbative String Theory: A Conditional Encoding Contract and the q=79 Worldsheet Boundary"
     },
     {
+      "abstract": "This paper asks when Modal Triplet Theory (MTT) realizes an eleven-dimensional low-energy sector of M-theory. Eleven-dimensional supergravity is not specified by a metric and a three-form alone: the full record includes an oriented Lorentzian spin manifold, vielbein, gravitino, shifted differential C-field, action and normalization, local supersymmetry, source and boundary data, and a declared quantum and derivative-order scope. M2- and M5-branes additionally require embeddings, normal bundles, worldvolume fields, kappa symmetry, self-duality data, and anomaly inflow. We package these ingredients as a typed eleven-dimensional record and define a partial map from an upper MTT state to that record. The main theorem is conditional: if one selected MTT state emits every required row, the lower record satisfies the standard consistency conditions at the declared order, and MTT evaluation factors through the eleven-dimensional effective theory, then MTT realizes that sector on the stated domain. We also prove that the axioms of a bounded projector or pullback alone do not select a unique spacetime, C-field, brane content, or action. The Cremmer-Julia-Scherk action, shifted flux law, supermembrane and five-brane systems, anomaly inflow, and type-IIA circle reduction are therefore used as standard lower targets, not re-derived from projection. Current q=79 arithmetic and heterotic Cech/Hermitian-Yang-Mills results are compatible contextual data, but they do not yet emit an eleven-dimensional spin geometry, M-theory circle, differential C-field, gravitino, brane sources, or connection-preserving action map. A nonperturbative definition of M-theory and four-dimensional phenomenological predictions remain outside the established result.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880",
+      "path": "papers/modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880",
+      "result_refs": [
+        "hym_wiener_contraction",
+        "literal_cech_witness",
+        "q79_exact_audit",
+        "q79_exact_theorem"
+      ],
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_M_theory",
+      "superseded_project": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_M_theory",
+      "title": "Modal Triplet Theory and the M-Theory Low-Energy Limit: A Conditional Eleven-Dimensional Encoding Contract"
+    },
+    {
       "abstract": "We give a typed, conditional formulation of Modal Triplet Theory as a theory of reduced description. A representative section, an exact upper decoder, autonomous reduced evolution, and merger of effective states solve four different mathematical problems; none follows merely from noninjectivity of a projection. We prove the factor-through criterion for autonomous descent, a finite-diameter obstruction for a genuinely contractive reduced self-map, exact basin-local fixed-point results, and controlled approximate-orbit estimates. Admissibility boundaries are defined by explicit margins and section or projector conditioning rather than by assuming the desired obstruction. The encoding atlas and its relations are consequently local and conditional. Probability, irreversibility, physical time, and any concrete physical realization require their own measure, evolution, and source hypotheses.",
       "authors": [
         "Peter Nero"

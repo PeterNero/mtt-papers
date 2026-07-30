@@ -3,21 +3,21 @@
   "generated_on": "2026-07-30",
   "papers": 139,
   "priority_counts": {
-    "critical": 10,
+    "critical": 9,
     "light": 12,
     "low": 1,
     "major": 8,
     "moderate": 5,
     "reference_ready": 2,
-    "reviewed": 101
+    "reviewed": 102
   },
   "missing_dimension_counts": {
-    "argument_flow": 40,
-    "conclusion": 13,
+    "argument_flow": 39,
+    "conclusion": 12,
     "concrete_foothold": 44,
-    "object_intuition": 92,
-    "orientation": 40,
-    "result_interpretation": 13
+    "object_intuition": 91,
+    "orientation": 41,
+    "result_interpretation": 12
   },
   "forbidden_boilerplate_hits": [],
   "rows": [
@@ -1951,30 +1951,27 @@
     },
     {
       "paper_id": "modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880",
-      "title": "Modal Triplet Theory: From MTT to M-theory: A First-Principles 11D Embedding with Branes, Flux, and Anomalies",
-      "total_words": 4383,
-      "narrative_words": 2041,
-      "formal_results": 23,
-      "proofs": 5,
-      "narrative_words_per_result": 88.7,
-      "orientation": true,
-      "object_intuition": false,
-      "argument_flow": false,
-      "result_interpretation": false,
+      "title": "Modal Triplet Theory and the M-Theory Low-Energy Limit: A Conditional Eleven-Dimensional Encoding Contract",
+      "total_words": 4791,
+      "narrative_words": 3077,
+      "formal_results": 3,
+      "proofs": 2,
+      "narrative_words_per_result": 1025.7,
+      "orientation": false,
+      "object_intuition": true,
+      "argument_flow": true,
+      "result_interpretation": true,
       "concrete_foothold": true,
       "limitations": true,
-      "conclusion": false,
-      "coverage_dimensions": 3,
-      "audit_priority": "critical",
-      "heuristic_priority": "critical",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "conclusion": true,
+      "coverage_dimensions": 6,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "light",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "review_note": "Rebuilt as an explanatory conditional eleven-dimensional low-energy encoding contract. The paper distinguishes M-theory from the CJS low-energy limit; defines the complete Lorentzian spin, gravitino, differential C-field, action, source, brane, anomaly, quantum-scope, and reduction record; proves the conditional realization theorem and projector nonselection proposition; imports rather than duplicates standard action, shifted-flux, M2/M5, anomaly-inflow, and type-IIA results; corrects the D8 descent error; separates the shared phase circle and q79 heterotic branch from an unproved M-theory lift; withdraws stabilization and phenomenology claims; and the 16-page PDF was visually inspected.",
       "missing_dimensions": [
-        "object_intuition",
-        "argument_flow",
-        "result_interpretation",
-        "conclusion"
+        "orientation"
       ]
     },
     {

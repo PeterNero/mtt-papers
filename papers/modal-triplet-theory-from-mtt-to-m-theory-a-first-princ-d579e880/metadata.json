@@ -1,65 +1,98 @@
 {
-  "abstract": "We construct a rigorous bridge from Modal Triplet Theory (MTT) to M -theory. Starting from a ten-dimensional coherent fixed point and its 11D circle lift, we derive: (i) the 11D supergravity field content (G_{MN},C^{(3)}) and flux G_4=\\mathrm{d}C^{(3)} as modal composites; (ii) the 11D action with Chern\u2013Simons and curvature terms, and the full field equations including the G_4\\wedge G_4 source; (iii) the shifted G_4 quantization [G_4/2\\pi]-\\tfrac12\\lambda\\in H^4(M_{11},\\mathbb{Z}) and M5 anomaly inflow; (iv) worldvolume actions for M2 and M5 via a well-defined projection \\Pi_{\\mathrm{WV}} (with \\kappa-symmetry and self-duality), giving the correct tensions and Wess\u2013Zumino couplings; (v) dimensional reductions to type IIA (including brane descendants); and (vi) a predictive low-energy map to 4D EFT parameters fixed by modal gaps and topology. The result is a first-principles derivation of the 11D framework\u2014fields, equations, branes, and consistency conditions\u2014from the fixed-point sector of MTT.",
+  "abstract": "This paper asks when Modal Triplet Theory (MTT) realizes an eleven-dimensional low-energy sector of M-theory. Eleven-dimensional supergravity is not specified by a metric and a three-form alone: the full record includes an oriented Lorentzian spin manifold, vielbein, gravitino, shifted differential C-field, action and normalization, local supersymmetry, source and boundary data, and a declared quantum and derivative-order scope. M2- and M5-branes additionally require embeddings, normal bundles, worldvolume fields, kappa symmetry, self-duality data, and anomaly inflow. We package these ingredients as a typed eleven-dimensional record and define a partial map from an upper MTT state to that record. The main theorem is conditional: if one selected MTT state emits every required row, the lower record satisfies the standard consistency conditions at the declared order, and MTT evaluation factors through the eleven-dimensional effective theory, then MTT realizes that sector on the stated domain. We also prove that the axioms of a bounded projector or pullback alone do not select a unique spacetime, C-field, brane content, or action. The Cremmer–Julia–Scherk action, shifted flux law, supermembrane and five-brane systems, anomaly inflow, and type-IIA circle reduction are therefore used as standard lower targets, not re-derived from projection. Current q=79 arithmetic and heterotic Cech/Hermitian–Yang–Mills results are compatible contextual data, but they do not yet emit an eleven-dimensional spin geometry, M-theory circle, differential C-field, gravitino, brane sources, or connection-preserving action map. A nonperturbative definition of M-theory and four-dimensional phenomenological predictions remain outside the established result.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "September 6, 2025",
+  "current_version": "v2",
+  "date": "Version 2, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17068816",
-    "created": "2025-09-06T14:59:38.430343+00:00",
+    "created": "2026-07-30T17:55:25.119017+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.17068817",
+    "doi": "10.5281/zenodo.21708348",
     "files": [
       {
-        "checksum": "md5:60a187eb06436b03658da5983cef5dc8",
-        "content_url": "https://zenodo.org/api/records/17068817/files/Modal_Triplet_Theory__From_MTT_to_M_theory%20(2).pdf/content",
-        "key": "Modal_Triplet_Theory__From_MTT_to_M_theory (2).pdf",
-        "size": 361971
+        "checksum": "md5:ae2c63af02692909af3080708291c295",
+        "content_url": "https://zenodo.org/api/records/21708348/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 437688
       }
     ],
-    "id": "17068817",
-    "match_kind": "title_or_file",
+    "id": "21708348",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2025-09-06",
-    "record_url": "https://zenodo.org/records/17068817",
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21708348",
     "resource_type": "publication",
-    "title": "Modal Triplet Theory: From MTT to M-theory",
-    "updated": "2025-09-06T14:59:38.801107+00:00",
-    "version": "v1.0"
+    "title": "Modal Triplet Theory and the M-Theory Low-Energy Limit: A Conditional Eleven-Dimensional Encoding Contract",
+    "updated": "2026-07-30T17:55:25.774759+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "178c1a84139328eab802d0400a392fc61ae48124c1c95ca9cab4203be35b3cba",
+  "main_tex_sha256": "fa72334c6f5c7edb1f947e216c170ce788db0f3452e744bc36317674f1f75f5a",
   "paper_id": "modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880",
-  "paper_md_sha256": "da0346ef781845be2d689132431e39ebf5a0f144e16cb91ed8a0e530bbd4b1eb",
+  "paper_md_sha256": "ea36cc301d9d4c3a9292dafafa436507dc8b2024c859a1d0bdfb92ff32e875be",
   "release_state": "zenodo_released",
-  "result_refs": [],
+  "result_refs": [
+    "hym_wiener_contraction",
+    "literal_cech_witness",
+    "q79_exact_audit",
+    "q79_exact_theorem"
+  ],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "ed556b5819431dcce736d22c6b04b8cf4233475ae8d9ec09b7a3280d6d1e043b",
+    "selected_revision": true,
+    "superseded_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_M_theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 2388,
+      "bytes": 5367,
       "path": "main.bib",
-      "sha256": "b96772be8d1be237fde8219e9ad9229777889a44ad509e6e8b8de79d45a747a4"
+      "sha256": "b3ed94d3087bbb44f00d4fbfd25a15ad8e0700459c36d3cb6bed15956cc2d305"
     },
     {
-      "bytes": 40835,
+      "bytes": 40701,
       "path": "main.tex",
-      "sha256": "178c1a84139328eab802d0400a392fc61ae48124c1c95ca9cab4203be35b3cba"
+      "sha256": "fa72334c6f5c7edb1f947e216c170ce788db0f3452e744bc36317674f1f75f5a"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_M_theory"
   },
-  "source_tree_sha256": "466dd5a8989d4450571fbfcd89db0a51751488e1363a2b17eb0dc5f110f39e9d",
-  "title": "Modal Triplet Theory: From MTT to M-theory: A First-Principles 11D Embedding with Branes, Flux, and Anomalies",
+  "source_tree_sha256": "1214b55cef119adc3006f973561a9d86903cadfa87fda8896e1a54a9c4cc8d11",
+  "title": "Modal Triplet Theory and the M-Theory Low-Energy Limit: A Conditional Eleven-Dimensional Encoding Contract",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17068816",
+      "created": "2026-07-30T17:55:25.119017+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21708348",
+      "files": [
+        {
+          "checksum": "md5:ae2c63af02692909af3080708291c295",
+          "content_url": "https://zenodo.org/api/records/21708348/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 437688
+        }
+      ],
+      "id": "21708348",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21708348",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and the M-Theory Low-Energy Limit: A Conditional Eleven-Dimensional Encoding Contract",
+      "updated": "2026-07-30T17:55:25.774759+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.17068816",
       "created": "2025-09-06T14:59:38.430343+00:00",

@@ -10,31 +10,30 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| critical | 10 |
+| critical | 9 |
 | major | 8 |
 | moderate | 5 |
 | light | 12 |
 | low | 1 |
-| reviewed | 101 |
+| reviewed | 102 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 40 |
-| conclusion | 13 |
+| argument_flow | 39 |
+| conclusion | 12 |
 | concrete_foothold | 44 |
-| object_intuition | 92 |
-| orientation | 40 |
-| result_interpretation | 13 |
+| object_intuition | 91 |
+| orientation | 41 |
+| result_interpretation | 12 |
 
 ## Revision Queue
 
 | Effective priority | Heuristic | Paper | Formal results | Narrative words/result | Coverage | Missing |
 | --- | --- | --- | ---: | ---: | ---: | --- |
 | critical | critical | `eth-and-many-body-localization-as-a-single-shadow-bridg-236606dd` | 27 | 45.8 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
-| critical | critical | `modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880` | 23 | 88.7 | 3/7 | object_intuition, argument_flow, result_interpretation, conclusion |
 | critical | critical | `electromagnetic-helicity-as-a-coherent-sector-chern-sim-0cc7ca40` | 17 | 63.4 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 17 | 123.5 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | critical | critical | `coherent-universality-and-the-inevitability-of-projecti-d9e28e29` | 15 | 79.9 | 3/7 | object_intuition, result_interpretation, concrete_foothold, conclusion |
@@ -144,6 +143,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `causal-sets-as-an-effective-limit-of-modal-triplet-theory` | 3 | 379.7 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | light | `classical-constraint-deltas-and-microcanonical-shells-a-9f4bdcc1` | 3 | 549.7 | 5/7 | orientation, object_intuition |
 | reviewed | low | `modal-triplet-theory-from-mtt-to-general-relativity` | 3 | 925.7 | 7/7 | - |
+| reviewed | light | `modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880` | 3 | 1025.7 | 6/7 | orientation |
 | reviewed | light | `proto-spinor-closure-and-worldsheet-encoding-in-modal-t-6a9d7abf` | 3 | 692.7 | 6/7 | object_intuition |
 | reviewed | light | `why-quantum-theory-must-be-complex-a-soler-admissibilit-b7674be8` | 3 | 669.7 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `baseline-scales-and-phenomenological-consistency-in-mod-b28fa79e` | 2 | 865.5 | 3/7 | orientation, object_intuition, result_interpretation, concrete_foothold |
