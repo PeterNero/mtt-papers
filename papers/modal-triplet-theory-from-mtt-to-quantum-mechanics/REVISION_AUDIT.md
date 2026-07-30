@@ -86,6 +86,17 @@ Assessment:
 SHA-256:
 `4a2adf6ab52f081f90bc2e863639e9d5756835b2eb35258dac283ce21b280f11`
 
+## Current version delta
+
+Version 4 replaces the former universal first-principles claim by a typed
+coherent-sector reconstruction, corrects the Hilbert, form, compression,
+clock, probability, instrument, composition, and open-system boundaries, and
+retains one exact selected-source theorem: the canonical q79 binary recorder
+has a stopped operational output measure and second-moment Born descent on
+its declared commuting Fock output domain. The universal Born-source theorem
+remains open for general apparatuses, non-Markov control, pre-quantum
+probability semantics, and objective single-history selection.
+
 ## Claim-by-claim audit
 
 ### Complete first-principles derivation
