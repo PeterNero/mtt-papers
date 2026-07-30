@@ -1,491 +1,624 @@
 \documentclass[11pt]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsfonts,amsthm,mathtools}
-\usepackage{bm}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{cite}
-\usepackage{mathtools}
-\usepackage[numbers]{natbib} 
-\usepackage[nameinlink,capitalise]{cleveref}
 
-% ===== Encoding & fonts (prevents Unicode errors) =====
+\usepackage[margin=1in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{microtype}
-\usepackage{authblk}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,capitalise]{cleveref}
 
-
-\newcommand{\Tr}{\mathrm{Tr}}
-\newcommand{\Nil}{\mathrm{Nil}}
-\newcommand{\Trgrav}{\mathrm{Tr}_{\mathrm{grav}}}
-\newcommand{\Rplus}{R_{+}}
-\newcommand{\ii}{\mathrm{i}}
-\newcommand{\Kahler}{K\"ahler}
-\newcommand{\J}{J}
-\newcommand{\Om}{\Omega}
-\newcommand{\LensNil}{\text{Lens}\times\text{Nil}}
-\newcommand{\dd}{\mathrm{d}}
-\newcommand{\bbZ}{\mathbb{Z}}
-\newcommand{\bbC}{\mathbb{C}}
-\newcommand{\cO}{\mathcal{O}}
-\newcommand{\vol}{\mathrm{vol}}
-\newcommand{\MTT}{Modal Triplet Theory}
-\newcommand{\Hcoh}{\mathcal{H}_{\text{coh}}}
-\newcommand{\Dprop}{\Delta_{\mathrm{prop}}}
-\newcommand{\DBV}{\Delta_{\mathrm{BV}}}
-\newcommand{\Fform}{F}
-\newcommand{\LSPT}{\Lambda}
-\newcommand{\lamgap}{\lambda_{\ast}}
-\newcommand{\alphap}{\alpha'}
-\newcommand{\RR}{\mathbb{R}}
-\newcommand{\tr}{\mathrm{tr}}
-\newcommand{\Vol}{\mathrm{Vol}}
-\newcommand{\astone}{\ast\!1}
-\newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
-\newcommand{\cH}{\mathcal{H}}
-\newcommand{\Id}{\mathbbm{1}}
-\newcommand{\wh}[1]{\widehat{#1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\im}{\mathrm{im}}
+\newcommand{\HS}{\mathrm{HS}}
+\newcommand{\MTT}{\mathrm{MTT}}
+\newcommand{\SU}{\mathrm{SU}}
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\Z}{\mathbb{Z}}
 
-
-\DeclareMathOperator{\Ric}{Ric}
 \numberwithin{equation}{section}
 
-\let\varphi\phi
-
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{assumption}[theorem]{Assumption}
-\newtheorem{conjecture}[theorem]{Conjecture}
-\newtheorem{example}[theorem]{Example}
-\newtheorem{remark}[theorem]{Remark}
-\newtheorem{note}[theorem]{Note}
-
-% --- Custom Commands ---
-
 \theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{assumption}[definition]{Assumption}
+\newtheorem{example}[definition]{Example}
+
 \theoremstyle{plain}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{lemma}[definition]{Lemma}
+
 \theoremstyle{remark}
+\newtheorem{remark}[definition]{Remark}
 
-% cross-referencing helpers
-\newcommand{\secref}[1]{Section~\ref{#1}}
-\newcommand{\appref}[1]{Appendix~\ref{#1}}
-\newcommand{\thmref}[1]{Theorem~\ref{#1}}
-\newcommand{\propref}[1]{Proposition~\ref{#1}}
-\newcommand{\lemref}[1]{Lemma~\ref{#1}}
-\newcommand{\ksym}{\texorpdfstring{$\kappa$}{kappa}\nobreakdash-symmetry}
-
-% --- title/author
-\title{\bfseries Modal Triplet Theory: MTT as a Selection Principle for Heterotic Flux Compactifications\\
-\large Equivalence in the Left-Invariant Slice and Two Explicit Case Studies}
+\title{Modal Triplet Theory and Heterotic Vacuum Selection:\\
+What Finite Ansatz Calculations Prove, What Attraction Adds,\\
+and What Physical Selection Still Requires}
 \author{Peter Nero}
-\date{September 7 2025}
+\date{Version 2, July 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We present a rigorous selection principle for heterotic flux compactifications in the torsional
-$\mathrm{SU}(3)$ slice. In a left-invariant ansatz, the coherent-sector contraction condition (FCC)
-of a general fixed-point framework is shown to be equivalent to the standard
-anomaly/primitivity/quantization system evaluated componentwise on invariant $(2,2)$ bases.
-Consequently, FCC selects discrete loci on explicit compact examples: the complex balanced Iwasawa
-threefold (fixing $r_3$) and a balanced non-integrable $\LensNil$ background (fixing $R_1/R$).
-We provide coefficient-level decompositions of $dH$, $\Trgrav\Rplus^{2}$, and $\Tr F^{2}$ in invariant
-frames, and record a normalized cubic Yukawa on Iwasawa. These results clarify how a rigorous
-selection mechanism organizes heterotic flux vacua without new dynamics beyond the torsional
-$\mathrm{SU}(3)$ system with $\Rplus$.
+Heterotic compactification papers often use the word ``selection'' for several
+different mathematical achievements: satisfying projected field equations,
+finding an isolated point in a finite ansatz, proving attraction under a
+specified flow, or assigning the realized vacuum.  These implications are not
+equivalent.  We formulate a selection ladder for Modal Triplet Theory (MTT)
+and the Hull--Strominger system.  A finite invariant residual proves a full
+solution only when the tested residual is complete on the ansatz and every
+discarded equation vanishes.  An isolated ansatz solution need not be unique
+in the full configuration space.  Attraction requires an actual evolution
+and a basin estimate, while physical vacuum selection additionally requires
+a preparation law, branch rule, or equivalent source data.  We apply this
+distinction to two former case studies.  The diagonal Iwasawa geometry
+retains valid local balanced and torsion calculations, but the printed
+rank-three bundle, anomaly match, generation count, and normalized Yukawa do
+not survive the global bundle audit.  The Lens--Nil model is non-integrable
+and therefore is not a Hull--Strominger compactification.  The exact
+\(q=79\) arithmetic branch, finite Cech data, and selected rank-two HYM
+certificates remain meaningful at their declared tiers, but they do not yet
+select a physical visible--hidden compactification.  The result is a
+rigorous vocabulary and completion contract, not a claim that the heterotic
+landscape has already been uniquely selected.
 \end{abstract}
+
+\section*{Revision note: Version 2}
+\paragraph{Supersedes.} Version 1, DOI
+\href{https://doi.org/10.5281/zenodo.17072927}
+{10.5281/zenodo.17072927}.
+
+\paragraph{Reason.}  The former paper defined its fixed-point consistency
+condition by the compactification equations themselves and then called their
+componentwise solution a selection theorem.  It also inherited invalid
+Iwasawa bundle and Yukawa claims and treated a non-integrable Lens--Nil
+structure as a heterotic compactification.
+
+\paragraph{Resolution.}  This version separates projected consistency, full
+equation closure, ansatz-local isolation, dynamical attraction, and physical
+selection.  It proves the exact implication structure, imports the audited
+status of the two case studies, retains the current \(q=79\) finite evidence
+at its stated tier, and identifies the remaining physical selection
+certificate.  Revision history is kept here rather than in the abstract.
+
+\paragraph{Retained content.}  The diagonal Iwasawa balanced geometry and
+local torsion calculation, the usefulness of invariant residual tests, and
+the exact finite \(q=79\), Cech, and rank-two HYM evidence are retained at
+their declared scope.
+
+\paragraph{Remaining boundary.}  A physical compactification-selection claim
+still requires the common rank-three visible--hidden Fu--Yau tuple, its
+differential Bianchi and gerbe data, the connection-preserving MTT bridge, an
+attraction domain, and a source or preparation rule.
 
 \tableofcontents
 
-%===========================
-\section{Introduction}\label{sec:intro}
-%===========================
-\paragraph{Motivation.}
-Classifying and selecting physically meaningful heterotic vacua with nonzero $H$ remains a central
-problem. We show that, in the left-invariant torsional $\mathrm{SU}(3)$ slice, a rigorous
-fixed-point/contraction criterion (FCC) \emph{reduces to and equals} the usual
-anomaly/primitivity/quantization constraints solved componentwise on invariant $(2,2)$ forms.
+\section{Why the word selection needs a type}
 
-\paragraph{Contributions (summary).}
-(i) \emph{Equivalence theorem:} projection $\equiv$ compactification in the
-invariant slice and FCC $\equiv$ componentwise anomaly system (\Cref{prop:proj,def:FCC,thm:FCC}).
-(ii) \emph{Discrete loci:} Iwasawa fixes $r_3$; $\LensNil$ fixes $R_1/R$ (\Cref{cor:discrete}).
-(iii) \emph{Coefficient catalogues \& reproducibility:} invariant-frame decompositions of
-$dH$, $\Trgrav \Rplus^{2}$, $\Tr F^{2}$ (App.~\ref{app:coeffs}).
-(iv) \emph{Minimal EFT read-off:} normalized $E_6$ cubic on Iwasawa ($\lambda_{123}=1$).
+The vacuum problem is not merely to solve a set of equations.  A field
+configuration may solve the equations in a restricted family but fail an
+equation omitted by that family.  It may be a genuine solution but be one
+among many disconnected branches.  It may be isolated but dynamically
+unstable.  It may be attracting but reached only from a small set of initial
+conditions.  Finally, a theory may identify all basins without supplying a
+law that says which basin is realized.
 
-\paragraph{Positioning.}
-We do not claim a new class of solutions; rather, we supply a \emph{selection mechanism} compatible
-with the Strominger system, grounded in explicit, coefficient-level case studies.\footnote{For a concise
-synthesis of the fixed-point framework see, e.g., \cite{NeroFP-VI}; for the explicit heterotic Iwasawa and
-$\LensNil$ backgrounds with full anomaly match see \cite{NeroHet-Flux}.}
+These distinctions matter especially in heterotic compactification.  The
+Hull--Strominger system couples complex geometry, a Hermitian form, a
+holomorphic volume form, visible and hidden holomorphic bundles, HYM
+connections, torsion, and the differential Green--Schwarz identity on one
+common compact complex threefold
+\cite{Strominger1986,Hull1986,DelaOssaSvanes2014}.  Solving two scalar
+coefficients in a left-invariant truncation is useful, but it is not
+automatically a construction of that global tuple.
 
-%===========================
-\section{Background}\label{sec:background}
-%===========================
-\paragraph{Torsional $\bm{\mathrm{SU}(3)}$ slice (Strominger system).}
-Balanced metric $d(\J^{2})=0$ at constant dilaton; $H=\ii(\bar\partial-\partial)\J$; $\Rplus$ the
-Bismut connection; Hermitian Yang--Mills on the gauge bundle; and the Bianchi identity
-\begin{equation}\label{eq:bianchi}
-dH=\frac{\alpha'}{4}\big(\Trgrav \Rplus^{2}-\Tr F^2\big).
-\end{equation}
+The first version of this paper obscured this point.  Its ``FCC'' condition
+was defined to contain balance, primitivity, quantization, and the Bianchi
+identity.  The statement that FCC was equivalent to those same
+componentwise equations was therefore a correct identity of definitions, not
+a mechanism selecting one physical vacuum.  The purpose of the present
+version is to say exactly what each layer does prove.
 
-\paragraph{Left-invariant truncation.}
-On nil/solvmanifolds (Iwasawa; $\LensNil$) the Nomizu complex yields a finite invariant basis:
-all four-forms in \eqref{eq:bianchi} lie in the invariant $(2,2)$ subspace. Coefficient-level solutions
-are then obtained by expanding $dH$, $\Trgrav\Rplus^{2}$, and $\Tr F^{2}$ on the invariant basis.
+\section{The lower target: one Hull--Strominger tuple}
 
-\paragraph{Fixed-point framework (minimal).}
-We use only the following standard ingredients from a fixed-point/coherent-sector framework:
-a bounded coherent projector $\Pi_{\rm coh}$ onto fiber-harmonic modes; an FCC margin
-$q=C_\Pi e^{-(\eta-L)\tau}<1$ ensuring contraction of the time--$\tau$ map; and Ornstein--Uhlenbeck
-(OU) damping $\mathrm{Var}=\delta/(2\gamma)$ modewise for unresolved fluctuations, with
-$\gamma=\kappa\lambda-L-\Delta_{\rm curv}$ capturing curvature remainders. See \cite{NeroFP-III,NeroFP-IV,NeroFP-V,NeroFP-VI}.
+Let \(X\) be a compact complex threefold with nowhere-vanishing holomorphic
+\((3,0)\)-form \(\Omega\).  Let \(\omega\) be a positive Hermitian form, let
+\((V,A)\) and \((W,A_W)\) be visible and hidden holomorphic bundles with HYM
+connections, and let \(\nabla\) be the declared tangent-bundle connection.
+Suppressing conventional trace normalizations, the target equations include
+\begin{align}
+\dd(\|\Omega\|_\omega\,\omega^2)&=0, \label{eq:balanced}\\
+F_A^{0,2}=F_{A_W}^{0,2}&=0, \qquad
+F_A\wedge\omega^2=F_{A_W}\wedge\omega^2=0, \label{eq:hym}\\
+H&=\mathrm{i}(\bar\partial-\partial)\omega, \label{eq:torsion}\\
+\dd H&=\frac{\alpha'}{4}
+\left(\Tr R_\nabla\wedge R_\nabla
+-\Tr F_A\wedge F_A-\Tr F_{A_W}\wedge F_{A_W}\right).
+\label{eq:bianchi}
+\end{align}
+Global flux, gerbe, stability, quantization, and worldsheet requirements add
+further data.  Established solutions show that this target is mathematically
+nonempty, including Fu--Yau-type constructions and stable-bundle
+perturbations \cite{FuYau2008,AndreasGarciaFernandez2012,
+FinoGrantcharovVezzoni2021}.  Invariant solutions on complex Lie groups also
+exist, but their existence does not validate every proposed invariant
+bundle \cite{FeiYau2015,OtalUgarteVillacampa2016}.
 
-%===========================
-\section{Equivalence and FCC in the invariant slice}\label{sec:equiv}
-%===========================
-\begin{proposition}[Projection $\equiv$ compactification]\label{prop:proj}
-Let $\Sigma_9 \xrightarrow{\ \pi_{\mathrm{sp}}\ } M_3$ be a Riemannian submersion with compact fibers
-$F_6 \simeq X_6$ and Ehresmann connection $\mathcal{H}$. In the left-invariant ansatz (Nomizu complex on $X_6$),
-fiber integration of the 10D heterotic action equals KK compactification on $X_6$; the KK gauge fields arise from $\mathcal{H}$.
-\end{proposition}
+Write the full typed configuration space as
+\[
+\cX_{\HS}=\{(X,\Omega,\omega,V,A,W,A_W,\nabla,H,\ldots)\}/\cG,
+\]
+where \(\cG\) contains the declared gauge and geometric equivalences.  Let
+\[
+\cR_{\HS}:\cX_{\HS}\longrightarrow\cY_{\HS}
+\]
+collect all residuals, including \cref{eq:balanced,eq:hym,eq:bianchi} and
+the global conditions selected for the problem.  The full solution set is
+\[
+\cS_{\HS}=\cR_{\HS}^{-1}(0).
+\]
+This definition is deliberately demanding: all entries refer to one carrier
+and one compatible collection of bundles and connections.
 
-\begin{definition}[FCC in the torsional $\mathrm{SU}(3)$ slice]\label{def:FCC}
-In the invariant sector,
-\begin{equation}\label{eq:FCC}
-d(\J^{2})=0, \qquad \J\lrcorner F=0, \qquad \text{flux quantization}, \qquad
-dH=\frac{\alpha'}{4}\big(\Trgrav \Rplus^{2}-\Tr F^{2}\big),
-\end{equation}
-evaluated componentwise on an invariant $(2,2)$ basis.
+\section{The selection ladder}
+
+\subsection{Five distinct levels}
+
+\begin{definition}[Selection ladder]
+For a declared ansatz \(\iota:\cA\hookrightarrow\cX_{\HS}\), a test map
+\(P:\cY_{\HS}\to\cE\), and a flow \(\Phi_t\) when one is supplied, define:
+\begin{enumerate}[label=\textnormal{L\arabic*:},leftmargin=3.4em]
+\item \emph{projected consistency}: \(P\cR_{\HS}(\iota(a))=0\);
+\item \emph{full equation closure}: \(\cR_{\HS}(\iota(a))=0\);
+\item \emph{ansatz-local isolation}: \(a\) is isolated among full solutions
+      in \(\cA\), modulo the declared equivalences;
+\item \emph{dynamical attraction}: \(\iota(a)\) is an attracting fixed point
+      of a specified evolution on a specified domain;
+\item \emph{physical selection}: a source rule assigns the realized branch
+      or a probability law on the relevant basins.
+\end{enumerate}
 \end{definition}
 
-\begin{theorem}[FCC $\Leftrightarrow$ componentwise anomaly system]\label{thm:FCC}
-For left-invariant backgrounds on $X_6$, the FCC reduces to a finite linear system
-$u_i - v_i = -(4/\alpha')\,w_i$ on an invariant $(2,2)$ basis, with $(u_i),(v_i),(w_i)$
-the coefficients of $\Tr F^{2}$, $\Trgrav \Rplus^{2}$, and $dH$ respectively.
-Solutions are precisely the componentwise Bianchi solutions obtained by invariant expansion.
-\end{theorem}
+The ladder is not meant to devalue the lower levels.  A projected calculation
+can reject an ansatz cheaply.  Full closure can construct a genuine solution.
+Isolation can remove continuous moduli in the chosen family.  Attraction can
+show robustness.  The point is that the noun ``selection'' must say which
+level has been reached.
 
-\begin{corollary}[Discrete invariant loci]\label{cor:discrete}
-On Iwasawa, with the abelian flux choice below, $u_2=u_3=v_2=v_3=0$ and the single nontrivial
-component fixes $r_3$ for fixed integers. On $\LensNil$, the two independent components fix $R_1/R$
-for integer $(f,h)$; no invariant moduli remain in the invariant sector.
-\end{corollary}
+\subsection{Why component equations are not automatically complete}
 
-%===========================
-\section{Case I: Iwasawa (complex, balanced)}\label{sec:iwasawa}
-%===========================
-\paragraph{Invariant structure and normalization.}
-Let $(\omega_1,\omega_2,\omega_3)$ be a left-invariant $(1,0)$-frame on $H_3(\mathbb{C})$ with
-$d\omega_1=d\omega_2=0$, $d\omega_3=\omega_1\wedge\omega_2$.
-Set
+\begin{proposition}[Projected residual criterion]\label{prop:projected}
+For \(a\in\cA\),
 \[
-\J=\frac{\ii}{2}\sum_{j=1}^3 r_j^2\,\omega_j\wedge\bar\omega_j,\qquad
-\Om=\omega_1\wedge\omega_2\wedge\omega_3,
-\]
-and define
-\[
-a:=\frac{\ii}{2}\,\omega_1\wedge\bar\omega_1,\quad
-b:=\frac{\ii}{2}\,\omega_2\wedge\bar\omega_2,\quad
-c:=\frac{\ii}{2}\,\omega_3\wedge\bar\omega_3,
-\]
-\[
-\alpha_1:=a\wedge b,\quad \alpha_2:=a\wedge c,\quad \alpha_3:=b\wedge c,\qquad
-\int_X a\wedge b\wedge c=1.
-\]
-Then $H=\ii(\bar\partial-\partial)\J$ and
-\begin{equation}\label{eq:iwa-dH}
-dH=-4\,r_3^2\,\alpha_1,\qquad\text{(no components on $\alpha_{2,3}$).}
-\end{equation}
-
-\paragraph{Torsional spin curvature (gravitational trace).}
-In a real orthonormal invariant frame adapted to the above choice,
-\begin{equation}\label{eq:iwa-Rplus}
-\Trgrav\,\Rplus^{2}=\tilde v_1(R,r_3)\,\alpha_1,\qquad
-\tilde v_1(R,r_3)=8\,\frac{r_3^2}{r_1^2 r_2^2},
-\end{equation}
-with no support on $\alpha_{2,3}$.
-
-\paragraph{Abelian flux and primitivity.}
-Embed an abelian line in the commutant of $\mathrm{SU}(3)\subset E_8$ with
-\[
-F^{(1)}=2\pi\,T\,(n_1 a+n_2 b+n_3 c),\qquad \Tr(T^2)=1,\ n_i\in\mathbb{Z},
-\]
-so that
-\begin{equation}\label{eq:iwa-flux}
-\Tr\!\big(F^{(1)}\!\wedge F^{(1)}\big)=2(2\pi)^2\big(n_1 n_2\,\alpha_1+n_1 n_3\,\alpha_2+n_2 n_3\,\alpha_3\big).
-\end{equation}
-Primitivity $\J\lrcorner F^{(1)}=0$ is equivalent to
-\[
-n_1\,\frac{r_2^2}{r_3^2}+n_2\,\frac{r_1^2}{r_3^2}+n_3\,\frac{r_1^2}{r_2^2}=0.
-\]
-A convenient choice that enforces $u_2=u_3=0$ is two-line embedding with
-$(n^{(1)}_1,n^{(1)}_2,n^{(1)}_3)=(1,2,0)$ and $(n^{(2)}_1,n^{(2)}_2,n^{(2)}_3)=(-1,-2,0)$,
-giving $u_1=8(2\pi)^2$, $u_2=u_3=0$.
-
-\paragraph{Componentwise Bianchi/anomaly system and solution.}
-Expanding $\Tr F^{2}=\sum_i u_i\alpha_i$, $\Trgrav\Rplus^{2}=\sum_i v_i\alpha_i$,
-$dH=\sum_i w_i\alpha_i$ with $w_1=-4 r_3^2$, $w_{2,3}=0$, the Bianchi identity
-\eqref{eq:bianchi} becomes, componentwise,
-\begin{equation}\label{eq:iwa-comp}
-u_2=v_2,\qquad u_3=v_3,\qquad u_1-v_1=\frac{16}{\alpha'}\,r_3^2.
-\end{equation}
-If the non-abelian $\Tr F(E)^2$ vanishes in the invariant sector (as in the HYM choice we use), then
-$v_{2,3}=0$ and $v_1=\tilde v_1$. With $r_1=r_2=:R$ this yields
-\begin{equation}\label{eq:iwa-r3}
-8(2\pi)^2-\frac{8\,r_3^2}{R^4}=\frac{16}{\alpha'}\,r_3^2
+P\cR_{\HS}(\iota(a))=0
 \quad\Longrightarrow\quad
-r_3^2=\frac{8(2\pi)^2}{\,16/\alpha'+8/R^4\,}.
-\end{equation}
-
-\paragraph{Normalized cubic Yukawa.}
-On complex-parallelizable Iwasawa, any harmonic $(0,3)$-form is proportional to $\bar\Om$; with
-$\int_X\Om\wedge\bar\Om=1$ and the $E_6$ cubic normalized ($d_{abc}$ basis), the trilinear coupling
-\[
-\lambda_{123}=\int_X \Om\wedge \Tr(\Psi_1\wedge\Psi_2\wedge\Psi_3)
+\cR_{\HS}(\iota(a))\in\ker P.
 \]
-is a pure phase removable by a chiral rephasing, hence $\lambda_{123}=1$ at tree level.
-
-%===========================
-\section{Case II: $\LensNil$ (balanced, non-integrable)}\label{sec:lensnil}
-%===========================
-\paragraph{Invariant structure.}
-Take $X_6=L(3,1)\times(\Gamma\backslash \mathrm{Nil}_3)$ with left-invariant coframes
-$\{\eta_1,\eta_2,\eta_3\}$ on $L(3,1)$ and $\{\sigma_4,\sigma_5,\sigma_6\}$ on $\mathrm{Nil}_3$:
+Consequently, projected consistency implies full equation closure if and only
+if
 \[
-d\eta_i=\tfrac{1}{2}\,\epsilon_{ijk}\,\eta_j\wedge\eta_k,\qquad
-d\sigma_4=d\sigma_5=0,\qquad d\sigma_6=\sigma_4\wedge\sigma_5.
+\im(\cR_{\HS}\circ\iota)\cap\ker P=\{0\}.
+\tag{3.1}\label{eq:complete-test}
 \]
-Define
-\[
-\J=R_1^2\,\eta_1\wedge\eta_2+R_2^2\,\eta_3\wedge\sigma_6+R_3^2\,\sigma_4\wedge\sigma_5,\qquad
-\Om=(\eta_1+\ii\eta_2)\wedge(\eta_3+\ii\sigma_4)\wedge(\sigma_6+\ii\sigma_5).
-\]
-Then $d(\J^{2})=0$ iff $R_2=R_3=:R$ (balanced), while $d\Om\neq 0$ (non-integrable).
-
-\paragraph{Invariant $(2,2)$ basis and coefficients.}
-Let
-\[
-\beta_1:=\eta_{12}\wedge\eta_3\wedge\sigma_6,\qquad
-\beta_3:=\eta_3\wedge\sigma_{45}\wedge\sigma_6,
-\]
-and set the scale one-forms via $d\eta_i=\lambda\,\epsilon_{ijk}\eta_j\wedge\eta_k$ and
-$d\sigma_6=\nu\,\sigma_4\wedge\sigma_5$,
-with $\lambda\sim R_1^{-1}$, $\nu\sim R^{-1}$. A left-invariant computation gives
-\begin{equation}\label{eq:lens-dH}
-dH=W_1(R_1,R)\,\beta_1+W_3(R_1,R)\,\beta_3,\quad
-W_1=2\lambda^2 R^2,\quad W_3=\lambda\nu\,R^2,
-\end{equation}
-and (with the gravitational trace)
-\begin{equation}\label{eq:lens-Rplus}
-\Trgrav\Rplus^{2}=A(R_1,R)\,\beta_1+B(R_1,R)\,\beta_3,\quad
-A=4\lambda^2+O(\lambda^2\nu^2),\quad B=4\nu^2+O(\lambda^2\nu^2).
-\end{equation}
-
-\paragraph{Abelian flux and anomaly equations (discrete ratio).}
-For an abelian embedding with integers $(f,h)\in\mathbb{Z}^2$,
-\[
-\Tr F^2=2(2\pi)^2\big(f^2\,\beta_1+h^2\,\beta_3\big),
-\]
-and the two independent Bianchi components read
-\begin{equation}\label{eq:lens-anom}
-2(2\pi)^2 f^2 - A(R_1,R)= -\,\frac{4}{\alpha'}\,W_1(R_1,R),\qquad
-2(2\pi)^2 h^2 - B(R_1,R)= -\,\frac{4}{\alpha'}\,W_3(R_1,R).
-\end{equation}
-These two scalar equations fix the ratio $R_1/R$ for any fixed $(f,h)\neq (0,0)$, leaving no invariant
-moduli in the left-invariant sector.
-
-%===========================
-\section{Stability and control}\label{sec:stability}
-%===========================
-\begin{proposition}[OU mode control]\label{prop:OU}
-If each non-harmonic mode obeys $da=-\gamma\,a\,dt+\sqrt{\delta}\,dW_t$ with
-$\gamma=\kappa\,\lambda-L-\Delta_{\mathrm{curv}}>0$, then $\mathrm{Var}(a)=\delta/(2\gamma)$, and
-bundlewise stability holds iff $\sum (1+\lambda)\,\delta/(2\gamma) < \infty$.
 \end{proposition}
 
-\noindent(Statements by citation to the FP series; see App.~\ref{app:lemmas}.)
+\begin{proof}
+The first statement is the definition of the kernel.  The implication to a
+zero full residual holds precisely when the only residual both produced by
+the ansatz and invisible to \(P\) is the zero residual.
+\end{proof}
 
-%===========================
-\section{Minimal EFT extraction}\label{sec:eft}
-%===========================
-\paragraph{Gauge kinetic function.}
-At tree level in the heterotic string the four-dimensional gauge kinetic function is
-$f=S$ (the complex dilaton), so $g^{-2}=\mathrm{Re}\,S$ up to threshold corrections. Our backgrounds preserve
-this standard relation in the left-invariant truncation; torsional effects enter through higher-order
-$\alpha'$ and one-loop thresholds, which we do not attempt to compute here.
+Condition \cref{eq:complete-test} is the algebraic form of a consistent
+truncation check.  Expanding the Bianchi identity on a basis of invariant
+\((2,2)\)-forms is complete for that residual only if the residual is known
+to lie entirely in the tested invariant space.  It does not by itself prove
+the Dolbeault integrability of a printed connection, the existence of global
+bundle transition maps, stability, a global gerbe, or the discarded field
+equations.
 
-\paragraph{Iwasawa cubic Yukawa.}
-On complex-parallelizable Iwasawa, with $\int_X \Om\wedge\bar\Om=1$ and the $E_6$ cubic normalized
-($d_{abc}$), the trilinear coupling
+\begin{example}
+Take \(\cY_{\HS}=\R^2\), let \(P(x,y)=x\), and let a proposed ansatz produce
+\(\cR_{\HS}(\iota(a))=(0,1)\).  The tested coefficient vanishes, but the full
+residual does not.  Heterotic analogues arise whenever one checks invariant
+Bianchi coefficients while leaving a nonzero Maurer--Cartan, HYM, global
+bundle, or non-invariant residual untested.
+\end{example}
+
+\subsection{Why isolated in an ansatz is not globally unique}
+
+\begin{theorem}[Ansatz isolation theorem]\label{thm:ansatz}
+Assume \(a_\star\in\cA\) satisfies the full equations and that the derivative
 \[
-\lambda_{123}=\int_X \Om \wedge \Tr(\Psi_1\wedge\Psi_2\wedge\Psi_3)
+D(\cR_{\HS}\circ\iota)_{a_\star}:T_{a_\star}\cA
+\longrightarrow\cY_{\HS}
 \]
-is a pure phase that can be removed by a chiral rephasing; thus $\lambda_{123}=1$ at tree level.
-This provides a convenient normalized starting point for hierarchical textures once small corrections
-(e.g.\ worldsheet instantons or flux-induced mixings) are included.
+is injective with a bounded left inverse on its image.  Then \(a_\star\) is
+locally isolated in \(\cA\), modulo any quotient directions removed from
+\(T_{a_\star}\cA\).  This conclusion does not imply local or global
+uniqueness in \(\cX_{\HS}\).
+\end{theorem}
 
-%===========================
-\section{Related work}\label{sec:related}
-%===========================
-Work on torsional heterotic compactifications includes the original Strominger/Hull system with $R_+$,
-non-K\"ahler solutions on torus bundles and the Fu--Yau class, and many nil/solvmanifold $\mathrm{SU}(3)$-structures
-\cite{Strominger1986,Hull1986,FuYau2008}. Our contribution is orthogonal: we do not enlarge the solution class
-but rather give a rigorous \emph{selection} mechanism that reduces, in the left-invariant slice, to the familiar
-anomaly/primitivity/quantization system, and we exhibit two compact, fully worked examples with
-coefficient-level control and discrete parameter loci.
+\begin{proof}
+The inverse or implicit function theorem gives local isolation on the
+declared finite-dimensional slice after quotient directions are removed.
+Directions transverse to \(\iota(\cA)\) are absent from the derivative.
+Other full solutions may therefore lie arbitrarily near the slice, or on
+disconnected components not meeting it at all.
+\end{proof}
 
-%===========================
-\section{Conclusions}\label{sec:concl}
-%===========================
-We established that, in the left-invariant torsional $\mathrm{SU}(3)$ slice, the coherent-sector
-contraction condition (FCC) coincides with the standard anomaly/primitivity/quantization system
-when evaluated componentwise on invariant $(2,2)$ bases. As a result, selection picks discrete
-parameter loci on two explicit compact examples: Iwasawa (fixing $r_3$) and $\LensNil$ (fixing $R_1/R$).
-The coefficient catalogues and normalized Iwasawa Yukawa provide reproducible anchors for further work.
-Natural extensions include non-abelian visible flux breaking, higher $\alpha'$ corrections,
-other nil/solv examples, and worldsheet checks.
+To promote ansatz uniqueness to global uniqueness, one would at minimum need
+an exhaustion theorem showing that every admissible solution orbit meets the
+ansatz and a faithfulness theorem showing that distinct full orbits are not
+identified there.  Such statements are rare and are not consequences of
+Nomizu reduction alone.
 
-%===========================
-\appendix
-%===========================
+\subsection{What attraction and physical selection add}
 
-\section{Coefficient catalogues}\label{app:coeffs}
-\subsection*{A.1 Iwasawa coefficients (invariant frame)}\label{app:coeffs-iwa}
-\begin{align*}
-& a=\frac{\ii}{2}\,\omega_1\wedge\bar\omega_1,\quad
-  b=\frac{\ii}{2}\,\omega_2\wedge\bar\omega_2,\quad
-  c=\frac{\ii}{2}\,\omega_3\wedge\bar\omega_3,\\
-& \alpha_1=a\wedge b,\ \alpha_2=a\wedge c,\ \alpha_3=b\wedge c,\qquad
-  \int_X a\wedge b\wedge c=1,\\[2pt]
-& dH=-4\,r_3^2\,\alpha_1,\qquad
-  \Trgrav\Rplus^2=\tilde v_1\,\alpha_1,\quad
-  \tilde v_1=8\,\frac{r_3^2}{r_1^2 r_2^2},\\[2pt]
-& \Tr\!\big(F^{(1)}\!\wedge F^{(1)}\big)=2(2\pi)^2\big(n_1 n_2\,\alpha_1+n_1 n_3\,\alpha_2+n_2 n_3\,\alpha_3\big),\\[2pt]
-& \text{Bianchi (components):}\quad
-  u_2=v_2,\ u_3=v_3,\ u_1-v_1=\frac{16}{\alpha'}\,r_3^2.
-\end{align*}
-
-\subsection*{A.2 $\LensNil$ coefficients (balanced, non-integrable)}\label{app:coeffs-lens}
-Let $R_2=R_3=:R$, and define the scale parameters by $d\eta_i=\lambda\,\epsilon_{ijk}\eta_j\wedge\eta_k$,
-$d\sigma_6=\nu\,\sigma_4\wedge\sigma_5$. With
+\begin{definition}[Dynamical and physical selection data]
+Dynamical attraction is typed by a semiflow
+\(\Phi_t:\cD\to\cD\subseteq\cX_{\HS}\), a fixed point \(x_\star\), and a
+basin
 \[
-\beta_1:=\eta_{12}\wedge\eta_3\wedge\sigma_6,\qquad
-\beta_3:=\eta_3\wedge\sigma_{45}\wedge\sigma_6,
+\cB(x_\star)=\{x\in\cD:\Phi_t(x)\to x_\star\}.
 \]
-one has
-\begin{align*}
-& dH=W_1(R_1,R)\,\beta_1+W_3(R_1,R)\,\beta_3,\qquad
-  W_1=2\lambda^2 R^2,\quad W_3=\lambda\nu R^2,\\[2pt]
-& \Trgrav\Rplus^{2}=A(R_1,R)\,\beta_1+B(R_1,R)\,\beta_3,\qquad
-  A=4\lambda^2+O(\lambda^2\nu^2),\ \ B=4\nu^2+O(\lambda^2\nu^2),\\[2pt]
-& \Tr F^2=2(2\pi)^2\big(f^2\beta_1+h^2\beta_3\big),\\[2pt]
-& \text{Bianchi (components):}\quad
-  2(2\pi)^2 f^2 - A= -\,\frac{4}{\alpha'}\,W_1,\qquad
-  2(2\pi)^2 h^2 - B= -\,\frac{4}{\alpha'}\,W_3.
-\end{align*}
+Physical selection additionally requires a source object, for example an
+initial measure \(\mu_0\), a deterministic branch functional, or an
+equivalent preparation law.  With a measure, the basin weight is
+\(\mu_0(\cB(x_\star))\).
+\end{definition}
 
-\section{OU and curvature lemmas (statements)}\label{app:lemmas}
+\begin{theorem}[No selection from equations alone]\label{thm:no-selection}
+The zero set \(\cS_{\HS}\) determines neither a semiflow, its basins, nor a
+measure on those basins.  Even a singleton zero set inside \(\cA\) supplies
+no physical-selection probability without additional source data.
+\end{theorem}
 
-\paragraph{OU variance and summability.}
-For a mode obeying $da=-\gamma a\,dt+\sqrt{\delta}\,dW_t$ with $\gamma>0$, the stationary variance is
-$\mathrm{Var}(a)=\delta/(2\gamma)$. Bundlewise stability is equivalent to positivity of all $\gamma$ and the
-summability condition $\sum (1+\lambda)\,\delta/(2\gamma)<\infty$.
+\begin{proof}
+Distinct vector fields can share the same zero set while assigning a fixed
+point different stability types.  For example, on \(\R\), both
+\(\dot x=-x\) and \(\dot x=x\) have zero set \(\{0\}\), but the first attracts
+and the second repels.  Likewise, infinitely many mutually singular measures
+can be placed on a fixed family of basins.  Neither object is determined by
+the equation \(x=0\).
+\end{proof}
 
-\paragraph{Curvature remainder.}
-In a bounded-geometry regime the effective damping gains a representation-correct Bochner contribution,
-so that $\gamma=\kappa\,\lambda-L-\Delta_{\mathrm{curv}}$, where $\Delta_{\mathrm{curv}}$ depends on curvature bounds of the base/fiber
-and the representation (e.g.\ spinors vs.\ forms). In particular, for large radii the curvature remainder is
-small and the invariant sector remains dynamically closed provided $\gamma>0$ modewise.
+\section{Where MTT enters}
 
-\medskip
-\noindent(Proofs by citation to the FP series listed in the References.)
+MTT aims to supply structure above the lower equations: an admissible upper
+carrier, a reduction map, an evolution, and fixed-point or continuation
+rules.  That ambition is directly relevant to vacuum selection, but only
+after the upper and lower objects are connected.
 
-\section{Worldsheet $\sigma$--model check}\label{sec:ws-check}
+Let \(\cM\) be an MTT configuration space with vector field \(V_{\MTT}\), and
+let
+\[
+\mathfrak{B}:\cM\longrightarrow\cX_{\HS}
+\]
+be a typed bridge.  If a lower Hull--Strominger evolution \(V_{\HS}\) is
+declared, the essential compatibility equation is
+\[
+D\mathfrak{B}_m\,V_{\MTT}(m)
+=V_{\HS}(\mathfrak{B}(m)).
+\tag{4.1}\label{eq:intertwine}
+\]
+The adjacent MTT-to-Hull--Strominger paper owns the exact and residual
+fixed-point descent theorems based on this equation
+\cite{NeroMTTStrominger2026}.  We do not duplicate them here.  Their lesson
+for selection is simple: an upper fixed point descends to a lower fixed point
+only after the bridge and the flow intertwining are supplied.  A rank match,
+shared notation, or formal similarity of constraints is not enough.
 
-\paragraph{Aim.}
-To record a succinct, self-contained worldsheet verification that the fixed-point background
-$(G,B,\Phi;A)$ in the heterotic flux slice is conformal at leading order in $\alpha'$, i.e.\ $\beta=0$,
-with the torsional choice $R_+$ for the tangent-bundle connection.
+There are nevertheless narrower senses in which MTT already selects data.
+The current finite program proves an exact \(q=79\) arithmetic branch under
+its declared discrete assumptions, and it selects a retarded representative
+within a conjugate orientation orbit.  Those are genuine finite branch
+selections.  They do not by themselves select a smooth compactification,
+because the visible and hidden bundles, common HYM chamber, differential
+Bianchi representative, and continuum intertwiner remain separate objects.
 
-\subsection{Setup and conventions}
-We use the heterotic Polyakov action in conformal gauge with target data $(G,B,\Phi;A)$ and
-left-moving fermions coupled to $A$; see \cite{Polchinski1998,GSW1987}.
-We adopt the supersymmetric torsional connection $R_+$ on $TX$, so that curvature terms in the
-beta-functions are built from $R_+$ \cite{Strominger1986,Bismut1989}.
+\section{Re-auditing the two former case studies}
 
-\subsection{One-loop $\beta$--functions (bosonic sector)}
-To leading order in $\alpha'$ and suppressing scheme-dependent local redefinitions,
-\begin{align}
-\beta^{(G)}_{MN} &= R_{MN}(G) - \tfrac14 H_{MPQ}H_N{}^{PQ} + 2\nabla_M\nabla_N\Phi \,+\, O(\alpha'),\\
-\beta^{(B)}_{MN} &= -\tfrac12 \nabla^P H_{PMN} + \nabla^P\Phi\, H_{PMN} \,+\, O(\alpha'),\\
-\beta^{(\Phi)}   &= \tfrac{D-26}{6} - \tfrac12 \nabla^2\Phi + (\nabla\Phi)^2 - \tfrac1{24}H^2 \,+\, O(\alpha'),
-\end{align}
-with $D=10$ and $H$ the gauge-invariant Green–Schwarz 3-form. The heterotic gauge beta-function
-vanishes for a Hermitian–Yang–Mills (HYM) bundle on a Gauduchon metric. Standard derivations:
-\cite{Callan1985,FradkinTseytlin1985,Polchinski1998}.
+\subsection{Iwasawa: valid local geometry, invalid physical chain}
 
-\subsection{Equivalence to target-space equations at the fixed point}
-At the MTT coherent fixed point we impose:
-(i) conformally balanced $d(e^{-2\Phi}J\wedge J)=0$,
-(ii) complex integrability ($W_1=W_2=0$), and
-(iii) $H_b=dB-\tfrac{\alpha'}4(\omega_3(A)-\omega_3(\omega_+))$ with $R_+$.
-Using the dictionary in \S3 and \S5, the conditions $\beta^{(G)}=\beta^{(B)}=0$ are equivalent to the
-Hull--Strominger equations (conformally balanced metric and $H=i(\bar\partial-\partial)J$ up to the
-Green--Schwarz correction), while $\beta^{(\Phi)}=0$ is automatic for $D=10$ up to a constant shift
-absorbed by $e^{-2\Phi}$ normalization \cite{Strominger1986,Bismut1989,Polchinski1998,GSW1987}.
+Let \(X=\Gamma\backslash H_3(\C)\) be the Iwasawa manifold with invariant
+\((1,0)\)-forms
+\[
+\dd\omega^1=\dd\omega^2=0,\qquad
+\dd\omega^3=\omega^1\wedge\omega^2.
+\]
+For a diagonal Hermitian form
+\[
+\omega=\frac{\mathrm{i}}{2}
+\sum_{j=1}^{3}r_j^2\omega^j\wedge\overline{\omega^j},
+\]
+the local complex-parallelizable and balanced calculations are legitimate.
+The torsion \(H=\mathrm{i}(\bar\partial-\partial)\omega\) and its derivative
+can be computed exactly in the invariant frame.
 
-\subsection{Gauge sector and HYM}
-On a Gauduchon metric the HYM equations are the vanishing of the heterotic gauge $\beta$ to leading
-order; see \cite{LiYau1987,Buchdahl1988}. This matches our EL equation for $A$ from the selection
-functional $\Xi$ (Theorem~5.2).
+The former paper then attached a rank-three visible-bundle construction,
+component anomaly match, generation count, and normalized cubic Yukawa.
+The current audited calculation shows why that chain fails
+\cite{NeroFluxAudit2026}:
+\begin{enumerate}[leftmargin=2em]
+\item a form used as Chern data is not closed;
+\item the advertised monad lacks globally constructed line bundles and
+      holomorphic maps;
+\item the printed Dolbeault matrix has a nonzero Maurer--Cartan residual;
+\item the unique one-entry repair in the stated matrix ansatz lies in one
+      complex-gauge orbit and has a non-scalar holomorphic commutant, so it
+      does not supply the claimed stable simple rank-three bundle;
+\item the stated trivial carrier forces \(c_3=0\);
+\item the Bianchi, generation, and Yukawa conclusions depending on that
+      bundle therefore do not follow.
+\end{enumerate}
 
-\subsection{Global issues: Bianchi identity and Freed--Witten}
-The worldsheet theory is globally well-defined when the gerbe curvature $H_b$ satisfies the Bianchi
-identity
-$dH_b=\tfrac{\alpha'}4\big(\Tr F\wedge F - \Tr R_+\wedge R_+\big)$.
-This coincides with the $K$--multiplier constraint in $\Xi$; Freed--Witten consistency follows from
-the integral cohomology class of $H_b$ chosen in the topological sector fixed in \S5 (\emph{cf.} \cite{Polchinski1998}).
+This is not a no-go theorem for all invariant Iwasawa solutions.  Such
+solutions exist in the literature for carefully chosen connections and
+bundles \cite{FeiYau2015,OtalUgarteVillacampa2016}.  It is a no-go for using
+the particular invalid bundle chain as the selection witness in this paper.
 
-\subsection{Scheme dependence and the $R_+$ choice}
-Differences between $R_+$ and $R_-$ correspond to local field redefinitions at $O(\alpha')$;
-our selection functional uses $R_+$, which is the supersymmetric choice and matches the heterotic
-$\beta$--function scheme used in \cite{Strominger1986,Bismut1989}.
+\subsection{Lens--Nil: an auxiliary real structure}
 
-\subsection{Higher orders (remarks)}
-At $O(\alpha'^2)$, curvature-squared and higher-derivative terms appear in both spacetime equations
-and $\beta$--functions; these can be incorporated in $\Xi$ by additional local functionals. The
-contraction/Lyapunov parts of the selection proof rely on sectoriality and bounded geometry and
-are robust under such perturbative additions.
+The former second example used
+\[
+L(3,1)\times(\Gamma\backslash\mathrm{Nil}_3)
+\]
+with a balanced real \(\SU(3)\)-structure but explicitly found
+\(\dd\Omega\neq0\).  The Hull--Strominger system requires a complex
+threefold with integrable complex structure and holomorphic volume form.
+Thus the displayed Lens--Nil object is not a point of \(\cX_{\HS}\), and
+solving two formal coefficient equations on it cannot select a heterotic
+vacuum.
 
-\subsection{Explicit checks on Fu--Yau and Iwasawa models}
-For the Fu--Yau class, conformal balance and the HYM condition are satisfied; the Bianchi identity
-holds with $R_+$ for appropriate topological data. For Iwasawa, $d(J^2)=0$, $H=i(\bar\partial-\partial)J$,
-and an HYM bundle exist; the Bianchi identity is solved componentwise in the invariant $(2,2)$ sector.
-These match the assumptions used in our selection theorem and provide concrete worldsheet-consistent
-backgrounds (see \S8 and Appendix~E for models). % (Optional explicit numbers live in companion papers.)
+Lens and Nil data may still be useful as auxiliary transport, filtration,
+spectral, or finite-carrier models inside MTT.  That role is different from
+identifying their literal product with the selected global compactification.
+In particular, it is not the \(q=79\) Fu--Yau-oriented carrier.
+
+\subsection{Status table}
+
+\begin{center}
+\small
+\begin{tabular}{p{0.31\textwidth}p{0.18\textwidth}p{0.41\textwidth}}
+\toprule
+Object & Current status & Meaning for selection\\
+\midrule
+Diagonal Iwasawa geometry and local torsion & retained &
+Valid lower geometric calculation; no physical bundle is selected.\\
+Old Iwasawa visible bundle & withdrawn &
+Cannot source anomaly, index, or Yukawa conclusions.\\
+Old normalized Iwasawa Yukawa & withdrawn &
+Normalization of \(\Omega\) does not determine normalized matter
+wavefunctions or their physical overlap.\\
+Lens--Nil compactification & retired as physical &
+Non-integrable auxiliary real \(\SU(3)\)-structure only.\\
+\(q=79\) arithmetic branch & exact at finite tier &
+Selects a discrete branch under stated assumptions, not a smooth vacuum.\\
+Rank-two Cech/HYM packets & finite or rank-two certified &
+Useful ingredients; no automatic rank-three physical transfer.\\
+Physical visible--hidden Fu--Yau tuple & open &
+Required before compactification selection can be claimed.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{A correct theorem for finite ansatz calculations}
+
+The finite calculation can still support a rigorous theorem when its scope
+is stated honestly.
+
+\begin{theorem}[Finite-ansatz conclusion theorem]\label{thm:finite}
+Let \(\cA\) be a finite-dimensional ansatz and let \(a_\star\in\cA\).
+Assume:
+\begin{enumerate}[label=\textnormal{(F\arabic*)},leftmargin=3.4em]
+\item \(\iota(a)\) defines global typed data in \(\cX_{\HS}\) for every
+      \(a\) in a neighborhood of \(a_\star\);
+\item the tested residual map \(P\) satisfies the completeness condition
+      \cref{eq:complete-test};
+\item quantization, stability, gauge quotient, and global bundle or gerbe
+      conditions are included rather than inferred from local forms;
+\item \(P\cR_{\HS}(\iota(a_\star))=0\);
+\item the quotient derivative at \(a_\star\) is injective with a bounded
+      left inverse.
+\end{enumerate}
+Then \(\iota(a_\star)\) is a full Hull--Strominger solution locally isolated
+inside the declared ansatz, modulo the declared equivalences.
+
+If, in addition, a flow preserving \(\iota(\cA)\) is specified and its
+linearization has a certified spectral gap with nonlinear remainder
+controlled on a neighborhood, then \(a_\star\) is locally attracting in that
+neighborhood.  Neither conclusion establishes global uniqueness or physical
+selection without exhaustion and source hypotheses.
+\end{theorem}
+
+\begin{proof}
+By (F2) and (F4), \cref{prop:projected} gives full equation closure.
+Assumptions (F1) and (F3) ensure that this zero is a zero of the correctly
+typed global problem rather than a local symbolic surrogate.  Assumption
+(F5) and \cref{thm:ansatz} give isolation in the quotient ansatz.  The final
+claim is the standard linearized-stability conclusion once the flow, gap,
+domain invariance, and nonlinear bound are supplied.  The missing global and
+source conclusions are excluded by \cref{thm:ansatz,thm:no-selection}.
+\end{proof}
+
+This theorem replaces the former ``FCC equals component equations''
+statement.  It is stronger because its hypotheses reveal exactly what a
+candidate must provide, and weaker in the necessary way because it does not
+rename consistency as selection.
+
+\section{The current q79 compactification boundary}
+
+\subsection{What is already available}
+
+The selected \(q=79\) program contains nontrivial and reusable ingredients:
+\begin{itemize}[leftmargin=2em]
+\item an exact arithmetic theorem selecting \(q=79\) on the declared finite
+      branch;
+\item a literal finite Cech witness;
+\item a certified finite projected HYM approximation;
+\item a selected rank-two continuum HYM witness with Fourier-tail and Wiener
+      contraction control;
+\item a retarded orientation representative inside the finite conjugate
+      branch pair.
+\end{itemize}
+These facts improve the search problem.  They constrain which branch and
+which local analytic architecture should be used.  They do not yet satisfy
+the same-carrier requirement of \cref{eq:balanced,eq:hym,eq:bianchi}.
+
+\subsection{Physical compactification-selection certificate}
+
+A future claim that MTT selects one heterotic compactification should provide
+at least the following certificate:
+\begin{enumerate}[label=\textnormal{C\arabic*:},leftmargin=3.4em]
+\item one global complex \(q=79\) Fu--Yau-oriented carrier with its balanced
+      metric and holomorphic volume form;
+\item explicit stable rank-three visible and compatible hidden holomorphic
+      bundles in one positive Gauduchon/HYM chamber;
+\item HYM connections and the differential Green--Schwarz identity on that
+      same tuple, together with global flux/gerbe data;
+\item a connection-preserving MTT bridge and the flow intertwining
+      \cref{eq:intertwine}, or a certified residual theorem;
+\item a basin or contraction proof on a declared domain if dynamical
+      attraction is claimed;
+\item an exhaustion theorem or an explicitly restricted candidate class if
+      uniqueness is claimed;
+\item a preparation, branch, or measure rule if physical realization or
+      probabilities are claimed;
+\item matter cohomology, normalized overlap data, and the worldsheet/IR
+      endpoint for phenomenological claims.
+\end{enumerate}
+
+The first three rows are the open physical Hull--Strominger endpoint.  The
+fourth is the open geometry-to-operator naturality problem.  Later rows
+should not be used to hide those earlier dependencies.
+
+\section{Worldsheet and effective-field-theory boundaries}
+
+The first version claimed a succinct worldsheet verification, but the
+displayed beta functions mixed bosonic-string central-charge notation with a
+heterotic ten-dimensional target and treated the dilaton equation as
+automatic.  That conclusion is withdrawn.  Supersymmetry, anomaly
+cancellation, equations of motion, and worldsheet conformal invariance are
+related but convention- and order-dependent statements.  The choice of
+tangent connection also participates in field redefinitions and the anomaly
+equation \cite{DelaOssaSvanes2014}.
+
+For a valid Hull--Strominger tuple, leading-order sigma-model reasoning
+provides an important consistency check.  It does not repair a nonintegrable
+target or an undefined bundle, and it does not by itself prove an all-orders
+SCFT.  Fu--Yau geometry and Anomaly-flow results provide established
+mathematical routes to lower fixed points
+\cite{FuYau2008,PhongPicardZhang2018}; they do not supply the missing MTT
+source map automatically.
+
+The former EFT statements are narrowed for the same reason.  A physical
+Yukawa coupling requires identified matter cohomology classes, normalized
+zero modes, bundle-valued products, a Hermitian inner product, and a
+four-dimensional normalization and matching convention.  Rescaling
+\(\Omega\) or choosing a basis in an invariant form space cannot set that
+physical coupling to one.  Separate finite/profile Yukawa results elsewhere
+in the MTT corpus are unaffected, but they cannot be retroactively attributed
+to the invalid Iwasawa construction.
+
+\section{Why the corrected result remains useful}
+
+The correction changes the role of finite invariant calculations without
+making them pointless.
+
+\paragraph{They are efficient obstruction detectors.}
+A nonzero projected residual disproves a candidate immediately.  Failure of
+integrability, closure, stability, or a characteristic-class condition can
+retire an entire branch before expensive continuum work.
+
+\paragraph{They can produce candidate seeds.}
+When the global data exist and the truncation is complete, a finite solution
+can seed an implicit-function, perturbative, Galerkin, or flow construction.
+The literature on stable bundles, Fu--Yau geometry, and invariant solutions
+shows several ways in which such seeds can become genuine solutions.
+
+\paragraph{They make the remaining assumptions visible.}
+The selection ladder prevents a common source of apparent progress:
+relabeling a solved constraint as an attractor or a finite branch as the
+realized universe.  In MTT this is especially valuable because the theory is
+explicitly attempting to move upstream from lower equations to their
+carrier, evolution, and source.
+
+\paragraph{They preserve narrower exact selections.}
+The exact \(q=79\) arithmetic and retarded-orientation choices are not erased
+because the physical compactification is open.  They are retained as
+properly typed finite selections and can constrain the eventual global
+construction.
+
+\section{Conclusion}
+
+The corrected conclusion is precise.  Componentwise left-invariant equations
+can establish projected consistency.  With global typed data and a complete
+residual test they can establish a full solution.  With a nonsingular
+quotient derivative they can establish isolation inside the ansatz.  With a
+specified flow and certified stability bounds they can establish attraction.
+Only an exhaustion statement and a source or preparation rule can support a
+claim of physical vacuum selection.
+
+The former Iwasawa and Lens--Nil examples do not reach those levels: the
+Iwasawa physical bundle chain fails, and Lens--Nil is not a complex
+Hull--Strominger target.  The exact \(q=79\) finite branch and rank-two
+Cech/HYM results remain real progress at narrower tiers.  The next physical
+advance is therefore not another reformulation of the component equations.
+It is the common rank-three visible--hidden Fu--Yau tuple, followed by the
+connection-preserving MTT bridge, its attraction domain, and its source rule.
 
 
-\section{Reproducibility notes}\label{app:repro}
-Frames, orientations, normalizations, sign conventions, and parameter choices match the conventions
-used in the main text. In particular: (1) Iwasawa orientation $\int_X a\wedge b\wedge c=1$, with
-$dH$ as in \eqref{eq:iwa-dH} and $\Trgrav\Rplus^2$ as in \eqref{eq:iwa-Rplus}; (2) $\LensNil$ scale
-parameters $\lambda \sim R_1^{-1}$ and $\nu \sim R^{-1}$, with coefficients as in
-\eqref{eq:lens-dH}--\eqref{eq:lens-anom}. All numbers needed to reproduce the componentwise anomaly
-solutions are tabulated in App.~\ref{app:coeffs}.
 
-\bigskip
-%\nocite{*}
-\bibliographystyle{plain} % or abbrv, unsrt, alpha, etc
+\bibliographystyle{plain}
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The q79 theorem and audit, literal finite rank-two Cech witness, and rank-two Wiener-contraction certificate are direct evidence only for the finite branch, topological witness, and declared rank-two analytic tier. They do not establish global exhaustion, a physical rank-three visible-hidden Hull-Strominger tuple, dynamical attraction of that tuple, or a source measure selecting one realized compactification.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A07/literal_cech_witness} (\emph{derived exact}).\par Literal 81-entry, 729-cocycle finite Cech witness.
+\item \path{A11/q79_exact_audit} (\emph{derived exact}).\par Executable q=79 exact-branch audit.
+\item \path{A11/q79_exact_theorem} (\emph{derived exact}).\par CRT q=79 theorem on the selected exact branch.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
+
 \bibliography{main}
 
 \end{document}
-\typeout{get arXiv to do 4 passes: Label(s) may have changed. Rerun}

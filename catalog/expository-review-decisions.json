@@ -1,6 +1,14 @@
 {
   "schema": "mtt.expository-review-decisions.v1",
   "papers": {
+    "modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Rebuilt around a five-level selection ladder separating projected consistency, full equation closure, ansatz-local isolation, dynamical attraction, and physical selection. The paper proves the projected-residual completeness criterion, ansatz isolation theorem, no-selection-from-equations theorem, and finite-ansatz conclusion theorem; imports rather than duplicates the neighboring flow-intertwining theorem; withdraws the invalid Iwasawa bundle/anomaly/Yukawa chain and physical Lens-Nil claim; retains q79/Cech/rank-two HYM evidence at its declared tiers; and the 11-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "4501582a4a3483668d18eba74773813fc8d4e23e4863b271270f1454f2f9f4f6",
+      "reviewed_pdf_sha256": "2aeced97a05d6365f45ce828f22b7998613761016c515186eceb17fc388ba044",
+      "reviewed_source_tree_sha256": "0fa961119004f39dcc7d337f1da0d8731eb0e6dfe58700c3140f26250cb87ac9"
+    },
     "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83": {
       "status": "reviewed",
       "reviewed_on": "2026-07-30",

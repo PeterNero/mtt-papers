@@ -6,19 +6,18 @@
     "critical": 10,
     "light": 12,
     "low": 1,
-    "major": 10,
+    "major": 9,
     "moderate": 6,
     "reference_ready": 2,
-    "reviewed": 98
+    "reviewed": 99
   },
   "missing_dimension_counts": {
-    "argument_flow": 43,
-    "conclusion": 16,
+    "argument_flow": 42,
+    "conclusion": 15,
     "concrete_foothold": 44,
-    "limitations": 1,
     "object_intuition": 93,
-    "orientation": 37,
-    "result_interpretation": 16
+    "orientation": 38,
+    "result_interpretation": 15
   },
   "forbidden_boilerplate_hits": [],
   "rows": [
@@ -2133,7 +2132,7 @@
       "heuristic_priority": "major",
       "review_status": "reviewed",
       "reviewed_on": "2026-07-30",
-      "review_note": "Rebuilt as a conditional fixed-point correspondence: the invalid twisted differential, coercive selection potential, automatic contraction, global-minimizer, and selected Fu-Yau claims are withdrawn; a typed MTT-to-Hull-Strominger bridge, exact flow-intertwining descent theorem, generator-defect bound, and separate contraction-basin criterion are supplied; q79 finite/topological/rank-two evidence is retained at its declared tiers, and the 11-page PDF was visually inspected.",
+      "review_note": "Rebuilt as a conditional fixed-point correspondence: the invalid twisted differential, coercive selection potential, automatic contraction, global-minimizer, and selected Fu-Yau claims are withdrawn; a typed MTT-to-Hull-Strominger bridge, exact flow-intertwining descent theorem, generator-defect bound, and separate contraction-basin criterion are supplied; q79 finite/topological/rank-two evidence is retained at its declared tiers through the managed reproducibility section, and the 12-page PDF was visually inspected.",
       "missing_dimensions": [
         "orientation",
         "object_intuition"
@@ -2141,31 +2140,28 @@
     },
     {
       "paper_id": "modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927",
-      "title": "Modal Triplet Theory: MTT as a Selection Principle for Heterotic Flux Compactifications Equivalence in the Left-Invariant Slice and Two Explicit Case Studies",
-      "total_words": 2244,
-      "narrative_words": 1771,
-      "formal_results": 5,
-      "proofs": 0,
-      "narrative_words_per_result": 354.2,
-      "orientation": true,
+      "title": "Modal Triplet Theory and Heterotic Vacuum Selection: What Finite Ansatz Calculations Prove, What Attraction Adds, and What Physical Selection Still Requires",
+      "total_words": 3463,
+      "narrative_words": 2787,
+      "formal_results": 6,
+      "proofs": 4,
+      "narrative_words_per_result": 464.5,
+      "orientation": false,
       "object_intuition": false,
-      "argument_flow": false,
-      "result_interpretation": false,
+      "argument_flow": true,
+      "result_interpretation": true,
       "concrete_foothold": true,
-      "limitations": false,
-      "conclusion": false,
-      "coverage_dimensions": 2,
-      "audit_priority": "major",
-      "heuristic_priority": "major",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "limitations": true,
+      "conclusion": true,
+      "coverage_dimensions": 5,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "light",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "review_note": "Rebuilt around a five-level selection ladder separating projected consistency, full equation closure, ansatz-local isolation, dynamical attraction, and physical selection. The paper proves the projected-residual completeness criterion, ansatz isolation theorem, no-selection-from-equations theorem, and finite-ansatz conclusion theorem; imports rather than duplicates the neighboring flow-intertwining theorem; withdraws the invalid Iwasawa bundle/anomaly/Yukawa chain and physical Lens-Nil claim; retains q79/Cech/rank-two HYM evidence at its declared tiers; and the 11-page PDF was visually inspected.",
       "missing_dimensions": [
-        "object_intuition",
-        "argument_flow",
-        "result_interpretation",
-        "limitations",
-        "conclusion"
+        "orientation",
+        "object_intuition"
       ]
     },
     {

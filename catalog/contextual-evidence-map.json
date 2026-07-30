@@ -184,6 +184,16 @@
       "result_set": "heterotic4",
       "scope": "The q79 arithmetic theorem and audit, literal finite rank-two Cech witness, and rank-two Wiener-contraction certificate provide direct evidence only at their declared finite, topological, or rank-two analytic tiers. They do not construct the common physical rank-three visible-hidden Hull-Strominger background, differential Green-Schwarz representative, flux gerbe, worldsheet endpoint, or the typed MTT-to-Anomaly-flow intertwiner required by the conditional fixed-point theorem."
     },
+    "modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927": {
+      "direct_result_ids": [
+        "A19/hym_wiener_contraction",
+        "A07/literal_cech_witness",
+        "A11/q79_exact_audit",
+        "A11/q79_exact_theorem"
+      ],
+      "result_set": "heterotic4",
+      "scope": "The q79 theorem and audit, literal finite rank-two Cech witness, and rank-two Wiener-contraction certificate are direct evidence only for the finite branch, topological witness, and declared rank-two analytic tier. They do not establish global exhaustion, a physical rank-three visible-hidden Hull-Strominger tuple, dynamical attraction of that tuple, or a source measure selecting one realized compactification."
+    },
     "a-third-corner-shadow-bridge-asymptotic-safety-the-stri-37bbd5a2": {
       "direct_result_ids": [],
       "result_set": "open1",

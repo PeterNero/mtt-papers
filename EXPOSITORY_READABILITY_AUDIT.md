@@ -11,24 +11,23 @@ Canonical papers audited: **139**.
 | Priority | Papers |
 | --- | ---: |
 | critical | 10 |
-| major | 10 |
+| major | 9 |
 | moderate | 6 |
 | light | 12 |
 | low | 1 |
-| reviewed | 98 |
+| reviewed | 99 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 43 |
-| conclusion | 16 |
+| argument_flow | 42 |
+| conclusion | 15 |
 | concrete_foothold | 44 |
-| limitations | 1 |
 | object_intuition | 93 |
-| orientation | 37 |
-| result_interpretation | 16 |
+| orientation | 38 |
+| result_interpretation | 15 |
 
 ## Revision Queue
 
@@ -53,7 +52,6 @@ Canonical papers audited: **139**.
 | major | major | `computational-irreducibility-from-projection-undecidabi-6cc6aafd` | 9 | 190.1 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | major | major | `cosmology-as-global-coherence-capacity-evolution` | 8 | 134.6 | 5/7 | object_intuition, concrete_foothold |
 | major | major | `modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d` | 8 | 192.0 | 3/7 | object_intuition, argument_flow, result_interpretation, conclusion |
-| major | major | `modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927` | 5 | 354.2 | 2/7 | object_intuition, argument_flow, result_interpretation, limitations, conclusion |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | moderate | moderate | `coherent-sector-universality-and-controlled-truncation-0ccddc56` | 7 | 148.6 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | moderate | moderate | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 7 | 311.9 | 4/7 | object_intuition, argument_flow, concrete_foothold |
@@ -125,6 +123,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `fermions-in-loop-quantum-gravity-from-modal-triplet-the-c9d451aa` | 6 | 309.3 | 6/7 | orientation |
 | reviewed | moderate | `modal-triplet-theory-and-asymptotic-safety-asymptotic-s-dc3ce0c2` | 6 | 262.8 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | moderate | `modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0` | 6 | 354.2 | 7/7 | - |
+| reviewed | light | `modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927` | 6 | 464.5 | 5/7 | orientation, object_intuition |
 | reviewed | low | `the-modal-triplet-theory-program-a1-coherent-kinematics` | 6 | 461.2 | 7/7 | - |
 | reviewed | moderate | `white-noise-and-markov-limits-as-delta-correlation-idea-854be499` | 6 | 241.3 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `why-quantum-contextuality-and-measurement-order-depende-e0bdb9bf` | 6 | 385.7 | 6/7 | orientation |

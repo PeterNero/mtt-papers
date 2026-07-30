@@ -23,6 +23,26 @@
       "title": "Modal Triplet Theory and the Hull-Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary"
     },
     {
+      "abstract": "Heterotic compactification papers often use the word selection for several different mathematical achievements: satisfying projected field equations, finding an isolated point in a finite ansatz, proving attraction under a specified flow, or assigning the realized vacuum. These implications are not equivalent. We formulate a selection ladder for Modal Triplet Theory and the Hull-Strominger system. A finite invariant residual proves a full solution only when the tested residual is complete on the ansatz and every discarded equation vanishes. An isolated ansatz solution need not be unique in the full configuration space. Attraction requires an actual evolution and a basin estimate, while physical vacuum selection additionally requires a preparation law, branch rule, or equivalent source data. We apply this distinction to two former case studies. The diagonal Iwasawa geometry retains valid local balanced and torsion calculations, but the printed rank-three bundle, anomaly match, generation count, and normalized Yukawa do not survive the global bundle audit. The Lens-Nil model is non-integrable and therefore is not a Hull-Strominger compactification. The exact q=79 arithmetic branch, finite Cech data, and selected rank-two HYM certificates remain meaningful at their declared tiers, but they do not yet select a physical visible-hidden compactification. The result is a rigorous vocabulary and completion contract, not a claim that the heterotic landscape has already been uniquely selected.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927",
+      "path": "papers/modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927",
+      "result_refs": [
+        "hym_wiener_contraction",
+        "literal_cech_witness",
+        "q79_exact_audit",
+        "q79_exact_theorem"
+      ],
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__MTT_as_a_Selection_Principle_for_Heterotic_Flux_Compactifications",
+      "superseded_project": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__MTT_as_a_Selection_Principle_for_Heterotic_Flux_Compactifications",
+      "title": "Modal Triplet Theory and Heterotic Vacuum Selection: What Finite Ansatz Calculations Prove, What Attraction Adds, and What Physical Selection Still Requires"
+    },
+    {
       "abstract": "We give a typed, conditional formulation of Modal Triplet Theory as a theory of reduced description. A representative section, an exact upper decoder, autonomous reduced evolution, and merger of effective states solve four different mathematical problems; none follows merely from noninjectivity of a projection. We prove the factor-through criterion for autonomous descent, a finite-diameter obstruction for a genuinely contractive reduced self-map, exact basin-local fixed-point results, and controlled approximate-orbit estimates. Admissibility boundaries are defined by explicit margins and section or projector conditioning rather than by assuming the desired obstruction. The encoding atlas and its relations are consequently local and conditional. Probability, irreversibility, physical time, and any concrete physical realization require their own measure, evolution, and source hypotheses.",
       "authors": [
         "Peter Nero"
