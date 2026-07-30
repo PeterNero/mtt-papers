@@ -1,65 +1,93 @@
 {
-  "abstract": "We complete the constructive program for Modal Triplet Theory (MTT) quantum gravity by establishing the infrared limit and scattering theory for the physical graviton sector under SPT damping. Building on the Borel summability of the SPT-filtered transverse\u2013traceless (TT) sector and its BRST lifting to a positive physical Hilbert space, we give a rigorous Haag\u2013Ruelle construction of asymptotic fields and scattering states on asymptotically flat slabs. Under explicit hypotheses\u2014SPT Gaussian ultraviolet control, existence of a TT mass gap, BRST cohomology positivity, and asymptotic flatness sufficient for free TT dynamics\u2014we prove exponential time decay of commutators, uniform Cook bounds, and regulator-independent M\u00f8ller operators. As a result, a unitary S-matrix exists for TT-sector observables and is well defined on BRST cohomology. The construction is fully compatible with causal locality and does not rely on global hyperbolicity beyond the slab. We do not claim scattering theory for arbitrary gauge-dependent metric components or for generic curved backgrounds. Within its stated scope, the analysis provides a rigorous infrared completion of the constructive MTT quantum gravity program.",
+  "abstract": "This paper separates a massive or infrared-regulated scattering benchmark from the physical massless-graviton problem in Modal Triplet Theory quantum gravity. A positive transverse-traceless mass gap does not describe the physical massless graviton, and finite-volume Gaussian and BRST results do not by themselves construct the local Lorentzian theory required by Haag–Ruelle scattering. The paper proves the operator statement that for isometric incoming and outgoing wave operators, the scattering operator is only a contraction in general and is unitary exactly when their ranges coincide. It also proves that a normalized SPT factor leaves the leading massless soft pole unchanged. Standard massive Haag–Ruelle theory is retained as a conditional benchmark after its full axioms are supplied. The physical gravity route instead requires a selected Lorentzian BRST theory, asymptotic null geometry, soft-charge control, dressed states or inclusive observables, infrared-regulator removal, and an appropriate completeness theorem. Current MTT data do not yet provide that packet. The paper therefore supplies a precise infrared dependency theorem and executable exit contract, not a unitary MTT gravity S-matrix.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2025",
+  "current_version": "v2",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18209820",
-    "created": "2026-01-10T21:57:55.557661+00:00",
+    "created": "2026-07-29T08:50:12.435743+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18209821",
+    "doi": "10.5281/zenodo.21665958",
     "files": [
       {
-        "checksum": "md5:537f656cb6ba74e82325bba9822edf9e",
-        "content_url": "https://zenodo.org/api/records/18209821/files/Constructive_MTT_Quantum_Gravity_III__Infrared_Limit_and_Scattering_under_SPT_Damping%20(6).pdf/content",
-        "key": "Constructive_MTT_Quantum_Gravity_III__Infrared_Limit_and_Scattering_under_SPT_Damping (6).pdf",
-        "size": 308679
+        "checksum": "md5:c9d044d6e1ef12e2db30a394a3fcfbfd",
+        "content_url": "https://zenodo.org/api/records/21665958/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 318618
       }
     ],
-    "id": "18209821",
-    "match_kind": "title_or_file",
+    "id": "21665958",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-10",
-    "record_url": "https://zenodo.org/records/18209821",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665958",
     "resource_type": "publication",
-    "title": "Constructive MTT Quantum Gravity III: Infrared Limit, Asymptotic States, and Scattering under SPT Damping",
-    "updated": "2026-01-10T21:57:55.866841+00:00",
-    "version": "v1.0"
+    "title": "Constructive MTT Quantum Gravity III: A Massive Scattering Benchmark and the Massless-Graviton Infrared Contract",
+    "updated": "2026-07-29T08:50:12.799850+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "3324f970d812886cbad6b4c57c22990aa052665e68cff681b7bdb283daeb8c42",
+  "main_tex_sha256": "9f6b8bccdc0a55542088280f6900b4d1419f65d0403d7a8742b08d0f865876b8",
   "paper_id": "constructive-mtt-quantum-gravity-iii-infrared-limit-asy-6f8b88d9",
-  "paper_md_sha256": "1918f7e44300ede61285ba5ed3ab67562c0d7f6198ed91b05a33fd9e63ff94e2",
+  "paper_md_sha256": "cb39e0ebe43d261f0130b7febb3d14821c431172e2b5a647cb1dbe4f618ced32",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "8adc2cdf4b168daf3ca41d837c6ba5ae6bf7b8f6f31b5f4e6ce70fe07c41467f",
+    "selected_revision": true,
+    "superseded_source_path": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_III__Infrared_Limit_and_Scattering_under_SPT_Damping"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 23895,
+      "bytes": 23637,
       "path": "main.tex",
-      "sha256": "3324f970d812886cbad6b4c57c22990aa052665e68cff681b7bdb283daeb8c42"
+      "sha256": "9f6b8bccdc0a55542088280f6900b4d1419f65d0403d7a8742b08d0f865876b8"
     },
     {
-      "bytes": 15705,
+      "bytes": 15299,
       "path": "series.sty",
-      "sha256": "deaaf90be0b98130189531a83e121ad3934803f4844f2b10571046aec3b3ed3f"
+      "sha256": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_III__Infrared_Limit_and_Scattering_under_SPT_Damping"
   },
-  "source_tree_sha256": "cd55fa89da1ce18d645a557ddce74e8776a929c4beaa39307d0b2a11a421b4c6",
-  "title": "Constructive MTT Quantum Gravity III: Infrared Limit, Asymptotic States, and Scattering under SPT Damping",
+  "source_tree_sha256": "e4371462584bc028b1d09675bac00b06cd307545fe1f53352ec0951a8bc2bca3",
+  "title": "Constructive MTT Quantum Gravity III: A Massive Scattering Benchmark and the Massless-Graviton Infrared Contract",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18209820",
+      "created": "2026-07-29T08:50:12.435743+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665958",
+      "files": [
+        {
+          "checksum": "md5:c9d044d6e1ef12e2db30a394a3fcfbfd",
+          "content_url": "https://zenodo.org/api/records/21665958/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 318618
+        }
+      ],
+      "id": "21665958",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665958",
+      "resource_type": "publication",
+      "title": "Constructive MTT Quantum Gravity III: A Massive Scattering Benchmark and the Massless-Graviton Infrared Contract",
+      "updated": "2026-07-29T08:50:12.799850+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18209820",
       "created": "2026-01-10T21:57:55.557661+00:00",

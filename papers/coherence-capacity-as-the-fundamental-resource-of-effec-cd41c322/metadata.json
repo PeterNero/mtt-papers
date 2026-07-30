@@ -48,15 +48,15 @@
       "sha256": "a9645bdd5aa97068c0263d6ad23e16c10def6fe68b569c62d3d07cd85d2ea0f4"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Coherence_Capacity_as_the_Fundamental_Resource_of_Effective_Physics_v3"
   },
-  "source_tree_sha256": "b0bd2aa65b19087e895bf7c3dc6e1cd57ee30a9dab6be12fb5220f3bb7703cb3",
+  "source_tree_sha256": "dca5bab3b74ed00a58eae04664de15e113db3810ac12a247170eb21abb93b889",
   "title": "Coherence Capacity as the Fundamental Resource of Effective Physics",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

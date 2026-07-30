@@ -1,65 +1,93 @@
 {
-  "abstract": "We present a complete, first-principles and fully rigorous derivation of indivisible stochastic processes from the Modal Triplet Theory (MTT) framework. Working on the 10-dimensional modal manifold M_{10} = Y_4 \\times B_1 \\times B_2 \\times B_3, we construct a probability measure on the path space Q^{\\mathbb{N}} of external configurations and prove that the induced discrete-time dynamics are non-Markovian and indivisible in a precise, measure-theoretic sense. The derivation uses only MTT\u2019s structural ingredients: (i) the joint harmonic projector \\Pi onto the coherent sector, (ii) the curvature-driven modal flow \\Phi_\\tau, and (iii) the observable pushforward P = I \\circ \\Pi integrating out internal manifolds. We formulate hypotheses (spectral gaps, stability, regularity) identical in spirit to those used in the MTT\\RightarrowQM derivation and show that (a) conditional transition kernels K_{\\Delta \\tau}[q'|q_0,\\ldots,q_k] exist and are normalised, (b) the induced process is indivisible because conditioning depends irreducibly on the complete past, and (c) probabilities arise from exponential modal-action weights \\exp(-\\Delta A/\\hbar), yielding a consistent, noncontextual measure on histories. A reconstruction theorem then proves surjectivity: any admissible indivisible kernel (within an explicit class) is realised by suitable MTT boundary data. Measurement is identified with conditioning under constraint changes F\\to F', which rigorously corresponds to pruning of histories with renormalisation. Our results establish MTT as a common origin for both Hilbert-space quantum mechanics and its stochastic dual, with indivisibility and interference emerging as consequences of MTT\u2019s fixed-point modal geometry.",
+  "abstract": "This paper gives a measure-theoretic account of stochastic processes obtained by projecting an upper Modal Triplet Theory evolution. Given a selected probability law on upper initial data, measurable upper dynamics, and an observable map, the projected histories carry a unique path-space law and admit regular conditional kernels. Projection can make the observed process non-Markovian even when the upper process is Markovian or deterministic. The paper separates failure of the observed Markov property, absence of finite Markov order, failure of a chosen classical composition law, and quantum CP-indivisibility. Every classical path law still factorizes sequentially through history-dependent kernels and becomes Markovian on a history state space. An exact binary example has infinite observed Markov order while its memory compresses to one posterior scalar. Exponential action weights define valid kernels when their action and reference measure are supplied, but rewriting a positive kernel in Gibbs form is parameterization rather than prediction. A commutative path-space algebra does not derive quantum observables, Born probabilities, process tensors, or instruments. The remaining MTT task is to select the upper probability source and physical intervention structure from the same geometry.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2025",
+  "current_version": "v2",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18254862",
-    "created": "2026-01-15T10:01:51.324679+00:00",
+    "created": "2026-07-29T08:51:23.106322+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18254863",
+    "doi": "10.5281/zenodo.21665996",
     "files": [
       {
-        "checksum": "md5:39afcf7c3905eb9379494fda12d027bb",
-        "content_url": "https://zenodo.org/api/records/18254863/files/Modal_Triplet_Theory__From_MTT_to_Indivisible_Stochastic_Processes.pdf/content",
-        "key": "Modal_Triplet_Theory__From_MTT_to_Indivisible_Stochastic_Processes.pdf",
-        "size": 446782
+        "checksum": "md5:467a8a194f3fe4db7b22e2dd860f8d1b",
+        "content_url": "https://zenodo.org/api/records/21665996/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 379648
       }
     ],
-    "id": "18254863",
-    "match_kind": "title_or_file",
+    "id": "21665996",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18254863",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665996",
     "resource_type": "publication",
-    "title": "Modal Triplet Theory: From MTT to Indivisible Stochastic Processes: A First-Principles Derivation",
-    "updated": "2026-01-15T10:01:52.749489+00:00",
-    "version": "v1.0"
+    "title": "Modal Triplet Theory and History-Dependent Stochastic Processes: Fixed-State Indivisibility, Markov Order, and the Quantum Boundary",
+    "updated": "2026-07-29T08:51:23.538732+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "dc46357bc03d317b013e6dda77bf7e99ed41206e0a8227c930e1799daa27c0bd",
+  "main_tex_sha256": "3209a96436978bb986571d595e4a36f50b2038352dfae838cf9d34c444f6e7bf",
   "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
-  "paper_md_sha256": "0adb06e4cc530a5e0cf9c534112636b1fdf0c0eb174ff864027085fc12cb6b77",
+  "paper_md_sha256": "1045a6838e869ec55a939b29e346be32a7f5f424a60668afbbe318fef9582872",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "ff08106e704d510300a3ee973bfe609d2028739ca5269539832bba8db876628f",
+    "selected_revision": true,
+    "superseded_source_path": "6 Quantum Mechanics/_work/Modal_Triplet_Theory__From_MTT_to_Indivisible_Stochastic_Processes"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 64888,
+      "bytes": 31356,
       "path": "main.tex",
-      "sha256": "dc46357bc03d317b013e6dda77bf7e99ed41206e0a8227c930e1799daa27c0bd"
+      "sha256": "3209a96436978bb986571d595e4a36f50b2038352dfae838cf9d34c444f6e7bf"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "6 Quantum Mechanics/_work/Modal_Triplet_Theory__From_MTT_to_Indivisible_Stochastic_Processes"
   },
-  "source_tree_sha256": "cfa9e96dba398eb90d47050560304560900835e4310658ef4333bde79a38147d",
-  "title": "Modal Triplet Theory: From MTT to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation",
+  "source_tree_sha256": "8ac9593e793d29f0da58c0892052b49f797433ea41dd44b1d3cc09feae8ddd61",
+  "title": "Modal Triplet Theory and History-Dependent Stochastic Processes: Fixed-State Indivisibility, Markov Order, and the Quantum Boundary",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18254862",
+      "created": "2026-07-29T08:51:23.106322+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665996",
+      "files": [
+        {
+          "checksum": "md5:467a8a194f3fe4db7b22e2dd860f8d1b",
+          "content_url": "https://zenodo.org/api/records/21665996/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 379648
+        }
+      ],
+      "id": "21665996",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665996",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and History-Dependent Stochastic Processes: Fixed-State Indivisibility, Markov Order, and the Quantum Boundary",
+      "updated": "2026-07-29T08:51:23.538732+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18254862",
       "created": "2026-01-15T10:01:51.324679+00:00",

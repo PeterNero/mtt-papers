@@ -1,661 +1,538 @@
 ---
 abstract: |
-  In Modal Triplet Theory (MTT), the problem of measurement is not solved by introducing collapse, hidden variables, or branching worlds. Instead, measurement is understood as an ordinary episode of the evolve–project cycle on the ten-dimensional arena $`M_{10}=Y\times X_6`$. A measuring device acts as a localized disturbance: a disturbance that pushes a coherent mode off the quiet submanifold defined by three commuting filters. The system then undergoes re-coherence: local smoothing damps high-frequency jitter, while global projection selects the admissible harmonic content. The outcome of measurement is the stabilized branch into which the system falls. Born probabilities emerge from the relative basin volumes of these branches, not from fundamental indeterminacy. Uncertainty relations are interpreted as Ornstein–Uhlenbeck (OU) floors: finite widths that remain after balancing disturbance against damping. Famous quantum experiments—double-slit interference, Stern–Gerlach spin splitting, Bell correlations, quantum Zeno, Ramsey echoes—are reinterpreted in this framework as specific ways in which localized disturbances stress the modal geometry and how coherence is restored. The result is a deterministic ten-dimensional ontology that produces effective stochasticity in four dimensions, with clear predictions for reversibility curves, threshold knees, and noise-assisted switching.
+  Measurement is an ordinary physical interaction, but an adequate mathematical description must distinguish three stages: apparatus coupling, completion into an outcome-resolved transition, and stabilization of the resulting record. This paper formulates that distinction for Modal Triplet Theory (MTT). A localized coupling may displace a state from a quiet coherent regime, and contractive dynamics inside a selected record basin may then stabilize a repeatable record. Neither fact chooses a basin. We therefore introduce the missing transition-completion object: a normalized kernel, or in quantum language an instrument, that assigns both an outcome probability and a post-outcome state. We prove that one global contraction cannot support multiple stable outcomes, derive the exact normalization and conditional-state laws of a completion kernel, and distinguish failure of unique decoding from the possible existence of a representative section. Decoherence suppresses interference within an outcome algebra but does not select one instrument element. The Born rule requires a selected preparation law and a basin–trace or instrument–trace equality. The current q79 binary one-anchor recorder supplies such an exact stopped-output law on its declared domain; arbitrary apparatus contexts and objective one-history selection remain open. An Ornstein–Uhlenbeck variance is retained only as a conditional linear-response model and is not identified with the Heisenberg uncertainty principle.
 author:
-- |
-  Peter Nero  
-  January 2026
-current_version: v5
-generated_from_main_tex_sha256: f058d9e5a6041eacc846fcee7565f974ba7395073942f0cfec63124ab80c910d
+- Peter Nero
+current_version: v6
+date: July 2026, Version 6
+generated_from_main_tex_sha256: 2a2d82a2e44e62005fef0d8295285975cf6c2fdbe3e911a727f52d78c1587686
 paper_id: measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e
 release_state: zenodo_released
-released_version: v5.0
+released_version: v6
 title: |
-  Measurement as Disturbance and Stabilization  
-  in Modal Triplet Theory
-zenodo_doi: 10.5281/zenodo.18330568
-zenodo_record_id: 18330568
-zenodo_url: "https://zenodo.org/records/18330568"
+  Measurement as Physical Disturbance, Outcome Completion,
+  and Record Stabilization in Modal Triplet Theory
+zenodo_doi: 10.5281/zenodo.21665982
+zenodo_record_id: 21665982
+zenodo_url: "https://zenodo.org/records/21665982"
 ---
 
-# Introduction
+# Version 6 Revision Note
 
-The measurement problem remains the most controversial aspect of quantum theory. Conventional approaches differ radically: Copenhagen introduces a collapse postulate; Everett embraces branching worlds; objective-collapse models add stochastic dynamical terms; decoherence appeals to environmental entanglement but leaves outcome selection ambiguous. Each approach imports new axioms to explain why the world looks classical when described by quantum laws.
+<div class="description">
 
-Modal Triplet Theory (MTT) provides a different angle. In MTT there is only one ontic object: a field $`\Psi`$ living on the ten-dimensional product $`M_{10}=Y\times X_6`$, where $`Y`$ is the familiar $`(3+1)`$-dimensional spacetime and $`X_6`$ consists of three pairs of finite directions acting as filters. Dynamics proceeds in two steps: smoothing (a local, causal evolution that damps high-frequency noise) and projection (a global selection that retains only harmonic content on all three filters). When the Fundamental Contractivity Condition (FCC) is satisfied, this evolve–project loop converges to a unique global coherence regime. Our observed $`(3+1)`$ world is the projection of this regime.
+*Measurement as Disturbance and Stabilization in Modal Triplet Theory*, version 5.
 
-In this setting, measurement is not an additional axiom. It is simply a disturbance applied by laboratory apparatus, followed by the ordinary evolve– project re-coherence. What appears in our instruments is not a pre-existing label revealed by collapse, but the stabilized projection after disturbance and coherence restoration. This paper develops that perspective in detail.
+The earlier paper combined localized disturbance, global contractivity, multiple outcome basins, decoherence, Born probabilities, uncertainty, Bell correlations, and neutrino mass in one mechanism. A global contraction has only one fixed point, basin volume does not by itself produce Born weights, and noninjective projection does not imply that no right inverse or representative section can exist.
 
-#### Terminology (no disturbances in the equations).
+This version separates coupling, transition completion, outcome-conditioned stabilization, decoherence, probability source, and one-history actualization. It adds the missing completion kernel, corrects the inverse terminology, and states the current q79 recorder result at its exact restricted tier.
 
-Throughout this paper, measurement is modeled as a *localized disturbance* of an otherwise admissible coherent evolution, followed by stabilization under the projected dynamics $`T_\tau := \Pi_{\mathrm{coh}}\circ \Phi_\tau`$. No additional disturbance term is added to the equations of motion. In the Fixed Points series, what are sometimes informally called “drivers” are *admissibility barriers* (diagnostics) rather than forces; see Fixed Points V–VI for the formal statement of this claim.
+A measuring apparatus can be treated as a localized physical coupling followed by basin-local stabilization. Contractive dynamics can explain record persistence and repeatability after an outcome has been resolved.
 
-# The Evolve–Project Cycle
-
-The dynamics of the fundamental MTT field $`\Psi`$ proceeds through an alternating sequence of local evolution and global restriction. This structure is not introduced ad hoc for measurement; it is the generic mechanism by which coherent physics emerges from the full ten-dimensional dynamics.
-
-## Smoothing evolution
-
-For a short proper time $`\tau`$, the field $`\Psi`$ evolves under the dissipative flow generated by the MTT action functional. In local coordinates this evolution takes the form
-``` math
-\begin{equation}
-\partial_t \Psi = - A \Psi - N(\Psi),
-\end{equation}
-```
-where $`A`$ is a positive, elliptic operator whose principal part is the direct sum of Laplace–type operators on the three internal bundles and the base spacetime, and $`N`$ is a locally Lipschitz nonlinear remainder.
-
-The smoothing evolution has three essential properties:
-
-1.  It is local and causal on the $`(3+1)`$-dimensional base $`Y`$.
-
-2.  It exponentially suppresses high-frequency components in the internal bundle directions.
-
-3.  It does not, by itself, select a unique global configuration.
-
-The role of smoothing is therefore not selection but stabilization: it reduces fine-scale structure and damps excitations that would otherwise destroy coherence.
-
-## Coherent projection
-
-After smoothing, the field is restricted by the joint harmonic projector
-``` math
-\Pi_{\mathrm{coh}}:= \Pi_{B_1}\,\Pi_{B_2}\,\Pi_{B_3},
-```
-where $`\Pi_{B_n}`$ denotes the spectral projector onto the kernel of the Laplace–type operator on the $`n`$th internal bundle.
-
-The action of $`\Pi_{\mathrm{coh}}`$ removes all components that are non-harmonic in any internal direction. What survives is simultaneously quiet in all three filters and therefore admissible as a coherent $`(3+1)`$-dimensional configuration.
-
-The projection is global in the internal directions but local in the base spacetime. It is non-invertible and therefore information-erasing: distinct ten-dimensional configurations can project to the same coherent state.
-
-## The projected time–$`\tau`$ map
-
-Combining smoothing and projection yields the projected evolution map
-``` math
-\begin{equation}
-T_\tau := \Pi_{\mathrm{coh}}\circ \Phi_\tau,
-\end{equation}
-```
-where $`\Phi_\tau`$ denotes the time–$`\tau`$ flow of the smoothing equation.
-
-Iteration of $`T_\tau`$ defines the effective dynamics on the coherent sector. When the Fundamental Contractivity Condition (FCC) holds, $`T_\tau`$ is a contraction on the admissible set, and its iterates converge to a unique fixed point.
-
-## Fundamental Contractivity Condition
-
-Let $`\lambda^\ast>0`$ denote the smallest nonzero spectral gap among the three internal bundle Laplacians, and let $`\kappa_n>0`$ be the corresponding damping coefficients. Let $`L(R)`$ denote a Lipschitz bound for the nonlinear term on a bounded region $`R`$ of field space.
-
-Define
-``` math
-\begin{equation}
-\eta := \min_n \kappa_n \lambda^\ast,
-\qquad
-q := \|\Pi_{\mathrm{coh}}\|_{H^1\to H^1}\,e^{-(\eta - L(R))\tau}.
-\end{equation}
-```
-
-<div class="eqbox">
-
-**Fundamental Contractivity Condition (FCC).** If $`q<1`$, then the projected map $`T_\tau`$ admits a unique fixed point in the admissible region, and for any two initial conditions $`\Psi_1,\Psi_2`$ one has
-``` math
-\|T_\tau(\Psi_1)-T_\tau(\Psi_2)\|_{H^1}
-\le q\,\|\Psi_1-\Psi_2\|_{H^1}.
-```
+MTT has not yet derived the completion instrument and Born-compatible source law for every apparatus context, nor an objective rule selecting one ontic history. The physical upper geometry must be supplied by the selected branch rather than assumed to be a generic ten-dimensional product.
 
 </div>
 
-The FCC is the central structural condition underlying all subsequent results. It guarantees the existence of a stable coherent regime and provides the mathematical basis for effective classicality, probabilistic behavior, and measurement stabilization in $`(3+1)`$ dimensions.
+# The measurement chain
 
-## Role in measurement
+A measurement is not important because a conscious observer notices it. It is important because a physical interaction produces a durable, communicable record. A complete model must answer several different questions:
 
-Measurement does not modify the form of the evolve–project cycle. A measuring apparatus introduces a localized disturbance that temporarily displaces the system within the admissible region. The subsequent application of $`T_\tau`$ restores coherence by damping excess excitations and projecting back to the coherent sector.
+1.  How does the apparatus couple to the system?
 
-All measurement phenomena analyzed later in this paper arise from this single mechanism. No additional postulates or dynamical terms are introduced at the level of the fundamental equations.
+2.  Which record alternatives are physically available?
 
-# Disturbance and the Ornstein–Uhlenbeck Floor
+3.  What assigns a probability to each alternative?
 
-The smoothing evolution suppresses high-frequency excitations but does not eliminate fluctuations entirely. Localized disturbances inject energy into non-harmonic modes, and the balance between injection and damping produces a stationary variance. This variance defines the Ornstein–Uhlenbeck (OU) floor associated with each non-harmonic mode.
+4.  What state is available after each recorded outcome?
 
-Let $`a_{n,k}(t)`$ denote the amplitude of a non-harmonic mode, labeled by internal bundle index $`n`$ and eigenmode index $`k`$. Linearizing the dynamics near the coherent sector yields
+5.  Why does a completed record remain stable?
+
+6.  If an ontic account is intended, what selects one individual history?
+
+The corrected MTT decomposition is
 ``` math
-\begin{equation}
-\dot a_{n,k}(t) = -\gamma_{n,k}\,a_{n,k}(t) + \xi_{n,k}(t),
-\end{equation}
+\boxed{
+\text{coupling/disturbance}
+\longrightarrow
+\text{outcome completion}
+\longrightarrow
+\text{record stabilization}.
+}
 ```
-where
-``` math
-\begin{equation}
-\gamma_{n,k} := \kappa_n \lambda_{n,k} - L
-\end{equation}
-```
-is the effective damping margin and $`\xi_{n,k}`$ represents the disturbance injected by localized interactions with apparatus or environment.
+The middle arrow cannot be omitted. A disturbance may move a state toward a boundary, and a contraction may stabilize a state once it lies in a basin. Neither statement determines which basin receives the state.
 
-## Admissible disturbances
+# Standard operational target
+
+Let $`\mathcal{H}`$ be a complex Hilbert space and $`\rho`$ a density operator.
 
 <div class="definition">
 
-**Definition 1** (Admissible disturbance and disturbance power). *A disturbance acting on a non-harmonic mode $`a(t)`$ is called *admissible* if it satisfies one of the following:*
+**Definition 1** (Quantum instrument). A finite quantum instrument $`\mathcal{I}=\{\mathcal{I}_i\}_{i\in I}`$ is a family of completely positive, trace-nonincreasing maps on trace-class operators such that $`\sum_i\mathcal{I}_i`$ is trace preserving. Its effects are
+``` math
+E_i=\mathcal{I}_i^*(\mathbf{1}),\qquad
+E_i\geq0,\qquad
+\sum_iE_i=\mathbf{1}.
+```
 
-1.  ***Stochastic case.** The mode obeys
+</div>
+
+The outcome probability and conditional state are
+``` math
+\begin{equation}
+p_i=\operatorname{Tr}[\mathcal{I}_i(\rho)]=\operatorname{Tr}(\rho E_i),
+\qquad
+\rho_i'=\frac{\mathcal{I}_i(\rho)}{p_i}
+\quad(p_i>0).
+\label{eq:instrument}
+\end{equation}
+```
+An instrument therefore includes both the classical record $`i`$ and the state passed to later physical interactions .
+
+The nonselective channel
+``` math
+\mathcal{I}_{\mathrm{ns}}=\sum_i\mathcal{I}_i
+```
+describes what remains if the outcome label is ignored. It is not an outcome-selection law. Keeping $`\mathcal{I}_{\mathrm{ns}}`$ while deleting the individual $`\mathcal{I}_i`$ removes precisely the information needed to say which record occurred.
+
+# An upper transition-completion kernel
+
+MTT seeks an upper physical account of equation <a href="#eq:instrument" data-reference-type="eqref" data-reference="eq:instrument">[eq:instrument]</a>. The minimal classical-measure analogue is an outcome-resolved kernel.
+
+<div class="definition">
+
+**Definition 2** (Transition-completion kernel). Let $`E`$ be a measurable pre-completion exit space, let $`I`$ be a finite record set, and let $`D_i`$ be the post-completion state space associated with record $`i`$. A transition-completion kernel is a family
+``` math
+\mathcal{K}_i:E\times\mathfrak{B}(D_i)\longrightarrow[0,1]
+```
+such that:
+
+1.  for fixed $`x\in E`$, $`\mathcal{K}_i(x,\cdot)`$ is a finite measure on $`D_i`$;
+
+2.  for fixed measurable $`A\subseteq D_i`$, $`\mathcal{K}_i(\cdot,A)`$ is measurable; and
+
+3.  for every $`x\in E`$,
     ``` math
-    da(t) = -\gamma\,a(t)\,dt + dM_t,
+    \sum_{i\in I}\mathcal{K}_i(x,D_i)=1.
     ```
-    where $`(M_t)_{t\ge 0}`$ is a continuous square-integrable martingale with quadratic variation
-    ``` math
-    \langle M\rangle_t = \delta\,t,
-    ```
-    for some $`\delta \ge 0`$. *Remark.* The stochastic formulation above is a closure of the projected description, serving as an effective model for disturbance statistics on the slab. No stochastic term is introduced at the level of the underlying modal dynamics.*
-
-2.  ***Deterministic case.** The mode obeys
-    ``` math
-    \dot a(t) = -\gamma\,a(t) + \eta(t),
-    \qquad
-    \|\eta\|_{L^\infty([0,\infty))} \le \sqrt{\delta}.
-    ```*
-
-*The parameter $`\delta`$ is the *disturbance power* injected into the mode. In the white-noise specialization $`dM_t = \sigma\,dW_t`$, one has $`\delta=\sigma^2`$.*
 
 </div>
 
-In case (D), the same symbol $`\delta`$ is used as an upper bound on $`\|\eta\|_{L^\infty([0,\infty))}^2`$, so that the deterministic bound is comparable to the stochastic OU variance convention.
+The kernel can encode unresolved upper degrees of freedom, an effective stochastic closure, or a genuinely probabilistic law. Those interpretations are not equivalent. The definition only states the data required at the effective level.
 
-## OU equilibrium variance
+<div id="thm:completion" class="theorem">
 
-<div class="lemma">
-
-**Lemma 1** (OU stationary variance). *In the stochastic case (S), the OU process admits a unique stationary Gaussian law with variance
+**Theorem 3** (Completion law). *Let $`\nu`$ be a probability measure on $`E`$ and $`\{\mathcal{K}_i\}_{i\in I}`$ a transition-completion kernel. Define
 ``` math
 \begin{equation}
-\mathrm{Var}[a] = \frac{\delta}{2\gamma}.
+p_i=\int_E\mathcal{K}_i(x,D_i)\,d\nu(x).
+\label{eq:completion-prob}
 \end{equation}
 ```
-Equivalently, if $`dM_t=\sigma\,dW_t`$, then $`\mathrm{Var}[a]=\sigma^2/(2\gamma)`$.*
-
-*In the deterministic case (D), one has the uniform bound
+Then $`p_i\geq0`$ and $`\sum_i p_i=1`$. If $`p_i>0`$, the conditional post-completion law
 ``` math
 \begin{equation}
-\limsup_{t\to\infty}|a(t)|^2 \le \frac{\|\eta\|_{L^\infty([0,\infty))}^2}{\gamma^2}
-\le \frac{\delta}{\gamma^2}.
-\tag{7}
-\end{equation}
-```*
-
-*Thus each non-harmonic mode retains a finite width even under prolonged smoothing. This OU floor is not a defect but a structural feature of the evolve–project cycle: disturbance injects variance while damping removes it, and equilibrium is reached when the two balance.*
-
-</div>
-
-## Bundlewise stability
-
-For the full noncoherent sector, the individual OU floors must be summable. Let $`\lambda_{n,k}`$ denote the internal eigenvalues of the bundle Laplacians.
-
-<div class="eqbox">
-
-**Bundlewise stability (FP III consistency).** If $`\gamma_{n,k}>0`$ for all non-harmonic modes and
-``` math
-\sum_{n,k} (1+\lambda_{n,k})\,\frac{\delta_{n,k}}{2\gamma_{n,k}} < \infty,
-```
-then the noncoherent sector remains bounded in the fiber-weighted $`H^1_F`$ norm. The associated OU floors remain finite and project to $`(3+1)`$ dimensions as uncertainty relations.
-
-Here $`\delta_{n,k}`$ is the disturbance power (quadratic variation rate) in case (S), and in case (D) the same condition is enforced by the amplitude bound $`\|\eta_{n,k}\|_{L^\infty}\le \sqrt{\delta_{n,k}}`$.
-
-</div>
-
-## Interpretation as quantum uncertainty
-
-The OU floors define finite widths that cannot be reduced by further smoothing. Attempting to sharpen one observable injects disturbance power into conjugate modes, raising their OU floors. The familiar Heisenberg uncertainty relations are therefore the $`(3+1)`$-dimensional shadows of finite OU widths enforced by the evolve–project dynamics in the full modal geometry.
-
-Energy–time uncertainty admits the same explanation. Probing fine temporal structure injects high-frequency components into $`\Psi`$, which are then suppressed by smoothing. The finite resolution of temporal structure reflects the same balance between disturbance and damping.
-
-#### Markovian and GKSL regimes.
-
-The reduced evolution induced by coherent projection is generically kernel-valued and history-dependent. A time-local GKSL/Lindblad generator arises only in an additional Markovian scaling regime, such as a Davies weak-coupling limit with suitable mixing assumptions. No such regime is assumed unless explicitly stated.
-
-# Branch Capture and the Born Rule
-
-The Fundamental Contractivity Condition ensures that the evolve–project map $`T_\tau`$ converges to a unique global coherence regime. Within this regime, however, there exist multiple stable admissible substructures. These include localized wave packets, spin orientations, energy eigenstates, and correlated multi-particle configurations.
-
-A measurement event corresponds to a localized disturbance that displaces the system from one admissible configuration toward the boundary between basins of attraction. The subsequent smoothing and projection then stabilize the system into one of the available admissible basins.
-
-## Basins of attraction in the coherent sector
-
-Let $`\mathcal{A}`$ denote the admissible region of the coherent sector on a fixed bounded-geometry slab. The projected map $`T_\tau`$ partitions $`\mathcal{A}`$ into disjoint basins of attraction
-``` math
-\mathcal{A} = \bigsqcup_i \mathcal{B}_i,
-```
-where $`\mathcal{B}_i`$ consists of all initial coherent configurations whose $`T_\tau`$-iterates converge to the $`i`$th stable admissible structure.
-
-Each basin $`\mathcal{B}_i`$ is open in the induced topology on the coherent sector and has positive measure with respect to the natural invariant measure $`\mu`$ induced by the smoothing flow.
-
-## Localized disturbances and basin entry
-
-A localized disturbance acts by redistributing trajectories among nearby basins. Importantly, this redistribution is geometric rather than dynamical: no new forces are introduced, and the equations of motion remain unchanged.
-
-In the linearized Gaussian regime, the disturbance effectively broadens the distribution of initial conditions over $`\mathcal{A}`$. The evolve–project cycle then contracts this distribution into the basins $`\mathcal{B}_i`$ according to their relative sizes and shapes.
-
-## Emergence of the Born rule
-
-Let $`\mathcal{B}_i`$ be the basins associated with the admissible outcomes of a measurement. For an ensemble of systems prepared identically and subjected to the same localized disturbance statistics, the probability of stabilizing into basin $`\mathcal{B}_i`$ is given by
-``` math
-\begin{equation}
-P_i = \frac{\mu(\mathcal{B}_i)}{\sum_j \mu(\mathcal{B}_j)}.
+\nu_i'(A)
+=\frac{1}{p_i}\int_E\mathcal{K}_i(x,A)\,d\nu(x),
+\qquad A\in\mathfrak{B}(D_i),
+\label{eq:completion-state}
 \end{equation}
 ```
-
-<div class="theorem">
-
-**Theorem 1** (Born rule from basin measures). *Under the Fundamental Contractivity Condition and admissible disturbance assumptions, the probabilities $`P_i`$ coincide with the Born rule probabilities for the corresponding $`(3+1)`$-dimensional quantum measurement outcomes.*
+is a probability measure on $`D_i`$.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* We state explicitly the minimal hypotheses under which the basin-measure formula is exact.
-
-**(H1) Stationary slab ensemble.** There exists a physically relevant slab-restricted stationary (invariant) probability measure $`\mu`$ for the admissible reduced update law (kernel) used in this section, so that initializing the pre-measurement ensemble with law $`\mu`$ is consistent on the slab up to the selection event.
-
-**(H2) Measurable basin partition.** The admissible region decomposes into a measurable partition (modulo $`\mu`$-null sets) $`\{B_i\}_{i\in I}`$ of attraction basins for the stabilized selection dynamics, with $`\mu(B_i)>0`$ and $`\sum_i \mu(B_i)=1`$.
-
-**(H3) Basin-capture selection.** For $`\mu`$-almost every initial condition $`X_0`$, the stabilized disturbed evolution produces an almost-sure capture into exactly one basin $`B_i`$ in finite (possibly random) time; equivalently, the outcome label $`I_\infty\in I`$ is well-defined $`\mu`$-a.s., and (up to $`\mu`$-null sets) the event $`\{I_\infty=i\}`$ coincides with $`\{X_0\in B_i\}`$.
-
-Let $`X_0\sim\mu`$ be the pre-measurement ensemble. Then, for each $`i\in I`$,
+*Proof.* Nonnegativity follows from positivity of each kernel measure. Finite additivity and normalization give
 ``` math
-\mathbb{P}(I_\infty=i)
-=\mathbb{E}\big[\mathbf{1}_{\{I_\infty=i\}}\big]
-=\mathbb{E}\big[\mathbf{1}_{B_i}(X_0)\big]
-=\int \mathbf{1}_{B_i}(x)\,d\mu(x)
-=\mu(B_i).
+\sum_i p_i
+=\int_E\sum_i\mathcal{K}_i(x,D_i)\,d\nu(x)
+=\int_E1\,d\nu(x)=1.
 ```
-This proves that the selection probability of outcome $`i`$ equals the $`\mu`$-measure of its basin. ◻
+For $`p_i>0`$, equation <a href="#eq:completion-state" data-reference-type="eqref" data-reference="eq:completion-state">[eq:completion-state]</a> inherits countable additivity from $`\mathcal{K}_i(x,\cdot)`$, is nonnegative, and satisfies $`\nu_i'(D_i)=1`$. ◻
 
 </div>
 
-## Repeatability and consistency
+<div class="remark">
 
-Once the system stabilizes into a basin $`\mathcal{B}_i`$, subsequent applications of $`T_\tau`$ without further disturbances leave it in the same basin. This guarantees repeatability of measurement outcomes and consistency with the projection postulate of standard quantum mechanics.
+*Remark 4*. Theorem <a href="#thm:completion" data-reference-type="ref" data-reference="thm:completion">3</a> is a normalization theorem, not a source theorem. It says what follows once $`\nu`$ and $`\mathcal{K}`$ have been physically selected. It does not determine either object and does not imply Born weights.
 
-Repeatability is thus not an independent axiom but a consequence of basin stability under the evolve–project dynamics.
+</div>
 
-## Entangled systems
-
-For composite systems, the coherent sector includes admissible basins corresponding to entangled configurations. Localized disturbances acting on subsystems redistribute the joint configuration among entangled basins, but stabilization occurs globally.
-
-This global stabilization explains the appearance of nonlocal correlations in entangled measurements without introducing superluminal influences. The correlations reflect the geometry of basins in the higher-dimensional coherent sector rather than signals propagating in $`(3+1)`$ spacetime.
-
-# Canonical Measurement Scenarios
-
-We now reinterpret several standard quantum measurement scenarios within the disturbance–stabilization framework of Modal Triplet Theory. In each case, the laboratory apparatus introduces a localized disturbance that perturbs the coherent modal configuration. The evolve–project cycle then restores coherence and selects an admissible stabilized outcome.
-
-## Double–slit interference
-
-In the double–slit experiment, the relevant coherent substructures are transverse momentum modes compatible with passage through one or both slits. Introducing which–path detectors near the slits constitutes a localized disturbance that injects power into relative–phase modes between the two paths.
-
-If the disturbance power $`\delta`$ remains below the admissibility threshold, the OU floor in the phase sector is small and interference fringes survive. As $`\delta`$ increases, phase variance rises and fringe visibility decreases continuously. Once $`\delta`$ exceeds the threshold for maintaining coherent superposition, the joint projector suppresses interference entirely, and the system stabilizes into single–path basins.
-
-Wave–particle duality is thus a smooth crossover between admissible regimes controlled by disturbance strength rather than a discrete ontological switch.
-
-## Stern–Gerlach spin measurements
-
-In a Stern–Gerlach apparatus, an inhomogeneous magnetic field couples spin and spatial degrees of freedom. The field gradient introduces a localized disturbance that separates spin–dependent spatial modes.
-
-The joint harmonic projector admits two stable spin–aligned basins. The measuring field does not create spin values; it destabilizes the symmetric spin superposition, after which the evolve–project cycle stabilizes the configuration into one of the admissible spin sectors. The relative basin measures reproduce the usual spin probabilities.
-
-## Quantum Zeno effect
-
-Repeated measurement corresponds to repeated localized disturbances applied on a timescale shorter than the relaxation time associated with the OU floor. Each disturbance partially displaces the state but does not allow sufficient time for re–coherence into a new basin.
-
-As the disturbance interval decreases, the system is repeatedly returned to the same admissible basin, inhibiting transitions. The quantum Zeno effect is therefore the regime in which the evolve–project cycle is interrupted too frequently to permit basin escape.
-
-## Ramsey interferometry and echoes
-
-Ramsey sequences and spin–echo experiments probe reversibility in the presence of disturbance and damping. A first pulse introduces a localized disturbance that displaces the system into a superposition of admissible structures. Free evolution allows OU broadening of relative phases.
-
-A second pulse applies a compensating disturbance that re–aligns phase sectors. If the disturbance power remains below admissibility thresholds and the OU floors are symmetric, the evolve–project cycle restores coherence, producing echoes. Loss of echo contrast directly measures accumulated OU variance.
-
-## Bell correlations
-
-In Bell–type experiments, entangled states correspond to admissible basins in the joint coherent sector of the composite system. Localized disturbances acting on spatially separated subsystems redistribute the joint configuration among these basins.
-
-Stabilization occurs globally, not locally, reflecting the fact that the basins are defined in the full coherent configuration space rather than in $`(3+1)`$ spacetime alone. The observed nonlocal correlations therefore arise from the geometry of admissible basins rather than from superluminal signals.
-
-# Reversibility, Hysteresis, and Noise–Assisted Switching
-
-Although the underlying ten–dimensional evolution of $`\Psi`$ is fully deterministic and time–reversal invariant, the effective $`(3+1)`$ dynamics induced by the evolve–project cycle is only conditionally reversible. The loss of information associated with projection and the existence of admissibility barriers introduce directionality and memory effects.
-
-## Reversibility windows
-
-Reversibility holds when localized disturbances remain well below admissibility thresholds and OU floors are small compared to basin depth. In this regime, a compensating disturbance can return the system to its original admissible basin.
-
-This is the regime probed by echo experiments, weak measurements, and carefully controlled interferometry. The evolve–project cycle remains within a single connected region of the admissible set, and inverse operations remain effective.
-
-Once a disturbance pushes the system across an admissibility barrier, however, the original basin is no longer accessible without injecting additional disturbance power. Reversibility is then lost at the projected level even though the fundamental dynamics remains reversible.
-
-## Hysteresis near admissibility boundaries
-
-Near admissibility thresholds, stabilized outcomes depend on the history of applied disturbances. Increasing disturbance power may force a transition into a new basin, but decreasing it does not immediately restore the previous state.
-
-This hysteresis is a geometric consequence of basin structure in the coherent sector. The boundary between basins is not symmetric, and once the system has crossed it, return requires additional disturbance to overcome the new stability margin.
-
-Such hysteresis effects are generic in measurement contexts involving threshold detectors, metastable states, and macroscopic amplification.
-
-## Noise–assisted switching
-
-Moderate levels of disturbance can enhance transition rates between admissible basins by allowing trajectories to explore basin boundaries. This phenomenon is analogous to stochastic resonance and noise–assisted escape in classical systems.
-
-In MTT, noise–assisted switching arises naturally from OU floors near admissibility thresholds. Small additional disturbance power can significantly increase the probability of basin transitions, while excessive disturbance destroys coherence altogether.
-
-This mechanism provides a unified explanation for noise–enhanced sensitivity in biological sensors, threshold detectors, and certain quantum measurement protocols.
-
-## Effective irreversibility
-
-The combination of admissibility barriers, OU floors, and projection induces effective irreversibility in $`(3+1)`$ dimensions. This irreversibility is not fundamental but emergent: it reflects the loss of access to discarded degrees of freedom rather than a breakdown of time–reversal symmetry.
-
-Once a macroscopic measurement outcome has stabilized, reversing it would require reconstructing precise noncoherent components that have been suppressed by smoothing and erased by projection. In practice, this is impossible, yielding the observed arrow of measurement.
-
-# Stability of Records
-
-A defining feature of measurement is the persistence of records. Once an outcome is registered, it remains stable under subsequent interactions, allowing reproducibility, communication, and classical reasoning. In Modal Triplet Theory, record stability is not postulated but follows directly from the structure of admissibility and stabilization.
-
-## Basin deepening after capture
-
-When a system stabilizes into an admissible basin following a localized disturbance, the effective damping margins associated with that basin increase. This occurs because the stabilized configuration aligns with the joint harmonic structure of the three internal filters, minimizing noncoherent leakage.
-
-As additional subsystems—apparatus components, environmental degrees of freedom, observer memory—become correlated with the stabilized configuration, the combined system inherits the same basin structure. The effective basin becomes deeper and wider in the enlarged coherent sector.
-
-This basin deepening suppresses subsequent transitions. OU floors shrink relative to basin depth, and the probability of spontaneous escape becomes exponentially small.
-
-## Cascading stabilization
-
-Measurement rarely involves an isolated system. Instead, it triggers a cascade of stabilizations across many coupled degrees of freedom. Each stage of the cascade further increases effective damping margins and reduces sensitivity to disturbance.
-
-This cascading stabilization explains why macroscopic records are exceptionally robust. Once the cascade is complete, reversing the outcome would require coordinated disturbances across a vast number of modes, far exceeding admissibility thresholds.
-
-## Memory and reproducibility
-
-Memory devices—from digital storage to biological memory—function by engineering deep admissible basins with large FCC margins. Writing a memory corresponds to driving the system into one of these basins via a localized disturbance; reading the memory involves a weak probe that remains well below admissibility thresholds.
-
-Reproducibility follows immediately: repeated reads do not destabilize the basin, and identical preparation protocols yield the same stabilized outcomes with overwhelming probability.
-
-## Emergence of classicality
-
-Classical behavior emerges when admissible basins are sufficiently deep that OU floors are negligible on observational timescales. In this regime, fluctuations are suppressed, histories are stable, and effective determinism emerges in $`(3+1)`$ dimensions.
-
-This provides a unified explanation for why classical records coexist with quantum uncertainty: microscopic modes exhibit finite OU floors, while macroscopic records correspond to collective basins whose depth renders those floors irrelevant.
-
-# Relation to Decoherence and Other Approaches
-
-It is useful to contrast the MTT account of measurement with other well-known approaches in the foundations of quantum mechanics. While these approaches often emphasize different mechanisms, many of their observed effects arise naturally as special cases of disturbance and stabilization within the evolve–project framework.
-
-## Decoherence
-
-Decoherence explains the suppression of interference terms in reduced density matrices through entanglement with an environment. In the language of MTT, environmental coupling is a ubiquitous source of localized disturbance. Such disturbances inject variance into relative phase modes, raising their OU floors and thereby suppressing interference between incompatible coherent structures.
-
-However, decoherence alone does not select an outcome. It explains why off-diagonal terms become small, but it does not explain why a particular diagonal element is realized in a given run. In MTT, outcome selection arises from stabilization into a specific admissible basin under the projected dynamics. Decoherence corresponds to the widening of basin separations, while stabilization determines which basin is occupied.
-
-## Objective-collapse models
-
-Objective-collapse theories introduce explicit stochastic terms into the equations of motion to force localization. In contrast, MTT introduces no such modifications. The fundamental evolution remains deterministic and governed by the same equations in all circumstances.
-
-Apparent randomness arises only after projection, as a consequence of many-to-one mapping from the full ten-dimensional dynamics to the coherent sector. OU floors replace collapse rates, and admissibility barriers replace collapse triggers.
-
-## Many-worlds interpretations
-
-Everettian interpretations regard all branches of the wavefunction as simultaneously real. In MTT, by contrast, there is only one realized configuration at any given time: the one selected by stabilization under the evolve–project cycle.
-
-Other branches correspond to alternative admissible basins that are not occupied by the actual trajectory. They are counterfactual possibilities rather than coexisting worlds. This eliminates the need to assign ontological status to unobserved branches.
-
-## Hidden-variable theories
-
-Hidden-variable theories supplement the quantum state with additional degrees of freedom to restore determinism. MTT does not introduce any such variables. The ten-dimensional field $`\Psi`$ is the only ontic object, and its evolution is fully deterministic.
-
-Effective stochasticity arises from projection and basin geometry, not from ignorance of hidden parameters. The randomness observed in measurement outcomes reflects geometric partitioning rather than epistemic uncertainty.
-
-## Why MTT does not introduce physical collapse
-
-It is tempting to describe selection events as “collapse” because the effective description in $`\mathcal H_{\mathrm{coh}}`$ undergoes a discrete transition between admissible basins. However, Modal Triplet Theory introduces no collapse postulate and no stochastic modification of microscopic dynamics.
-
-#### No new dynamics.
-
-The microscopic evolution $`\Phi_t`$ on the full modal state space remains deterministic and is not altered at barrier times. Selection is an admissibility-enforcing re-initialization of the effective encoding, not an additional term in the equations of motion.
-
-#### No fundamental randomness.
-
-The stochasticity observed in the projected effective description arises from noninjective projection together with unresolved degrees of freedom in $`\mathrm{Ran}(Q)`$. In particular, effective probabilities are induced by basin measures over admissible preimages, not by a fundamental stochastic law.
-
-#### What becomes noninvertible.
-
-What fails at a selection event is not invertibility of $`\Phi_t`$ but the existence of an effective inverse for the projected evolution. Once admissibility is exceeded, multiple microscopic histories map to the same effective state, so no effective right inverse exists even in principle.
-
-#### Why the collapse analogy persists.
-
-From the standpoint of the effective observer, the transition is abrupt and information-erasing, so “collapse” is a useful mnemonic. But the mechanism is structural: it is projection plus finite admissibility margin, not a dynamical collapse axiom.
-
-This distinction matters technically: because the microscopic law is unchanged, the quantitative properties of outcome statistics depend on damping margins, basin geometry, and driver strength, and can be bounded and predicted within the fixed-point stability framework.
-
-## Summary of contrasts
-
-The MTT account shares surface features with several existing approaches but differs in its underlying logic. Decoherence appears as disturbance; collapse appears as stabilization; branching appears as basin structure; and probability appears as a measure on admissible regions.
-
-All of these phenomena arise from a single, unified mechanism: the interaction of smoothing, projection, disturbance, and admissibility in the ten-dimensional modal geometry.
-
-# Interpretive Summary and Outlook
-
-Measurement in Modal Triplet Theory is neither mysterious nor exceptional. It is an ordinary episode of the evolve–project cycle operating under a localized disturbance. The measuring apparatus perturbs the system away from a quiet coherent configuration; smoothing damps excess excitations; projection selects admissible harmonic content; and stabilization follows.
-
-Probability arises from geometry rather than randomness. The coherent sector is partitioned into basins of attraction, and localized disturbances redistribute trajectories among these basins. Born probabilities emerge as relative basin volumes with respect to the natural invariant measure. No additional stochastic postulate is required.
-
-Uncertainty arises from balance rather than ignorance. The OU floors derived in this paper represent finite equilibrium widths set by the competition between disturbance power and damping. These floors project to $`(3+1)`$ dimensions as uncertainty relations, including the familiar Heisenberg bounds. Attempting to sharpen one observable necessarily injects variance into conjugate modes.
-
-Irreversibility arises from admissibility rather than from fundamental time asymmetry. Once a disturbance pushes the system across an admissibility barrier, the previous basin is no longer accessible without injecting additional power. Projection erases information about noncoherent components, producing effective irreversibility even though the underlying dynamics remains time-reversal invariant.
-
-Classicality arises from stability rather than from collapse. Macroscopic records correspond to deep admissible basins with large FCC margins. Once captured, these basins suppress OU fluctuations and resist further disturbance. Cascading stabilization across coupled subsystems explains the robustness and reproducibility of classical records.
-
-Taken together, these mechanisms provide a unified account of measurement, probability, uncertainty, and classical behavior within a single deterministic framework. Modal Triplet Theory replaces the traditional measurement postulates of quantum mechanics with geometric and dynamical principles operating in a higher-dimensional modal geometry.
-
-Several directions for further work remain open. Quantitative modeling of disturbance statistics for specific measurement devices would allow direct comparison with experimental noise profiles. Detailed studies of reversibility curves, hysteresis loops, and noise-assisted switching near admissibility thresholds could provide new experimental signatures. Finally, extending the present analysis to relativistic quantum field theory and cosmological settings may shed further light on the emergence of classical spacetime from coherent modal dynamics.
-
-In this sense, measurement is no longer a foundational anomaly but a predictable and analyzable phenomenon arising from the same principles that govern coherence and stability throughout Modal Triplet Theory.
-
-# Basin Geometry and Effective Stochasticity
-
-Although the full evolution of the MTT field $`\Psi`$ on the ten-dimensional space $`M_{10}`$ is deterministic, the induced dynamics on the coherent sector is generally not. This is a direct consequence of projection.
-
-Let $`\Phi_{\Delta t}`$ denote the time–$`\Delta t`$ evolution map of the full smoothing dynamics, and let
+A deterministic completion is the special case in which a map $`c:E\to\bigsqcup_iD_i`$ sends every exit state to one outcome-conditioned state:
 ``` math
-P(\Psi) := \Pi_{\mathrm{coh}}\Psi
+\mathcal{K}_i(x,A)
+=\mathbf{1}_{\{c(x)\in D_i\cap A\}}.
 ```
-denote projection onto the coherent sector. A deterministic induced map $`F`$ on $`\mathrm{Ran}(\Pi_{\mathrm{coh}})`$ satisfying
+An ensemble of hidden upper states can then yield nontrivial effective probabilities through $`\nu`$, even though $`c`$ is deterministic. This is an ordinary pushforward mechanism. It must not be described as probability created by projection.
+
+# Basin-local stabilization
+
+Once completion has produced a state in $`D_i`$, an outcome-conditioned map may stabilize the corresponding record.
+
+<div id="thm:basin-contraction" class="theorem">
+
+**Theorem 5** (Record-basin contraction). *Let $`(D_i,d_i)`$ be nonempty and complete, and let $`T_i:D_i\to D_i`$ satisfy
 ``` math
-P(\Phi_{\Delta t}(\Psi)) = F(P(\Psi)) \quad \text{for all } \Psi
+d_i(T_i x,T_i y)\leq q_i d_i(x,y),
+\qquad 0\leq q_i<1.
 ```
-exists if and only if the fiber–invariance condition holds:
+Then $`T_i`$ has a unique fixed record $`r_i\in D_i`$, and
 ``` math
-P(\Psi_1) = P(\Psi_2) \;\Rightarrow\;
-P(\Phi_{\Delta t}(\Psi_1)) = P(\Phi_{\Delta t}(\Psi_2)).
+d_i(T_i^n x,r_i)\leq q_i^n d_i(x,r_i)
 ```
-In generic situations this condition fails, because noncoherent components—which are discarded by projection—can influence the next coherent image before being damped.
+for every $`x\in D_i`$.*
 
-## Kernel–valued effective dynamics
+</div>
 
-The correct induced object on the coherent sector is therefore not a map but a transition kernel. Let $`\mu`$ be a physically relevant invariant measure on the admissible slab of the full state space, and let $`\mu_x`$ denote the conditional measure on the fiber $`P^{-1}(x)`$.
+<div class="proof">
 
-The induced transition kernel is
+*Proof.* This is the Banach contraction theorem applied on the explicitly declared complete invariant basin $`D_i`$. ◻
+
+</div>
+
+The hypotheses matter. Completeness, nonemptiness, invariance $`T_i(D_i)\subseteq D_i`$, and the strict contraction constant are all proof obligations. A local linear estimate near a candidate record does not establish a global invariant basin.
+
+<div id="prop:no-global-contraction" class="proposition">
+
+**Proposition 6** (A global contraction cannot encode several outcomes). *If a map $`T:D\to D`$ is a contraction on one nonempty complete space $`D`$, then it cannot have two distinct fixed records.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The Banach theorem gives a unique fixed point. Equivalently, if $`Tx=x`$ and $`Ty=y`$, then
 ``` math
-K(x,A) := \mu_x\!\left(
-\left\{\Psi \in P^{-1}(x) :
-P(\Phi_{\Delta t}(\Psi)) \in A \right\}
-\right),
+d(x,y)=d(Tx,Ty)\leq qd(x,y)
 ```
-where $`A \subset \mathrm{Ran}(\Pi_{\mathrm{coh}})`$ is measurable. This kernel describes the effective evolution of coherent configurations under projection.
+with $`q<1`$, hence $`d(x,y)=0`$. ◻
 
-Only in the special case where fiber invariance holds does $`K`$ reduce to a Dirac kernel corresponding to a deterministic map. In general, the effective dynamics is stochastic, even though the underlying evolution is deterministic.
+</div>
 
-## Effective stochasticity without randomness
+This corrects a central tension in version 5. Multiple outcomes require separate invariant basins $`D_i`$, a noncontractive transition region, a context-dependent map, an outcome kernel, or some combination of these. A single global Fundamental Contractivity Condition cannot simultaneously select several stable records.
 
-The appearance of stochasticity at the projected level does not reflect fundamental randomness. Rather, it reflects the many–to–one nature of projection and the loss of information about noncoherent degrees of freedom.
+## Repeatability
 
-Localized disturbances broaden the distribution of noncoherent components within each fiber. Smoothing and projection then collapse this distribution onto admissible basins in the coherent sector. The relative weights of these basins determine outcome statistics.
+Repeatability is a statement about what happens after record $`i`$ is completed. If the later apparatus interaction preserves $`D_i`$ and its readout identifies the same record throughout a neighborhood of $`r_i`$, then Theorem <a href="#thm:basin-contraction" data-reference-type="ref" data-reference="thm:basin-contraction">5</a> supplies asymptotic stabilization. Immediate exact repeatability requires a stronger nondemolition or idempotence condition on the instrument. It does not follow from attraction alone.
 
-This mechanism explains how probabilistic behavior can arise from deterministic dynamics without invoking hidden variables, collapse postulates, or intrinsic noise terms in the equations of motion.
+# Projection, decoding, and irreversibility
 
-## Relation to measurement
+Let $`P:\mathcal{U}\to\mathcal{X}`$ be an effective projection from upper configurations to records. If $`P`$ is noninjective, two upper states $`u_1\neq u_2`$ may have the same record $`P(u_1)=P(u_2)`$.
 
-Measurement corresponds to a regime in which the induced kernel $`K`$ becomes sharply concentrated near basin boundaries. Small localized disturbances then suffice to redirect trajectories into different basins, producing apparent randomness in outcomes.
+<div id="prop:decoder" class="proposition">
 
-Once a basin is selected and stabilization occurs, subsequent evolution remains confined to that basin with overwhelming probability, restoring effective determinism and enabling stable records.
-
-# Stability of OU Floors Under Coupling
-
-The analysis in the main text treated individual non-harmonic modes in isolation. In realistic systems, however, modes are weakly coupled through nonlinear terms, environmental interactions, or apparatus degrees of freedom. It is therefore necessary to verify that the OU floors derived for single modes remain well-defined under such coupling.
-
-## Coupled OU systems
-
-Consider two non-harmonic mode amplitudes $`a_1(t)`$ and $`a_2(t)`$ governed by the coupled linear system
+**Proposition 7** (Unique decoding versus representative selection). *If $`P:\mathcal{U}\to\mathcal{X}`$ is noninjective, there is no decoder $`D:\mathcal{X}\to\mathcal{U}`$ satisfying
 ``` math
-\begin{align}
-\dot a_1 &= -\gamma_1 a_1 + \epsilon a_2 + \xi_1(t), \\
-\dot a_2 &= -\gamma_2 a_2 + \epsilon a_1 + \xi_2(t),
-\end{align}
+D\circ P=\operatorname{id}_{\mathcal{U}}.
 ```
-where $`\gamma_1,\gamma_2>0`$ are the damping margins, $`\epsilon`$ is a bounded coupling constant, and $`\xi_1,\xi_2`$ represent admissible disturbances with disturbance powers $`\delta_1,\delta_2`$ in the sense of Section 3.
-
-In the stochastic case, this system defines a multivariate OU process. The stationary covariance matrix $`\Sigma`$ satisfies the Lyapunov equation
+A right inverse or section $`s:\mathcal{X}\to\mathcal{U}`$ satisfying
 ``` math
-A\Sigma + \Sigma A^{\mathsf{T}} = Q,
+P\circ s=\operatorname{id}_{\mathcal{X}}
 ```
-where
+may nevertheless exist. Such a section chooses one representative and does not recover the actual upper state in a nontrivial fiber.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* If $`P(u_1)=P(u_2)`$, a decoder would imply
 ``` math
-A =
-\begin{pmatrix}
-\gamma_1 & -\epsilon \\
--\epsilon & \gamma_2
-\end{pmatrix},
+u_1=D(P(u_1))=D(P(u_2))=u_2,
+```
+contradicting noninjectivity. The second statement has no such contradiction: a section chooses one element of each represented fiber. ◻
+
+</div>
+
+Irreversibility must therefore be stated operationally. Possible precise claims include:
+
+- failure of unique decoding of the actual upper history;
+
+- merger of distinct effective histories under the record map;
+
+- absence of a physically admissible recovery channel;
+
+- hysteresis or entropy production in a declared open-system model;
+
+- or failure of upper dynamics to descend to a reversible lower map.
+
+Bare noninjectivity does not prove all of them.
+
+# Decoherence and outcome completion
+
+Suppose a pointer decomposition defines a dephasing channel
+``` math
+\mathcal{D}(\rho)=\sum_iP_i\rho P_i.
+```
+Decoherence controls the off-diagonal blocks of the reduced state and explains why interference between record alternatives can become negligible . It does not, by itself, choose an index $`i`$.
+
+The distinction is visible algebraically:
+``` math
+\rho
+\longmapsto
+\mathcal{D}(\rho)
+=\sum_iP_i\rho P_i
+```
+is a nonselective channel. An outcome-resolved instrument retains the individual maps
+``` math
+\mathcal{I}_i(\rho)=P_i\rho P_i
+```
+and associates each with a record. Even then, the instrument gives an ensemble law and conditional states. If the theory promises one objective ontic history, another source or selection statement is required.
+
+In MTT language, decoherence may occur inside or between approximate record sectors, while basin completion says which record label is emitted. Record stabilization then keeps that label robust. These are adjacent physical processes, not one theorem.
+
+# The Born source obligation
+
+Given an instrument, standard quantum mechanics predicts
+``` math
+p_i^{\mathrm{QM}}=\operatorname{Tr}(\rho E_i).
+```
+Given an upper completion package, Theorem <a href="#thm:completion" data-reference-type="ref" data-reference="thm:completion">3</a> predicts
+``` math
+p_i^{\mathrm{upper}}
+=\int_E\mathcal{K}_i(x,D_i)\,d\nu_\rho(x).
+```
+The required MTT equality is
+``` math
+\begin{equation}
+\boxed{
+\int_E\mathcal{K}_i(x,D_i)\,d\nu_\rho(x)
+=\operatorname{Tr}(\rho E_i)
+\quad\text{for every allowed }\rho,\mathcal{I},i.
+}
+\label{eq:born-source}
+\end{equation}
+```
+
+Equation <a href="#eq:born-source" data-reference-type="eqref" data-reference="eq:born-source">[eq:born-source]</a> displays all the missing data:
+
+- the preparation-dependent upper law $`\nu_\rho`$;
+
+- the selected apparatus completion kernel $`\mathcal{K}`$;
+
+- the quantum effect $`E_i`$;
+
+- and the equality on a declared preparation and apparatus domain.
+
+Relative basin volume
+``` math
+\frac{\mu(B_i)}{\sum_j\mu(B_j)}
+```
+is merely a normalized probability model until the measure, preparation dependence, and equality <a href="#eq:born-source" data-reference-type="eqref" data-reference="eq:born-source">[eq:born-source]</a> are proved. Contractivity does not determine those weights. The version 5 “Born rule from basin measures” proved only that a random initial point lands in a basin with the measure assigned to that basin; it did not prove equality to quantum trace weights.
+
+# Current q79 measurement status
+
+## Exact canonical domain
+
+The q79 program now supplies a selected operational realization on one restricted domain. For the canonical binary one-anchor nondemolition Fock recorder:
+
+- the finite state, observable, and output-algebra data are fixed;
+
+- the commuting output algebra defines the record events;
+
+- the selected normal state emits the stopped output measure;
+
+- second-moment capture descent is exact; and
+
+- no separate Born axiom, stochastic primitive, observed probability, or fit is inserted on that domain.
+
+Thus the analogue of equation <a href="#eq:born-source" data-reference-type="eqref" data-reference="eq:born-source">[eq:born-source]</a> is closed for that canonical binary apparatus. This is stronger than the conditional basin-volume story in version 5.
+
+## Open quantifiers
+
+The exact result does not yet establish:
+
+- the completion instrument for every allowed preparation and apparatus;
+
+- finite-bandwidth and non-Markov detector corrections;
+
+- a contextual family of overlapping measurements;
+
+- a universal basin geometry for all quantum observables;
+
+- or objective selection of one ontic history.
+
+The correct ledger is
+``` math
+\begin{array}{ll}
+\text{canonical q79 binary recorder:}&\text{exact on its domain},\\
+\text{general MTT apparatus family:}&\text{open},\\
+\text{universal Born source theorem:}&\text{open},\\
+\text{objective one-history selector:}&\text{open}.
+\end{array}
+```
+
+# A guarded Ornstein–Uhlenbeck model
+
+Version 5 used Ornstein–Uhlenbeck (OU) widths as an explanation of quantum uncertainty. The OU calculation is valid as a conditional linear-response model, but the identification with Heisenberg uncertainty is not derived.
+
+Let $`W_t`$ be standard Brownian motion and let a square-integrable $`a_0`$ be independent of its future increments. Suppose a reduced disturbance coordinate satisfies
+``` math
+\begin{equation}
+da_t=-\gamma a_t\,dt+\sigma\,dW_t,
+\qquad \gamma>0.
+\label{eq:ou}
+\end{equation}
+```
+
+<div id="lem:ou" class="lemma">
+
+**Lemma 8** (OU stationary variance). *Equation <a href="#eq:ou" data-reference-type="eqref" data-reference="eq:ou">[eq:ou]</a> has the solution
+``` math
+a_t=e^{-\gamma t}a_0
++\sigma\int_0^t e^{-\gamma(t-s)}\,dW_s,
+```
+and
+``` math
+\operatorname{Var}(a_t)
+=e^{-2\gamma t}\operatorname{Var}(a_0)
++\frac{\sigma^2}{2\gamma}
+\left(1-e^{-2\gamma t}\right).
+```
+Consequently its stationary variance is
+``` math
+\operatorname{Var}_{\mathrm{stat}}(a)=\frac{\sigma^2}{2\gamma}.
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The variation-of-constants formula gives the displayed solution. Ito isometry gives
+``` math
+\sigma^2\int_0^t e^{-2\gamma(t-s)}\,ds
+=\frac{\sigma^2}{2\gamma}(1-e^{-2\gamma t}),
+```
+which proves the variance formula and its limit. ◻
+
+</div>
+
+If instead
+``` math
+\dot a=-\gamma a+\eta(t),
 \qquad
-Q =
-\begin{pmatrix}
-\delta_1 & 0 \\
-0 & \delta_2
-\end{pmatrix}.
+\|\eta\|_\infty\leq M,
 ```
-
-## Existence and bounds
-
-If $`\min\{\gamma_1,\gamma_2\} > |\epsilon|`$, then $`A`$ is positive definite, and the Lyapunov equation admits a unique positive-definite solution $`\Sigma`$. Moreover, the diagonal entries of $`\Sigma`$ satisfy
+then variation of constants gives
 ``` math
-\Sigma_{11} = O\!\left(\frac{\delta_1}{\gamma_1}\right),
-\qquad
-\Sigma_{22} = O\!\left(\frac{\delta_2}{\gamma_2}\right),
+\limsup_{t\to\infty}|a(t)|\leq\frac{M}{\gamma}.
 ```
-with constants depending continuously on $`\epsilon`$.
+The stochastic variance and deterministic amplitude bound have different meanings and should not be identified.
 
-Thus, weak coupling perturbs but does not destroy the OU floors. Each mode retains a finite variance controlled by its own damping margin and disturbance power.
+To turn Lemma <a href="#lem:ou" data-reference-type="ref" data-reference="lem:ou">8</a> into a quantum-uncertainty theorem, MTT would need to derive:
 
-## Extension to many modes
+1.  the reduced coordinate $`a`$ from selected observables;
 
-The same reasoning extends to finite or countable collections of modes provided the coupling operator is bounded and the damping margins remain uniformly positive. In that case, the stationary covariance operator exists and is trace-class with respect to the fiber-weighted norms used in the main text.
+2.  the noise or unresolved-state law and its strength $`\sigma`$;
 
-This ensures that the bundlewise summability condition stated in Section 3 is stable under weak coupling, justifying its use in realistic measurement scenarios involving many interacting degrees of freedom.
+3.  the damping $`\gamma`$ from the same source;
 
-## Interpretive significance
+4.  the canonical commutator or symplectic form; and
 
-The stability of OU floors under coupling explains why uncertainty relations persist in interacting systems and why macroscopic apparatus degrees of freedom do not eliminate microscopic fluctuations entirely. Coupling redistributes disturbance power among modes but does not allow arbitrary concentration or removal of variance.
+5.  the Robertson–Schrodinger lower bound with the correct $`\hbar`$ normalization.
 
-This robustness under coupling is essential for the consistency of the measurement analysis presented in this paper.
+Without those steps, the OU floor is an effective fluctuation model, not the origin of quantum uncertainty.
 
-# Neutrino Mass as a Basin–Stabilized Worldline Invariant
+# A concrete apparatus example
 
-This appendix illustrates how small neutrino masses may be interpreted within the disturbance–stabilization framework developed in the main text. The discussion is heuristic and is not required for the core measurement results, but it serves to show how effective parameters can emerge from basin geometry and stabilization rather than from fundamental Yukawa couplings.
+Consider a Stern–Gerlach-type spin readout. The corrected stages are:
 
-## Coherent propagation and oscillations
+1.  A magnetic-field gradient couples spin and position, producing spatially distinguishable wave packets.
 
-In oscillation experiments, neutrinos propagate coherently over macroscopic distances with minimal interaction. In the MTT description, such propagation corresponds to motion within a narrow admissible basin of the coherent sector associated with a particular flavor superposition.
+2.  Environmental coupling and detector amplification suppress interference between macroscopic record sectors.
 
-Flavor oscillations arise from the existence of nearby admissible basins corresponding to different flavor mixtures. The relative phases between these basins evolve along the neutrino worldline, producing the familiar oscillation pattern when projected onto $`(3+1)`$ spacetime.
+3.  An outcome-resolved instrument assigns the two detector records and their conditional post-measurement states.
 
-## Localized disturbances and flavor capture
+4.  Record-sector dynamics stabilizes the fired detector state.
 
-Interactions with matter, detectors, or dense environments introduce localized disturbances that perturb the coherent neutrino configuration. Such disturbances inject power into flavor–changing modes, broadening their OU floors.
+The field gradient is the physical coupling. Decoherence helps make the records robust. The instrument supplies the outcome-resolved law. Stabilization explains persistence. Calling the first step a disturbance does not calculate the third step, and calling the fourth step a contraction does not select between the two detector channels.
 
-When the disturbance is sufficient to cross an admissibility boundary, the system stabilizes into a particular flavor basin. This stabilization corresponds to flavor detection in an experiment.
+The same decomposition applies to interferometry, weak measurements, and multi-stage protocols. Bell experiments additionally require a bipartite state, local instrument algebras, setting assumptions, and a locality analysis. They cannot be derived from stabilization alone.
 
-## Effective mass scale
+# Relation to interpretations
 
-The effective neutrino mass scale governing oscillation lengths can be interpreted as a basin–stabilized invariant associated with the worldline. It controls the spacing and depth of flavor basins rather than appearing as a fundamental mass parameter in the underlying dynamics.
+The framework is compatible with several ontological readings unless stronger MTT data are added:
 
-In this view, small neutrino masses reflect the narrow separation between flavor basins in the coherent sector and the weakness of admissible disturbances encountered during propagation.
+- As an operational theory, the instrument and output law suffice for record statistics.
 
-## Interpretive remarks
+- As an epistemic upper-state model, probabilities may reflect a preparation law over unresolved upper configurations.
 
-This perspective does not deny the phenomenological success of neutrino mass models. Rather, it suggests that what is observed as a small mass in $`(3+1)`$ dimensions may be an emergent parameter encoding basin geometry and stabilization properties in the full modal space.
+- As a stochastic completion, the kernel may be primitive or derived from a limit theorem.
 
-Further development of this idea would require a detailed analysis of lepton–sector coherent geometry within MTT and is left for future work.
+- As a deterministic ontic completion, a selected upper state and deterministic completion map must explain the observed statistics.
 
-# Selection, Admissibility, and Measurement Interpretation
+No observer-dependent collapse is required to formulate any of these options. But the options are physically different. A claim that MTT selects one of them must identify the relevant source theorem.
 
-This appendix clarifies the interpretation of measurement and outcome selection used throughout the paper, placing it in the broader context of admissibility and stability within Modal Triplet Theory. The purpose is conceptual rather than technical; no new dynamical assumptions are introduced here.
+# Completion program
 
-## Admissibility versus teleology
+The next measurement theorem should be built in this order:
 
-In MTT, selection is not teleological. There is no goal, preference, or optimization principle guiding the evolution toward particular outcomes. Instead, selection arises from admissibility: only configurations that satisfy bounded geometry, spectral gap conditions, and stability margins admit coherent evolution under the evolve–project cycle.
+1.  Select an upper carrier, preparation map, and apparatus coupling from the physical q79 branch.
 
-Measurement outcomes correspond to admissible stabilized configurations. Configurations that violate admissibility conditions are dynamically excluded, not because they are disfavored, but because the coherent description ceases to apply.
+2.  Identify finite record algebras and outcome spaces.
 
-## Selection potential as a barrier functional
+3.  Derive every instrument element or transition-completion kernel from the same coupling.
 
-One may introduce a scalar diagnostic functional $`\Phi_{\mathrm{sel}}`$ on the space of coherent configurations that increases as admissibility margins deteriorate. Such a functional may depend on spectral gaps, projector bounds, damping margins, or related quantities.
+4.  Prove equation <a href="#eq:born-source" data-reference-type="eqref" data-reference="eq:born-source">[eq:born-source]</a> for a nontrivial family of preparations and apparatus contexts.
 
-Importantly, $`\Phi_{\mathrm{sel}}`$ is not added to the equations of motion. It plays no causal role in the dynamics. Its purpose is purely diagnostic: divergence of $`\Phi_{\mathrm{sel}}`$ signals approach to the boundary of admissibility and loss of coherent control.
+5.  Prove basin-local stabilization or nondemolition repeatability after completion.
 
-This viewpoint aligns with the interpretation developed in Fixed Points V–VI, where so–called “drivers” are understood as admissibility barriers rather than forces.
+6.  Derive controlled detector bandwidth, memory, and environmental corrections.
 
-## Measurement as admissibility reduction
+7.  State whether one-history actualization is outside the theory or supply its selected mechanism.
 
-In measurement contexts, localized disturbances push the system toward regions of configuration space where admissibility margins are reduced. Near these boundaries, small perturbations can redirect trajectories into different admissible basins.
+This order prevents three familiar substitutions:
+``` math
+\begin{gathered}
+\text{decoherence}\neq\text{outcome selection},\\
+\text{basin stability}\neq\text{Born weight},\\
+\text{projection}\neq\text{probability source}.
+\end{gathered}
+```
 
-Outcome selection then corresponds to stabilization within one of these basins once the disturbance subsides. No additional selection rule is required beyond admissibility and stabilization.
+# Conclusion
 
-## Landscape reduction
+The disturbance-and-stabilization intuition survives, but only as two parts of a three-stage measurement process. A physical coupling can displace a state. An outcome-resolved kernel or instrument completes that interaction into a record and post-record state. Basin-local contraction can then stabilize the record. A global contraction cannot perform all three jobs because it has only one fixed point.
 
-The admissibility viewpoint naturally reduces the apparent landscape of possible outcomes. Although many formal solutions may exist at the level of unconstrained equations, only a subset lies within the admissible domain where coherent evolution is defined.
+The corrected inverse language also matters. Noninjective projection forbids unique decoding of the actual upper state, but it does not forbid every right inverse or representative section. Irreversibility requires a specified physical decoder, channel, or dynamical criterion.
 
-In measurement scenarios, this reduction manifests as a finite set of stable outcomes with well-defined basin measures. The discreteness of outcomes is thus structural rather than postulated.
+MTT has one substantial exact foothold: the canonical q79 binary one-anchor recorder emits its stopped-output law and exact capture descent on the declared domain without a fitted probability. The general apparatus and one-history problems remain open. The transition-completion kernel introduced here makes their missing content explicit and gives the measurement program a testable, noncircular next step.
 
-## Summary
+#### Open boundary (not evidence of closure).
 
-Measurement in MTT is neither a fundamental axiom nor a special dynamical process. It is an instance of admissibility reduction followed by stabilization under the evolve–project dynamics.
+- (*open*).
 
-This perspective unifies measurement, probability, uncertainty, and classical record formation within a single deterministic framework, without invoking collapse, hidden variables, or branching worlds.
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The distinction among coupling, outcome completion, and record stabilization is established from instruments and transition kernels. The open strict-upgrade ledger does not select an outcome law and is cited only to mark the stronger unresolved source boundary.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 
 99
 
-P. Nero, *Modal Triplet Theory: Foundation — A Rigorous Fixed-Point Framework for Unified 4D Physics*, Zenodo, 2025.
+E. B. Davies and J. T. Lewis, *An Operational Approach to Quantum Probability*, Communications in Mathematical Physics **17** (1970) 239–260, doi:10.1007/BF01647093.
 
-P. Nero, *Fixed Points I: Fixed Points over Multi–Bundle Manifolds*, Zenodo, 2025.
+W. H. Zurek, *Decoherence, Einselection, and the Quantum Origins of the Classical*, Reviews of Modern Physics **75** (2003) 715–775, doi:10.1103/RevModPhys.75.715, arXiv:quant-ph/0105127.
 
-P. Nero, *Fixed Points II: Fixed Points in a 10D Modal Model*, Zenodo, 2025.
+P. Nero, *Born-Compatible Record Measures and the Classical Concentration Limit: Separate Theorems and Their MTT Interface*, version 2, MTT research manuscript, July 2026.
 
-P. Nero, *Fixed Points III: Disturbance, Damping, and Stability*, Zenodo, 2025.
+P. Nero, *Contextuality and Sequential Measurement Order: Distinct Obstructions with a Shared MTT Interface*, version 2, MTT research manuscript, July 2026.
 
-P. Nero, *Fixed Points V: Curvature Coupling, Multi–Structure Dynamics, and Drivers*, Zenodo, 2025.
-
-P. Nero, *Fixed Points VI: Formal Synthesis and Physical Interpretations*, Zenodo, 2025.
-
-P. Nero, *Modal Triplet Theory: From MTT to Quantum Mechanics*, Zenodo, 2025.
-
-G. Da Prato and J. Zabczyk, *Stochastic Equations in Infinite Dimensions*, Cambridge University Press, 1992.
-
-R. Temam, *Infinite-Dimensional Dynamical Systems in Mechanics and Physics*, Springer, 1997.
-
-C. W. Gardiner, *Stochastic Methods: A Handbook for the Natural and Social Sciences*, 4th ed., Springer, 2009.
-
-P. Busch, Quantum states and generalized observables: A simple proof of Gleason’s theorem, *Phys. Rev. Lett.* **91** (2003), 120403.
-
-A. M. Gleason, Measures on the closed subspaces of a Hilbert space, *J. Math. Mech.* **6** (1957), 885–893.
-
-E. B. Davies, Markovian master equations, *Commun. Math. Phys.* **39** (1974), 91–110.
-
-G. Lindblad, On the generators of quantum dynamical semigroups, *Commun. Math. Phys.* **48** (1976), 119–130.
-
-M. Reed and B. Simon, *Methods of Modern Mathematical Physics II: Fourier Analysis, Self–Adjointness*, Academic Press, 1975.
-
-T. Kato, *Perturbation Theory for Linear Operators*, Springer, 1976.
+P. Nero, *MTT Results Reproducibility Repository*, <https://github.com/PeterNero/mtt-results-repro>.
 
 </div>

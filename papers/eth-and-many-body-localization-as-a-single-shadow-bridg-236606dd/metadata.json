@@ -48,15 +48,15 @@
       "sha256": "6eb191be1b8ff19409e3f5729ae89fe6b65267d99b49740e036dfe79f3a343e6"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/ETH_and_Many__Body_Localization_as_a_Single_Shadow__Bridge_Problem"
   },
-  "source_tree_sha256": "57591de5dbc8de54c8438925029b7b53a5b8cdaceab05bbcff5ca86b4c32cdb3",
+  "source_tree_sha256": "80101f509b655eb1ee0ce764e5e0bdef3032aa5145b4bb0f12d9b6308ab1e41a",
   "title": "ETH and Many\u2013Body Localization as a Single Shadow\u2013Bridge Problem A rigorous projection\u2013based basin framework unifying ETH, MBL, and monitored transitions",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

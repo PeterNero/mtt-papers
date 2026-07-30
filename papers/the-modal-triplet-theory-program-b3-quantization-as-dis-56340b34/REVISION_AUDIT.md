@@ -158,3 +158,18 @@ sets and discrete spectra, supplies classical countermodels, and records the
 operator-algebraic inputs needed for quantum mechanics. It does not derive
 complex quantum mechanics, CCR/CAR, the Born rule, measurement dynamics, or
 physical outcome selection from a nil profile alone.
+
+## Expository revision, 2026-07-28
+
+The theorem inventory and ownership are unchanged. The paper now begins with a
+paper-specific reading guide that separates four logically distinct layers:
+nil termination, constrained survival, operator spectrum, and quantum
+reconstruction. An explicit object picture explains why failure of one chart
+does not discretize the underlying state space, and a theorem-by-theorem guide
+states what each formal result contributes.
+
+Interpretive paragraphs were also added after the classical countermodels and
+the GNS theorem. They clarify that the survivor result is a reusable geometric
+tool, while GNS is a translator from supplied algebraic expectation data rather
+than a source theorem for those data. No new quantum claim or duplicated
+canonical theorem was introduced.

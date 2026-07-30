@@ -1,785 +1,488 @@
-\documentclass[11pt,a4paper]{article}
-\usepackage{series}
+\documentclass[11pt]{article}
 
-\title{\textbf{Modal Triplet Theory: From MTT to Quantum Field Theory on Curved Spacetime}}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=28mm]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage{booktabs,tabularx}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\emergencystretch=2em
 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\A}{\mathcal A}
+\newcommand{\D}{\mathcal D}
+\newcommand{\E}{\mathcal E}
+\newcommand{\Hspace}{\mathcal H}
+\newcommand{\Sol}{\operatorname{Sol}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\tr}{\operatorname{tr}}
+
+\title{Modal Triplet Theory and Quantum Field Theory on Curved Spacetime:\\
+\large A Selected Free CAR Net and the Interacting Reconstruction Boundary}
 \author{Peter Nero}
-\date{January, 2026} 
+\date{July 2026\\Version 4}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We present a first-principles derivation of interacting quantum field theory (QFT) on curved spacetimes from Modal Triplet Theory (MTT).
-Extending the projection operator formalism $\Pi_{\mathrm{QM}}$ of the MTT~$\to$~quantum mechanics correspondence, 
-we construct $\Pi_{\mathrm{QFT}}$ as a map from modal-coherent sectors of the 10D MTT configuration space to the algebra of quantum fields on a globally hyperbolic 4D spacetime $(Y_4,g_{\mu\nu})$.
-Our formulation employs the algebraic QFT framework, ensuring the Hadamard property of physical states, and incorporates running couplings from the covariant functional renormalisation group (FRG).
-We derive the semiclassical Einstein equation with FRG-improved $\langle T_{\mu\nu} \rangle_{\mathrm{ren}}$, discuss unitarity and implementability conditions (Shale–Stinespring), and give a worked example: scalar field particle production in a spatially flat FRW universe with scale-dependent mass and curvature coupling.
-This work completes the triad MTT~$\to$~(QM, GR, QFT) and provides a mathematically rigorous bridge between modal dynamics and the standard formalism of quantum fields in curved backgrounds.
+The current Modal Triplet Theory corpus supports a precise but limited
+curved-spacetime quantum-field-theory result. On the selected globally
+hyperbolic framed q79 representative, a global coframe and parallel
+rank-six carrier define a zero-order-free twisted massless Dirac operator.
+Standard algebraic QFT then yields an even CAR observable net with locality,
+covariance, the time-slice property, and a nonempty positive Hadamard state
+space, together with the exact finite coherent/complement component map.
+These conclusions use independent QFT theorems; they are not derived from
+projection alone. At nonzero interaction, the selected carrier has a
+classical BV master-action and formal perturbative QME/equicausal
+construction, while a physical nonperturbative gauge-BRST C-star net,
+selected state, renormalization-group matching, and observable uncertainty
+packet remain open. The paper also separates Hadamard regularity from
+unitary implementability, and treats the semiclassical Einstein equation and
+FRW particle production as conditional applications. This establishes a
+selected free local QFT source and a formal interacting bridge, not a
+first-principles derivation of full interacting QFT from finite projection.
 \end{abstract}
 
-\section{Introduction}
-
-Modal Triplet Theory (MTT) provides a 10-dimensional, fixed-point and gap-structured field-theoretic framework unifying gravity, gauge fields, matter sectors, and a modal phase degree of freedom.
-Previous work has established explicit projections $\Pi_{\mathrm{QM}}$ and $\Pi_{\mathrm{GR}}$ realising the derivations MTT~$\to$~quantum mechanics and MTT~$\to$~general relativity, respectively.
-Here we extend this program to the third pillar: the derivation of interacting quantum field theory (QFT) on curved spacetimes from MTT.
-
-Our goals in this paper are:
-\begin{enumerate}
-    \item To define the projection operator $\Pi_{\mathrm{QFT}}$ from modal configuration space to the *algebra* of quantum fields on $(Y_4,g_{\mu\nu})$, not just finite-mode truncations.
-    \item To ensure the projected states satisfy the Hadamard condition, enabling covariant renormalisation of observables such as $\langle T_{\mu\nu} \rangle$.
-    \item To incorporate running couplings via the covariant functional renormalisation group (FRG) in a manner consistent with diffeomorphism invariance.
-    \item To analyse unitarity of the projected dynamics via the Shale–Stinespring criterion.
-    \item To demonstrate the formalism in a concrete example with cosmological relevance.
-\end{enumerate}
-
-The structure of the paper is as follows.
-In Sec.~\ref{sec:proj}, we recall the modal field content of MTT and define the algebraic QFT projection $\Pi_{\mathrm{QFT}}$.
-Sec.~\ref{sec:algqft} reviews the field-algebra and Hadamard-state framework, and explains how modal coherence data selects a physical state.
-Sec.~\ref{sec:dyn} develops the dynamical evolution, including unitary implementability and Bogoliubov transformations.
-In Sec.~\ref{sec:renTmunu} we construct the renormalised stress--energy tensor and its conservation, then couple it to the semiclassical Einstein equation with FRG-improved couplings.
-Sec.~\ref{sec:frg} describes the covariant FRG machinery and the projection of the Wetterich flow onto relevant operators.
-Sec.~\ref{sec:frw-example} presents the FRW scalar example with running parameters.
-We conclude in Sec.~\ref{sec:summary} with a summary and outlook.
-
-All statements in this paper are local in time and are formulated on finite
-time slabs; global-in-time existence or completeness is not claimed.
-
-\section{Modal Field Content and Definition of \texorpdfstring{$\Pi_{\mathrm{QFT}}$}{Pi\_QFT}}
-\label{sec:proj}
-
-\subsection{Modal Triplet Theory configuration space}
-
-The classical configuration space of MTT consists of the following fields on a ten-dimensional manifold
-\[
-M^{10} \;=\; Y_4 \times B_1 \times B_2 \times B_3,
-\]
-where $Y_4$ is a globally hyperbolic Lorentzian spacetime and the $B_n$ are compact internal modal manifolds associated with each triplet leg:
-
-\begin{itemize}
-    \item Gravity sector: tetrad $e^a{}_\mu$ or metric $g_{\mu\nu}$ on $Y_4$ extended trivially over the $B_n$; internal warp factors and moduli are encoded in the ten-dimensional metric $g_{AB}$.
-    \item Gauge sectors: connections $A^{(n)}_\mu$ for gauge factors $G_n$, plus their higher-dimensional components along the $B_n$.
-    \item Fermions: two-of-three fermionic fields $\Psi_{ij}$, valued in spin bundles over $Y_4$ tensored with appropriate representations of $G_n$ and harmonic modes on the $B_n$.
-    \item Scalars: coherent scalar fields $\phi_n$ and the family-phase scalar $\vartheta$.
-\end{itemize}
-
-The fixed-point and gap structure of MTT is encoded in:
-\begin{enumerate}
-    \item The \emph{coherent-sector projection}, selecting modal field configurations lying on a stable fixed point with finite excitation gaps $\lambda_*^{-1}$ to other modal sectors.
-    \item A set of \emph{superselection integers} $(Q_{12},Q_{13},Q_{23}; k_2,k_3; g)$ labelling disconnected components of the configuration space; these protect fermion family number and internal topological structure.
-\end{enumerate}
-
-\subsection{From finite-mode truncations to the full field algebra}
-
-In the MTT~$\to$~QM derivation, the projection $\Pi_{\mathrm{QM}}$ restricted modal configurations to a finite set of normal modes, producing a Hilbert space and Hamiltonian dynamics for a finite number of degrees of freedom.
-Here, we lift this restriction and instead map to the \emph{algebra of quantum fields} on $(Y_4,g_{\mu\nu})$.
-
-Let $\mathcal{C}_{\mathrm{MTT}}$ denote the coherent-sector configuration space of MTT in a fixed superselection sector.
-Let $(M,g)$ denote the effective 4D spacetime $(Y_4,g_{\mu\nu})$ obtained by the $\Pi_{\mathrm{GR}}$ projection and integration over the $B_n$.
-We denote by $\mathcal{A}(M,g)$ the \emph{CCR} (bosons) and \emph{CAR} (fermions) $*$-algebra of quantum fields on $(M,g)$.
-
-\begin{definition}[QFT projection]
-The projection operator
-\[
-\Pi_{\mathrm{QFT}}: \mathcal{C}_{\mathrm{MTT}} \longrightarrow \{(\mathcal{A}(M,g),\omega)\}
-\]
-maps a coherent-sector MTT configuration to:
-\begin{enumerate}
-    \item the field algebra $\mathcal{A}(M,g)$ generated by smeared quantum fields $\Phi(f)$ for each matter and gauge species (and the metric, if quantised perturbatively), with canonical commutation or anticommutation relations,
-    \item a \emph{state} $\omega$ on $\mathcal{A}$ that is of Hadamard form.
-\end{enumerate}
-\end{definition}
-
-Physically, $\Pi_{\mathrm{QFT}}$ encodes two operations:
-\begin{description}
-    \item[Modal pushforward:] restriction of the ten-dimensional fields to $Y_4$ and decomposition into harmonics on $B_n$, producing field species and their bare parameters $(m_0, g_0, \xi_0, \dots)$ on $(M,g)$.
-    \item[State selection:] mapping the modal coherence data to a state $\omega$ whose two-point function $W_\omega$ has the universal Hadamard short-distance structure required for local covariant renormalisation.
+\section*{Version 4 Revision Note}
+\begin{description}[leftmargin=3.2cm,style=nextline]
+\item[Supersedes] Version 3, \emph{Modal Triplet Theory: From MTT to Quantum
+Field Theory on Curved Spacetime}.
+\item[Reason] The earlier paper treated CCR/CAR quantization, Hadamard
+selection, local covariance, positivity, and unitary implementability as
+outputs of a projection map. It also blurred the internal six-dimensional
+geometry with four-dimensional curved spacetime.
+\item[Resolution] The geometry is typed as \(Y_4\) plus the selected
+internal \(X_6\). Standard AQFT inputs are named explicitly, the currently
+closed free CAR net is stated at its selected tier, and interacting,
+semiclassical, and FRG layers are separated.
+\item[Retained result] A selected twisted massless Dirac source composes
+with established CAR/AQFT machinery to give a local covariant free
+observable net and positive Hadamard states.
+\item[Remaining boundary] A geometry-selected nonperturbative interacting
+gauge-BRST C-star construction, full-branch state, RG/matching map,
+uncertainty budget, and observable comparison remain open.
 \end{description}
 
-\subsection{Properties of $\Pi_{\mathrm{QFT}}$}
+\tableofcontents
 
-\paragraph{Functoriality.} $\Pi_{\mathrm{QFT}}$ is covariant under isometries of $(M,g)$ induced from automorphisms of the coherent-sector $M^{10}$.
+\section{What is being constructed}
 
-\paragraph{Gauge/diffeomorphism invariance.} The construction is invariant under the residual gauge symmetries and diffeomorphisms preserved by $\Pi_{\mathrm{GR}}$.
+Quantum field theory on curved spacetime is not one Hilbert space with a
+preferred vacuum. Its local formulation assigns algebras of observables to
+spacetime regions and controls states by microlocal singularity conditions
+\cite{Wald,Radzikowski,BFV}.
 
-\paragraph{Gap stability.} The fixed-point gap ensures that integrating out heavy internal modes leaves a well-defined low-energy effective field theory on $(M,g)$ with local operators up to suppressed higher-derivative terms.
+The MTT construction must therefore provide a typed chain:
+\[
+\begin{gathered}
+\text{selected geometry and bundle}
+\longrightarrow
+\text{Green-hyperbolic field operator}\\
+\downarrow\\
+\text{classical solution/propagator space}
+\longrightarrow
+\text{CCR or CAR algebra and local net}\\
+\downarrow\\
+\text{physical states and observables}.
+\end{gathered}
+\]
+Projection can enter several arrows, but it does not replace any of them.
 
-\begin{remark}
-The algebraic construction depends only on the coherent-sector projector
-$\Pi_{\mathrm{coh}}$ and the induced effective operator on the base spacetime.
-Higher noncoherent spectral data and microscopic fibre details do not enter
-the definition of the observable algebra.
-\end{remark}
+\subsection{Four plus six dimensions}
 
-\section{Algebraic QFT Framework and State Selection}
-\label{sec:algqft}
+The physical Lorentzian spacetime is denoted
+\((Y_4,g)\), assumed globally hyperbolic. The internal compactification
+candidate is denoted \(X_6\), on the selected q79 Fu--Yau branch. At a simple
+reduction tier one may use \(Y_4\times X_6\); a nontrivial fibration requires
+additional gluing data.
 
-\subsection{Field algebras on curved spacetimes}
+The shared circle is phase-bundle data within the selected geometry. It is
+not a fifth spacetime coordinate and is not Lorentzian time. Internal
+projectors act on internal or finite carrier factors unless a proved
+intertwiner transports them to a spacetime operator.
 
-Let $(M,g)$ be a globally hyperbolic Lorentzian spacetime. For each bosonic field species $\phi$ obeying a linear equation of motion $P\phi = 0$ (e.g.\ Klein--Gordon, Maxwell, Yang--Mills in a fixed background), one defines the \emph{canonical commutation relations} (CCR) $*$-algebra $\mathcal{A}_{\phi}(M,g)$ generated by smeared fields $\phi(f)$, $f \in C_0^\infty(M)$, modulo the relations:
-\begin{align}
-[\phi(f),\phi(h)] &= i \Delta(f,h) \mathbf{1}, \\
-\phi(Pf) &= 0,
-\end{align}
-where $\Delta$ is the causal propagator $E_{\mathrm{ret}} - E_{\mathrm{adv}}$ of $P$.  
+\section{Independent QFT ingredients}
 
-For Dirac fields $\psi$ satisfying $D\psi=0$, the CAR $C^*$-algebra is generated by symbols $\psi(f)$, $f\in C^\infty_0(M,S)$, modulo
-\begin{equation}
-\{\psi(f),\psi(h)\}=0,\qquad
-\{\psi(f),\psi(h)^{\!*}\}= S(f,h)\, \mathbf{1},
-\label{eq:CAR}
-\end{equation}
-where $S$ is the causal fundamental solution of $D$ (skew-adjoint), and ${}^{\!*}$ is the $*$-operation in the algebra.
+Let \(E\to Y_4\) be a vector bundle and
+\[
+ P:\Gamma(E)\to\Gamma(E)
+\]
+a normally hyperbolic or Green-hyperbolic field operator. Advanced and
+retarded Green operators \(G^\pm\) satisfy
+\[
+ PG^\pm f=f=G^\pm Pf,
+ \qquad
+ \supp(G^\pm f)\subseteq J^\pm(\supp f).
+\]
+Their difference \(G=G^- -G^+\) determines the classical causal
+commutator or anticommutator form.
 
+For bosons, canonical commutation relations require a symplectic solution
+space. For fermions, canonical anticommutation relations require the
+appropriate Hermitian form and charge conjugation structure. These
+quantization functors are standard mathematical inputs, not consequences of
+a Gaussian expansion or of choosing a coherent subspace.
 
-The full field algebra $\mathcal{A}(M,g)$ is the tensor product (in the $*$-algebra sense) of $\mathcal{A}_{\phi}$ and $\mathcal{A}_{\psi}$ factors for all species, including ghosts and gauge-fixing sectors if quantising gauge fields.
+\subsection{Local net axioms}
 
-\subsection{Hadamard states and local covariance}
-
-A \emph{state} on $\mathcal{A}(M,g)$ is a positive, normalised linear functional $\omega: \mathcal{A} \to \mathbb{C}$.
-Physically, $\omega(A)$ gives the expectation value of the observable $A$ in the state $\omega$.
-For free fields, a state is fully characterised by its two-point function $W_\omega$; higher $n$-point functions follow by Wick's theorem in quasifree cases.
-
-A state $\omega$ is of \emph{Hadamard form} if, in a neighbourhood of any point $x\in M$, the singular part of $W_\omega(x,x')$ matches the universal Hadamard parametrix:
-\begin{equation}
-W_\omega(x,x') \;\sim\; \frac{U(x,x')}{\sigma_\epsilon(x,x')} \;+\; V(x,x') \ln \sigma_\epsilon(x,x') \;+\; W_{\mathrm{smooth}}(x,x'),
-\end{equation}
-where $\sigma_\epsilon$ is Synge’s world function with Feynman $i\epsilon$ prescription, and $U$, $V$ are smooth biscalars determined by the geometry and field equation.
-Hadamard states ensure that local, covariant renormalisation of composite operators (e.g.\ $T_{\mu\nu}$) is possible.
-
-\subsection{State selection from modal data}
-
-In MTT, the modal fields $\Psi^*$ in a coherent sector carry:
-\begin{enumerate}
-    \item \emph{Geometric data}: the induced 4D metric $g_{\mu\nu}$ from $\Pi_{\mathrm{GR}}$ and its curvature tensors.
-    \item \emph{Mode structure}: harmonic decomposition coefficients on $B_n$ determining field masses $m$, couplings $g$, curvature couplings $\xi$, etc.
-    \item \emph{Coherence phases}: internal modal time phases and correlation data encoding relative alignment of field components.
-\end{enumerate}
-
-We define $\Pi_{\mathrm{QFT}}$ to map $(\Psi^*, g_{\mu\nu})$ to $(\mathcal{A}(M,g), \omega)$ as follows:
-\begin{description}
-    \item[Step 1:] Construct the field algebra $\mathcal{A}(M,g)$ for the set of species arising in the $\Pi_{\mathrm{GR}}$ reduction of $\Psi^*$, with parameters $(m,\xi,g,\dots)$ fixed by the modal harmonic decomposition.
-    \item[Step 2:] From the modal coherence phases, build the two-point function $W_\omega$ in a neighbourhood of the observer’s worldline by matching the short-distance structure to the Minkowski vacuum in local normal coordinates, and extending globally by parallel transport along the modal minimal paths $\gamma^*(x^\mu)$. This yields a \emph{quasifree Hadamard state} $\omega$.
+For each suitable open region \(O\subset Y_4\), an algebraic QFT net assigns
+\(\A(O)\). The principal properties used here are:
+\begin{description}[leftmargin=2.8cm,style=nextline]
+\item[Isotony] \(O_1\subset O_2\) implies
+\(\A(O_1)\subset\A(O_2)\).
+\item[Einstein causality] Spacelike separated observable algebras commute
+(or graded-commute before taking the even observable subalgebra).
+\item[Time slice] A region containing a Cauchy surface generates the full
+algebra.
+\item[Local covariance] Causal isometric embeddings induce compatible
+algebra morphisms.
 \end{description}
 
-In spacetimes with high symmetry (e.g.\ FRW), this procedure picks out the \emph{adiabatic vacuum} of some order, modified by the running couplings inherited from MTT via the functional RG flow.
-\paragraph{Explicit Hadamard selection.}
-Locally, choose Riemann normal coordinates at $x\in M$ and set the two-point function to match the Minkowski parametrix up to smooth remainders; transport along modal minimal curves $\gamma_\ast$ to extend globally. Equivalently, in spatially homogeneous cases (e.g.\ FRW) choose an adiabatic vacuum of order $N\ge 2$ (bosons) or the standard fermionic analogue. Both constructions yield quasifree Hadamard states and are compatible with the smooth running couplings inherited from the FRG, provided these are $C^\infty$ with bounded derivatives on the observational domain.
-
-\paragraph{Remark.} This construction is \emph{locally covariant}: under an embedding $\chi: (M,g) \hookrightarrow (M',g')$, the corresponding algebras and states satisfy
-\[
-\Pi_{\mathrm{QFT}}(\Psi^*|_M) \;=\; (\mathcal{A}(\chi),\chi^*\omega'),
-\]
-with $\mathcal{A}(\chi)$ the induced $*$-homomorphism.
-
-\subsection{Local nets and the time-slice property}
-\label{sec:local-net-timeslice}
-
-To make the propagation content explicit in algebraic form, we package the field algebra on $(M,g)$ as a Haag--Kastler net of local algebras.
-
-Let $(M,g)$ be globally hyperbolic and let $P$ be a normally hyperbolic operator (or Dirac-type operator in the fermionic case) defining the free field equation. Let $\mathcal{A}(M,g)$ denote the corresponding CCR (or CAR) $*$--algebra generated by smeared fields $\Phi(f)$ (or $\Psi(f)$), modulo the field equation ideal and the canonical (anti)commutation relations determined by the causal propagator.
-
-For each open region $\mathcal{O}\subset M$, define the \emph{local algebra} $\mathcal{A}(\mathcal{O})$ to be the unital $*$--subalgebra of $\mathcal{A}(M,g)$ generated by all smeared fields with support in $\mathcal{O}$:
-\[
-\mathcal{A}(\mathcal{O}) := \big\langle \Phi(f)\ :\ f\in C^\infty_0(M),\ \mathrm{supp}(f)\subset \mathcal{O}\big\rangle_{*}.
-\]
-(For fermions, replace $\Phi$ by $\Psi$ and CCR by CAR, with the same support restriction.)
-
-\paragraph{Isotony.}
-If $\mathcal{O}_1\subset \mathcal{O}_2$, then $\mathcal{A}(\mathcal{O}_1)\subset \mathcal{A}(\mathcal{O}_2)$.
-
-\paragraph{Microcausality (locality).}
-If $\mathcal{O}_1$ and $\mathcal{O}_2$ are causally disjoint, then the corresponding local algebras commute (bosons) or graded-commute (fermions):
-\[
-[\mathcal{A}(\mathcal{O}_1),\mathcal{A}(\mathcal{O}_2)] = 0,
-\qquad
-\text{(or graded commutator }=0\text{ in the fermionic case).}
-\]
-This follows from support properties of the causal propagator $\Delta = E_{\mathrm{ret}}-E_{\mathrm{adv}}$, which vanishes for spacelike separation.
-
-\paragraph{Time-slice property (algebraic propagation).}
-Let $\mathcal{O}\subset M$ be an open region containing a Cauchy surface for $(M,g)$ (or for the relevant subspacetime under consideration). Then the inclusion
-\[
-\mathcal{A}(\mathcal{O}) \hookrightarrow \mathcal{A}(M,g)
-\]
-is an isomorphism onto the algebra of the domain of dependence $D(\mathcal{O})$; equivalently, the algebra generated in an arbitrarily small neighborhood of a Cauchy surface determines the algebra in its causal development. This is the algebraic expression of hyperbolic propagation and will be the primary notion of ``field propagation'' used throughout.
-
-\paragraph{Scope.}
-All statements above are to be understood slab-locally in the MTT sense: they hold precisely on those effective domains where the QFT encoding and the associated normally hyperbolic operator $P$ are available under admissibility control.
-
-\section{Dynamics, Bogoliubov Transformations, and Unitary Implementability}
-\label{sec:dyn}
-
-In this section we specify the time evolution of the projected field algebra and state, and give precise
-conditions for unitarily implementable dynamics on a chosen Fock representation. The curved background
-$(M,g)$ and the running parameters inherited from MTT via the FRG (Sec.~\ref{sec:frg}) generally render the
-evolution \emph{time-dependent}. We treat bosons (CCR) and fermions (CAR) in parallel.
-
-\subsection{Classical evolution and symplectic/inner-product structures}
-
-Let $(\mathcal{S},E)$ denote the real vector space of smooth, compactly supported solutions of a linear
-hyperbolic equation $P\phi=0$ (e.g.\ Klein--Gordon with possibly time-dependent parameters) with causal
-propagator $\Delta=E_{\mathrm{ret}}-E_{\mathrm{adv}}$.
-The \emph{symplectic form} on $\mathcal{S}$ is
-\begin{equation}
-\sigma(\phi_1,\phi_2) \;=\; \int_\Sigma \!\left(\phi_1\,\pi_2-\phi_2\,\pi_1\right)\, d\Sigma,
-\qquad \pi:=n^\mu \sqrt{h}\,\partial_\mu \phi,
-\label{eq:symplectic}
-\end{equation}
-with $\Sigma$ a Cauchy surface and $n^\mu$ its unit normal (the expression is Cauchy-surface invariant).
-For Dirac fields, the classical space $\mathcal{S}_{\mathrm{D}}$ carries a \emph{Hermitian} inner product
-\begin{equation}
-\langle \psi_1,\psi_2\rangle_{\mathrm{D}}
-= \int_\Sigma \!\bar\psi_1 \gamma^\mu n_\mu \psi_2\, d\Sigma,
-\end{equation}
-which is conserved under the Dirac evolution. Time evolution defines a family of real-linear maps
-$U_{t,t_0}:\mathcal{S}\to\mathcal{S}$ (bosons, symplectic) and unitary maps $V_{t,t_0}:\mathcal{S}_{\mathrm{D}}\to\mathcal{S}_{\mathrm{D}}$
-(fermions, CAR).
-
-\subsection{Quantisation, complex structures, and quasifree states}
-
-For CCR, a \emph{complex structure} $J:\mathcal{S}\to\mathcal{S}$ ($J^2=-\mathbf{1}$, $\sigma(J\cdot,J\cdot)=\sigma$,
-$\mu(\cdot,\cdot):=\sigma(\cdot,J\cdot)$ positive) determines a quasifree state $\omega_J$ with two-point function
-$W_J=\frac12(\mu - i\sigma)$. The corresponding one-particle Hilbert space $(\mathcal{H}_J,\langle\cdot,\cdot\rangle)$ yields a Fock
-representation $\mathcal{F}_J$ of the Weyl algebra. For CAR, a projection $S$ on $\mathcal{S}_{\mathrm{D}}\otimes\mathbb{C}$
-with $0\le S\le \mathbf{1}$ defines a quasifree state; $S$ is the \emph{covariance} (two-point function)
-obeying the Dirac equation in both arguments.
-
-In the MTT projection, $\Pi_{\mathrm{QFT}}$ (Sec.~\ref{sec:algqft}) selects a \emph{Hadamard} quasifree state
-$\omega$ (hence a $J$ or $S$) by matching the universal short-distance structure and the modal coherence phases.
-Running couplings $m(t),\xi(t),Z(t),\ldots$ enter only through $P$ (or $\mathcal{D}$) and do not spoil Hadamardness provided
-they are smooth with bounded derivatives on the observational domain.
-
-\subsection{Bogoliubov transformations for time-dependent dynamics}
-
-Let $U_{t,t_0}$ be the classical symplectic evolution for the bosonic system (the fermionic case is analogous with
-unitary $V_{t,t_0}$). Relative to a fixed complex structure $J$ (equivalently a splitting
-$\mathcal{S}\otimes\mathbb{C}=\mathcal{H}_J\oplus \overline{\mathcal{H}}_J$), the map $U_{t,t_0}$ admits a block form
-\begin{equation}
-U_{t,t_0}
-= \begin{pmatrix}
-\alpha_{t,t_0} & \beta_{t,t_0} \\
-\overline{\beta}_{t,t_0} & \overline{\alpha}_{t,t_0}
-\end{pmatrix},
-\qquad \alpha_{t,t_0}:\mathcal{H}_J\to\mathcal{H}_J,\ \beta_{t,t_0}:\overline{\mathcal{H}}_J\to\mathcal{H}_J,
-\label{eq:Bogo}
-\end{equation}
-with $\alpha^\dagger\alpha - \beta^\dagger\beta=\mathbf{1}$ and $\alpha\beta^{\mathsf{T}}=\beta\alpha^{\mathsf{T}}$.
-These are the \emph{Bogoliubov coefficients} determined by $(M,g)$ and the time dependence of $P$ (thus of $m,\xi,Z,\ldots$).
-
-\begin{theorem}[Shale--Stinespring criterion (CCR)]
-\label{thm:Shale}
-Let $\omega_J$ be a quasifree state with complex structure $J$ and Fock space $\mathcal{F}_J$. The symplectic evolution
-$U_{t,t_0}$ is unitarily implementable on $\mathcal{F}_J$ iff $\beta_{t,t_0}$ is Hilbert--Schmidt on $\mathcal{H}_J$:
-\begin{equation}
-\|\beta_{t,t_0}\|_{\mathrm{HS}}^2 \;=\; \mathrm{Tr}\,(\beta_{t,t_0}^\dagger \beta_{t,t_0}) \;<\; \infty.
-\end{equation}
-\end{theorem}
-
-\begin{theorem}[Shale--Stinespring criterion (CAR)]
-\label{thm:ShaleCAR}
-Let $\omega_S$ be a quasifree CAR state with covariance $S$ and Fock space $\mathcal{F}_S$. The unitary evolution
-$V_{t,t_0}$ is implementable on $\mathcal{F}_S$ iff $[S, V_{t,t_0}]$ is Hilbert--Schmidt.
-\end{theorem}
-
-\begin{proof}[Idea of proof]
-Standard arguments: for CCR, use the Segal--Shale--Weil representation of the restricted symplectic group and the fact that
-$\beta\in \mathfrak{S}_2$ (Hilbert--Schmidt) is necessary and sufficient for lifting to the metaplectic implementer.
-For CAR, use Araki’s criterion for Bogoliubov automorphisms of the CAR algebra.
-\end{proof}
-
-\subsection{Adiabatic/Hadamard initial data and implementability}
-In spatially homogeneous backgrounds (e.g.\ FRW) with smooth time dependence, adiabatic Hadamard states of order $N\ge 2$ (bosons) or the analogous fermionic constructions ensure
-\begin{equation}
-\sum_{k} |\beta_k(t,t_0)|^2 < \infty \quad \text{(compact Cauchy surfaces)},\qquad
-\int_{\mathbb{R}^3}\!\! d^3\mathbf{k}\, |\beta_{\mathbf{k}}(t,t_0)|^2 < \infty \quad \text{(non-compact, with UV decay)} ,
-\end{equation}
-hence unitary implementability by the Shale–Stinespring criteria in Sec.~\ref{sec:dynamics}. In our MTT setting, the smooth running couplings entering $P$ or $D$ preserve the adiabatic structure and do not spoil the Hadamard/microlocal spectrum conditions.
-
-
-\subsection{KMS and stationary cases}
-
-If $(M,g)$ admits a timelike Killing vector $K^\mu$ and the couplings are stationary, the dynamics are implemented by a
-one-parameter group of $*$-automorphisms $\alpha_t$ of $\mathcal{A}(M,g)$. A state $\omega$ is \emph{KMS} at inverse
-temperature $\beta$ if $\omega(A\alpha_{i\beta}(B))=\omega(BA)$ for a suitable dense set of $A,B\in\mathcal{A}$.
-In this case, $\alpha_t$ admits a unitary implementer in the GNS representation of $\omega$, and the modular flow is geometric.
-This covers static spacetimes and (locally) Rindler wedges, relevant for Unruh and Hawking effects.
-
-\subsection{Gauge fields, constraints, and BRST in the projection}
-
-For Abelian gauge fields on a fixed background, the Gupta--Bleuler construction or BRST quantisation yields a physical
-Hilbert space $\mathcal{H}_{\mathrm{phys}}=\ker Q_{\mathrm{BRST}}/\mathrm{Im}\,Q_{\mathrm{BRST}}$. The evolution is implemented on the
-Krein space before reduction; compatibility with $\Pi_{\mathrm{QFT}}$ requires that the regulator and state selection respect
-Ward identities (see Sec.~\ref{sec:frg}). For non-Abelian backgrounds linearised around a coherent MTT sector, the same
-structure applies perturbatively.
-\paragraph{Ward/BRST identities with regulator.}
-Background-covariant regulators $R_k(-\bar\nabla^2)$ induce modified Ward (and BRST) identities holding at each $k$ and recovering the exact identities as $k\to 0$. Our state selection and renormalisation respect these identities; observables are taken at fixed $k$ (or after integrating the flow to $k=0$), ensuring gauge/diffeomorphism covariance.
-
-\subsection{Interacting fields: perturbative algebraic QFT and causal factorisation}
-
-To incorporate interactions while preserving locality and covariance, we adopt the perturbative algebraic QFT (pAQFT)
-framework. Given a local interaction $V(\phi)$ (e.g.\ $\lambda \phi^4$) with running couplings from MTT/FRG, one constructs
-the \emph{time-ordered} product $\mathcal{T}$ via Epstein--Glaser renormalisation and defines the interacting algebra
-$\mathcal{A}_V$ as a formal deformation of $\mathcal{A}$. The causal factorisation property ensures locality; the renormalisation
-freedom is fixed by Hadamard subtraction and microlocal spectrum condition. The in-in (Schwinger--Keldysh) construction used
-in Sec.~\ref{sec:renTmunu} then yields real-time, causal dynamics for expectation values and $n$-point functions.
-
-\paragraph{Summary.}
-Given a Hadamard quasifree state selected by $\Pi_{\mathrm{QFT}}$, the time-dependent background and running couplings
-induce Bogoliubov transformations whose implementability is guaranteed under adiabatic/Hadamard conditions. This provides a
-unitary (or algebraically well-defined) evolution of the QFT observables on $(M,g)$, setting the stage for renormalised
-$\langle T_{\mu\nu}\rangle$ and semiclassical backreaction in the next section.
-\section{Renormalised Stress--Energy Tensor and Semiclassical Backreaction}
-\label{sec:renTmunu}
-
-\subsection{Classical definition}
-
-For a classical matter field $\phi$ on $(M,g)$ with Lagrangian density $\mathcal{L}(\phi,g)$, the stress--energy tensor is
-\begin{equation}
-T_{\mu\nu}[\phi,g] \;=\; -\frac{2}{\sqrt{-g}} \frac{\delta S[\phi,g]}{\delta g^{\mu\nu}}.
-\end{equation}
-For example, a scalar field with curvature coupling $\xi$ and potential $V(\phi)$ has
-\begin{align}
-T_{\mu\nu} &= (1-2\xi)\,\nabla_\mu \phi \nabla_\nu \phi + \left(2\xi-\frac{1}{2}\right)g_{\mu\nu} (\nabla\phi)^2
-- 2\xi\,\phi \nabla_\mu \nabla_\nu \phi
-+ 2\xi\,g_{\mu\nu}\,\phi \Box \phi \nonumber\\
-&\quad - \xi G_{\mu\nu}\,\phi^2 - g_{\mu\nu} V(\phi).
-\end{align}
-
-In gauge and fermion sectors, analogous expressions follow from varying the corresponding actions.
-
-\subsection{Point-splitting renormalisation}
-
-Given a Hadamard state $\omega$ selected by $\Pi_{\mathrm{QFT}}$, the formal expectation value
-\(\langle T_{\mu\nu}(x) \rangle_\omega\) contains ultraviolet divergences from the coincidence limit $x'\to x$ of products of fields.
-The \emph{point-splitting} prescription replaces $\phi(x)^2$ by $\phi(x)\phi(x')$ and subtracts the \emph{Hadamard parametrix}
-$H(x,x')$ before taking the limit:
-\begin{equation}
-\langle T_{\mu\nu}(x) \rangle_{\mathrm{ren}} =
-\lim_{x'\to x} D_{\mu\nu}(x,x') \left[ W_\omega(x,x') - H(x,x') \right],
-\label{eq:Tmunu-ren}
-\end{equation}
-where $D_{\mu\nu}$ is a bi-differential operator implementing the metric variation. The subtraction removes the universal singularities while preserving local covariance.
-
-\subsection{Conservation and renormalisation freedom}
-
-By construction,
-\begin{equation}
-\nabla^\mu \langle T_{\mu\nu} \rangle_{\mathrm{ren}} = 0
-\end{equation}
-in any Hadamard state, reflecting the Ward identity for diffeomorphism invariance.
-There is a finite renormalisation freedom:
-\begin{equation}
-\langle T_{\mu\nu} \rangle_{\mathrm{ren}} \;\mapsto\;
-\langle T_{\mu\nu} \rangle_{\mathrm{ren}} + \alpha_1 g_{\mu\nu} + \alpha_2 G_{\mu\nu}
-+ \alpha_3 I_{\mu\nu} + \alpha_4 J_{\mu\nu},
-\end{equation}
-where $I_{\mu\nu}$ and $J_{\mu\nu}$ are local conserved curvature tensors from varying $R^2$ and $R_{\rho\sigma}R^{\rho\sigma}$, and the $\alpha_i$ are state-independent constants.  
-In the MTT context, these constants become \emph{scale-dependent} through the FRG flow (\S\ref{sec:frg}).
-\paragraph{Conservation at fixed coarse-graining scale.}
-The variation defining $\langle T_{\mu\nu}\rangle_{\rm ren}$ is taken at fixed $k$; thus $\nabla^\mu\langle T_{\mu\nu}\rangle_{\rm ren}=0$ holds exactly. If $k$ is promoted to a background-dependent profile, one must include the flow of the effective action along that profile to maintain diffeomorphism Ward identities; in this work we keep $k$ fixed when varying $g$.
-
-\subsection{Trace anomaly}
-
-For classically conformal matter (e.g.\ $\xi=1/6$, $m=0$ scalar; Maxwell; massless Dirac), the classical $T^\mu{}_\mu=0$ is broken in the quantum theory:
-\begin{equation}
-\langle T^\mu{}_\mu \rangle_{\mathrm{ren}}
-= \frac{1}{(4\pi)^2} \left[ c\,C_{\mu\nu\rho\sigma}C^{\mu\nu\rho\sigma}
-+ a\,E_4 + b\,\Box R \right],
-\label{eq:trace-anomaly}
-\end{equation}
-where $C_{\mu\nu\rho\sigma}$ is the Weyl tensor, $E_4$ the Euler density, and $a,b,c$ are theory-dependent constants.
-In MTT, these coefficients acquire a mild scale dependence $a_k,b_k,c_k$ inherited from the running couplings of the matter content.
-
-\subsection{Semiclassical Einstein equation}
-
-The \emph{semiclassical Einstein equation} (SEE) couples the renormalised $\langle T_{\mu\nu}\rangle$ to the spacetime metric:
-\begin{equation}
-G_{\mu\nu} + \Lambda_{\mathrm{eff}}(k) g_{\mu\nu}
-= 8\pi G_{\mathrm{eff}}(k) \langle T_{\mu\nu} \rangle_{\mathrm{ren}} + \text{(higher curvature terms)},
-\label{eq:SEE}
-\end{equation}
-where $G_{\mathrm{eff}}(k)$ and $\Lambda_{\mathrm{eff}}(k)$ are the scale-dependent couplings from the MTT FRG analysis.
-Higher curvature terms, such as $\alpha_3 I_{\mu\nu} + \alpha_4 J_{\mu\nu}$, appear if the FRG truncation includes $R^2$ and $R_{\mu\nu}R^{\mu\nu}$ operators.
-
-\paragraph{Backreaction in the MTT framework.}
-The SEE \eqref{eq:SEE} is solved \emph{self-consistently} with the QFT state $\omega$ selected by $\Pi_{\mathrm{QFT}}$, so that the geometry $g_{\mu\nu}$ and the matter state co-determine each other.
-Running couplings encode the integrated-out heavy modal modes and the RG dressing of both gravitational and matter sectors.
-
-\subsection{In-in formalism for causal evolution}
-
-For time-dependent backgrounds, causal evolution of $\langle T_{\mu\nu} \rangle$ is formulated in the \emph{in-in} (Schwinger--Keldysh) formalism.
-Let $S_{\mathrm{tot}}[g,\Phi]$ be the classical matter action; double the fields $\Phi\to(\Phi_+,\Phi_-)$ and evolve along a closed time contour $\mathcal{C}$.
-The generating functional is
-\begin{equation}
-Z[J_+,J_-] = \int \mathcal{D}\Phi_+\,\mathcal{D}\Phi_- \;
-e^{i S_{\mathrm{tot}}[g,\Phi_+] - i S_{\mathrm{tot}}[g,\Phi_-] + i\int_\mathcal{C} J \Phi}.
-\end{equation}
-Functional differentiation with respect to $J_\pm$ yields time-ordered and anti-time-ordered correlators, from which one builds causal expectation values like $\langle T_{\mu\nu}(x) \rangle$ that depend only on the past of $x$.
-This formalism is essential for nonequilibrium phenomena such as particle production in an expanding universe.
-
-\paragraph{Summary.}
-In the MTT→QFT projection, the renormalised $\langle T_{\mu\nu} \rangle_{\mathrm{ren}}$ is constructed via point-splitting in Hadamard states, ensuring local covariance, conservation, and correct anomalies. The semiclassical Einstein equation with RG-improved couplings from MTT yields a unified backreaction framework linking modal dynamics, quantum field theory, and effective gravity.
-
-\section{Covariant Functional Renormalization Group on Curved Spacetime} \label{sec:frg}
-
-In this section we formulate the functional renormalization group (FRG) for the effective
-quantum field theory obtained from the coherent sector of Modal Triplet Theory. The purpose
-of the FRG here is not to introduce new dynamics, but to provide a covariant and controlled
-description of scale dependence, compatible with the fixed--point and admissibility framework
-developed in the preceding sections.
-
-\subsection{Euclidean continuation and conventions}
-
-The FRG is formulated in Euclidean signature. Accordingly, throughout this section we work
-with the Wick--rotated metric $g_E$ of signature $(+,+,+,+)$, the Euclidean action $S_E$, and
-the Euclidean effective average action $\Gamma_k^E$. Lorentzian quantities $(g,S,\Gamma)$
-used elsewhere in the paper are related to their Euclidean counterparts by standard Wick
-rotation and analytic continuation. No physical statement in this section depends on a
-nonstandard choice of continuation.
-
-\subsection{Effective average action and flow equation}
-
-Let $\Phi$ collectively denote the fields of the projected effective theory (scalar, spinor,
-and gauge fields as appropriate). The Euclidean effective average action $\Gamma_k^E[\Phi]$
-is defined by adding an infrared regulator term
-\[
-\Delta S_k^E[\Phi] = \frac{1}{2} \langle \Phi, R_k \Phi \rangle_{g_E},
-\]
-where $R_k$ is a positive, covariant regulator suppressing modes with eigenvalues
-$\lambda \lesssim k^2$ of the Euclidean Laplace--type operators.
-
-The scale dependence of $\Gamma_k^E$ is governed by the Wetterich equation
-\begin{equation}
-\partial_k \Gamma_k^E[\Phi]
-=
-\frac{1}{2}
-\operatorname{Tr}
-\left[
-\left(
-\Gamma_k^{E\,(2)}[\Phi] + R_k
-\right)^{-1}
-\partial_k R_k
-\right],
-\end{equation}
-where $\Gamma_k^{E\,(2)}$ denotes the second functional derivative of $\Gamma_k^E$ with
-respect to the fields, and the trace is taken over all field components as well as spacetime
-indices, using the Euclidean metric $g_E$.
-
-The regulator $R_k$ is chosen to be a function of the Euclidean Laplace--Beltrami operator
-$\Delta_E$ associated with $g_E$, so that the flow preserves covariance on curved backgrounds.
-
-\subsection{Locality, admissibility, and truncations}
-
-The FRG flow is evaluated only on finite, bounded--geometry regions where the coherent
-sector is well defined and the admissibility conditions hold. Within such regions, the flow
-equation preserves locality in the effective field theory sense: $\Gamma_k^E$ admits a
-derivative expansion whose coefficients depend smoothly on $k$.
-
-Truncations of $\Gamma_k^E$ are understood as controlled approximations within an
-admissible universality class. In particular, the presence of a spectral gap separating
-coherent and noncoherent modes ensures that contributions from discarded sectors are
-suppressed and do not destabilize the flow. This is consistent with the Fundamental
-Contractivity Condition and the fixed--point analysis developed in Fixed Points~I--V.
-
-\subsection{Infrared limit and return to Lorentzian physics}
-
-Physical couplings and correlation functions are obtained by integrating the flow to
-$k \to 0$, yielding the full Euclidean effective action $\Gamma_{k=0}^E$. Lorentzian
-observables are then recovered by analytic continuation back to Lorentzian signature.
-In this sense, the FRG provides a technically convenient but conceptually auxiliary tool
-for organizing scale dependence, without altering the underlying deterministic dynamics
-or the admissibility structure of Modal Triplet Theory.
-
-
-\section{Universality Class of the Coherent Effective Field Theory}
-\label{sec:universality}
-
-A central question for any effective field theory derived from a microscopic
-construction is whether its low-energy predictions depend sensitively on
-microscopic details, or only on a small set of macroscopic invariants.
-In this section we show that the coherent-sector quantum field theory obtained
-from MTT belongs to a well-defined \emph{universality class} in the Wilsonian sense.
-
-Within a coherent universality class, admissibility thresholds and selection
-barriers are universal up to renormalization of relevant couplings, and do not
-depend on microscopic modal details.
-
-
-\subsection{Definition of the universality class}
-
-We consider two microscopic modal geometries
-\[
-\mathcal{M}_1 = (Y,g;\{B_n\},\Delta_{B_n}),\qquad
-\mathcal{M}_2 = (Y,g;\{B_n'\},\Delta_{B_n'}),
-\]
-both satisfying the standing assumptions SA.1--SA.4 of the MTT Foundation
-(bounded geometry on time slabs, uniform spectral gap, bounded coherent projector,
-and well-posed coherent evolution).
-
-\begin{definition}[Coherent universality class]
-Two microscopic modal geometries $\mathcal{M}_1$ and $\mathcal{M}_2$ belong to the
-same \emph{coherent universality class} if they share:
-\begin{enumerate}
-\item the same base spacetime $(Y,g)$ up to bounded-geometry equivalence,
-\item the same number of coherent bundles and symmetry representations,
-\item a common positivity window $\lambda_a(x)\ge\lambda_{\min}>0$ on the coherent domain,
-\item the same coherent-sector projector $\Pi_{\mathrm{coh}}$ up to bounded $H^1$ perturbations,
-\item stability margins satisfying the RG--FCC hypotheses in the MTT Foundation.
-\end{enumerate}
-\end{definition}
-
-The microscopic fibre metrics, higher eigenvalues, and detailed noncoherent
-spectral structure are allowed to differ.
-
-\subsection{RG flow and loss of microscopic information}
-
-Let $k$ denote a coarse-graining scale and let
-$\Gamma_k[\phi]$ be the scale-dependent effective action obtained from the
-coherent-sector projection followed by covariant renormalization group flow.
-
-By construction:
+These properties follow from the support and covariance structure of the
+chosen operator and quantization functor under standard hypotheses
+\cite{BFV,BarGinouxPfaeffle}. They are not automatic for an arbitrary
+nonlocal filter.
+
+\section{The selected free MTT source}
+
+The current q79 research ledger closes the following source statement on a
+selected globally hyperbolic framed representative:
 \begin{itemize}
-\item integrating out noncoherent modes modifies only irrelevant operators,
-\item relevant operators are controlled by symmetry and gap data,
-\item RG flow preserves the admissibility window as long as the RG--FCC margin remains positive.
+\item the global coframe and parallel rank-six carrier define a
+zero-order-free twisted massless Dirac operator \(\D_{\mathrm{q79}}\);
+\item the corresponding even CAR observable net satisfies locality,
+covariance, and the time-slice property;
+\item its positive Hadamard state space is nonempty;
+\item the finite \(P_{\mathrm{Haar}}/Q\) component map is exact.
 \end{itemize}
 
-In particular, the running couplings $\{g_i(k)\}$ depend on microscopic details
-only through their initial values at $k_0$, while their infrared scaling
-is governed by the same beta functions within a universality class.
+This result is imported from the selected QFT source certificate; the present
+paper explains its meaning and boundaries.
 
-\subsection{Universality of the coherent EFT}
-
-\begin{theorem}[Universality of the coherent EFT]
-\label{thm:universality}
-Let $\mathcal{M}_1$ and $\mathcal{M}_2$ be two microscopic modal geometries in the
-same coherent universality class.
-Assume the RG--FCC holds uniformly on $k\in[k_{\mathrm{IR}},k_0]$.
-Then the corresponding coherent effective field theories
-$\Gamma^{(1)}_{k_{\mathrm{IR}}}$ and $\Gamma^{(2)}_{k_{\mathrm{IR}}}$
-agree up to:
-\begin{enumerate}
-\item finite renormalizations of relevant couplings,
-\item irrelevant operators suppressed by powers of $k_{\mathrm{IR}}/\lambda_{\min}$,
-\item field redefinitions compatible with the coherent projector.
-\end{enumerate}
-In particular, scattering amplitudes, anomaly structure, and low-energy
-observables coincide within the expected EFT accuracy.
+\begin{theorem}[Conditional free CAR reconstruction]
+\label{thm:car}
+Let \((Y_4,g)\) be globally hyperbolic and spin, let \(E\to Y_4\) carry the
+required Hermitian and charge-conjugation data, and let
+\(\D\) be a formally self-adjoint Green-hyperbolic Dirac-type operator.
+Then the standard CAR construction defines a locally covariant graded field
+net. Its even observable subnet obeys Einstein causality and the time-slice
+property. If a quasifree Hadamard two-point function exists, it defines a
+positive Hadamard state and supports locally covariant Wick polynomials and
+stress-tensor renormalization up to the standard finite curvature
+ambiguities.
 \end{theorem}
-
-Universality here does not imply uniqueness of the Standard Model or of any
-specific parameter values; it asserts equivalence of low-energy effective
-theories up to the expected EFT freedom within a given universality class.
-
 
 \begin{proof}
-The proof follows standard Wilsonian reasoning.
-By the RG--FCC theorem, the coherent sector remains well-defined and contractive
-under RG flow on $[k_{\mathrm{IR}},k_0]$.
-Differences in microscopic structure generate only irrelevant operators,
-which are suppressed in the infrared.
-Relevant operators are fixed by symmetry, representation content, and the
-positivity window, which coincide by assumption.
+Green hyperbolicity provides the causal propagator and the Hermitian form on
+the quotient of compactly supported test sections. The CAR functor gives the
+graded net; support of the propagator gives graded locality and the
+Cauchy-surface exact sequence gives the time-slice property. The final
+statement is the standard Hadamard/microlocal renormalization theorem
+\cite{Dimock,Radzikowski,HollandsWald}.
 \end{proof}
 
-\subsection{Implications}
+Applied to \(\D_{\mathrm{q79}}\), the hypotheses have been certified at the
+declared free tier. This is stronger than a general proposal: it is a
+selected local QFT source. It does not yet select masses, interactions, or a
+preferred global state.
 
-Theorem~\ref{thm:universality} shows that the coherent QFT derived from MTT
-is robust: its low-energy content depends only on a small set of macroscopic
-geometric and spectral data, not on microscopic details.
-This explains why distinct microscopic modal geometries can lead to the same
-effective quantum field theory, and why predictions derived from the coherent
-sector are stable under perturbations of the underlying structure.
+\section{Hadamard states are not selected by phase transport alone}
 
+A two-point distribution \(W\) is Hadamard when its wavefront set has the
+universal positive-frequency null-geodesic structure
+\cite{Radzikowski}. Locally matching the leading Minkowski singularity is
+not, by itself, a global state construction: positivity, the field equation,
+commutation relations, and global consistency must all hold.
 
-\section{Worked example: scalar field in FRW with running parameters}\label{sec:frw-example}
-Consider spatially flat FRW $ds^2=-dt^2+a(t)^2 d\mathbf{x}^2$ and a real scalar with curvature coupling $\xi_k$ and running mass $m_k$ at fixed RG scale $k$. The Klein–Gordon equation reads
-\begin{equation}
-\ddot{\phi}+3H\dot{\phi}-\frac{1}{a^2}\Delta_{\mathbb{R}^3}\phi + m_k^2\,\phi + \xi_k R\,\phi =0,\qquad H:=\dot a/a,\quad R=6(\dot H + 2H^2).
-\end{equation}
-Mode functions $\phi_{\mathbf{k}}(t)$ obey
-\begin{equation}
-\ddot{\phi}_{\mathbf{k}} + 3H\dot{\phi}_{\mathbf{k}} + \Big(\frac{k^2}{a^2}+ m_k^2 + \xi_k R\Big)\phi_{\mathbf{k}}=0.
-\end{equation}
-Define the adiabatic initial data at $t_0$ by $\phi_{\mathbf{k}}(t_0)=\big(2\omega_{\mathbf{k}}(t_0)\big)^{-1/2}$,
-$\dot\phi_{\mathbf{k}}(t_0)=\big(-\frac{3}{2}H(t_0) - \frac{\dot\omega_{\mathbf{k}}(t_0)}{2\omega_{\mathbf{k}}(t_0)}\big)\phi_{\mathbf{k}}(t_0)$, with $\omega_{\mathbf{k}}^2(t):=k^2/a^2+m_k^2+\xi_k R$; this yields a quasifree Hadamard state of adiabatic order $N\ge 2$.
-As usual, write the Bogoliubov transform at time $t$ as
-\begin{equation}
-\phi_{\mathbf{k}}(t)=\alpha_{\mathbf{k}}(t,t_0)\,u_{\mathbf{k}}(t)+\beta_{\mathbf{k}}(t,t_0)\,u_{\mathbf{k}}^\ast(t),\qquad |\alpha_{\mathbf{k}}|^2-|\beta_{\mathbf{k}}|^2=1.
-\end{equation}
-For $a,\ m_k,\ \xi_k$ smooth with bounded derivatives on $[t_0,T]$, standard adiabatic estimates give $|\beta_{\mathbf{k}}(t,t_0)|=\mathcal{O}(|\mathbf{k}|^{-2})$ as $|\mathbf{k}|\to\infty$, hence $\int d^3\mathbf{k}\,|\beta_{\mathbf{k}}|^2<\infty$ and unitary implementability.
-Point-splitting with the FRW Hadamard parametrix yields $\langle T_{\mu\nu}\rangle_{\rm ren}$; conservation $\nabla^\mu\langle T_{\mu\nu}\rangle_{\rm ren}=0$ holds at fixed $k$ 
+The current free q79 certificate establishes a nonempty positive Hadamard
+state space. It does not yet choose a unique state from shared-circle phases.
+Selecting one state requires additional physical data such as a stationary
+KMS condition, an asymptotic prescription, a cosmological initial-state
+condition, or another same-source rule.
 
-\section{Summary, Conclusions, and Outlook}
-\label{sec:summary}
+\subsection{Hadamard regularity versus unitarity}
 
-\subsection{Summary of the MTT$\to$QFT construction}
+Hadamard regularity controls ultraviolet singularities and local
+renormalization. Unitary implementability of a classical evolution between
+two Fock representations is a separate global question.
 
-In this work we have extended the Modal Triplet Theory (MTT) framework to the full setting of
-\emph{interacting quantum field theory on curved spacetimes}.
-The central steps are:
+For bosons, the Shale criterion requires the antilinear Bogoliubov
+coefficient \(\beta\) to be Hilbert--Schmidt. The CAR analogue imposes the
+corresponding restricted-unitary condition \cite{Shale}. Adiabatic
+regularity can improve high-frequency behavior, but it does not guarantee
+global Hilbert--Schmidt implementability on every noncompact spacetime or
+for every pair of states.
 
+\section{Interacting and gauge sectors}
+
+For gauge theories, a physical construction must preserve the BV/BRST
+complex, the quantum master equation, causal factorization, and positivity
+on physical observables. A projector on a finite carrier does not establish
+these identities.
+
+The current MTT interacting status is:
 \begin{enumerate}
-    \item Starting from a coherent modal fixed point $\Psi^*$, the projection
-    $\Pi_{\mathrm{GR}}$ yields a 4D effective spacetime $(M,g)$ with emergent
-    Einstein--Hilbert dynamics and scale-dependent couplings
-    $G_{\mathrm{eff}}(k)$, $\Lambda_{\mathrm{eff}}(k)$, and matter parameters.
-
-    \item The projection $\Pi_{\mathrm{QFT}}$ maps $(\Psi^*,g)$ to an algebraic
-    QFT $(\mathcal{A}(M,g),\omega)$, where $\mathcal{A}$ is the covariant field
-    algebra of the species arising in the $\Pi_{\mathrm{GR}}$ reduction,
-    and $\omega$ is a Hadamard state determined by the modal coherence phases.
-
-    \item The dynamical evolution of states is implemented by
-    Bogoliubov transformations, unitary on the Fock space whenever the
-    Shale--Stinespring condition is satisfied. In cosmological and stationary
-    backgrounds, this reproduces standard particle interpretation and
-    scattering theory.
-
-    \item Expectation values of the stress--energy tensor are defined by
-    locally covariant point-splitting, ensuring conservation, correct anomaly
-    structure, and renormalisation freedom restricted to geometric tensors.
-    The semiclassical Einstein equation with RG-improved couplings realises
-    the backreaction of quantum matter on the emergent geometry.
-
-    \item The covariant functional RG flow of the effective average action
-    $\Gamma_k$ governs the running of both gravitational and matter couplings,
-    embedding the effects of integrating out higher modal excitations at each
-    scale. This provides a unified treatment of low-energy QFT and its UV
-    completion within the MTT paradigm.
+\item the selected carrier composes with a classical BV master action;
+\item a gauge-fixed Green-hyperbolic equicausal algebra is available at the
+formal perturbative tier;
+\item an anomaly-free formal all-orders QME and formal positive physical
+state-space functor have been constructed;
+\item a literal physical C-star reference net and declared locally
+quasiequivalent Hadamard folia are closed at zero coupling.
 \end{enumerate}
 
-\subsection{Conceptual implications}
+These are substantial structural results. The formal coupling expansion
+\[
+ \A_\lambda=\A_0[[\lambda]]
+\]
+does not select a unique theory at a fixed nonzero \(\lambda\). The current
+flat-deformation no-go result makes this precise: a formal jet can have
+multiple inequivalent nonperturbative completions. A physical interacting
+theory therefore still requires a selected gauge-BRST C-star bridge or a
+regulator/continuum limit.
 
-The MTT$\to$QFT derivation shows that the entire framework of locally covariant
-quantum field theory, including state selection, renormalisation, and
-backreaction, can be obtained from modal first principles without additional
-postulates. In particular:
+\section{Standard-Model profile results}
 
+The selected MTT Standard-Model program has closed its declared 12-of-12
+embedded renormalized-SM equivalence at the adopted one-shared-physical-
+primitive/profile tier. This means that, once the accepted Standard-Model
+data and convention map are supplied, the finite carrier and transport
+pipeline reproduce the targeted perturbative observable profile.
+
+It does not mean that all gauge, Yukawa, mixing, and Higgs values have been
+derived from q79 geometry without observed construction inputs. Those
+source-value and precision obligations remain separate from the existence of
+the free CAR net.
+
+\section{Renormalized stress tensor and semiclassical gravity}
+
+Given a Hadamard state and a locally covariant renormalization prescription,
+point splitting defines
+\[
+ \langle T_{\mu\nu}\rangle_{\mathrm{ren}}
+ =
+ \lim_{x'\to x}
+ D_{\mu\nu}(x,x')
+ \bigl(W(x,x')-H(x,x')\bigr)
+ +C_{\mu\nu}(g),
+\]
+where \(H\) is a Hadamard parametrix and \(C_{\mu\nu}\) records the allowed
+local curvature counterterms. Conservation and trace anomaly statements
+depend on the field, state, and renormalization conditions
+\cite{Wald,HollandsWald}.
+
+The semiclassical Einstein equation
+\[
+ G_{\mu\nu}+\Lambda g_{\mu\nu}
+ =
+ 8\pi G\,\langle T_{\mu\nu}\rangle_{\mathrm{ren}}
+\]
+is a coupled semiclassical model. MTT does not currently derive it from the
+free CAR net. The revised GR paper supplies a conditional four-dimensional
+Einstein reduction; a same-source matter/gravity response and backreaction
+theorem remains additional work.
+
+\section{FRG and curved spacetime}
+
+An FRG flow can organize effective couplings, but its use on curved
+Lorentzian spacetime requires a declared background split, gauge fixing,
+regulator, state or contour, and continuation prescription. Not every
+globally hyperbolic spacetime admits a useful Euclidean continuation.
+
+The revised asymptotic-safety papers provide conditional endpoint,
+conjugacy, truncation-error, and essential-spectrum theorems. They do not
+currently emit the q79-to-FRG coupling chart. FRG-improved masses or
+curvature couplings should therefore be treated as external or conditional
+inputs in a curved-spacetime example.
+
+\section{Illustrative FRW benchmark}
+
+On a spatially flat FRW spacetime
+\[
+ ds^2=-dt^2+a(t)^2d\mathbf x^2,
+\]
+a scalar benchmark with specified mass \(m\) and curvature coupling \(\xi\)
+has rescaled modes satisfying an equation of the form
+\[
+ \ddot u_{\mathbf k}
+ +\Omega_{\mathbf k}(t)^2u_{\mathbf k}=0,
+\]
+where \(\Omega_{\mathbf k}\) is determined by
+\(|\mathbf k|^2/a^2\), \(m^2\), \(\xi R\), and the chosen rescaling.
+Adiabatic initial data of sufficiently high order can define Hadamard states
+under standard smoothness assumptions.
+
+This is a test bed for the QFT machinery, not a numerical MTT prediction.
+To promote it, one must derive \(a(t)\), the state, masses, couplings, and
+matching scale from the same selected branch and compare renormalized
+observables with an uncertainty budget.
+
+\section{Status ledger}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}
+>{\raggedright\arraybackslash}p{0.30\textwidth}
+>{\raggedright\arraybackslash}p{0.18\textwidth}
+>{\raggedright\arraybackslash}X@{}}
+\toprule
+Object & Status & Meaning\\
+\midrule
+Selected twisted massless Dirac source & Closed &
+Globally hyperbolic framed q79 representative.\\
+Even free CAR observable net & Closed &
+Locality, covariance, time slice, and positive Hadamard states.\\
+Unique state from MTT phase data & Open &
+Nonempty state space is not a selection rule.\\
+Interacting BV/QME construction & Formal all orders &
+Perturbative algebra and anomaly control, not fixed-coupling completion.\\
+Physical nonperturbative C-star net & Open &
+Requires gauge-BRST bridge or regulator/continuum limit.\\
+Embedded renormalized-SM equivalence & Closed at profile tier &
+Uses accepted profile inputs; not zero-knob source derivation.\\
+Semiclassical backreaction & Conditional &
+Requires selected state, stress tensor, gravity source, and solution.\\
+MTT-to-FRG curved-spacetime map & Open &
+Regulator, coupling chart, and continuation are not selected.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Discussion}
+
+The important advance is that the curved-spacetime QFT program no longer
+starts from an unspecified projection. It starts from a selected geometric
+Dirac operator and composes it with a well-developed local QFT functor. This
+gives a real free-theory result with correct locality and state-space
+properties.
+
+The remaining difficulty is concentrated in the interaction. Formal
+perturbative control can establish powerful algebraic identities, but it
+cannot choose a unique fixed-coupling C-star completion. The correct next
+target is therefore a geometry-selected interacting regulator or
+renormalized BV pushforward that preserves the QME, positivity, local
+covariance, and the selected state through a continuum limit.
+
+\section{Conclusion}
+
+MTT now reaches QFT on curved spacetime at two distinct tiers. The free
+twisted-Dirac CAR net is selected and closed on the declared q79
+representative. The interacting gauge theory is formally reconstructed but
+not nonperturbatively selected.
+
+This is a meaningful bridge, not a derivation of quantum theory from
+projection. CCR/CAR quantization, Hadamard microlocal structure, local
+covariance, time-slice behavior, and positivity enter through independent
+QFT theorems whose hypotheses the selected source must satisfy. Keeping
+those roles explicit makes the remaining interacting and backreaction
+problems sharply testable.
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The selected free CAR net and its curved-spacetime properties are established independently of the embedded Standard Model profile audit. That audit is contextual evidence for a lower effective target, while the open strict-upgrade row supplies no interacting QFT construction.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
 \begin{itemize}
-    \item The Hadamard condition, essential for renormalisation, emerges from
-    the short-distance modal coherence structure.
-    \item The probabilistic interpretation and particle concept are recovered
-    as limiting descriptions of the unitary modal evolution projected to
-    $\mathcal{A}(M,g)$.
-    \item Scale dependence of couplings, usually introduced as an external
-    ingredient, is intrinsic to the MTT projection as a result of integrating
-    out modal scales.
+\setlength{\itemsep}{0.25em}
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
 \end{itemize}
 
-\subsection{Observational and experimental prospects}
-
-Several avenues exist for testing the predictions of the MTT$\to$QFT framework:
-
-\begin{enumerate}
-    \item \textbf{Running couplings in curved backgrounds.}  
-    Deviations from constant $G$, $\Lambda$, or matter couplings in strong
-    curvature environments (early universe, black holes) could reveal the RG
-    imprint of the modal sector.
-
-    \item \textbf{Anomaly coefficients.}  
-    The scale dependence of trace anomaly coefficients $a_k$, $b_k$, $c_k$
-    may be probed indirectly through cosmological perturbations or high-energy
-    astrophysical phenomena.
-
-    \item \textbf{Vacuum state selection.}  
-    The $\Pi_{\mathrm{QFT}}$ prescription predicts specific preferred states
-    (e.g.\ adiabatic vacua) in cosmology; deviations from the Bunch--Davies
-    state might leave imprints in the cosmic microwave background.
-
-    \item \textbf{Particle production rates.}  
-    In time-dependent backgrounds, the particle creation spectra predicted by
-    the modal-determined Bogoliubov coefficients could be compared to those in
-    standard QFT to constrain the coherence structure.
-\end{enumerate}
-
-\subsection{Future work}
-
-Extensions of the present construction include:
-
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
 \begin{itemize}
-    \item Full inclusion of nonperturbative matter interactions within the
-    $\Pi_{\mathrm{QFT}}$ projection, beyond polynomial truncations.
-    \item Exploration of the asymptotic safety scenario in the joint
-    MTT--QFT RG flow, including the effect of modal topology on fixed point
-    structure.
-    \item Coupling to the MTT$\to$GR derivation for a unified quantum
-    gravity framework where both geometry and quantum fields arise from
-    modal dynamics without external inputs.
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
 \end{itemize}
 
-\paragraph{Conclusion.}
-We have shown that interacting quantum field theory on curved spacetime,
-with full renormalisation and backreaction, emerges naturally from the
-modal geometry of MTT through a well-defined projection procedure.
-This strengthens the case for MTT as a viable unifying framework for
-fundamental physics, with concrete observational predictions and
-a clear mathematical path from modal structure to all known low-energy
-physics.
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
+
 \begin{thebibliography}{99}
 
-\bibitem{NeroMTTFoundation}
-P.~Nero,
-\newblock \emph{Modal Triplet Theory: Foundations},
-\newblock Zenodo, 2025.
-
-\bibitem{Wald1994}
+\bibitem{Wald}
 R.~M.~Wald,
-\newblock \emph{Quantum Field Theory in Curved Spacetime and Black Hole Thermodynamics},
-\newblock University of Chicago Press, Chicago, 1994.
+\emph{Quantum Field Theory in Curved Spacetime and Black Hole
+Thermodynamics},
+University of Chicago Press, 1994.
 
-\bibitem{Radzikowski1996}
+\bibitem{Radzikowski}
 M.~J.~Radzikowski,
-\newblock Micro-local approach to the Hadamard condition in quantum field theory on curved space-time,
-\newblock \emph{Commun. Math. Phys.} \textbf{179} (1996), 529--553.
+``Micro-local approach to the Hadamard condition in quantum field theory on
+curved space-time,''
+\emph{Communications in Mathematical Physics} \textbf{179} (1996),
+529--553.
 
-\bibitem{BrunettiFredenhagenVerch2003}
+\bibitem{BFV}
 R.~Brunetti, K.~Fredenhagen, and R.~Verch,
-\newblock The generally covariant locality principle: A new paradigm for local quantum physics,
-\newblock \emph{Commun. Math. Phys.} \textbf{237} (2003), 31--68.
+``The generally covariant locality principle: A new paradigm for local
+quantum field theory,''
+\emph{Communications in Mathematical Physics} \textbf{237} (2003), 31--68.
 
-\bibitem{HollandsWald2001}
+\bibitem{HollandsWald}
 S.~Hollands and R.~M.~Wald,
-\newblock Local Wick polynomials and time ordered products of quantum fields in curved spacetime,
-\newblock \emph{Commun. Math. Phys.} \textbf{223} (2001), 289--326.
+``Local Wick polynomials and time ordered products of quantum fields in
+curved spacetime,''
+\emph{Communications in Mathematical Physics} \textbf{223} (2001),
+289--326.
 
-\bibitem{HollandsWald2002}
-S.~Hollands and R.~M.~Wald,
-\newblock Existence of local covariant time ordered products of quantum fields in curved spacetime,
-\newblock \emph{Commun. Math. Phys.} \textbf{231} (2002), 309--345.
+\bibitem{Dimock}
+J.~Dimock,
+``Dirac quantum fields on a manifold,''
+\emph{Transactions of the American Mathematical Society} \textbf{269}
+(1982), 133--147.
 
-\bibitem{Rejzner2016}
-K.~Rejzner,
-\newblock \emph{Perturbative Algebraic Quantum Field Theory},
-\newblock Mathematical Physics Studies,
-\newblock Springer, Cham, 2016.
+\bibitem{BarGinouxPfaeffle}
+C.~B\"ar, N.~Ginoux, and F.~Pf\"affle,
+\emph{Wave Equations on Lorentzian Manifolds and Quantization},
+European Mathematical Society, 2007.
 
-\bibitem{Shale1962}
+\bibitem{Shale}
 D.~Shale,
-\newblock Linear symmetries of free boson fields,
-\newblock \emph{Trans. Amer. Math. Soc.} \textbf{103} (1962), 149--167.
+``Linear symmetries of free boson fields,''
+\emph{Transactions of the American Mathematical Society} \textbf{103}
+(1962), 149--167.
 
-\bibitem{Araki1968}
-H.~Araki,
-\newblock On quasifree states of CAR and Bogoliubov automorphisms,
-\newblock \emph{Publ. RIMS Kyoto Univ.} \textbf{6} (1970), 385--442.
+\bibitem{MTTFoundation}
+P.~Nero,
+\emph{Modal Triplet Theory: Foundations},
+current revised MTT paper corpus, 2026.
 
-\bibitem{Wetterich1993}
-C.~Wetterich,
-\newblock Exact evolution equation for the effective potential,
-\newblock \emph{Phys. Lett. B} \textbf{301} (1993), 90--94.
+\bibitem{MTTGR}
+P.~Nero,
+\emph{Controlled Coherent Reduction to Four-Dimensional Einstein Gravity},
+current revised MTT paper corpus, 2026.
 
-\bibitem{Pawlowski2007}
-J.~M.~Pawlowski,
-\newblock Aspects of the functional renormalisation group,
-\newblock \emph{Annals Phys.} \textbf{322} (2007), 2831--2915.
-
-\bibitem{BirrellDavies1982}
-N.~D.~Birrell and P.~C.~W.~Davies,
-\newblock \emph{Quantum Fields in Curved Space},
-\newblock Cambridge Monographs on Mathematical Physics,
-\newblock Cambridge University Press, Cambridge, 1982.
+\bibitem{MTTQG}
+P.~Nero,
+\emph{Modal Triplet Theory: Perturbative Coherent-Sector Quantum Gravity
+and the Heterotic UV-Completion Boundary},
+current revised MTT paper corpus, 2026.
 
 \end{thebibliography}
 

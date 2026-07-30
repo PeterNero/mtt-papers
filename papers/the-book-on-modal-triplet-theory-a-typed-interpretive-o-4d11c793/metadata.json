@@ -1,68 +1,118 @@
 {
-  "abstract": "",
+  "abstract": "A plain-language interpretive guide to Modal Triplet Theory. The book explains the program's central picture of one connected physical ontology described through compatible projections, then follows that picture through coherence, world-in-world geometry, the shared circle, q79/Fu-Yau geometry, proto-spinors, particles, the Standard Model reconstruction, quantum theory, gravity, time, memory, and cosmology. Short technical boundaries distinguish established results, declared reconstructions, and open interpretations, while proofs remain in their focused papers.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v10",
-  "date": "July 2026 Version 10",
+  "current_version": "v11",
+  "date": "July 2026 Version 11",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17162671",
-    "created": "2026-01-16T11:43:21.679534+00:00",
+    "created": "2026-07-29T08:51:43.416541+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18268250",
+    "doi": "10.5281/zenodo.21655366",
     "files": [
       {
-        "checksum": "md5:958d7e5cca69c654f79f61236e5a7e6d",
-        "content_url": "https://zenodo.org/api/records/18268250/files/The_Book_on_Modal_Triplet_Theory_v9%20(2).pdf/content",
-        "key": "The_Book_on_Modal_Triplet_Theory_v9 (2).pdf",
-        "size": 556793
+        "checksum": "md5:3701325616dd247dbf7d702e16e2c2f7",
+        "content_url": "https://zenodo.org/api/records/21655366/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 415653
       }
     ],
-    "id": "18268250",
-    "match_kind": "title_or_file",
+    "id": "21655366",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-16",
-    "record_url": "https://zenodo.org/records/18268250",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21655366",
     "resource_type": "publication",
-    "title": "The_Book_on_Modal_Triplet_Theory",
-    "updated": "2026-01-16T11:43:22.276569+00:00",
-    "version": "v9.0"
+    "title": "The Book on Modal Triplet Theory An Interpretive Guide How to picture the program, what it has achieved, and what remains open",
+    "updated": "2026-07-29T08:51:44.146058+00:00",
+    "version": "v11"
   },
-  "main_tex_sha256": "190a97b1ea94c797c1b0d010a24030b4a393a579a34aa19f7f34bb013ccb4e42",
+  "main_tex_sha256": "4deac85014c21ba07ce28614828fe0fb3c0b42e08e3ba58749c69584ef229f53",
   "paper_id": "the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793",
-  "paper_md_sha256": "4b06cfe4af58019dab9254e215c55d454a44fc54b17790e2a2ba310da4fe887b",
+  "paper_md_sha256": "43c70cc36afafb5334215392b199d4e5160dad440cad7b91ccad8403e2702ba3",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "10 The Book on Modal Triplet Theory/BOOK_V10_CURRENT_CORPUS_RECONCILIATION_AUDIT_2026-07-15.md",
-    "revision_evidence_sha256": "4f4b566954e245234ed3794268a0411530a59ab0cd6d9916143db7648e10579c",
+    "revision_evidence_sha256": "36f1717cb42742253bf7712a5600888c90cfde73feb242033f13a86472a4f971",
     "selected_revision": true,
     "superseded_source_path": "10 The Book on Modal Triplet Theory/_work/The_Book_on_Modal_Triplet_Theory_v9"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 453447,
+      "bytes": 415653,
       "path": "main.pdf",
-      "sha256": "b68718ee6bc68bc043b8204fb3eb786ea40e23c4a4db48fd14986c08d6c79518"
+      "sha256": "70fb322051ae610780e4dfe21018f50a34ff1306c8460c32b9612a58299453fb"
     },
     {
-      "bytes": 45737,
+      "bytes": 71591,
       "path": "main.tex",
-      "sha256": "190a97b1ea94c797c1b0d010a24030b4a393a579a34aa19f7f34bb013ccb4e42"
+      "sha256": "4deac85014c21ba07ce28614828fe0fb3c0b42e08e3ba58749c69584ef229f53"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "10 The Book on Modal Triplet Theory/revised_tex_vnext/The_Book_on_Modal_Triplet_Theory_v10"
   },
-  "source_tree_sha256": "8bd8d16c4fd8638ac9612b3658814b096b2503523bb60e46459285d0f7f6da09",
-  "title": "The Book on Modal Triplet Theory A Typed Interpretive Overview of the Current Program What is proved, reconstructed, calibrated, and still open",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "95401ff2a6f99aa81ea54d21d905fec7db8909cf3942830069a7776b9858bc5f",
+  "title": "The Book on Modal Triplet Theory An Interpretive Guide How to picture the program, what it has achieved, and what remains open",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17162671",
+      "created": "2026-07-29T08:51:43.416541+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655366",
+      "files": [
+        {
+          "checksum": "md5:3701325616dd247dbf7d702e16e2c2f7",
+          "content_url": "https://zenodo.org/api/records/21655366/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 415653
+        }
+      ],
+      "id": "21655366",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655366",
+      "resource_type": "publication",
+      "title": "The Book on Modal Triplet Theory An Interpretive Guide How to picture the program, what it has achieved, and what remains open",
+      "updated": "2026-07-29T08:51:44.146058+00:00",
+      "version": "v11"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.17162671",
+      "created": "2026-07-28T18:01:20.426148+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650929",
+      "files": [
+        {
+          "checksum": "md5:57aada2dfb29244892e7b6fd44187d0e",
+          "content_url": "https://zenodo.org/api/records/21650929/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 453447
+        }
+      ],
+      "id": "21650929",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650929",
+      "resource_type": "publication",
+      "title": "The Book on Modal Triplet Theory: A Typed Interpretive Overview of the Current Program",
+      "updated": "2026-07-28T18:01:20.871601+00:00",
+      "version": "v10"
+    },
     {
       "concept_doi": "10.5281/zenodo.17162671",
       "created": "2026-01-16T11:43:21.679534+00:00",

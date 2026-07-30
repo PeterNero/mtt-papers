@@ -48,15 +48,15 @@
       "sha256": "1fbb30c72c1808bf3337e6a8e7eb5ca2d842448246ba385b527b4726c14aff20"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Capacity_Gated_Projection_Dynamics_v2 (1)"
   },
-  "source_tree_sha256": "f754ed9d8fb984fd48c41dbce87752195963d55d1a7e1d31def61bc58a118e38",
+  "source_tree_sha256": "0c54ce448dd3465e5255f3af9fd5efbed941f173532d48b259cac06945edbe06",
   "title": "Capacity-Gated Projection Dynamics: A Concrete Algorithmic Realization of Admissibility-Limited Description",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

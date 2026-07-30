@@ -1,65 +1,93 @@
 {
-  "abstract": "Dark matter and dark energy are commonly interpreted as evidence for new substances or degrees of freedom beyond the Standard Model and general relativity. Despite decades of effort, however, neither has been detected directly, and their defining properties are inferred almost exclusively through gravitational effects. This paper develops a projection-first reframing in which dark matter and dark energy are understood not as additional physical constituents, but as structural phenomena arising from finite admissibility of effective description. The reframing adopts a conservative and diagnostic stance. No new particles, fields, or modified force laws are proposed, and no attempt is made to replace or refit the phenomenology of \\LambdaCDM. Instead, the paper identifies a hidden assumption common to standard interpretations: that all gravitational sources must admit a particle-level or field-theoretic encoding. From a projection-first perspective, this assumption fails generically once capacity limits of description are taken seriously. Gravity, understood as the bookkeeping structure that maintains consistency of projected descriptions, can remain admissible even when particle-level encodings fail locally or when global invertibility breaks down. Within this framework, dark matter is reinterpreted as gravitational constraint load in regimes where particle encodings are not admissible, while dark energy is reinterpreted as the large-scale geometric response to global capacity exhaustion. These two phenomena are shown to correspond to distinct failure modes of description rather than to distinct substances. The cosmological constant problem is reframed as a category error arising from the misapplication of energy-based bookkeeping beyond its admissible domain. The goal is explanatory rather than eliminative: to clarify why dark sectors appear universally in gravitational diagnostics and to situate them within a unified structural account of projection, admissibility, and finite capacity.",
+  "abstract": "Dark matter and dark energy are names for distinct empirical requirements, not merely for missing microscopic descriptions. A projection-first framework may suggest that unresolved source data appear as effective gravitational terms, but this suggestion becomes physical only after it produces covariant field equations and observables. This paper formulates that requirement for Modal Triplet Theory. A dark-matter realization must reproduce gravitational lensing, approximately pressureless clustering, structure growth, cosmic microwave background effects, and cluster dynamics. A dark-energy realization must produce the observed expansion history and perturbation behavior while remaining stable and compatible with local gravity. Both require a selected effective stress tensor or an explicit modified-gravity operator satisfying the Bianchi identity. Constraint load and capacity exhaustion are therefore retained as hypothesis labels, not established explanations. No current MTT result derives the required dark-sector source, halo solutions, or cosmological likelihoods.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18330692",
-    "created": "2026-01-21T19:47:49.982225+00:00",
+    "created": "2026-07-29T08:49:42.508084+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18330693",
+    "doi": "10.5281/zenodo.21665929",
     "files": [
       {
-        "checksum": "md5:12073c7ed7cab44ed303b6d3dcedcf4f",
-        "content_url": "https://zenodo.org/api/records/18330693/files/A_Projection_First_Reframing_of_Dark_Matter_and_Dark_Energy%20(1).pdf/content",
-        "key": "A_Projection_First_Reframing_of_Dark_Matter_and_Dark_Energy (1).pdf",
-        "size": 194701
+        "checksum": "md5:83603efac130a7129c1b390a99469ae7",
+        "content_url": "https://zenodo.org/api/records/21665929/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 289635
       }
     ],
-    "id": "18330693",
-    "match_kind": "title_or_file",
+    "id": "21665929",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18330693",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665929",
     "resource_type": "publication",
-    "title": "A Projection-First Reframing of Dark Matter and Dark Energy",
-    "updated": "2026-01-21T19:47:50.278522+00:00",
-    "version": "v1.0"
+    "title": "Projection-First Dark-Sector Diagnostics: Effective Stress, Lensing, and Cosmological Closure",
+    "updated": "2026-07-29T08:49:43.112056+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "eee65a38ad1a3232046cc6c73d1bcb88b982cd6e454b2607fec67a41ba7da0e7",
+  "main_tex_sha256": "fb5a45ba3edf3795aa81d5d323a708f9cd546f88fef34d97c14b2e80615cb8da",
   "paper_id": "a-projection-first-reframing-of-dark-matter-and-dark-energy",
-  "paper_md_sha256": "14fff266f9e04e97e0e98e6cd043ac9915d2fa7818cd410b160b0d81ede38e55",
+  "paper_md_sha256": "06d597a633d3b155b6afa38968012fa8322cde0e7e0f3be28ac4dbf278875aae",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "858da5677db1a575aad0b3a6ee2b355d7787b898ecf90fcdf73b9c88537e78e2",
+    "selected_revision": true,
+    "superseded_source_path": "19 A project-first reframing/_work/A_Projection_First_Reframing_of_Dark_Matter_and_Dark_Energy (1)"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 26898,
+      "bytes": 14397,
       "path": "main.tex",
-      "sha256": "eee65a38ad1a3232046cc6c73d1bcb88b982cd6e454b2607fec67a41ba7da0e7"
+      "sha256": "fb5a45ba3edf3795aa81d5d323a708f9cd546f88fef34d97c14b2e80615cb8da"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "19 A project-first reframing/_work/A_Projection_First_Reframing_of_Dark_Matter_and_Dark_Energy (1)"
   },
-  "source_tree_sha256": "01b622ba7e18a69aa3e464b983c5d1f7e48f72e04e2078d5e9f993930a510ca3",
-  "title": "A Projection-First Reframing of Dark Matter and Dark Energy",
+  "source_tree_sha256": "ecf8b120be6863ebbc52d0a8dbed95159c1fbb0c06fc896b113b1f5d19a42fe1",
+  "title": "Projection-First Dark-Sector Diagnostics: Effective Stress, Lensing, and Cosmological Closure",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18330692",
+      "created": "2026-07-29T08:49:42.508084+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665929",
+      "files": [
+        {
+          "checksum": "md5:83603efac130a7129c1b390a99469ae7",
+          "content_url": "https://zenodo.org/api/records/21665929/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 289635
+        }
+      ],
+      "id": "21665929",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665929",
+      "resource_type": "publication",
+      "title": "Projection-First Dark-Sector Diagnostics: Effective Stress, Lensing, and Cosmological Closure",
+      "updated": "2026-07-29T08:49:43.112056+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18330692",
       "created": "2026-01-21T19:47:49.982225+00:00",

@@ -1,65 +1,93 @@
 {
-  "abstract": "We present a first-principles derivation of interacting quantum field theory (QFT) on curved spacetimes from Modal Triplet Theory (MTT). Extending the projection operator formalism \\Pi_{\\mathrm{QM}} of the MTT \\to quantum mechanics correspondence, we construct \\Pi_{\\mathrm{QFT}} as a map from modal-coherent sectors of the 10D MTT configuration space to the algebra of quantum fields on a globally hyperbolic 4D spacetime (Y_4,g_{\\mu\\nu}). Our formulation employs the algebraic QFT framework, ensuring the Hadamard property of physical states, and incorporates running couplings from the covariant functional renormalisation group (FRG). We derive the semiclassical Einstein equation with FRG-improved \\langle T_{\\mu\\nu} \\rangle_{\\mathrm{ren}}, discuss unitarity and implementability conditions (Shale\u2013Stinespring), and give a worked example: scalar field particle production in a spatially flat FRW universe with scale-dependent mass and curvature coupling. This work completes the triad MTT \\to (QM, GR, QFT) and provides a mathematically rigorous bridge between modal dynamics and the standard formalism of quantum fields in curved backgrounds.",
+  "abstract": "The current Modal Triplet Theory corpus supports a precise but limited curved-spacetime quantum-field-theory result. On the selected globally hyperbolic framed q79 representative, a global coframe and parallel rank-six carrier define a zero-order-free twisted massless Dirac operator. Standard algebraic QFT then yields an even CAR observable net with locality, covariance, the time-slice property, and a nonempty positive Hadamard state space, together with the exact finite coherent/complement component map. These conclusions use independent QFT theorems; they are not derived from projection alone. At nonzero interaction, the selected carrier has a classical BV master-action and formal perturbative QME/equicausal construction, while a physical nonperturbative gauge-BRST C-star net, selected state, renormalization-group matching, and observable uncertainty packet remain open. The paper also separates Hadamard regularity from unitary implementability, and treats the semiclassical Einstein equation and FRW particle production as conditional applications. This establishes a selected free local QFT source and a formal interacting bridge, not a first-principles derivation of full interacting QFT from finite projection.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v3",
-  "date": "January, 2026",
+  "current_version": "v4",
+  "date": "July 2026 Version 4",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16950915",
-    "created": "2026-01-21T04:24:59.996724+00:00",
+    "created": "2026-07-29T08:51:37.194125+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18321814",
+    "doi": "10.5281/zenodo.21665998",
     "files": [
       {
-        "checksum": "md5:3271c6240772806876fd84fb4ff0aa90",
-        "content_url": "https://zenodo.org/api/records/18321814/files/Modal_Triplet_Theory__From_MTT_to_Quantum_Field_Theory_on_Curved_Spacetime_v3%20(1).pdf/content",
-        "key": "Modal_Triplet_Theory__From_MTT_to_Quantum_Field_Theory_on_Curved_Spacetime_v3 (1).pdf",
-        "size": 430944
+        "checksum": "md5:8166247be738fc802e75c6d7d7576a87",
+        "content_url": "https://zenodo.org/api/records/21665998/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 338142
       }
     ],
-    "id": "18321814",
-    "match_kind": "title_or_file",
+    "id": "21665998",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18321814",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665998",
     "resource_type": "publication",
-    "title": "Modal Triplet Theory: From MTT to Quantum Field Theory on Curved Spacetime",
-    "updated": "2026-01-21T04:25:00.532881+00:00",
-    "version": "v3.0"
+    "title": "Modal Triplet Theory and Quantum Field Theory on Curved Spacetime: A Selected Free CAR Net and the Interacting Reconstruction Boundary",
+    "updated": "2026-07-29T08:51:37.805171+00:00",
+    "version": "v4"
   },
-  "main_tex_sha256": "bebfbc5d5a847c2e1dc92af32d4e1cdf4d573b5c90a2c096be2f51218142ac8f",
+  "main_tex_sha256": "03b7e07110f8ff1a980338f47ce88346aaa598cd6a9b149cbaa971234dcb6bb2",
   "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
-  "paper_md_sha256": "a448c05dc327ca672751cab523b8e888b22c03c83d69ba9e47bdc73c2e28a12a",
+  "paper_md_sha256": "e063bc7df99d2a565daf5680bbc9bc6ed713cde4e60d47bf76e3810f9e60dde7",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "f1d21a368aff32c2476cd2fd6c09195963d5f04ecda5db890b0f8ed5593cce67",
+    "selected_revision": true,
+    "superseded_source_path": "7 Quantum Field Theory/_work/Modal_Triplet_Theory__From_MTT_to_Quantum_Field_Theory_on_Curved_Spacetime_v3"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 47014,
+      "bytes": 20513,
       "path": "main.tex",
-      "sha256": "bebfbc5d5a847c2e1dc92af32d4e1cdf4d573b5c90a2c096be2f51218142ac8f"
+      "sha256": "03b7e07110f8ff1a980338f47ce88346aaa598cd6a9b149cbaa971234dcb6bb2"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "7 Quantum Field Theory/_work/Modal_Triplet_Theory__From_MTT_to_Quantum_Field_Theory_on_Curved_Spacetime_v3"
   },
-  "source_tree_sha256": "6b23abbf60c104920f32edaa34a649932c0bece4bf100ba8cb2840dc38a6fef5",
-  "title": "Modal Triplet Theory: From MTT to Quantum Field Theory on Curved Spacetime",
+  "source_tree_sha256": "465c5b0d48915d5f8303fbf6ef37db0fd6c33514de6b16a073c1bc6fa4c8d0f7",
+  "title": "Modal Triplet Theory and Quantum Field Theory on Curved Spacetime: A Selected Free CAR Net and the Interacting Reconstruction Boundary",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.16950915",
+      "created": "2026-07-29T08:51:37.194125+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665998",
+      "files": [
+        {
+          "checksum": "md5:8166247be738fc802e75c6d7d7576a87",
+          "content_url": "https://zenodo.org/api/records/21665998/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 338142
+        }
+      ],
+      "id": "21665998",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665998",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and Quantum Field Theory on Curved Spacetime: A Selected Free CAR Net and the Interacting Reconstruction Boundary",
+      "updated": "2026-07-29T08:51:37.805171+00:00",
+      "version": "v4"
+    },
     {
       "concept_doi": "10.5281/zenodo.16950915",
       "created": "2026-01-21T04:24:59.996724+00:00",

@@ -1,5 +1,5 @@
 % main.tex  (FP3)
-% Fixed Points III: Disturbance–Damping Balance and Stability
+% Fixed Points III: Disturbance--Damping Balance and Stability
 % Uses: series.sty (v3) and refs.bib
 \documentclass[11pt]{article}
 \usepackage{series}
@@ -31,15 +31,15 @@
 
 \title{Fixed Points III: Disturbance--Damping Balance and Stability}
 \author{Peter Nero}
-\date{July 2026}
+\date{July 2026\\Version 5}
 
 \begin{document}
 \maketitle
 \seriestagline
 
 \begin{abstract}
-We rebuild disturbance--damping stability on the joint spectral decomposition
-of the corrected FP--II internal operators. For each noncoherent joint mode
+We develop disturbance--damping stability on the joint spectral decomposition
+of the FP--II internal operators. For each noncoherent joint mode
 $\alpha$, the one-sided nonlinear damping margin is
 $\gamma_\alpha=d_\alpha-L_\alpha$. Deterministic force amplitude
 $f_\alpha$ and stochastic noise power $q_\alpha$ are distinct quantities. We
@@ -52,12 +52,33 @@ are asserted only for exact Ornstein--Uhlenbeck dynamics or robust worst-case
 stability. Bundlewise results apply to $Q\Psi$ and use separate stochastic trace
 and deterministic weighted-series conditions. Finally, deterministic
 homogenization is made conditional on an enhanced functional central-limit
-theorem, tightness, and rough-path convergence; the corrected Green--Kubo tensor
+theorem, tightness, and rough-path convergence; the symmetrized Green--Kubo tensor
 is $D=\int_0^\infty(R+R^\ast)\,ds$.
 \end{abstract}
 
-\section*{Revision note for this edition}
-\addcontentsline{toc}{section}{Revision note for this edition}
+\section*{Revision note for version 5}
+\addcontentsline{toc}{section}{Revision note for version 5}
+\begin{description}
+\item[Supersedes.] \emph{Fixed Points III: Disturbance--Damping Balance and
+Stability}, version~4.
+\item[Reason.] The corrected deterministic and stochastic estimates in
+version~4 were sound, but their parallel notation could still obscure that
+force amplitude, noise power, invariant law, and homogenized noise are
+different objects.
+\item[Resolution.] Version~5 adds an explicit argument map and worked
+interpretive discussion of the two disturbance lanes, their summability
+requirements, and the separate homogenization gate. It preserves theorem
+ownership and separates the public abstract from revision history and
+reproducibility metadata.
+\item[Retained result.] The deterministic input-to-state floor, stochastic
+second-moment floor, OU restrictions, and enhanced invariance-principle
+conditions are unchanged.
+\item[Remaining boundary.] Coherent-sector disturbances, general nonlinear
+invariant measures, and a physical stochastic source law remain unproved.
+\end{description}
+
+\section*{Revision note for version 4}
+\addcontentsline{toc}{section}{Revision note for version 4}
 \begin{description}
 \item[Supersedes.] \emph{Fixed Points III: Disturbance--Damping Balance and
 Stability}, version~3.
@@ -72,6 +93,44 @@ noncoherent stability and disturbance floors.
 \item[Remaining boundary.] Coherent disturbances, nonlinear invariant laws,
 and physical stochastic interpretation require additional assumptions.
 \end{description}
+
+\section*{How to read this paper}
+\addcontentsline{toc}{section}{How to read this paper}
+FP--II separates the coherent sector $P\Psi$ from its damped complement
+$Q\Psi$.  This paper asks what happens to the complement when it is continually
+disturbed.  The answer depends on what kind of disturbance is meant, so the
+paper deliberately develops deterministic forcing and stochastic forcing in
+parallel without identifying their parameters.
+
+\paragraph{The central picture in plain language.}
+For each joint internal mode, damping removes amplitude at a rate
+$d_\alpha$, while nonlinear feedback can return at most
+$L_\alpha$ in the one-sided energy estimate.  Their difference
+$\gamma_\alpha=d_\alpha-L_\alpha$ is the available margin.  A bounded
+deterministic push produces an amplitude floor proportional to
+$f_\alpha/\gamma_\alpha$.  Brownian forcing deposits variance rather than a
+fixed amplitude and produces a second-moment floor proportional to
+$q_\alpha/(2\gamma_\alpha)$.  The similar-looking denominators do not make
+$f_\alpha$ and $q_\alpha$ the same quantity.
+
+\paragraph{Argument map.}
+Sections~1--2 inherit the joint projector and build a non-double-counted
+spectral index for the overlapping vertical operators.  Sections~3--4 derive
+the deterministic and stochastic modewise bounds.  Section~5 identifies the
+limited settings in which positivity of the margin is also necessary and a
+Gaussian invariant law follows.  Section~6 lifts individual mode bounds to
+the bundle by summability or covariance-trace conditions.  Section~7 explains
+when rapidly mixing deterministic complement modes can instead appear as
+effective stochastic forcing of coherent variables.  Sections~8--9 separate
+invariant measures from deterministic fixed points and turn the hypotheses
+into an execution checklist.
+
+\paragraph{Scope boundary.}
+Every modal result in the main stability chain concerns $Q\Psi$.  It neither
+contracts coherent modes nor proves that a physical environment supplies
+Brownian noise.  The homogenized diffusion is an emergent limit only after
+the enhanced functional-CLT, tightness, and rough-path hypotheses have been
+verified for the selected dynamics.
 
 \tableofcontents
 
@@ -211,6 +270,15 @@ These two theorems are sufficient stability bounds for nonlinear dynamics.
 They do not assert that a nonlinear invariant law is Gaussian or that
 $\gamma_\alpha>0$ is necessary for every particular forcing history.
 
+\paragraph{What the two floors mean.}
+Both estimates say that positive damping prevents indefinite accumulation in
+one mode, but they answer different questions.  The deterministic theorem
+bounds every trajectory against a worst-case input amplitude.  The stochastic
+theorem bounds an expectation after quadratic variation has injected power.
+Neither floor is automatically attained, and neither is a prediction until
+the mode, margin, and disturbance data have been obtained from the concrete
+operator model.
+
 \section{Exact OU theorem and robust necessity}
 
 \begin{theorem}[Exact scalar OU classification]\label{thm:OU}
@@ -296,6 +364,14 @@ $P\Psi$. Such coherent forcing needs a separate base/coherent stability
 theorem.
 
 \section{Deterministic homogenization of coherent dynamics}
+
+This section addresses a different route to stochastic behavior.  The
+underlying system can remain deterministic while rapidly mixing
+noncoherent modes drive slow coherent variables.  Under a sufficiently strong
+limit theorem, the accumulated fast forcing converges to Brownian transport.
+Ordinary mixing is not enough: the second iterated integrals determine whether
+the limiting equation is the stated Stratonovich equation or carries an
+additional bracket drift.
 
 Write $\Psi=X+Y$ with $X=P\Psi$ and $Y=Q\Psi$. For frozen $x$, let the fast
 flow for $Y$ have invariant measure $\mu_x$, and decompose
@@ -405,6 +481,14 @@ functional-CLT/rough-path data and uses the corrected Green--Kubo
 normalization. These distinctions prevent stochastic invariant measures from
 being conflated with deterministic fixed points.
 
+The paper therefore contributes a translation layer between FP--II spectral
+damping and later statistical descriptions.  Its robust content is the pair
+of modewise inequalities and their bundlewise summability conditions.  Exact
+Gaussianity belongs only to the OU specialization, while emergent diffusion
+belongs only to the verified homogenization limit.  Coherent disturbances,
+nonlinear invariant-law uniqueness, and a physical identification of the
+noise source remain separate model-specific tasks.
+
 \appendix
 
 \section{Exact OU variance computation}
@@ -442,5 +526,10 @@ positive minimum; compare the spectral-geometric background in
 
 \bibliographystyle{plain}
 \bibliography{refs}
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \end{document}

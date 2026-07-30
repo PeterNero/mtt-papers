@@ -1,4 +1,15 @@
-# Fixed Points V v6 Revision Audit
+# Fixed Points V v7 Release Audit
+
+## v7 publication delta (July 2026)
+
+- **Supersedes:** v6.
+- **Reason:** covariance and deficit diagnostics could still be mistaken for
+  dynamics or selection.
+- **Resolution:** add the covariance-cloud and diagnostic-only explanations;
+  preserve FP III ownership of the scalar OU baseline.
+- **Retained:** all v6 covariance and exit bounds.
+- **Remaining:** nonlinear dynamics, causal propagation, and post-exit
+  selection.
 
 ## Source lineage
 
@@ -40,6 +51,15 @@
   block correlation supplies bounds on such observables but is not itself a
   causal statement.
 
+## Theorem ownership correction
+
+FP III owns the exact scalar OU variance theorem. FP V imports that scalar
+baseline and owns the genuinely multi-structure layer: the stable-semigroup
+covariance and resolvent theorem, its symmetric-damping corollary,
+cross-covariance and canonical-correlation bounds, and the admissibility-exit
+results. The stronger nonnormal semigroup theorem formerly repeated in FP VI
+has been placed here, where covariance belongs.
+
 ## Resulting scope
 
 FP V v6 proves exact covariance and correlation estimates for a frozen linear
@@ -48,11 +68,23 @@ It also gives an exact scalar diagnostic for a declared admissible domain. It
 does not derive a physical Driver, energetic barrier, causal propagation law,
 or post-exit state from covariance or spectral diagnostics alone.
 
+## Expository revision
+
+The current paper now uses the covariance-ellipsoid and admissibility-boundary
+picture to connect its formal blocks. A paper-specific reader guide explains
+the inherited role of FP III and FP IV, the diagnostic meaning of the deficit
+score, and the path from stable linearization to covariance, affine margins,
+and exit bounds. New discussions explain transient amplification in the
+Lyapunov estimate, normalize cross-correlation conceptually, separate
+finite-grid from continuous-path claims, and identify the exact point at which
+covariance ceases to support causal conclusions. No theorem owned by FP III is
+reclaimed as an FP V result.
+
 ## Validation
 
 - FP I through FP V permanent theorem audits pass.
 - The FP V migration and verifier scripts pass Python syntax validation.
 - TeX environment nesting passes.
-- PDF compilation remains blocked by the previously identified local MiKTeX
-  dependency `amsthm.sty`; this is an environment issue rather than a detected
-  FP V source error.
+- The current source compiles with `pdflatex` to an 8-page PDF.
+- The final log has no undefined references, underfull boxes, overfull boxes,
+  or LaTeX/package warnings.

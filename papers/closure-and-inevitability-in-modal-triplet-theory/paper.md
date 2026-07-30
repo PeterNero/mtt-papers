@@ -5,32 +5,40 @@ author:
 - Peter Nero
 current_version: v2
 date: July 2026
-generated_from_main_tex_sha256: eeaf6c8d03c4400bcf85e69e749229d06769cbbbf0fd3dac515ef6680d2b6ec4
+generated_from_main_tex_sha256: 22d40e2308d937ec0e4de749ec4e49ddd6c287908cf5e929b6fe0901f2f82776
 paper_id: closure-and-inevitability-in-modal-triplet-theory
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: Conditional Closure Relations in Modal Triplet Theory
-zenodo_doi: 10.5281/zenodo.18255511
-zenodo_record_id: 18255511
-zenodo_url: "https://zenodo.org/records/18255511"
+zenodo_doi: 10.5281/zenodo.21652662
+zenodo_record_id: 21652662
+zenodo_url: "https://zenodo.org/records/21652662"
 ---
 
 # Revision note for this edition
 
-Supersedes.  
+Supersedes.
 Version 1, *Closure and Inevitability in Modal Triplet Theory*.
 
-Reason.  
+Reason.
 Version 1 conflated a right section, a left decoder, autonomous descent, and reversal of effective time evolution. It then inferred probability, Hilbert structure, gravity, horizons, and entropy from that conflation.
 
-Resolution.  
+Resolution.
 Version 2 withdraws the single obstruction and replaces it with separately typed projection, measure, locality, stability, and physical realization statements.
 
-Retained result.  
+Retained result.
 Projection and admissibility remain useful organizers of the corpus, and effective descriptions can lose distinctions present in an upper description.
 
-Remaining boundary.  
+Remaining boundary.
 Born weights, complex Hilbert structure, complete QFT reconstruction, gravitational normalization, horizon entropy, and a physical arrow of time require independent source and realization theorems.
+
+# How to read the closure map
+
+This paper is organized around four questions, not one obstruction. Read the symbols in the next section as a bookkeeping device for an upper process, the information retained by a reduced description, and the evolution visible after that reduction. Sections <a href="#sec:admissibility" data-reference-type="ref" data-reference="sec:admissibility">5</a>–<a href="#sec:closure-map" data-reference-type="ref" data-reference="sec:closure-map">9</a> then add the independent measure, locality, stability, and physical realization gates.
+
+In plain language, imagine that a detailed state is compressed to a dashboard display. Choosing one detailed state compatible with a displayed value is a *representative selection*. Recovering the particular detailed state that actually produced the display is *decoding*. Predicting the next display from the current display alone is *autonomous descent*. Two different current displays later becoming the same display is an *effective merger*. A dashboard can permit one of these operations and forbid another; noninjectivity by itself does not decide all four.
+
+The central picture is therefore a directed dependency graph. Each arrow must be justified in its own category. A set-theoretic arrow does not silently become continuous, local, probabilistic, or physical. The value of the corrected closure map is that it shows exactly where an additional source or realization theorem must enter.
 
 # Scope: closure as a dependency map
 
@@ -275,25 +283,25 @@ The corrected MTT Foundation and Fixed Points sequence provide conditional insta
 
 The present corpus supports the following dependency statements.
 
-Projection and autonomous descent.  
+Projection and autonomous descent.
 Theorem <a href="#thm:typed" data-reference-type="ref" data-reference="thm:typed">5</a> supplies the exact factor-through gate. A selected MTT operator must separately prove that its evolution preserves the chosen projection fibers.
 
-Probability and Born weights.  
+Probability and Born weights.
 Theorem <a href="#thm:kernel" data-reference-type="ref" data-reference="thm:kernel">9</a> constructs a conditional reduced kernel after an upper measure is supplied. The physical measure and the Born quadratic functional are independent source targets; they are not consequences of projection multiplicity.
 
-Complex Hilbert structure.  
+Complex Hilbert structure.
 If a realization already acts on a complex Hilbert bundle, coherent compression can inherit that structure. Projection alone does not derive the complex field, inner product, completeness, or the physical observable algebra.
 
-QFT locality.  
+QFT locality.
 Theorem <a href="#thm:locality" data-reference-type="ref" data-reference="thm:locality">10</a> preserves isotony and microcausality for a compatible compressed net. It does not by itself supply the net, state, spectrum condition, scattering theory, or renormalized dynamics.
 
-Gravity.  
+Gravity.
 The current q79 proof corpus contains a conditional composition in which one discrete physical-realization declaration $`A_{\mathrm{QG}}`$, one binary causal boundary mark $`A_{\mathrm{causal}}`$, a selected global comparison field, and a same-source metric-factorization rule give a global Lorentzian coframe and the TEGR/Einstein two-derivative bulk class. This is not a consequence of projection alone. The gravitational normalization and cosmological term remain independent open coordinates.
 
-Irreversibility and temporal direction.  
+Irreversibility and temporal direction.
 Effective merger prevents recovery of a prior effective state. A physical arrow additionally requires an oriented evolution and an asymmetric condition such as a semigroup law, a monotone functional, or boundary data. The binary causal representative does not by itself derive a thermodynamic arrow.
 
-Horizons and entropy.  
+Horizons and entropy.
 Exterior restriction can discard distinctions, but horizon entropy requires a specified state, entropy functional, dynamics, and normalization theorem. Area scaling is not a map-theoretic corollary.
 
 Thus the corrected closure statement is conditional: several mechanisms can be composed when their interfaces and source data are proved. Their mere presence in one interpretive architecture does not collapse them into one theorem.

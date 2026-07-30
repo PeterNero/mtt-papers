@@ -1,36 +1,36 @@
 ---
 abstract: |
-  We replace the legacy fitted Calabi–Yau flavor benchmark with the current audited execution status. The 27-by-27 qutrit–Weyl/minimal matrix ledger, charged Yukawa profile rows, selected $`\Pi_{\mathrm{CKM}}`$ rows, electroweak primitive, and direct Higgs/threshold row support embedded renormalized-Standard- Model equivalence at the adopted one-shared-physical-primitive/profile standard. The final audit closes 12/12 obligations at that standard. This is not a zero-knob derivation of measured masses. The nine charged Yukawa magnitudes and $`\lambda_H`$ remain profile labels rather than internally emitted strict source values. CKM closes at the prediction-with-uncertainty standard, with maximum displacement $`2.3565\times10^{-4}`$ standard deviations. In the neutral sector, MTT now emits a complete internal dimensionless response, but its spectrum $`[1,4,7]`$ cannot be converted into the physical neutrino spectrum by one common scale or nil subtraction. The old fitted PMNS, seesaw, and few-TeV Higgs benchmarks are therefore withdrawn as predictions.
+  We report the current MTT flavor, CKM, neutral, and Higgs execution. The 27-by-27 qutrit–Weyl architecture, finite-replay charged Yukawa rows, selected CKM rows, shared electroweak primitive, direct Higgs/threshold row, and completed 96-dimensional finite Dirac operator support embedded renormalized-Standard-Model equivalence at the adopted profile standard. CKM closes at the prediction-with-uncertainty criterion, with maximum displacement $`2.3565\times10^{-4}`$ standard deviations. In the neutral sector, the internal 9/9 dimensionless response and its one-scale no-go remain valid. A new two-primitive Dirac profile uses the measured oscillation splittings to emit the complete normal-ordering mass spectrum, Dirac Yukawa matrix, and flavor mass-squared matrix. This is profile calibration, not MTT selection of the splittings, ordering, Dirac ontology, or covariance. The selected finite one-form space contains three raw scalar doublets, while the q79/proto-spinor projector isolates one exact Higgs doublet. Strict numerical source promotion and absolute neutral ontology remain open.
 author:
 - Peter Nero
 current_version: v3
-date: July 2026
-generated_from_main_tex_sha256: 4ac011fb75ec65e91a9ba184a87cee084f781623867bc33305521f27819320d2
+date: July 2026 Version 3
+generated_from_main_tex_sha256: eaefda3dc7249bccb3b34301d891d33d71817766a0ae8897a81f9504fdc4ce08
 paper_id: execution-of-modal-triplet-theory-ii-flavor-ckm-neutral-42604e2f
 release_state: zenodo_released
-released_version: v1.0
-title: "Execution of Modal Triplet Theory II: Flavor, CKM, Neutral, and Higgs Status after True-SM Closure"
-zenodo_doi: 10.5281/zenodo.18262330
-zenodo_record_id: 18262330
-zenodo_url: "https://zenodo.org/records/18262330"
+released_version: v3
+title: "Execution of Modal Triplet Theory II: Flavor, CKM, Neutral, and Higgs Status after Profile-Standard SM Closure"
+zenodo_doi: 10.5281/zenodo.21665967
+zenodo_record_id: 21665967
+zenodo_url: "https://zenodo.org/records/21665967"
 ---
 
-# Revision note for this edition
+# Version 3 Revision Note
 
-Supersedes.  
+Supersedes
 *Execution of Modal Triplet Theory II: Flavor, CKM/PMNS, and Higgs Sector on the CY Corner*, version 2.
 
-Reason.  
-Fitted Calabi–Yau flavor matrices, seesaw assumptions, and a few-TeV Higgs benchmark were reported too strongly and no longer represented the current finite-operator calculation.
+Reason
+Fitted Calabi–Yau flavor matrices, seesaw assumptions, and a few-TeV Higgs benchmark were reported too strongly and no longer represented the current finite-operator calculation. The earlier revision also stopped before the two-primitive neutral profile, completed finite Dirac operator, and one-Higgs projection.
 
-Resolution.  
-Version 3 records the locked $`27\times27`$, charged-Yukawa, CKM, electroweak, and Higgs/threshold profile packets, and proves the present one-scale/nil-subtraction obstruction in the neutral sector.
+Resolution
+Version 3 records the locked charged-flavor, CKM, electroweak, Higgs/threshold, neutral-profile, and finite-triple packets while preserving the one-scale/nil-subtraction obstruction and all strict-source guards.
 
-Retained result.  
+Retained result
 Flavor and Higgs data close embedded renormalized-SM equivalence at the declared one-shared-primitive/profile standard.
 
-Remaining boundary.  
-Strict source emission of profile magnitudes and absolute neutral scale/ontology remains beyond that standard.
+Remaining boundary
+A selected source for the empirical profile, neutral ordering and ontology, uncertainty transport, and absolute normalization remains beyond that standard.
 
 # Closure standard
 
@@ -46,13 +46,15 @@ The current charged-sector authority contains:
 
 - the counted AH-equivalent HYM/projective lane, closed 8/8;
 
-- the selected charged Yukawa basis and magnitude-profile rows; and
+- the selected charged Yukawa basis and finite-replay magnitude rows;
+
+- the explicit profile-valued $`96\times96`$ finite Dirac operator; and
 
 - the selected common-scheme threshold and mass transport with covariance.
 
 These objects establish that the selected branch can reproduce the charged renormalized-SM data coherently through one operator architecture.
 
-At the strict source-value tier, however, the magnitude-bearing functional has ten replay labels—nine charged Yukawa magnitudes and $`\lambda_H`$—and zero accepted internal no-knob labels. Thus the matrix and basis maps are genuine structural achievements, while the measured charged masses remain profile data at the adopted closure standard.
+The nine charged Yukawa rows close at the accepted finite projected replay/profile standard. The corresponding finite Dirac operator satisfies self-adjointness, oddness, KO-dimension-six reality, order zero, and order one on the completed finite module. These statements do not make the measured charged masses zero-primitive predictions: the common measured source profile enters their numerical values. The matrix, basis maps, and finite-triple identities are source-side structural achievements; the magnitudes remain profile-calibrated outputs until a selected continuum action emits the source coordinates.
 
 # CKM and weak CP violation
 
@@ -67,6 +69,8 @@ The strict-upgrade row U4 therefore closes at the prediction-with-uncertainty-pr
 This CKM result supersedes the legacy printed real Yukawa matrices. Those real matrices could reproduce mixing magnitudes but could not establish a nonzero Jarlskog invariant. Weak-sector CP now belongs to the selected complex branch and $`\Pi_{\mathrm{CKM}}`$ execution. It must not be confused with strong-CP closure, which remains open.
 
 # Neutral and PMNS sector
+
+## Internal response and the one-scale no-go
 
 The selected same-source neutral construction has advanced beyond the old benchmark seesaw. Its complete internal dimensionless response is
 ``` math
@@ -92,15 +96,61 @@ This is not yet a dimensionful neutrino Yukawa or mass matrix. A common scale ca
 ``` math
 r_{\mathrm{direct}}=\frac{3}{6}=\frac12,
 ```
-whereas the stored normal-ordering oscillation postcheck is $`r_{\mathrm{post}}=0.02980501393`$. The scale-only completion is therefore falsified. The minimal surviving routes require either a selected non-affine spectral-action slope plus one universal physical scale, or a selected dimensionful seesaw/Dirac–Majorana block.
+whereas the stored normal-ordering oscillation postcheck is $`r_{\mathrm{post}}=0.02980501393`$. The scale-only completion is therefore falsified. This excludes identifying the raw $`[1,4,7]`$ orbit with the physical mass-squared spectrum by a common scale; it does not exclude a declared measured-profile calibration.
 
-Consequently the old fitted neutrino masses, PMNS matrix, and Majorana scale are withdrawn as predictions. They may be used only as historical benchmark data; they do not close absolute neutrino mass, ordering selection, or ontology.
+## Two-primitive Dirac profile execution
+
+At the declared normal-ordering Dirac profile, impose the nil-boundary condition $`m_{\mathrm{lightest}}=0`$ and use the two measured coordinates
+``` math
+\Delta m_{21}^2=7.49\times10^{-5}\ {\rm eV}^2,
+\qquad
+\Delta m_{31}^2=2.513\times10^{-3}\ {\rm eV}^2.
+```
+Writing $`r=\Delta m_{21}^2/\Delta m_{31}^2`$ and $`c_k=\cos(\phi_\nu+2\pi k/3)`$, with $`c_{\max}`$ and $`c_{\min}`$ the extreme orbit values, the analytic profile inversion is
+``` math
+\phi_\nu=\arctan\!\left(\frac{\sqrt3\,r}{2-r}\right),
+\qquad
+A_\nu=\frac{\Delta m_{31}^2}{c_{\max}-c_{\min}}.
+```
+It gives
+``` math
+\phi_\nu=0.02619638630,\qquad
+A_\nu=0.001650933111\ {\rm eV}^2
+```
+and the complete mass profile
+``` math
+(m_1,m_2,m_3)
+=(0,\ 0.00865447861,\ 0.05012983144)\ {\rm eV},
+\qquad
+\sum_i m_i=0.05878431005\ {\rm eV}.
+```
+With the locked PMNS replay, charged-lepton basis, and $`U_R=I`$ right-handed mass convention, the execution fills all Dirac mass, Yukawa, and flavor mass-squared matrix rows. The finite $`96\times96`$ profile Dirac operator uses this same neutral matrix.
+
+This is a complete two-primitive measured-profile value closure. The two oscillation splittings are calibration inputs, not predictions. MTT has not selected normal ordering, Dirac rather than Majorana ontology, the right-handed basis convention, or the missing covariance. The result therefore closes a reproducible profile lane without closing strict U5.
+
+## Conditional one-primitive reduction
+
+For the independently selected retarded Lens pair $`16\to15`$, Dedekind reciprocity gives the exact mixed residue
+``` math
+R_{15,16}=\frac1{240}.
+```
+If a physical Bismut–Freed/APS determinant-line theorem proves that this mixed term survives the shared-circle cancellation with the required spin, orientation, and counterterm conventions, then
+``` math
+\phi_\nu=2\pi R_{15,16}=\frac{\pi}{120}.
+```
+That conditional result would determine the oscillation ratio and reduce the two measured neutral coordinates to one scale coordinate. The arithmetic identity is exact; the physical determinant-family identification is open, so the near agreement with the two-primitive profile is a postcheck rather than a prediction.
+
+A separate 11-dimensional attenuation candidate can be compressed algebraically to one heat-semigroup factor. Native MTT has the $`4+(1+2+3)=10`$ census, however, and no theorem places the physical neutral operator on the extra circle lift. The native ten-dimensional version misses the profile amplitude by a factor $`448^2`$. This is a useful source discriminator, not a promoted mass law.
+
+The old fitted PMNS, seesaw, and Majorana benchmarks remain withdrawn as predictions. The current profile is retained only with its explicit two measured inputs and ontology choices.
 
 # Higgs status
 
 At the adopted profile standard, $`P_{\mathrm{EW}}`$ is counted once as the one shared physical primitive, with zero Higgs-specific free parameters. The direct $`K_{\mathrm{threshold}}.\Omega_H.\lambda`$ row and its row-purpose/formula bridge are locked, and the common SMDR transport carries the Higgs row in the selected precision object.
 
-This closes the Higgs coordinate for embedded renormalized-SM equivalence. It does not make $`\lambda_H`$ an internally emitted no-knob value: the magnitude/profile functional still carries it as a replay label. The former $`\tan\beta=10`$, $`5~\mathrm{TeV}`$ supersymmetric matching benchmark and its one-loop Higgs pole-mass corridor are withdrawn. A strict UV-Higgs derivation would require a selected magnitude-bearing source functional and dedicated scheme/threshold transport independent of the measured Higgs coordinate.
+The completed finite triple sharpens the structural Higgs statement. Exhaustive execution of all 676 finite-algebra one-form basis pairs gives a raw 12-real-dimensional scalar space, organized as three rank-four doublet modules. Thus the finite triple alone does not automatically have the one-doublet Standard Model Higgs sector. The selected q79/proto-spinor alignment rule is an exact rank-four submodule projector, with numerical residual $`6.15\times10^{-15}`$, and removes the other eight real scalar directions. This closes the one-Higgs module at the finite structural tier.
+
+Together, these results close the Higgs coordinate for embedded renormalized-SM equivalence and the one-doublet carrier structure. They do not make $`\lambda_H`$ an internally emitted no-knob value: its physical value still uses the measured profile and shared normalization primitive. Absolute spectral moments and field normalization remain open. The former $`\tan\beta=10`$, $`5~\mathrm{TeV}`$ supersymmetric matching benchmark and its one-loop Higgs pole-mass corridor are withdrawn.
 
 # Sector status table
 
@@ -108,18 +158,122 @@ This closes the Higgs coordinate for embedded renormalized-SM equivalence. It do
 
 | Sector | Closed result | Remaining stronger obligation |
 |:---|:---|:---|
-| Charged flavor | 27-by-27 structure, basis maps, profile magnitudes | internal source emission of nine magnitudes |
+| Charged flavor | 27-by-27 structure, finite-replay magnitudes, profile $`D_F`$ | continuum source emission of measured profile |
 | CKM | selected prediction profile; U4 closed | no stronger central-estimator identity required |
-| Neutral/PMNS | internal dimensionless 9/9 response | non-affine action or dimensionful seesaw, scale and ontology |
-| Higgs | direct $`K`$ row and profile-standard coordinate | internal no-knob $`\lambda_H`$ value source |
+| Neutral/PMNS | internal 9/9 response and two-primitive Dirac profile | determinant-line source, ordering/ontology, covariance |
+| Higgs | one-Higgs projector, direct $`K`$ row, profile coordinate | strict normalization and spectral moments |
 
 </div>
+
+# Interpretation
+
+The charged and neutral executions now have a parallel logical form. In each case the finite carrier and matrix maps are explicit, and a declared measured profile produces all physical rows. The charged lane is part of the 12/12 embedded-SM baseline; the neutral lane is a two-coordinate extension. Neither profile becomes a source prediction merely because its downstream matrix is fully determined.
+
+There is nevertheless genuine reduction of arbitrariness in the structural layer. The same finite module carries charged and neutral Dirac entries, CKM is constrained by selected complex source rows, and the scalar one-form space is reduced to one exact Higgs doublet by a pre-existing q79/proto-spinor projector. The next decisive advance must occur before profile insertion: a selected continuum action must emit the flavor magnitudes, neutral phase and scale, and Higgs normalization with a common provenance certificate.
 
 # Conclusion
 
 Execution II now records the actual frontier. Charged flavor, CKM, and Higgs participate in the closed 12/12 embedded renormalized-SM equivalence theorem at the adopted one-shared-primitive/profile standard. The CKM strict upgrade is also closed at the correct uncertainty-profile criterion.
 
-The result is not a derivation of all fermion masses from zero empirical inputs. Ten magnitude labels remain profile data at the strict source tier, and physical neutrino completion is demonstrably impossible by a common scale alone. This separation preserves the genuine matrix/operator achievements without promoting fitted or replayed values into source theorems.
+The result is not a derivation of all fermion masses from zero empirical inputs. Charged Yukawa magnitudes close at finite-replay/profile tier, and the neutral extension closes numerically with two measured oscillation coordinates under explicit Dirac and ordering choices. Physical neutrino completion is impossible by a common scaling of the raw $`[1,4,7]`$ response, while the conditional Dedekind reduction still lacks its determinant-line source theorem. This separation preserves the genuine matrix, finite-triple, one-Higgs, and CKM achievements without promoting calibrated values into zero-primitive predictions.
+
+#### Rows used directly in this paper.
+
+- (*profile replay*).
+
+  Versioned Yu, Yd, Ye and lambda_H profile packet.
+
+- (*numeric certified*).
+
+  Three selected CKM profile rows and uncertainty comparison.
+
+- (*profile replay*).
+
+  Current non-looping global status and source-certificate map.
+
+- (*derived exact*).
+
+  Promoted direct K_threshold.Omega_H.lambda row.
+
+- (*profile replay*).
+
+  Twelve-obligation embedded renormalized-SM equivalence audit.
+
+- (*numeric certified*).
+
+  Weighted-theta Fourier-tail and Wiener contraction certificate.
+
+- (*profile replay*).
+
+  Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+
+- (*profile replay*).
+
+  Fifteen measured source coordinates, Jacobian and covariance transport.
+
+- (*profile replay*).
+
+  Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+
+- (*derived exact*).
+
+  Sparse 27x27 qutrit-Weyl left-action realization.
+
+- (*derived exact*).
+
+  Promoted P_EW source row at the declared one-shared-primitive standard.
+
+= by -
+
+#### Corpus-state cross-checks.
+
+- (*derived exact*).
+
+  E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+
+= by -
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+This execution paper directly reports the flavor, CKM, neutral, Higgs, finite-matrix, and common-scheme packets listed below. The anomaly row is a neighboring consistency check rather than a source for the flavor values. Profile replay and certified numerics retain their declared tiers, and the strict no-knob upgrade remains open.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Rows used directly in this paper
+
+- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
+- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
+- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
+- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
+- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
+- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
+- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
+- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
+- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
+
+## Corpus-state cross-checks
+
+- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 

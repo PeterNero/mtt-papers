@@ -1,0 +1,550 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{microtype}
+
+\geometry{margin=1in}
+\hypersetup{
+  hidelinks,
+  pdftitle={The Modal Triplet Theory Program D2: Matter--Antimatter Orientation and the Baryogenesis Source Contract},
+  pdfauthor={Peter Nero}
+}
+
+\newtheorem{theorem}{Theorem}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\title{The Modal Triplet Theory Program D2:\\
+Matter--Antimatter Orientation and the Baryogenesis Source Contract\\
+\large A Conditional Interpretation of the Finite MTT Carrier}
+\author{Peter Nero}
+\date{July 2026\\Version 2}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper re-evaluates the proposal that the cosmic matter--antimatter
+asymmetry is a discrete orientation selection in Modal Triplet Theory (MTT).
+The current finite MTT construction supplies an explicit
+particle--antiparticle carrier and exact representation-theoretic consistency
+checks.  That is substantial structural progress, but it is not a source
+theorem for a nonzero baryon abundance.
+
+We prove a finite carrier non-selection theorem: the same conjugation-symmetric
+particle--antiparticle space and the same baryon-sign observable admit a
+charge-conjugation-symmetric state with zero asymmetry and branch states with
+either sign of asymmetry.  Carrier geometry, anomaly cancellation, and an
+available CP-odd phase therefore do not select the state or its population
+weights.  We distinguish two lawful continuations.  A branch-state route may
+postulate or derive a selected asymmetric upper state and then prove its
+descent.  A dynamical route must derive baryon- or lepton-number-changing
+interactions, CP-odd source terms, nonequilibrium transport or an explicitly
+declared alternative, and washout control from the selected action.
+
+Discrete orientation remains a useful organizing hypothesis: it can label
+the conjugate sectors and may participate in a future source mechanism.
+However, the present result is a carrier theorem plus a completion and
+falsification contract.  It does not derive the observed baryon-to-entropy
+ratio, eliminate the need for baryogenesis dynamics, predict the absence of
+antimatter domains, or turn anomaly cancellation into a population-selection
+law.
+\end{abstract}
+
+\section*{Revision note for this edition}
+\addcontentsline{toc}{section}{Revision note for this edition}
+\begin{description}[leftmargin=2.6cm,style=nextline]
+\item[Supersedes.]
+Version~1.0, Zenodo record 18380140.
+
+\item[Reason.]
+The first edition treated orientation-related survivors as if their unequal
+global abundance followed from refinement stability, anomaly cancellation,
+and irreversibility.  The current corpus establishes a finite
+particle--antiparticle carrier, but it does not establish that source map.
+
+\item[Resolution.]
+Version~2 separates carrier, state, dynamics, and observable.  It proves the
+carrier non-selection result, reclassifies orientation selection as a
+conditional hypothesis, restores the standard baryogenesis obligations, and
+states exact promotion and falsification gates.
+
+\item[Retained content.]
+Matter and antimatter may be represented by conjugate orientation sectors of
+one finite carrier, and a selected orientation variable may be useful in a
+future physical mechanism.
+
+\item[Open boundary.]
+No current MTT theorem selects a nonzero baryon-number expectation, an
+asymmetric branch probability, a baryogenesis source and washout history, or
+the observed numerical baryon-to-entropy ratio.
+\end{description}
+
+\section*{How to read this paper}
+\addcontentsline{toc}{section}{How to read this paper}
+The paper is organized around one distinction:
+\begin{quote}
+\emph{having matter and antimatter slots is not the same as selecting how much
+of each slot the universe occupies.}
+\end{quote}
+Section~1 places the question at the correct claim tier.  Section~2 explains
+the exact finite carrier and the meaning of orientation.  Section~3 proves
+that the carrier does not select an asymmetric state.  Sections~4--6 separate
+anomaly constraints, CP data, and irreversibility from an actual abundance
+source.  Sections~7 and 8 formulate two possible completion routes and their
+required calculations.  The final sections compare the proposal with
+baryogenesis, state observational gates, and record what would falsify the
+MTT interpretation.
+
+\paragraph{The central picture in plain language.}
+A theatre can contain two labelled sections without deciding where the
+audience sits.  Likewise, a finite Hilbert space can contain particle and
+antiparticle sectors without choosing a density matrix, a cosmological state,
+or a history measure.  Orientation labels the sections.  A source theorem
+must still determine the occupancy and its evolution.
+
+\tableofcontents
+\newpage
+
+\section{Question, Scope, and Current Tier}
+
+The observed universe contains a small but nonzero excess of baryons over
+antibaryons.  In conventional cosmology this is summarized by a normalized
+quantity such as
+\[
+ \eta_B=\frac{n_B-n_{\bar B}}{s},
+\]
+where $s$ is the entropy density.  Explaining the sign and magnitude of
+$\eta_B$ requires more than naming particle and antiparticle states.  One
+must specify the state, the number observable, the dynamics that changes or
+preserves that number, and the cosmological history in which the expectation
+is evaluated.
+
+Program D2 asks whether the MTT upper geometry can source those data.  The
+answer is currently tiered:
+\begin{enumerate}[label=\textbf{D2.\arabic*.}]
+\item An explicit finite particle--antiparticle carrier exists.
+\item Conjugation and orientation data can be represented on that carrier.
+\item No selected state or population law producing $\eta_B\neq0$ has been
+derived from that structure.
+\item No complete same-source baryogenesis or asymmetric-branch calculation
+has been executed.
+\end{enumerate}
+
+This paper therefore does not claim that MTT has solved baryogenesis.  It
+identifies the exact structural foothold, proves the immediate non-selection
+boundary, and turns the remaining idea into a testable research contract.
+
+\section{The Finite Carrier and the Meaning of Orientation}
+
+\subsection{What the current MTT construction supplies}
+
+The current finite-geometry authority supplies a 96-dimensional
+three-family particle--antiparticle bimodule for
+\[
+ \mathcal A_F=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C).
+\]
+Its matrix execution verifies the declared algebra action, star structure,
+real and grading signs, order-zero relation, and a structural order-one
+condition on the selected channel incidence.  This gives a concrete home for
+particle and antiparticle slots.  The unit incidence coefficients are
+structural witnesses, not measured Yukawa values or cosmic population
+weights.
+
+\subsection{Orientation as a typed label}
+
+\begin{definition}[Conjugate orientation sectors]
+Let
+\[
+ \mathcal H_F=\mathcal H_{+}\oplus\mathcal H_{-}
+\]
+and let $J_F$ be an antiunitary real-structure map exchanging the two sectors.
+The signs $+$ and $-$ are called conjugate orientation labels when they
+distinguish the two sectors and are reversed by $J_F$.
+\end{definition}
+
+This definition is intentionally modest.  Depending on the realization, the
+label may encode particle versus antiparticle, a conjugate representation, a
+sheet orientation, or another discrete involution.  Equality of labels is
+not equality of particles, and the existence of the involution is not yet a
+cosmological selection law.
+
+\subsection{The baryon-sign observable}
+
+To ask an abundance question, introduce a self-adjoint observable
+\[
+ B_F=
+ \begin{pmatrix}
+ I_{+} & 0\\
+ 0 & -I_{-}
+ \end{pmatrix},
+\qquad
+ J_F B_F J_F^{-1}=-B_F.
+\]
+The expectation in a normalized state $\rho$ is
+\[
+ \langle B_F\rangle_\rho=\operatorname{Tr}(\rho B_F).
+\]
+The carrier and $B_F$ make the question well typed.  The density operator
+$\rho$ is still independent data.
+
+\section{The Carrier Non-Selection Theorem}
+
+\begin{theorem}[A conjugate carrier does not select an asymmetry]
+\label{thm:carrier-nonselection}
+Let $\mathcal H_F=\mathcal H_+\oplus\mathcal H_-$ have nonzero finite
+dimensions, let $J_F$ exchange the two sectors, and let $B_F$ have eigenvalue
+$+1$ on $\mathcal H_+$ and $-1$ on $\mathcal H_-$.  Then the same fixed data
+$(\mathcal H_F,J_F,B_F)$ admit normalized states $\rho_0,\rho_+,\rho_-$ with
+\[
+ \operatorname{Tr}(\rho_0 B_F)=0,\qquad
+ \operatorname{Tr}(\rho_+ B_F)=1,\qquad
+ \operatorname{Tr}(\rho_- B_F)=-1.
+\]
+Consequently, carrier geometry and conjugation data alone determine neither
+the sign nor the magnitude of matter--antimatter asymmetry.
+\end{theorem}
+
+\begin{proof}
+Choose unit vectors $u_\pm\in\mathcal H_\pm$ and define
+\[
+ \rho_\pm=|u_\pm\rangle\langle u_\pm|.
+\]
+Their expectations are respectively $+1$ and $-1$.  The state
+\[
+ \rho_0=\frac12
+ \left(
+ |u_+\rangle\langle u_+|
+ +
+ |J_Fu_+\rangle\langle J_Fu_+|
+ \right)
+\]
+is normalized and has equal weight in conjugate sectors, hence zero
+$B_F$ expectation.  All three states use the same carrier, involution, and
+observable.
+\end{proof}
+
+\paragraph{What the theorem means.}
+The result does not say that orientation is irrelevant.  It says that
+orientation belongs to the kinematic inventory, while asymmetry belongs to a
+state or history.  A derivation must therefore explain why one state is
+selected, how its expectation is transported to four-dimensional particle
+number, and why later dynamics does not erase it.
+
+\subsection{A two-state worked example}
+
+Take $\mathcal H_F=\mathbb C^2$, $B_F=\sigma_z$, and let conjugation exchange
+the standard basis vectors.  The maximally mixed state gives
+$\langle B_F\rangle=0$.  A pure upper-component state gives $+1$.  A diagonal
+state
+\[
+ \rho_p=
+ \begin{pmatrix}
+ p&0\\0&1-p
+ \end{pmatrix}
+\]
+gives $2p-1$, so every value in $[-1,1]$ occurs without changing any carrier
+geometry.  This is why an orientation label cannot be used as a hidden
+continuous fit for the observed abundance: the missing object is the source
+of $p$.
+
+\section{Why Anomaly Cancellation Is Not Population Selection}
+
+Gauge and mixed anomalies are consistency conditions on chiral
+representations and their quantum currents.  They determine whether a gauge
+theory can be consistently quantized; they do not count how many particles
+occupy a representation in a cosmological state.  The anomaly polynomial is
+fixed by representation data before a density matrix such as $\rho_p$ is
+chosen.
+
+This distinction blocks a central shortcut in version~1.  If an orientation
+assignment made the quantum gauge theory anomalous, that assignment would be
+inadmissible as a theory.  But once an anomaly-free representation content is
+fixed, anomaly cancellation does not choose a positive rather than negative
+expectation of $B_F$.  In the Standard Model, the relevant anomaly
+cancellations occur across the chiral multiplets of a generation; they are
+not a cosmological mechanism that deletes antiparticle states.
+
+\begin{remark}[Correct use of anomaly data]
+Anomaly freedom is a gate on a proposed source theory.  It may rule out a
+candidate interaction or representation assignment.  Passing the gate leaves
+the state-selection and transport problem intact.
+\end{remark}
+
+\section{What a CP Phase Can and Cannot Do}
+
+A CP-odd phase can enter interference terms and permit different rates for
+conjugate processes.  That makes it relevant to baryogenesis, but not
+sufficient by itself.  The classic Sakharov analysis identifies
+baryon-number violation, C and CP violation, and departure from thermal
+equilibrium as the standard conditions for dynamically generating an
+asymmetry from a symmetric initial state \cite{Sakharov1967}.  Electroweak
+calculations further show that the observed CKM source is not by itself large
+enough to account for the cosmic asymmetry in the minimal Standard Model
+\cite{HuetSather1995}.
+
+The MTT corpus contains finite-phase and orientation clues associated with the
+selected q79 branch.  At the current authority tier, those clues do not
+establish a physical map to all CKM angles, a baryon-number source, or
+$\eta_B$.  A shared-circle holonomy becomes relevant only after one proves an
+intertwiner
+\[
+ L_{\rm shared}
+ \longrightarrow
+ \text{physical CP-odd source on }\mathcal H_F
+\]
+that preserves the selected connection and action and is evaluated in the
+same cosmological state.  Merely observing that both structures contain a
+phase is not such a theorem.
+
+\section{Irreversibility, CPT, and Branch Selection}
+
+\subsection{Persistence is not production}
+
+Suppose a branch already has $\langle B_F\rangle\neq0$ and the effective
+dynamics approximately conserves that expectation after some epoch.
+Irreversibility or washout suppression can then explain persistence.  It
+cannot explain the original sign or magnitude unless the same mechanism also
+emits the asymmetric state or source term.  Production and persistence are
+different proof obligations.
+
+\subsection{CPT-compatible asymmetric states}
+
+An asymmetric cosmological state need not mean that the local action violates
+CPT.  A symmetry of the dynamics need not be a symmetry of a particular
+state or boundary condition.  Conversely, one cannot claim that a vague
+failure of ``global admissibility'' selects matter while local CPT remains
+intact.  The claim requires a constructed local quantum field theory, its CPT
+map, the selected state, and a proof of how the state descends.
+
+The safe current statement is:
+\begin{quote}
+MTT may eventually select a CPT-compatible asymmetric branch state, but no
+current theorem establishes that selection or its probability.
+\end{quote}
+
+\subsection{Two branches are not automatically two universes}
+
+The existence of conjugate mathematical states says only that both are
+allowed by the carrier.  Interpreting them as two physical universes, as two
+time orientations, or as one realized and one hidden branch requires an
+additional ontology and selection law.  Program D2 does not assume any of
+those readings.
+
+\section{Completion Route A: A Selected Asymmetric Branch State}
+
+The first lawful route is kinematic.  One selected upper state
+$\Omega_{\rm up}$ may descend to a finite state $\rho_F$ and then to an
+effective four-dimensional state.  To close this route, one must provide:
+\begin{enumerate}[label=\textbf{A\arabic*.}]
+\item a normalized upper state or history measure;
+\item a selected branch rule that does not use the observed asymmetry as its
+selector;
+\item an intertwiner from the upper orientation observable to $B_F$;
+\item a state-preserving descent to the four-dimensional baryon current;
+\item a proof that subsequent evolution preserves the sign and yields a
+controlled magnitude;
+\item a probability or typicality statement if the theory claims that the
+observed branch is preferred rather than merely allowed.
+\end{enumerate}
+
+This route can consistently say that the asymmetry is an initial or global
+state property.  It cannot call that property a derived prediction until the
+source and branch rule are supplied.
+
+\section{Completion Route B: Selected Baryogenesis Dynamics}
+
+The second route derives an asymmetry dynamically from a declared earlier
+state.  At effective level, many mechanisms can be organized schematically by
+a transport equation
+\[
+ \dot n_B+3Hn_B=S_B[\Phi_{\rm CP},\Gamma_{\Delta B},T,\ldots]
+ -\Gamma_{\rm wash}\,n_B .
+\]
+Here $S_B$ is a CP-odd baryon source, $\Gamma_{\Delta B}$ represents
+baryon- or lepton-number-changing processes, and $\Gamma_{\rm wash}$ removes
+the generated asymmetry.  This equation is a diagnostic template, not an MTT
+derivation.
+
+To promote it, MTT must derive from one selected action:
+\begin{enumerate}[label=\textbf{B\arabic*.}]
+\item the relevant number current and its violation law;
+\item the CP-odd invariant and its coupling to the reactions;
+\item the nonequilibrium background, or a precisely stated alternative to
+the usual Sakharov setting;
+\item finite-temperature or nonequilibrium rates with uncertainties;
+\item washout and spectator processes;
+\item the transition from any lepton asymmetry to baryon asymmetry when that
+route is used;
+\item the final $\eta_B$ prediction without choosing inputs from the target
+value.
+\end{enumerate}
+
+The current open upper-action, nonperturbative QFT, and no-knob Standard Model
+value blockers sit upstream of this computation.  Closing the finite carrier
+does not bypass them.
+
+\section{Relation to the MTT Program}
+
+\subsection{Program B2 and B3}
+
+Program B2 supplies a conditional language for gauge structure; Program B3
+supplies a conditional language for discrete survivor structure.  D2 may use
+their objects once their hypotheses are checked, but it cannot infer a
+population law from the words ``gauge'' or ``discrete.''  Representation,
+state, and abundance remain different types.
+
+\subsection{Program D1}
+
+Program D1 distinguishes an availability mask from a covariant source.
+Program D2 has the same logical shape.  The particle--antiparticle carrier is
+the mask of available sectors; the selected state or baryogenesis action is
+the source.  In both papers, the missing physical map cannot be supplied by
+renaming the structural data.
+
+\subsection{The finite Standard Model carrier}
+
+The explicit 96-dimensional carrier is the principal new foothold unavailable
+to version~1.  It makes the orientation hypothesis calculable: a future
+operator can now be written on named particle and antiparticle slots.  Its
+current achievement is exact representation compatibility.  Physical finite
+Dirac entries, full source-owned flavor data, nonperturbative QFT transport,
+and cosmological state selection remain separate.
+
+\section{Observational and Numerical Contract}
+
+A completed Program D2 should report at least:
+\begin{enumerate}[label=\textbf{O\arabic*.}]
+\item the convention for $B$, $L$, and $B-L$;
+\item the selected initial state and cosmological background;
+\item the complete source and washout equations;
+\item the predicted sign and interval for $\eta_B$;
+\item the relation to light-element abundances and cosmic microwave
+background constraints;
+\item any predicted antimatter-domain or isocurvature signature;
+\item an uncertainty budget and a held-out comparison protocol.
+\end{enumerate}
+
+The numerical value of $\eta_B$ may be used for final comparison, not as the
+coefficient that chooses an orientation, phase, branch, or rate.  If one to
+three physical primitives are retained, they must be declared before the
+comparison and shown not to be disguised replay coordinates.
+
+\section{Falsification and Non-Promotion Rules}
+
+The orientation program fails at its claimed tier if any of the following
+occurs:
+\begin{enumerate}[label=\textbf{F\arabic*.}]
+\item the proposed orientation operator does not intertwine with the physical
+particle--antiparticle carrier;
+\item the selected upper state descends to zero or the wrong-sign asymmetry;
+\item the source action violates gauge consistency, locality, unitarity, or
+the declared CPT contract;
+\item washout removes the generated signal;
+\item the calculated asymmetry depends on choosing a branch or coefficient
+from the observed $\eta_B$;
+\item a claimed prediction lacks an uncertainty-controlled comparison with
+cosmological data.
+\end{enumerate}
+
+The following statements are not promotion evidence:
+\begin{itemize}
+\item the carrier contains antiparticle slots;
+\item a finite phase is numerically near a measured CP coordinate;
+\item an anomaly-free representation exists;
+\item one asymmetric state can be written down;
+\item irreversible evolution preserves an asymmetry inserted by hand.
+\end{itemize}
+
+\section{Conclusion}
+
+Program D2 now has a firmer and narrower foundation.  MTT possesses a concrete
+finite particle--antiparticle carrier on which orientation, conjugation, and
+number observables can be represented.  The carrier non-selection theorem
+shows exactly why that achievement does not yet explain the cosmic abundance:
+the same finite data support symmetric and oppositely asymmetric states.
+
+Discrete orientation therefore survives as a candidate source coordinate,
+not as a completed explanation.  The next scientific advance must select
+either an asymmetric upper state with a lawful descent or a baryogenesis
+dynamics with number violation, CP-odd sourcing, nonequilibrium transport,
+and washout control.  Both routes can be tested on the existing finite
+carrier.  Neither is supplied by anomaly cancellation, a phase label, or
+irreversibility alone.
+
+This correction is constructive rather than destructive.  It replaces an
+unverifiable narrative with a finite operator problem and a clear exit
+certificate.  A successful future version will not merely say that matter is
+the selected orientation; it will calculate why the selected state has the
+observed sign and magnitude and show that the result survives the complete
+four-dimensional dynamics.
+
+\section*{Computational Evidence and Reproducibility}
+\addcontentsline{toc}{section}{Computational Evidence and Reproducibility}
+The finite carrier result used here is archived in the curated MTT results
+repository under authority A48:
+\begin{quote}\small\raggedright
+\url{https://github.com/PeterNero/mtt-results-repro/tree/main/release/authority/A48}.
+\end{quote}
+Authority A48 establishes the finite representation carrier and explicitly
+does not promote structural incidence coefficients to physical Yukawa or
+population values.  The no-knob Standard Model value and precision-equivalence
+frontier remains open under blocker B.SM.02 in the MTT research ledger.
+
+\begin{thebibliography}{99}
+
+\bibitem{Sakharov1967}
+A.~D.~Sakharov,
+``Violation of CP invariance, C asymmetry, and baryon asymmetry of the
+universe,''
+\emph{JETP Letters} \textbf{5}, 24--27 (1967);
+\href{https://doi.org/10.1070/PU1991v034n05ABEH002497}
+{doi:10.1070/PU1991v034n05ABEH002497}.
+
+\bibitem{KobayashiMaskawa1973}
+M.~Kobayashi and T.~Maskawa,
+``CP-violation in the renormalizable theory of weak interaction,''
+\emph{Progress of Theoretical Physics} \textbf{49}, 652--657 (1973),
+\href{https://doi.org/10.1143/PTP.49.652}
+{doi:10.1143/PTP.49.652}.
+
+\bibitem{tHooft1976}
+G.~'t Hooft,
+``Symmetry breaking through Bell--Jackiw anomalies,''
+\emph{Physical Review Letters} \textbf{37}, 8--11 (1976),
+\href{https://doi.org/10.1103/PhysRevLett.37.8}
+{doi:10.1103/PhysRevLett.37.8}.
+
+\bibitem{KuzminRubakovShaposhnikov1985}
+V.~A.~Kuzmin, V.~A.~Rubakov, and M.~E.~Shaposhnikov,
+``On the anomalous electroweak baryon-number non-conservation in the early
+universe,''
+\emph{Physics Letters B} \textbf{155}, 36--42 (1985),
+\href{https://doi.org/10.1016/0370-2693(85)91028-7}
+{doi:10.1016/0370-2693(85)91028-7}.
+
+\bibitem{HuetSather1995}
+P.~Huet and E.~Sather,
+``Electroweak baryogenesis and Standard Model CP violation,''
+\emph{Physical Review D} \textbf{51}, 379--394 (1995),
+\href{https://doi.org/10.1103/PhysRevD.51.379}
+{doi:10.1103/PhysRevD.51.379}.
+
+\bibitem{Greenberg2002}
+O.~W.~Greenberg,
+``CPT violation implies violation of Lorentz invariance,''
+\emph{Physical Review Letters} \textbf{89}, 231602 (2002),
+\href{https://doi.org/10.1103/PhysRevLett.89.231602}
+{doi:10.1103/PhysRevLett.89.231602}.
+
+\end{thebibliography}
+
+\end{document}

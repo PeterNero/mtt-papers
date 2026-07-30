@@ -48,15 +48,15 @@
       "sha256": "1d167ec931b27c686537a6e9fc7c66a28243475d1b8f9b4c1100e19b5645b96c"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "11 General Relativity & Geometry/_work/Why__GR_Falls_Out_of_String_Theory___A_Coherent_Admissibility_Shadow_Bridge_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "398ba05e66cfb53ee79664b1c35a993de9337cb1d7e783046e8c1d996dd778c2",
+  "source_tree_sha256": "ee20da870550d1176ba2af1017b51ad6ebc32d2aa0f94c923a2a7da60810e60c",
   "title": "Why GR Falls Out of String Theory: A Coherent-Admissibility Shadow Bridge in Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

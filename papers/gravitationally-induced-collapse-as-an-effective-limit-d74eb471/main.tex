@@ -27,24 +27,52 @@
 \maketitle
 
 \begin{abstract}
-This corrected successor asks when a Di\'osi--Penrose (DP) law can arise as an
-effective shadow of Modal Triplet Theory (MTT). Completely positive reduction and
-lifting channels give an exact Nakajima--Zwanzig memory identity; a Davies--GKSL
-generator still requires an independently justified weak-coupling, Markov and secular
-limit. The new result is a Penrose--Schoenberg completion theorem. Conditional on the
-selected two-derivative Einstein/TEGR action, its static weak-field constraint and a
-declared external smearing map, the Newton self-energy of two branch mass densities
-is one half of a squared Hilbert-space distance. Its pairwise matrix is therefore
-conditionally negative definite, so $\exp[-tE_G/\hbar]$ defines a completely positive,
-trace-preserving dephasing semigroup for every finite branch set. Its generator is
-exactly the regulated DP double commutator, and it is the unique population-preserving
-pure-dephasing semigroup with those real Penrose rates. This closes positivity and
-Markovian completion; it does not make Penrose's provisional lifetime estimate an MTT
-source theorem. MTT must still select the external regularization, the exact
-$E_G/\hbar$ rate law (or an equivalent correlation kernel), and, for objective
-single-outcome collapse, a stochastic instrument and probability rule. Thus the DP
-law is a rigorous restricted completion, not yet a derived fundamental law of MTT.
+This paper asks when a Diosi-Penrose (DP) law can arise as an effective
+shadow of Modal Triplet Theory (MTT). Completely positive reduction and
+lifting channels give an exact Nakajima-Zwanzig memory identity; a
+Davies-GKSL generator still requires an independently justified
+weak-coupling, Markov, and secular limit. The central result is a
+Penrose-Schoenberg completion theorem. Conditional on the selected
+two-derivative Einstein/TEGR action, its static weak-field constraint, and a
+declared external smearing map, the Newton self-energy of two branch mass
+densities is one half of a squared Hilbert-space distance. Its pairwise
+matrix is therefore conditionally negative definite, so the exponential
+decay matrix defines a completely positive, trace-preserving dephasing
+semigroup for every finite branch set. Its generator is exactly the
+regulated DP double commutator, and it is the unique population-preserving
+pure-dephasing semigroup with those real Penrose rates. This closes
+positivity and Markovian completion; it does not make Penrose's provisional
+lifetime estimate an MTT source theorem. MTT must still select the external
+regularization, the exact Penrose rate law or an equivalent correlation
+kernel, and, for objective single-outcome collapse, a stochastic instrument
+and probability rule. Thus the DP law is a rigorous restricted completion,
+not yet a derived fundamental law of MTT.
 \end{abstract}
+
+\section*{Version 3 Revision Note}
+\begingroup
+\small
+\begin{description}[leftmargin=3.2cm,style=nextline,itemsep=1pt,topsep=3pt]
+\item[Supersedes] Version 2 and the original 2026 release,
+\emph{Gravitationally Induced Collapse as an Effective Limit of Coherence
+Breakdown in Modal Triplet Theory}.
+\item[Reason] The original proposal did not derive a Di\'osi--Penrose rate,
+external smearing scale, Markov limit, or objective outcome process.
+Version 2 repaired the open-system typing but left positivity of the exact
+Penrose-rate completion unresolved.
+\item[Resolution] The selected static Einstein/TEGR constraint is used to
+derive the regulated Newton quadratic form. Its branch energies are proved
+to be squared Hilbert distances, yielding the Penrose--Schoenberg CPTP
+semigroup and the regulated DP generator.
+\item[Retained result] Typed reduction/lifting channels, normalized
+postselected filters, the exact memory identity, conditional Davies limit,
+scale-typing obstruction, and finite-time threshold results remain valid.
+\item[Remaining boundary] MTT must still select the external smearing and
+effective Newton normalization, prove the exact physical rate identity or
+correlation source, control any Markov limit, and supply an instrument and
+probability theorem for objective outcomes.
+\end{description}
+\endgroup
 
 \tableofcontents
 
@@ -490,8 +518,8 @@ sharper. Let $\Theta_{\rm MTT}$ denote selected geometric data. A direct fundame
 route must construct
 \begin{equation}
  \Theta_{\rm MTT}\longmapsto
- \bigl(G_{\rm eff},s_\ell,\widehat\mu,mathcal A_{ab}(t),
-       \{\mathcal I_a\}\bigr),
+ \bigl(G_{\rm eff},s_\ell,\widehat\mu,\mathcal A_{ab}(t),
+        \{\mathcal I_a\}\bigr),
  \label{eq:direct-source-map}
 \end{equation}
 where $\mathcal A_{ab}$ is the branch-coherence functional and
@@ -582,6 +610,32 @@ channel does not select a realized outcome; an objective-collapse claim addition
 needs a stochastic instrument and probability theorem. Version 3 therefore closes
 the gravitational-metric and completely-positive-completion layers without claiming
 that the source-selection or measurement problem is already solved.
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The Penrose-Schoenberg completion and source contract are conditional mathematical constructions. The open strict-upgrade ledger does not derive a collapse rate or select a stochastic law; it is an adjacent corpus-level boundary only.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \begin{thebibliography}{99}
 \bibitem{Nakajima1958}

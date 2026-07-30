@@ -5,16 +5,16 @@ author:
 - Peter Nero
 current_version: v2
 date: July 2026
-generated_from_main_tex_sha256: ec74c511a8291103777f6b9da9f88eeed9e23300922d04c09ae7aa533f4f46dd
+generated_from_main_tex_sha256: ba49aa8538c9e16e570c894a8462145b93985c11549d76b2720c492adab25199
 paper_id: the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  The Modal Triplet Theory Program A2:  
+  The Modal Triplet Theory Program A2:
   Conditional Computability and Finite Prediction Depth
-zenodo_doi: 10.5281/zenodo.18354966
-zenodo_record_id: 18354966
-zenodo_url: "https://zenodo.org/records/18354966"
+zenodo_doi: 10.5281/zenodo.21652637
+zenodo_record_id: 21652637
+zenodo_url: "https://zenodo.org/records/21652637"
 ---
 
 # Revision note for version 2
@@ -38,6 +38,26 @@ Prediction as admissible continuation, protocol-relative prediction depth, and t
 #### Open boundary.
 
 No selected MTT realization is presently proved to implement unbounded, robust counter storage and operations. No complexity lower bound, Born measure, quantization theorem, physical time variable, or universal controller no-go follows from A2 alone.
+
+# How to read Program A2
+
+A2 separates a description running out from a decision problem having no algorithm. The first is local to a chart, protocol, and orbit. The second is a uniform claim about every input in an infinite formal language. Moving between them requires an explicit computable reduction.
+
+#### The central picture in plain language.
+
+Prediction depth counts how long a chosen effective description can be continued under a named protocol. Branching says several continuations are available. A nil boundary says the current continuation is undefined. Undecidability says no total algorithm can always answer a declared yes/no question. Complexity asks how many resources an algorithm needs when one does exist. These are different failures and must not share one label.
+
+#### A finite counter example.
+
+Take states $`S=\{0,1,\ldots,C\}`$ and the step $`F(n)=n+1`$ for $`n<C`$, with $`F(C)`$ undefined. Starting at $`n`$, the chart has finite prediction depth $`C-n`$. Whether the orbit reaches a target $`H\subseteq S`$ is nevertheless decidable by at most $`C+1`$ steps. The nil endpoint limits this presentation but creates no halting-problem reduction. This is the finite-capacity side of A2’s main fork.
+
+#### Argument map.
+
+Sections 1–2 define the four computational questions and the computable presentation. Sections 3–4 formalize prediction depth, branching, and nil semantics. Section 5 states the six-clause robust two-counter embedding that would transfer undecidability. Section 6 proves why one fixed finite carrier cannot satisfy it. Sections 7–8 distinguish complexity and derive the limited intervention-verifier consequence. Sections 9–11 record the claims not supplied by this computation layer and state the exact frontier.
+
+#### Scope boundary.
+
+The conditional undecidability theorem is exact, but its premise is not yet a selected MTT construction. Until an unbounded robust carrier, zero test, and uniform step map are emitted, A2 supports finite-horizon diagnostics and simulations only. It supplies no probability law, quantization, physical clock, or universal control prohibition.
 
 # Scope and Logical Separation
 
@@ -465,3 +485,7 @@ J. Hartmanis and R. E. Stearns, “On the computational complexity of algorithms
 C. Moore, “Unpredictability and undecidability in dynamical systems,” *Physical Review Letters* 64 (1990), 2354–2357.
 
 </div>
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

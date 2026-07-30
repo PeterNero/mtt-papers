@@ -1,23 +1,38 @@
 ---
 abstract: |
-  This corrected successor separates three questions that were conflated in the first version: existence of the filtered Gaussian measure, Borel summability at a finite spectral cutoff, and removal of that cutoff for a selected gravitational interaction. On a bounded-geometry Euclidean domain, a positive proper-time gap makes the spectral proper-time (SPT) covariance trace class, not merely Hilbert–Schmidt. It therefore defines a centered Borel Gaussian measure on the stated TT Hilbert space and has almost-sure Sobolev regularity of every finite order. We then prove ordinary Borel summability for finite-dimensional nonnegative quartic interactions and give an exact Borel–Laplace representation on the positive coupling ray. Finally, we prove a sufficient weighted-Borel convergence criterion for cutoff removal. These results do not establish Borel summability of the TT-expanded Einstein–Hilbert action: its sectorial stability, a selected interaction and filter, cutoff-uniform constructive bounds, and convergence of the Borel transforms remain separate obligations. The result is a rigorous finite-volume constructive core and a precise input contract for the BRST/BV successor, rather than a nonperturbative construction of MTT gravity.
+  This paper separates three constructive questions: existence of the filtered Gaussian measure, Borel summability at a finite spectral cutoff, and removal of that cutoff for a selected gravitational interaction. On a bounded-geometry Euclidean domain, a positive proper-time gap makes the spectral proper-time (SPT) covariance trace class, not merely Hilbert–Schmidt. It therefore defines a centered Borel Gaussian measure on the stated TT Hilbert space and has almost-sure Sobolev regularity of every finite order. We then prove ordinary Borel summability for finite-dimensional nonnegative quartic interactions and give an exact Borel–Laplace representation on the positive coupling ray. Finally, we prove a sufficient weighted-Borel convergence criterion for cutoff removal. These results do not establish Borel summability of the TT-expanded Einstein–Hilbert action: its sectorial stability, a selected interaction and filter, cutoff-uniform constructive bounds, and convergence of the Borel transforms remain separate obligations. The result is a rigorous finite-volume constructive core and a precise input contract for the BRST/BV successor, rather than a nonperturbative construction of MTT gravity.
 author:
 - Peter Nero
 current_version: v2
-date: |
-  July 2026  
-  Version 2
-generated_from_main_tex_sha256: aa82b60175fea01f25a1a8544d7c4ab24ca53678ffcef4c470952c196f8cbf62
+date: July 2026 Version 2
+generated_from_main_tex_sha256: 4717ea70ea72ae3ccae251b0b40452eb4c110548e717d214ef4b34fd52d6bdff
 paper_id: constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  Constructive MTT Quantum Gravity I:  
+  Constructive MTT Quantum Gravity I:
   Finite-Volume SPT Gaussian Control and a Conditional Borel-Summability Contract
-zenodo_doi: 10.5281/zenodo.18209684
-zenodo_record_id: 18209684
-zenodo_url: "https://zenodo.org/records/18209684"
+zenodo_doi: 10.5281/zenodo.21665952
+zenodo_record_id: 21665952
+zenodo_url: "https://zenodo.org/records/21665952"
 ---
+
+# Version 2 Revision Note
+
+Supersedes:
+Constructive MTT Quantum Gravity I, first release.
+
+Reason:
+The Gaussian measure, finite-cutoff Borel theorem, and continuum interacting-gravity limit had been conflated.
+
+Resolution:
+The three levels are separated and each theorem is stated with its own cutoff, positivity, and convergence hypotheses.
+
+Retained result:
+The finite-volume SPT covariance is trace class, the finite-dimensional nonnegative quartic model is Borel summable, and a weighted criterion controls a possible cutoff limit.
+
+Remaining boundary:
+The selected gravity interaction, sectorial stability, cutoff-uniform bounds, and continuum Borel transform remain open.
 
 # Correction and scope
 
@@ -33,6 +48,19 @@ This version proves only what follows from declared hypotheses. Its hierarchy is
 \end{align*}
 ```
 The final arrow to a physical gravitational theory is not asserted. In particular, an SPT filter is treated here as a regulator/model datum until MTT geometry selects its spectral function and proper-time scale.
+
+## Reader orientation and the central picture
+
+The paper studies three different limits, and they should not be blended. The first is an infinite-dimensional Gaussian measure at fixed bounded volume. The second is an interacting integral after only finitely many eigenmodes have been retained. The third is the limit in which that spectral cutoff is removed. Sections 2 and 3 close the first problem, Section 4 closes a deliberately restricted version of the second, and Section 5 states a sufficient condition for the third. Section 6 then lists the extra gates needed before any of this becomes a quantum-gravity construction.
+
+In plain language, the SPT factor acts like a very strong high-frequency sieve. If $`L e_j=\lambda_j e_j`$, the variance of the $`j`$th Gaussian coordinate is
+``` math
+c_j=\frac{f(\lambda_j)}{\lambda_j+m^2}
+ \leq
+ \frac{\mu([\tau_0,\infty))e^{-\tau_0\lambda_j}}
+      {\lambda_j+m^2}.
+```
+The exponential tail makes the sum of all coordinate variances finite on bounded volume. That fact constructs the free Gaussian measure. It does not decide which nonlinear gravitational interaction to integrate, whether that interaction is stable, or whether the cutoff sequence converges.
 
 # Finite-volume spectral setting
 
@@ -281,6 +309,30 @@ Relative to version 1, this successor:
 # Conclusion
 
 The positive proper-time gap yields a strong and rigorous result: on bounded volume, the SPT covariance is trace class and defines a smooth Gaussian TT model. Stable quartic finite-mode interactions have ordinary Borel-summable expansions, with an explicit positive-ray Borel transform. What remains is no longer hidden inside the word constructive: one must select the gravitational interaction and filter, prove sectorial stability and cutoff-uniform constructive estimates, establish a convergent Borel limit, and then pass the BRST/BV physical-state gates. Until those steps are supplied, this paper is a finite-volume constructive foundation and test contract, not a completed nonperturbative theory of gravity.
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The finite-volume Gaussian construction and conditional Borel contract are local analytic results. The open strict-upgrade ledger neither proves cutoff removal nor selects a gravitational interaction; it records an independent source-level frontier.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 

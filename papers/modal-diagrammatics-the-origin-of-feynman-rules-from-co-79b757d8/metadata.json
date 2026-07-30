@@ -48,15 +48,15 @@
       "sha256": "c901d892106dffe861c3e26b5f71e656f39ba709b7272572543adca0911e39ce"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "7 Quantum Field Theory/_work/Modal_Diagrammatics__The_Origin_of_Feynman_Rules_from_Coherent_Modal_Geometry"
   },
-  "source_tree_sha256": "3793a326f0684f7f9b5d0977f9fa55358d87a2b5eddb19f13c66fb84ba574af1",
+  "source_tree_sha256": "4a8678d633f7fda3f83e26ab90112f2161ec0b53f34be82b3a69f1ae9911c72f",
   "title": "Modal Diagrammatics: The Origin of Feynman Rules from Coherent Modal Geometry",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

@@ -1,12 +1,30 @@
-# Fixed Points I v6 Revision Audit
+# Fixed Points I v7 Revision Audit
 
-## Source lineage
+## Current publication repair
+
+- Superseded released edition: version 6, Zenodo record `21649308`.
+- Reason for version 7: the released version 6 PDF predates the final
+  paper-specific reader map, theorem-cluster explanations, and conclusion.
+- Resolution: version 7 publishes the reviewed explanatory source without
+  changing the version 6 mathematical theorem set.
+- Retained result: all conditional analytic results and the version 6 proof
+  repairs listed below.
+- Open boundary: the abstract Riemannian control geometry, flow parameter,
+  and fiber product still do not select physical spacetime or the q79
+  internal carrier.
+
+The release-currency audit found that the published PDF had MD5
+`36e4acc815e929b223099d9ff7c48344`, while the reviewed local PDF had different
+content under the same version label.  Version 7 removes that ambiguity by
+making the explanatory delta an explicit successor edition.
+
+## Version 6 source lineage
 
 - Source project: `_work/Fixed_Points_I__Fixed_Points_over_Multi_Bundle_Manifolds_v5`
 - Revised project: `revised_tex_vnext/Fixed_Points_I__Fixed_Points_over_Multi_Bundle_Manifolds_v6`
 - The v5 source remains untouched.
 
-## External-report findings evaluated against v5
+## Version 6 external-report findings evaluated against v5
 
 | Finding | v5 evaluation | v6 action |
 |---|---|---|
@@ -19,7 +37,7 @@
 | Harmonize the Cea prefactor and `w0` normalization | Not resolved: theorem used `1+L/sqrt(w0)` while its remark claimed `1+L/w0`; the norm omitted the full `W` form | Replaced the norm by the full quadratic-form norm and proved the factor `(1+L/w0)/(1-L/w0)` |
 | Keep the `epsilon -> 0` limit conditional on uniform bounds and Q-sector control | Mostly resolved | Added the missing sequential demicontinuity needed to pass the nonlinearity and supplied a proof of Q-sector collapse |
 
-## Additional proof issues found in direct review
+## Additional version 6 proof issues found in direct review
 
 | Issue | v6 resolution |
 |---|---|
@@ -31,7 +49,7 @@
 | Uniqueness was claimed to imply exponential Lojasiewicz--Simon convergence | Replaced uniqueness by nondegeneracy / exponent `1/2`; explicitly states uniqueness alone is insufficient |
 | Singular-limit passage did not identify the nonlinear weak limit | Added sequential demicontinuity on the compactness class |
 
-## Resulting theorem status
+## Resulting theorem status retained in version 7
 
 The paper proves conditional analytic results for models satisfying its explicit
 bounded-geometry, gap, projector, well-posedness, compactness/confinement,
@@ -39,11 +57,31 @@ coherence-invariance, and nonlinear-continuity assumptions. It does not by
 itself select the physical MTT internal topology, identify stabilization time
 with physical time, or verify the hypotheses for every downstream MTT model.
 
+## Version 7 expository revision
+
+The current source now includes a paper-specific reading guide rather than a
+generic series description. It explains:
+
+- the coherent/incoherent spectral split in plain language;
+- the six-stage dependency chain from fiber geometry to convergence;
+- why the variational, Schauder, and Darbo existence routes are alternatives;
+- why projected return requires coherence invariance before it is an equilibrium;
+- how the two uniqueness routes differ;
+- what the Galerkin estimate certifies and what operator provenance it cannot certify;
+- why base regularization may be removed only with additional complement-sector control;
+- which results later Fixed Points papers may cite without restating them.
+
+Interpretive paragraphs now surround the main theorem clusters, and a dedicated
+conclusion states the achievement, failure modes, and remaining q79 realization
+boundary. No theorem or proof from a later Fixed Points paper was imported.
+
 ## Validation
 
 - The permanent theorem/status verifier passes.
 - Python syntax validation for the verifier passes.
 - TeX environment nesting passes.
-- A guarded `pdflatex` run reached `series.sty` and stopped because the local
-  MiKTeX installation lacks `amsthm.sty`. No paper-source TeX error was reached;
-  PDF rendering remains blocked on that toolchain dependency.
+- The current source compiles with `pdflatex` to a 16-page PDF.
+- The final log has no undefined references, underfull boxes, overfull boxes,
+  or LaTeX/package warnings.
+- All 16 pages were rendered and visually inspected after the expository
+  revision, including the reader map and conclusion.

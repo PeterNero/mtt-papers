@@ -1,407 +1,416 @@
 ---
 abstract: |
-  The Born rule and the emergence of classical determinism are traditionally treated as independent foundational problems in quantum mechanics. The former is addressed through probabilistic axioms or symmetry arguments, while the latter is attributed to decoherence and environmental interactions. In this work we show that, within Modal Triplet Theory, these two phenomena arise as different regime limits of a single underlying structure. Both are shadows of coherent-sector projection and admissible basin dynamics governed by the same projector, spectral gap, and stability margins. Probabilities arise when multiple admissible basins compete with comparable measure, while classical determinism emerges when one basin dominates exponentially. This identification explains why decoherence succeeds in explaining stability but fails to explain outcome selection, why Born-rule derivations repeatedly reconstruct the same measure without a physical origin, and why unitary Schrödinger evolution is exact yet insufficient as a global predictor. The analysis establishes a unified resolution of two long-standing quantum-mechanical riddles without modifying quantum mechanics or introducing additional postulates.
+  The Born rule and the emergence of classical behavior are related, but they are not the same mathematical problem. The first fixes outcome probabilities for a declared quantum preparation and instrument. The second asks when retained records and observables are well approximated by one stable classical alternative. We formulate their interface without identifying them. Standard Gleason-type results recover trace probabilities only after additive or effect-noncontextual probability assumptions are supplied; they do not select an MTT source measure. The current q79 program now provides a stronger, domain-specific result: its canonical binary one-anchor Fock recorder emits an exact stopped-output measure and second-moment capture descent from the selected normal state, without an added Born axiom, stochastic primitive, fit, or observed probability on that domain. General apparatus contexts and objective single-history actualization remain open. Separately, we prove exact concentration and persistence bounds. If one record has probability at least $`1-\varepsilon`$, the law is within $`\varepsilon`$ in total variation of a deterministic record, bounded observables differ by at most $`\varepsilon`$ times their oscillation, and a record with per-step escape probability at most $`\eta`$ survives $`n`$ steps with probability at least $`1-\varepsilon-n\eta`$. These statements define a controlled classical limit. They do not derive the outcome weights or select one realized history.
 author:
 - Peter Nero
-current_version: v1.0
-date: January, 2026
-generated_from_main_tex_sha256: cba7d63faa7925b7d3afb6613f6f92d119dbb9037038a755246c2ecb42e31a12
+current_version: v2
+date: July 2026, Version 2
+generated_from_main_tex_sha256: dcedc23f54f0a2c6faacd995b733e28ea5a39bd5d6cfbff2bdf470bcfe0d0526
 paper_id: why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  **Why the Born Rule and the Classical Limit Are the Same Problem  
-  A Projection-Based Shadow Bridge in Modal Triplet Theory**
-zenodo_doi: 10.5281/zenodo.18261842
-zenodo_record_id: 18261842
-zenodo_url: "https://zenodo.org/records/18261842"
+  Born-Compatible Record Measures and the Classical Concentration Limit:
+  Separate Theorems and Their MTT Interface
+zenodo_doi: 10.5281/zenodo.21666025
+zenodo_record_id: 21666025
+zenodo_url: "https://zenodo.org/records/21666025"
 ---
 
-# Introduction: Two Problems That Refuse to Stay Separate
+# Version 2 Revision Note
 
-Quantum mechanics faces two foundational questions that have resisted independent resolution since its inception. The first concerns probability: why measurement outcomes are distributed according to the Born rule rather than some other law. The second concerns classicality: why macroscopic systems exhibit stable, deterministic behavior despite underlying quantum dynamics.
+Supersedes
+*Why the Born Rule and the Classical Limit Are the Same Problem: A Projection-Based Shadow Bridge in Modal Triplet Theory*, version 1.
 
-These questions are usually treated as distinct. The Born rule is regarded as a measurement axiom or derived through abstract consistency arguments, while the classical limit is explained through decoherence, coarse-graining, and environmental entanglement. This division has shaped both the technical and philosophical literature on quantum foundations.
+Reason
+The earlier paper inferred squared-norm basin weights from projection, identified probability generation with classical concentration, and described both as a unified resolution. It did not state the measure and noncontextuality assumptions behind Gleason-style trace representation, and it did not distinguish record stability from selection of one outcome.
 
-In this paper we argue that this separation is artificial. Within Modal Triplet Theory (MTT), the Born rule and the classical limit are not separate principles but two regime limits of the same projection-induced structure. Probability and determinism arise from the same measure on admissible basins, evaluated in different stability regimes.
+Resolution
+This version separates the quantum probability source, ordinary instrument dynamics, decoherence, concentration, record persistence, and one-history actualization. It imports Gleason-type representation at its proper conditional tier, records the exact current q79 binary-recorder result, and proves finite concentration and persistence bounds independently.
 
-The goal of this work is not to reinterpret quantum mechanics, but to explain why its probabilistic and classical aspects must coexist and why neither can be eliminated in favor of the other.
+Retained result
+Born-compatible record weights and the classical limit can use the same outcome algebra and basin labels. Once a valid record law is known, concentration into one robust record gives a controlled deterministic approximation.
 
-# Standard Approaches and Their Limitations
+Remaining boundary
+MTT has not yet derived the required outcome law for every allowed apparatus context, a universal concentration regime, or an objective rule selecting one ontic history. Projection alone supplies none of these three results.
 
-## The Born Rule Problem
+# The corrected relation
 
-The Born rule assigns probabilities to measurement outcomes according to the squared norm of projection amplitudes. Standard approaches to its justification include Gleason-type theorems, symmetry-based arguments, decision-theoretic derivations in Everettian frameworks, and envariance constructions.
+There are at least four distinct questions in a measurement process.
 
-While these approaches establish the internal consistency or uniqueness of the Born rule under certain assumptions, they do not explain why such a probability law should arise from physical dynamics. In particular, they presuppose the existence of definite outcomes or rational agents and therefore do not address the physical origin of probability.
+1.  Which alternatives can become physical records?
 
-## The Classical Limit Problem
+2.  What probabilities are assigned to those records?
 
-The emergence of classical behavior is commonly attributed to decoherence, whereby environmental entanglement suppresses interference between certain states. Decoherence theory successfully explains the stability of macroscopic records and the appearance of preferred pointer states.
+3.  When are interference terms between records operationally negligible?
 
-However, decoherence does not explain why a single outcome is realized in any given experiment, nor does it account for the numerical values of outcome probabilities. It addresses stability but not selection.
+4.  When is one record so dominant and stable that a deterministic classical description is accurate?
 
-The persistence of these limitations suggests that probability and classicality are not independent problems, but symptoms of a missing unifying mechanism.
+A fifth question may be asked: why is one individual record actual rather than another? Standard operational quantum mechanics need not answer that question in order to predict recorded frequencies. Any ontic completion must answer it without confusing the answer with the probability law.
 
-# S1 — Upstairs Structure in Modal Triplet Theory
-
-We begin by identifying the common higher-dimensional structure from which the Born rule and the classical limit both arise as shadows. This section corresponds to Step S1 of the shadow-bridge validation template.
-
-## Coherent-sector geometry and projection
-
-Modal Triplet Theory is formulated on a ten-dimensional product geometry equipped with three commuting modal bundles and associated Laplace-type operators. The key structural object is the coherent-sector projector
+The old title compressed questions 2 and 4 into one problem. The corrected claim is narrower and more useful:
 ``` math
-\Pi_{\mathrm{coh}} : \mathcal{H}_{\mathrm{ext}} \to \mathcal{H}_{\mathrm{coh}},
+\boxed{
+\begin{gathered}
+\text{Born-compatible record law}
++\text{ concentration and stability}\\
+\Longrightarrow
+\text{ controlled classical predictions}
+\end{gathered}
+}
 ```
-defined as the joint spectral projector onto the lowest eigenspaces of the modal Laplacians.
+Each input has its own hypotheses and can fail independently.
 
-The existence of a finite spectral gap $`\lambda_\ast>0`$ separating coherent and noncoherent modes ensures that $`\Pi_{\mathrm{coh}}`$ is bounded and stable on bounded-geometry slabs. All effective low-energy physics in MTT is derived by restricting to the coherent sector and then projecting to observable degrees of freedom.
+# Measurement as an ordinary physical instrument
 
-## Admissibility and basin structure
-
-The coherent-sector dynamics is governed by an evolve–project map whose fixed points correspond to dynamically stable configurations. These fixed points are organized into *admissible basins* in the reduced state space $`\mathcal{T}_1(\mathcal{H}_4)`$.
-
-An admissible basin $`\mathcal{B}_\alpha`$ is characterized by:
-
-- invariance under coherent evolution,
-
-- contractivity toward a fixed-point core,
-
-- a finite stability margin separating it from neighboring basins.
-
-The collection of basins and their margins is controlled by a finite set of coarse parameters (the bottleneck vector), including $`\lambda_\ast`$ and curvature-dependent stability coefficients. No further microscopic detail is required at this stage.
-
-## Standing assumptions
-
-Throughout this work we assume only:
-
-1.  existence of the coherent projector $`\Pi_{\mathrm{coh}}`$ with finite spectral gap,
-
-2.  existence of admissible basins with finite stability margins,
-
-3.  validity of slab-local control for the reduced dynamics.
-
-These assumptions are already established in the fixed-point and universality spine of MTT and will not be strengthened below.
-
-# S2 — Two Distinct Four-Dimensional Shadows
-
-We now turn to Step S2 of the shadow-bridge template. After projection to four dimensions, the same upstairs structure gives rise to two apparently unrelated phenomena, which have traditionally been treated as independent problems in quantum mechanics.
-
-## Probability as a four-dimensional shadow
-
-After projection, measurement interactions appear to produce discrete outcomes with probabilistic frequencies. In standard quantum mechanics, these probabilities are assigned by the Born rule as an independent axiom.
-
-From the four-dimensional perspective, probability appears as a primitive feature of nature: outcomes are not predictable, and only statistical regularities are accessible.
-
-## Classical determinism as a separate four-dimensional shadow
-
-Also after projection, macroscopic systems appear to behave classically. Interference is suppressed, trajectories are stable, and outcomes appear deterministic. This behavior is typically attributed to decoherence and environmental interactions.
-
-In the four-dimensional effective description, classicality is therefore treated as an emergent phenomenon requiring many degrees of freedom and environmental coupling, distinct from the probabilistic postulates governing microscopic measurements.
-
-## The apparent disconnection
-
-Historically, these two shadows have been studied in different contexts:
-
-- the Born rule is a foundational problem of measurement,
-
-- the classical limit is a many-body or open-systems problem.
-
-They employ different techniques, address different questions, and are rarely discussed within a unified framework. This separation motivates the search for a common origin.
-
-In the following section we show that both shadows arise from the same basin measure structure induced by coherent-sector projection.
-
-# S3 — Basin Measures as the Common Origin of Probability and Classicality
-
-We now derive the central result of this work: the Born rule and the classical limit arise from the same measure-theoretic structure on admissible basins induced by coherent-sector projection. They are not independent principles but distinct regime limits of a single mechanism.
-
-## Admissible basins and induced measures
-
-Let $`\{\mathcal{B}_\alpha\}`$ denote the collection of admissible basins in the reduced state space $`\mathcal{T}_1(\mathcal{H}_4)`$ obtained after projection to the coherent sector and subsequent restriction to observable degrees of freedom.
-
-Each basin $`\mathcal{B}_\alpha`$ corresponds to a dynamically stable coherent fixed point or to an equivalence class of such fixed points under admissibility. For an initial coherent-sector state $`\psi\in\mathcal{H}_{\mathrm{coh}}`$, define the basin measure
+Let $`\mathcal{H}`$ be a complex Hilbert space and $`\rho`$ a density operator. A finite quantum instrument is a family
+``` math
+\{\mathcal{I}_i\}_{i\in I}
+```
+of completely positive, trace-nonincreasing maps such that $`\sum_i\mathcal{I}_i`$ is trace preserving. Its effects are
+``` math
+E_i=\mathcal{I}_i^*(\mathbf{1}),\qquad
+E_i\geq0,\qquad
+\sum_iE_i=\mathbf{1}.
+```
+The operational outcome law and conditional post-measurement state are
 ``` math
 \begin{equation}
-\mu(\mathcal{B}_\alpha) := \|\Pi_\alpha \psi\|^2,
-\end{equation}
-```
-where $`\Pi_\alpha`$ denotes the orthogonal projector onto the coherent-sector subspace associated with basin $`\mathcal{B}_\alpha`$.
-
-The family of measures $`\{\mu(\mathcal{B}_\alpha)\}`$ satisfies:
-
-1.  $`\mu(\mathcal{B}_\alpha)\ge 0`$ for all $`\alpha`$,
-
-2.  $`\sum_\alpha \mu(\mathcal{B}_\alpha)=1`$,
-
-3.  invariance under unitary evolution within a fixed basin,
-
-4.  stability under admissible perturbations of $`\psi`$.
-
-These properties follow directly from the geometry of the coherent projector and the spectral gap $`\lambda_\ast`$ and do not require any probabilistic postulate.
-
-## The Born rule as the microscopic basin-competition limit
-
-Consider a microscopic measurement interaction with a finite set of accessible outcome basins $`\{\mathcal{B}_\alpha\}`$. In this regime, the basin measures are generically comparable:
-``` math
-\begin{equation}
-\mu(\mathcal{B}_\alpha)=O(1)\quad\text{for multiple }\alpha.
+p_i=\operatorname{Tr}(\rho E_i),\qquad
+\rho_i'=\frac{\mathcal{I}_i(\rho)}{p_i}
+\quad(p_i>0).
+\label{eq:instrument}
 \end{equation}
 ```
 
-In this case, the probability that the reduced trajectory is captured into basin $`\mathcal{B}_\alpha`$ is given by $`\mu(\mathcal{B}_\alpha)`$. This reproduces the Born rule:
+Nothing in <a href="#eq:instrument" data-reference-type="eqref" data-reference="eq:instrument">[eq:instrument]</a> makes measurement metaphysically privileged. An apparatus is a physical interaction that amplifies alternatives into records. The instrument formalism records the input-output statistics and state update of that interaction.
+
+Suppose an upper model has measurable record regions $`B_i`$ and an upper probability law $`\mu_{\rho,\mathcal{I}}`$ for the preparation and apparatus context. The exact compatibility equation is
 ``` math
 \begin{equation}
-P(\alpha)=\|\Pi_\alpha\psi\|^2.
+\mu_{\rho,\mathcal{I}}(B_i)=\operatorname{Tr}(\rho E_i)
+\qquad\text{for every }i.
+\label{eq:basin-trace}
 \end{equation}
 ```
+Writing down normalized basin weights does not prove <a href="#eq:basin-trace" data-reference-type="eqref" data-reference="eq:basin-trace">[eq:basin-trace]</a>. The source law, the record regions, and the equality to the trace weights all require independent construction.
 
-Importantly, this result is not assumed. It follows because:
+# What Gleason-type theorems establish
 
-- projection partitions the coherent-sector state into admissible basins,
+Gleason’s theorem starts with a probability measure on the closed subspaces, or equivalently projections, of a real or complex Hilbert space of dimension greater than two. Countable additivity on mutually orthogonal subspaces implies that the measure has the trace form
+``` math
+\mu(P)=\operatorname{Tr}(\rho P)
+```
+for a positive trace-class operator $`\rho`$ . Extensions using positive-operator-valued measurements recover the trace form for generalized effects and can include two-dimensional systems .
 
-- basin capture is the only physically meaningful outcome-selection mechanism,
+These are representation theorems. Their assumptions already include a probability assignment satisfying strong consistency conditions. They show the form that such an assignment must take; they do not derive an upper physical measure from non-injective projection.
 
-- the squared norm is the unique invariant measure compatible with unitary evolution and admissibility.
+For an MTT application, the logical order is therefore:
+``` math
+\begin{gathered}
+\text{selected preparation and record measure}\\
++\text{additivity or effect noncontextuality}
+\end{gathered}
+\Longrightarrow
+\text{trace representation},
+```
+followed by a separate proof of the basin–trace equality <a href="#eq:basin-trace" data-reference-type="eqref" data-reference="eq:basin-trace">[eq:basin-trace]</a>. This separation prevents a conditional reconstruction from being reported as a source theorem.
 
-Thus, the Born rule is the natural expression of basin measures in the regime where multiple basins compete.
+# Current q79 Born status
 
-## The classical limit as the macroscopic basin-dominance limit
+## The exact canonical domain
 
-Now consider a macroscopic system with many degrees of freedom. In this case, basin measures typically exhibit extreme skew:
+The current q79 program closes a specific operational domain. For the canonical binary one-anchor recorder:
+
+- the finite Hilbert/state/observable data and reduced dynamics are fixed;
+
+- the commuting nondemolition Fock output algebra supplies the record events;
+
+- the selected normal state emits the stopped output measure;
+
+- second-moment capture descent is exact; and
+
+- no separate Born axiom, stochastic primitive, observed probability, or numerical fit is added on that domain.
+
+Thus equation <a href="#eq:basin-trace" data-reference-type="eqref" data-reference="eq:basin-trace">[eq:basin-trace]</a> has a selected operational realization for that binary apparatus context. This is stronger than the conditional Gleason-only status of the earlier paper.
+
+## The quantifier boundary
+
+The canonical result does not yet prove:
+
+- the same descent for every allowed apparatus and preparation context;
+
+- controlled corrections for finite-bandwidth or non-Markov detectors;
+
+- a pre-quantum probability semantics, if one is demanded;
+
+- or objective selection of one ontic history.
+
+The correct status is therefore tiered:
+``` math
+\begin{array}{ll}
+\text{canonical q79 binary one-anchor output law:}&\text{exact},\\
+\text{universal physical apparatus family:}&\text{open},\\
+\text{objective single-history actualization:}&\text{open}.
+\end{array}
+```
+
+# Decoherence is not concentration
+
+Let $`\mathcal{D}`$ be dephasing in a pointer decomposition. If
+``` math
+\frac12\|\rho-\mathcal{D}(\rho)\|_1\leq\delta,
+```
+then every effect $`0\leq E\leq\mathbf{1}`$ satisfies
 ``` math
 \begin{equation}
-\mu(\mathcal{B}_{\alpha^\ast})\approx 1,\qquad
-\mu(\mathcal{B}_\beta)\ll 1\quad\text{for }\beta\neq\alpha^\ast.
+\left|
+\operatorname{Tr}(\rho E)-\operatorname{Tr}(\mathcal{D}(\rho)E)
+\right|
+\leq\delta.
+\label{eq:decoherence-bound}
 \end{equation}
 ```
+This is the operational meaning of approximate decoherence for the declared effect family: coherences alter probabilities by at most $`\delta`$.
 
-This occurs because:
+Equation <a href="#eq:decoherence-bound" data-reference-type="eqref" data-reference="eq:decoherence-bound">[eq:decoherence-bound]</a> does not imply that one diagonal weight is near one. The state
+``` math
+\frac12|0\rangle\langle0|
++\frac12|1\rangle\langle1|
+```
+is exactly decohered and maximally nonconcentrated on its two pointer records. Decoherence helps explain stable alternatives and suppression of interference ; a separate concentration estimate is needed for an approximately deterministic record.
 
-- basin stability margins scale with system size,
+# The finite classical concentration theorem
 
-- environmental coupling contracts trajectories toward a single basin,
+Let $`I`$ be a finite record set and let
+``` math
+p=(p_i)_{i\in I}
+```
+be a probability law. For a function $`f:I\to\mathbb{R}`$, define
+``` math
+\operatorname{osc}(f)=\max_{i\in I}f(i)-\min_{i\in I}f(i).
+```
 
-- overlap between macroscopically distinct basins is exponentially suppressed.
+<div class="theorem">
 
-In this regime, the system is captured with near certainty into a single basin $`\mathcal{B}_{\alpha^\ast}`$. The effective dynamics appears deterministic, and alternative outcomes are never observed.
+**Theorem 1** (Classical concentration). *Suppose a record $`i_\star`$ satisfies
+``` math
+p_{i_\star}\geq1-\varepsilon
+\qquad(0\leq\varepsilon\leq1).
+```
+Then
+``` math
+\begin{align}
+d_{\mathrm{TV}}(p,\delta_{i_\star})
+&=1-p_{i_\star}\leq\varepsilon,
+\label{eq:tv}\\
+\left|
+\sum_{i\in I}p_i f(i)-f(i_\star)
+\right|
+&\leq\varepsilon\,\operatorname{osc}(f)
+\label{eq:observable}
+\end{align}
+```
+for every real function $`f`$ on $`I`$.*
 
-This is precisely the classical limit. No new principle is introduced: classical determinism arises as the large-system limit of basin-measure dominance.
+</div>
 
-## The bridge relation
+<div class="proof">
 
-The Born rule and the classical limit are therefore related by a single structure: the distribution of basin measures.
+*Proof.* Using the convention $`d_{\mathrm{TV}}(p,q)=\frac12\sum_i|p_i-q_i|`$,
+``` math
+d_{\mathrm{TV}}(p,\delta_{i_\star})
+=\frac12\left(
+1-p_{i_\star}+\sum_{i\neq i_\star}p_i
+\right)
+=1-p_{i_\star}.
+```
+Also,
+``` math
+\sum_i p_i f(i)-f(i_\star)
+=\sum_{i\neq i_\star}
+p_i\bigl(f(i)-f(i_\star)\bigr).
+```
+Taking absolute values and using $`|f(i)-f(i_\star)|\leq\operatorname{osc}(f)`$ gives <a href="#eq:observable" data-reference-type="eqref" data-reference="eq:observable">[eq:observable]</a>. ◻
 
+</div>
+
+This theorem gives an exact error budget for replacing the record law by the deterministic prediction $`i_\star`$. It does not say why $`p_{i_\star}`$ is large. That must follow from the preparation, dynamics, environment, control regime, or an MTT source theorem.
+
+# Record persistence
+
+Concentration at one time is not enough. A classical record should persist. Let $`X_0,X_1,\ldots`$ be a discrete-time record process on $`I`$. No Markov assumption is needed for the following conditional escape bound.
+
+<div class="theorem">
+
+**Theorem 2** (Finite-horizon persistence). *Assume
+``` math
+\Pr(X_0=i_\star)\geq1-\varepsilon
+```
+and, for every $`k<n`$,
+``` math
+\Pr\!\left(
+X_{k+1}\neq i_\star
+\mid X_0=\cdots=X_k=i_\star
+\right)
+\leq\eta.
+```
+Then
 ``` math
 \begin{equation}
-\text{Quantum probabilistic regime: }\mu(\mathcal{B}_\alpha)\sim O(1)\text{ for several }\alpha,
+\Pr(X_0=\cdots=X_n=i_\star)
+\geq(1-\varepsilon)(1-\eta)^n
+\geq1-\varepsilon-n\eta.
+\label{eq:persistence}
 \end{equation}
-```
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The chain rule for conditional probabilities gives the first inequality. Bernoulli’s inequality gives $`(1-\eta)^n\geq1-n\eta`$. Finally,
 ``` math
-\begin{equation}
-\text{Classical deterministic regime: }\mu(\mathcal{B}_{\alpha^\ast})\to 1.
-\end{equation}
+(1-\varepsilon)(1-n\eta)
+\geq1-\varepsilon-n\eta.
 ```
+ ◻
 
-There is no sharp conceptual boundary between these regimes. The transition is controlled continuously by admissibility, stability margins, and the spectral gap $`\lambda_\ast`$.
+</div>
 
-## Interpretational consequences
-
-This identification resolves two longstanding foundational problems simultaneously:
-
-1.  The Born rule is not a probability axiom but a measure on admissible basin capture.
-
-2.  Classicality is not an independent emergent phenomenon but the concentration limit of the same measure.
-
-Both probability and determinism are shadows of the same coherent-sector structure under projection. Their traditional separation reflects an artifact of treating two regime limits as distinct physical principles.
-
-# S4 — Validation via Mainstream Quantum Physics Alignment
-
-We now validate the basin-measure bridge by showing that mainstream quantum mechanics has independently introduced partial structures that mirror the missing components of the MTT framework. These approaches succeed where they implicitly reconstruct basin measures and fail where they omit selection dynamics. Modal Triplet Theory explains both the successes and the failures.
-
-## Decoherence as intra-basin contraction
-
-Decoherence theory explains the suppression of interference by tracing over environmental degrees of freedom. In the present framework, decoherence corresponds precisely to *intra-basin contraction*: unitary evolution combined with environmental coupling drives trajectories toward the stable core of a single admissible basin.
-
-This accounts for:
-
-- the emergence of preferred pointer states,
-
-- the rapid suppression of off-diagonal density-matrix elements,
-
-- the stability and persistence of macroscopic records.
-
-However, decoherence alone does not explain:
-
-- why a specific outcome is selected in a single run,
-
-- why probabilities take the Born-rule form,
-
-- why only one basin is realized.
-
-In MTT, this limitation is structural. Decoherence acts within a basin; it does not induce inter-basin selection. Outcome selection requires noninvertible projection and admissibility loss, which decoherence-only models lack by construction.
-
-## Why Born-rule derivations keep reappearing
-
-Several approaches have attempted to “derive” the Born rule without postulate, including:
-
-- Gleason-type consistency theorems,
-
-- symmetry and envariance arguments,
-
-- decision-theoretic derivations in Everettian frameworks,
-
-- typicality and measure-concentration arguments.
-
-All such derivations succeed only after introducing, explicitly or implicitly, a measure that is invariant under unitary evolution and additive over mutually exclusive alternatives. In each case, the squared-norm structure appears as the unique candidate.
-
-From the MTT perspective, this is expected. These approaches implicitly reconstruct the basin measure $`\mu(\mathcal{B}_\alpha)`$ without identifying its geometric origin in coherent-sector projection. They therefore recover the correct probability law but leave unanswered the question of why such a measure is physically relevant.
-
-Modal Triplet Theory resolves this by identifying the measure as a property of admissible basin capture rather than a rationality, symmetry, or decision axiom.
-
-## Quantum Darwinism and redundancy without selection
-
-Quantum Darwinism emphasizes the redundant encoding of information about pointer states in environmental fragments. This framework correctly explains why classical information is stable and widely accessible.
-
-In the basin picture, redundancy arises naturally because:
-
-- admissible basins correspond to dynamically stable fixed points,
-
-- environmental degrees of freedom contract trajectories toward the same basin,
-
-- records proliferate once a basin is selected.
-
-However, Quantum Darwinism presupposes the existence of a selected pointer state. It explains why information spreads *after* selection but not how selection occurs. In MTT, redundancy is a downstream consequence of basin capture, not its cause.
-
-## Predictive failures of decoherence-only models
-
-Decoherence-based approaches predict classical stability but cannot predict outcome statistics or explain why probability assignments obey the Born rule. They also fail to account for threshold behavior, protocol dependence, and Zeno/anti-Zeno effects observed in controlled measurement settings.
-
-These failures are explained naturally in MTT:
-
-- threshold behavior arises from finite stability margins at basin boundaries,
-
-- protocol dependence reflects the noncommutativity of projection and evolution,
-
-- Zeno phenomena correspond to stabilization against basin exit.
-
-Because decoherence-only models lack admissible basin structure, they must introduce ad hoc corrections or interpretational supplements. MTT predicts both the necessity of these patches and their limitations.
-
-## Summary of the validation
-
-Mainstream quantum mechanics already contains multiple partial reconstructions of the basin-measure structure:
-
-- decoherence captures intra-basin contraction,
-
-- Born-rule derivations recover the correct measure,
-
-- Quantum Darwinism explains redundancy after selection.
-
-What is missing in each case is the unifying mechanism that links probability, selection, and classicality. Modal Triplet Theory supplies this mechanism by showing that all three arise from the same coherent-sector projection and admissible basin dynamics.
-
-This explains why mainstream approaches are successful in limited domains yet fail to provide a complete account of measurement and classical emergence.
-
-# Relation to Schrödinger Evolution and Indivisible Stochastic Processes
-
-The basin-measure bridge derived above clarifies the precise role of the Schrödinger equation within Modal Triplet Theory. In particular, it explains why unitary evolution is exact where it applies and yet insufficient as a global predictor of measurement outcomes.
-
-## Schrödinger evolution as intra-basin dynamics
-
-In Modal Triplet Theory, the Schrödinger equation is derived as the effective equation governing coherent-sector evolution *within a fixed admissible basin*. Given a reduced state $`\rho`$ belonging to an admissible basin $`\mathcal{B}_\alpha`$, the projected dynamics reduces to unitary evolution generated by a self-adjoint Hamiltonian $`H_\alpha`$:
+Equation <a href="#eq:persistence" data-reference-type="eqref" data-reference="eq:persistence">[eq:persistence]</a> separates two classicality controls:
 ``` math
-\begin{equation}
-i\hbar \frac{d}{dt}\rho(t) = [H_\alpha,\rho(t)].
-\end{equation}
+\varepsilon
+=\text{initial nonconcentration},
+\qquad
+\eta
+=\text{per-step record escape}.
 ```
+A useful classical regime requires both to be small over the physical observation horizon.
 
-This evolution is deterministic, reversible, and exact for as long as the trajectory remains within $`\mathcal{B}_\alpha`$. All standard results of quantum mechanics—superposition, interference, conservation laws, and reversible time evolution—are recovered at this level.
+# How the two theorems fit together
 
-Crucially, however, the Schrödinger equation does not describe transitions between admissible basins. Basin boundaries correspond to loss of admissibility and are associated with noninvertible projection. Consequently, no single Schrödinger equation governs the full reduced dynamics across admissible regimes.
+<div class="center">
 
-## Piecewise unitary evolution and selection events
+| Layer | Required object | What it establishes |
+|:---|:---|:---|
+| Alternatives | instrument effects and record algebra | available records |
+| Probability source | selected state/measure and capture map | the values $`p_i`$ |
+| Trace representation | additivity or effect noncontextuality | $`p_i=\operatorname{Tr}(\rho E_i)`$ |
+| Decoherence | suppression of off-diagonal influence | classical mixture approximation |
+| Concentration | $`p_{i_\star}\geq1-\varepsilon`$ | deterministic prediction with error $`\varepsilon`$ |
+| Persistence | escape control $`\eta`$ | stable record over a finite horizon |
+| Actualization | interpretation or additional dynamics | why one history is individually actual |
 
-The full reduced dynamics therefore has a piecewise structure:
+</div>
+
+The same record labels and effects can appear in every row. That shared interface is the legitimate connection between the Born law and the classical limit. The logical arrows are not reversible. Concentration cannot derive the general Born weights, and a Born law need not be concentrated.
+
+# A precise MTT completion target
+
+To extend the canonical q79 result into a general Born-and-classical theorem, MTT must supply a family indexed by physical contexts $`c`$ and a classical regime parameter $`L`$:
 ``` math
-\begin{equation}
-\text{unitary Schr\"odinger evolution}
-\;\longrightarrow\;
-\text{basin boundary}
-\;\longrightarrow\;
-\text{selection event}
-\;\longrightarrow\;
-\text{new unitary evolution}.
-\end{equation}
+\bigl(
+\rho_{c,L},
+\{\mathcal{I}_{i,c,L}\},
+\mu_{c,L},
+\{B_{i,c,L}\}
+\bigr).
+```
+The required statements are:
+
+1.  **Source equality.**
+    ``` math
+    \mu_{c,L}(B_{i,c,L})
+    =\operatorname{Tr}(\rho_{c,L}E_{i,c,L})
+    ```
+    for every allowed context and outcome, with stated errors for nonideal detectors.
+
+2.  **Concentration regime.** There is a selected $`i_\star(c,L)`$ and an explicit $`\varepsilon(c,L)\to0`$ such that
+    ``` math
+    \mu_{c,L}(B_{i_\star,c,L})\geq1-\varepsilon(c,L).
+    ```
+
+3.  **Persistence regime.** A derived escape bound $`\eta(c,L)`$ obeys
+    ``` math
+    n(L)\eta(c,L)\to0
+    ```
+    on the intended observation horizon.
+
+4.  **Domain and interpretation.** The theorem states whether it is an operational record theorem only or also claims an ontic one-history law.
+
+When these four rows are proved from the same selected source, the previous informal slogan can be replaced by a valid implication:
+``` math
+\begin{gathered}
+\text{Born-compatible source law}\\
++\text{decoherence}\\
++\text{concentration}\\
++\text{persistence}
+\end{gathered}
+\Longrightarrow
+\text{controlled classical record theory}.
 ```
 
-Selection events are discrete, irreversible transitions that capture the system into a new admissible basin and reset the effective Hamiltonian governing subsequent unitary evolution. This structure is consistent with all observed quantum phenomena, including the apparent breakdown of unitary evolution during measurement.
+# Consequences and non-consequences
 
-The basin-measure framework explains why such events must occur and why their outcomes are probabilistic. The Schrödinger equation remains exact where it applies, but it cannot be extended to a global predictor of outcomes without violating admissibility.
+The corrected separation yields several firm conclusions.
 
-## Connection to indivisible stochastic processes
+- Measurement can remain an ordinary physical interaction; no special conscious observer is needed in the mathematics.
 
-Earlier work has shown that the reduced dynamics induced by projection in Modal Triplet Theory can be described as an *indivisible stochastic process*. This process is non-Markovian and does not admit a decomposition into independent infinitesimal increments.
+- The current q79 binary recorder is a real advance over a purely conditional Gleason reconstruction.
 
-The present results refine that picture. The stochasticity of the effective process is not due to fundamental randomness but to basin-measure competition combined with the structural impossibility of predicting selection-event occurrence across admissible regimes. Between selection events, the dynamics is deterministic; at basin boundaries, outcome selection is governed by basin measures and constrained by admissibility.
+- Classical behavior is quantitative: it comes with the three errors $`\delta`$, $`\varepsilon`$, and $`n\eta`$ for decoherence, concentration, and persistence.
 
-Thus, the indivisible stochastic process description is the correct effective language for reduced dynamics, while the basin-measure bridge explains why stochasticity appears and why it takes the specific form observed in quantum mechanics.
+- Exact decoherence does not imply a deterministic outcome.
 
-## Why probability is unavoidable but not fundamental
+- A sharply concentrated law does not explain the general Born rule.
 
-Because selection-event occurrence is governed by admissible basin measures and because no global predictive law exists across admissible regimes, probabilistic descriptions are not approximations to an underlying deterministic predictor. They are the only viable predictive tools.
+- Operational probabilities do not, by themselves, select one ontic history.
 
-The Born rule emerges as the correct assignment of measures to basin capture, while classical determinism emerges when a single basin dominates. Both are limits of the same projection-induced structure.
+- Projection can define record equivalence classes, but it does not create their measure.
 
-This resolves the apparent tension between deterministic unitary evolution and probabilistic measurement outcomes without invoking hidden variables, superdeterminism, or fundamental randomness.
+The phrase “same problem” should therefore be retired. The two problems are adjacent stages of one physical workflow and can be tested on one common instrument, but their proof obligations remain distinct.
 
-# Conclusions
+# Conclusion
 
-We have shown that two long-standing problems in the foundations of quantum mechanics—the origin of the Born rule and the emergence of classical determinism—are not independent. In Modal Triplet Theory, both arise as shadows of the same underlying structure: coherent-sector projection together with admissible basin dynamics.
+Born probabilities and the classical limit share an outcome algebra, not a single theorem. A Born source theorem fixes the weights of records. Decoherence controls interference. Concentration makes one record approximately deterministic, and persistence keeps it stable. One-history actualization, if required, is another question.
 
-The Born rule appears in regimes where multiple admissible basins compete with comparable measure. Classical behavior appears in regimes where basin measures are overwhelmingly skewed, so that a single basin dominates. No additional postulates are required in either case. Probability and determinism are not distinct principles but limiting cases of a single measure-theoretic mechanism.
+MTT now closes more of this chain than version 1 reported correctly. The canonical q79 binary one-anchor Fock recorder has an exact stopped-output law and exact second-moment capture descent on its declared domain, without a fitted probability. The general apparatus family remains open. The classical concentration and persistence theorems proved here then state exactly what must be shown, after a valid record law exists, to obtain a controlled classical regime.
 
-This identification clarifies why decoherence-based approaches succeed in explaining stability yet fail to explain outcome selection, and why derivations of the Born rule repeatedly reconstruct the same squared-norm measure without providing a physical origin for it. Modal Triplet Theory explains both phenomena by locating them in the geometry of projection and admissibility.
+This separation is not a retreat from unification. It is the structure needed for a rigorous one: one source may eventually discharge several adjacent proof obligations, but none is counted as solved merely because the same record labels appear in all of them.
 
-The analysis also resolves a deeper riddle: why individual measurement outcomes are unpredictable even in principle, despite deterministic unitary evolution. Recent results show that selection-event occurrence is algorithmically undecidable across admissible regimes. As a consequence, probabilistic descriptions are not approximations to an underlying deterministic predictor but the only viable predictive tools. The Schrödinger equation remains exact within admissible basins, but it cannot be extended to a global predictor of outcomes without violating admissibility.
+#### Open boundary (not evidence of closure).
 
-Taken together, these results reposition quantum mechanics within a coherent hierarchy. Unitary evolution governs intra-basin dynamics; selection events govern inter-basin transitions; basin measures unify probability and classical limits; and computability bounds explain why no further reduction is possible. What appears as probability in microscopic measurements and as determinism in macroscopic physics are complementary shadows of the same projection-induced structure.
+- (*open*).
 
-More broadly, this work illustrates the power of the shadow-bridge methodology. By identifying distinct four-dimensional phenomena as reductions of a single higher-level structure, Modal Triplet Theory does not merely reinterpret existing physics but explains why disparate research programs repeatedly converge on similar partial mechanisms. In the present case, it explains why probability, classicality, decoherence, and stochasticity are inseparable aspects of quantum measurement rather than independent mysteries.
+  Current 2/9 strict no-knob upgrade ledger.
 
-Future work may extend this analysis to contextuality, temporal ordering, and agency, where similar basin-measure structures are expected to play a central role. The framework presented here suggests that the limits of quantum predictability are not provisional but structural, and that the foundational content of quantum mechanics is now largely in view.
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The concentration and persistence bounds are proved in this paper, while the general Born-source theorem remains open. The strict-upgrade ledger is included only as a current source-level boundary; it does not provide the missing outcome weights or select one realized history.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 
 99
 
-P. Nero, *Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255621>
+A. M. Gleason, *Measures on the Closed Subspaces of a Hilbert Space*, Journal of Mathematics and Mechanics **6** (1957) 885–893, doi:10.1512/iumj.1957.6.56050.
 
-P. Nero, *Modal Triplet Theory: Foundation*, Zenodo preprint, September 2025. <https://doi.org/10.5281/zenodo.16949762>
+C. M. Caves, C. A. Fuchs, K. Manne, and J. M. Renes, *Gleason-Type Derivations of the Quantum Probability Rule for Generalized Measurements*, Foundations of Physics **34** (2004) 193–209, doi:10.1023/B:FOOP.0000019581.00318.a5, arXiv:quant-ph/0306179.
 
-P. Nero, *Fixed Points I–VI: Complete Coherence Spine*, Zenodo preprints, August 2025. <https://doi.org/10.5281/zenodo.16948748>
-
-P. Nero, *The Projection–Admissibility Principle: Structural Constraints on Effective Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255838>
-
-P. Nero, *Closure and Inevitability in Modal Triplet Theory*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255510>
-
-P. Nero, *Coherence Capacity as the Fundamental Resource of Effective Physics*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255905>
-
-P. Nero, *Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18256048>
-
-P. Nero, *Modal Triplet Theory: From MTT to Quantum Mechanics*, Zenodo preprint, September 2025. <https://doi.org/10.5281/zenodo.17074246>
-
-P. Nero, *From MTT to Quantum Field Theory*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17068816>
-
-P. Nero, *Modal Triplet Theory: From MTT to General Relativity*, Zenodo preprint, October 2025. <https://doi.org/10.5281/zenodo.16950597>
-
-P. Nero, *Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17077671>
-
-P. Nero, *Measurement as Disturbance and Stabilization in Modal Triplet Theory*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17177404>
-
-P. Nero, *Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18256408>
-
-P. Nero, *Modal Fixed Points, Bell’s Beables, and the Limits of Factorization*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17076300>
-
-P. Nero, *Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory*, Zenodo preprint, August 2025. <https://doi.org/10.5281/zenodo.18208884>
-
-P. Nero, *From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18254862>
+W. H. Zurek, *Decoherence and the Transition from Quantum to Classical—Revisited*, arXiv:quant-ph/0306072.
 
 </div>

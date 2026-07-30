@@ -21,7 +21,7 @@
 | Fifth-force safety inferred from a large gap | Coupling omitted | Requires both mediator mass and matter coupling/charge response |
 | Lorentz and equivalence-principle safety inferred structurally | Principal symbol and species couplings omitted | Requires explicit observable response maps |
 | GW/GR/cosmological agreement declared automatically | No common physical model or numerical execution | Lists the required responses and explicitly marks them unevaluated |
-| “No fine tuning” asserted without a measure | Undefined claim | Requires a prior, sensitivity, condition number, or naturalness criterion |
+| "No fine tuning" asserted without a measure | Undefined claim | Requires a prior, sensitivity, condition number, or naturalness criterion |
 | Separate parameter choices treated as simultaneous consistency | No common witness | Defines one consistency set over one parameter/branch space |
 | Numerical agreement risked being called prediction | Provenance missing | Distinguishes calibration, consistency witness, and held-out prediction |
 
@@ -56,7 +56,7 @@ The paper records the structural scales supplied by Foundation and Fixed
 Points, but no common physical response system for particle, fifth-force,
 Lorentz, GR, GW, and cosmological observations. It therefore neither proves
 empirical viability nor identifies an empirical contradiction. Its declared
-status is “not evaluated by this ledger.”
+status is "not evaluated by this ledger."
 
 ## Validation
 
@@ -65,6 +65,5 @@ status is “not evaluated by this ledger.”
   six Fixed Points audits continue to pass.
 - Migration and verifier scripts pass Python syntax validation.
 - TeX environment nesting and ASCII/tab guards pass.
-- PDF compilation remains blocked by the previously identified local MiKTeX
-  dependency `amsthm.sty`; this is an environment issue rather than a detected
-  source error.
+- The current source compiles successfully with two `pdflatex` passes.
+- The complete PDF is rendered and visually inspected before release freeze.

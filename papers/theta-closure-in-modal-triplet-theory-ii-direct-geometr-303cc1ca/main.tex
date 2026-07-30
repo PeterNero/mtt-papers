@@ -34,8 +34,7 @@ reduces to this $S^2$ model, identify the Lens--Nil representative with the
 selected q79/Fu--Yau compactification, select a geometry uniquely by MTT, or
 make the gauge couplings held-out predictions. The shared circle is common
 $U(1)$ phase/holonomy data, not an additional factor in a
-$S^1\times L(3,1)\times\mathrm{Nil}_3$ manifold. The old
-$5~\mathrm{TeV}$ target pair is withdrawn.
+$S^1\times L(3,1)\times\mathrm{Nil}_3$ manifold.
 \end{abstract}
 
 \section*{Revision note for this edition}
@@ -55,9 +54,40 @@ ratios and dimensionless spectral-floor test exists in the declared ansatz.
 identification, or held-out gauge prediction is established.
 \end{description}
 
+\section{Purpose, central picture, and roadmap}
+
+Paper~I supplies two dimensionless target ratios. This paper asks a deliberately
+narrow inverse question: can one choose the two scale parameters in a simple
+auxiliary geometry so that its overlap integrals reproduce those ratios while
+remaining above the declared spectral floor? The answer is yes.
+
+The central picture is elementary. The weak coefficient is
+represented by the effective area of a round two-sphere, while the color
+coefficient is represented by the length of the central fiber of a compact
+Heisenberg nilmanifold. The shared-circle normalization fixes the common
+denominator. Thus two measured target ratios determine two auxiliary geometric
+scales. This is an existence and calibration calculation, not a uniqueness
+argument and not a prediction of the measured ratios.
+
+The dependency chain is
+\[
+\begin{gathered}
+\text{Paper~I target ratios}
+\longrightarrow
+\text{two overlap equations}
+\longrightarrow
+\text{two auxiliary scales}\\
+\longrightarrow
+\text{spectral-floor check}.
+\end{gathered}
+\]
+Sections~3 and~4 execute the two overlap equations separately. Section~5
+states exactly what the construction establishes, and the appendix derives the
+nilmanifold bound used in the final admissibility check.
 
 
-\section{Relation to the revised $\Theta$--closure core paper}
+
+\section{Relation to the revised \texorpdfstring{$\Theta$}{Theta}-closure core paper}
 
 Paper~I now transports measured source coordinates with SMDR~v1.3 to the
 full-Standard-Model $\overline{\mathrm{MS}}$ profile at $Q=M_t$.  In the same
@@ -95,7 +125,8 @@ I_1 = 2\pi R_1.
 We compute $I_2^{(0)}$ and $I_3^{(0)}$ below.
 
 
-\section{Lens sector: computation of $I_2^{(0)}$}
+\section{Lens sector: computation of
+\texorpdfstring{$I_2^{(0)}$}{I2(0)}}
 
 \paragraph{Dimensional and geometric convention.}
 All radii and overlaps below are dimensionless after one common internal length
@@ -138,7 +169,7 @@ the auxiliary weight $w_2^{(0)}=1$, this gives
 I_2^{(0)} = \mathrm{Area}(\Sigma_2) = 4\pi(f_2R_{\mathrm{lens}})^2.
 \]
 
-\subsection{Matching to $\Theta$--target}
+\subsection{Matching to \texorpdfstring{$\Theta$}{Theta}-target}
 
 From Paper~I,
 \[
@@ -166,10 +197,16 @@ The spectral bound gives
 \]
 
 Since admissibility of the circle sector requires $R_1\le 2$,
-we obtain $\lambda_{\mathrm{lens}}\ge 3.57 \gg 0.25$.
+we obtain
+\[
+\lambda_{\mathrm{lens}}
+\ge \frac{2}{0.2555137\cdot 2}
+\approx 3.9137 \gg 0.25.
+\]
 Thus the lens sector is safely admissible.
 
-\section{Nil sector: computation of $I_3^{(0)}$}
+\section{Nil sector: computation of
+\texorpdfstring{$I_3^{(0)}$}{I3(0)}}
 
 \subsection{Nil geometry}
 
@@ -209,7 +246,7 @@ Hence
 I_3^{(0)} = \int |\omega^{(0)}|^2\,d\mathrm{vol} = c.
 \]
 
-\subsection{Matching to $\Theta$--target}
+\subsection{Matching to \texorpdfstring{$\Theta$}{Theta}-target}
 
 From Paper~I,
 \[
@@ -238,14 +275,18 @@ The scalar Laplacian on $\Gamma\backslash\mathrm{Nil}_3$ has spectrum
 
 With $a=b=1$ and $c\le 1.989699$ (from $R_1\le 2$),
 \[
-\lambda_1 \gtrsim 11 \gg 0.25.
+\lambda_1
+\ge
+\min\left\{4\pi^2,\,
+2\pi+\frac{4\pi^2}{(1.989699)^2}\right\}
+\approx 16.2553 \gg 0.25.
 \]
 
 Thus the nil sector satisfies the MTT admissibility bound
 $\lambda_{\mathrm{nil}}\ge 0.25$ with large margin.
 
 
-\section{Route-A result and scope}
+\section{Interpretation of the Route-A result and scope}
 
 Within the declared dimensionless ansatz, the selected profile targets admit
 an explicit lens-base/nil representative and the assumed spectral inequalities
@@ -255,9 +296,38 @@ $L(3,1)$ reduction, global HYM connection data, or a held-out gauge-coupling
 prediction. In particular, this auxiliary representative is not the q79
 Fu--Yau compactification and supplies no theorem identifying the two spaces.
 
+\section{Worked case: unit abelian radius}
+
+Taking $R_1=1$ makes the normalization and the role of each parameter
+transparent:
+\[
+f_2R_{\mathrm{lens}}=\sqrt{0.2555137}\approx0.505484,
+\qquad
+c=0.9948493.
+\]
+The three overlap coefficients are then
+\[
+I_1=2\pi\approx6.283185,\qquad
+I_2=4\pi(0.2555137)\approx3.210880,\qquad
+I_3=0.9948493.
+\]
+Consequently
+\[
+\frac{I_2}{I_1}=0.5110274,
+\qquad
+\frac{I_3}{I_1}=0.1583352,
+\]
+up to the displayed rounding. The lens lower bound is approximately $7.8274$.
+For the nilmanifold, the torus branch gives $4\pi^2\approx39.4784$ and
+the Landau branch is larger, so the lower bound is $39.4784$. This example
+shows concretely how the target ratios determine the auxiliary scales; it does
+not turn those fitted scales into independent predictions.
+
 % ===========================
 \appendix
-\section{Spectral lower bound on $\Gamma\backslash\mathrm{Nil}_3$ for the left-invariant metric}
+\section{Spectral lower bound on
+\texorpdfstring{$\Gamma\backslash\mathrm{Nil}_3$}{Gamma backslash Nil3}
+for the left-invariant metric}
 % ===========================
 
 This appendix justifies the spectral estimate used in the nil admissibility check.
@@ -327,7 +397,7 @@ On the $p$-th mode, $\partial_z\mapsto 2\pi i p$ and \eqref{eq:nil_laplacian} be
 
 We bound the lowest nonzero eigenvalue by analyzing $p=0$ and $p\neq 0$ separately.
 
-\subsection{The $p=0$ sector (torus bound)}
+\subsection{The \texorpdfstring{$p=0$}{p=0} sector (torus bound)}
 
 For $p=0$,
 \[
@@ -345,7 +415,8 @@ Hence the smallest nonzero eigenvalue in this sector satisfies
 \label{eq:lambda_p0}
 \end{equation}
 
-\subsection{The $p\neq 0$ sector (Landau/oscillator lower bound)}
+\subsection{The \texorpdfstring{$p\neq 0$}{p not equal to 0} sector
+(Landau/oscillator lower bound)}
 
 For $p\neq 0$, the operator \eqref{eq:nil_laplacian_p} is the magnetic Laplacian on a 2-torus
 with constant magnetic field proportional to $p$, plus a strictly positive shift $(2\pi p)^2/c^2$.
@@ -383,20 +454,16 @@ In particular, for $a=b=1$ and any $c\le 1.989699$, one has
 \[
 \lambda_1 \ge 2\pi + \frac{4\pi^2}{c^2}
 \ge 2\pi + \frac{4\pi^2}{(1.989699)^2}
-\approx 6.283 + 4.77 \approx 11.05,
+\approx 6.2832 + 9.9721 \approx 16.2553,
 \]
 which is much larger than the admissibility floor $0.25$ used in Paper~I.
 
 \begin{remark}
 The estimates above are intentionally conservative and suffice only to demonstrate a large
-spectral margin. A full spectral decomposition of $\Delta$ on the compact nilmanifold is known
-in the literature, but is not required for the present admissibility verification.
+spectral margin. A complete scalar spectrum for the three-dimensional
+Heisenberg nilmanifold is available in Ref.~\cite{AndriotTsimpis}, but is not
+required for the present admissibility verification.
 \end{remark}
-\section*{References}
-\begin{enumerate}
-\item Paper I: \emph{Gauge Couplings, Internal Geometry, and $\Theta$--Closure in MTT}.
-\item Standard references on Heisenberg nilmanifolds and spectra (e.g. any textbook reference you prefer).
-\end{enumerate}
 \section{Conclusion}
 
 The Route~A formulas have been evaluated in the same normalization and scheme
@@ -416,7 +483,63 @@ geometry.  Selection of this geometry before empirical comparison, literal
 lens-space reduction, and a global HYM representative remain separate proof
 obligations.
 
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The HYM contraction, finite-matrix realization, precision transport, and electroweak row are used directly to assess the selected overlap realization. The remaining profile packets locate that realization within the broader closure program but do not prove its geometry. The strict source upgrade remains open.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A02/precision_15_source_transport} (\emph{profile replay}).\par Fifteen measured source coordinates, Jacobian and covariance transport.
+\item \path{A02/precision_8x8_workspace} (\emph{profile replay}).\par Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+\item \path{A01/qutrit_weyl_27_matrix} (\emph{derived exact}).\par Sparse 27x27 qutrit-Weyl left-action realization.
+\item \path{A01/strict_pew_row} (\emph{derived exact}).\par Promoted P\_EW source row at the declared one-shared-primitive standard.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/charged_yukawa_higgs_profile} (\emph{profile replay}).\par Versioned Yu, Yd, Ye and lambda\_H profile packet.
+\item \path{A14/ckm_prediction_profile} (\emph{numeric certified}).\par Three selected CKM profile rows and uncertainty comparison.
+\item \path{A01/current_global_lock} (\emph{profile replay}).\par Current non-looping global status and source-certificate map.
+\item \path{A01/direct_k_higgs_row} (\emph{derived exact}).\par Promoted direct K\_threshold.Omega\_H.lambda row.
+\item \path{A22/e6_qpsi_qcd_anomaly} (\emph{derived exact}).\par E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\item \path{A40/neutral_two_primitive_profile} (\emph{profile replay}).\par Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
+
 \begin{thebibliography}{99}
+
+\bibitem{AndriotTsimpis}
+D.~Andriot and D.~Tsimpis,
+\emph{Laplacian spectrum on a nilmanifold, truncations and effective theories},
+JHEP \textbf{09} (2018) 096.
+\url{https://doi.org/10.1007/JHEP09(2018)096}
 
 \bibitem{MTT-Admissibility}
 P.~Nero,
@@ -498,7 +621,7 @@ Zenodo preprint, January 2026.
 
 \bibitem{MTT-Bell-Beables}
 P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
+\emph{Modal Fixed Points, Bell's Beables, and the Limits of Factorization},
 Zenodo preprint, 2025.
 \url{https://doi.org/10.5281/zenodo.17076300}
 
@@ -510,7 +633,8 @@ Zenodo preprint, August 2025.
 
 \bibitem{MTT-Stochastic}
 P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
+\emph{Modal Triplet Theory and History-Dependent Stochastic Processes:
+Fixed-State Indivisibility, Markov Order, and the Quantum Boundary},
 Zenodo preprint, January 2026.
 \url{https://doi.org/10.5281/zenodo.18254862}
 

@@ -1,5 +1,5 @@
 {
-  "abstract": "We formulate circle, lens, and nil (CLN) as three coarse, typed profiles of an encoding atlas rather than as an exhaustive list of all possible descent obstructions. Circle records nontrivial return transport around a composable loop; lens records nonfaithfulness or redundancy of a reduction; nil records failure of a declared chart or transition to extend. These predicates concern different mathematical data, can occur independently or together, and are invariant under suitably compatible re-encoding. They do not by themselves imply a literal circle, lens-space, or nilmanifold factor. We distinguish holonomy from curvature by exhibiting a flat connection on S1 with nontrivial holonomy. A six-dimensional lower bound follows only in the restricted realization class where three profiles are represented by nonzero curvature two-forms on independent transverse coordinate factors: each factor then has dimension at least two, giving 2+2+2=6. If a separate four-dimensional physical base is supplied and dimensions add, the familiar 4+6=10 realization follows; neither the four-dimensional base nor ten-dimensional necessity is selected by B0. The shared circle is common phase or holonomy data and is counted once.",
+  "abstract": "We formulate circle, lens, and nil (CLN) as three coarse, typed profiles of an encoding atlas rather than as an exhaustive list of all possible descent obstructions. Circle records nontrivial return transport around a composable loop; lens records nonfaithfulness or redundancy of a reduction; nil records failure of a declared chart or transition to extend. These predicates concern different mathematical data, can occur independently or together, and are invariant under suitably compatible re-encoding. They do not by themselves imply a literal circle, lens-space, or nilmanifold factor. We distinguish holonomy from curvature by exhibiting a flat connection on S^1 with nontrivial holonomy. A six-dimensional lower bound follows only in the restricted realization class where three profiles are represented by nonzero curvature two-forms on independent transverse coordinate factors: each factor then has dimension at least two, giving 2+2+2=6. If a separate four-dimensional physical base is supplied and dimensions add, the familiar 4+6=10 realization follows; neither the four-dimensional base nor ten-dimensional necessity is selected by B0. The shared circle is common phase or holonomy data and is counted once.",
   "authors": [
     "Peter Nero"
   ],
@@ -9,37 +9,37 @@
   "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18354989",
-    "created": "2026-01-23T20:01:46.017244+00:00",
+    "created": "2026-07-29T08:51:57.899609+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18354990",
+    "doi": "10.5281/zenodo.21652638",
     "files": [
       {
-        "checksum": "md5:d4788b3c4f853a0d1b37a41b1104e6b4",
-        "content_url": "https://zenodo.org/api/records/18354990/files/The_Modal_Triplet_Theory_Program_B0__Why_Description_Forces_Circle__Lens__and_Nil%20(1).pdf/content",
-        "key": "The_Modal_Triplet_Theory_Program_B0__Why_Description_Forces_Circle__Lens__and_Nil (1).pdf",
-        "size": 347032
+        "checksum": "md5:dceafb0a34be9e743768286dfe85a432",
+        "content_url": "https://zenodo.org/api/records/21652638/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 387968
       }
     ],
-    "id": "18354990",
-    "match_kind": "title_or_file",
+    "id": "21652638",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-23",
-    "record_url": "https://zenodo.org/records/18354990",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21652638",
     "resource_type": "publication",
-    "title": "The Modal Triplet Theory Program B0: Why Description Forces Circle, Lens, and Nil",
-    "updated": "2026-01-23T20:01:46.557006+00:00",
-    "version": "v1.0"
+    "title": "The Modal Triplet Theory Program B0: Circle\u2013Lens\u2013Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations",
+    "updated": "2026-07-29T08:51:58.230388+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "906eba951ecbdde54f1efc4636294bf6dd8397535a4987384ada88a178589ade",
+  "main_tex_sha256": "81a9ee4fcb190eee65c2fe84c2ddfa8474b52e86b087ca6bc6eb031b08ba5437",
   "paper_id": "the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2",
-  "paper_md_sha256": "869ceffb5ad692d23be2eaf1f9e7fa1d4c229b64b41f399467f98de0067f380c",
+  "paper_md_sha256": "3f5da76931ae9e7657facb68fb1967379c9edf07e5e64ffe181b1118016687c1",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "e0f39544eaa42eb0ecef77dabf303c6269af860482d020e359bd77d7b540beac",
+    "revision_evidence_sha256": "4e4774d2a68cfb7eca9af2b3ec123fe98ac13c0c191a0cec2309742f7ed16e55",
     "selected_revision": true,
     "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B0__Why_Description_Forces_Circle__Lens__and_Nil"
   },
@@ -51,28 +51,53 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 22745,
+      "bytes": 26090,
       "path": "main.tex",
-      "sha256": "906eba951ecbdde54f1efc4636294bf6dd8397535a4987384ada88a178589ade"
+      "sha256": "81a9ee4fcb190eee65c2fe84c2ddfa8474b52e86b087ca6bc6eb031b08ba5437"
     },
     {
-      "bytes": 3532,
+      "bytes": 3916,
       "path": "REVISION_AUDIT.md",
-      "sha256": "e0f39544eaa42eb0ecef77dabf303c6269af860482d020e359bd77d7b540beac"
+      "sha256": "4e4774d2a68cfb7eca9af2b3ec123fe98ac13c0c191a0cec2309742f7ed16e55"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B0__Why_Description_Forces_Circle__Lens__and_Nil"
   },
-  "source_tree_sha256": "0f6df8452e019342c6db445cebb3ccd5c11e53d3806d7d7dc5a6721295fb4285",
-  "title": "The Modal Triplet Theory Program B0: Circle-Lens-Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "44967c2d1ea209fad9fe2bc66a19c1fa7761a35c5aaf4b00b65be613a97b7fbc",
+  "title": "The Modal Triplet Theory Program B0: Circle\u2013Lens\u2013Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18354989",
+      "created": "2026-07-29T08:51:57.899609+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652638",
+      "files": [
+        {
+          "checksum": "md5:dceafb0a34be9e743768286dfe85a432",
+          "content_url": "https://zenodo.org/api/records/21652638/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 387968
+        }
+      ],
+      "id": "21652638",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652638",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B0: Circle\u2013Lens\u2013Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations",
+      "updated": "2026-07-29T08:51:58.230388+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18354989",
       "created": "2026-01-23T20:01:46.017244+00:00",

@@ -6,40 +6,40 @@
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v2",
-  "date": "July 2026",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18330735",
-    "created": "2026-01-21T19:57:30.249395+00:00",
+    "created": "2026-07-29T08:50:08.691986+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18330736",
+    "doi": "10.5281/zenodo.21665951",
     "files": [
       {
-        "checksum": "md5:17aa533e2e8ef71a8359beca81cd687f",
-        "content_url": "https://zenodo.org/api/records/18330736/files/Coherent_Kinematics_in_Modal_Triplet_Theory%20(3).pdf/content",
-        "key": "Coherent_Kinematics_in_Modal_Triplet_Theory (3).pdf",
-        "size": 280014
+        "checksum": "md5:75e30cdb67f3e4dff00822321eae8efb",
+        "content_url": "https://zenodo.org/api/records/21665951/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 276949
       }
     ],
-    "id": "18330736",
-    "match_kind": "title_or_file",
+    "id": "21665951",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18330736",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665951",
     "resource_type": "publication",
-    "title": "Coherent Kinematics in Modal Triplet Theory: Position, Motion, and Chart-Persistence of Coherent Structures",
-    "updated": "2026-01-21T19:57:30.747070+00:00",
-    "version": "v1.0"
+    "title": "Coherent Kinematics in Modal Triplet Theory Chart Persistence, Encoding Trajectories, and Physical Bridges",
+    "updated": "2026-07-29T08:50:09.081968+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "e73af12d56b5ead33c451919e59d2cb631cb99ee673a2e6e8c8c17cd8e84275d",
+  "main_tex_sha256": "3e084d459b8ee80bbd4cbe635c0414cb3d03f77f04b1e79cde8dd5995685081d",
   "paper_id": "coherent-kinematics-in-modal-triplet-theory-chart-persi-359fefe8",
-  "paper_md_sha256": "2724e3365350d2ec6111beb09aad7b4e82119ab55f19fe501addc86b838e2067",
+  "paper_md_sha256": "787074e09abbb84a320961c7a450662137e01faf746e440fe8b9d03f061fe177",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/COHERENT_KINEMATICS_V2_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "8a1d29ae832900a9d9f4e6c193b7115593a04dd2de44be43aba4ec4a058ac433",
+    "revision_evidence_sha256": "868fed01511f8d484973b818a7bbcd4447078f5fd16219128c78ba75101ca496",
     "selected_revision": true,
     "superseded_source_path": "3 Core Foundations/_work/Coherent_Kinematics_in_Modal_Triplet_Theory"
   },
@@ -51,23 +51,48 @@
       "sha256": "482c19655ead341c71dd0015adaaf26ea0674a5891a73e83eca9373de20e4bd6"
     },
     {
-      "bytes": 16252,
+      "bytes": 16244,
       "path": "main.tex",
-      "sha256": "e73af12d56b5ead33c451919e59d2cb631cb99ee673a2e6e8c8c17cd8e84275d"
+      "sha256": "3e084d459b8ee80bbd4cbe635c0414cb3d03f77f04b1e79cde8dd5995685081d"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "3 Core Foundations/revised_tex_vnext/Coherent_Kinematics_in_Modal_Triplet_Theory_v2"
   },
-  "source_tree_sha256": "1bf98e643f5e2e3c2ed51102ee84cbf1d0cbef01f40397580a092311229729d6",
+  "source_tree_sha256": "9a1843d933e89e1b82e262970111c2e1170738ca242407a0e8989713a2384092",
   "title": "Coherent Kinematics in Modal Triplet Theory Chart Persistence, Encoding Trajectories, and Physical Bridges",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18330735",
+      "created": "2026-07-29T08:50:08.691986+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665951",
+      "files": [
+        {
+          "checksum": "md5:75e30cdb67f3e4dff00822321eae8efb",
+          "content_url": "https://zenodo.org/api/records/21665951/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 276949
+        }
+      ],
+      "id": "21665951",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665951",
+      "resource_type": "publication",
+      "title": "Coherent Kinematics in Modal Triplet Theory Chart Persistence, Encoding Trajectories, and Physical Bridges",
+      "updated": "2026-07-29T08:50:09.081968+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18330735",
       "created": "2026-01-21T19:57:30.249395+00:00",

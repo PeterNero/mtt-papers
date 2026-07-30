@@ -1,33 +1,50 @@
 ---
 abstract: |
-  This corrected successor separates three mathematical questions that the earlier shadow-bridge paper conflated: whether upstairs dynamics descends to a deterministic shadow map, whether an upstairs state can be recovered from shadow data, and whether probability laws in measurement, black-hole radiation and cosmology have one selected common source. We prove the exact fiber-preservation criterion for descent and the injectivity-on-a-code criterion for exact recovery. These results correct the earlier right-inverse argument: a noninjective surjection may have a measurable section, while still failing to recover the lost state. We also prove that noninjective projection alone does not imply an arrow of time; a quotient is reversible when its fiber equivalence relation is invariant in both time directions. At the probabilistic level, one upper measure and three explicit outcome maps do yield three pushforwards, but arbitrary target weights can always be represented by basin sizes, so basin representation alone derives neither the Born rule, Hawking weights nor a cosmological measure. Measurement instruments and island constructions are consequently described as updates or recovery on restricted codes/algebras, not as global inverses. The three physical domains remain useful structural shadow bridges. Their theorem-level unification requires an MTT-selected upper measure, explicit pushforward maps and independent derivations of all three target laws.
+  We separate three mathematical questions: whether upstairs dynamics descends to a deterministic shadow map, whether an upstairs state can be recovered from shadow data, and whether probability laws in measurement, black-hole radiation and cosmology have one selected common source. The exact criteria are fiber preservation for descent and injectivity on a declared code for recovery. Noninjective projection alone does not imply an arrow of time; a quotient is reversible when its fiber relation is invariant in both time directions. In current MTT, a canonical q79 binary one-anchor recorder does emit a stopped operational output measure from a selected normal state on its commuting Fock output algebra, and second-moment capture descent is exact on that restricted domain. This is not yet a theorem for arbitrary apparatus contexts or an objective selection of one ontic history. More generally, one upper measure and three explicit outcome maps yield three pushforwards, but arbitrary target weights can be represented by basin sizes. Basin representation alone therefore derives neither the Born rule, Hawking weights nor a cosmological measure. A common theorem still requires one selected upper source and independently derived domain maps.
 author:
 - Peter Nero
 current_version: v3
-date: |
-  July 2026  
-  Version 3
-generated_from_main_tex_sha256: 619c935fea0a867af0a668eea6427a517e2d09b6fe02dbd885d143fb51b0ecfd
+date: July 2026 Version 3
+generated_from_main_tex_sha256: 9da3c8bb8deef2d9b716c7b707f048f473a6eda8ce5efc30181c493200d1e14c
 paper_id: projection-probability-and-irreversibility-shadow-bridg-a86c97e5
 release_state: zenodo_released
-released_version: v1.0
+released_version: v3
 title: |
-  Projection, Probability, and Irreversibility:  
+  Projection, Probability, and Irreversibility:
   A Descent, Recovery, and Measure-Separation Framework for MTT Shadow Bridges
-zenodo_doi: 10.5281/zenodo.18262041
-zenodo_record_id: 18262041
-zenodo_url: "https://zenodo.org/records/18262041"
+zenodo_doi: 10.5281/zenodo.21666001
+zenodo_record_id: 21666001
+zenodo_url: "https://zenodo.org/records/21666001"
 ---
+
+# Version 3 Revision Note
+
+Supersedes
+*Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory*, version 2.
+
+Reason
+The former version conflated sections with recovery, inferred irreversibility from noninjectivity, and treated basin representations as if they selected physical probability laws. It also preceded the restricted q79 binary-recorder result.
+
+Resolution
+Version 3 supplies exact descent, reversible-quotient, and code-recovery criteria; separates Born, Hawking, and cosmological measures; and adds the canonical binary-recorder theorem at its actual operational domain.
+
+Retained result
+Projection, recovery, measurement, black-hole reconstruction, and cosmological conditioning remain useful typed shadow bridges.
+
+Remaining boundary
+Arbitrary apparatus contexts, objective single-history selection, and one common selected upper measure with all three physical pushforwards remain open.
 
 # Correction and claim tiers
 
-The paper studies an invertible upstairs flow and a many-to-one shadow description. It does not claim that the current MTT corpus has derived quantum measurement, black-hole evaporation or cosmological probabilities from one measure. The corrected claim tiers are:
+The paper studies an invertible upstairs flow and a many-to-one shadow description. It does not claim that the current MTT corpus has derived a universal quantum measurement law, black-hole evaporation and cosmological probabilities from one measure. It does contain one restricted operational measurement theorem for the canonical q79 binary recorder. The claim tiers are:
 
 1.  **Exact mathematics:** descent, reversibility, restricted recovery, pushforward and nonuniqueness theorems.
 
 2.  **Established domain mathematics:** quantum instruments and code recovery, semiclassical Hawking radiation, and measures on declared cosmological model spaces.
 
-3.  **MTT shadow bridges:** possible common structural interpretations, conditional on source maps that have not yet been selected.
+3.  **Restricted MTT execution:** the selected canonical binary-recorder output law and second-moment capture descent on its declared domain.
+
+4.  **Open MTT shadow bridges:** arbitrary apparatus contexts and a common Born–Hawking–cosmology source, conditional on maps not yet selected.
 
 The MTT geometry is denoted $`Y_4\times X_6`$. The local Circle–Lens–Nil filtration is not used as a literal product topology. No result below depends on identifying compact phase with physical time.
 
@@ -138,7 +155,7 @@ Let $`\mathcal N`$ be a completely positive trace-preserving channel and let $`\
 
 </div>
 
-For a finite-dimensional quantum code and noise operators $`E_a`$, the Knill–Laflamme conditions 
+For a finite-dimensional quantum code and noise operators $`E_a`$, the Knill–Laflamme conditions
 ``` math
 P_{\mathcal C}E_a^\dagger E_bP_{\mathcal C}=\alpha_{ab}P_{\mathcal C}
 ```
@@ -151,7 +168,11 @@ A quantum instrument is a family of completely positive trace-nonincreasing maps
 p_i=\mathop{\mathrm{Tr}}\mathcal I_i(\rho),\qquad
  \rho_i=\frac{\mathcal I_i(\rho)}{p_i}\quad(p_i>0).
 ```
-This is a selected operational law. It is not a right inverse of premeasurement dynamics. Projection language may encode the outcome partition, but it does not derive the instrument, the Born functional, or objective single-outcome collapse.
+This is a selected operational law. It is not a right inverse of premeasurement dynamics. Measurement here is an ordinary physical interaction that creates a stable record; it is not a privileged completion postulate or a special role for an observer.
+
+The current q79 calculation supplies one nontrivial MTT instance. For the canonical binary one-anchor recorder, a selected normal state on the commuting Fock output algebra emits the stopped operational output measure customarily denoted $`P_{\mathrm{Haar}/Q}`$. On this domain, second-moment capture descent is exact and requires no added stochastic primitive, observed probability, or residual fit. Thus the operational outcome weights are derived for this recorder rather than inserted as basin volumes.
+
+The domain guard is essential. The theorem does not yet cover arbitrary preparations and apparatus contexts, finite-bandwidth or non-Markov control, or a demanded pre-quantum probability semantics. It also does not select one ontic trajectory: density-operator outcome weights and record statistics do not by themselves provide objective single-history collapse. Projection language therefore has a genuine restricted execution here, while the universal instrument and collapse problems remain open.
 
 # Coarse graining and entropy
 
@@ -216,6 +237,8 @@ p_i=\mathop{\mathrm{Tr}}(\rho\Pi_i).
 ```
 Gleason’s theorem  shows, under its dimension and additivity hypotheses, that probability measures on the projection lattice have this density-operator form. It does not select $`\rho`$, an MTT outcome map, or a physical collapse mechanism. A basin model derives Born weights only if its independently selected pushforward is proved equal to this functional for all allowed states and measurement contexts.
 
+The canonical q79 binary recorder now satisfies this demand on its declared output algebra: the selected normal state and capture map produce the operational quadratic weights without probability fitting. This closes one exact restricted case, not the quantified statement “for all allowed states and contexts.” In particular it does not make the Born, Hawking and cosmological laws pushforwards of one common measure.
+
 ## Hawking weights
 
 Semiclassical Hawking occupation factors  arise from quantum-field mode propagation and Bogoliubov coefficients on a black-hole background. They are not a probability measure on the same sample space as a laboratory quantum instrument merely because both contain normalized weights. A common-source MTT theorem must construct $`O_{\mathrm{BH}}`$ and recover the temperature, greybody factors and state dependence, not insert them as basin labels.
@@ -268,7 +291,7 @@ A theorem unifying the three domains must emit:
 
 8.  a computable reduction before any MTT undecidability claim is promoted.
 
-The current finite $`q=79`$ operators, shared-circle candidate and preprojection language program may help construct these objects. They do not yet provide the selected measurement capture measure identified as open in the quantization audit.
+The current finite $`q=79`$ operators, shared-circle candidate and preprojection language program now provide the capture measure for the canonical binary one-anchor recorder. They do not yet extend it to all allowed apparatus contexts, select one ontic history, or provide the black-hole and cosmological maps required by the common source theorem.
 
 # Version delta
 
@@ -288,13 +311,39 @@ Relative to the previous version, this successor:
 
 - no longer identifies Born, Hawking and cosmological weights without one upper measure and three derived pushforwards;
 
+- records the exact canonical q79 binary-recorder output law without extending it past its selected apparatus domain;
+
 - makes entropy growth and the time arrow independent source obligations; and
 
 - reduces computational irreducibility to a conditional transfer theorem pending an explicit MTT reduction.
 
 # Conclusion
 
-Projection can hide information, obstruct autonomous descent, or prevent recovery, but these are different statements. The corrected mathematics identifies exactly which one holds. Likewise, basin measures can represent probabilities, but representation is not derivation. Measurement, black-hole reconstruction and cosmology remain genuinely suggestive MTT shadow bridges because all involve restricted observables, coarse descriptions and source-selection problems. Their strong unification is still open: it requires one selected upper measure and three independently computed pushforwards. This narrower formulation preserves the useful idea while making every future promotion testable.
+Projection can hide information, obstruct autonomous descent, or prevent recovery, but these are different statements. The corrected mathematics identifies exactly which one holds. Likewise, basin measures can represent probabilities, but representation is not derivation. The canonical binary recorder is an important positive exception: its selected state and capture map derive the stopped operational weights on one exact domain. Measurement, black-hole reconstruction and cosmology remain genuinely suggestive MTT shadow bridges because all involve restricted observables, coarse descriptions and source-selection problems. Their strong unification is still open: it requires one selected upper measure and three independently computed pushforwards, while objective single-history selection requires an additional instrument or trajectory theorem. This narrower formulation preserves the useful idea while making every future promotion testable.
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The descent, recovery, and measure-separation results are structural. The open strict-upgrade ledger does not provide a common probability source and is included precisely to prevent profile closure from being mistaken for that missing theorem.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 

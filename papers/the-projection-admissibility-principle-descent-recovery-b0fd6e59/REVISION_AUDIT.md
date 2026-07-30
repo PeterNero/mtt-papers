@@ -65,3 +65,19 @@ geometry, or Hilbert structure from noninjectivity alone.
 - PDF compilation remains blocked by the previously identified local MiKTeX
   dependency `amsthm.sty`; this is an environment issue rather than a detected
   source error.
+
+## Expository revision, 2026-07-28
+
+The replacement theorem chain and its ownership are unchanged. A new
+paper-specific guide places representative selection, exact recovery,
+autonomous descent, and effective merger in one domain/equation/meaning table.
+A hidden-coordinate example explains descent as a question about whether the
+reduced state remembers enough for future prediction.
+
+Additional discussion identifies fiber preservation as the load-bearing
+condition and warns that choosing one representative-dependent trajectory
+cannot manufacture autonomous reduced dynamics. The locality theorem is also
+interpreted as transport of an existing upper microcausal relation on the
+compatible subalgebra, not creation of locality or state factorization. The
+previous MiKTeX compilation block is no longer current; the revised PDF has
+been compiled and visually inspected in the canonical repository environment.

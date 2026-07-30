@@ -1,4 +1,15 @@
-# Proto-Spinor and Foundational Geometry Revision Audit
+# Proto-Spinor/Worldsheet v5 Release Audit
+
+## v5 publication delta
+
+- **Supersedes:** v4.
+- **Reason:** the local bridge theorem needed a concrete example and stronger
+  separation from full string consistency.
+- **Resolution:** add a finite Hessian-intertwining model and four-object
+  bridge map; leave the same-source q79 derivative open.
+- **Retained:** the v4 local theorem and cubic error estimate.
+- **Remaining:** physical connection, Weyl/modular/ghost/anomaly gates, beta
+  functions, and a complete worldsheet.
 
 Date: 2026-07-15
 
@@ -275,3 +286,18 @@ All five ProtoSpinor/World-in-World successors now contain the standardized
 five-field `Revision note for this edition` after the abstract. The global
 coverage and automated check are documented in
 `18 Theta-Closure & Execution Program/CURRENT_VERSION_DELTA_NOTES_AUDIT_2026-07-15.md`.
+
+## Proto-Spinor/Worldsheet expository revision, 2026-07-28
+
+The local bridge theorem remains the sole canonical formal result owned by
+this paper; the proto-spinor lift continues to belong to the canonical
+proto-spinor paper. A new guide separates the source configuration, target
+worldsheet configuration, nonlinear bridge map, and Hessian pullback.
+
+A two-dimensional matrix example demonstrates
+`L^T H_ws L = H_ps` explicitly and explains why a quadratic agreement with a
+controlled nonlinear map leaves a cubic mismatch. The error discussion now
+relates the absolute `C rho^3` bound to a coercive `rho^2` signal and makes the
+validity ball and constants part of the certificate. The revised source
+compiles in the current canonical environment and the full PDF has been
+visually inspected.

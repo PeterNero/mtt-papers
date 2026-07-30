@@ -10,14 +10,14 @@
 
 \title{Fixed Points VI: Formal Synthesis and Physical Interpretations}
 \author{Peter Nero}
-\date{July 2026}
+\date{July 2026\\Version 6}
 
 \begin{document}
 \maketitle
 \seriestagline
 
 \begin{abstract}
-We synthesize the corrected FP--I--V results without promoting their control
+We synthesize the canonical FP--I--V results without promoting their control
 parameter, projections, or diagnostics into an unproved fundamental field
 theory. The rigorous spine consists of conditional projected fixed-point
 existence, strict-Lyapunov promotion to equilibrium, joint-mode damping and
@@ -26,10 +26,15 @@ curvature leakage, intrinsic first-order centroid modulation, frozen linear
 Ornstein--Uhlenbeck covariance, canonical-correlation bounds, and declared
 admissibility exits. We distinguish three logical levels throughout:
 inherited theorem, conditional model completion, and physical interpretation.
+All inherited results are restated as self-contained contracts and cited to
+their canonical paper; FP~VI does not reproduce their theorem/proof blocks.
+Its own formal results are limited to the bilocal-causality obstruction and
+the local-mediator completion.
 A Lorentzian gauge/gravity action, quantum covariance, particle identities,
 merger, measurement, and cosmology belong to the latter two levels unless
-additional source and equivalence theorems are supplied. We also correct the
-Gaussian Lyapunov sign and nonnormal resolvent bounds, and show why an
+additional source and equivalence theorems are supplied. The Gaussian
+Lyapunov sign and nonnormal resolvent bounds are stated in their domain-valid
+forms, and we show why an
 instantaneous equal-time bilocal kernel is not microcausal merely because it
 leaves the principal symbol unchanged. A local mediator is the consistent
 route to causal overlap dynamics. A separate, explicitly non-FP ledger records
@@ -37,8 +42,28 @@ later scoped q79 geometry, quantum-operation, and QFT advances without
 retroactively promoting them to conclusions of the fixed-point series.
 \end{abstract}
 
-\section*{Revision note for this edition}
-\addcontentsline{toc}{section}{Revision note for this edition}
+\section*{Revision note for version 6}
+\addcontentsline{toc}{section}{Revision note for version 6}
+\begin{description}
+\item[Supersedes.] \emph{Fixed Points VI: Formal Synthesis and Physical
+Interpretations}, version~5.
+\item[Reason.] Version~5 correctly separated the FP spine from later q79
+work, but the synthesis still needed a clearer reading route and firmer
+protection against treating restated contracts as duplicate theorem sources.
+\item[Resolution.] Version~6 organizes the paper into rigorous, downstream,
+and interpretive reading lanes; explains why contracts are repeated while
+proofs are not; and preserves FP~I--V as the canonical owners of their
+results. It also separates release description, revision history, and
+computational provenance.
+\item[Retained result.] The inherited FP~I--V spine and the two FP~VI
+bilocal-causality results retain exactly their version~5 scope.
+\item[Remaining boundary.] The selected action, physical q79 continuum
+operator, general Born source, fixed-coupling QFT, global state, matching, and
+cosmology remain downstream obligations.
+\end{description}
+
+\section*{Revision note for version 5}
+\addcontentsline{toc}{section}{Revision note for version 5}
 \begin{description}
 \item[Supersedes.] \emph{Fixed Points VI: Formal Synthesis and Physical
 Interpretations}, version~4.
@@ -49,7 +74,10 @@ separate status layer, ``not derived by FP'' could be misread as ``not achieved
 anywhere downstream.''
 \item[Resolution.] Version~5 preserves the FP theorem boundary, corrects the
 q79 preprojection types, and adds an independently sourced downstream ledger
-with exact closure counts and nonpromotion clauses.
+with exact closure counts and nonpromotion clauses. It also restores strict
+theorem ownership: FP~I--V retain their respective fixed-point, damping,
+curvature, and covariance theorems, while FP~VI owns only its two new
+bilocal-causality results.
 \item[Retained result.] The complete FP--I--V fixed-point, damping, curvature,
 covariance, and admissibility spine survives at its declared theorem tier.
 \item[Remaining boundary.] Selected HYM endpoints and action, the physical q79
@@ -57,6 +85,45 @@ Hessian and reduction, universal apparatus and actualization, a fixed-coupling
 continuum QFT, selected global state, RG and matching, and cosmology remain
 downstream programs.
 \end{description}
+
+\section*{How to use this synthesis}
+\addcontentsline{toc}{section}{How to use this synthesis}
+This paper is a map of the Fixed Points chain, not a substitute for its five
+source papers.  It restates the input--output contracts needed to understand
+the whole program, cites each canonical owner, and keeps later q79 results in
+a separate ledger.  Its only new theorem/proof pair concerns the causality
+failure of instantaneous bilocal overlap and the local-mediator completion.
+
+\paragraph{The central picture in plain language.}
+The series builds a sequence of conditional gates.  Geometry and spectral
+data define a coherent projector.  Compactness or condensation gives a
+projected return.  A strict Lyapunov law promotes that return to equilibrium.
+Spectral margins control disturbances; curvature can rotate the projector and
+source leakage; covariance describes a frozen linear fluctuation cloud; and
+declared margins detect exit from a chosen admissible region.  Each gate has
+its own hypotheses, and passing one does not silently pass the next.
+
+\paragraph{Three reading lanes.}
+Readers interested in the rigorous FP result can follow Sections~1--7 and the
+synthesis ledger in Section~12.  Readers interested in the relation to newer
+MTT work should use Sections~8--9, which explicitly distinguish downstream
+q79 achievements from FP consequences.  Readers interested in physical
+interpretation should use Sections~10--11 together with the status labels,
+rather than reading a possible interpretation as an inherited theorem.
+
+\paragraph{Why contracts are repeated but proofs are not.}
+A standalone synthesis must state enough hypotheses and conclusions to be
+understood without opening five documents at once.  It therefore repeats
+short contracts, not theorem ownership.  Proofs and canonical formal
+statements remain in FP~I--V.  This prevents the same theorem from acquiring
+multiple apparent sources while preserving standalone readability.
+
+\paragraph{Scope boundary.}
+The control flow, classical covariance, and admissibility diagnostics do not
+by themselves define Lorentzian dynamics, quantum commutation relations,
+particle identities, or cosmology.  Later q79 results may close selected
+bridges independently, but their existence does not retroactively turn them
+into Fixed Points theorems.
 
 \tableofcontents
 
@@ -110,7 +177,9 @@ theorem.
 Let $\Phi_\tau$ be a well-defined time-$\tau$ map for the declared control
 flow and set $T=P\Phi_\tau$ on a closed bounded convex set $K\subset\mathcal H$.
 
-\begin{theorem}[Corrected fixed-point chain]\label{thm:fixed-chain}
+\paragraph{Imported fixed-point chain.}
+Fixed Points~I and II are the canonical sources for this chain
+\cite{FPI,FPII}. For standalone use, its complete contract is as follows.
 Assume one of the following FP~I alternatives:
 \begin{enumerate}
 \item $T(K)\subset K$ and $T:K\to K$ is continuous and compact; or
@@ -128,18 +197,16 @@ identity
 \]
 with $\mathcal D(u)=0$ exactly at equilibria, then $u_\ast$ is an equilibrium
 of the declared flow.
-\end{theorem}
-
-\begin{proof}
-The first conclusion is Schauder's or Darbo--Sadovskii's theorem. At a
+The first conclusion is an application of Schauder's or Darbo--Sadovskii's
+theorem. At a
 projected recurrent point, the Lyapunov values at the two endpoints agree.
 The displayed identity forces $\mathcal D=0$ along the intervening orbit, and
 strictness gives equilibrium. Without the second step, a projected time-step
 fixed point is not automatically a steady solution.
-\end{proof}
 
-\begin{proposition}[Conditional contraction uniqueness]\label{prop:unique}
-Suppose a steady equation can be written on a specified Banach space as
+\paragraph{Imported contraction-uniqueness gate.}
+Fixed Points~I owns the generic Banach gate. In the steady-equation form used
+here, suppose a steady equation can be written on a specified Banach space as
 $u=-A^{-1}N(u)$, where $A^{-1}$ exists on that space and
 \[
  \|A^{-1}\|\operatorname{Lip}(N)<1
@@ -147,7 +214,6 @@ $u=-A^{-1}N(u)$, where $A^{-1}$ exists on that space and
 on an invariant complete subset. Then the steady solution there is unique.
 No uniqueness conclusion follows from a vertical spectral gap if $A$ has an
 unremoved kernel or if the displayed inverse estimate is not proved.
-\end{proposition}
 
 \section{Joint-mode stability and disturbance floors}
 
@@ -211,11 +277,12 @@ Consider the real linear SDE
  \label{eq:linear-sde}
 \end{equation}
 
-\begin{theorem}[Semigroup covariance and resolvent bounds]\label{thm:semigroup}
-Assume
+\paragraph{Imported semigroup-covariance result.}
+Fixed Points~V is the canonical source for the nonnormal covariance theorem
+\cite{FPV}. For the real linear SDE~\eqref{eq:linear-sde}, assume
 \[
  \|e^{tA}\|\le M e^{-\omega t},
- \qquad t\ge0,quad M\ge1,quad\omega>0.
+ \qquad t\ge0,\quad M\ge1,\quad\omega>0.
 \]
 Then~\eqref{eq:linear-sde} has stationary covariance
 \[
@@ -231,13 +298,10 @@ Moreover,
  \qquad
  \|A^{-1}\|\le\frac{M}{\omega}.
 \]
-\end{theorem}
-
-\begin{proof}
-The semigroup estimate makes both integrals converge. Differentiation of the
+The semigroup estimate makes the covariance and resolvent integrals converge.
+Differentiation of the
 covariance integrand gives the Lyapunov equation, while
 $A^{-1}=-\int_0^\infty e^{tA}\,dt$. Taking norms proves the bounds.
-\end{proof}
 
 For a normal $A$, one may often take $M=1$ with $\omega$ given by the spectral
 abscissa. For a nonnormal matrix, the spectral abscissa alone does not imply
@@ -250,6 +314,13 @@ smallest positive eigenvalues of the marginal covariance blocks, not their
 largest operator norms.
 
 \section{Classical covariance versus quantum covariance}
+
+The word ``covariance'' occurs in both classical probability and quantum
+theory, but the objects satisfy different constraints.  The FP~V Lyapunov
+equation produces ordinary second moments of a classical stochastic process.
+A quantum covariance becomes physical only after a symplectic or canonical
+commutation structure and compatible completely positive dynamics have been
+specified.
 
 The covariance produced by~\eqref{eq:linear-sde} is classical. To interpret it
 as a bosonic quantum covariance one must separately specify canonical
@@ -296,6 +367,12 @@ non-propagation.
 
 \section{Status of a Lorentzian master action}
 
+This section illustrates a conditional completion.  Writing a familiar local
+action shows what additional fields and equations could supply physical
+evolution; it does not show that the FP control data select that action.  The
+gap between a writable action and a derived action is precisely the missing
+source and matching problem.
+
 A local Lorentzian gauge/gravity/matter action may be appended as a
 \emph{conditional completion}, for example schematically
 \[
@@ -327,6 +404,12 @@ theorems.
 
 \section{Independent downstream q79 status}
 \label{sec:downstream-status}
+
+The following ledger prevents two opposite errors.  It avoids claiming that
+FP~I--VI prove later q79 results, and it avoids describing a bridge as globally
+open when an independent repository has closed a scoped version of it.  Counts
+refer to the cited verified repository and must be refreshed when that source
+changes.
 
 This section is a status reconciliation against the canonically verified
 q79 source repository at commit \texttt{1615da7}
@@ -409,6 +492,13 @@ to represent physical causal interaction.
 
 \section{Physical interpretation ledger}
 
+The ledger should be read as a type system for claims.  ``Supported'' means
+the stated control model and hypotheses already imply the claim.
+``Conditional'' means an additional mathematical model would make the claim
+well posed and testable.  ``Not derived'' means the Fixed Points chain alone
+contains no implication to that conclusion; it is not a declaration that the
+idea is impossible or absent from every other MTT paper.
+
 \paragraph{Supported within the declared control model.}
 The declared model supports projection into coherent and noncoherent sectors
 under operator-domain hypotheses. It also supports conditional fixed points,
@@ -431,9 +521,9 @@ arrow of time. Section~\ref{sec:downstream-status} records independent scoped
 results on some of these bridges; their existence does not make them
 conclusions of FP~I--VI.
 
-\section{Synthesis theorem and remaining obligations}
+\section{Synthesis ledger and remaining obligations}
 
-\begin{theorem}[Scoped FP synthesis]\label{thm:synthesis}
+\paragraph{Imported FP synthesis.}\mbox{}\\
 Assume the operator, compactness or condensing, strict-Lyapunov, one-sided
 damping, curvature-smallness, covariance, and margin hypotheses stated in
 FP~I--V and summarized above. Then the declared control model has:
@@ -452,7 +542,6 @@ exit from a declared admissible domain.
 \end{enumerate}
 No Lorentzian, quantum, particle-physics, merger, measurement, or cosmological
 claim follows without its additional completion theorem.
-\end{theorem}
 
 The principal remaining obligations for a physical theory are therefore
 constructive rather than interpretive: emit the selected visible/hidden HYM
@@ -473,6 +562,17 @@ leakage, modulation, Gaussian covariance, and admissibility diagnostics. FP~VI
 does not weaken those results by surrounding them with broader interpretations;
 it identifies exactly what they prove and exactly which bridges remain before
 they can support a fundamental spacetime, quantum, or particle theory.
+
+The synthesis also clarifies how to use the series.  FP~I owns the analytic
+fixed-point foundation; FP~II owns the ten-dimensional joint-operator
+specialization; FP~III owns disturbance floors and conditional
+homogenization; FP~IV owns curvature, finite reduction, centroid, and
+transition boundaries; FP~V owns multi-structure covariance and
+admissibility-exit probabilities.  FP~VI connects those contracts, records
+independent downstream status, and adds only the bilocal-causality analysis.
+The next advances must therefore instantiate the missing source data or
+physical completion, not restate the existing fixed-point chain under a new
+heading.
 
 \begin{thebibliography}{99}
 
@@ -523,5 +623,10 @@ Geometry-to-Operator Theorem Packets},
 27 July 2026.
 
 \end{thebibliography}
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \end{document}

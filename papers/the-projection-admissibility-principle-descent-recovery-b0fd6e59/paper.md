@@ -5,36 +5,62 @@ author:
 - Peter Nero
 current_version: v2
 date: July 2026
-generated_from_main_tex_sha256: acc359d7928deff1b576809ec51b5ea5026db097b0306da65ce828aef5f5245c
+generated_from_main_tex_sha256: e90f981327db60b358897c2024000cc46ab24c6d073d984ae0070d5e57ee393c
 paper_id: the-projection-admissibility-principle-descent-recovery-b0fd6e59
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  The Projection–Admissibility Principle  
+  The Projection–Admissibility Principle
   Descent, Recovery, and Structural Constraints on Effective Description
-zenodo_doi: 10.5281/zenodo.18255839
-zenodo_record_id: 18255839
-zenodo_url: "https://zenodo.org/records/18255839"
+zenodo_doi: 10.5281/zenodo.21652659
+zenodo_record_id: 21652659
+zenodo_url: "https://zenodo.org/records/21652659"
 ---
-
-*Part VI of VI in the Fixed Points series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*
 
 # Revision note for this edition
 
-Supersedes.  
+Supersedes.
 The original *Projection–Admissibility Principle: Structural Constraints on Effective Physical Description*.
 
-Reason.  
+Reason.
 Noninjectivity of a cross-level projection was incorrectly used to rule out a right section and to infer several unrelated physical effects.
 
-Resolution.  
+Resolution.
 Version 2 separates right sections, left decoders, autonomous descent, and effective mergers, and replaces the obstruction claim by the correct factor-through and conditioning theorems.
 
-Retained result.  
+Retained result.
 Projection and admissibility remain useful structural organizers once every map is typed.
 
-Remaining boundary.  
+Remaining boundary.
 Probability, entropy, irreversibility, and physical recovery require measures, dynamics, and observable-specific hypotheses.
+
+# How to Read the Principle
+
+A projection deliberately forgets distinctions. The central issue is not whether information was forgotten, but which later questions can still be answered from what remains. Four questions recur throughout the paper:
+
+<div class="description">
+
+Required equation: $`T_tS_t=\operatorname{id}`$. Failure means that some final reduced states have no admissible upper representative, or none with the requested regularity.
+
+Required equation: $`D_tT_t=\operatorname{id}`$. Failure means that distinct upper inputs have become indistinguishable at the final reduced level.
+
+Required equation: $`F_tP_0=P_t\Phi_t`$. Failure means that the initial reduced state omits distinctions that influence the later reduced state.
+
+Required relation: $`F_t(y)=F_t(y')`$ for $`y\ne y'`$. Its occurrence means that distinct initial reduced states have the same final reduced image.
+
+</div>
+
+The equations point in different directions and therefore cannot be replaced by one slogan about invertibility.
+
+## Object picture: what the reduced state remembers
+
+For the projection $`P_0(x,h)=x`$, the coordinate $`h`$ is hidden. If upper evolution changes the visible coordinate by an amount depending on $`h`$, two upper states represented by the same $`x`$ can have different visible futures. Autonomous descent then fails because the reduced state has forgotten something needed for prediction. A representative section can still choose, for example, $`h=0`$; that choice does not recover the hidden value that was actually present.
+
+This memory picture is useful across the applications. Initial system–environment correlations, eliminated ultraviolet couplings, interior boundary data, and complementary coherent modes can all act as an $`h`$-type variable. Whether they matter is decided by the factor-through condition, not by the mere fact that a projection was used.
+
+## Argument map
+
+Sections 2–4 type the maps and prove the descent/recovery classification. Section 5 gives the genuine diameter obstruction. Sections 6 and 7 treat stable continuation and chart boundaries. Sections 8 and 9 explain which measure and temporal data must be added for stochastic or irreversible interpretations. Section 10 proves the separate locality-descent statement. The final applications then show how the same distinctions change the interpretation of open systems, Wilsonian reduction, exterior gravity, and MTT.
 
 # Scope and correction of the former obstruction
 
@@ -148,6 +174,8 @@ The implication makes the value independent of the representative; surjectivity 
 **Corollary 6** (Noninjectivity does not obstruct representative selection). *Noninjectivity of $`T_t`$ rules out an exact decoder, not a representative section. Surjectivity is the set-theoretic gate for a right section.*
 
 </div>
+
+The load-bearing part of Theorem <a href="#thm:main" data-reference-type="ref" data-reference="thm:main">5</a> is item 3. It asks whether the upper evolution maps every initial projection fiber into one final projection fiber. If so, all upper representatives of one reduced state give the same reduced future and $`F_t`$ is well defined. If not, choosing a section can manufacture one representative-dependent trajectory, but it cannot turn that trajectory into an autonomous law on $`Y_0`$.
 
 # A valid no-right-section obstruction
 
@@ -273,6 +301,8 @@ which vanishes for spacelike separated upper observables. ◻
 
 This theorem does not imply state factorization. Entangled or otherwise nonfactorizing states may restrict to the descended net. A projection nonlocal over the base, or an observable not preserving $`\operatorname{Ran}P`$, lies outside this theorem.
 
+Thus coherent compression preserves locality only for the algebra on which the displayed commutation calculation is legal. The theorem transports an existing upper microcausal relation; it does not create spacetime locality from an arbitrary projector and does not force the compressed state to be unentangled.
+
 # Corrected realizations
 
 ## Open quantum systems
@@ -336,3 +366,7 @@ A. S. Kechris, *Classical Descriptive Set Theory*, Springer, 1995.
 H.-P. Breuer and F. Petruccione, *The Theory of Open Quantum Systems*, Oxford University Press, 2002.
 
 </div>
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

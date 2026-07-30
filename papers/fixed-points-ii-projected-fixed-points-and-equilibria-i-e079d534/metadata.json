@@ -1,59 +1,59 @@
 {
-  "abstract": "We apply the corrected FP\u2013I machinery to a ten-dimensional control setting \\ensuremath{M_{10}}=\\ensuremath{Y^{4}}\\times\\ensuremath{X^{6}}. The compact six-manifold \\ensuremath{X^{6}} carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks 1<2<3. In the q79 realization the 1<2<3 flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time\u2013\\tau fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent Q sector and are never used as coherent damping.",
+  "abstract": "We apply the canonical Fixed Points I machinery to a ten-dimensional control setting written as a four-dimensional base times a compact six-dimensional internal space. The compact six-manifold carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from the rank flag of one, two, and three. In the q79 realization this flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected fixed points for a declared time step by applying the Fixed Points I Schauder and Darbo gates, and prove coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent sector and are never used as coherent damping.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v4",
-  "date": "July 2026",
+  "current_version": "v5",
+  "date": "July 2026 Version 5",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949073",
-    "created": "2026-01-09T21:37:41.934158+00:00",
+    "created": "2026-07-29T08:50:36.358241+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18202914",
+    "doi": "10.5281/zenodo.21655370",
     "files": [
       {
-        "checksum": "md5:6e6aeccf5aae881d142cc205dca24242",
-        "content_url": "https://zenodo.org/api/records/18202914/files/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v2%20(1).pdf/content",
-        "key": "Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v2 (1).pdf",
-        "size": 362677
+        "checksum": "md5:443228142167b6b50528dce3042e4782",
+        "content_url": "https://zenodo.org/api/records/21655370/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 458081
       }
     ],
-    "id": "18202914",
-    "match_kind": "title_or_file",
+    "id": "21655370",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-09",
-    "record_url": "https://zenodo.org/records/18202914",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21655370",
     "resource_type": "publication",
-    "title": "Fixed Points II: Fixed Points in a 10D Modal Model",
-    "updated": "2026-01-09T21:37:42.260207+00:00",
-    "version": "v2.0"
+    "title": "Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model",
+    "updated": "2026-07-29T08:50:36.776893+00:00",
+    "version": "v5"
   },
-  "main_tex_sha256": "886337d171ca309ebce8913f4515e23ecd3aae126d87d0ea029bd5a143bdcf00",
+  "main_tex_sha256": "ba452cbe49af339cb3d8a7e72f289c7d78bbf6594ebd915841ea643b000fef6f",
   "paper_id": "fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534",
-  "paper_md_sha256": "86d4ed3926b15f57bd001d082e6efb95f7f5abefbddc8aeecaac9c388a9d4ae4",
+  "paper_md_sha256": "cc5d8c25ae7bb0bbf1313a61ed94cd6519cc041cd6c71edffe30f8ecf0685569",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "4c3f8c9fcdcd7905145c99c6be9ffcc2640bd586894c353811a3f46b8d26e892",
+    "revision_evidence_sha256": "be2a72a0b299e342c0c3358e618cddf31107484c24784c458c65104a11470b13",
     "selected_revision": true,
     "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v3"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 443593,
+      "bytes": 458081,
       "path": "main.pdf",
-      "sha256": "9f24a6e7027262b14d761b70caab2a50982e5bf2e14a64e0782c8e61dc9e8159"
+      "sha256": "f4639b5500d18c4634bfd807e91a2e822577c88c87fcbf628b0d7b03101e5619"
     },
     {
-      "bytes": 28278,
+      "bytes": 37209,
       "path": "main.tex",
-      "sha256": "886337d171ca309ebce8913f4515e23ecd3aae126d87d0ea029bd5a143bdcf00"
+      "sha256": "ba452cbe49af339cb3d8a7e72f289c7d78bbf6594ebd915841ea643b000fef6f"
     },
     {
       "bytes": 2775,
@@ -61,23 +61,73 @@
       "sha256": "44a1a93d9ac677cefb17ccb0926f415a4e5e0676a7baaf5d35d8a025a28907df"
     },
     {
-      "bytes": 5345,
+      "bytes": 7130,
       "path": "REVISION_AUDIT.md",
-      "sha256": "4c3f8c9fcdcd7905145c99c6be9ffcc2640bd586894c353811a3f46b8d26e892"
+      "sha256": "be2a72a0b299e342c0c3358e618cddf31107484c24784c458c65104a11470b13"
     },
     {
-      "bytes": 15705,
+      "bytes": 15299,
       "path": "series.sty",
-      "sha256": "deaaf90be0b98130189531a83e121ad3934803f4844f2b10571046aec3b3ed3f"
+      "sha256": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v3"
   },
-  "source_tree_sha256": "4aace9b7c95c516d623df8af47d9f886408d1dd449c3fd506011ec43887fcdfb",
+  "source_tree_sha256": "6d8395573b886e04c62626383c368491130e58d3ee659d59bbea9f0362a381bb",
   "title": "Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.16949073",
+      "created": "2026-07-29T08:50:36.358241+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655370",
+      "files": [
+        {
+          "checksum": "md5:443228142167b6b50528dce3042e4782",
+          "content_url": "https://zenodo.org/api/records/21655370/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 458081
+        }
+      ],
+      "id": "21655370",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655370",
+      "resource_type": "publication",
+      "title": "Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model",
+      "updated": "2026-07-29T08:50:36.776893+00:00",
+      "version": "v5"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949073",
+      "created": "2026-07-28T16:33:41.643151+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650297",
+      "files": [
+        {
+          "checksum": "md5:a0a57dd85fc10ac08b5b049556ef6ad2",
+          "content_url": "https://zenodo.org/api/records/21650297/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 443593
+        }
+      ],
+      "id": "21650297",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650297",
+      "resource_type": "publication",
+      "title": "Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model",
+      "updated": "2026-07-28T16:33:42.030820+00:00",
+      "version": "v4"
+    },
     {
       "concept_doi": "10.5281/zenodo.16949073",
       "created": "2026-01-09T21:37:41.934158+00:00",

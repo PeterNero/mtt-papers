@@ -1,4 +1,15 @@
-# Fixed Points IV v5 Revision Audit
+# Fixed Points IV v6 Release Audit
+
+## v6 publication delta (July 2026)
+
+- **Supersedes:** v5.
+- **Reason:** three distinct meanings of finite data and two distinct
+  curvature effects needed explicit explanation.
+- **Resolution:** add the finite-module, Galerkin, and invariant-reduction
+  guide while retaining all formal statements.
+- **Retained:** the v5 curved-cluster, leakage, modulation, barrier, and
+  Feshbach/reduced-Green results.
+- **Remaining:** selected physical HYM and finite-reduction source data.
 
 ## v5 delta (July 2026)
 
@@ -67,8 +78,28 @@ compression/Feshbach/shorted-Hessian boundary for supplied source data. It does
 not claim that the finite presentation selects the physical q79 endpoint,
 Hessian, or post-transition state.
 
+## Expository revision
+
+The current paper now includes a paper-specific reader guide built around the
+two curvature blocks and the three different meanings of "finite." New
+discussion explains:
+
+- why persistence of a low cluster does not preserve the old coherent states;
+- why projective-module transport is not a Galerkin cutoff;
+- when bare compression, Feshbach reduction, and reduced-Green shorting apply;
+- why a positive leakage floor can reflect projector misalignment rather than
+  instability;
+- why Karcher-centroid motion is first order for the chosen parent flow;
+- why barrier exclusion, exit detection, and basin selection are separate.
+
+The conclusion now gives a practical decision tree and the exact q79
+instantiation data still required. No theorem from FP I--III or FP V--VI was
+duplicated.
+
 ## Validation
 
 - The canonical `mtt-qm-source-proof` verifier passes at commit `1615da7`.
 - The 139-paper repository verifier passes after Markdown and hash regeneration.
-- Two `pdflatex` passes compile FP IV v5 with resolved citations and references.
+- The current source compiles with `pdflatex` to an 8-page PDF.
+- The final log has no undefined references, underfull boxes, overfull boxes,
+  or LaTeX/package warnings.

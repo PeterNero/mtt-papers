@@ -24,9 +24,9 @@
 \maketitle
 
 \begin{abstract}
-This corrected successor separates three questions that were conflated in the first
-version: existence of the filtered Gaussian measure, Borel summability at a finite
-spectral cutoff, and removal of that cutoff for a selected gravitational interaction.
+This paper separates three constructive questions: existence of the filtered
+Gaussian measure, Borel summability at a finite spectral cutoff, and removal
+of that cutoff for a selected gravitational interaction.
 On a bounded-geometry Euclidean domain, a positive proper-time gap makes the
 spectral proper-time (SPT) covariance trace class, not merely Hilbert--Schmidt. It
 therefore defines a centered Borel Gaussian measure on the stated TT Hilbert space
@@ -40,6 +40,20 @@ bounds, and convergence of the Borel transforms remain separate obligations. The
 result is a rigorous finite-volume constructive core and a precise input contract for
 the BRST/BV successor, rather than a nonperturbative construction of MTT gravity.
 \end{abstract}
+
+\section*{Version 2 Revision Note}
+\begin{description}
+\item[Supersedes:] Constructive MTT Quantum Gravity I, first release.
+\item[Reason:] The Gaussian measure, finite-cutoff Borel theorem, and
+continuum interacting-gravity limit had been conflated.
+\item[Resolution:] The three levels are separated and each theorem is stated
+with its own cutoff, positivity, and convergence hypotheses.
+\item[Retained result:] The finite-volume SPT covariance is trace class, the
+finite-dimensional nonnegative quartic model is Borel summable, and a
+weighted criterion controls a possible cutoff limit.
+\item[Remaining boundary:] The selected gravity interaction, sectorial
+stability, cutoff-uniform bounds, and continuum Borel transform remain open.
+\end{description}
 
 \tableofcontents
 
@@ -63,6 +77,29 @@ This version proves only what follows from declared hypotheses. Its hierarchy is
 The final arrow to a physical gravitational theory is not asserted. In particular,
 an SPT filter is treated here as a regulator/model datum until MTT geometry selects
 its spectral function and proper-time scale.
+
+\subsection{Reader orientation and the central picture}
+
+The paper studies three different limits, and they should not be blended.  The first
+is an infinite-dimensional Gaussian measure at fixed bounded volume.  The second is
+an interacting integral after only finitely many eigenmodes have been retained.  The
+third is the limit in which that spectral cutoff is removed.  Sections 2 and 3 close
+the first problem, Section 4 closes a deliberately restricted version of the second,
+and Section 5 states a sufficient condition for the third.  Section 6 then lists the
+extra gates needed before any of this becomes a quantum-gravity construction.
+
+In plain language, the SPT factor acts like a very strong high-frequency sieve.  If
+$L e_j=\lambda_j e_j$, the variance of the $j$th Gaussian coordinate is
+\[
+ c_j=\frac{f(\lambda_j)}{\lambda_j+m^2}
+ \leq
+ \frac{\mu([\tau_0,\infty))e^{-\tau_0\lambda_j}}
+      {\lambda_j+m^2}.
+\]
+The exponential tail makes the sum of all coordinate variances finite on bounded
+volume.  That fact constructs the free Gaussian measure.  It does not decide which
+nonlinear gravitational interaction to integrate, whether that interaction is stable,
+or whether the cutoff sequence converges.
 
 \section{Finite-volume spectral setting}
 
@@ -354,6 +391,32 @@ prove sectorial stability and cutoff-uniform constructive estimates, establish a
 convergent Borel limit, and then pass the BRST/BV physical-state gates. Until those
 steps are supplied, this paper is a finite-volume constructive foundation and test
 contract, not a completed nonperturbative theory of gravity.
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The finite-volume Gaussian construction and conditional Borel contract are local analytic results. The open strict-upgrade ledger neither proves cutoff removal nor selects a gravitational interaction; it records an independent source-level frontier.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \begin{thebibliography}{99}
 \bibitem{Gross1967}

@@ -29,15 +29,15 @@ We give a typed, conditional formulation of Modal Triplet Theory (MTT) as a
 theory of reduced description.  A representative section, an exact upper
 decoder, autonomous reduced evolution, and merger of effective states solve
 four different mathematical problems; none follows merely from
-noninjectivity of a projection.  We prove the factor-through criterion for
-autonomous descent, a finite-diameter obstruction for a genuinely
-contractive reduced self-map, exact basin-local fixed-point results, and
-controlled approximate-orbit estimates.  Admissibility boundaries are
-defined by explicit margins and section or projector conditioning rather
-than by assuming the desired obstruction.  The encoding atlas and its
-relations are consequently local and conditional.  Probability,
-irreversibility, physical time, and any concrete physical realization
-require their own measure, evolution, and source hypotheses.
+noninjectivity of a projection.  We import the canonical factor-through,
+finite-diameter, and disintegration results from the
+Projection--Admissibility paper, then prove A0's basin-local fixed-point,
+encoding-factorization, and controlled approximate-orbit results.
+Admissibility boundaries are defined by explicit margins and section or
+projector conditioning rather than by assuming the desired obstruction.  The
+encoding atlas and its relations are consequently local and conditional.
+Probability, irreversibility, physical time, and any concrete physical
+realization require their own measure, evolution, and source hypotheses.
 \end{abstract}
 
 \section*{Revision note for version 2}
@@ -49,10 +49,11 @@ The former text conflated representative selection with
 microscopic recovery, treated an additive-error estimate as a Banach
 contraction, and promoted several conditional atlas statements to universal
 theorems.
-\paragraph{Resolution.}
-Version~2 installs the projection--descent and recovery
-classification, exact basin-local FCC, the finite-diameter self-map
-obstruction, explicit margin barriers, and a typed distinction between
+\paragraph{Resolution.}\mbox{}\\
+Version~2 imports the projection--descent, finite-diameter, and
+measure-disintegration theorems from their canonical
+Projection--Admissibility source, installs exact basin-local FCC, explicit
+margin barriers, and a typed distinction between
 physical evolution and auxiliary stabilization.  It also corrects the
 direction of encoding factorization and scopes probability, records,
 selection, and global relations.
@@ -62,6 +63,57 @@ coherence margins, and the total chart-of-charts remain the structural core.
 \paragraph{Open boundary.}
 No physical measure, Born rule, arrow of time, reset
 law, spacetime dynamics, or concrete MTT realization is derived in A0.
+
+\section*{How to read Program A0}
+\addcontentsline{toc}{section}{How to read Program A0}
+A0 is a theory of what can be said after information has been reduced.  It
+does not begin by assuming that a reduced description is autonomous,
+reversible, probabilistic, or globally valid.  Instead it types each of those
+claims as a different mathematical problem and states the certificate needed
+to make it.
+
+\paragraph{The central picture in plain language.}
+An upper state can cast the same reduced description as many other upper
+states.  Choosing one such state is a representative convention.  Recovering
+the particular state that actually occurred is an inverse problem.  Evolving
+the reduced description without consulting hidden upper information is a
+descent problem.  Two distinct reduced descriptions later becoming one is a
+merger problem.  Projection alone settles none of these questions.
+
+\paragraph{A running toy example.}
+Let $X_0=\mathbb R^2$, let $P_0(x,z)=x$, and let
+\[
+\Phi_t(x,z)=(x+t z,z),\qquad P_t(u,z)=u.
+\]
+The reduced output is $Q_t(x,z)=x+t z$.  A representative section exists, for
+example $S_t(y)=(y,0)$, but it does not recover the actual pair $(x,z)$.
+There is no autonomous map $F_t(x)$ satisfying
+$F_t(P_0(x,z))=Q_t(x,z)$ for every $z$, because hidden values of $z$ change
+the result while $P_0$ stays fixed.  This one example separates section,
+decoder, and descent before any physical interpretation is added.
+
+\paragraph{Architecture of the paper.}
+Part~I defines the typed projection system, explicit margins, basin-local
+contractivity, recovery classes, probability data, and the core local
+theorems.  Part~II turns common reduced descriptions into nine chart
+contracts and studies how certificates fail at boundaries.  Part~III
+organizes exact and controlled re-encodings categorically.  Part~IV assembles
+the local charts into a total atlas without claiming that one chart is valid
+everywhere.
+
+\paragraph{How to interpret the diagnostics.}
+Coherence capacity, viability, and section conditioning summarize declared
+mathematical margins.  They are not automatically observables, energies, or
+forces.  Likewise, a boundary marks failure of a stated certificate; it does
+not by itself create a reset, select a successor state, or define an arrow of
+physical time.
+
+\paragraph{Scope boundary.}
+The paper is intentionally non-self-sealing.  A concrete application must
+identify the upper and reduced spaces, the evolution semantics, the regularity
+category, every margin, and any probability measure.  If those data are not
+provided, the corresponding A0 conclusion is unavailable rather than supplied
+by interpretation.
 
 \tableofcontents
 \newpage
@@ -148,8 +200,10 @@ If $F_t$ exists, an effective merger occurs when distinct $y,y'\in Y_0$
 satisfy $F_t(y)=F_t(y')$.
 \end{definition}
 
-\begin{theorem}[Projection--descent and recovery]\label{thm:descent-recovery}
-For the typed data above:
+\paragraph{Imported projection--descent contract.}
+The canonical statement and proof belong to the
+Projection--Admissibility paper~\cite{Nero2026_ProjectionAdmissibility_Principle}.
+For standalone use in A0, the imported consequences are:
 \begin{enumerate}
 \item a set-theoretic representative section exists when $Q_t$ is surjective
 and the relevant choice principle is available; measurable, continuous,
@@ -168,27 +222,9 @@ for all $x,x'\in X_0$, and it is then unique;
 have the same final image, then $F_t$ is noninjective and the prior effective
 state cannot be decoded uniquely from the final one.
 \end{enumerate}
-\end{theorem}
-
-\begin{proof}
-The first item is the definition of a section of a surjection.  If
-$D_tQ_t=\operatorname{id}$ and $Q_t(x)=Q_t(x')$, applying $D_t$ gives
-$x=x'$.  Conversely, an injective map has an inverse on its image.  For the
-third item, necessity follows by applying $F_t$ to equal $P_0$-images.
-Under~\eqref{eq:descent}, define
-\[
-F_t(P_0x):=P_t(\Phi_tx).
-\]
-The implication makes this independent of the representative, and
-surjectivity of $P_0$ onto $Y_0$ gives existence and uniqueness.  The final
-item is immediate from the definition of injectivity.
-\end{proof}
-
-\begin{corollary}[Noninjectivity is not a right-section obstruction]
 Noninjectivity of $Q_t$ rules out exact microscopic recovery, not
 representative selection.  Surjectivity, together with the required
 regularity category, is the gate for a right section.
-\end{corollary}
 
 \subsection{Admissible domains and explicit margins}
 
@@ -275,7 +311,7 @@ If two forward orbits remain in $D$, then
 \[
 d_Y(T^nu,T^nv)
 \le \kappa^n d_Y(u,v)
- \frac{1-\kappa^n}{1-\kappa}\,c\varepsilon.
++ \frac{1-\kappa^n}{1-\kappa}\,c\varepsilon.
 \]
 This estimate alone neither makes $T$ a Banach contraction nor proves that
 $T$ has a fixed point.
@@ -462,10 +498,10 @@ statement; information or entropy claims require additional structures.
 
 \subsection{A valid reduced-self-map obstruction}
 
-\begin{theorem}[Finite-diameter contraction obstruction]
-\label{thm:diameter-obstruction}
-Let $(Y_A,d)$ have finite positive diameter $D$, and let
-$G:Y_A\to Y_A$ satisfy
+\paragraph{Imported finite-diameter obstruction.}
+Projection--Admissibility owns the theorem and proof.  In the notation used
+here, if $(Y_A,d)$ has finite positive diameter $D$ and
+$G:Y_A\to Y_A$ satisfies
 \[
 d(Gy,Gy')\le\kappa d(y,y')+c\varepsilon,
 \qquad0\le\kappa<1.
@@ -477,16 +513,9 @@ Then
 If $(1-\kappa)D>c\varepsilon$, then $G$ is not surjective and has no
 right section $S:Y_A\to Y_A$ with
 $G\circ S=\operatorname{id}_{Y_A}$.
-\end{theorem}
-
-\begin{proof}
-Take the supremum of the displayed estimate over all pairs.  Under the
-strict inequality, the image diameter is smaller than $D$, whereas a
-surjective image would be all of $Y_A$ and would have diameter $D$.
-\end{proof}
 
 \begin{remark}
-Theorem~\ref{thm:diameter-obstruction} concerns a self-map of one reduced
+The imported obstruction concerns a self-map of one reduced
 space.  It cannot be applied to a cross-level map merely because the latter
 is noninjective.
 \end{remark}
@@ -494,7 +523,7 @@ is noninjective.
 \subsection{Recovery and irreversibility are separate}
 
 \begin{proposition}[Recovery classification]
-For the typed maps of Theorem~\ref{thm:descent-recovery}:
+For the typed maps of the imported projection--descent contract:
 \begin{enumerate}
 \item noninjectivity of $Q_t$ obstructs exact upper recovery;
 \item noninjectivity of an existing $F_t$ obstructs recovery of the prior
@@ -508,23 +537,18 @@ entropy functional, or a boundary condition.
 
 \subsection{Measure-dependent reduced probability}
 
-\begin{theorem}[Measure-dependent reduced kernel]\label{thm:reduced-kernel}
-Let $A$ and $P_0(A)$ be standard Borel spaces, let $\mu$ be a probability
-measure on $A$, and let $\{\mu_y\}$ be a regular conditional distribution of
-$x$ given $P_0(x)=y$.  For a measurable upper step $R:A\to X_0$, define
+\paragraph{Imported measure-dependent reduced kernel.}
+The Projection--Admissibility paper owns the disintegration theorem.  In A0
+notation, let $A$ and $P_0(A)$ be standard Borel spaces, let $\mu$ be a
+probability measure on $A$, and let $\{\mu_y\}$ be a regular conditional
+distribution of $x$ given $P_0(x)=y$.  For a measurable upper step
+$R:A\to X_0$, define
 \[
 K(y,B):=\mu_y\{x:P_0(Rx)\in B\}.
 \]
 Then $K$ is a Markov kernel, up to the usual $(P_0)_\#\mu$-null sets.  If
 $P_0R$ descends to $F$ on $P_0(A)$, then
 $K(y,\cdot)=\delta_{F(y)}$ almost everywhere.
-\end{theorem}
-
-\begin{proof}
-Regular conditional distributions exist on standard Borel spaces.
-Measurability and countable additivity pass through the measurable preimage.
-Under autonomous descent, $P_0(Rx)$ is constant on each conditional fiber.
-\end{proof}
 
 \begin{definition}[Basin weights]
 Let $\{B_i\}$ be a measurable partition of $P_0(A)$ and let $\mu$ be a
@@ -586,6 +610,12 @@ that fails one of the adopted admissibility margins.
 \section*{Part II: Encodings and Boundaries}
 \addcontentsline{toc}{section}{Part II: Encodings and Boundaries}
 \section{Encoding Atlas}
+
+The atlas should be read as a collection of lenses on one typed projection
+problem.  A chart is useful when its own variables and inequalities are
+certified on the current admissible domain.  Moving between charts requires
+an exact factorization or an explicitly controlled error; a suggestive
+analogy between two encodings is not a transition map.
 
 This section lists admissible encodings as local charts on neighborhoods
 of stable basins.  Fix $A$ and $\pi$ and write
@@ -1390,6 +1420,17 @@ stated axiom about certified encodings, not a consequence of noninjectivity.
 Every stronger conclusion must identify the margin, measure, dynamics, or
 physical source theorem that supplies it.
 
+\medskip
+
+\noindent
+The main achievement is a typed order of questions.  Surjectivity and a
+selection theorem govern representative sections.  Injectivity governs exact
+decoding.  Fiber constancy governs autonomous reduced evolution.  Complete
+invariant basins and exact contraction govern local fixed points.  Measures
+govern probability, and explicit positive margins govern the lifetime of an
+encoding.  The total atlas records where these contracts coexist and overlap
+without manufacturing a globally preferred chart.
+
 \vspace{1em}
 
 \noindent
@@ -1399,5 +1440,10 @@ mathematical structure developed herein.
 \nocite{Nero2026_MTT_Admissibility_Encodings_Structure,Nero2025_MTT_Foundation,Nero2025_FixedPoints_I,Nero2025_FixedPoints_II,Nero2025_FixedPoints_III,Nero2025_FixedPoints_IV,Nero2025_FixedPoints_V,Nero2025_FixedPoints_VI,Nero2026_ProjectionAdmissibility_Principle}
 \bibliographystyle{plain} % or abbrv, unsrt, alpha, etc
 \bibliography{main}
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \end{document}

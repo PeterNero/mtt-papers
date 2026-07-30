@@ -54,3 +54,24 @@ python scripts/verify.py
 Migration is deterministic with respect to the selected source files and the
 cached Zenodo record set. It stages the complete flat paper tree before
 replacing the previous generated tree.
+
+## Paper Release Gate
+
+Every paper release follows
+[`PAPER_RELEASE_REQUIREMENTS.md`](PAPER_RELEASE_REQUIREMENTS.md), including
+expository review, theorem ownership, title/abstract/revision separation,
+artifact verification, and draft-only Zenodo synchronization.
+
+Run the local gate with:
+
+```powershell
+python scripts/verify_paper_release_requirements.py
+```
+
+With the research console running, include read-only publication status and
+metadata-preview checks:
+
+```powershell
+python scripts/verify_paper_release_requirements.py `
+  --publication-api http://127.0.0.1:8791
+```

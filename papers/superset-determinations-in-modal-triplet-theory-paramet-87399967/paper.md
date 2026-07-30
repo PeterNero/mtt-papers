@@ -1,38 +1,38 @@
 ---
 abstract: |
-  We reformulate the MTT superset program as an audited parameter-identifiability framework. The former one-loop gauge crossings, fitted $`\zeta`$ ratios, minimum-norm threshold vector, common scale $`K`$, and claimed $`\alpha_s(M_Z)`$ cross-prediction are withdrawn. Their inputs and scale choices were not independent. The current authority instead closes embedded renormalized-Standard-Model equivalence at a one-shared-physical-primitive, measured-profile standard, using selected SMDR v1.3 transport and a complete eight-row covariance. We classify every output as structural theorem, calibration, replay/profile coordinate, diagnostic, or held-out prediction. This preserves the superset strategy as a rigorous tool for comparing encodings while preventing fitted values from being promoted into source theorems.
+  We formulate the MTT superset program as a parameter-identifiability framework. Embedded renormalized-Standard-Model equivalence closes at the adopted one-shared-physical-primitive and measured-profile standard using selected SMDR v1.3 transport and a complete eight-row covariance. The construction ledger contains one shared electroweak primitive and 15 measured SM profile coordinates; transported couplings, nine charged Yukawa rows, the Higgs row, covariance entries, and the 96-dimensional finite Dirac operator are outputs and are not counted again as independent inputs. Exact source-side structure includes the native faithful gauge group, anomaly-free chiral carrier, completed finite triple, one-Higgs projector, and 10/10 finite gauge/ghost spectrum rows. None of these presently replaces the measured profile by a zero-primitive source theorem. We classify every result as a structural theorem, calibration, profile/replay, diagnostic, or held-out prediction and state the resulting identifiability limits.
 author:
 - Peter Nero
 current_version: v3
-date: July 2026
-generated_from_main_tex_sha256: b3f6f66e15a3eec3efc6e0c135dcbfb831e858cb0e3011448cdb78b84b278ec9
+date: July 2026 Version 3
+generated_from_main_tex_sha256: 92eac14fd49d40df2e9c5c5eed0e93eafc3b938c2a44bbf9697d5572a73ea791
 paper_id: superset-determinations-in-modal-triplet-theory-paramet-87399967
 release_state: zenodo_released
-released_version: v1.0
+released_version: v3
 title: |
-  Superset Determinations in Modal Triplet Theory:  
-  Parameter Identifiability after True-SM Closure
-zenodo_doi: 10.5281/zenodo.18262210
-zenodo_record_id: 18262210
-zenodo_url: "https://zenodo.org/records/18262210"
+  Superset Determinations in Modal Triplet Theory:
+  Parameter Identifiability after Profile-Standard SM Closure
+zenodo_doi: 10.5281/zenodo.21666002
+zenodo_record_id: 21666002
+zenodo_url: "https://zenodo.org/records/21666002"
 ---
 
-# Revision note for this edition
+# Version 3 Revision Note
 
-Supersedes.  
+Supersedes
 *Superset Determinations in Modal Triplet Theory*, version 2.
 
-Reason.  
-One-loop crossings, fitted zeta ratios and threshold vectors, and the claimed $`\alpha_s(M_Z)`$ cross-prediction reused target-related data and were not independent determinations.
+Reason
+One-loop crossings, fitted zeta ratios and threshold vectors, and the claimed $`\alpha_s(M_Z)`$ cross-prediction reused target-related data and were not independent determinations. The earlier parameter discussion also risked double-counting transported outputs as independent inputs.
 
-Resolution.  
-Version 3 replaces the numerical claim chain by a parameter- identifiability ledger tied to the selected SMDR profile and classifies every quantity by theorem, calibration, replay, diagnostic, or prediction status.
+Resolution
+Version 3 replaces the numerical claim chain by a parameter- identifiability ledger tied to the selected SMDR profile and classifies every quantity by theorem, calibration, replay, diagnostic, or prediction status. It incorporates the native finite-geometry results and separates finite-replay Yukawa closure from strict source-value emission.
 
-Retained result.  
-The superset strategy remains useful for comparing encodings and discovering shared-source constraints.
+Retained result
+The superset strategy remains useful for comparing encodings, exposing shared primitives, and discovering common-source constraints.
 
-Remaining boundary.  
-Predictive promotion requires independently selected source parameters and genuinely held-out observables.
+Remaining boundary
+Predictive promotion requires a selected continuum source/action that replaces the measured profile and supports genuinely held-out observables.
 
 # Purpose of the superset program
 
@@ -74,27 +74,32 @@ Q=M_t=172.5590883453979~\mathrm{GeV}.
 ```
 Its gauge entries are
 ``` math
-g_Y=0.3585945042\pm0.0000307251,
-\quad g_2=0.6475986708\pm0.0000287665,
-\quad g_3=1.163427409\pm0.004036156.
+\begin{aligned}
+g_Y&=0.3585945042\pm0.0000307251,\\
+g_2&=0.6475986708\pm0.0000287665,\\
+g_3&=1.163427409\pm0.004036156.
+\end{aligned}
 ```
 Fifteen locked source coordinates are transported into eight full-SM $`\overline{\mathrm{MS}}`$ rows. The differentiated map emits a positive-definite $`8\times8`$ covariance with all 36 symmetric entries and all 15 BCT–WZH cross-block entries. These rows are profile transport, not MTT-derived constants.
 
 # Adopted closure and parameter count
 
-The final global audit closes 12/12 obligations for embedded renormalized-SM equivalence at the adopted standard. The accounting is:
+The final global audit closes 12/12 obligations for embedded renormalized-SM equivalence at the adopted standard. The independent-input ledger is:
 
-- one shared physical primitive $`P_{\mathrm{EW}}`$, counted once;
+<div class="center">
 
-- zero Higgs-specific adjustable parameters at the embedding layer;
+| Class | Count | Interpretation |
+|:---|:---|:---|
+| Construction-side continuous primitive | 1 | shared $`P_{\mathrm{EW}}`$, counted once |
+| Measured SM profile coordinates | 15 | empirical common-scheme source profile with declared covariance policy |
+| Neutral extension coordinates | 2 | measured oscillation splittings, outside the 12/12 SM baseline |
+| Higgs-specific construction parameters | 0 | no separately fitted Higgs primitive |
 
-- measured threshold, mass-scheme, and magnitude/profile coordinates retained explicitly as profile data; and
+</div>
 
-- imported standard SM perturbative quantization and observable transport.
+The eight SMDR output rows, nine charged Yukawa magnitude rows, finite $`96\times96`$ Dirac matrix, threshold/mass-scheme rows, and propagated covariance are transported or reconstructed outputs. They are not additional independent inputs and must not be counted a second time. Conversely, calling them outputs does not make the 15 measured source coordinates predictions. The current ledger therefore makes no strict parameter-reduction claim relative to the Standard Model.
 
-This is a more economical cross-sector representation than independently retuning each sector, but it is not zero-input physics. Profile coordinates must not be hidden when comparing parameter counts with the Standard Model.
-
-The magnitude-bearing profile contains ten scalar labels: nine charged Yukawa magnitudes and $`\lambda_H`$. At the strict internal source tier, accepted values remain 0/10. Seven physical threshold and three mass-scheme rows are likewise accepted at the admitted profile tier while strict internal emitted values remain zero.
+The distinction between two closure standards matters here. The nine charged Yukawa rows close at the accepted finite-replay/profile standard, and the Higgs lane closes with zero Higgs-specific parameter once $`P_{\mathrm{EW}}`$ is declared. At the stronger zero-primitive tier, however, the observed magnitudes and the value of $`P_{\mathrm{EW}}`$ are not emitted by selected source geometry. Thus strict source replacement remains open without reopening the profile-standard Yukawa or Higgs result.
 
 # Selected structural outputs
 
@@ -110,7 +115,15 @@ The current superset contains genuine source-side structure independent of the p
 
 - the CKM $`\Pi`$ rows, closed at the prediction-with-uncertainty-profile standard.
 
-These achievements constrain how the measured profile can be embedded. They do not automatically emit every profile magnitude.
+- the native faithful $`(SU(3)\times SU(2)\times U(1))/\mathbb Z_6`$ gauge group and anomaly-free 48-state chiral carrier;
+
+- the completed 96-dimensional finite triple at profile tier and its single anomaly-free shared hypercharge circle;
+
+- the exact selected one-Higgs projector; and
+
+- all ten finite gauge/ghost spectrum-source rows, with zero continuous parameters.
+
+These achievements constrain how the measured profile can be embedded. They do not automatically emit every profile magnitude. In particular, the normalized finite gauge spectra are universal and therefore cannot determine the observed relative gauge couplings without a selected continuum response.
 
 # Strict-upgrade ledger
 
@@ -138,15 +151,21 @@ Closing U2 or U4 does not imply that the other seven upgrades close.
 
 <div class="theorem">
 
-**Theorem 1** (Profile-standard identifiability). *Given the selected branch, common-scheme profile, one shared electroweak primitive, embedded SM action, and selected finite operator data, the accepted observable rows are jointly reproducible with their declared covariance. Removing the measured magnitude/threshold profile destroys numerical identifiability of those rows because the current internal source inventory emits no replacement scalar values.*
+**Theorem 1** (Current-ledger identifiability). *Given the selected branch, the 15-coordinate common-scheme profile, one shared electroweak primitive, the embedded SM action, and the selected finite operator data, the accepted observable rows are jointly reproducible with their declared covariance. If the measured profile is removed while the current source maps are held fixed, the physical numerical rows are not identifiable: the exact finite data do not supply a replacement map to the missing dimensionful and relative-coupling coordinates.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* The selected transport and embedding provide the forward map and covariance at the profile standard. The strict source-row audits attempt all required scalar slots and accept zero internal magnitude and physical threshold/mass values. Therefore the profile rows are sufficient for the adopted forward execution and presently necessary for its numerical values. ◻
+*Proof.* The selected transport and embedding provide the forward map and covariance at the profile standard. The finite-replay Yukawa and Higgs constructions consume that profile and the declared shared primitive; the native finite gauge spectra are universal after lane normalization. No accepted current map sends the selected continuum geometry and upper action to all 15 measured source coordinates. Therefore the profile is sufficient for the adopted forward execution and presently necessary for its physical numerical values. The statement is about the current source inventory, not an impossibility theorem for future MTT constructions. ◻
 
 </div>
+
+# Interpretation of the shared structure
+
+The superset does achieve something more specific than a relabeling of Standard Model parameters. One discrete carrier architecture supports gauge, fermion, Higgs, threshold, and flavor constructions with common projectors and provenance. This creates cross-sector consistency tests: a proposed source cannot be changed independently in one sector if the same object acts in the others. The native gauge quotient, anomaly table, finite triple, and one-Higgs projector are examples of such shared restrictions.
+
+What the superset has not yet achieved is a generative numerical law for the measured profile. A compact representation with shared objects may be structurally economical without using fewer empirical coordinates at the strict prediction tier. The appropriate comparison with the Standard Model is therefore two-column: derived structural constraints on one side, and empirical continuous inputs on the other. Combining those columns into a single “parameter count” would obscure rather than demonstrate progress.
 
 # Rules for future superset calculations
 
@@ -154,9 +173,100 @@ Every future execution must publish raw inputs, units, scheme and scale, selecti
 
 # Conclusion
 
-The superset program survives, but in a sharper form. Its current success is the coherent, reproducible embedding of the renormalized SM and the reduction of many sector-specific constructions to shared finite operator data. The old crossing-scale calibration and its downstream numerical claims are retired.
+The superset program survives, but in a sharper form. Its current success is the coherent, reproducible embedding of the renormalized SM and the reduction of many sector-specific constructions to shared finite operator data. The native gauge, chiral, finite-triple, one-Higgs, and finite-spectrum results add real source-side restrictions without changing the empirical-input count. The old crossing-scale calibration and its downstream numerical claims are retired.
 
-The next frontier is not another backfit. It is source promotion: emit the ten magnitude rows and physical threshold/mass values from selected MTT data, or retain them transparently as measured profile coordinates. That distinction is the correct measure of progress toward strict no-knob closure.
+The next frontier is not another backfit. It is source promotion: emit the ten magnitude rows, relative gauge metrics, electroweak normalization, and physical threshold/mass values from one selected continuum action, or retain their measured source coordinates transparently. That distinction is the correct measure of progress toward strict no-knob closure.
+
+#### Rows used directly in this paper.
+
+- (*profile replay*).
+
+  Versioned Yu, Yd, Ye and lambda_H profile packet.
+
+- (*numeric certified*).
+
+  Three selected CKM profile rows and uncertainty comparison.
+
+- (*profile replay*).
+
+  Current non-looping global status and source-certificate map.
+
+- (*derived exact*).
+
+  Promoted direct K_threshold.Omega_H.lambda row.
+
+- (*derived exact*).
+
+  E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+
+- (*profile replay*).
+
+  Twelve-obligation embedded renormalized-SM equivalence audit.
+
+- (*numeric certified*).
+
+  Weighted-theta Fourier-tail and Wiener contraction certificate.
+
+- (*profile replay*).
+
+  Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+
+- (*profile replay*).
+
+  Fifteen measured source coordinates, Jacobian and covariance transport.
+
+- (*profile replay*).
+
+  Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+
+- (*derived exact*).
+
+  Sparse 27x27 qutrit-Weyl left-action realization.
+
+- (*derived exact*).
+
+  Promoted P_EW source row at the declared one-shared-primitive standard.
+
+= by -
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The listed packets are used directly as the finite family of profile, exact, and certified-numerical examples on which the identifiability analysis operates. Their values are not rederived here, and a profile row remains profile replay. The open ledger states the unresolved reduction from those effective coordinates to a strict no-knob source.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Rows used directly in this paper
+
+- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
+- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
+- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
+- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
+- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
+- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
+- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
+- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
+- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 

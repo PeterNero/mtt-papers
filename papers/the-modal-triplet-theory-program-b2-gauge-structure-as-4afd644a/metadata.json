@@ -1,5 +1,5 @@
 {
-  "abstract": "We formulate gauge redundancy as a precise lens-type realization rather than as the unique response to every nonfaithful description. For a declared group action G acting on A, the orbit map q:A to A/G identifies gauge-related representatives. At the set level, every invariant map factors uniquely through this quotient. That universal property organizes redundancy but does not select the group, action, bundle, connection, observables, or dynamics. We separate two global-section questions that were conflated in the first version. A principal bundle P to Y is globally defined by its transition cocycle even when it has no global section; a global section exists precisely when P is trivial. A field-space gauge fixing is instead a section of the orbit map on a specified regularity class and orbit stratum. Nonunique representatives alone do not obstruct such a section. A genuine global gauge-fixing obstruction must be proved in the chosen topological, smooth, or stacky category, as in Gribov-Singer phenomena. On a supplied principal bundle, a connection gives local gauge potentials and covariant curvature. Yang-Mills dynamics follows only after one supplies a base metric, structure group, invariant bilinear form, coupling, matter representation, boundary conditions, and local action. Other gauge-invariant actions exist, so lens-type redundancy does not prove uniqueness of Yang-Mills theory or select the Standard Model gauge group.",
+  "abstract": "We formulate gauge redundancy as a precise lens-type realization rather than as the unique response to every nonfaithful description. For a declared group action on a field space, the orbit map identifies gauge-related representatives. At the set level, every invariant map factors uniquely through this quotient. That universal property organizes redundancy but does not select the group, action, bundle, connection, observables, or dynamics. We separate two global-section questions that were conflated in the first version. A principal bundle is globally defined by its transition cocycle even when it has no global section; a global section exists precisely when the bundle is trivial. A field-space gauge fixing is instead a section of the orbit map on a specified regularity class and orbit stratum. Nonunique representatives alone do not obstruct such a section. A genuine global gauge-fixing obstruction must be proved in the chosen topological, smooth, or stacky category, as in Gribov\u2013Singer phenomena. On a supplied principal bundle, a connection gives local gauge potentials and covariant curvature. Yang\u2013Mills dynamics follows only after one supplies a base metric, structure group, invariant bilinear form, coupling, matter representation, boundary conditions, and local action. Other gauge-invariant actions exist, so lens-type redundancy does not prove uniqueness of Yang\u2013Mills theory or select the Standard Model gauge group. Program B2 therefore establishes a typed redundancy and gauge-fixing framework plus a conditional Yang\u2013Mills realization.",
   "authors": [
     "Peter Nero"
   ],
@@ -9,37 +9,37 @@
   "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18355036",
-    "created": "2026-01-23T20:05:21.925757+00:00",
+    "created": "2026-07-29T08:52:00.279524+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18355037",
+    "doi": "10.5281/zenodo.21652648",
     "files": [
       {
-        "checksum": "md5:5f3e52b3084e9388a2c484e53bd1a81a",
-        "content_url": "https://zenodo.org/api/records/18355037/files/The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding%20(1).pdf/content",
-        "key": "The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding (1).pdf",
-        "size": 244109
+        "checksum": "md5:97f6f6b46036997c2b45734c62c3c095",
+        "content_url": "https://zenodo.org/api/records/21652648/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 373367
       }
     ],
-    "id": "18355037",
-    "match_kind": "title_or_file",
+    "id": "21652648",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-23",
-    "record_url": "https://zenodo.org/records/18355037",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21652648",
     "resource_type": "publication",
-    "title": "The Modal Triplet Theory Program B2: Gauge Structure as Redundancy Encoding",
-    "updated": "2026-01-23T20:05:22.385854+00:00",
-    "version": "v1.0"
+    "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang\u2013Mills Realization",
+    "updated": "2026-07-29T08:52:00.605225+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "9d862d31d90d2db5c4cac6baf5b7375e3f5865ba5492a86922c85a889d6118a7",
+  "main_tex_sha256": "e5f82dc6da68379853772da5e4256eaf274282ed9e1a2089c35a5172bbd304db",
   "paper_id": "the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a",
-  "paper_md_sha256": "f6a241bd50423a0da0642ef730c7b17cefcc46e1c7055a67d75d391ef0c23ed6",
+  "paper_md_sha256": "5c3835f7851ee1736bce90fd4b5119d779103e2dbbfd2f230ba032f27cdf5435",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "76401118da9a0529403b024a9ca7193ab175cf7e133d71214cad2957c21168af",
+    "revision_evidence_sha256": "bc10f4d239b32712b95fb0b2f12d1dc0f845a258963e109980f368b545334ac0",
     "selected_revision": true,
     "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding"
   },
@@ -51,28 +51,53 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 26300,
+      "bytes": 30191,
       "path": "main.tex",
-      "sha256": "9d862d31d90d2db5c4cac6baf5b7375e3f5865ba5492a86922c85a889d6118a7"
+      "sha256": "e5f82dc6da68379853772da5e4256eaf274282ed9e1a2089c35a5172bbd304db"
     },
     {
-      "bytes": 5509,
+      "bytes": 6211,
       "path": "REVISION_AUDIT.md",
-      "sha256": "76401118da9a0529403b024a9ca7193ab175cf7e133d71214cad2957c21168af"
+      "sha256": "bc10f4d239b32712b95fb0b2f12d1dc0f845a258963e109980f368b545334ac0"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B2__Gauge_Structure_as_Redundancy_Encoding"
   },
-  "source_tree_sha256": "1ea48c109aa10505d5d95c1ff8d5b81cd35db2d3a1893ebfa890408a66c7cba5",
-  "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang-Mills Realization",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "689f4004a7852a93edb266a9b3c452f24ada6db916bb80c717bf05a052a6d20c",
+  "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang\u2013Mills Realization",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18355036",
+      "created": "2026-07-29T08:52:00.279524+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652648",
+      "files": [
+        {
+          "checksum": "md5:97f6f6b46036997c2b45734c62c3c095",
+          "content_url": "https://zenodo.org/api/records/21652648/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 373367
+        }
+      ],
+      "id": "21652648",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652648",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang\u2013Mills Realization",
+      "updated": "2026-07-29T08:52:00.605225+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18355036",
       "created": "2026-01-23T20:05:21.925757+00:00",

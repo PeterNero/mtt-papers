@@ -29,15 +29,15 @@
       "sha256": "c8dfdbb72fa2ed82eda536f08eee70461e7cf5d444484e4fcff0b63ee10c265d"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Finite_Time_Scattering_and_S_Matrix_Deltas_as_Asymptotic_Bookkeeping_Limits"
   },
-  "source_tree_sha256": "bd7b35cb5e27044f264c78073376f1e4183e856e797ae56a0985888e9a9563ed",
+  "source_tree_sha256": "279585911bdadbd85c7caf2dcdf1921684e453a98c454b404346e1671e2b1c49",
   "title": "Finite-Time Scattering and S-Matrix Deltas as Asymptotic Bookkeeping Limits Energy\u2013Momentum Conservation Deltas from Admissible Transition Windows",
   "version_relation": "unknown",
   "zenodo_releases": []

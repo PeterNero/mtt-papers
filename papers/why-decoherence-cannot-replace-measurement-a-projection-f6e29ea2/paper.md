@@ -2,22 +2,39 @@
 abstract: |
   Measurement is not taken to be a fundamental act, an observer intervention, or a separate kind of physics. It is an ordinary system–apparatus–environment process described with a retained physical record. If that record is discarded, the same coupling is represented only by a nonselective channel. Decoherence can suppress interference and stabilize preferred records, but the record-discarded channel does not contain an outcome label or a conditional state update. We make this data distinction exact in finite-dimensional quantum theory and then state its consequence for Modal Triplet Theory (MTT). For a pointer resolution $`\{P_a\}`$, the dephasing channel $`\Delta_P(\rho)=\sum_aP_a\rho P_a`$ is completely positive and trace preserving, removes every off-diagonal pointer block, and preserves all pointer populations. We prove that the same nonselective channel is compatible with distinct outcome instruments having different probability laws. Hence the channel alone specifies neither records nor their probabilities.
 
-  An MTT basin boundary or chart exit has the same logical limitation: it marks the failure of a supplied effective chart, but it does not choose a successor basin. A complete outcome-resolved model must additionally provide an outcome-indexed completely positive instrument or a normalized selection-completion kernel, together with its source and domain. This yields a rigorous conditional bridge between record-discarded intra-basin suppression and record-resolved inter-basin continuation. Both are ordinary physical dynamics; the distinction concerns which data the effective description retains. The current canonical q79 binary recorder supplies an exact stopped-output law on its declared finite domain, but general apparatus contexts and objective single-history actualization remain open. The paper therefore retains the decoherence-versus-selection distinction while withdrawing any inference of capture, Born probabilities, irreversibility, or objective outcomes from projection, noninjectivity, admissibility loss, or chart exit alone.
+  An MTT basin boundary or chart exit has the same logical limitation: it marks the failure of a supplied effective chart, but it does not choose a successor basin. A complete outcome-resolved model must additionally provide an outcome-indexed completely positive instrument or a normalized selection-completion kernel, together with its source and domain. This yields a rigorous conditional bridge between record-discarded intra-basin suppression and record-resolved inter-basin continuation. Both are ordinary physical dynamics; the distinction concerns which data the effective description retains. The current canonical q79 binary recorder supplies an exact stopped-output law on its declared finite domain, but general apparatus contexts, a universal Born-source theorem, and objective single-history actualization remain open. Projection, noninjectivity, admissibility loss, and chart exit alone specify none of those missing outcome-resolved data.
 author:
 - Peter Nero
 current_version: v2
-date: July 2026
-generated_from_main_tex_sha256: 55be9d5bb52b2876f9aed827e1e8cc70b83877453e999d22ff97b5c78deb5ef2
+date: July 2026 Version 2
+generated_from_main_tex_sha256: 64942a8dd44794a33ed2ef44570b0e549a595332817a74e45e3d7cc6b6c39f03
 paper_id: why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  **Why Decoherence Cannot Replace Measurement  
+  **Why Decoherence Cannot Replace Measurement
   Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory**
-zenodo_doi: 10.5281/zenodo.18261893
-zenodo_record_id: 18261893
-zenodo_url: "https://zenodo.org/records/18261893"
+zenodo_doi: 10.5281/zenodo.21666019
+zenodo_record_id: 21666019
+zenodo_url: "https://zenodo.org/records/21666019"
 ---
+
+# Version 2 Revision Note
+
+Supersedes
+Version 1.0, *Why Decoherence Cannot Replace Measurement*.
+
+Reason
+The earlier paper correctly separated decoherence from outcome selection but then treated projection, basin boundaries, and chart exit as if they supplied the missing selection law.
+
+Resolution
+Version 2 types nonselective channels, outcome instruments, and boundary completion kernels separately and gives exact counterexamples showing that the first does not determine the latter two.
+
+Retained result
+Decoherence suppresses interference and stabilizes records without selecting an outcome; the q79 recorder supplies an exact finite-domain operational result at its declared tier.
+
+Remaining boundary
+General apparatus transport, finite-bandwidth and non-Markov corrections, a universal Born-source theorem, and any objective single-history actualization rule remain open.
 
 # Scope and Claim Tier
 
@@ -368,6 +385,30 @@ Relative to version 1, this revision:
 Measurement is ordinary physics. Nothing in this paper gives it a fundamental status, a privileged observer, or a separate force. The title means only that a record-discarded description cannot supply the outcome-resolved data it omits. A nonselective channel can erase off-diagonal pointer blocks and stabilize records while containing no outcome index. Retaining the record requires an instrument or completion kernel that supplies outcome probabilities and conditional updates. The same channel can be associated with different outcome-resolved instruments, and the same chart exit can be continued by different kernels.
 
 This does not invalidate the MTT basin picture. It makes the picture precise. Intra-basin suppression and inter-basin record formation may be stages or resolutions of one physical process once both are emitted from selected source data. MTT already has an exact operational account on one canonical finite q79 recorder domain. Extending that result to general apparatus contexts and controlled memory effects is the operational frontier. Objective single-history actualization is a separate, stronger question, not part of what makes an ordinary interaction a measurement.
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The separation between a nonselective channel and an outcome instrument is proved within the paper. The open strict-upgrade ledger supplies no outcome law, Born source, or one-history selection and is cited only as a stronger unresolved corpus boundary.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 

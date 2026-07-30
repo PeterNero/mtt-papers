@@ -1,0 +1,685 @@
+{
+  "schema": "mtt.expository-review-decisions.v1",
+  "papers": {
+    "a-projection-first-reframing-of-quantum-gravity": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt as an interpretive QG research program: perturbative gravitons and EFT retained, horizon and singularity claims corrected, and constructive success/failure gates supplied; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "9a99b9c9786f3b0105c776c2962d41ee28dbf88adb454f28ff9dcb675f20f06a",
+      "reviewed_pdf_sha256": "638e2d1a4063951a199b06e6ccaec7e1e7f63926e9e389525238e8cf694b9a58",
+      "reviewed_source_tree_sha256": "8a9cbc3d8a0be204d844e7b8ae8650edeaf3d21b8d4c687228abf1a9b5871e04"
+    },
+    "modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Retitled and rebuilt as a conditional Euclidean TT filter model; internal-gap implication, one-line all-loop claim, and automatic positivity/causality/unitarity claims withdrawn; exact loop-rank and spectral no-go results supplied; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "872fb9d53559a8d0ba6e87032639ccdabf2e60d45d1916054265de8d19f42b12",
+      "reviewed_pdf_sha256": "fcee8d181effbac3871ea3874ba64c89f1fd8c0746fb590a6806c425d9f88d37",
+      "reviewed_source_tree_sha256": "be403111641b39161d1582c27b3a82d0caf15a439e8e5d32f333a7eb9fdce624"
+    },
+    "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt around exact finite-TT support, conditional fixed-order quantum-GR parity, the limits of the SPT filter, and the selected compatible q79 heterotic route; the 5 available, 2 partial, and 5 open worldsheet rows are stated explicitly; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "b5306c19857e56517685d64be04d196570780d6f315cf8987b54aeb3c68afe19",
+      "reviewed_pdf_sha256": "614c64c9cb46a8dad7d3e9e617ceef8df204b8485d4b83a4f6c8d4f8be5caa95",
+      "reviewed_source_tree_sha256": "63fdb8ca34fdb53b02337a3323f3f8b1950fa03f96fa878e250c7937045ea0f2"
+    },
+    "constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Finite-volume trace-class Gaussian measure, finite-cutoff quartic Borel theorem, weighted cutoff-removal criterion, and the boundary to a selected gravity interaction reviewed in context; 7-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "4717ea70ea72ae3ccae251b0b40452eb4c110548e717d214ef4b34fd52d6bdff",
+      "reviewed_pdf_sha256": "e042ca3721aa4a2e0da822c2e971ee818b353e6b5942dbc712455c5d4efeae3a",
+      "reviewed_source_tree_sha256": "f9f21b940c28dba3a301c296ae44159024ea6314a6c5432783374c994d4b27cf"
+    },
+    "constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Shared-filter chain map, finite-cutoff Ward theorem, Borel inheritance, cohomological OS contract, and theorem ownership reviewed in context; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "06115993d23c51e9bec4637bf31ff208e2653c48fd138758288da0bfb31bdc40",
+      "reviewed_pdf_sha256": "f342622fce2d26eb33984aca776a7f88e900d4f64310a0b6e8125c499e4a1fbb",
+      "reviewed_source_tree_sha256": "3acf7bdf988d2f10d9727b3745a2d1c5beef5af5e0d38af699fce695803e6f45"
+    },
+    "constructive-mtt-quantum-gravity-iii-infrared-limit-asy-6f8b88d9": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt as a massive Haag-Ruelle benchmark plus the physical massless-graviton infrared contract; finite-slab, SPT infrared-neutrality, and wave-operator range results reviewed; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "9f6b8bccdc0a55542088280f6900b4d1419f65d0403d7a8742b08d0f865876b8",
+      "reviewed_pdf_sha256": "46d59b20602c9d7599b77c5898e0744aa5a941ec541b131c4a8cd526b50f8509",
+      "reviewed_source_tree_sha256": "e4371462584bc028b1d09675bac00b06cd307545fe1f53352ec0951a8bc2bca3"
+    },
+    "black-hole-information-loss-and-quantum-measurement-col-7f29501b": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt around the exact fiber-factorization theorem, ordinary measurement instruments, code-restricted island recovery, and separate Born/Hawking source obligations; the former equivalence theorem is withdrawn; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "6e5d29deb56f49389363232615d6288d1ff0f402d22c84d9313cc3e92495345d",
+      "reviewed_pdf_sha256": "84eeeeb09e93b5f872ef26abc195a2620501ec4661ddec18048335ad293d197a",
+      "reviewed_source_tree_sha256": "09d243a1db58991b57ea20751d76ea19d785568929575795476d272d9d2a3966"
+    },
+    "modal-triplet-theory-from-mtt-to-loop-quantum-gravity-a-4ae4b130": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt as the sole technical owner of the conditional Holst-to-Ashtekar-Barbero composition; the selected Holst ratio, LOST state, quantum constraints, EPRL/FK amplitudes, and SPT transfer are correctly separated; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "08afaad4eed5ab632804a8ba435fc950e59fe8abcbdf1090f0616636d4b5a847",
+      "reviewed_pdf_sha256": "ec18b414311f96b2343ffff5d7c21ec8cfdcfbb53fbd8d420c6df65025f3b645",
+      "reviewed_source_tree_sha256": "c1726f661142b77b12c793408955d8b52b02b650a81e4ca162d6fd864c229ec9"
+    },
+    "loop-quantum-gravity-as-a-shadow-of-coherent-fixed-poin-9133be75": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt as a theorem-light interpretive dictionary that imports the canonical theorem from its technical owner and states every missing bridge; 7-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "8bc6c9f52c7eb7f975585c17f6d9b6c2fab1faf786ac975d9ab090b468ab8670",
+      "reviewed_pdf_sha256": "b14c2ac1f225ac9d9799288b8b60ca18fdac09ba369c581c66b6d4ce1f4874cb",
+      "reviewed_source_tree_sha256": "dbacf2160e0bf69e9a0017f3ea663fdaeca9e262c24f2b7c65a2aa4558c6c7e2"
+    },
+    "fermions-in-loop-quantum-gravity-from-modal-triplet-the-c9d451aa": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt around exact sharp spectral compression, chiral-index inheritance, the nonlocal Nielsen-Ninomiya boundary, and the Kato-Berry projector-bundle theorem; the defective norm-resolvent proof is withdrawn; 7-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "cc07402985587346fcdc9efbf2e042dee6b93eceeda3d6e8cab1f1fc0561f393",
+      "reviewed_pdf_sha256": "ddfda41c93f35a33201f99583eb9051f80e9b98f63d4dc4c8f6ea7bcf5f1ce08",
+      "reviewed_source_tree_sha256": "116c27355c23d013db8761cff0dec343cdc44463b481a5c953489cdce354a4c4"
+    },
+    "the-central-circle-inertia-mass-gravity-and-time-as-sha-5faa2369": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt around the exact finite q79 shared-line and Hessian-intertwiner result; compact phase, Lorentzian time, physical mass, inertia, gravity, and family selection are separated into explicit theorem obligations; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "7ea0f156a75fdaa4e362410f671dbe3deb9e4b3eaee05773990367abdd24eec6",
+      "reviewed_pdf_sha256": "263338d256618b647c528718595e64167cb41092e973c0b6f3366ad1a2b52524",
+      "reviewed_source_tree_sha256": "f80571964568d713897d4ba86f49c9c92aa82f089b0d4b50d580b6efc20081ed"
+    },
+    "finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt as the scoped owner of the finite-filter calculus, exact Euclidean heat-kernel benchmark, imported q79 two-plus-four finite illustration, and internal-filter UV no-go theorem; the former universal projection-shadow theorem is withdrawn; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "dc7a64311b2802dd50ccbb141c8fa8959ec4ab428c7139030debfef6ed3a6f3c",
+      "reviewed_pdf_sha256": "18d4ef8c175e4e7de09a01da3ddefc755ac22e276245750f2da2bef4f8ba3499",
+      "reviewed_source_tree_sha256": "cd85ef3f6c57f929f6686aae2777b5f740f4737a28e0291c86def3623958a23f"
+    },
+    "modal-triplet-theory-and-asymptotic-safety-asymptotic-s-dc3ce0c2": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt as the technical owner of the conditional MTT-FRG conjugacy, Banach endpoint, controlled scheme-comparison, and quasi-compact unstable-subspace theorems; physical chart and estimates remain open; 7-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "0732f728b13fe74c47b61984b70b05f9d32765d3d7056b962d9ca67b2bc9a4c7",
+      "reviewed_pdf_sha256": "6315785ce61327897e582065b058219f19528452afb3e13b301a66a85266002f",
+      "reviewed_source_tree_sha256": "2ee79c9889c67127ef699d1e72b8a3e6bf94a16418dc1b24fd64cb5ab566f7ab"
+    },
+    "asymptotic-safety-as-a-truncation-shadow-of-a-coherent-05df2176": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt around validated finite-truncation residual and perturbation bounds; the additive-error contraction inference is withdrawn and disproved by counterexample; 6-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "fc31e2c07d246f0217150f78a00aba3f45f492d7970a28741c26b04b585bb9d6",
+      "reviewed_pdf_sha256": "85abc2b319cc7bb49c7f433d61890e6f1717fe85037ec23fc27f99584b99130f",
+      "reviewed_source_tree_sha256": "c12954dd86f24b68ca24f06b90e9ab4b27055162f4ba2dc2853d829d7194e0e6"
+    },
+    "a-third-corner-shadow-bridge-asymptotic-safety-the-stri-37bbd5a2": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt as a theorem-light conditional diagnostic joining the finite q79, partial 5/12 heterotic worldsheet, and FRG corners; the former triple-equivalence theorem is withdrawn; 6-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "3e41b1f2bb07a7a45fd45dccfd4f5d9c62c8636a07396c9fc453e6c6dde99fad",
+      "reviewed_pdf_sha256": "75e35e1ad55ac1efc064987b34800c228c0669605010d92afd2c17a053af023b",
+      "reviewed_source_tree_sha256": "c2cdfb6ca47a07d4b1ac736a1fd464b8fc42099353789b39b7e9981cd7b58cc2"
+    },
+    "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt around the selected zero-order-free q79 twisted Dirac source and closed even free CAR net; standard AQFT inputs, formal all-orders BV/QME reconstruction, nonperturbative completion, state selection, and semiclassical backreaction are cleanly separated; 7-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "03b7e07110f8ff1a980338f47ce88346aaa598cd6a9b149cbaa971234dcb6bb2",
+      "reviewed_pdf_sha256": "ded1ce90fedf1d66ade1fddea427c5d5928b4e5601f392455f85aa4bcf79de78",
+      "reviewed_source_tree_sha256": "465c5b0d48915d5f8303fbf6ef37db0fd6c33514de6b16a073c1bc6fa4c8d0f7"
+    },
+    "gravitationally-induced-collapse-as-an-effective-limit-d74eb471": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Context-reviewed successor: Newton-constraint energy, squared Green-Hilbert branch distance, Penrose-Schoenberg CPTP completion, exact DP generator, and objective-outcome obstruction retained; source-rate, smearing, Markov-error, and instrument obligations remain explicit; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "3724ec67599b3addd2188450e6988728b4a578b81e44d674adb529816f0f6de8",
+      "reviewed_pdf_sha256": "a14e910ee7a317d847c69cc89e8cdff1fe335ed51b303a274848ae697772cb5d",
+      "reviewed_source_tree_sha256": "1159e24eae665322ed1307bb62bfaff77d9ffed20f084aa95b3ecdc7c13ffab3"
+    },
+    "causal-sets-as-an-effective-limit-of-modal-triplet-theory": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt as the kinematic owner of inherited causal order, Poisson local finiteness, and statistical Lorentz invariance; sprinkling and density remain added choices absent a base-resolution theorem; 5-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "f1111f4d18604bb848ce49fb4d1cb7ac82f579262799dff08b3a65bcc17ecb0d",
+      "reviewed_pdf_sha256": "d9c2b4484dac1db07b51b612de076b8ab04143465b92020a09584b3615495b2b",
+      "reviewed_source_tree_sha256": "ade57243a5b8517723f60e8262af1effdbdcc1c08d72c32bda5fd10405756aaa"
+    },
+    "causal-sets-as-event-selection-shadows-of-coherence-bre-7bca8116": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt around exact deterministic dwell-time and stochastic finite-compensator criteria; stability alone, event/reset selection, covariant statistics, and objective outcomes are correctly separated; 6-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "be3aa3bd85e86377e33655813325d1b7ad8b00db62e1289598a70944ed7ef187",
+      "reviewed_pdf_sha256": "719522e77230051fa269746705895e25ca4e676abb7a981e6d19ede3bb493c04",
+      "reviewed_source_tree_sha256": "270eeb1842c64e7a4a5cf39788130ebefd1d21c74981daa43a05b1843aac19c6"
+    },
+    "the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793": {
+      "status": "reference_ready",
+      "reviewed_on": "2026-07-28",
+      "note": "Interpretation-first reference; no formal theorem blocks; compiled and visually inspected.",
+      "reviewed_main_tex_sha256": "4deac85014c21ba07ce28614828fe0fb3c0b42e08e3ba58749c69584ef229f53",
+      "reviewed_pdf_sha256": "70fb322051ae610780e4dfe21018f50a34ff1306c8460c32b9612a58299453fb",
+      "reviewed_source_tree_sha256": "95401ff2a6f99aa81ea54d21d905fec7db8909cf3942830069a7776b9858bc5f"
+    },
+    "modal-triplet-theory-foundations": {
+      "status": "reference_ready",
+      "reviewed_on": "2026-07-28",
+      "note": "Technical expository reference; context-reviewed, compiled, and visually inspected.",
+      "reviewed_main_tex_sha256": "022af297246466a9fa22832d262d9057aa0a320bf76523b899e3c55c963c7ec6",
+      "reviewed_pdf_sha256": "8bc712f06b738429d59b140e571ebe5814f6e4d60e07277da8eec2ac12d58fc3",
+      "reviewed_source_tree_sha256": "ba640da274c464f5229d612449dc5b76e663646ba280481519c6082ab9b4559e"
+    },
+    "fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Reader map, theorem-cluster interpretation, examples, limitations, and conclusion reviewed in context; 16-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "ef75416959ff9689dd486d5498505f03cbdac46634d438ca1f4ee35a3dc874e9",
+      "reviewed_pdf_sha256": "a47567fb4f280f635afbe53cbfabd1823c6325a13c5ff970e861b5f812d8307c",
+      "reviewed_source_tree_sha256": "ee60c3545a45195706c5b4ba06d3e9d3978a7d1c62c7aa965696dc29b3786ed3"
+    },
+    "fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Vertical damping and coherent contraction separated throughout; 12-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "ba452cbe49af339cb3d8a7e72f289c7d78bbf6594ebd915841ea643b000fef6f",
+      "reviewed_pdf_sha256": "f4639b5500d18c4634bfd807e91a2e822577c88c87fcbf628b0d7b03101e5619",
+      "reviewed_source_tree_sha256": "6d8395573b886e04c62626383c368491130e58d3ee659d59bbea9f0362a381bb"
+    },
+    "fixed-points-iii-disturbance-damping-balance-and-stability": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Deterministic, stochastic, and homogenized roles explained; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "fc008122ca171de64b6d409349bdfa4716bd372cfb524f8ed408936e73eac480",
+      "reviewed_pdf_sha256": "a018b2617656fe7227bf93eb7069681054897c5b35d5d46a2140bb9907709c75",
+      "reviewed_source_tree_sha256": "c458f07fe535e5b332a8f173a0dd00da4460ea1e14eb7c9b96250b7b32edd49b"
+    },
+    "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Curvature blocks and three notions of finite explained; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "5630bc74869a8a4d726c13b5853da796041065c6a6b604b30c7e77c43ca671a1",
+      "reviewed_pdf_sha256": "3416a92a0650aaf283a38f5307b7590c51e685e053edf03b1788bfa59a95e935",
+      "reviewed_source_tree_sha256": "7428fb6a8e7951bb77dd47392a8e2a3fbbd1e82da89cb5a0c3fe053ccd533014"
+    },
+    "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Covariance, diagnostic margins, and exit boundaries explained; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "4e014f3af6686d3e4af042e3ae923fd3021bb09ad74d323207db0d676b0499ed",
+      "reviewed_pdf_sha256": "24523849592ecd78dd55695b3e3fb9ce8ea658defe68bf3be979a1ff6a470cec",
+      "reviewed_source_tree_sha256": "302483fd70fd458b4040172f42e2b0a6568a3ab7cc6ae78075452a920a6ea30a"
+    },
+    "fixed-points-vi-formal-synthesis-and-physical-interpretations": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Synthesis reading lanes and theorem ownership reviewed; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "b7299e035919d25bcadc67a6af84c8847291e694665b1ea2c19912f91bec90c5",
+      "reviewed_pdf_sha256": "142aa11b0fe6eb20bcd190350f907c072ac6005fa3ad452877be51d268eaf70d",
+      "reviewed_source_tree_sha256": "35f7cddc6f7a85fec4e35d9a2580bf7bf9c55a6bf46b016ff7196c19e89b0781"
+    },
+    "the-modal-triplet-theory-program-a0-a-structural-theory-bebae240": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Typed projection roles and atlas explained with a running example; affine-orbit formula corrected; 22-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "5adce63ead59ec831b9bcca66f7a75fa5e327cac7817586e15e0c6ea8299c6b6",
+      "reviewed_pdf_sha256": "dca745dc9f1121ece68e26379f06ac9717b595db7fce48f8526b6aa6e993086e",
+      "reviewed_source_tree_sha256": "345757e08c1f199b6fd5eea9f1f7949f3646d7ce36ba88d6a7b57f8a4e1f1ed6"
+    },
+    "the-modal-triplet-theory-program-a1-coherent-kinematics": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Encoding worldlines, chart overlap, and conditional physical bridge explained; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "89f8c17f6b664882fd798b36685d207b68ad40bbcf5d616ffb4a90834989532f",
+      "reviewed_pdf_sha256": "e157f76e8127006d9a1198c42568102fb3e18678d3cff1ca2fd95f62de14ceb4",
+      "reviewed_source_tree_sha256": "ebd576657c427aa6d7945f22cf2c1aa01b4fb441d3b408f540805d183fac815c"
+    },
+    "the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Prediction depth and algorithmic undecidability separated with a finite-counter example; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "ba49aa8538c9e16e570c894a8462145b93985c11549d76b2720c492adab25199",
+      "reviewed_pdf_sha256": "7620bcd738aedbb80e59d71c0ec7c7fd210f8760823a65dc3200e45dd4ea6538",
+      "reviewed_source_tree_sha256": "41009a914842247b86e803e1a2b3cffc71878ad82d2d3735f41c544cef8232f3"
+    },
+    "the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "CLN diagnostics, geometric examples, and conditional dimension realizations separated; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "81a9ee4fcb190eee65c2fe84c2ddfa8474b52e86b087ca6bc6eb031b08ba5437",
+      "reviewed_pdf_sha256": "616b124b564c3e8a6f870be16b359aa1f315b0a5b21119cdfe4df997a5afa1ce",
+      "reviewed_source_tree_sha256": "44967c2d1ea209fad9fe2bc66a19c1fa7761a35c5aaf4b00b65be613a97b7fbc"
+    },
+    "the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Holonomy, connection, causal cone, and Einstein-action levels explained with a phase example; 13-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "defd7d1f2edde7fd1d7b2c8b82cd02b54c3804c90c5f2a5320e783f4e00f1bfa",
+      "reviewed_pdf_sha256": "af27575f4c08cf330f18a21716b04e7b9460cff875cab673f8c106381ad76b94",
+      "reviewed_source_tree_sha256": "96da92fe17af312a1a2e5baed5db8dfeee24880848b24d3601dbd8d78e6b73b1"
+    },
+    "modal-triplet-theory-from-mtt-to-general-relativity": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt as a controlled GR reduction: corrected 4+6 geometry, explicit action input, nonlinear truncation theorem, zero-mode audit, and scoped exact TT support; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "65b0acc3e9f6610b4dc2d92a71ed0275b1438be36cd2d1087047e018d2a66673",
+      "reviewed_pdf_sha256": "039c1580a026dbc7ba42840f45135fce5f21c3765ffde72b5a4845dcce2c90c0",
+      "reviewed_source_tree_sha256": "4b50f2fa78a27db1608b787d89a2fa800d2844027899c8244e4fbcbaadaa203a"
+    },
+    "the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Orbit redundancy, the two section problems, and conditional Yang--Mills data explained; 12-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "e5f82dc6da68379853772da5e4256eaf274282ed9e1a2089c35a5172bbd304db",
+      "reviewed_pdf_sha256": "e02579adf827e73610b88eb76d39db0b95abc629c28eb3345fc876de332c8d12",
+      "reviewed_source_tree_sha256": "689f4004a7852a93edb266a9b3c452f24ada6db916bb80c717bf05a052a6d20c"
+    },
+    "the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Nil termination, constrained survival, spectral discreteness, and quantum reconstruction separated; 14-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "5e85579b4047b9d2d838573f039e5aaf72672d0a801675e8fc3bf84a8bbf949f",
+      "reviewed_pdf_sha256": "0124cfd96cd6fc73634d6fe6f3dc4aab2007552805d886829b6c97235a0b0e2f",
+      "reviewed_source_tree_sha256": "56c321adcc201715e225b6805a94ea209f553aac8fa3a690ea4fd3708069b2d3"
+    },
+    "the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Compatibility, local rigidity, branch-internal uniqueness, and exhaustive selection separated; 14-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "cd29276ede02f9971e2782edcaff830a40c2ff9f7917a25c6d26fc485d5088f9",
+      "reviewed_pdf_sha256": "e5ccea5afa336ec38d386b09d41dbc0531c7c4d40754b2fc5ceb7a7e41c8dfa2",
+      "reviewed_source_tree_sha256": "1a9d23a065a4dadd05e769b91a8a159edcd7e501353f2aaf793dfa994d80c040"
+    },
+    "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Relative saturation explained through a derivative-incidence wiring picture and separated from string realization and selection; 14-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "d43cb53d7bd28ab8a9a95cae73f4233d45abcb110bff84ff56c81a22c55e4ebe",
+      "reviewed_pdf_sha256": "10c2f293e111fbe7d1a11d29ef9e8d91f5ef12eda0987a4951f052a647874714",
+      "reviewed_source_tree_sha256": "425e9432018f9fff6aebdb5cb893ff043e434d215768f588d287e1cdba4a0dbf"
+    },
+    "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Typed realization dictionary explained through a concrete modal lane and five-step pipeline; 15-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "31842b7410ca6dfc982f6d7cf0f3fcf24ecba94b85fa886250bd4bdc1a173524",
+      "reviewed_pdf_sha256": "66015761325673e6b914fc768611c926112175e78cb75088d2d100e7cbee2d3c",
+      "reviewed_source_tree_sha256": "bbb12003eafa122ef94c3a126c26d841097b9703eaedecbef94d77b6e25275ab"
+    },
+    "the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Availability-as-mask intuition and a deliberately non-selected source-action example added; 13-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "9458091c6e622d8a9ff70ef0973124d0fe33fa61737a5eecc190e0c9b9cf7963",
+      "reviewed_pdf_sha256": "1e79ed9a7c26473230aa3e4cb658425abfa27d795fd878fe0d9702b3e08fef88",
+      "reviewed_source_tree_sha256": "9d83db48a0aa052b68499a296a3986729333567b0bc4e9260c01498c990fe17d"
+    },
+    "modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Corpus roadmap now includes a running hidden-coordinate example and three reading routes; 15-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "c2722daaaa16cb710bb14780c1dc367c0d7dbb20525ef3a55a49a08024d96403",
+      "reviewed_pdf_sha256": "06d85ee6905ea4d3d478576d58e772e15a228ed8752ccac675def0ecd581c430",
+      "reviewed_source_tree_sha256": "42ec7625bca67adad43fb61ef2fc061f182a90212f26f914f93a4082704b293f"
+    },
+    "modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Relationship types explained as directed maps with a product-state commuting-dynamics example; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "76560c5bf310416141880bb87382e474d470c8f6158b16346edc680b538db0d2",
+      "reviewed_pdf_sha256": "aa08eccb367810d29d2cbf55a76f35f850ee5c603ccafd2caa7a8a05db94b3ea",
+      "reviewed_source_tree_sha256": "f3dea78ac2c1ebdc2f94c7f16f9c78cc933acf20ae786b1ba79c36cf33ec83ea"
+    },
+    "the-projection-admissibility-principle-descent-recovery-b0fd6e59": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Selection, recovery, descent, and merger organized around reduced-state memory with locality interpretation; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "e90f981327db60b358897c2024000cc46ab24c6d073d984ae0070d5e57ee393c",
+      "reviewed_pdf_sha256": "357aad4b1892657620a4e2c269a1adc10fc72f002b6509b7dda75822093c508c",
+      "reviewed_source_tree_sha256": "1b9b0012d65df51a63a25227a07ff4891495d66c34c77ca54b9d5e4b9306dc8b"
+    },
+    "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Local comparison, spin lift, q79 finite return, and physical fermion layers separated with 2pi/4pi intuition; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "7c68851cd2e7e3e17fccc3865ad0135bcb7d9790960ed66d9f7dae6b7ab69ff9",
+      "reviewed_pdf_sha256": "c6e9bbf3b391b112a62a1680093fc27b9e04f9bb8f32776aac7660ef3c3b3308",
+      "reviewed_source_tree_sha256": "962f7066ff056f3b87a7da3ead5d6a028eea100e6ab46cfd9982f0506f680e96"
+    },
+    "proto-spinor-closure-and-worldsheet-encoding-in-modal-t-6a9d7abf": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Local Hessian bridge explained with an explicit finite-dimensional pullback and cubic-error interpretation; 7-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "d01685ea45ee9d17a95ba8655752775aa9231992012085385726b110220ab48d",
+      "reviewed_pdf_sha256": "2ccd3051bd5488d770ebb1b44dd3ed85a9b316638d02ed313eae0e71915530d8",
+      "reviewed_source_tree_sha256": "1fc9e1cccaa70ada5c424b37d17a0dc597140b829f061d2a7d37d2f91b9681b5"
+    },
+    "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Comparison-field geometry explained through deformation-gradient intuition and an explicit 1+2+3 strain split; 7-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "96721e4f0c34edf7a1c60f08b060b0ac430053c8ce67a7d8b754a0e6d4749076",
+      "reviewed_pdf_sha256": "d157a235e219ea4a96f7b279fdb911f8689a6590e21a5f8515287be4e0b47059",
+      "reviewed_source_tree_sha256": "10599807d208b8876f2793499d2cbeed627048496921c454ec6d7ca5507a24d2"
+    },
+    "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Closure Hessian explained as stiffness and distinguished from generalized pole-mass extraction; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "364847103297b529053639ed1975998b3758cf55226eda53dc63da3f4f126bba",
+      "reviewed_pdf_sha256": "4099bdb7f0910c49404dab89260e6c594889d5aa417900030bc6d5770e4ff994",
+      "reviewed_source_tree_sha256": "cbff50e225f7bfc8968e92e64c43f3d7158de9a90c3d1bf9b23725b27af3a1fa"
+    },
+    "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Ansatz, variation, reduction, and observables separated with an explicit T6 Kaluza--Klein example; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "691de4188702b9f5ffda4a517d5200e23a2c89832b63b67992cf68d04ba1507d",
+      "reviewed_pdf_sha256": "b5b24a00eb2861f9c76cfb58e0919c6cbd9c526abce2ca2faa9a6e0ba72c356e",
+      "reviewed_source_tree_sha256": "8bb1ebbdad23e99c0a703f766f9ca80e7e523cc3a8b43f74cb27eed620f7c102"
+    },
+    "closure-and-inevitability-in-modal-triplet-theory": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Four distinct projection questions oriented through a dashboard example; dependency limits and conclusion reviewed in context; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "22d40e2308d937ec0e4de749ec4e49ddd6c287908cf5e929b6fe0901f2f82776",
+      "reviewed_pdf_sha256": "0269c89ece6c46686a8ef9cde5704176cc5bf68f476e2edc5fe857e688ebd3e6",
+      "reviewed_source_tree_sha256": "a1b1d1629004e16e0d5efcc6ba6f570ca0bbe36c0ae0057ab8ebd7b2624150b7"
+    },
+    "temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Sequential instruments, pair protocols, causality, qubit benchmark, and ordinary physical measurement interpretation reviewed; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "11b1f11c7c8c8123b16e7cd7c0d00f75c9b5407db6a505ffc6794f0b6b12e05b",
+      "reviewed_pdf_sha256": "243220f78fe205351a660b06cf4eda05107dc687aeb6fa1f685558ed3a73edc4",
+      "reviewed_source_tree_sha256": "919daa38af04c00146f7d509b6657a9f131fcded4688c4b2cda530ced986b95c"
+    },
+    "modal-fixed-points-bell-s-beables-and-the-limits-of-fac-59a69f5c": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Upper locality, state nonseparability, Bell factorization, no-signaling, and the completion boundary reviewed in context; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "58f6802a63d13d2106bc61f0cb3620adb7d92576e3a2aa48b2fb37a6a22ee398",
+      "reviewed_pdf_sha256": "27a1faca26812cef40cf577ae974908a8e0a57e4d8f98f7e4581f13e07767f81",
+      "reviewed_source_tree_sha256": "31abe0955806823cca3eb075b8edd1bcdca2c232fbc5921d0e4d80777bc844d9"
+    },
+    "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Probability source, Markov order, fixed-state indivisibility, sufficient-state compression, measurement intervention, and the classical-quantum boundary reviewed in context; 11-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "3209a96436978bb986571d595e4a36f50b2038352dfae838cf9d34c444f6e7bf",
+      "reviewed_pdf_sha256": "d08f7a7f1b107f72909c4e389a9f2c12f88fb552784b4a2c554df8e6564b800c",
+      "reviewed_source_tree_sha256": "8ac9593e793d29f0da58c0892052b49f797433ea41dd44b1d3cc09feae8ddd61"
+    },
+    "theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Gauge-profile calibration, overlap normalization, dependency chain, worked ratio interpretation, and prediction boundary reviewed in context; 13-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "83634ba0257825ccdfde570055204fb0f3af70e47e1f7eb5d27a200bda128201",
+      "reviewed_pdf_sha256": "2820ad156adf2bd79fb6112d47a177e58ac4789902b6e4941497173b226dbd34",
+      "reviewed_source_tree_sha256": "380ddfa1fb72bbdfc5b25c6891e3c4f97ef468c86fcfa1dddaebca4ab083fbf1"
+    },
+    "theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Auxiliary geometric calibration, shared-circle scope, corrected lens and nil spectral bounds, worked unit-radius case, and q79 non-identification reviewed in context; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "82df865f0bc9b012cfccebec428cd333458ff5269ad87b043aeb90be95e15906",
+      "reviewed_pdf_sha256": "5b876f1cb6dc9ce97d83818a557eaa7b7e628499ba8aa729273865a06042d028",
+      "reviewed_source_tree_sha256": "11382ec9e5311915956381b1a6a6384e032a0364eb381c81eed06f057e7e1b74"
+    },
+    "theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Holomorphic SDYM action, Penrose-Ward correspondence, Hermitian norm bridge, shared-circle color support, numerical dictionary example, and independence boundary reviewed in context; 12-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "86fdc659bb995483be2885b1e91dfe5d69c8914e74e94850e25abcc019bd8460",
+      "reviewed_pdf_sha256": "b3a56eb59712f23a0637ddf4746c2af07dc62a56fcbc75d12e0dafaa8f16cff7",
+      "reviewed_source_tree_sha256": "b8b809dead31075bb25f0b39ea81a2dabe9db7096dadf164aac4ba702eb3012c"
+    },
+    "theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Auxiliary volume coefficient, absolute-scale degeneracy, conditional Newton reduction, cutoff distinction, and tensor inequality reviewed in context; 5-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "fcc5f36857314f9df2a8c2dd37dc7e098cf74a14ccee3065808846be317b3d4d",
+      "reviewed_pdf_sha256": "7a11f4f425abae6a088f4231e8b97fb5e20a136acf49d7f77bd3fa8515642c9e",
+      "reviewed_source_tree_sha256": "effe41c0205cba33149ade9fd07cef9021778f47627afb6bf66f2d4961ac2bb0"
+    },
+    "theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Weak-angle information flow, exact round trip, uncertainty propagation, absolute-normalization circularity, and held-out-test criterion reviewed in context; 5-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "6d1a8603a811400c880f05b0fbd64f511478858c76d01294bf29e4e07e2078d8",
+      "reviewed_pdf_sha256": "c8e5bb309e7082ea899d5ec020899ba408804dbdfc5b2a90ccbddfd9e81ab15d",
+      "reviewed_source_tree_sha256": "be9e5074f8e48880be08bcd270343e22a07685fdec038cbbf5d4ba2ff10a8be6"
+    },
+    "topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Context-reviewed topology correction: the internal six-dimensional index, smooth q79 c3 candidate, integer charge lattice, selected primitive hypercharge direction, faithful gauge quotient, anomaly checks, character and holonomy distinctions, and beta coefficients are retained at their exact tiers; holomorphic/HYM physical promotion remains open; 12-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "c86a09f3efdacf32eedeb34cbf979cb0a8e510ca1ebd23838f50c0bf3861562e",
+      "reviewed_pdf_sha256": "c4fb184d1747e6db1763d861103cedeb95de03b1d17dfbd4f29c2be107f61931",
+      "reviewed_source_tree_sha256": "5d31733f3db95f87024b2c59c9bb92ee4e670619af9ae08346f4bbd1abd819bc"
+    },
+    "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Context-reviewed measurement correction: measurement remains ordinary record-forming physics; exact dephasing, instrument-underdetermination, chart-exit nonselection, and the conditional typed-basin bridge are retained; the q79 recorder is exact only on its declared finite domain; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "64942a8dd44794a33ed2ef44570b0e549a595332817a74e45e3d7cc6b6c39f03",
+      "reviewed_pdf_sha256": "9f6a71a59891f0068f65654aef81e703bd52969545d42085c59a9ddb9a930e09",
+      "reviewed_source_tree_sha256": "a2e72be431ef16e2863473d33ec5584ded380e582075228654948f26fec779ba"
+    },
+    "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Context-reviewed AQFT bridge and advanced to the latest frontier: chart non-comparability does not imply commutation, compatible compression preserves an upper local net, and the selected q79 twisted-Dirac source now closes the even free CAR net with covariance, time slice, and positive Hadamard states; chart naturality and interacting C-star completion remain open; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "f885ff123d5a3ded5f81f9eb272ca9a02ad6105e9c74f3a20b29d6a945fdcbcc",
+      "reviewed_pdf_sha256": "be0b11537921d7918327db56ca93b4dcd71eae3ffe8e63f24922d283fdfd8c86",
+      "reviewed_source_tree_sha256": "86d67065cc57908dcde4ffb1c2a64ba93961bdaac1b1285ec7d7e9dda1549e53"
+    },
+    "baseline-scales-and-phenomenological-consistency-in-mod-b28fa79e": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Context-reviewed typed scale ledger: internal gap, stabilization, EFT cutoff, curvature, Planck, and RG scales remain distinct; the conditional internal-mass bridge and common consistency-witness protocol are retained; no empirical viability or prediction is claimed; 7-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "c31f23a8ae5e60e8add000af0276e1221d3d0b7b28deda5c110e318b7b5e8bef",
+      "reviewed_pdf_sha256": "770faba5260a2951cf670093e7656fee3666d141846a878c87cba6f3eede9d8c",
+      "reviewed_source_tree_sha256": "e2d05b2308f0f6b7fd6ccead1f35e0782446e350adbeba8aec763b848367ae70"
+    },
+    "coherent-kinematics-in-modal-triplet-theory-chart-persi-359fefe8": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Context-reviewed encoding kinematics: chart descent, cocycle gluing, Lipschitz regularity, and conditional finite propagation are retained; causal motion, split outcomes, horizons, and temporal arrows remain separate physical bridges; 7-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "3e084d459b8ee80bbd4cbe635c0414cb3d03f77f04b1e79cde8dd5995685081d",
+      "reviewed_pdf_sha256": "ece10fd95f2704d4754f90442e658ed8a95b46380f5fc7726f1196313b43da38",
+      "reviewed_source_tree_sha256": "9a1843d933e89e1b82e262970111c2e1170738ca242407a0e8989713a2384092"
+    },
+    "lorentzian-base-compatibility-and-signature-stability-i-6ac3fbb9": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Context-reviewed correction: the positive Gram obstruction, quadratic Lorentzian hyperbolicity criterion, inertia margin, and principal-symbol descent are retained; physical signature and 3+1 dimension selection remain supplied inputs; 6-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "d46e5b2dfbdf9cfa255fe1ead3340db2783690469642cc2093ac24c8903d5660",
+      "reviewed_pdf_sha256": "7379eafda32cf69cf04bd03b8f8ba2eba9c0b0f6ab93090138acd80ccb3f589f",
+      "reviewed_source_tree_sha256": "bcf4e0056b8abca8f51e05a6732d5d95f99dce40d466ebbe6a30488e09dbab2c"
+    },
+    "a-projection-first-reframing-of-dark-matter-and-dark-energy": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt as a falsifiable dark-sector diagnostic: constraint load and capacity exhaustion remain hypotheses until a selected covariant effective tensor or modified operator reproduces cold clustering, lensing, CMB, growth, expansion, and stability; 6-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "fb5a45ba3edf3795aa81d5d323a708f9cd546f88fef34d97c14b2e80615cb8da",
+      "reviewed_pdf_sha256": "b99ccb210de54e5cc0c0d6a09dfa8cd4806a09b61950e258050dd1fe28b28c6e",
+      "reviewed_source_tree_sha256": "ecf8b120be6863ebbc52d0a8dbed95159c1fbb0c06fc896b113b1f5d19a42fe1"
+    },
+    "a-projection-first-reframing-of-string-theory": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt as a theorem-light conditional encoding paper: standard closed/open-string results are separated from projection analogies, extended carriers are not forced, literal CLN topology is excluded, and the authoritative q79 worldsheet contract is stated as 5 available, 2 partial, and 5 open; 7-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "16a1d776f85706a32aef001a69b865d5950407764f3409d28aa002a61d869f4a",
+      "reviewed_pdf_sha256": "07c5e30968b129af21a3a4194e82b8a358e92708586c97ad7061da1fe0d90640",
+      "reviewed_source_tree_sha256": "7bf50121cfe2937f884b0ec79ab21a59d70c85aec6ee3cbf994c97a29b55f957"
+    },
+    "a-projection-first-reframing-of-information-computation-dab93645": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt around typed classical and quantum channels, data processing, recovery, explicit computation tuples, and reduction-based undecidability; fixed finite MTT operators are correctly separated from uniform undecidable families; 6-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "2c36ed8c18f7fd80df5f3d8611e3ded36fa0b7c36981e2a1cc5027c5f1b00f3e",
+      "reviewed_pdf_sha256": "072fe1d8d07d6b4023a70e32a7b0c35cda875e38d8e048e5d3f59ebaa628e3a5",
+      "reviewed_source_tree_sha256": "afbeab53e010929f356e0c0de11c517b2bc9ebe735a3b8bbe5153eab7bbfee1e"
+    },
+    "a-projection-first-reframing-of-physics": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Rebuilt as the core projection-first conceptual owner: quotient dynamics, recovery, probability, compact phase, Bell locality, and physical irreversibility are separated; exact current MTT examples and open intertwiners are stated at their actual tiers; 6-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "2226db74b148e01d3928bb1eab6dc3b834b073f6abdc04e4aad45615aa888277",
+      "reviewed_pdf_sha256": "10a7928380d2f15392184ac3fd680efb786700afd70e65700836db2a009b6a2f",
+      "reviewed_source_tree_sha256": "b417cc817bb9e8c70b0dedf5eca67d8410abba8caf757a20240ab252bd04d9a4"
+    },
+    "geometry-light-relations-in-modal-triplet-theory-exact-1a5eeb7e": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Context-reviewed typed interface paper: the gauge-weight identity, conditional modal-democracy value, compatible holonomy product, common-principal-cone criterion, explicit one-loop counting conventions, and conditional curvature/PPN estimates are retained; physical action and response maps remain open; 5-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "c49eddc050691fb2225c219e5772bf165cce4617c2908b469d55ed9c559b608c",
+      "reviewed_pdf_sha256": "77d32929c09f8bdb6f8378c43f405d74268662d4036966557d81e1c621862821",
+      "reviewed_source_tree_sha256": "9fa703ee4775afc2132a7131e445314b913cd895dfdfcc6da01a5c367aa7f7ad"
+    },
+    "a-tiered-roadmap-for-calculations-in-modal-triplet-theo-da081863": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Current non-looping status map checked against A01-A62: the 12/12 profile-standard baseline and 2/9 strict-upgrade count are preserved; native gauge/representation, completed finite triple, one-Higgs projector, and 10/10 finite spectrum gains are added with explicit numerical-source guards; 6-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "c70155d9b757aeb5410cf1d2de72a3263fe735f9de9af51da86662d912acc4e6",
+      "reviewed_pdf_sha256": "06c0e5a12ed402a426a8793c152c0db60b8917e62cea7a1da0cf142feed5b69d",
+      "reviewed_source_tree_sha256": "1ae62c248a284485cdb91f5650ffebbfb652950a5b17c67e5157a2286c3d9db7"
+    },
+    "superset-determinations-in-modal-triplet-theory-paramet-87399967": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Parameter-identifiability paper checked against the current ledger: one shared construction primitive, 15 measured SM profile coordinates, no double-counting of outputs, no strict parameter-reduction claim, and explicit separation of closed finite-replay Yukawa/Higgs rows from open zero-primitive source selection; A46-A62 structural gains included; 6-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "92eac14fd49d40df2e9c5c5eed0e93eafc3b938c2a44bbf9697d5572a73ea791",
+      "reviewed_pdf_sha256": "18ee6350edc329572ad2f1ee115c74fed771d8fa3663cf19b31720340bbc23c3",
+      "reviewed_source_tree_sha256": "4a27f1d171f0aee2dcbc496e6827540efde4219ee43ab4ed1890400e3783b7c4"
+    },
+    "execution-of-modal-triplet-theory-i-gauge-hym-threshold-abc17efc": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Gauge/HYM/threshold execution checked against A02, A04, A19, A22, A46-A47 and A57-A62: native faithful gauge group, exact beta coefficients, and 10/10 finite spectra are added; finite universality is separated from open continuum coupling/threshold values and strong-CP selection; 6-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "687b656ac4ae91049af41256aa1ea310cd468ef6a52e0da4d0579555a251034e",
+      "reviewed_pdf_sha256": "1c4d0cc016fa75f88723aed75c21808759a599a08c819eb8d0e83a4e4670e0cd",
+      "reviewed_source_tree_sha256": "96d25bcd2b0566889df3a3c24e40367e1234c64026aced5a2f84cfb65747111e"
+    },
+    "execution-of-modal-triplet-theory-ii-flavor-ckm-neutral-42604e2f": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Flavor/neutral/Higgs execution checked through A51: closed charged finite-replay and CKM tiers are preserved; the A40 two-primitive Dirac profile, A41 conditional Dedekind reduction, A43 native-10D guard, completed 96-dimensional finite Dirac operator, and exact one-Higgs projector are added with explicit source and ontology boundaries; 6-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "eaefda3dc7249bccb3b34301d891d33d71817766a0ae8897a81f9504fdc4ce08",
+      "reviewed_pdf_sha256": "681e72ad7bbde7d638891bc80bdf835ad70d6414502a398979f166d133585872",
+      "reviewed_source_tree_sha256": "26d367f7da12b61b6b8351a3ba52faab88e09283df6b356d74416ce8d31eb7a3"
+    },
+    "projection-probability-and-irreversibility-shadow-bridg-a86c97e5": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Descent, recovery, probability and irreversibility claims re-audited: false inverse and entropy-arrow inferences are replaced by exact criteria; measurement is treated as ordinary record-forming interaction; the canonical q79 binary one-anchor recorder is promoted only on its selected operational domain, while arbitrary contexts, one-history selection and a common Born-Hawking-cosmology source remain open; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "9da3c8bb8deef2d9b716c7b707f048f473a6eda8ce5efc30181c493200d1e14c",
+      "reviewed_pdf_sha256": "a14a8c1243512167654874e686c83cc8d0fda02d09df07b739b89f2299cede8f",
+      "reviewed_source_tree_sha256": "c3f34becac1b696d2e6f08e0a89c56fc7d0926e0604fa24d77198f1dcadb0efc"
+    },
+    "from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Corrected fifth edition checked against A44-A62: the typed finite profile triple, neutral completion and one-Higgs projector are retained; the exact one-loop coefficient vector and all ten zero-parameter finite spectrum rows are added; their universal normalized shape is correctly recorded as a no-go for nonuniversal thresholds; a concrete 96-state explanation and all continuum, Wick, value-source and QFT boundaries are included; 12-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "9aa403d0bba86458efc6c1d74844bf4ac224f57da114de545183745517d48976",
+      "reviewed_pdf_sha256": "4f7f4b95210312ef34b473ba280ad16e4c4089d1d9383f20ea79f7243242f0e8",
+      "reviewed_source_tree_sha256": "a42bbdede4d4bf9777d13b7adfdfc459e3ebb97a05fa91970155ff54dee5d255"
+    },
+    "entanglement-locality-and-measurement-from-coherent-sec-110e8cbe": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Version 2 checked against the Foundation locality-descent owner and current Bell/QM status: the coherent-preserving compressed net is defined; locality is separated from state factorization; Bell and temporal-Bell claims are conditional on selected states and instruments; local no-signaling and average entanglement monotonicity are corrected; upper contraction is no longer treated as an entanglement-decay theorem; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "43857ab4b9efbd06603cde2a8a84496589f01d112fa949428482926eb9538980",
+      "reviewed_pdf_sha256": "50d7e7778590814d92c8ca53943f1da63dcf5530a0fc5fdba5820a51e3e6884e",
+      "reviewed_source_tree_sha256": "869b7c3673241220135ab3859c8cd667b68b64497bbdc9decea3874daa75db26"
+    },
+    "deterministic-projection-diffusive-limits-and-knee-like-a0b81ad7": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Version 2 replaces the noninvertible doubling-map source and inconsistent first-passage argument by one smooth hyperbolic toral skew-product diffeomorphism: the hidden-state ensemble is explicit, the Green-Kubo variance is exactly one half, the affine Ornstein-Uhlenbeck endpoint law and quantile widths are exact, and finite deterministic readout curves converge uniformly; first-passage, anti-Markov, Born-rule and MTT-selection claims are expressly excluded; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "6dfa57aec1bd1dd875eae8e7c8e59dfa358e9339e9451923083a9e669f6ea97a",
+      "reviewed_pdf_sha256": "87f2c8a405c8e56021cd34bcd07a5f28005876911a8e00860dce2e1327569224",
+      "reviewed_source_tree_sha256": "57cb506b762ea0325f9d7ff140c1a5e123e1b9c5a5490b53b31b4474a5ad3202"
+    },
+    "why-quantum-theory-must-be-complex-a-soler-admissibilit-b7674be8": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Version 2 converts the unconditional scalar-field claim into a conditional Soler, local-tomography, and standard-composition theorem: infinite orthogonality is exposed as an input; exact real, complex, and quaternionic full-matrix composition defects select the complex branch; phase-rich handwaving is removed; realification and alternative composites are guarded; and the current q79 finite complex model is compatibility evidence rather than source selection; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "bfaca00316201382337cb836ee63eda64fa268d7ce8b8a7ad576e7b73c01376f",
+      "reviewed_pdf_sha256": "375d35e216396f0e99f595cadf19ef7bf2a30f70b3b19397d291eedc213015eb",
+      "reviewed_source_tree_sha256": "7a9e4390c793491a5e8668f82be68353adb7c6e504cbc022e96f5fe441c739ea"
+    },
+    "inflationary-measures-and-the-born-rule-as-a-single-sha-388b32c2": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Version 2 replaces the claimed completed Born-cosmology unification by an exact common-measure obligation: it proves that non-injective projection does not generate probability and that unconstrained common-source realizations are vacuous; the selected q79 binary recorder is retained at its actual restricted tier; the cosmological and same-source legs remain open; and the four-parameter e-fold family is proved normalizable, unimodal, and exactly pushforwardable without presenting its ansatz inputs or ordinary inflationary-model comparisons as MTT predictions; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "541306e01db615f87b7bb7dfcb3072223cebe371281b3f5953fd20ee36c593ac",
+      "reviewed_pdf_sha256": "e31060776ae835b8746f374818e0394eab15d3f0596b87d8d9a20c403f612a97",
+      "reviewed_source_tree_sha256": "e07925ad5a899b89a09bfd10e9c0fc38431322653e59f9de16e14fbdde76a61c"
+    },
+    "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Version 2 retires the claim that the Born rule and classical limit are one theorem: standard instruments, conditional Gleason representation, decoherence, probability source, concentration, persistence, and ontic actualization are separated; the exact current q79 canonical binary-recorder output law is promoted at its declared domain without universalization; and new exact total-variation, observable-error, and finite-horizon persistence bounds quantify the classical regime by delta, epsilon, and n eta; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "dcedc23f54f0a2c6faacd995b733e28ea5a39bd5d6cfbff2bdf470bcfe0d0526",
+      "reviewed_pdf_sha256": "fdc607ccc9417918a58b030aca26c3b72420eb9dbefe6d9fe97728a819c48318",
+      "reviewed_source_tree_sha256": "6c701f4df4f3a3af1bd5c56ef468344a0b7bc73eb40faafc37c704b6c7889c26"
+    },
+    "why-quantum-contextuality-and-measurement-order-depende-e0bdb9bf": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Version 2 withdraws the unsupported contextuality--order equivalence, states the CP-instrument algebra explicitly, distinguishes projective Kochen--Specker and generalized operational contextuality, proves an exact qubit order-effect counterexample and exact same-effects/different-instruments theorem, preserves only a typed common-source MTT program, and reports the q79 binary recorder at its restricted exact tier; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "e0afb48e4fddfc7039632afed8e5af33550cf19919ea3cd6b0c0d3f4008e2c0f",
+      "reviewed_pdf_sha256": "ff24f76f369f3972f045dd451eec4c8c684115a1e53c5793aa9a52733d509516",
+      "reviewed_source_tree_sha256": "d5220ad4d91f21aca27d93eecbf76cbc3e9c51194503563b3ebe5f38652beace"
+    },
+    "determinism-without-superdeterminism-projection-induced-0e405923": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Version 3 preserves the exact global fiber-factorization criterion, adds the correct almost-sure Dirac conditional-law criterion, proves preparation dependence and a stationary deterministic non-Markov counterexample, imports deterministic homogenization only at its stated tier, replaces unsupported cascading claims with a spectral-radius coupled-basin contraction theorem, and separates determinism, measurement independence, Bell factorization and no-signaling; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "bd4f82b83fc45c96e8a7bfc639335f0bb9b282a9515f8d0c0c60763feb9edca5",
+      "reviewed_pdf_sha256": "3060a1d1095e53a1b3081e4d36f278f87ef4b779619dbaac4333c9cb3a18badd",
+      "reviewed_source_tree_sha256": "9794bf680cdaba06b92074a783803813b2569d2b0fb5a6fefc4f3a1341096418"
+    },
+    "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Version 6 separates physical coupling, outcome-resolved completion and record stabilization; adds the missing normalized completion kernel and conditional post-outcome law; proves basin-local contraction, the impossibility of multiple records under one global contraction, and the unique-decoder/representative-section distinction; replaces the basin-volume Born claim by an explicit source equality; guards the OU model; removes unrelated Bell, neutrino and landscape claims; and reports the q79 binary recorder only at its exact restricted tier; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "2a2d82a2e44e62005fef0d8295285975cf6c2fdbe3e911a727f52d78c1587686",
+      "reviewed_pdf_sha256": "83ed5f0ee1d0c8034159a4fb6d0fb3136c8a77e2f3aebc00f394dba1fd67f4e7",
+      "reviewed_source_tree_sha256": "a05cb0eb8d453555372c62dd4e344ec709673051ea6e204a5d2c3e8fcde9149d"
+    },
+    "measurement-effects-as-finite-survivor-basin-kernels-pr-eb7737ce": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Version 1 formulates sharp position as a set-valued PVM rather than a bounded point projector; proves that normalized detector response is a commutative smearing POVM; strengthens the sharp limit to L1 and total-variation convergence with an explicit W1,1 error bound; constructs one square-root instrument while preserving instrument nonuniqueness; proves exact Gaussian covariance broadening and regular qubit norm convergence; and separates interaction, outcome completion and record stabilization; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "934812854297ed27f26dd704216837a01e7ff20b7265a495fbecd0fdbb2fa43b",
+      "reviewed_pdf_sha256": "7258d133531e9f340469c1d4205c72944c30229d962fb9a86bfd00a5141c0f1e",
+      "reviewed_source_tree_sha256": "95bcd04edd3b3524671123f34f121ef16c1c685894f7341007a25f45097f27e6"
+    },
+    "white-noise-and-markov-limits-as-delta-correlation-idea-854be499": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Version 1 separates kernel, covariance, finite-dimensional, path-space and Markov convergence; adds the positive-type covariance guard and a same-covariance/different-law counterexample; proves exact colored-OU convergence in C([0,T]), damped-response convergence and the finite-memory variance D/[gamma(1+gamma tau)]; distinguishes finite Markov augmentation from nonclosed resolved memory; and leaves a selected MTT source, mixing theorem and physical coefficients explicitly open; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "1d38d1f8f8c4c4af18459c4d2464d9fa6583fe3d28625f099ebf375a915e2180",
+      "reviewed_pdf_sha256": "eb31ef046fb1c3ba990c627402ecd87529dbffe289e80fc0a60ab93d51b9f109",
+      "reviewed_source_tree_sha256": "5b0d1b2bfc37091a4222130768ff1edb3b93c6d8782e031e6c2803572b594490"
+    },
+    "dirac-delta-functions-as-singular-shadows-of-admissible-6e0ddf3f": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-29",
+      "note": "Version 1 separates identity, source, constraint, conservation, measurement and gauge uses of the Dirac delta; proves distributional spectral-projector and heat-kernel limits with Sobolev error bounds, a normalized coarea constraint-tube limit, an exact compressed-CCR identity, and deterministic fixed-point concentration; corrects the spectral-width, global gauge-fixing, measurement-completion and automatic-renormalization overclaims; and preserves the MTT finite-kernel idea only as a source-and-error diagnostic; 12-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "d90f0bbd4956b4f64433c2a3171d9820a74c76f497df56116fe1519668c63ad5",
+      "reviewed_pdf_sha256": "3cc66b5015a29ab688363d1a234c7f20ae1480ded98734e70322b779d3b12713",
+      "reviewed_source_tree_sha256": "4dd65b68798c6fca3e480b069ce4789c03ffd49df623f0f7b2c2a7c72398a4ea"
+    },
+    "the-modal-triplet-theory-program-d2-matter-antimatter-a-ba5f86ec": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-28",
+      "note": "Carrier non-selection theorem, branch-state and dynamical completion routes, and baryogenesis limits reviewed; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "05ec296cd03a047f127a56cff3b01e00dcf6d28d5e472ae064318f74ff60a45b",
+      "reviewed_pdf_sha256": "f0d2ec82c10e0add68ccf65fd75aaba26cba34bc13b543440a6b503841d2f372",
+      "reviewed_source_tree_sha256": "6311e14545e5e6dea73b1496aa062713ca8ba53150b081ab0eb70c29eead9f9d"
+    }
+  }
+}

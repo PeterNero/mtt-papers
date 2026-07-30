@@ -164,3 +164,19 @@ dimension theorem and countermodels, distinguishes anomaly notions, and
 integrates the exact A46-A50 Standard Model representation results. It proves
 one selected compatibility branch. It does not prove that the Standard Model
 is the unique or inevitable intersection among all physical theories.
+
+## Expository revision, 2026-07-28
+
+The formal theorem set and its ownership are unchanged. A new paper-specific
+guide separates compatibility, local rigidity, conditional uniqueness inside a
+fixed carrier, and exhaustive global selection. The common constraint locus is
+explained as a sequence of filters on a candidate landscape, including the
+possibilities of a continuous survivor family, several isolated survivors, or
+one survivor in a declared class.
+
+Additional interpretation now explains why rank, rather than the number of
+named principles, controls local rigidity and how A46, A47, and A50 test
+different properties of the same 48-state carrier. This makes the exact
+Standard Model compatibility result understandable without promoting it to an
+unproved classification of all alternatives. The revised PDF was compiled and
+visually inspected in full.

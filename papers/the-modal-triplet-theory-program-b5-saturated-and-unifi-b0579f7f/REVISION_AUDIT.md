@@ -1,4 +1,15 @@
-# Program B5 revision audit
+# Program B5 v3 Release Audit
+
+## v3 publication delta
+
+- **Supersedes:** v2.
+- **Reason:** the relative saturation theorem needed an intuitive
+  wiring-diagram explanation and a clearer selection boundary.
+- **Resolution:** add a guided dependency map without changing the
+  derivative-incidence theorem or countermodels.
+- **Retained:** all v2 mathematical conclusions.
+- **Remaining:** exhaustive realization, physical string background,
+  worldsheet completion, and selection.
 
 ## Selected revision
 
@@ -263,3 +274,19 @@ countermodels to the former unconditional claims. It gives reusable anomaly,
 duality, string-package, selection, and publication audit contracts. It does
 not derive string theory, a numerical critical dimension, a duality web, a
 complete q=79 worldsheet, or physical selection of one saturated universe.
+
+## Expository revision, 2026-07-28
+
+The theorem inventory and ownership are unchanged. A new paper-specific
+reading guide explains saturation through the derivative-incidence graph as a
+wiring diagram and separates contract completeness, indecomposability,
+extended-carrier requirements, string-like realization, and physical
+selection. Separate reading routes now guide mathematically focused and
+interpretively focused readers through the argument.
+
+The finite matrix example now explains why graph connectivity and determinant
+nonvanishing test different properties. The string-like realization section
+also states in plain language how established string packages can be tested
+against an MTT contract without treating saturation as a substitute for their
+actions, quantum measures, anomaly calculations, or duality maps. No new
+necessity claim was added.

@@ -1,6 +1,26 @@
-# Temporal Bell paper v2 revision audit
+# Temporal Bell paper v3 revision audit
 
-## Selected revision
+## Current publication and exposition repair
+
+- Superseded released edition: version 2, Zenodo record `21650911`.
+- Reason for version 3: the published version 2 PDF predates the final
+  theorem-ownership cleanup and did not contain a reader map or a sufficiently
+  explicit plain-language connection between pair protocols, disturbance,
+  and the qubit benchmark.
+- Resolution: version 3 adds the protocol map, interpretive bridges around
+  the two owned results, and a measurement-as-physical-process conclusion.
+- Retained result: the common-joint-distribution Leggett--Garg theorem and
+  conditional no-retro-signaling proposition are unchanged.
+- Open boundary: no selected MTT source currently emits the generic physical
+  clock, state, instrument family, and probability law for arbitrary temporal
+  Bell experiments.
+
+The release-currency audit found that the published version 2 PDF and the
+reviewed local source differed under the same version label.  Version 3 makes
+that content delta explicit and prevents the stale release from being treated
+as current.
+
+## Version 2 selected revision
 
 - Paper: `Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory`
 - Superseded source: version 1.0
@@ -13,7 +33,7 @@
 - Durable research handoff:
   `354864cc-6255-465c-bfcf-85996c6ce37c`
 
-## Verdict
+## Version 2 verdict retained
 
 The original algebraic Leggett-Garg result survives: a single
 context-independent joint distribution for three dichotomic variables implies
@@ -26,7 +46,7 @@ measure, sequential measurement instruments, a physical clock, causal
 channels, no-retro-signaling, or an LGI violation. Version 2 is therefore a
 conditional sequential-instrument analysis and completion contract.
 
-## Required corrections
+## Version 2 required corrections
 
 ### 1. Separate physical and stabilization time
 
@@ -48,8 +68,8 @@ projection and global coherence.
 imply `K > 1`. The same projection data support both satisfying and violating
 operational realizations.
 
-**Resolution:** Version 2 proves a projection/global-history non-selection
-proposition. A violation is attributed only to an executed state-channel-
+**Resolution:** Version 2 gives a projection/global-history non-selection
+check in prose. A violation is attributed only to an executed state-channel-
 instrument packet whose three pair contexts give `K > 1`. Global consistency
 is retained as a possible contextual mechanism, not a prediction.
 
@@ -84,16 +104,25 @@ defines no-retro-signaling and no-signaling in time.
 - The assumed fixed-point-ensemble probability measure is removed.
 - The duplicate placeholder bibliography is removed.
 
-## Exact theorem content
+## Exact theorem content retained in version 3
 
-Version 2 proves:
+Version 2 has exactly two formal results:
 
 1. the three-time Leggett-Garg bound from a common joint distribution;
 2. conditional operational no-retro-signaling for causal sequential
-   instruments;
-3. non-selection of LGI behavior by projection or bare global-history data;
-4. a conditional MTT temporal-correlation bridge;
-5. the qubit/Lueders benchmark `K = 3/2`.
+   instruments.
+
+The projection/global-history comparison is a scope check, the MTT
+temporal-correlation bridge is a completion contract, and the qubit/Lueders
+value `K = 3/2` is an imported operational benchmark. None is presented as a
+new Bell-paper theorem.
+
+## Theorem ownership
+
+The paper owns only the algebraic LGI theorem and its conditional
+no-retro-signaling proposition. It does not own projection/descent,
+fixed-point, Born-source, or general MTT completion theorems. This keeps the
+paper close to the lighter theorem profile intended for the Bell discussion.
 
 ## Frontier preserved
 
@@ -107,8 +136,8 @@ The paper does not claim:
 - a theorem identifying spatial and temporal Bell phenomena;
 - arbitrary-apparatus completion beyond selected finite recorder contracts.
 
-## Publication delta
+## Version 3 publication delta
 
-Version 2 is a minor but substantive theorem-status correction. It should be
-uploaded as a new Zenodo version with the generated PDF, canonical TeX,
-Markdown conversion, and this revision audit.
+Version 3 is an explanatory and theorem-ownership successor to the published
+version 2. It should be uploaded as a new Zenodo version with the generated
+PDF, canonical TeX, Markdown conversion, and this revision audit.

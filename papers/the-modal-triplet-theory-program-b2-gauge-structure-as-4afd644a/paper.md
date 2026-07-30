@@ -9,16 +9,16 @@ author:
 - Peter Nero
 current_version: v2
 date: July 2026
-generated_from_main_tex_sha256: 9d862d31d90d2db5c4cac6baf5b7375e3f5865ba5492a86922c85a889d6118a7
+generated_from_main_tex_sha256: e5f82dc6da68379853772da5e4256eaf274282ed9e1a2089c35a5172bbd304db
 paper_id: the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  The Modal Triplet Theory Program B2:  
+  The Modal Triplet Theory Program B2:
   Gauge Redundancy, Global Sections, and the Conditional Yang–Mills Realization
-zenodo_doi: 10.5281/zenodo.18355037
-zenodo_record_id: 18355037
-zenodo_url: "https://zenodo.org/records/18355037"
+zenodo_doi: 10.5281/zenodo.21652648
+zenodo_record_id: 21652648
+zenodo_url: "https://zenodo.org/records/21652648"
 ---
 
 # Revision note for version 2
@@ -36,6 +36,30 @@ Gauge transformations can organize redundant representatives; invariant quantiti
 No theorem here selects the gauge group, principal bundle, global gauge fixing, Standard Model representation content, coupling constants, anomaly cancellation, or a unique Yang–Mills action from the lens profile.
 
 </div>
+
+# How to read Program B2
+
+B2 begins with redundancy and asks how much extra structure is needed before that redundancy becomes gauge theory. The answer proceeds through a declared group action, its orbit quotient, a principal bundle, a connection, a field-space gauge-fixing problem, and finally a selected local action.
+
+#### The central picture in plain language.
+
+A gauge orbit is a family of different mathematical representatives assigned the same declared physical content. An invariant quantity has the same value on every member of that orbit, so it factors through the orbit space. This universal property organizes redundancy. It does not tell us which group acts, which orbits are physical, or which invariant quantities form a complete observable set.
+
+#### Two different section problems.
+
+A section of $`P\to Y`$ chooses one point in each principal-bundle fiber over spacetime and exists globally exactly when that bundle is trivial. A section of $`q:\mathcal A\to\mathcal A/\mathcal G`$ chooses one connection representative from each gauge orbit in a declared field-space domain. A bundle can be globally well-defined without the first section, and local gauge slices can exist without gluing to the second. Conflating these maps turns ordinary bundle topology into a false gauge-fixing conclusion.
+
+#### A simple abelian case.
+
+For a $`U(1)`$ potential, local representatives related by $`A\mapsto A+d\chi`$ lie on one gauge orbit after the allowed boundary behavior of $`\chi`$ is fixed. Curvature $`F=dA`$ is invariant under this transformation. This illustrates orbit redundancy and an invariant diagnostic, but it does not select $`U(1)`$, the base manifold, a coupling, or the Maxwell/Yang–Mills action.
+
+#### Argument map.
+
+Sections 1–2 define the group action, quotient, and invariant factorization. Section 3 separates principal-bundle topology from field-space gauge fixing. Sections 4–5 introduce connections, local potentials, stabilizers, slices, and genuine global obstructions. Section 6 derives Yang–Mills equations only from the supplied geometric and action data. Sections 7–9 separate gravity, quantization, and Standard Model claims and state the exact remaining source problem.
+
+#### Scope boundary.
+
+Lens-type nonfaithfulness is compatible with many groups, bundles, actions, and physical interpretations. B2 provides the typed gauge framework and a conditional Yang–Mills realization. It does not select the Standard Model gauge group, matter representations, anomalies, couplings, or quantization.
 
 # Scope and Imported Data
 
@@ -214,13 +238,13 @@ Thus lack of a global section is a nontriviality statement about $`P\to Y`$. It 
 
 The word “section” is used for three different maps:
 
-Bundle section.  
+Bundle section.
 $`s:Y\to P`$, with $`\pi_P\circ s=\operatorname{id}_Y`$.
 
-Associated-field section.  
+Associated-field section.
 $`\phi:Y\to E=P\times_\rho V`$, describing a field in an associated bundle.
 
-Orbit-map gauge fixing.  
+Orbit-map gauge fixing.
 $`\sigma:\mathcal Q_0\to\mathcal A_0`$, with $`q\circ\sigma=\operatorname{id}_{\mathcal Q_0}`$ on a declared field-space domain or stratum.
 
 Existence of one does not imply existence of the others.
@@ -556,3 +580,7 @@ D. S. Freed and K. K. Uhlenbeck, *Instantons and Four-Manifolds*, Springer, 
 C. N. Yang and R. L. Mills, “Conservation of isotopic spin and isotopic gauge invariance,” *Physical Review* 96 (1954), 191–195.
 
 </div>
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

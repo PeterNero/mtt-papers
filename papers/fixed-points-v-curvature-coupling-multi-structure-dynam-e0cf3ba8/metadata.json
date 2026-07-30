@@ -1,73 +1,123 @@
 {
-  "abstract": "We formulate multi-structure covariance and admissibility diagnostics on the corrected FP\u2013I\u2013IV spine. Curvature enters through the full Laplace-type operator and its curved spectral projector, not through an unproved affine eigenvalue rule. Exact Gaussian claims are restricted to frozen linear Ornstein\u2013Uhlenbeck systems. Their stationary covariance satisfies a Lyapunov equation, and block-diagonal damping gives a correct cross-covariance and canonical-correlation estimate. Admissibility is encoded by a finite or trace-controlled family of declared spectral, damping, and performance margins. The resulting deficit score detects exit but is neither a force nor an energy unless a separate variational source theorem is supplied. For affine Gaussian margin observables we prove finite-grid and continuous-time exit bounds. Cross-correlation controls simultaneous exits on a declared observation grid; it does not by itself prove localization, non-propagation, or selection of a post-exit state.",
+  "abstract": "We formulate multi-structure covariance and admissibility diagnostics on the canonical FP\u2013I\u2013IV spine. Curvature enters through the full Laplace-type operator and its curved spectral projector, not through an unproved affine eigenvalue rule. Exact Gaussian claims are restricted to frozen linear Ornstein\u2013Uhlenbeck systems. The scalar OU baseline is imported from Fixed Points III, its canonical owner, and the genuinely multi-structure stationary covariance derived here satisfies a Lyapunov equation, and block-diagonal damping gives a correct cross-covariance and canonical-correlation estimate. Admissibility is encoded by a finite or trace-controlled family of declared spectral, damping, and performance margins. The resulting deficit score detects exit but is neither a force nor an energy unless a separate variational source theorem is supplied. For affine Gaussian margin observables we prove finite-grid and continuous-time exit bounds. Cross-correlation controls simultaneous exits on a declared observation grid; it does not by itself prove localization, non-propagation, or selection of a post-exit state.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v6",
-  "date": "July 2026",
+  "current_version": "v7",
+  "date": "July 2026 Version 7",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949503",
-    "created": "2026-01-09T15:46:33.808499+00:00",
+    "created": "2026-07-29T08:50:51.494193+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18200121",
+    "doi": "10.5281/zenodo.21655379",
     "files": [
       {
-        "checksum": "md5:039e70ade199cee937a5946c6f4b0985",
-        "content_url": "https://zenodo.org/api/records/18200121/files/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v5%20(2).pdf/content",
-        "key": "Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v5 (2).pdf",
-        "size": 307106
+        "checksum": "md5:cdf93f3c8ec1d0cc2bc0a8487271a4c2",
+        "content_url": "https://zenodo.org/api/records/21655379/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 333363
       }
     ],
-    "id": "18200121",
-    "match_kind": "title_or_file",
+    "id": "21655379",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-09",
-    "record_url": "https://zenodo.org/records/18200121",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21655379",
     "resource_type": "publication",
-    "title": "Fixed Points V: Curvature Coupling, Multi-Structure Dynamics and Drivers",
-    "updated": "2026-01-09T15:46:34.335768+00:00",
-    "version": "v2.0"
+    "title": "Fixed Points V: Curvature Coupling, Multi-Structure Dynamics, and Admissibility Barriers",
+    "updated": "2026-07-29T08:50:52.349661+00:00",
+    "version": "v7"
   },
-  "main_tex_sha256": "15aaa0247111701b08accc73da21dda69066177614034dc804cb5ec311369113",
+  "main_tex_sha256": "4e014f3af6686d3e4af042e3ae923fd3021bb09ad74d323207db0d676b0499ed",
   "paper_id": "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8",
-  "paper_md_sha256": "513f04b666e3398947055dc99daf7e1eb3bec4d8d5fa844f69a58fe7930e2f4f",
+  "paper_md_sha256": "53af70cc5af499cec765c37c6c96879c3facb24022469985b5c7eca91e27ef8b",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_V_V6_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "729a5f5e9a04e8b03073e3efabb1df82e7068d125f298883db1810d6130cd77d",
+    "revision_evidence_sha256": "bc3e1be8930a3fb1492bbe5079b5f638e232edf9b4e1efece42b2553d5c98788",
     "selected_revision": true,
     "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v5"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 305898,
+      "bytes": 333363,
       "path": "main.pdf",
-      "sha256": "a0b1d54d2ea8334eab30d37c03967c93bc54c9a3ec95942d70d121fc2ea9f6cc"
+      "sha256": "24523849592ecd78dd55695b3e3fb9ce8ea658defe68bf3be979a1ff6a470cec"
     },
     {
-      "bytes": 14757,
+      "bytes": 22681,
       "path": "main.tex",
-      "sha256": "15aaa0247111701b08accc73da21dda69066177614034dc804cb5ec311369113"
+      "sha256": "4e014f3af6686d3e4af042e3ae923fd3021bb09ad74d323207db0d676b0499ed"
     },
     {
-      "bytes": 15705,
+      "bytes": 15299,
       "path": "series.sty",
-      "sha256": "deaaf90be0b98130189531a83e121ad3934803f4844f2b10571046aec3b3ed3f"
+      "sha256": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v6"
   },
-  "source_tree_sha256": "453c01c437ea77e714e3d88b7e003fb2b9492b1091ba5586d7015443688d367e",
+  "source_tree_sha256": "302483fd70fd458b4040172f42e2b0a6568a3ab7cc6ae78075452a920a6ea30a",
   "title": "Fixed Points V: Curvature Coupling, Multi-Structure Dynamics, and Admissibility Barriers",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.16949503",
+      "created": "2026-07-29T08:50:51.494193+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655379",
+      "files": [
+        {
+          "checksum": "md5:cdf93f3c8ec1d0cc2bc0a8487271a4c2",
+          "content_url": "https://zenodo.org/api/records/21655379/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 333363
+        }
+      ],
+      "id": "21655379",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655379",
+      "resource_type": "publication",
+      "title": "Fixed Points V: Curvature Coupling, Multi-Structure Dynamics, and Admissibility Barriers",
+      "updated": "2026-07-29T08:50:52.349661+00:00",
+      "version": "v7"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949503",
+      "created": "2026-07-28T16:40:51.751887+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650468",
+      "files": [
+        {
+          "checksum": "md5:fac909343aef7cae3b20a67ea9051c93",
+          "content_url": "https://zenodo.org/api/records/21650468/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 305898
+        }
+      ],
+      "id": "21650468",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650468",
+      "resource_type": "publication",
+      "title": "Fixed Points V: Curvature Coupling, Multi-Structure Dynamics, and Admissibility Barriers",
+      "updated": "2026-07-28T16:40:52.149024+00:00",
+      "version": "v6"
+    },
     {
       "concept_doi": "10.5281/zenodo.16949503",
       "created": "2026-01-09T15:46:33.808499+00:00",

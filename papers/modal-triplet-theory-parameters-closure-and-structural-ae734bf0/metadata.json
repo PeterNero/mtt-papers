@@ -48,15 +48,15 @@
       "sha256": "2aed535c6bfeb44a143e4afbf94e4da2639bc7f20b217befcf64539db9535adc"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Modal_Triplet_Theory__Parameters__Closure__and_Structural_Falsifiability"
   },
-  "source_tree_sha256": "0ff0271f6224e6ba5700ae22c89e1247749546be6efcd51c5da7ae909d5e8862",
+  "source_tree_sha256": "5ac3e894d5fea4f4af7ee202264434aa573062b6cb0e45653515cdb8bc3f4b72",
   "title": "Modal Triplet Theory: Parameters, Closure, and Structural Falsifiability",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

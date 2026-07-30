@@ -1,78 +1,128 @@
 {
-  "abstract": "We synthesize the corrected FP\u2013I\u2013V results without promoting their control parameter, projections, or diagnostics into an unproved fundamental field theory. The rigorous spine consists of conditional projected fixed-point existence, strict-Lyapunov promotion to equilibrium, joint-mode damping and disturbance floors, perturbative persistence of a curved spectral cluster, curvature leakage, intrinsic first-order centroid modulation, frozen linear Ornstein\u2013Uhlenbeck covariance, canonical-correlation bounds, and declared admissibility exits. We distinguish three logical levels throughout: inherited theorem, conditional model completion, and physical interpretation. A Lorentzian gauge/gravity action, quantum covariance, particle identities, merger, measurement, and cosmology belong to the latter two levels unless additional source and equivalence theorems are supplied. We also correct the Gaussian Lyapunov sign and nonnormal resolvent bounds, and show why an instantaneous equal-time bilocal kernel is not microcausal merely because it leaves the principal symbol unchanged. A local mediator is the consistent route to causal overlap dynamics. A separate, explicitly non-FP ledger records later scoped q79 geometry, quantum-operation, and QFT advances without retroactively promoting them to conclusions of the fixed-point series.",
+  "abstract": "We synthesize the canonical FP\u2013I\u2013V results without promoting their control parameter, projections, or diagnostics into an unproved fundamental field theory. The rigorous spine consists of conditional projected fixed-point existence, strict-Lyapunov promotion to equilibrium, joint-mode damping and disturbance floors, perturbative persistence of a curved spectral cluster, curvature leakage, intrinsic first-order centroid modulation, frozen linear Ornstein\u2013Uhlenbeck covariance, canonical-correlation bounds, and declared admissibility exits. We distinguish three logical levels throughout: inherited theorem, conditional model completion, and physical interpretation. All inherited results are restated as self-contained contracts and cited to their canonical paper; FP VI does not reproduce their theorem/proof blocks. Its own formal results are limited to the bilocal-causality obstruction and the local-mediator completion. A Lorentzian gauge/gravity action, quantum covariance, particle identities, merger, measurement, and cosmology belong to the latter two levels unless additional source and equivalence theorems are supplied. The Gaussian Lyapunov sign and nonnormal resolvent bounds are stated in their domain-valid forms, and we show why an instantaneous equal-time bilocal kernel is not microcausal merely because it leaves the principal symbol unchanged. A local mediator is the consistent route to causal overlap dynamics. A separate, explicitly non-FP ledger records later scoped q79 geometry, quantum-operation, and QFT advances without retroactively promoting them to conclusions of the fixed-point series.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v5",
-  "date": "July 2026",
+  "current_version": "v6",
+  "date": "July 2026 Version 6",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949635",
-    "created": "2026-01-09T22:36:54.998920+00:00",
+    "created": "2026-07-29T08:50:52.977082+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18203151",
+    "doi": "10.5281/zenodo.21655380",
     "files": [
       {
-        "checksum": "md5:9e5f9eb568ef2c6a4e8cd8ad85f6638c",
-        "content_url": "https://zenodo.org/api/records/18203151/files/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v3%20(3).pdf/content",
-        "key": "Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v3 (3).pdf",
-        "size": 335717
+        "checksum": "md5:fc783d33596b8afd6eccdeb66847ea9c",
+        "content_url": "https://zenodo.org/api/records/21655380/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 359896
       }
     ],
-    "id": "18203151",
-    "match_kind": "title_or_file",
+    "id": "21655380",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-09",
-    "record_url": "https://zenodo.org/records/18203151",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21655380",
     "resource_type": "publication",
     "title": "Fixed Points VI: Formal Synthesis and Physical Interpretations",
-    "updated": "2026-01-09T22:36:55.425906+00:00",
-    "version": "v3.0"
+    "updated": "2026-07-29T08:50:53.318260+00:00",
+    "version": "v6"
   },
-  "main_tex_sha256": "c3addd0db3ff1fdd7dfc9c90762f20ef8e80aa085e439a5de38895962fbec7e8",
+  "main_tex_sha256": "b7299e035919d25bcadc67a6af84c8847291e694665b1ea2c19912f91bec90c5",
   "paper_id": "fixed-points-vi-formal-synthesis-and-physical-interpretations",
-  "paper_md_sha256": "ddb9a7fe14b125629f8522e85fdff2698b575c1d3eb81e3034209a7561f1eeb6",
+  "paper_md_sha256": "96a12ee52321c5a785f53daace8c87bdfe041b4772bcf44c0a5a07d5141eb26c",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "31997381bb1796b4fbd1ebed6048226ba10e31de22def03ed34c5dcb02006d13",
+    "revision_evidence_sha256": "8d208b10aad35404ab968681cca6952dd8b9710aa9da5d67edcf743def8e7a8d",
     "selected_revision": true,
     "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 349850,
+      "bytes": 359896,
       "path": "main.pdf",
-      "sha256": "fcfd8d6a2a3e1618713dba174754fbe46b17f103cf6a061f46b5d2cb8be61935"
+      "sha256": "142aa11b0fe6eb20bcd190350f907c072ac6005fa3ad452877be51d268eaf70d"
     },
     {
-      "bytes": 22978,
+      "bytes": 30333,
       "path": "main.tex",
-      "sha256": "c3addd0db3ff1fdd7dfc9c90762f20ef8e80aa085e439a5de38895962fbec7e8"
+      "sha256": "b7299e035919d25bcadc67a6af84c8847291e694665b1ea2c19912f91bec90c5"
     },
     {
-      "bytes": 7214,
+      "bytes": 9031,
       "path": "REVISION_AUDIT.md",
-      "sha256": "31997381bb1796b4fbd1ebed6048226ba10e31de22def03ed34c5dcb02006d13"
+      "sha256": "8d208b10aad35404ab968681cca6952dd8b9710aa9da5d67edcf743def8e7a8d"
     },
     {
-      "bytes": 15705,
+      "bytes": 15299,
       "path": "series.sty",
-      "sha256": "deaaf90be0b98130189531a83e121ad3934803f4844f2b10571046aec3b3ed3f"
+      "sha256": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4"
   },
-  "source_tree_sha256": "ea27060305cca85702aa59d3808ab2480c6d41f60095c30cb9c1511fff74bed1",
+  "source_tree_sha256": "35f7cddc6f7a85fec4e35d9a2580bf7bf9c55a6bf46b016ff7196c19e89b0781",
   "title": "Fixed Points VI: Formal Synthesis and Physical Interpretations",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.16949635",
+      "created": "2026-07-29T08:50:52.977082+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655380",
+      "files": [
+        {
+          "checksum": "md5:fc783d33596b8afd6eccdeb66847ea9c",
+          "content_url": "https://zenodo.org/api/records/21655380/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 359896
+        }
+      ],
+      "id": "21655380",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655380",
+      "resource_type": "publication",
+      "title": "Fixed Points VI: Formal Synthesis and Physical Interpretations",
+      "updated": "2026-07-29T08:50:53.318260+00:00",
+      "version": "v6"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949635",
+      "created": "2026-07-28T16:41:24.851297+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650469",
+      "files": [
+        {
+          "checksum": "md5:36aa9560295b4b1021c5e1848c36f21c",
+          "content_url": "https://zenodo.org/api/records/21650469/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 349850
+        }
+      ],
+      "id": "21650469",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650469",
+      "resource_type": "publication",
+      "title": "Fixed Points VI: Formal Synthesis and Physical Interpretations",
+      "updated": "2026-07-28T16:41:25.129397+00:00",
+      "version": "v5"
+    },
     {
       "concept_doi": "10.5281/zenodo.16949635",
       "created": "2026-01-09T22:36:54.998920+00:00",

@@ -48,15 +48,15 @@
       "sha256": "82c2bdfbe0379a4ff08385b67f1393f95256251bf18545d22d1898c34033fc1d"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/Topological_Phases_of_Matter_as_Admissible_Overlap_Structures"
   },
-  "source_tree_sha256": "227ae0fa802fa88a91e7287702a1ede98e4e1c1bd638a4544746224e75b21089",
+  "source_tree_sha256": "3b91fc45247971aae64cf7ce526a2766df8590a469e6f84ee626e4c0d10b3590",
   "title": "Topological Phases of Matter as Admissible Overlap Structures A projection\u2013based account of robustness and bulk\u2013boundary correspondence",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

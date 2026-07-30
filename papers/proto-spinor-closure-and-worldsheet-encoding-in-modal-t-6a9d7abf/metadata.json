@@ -5,69 +5,119 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v4",
-  "date": "July 2026",
+  "current_version": "v5",
+  "date": "July 2026 Version 5",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.19535683",
-    "created": "2026-04-12T10:42:41.023522+00:00",
+    "created": "2026-07-29T08:51:40.275969+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.19535684",
+    "doi": "10.5281/zenodo.21655397",
     "files": [
       {
-        "checksum": "md5:af353b7148c29283f05ea9a9b86fdcfd",
-        "content_url": "https://zenodo.org/api/records/19535684/files/Proto_Spinor_Closure_and_Worldsheet_Encoding_in_Modal_Triplet_Theory_v3.pdf/content",
-        "key": "Proto_Spinor_Closure_and_Worldsheet_Encoding_in_Modal_Triplet_Theory_v3.pdf",
-        "size": 382596
+        "checksum": "md5:15f1ba57eed05bdf3bb92119a8434851",
+        "content_url": "https://zenodo.org/api/records/21655397/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 347426
       }
     ],
-    "id": "19535684",
-    "match_kind": "title_or_file",
+    "id": "21655397",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-04-12",
-    "record_url": "https://zenodo.org/records/19535684",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21655397",
     "resource_type": "publication",
-    "title": "Proto-Spinor Closure and Worldsheet Encoding in Modal Triplet Theory",
-    "updated": "2026-04-12T10:42:41.536620+00:00",
-    "version": "v3.0"
+    "title": "Proto-Spinor Closure and Worldsheet Encoding in Modal Triplet Theory A Conditional Local Bridge",
+    "updated": "2026-07-29T08:51:40.522189+00:00",
+    "version": "v5"
   },
-  "main_tex_sha256": "31c584615515c8e6c07b393b6e8b33be77d7a1dca442051be56d389c3dad159d",
+  "main_tex_sha256": "d01685ea45ee9d17a95ba8655752775aa9231992012085385726b110220ab48d",
   "paper_id": "proto-spinor-closure-and-worldsheet-encoding-in-modal-t-6a9d7abf",
-  "paper_md_sha256": "b1503992bf47b3f81aedb8ce91ded01481d899a62ec00508a32dea70a4423a0a",
+  "paper_md_sha256": "3a71cd701fbc52ca5c26588d516bba2e7a0ae01960866c68bffa6e04027eb79f",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md",
-    "revision_evidence_sha256": "340f4cb2ee4e5a22a1b008aa1c57109cdd148da74ef36fcec0913ef20dc527b1",
+    "revision_evidence_sha256": "966cf22eca4ebec6ffb9b4104e99b73b417f69db685187b09e7db8e4cc7c231a",
     "selected_revision": true,
     "superseded_source_path": "10 ProtoSpinor/_work/Proto_Spinor_Closure_and_Worldsheet_Encoding_in_Modal_Triplet_Theory_v3"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 297933,
+      "bytes": 347426,
       "path": "main.pdf",
-      "sha256": "ec903328c11155f16e270974cede39a65b736d778d6fe3a1c5c8c1cf995cba9a"
+      "sha256": "2ccd3051bd5488d770ebb1b44dd3ed85a9b316638d02ed313eae0e71915530d8"
     },
     {
-      "bytes": 12164,
+      "bytes": 20217,
       "path": "main.tex",
-      "sha256": "31c584615515c8e6c07b393b6e8b33be77d7a1dca442051be56d389c3dad159d"
+      "sha256": "d01685ea45ee9d17a95ba8655752775aa9231992012085385726b110220ab48d"
     },
     {
-      "bytes": 4221,
+      "bytes": 3819,
       "path": "series.sty",
-      "sha256": "b0af1073f295d9ebc3bfa6020214244f0147d5cb41ebb8ccf58a0303951c6fbf"
+      "sha256": "11cfb5b6b4161f1e60935127c22c0619bfc67286dbc229d044ca2f4641bf8fbd"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/Proto_Spinor_Closure_and_Worldsheet_Encoding_in_Modal_Triplet_Theory_v4"
   },
-  "source_tree_sha256": "e25677ca2f9dcd64844f94a5f306f3035f02575c0eee9127bfa0faa54cee0c1c",
-  "title": "Proto-Spinor Closure and Worldsheet Encoding in Modal Triplet Theory Corrected fourth edition: a conditional local bridge",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "1fc9e1cccaa70ada5c424b37d17a0dc597140b829f061d2a7d37d2f91b9681b5",
+  "title": "Proto-Spinor Closure and Worldsheet Encoding in Modal Triplet Theory A Conditional Local Bridge",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.19535683",
+      "created": "2026-07-29T08:51:40.275969+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655397",
+      "files": [
+        {
+          "checksum": "md5:15f1ba57eed05bdf3bb92119a8434851",
+          "content_url": "https://zenodo.org/api/records/21655397/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 347426
+        }
+      ],
+      "id": "21655397",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655397",
+      "resource_type": "publication",
+      "title": "Proto-Spinor Closure and Worldsheet Encoding in Modal Triplet Theory A Conditional Local Bridge",
+      "updated": "2026-07-29T08:51:40.522189+00:00",
+      "version": "v5"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.19535683",
+      "created": "2026-07-28T17:38:53.447796+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650866",
+      "files": [
+        {
+          "checksum": "md5:d72741c2cf333d6936b71f4666e3d343",
+          "content_url": "https://zenodo.org/api/records/21650866/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 297933
+        }
+      ],
+      "id": "21650866",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650866",
+      "resource_type": "publication",
+      "title": "Proto-Spinor Closure and Worldsheet Encoding in Modal Triplet Theory: A Conditional Local Bridge",
+      "updated": "2026-07-28T17:38:53.788856+00:00",
+      "version": "v4"
+    },
     {
       "concept_doi": "10.5281/zenodo.19535683",
       "created": "2026-04-12T10:42:41.023522+00:00",

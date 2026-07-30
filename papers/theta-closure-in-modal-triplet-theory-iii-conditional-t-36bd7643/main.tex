@@ -20,18 +20,19 @@ Conditional Twistor--Action Matching and Normalization Audit}
 \begin{abstract}
 We audit a conditional Route~B representation of the leading--order nonabelian
 overlap integrals $I_2^{(0)}$ and $I_3^{(0)}$ in Modal Triplet Theory (MTT)
-using the self--dual Yang--Mills (SDYM) twistor corner. Fiber reduction gives
-the same quadratic $L^2$ functional used by Route~A. The numerical
-normalization is not independent, however: the $SU(2)$ result additionally
-uses the bridge convention $dA_{\mathrm{dir}}=2\omega_{\mathrm{FS}}$ and the
-effective round-$S^2$ lens model, while the $SU(3)$ result uses the declared
-auxiliary nilmanifold, color harmonic, and factorization assumption of
-Paper~II. Under
-these declared shared inputs Route~B reproduces
+using the self--dual Yang--Mills (SDYM) twistor corner. A standard SDYM
+twistor action is holomorphic BF-type; it does not by itself provide the
+positive Hermitian $L^2$ norm or relative coupling normalization used by
+Route~A. We therefore isolate a reconstruction-and-norm bridge as an explicit
+assumption. The $SU(2)$ comparison additionally uses
+$dA_{\mathrm{dir}}=2\omega_{\mathrm{FS}}$ and the effective round-$S^2$ lens
+model, while the $SU(3)$ comparison uses the declared auxiliary nilmanifold,
+color harmonic, and factorization assumption of Paper~II. Under these shared
+inputs Route~B reproduces
 $I_2^{(0)}=4\pi(f_2R_{\mathrm{lens}})^2$ and
 $I_3^{(0)}=\int\|\chi_{\mathrm{col}}\|^2d\mu=c$. The result is therefore a
-conditional representation-level cross-check, not an independent selection
-of the overlap values or a completed nonabelian $\Theta$--closure theorem.
+conditional dictionary check, not an independent derivation or selection of
+the overlap values and not a completed nonabelian $\Theta$--closure theorem.
 \end{abstract}
 
 \section*{Revision note for this edition}
@@ -41,11 +42,15 @@ of the overlap values or a completed nonabelian $\Theta$--closure theorem.
 Action Matching and Independent Normalization}, first edition.
 \item[Reason.] Route~B was described as an independent normalization although
 its area convention, effective lens model, nil harmonic, and factorization
-were inherited from Route~A.
+were inherited from Route~A. In addition, the displayed twistor action was a
+schematic Hermitian curvature norm rather than a standard holomorphic
+BF-type SDYM action.
 \item[Resolution.] Version~2 exposes every shared input and proves only the
-conditional SDYM-to-quadratic-$L^2$ representation match.
+conditional correspondence obtained after a reconstruction-and-norm bridge is
+imposed. The standard twistor action and the additional Hermitian norm bridge
+are now kept distinct.
 \item[Retained result.] Under those declared bridge conventions, the twistor
-and direct descriptions reproduce the same leading overlap functionals.
+and direct descriptions use compatible leading overlap functionals.
 \item[Remaining boundary.] An independently selected normalization or q79
 source theorem is still required for redundant closure evidence.
 \end{description}
@@ -67,6 +72,22 @@ normalization inputs remain shared with Route~A.
 Agreement between Routes~A and~B is a conditional internal consistency check.
 It is not statistically or logically independent evidence when the routes
 share the internal metric, harmonic, normalization bridge, or target profile.
+
+\section{Central picture and reading guide}
+
+The central picture is a dictionary between two descriptions. Twistor theory
+encodes a self-dual gauge field by holomorphic bundle data on twistor space.
+Route~A encodes a gauge coefficient by a weighted norm of an internal
+representative. These are not automatically the same mathematical object. To
+compare them one must provide a bridge that turns reconstructed twistor data
+into the Hermitian quadratic form used by the effective gauge action.
+
+The paper therefore has three logical stages. First, it states the standard
+Penrose--Ward and holomorphic-action input. Second, it declares the extra norm,
+coupling, direction-sphere, and color-factorization bridges. Third, it checks
+that those bridges reproduce the two Route~A formulas. The final equality is
+useful as a compatibility audit, but it cannot be counted as a second
+measurement or a second source of the numerical values.
 
 \section{Introduction}
 
@@ -124,26 +145,40 @@ for the massless gauge sector, so that:
 \begin{enumerate}
 \item SDYM provides the leading--order gauge dynamics;
 \item massive corrections are suppressed by $O(\lambda_Q^{-1})$;
-\item the twistor action yields a well--defined kinetic normalization.
+\item a specified reconstruction map identifies the twistor fields with the
+spacetime self-dual gauge sector.
 \end{enumerate}
 \end{assumption}
 
 \subsection{Twistor action for SDYM}
 
-The SDYM action admits a twistor--space formulation of the form
+Standard twistor formulations of SDYM are holomorphic BF-type (or closely
+related holomorphic Chern--Simons-type) actions
+\cite{Mason2005,Movshev2008}. Schematically, on a suitable twistor region one
+may write
 \[
-S_{\mathrm{tw}} = \frac{1}{g_{\mathrm{tw}}^2}
-\int_{\mathbb{PT}} \mathrm{Tr}\big(F^{(0,2)}\wedge \star F^{(0,2)}\big),
+S_{\mathrm{SDYM}}[{\cal A},{\cal B}]
+=
+\frac{1}{g_{\mathrm{tw}}^2}
+\int_{\mathbb{PT}}
+\Omega\wedge\mathrm{Tr}\!\left({\cal B}\wedge{\cal F}^{(0,2)}\right),
 \]
-where:
+where the bundle weights of $\Omega$ and ${\cal B}$ are chosen so that the
+integrand is globally defined. Here:
 \begin{itemize}
 \item $\mathbb{PT}$ is the relevant region of projective twistor space,
-\item $F^{(0,2)}$ is the holomorphic curvature,
+\item ${\cal F}^{(0,2)}$ is the antiholomorphic curvature of the $(0,1)$
+connection ${\cal A}$,
+\item ${\cal B}$ is the multiplier field imposing
+${\cal F}^{(0,2)}=0$, and
 \item $g_{\mathrm{tw}}$ is the twistor--action coupling.
 \end{itemize}
 
-The normalization of $g_{\mathrm{tw}}$ determines the effective four--dimensional
-gauge kinetic term upon reconstruction.
+The Penrose--Ward correspondence relates the resulting holomorphic bundle data
+to the self-dual Yang--Mills equations. It does not, without further choices,
+produce a positive Hermitian fiber norm or fix its normalization relative to
+the full four-dimensional Yang--Mills kinetic term. That additional datum is
+the reconstruction-and-norm bridge introduced next.
 
 \section{Reconstruction of the four--dimensional gauge action}
 
@@ -154,16 +189,15 @@ correspond to SDYM solutions on spacetime.
 The reconstruction map yields a spacetime gauge field $A_\mu$ whose kinetic term
 is obtained by integrating over the twistor fiber.
 
-At leading order, this produces a four--dimensional action
+\begin{assumption}[Reconstruction-and-norm bridge]
+For the selected massless sector, assume that the reconstructed field is
+assigned the quadratic four-dimensional functional
 \[
-S_{\mathrm{4d}} = \frac{1}{4g_{\mathrm{eff}}^2}
+Q_4[A] = \frac{1}{4g_{\mathrm{eff}}^2}
 \int_{Y^4} F_{\mu\nu}F^{\mu\nu}\,d\mathrm{vol}_4.
 \]
-
-\subsection{Matching of couplings}
-
-The effective coupling $g_{\mathrm{eff}}$ is related to the twistor coupling
-$g_{\mathrm{tw}}$ by
+Assume further that its coefficient is related to a chosen Hermitian fiber
+metric by
 \[
 \frac{1}{g_{\mathrm{eff}}^2}
 =
@@ -177,11 +211,17 @@ where:
 the massless mode, with any gauge-kinetic weight included in the displayed
 measure.
 \end{itemize}
+\end{assumption}
 
-This integral is the twistor analogue of the internal overlap integral
-$I_a^{(0)}$ defined in Papers~I and~II.
+\subsection{Matching of couplings}
 
-\section{Identification of $I_2^{(0)}$ and $I_3^{(0)}$}
+Under this bridge assumption, the displayed fiber norm is the proposed
+twistor analogue of the internal overlap integral $I_a^{(0)}$ defined in
+Papers~I and~II. Neither the holomorphic SDYM field equation nor the
+Fubini--Study area convention alone proves this coupling identity.
+
+\section{Identification of
+\texorpdfstring{$I_2^{(0)}$ and $I_3^{(0)}$}{I2(0) and I3(0)}}
 
 \subsection{General matching principle}
 
@@ -198,7 +238,8 @@ d\mu_{\mathcal F_a},
 \]
 where $\psi_a^{(0)}$ is the massless twistor harmonic for the $SU(a)$ sector.
 
-\subsection{$SU(2)$ sector: conditional Route~B normalization}
+\subsection{\texorpdfstring{$SU(2)$}{SU(2)} sector:
+conditional Route~B normalization}
 
 We evaluate the Route~B quadratic norm for the $SU(2)$ sector. This avoids the
 internal spectral estimate used in Route~A, but the numerical coefficient still
@@ -220,27 +261,28 @@ internal MTT overlap.
 
 \subsubsection{Twistor SDYM action}
 
-The self--dual Yang--Mills action in twistor space is taken to be
+We use the holomorphic BF-type SDYM action schematically as
 \begin{equation}
-S_{\mathrm{tw}}[{\cal A}]
+S_{\mathrm{SDYM}}[{\cal A},{\cal B}]
 =
 \frac{1}{g_{\mathrm{tw}}^2}
 \int_{\mathbb{PT}}
-\mathrm{Tr}\!\left(
-{\cal F}^{(0,2)}\wedge \star {\cal F}^{(0,2)}
+\Omega\wedge\mathrm{Tr}\!\left(
+{\cal B}\wedge{\cal F}^{(0,2)}
 \right),
 \label{eq:twistor_action_SU2}
 \end{equation}
-where ${\cal A}$ is a $(0,1)$ connection on a rank--2 holomorphic bundle over
-$\mathbb{PT}$ and ${\cal F}^{(0,2)}$ is its $(0,2)$ curvature.
-The normalization of $g_{\mathrm{tw}}$ is fixed once \eqref{eq:FS_norm} is chosen.
+with the required line-bundle weights understood. This action supplies the
+holomorphic SDYM equations. The normalization of a positive Hermitian kinetic
+functional is additional data and is not fixed merely by choosing
+\eqref{eq:FS_norm}.
 
 \subsubsection{Reconstruction to spacetime}
 
 By the Ward correspondence, solutions of the twistor field equations correspond
 to self--dual Yang--Mills fields on spacetime.
-Linearizing \eqref{eq:twistor_action_SU2} about the trivial bundle and
-restricting to the massless sector yields a four--dimensional action
+Under the reconstruction-and-norm bridge, restricting to the selected
+massless sector assigns the four--dimensional quadratic functional
 \begin{equation}
 S_{4}[A]
 =
@@ -248,7 +290,7 @@ S_{4}[A]
 \int_{Y^4} F_{\mu\nu}F^{\mu\nu}\,d\mathrm{vol}_4,
 \label{eq:4d_SU2}
 \end{equation}
-where the effective coupling is given by a fiber integral:
+where the effective coupling is assumed to obey the fiber identity
 \begin{equation}
 \frac{1}{g_{\mathrm{eff}}^2}
 =
@@ -262,8 +304,8 @@ $SU(2)$ gauge zero mode.
 
 \subsubsection{Evaluation of the fiber integral}
 
-For the $SU(2)$ sector, the massless twistor harmonic $\psi^{(0)}$ is constant
-along the fiber and normalized so that
+For this comparison we choose the $SU(2)$ massless representative to be
+constant along the fiber and use the Hermitian normalization
 \[
 \|\psi^{(0)}\|_{L^2(L_x)}^2
 =
@@ -319,12 +361,14 @@ direction-sphere bridge are nevertheless shared with the Route~A ansatz.
 \end{theorem}
 
 \begin{remark}
-This gives an independent representation of the quadratic norm, but not an
-independent numerical value source. The Fubini--Study normalization, coupling
-identification, and effective lens metric remain declared bridge inputs.
+This gives a compatible representation of the quadratic norm after the norm
+bridge has been imposed, but not an independent derivation or numerical value
+source. The Hermitian fiber metric, coupling identification, direction-sphere
+bridge, and effective lens metric remain declared inputs.
 \end{remark}
 
-\subsection{$SU(3)$ sector: conditional color--twistor factorization}
+\subsection{\texorpdfstring{$SU(3)$}{SU(3)} sector:
+conditional color--twistor factorization}
 
 We next incorporate the selected internal color fiber into Route~B. The
 resulting identity is conditional because neither the fiber nor its massless
@@ -332,11 +376,10 @@ harmonic is selected by the twistor action in this paper.
 
 \subsubsection{Color--twistor factorization of the massless mode}
 
-In Modal Triplet Theory, color degrees of freedom reside on the third internal
-factor
-\[
-B_3 \simeq S^1_{\mathrm{cen}} \times \Gamma\backslash\mathrm{Nil}_3.
-\]
+In the auxiliary Route~A ansatz, the effective color support is the compact
+Heisenberg nilmanifold $\Gamma\backslash\mathrm{Nil}_3$. The shared $U(1)$
+circle is common phase/holonomy data reused across the gauge lanes; it is not
+inserted here as a second Cartesian factor of the color support.
 In the high--coherence regime, the massless $SU(3)$ gauge mode admits a
 factorized representation
 \begin{equation}
@@ -381,11 +424,12 @@ internal color fiber by its $L^2$ norm:
 \label{eq:SU3_color_norm}
 \end{equation}
 
-\subsubsection{Twistor--action normalization for $SU(3)$}
+\subsubsection{Reconstructed quadratic normalization for
+\texorpdfstring{$SU(3)$}{SU(3)}}
 
 Substituting the factorized form \eqref{eq:color_twistor_factorization} into the
-quadratic twistor action and performing the fiber integration yields the
-four--dimensional gauge kinetic term
+declared reconstruction-and-norm bridge gives the four--dimensional quadratic
+functional
 \begin{equation}
 S_4[A]
 =
@@ -447,7 +491,8 @@ I_3^{(0)} = c.
 \end{equation}
 
 \begin{theorem}[Conditional Route~B $SU(3)$ overlap identity]
-In the high--coherence twistor regime, assuming canonical factorization of the
+In the high--coherence twistor regime, assuming the reconstruction-and-norm
+bridge and canonical factorization of the
 massless $SU(3)$ gauge mode into a spacetime twistor harmonic and an internal
 color harmonic on $\Gamma\backslash\mathrm{Nil}_3$, the twistor--action
 reduction yields the conditional leading--order identity
@@ -457,7 +502,8 @@ I_3^{(0)}
 \int_{\Gamma\backslash\mathrm{Nil}_3}
 \|\chi_{\mathrm{col}}\|^2\, d\mu_{\mathrm{nil}},
 \]
-which evaluates to $I_3^{(0)}=c$ for the isotropic metric $a=b$.
+which evaluates to $I_3^{(0)}=c$ for the isotropic metric $a=b$ and the
+Paper~II harmonic convention.
 \end{theorem}
 
 \begin{remark}
@@ -468,7 +514,7 @@ uniform remainder bound and must not be read as a numerical error certificate.
 \end{remark}
 
 
-\subsection{Nil sector ($SU(3)$)}
+\subsection{Nil sector (\texorpdfstring{$SU(3)$}{SU(3)})}
 
 For the $SU(3)$ sector, the twistor harmonic reconstructs to a left--invariant
 massless gauge mode on the compact nilmanifold
@@ -527,6 +573,26 @@ normalization bridges. It is an exact round-trip identity within the selected
 ansatz, not an independent derivation of the input profile or internal metric.
 \end{proof}
 
+\subsection{Worked example: what the agreement does and does not test}
+
+Set $R_1=1$ and import the calibrated Paper~II scales
+\[
+(f_2R_{\mathrm{lens}})^2=0.2555137,
+\qquad
+c=0.9948493.
+\]
+Route~A then gives
+\[
+I_2^{(0)}=4\pi(0.2555137)\approx3.210880,
+\qquad
+I_3^{(0)}=0.9948493.
+\]
+Route~B returns the same numbers because the direction-sphere bridge, the
+nilmanifold harmonic, and the reconstruction-and-norm bridge identify its
+fiber expressions with those same two functionals. The example checks that the
+dictionary is internally consistent. It does not supply new data with which to
+test the values $3.210880$ or $0.9948493$.
+
 \section{Dependency audit}
 
 The Route~B comparison shares the following inputs with Papers~I and~II:
@@ -540,8 +606,9 @@ harmonic; and
 \item the identification of the twistor fiber norm with the selected internal
 overlap, including $dA_{\mathrm{dir}}=2\omega_{\mathrm{FS}}$.
 \end{enumerate}
-Route~B independently supplies only the twistor/SDYM representation of the
-quadratic norm conditional on these bridges. A genuinely independent value
+Route~B independently supplies the holomorphic SDYM representation of the
+self-dual field data. Its interpretation as the displayed quadratic norm is
+conditional on the reconstruction-and-norm bridge. A genuinely independent value
 derivation would have to select the bridges and internal representatives from
 twistor-corner MTT data without importing the Route~A realization.
 
@@ -559,12 +626,13 @@ $O(\lambda_Q^{-1})$;
 
 \section{Conclusion}
 
-The SDYM twistor reduction and the direct internal calculation can be placed
-on the same quadratic $L^2$ footing. Once the shared normalization and geometry
-bridges are declared, the two descriptions agree exactly at leading order and
-reproduce the selected Paper~I overlap profile. This is a useful consistency
-result because it checks that the twistor encoding does not alter the gauge
-kinetic functional.
+The SDYM twistor description and the direct internal calculation can be placed
+on the same quadratic $L^2$ footing only after a reconstruction-and-norm
+bridge is declared. Once that bridge and the shared geometry conventions are
+imposed, the two descriptions agree exactly at leading order and reproduce the
+selected Paper~I overlap profile. This checks the internal consistency of the
+proposed dictionary; it is not a derivation of that dictionary from the
+holomorphic action.
 
 It is not a second independent determination of the numerical overlaps.
 The $SU(2)$ coefficient uses the direction-sphere bridge and effective lens
@@ -576,13 +644,14 @@ quantitative coherence-remainder estimate remain separate theorem targets.
 
 % ===========================
 \appendix
-\section{Normalization proof: twistor action $\Rightarrow$ overlap coefficient}
+\section{Normalization-bridge audit: twistor data to overlap coefficient}
 % ===========================
 
-This appendix supplies the missing Route~B ingredient: an explicit normalization
-match between a twistor-space SDYM action and the four-dimensional gauge kinetic term,
-showing that the effective coupling is determined by the same fiber $L^2$ overlap integral
-used in Route~A.
+This appendix records the Route~B normalization dictionary without promoting
+it to a theorem of the holomorphic SDYM action. The standard twistor
+correspondence supplies the self-dual field data. A Hermitian norm, its
+relation to the four-dimensional kinetic coefficient, and its identification
+with the MTT internal overlap are additional bridge choices.
 
 \subsection{A.1 Twistor geometry and canonical fiber measure}
 
@@ -612,29 +681,34 @@ We fix it as above; a separate bridge is still required to compare the twistor
 coupling and fiber norm with the MTT internal overlap.
 \end{remark}
 
-\subsection{A.2 Twistor SDYM action with fixed normalization}
+\subsection{A.2 Holomorphic SDYM action}
 
-A standard twistor-space action for self-dual Yang--Mills has the schematic form
+A standard twistor-space action for self-dual Yang--Mills has the schematic
+holomorphic BF form
 \begin{equation}
-S_{\mathrm{tw}}[{\cal A}]
+S_{\mathrm{SDYM}}[{\cal A},{\cal B}]
 =
 \frac{1}{g_{\mathrm{tw}}^2}
 \int_{\mathbb{PT}}
-\mathrm{Tr}\!\left(
-{\cal F}^{(0,2)} \wedge \star {\cal F}^{(0,2)}
+\Omega\wedge\mathrm{Tr}\!\left(
+{\cal B}\wedge{\cal F}^{(0,2)}
 \right),
 \label{eq:twistor_action}
 \end{equation}
-where ${\cal A}$ is a $(0,1)$ connection on a holomorphic bundle over $\mathbb{PT}$
-and ${\cal F}^{(0,2)}$ is its $(0,2)$ curvature.
+with appropriate bundle weights \cite{Mason2005,Movshev2008}. Here ${\cal A}$
+is a $(0,1)$ connection, ${\cal F}^{(0,2)}$ is its curvature, and ${\cal B}$
+enforces holomorphicity.
 
-The field equations of \eqref{eq:twistor_action} enforce holomorphicity along
-twistor lines and are equivalent (under Ward correspondence) to SDYM on spacetime.
+The field equations enforce holomorphicity and correspond, under the
+Penrose--Ward transform and the usual triviality condition on twistor lines,
+to the self-dual gauge equations on spacetime. Equation
+\eqref{eq:twistor_action} is not a positive Hermitian curvature norm and does
+not alone imply the $L^2$ identity used below.
 
 \subsection{A.3 Reconstruction to spacetime and fiber reduction}
 
-Let $A_\mu(x)$ be the reconstructed spacetime gauge field.
-At leading (quadratic) order, the corresponding spacetime action is
+Let $A_\mu(x)$ be the reconstructed spacetime gauge field. The declared
+reconstruction-and-norm bridge assigns the quadratic functional
 \begin{equation}
 S_{4}[A]
 =
@@ -645,8 +719,9 @@ F_{\mu\nu}F^{\mu\nu}\,d\mathrm{vol}_4,
 \end{equation}
 for some effective coupling $g_{\mathrm{eff}}$ determined by the twistor normalization.
 
-\begin{lemma}[Fiber-to-spacetime normalization identity]
-Assuming the fiber measure is normalized by \eqref{eq:FSnorm},
+\begin{proposition}[Conditional fiber identity]
+Assume the reconstruction-and-norm bridge and normalize its chosen Hermitian
+fiber measure by \eqref{eq:FSnorm}. Then
 the effective coupling satisfies
 \begin{equation}
 \frac{1}{g_{\mathrm{eff}}^2}
@@ -658,22 +733,18 @@ the effective coupling satisfies
 \end{equation}
 where $\psi^{(0)}$ is the massless twistor harmonic (the fiber representative of the
 zero-mode) and $d\mu_{L_x}$ is the measure induced by $\omega_{\mathrm{FS}}$.
-\end{lemma}
+\end{proposition}
 
-\begin{proof}[Proof sketch (standard reduction argument)]
-Linearize \eqref{eq:twistor_action} about the trivial bundle and restrict to the
-massless cohomology along each twistor line $L_x$.
-The quadratic form reduces to the fiber $L^2$ norm of the corresponding harmonic
-representative $\psi^{(0)}$ multiplied by the spacetime $L^2$ norm of the reconstructed
-field strength. The coefficient of the spacetime kinetic term is therefore exactly the
-fiber integral shown in \eqref{eq:fiber_identity}. The measure normalization fixes the
-overall constant.
+\begin{proof}
+This is the coupling clause of the declared bridge, specialized to the
+selected massless representative and the displayed fiber convention.
 \end{proof}
 
 \begin{remark}
-A fully detailed proof can be presented by writing ${\cal A}$ in a basis of
-Dolbeault harmonics on $L_x$ and performing the fiber integral explicitly;
-the only nontrivial constant is fixed by \eqref{eq:FSnorm}.
+A derivation rather than an assumption would require a specified twistor
+action for the intended spacetime theory, reality structure, Hermitian metric,
+gauge fixing, functional measure, and pushforward calculation. None is supplied
+by the Fubini--Study area convention alone.
 \end{remark}
 
 \subsection{A.4 Identification with MTT overlap integrals}
@@ -701,7 +772,8 @@ bridge between the twistor fiber norm and the internal overlap. The
 Fubini--Study convention fixes a fiber measure, but does not alone determine
 the relative coupling normalization or select the internal metric scale.
 
-\subsection{A.5 Explicit SU(2) normalization: recovery of the $4\pi$ lens factor}
+\subsection{A.5 Explicit SU(2) normalization: recovery of the
+\texorpdfstring{$4\pi$}{4 pi} lens factor}
 
 We now carry out the only place in Route~A where a constant could have been ambiguous:
 the lens coefficient $\kappa_\ell$.
@@ -741,7 +813,7 @@ Twistor theory naturally encodes massless SDYM sectors irrespective of the inter
 realization of color, but the explicit reduction of the SU(3) overlap requires specifying
 the internal color fiber and its harmonic representative.
 Given such a choice (e.g. $\Gamma\backslash\mathrm{Nil}_3$ with left-invariant harmonic 1-forms),
-the same fiber reduction \eqref{eq:fiber_identity} applies after the relative
+the same bridge \eqref{eq:fiber_identity} applies after the relative
 coupling normalization is declared. In particular, if the $SU(3)$ massless harmonic is chosen as a unit
 $L^2$ representative on the internal color fiber, then Route~B matches Route~A.
 
@@ -751,7 +823,70 @@ representation of the color fiber as a canonical twistor bundle, and (ii) comput
 corresponding $L^2$ harmonic norm directly on that bundle. Until those steps are supplied, the $SU(3)$ result is a conditional
 cross-check and not an independent normalization theorem.
 \end{remark}
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The HYM, finite-matrix, and common-scheme precision rows provide the computational target for the conditional twistor-action audit. They do not supply the missing action normalization or prove that the twistor corner is the physical branch. Other sector rows are context, and the strict upgrade remains open.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A02/precision_15_source_transport} (\emph{profile replay}).\par Fifteen measured source coordinates, Jacobian and covariance transport.
+\item \path{A02/precision_8x8_workspace} (\emph{profile replay}).\par Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+\item \path{A01/qutrit_weyl_27_matrix} (\emph{derived exact}).\par Sparse 27x27 qutrit-Weyl left-action realization.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/charged_yukawa_higgs_profile} (\emph{profile replay}).\par Versioned Yu, Yd, Ye and lambda\_H profile packet.
+\item \path{A14/ckm_prediction_profile} (\emph{numeric certified}).\par Three selected CKM profile rows and uncertainty comparison.
+\item \path{A01/current_global_lock} (\emph{profile replay}).\par Current non-looping global status and source-certificate map.
+\item \path{A01/direct_k_higgs_row} (\emph{derived exact}).\par Promoted direct K\_threshold.Omega\_H.lambda row.
+\item \path{A22/e6_qpsi_qcd_anomaly} (\emph{derived exact}).\par E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\item \path{A40/neutral_two_primitive_profile} (\emph{profile replay}).\par Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+\item \path{A01/strict_pew_row} (\emph{derived exact}).\par Promoted P\_EW source row at the declared one-shared-primitive standard.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
+
 \begin{thebibliography}{99}
+
+\bibitem{Mason2005}
+L.~J. Mason,
+\emph{Twistor actions for non-self-dual fields: a derivation of
+twistor-string theory},
+JHEP \textbf{10} (2005) 009.
+\url{https://doi.org/10.1088/1126-6708/2005/10/009}
+
+\bibitem{Movshev2008}
+M.~V. Movshev,
+\emph{A note on self-dual Yang--Mills theory},
+\url{https://arxiv.org/abs/0812.0224}
 
 \bibitem{MTT-Admissibility}
 P.~Nero,

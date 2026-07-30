@@ -61,18 +61,18 @@ trajectories are computationally irreducible, or that prediction limits derive
 probability, quantization, physical time, horizons, irreversibility, or a
 universal control obstruction.
 
+## Expository revision
+
+The current paper now opens with a paper-specific guide separating finite
+prediction depth, branching, undefined continuation, undecidability,
+complexity, and simulation cost in plain language. A bounded-counter toy
+system gives a concrete case with finite depth and fully decidable
+reachability. The argument map then shows why the six-clause robust
+two-counter embedding is the decisive missing construction and why the
+finite-capacity theorem is the complementary result.
+
 ## Verification
 
-Run from the paper directory:
-
-```powershell
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-```
-
-Run from the repository root:
-
-```powershell
-python scripts/migrate.py --source-root C:\Users\nero_\Downloads\TEXPAPERS
-python scripts/verify.py
-```
+- The current source compiles with `pdflatex` to a 10-page PDF.
+- The final log has no undefined references, underfull boxes, overfull boxes,
+  or LaTeX/package warnings.

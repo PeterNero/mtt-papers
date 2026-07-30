@@ -24,17 +24,15 @@
 \title{Constructive MTT Quantum Gravity II:\\
 \large A Conditional BRST/BV Compatibility and Physical-State Reconstruction Contract for SPT-Filtered Models}
 \author{Peter Nero}
-\date{Corrected second edition, July 2026}
+\date{July 2026\\Version 2}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-This paper corrects the first edition's claim that a full nonperturbative,
-unitary gravity sector follows from separately filtered graviton and ghost
-covariances, termwise BRST identities, and reflection positivity of the
-transverse-traceless sector.  Those implications are not valid.  We replace
-them by a typed compatibility contract.  First, a common bounded functional
+This paper gives a typed compatibility contract for BRST lifting, gauge
+independence, Borel summation, and reflection positivity in the Modal Triplet
+Theory quantum-gravity program. First, a common bounded functional
 calculus preserves a linear BRST complex when the kinetic Laplacians, spectral
 projections, domains, and boundary conditions intertwine the differential;
 independently chosen filters do not ensure this.  Second, an exact
@@ -53,6 +51,21 @@ free-field inputs, but not yet the selected gravitational quantum measure,
 quantum master equation, constructive Borel theorem, or physical
 reflection-positivity theorem required by that certificate.
 \end{abstract}
+
+\section*{Version 2 Revision Note}
+\begin{description}
+\item[Supersedes:] Constructive MTT Quantum Gravity II, first release.
+\item[Reason:] Separate graviton and ghost filters, termwise Ward identities,
+and TT positivity did not imply a full BRST quantum theory.
+\item[Resolution:] The paper now states a shared-filter chain-map theorem,
+finite-cutoff Ward theorem, conditional Borel inheritance, and the full
+cohomological Osterwalder--Schrader contract.
+\item[Retained result:] The finite and linear compatibility statements are
+exact under their declared domains and common-filter hypotheses.
+\item[Remaining boundary:] The selected interacting measure, quantum master
+equation, constructive Borel control, and physical reflection positivity
+remain open.
+\end{description}
 
 \tableofcontents
 
@@ -99,6 +112,25 @@ satisfy the relevant OS axioms and reconstruct a positive Lorentzian theory.
 \end{description}
 The first level does not imply the second, and the second does not imply the
 third.
+
+\subsection{Reader orientation and intuition}
+
+The central picture is a chain of interfaces rather than a single quantization
+step.  A classical gauge symmetry supplies a differential.  A regulator must
+commute with that differential.  A quantum measure must then satisfy the
+measure-dependent master equation.  Only after the resulting gauge-invariant
+correlators obey physical reflection positivity can one reconstruct a positive
+state space.  Sections 4--7 test these interfaces one at a time, Section 8
+combines them into a conditional theorem, and Section 9 records the missing
+objects.
+
+In plain language, filtering the graviton and filtering the ghost with two
+similar-looking functions is not enough.  The filter must respect every arrow
+of the BRST complex in the same way that a map of chain complexes must respect
+its boundary operator.  Likewise, positivity of the two TT helicities only
+tests a small physical-looking corner; it does not determine the sign of the
+full BRST quotient.  These two pictures explain why the old promotion from
+filtered propagators to a physical Hilbert space was too fast.
 
 % ============================================================
 \section{Current MTT input and its boundary}
@@ -426,35 +458,12 @@ consequence of writing $\ker Q/\operatorname{im}Q$
 \section{Why permanent Gaussian damping cannot prove standard positivity}
 
 The earlier SPT program tried to combine a positive spectral representation
-with permanent Gaussian ultraviolet damping.  The following elementary no-go
-is independent of the BRST issue.
-
-\begin{theorem}[Positive spectral measure versus Gaussian decay]
-Let
-\[
- D(x)=\int_0^\infty\frac{\rho(ds)}{x+s},\qquad x>0,
-\]
-where $\rho$ is a nonzero positive measure and $D(x)$ is finite.  Then there
-are $R,m>0$ such that
-\[
- D(x)\ge\frac{m}{x+R}.
-\]
-Consequently, for no $C,\tau,\lambda>0$ can
-\[
- D(x)\le \frac{C e^{-\tau x}}{x+\lambda}
-\]
-hold for all sufficiently large $x$.
-\end{theorem}
-
-\begin{proof}
-Because $\rho$ is nonzero, some bounded interval $[0,R]$ has mass
-$m=\rho([0,R])>0$.  Restricting the integral to that interval gives the lower
-bound.  Combining both inequalities would imply
-\[
- \frac{m}{C}\le e^{-\tau x}\frac{x+R}{x+\lambda},
-\]
-whose right-hand side tends to zero.
-\end{proof}
+with permanent Gaussian ultraviolet damping.  The companion paper
+\emph{An SPT-Filtered Euclidean TT Model and Its Conditional Perturbative
+Properties} owns the exact spectral no-go: a nonzero positive
+K\"all\'en--Lehmann/Stieltjes measure gives a lower bound of order
+$1/(x+R)$ and therefore cannot also have permanent Gaussian decay in the
+same Euclidean spectral variable \cite{MTTSPTCorrection}.
 
 Thus a nontrivial standard positive Kallen--Lehmann measure and permanent
 Gaussian decay cannot hold in the same Euclidean spectral variable.  This does
@@ -563,6 +572,33 @@ research target, not a nonperturbative unitary theory of quantum gravity.
 
 % ============================================================
 \small
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The BRST/BV compatibility statements are conditional contracts whose hypotheses are displayed in this paper. The mapped open ledger is not evidence of gauge-independent quantum gravity and is included solely as a current boundary on stronger MTT claims.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
+
 \begin{thebibliography}{99}
 
 \bibitem{FaddeevPopov1967}
@@ -662,8 +698,9 @@ research ledger, 2026.
 
 \bibitem{MTTSPTCorrection}
 P.~Nero,
-\emph{MTT SPT Gaussian, Stieltjes, and Graph-Rank Correction},
-executable research note, 2026.
+\emph{An SPT-Filtered Euclidean TT Model and Its Conditional Perturbative
+Properties},
+corrected MTT quantum-gravity paper, 2026.
 
 \bibitem{MTTSMBRST}
 P.~Nero,

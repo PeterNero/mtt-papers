@@ -7,19 +7,79 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v2
-date: July 2026
-generated_from_main_tex_sha256: a0ffcea05082d9482a32486f94c0a963cd7a03828b0e627473a8db53f9d5df1a
+current_version: v3
+date: July 2026 Version 3
+generated_from_main_tex_sha256: 9458091c6e622d8a9ff70ef0973124d0fe33fa61737a5eecc190e0c9b9cf7963
 paper_id: the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707
 release_state: zenodo_released
-released_version: v1.0
+released_version: v3
 title: |
-  The Modal Triplet Theory Program D1:  
+  The Modal Triplet Theory Program D1:
   A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract
-zenodo_doi: 10.5281/zenodo.18355167
-zenodo_record_id: 18355167
-zenodo_url: "https://zenodo.org/records/18355167"
+zenodo_doi: 10.5281/zenodo.21655391
+zenodo_record_id: 21655391
+zenodo_url: "https://zenodo.org/records/21655391"
 ---
+
+# Revision note for version 3
+
+<div class="description">
+
+Version 2 of Program D1.
+
+Version 2 correctly withdrew a direct identification of encoding labels with dark matter and dark energy, but the decisive difference between an availability profile and a covariant source was not sufficiently concrete for a standalone reader.
+
+Version 3 adds the mask-versus-source explanation, a deliberately non-selected scalar example, and a guided map through the independent background, perturbation, lensing, clustering, and equation-of-state gates. The example illustrates underdetermination and is explicitly not promoted to an MTT dark-sector model.
+
+The availability-only nonselection theorem, the two lawful promotion routes, and the observational completion contract are unchanged.
+
+No selected source map or diffeomorphism-invariant action, cosmological solution, perturbation transfer function, or empirical dark-sector fit is derived.
+
+</div>
+
+# How to Read Program D1
+
+This paper does not propose that an encoding label is a new cosmological substance. It asks whether a pre-projection availability law could eventually produce an effective source that observers would otherwise describe as dark matter or dark energy. The distinction between the availability law and its gravitational image is the organizing idea of the paper.
+
+## Object picture: a mask is not a source
+
+An availability profile $`\alpha(x)`$ can be pictured as a spacetime-dependent mask recording which reduced descriptions pass their contracts near $`x`$. Knowing the mask does not say how much energy is present, how it moves, or how it gravitates. Those answers require a second map,
+``` math
+\alpha\ \hbox{and pre-projection data}
+ \longmapsto
+ S_{\rm enc}\ \hbox{or}\ \mathcal E_{\mu\nu},
+```
+followed by variation or field equations. The availability-only non-selection theorem proves that many inequivalent second maps can share exactly the same mask.
+
+## A deliberately non-selected example
+
+For orientation only, suppose one promoted a scalar availability coordinate $`\alpha`$ to a dynamical field and freely chose
+``` math
+S_{\rm toy}
+ =
+ \int_{Y_4}\sqrt{-g}
+ \left(
+ -\frac{Z}{2}g^{\mu\nu}\partial_\mu\alpha\,\partial_\nu\alpha
+ -V(\alpha)
+ \right)d^4x .
+```
+Its stress tensor would be
+``` math
+T_{\mu\nu}^{\rm toy}
+ =
+ Z\,\partial_\mu\alpha\,\partial_\nu\alpha
+ g_{\mu\nu}
+ \left(
+ -\frac{Z}{2}(\partial\alpha)^2-V(\alpha)
+ \right),
+```
+and its equation of motion would depend on the freely chosen $`Z`$ and $`V`$. Different choices can yield different pressures, sound speeds, stability properties, and expansion histories while leaving the verbal label “availability” unchanged.
+
+This toy action is not an MTT dark-sector proposal and supplies no evidence for one. Its purpose is to make the missing source theorem concrete: MTT would have to select the functional form and its parameters from upstream data rather than choose them to reproduce cosmology.
+
+## Argument map
+
+Sections 2 and 3 define the status and availability data. Section 4 proves that those data do not select ontology or dynamics. Section 5 states the two legitimate promotion routes: an effective source action or a modified metric equation. Sections 6 and 7 list the independent dark-matter and dark-energy tests that a completed route must pass. Sections 8–11 delimit the interpretation, connect it to current MTT results, order the research program, and state falsifiers. The readiness scale should be read cumulatively: closing DS0 does not partially close the equations or data analyses at DS1–DS5.
 
 # Status, Purpose, and Logical Tier
 
@@ -156,6 +216,8 @@ T_{\mu\nu}
 Both completions have the same availability profile, yet their sources and metric equations differ whenever $`\Lambda_{\rm eff}\ne0`$. Therefore availability data alone do not select the source or dynamics. ◻
 
 </div>
+
+The theorem is constructive in the negative sense: it displays two completions with identical descriptive data and different gravitational consequences. It therefore identifies exactly what a successful continuation must add. A proposed source map must be independently selected strongly enough to exclude at least one of these alternatives and every other completion allowed by the same premises.
 
 <div class="corollary">
 
@@ -303,6 +365,8 @@ Whichever route is used, an MTT derivation must provide:
 8.  a separation of fitted, calibrated, and held-out quantities.
 
 A freely chosen action that reproduces cosmology would be a legitimate effective model, but not yet an MTT selection theorem.
+
+Route A and Route B are not merely different notations. Route A retains the Einstein tensor and attributes the additional effect to a covariantly controlled source. Route B changes the metric equation itself and may change the propagating gravitational degrees of freedom. Their perturbation, stability, and observational calculations can therefore differ even when they are arranged to share one homogeneous expansion history.
 
 # Dark-Matter Promotion Gates
 
@@ -552,3 +616,7 @@ Version 2 is a structural correction, not a boundary-only erratum.
 The projection-first idea survives in a precise form. MTT may classify regimes in which different reduced encodings are available, and E8/E9 labels may help organize future source constructions. What does not survive is the claim that missing encodings already explain the observed dark sector.
 
 Availability does not determine stress-energy. Statistical description does not determine cold dark matter. Relational description does not determine accelerated expansion. The next decisive object is a selected covariant source action or modified field equation, followed by background, perturbative, nonlinear, and held-out observational execution. Until that chain is supplied, Program D1 is a disciplined hypothesis and research contract rather than a dark-sector theory.
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

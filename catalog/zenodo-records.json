@@ -2,6 +2,2531 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.19535234",
+      "created": "2026-07-29T08:52:45.657006+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21654883",
+      "files": [
+        {
+          "checksum": "md5:b9bd9a4fce599cae46263063c0d0a242",
+          "content_url": "https://zenodo.org/api/records/21654883/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 355826
+        }
+      ],
+      "id": "21654883",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21654883",
+      "resource_type": "publication",
+      "title": "World-in-World Genesis: Local Comparison Geometry and a Globalization Program",
+      "updated": "2026-07-29T08:52:45.994621+00:00",
+      "version": "v5"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261841",
+      "created": "2026-07-29T08:52:44.472829+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666025",
+      "files": [
+        {
+          "checksum": "md5:0ab4f72d2c187b5701abd7680e001cc5",
+          "content_url": "https://zenodo.org/api/records/21666025/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 314713
+        }
+      ],
+      "id": "21666025",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666025",
+      "resource_type": "publication",
+      "title": "Born-Compatible Record Measures and the Classical Concentration Limit: Separate Theorems and Their MTT Interface",
+      "updated": "2026-07-29T08:52:44.734356+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18330648",
+      "created": "2026-07-29T08:52:43.196767+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666024",
+      "files": [
+        {
+          "checksum": "md5:b5afd7e0e556bc8c25538502335bdaf3",
+          "content_url": "https://zenodo.org/api/records/21666024/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 314417
+        }
+      ],
+      "id": "21666024",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666024",
+      "resource_type": "publication",
+      "title": "Complex-Hilbert Rigidity under Sol\u00e8r, Local Tomography, and Standard Composition A Conditional MTT Reconstruction Theorem",
+      "updated": "2026-07-29T08:52:43.400170+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261924",
+      "created": "2026-07-29T08:52:41.084605+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666021",
+      "files": [
+        {
+          "checksum": "md5:8b6aad8d095586a33d3e1f827e80ef02",
+          "content_url": "https://zenodo.org/api/records/21666021/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 336310
+        }
+      ],
+      "id": "21666021",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666021",
+      "resource_type": "publication",
+      "title": "Contextuality and Sequential Measurement Order: Distinct Obstructions with a Shared MTT Interface",
+      "updated": "2026-07-29T08:52:41.425511+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261892",
+      "created": "2026-07-29T08:52:39.632808+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666019",
+      "files": [
+        {
+          "checksum": "md5:487d2d318606bd379e07720de8c8207d",
+          "content_url": "https://zenodo.org/api/records/21666019/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 353854
+        }
+      ],
+      "id": "21666019",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666019",
+      "resource_type": "publication",
+      "title": "Why Decoherence Cannot Replace Measurement Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory",
+      "updated": "2026-07-29T08:52:40.095115+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21666015",
+      "created": "2026-07-29T08:52:27.985958+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666016",
+      "files": [
+        {
+          "checksum": "md5:6f74b45cc59cacebc22f08357aaa9033",
+          "content_url": "https://zenodo.org/api/records/21666016/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 334899
+        }
+      ],
+      "id": "21666016",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666016",
+      "resource_type": "publication",
+      "title": "Finite-Memory Noise and the White-Noise/Markov Limit Exact Colored-OU Convergence and Its MTT Scope",
+      "updated": "2026-07-29T08:52:28.598340+00:00",
+      "version": "v1"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18260713",
+      "created": "2026-07-29T08:52:26.586131+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666014",
+      "files": [
+        {
+          "checksum": "md5:492b9786a94374cae3ca5413e8077b90",
+          "content_url": "https://zenodo.org/api/records/21666014/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 386823
+        }
+      ],
+      "id": "21666014",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666014",
+      "resource_type": "publication",
+      "title": "Topological Consistency Conditions in Modal Triplet Theory: Internal Indices, Charge Lattices, and Holonomy",
+      "updated": "2026-07-29T08:52:26.932289+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262145",
+      "created": "2026-07-29T08:52:24.748489+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666013",
+      "files": [
+        {
+          "checksum": "md5:63959e75324a412f4da6ce627e93f0a4",
+          "content_url": "https://zenodo.org/api/records/21666013/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 317507
+        }
+      ],
+      "id": "21666013",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666013",
+      "resource_type": "publication",
+      "title": "Theta Closure in Modal Triplet Theory V: Weak-Angle Round Trip and the Non-Circularity Criterion",
+      "updated": "2026-07-29T08:52:25.176135+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262121",
+      "created": "2026-07-29T08:52:23.462379+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666012",
+      "files": [
+        {
+          "checksum": "md5:9a241c4f38de7d715056fb6a5e7c73ec",
+          "content_url": "https://zenodo.org/api/records/21666012/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 346552
+        }
+      ],
+      "id": "21666012",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666012",
+      "resource_type": "publication",
+      "title": "Theta Closure in Modal Triplet Theory IV: Conditional Gravity Scaling and Cosmological Cutoff Audit",
+      "updated": "2026-07-29T08:52:23.865390+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262097",
+      "created": "2026-07-29T08:52:22.186920+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666011",
+      "files": [
+        {
+          "checksum": "md5:c5b5f6ee8eeddfb68af28d53e2590d98",
+          "content_url": "https://zenodo.org/api/records/21666011/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 427814
+        }
+      ],
+      "id": "21666011",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666011",
+      "resource_type": "publication",
+      "title": "Theta Closure in Modal Triplet Theory III: Conditional Twistor\u2013Action Matching and Normalization Audit",
+      "updated": "2026-07-29T08:52:22.608484+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262079",
+      "created": "2026-07-29T08:52:21.155489+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666008",
+      "files": [
+        {
+          "checksum": "md5:d9e1acc0e0e0aac97642b8fe70ac8909",
+          "content_url": "https://zenodo.org/api/records/21666008/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 384054
+        }
+      ],
+      "id": "21666008",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666008",
+      "resource_type": "publication",
+      "title": "Theta Closure in Modal Triplet Theory II: Direct Geometric Realization of Selected Gauge-Profile Overlaps",
+      "updated": "2026-07-29T08:52:21.531301+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18255244",
+      "created": "2026-07-29T08:52:18.504203+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666007",
+      "files": [
+        {
+          "checksum": "md5:9c633bd34b18c43a6d5878c0defb5691",
+          "content_url": "https://zenodo.org/api/records/21666007/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 425111
+        }
+      ],
+      "id": "21666007",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666007",
+      "resource_type": "publication",
+      "title": "Theta Closure in Modal Triplet Theory I: Gauge-Profile Targets from Multi-Loop Common-Scheme Transport",
+      "updated": "2026-07-29T08:52:19.210249+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.19534665",
+      "created": "2026-07-29T08:52:17.612304+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655396",
+      "files": [
+        {
+          "checksum": "md5:13d3a9d9cd3821a504d7b1250f86a75e",
+          "content_url": "https://zenodo.org/api/records/21655396/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 391561
+        }
+      ],
+      "id": "21655396",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655396",
+      "resource_type": "publication",
+      "title": "The Proto-Spinor: Conditional Spinorial Closure and the q79 Interface",
+      "updated": "2026-07-29T08:52:17.861295+00:00",
+      "version": "v7"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18255838",
+      "created": "2026-07-29T08:52:16.397465+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652659",
+      "files": [
+        {
+          "checksum": "md5:ed2f84d80111110b1197a0e9d72160d6",
+          "content_url": "https://zenodo.org/api/records/21652659/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 363261
+        }
+      ],
+      "id": "21652659",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652659",
+      "resource_type": "publication",
+      "title": "The Projection\u2013Admissibility Principle Descent, Recovery, and Structural Constraints on Effective Description",
+      "updated": "2026-07-29T08:52:17.007206+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18380139",
+      "created": "2026-07-29T08:52:14.295039+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21657167",
+      "files": [
+        {
+          "checksum": "md5:8e18b2beb60f37f3191183421153b8ed",
+          "content_url": "https://zenodo.org/api/records/21657167/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 323357
+        }
+      ],
+      "id": "21657167",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21657167",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program D2: Matter--Antimatter Orientation and the Baryogenesis Source Contract",
+      "updated": "2026-07-29T08:52:15.479670+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18355166",
+      "created": "2026-07-29T08:52:03.860941+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655391",
+      "files": [
+        {
+          "checksum": "md5:d27d6043bdd46f9f028b9499b5287ba3",
+          "content_url": "https://zenodo.org/api/records/21655391/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 363063
+        }
+      ],
+      "id": "21655391",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655391",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program D1: A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract",
+      "updated": "2026-07-29T08:52:04.295781+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18355142",
+      "created": "2026-07-29T08:52:03.108544+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655387",
+      "files": [
+        {
+          "checksum": "md5:88f4af8c5711d2828023b9967eb5f728",
+          "content_url": "https://zenodo.org/api/records/21655387/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 415080
+        }
+      ],
+      "id": "21655387",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655387",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program C: A Typed Dictionary for Geometric, Bundle, and Operator Realizations",
+      "updated": "2026-07-29T08:52:03.377254+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18355129",
+      "created": "2026-07-29T08:52:02.401907+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655386",
+      "files": [
+        {
+          "checksum": "md5:54c49efb082a680c418389cf4e30c07c",
+          "content_url": "https://zenodo.org/api/records/21655386/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 373683
+        }
+      ],
+      "id": "21655386",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655386",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
+      "updated": "2026-07-29T08:52:02.729849+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18355085",
+      "created": "2026-07-29T08:52:01.665264+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652656",
+      "files": [
+        {
+          "checksum": "md5:0f26e1f4f4a82963d03365bb4767f4de",
+          "content_url": "https://zenodo.org/api/records/21652656/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 419669
+        }
+      ],
+      "id": "21652656",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652656",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B4: Typed Encoding Intersections, Conditional Rigidity, and Standard Model Compatibility",
+      "updated": "2026-07-29T08:52:01.916424+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18355058",
+      "created": "2026-07-29T08:52:01.094323+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652653",
+      "files": [
+        {
+          "checksum": "md5:c37bca7b84b17e83b898ad2c23f85f13",
+          "content_url": "https://zenodo.org/api/records/21652653/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 390716
+        }
+      ],
+      "id": "21652653",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652653",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B3: Discrete Survivor Filters and Conditional Quantum Reconstruction",
+      "updated": "2026-07-29T08:52:01.324017+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18355036",
+      "created": "2026-07-29T08:52:00.279524+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652648",
+      "files": [
+        {
+          "checksum": "md5:97f6f6b46036997c2b45734c62c3c095",
+          "content_url": "https://zenodo.org/api/records/21652648/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 373367
+        }
+      ],
+      "id": "21652648",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652648",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B2: Gauge Redundancy, Global Sections, and the Conditional Yang\u2013Mills Realization",
+      "updated": "2026-07-29T08:52:00.605225+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18355019",
+      "created": "2026-07-29T08:51:59.312593+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652643",
+      "files": [
+        {
+          "checksum": "md5:88db7a53210f7aa35846eaade5e3f08b",
+          "content_url": "https://zenodo.org/api/records/21652643/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 401092
+        }
+      ],
+      "id": "21652643",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652643",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B1: Loop-Transport Consistency and the Conditional Gravity Realization",
+      "updated": "2026-07-29T08:51:59.696174+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18354989",
+      "created": "2026-07-29T08:51:57.899609+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652638",
+      "files": [
+        {
+          "checksum": "md5:dceafb0a34be9e743768286dfe85a432",
+          "content_url": "https://zenodo.org/api/records/21652638/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 387968
+        }
+      ],
+      "id": "21652638",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652638",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B0: Circle\u2013Lens\u2013Nil as an Obstruction Taxonomy and Its Minimal Curvature Realizations",
+      "updated": "2026-07-29T08:51:58.230388+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18354965",
+      "created": "2026-07-29T08:51:57.064304+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652637",
+      "files": [
+        {
+          "checksum": "md5:3e487d43a78ebd2a23bee1a2338cddb7",
+          "content_url": "https://zenodo.org/api/records/21652637/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 358551
+        }
+      ],
+      "id": "21652637",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652637",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program A2: Conditional Computability and Finite Prediction Depth",
+      "updated": "2026-07-29T08:51:57.416501+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18354942",
+      "created": "2026-07-29T08:51:56.096131+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652636",
+      "files": [
+        {
+          "checksum": "md5:857e0e5ab11a61b48ba6abd904a8407e",
+          "content_url": "https://zenodo.org/api/records/21652636/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 334018
+        }
+      ],
+      "id": "21652636",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652636",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program A1: Coherent Kinematics Chart Persistence, Encoding Worldlines, and the Conditional Physical Bridge",
+      "updated": "2026-07-29T08:51:56.467260+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18354783",
+      "created": "2026-07-29T08:51:45.864293+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652631",
+      "files": [
+        {
+          "checksum": "md5:b3353c345b8fa3f8052c23d1060f2d5b",
+          "content_url": "https://zenodo.org/api/records/21652631/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 456868
+        }
+      ],
+      "id": "21652631",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652631",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program A0: A Structural Theory of Reduced Description",
+      "updated": "2026-07-29T08:51:46.310509+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18283407",
+      "created": "2026-07-29T08:51:44.801915+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666005",
+      "files": [
+        {
+          "checksum": "md5:a355128e62d6137a557d576b0581f99a",
+          "content_url": "https://zenodo.org/api/records/21666005/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 350259
+        }
+      ],
+      "id": "21666005",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666005",
+      "resource_type": "publication",
+      "title": "The Shared Circle in Modal Triplet Theory: Exact Phase Transport, Interpretive Roles, and Physical Boundaries",
+      "updated": "2026-07-29T08:51:45.294745+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.17162671",
+      "created": "2026-07-29T08:51:43.416541+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655366",
+      "files": [
+        {
+          "checksum": "md5:3701325616dd247dbf7d702e16e2c2f7",
+          "content_url": "https://zenodo.org/api/records/21655366/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 415653
+        }
+      ],
+      "id": "21655366",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655366",
+      "resource_type": "publication",
+      "title": "The Book on Modal Triplet Theory An Interpretive Guide How to picture the program, what it has achieved, and what remains open",
+      "updated": "2026-07-29T08:51:44.146058+00:00",
+      "version": "v11"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18208884",
+      "created": "2026-07-29T08:51:42.719521+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21657161",
+      "files": [
+        {
+          "checksum": "md5:5de20ab3a8a905cbe74a6a9cc6a66303",
+          "content_url": "https://zenodo.org/api/records/21657161/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 257272
+        }
+      ],
+      "id": "21657161",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21657161",
+      "resource_type": "publication",
+      "title": "Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory: A Conditional Sequential-Instrument Analysis",
+      "updated": "2026-07-29T08:51:42.997155+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262209",
+      "created": "2026-07-29T08:51:41.098983+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666002",
+      "files": [
+        {
+          "checksum": "md5:68c377abaeb17ff02fc4748f5877fa4a",
+          "content_url": "https://zenodo.org/api/records/21666002/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 288950
+        }
+      ],
+      "id": "21666002",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666002",
+      "resource_type": "publication",
+      "title": "Superset Determinations in Modal Triplet Theory: Parameter Identifiability after Profile-Standard SM Closure",
+      "updated": "2026-07-29T08:51:42.152472+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.19535683",
+      "created": "2026-07-29T08:51:40.275969+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655397",
+      "files": [
+        {
+          "checksum": "md5:15f1ba57eed05bdf3bb92119a8434851",
+          "content_url": "https://zenodo.org/api/records/21655397/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 347426
+        }
+      ],
+      "id": "21655397",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655397",
+      "resource_type": "publication",
+      "title": "Proto-Spinor Closure and Worldsheet Encoding in Modal Triplet Theory A Conditional Local Bridge",
+      "updated": "2026-07-29T08:51:40.522189+00:00",
+      "version": "v5"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262040",
+      "created": "2026-07-29T08:51:39.380083+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666001",
+      "files": [
+        {
+          "checksum": "md5:22daa565ed2cab15150b348d1ce2cc07",
+          "content_url": "https://zenodo.org/api/records/21666001/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 330811
+        }
+      ],
+      "id": "21666001",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666001",
+      "resource_type": "publication",
+      "title": "Projection, Probability, and Irreversibility: A Descent, Recovery, and Measure-Separation Framework for MTT Shadow Bridges",
+      "updated": "2026-07-29T08:51:39.749289+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21665999",
+      "created": "2026-07-29T08:51:38.283371+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666000",
+      "files": [
+        {
+          "checksum": "md5:474f66130117fb4dfd05a522a0e206ee",
+          "content_url": "https://zenodo.org/api/records/21666000/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 286854
+        }
+      ],
+      "id": "21666000",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666000",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: Perturbative Coherent-Sector Quantum Gravity and the Heterotic UV-Completion Boundary",
+      "updated": "2026-07-29T08:51:38.902604+00:00",
+      "version": "v6"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16950915",
+      "created": "2026-07-29T08:51:37.194125+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665998",
+      "files": [
+        {
+          "checksum": "md5:8166247be738fc802e75c6d7d7576a87",
+          "content_url": "https://zenodo.org/api/records/21665998/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 338142
+        }
+      ],
+      "id": "21665998",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665998",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and Quantum Field Theory on Curved Spacetime: A Selected Free CAR Net and the Interacting Reconstruction Boundary",
+      "updated": "2026-07-29T08:51:37.805171+00:00",
+      "version": "v4"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.17162354",
+      "created": "2026-07-29T08:51:35.796633+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665997",
+      "files": [
+        {
+          "checksum": "md5:79db7f481d8b35808573681e6c94b03d",
+          "content_url": "https://zenodo.org/api/records/21665997/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 308286
+        }
+      ],
+      "id": "21665997",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665997",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and Loop Quantum Gravity: A Conditional Holst/Canonical Embedding",
+      "updated": "2026-07-29T08:51:36.415994+00:00",
+      "version": "v4"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18254862",
+      "created": "2026-07-29T08:51:23.106322+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665996",
+      "files": [
+        {
+          "checksum": "md5:467a8a194f3fe4db7b22e2dd860f8d1b",
+          "content_url": "https://zenodo.org/api/records/21665996/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 379648
+        }
+      ],
+      "id": "21665996",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665996",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and History-Dependent Stochastic Processes: Fixed-State Indivisibility, Markov Order, and the Quantum Boundary",
+      "updated": "2026-07-29T08:51:23.538732+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16950597",
+      "created": "2026-07-29T08:51:22.029541+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665995",
+      "files": [
+        {
+          "checksum": "md5:77d89912fe4109cb6a51c3780864ac06",
+          "content_url": "https://zenodo.org/api/records/21665995/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 391524
+        }
+      ],
+      "id": "21665995",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665995",
+      "resource_type": "publication",
+      "title": "Controlled Coherent Reduction to Four-Dimensional Einstein Gravity",
+      "updated": "2026-07-29T08:51:22.422445+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.17077671",
+      "created": "2026-07-29T08:51:21.100693+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665988",
+      "files": [
+        {
+          "checksum": "md5:5f09baf7cedb1dd7d945213fe6fd9f4c",
+          "content_url": "https://zenodo.org/api/records/21665988/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 357557
+        }
+      ],
+      "id": "21665988",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665988",
+      "resource_type": "publication",
+      "title": "An SPT-Filtered Euclidean TT Model and Its Conditional Perturbative Properties",
+      "updated": "2026-07-29T08:51:21.506432+00:00",
+      "version": "v5"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949762",
+      "created": "2026-07-29T08:51:20.203508+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655367",
+      "files": [
+        {
+          "checksum": "md5:d0ef856e73889618705c72157afef6d9",
+          "content_url": "https://zenodo.org/api/records/21655367/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 439234
+        }
+      ],
+      "id": "21655367",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655367",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: Foundations",
+      "updated": "2026-07-29T08:51:20.648443+00:00",
+      "version": "v9"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.17162549",
+      "created": "2026-07-29T08:51:18.517139+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21654874",
+      "files": [
+        {
+          "checksum": "md5:5f2373335b02f435750467dd5e03c4c6",
+          "content_url": "https://zenodo.org/api/records/21654874/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 266337
+        }
+      ],
+      "id": "21654874",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21654874",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: A Typed Relationship Atlas Reconstructions, Embeddings, Reductions, and Open Bridges",
+      "updated": "2026-07-29T08:51:19.050539+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261529",
+      "created": "2026-07-29T08:51:17.800340+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665985",
+      "files": [
+        {
+          "checksum": "md5:de07ec4e7ff3554de61a3bbc8408d3b2",
+          "content_url": "https://zenodo.org/api/records/21665985/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 330294
+        }
+      ],
+      "id": "21665985",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665985",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and Asymptotic Safety: A Conditional FRG Conjugacy and Unstable-Subspace Theorem",
+      "updated": "2026-07-29T08:51:18.024557+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262454",
+      "created": "2026-07-29T08:51:16.991170+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655395",
+      "files": [
+        {
+          "checksum": "md5:5ab778a84c3505fcfaf8e33a920072d2",
+          "content_url": "https://zenodo.org/api/records/21655395/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 408235
+        }
+      ],
+      "id": "21655395",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655395",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description A Typed and Tiered Corpus Roadmap",
+      "updated": "2026-07-29T08:51:17.331518+00:00",
+      "version": "v13"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.17076300",
+      "created": "2026-07-29T08:51:14.938120+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665825",
+      "files": [
+        {
+          "checksum": "md5:49796d07e1f7defdbd0e251f974592e5",
+          "content_url": "https://zenodo.org/api/records/21665825/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 326938
+        }
+      ],
+      "id": "21665825",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665825",
+      "resource_type": "publication",
+      "title": "Modal Fixed Points, Bell's Beables, and the Limits of Factorization: Upper-Local Dynamics, Nonseparable States, and Operational No-Signaling in MTT",
+      "updated": "2026-07-29T08:51:15.953191+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21665983",
+      "created": "2026-07-29T08:51:13.900285+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665984",
+      "files": [
+        {
+          "checksum": "md5:6ba0e900b65316e411e2d421ab5c40e1",
+          "content_url": "https://zenodo.org/api/records/21665984/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 384336
+        }
+      ],
+      "id": "21665984",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665984",
+      "resource_type": "publication",
+      "title": "Finite-Resolution Position Measurements and Their Sharp Limit Detector POVMs, Instruments, and the MTT Completion Boundary",
+      "updated": "2026-07-29T08:51:14.326068+00:00",
+      "version": "v1"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.17177404",
+      "created": "2026-07-29T08:51:12.544713+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665982",
+      "files": [
+        {
+          "checksum": "md5:5324f1b1c8b3dbd4735654f981c4ae2a",
+          "content_url": "https://zenodo.org/api/records/21665982/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 266049
+        }
+      ],
+      "id": "21665982",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665982",
+      "resource_type": "publication",
+      "title": "Measurement as Physical Disturbance, Outcome Completion, and Record Stabilization in Modal Triplet Theory",
+      "updated": "2026-07-29T08:51:13.357713+00:00",
+      "version": "v6"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18265349",
+      "created": "2026-07-29T08:51:00.870737+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665981",
+      "files": [
+        {
+          "checksum": "md5:38ea84727caf2290bf9138b8c576444a",
+          "content_url": "https://zenodo.org/api/records/21665981/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 284532
+        }
+      ],
+      "id": "21665981",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665981",
+      "resource_type": "publication",
+      "title": "Lorentzian Base Compatibility and Signature Stability in the MTT Fixed-Point Realization",
+      "updated": "2026-07-29T08:51:02.018296+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261699",
+      "created": "2026-07-29T08:50:59.965680+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665980",
+      "files": [
+        {
+          "checksum": "md5:e4d4f1e27f305de901786daf617ab3b3",
+          "content_url": "https://zenodo.org/api/records/21665980/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 267491
+        }
+      ],
+      "id": "21665980",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665980",
+      "resource_type": "publication",
+      "title": "Loop Quantum Gravity as a Possible Shadow of Coherent Fixed-Point Geometry: An Interpretive Dictionary and Its Missing Bridges",
+      "updated": "2026-07-29T08:51:00.315935+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18330674",
+      "created": "2026-07-29T08:50:59.242018+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665979",
+      "files": [
+        {
+          "checksum": "md5:36953d34d728d2daf05c3f5388dc8f7e",
+          "content_url": "https://zenodo.org/api/records/21665979/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 349856
+        }
+      ],
+      "id": "21665979",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665979",
+      "resource_type": "publication",
+      "title": "Born and Inflationary Probabilities as a Common-Measure Obligation: Exact Pushforward Criteria and a Conditional MTT Model",
+      "updated": "2026-07-29T08:50:59.541009+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261599",
+      "created": "2026-07-29T08:50:58.436204+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665978",
+      "files": [
+        {
+          "checksum": "md5:f66d0350e5ea88b7dd3802dec4528bd7",
+          "content_url": "https://zenodo.org/api/records/21665978/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 374916
+        }
+      ],
+      "id": "21665978",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665978",
+      "resource_type": "publication",
+      "title": "Gravitationally Induced Collapse in Modal Triplet Theory A Penrose\u2013Schoenberg Completion and Source Contract",
+      "updated": "2026-07-29T08:50:58.779583+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262179",
+      "created": "2026-07-29T08:50:56.990013+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665977",
+      "files": [
+        {
+          "checksum": "md5:a1dc0a8273f53354f113e0fd2272fdc4",
+          "content_url": "https://zenodo.org/api/records/21665977/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 335859
+        }
+      ],
+      "id": "21665977",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665977",
+      "resource_type": "publication",
+      "title": "Geometry\u2013Light Relations in Modal Triplet Theory: Exact Identities, Conditional Bounds, and Principal Symbols",
+      "updated": "2026-07-29T08:50:57.593054+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.17162075",
+      "created": "2026-07-29T08:50:55.313175+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665974",
+      "files": [
+        {
+          "checksum": "md5:40c6f3f57c3d506568e20588dbf59323",
+          "content_url": "https://zenodo.org/api/records/21665974/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 362704
+        }
+      ],
+      "id": "21665974",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665974",
+      "resource_type": "publication",
+      "title": "From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier",
+      "updated": "2026-07-29T08:50:56.323480+00:00",
+      "version": "v5"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18330769",
+      "created": "2026-07-29T08:50:54.401184+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665973",
+      "files": [
+        {
+          "checksum": "md5:6cf5e2b7f4787e374a822bcac482ddde",
+          "content_url": "https://zenodo.org/api/records/21665973/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 343472
+        }
+      ],
+      "id": "21665973",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665973",
+      "resource_type": "publication",
+      "title": "Admissibility Precosheaves and Conditional AQFT Nets in Modal Triplet Theory",
+      "updated": "2026-07-29T08:50:54.725478+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949635",
+      "created": "2026-07-29T08:50:52.977082+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655380",
+      "files": [
+        {
+          "checksum": "md5:fc783d33596b8afd6eccdeb66847ea9c",
+          "content_url": "https://zenodo.org/api/records/21655380/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 359896
+        }
+      ],
+      "id": "21655380",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655380",
+      "resource_type": "publication",
+      "title": "Fixed Points VI: Formal Synthesis and Physical Interpretations",
+      "updated": "2026-07-29T08:50:53.318260+00:00",
+      "version": "v6"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949503",
+      "created": "2026-07-29T08:50:51.494193+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655379",
+      "files": [
+        {
+          "checksum": "md5:cdf93f3c8ec1d0cc2bc0a8487271a4c2",
+          "content_url": "https://zenodo.org/api/records/21655379/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 333363
+        }
+      ],
+      "id": "21655379",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655379",
+      "resource_type": "publication",
+      "title": "Fixed Points V: Curvature Coupling, Multi-Structure Dynamics, and Admissibility Barriers",
+      "updated": "2026-07-29T08:50:52.349661+00:00",
+      "version": "v7"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949426",
+      "created": "2026-07-29T08:50:50.714376+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655378",
+      "files": [
+        {
+          "checksum": "md5:942d8ac0b7ba272264fd45db7e3f83c8",
+          "content_url": "https://zenodo.org/api/records/21655378/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 367717
+        }
+      ],
+      "id": "21655378",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655378",
+      "resource_type": "publication",
+      "title": "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions",
+      "updated": "2026-07-29T08:50:51.050932+00:00",
+      "version": "v6"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949073",
+      "created": "2026-07-29T08:50:36.358241+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655370",
+      "files": [
+        {
+          "checksum": "md5:443228142167b6b50528dce3042e4782",
+          "content_url": "https://zenodo.org/api/records/21655370/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 458081
+        }
+      ],
+      "id": "21655370",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655370",
+      "resource_type": "publication",
+      "title": "Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model",
+      "updated": "2026-07-29T08:50:36.776893+00:00",
+      "version": "v5"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949280",
+      "created": "2026-07-29T08:50:35.316982+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655371",
+      "files": [
+        {
+          "checksum": "md5:852d83cc98e8abf81e7ed570744a3493",
+          "content_url": "https://zenodo.org/api/records/21655371/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 400012
+        }
+      ],
+      "id": "21655371",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655371",
+      "resource_type": "publication",
+      "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
+      "updated": "2026-07-29T08:50:35.802432+00:00",
+      "version": "v5"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16948748",
+      "created": "2026-07-29T08:50:33.676663+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21657157",
+      "files": [
+        {
+          "checksum": "md5:0a30ff1ae9415db61f4a18fe34e47ceb",
+          "content_url": "https://zenodo.org/api/records/21657157/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 461930
+        }
+      ],
+      "id": "21657157",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21657157",
+      "resource_type": "publication",
+      "title": "Fixed Points I: Fixed Points over Multi\u2013Bundle Manifolds A conditional functional-analytic framework with spectral-bundle projections",
+      "updated": "2026-07-29T08:50:34.433424+00:00",
+      "version": "v7"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21665969",
+      "created": "2026-07-29T08:50:32.383235+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665970",
+      "files": [
+        {
+          "checksum": "md5:baeb5165de8164d6e6c0a8db3fc41834",
+          "content_url": "https://zenodo.org/api/records/21665970/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 323794
+        }
+      ],
+      "id": "21665970",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665970",
+      "resource_type": "publication",
+      "title": "Finite Coherent Filters in Modal Triplet Theory: Operator Types, Exact Kernels, and Sectoral Boundaries",
+      "updated": "2026-07-29T08:50:32.972193+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261945",
+      "created": "2026-07-29T08:50:31.780169+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665968",
+      "files": [
+        {
+          "checksum": "md5:133266fc9e53d75cc56383bda3c01cdb",
+          "content_url": "https://zenodo.org/api/records/21665968/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 296958
+        }
+      ],
+      "id": "21665968",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665968",
+      "resource_type": "publication",
+      "title": "Coherent Compression of Continuum Dirac Operators on LQG Graphs: A Conditional MTT Construction and the Doubling Boundary",
+      "updated": "2026-07-29T08:50:32.002182+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262329",
+      "created": "2026-07-29T08:50:31.162090+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665967",
+      "files": [
+        {
+          "checksum": "md5:60a88a27890e3bfad00a4172bf5e2a26",
+          "content_url": "https://zenodo.org/api/records/21665967/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 326801
+        }
+      ],
+      "id": "21665967",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665967",
+      "resource_type": "publication",
+      "title": "Execution of Modal Triplet Theory II: Flavor, CKM, Neutral, and Higgs Status after Profile-Standard SM Closure",
+      "updated": "2026-07-29T08:50:31.428776+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262313",
+      "created": "2026-07-29T08:50:29.948049+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665964",
+      "files": [
+        {
+          "checksum": "md5:5b230f9947170d4988b6c422e82346cd",
+          "content_url": "https://zenodo.org/api/records/21665964/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 341106
+        }
+      ],
+      "id": "21665964",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665964",
+      "resource_type": "publication",
+      "title": "Execution of Modal Triplet Theory I: Gauge, HYM, Threshold, and Axion Status after Profile-Standard SM Closure",
+      "updated": "2026-07-29T08:50:30.403736+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261392",
+      "created": "2026-07-29T08:50:28.993871+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665963",
+      "files": [
+        {
+          "checksum": "md5:e59d9cce8a209116b4942b099ef320ba",
+          "content_url": "https://zenodo.org/api/records/21665963/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 361202
+        }
+      ],
+      "id": "21665963",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665963",
+      "resource_type": "publication",
+      "title": "Entanglement, Locality, and Measurement from Coherent Sector Dynamics",
+      "updated": "2026-07-29T08:50:29.475318+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21665961",
+      "created": "2026-07-29T08:50:28.125264+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665962",
+      "files": [
+        {
+          "checksum": "md5:98a4906fb12416553bb5aad43c14b47c",
+          "content_url": "https://zenodo.org/api/records/21665962/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 410488
+        }
+      ],
+      "id": "21665962",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665962",
+      "resource_type": "publication",
+      "title": "Dirac Delta Limits, Spectral Kernels, and the MTT Finite-Kernel Diagnostic Exact Approximate Identities, Constraint Tubes, and Scope Boundaries",
+      "updated": "2026-07-29T08:50:28.491825+00:00",
+      "version": "v1"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18330721",
+      "created": "2026-07-29T08:50:27.446780+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665960",
+      "files": [
+        {
+          "checksum": "md5:4e2221c337ca56066e7ad633ad62cf8f",
+          "content_url": "https://zenodo.org/api/records/21665960/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 350058
+        }
+      ],
+      "id": "21665960",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665960",
+      "resource_type": "publication",
+      "title": "Deterministic Projection, Diffusive Limits, and Knee\u2013Like Threshold Transitions",
+      "updated": "2026-07-29T08:50:27.766647+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261551",
+      "created": "2026-07-29T08:50:13.319968+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665959",
+      "files": [
+        {
+          "checksum": "md5:65ef2780418f417eb3e457f4f1301e0a",
+          "content_url": "https://zenodo.org/api/records/21665959/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 324528
+        }
+      ],
+      "id": "21665959",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665959",
+      "resource_type": "publication",
+      "title": "Deterministic Microdynamics, Projected Laws, and the Superdeterminism Boundary Factorization, Conditional Kernels, Markov Closure, and Stabilization in MTT",
+      "updated": "2026-07-29T08:50:13.580142+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18209820",
+      "created": "2026-07-29T08:50:12.435743+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665958",
+      "files": [
+        {
+          "checksum": "md5:c9d044d6e1ef12e2db30a394a3fcfbfd",
+          "content_url": "https://zenodo.org/api/records/21665958/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 318618
+        }
+      ],
+      "id": "21665958",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665958",
+      "resource_type": "publication",
+      "title": "Constructive MTT Quantum Gravity III: A Massive Scattering Benchmark and the Massless-Graviton Infrared Contract",
+      "updated": "2026-07-29T08:50:12.799850+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18209696",
+      "created": "2026-07-29T08:50:11.307662+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665957",
+      "files": [
+        {
+          "checksum": "md5:848eba853ad5cf5d8bccdbba8c01fb01",
+          "content_url": "https://zenodo.org/api/records/21665957/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 373275
+        }
+      ],
+      "id": "21665957",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665957",
+      "resource_type": "publication",
+      "title": "Constructive MTT Quantum Gravity II: A Conditional BRST/BV Compatibility and Physical-State Reconstruction Contract for SPT-Filtered Models",
+      "updated": "2026-07-29T08:50:11.876730+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18209683",
+      "created": "2026-07-29T08:50:09.809494+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665952",
+      "files": [
+        {
+          "checksum": "md5:737dcc646be81712fd418ebb8c267853",
+          "content_url": "https://zenodo.org/api/records/21665952/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 340646
+        }
+      ],
+      "id": "21665952",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665952",
+      "resource_type": "publication",
+      "title": "Constructive MTT Quantum Gravity I: Finite-Volume SPT Gaussian Control and a Conditional Borel-Summability Contract",
+      "updated": "2026-07-29T08:50:10.468740+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18330735",
+      "created": "2026-07-29T08:50:08.691986+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665951",
+      "files": [
+        {
+          "checksum": "md5:75e30cdb67f3e4dff00822321eae8efb",
+          "content_url": "https://zenodo.org/api/records/21665951/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 276949
+        }
+      ],
+      "id": "21665951",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665951",
+      "resource_type": "publication",
+      "title": "Coherent Kinematics in Modal Triplet Theory Chart Persistence, Encoding Trajectories, and Physical Bridges",
+      "updated": "2026-07-29T08:50:09.081968+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.19535510",
+      "created": "2026-07-29T08:50:07.922451+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21654884",
+      "files": [
+        {
+          "checksum": "md5:318b37162969d67cc37dbbf3ae37cd90",
+          "content_url": "https://zenodo.org/api/records/21654884/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 358179
+        }
+      ],
+      "id": "21654884",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21654884",
+      "resource_type": "publication",
+      "title": "Closure-Strain Geometry: Local Normal Forms and Conditional Matter Encodings",
+      "updated": "2026-07-29T08:50:08.227707+00:00",
+      "version": "v7"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.19535591",
+      "created": "2026-07-29T08:50:07.007826+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21654885",
+      "files": [
+        {
+          "checksum": "md5:c93dd825fcc8194fae244426e3e9dd79",
+          "content_url": "https://zenodo.org/api/records/21654885/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 405088
+        }
+      ],
+      "id": "21654885",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21654885",
+      "resource_type": "publication",
+      "title": "Closure Geometry and a Regime-Local Ten-Dimensional Action Ansatz",
+      "updated": "2026-07-29T08:50:07.346698+00:00",
+      "version": "v4"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18255510",
+      "created": "2026-07-29T08:50:06.288419+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652662",
+      "files": [
+        {
+          "checksum": "md5:086b58d859d7bbc5c4ba7614975271f8",
+          "content_url": "https://zenodo.org/api/records/21652662/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 312372
+        }
+      ],
+      "id": "21652662",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652662",
+      "resource_type": "publication",
+      "title": "Conditional Closure Relations in Modal Triplet Theory",
+      "updated": "2026-07-29T08:50:06.597109+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261722",
+      "created": "2026-07-29T08:50:05.357307+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665950",
+      "files": [
+        {
+          "checksum": "md5:9826f7422788f0de5788270ae1f9d40f",
+          "content_url": "https://zenodo.org/api/records/21665950/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 263125
+        }
+      ],
+      "id": "21665950",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665950",
+      "resource_type": "publication",
+      "title": "Coherence-Selection Events and Causal Sets in Modal Triplet Theory: Non-Zeno Conditions, Reset Laws, and Covariant Statistics",
+      "updated": "2026-07-29T08:50:05.847874+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261497",
+      "created": "2026-07-29T08:50:04.282321+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665949",
+      "files": [
+        {
+          "checksum": "md5:c263a91f1c7a8bb1f6a6e053029df642",
+          "content_url": "https://zenodo.org/api/records/21665949/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 252201
+        }
+      ],
+      "id": "21665949",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665949",
+      "resource_type": "publication",
+      "title": "Causal Sets as a Conditional Coarse-Graining of Modal Triplet Theory: Kinematic Construction, Sampling Choices, and Scale-Typing Boundary",
+      "updated": "2026-07-29T08:50:04.734526+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261429",
+      "created": "2026-07-29T08:49:51.796214+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665948",
+      "files": [
+        {
+          "checksum": "md5:b7114fd85b8da018b2f679a901b33cd1",
+          "content_url": "https://zenodo.org/api/records/21665948/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 321199
+        }
+      ],
+      "id": "21665948",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665948",
+      "resource_type": "publication",
+      "title": "Projected Information Loss in Modal Triplet Theory: Fiber Dynamics, Measurement Channels, and the Black-Hole Recovery Boundary",
+      "updated": "2026-07-29T08:49:52.175496+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18265328",
+      "created": "2026-07-29T08:49:51.050652+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665947",
+      "files": [
+        {
+          "checksum": "md5:f5b084aa85d02d39106ca502fca8b914",
+          "content_url": "https://zenodo.org/api/records/21665947/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 322904
+        }
+      ],
+      "id": "21665947",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665947",
+      "resource_type": "publication",
+      "title": "Baseline Scales and Phenomenological Consistency in Modal Triplet Theory",
+      "updated": "2026-07-29T08:49:51.349790+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262162",
+      "created": "2026-07-29T08:49:50.156353+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665943",
+      "files": [
+        {
+          "checksum": "md5:78d529db17994ecf84573627d1992518",
+          "content_url": "https://zenodo.org/api/records/21665943/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 290771
+        }
+      ],
+      "id": "21665943",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665943",
+      "resource_type": "publication",
+      "title": "A Tiered Roadmap for Calculations in Modal Triplet Theory (MTT): Audited Closure and Strict Upgrades",
+      "updated": "2026-07-29T08:49:50.608059+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262055",
+      "created": "2026-07-29T08:49:49.191530+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665942",
+      "files": [
+        {
+          "checksum": "md5:59a7513e025c8d37fcaafc49917f0406",
+          "content_url": "https://zenodo.org/api/records/21665942/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 281199
+        }
+      ],
+      "id": "21665942",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665942",
+      "resource_type": "publication",
+      "title": "The Asymptotic-Safety Third Corner in MTT: A Conditional Diagnostic Between Coherent Geometry and the String Branch",
+      "updated": "2026-07-29T08:49:49.660766+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261660",
+      "created": "2026-07-29T08:49:48.146713+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665946",
+      "files": [
+        {
+          "checksum": "md5:f94a3ca101f000590223db19f6c5472a",
+          "content_url": "https://zenodo.org/api/records/21665946/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 289768
+        }
+      ],
+      "id": "21665946",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665946",
+      "resource_type": "publication",
+      "title": "Asymptotic-Safety Truncations as Conditional Shadows: Fixed-Point Residuals, Error Bounds, and Scheme Dependence",
+      "updated": "2026-07-29T08:49:48.700995+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18330706",
+      "created": "2026-07-29T08:49:47.356868+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665937",
+      "files": [
+        {
+          "checksum": "md5:fd50414ae1f70b86fb6fef7dbefeb76f",
+          "content_url": "https://zenodo.org/api/records/21665937/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 256466
+        }
+      ],
+      "id": "21665937",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665937",
+      "resource_type": "publication",
+      "title": "A Projection-First Reframing of String Theory: Conditional Encodings, Worldsheet Gates, and the q79 Boundary",
+      "updated": "2026-07-29T08:49:47.715532+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18255737",
+      "created": "2026-07-29T08:49:46.021174+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665936",
+      "files": [
+        {
+          "checksum": "md5:37f1dfb3f75c6a304976f7de9ee1a47f",
+          "content_url": "https://zenodo.org/api/records/21665936/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 280093
+        }
+      ],
+      "id": "21665936",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665936",
+      "resource_type": "publication",
+      "title": "A Projection-First Reframing of Quantum Gravity",
+      "updated": "2026-07-29T08:49:46.861693+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18255659",
+      "created": "2026-07-29T08:49:45.064663+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665933",
+      "files": [
+        {
+          "checksum": "md5:b1d7bc8d67e5e9f78043159de1be1515",
+          "content_url": "https://zenodo.org/api/records/21665933/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 225436
+        }
+      ],
+      "id": "21665933",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665933",
+      "resource_type": "publication",
+      "title": "A Projection-First Reframing of Physics: Descent, Effective Description, and the Limits of the Analogy",
+      "updated": "2026-07-29T08:49:45.424616+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18255794",
+      "created": "2026-07-29T08:49:43.800443+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665930",
+      "files": [
+        {
+          "checksum": "md5:14fb6de255105ad028d6debc6efb5b5d",
+          "content_url": "https://zenodo.org/api/records/21665930/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 238178
+        }
+      ],
+      "id": "21665930",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665930",
+      "resource_type": "publication",
+      "title": "A Projection-First Reframing of Information and Computation: Distinguishability, Channels, and Conditional Undecidability",
+      "updated": "2026-07-29T08:49:44.206491+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18330692",
+      "created": "2026-07-29T08:49:42.508084+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665929",
+      "files": [
+        {
+          "checksum": "md5:83603efac130a7129c1b390a99469ae7",
+          "content_url": "https://zenodo.org/api/records/21665929/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 289635
+        }
+      ],
+      "id": "21665929",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665929",
+      "resource_type": "publication",
+      "title": "Projection-First Dark-Sector Diagnostics: Effective Stress, Lensing, and Cosmological Closure",
+      "updated": "2026-07-29T08:49:43.112056+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.17162671",
+      "created": "2026-07-28T18:01:20.426148+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650929",
+      "files": [
+        {
+          "checksum": "md5:57aada2dfb29244892e7b6fd44187d0e",
+          "content_url": "https://zenodo.org/api/records/21650929/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 453447
+        }
+      ],
+      "id": "21650929",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650929",
+      "resource_type": "publication",
+      "title": "The Book on Modal Triplet Theory: A Typed Interpretive Overview of the Current Program",
+      "updated": "2026-07-28T18:01:20.871601+00:00",
+      "version": "v10"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261892",
+      "created": "2026-07-28T18:00:50.598959+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650920",
+      "files": [
+        {
+          "checksum": "md5:06130a12f598a3b1f0a861e460a0e207",
+          "content_url": "https://zenodo.org/api/records/21650920/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 346537
+        }
+      ],
+      "id": "21650920",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650920",
+      "resource_type": "publication",
+      "title": "Why Decoherence Cannot Replace Measurement: Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory",
+      "updated": "2026-07-28T18:00:51.101888+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18208884",
+      "created": "2026-07-28T17:58:46.028055+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650911",
+      "files": [
+        {
+          "checksum": "md5:ca750e2c24ea5e3625cbed0224adbe0e",
+          "content_url": "https://zenodo.org/api/records/21650911/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 250979
+        }
+      ],
+      "id": "21650911",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650911",
+      "resource_type": "publication",
+      "title": "Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory: A Conditional Sequential-Instrument Analysis",
+      "updated": "2026-07-28T17:58:46.361512+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18355166",
+      "created": "2026-07-28T17:57:53.074270+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650904",
+      "files": [
+        {
+          "checksum": "md5:66c3e41928da43c76ba8a597bd3718ba",
+          "content_url": "https://zenodo.org/api/records/21650904/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 324667
+        }
+      ],
+      "id": "21650904",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650904",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program D1: A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract",
+      "updated": "2026-07-28T17:57:53.532632+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18355142",
+      "created": "2026-07-28T17:56:43.371363+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650901",
+      "files": [
+        {
+          "checksum": "md5:cffb01e5b19235183a5d32c736233c75",
+          "content_url": "https://zenodo.org/api/records/21650901/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 376322
+        }
+      ],
+      "id": "21650901",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650901",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program C: A Typed Dictionary for Geometric, Bundle, and Operator Realizations",
+      "updated": "2026-07-28T17:56:43.590275+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18355129",
+      "created": "2026-07-28T17:51:53.317142+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650889",
+      "files": [
+        {
+          "checksum": "md5:c113f89e4f1a1934d9096137b1b51efc",
+          "content_url": "https://zenodo.org/api/records/21650889/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 358371
+        }
+      ],
+      "id": "21650889",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650889",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
+      "updated": "2026-07-28T17:51:53.733388+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262454",
+      "created": "2026-07-28T17:40:01.049619+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650882",
+      "files": [
+        {
+          "checksum": "md5:65541f77fd56342bafd25a3f55c3469a",
+          "content_url": "https://zenodo.org/api/records/21650882/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 373717
+        }
+      ],
+      "id": "21650882",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650882",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description: A Typed and Tiered Corpus Roadmap",
+      "updated": "2026-07-28T17:40:01.391924+00:00",
+      "version": "v12"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.17162075",
+      "created": "2026-07-28T17:39:18.734079+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650877",
+      "files": [
+        {
+          "checksum": "md5:cacd24263337d865e320c10c68eb792e",
+          "content_url": "https://zenodo.org/api/records/21650877/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 353307
+        }
+      ],
+      "id": "21650877",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650877",
+      "resource_type": "publication",
+      "title": "From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier",
+      "updated": "2026-07-28T17:39:19.162181+00:00",
+      "version": "v4"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.19535683",
+      "created": "2026-07-28T17:38:53.447796+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650866",
+      "files": [
+        {
+          "checksum": "md5:d72741c2cf333d6936b71f4666e3d343",
+          "content_url": "https://zenodo.org/api/records/21650866/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 297933
+        }
+      ],
+      "id": "21650866",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650866",
+      "resource_type": "publication",
+      "title": "Proto-Spinor Closure and Worldsheet Encoding in Modal Triplet Theory: A Conditional Local Bridge",
+      "updated": "2026-07-28T17:38:53.788856+00:00",
+      "version": "v4"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.19534665",
+      "created": "2026-07-28T17:38:25.857272+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650859",
+      "files": [
+        {
+          "checksum": "md5:582882487e7cb4e4a9674e76e6b06c09",
+          "content_url": "https://zenodo.org/api/records/21650859/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 345546
+        }
+      ],
+      "id": "21650859",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650859",
+      "resource_type": "publication",
+      "title": "The Proto-Spinor: Conditional Spinorial Closure and the q79 Interface",
+      "updated": "2026-07-28T17:38:26.301090+00:00",
+      "version": "v6"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949762",
+      "created": "2026-07-28T17:24:25.747762+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650858",
+      "files": [
+        {
+          "checksum": "md5:81717d71cd7ab39daabf520b09584543",
+          "content_url": "https://zenodo.org/api/records/21650858/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 390840
+        }
+      ],
+      "id": "21650858",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650858",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: Foundations",
+      "updated": "2026-07-28T17:24:26.128839+00:00",
+      "version": "v8"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949635",
+      "created": "2026-07-28T16:41:24.851297+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650469",
+      "files": [
+        {
+          "checksum": "md5:36aa9560295b4b1021c5e1848c36f21c",
+          "content_url": "https://zenodo.org/api/records/21650469/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 349850
+        }
+      ],
+      "id": "21650469",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650469",
+      "resource_type": "publication",
+      "title": "Fixed Points VI: Formal Synthesis and Physical Interpretations",
+      "updated": "2026-07-28T16:41:25.129397+00:00",
+      "version": "v5"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949503",
+      "created": "2026-07-28T16:40:51.751887+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650468",
+      "files": [
+        {
+          "checksum": "md5:fac909343aef7cae3b20a67ea9051c93",
+          "content_url": "https://zenodo.org/api/records/21650468/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 305898
+        }
+      ],
+      "id": "21650468",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650468",
+      "resource_type": "publication",
+      "title": "Fixed Points V: Curvature Coupling, Multi-Structure Dynamics, and Admissibility Barriers",
+      "updated": "2026-07-28T16:40:52.149024+00:00",
+      "version": "v6"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949426",
+      "created": "2026-07-28T16:40:32.631141+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650435",
+      "files": [
+        {
+          "checksum": "md5:be16e1c13de36a0d25315f65cf3de228",
+          "content_url": "https://zenodo.org/api/records/21650435/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 354008
+        }
+      ],
+      "id": "21650435",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650435",
+      "resource_type": "publication",
+      "title": "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions",
+      "updated": "2026-07-28T16:40:32.913633+00:00",
+      "version": "v5"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949280",
+      "created": "2026-07-28T16:37:05.501397+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650395",
+      "files": [
+        {
+          "checksum": "md5:3e28ae7854aa87cbdee608ea8ece52fe",
+          "content_url": "https://zenodo.org/api/records/21650395/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 366495
+        }
+      ],
+      "id": "21650395",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650395",
+      "resource_type": "publication",
+      "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
+      "updated": "2026-07-28T16:37:05.916383+00:00",
+      "version": "v4"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949073",
+      "created": "2026-07-28T16:33:41.643151+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650297",
+      "files": [
+        {
+          "checksum": "md5:a0a57dd85fc10ac08b5b049556ef6ad2",
+          "content_url": "https://zenodo.org/api/records/21650297/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 443593
+        }
+      ],
+      "id": "21650297",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650297",
+      "resource_type": "publication",
+      "title": "Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model",
+      "updated": "2026-07-28T16:33:42.030820+00:00",
+      "version": "v4"
+    },
+    {
       "concept_doi": "10.5281/zenodo.16948748",
       "created": "2026-07-28T15:24:04.656341+00:00",
       "creators": [

@@ -6,63 +6,88 @@
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v7",
-  "date": "July 2026",
+  "date": "Corrected seventh edition July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.19535510",
-    "created": "2026-04-12T10:25:14.637659+00:00",
+    "created": "2026-07-29T08:50:07.922451+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.19535511",
+    "doi": "10.5281/zenodo.21654884",
     "files": [
       {
-        "checksum": "md5:818bbfeb9412b118a3483c4e643f01e8",
-        "content_url": "https://zenodo.org/api/records/19535511/files/Closure_Strain_Geometry_and_the_Structure_of_the_Standard_Model_v5.pdf/content",
-        "key": "Closure_Strain_Geometry_and_the_Structure_of_the_Standard_Model_v5.pdf",
-        "size": 519113
+        "checksum": "md5:318b37162969d67cc37dbbf3ae37cd90",
+        "content_url": "https://zenodo.org/api/records/21654884/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 358179
       }
     ],
-    "id": "19535511",
-    "match_kind": "title_or_file",
+    "id": "21654884",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-04-12",
-    "record_url": "https://zenodo.org/records/19535511",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21654884",
     "resource_type": "publication",
-    "title": "Closure-Strain Geometry and the Structure of the Standard Model",
-    "updated": "2026-04-12T10:25:14.934705+00:00",
-    "version": "v5.0"
+    "title": "Closure-Strain Geometry: Local Normal Forms and Conditional Matter Encodings",
+    "updated": "2026-07-29T08:50:08.227707+00:00",
+    "version": "v7"
   },
-  "main_tex_sha256": "74d3c373eb93296f354425a22f027fbbbb04e4ac225f128bf2fb5aa5102037c1",
+  "main_tex_sha256": "364847103297b529053639ed1975998b3758cf55226eda53dc63da3f4f126bba",
   "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
-  "paper_md_sha256": "9b59569ae19c83064fb32b1552c0f71ea434e1f1aa361c91f50cc84f7e3a2232",
+  "paper_md_sha256": "0d57adfee71836be5d732d2689473c67cc62e54799a47a7fd2b6a2f26df739fd",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "10 ProtoSpinor/revised_tex_vnext/CLOSURE_STRAIN_V7_SHARED_LINE_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "e2e553d34b273b3d93b7dedd25d7f15c396f1ef995f6dc2c512dfb7bf1a18d0a",
+    "revision_evidence_sha256": "9f1ec25ddaf04b50ba80fe59aea245ef79b8552f7e9554e36aa96784ba4e7820",
     "selected_revision": true,
     "superseded_source_path": "10 ProtoSpinor/_work/Closure_Strain_Geometry_and_the_Structure_of_the_Standard_Model_v5"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 17925,
+      "bytes": 25124,
       "path": "main.tex",
-      "sha256": "74d3c373eb93296f354425a22f027fbbbb04e4ac225f128bf2fb5aa5102037c1"
+      "sha256": "364847103297b529053639ed1975998b3758cf55226eda53dc63da3f4f126bba"
     },
     {
-      "bytes": 4221,
+      "bytes": 3819,
       "path": "series.sty",
-      "sha256": "b0af1073f295d9ebc3bfa6020214244f0147d5cb41ebb8ccf58a0303951c6fbf"
+      "sha256": "11cfb5b6b4161f1e60935127c22c0619bfc67286dbc229d044ca2f4641bf8fbd"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/Closure_Strain_Geometry__Local_Normal_Forms_and_Conditional_Matter_Encodings_v7"
   },
-  "source_tree_sha256": "b0da83510f1ef23360b9ea33b82c92d140a525fe2500faae772b7febe0306976",
-  "title": "Closure-Strain Geometry: Local Normal Forms and Conditional Matter Encodings Corrected seventh edition",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "cbff50e225f7bfc8968e92e64c43f3d7158de9a90c3d1bf9b23725b27af3a1fa",
+  "title": "Closure-Strain Geometry: Local Normal Forms and Conditional Matter Encodings",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.19535510",
+      "created": "2026-07-29T08:50:07.922451+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21654884",
+      "files": [
+        {
+          "checksum": "md5:318b37162969d67cc37dbbf3ae37cd90",
+          "content_url": "https://zenodo.org/api/records/21654884/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 358179
+        }
+      ],
+      "id": "21654884",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21654884",
+      "resource_type": "publication",
+      "title": "Closure-Strain Geometry: Local Normal Forms and Conditional Matter Encodings",
+      "updated": "2026-07-29T08:50:08.227707+00:00",
+      "version": "v7"
+    },
     {
       "concept_doi": "10.5281/zenodo.19535510",
       "created": "2026-04-12T10:25:14.637659+00:00",

@@ -48,15 +48,15 @@
       "sha256": "3d3990ace558f14a54068fb5789d89c4f77aad91aa0cfa9c87cf433e6f4d8aef"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Particles_and_Forces_as_Coherence_Basins_and_Capacity_Gradients_v2"
   },
-  "source_tree_sha256": "fa597ea477cf24af54c0783826cf94bf566d0606dd365e97e620c8fd470c818c",
+  "source_tree_sha256": "d2e6bafa7408a947b5852fb69beadd651e1e68ab5d076a45fc9192750715fd87",
   "title": "Particles and Forces as Coherence Basins and Capacity Gradients",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

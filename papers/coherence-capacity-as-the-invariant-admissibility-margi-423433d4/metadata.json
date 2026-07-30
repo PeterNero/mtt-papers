@@ -48,15 +48,15 @@
       "sha256": "7af26b805cf9d8eeef642d19a2a017de6def912b1dee55e99e36c431268a4ffe"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Coherence_Capacity_as_the_Invariant_Admissibility_Margin_of_Modal_Triplet_Theory_v3"
   },
-  "source_tree_sha256": "b2c1aa4f9429acc372ea9a724be541648cd5df1e9fb0234b97dd023024a3ba06",
+  "source_tree_sha256": "94594934156e6676709b6715e13eed6c984ec9fbddf37b2cdfe6c733c6d80b0c",
   "title": "Coherence Capacity as the Invariant Admissibility Margin of Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

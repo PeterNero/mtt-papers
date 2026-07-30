@@ -1,68 +1,93 @@
 {
-  "abstract": "This revised paper separates topology-only obstructions from representation checks and physical source theorems. It places chiral multiplicity on the internal six-manifold, reports the exact q79 smooth c3=+/-6 index candidate with its analytic promotion gate, uses integer U(1) characters, incorporates the selected finite-branch hypercharge and anomaly theorems at their declared scope, and corrects Majorana, holonomy, wave-cone, operator-selection, PQ, and one-loop beta-function claims.",
+  "abstract": "Topology-only obstructions are separated from representation checks and from physical source theorems. Chiral multiplicity is an index on the compact internal six-manifold X6, not on physical spacetime. For a special-unitary bundle over X6, the spin-Dirac index is one half of the integrated third Chern class. The current q79 branch constructs smooth non-pullback bundles with integrated third Chern class plus or minus six, and therefore index plus or minus three, but its holomorphic gerbe lift, balanced Hermitian-Yang-Mills connection, and differential Bianchi representative remain open. Abelian charges are integer characters with a separately declared physical normalization. A linear difference-charge construction is only a reconstruction after observed charge differences are inserted. A separate finite-branch theorem is stronger: on the selected chiral carrier, anomaly constraints select the primitive relative-charge vector 6Y=(1,-4,2,-3,6,0) and the faithful Standard Model gauge group quotient by Z6. We prove the resulting anomaly checks, the correct character criterion for a bare Majorana bilinear, the distinction between topological, holomorphic, equivariant, flat, and holonomy trivializations, the conditional common-principal-symbol result for photon and graviton cones, and the correctly normalized one-loop beta coefficients. Peccei-Quinn dynamics, particular baryon/lepton operator exclusions, physical family realization, and neutrino ontology remain conditional or open at the precisely stated gates.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v2",
-  "date": "July 2026",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18260713",
-    "created": "2026-01-15T18:06:17.833927+00:00",
+    "created": "2026-07-29T08:52:26.586131+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18260714",
+    "doi": "10.5281/zenodo.21666014",
     "files": [
       {
-        "checksum": "md5:88bfacd7528fbcd39f7f9a4b7b0558b5",
-        "content_url": "https://zenodo.org/api/records/18260714/files/Topology__Only_Constraints_in_Modal_Triplet_Theory%20(4).pdf/content",
-        "key": "Topology__Only_Constraints_in_Modal_Triplet_Theory (4).pdf",
-        "size": 285400
+        "checksum": "md5:492b9786a94374cae3ca5413e8077b90",
+        "content_url": "https://zenodo.org/api/records/21666014/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 386823
       }
     ],
-    "id": "18260714",
-    "match_kind": "title_or_file",
+    "id": "21666014",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18260714",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21666014",
     "resource_type": "publication",
-    "title": "Topology-Only Constraints in Modal Triplet Theory: Indices, Anomalies, and Line-Bundle Triviality",
-    "updated": "2026-01-15T18:06:18.218867+00:00",
-    "version": "v1.0"
+    "title": "Topological Consistency Conditions in Modal Triplet Theory: Internal Indices, Charge Lattices, and Holonomy",
+    "updated": "2026-07-29T08:52:26.932289+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "df10a06948aaf8b32b6d379625a3066a4d9f37e998b26e58aee6d5309a5ae3bc",
+  "main_tex_sha256": "c86a09f3efdacf32eedeb34cbf979cb0a8e510ca1ebd23838f50c0bf3861562e",
   "paper_id": "topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2",
-  "paper_md_sha256": "5ba334f608c2b93aa7fa94f9df7c1b6102a25c5fc9b0d1c7f0d95989d70d1b8d",
+  "paper_md_sha256": "d9cfdcd90df35a62644f40940731e4b6062ff9cbbb04c780749c973622b58774",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "3b47d0f94b10fd7dbff26696ad001d2b446c99375970b05046f5793b96002323",
+    "revision_evidence_sha256": "6e1f6281c20051f995daffa64c6dfc52d67169149a9f1116f0aa1e259c560b91",
     "selected_revision": true,
     "superseded_source_path": "13 Standard Model & Topology-Only Constraints/_work/Topology__Only_Constraints_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 32350,
+      "bytes": 36256,
       "path": "main.tex",
-      "sha256": "df10a06948aaf8b32b6d379625a3066a4d9f37e998b26e58aee6d5309a5ae3bc"
+      "sha256": "c86a09f3efdacf32eedeb34cbf979cb0a8e510ca1ebd23838f50c0bf3861562e"
     },
     {
-      "bytes": 8831,
+      "bytes": 8837,
       "path": "REVISION_AUDIT.md",
-      "sha256": "3b47d0f94b10fd7dbff26696ad001d2b446c99375970b05046f5793b96002323"
+      "sha256": "6e1f6281c20051f995daffa64c6dfc52d67169149a9f1116f0aa1e259c560b91"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Topology__Only_Constraints_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "398633de43a56091e49eece0561303da4e770a76068132d95cd860f034e2bdf7",
+  "source_tree_sha256": "5d31733f3db95f87024b2c59c9bb92ee4e670619af9ae08346f4bbd1abd819bc",
   "title": "Topological Consistency Conditions in Modal Triplet Theory: Internal Indices, Charge Lattices, and Holonomy",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18260713",
+      "created": "2026-07-29T08:52:26.586131+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666014",
+      "files": [
+        {
+          "checksum": "md5:492b9786a94374cae3ca5413e8077b90",
+          "content_url": "https://zenodo.org/api/records/21666014/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 386823
+        }
+      ],
+      "id": "21666014",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666014",
+      "resource_type": "publication",
+      "title": "Topological Consistency Conditions in Modal Triplet Theory: Internal Indices, Charge Lattices, and Holonomy",
+      "updated": "2026-07-29T08:52:26.932289+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18260713",
       "created": "2026-01-15T18:06:17.833927+00:00",

@@ -1,35 +1,35 @@
 ---
 abstract: |
-  We re-evaluate the propagation of the gauge-profile geometry into gravity and cosmology. Within the auxiliary six-dimensional $`S^1\times S^2\times\mathrm{Nil}_3`$ product ansatz of Papers I–III, the updated dimensionless internal-volume coefficient is $`\widehat V_{\mathrm{int}}=20.07064R_1^3`$. Restoring the common internal length $`\ell_{\mathrm{int}}`$ gives $`G_N^{-1}=20.07064\ell_{\mathrm{int}}^6R_1^3/G_{10}`$ if that auxiliary manifold is adopted as the compactification. It is not the selected q79/Fu–Yau space, so the coefficient is an ansatz diagnostic rather than the current MTT internal volume. Even within the ansatz, the gauge profile does not determine Newton’s constant without an absolute scale and fundamental gravity normalization. The former identification $`\Lambda_\Theta\sim5~\mathrm{TeV}`$ is withdrawn with the obsolete gauge crossing, so its numerical primordial-tensor bound is also withdrawn. We retain the correctly normalized conditional relation $`r\leq 2\epsilon^2(\Lambda_\Theta/M_{\mathrm{Pl}})^2/(\pi^2A_s)`$ when $`H\leq\epsilon\Lambda_\Theta`$. The paper therefore supplies conditional scaling laws and an assumption audit, not cross-sector numerical closure.
+  We re-evaluate the propagation of the gauge-profile geometry into gravity and cosmology. Within the auxiliary six-dimensional $`S^1\times S^2\times\mathrm{Nil}_3`$ product ansatz of Papers I–III, the updated dimensionless internal-volume coefficient is $`\widehat V_{\mathrm{int}}=20.07064R_1^3`$. Restoring the common internal length $`\ell_{\mathrm{int}}`$ gives $`G_N^{-1}=20.07064\ell_{\mathrm{int}}^6R_1^3/G_{10}`$ if that auxiliary manifold is adopted as the compactification. It is not the selected q79/Fu–Yau space, so the coefficient is an ansatz diagnostic rather than the current MTT internal volume. Even within the ansatz, the gauge profile does not determine Newton’s constant without an absolute scale and fundamental gravity normalization. A gauge matching point does not by itself select the physical cutoff $`\Lambda_\Theta`$. The correctly normalized conditional relation is $`r\leq 2\epsilon^2(\Lambda_\Theta/M_{\mathrm{Pl}})^2/(\pi^2A_s)`$ when $`H\leq\epsilon\Lambda_\Theta`$. The paper therefore supplies conditional scaling laws and an assumption audit, not cross-sector numerical closure.
 author:
 - Peter Nero
 current_version: v2
 date: July 2026
-generated_from_main_tex_sha256: b32468bf9b6f804e661cc9fe79fdba912c304d8d17c5335aa276d38692fbbbb7
+generated_from_main_tex_sha256: fcc5f36857314f9df2a8c2dd37dc7e098cf74a14ccee3065808846be317b3d4d
 paper_id: theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: "Theta Closure in Modal Triplet Theory IV: Conditional Gravity Scaling and Cosmological Cutoff Audit"
-zenodo_doi: 10.5281/zenodo.18262122
-zenodo_record_id: 18262122
-zenodo_url: "https://zenodo.org/records/18262122"
+zenodo_doi: 10.5281/zenodo.21666012
+zenodo_record_id: 21666012
+zenodo_url: "https://zenodo.org/records/21666012"
 ---
 
 # Revision note for this edition
 
-Supersedes.  
+Supersedes.
 *Theta Closure in Modal Triplet Theory IV: Gravity and Cosmology from the Closure Scale*, first edition.
 
-Reason.  
+Reason.
 A dimensionless auxiliary volume and the obsolete few-TeV gauge crossing were promoted into Newton and primordial-tensor estimates without an absolute length, $`G_{10}`$, or selected physical compactification.
 
-Resolution.  
+Resolution.
 Version 2 restores dimensions, confines the coefficient $`20.07064R_1^3`$ to the auxiliary $`S^1\times S^2\times\mathrm{Nil}_3`$ ansatz, and withdraws the numerical tensor claim.
 
-Retained result.  
+Retained result.
 The dimensional-reduction and cutoff inequalities survive as conditional scaling relations.
 
-Remaining boundary.  
+Remaining boundary.
 A q79/Fu–Yau volume, absolute scale, gravity normalization, and cosmological solution must be selected independently.
 
 # Introduction
@@ -38,7 +38,26 @@ Papers I–III now establish a selected common-scheme gauge profile, a calibrat
 
 This paper asks two scoped questions. First, what dimensionless auxiliary volume coefficient follows if the effective round-$`S^2`$/nilmanifold product ansatz is used? Second, what tensor inequality follows if a separately selected coherence cutoff bounds the Hubble scale? The answers are conditional scaling relations. They must not be promoted into predictions of $`G_N`$ or $`r`$ until the missing absolute-scale and cutoff source theorems are supplied.
 
-# Propagation of $`\Theta`$ to Newton’s constant
+# Central picture and dependency flow
+
+The central picture is dimensional analysis with two independent exits. Gauge ratios can constrain dimensionless shape data, but Newton’s constant also depends on an absolute internal length and the higher-dimensional gravitational normalization. Likewise, a renormalization scale used to quote gauge couplings is not a physical ultraviolet or coherence cutoff.
+
+The two calculations therefore have the form
+``` math
+\begin{gathered}
+\text{calibrated auxiliary shape}
+\longrightarrow
+\widehat V_{\mathrm{aux}}
+\quad+\quad
+\{\ell_{\mathrm{int}},G_{10}\}
+\longrightarrow G_N,\\
+\{\Lambda_\Theta,\epsilon,\text{cosmological state}\}
+\longrightarrow r\text{ bound}.
+\end{gathered}
+```
+The first line is evaluated in Section 3 and the second in Section 4. In both lines the braces contain inputs that the gauge-profile calculation does not select.
+
+# Auxiliary volume and conditional Newton scaling
 
 We compute the gravity scaling implied by the auxiliary effective product ansatz. The calculation introduces no retuning of the dimensionless profile, but it retains the independent absolute length $`\ell_{\mathrm{int}}`$ and fundamental coupling $`G_{10}`$.
 
@@ -59,7 +78,7 @@ where:
 
 - $`X_{\mathrm{int}}`$ is the internal coherent space.
 
-Equation <a href="#eq:GN_reduction" data-reference-type="eqref" data-reference="eq:GN_reduction">[eq:GN_reduction]</a> is the standard dimensional-reduction form assumed here. Its applicability to MTT requires the product metric, Einstein-frame convention, and absence or control of warp/dilaton corrections.
+Equation <a href="#eq:GN_reduction" data-reference-type="eqref" data-reference="eq:GN_reduction">[eq:GN_reduction]</a> is the standard unwarped dimensional-reduction form assumed here . Its applicability to MTT requires the product metric, Einstein-frame convention, and absence or control of warp/dilaton corrections.
 
 ## Internal volume in terms of $`\Theta`$
 
@@ -134,6 +153,23 @@ If, in addition to the dimensional-reduction assumptions, one identifies the phy
 ```
 The gauge profile fixes only the displayed dimensionless shape coefficient within the chosen ansatz. It does not fix $`\ell_{\mathrm{int}}^6/G_{10}`$, this paper does not derive the reduction formula from a selected MTT action, and the required identification $`X_{\mathrm{int}}=X_{\mathrm{aux}}`$ is not established. Thus no numerical prediction of Newton’s constant follows.
 
+## Worked example and interpretation: one shape, an unresolved scale family
+
+Set $`R_1=1`$ inside the auxiliary model. The gauge-profile calibration then fixes only
+``` math
+\widehat V_{\mathrm{aux}}=20.0706400,
+\qquad
+\frac{1}{G_N}
+=20.0706400\,\frac{\ell_{\mathrm{int}}^6}{G_{10}}.
+```
+For any $`s>0`$, the simultaneous change
+``` math
+\ell_{\mathrm{int}}\longmapsto s\ell_{\mathrm{int}},
+\qquad
+G_{10}\longmapsto s^6G_{10}
+```
+leaves $`G_N`$ unchanged. Conversely, holding $`G_{10}`$ fixed while changing $`\ell_{\mathrm{int}}`$ changes the predicted Newton constant by the sixth power. This explicit degeneracy is why a dimensionless overlap fit cannot determine four-dimensional gravity without an absolute-scale theorem.
+
 # Conditional cosmological cutoff relation
 
 The old gauge crossing did not select a physical coherence cutoff. In particular, the former assignment $`\Lambda_\Theta\sim5~\mathrm{TeV}`$ and the scan $`[3,10]~\mathrm{TeV}`$ are withdrawn. The current gauge matching point $`Q=M_t`$ is a renormalization convention and must not be identified with $`\Lambda_\Theta`$.
@@ -146,14 +182,14 @@ H\leq\epsilon\Lambda_\Theta,
 \label{eq:admissibility_H}
 \end{equation}
 ```
-For vacuum tensor fluctuations in standard slow-roll normalization,
+For vacuum tensor fluctuations in standard slow-roll normalization ,
 ``` math
 \begin{equation}
 P_t=\frac{2H^2}{\pi^2M_{\mathrm{Pl}}^2},
 \qquad r=\frac{P_t}{A_s}.
 \end{equation}
 ```
-Consequently,
+Here $`M_{\mathrm{Pl}}=(8\pi G_N)^{-1/2}`$ is the reduced Planck mass and $`A_s`$ is the scalar curvature-perturbation amplitude in the same convention. Consequently,
 ``` math
 \begin{equation}
 \boxed{r\leq
@@ -174,27 +210,104 @@ Within the auxiliary product ansatz, the updated gauge profile fixes the dimensi
 
 The cosmological result is likewise a conditional scaling law. The obsolete few-TeV gauge crossing cannot serve as a physical coherence cutoff, and the legacy numerical tensor bound is withdrawn. A future closure theorem must select $`\Lambda_\Theta`$, the quantitative margin $`\epsilon`$, and the applicable cosmological state before Equation <a href="#eq:r_bound_general" data-reference-type="eqref" data-reference="eq:r_bound_general">[eq:r_bound_general]</a> becomes a numerical prediction. Paper IV therefore documents cross-sector dependencies and correct formulas; it does not establish gravity or cosmology closure.
 
-# References
+#### Corpus-state cross-checks.
 
-1.  Particle Data Group (PDG), *Review of Particle Physics*, for Standard Model input parameters and cosmological conventions.
+- (*profile replay*).
 
-2.  M. E. Machacek and M. T. Vaughn, “Two-loop renormalization group equations in a general quantum field theory,” Nucl. Phys. B222 (1983) 83–103.
+  Versioned Yu, Yd, Ye and lambda_H profile packet.
 
-3.  T. Kato, *Perturbation Theory for Linear Operators*, Springer (1995).
+- (*numeric certified*).
 
-4.  P. Nero, *Modal Triplet Theory: Foundation*, MTT corpus.
+  Three selected CKM profile rows and uncertainty comparison.
 
-5.  P. Nero, *Modal Triplet Theory: Quantum Amplitudes from Modal Geometry*, MTT corpus.
+- (*profile replay*).
 
-6.  P. Nero, *Direct Geometric Evaluation of Nonabelian Overlaps in Modal Triplet Theory*, Paper II.
+  Current non-looping global status and source-certificate map.
 
-7.  P. Nero, *Twistor–Action Matching of Gauge Overlaps in Modal Triplet Theory*, Paper III.
+- (*derived exact*).
 
-8.  R. Penrose and W. Rindler, *Spinors and Space-Time*, Vol. 2, Cambridge University Press (for twistor geometry background).
+  Promoted direct K_threshold.Omega_H.lambda row.
+
+- (*derived exact*).
+
+  E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+
+- (*profile replay*).
+
+  Twelve-obligation embedded renormalized-SM equivalence audit.
+
+- (*numeric certified*).
+
+  Weighted-theta Fourier-tail and Wiener contraction certificate.
+
+- (*profile replay*).
+
+  Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+
+- (*profile replay*).
+
+  Fifteen measured source coordinates, Jacobian and covariance transport.
+
+- (*profile replay*).
+
+  Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+
+- (*derived exact*).
+
+  Sparse 27x27 qutrit-Weyl left-action realization.
+
+- (*derived exact*).
+
+  Promoted P_EW source row at the declared one-shared-primitive standard.
+
+= by -
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+This paper audits possible gravity and cosmology scaling from gauge-profile geometry. None of the mapped Standard Model packets derives a physical gravitational normalization or cosmological cutoff, so all closed rows below are corpus-state cross-checks rather than direct proof. The strict upgrade remains open.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Corpus-state cross-checks
+
+- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
+- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
+- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
+- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
+- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
+- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
+- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
+- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
+- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 
 99
+
+M. J. Duff, B. E. W. Nilsson, and C. N. Pope, *Kaluza–Klein supergravity*, Physics Reports **130** (1986) 1–142. <https://doi.org/10.1016/0370-1573(86)90163-8>
+
+D. Baumann, *TASI lectures on inflation*, <https://arxiv.org/abs/0907.5424>
 
 P. Nero, *Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255621>
 
@@ -226,6 +339,6 @@ P. Nero, *Modal Fixed Points, Bell’s Beables, and the Limits of Factorization
 
 P. Nero, *Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory*, Zenodo preprint, August 2025. <https://doi.org/10.5281/zenodo.18208884>
 
-P. Nero, *From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18254862>
+P. Nero, *Modal Triplet Theory and History-Dependent Stochastic Processes: Fixed-State Indivisibility, Markov Order, and the Quantum Boundary*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18254862>
 
 </div>

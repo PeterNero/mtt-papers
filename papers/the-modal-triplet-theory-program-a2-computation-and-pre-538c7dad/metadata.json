@@ -9,37 +9,37 @@
   "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18354965",
-    "created": "2026-01-23T20:00:08.457733+00:00",
+    "created": "2026-07-29T08:51:57.064304+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18354966",
+    "doi": "10.5281/zenodo.21652637",
     "files": [
       {
-        "checksum": "md5:b0f0a46eb22cf204b1113d59eb04c869",
-        "content_url": "https://zenodo.org/api/records/18354966/files/The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits%20(2).pdf/content",
-        "key": "The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits (2).pdf",
-        "size": 220382
+        "checksum": "md5:3e487d43a78ebd2a23bee1a2338cddb7",
+        "content_url": "https://zenodo.org/api/records/21652637/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 358551
       }
     ],
-    "id": "18354966",
-    "match_kind": "title_or_file",
+    "id": "21652637",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-23",
-    "record_url": "https://zenodo.org/records/18354966",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21652637",
     "resource_type": "publication",
-    "title": "The Modal Triplet Theory Program A2: Computation and Predictive Limits",
-    "updated": "2026-01-23T20:00:08.939137+00:00",
-    "version": "v1.0"
+    "title": "The Modal Triplet Theory Program A2: Conditional Computability and Finite Prediction Depth",
+    "updated": "2026-07-29T08:51:57.416501+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "ec74c511a8291103777f6b9da9f88eeed9e23300922d04c09ae7aa533f4f46dd",
+  "main_tex_sha256": "ba49aa8538c9e16e570c894a8462145b93985c11549d76b2720c492adab25199",
   "paper_id": "the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad",
-  "paper_md_sha256": "f5b37b9875392d278f255e98a98a318308903a963b18d8e05f3164a2a002ff22",
+  "paper_md_sha256": "6bf3f23a63545ccd61c90413e86ef719b1f17ff86cf7c88b8b9a79259f8ecf0e",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "ea1bfdc0c893030c6117d8ccc2795caead63c4545c55f73a8f9648a276a8dc3c",
+    "revision_evidence_sha256": "ff3c170867da8cb28aae776b48512290f4a6d8ca5e3f27030d2c394728198fc2",
     "selected_revision": true,
     "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits"
   },
@@ -51,28 +51,53 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 24136,
+      "bytes": 27505,
       "path": "main.tex",
-      "sha256": "ec74c511a8291103777f6b9da9f88eeed9e23300922d04c09ae7aa533f4f46dd"
+      "sha256": "ba49aa8538c9e16e570c894a8462145b93985c11549d76b2720c492adab25199"
     },
     {
-      "bytes": 3385,
+      "bytes": 3741,
       "path": "REVISION_AUDIT.md",
-      "sha256": "ea1bfdc0c893030c6117d8ccc2795caead63c4545c55f73a8f9648a276a8dc3c"
+      "sha256": "ff3c170867da8cb28aae776b48512290f4a6d8ca5e3f27030d2c394728198fc2"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_A2__Computation_and_Predictive_Limits"
   },
-  "source_tree_sha256": "07d45488c55d200248c1c33828ffdac4ad0a5f98da9ae01a33f968350be8c235",
+  "source_tree_sha256": "41009a914842247b86e803e1a2b3cffc71878ad82d2d3735f41c544cef8232f3",
   "title": "The Modal Triplet Theory Program A2: Conditional Computability and Finite Prediction Depth",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18354965",
+      "created": "2026-07-29T08:51:57.064304+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652637",
+      "files": [
+        {
+          "checksum": "md5:3e487d43a78ebd2a23bee1a2338cddb7",
+          "content_url": "https://zenodo.org/api/records/21652637/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 358551
+        }
+      ],
+      "id": "21652637",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652637",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program A2: Conditional Computability and Finite Prediction Depth",
+      "updated": "2026-07-29T08:51:57.416501+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18354965",
       "created": "2026-01-23T20:00:08.457733+00:00",

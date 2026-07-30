@@ -46,15 +46,15 @@
       "sha256": "0c25787aa20c061590224a56ffa9757558739957b6dc297800e31e8bcbd94bba"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/Twistor_Encodings_as_High_Coherence_Limits_of_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "93d1f89748ccca89d078f23ed68e3dcc9b04cf96ebb17289787caa6b6e4f443e",
+  "source_tree_sha256": "48f952d4c402f127ed7689ccb2f63125ddbd2511e493138d20987726f731fb15",
   "title": "Twistor Encodings as High Coherence Limits of Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

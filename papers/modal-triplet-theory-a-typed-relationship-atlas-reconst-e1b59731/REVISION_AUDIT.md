@@ -96,3 +96,19 @@ filling its certificate and advancing through the predictive-closure ladder.
 - PDF compilation remains blocked by the previously identified local MiKTeX
   dependency `amsthm.sty`; this is an environment issue rather than a detected
   source error.
+
+## Expository revision, 2026-07-28
+
+The relationship classifications and theorem status are unchanged. The atlas
+now begins by treating embedding, reduction, reconstruction, and derivation as
+directed maps with different input obligations. A product-state example
+constructs an embedding and reduction, shows exactly when dynamics commutes,
+and explains why inserting a known target evolution is reconstruction rather
+than source-independent derivation.
+
+The containment checklist is interpreted as a certificate for a whole
+commuting state/dynamics/observable structure, and the underdetermination
+theorem is explained as a typed inverse problem. The previously recorded
+MiKTeX block is no longer current: the revised source now compiles in the
+canonical repository environment and the resulting PDF has been visually
+inspected.

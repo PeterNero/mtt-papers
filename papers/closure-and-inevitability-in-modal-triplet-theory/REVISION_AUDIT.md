@@ -116,5 +116,8 @@ questions.
 - Projection--Admissibility v2 interface: checked against its typed theorem,
   measure-dependent kernel and locality-descent statements.
 - Current q79 gravity interface: kept at its declared conditional tier.
+- Publication-readiness review: added a reader orientation and dashboard
+  example that distinguish representative selection, decoding, autonomous
+  descent and effective merger without changing the theorem inventory.
 - TeX compilation and canonical migration verification: recorded by the
   repository verifier after regeneration.

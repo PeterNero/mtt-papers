@@ -37,10 +37,9 @@ manifold is adopted as the compactification. It is not the selected q79/Fu--Yau
 space, so the coefficient is an ansatz diagnostic rather than the current MTT
 internal volume. Even within the ansatz, the gauge profile does not determine
 Newton's constant without an absolute scale and fundamental gravity
-normalization. The former identification
-$\Lambda_\Theta\sim5~\mathrm{TeV}$ is withdrawn with the obsolete gauge
-crossing, so its numerical primordial-tensor bound is also withdrawn. We retain
-the correctly normalized conditional relation
+normalization. A gauge matching point does not by itself select the physical
+cutoff $\Lambda_\Theta$.
+The correctly normalized conditional relation is
 $r\leq 2\epsilon^2(\Lambda_\Theta/M_{\mathrm{Pl}})^2/(\pi^2A_s)$ when
 $H\leq\epsilon\Lambda_\Theta$. The paper therefore supplies conditional
 scaling laws and an assumption audit, not cross-sector numerical closure.
@@ -80,10 +79,35 @@ coherence cutoff bounds the Hubble scale? The answers are conditional scaling
 relations. They must not be promoted into predictions of $G_N$ or $r$ until
 the missing absolute-scale and cutoff source theorems are supplied.
 
+\section{Central picture and dependency flow}
+
+The central picture is dimensional analysis with two independent exits. Gauge
+ratios can constrain dimensionless shape data, but Newton's constant also
+depends on an absolute internal length and the higher-dimensional
+gravitational normalization. Likewise, a renormalization scale used to quote
+gauge couplings is not a physical ultraviolet or coherence cutoff.
+
+The two calculations therefore have the form
+\[
+\begin{gathered}
+\text{calibrated auxiliary shape}
+\longrightarrow
+\widehat V_{\mathrm{aux}}
+\quad+\quad
+\{\ell_{\mathrm{int}},G_{10}\}
+\longrightarrow G_N,\\
+\{\Lambda_\Theta,\epsilon,\text{cosmological state}\}
+\longrightarrow r\text{ bound}.
+\end{gathered}
+\]
+The first line is evaluated in Section~3 and the second in Section~4. In both
+lines the braces contain inputs that the gauge-profile calculation does not
+select.
+
 
 % ===========================
 % ===========================
-\section{Propagation of $\Theta$ to Newton's constant}
+\section{Auxiliary volume and conditional Newton scaling}
 % ===========================
 
 We compute the gravity scaling implied by the auxiliary effective product
@@ -108,11 +132,13 @@ where:
 \item $X_{\mathrm{int}}$ is the internal coherent space.
 \end{itemize}
 
-Equation \eqref{eq:GN_reduction} is the standard dimensional-reduction
-form assumed here. Its applicability to MTT requires the product metric,
+Equation \eqref{eq:GN_reduction} is the standard unwarped
+dimensional-reduction form assumed here \cite{DuffNilssonPope}. Its
+applicability to MTT requires the product metric,
 Einstein-frame convention, and absence or control of warp/dilaton corrections.
 
-\subsection{Internal volume in terms of $\Theta$}
+\subsection{Internal volume in terms of
+\texorpdfstring{$\Theta$}{Theta}}
 
 Define the auxiliary six-dimensional product
 \begin{equation}
@@ -170,7 +196,8 @@ and therefore
 \label{eq:volume_result}
 \end{equation}
 
-\subsection{Conditional expression for $G_N$}
+\subsection{Conditional expression for
+\texorpdfstring{$G_N$}{Newton's constant}}
 
 If, in addition to the dimensional-reduction assumptions, one identifies the
 physical internal space with $X_{\mathrm{aux}}$, then
@@ -184,6 +211,27 @@ within the chosen ansatz. It does not fix $\ell_{\mathrm{int}}^6/G_{10}$, this
 paper does not derive the reduction formula from a selected MTT action, and the
 required identification $X_{\mathrm{int}}=X_{\mathrm{aux}}$ is not established.
 Thus no numerical prediction of Newton's constant follows.
+
+\subsection{Worked example and interpretation: one shape, an unresolved scale family}
+
+Set $R_1=1$ inside the auxiliary model. The gauge-profile calibration then
+fixes only
+\[
+\widehat V_{\mathrm{aux}}=20.0706400,
+\qquad
+\frac{1}{G_N}
+=20.0706400\,\frac{\ell_{\mathrm{int}}^6}{G_{10}}.
+\]
+For any $s>0$, the simultaneous change
+\[
+\ell_{\mathrm{int}}\longmapsto s\ell_{\mathrm{int}},
+\qquad
+G_{10}\longmapsto s^6G_{10}
+\]
+leaves $G_N$ unchanged. Conversely, holding $G_{10}$ fixed while changing
+$\ell_{\mathrm{int}}$ changes the predicted Newton constant by the sixth
+power. This explicit degeneracy is why a dimensionless overlap fit cannot
+determine four-dimensional gravity without an absolute-scale theorem.
 
 
 % ===========================
@@ -205,11 +253,14 @@ H\leq\epsilon\Lambda_\Theta,
 \qquad 0<\epsilon<1.
 \label{eq:admissibility_H}
 \end{equation}
-For vacuum tensor fluctuations in standard slow-roll normalization,
+For vacuum tensor fluctuations in standard slow-roll normalization
+\cite{BaumannInflation},
 \begin{equation}
 P_t=\frac{2H^2}{\pi^2M_{\mathrm{Pl}}^2},
 \qquad r=\frac{P_t}{A_s}.
 \end{equation}
+Here $M_{\mathrm{Pl}}=(8\pi G_N)^{-1/2}$ is the reduced Planck mass and
+$A_s$ is the scalar curvature-perturbation amplitude in the same convention.
 Consequently,
 \begin{equation}
 \boxed{r\leq
@@ -257,46 +308,62 @@ cosmological state before Equation~\eqref{eq:r_bound_general} becomes a
 numerical prediction. Paper~IV therefore documents cross-sector dependencies
 and correct formulas; it does not establish gravity or cosmology closure.
 
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+This paper audits possible gravity and cosmology scaling from gauge-profile geometry. None of the mapped Standard Model packets derives a physical gravitational normalization or cosmological cutoff, so all closed rows below are corpus-state cross-checks rather than direct proof. The strict upgrade remains open.
 
-% ===========================
-% ===========================
-\section*{References}
-% ===========================
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
 
-\begin{enumerate}
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
 
-\item Particle Data Group (PDG), \emph{Review of Particle Physics},
-for Standard Model input parameters and cosmological conventions.
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/charged_yukawa_higgs_profile} (\emph{profile replay}).\par Versioned Yu, Yd, Ye and lambda\_H profile packet.
+\item \path{A14/ckm_prediction_profile} (\emph{numeric certified}).\par Three selected CKM profile rows and uncertainty comparison.
+\item \path{A01/current_global_lock} (\emph{profile replay}).\par Current non-looping global status and source-certificate map.
+\item \path{A01/direct_k_higgs_row} (\emph{derived exact}).\par Promoted direct K\_threshold.Omega\_H.lambda row.
+\item \path{A22/e6_qpsi_qcd_anomaly} (\emph{derived exact}).\par E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A40/neutral_two_primitive_profile} (\emph{profile replay}).\par Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+\item \path{A02/precision_15_source_transport} (\emph{profile replay}).\par Fifteen measured source coordinates, Jacobian and covariance transport.
+\item \path{A02/precision_8x8_workspace} (\emph{profile replay}).\par Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+\item \path{A01/qutrit_weyl_27_matrix} (\emph{derived exact}).\par Sparse 27x27 qutrit-Weyl left-action realization.
+\item \path{A01/strict_pew_row} (\emph{derived exact}).\par Promoted P\_EW source row at the declared one-shared-primitive standard.
+\end{itemize}
 
-\item M. E. Machacek and M. T. Vaughn,
-``Two-loop renormalization group equations in a general quantum field theory,''
-Nucl. Phys. B222 (1983) 83--103.
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
 
-\item T. Kato, \emph{Perturbation Theory for Linear Operators},
-Springer (1995).
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
-\item P. Nero,
-\emph{Modal Triplet Theory: Foundation},
-MTT corpus.
-
-\item P. Nero,
-\emph{Modal Triplet Theory: Quantum Amplitudes from Modal Geometry},
-MTT corpus.
-
-\item P. Nero,
-\emph{Direct Geometric Evaluation of Nonabelian Overlaps in Modal Triplet Theory},
-Paper~II.
-
-\item P. Nero,
-\emph{Twistor--Action Matching of Gauge Overlaps in Modal Triplet Theory},
-Paper~III.
-
-\item R. Penrose and W. Rindler,
-\emph{Spinors and Space-Time}, Vol. 2,
-Cambridge University Press (for twistor geometry background).
-
-\end{enumerate}
 \begin{thebibliography}{99}
+
+\bibitem{DuffNilssonPope}
+M.~J. Duff, B.~E.~W. Nilsson, and C.~N. Pope,
+\emph{Kaluza--Klein supergravity},
+Physics Reports \textbf{130} (1986) 1--142.
+\url{https://doi.org/10.1016/0370-1573(86)90163-8}
+
+\bibitem{BaumannInflation}
+D.~Baumann,
+\emph{TASI lectures on inflation},
+\url{https://arxiv.org/abs/0907.5424}
 
 \bibitem{MTT-Admissibility}
 P.~Nero,
@@ -378,7 +445,7 @@ Zenodo preprint, January 2026.
 
 \bibitem{MTT-Bell-Beables}
 P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
+\emph{Modal Fixed Points, Bell's Beables, and the Limits of Factorization},
 Zenodo preprint, 2025.
 \url{https://doi.org/10.5281/zenodo.17076300}
 
@@ -390,7 +457,8 @@ Zenodo preprint, August 2025.
 
 \bibitem{MTT-Stochastic}
 P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
+\emph{Modal Triplet Theory and History-Dependent Stochastic Processes:
+Fixed-State Indivisibility, Markov Order, and the Quantum Boundary},
 Zenodo preprint, January 2026.
 \url{https://doi.org/10.5281/zenodo.18254862}
 

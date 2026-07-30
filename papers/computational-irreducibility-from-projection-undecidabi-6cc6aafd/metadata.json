@@ -48,15 +48,15 @@
       "sha256": "7da3fd5ca3ca14aa5ffbfba172b70b61101f68babf8c3994306561d9e83fe4f7"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Computational_Irreducibility_from_Projection__Undecidability_of_Selection_Events_in_Coherent_Quantum_Dynamics"
   },
-  "source_tree_sha256": "8c15530d2037edf1a372bb73d1e68a3d5fbc4b0aa804dc7485e624d2ac3b33cb",
+  "source_tree_sha256": "ec1f194cab85e0ae32b69865de4b14f7a7f51d02fa740b40af4c4e2bec88c4fb",
   "title": "Computational Irreducibility from Projection: Undecidability of Selection Events in Coherent Quantum Dynamics",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

@@ -1,73 +1,98 @@
 {
-  "abstract": "This paper replaces the claim that AQFT follows from admissible charts alone. It distinguishes a conditional admissibility-indexed precosheaf from a physical Haag--Kastler net and proves the rigorous bridge currently available: a decomposable coherent projector preserves isotony and spacelike commutation on the compatible subalgebra of an already local upper net. Failure of joint representability does not imply commutation, chart inclusion does not automatically extend observables, and absence of a global chart does not forbid a quasilocal algebra or colimit.",
+  "abstract": "An admissibility-indexed precosheaf is a pregeometric covariant functor only after its algebras and extension morphisms are supplied; overlap or failure of joint representability does not create commutators or imply locality. A physical Haag–Kastler net instead requires a selected Lorentzian base, an upper local operator net, and a localization-preserving coherent reduction. For a decomposable orthogonal projector P, we prove that compression of the P-compatible upper subalgebras preserves isotony and spacelike commutation. This is the rigorous MTT-to-AQFT bridge currently available. We also show why absence of a global admissible chart does not forbid an abstract quasilocal algebra or categorical colimit. The current q79 source now also supplies a selected free twisted-Dirac construction whose even CAR observable net has locality, covariance, the time-slice property, and nonempty positive Hadamard state space through standard AQFT results. The chart-to-region natural equivalence and the nonperturbative interacting C-star completion remain open.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v2",
-  "date": "July 2026",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18330769",
-    "created": "2026-01-21T20:01:20.099899+00:00",
+    "created": "2026-07-29T08:50:54.401184+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18330770",
+    "doi": "10.5281/zenodo.21665973",
     "files": [
       {
-        "checksum": "md5:e6c46aff22e13a0d5a98bfc86dc4e184",
-        "content_url": "https://zenodo.org/api/records/18330770/files/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory%20(3).pdf/content",
-        "key": "From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory (3).pdf",
-        "size": 320453
+        "checksum": "md5:6cf5e2b7f4787e374a822bcac482ddde",
+        "content_url": "https://zenodo.org/api/records/21665973/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 343472
       }
     ],
-    "id": "18330770",
-    "match_kind": "title_or_file",
+    "id": "21665973",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18330770",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665973",
     "resource_type": "publication",
-    "title": "From Modal Triplet Theory to Algebraic Quantum Field Theory: Local Nets from Admissible Charts",
-    "updated": "2026-01-21T20:01:20.472468+00:00",
-    "version": "v1.0"
+    "title": "Admissibility Precosheaves and Conditional AQFT Nets in Modal Triplet Theory",
+    "updated": "2026-07-29T08:50:54.725478+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "41cb82cd5d3ee0151f9dbe4bea1d31a19e16c64671dd9c9f2a27450f3e9d00a8",
+  "main_tex_sha256": "f885ff123d5a3ded5f81f9eb272ca9a02ad6105e9c74f3a20b29d6a945fdcbcc",
   "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
-  "paper_md_sha256": "e0a5714d99826a3ffde7f599d8f8440dd22c8e08f4a8f2ba265cd44f37732e87",
+  "paper_md_sha256": "ee20ddf48a373c40cc89df86ff5ad4088daa85cd323ce06b07ef55a3fde8ebc3",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "65d313e8c04e1676da4540da74b58e970ba429d62674a9c5ec1012cf54376649",
+    "revision_evidence_sha256": "3d60c4b3115a397c331f7596a089e6bfd75bc348c16fc778f3a7e9ef38553907",
     "selected_revision": true,
     "superseded_source_path": "7 Quantum Field Theory/_work/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 21418,
+      "bytes": 23912,
       "path": "main.tex",
-      "sha256": "41cb82cd5d3ee0151f9dbe4bea1d31a19e16c64671dd9c9f2a27450f3e9d00a8"
+      "sha256": "f885ff123d5a3ded5f81f9eb272ca9a02ad6105e9c74f3a20b29d6a945fdcbcc"
     },
     {
-      "bytes": 7443,
+      "bytes": 7834,
       "path": "REVISION_AUDIT.md",
-      "sha256": "65d313e8c04e1676da4540da74b58e970ba429d62674a9c5ec1012cf54376649"
+      "sha256": "3d60c4b3115a397c331f7596a089e6bfd75bc348c16fc778f3a7e9ef38553907"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "7 Quantum Field Theory/_work/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory"
   },
-  "source_tree_sha256": "846f3ef6af26603dbf866b9945fc4091e81c95a7479503f07c11cb1ab3a22140",
+  "source_tree_sha256": "86d67065cc57908dcde4ffb1c2a64ba93961bdaac1b1285ec7d7e9dda1549e53",
   "title": "Admissibility Precosheaves and Conditional AQFT Nets in Modal Triplet Theory",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18330769",
+      "created": "2026-07-29T08:50:54.401184+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665973",
+      "files": [
+        {
+          "checksum": "md5:6cf5e2b7f4787e374a822bcac482ddde",
+          "content_url": "https://zenodo.org/api/records/21665973/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 343472
+        }
+      ],
+      "id": "21665973",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665973",
+      "resource_type": "publication",
+      "title": "Admissibility Precosheaves and Conditional AQFT Nets in Modal Triplet Theory",
+      "updated": "2026-07-29T08:50:54.725478+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18330769",
       "created": "2026-01-21T20:01:20.099899+00:00",

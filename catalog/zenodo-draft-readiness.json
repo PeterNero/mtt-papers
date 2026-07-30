@@ -1,0 +1,552 @@
+{
+  "failed": 30,
+  "failures": [
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "closure-and-inevitability-in-modal-triplet-theory"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "fixed-points-vi-formal-synthesis-and-physical-interpretations"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "modal-triplet-theory-foundations"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "proto-spinor-closure-and-worldsheet-encoding-in-modal-t-6a9d7abf"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb"
+    },
+    {
+      "error": "expected one exact current PDF, found 0; expected no stale PDF files, found 0 total PDFs",
+      "paper_id": "the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-modal-triplet-theory-program-a0-a-structural-theory-bebae240"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-modal-triplet-theory-program-a1-coherent-kinematics"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-modal-triplet-theory-program-d2-matter-antimatter-a-ba5f86ec"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-projection-admissibility-principle-descent-recovery-b0fd6e59"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8"
+    },
+    {
+      "error": "expected one exact current PDF, found 0",
+      "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73"
+    }
+  ],
+  "generated_at": "2026-07-28T23:30:00+00:00",
+  "mode": "verify",
+  "papers": 30,
+  "ready": 0,
+  "results": [
+    {
+      "draft_id": "21652662",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "086b58d859d7bbc5c4ba7614975271f8",
+      "local_pdf_sha256": "0269c89ece6c46686a8ef9cde5704176cc5bf68f476e2edc5fe857e688ebd3e6",
+      "paper_id": "closure-and-inevitability-in-modal-triplet-theory",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    },
+    {
+      "draft_id": "21654885",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "4e7ea8dc60ffb4a2604d9b0d71753a40",
+      "local_pdf_sha256": "a6c21f6e1968e35e947ac5eb1082d886612853ee5e0a868fef0ee4b675dbda13",
+      "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v4"
+    },
+    {
+      "draft_id": "21654884",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "3bc6298c1431029bc9f0daa1ab6adce2",
+      "local_pdf_sha256": "c6e8709421b5ffadea07093940de44f0385bbb271e64a24962795cf41dee0804",
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v7"
+    },
+    {
+      "draft_id": "21657157",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "0a30ff1ae9415db61f4a18fe34e47ceb",
+      "local_pdf_sha256": "a47567fb4f280f635afbe53cbfabd1823c6325a13c5ff970e861b5f812d8307c",
+      "paper_id": "fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v7"
+    },
+    {
+      "draft_id": "21655370",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "443228142167b6b50528dce3042e4782",
+      "local_pdf_sha256": "f4639b5500d18c4634bfd807e91a2e822577c88c87fcbf628b0d7b03101e5619",
+      "paper_id": "fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v5"
+    },
+    {
+      "draft_id": "21655371",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "852d83cc98e8abf81e7ed570744a3493",
+      "local_pdf_sha256": "a018b2617656fe7227bf93eb7069681054897c5b35d5d46a2140bb9907709c75",
+      "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v5"
+    },
+    {
+      "draft_id": "21655378",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "942d8ac0b7ba272264fd45db7e3f83c8",
+      "local_pdf_sha256": "3416a92a0650aaf283a38f5307b7590c51e685e053edf03b1788bfa59a95e935",
+      "paper_id": "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v6"
+    },
+    {
+      "draft_id": "21655379",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "cdf93f3c8ec1d0cc2bc0a8487271a4c2",
+      "local_pdf_sha256": "24523849592ecd78dd55695b3e3fb9ce8ea658defe68bf3be979a1ff6a470cec",
+      "paper_id": "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v7"
+    },
+    {
+      "draft_id": "21655380",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "fc783d33596b8afd6eccdeb66847ea9c",
+      "local_pdf_sha256": "142aa11b0fe6eb20bcd190350f907c072ac6005fa3ad452877be51d268eaf70d",
+      "paper_id": "fixed-points-vi-formal-synthesis-and-physical-interpretations",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v6"
+    },
+    {
+      "draft_id": "21654874",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "5f2373335b02f435750467dd5e03c4c6",
+      "local_pdf_sha256": "aa08eccb367810d29d2cbf55a76f35f850ee5c603ccafd2caa7a8a05db94b3ea",
+      "paper_id": "modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v3"
+    },
+    {
+      "draft_id": "21655395",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "5ab778a84c3505fcfaf8e33a920072d2",
+      "local_pdf_sha256": "06d85ee6905ea4d3d478576d58e772e15a228ed8752ccac675def0ecd581c430",
+      "paper_id": "modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v13"
+    },
+    {
+      "draft_id": "21655367",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "d0ef856e73889618705c72157afef6d9",
+      "local_pdf_sha256": "8bc712f06b738429d59b140e571ebe5814f6e4d60e07277da8eec2ac12d58fc3",
+      "paper_id": "modal-triplet-theory-foundations",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v9"
+    },
+    {
+      "draft_id": "21655397",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "39b0dedd9d3a23209ffc300e4738e142",
+      "local_pdf_sha256": "c11809fbf6f7880f7e84705397046449280ffc65dcefb5edd34c85df843c0f68",
+      "paper_id": "proto-spinor-closure-and-worldsheet-encoding-in-modal-t-6a9d7abf",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v5"
+    },
+    {
+      "draft_id": "21657161",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "5de20ab3a8a905cbe74a6a9cc6a66303",
+      "local_pdf_sha256": "243220f78fe205351a660b06cf4eda05107dc687aeb6fa1f685558ed3a73edc4",
+      "paper_id": "temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v3"
+    },
+    {
+      "draft_id": "21655366",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0",
+        "expected no stale PDF files, found 0 total PDFs"
+      ],
+      "local_pdf_md5": "5cf99bf1d2a33ce2a324cbec0c5db7ac",
+      "local_pdf_sha256": "dda7f11087b391a41f814f4f56662a4e6551a9cf9d8e890a1bd781a8656fb5f3",
+      "paper_id": "the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 0,
+      "version": "v11"
+    },
+    {
+      "draft_id": "21652631",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "b3353c345b8fa3f8052c23d1060f2d5b",
+      "local_pdf_sha256": "dca745dc9f1121ece68e26379f06ac9717b595db7fce48f8526b6aa6e993086e",
+      "paper_id": "the-modal-triplet-theory-program-a0-a-structural-theory-bebae240",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    },
+    {
+      "draft_id": "21652636",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "857e0e5ab11a61b48ba6abd904a8407e",
+      "local_pdf_sha256": "e157f76e8127006d9a1198c42568102fb3e18678d3cff1ca2fd95f62de14ceb4",
+      "paper_id": "the-modal-triplet-theory-program-a1-coherent-kinematics",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    },
+    {
+      "draft_id": "21652637",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "3e487d43a78ebd2a23bee1a2338cddb7",
+      "local_pdf_sha256": "7620bcd738aedbb80e59d71c0ec7c7fd210f8760823a65dc3200e45dd4ea6538",
+      "paper_id": "the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    },
+    {
+      "draft_id": "21652638",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "dceafb0a34be9e743768286dfe85a432",
+      "local_pdf_sha256": "616b124b564c3e8a6f870be16b359aa1f315b0a5b21119cdfe4df997a5afa1ce",
+      "paper_id": "the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    },
+    {
+      "draft_id": "21652643",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "88db7a53210f7aa35846eaade5e3f08b",
+      "local_pdf_sha256": "af27575f4c08cf330f18a21716b04e7b9460cff875cab673f8c106381ad76b94",
+      "paper_id": "the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    },
+    {
+      "draft_id": "21652648",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "97f6f6b46036997c2b45734c62c3c095",
+      "local_pdf_sha256": "e02579adf827e73610b88eb76d39db0b95abc629c28eb3345fc876de332c8d12",
+      "paper_id": "the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    },
+    {
+      "draft_id": "21652653",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "c37bca7b84b17e83b898ad2c23f85f13",
+      "local_pdf_sha256": "0124cfd96cd6fc73634d6fe6f3dc4aab2007552805d886829b6c97235a0b0e2f",
+      "paper_id": "the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    },
+    {
+      "draft_id": "21652656",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "0f26e1f4f4a82963d03365bb4767f4de",
+      "local_pdf_sha256": "e5ccea5afa336ec38d386b09d41dbc0531c7c4d40754b2fc5ceb7a7e41c8dfa2",
+      "paper_id": "the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    },
+    {
+      "draft_id": "21655386",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "54c49efb082a680c418389cf4e30c07c",
+      "local_pdf_sha256": "10c2f293e111fbe7d1a11d29ef9e8d91f5ef12eda0987a4951f052a647874714",
+      "paper_id": "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v3"
+    },
+    {
+      "draft_id": "21655387",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "88f4af8c5711d2828023b9967eb5f728",
+      "local_pdf_sha256": "66015761325673e6b914fc768611c926112175e78cb75088d2d100e7cbee2d3c",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v3"
+    },
+    {
+      "draft_id": "21655391",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "d27d6043bdd46f9f028b9499b5287ba3",
+      "local_pdf_sha256": "1e79ed9a7c26473230aa3e4cb658425abfa27d795fd878fe0d9702b3e08fef88",
+      "paper_id": "the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v3"
+    },
+    {
+      "draft_id": "21657167",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "8e18b2beb60f37f3191183421153b8ed",
+      "local_pdf_sha256": "f0d2ec82c10e0add68ccf65fd75aaba26cba34bc13b543440a6b503841d2f372",
+      "paper_id": "the-modal-triplet-theory-program-d2-matter-antimatter-a-ba5f86ec",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    },
+    {
+      "draft_id": "21652659",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "ed2f84d80111110b1197a0e9d72160d6",
+      "local_pdf_sha256": "357aad4b1892657620a4e2c269a1adc10fc72f002b6509b7dda75822093c508c",
+      "paper_id": "the-projection-admissibility-principle-descent-recovery-b0fd6e59",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    },
+    {
+      "draft_id": "21655396",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "c4422d747c5f6f99ab78a27647ddec3f",
+      "local_pdf_sha256": "fa3dc1eb0ea9d7e568d89e5c7f0aabf5c7684bd684fa62cbb4143ff20a88c643",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v7"
+    },
+    {
+      "draft_id": "21654883",
+      "exact_remote_pdf_count": 0,
+      "failures": [
+        "expected one exact current PDF, found 0"
+      ],
+      "local_pdf_md5": "54a372de763ed8836a304419e5556fe4",
+      "local_pdf_sha256": "b2875852f53f5ff547edd09d55d447a8b105d2a6f90195417323e1ba1a810769",
+      "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+      "ready": false,
+      "remote_pdf": "",
+      "remote_pdf_count": 1,
+      "version": "v5"
+    }
+  ]
+}

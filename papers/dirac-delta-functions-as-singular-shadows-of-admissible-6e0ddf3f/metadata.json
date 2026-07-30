@@ -1,20 +1,47 @@
 {
-  "abstract": "Dirac delta distributions appear throughout physics as identity kernels, point sources, constraint enforcers, measurement idealizations, gauge-fixing devices, and conservation laws at interaction vertices. Their ubiquity is usually treated as a technical feature of continuum mathematics. This paper isolates a structural explanation compatible with Modal Triplet Theory (MTT): a Dirac delta is the singular downstream limit of an admissible projection when finite-width selection, coherent-sector truncation, or representative choice is idealized to zero width. The mathematical core is deliberately narrow. We prove that spectral projection kernels on a compact elliptic setting converge to the Dirac delta in the distributional sense, and we record the corresponding heat-kernel approximate identity. These standard analytic facts provide the rigorous anchor for the MTT interpretation: the native object in a finite-capacity coherent regime is not the exact identity kernel \\delta(x-y), but a bounded coherent kernel K_{\\mathrm{coh}}(x,y) induced by a coherent projector \\Pi_{\\mathrm{coh}}. The delta is recovered only after an infinite-resolution or zero-width limit. We then apply this projection reading to Green kernels, canonical commutators, contact interactions, path-integral constraints, measurement, fixed-point basin selection, and gauge fixing. Gauge theory displays the same architecture explicitly: gauge freedom is uncollapsed projection redundancy, gauge fixing is local representative selection, the gauge-fixing delta is a singular section-selection kernel, and the Faddeev\u2013Popov determinant is the projection Jacobian. The paper does not replace distribution theory, QFT, or gauge theory. It supplies a diagnostic principle: wherever a physical theory writes a Dirac delta, one should ask which finite admissible projection, filter, basin, or quotient operation has been idealized as exact.",
+  "abstract": "Dirac delta distributions play several mathematically different roles in physics. They are identity kernels, point sources, hard constraints, conservation distributions, formal densities of continuous observables, and local gauge-slice selectors. This paper separates those roles before asking which admit finite-resolution representatives. On a compact elliptic background, spectral projector kernels converge to the diagonal delta distribution with an explicit Sobolev truncation error. Heat kernels provide a different, nonprojective approximate identity with a quantitative Sobolev error. For a smooth submersion between Euclidean spaces, normalized Gaussian tubes converge by the coarea formula to the correctly Jacobian-weighted constraint distribution on the zero level set. Compression of the canonical commutation relations by an orthogonal projection replaces the full inner-product kernel by the projected kernel exactly, but only in that declared compressed theory. These results support a restricted Modal Triplet Theory diagnostic: when a delta occurs in a downstream model, one should ask whether selected upstream geometry emits a finite projector, smoothing kernel, source profile, detector response, or constraint tube, and in which topology the sharp limit is controlled. They do not imply that every delta is a hidden projection, that a spectral gap fixes a physical width, or that finite smearing by itself solves gauge fixing, measurement, ultraviolet renormalization, or outcome selection.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "unversioned",
-  "date": "April 2026",
-  "latest_zenodo_release": null,
-  "main_tex_sha256": "b4c52174f6664e90bbce3da9468e75aa629df11c2c912665a928a214afcb1606",
+  "current_version": "v1",
+  "date": "July 2026, Version 1",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.21665961",
+    "created": "2026-07-29T08:50:28.125264+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.21665962",
+    "files": [
+      {
+        "checksum": "md5:98a4906fb12416553bb5aad43c14b47c",
+        "content_url": "https://zenodo.org/api/records/21665962/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 410488
+      }
+    ],
+    "id": "21665962",
+    "match_kind": "published_draft_reconciliation",
+    "match_score": 1.0,
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665962",
+    "resource_type": "publication",
+    "title": "Dirac Delta Limits, Spectral Kernels, and the MTT Finite-Kernel Diagnostic Exact Approximate Identities, Constraint Tubes, and Scope Boundaries",
+    "updated": "2026-07-29T08:50:28.491825+00:00",
+    "version": "v1"
+  },
+  "main_tex_sha256": "d90f0bbd4956b4f64433c2a3171d9820a74c76f497df56116fe1519668c63ad5",
   "paper_id": "dirac-delta-functions-as-singular-shadows-of-admissible-6e0ddf3f",
-  "paper_md_sha256": "94cf383e93e352ab262726c3f90abaab3c92b4b3a57f789db3fc6ba5fed0eb9a",
-  "release_state": "not_matched_to_zenodo",
+  "paper_md_sha256": "ba89ccfc6c1a707e86f4b43dec21732530b98a06acae4b6b929984e647518ae5",
+  "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "6ed9e730ac675bd26da9b41e79f616a5a2465fe9f2adf9539de1e88739ddee35",
+    "selected_revision": true,
+    "superseded_source_path": "5 Dirac Delta/_work/Dirac_Delta_Functions_as_Singular_Shadows_of_Admissible_Projection"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -34,21 +61,47 @@
       "sha256": "f5f62979db40e158ae3591f0211f9014798a19476a591824fc3cf91ec5a13a71"
     },
     {
-      "bytes": 31725,
+      "bytes": 28305,
       "path": "main.tex",
-      "sha256": "b4c52174f6664e90bbce3da9468e75aa629df11c2c912665a928a214afcb1606"
+      "sha256": "d90f0bbd4956b4f64433c2a3171d9820a74c76f497df56116fe1519668c63ad5"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Dirac_Delta_Functions_as_Singular_Shadows_of_Admissible_Projection"
   },
-  "source_tree_sha256": "5d00720808c7c6d8bdc874e82b1d8ed3b645d28d319d4b9636925bead3e503f3",
-  "title": "Dirac Delta Functions as Singular Shadows of Admissible Projection A Fixed-Point and Gauge-Theoretic Formulation in Modal Triplet Theory",
-  "version_relation": "unknown",
-  "zenodo_releases": []
+  "source_tree_sha256": "4dd65b68798c6fca3e480b069ce4789c03ffd49df623f0f7b2c2a7c72398a4ea",
+  "title": "Dirac Delta Limits, Spectral Kernels, and the MTT Finite-Kernel Diagnostic Exact Approximate Identities, Constraint Tubes, and Scope Boundaries",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.21665961",
+      "created": "2026-07-29T08:50:28.125264+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665962",
+      "files": [
+        {
+          "checksum": "md5:98a4906fb12416553bb5aad43c14b47c",
+          "content_url": "https://zenodo.org/api/records/21665962/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 410488
+        }
+      ],
+      "id": "21665962",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665962",
+      "resource_type": "publication",
+      "title": "Dirac Delta Limits, Spectral Kernels, and the MTT Finite-Kernel Diagnostic Exact Approximate Identities, Constraint Tubes, and Scope Boundaries",
+      "updated": "2026-07-29T08:50:28.491825+00:00",
+      "version": "v1"
+    }
+  ]
 }

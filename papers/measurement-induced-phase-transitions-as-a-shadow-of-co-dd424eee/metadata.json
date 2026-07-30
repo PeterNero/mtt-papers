@@ -48,15 +48,15 @@
       "sha256": "43e4db0108d380c235d57caae1ae9a111f8c7137e931c3560809ac7c6f54ee18"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "8 Measurement, Selection & Computation/_work/Measurement_Induced_Phase_Transitions_as_a_Shadow_of_Coherence_Basin_Dynamics"
   },
-  "source_tree_sha256": "7d06e25d2e91afad116b363258c4ce94bd1d5dcd3f95ca6789f568d5ccd5f53c",
+  "source_tree_sha256": "de49f0ad6fbd39e9529095fee1a6b2525cccaa5e0aa4614a3980c15b1cbe2d8c",
   "title": "Measurement-Induced Phase Transitions as a Shadow of Coherence Basin Dynamics A projection-induced bridge between monitored-circuit transitions and collapse thresholds",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

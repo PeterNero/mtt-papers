@@ -48,15 +48,15 @@
       "sha256": "dd5d9aab4b0197e1f124b67fb7889c07c395820c54ac3dc92993bfb2bd1b4e4a"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2"
   },
-  "source_tree_sha256": "ae4190d560651eefe5c0accac4f766306f02c7a6a9744841ce8dcea572b37d3b",
+  "source_tree_sha256": "d2279bac121b15e467363b6f5d39037004db48e92fff1ece15f737d9b50499fd",
   "title": "Quantum Field Theory Reconstruction from Coherence Basin Statistics",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

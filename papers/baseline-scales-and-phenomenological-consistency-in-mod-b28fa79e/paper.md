@@ -1,58 +1,56 @@
 ---
 abstract: |
-  We provide a corrected scale and provenance ledger for Modal Triplet Theory (MTT). The internal vertical gap, complementary stabilization rate, coherent contraction rate, four-dimensional EFT cutoff, curvature scale, Planck scale, and renormalization scale are distinct objects. The internal gap is an internal mass or truncation scale only after the operator normalization and physical action are specified; it does not automatically damp high four-dimensional energy or satisfy particle, fifth-force, Lorentz-violation, gravitational-wave, general-relativistic, or cosmological bounds. We state the conditional Kaluza–Klein-type bridge under which internal eigenvalues become four-dimensional masses, retain the Schur–Feshbach truncation estimate from the corrected Foundation, and define a formal consistency set built from sourced observable-response maps. A phenomenological consistency claim requires a nonempty common set or an exhibited parameter witness with theory errors and provenance. No such numerical witness is constructed here, so this paper makes no prediction and no assertion of present empirical viability. Its purpose is to prevent scale conflation and to specify exactly what downstream calculations must supply.
+  We provide a typed scale and provenance ledger for Modal Triplet Theory (MTT). The internal vertical gap, complementary stabilization rate, coherent contraction rate, four-dimensional EFT cutoff, curvature scale, Planck scale, and renormalization scale are distinct objects. The internal gap is an internal mass or truncation scale only after the operator normalization and physical action are specified; it does not automatically damp high four-dimensional energy or satisfy particle, fifth-force, Lorentz-violation, gravitational-wave, general-relativistic, or cosmological bounds. We state the conditional Kaluza–Klein-type bridge under which internal eigenvalues become four-dimensional masses, retain the Foundation’s Schur–Feshbach truncation estimate, and define a formal consistency set built from sourced observable-response maps. A phenomenological consistency claim requires a nonempty common set or an exhibited parameter witness with theory errors and provenance. No such numerical witness is constructed here, so this paper makes no prediction and no assertion of present empirical viability. Its purpose is to prevent scale conflation and to specify exactly what downstream calculations must supply.
 author:
 - Peter Nero
 current_version: v2
-date: July 2026
-generated_from_main_tex_sha256: 3f5c56a5eb6de0ff2f234bb4f2197c0197a70639f7423eeefeeadc7edaa99eed
+date: July 2026 Version 2
+generated_from_main_tex_sha256: c31f23a8ae5e60e8add000af0276e1221d3d0b7b28deda5c110e318b7b5e8bef
 paper_id: baseline-scales-and-phenomenological-consistency-in-mod-b28fa79e
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  Baseline Scales and Phenomenological Consistency  
+  Baseline Scales and Phenomenological Consistency
   in Modal Triplet Theory
-zenodo_doi: 10.5281/zenodo.18265329
-zenodo_record_id: 18265329
-zenodo_url: "https://zenodo.org/records/18265329"
+zenodo_doi: 10.5281/zenodo.21665947
+zenodo_record_id: 21665947
+zenodo_url: "https://zenodo.org/records/21665947"
 ---
 
-*Part VI of VI in the Fixed Points series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*
+# Version 2 Revision Note
 
-# Revision note for this edition
-
-Supersedes.  
+Supersedes
 The first edition of *Baseline Scales and Phenomenological Consistency in Modal Triplet Theory*.
 
-Reason.  
+Reason
 The internal spectral gap, coherent damping, external EFT cutoff, curvature scale, Planck scale, and RG scale had been treated as if one number controlled them all.
 
-Resolution.  
+Resolution
 Version 2 supplies separate typed scales, normalization and provenance requirements, a conditional internal-mode mass bridge, and a formal common consistency set.
 
-Retained result.  
+Retained result
 Internal gaps still control truncation and complementary modes under the stated operator assumptions.
 
-Remaining boundary.  
+Remaining boundary
 No empirical witness or held-out prediction is claimed until observable maps, uncertainties, and a common parameter witness are supplied.
 
 # Role and claim status
 
 This paper is a ledger, not a phenomenological fit. It introduces no new physical dynamics and assigns no numerical values. It distinguishes:
 
-Structural condition.  
+Structural condition.
 A mathematical gate such as a spectral or semigroup bound.
 
-Physical bridge.  
+Physical bridge.
 A theorem connecting an abstract operator to a term in a selected physical action.
 
-Calibration.  
+Calibration.
 A parameter value inferred from measured input.
 
-Consistency witness.  
+Consistency witness.
 One common parameter point satisfying declared constraints.
 
-Held-out prediction.  
+Held-out prediction.
 An observable not used in construction, calibration, scale setting, or branch selection.
 
 The absence of an identified contradiction is not evidence that a common parameter point exists. Conversely, a freely adjustable parameter choice is a consistency witness, not a prediction.

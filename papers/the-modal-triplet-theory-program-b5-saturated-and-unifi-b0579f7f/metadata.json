@@ -1,47 +1,47 @@
 {
-  "abstract": "We replace an absolute notion of encoding saturation by a typed and testable relative notion. A saturation contract specifies a category of candidate realizations, its equivalences, a complete list of constraints and boundary data, and a class of allowed factorizations. A realization is saturated relative to that contract when it satisfies every declared constraint and admits no nontrivial allowed factorization. For a finite-dimensional local model with declared variable and constraint blocks, we prove that first-order factorization is exactly detected by the connected components of the bipartite derivative-incidence graph. Connected incidence gives infinitesimal indecomposability; together with an injective combined derivative, it gives a locally isolated, infinitesimally indecomposable realization. Countermodels show that saturation alone does not force extended carriers, a critical dimension, anomalies, or duality. One-dimensional carriers, worldsheets, critical dimensions, anomaly cancellation, and dualities are retained as conditional realization results under explicit hypotheses. The exact q=79 arithmetic branch is recorded without promoting the still-open physical Hull-Strominger, worldsheet, and all-scale completion rows.",
+  "abstract": "We replace an absolute notion of encoding saturation by a typed and testable relative notion. A saturation contract specifies a category of candidate realizations, its equivalences, a complete list of constraints and boundary data, and a class of allowed factorizations. A realization is saturated relative to that contract when it satisfies every declared constraint and admits no nontrivial allowed factorization. Saturation can therefore change when the candidate class, constraint inventory, equivalence, or factorization class changes. For a finite-dimensional local model with declared variable and constraint blocks, we prove that first-order factorization is exactly detected by the connected components of the bipartite derivative-incidence graph. A connected active graph gives infinitesimal indecomposability; together with an injective combined derivative, it gives a locally isolated, infinitesimally indecomposable realization. This is a genuine conditional saturation theorem. The stronger claims in the first version do not follow from saturation alone. We give explicit countermodels showing that a complete, rigid, indecomposable constraint system need not contain extended carriers, a critical dimension, or a nontrivial duality. A one-dimensional carrier is minimal only after one requires a nonconstant continuous loop or nontrivial holonomy. Critical dimensions require an explicit anomaly or central-charge defect. Duality requires an explicit invertible comparison preserving the declared dynamics and observables. String-like and brane-like structures are consequently realization classes, not inevitable consequences of three obstruction labels. We also separate existence, local rigidity, uniqueness within a declared candidate class, physical selection, and empirical adequacy. The current selected q=79 arithmetic theorem supplies an exact finite branch, but the physical visible-hidden Hull\u2013Strominger endpoints, the remaining seven rows of the twelve-row worldsheet contract, and an all-scale nonperturbative completion remain open. Program B5 therefore provides a rigorous language and a finite indecomposability test for unified encodings. It does not derive string theory, a numerical critical dimension, or the physical selection of a saturated universe.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "July 2026",
+  "current_version": "v3",
+  "date": "July 2026 Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18355129",
-    "created": "2026-01-23T20:11:43.824043+00:00",
+    "created": "2026-07-29T08:52:02.401907+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18355130",
+    "doi": "10.5281/zenodo.21655386",
     "files": [
       {
-        "checksum": "md5:8c31abc8c1bcded03335f4e74d2fa9cd",
-        "content_url": "https://zenodo.org/api/records/18355130/files/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings%20(2).pdf/content",
-        "key": "The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings (2).pdf",
-        "size": 223020
+        "checksum": "md5:54c49efb082a680c418389cf4e30c07c",
+        "content_url": "https://zenodo.org/api/records/21655386/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 373683
       }
     ],
-    "id": "18355130",
-    "match_kind": "title_or_file",
+    "id": "21655386",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-23",
-    "record_url": "https://zenodo.org/records/18355130",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21655386",
     "resource_type": "publication",
-    "title": "The Modal Triplet Theory Program B5: Saturated and Unified Encodings",
-    "updated": "2026-01-23T20:11:44.424923+00:00",
-    "version": "v1.0"
+    "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
+    "updated": "2026-07-29T08:52:02.729849+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "a9a278bc71e7bb6d96a2dbb99e4a890c9a06a421947262fd9fd2471af9a0fb3a",
+  "main_tex_sha256": "d43cb53d7bd28ab8a9a95cae73f4233d45abcb110bff84ff56c81a22c55e4ebe",
   "paper_id": "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
-  "paper_md_sha256": "d0cf20fad4a25d313308de99a35c12df5c0b49e2bbc042bf39e49c7e64784fdf",
+  "paper_md_sha256": "f951c6b916a1487b2f7ad7b34ea36e2f428211dc324f93daeb3188180658913f",
   "release_state": "zenodo_released",
   "result_refs": [
     "q79_exact_theorem"
   ],
   "revision": {
     "revision_evidence_path": "papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "d4870671dbf26e8d0ce61fe16f5b2b62052411366c831c052abba7859a64f477",
+    "revision_evidence_sha256": "59d36af43f53ba1122cb468ee8fb8c04dd63091f76989dbfd3f432616e5b92a9",
     "selected_revision": true,
     "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings"
   },
@@ -53,33 +53,83 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 358371,
+      "bytes": 373683,
       "path": "main.pdf",
-      "sha256": "573a68e0645d93eceb67cca57cc402d42fdaf9d10416d75d7f6c76884219f6eb"
+      "sha256": "10c2f293e111fbe7d1a11d29ef9e8d91f5ef12eda0987a4951f052a647874714"
     },
     {
-      "bytes": 31960,
+      "bytes": 38161,
       "path": "main.tex",
-      "sha256": "a9a278bc71e7bb6d96a2dbb99e4a890c9a06a421947262fd9fd2471af9a0fb3a"
+      "sha256": "d43cb53d7bd28ab8a9a95cae73f4233d45abcb110bff84ff56c81a22c55e4ebe"
     },
     {
-      "bytes": 10821,
+      "bytes": 12135,
       "path": "REVISION_AUDIT.md",
-      "sha256": "d4870671dbf26e8d0ce61fe16f5b2b62052411366c831c052abba7859a64f477"
+      "sha256": "59d36af43f53ba1122cb468ee8fb8c04dd63091f76989dbfd3f432616e5b92a9"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings"
   },
-  "source_tree_sha256": "dd289086533a057d38c5537af886e6fd8a41755a7196ffeddee95b08a220b764",
+  "source_tree_sha256": "425e9432018f9fff6aebdb5cb893ff043e434d215768f588d287e1cdba4a0dbf",
   "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18355129",
+      "created": "2026-07-29T08:52:02.401907+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655386",
+      "files": [
+        {
+          "checksum": "md5:54c49efb082a680c418389cf4e30c07c",
+          "content_url": "https://zenodo.org/api/records/21655386/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 373683
+        }
+      ],
+      "id": "21655386",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655386",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
+      "updated": "2026-07-29T08:52:02.729849+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18355129",
+      "created": "2026-07-28T17:51:53.317142+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650889",
+      "files": [
+        {
+          "checksum": "md5:c113f89e4f1a1934d9096137b1b51efc",
+          "content_url": "https://zenodo.org/api/records/21650889/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 358371
+        }
+      ],
+      "id": "21650889",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650889",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
+      "updated": "2026-07-28T17:51:53.733388+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18355129",
       "created": "2026-01-23T20:11:43.824043+00:00",

@@ -15,15 +15,13 @@ author:
 - Peter Nero
 current_version: unversioned
 date: April 2026
-generated_from_main_tex_sha256: 6d07eb847e6c0fe7dc3270cfeb1d9a52254cd12c997a4f45785d6bc8418bcc09
+generated_from_main_tex_sha256: be1c419a1346e73e19640a7d75dff26f4078063ed0c49e94618c666739cfe2bd
 paper_id: coherent-green-functions-replacing-point-sources-by-adm-98607519
 release_state: not_matched_to_zenodo
 title: |
   Coherent Green Functions:  
   Replacing Point Sources by Admissible Kernels in Modal Triplet Theory
 ---
-
-*Part VI of VI in the Fixed Points series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*
 
 # Purpose and claim discipline
 
@@ -52,11 +50,11 @@ where $`K_{\mathrm{coh}}`$ is the kernel of a bounded coherent projection or adm
 ## Non-claims
 
 This paper does not claim that ordinary Green functions are wrong. It does not claim that all point-source methods should be abandoned. It does not compute numerical finite-width corrections for a specific experimental system. Its narrower claim is:
-``` math
-\boxed{
-\text{The point-source Green function is the singular limit of coherent finite-source Green functions.}
-}
-```
+
+<div class="center">
+
+</div>
+
 This is proved in standard spectral settings and then interpreted inside MTT.
 
 # Standard Green functions and the hidden delta
@@ -308,11 +306,10 @@ is finite for every $`x\in X`$.*
 </div>
 
 This gives a precise version of the renormalization intuition introduced in the preceding paper:
-``` math
-\boxed{
-\text{coincident-point singularities arise when finite coherent kernels are forced to the delta limit.}
-}
-```
+
+<div class="center">
+
+</div>
 
 # Worked model on the circle
 

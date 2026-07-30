@@ -48,15 +48,15 @@
       "sha256": "b3a1e74d1d002227cdc359334891d2417a296d5c97e168da6757a7909e1ea9ad"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/The_Spectral_Action_as_a_Shadow_of_Coherent_Fixed_Point_Geometry"
   },
-  "source_tree_sha256": "e7f38343d2fad5335115d3f6d232454c3407ddce9c30a61b48d056fe3af7e1f0",
+  "source_tree_sha256": "be9e2b2d5a6a99728182bd5942ccd6a9c4624a599a7ec7070facf9ae75240e9f",
   "title": "The Spectral Action as a Shadow of Coherent Fixed-Point Geometry Standard Model couplings, Higgs sector, and noncommutative geometry from Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

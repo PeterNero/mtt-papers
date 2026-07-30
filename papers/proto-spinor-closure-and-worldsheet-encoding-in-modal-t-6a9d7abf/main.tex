@@ -3,9 +3,9 @@
 
 \title{Proto-Spinor Closure and Worldsheet Encoding\\
 in Modal Triplet Theory\\
-\large Corrected fourth edition: a conditional local bridge}
+\large A Conditional Local Bridge}
 \author{Peter Nero}
-\date{July 2026}
+\date{July 2026\\Version 5}
 
 \begin{document}
 \maketitle
@@ -27,8 +27,27 @@ global target for the bridge, but the same-source connection intertwiner is
 still required.
 \end{abstract}
 
-\section*{Revision note for this edition}
-\addcontentsline{toc}{section}{Revision note for this edition}
+\section*{Revision note for version 5}
+\addcontentsline{toc}{section}{Revision note for version 5}
+\begin{description}
+\item[Supersedes.] \emph{Proto-Spinor Closure and Worldsheet Encoding in Modal
+Triplet Theory: A Conditional Local Bridge}, version~4.
+\item[Reason.] Version~4 gives the correct local Hessian-intertwining theorem,
+but it did not make the source space, target space, bridge derivative, and
+global worldsheet gates sufficiently tangible for a standalone reader.
+\item[Resolution.] Version~5 adds a finite-dimensional worked bridge, an
+explicit four-object reading map, and a sharper separation between local
+quadratic agreement and string-theoretic consistency. It does not replace
+the missing normalized q79 bridge derivative with dimensional analogy.
+\item[Retained result.] The $C^2$ local bridge theorem, cubic error bound, and
+conditional block interpretation remain unchanged.
+\item[Remaining boundary.] The same-source q79 derivative, nonflat connection
+intertwiner, Weyl and modular consistency, ghosts, anomalies, beta functions,
+and a complete physical worldsheet remain open.
+\end{description}
+
+\section*{Revision note for version 4}
+\addcontentsline{toc}{section}{Revision note for version 4}
 \begin{description}
 \item[Supersedes.] \emph{Proto-Spinor Closure and Worldsheet Encoding in Modal
 Triplet Theory}, version~3.
@@ -45,6 +64,67 @@ global worldsheet and string consistency tests must still be executed.
 \end{description}
 
 \tableofcontents
+
+\section{How to Read This Bridge}
+
+This paper does not re-prove the canonical proto-spinor lift.  It assumes a
+selected proto-spinor/strain configuration space and asks a different
+question: when do its small perturbations have the same local quadratic
+admissibility test as perturbations of a chosen worldsheet background?
+
+The bridge has four pieces:
+\begin{enumerate}
+\item a source configuration $u$ near $u_\ast$;
+\item a target worldsheet configuration $c$ near $c_\ast$;
+\item a nonlinear map $\mathcal B$ sending source configurations to target
+couplings; and
+\item a Hessian comparison showing that the derivative
+$L=D\mathcal B(u_\ast)$ preserves the leading quadratic diagnostic.
+\end{enumerate}
+The theorem below is useful only after all four pieces have been constructed.
+Matching block dimensions supplies a possible shape for $L$, not its values or
+its geometric provenance.
+
+\subsection{A finite-dimensional model}
+
+Let the source and target tangent spaces both be $\mathbb R^2$, take
+\[
+ H_{\rm ps}=
+ \begin{pmatrix}1&0\\0&4\end{pmatrix},
+ \qquad
+ H_{\rm ws}=I,
+ \qquad
+ L=
+ \begin{pmatrix}1&0\\0&2\end{pmatrix}.
+\]
+Then
+\[
+ L^{T}H_{\rm ws}L=H_{\rm ps}.
+\]
+If $\mathcal B(u)=Lu+r(u)$ with $r(u)=O(\|u\|^2)$ and both diagnostics have
+cubic Taylor remainders, their changes agree through quadratic order.  The
+difference begins at order $\|u\|^3$.
+
+This toy model contains the whole local mechanism.  The q79 problem is harder
+because the spaces are bundles of normalized modes, $L$ must be obtained by
+differentiating actual sigma-model couplings, and both Hessians must come from
+the same selected source data.
+
+\subsection{Local agreement versus string theory}
+
+A quadratic bridge compares stability and Morse data in a neighborhood of one
+background.  It says nothing by itself about large field excursions,
+worldsheet renormalization, modular invariance, anomaly cancellation, the
+physical state space, or uniqueness of the target description.  Those are
+global and quantum consistency questions listed later as independent gates.
+
+\subsection{Argument map}
+
+Sections~2--6 define the two spaces, prove the local bridge, and specialize its
+blocks to the selected q79 carrier.  Sections~7--10 separate worldsheet
+dimension, spinor/twistor chart language, string consistency, and finite
+Standard Model calculations from the local theorem.  Section~11 gives the
+actual computation needed to promote the bridge.
 
 \section{Scope}
 
@@ -149,6 +229,13 @@ Morse index on $E_{\rm sel}$.
 
 This is the rigorous content of the earlier ``shadow bridge.''  It is local,
 quadratic to leading order, and conditional on a constructed $\mathcal B$.
+
+The cubic estimate gives a quantitative validity statement rather than exact
+nonlinear equivalence.  On a ball of radius $\rho$, the absolute mismatch is
+at most $C\rho^3$, while a coercive quadratic signal is of order $\rho^2$.
+Thus the relative mismatch is controlled linearly in $\rho$ away from null
+directions.  Choosing the ball and proving the constants are part of the
+certificate; the notation $O(\|u\|^3)$ is not a license to ignore them.
 
 \section{Blockwise carrier map}
 
@@ -289,6 +376,59 @@ right finite block target, while the actual normalized derivative and global
 worldsheet consistency remain to be computed.  This is meaningful progress
 without claiming that the existence of a proto-spinor forces string theory.
 
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The q=79 branch, finite matrix, anomaly, and HYM packets provide concrete compatibility checks for the local proto-spinor/worldsheet encoding. They do not supply the missing global worldsheet, GSO, or physical-bundle theorem. The remaining rows are lower-sector context, and the strict upgrade remains open.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A22/e6_qpsi_qcd_anomaly} (\emph{derived exact}).\par E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A11/q79_exact_audit} (\emph{derived exact}).\par Executable q=79 exact-branch audit.
+\item \path{A11/q79_exact_theorem} (\emph{derived exact}).\par CRT q=79 theorem on the selected exact branch.
+\item \path{A01/qutrit_weyl_27_matrix} (\emph{derived exact}).\par Sparse 27x27 qutrit-Weyl left-action realization.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/charged_yukawa_higgs_profile} (\emph{profile replay}).\par Versioned Yu, Yd, Ye and lambda\_H profile packet.
+\item \path{A14/ckm_prediction_profile} (\emph{numeric certified}).\par Three selected CKM profile rows and uncertainty comparison.
+\item \path{A01/current_global_lock} (\emph{profile replay}).\par Current non-looping global status and source-certificate map.
+\item \path{A01/direct_k_higgs_row} (\emph{derived exact}).\par Promoted direct K\_threshold.Omega\_H.lambda row.
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\item \path{A13/gr_tt_support} (\emph{derived exact}).\par Exact-branch internal TT support certificate; physical normalization remains open.
+\item \path{A40/neutral_two_primitive_profile} (\emph{profile replay}).\par Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+\item \path{A02/precision_15_source_transport} (\emph{profile replay}).\par Fifteen measured source coordinates, Jacobian and covariance transport.
+\item \path{A02/precision_8x8_workspace} (\emph{profile replay}).\par Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+\item \path{A01/strict_pew_row} (\emph{derived exact}).\par Promoted P\_EW source row at the declared one-shared-primitive standard.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
+
 \begin{thebibliography}{9}
 \bibitem{Polchinski}
 J.~Polchinski, \emph{String Theory}, Vols. 1--2, Cambridge University Press,
@@ -303,5 +443,7 @@ complex Monge--Ampere equation}, J. Differential Geom. 78 (2008).
 P.~Nero, \emph{Selected q79 Trace-Split CLN Carrier and World-in-World
 Bridge}, internal theorem packet, 2026.
 \end{thebibliography}
+
+
 
 \end{document}

@@ -11,4 +11,5 @@ __pycache__/
 *.toc
 .import-staging/
 .papers-previous/
-
+tmp/
+papers/**/build-*.txt

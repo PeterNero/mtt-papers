@@ -124,3 +124,19 @@ the two global-section problems, and makes global gauge fixing a
 category-specific right-inverse question. It does not select a gauge group,
 principal bundle, connection, coupling, matter sector, anomaly cancellation,
 or Yang-Mills action from the lens profile alone.
+
+## Expository revision
+
+The current paper now opens with a paper-specific guide following redundancy
+through group action, quotient, principal bundle, connection, gauge fixing,
+and action. It explains the two genuinely different section problems, gives a
+simple `U(1)` potential example, maps the argument, and states which gauge and
+Standard Model data remain unselected. The quotient universal property is
+therefore presented as an organizer of representatives rather than as a
+uniqueness theorem for physics.
+
+## Verification
+
+- The current source compiles with `pdflatex` to a 12-page PDF.
+- The final log has no undefined references, underfull boxes, overfull boxes,
+  or LaTeX/package warnings.

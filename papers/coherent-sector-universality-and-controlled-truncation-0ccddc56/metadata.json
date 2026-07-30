@@ -48,15 +48,15 @@
       "sha256": "ed7c3a90b693c3ebc3d01285422275c3f3c5f452518de13b2e6446c865054ffa"
     },
     {
-      "bytes": 15705,
+      "bytes": 15299,
       "path": "series.sty",
-      "sha256": "deaaf90be0b98130189531a83e121ad3934803f4844f2b10571046aec3b3ed3f"
+      "sha256": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Coherent_Sector_Universality_and_Controlled_Truncation_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "66ca5ec80b1b2f85db23174f06d1a676a468fcb69d72f9029d8726464b5485b5",
+  "source_tree_sha256": "1a7d54923ae1b58aca34d77b15ba4c04fafb67424ecd3e28f32b66f2710c20b3",
   "title": "Coherent-Sector Universality and Controlled Truncation in Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

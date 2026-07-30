@@ -1,39 +1,37 @@
 ---
 abstract: |
-  We correct the signature analysis of Modal Triplet Theory (MTT). A tensor of the form $`\langle D_\mu\Psi,D_\nu\Psi\rangle`$ is a positive-semidefinite Gram tensor and cannot have Lorentzian signature. Physical signature must instead come from the principal symbol of a selected local physical evolution law. For a nondegenerate quadratic metric symbol we prove that hyperbolicity with respect to one evolution covector is possible exactly for Lorentzian inertia, with one sign occurring once. This conditionally excludes Euclidean and multi-time signatures from the standard one-parameter Cauchy problem, but it does not select the number of spatial dimensions. The $`3+1`$ Lorentzian base is therefore an assumption of the canonical ten-dimensional MTT/Fixed-Points realization unless a separate dimension-selection theorem is supplied. We prove local stability of Lorentzian inertia under coefficient perturbations, show that continuous signature change crosses degeneracy, and give a principal-symbol descent theorem for fiberwise coherent compression. Control contraction, internal spectral gaps, physical hyperbolicity, and dimension selection remain independent gates.
+  A tensor of the form $`\langle D_\mu\Psi,D_\nu\Psi\rangle`$ is a positive-semidefinite Gram tensor and cannot have Lorentzian signature. Physical signature must instead come from the principal symbol of a selected local physical evolution law. For a nondegenerate quadratic metric symbol we prove that hyperbolicity with respect to one evolution covector is possible exactly for Lorentzian inertia, with one sign occurring once. This conditionally excludes Euclidean and multi-time signatures from the standard one-parameter Cauchy problem, but it does not select the number of spatial dimensions. The $`3+1`$ Lorentzian base is therefore an assumption of the canonical ten-dimensional MTT/Fixed-Points realization unless a separate dimension-selection theorem is supplied. We prove local stability of Lorentzian inertia under coefficient perturbations, show that continuous signature change crosses degeneracy, and give a principal-symbol descent theorem for fiberwise coherent compression. Control contraction, internal spectral gaps, physical hyperbolicity, and dimension selection remain independent gates.
 author:
 - Peter Nero
 current_version: v2
-date: July 2026
-generated_from_main_tex_sha256: 639a99900509da0078e02099fb01f4520228e4c6fe4b3d097184a6ea9086b4b9
+date: July 2026 Version 2
+generated_from_main_tex_sha256: d46e5b2dfbdf9cfa255fe1ead3340db2783690469642cc2093ac24c8903d5660
 paper_id: lorentzian-base-compatibility-and-signature-stability-i-6ac3fbb9
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  Lorentzian Base Compatibility and Signature Stability  
+  Lorentzian Base Compatibility and Signature Stability
   in the MTT Fixed-Point Realization
-zenodo_doi: 10.5281/zenodo.18265350
-zenodo_record_id: 18265350
-zenodo_url: "https://zenodo.org/records/18265350"
+zenodo_doi: 10.5281/zenodo.21665981
+zenodo_record_id: 21665981
+zenodo_url: "https://zenodo.org/records/21665981"
 ---
 
-*Part VI of VI in the Fixed Points series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*
+# Version 2 Revision Note
 
-# Revision note for this edition
-
-Supersedes.  
+Supersedes
 *Signature Selection and Exclusion in Modal Triplet Theory*, first edition.
 
-Reason.  
+Reason
 A positive Hilbert-space Gram tensor was assigned Lorentzian signature, which is mathematically impossible.
 
-Resolution.  
+Resolution
 Version 2 moves causal signature to the principal symbol, proves the conditional one-time hyperbolicity criterion and inertia stability, and separates signature from dimension selection and internal rank counts.
 
-Retained result.  
+Retained result
 Signature stability and coherent principal-symbol descent survive under explicit hyperbolic hypotheses.
 
-Remaining boundary.  
+Remaining boundary
 The $`3+1`$ base and its Lorentzian law are inputs of the canonical physical completion until independently selected.
 
 # Correction and scope

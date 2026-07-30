@@ -1,65 +1,93 @@
 {
-  "abstract": "We show that the kinematical structure of loop quantum gravity (LQG) arises as a 4D shadow of coherent fixed-point dynamics in Modal Triplet Theory (MTT). In particular, the real SU(2) Ashtekar\u2013Barbero connection, spin-network kinematics, and discrete area/volume spectra emerge as effective encodings of compact holonomy and gap-controlled truncation under noninvertible projection. We further prove that the Barbero\u2013Immirzi parameter \\gamma is not a free quantization ambiguity within the coherent universality class: it is fixed by the same bottleneck data controlling coherent-sector symplectic normalization and admissibility. Black hole entropy matching is reinterpreted as a consistency condition on admissible coherent microstate counting, not parameter fitting. Finally, we formulate cross-sector closure and falsifiability: the same bottleneck vector \\Theta that fixes \\gamma also controls collapse thresholds and UV completion in independent shadow constructions. All results are slab-local and admissibility-conditioned.",
+  "abstract": "This paper develops an interpretive comparison between loop quantum gravity (LQG) and the coherent fixed-point sector of Modal Triplet Theory (MTT). The comparison is useful, but it is not a derivation of LQG from projection. Fixed-point stability, finite survivor sectors, compact reuse channels, and noninvertible projection suggest why graph-based states and discrete labels can be effective descriptions of coherent geometry. They do not by themselves construct the Ashtekar\u2013Barbero phase space, the holonomy\u2013flux algebra, the Ashtekar\u2013Lewandowski state, area and volume operators, quantum constraints, or spin-foam amplitudes. Those objects require the explicit canonical and representation data stated in the companion technical paper. In particular, the Barbero\u2013Immirzi parameter is selected by MTT only if the same four-dimensional source that fixes the parity-even gravitational action also emits a normalized parity-odd Holst coefficient. That coefficient is currently open. The result is a disciplined shadow dictionary: it identifies a plausible overlap regime, explains what fixed-point geometry contributes, and gives concrete conditions under which the analogy would become a mathematical embedding.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v2",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261699",
-    "created": "2026-01-15T19:44:57.168981+00:00",
+    "created": "2026-07-29T08:50:59.965680+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18261700",
+    "doi": "10.5281/zenodo.21665980",
     "files": [
       {
-        "checksum": "md5:a25d09d66224513d9eaa639f2e6934d6",
-        "content_url": "https://zenodo.org/api/records/18261700/files/Loop_Quantum_Gravity_as_a_Shadow_of_Coherent_Fixed_Point_Dynamics%20(2).pdf/content",
-        "key": "Loop_Quantum_Gravity_as_a_Shadow_of_Coherent_Fixed_Point_Dynamics (2).pdf",
-        "size": 257970
+        "checksum": "md5:e4d4f1e27f305de901786daf617ab3b3",
+        "content_url": "https://zenodo.org/api/records/21665980/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 267491
       }
     ],
-    "id": "18261700",
-    "match_kind": "title_or_file",
+    "id": "21665980",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18261700",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665980",
     "resource_type": "publication",
-    "title": "Loop Quantum Gravity as an Effective Limit of Modal Triplet Theory",
-    "updated": "2026-01-15T19:44:57.555548+00:00",
-    "version": "v1.0"
+    "title": "Loop Quantum Gravity as a Possible Shadow of Coherent Fixed-Point Geometry: An Interpretive Dictionary and Its Missing Bridges",
+    "updated": "2026-07-29T08:51:00.315935+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "2f4bd16736c2cd32422731d4f3efc6abd17585e1477216a7631cf052db36cc60",
+  "main_tex_sha256": "8bc6c9f52c7eb7f975585c17f6d9b6c2fab1faf786ac975d9ab090b468ab8670",
   "paper_id": "loop-quantum-gravity-as-a-shadow-of-coherent-fixed-poin-9133be75",
-  "paper_md_sha256": "5df4016b871c04f4c30040d775ac8243289f645a02efac30cc206f58556ae250",
+  "paper_md_sha256": "8a11915a951b3682bb016f3f41e7f5fe3696ac689a777a23477dd65200906f0e",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "730a00bb72e37fbaf1a421068497c54372286a561cb36a1b073f11d4b8875eb8",
+    "selected_revision": true,
+    "superseded_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Loop_Quantum_Gravity_as_a_Shadow_of_Coherent_Fixed_Point_Dynamics"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 23411,
+      "bytes": 16087,
       "path": "main.tex",
-      "sha256": "2f4bd16736c2cd32422731d4f3efc6abd17585e1477216a7631cf052db36cc60"
+      "sha256": "8bc6c9f52c7eb7f975585c17f6d9b6c2fab1faf786ac975d9ab090b468ab8670"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Loop_Quantum_Gravity_as_a_Shadow_of_Coherent_Fixed_Point_Dynamics"
   },
-  "source_tree_sha256": "dd2ef5723a80a5604a384b6d4ece9c9f779ab98180b6776b42bff792df9852b4",
-  "title": "Loop Quantum Gravity as a Shadow of Coherent Fixed-Point Dynamics Immirzi parameter, geometric discreteness, and spin-network kinematics from coherent-sector projection",
+  "source_tree_sha256": "dbacf2160e0bf69e9a0017f3ea663fdaeca9e262c24f2b7c65a2aa4558c6c7e2",
+  "title": "Loop Quantum Gravity as a Possible Shadow of Coherent Fixed-Point Geometry: An Interpretive Dictionary and Its Missing Bridges",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261699",
+      "created": "2026-07-29T08:50:59.965680+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665980",
+      "files": [
+        {
+          "checksum": "md5:e4d4f1e27f305de901786daf617ab3b3",
+          "content_url": "https://zenodo.org/api/records/21665980/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 267491
+        }
+      ],
+      "id": "21665980",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665980",
+      "resource_type": "publication",
+      "title": "Loop Quantum Gravity as a Possible Shadow of Coherent Fixed-Point Geometry: An Interpretive Dictionary and Its Missing Bridges",
+      "updated": "2026-07-29T08:51:00.315935+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18261699",
       "created": "2026-01-15T19:44:57.168981+00:00",

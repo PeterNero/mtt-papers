@@ -48,15 +48,15 @@
       "sha256": "caf50c330af256c69d1dae3fba2aa66565f635c9d804efdf4666f17ad13bdf7d"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Pilot__Wave_Dynamics"
   },
-  "source_tree_sha256": "c28ad3a169b8350730abdfa51c50e75efe6164cbec6a1da7cb49afdc779313b6",
+  "source_tree_sha256": "f073ddc2575617bbe973bd70f6bad486ad0951e59e78d3dc4911d601118d3412",
   "title": "Modal Triplet Theory: From MTT to Pilot\u2013Wave Dynamics",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

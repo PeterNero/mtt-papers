@@ -1,38 +1,82 @@
 ---
 abstract: |
-  We replace the former universal “MTT as a Superset” theorem with a typed atlas of relationships between Modal Triplet Theory (MTT) and established frameworks. A derivation, reconstruction, embedding, controlled reduction, conditional bridge, calibration, and interpretive correspondence are different claims and require different certificates. The corrected MTT Foundation and Fixed Points series establish an internal spectral/control spine, but do not by themselves derive General Relativity, the Born rule, interacting quantum field theory, the Standard Model, string theory, a unique heterotic vacuum, or a UV-finite unitary quantum gravity. The strongest current cross-framework results are conditional operator reductions, coherent locality descent, and product-action internal-mode reconstructions. We give a formal containment-certificate checklist and prove an underdetermination theorem: if inequivalent MTT realizations have the same target observables, target agreement cannot select a unique realization. Shared parameter names likewise do not prove shared physical knobs without one sourced map into all sectors. This atlas records the present status of GR, QM, QFT/AQFT, SM, EFT, KK, NCG, string/flux, quantum-gravity, LQG, asymptotic-safety, and causal-set links, and sets explicit gates for upgrading any of them. MTT remains a unification program with several rigorous internal modules, not a proved superset of all listed theories.
+  We replace the former universal “MTT as a Superset” theorem with a typed atlas of relationships between Modal Triplet Theory (MTT) and established frameworks. A derivation, reconstruction, embedding, controlled reduction, conditional bridge, calibration, and interpretive correspondence are different claims and require different certificates. The current MTT Foundation and Fixed Points series establish an internal spectral/control spine, but do not by themselves derive General Relativity, the Born rule, interacting quantum field theory, the Standard Model, string theory, a unique heterotic vacuum, or a UV-finite unitary quantum gravity. The strongest current cross-framework results are conditional operator reductions, coherent locality descent, and product-action internal-mode reconstructions. We give a formal containment-certificate checklist and prove an underdetermination theorem: if inequivalent MTT realizations have the same target observables, target agreement cannot select a unique realization. Shared parameter names likewise do not prove shared physical knobs without one sourced map into all sectors. This atlas records the present status of GR, QM, QFT/AQFT, SM, EFT, KK, NCG, string/flux, quantum-gravity, LQG, asymptotic-safety, and causal-set links, and sets explicit gates for upgrading any of them. MTT remains a unification program with several rigorous internal modules, not a proved superset of all listed theories.
 author:
 - Peter Nero
 current_version: v3
 date: July 2026
-generated_from_main_tex_sha256: 0cf640fdbecd48cae2e4f2c2bb2a6e3ebfebb475709f76d7872116826427bdc3
+generated_from_main_tex_sha256: 76560c5bf310416141880bb87382e474d470c8f6158b16346edc680b538db0d2
 paper_id: modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731
 release_state: zenodo_released
-released_version: v2.0
+released_version: v3
 title: |
-  Modal Triplet Theory: A Typed Relationship Atlas  
+  Modal Triplet Theory: A Typed Relationship Atlas
   Reconstructions, Embeddings, Reductions, and Open Bridges
-zenodo_doi: 10.5281/zenodo.18206006
-zenodo_record_id: 18206006
-zenodo_url: "https://zenodo.org/records/18206006"
+zenodo_doi: 10.5281/zenodo.21654874
+zenodo_record_id: 21654874
+zenodo_url: "https://zenodo.org/records/21654874"
 ---
 
 # Revision note for this edition
 
-Supersedes.  
+Supersedes.
 *Modal Triplet Theory: MTT as a Superset*, version 2.
 
-Reason.  
+Reason.
 A universal superset claim merged derivation, reconstruction, embedding, reduction, calibration, and analogy without the certificates needed for mathematical containment.
 
-Resolution.  
+Resolution.
 Version 3 replaces that theorem by a typed relationship atlas, a containment checklist, an underdetermination theorem, and the current q79/local-carrier status.
 
-Retained result.  
+Retained result.
 MTT remains a common architecture for comparing and constructing multiple framework-specific realizations.
 
-Remaining boundary.  
+Remaining boundary.
 No target theory is declared derived until its full same-source state, dynamics, observable, and equivalence certificate is given.
+
+# How to Read the Atlas
+
+The relationship words in this paper describe arrows, not degrees of approval. An embedding points from a target model into an MTT realization. A reduction points from an admissible part of an MTT realization to a target model. A reconstruction starts with target-compatible ingredients and builds an MTT model around them. A derivation must instead explain why those ingredients arise from source data that did not already contain the target.
+
+For every atlas row, the reader should therefore ask:
+
+1.  Which way does the map point?
+
+2.  Which target structures were supplied as inputs?
+
+3.  Do dynamics and observables commute under the map?
+
+4.  Is the realization selected, or is it one compatible example?
+
+5.  Were the compared observables used to construct or calibrate it?
+
+The answer determines the relationship type more reliably than the title of a paper or the familiarity of its equations.
+
+## A product example
+
+Let a target state space be $`\mathcal S_T`$ and define an enlarged realization
+``` math
+\mathcal S_M=\mathcal S_T\times\mathcal H,
+```
+where $`\mathcal H`$ is a hidden sector. The maps
+``` math
+E(y)=(y,0),
+ \qquad
+ R(y,h)=y
+```
+give an embedding and a reduction at the level of state spaces. If the MTT dynamics is
+``` math
+\mathcal D_M^t(y,h)
+ =
+ \bigl(\mathcal D_T^t y,\mathcal K^t h\bigr),
+```
+then $`R\mathcal D_M^t=\mathcal D_T^tR`$, so the target dynamics is an exact reduction. If the first component instead depends on $`h`$, this equality can fail even though the same state-space maps still exist.
+
+This example also shows why reconstruction is weaker than derivation. Placing the already known target evolution $`\mathcal D_T`$ in the first component constructs a valid target-compatible MTT realization, but it does not explain where $`\mathcal D_T`$ came from. A source theorem would have to select the enlarged dynamics without inserting the target law as an input.
+
+## How the paper is organized
+
+The vocabulary and containment certificate define the possible arrows. The underdetermination theorem explains why target agreement need not select one realization. The internal-spine section records what MTT can currently supply before comparison with another framework. The framework atlas then classifies each external relationship, while the same-source and closure sections state the gates for upgrading it.
 
 # Why the superset claim is reclassified
 
@@ -139,6 +183,8 @@ An exact derivation is stronger than all of these: the target structure and obse
 
 Relationships also do not compose automatically. An embedding of $`T_1`$ into an MTT model and a reduction of a different MTT model to $`T_2`$ provide no map from $`T_1`$ to $`T_2`$ unless the two realizations and their domains are connected.
 
+The certificate is consequently a test of a whole commuting structure, not a test of whether two theories contain similar-looking equations. A single shared operator can be an important construction ingredient, but containment depends on what happens to complete states, admissible evolution, constraints, and observables around that operator.
+
 # Underdetermination and canonical selection
 
 Let $`\mathfrak R`$ be a class of admissible MTT realizations and let
@@ -161,11 +207,13 @@ map each realization to the target observables compared with data.
 
 <div class="corollary">
 
-The existence of one target-compatible MTT reconstruction proves realizability, not that the target is forced or that the reconstruction is unique.
+**Corollary 10** (Reconstruction is not inevitability). *The existence of one target-compatible MTT reconstruction proves realizability, not that the target is forced or that the reconstruction is unique.*
 
 </div>
 
 Multiple compatible encodings are useful for comparison but increase underdetermination until a canonical source theorem relates or selects them.
+
+This is the familiar inverse-problem issue in typed form. Observable agreement constrains the realization to a fiber of $`\mathcal P`$. More accurate data may shrink that fiber, but only injectivity on the declared candidate class, or an independent source principle, can turn the fit into unique selection.
 
 # Authoritative internal MTT spine
 
@@ -286,7 +334,7 @@ for every sector $`a`$, with common units, normalization, branch, and uncertaint
 
 <div class="proposition">
 
-**Proposition 10** (Shared-symbol insufficiency). *If sector formulas use parameters with the same name but no equality theorem from a common source, cross-sector fitting does not test one shared knob.*
+**Proposition 11** (Shared-symbol insufficiency). *If sector formulas use parameters with the same name but no equality theorem from a common source, cross-sector fitting does not test one shared knob.*
 
 </div>
 
@@ -342,7 +390,7 @@ To upgrade an atlas row, a downstream paper must:
 
 <div id="thm:atlas" class="theorem">
 
-**Theorem 11** (Typed MTT relationship atlas). *The corrected MTT spine supports conditional fixed-point/control results and several typed cross-framework bridges, including local operator reduction, coherent locality descent, and product-action internal-mode reconstruction. Each broader relationship listed in this paper is valid only at its declared type and under its own certificate. No universal containment theorem follows from the collection of partial relationships. If multiple inequivalent MTT realizations reproduce the same target data, the physical realization remains underdetermined until a source-independent canonicality theorem is supplied.*
+**Theorem 12** (Typed MTT relationship atlas). *The corrected MTT spine supports conditional fixed-point/control results and several typed cross-framework bridges, including local operator reduction, coherent locality descent, and product-action internal-mode reconstruction. Each broader relationship listed in this paper is valid only at its declared type and under its own certificate. No universal containment theorem follows from the collection of partial relationships. If multiple inequivalent MTT realizations reproduce the same target data, the physical realization remains underdetermined until a source-independent canonicality theorem is supplied.*
 
 </div>
 
@@ -363,3 +411,7 @@ P. Nero, *The Projection–Admissibility Principle: Descent, Recovery, and Stru
 P. Nero, *Baseline Scales and Phenomenological Consistency in Modal Triplet Theory*, revised v2, 2026.
 
 </div>
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

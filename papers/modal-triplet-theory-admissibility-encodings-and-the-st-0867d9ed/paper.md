@@ -9,20 +9,74 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v12
-date: July 2026
-generated_from_main_tex_sha256: 698ec706e1d9ae9e1774e4901595d1dd9f60f407d9d3579de637f2d07f04784b
+current_version: v13
+date: July 2026 Version 13
+generated_from_main_tex_sha256: c2722daaaa16cb710bb14780c1dc367c0d7dbb20525ef3a55a49a08024d96403
 paper_id: modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed
 release_state: zenodo_released
-released_version: v11.0
+released_version: v13
 title: |
-  Modal Triplet Theory:  
-  Admissibility, Encodings, and the Structure of Physical Description  
+  Modal Triplet Theory:
+  Admissibility, Encodings, and the Structure of Physical Description
   A Typed and Tiered Corpus Roadmap
-zenodo_doi: 10.5281/zenodo.19535807
-zenodo_record_id: 19535807
-zenodo_url: "https://zenodo.org/records/19535807"
+zenodo_doi: 10.5281/zenodo.21655395
+zenodo_record_id: 21655395
+zenodo_url: "https://zenodo.org/records/21655395"
 ---
+
+# Revision note for version 13
+
+<div class="description">
+
+Version 12 of the typed and tiered corpus roadmap.
+
+Version 12 reconciled the corpus geometry and live proof tiers, but the paper still needed a clearer entry route for readers and a release-safe separation between its descriptive abstract, historical corrections, and the live machine-readable status ledger.
+
+Version 13 adds a running descent example and three paper-specific reading routes, strengthens the distinction between paper snapshots and current A/B authority rows, and links reproducible results through the managed evidence record. It changes no theorem owner and promotes no open result.
+
+The typed projection dictionary, conditional $`4+6`$ realization, shared-circle interpretation, CLN taxonomy, and framework comparison table remain as in version 12.
+
+The roadmap remains organizational. Physical source selection, action, continuum operator execution, quantum probability, fixed-coupling QFT, gravity, cosmology, and precision equivalence remain owned by their active research programs.
+
+</div>
+
+# How to Use This Roadmap
+
+The corpus can be entered through several subjects, but every route should ask the same three questions:
+
+1.  What is the upper object and what information does the reduction retain?
+
+2.  Which mathematical structure has actually been constructed at the realization level?
+
+3.  Which additional source, dynamical, and observational data are required before the construction becomes a physical claim?
+
+The sections below answer these questions in that order. Readers should use the proof tiers as labels on individual claims, not as permanent labels on whole papers: one paper may contain an exact structural theorem, a conditional physical reconstruction, and an open source problem.
+
+## A running reduction example
+
+Let the upper state be $`(x,h)\in\mathbb R^2`$, where $`x`$ is retained and $`h`$ is hidden by
+``` math
+\Pi(x,h)=x.
+```
+The map $`s(x)=(x,0)`$ is a representative section: it chooses one upper state for every reduced value. It is not an exact decoder, because it cannot recover an arbitrary hidden coordinate.
+
+Now take
+``` math
+F(x,h)=(x+h,h).
+```
+Two states with the same reduced value $`x`$ but different $`h`$ evolve to different reduced values $`x+h`$. Hence no autonomous map $`G(x)`$ can satisfy $`\Pi F=G\Pi`$. The reduced description still exists, and a representative can still be chosen, but its future is not determined by its present reduced state. This elementary example is the model for a recurring corpus distinction: projection, reconstruction, and autonomous evolution solve different problems.
+
+## Three reading routes
+
+<div class="description">
+
+Read the core dictionary and admissibility sections, then Programs A0–A2 and the Fixed Points sequence. This route studies descent, continuation, selection fronts, and fixed-point control without assuming a particular physical realization.
+
+Read the geometric convention, CLN taxonomy, Programs B0–C, the proto-spinor papers, and the q79/Fu–Yau branch. This route asks which bundles, operators, and comparison maps instantiate the structural roles.
+
+Begin with the proof-tier table and the action/source promotion contract, then follow the relevant “MTT to X” papers and reproducibility packets. This route keeps imported target structure, selected source data, calibrated quantities, and held-out predictions separate.
+
+</div>
 
 # Purpose, Authority, and Scope
 
@@ -147,6 +201,8 @@ Fiber preservation makes this definition independent of the chosen representativ
 </div>
 
 The corrected A0 program treats failure of descent, merger, failure of exact decoding, and ill-conditioning of representative continuation separately .
+
+The theorem should therefore be read as a test of memory in the reduced state. If hidden distinctions can influence the next reduced value, the reduced state has forgotten information needed for autonomous prediction. One may repair the description by enlarging the reduced state, restricting the domain, introducing a stochastic or history-dependent law with independently supplied measure data, or accepting that the chart is not dynamically closed. The factor-through criterion itself chooses none of these repairs.
 
 ## Probability and irreversibility
 
@@ -614,3 +670,7 @@ The coherent core of MTT is best understood as a typed research program about co
 The canonical physical realization uses a four-dimensional Lorentzian base and a six-dimensional internal fiber when that specialization is chosen. Circle-Lens-Nil organizes recurring structures but neither exhausts all obstructions nor selects gravity, gauge theory, or quantum mechanics by name. Framework reconstructions are valuable at their proved tier; they become full physical derivations only when the selected source, dynamics, state, observables, uncertainty, and held-out tests are supplied.
 
 This roadmap therefore offers a firmer unity than the old closure language: every paper can be located by its types, dependencies, proof tier, and exit certificate. That structure preserves genuine achievements while keeping the remaining frontier visible.
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

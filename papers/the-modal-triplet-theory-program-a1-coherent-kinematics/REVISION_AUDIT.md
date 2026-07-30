@@ -61,7 +61,14 @@ interpretations are not.
 - Removed derivations of exclusion, entropy production, and a temporal arrow
   from support coincidence or projection alone.
 
-## Resulting theorem chain
+## Resulting theorem chain and ownership
+
+The focused paper *Coherent Kinematics in Modal Triplet Theory* is the
+canonical owner of the gluing, regularity, conditional finite-propagation, and
+physical-bridge theorems. Program A1 states their hypotheses and conclusions
+as imported contracts and does not reproduce their formal theorem/proof
+blocks. Program A1 is therefore a standalone programmatic synthesis, not a
+second theorem source.
 
 1. Exact chart transitions exist only under the projection--descent
    factor-through criterion.
@@ -83,18 +90,18 @@ null cone, microcausal operator algebra, particle identity, exclusion
 principle, physical horizon, outcome, probability, record, entropy law, or
 temporal arrow.
 
+## Expository revision
+
+The current paper now opens with a paper-specific guide defining an encoding
+worldline in plain language, mapping the full argument, and giving a simple
+two-chart overlap case. The guide foregrounds the distinction between
+continuity of representation and physical motion, and lists the separate
+Lorentzian, continuation, measure, instrument, and memory data needed for the
+stronger interpretations. The focused Coherent Kinematics paper remains the
+canonical theorem source.
+
 ## Verification
 
-Run from the paper directory:
-
-```powershell
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-```
-
-Run from the repository root after migration metadata is regenerated:
-
-```powershell
-python scripts/migrate.py --source-root C:\Users\nero_\Downloads\TEXPAPERS
-python scripts/verify.py
-```
+- The current source compiles with `pdflatex` to a 9-page PDF.
+- The final log has no undefined references, underfull boxes, overfull boxes,
+  or LaTeX/package warnings.

@@ -65,18 +65,18 @@ exhausts higher descent, select a lens space or nilmanifold, derive a
 four-dimensional Lorentzian base, identify compact phase with time, or prove
 ten-dimensional necessity.
 
+## Expository revision
+
+The current paper now begins with a paper-specific guide separating CLN
+diagnostics, optional geometric models, and the restricted curvature
+realization. It explains the three profile questions in plain language, gives
+three elementary independence examples, maps the argument, and foregrounds
+the exact assumptions behind the `2+2+2=6` and conditional `4+6=10` counts.
+This makes the no-literal-nesting, shared-circle, and no-compact-time
+boundaries part of the explanatory spine rather than endnotes.
+
 ## Verification
 
-Run from the paper directory:
-
-```powershell
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-```
-
-Run from the repository root:
-
-```powershell
-python scripts/migrate.py --source-root C:\Users\nero_\Downloads\TEXPAPERS
-python scripts/verify.py
-```
+- The current source compiles with `pdflatex` to a 10-page PDF.
+- The final log has no undefined references, underfull boxes, overfull boxes,
+  or LaTeX/package warnings.

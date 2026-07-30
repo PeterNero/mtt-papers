@@ -1,11 +1,11 @@
 \documentclass[11pt]{article}
 \usepackage{series}
+\usepackage{array,tabularx}
 
 \title{Closure-Strain Geometry:\\
-Local Normal Forms and Conditional Matter Encodings\\
-\large Corrected seventh edition}
+Local Normal Forms and Conditional Matter Encodings}
 \author{Peter Nero}
-\date{July 2026}
+\date{Corrected seventh edition\\July 2026}
 
 \begin{document}
 \maketitle
@@ -50,6 +50,57 @@ branch and value selection remain stronger upgrades.
 \end{description}
 
 \tableofcontents
+
+\section{How to Read Closure Strain}
+
+Closure strain is best understood first as a local stiffness problem.  The
+comparison field $Q$ measures how two rank-three frames differ.  Polar
+decomposition removes the orientation part, and $S=\log U$ records the
+remaining deformation.  A closure functional $\mathcal J$ then assigns a cost
+to perturbing that aligned state.
+
+The paper has three distinct achievements:
+\begin{enumerate}
+\item the local strain space has an exact flag-selected $1+2+3$ orthogonal
+normal form;
+\item the selected q79 target has an exact finite rank-$1+2+3$ carrier,
+shared line, and finite Hessian square; and
+\item the finite Standard Model construction realizes matter and scalar
+profiles at its declared profile tier.
+\end{enumerate}
+These results are mutually compatible, but they become one derivation only
+after a same-source bundle, connection, metric, and operator intertwiner is
+constructed.
+
+\subsection{Stiffness is not yet mass}
+
+For a finite model, write the quadratic action schematically as
+\[
+ \frac12\dot s^{T}K\dot s-\frac12s^{T}Hs.
+\]
+The closure Hessian $H$ measures restoring cost.  The physical squared
+frequencies or masses solve the generalized eigenvalue problem
+\[
+ Hv=m^2Kv.
+\]
+Rescaling a field changes the matrix entries of both $H$ and $K$ while leaving
+the physical generalized eigenvalues unchanged.  Consequently a positive
+entry of $H$, or even a positive eigenvalue computed with an arbitrary
+coordinate norm, is not yet a mass prediction.
+
+The same distinction applies to particle names.  A one-dimensional scalar
+strain block is a geometric representation.  To call it the Higgs requires a
+complex weak doublet representation, a selected kinetic term and potential,
+symmetry breaking, and the renormalized pole map.  The local dimension count
+only makes such an intertwiner possible.
+
+\subsection{Argument map}
+
+Sections~2--6 establish the status, comparison, projector, Iwasawa, and
+Hessian geometry.  Sections~7--10 state the independent Higgs, matter, family,
+Yukawa, mixing, and CP gates.  Section~11 identifies what is already closed on the q79
+target side and isolates the continuum source map still needed to join the
+local geometry to that target.
 
 \section{Purpose and status}
 
@@ -100,7 +151,7 @@ The nine local comparison components split as
 This is a local field-component decomposition, not a product decomposition of
 a manifold.
 
-\section{Exact $1+2+3$ normal form}
+\section{Exact \texorpdfstring{$1+2+3$}{1+2+3} normal form}
 
 Choose an orthonormal flag.  For $S\in\operatorname{Sym}(3,\mathbb R)$ write
 \[
@@ -207,6 +258,12 @@ If $H$ commutes with all three projectors, it has block form
 \]
 This block invariance is an additional theorem or symmetry assumption.  A
 generic Hessian mixes the three selected sectors.
+
+Even in the block-diagonal case, the spectrum answers a stability question
+before it answers a particle question.  The eigenvectors must transform in
+the required gauge representations, survive the constraints, and be
+canonically normalized by the kinetic operator.  Only then can an eigenvalue
+be transported to a pole observable.
 
 \section{Conditional Higgs interpretation}
 
@@ -351,6 +408,12 @@ The flat root-stack line cannot equal the nonzero-Chern physical HYM
 connection. Likewise, it supplies no map from the local world-in-world strain
 bundle.
 
+What has been gained is a fixed codomain for the missing map.  The target
+projectors, line action, and normalized finite Hessian no longer have to be
+guessed while constructing the intertwiner.  The remaining task is to show
+that the physical continuum geometry emits those already fixed objects, not
+merely another rank-six model with a similar spectrum.
+
 The local strain bundle has the same rank profile.  The needed map is
 \[
  \mathfrak I:
@@ -389,8 +452,14 @@ doing so; that square is the closed codomain of the required intertwiner.
 
 \section{Status ledger}
 
-\begin{center}
-\begin{tabular}{p{0.35\textwidth}p{0.20\textwidth}p{0.35\textwidth}}
+\begin{table}[ht]
+\centering
+\small
+\renewcommand{\arraystretch}{1.16}
+\begin{tabularx}{\textwidth}{@{}
+ >{\raggedright\arraybackslash}p{0.31\textwidth}
+ >{\raggedright\arraybackslash}p{0.20\textwidth}
+ >{\raggedright\arraybackslash}X@{}}
 \hline
 Object & Status & Meaning\\
 \hline
@@ -406,8 +475,8 @@ Three families from three lanes & not a theorem & requires index/monodromy sourc
 Local strain--q79 identification & open & requires same-source intertwiner\\
 Strict no-knob value selection & stronger upgrade & not claimed here\\
 \hline
-\end{tabular}
-\end{center}
+\end{tabularx}
+\end{table}
 
 \section{Conclusion}
 
@@ -420,6 +489,59 @@ organization becomes credible only when the finite representation and source
 packets are cited at their actual tier.  The paper therefore replaces broad
 inevitability claims with one concrete bridge theorem capable of promoting the
 local geometry into the already executed numerical branch.
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The local closure-strain decomposition is proved in the paper. The selected q=79, finite-matrix, anomaly, HYM, and internal TT rows provide concrete realizations or compatibility checks; they do not turn the conditional matter interpretation into a source theorem. The remaining Standard Model packets are corpus-state context.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A22/e6_qpsi_qcd_anomaly} (\emph{derived exact}).\par E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+\item \path{A13/gr_tt_support} (\emph{derived exact}).\par Exact-branch internal TT support certificate; physical normalization remains open.
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A11/q79_exact_audit} (\emph{derived exact}).\par Executable q=79 exact-branch audit.
+\item \path{A11/q79_exact_theorem} (\emph{derived exact}).\par CRT q=79 theorem on the selected exact branch.
+\item \path{A01/qutrit_weyl_27_matrix} (\emph{derived exact}).\par Sparse 27x27 qutrit-Weyl left-action realization.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/charged_yukawa_higgs_profile} (\emph{profile replay}).\par Versioned Yu, Yd, Ye and lambda\_H profile packet.
+\item \path{A14/ckm_prediction_profile} (\emph{numeric certified}).\par Three selected CKM profile rows and uncertainty comparison.
+\item \path{A01/current_global_lock} (\emph{profile replay}).\par Current non-looping global status and source-certificate map.
+\item \path{A01/direct_k_higgs_row} (\emph{derived exact}).\par Promoted direct K\_threshold.Omega\_H.lambda row.
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\item \path{A40/neutral_two_primitive_profile} (\emph{profile replay}).\par Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+\item \path{A02/precision_15_source_transport} (\emph{profile replay}).\par Fifteen measured source coordinates, Jacobian and covariance transport.
+\item \path{A02/precision_8x8_workspace} (\emph{profile replay}).\par Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+\item \path{A01/strict_pew_row} (\emph{derived exact}).\par Promoted P\_EW source row at the declared one-shared-primitive standard.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \begin{thebibliography}{9}
 \bibitem{Helgason}
@@ -437,5 +559,7 @@ theorem and verification packet, 2026.
 P.~Nero, \emph{q79 Universal Shared Differential Line and Finite-Operator
 Intertwiner}, executable theorem packet, 2026.
 \end{thebibliography}
+
+
 
 \end{document}

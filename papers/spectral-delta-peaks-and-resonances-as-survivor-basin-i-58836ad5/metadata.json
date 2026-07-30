@@ -8,9 +8,9 @@
   "current_version": "unversioned",
   "date": "April 2026",
   "latest_zenodo_release": null,
-  "main_tex_sha256": "da4a2852063dd59a2384cf5ebafb503e1f0908dc53039e156bb2a06fa64eef04",
+  "main_tex_sha256": "ae8366b4d045adf64e783d49e975d0110857104a90ee8a2d4e74b60935d79ff2",
   "paper_id": "spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5",
-  "paper_md_sha256": "5ea7a0b411dcc7332b32ea1d6d96ad53c110096ea7f4c06a3eb806c91416d1f8",
+  "paper_md_sha256": "33b2dc9b4a16871accfce49e71d34a241b5f040eb49af3e3c3e156ca3fd8becf",
   "release_state": "not_matched_to_zenodo",
   "result_refs": [],
   "revision": {
@@ -19,14 +19,14 @@
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 18239,
+      "bytes": 18385,
       "path": "main.tex",
-      "sha256": "da4a2852063dd59a2384cf5ebafb503e1f0908dc53039e156bb2a06fa64eef04"
+      "sha256": "ae8366b4d045adf64e783d49e975d0110857104a90ee8a2d4e74b60935d79ff2"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     {
       "bytes": 18239,
@@ -37,7 +37,7 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Spectral_Delta_Peaks_and_Resonances_as_Survivor_Basin_Idealizations"
   },
-  "source_tree_sha256": "00872a730fcb31bd015c00f00979b51e9b3afc135a3180f27c3d10ba25de9593",
+  "source_tree_sha256": "6124b2642b7a27fa52a1ba991909590614e3399efd8d9c30a98ee395cff70d54",
   "title": "Spectral Delta Peaks and Resonances as Survivor-Basin Idealizations Finite Lifetime, Lorentzian Kernels, and the Delta Limit in Modal Triplet Theory",
   "version_relation": "unknown",
   "zenodo_releases": []

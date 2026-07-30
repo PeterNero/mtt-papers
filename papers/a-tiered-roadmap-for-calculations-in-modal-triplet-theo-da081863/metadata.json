@@ -1,68 +1,93 @@
 {
-  "abstract": "We replace the former execution-complete roadmap with an audited hierarchy of closure standards. MTT currently closes embedded renormalized-Standard-Model equivalence at the adopted one-shared-physical-primitive/measured-profile standard: the final audit passes 12/12 obligations using selected multi-loop transport, the 27-by-27 operator architecture, charged flavor and CKM rows, Higgs/threshold support, and imported standard SM quantization. This is not a zero-knob derivation or unique observed-branch theorem. The obsolete few-TeV crossing, Tier-3 backfit, Calabi\u2013Yau numerical lift, fitted flavor matrices, and cosmological tensor bound are retired. We list the exact surviving structural theorems, conditional relations, profile closures, and nine strict upgrades, of which U2 and U4 are closed. The roadmap now measures progress by named source objects and reproducible acceptance tests rather than repeated status declarations.",
+  "abstract": "We organize MTT calculations by explicit closure standard and source provenance. Embedded renormalized-Standard-Model equivalence is closed at the adopted one-shared-physical-primitive/measured-profile standard: the final audit passes 12/12 obligations using selected multi-loop transport, the 27-by-27 operator architecture, charged-flavor and CKM rows, Higgs/threshold support, and imported standard SM quantization. Independent structural results now include the native faithful Standard Model gauge group, an anomaly-free 48-state chiral carrier, a completed 96-dimensional finite triple at profile tier, an exact one-Higgs projector, and a zero-parameter 10/10 finite gauge/ghost spectrum source. These achievements do not yet derive the measured gauge and Yukawa values: the strict program remains 2/9, with U2 and U4 closed. The roadmap therefore records named source objects, scope guards, dependencies, and reproducible acceptance tests for every stronger claim.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v3",
-  "date": "July 2026",
+  "date": "July 2026 Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262162",
-    "created": "2026-01-15T20:51:32.267513+00:00",
+    "created": "2026-07-29T08:49:50.156353+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18262163",
+    "doi": "10.5281/zenodo.21665943",
     "files": [
       {
-        "checksum": "md5:2f55304b3fff7a937dcb7ba647f8ab71",
-        "content_url": "https://zenodo.org/api/records/18262163/files/A_Tiered_Roadmap_for_Calculations_in_Modal_Triplet_Theory__MTT__v2%20(3).pdf/content",
-        "key": "A_Tiered_Roadmap_for_Calculations_in_Modal_Triplet_Theory__MTT__v2 (3).pdf",
-        "size": 292316
+        "checksum": "md5:78d529db17994ecf84573627d1992518",
+        "content_url": "https://zenodo.org/api/records/21665943/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 290771
       }
     ],
-    "id": "18262163",
-    "match_kind": "title_or_file",
+    "id": "21665943",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18262163",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665943",
     "resource_type": "publication",
-    "title": "A Tiered Roadmap for Calculations in Modal Triplet Theory",
-    "updated": "2026-01-15T20:51:32.737002+00:00",
-    "version": "v2.0"
+    "title": "A Tiered Roadmap for Calculations in Modal Triplet Theory (MTT): Audited Closure and Strict Upgrades",
+    "updated": "2026-07-29T08:49:50.608059+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "80f01965582a83a0e8ad6e5ad6e3f4791275655e1f28d03eaa6cea96c91cee1e",
+  "main_tex_sha256": "c70155d9b757aeb5410cf1d2de72a3263fe735f9de9af51da86662d912acc4e6",
   "paper_id": "a-tiered-roadmap-for-calculations-in-modal-triplet-theo-da081863",
-  "paper_md_sha256": "328f09c1bee718ed7b758787bbbc421289921116263acd5cd3c850a283057338",
+  "paper_md_sha256": "feef0b472f21bb74bef7696dec1629cd56396b59e0330a2b1b52ad1625bf451f",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
-    "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
+    "revision_evidence_sha256": "cc423a413d61cf24ae490ee6faab390dfc6f4d6aea2dfd785ab9ebb3d72fa9ac",
     "selected_revision": true,
     "superseded_source_path": "18 Theta-Closure & Execution Program/_work/A_Tiered_Roadmap_for_Calculations_in_Modal_Triplet_Theory__MTT__v2"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 13426,
+      "bytes": 20471,
       "path": "main.tex",
-      "sha256": "80f01965582a83a0e8ad6e5ad6e3f4791275655e1f28d03eaa6cea96c91cee1e"
+      "sha256": "c70155d9b757aeb5410cf1d2de72a3263fe735f9de9af51da86662d912acc4e6"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/A_Tiered_Roadmap_for_Calculations_in_Modal_Triplet_Theory__MTT__v3"
   },
-  "source_tree_sha256": "a393f26c7be65fc75ce317482f9898530ee6ddd217b752f0c1a34291d1c9860d",
+  "source_tree_sha256": "1ae62c248a284485cdb91f5650ffebbfb652950a5b17c67e5157a2286c3d9db7",
   "title": "A Tiered Roadmap for Calculations in Modal Triplet Theory (MTT): Audited Closure and Strict Upgrades",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262162",
+      "created": "2026-07-29T08:49:50.156353+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665943",
+      "files": [
+        {
+          "checksum": "md5:78d529db17994ecf84573627d1992518",
+          "content_url": "https://zenodo.org/api/records/21665943/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 290771
+        }
+      ],
+      "id": "21665943",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665943",
+      "resource_type": "publication",
+      "title": "A Tiered Roadmap for Calculations in Modal Triplet Theory (MTT): Audited Closure and Strict Upgrades",
+      "updated": "2026-07-29T08:49:50.608059+00:00",
+      "version": "v3"
+    },
     {
       "concept_doi": "10.5281/zenodo.18262162",
       "created": "2026-01-15T20:51:32.267513+00:00",

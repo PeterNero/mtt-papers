@@ -46,15 +46,15 @@
       "sha256": "2d7ddf98a79d572fadeafa053983fb87ea4dbffe81df2e0804db6c40224cca45"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Projection_Limited_Coherence__A_Structural_Theory_of_Effective_Description_from_Fundamental_Physics_to_Consciousness_and_Civilization (1)"
   },
-  "source_tree_sha256": "0ef554d9baffd6f6a2b24563d32b03bcd9dbd2aa320a1758241679d895f5e7d8",
+  "source_tree_sha256": "1628a362e39f52016adb57d6063a20692a1cfb26f1c4bba7f81de7c25d46cb9c",
   "title": "Projection-Limited Coherence: A Structural Theory of Effective Description from Fundamental Physics to Consciousness and Civilization",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

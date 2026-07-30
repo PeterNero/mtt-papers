@@ -1,330 +1,328 @@
 ---
 abstract: |
-  We complete the constructive program for Modal Triplet Theory (MTT) quantum gravity by establishing the infrared limit and scattering theory for the physical graviton sector under SPT damping. Building on the Borel summability of the SPT-filtered transverse–traceless (TT) sector and its BRST lifting to a positive physical Hilbert space, we give a rigorous Haag–Ruelle construction of asymptotic fields and scattering states on asymptotically flat slabs.
-
-  Under explicit hypotheses—SPT Gaussian ultraviolet control, existence of a TT mass gap, BRST cohomology positivity, and asymptotic flatness sufficient for free TT dynamics—we prove exponential time decay of commutators, uniform Cook bounds, and regulator-independent Møller operators. As a result, a unitary $`S`$-matrix exists for TT-sector observables and is well defined on BRST cohomology.
-
-  The construction is fully compatible with causal locality and does not rely on global hyperbolicity beyond the slab. We do not claim scattering theory for arbitrary gauge-dependent metric components or for generic curved backgrounds. Within its stated scope, the analysis provides a rigorous infrared completion of the constructive MTT quantum gravity program.
+  This paper separates a massive or infrared-regulated scattering benchmark from the physical massless-graviton problem in Modal Triplet Theory quantum gravity. A positive transverse-traceless mass gap does not describe the physical massless graviton, and finite-volume Gaussian and BRST results do not by themselves construct the local Lorentzian theory required by Haag–Ruelle scattering. The paper proves the operator statement that for isometric incoming and outgoing wave operators, the scattering operator is only a contraction in general and is unitary exactly when their ranges coincide. It also proves that a normalized SPT factor leaves the leading massless soft pole unchanged. Standard massive Haag–Ruelle theory is retained as a conditional benchmark after its full axioms are supplied. The physical gravity route instead requires a selected Lorentzian BRST theory, asymptotic null geometry, soft-charge control, dressed states or inclusive observables, infrared-regulator removal, and an appropriate completeness theorem. Current MTT data do not yet provide that packet. The paper therefore supplies a precise infrared dependency theorem and executable exit contract, not a unitary MTT gravity S-matrix.
 author:
 - Peter Nero
-current_version: v1.0
-date: January, 2025
-generated_from_main_tex_sha256: 3324f970d812886cbad6b4c57c22990aa052665e68cff681b7bdb283daeb8c42
+current_version: v2
+date: July 2026 Version 2
+generated_from_main_tex_sha256: 9f6b8bccdc0a55542088280f6900b4d1419f65d0403d7a8742b08d0f865876b8
 paper_id: constructive-mtt-quantum-gravity-iii-infrared-limit-asy-6f8b88d9
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  Constructive MTT Quantum Gravity III:  
-  Infrared Limit, Asymptotic States, and Scattering under SPT Damping
-zenodo_doi: 10.5281/zenodo.18209821
-zenodo_record_id: 18209821
-zenodo_url: "https://zenodo.org/records/18209821"
+  Constructive MTT Quantum Gravity III:
+  A Massive Scattering Benchmark and the Massless-Graviton Infrared Contract
+zenodo_doi: 10.5281/zenodo.21665958
+zenodo_record_id: 21665958
+zenodo_url: "https://zenodo.org/records/21665958"
 ---
 
-# Introduction
+# Version 2 Revision Note
 
-The first two papers in this series established a constructive ultraviolet completion of Modal Triplet Theory (MTT) quantum gravity. In Part I, the SPT-filtered transverse–traceless (TT) sector was shown to admit a Borel-summable loop expansion with uniform Gaussian ultraviolet bounds. In Part II, this positivity was lifted to BRST cohomology, yielding a well-defined physical Hilbert space and gauge-invariant observables.
+Supersedes:
+Constructive MTT Quantum Gravity III, first release.
 
-The purpose of the present paper is to address the infrared problem: whether the resulting theory admits asymptotic states and a unitary scattering operator in regimes where scattering is physically meaningful. This question is nontrivial even in ordinary quantum field theory, and is particularly delicate in gravity due to gauge symmetry, long-range interactions, and background dependence.
+Reason:
+A positive TT gap, isometric wave operators, and SPT damping were promoted beyond what they imply for massless gravitational scattering.
 
-We restrict attention to asymptotically flat time slabs and to the TT sector of the physical Hilbert space. Within this scope, we make all assumptions explicit: SPT damping provides uniform ultraviolet control; a strictly positive TT mass gap ensures spectral separation from the vacuum; BRST cohomology eliminates unphysical polarizations; and asymptotic flatness guarantees the existence of free TT dynamics at temporal infinity. These hypotheses are precisely those required to apply Haag–Ruelle and Cook scattering theory.
+Resolution:
+Massive Haag–Ruelle theory is retained only as a conditional benchmark; the exact wave-operator range criterion and SPT infrared-neutrality result replace the former closure claim.
 
-Under these conditions, we prove exponential decay of commutators for spacelike separated TT observables, establish regulator-independent Møller operators, and construct a unitary $`S`$-matrix acting on BRST cohomology. No retrocausal effects or violations of locality are introduced, and the construction remains compatible with algebraic locality on the spacetime base.
+Retained result:
+Isometric wave operators give a contraction that is unitary exactly when their ranges coincide.
 
-We emphasize the scope of the result. We do not claim scattering theory for arbitrary gauge-dependent components of the metric, nor for generic curved backgrounds without asymptotic flatness. The aim is instead to show that, where scattering theory is expected to exist, the constructive MTT framework provides it rigorously and without additional assumptions.
+Remaining boundary:
+Lorentzian BRST dynamics, null asymptotics, soft charges, dressed or inclusive states, regulator removal, and completeness remain open.
 
-# Geometric setting and IR regulators
+# Correction, purpose, and result map
 
-## Asymptotically flat slabs
-
-Let $`(M,g)`$ be a Lorentzian spacetime admitting a foliation by time slabs $`[T_-,T_+]\times\Sigma`$ such that $`g`$ approaches the Minkowski metric in the ends $`T_\pm\to\pm\infty`$ with standard falloff conditions (sufficient for the existence of free asymptotic fields). We work initially on finite slabs and then take limits.
-
-<div class="definition">
-
-**Definition 1** (Asymptotically flat slab (sufficient for Haag–Ruelle)). We say a time slab $`(M,g)`$ is *asymptotically flat in the sense used here* if $`M \cong \mathbb{R}\times\Sigma`$ with $`\Sigma\cong\mathbb{R}^3`$ and there exist global coordinates $`(t,x)`$ outside a compact set such that, for some $`\varepsilon>0`$,
+The first edition relied on the chain
 ``` math
-g_{\mu\nu}(t,x) = \eta_{\mu\nu} + O(\langle x\rangle^{-1-\varepsilon}),\qquad
-\partial_\alpha g_{\mu\nu}(t,x) = O(\langle x\rangle^{-2-\varepsilon}),
+\begin{aligned}
+ \text{SPT damping}
+ &\Longrightarrow \text{gapped TT scattering}\\
+ &\Longrightarrow \text{isometric wave operators}\\
+ &\Longrightarrow \text{unitary gravitational }S\text{-matrix}.
+\end{aligned}
 ```
-uniformly for $`t`$ in bounded intervals, where $`\eta`$ is the Minkowski metric and $`\langle x\rangle=(1+|x|^2)^{1/2}`$. We further assume the lapse/shift are controlled so that the induced Hamiltonian evolution on the TT one-particle space is asymptotically free, in the sense that the interacting dynamics admits Møller operators relative to the free TT dynamics.
+Every arrow was too strong. SPT is an ultraviolet spectral filter and does not remove the massless soft pole. A positive TT gap changes the infrared theory. The earlier papers did not construct the complete Lorentzian local net on which scattering theory acts. Finally, isometric wave operators need not have the same range, so their overlap need not be unitary.
 
-</div>
-
-<div class="remark">
-
-*Remark 2*. The falloff above is chosen only to guarantee: (i) existence of free asymptotic TT fields, (ii) suitable propagation/cluster estimates, and (iii) applicability of Haag–Ruelle/Cook arguments. Any standard asymptotic flatness condition implying these inputs is acceptable.
-
-</div>
-
-## IR regulators
-
-We employ two standard regulators:
-
-1.  **Volume cutoff:** restrict to $`\Sigma_R:=\{x\in\Sigma:\ |x|\le R\}`$ with boundary conditions; later take $`R\to\infty`$.
-
-2.  **Adiabatic switching:** replace the interaction $`V`$ by $`\chi(t)\,V`$ with $`\chi\in C_c^\infty(\mathbb{R})`$, $`\chi\equiv 1`$ on a large central interval; later send $`\chi\to 1`$.
-
-SPT damping controls UV behavior; IR control is achieved by the mass gap on the TT sector and the asymptotic flatness assumptions.
-
-# SPT-damped dynamics and decay estimates
-
-## SPT-damped propagators and time decay
-
-From Appendix S (SPT factorization) and QG I, the filtered TT propagator satisfies
+This paper preserves the useful question but separates two branches:
 ``` math
-\|\widehat C(k)\|\;\le\; C_0\,\frac{e^{-\tau_0|k|^2}}{|k|^2+\lambda_\ast}.
+\boxed{\text{massive benchmark}}
+\qquad\hbox{and}\qquad
+\boxed{\text{physical massless-graviton contract}}.
 ```
-Fourier inversion yields rapid spatial decay and, combined with the mass gap $`\lambda_\ast`$, exponential time decay for commutators of smeared fields at large time separation.
+Section 3 identifies the errors in the old promotion. Section 4 states the standard massive benchmark without claiming that MTT has supplied its hypotheses. Section 5 proves the exact range criterion for scattering unitarity. Section 6 replaces the massive shortcut by the correct soft-gravity research contract. The final sections locate that contract in the present q79 program and record the remaining objects.
 
-<div id="ass:TTgap" class="assumption">
+## The central picture in plain language
 
-**Assumption 3** (TT mass gap and vacuum). Let $`\mathcal{H}_{\mathrm{phys}}`$ be the physical Hilbert space obtained in QG II. Assume there exists a translation-invariant vacuum vector $`\Omega\in\mathcal{H}_{\mathrm{phys}}`$ for the asymptotic free TT dynamics and that the physical energy operator $`H_{\mathrm{TT}}`$ restricted to the TT one-particle subspace has a strictly positive mass gap:
-``` math
-\sigma(H_{\mathrm{TT}})\cap(0,\mu)=\emptyset
-\quad\text{for some }\mu>0,
-```
-equivalently, the spectrum above the vacuum begins at energy $`\ge \mu`$.
+Scattering compares what a system looks like in the far past with what it looks like in the far future. The maps $`\Omega_{-}`$ and $`\Omega_{+}`$ embed those two asymptotic descriptions into the interacting physical state space. Preserving norms says that neither embedding loses probability. It does not say that the two embeddings cover the same interacting states. Unitarity of the scattering operator requires precisely that additional range statement.
 
-</div>
+For a massive local field, separated wave packets eventually move apart and the Haag–Ruelle construction can exploit an isolated mass shell. Gravity has a different infrared geometry. Its carrier is massless, its interaction is long-ranged, and arbitrarily low-energy gravitons correlate the hard particles with a soft cloud. The physical question is therefore not whether an ultraviolet Gaussian factor makes a massive proof converge. It is whether MTT selects the correct dressed or inclusive asymptotic object and proves its infrared limits.
 
-<div id="lem:timedecay" class="lemma">
+# What the current MTT results actually supply
 
-**Lemma 4** (Time decay of commutators (TT sector)). *Let $`A,B`$ be local TT observables (or BRST-invariant representatives whose TT parts are localized) with spacelike separated supports. Under SPT damping (QG I), OS/BRST positivity (QG II), and Assumption <a href="#ass:TTgap" data-reference-type="ref" data-reference="ass:TTgap">3</a>, there exist constants $`c,\nu>0`$ such that
-``` math
-\|[A(t),B]\|\;\le\; c\,e^{-\nu |t|},
-```
-uniformly in the IR regulators (volume cutoff $`R`$ and switching $`\chi`$) on the slab.*
+The current MTT quantum-gravity ledger contains several relevant but logically earlier results:
+
+1.  a finite q79 internal TT operator and a positive free two-helicity block at their declared finite-carrier tier;
+
+2.  a conditional reduction to the two-derivative Einstein/TEGR tensor shape on an explicitly selected branch;
+
+3.  fixed-order quantum-GR effective-field-theory parity after the renormalized action, Wilson coefficients, state, scale, gauge fixing, and scheme are declared; and
+
+4.  corrected finite-volume SPT Gaussian and conditional BRST/BV interface theorems.
+
+These are useful compatibility data. They do not yet emit a normalized Lorentzian graviton field, a nonperturbative physical state space, a local observable net, or asymptotic wave operators. In particular, the eigenvalues of the finite internal TT Hessian are not automatically the invariant masses of a Poincare representation. An explicit bridge from the internal carrier to the four-dimensional Lorentzian spectrum is required before the word *mass gap* has its scattering-theory meaning.
+
+The corrected predecessor papers also change what Part III may inherit. Constructive QG I proves a bounded-volume Gaussian measure and a finite-mode quartic Borel theorem, not an interacting gravity continuum. Constructive QG II proves conditional BRST/BV interfaces, not a completed physical Hilbert space. This paper therefore cannot begin by assuming those missing endpoints have already been constructed.
+
+# Why the old scattering proof fails
+
+## A finite slab is not an asymptotic region
+
+<div class="proposition">
+
+**Proposition 1** (Finite-slab obstruction). *Let a dynamics be defined only for $`t\in[T_-,T_+]`$ with both endpoints finite. Then limits whose definition requires $`t\to\pm\infty`$ are not defined by that finite-slab dynamics. A scattering construction needs either a global dynamics or a controlled exhaustion in which the slab endpoints tend to infinity.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* By QG I, the filtered TT two-point function has Fourier multiplier bound
-``` math
-\|\widehat C(k)\|\;\lesssim\;\frac{e^{-\tau_0|k|^2}}{|k|^2+\lambda_\ast}.
-```
-The Gaussian factor yields rapid spatial decay of the Pauli–Jordan kernel for the TT sector. Assumption <a href="#ass:TTgap" data-reference-type="ref" data-reference="ass:TTgap">3</a> implies exponential time decay of the commutator function for spacelike separated smearings via the standard spectral representation for massive (gapped) relativistic fields. Combining the spatial decay from SPT with the time decay from the gap, one obtains the stated estimate for smeared local observables.
+*Proof.* The nets $`t\mapsto U(t)`$ and the comparison maps used in a wave-operator limit must be evaluated for arbitrarily large positive or negative $`t`$. A function defined only on a bounded interval has no such directed tail. Introducing a sequence of larger slabs creates a second limit, whose existence and independence must be proved rather than inferred from any one slab. ◻
 
-Uniformity under IR regulators follows because (i) SPT provides a regulator-independent UV majorant for the relevant kernels, and (ii) the mass gap controls the large-distance/time tails that enter Cook-type bounds. The constants $`c,\nu`$ may change with the support sizes but are independent of $`R`$ and of the particular choice of $`\chi`$ once $`\chi\equiv 1`$ on a sufficiently large central interval. ◻
+</div>
+
+The old definition of asymptotic flatness also included the existence of Moller operators among the assumed consequences. Using that definition to prove the same operators exist was circular. Geometric falloff, spectral assumptions, propagation estimates, domains, and the wave-operator limits must be stated as separate inputs.
+
+## A positive TT gap is not the physical graviton
+
+The massless graviton has a lightlike one-particle shell. Assuming that the physical spectrum starts above a strictly positive mass $`\mu`$ removes that shell. Such an assumption can define a useful massive model, finite-volume approximation, or infrared regulator, but its regulator-removal limit is an additional theorem. It cannot be called the infrared completion of massless gravity.
+
+This distinction also prevents an ambiguity in Constructive QG I. Its parameter $`m^2>0`$ makes the Euclidean bounded-volume covariance invertible. It was explicitly introduced as an infrared shift, not selected as a physical graviton mass.
+
+## SPT smoothing does not remove the soft pole
+
+<div id="prop:ir-neutral" class="proposition">
+
+**Proposition 2** (Infrared neutrality of a normalized SPT filter). *Let $`F:[0,\epsilon)\to\mathbb R`$ satisfy $`F(u)=1+O(u)`$ as $`u\downarrow0`$. Then
+``` math
+\frac{F(p^2)}{p^2}=\frac1{p^2}+O(1)
+ \qquad (p^2\downarrow0).
+```
+In particular, multiplying a massless propagator by such an SPT factor does not remove its leading soft pole.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Write the commutator in terms of the retarded/advanced fundamental solutions for the TT sector. On the asymptotically flat ends the linearized TT dynamics is unitarily equivalent to a massive (or gapped) Klein–Gordon-type evolution on the one-particle TT space. The assumed TT mass gap implies exponential decay of time-smeared commutators for spacelike separated supports by the standard spectral representation (or, equivalently, by contour deformation in the energy variable).
-
-Concretely, the SPT-filtered TT two-point function has Fourier multiplier bound $`\|\widehat C(k)\|\lesssim e^{-\tau_0|k|^2}/(|k|^2+\lambda_\ast)`$ uniformly in the UV. Fourier inversion gives rapid spatial decay, and the gap $`\lambda_\ast>0`$ gives exponential time decay of the Pauli–Jordan kernel for spacelike separation. Smearing with compactly supported test functions for $`A`$ and $`B`$ yields $`\|[A(t),B]\|\le c\,e^{-\mu |t|}`$ for some $`\mu>0`$ depending on the gap and the supports. Uniformity in the IR regulators follows because the SPT bound is uniform and the IR cutoffs affect only large-distance tails; the gap estimate controls those tails in the same way. ◻
+*Proof.* Write $`F(u)=1+u r(u)`$ with $`r`$ bounded near zero. Division by $`u=p^2`$ gives $`F(u)/u=1/u+r(u)`$. ◻
 
 </div>
 
-# Asymptotic fields (Haag–Ruelle)
-
-## Free TT asymptotic fields
-
-Let $`h_{\mathrm{TT}}^{\mathrm{in/out}}`$ denote free TT fields solving the linearized equations on the asymptotic Minkowski ends.
-
-<div id="thm:HR" class="theorem">
-
-**Theorem 5** (Existence of asymptotic fields (Haag–Ruelle, TT sector)). *Assume: (i) asymptotic flatness of Definition 2.1, (ii) SPT damping (QG I), (iii) OS/BRST physical Hilbert space (QG II), and (iv) the TT mass gap Assumption <a href="#ass:TTgap" data-reference-type="ref" data-reference="ass:TTgap">3</a>. Let $`A`$ be a local TT observable smeared with a test function whose energy–momentum support lies in a small neighborhood of the TT mass shell. Then the limits
+For the proper-time form
 ``` math
-A^{\mathrm{in/out}} := \lim_{t\to\mp\infty} e^{iH_0t}A(t)e^{-iH_0t}
+F(u)=\int_0^\infty e^{-tu}\,d\mu(t),
 ```
-exist in the strong operator topology on a dense domain of $`\mathcal{H}_{\mathrm{phys}}`$, uniformly under the IR regulators.*
+normalization is $`F(0)=\mu([0,\infty))=1`$. If the first moment of $`\mu`$ is finite, then $`F(u)=1-u\int t\,d\mu(t)+o(u)`$, so Proposition <a href="#prop:ir-neutral" data-reference-type="ref" data-reference="prop:ir-neutral">2</a> applies directly. The filter can strongly change high momentum while leaving the leading infrared singularity intact.
+
+## Euclidean decay is not Lorentzian locality
+
+Rapid decay of a Euclidean covariance does not by itself construct microcausal Lorentzian observables. A nonpolynomial function of a Laplacian is generally nonlocal. The old proof used the Gaussian multiplier both to improve decay and to assume the strict locality needed by Haag–Ruelle theory. A future construction must instead prove that its physical observable algebra has the required commutation or almost-locality properties after continuation and BRST reduction.
+
+# The valid massive benchmark
+
+The corrected massive statement belongs to standard local quantum field theory. It is retained because it gives a clean test that a future MTT Lorentzian construction may attempt to satisfy in a genuinely massive sector.
+
+<div id="thm:massive" class="theorem">
+
+**Theorem 3** (Conditional massive Haag–Ruelle benchmark). *Suppose a theory on Minkowski spacetime is supplied with a local, translation-covariant observable net on a positive Hilbert space, a unique vacuum, the spectrum condition, and an isolated stable one-particle mass hyperboloid separated from the remaining spectrum as required by Haag–Ruelle theory. Then the Haag–Ruelle limits define incoming and outgoing multi-particle isometries from the corresponding asymptotic Fock space into the physical Hilbert space. A unitary scattering operator follows only after the relevant incoming and outgoing ranges are proved equal.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* This is the Haag–Ruelle construction specialized to the TT sector. Lemma <a href="#lem:timedecay" data-reference-type="ref" data-reference="lem:timedecay">4</a> provides exponential decay of commutators for spacelike separation. Assumption <a href="#ass:TTgap" data-reference-type="ref" data-reference="ass:TTgap">3</a> ensures separation of one-particle energy from the vacuum and controls the large-time integrability required in Cook’s method. The IR regulators appear only in large-volume/long-time tails, which are uniformly controlled by the same decay bound. ◻
+*Proof.* The existence and isometry statement is the standard Haag–Ruelle theorem . The final sentence follows from Theorem <a href="#thm:range" data-reference-type="ref" data-reference="thm:range">4</a> below. ◻
 
 </div>
 
-## Multi-particle states
+This is a conditional benchmark, not a new construction of the stated net. It also does not apply directly to the massless graviton. Refined Haag–Ruelle methods can construct stable massive particles in theories that also contain massless excitations under additional regularity assumptions ; this still does not turn the graviton itself into an isolated massive particle.
 
-Asymptotic multi-particle states are defined by applying products of $`A^{\mathrm{in/out}}`$ to the vacuum.
+# What wave operators actually prove
 
-<div id="thm:fock" class="theorem">
+<div id="thm:range" class="theorem">
 
-**Theorem 6** (Fock structure). *The asymptotic TT fields generate a Fock space over the one-particle TT Hilbert space, embedded isometrically into $`\mathcal{H}_{\mathrm{phys}}`$.*
+**Theorem 4** (Wave-operator range criterion). *Let $`\Omega_{-},\Omega_{+}:\mathcal H_{\mathrm{as}}\to\mathcal H_{\mathrm{phys}}`$ be isometries and define
+``` math
+S=\Omega_{+}^{*}\Omega_{-}:\mathcal H_{\mathrm{as}}\to\mathcal H_{\mathrm{as}}.
+```
+Then $`\|S\|\leq1`$. Moreover,
+``` math
+S^{*}S=I
+ \quad\Longleftrightarrow\quad
+ \mathop{\mathrm{Ran}}\Omega_{-}\subseteq\mathop{\mathrm{Ran}}\Omega_{+},
+```
+and
+``` math
+SS^{*}=I
+ \quad\Longleftrightarrow\quad
+ \mathop{\mathrm{Ran}}\Omega_{+}\subseteq\mathop{\mathrm{Ran}}\Omega_{-}.
+```
+Consequently $`S`$ is unitary exactly when $`\mathop{\mathrm{Ran}}\Omega_{-}=\mathop{\mathrm{Ran}}\Omega_{+}`$.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Standard Haag–Ruelle construction: the mass gap implies cluster properties and orthogonality of asymptotic states; OS positivity from QG II ensures positivity of norms. ◻
+*Proof.* Let $`P_\pm=\Omega_\pm\Omega_\pm^*`$ be the orthogonal projections onto the closed ranges of the two isometries. Then
+``` math
+S^*S=\Omega_{-}^*P_+\Omega_{-},\qquad
+ SS^*=\Omega_{+}^*P_-\Omega_{+}.
+```
+Since orthogonal projections are contractions, so is $`S`$. The first expression equals the identity precisely when $`P_+\Omega_{-}=\Omega_{-}`$, which is the first range inclusion. The second is analogous. Both identities hold exactly when both inclusions hold. ◻
 
 </div>
 
-# Scattering operator and unitarity
+#### Concrete foothold.
 
-## Definition of the S-matrix
-
-Define the Møller operators $`\Omega_\pm`$ by
+Take $`\mathcal H_{\mathrm{as}}=\mathbb C`$, $`\mathcal H_{\mathrm{phys}}=\mathbb C^2`$,
 ``` math
-\Omega_\pm\,A^{\mathrm{in}}\,\Omega_\pm^{-1} = A,
+\Omega_{-}z=(z,0),\qquad
+ \Omega_{+}z=(\cos\theta\,z,\sin\theta\,z).
 ```
-and the S-matrix by $`S:=\Omega_+^\ast\Omega_-`$ on the asymptotic Fock space.
+Both maps are isometries, but $`S z=\cos\theta\,z`$. Unless the two ranges coincide, $`S`$ is not unitary. This one-dimensional example isolates the gap in the first edition: norm preservation of each asymptotic embedding is not asymptotic completeness.
 
-<div id="thm:S" class="theorem">
+For conventional scattering theory, wave operators are often described as partial isometries on their initial subspaces. That terminology does not repair the missing range theorem. In the present same-domain formulation, $`\Omega_{+}^*\Omega_{-}`$ is guaranteed to be a contraction; it need not itself be a partial isometry for arbitrary relative ranges.
 
-**Theorem 7** (Existence of the S-matrix). *Under the hypotheses above, the S-matrix exists as a bounded operator on the asymptotic TT Fock space and is independent of the IR regulators.*
+# The physical massless-graviton route
+
+## Why ordinary Fock scattering is insufficient
+
+Long-range interactions do not switch off in the same way as short-range massive interactions. In perturbative gravity, virtual and real soft gravitons produce infrared structures already analyzed by Weinberg . A naive hard-particle Fock state omits the correlated soft gravitational field. Perturbative constructions therefore use either inclusive observables, in which unresolved soft radiation is summed, or appropriately dressed asymptotic states. Faddeev–Kulish methods originated in QED ; a gravitational implementation constructs an asymptotic dynamics and coherent soft clouds .
+
+These approaches are meaningful precedents, not results automatically owned by MTT. They also carry choices and hypotheses concerning gauge invariance, soft charges, asymptotic symmetries, factorization, and the class of observables. Modern dressed-state analyses make explicit that hard and soft sectors are correlated .
+
+## Two legitimate output types
+
+A corrected MTT infrared program may target either of the following:
+
+Inclusive output.
+Infrared-safe transition probabilities or detector observables after summing over experimentally unresolved soft gravitons, with the resolution prescription and regulator removal declared.
+
+Dressed output.
+A physical asymptotic state space whose hard states are accompanied by the selected soft gravitational dressing, together with well-defined incoming and outgoing maps and their range theorem.
+
+The two descriptions may agree on suitable observables, but they are not identical data structures. A paper must declare which one it constructs.
+
+## Selected MTT infrared exit contract
+
+For a physical MTT gravity scattering theorem, the following objects must come from one compatible source chain:
+
+1.  **Lorentzian theory.** A selected gauge-invariant action or observable net, a gravitational BRST/BV construction, a physical state, and controlled continuation from any Euclidean input.
+
+2.  **Massless spectrum.** A normalized two-helicity massless graviton sector with a proved map from the finite q79 TT carrier to the Lorentzian Poincare or asymptotic representation.
+
+3.  **Asymptotic geometry.** A declared asymptotically flat spacetime or null-infinity structure, with dynamics defined for arbitrarily large times. Falloff assumptions must not include the desired wave operators.
+
+4.  **Soft data.** Soft charges, memory sectors, and the action of large gauge or asymptotic symmetries on the physical observables.
+
+5.  **Infrared prescription.** Either an inclusive resolution map or a selected dressed-state construction, including gauge/BRST compatibility.
+
+6.  **Removal theorem.** Independence of auxiliary graviton masses, finite volumes, adiabatic switches, and soft-energy cutoffs in the declared observable topology.
+
+7.  **Scattering ranges.** Incoming and outgoing maps, the range relations of Theorem <a href="#thm:range" data-reference-type="ref" data-reference="thm:range">4</a>, and the chosen completeness statement.
+
+The first edition did not supply these seven objects. Importantly, SPT damping does not close item 4 or 5: by Proposition <a href="#prop:ir-neutral" data-reference-type="ref" data-reference="prop:ir-neutral">2</a>, its normalized ultraviolet factor leaves the leading soft pole unchanged.
+
+# Relation to the q79 heterotic route
+
+The selected compatible ultraviolet candidate in the current MTT program is the q79 Fu–Yau heterotic branch, not the SPT filter by itself. That route could eventually constrain the massless spectrum, BRST data, and interactions entering item 1 and item 2 of the exit contract. At present its worldsheet contract has five rows available, two partial, and five open. In particular, the exact worldsheet theory, complete BV vertices, tadpole/vacuum control, infrared and soft completion, and all-genus/nonperturbative definition are not yet available.
+
+Fixed-genus string amplitudes also do not automatically solve the four-dimensional asymptotic problem. One must identify the physical four-dimensional states, take the relevant compactification and low-energy limits, and establish the soft/inclusive or dressed prescription in that sector. The heterotic route is therefore compatible with the contract above, but it has not yet discharged it.
+
+# Status ledger
+
+<div class="center">
+
+| Object | Status | Meaning |
+|:---|:---|:---|
+| Massive Haag–Ruelle theorem | Imported benchmark | Applies after a local positive theory with the required isolated mass shell is supplied. |
+| Finite q79 TT carrier | Available at finite tier | Not yet a Lorentzian mass-shell or asymptotic-state theorem. |
+| SPT finite-volume Gaussian | Available conditionally | Controls a Euclidean ultraviolet model; leaves the leading massless soft pole intact. |
+| Gravitational BRST/BV state space | Open | Corrected QG II gives interfaces, not the selected quantum measure or physical completion. |
+| Massless graviton dressing or inclusive map | Open | No selected MTT soft-sector operator has been emitted. |
+| IR-regulator removal | Open | No uniform physical limit for mass, volume, switching, and soft cutoffs is proved. |
+| Wave-operator range equality | Open | Isometries alone do not imply a unitary scattering operator. |
+| Physical MTT gravity $`S`$-matrix | Open | Requires the complete seven-object contract. |
 
 </div>
 
-<div class="proof">
+# Version delta
 
-*Proof.* Existence follows from the existence of $`\Omega_\pm`$ (Theorem <a href="#thm:asymp" data-reference-type="ref" data-reference="thm:asymp">[thm:asymp]</a>) and regulator independence. Boundedness is ensured by unitarity below. ◻
+Relative to version 1, this successor:
 
-</div>
+- withdraws the claim that the three constructive papers complete nonperturbative MTT quantum gravity;
 
-## Unitarity on the physical Hilbert space
+- reclassifies the positive-gap argument as a massive or infrared-regulated benchmark;
 
-<div id="thm:unitary" class="theorem">
+- removes the circular definition that assumed Moller operators inside asymptotic flatness;
 
-**Theorem 8** (Unitarity). *The S-matrix is unitary on the physical Hilbert space $`\mathcal{H}_{\mathrm{phys}}`$.*
+- distinguishes finite slabs from the infinite-time limit needed for scattering;
 
-</div>
+- proves the exact wave-operator range criterion and corrects the claim that isometries alone make the $`S`$-matrix unitary;
 
-<div class="proof">
+- proves that a normalized SPT factor leaves the massless soft pole unchanged;
 
-*Proof.* By construction, $`\Omega_\pm`$ are isometries on $`\mathcal{H}_{\mathrm{phys}}`$ (OS positivity + BRST cohomology, QG II). Hence $`S=\Omega_+^\ast\Omega_-`$ is unitary. ◻
+- replaces the naive graviton Fock-space conclusion by inclusive and dressed alternatives; and
 
-</div>
+- states the seven-object MTT infrared exit contract.
 
-# Regulator independence
+# Conclusion
 
-<div id="thm:ir-indep" class="theorem">
+The corrected result is sharp. Standard massive Haag–Ruelle theory remains a valuable benchmark, but a positive graviton mass gap is not the infrared physics of our universe. SPT smoothing is ultraviolet data and, when normalized at zero momentum, does not cure the massless soft singularity. Even after incoming and outgoing isometries exist, unitarity requires equality of their ranges.
 
-**Theorem 9** (Independence of IR regulators). *Let $`S_{R,\chi}`$ denote the S-matrix constructed with volume cutoff $`R`$ and switching function $`\chi`$. Then
-``` math
-\lim_{R\to\infty,\ \chi\to 1} S_{R,\chi} = S
-```
-exists in the strong operator topology.*
+What MTT has achieved here is therefore not a completed gravity $`S`$-matrix. It has a finite TT carrier, a conditional Einstein reduction, fixed-order EFT parity, and now a corrected map of the infrared problem. The next genuine advance is to construct one selected massless soft-sector packet: Lorentzian physical states, asymptotic charges, a dressing or inclusive prescription, and its regulator-removal and range certificates. That packet would connect the current finite q79 structure to physical gravitational scattering without hiding the long-range problem behind an artificial mass gap.
 
-</div>
+#### Open boundary (not evidence of closure).
 
-<div class="proof">
+- (*open*).
 
-*Proof.* Let $`\Omega_\pm^{(R,\chi)}`$ denote the Møller operators constructed with regulators $`(R,\chi)`$. By Cook’s method,
-``` math
-\Omega_-^{(R,\chi)} - \Omega_-^{(R',\chi')}
-= \int_{-\infty}^0 \frac{d}{dt}
-\Big(e^{iH_0t}U_{R,\chi}(t)^\ast U_{R',\chi'}(t)e^{-iH_0t}\Big)\,dt,
-```
-where $`U_{R,\chi}(t)`$ is the regulated interacting evolution. The derivative produces commutators of localized interaction densities with asymptotic creation operators. These commutators are bounded by Lemma <a href="#lem:timedecay" data-reference-type="ref" data-reference="lem:timedecay">4</a> and the asymptotic flatness falloff, yielding an integrable majorant independent of $`(R,\chi)`$ once $`\chi\equiv 1`$ on a sufficiently large interval. Therefore the Møller operators converge strongly as $`R\to\infty`$ and $`\chi\to 1`$, and the limit defines a regulator-independent $`S=\Omega_+^\ast\Omega_-`$. ◻
+  Current 2/9 strict no-knob upgrade ledger.
 
-</div>
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-# Generic curved backgrounds: no global S-matrix
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
 
-On general curved spacetimes without asymptotic flatness, Haag–Ruelle limits fail in general. In this case, the correct object is not an S-matrix but the net of local algebras $`\mathcal{A}(\mathcal{O})`$ and relative scattering operators between regions.
+The massive benchmark and massless infrared obligations are separated within this paper. The mapped open strict-upgrade row does not close the massless-graviton limit and is cited only as an adjacent unresolved source obligation.
 
-<div class="remark">
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
 
-*Remark 10*. Our results imply that on such backgrounds, the MTT quantum gravity sector is defined nonperturbatively as a local quantum field theory with BRST-invariant observables and a physical Hilbert space, even though no global scattering operator exists.
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
 
-</div>
+## Open boundary (not evidence of closure)
 
-# Conclusions
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
 
-We have completed the constructive program for Modal Triplet Theory quantum gravity by establishing the infrared limit and scattering theory for the physical graviton sector under SPT damping. Together with Parts I and II, this work provides a coherent chain from ultraviolet control to a unitary scattering description.
-
-Under explicit and standard hypotheses—Gaussian ultraviolet damping from the coherent projector, existence of a TT mass gap, BRST cohomology positivity, and asymptotic flatness sufficient for free TT dynamics—we proved exponential decay of commutators, uniform Cook bounds, and regulator-independent Møller operators. As a result, a unitary $`S`$-matrix exists for TT-sector observables and is well defined on the physical Hilbert space.
-
-The construction respects causal locality and introduces no additional dynamics beyond those already present in the fixed-point formulation of MTT. Long-range and gauge-related subtleties are handled by restricting to BRST-invariant TT observables, in direct analogy with rigorous treatments of gauge theories in flat spacetime.
-
-The scope of the result is intentionally precise. We do not claim scattering theory for arbitrary gauge-fixed metric components or for generic curved backgrounds. Instead, we show that wherever a scattering description is physically appropriate, the constructive MTT framework yields it rigorously and consistently.
-
-Taken together, the three constructive papers establish a complete nonperturbative path from ultraviolet finiteness to infrared scattering for quantum gravity within Modal Triplet Theory, with all assumptions stated explicitly and no appeal to heuristic arguments.
-
-# Haag–Ruelle Scattering in the TT Sector under BRST Cohomology
-
-This appendix provides the technical details underlying the scattering construction outlined in the main text. The purpose is to justify rigorously that the assumptions stated there are sufficient to apply Haag–Ruelle theory in the presence of gauge symmetry, SPT damping, and BRST cohomology, while avoiding unphysical polarizations.
-
-## Local observables and domains
-
-Let $`\mathcal{A}_{\mathrm{loc}}`$ denote the algebra of local observables generated by smeared metric perturbations and matter fields, with smearing functions compactly supported in spacetime regions that remain a positive distance away from the boundary of the slab. We restrict attention to observables whose representatives are BRST closed and whose TT components are nontrivial.
-
-Let $`\mathcal{D}\subset\mathcal{H}_{\mathrm{phys}}`$ denote the dense domain generated by finite linear combinations of vectors of the form
-``` math
-A_1(f_1)\cdots A_n(f_n)\Omega,
-```
-where each $`A_i`$ is a local TT observable, $`f_i`$ has energy–momentum support contained in a small neighborhood of the TT mass shell, and $`\Omega`$ is the physical vacuum constructed in QG II. This domain is stable under time evolution and under the asymptotic field limits constructed below.
-
-## Cluster properties and commutator decay
-
-By QG I, the SPT-filtered TT two-point function satisfies a uniform Gaussian ultraviolet bound. Together with Assumption <a href="#ass:TTgap" data-reference-type="ref" data-reference="ass:TTgap">3</a>, this implies exponential decay of commutators for spacelike separated observables, as established in Lemma <a href="#lem:timedecay" data-reference-type="ref" data-reference="lem:timedecay">4</a> of the main text. In particular, for $`A,B\in\mathcal{A}_{\mathrm{loc}}`$ with spacelike separated supports one has
-``` math
-\|[A(t),B]\|\le c\,e^{-\nu |t|},
-```
-uniformly in the infrared regulators. This estimate is the key input required for both Cook’s method and Haag–Ruelle asymptotics.
-
-Moreover, because SPT damping yields rapid spatial decay of correlation functions, cluster properties hold for TT observables: connected correlators decay exponentially in the separation of their supports. This ensures that multi-particle scattering states factorize asymptotically.
-
-## BRST cohomology and elimination of unphysical states
-
-The gauge-fixed theory prior to taking cohomology carries an indefinite inner product. However, physical observables and states are defined by BRST cohomology as in QG II. BRST-exact insertions decouple from all BRST-closed observables, and the OS sesquilinear form descends to a positive-definite inner product on the physical Hilbert space $`\mathcal{H}_{\mathrm{phys}}`$.
-
-The asymptotic fields constructed by Haag–Ruelle limits are BRST closed by construction, since they are limits of BRST-closed local observables under unitary time evolution. If two representatives differ by a BRST-exact term, their difference annihilates physical states and therefore defines the same asymptotic operator on $`\mathcal{H}_{\mathrm{phys}}`$. Consequently, scattering states are defined intrinsically on BRST cohomology, and unphysical polarizations do not contribute.
-
-## Existence of asymptotic fields
-
-Let $`A\in\mathcal{A}_{\mathrm{loc}}`$ be a TT observable smeared with a test function whose energy–momentum support lies in a sufficiently small neighborhood of the TT mass shell. Define
-``` math
-A_t := e^{iH t}A e^{-iH t},\qquad
-A_t^{(0)} := e^{iH_0 t}A e^{-iH_0 t},
-```
-where $`H`$ and $`H_0`$ are the interacting and free TT Hamiltonians, respectively.
-
-By the commutator decay estimate and the TT mass gap, the Cook integral
-``` math
-\int_{-\infty}^0 \|(H-H_0)A_t^{(0)}\psi\|\,dt
-```
-converges for all $`\psi\in\mathcal{D}`$. Standard Haag–Ruelle arguments therefore imply that the limits
-``` math
-A^{\mathrm{in/out}} := \lim_{t\to\mp\infty} A_t^{(0)}
-```
-exist strongly on $`\mathcal{D}`$ and define asymptotic free fields acting on $`\mathcal{H}_{\mathrm{phys}}`$. The limits are independent of the infrared regulators because the commutator bounds and Cook integrability are uniform in those regulators.
-
-## Scattering states and $`S`$-matrix
-
-Multi-particle scattering states are obtained by acting with asymptotic creation operators on the vacuum,
-``` math
-|\psi_1,\ldots,\psi_n\rangle_{\mathrm{in/out}}
-:= A_1^{\mathrm{in/out}}\cdots A_n^{\mathrm{in/out}}\Omega,
-```
-where the wave packets $`\psi_i`$ have disjoint velocity supports. Cluster properties ensure that these states are independent of the order of limits and factorize appropriately.
-
-The Møller operators $`\Omega_\pm:\mathcal{H}_{\mathrm{free}}\to\mathcal{H}_{\mathrm{phys}}`$ exist and are isometric on the TT Fock space. The scattering operator $`S=\Omega_+^\ast\Omega_-`$ is therefore unitary on the TT sector of the physical Hilbert space. By construction, $`S`$ acts trivially on BRST-exact states and is well defined on cohomology.
-
-## Scope of the construction
-
-The analysis above establishes Haag–Ruelle scattering for the TT sector and for BRST-invariant observables constructed from it. We do not claim scattering theory for arbitrary gauge-dependent components of the metric, nor for generic curved backgrounds without asymptotic flatness. Within its stated scope, however, the construction is rigorous and regulator independent.
-
-<div class="remark">
-
-*Remark 11*. The argument given here follows the standard Haag–Ruelle strategy adapted to a constructive, gauge-invariant setting. The essential inputs are: (i) exponential decay of commutators from SPT damping and the TT mass gap, (ii) BRST cohomology to remove unphysical states, and (iii) asymptotic flatness sufficient to define free TT dynamics. No additional assumptions are required.
-
-</div>
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 
 99
 
+D. Ruelle, *On the asymptotic condition in quantum field theory*, Helv. Phys. Acta **35** (1962), 147–163.
+
 R. Haag, *Local Quantum Physics*, 2nd ed., Springer, 1996.
 
-D. Ruelle, On the asymptotic condition in quantum field theory, *Helv. Phys. Acta* **35** (1962), 147–163.
+W. Dybalski, *Haag–Ruelle scattering theory in presence of massless particles*, Lett. Math. Phys. **72** (2005), 27–38, doi:10.1007/s11005-005-2294-6.
 
-J. M. Cook, Convergence to the Møller wave matrix, *J. Math. Phys.* **36** (1957), 82–87.
+S. Weinberg, *Infrared photons and gravitons*, Phys. Rev. **140** (1965), B516–B524, doi:10.1103/PhysRev.140.B516.
 
-J. Dereziński and C. Gérard, *Scattering Theory of Classical and Quantum N-Particle Systems*, Springer, 1997.
+P. P. Kulish and L. D. Faddeev, *Asymptotic conditions and infrared divergences in quantum electrodynamics*, Theor. Math. Phys. **4** (1970), 745–757, doi:10.1007/BF01066485.
 
-R. Brunetti and K. Fredenhagen, Microlocal analysis and interacting quantum field theories: Renormalization on curved spacetimes, *Commun. Math. Phys.* **208** (2000), 623–661.
+J. Ware, R. Saotome, and R. Akhoury, *Construction of an asymptotic S matrix for perturbative quantum gravity*, JHEP **10** (2013), 159, doi:10.1007/JHEP10(2013)159, arXiv:1308.6285.
 
-K. Rejzner, *Perturbative Algebraic Quantum Field Theory*, Springer, 2016.
-
-P. Nero, *Constructive MTT Quantum Gravity I: Borel Summability of the SPT-Filtered TT Sector*, Zenodo preprint.
-
-P. Nero, *Constructive MTT Quantum Gravity II: BRST Lifting, Gauge-Invariant Observables, and the Physical Hilbert Space under SPT Damping*, Zenodo preprint.
+S. Choi and R. Akhoury, *Subleading soft dressings of asymptotic states in QED and perturbative quantum gravity*, JHEP **09** (2019), 031, arXiv:1907.05438.
 
 </div>

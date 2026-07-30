@@ -1,65 +1,93 @@
 {
-  "abstract": "We establish a rigorous bridge between Modal Triplet Theory (MTT) and functional renormalization group (FRG) formulations of quantum gravity, clarifying the precise sense in which asymptotic safety (AS) arises as a controlled shadow of MTT\u2019s coherent sector. Working on a bounded-geometry time slab and within the coherent universality class, we define a background-covariant FRG effective average action \\Gamma_k and a discrete renormalization-group (RG) step map \\mathcal{R}_b:\\Gamma_k\\mapsto\\Gamma_{bk}. Using the spectral proper-time (SPT) Gaussian ultraviolet damping derived from the coherent projector, we prove: (i) existence of a UV endpoint functional \\Gamma_\\infty=\\lim_{k\\to\\infty}\\Gamma_k in a Banach space of analytic local plus entire form-factor actions equipped with a majorant-series norm; (ii) scheme stability of \\Gamma_\\infty under admissible regulator variations within the coherent universality class; and (iii) compactness of the RG-step linearization at \\Gamma_\\infty, yielding a finite-dimensional unstable manifold (the MTT-native analogue of finite relevant directions). As a corollary, fixed points observed in AS-style truncations are obtained as shadows of \\Gamma_\\infty under continuous truncation and canonical rescaling.",
+  "abstract": "This paper states the mathematically controlled relation currently available between Modal Triplet Theory and functional-renormalization-group asymptotic safety. An integrable bound on an effective-action flow gives a Banach-space ultraviolet endpoint with an explicit tail estimate, but the bound must be proved for the selected four-dimensional flow and is not implied by an internal finite projector. Exact conjugacy between an MTT coarse-graining map and an FRG step map transports fixed points; approximate conjugacy transports only a residual unless a separate fixed-point theorem is supplied. Scheme changes are controlled by an endpoint-difference estimate, not by unrestricted scheme independence. Finally, a finite-dimensional unstable subspace follows when the linearized RG step is quasi-compact with essential spectral radius below one. These results define a rigorous conditional bridge. The selected MTT-to-FRG chart, physical regulator, four-dimensional damping estimate, and quasi-compactness certificate remain open source obligations.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v2",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261529",
-    "created": "2026-01-15T19:28:36.968659+00:00",
+    "created": "2026-07-29T08:51:17.800340+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18261530",
+    "doi": "10.5281/zenodo.21665985",
     "files": [
       {
-        "checksum": "md5:16a7e7c0388dde30de3a6ed7c4b0bd23",
-        "content_url": "https://zenodo.org/api/records/18261530/files/Modal_Triplet_Theory_and_Asymptotic_Safety__Asymptotic_Safety_as_the_Controlled_FRG_Shadow_of_the_Coherent_Sector_UV_Endpoint%20(3).pdf/content",
-        "key": "Modal_Triplet_Theory_and_Asymptotic_Safety__Asymptotic_Safety_as_the_Controlled_FRG_Shadow_of_the_Coherent_Sector_UV_Endpoint (3).pdf",
-        "size": 349247
+        "checksum": "md5:de07ec4e7ff3554de61a3bbc8408d3b2",
+        "content_url": "https://zenodo.org/api/records/21665985/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 330294
       }
     ],
-    "id": "18261530",
-    "match_kind": "title_or_file",
+    "id": "21665985",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18261530",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665985",
     "resource_type": "publication",
-    "title": "Modal Triplet Theory and Asymptotic Safety",
-    "updated": "2026-01-15T19:28:37.322349+00:00",
-    "version": "v1.0"
+    "title": "Modal Triplet Theory and Asymptotic Safety: A Conditional FRG Conjugacy and Unstable-Subspace Theorem",
+    "updated": "2026-07-29T08:51:18.024557+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "21d659a087c42322508369e81095080a1e8ae4bd7399f4693ef329257886106d",
+  "main_tex_sha256": "0732f728b13fe74c47b61984b70b05f9d32765d3d7056b962d9ca67b2bc9a4c7",
   "paper_id": "modal-triplet-theory-and-asymptotic-safety-asymptotic-s-dc3ce0c2",
-  "paper_md_sha256": "9c2ad2245e422ce416c7b10e11ee8b87bfdd46016f7547833fdc4e5d18fa18cc",
+  "paper_md_sha256": "c0f4c2a81d1760729e1f4ec821d4deba75dd49825757dcd0b9005b92516ee00d",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "74e529a5b6b21dc75c04065df41ea0e0404bd609df24216f428368cd6e82ecd3",
+    "selected_revision": true,
+    "superseded_source_path": "12 Quantum Gravity/_work/Modal_Triplet_Theory_and_Asymptotic_Safety__Asymptotic_Safety_as_the_Controlled_FRG_Shadow_of_the_Coherent_Sector_UV_Endpoint"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 18856,
+      "bytes": 18022,
       "path": "main.tex",
-      "sha256": "21d659a087c42322508369e81095080a1e8ae4bd7399f4693ef329257886106d"
+      "sha256": "0732f728b13fe74c47b61984b70b05f9d32765d3d7056b962d9ca67b2bc9a4c7"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "12 Quantum Gravity/_work/Modal_Triplet_Theory_and_Asymptotic_Safety__Asymptotic_Safety_as_the_Controlled_FRG_Shadow_of_the_Coherent_Sector_UV_Endpoint"
   },
-  "source_tree_sha256": "f466f2640b0d9ed49d50098ae33e06ce64d36cab82b3a46f067a4ce09021b620",
-  "title": "Modal Triplet Theory and Asymptotic Safety Asymptotic Safety as the Controlled FRG Shadow of the Coherent-Sector UV Endpoint",
+  "source_tree_sha256": "2ee79c9889c67127ef699d1e72b8a3e6bf94a16418dc1b24fd64cb5ab566f7ab",
+  "title": "Modal Triplet Theory and Asymptotic Safety: A Conditional FRG Conjugacy and Unstable-Subspace Theorem",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261529",
+      "created": "2026-07-29T08:51:17.800340+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665985",
+      "files": [
+        {
+          "checksum": "md5:de07ec4e7ff3554de61a3bbc8408d3b2",
+          "content_url": "https://zenodo.org/api/records/21665985/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 330294
+        }
+      ],
+      "id": "21665985",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665985",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and Asymptotic Safety: A Conditional FRG Conjugacy and Unstable-Subspace Theorem",
+      "updated": "2026-07-29T08:51:18.024557+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18261529",
       "created": "2026-01-15T19:28:36.968659+00:00",

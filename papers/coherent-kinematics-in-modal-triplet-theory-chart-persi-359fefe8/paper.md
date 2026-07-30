@@ -4,49 +4,47 @@ abstract: |
 author:
 - Peter Nero
 current_version: v2
-date: July 2026
-generated_from_main_tex_sha256: e73af12d56b5ead33c451919e59d2cb631cb99ee673a2e6e8c8c17cd8e84275d
+date: July 2026 Version 2
+generated_from_main_tex_sha256: 3e084d459b8ee80bbd4cbe635c0414cb3d03f77f04b1e79cde8dd5995685081d
 paper_id: coherent-kinematics-in-modal-triplet-theory-chart-persi-359fefe8
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  Coherent Kinematics in Modal Triplet Theory  
+  Coherent Kinematics in Modal Triplet Theory
   Chart Persistence, Encoding Trajectories, and Physical Bridges
-zenodo_doi: 10.5281/zenodo.18330736
-zenodo_record_id: 18330736
-zenodo_url: "https://zenodo.org/records/18330736"
+zenodo_doi: 10.5281/zenodo.21665951
+zenodo_record_id: 21665951
+zenodo_url: "https://zenodo.org/records/21665951"
 ---
 
-*Part VI of VI in the Fixed Points series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*
+# Version 2 Revision Note
 
-# Revision note for this edition
-
-Supersedes.  
+Supersedes
 The first edition of *Coherent Kinematics in Modal Triplet Theory*.
 
-Reason.  
+Reason
 Chart persistence, partial order, noninjective projection, and decoder failure were overinterpreted as physical motion, causal order, mergers, splits, and worldline termination.
 
-Resolution.  
+Resolution
 Version 2 defines chart-relative position and encoding worldlines, states their regularity gates, and requires a separate hyperbolic bridge for physical causality and finite propagation.
 
-Retained result.  
+Retained result
 Compatible chart chains still define a useful encoding-level kinematics.
 
-Remaining boundary.  
+Remaining boundary
 Physical trajectories, horizons, arrows of time, and the relation of shared phase to time require the selected physical law.
 
 # Three levels of kinematic statement
 
 We distinguish:
 
-Upper evolution.  
+Upper evolution.
 A path or flow in the declared MTT control/state space.
 
-Encoding kinematics.  
+Encoding kinematics.
 Localization and persistence after applying compatible partial descriptions.
 
-Physical kinematics.  
+Physical kinematics.
 Curves, support propagation, and causal classes in a selected spacetime evolution law.
 
 Encoding kinematics can represent physical motion after a bridge theorem. It does not itself provide a metric, null cone, velocity, force law, or physical time. The stabilization parameter $`\tau`$, a physical time $`t`$, and an RG scale $`\mu`$ remain separately typed.

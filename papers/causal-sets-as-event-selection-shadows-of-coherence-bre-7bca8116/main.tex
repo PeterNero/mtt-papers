@@ -1,385 +1,341 @@
-% !TEX program = pdflatex
 \documentclass[11pt]{article}
 
-
-\usepackage{series} % series.sty as requested
-
-% ---------- Encoding / Fonts ----------
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
+\usepackage[a4paper,margin=28mm]{geometry}
 \usepackage{microtype}
-
-% ---------- Layout ----------
-\usepackage{geometry}
-\geometry{margin=1in}
-
-% ---------- REQUIRED ----------
-\usepackage{series} % series.sty as requested
-
-% ---------- Math / Theorems ----------
 \usepackage{amsmath,amssymb,amsthm,mathtools}
-
-% ---------- Hyperlinks ----------
-
-% ---------- Lists ----------
 \usepackage{enumitem}
+\usepackage{booktabs,tabularx}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 
-% ============================================================
-% Safe macros (no physics.sty)
-% ============================================================
-
-\DeclareMathOperator{\Dom}{Dom}
-\DeclareMathOperator{\spec}{spec}
-\DeclareMathOperator{\Tr}{Tr}
-
-\newcommand{\normop}[1]{\left\lVert #1 \right\rVert}
-
-\newcommand{\od}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
-
-% ============================================================
-% Theorem environments
-% ============================================================
-\theoremstyle{plain}
-
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
 \theoremstyle{definition}
-
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
 \theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
 
-% ============================================================
-% Notation
-% ============================================================
-\newcommand{\ThetaB}{\Theta}
+\newcommand{\card}{\operatorname{card}}
+\newcommand{\vol}{\operatorname{vol}}
+\newcommand{\tr}{\operatorname{tr}}
 
-% ============================================================
-% Title
-% ============================================================
-\title{\textbf{Causal Sets as Event-Selection Shadows of Coherence Breakdown}\\
-\large Measurement events, irreversibility, and spacetime discreteness from Modal Triplet Theory}
+\title{Coherence-Selection Events and Causal Sets in Modal Triplet Theory:\\
+\large Non-Zeno Conditions, Reset Laws, and Covariant Statistics}
 \author{Peter Nero}
-\date{January, 2026}
+\date{July 2026\\Version 2}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Causal set theory postulates discrete spacetime events endowed with a partial order,
-while measurement theory postulates irreducible events associated with collapse or
-irreversibility. We show that both structures arise as the same four-dimensional
-shadow of coherence-selection events in Modal Triplet Theory (MTT). Selection events
-are defined as irreversible basin transitions under noninvertible projection of the
-coherent sector. We prove that these events generate a locally finite partial order,
-yielding an effective causal set whose density, ordering, and approximate Lorentz
-invariance are fixed by coherent-sector bottleneck data rather than by ad hoc
-sprinkling assumptions. Deviations from Poisson statistics and exact Lorentz
-invariance are predicted near coherence-breakdown regions. We relate these results
-to ongoing work in causal set theory, continuous measurement, and collapse physics,
-and establish cross-sector closure: the same bottleneck vector controls event density,
-collapse thresholds, ultraviolet completion, and canonical geometric discreteness.
-All statements are slab-local and admissibility-conditioned.
+Coherence-selection dynamics can generate an effective causal set only when
+the event law prevents accumulation and is covariantly defined. This paper
+states two sufficient routes. In a deterministic hybrid model, a reset
+margin together with a uniform bound on trigger growth gives a positive
+dwell time and hence finitely many events on every bounded trajectory
+interval. In a stochastic model, finite compensator measure on every compact
+spacetime region implies almost-sure local finiteness. Once local finiteness
+is established, events inherit a partial order from a globally hyperbolic
+spacetime. Positive stability margins alone do not provide either result,
+and noninvertible projection alone does not define event times, reset states,
+outcome probabilities, or irreversibility. Lorentz-invariant statistics
+require a concrete covariant event law, such as a scalar intensity with
+respect to spacetime volume; they do not follow from coherence language.
+The current MTT corpus does not yet select the required trigger, reset, or
+hazard. The construction is therefore a rigorous conditional event
+encoding, not a derivation of fundamental spacetime discreteness or
+measurement outcomes.
 \end{abstract}
+
+\section*{Version 2 Revision Note}
+\begin{description}[leftmargin=3.2cm,style=nextline]
+\item[Supersedes] Version 1.0, \emph{Causal Sets as Event-Selection Shadows
+of Coherence Breakdown}.
+\item[Reason] The original paper inferred local finiteness from positive
+stability margins, left the transition/reset law undefined, and claimed
+approximately Lorentz-invariant statistics without a stochastic source.
+\item[Resolution] Deterministic dwell-time and stochastic compensator
+criteria are proved, the event/reset data are typed explicitly, and
+covariance is made a property of the selected law.
+\item[Retained result] Dynamically generated, locally finite events inherit
+the causal order of the effective spacetime and can be represented as a
+causal set.
+\item[Remaining boundary] MTT must select the trigger or hazard, reset law,
+spacetime density, and any outcome instrument from the same physical branch.
+\end{description}
 
 \tableofcontents
 
-% ============================================================
-\section{Introduction}
-% ============================================================
+\section{Events need a law}
 
-Causal set theory proposes that spacetime is fundamentally discrete, consisting of
-elementary events partially ordered by causality. Measurement theory and collapse
-models, by contrast, treat events as irreducible outcomes of quantum dynamics, often
-without spacetime ontology. These two notions of ``event'' are typically regarded as
-independent.
+An ``event'' is not created by naming a loss of coherence. A dynamical event
+model must specify:
+\begin{itemize}
+\item a state space and continuous evolution between events;
+\item an event trigger or stochastic hazard;
+\item the spacetime location assigned to an event;
+\item a reset or transition rule after the event;
+\item whether the event is an observed record, an objective state change, or
+only a coarse-graining marker.
+\end{itemize}
 
-In this paper we show that they are not independent. Within Modal Triplet Theory
-(MTT), both causal set elements and measurement/collapse events arise as the same
-objects: \emph{selection events} generated by coherence breakdown under noninvertible
-projection. Spacetime discreteness, causal order, and irreversibility are therefore
-different shadows of a single reduced-dynamical mechanism.
+These distinctions matter in MTT. A noninvertible lower description can
+discard information without selecting a unique physical outcome. Likewise,
+a stable fixed point can exist without any finite sequence of transition
+times.
 
-This work extends earlier results showing that causal sets arise as an effective
-limit of MTT. Here we go further by identifying the physical meaning of causal set
-elements as selection events and by deriving their density, ordering, and statistical
-symmetries from coherent-sector data.
+\section{Deterministic hybrid route}
 
-% ============================================================
-\section{Minimal Coherent-Sector Inputs}
-% ============================================================
+Let \(z(t)\) be a continuous state between event times
+\[
+ 0<t_1<t_2<\cdots.
+\]
+Let \(h(z)\) be a scalar trigger. An event occurs when \(h\) reaches zero
+from below, after which a reset map \(R\) replaces \(z(t_n^-)\) by
+\(z(t_n^+)=R(z(t_n^-))\).
 
-\begin{assumption}[Slab-local coherent regime]\label{ass:slab}
-All results are asserted on bounded-geometry time slabs $\Omega=[0,T]\times\Sigma$
-where:
-\begin{enumerate}[label=(S\arabic*)]
-\item the coherent projector is bounded on the controlled domain;
-\item a uniform spectral gap $\lambda_\ast$ separates coherent and noncoherent modes;
-\item admissible basins possess strictly positive stability margins away from boundaries.
-\end{enumerate}
-\end{assumption}
-
-\begin{definition}[Bottleneck vector]\label{def:Theta}
-The \emph{bottleneck vector} $\ThetaB$ is the finite set of coherent-sector data
-controlling projection and stability:
-\begin{enumerate}
-\item the spectral gap $\lambda_\ast$;
-\item projector norm and overlap data;
-\item admissibility and stability-margin parameters.
-\end{enumerate}
-\end{definition}
-
-% ============================================================
-\section{Selection Events in the Coherent Sector}
-\label{sec:selection}
-% ============================================================
-
-\begin{definition}[Admissible basins]
-Let $\mathcal{C}$ denote the coherent sector on the slab. Admissible configurations
-lie in dynamically stable basins $\{\mathcal{B}_\alpha\}$ of the projected dynamics.
-\end{definition}
-
-\begin{definition}[Selection event]
-A \emph{selection event} is the spacetime-localized occurrence of a trajectory exiting
-an admissible basin $\mathcal{B}_\alpha$ and being irreversibly captured into a
-different basin $\mathcal{B}_\beta$ under projection.
-\end{definition}
-
-\begin{proposition}[Irreversibility of selection events]
-\label{prop:irreversible}
-Selection events are irreversible on the slab: once capture into $\mathcal{B}_\beta$
-occurs, return to $\mathcal{B}_\alpha$ with nonzero probability is excluded by
-contractivity in $\mathcal{B}_\beta$.
-\end{proposition}
-
-\begin{proof}
-Exit from $\mathcal{B}_\alpha$ occurs at loss of a stability margin. After capture into
-$\mathcal{B}_\beta$, all unstable directions are contracted. Standard basin stability
-arguments imply return probability below truncation tolerance. \qedhere
-\end{proof}
-
-% ============================================================
-\section{Emergent Causal Order from Basin Selection}
-\label{sec:order}
-% ============================================================
-
-\begin{definition}[Event dependence]
-For selection events $e_1,e_2$, write $e_1\prec e_2$ if the basin selected by $e_1$ is a
-necessary condition for the admissibility of the trajectory leading to $e_2$.
-\end{definition}
-
-\begin{theorem}[Emergent causal order]\label{thm:order}
-The relation $\prec$ defines a partial order on selection events.
+\begin{theorem}[Uniform dwell-time criterion]
+\label{thm:dwell}
+Assume that after every event
+\[
+ h(z(t_n^+))\leq-\delta
+\]
+for a fixed \(\delta>0\), and that between events
+\[
+ \left|\frac{d}{dt}h(z(t))\right|\leq M
+\]
+for a fixed finite \(M>0\). Then
+\[
+ t_{n+1}-t_n\geq\frac{\delta}{M}.
+\]
+Consequently a trajectory has at most
+\[
+ 1+\frac{MT}{\delta}
+\]
+events in any interval of duration \(T\).
 \end{theorem}
 
 \begin{proof}
-Transitivity follows from composition of basin dependencies. Antisymmetry follows
-from irreversibility (Proposition~\ref{prop:irreversible}). Cycles would require
-return to an exited basin, excluded by admissibility. \qedhere
+After the reset, the trigger must increase by at least \(\delta\) before it
+can reach zero. The derivative bound implies that this takes at least
+\(\delta/M\). Summing the minimum separations gives the counting bound.
 \end{proof}
 
-% ============================================================
-\section{Effective Causal Sets as Four-Dimensional Shadows}
-\label{sec:causets}
-% ============================================================
+This is the missing non-Zeno theorem. A positive stability margin for a
+fixed point does not imply either a reset margin or a bound on trigger
+growth.
 
-\begin{definition}[Effective causal set]
-The effective causal set $\mathcal{C}_{\mathrm{eff}}$ is the set of selection events
-endowed with the partial order $\prec$.
-\end{definition}
+\begin{example}[Stability without a dwell-time theorem]
+The continuous system \(\dot x=-x\) has a positive linear stability rate at
+the origin. If one separately declares events at \(t_n=1-2^{-n}\), the
+events accumulate at \(t=1\). The flow's stability has not prevented the
+Zeno schedule because the event law was independent of the flow.
+\end{example}
 
-\begin{theorem}[Causal set axioms as shadows]\label{thm:causet}
-$\mathcal{C}_{\mathrm{eff}}$ satisfies:
-\begin{enumerate}[label=(C\arabic*)]
-\item partial order;
-\item local finiteness;
-\item causal precedence.
-\end{enumerate}
+\section{Stochastic hazard route}
+
+Let \(N(K)\) count events in a measurable spacetime region \(K\). A point
+process may be specified through a compensator or intensity measure
+\(\Lambda\).
+
+\begin{theorem}[Finite-compensator local finiteness]
+\label{thm:compensator}
+Suppose an event point process satisfies
+\[
+ \mathbb E[N(K)]=\Lambda(K)<\infty
+\]
+for every compact \(K\subset Y_4\). Then \(N(K)<\infty\) almost surely for
+every member of a countable compact exhaustion. In particular, the event set
+is locally finite almost surely.
 \end{theorem}
 
 \begin{proof}
-Partial order is Theorem~\ref{thm:order}. Local finiteness follows from gap-controlled
-event density (Section~\ref{sec:density}). Causal precedence is encoded by basin
-dependence. \qedhere
+A nonnegative extended-integer random variable that equals infinity with
+positive probability has infinite expectation. Therefore finite expectation
+implies \(N(K)<\infty\) almost surely. Apply this to a countable compact
+exhaustion.
 \end{proof}
 
-% ============================================================
-\section{Event Density, Lorentz Invariance, and Deviations}
-\label{sec:density}
-% ============================================================
+A sufficient form is
+\[
+ \Lambda(K)=\int_K\lambda(x,z)\,d\vol_g(x),
+\]
+with a nonnegative scalar predictable intensity \(\lambda\) that is locally
+integrable. A uniform compact-region bound on \(\lambda\) gives finite
+\(\Lambda(K)\).
 
-\begin{proposition}[Event density]\label{prop:density}
-The mean density of selection events per unit four-volume is fixed by the bottleneck
-vector $\ThetaB$, in particular by the spectral gap and stability margins.
-\end{proposition}
+This theorem does not derive Poisson statistics. Correlated point processes,
+self-exciting processes, and state-dependent hazards can all satisfy local
+finiteness. Their physical predictions differ.
 
-\begin{theorem}[Statistical Lorentz invariance]\label{thm:lorentz}
-On scales large compared to the truncation scale, the distribution of selection events
-is statistically Lorentz invariant.
-\end{theorem}
+\section{From events to a causal set}
 
-\begin{proof}
-The coherent sector is Lorentz covariant. Projection introduces no preferred frame.
-Event statistics therefore inherit covariance in expectation values. \qedhere
-\end{proof}
+Let \(C\subset Y_4\) be the generated event set. On a globally hyperbolic
+spacetime define
+\[
+ x\preceq y
+ \quad\Longleftrightarrow\quad
+ y\in J^+(x).
+\]
+The kinematic companion paper proves that any locally finite \(C\) with
+this inherited order is a causal set. Thus either
+\autoref{thm:dwell}, with the required spatial population bound, or
+\autoref{thm:compensator} can provide the local-finiteness input.
 
-\begin{remark}
-Near coherence-breakdown regions or strong measurement, event clustering and
-Lorentz-violating correlations are predicted deviations from Poisson sprinkling.
-\end{remark}
+For a deterministic family of trajectories, a compact spacetime region must
+intersect only finitely many relevant trajectories, or a separate uniform
+spatial density bound is needed. Dwell time along each of infinitely many
+worldlines would not by itself control the total number of events in the
+region.
 
-% ============================================================
-\section{Relation to Causal Set Theory and Measurement Physics}
-\label{sec:relation}
-% ============================================================
+\section{Reset, irreversibility, and records}
 
-Causal set theory postulates discreteness and Poisson sprinkling to preserve Lorentz
-invariance. Here discreteness and approximate Lorentz invariance are derived, and the
-sprinkling density is fixed by $\ThetaB$ rather than arbitrary.
+A reset map can be invertible or noninvertible. If it is noninvertible, the
+effective hybrid dynamics loses information. That is a model of
+irreversibility at the chosen descriptive level, not automatically a
+fundamental arrow of time.
 
-In measurement theory, collapse events are postulated as irreducible. Here they are
-identified with selection events that also generate causal order. Thus measurement
-events and spacetime events are the same objects viewed through different diagnostics.
+For quantum states, an outcome event requires an instrument
+\(\{\mathcal I_a\}\), not only an effect or decoherence channel. The
+probability and conditional state are
+\[
+ p_a=\tr[\mathcal I_a(\rho)],
+ \qquad
+ \rho_a=\frac{\mathcal I_a(\rho)}{p_a}
+\]
+when \(p_a>0\). A nonselective channel
+\(\sum_a\mathcal I_a\) does not say which event occurred. The current MTT
+Born-source result is closed only on a restricted selected recorder and
+remains open for arbitrary apparatus contexts and objective ontic
+selection.
 
-% ============================================================
-\section{Cross-Sector Closure and Falsifiability}
-\label{sec:closure}
-% ============================================================
+Measurement has no privileged metaphysical role here. It is one physical
+process capable of producing records. The same event mathematics can
+describe switching, threshold crossings, detector clicks, or other
+transitions.
 
-\begin{theorem}[Cross-sector closure]\label{thm:closure}
-Within the coherent universality class on slabs, the following are fixed functions of
-the same bottleneck vector $\ThetaB$:
-\begin{enumerate}[label=(\roman*)]
-\item event density and causal order;
-\item collapse and measurement thresholds;
-\item ultraviolet completion data;
-\item canonical geometric discreteness.
-\end{enumerate}
-\end{theorem}
+\section{Covariance and Lorentz statistics}
 
-\begin{proof}
-Each quantity depends only on projection-induced truncation, spectral gaps, and
-stability margins encoded in $\ThetaB$. Independent tuning would require modifying
-$\ThetaB$, affecting all sectors simultaneously. \qedhere
-\end{proof}
+Lorentz-invariant or generally covariant statistics are properties of the
+event law. In Minkowski spacetime, a constant scalar Poisson intensity
+\[
+ \Lambda(B)=\rho\int_Bd^4x
+\]
+is invariant in law under proper orthochronous Poincare transformations. In
+curved spacetime, a scalar \(\lambda(x,z)\) integrated against
+\(d\vol_g\) is covariantly defined if the state variables and evolution are
+also geometrically specified.
 
-\begin{corollary}[Falsifiability]
-If any sector requires parameter values incompatible with $\ThetaB$ inferred from
-another, the coherent-sector hypothesis is falsified.
-\end{corollary}
+By contrast, a reset at equal coordinate-time intervals or a hazard tied to
+a preferred foliation generally breaks Lorentz symmetry. An approximately
+isotropic numerical event cloud is not a proof of invariant law.
 
-% ============================================================
-\section{Conclusions}
-% ============================================================
+\section{Relation to MTT data}
 
-We have shown that causal sets and measurement events arise as the same shadow of
-coherence-selection events under projection. Causal order, discreteness, and
-irreversibility are unified as reduced-dynamical consequences of admissibility and
-stability in the coherent sector.
+The local \(1+2+3\) filtration, shared phase line, finite q79 Hessian, and
+fixed-point stability results do not currently emit:
+\begin{itemize}
+\item a four-dimensional scalar trigger \(h\);
+\item a reset map \(R\);
+\item a spacetime hazard \(\lambda\);
+\item a covariant event-location rule;
+\item an event density in physical units.
+\end{itemize}
 
-Causal set discreteness is therefore effective rather than fundamental; Poisson
-sprinkling is an approximation whose density and deviations are fixed by coherent
-bottleneck data. Measurement collapse and spacetime events are identical objects
-viewed through different lenses.
+These objects could be derived in a future same-source event model. For
+example, a response functional might define a scalar threshold, while a
+selected detector or basin map defines the reset. But the cross-sector
+intertwiner and unit map must be exhibited. An internal spectral gap alone
+does not supply a four-volume intensity.
 
-All results are slab-local and admissibility-conditioned. Together with independent
-shadow constructions for collapse, measurement-induced transitions, ultraviolet
-completion, and canonical geometry, this provides a tightly overconstrained validation
-framework for coherence-based fundamental dynamics.
+\section{Status ledger}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}
+>{\raggedright\arraybackslash}p{0.31\textwidth}
+>{\raggedright\arraybackslash}p{0.18\textwidth}
+>{\raggedright\arraybackslash}X@{}}
+\toprule
+Statement & Status & Boundary\\
+\midrule
+Reset margin plus derivative bound gives dwell time & Exact &
+\autoref{thm:dwell}.\\
+Finite compensator gives local finiteness & Exact &
+\autoref{thm:compensator}.\\
+Local events inherit causal-set order & Exact, imported &
+Kinematic companion theorem.\\
+Positive stability margin excludes Zeno events & False in general &
+Event/reset law is additional.\\
+MTT selects trigger/reset law & Open &
+No same-source event generator.\\
+MTT predicts Lorentz-invariant event statistics & Open &
+Requires a covariant stochastic or hybrid law.\\
+Event channel selects objective outcome & Open &
+Instrument, probability, and ontology are separate.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Discussion}
+
+The corrected event route is sharper than the original proposal. It gives
+two concrete mathematical exits from the local-finiteness blocker and makes
+clear what a simulation would need to test. A hybrid simulation should log
+the reset margin and maximum trigger derivative. A stochastic simulation
+should estimate or certify compact-region compensators and test covariance
+of the full law, not only the appearance of one sample.
+
+The shortest path to an MTT-specific result is to construct one physical
+event source on the already selected free q79 QFT net. A detector
+instrument, a covariant hazard derived from its response kernel, and a
+finite-compensator proof would produce a genuine event causal set without
+assuming Poisson sprinkling.
+
+\section{Conclusion}
+
+Coherence-selection events can form a causal set, but only after
+non-accumulation and causal-order conditions are proved. Uniform reset
+margins and trigger bounds provide one route; finite stochastic compensators
+provide another.
+
+MTT has not yet selected either event law. The present result is therefore a
+conditional mathematical framework. It replaces an unsupported local-
+finiteness claim with exact, testable criteria and preserves the distinction
+between effective irreversibility, observed records, and objective outcomes.
+
 \begin{thebibliography}{99}
 
-\bibitem{MTT-Admissibility}
-P.~Nero,
-\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255621}
+\bibitem{Bombelli}
+L.~Bombelli, J.~Lee, D.~Meyer, and R.~D.~Sorkin,
+``Space-time as a causal set,''
+\emph{Physical Review Letters} \textbf{59} (1987), 521--524.
 
-\bibitem{MTT-Foundation}
-P.~Nero,
-\emph{Modal Triplet Theory: Foundation},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.16949762}
+\bibitem{DaleyVereJones}
+D.~J.~Daley and D.~Vere-Jones,
+\emph{An Introduction to the Theory of Point Processes, Volume I},
+Springer, 2003.
 
-\bibitem{MTT-FixedPoints}
-P.~Nero,
-\emph{Fixed Points I--VI: Complete Coherence Spine},
-Zenodo preprints, August 2025.
-\url{https://doi.org/10.5281/zenodo.16948748}
+\bibitem{Goebel}
+R.~Goebel, R.~G.~Sanfelice, and A.~R.~Teel,
+\emph{Hybrid Dynamical Systems: Modeling, Stability, and Robustness},
+Princeton University Press, 2012.
 
-\bibitem{MTT-ProjectionAdmissibility}
+\bibitem{MTTCausalKinematic}
 P.~Nero,
-\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255838}
+\emph{Causal Sets as a Conditional Coarse-Graining of Modal Triplet
+Theory},
+current revised MTT paper corpus, 2026.
 
-\bibitem{MTT-Closure}
+\bibitem{MTTMeasurement}
 P.~Nero,
-\emph{Closure and Inevitability in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255510}
-
-\bibitem{MTT-CoherenceCapacity}
-P.~Nero,
-\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255905}
-
-\bibitem{MTT-CoherenceDynamics}
-P.~Nero,
-\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256048}
-
-\bibitem{MTT-QM}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.17074246}
-
-\bibitem{MTT-QFT}
-P.~Nero,
-\emph{From MTT to Quantum Field Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17068816}
-
-\bibitem{MTT-GR}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to General Relativity},
-Zenodo preprint, October 2025.
-\url{https://doi.org/10.5281/zenodo.16950597}
-
-\bibitem{MTT-UVQG}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17077671}
-
-\bibitem{MTT-Measurement}
-P.~Nero,
-\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17177404}
-
-\bibitem{MTT-Irreversibility}
-P.~Nero,
-\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256408}
-
-\bibitem{MTT-Bell-Beables}
-P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17076300}
-
-\bibitem{MTT-Bell-Temporal}
-P.~Nero,
-\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
-Zenodo preprint, August 2025.
-\url{https://doi.org/10.5281/zenodo.18208884}
-
-\bibitem{MTT-Stochastic}
-P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18254862}
+\emph{Measurement and Coherence Selection in Modal Triplet Theory},
+current revised MTT paper corpus, 2026.
 
 \end{thebibliography}
+
 \end{document}

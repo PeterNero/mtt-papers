@@ -70,7 +70,7 @@ requires a connection-preserving trivialization.
 
 ### Witten anomaly
 
-V1's unrestricted “if and only if” is narrowed to the original isospin-1/2
+V1's unrestricted "if and only if" is narrowed to the original isospin-1/2
 doublet packet on spin spacetime. The even count is a consistency check and
 does not select three families.
 
@@ -156,6 +156,5 @@ Version 2 does not claim that topology alone derives:
   calculation repositories.
 - Primary mathematical and physics formulas were checked against the cited
   original literature.
-- TeX compilation, Markdown regeneration, migration metadata, and repository
-  verification are recorded by the canonical migration workflow.
-
+- The current source compiles successfully with repeated `pdflatex` passes.
+- The complete PDF is rendered and visually inspected before release freeze.

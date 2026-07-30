@@ -1,37 +1,60 @@
 ---
 abstract: |
-  Algebraic quantum field theory (AQFT) enforces relativistic locality at the level of observable algebras while allowing globally entangled states. However, AQFT alone does not explain why physically realized states are typically entangled, how entanglement propagates, or why measurement reduces entanglement without enabling superluminal signaling. We present a local, state-restricting framework in which physically admissible states are those induced by coherent-sector dynamics (bounded geometry, spectral gap, bounded coherent projector, and contractive stability). Entanglement is shown to arise as a global coherence constraint in configuration space, while microcausality and the time-slice property remain intact on spacetime. Measurement is modeled as localized disturbance followed by stabilization into admissible basins, yielding partial disentanglement. Standard Bell/CHSH and temporal Bell (Leggett–Garg) violations are recovered without nonlocal influence. Entanglement spreading via common ancestors (mediated entanglement and entanglement swapping) is interpreted as causal propagation of coherence constraints through local interactions. The framework integrates the MTT QFT-projection layer, the measurement-as-stabilization model, and the Bell/temporal-Bell analyses in a single AQFT-compatible description.
+  Algebraic quantum field theory (AQFT) separates locality of observable algebras from factorization of states: spacelike algebras may commute while a state on their joint algebra remains entangled. We formulate the precise MTT-compatible version of this distinction. Given an upper local net indexed over a globally hyperbolic four-dimensional base, a decomposable coherent projector, and the coherent-preserving local subalgebra, the fixed-point locality-descent theorem transports isotony and microcausality to the compressed net. Nonfactorizing states may restrict to that net, but admissibility and locality alone neither force entanglement nor select a Bell-violating state. Bell/CHSH violation is therefore compatible with upper-local dynamics when a suitable nonseparable state and local instruments are independently supplied. Measurement is treated as an ordinary localized completely positive instrument. Such instruments obey operational no-signaling under the standard locality assumptions; they cannot increase an entanglement monotone on average, although an individually postselected branch need not lose entanglement. Common-ancestor protocols and finite-speed correlation spreading remain standard local mechanisms. The result is a conditional AQFT-compatible MTT encoding, not a derivation of all physical states or measurement probabilities from admissibility alone.
 author:
 - Peter Nero
-current_version: v1.0
-date: Janury 2026
-generated_from_main_tex_sha256: 1bd31d3d007786e398113b1635d8a137e3f9a450c7bf9eda63b84b0efa0a0674
+current_version: v2
+date: July 2026, Version 2
+generated_from_main_tex_sha256: 43857ab4b9efbd06603cde2a8a84496589f01d112fa949428482926eb9538980
 paper_id: entanglement-locality-and-measurement-from-coherent-sec-110e8cbe
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: Entanglement, Locality, and Measurement from Coherent Sector Dynamics
-zenodo_doi: 10.5281/zenodo.18261393
-zenodo_record_id: 18261393
-zenodo_url: "https://zenodo.org/records/18261393"
+zenodo_doi: 10.5281/zenodo.21665963
+zenodo_record_id: 21665963
+zenodo_url: "https://zenodo.org/records/21665963"
 ---
+
+# Version 2 Revision Note
+
+Supersedes
+*Entanglement, Locality, and Measurement from Coherent Sector Dynamics*, version 1.
+
+Reason
+The earlier paper restricted the state space without defining the coherent-preserving local algebra, treated that restriction as if it typically produced entanglement, and claimed branchwise entanglement reduction from local measurement and upper contraction without a valid entanglement monotonicity theorem.
+
+Resolution
+This version imports the fixed-point locality-descent theorem from its Foundation owner, defines the compressed local net, separates commutation from state factorization, makes Bell and temporal-Bell statements conditional on supplied states and instruments, and replaces branchwise disentanglement by the correct average LOCC monotonicity statement.
+
+Retained result
+Upper-local dynamics, nonseparable states, local instruments, Bell correlations, and operational no-signaling are mutually compatible under the declared AQFT and descent hypotheses.
+
+Remaining boundary
+MTT does not yet select every physically realized entangled state, derive a general Bell state and detector pair from one upper source, or derive arbitrary measurement probabilities and entanglement dynamics from admissibility alone.
 
 # Introduction
 
-Quantum entanglement is often presented as a tension between locality and correlation. Relativistic quantum field theory resolves this tension formally in the algebraic framework (AQFT), which enforces strict locality at the level of observable algebras while allowing highly entangled global states . AQFT thereby explains why entanglement does not permit superluminal signaling, but it does not explain why physically realized states are typically entangled, how entanglement spreads, or how measurement reduces entanglement.
+Quantum entanglement is often presented as a tension between locality and correlation. Relativistic quantum field theory resolves this tension formally in the algebraic framework (AQFT), which enforces strict locality at the level of observable algebras while allowing highly entangled global states . AQFT thereby explains why entanglement does not permit superluminal signaling, but it does not select one physical state merely from the locality axioms. State preparation, interactions, and measurement instruments are additional physical data.
 
-In Modal Triplet Theory (MTT), physical states are not arbitrary states on the AQFT net: they are restricted by coherence admissibility (bounded geometry, spectral gap, bounded coherent projector, and stability margins encoded by the Fundamental Contractivity Condition, FCC) . Measurement is modeled as localized disturbance followed by stabilization into an admissible basin , and Bell/temporal-Bell violations are treated as projection artifacts of globally consistent coherent histories .
+In Modal Triplet Theory (MTT), one candidate physical sector is a restricted class of states on the AQFT net induced by coherent configurations satisfying bounded geometry, a spectral gap, a bounded coherent projector, and declared stability margins . Measurement can then be represented by an ordinary localized quantum instrument, with disturbance and subsequent stabilization providing an MTT interpretation of that instrument . The companion Bell paper explains how upper-local dynamics can coexist with nonfactorizing states, but retains state and instrument selection as explicit obligations .
 
 This paper provides a unified, AQFT-compatible formulation:
 
 - We do *not* modify AQFT axioms (locality, isotony, time-slice).
 
-- We restrict the physically relevant state space to an admissible class $`\mathcal{S}_{\mathrm{coh}}\subset\mathcal{S}(\mathcal{A})`$ induced by coherent-sector dynamics.
+- We define a candidate admissible class $`\mathcal{S}_{\mathrm{coh}}\subset\mathcal{S}(\mathcal{A})`$ induced by coherent-sector dynamics.
 
-- Entanglement is explained as a coherence constraint in configuration space, while microcausality and causal propagation remain intact on spacetime.
+- We derive locality of the compressed observable net from the coherent-preserving upper algebra; restricting states alone is not the locality proof.
 
-- Measurement reduces entanglement by disturbance + stabilization, without nonlocal influence.
+- We allow, but do not force, nonfactorizing states on commuting local algebras.
 
-- Entanglement propagation through common ancestors is treated as standard local interaction and causal spreading (Lieb–Robinson-type bounds).
+- We treat measurement by standard local completely positive instruments and separate their exact operational consequences from the MTT stabilization interpretation.
+
+- We treat common-ancestor generation and Lieb–Robinson propagation as standard local mechanisms whenever their Hamiltonian hypotheses are supplied.
+
+#### Concrete two-laboratory picture.
+
+Let Alice’s observables lie in $`\mathcal A_4(O_A)`$ and Bob’s in $`\mathcal A_4(O_B)`$, with $`O_A`$ spacelike to $`O_B`$. Locality says $`[A,B]=0`$; it does not say $`\omega(AB)=\omega(A)\omega(B)`$. A singlet state is the familiar example: the operators commute across the laboratories, the joint state does not factorize, and local choices cannot signal. The MTT question is therefore not whether such algebraic data are consistent. It is whether one selected upper state and one selected descent produce the required lower state and detector instruments. This paper establishes the conditional framework for that question.
 
 # AQFT preliminaries: locality and states
 
@@ -75,25 +98,42 @@ A state is *separable* on $`\mathcal{A}_1\vee\mathcal{A}_2`$ if it admits a conv
 ```
 Otherwise it is entangled. Thus entanglement is compatible with AQFT locality: non-factorization is a property of the state, not of commutators.
 
-AQFT therefore answers the *compatibility* question (“how can entanglement exist without signaling?”), but it does not by itself supply a selection principle for why physically realized states are typically non-factorizing.
+AQFT therefore answers the compatibility question, “How can entanglement exist without signaling?” It does not by itself select a particular nonfactorizing preparation.
 
 # Coherent-sector admissibility as a state-selection principle
 
-## Two-layer picture: configuration versus observables
+## Locality descent before state selection
 
-MTT distinguishes:
-
-1.  a higher-dimensional coherent configuration layer (10D / bundle manifold) in which admissibility and stability are formulated (spectral gaps, projector boundedness, contractive evolution);
-
-2.  an effective 4D observable layer described by AQFT on $`(Y^4,g)`$.
-
-The QFT-projection paper formalizes the effective AQFT output of coherent-sector reduction and renormalization on curved spacetimes (Hadamard states, local covariance, and standard renormalization freedoms) .
+Let $`\pi:M_{10}\to Y^4`$ be a bundle over the globally hyperbolic base and let
+``` math
+O\longmapsto\mathcal A_{10}(\pi^{-1}O)
+```
+be an upper net indexed by base regions. Let the coherent projector be decomposable over the base,
+``` math
+P=\int_{Y^4}^{\oplus}P_x\,d\mu(x).
+```
+The algebra that can be compressed without leaving the coherent sector is not the whole upper algebra. It is
+``` math
+\mathcal A_{10}^{P}(O)
+ =\{A\in\mathcal A_{10}(\pi^{-1}O):[A,P]=0\}.
+```
+Define the compressed net on $`\operatorname{Ran}P`$ by
+``` math
+\mathcal A_4(O)
+ =\{PAP|_{\operatorname{Ran}P}:A\in\mathcal A_{10}^{P}(O)\}.
+```
+The Fixed-Point Locality-Descent Theorem, proved in the Foundation paper, states that isotony descends and that upper commutation for spacelike separated base regions implies commutation of the compressed observables . The elementary identity is
+``` math
+[PAP,PBP]|_{\operatorname{Ran}P}
+ =P[A,B]P|_{\operatorname{Ran}P},
+```
+which is valid because both observables commute with $`P`$. This is the locality proof used below. It transports an existing upper local relation; it does not create locality from an arbitrary nonlocal projector.
 
 ## Admissible state class
 
 <div id="def:Scoh" class="definition">
 
-**Definition 1** (Admissible (coherent) state class). Let $`\mathcal{S}(\mathcal{A})`$ denote the space of AQFT states. Define $`\mathcal{S}_{\mathrm{coh}}\subset\mathcal{S}(\mathcal{A})`$ to be the subclass of states induced by admissible coherent configurations, i.e. those satisfying:
+**Definition 1** (Admissible (coherent) state class). Let $`\mathcal{S}(\mathcal{A}_4)`$ denote the space of states on the compressed net. Define $`\mathcal{S}_{\mathrm{coh}}\subset\mathcal{S}(\mathcal{A}_4)`$ to be the candidate subclass induced by coherent configurations for which:
 
 1.  bounded geometry on time slabs;
 
@@ -105,31 +145,37 @@ The QFT-projection paper formalizes the effective AQFT output of coherent-sector
 
 </div>
 
-This is a state-selection principle: AQFT axioms remain unchanged, but the set of physically realized states is restricted.
+This definition is a domain restriction, not an existence or uniqueness theorem. For a physical application one must construct at least one upper state whose restriction gives a member of this class and show that the preparation dynamics selects it.
 
-<div id="prop:locality-preserved" class="proposition">
+<div id="prop:locality-preserved" class="corollary">
 
-**Proposition 2** (Locality preserved). *For any $`\omega\in\mathcal{S}_{\mathrm{coh}}`$, microcausality <a href="#eq:microcausality" data-reference-type="eqref" data-reference="eq:microcausality">[eq:microcausality]</a> holds exactly as in AQFT.*
+**Corollary 2** (State restriction does not alter locality). *For every $`\omega\in\mathcal{S}_{\mathrm{coh}}`$, the commutation relations of the descended net remain those established by locality descent.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Microcausality is an algebraic property of the net $`\mathcal{O}\mapsto\mathcal{A}(\mathcal{O})`$, independent of state choice. Restricting to $`\mathcal{S}_{\mathrm{coh}}`$ does not alter commutators. ◻
+*Proof.* Microcausality is a property of the algebra, independent of which positive normalized functional is evaluated on it. Restricting the state class cannot change an operator commutator. ◻
 
 </div>
 
-## Entanglement as coherence constraint
+## Nonfactorization as an allowed coherence constraint
 
 <div id="prop:entanglement-coherence" class="proposition">
 
-**Proposition 3** (Entanglement from global coherence constraints). *States in $`\mathcal{S}_{\mathrm{coh}}`$ may be non-factorizing over spacelike-separated regions. Such non-factorization is interpreted as a coherence constraint in configuration space, not as superluminal influence in spacetime.*
+**Proposition 3** (Conditional nonfactorization). *Suppose an admissible upper state restricts to $`\omega\in\mathcal S_{\mathrm{coh}}`$ and the restriction of $`\omega`$ to $`\mathcal A_4(O_1)\vee\mathcal A_4(O_2)`$ is not separable in the sense of <a href="#eq:separable" data-reference-type="eqref" data-reference="eq:separable">[eq:separable]</a>. Then the descended state is entangled across $`O_1,O_2`$, while the local algebras still commute when the regions are spacelike separated.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Entanglement is the failure of the separable representation <a href="#eq:separable" data-reference-type="eqref" data-reference="eq:separable">[eq:separable]</a>. Commutation follows independently from the locality-descent theorem. Neither statement supplies a signal from one region to the other. ◻
 
 </div>
 
 <div class="remark">
 
-*Remark 4*. The phrase “global” here refers to configuration-space admissibility and stability constraints, not to a physical signal propagating in spacetime. This is the same logical distinction used throughout FP V–VI to separate global attractors in configuration space from unique spacetime histories .
+*Remark 4*. The proposition does not say that every admissible state is entangled. Calling nonfactorization a “global coherence constraint” is an MTT interpretation of a state already shown to be nonseparable; it is not a substitute for constructing that state.
 
 </div>
 
@@ -147,17 +193,17 @@ Classical local hidden-variable models yield $`|S|\le 2`$ . Quantum theory permi
 
 <div id="prop:bell" class="proposition">
 
-**Proposition 5** (Bell violation within AQFT locality). *For $`\omega\in\mathcal{S}_{\mathrm{coh}}`$, CHSH inequalities can be violated while microcausality holds.*
+**Proposition 5** (Conditional Bell compatibility). *Let $`\omega\in\mathcal{S}_{\mathrm{coh}}`$ and suppose selected observables $`A_i,B_j`$ give $`|S|>2`$. Then that violation is compatible with the microcausality of the descended net. It excludes the corresponding factorizable hidden-variable representation; it does not by itself exclude upper algebraic locality.*
 
 </div>
 
 <div class="proof">
 
-*Explanation.* Microcausality ensures $`[A_i,B_j]=0`$ but does not imply separability <a href="#eq:separable" data-reference-type="eqref" data-reference="eq:separable">[eq:separable]</a>. CHSH derivations of $`|S|\le 2`$ require a factorizable hidden-variable representation, which fails for generic entangled states. Since $`\mathcal{S}_{\mathrm{coh}}`$ includes non-factorizing admissible states, violations are possible. No signaling follows because commutators vanish and local marginals cannot be controlled by spacelike choices. ◻
+*Proof.* Microcausality ensures $`[A_i,B_j]=0`$ but does not imply <a href="#eq:separable" data-reference-type="eqref" data-reference="eq:separable">[eq:separable]</a>. The CHSH bound $`2`$ follows from the additional factorization assumptions. Hence its violation conflicts with those assumptions, not with the operator commutators. Operational no-signaling requires the local-instrument hypotheses stated below. ◻
 
 </div>
 
-This connects directly to the MTT Bell analysis: Bell nonlocality is a failure of classical factorization, interpreted as a projection artifact of a local higher-dimensional ontology .
+This is the status of the companion MTT Bell analysis: upper-local dynamics can coexist with lower nonfactorization, but a physical MTT realization must still emit the singlet state and detector instruments from one selected upper source .
 
 # Temporal Bell (Leggett–Garg) violations from disturbance + stabilization
 
@@ -172,44 +218,76 @@ under macrorealism and noninvasive measurability.
 
 <div id="prop:temporal" class="proposition">
 
-**Proposition 6** (Temporal Bell violations). *Temporal Bell/Leggett–Garg violations in $`\mathcal{S}_{\mathrm{coh}}`$ arise because measurement is necessarily invasive: it acts as a disturbance that perturbs coherence, followed by stabilization into an admissible basin.*
+**Proposition 6** (Conditional temporal witness). *For a specified sequential instrument, an observed value $`K>1`$ excludes the conjunction of macrorealism and noninvasive measurability used to derive <a href="#eq:LG" data-reference-type="eqref" data-reference="eq:LG">[eq:LG]</a>. If the instrument changes the later joint statistics, it supplies an explicit failure of the noninvasiveness premise. Coherent-sector admissibility alone does not determine the value of $`K`$.*
 
 </div>
 
 <div class="remark">
 
-*Remark 7*. This is precisely the mechanism formalized in the temporal Bell and measurement papers: violations reflect global consistency constraints on admissible histories together with unavoidable disturbance .
+*Remark 7*. The MTT disturbance-and-stabilization language can model the invasive instrument, but a numerical violation still requires a prepared state, Hamiltonian or channel, measurement times, and outcome operators .
 
 </div>
 
-# Measurement as disturbance and stabilization: partial disentanglement
+# Local measurement instruments and entanglement
 
-We model measurement as a localized interaction channel described by a completely positive (CP) instrument. In density-operator language, an outcome channel $`m`$ is
+Measurement is an ordinary localized physical interaction represented by a completely positive instrument $`\{\mathcal M_m\}`$, where each map is trace-nonincreasing and $`\sum_m\mathcal M_m`$ is trace preserving. In density-operator language,
 ``` math
 \begin{equation}
 \label{eq:instrument}
-\rho \mapsto \rho_m'=\frac{\mathcal{M}_m(\rho)}{\Tr(\mathcal{M}_m(\rho))},
+\rho \mapsto \rho_m'=\frac{\mathcal{M}_m(\rho)}{p_m},
+\qquad p_m=\operatorname{Tr}(\mathcal M_m(\rho)),
 \qquad
 \mathcal{M}_m(\rho)=\sum_\alpha K_{m,\alpha}\rho K_{m,\alpha}^\ast.
 \end{equation}
 ```
-In MTT interpretation, the Kraus operators represent: (i) a localized disturbance (kicking modal amplitudes), and (ii) stabilization/damping returning the configuration to an admissible basin .
+In an MTT realization, the Kraus operators and outcome maps must be derived from the localized interaction and stabilization dynamics; naming those stages does not determine the instrument .
+
+<div id="prop:nosignal" class="proposition">
+
+**Proposition 8** (Nonselective local no-signaling). *Let $`\Lambda_A=\sum_m\mathcal M_m`$ be trace preserving. For every bipartite state $`\rho_{AB}`$,
+``` math
+\operatorname{Tr}_A\!\left[(\Lambda_A\otimes I_B)(\rho_{AB})\right]
+=\operatorname{Tr}_A\rho_{AB}.
+```
+Thus Bob’s unconditioned state is unchanged by Alice’s local instrument.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The dual map $`\Lambda_A^\ast`$ is unital. For every Bob observable $`B`$,
+``` math
+\operatorname{Tr}\!\left[(\Lambda_A\otimes I)(\rho_{AB})(I\otimes B)\right]
+ =\operatorname{Tr}\!\left[\rho_{AB}(\Lambda_A^\ast(I)\otimes B)\right]
+ =\operatorname{Tr}\!\left[\rho_{AB}(I\otimes B)\right].
+```
+ ◻
+
+</div>
 
 <div id="prop:partial" class="proposition">
 
-**Proposition 8** (Partial disentanglement). *Let $`\rho_{AB}`$ be a bipartite state. A local measurement on $`A`$ produces
+**Proposition 9** (Average entanglement monotonicity). *Let $`E`$ be an entanglement monotone satisfying strong monotonicity under local operations. For
 ``` math
-\rho_{AB}\mapsto \rho'_{AB,m}=\frac{(\mathcal{M}_m\otimes I)\rho_{AB}}{\Tr((\mathcal{M}_m\otimes I)\rho_{AB})},
+p_m=\operatorname{Tr}[(\mathcal M_m\otimes I)(\rho_{AB})],
+ \qquad
+ \rho_{AB,m}=\frac{(\mathcal M_m\otimes I)(\rho_{AB})}{p_m},
 ```
-which generically reduces entanglement between $`A`$ and $`B`$ by damping off-diagonal coherence in the measured sector.*
+one has
+``` math
+\sum_m p_m E(\rho_{AB,m})\le E(\rho_{AB}).
+```
+An individual postselected branch may have larger entanglement than the input; branchwise reduction is not a theorem.*
 
 </div>
 
-<div class="remark">
+<div class="proof">
 
-*Remark 9*. This explains “collapse-like” behavior without superluminal influence: the operation is local, but the global admissible state is updated after disturbance and stabilization.
+*Proof.* The displayed inequality is the strong LOCC monotonicity condition for an entanglement monotone . Postselection explains why no pointwise inequality in $`m`$ follows. ◻
 
 </div>
+
+The current q79 binary one-anchor recorder supplies one selected operational output law and exact second-moment capture descent on its declared commuting output algebra. That result does not yet construct arbitrary bipartite instruments or a general entanglement-decay law.
 
 # Entanglement propagation: common ancestors and causal spreading
 
@@ -219,7 +297,7 @@ Entanglement can be created between subsystems that never directly interacted by
 
 Let $`A,B,C`$ be three subsystems. Suppose $`A`$ interacts locally with $`C`$ and later $`B`$ interacts locally with $`C`$. After tracing out $`C`$, $`\rho_{AB}`$ can become entangled even if $`A`$ and $`B`$ had no shared creation history.
 
-In MTT terms, $`C`$ acts as a *common coherence ancestor* in configuration space: local interactions impose a joint admissibility constraint that propagates through admissible dynamics.
+In MTT language, $`C`$ may be called a *common coherence ancestor*. The mathematical mechanism is still the supplied sequence of local interaction channels; the label adds no nonlocal dynamics.
 
 ## Finite-speed spreading
 
@@ -230,165 +308,135 @@ In many-body and lattice models, locality of interactions implies Lieb–Robinso
 \|[A(t),B]\|\le C\,e^{-\mu(d-vt)}.
 \end{equation}
 ```
-This expresses finite-speed propagation of influence/correlation. In the MTT coherent regime, effective causal cones and bounded-geometry dynamics provide analogous control: correlations spread through local interaction, but signaling remains bounded by the effective light cone.
+This expresses a finite propagation cone for the stated lattice Hamiltonian. An MTT model inherits such a bound only after its local generator satisfies the corresponding Lieb–Robinson hypotheses. In a relativistic AQFT model, the relevant exact input is instead microcausality and, where supplied, hyperbolic propagation.
 
 <div class="remark">
 
-*Remark 10*. Equation <a href="#eq:LR" data-reference-type="eqref" data-reference="eq:LR">[eq:LR]</a> is a standard template; the precise constants depend on the effective dynamics. The conceptual point is that “entanglement spreading” is causal: it proceeds through a chain of local interactions and does not constitute superluminal influence.
+*Remark 10*. Equation <a href="#eq:LR" data-reference-type="eqref" data-reference="eq:LR">[eq:LR]</a> is a standard theorem under model-specific hypotheses, not a consequence of bounded geometry alone. It illustrates how correlations can spread through local interactions without superluminal signaling.
 
 </div>
 
 # What is explained and what is not
 
-This framework:
+Under its declared hypotheses this framework:
 
-- preserves AQFT locality and causal propagation;
+- derives locality of the compressed coherent-preserving net;
 
-- explains entanglement as non-factorization induced by coherent admissibility constraints;
+- permits nonfactorizing states without confusing them with noncommuting spacelike observables;
 
-- explains measurement-induced partial disentanglement as disturbance + stabilization;
+- proves nonselective local no-signaling and average entanglement monotonicity for standard local instruments;
 
-- accounts for Bell and temporal Bell violations without nonlocal influence.
+- makes Bell and temporal-Bell compatibility conditional on the supplied states, channels, and observables; and
 
-It does not claim a unique global spacetime history or a global S-matrix on generic curved backgrounds. Where asymptotic flatness fails, the correct description is via local algebras and states.
+- keeps common-ancestor and finite-speed propagation within standard local dynamics.
+
+It does not prove that admissibility selects entanglement, determine a Bell-violating preparation, derive every measurement instrument, or produce a unique global history. Where asymptotic flatness fails, local algebras and states remain the appropriate framework.
 
 # Conclusion
 
-AQFT already reconciles entanglement with locality by separating algebraic locality (commutators) from state factorization. MTT adds a physically motivated state-selection principle: admissible coherent-sector states. Within this restriction, entanglement is interpreted as a coherence constraint in configuration space, while microcausality remains exact. Measurement reduces entanglement via localized disturbance and stabilization into admissible basins. Entanglement spreads through local interactions via common ancestors and finite-speed propagation. This supplies a coherent mathematical and physical account unifying AQFT locality with the MTT measurement and Bell analyses.
+AQFT reconciles entanglement with locality by separating algebraic commutation from state factorization. MTT adds a candidate coherent-sector restriction and, through the already-proved locality-descent theorem, a precise route from an upper local net to a compressed local net. The result supports the intended upper-world reading of Bell correlations: local dynamics and global nonseparability can coexist. It does not remove the need to construct the selected state and instruments. Measurement remains an ordinary local physical process, governed by completely positive maps and their standard no-signaling and entanglement-monotonicity properties.
 
-# A Ten–Dimensional Formulation in Fixed–Point Language
+# Upper-Bundle Formulation and Interface Obligations
 
-## 10D local algebras and locality
+## The upper net is indexed by the causal base
 
-Let $`M^{10}`$ denote the full Modal Triplet manifold equipped with the bundle/folding structure introduced in the Fixed Points series. For any causally admissible region $`\mathcal{U}\subset M^{10}`$, define a local observable algebra $`\mathcal{A}_{10}(\mathcal{U})`$ generated by fields supported in $`\mathcal{U}`$.
-
-Locality in ten dimensions is imposed in the standard algebraic sense: for spacelike–separated regions $`\mathcal{U}_1,\mathcal{U}_2\subset M^{10}`$,
+The notation $`M_{10}`$ does not require six additional time directions. Let $`\pi:M_{10}\to Y^4`$ be the upper bundle over the causal base. Locality is assigned to base regions:
 ``` math
-\begin{equation}
-\label{eq:10D-locality}
-[\mathcal{A}_{10}(\mathcal{U}_1),\mathcal{A}_{10}(\mathcal{U}_2)]=0.
-\end{equation}
+O\longmapsto\mathcal A_{10}(\pi^{-1}O).
 ```
-This axiom is purely kinematic and independent of any coherence or stability assumptions.
-
-## The coherent sector as an admissible invariant set
-
-Let $`\Pi_{\mathrm{coh}}`$ denote the coherent projector defined in FP I–II, acting on the 10D configuration space $`\mathcal{H}_{10}`$ and selecting the joint low–lying spectral sector compatible with the modal bundle structure.
-
-Define the coherent configuration space
+If $`O_1,O_2\subset Y^4`$ are spacelike separated, the upper locality hypothesis is
 ``` math
-\mathcal{H}_{\mathrm{coh}}:=\operatorname{Ran}(\Pi_{\mathrm{coh}}).
+[\mathcal A_{10}(\pi^{-1}O_1),
+   \mathcal A_{10}(\pi^{-1}O_2)]=0.
 ```
+Together with the decomposable projector and the algebra $`\mathcal A_{10}^P`$ defined in the main text, the Foundation locality theorem then gives the compressed local net. This paper uses that theorem; it does not reproduce or rename it.
 
-As in FP III–V, we restrict attention to an admissible invariant set $`D\subset\mathcal{H}_{\mathrm{coh}}`$ satisfying:
+## Upper states and lower nonfactorization
 
-1.  bounded geometry on time slabs;
-
-2.  persistence of a uniform spectral gap separating coherent from noncoherent modes;
-
-3.  boundedness of $`\Pi_{\mathrm{coh}}`$ on the relevant Sobolev scales;
-
-4.  disturbance–damping balance (FCC), ensuring local contractivity of the projected evolution.
-
-Physical configurations are elements of $`D`$. This restriction is dynamical and local; it does not modify the algebraic locality axiom <a href="#eq:10D-locality" data-reference-type="eqref" data-reference="eq:10D-locality">[eq:10D-locality]</a>.
-
-## States and non-factorization in FP language
-
-A ten–dimensional state is a positive normalized linear functional
+Let $`\omega_{10}`$ be a positive normalized functional on the upper algebra with support in the coherent sector. Its restriction to compressed observables defines
 ``` math
-\omega_{10}:\mathcal{A}_{10}\to\mathbb{C}.
+\omega_4(PAP|_{\operatorname{Ran}P})
+ :=\omega_{10}(PAP),
+ \qquad A\in\mathcal A_{10}^{P}(O),
 ```
-We say $`\omega_{10}`$ is *admissible* if its support lies in $`D`$.
+provided this assignment is representation independent. Alternatively, a declared conditional expectation onto the compressed algebra may be used. These are the required state-descent data; an unspecified “natural lift” is not enough.
 
-<div id="prop:10D-nonfact" class="proposition">
+Neither a nonproduct invariant set nor a spectral gap proves that $`\omega_4`$ is entangled. Entanglement is established only after the restricted functional is shown to violate a separability criterion or an entanglement witness. Once that is done, the commutation calculation and the state nonfactorization remain logically independent.
 
-**Proposition 11** (Global constraints without nonlocality). *Let $`\mathcal{U}_1,\mathcal{U}_2\subset M^{10}`$ be spacelike separated. For $`\omega_{10}`$ admissible, expectation values need not factorize:
-``` math
-\omega_{10}(AB)\neq \omega_{10}(A)\,\omega_{10}(B),
-\quad A\in\mathcal{A}_{10}(\mathcal{U}_1),\;B\in\mathcal{A}_{10}(\mathcal{U}_2),
-```
-even though <a href="#eq:10D-locality" data-reference-type="eqref" data-reference="eq:10D-locality">[eq:10D-locality]</a> holds.*
+## Why fixed-point contraction is not an entanglement theorem
 
-</div>
-
-<div class="remark">
-
-*Remark 12*. In FP terms, this non-factorization reflects the fact that the admissible invariant set $`D`$ is not a product set under decomposition into subregions. Admissibility imposes global constraints in configuration space while preserving local spacetime causality.
-
-</div>
-
-## Measurement as disturbance and contraction
-
-Measurement in the FP framework is modeled as a localized disturbance followed by stabilization under the projected dynamics. Schematically,
+An upper disturbance-and-relaxation model may have the schematic form
 ``` math
 \begin{equation}
 \label{eq:FP-measure}
-\Psi \;\mapsto\; T_\tau\bigl(\Psi+\delta\Psi\bigr),
-\qquad
-T_\tau:=\Pi_{\mathrm{coh}}\circ\Phi_\tau,
+ \Psi\longmapsto T_\tau(\Psi+\delta\Psi),
+ \qquad T_\tau=P\Phi_\tau.
 \end{equation}
 ```
-where $`\delta\Psi`$ is a bounded local perturbation and $`\Phi_\tau`$ is the unprojected time–$`\tau`$ evolution.
+A contraction estimate for $`T_\tau`$ controls distance in its declared configuration norm. It does not by itself control an entanglement monotone of a reduced density operator. To obtain such a statement one must supply:
 
-By FCC, $`T_\tau`$ is contractive on $`D`$. Hence disturbances are damped and the configuration returns to an admissible basin.
+1.  the map from upper configurations or states to the bipartite lower state;
 
-<div id="prop:10D-partial" class="proposition">
+2.  the localized outcome maps generated by the disturbance and relaxation;
 
-**Proposition 13** (Partial disentanglement). *Let $`\Psi\in D`$ encode correlations between degrees of freedom supported in disjoint regions. A local disturbance acting in one region followed by <a href="#eq:FP-measure" data-reference-type="eqref" data-reference="eq:FP-measure">[eq:FP-measure]</a> typically reduces cross–region correlations by contracting the configuration into a smaller admissible basin.*
+3.  complete positivity, normalization, and domain control for those maps;
 
-</div>
+4.  the relation between the upper contraction metric and a chosen lower entanglement measure; and
 
-This is the FP–language counterpart of partial disentanglement in the 4D CP–map description.
+5.  either an exact monotonicity theorem or a controlled error bound.
 
-## Entanglement propagation and common ancestors
+The q79 one-anchor recorder completes an operational probability interface on one restricted output algebra, but it does not yet provide this general bipartite interface.
 
-Consider three regions $`\mathcal{U}_A,\mathcal{U}_B,\mathcal{U}_C\subset M^{10}`$. Suppose $`\Psi`$ evolves such that:
+## Common ancestors are local channels
 
-- $`\mathcal{U}_A`$ overlaps with $`\mathcal{U}_C`$ at some time,
-
-- $`\mathcal{U}_B`$ overlaps with $`\mathcal{U}_C`$ at a later time,
-
-- $`\mathcal{U}_A`$ and $`\mathcal{U}_B`$ never overlap directly.
-
-<div id="prop:ancestor" class="proposition">
-
-**Proposition 14** (Common–ancestor correlations). *After tracing out degrees of freedom in $`\mathcal{U}_C`$, the reduced configuration on $`\mathcal{U}_A\cup\mathcal{U}_B`$ may exhibit non-factorizing correlations, even though no direct interaction occurred between $`\mathcal{U}_A`$ and $`\mathcal{U}_B`$.*
-
-</div>
-
-<div class="remark">
-
-*Remark 15*. In FP terms, $`\mathcal{U}_C`$ acts as a *common ancestor* by imposing a joint admissibility constraint on the configuration in $`D`$. Correlations propagate through local overlap and projected evolution, not by superluminal influence.
-
-</div>
-
-## Projection to four dimensions
-
-The effective four–dimensional AQFT description is obtained by projecting admissible 10D states to observables supported on the physical spacetime $`Y^4\subset M^{10}`$. Denote this pushforward by
+For three systems $`A,B,C`$, sequential local interactions $`U_{AC}`$ and $`U_{BC}`$ can leave the reduced state
 ``` math
-\omega_{4}(A):=\omega_{10}(\tilde A),
+\rho_{AB}
+ =\operatorname{Tr}_C\!\left[
+ U_{BC}U_{AC}\rho_{ABC}U_{AC}^\ast U_{BC}^\ast
+ \right]
 ```
-where $`\tilde A`$ is the natural lift of $`A\in\mathcal{A}(Y^4)`$.
+nonseparable even when $`A`$ and $`B`$ never interact directly. Calling $`C`$ a common coherence ancestor is compatible with MTT, but the displayed local channels are the mechanism. Their causal ordering and support must be derived from the selected dynamics.
 
-<div id="prop:projection" class="proposition">
+## Dependency and status table
 
-**Proposition 16** (4D entanglement as a projection artifact). *Non-factorizing correlations in $`\omega_{4}`$ arise as the projection of admissible 10D coherence constraints. Local commutativity in 4D is preserved because it descends from <a href="#eq:10D-locality" data-reference-type="eqref" data-reference="eq:10D-locality">[eq:10D-locality]</a>.*
+<div class="center">
+
+| Object | Status in this paper |
+|:---|:---|
+| Upper locality | Supplied hypothesis on the upper net |
+| Locality descent | Imported exact theorem from the Foundation owner |
+| Nonfactorizing state | Conditional on an explicitly restricted upper state |
+| Bell violation | Conditional on selected state and observables |
+| Local no-signaling | Exact for a nonselective local CPTP instrument |
+| Entanglement change | Average monotonicity for a declared entanglement monotone |
+| MTT measurement source | Exact only for the current restricted q79 recorder; general bipartite interface open |
 
 </div>
 
-## Alignment with FP I–VI
+#### Open boundary (not evidence of closure).
 
-This appendix shows that the entanglement framework used in the main text is the direct AQFT translation of FP I–VI principles:
+- (*open*).
 
-- admissible states correspond to invariant sets $`D`$;
+  Current 2/9 strict no-knob upgrade ledger.
 
-- Bell and temporal Bell violations reflect non-product structure of $`D`$;
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-- measurement corresponds to disturbance plus contraction under $`T_\tau`$;
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
 
-- entanglement propagation is causal transport of constraints through local overlap.
+The locality discussion depends on algebraic commutation, state nonfactorization, and the supplied measurement model. The mapped open ledger proves none of these statements; it is recorded only to delimit later claims of complete MTT-to-physics descent.
 
-Thus the 4D entanglement picture is fully aligned with the ten–dimensional fixed–point framework and introduces no additional assumptions beyond those already present in the FP series.
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 
@@ -410,7 +458,9 @@ A. J. Leggett and A. Garg, Quantum mechanics versus macroscopic realism: Is t
 
 E. H. Lieb and D. W. Robinson, The finite group velocity of quantum spin systems, , 28:251–257, 1972.
 
-P. Nero, Modal Triplet Theory: Foundation — A rigorous fixed-point framework for unified 4D physics, Preprint, 2025.
+G. Vidal, Entanglement monotones, , 47:355–376, 2000.
+
+P. Nero, The Projection–Admissibility Principle: Descent, Recovery, and Structural Constraints, Modal Triplet Theory preprint, 2026.
 
 P. Nero, Fixed Points III: Disturbance–Damping Balance and Stability, Preprint, 2025.
 

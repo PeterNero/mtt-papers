@@ -1,16 +1,16 @@
 {
-  "abstract": "Dirac delta functions enter classical and statistical mechanics most prominently as constraint distributions, for example in microcanonical measures \\rho_E(z)\\propto \\delta(H(z)-E) and in phase-space integrals restricted to a constraint surface. In the delta/projection program of Modal Triplet Theory (MTT), such deltas are not treated as primitive objects. They are re-read as singular limits of finite admissibility shells: finite-thickness neighborhoods around constraint surfaces that become exact only when the allowed tolerance is sent to zero. This paper develops the classical/statistical-mechanical member of that program. We prove a coarea-based shell theorem: for a regular value E of a smooth Hamiltonian H:M\\to\\mathbb R, normalized approximate identities \\eta_\\varepsilon(H(z)-E) converge distributionally to the surface delta \\delta(H-E), with the standard coarea measure d\\Sigma/\\left\\lvert \\nabla H \\right\\rvert. We then formulate finite-thickness microcanonical shells, show their convergence to the sharp microcanonical measure, and interpret the result in MTT language: \\delta(H-E) is the zero-thickness limit of an admissibility shell around a bookkeeping constraint. The paper also distinguishes three layers often conflated in formal notation: exact constraint surfaces, finite experimental/thermodynamic tolerance shells, and singular delta notation. The result is a concrete extension of the delta/projection program from QFT and measurement to classical and statistical mechanics.",
+  "abstract": "The formal microcanonical density \\delta(H-E) is a surface distribution, not an ordinary phase-space probability density. This paper gives a finite-shell formulation and states precisely when its normalized measures approach the sharp microcanonical ensemble. For a regular energy E, the coarea formula reduces phase-space integration to the density-of-states functions A_f(e)=\\int_{H^{-1}(e)} \\frac{f}{|\\nabla H|}\\,\\mathrm{d}\\Sigma_e. If \\eta_\\epsilon is a normalized approximate identity in energy, then the finite-shell expectation is the ratio of two ordinary convolutions, \\frac{(\\eta_\\epsilon*A_f)(E)} {(\\eta_\\epsilon*A_1)(E)}, and converges to A_f(E)/A_1(E). When the two density-of-states functions are locally Lipschitz, an explicit first-order error bound separates shell width, kernel shape, observable variation, and normalization bias. On a symplectic phase space, every shell whose density depends only on H is exactly invariant under the Hamiltonian flow; ergodicity is not needed for invariance and is not proved here. Critical energies, noncompact shells, ensemble equivalence, and a physical choice of shell profile require separate hypotheses. In Modal Triplet Theory (MTT), the result supplies a rigorous downstream target: selected geometry may emit a finite energy-tolerance profile, but neither the coarea theorem nor the sharp limit selects that profile or its width.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "unversioned",
-  "date": "April 2026",
+  "date": "July 2026, Version 1",
   "latest_zenodo_release": null,
-  "main_tex_sha256": "8ce883c7bbdaf736a51ebbf1b04a0722785727258a329765ebc628e2d74b4049",
+  "main_tex_sha256": "c660d446d9990dfe60a154c43d593b0cabb8c8a69b68557d696623cc88127b81",
   "paper_id": "classical-constraint-deltas-and-microcanonical-shells-a-9f4bdcc1",
-  "paper_md_sha256": "1a5619674a8750b274aa48d3c626a213e589a5b906fa309afc0325a61b04119c",
+  "paper_md_sha256": "543f7d3252448ea25fc91adab46c923fe8e6a07382b0f517917f1d0e5e9adc6f",
   "release_state": "not_matched_to_zenodo",
   "result_refs": [],
   "revision": {
@@ -24,21 +24,21 @@
       "sha256": "8ce883c7bbdaf736a51ebbf1b04a0722785727258a329765ebc628e2d74b4049"
     },
     {
-      "bytes": 17566,
+      "bytes": 17816,
       "path": "main.tex",
-      "sha256": "8ce883c7bbdaf736a51ebbf1b04a0722785727258a329765ebc628e2d74b4049"
+      "sha256": "c660d446d9990dfe60a154c43d593b0cabb8c8a69b68557d696623cc88127b81"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Classical_Constraint_Deltas_and_Microcanonical_Shells__Admissibility_Shell_Limits_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "44cd63ea86cf2afa9ace2c1c5ce588a0902f791753671aa570a1a2d5ed255ce2",
-  "title": "Classical Constraint Deltas and Microcanonical Shells Admissibility-Shell Limits in Modal Triplet Theory",
+  "source_tree_sha256": "fc6c8928cb602ad8fb1a2e2e141b78fe6bed280fa2ea836435937bb12723ce25",
+  "title": "Finite Microcanonical Shells and Their Sharp Constraint Limit Coarea Geometry, Quantitative Bias, and the MTT Source Boundary",
   "version_relation": "unknown",
   "zenodo_releases": []
 }

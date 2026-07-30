@@ -1,45 +1,45 @@
 {
-  "abstract": "This paper is the organizational roadmap for Modal Triplet Theory (MTT). It does not add a new physical derivation. It fixes the types, dependency order, and proof tiers needed to read the corpus without promoting analogies or target-compatible reconstructions into source theorems. A projection, a representative section, an exact upper decoder, autonomous reduced evolution, and effective-state merger solve different mathematical problems. Ordinary noninjectivity does not remove a right inverse; autonomous descent instead requires preservation of projection fibers. For physical ten-dimensional realizations we adopt the canonical convention pi:M10 -> Y4 with six-dimensional fiber X6. The modal triplet is represented by typed vertical bundles, operators, and projectors. It is not three extra coordinate factors. A compact shared circle is line-bundle phase or holonomy data and is not Lorentzian time or a seventh internal coordinate. Circle-Lens-Nil is retained as a useful obstruction taxonomy, not an exhaustive theorem forcing unique gravity, gauge, and quantum responses. We prove the corresponding conditional 4+6 realization statement and state the exact limits of that result. The roadmap classifies relations to quantum mechanics, quantum field theory, general relativity, the Standard Model, strings, quantum gravity, and AQFT by what is typed, reconstructed, selected, calibrated, or still open. Failure of one controlled chart means that chart has lost its certified domain; it does not imply that every mathematical or physical description has ceased to exist. Paper-level status is a dated snapshot, while the current A/B ledger and selected source hashes remain authoritative.",
+  "abstract": "This paper is the organizational roadmap for Modal Triplet Theory (MTT). It does not add a new physical derivation. It fixes the types, dependency order, and proof tiers needed to read the corpus without promoting analogies or target-compatible reconstructions into source theorems. A projection, a representative section, an exact upper decoder, autonomous reduced evolution, and effective-state merger solve different mathematical problems. Ordinary noninjectivity does not remove a right inverse; autonomous descent instead requires preservation of projection fibers. For physical ten-dimensional realizations we adopt a four-dimensional base with a six-dimensional compact fiber. The modal triplet is represented by typed vertical bundles, operators, and projectors. It is not three extra coordinate factors. A compact shared circle is line-bundle phase or holonomy data and is not Lorentzian time or a seventh internal coordinate. Circle-Lens-Nil is retained as a useful obstruction taxonomy, not an exhaustive theorem forcing unique gravity, gauge, and quantum responses. We prove the corresponding conditional 4+6 realization statement and state its limits. The roadmap classifies relations to quantum mechanics, quantum field theory, general relativity, the Standard Model, strings, quantum gravity, and AQFT by what is typed, reconstructed, selected, calibrated, or still open. Failure of one controlled chart means that chart has lost its certified domain; it does not imply that every mathematical or physical description has ceased to exist. Paper-level status is a dated snapshot, while the current A/B ledger and selected source hashes remain authoritative.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v12",
-  "date": "July 2026",
+  "current_version": "v13",
+  "date": "July 2026 Version 13",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262454",
-    "created": "2026-04-12T11:01:16.239124+00:00",
+    "created": "2026-07-29T08:51:16.991170+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.19535807",
+    "doi": "10.5281/zenodo.21655395",
     "files": [
       {
-        "checksum": "md5:ad043f4c1e4e0cfbca6ffd2db98bbda3",
-        "content_url": "https://zenodo.org/api/records/19535807/files/Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11%20(1).pdf/content",
-        "key": "Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11 (1).pdf",
-        "size": 330735
+        "checksum": "md5:5ab778a84c3505fcfaf8e33a920072d2",
+        "content_url": "https://zenodo.org/api/records/21655395/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 408235
       }
     ],
-    "id": "19535807",
-    "match_kind": "title_or_file",
+    "id": "21655395",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-04-12",
-    "record_url": "https://zenodo.org/records/19535807",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21655395",
     "resource_type": "publication",
-    "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description",
-    "updated": "2026-04-12T11:01:16.827487+00:00",
-    "version": "v11.0"
+    "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description A Typed and Tiered Corpus Roadmap",
+    "updated": "2026-07-29T08:51:17.331518+00:00",
+    "version": "v13"
   },
-  "main_tex_sha256": "698ec706e1d9ae9e1774e4901595d1dd9f60f407d9d3579de637f2d07f04784b",
+  "main_tex_sha256": "c2722daaaa16cb710bb14780c1dc367c0d7dbb20525ef3a55a49a08024d96403",
   "paper_id": "modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed",
-  "paper_md_sha256": "18a54e5724d00537a451d1c083d6d5077876ba61970ca412d6ed06fb3485e86e",
+  "paper_md_sha256": "1f7798f9c9526a8866ecc695e43750e1ddb941afd9660375f6847542ed0a0b28",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "69f6af047a12efbb6be4d2e68947d2c73d24528708aef86788e4496456b76e67",
+    "revision_evidence_sha256": "f2f03b8604df104f37c4b48c4f93dafd142297fa9a2ba3cefa5edd8aa3027909",
     "selected_revision": true,
     "superseded_source_path": "1 Core & Encodings/_work/Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11"
   },
@@ -51,14 +51,14 @@
       "sha256": "a38a9b989925483bd05866dee4cdcc359608f36b30ee5b1340078d3715d8c4dc"
     },
     {
-      "bytes": 373717,
+      "bytes": 408235,
       "path": "main.pdf",
-      "sha256": "1279eb5d3b461388b743895162a82100afe978a85f64ac6f9db9f372b705e0d2"
+      "sha256": "06d85ee6905ea4d3d478576d58e772e15a228ed8752ccac675def0ecd581c430"
     },
     {
-      "bytes": 28721,
+      "bytes": 34423,
       "path": "main.tex",
-      "sha256": "698ec706e1d9ae9e1774e4901595d1dd9f60f407d9d3579de637f2d07f04784b"
+      "sha256": "c2722daaaa16cb710bb14780c1dc367c0d7dbb20525ef3a55a49a08024d96403"
     },
     {
       "bytes": 92730,
@@ -76,23 +76,73 @@
       "sha256": "7e4ed114d64deccecb0cb22cbae32b8194e89e11183ce15c974a0503e8d99e83"
     },
     {
-      "bytes": 6830,
+      "bytes": 8050,
       "path": "REVISION_AUDIT.md",
-      "sha256": "69f6af047a12efbb6be4d2e68947d2c73d24528708aef86788e4496456b76e67"
+      "sha256": "f2f03b8604df104f37c4b48c4f93dafd142297fa9a2ba3cefa5edd8aa3027909"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/Modal_Triplet_Theory__Admissibility__Encodings__and_the_Structure_of_Physical_Description_v11"
   },
-  "source_tree_sha256": "fe8932bbdb5e63b2a39644cf5c6eaf4e91baff3a2a0b594c8417d0c505956164",
-  "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description: A Typed and Tiered Corpus Roadmap",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "42ec7625bca67adad43fb61ef2fc061f182a90212f26f914f93a4082704b293f",
+  "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description A Typed and Tiered Corpus Roadmap",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262454",
+      "created": "2026-07-29T08:51:16.991170+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655395",
+      "files": [
+        {
+          "checksum": "md5:5ab778a84c3505fcfaf8e33a920072d2",
+          "content_url": "https://zenodo.org/api/records/21655395/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 408235
+        }
+      ],
+      "id": "21655395",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655395",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description A Typed and Tiered Corpus Roadmap",
+      "updated": "2026-07-29T08:51:17.331518+00:00",
+      "version": "v13"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18262454",
+      "created": "2026-07-28T17:40:01.049619+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650882",
+      "files": [
+        {
+          "checksum": "md5:65541f77fd56342bafd25a3f55c3469a",
+          "content_url": "https://zenodo.org/api/records/21650882/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 373717
+        }
+      ],
+      "id": "21650882",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650882",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description: A Typed and Tiered Corpus Roadmap",
+      "updated": "2026-07-28T17:40:01.391924+00:00",
+      "version": "v12"
+    },
     {
       "concept_doi": "10.5281/zenodo.18262454",
       "created": "2026-04-12T11:01:16.239124+00:00",

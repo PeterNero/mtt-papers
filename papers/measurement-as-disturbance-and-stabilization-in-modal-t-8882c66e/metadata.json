@@ -1,60 +1,88 @@
 {
-  "abstract": "In Modal Triplet Theory (MTT), the problem of measurement is not solved by introducing collapse, hidden variables, or branching worlds. Instead, measurement is understood as an ordinary episode of the evolve\u2013project cycle on the ten-dimensional arena M_{10}=Y\\times X_6. A measuring device acts as a localized disturbance: a disturbance that pushes a coherent mode off the quiet submanifold defined by three commuting filters. The system then undergoes re-coherence: local smoothing damps high-frequency jitter, while global projection selects the admissible harmonic content. The outcome of measurement is the stabilized branch into which the system falls. Born probabilities emerge from the relative basin volumes of these branches, not from fundamental indeterminacy. Uncertainty relations are interpreted as Ornstein\u2013Uhlenbeck (OU) floors: finite widths that remain after balancing disturbance against damping. Famous quantum experiments\u2014double-slit interference, Stern\u2013Gerlach spin splitting, Bell correlations, quantum Zeno, Ramsey echoes\u2014are reinterpreted in this framework as specific ways in which localized disturbances stress the modal geometry and how coherence is restored. The result is a deterministic ten-dimensional ontology that produces effective stochasticity in four dimensions, with clear predictions for reversibility curves, threshold knees, and noise-assisted switching.",
+  "abstract": "Measurement is an ordinary physical interaction, but an adequate mathematical description must distinguish three stages: apparatus coupling, completion into an outcome-resolved transition, and stabilization of the resulting record. This paper formulates that distinction for Modal Triplet Theory (MTT). A localized coupling may displace a state from a quiet coherent regime, and contractive dynamics inside a selected record basin may then stabilize a repeatable record. Neither fact chooses a basin. We therefore introduce the missing transition-completion object: a normalized kernel, or in quantum language an instrument, that assigns both an outcome probability and a post-outcome state. We prove that one global contraction cannot support multiple stable outcomes, derive the exact normalization and conditional-state laws of a completion kernel, and distinguish failure of unique decoding from the possible existence of a representative section. Decoherence suppresses interference within an outcome algebra but does not select one instrument element. The Born rule requires a selected preparation law and a basin–trace or instrument–trace equality. The current q79 binary one-anchor recorder supplies such an exact stopped-output law on its declared domain; arbitrary apparatus contexts and objective one-history selection remain open. An Ornstein–Uhlenbeck variance is retained only as a conditional linear-response model and is not identified with the Heisenberg uncertainty principle.",
   "authors": [
-    "Peter Nero January 2026"
+    "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v5",
-  "date": "",
+  "current_version": "v6",
+  "date": "July 2026, Version 6",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17177404",
-    "created": "2026-01-21T19:32:53.523117+00:00",
+    "created": "2026-07-29T08:51:12.544713+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18330568",
+    "doi": "10.5281/zenodo.21665982",
     "files": [
       {
-        "checksum": "md5:d8a79c35115963e14cb53452c3e771b9",
-        "content_url": "https://zenodo.org/api/records/18330568/files/Measurement_as_Disturbance_and_Stabilization_in_Modal_Triplet_Theory_v5.pdf/content",
-        "key": "Measurement_as_Disturbance_and_Stabilization_in_Modal_Triplet_Theory_v5.pdf",
-        "size": 314531
+        "checksum": "md5:5324f1b1c8b3dbd4735654f981c4ae2a",
+        "content_url": "https://zenodo.org/api/records/21665982/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 266049
       }
     ],
-    "id": "18330568",
-    "match_kind": "title_or_file",
+    "id": "21665982",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18330568",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665982",
     "resource_type": "publication",
-    "title": "Measurement as Disturbance and Stabilization in Modal Triplet Theory",
-    "updated": "2026-01-21T19:32:53.995897+00:00",
-    "version": "v5.0"
+    "title": "Measurement as Physical Disturbance, Outcome Completion, and Record Stabilization in Modal Triplet Theory",
+    "updated": "2026-07-29T08:51:13.357713+00:00",
+    "version": "v6"
   },
-  "main_tex_sha256": "f058d9e5a6041eacc846fcee7565f974ba7395073942f0cfec63124ab80c910d",
+  "main_tex_sha256": "2a2d82a2e44e62005fef0d8295285975cf6c2fdbe3e911a727f52d78c1587686",
   "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
-  "paper_md_sha256": "8aa5e90d9c0e0f525f75a6c4f90bc29d9094e7ad974513960b7cbe0a97e2a74f",
+  "paper_md_sha256": "a660c8ac63aa546fc2041ba4074240f31de15396344ff464323c72972551fec3",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "7dbfe4d18d2204a34de11bc6b996da970f1043ede246faedcf365e0fe8171179",
+    "selected_revision": true,
+    "superseded_source_path": "8 Measurement, Selection & Computation/_work/Measurement_as_Disturbance_and_Stabilization_in_Modal_Triplet_Theory_v5"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 51122,
+      "bytes": 24950,
       "path": "main.tex",
-      "sha256": "f058d9e5a6041eacc846fcee7565f974ba7395073942f0cfec63124ab80c910d"
+      "sha256": "2a2d82a2e44e62005fef0d8295285975cf6c2fdbe3e911a727f52d78c1587686"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "8 Measurement, Selection & Computation/_work/Measurement_as_Disturbance_and_Stabilization_in_Modal_Triplet_Theory_v5"
   },
-  "source_tree_sha256": "0018746cb70323341f66c5e8f179d717cb3e315ad56b72cf06eccfa92700383d",
-  "title": "Measurement as Disturbance and Stabilization in Modal Triplet Theory",
+  "source_tree_sha256": "a05cb0eb8d453555372c62dd4e344ec709673051ea6e204a5d2c3e8fcde9149d",
+  "title": "Measurement as Physical Disturbance, Outcome Completion, and Record Stabilization in Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17177404",
+      "created": "2026-07-29T08:51:12.544713+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665982",
+      "files": [
+        {
+          "checksum": "md5:5324f1b1c8b3dbd4735654f981c4ae2a",
+          "content_url": "https://zenodo.org/api/records/21665982/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 266049
+        }
+      ],
+      "id": "21665982",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665982",
+      "resource_type": "publication",
+      "title": "Measurement as Physical Disturbance, Outcome Completion, and Record Stabilization in Modal Triplet Theory",
+      "updated": "2026-07-29T08:51:13.357713+00:00",
+      "version": "v6"
+    },
     {
       "concept_doi": "10.5281/zenodo.17177404",
       "created": "2026-01-21T19:32:53.523117+00:00",

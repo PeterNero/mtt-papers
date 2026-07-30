@@ -1,187 +1,213 @@
-# Book v10 Current-Corpus Reconciliation Audit
+# Book v11 Interpretive Release Audit
 
-Date: 2026-07-15
+## v11 publication delta
 
-Status: implemented, verified, compiled, and visually inspected
+- **Supersedes:** v10.
+- **Reason:** the technically corrected book still needed a more consistently
+  interpretive reading experience and clean separation of description,
+  revision history, and theorem ownership.
+- **Resolution:** the canonical source now foregrounds ordinary-language
+  explanation, retains only subordinate mathematics, and points technical
+  claims to their owning papers.
+- **Retained:** all v10 claim tiers, withdrawals, and open-boundary judgments.
+- **Remaining:** the Book owns no theorem and does not promote any open MTT
+  research gate.
 
-## Scope
+Date: 2026-07-28
 
-This audit records the contextual rewrite of the largest interpretive MTT
-paper:
+Status: interpretive rewrite implemented; final build and visual verification
+recorded below
 
-- preserved source: `_work/The_Book_on_Modal_Triplet_Theory_v9/main.tex`
+## Purpose of the Book
+
+*The Book on Modal Triplet Theory* is the low-mathematics interpretive
+companion to the MTT corpus. Its job is to let a reader understand the
+program's central picture before reading the technical papers.
+
+The Book therefore:
+
+- explains the motivation, ontology, and physical interpretation in ordinary
+  language;
+- preserves the broad narrative route of version 9;
+- uses only a few iconic mathematical expressions;
+- gives short technical boundaries where an interpretation could be mistaken
+  for a result;
+- points to the paper that owns each proof; and
+- separates current achievements, reconstructions, open bridges, and
+  speculative extensions without turning the main narrative into a ledger.
+
+The Book does **not** own a theorem, proposition, lemma, corollary, proof, or
+canonical numerical certificate.
+
+## Why the First v10 Rewrite Was Insufficient
+
+The first version-10 reconciliation correctly removed formal theorem
+environments and corrected many old claims. It nevertheless became a
+compressed technical status document:
+
+- version 9 contained about 34,300 source words and 23 displayed equations;
+- the first v10 draft contained about 6,400 source words and 28 displayed
+  equations; and
+- its chapter sequence was organized around Hilbert bundles, fixed-point
+  gates, explicit carrier formulas, matrices, and claim ledgers.
+
+It was theorem-free in form but not interpretive in experience. That did not
+match the intended role of the Book.
+
+The second v10 rewrite restores an intuition-first narrative. It contains
+about 9,700 source words, three displayed mathematical expressions, no formal
+results, and one paper-navigation table.
+
+## Preserved Source and Successor
+
+- historical source:
+  `_work/The_Book_on_Modal_Triplet_Theory_v9/main.tex`
 - revised successor:
   `revised_tex_vnext/The_Book_on_Modal_Triplet_Theory_v10/main.tex`
+- canonical repository source:
+  `papers/the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793/main.tex`
 - superseded edition: version 9, January 2026
 - current edition: version 10, July 2026
 
-Version 9 is preserved unchanged. Version 10 is a new edition rather than an
-in-place repair.
+Version 9 remains preserved unchanged. Version 10 is a new edition, not an
+in-place alteration of the historical source.
 
-## Why a Full Rewrite Was Required
+## Narrative Architecture Restored
 
-Version 9 did not contain one isolated incorrect theorem. Its interpretive
-architecture repeatedly promoted assumptions, analogies, conditional models,
-and profile replays into derivations. A preface-level disclaimer would have
-left those promotions active in later chapters. Version 10 therefore rebuilds
-the exposition around a claim-type system and restates every major physical
-claim at the tier supported by the current corpus.
+The revised Book follows the conceptual movement of the original:
 
-## Controlling Authorities
+1. why a common preprojection language may be useful;
+2. one physical world represented through several descriptions;
+3. projection, coherence, return, and admissibility;
+4. the four-plus-six arena and world-in-world comparison;
+5. the one-two-three filtration and circle/lens/nil interpretation;
+6. the q79/Fu--Yau global candidate and missing local-to-global bridge;
+7. proto-spinors, particles, forces, the finite matrices, masses, and Theta;
+8. quantum mechanics, ordinary physical measurement, QFT, and strings;
+9. gravity as closure strain, quantum gravity, time, memory, and cosmology;
+10. a plain-language account of fixed points, achievements, open work, and
+    possible falsifiers; and
+11. a reading map to the technical owners.
 
-The rewrite was checked against the current revised TeX papers and the locked
-calculation authorities, including:
+The following original intentions are explicitly preserved:
 
-- Foundation v7 and its projection, signature, scale, kinematics, and typed-
-  atlas companions;
-- corrected Fixed Points I--VI;
-- corrected Theta Closure I--V and Execution I--II;
-- current proto-spinor, world-in-world, closure-strain, worldsheet, and
-  ten-dimensional action papers;
-- `MTT_FOUNDATIONAL_GEOMETRY_RECONCILIATION_2026-07-15.md`;
-- `MTT_Current_TrueSMClosure_ConsolidatedLedger_v1.md`;
-- `MTT_Selected_FinalGlobalTrueSMClosureAudit_AfterMultiLoopPrecision_v1.md`;
-- `MTT_Selected_StrictNoKnobUpgradeLedger_AfterTrueSMEquivalence_v1.md`; and
-- `MTT_Selected_PhysicalFiniteDiracOperatorAndIntersectionForm_or_FullFiniteTripleClosure_v1.md`.
+- the Book is an interpretation of one connected physical ontology;
+- particles may be persistent patterns rather than primitive beads;
+- forces may be rules of geometric comparison;
+- measurement is an ordinary physical process that leaves a record, not a
+  privileged metaphysical act;
+- gravity may be the visible closure-strain response of a richer carrier;
+- postprojection rules may have simpler preprojection origins; and
+- the broad cosmological picture may be explored as interpretation after the
+  action and observable pipeline are derived.
 
-Historical packet status labels were not treated as authority. The current
-consolidated ledger controls wherever an older packet conflicts with it.
+## Current-Corpus Corrections Retained
 
-## Major Claim Reconciliation
+The accessible style does not restore superseded claims. Version 10 retains
+the following corrections:
 
-| Version 9 claim class | Version 10 treatment | Current status |
-|---|---|---|
-| One field, three filters, one inequality selects one world | Retired as a theorem slogan | Fixed-point closure requires separate domain, commutation, contraction or compactness, equilibrium, leakage, and physical-completion gates |
-| Triplet minimality and exactly three physical lanes | Recast as selected operator or rank filtration | Abstract Foundation is dimension-neutral; no theorem forces three coordinate manifolds or three families |
-| Ten dimensions from dimension multiplication | Replaced by the exact component identity `1+3x3=(1+3)+(1+2+3)=4+6=10` | Exact after an ordering scalar and selected rank-three flag are supplied; not a manifold-dimension theorem |
-| Shared circle is time or an extra seventh internal coordinate | Retired | Shared circle is common `U(1)` phase/holonomy data counted once; physical time is noncompact Lorentzian order |
-| Literal Circle-Lens-Nil nesting or product is the selected compactification | Retired as a proof source | q79 Fu-Yau is the strongest selected candidate; `L(3,1) x Nil3` remains auxiliary/effective |
-| Proto-spinor automatically gives physical particles | Narrowed to a conditional double-cover theorem | Lorentzian Spin/SpinC structure, Dirac operator, statistics, state space, and observables remain separate gates |
-| Positive closure Hessian directly gives Higgs and masses | Corrected | Pole masses require canonical kinetic normalization and a physical source map; one-Higgs alignment is a finite-algebra profile result |
-| Ten-dimensional action derived from coherence | Recast as a regime-local EFT ansatz | Metric, Lorentzian signature, Einstein-Hilbert term, gauge fixing, regulator, and reduction control are supplied data |
-| Quantum mechanics and Born probabilities emerge from basin counting | Withdrawn | Complex Hilbert structure, observables, dynamics, instruments, and a basin-trace theorem remain open |
-| QFT, OS positivity, and BRST/BV follow from projection | Withdrawn | Standard renormalized-SM BRST/Faddeev-Popov quantization is imported at the closed profile tier |
-| Ontic Gaussian damping proves UV-finite quantum gravity | Withdrawn | Selected filters can soften selected integrals; constructive existence, unitarity, causality, gauge closure, and physical observables remain open |
-| Big Bang replacement, inflation, dark matter, baryogenesis, and renewal are predictions | Reclassified as interpretations | No current MTT cosmological prediction is claimed |
-| Old 4.2--5 TeV crossing is a physical closure scale | Withdrawn | Corrected Theta ratios are calibrated gauge-profile coordinates at `Q=M_t`; the old scale chain is not a prediction source |
-| MTT contains GR, QM, QFT, string theory, and other frameworks | Replaced by a typed relationship atlas | Relations are assumption, conditional theorem, reconstruction, controlled reduction, profile equivalence, or open bridge |
+| Earlier interpretation | Current treatment |
+|---|---|
+| One inequality selects one inevitable world | Stability is explained through separate projection, return, domain, uniqueness, and equilibrium questions |
+| Exactly three filters or families are forced | One-two-three is a selected rank/filtration pattern, not a universal dimension theorem |
+| `3x3` multiplies manifold dimensions | It is a nine-component comparison map: three rotations plus six strains |
+| The shared circle is time | The circle is common phase/holonomy; physical time is noncompact Lorentzian order |
+| Literal Circle--Lens--Nil is the compactification | Circle/lens/nil are principally carrier roles; q79/Fu--Yau is the strongest selected global candidate |
+| The local strain and q79 carriers are identical | Equal rank is only the invitation to construct a connection-preserving global bridge |
+| Proto-spinor automatically gives a particle | It gives conditional double-cover/orientation memory; physical spinorial completion remains necessary |
+| Closure Hessian directly gives a physical mass | Normalized action and source maps are required |
+| The 27-by-27 matrix predicts values by its size | It is a finite response architecture whose source values remain a stronger selection question |
+| Standard Model closure is zero-knob prediction | It is closed at the one-shared-physical-primitive/profile reconstruction tier |
+| Basin counting gives the Born rule | A state/measure and basin-to-trace theorem remain open |
+| Measurement completes reality | Measurement is an ordinary interaction and record process |
+| The old few-TeV chain is a prediction | It is withdrawn; corrected Theta quantities are profile coordinates and consistency checks |
+| Elastic language already derives Einstein gravity | A selected Lorentzian action, stress response, normalization, and controlled reduction remain necessary |
+| Filtered integrals prove UV-complete quantum gravity | Causality, unitarity, gauge consistency, constructive existence, and observables remain open |
+| Great Coherence cosmology is a prediction | It remains an interpretive program pending a selected action and observable pipeline |
 
-## Current Geometry Imported into the Book
+## Current Standard Model Wording
 
-Version 10 now distinguishes four objects that version 9 mixed together:
+The Book uses the following result tier:
 
-1. The canonical supplied physical realization `M10 -> Y4` with a compact
-   six-dimensional internal fiber.
-2. The local world-in-world field in `Hom(TP,TI)`, whose nine matrix components
-   split as three rotations plus six strains.
-3. The flag-dependent strain decomposition `6=1+2+3`, with the fully
-   `SO(3)`-invariant alternative `1+5` stated explicitly.
-4. The independent q79 degree-three trace carrier
-   `O + A0 + A`, also of profile `1+2+3`.
+> Embedded renormalized Standard Model equivalence is closed at the adopted
+> one-shared-physical-primitive/profile tier.
 
-The book does not identify the two `1+2+3` carriers by dimension alone. It
-states the missing type-correct frontier as either:
+In ordinary language, the Book explains that one audited finite architecture
+now carries:
 
-- a complexified strain-to-q79 bundle isomorphism; or
-- an isomorphism to a selected real form of the q79 carrier.
+- the 27-by-27 finite response organization;
+- the 96-dimensional particle--antiparticle carrier and finite Dirac profile;
+- charged Yukawa and CKM profiles;
+- electroweak, Higgs, and threshold responses;
+- multi-loop mass-scheme and threshold transport; and
+- the positive precision covariance object.
 
-The map must preserve transition data, metric, connection, Hessian, retarded
-operator, and normalized overlap kernels. This closes a real/complex rank
-ambiguity that a bare dimension match would conceal.
+The Book also states why this is not yet a strict value-source theorem:
+measured renormalized profile data and standard SM quantization are admitted,
+and the shared physical primitive is not yet uniquely emitted by the upper
+geometry.
 
-## Current Standard-Model Result Imported into the Book
+## Theorem Ownership
 
-The authoritative numerical ledger supports the following exact wording:
+The Book contains no formal result or proof environment. It explains results
+owned by:
 
-> Embedded renormalized-Standard-Model equivalence is closed at the adopted
-> one-shared-physical-primitive/profile standard.
+- *Modal Triplet Theory: Foundations*;
+- Fixed Points I--VI;
+- *The Projection--Admissibility Principle*;
+- the signature and scale papers;
+- the proto-spinor, world-in-world, closure-strain, action, q79, HYM, and
+  Fu--Yau papers and packets;
+- the finite-operator and True SM Closure ledgers; and
+- the corrected Theta Closure and Execution papers.
 
-At that standard, the book records the locked baseline:
+The owning paper and its revision audit control whenever the Book's
+plain-language wording admits a stronger reading.
 
-- `27x27` finite response architecture;
-- charged Yukawa magnitudes at SM-parity/profile tier;
-- CKM weight rows and uncertainty certificate;
-- electroweak and direct Higgs/threshold rows;
-- strict threshold ledger;
-- a `96x96` finite Dirac operator on a 96-dimensional complex finite Hilbert
-  space at profile tier;
-- selected multi-loop mass-scheme and threshold transport;
-- positive-definite precision covariance; and
-- the five-arrow renormalized-SM observable functor.
+## Book-Specific Style Guardrails
 
-The final declared-standard audit is `12/12`. This is a broad and internally
-consistent reconstruction result. It is not strict no-knob prediction because
-measured renormalized profile coordinates, imported SM quantization, and one
-shared physical primitive are admitted by the standard.
+Future revisions must preserve all of the following:
 
-## Boundaries Preserved
+1. no formal theorem/proof blocks;
+2. interpretation before notation;
+3. no chapter whose main function is to reproduce a technical ledger;
+4. no long derivation or multi-line action/matrix formula in the main text;
+5. measurement described as an ordinary physical interaction;
+6. no restoration of retired topology, Born, few-TeV, gravity, QG, or
+   cosmology claims;
+7. no numerical-profile claim without its reconstruction tier; and
+8. technical ownership cited through the reader's map rather than duplicate
+   proofs.
 
-Version 10 keeps the following open rather than silently reopening or closing
-them:
+## Verification
 
-- strict zero-primitive empirical source selection;
-- unique observed-branch selection;
-- global q79 Spin relator/obstruction decision;
-- world-in-world/strain-to-q79 same-source intertwiner;
-- one selected normalized action source emitting all operator and value rows;
-- absolute neutrino scale, ordering, and Dirac/Majorana ontology beyond the
-  adopted neutral profile policy;
-- fully selected nonperturbative strong-CP source;
-- Born functional and measurement equivalence;
-- derivation of BRST/path-integral quantization from MTT;
-- constructive nonperturbative four-dimensional QFT;
-- Einstein/Planck normalization from a selected microscopic action;
-- UV-complete quantum gravity; and
-- predictive cosmology.
-
-These are stronger upgrade targets. They do not reopen the locked 12/12
-profile-equivalence result.
-
-## Version Delta Note
-
-The book uses a chapter-level `Revision Note for This Edition`, appropriate to
-the `book` document class. It contains the same five required fields as the
-revised papers:
-
-1. `Supersedes.`
-2. `Reason.`
-3. `Resolution.`
-4. `Retained result.`
-5. `Remaining boundary.`
-
-## Automated Enforcement
-
-Verifier:
-
-`../18 Theta-Closure & Execution Program/scripts/verify_book_v10_current_corpus.py`
-
-The verifier checks source preservation, version metadata, structural balance,
-the revision delta, chapter coverage, exact geometry typing, current SM-tier
-language, corrected Theta values, explicit open boundaries, retirement context,
-and the absence of the strongest version 9 overclaim phrases.
-
-The existing 27-paper delta-note verifier remains separate because it enforces
-article-class placement after `abstract`; the book verifier enforces the
-chapter-level equivalent.
-
-Current result:
+Automated checks:
 
 ```text
-PASS: preserved v9 and complete v10 book sources found
-PASS: v10 structure, environments, revision delta, and chapter coverage verified
-PASS: current geometry, q79, SM-profile, Theta, and open-boundary claims verified
-PASS: strongest retired v9 overclaim phrases are absent
+python scripts/verify_theorem_ownership.py
+python scripts/verify.py
 ```
 
-Build result:
+The book-specific verification additionally checks:
 
-- engine: MiKTeX `pdflatex` with automatic package installation disabled;
-- passes: two clean final passes;
-- artifact: `revised_tex_vnext/The_Book_on_Modal_Triplet_Theory_v10/main.pdf`;
-- extent: 56 A4 pages; and
-- final log: no LaTeX errors, undefined controls, or overfull boxes.
+- preserved version-9 source;
+- version and revision-note fields;
+- zero formal-result environments;
+- low displayed-math density;
+- presence of the original interpretive themes;
+- current geometry and Standard Model boundaries;
+- ordinary-process treatment of measurement;
+- explicit retirement of the strongest superseded claims; and
+- a technical-owner reading map.
 
-Rendered-page inspection covered the title, revision record, table of contents,
-part transitions, the type-correct geometry-intertwiner equation, main text,
-the typed framework atlas, the claim ledger, notation, and bibliography. No
-clipped text, overlap, broken glyphs, or unreadable tables remained.
+## Build and Visual Record
+
+- `pdflatex`: clean final passes;
+- final extent: 49 A4 pages;
+- final log: no LaTeX errors, undefined references, underfull boxes, or
+  overfull boxes;
+- rendered inspection: all pages reviewed in four contact sheets, with
+  full-size checks of the title, the single displayed component identity, and
+  the technical-owner map; and
+- layout correction: the paper map was tightened so that no final row or
+  ownership sentence remains stranded on an otherwise empty page.

@@ -1,4 +1,15 @@
-# Admissibility and Encodings roadmap v12 revision audit
+# Admissibility and Encodings Roadmap v13 Release Audit
+
+## v13 publication delta
+
+- **Supersedes:** v12.
+- **Reason:** the corpus roadmap needed a simpler entry route and explicit
+  separation between paper snapshots and live A/B authority rows.
+- **Resolution:** add a running descent example, three reading routes, and
+  managed reproducibility provenance.
+- **Retained:** every v12 type, geometry, and framework-status judgment.
+- **Remaining:** all physical source and completion gates remain with their
+  owning research programs.
 
 ## Selected revision
 
@@ -169,3 +180,18 @@ The roadmap does not close physical source rows. It explicitly retains:
 Version 12 is a major conceptual and theorem-status rewrite. It should be
 uploaded as a new major Zenodo version with the generated PDF, canonical TeX,
 Markdown conversion, and this revision audit.
+
+## Expository revision, 2026-07-28
+
+The theorem and frontier status are unchanged. The roadmap now begins with
+three questions that readers can apply to every paper and three explicit
+reading routes through the structural, realization, and physical parts of the
+corpus.
+
+A running reduction example with one retained and one hidden coordinate makes
+the difference between a representative section, exact recovery, and
+autonomous descent concrete. The factor-through theorem is then interpreted as
+a test of whether the reduced state retains enough memory for autonomous
+prediction, with several possible repairs named but not selected. This
+revision adds orientation and understanding without duplicating A0's canonical
+theorem ownership.

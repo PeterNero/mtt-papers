@@ -1,65 +1,93 @@
 {
-  "abstract": "String theory is widely regarded as the most successful ultraviolet framework for quantum gravity, yet its conceptual status remains unsettled. Are strings and branes fundamental constituents of nature, or are they effective devices whose success reflects a deeper structural constraint? This paper develops a projection-first reframing of string theory in which the distinguishing features of the subject\u2014extended excitations, closed-string universality of gravity, boundary-localized gauge sectors, holography, modular finiteness, and the apparent landscape\u2014are interpreted as consequences of finite admissibility of physical description rather than as evidence for a literal string ontology. The reframing adopts a conservative stance. No new dynamical principles are introduced, no modification of worldsheet or target-space equations is proposed, and no claims are made about the ultimate microscopic degrees of freedom beyond effective description. Instead, the paper identifies which structural conditions any stable, local, predictive description must satisfy and shows how string-theoretic constructions can be organized as admissible encodings optimized for maintaining those conditions at high energy. In this view, quantization is not a universal procedure but a representational strategy valid only within admissible regimes; the special role of closed-string modes reflects the global bookkeeping required to maintain consistency of projected descriptions; D-branes are interpreted as admissibility boundaries that localize certain constraint-carrying modes; and holography is understood as the survival of description on lower-dimensional loci when bulk encoding becomes inadmissible. The landscape is reinterpreted as a catalogue of mathematically consistent encodings, most of which fail admissibility and therefore do not correspond to physically realizable descriptions. The goal is explanatory rather than competitive: to provide a vocabulary in which string theory\u2019s characteristic successes and limitations are natural consequences of projection and finite admissibility, and to clarify how string-theoretic language interfaces with other projection-based encodings, including semiclassical gravity, effective field theory, and the constructive quantum-gravity results established elsewhere in the corpus.",
+  "abstract": "String theory supplies a highly constrained language for extended excitations, quantum gravity, gauge sectors, duality, and compactification. A projection-first viewpoint can organize these structures as possible encodings of a richer source, but projection alone does not force strings, branes, a worldsheet, a critical dimension, modular invariance, or a graviton. This paper separates the internal results of perturbative string theory from their proposed interpretation in Modal Triplet Theory. A valid MTT-to-string bridge must construct target fields, a worldsheet action and measure, Weyl and modular consistency, anomaly cancellation, factorization, and the relevant observable dictionary from the same selected source. The q79 Fu\u2013Yau branch is the present compatible candidate. Its twelve-row heterotic worldsheet contract has five available rows, two partial rows, and five open rows. The resulting claim is a structured string-encoding program, not a derivation of string theory from projection or a completed ultraviolet theory.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18330706",
-    "created": "2026-01-21T19:50:48.879306+00:00",
+    "created": "2026-07-29T08:49:47.356868+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18330707",
+    "doi": "10.5281/zenodo.21665937",
     "files": [
       {
-        "checksum": "md5:e97d5d010063ca99ecdbd9312b48c730",
-        "content_url": "https://zenodo.org/api/records/18330707/files/A_Projection_First_Reframing_of_String_Theory%20(1).pdf/content",
-        "key": "A_Projection_First_Reframing_of_String_Theory (1).pdf",
-        "size": 201694
+        "checksum": "md5:fd50414ae1f70b86fb6fef7dbefeb76f",
+        "content_url": "https://zenodo.org/api/records/21665937/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 256466
       }
     ],
-    "id": "18330707",
-    "match_kind": "title_or_file",
+    "id": "21665937",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18330707",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665937",
     "resource_type": "publication",
-    "title": "A Projection-First Reframing of String Theory",
-    "updated": "2026-01-21T19:50:49.231331+00:00",
-    "version": "v1.0"
+    "title": "A Projection-First Reframing of String Theory: Conditional Encodings, Worldsheet Gates, and the q79 Boundary",
+    "updated": "2026-07-29T08:49:47.715532+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "9cdfee1342d620fe56ec052896560fcea3a72d0c9d64afb945af5540c25be602",
+  "main_tex_sha256": "16a1d776f85706a32aef001a69b865d5950407764f3409d28aa002a61d869f4a",
   "paper_id": "a-projection-first-reframing-of-string-theory",
-  "paper_md_sha256": "15d483f507858f1b234086adf9c041584a63835ff017d7b173c1190c157a1545",
+  "paper_md_sha256": "23daa29e2f6363332cb5e6501a7b95de33ca9c7ca0c89ab222830730a200c492",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "5f8c7e4fea782fb7adf2dcbd02f08cf51f0dc1f5ff33187672c3b95ba560f7a8",
+    "selected_revision": true,
+    "superseded_source_path": "19 A project-first reframing/_work/A_Projection_First_Reframing_of_String_Theory (1)"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 33882,
+      "bytes": 15496,
       "path": "main.tex",
-      "sha256": "9cdfee1342d620fe56ec052896560fcea3a72d0c9d64afb945af5540c25be602"
+      "sha256": "16a1d776f85706a32aef001a69b865d5950407764f3409d28aa002a61d869f4a"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "19 A project-first reframing/_work/A_Projection_First_Reframing_of_String_Theory (1)"
   },
-  "source_tree_sha256": "543812f55fbd5712892da237f3e0194f07a68e6d79405d0cd3d10dad1256818b",
-  "title": "A Projection-First Reframing of String Theory",
+  "source_tree_sha256": "7bf50121cfe2937f884b0ec79ab21a59d70c85aec6ee3cbf994c97a29b55f957",
+  "title": "A Projection-First Reframing of String Theory: Conditional Encodings, Worldsheet Gates, and the q79 Boundary",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18330706",
+      "created": "2026-07-29T08:49:47.356868+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665937",
+      "files": [
+        {
+          "checksum": "md5:fd50414ae1f70b86fb6fef7dbefeb76f",
+          "content_url": "https://zenodo.org/api/records/21665937/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 256466
+        }
+      ],
+      "id": "21665937",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665937",
+      "resource_type": "publication",
+      "title": "A Projection-First Reframing of String Theory: Conditional Encodings, Worldsheet Gates, and the q79 Boundary",
+      "updated": "2026-07-29T08:49:47.715532+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18330706",
       "created": "2026-01-21T19:50:48.879306+00:00",

@@ -1,68 +1,93 @@
 {
-  "abstract": "We give the precise mathematical content of the world-in-world proposal and separate it from its physical interpretation. The central object is a comparison field Q_{\\rm WW}\\in\\Gamma(\\operatorname{Hom}(TP,TI)) between two oriented rank-three bundles. Its nine local components split, at a nonsingular background, into three orientation and six strain directions. A selected flag resolves the strain sector into scalar, diagonal-shape, and shear sectors of dimensions 1+2+3. Therefore 1+3\\times3=(1+3)+(1+2+3)=4+6 is an exact component identity. It is not ordinary manifold-dimension multiplication and does not derive a ten-dimensional spacetime, Lorentzian signature, gravity, matter, or quantization. We state the missing globalization theorem to the selected q79 Fu\u2013Yau carrier, distinguish the shared phase circle from physical time, and formulate the additional gates needed for each proposed physical emergence. The resulting paper is a rigorous local geometry theorem plus a falsifiable research program.",
+  "abstract": "We give the precise mathematical content of the world-in-world proposal and separate it from its physical interpretation. The central object is a comparison field between two oriented rank-three bundles. Its nine local components split, at a nonsingular background, into three orientation and six strain directions. A selected flag resolves the strain sector into scalar, diagonal-shape, and shear sectors of dimensions 1+2+3. Thus one ordering coordinate plus a three-by-three comparison field decomposes as four outer and six internal components. This is an exact component identity, not ordinary manifold-dimension multiplication, and it does not derive a ten-dimensional spacetime, Lorentzian signature, gravity, matter, or quantization. We state the missing globalization theorem to the selected q79 Fu–Yau carrier, distinguish the shared phase circle from physical time, and formulate the additional gates needed for each proposed physical emergence. The resulting paper is a rigorous local geometry theorem plus a falsifiable research program.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v5",
-  "date": "July 2026",
+  "date": "Corrected fifth edition July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.19535234",
-    "created": "2026-04-12T09:48:40.452791+00:00",
+    "created": "2026-07-29T08:52:45.657006+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.19535235",
+    "doi": "10.5281/zenodo.21654883",
     "files": [
       {
-        "checksum": "md5:010b6eb9ec3b944f6515a00148f15f2f",
-        "content_url": "https://zenodo.org/api/records/19535235/files/World_in_World_Genesis__A_Proto_Geometric_Origin_of_Time__Gravity__Matter__and_Quantization_in_Modal_Triplet_Theory_v4.pdf/content",
-        "key": "World_in_World_Genesis__A_Proto_Geometric_Origin_of_Time__Gravity__Matter__and_Quantization_in_Modal_Triplet_Theory_v4.pdf",
-        "size": 378070
+        "checksum": "md5:b9bd9a4fce599cae46263063c0d0a242",
+        "content_url": "https://zenodo.org/api/records/21654883/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 355826
       }
     ],
-    "id": "19535235",
-    "match_kind": "title_or_file",
+    "id": "21654883",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-04-12",
-    "record_url": "https://zenodo.org/records/19535235",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21654883",
     "resource_type": "publication",
-    "title": "World-in-World Genesis: A Proto-Geometric Origin of Time, Gravity, Matter, and Quantization in Modal Triplet Theory v4",
-    "updated": "2026-04-12T09:48:40.897727+00:00",
-    "version": "v4.0"
+    "title": "World-in-World Genesis: Local Comparison Geometry and a Globalization Program",
+    "updated": "2026-07-29T08:52:45.994621+00:00",
+    "version": "v5"
   },
-  "main_tex_sha256": "e1496ea6232023d4bce5db8e99e089b6f58cd091aaa08521483aa57fa2c1816b",
+  "main_tex_sha256": "96721e4f0c34edf7a1c60f08b060b0ac430053c8ce67a7d8b754a0e6d4749076",
   "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
-  "paper_md_sha256": "8c716790c0d78ee0ef010d8a961442b5d5b4c040b92cdd30af47e018163bd841",
+  "paper_md_sha256": "20acea9f89d06aa4068823cb4a830c2ce1043249e7649ceca11ef8a481565189",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md",
-    "revision_evidence_sha256": "340f4cb2ee4e5a22a1b008aa1c57109cdd148da74ef36fcec0913ef20dc527b1",
+    "revision_evidence_sha256": "41060296f16c6a823d3528c17f6945dfd6273bd347b4d6795244f4f972592398",
     "selected_revision": true,
     "superseded_source_path": "10 ProtoSpinor/_work/World_in_World_Genesis__A_Proto_Geometric_Origin_of_Time__Gravity__Matter__and_Quantization_in_Modal_Triplet_Theory_v4"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 12969,
+      "bytes": 19859,
       "path": "main.tex",
-      "sha256": "e1496ea6232023d4bce5db8e99e089b6f58cd091aaa08521483aa57fa2c1816b"
+      "sha256": "96721e4f0c34edf7a1c60f08b060b0ac430053c8ce67a7d8b754a0e6d4749076"
     },
     {
-      "bytes": 4221,
+      "bytes": 3819,
       "path": "series.sty",
-      "sha256": "b0af1073f295d9ebc3bfa6020214244f0147d5cb41ebb8ccf58a0303951c6fbf"
+      "sha256": "11cfb5b6b4161f1e60935127c22c0619bfc67286dbc229d044ca2f4641bf8fbd"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/World_in_World_Genesis__Local_Comparison_Geometry_and_Globalization_Program_v5"
   },
-  "source_tree_sha256": "b7e585fcd7c3b9b43dcf74701eca8361d820ef748f41834b5bbfdbb59658e7ad",
-  "title": "World-in-World Genesis: Local Comparison Geometry and a Globalization Program Corrected fifth edition",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "10599807d208b8876f2793499d2cbeed627048496921c454ec6d7ca5507a24d2",
+  "title": "World-in-World Genesis: Local Comparison Geometry and a Globalization Program",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.19535234",
+      "created": "2026-07-29T08:52:45.657006+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21654883",
+      "files": [
+        {
+          "checksum": "md5:b9bd9a4fce599cae46263063c0d0a242",
+          "content_url": "https://zenodo.org/api/records/21654883/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 355826
+        }
+      ],
+      "id": "21654883",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21654883",
+      "resource_type": "publication",
+      "title": "World-in-World Genesis: Local Comparison Geometry and a Globalization Program",
+      "updated": "2026-07-29T08:52:45.994621+00:00",
+      "version": "v5"
+    },
     {
       "concept_doi": "10.5281/zenodo.19535234",
       "created": "2026-04-12T09:48:40.452791+00:00",

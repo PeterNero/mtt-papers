@@ -84,6 +84,74 @@ weights, or physical outcome from the nil profile alone.
 \tableofcontents
 \newpage
 
+\section{How to Read Program B3}
+
+The word ``quantization'' is used for several mathematically different
+operations.  A continuous model may acquire discrete labels because a
+constraint has isolated solutions, because a quotient has collapsed an orbit,
+because an operator has discrete spectrum, or because a quantum observable is
+represented on a Hilbert space.  These mechanisms can coexist, but none of
+them is interchangeable with the others.  The purpose of this paper is to
+separate them before asking whether MTT supplies a quantum theory.
+
+\subsection{The four layers of the argument}
+
+The discussion is organized as a sequence of four gates.
+\begin{enumerate}
+\item \textbf{Termination.}  A declared chart or decoder ceases to extend.
+This is the nil-type statement.  It concerns the description being used, not
+the cardinality of the underlying state space.
+\item \textbf{Survival.}  A constraint, controlled domain, and equivalence
+relation select the states that remain admissible.  Transversality and
+compactness can then make the reduced survivor set finite.
+\item \textbf{Spectrum.}  A separately supplied operator can have discrete
+spectrum.  Compact resolvent is one standard sufficient condition, but it
+already presupposes a Hilbert carrier and operator-domain data.
+\item \textbf{Quantum reconstruction.}  A complex observable algebra, a
+state, a representation, dynamics, and measurement effects are supplied from
+one source.  Only at this layer do Hilbert-space amplitudes and Born
+probabilities become available.
+\end{enumerate}
+The main logical lesson is therefore
+\[
+ \text{nil termination}
+ \;\not\Rightarrow\;
+ \text{finite survivors}
+ \;\not\Rightarrow\;
+ \text{discrete spectrum}
+ \;\not\Rightarrow\;
+ \text{quantum mechanics}.
+\]
+Each arrow can become valid only after the missing hypotheses displayed later
+in the paper are added.
+
+\subsection{Object picture: a chart can end while states continue}
+
+Imagine describing a smooth road with a coordinate that becomes infinite at a
+particular marker.  The coordinate description has failed there, but the road
+has not become a collection of isolated points.  Definition~\ref{def:nil}
+formalizes exactly this relative kind of failure.  To obtain isolated
+survivors one must add an actual selection rule, such as simultaneous
+constraints whose Jacobian has full rank.
+
+This distinction is especially important in MTT.  The circle, lens, and nil
+profiles describe how a chosen representation behaves.  A nil profile may
+tell us where a continuation is unavailable, while a lens profile may identify
+many representatives of one reduced state.  Neither profile, without a
+declared source map, chooses an observable algebra or a probability measure.
+
+\subsection{What the reader should take from each theorem}
+
+The regular-value results explain when geometric constraints isolate
+survivors.  The classical countermodels show that isolation is not uniquely
+quantum.  The compact-resolvent theorem explains a different route to
+discreteness through operator theory.  The commutator no-go prevents a finite
+matrix model from being mistaken for an exact bosonic canonical system.
+Finally, the GNS, Born-evaluation, and Stone results show precisely what
+standard quantum structure follows once the corresponding algebraic data have
+been supplied.  They are reconstruction results, not claims that nil
+termination generated those data.
+
 \section{Scope and Imported Data}
 
 Program A0 supplies typed reductions, admissible domains, exact factorization
@@ -315,6 +383,12 @@ only at the level of the declared constraint problem, not as a unique
 identification with quantum mechanics.
 \end{remark}
 
+Taken together, these examples explain why the survivor theorem should be
+read as a reusable geometric tool rather than as a definition of the quantum.
+The same theorem can organize classical equilibria, topological sectors, or
+candidate outcome labels.  What those labels mean physically is decided only
+by the additional source and representation data attached to them.
+
 \section{Spectral Discreteness Is a Separate Theorem}
 
 \subsection{Compact resolvent}
@@ -493,6 +567,12 @@ The theorem reconstructs a representation from the supplied pair
 $(\Alg,\omega)$.  It does not select either member of that pair from a
 survivor set.
 \end{remark}
+
+In practical terms, GNS is a translator.  It turns algebraic expectation data
+into vectors and operators on a Hilbert space.  It does not manufacture the
+expectation functional, decide which algebra describes the experiment, or
+identify one survivor with one physical outcome.  Those are precisely the
+same-source tasks retained in Definition~\ref{def:certificate}.
 
 \subsection{Conditional Born probabilities}
 
@@ -757,5 +837,10 @@ M.~H.~Stone,
 \emph{Annals of Mathematics} 33 (1932), 643--648.
 
 \end{thebibliography}
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \end{document}

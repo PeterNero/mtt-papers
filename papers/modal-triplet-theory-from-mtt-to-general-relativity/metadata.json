@@ -1,60 +1,88 @@
 {
-  "abstract": "We give a first-principles derivation of classical General Relativity (GR) from Modal Triplet Theory (MTT). Starting from the 10-dimensional modal product geometry M^{10}=Y_4\\times B_1\\times B_2\\times B_3, we show that harmonic projection onto the coherent sector and internal pushforward to Y_4 produce an effective, metric-compatible Levi\u2013Civita connection and a four-dimensional action of Einstein\u2013Hilbert type. Under explicit spectral-gap, boundedness, and fixed-point stability hypotheses, the projected Euler\u2013Lagrange equations are exactly the Einstein field equations with matter stress\u2013energy given by the projected modal content. We provide: (i) a variational reduction theorem proving that the internal integration of the 10D action yields S_{\\rm eff}[g,A,\\Phi]=\\frac{1}{16\\pi G_{\\rm eff}}\\int (R-2\\Lambda_{\\rm eff}) \\sqrt{-g}\\,d^4x+S_{\\rm matter} with G_{\\rm eff},\\Lambda_{\\rm eff} determined by internal spectral data; (ii) a Noether/Bianchi identity pushforward establishing \\nabla^\\mu T_{\\mu\\nu}=0; (iii) a geodesic-limit theorem recovering the equivalence principle for projected test bodies; and (iv) the Newtonian and weak-field limits with explicit parameter dictionaries. We state controlled conditions under which beyond-GR corrections (e.g. R^2, scalar-tensor terms, non-metricity) arise from departures from the coherent fixed-point regime. This places GR as the unique, stable, low-frequency, large-scale sector of MTT.",
+  "abstract": "This paper identifies the precise sense in which a Modal Triplet Theory realization can reproduce classical four-dimensional General Relativity. The starting point is a ten-dimensional bundle over a Lorentzian four-manifold with compact six-dimensional fiber, together with a local covariant action whose gravitational sector contains the higher-dimensional Einstein-Hilbert term. That metric and action are realization inputs; they are not derived here from projection alone. We formulate an exact consistent-truncation condition and an approximate gapped version that bounds discarded modes and the induced effective-action error. When unwanted metric zero modes are absent, stabilized, or retained explicitly, the two-derivative metric sector reduces to Einstein-Hilbert form with the four-dimensional coupling fixed by the warped internal volume. Diffeomorphism invariance then gives the Einstein equation and covariant stress-energy conservation. The current MTT calculation also provides an exact finite-branch transverse-traceless helicity-two support certificate. It does not yet determine the physical Newton or Planck normalization, the complete stress-energy response, the cosmological constant, or a projection-only source for the Lorentzian action.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "2026-07-19",
+  "current_version": "v3",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16950597",
-    "created": "2026-01-16T11:42:07.555185+00:00",
+    "created": "2026-07-29T08:51:22.029541+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18268239",
+    "doi": "10.5281/zenodo.21665995",
     "files": [
       {
-        "checksum": "md5:35b17e01f900551f369ce1948883b142",
-        "content_url": "https://zenodo.org/api/records/18268239/files/Modal_Triplet_Theory__From_MTT_to_General_Relativity_v2%20(1).pdf/content",
-        "key": "Modal_Triplet_Theory__From_MTT_to_General_Relativity_v2 (1).pdf",
-        "size": 350443
+        "checksum": "md5:77d89912fe4109cb6a51c3780864ac06",
+        "content_url": "https://zenodo.org/api/records/21665995/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 391524
       }
     ],
-    "id": "18268239",
-    "match_kind": "title_or_file",
+    "id": "21665995",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-16",
-    "record_url": "https://zenodo.org/records/18268239",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665995",
     "resource_type": "publication",
-    "title": "Modal Triplet Theory: From MTT to General Relativity",
-    "updated": "2026-01-16T11:42:08.057824+00:00",
-    "version": "v2.0"
+    "title": "Controlled Coherent Reduction to Four-Dimensional Einstein Gravity",
+    "updated": "2026-07-29T08:51:22.422445+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "c015fcec50bdfed8c1a3a8492273edfbcce6209088f5917128d5736c57c9b4a9",
+  "main_tex_sha256": "65b0acc3e9f6610b4dc2d92a71ed0275b1438be36cd2d1087047e018d2a66673",
   "paper_id": "modal-triplet-theory-from-mtt-to-general-relativity",
-  "paper_md_sha256": "711c6a7a91b5838eded15f1e6d85d0c71371d2fb4e510ad8f6001e207325c1c5",
+  "paper_md_sha256": "a4b1aff3d1acca88f3a4dfd68f73ac812fea371eeac7f8302d5f02de05f5232e",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "018dd34945b1194cfc211c92714eb5b4b2323a0f88b05b413ad17b8423c88528",
+    "selected_revision": true,
+    "superseded_source_path": "11 General Relativity & Geometry/_work/Modal_Triplet_Theory__From_MTT_to_General_Relativity_v2"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 50271,
+      "bytes": 29032,
       "path": "main.tex",
-      "sha256": "c015fcec50bdfed8c1a3a8492273edfbcce6209088f5917128d5736c57c9b4a9"
+      "sha256": "65b0acc3e9f6610b4dc2d92a71ed0275b1438be36cd2d1087047e018d2a66673"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "11 General Relativity & Geometry/_work/Modal_Triplet_Theory__From_MTT_to_General_Relativity_v2"
   },
-  "source_tree_sha256": "57ffc1f4777b189c81041f32431c450c6239f5a25a18572d689066053b871240",
-  "title": "Modal Triplet Theory: From MTT to General Relativity",
+  "source_tree_sha256": "4b50f2fa78a27db1608b787d89a2fa800d2844027899c8244e4fbcbaadaa203a",
+  "title": "Controlled Coherent Reduction to Four-Dimensional Einstein Gravity",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.16950597",
+      "created": "2026-07-29T08:51:22.029541+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665995",
+      "files": [
+        {
+          "checksum": "md5:77d89912fe4109cb6a51c3780864ac06",
+          "content_url": "https://zenodo.org/api/records/21665995/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 391524
+        }
+      ],
+      "id": "21665995",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665995",
+      "resource_type": "publication",
+      "title": "Controlled Coherent Reduction to Four-Dimensional Einstein Gravity",
+      "updated": "2026-07-29T08:51:22.422445+00:00",
+      "version": "v3"
+    },
     {
       "concept_doi": "10.5281/zenodo.16950597",
       "created": "2026-01-16T11:42:07.555185+00:00",

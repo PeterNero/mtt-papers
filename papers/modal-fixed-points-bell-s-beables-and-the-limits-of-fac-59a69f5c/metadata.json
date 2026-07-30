@@ -1,65 +1,103 @@
 {
-  "abstract": "Bell\u2019s theorem rules out local hidden-variable models under measurement independence (MI) and factorization (local causality). We revisit Bell\u2019s program in the setting of the ten-dimensional modal fixed-point dynamics of Modal Triplet Theory (MTT). The fundamental beables are local modal fields on M=Y^4\\times B_1\\times B_2\\times B_3 subject to a global fixed-point constraint. Their projection to four dimensions preserves MI and operational no-signaling but necessarily violates factorization. We formalize the probability space of seeds (\\Xi,\\Sigma,\\mu), prove no-signaling by mapping outcome probabilities exactly to the Born rule on \\mathcal{H}_{\\mathrm{QM}} via the observable map \\mathsf{P}=I\\circ\\Pi, and show that MI + (QM agreement) \\Rightarrow failure of factorization by CHSH. Thus the observed nonlocal correlations are a projection artifact of local 10D beables. We compare with Kaluza\u2013Klein and discuss implications.",
+  "abstract": "Bell experiments do not require a controllable signal between spacelike separated laboratories, but they do exclude a complete measurement-independent hidden-variable description whose conditional probabilities factorize. This paper formulates that distinction for Modal Triplet Theory (MTT). The upper description is a local algebra or field theory on a four-dimensional causal base with a six-dimensional internal space, while an admissible fixed point may define a globally nonseparable state. Under an explicit base-local descent hypothesis, microcausality passes to the four-dimensional observable algebras. Under standard local completely positive instruments, this gives operational no-signaling. If the descended statistics violate CHSH while measurement independence is retained, Bell factorization must nevertheless fail. The result is therefore not a Bell-local hidden-variable completion. It is a conditional account in which upper-local dynamics and globally constrained state selection coexist, so the correlations need not be produced by a spacelike dynamical influence. A singlet packet is included as a benchmark, not as an MTT prediction. A physical MTT realization still requires a selected fixed-point state, a locality-preserving descent, local instruments, and a probability source that yields the benchmark statistics.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "September 8, 2025",
+  "current_version": "v2",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17076300",
-    "created": "2025-09-08T09:13:15.496896+00:00",
+    "created": "2026-07-29T08:51:14.938120+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.17076301",
+    "doi": "10.5281/zenodo.21665825",
     "files": [
       {
-        "checksum": "md5:fe92d392867852aaeb850dce8971916d",
-        "content_url": "https://zenodo.org/api/records/17076301/files/Modal_Triplet_Theory__Modal_Fixed_Points__Bell_s_Beables__and_the_Limits_of_Factorization%20(1).pdf/content",
-        "key": "Modal_Triplet_Theory__Modal_Fixed_Points__Bell_s_Beables__and_the_Limits_of_Factorization (1).pdf",
-        "size": 327130
+        "checksum": "md5:49796d07e1f7defdbd0e251f974592e5",
+        "content_url": "https://zenodo.org/api/records/21665825/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 326938
       }
     ],
-    "id": "17076301",
-    "match_kind": "title_or_file",
+    "id": "21665825",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2025-09-08",
-    "record_url": "https://zenodo.org/records/17076301",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665825",
     "resource_type": "publication",
-    "title": "Modal Triplet Theory: Modal Fixed Points, Bell's Beables, and the Limits of Factorization",
-    "updated": "2025-09-08T09:13:15.869774+00:00",
-    "version": "v1.0"
+    "title": "Modal Fixed Points, Bell's Beables, and the Limits of Factorization: Upper-Local Dynamics, Nonseparable States, and Operational No-Signaling in MTT",
+    "updated": "2026-07-29T08:51:15.953191+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "c45e2e411f580e70acdfacde7931a2f9e25946fd2670c119c6cdebb8924031a5",
+  "main_tex_sha256": "58f6802a63d13d2106bc61f0cb3620adb7d92576e3a2aa48b2fb37a6a22ee398",
   "paper_id": "modal-fixed-points-bell-s-beables-and-the-limits-of-fac-59a69f5c",
-  "paper_md_sha256": "3c2d3d9364cddb7d28f41df65e23daf58be28a34e990da8547aaed6bdf2a0509",
+  "paper_md_sha256": "8e949eecdc20d0893f24df0a027569025ef8d5f2a00738b2bb09d02b9b073c56",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/modal-fixed-points-bell-s-beables-and-the-limits-of-fac-59a69f5c/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "40c26c79d0eee316679727b6f6abd730c3aa49476427b45e0e646c0020f86fa5",
+    "selected_revision": true,
+    "superseded_source_path": "9 Bell, Entanglement & Time/_work/Modal_Triplet_Theory__Modal_Fixed_Points__Bell_s_Beables__and_the_Limits_of_Factorization"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 3395,
+      "bytes": 2246,
       "path": "main.bib",
-      "sha256": "522cf2bc7befdcb7ab0e86eb6ddf257908fb36d856f4528eec13acbff5ee5771"
+      "sha256": "de80ab7383c8e99c5397a426ee628089302bc2b7d3346043ee349825850521b1"
     },
     {
-      "bytes": 28786,
+      "bytes": 326938,
+      "path": "main.pdf",
+      "sha256": "27a1faca26812cef40cf577ae974908a8e0a57e4d8f98f7e4581f13e07767f81"
+    },
+    {
+      "bytes": 22281,
       "path": "main.tex",
-      "sha256": "c45e2e411f580e70acdfacde7931a2f9e25946fd2670c119c6cdebb8924031a5"
+      "sha256": "58f6802a63d13d2106bc61f0cb3620adb7d92576e3a2aa48b2fb37a6a22ee398"
+    },
+    {
+      "bytes": 4104,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "40c26c79d0eee316679727b6f6abd730c3aa49476427b45e0e646c0020f86fa5"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "9 Bell, Entanglement & Time/_work/Modal_Triplet_Theory__Modal_Fixed_Points__Bell_s_Beables__and_the_Limits_of_Factorization"
   },
-  "source_tree_sha256": "70692d776e569ea532033f2103d1b3b9520b6c898e26f342b59a5e6e8d1ae50d",
-  "title": "Modal Fixed Points, Bell\u2019s Beables, and the Limits of Factorization: A Local 10D Ontology with Operational No-Signaling",
+  "source_tree_sha256": "31abe0955806823cca3eb075b8edd1bcdca2c232fbc5921d0e4d80777bc844d9",
+  "title": "Modal Fixed Points, Bell's Beables, and the Limits of Factorization: Upper-Local Dynamics, Nonseparable States, and Operational No-Signaling in MTT",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17076300",
+      "created": "2026-07-29T08:51:14.938120+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665825",
+      "files": [
+        {
+          "checksum": "md5:49796d07e1f7defdbd0e251f974592e5",
+          "content_url": "https://zenodo.org/api/records/21665825/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 326938
+        }
+      ],
+      "id": "21665825",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665825",
+      "resource_type": "publication",
+      "title": "Modal Fixed Points, Bell's Beables, and the Limits of Factorization: Upper-Local Dynamics, Nonseparable States, and Operational No-Signaling in MTT",
+      "updated": "2026-07-29T08:51:15.953191+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.17076300",
       "created": "2025-09-08T09:13:15.496896+00:00",

@@ -59,6 +59,5 @@ dimensions, physical time, or a causal metric from Hilbert geometry.
   continue to pass.
 - Migration and verifier scripts pass Python syntax validation.
 - TeX environment nesting and ASCII/tab guards pass.
-- PDF compilation remains blocked by the previously identified local MiKTeX
-  dependency `amsthm.sty`; this is an environment issue rather than a detected
-  source error.
+- The current source compiles successfully with two `pdflatex` passes.
+- The six-page PDF was rendered in full and visually inspected on 2026-07-29.

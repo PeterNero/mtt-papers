@@ -1,36 +1,36 @@
 ---
 abstract: |
-  We replace the obsolete few-TeV Calabi–Yau benchmark with the current audited execution status of the MTT gauge, Hermitian Yang–Mills (HYM), threshold, and axion sectors. The selected gauge profile is transported by SMDR v1.3 to $`Q=M_t`$ and enters an eight-row positive-definite precision object. Embedded renormalized-Standard-Model equivalence closes at the adopted one-shared-physical-primitive/profile standard. On the selected $`q79/F/m1`$ rank-two bundle, the literal Cech–HYM witness closes, including the finite cocycle and continuum tail certificates. The internal $`K_{\mathrm{threshold}}`$ response ledger also closes, but physical threshold/mass rows remain admitted profile data rather than strict MTT-emitted values. The old fitted Kahler moduli, exceptional-cycle thresholds, and axion normalizations are withdrawn. Strong CP remains open because the complete $`E_6`$ color anomaly cancels and no selected flux/threshold axion-current map has yet supplied a nonzero effective anomaly.
+  We report the current MTT gauge, Hermitian Yang–Mills (HYM), threshold, and axion execution. The selected gauge profile is transported by SMDR v1.3 to $`Q=M_t`$ and enters an eight-row positive-definite precision object; embedded renormalized-Standard-Model equivalence closes at the adopted one-shared-physical-primitive/profile standard. Native bundle automorphisms give the faithful gauge group $`(SU(3)\times SU(2)\times U(1))/\mathbb Z_6`$, while the selected finite gauge/ghost spectrum source closes 10/10 with zero continuous parameters. The normalized finite rows are universal, so they do not derive the measured relative gauge couplings. On the selected $`q79/F/m1`$ rank-two bundle, the literal Cech–HYM witness closes through finite cocycle and continuum-tail certificates. The internal $`K_{\mathrm{threshold}}`$ response ledger also closes, but physical threshold and mass-scheme values remain profile data. Strong CP remains open because the complete $`E_6`$ color anomaly cancels and no selected flux/threshold axion-current map supplies the required nonzero low-energy effective anomaly.
 author:
 - Peter Nero
 current_version: v3
-date: July 2026
-generated_from_main_tex_sha256: 7f156a42c6219ef3ea766fd3b739ea47f9f19b138c7992e826cb612be12c9020
+date: July 2026 Version 3
+generated_from_main_tex_sha256: 687b656ac4ae91049af41256aa1ea310cd468ef6a52e0da4d0579555a251034e
 paper_id: execution-of-modal-triplet-theory-i-gauge-hym-threshold-abc17efc
 release_state: zenodo_released
-released_version: v1.0
-title: "Execution of Modal Triplet Theory I: Gauge, HYM, Threshold, and Axion Status after True-SM Closure"
-zenodo_doi: 10.5281/zenodo.18262314
-zenodo_record_id: 18262314
-zenodo_url: "https://zenodo.org/records/18262314"
+released_version: v3
+title: "Execution of Modal Triplet Theory I: Gauge, HYM, Threshold, and Axion Status after Profile-Standard SM Closure"
+zenodo_doi: 10.5281/zenodo.21665964
+zenodo_record_id: 21665964
+zenodo_url: "https://zenodo.org/records/21665964"
 ---
 
-# Revision note for this edition
+# Version 3 Revision Note
 
-Supersedes.  
+Supersedes
 *Execution of Modal Triplet Theory I: Gauge, Axion, and Threshold Sectors*, version 2.
 
-Reason.  
-The former execution relied on a fitted few-TeV Calabi–Yau benchmark, obsolete moduli and threshold values, and axion normalizations not selected by the current q79 source.
+Reason
+The former execution relied on a fitted few-TeV Calabi–Yau benchmark, obsolete moduli and threshold values, and axion normalizations not selected by the current q79 source. It also preceded the native gauge-group and 10/10 finite gauge-spectrum execution.
 
-Resolution.  
-Version 3 replaces that benchmark with the SMDR precision profile, the certified q79/F/m1 Cech–HYM witness, the closed internal threshold ledger, and an explicit strong-CP source audit.
+Resolution
+Version 3 replaces that benchmark with the SMDR precision profile, the certified q79/F/m1 Cech–HYM witness, the closed internal threshold ledger, the native finite gauge results, and an explicit strong-CP source audit.
 
-Retained result.  
+Retained result
 Gauge/HYM and threshold structures support embedded renormalized-SM equivalence at the adopted profile standard.
 
-Remaining boundary.  
-Strict emitted physical threshold values and a selected nonzero effective color-anomaly map remain stronger upgrades.
+Remaining boundary
+Physical visible–hidden HYM endpoints, continuum gauge/action response, strict threshold values, and a selected nonzero effective color-anomaly map remain stronger upgrades.
 
 # Status standard and authority
 
@@ -62,6 +62,32 @@ with $`g_1=\sqrt{5/3}\,g_Y`$ when GUT normalization is required. These are measu
 
 The full selected precision map transports 15 common source coordinates into eight $`\overline{\mathrm{MS}}`$ output rows. Its covariance is positive definite, contains all 36 symmetric entries, and contains all 15 BCT–WZH cross-block entries. The declared reproducible baseline is the diagonal measured-input profile because no public official joint likelihood for all 15 coordinates was identified.
 
+# Native gauge carrier and finite spectrum
+
+The rank-one, rank-two, and rank-three native bundle tensors have automorphism groups $`U(1)`$, $`USp(2)=SU(2)`$, and $`SU(3)`$ respectively. Their action on the selected chiral carrier has diagonal kernel $`\mathbb Z_6`$, giving the faithful low-energy group
+``` math
+G_{\mathrm{SM}}
+=\frac{SU(3)\times SU(2)\times U(1)}{\mathbb Z_6}.
+```
+The associated 48-state three-family representation contains the $`Q,u^c,d^c,L,e^c,N^c`$ rows and passes the cubic, mixed, gravitational, and global Witten anomaly checks. This is an exact finite-carrier result, subject to the selected low-energy branch; it is not a derivation of the measured coupling strengths.
+
+The gauge-fixed fluctuation complex also derives the standard one-loop coefficient vector
+``` math
+b=\left(\frac{41}{10},-\frac{19}{6},-7\right)
+```
+from the selected chiral, Higgs, gauge, and ghost representation content. At the finite spectral level, the nonabelian gauge/ghost rows are
+``` math
+\begin{array}{c|ccc}
+ & 0 & 4\pi^2/9 & 8\pi^2/9\\
+\hline
+SU(2) & 3 & 12 & 12\\
+SU(3) & 8 & 32 & 32
+\end{array}
+```
+where the entries are multiplicities. Together with the abelian and matter rows, the finite spectrum-source inventory closes 10/10 exactly and adds no continuous parameter.
+
+This execution comes with a no-go result that fixes its interpretation. After normalization per rank or adjoint lane, every nontrivially weighted finite row has the same shape. Hence the finite spectrum alone cannot produce the observed relative gauge kinetic coefficients. A scalar proper-time measure also leaves their ratios invariant. The physical exit is therefore a nonuniversal continuum overlap/action response on the selected q79 visible–hidden geometry, not another finite-spectrum fit.
+
 # HYM and bundle execution
 
 The selected literal bundle result is stronger than the legacy string-lift ansatz. On the selected $`q79/F/m1`$ rank-two bundle:
@@ -72,9 +98,9 @@ The selected literal bundle result is stronger than the legacy string-lift ansat
 
 - the weighted-theta Fourier-tail/Wiener certificate has $`Z=0.38508`$ and $`Y+Zr=0.00932703<r=0.01`$.
 
-Together these close the selected rank-two literal Cech–HYM witness families 2/2, including continuum existence and local uniqueness in the certified ball. They do not prove uniqueness over all HYM branches or rank-three sector/operator transfer.
+Together these close the selected rank-two literal Cech–HYM witness families 2/2, including continuum existence and local uniqueness in the certified ball. They do not prove uniqueness over all HYM branches or rank-three continuum bundle transfer. The finite rank-three color spectrum is closed, but that result is not yet an evaluation of a nonzero-Chern physical rank-three HYM connection.
 
-This q79/Fu–Yau bundle result is not an identification with the auxiliary $`L(3,1)\times\mathrm{Nil}_3`$ overlap model used in the Theta papers. The shared circle is common $`U(1)`$ phase/holonomy data in the q79 carrier and is not an extra Cartesian factor. A same-source world-in-world/strain-to-q79 intertwining theorem remains a separate globalization target.
+This q79/Fu–Yau bundle result is not an identification with the auxiliary $`L(3,1)\times\mathrm{Nil}_3`$ overlap model used in the Theta papers. The shared circle is common $`U(1)`$ phase/holonomy data in the q79 carrier and is not an extra Cartesian factor. A same-source world-in-world/strain-to-q79 intertwining theorem remains a separate globalization target. The physical visible and hidden holomorphic bundles in one Hull–Strominger/HYM chamber, and the continuum gauge Hessian evaluated on them, remain open source objects.
 
 # Threshold execution
 
@@ -110,6 +136,12 @@ For the complete $`E_6`$ $`Q_\psi`$ current, the exact color-anomaly audit gives
 ```
 The matter-only/singlet diagnostic $`N_{\mathrm{DW}}=3`$ is not the anomaly of the complete spectrum. A strong-CP theorem therefore requires a selected flux/threshold decoupling and axion-current anomaly-matching map, followed by quality and electric-dipole-moment control. That map remains open.
 
+# How the layers fit together
+
+The finite carrier fixes which gauge transformations and representation channels exist. The finite gauge/ghost spectra then determine exact internal mode shapes and multiplicities. The rank-two HYM theorem proves that one selected continuum connection exists and is locally controlled. Finally, the SMDR profile transports measured physical coordinates in a declared renormalization scheme. These layers are compatible, but they answer different questions.
+
+In particular, exact multiplicities do not fix a dimensionful normalization, and one HYM connection representative does not yet provide all physical visible–hidden overlap coefficients. The profile execution demonstrates that the architecture can carry the renormalized Standard Model. A strict prediction would additionally require the same selected continuum action to emit the relative gauge metrics, electroweak primitive, and matching rows without using those observables in source selection.
+
 # Retired Calabi–Yau benchmark
 
 The former values $`\zeta_2/\zeta_1\simeq0.560`$, $`\zeta_3/\zeta_1\simeq0.229`$, their derived Kahler ratios, the fitted internal volume, exceptional-cycle coefficients, and corresponding axion decay constants all depended on the withdrawn gauge profile. They are not updated by substituting new ratios into the old formulas because topology, stability, warping, normalization, and degeneracy were not independently selected.
@@ -126,9 +158,107 @@ A future geometric execution must publish:
 
 # Conclusion
 
-Execution I now has a clean split. Gauge/precision profile execution, the selected rank-two literal Cech–HYM witness, and the internal $`K_{\mathrm{threshold}}`$ machinery are closed at their declared standards. Physical threshold/mass values remain admitted profile rows, and the old Calabi–Yau numerical lift is retired. Axion ratios and a conditional PQ lane survive, while absolute normalization and strong-CP selection remain open.
+Execution I now has a clean split. Gauge/precision profile execution, the native faithful gauge group, 10/10 finite gauge/ghost spectra, selected rank-two literal Cech–HYM witness, and internal $`K_{\mathrm{threshold}}`$ machinery are closed at their declared standards. Physical coupling, threshold, and mass-scheme values remain admitted profile rows, and the old Calabi–Yau numerical lift is retired. Axion ratios and a conditional PQ lane survive, while absolute normalization and strong-CP selection remain open.
 
-The result supports embedded renormalized-SM equivalence at the adopted profile standard. It does not establish a zero-knob compactification, derive the measured gauge rows, or solve strong CP.
+The result supports embedded renormalized-SM equivalence at the adopted profile standard. It does not establish a zero-knob compactification, derive the measured gauge rows, identify the complete physical visible–hidden HYM background, or solve strong CP.
+
+#### Rows used directly in this paper.
+
+- (*profile replay*).
+
+  Current non-looping global status and source-certificate map.
+
+- (*derived exact*).
+
+  Promoted direct K_threshold.Omega_H.lambda row.
+
+- (*derived exact*).
+
+  E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+
+- (*profile replay*).
+
+  Twelve-obligation embedded renormalized-SM equivalence audit.
+
+- (*numeric certified*).
+
+  Weighted-theta Fourier-tail and Wiener contraction certificate.
+
+- (*profile replay*).
+
+  Fifteen measured source coordinates, Jacobian and covariance transport.
+
+- (*profile replay*).
+
+  Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+
+- (*derived exact*).
+
+  Sparse 27x27 qutrit-Weyl left-action realization.
+
+- (*derived exact*).
+
+  Promoted P_EW source row at the declared one-shared-primitive standard.
+
+= by -
+
+#### Corpus-state cross-checks.
+
+- (*profile replay*).
+
+  Versioned Yu, Yd, Ye and lambda_H profile packet.
+
+- (*numeric certified*).
+
+  Three selected CKM profile rows and uncertainty comparison.
+
+- (*profile replay*).
+
+  Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+
+= by -
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+This execution paper directly reports the gauge, HYM, threshold, finite-matrix, anomaly, and precision packets listed below. Flavor and neutral-sector rows are included only to locate this paper inside the common profile-standard closure. The strict no-knob upgrade remains open.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Rows used directly in this paper
+
+- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
+- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
+- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
+- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
+- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
+- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
+- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
+
+## Corpus-state cross-checks
+
+- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
+- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
+- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 

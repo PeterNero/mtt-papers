@@ -1,65 +1,93 @@
 {
-  "abstract": "Coupling chiral fermions to Loop Quantum Gravity (LQG) is obstructed in semiclassical regimes by lattice-like fermion doubling when matter is defined by naive graph-local stencils. We provide a fully rigorous resolution within the Modal Triplet Theory (MTT) coherent sector: fermions on graphs and spin foams are defined by coherent compression of a continuum Dirac operator, not by a standalone lattice Dirac operator. The compression is constructed as smoothing at scale h followed by finite-element projection, yielding provable commutator estimates and norm-resolvent convergence under refinement. We show infrared spectral stability, stability of the chiral index, and absence of spurious low-energy mirror fermions in the coherent regime. We also treat the Berry/projector-variation correction: we define it via a unitary overlap transport on edges, prove small-step branch control for the matrix logarithm, and show it does not spoil grading. Finally, we connect the operator-level results to refinement-averaged propagator suppression mechanisms.",
+  "abstract": "This paper studies continuum-derived fermion operators on graph-labelled spaces in Modal Triplet Theory (MTT) and loop quantum gravity (LQG). For a self-adjoint continuum Dirac operator with compact resolvent, exact spectral compression preserves, without spectral pollution, every eigenvalue in the selected finite window. For a graded Dirac operator, a symmetric spectral window also preserves the chiral index. Any unitary presentation of that finite subspace on graph data inherits these facts. The construction avoids lattice doubling because it is continuum-derived and generally nonlocal; it does not yet construct a local graph Dirac operator or derive the continuum fermion source from MTT. Separately, a smooth constant-rank family of projectors carries the exact Kato\u2013Berry connection, but such a family requires an explicit gapped band bundle. The paper therefore gives a rigorous no-spurious-spectrum benchmark and a finite source contract, not a completed chiral-fermion quantization in LQG.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v2",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261945",
-    "created": "2026-01-15T20:16:54.579748+00:00",
+    "created": "2026-07-29T08:50:31.780169+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18261946",
+    "doi": "10.5281/zenodo.21665968",
     "files": [
       {
-        "checksum": "md5:5a5df9e381f9fda914396a84a63baeaa",
-        "content_url": "https://zenodo.org/api/records/18261946/files/Fermions_in_Loop_Quantum_Gravity_from_Modal_Triplet_Theory__Coherent_Compression__Berry_Terms__and_Absence_of_Doubling%20(5).pdf/content",
-        "key": "Fermions_in_Loop_Quantum_Gravity_from_Modal_Triplet_Theory__Coherent_Compression__Berry_Terms__and_Absence_of_Doubling (5).pdf",
-        "size": 362793
+        "checksum": "md5:133266fc9e53d75cc56383bda3c01cdb",
+        "content_url": "https://zenodo.org/api/records/21665968/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 296958
       }
     ],
-    "id": "18261946",
-    "match_kind": "title_or_file",
+    "id": "21665968",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18261946",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665968",
     "resource_type": "publication",
-    "title": "Fermions in Loop Quantum Gravity from Modal Triplet Theory",
-    "updated": "2026-01-15T20:16:55.039665+00:00",
-    "version": "v1.0"
+    "title": "Coherent Compression of Continuum Dirac Operators on LQG Graphs: A Conditional MTT Construction and the Doubling Boundary",
+    "updated": "2026-07-29T08:50:32.002182+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "331f95bf6d4ea8aa35510d62c465543037840186e45efc6adcfd2a39e283e014",
+  "main_tex_sha256": "cc07402985587346fcdc9efbf2e042dee6b93eceeda3d6e8cab1f1fc0561f393",
   "paper_id": "fermions-in-loop-quantum-gravity-from-modal-triplet-the-c9d451aa",
-  "paper_md_sha256": "716b6db3b1d8463aa0a278a7d629d3de760855ff0da291eb8a2666a64440c6ca",
+  "paper_md_sha256": "ca6e6a4ba6749a98556c0cfbd3f64e88338eaa2edbcb18f7b50b0a8a90d7cb39",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "9502669f5361105848dfe65ae16b555ed9b4944d96823956662d2fe370cf5ff2",
+    "selected_revision": true,
+    "superseded_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Fermions_in_Loop_Quantum_Gravity_from_Modal_Triplet_Theory__Coherent_Compression__Berry_Terms__and_Absence_of_Doubling"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 33147,
+      "bytes": 18965,
       "path": "main.tex",
-      "sha256": "331f95bf6d4ea8aa35510d62c465543037840186e45efc6adcfd2a39e283e014"
+      "sha256": "cc07402985587346fcdc9efbf2e042dee6b93eceeda3d6e8cab1f1fc0561f393"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Fermions_in_Loop_Quantum_Gravity_from_Modal_Triplet_Theory__Coherent_Compression__Berry_Terms__and_Absence_of_Doubling"
   },
-  "source_tree_sha256": "1c1667d8125f5240d15972b82a26287df0e0df2a75825e3a7a87657b778cb56a",
-  "title": "Fermions in Loop Quantum Gravity from Modal Triplet Theory: Coherent Compression, Berry Terms, and Absence of Doubling",
+  "source_tree_sha256": "116c27355c23d013db8761cff0dec343cdc44463b481a5c953489cdce354a4c4",
+  "title": "Coherent Compression of Continuum Dirac Operators on LQG Graphs: A Conditional MTT Construction and the Doubling Boundary",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261945",
+      "created": "2026-07-29T08:50:31.780169+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665968",
+      "files": [
+        {
+          "checksum": "md5:133266fc9e53d75cc56383bda3c01cdb",
+          "content_url": "https://zenodo.org/api/records/21665968/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 296958
+        }
+      ],
+      "id": "21665968",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665968",
+      "resource_type": "publication",
+      "title": "Coherent Compression of Continuum Dirac Operators on LQG Graphs: A Conditional MTT Construction and the Doubling Boundary",
+      "updated": "2026-07-29T08:50:32.002182+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18261945",
       "created": "2026-01-15T20:16:54.579748+00:00",

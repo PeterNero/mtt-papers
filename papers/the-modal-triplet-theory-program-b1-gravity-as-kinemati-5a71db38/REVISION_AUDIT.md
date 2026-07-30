@@ -144,3 +144,19 @@ typed loop transport
 It does not select the physical base, Lorentzian signature, frame bundle,
 metric, action, coupling constants, or Einstein dynamics from the circle
 profile alone.
+
+## Expository revision
+
+The current paper now opens with a paper-specific guide following the idea
+through abstract transport, smooth connection geometry, causal geometry, and
+gravitational dynamics. A one-dimensional phase example explains
+holonomy-fixed descent and the lawful responses to nontrivial return memory.
+The argument map makes clear where the bundle, metric, principal symbol, and
+action enter, so Levi--Civita and Einstein results cannot be mistaken for
+consequences of the circle profile alone.
+
+## Verification
+
+- The current source compiles with `pdflatex` to a 13-page PDF.
+- The final log has no undefined references, underfull boxes, overfull boxes,
+  or LaTeX/package warnings.

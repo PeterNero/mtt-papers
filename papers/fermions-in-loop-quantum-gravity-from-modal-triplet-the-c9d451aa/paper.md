@@ -1,652 +1,312 @@
 ---
 abstract: |
-  Coupling chiral fermions to Loop Quantum Gravity (LQG) is obstructed in semiclassical regimes by lattice-like fermion doubling when matter is defined by naive graph-local stencils. We provide a fully rigorous resolution within the Modal Triplet Theory (MTT) coherent sector: fermions on graphs and spin foams are defined by coherent compression of a continuum Dirac operator, not by a standalone lattice Dirac operator. The compression is constructed as smoothing at scale $`h`$ followed by finite-element projection, yielding provable commutator estimates and norm-resolvent convergence under refinement. We show infrared spectral stability, stability of the chiral index, and absence of spurious low-energy mirror fermions in the coherent regime. We also treat the Berry/projector-variation correction: we define it via a unitary overlap transport on edges, prove small-step branch control for the matrix logarithm, and show it does not spoil grading. Finally, we connect the operator-level results to refinement-averaged propagator suppression mechanisms.
+  This paper studies continuum-derived fermion operators on graph-labelled spaces in Modal Triplet Theory (MTT) and loop quantum gravity (LQG). For a self-adjoint continuum Dirac operator with compact resolvent, exact spectral compression preserves, without spectral pollution, every eigenvalue in the selected finite window. For a graded Dirac operator, a symmetric spectral window also preserves the chiral index. Any unitary presentation of that finite subspace on graph data inherits these facts. The construction avoids lattice doubling because it is continuum-derived and generally nonlocal; it does not yet construct a local graph Dirac operator or derive the continuum fermion source from MTT. Separately, a smooth constant-rank family of projectors carries the exact Kato–Berry connection, but such a family requires an explicit gapped band bundle. The paper therefore gives a rigorous no-spurious-spectrum benchmark and a finite source contract, not a completed chiral-fermion quantization in LQG.
 author:
 - Peter Nero
-current_version: v1.0
-date: January, 2026
-generated_from_main_tex_sha256: 331f95bf6d4ea8aa35510d62c465543037840186e45efc6adcfd2a39e283e014
+current_version: v2
+date: July 2026 Version 2
+generated_from_main_tex_sha256: cc07402985587346fcdc9efbf2e042dee6b93eceeda3d6e8cab1f1fc0561f393
 paper_id: fermions-in-loop-quantum-gravity-from-modal-triplet-the-c9d451aa
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  Fermions in Loop Quantum Gravity from Modal Triplet Theory:  
-  Coherent Compression, Berry Terms, and Absence of Doubling
-zenodo_doi: 10.5281/zenodo.18261946
-zenodo_record_id: 18261946
-zenodo_url: "https://zenodo.org/records/18261946"
+  Coherent Compression of Continuum Dirac Operators on LQG Graphs:
+  A Conditional MTT Construction and the Doubling Boundary
+zenodo_doi: 10.5281/zenodo.21665968
+zenodo_record_id: 21665968
+zenodo_url: "https://zenodo.org/records/21665968"
 ---
 
-# Introduction
+# Version 2 Revision Note
 
-Fermion doubling in semiclassical treatments of Loop Quantum Gravity (LQG) has been identified as a serious obstacle to reproducing the chiral Standard Model. Barnett and Smolin show that doubling appears when one expands around lattice-like semiclassical states and defines fermions with naive graph-local stencils . Gambini and Pullin argue that the absence of a fixed discretization invalidates lattice no-go hypotheses . Zhang–Liu–Han propose that refinement superposition suppresses doubler poles in propagators . Lewandowski and Zhang construct canonical fermion coupling in LQG and explicitly cite doubling as contested .
+Supersedes:
+The first coherent-compression and no-doubling release.
 
-In this work we show that these positions are compatible once one separates:
+Reason:
+The finite-element norm-resolvent estimate and edge-logarithm Berry construction did not establish their claimed conclusions.
 
-- the *choice of discrete fermion operator* (naive stencil vs induced compression),
+Resolution:
+They are replaced by exact sharp spectral compression, chiral-index inheritance, and the Kato–Berry connection for a supplied smooth projector bundle.
 
-- the *choice of physical states* (fixed lattice vs refinement superposition),
+Retained result:
+A continuum spectral window can be represented unitarily on finite graph data without spurious low-energy eigenvalues.
 
-- the *regime of validity* (coherent/admissible sector vs gap-closing transitions).
+Remaining boundary:
+The MTT-selected continuum Dirac source, geometric graph map, locality, refinement, anomaly control, and physical LQG dynamics remain open.
 
-Our core correction is operator-theoretic: define discrete fermion dynamics as a *compression* of a continuum coherent Dirac operator, constructed in a way that yields provable norm-resolvent convergence. This eliminates spurious low-energy doublers by spectral and index stability.
+# Problem, correction, and scope
 
-<div class="remark">
+Fermion doubling is the appearance of unwanted low-energy fermion species when a chiral continuum theory is represented by certain local lattice operators. In lattice field theory this is not merely a numerical accident. The Nielsen–Ninomiya theorem ties it to a collection of assumptions, including a fixed translationally invariant momentum-space description, locality, Hermiticity, and exact chiral structure .
 
-*Remark 1* (Why Nielsen–Ninomiya does not apply). The Nielsen–Ninomiya theorem assumes a local, translationally invariant lattice Dirac operator on a fixed lattice . Our discrete operator is not a standalone lattice stencil: it is an induced compression of a continuum operator, and translation invariance is absent on generic graphs. Therefore the theorem does not apply.
+The issue also appears in semiclassical LQG treatments when matter is expanded on regular lattice-like graphs using naive local stencils . Other work studies whether graph superposition or refinement changes the conclusion . These are serious questions because the Standard Model is chiral.
 
-</div>
+The first edition of this paper proposed a different strategy: begin with a continuum Dirac operator and compress it to graph data. That strategy contains a valid idea, but the proof was too strong. This edition separates three questions:
 
-# Setting: Coherent Dirac operator and admissible regime
+1.  Can a finite representation inherit a chosen continuum spectral window without adding eigenvalues?
 
-We work in a slab-local regime (bounded geometry), consistent with MTT’s claim discipline.
+2.  Does that inheritance constitute a local, fundamental graph regularization of a chiral theory?
 
-## Geometry and bundles
+3.  Has MTT selected the continuum operator and the graph presentation from its own geometry?
 
-Let $`(M,g)`$ be a smooth oriented Riemannian spin $`d`$-manifold ($`d=3`$ for canonical slices or $`d=4`$ for covariant slabs) of bounded geometry: curvature and its derivatives up to order $`m`$ are bounded and the injectivity radius is bounded below by $`\iota_0>0`$ on the domain of interest.
+The answer to the first question is yes for exact spectral compression. The answers to the second and third are not yet established.
 
-Let $`S\to M`$ be the spinor bundle and let $`\mathcal R\to M`$ be a finite-rank Hermitian vector bundle (encoding internal indices). Set
+## Relation to the LQG embedding paper
+
+This paper assumes, rather than proves, the canonical bridge stated in *Modal Triplet Theory and Loop Quantum Gravity: A Conditional Holst/Canonical Embedding*. That bridge itself requires a selected normalized Holst action, a $`3+1`$ split, and time gauge. Fermions add further data: a spin or $`\mathrm{Spin}^c`$ bundle, gauge representation, continuum Dirac operator, domains and boundary conditions, and a map to graph variables.
+
+# Continuum datum and three different finite operations
+
+Let $`M`$ be a compact Riemannian spin or $`\mathrm{Spin}^c`$ manifold, or a compact domain with elliptic self-adjoint boundary conditions. Let $`S\otimes R\to M`$ be a Hermitian spinor bundle with a finite-rank internal bundle $`R`$, and set
 ``` math
-H := L^2(M,S\otimes \mathcal R).
+\mathcal H=L^2(M,S\otimes R).
 ```
+Let $`D`$ be a self-adjoint Dirac-type operator on $`\mathcal H`$ with compact resolvent. Compact resolvent ensures that its spectrum is discrete with finite multiplicities and has no finite accumulation point.
 
-## Continuum Dirac operator
+Three operations that were previously blended together must be distinguished:
 
-Let $`D`$ be a Dirac-type operator on $`S\otimes\mathcal R`$:
-``` math
-D = \gamma^\mu \nabla_\mu + \mathcal V,
-```
-where $`\nabla`$ is a metric/Hermitian connection and $`\mathcal V`$ is a bounded endomorphism field. On bounded-geometry domains, $`D`$ is essentially self-adjoint on $`C_c^\infty`$ (or has a standard self-adjoint realization with boundary conditions when $`M`$ has boundary). We assume a fixed self-adjoint realization of $`D`$ with domain $`\mathrm{Dom}(D)\subset H^1`$.
+1.  A *sharp spectral projector* $`P_\Lambda=\mathrm{Id}_{[-\Lambda,\Lambda]}(D)`$ is idempotent and finite rank.
 
-<div class="remark">
+2.  A *smooth filter*, such as $`F_h=e^{-h^2D^2}`$, is bounded and smoothing but is generally neither idempotent nor finite rank.
 
-*Remark 2* (Boundary conditions on domains with boundary). If $`M`$ (or $`\Sigma`$) has boundary, we assume a standard elliptic self-adjoint realization of $`D`$ (e.g. local elliptic boundary conditions, or APS-type where appropriate). All estimates below are slab-local/bounded-geometry and are unaffected provided the chosen realization yields the usual elliptic regularity and heat-kernel bounds on the domain.
+3.  A *finite-element or graph projector* $`Q_h`$ is finite rank, but need not commute with $`D`$ and can exhibit spectral pollution unless an approximation theorem excludes it.
 
-</div>
+Only the first operation gives the exact theorem below for free. An MTT “coherent projector” must be identified with one of these mathematical types before conclusions are transferred between them.
 
-## Coherent-sector admissibility
-
-MTT supplies a coherent sector separated by a uniform gap. For this paper we encode that as a scale separation hypothesis:
+# Exact spectral compression
 
 <div class="definition">
 
-**Definition 3** (Coherent gap scale). Fix $`\Delta>0`$ such that the physically relevant infrared window satisfies $`E<\Delta`$ and “noncoherent” excitations are suppressed above $`\Delta`$ in the admissible regime.
+**Definition 1** (Selected spectral window). For $`\Lambda>0`$, define
+``` math
+P_\Lambda=\mathrm{Id}_{[-\Lambda,\Lambda]}(D),
+ \qquad
+ \mathcal H_\Lambda=P_\Lambda\mathcal H,
+ \qquad
+ D_\Lambda=D|_{\mathcal H_\Lambda}.
+```
+Since $`D`$ has compact resolvent, $`\mathcal H_\Lambda`$ is finite-dimensional.
 
 </div>
 
-The operator-theoretic results below do not require the internal MTT construction of $`\Delta`$; they require only the existence of a scale $`E<\Delta`$ on which the effective description is asserted.
+<div id="thm:spectral" class="theorem">
 
-# Discrete compression spaces and operators
-
-We define the discrete fermion operator on a graph/foam by compressing $`D`$ to a finite-dimensional space associated with resolution $`h`$ (graph) or $`\ell`$ (foam). To obtain fully rigorous estimates we use a two-step compression:
+**Theorem 2** (No spurious eigenvalues under exact spectral compression). *The operator $`D_\Lambda`$ is finite-dimensional and self-adjoint, and
 ``` math
-\text{smooth at scale }h \quad+\quad \text{project to finite element space}.
+\operatorname{spec}(D_\Lambda)
+ =
+ \operatorname{spec}(D)\cap[-\Lambda,\Lambda]
 ```
-
-This is standard in operator approximation for elliptic operators and avoids nontrivial commutator issues of raw $`L^2`$-projection alone.
-
-## Triangulations and shape regularity
-
-Let $`\{\mathcal T_h\}_{h\downarrow 0}`$ be a family of shape-regular triangulations of $`M`$ (in local bounded-geometry charts), with mesh size
-``` math
-h := \max_{T\in\mathcal T_h} \mathrm{diam}(T).
-```
-Shape regular means there is a uniform constant $`\sigma`$ such that each simplex contains an inscribed ball of radius $`\ge \sigma h`$.
-
-## Finite element space
-
-Let $`V_h\subset H^1(M,S\otimes\mathcal R)`$ denote the P1 finite element space of sections that are affine on each simplex in a chosen local trivialization. Let
-``` math
-P_h : H \to V_h
-```
-be the $`L^2`$-orthogonal projector (well-defined since $`V_h`$ is finite-dimensional).
-
-## Smoothing operator
-
-Define the smoothing operator
-``` math
-S_h := e^{-h^2 D^2}.
-```
-Since $`D^2`$ is Laplace-type and $`M`$ has bounded geometry, the heat kernel exists and satisfies standard Gaussian bounds; $`S_h`$ maps $`L^2\to H^k`$ for all $`k`$ with bounds depending on $`h`$.
-
-<div id="lem:smoothing" class="lemma">
-
-**Lemma 4** (Smoothing bounds). *For each $`k\in\mathbb N`$ there exists $`C_k`$ such that for all $`h\in(0,h_0]`$,
-``` math
-\|S_h\|_{L^2\to H^k} \le C_k\, h^{-k}.
-```
-Moreover, $`S_h`$ commutes with $`D`$ (functional calculus): $`DS_h = S_h D`$.*
+with exactly the same algebraic and geometric multiplicities. In particular, the compression introduces no additional zero or low-energy eigenvalues.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Since $`D`$ is self-adjoint, $`S_h = f(D)`$ with $`f(\lambda)=e^{-h^2\lambda^2}`$, hence commutes with $`D`$. The bounds follow from standard heat kernel/spectral multiplier estimates on bounded-geometry manifolds for Laplace-type operators (see e.g.  and bounded-geometry heat kernel literature; for an elementary route one uses the spectral theorem and $`|\lambda|^k e^{-h^2\lambda^2}\le C_k h^{-k}`$, yielding $`\|D^k S_h\|\le C_k h^{-k}`$, and then elliptic equivalence of $`H^k`$ norms). ◻
+*Proof.* The projector $`P_\Lambda`$ is obtained from the Borel functional calculus of the self-adjoint operator $`D`$, so it commutes with $`D`$. Its range is the orthogonal direct sum of precisely the eigenspaces whose eigenvalues lie in the chosen interval. Restricting $`D`$ to that invariant sum leaves the action on every included eigenspace unchanged and excludes every other eigenspace. Self-adjointness on the finite-dimensional invariant range is immediate. ◻
 
 </div>
 
-## Compression map and compressed operator
+## What the theorem says in plain language
 
-Define the *compression map*
+The finite matrix is made from the actual continuum eigenmodes in the window. It therefore cannot invent another low-energy species: its rows and columns already span exactly the modes one decided to retain. This is a useful benchmark for any approximate graph construction.
+
+The conclusion is also limited. The projector depends on the full continuum operator and is generally nonlocal in position space. It does not provide a local graph stencil from which the continuum theory is recovered. It preserves a supplied spectrum rather than deriving that spectrum.
+
+# Exact chiral-index inheritance
+
+Assume now that $`\mathcal H=\mathcal H^+\oplus\mathcal H^-`$ has grading $`\Gamma=\Gamma^*=\Gamma^{-1}`$ and
 ``` math
-\Pi_h := P_h S_h : H \to V_h.
+\Gamma D+D\Gamma=0.
 ```
-This is bounded for each fixed $`h`$ and captures the continuum modes at resolution $`h`$.
-
-<div class="definition">
-
-**Definition 5** (Raw compressed operator). Define the raw compressed operator on $`V_h`$:
+Then
 ``` math
-D_h^{(0)} := \Pi_h D \Pi_h^\ast,
-```
-viewed as an operator on $`V_h`$ via the inner product inherited from $`L^2`$.
-
-</div>
-
-<div class="remark">
-
-*Remark 6*. One may equivalently define the matrix of $`D_h^{(0)}`$ in a basis of $`V_h`$ by $`(D_h^{(0)})_{ij}=\langle \varphi_i, D \varphi_j\rangle`$ with $`\varphi_j=\Pi_h^\ast e_j`$.
-
-</div>
-
-# Berry correction: definition and branch control
-
-In addition to raw compression, the induced dynamics includes a projector-variation (Berry/Grassmann) term. We define it on edges by overlap transport and address the logarithm branch issue explicitly.
-
-## Edge overlaps and unitary transport
-
-Let $`\{\phi_{v,a}\}`$ be a vertex-adapted orthonormal basis for $`V_h`$ (constructed via local orthonormalization on stars of vertices). For each oriented edge $`e:v\to w`$ in the 1-skeleton of $`\mathcal T_h`$, define the overlap matrix
-``` math
-S_e^{ab} := \langle \phi_{v,a}, \phi_{w,b}\rangle.
-```
-Let $`S_e = U_e |S_e|`$ be the polar decomposition with unitary $`U_e`$.
-
-<div id="lem:small-step" class="lemma">
-
-**Lemma 7** (Small-step control). *There exists $`C>0`$ such that for sufficiently small $`h`$,
-``` math
-\|U_e - I\| \le C h
-```
-uniformly over edges $`e`$ in bounded-geometry regions, provided the basis is chosen continuously with respect to the smoothed projection $`\Pi_h`$.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Because $`\Pi_h=P_h S_h`$ depends smoothly on $`h`$ through the analytic functional calculus $`S_h`$, and because $`P_h`$ varies continuously under shape-regular refinement (finite-dimensional subspaces vary continuously in the Grassmannian when induced by local charts), one can choose the vertex frames so that adjacent vertex bases differ by $`O(h)`$ in $`L^2`$ norm. This yields $`\|S_e-I\|\le Ch`$. Polar decomposition is Lipschitz near the identity, hence $`\|U_e-I\|\le C'h`$. A fully explicit proof can be given by choosing a fixed smooth frame field on each simplex and comparing Gram matrices; bounded geometry controls the constants. ◻
-
-</div>
-
-## Matrix logarithm branch
-
-<div id="lem:logbranch" class="lemma">
-
-**Lemma 8** (Log branch well-defined for small steps). *If $`\|U_e-I\|<1`$, the principal matrix logarithm $`\log U_e`$ is well-defined and satisfies
-``` math
-\|\log U_e\| \le C \|U_e-I\|.
-```
-In particular, by Lemma <a href="#lem:small-step" data-reference-type="ref" data-reference="lem:small-step">7</a>, for sufficiently small $`h`$ the choice of principal branch is consistent along refinement.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* If $`\|U-I\|<1`$ then $`\mathrm{Spec}(U)`$ lies in the open disk centered at $`1`$ of radius $`1`$, which excludes $`-1`$ and avoids the branch cut of the principal logarithm. Standard holomorphic functional calculus yields $`\log U`$ analytic in $`U`$ on this neighborhood and bounded linearly by $`\|U-I\|`$ (see e.g. ). ◻
-
-</div>
-
-## Berry correction operator
-
-<div class="definition">
-
-**Definition 9** (Berry correction). Define $`B_h`$ on $`V_h`$ by
-``` math
-(B_h)_{(v,a),(w,b)} :=
-\begin{cases}
-(\log U_e)_{ab} & \text{if } e:v\to w \text{ is an edge},\\
-0 & \text{otherwise}.
-\end{cases}
-```
-
-</div>
-
-<div class="definition">
-
-**Definition 10** (Corrected discrete operator). Define the corrected operator
-``` math
-D_h := D_h^{(0)} + B_h.
-```
-
-</div>
-
-# Norm-resolvent convergence: full proof
-
-We now prove norm-resolvent convergence from first principles, without black-box commutator assumptions.
-
-## Uniform resolvent bounds
-
-<div id="lem:resbound" class="lemma">
-
-**Lemma 11** (Resolvent bounds). *Let $`A`$ be self-adjoint on a Hilbert space. For $`z\in\mathbb C\setminus\mathbb R`$,
-``` math
-\|(A-z)^{-1}\| \le \frac{1}{|\Im z|}.
-```*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Standard: $`\|(A-z)^{-1}\|=\sup_{\lambda\in\mathrm{Spec}(A)}|\lambda-z|^{-1}\le |\Im z|^{-1}`$. ◻
-
-</div>
-
-## Approximation of resolvents by compression
-
-Define $`R(z)=(D-z)^{-1}`$ and $`R_h(z)=(D_h-z)^{-1}`$ (on $`V_h`$, extended by zero to $`H`$ when needed).
-
-<div id="lem:defect" class="lemma">
-
-**Lemma 12** (Smoothing-projection defect estimate). *For $`z\in\mathbb C\setminus\mathbb R`$ there exists $`C(z)`$ such that
-``` math
-\|(\Pi_h - \mathrm{Id})R(z)\|_{H\to H} \le C(z)\, h,
-```
-and
-``` math
-\|B_h R(z)\|_{H\to H} \le C(z)\, h
-```
-for sufficiently small $`h`$.*
-
-</div>
-
-<div class="remark">
-
-*Remark 13* (On crude operator-norm bounds). We never rely on a crude estimate such as $`\|\Pi_h-\mathrm{Id}\|\le 2`$ by itself. The only quantity used in convergence is the *composed* defect $`(\Pi_h-\mathrm{Id})R(z)`$ (and similar composed terms), which is quantitatively $`O(h)`$ by Lemma <a href="#lem:defect" data-reference-type="ref" data-reference="lem:defect">12</a>.
-
-</div>
-
-<div class="proof">
-
-*Proof.* We treat the two terms.
-
-*(i) $`\Pi_h-\mathrm{Id}`$ term.* Recall $`\Pi_h=P_h S_h`$. Since $`S_h\to \mathrm{Id}`$ strongly as $`h\to0`$ and $`S_h`$ is a bounded spectral multiplier, we estimate
-``` math
-\|(\mathrm{Id}- S_h)R(z)\|
-= \|(\mathrm{Id}-e^{-h^2 D^2})(D-z)^{-1}\|
-\le \sup_{\lambda\in\mathbb R} \frac{1-e^{-h^2\lambda^2}}{|\lambda-z|}.
-```
-Using $`1-e^{-t}\le t`$ gives
-``` math
-\frac{1-e^{-h^2\lambda^2}}{|\lambda-z|}
-\le \frac{h^2\lambda^2}{|\lambda-z|}
-\le h \cdot \frac{h|\lambda|^2}{|\lambda-z|}.
-```
-For fixed $`z`$ one has $`|\lambda-z|\ge |\Im z|`$ and $`h|\lambda|^2/|\lambda-z|\le C(z)`$ uniformly in $`\lambda`$ for small $`h`$ by splitting $`|\lambda|\le h^{-1/2}`$ and $`|\lambda|>h^{-1/2}`$; this yields $`\|(\mathrm{Id}-S_h)R(z)\|\le C(z)h`$.
-
-Next, $`P_h`$ is an $`L^2`$-orthogonal projector, so $`\|P_h\|\le 1`$. Thus
-``` math
-\|(\mathrm{Id}-\Pi_h)R(z)\|
-\le \|(\mathrm{Id}-P_h S_h)R(z)\|
-\le \|(\mathrm{Id}-S_h)R(z)\| + \|(\mathrm{Id}-P_h)S_h R(z)\|.
-```
-The second term is controlled by approximation of smooth functions by $`V_h`$: since $`S_hR(z)`$ maps $`L^2\to H^1`$ with norm $`\lesssim h^{-1}`$ (Lemma <a href="#lem:smoothing" data-reference-type="ref" data-reference="lem:smoothing">4</a>) and $`V_h`$ is a first-order approximation space on a shape-regular triangulation, we have the Céa/approximation estimate
-``` math
-\|(\mathrm{Id}-P_h)u\|_{L^2}\le C h \|u\|_{H^1}
-```
-for $`u\in H^1`$ (standard finite element projection estimate; see ). Applying to $`u=S_hR(z)\psi`$ yields
-``` math
-\|(\mathrm{Id}-P_h)S_hR(z)\|\le C h \|S_hR(z)\|_{L^2\to H^1}\le C(z) h.
-```
-Thus $`\|(\Pi_h-\mathrm{Id})R(z)\|\le C(z)h`$.
-
-*(ii) $`B_h`$ term.* By Lemma <a href="#lem:logbranch" data-reference-type="ref" data-reference="lem:logbranch">8</a> and Lemma <a href="#lem:small-step" data-reference-type="ref" data-reference="lem:small-step">7</a>, $`\|B_h\|\le C h`$ as an operator on $`V_h`$ (finite-dimensional operator norm). Extending by zero to $`H`$ gives
-``` math
-\|B_h R(z)\|\le \|B_h\|\,\|R(z)\|\le (Ch)\cdot |\Im z|^{-1} = C(z)h.
-```
- ◻
-
-</div>
-
-<div id="thm:normres" class="theorem">
-
-**Theorem 14** (Norm-resolvent convergence (graph)). *For $`z\in\mathbb C\setminus\mathbb R`$ there exists $`C(z)`$ such that for sufficiently small $`h`$,
-``` math
-\|(D_h-z)^{-1}-\Pi_h(D-z)^{-1}\Pi_h\|\le C(z)\, h.
-```*
-
-</div>
-
-<div class="proof">
-
-*Proof.* We start from the second resolvent identity in the form
-``` math
-R_h(z) - \Pi_h R(z)\Pi_h
-= R_h(z)\bigl[(D_h-z)\Pi_h R(z)\Pi_h - \Pi_h\bigr].
-```
-Compute the bracket:
-``` math
-(D_h-z)\Pi_h R(z)\Pi_h - \Pi_h
-= (D_h\Pi_h - \Pi_h D)\,R(z)\Pi_h.
-```
-Using $`D_h=D_h^{(0)}+B_h`$ and $`D_h^{(0)}=\Pi_h D \Pi_h^\ast`$ (as an induced operator) yields
-``` math
-D_h\Pi_h - \Pi_h D
-= (\Pi_h D \Pi_h^\ast)\Pi_h - \Pi_h D + B_h\Pi_h.
-```
-Since $`\Pi_h^\ast \Pi_h`$ is the orthogonal projector on $`H`$ onto $`\mathrm{Ran}(\Pi_h^\ast)`$ and $`\Pi_h`$ is bounded, the first two terms combine to $`(\Pi_h-\mathrm{Id})D`$ plus a bounded projector remainder; a direct bound is obtained by factoring $`R(z)`$:
-``` math
-(D_h\Pi_h - \Pi_h D)R(z)
-= \bigl(\Pi_h D - \Pi_h D\bigr)R(z) + (\Pi_h-\mathrm{Id}) D R(z) + B_h R(z).
-```
-Thus
-``` math
-\|(D_h\Pi_h-\Pi_h D)R(z)\|
-\le \|(\Pi_h-\mathrm{Id}) D R(z)\| + \|B_h R(z)\|.
-```
-Now $`DR(z)=\mathrm{Id}+ zR(z)`$, so
-``` math
-\|(\Pi_h-\mathrm{Id})DR(z)\|
-\le \|(\Pi_h-\mathrm{Id})\| + |z|\,\|(\Pi_h-\mathrm{Id})R(z)\|.
-```
-We have $`\|\Pi_h\|\le \|P_h\|\|S_h\|\le \|S_h\|\le 1`$ (since $`|e^{-h^2\lambda^2}|\le 1`$), hence $`\|\Pi_h-\mathrm{Id}\|\le 2`$; the refined bound needed is on $`(\Pi_h-\mathrm{Id})R(z)`$, given by Lemma <a href="#lem:defect" data-reference-type="ref" data-reference="lem:defect">12</a>. Therefore
-``` math
-\|(\Pi_h-\mathrm{Id})DR(z)\| \le 2 + |z|\,C(z)h.
-```
-The constant term does not spoil convergence because it is multiplied by $`R_h(z)`$ and we use that the defect sits in the range of $`\Pi_h`$; to keep the presentation fully explicit, we instead estimate the full difference directly using Lemma <a href="#lem:defect" data-reference-type="ref" data-reference="lem:defect">12</a>:
-
-Consider the decomposition
-``` math
-R_h(z)-\Pi_h R(z)\Pi_h
-=
-\bigl[R_h(z)-R(z)\bigr]
-+
-\bigl[R(z)-\Pi_h R(z)\Pi_h\bigr].
-```
-The second term equals $`(\mathrm{Id}-\Pi_h)R(z) + \Pi_h R(z)(\mathrm{Id}-\Pi_h)`$ and is $`O(h)`$ by Lemma <a href="#lem:defect" data-reference-type="ref" data-reference="lem:defect">12</a>. For the first term, use the resolvent identity
-``` math
-R_h(z)-R(z) = R_h(z)(D-D_h)R(z).
-```
-We now bound $`D-D_h`$ on the range relevant for $`R(z)`$ in the IR regime. Since $`D_h`$ is the induced compression plus $`B_h`$, $`D-D_h`$ acts like $`(\mathrm{Id}-\Pi_h)D +`$ bounded finite rank terms; composing with $`R(z)`$, the defect reduces to $`(\mathrm{Id}-\Pi_h)DR(z)`$ and $`B_hR(z)`$, which are controlled by Lemma <a href="#lem:defect" data-reference-type="ref" data-reference="lem:defect">12</a> and $`DR(z)=\mathrm{Id}+zR(z)`$. Collecting bounds and using Lemma <a href="#lem:resbound" data-reference-type="ref" data-reference="lem:resbound">11</a> for $`\|R_h(z)\|`$ and $`\|R(z)\|`$ yields
-``` math
-\|R_h(z)-R(z)\| \le C(z)h,
+D=
+ \begin{pmatrix}
+ 0&D^-\\
+ D^+&0
+ \end{pmatrix},
 \qquad
-\|R(z)-\Pi_hR(z)\Pi_h\|\le C(z)h,
+(D^+)^*=D^-.
 ```
-hence the stated estimate. ◻
-
-</div>
-
-<div class="remark">
-
-*Remark 15*. The proof above is written to be fully explicit at the level of operator identities and estimates. A shorter presentation is possible, but we keep the full chain to avoid “where did the proof go?” objections.
-
-</div>
-
-# Spectral projectors, infrared stability, and index stability
-
-Fix $`E<\Delta`$ and choose a contour $`\partial\Omega`$ enclosing $`[-E,E]`$ and lying in the resolvent set of $`D`$.
-
-<div class="definition">
-
-**Definition 16** (Spectral projectors). Define
-``` math
-P := \frac{1}{2\pi i}\int_{\partial\Omega}(D-z)^{-1}\,dz,
-\qquad
-P_h := \frac{1}{2\pi i}\int_{\partial\Omega}(D_h-z)^{-1}\,dz.
-```
-
-</div>
-
-<div id="lem:projconv" class="lemma">
-
-**Lemma 17** (Spectral projector convergence). *There exists $`h_0`$ such that for all $`h<h_0`$,
-``` math
-\|P_h-\Pi_h P \Pi_h\| < 1.
-```*
-
-</div>
-
-<div class="proof">
-
-*Proof.* By Theorem <a href="#thm:normres" data-reference-type="ref" data-reference="thm:normres">14</a>, the resolvent difference is uniformly $`O(h)`$ on $`\partial\Omega`$. Hence
-``` math
-\|P_h-\Pi_h P\Pi_h\|
-\le \frac{1}{2\pi}\mathrm{length}(\partial\Omega)\sup_{z\in\partial\Omega}
-\|(D_h-z)^{-1}-\Pi_h(D-z)^{-1}\Pi_h\|
-\le C_\Omega h.
-```
-Choose $`h_0`$ so that $`C_\Omega h_0<1`$. ◻
-
-</div>
-
-<div id="cor:irstab" class="corollary">
-
-**Corollary 18** (Infrared spectral stability). *For $`h<h_0`$, $`\mathop{\mathrm{rank}}(P_h)=\mathop{\mathrm{rank}}(P)`$, equivalently the number of eigenvalues of $`D_h`$ in $`[-E,E]`$ equals that of $`D`$ (counting multiplicity).*
-
-</div>
-
-<div class="proof">
-
-*Proof.* If two projections differ by norm $`<1`$, they have equal rank (standard perturbation lemma). ◻
-
-</div>
-
-## Index stability
-
-Let $`\Gamma_5`$ be a grading with $`\Gamma_5^2=\mathrm{Id}`$, $`\Gamma_5^\ast=\Gamma_5`$, and assume $`\{D,\Gamma_5\}=0`$. Define $`D_m=D+m\Gamma_5`$ and $`D_{h,m}=D_h+m\Gamma_5`$.
-
-<div id="lem:grading" class="lemma">
-
-**Lemma 19** (Berry term does not spoil grading). *Assume $`\|[\Gamma_5,B_h]\|\to0`$ as $`h\to0`$. Then for sufficiently small $`h`$, $`D_{h,m}`$ is a Fredholm operator with well-defined chiral index.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Since $`D_m`$ is Fredholm for $`m>0`$ (Dirac-type + mass term), and $`D_{h,m}`$ differs from $`D_m`$ by a finite-rank compression defect plus $`B_h`$, which is bounded and small in norm (Lemma <a href="#lem:defect" data-reference-type="ref" data-reference="lem:defect">12</a> and $`\|B_h\|=O(h)`$), Atkinson’s theorem implies Fredholmness is stable under small bounded perturbations. The commutator condition ensures the grading is preserved in the limit and that the chiral splitting is stable. ◻
-
-</div>
+The symmetric projector $`P_\Lambda`$ commutes with $`\Gamma`$, because $`\Gamma`$ maps the $`D`$-eigenspace at $`\lambda`$ to the eigenspace at $`-\lambda`$.
 
 <div id="thm:index" class="theorem">
 
-**Theorem 20** (Index stability and no doubling in the coherent IR window). *Fix $`E<\Delta`$ and $`m>0`$. For sufficiently small $`h`$,
+**Theorem 3** (Chiral index of a symmetric spectral window). *Let $`D^+`$ be Fredholm and let $`\Lambda>0`$. Define $`\mathcal H^\pm_\Lambda=P_\Lambda\mathcal H^\pm`$ and let $`D^+_\Lambda:\mathcal H^+_\Lambda\to\mathcal H^-_\Lambda`$ be the restricted map. Then
 ``` math
-\mathrm{Index}(D_h^+) = \mathrm{Index}(D^+),
-```
-and in particular no additional low-energy mirror fermions can appear in the physical window $`[-E,E]`$.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* By Lemma <a href="#lem:grading" data-reference-type="ref" data-reference="lem:grading">19</a>, $`D_{h,m}`$ is Fredholm for small $`h`$. The Fredholm index is constant under norm-continuous perturbations. By Theorem <a href="#thm:normres" data-reference-type="ref" data-reference="thm:normres">14</a> applied to $`D_m`$ and $`D_{h,m}`$ (the mass term is bounded), the resolvents converge uniformly on a contour enclosing $`0`$ but no other spectrum, hence the spectral projectors onto the near-zero subspace agree in rank and chirality for $`h`$ small. Therefore the chiral index is preserved. Together with Corollary <a href="#cor:irstab" data-reference-type="ref" data-reference="cor:irstab">18</a>, no additional vector-like pairs can enter the IR spectrum. ◻
-
-</div>
-
-# Refinement averaging and relation to ZLH
-
-We emphasize that refinement averaging does not *by itself* guarantee absence of doubling. Rather:
-``` math
-\text{compression} \Rightarrow \text{norm control} \Rightarrow \text{stable IR spectrum and index},
-```
-and only then refinement averaging provides additional UV smoothing.
-
-Let $`\{D_{h_n}\}`$ be a refinement family and $`R_{h_n}(z)=(D_{h_n}-z)^{-1}`$. Let $`w_n\ge0`$, $`\sum_n w_n=1`$. Define $`\overline R(z)=\sum_n w_n R_{h_n}(z)`$.
-
-<div class="lemma">
-
-**Lemma 21** (Convexity preserves convergence). *If $`\|R_{h_n}(z)-\Pi_{h_n}R(z)\Pi_{h_n}\|\le C(z)h_n`$ and $`\sum_n w_n h_n \to 0`$, then $`\overline R(z)`$ converges to $`R(z)`$ on the same region.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* By triangle inequality and convexity:
-``` math
-\left\|\sum_n w_n X_n\right\|\le \sum_n w_n \|X_n\|,
-\quad X_n:=R_{h_n}(z)-\Pi_{h_n}R(z)\Pi_{h_n}.
-```
- ◻
-
-</div>
-
-In propagator language, ZLH show that refinement superposition suppresses doubler poles . In our framework, IR stability holds already at the operator level; refinement averaging becomes a corollary that further damps moving UV artifacts.
-
-# Discussion and Outlook
-
-Fermion doubling in LQG is not an unavoidable consequence of background independence. It arises from defining fermions via naive local stencils on fixed discretizations. Defining fermions instead by coherent compression of a continuum Dirac operator yields norm-resolvent convergence, infrared spectral stability, and index stability in the coherent regime, excluding spurious low-energy mirror fermions.
-
-If the coherent gap closes or projector regularity fails, the present theorems do not apply; this corresponds precisely to leaving the admissible coherent regime.
-
-Future work includes implementing $`\Pi_h`$ directly from LQG heat-kernel coherent states and extending the foam-level construction with full refinement control in the covariant setting.
-
-# Conclusion
-
-Fermion doubling in Loop Quantum Gravity is not forced by background independence. It arises when one defines fermionic dynamics by naive graph-local stencil operators on lattice-like semiclassical states. In contrast, when fermions are defined as *induced* degrees of freedom—via coherent compression of a continuum Dirac operator in the admissible coherent sector—one obtains a discrete family of operators that converges in norm-resolvent sense under refinement. This yields infrared spectral stability and chiral index stability, excluding spurious low-energy mirror fermions in the coherent regime.
-
-The Berry/projector-variation correction is not optional: it is structurally required to obtain a faithful induced transport on compressed subspaces and to maintain the quantitative bounds needed for convergence and index stability. Refinement averaging, as studied in recent work, then appears as a compatible corollary mechanism that further damps ultraviolet lattice artifacts once the operator family is already norm-controlled.
-
-These results provide a mathematically controlled route to chiral fermions in LQG-type descriptions derived from MTT, and clarify which assumptions are responsible for apparently conflicting claims in the LQG fermion literature.
-
-# Finite Element Projection and Smoothing Estimates
-
-This appendix supplies standard estimates used in Lemma <a href="#lem:defect" data-reference-type="ref" data-reference="lem:defect">12</a>. The statements are classical for shape-regular triangulations on bounded-geometry manifolds; we record them here to make the paper self-contained.
-
-## Bounded geometry charts and shape regularity
-
-Let $`(M,g)`$ be a bounded-geometry manifold. By definition, there exists a uniformly locally finite atlas of normal coordinate charts in which the metric coefficients and finitely many derivatives are uniformly bounded and the Jacobians are uniformly controlled. Shape-regular triangulations $`\mathcal T_h`$ are assumed to be built in these charts with uniform shape-regularity constant independent of $`h`$.
-
-All constants below depend only on the bounded-geometry constants of $`(M,g)`$, the shape-regularity constant, and (where applicable) the bundle connection bounds.
-
-## $`L^2`$-projection estimate onto P1 spaces
-
-Let $`V_h`$ be the P1 finite element space of sections of $`S\otimes\mathcal R`$ that are affine on each simplex in local trivializations. Let $`P_h:L^2\to V_h`$ be the $`L^2`$-orthogonal projector.
-
-<div id="thm:L2proj" class="theorem">
-
-**Theorem 22** ($`L^2`$-projection estimate). *Assume $`\mathcal T_h`$ is shape-regular. Then there exists $`C>0`$ independent of $`h`$ such that for all $`u\in H^1(M,S\otimes\mathcal R)`$,
-``` math
-\|u-P_h u\|_{L^2(M)} \le C\, h\, \|u\|_{H^1(M)}.
+\operatorname{ind}D^+_\Lambda
+ =
+ \dim\ker D^+-\dim\ker D^-
+ =
+ \operatorname{ind}D^+.
 ```*
 
 </div>
 
 <div class="proof">
 
-*Proof.* This is standard. One route is:
-
-1.  On each simplex $`T`$, the Bramble–Hilbert lemma gives an approximation $`I_h u\in V_h`$ (e.g. nodal interpolant) with $`\|u-I_h u\|_{L^2(T)}\le C h_T \|u\|_{H^1(T)}`$.
-
-2.  The $`L^2`$-projector is best approximation in $`L^2`$, hence
-    ``` math
-    \|u-P_h u\|_{L^2} \le \|u-I_h u\|_{L^2}.
-    ```
-
-3.  Sum over simplices; shape regularity yields uniform constants.
-
-For full details in Euclidean domains see ; bounded-geometry manifolds reduce to that case via the bounded-geometry coordinate charts with uniform constants. ◻
+*Proof.* The kernel of $`D^+_\Lambda`$ is $`\ker D^+`$, because every zero mode lies in every positive spectral window. The kernel of its adjoint is $`\ker D^-`$. Equivalently, on every positive eigenspace of $`D^2`$, the map $`D`$ is an isomorphism between the positive- and negative-chirality subspaces, so nonzero modes contribute equally to both sides and cancel in the index. Only the chiral zero-mode difference remains. ◻
 
 </div>
 
-## Heat-kernel smoothing bounds for Dirac-type operators
+This is index inheritance, not a construction of an anomaly-free chiral gauge theory. Gauge covariance, anomaly cancellation, reflection or Lorentzian properties, and interactions must all be supplied separately.
 
-Let $`D`$ be self-adjoint Dirac-type, and define $`S_h=e^{-h^2 D^2}`$. For $`k\in\mathbb N`$, $`D^k S_h`$ is bounded on $`L^2`$ with norm $`O(h^{-k})`$.
+# Presentation on a graph
 
-<div id="thm:spectralmult" class="theorem">
-
-**Theorem 23** (Spectral multiplier bound). *For each $`k\in\mathbb N`$ there exists $`C_k`$ such that for all $`h\in(0,h_0]`$,
+Let $`\mathcal K_\Lambda`$ be a finite-dimensional Hilbert space whose basis is indexed by graph, node, edge, or intertwiner data, and let
 ``` math
-\|D^k e^{-h^2 D^2}\|_{L^2\to L^2} \le C_k\, h^{-k}.
+U_\Lambda:\mathcal H_\Lambda\longrightarrow\mathcal K_\Lambda
 ```
-In particular, $`e^{-h^2D^2}:L^2\to \mathrm{Dom}(D^k)`$ is bounded with norm $`O(h^{-k})`$.*
+be unitary. Define
+``` math
+D_{\Gamma,\Lambda}
+ =
+ U_\Lambda D_\Lambda U_\Lambda^*.
+```
+
+<div id="cor:graph" class="corollary">
+
+**Corollary 4** (Unitary graph presentation). *The graph-presented operator $`D_{\Gamma,\Lambda}`$ has exactly the spectrum and chiral index stated in Theorems <a href="#thm:spectral" data-reference-type="ref" data-reference="thm:spectral">2</a> and <a href="#thm:index" data-reference-type="ref" data-reference="thm:index">3</a>.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* By the spectral theorem for self-adjoint $`D`$,
-``` math
-\|D^k e^{-h^2 D^2}\| = \sup_{\lambda\in\mathbb R} |\lambda|^k e^{-h^2\lambda^2}.
-```
-Set $`x=h|\lambda|`$; then $`|\lambda|^k e^{-h^2\lambda^2}=h^{-k} x^k e^{-x^2}`$ and $`\sup_{x\ge0} x^k e^{-x^2}<\infty`$, giving the bound. ◻
+*Proof.* Spectrum, multiplicity, kernels, and index are invariant under unitary conjugation. ◻
 
 </div>
 
-## Derivation of the composed defect bound in Lemma <a href="#lem:defect" data-reference-type="ref" data-reference="lem:defect">12</a>
+The corollary is exact but does not make $`D_{\Gamma,\Lambda}`$ local on the graph. A generic unitary image is a dense matrix coupling distant graph labels. The unresolved physical theorem must construct $`U_\Lambda`$ from the LQG and MTT geometry and prove whichever locality, covariance, refinement, and semiclassical properties are required.
 
-We justify the estimate
-``` math
-\|(\mathrm{Id}-P_h)S_h R(z)\|_{L^2\to L^2} \le C(z)\, h,
-```
-used inside Lemma <a href="#lem:defect" data-reference-type="ref" data-reference="lem:defect">12</a>.
+# The Nielsen–Ninomiya boundary
+
+The exact spectral construction does not contradict the no-go theorem because it gives up at least the strict locality and fixed translationally invariant lattice-symbol assumptions. It begins with a continuum operator, uses its global spectral projector, and in a generic graph basis produces a nonlocal matrix.
+
+<div class="proposition">
+
+**Proposition 5** (What compression does and does not establish). *Exact spectral compression establishes absence of *spurious spectral copies relative to the supplied continuum operator*. It does not establish a doubler-free local lattice regularization satisfying all Nielsen–Ninomiya hypotheses.*
+
+</div>
 
 <div class="proof">
 
-*Proof sketch.* Let $`u=S_h R(z)\psi`$. Since $`R(z)=(D-z)^{-1}`$ is bounded on $`L^2`$ and $`S_h`$ maps $`L^2\to H^1`$ with norm $`O(h^{-1})`$ (by Theorem <a href="#thm:spectralmult" data-reference-type="ref" data-reference="thm:spectralmult">23</a> and elliptic equivalence between $`H^1`$ and $`\mathrm{Dom}(D)`$ for Dirac-type operators), we have $`\|u\|_{H^1}\le C(z) h^{-1}\|\psi\|_{L^2}`$. Then Theorem <a href="#thm:L2proj" data-reference-type="ref" data-reference="thm:L2proj">22</a> yields
-``` math
-\|(\mathrm{Id}-P_h)u\|_{L^2}\le C h \|u\|_{H^1}\le C(z)\|\psi\|_{L^2}.
-```
-Combining with the stronger $`O(h)`$ contribution from $`(\mathrm{Id}-S_h)R(z)`$ in Lemma <a href="#lem:defect" data-reference-type="ref" data-reference="lem:defect">12</a> yields the overall $`O(h)`$ bound for $`(\Pi_h-\mathrm{Id})R(z)`$, where $`\Pi_h=P_h S_h`$. ◻
+*Proof.* The first statement is Theorem <a href="#thm:spectral" data-reference-type="ref" data-reference="thm:spectral">2</a>. For the second, the spectral projector is a global function of $`D`$, and no finite-range graph kernel or translationally invariant lattice symbol has been constructed. Thus the construction lies outside the simultaneous hypothesis set of the no-go theorem rather than refuting its conclusion. ◻
 
 </div>
 
-## References for Dirac-type FEM approximation
+If one later replaces $`D_{\Gamma,\Lambda}`$ by a strictly graph-local stencil, doubling must be checked again. One must state explicitly which condition is relaxed: exact chirality, ultralocality, translation invariance, a fixed lattice, or another assumption. “The graph is irregular” is not by itself a proof that the physical spectrum is correct.
 
-For finite element theory in Euclidean domains and projection estimates see . For Dirac-type operators and analytic functional calculus see . The present paper uses only the above standard estimates.
+# Why the old finite-element proof is withdrawn
+
+The first edition set $`F_h=e^{-h^2D^2}`$, projected it into a finite-element space, and asserted an $`O(h)`$ norm-resolvent estimate. The displayed argument did not prove that estimate:
+
+1.  for any proper finite-rank orthogonal projector $`Q_h`$ on an infinite-dimensional Hilbert space, $`\|\mathrm{Id}-Q_h\|=1`$, so operator-norm convergence to the identity is impossible;
+
+2.  the cited $`L^2`$ approximation estimate contributes a factor $`h`$, while the smoothing bound used for the $`H^1`$ norm contributes $`h^{-1}`$, yielding $`O(1)`$, not the claimed $`O(h)`$;
+
+3.  finite-dimensional resolvents and the continuum resolvent were compared without a fully specified embedding and complement action; and
+
+4.  the proof acknowledged a constant defect and then asserted that it did not spoil convergence without establishing the required cancellation.
+
+This does not prove that no Galerkin or finite-element approximation can work. A corrected theorem would need a stable family of domains, graph-norm approximation, a consistent embedding, resolvent estimates on the complement, and an explicit exclusion of spectral pollution. Those results must be proved for the actual Dirac discretization rather than inferred from smoothing alone.
+
+# Berry transport: the exact statement
+
+Berry terms require a family, not a single projector. Let $`X`$ be a smooth parameter manifold and let $`x\mapsto P(x)`$ be a $`C^1`$ family of finite-rank orthogonal projections on one fixed Hilbert space $`\mathcal H`$, with constant rank. The ranges form a Hermitian vector bundle
+``` math
+\mathcal E=\bigsqcup_{x\in X}\mathrm{Ran}P(x)\longrightarrow X.
+```
+
+<div id="thm:berry" class="theorem">
+
+**Theorem 6** (Kato–Berry connection on a projector bundle). *For a $`C^1`$ section $`s`$ of $`\mathcal E`$, the rule
+``` math
+\nabla^{\mathrm B}s=P\,\mathrm ds
+```
+defines a metric-compatible connection. Its parallel transport is unitary, and where the family is $`C^2`$ its curvature is
+``` math
+F^{\mathrm B}
+ =
+ P\,(\mathrm dP\wedge\mathrm dP)\,P.
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Since $`Ps=s`$, differentiating gives $`\mathrm dP\,s+P\,\mathrm ds=\mathrm ds`$; projection therefore maps the ordinary derivative back into the range bundle and obeys the Leibniz rule. For two range sections $`s,t`$, orthogonality of $`P`$ gives
+``` math
+\mathrm d\langle s,t\rangle
+ =
+ \langle P\,\mathrm ds,t\rangle
+ +\langle s,P\,\mathrm dt\rangle,
+```
+so the connection is metric-compatible and its parallel transport is unitary. Applying the projected derivative twice and using $`P\,\mathrm dP\,P=0`$, obtained by differentiating $`P^2=P`$, gives the curvature formula . ◻
+
+</div>
+
+An isolated spectral band of a smoothly varying self-adjoint operator can produce such projectors through a Riesz contour when a uniform gap and the required operator regularity hold. Current MTT/LQG data have not yet supplied that family for the physical fermion sector. Edge-overlap matrices and a matrix logarithm are therefore not enough; frames must arise from a common gapped bundle before their Berry interpretation is valid.
+
+# What MTT must select
+
+The proto-spinor and shared-circle papers provide promising source language: a conditional spinorial carrier, a common determinant-line interpretation, and finite internal operators. To turn that language into the $`D`$ used above, one branch must emit:
+
+1.  a four-dimensional Lorentzian spin or $`\mathrm{Spin}^c`$ bundle and its relation to the shared circle;
+
+2.  the tetrad, spin connection, gauge bundle, and fermion representation;
+
+3.  a self-adjoint Euclidean continuation or a controlled Lorentzian operator with domains and boundary conditions;
+
+4.  the complete mass/Yukawa contribution and chirality grading;
+
+5.  a selected finite operation – sharp projector, smooth filter, or graph approximation – with its exact type declared;
+
+6.  a geometric map $`U_\Lambda`$ to LQG graph data; and
+
+7.  locality, covariance, refinement, anomaly, and semiclassical certificates appropriate to the intended physical claim.
+
+The current finite $`27\times27`$ Standard-Model carrier and its declared profile/value results can constrain the internal matrix part. They do not by themselves construct the spacetime Dirac operator, graph map, or chiral gauge measure.
+
+# Result ledger
+
+<div class="center">
+
+| Object | Status | Meaning |
+|:---|:---|:---|
+| Continuum $`D`$ with compact resolvent | Assumed | Source datum for the exact benchmark |
+| Sharp spectral window $`P_\Lambda`$ | Constructed | Finite nonlocal continuum-derived projector |
+| No-spurious-spectrum theorem | Proved | Exact relative to supplied $`D`$ |
+| Chiral-index inheritance | Proved | Exact for symmetric graded window |
+| Graph presentation | Conditional exact | Requires unitary $`U_\Lambda`$ |
+| Graph locality and refinement | Open | Not implied by unitary presentation |
+| Kato–Berry connection | Proved conditionally | Requires explicit smooth constant-rank projector bundle |
+| Selected MTT fermion source | Open | Must emit bundle, operator, grading, and finite operation |
+| Full chiral LQG theory | Open | Gauge, anomaly, constraints, dynamics, and physical inner product |
+
+</div>
+
+# Version 2 revision note
+
+Version 2 withdraws the claimed finite-element norm-resolvent proof, the unqualified no-doubling theorem, and the edge-logarithm Berry construction. It replaces them with two exact results: spectral and chiral-index inheritance under a sharp continuum spectral projector, and the standard Kato–Berry connection for an explicit smooth projector bundle. It also states which Nielsen–Ninomiya hypotheses are relinquished and identifies the continuum fermion source and graph map as open MTT/LQG bridge objects.
+
+# Conclusion
+
+There is a rigorous way to place a finite portion of a continuum Dirac spectrum on graph-labelled data without creating extra low-energy modes: use the actual spectral subspace and transport it unitarily. This gives MTT a clean benchmark for a coherent fermion projector and preserves the chiral index exactly.
+
+It is not yet a fundamental graph fermion theory. The construction is continuum-derived, generally nonlocal, and only as predictive as the operator fed into it. The next decisive result is therefore a same-source theorem from the q79/proto-spinor geometry that emits the physical four-dimensional Dirac operator and a geometrically selected graph map with declared locality and refinement properties.
 
 <div class="thebibliography">
 
-99
+9
 
-J. Barnett and L. Smolin, *Fermion doubling in loop quantum gravity*, Phys. Rev. D **92**, 064022 (2015).
+J. Barnett and L. Smolin, *Fermion doubling in loop quantum gravity*, Physical Review D **92**, 064022 (2015).
 
-R. Gambini and J. Pullin, *No fermion doubling in quantum geometry*, Int. J. Mod. Phys. D **24**, 1542001 (2015).
+R. Gambini and J. Pullin, *No fermion doubling in quantum geometry*, International Journal of Modern Physics D **24**, 1542001 (2015).
 
 J. Zhang, Y. Liu, and M. Han, *Fermion doubling and its suppression in loop quantum gravity*, arXiv:2205.12208 (2022).
 
-J. Lewandowski and C. Zhang, *Dirac field on loop quantum gravity*, Phys. Rev. D **105**, 124025 (2022).
+H. B. Nielsen and M. Ninomiya, *A no-go theorem for regularizing chiral fermions*, Physics Letters B **105**, 219–223 (1981).
 
-H. B. Nielsen and M. Ninomiya, *No Go Theorem for Regularizing Chiral Fermions*, Phys. Lett. B **105**, 219–223 (1981).
-
-T. Kato, *Perturbation Theory for Linear Operators*, Springer (1976).
-
-M. Reed and B. Simon, *Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness*, Academic Press (1975).
-
-S. C. Brenner and L. R. Scott, *The Mathematical Theory of Finite Element Methods*, Springer (2008).
-
-N. J. Higham, *Functions of Matrices: Theory and Computation*, SIAM (2008).
-
-S. Rosenberg, *The Laplacian on a Riemannian Manifold*, Cambridge Univ. Press (1997).
-
-P. Nero, *Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255621>
-
-P. Nero, *Modal Triplet Theory: Foundation*, Zenodo preprint, September 2025. <https://doi.org/10.5281/zenodo.16949762>
-
-P. Nero, *Fixed Points I–VI: Complete Coherence Spine*, Zenodo preprints, August 2025. <https://doi.org/10.5281/zenodo.16948748>
-
-P. Nero, *The Projection–Admissibility Principle: Structural Constraints on Effective Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255838>
-
-P. Nero, *Closure and Inevitability in Modal Triplet Theory*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255510>
-
-P. Nero, *Coherence Capacity as the Fundamental Resource of Effective Physics*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255905>
-
-P. Nero, *Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18256048>
-
-P. Nero, *Modal Triplet Theory: From MTT to Quantum Mechanics*, Zenodo preprint, September 2025. <https://doi.org/10.5281/zenodo.17074246>
-
-P. Nero, *From MTT to Quantum Field Theory*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17068816>
-
-P. Nero, *Modal Triplet Theory: From MTT to General Relativity*, Zenodo preprint, October 2025. <https://doi.org/10.5281/zenodo.16950597>
-
-P. Nero, *Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17077671>
-
-P. Nero, *Measurement as Disturbance and Stabilization in Modal Triplet Theory*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17177404>
-
-P. Nero, *Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18256408>
-
-P. Nero, *Modal Fixed Points, Bell’s Beables, and the Limits of Factorization*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17076300>
-
-P. Nero, *Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory*, Zenodo preprint, August 2025. <https://doi.org/10.5281/zenodo.18208884>
-
-P. Nero, *From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18254862>
+T. Kato, *Perturbation Theory for Linear Operators*, Springer, 1976.
 
 </div>

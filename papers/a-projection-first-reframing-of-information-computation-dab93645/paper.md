@@ -1,210 +1,216 @@
 ---
+abstract: |
+  A projection can identify source states that an effective description no longer distinguishes. This observation is useful, but it is not by itself a theory of information, computation, complexity, or undecidability. Information quantities require a state or probability law and a specified channel; computation requires an encoding, evolution rule, readout, and resource model; undecidability requires an unbounded problem family and an explicit reduction from a known undecidable problem. This paper gives a projection-first account of these layers. Classical and quantum data-processing inequalities formalize loss of distinguishability under channels, while recovery maps state when the loss can be reversed on a selected family of states. Noninvertibility alone does not imply entropy production, an arrow of time, computational hardness, or undecidability. For Modal Triplet Theory, finite selected operators supply concrete descriptive channels, but a physical undecidability theorem remains open until a uniform computational embedding is constructed.
 author:
 - Peter Nero
-current_version: v1.0
-date: January 2026
-generated_from_main_tex_sha256: cc9c815c01c2b6ccc81f844fb011fbb8347513bec8f81fd5c16eb1cdb798d81b
+current_version: v2
+date: July 2026 Version 2
+generated_from_main_tex_sha256: 2c36ed8c18f7fd80df5f3d8611e3ded36fa0b7c36981e2a1cc5027c5f1b00f3e
 paper_id: a-projection-first-reframing-of-information-computation-dab93645
 release_state: zenodo_released
-released_version: v1.0
-title: A Projection-First Reframing of Information, Computation, and Undecidability
-zenodo_doi: 10.5281/zenodo.18255795
-zenodo_record_id: 18255795
-zenodo_url: "https://zenodo.org/records/18255795"
+released_version: v2
+title: |
+  A Projection-First Reframing of Information and Computation:
+  Distinguishability, Channels, and Conditional Undecidability
+zenodo_doi: 10.5281/zenodo.21665930
+zenodo_record_id: 21665930
+zenodo_url: "https://zenodo.org/records/21665930"
 ---
 
-# Preface: Scope and Role of This Paper in the Projection-First Series
+# Version 2 Revision Note
 
-This paper is the third in a series developing a projection-first reframing of physics. It should be read as a continuation and completion of the conceptual program established in the preceding papers, rather than as an independent foundational proposal.
+<div class="description">
 
-The first paper introduced projection and finite admissibility as primitive structural features of effective physical description, and showed how quantum mechanics, quantum field theory, spacetime geometry, irreversibility, and time itself arise as necessary consequences. The second paper applied that framework to the problem of quantum gravity, arguing that many persistent difficulties stem from treating geometry as a degree of freedom rather than as a consistency structure for description.
+Version 1.0, *A Projection-First Reframing of Information, Computation, and Undecidability*.
 
-The present paper turns to a different but closely related set of issues: information, computation, complexity, and undecidability.
+The original paper inferred information loss, complexity, and generic undecidability directly from projection and finite admissibility. Those implications do not hold without further probabilistic, dynamical, and computational structures.
 
-Over the past several decades, these concepts have moved from the periphery of physics to its apparent foundations. Entropy is interpreted as information. Black holes are discussed in informational terms. Physical processes are analyzed as computations. Limits of predictability are framed as limits of algorithmic decidability. This shift has been enormously productive, but it has also encouraged the view that information itself is a fundamental physical substance.
+Projection is now typed as a channel only after a state space is supplied. Information loss is formulated through data processing and recovery. Computation and undecidability are made conditional on explicit encodings, resource models, and reductions.
 
-The projection-first perspective developed in this series motivates a different interpretation.
+Projection-first language remains useful for separating source distinctions from distinctions available to an effective observer.
 
-In this framework, information-theoretic language becomes central not because the world is made of information, but because effective description fails in precisely the ways that information theory is designed to track. Information, computation, and undecidability emerge as measures of distinguishability, predictability, and reconstructability under projection with finite admissibility.
+MTT still needs a selected uniform computational embedding, together with a proved reduction, before it can claim a new physical undecidability result.
 
-This paper develops that perspective systematically. It treats information as a property of description rather than of ontology, computation as a diagnostic of descriptive stability rather than as a fundamental process, and undecidability as a structural necessity rather than as an epistemic deficiency. In doing so, it aims to clarify why information-theoretic concepts appear across such a wide range of physical contexts, from measurement and thermalization to black holes and complex dynamics.
+</div>
 
-As in the preceding papers, no new dynamical principles are introduced. No claims are made about the ultimate nature of underlying dynamics beyond effective description. The analysis is deliberately conservative: its goal is not to replace existing theories, but to reorganize how their limitations are understood.
+# Scope
 
-This paper can be read independently, but it is best understood as completing the projection-first reframing developed across the series. Together, the three papers articulate a unified perspective in which quantum theory, gravity, information, computation, and irreversibility are seen not as disparate foundational ingredients, but as coordinated responses to the same structural constraint: the necessity and finitude of projection in any stable physical description.
+Let
+``` math
+\pi:X\longrightarrow Y
+```
+map a richer source description to an effective one. If $`\pi(x)=\pi(x')`$, the effective variable does not distinguish $`x`$ from $`x'`$. This is a statement about an equivalence relation induced by $`\pi`$. It is not yet a statement about entropy, information flow, memory, or computation.
 
-In this sense, the present paper addresses not what information, computation, or undecidability are in themselves, but why physics is compelled to speak in these terms once the limits of description are taken seriously.
+Those notions belong to different mathematical categories. A probability distribution is required before Shannon entropy is defined. A density operator and observable algebra are required before quantum information is defined. An input language and an algorithmic model are required before computability or complexity is defined. The purpose of this paper is to retain the useful projection-first intuition while making those additional structures explicit.
 
-# Why Information Became Fundamental
+# From a map to an information channel
 
-Over the last several decades, information has come to occupy an increasingly central role in physics. Entropy is reinterpreted as information. Black holes are said to store information. The universe itself is described as computing. Questions about determinism, reversibility, and predictability are recast as questions about information flow and processing.
+## Classical distinguishability
 
-This shift is often presented as a deep unification: physics, it is said, is ultimately about information.
+Suppose $`X`$ is a random variable with distribution $`p`$, and let $`Y=\pi(X)`$. The deterministic map induces a stochastic channel
+``` math
+K(y\mid x)=
+ \begin{cases}
+ 1,&y=\pi(x),\\
+ 0,&\text{otherwise}.
+ \end{cases}
+```
+Only now are Shannon entropy and mutual information defined. For a deterministic channel on finite alphabets,
+``` math
+H(Y)\leq H(X).
+```
+The inequality describes the chosen random variables and their law. It is not a property of the bare set map independent of $`p`$.
 
-From a projection-first perspective, this conclusion is understandable—but incomplete.
+A more robust statement compares two candidate source laws $`p`$ and $`q`$. For any stochastic channel $`K`$, the classical data-processing inequality gives
+``` math
+D(Kp\Vert Kq)\leq D(p\Vert q),
+```
+where $`D`$ is relative entropy. Operationally, processing cannot improve the ability to distinguish $`p`$ from $`q`$. A projection therefore supports an information-loss interpretation only relative to specified states and an observation channel.
 
-Information did not become fundamental because the world is made of bits. It became central because effective physical description fails in precisely the ways that information-theoretic language is designed to track. Information theory enters physics not as ontology, but as bookkeeping for loss, compression, and noninvertibility.
+## Quantum distinguishability
 
-This distinction matters.
+In quantum theory the corresponding object is a completely positive, trace-preserving map
+``` math
+\mathcal E:\mathcal T(\mathcal H_X)\longrightarrow
+ \mathcal T(\mathcal H_Y).
+```
+Quantum relative entropy obeys
+``` math
+D(\mathcal E(\rho)\Vert\mathcal E(\sigma))
+ \leq D(\rho\Vert\sigma).
+```
+A finite projector $`P`$ does not by itself define this channel on all states. One must specify, for example, whether the operation is a selected outcome, the nonselective instrument
+``` math
+\rho\longmapsto P\rho P+(I-P)\rho(I-P),
+```
+or a compression followed by normalization. These operations have different physical meanings.
 
-Information theory excels at describing situations where:
+# Loss, recovery, and irreversibility
 
-- distinctions are coarse-grained,
+Information being unavailable in $`Y`$ does not imply that it was destroyed in $`X`$. A section $`s:Y\to X`$ satisfying $`\pi s=I_Y`$ merely chooses one representative from each fiber. It does not recover the original $`x`$ from $`\pi(x)`$.
 
-- many states are identified as equivalent,
+For a channel $`\mathcal E`$, recovery on a selected state family $`\mathcal S`$ requires another channel $`\mathcal R`$ such that
+``` math
+\mathcal R\mathcal E(\rho)=\rho
+ \qquad(\rho\in\mathcal S),
+```
+or an explicit norm or fidelity error bound. Equality in suitable data-processing inequalities is tied to such sufficient or recoverable families; approximate equality motivates quantitative recovery estimates .
 
-- reconstruction is impossible,
+This distinction prevents three common overclaims.
 
-- and irreversible compression has occurred.
+1.  A many-to-one description can coexist with reversible lower dynamics.
 
-These are exactly the conditions enforced by projection with finite admissibility.
+2.  Entropy need not increase along a trajectory unless a state, coarse-graining rule, and dynamical law make it do so.
 
-Seen this way, the rise of information-theoretic language in physics is not a discovery of a new substrate. It is a response to the realization—often implicit—that physical description is fundamentally limited.
+3.  Memory effects require a history-dependent reduced law, hidden variables, or a non-Markovian channel; they do not follow from noninjectivity alone.
 
-# Information as Description, Not Substance
+Physical irreversibility therefore needs a semigroup, dissipative generator, boundary condition, growing recovery error, or another time-directed structure. Projection can explain which distinctions are discarded, but not by itself why their loss is dynamically irreversible.
 
-Information is frequently spoken of as if it were a conserved physical quantity, akin to energy or momentum. Phrases such as “information cannot be destroyed” or “information is stored in correlations” suggest that information is something that exists independently of description.
+# What makes a physical process a computation?
 
-From a projection-first perspective, this interpretation is mistaken.
+A computational interpretation needs at least a tuple
+``` math
+(\mathcal I,E,\Phi_t,R,\mathcal O),
+```
+where $`\mathcal I`$ is an input language, $`E`$ encodes inputs into physical states, $`\Phi_t`$ evolves those states, $`R`$ reads an output, and $`\mathcal O`$ specifies the output convention. Complexity additionally requires an input-size function, an error tolerance, and a resource cost such as time, memory, energy, or circuit depth.
 
-Information is not a substance. It is a measure of *distinguishability within a description*.
+Projection may enter this tuple in several useful ways. It can define a readout, compress inaccessible variables, or identify physically equivalent encodings. It can also make a chosen decoding problem ill posed. None of these facts alone establishes that the underlying task is algorithmically hard. A constant map is maximally noninjective but trivial to compute. Conversely, an injective map may be expensive to evaluate.
 
-To say that a system contains information is to say that its effective description supports distinctions among states. To say that information is lost is to say that those distinctions are no longer admissible. Nothing needs to be destroyed at the level of underlying dynamics. The loss occurs at the level of effective description.
+The phrase “the universe computes” is therefore optional interpretation, not a mathematical consequence. The precise question is whether a physical family implements a named input-output problem with controlled errors and resources.
 
-This distinction clarifies a number of persistent confusions. Information paradoxes arise when one assumes that information must be preserved across descriptions even when projection has become noninvertible. From a projection-first standpoint, this expectation is unwarranted. Information is conserved only insofar as admissibility permits.
+# Undecidability requires a reduction
 
-When projection remains admissible, distinctions persist and information is retained. When admissibility is exhausted, distinctions collapse and information is lost. This loss is irreversible at the level of effective description, regardless of whether the underlying dynamics remains reversible.
+Undecidability is stronger than practical unpredictability, chaos, or an expensive numerical calculation. A decision problem is undecidable when no algorithm halts with the correct answer for every input in a specified unbounded family.
 
-Information-theoretic quantities therefore track the health of description rather than the state of the world. Entropy measures how many distinctions have been irreversibly identified. Mutual information measures how much distinguishability remains shared between subsystems. Channel capacity measures how much description can be reliably transmitted before admissibility fails.
+A physical undecidability proof consequently needs:
 
-In each case, the relevant quantity refers not to an ontological resource, but to a property of projection under finite stability margins.
+1.  a recursively describable family of physical instances $`M_w`$;
 
-This perspective dissolves the apparent tension between information conservation and irreversible physical processes. Information is not conserved across all regimes because description is not conserved across all regimes. Expecting otherwise is equivalent to expecting projection to remain admissible indefinitely.
+2.  a decision predicate $`Q(M_w)`$;
 
-Once this is recognized, information loss ceases to be paradoxical. It becomes the natural signature of projection operating at its limits.
+3.  an effective map from instances $`w`$ of a known undecidable problem;
 
-# Computation as Predictive Description
+4.  a proof that $`Q(M_w)`$ answers that problem; and
 
-The language of computation enters physics through questions of predictability. Can the future state of a system be computed from its present state? Can a process be simulated efficiently? Are certain outcomes decidable in principle?
+5.  robustness conditions showing that the encoding belongs to the claimed physical class.
 
-These questions are often framed as properties of dynamics. Chaotic systems are said to be computationally hard, while integrable systems are computationally simple. Computational complexity is treated as a feature of the equations governing motion.
+This is the pattern used in genuine many-body undecidability results: a Hamiltonian family is constructed so that its spectral-gap behavior encodes the halting problem .
 
-From a projection-first perspective, this framing is incomplete.
+By contrast, the following do not prove undecidability:
 
-Computability is not a property of underlying dynamics alone. It is a property of *effective description*.
+- a projection being many-to-one;
 
-A system is computable to the extent that its effective description remains stable, invertible, and sufficiently detailed to support prediction. When projection remains admissible, computation is possible. When admissibility fails, computation ceases—not because the dynamics becomes undefined, but because the description no longer supports prediction.
+- a finite stability margin;
 
-In this sense, computation measures the viability of description under projection.
+- sensitivity to initial data;
 
-Prediction requires that distinctions relevant to future outcomes remain admissible throughout evolution. If those distinctions collapse under projection, no amount of computational power can recover them. The failure is structural, not algorithmic.
+- a simulation taking a long time;
 
-This reframes the relationship between complexity and predictability. Systems that appear computationally complex are not difficult because their dynamics is intrinsically obscure. They are difficult because maintaining the distinctions required for prediction places increasing strain on projection. As interactions accumulate, admissibility margins are exhausted, and effective description becomes unstable.
+- not knowing in advance whether a numerical solver will converge; or
 
-Computational complexity therefore tracks how rapidly projection consumes admissibility.
+- one fixed finite matrix having a complicated spectrum.
 
-This perspective also clarifies the limits of simulation. To simulate a physical system is to maintain an effective description that mirrors the system’s projected evolution. When admissibility remains intact, simulation is feasible. When admissibility fails, simulation becomes impossible in principle, regardless of computational resources.
+A fixed finite exact model is, in principle, exhaustively decidable for finite predicates. Undecidability can enter only through a uniform unbounded family, an infinite-volume limit, an exact real-number oracle, or another explicitly stated source of unbounded computation.
 
-Importantly, this does not imply that the system itself ceases to evolve. Underlying dynamics may remain perfectly well-defined. What fails is the ability of any effective description to track that evolution predictively.
+# Consequences for Modal Triplet Theory
 
-Seen this way, computation is not a fundamental physical process. It is a diagnostic of descriptive stability. A system “computes” its future only insofar as projection allows its evolution to remain representable.
+MTT currently supplies several concrete finite descriptive structures: selected projectors, finite Hessian blocks, a $`27\times27`$ finite carrier at its declared Standard-Model profile tier, and selected free-field operator data. These can be studied as channels once states and instruments are specified. Their finite nature is an advantage for reproducibility, but it does not support a new undecidability claim.
 
-This reframing dissolves the apparent mystery of computational limits in physics. They are not imposed by finite resources or algorithmic ingenuity. They are imposed by the finite admissibility of description itself.
+A serious MTT computational program has two distinct branches.
 
-# Undecidability as Structural, Not Epistemic
+#### Finite branch.
 
-Undecidability is often treated as a surprising or pathological feature of certain formal systems. In computation theory, it appears as the halting problem or Gödel incompleteness. In physics, it is sometimes associated with chaos, algorithmic randomness, or contrived dynamical constructions that resist prediction.
+Specify the state, selected instrument, readout, and error metric for each finite operator. Then compute distinguishability loss, recovery fidelity, spectral conditioning, and algorithmic cost. This can produce exact or certified numerical results without invoking undecidability.
 
-From a projection-first perspective, undecidability has a more basic and unavoidable origin.
+#### Uniform branch.
 
-Undecidability arises whenever effective description cannot determine, in advance, whether admissibility will fail.
+Construct a family indexed by words, lattice size, cutoff, bundle data, or another recursive parameter. Prove that the family preserves the selected MTT constraints and embeds a universal computation. Only then should a halting, reachability, spectral, or admissibility predicate be tested for an undecidability reduction.
 
-To decide whether a prediction is possible requires knowing whether the projection needed to support that prediction will remain admissible throughout the system’s evolution. But admissibility itself depends on future strain, interactions, boundary crossings, and accumulation of correlations. In general, this question cannot be answered without effectively performing the evolution.
+The second branch is open. It may succeed, but projection and admissibility do not replace the construction.
 
-Undecidability is therefore not a defect of formalism. It is a *consistency requirement*.
+# Claim ledger
 
-If admissibility failure were decidable in advance, effective physical evolution would require global foresight over all possible future configurations. Description would need to determine, ahead of time, whether it will remain viable. This would render physical evolution non-simulable in real time, even by the system itself.
+<div class="center">
 
-Undecidability protects physical description from this impossibility.
+| Claim | Status | Required structure or qualification |
+|:---|:---|:---|
+| $`\pi`$ identifies source states | Exact | A defined map $`X\to Y`$. |
+| Projection reduces distinguishability | Conditional | State family and classical or quantum channel. |
+| Data processing gives monotonicity | Standard result | Relative entropy and an admissible stochastic or CPTP map. |
+| Projection destroys information | Not implied | Must exclude source access and recovery on the selected family. |
+| Projection creates irreversibility | False in general | Needs directed dynamics, boundary data, or recovery-error growth. |
+| Projection creates computational hardness | False in general | Needs a problem encoding and resource model. |
+| Finite MTT operators are undecidable | Not established | A fixed finite instance is not an undecidable family. |
+| MTT admits physical undecidability | Open | Uniform selected family and an explicit reduction. |
 
-In this sense, undecidable behavior is not an exotic feature of specially constructed systems. It is generic. Any sufficiently rich physical system described through projection with finite admissibility will encounter situations where it is undecidable whether a given distinction will remain admissible into the future.
+</div>
 
-This perspective also clarifies the relationship between chaos and undecidability. Chaotic systems are not undecidable because their dynamics is random or unknowable. They are undecidable because maintaining the distinctions required for long-term prediction exhausts admissibility faster than it can be restored. Projection fails before prediction can be completed.
+# Discussion
 
-Undecidability therefore marks the boundary between describable and indescribable evolution. It signals not a failure of logic or computation, but the exhaustion of descriptive capacity.
+The corrected projection-first view is narrower than the original one, but more useful. Projection says which distinctions survive a change of description. Information theory quantifies those distinctions after a state and channel are supplied. Recovery theory tests whether the loss is reversible on a chosen family. Computation theory asks whether a controlled encoding and readout implement a problem. Undecidability appears only when an unbounded family carries a proved reduction.
 
-Once this is recognized, undecidability ceases to be surprising. It becomes an inevitable feature of any theory that treats effective description honestly.
+This hierarchy also clarifies black-hole and measurement language. Tracing out a region, conditioning on an outcome, recording an apparatus state, and losing access to a source are different channels. Calling all of them “projection” can hide the very mechanism under study. MTT should therefore name the channel and recovery criterion in each application.
 
-# Information Loss Reframed
+# Conclusion
 
-Information loss is often treated as paradoxical. In black hole physics, it motivates debates about unitarity, firewalls, and hidden correlations. In statistical mechanics, it is attributed to coarse-graining or ignorance. In measurement theory, it is associated with collapse or decoherence.
+Projection-first reasoning does not make information, computation, or undecidability inevitable. It gives a disciplined starting point: identify the source states, the effective states, and the distinctions that the map forgets. The next layers must then be built explicitly.
 
-From a projection-first perspective, none of these interpretations is fundamental.
+For MTT, the immediate rigorous opportunity is finite and quantitative: turn selected projectors and operators into specified channels and compute their distinguishability and recovery properties. A new undecidability result would be a later theorem, requiring a recursive physical family and a genuine computational reduction.
 
-Information loss is neither mysterious nor avoidable. It is the inevitable consequence of projection under finite admissibility.
+<div class="thebibliography">
 
-Information is lost whenever distinctions cease to be admissible. This can occur in many familiar contexts:
+9
 
-- during measurement, when coupling to additional degrees of freedom collapses distinguishability,
+C. E. Shannon, *A Mathematical Theory of Communication*, Bell System Technical Journal **27** (1948), 379–423, 623–656.
 
-- under thermalization, when fine-grained correlations overwhelm descriptive capacity,
+A. M. Turing, *On Computable Numbers, with an Application to the Entscheidungsproblem*, Proceedings of the London Mathematical Society **42** (1936), 230–265.
 
-- at horizons, where global reconstruction becomes impossible,
+D. Petz, *Sufficient Subalgebras and the Relative Entropy of States of a von Neumann Algebra*, Communications in Mathematical Physics **105** (1986), 123–131.
 
-- and in complex interacting systems, where prediction exhausts admissibility margins.
+D. Sutter, M. Tomamichel, and A. W. Harrow, *Strengthened Monotonicity of Relative Entropy via Pinched Petz Recovery Map*, IEEE Transactions on Information Theory **62** (2016), 2907–2913.
 
-In none of these cases is information destroyed at the level of underlying dynamics. The loss occurs entirely at the level of effective description. Distinctions that were once meaningful can no longer be represented, tracked, or recovered.
+T. S. Cubitt, D. Pérez-García, and M. M. Wolf, *Undecidability of the Spectral Gap*, Nature **528** (2015), 207–211.
 
-This reframing dissolves the apparent conflict between reversible microscopic laws and irreversible macroscopic behavior. Microscopic reversibility guarantees that underlying configurations continue to evolve uniquely. It does not guarantee that effective descriptions retain the capacity to distinguish those configurations.
+J. Bausch, T. S. Cubitt, A. Lucia, and D. Pérez-García, *Undecidability of the Spectral Gap in One Dimension*, Physical Review X **10** (2020), 031038.
 
-The insistence that information must be conserved across all regimes therefore rests on a hidden assumption: that description itself can be extended indefinitely without loss. Projection-first reasoning rejects this assumption.
-
-Information is conserved only insofar as admissibility permits.
-
-Once admissibility is exhausted, information loss is not a failure of physics. It is a signal that effective description has reached its limit. Demanding further conservation at that point is equivalent to demanding invertibility where none can exist.
-
-Seen this way, information loss is not a problem to be solved. It is a structural feature to be understood.
-
-It marks the boundary between regimes where prediction, reconstruction, and simulation are possible, and regimes where they are not. It is the price paid for having finite, stable, and local descriptions at all.
-
-# What This Reframing Explains—and What It Leaves Open
-
-The projection-first reframing of information, computation, and undecidability does not introduce new physical substances or replace existing dynamical theories. Instead, it clarifies why information-theoretic concepts have become unavoidable in modern physics and why certain limits appear repeatedly across disparate domains.
-
-## What This Reframing Explains
-
-First, it explains why information has taken on such apparent foundational importance. Information theory provides precisely the tools needed to track distinguishability, compression, and loss when effective description is strained. Its success reflects not the primacy of information as an ontological entity, but the fact that physics increasingly operates near the limits of admissible description.
-
-Second, it explains the emergence of computational limits in physical systems. Predictability, simulability, and computational complexity are not merely properties of equations of motion. They measure how long effective description can be maintained before projection exhausts admissibility. Computation fails not when dynamics becomes undefined, but when description can no longer support prediction.
-
-Third, it explains the ubiquity of undecidability. Undecidable behavior is not an exotic feature of specially constructed systems. It arises generically whenever it is impossible to determine in advance whether projection will remain admissible. Undecidability is therefore not an epistemic shortcoming, but a structural safeguard that prevents physical description from requiring impossible foresight.
-
-Fourth, it explains why information loss appears across contexts as different as measurement, thermalization, black hole physics, and complex dynamics. In each case, information loss marks the point at which distinctions cease to be admissible. No violation of underlying determinism is required. The loss occurs entirely at the level of effective description.
-
-Taken together, these explanations show that information-theoretic language has become central in physics because it is the natural vocabulary for describing the limits of projection.
-
-## What This Reframing Leaves Open
-
-At the same time, this reframing leaves many questions deliberately unanswered.
-
-It does not specify the detailed structure of underlying dynamics beneath admissibility boundaries. Projection-first reasoning remains agnostic about what exists beyond effective description. Underlying dynamics may be simple or complex, deterministic or otherwise. Nothing in this framework fixes it uniquely.
-
-It does not replace the need for quantitative models. Determining where admissibility fails, how rapidly it is exhausted, and which restricted descriptions remain viable requires explicit constructions and calculations. Projection-first reframing provides a conceptual framework, not a substitute for detailed analysis.
-
-It also does not imply that all future physical theories must be information-theoretic in form. Just as quantum mechanics replaced classical phase space as the stable language for projected dynamics, future effective languages may arise for regimes where current descriptions fail. What projection-first reasoning insists upon is that such languages will again reflect the constraints of projection and finite admissibility, rather than evading them.
-
-## A Change in Perspective
-
-Perhaps the most important contribution of this reframing is a shift in perspective.
-
-Information, computation, and undecidability are not new ingredients added to the world. They are the language forced upon us when effective description reaches its limits. They describe not what the world is made of, but what can and cannot be distinguished, predicted, and reconstructed.
-
-This perspective dissolves many long-standing confusions. Information loss is not a paradox. Computational limits are not failures of ingenuity. Undecidability is not a flaw of formal systems. Each is a signature of projection operating under finite admissibility.
-
-## Closing Perspective
-
-Information, computation, and undecidability mark the boundary of physical description.
-
-From a projection-first viewpoint, this boundary is not a defect to be eliminated, but a structural feature to be understood. It is the condition that makes stable, local, and predictive physics possible at all.
-
-In recognizing this, physics becomes more modest but also more precise. It ceases to promise description without limit, and instead offers a disciplined account of what can be meaningfully said.
+</div>

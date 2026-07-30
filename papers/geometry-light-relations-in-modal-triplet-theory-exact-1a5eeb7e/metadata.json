@@ -1,68 +1,93 @@
 {
-  "abstract": "We separate the geometry-light statements of MTT into exact algebraic identities, consequences of explicit symmetry or positivity assumptions, and phenomenological estimates requiring additional dynamics. Modal democracy implies \\sin^2\\theta_W=3/8, but democracy is an assumption and is not selected by the current gauge profile. Holonomy phase sums require a specified trivial tensor product and compatible connection. Equal propagation speeds require equality of principal symbols and do not follow from topology alone. Curvature\u2013mass drift is an identity conditional on a chosen mass\u2013curvature ansatz, while the PPN statement requires an explicit response-norm estimate. No internal spectral gap is identified with an external cutoff. These typed statements provide safe interfaces for later numerical tiers without overstating their physical content.",
+  "abstract": "We separate the geometry-light statements of MTT into exact algebraic identities, consequences of explicit symmetry or positivity assumptions, and phenomenological estimates requiring additional dynamics. Modal democracy implies the weak mixing value 3/8, but democracy is an assumption and is not selected by the current gauge profile. Holonomy phase sums require a specified trivial tensor product and compatible connection. Equal propagation speeds require equality of principal symbols and do not follow from topology alone. Curvature-mass drift is an identity conditional on a chosen mass-curvature ansatz, while the PPN statement requires an explicit response-norm estimate. No internal spectral gap is identified with an external cutoff. These typed statements provide safe interfaces for later numerical tiers without overstating their physical content.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v3",
-  "date": "July 2026",
+  "date": "July 2026 Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262179",
-    "created": "2026-01-15T20:57:24.061552+00:00",
+    "created": "2026-07-29T08:50:56.990013+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18262180",
+    "doi": "10.5281/zenodo.21665977",
     "files": [
       {
-        "checksum": "md5:90216a37c2b9ed17578daebcda4cc22c",
-        "content_url": "https://zenodo.org/api/records/18262180/files/Geometry__Light_Relations_in_Modal_Triplet_Theory__MTT__v2%20(2).pdf/content",
-        "key": "Geometry__Light_Relations_in_Modal_Triplet_Theory__MTT__v2 (2).pdf",
-        "size": 320366
+        "checksum": "md5:a1dc0a8273f53354f113e0fd2272fdc4",
+        "content_url": "https://zenodo.org/api/records/21665977/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 335859
       }
     ],
-    "id": "18262180",
-    "match_kind": "title_or_file",
+    "id": "21665977",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18262180",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665977",
     "resource_type": "publication",
-    "title": "Geometry\u2013Light Relations in Modal Triplet Theory",
-    "updated": "2026-01-15T20:57:24.424809+00:00",
-    "version": "v1.0"
+    "title": "Geometry–Light Relations in Modal Triplet Theory: Exact Identities, Conditional Bounds, and Principal Symbols",
+    "updated": "2026-07-29T08:50:57.593054+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "e99f3f0219b73017d344892f33be30cdb1f72cba7886d858390a4e9001b9b44f",
+  "main_tex_sha256": "c49eddc050691fb2225c219e5772bf165cce4617c2908b469d55ed9c559b608c",
   "paper_id": "geometry-light-relations-in-modal-triplet-theory-exact-1a5eeb7e",
-  "paper_md_sha256": "57e051ec9962986808e718d18270f89a981d442ba9657308b51b7933432a3fa3",
+  "paper_md_sha256": "d1f75e3191dd9a9e5e19c9cde646320ca1def7a32979e8ad1070fc8dfdddb3ab",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
-    "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
+    "revision_evidence_sha256": "f4b261a30daa7defcc2076d1d95324237eb528fddca9929216050d9ff34a93ba",
     "selected_revision": true,
     "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Geometry__Light_Relations_in_Modal_Triplet_Theory__MTT__v2"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 11202,
+      "bytes": 16096,
       "path": "main.tex",
-      "sha256": "e99f3f0219b73017d344892f33be30cdb1f72cba7886d858390a4e9001b9b44f"
+      "sha256": "c49eddc050691fb2225c219e5772bf165cce4617c2908b469d55ed9c559b608c"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Geometry__Light_Relations_in_Modal_Triplet_Theory__MTT__v3"
   },
-  "source_tree_sha256": "0a28f51f8dd43a607143085a8365de9e91f23a7692b4eb79f8757c816c488418",
-  "title": "Geometry\u2013Light Relations in Modal Triplet Theory: Exact Identities, Conditional Bounds, and Principal Symbols",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "9fa703ee4775afc2132a7131e445314b913cd895dfdfcc6da01a5c367aa7f7ad",
+  "title": "Geometry–Light Relations in Modal Triplet Theory: Exact Identities, Conditional Bounds, and Principal Symbols",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262179",
+      "created": "2026-07-29T08:50:56.990013+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665977",
+      "files": [
+        {
+          "checksum": "md5:a1dc0a8273f53354f113e0fd2272fdc4",
+          "content_url": "https://zenodo.org/api/records/21665977/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 335859
+        }
+      ],
+      "id": "21665977",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665977",
+      "resource_type": "publication",
+      "title": "Geometry–Light Relations in Modal Triplet Theory: Exact Identities, Conditional Bounds, and Principal Symbols",
+      "updated": "2026-07-29T08:50:57.593054+00:00",
+      "version": "v3"
+    },
     {
       "concept_doi": "10.5281/zenodo.18262179",
       "created": "2026-01-15T20:57:24.061552+00:00",
@@ -84,7 +109,7 @@
       "publication_date": "2026-01-15",
       "record_url": "https://zenodo.org/records/18262180",
       "resource_type": "publication",
-      "title": "Geometry\u2013Light Relations in Modal Triplet Theory",
+      "title": "Geometry–Light Relations in Modal Triplet Theory",
       "updated": "2026-01-15T20:57:24.424809+00:00",
       "version": "v1.0"
     }

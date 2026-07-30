@@ -1,68 +1,93 @@
 {
-  "abstract": "We replace the obsolete few-TeV Calabi\u2013Yau benchmark with the current audited execution status of the MTT gauge, Hermitian Yang\u2013Mills (HYM), threshold, and axion sectors. The selected gauge profile is transported by SMDR v1.3 to Q=M_t and enters an eight-row positive-definite precision object. Embedded renormalized-Standard-Model equivalence closes at the adopted one-shared-physical-primitive/profile standard. On the selected q79/F/m1 rank-two bundle, the literal Cech\u2013HYM witness closes, including the finite cocycle and continuum tail certificates. The internal K_{\\mathrm{threshold}} response ledger also closes, but physical threshold/mass rows remain admitted profile data rather than strict MTT-emitted values. The old fitted Kahler moduli, exceptional-cycle thresholds, and axion normalizations are withdrawn. Strong CP remains open because the complete E_6 color anomaly cancels and no selected flux/threshold axion-current map has yet supplied a nonzero effective anomaly.",
+  "abstract": "We report the current MTT gauge, Hermitian Yang-Mills, threshold, and axion execution. The selected gauge profile is transported by SMDR v1.3 to the top-mass matching scale and enters an eight-row positive-definite precision object; embedded renormalized-Standard-Model equivalence closes at the adopted one-shared-physical-primitive and profile standard. Native bundle automorphisms give the faithful Standard Model gauge group modulo its diagonal order-six center, while the selected finite gauge and ghost spectrum source closes 10 of 10 rows with zero continuous parameters. The normalized finite rows are universal, so they do not derive the measured relative gauge couplings. On the selected q79/F/m1 rank-two bundle, the literal Cech-HYM witness closes through finite cocycle and continuum-tail certificates. The internal threshold-response ledger also closes, but physical threshold and mass-scheme values remain profile data. Strong CP remains open because the complete E6 color anomaly cancels and no selected flux or threshold axion-current map supplies the required nonzero low-energy effective anomaly.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v3",
-  "date": "July 2026",
+  "date": "July 2026 Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262313",
-    "created": "2026-01-15T21:18:04.393981+00:00",
+    "created": "2026-07-29T08:50:29.948049+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18262314",
+    "doi": "10.5281/zenodo.21665964",
     "files": [
       {
-        "checksum": "md5:a5e36a8285c535667a834dc36e1b2d1e",
-        "content_url": "https://zenodo.org/api/records/18262314/files/Execution_of_Modal_Triplet_Theory_I__Gauge__Axion__and_Threshold_Sectors_v2%20(3).pdf/content",
-        "key": "Execution_of_Modal_Triplet_Theory_I__Gauge__Axion__and_Threshold_Sectors_v2 (3).pdf",
-        "size": 301021
+        "checksum": "md5:5b230f9947170d4988b6c422e82346cd",
+        "content_url": "https://zenodo.org/api/records/21665964/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 341106
       }
     ],
-    "id": "18262314",
-    "match_kind": "title_or_file",
+    "id": "21665964",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18262314",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665964",
     "resource_type": "publication",
-    "title": "Execution of Modal Triplet Theory I: Gauge, K\u00e4hler, Axion, and Threshold Sectors",
-    "updated": "2026-01-15T21:18:04.878589+00:00",
-    "version": "v1.0"
+    "title": "Execution of Modal Triplet Theory I: Gauge, HYM, Threshold, and Axion Status after Profile-Standard SM Closure",
+    "updated": "2026-07-29T08:50:30.403736+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "7f156a42c6219ef3ea766fd3b739ea47f9f19b138c7992e826cb612be12c9020",
+  "main_tex_sha256": "687b656ac4ae91049af41256aa1ea310cd468ef6a52e0da4d0579555a251034e",
   "paper_id": "execution-of-modal-triplet-theory-i-gauge-hym-threshold-abc17efc",
-  "paper_md_sha256": "abba704b40e9b8a913918816cd9180d4974f1ccb13ca560e142dbf1cb2f5f7d4",
+  "paper_md_sha256": "5c47cfb8fc71834f7377d24f06f1e5e1ee715ec02c126f86131941e856a18132",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
-    "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
+    "revision_evidence_sha256": "c3aba2983e8773f1d6cc959e50920307e1e73b323b9cc1ab31aade92b787efa3",
     "selected_revision": true,
     "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Execution_of_Modal_Triplet_Theory_I__Gauge__Axion__and_Threshold_Sectors_v2"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 11766,
+      "bytes": 18952,
       "path": "main.tex",
-      "sha256": "7f156a42c6219ef3ea766fd3b739ea47f9f19b138c7992e826cb612be12c9020"
+      "sha256": "687b656ac4ae91049af41256aa1ea310cd468ef6a52e0da4d0579555a251034e"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Execution_of_Modal_Triplet_Theory_I__Gauge__Axion__and_Threshold_Sectors_v3"
   },
-  "source_tree_sha256": "1b5c171652c1dafbb30e6e4fa26d347d38f47e18a220db444ce3f3e342f4f47a",
-  "title": "Execution of Modal Triplet Theory I: Gauge, HYM, Threshold, and Axion Status after True-SM Closure",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "96d25bcd2b0566889df3a3c24e40367e1234c64026aced5a2f84cfb65747111e",
+  "title": "Execution of Modal Triplet Theory I: Gauge, HYM, Threshold, and Axion Status after Profile-Standard SM Closure",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262313",
+      "created": "2026-07-29T08:50:29.948049+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665964",
+      "files": [
+        {
+          "checksum": "md5:5b230f9947170d4988b6c422e82346cd",
+          "content_url": "https://zenodo.org/api/records/21665964/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 341106
+        }
+      ],
+      "id": "21665964",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665964",
+      "resource_type": "publication",
+      "title": "Execution of Modal Triplet Theory I: Gauge, HYM, Threshold, and Axion Status after Profile-Standard SM Closure",
+      "updated": "2026-07-29T08:50:30.403736+00:00",
+      "version": "v3"
+    },
     {
       "concept_doi": "10.5281/zenodo.18262313",
       "created": "2026-01-15T21:18:04.393981+00:00",
@@ -84,7 +109,7 @@
       "publication_date": "2026-01-15",
       "record_url": "https://zenodo.org/records/18262314",
       "resource_type": "publication",
-      "title": "Execution of Modal Triplet Theory I: Gauge, K\u00e4hler, Axion, and Threshold Sectors",
+      "title": "Execution of Modal Triplet Theory I: Gauge, Kähler, Axion, and Threshold Sectors",
       "updated": "2026-01-15T21:18:04.878589+00:00",
       "version": "v1.0"
     }

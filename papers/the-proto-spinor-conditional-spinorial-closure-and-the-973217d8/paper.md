@@ -3,37 +3,85 @@ abstract: |
   We isolate the part of the proto-spinor construction that is mathematically forced after its geometric premises are stated. A world-in-world field is a section of $`\operatorname{Hom}(TP,TI)`$ for oriented rank-three bundles; its nine local components do not multiply manifold dimensions. If closure data must retain the nontrivial loop class in $`SO(3)`$, the faithful continuous double-cover carrier is spinorial and is represented through $`\operatorname{Spin}(3)\cong SU(2)`$. This is a conditional lifting theorem, not a derivation of internal dimension three or of physical fermions from admissibility alone. For the selected q79 degree-three spectral cover we record the exact trace split of ranks $`1+2`$, the common $`1+2+3`$ carrier, and the local binary-dihedral lift of signed sheet monodromy. The shared circle is now a specified pullback of one universal flat $`\mathbb Z_{64}`$ differential line, not merely an isomorphic fiber. Its determinant, CLN, root-plane, and finite-Hessian actions intertwine exactly. The BHT and Hori fiber transforms share one orthogonal complex structure $`J_{\rm FM}`$, and the binary sheet group has exactly two conjugate $`\pm i`$ phase-root lifts for which $`(\pm iJ_{\rm FM})^2=I`$. Strict global Spin closure remains equivalent to a branch-relator obstruction calculation; the closed result is SpinC and finite symbolic. Circle, lens, and nil remain typed phase, finite-transport, and anchoring roles. Lorentzian spinors, masses, and particle assignments remain downstream realization problems.
 author:
 - Peter Nero
-current_version: v6
-date: July 2026
-generated_from_main_tex_sha256: 16295755bf35438965e5eab38d8004f2831e888b0706a0548abccc0091073ce5
+current_version: v7
+date: July 2026 Version 7
+generated_from_main_tex_sha256: 7c68851cd2e7e3e17fccc3865ad0135bcb7d9790960ed66d9f7dae6b7ab69ff9
 paper_id: the-proto-spinor-conditional-spinorial-closure-and-the-973217d8
 release_state: zenodo_released
-released_version: v4.0
+released_version: v7
 title: |
-  The Proto-Spinor:  
-  Conditional Spinorial Closure and the q79 Interface  
-  Corrected sixth edition
-zenodo_doi: 10.5281/zenodo.19534666
-zenodo_record_id: 19534666
-zenodo_url: "https://zenodo.org/records/19534666"
+  The Proto-Spinor:
+  Conditional Spinorial Closure and the q79 Interface
+zenodo_doi: 10.5281/zenodo.21655396
+zenodo_record_id: 21655396
+zenodo_url: "https://zenodo.org/records/21655396"
 ---
 
-# Revision note for this edition
+# Revision note for version 7
 
-Supersedes.  
+Supersedes.
+*The Proto-Spinor: Conditional Spinorial Closure and the q79 Interface*, version 6.
+
+Reason.
+Version 6 contains the current finite SpinC and shared-line results, but the relation between loop memory, the double cover, the q79 finite return, and a physical fermion remained too easy to compress into one claim.
+
+Resolution.
+Version 7 adds a four-layer reading guide, the explicit $`2\pi/4\pi`$ loop-memory picture, and a one-line derivation of the two conjugate finite returns. It keeps strict global Spin, continuum HYM intertwining, Lorentzian dynamics, and particle interpretation as separate gates and changes no theorem tier.
+
+Retained result.
+The conditional double-cover theorem, universal flat shared line, finite Hessian naturality, and binary SpinC–Fourier return are retained unchanged.
+
+Remaining boundary.
+Strict global q79 Spin, the nonflat FM/HYM lift, the strain-to-q79 continuum intertwiner, and a physical Lorentzian particle/action completion remain open.
+
+# Revision note for version 6
+
+Supersedes.
 *The Proto-Spinor: Conditional Spinorial Closure and the q79 Interface*, version 5.
 
-Reason.  
+Reason.
 Version 5 stopped at a local $`\operatorname{Dic}_3`$ lift and an untyped shared line. It did not include the later universal differential-line pullback, the common BHT–Hori Clifford operator, or the exact binary SpinC return.
 
-Resolution.  
+Resolution.
 Version 6 retains the conditional double-cover theorem and adds the flat q79 shared-line theorem, finite Hessian naturality, the exact $`J_{\rm FM}^2=-I`$ polarization, and the two conjugate $`\pm i`$ phase-root lifts.
 
-Retained result.  
+Retained result.
 Spinorial lifting is necessary when an oriented rank-three carrier must retain the nontrivial $`SO(3)`$ loop class.
 
-Remaining boundary.  
+Remaining boundary.
 Strict global q79 Spin, the physical nonflat FM/HYM lift, the strain-to-q79 continuum intertwiner, and a Lorentzian particle/action completion remain open gates.
+
+# How to Read the Proto-Spinor
+
+The construction has four layers, and the word “proto” is meant to keep them apart.
+
+1.  A local comparison field is a linear map between two oriented rank-three bundles. Its $`3\times3`$ matrix contains orientation and strain components.
+
+2.  Requiring the state carrier to remember the nontrivial loop in the orientation group replaces $`SO(3)`$ by its double cover $`\operatorname{Spin}(3)\cong SU(2)`$.
+
+3.  The selected q79 finite geometry supplies a separate rank-$`1+2+3`$ carrier, a shared flat differential line, signed sheet monodromy, and an exact finite SpinC–Fourier return.
+
+4.  A physical fermion requires a Lorentzian spinor bundle, Dirac dynamics, statistics, interactions, observables, and a particle interpretation.
+
+The first three layers provide a mathematically controlled precursor to spinorial physics. They do not silently supply the fourth.
+
+## Object picture: why a double cover appears
+
+Consider a continuous path of spatial frames describing one full $`2\pi`$ rotation. Its endpoint in $`SO(3)`$ is the identity, but the path is not contractible. When lifted to $`\operatorname{Spin}(3)`$, that path begins at $`+1`$ and ends at $`-1`$. Repeating the rotation produces a lifted path ending at $`+1`$. An ordinary vector representation sees only the $`SO(3)`$ endpoint and cannot distinguish the two loop classes; a spinorial carrier retains the sign.
+
+This is the exact content of “loop memory” in the theorem below. It does not say that a physical object literally rotates through an extra coordinate, and it does not derive Fermi statistics or a Dirac equation. It says that the smallest connected faithful carrier for this homotopy information is the double cover.
+
+## The finite double return in one line
+
+The q79 Fourier operator satisfies $`J_{\rm FM}^2=-I`$. The two admissible shared-line roots contribute scalar phases $`+i`$ or $`-i`$, whose squares are also $`-1`$. Therefore
+``` math
+(\pm iJ_{\rm FM})^2=(-1)(-I)=I.
+```
+This is the finite SpinC–Fourier return. The two signs are complex-conjugate lifts of the same determinant structure. The theorem does not choose one as the observed branch and does not identify the compact phase with time.
+
+## Argument map
+
+Sections 2–4 construct the local comparison carrier and its conditional spin lift. Sections 5–8 build the selected q79 rank flag, shared line, binary sheet lift, and Clifford return. Sections 9–12 then type the CLN roles and state the physical, continuum-intertwiner, and numerical-program boundaries. The conclusion should be read as a ledger of which square is closed at the finite level and which arrows still require continuum or Lorentzian data.
 
 # Status and dependencies
 
@@ -134,6 +182,8 @@ where $`P_{\rm Spin}`$ is a chosen lift of the relevant oriented frame or holono
 
 </div>
 
+The rank-two complex fiber is therefore not a two-component particle model by declaration. It is the smallest representation in which the lifted central sign can act nontrivially. Only after the bundle is connected to Lorentzian geometry and an action can its sections be interpreted as physical spinor fields.
+
 The theorem does not prove that an internal world must be three-dimensional. For example, $`SO(2)`$ already has nontrivial winding, while higher-dimensional orientation groups also possess spin covers. Rank three is a selected realization premise supported here by the comparison carrier and the q79 degree-three data, not a universal dimensional-minimality theorem.
 
 # Selected q79 trace-split carrier
@@ -174,6 +224,8 @@ has rank six.*
 </div>
 
 This theorem selects a direct trace/trace-zero/full carrier. On a connected cover with transitive monodromy it does not produce a global ordering of three individual sheets.
+
+The labels $`1`$, $`2`$, and $`3`$ refer to ranks of nested algebraic roles: the central unit line, the trace-zero complement, and the full cover algebra. Their sum gives a six-dimensional fiber carrier. They are not three particle families, three spatial manifolds, or a count of quark colors unless a later source map proves such an identification.
 
 # Universal shared differential line
 
@@ -303,17 +355,19 @@ The two lifts are complex conjugates with the same determinant sign line. No con
 
 This closes the double return at representation and flat differential-line tier. It does not identify compact phase with physical time, choose one of the conjugate orientations as the observed universe, or supply the nonflat physical FM/HYM correspondence.
 
+The role of SpinC is precise here. The spin lift contributes a central minus sign and the shared $`U(1)`$ root contributes the compensating phase, so the combined finite operator returns exactly. A strict Spin theorem would have to make the spin part close without that $`U(1)`$ compensation on every global relator. This is why the finite return is a genuine result without resolving the separate $`w_2`$ obstruction.
+
 # Circle, lens, and nil as typed carrier roles
 
 In this revision the three labels have the following nonexhaustive roles:
 
-Circle.  
+Circle.
 The common line $`L_{\rm shared}`$ stores phase or holonomy data. It is counted once and is not physical time.
 
-Lens.  
+Lens.
 Finite quotient, signed-sheet, or projective transport data. This does not require the global compactification to contain a literal lens-space factor.
 
-Nil.  
+Nil.
 Anchoring, upper-triangular transport, or termination data in a selected operator filtration. This does not prove a literal Nil$`_3`$ factor.
 
 Thus circle–lens–nil is a carrier and obstruction taxonomy. The auxiliary model $`L(3,1)\times\mathrm{Nil}_3`$ may realize some roles, but it is not the selected q79 Fu–Yau compactification and the two manifolds are not identified.
@@ -363,6 +417,119 @@ The current calculation repositories close embedded renormalized-Standard- Model
 # Conclusion
 
 The corrected proto-spinor result is narrower and stronger. Under explicit rank-three orientation and loop-memory premises, the double cover is indeed spinorial. The selected q79 carrier has an exact $`1+2+3`$ trace split and an exact universal flat differential line, an exact $`\operatorname{Dic}_3`$ lift, and an exact SpinC–Fourier return on its finite carrier. What remains is sharply separated: the strict global Spin obstruction calculation, the physical nonflat FM/HYM lift, the same-source local-to-q79 continuum intertwiner, and the Lorentzian action/particle completion.
+
+#### Rows used directly in this paper.
+
+- (*derived exact*).
+
+  E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+
+- (*numeric certified*).
+
+  Weighted-theta Fourier-tail and Wiener contraction certificate.
+
+- (*derived exact*).
+
+  Executable q=79 exact-branch audit.
+
+- (*derived exact*).
+
+  CRT q=79 theorem on the selected exact branch.
+
+- (*derived exact*).
+
+  Sparse 27x27 qutrit-Weyl left-action realization.
+
+= by -
+
+#### Corpus-state cross-checks.
+
+- (*profile replay*).
+
+  Versioned Yu, Yd, Ye and lambda_H profile packet.
+
+- (*numeric certified*).
+
+  Three selected CKM profile rows and uncertainty comparison.
+
+- (*profile replay*).
+
+  Current non-looping global status and source-certificate map.
+
+- (*derived exact*).
+
+  Promoted direct K_threshold.Omega_H.lambda row.
+
+- (*profile replay*).
+
+  Twelve-obligation embedded renormalized-SM equivalence audit.
+
+- (*derived exact*).
+
+  Exact-branch internal TT support certificate; physical normalization remains open.
+
+- (*profile replay*).
+
+  Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+
+- (*profile replay*).
+
+  Fifteen measured source coordinates, Jacobian and covariance transport.
+
+- (*profile replay*).
+
+  Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+
+- (*derived exact*).
+
+  Promoted P_EW source row at the declared one-shared-primitive standard.
+
+= by -
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The selected q=79, finite-matrix, anomaly, and HYM rows provide the concrete lower structures used at the proto-spinor interface. They do not prove the supplied Lorentzian, SpinC, worldsheet, or physical-bundle hypotheses. Other Standard Model rows are corpus context, and the strict source upgrade remains open.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Rows used directly in this paper
+
+- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
+- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
+- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
+- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
+
+## Corpus-state cross-checks
+
+- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
+- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
+- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
+- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
+- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
+- `A13/gr_tt_support` (**DERIVED_EXACT**): Exact-branch internal TT support certificate; physical normalization remains open.
+- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
+- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 

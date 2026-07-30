@@ -1,68 +1,93 @@
 {
-  "abstract": "We replace the legacy fitted Calabi\u2013Yau flavor benchmark with the current audited execution status. The 27-by-27 qutrit\u2013Weyl/minimal matrix ledger, charged Yukawa profile rows, selected \\Pi_{\\mathrm{CKM}} rows, electroweak primitive, and direct Higgs/threshold row support embedded renormalized-Standard- Model equivalence at the adopted one-shared-physical-primitive/profile standard. The final audit closes 12/12 obligations at that standard. This is not a zero-knob derivation of measured masses. The nine charged Yukawa magnitudes and \\lambda_H remain profile labels rather than internally emitted strict source values. CKM closes at the prediction-with-uncertainty standard, with maximum displacement 2.3565\\times10^{-4} standard deviations. In the neutral sector, MTT now emits a complete internal dimensionless response, but its spectrum [1,4,7] cannot be converted into the physical neutrino spectrum by one common scale or nil subtraction. The old fitted PMNS, seesaw, and few-TeV Higgs benchmarks are therefore withdrawn as predictions.",
+  "abstract": "We report the current MTT flavor, CKM, neutral, and Higgs execution. The 27-by-27 qutrit-Weyl architecture, finite-replay charged Yukawa rows, selected CKM rows, shared electroweak primitive, direct Higgs and threshold row, and completed 96-dimensional finite Dirac operator support embedded renormalized-Standard-Model equivalence at the adopted profile standard. CKM closes at the prediction-with-uncertainty criterion, with maximum displacement 2.3565e-4 standard deviations. In the neutral sector, the internal 9-of-9 dimensionless response and its one-scale no-go remain valid. A new two-primitive Dirac profile uses the measured oscillation splittings to emit the complete normal-ordering mass spectrum, Dirac Yukawa matrix, and flavor mass-squared matrix. This is profile calibration, not MTT selection of the splittings, ordering, Dirac ontology, or covariance. The selected finite one-form space contains three raw scalar doublets, while the q79 and proto-spinor projector isolates one exact Higgs doublet. Strict numerical source promotion and absolute neutral ontology remain open.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v3",
-  "date": "July 2026",
+  "date": "July 2026 Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262329",
-    "created": "2026-01-15T21:20:40.001028+00:00",
+    "created": "2026-07-29T08:50:31.162090+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18262330",
+    "doi": "10.5281/zenodo.21665967",
     "files": [
       {
-        "checksum": "md5:02c92198e8daabbf603eb8dff7aa289a",
-        "content_url": "https://zenodo.org/api/records/18262330/files/Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v2%20(3).pdf/content",
-        "key": "Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v2 (3).pdf",
-        "size": 285632
+        "checksum": "md5:60a88a27890e3bfad00a4172bf5e2a26",
+        "content_url": "https://zenodo.org/api/records/21665967/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 326801
       }
     ],
-    "id": "18262330",
-    "match_kind": "title_or_file",
+    "id": "21665967",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18262330",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665967",
     "resource_type": "publication",
-    "title": "Execution of Modal Triplet Theory II: Flavor, CKM/PMNS, and Higgs Sector",
-    "updated": "2026-01-15T21:20:40.426559+00:00",
-    "version": "v1.0"
+    "title": "Execution of Modal Triplet Theory II: Flavor, CKM, Neutral, and Higgs Status after Profile-Standard SM Closure",
+    "updated": "2026-07-29T08:50:31.428776+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "4ac011fb75ec65e91a9ba184a87cee084f781623867bc33305521f27819320d2",
+  "main_tex_sha256": "eaefda3dc7249bccb3b34301d891d33d71817766a0ae8897a81f9504fdc4ce08",
   "paper_id": "execution-of-modal-triplet-theory-ii-flavor-ckm-neutral-42604e2f",
-  "paper_md_sha256": "4ef63cf97b55bfb4378e4444b96fe382e8ea4765ed7026d9b89edc219d304428",
+  "paper_md_sha256": "652301cdb28622bcbefdd14bb3cb26e773a219087c894d1fdb10c9b8ebb79ceb",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
-    "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
+    "revision_evidence_sha256": "2b16c74303e09b77f2e768a5fcbffddcdf4fb8fa97edab06c229279b9b76096b",
     "selected_revision": true,
     "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v2"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 11886,
+      "bytes": 20548,
       "path": "main.tex",
-      "sha256": "4ac011fb75ec65e91a9ba184a87cee084f781623867bc33305521f27819320d2"
+      "sha256": "eaefda3dc7249bccb3b34301d891d33d71817766a0ae8897a81f9504fdc4ce08"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Execution_of_Modal_Triplet_Theory_II__Flavor__CKM_PMNS__and_Higgs_Sector_on_the_CY_Corner_v3"
   },
-  "source_tree_sha256": "65638d8e0e9ba77e1343c7ae5d51af56dbe97f52465c7060afcb3f454da240ee",
-  "title": "Execution of Modal Triplet Theory II: Flavor, CKM, Neutral, and Higgs Status after True-SM Closure",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "26d367f7da12b61b6b8351a3ba52faab88e09283df6b356d74416ce8d31eb7a3",
+  "title": "Execution of Modal Triplet Theory II: Flavor, CKM, Neutral, and Higgs Status after Profile-Standard SM Closure",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262329",
+      "created": "2026-07-29T08:50:31.162090+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665967",
+      "files": [
+        {
+          "checksum": "md5:60a88a27890e3bfad00a4172bf5e2a26",
+          "content_url": "https://zenodo.org/api/records/21665967/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 326801
+        }
+      ],
+      "id": "21665967",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665967",
+      "resource_type": "publication",
+      "title": "Execution of Modal Triplet Theory II: Flavor, CKM, Neutral, and Higgs Status after Profile-Standard SM Closure",
+      "updated": "2026-07-29T08:50:31.428776+00:00",
+      "version": "v3"
+    },
     {
       "concept_doi": "10.5281/zenodo.18262329",
       "created": "2026-01-15T21:20:40.001028+00:00",

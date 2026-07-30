@@ -37,3 +37,18 @@ nonzero-Chern continuum HYM carrier remains open.
   unique Higgs mode.
 - Metric, connection, Hessian, retarded and overlap intertwiners remain the
   acceptance conditions for physical promotion.
+
+## Expository revision, 2026-07-28
+
+The local projector theorem, q79 finite target theorem, and profile-tier
+status are unchanged. A new guide presents closure strain as a local stiffness
+problem and separates the three established layers from the open same-source
+intertwiner.
+
+The paper now explains physical mass through the generalized eigenproblem
+`H v = m^2 K v`, making clear why Hessian positivity or an
+arbitrarily normalized eigenvalue is not a pole-mass prediction. Further
+discussion distinguishes block stability from gauge representation and
+particle identity, and explains that the closed q79 target fixes the codomain
+of the missing continuum map rather than another rank-six analogy. The revised
+PDF has been compiled and visually inspected in full.

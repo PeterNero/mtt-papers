@@ -1,65 +1,93 @@
 {
-  "abstract": "",
+  "abstract": "A projection can identify source states that an effective description no longer distinguishes. This observation is useful, but it is not by itself a theory of information, computation, complexity, or undecidability. Information quantities require a state or probability law and a specified channel; computation requires an encoding, evolution rule, readout, and resource model; undecidability requires an unbounded problem family and an explicit reduction from a known undecidable problem. This paper gives a projection-first account of these layers. Classical and quantum data-processing inequalities formalize loss of distinguishability under channels, while recovery maps state when the loss can be reversed on a selected family of states. Noninvertibility alone does not imply entropy production, an arrow of time, computational hardness, or undecidability. For Modal Triplet Theory, finite selected operators supply concrete descriptive channels, but a physical undecidability theorem remains open until a uniform computational embedding is constructed.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18255794",
-    "created": "2026-01-15T11:03:42.587128+00:00",
+    "created": "2026-07-29T08:49:43.800443+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18255795",
+    "doi": "10.5281/zenodo.21665930",
     "files": [
       {
-        "checksum": "md5:89fc1f2ebbcf4f8f7b75c5fab2296810",
-        "content_url": "https://zenodo.org/api/records/18255795/files/A_Projection_First_Reframing_of_Information__Computation__and_Undecidability%20(3).pdf/content",
-        "key": "A_Projection_First_Reframing_of_Information__Computation__and_Undecidability (3).pdf",
-        "size": 155829
+        "checksum": "md5:14fb6de255105ad028d6debc6efb5b5d",
+        "content_url": "https://zenodo.org/api/records/21665930/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 238178
       }
     ],
-    "id": "18255795",
-    "match_kind": "title_or_file",
+    "id": "21665930",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18255795",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665930",
     "resource_type": "publication",
-    "title": "Projection-First Reframing of Information, Computation, and Undecidability",
-    "updated": "2026-01-15T11:03:43.178883+00:00",
-    "version": "v1.0"
+    "title": "A Projection-First Reframing of Information and Computation: Distinguishability, Channels, and Conditional Undecidability",
+    "updated": "2026-07-29T08:49:44.206491+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "cc9c815c01c2b6ccc81f844fb011fbb8347513bec8f81fd5c16eb1cdb798d81b",
+  "main_tex_sha256": "2c36ed8c18f7fd80df5f3d8611e3ded36fa0b7c36981e2a1cc5027c5f1b00f3e",
   "paper_id": "a-projection-first-reframing-of-information-computation-dab93645",
-  "paper_md_sha256": "30e7d41508b952a934316f86420fd5d5264da69f58337e619e33ae2ff5b4d969",
+  "paper_md_sha256": "c72c98a177b079e7c578df3a81ac574c9596feb79d9f7b192237ae81491e6ffd",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "89720209cd059908060325146fa2ee7542bf026b20331d8a25c15d6f6161b2bc",
+    "selected_revision": true,
+    "superseded_source_path": "19 A project-first reframing/_work/A_Projection_First_Reframing_of_Information__Computation__and_Undecidability (1)"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 20235,
+      "bytes": 14434,
       "path": "main.tex",
-      "sha256": "cc9c815c01c2b6ccc81f844fb011fbb8347513bec8f81fd5c16eb1cdb798d81b"
+      "sha256": "2c36ed8c18f7fd80df5f3d8611e3ded36fa0b7c36981e2a1cc5027c5f1b00f3e"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "19 A project-first reframing/_work/A_Projection_First_Reframing_of_Information__Computation__and_Undecidability (1)"
   },
-  "source_tree_sha256": "b82e55bcb0533a540c5c1b68c5583ec83ae2661ff9b2696cd8064fdeb90443c4",
-  "title": "A Projection-First Reframing of Information, Computation, and Undecidability",
+  "source_tree_sha256": "afbeab53e010929f356e0c0de11c517b2bc9ebe735a3b8bbe5153eab7bbfee1e",
+  "title": "A Projection-First Reframing of Information and Computation: Distinguishability, Channels, and Conditional Undecidability",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255794",
+      "created": "2026-07-29T08:49:43.800443+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665930",
+      "files": [
+        {
+          "checksum": "md5:14fb6de255105ad028d6debc6efb5b5d",
+          "content_url": "https://zenodo.org/api/records/21665930/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 238178
+        }
+      ],
+      "id": "21665930",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665930",
+      "resource_type": "publication",
+      "title": "A Projection-First Reframing of Information and Computation: Distinguishability, Channels, and Conditional Undecidability",
+      "updated": "2026-07-29T08:49:44.206491+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18255794",
       "created": "2026-01-15T11:03:42.587128+00:00",

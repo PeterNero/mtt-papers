@@ -28,8 +28,7 @@ from the measured $(g_Y,g_2)$ profile, this equality is an exact algebraic
 round trip, not a held-out prediction. Supplying an absolute $g_2$ from
 $(G_F,m_W)$ does not remove that circularity. A genuine redundancy test
 requires an MTT source theorem selecting $r_{21}$ without electroweak gauge
-data, followed by independent common-scheme transport. The obsolete one-loop
-$5~\mathrm{TeV}$ calculation and its precision-prediction claim are withdrawn.
+data, followed by independent common-scheme transport.
 \end{abstract}
 
 \section*{Revision note for this edition}
@@ -48,6 +47,28 @@ for a supplied gauge-ratio profile.
 \item[Remaining boundary.] A held-out test requires MTT to select $r_{21}$
 without electroweak gauge data and then transport it independently.
 \end{description}
+
+\section{Central picture and roadmap}
+
+The central picture is that the weak mixing angle describes how the neutral
+electroweak gauge fields are
+rotated into the photon and $Z$ directions. In a fixed renormalization scheme
+and at one scale, that angle is determined by the same pair of couplings
+$(g_Y,g_2)$. It is therefore not a new datum when the ratio of those couplings
+has already been used.
+
+The argument has three steps:
+\[
+(g_Y,g_2)
+\longrightarrow
+r_{21}=\frac{5g_Y^2}{3g_2^2}
+\longrightarrow
+s_W^2=\frac{3r_{21}}{5+3r_{21}}.
+\]
+Section~3 proves that the composition returns
+$g_Y^2/(g_Y^2+g_2^2)$ identically. Section~4 explains why adding an absolute
+$SU(2)$ normalization does not create a second ratio. Section~5 states the
+data-separation conditions required for a genuine held-out test.
 
 \section{Selected inputs and scope}
 
@@ -86,7 +107,7 @@ Using $g_Y^2=(3/5)g_1^2$ and the $\overline{\mathrm{MS}}$ definition
 \[
 s_W^2(Q):=\frac{g_Y^2(Q)}{g_Y^2(Q)+g_2^2(Q)},
 \]
-gives the exact identity
+gives the exact identity \cite{PDG2024}
 \begin{equation}
 \boxed{s_W^2(Q)=\frac{3r_{21}(Q)}{5+3r_{21}(Q)}.}
 \label{eq:weak_identity}
@@ -113,7 +134,33 @@ where the uncertainty is propagated from the selected $r_{21}$ row. Direct
 substitution of the selected $g_Y$ and $g_2$ gives the same central value. This
 is a useful convention and arithmetic check, but it has no held-out status.
 
-\section{Why the $(G_F,m_W)$ construction remains circular}
+\subsection{Worked example and uncertainty check}
+
+As a normalization check, suppose $g_Y=g_2$. Then
+$r_{21}=5/3$, and Equation~\eqref{eq:weak_identity} gives
+\[
+s_W^2=\frac{3(5/3)}{5+3(5/3)}=\frac12,
+\]
+exactly as the defining coupling formula does.
+
+For the selected profile, inserting $r_{21}=0.5110273$ gives
+$s_W^2=0.2346644$. The derivative
+\[
+\frac{d s_W^2}{d r_{21}}
+=\frac{15}{(5+3r_{21})^2}
+\]
+is approximately $0.351443$ at that point, so multiplying by the supplied
+ratio uncertainty $0.0001231$ gives $0.0000433$. This verifies both the central
+value and its one-row linear uncertainty propagation.
+
+The interpretation is simple: the numerical agreement confirms the
+normalization convention and arithmetic transport. It does not create an
+independent electroweak datum because the same coupling ratio appears on both
+sides of the calculation.
+
+\section{Why the
+\texorpdfstring{$(G_F,m_W)$}{(Fermi constant, W mass)}
+construction remains circular}
 
 An electroweak input such as $(G_F,m_W)$ can set an absolute $SU(2)$
 normalization, subject to radiative matching. It cannot make the weak-angle
@@ -121,6 +168,15 @@ test independent when the ratio $r_{21}$ still comes from the measured
 hypercharge-to-$SU(2)$ profile. Indeed, once $g_2$ and $r_{21}$ are supplied,
 Equation~\eqref{eq:r21} defines $g_1$ and hence the weak angle. The information
 being tested is already present in $r_{21}$.
+
+At tree level the usual relation is
+\[
+g_2^2=4\sqrt{2}\,G_Fm_W^2,
+\]
+with radiative corrections required for a precision common-scheme value. This
+can supply the overall $SU(2)$ scale, but it supplies no independent value of
+$g_Y/g_2$. The latter is precisely the information already stored in
+$r_{21}$.
 
 The earlier tree-level value near $0.2312$ used the obsolete $5~\mathrm{TeV}$
 profile and a one-loop return to $M_Z$. It is withdrawn as a prediction. Its
@@ -157,54 +213,63 @@ the measured weak-angle information. The next theorem target is sharply
 defined: select $r_{21}$ from MTT source geometry before consulting the
 electroweak gauge profile, then execute a held-out common-scheme comparison.
 
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The weak-angle round trip uses the electroweak source row and common-scheme precision workspaces directly, with the global profile audit fixing the comparison convention. Flavor, neutral, HYM, and finite-matrix rows are neighboring context. The non-circular zero-knob source upgrade remains open.
 
-% ===========================
-\section*{References}
-% ===========================
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
 
-\begin{enumerate}
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
 
-\item Particle Data Group (PDG),
-\emph{Review of Particle Physics},
-Prog. Theor. Exp. Phys. 2024, 083C01
-(for $G_F$, $m_W$, $M_Z$, and electroweak input values).
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/current_global_lock} (\emph{profile replay}).\par Current non-looping global status and source-certificate map.
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\item \path{A02/precision_15_source_transport} (\emph{profile replay}).\par Fifteen measured source coordinates, Jacobian and covariance transport.
+\item \path{A02/precision_8x8_workspace} (\emph{profile replay}).\par Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+\item \path{A01/strict_pew_row} (\emph{derived exact}).\par Promoted P\_EW source row at the declared one-shared-primitive standard.
+\end{itemize}
 
-\item M. E. Machacek and M. T. Vaughn,
-``Two-loop renormalization group equations in a general quantum field theory,''
-Nucl. Phys. B222 (1983) 83--103.
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/charged_yukawa_higgs_profile} (\emph{profile replay}).\par Versioned Yu, Yd, Ye and lambda\_H profile packet.
+\item \path{A14/ckm_prediction_profile} (\emph{numeric certified}).\par Three selected CKM profile rows and uncertainty comparison.
+\item \path{A01/direct_k_higgs_row} (\emph{derived exact}).\par Promoted direct K\_threshold.Omega\_H.lambda row.
+\item \path{A22/e6_qpsi_qcd_anomaly} (\emph{derived exact}).\par E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A40/neutral_two_primitive_profile} (\emph{profile replay}).\par Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+\item \path{A01/qutrit_weyl_27_matrix} (\emph{derived exact}).\par Sparse 27x27 qutrit-Weyl left-action realization.
+\end{itemize}
 
-\item T. Kato,
-\emph{Perturbation Theory for Linear Operators},
-Springer (1995).
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
 
-\item P. Nero,
-\emph{Modal Triplet Theory: Foundation},
-MTT corpus.
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
-\item P. Nero,
-\emph{Modal Triplet Theory: Quantum Amplitudes from Modal Geometry},
-MTT corpus.
-
-\item P. Nero,
-\emph{Gauge Couplings, Internal Geometry, and $\Theta$--Closure in Modal Triplet Theory},
-Paper~I.
-
-\item P. Nero,
-\emph{Direct Geometric Evaluation of Nonabelian Overlaps in Modal Triplet Theory},
-Paper~II.
-
-\item P. Nero,
-\emph{Twistor--Action Matching of Gauge Overlaps in Modal Triplet Theory},
-Paper~III.
-
-\item P. Nero,
-\emph{Extending $\Theta$--Closure to Gravity and Cosmology in Modal Triplet Theory},
-Paper~IV.
-
-
-
-\end{enumerate}
 \begin{thebibliography}{99}
+
+\bibitem{PDG2024}
+S.~Navas et al. (Particle Data Group),
+\emph{Review of Particle Physics},
+Phys. Rev. D \textbf{110} (2024) 030001.
+\url{https://doi.org/10.1103/PhysRevD.110.030001}
 
 \bibitem{MTT-Admissibility}
 P.~Nero,
@@ -286,7 +351,7 @@ Zenodo preprint, January 2026.
 
 \bibitem{MTT-Bell-Beables}
 P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
+\emph{Modal Fixed Points, Bell's Beables, and the Limits of Factorization},
 Zenodo preprint, 2025.
 \url{https://doi.org/10.5281/zenodo.17076300}
 
@@ -298,7 +363,8 @@ Zenodo preprint, August 2025.
 
 \bibitem{MTT-Stochastic}
 P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
+\emph{Modal Triplet Theory and History-Dependent Stochastic Processes:
+Fixed-State Indivisibility, Markov Order, and the Quantum Boundary},
 Zenodo preprint, January 2026.
 \url{https://doi.org/10.5281/zenodo.18254862}
 

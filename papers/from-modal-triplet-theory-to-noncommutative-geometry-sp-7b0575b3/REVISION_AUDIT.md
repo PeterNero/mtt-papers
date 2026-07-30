@@ -1,27 +1,30 @@
-# MTT to Noncommutative Geometry v4 Revision Audit
+# MTT to Noncommutative Geometry v5 Revision Audit
 
-Date: 2026-07-28
+Date: 2026-07-29
 
-Status: implemented as a new TeX successor; v3 preserved
+Status: implemented as a new TeX successor; released v4 preserved
 
 ## Current version delta
 
-Version 4 replaces v3's claimed first-principles derivation with a typed
-almost-commutative profile encoding. It incorporates the exact A44--A51 finite
-chain through the neutral completion, native gauge group, explicit finite
-bimodule, anomaly-free hypercharge line, one-Higgs projector, and profile
-traces; it also records A52's universal-normalization no-go and moment
-ambiguity. Physical Wick selection, source-derived finite Dirac values,
-continuum q79 realization, and nonperturbative quantum transport remain open.
+Version 5 retains v4's replacement of the original first-principles claim by
+a typed almost-commutative profile encoding. It adds the A57--A62
+gauge-fixed fluctuation chain: the one-loop coefficient vector is derived
+from the selected representation, and all ten matter, scalar, and gauge/ghost
+internal spectrum rows are exact finite calculations with zero added
+continuous parameters. Their common normalized nonzero spectral shape proves
+that they cannot by themselves provide the missing nonuniversal gauge
+thresholds. Physical Wick selection, source-derived finite Dirac values,
+continuum q79 realization, physical threshold operators, and nonperturbative
+quantum transport remain open.
 
 ## Source and disposition
 
 - Superseded source:
-  `15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry_v3`
+  released corrected version 4 in this paper directory and on Zenodo
 - Superseded `main.tex` SHA-256:
-  `7e5f37f5a59ddce8e293d5feaf817a7f6f7aa4c0321dff7259daa5bd985e0d7f`
+  `91b68b1e7ca2d96fe2cf602804b28a29f34b78dbe2842fbcca3af20af43d765e`
 - Successor:
-  `15 Discrete & Spectral & Operator Geometric Theories/revised_tex_vnext/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry_v4`
+  `papers/from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3/main.tex`
 - Disposition:
   retain as a typed almost-commutative encoding; withdraw the first-principles
   derivation and unique-normalization claims.
@@ -31,7 +34,7 @@ continuum q79 realization, and nonperturbative quantum transport remain open.
 The current-status decisions use the curated authority rows, not historical
 corpus wording:
 
-| Authority | SHA-256 | Use in v4 |
+| Authority | SHA-256 | Use in v5 |
 |---|---|---|
 | A10 | `78be7385c3acfb484f31db7fad08a525bced4b86eb0df63c4622a772e730571e` | Master correction specification |
 | A44 | `2a3a4345f1ddc4fe2d1a8ad838abdb02c832701fae02fed57c7b8f2902fab721` | Qutrit/SM algebra no-go and conditional corner bridge |
@@ -43,6 +46,12 @@ corpus wording:
 | A50 | `327fa5b3468908fef396f4d76dc3e0d98f993d570510d08765dc1bb157be2fd1` | Neutral completion and anomaly-free shared circle |
 | A51 | `423e3ae86dd8b5abee19e38d53f0bb003fb53fc0e5adc872076cab546934e893` | Finite one-forms, one-Higgs projector, and profile traces |
 | A52 | `cd5c4a0af557470a6687a71241228432e4c9d94b216c69a37aec6fbf6823f99e` | Product-triple scope, normalization no-go, and moment ambiguity |
+| A57 | `afc69de818c28f081dda4c50bbceeabbbdc7d55877f5ebeebd50c7b41df013f9` | Gauge-fixed complex and exact one-loop coefficient vector |
+| A58 | `3f604237002b7bdd5170c91a051b6d17967527caddb903c18d1671b87fb07db1` | Eight of ten exact spectrum rows and nonabelian candidate audit |
+| A59 | `dc5ab20f4b50fb74dabff1980b89e328e147cef9881f22b938aa6827da4584d9` | Retired SU2/SU3 binding routes |
+| A60 | `bd535afed61ff81de289106a3286c3fbbd20e0f50499334bfc2e564fa772c913` | Exact BRST cancellation and remaining-source lock |
+| A61 | `04ac6a5c04995f272fdae9447771fd86d7958e859861e433f38ef426c676d545` | Exact finite SU2 row and retirement of the repaired matrix lane |
+| A62 | `e88231924a052c5aab281fcea7cf879aa5e8672a169c62c12d4017734d41c13c` | Exact ten-spectrum closure and universal-shape limitation |
 
 ## Evaluation of the three recorded corrections
 
@@ -60,14 +69,14 @@ replacement.
   finite bimodule, necessary neutral summand, orientation/intersection data,
   and unique anomaly-free hypercharge line.
 
-Version 4 therefore states an executed finite profile construction rather
+Version 5 therefore states an executed finite profile construction rather
 than either an assumed algebra or a direct renaming of the qutrit algebra.
 
 ### 2. The Wick dictionary was absent
 
 The correction remains fully applicable.
 
-Version 4:
+Version 5:
 
 - declares the product spectral triple to be Euclidean;
 - lists the minimum Lorentzian-to-Euclidean data needed for a physical Wick
@@ -81,7 +90,7 @@ No MTT theorem currently supplies this physical Wick contract.
 
 The correction remains applicable.
 
-Version 4 adds a reducing-projector theorem. A fixed-point projector preserves
+Version 5 retains the reducing-projector theorem. A fixed-point projector preserves
 an existing real even spectral triple only when it reduces the algebra
 representation and Dirac operator, commutes with the real structure and
 grading, remains faithful, and separately preserves the finite orientation
@@ -90,7 +99,7 @@ that projection constructs the spectral input.
 
 ## Additional current-result corrections
 
-Version 4 also makes the following changes required by post-audit results:
+Version 5 includes the following changes required by the current results:
 
 1. Records the A49 no-go for the uncompleted three-summand finite triple.
 2. Uses the selected additional neutral complex summand from A50.
@@ -102,6 +111,14 @@ Version 4 also makes the following changes required by post-audit results:
 7. Records the exact scaling degeneracy of the cutoff scale and moments.
 8. Replaces FRG/pAQFT/QG "matching" by a typed compatibility statement.
 9. Adds explicit curated result identifiers and repository provenance.
+10. Derives the exact one-loop coefficient vector from the selected
+    representation and gauge-fixed complex.
+11. Records all ten exact finite matter, scalar, and gauge/ghost spectrum
+    rows.
+12. Retires the failed SU2 raw-Fourier and repaired Heisenberg color-source
+    routes rather than treating them as physical thresholds.
+13. Records the exact universal-shape limitation: the normalized finite rows
+    cannot supply nonuniversal gauge thresholds.
 
 ## Retained theorem content
 
@@ -125,9 +142,20 @@ The successor does not claim:
 - an MTT derivation of Lorentzian spacetime or Wick rotation;
 - source-derived finite Dirac/Yukawa values;
 - source-derived overlap kinetic metric or proper-time measure;
+- a sector-dependent physical continuum threshold operator;
 - unique spectral cutoff moments;
 - no-knob Standard Model values; or
 - a renormalized nonperturbative quantum field theory.
 
 These boundaries agree with the current B.GEO.01, B.OP.01, B.ACTION.01,
 B.QFT.02, B.SM.01, and B.SM.02 frontier.
+
+## Release Requirements
+
+- The abstract contains scientific content only.
+- The unnumbered Version 5 Revision Note contains Supersedes, Reason,
+  Resolution, Retained result, and Remaining boundary.
+- The A57--A62 results are summarized and attributed rather than duplicated
+  as new theorem bodies.
+- The TeX, PDF, Markdown transcription, metadata, and source-tree hashes must
+  be refreshed and visually checked before the release is frozen.

@@ -9,20 +9,36 @@ abstract: |
   We also separate existence, local rigidity, uniqueness within a declared candidate class, physical selection, and empirical adequacy. The current selected q=79 arithmetic theorem supplies an exact finite branch, but the physical visible-hidden Hull–Strominger endpoints, the remaining seven rows of the twelve-row worldsheet contract, and an all-scale nonperturbative completion remain open. Program B5 therefore provides a rigorous language and a finite indecomposability test for unified encodings. It does not derive string theory, a numerical critical dimension, or the physical selection of a saturated universe.
 author:
 - Peter Nero
-current_version: v2
-date: July 2026
-generated_from_main_tex_sha256: a9a278bc71e7bb6d96a2dbb99e4a890c9a06a421947262fd9fd2471af9a0fb3a
+current_version: v3
+date: July 2026 Version 3
+generated_from_main_tex_sha256: d43cb53d7bd28ab8a9a95cae73f4233d45abcb110bff84ff56c81a22c55e4ebe
 paper_id: the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f
 release_state: zenodo_released
-released_version: v1.0
+released_version: v3
 title: |
-  The Modal Triplet Theory Program B5:  
-  Relative Saturation, Conditional Extended Carriers,  
+  The Modal Triplet Theory Program B5:
+  Relative Saturation, Conditional Extended Carriers,
   and String-Like Realizations
-zenodo_doi: 10.5281/zenodo.18355130
-zenodo_record_id: 18355130
-zenodo_url: "https://zenodo.org/records/18355130"
+zenodo_doi: 10.5281/zenodo.21655386
+zenodo_record_id: 21655386
+zenodo_url: "https://zenodo.org/records/21655386"
 ---
+
+# Revision note for version 3
+
+<div class="description">
+
+Version 2 of Program B5.
+
+Version 2 established the correct relative saturation theorem and countermodels, but the incidence graph, local-rigidity gate, and separation between saturation and physical selection needed a more explanatory standalone presentation.
+
+Version 3 adds the wiring-diagram interpretation, a guided dependency map, and explicit examples of what connected incidence does and does not prove. It keeps the q79 result at its declared arithmetic tier, preserves theorem ownership, and separates publication description from revision history and computational provenance.
+
+The relative saturation contract, derivative-incidence criterion, countermodels, and conditional status of extended carriers, dimensions, anomalies, and dualities are unchanged.
+
+An exhaustive realization category, physical string background, completed q79 worldsheet, nonperturbative completion, and physical selection theorem remain open.
+
+</div>
 
 # Revision note for version 2
 
@@ -39,6 +55,36 @@ Combining several constraints in one source can make a model much less decomposa
 No exhaustive candidate category, selected physical string background, complete q=79 worldsheet theory, all-scale quantum completion, or theorem selecting one saturated realization is established here.
 
 </div>
+
+# How to Read Program B5
+
+Program B5 asks whether a successful collection of constraints is genuinely one coupled construction or merely several independent theories written next to one another. The paper calls the first situation *saturated*, but only relative to a declared contract. This qualification is essential: changing which variables are primitive, which constraints count, or which factorizations are allowed can change the answer.
+
+## The central picture: a wiring diagram
+
+At a solution, linearize every declared constraint. Place the variable blocks on one side of a bipartite graph and the constraint blocks on the other. Draw an edge whenever changing a variable block changes a constraint block to first order. If this graph falls into two pieces, the linearized problem also falls into two independent subsystems. If it is connected, every variable block is tied into one first-order network.
+
+This wiring picture gives the paper’s exact finite test. It does not say that the full nonlinear theory cannot be separated by a clever change of variables, nor that the solution is globally unique. Those stronger claims need their own certificates. The injective-derivative condition supplies one additional fact: the same solution is locally isolated.
+
+## Five questions kept separate
+
+The argument proceeds through five questions.
+
+1.  Is the candidate complete with respect to the displayed constraint inventory?
+
+2.  Is the displayed system indecomposable with respect to the allowed factorizations?
+
+3.  Does a separate carrier requirement force positive dimension or a worldsheet-like sweep?
+
+4.  Do explicit anomaly, criticality, and duality data make that sweep a string-like physical realization?
+
+5.  Is one realization selected by a source law and empirically adequate?
+
+The derivative-incidence theorem answers the second question locally. The loop theorem answers a narrow version of the third. The anomaly, duality, and string packages state what must be added for the fourth. Nothing in the word “saturation” answers the fifth.
+
+## Suggested reading routes
+
+Readers interested in the exact mathematical contribution can move from the contract definitions to the derivative-incidence theorem and its finite example. Readers interested in the string interpretation should then read the countermodels before the worldsheet, anomaly, and duality sections; those countermodels prevent conditional realization mechanisms from being mistaken for consequences of saturation. The final theorem ledger and reusable audit collect the result and every remaining boundary.
 
 # Scope and Dependencies
 
@@ -269,6 +315,8 @@ Its incidence graph is a six-cycle, hence connected, and $`L`$ is invertible. Th
 
 This example is deliberately point-valued. It contains no extended carrier, worldsheet, critical dimension, anomaly polynomial, or duality. It proves that even the conjunction of completeness, rigidity, and first-order indecomposability does not imply any of those additional structures.
 
+The matrix also makes the two tests visibly different. Its nonzero pattern connects all six graph vertices, which certifies coupling. Its determinant certifies local isolation. A connected singular matrix could pass the first test and fail the second, while an invertible block-diagonal matrix could be locally isolated yet split into independent sectors. Saturation and rigidity therefore measure different properties.
+
 # What Saturation Does Not Force
 
 ## Pointlike data remain possible
@@ -482,6 +530,8 @@ String-like frameworks are natural *examples* to test against a rich saturation 
 ```
 after the map and indecomposability test are proved. The reverse implication is invalid.
 
+This direction preserves the useful connection to string theory without turning it into a definition. Established string constructions provide rich packages that may satisfy an MTT contract. The MTT contract can then compare which rows are shared, which are stronger, and which remain open. It cannot replace the worldsheet action, quantum measure, anomaly calculation, or duality map by declaring the finished package saturated.
+
 # Existence Is Not Physical Selection
 
 ## Four different claims
@@ -633,3 +683,7 @@ T. H. Buscher, Path-integral derivation of quantum duality in nonlinear sigma-
 J. Polchinski, *String Theory, Volume I: An Introduction to the Bosonic String*, Cambridge University Press, 1998.
 
 </div>
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

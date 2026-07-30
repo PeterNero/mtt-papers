@@ -10,7 +10,7 @@
   "latest_zenodo_release": null,
   "main_tex_sha256": "6a2e297137a1f3f58ead9ac5a392d7fc71fe486f16a0773160b38c58b71b6494",
   "paper_id": "canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62",
-  "paper_md_sha256": "ba035de2e9acea9947b04b0bd5375ec45ce13c25905dd50ae6799f1fd8e6d5c0",
+  "paper_md_sha256": "9418456d17acc2ddc18f016c5423d6b2cc41c3b986cd8d3223dca864e486108c",
   "release_state": "not_matched_to_zenodo",
   "result_refs": [],
   "revision": {
@@ -29,15 +29,15 @@
       "sha256": "6a2e297137a1f3f58ead9ac5a392d7fc71fe486f16a0773160b38c58b71b6494"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Canonical_Coherent_Kernels_from_MTT_Fixed_Point_Data"
   },
-  "source_tree_sha256": "2db854561a4ce1fb17991d51f36e8d032d6d6aa91df1ece2b47a346cb72ca6df",
+  "source_tree_sha256": "71ad6070410390a627ec298ce892933af14de040a0a17ecfbbffa97769f378fb",
   "title": "Canonical Coherent Kernels from MTT Fixed-Point Data From the Delta Dictionary to Execution-Level Corrections",
   "version_relation": "unknown",
   "zenodo_releases": []

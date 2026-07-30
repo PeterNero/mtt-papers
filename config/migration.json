@@ -1,6 +1,6 @@
 {
   "schema": "mtt.paper-migration-config.v1",
-  "expected_canonical_papers": 139,
+  "expected_canonical_papers": 140,
   "native_projects": [
     {
       "abstract": "We give a typed, conditional formulation of Modal Triplet Theory as a theory of reduced description. A representative section, an exact upper decoder, autonomous reduced evolution, and merger of effective states solve four different mathematical problems; none follows merely from noninjectivity of a projection. We prove the factor-through criterion for autonomous descent, a finite-diameter obstruction for a genuinely contractive reduced self-map, exact basin-local fixed-point results, and controlled approximate-orbit estimates. Admissibility boundaries are defined by explicit margins and section or projector conditioning rather than by assuming the desired obstruction. The encoding atlas and its relations are consequently local and conditional. Probability, irreversibility, physical time, and any concrete physical realization require their own measure, evolution, and source hypotheses.",
@@ -124,7 +124,7 @@
       "authors": [
         "Peter Nero"
       ],
-      "current_version": "v2",
+      "current_version": "v3",
       "date": "July 2026",
       "paper_id": "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
       "path": "papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
@@ -141,7 +141,7 @@
       "authors": [
         "Peter Nero"
       ],
-      "current_version": "v2",
+      "current_version": "v3",
       "date": "July 2026",
       "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
       "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
@@ -158,7 +158,7 @@
       "authors": [
         "Peter Nero"
       ],
-      "current_version": "v2",
+      "current_version": "v3",
       "date": "July 2026",
       "paper_id": "the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707",
       "path": "papers/the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707",
@@ -168,11 +168,25 @@
       "title": "The Modal Triplet Theory Program D1: A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract"
     },
     {
+      "abstract": "This paper re-evaluates the proposal that the cosmic matter--antimatter asymmetry is a discrete orientation selection in Modal Triplet Theory (MTT). The current finite MTT construction supplies an explicit particle--antiparticle carrier and exact representation-theoretic consistency checks. That is substantial structural progress, but it is not a source theorem for a nonzero baryon abundance. We prove a finite carrier non-selection theorem: the same conjugation-symmetric particle--antiparticle space and the same baryon-sign observable admit a charge-conjugation-symmetric state with zero asymmetry and branch states with either sign of asymmetry. Carrier geometry, anomaly cancellation, and an available CP-odd phase therefore do not select the state or its population weights. We distinguish two lawful continuations. A branch-state route may postulate or derive a selected asymmetric upper state and then prove its descent. A dynamical route must derive baryon- or lepton-number-changing interactions, CP-odd source terms, nonequilibrium transport or an explicitly declared alternative, and washout control from the selected action. Discrete orientation remains a useful organizing hypothesis, but the present result is a carrier theorem plus a completion and falsification contract. It does not derive the observed baryon-to-entropy ratio.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "the-modal-triplet-theory-program-d2-matter-antimatter-a-ba5f86ec",
+      "path": "papers/the-modal-triplet-theory-program-d2-matter-antimatter-a-ba5f86ec",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "Zenodo-only PDF record 18380140",
+      "superseded_project": "https://zenodo.org/records/18380140",
+      "title": "The Modal Triplet Theory Program D2: Matter--Antimatter Orientation and the Baryogenesis Source Contract"
+    },
+    {
       "abstract": "This paper is the organizational roadmap for Modal Triplet Theory (MTT). It does not add a new physical derivation. It fixes the types, dependency order, and proof tiers needed to read the corpus without promoting analogies or target-compatible reconstructions into source theorems. A projection, a representative section, an exact upper decoder, autonomous reduced evolution, and effective-state merger solve different mathematical problems. Ordinary noninjectivity does not remove a right inverse; autonomous descent instead requires preservation of projection fibers. For physical ten-dimensional realizations we adopt the canonical convention pi:M10 -> Y4 with six-dimensional fiber X6. The modal triplet is represented by typed vertical bundles, operators, and projectors. It is not three extra coordinate factors. A compact shared circle is line-bundle phase or holonomy data and is not Lorentzian time or a seventh internal coordinate. Circle-Lens-Nil is retained as a useful obstruction taxonomy, not an exhaustive theorem forcing unique gravity, gauge, and quantum responses. We prove the corresponding conditional 4+6 realization statement and state the exact limits of that result. The roadmap classifies relations to quantum mechanics, quantum field theory, general relativity, the Standard Model, strings, quantum gravity, and AQFT by what is typed, reconstructed, selected, calibrated, or still open. Failure of one controlled chart means that chart has lost its certified domain; it does not imply that every mathematical or physical description has ceased to exist. Paper-level status is a dated snapshot, while the current A/B ledger and selected source hashes remain authoritative.",
       "authors": [
         "Peter Nero"
       ],
-      "current_version": "v12",
+      "current_version": "v13",
       "date": "July 2026",
       "paper_id": "modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed",
       "path": "papers/modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed",
@@ -186,7 +200,7 @@
       "authors": [
         "Peter Nero"
       ],
-      "current_version": "v4",
+      "current_version": "v5",
       "date": "July 2026",
       "paper_id": "fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534",
       "path": "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534",
@@ -200,7 +214,7 @@
       "authors": [
         "Peter Nero"
       ],
-      "current_version": "v5",
+      "current_version": "v6",
       "date": "July 2026",
       "paper_id": "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce",
       "path": "papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce",
@@ -214,7 +228,7 @@
       "authors": [
         "Peter Nero"
       ],
-      "current_version": "v5",
+      "current_version": "v6",
       "date": "July 2026",
       "paper_id": "fixed-points-vi-formal-synthesis-and-physical-interpretations",
       "path": "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations",
@@ -312,7 +326,7 @@
       "authors": [
         "Peter Nero"
       ],
-      "current_version": "v2",
+      "current_version": "v3",
       "date": "July 2026",
       "paper_id": "temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb",
       "path": "papers/temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb",
@@ -488,6 +502,7 @@
         "native_gauge_group",
         "neutral_summand_hypercharge",
         "physical_df_96",
+        "su3_finite_gauge_spectrum",
         "typed_family_representation"
       ]
     },

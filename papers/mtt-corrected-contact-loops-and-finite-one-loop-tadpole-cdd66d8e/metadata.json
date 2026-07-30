@@ -29,15 +29,15 @@
       "sha256": "170d993b02db870ec0924d3896e973955c084b7f8f18f167cf3d23d156b82a44"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/MTT_Corrected_Contact_Loops_and_Finite_One_Loop_Tadpoles"
   },
-  "source_tree_sha256": "3ccae352660baec6ea9000ba504ad21a55314bec779eb076ed81a62c8d9ce35c",
+  "source_tree_sha256": "b23484402b562c7aa6538c8a7ad7604e71832ca84c04e4b91410641c5a823db7",
   "title": "MTT-Corrected Contact Loops and Finite One-Loop Tadpoles Proper-Time Coherent Kernels, UV Softening, and the Local-Limit Counterterm",
   "version_relation": "unknown",
   "zenodo_releases": []

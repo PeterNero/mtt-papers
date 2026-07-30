@@ -9,65 +9,90 @@
   "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18255510",
-    "created": "2026-01-15T10:40:40.064824+00:00",
+    "created": "2026-07-29T08:50:06.288419+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18255511",
+    "doi": "10.5281/zenodo.21652662",
     "files": [
       {
-        "checksum": "md5:882cef2ff140d6f60c217bc2c59c6bc7",
-        "content_url": "https://zenodo.org/api/records/18255511/files/Closure_and_Inevitability_in_Modal_Triplet_Theory%20(1).pdf/content",
-        "key": "Closure_and_Inevitability_in_Modal_Triplet_Theory (1).pdf",
-        "size": 219469
+        "checksum": "md5:086b58d859d7bbc5c4ba7614975271f8",
+        "content_url": "https://zenodo.org/api/records/21652662/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 312372
       }
     ],
-    "id": "18255511",
-    "match_kind": "title_or_file",
+    "id": "21652662",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18255511",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21652662",
     "resource_type": "publication",
-    "title": "Closure and Inevitability in Modal Triplet Theory",
-    "updated": "2026-01-15T10:40:40.705425+00:00",
-    "version": "v1.0"
+    "title": "Conditional Closure Relations in Modal Triplet Theory",
+    "updated": "2026-07-29T08:50:06.597109+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "eeaf6c8d03c4400bcf85e69e749229d06769cbbbf0fd3dac515ef6680d2b6ec4",
+  "main_tex_sha256": "22d40e2308d937ec0e4de749ec4e49ddd6c287908cf5e929b6fe0901f2f82776",
   "paper_id": "closure-and-inevitability-in-modal-triplet-theory",
-  "paper_md_sha256": "7b84b11fe269f6e5b4d0ce5923f18e9d262618e171ec72f9b755542c7eea55e7",
+  "paper_md_sha256": "35b3f69f8ad9b0bf3121f75a0780f96a03436be5c31f8e67d5f365c2efaf4408",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/closure-and-inevitability-in-modal-triplet-theory/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "9ee1867308dd650db1ecaac429f9c9cac2291dfec496abdf63317d12203e95ba",
+    "revision_evidence_sha256": "557cf55155a29a022ec9a915f2c788bd9aff63f86d8d227feebfe277cb5c6cff",
     "selected_revision": true,
     "superseded_source_path": "2 Meta & Diagnosis & Universality/_work/Closure_and_Inevitability_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 18492,
+      "bytes": 19901,
       "path": "main.tex",
-      "sha256": "eeaf6c8d03c4400bcf85e69e749229d06769cbbbf0fd3dac515ef6680d2b6ec4"
+      "sha256": "22d40e2308d937ec0e4de749ec4e49ddd6c287908cf5e929b6fe0901f2f82776"
     },
     {
-      "bytes": 6539,
+      "bytes": 6757,
       "path": "REVISION_AUDIT.md",
-      "sha256": "9ee1867308dd650db1ecaac429f9c9cac2291dfec496abdf63317d12203e95ba"
+      "sha256": "557cf55155a29a022ec9a915f2c788bd9aff63f86d8d227feebfe277cb5c6cff"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Closure_and_Inevitability_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "1645fd7bb63dce868251e2451158327367da6f8d8115cb0bec300694415d1b4b",
+  "source_tree_sha256": "a1b1d1629004e16e0d5efcc6ba6f570ca0bbe36c0ae0057ab8ebd7b2624150b7",
   "title": "Conditional Closure Relations in Modal Triplet Theory",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255510",
+      "created": "2026-07-29T08:50:06.288419+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652662",
+      "files": [
+        {
+          "checksum": "md5:086b58d859d7bbc5c4ba7614975271f8",
+          "content_url": "https://zenodo.org/api/records/21652662/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 312372
+        }
+      ],
+      "id": "21652662",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652662",
+      "resource_type": "publication",
+      "title": "Conditional Closure Relations in Modal Triplet Theory",
+      "updated": "2026-07-29T08:50:06.597109+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18255510",
       "created": "2026-01-15T10:40:40.064824+00:00",

@@ -48,15 +48,15 @@
       "sha256": "8bb44638d3e5c58da9ec842e549ea915e5d26760cb26e0502efebdf6639484d9"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Cosmology_as_Global_Coherence_Capacity_Evolution_v2"
   },
-  "source_tree_sha256": "8f7b6bd2382cbad0c121e8b4f811204ae33bdd2bc99c7ac5dae5cb4ba5ebb68d",
+  "source_tree_sha256": "04eab450202fdd8eb57c0530767ace15b5bb980338eeec79a0e0c1e7c733b723",
   "title": "Cosmology as Global Coherence Capacity Evolution",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

@@ -275,3 +275,17 @@ All five ProtoSpinor/World-in-World successors now contain the standardized
 five-field `Revision note for this edition` after the abstract. The global
 coverage and automated check are documented in
 `18 Theta-Closure & Execution Program/CURRENT_VERSION_DELTA_NOTES_AUDIT_2026-07-15.md`.
+
+## World-in-World expository revision, 2026-07-28
+
+The local decomposition theorems and globalization status are unchanged. A
+new guide relates the comparison field to the familiar deformation-gradient
+picture: a `3x3` fiber map on a three-dimensional carrier has nine components
+without creating nine coordinate dimensions.
+
+An explicit symmetric matrix is decomposed into scalar, traceless-diagonal,
+and off-diagonal pieces, making the flag-selected `1+2+3` roles concrete.
+Additional discussion explains that `4+6` is a compatibility test for a
+proposed map rather than construction of spacetime, and lists independent
+ways the q79 globalization conjecture can fail without affecting the local
+linear algebra. The full revised PDF has been compiled and visually inspected.

@@ -7,6 +7,11 @@ from pathlib import Path
 import re
 from typing import Any
 
+from audit_expository_readability import audit as audit_expository_readability
+from verify_book_interpretive_role import verify as verify_book_interpretive_role
+from verify_paper_release_requirements import verify_local as verify_paper_release_requirements
+from verify_theorem_ownership import verify as verify_theorem_ownership
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -35,14 +40,33 @@ def canonical_hash(value: Any) -> str:
 
 
 def verify() -> dict[str, int]:
+    book = verify_book_interpretive_role()
+    release_requirements = verify_paper_release_requirements()
+    readability_rows, forbidden_boilerplate = audit_expository_readability()
+    assert not forbidden_boilerplate, forbidden_boilerplate
+    theorem_results, global_duplicate_groups = verify_theorem_ownership()
     config = load_json(ROOT / "config" / "migration.json")
     catalog = load_json(ROOT / "catalog" / "papers.json")
     zenodo = load_json(ROOT / "catalog" / "zenodo-records.json")
     unmatched = load_json(ROOT / "catalog" / "unmatched-zenodo-records.json")
     report = load_json(ROOT / "catalog" / "migration-report.json")
+    review_decisions = load_json(
+        ROOT / "catalog" / "expository-review-decisions.json"
+    )
     papers = catalog.get("papers") or []
     expected = int(config["expected_canonical_papers"])
     assert len(papers) == expected, (len(papers), expected)
+    assert len(readability_rows) == expected, (
+        len(readability_rows),
+        expected,
+    )
+    assert (ROOT / "EXPOSITORY_READABILITY_POLICY.md").is_file()
+    assert (ROOT / "PAPER_RELEASE_REQUIREMENTS.md").is_file()
+    readability_report = load_json(
+        ROOT / "catalog" / "expository-readability.json"
+    )
+    assert readability_report["papers"] == expected
+    assert not readability_report["forbidden_boilerplate_hits"]
     replacement_result_refs = {
         str(row["selected_project"]): sorted(
             {str(item) for item in row.get("result_refs") or [] if str(item)}
@@ -59,7 +83,7 @@ def verify() -> dict[str, int]:
     assert {path.name for path in directories} == set(identifiers)
 
     matched_record_ids: list[str] = []
-    selected_revisions = 0
+    selected_revision_ids: set[str] = set()
     markdown_bytes = 0
     tex_files = 0
     for paper in papers:
@@ -103,7 +127,7 @@ def verify() -> dict[str, int]:
 
         revision = metadata["revision"]
         if revision["selected_revision"]:
-            selected_revisions += 1
+            selected_revision_ids.add(paper_id)
             audit = directory / "REVISION_AUDIT.md"
             assert audit.is_file(), audit
             assert revision["revision_evidence_sha256"] == sha256_file(audit)
@@ -137,18 +161,17 @@ def verify() -> dict[str, int]:
         for row in (config.get("native_projects") or [])
         if row.get("superseded_project")
     ]
-    native_superseded = {
-        str(row["superseded_project"]) for row in native_successors
+    release_ready_ids = {
+        str(paper_id)
+        for paper_id, decision in (
+            review_decisions.get("papers") or {}
+        ).items()
+        if str((decision or {}).get("status") or "")
+        in {"reviewed", "reference_ready"}
     }
-    terminal_replacements = [
-        row
-        for row in config["replacements"]
-        if str(row["selected_project"]) not in native_superseded
-    ]
-    expected_selected_revisions = len(terminal_replacements) + len(native_successors)
-    assert selected_revisions == expected_selected_revisions, (
-        selected_revisions,
-        expected_selected_revisions,
+    assert selected_revision_ids == release_ready_ids, (
+        sorted(selected_revision_ids - release_ready_ids),
+        sorted(release_ready_ids - selected_revision_ids),
     )
     assert len(matched_record_ids) == len(set(matched_record_ids))
     zenodo_ids = {str(record["id"]) for record in zenodo["records"]}
@@ -174,11 +197,22 @@ def verify() -> dict[str, int]:
 
     return {
         "papers": expected,
-        "selected_revisions": selected_revisions,
+        "selected_revisions": len(selected_revision_ids),
         "tex_files": tex_files,
         "markdown_bytes": markdown_bytes,
         "zenodo_matched": len(matched_record_ids),
         "zenodo_unmatched": len(unmatched_ids),
+        "theorem_results_in_release_scope": theorem_results,
+        "global_duplicate_theorem_groups": global_duplicate_groups,
+        "book_words": book["words"],
+        "book_chapters": book["chapters"],
+        "book_display_math": book["display_math"],
+        "papers_in_expository_audit": len(readability_rows),
+        "forbidden_series_boilerplate_hits": len(forbidden_boilerplate),
+        "release_ready_papers": release_requirements["ready_papers"],
+        "managed_evidence_blocks": release_requirements[
+            "managed_evidence_blocks"
+        ],
     }
 
 

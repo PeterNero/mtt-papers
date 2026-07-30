@@ -1,5 +1,5 @@
 {
-  "abstract": "We determine exactly what follows from circle-type return memory in a typed encoding atlas. A composable family of invertible comparison maps defines a transport functor and a holonomy group. A carrier value descends to a path-independent global value precisely when it is fixed by that holonomy group. Nontrivial holonomy therefore need not be an inconsistency: one may retain the transport data, restrict to the fixed sector, or pass to a declared quotient. It obstructs only an endpoint-only trivialization. Under standard smoothness and locality hypotheses, transport on a supplied principal bundle is represented by a connection, but the circle profile alone selects neither the bundle, structure group, representation, nor connection. Flat connections can have nontrivial global holonomy, so return memory does not imply curvature. Gravity is a canonical realization only after additional physical data are supplied: a smooth base, a Lorentzian metric or equivalent physical principal symbol, and the tangent, frame, coframe, or spin carrier. The metric then has a unique torsion-free compatible Levi-Civita connection. Causal cones come from the principal symbol of a selected local hyperbolic equation, and Einstein dynamics follows only after an Einstein-Hilbert or equivalent local action is selected. Thus Program B1 establishes a precise loop-transport bridge and a conditional gravity realization, not the inevitability or uniqueness of gravity from obstruction taxonomy alone.",
+  "abstract": "We determine exactly what follows from circle-type return memory in a typed encoding atlas. A composable family of invertible comparison maps defines a transport functor and a holonomy group. A carrier value descends to a path-independent global value precisely when it is fixed by that holonomy group. Nontrivial holonomy therefore need not be an inconsistency: one may retain the transport data, restrict to the fixed sector, or pass to a declared quotient. It obstructs only an endpoint-only trivialization. Under standard smoothness and locality hypotheses, transport on a supplied principal bundle is represented by a connection, but the circle profile alone selects neither the bundle, structure group, representation, nor connection. Flat connections can have nontrivial global holonomy, so return memory does not imply curvature. Gravity is a canonical realization only after additional physical data are supplied: a smooth base, a Lorentzian metric or equivalent physical principal symbol, and the tangent, frame, coframe, or spin carrier. The metric then has a unique torsion-free compatible Levi\u2013Civita connection. Causal cones come from the principal symbol of a selected local hyperbolic equation, and Einstein dynamics follows only after an Einstein\u2013Hilbert or equivalent local action is selected. Thus Program B1 establishes a precise loop-transport bridge and a conditional gravity realization, not the inevitability or uniqueness of gravity from obstruction taxonomy alone.",
   "authors": [
     "Peter Nero"
   ],
@@ -9,37 +9,37 @@
   "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18355019",
-    "created": "2026-01-23T20:03:27.705835+00:00",
+    "created": "2026-07-29T08:51:59.312593+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18355020",
+    "doi": "10.5281/zenodo.21652643",
     "files": [
       {
-        "checksum": "md5:064a8c0651cc689c08afcd807ed27958",
-        "content_url": "https://zenodo.org/api/records/18355020/files/The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding%20(1).pdf/content",
-        "key": "The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding (1).pdf",
-        "size": 241059
+        "checksum": "md5:88db7a53210f7aa35846eaade5e3f08b",
+        "content_url": "https://zenodo.org/api/records/21652643/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 401092
       }
     ],
-    "id": "18355020",
-    "match_kind": "title_or_file",
+    "id": "21652643",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-23",
-    "record_url": "https://zenodo.org/records/18355020",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21652643",
     "resource_type": "publication",
-    "title": "The Modal Triplet Theory Program B1: Gravity as Kinematic Consistency Encoding",
-    "updated": "2026-01-23T20:03:28.150092+00:00",
-    "version": "v1.0"
+    "title": "The Modal Triplet Theory Program B1: Loop-Transport Consistency and the Conditional Gravity Realization",
+    "updated": "2026-07-29T08:51:59.696174+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "b8c33c9d49d333c32693bf87e583adf8418d6e627c7ecf533ed7c3566354d81c",
+  "main_tex_sha256": "defd7d1f2edde7fd1d7b2c8b82cd02b54c3804c90c5f2a5320e783f4e00f1bfa",
   "paper_id": "the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38",
-  "paper_md_sha256": "b99245ea84bd2795bc6874ad1ca244778cd533895293be5262ba6db2624c4b3f",
+  "paper_md_sha256": "025d6dd1c1a9fb6640b5ce40b80a68a9ef9b667d37f30e2bcb2742f83fe94e72",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "18a9f15bd19d31ba66406149d7ac6e3c1fcee69a73bc18b13b0c5a0053a4599f",
+    "revision_evidence_sha256": "17d413fb5c76545e463fea0b164396126a0ccfe18a7c865a6fd7327d311c2f7a",
     "selected_revision": true,
     "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding"
   },
@@ -51,28 +51,53 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 30744,
+      "bytes": 34450,
       "path": "main.tex",
-      "sha256": "b8c33c9d49d333c32693bf87e583adf8418d6e627c7ecf533ed7c3566354d81c"
+      "sha256": "defd7d1f2edde7fd1d7b2c8b82cd02b54c3804c90c5f2a5320e783f4e00f1bfa"
     },
     {
-      "bytes": 6271,
+      "bytes": 6972,
       "path": "REVISION_AUDIT.md",
-      "sha256": "18a9f15bd19d31ba66406149d7ac6e3c1fcee69a73bc18b13b0c5a0053a4599f"
+      "sha256": "17d413fb5c76545e463fea0b164396126a0ccfe18a7c865a6fd7327d311c2f7a"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B1__Gravity_as_Kinematic_Consistency_Encoding"
   },
-  "source_tree_sha256": "51dd65ab12e84ef06a90230611397a1939fadc00c89b0bdf056f474b722eb296",
+  "source_tree_sha256": "96da92fe17af312a1a2e5baed5db8dfeee24880848b24d3601dbd8d78e6b73b1",
   "title": "The Modal Triplet Theory Program B1: Loop-Transport Consistency and the Conditional Gravity Realization",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18355019",
+      "created": "2026-07-29T08:51:59.312593+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652643",
+      "files": [
+        {
+          "checksum": "md5:88db7a53210f7aa35846eaade5e3f08b",
+          "content_url": "https://zenodo.org/api/records/21652643/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 401092
+        }
+      ],
+      "id": "21652643",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652643",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B1: Loop-Transport Consistency and the Conditional Gravity Realization",
+      "updated": "2026-07-29T08:51:59.696174+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18355019",
       "created": "2026-01-23T20:03:27.705835+00:00",

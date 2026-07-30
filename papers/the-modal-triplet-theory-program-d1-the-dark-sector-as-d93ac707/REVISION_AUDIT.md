@@ -1,4 +1,16 @@
-# Program D1 revision audit
+# Program D1 v3 Release Audit
+
+## v3 publication delta
+
+- **Supersedes:** v2.
+- **Reason:** the difference between an encoding-availability mask and a
+  covariant gravitational source required a concrete standalone example.
+- **Resolution:** add the mask-versus-source discussion and an explicitly
+  non-selected scalar toy model.
+- **Retained:** the v2 nonselection theorem and observational completion
+  contract.
+- **Remaining:** no dark-sector source, cosmology, perturbations, or fit is
+  selected.
 
 ## Selected revision
 
@@ -170,3 +182,18 @@ motivation but reverses the former theorem status of the dark-matter and
 dark-energy identifications. The new title, abstract, non-selection theorem,
 covariant completion contract, observational gates, and explicit readiness
 tier should be published as a new major version on Zenodo.
+
+## Expository revision, 2026-07-28
+
+The theorem inventory and DS0--DS5 status are unchanged. A new paper-specific
+guide explains an availability profile as a descriptive mask rather than a
+stress-energy source. A deliberately non-selected scalar toy action shows
+concretely how freely chosen kinetic and potential terms can produce different
+pressures, stability properties, and expansion histories from the same verbal
+availability idea.
+
+The non-selection theorem is now interpreted as a constructive demonstration
+of what a future source theorem must exclude. Route A and Route B are also
+explained as physically different choices, not alternate notation for one
+model. The toy action is explicitly excluded from the paper's MTT claims, and
+no open cosmological tier or observational result was promoted.

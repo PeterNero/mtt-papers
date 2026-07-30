@@ -83,6 +83,53 @@ fixing, Standard Model representation content, coupling constants, anomaly
 cancellation, or a unique Yang--Mills action from the lens profile.
 \end{description}
 
+\section*{How to read Program B2}
+\addcontentsline{toc}{section}{How to read Program B2}
+B2 begins with redundancy and asks how much extra structure is needed before
+that redundancy becomes gauge theory.  The answer proceeds through a declared
+group action, its orbit quotient, a principal bundle, a connection, a
+field-space gauge-fixing problem, and finally a selected local action.
+
+\paragraph{The central picture in plain language.}
+A gauge orbit is a family of different mathematical representatives assigned
+the same declared physical content.  An invariant quantity has the same value
+on every member of that orbit, so it factors through the orbit space.  This
+universal property organizes redundancy.  It does not tell us which group
+acts, which orbits are physical, or which invariant quantities form a complete
+observable set.
+
+\paragraph{Two different section problems.}
+A section of $P\to Y$ chooses one point in each principal-bundle fiber over
+spacetime and exists globally exactly when that bundle is trivial.  A section
+of $q:\Conn\to\Conn/\Gg$ chooses one connection representative from each
+gauge orbit in a declared field-space domain.  A bundle can be globally
+well-defined without the first section, and local gauge slices can exist
+without gluing to the second.  Conflating these maps turns ordinary bundle
+topology into a false gauge-fixing conclusion.
+
+\paragraph{A simple abelian case.}
+For a $U(1)$ potential, local representatives related by
+$A\mapsto A+d\chi$ lie on one gauge orbit after the allowed boundary behavior
+of $\chi$ is fixed.  Curvature $F=dA$ is invariant under this transformation.
+This illustrates orbit redundancy and an invariant diagnostic, but it does
+not select $U(1)$, the base manifold, a coupling, or the Maxwell/Yang--Mills
+action.
+
+\paragraph{Argument map.}
+Sections~1--2 define the group action, quotient, and invariant
+factorization.  Section~3 separates principal-bundle topology from
+field-space gauge fixing.  Sections~4--5 introduce connections, local
+potentials, stabilizers, slices, and genuine global obstructions.  Section~6
+derives Yang--Mills equations only from the supplied geometric and action
+data.  Sections~7--9 separate gravity, quantization, and Standard Model claims
+and state the exact remaining source problem.
+
+\paragraph{Scope boundary.}
+Lens-type nonfaithfulness is compatible with many groups, bundles, actions,
+and physical interpretations.  B2 provides the typed gauge framework and a
+conditional Yang--Mills realization.  It does not select the Standard Model
+gauge group, matter representations, anomalies, couplings, or quantization.
+
 \tableofcontents
 \newpage
 
@@ -702,5 +749,10 @@ C.~N.~Yang and R.~L.~Mills,
 \emph{Physical Review} 96 (1954), 191--195.
 
 \end{thebibliography}
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \end{document}

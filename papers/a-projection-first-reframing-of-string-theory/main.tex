@@ -1,572 +1,365 @@
-% !TEX program = pdflatex
 \documentclass[11pt]{article}
-\usepackage{series}
 
-\title{A Projection-First Reframing of String Theory}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{enumitem}
+\usepackage{booktabs,tabularx,longtable}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\title{A Projection-First Reframing of String Theory:\\
+\large Conditional Encodings, Worldsheet Gates, and the q79 Boundary}
 \author{Peter Nero}
-\date{January 2026}
+\date{July 2026\\Version 2}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-String theory is widely regarded as the most successful ultraviolet framework for quantum
-gravity, yet its conceptual status remains unsettled. Are strings and branes fundamental
-constituents of nature, or are they effective devices whose success reflects a deeper structural
-constraint? This paper develops a projection-first reframing of string theory in which the
-distinguishing features of the subject---extended excitations, closed-string universality of
-gravity, boundary-localized gauge sectors, holography, modular finiteness, and the apparent
-``landscape''---are interpreted as consequences of finite admissibility of physical description
-rather than as evidence for a literal string ontology.
-
-The reframing adopts a conservative stance. No new dynamical principles are introduced, no
-modification of worldsheet or target-space equations is proposed, and no claims are made about
-the ultimate microscopic degrees of freedom beyond effective description. Instead, the paper
-identifies which structural conditions any stable, local, predictive description must satisfy and
-shows how string-theoretic constructions can be organized as admissible encodings optimized for
-maintaining those conditions at high energy. In this view, quantization is not a universal
-procedure but a representational strategy valid only within admissible regimes; the special role
-of closed-string modes reflects the global bookkeeping required to maintain consistency of
-projected descriptions; D-branes are interpreted as admissibility boundaries that localize certain
-constraint-carrying modes; and holography is understood as the survival of description on
-lower-dimensional loci when bulk encoding becomes inadmissible. The ``landscape'' is
-reinterpreted as a catalogue of mathematically consistent encodings, most of which fail
-admissibility and therefore do not correspond to physically realizable descriptions.
-
-The goal is explanatory rather than competitive: to provide a vocabulary in which string
-theory's characteristic successes and limitations are natural consequences of projection and
-finite admissibility, and to clarify how string-theoretic language interfaces with other
-projection-based encodings, including semiclassical gravity, effective field theory, and the
-constructive quantum-gravity results established elsewhere in the corpus.
+String theory supplies a highly constrained language for extended
+excitations, quantum gravity, gauge sectors, duality, and compactification.
+A projection-first viewpoint can organize these structures as possible
+encodings of a richer source, but projection alone does not force strings,
+branes, a worldsheet, a critical dimension, modular invariance, or a
+graviton. This paper separates the internal results of perturbative string
+theory from their proposed interpretation in Modal Triplet Theory. A valid
+MTT-to-string bridge must construct target fields, a worldsheet action and
+measure, Weyl and modular consistency, anomaly cancellation, factorization,
+and the relevant observable dictionary from the same selected source. The
+q79 Fu--Yau branch is the present compatible candidate. Its twelve-row
+heterotic worldsheet contract has five available rows, two partial rows, and
+five open rows. The resulting claim is a structured string-encoding program,
+not a derivation of string theory from projection or a completed ultraviolet
+theory.
 \end{abstract}
 
-\section{Introduction}
-String theory occupies a unique position in modern theoretical physics. It provides a framework
-in which ultraviolet divergences of point-particle quantum field theory are softened, gravity
-appears unavoidably through closed-string excitations, gauge sectors arise naturally on
-boundaries, and holographic correspondences offer remarkably powerful dual descriptions. At
-the same time, the theory is often discussed in terms of an enormous space of backgrounds and
-compactifications, and its foundational interpretation is frequently framed as ontological: the
-world is made of strings (and branes), and spacetime is a dynamical arena populated by their
-quantized excitations.
-
-This paper develops a different perspective. The starting point is the observation that many
-central structures of string theory are best understood as \emph{consistency devices} rather than
-as direct evidence for a particular microscopic ontology. Modular invariance, BRST nilpotency,
-anomaly cancellation, and the requirement of conformal invariance do not behave like optional
-model-building choices. They behave like \emph{admissibility conditions}: criteria that decide
-whether an effective description can be maintained at all. Likewise, the extended nature of
-string excitations appears less as an arbitrary postulate and more as a mechanism that prevents
-the failure of description associated with pointlike ultraviolet localization. These features
-suggest a broader organizing principle: that stable physical description is possible only through
-projection to an effective encoding, and that such projection is valid only within finite
-admissibility margins.
-
-The projection-first viewpoint has been developed in the companion reframing papers of this
-series. In that framework, \emph{projection} refers to the structural necessity of identifying
-microscopic distinctions in order to obtain a stable, local, predictive effective description.
-\emph{Admissibility} refers to the boundedness, spectral separation, and stability margins that
-must hold for such a projection to remain controlled. When admissibility holds, effective
-descriptions may be locally invertible and may admit familiar structures such as Hilbert spaces,
-operator algebras, and unitary evolution. When admissibility fails, effective description becomes
-noninvertible, and phenomena such as irreversibility, entropy bounds, horizon behavior, and
-breakdown of global reconstruction arise as structural necessities rather than as signals of
-missing dynamics.
-
-Applying this viewpoint to string theory yields a reframing with three immediate consequences.
-
-\paragraph{Strings as capacity-optimal encodings.}
-If projection is finite and must remain stable under high-frequency disturbance, then pointlike
-encodings generically exceed admissibility: they require arbitrarily fine distinctions and lead to
-ultraviolet sensitivity. Extended encodings distribute coherence and reduce the strain on
-projection. In this sense, the appearance of one-dimensional extended excitations is not an
-ontological postulate but a capacity-optimal response: strings are the minimal extended
-structures that preserve local predictivity while suppressing ultraviolet instability. Their
-``vibrational spectrum'' is then interpreted as the spectral decomposition of stable eigenmodes
-of an admissible extended encoding, rather than as literal microscopic oscillations of a material
-object.
-
-\paragraph{Closed strings and gravity as global bookkeeping.}
-The closed-string sector plays a special role in string theory: it is unavoidable, universal, and
-couples to all other sectors. In a projection-first language, this is the signature of bookkeeping
-rather than substance. Maintaining mutual compatibility of local projected descriptions across
-regions requires a global consistency structure. Gravity is the effective shadow of this
-consistency requirement. Closed-string modes are therefore interpreted as globally coherent
-bookkeeping modes that cannot be localized without destroying the consistency of the projected
-description, explaining both their universality and why gravity is not naturally confined to
-lower-dimensional sectors.
-
-\paragraph{Branes as admissibility boundaries and the landscape as a catalogue.}
-D-branes are usually presented as physical objects on which open strings end. Projection-first
-reasoning instead emphasizes their structural role: they implement boundary conditions that
-localize certain modes and restrict which encodings remain admissible. Brane tension is then
-naturally interpreted as a capacity cost: the stability budget expended per unit boundary volume
-to enforce localization constraints and maintain consistent projection. On cosmological and
-compactification scales, the same logic reframes the ``landscape.'' The landscape is not a space
-of physically realized vacua among which nature must choose, but a catalogue of mathematically
-consistent encodings, most of which fail admissibility once boundedness, spectral separation,
-and stability margins are imposed. Predictivity is restored not by anthropic selection but by
-structural elimination of non-admissible descriptions.
-
-The remainder of this paper develops these points in a deliberately conservative manner. We do
-not attempt to rederive the Polyakov action, compute string amplitudes, or replace standard
-duality arguments. Instead, we aim to clarify why string theory repeatedly converges on the
-same motifs---minimal length, holography, modular finiteness, brane-localized gauge sectors,
-and strong constraints on backgrounds---and to show that these motifs are natural consequences
-of projection with finite admissibility. In doing so, we provide a translation dictionary between
-standard string-theoretic language and projection-first terminology, and we delineate the
-domain in which string theory functions as a powerful admissible encoding of high-energy
-physics.
-
-\paragraph{Relation to the rest of the MTT corpus.}
-No familiarity with Modal Triplet Theory is required to follow the arguments here. However, the
-projection-first viewpoint is informed by results established in the MTT corpus, where bounded
-projectors, spectral gaps, and admissible slabs can be made explicit and where standard quantum
-and gravitational structures arise as regime-limited shadows of coherent-sector projection. The
-present paper should therefore be read as a reframing of string theory's conceptual status, not
-as a replacement for its technical machinery.
-
-\section{Projection, Admissibility, and Descriptive Capacity}
-
-This section introduces the minimal projection-first concepts needed to reinterpret string
-theory. The goal is not to replace standard string-theoretic language, but to clarify which
-structural constraints that language is already enforcing implicitly.
-
-\subsection{Projection as a structural necessity}
-
-Any predictive physical description requires a reduction of microscopic distinctions. In
-projection-first language, this reduction is called \emph{projection}: a many-to-one mapping
-from a high-dimensional configuration space to a lower-dimensional effective description.
-Projection is not an approximation or a choice; it is a structural requirement for locality,
-stability, and predictivity.
-
-Projection is admissible only if three conditions hold simultaneously:
-\begin{enumerate}
-  \item \textbf{Boundedness}: small disturbances in the underlying configuration do not produce
-  unbounded changes in the projected description.
-  \item \textbf{Spectral separation}: the operators governing admissible degrees of freedom
-  possess gaps that prevent uncontrolled leakage into discarded directions.
-  \item \textbf{Stability}: the projected description is dynamically self-consistent over the
-  timescales on which it is intended to apply.
-\end{enumerate}
-When these conditions are satisfied, effective notions such as fields, particles, and unitary
-time evolution may exist. When they fail, effective description itself breaks down rather than
-becoming merely inaccurate.
-
-\subsection{Admissibility and the notion of capacity}
-
-Admissibility is not unlimited. Every projection-based description has a finite \emph{capacity}:
-a bound on how much independent structure, distinction, or coherence it can sustain before
-boundedness or invertibility fails. Capacity is not a conserved quantity, not a field, and not
-an observable. It is a structural limit, analogous to a radius of convergence or a condition
-number, that determines whether a description exists at all.
-
-Exceeding capacity does not produce a new phase of the same description. It produces a loss of
-description. Phenomena such as ultraviolet divergences, horizon formation, entropy bounds, and
-noninvertible measurement outcomes are all signatures of capacity exhaustion rather than
-indications of missing microscopic dynamics.
-
-\subsection{Geometry as bookkeeping}
-
-Within a projection-first framework, spacetime geometry does not represent an additional
-dynamical substance. Instead, it functions as bookkeeping: it synchronizes local projected
-descriptions, enforces causal compatibility, and tracks how admissibility constraints vary
-across regions. Gravity is the effective shadow of this bookkeeping role. Its universality and
-its resistance to localization follow from the requirement that bookkeeping remain coherent
-globally.
-
-This viewpoint will be essential in understanding why string theory inevitably contains a
-closed-string sector and why that sector cannot be consistently removed.
-
----
-
-\section{Why Strings Appear and Why They Vibrate}
-
-We now address the central structural question: why do admissible high-energy descriptions take
-the form of extended, one-dimensional objects with discrete excitation spectra?
-
-\subsection{Failure of pointlike encodings}
-
-Point-particle quantum field theory assumes that arbitrarily localized excitations remain
-admissible at arbitrarily high energy. From a projection-first perspective, this assumption
-fails generically. Pointlike localization requires access to arbitrarily high-frequency modes,
-which rapidly exhaust capacity by destabilizing projection and destroying boundedness. The
-resulting ultraviolet pathologies are not technical accidents; they signal loss of admissible
-description.
-
-\subsection{Extended encodings as capacity-optimal}
-
-Extended encodings distribute coherence over finite regions and thereby reduce the strain on
-projection. Among extended objects, one-dimensional encodings occupy a special position: they
-are the minimal structures that suppress ultraviolet localization while preserving locality
-and controllability. Higher-dimensional extended objects consume capacity too rapidly, while
-pointlike encodings consume it immediately.
-
-From this perspective, strings arise not as fundamental constituents but as
-\emph{capacity-optimal encodings}: the simplest structures capable of sustaining admissible
-projection at high frequency.
-
-\subsection{Vibration as spectral decomposition}
-
-Once an extended encoding is selected, its stable configurations are determined by the spectral
-properties of the operators governing admissible disturbances. Discrete excitation modes arise
-as normal modes of the constrained system. What string theory describes as ``vibrations'' are
-therefore not literal oscillations of a material filament, but the spectral decomposition of
-stable eigenmodes of an admissible extended encoding.
-
-Mass spectra, spin assignments, and degeneracies are fixed by symmetry and boundary conditions,
-exactly as in any constrained spectral problem. Quantization of these modes is not an added
-postulate but a consequence of admissibility: only discrete eigenmodes remain stable under
-projection.
-
-\subsection{Background dependence revisited}
-
-Because admissibility depends on boundedness and spectral separation, the allowed excitation
-modes depend sensitively on background structure. Changing the background geometry alters which
-encodings remain admissible and therefore which spectra exist at all. This explains why string
-theory is highly background-sensitive and why different backgrounds are not smoothly related by
-small perturbations within a single Hilbert space.
-
-In projection-first terms, a ``background'' specifies the admissibility conditions of the
-encoding. Changing it changes the rules of description, not merely the values of dynamical
-fields.
-
----
-
-\section{Closed Strings as Global Bookkeeping Modes}
-
-One of the most robust features of string theory is the inevitability of closed-string
-excitations. Even in constructions designed to isolate gauge or matter sectors, the closed
-sector reappears as a consistency requirement. From a projection-first perspective, this
-behavior is not accidental and does not rely on the specific dynamics of the worldsheet.
-It reflects the structural role of closed strings as global bookkeeping modes.
-
-\subsection{Universality and nonlocalizability}
-
-Closed-string modes propagate throughout the bulk and couple universally to all other
-sectors. Attempts to confine or remove them lead to inconsistencies, anomalies, or loss of
-background coherence. In standard string-theoretic language this universality is often
-explained by the appearance of a massless spin-two excitation and its required coupling to
-energy--momentum.
-
-Projection-first reasoning inverts this explanation. Maintaining compatibility among local
-projected descriptions across regions requires a globally coherent structure. Such a
-structure cannot be localized without destroying the mutual consistency of projection.
-Closed-string modes are therefore interpreted as the admissible carriers of this global
-consistency. Their nonlocalizability is not a dynamical accident but a structural necessity:
-localization would correspond to breaking the bookkeeping required to synchronize effective
-descriptions.
-
-\subsection{Gravity as consistency enforcement}
-
-In this reframing, gravity is not an additional interaction layered on top of other fields.
-It is the effective shadow of the global bookkeeping required to preserve admissibility.
-Geometric degrees of freedom track how admissibility conditions vary across regions and
-ensure that local projected descriptions remain mutually compatible.
-
-This explains several familiar facts in a unified way. Gravity couples universally because
-bookkeeping must apply to all sectors. Gravitational backreaction is unavoidable because
-changes in local constraint load must be reflected in the global consistency structure.
-Finally, gravity resists confinement because bookkeeping cannot be restricted to a subset of
-degrees of freedom without violating global admissibility.
-
-\subsection{Relation to background equations}
-
-Worldsheet conformal invariance and the resulting target-space equations are often interpreted
-as dynamical field equations for geometry. In projection-first terms, these conditions play a
-different role: they enforce the admissibility of the background encoding. Backgrounds that
-fail these conditions do not represent alternative dynamical solutions; they represent
-encodings that cannot sustain stable projection.
-
-From this standpoint, the closed-string sector enforces the admissibility of the entire
-encoding. Its equations of motion are constraints on description rather than microscopic
-laws governing fundamental constituents.
-
----
-
-\section{D-Branes as Admissibility Boundaries}
-
-D-branes are conventionally introduced as physical hypersurfaces on which open strings end.
-They carry tension, support gauge fields, and gravitate. Projection-first reasoning instead
-emphasizes their structural role: D-branes implement admissibility boundaries where the
-character of projection changes.
-
-\subsection{Boundary conditions and projection constraints}
-
-In string theory, open strings satisfy Dirichlet boundary conditions that confine their
-endpoints to D-branes. These boundary conditions restrict which modes remain admissible and
-which extensions of coherence are forbidden. In projection-first language, this corresponds
-to a modification of projection constraints: certain directions in configuration space are
-no longer admissible beyond the boundary.
-
-Thus a D-brane is not fundamentally an object embedded in spacetime, but a region where
-admissibility conditions enforce localization of specific encodings. Open-string modes are
-those modes whose stability requires such localization.
-
-\subsection{Gauge sectors as boundary-stabilized encodings}
-
-Gauge fields and matter degrees of freedom arise naturally from open-string modes localized
-on D-branes. Projection-first reasoning explains this localization structurally. Gauge
-degrees of freedom carry constraints that require stable local distinguishability. In many
-settings, such stability cannot be maintained globally without exhausting capacity. Boundary
-localization provides a way to preserve admissibility by restricting the domain over which
-these constraints must be enforced.
-
-The disappearance of gauge sectors when branes are removed is then immediate: the boundary
-that stabilized the encoding no longer exists, and the corresponding degrees of freedom
-cease to be admissible.
-
-\subsection{Brane tension as capacity cost}
-
-D-brane tension is usually interpreted as an energy density associated with a physical object.
-Projection-first reasoning offers a complementary interpretation. Enforcing an admissibility
-boundary consumes capacity: it restricts the space of admissible encodings and reduces the
-degrees of freedom available to maintain global coherence. The greater the restriction, the
-higher the capacity cost.
-
-Brane tension is therefore interpreted as the capacity expenditure per unit boundary volume
-required to maintain localization constraints. This interpretation explains several standard
-features without additional assumptions. High-tension branes are rigid because relaxing their
-constraints would exceed admissibility. Branes gravitate because the global bookkeeping
-structure must adjust to account for lost capacity. Brane backreaction reflects the cost of
-maintaining the boundary within a coherent encoding.
-
-\subsection{Stacks, intersections, and enhanced symmetry}
-
-Stacks of coincident branes impose stronger localization constraints and therefore consume
-greater capacity. The resulting enhancement of gauge symmetry reflects the increased
-constraint density stabilized on the boundary. Intersections of branes correspond to regions
-where multiple admissibility boundaries overlap, producing further localized encodings with
-distinct constraint structures.
-
-These phenomena are naturally organized in projection-first language as variations in how
-admissibility boundaries partition configuration space, rather than as independent dynamical
-objects interacting in spacetime.
-
----
-
-\section{Spectral Gaps, Massless Modes, and Moduli}
-
-A recurring feature of string constructions is the coexistence of generically gapped spectra
-with special gapless sectors. Massless modes appear on branes, at critical points, or under
-enhanced symmetry, while generic bulk configurations exhibit spectral gaps. This section
-explains why this pattern is expected from projection-first admissibility rather than a result
-of tuning.
-
-\subsection{Gaps as stability barriers}
-
-Spectral gaps are not optional details of an encoding. They function as stability barriers
-that prevent uncontrolled leakage of coherence into discarded directions. When a gap exists,
-projection remains bounded and admissible. When a gap closes, arbitrarily small disturbances
-can destabilize the encoding, leading to loss of invertibility and breakdown of effective
-description.
-
-For elliptic operators on compact internal sectors, gapped spectra are structurally stable:
-small perturbations of background data do not close gaps. Gapless configurations therefore
-form special loci rather than generic interiors. From a projection-first standpoint, gapped
-spectra characterize admissible interior regions, while gap closure signals proximity to
-admissibility boundaries.
-
-\subsection{Boundary-protected gapless modes}
-
-Massless modes localized on D-branes are a familiar feature of string theory. Projection-first
-reasoning explains their localization and protection. At admissibility boundaries, certain
-constraints must be enforced exactly to maintain local consistency. This enforcement can
-force the closure of specific spectral gaps, producing gapless modes that remain stable only
-because they are confined to the boundary.
-
-Thus massless open-string modes are not generic bulk features. They are boundary-stabilized
-encodings whose gaplessness is protected by the admissibility constraints defining the
-boundary itself. Away from such boundaries, gaplessness is unstable and therefore rare.
-
-\subsection{Moduli as marginal admissibility directions}
-
-Moduli fields correspond to continuous deformations of background data that preserve
-worldsheet consistency. In projection-first language, moduli parametrize directions along
-which admissibility is marginal: the encoding remains admissible, but stability margins are
-reduced. Small perturbations can easily drive the system toward boundary behavior.
-
-This explains why moduli require stabilization. Stabilization is not an aesthetic preference
-but a restoration of admissibility margins. Unstabilized moduli signal encodings balanced
-precisely at the edge of capacity, where predictive description becomes fragile.
-
----
-
-\section{Holography and the Survival of Description}
-
-Holography is one of the most striking features of string theory. Dual descriptions relate
-bulk gravitational dynamics to lower-dimensional boundary theories with no gravity. From a
-projection-first viewpoint, holography is not a mysterious equivalence of ontologies but a
-structural response to capacity exhaustion.
-
-\subsection{Bulk capacity exhaustion}
-
-As the complexity or scale of a bulk region increases, the capacity required to maintain a
-local, invertible description grows. When this requirement exceeds available capacity, bulk
-projection ceases to be admissible. Description does not vanish; it reorganizes. The surviving
-encoding is forced onto regions where admissibility can still be maintained, typically
-lower-dimensional boundaries.
-
-This mechanism is independent of specific dynamics. It follows directly from the finite
-capacity of projection and the requirement of stability.
-
-\subsection{AdS/CFT reinterpreted}
-
-In this light, AdS/CFT is interpreted as a relation between two admissible encodings of the
-same constrained coherence region. The bulk gravitational description and the boundary
-conformal field theory are not dual ontologies but alternative charts valid in complementary
-regimes. Neither description is globally valid on its own.
-
-The boundary theory persists when bulk description fails because boundary encodings require
-less capacity. Holography thus reflects the survival of description under capacity constraints
-rather than a fundamental equivalence between bulk and boundary degrees of freedom.
-
-\subsection{Why holography is ubiquitous}
-
-Holographic behavior appears across string theory, black-hole physics, and condensed-matter
-systems because it is a generic response to finite capacity. Whenever bulk description becomes
-inadmissible, lower-dimensional encodings dominate. Holography is therefore expected wherever
-projection is finite, not a peculiarity of special backgrounds.
-
----
-
-\section{The Landscape as an Admissibility Catalogue}
-
-The ``string landscape'' is often presented as a vast space of physically realized vacua,
-raising questions of predictivity and selection. Projection-first reasoning reframes this
-problem by distinguishing mathematical consistency from physical admissibility.
-
-\subsection{Consistency versus admissibility}
-
-Worldsheet consistency conditions determine whether a background defines a mathematically
-consistent encoding. They do not guarantee that the encoding remains stable, bounded, or
-invertible under projection. Most points in the landscape satisfy consistency but fail
-admissibility once stability margins and capacity constraints are imposed.
-
-From a projection-first standpoint, such points do not represent alternative physical worlds.
-They represent encodings that cannot sustain a stable description.
-
-\subsection{Admissibility filtering}
-
-Applying admissibility criteria---bounded projection, spectral separation, stability under
-disturbance, and finite capacity---dramatically reduces the effective landscape. Encodings
-with runaway moduli, vanishing gaps, or excessive constraint load are eliminated prior to any
-dynamical or anthropic considerations.
-
-What remains is not a combinatorial explosion but a structured set of coherent basins, often
-connected by smooth deformations. Variation persists, but it is constrained and organized
-rather than arbitrary.
-
-\subsection{Predictivity without anthropic selection}
-
-This reframing restores limited predictivity without invoking observer-based selection. The
-elimination of non-admissible encodings is structural, not environmental. The ``choice'' of
-background is replaced by the requirement that description remain admissible.
-
-Anthropic reasoning may still be relevant within admissible families, but it is no longer
-required to explain the gross multiplicity of mathematically consistent vacua.
-
----
-
-\section{Relation to Dark Matter and Dark Energy}
-
-The projection-first reframing of string theory naturally interfaces with cosmological
-phenomena that have resisted particle-based explanations, notably dark matter and dark
-energy. Although a detailed treatment is deferred to a dedicated reframing paper, it is
-important to clarify how the present interpretation situates these phenomena structurally.
-
-\subsection{Dark matter as constraint load without particle encoding}
-
-In string-theoretic constructions, gravitational effects often persist even when no
-corresponding particle excitations are present in the low-energy spectrum. Projection-first
-reasoning interprets this behavior as a generic admissibility feature. Gravity, understood as
-global bookkeeping, remains operative so long as geometric coherence can be maintained. By
-contrast, particle-level encodings require additional capacity to sustain localized,
-distinguishable excitations.
-
-Dark matter phenomenology arises when the gravitational bookkeeping structure remains
-admissible while particle-level encodings fail. In such regimes, curvature responds to
-constraint load that cannot be represented by admissible particle states. This produces
-gravitational effects without new particle degrees of freedom. From this standpoint, the
-absence of direct detection is not surprising: the relevant encoding does not exist.
-
-\subsection{Dark energy as global capacity exhaustion}
-
-At cosmological scales, maintaining global invertibility and coherence of projection becomes
-increasingly difficult. When capacity is exhausted globally, the only admissible response is a
-reorganization of the bookkeeping structure itself. Accelerated expansion is interpreted as
-geometry relaxing to preserve admissibility by diluting correlations and reducing constraint
-density.
-
-In this reframing, dark energy is not vacuum energy in the usual sense, nor a new dynamical
-field. It is the large-scale manifestation of finite capacity. String theory, with its
-emphasis on holography and entropy bounds, already encodes many aspects of this behavior,
-though it does not name it explicitly.
-
----
-
-\section{Limits of the Encoding}
-
-A projection-first reframing clarifies not only why string theory succeeds where it does, but
-also where its explanatory scope should be expected to end.
-
-\subsection{What string theory should not be asked to explain}
-
-String theory is often burdened with expectations that exceed its natural role as an
-admissible encoding. It should not be expected to provide:
-\begin{itemize}
-  \item a unique global vacuum selected by dynamics alone;
-  \item a globally valid quantization of geometry across all regimes;
-  \item a resolution of singularities without loss of description;
-  \item a particle-based account of all gravitational phenomena.
+\section*{Version 2 Revision Note}
+\begin{description}[leftmargin=3.2cm,style=nextline]
+\item[Supersedes] Version 1.0, \emph{A Projection-First Reframing of String
+Theory}.
+\item[Reason] The original paper presented strings, closed-string gravity,
+D-branes, holography, and the rejection of most vacua as consequences of
+finite admissibility. Those conclusions require independent worldsheet,
+boundary, anomaly, and observable structures.
+\item[Resolution] String structures are now conditional realization classes.
+The paper distinguishes standard string-theoretic results from an MTT
+interpretation and states the current q79 worldsheet contract row by row.
+\item[Retained result] Projection-first language remains useful for asking
+whether several lower descriptions descend from one selected source and
+preserve the same physical data.
+\item[Remaining boundary] The physical q79 bundle, exact \((0,2)\) theory,
+modular/GSO completion, q79 string-field vertices, infrared completion, and
+nonperturbative definition remain open.
+\end{description}
+
+\tableofcontents
+
+\section{What is being reframed}
+
+String theory is not merely the assertion that fundamental objects are
+one-dimensional. Its predictive structure comes from a linked package:
+\begin{itemize}[leftmargin=*]
+\item a two-dimensional worldsheet field theory;
+\item target-space fields and boundary conditions;
+\item gauge fixing, ghosts, and a quantum measure;
+\item Weyl and modular consistency;
+\item GSO projection, factorization, and anomaly cancellation;
+\item a spectrum and observable prescription; and
+\item compactification and effective-field-theory limits.
 \end{itemize}
-These demands correspond to attempts to extend an encoding beyond its admissibility domain.
-Failure in such extensions does not signal incompleteness of the theory, but misuse of its
-descriptive regime.
+Extended carriers are one part of this package. A loop drawn in a source
+space is not yet a string worldsheet, and a finite projector is not yet a
+worldsheet path integral.
 
-\subsection{Breakdown as structural, not dynamical}
+The projection-first proposal is interpretive. It asks whether string
+variables can be a faithful lower description of selected upper data:
+\[
+ \Pi_{\rm ws}:\mathcal X_{\rm MTT}
+ \longrightarrow
+ \mathcal C_{\rm ws}.
+\]
+The codomain must contain more than embeddings \(X^\mu(\sigma)\). It must
+contain all data needed to define the quantum worldsheet theory and its
+target-space interpretation.
 
-When string-theoretic descriptions fail---for example, near singularities, strong curvature,
-or cosmological boundaries---the failure is structural. Projection becomes noninvertible,
-spectral gaps close, or stability margins vanish. No modification of local dynamics can repair
-this loss. The correct response is not to introduce additional degrees of freedom, but to
-recognize that description itself has reached its limit.
+\section{What standard string theory establishes}
 
-This perspective aligns string theory with other projection-based encodings, including
-semiclassical gravity and effective field theory. Each is powerful within its admissible
-domain and breaks down sharply at its boundaries.
+\subsection{Closed strings and gravity}
 
----
+Within perturbative closed-string theory, quantization of the worldsheet
+produces a massless spin-two state. Consistency of its interactions leads to
+general covariance and, at low energy, an Einstein-type target-space action
+with additional fields and higher-derivative corrections
+\cite{GSW,Polchinski1}. This is a strong internal result of the specified
+string construction.
 
-\section{Summary and Outlook}
+It is not a consequence of a generic many-to-one map. A projection can have
+no spin-two sector at all. An MTT bridge must therefore show that its selected
+source maps to the relevant closed-string Hilbert space, BRST cohomology,
+three-point couplings, and low-energy normalization.
 
-String theory has long been regarded as a candidate fundamental theory of nature. The
-projection-first reframing developed here proposes a different interpretation: string theory
-is best understood as a capacity-optimal encoding that preserves admissible description at
-high energy. Its defining features---extended excitations, discrete spectra, unavoidable
-gravity, boundary-localized gauge sectors, holography, and a constrained landscape---are not
-independent postulates but structural responses to finite admissibility.
+\subsection{Open strings and D-branes}
 
-From this perspective, strings do not exist because the universe is made of strings. They
-exist because pointlike encodings fail under finite capacity. Closed-string modes are global
-bookkeeping structures required to maintain consistency of projection, while open strings and
-D-branes arise at admissibility boundaries where certain encodings must be localized. Brane
-tension measures the capacity cost of enforcing such boundaries. Holography reflects the
-survival of description on lower-dimensional loci when bulk encoding becomes inadmissible.
-The landscape is reinterpreted as a catalogue of mathematically consistent encodings, most of
-which fail admissibility before physics begins.
+D-branes are boundary conditions for open strings and carry tension,
+Ramond--Ramond charge, worldvolume fields, and consistency conditions. Gauge
+fields on brane stacks arise from open-string sectors and Chan--Paton data
+\cite{Polchinski2}. Calling a boundary an ``admissibility boundary'' can be a
+useful analogy, but it does not supply these charges, spectra, or amplitudes.
 
-This reframing does not replace string theory's technical machinery, nor does it diminish its
-calculational successes. Instead, it clarifies why those successes are possible and why they
-come with sharp limitations. In doing so, it situates string theory within a broader
-projection-first framework that also encompasses quantum mechanics, gravity, dark sectors,
-and limits of computation.
+To realize a D-brane from MTT one must construct:
+\[
+\begin{aligned}
+ &\text{boundary condition}+\text{open-string state space}+\text{charge}\\
+ &\hspace{24mm}+\text{worldvolume action}+\text{anomaly conditions}.
+\end{aligned}
+\]
+Without this contract the correspondence is interpretive only.
 
-Future work will develop these connections further. In particular, a projection-first
-reframing of dark matter and dark energy will make explicit the role of capacity and
-admissibility at cosmological scales, and further bridge papers will clarify the relation
-between string-theoretic encodings and other admissible descriptions. The hope is that by
-making the structural logic explicit, long-standing conceptual tensions can be resolved
-without sacrificing the empirical and mathematical strengths of existing frameworks.
+\subsection{Criticality and modular consistency}
+
+Critical dimensions in perturbative string theories arise from cancellation
+of the worldsheet conformal anomaly for a declared matter and ghost system.
+They are not dimensional consequences of a circle, a rank flag, or a
+projection. Likewise, modular invariance is a property of a torus partition
+function and its state sum. A finite arithmetic symmetry may support a
+candidate construction, but it does not replace analytic characters, GSO
+projection, or factorization.
+
+\section{What projection-first language can claim}
+
+Projection-first language is strongest when used as a typing discipline.
+Suppose an upper object \(\mathcal U\) carries connections, actions, states,
+and observables. A string encoding is physically meaningful only if maps
+\[
+ \Pi_{\rm target},\qquad
+ \Pi_{\rm ws},\qquad
+ \Pi_{\rm obs}
+\]
+preserve the structures required on their common domain. For example, a
+background equation obtained from a target-space action and a beta function
+obtained from the worldsheet must agree after conventions and field
+redefinitions are fixed. Similar-looking equations are not enough.
+
+This supports a conditional statement:
+\begin{quote}
+If one selected upper construction admits a complete, anomaly-free
+worldsheet realization and a controlled target-space descent, then string
+theory can be a lower encoding of that construction on the common domain.
+\end{quote}
+It does not support the converse claim that finite admissibility forces
+strings or that every consistent string vacuum is physically selected.
+
+\section{Why extended carriers are not automatic}
+
+A nontrivial loop or holonomy requires at least a suitable one-dimensional
+cycle. This explains why circles and line phases recur in Fourier analysis,
+gauge theory, and string compactification. It does not select a dynamical
+string. A point, graph, matrix algebra, particle worldline, higher-dimensional
+brane, or noncommutative algebra can also carry finite constraints.
+
+Likewise, indecomposability of a constraint system does not imply an
+extended carrier. The MTT saturation paper gives finite countermodels:
+complete and locally rigid constraint systems can exist on point-valued
+carriers. A string-like realization becomes preferred only after additional
+requirements such as continuous loop support, reparametrization symmetry,
+worldsheet locality, or anomaly cancellation are imposed.
+
+The proper hierarchy is therefore:
+\[
+ \text{projection}
+ \;\not\Rightarrow\;
+ \text{extended carrier}
+ \;\not\Rightarrow\;
+ \text{worldsheet QFT}
+ \;\not\Rightarrow\;
+ \text{consistent string vacuum}.
+\]
+Each arrow requires a construction.
+
+\section{Duality, holography, and the landscape}
+
+\subsection{Duality}
+
+A duality requires two theories, an invertible comparison on the declared
+domain, and preservation of observables or amplitudes. The shared-circle
+Fourier structure can motivate a \(T\)-duality candidate, but exact
+string-theoretic \(T\)-duality also acts on momentum, winding, background
+fields, and quantum states. \(S\)-duality requires an additional
+strong--weak coupling map. Neither follows from the word ``projection.''
+
+\subsection{Holography}
+
+Holographic duality is not simply the survival of information on a boundary.
+It needs two fully defined theories and a quantitative dictionary equating
+partition functions, states, or correlators. Projection-first language can
+classify bulk and boundary variables, but it does not prove AdS/CFT or a
+general holographic principle.
+
+\subsection{Vacua and selection}
+
+The string landscape is a set of candidate compactifications subject to
+increasingly strong consistency conditions. MTT may add a source-selection
+criterion and correlate data ordinarily chosen independently. Yet
+mathematical consistency, local stability, cosmological realization, and
+empirical adequacy are different filters. No current MTT theorem eliminates
+all but one physical string vacuum.
+
+\section{The selected q79 candidate}
+
+The strongest current string-compatible MTT branch is the q79 Fu--Yau
+candidate. Its role should be stated carefully:
+\begin{itemize}[leftmargin=*]
+\item the q79 arithmetic and finite carrier data are exact at their declared
+tier;
+\item Fu--Yau and related torus-bundle solutions provide established
+Hull--Strominger geometry \cite{FuYau,Fino2019};
+\item a compatible finite Green--Schwarz/Bianchi representative and
+curvature-level visible cancellation are available;
+\item the physical nonpullback visible and hidden bundles and their
+continuum HYM realization are not yet selected; and
+\item no exact q79 \((0,2)\) SCFT or nonperturbative string definition has
+been constructed.
+\end{itemize}
+The auxiliary literal product \(S^1\times{\rm Lens}\times{\rm Nil}\) is not
+the q79 compactification. Circle--Lens--Nil language is retained as a
+rank/operator filtration; the physical compactification candidate is the
+q79 Fu--Yau branch.
+
+\subsection{The twelve-row worldsheet contract}
+
+\small
+\begin{longtable}{@{}p{0.07\textwidth}p{0.54\textwidth}p{0.28\textwidth}@{}}
+\toprule
+Row & Required object & Current status\\
+\midrule
+\endfirsthead
+\toprule
+Row & Required object & Current status\\
+\midrule
+\endhead
+W1 & Time-oriented q79 target branch & Available\\
+W2 & Fu--Yau Mukai charge and Green--Schwarz/Bianchi sector & Available\\
+W3 & Visible curvature-level Green--Schwarz cancellation & Available at
+curvature tier\\
+W4 & Critical heterotic central-charge balance & Available universally\\
+W5 & q79 low-energy GR and quantum-EFT limit & Available at declared parity
+tier\\
+W6 & Global Deligne gerbe and Freed--Witten condition on the full visible
+cycle set & Open; finite representative only\\
+W7 & All-orders-in-\(\alpha'\) q79 target background & Open; current
+background is first order\\
+W8 & Exact q79 heterotic \((0,2)\) SCFT or all beta functions & Partial;
+base GLSM, local anomaly, and topological candidate exist, but the physical
+bundle and IR SCFT do not\\
+W9 & q79 modular-invariant GSO partition function and factorization &
+Partial; finite torsion module and seven-seed induction exist, but analytic
+characters and GSO remain open\\
+W10 & q79-specific string-field vertices and BV master action & Open;
+standard framework exists but is not instantiated on q79\\
+W11 & Tadpole, vacuum-shift, infrared, and soft-state completion & Open\\
+W12 & All-genus convergence or a nonperturbative definition & Open\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+The authoritative count is therefore five available, two partial, and five
+open. Standard heterotic string-field BV machinery exists
+\cite{Sen2016}; importing that framework is not the same as constructing its
+q79 vertices.
+
+\section{Claim ledger}
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}p{0.31\textwidth}p{0.18\textwidth}X@{}}
+\toprule
+Claim & Status & Boundary\\
+\midrule
+Strings are allowed MTT encodings & Supported & Requires a declared bridge
+and domain.\\
+Projection forces strings & False in general & Counterexamples include
+finite point-valued carriers.\\
+Closed strings contain a graviton & Standard string result & Assumes the
+quantized closed-string construction.\\
+MTT derives the closed-string sector & Open & Needs state-space, BRST, and
+coupling intertwiners.\\
+D-branes are admissibility boundaries & Interpretive analogy & Charges,
+boundary CFT, and worldvolume dynamics are additional.\\
+q79 selects a compatible string route & Supported & Fu--Yau heterotic
+candidate at partial contract tier.\\
+q79 defines a complete worldsheet theory & Not established & Current
+contract is \(5\) available, \(2\) partial, \(5\) open.\\
+MTT uniquely selects a physical vacuum & Open & Needs complete source,
+dynamics, and observable tests.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Discussion}
+
+The projection-first interpretation remains valuable after these
+restrictions. It changes the research question from ``are strings literally
+fundamental?'' to ``which upper data can a string description encode, and
+with what loss?'' That question can be tested map by map.
+
+The strongest route is not to redescribe familiar string motifs in new
+language. It is to complete the q79 contract and then compare two
+independently constructed descendants of the same source: the four-dimensional
+effective theory and the worldsheet theory. Agreement of actions, anomalies,
+states, and observables would be substantive evidence for a common encoding.
+Failure of a row would identify exactly where the analogy stops.
+
+\section{Conclusion}
+
+String theory is a possible and unusually rich projection-compatible
+encoding; it is not a consequence of projection alone. The extended
+carrier, worldsheet quantum theory, criticality, branes, dualities, and
+observables must each be supplied.
+
+MTT has selected exact finite q79 data and a compatible Fu--Yau route, but
+the physical string construction remains incomplete. The next decisive
+steps are the visible-hidden HYM bundles, the exact \((0,2)\) infrared
+theory, modular/GSO completion, and q79-specific string-field vertices.
+Until those are built, the honest result is a sharply organized bridge
+program rather than a derivation of string theory or a finished ultraviolet
+completion.
+
+\begin{thebibliography}{9}
+
+\bibitem{GSW}
+M.~B. Green, J.~H. Schwarz, and E. Witten,
+\emph{Superstring Theory}, Vols.~1--2,
+Cambridge University Press, 1987.
+
+\bibitem{Polchinski1}
+J. Polchinski,
+\emph{String Theory}, Vol.~1,
+Cambridge University Press, 1998.
+
+\bibitem{Polchinski2}
+J. Polchinski,
+\emph{String Theory}, Vol.~2,
+Cambridge University Press, 1998.
+
+\bibitem{FuYau}
+J.-X. Fu and S.-T. Yau,
+\emph{The Theory of Superstring with Flux on Non-K\"ahler Manifolds and
+the Complex Monge--Amp\`ere Equation},
+Journal of Differential Geometry \textbf{78} (2008), 369--428.
+
+\bibitem{Fino2019}
+A. Fino, G. Grantcharov, and L. Vezzoni,
+\emph{Solutions to the Hull--Strominger System with Torus Symmetry},
+Communications in Mathematical Physics \textbf{388} (2021), 947--967.
+
+\bibitem{Sen2016}
+A. Sen,
+\emph{BV Master Action for Heterotic and Type II String Field Theories},
+Journal of High Energy Physics \textbf{02} (2016), 087.
+
+\end{thebibliography}
 
 \end{document}

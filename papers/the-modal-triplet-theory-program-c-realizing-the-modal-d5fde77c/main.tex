@@ -26,7 +26,7 @@
 A Typed Dictionary for Geometric, Bundle,\\
 and Operator Realizations}
 \author{Peter Nero}
-\date{July 2026}
+\date{July 2026\\Version 3}
 
 \begin{document}
 
@@ -74,17 +74,38 @@ physical visible-hidden HYM endpoints, the continuum geometry-to-operator
 intertwiner, the selected continuum Hessian, the upper action, the general
 Born source theorem, and the complete worldsheet contract remain open.
 
-Version 1 correctly emphasized realization nonuniqueness, but several of its
-stronger claims were invalid.  Absence of a global reduced description does
-not by itself forbid a global coordinate chart; an operator realization need
-not have discrete spectrum; and saturation does not automatically force
-extended carriers, worldsheets, or dualities.  The old explicit Iwasawa
-bundle construction and literal Circle--Lens--Nil product topology are
-quarantined as proof sources.  The corrected conclusion is sharper:
-realizations can establish mathematical existence and compatibility, but
-nonuniqueness prevents physical prediction until a source law selects one
-realization and supplies its dynamics and observable map.
+The resulting conclusion is deliberately typed: realizations can establish
+mathematical existence and compatibility, but nonuniqueness prevents physical
+prediction until a source law selects one realization and supplies its
+dynamics and observable map.
 \end{abstract}
+
+\section*{Revision note for version 3}
+\addcontentsline{toc}{section}{Revision note for version 3}
+
+\begin{description}[leftmargin=2.5cm,style=nextline]
+\item[Supersedes.]
+Version~2 of Program C.
+
+\item[Reason.]
+The version~2 type dictionary was correct, but its many distinctions between
+coordinates, bundles, operators, projectors, local strain components, and
+the q79 carrier were still easy to collapse when read as a theorem list.
+
+\item[Resolution.]
+Version~3 adds a concrete modal-lane example, a translation workflow, and
+plain-language explanations of the local $3\times3$ decomposition and global
+$1+2+3$ carrier. It sharpens the open connection-preserving intertwiner
+contract without claiming that the matching ranks construct it.
+
+\item[Retained content.]
+The joint-projector, compact-resolvent, local decomposition, shared-line, and
+nonselection statements remain at their version~2 tiers.
+
+\item[Open boundary.]
+The physical realization, action, visible-hidden HYM pair, continuum
+intertwiner and Hessian, Born source, and complete worldsheet remain open.
+\end{description}
 
 \section*{Revision note for version 2}
 \addcontentsline{toc}{section}{Revision note for version 2}
@@ -119,6 +140,65 @@ q=79 Hessian, or complete a worldsheet theory.
 
 \tableofcontents
 \newpage
+
+\section{How to Use Program C}
+
+Program C is a translation manual.  It should be used whenever an abstract MTT
+role is assigned a geometric or operator-theoretic realization.  The first
+question is not whether the proposed object has the right informal shape, but
+whether it has the right mathematical type and whether every required map is
+defined.
+
+\subsection{A concrete modal lane}
+
+Take a compact internal space $X_6$, a Hermitian vector bundle
+$\Ebundle\to X_6$, and a compatible connection $\nabla$.  The connection
+Laplacian
+\[
+ A=\nabla^*\nabla
+\]
+is an operator on sections of $\Ebundle$, once its domain is declared.  If an
+isolated spectral cluster lies in an interval $I$, functional calculus defines
+the projector
+\[
+ P=\mathbf 1_I(A).
+\]
+These three objects play different roles:
+\begin{itemize}
+\item $\Ebundle$ says what kind of internal field is carried;
+\item $A$ tests or evolves sections according to geometric data; and
+\item $P$ selects the modes satisfying the declared spectral criterion.
+\end{itemize}
+Calling all three ``the lens lane'' would hide the composition laws needed to
+combine them.  The typed notation $(\Ebundle,A,P)$ keeps the carrier, test, and
+selection operation visible.
+
+\subsection{The realization pipeline}
+
+A complete use of the dictionary proceeds in five steps.
+\begin{enumerate}
+\item Choose the physical base and internal coordinate space.
+\item Specify the bundles, transition functions, metrics, and connections.
+\item Define closed operators on stated domains and prove the spectral
+properties used by the projectors.
+\item Construct the maps that compare local MTT decompositions with the
+selected global carrier, preserving the structures actually used.
+\item Add source selection, dynamics, states, observables, and empirical
+conventions before making a physical prediction.
+\end{enumerate}
+The first three steps give a mathematical representation.  The fourth gives a
+same-object or same-source bridge.  Only the fifth can turn that bridge into a
+physical completion.
+
+\subsection{Argument map}
+
+Sections~2--4 fix the status hierarchy, physical carrier, and type dictionary.
+Section~5 develops the operator layer.  Sections~6 and 7 compare the local
+$3\times3$ strain decomposition with the selected q=79 global rank profile
+and state the missing intertwiner.  Section~8 keeps spacetime, gauge, and HYM
+connections distinct.  Sections~9--12 explain selection, compare standard
+physical formalisms, quarantine invalid older realizations, and record the
+current frontier.
 
 \section{Scope and Logical Status}
 
@@ -286,6 +366,16 @@ Unqualified notation such as $B_i$ is deprecated when it could mean a base,
 bundle, factor, boundary, or filter.  The symbols in
 Table~\ref{tab:dictionary} are used throughout the corrected corpus.
 
+\begin{example}[Equal rank does not identify the object]
+The trivial complex line over $S^2$ and the Hopf line bundle both have
+rank one, but their first Chern classes differ, so they are not isomorphic.
+Even on one fixed trivial line bundle, two connections can have different
+holonomy and need not be related by a permitted gauge transformation.
+Consequently, rank agreement is only a bookkeeping prerequisite for an
+intertwiner; it is not evidence that transition functions, connections, or
+operators agree.
+\end{example}
+
 \section{Modal Lanes and Vertical Operators}
 
 \subsection{The typed modal triple}
@@ -334,6 +424,12 @@ Strong commutation makes the spectral projectors pairwise commuting.
 The product of finitely many commuting orthogonal projectors is an orthogonal
 projector.  Its range is their range intersection.
 \end{proof}
+
+The theorem says that three tests can be imposed simultaneously without an
+order ambiguity.  It does not say that the three tests are independent or
+that their common range is nonzero.  Both properties must be checked in the
+selected realization.  This is why strong commutation is a compatibility
+certificate rather than a physical selection rule.
 
 \begin{corollary}[Single total operator]\label{cor:sum}
 Suppose the nonnegative quadratic-form sum
@@ -538,6 +634,15 @@ Definition~\ref{def:intertwiner} is therefore independent of rank equality.
 Constructing this same-source map on the physical q=79 HYM complex is the
 current continuum geometry-to-operator blocker.  It is not closed by the
 finite shared-line theorem.
+
+The local theorem and the global carrier are therefore two verified ends of a
+proposed bridge.  The local side explains how six strain components arise
+after quotienting the three orientation directions of a $3\times3$ comparison
+field.  The global side supplies a selected rank-six trace-split carrier with
+a shared line.  Definition~\ref{def:intertwiner} is the load-bearing middle:
+without it, equality of the two dimension lists remains a structural clue
+rather than a derivation of the global degrees of freedom from the local
+comparison field.
 
 \section{Bundles, Line Bundles, and Connections}
 
@@ -888,5 +993,10 @@ the complex Monge--Ampere equation,
 \newblock \emph{Journal of Differential Geometry} 78 (2008), 369--428.
 
 \end{thebibliography}
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \end{document}

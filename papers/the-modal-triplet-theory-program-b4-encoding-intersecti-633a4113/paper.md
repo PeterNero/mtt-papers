@@ -9,17 +9,17 @@ author:
 - Peter Nero
 current_version: v2
 date: July 2026
-generated_from_main_tex_sha256: 9dd288f66e799860ce95c94b719651973b14a91057a68322eb7386d01997e9a4
+generated_from_main_tex_sha256: cd29276ede02f9971e2782edcaff830a40c2ff9f7917a25c6d26fc485d5088f9
 paper_id: the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  The Modal Triplet Theory Program B4:  
-  Typed Encoding Intersections, Conditional Rigidity,  
+  The Modal Triplet Theory Program B4:
+  Typed Encoding Intersections, Conditional Rigidity,
   and Standard Model Compatibility
-zenodo_doi: 10.5281/zenodo.18355086
-zenodo_record_id: 18355086
-zenodo_url: "https://zenodo.org/records/18355086"
+zenodo_doi: 10.5281/zenodo.21652656
+zenodo_record_id: 21652656
+zenodo_url: "https://zenodo.org/records/21652656"
 ---
 
 # Revision note for version 2
@@ -38,6 +38,30 @@ No theorem here exhausts all gauge groups, global quotients, representations, bu
 
 </div>
 
+# How to Read Program B4
+
+This paper studies a question that is easy to phrase too strongly: if several encodings agree on one realization, has that realization been selected uniquely? The answer depends on what kind of agreement has been proved. Program B4 therefore uses four distinct levels of claim:
+
+1.  **Compatibility:** at least one candidate satisfies all declared constraints.
+
+2.  **Local rigidity:** a particular candidate has no nearby inequivalent deformation that also satisfies them.
+
+3.  **Conditional uniqueness:** a datum such as the hypercharge line is unique inside an already fixed carrier and representation class.
+
+4.  **Global selection:** every allowed candidate has been classified and exactly one equivalence class survives.
+
+Most of the constructive Standard Model evidence used here reaches the first level and selected instances of the third. The Jacobian and transversality results explain how the second can be certified. The fourth remains a classification problem and cannot be obtained merely by strengthening the description of one successful branch.
+
+## Object picture: filters on a candidate landscape
+
+Think of $`\mathcal M`$ as a landscape whose points encode complete candidate realizations, not just numerical parameter values. One point may include a global gauge group, a bundle, matter representations, overlap maps, a quantum algebra, and an action. Each constraint locus removes the candidates that fail one part of the contract. Their intersection $`\mathcal Z`$ is what remains after all declared filters have been applied.
+
+Three geometrically different outcomes are possible. The filters may leave a curve, so compatible theories still deform continuously. They may leave several isolated points, so every survivor is locally rigid but no survivor is globally preferred. Or they may leave one point in the declared candidate class. Only the last case proves uniqueness, and even then the declaration of the candidate class is part of the theorem.
+
+## Argument map
+
+Sections 3 and 4 define the candidate space, its quotient, and the local rank tests. Sections 5 and 6 separate classical gluing from quantum anomaly cancellation. Section 7 then inserts the selected A46–A50 finite-carrier data and checks that they form one coherent Standard Model compatibility packet. Section 8 explains why this successful packet is not yet an exhaustive selection theorem. This order is deliberate: the local mathematics first tells us exactly what the later computational packets do and do not establish.
+
 # Scope, Dependencies, and Current Evidence
 
 Program A0 supplies typed reductions, equivalence relations, admissible domains, and exact factorization criteria . Program B0 treats circle, lens, and nil as nonexhaustive profiles rather than literal factors or unique physical theories . Program B1 obtains gravitational geometry only after a Lorentzian metric, physical carrier, and action are supplied  . Program B2 obtains gauge theory only after a group action, principal bundle, connection, invariant pairing, and action are supplied  . Program B3 separates a discrete survivor filter from a complex quantum reconstruction .
@@ -48,16 +72,18 @@ Program B4 therefore does not intersect three words. It intersects explicitly ty
 
 Three later results are directly relevant:
 
-A46.  
+A46.
 A 48-state, three-family chiral carrier $`\mathbb C^3_{\rm family}\otimes\mathcal H_{16}`$ with family-diagonal gauge action and an exact anomaly table .
 
-A47.  
+A47.
 Native unitary automorphisms $`U(1)`$, $`SU(2)`$, and $`SU(3)`$ on the selected rank carriers, with faithful kernel $`\mathbb Z_6`$ on the A46 matter rows  .
 
-A50.  
+A50.
 For the completed fixed finite algebra and the A46 spectrum, a one-dimensional anomaly-free abelian phase nullspace with primitive hypercharge vector .
 
 All three are derived-exact at their declared finite selected-branch tier. They strengthen the existence side of this paper. Their own claim boundaries exclude exhaustive ultraviolet selection, full no-knob Standard Model values, and classification of all alternative carriers.
+
+In the landscape picture, these packets specify and verify one distinguished point together with several coordinates internal to that point. A46 fixes the matter carrier and its anomaly rows, A47 identifies the kernel of the group action, and A50 fixes the primitive abelian direction in the chosen phase space. They are mutually reinforcing because they act on the same carrier. They do not, by themselves, enumerate every other landscape on which a different carrier or global group could live.
 
 # Typed Encoding-Intersection Data
 
@@ -184,6 +210,8 @@ In particular, dimension zero gives local discreteness; positive dimension gives
 **Corollary 10** (What a rigidity certificate must show). *A finite-dimensional local rigidity claim is certified by an explicit constraint map and a rank or equivalent deformation-complex calculation after all equivalence directions are removed. Merely listing several requirements does not establish their independence.*
 
 </div>
+
+This criterion also explains why adding more named principles need not make a theory more rigid. If two principles impose the same local equation, their derivative rows are dependent and no new direction is removed. What matters is the rank of the combined constraint operator on the quotient tangent space, not the number of labels attached to it.
 
 ## Three counterexamples
 
@@ -335,6 +363,8 @@ N^c   & \mathbf 1             & \mathbf 1 & 0    & 1
 \end{array}
 ```
 This is the one-family $`\mathcal H_{16}`$ used by A46. Three family copies give the 48-state chiral carrier.
+
+The table should be read as the concrete common object on which the following certificates meet. The anomaly sums test its local quantum consistency, the center calculation tests which global group acts faithfully, and the A50 nullspace calculation tests which abelian phase direction survives inside the completed finite algebra. Agreement of all three calculations on these same rows is the substantive compatibility result.
 
 ## Exact local anomaly sums
 
@@ -572,3 +602,7 @@ A. Bilal, “Lectures on anomalies,” arXiv:0802.0634, 2008.
 E. Witten, “An $`SU(2)`$ anomaly,” *Physics Letters B* 117 (1982), 324–328.
 
 </div>
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

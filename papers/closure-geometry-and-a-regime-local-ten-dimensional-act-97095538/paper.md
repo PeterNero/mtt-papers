@@ -4,35 +4,34 @@ abstract: |
 author:
 - Peter Nero
 current_version: v4
-date: July 2026
-generated_from_main_tex_sha256: f747c960598a7d9cdf8fd36d0aec33e73b816be6f02b1848550457042ee558d3
+date: Corrected fourth edition July 2026
+generated_from_main_tex_sha256: 691de4188702b9f5ffda4a517d5200e23a2c89832b63b67992cf68d04ba1507d
 paper_id: closure-geometry-and-a-regime-local-ten-dimensional-act-97095538
 release_state: zenodo_released
-released_version: v3.0
+released_version: v4
 title: |
-  Closure Geometry and a Regime-Local  
-  Ten-Dimensional Action Ansatz  
-  Corrected fourth edition
-zenodo_doi: 10.5281/zenodo.19535592
-zenodo_record_id: 19535592
-zenodo_url: "https://zenodo.org/records/19535592"
+  Closure Geometry and a Regime-Local
+  Ten-Dimensional Action Ansatz
+zenodo_doi: 10.5281/zenodo.21654885
+zenodo_record_id: 21654885
+zenodo_url: "https://zenodo.org/records/21654885"
 ---
 
 # Revision note for this edition
 
-Supersedes.  
+Supersedes.
 *Closure Geometry and Unified Dynamics: A Ten-Dimensional Action for Mass, Scalar Relaxation, Quantization, and Curvature*, version 3.
 
-Reason.  
+Reason.
 The metric and Einstein–Hilbert term were imported while the action was described as derived and most general; closure cost, Hessian positivity, nil language, and nonuniform strain were also promoted directly to mass, one Higgs, quantization, and curvature.
 
-Resolution.  
-Version 4 declares a regime-local EFT ansatz, lists omitted operators, and supplies separate pole-mass, alignment-projector, compact-resolvent, curvature, and consistent-truncation gates.
+Resolution.
+Version 4 declares a regime-local EFT ansatz, lists omitted operators, and supplies separate pole-mass, alignment-projector, compact-resolvent, curvature, and consistent-truncation gates. This edition also adds a reader map and a worked compactification example so that the role of each gate can be followed without treating the action as a theorem list.
 
-Retained result.  
+Retained result.
 The action remains a useful conditional synthesis and can host the currently certified finite-SM profile branch.
 
-Remaining boundary.  
+Remaining boundary.
 A same-source q79 action, normalized zero modes, gauge-fixed Hessians, reduction error, and strict value selection remain to be constructed.
 
 # Status and regime
@@ -54,6 +53,22 @@ The action requires as input:
 6.  a power-counting rule and cutoff controlling omitted operators.
 
 The component identity $`1+3\times3=4+6`$ motivates a local comparison carrier but supplies none of these global inputs.
+
+#### How the argument should be read.
+
+There are four logically different stages:
+``` math
+\begin{gathered}
+\boxed{\text{declared geometry and fields}}
+\longrightarrow
+\boxed{\text{action ansatz}}\\
+\Downarrow\\[-1mm]
+\boxed{\text{equations and mode reduction}}
+\longrightarrow
+\boxed{\text{renormalized observables}} .
+\end{gathered}
+```
+An implication within this chain can be derived once the object on its left has been fixed. The chain as a whole is not thereby selected by MTT. In particular, varying an assumed ten-dimensional action rigorously derives its field equations, but it does not prove that this is the unique action chosen by closure geometry. The separate gates below answer four practical questions: which quadratic coefficients are masses, which scalar modes form a Higgs doublet, why the internal spectrum is discrete, and when discarding heavy modes is legitimate.
 
 # Fields and typed geometry
 
@@ -96,14 +111,25 @@ Here $`k_{ab}`$ and $`G_{AB}`$ must be positive on physical directions, $`\mathc
 
 Equation <a href="#eq:action" data-reference-type="eqref" data-reference="eq:action">[eq:action]</a> imports the Einstein–Hilbert term and a Lorentzian metric. It therefore realizes gravity; it does not derive gravity from strain or projection.
 
+Each displayed term has a distinct job. The $`R_{10}`$ term determines the metric response, $`F^2`$ supplies gauge propagation, $`G_{AB}D\phi^A D\phi^B`$ defines the scalar normalization, $`V`$ and $`\mathcal M`$ supply quadratic and interaction coefficients, and $`\mathcal L_{H,B,\Phi}`$ carries the flux–torsion sector. Varying these fields gives, schematically,
+``` math
+\frac{\delta S_{10}}{\delta g_{10}}=0,\qquad
+\frac{\delta S_{10}}{\delta A}=0,\qquad
+\frac{\delta S_{10}}{\delta\phi}=0,\qquad
+\frac{\delta S_{10}}{\delta\overline\Psi}=0.
+```
+These equations are consequences of the ansatz. Their coefficients remain inputs unless an upstream source theorem derives them from the selected q79 geometry. This distinction is important: an internally consistent solution of the field equations tests the assumed model, whereas source selection explains why that model and those coefficients apply.
+
 ## Omitted operators
 
 Unless forbidden by a stated symmetry, the effective action can also contain
 ``` math
-R^2,\quad R_{MN}R^{MN},\quad R_{MNPQ}R^{MNPQ},\quad
- RF^2,\quad F^3,\quad F^4,\quad (D\phi)^4,\quad
- R(D\phi)^2,\quad \phi^n,\quad
- \overline\Psi\Gamma\Psi D\phi,
+\begin{gathered}
+ R^2,\quad R_{MN}R^{MN},\quad R_{MNPQ}R^{MNPQ},\quad
+ RF^2,\quad F^3,\quad F^4,\\
+ (D\phi)^4,\quad R(D\phi)^2,\quad \phi^n,\quad
+ \overline\Psi\Gamma\Psi D\phi ,
+\end{gathered}
 ```
 torsion and Chern–Simons terms, higher fermion operators, and higher derivatives. A truncation must bound their contribution by powers of $`E/\Lambda_{10}`$ and the relevant curvature or field amplitudes.
 
@@ -167,6 +193,23 @@ Let $`D_X`$ be a self-adjoint internal Dirac-type or Laplace-type operator on th
 </div>
 
 This theorem justifies a Kaluza–Klein or finite spectral expansion. A nil group, nil boundary, or divergent cost does not by itself imply compact resolvent or isolated minima. Moreover, spectral discreteness is not a derivation of quantum probabilities. Quantization still requires a state space, observable algebra, dynamics, constraints, and probability rule.
+
+# A concrete compactification foothold
+
+The simplest model showing what the spectral and reduction statements do is not the selected q79 geometry but a product $`M_{10}=Y_4\times T^6`$ with circle radii $`R_i`$. For a real scalar of ten-dimensional mass $`\mu`$, normalized Fourier modes give
+``` math
+\Phi(x,y)=
+\sum_{\mathbf n\in\mathbb Z^6}
+\phi_{\mathbf n}(x)
+\prod_{i=1}^{6}
+\frac{\exp(i n_i y_i/R_i)}{\sqrt{2\pi R_i}},
+\qquad
+m_{\mathbf n}^2
+=\mu^2+\sum_{i=1}^{6}\frac{n_i^2}{R_i^2}.
+```
+Compactness has turned the internal differential operator into a discrete mass tower. The zero mode has mass $`\mu`$, while the first discarded mode is separated by a gap of at least $`\min_i R_i^{-2}`$ in squared mass. This is the elementary mechanism abstracted by the compact-resolvent theorem.
+
+For translation-invariant polynomial interactions, a field that is constant on $`T^6`$ remains constant under multiplication. The zero-mode sector then closes on itself and setting every nonzero mode to zero is an exact consistent truncation. If the background coefficients depend on $`y`$, or if retained nonzero modes multiply to source discarded momenta, that closure fails and the Schur–Feshbach estimate below is needed. Thus “the heavy modes have a large mass” and “the heavy modes are not sourced” are different claims. The example explains the logic only; it neither identifies the q79 fiber with $`T^6`$ nor supplies the missing q79 overlap kernels.
 
 # Curvature and integrability
 
@@ -254,6 +297,119 @@ The theorem is conditional. It does not establish uniqueness of the action, deri
 # Conclusion
 
 The corrected action is a useful synthesis ansatz, not a universal derivation. Its value is that every physical promotion now has a recognizable mathematical gate: global geometry, connection, compact resolvent, scalar projector, canonical pole normalization, gauge consistency, and controlled reduction. The next decisive construction is the same-source q79 intertwiner followed by evaluation of the action’s normalized internal rows.
+
+#### Rows used directly in this paper.
+
+- (*derived exact*).
+
+  Promoted direct K_threshold.Omega_H.lambda row.
+
+- (*derived exact*).
+
+  E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+
+- (*derived exact*).
+
+  Exact-branch internal TT support certificate; physical normalization remains open.
+
+- (*numeric certified*).
+
+  Weighted-theta Fourier-tail and Wiener contraction certificate.
+
+- (*derived exact*).
+
+  Executable q=79 exact-branch audit.
+
+- (*derived exact*).
+
+  CRT q=79 theorem on the selected exact branch.
+
+- (*derived exact*).
+
+  Sparse 27x27 qutrit-Weyl left-action realization.
+
+= by -
+
+#### Corpus-state cross-checks.
+
+- (*profile replay*).
+
+  Versioned Yu, Yd, Ye and lambda_H profile packet.
+
+- (*numeric certified*).
+
+  Three selected CKM profile rows and uncertainty comparison.
+
+- (*profile replay*).
+
+  Current non-looping global status and source-certificate map.
+
+- (*profile replay*).
+
+  Twelve-obligation embedded renormalized-SM equivalence audit.
+
+- (*profile replay*).
+
+  Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+
+- (*profile replay*).
+
+  Fifteen measured source coordinates, Jacobian and covariance transport.
+
+- (*profile replay*).
+
+  Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+
+- (*derived exact*).
+
+  Promoted P_EW source row at the declared one-shared-primitive standard.
+
+= by -
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The action written here remains a regime-local ansatz. The exact q=79, finite-action, anomaly, HYM, and internal TT packets constrain or instantiate ingredients used by the ansatz, but they do not derive its continuum action, physical normalization, or ultraviolet completion. Profile rows are retained only as cross-checks on the lower effective target.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Rows used directly in this paper
+
+- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
+- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+- `A13/gr_tt_support` (**DERIVED_EXACT**): Exact-branch internal TT support certificate; physical normalization remains open.
+- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
+- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
+- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
+- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
+
+## Corpus-state cross-checks
+
+- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
+- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
+- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
+- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
+- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
+- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 

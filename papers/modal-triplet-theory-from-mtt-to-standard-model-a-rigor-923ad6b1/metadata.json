@@ -48,15 +48,15 @@
       "sha256": "201721294ec743dc1f7b58b981833de776141f56ea40a5f013c170c1e4e3ab84"
     },
     {
-      "bytes": 4125,
+      "bytes": 3723,
       "path": "series.sty",
-      "sha256": "855f2fd105ffcc50550e03cc6ead158824bf963426356264a0e53376b30cd7a0"
+      "sha256": "9d835162f61bf398fe2c471fd20e4e1c3d3fb0008416c07f7169120d069c2a2c"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Modal_Triplet_Theory__From_MTT_to_Standard_Model_v2"
   },
-  "source_tree_sha256": "898e90885c41fef582345e5180d8c882bbb608368d19df472f11341bca87deb6",
+  "source_tree_sha256": "c4dc28ea4aee5c93f62fca5229a40f5abbe7d21e4fff60483df5cea9bb3b2a1b",
   "title": "Modal Triplet Theory: From MTT to Standard Model A Rigorous Derivation of Gauge, Matter, and Symmetry Breaking",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

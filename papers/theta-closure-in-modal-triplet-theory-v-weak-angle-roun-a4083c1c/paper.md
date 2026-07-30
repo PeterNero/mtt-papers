@@ -1,36 +1,50 @@
 ---
 abstract: |
-  We reassess whether the weak mixing angle provides a redundant test of the selected MTT gauge profile. Let $`r_{21}=I_2/I_1=g_1^2/g_2^2`$, with $`g_1=\sqrt{5/3}\,g_Y`$. Then $`\sin^2\theta_W=3r_{21}/(5+3r_{21})`$ at the same scale and in the same scheme. For the selected SMDR profile at $`Q=M_t`$, this gives $`\sin^2\theta_W=0.2346644\pm0.0000433`$. Because $`r_{21}`$ was itself obtained from the measured $`(g_Y,g_2)`$ profile, this equality is an exact algebraic round trip, not a held-out prediction. Supplying an absolute $`g_2`$ from $`(G_F,m_W)`$ does not remove that circularity. A genuine redundancy test requires an MTT source theorem selecting $`r_{21}`$ without electroweak gauge data, followed by independent common-scheme transport. The obsolete one-loop $`5~\mathrm{TeV}`$ calculation and its precision-prediction claim are withdrawn.
+  We reassess whether the weak mixing angle provides a redundant test of the selected MTT gauge profile. Let $`r_{21}=I_2/I_1=g_1^2/g_2^2`$, with $`g_1=\sqrt{5/3}\,g_Y`$. Then $`\sin^2\theta_W=3r_{21}/(5+3r_{21})`$ at the same scale and in the same scheme. For the selected SMDR profile at $`Q=M_t`$, this gives $`\sin^2\theta_W=0.2346644\pm0.0000433`$. Because $`r_{21}`$ was itself obtained from the measured $`(g_Y,g_2)`$ profile, this equality is an exact algebraic round trip, not a held-out prediction. Supplying an absolute $`g_2`$ from $`(G_F,m_W)`$ does not remove that circularity. A genuine redundancy test requires an MTT source theorem selecting $`r_{21}`$ without electroweak gauge data, followed by independent common-scheme transport.
 author:
 - Peter Nero
 current_version: v2
 date: July 2026
-generated_from_main_tex_sha256: 733bd0c5287818b91a87c6c965ced61b540a04f54f9dcf7f381d72d0681c641c
+generated_from_main_tex_sha256: 6d1a8603a811400c880f05b0fbd64f511478858c76d01294bf29e4e07e2078d8
 paper_id: theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: "Theta Closure in Modal Triplet Theory V: Weak-Angle Round Trip and the Non-Circularity Criterion"
-zenodo_doi: 10.5281/zenodo.18262146
-zenodo_record_id: 18262146
-zenodo_url: "https://zenodo.org/records/18262146"
+zenodo_doi: 10.5281/zenodo.21666013
+zenodo_record_id: 21666013
+zenodo_url: "https://zenodo.org/records/21666013"
 ---
 
 # Revision note for this edition
 
-Supersedes.  
+Supersedes.
 *Theta Closure in Modal Triplet Theory V: Redundant Determination from Gauge Couplings and the Weak Mixing Angle*, first edition.
 
-Reason.  
+Reason.
 The weak angle was presented as an independent precision test even though it was algebraically reconstructed from the same measured gauge profile, and the scale used the retired few-TeV crossing.
 
-Resolution.  
+Resolution.
 Version 2 derives the same-scheme round-trip formula, propagates its uncertainty at $`Q=M_t`$, and states an explicit non-circularity criterion for any future test.
 
-Retained result.  
+Retained result.
 The weak angle remains an exact consistency identity for a supplied gauge-ratio profile.
 
-Remaining boundary.  
+Remaining boundary.
 A held-out test requires MTT to select $`r_{21}`$ without electroweak gauge data and then transport it independently.
+
+# Central picture and roadmap
+
+The central picture is that the weak mixing angle describes how the neutral electroweak gauge fields are rotated into the photon and $`Z`$ directions. In a fixed renormalization scheme and at one scale, that angle is determined by the same pair of couplings $`(g_Y,g_2)`$. It is therefore not a new datum when the ratio of those couplings has already been used.
+
+The argument has three steps:
+``` math
+(g_Y,g_2)
+\longrightarrow
+r_{21}=\frac{5g_Y^2}{3g_2^2}
+\longrightarrow
+s_W^2=\frac{3r_{21}}{5+3r_{21}}.
+```
+Section 3 proves that the composition returns $`g_Y^2/(g_Y^2+g_2^2)`$ identically. Section 4 explains why adding an absolute $`SU(2)`$ normalization does not create a second ratio. Section 5 states the data-separation conditions required for a genuine held-out test.
 
 # Selected inputs and scope
 
@@ -95,9 +109,32 @@ s_W^2(M_t)=0.2346644\pm0.0000433,
 ```
 where the uncertainty is propagated from the selected $`r_{21}`$ row. Direct substitution of the selected $`g_Y`$ and $`g_2`$ gives the same central value. This is a useful convention and arithmetic check, but it has no held-out status.
 
+## Worked example and uncertainty check
+
+As a normalization check, suppose $`g_Y=g_2`$. Then $`r_{21}=5/3`$, and Equation <a href="#eq:weak_identity" data-reference-type="eqref" data-reference="eq:weak_identity">[eq:weak_identity]</a> gives
+``` math
+s_W^2=\frac{3(5/3)}{5+3(5/3)}=\frac12,
+```
+exactly as the defining coupling formula does.
+
+For the selected profile, inserting $`r_{21}=0.5110273`$ gives $`s_W^2=0.2346644`$. The derivative
+``` math
+\frac{d s_W^2}{d r_{21}}
+=\frac{15}{(5+3r_{21})^2}
+```
+is approximately $`0.351443`$ at that point, so multiplying by the supplied ratio uncertainty $`0.0001231`$ gives $`0.0000433`$. This verifies both the central value and its one-row linear uncertainty propagation.
+
+The interpretation is simple: the numerical agreement confirms the normalization convention and arithmetic transport. It does not create an independent electroweak datum because the same coupling ratio appears on both sides of the calculation.
+
 # Why the $`(G_F,m_W)`$ construction remains circular
 
 An electroweak input such as $`(G_F,m_W)`$ can set an absolute $`SU(2)`$ normalization, subject to radiative matching. It cannot make the weak-angle test independent when the ratio $`r_{21}`$ still comes from the measured hypercharge-to-$`SU(2)`$ profile. Indeed, once $`g_2`$ and $`r_{21}`$ are supplied, Equation <a href="#eq:r21" data-reference-type="eqref" data-reference="eq:r21">[eq:r21]</a> defines $`g_1`$ and hence the weak angle. The information being tested is already present in $`r_{21}`$.
+
+At tree level the usual relation is
+``` math
+g_2^2=4\sqrt{2}\,G_Fm_W^2,
+```
+with radiative corrections required for a precision common-scheme value. This can supply the overall $`SU(2)`$ scale, but it supplies no independent value of $`g_Y/g_2`$. The latter is precisely the information already stored in $`r_{21}`$.
 
 The earlier tree-level value near $`0.2312`$ used the obsolete $`5~\mathrm{TeV}`$ profile and a one-loop return to $`M_Z`$. It is withdrawn as a prediction. Its threshold scan also showed that the apparent precision was not stable under the stated electroweak matching variation.
 
@@ -121,29 +158,109 @@ The weak mixing angle is exactly consistent with the selected gauge profile, as 
 
 It does not add an independent Standard Model observable to MTT closure. The former non-circularity claim fails because the overlap ratio already contains the measured weak-angle information. The next theorem target is sharply defined: select $`r_{21}`$ from MTT source geometry before consulting the electroweak gauge profile, then execute a held-out common-scheme comparison.
 
-# References
+#### Rows used directly in this paper.
 
-1.  Particle Data Group (PDG), *Review of Particle Physics*, Prog. Theor. Exp. Phys. 2024, 083C01 (for $`G_F`$, $`m_W`$, $`M_Z`$, and electroweak input values).
+- (*profile replay*).
 
-2.  M. E. Machacek and M. T. Vaughn, “Two-loop renormalization group equations in a general quantum field theory,” Nucl. Phys. B222 (1983) 83–103.
+  Current non-looping global status and source-certificate map.
 
-3.  T. Kato, *Perturbation Theory for Linear Operators*, Springer (1995).
+- (*profile replay*).
 
-4.  P. Nero, *Modal Triplet Theory: Foundation*, MTT corpus.
+  Twelve-obligation embedded renormalized-SM equivalence audit.
 
-5.  P. Nero, *Modal Triplet Theory: Quantum Amplitudes from Modal Geometry*, MTT corpus.
+- (*profile replay*).
 
-6.  P. Nero, *Gauge Couplings, Internal Geometry, and $`\Theta`$–Closure in Modal Triplet Theory*, Paper I.
+  Fifteen measured source coordinates, Jacobian and covariance transport.
 
-7.  P. Nero, *Direct Geometric Evaluation of Nonabelian Overlaps in Modal Triplet Theory*, Paper II.
+- (*profile replay*).
 
-8.  P. Nero, *Twistor–Action Matching of Gauge Overlaps in Modal Triplet Theory*, Paper III.
+  Eight-coordinate SMDR output with positive-definite 8x8 covariance.
 
-9.  P. Nero, *Extending $`\Theta`$–Closure to Gravity and Cosmology in Modal Triplet Theory*, Paper IV.
+- (*derived exact*).
+
+  Promoted P_EW source row at the declared one-shared-primitive standard.
+
+= by -
+
+#### Corpus-state cross-checks.
+
+- (*profile replay*).
+
+  Versioned Yu, Yd, Ye and lambda_H profile packet.
+
+- (*numeric certified*).
+
+  Three selected CKM profile rows and uncertainty comparison.
+
+- (*derived exact*).
+
+  Promoted direct K_threshold.Omega_H.lambda row.
+
+- (*derived exact*).
+
+  E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+
+- (*numeric certified*).
+
+  Weighted-theta Fourier-tail and Wiener contraction certificate.
+
+- (*profile replay*).
+
+  Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+
+- (*derived exact*).
+
+  Sparse 27x27 qutrit-Weyl left-action realization.
+
+= by -
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The weak-angle round trip uses the electroweak source row and common-scheme precision workspaces directly, with the global profile audit fixing the comparison convention. Flavor, neutral, HYM, and finite-matrix rows are neighboring context. The non-circular zero-knob source upgrade remains open.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Rows used directly in this paper
+
+- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
+- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
+- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
+- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
+
+## Corpus-state cross-checks
+
+- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
+- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
+- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
+- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
+- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 
 99
+
+S. Navas et al. (Particle Data Group), *Review of Particle Physics*, Phys. Rev. D **110** (2024) 030001. <https://doi.org/10.1103/PhysRevD.110.030001>
 
 P. Nero, *Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255621>
 
@@ -175,6 +292,6 @@ P. Nero, *Modal Fixed Points, Bell’s Beables, and the Limits of Factorization
 
 P. Nero, *Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory*, Zenodo preprint, August 2025. <https://doi.org/10.5281/zenodo.18208884>
 
-P. Nero, *From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18254862>
+P. Nero, *Modal Triplet Theory and History-Dependent Stochastic Processes: Fixed-State Indivisibility, Markov Order, and the Quantum Boundary*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18254862>
 
 </div>

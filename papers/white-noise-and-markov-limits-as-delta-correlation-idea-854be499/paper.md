@@ -1,110 +1,101 @@
 ---
 abstract: |
-  Delta functions appear in stochastic physics most visibly through white-noise correlations,
+  A delta-correlated covariance is the distributional limit of many finite-memory kernels, but covariance convergence alone does not imply convergence of stochastic processes, Gaussianity, or the Markov property. We separate these statements and prove an exact process-level model. Nonnegative approximate-identity kernels with total mass $`2D`$ converge to $`2D\delta_0`$ as distributions. A valid stationary covariance must additionally be of positive type. For the explicit stationary colored Ornstein–Uhlenbeck source
   ``` math
-  \langle \xi(t)\xi(t')\rangle = 2D\,\delta(t-t'),
+  d\xi_\tau=-\tau^{-1}\xi_\tau\,dt
+   +\sqrt{2D}\,\tau^{-1}dW_t,
   ```
-  and through Markov transition kernels that collapse memory into instantaneous updates. This paper develops the stochastic sequel to the delta-projection program in Modal Triplet Theory (MTT). The main mathematical point is simple but structurally important: white noise is the zero-correlation-time limit of finite-memory colored disturbances. Thus temporal delta correlations are not primitive randomness; they are singular limits of bounded correlation kernels.
-
-  We prove that standard families of finite-memory covariance kernels converge distributionally to Dirac deltas, derive the Ornstein–Uhlenbeck white-noise model as a Markov limit of colored disturbance models, and separate three notions that are often conflated: deterministic upstream evolution, stochastic projected description, and white-noise idealization. In the MTT interpretation, finite disturbances are filtered through the evolve–project cycle; damping suppresses noncoherent modes, while persistent disturbance produces a finite OU floor. The delta-correlated noise model is recovered only when the disturbance correlation time is idealized to zero relative to the coherent timescale.
-
-  The conclusion is that white noise is the stochastic analogue of the point source, gauge-fixing delta, projective measurement, contact vertex, conservation delta, and spectral peak studied earlier in this series. It is the singular shadow of a finite admissible process: here, finite-memory disturbance compressed into instantaneous correlation.
+  the integrated disturbance $`B_\tau(t)=\int_0^t\xi_\tau(s)\,ds`$ converges weakly in $`C([0,T])`$ to $`\sqrt{2D}\,W`$. The damped response therefore converges to the white-noise Ornstein–Uhlenbeck equation. Its exact finite-memory stationary variance is
+  ``` math
+  \operatorname{Var}(a_\tau)=\frac{D}{\gamma(1+\gamma\tau)},
+  ```
+  which tends to $`D/\gamma`$. This supplies a rigorous effective Markov limit, not a derivation of fundamental randomness. A general MTT source theorem would still need a selected preparation measure or invariant state, positivity of the covariance, mixing or a functional limit theorem, closure of the resolved variables, and a derivation of the finite-memory coefficients from the physical carrier.
 author:
 - Peter Nero
-current_version: unversioned
-date: April 2026
-generated_from_main_tex_sha256: c79f18f7635efde97728c2da7899ff76ed9e4e35987cc1407bfbe34aa5f7dd47
+current_version: v1
+date: July 2026, Version 1
+generated_from_main_tex_sha256: 1d38d1f8f8c4c4af18459c4d2464d9fa6583fe3d28625f099ebf375a915e2180
 paper_id: white-noise-and-markov-limits-as-delta-correlation-idea-854be499
-release_state: not_matched_to_zenodo
+release_state: zenodo_released
+released_version: v1
 title: |
-  White Noise and Markov Limits as Delta-Correlation Idealizations  
-  Finite Memory, Colored Disturbances, and OU Floors in Modal Triplet Theory
+  Finite-Memory Noise and the White-Noise/Markov Limit
+  Exact Colored-OU Convergence and Its MTT Scope
+zenodo_doi: 10.5281/zenodo.21666016
+zenodo_record_id: 21666016
+zenodo_url: "https://zenodo.org/records/21666016"
 ---
 
-# Purpose and Claim Discipline
+# Version 1 Revision Note
 
-The purpose of this paper is to extend the delta-projection program to stochastic descriptions. In many effective theories, unresolved degrees of freedom are represented by noise terms. The most common idealization is white noise:
+Supersedes
+The unversioned April 2026 manuscript *White Noise and Markov Limits as Delta-Correlation Idealizations: Finite Memory, Colored Disturbances, and OU Floors in Modal Triplet Theory*.
+
+Reason
+The earlier paper proved distributional covariance convergence but described an OU process and a Markov limit as if they followed automatically. It did not require positive-definiteness of a covariance, Gaussianity or mixing for process convergence, or closure of the resolved state.
+
+Resolution
+This version distinguishes kernel, covariance, finite- dimensional, path-space, and Markov convergence. It proves an explicit colored-OU functional limit and the exact finite-memory response variance, then states the additional assumptions needed for a general MTT realization.
+
+Retained result
+White-noise covariance is a controlled zero-memory idealization of normalized finite-memory kernels, and the exponential colored-OU model converges to the standard white-noise OU model.
+
+Remaining boundary
+No selected MTT geometry currently emits the finite-memory source, its invariant law, mixing estimates, or coefficients for all physical sectors. The exact model in this paper is an effective construction, not evidence that noise is ontically fundamental or universally Markovian.
+
+# Five different limits
+
+The notation
 ``` math
-\mathbb E[\xi(t)\xi(t')] = 2D\,\delta(t-t').
+\mathbb{E}[\xi(t)\xi(t')]=2D\,\delta(t-t')
 ```
-This expression is mathematically useful, but it is not an ordinary function. It represents a singular process with zero correlation time and unbounded pointwise variance.
+is compact, but it can conceal several independent claims:
 
-The central claim of this paper is:
-``` math
-\boxed{\text{white noise is the zero-memory limit of finite-correlation disturbance}.}
-```
+1.  a family of ordinary kernels converges to a Dirac distribution;
 
-In MTT language:
-``` math
-\boxed{\delta(t-t')=\text{singular shadow of finite-memory projected disturbance}.}
-```
+2.  those kernels are valid covariances of actual processes;
 
-## Non-claims
+3.  the finite-dimensional laws of those processes converge;
 
-We do not claim:
+4.  the full paths converge in a specified topology; and
 
-1.  that stochastic differential equations are invalid;
+5.  the limiting resolved dynamics is Markov.
 
-2.  that white noise is never useful;
-
-3.  that all effective randomness has the same microscopic origin;
-
-4.  that this paper derives the Born rule or all projected stochasticity from MTT;
-
-5.  that the finite-memory kernel is computed here from a specific carrier geometry.
-
-The narrower claim is that delta-correlated noise should be read as an idealization: the finite correlation structure of unresolved disturbances has been collapsed to zero temporal width.
+Only the first statement follows from the approximate-identity calculation. The other four require extra hypotheses. This paper proves all five for one explicit Gaussian colored-OU model and keeps the general case conditional.
 
 <div class="center">
 
-| Layer | Role in this paper |
+| Object | Required control |
 |:---|:---|
-| Mathematical core | Approximate-identity covariance kernels converge to temporal Dirac deltas. |
-| Standard stochastic model | White-noise OU dynamics is obtained as a zero-memory limit of colored disturbance. |
-| MTT interpretation | Projection can erase retained memory, and the white-noise delta is the sharp notation for that erasure. |
-| Non-claim | Not every stochastic process is derived here from MTT, and not every colored kernel is physically admissible. |
+| Kernel | positivity as a measure, normalization, concentration |
+| Covariance | positive type or nonnegative spectral measure |
+| Finite-dimensional law | distributional information beyond second moments, unless Gaussian |
+| Path law | tightness plus finite-dimensional convergence |
+| Markov limit | closure of the limiting state and transition law |
 
 </div>
 
-# Finite-Memory Covariance Kernels
+# Approximate identities
 
-Let $`C_\tau(t)`$ be a family of even, nonnegative covariance kernels on $`\mathbb R`$, with correlation time $`\tau>0`$, normalized by
-``` math
-\int_{-\infty}^{\infty} C_\tau(t)\,dt = 2D .
-```
-A standard example is the exponential kernel
-``` math
-C_\tau(t)=\frac{D}{\tau}e^{-|t|/\tau}.
-```
-Another is the Gaussian kernel
-``` math
-C_\tau(t)=\frac{2D}{\sqrt{2\pi}\tau}\exp\!\left(-\frac{t^2}{2\tau^2}\right).
-```
-Both have total integrated covariance $`2D`$. The parameter $`\tau`$ is the finite memory scale. White noise is obtained only when $`\tau\downarrow 0`$.
+Let $`C_\tau\in L^1(\mathbb{R})`$, with $`\tau>0`$, model a memory kernel.
 
-# The Delta-Correlation Limit
+<div id="thm:delta" class="theorem">
 
-<div class="theorem">
+**Theorem 1** (Delta-correlation limit). *Suppose:*
 
-**Theorem 1** (Finite-memory kernels converge to a temporal delta). *Let $`C_\tau(t)`$ be an approximate-identity family satisfying:*
+1.  *$`C_\tau(t)\geq0`$;*
 
-1.  *$`C_\tau(t)\ge 0`$;*
+2.  *$`\int_{\mathbb R}C_\tau(t)\,dt=2D`$; and*
 
-2.  *$`\int_{\mathbb R} C_\tau(t)\,dt=2D`$;*
-
-3.  *for every $`\epsilon>0`$,
+3.  *for every $`\varepsilon>0`$,
     ``` math
-    \int_{|t|>\epsilon} C_\tau(t)\,dt\to 0
-    \qquad\text{as }\tau\downarrow 0 .
+    \int_{|t|>\varepsilon}C_\tau(t)\,dt\longrightarrow0
+    \quad\text{as }\tau\downarrow0.
     ```*
 
-*Then
+*Then $`C_\tau\to2D\delta_0`$ in the sense of distributions. Equivalently, for every $`f\in C_c^\infty(\mathbb{R})`$,
 ``` math
-C_\tau(t)\to 2D\,\delta(t)
-```
-in the sense of distributions. Equivalently, for every test function $`f\in C_c^\infty(\mathbb R)`$,
-``` math
-\lim_{\tau\downarrow 0}\int_{\mathbb R} C_\tau(t)f(t)\,dt=2D f(0).
+\int_{\mathbb R}C_\tau(t)f(t)\,dt\longrightarrow2Df(0).
 ```*
 
 </div>
@@ -114,308 +105,355 @@ in the sense of distributions. Equivalently, for every test function $`f\in C_c^
 *Proof.* Write
 ``` math
 \int C_\tau(t)f(t)\,dt-2Df(0)
-=
-\int C_\tau(t)(f(t)-f(0))\,dt.
+=\int C_\tau(t)\bigl(f(t)-f(0)\bigr)\,dt.
 ```
-Fix $`\epsilon>0`$. Since $`f`$ is continuous, choose $`\epsilon`$ so that $`|f(t)-f(0)|<\eta`$ for $`|t|<\epsilon`$. Then
+For a fixed $`\varepsilon>0`$, the contribution from $`|t|<\varepsilon`$ is bounded by
 ``` math
-\left|\int_{|t|<\epsilon} C_\tau(t)(f(t)-f(0))\,dt\right|
-\le 2D\eta .
+2D\sup_{|t|<\varepsilon}|f(t)-f(0)|.
 ```
-On the complement, $`|f(t)-f(0)|\le 2\|f\|_\infty`$, hence
+The complementary contribution is bounded by
 ``` math
-\left|\int_{|t|>\epsilon} C_\tau(t)(f(t)-f(0))\,dt\right|
-\le 2\|f\|_\infty\int_{|t|>\epsilon}C_\tau(t)\,dt,
+2\|f\|_\infty
+\int_{|t|>\varepsilon}C_\tau(t)\,dt.
 ```
-which tends to zero by assumption. Since $`\eta`$ is arbitrary, the result follows. ◻
+First take $`\tau\downarrow0`$, then $`\varepsilon\downarrow0`$. ◻
 
 </div>
 
-<div class="corollary">
+Two standard examples are
+``` math
+\begin{align}
+C_\tau^{\mathrm{exp}}(t)
+&=\frac{D}{\tau}e^{-|t|/\tau},
+\label{eq:exp-cov}\\
+C_\tau^{\mathrm{gau}}(t)
+&=\frac{2D}{\sqrt{2\pi}\tau}
+\exp\!\left(-\frac{t^2}{2\tau^2}\right).
+\label{eq:gauss-cov}
+\end{align}
+```
+Both have total mass $`2D`$, and both concentrate at the origin.
 
-**Corollary 2** (Exponential covariance gives white noise in the zero-memory limit). *For
+# A kernel is not automatically a covariance
+
+Pointwise nonnegativity is enough for Theorem <a href="#thm:delta" data-reference-type="ref" data-reference="thm:delta">1</a>, but not enough for a stationary covariance.
+
+<div class="definition">
+
+**Definition 2** (Positive-type covariance). An even function $`C:\mathbb{R}\to\mathbb{R}`$ is of positive type if, for every finite set $`t_1,\ldots,t_n`$ and $`z_1,\ldots,z_n\in\mathbb{C}`$,
 ``` math
-C_\tau(t)=\frac{D}{\tau}e^{-|t|/\tau},
+\sum_{j,k=1}^n
+z_j\overline{z_k}\,C(t_j-t_k)\geq0.
 ```
-one has
+
+</div>
+
+Every covariance of a second-order stationary process has this property, because the displayed sum equals
 ``` math
-C_\tau(t)\to 2D\,\delta(t)
+\mathbb{E}\left|
+\sum_j z_j\xi(t_j)
+\right|^2.
 ```
-distributionally as $`\tau\downarrow 0`$.*
+Conversely, under the usual continuity assumptions, Bochner’s theorem represents a positive-type function as the Fourier transform of a finite nonnegative spectral measure.
+
+The two kernels <a href="#eq:exp-cov" data-reference-type="eqref" data-reference="eq:exp-cov">[eq:exp-cov]</a>–<a href="#eq:gauss-cov" data-reference-type="eqref" data-reference="eq:gauss-cov">[eq:gauss-cov]</a> are valid:
+``` math
+\widehat C_\tau^{\mathrm{exp}}(\omega)
+=\frac{2D}{1+\omega^2\tau^2}\geq0,
+\qquad
+\widehat C_\tau^{\mathrm{gau}}(\omega)
+=2D e^{-\omega^2\tau^2/2}\geq0.
+```
+
+<div id="prop:covariance" class="proposition">
+
+**Proposition 3** (Covariance does not determine process law). *Two processes can have identical means and covariances but different laws. Consequently, covariance convergence alone does not imply process convergence or Gaussian white noise.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* The kernel is nonnegative, has total integral $`2D`$, and its mass outside any fixed neighborhood of the origin decays exponentially:
-``` math
-\int_{|t|>\epsilon}\frac{D}{\tau}e^{-|t|/\tau}\,dt
-=2D e^{-\epsilon/\tau}\to0.
-```
- ◻
+*Proof.* Let $`Z\sim N(0,1)`$ and let $`R`$ be Rademacher, with values $`\pm1`$ of equal probability. The constant processes $`X_t=Z`$ and $`Y_t=R`$ both have mean zero and covariance one at every pair of times. Their one-time distributions are different. ◻
 
 </div>
 
-# Colored Noise Before White Noise
+Gaussianity removes this particular ambiguity because a Gaussian process is determined by its mean and covariance. The exact model below uses that fact and separately proves path tightness.
 
-A finite-memory disturbance $`\xi_\tau(t)`$ is modeled by
+# An exact finite-memory source
+
+Fix $`D>0`$. For every $`\tau>0`$, let $`\xi_\tau`$ be the stationary solution of
 ``` math
-\mathbb E[\xi_\tau(t)]=0,
-\qquad
-\mathbb E[\xi_\tau(t)\xi_\tau(t')]=C_\tau(t-t').
+\begin{equation}
+d\xi_\tau(t)
+=-\frac{1}{\tau}\xi_\tau(t)\,dt
++\frac{\sqrt{2D}}{\tau}\,dW_t,
+\label{eq:colored-ou}
+\end{equation}
 ```
-For finite $`\tau`$, this process is colored: nearby times are correlated. The white-noise model is the singular limit
+initialized with $`\xi_\tau(0)\sim N(0,D/\tau)`$, independent of the future Wiener increments. Then
 ``` math
-\mathbb E[\xi(t)\xi(t')]=2D\,\delta(t-t').
+\begin{equation}
+\mathbb{E}[\xi_\tau(t)\xi_\tau(s)]
+=\frac{D}{\tau}e^{-|t-s|/\tau}.
+\label{eq:colored-cov}
+\end{equation}
+```
+The source is Markov and Gaussian on the augmented variable $`\xi_\tau`$, has finite memory time $`\tau`$, and has diverging pointwise variance $`D/\tau`$. Its integrated power remains finite.
+
+Define
+``` math
+B_\tau(t)=\int_0^t\xi_\tau(u)\,du.
 ```
 
-Thus the delta correlation does not mean the physical disturbance has no structure. It means the effective description has discarded the structure because the correlation time is treated as negligible compared with the resolved timescale.
+<div id="thm:functional" class="theorem">
 
+**Theorem 4** (Colored noise converges to Brownian forcing). *For every finite $`T>0`$,
 ``` math
-\boxed{
-\text{white noise}=
-\text{finite-memory disturbance viewed below its memory scale}.
-}
+B_\tau\Rightarrow\sqrt{2D}\,W
+\quad\text{in }C([0,T])
 ```
-
-## Explicit exponential colored-noise model
-
-A standard finite-memory covariance is
-``` math
-C_\tau(t)=\frac{D}{\tau}e^{-|t|/\tau}.
-```
-It has total weight
-``` math
-\int_{-\infty}^{\infty}C_\tau(t)\,dt=2D
-```
-and therefore converges, in the sense of distributions, to
-``` math
-C_\tau(t)\longrightarrow 2D\,\delta(t)
-```
-as $`\tau\downarrow0`$. Its Fourier transform is
-``` math
-\widehat C_\tau(\omega)=\frac{2D}{1+\omega^2\tau^2},
-```
-which tends pointwise to the flat white-noise spectrum $`2D`$. This model makes explicit that white noise is not a separate primitive object; it is the limit in which a finite correlation time is collapsed.
-
-<div class="remark">
-
-*Remark 3* (Normalization). Some authors write the white-noise covariance as $`D\delta(t-t')`$ instead of $`2D\delta(t-t')`$. The factor of $`2`$ is a convention tied to the standard OU normalization. Nothing in the argument depends on this convention.
+as $`\tau\downarrow0`$.*
 
 </div>
 
-# OU Dynamics and the Disturbance–Damping Floor
+<div class="proof">
 
-The fixed-point disturbance analysis in MTT uses precisely the structure that makes this paper natural: noncoherent modes are damped, but persistent disturbances can maintain a finite residual width.
+*Proof.* Each $`B_\tau`$ is a centered continuous Gaussian process. For $`0\leq s\leq t`$, direct integration of <a href="#eq:colored-cov" data-reference-type="eqref" data-reference="eq:colored-cov">[eq:colored-cov]</a> gives
+``` math
+\begin{align}
+\operatorname{Cov}(B_\tau(t),B_\tau(s))
+={}&2Ds
+-D\tau(1-e^{-s/\tau})\notag\\
+&-D\tau
+\left(e^{-(t-s)/\tau}-e^{-t/\tau}\right).
+\label{eq:integrated-cov}
+\end{align}
+```
+This converges to $`2D\min(s,t)`$, the covariance of $`\sqrt{2D}\,W`$. Gaussianity therefore gives convergence of every finite-dimensional distribution.
 
-Consider the scalar mode equation
+For $`0\leq s\leq t\leq T`$,
 ``` math
-\dot a(t)=-\gamma a(t)+\xi(t),
-\qquad \gamma>0,
+\mathbb{E}|B_\tau(t)-B_\tau(s)|^2
+=2D(t-s)-2D\tau(1-e^{-(t-s)/\tau})
+\leq2D|t-s|.
 ```
-with white noise covariance
+The increment is Gaussian, so
 ``` math
-\mathbb E[\xi(t)\xi(t')]=2D\,\delta(t-t').
+\mathbb{E}|B_\tau(t)-B_\tau(s)|^4
+=3\left(\mathbb{E}|B_\tau(t)-B_\tau(s)|^2\right)^2
+\leq12D^2|t-s|^2.
 ```
-This is the Ornstein–Uhlenbeck model. Its stationary variance is
+The Kolmogorov tightness criterion gives tightness in $`C([0,T])`$. Together with finite-dimensional convergence, this proves the claim. ◻
+
+</div>
+
+This theorem is stronger than
 ``` math
-\operatorname{Var}(a)=\frac{D}{\gamma}.
+C_\tau\to2D\delta_0.
+```
+It establishes convergence of complete continuous paths for an explicit finite-memory process.
+
+# The damped response and its exact floor
+
+Let $`a_\tau`$ solve the ordinary random differential equation
+``` math
+\begin{equation}
+\dot a_\tau(t)
+=-\gamma a_\tau(t)+\xi_\tau(t),
+\qquad \gamma>0.
+\label{eq:colored-response}
+\end{equation}
+```
+Equivalently,
+``` math
+a_\tau(t)
+=a_0-\gamma\int_0^t a_\tau(s)\,ds+B_\tau(t).
 ```
 
-If instead the disturbance has finite correlation time,
+<div id="cor:ou-limit" class="corollary">
+
+**Corollary 5** (White-noise OU limit). *On every finite interval,
 ``` math
-\mathbb E[\xi_\tau(t)\xi_\tau(t')]=C_\tau(t-t'),
+a_\tau\Rightarrow a
+\quad\text{in }C([0,T]),
 ```
-then the stationary variance is
+where
 ``` math
-\operatorname{Var}_\tau(a)
-=
-\int_{-\infty}^{\infty}\frac{d\omega}{2\pi}
-\frac{\widehat C_\tau(\omega)}{\gamma^2+\omega^2}.
+\begin{equation}
+da(t)=-\gamma a(t)\,dt+\sqrt{2D}\,dW_t.
+\label{eq:white-ou}
+\end{equation}
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* For a continuous driver $`b`$, the integral equation
+``` math
+x(t)=a_0-\gamma\int_0^t x(s)\,ds+b(t)
 ```
-For the exponential covariance above,
+has a unique solution, and the solution map is continuous in the uniform norm by Gronwall’s inequality. Apply the continuous mapping theorem to Theorem <a href="#thm:functional" data-reference-type="ref" data-reference="thm:functional">4</a>. ◻
+
+</div>
+
+The finite-memory stationary variance can also be computed exactly without taking the limit.
+
+<div id="thm:finite-floor" class="theorem">
+
+**Theorem 6** (Exact colored-OU response variance). *For the stationary joint system <a href="#eq:colored-ou" data-reference-type="eqref" data-reference="eq:colored-ou">[eq:colored-ou]</a>–<a href="#eq:colored-response" data-reference-type="eqref" data-reference="eq:colored-response">[eq:colored-response]</a>,
 ``` math
-C_\tau(t)=\frac{D}{\tau}e^{-|t|/\tau},
+\operatorname{Var}(\xi_\tau)=\frac{D}{\tau},
 \qquad
-\widehat C_\tau(\omega)=\frac{2D}{1+\omega^2\tau^2}.
+\operatorname{Cov}(a_\tau,\xi_\tau)=\frac{D}{1+\gamma\tau},
+```
+and
+``` math
+\begin{equation}
+\operatorname{Var}(a_\tau)
+=\frac{D}{\gamma(1+\gamma\tau)}.
+\label{eq:finite-variance}
+\end{equation}
 ```
 Hence
 ``` math
-\operatorname{Var}_\tau(a)
-=
-\int_{-\infty}^{\infty}\frac{d\omega}{2\pi}
-\frac{2D}{(1+\omega^2\tau^2)(\gamma^2+\omega^2)}.
+\operatorname{Var}(a_\tau)\longrightarrow\frac{D}{\gamma},
 ```
-Evaluating the elementary contour integral gives
-``` math
-\operatorname{Var}_\tau(a)
-=
-\frac{D}{\gamma(1+\gamma\tau)}.
-```
-Therefore
-``` math
-\operatorname{Var}_\tau(a)\to \frac{D}{\gamma}
-```
-as $`\tau\downarrow0`$. Finite memory lowers the effective variance in this particular model because high-frequency disturbance power is not yet flat.
-
-<div class="remark">
-
-*Remark 4*. The exact finite-$`\tau`$ value depends on the colored-noise model. The robust structural point is the limit: finite-memory disturbance converges to the OU white-noise floor when the memory time is collapsed relative to the damping timescale.
+the stationary variance of equation <a href="#eq:white-ou" data-reference-type="eqref" data-reference="eq:white-ou">[eq:white-ou]</a>.*
 
 </div>
 
-## Connection to finite survivor-basin width
+<div class="proof">
 
-In the fixed-point interpretation, damping does not by itself imply a point outcome. Persistent disturbance leaves a residual width. For a single damped mode, the white-noise idealization gives
+*Proof.* Stationarity of $`\xi_\tau`$ gives $`\operatorname{Var}(\xi_\tau)=D/\tau`$. Differentiating the stationary second moments, or equivalently solving the $`2\times2`$ Lyapunov equation, gives
 ``` math
-\sigma^2=\frac{D}{\gamma},
+0=-(\gamma+\tau^{-1})\operatorname{Cov}(a_\tau,\xi_\tau)
++\frac{D}{\tau},
 ```
-while the exponential colored model gives
+and
 ``` math
-\sigma_\tau^2=\frac{D}{\gamma(1+\gamma\tau)}.
+0=-2\gamma\operatorname{Var}(a_\tau)
++2\operatorname{Cov}(a_\tau,\xi_\tau).
 ```
-Thus finite memory, finite damping, and finite disturbance power together define a nonzero basin width. The delta limit appears only when the memory kernel is collapsed and the remaining width is then further idealized away.
+Solving these equations yields the result. ◻
 
-# Markov Limits
+</div>
 
-White noise is closely tied to Markovian effective dynamics, but the implication is not automatic. A delta covariance is one ingredient in a Markov idealization; one also needs compatible drift, closure of the resolved variables, and no retained hidden memory variables. A process with memory is generally non-Markovian when viewed only through the resolved variable. Markovianity emerges only when the relevant memory kernel collapses and the reduced state is closed under the effective dynamics.
+The quantity in <a href="#eq:finite-variance" data-reference-type="eqref" data-reference="eq:finite-variance">[eq:finite-variance]</a> is an effective response width. It is not, without further operator and normalization theorems, the Heisenberg uncertainty relation.
 
-A schematic generalized Langevin equation is
-``` math
-\dot x(t)
-=
--\int_0^t M_\tau(t-s)x(s)\,ds+\eta_\tau(t),
-```
-where $`M_\tau`$ is a finite-memory friction kernel and $`\eta_\tau`$ is a correlated disturbance. If
-``` math
-M_\tau(t)\to 2\gamma\delta(t),
-```
-then formally
-``` math
-\dot x(t)=-\gamma x(t)+\eta(t),
-```
-with instantaneous damping and white-noise forcing.
+# What is genuinely Markov
 
-Thus:
+At finite $`\tau`$, the augmented pair
+``` math
+(a_\tau,\xi_\tau)
+```
+is Markov. The resolved coordinate $`a_\tau`$ alone is not closed: its instantaneous derivative depends on the hidden memory coordinate $`\xi_\tau`$. In the limit, Corollary <a href="#cor:ou-limit" data-reference-type="ref" data-reference="cor:ou-limit">5</a> yields the closed Markov diffusion $`a`$.
+
+Thus a correct statement for this model is
 ``` math
 \boxed{
-\text{Markov dynamics}=
-\text{zero-memory limit of finite-memory projected dynamics}.
+\text{finite Markov augmentation}
+\longrightarrow
+\text{nonclosed resolved memory}
+\longrightarrow
+\text{closed Markov limit}.
 }
 ```
 
-This is the stochastic analogue of earlier results in the series:
+For a general colored disturbance, none of these arrows is automatic. One needs:
+
+- a normalized invariant law or preparation ensemble;
+
+- a valid covariance or transition kernel;
+
+- mixing, martingale, or other functional-limit hypotheses;
+
+- tightness in a declared path topology;
+
+- and closure of the limiting resolved variables.
+
+A deterministic upstream flow can satisfy a functional central limit theorem under suitable invariant-measure and mixing assumptions. That is a deterministic source of effective Brownian behavior, but the invariant measure and hypotheses remain part of the theorem. Determinism alone does not imply a diffusive limit.
+
+# Nonlinear limits and stochastic calculus
+
+For the additive equation <a href="#eq:white-ou" data-reference-type="eqref" data-reference="eq:white-ou">[eq:white-ou]</a>, Ito and Stratonovich forms coincide. For nonlinear multiplicative noise, the limiting calculus can depend on how the finite-memory or smooth forcing is taken to zero memory. Classical Wong–Zakai results show why smooth-noise approximations often produce a Stratonovich correction under their stated hypotheses .
+
+Therefore a bare covariance
 ``` math
-\text{point source} \leftrightarrow \text{zero spatial width},
+2D\delta(t-t')
 ```
+does not encode the eliminated approximation scheme. An MTT derivation would have to retain enough source geometry to decide the limiting drift correction, not choose Ito or Stratonovich by convention after the fact.
+
+# MTT interpretation and status
+
+Projection can hide distinctions among upper configurations. If an ensemble or invariant state is supplied, those hidden distinctions can induce an effective stochastic kernel on the reduced variables. Three cautions are essential:
+
+1.  Noninjective projection does not create a probability measure.
+
+2.  A deterministic upper state with fully known initial data remains deterministic unless an ensemble, coarse-graining, or limit theorem is added.
+
+3.  Finite memory can survive projection; white noise is a further scaling limit, not the definition of projected stochasticity.
+
+The exact results in this paper establish a mathematically complete effective model:
 ``` math
-\text{S-matrix delta} \leftrightarrow \text{infinite time support},
+\text{colored OU source}
+\longrightarrow
+\text{Brownian path limit}
+\longrightarrow
+\text{white-noise OU response}.
 ```
-``` math
-\text{white noise} \leftrightarrow \text{zero memory width}.
-```
-
-# MTT Interpretation
-
-In MTT, effective stochasticity arises because projection is generally non-invertible. Distinct upstream configurations can share the same coherent projection while differing in discarded noncoherent content. When the projected description does not retain those distinctions, their residual influence may appear as stochastic disturbance.
-
-The delta-correlation idealization is a further step. It says not only that the unresolved content has been projected away, but that its temporal correlations are neglected.
-
-``` math
-\boxed{
-\text{projection-induced stochasticity}
-\neq
-\text{white-noise idealization}.
-}
-```
-
-Projection-induced stochasticity can be structured, biased, finite-memory, and constrained by admissibility. White noise is the special limit in which the residual memory scale is sent to zero.
-
-## Relation to the fixed-point series
-
-The fixed-point framework supplies three ingredients:
-
-1.  coherent projection $`\Pi_{\mathrm{coh}}`$;
-
-2.  damping of noncoherent modes through spectral gaps;
-
-3.  finite disturbance–damping balance producing OU-type floors.
-
-Therefore the MTT-native object is not necessarily a white-noise process. It is a finite-memory disturbance filtered by damping and projection. White noise appears only after idealizing the disturbance memory as negligible.
-
-``` math
-\boxed{
-\delta(t-t')=
-\text{zero-memory shadow of finite admissible disturbance}.
-}
-```
-
-# Itô, Stratonovich, and Model Dependence
-
-When colored noise is replaced by white noise in nonlinear equations, different limiting procedures can yield different stochastic calculi, most famously Itô or Stratonovich. This matters because the white-noise limit is singular.
-
-The present paper does not choose a universal calculus. Instead it states a structural warning:
-
-``` math
-\boxed{
-\text{the finite-memory model matters before the white-noise limit is taken}.
-}
-```
-
-In MTT terms, the admissible kernel and projection mechanism determine the correct limiting rule. A bare delta correlation does not contain enough information to reconstruct the eliminated finite-memory structure.
-
-# Fluctuation–Dissipation Caveat
-
-In thermal equilibrium, noise and damping are not independent: they are related by fluctuation–dissipation conditions. In such cases a covariance kernel $`C_\tau`$ cannot be chosen arbitrarily. It must be paired with a compatible dissipation kernel. For a generalized Langevin equation, the same bath structure that produces colored disturbance also produces memory-dependent friction.
-
-This caveat strengthens rather than weakens the projection interpretation. It means admissible disturbance kernels must respect the bookkeeping of the effective sector. A finite kernel is not merely a regulator; it is part of a constrained effective description.
-
-The present paper therefore does not claim that one may replace white noise by any convenient colored kernel while preserving the same physics. The admissible replacement must preserve the relevant equilibrium, positivity, causality, and fluctuation–dissipation data of the regime under study.
-
-# Examples of Delta-Correlation Idealization
+They do not yet establish that the selected q79 or other physical MTT carrier emits equation <a href="#eq:colored-ou" data-reference-type="eqref" data-reference="eq:colored-ou">[eq:colored-ou]</a>.
 
 <div class="center">
 
-| Standard delta object | Finite-memory replacement | Interpretation |
-|:---|:---|:---|
-| $`\langle\xi(t)\xi(t')\rangle=2D\delta(t-t')`$ | $`C_\tau(t-t')`$ | colored disturbance |
-| Markov update | memory kernel | unresolved history retained finitely |
-| OU white-noise floor | colored-noise floor | finite disturbance timescale |
-| Brownian motion | correlated random walk | zero-step-time limit |
-| white thermal bath | finite-band bath | bath memory neglected |
+| Status      | Result                                                        |
+|:------------|:--------------------------------------------------------------|
+| Exact       | Approximate-identity convergence to $`2D\delta_0`$            |
+| Exact       | Positive-type guard for physical covariance data              |
+| Exact       | Colored-OU convergence in $`C([0,T])`$                        |
+| Exact       | Damped-response convergence to white-noise OU                 |
+| Exact       | Finite-memory variance $`D/[\gamma(1+\gamma\tau)]`$           |
+| Conditional | General mixing or deterministic upstream realization          |
+| Open        | Selected physical MTT source and sector-specific coefficients |
 
 </div>
 
-# Scope of Proof
+# Completion program
 
-<div class="center">
+To promote the effective construction into an MTT source theorem:
 
-| Status | Statement |
-|:---|:---|
-| Proved | Approximate-identity covariance kernels converge distributionally to temporal deltas. |
-| Proved | Exponential and Gaussian finite-memory kernels yield white-noise covariance in the zero-memory limit. |
-| Computed | The exponential colored-noise OU model gives $`\sigma_\tau^2=D/[\gamma(1+\gamma\tau)]`$, tending to $`D/\gamma`$. |
-| Standard model result | OU stationary variance arises from balancing damping against disturbance power. |
-| Caveat | White noise alone does not guarantee a Markov process; closure of the reduced variables is also required. |
-| Interpreted | In MTT, white noise is the zero-memory shadow of finite admissible disturbance. |
-| Not proved here | A derivation of every effective stochastic kernel from the full MTT carrier dynamics. |
+1.  select an upper state or preparation measure from the physical branch;
 
-</div>
+2.  derive a centered finite-memory observable $`\xi_\tau`$;
+
+3.  prove positivity and normalization of its covariance;
+
+4.  prove quantitative mixing or a martingale approximation;
+
+5.  establish a functional limit with a computable error bound;
+
+6.  prove closure of the intended resolved state;
+
+7.  derive $`D`$, $`\tau`$, and $`\gamma`$ from the same source; and
+
+8.  compare finite-memory corrections against an observable protocol.
+
+This route can falsify the white-noise approximation. If the selected source has long memory, heavy tails, anomalous scaling, or no closed resolved state, the correct effective theory will not be the Markov OU model.
 
 # Conclusion
 
-White noise is one of the most common uses of the Dirac delta in physics. It says that unresolved disturbances are correlated only at exactly equal times:
-``` math
-\mathbb E[\xi(t)\xi(t')]=2D\delta(t-t').
-```
-The analysis here shows that this is the singular limit of a finite-memory covariance kernel.
+White noise can be a rigorous zero-memory limit, but three levels must be kept apart. Normalized kernels may converge to a Dirac distribution. Valid covariances require positive type. Process and Markov convergence require law-level and path-level control.
 
-In the delta-projection program, this completes another major class of delta functions. A point source is a zero-width spatial source. A gauge-fixing delta is a zero-width representative selector. A projective measurement is a zero-width outcome effect. A contact vertex is a zero-width overlap. A conservation delta is an infinite-support bookkeeping limit. A spectral delta peak is an infinite-lifetime mode. White noise is the zero-memory limit of finite disturbance.
+The stationary colored-OU source supplies all of that control in one exact example. Its integrated forcing converges to Brownian motion in $`C([0,T])`$; its damped response converges to the standard OU diffusion; and its finite-memory variance tends monotonically to the white-noise floor. This shows precisely how finite memory can be compressed into delta correlation.
 
-The MTT lesson is therefore:
-``` math
-\boxed{
-\text{delta-correlated randomness is not primitive randomness;}
-}
-```
-it is the singular notation used when finite-memory projected disturbance is compressed into instantaneous correlation.
+For MTT, the result is a reusable target, not a completed ontology. Projection may motivate unresolved effective forcing, but the source measure, memory kernel, mixing theorem, Markov closure, and coefficients still have to be selected from geometry. The credible claim is therefore not that randomness has been eliminated. It is that one exact route from finite-memory physics to an effective white-noise model has been constructed, with every additional MTT obligation visible.
+
+<div class="thebibliography">
+
+99
+
+G. E. Uhlenbeck and L. S. Ornstein, *On the Theory of the Brownian Motion*, Physical Review **36** (1930) 823–841, doi:10.1103/PhysRev.36.823.
+
+E. Wong and M. Zakai, *On the Relation Between Ordinary and Stochastic Differential Equations*, International Journal of Engineering Science **3** (1965) 213–229, doi:10.1016/0020-7225(65)90045-5.
+
+</div>

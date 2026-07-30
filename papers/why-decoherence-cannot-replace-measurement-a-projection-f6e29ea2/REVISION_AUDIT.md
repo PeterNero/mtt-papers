@@ -136,3 +136,8 @@ Those are the stronger open rows in `B.QM.01`.
 Version 2 is a minor-scope but substantive theorem-status correction. It should
 be uploaded as a new Zenodo version with the generated PDF, canonical TeX,
 Markdown conversion, and this revision audit.
+
+## Validation
+
+- The current source compiles successfully with three `pdflatex` passes.
+- The complete ten-page PDF was rendered and visually inspected on 2026-07-29.

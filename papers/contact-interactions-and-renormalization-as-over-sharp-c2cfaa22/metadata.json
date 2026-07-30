@@ -29,15 +29,15 @@
       "sha256": "cb272180e6bf044e4bb9332ede3a7441bccf1aae43aa2785b8c06a33ebba3785"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Contact_Interactions_and_Renormalization_as_Over__Sharp_Projection__Finite_Coherent_Overlap_Vertices_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "0c12c2582c372d7573fae3649ef577ae628936b082aee5a006ef5e6b266b3327",
+  "source_tree_sha256": "21bc3daf2927262750691570164165c3bf83501dda2d5ea89eac9af9c35bda7c",
   "title": "Contact Interactions and Renormalization as Over\u2013Sharp Projection Finite Coherent Overlap Vertices in Modal Triplet Theory",
   "version_relation": "unknown",
   "zenodo_releases": []

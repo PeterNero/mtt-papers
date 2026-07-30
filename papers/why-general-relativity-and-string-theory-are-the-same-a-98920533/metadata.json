@@ -48,15 +48,15 @@
       "sha256": "f7b57c5de08a276f49eee24388bfd7fed67184b929cc0cb8d38d76c7b5c09f4f"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "11 General Relativity & Geometry/_work/Why_General_Relativity_and_String_Theory_Are_the_Same_Admissibility_Constraint"
   },
-  "source_tree_sha256": "6664fba0cfbadf09b4ce6d7c6a6fb84cde6f83e5224938e3b57b2d0b5fad030e",
+  "source_tree_sha256": "649c06a7ba26a6403b9fc76a9a6f0bb99880a58ff2f34f3dafd4a34589f4d565",
   "title": "Why General Relativity and String Theory Are the Same Admissibility Constraint A Technical Shadow\u2013Bridge Between IR Geometry and Worldsheet RG in Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

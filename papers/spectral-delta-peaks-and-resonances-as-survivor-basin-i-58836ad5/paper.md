@@ -13,15 +13,13 @@ author:
 - Peter Nero
 current_version: unversioned
 date: April 2026
-generated_from_main_tex_sha256: da4a2852063dd59a2384cf5ebafb503e1f0908dc53039e156bb2a06fa64eef04
+generated_from_main_tex_sha256: ae8366b4d045adf64e783d49e975d0110857104a90ee8a2d4e74b60935d79ff2
 paper_id: spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5
 release_state: not_matched_to_zenodo
 title: |
   Spectral Delta Peaks and Resonances as Survivor-Basin Idealizations  
   Finite Lifetime, Lorentzian Kernels, and the Delta Limit in Modal Triplet Theory
 ---
-
-*Part VIII of VIII in the Delta Projection series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*
 
 # Purpose and claim discipline
 
@@ -50,9 +48,10 @@ It appears in:
 - resonance approximations.
 
 The central claim is:
-``` math
-\boxed{\text{A spectral delta peak is the zero-width limit of a finite-lifetime or finite-resolution survivor mode.}}
-```
+
+<div class="center">
+
+</div>
 
 ## Non-claims
 
@@ -441,11 +440,10 @@ If damping and disturbance leave a nonzero effective width, the spectral line do
 ```
 
 This gives the MTT diagnostic:
-``` math
-\boxed{
-\text{When a spectral delta appears, ask which finite lifetime, basin width, or resolution scale has been suppressed.}
-}
-```
+
+<div class="center">
+
+</div>
 
 # Scope of proof and physical claim
 
@@ -500,8 +498,6 @@ The Lorentzian/Breit–Wigner kernel makes this precise. It converges to the Dir
 
 In MTT language, a spectral delta is the zero-width shadow of a survivor basin whose persistence has been idealized as exact. The question prompted by every spectral delta is therefore:
 
-``` math
-\boxed{
-\text{What finite lifetime, admissibility width, or survivor-basin structure has been collapsed into this sharp peak?}
-}
-```
+<div class="center">
+
+</div>

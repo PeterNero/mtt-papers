@@ -1,70 +1,98 @@
 {
-  "abstract": "Modal Triplet Theory (MTT) provides a projection-based framework in which quantum mechanics emerges as an effective description of a higher-dimensional coherent sector, with Hilbert space appearing as a representation of basin ensemble statistics rather than as a fundamental ontology. In this paper we address a structural question left implicit in the reconstruction program: why the resulting Hilbert space must be complex. Starting from the Hilbert-space reconstruction already established in MTT, we show that the family of admissible measurement outcomes induces an orthomodular lattice of propositions with infinite orthogonality, placing the theory within the scope of Sol\u00e8r\u2019s theorem and restricting the scalar field to \\mathbb{R}, \\mathbb{C}, or \\mathbb{H}. We then introduce an admissibility formulation of local tomography, expressed directly in the basin-atlas and instrument language of MTT, and show that quaternionic Hilbert space is incompatible with predictive stability under admissible projection. Finally, we show that real Hilbert space fails to support the phase-rich coherence structure required for generic interference and basin-measure dynamics. The result is a rigidity theorem: under admissible projection, locality, and basin-measure reconstruction, the effective quantum description in Modal Triplet Theory is uniquely complex. Complex Hilbert space is therefore not an assumption of the theory, but a structural necessity enforced by admissibility and locality.",
+  "abstract": "Solèr's theorem classifies an orthomodular generalized Hilbert space containing an infinite orthonormal sequence as a real, complex, or quaternionic Hilbert space. This classification does not by itself select the complex field. We add a separate finite-composition requirement: a system of dimension d over the selected field has the full self-adjoint matrix space as its unnormalized state/effect space; a composite of dimensions a and b has dimension ab over the same field; and independent product effects are tomographically complete. The resulting dimension identity holds for complex Hermitian matrices and fails, by explicit nonzero defects, for real symmetric and quaternionic Hermitian matrices whenever a and b are both greater than one. Complex Hilbert space is therefore rigid within this declared reconstruction class. The conclusion is conditional and representation-sensitive: complex quantum theory can be realified by adjoining an orthogonal complex-structure operator, and alternative composite rules fall outside the theorem. Applied to MTT, the result identifies exact missing premises rather than deriving them. The current q79 finite quantum model and finite complex polarization are compatible with the complex branch, but MTT has not yet sourced the required infinite orthogonality and standard locally tomographic composition from one physical upper construction.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "July 2026, Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18330648",
-    "created": "2026-01-21T19:42:59.679022+00:00",
+    "created": "2026-07-29T08:52:43.196767+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18330649",
+    "doi": "10.5281/zenodo.21666024",
     "files": [
       {
-        "checksum": "md5:9f8145bbeb08f3fbb0e499664683133f",
-        "content_url": "https://zenodo.org/api/records/18330649/files/Why_Quantum_Theory_Must_Be_Complex__A_Sol_er__Admissibility_Rigidity_Theorem_in_Modal_Triplet_Theory%20(1).pdf/content",
-        "key": "Why_Quantum_Theory_Must_Be_Complex__A_Sol_er__Admissibility_Rigidity_Theorem_in_Modal_Triplet_Theory (1).pdf",
-        "size": 278854
+        "checksum": "md5:b5afd7e0e556bc8c25538502335bdaf3",
+        "content_url": "https://zenodo.org/api/records/21666024/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 314417
       }
     ],
-    "id": "18330649",
-    "match_kind": "title_or_file",
+    "id": "21666024",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18330649",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21666024",
     "resource_type": "publication",
-    "title": "Why Quantum Theory Must Be Complex: A Sol\u00e8r\u2013Admissibility Rigidity Theorem",
-    "updated": "2026-01-21T19:43:00.721951+00:00",
-    "version": "v1.0"
+    "title": "Complex-Hilbert Rigidity under Solèr, Local Tomography, and Standard Composition A Conditional MTT Reconstruction Theorem",
+    "updated": "2026-07-29T08:52:43.400170+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "33bf7d2d9ae573ffef7e325fac6d8ed9c9d1a604dba091816dcbade693e0ff6d",
+  "main_tex_sha256": "bfaca00316201382337cb836ee63eda64fa268d7ce8b8a7ad576e7b73c01376f",
   "paper_id": "why-quantum-theory-must-be-complex-a-soler-admissibilit-b7674be8",
-  "paper_md_sha256": "8baaa285f6dcccccc670949bab9a5a4188f3aa9bfe00320fb3f810e81268e888",
+  "paper_md_sha256": "0151d20b5e22be85a2264cb86eddd21b0987188319d76eecac156d68e7300ced",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "2ae23f8b5c7f96570ec02a07ca17a92a9069511ee130459824c0ebe9733f1147",
+    "selected_revision": true,
+    "superseded_source_path": "6 Quantum Mechanics/_work/Why_Quantum_Theory_Must_Be_Complex__A_Sol_er__Admissibility_Rigidity_Theorem_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 2686,
+      "bytes": 1243,
       "path": "main.bib",
-      "sha256": "482c19655ead341c71dd0015adaaf26ea0674a5891a73e83eca9373de20e4bd6"
+      "sha256": "a763bb8e29330cd526971ccb630d1cc7097290d61aa55a6b80fd1228d86209cd"
     },
     {
-      "bytes": 33605,
+      "bytes": 19529,
       "path": "main.tex",
-      "sha256": "33bf7d2d9ae573ffef7e325fac6d8ed9c9d1a604dba091816dcbade693e0ff6d"
+      "sha256": "bfaca00316201382337cb836ee63eda64fa268d7ce8b8a7ad576e7b73c01376f"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "6 Quantum Mechanics/_work/Why_Quantum_Theory_Must_Be_Complex__A_Sol_er__Admissibility_Rigidity_Theorem_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "ff8d3c3655fbbcd9d103b0095ca11eb3b7166c541347bc44cc0ddbcd70b0d864",
-  "title": "Why Quantum Theory Must Be Complex A Sol\u00e8r\u2013Admissibility Rigidity Theorem in Modal Triplet Theory",
+  "source_tree_sha256": "7a9e4390c793491a5e8668f82be68353adb7c6e504cbc022e96f5fe441c739ea",
+  "title": "Complex-Hilbert Rigidity under Solèr, Local Tomography, and Standard Composition A Conditional MTT Reconstruction Theorem",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18330648",
+      "created": "2026-07-29T08:52:43.196767+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666024",
+      "files": [
+        {
+          "checksum": "md5:b5afd7e0e556bc8c25538502335bdaf3",
+          "content_url": "https://zenodo.org/api/records/21666024/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 314417
+        }
+      ],
+      "id": "21666024",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666024",
+      "resource_type": "publication",
+      "title": "Complex-Hilbert Rigidity under Solèr, Local Tomography, and Standard Composition A Conditional MTT Reconstruction Theorem",
+      "updated": "2026-07-29T08:52:43.400170+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18330648",
       "created": "2026-01-21T19:42:59.679022+00:00",
@@ -86,7 +114,7 @@
       "publication_date": "2026-01-21",
       "record_url": "https://zenodo.org/records/18330649",
       "resource_type": "publication",
-      "title": "Why Quantum Theory Must Be Complex: A Sol\u00e8r\u2013Admissibility Rigidity Theorem",
+      "title": "Why Quantum Theory Must Be Complex: A Solèr–Admissibility Rigidity Theorem",
       "updated": "2026-01-21T19:43:00.721951+00:00",
       "version": "v1.0"
     }

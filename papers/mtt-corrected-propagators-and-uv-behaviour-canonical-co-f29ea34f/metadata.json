@@ -34,15 +34,15 @@
       "sha256": "aff77e161625b15a2897b6e4b328ee00419d0b5db290c40d9aa1cb189c811eac"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/MTT_Corrected_Propagators_and_UV_Behaviour"
   },
-  "source_tree_sha256": "fe3150457b6c9921edc11c773ab438991f8881a6a85e18632b0eaf9115b3ad5c",
+  "source_tree_sha256": "52cecac1286913f48257485ed0db23acab4a41324df25732a0d161246cd19f6a",
   "title": "MTT-Corrected Propagators and UV Behaviour Canonical Coherent Filtering from Fixed-Point Data",
   "version_relation": "unknown",
   "zenodo_releases": []

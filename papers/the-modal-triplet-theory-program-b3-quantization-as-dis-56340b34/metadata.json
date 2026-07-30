@@ -1,5 +1,5 @@
 {
-  "abstract": "We determine exactly what a nil-type termination of an admissible description does and does not imply. Failure of a declared chart or continuation map does not by itself collapse nearby admissible states to a discrete set. A finite survivor set follows, for example, when a smooth constraint map C from an n-manifold to R^n is transverse to zero and its zero set is compact. Discrete spectral values follow under a different hypothesis: a self-adjoint operator on a Hilbert space has discrete finite-multiplicity spectrum when its resolvent is compact. Neither conclusion follows from the nil label alone. These results define a useful MTT discrete survivor filter, but they do not uniquely characterize quantum mechanics. Finite classical state machines, Morse critical sets, symbolic labels, and topological winding sectors also give discrete survivors. Moreover, discreteness does not supply a noncommutative observable algebra, a complex Hilbert space, canonical commutation or anticommutation relations, dynamics, measurement instruments, or the Born rule. Indeed, exact finite-dimensional canonical commutation relations are impossible by the trace of a commutator. We therefore formulate quantum mechanics as a conditional reconstruction. Given a complex unital C*-algebra, a positive normalized state, a representation or the associated GNS construction, a dynamical law, and effects or instruments, the standard operator and probability structures are available.",
+  "abstract": "We determine exactly what a nil-type termination of an admissible description does and does not imply. Failure of a declared chart or continuation map does not by itself collapse nearby admissible states to a discrete set. A finite survivor set follows, for example, when a smooth constraint map between equal-dimensional real manifolds is transverse to zero and its zero set is compact. Discrete spectral values follow under a different hypothesis: a self-adjoint operator on a Hilbert space has discrete finite-multiplicity spectrum when its resolvent is compact. Neither conclusion follows from the nil label alone. These results define a useful MTT discrete survivor filter, but they do not uniquely characterize quantum mechanics. Finite classical state machines, Morse critical sets, symbolic labels, and topological winding sectors also give discrete survivors. Moreover, discreteness does not supply a noncommutative observable algebra, a complex Hilbert space, canonical commutation or anticommutation relations, dynamics, measurement instruments, or the Born rule. Exact finite-dimensional canonical commutation relations are impossible by the trace of a commutator. We therefore formulate quantum mechanics as a conditional reconstruction. Given a complex unital C-star algebra, a positive normalized state, a representation or the associated GNS construction, a dynamical law, and effects or instruments, the standard operator and probability structures are available. Program B3 establishes the discrete-filter and compact-resolvent bridges and records the remaining same-source obligations; it does not derive complex quantum mechanics from nil termination.",
   "authors": [
     "Peter Nero"
   ],
@@ -9,37 +9,37 @@
   "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18355058",
-    "created": "2026-01-23T20:07:11.941415+00:00",
+    "created": "2026-07-29T08:52:01.094323+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18355059",
+    "doi": "10.5281/zenodo.21652653",
     "files": [
       {
-        "checksum": "md5:0cb3574e4769a08603cf9ad16f2d12ce",
-        "content_url": "https://zenodo.org/api/records/18355059/files/The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding%20(1).pdf/content",
-        "key": "The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding (1).pdf",
-        "size": 219997
+        "checksum": "md5:c37bca7b84b17e83b898ad2c23f85f13",
+        "content_url": "https://zenodo.org/api/records/21652653/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 390716
       }
     ],
-    "id": "18355059",
-    "match_kind": "title_or_file",
+    "id": "21652653",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-23",
-    "record_url": "https://zenodo.org/records/18355059",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21652653",
     "resource_type": "publication",
-    "title": "The Modal Triplet Theory Program B3: Quantization as Discrete Constraint Encoding",
-    "updated": "2026-01-23T20:07:12.377557+00:00",
-    "version": "v1.0"
+    "title": "The Modal Triplet Theory Program B3: Discrete Survivor Filters and Conditional Quantum Reconstruction",
+    "updated": "2026-07-29T08:52:01.324017+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "f719c0c41119e9f88685a6b19116de36b529e5e72a1fad131aba2c4dd270eea5",
+  "main_tex_sha256": "5e85579b4047b9d2d838573f039e5aaf72672d0a801675e8fc3bf84a8bbf949f",
   "paper_id": "the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34",
-  "paper_md_sha256": "6780601f2b19c1f55f1e3a7f2360bf8383ad2cf4da289e3e58faa7066ea08bf8",
+  "paper_md_sha256": "c5fe9ad4eb8440c2ff289d4a29292b3293f0c25723a36027b2ad7f7d49173334",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "11cb7d0e78e81a31edfabef1474d81eb5803289b27e9c48900387b82ab78fd6c",
+    "revision_evidence_sha256": "46b3e101ed6e0a9575d3c640e41095e041756d8c78c5a72ae44c597493a1f000",
     "selected_revision": true,
     "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding"
   },
@@ -51,28 +51,53 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 29825,
+      "bytes": 35325,
       "path": "main.tex",
-      "sha256": "f719c0c41119e9f88685a6b19116de36b529e5e72a1fad131aba2c4dd270eea5"
+      "sha256": "5e85579b4047b9d2d838573f039e5aaf72672d0a801675e8fc3bf84a8bbf949f"
     },
     {
-      "bytes": 6939,
+      "bytes": 7746,
       "path": "REVISION_AUDIT.md",
-      "sha256": "11cb7d0e78e81a31edfabef1474d81eb5803289b27e9c48900387b82ab78fd6c"
+      "sha256": "46b3e101ed6e0a9575d3c640e41095e041756d8c78c5a72ae44c597493a1f000"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B3__Quantization_as_Discrete_Constraint_Encoding"
   },
-  "source_tree_sha256": "492113cd5f8b08012814f536eef038b8a416fdd9f811a6778bfe81659fb6dbf3",
+  "source_tree_sha256": "56c321adcc201715e225b6805a94ea209f553aac8fa3a690ea4fd3708069b2d3",
   "title": "The Modal Triplet Theory Program B3: Discrete Survivor Filters and Conditional Quantum Reconstruction",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18355058",
+      "created": "2026-07-29T08:52:01.094323+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21652653",
+      "files": [
+        {
+          "checksum": "md5:c37bca7b84b17e83b898ad2c23f85f13",
+          "content_url": "https://zenodo.org/api/records/21652653/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 390716
+        }
+      ],
+      "id": "21652653",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21652653",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B3: Discrete Survivor Filters and Conditional Quantum Reconstruction",
+      "updated": "2026-07-29T08:52:01.324017+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18355058",
       "created": "2026-01-23T20:07:11.941415+00:00",

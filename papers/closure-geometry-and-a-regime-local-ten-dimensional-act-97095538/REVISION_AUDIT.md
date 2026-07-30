@@ -275,3 +275,23 @@ All five ProtoSpinor/World-in-World successors now contain the standardized
 five-field `Revision note for this edition` after the abstract. The global
 coverage and automated check are documented in
 `18 Theta-Closure & Execution Program/CURRENT_VERSION_DELTA_NOTES_AUDIT_2026-07-15.md`.
+
+## Expository Review: Ten-Dimensional Action
+
+Date: 2026-07-28
+
+The action paper was reviewed as an action/EFT paper rather than expanded with
+generic series prose.
+
+- A four-stage reader map now separates declared geometry and fields, the
+  action ansatz, equations and dimensional reduction, and renormalized
+  observables.
+- The text explains the role of each term in the action and why variation
+  derives consequences of an ansatz without selecting the ansatz itself.
+- A worked scalar reduction on `Y4 x T6` displays the discrete Kaluza--Klein
+  masses and the first gap explicitly.
+- The example distinguishes a spectral gap from nonlinear closure of the
+  retained mode space and states why it is illustrative rather than a q79
+  compactification claim.
+- The existing pole-mass, alignment, compact-resolvent, curvature, and
+  consistent-truncation gates remain unchanged in theorem content.

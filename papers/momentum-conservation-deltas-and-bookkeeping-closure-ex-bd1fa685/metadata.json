@@ -10,7 +10,7 @@
   "latest_zenodo_release": null,
   "main_tex_sha256": "39e2be437d595dcdd5e3feffda6e8f615b62adc4446b4df3cef8bee00389b2a6",
   "paper_id": "momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685",
-  "paper_md_sha256": "2d7321c2f861bb101dc92647732b6c79d64b49f8aef3886e33c180f246c6cd1b",
+  "paper_md_sha256": "10c334dcafee63fd243c5d699b430b93db2666990840973fab5d994cd6eb590f",
   "release_state": "not_matched_to_zenodo",
   "result_refs": [],
   "revision": {
@@ -29,15 +29,15 @@
       "sha256": "39e2be437d595dcdd5e3feffda6e8f615b62adc4446b4df3cef8bee00389b2a6"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Momentum_Conservation_Deltas_and_Bookkeeping_Closure_Exact_Vertex_Conservation"
   },
-  "source_tree_sha256": "03289adcb161bd31b7d7383b13a6018ee1a0f283f6e6969a9463bf0e7c933594",
+  "source_tree_sha256": "1380d4aa89d57258e637a6c5f3de13aa8cb26c8ae354ece0be1824c560dacd93",
   "title": "Momentum Conservation Deltas and Bookkeeping Closure Exact Vertex Conservation as the Singular Limit of Finite Admissible Interaction Support",
   "version_relation": "unknown",
   "zenodo_releases": []

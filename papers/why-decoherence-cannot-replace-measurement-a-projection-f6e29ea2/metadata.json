@@ -1,78 +1,128 @@
 {
-  "abstract": "Measurement is not taken to be a fundamental act, observer intervention, or separate kind of physics. It is an ordinary system-apparatus-environment process described with a retained record; discarding that record leaves a nonselective channel. This revision makes the data distinction exact in finite-dimensional quantum theory and states its consequence for Modal Triplet Theory. A pointer dephasing channel is completely positive and trace preserving, removes off-diagonal pointer blocks, and preserves pointer populations. The same nonselective channel is compatible with distinct outcome instruments having different probability laws, so the channel alone specifies neither records nor their probabilities. An MTT basin boundary or chart exit likewise does not choose a successor basin. A complete outcome-resolved model must provide an instrument or normalized continuation kernel and its source. The current canonical q79 binary recorder supplies an exact stopped-output law on its declared finite domain, while general apparatus contexts and objective single-history actualization remain open.",
+  "abstract": "Measurement is not taken to be a fundamental act, an observer intervention, or a separate kind of physics. It is an ordinary system-apparatus-environment process described with a retained physical record. If that record is discarded, the same coupling is represented only by a nonselective channel. Decoherence can suppress interference and stabilize preferred records, but the record-discarded channel does not contain an outcome label or a conditional state update. We make this data distinction exact in finite-dimensional quantum theory and then state its consequence for Modal Triplet Theory (MTT). For an orthogonal pointer resolution, the associated dephasing channel is completely positive and trace preserving, removes every off-diagonal pointer block, and preserves all pointer populations. We prove that the same nonselective channel is compatible with distinct outcome instruments having different probability laws. Hence the channel alone specifies neither records nor their probabilities. An MTT basin boundary or chart exit has the same logical limitation: it marks the failure of a supplied effective chart, but it does not choose a successor basin. A complete outcome-resolved model must additionally provide an outcome-indexed completely positive instrument or a normalized selection-completion kernel, together with its source and domain. This yields a rigorous conditional bridge between record-discarded intra-basin suppression and record-resolved inter-basin continuation. Both are ordinary physical dynamics; the distinction concerns which data the effective description retains. The current canonical q79 binary recorder supplies an exact stopped-output law on its declared finite domain, but general apparatus contexts, a universal Born-source theorem, and objective single-history actualization remain open. Projection, noninjectivity, admissibility loss, and chart exit alone specify none of those missing outcome-resolved data.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v2",
-  "date": "July 2026",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261892",
-    "created": "2026-01-15T20:09:27.643404+00:00",
+    "created": "2026-07-29T08:52:39.632808+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18261893",
+    "doi": "10.5281/zenodo.21666019",
     "files": [
       {
-        "checksum": "md5:f9748a7056653e38958493ef92a57a16",
-        "content_url": "https://zenodo.org/api/records/18261893/files/Why_Decoherence_Cannot_Replace_Measurement__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory%20(2).pdf/content",
-        "key": "Why_Decoherence_Cannot_Replace_Measurement__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory (2).pdf",
-        "size": 264958
+        "checksum": "md5:487d2d318606bd379e07720de8c8207d",
+        "content_url": "https://zenodo.org/api/records/21666019/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 353854
       }
     ],
-    "id": "18261893",
-    "match_kind": "title_or_file",
+    "id": "21666019",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18261893",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21666019",
     "resource_type": "publication",
-    "title": "Why Decoherence Cannot Replace Measurement",
-    "updated": "2026-01-15T20:09:28.040300+00:00",
-    "version": "v1.0"
+    "title": "Why Decoherence Cannot Replace Measurement Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory",
+    "updated": "2026-07-29T08:52:40.095115+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "55be9d5bb52b2876f9aed827e1e8cc70b83877453e999d22ff97b5c78deb5ef2",
+  "main_tex_sha256": "64942a8dd44794a33ed2ef44570b0e549a595332817a74e45e3d7cc6b6c39f03",
   "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
-  "paper_md_sha256": "42afafadccea23a7550162a91195208b1568ee3cffe009d87b2c6f6c0d338944",
+  "paper_md_sha256": "4809f297a44b5b5f0821185bf303e9393a0042652075b52662dbab9d8753ba71",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "f3052ba05778f83e90f163ba63646dd527b724d6702863a4eb06e7eb3387da8b",
+    "revision_evidence_sha256": "21db9df5c34f81dd8622b37f951b303ae08b34d817eb4b767de98afdb9a435c5",
     "selected_revision": true,
     "superseded_source_path": "8 Measurement, Selection & Computation/_work/Why_Decoherence_Cannot_Replace_Measurement__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 346537,
+      "bytes": 353854,
       "path": "main.pdf",
-      "sha256": "c3f1a2fb000db73f73b87717df9ff19f6bfcab021d3dc94b1272c6cc3305c4cd"
+      "sha256": "9f6a71a59891f0068f65654aef81e703bd52969545d42085c59a9ddb9a930e09"
     },
     {
-      "bytes": 24081,
+      "bytes": 26690,
       "path": "main.tex",
-      "sha256": "55be9d5bb52b2876f9aed827e1e8cc70b83877453e999d22ff97b5c78deb5ef2"
+      "sha256": "64942a8dd44794a33ed2ef44570b0e549a595332817a74e45e3d7cc6b6c39f03"
     },
     {
-      "bytes": 5672,
+      "bytes": 5840,
       "path": "REVISION_AUDIT.md",
-      "sha256": "f3052ba05778f83e90f163ba63646dd527b724d6702863a4eb06e7eb3387da8b"
+      "sha256": "21db9df5c34f81dd8622b37f951b303ae08b34d817eb4b767de98afdb9a435c5"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "8 Measurement, Selection & Computation/_work/Why_Decoherence_Cannot_Replace_Measurement__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "d63d8415e5e9bf6d4b686c5ce5b874f10e4f094124e1e8bb5c1b858f7e6b088f",
-  "title": "Why Decoherence Cannot Replace Measurement: Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "a2e72be431ef16e2863473d33ec5584ded380e582075228654948f26fec779ba",
+  "title": "Why Decoherence Cannot Replace Measurement Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261892",
+      "created": "2026-07-29T08:52:39.632808+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666019",
+      "files": [
+        {
+          "checksum": "md5:487d2d318606bd379e07720de8c8207d",
+          "content_url": "https://zenodo.org/api/records/21666019/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 353854
+        }
+      ],
+      "id": "21666019",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666019",
+      "resource_type": "publication",
+      "title": "Why Decoherence Cannot Replace Measurement Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory",
+      "updated": "2026-07-29T08:52:40.095115+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18261892",
+      "created": "2026-07-28T18:00:50.598959+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650920",
+      "files": [
+        {
+          "checksum": "md5:06130a12f598a3b1f0a861e460a0e207",
+          "content_url": "https://zenodo.org/api/records/21650920/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 346537
+        }
+      ],
+      "id": "21650920",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650920",
+      "resource_type": "publication",
+      "title": "Why Decoherence Cannot Replace Measurement: Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory",
+      "updated": "2026-07-28T18:00:51.101888+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18261892",
       "created": "2026-01-15T20:09:27.643404+00:00",

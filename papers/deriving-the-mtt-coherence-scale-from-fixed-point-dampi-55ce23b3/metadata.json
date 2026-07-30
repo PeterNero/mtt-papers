@@ -34,15 +34,15 @@
       "sha256": "a1d96753b36d9ac55f9fa45ad99d103f1be61fcd0e746994b2d0999f5c849f84"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Deriving_the_MTT_Coherence_Scale_from_Fixed__Point_Damping"
   },
-  "source_tree_sha256": "80ae8e9a532f9f04fb5b5196ac94873394b16abaf8e7a68111693f1a6042d2d3",
+  "source_tree_sha256": "43abbaa51b73c9679253d97f5f33d17e629b172c69615284be666e5f40658cfc",
   "title": "Deriving the MTT Coherence Scale from Fixed\u2013Point Damping Canonical Proper-Time Kernels from Admissibility Thresholds",
   "version_relation": "unknown",
   "zenodo_releases": []

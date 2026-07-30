@@ -48,15 +48,15 @@
       "sha256": "ca7804a6555ea901168d16e373ef423a22a7089001d7296fad8ac233a6b4a9ce"
     },
     {
-      "bytes": 15705,
+      "bytes": 15299,
       "path": "series.sty",
-      "sha256": "deaaf90be0b98130189531a83e121ad3934803f4844f2b10571046aec3b3ed3f"
+      "sha256": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Universality_and_Robustness_of_the_Coherent_Sector_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "7de703d75347bc4e952bde5ac72fed2e84fc2df5e542c846fee733fc0ad0eda9",
+  "source_tree_sha256": "bbb82e9f2310c5a354b78cba8d036ad06a9efebcfd11a9450441d2e7558d3f7e",
   "title": "Universality and Robustness of the Coherent Sector in Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

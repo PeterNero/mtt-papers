@@ -48,15 +48,15 @@
       "sha256": "5c23ace35477bc30b6c0452d7a94ac980a8499d0a0bfffeae65fe26cda9923d2"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Horizons__Area_Laws__and_Entropy_from_Coherence_Capacity_Bottlenecks_v2"
   },
-  "source_tree_sha256": "4cf1af3388dcef3ba087f66845576a708080a3c4086666bb6f715fc66aa03b4b",
+  "source_tree_sha256": "fb779cd77529b732362a7212abefdf9dba1f11da119b3dff15a2acee0833fbed",
   "title": "Horizons, Area Laws, and Entropy from Coherence Capacity Bottlenecks",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

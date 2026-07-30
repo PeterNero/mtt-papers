@@ -1,37 +1,42 @@
 ---
 abstract: |
-  We give a corrected relation between Modal Triplet Theory (MTT) and noncommutative geometry (NCG). A coherent fixed-point projector does not by itself derive a spectral triple, the Standard Model finite algebra, a Wick rotation, or the spectral action. We prove the precise compression theorem that is available when a projector reduces an already specified real even spectral triple. We then record the stronger finite results now available in the selected MTT branch. The family factor is separated from the rank $`1<2<3`$ gauge carrier; an explicit three-family chiral representation and the faithful group
+  We analyze the relation between Modal Triplet Theory (MTT) and noncommutative geometry (NCG). A coherent fixed-point projector does not by itself derive a spectral triple, the Standard Model finite algebra, a Wick rotation, or the spectral action. We prove the precise compression theorem that is available when a projector reduces an already specified real even spectral triple. We then record the stronger finite results now available in the selected MTT branch. The family factor is separated from the rank $`1<2<3`$ gauge carrier; an explicit three-family chiral representation and the faithful group
   ``` math
   (SU(3)\times SU(2)\times U(1)_Y)/\mathbb{Z}_6
   ```
-  are obtained; and the finite real-even triple is completed at profile tier by the additional neutral complex summand $`\mathbb{C}_{N}`$. Direct enumeration of all $`676`$ finite one-form basis pairs gives a raw rank-twelve scalar space, consisting of three Higgs-doublet modules. The selected q79/proto-spinor alignment projector has rank four and leaves one complex Higgs doublet. These are finite, reproducible results, but the entries of $`D_{F}`$ remain profile data. The four-dimensional compact Riemannian spin triple, Wick dictionary, cutoff function, and spectral moments are not derived by the fixed-point construction. Moreover, the selected pure-Standard-Model running branch rules out one universal gauge normalization: the best common-scale coupling ratio remains $`1.046656046`$. A positive overlap kinetic metric reconstructs the profile couplings exactly but uses two measured relative coordinates. Thus MTT currently supplies a typed almost-commutative profile encoding with an executed finite factor, not a first-principles derivation of NCG or a no-knob derivation of the Standard Model.
+  are obtained; and the finite real-even triple is completed at profile tier by the additional neutral complex summand $`\mathbb{C}_{N}`$. Direct enumeration of all $`676`$ finite one-form basis pairs gives a raw rank-twelve scalar space, consisting of three Higgs-doublet modules. The selected q79/proto-spinor alignment projector has rank four and leaves one complex Higgs doublet. These are finite, reproducible results, but the entries of $`D_{F}`$ remain profile data. The selected representation also derives the one-loop coefficient vector $`(41/10,-19/6,-7)`$, and all ten matter, scalar, and gauge/ghost internal spectrum rows are now exact finite calculations with no added continuous parameter. Their normalized nonzero spectral shape is universal, however, so they do not generate the missing nonuniversal gauge thresholds. The four-dimensional compact Riemannian spin triple, Wick dictionary, cutoff function, and spectral moments are not derived by the fixed-point construction. Moreover, the selected pure-Standard-Model running branch rules out one universal gauge normalization: the best common-scale coupling ratio remains $`1.046656046`$. A positive overlap kinetic metric reconstructs the profile couplings exactly but uses two measured relative coordinates. Thus MTT currently supplies a typed almost-commutative profile encoding with an executed finite factor, not a first-principles derivation of NCG or a no-knob derivation of the Standard Model.
 author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v4
-date: July 2026
-generated_from_main_tex_sha256: 91b68b1e7ca2d96fe2cf602804b28a29f34b78dbe2842fbcca3af20af43d765e
+current_version: v5
+date: July 2026, Version 5
+generated_from_main_tex_sha256: 9aa403d0bba86458efc6c1d74844bf4ac224f57da114de545183745517d48976
 paper_id: from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3
 release_state: zenodo_released
-released_version: v1.0
-title: "**From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier (Corrected fourth edition)**"
-zenodo_doi: 10.5281/zenodo.17162076
-zenodo_record_id: 17162076
-zenodo_url: "https://zenodo.org/records/17162076"
+released_version: v5
+title: "**From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier**"
+zenodo_doi: 10.5281/zenodo.21665974
+zenodo_record_id: 21665974
+zenodo_url: "https://zenodo.org/records/21665974"
 ---
 
-# Revision note for this edition
+# Version 5 Revision Note
 
-**Supersedes.** *From Modal Triplet Theory to Noncommutative Geometry: Spectral Triples, Spectral Action, and the Standard Model Embedding*, version 3.
+Supersedes
+*From Modal Triplet Theory to Noncommutative Geometry: Spectral Triples, Spectral Action, and the Standard Model Embedding*, corrected version 4.
 
-**Reason.** Version 3 assumed the Standard Model finite algebra, treated Euclidean spectral data as if they descended automatically from a physical MTT realization, and claimed that the bottleneck vector fixed spectral-action coefficients without an executed source theorem.
+Reason
+Version 4 correctly replaced the original first-principles claims by a typed finite profile encoding, but it predated the completed gauge-fixed fluctuation complex and the exact ten-row internal spectrum calculation.
 
-**Resolution.** Version 4 separates projection, finite geometry, Euclidean product-triple data, Wick rotation, spectral-action moments, renormalization, and measured profile coordinates. It incorporates the verified A44–A52 finite-geometry chain and its no-go results.
+Resolution
+Version 5 retains the A44–A52 correction and adds the verified A57–A62 finite gauge/ghost chain. It records the exact representation-theoretic one-loop coefficients and all ten exact internal spectrum rows, while also recording the resulting no-go for obtaining nonuniversal gauge thresholds from their common normalized shape.
 
-**Retained result.** Given the declared Euclidean spin triple and the selected finite profile triple, standard almost-commutative NCG reconstructs the corresponding bosonic operator content.
+Retained result
+Given the declared Euclidean spin triple and the selected finite profile triple, standard almost-commutative NCG reconstructs the corresponding bosonic operator content.
 
-**Remaining boundary.** A physical Lorentzian-to-Euclidean dictionary, source-derived $`D_{F}`$ values, a selected proper-time measure and overlap metric, nonperturbative quantum transport, and a same-source physical q79 continuum realization remain open.
+Remaining boundary
+A physical Lorentzian-to-Euclidean dictionary, source-derived $`D_{F}`$ values, a selected proper-time measure and overlap metric, a physical continuum HYM threshold source, nonperturbative quantum transport, and a same-source physical q79 continuum realization remain open.
 
 # Status and logical scope
 
@@ -67,9 +72,19 @@ They are not interchangeable. In particular, a projector is not an algebra, a sp
 
 **Mixed scalar sector.** The one-form enumeration and rank statements are finite calculations; the Yukawa traces use profile $`D_{F}`$.
 
+**Exact finite fluctuation spectra.** The representation-theoretic one-loop coefficient vector and all ten matter, scalar, and gauge/ghost internal spectrum rows are exact finite calculations. Their universal normalized shape is also an exact obstruction to using these rows alone as nonuniversal gauge thresholds.
+
 **Imported/open spacetime.** The Euclidean product triple is standard NCG input; MTT has not derived its physical Wick dictionary.
 
 **Open/profile normalization.** Only certain spectral products are identifiable; the current overlap metric uses measured relative gauge coordinates.
+
+## A concrete picture of the finite construction
+
+A finite spectral triple may be read as a small, structured quantum-mechanical system. The algebra $`\mathcal{A}_{F}`$ lists the internal observables, the Hilbert space $`\mathcal{H}_{F}`$ lists the fermionic states on which they act, and the matrix $`D_{F}`$ connects states of opposite chirality. The commutator $`[D_{F},a]`$ measures how an internal observable $`a`$ changes across those connections. Linear combinations of terms $`a[D_{F},b]`$ are the finite one-forms; after the standard reality completion they are the possible scalar and gauge fluctuations of the supplied finite geometry.
+
+In the present construction one family has sixteen chiral particle states. Three families give forty-eight, and adjoining the charge-conjugate states gives the $`96`$-dimensional space on which the completed real-even triple acts. For example, the weak doublet $`Q=(u_L,d_L)`$ carries the quaternionic $`SU(2)`$ action, its three color copies carry the $`M_3(\mathbb{C})`$ action, and its abelian charge comes from the selected anomaly-free complex phase. Entries of $`D_{F}`$ connect these left-handed states to the corresponding right-handed singlets. Algebraically those entries have the role of Yukawa and neutral mass matrices; numerically they remain profile data in this paper.
+
+This picture also explains the Higgs calculation. Enumerating all $`a[D_{F},b]`$ asks which scalar bridges the finite algebra permits. The unrestricted completed triple permits three real rank-four modules, or three complex weak doublets. The selected q79/proto-spinor alignment projector retains one rank-four module and removes the other eight real scalar directions. The later ten spectrum rows ask a different question: what are the eigenvalues of the selected finite heat operators in the seven matter/scalar and three gauge/ghost sectors? They certify the internal finite shape; they are not yet physical spacetime masses or continuum thresholds.
 
 # The spectral-triple contract
 
@@ -361,6 +376,26 @@ The heat-kernel theorem produces cosmological, Einstein–Hilbert, Yang–Mills,
 
 Combining <a href="#thm:product" data-reference-type="ref+Label" data-reference="thm:product">8</a> with <a href="#prop:higgs" data-reference-type="ref+Label" data-reference="prop:higgs">7</a> closes the bosonic *operator content* at profile tier: three gauge terms, one Higgs covariant kinetic term and potential, and the standard gravitational terms. It does not fix absolute coefficients until the base geometry, cutoff data, field normalization, and RG transport are supplied.
 
+## Gauge-fixed heat data and the ten finite spectra
+
+The later finite execution sharpens this statement without changing its tier. From the selected $`Q,u,d,L,e,N`$ chiral representations, the one-Higgs scalar module, the adjoint gauge blocks, and Faddeev–Popov ghosts, A57 derives the standard one-loop coefficient vector
+``` math
+b=\left(\frac{41}{10},-\frac{19}{6},-7\right)
+```
+by representation indices. The accepted QFT vector is not used to select this result. Its interpretation as a physical running law still imports the usual gauge-fixed one-loop QFT theorem.
+
+A58–A62 then execute the seven $`Q,u,d,L,e,N,H`$ rows and the three $`U(1)`$, $`SU(2)`$, and $`SU(3)`$ gauge/ghost rows. The final two nonabelian rows are
+``` math
+\begin{array}{c|ccc}
+ &0&4\pi^2/9&8\pi^2/9\\ \hline
+ SU(2)&3&12&12\\
+ SU(3)&8&32&32
+\end{array}
+```
+with the table entries giving multiplicities. The $`U(1)`$ adjoint self-interaction row vanishes, as required by $`C_2(U(1))=0`$. These ten internal spectra are exact and add no continuous scale.
+
+This completion has a useful negative consequence. After normalization per representation or adjoint rank, every nontrivially weighted row has the same finite spectral shape. It can supply a common finite heat factor, but not the different threshold corrections needed to repair the universal-boundary failure below. A nonuniversal physical threshold still requires a same-source continuum HYM or mass-dependent operator, not a relabeling of the finite spectra.
+
 ## Universal gauge normalization is excluded
 
 Equal normalized finite traces with one universal $`f_0`$ and identity kinetic metric would require
@@ -484,18 +519,24 @@ The finite results used here are archived in the curated calculation repository 
 
 - **A51:** `finite_inner_fluctuation`; the $`676`$-pair one-form execution, selected one-Higgs projector, and finite traces.
 
+- **A57:** `gauge_fixed_fluctuation_complex`; the selected gauge-fixed complex and exact one-loop coefficient vector.
+
+- **A62:** `ten_spectrum_closure`; completion of all ten exact finite internal spectrum rows and the universal-shape limitation.
+
 The next strict mathematical exits are:
 
 1.  construct the physical nonpullback q79 HYM endpoints and the connection-preserving continuum intertwiner;
 
 2.  derive the entries of $`D_{F}`$ and the overlap kinetic metric without measured profile coordinates;
 
-3.  select a proper-time measure and determine the identifiable spectral products from source geometry;
+3.  derive a sector-dependent physical threshold operator; the completed finite spectra alone cannot provide it;
 
-4.  supply the Lorentzian/Wick and physical-state contracts; and
+4.  select a proper-time measure and determine the identifiable spectral products from source geometry;
 
-5.  complete renormalized quantum transport with an uncertainty and observable-comparison theorem.
+5.  supply the Lorentzian/Wick and physical-state contracts; and
+
+6.  complete renormalized quantum transport with an uncertainty and observable-comparison theorem.
 
 # Conclusion
 
-The corrected result is narrower than v3 and materially stronger than a disclaimer. MTT now has an executed finite almost-commutative profile encoding: the family and gauge carriers are correctly typed, the finite real-even triple is completed, the anomaly-free circle and global gauge group are explicit, and the finite one-form calculation explains why a selected projector is needed to obtain one Higgs doublet. The same analysis also identifies exact obstructions: the qutrit algebra cannot simply be renamed as the Standard Model algebra, the uncompleted three-summand finite triple fails orientation and duality, the raw fluctuation space has three doublets, and a single universal spectral normalization fails on the selected pure-SM running branch. What remains is not “derive NCG again.” It is to source the Euclidean/Lorentzian bridge, finite values, overlap metric, and spectral moments from one physical MTT geometry.
+The corrected result is narrower than v3 and materially stronger than a disclaimer. MTT now has an executed finite almost-commutative profile encoding: the family and gauge carriers are correctly typed, the finite real-even triple is completed, the anomaly-free circle and global gauge group are explicit, and the finite one-form calculation explains why a selected projector is needed to obtain one Higgs doublet. The gauge-fixed complex now also derives the one-loop representation coefficients and closes all ten finite internal spectrum rows. The same analysis identifies exact obstructions: the qutrit algebra cannot simply be renamed as the Standard Model algebra, the uncompleted three-summand finite triple fails orientation and duality, the raw fluctuation space has three doublets, the normalized finite spectra cannot generate nonuniversal thresholds, and a single universal spectral normalization fails on the selected pure-SM running branch. What remains is not “derive NCG again.” It is to source the Euclidean/Lorentzian bridge, finite values, physical threshold operator, overlap metric, and spectral moments from one physical MTT geometry.

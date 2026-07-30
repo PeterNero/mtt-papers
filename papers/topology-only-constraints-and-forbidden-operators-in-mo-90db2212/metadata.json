@@ -48,15 +48,15 @@
       "sha256": "6b499ecf6a39c5ab945542e7ca01cf2863157ebcd20d8c5d3dd9761923c7823b"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "b99905decca1bd68e14f08eec6572be44d06b346ebb462ae46d63bdfb728f074",
+  "source_tree_sha256": "000c9f855d059b491fc8d5b2b0b423fb1a2506e3bb0fbf088b1a0fdf921d85be",
   "title": "Topology-Only Constraints and Forbidden Operators in Modal Triplet Theory Anomaly cancellation, hypercharge quantization, and early falsifiability from overlap bundles",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

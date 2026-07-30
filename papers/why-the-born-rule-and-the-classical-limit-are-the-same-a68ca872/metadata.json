@@ -1,65 +1,93 @@
 {
-  "abstract": "The Born rule and the emergence of classical determinism are traditionally treated as independent foundational problems in quantum mechanics. The former is addressed through probabilistic axioms or symmetry arguments, while the latter is attributed to decoherence and environmental interactions. In this work we show that, within Modal Triplet Theory, these two phenomena arise as different regime limits of a single underlying structure. Both are shadows of coherent-sector projection and admissible basin dynamics governed by the same projector, spectral gap, and stability margins. Probabilities arise when multiple admissible basins compete with comparable measure, while classical determinism emerges when one basin dominates exponentially. This identification explains why decoherence succeeds in explaining stability but fails to explain outcome selection, why Born-rule derivations repeatedly reconstruct the same measure without a physical origin, and why unitary Schr\u00f6dinger evolution is exact yet insufficient as a global predictor. The analysis establishes a unified resolution of two long-standing quantum-mechanical riddles without modifying quantum mechanics or introducing additional postulates.",
+  "abstract": "The Born rule and the emergence of classical behavior are related, but they are not the same mathematical problem. The first fixes outcome probabilities for a declared quantum preparation and instrument. The second asks when retained records and observables are well approximated by one stable classical alternative. We formulate their interface without identifying them. Standard Gleason-type results recover trace probabilities only after additive or effect-noncontextual probability assumptions are supplied; they do not select an MTT source measure. The current q79 program now provides a stronger, domain-specific result: its canonical binary one-anchor Fock recorder emits an exact stopped-output measure and second-moment capture descent from the selected normal state, without an added Born axiom, stochastic primitive, fit, or observed probability on that domain. General apparatus contexts and objective single-history actualization remain open. Separately, we prove exact concentration and persistence bounds. If one record has probability at least 1 minus epsilon, the law is within epsilon in total variation of a deterministic record, bounded observables differ by at most epsilon times their oscillation, and a record with per-step escape probability at most eta survives n steps with probability at least 1 minus epsilon minus n times eta. These statements define a controlled classical limit. They do not derive the outcome weights or select one realized history.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v2",
+  "date": "July 2026, Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261841",
-    "created": "2026-01-15T20:01:47.083424+00:00",
+    "created": "2026-07-29T08:52:44.472829+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18261842",
+    "doi": "10.5281/zenodo.21666025",
     "files": [
       {
-        "checksum": "md5:cd5fa2c5e0eea07be7fad9cecb19b211",
-        "content_url": "https://zenodo.org/api/records/18261842/files/Why_the_Born_Rule_and_the_Classical_Limit_Are_the_Same_Problem__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory%20(2).pdf/content",
-        "key": "Why_the_Born_Rule_and_the_Classical_Limit_Are_the_Same_Problem__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory (2).pdf",
-        "size": 266481
+        "checksum": "md5:0ab4f72d2c187b5701abd7680e001cc5",
+        "content_url": "https://zenodo.org/api/records/21666025/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 314713
       }
     ],
-    "id": "18261842",
-    "match_kind": "title_or_file",
+    "id": "21666025",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18261842",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21666025",
     "resource_type": "publication",
-    "title": "Why the Born Rule and the Classical Limit Are the Same Problem",
-    "updated": "2026-01-15T20:01:47.452764+00:00",
-    "version": "v1.0"
+    "title": "Born-Compatible Record Measures and the Classical Concentration Limit: Separate Theorems and Their MTT Interface",
+    "updated": "2026-07-29T08:52:44.734356+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "cba7d63faa7925b7d3afb6613f6f92d119dbb9037038a755246c2ecb42e31a12",
+  "main_tex_sha256": "dcedc23f54f0a2c6faacd995b733e28ea5a39bd5d6cfbff2bdf470bcfe0d0526",
   "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
-  "paper_md_sha256": "a0425ed0788c4cfc308de0fa2c1187dde8a2501ef18b19b96e1e6de50cc71725",
+  "paper_md_sha256": "45c6c8e893f97a318a243fcf8daf01936641f6a1899aac992d3467618ab52719",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "1dedb10a9661901b734b6ea6861c3709e9c63443024dfd50374b8e870583136c",
+    "selected_revision": true,
+    "superseded_source_path": "6 Quantum Mechanics/_work/Why_the_Born_Rule_and_the_Classical_Limit_Are_the_Same_Problem__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 29503,
+      "bytes": 18954,
       "path": "main.tex",
-      "sha256": "cba7d63faa7925b7d3afb6613f6f92d119dbb9037038a755246c2ecb42e31a12"
+      "sha256": "dcedc23f54f0a2c6faacd995b733e28ea5a39bd5d6cfbff2bdf470bcfe0d0526"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "6 Quantum Mechanics/_work/Why_the_Born_Rule_and_the_Classical_Limit_Are_the_Same_Problem__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "095e4b1cf6a639e05c56ff0154a482cf8c0fe26e52cadcf57d5278ce08c0b290",
-  "title": "Why the Born Rule and the Classical Limit Are the Same Problem A Projection-Based Shadow Bridge in Modal Triplet Theory",
+  "source_tree_sha256": "6c701f4df4f3a3af1bd5c56ef468344a0b7bc73eb40faafc37c704b6c7889c26",
+  "title": "Born-Compatible Record Measures and the Classical Concentration Limit: Separate Theorems and Their MTT Interface",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261841",
+      "created": "2026-07-29T08:52:44.472829+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666025",
+      "files": [
+        {
+          "checksum": "md5:0ab4f72d2c187b5701abd7680e001cc5",
+          "content_url": "https://zenodo.org/api/records/21666025/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 314713
+        }
+      ],
+      "id": "21666025",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666025",
+      "resource_type": "publication",
+      "title": "Born-Compatible Record Measures and the Classical Concentration Limit: Separate Theorems and Their MTT Interface",
+      "updated": "2026-07-29T08:52:44.734356+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18261841",
       "created": "2026-01-15T20:01:47.083424+00:00",

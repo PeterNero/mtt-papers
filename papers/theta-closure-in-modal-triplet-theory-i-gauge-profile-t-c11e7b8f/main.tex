@@ -37,10 +37,9 @@ To address the normalization of nonabelian harmonics, we introduce a
 high--coherence (twistor) corner with declared period and gauge-kinetic
 normalizations. An $O(\lambda_Q^{-1})$ overlap estimate is conditional on
 explicit projector and representative perturbation bounds.
-The old $4.2$--$5~\mathrm{TeV}$ crossing and its identification with a physical
-coherence, gap, or quantum-gravity scale are withdrawn.  The scale $Q=M_t$ is a
-renormalization and matching convention only.  Explicit geometric realization
-must therefore be re-executed against the new target pair.
+The scale $Q=M_t$ is a renormalization and matching convention, not a physical
+coherence, gap, or quantum-gravity scale.  The result is a calibrated target
+and conditional existence test; independent geometric selection remains open.
 \end{abstract}
 
 \section*{Revision note for this edition}
@@ -77,6 +76,38 @@ No claim of uniqueness, zero-knob gauge-coupling prediction, or full
 unification is made.  The coupling data enter upstream of the profile targets;
 agreement of a fitted geometry with those same targets is a realization or
 round-trip test, not a held-out prediction.
+
+\subsection{The central picture}
+
+In plain language, each gauge field samples an internal harmonic profile.  Its
+four-dimensional kinetic coefficient is the weighted cost of that profile
+over the internal carrier.  A larger coefficient $I_a$ means a smaller
+four-dimensional coupling $g_a$ when the higher-dimensional normalization is
+held fixed.  The two ratios in this paper therefore act like two calibrated
+rulers: they specify how the weak and color profile costs compare with the
+abelian one, but they do not yet explain why MTT selected those costs.
+
+The shared circle has a precise but limited role in this picture.  It supplies
+common phase or holonomy data used by all three lanes and is counted once.
+The lane labels organize operators and representatives; they are not three
+independent compact spaces whose dimensions should be added.
+
+\subsection{How to read the dependency chain}
+
+The argument has four stages:
+\begin{enumerate}
+\item reduce a declared higher-dimensional gauge action to the relation
+  $1/g_a^2=I_a/g_{10}^2$;
+\item transport measured gauge data into one scale and one renormalization
+  scheme;
+\item convert the transported coupling ratios into overlap-ratio targets;
+\item ask whether an auxiliary internal representative can realize those
+  targets while preserving the declared spectral gap.
+\end{enumerate}
+Only the first and fourth stages concern the geometric realization.  The
+second and third stages calibrate it from measured Standard Model data.  This
+ordering is why existence of a matching representative is weaker than a
+prediction of the couplings.
 
 \section{Standing assumptions of Modal Triplet Theory}
 
@@ -242,10 +273,11 @@ In the next part we will:
 \begin{enumerate}
 \item Compute $g_1,g_2,g_3$ explicitly from experimental inputs.
 \item Run them to a common matching scale.
-\item Extract numerical $\Theta$–constraints.
+\item Extract numerical $\Theta$--constraints.
 \end{enumerate}
 % ===========================
-\section{Experimental inputs and gauge couplings at $M_Z$}
+\section{Experimental inputs and gauge couplings at
+\texorpdfstring{$M_Z$}{MZ}}
 % ===========================
 
 In this section we compute the Standard Model gauge couplings explicitly
@@ -367,7 +399,7 @@ an official joint likelihood spanning all fifteen source coordinates is not
 claimed.
 
 % ===========================
-\section{Numerical $\Theta$--profile targets from gauge data}
+\section{Numerical \texorpdfstring{$\Theta$}{Theta}--profile targets from gauge data}
 % ===========================
 
 Under the coupling--overlap relation already proved conditionally above,
@@ -391,7 +423,25 @@ reproduce them is a calibrated realization.  A held-out prediction would
 require fixing that geometry without these gauge rows and then computing an
 observable not used in source, branch, scale, or model selection.
 
-\section{Transition to the geometric $\Theta$-problem}
+\subsection{Worked example: reading the target pair}
+
+As a concrete foothold, ignore the common normalization $g_{10}$ and set
+$I_1=1$ only for reading the ratios.  Equation~\eqref{eq:targets} then says
+\[
+ I_2\simeq0.5110,\qquad I_3\simeq0.1583.
+\]
+The same information can be written as coupling ratios,
+\[
+ \frac{g_2}{g_1}=\frac{1}{\sqrt{I_2/I_1}}\simeq1.3989,
+ \qquad
+ \frac{g_3}{g_1}=\frac{1}{\sqrt{I_3/I_1}}\simeq2.5131.
+\]
+Nothing has been predicted in this rewrite: it is the same measured profile
+expressed in geometric coordinates.  The useful test comes next, when a
+specified internal ansatz must realize both numbers without violating its gap
+and positivity conditions.
+
+\section{Transition to the geometric \texorpdfstring{$\Theta$}{Theta}-problem}
 
 The next step is to determine whether the internal geometry of MTT
 admits overlap integrals $I_1,I_2,I_3$ satisfying the above ratios
@@ -504,7 +554,7 @@ This separation is required because the nil spectral gap
 \eqref{eq:gapNil} is controlled by $h_0$, not directly by metric scale.
 
 % ===========================
-\section{Solving the $\Theta$--system}
+\section{Solving the \texorpdfstring{$\Theta$}{Theta}--system}
 % ===========================
 
 We now solve the overlap constraints from Section~4 of Part~II
@@ -794,7 +844,7 @@ $C_a$. The Schur--Feshbach bound alone would not supply all of these
 coefficient estimates.
 \end{proof}
 
-\subsection{Twistor-corner $\Theta$--closure at leading order}
+\subsection{Twistor-corner \texorpdfstring{$\Theta$}{Theta}--closure at leading order}
 
 Combining the above with the experimentally extracted targets at the selected common-scheme point $Q=M_t$:
 \[
@@ -886,6 +936,56 @@ or cosmological scale are not results of this revision.  Papers II--V must be
 re-executed or reclassified accordingly.  This paper therefore supplies a
 reproducible profile target and a precise geometric test, not a unique
 first-principles prediction of gauge couplings or internal geometry.
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+This paper uses the common-scheme precision transport, electroweak row, HYM certificate, and global profile audit to define and check its gauge-overlap targets. Flavor and neutral packets are neighboring profile context rather than inputs to the local overlap identity. The geometric source and zero-knob upgrade remain open.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/current_global_lock} (\emph{profile replay}).\par Current non-looping global status and source-certificate map.
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A02/precision_15_source_transport} (\emph{profile replay}).\par Fifteen measured source coordinates, Jacobian and covariance transport.
+\item \path{A02/precision_8x8_workspace} (\emph{profile replay}).\par Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+\item \path{A01/strict_pew_row} (\emph{derived exact}).\par Promoted P\_EW source row at the declared one-shared-primitive standard.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/charged_yukawa_higgs_profile} (\emph{profile replay}).\par Versioned Yu, Yd, Ye and lambda\_H profile packet.
+\item \path{A14/ckm_prediction_profile} (\emph{numeric certified}).\par Three selected CKM profile rows and uncertainty comparison.
+\item \path{A01/direct_k_higgs_row} (\emph{derived exact}).\par Promoted direct K\_threshold.Omega\_H.lambda row.
+\item \path{A22/e6_qpsi_qcd_anomaly} (\emph{derived exact}).\par E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+\item \path{A40/neutral_two_primitive_profile} (\emph{profile replay}).\par Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+\item \path{A01/qutrit_weyl_27_matrix} (\emph{derived exact}).\par Sparse 27x27 qutrit-Weyl left-action realization.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \section*{References}
 % ===========================

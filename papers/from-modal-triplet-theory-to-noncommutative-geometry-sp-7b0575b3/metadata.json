@@ -1,51 +1,52 @@
 {
-  "abstract": "We give a corrected relation between Modal Triplet Theory (MTT) and noncommutative geometry (NCG). A coherent fixed-point projector does not by itself derive a spectral triple, the Standard Model finite algebra, a Wick rotation, or the spectral action. We prove the precise compression theorem that is available when a projector reduces an already specified real even spectral triple. We then record the stronger finite results now available in the selected MTT branch. The family factor is separated from the rank 1<2<3 gauge carrier; an explicit three-family chiral representation and the faithful group (SU(3)\\times SU(2)\\times U(1)_Y)/\\mathbb{Z}_6 are obtained; and the finite real-even triple is completed at profile tier by the additional neutral complex summand \\mathbb{C}_{N}. Direct enumeration of all 676 finite one-form basis pairs gives a raw rank-twelve scalar space, consisting of three Higgs-doublet modules. The selected q79/proto-spinor alignment projector has rank four and leaves one complex Higgs doublet. These are finite, reproducible results, but the entries of D_{F} remain profile data. The four-dimensional compact Riemannian spin triple, Wick dictionary, cutoff function, and spectral moments are not derived by the fixed-point construction. Moreover, the selected pure-Standard-Model running branch rules out one universal gauge normalization: the best common-scale coupling ratio remains 1.046656046. A positive overlap kinetic metric reconstructs the profile couplings exactly but uses two measured relative coordinates. Thus MTT currently supplies a typed almost-commutative profile encoding with an executed finite factor, not a first-principles derivation of NCG or a no-knob derivation of the Standard Model.",
+  "abstract": "We analyze the relation between Modal Triplet Theory (MTT) and noncommutative geometry (NCG). A coherent fixed-point projector does not by itself derive a spectral triple, the Standard Model finite algebra, a Wick rotation, or the spectral action. We prove the precise compression theorem that is available when a projector reduces an already specified real even spectral triple. We then record the stronger finite results now available in the selected MTT branch. The family factor is separated from the rank-one, rank-two, and rank-three gauge carrier; an explicit three-family chiral representation and the faithful group (SU(3) x SU(2) x U(1)_Y)/Z_6 are obtained; and the finite real-even triple is completed at profile tier by the additional neutral complex summand C_N. Direct enumeration of all 676 finite one-form basis pairs gives a raw rank-twelve scalar space, consisting of three Higgs-doublet modules. The selected q79/proto-spinor alignment projector has rank four and leaves one complex Higgs doublet. These are finite, reproducible results, but the entries of D_F remain profile data. The selected representation also derives the one-loop coefficient vector (41/10,-19/6,-7), and all ten matter, scalar, and gauge/ghost internal spectrum rows are now exact finite calculations with no added continuous parameter. Their normalized nonzero spectral shape is universal, however, so they do not generate the missing nonuniversal gauge thresholds. The four-dimensional compact Riemannian spin triple, Wick dictionary, cutoff function, and spectral moments are not derived by the fixed-point construction. Moreover, the selected pure-Standard-Model running branch rules out one universal gauge normalization: the best common-scale coupling ratio remains 1.046656046. A positive overlap kinetic metric reconstructs the profile couplings exactly but uses two measured relative coordinates. Thus MTT currently supplies a typed almost-commutative profile encoding with an executed finite factor, not a first-principles derivation of NCG or a no-knob derivation of the Standard Model.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v4",
-  "date": "July 2026",
+  "current_version": "v5",
+  "date": "July 2026, Version 5",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17162075",
-    "created": "2025-09-19T18:41:05.666571+00:00",
+    "created": "2026-07-29T08:50:55.313175+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.17162076",
+    "doi": "10.5281/zenodo.21665974",
     "files": [
       {
-        "checksum": "md5:69276b4bae51cc0ff4b2e0ddc0d4a814",
-        "content_url": "https://zenodo.org/api/records/17162076/files/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry.pdf/content",
-        "key": "Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry.pdf",
-        "size": 271978
+        "checksum": "md5:40c6f3f57c3d506568e20588dbf59323",
+        "content_url": "https://zenodo.org/api/records/21665974/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 362704
       }
     ],
-    "id": "17162076",
-    "match_kind": "title_or_file",
+    "id": "21665974",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2025-09-19",
-    "record_url": "https://zenodo.org/records/17162076",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665974",
     "resource_type": "publication",
-    "title": "Modal Triplet Theory: From MTT to Noncommutative Geometry",
-    "updated": "2025-09-19T18:41:05.994718+00:00",
-    "version": "v1.0"
+    "title": "From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier",
+    "updated": "2026-07-29T08:50:56.323480+00:00",
+    "version": "v5"
   },
-  "main_tex_sha256": "91b68b1e7ca2d96fe2cf602804b28a29f34b78dbe2842fbcca3af20af43d765e",
+  "main_tex_sha256": "9aa403d0bba86458efc6c1d74844bf4ac224f57da114de545183745517d48976",
   "paper_id": "from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3",
-  "paper_md_sha256": "f7a7904a0ac91f73dd423961acb442bf77a93d97a34224068b9e9726d237c267",
+  "paper_md_sha256": "3fa1013f5dcb508e8f5d1223144755fedd03ae8579f0b05454df6fe93e8dddd0",
   "release_state": "zenodo_released",
   "result_refs": [
     "finite_inner_fluctuation",
     "native_gauge_group",
     "neutral_summand_hypercharge",
     "physical_df_96",
+    "su3_finite_gauge_spectrum",
     "typed_family_representation"
   ],
   "revision": {
     "revision_evidence_path": "15 Discrete & Spectral & Operator Geometric Theories/revised_tex_vnext/NCG_V4_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "d88dcc453aa539548f2d82224313228928763ca30ae24ccf8a319a46401ebb5d",
+    "revision_evidence_sha256": "3d3bf31d58225802363083006054f4f480cb8dbb2bcc76b11aaaaa4bface62c7",
     "selected_revision": true,
     "superseded_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry_v3"
   },
@@ -57,23 +58,73 @@
       "sha256": "b81a2043d3e0bc78cb45c708eda8301abf4ff23222727b8b99c614d6dc8330f9"
     },
     {
-      "bytes": 353307,
+      "bytes": 362704,
       "path": "main.pdf",
-      "sha256": "f3af0b9cb93944cc15c0bd8bb80fdcb9311e22b9b8e158a6a10f351cbec149b5"
+      "sha256": "4f7f4b95210312ef34b473ba280ad16e4c4089d1d9383f20ea79f7243242f0e8"
     },
     {
-      "bytes": 26690,
+      "bytes": 31496,
       "path": "main.tex",
-      "sha256": "91b68b1e7ca2d96fe2cf602804b28a29f34b78dbe2842fbcca3af20af43d765e"
+      "sha256": "9aa403d0bba86458efc6c1d74844bf4ac224f57da114de545183745517d48976"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/revised_tex_vnext/Modal_Triplet_Theory__From_MTT_to_Noncommutative_Geometry_v4"
   },
-  "source_tree_sha256": "7839cdde859d918146fa9e1a7a05ac95d397c4f072e09563e1ff789718fa20d6",
-  "title": "From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier (Corrected fourth edition)",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "a42bbdede4d4bf9777d13b7adfdfc459e3ebb97a05fa91970155ff54dee5d255",
+  "title": "From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17162075",
+      "created": "2026-07-29T08:50:55.313175+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665974",
+      "files": [
+        {
+          "checksum": "md5:40c6f3f57c3d506568e20588dbf59323",
+          "content_url": "https://zenodo.org/api/records/21665974/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 362704
+        }
+      ],
+      "id": "21665974",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665974",
+      "resource_type": "publication",
+      "title": "From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier",
+      "updated": "2026-07-29T08:50:56.323480+00:00",
+      "version": "v5"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.17162075",
+      "created": "2026-07-28T17:39:18.734079+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650877",
+      "files": [
+        {
+          "checksum": "md5:cacd24263337d865e320c10c68eb792e",
+          "content_url": "https://zenodo.org/api/records/21650877/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 353307
+        }
+      ],
+      "id": "21650877",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650877",
+      "resource_type": "publication",
+      "title": "From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier",
+      "updated": "2026-07-28T17:39:19.162181+00:00",
+      "version": "v4"
+    },
     {
       "concept_doi": "10.5281/zenodo.17162075",
       "created": "2025-09-19T18:41:05.666571+00:00",

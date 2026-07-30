@@ -1,40 +1,40 @@
 {
-  "abstract": "This corrected successor proves a Penrose-Schoenberg completion theorem. The selected Einstein/TEGR static constraint gives the regulated Newton self-energy as one half of a squared Green-Hilbert distance. Its pairwise matrix is conditionally negative definite, so exp(-t E_G/hbar) is a CPTP pure-dephasing semigroup whose generator is exactly the regulated Diosi-Penrose double commutator. This closes positivity and Markovian completion, while leaving the external smearing, effective Newton scale, exact MTT rate-selection identity, controlled environmental limit, and objective outcome instrument as explicit source obligations.",
+  "abstract": "This paper asks when a Diosi-Penrose (DP) law can arise as an effective shadow of Modal Triplet Theory (MTT). Completely positive reduction and lifting channels give an exact Nakajima-Zwanzig memory identity; a Davies-GKSL generator still requires an independently justified weak-coupling, Markov, and secular limit. The central result is a Penrose-Schoenberg completion theorem. Conditional on the selected two-derivative Einstein/TEGR action, its static weak-field constraint, and a declared external smearing map, the Newton self-energy of two branch mass densities is one half of a squared Hilbert-space distance. Its pairwise matrix is therefore conditionally negative definite, so the exponential decay matrix defines a completely positive, trace-preserving dephasing semigroup for every finite branch set. Its generator is exactly the regulated DP double commutator, and it is the unique population-preserving pure-dephasing semigroup with those real Penrose rates. This closes positivity and Markovian completion; it does not make Penrose's provisional lifetime estimate an MTT source theorem. MTT must still select the external regularization, the exact Penrose rate law or an equivalent correlation kernel, and, for objective single-outcome collapse, a stochastic instrument and probability rule. Thus the DP law is a rigorous restricted completion, not yet a derived fundamental law of MTT.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v3",
-  "date": "July 2026",
+  "date": "July 2026 Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261599",
-    "created": "2026-01-15T19:35:24.245991+00:00",
+    "created": "2026-07-29T08:50:58.436204+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18261600",
+    "doi": "10.5281/zenodo.21665978",
     "files": [
       {
-        "checksum": "md5:1968043bde1cf2a6250828426fa18025",
-        "content_url": "https://zenodo.org/api/records/18261600/files/Gravitationally_Induced_Collapse_as_an_Effective_Limit_of_Coherence_Breakdown_in_Modal_Triplet_Theory%20(3).pdf/content",
-        "key": "Gravitationally_Induced_Collapse_as_an_Effective_Limit_of_Coherence_Breakdown_in_Modal_Triplet_Theory (3).pdf",
-        "size": 337242
+        "checksum": "md5:f66d0350e5ea88b7dd3802dec4528bd7",
+        "content_url": "https://zenodo.org/api/records/21665978/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 374916
       }
     ],
-    "id": "18261600",
-    "match_kind": "title_or_file",
+    "id": "21665978",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18261600",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665978",
     "resource_type": "publication",
-    "title": "Gravitationally Induced Collapse as an Effective Limit of Modal Triplet Theory",
-    "updated": "2026-01-15T19:35:24.913129+00:00",
-    "version": "v1.0"
+    "title": "Gravitationally Induced Collapse in Modal Triplet Theory A Penrose–Schoenberg Completion and Source Contract",
+    "updated": "2026-07-29T08:50:58.779583+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "16111263ce94fdfa4cf9f57a4ab6bd80bdeb32e7fd55df158ef11691bd4eab3e",
+  "main_tex_sha256": "3724ec67599b3addd2188450e6988728b4a578b81e44d674adb529816f0f6de8",
   "paper_id": "gravitationally-induced-collapse-as-an-effective-limit-d74eb471",
-  "paper_md_sha256": "50f570c2cd2a4e58c66ee554471701793851fda1f8c91a87a9342504e2c3486f",
+  "paper_md_sha256": "b6e694a8befaed663bfef7ec58b70cce04cc8305d1c7070d7e93d8f07f4689fe",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
@@ -46,9 +46,9 @@
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 26934,
+      "bytes": 29910,
       "path": "main.tex",
-      "sha256": "16111263ce94fdfa4cf9f57a4ab6bd80bdeb32e7fd55df158ef11691bd4eab3e"
+      "sha256": "3724ec67599b3addd2188450e6988728b4a578b81e44d674adb529816f0f6de8"
     },
     {
       "bytes": 4237,
@@ -56,9 +56,9 @@
       "sha256": "26a6cc596994141e9586d7831f99b6c6e5849e43874c5714d3299cd3b46e8b5f"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     {
       "bytes": 5058,
@@ -69,10 +69,35 @@
   "source_provenance": {
     "legacy_source_path": "6 Quantum Mechanics/_work/Gravitationally_Induced_Collapse_as_an_Effective_Limit_of_Coherence_Breakdown_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "4fc9f24fc0fb99bc68b5a907f7b5fd22771bf1825cf5b5f31499b282bede168d",
-  "title": "Gravitationally Induced Collapse in Modal Triplet Theory: A Penrose-Schoenberg Completion and Source Contract",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "1159e24eae665322ed1307bb62bfaff77d9ffed20f084aa95b3ecdc7c13ffab3",
+  "title": "Gravitationally Induced Collapse in Modal Triplet Theory A Penrose–Schoenberg Completion and Source Contract",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261599",
+      "created": "2026-07-29T08:50:58.436204+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665978",
+      "files": [
+        {
+          "checksum": "md5:f66d0350e5ea88b7dd3802dec4528bd7",
+          "content_url": "https://zenodo.org/api/records/21665978/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 374916
+        }
+      ],
+      "id": "21665978",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665978",
+      "resource_type": "publication",
+      "title": "Gravitationally Induced Collapse in Modal Triplet Theory A Penrose–Schoenberg Completion and Source Contract",
+      "updated": "2026-07-29T08:50:58.779583+00:00",
+      "version": "v3"
+    },
     {
       "concept_doi": "10.5281/zenodo.18261599",
       "created": "2026-01-15T19:35:24.245991+00:00",

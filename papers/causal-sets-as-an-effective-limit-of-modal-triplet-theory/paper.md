@@ -1,122 +1,208 @@
 ---
 abstract: |
-  Causal Set Theory (CST) proposes that spacetime is fundamentally discrete and that its essential structure is encoded in a locally finite partial order representing causal relations. Modal Triplet Theory (MTT), by contrast, posits a continuous underlying modal field whose coherent sector gives rise to effective four–dimensional spacetime, causality, and quantum phenomena through stability and projection. In this work we show that causal sets can arise naturally as an effective, coarse–grained description of the emergent spacetime sector of MTT. In this construction, discreteness and causal order are not postulated at the fundamental level but appear as derived structures when the coherent spacetime is sampled at scales set by modal spectral gaps and admissibility constraints. We present two complementary routes to causal sets: (i) a kinematical construction based on Poisson sprinkling of the emergent MTT spacetime, and (ii) a dynamical construction in which causal set elements correspond to physically meaningful coherence–selection events. We argue that this perspective preserves the successes of CST while providing a deeper explanation for why causal order and discreteness arise at all.
+  A causal set can be obtained from an effective Modal Triplet Theory spacetime once a sampling rule is supplied, but the sampling rule is additional data. For a globally hyperbolic four-dimensional spacetime, any locally finite set of sampled events inherits a partial order from the spacetime causal relation. A Poisson process with intensity proportional to the spacetime volume measure is almost surely locally finite on every relatively compact region; in Minkowski spacetime its law is Lorentz invariant because the intensity measure is invariant. These are exact kinematic statements. They do not identify the causal set as fundamental, derive the sprinkling intensity, or convert an internal q79 spectral gap into a four-dimensional event density. Such a conversion requires a base-resolution theorem with metric normalization and an explicit internal-to-spacetime map. Causal sets therefore remain a valid conditional coarse-graining or observational encoding of an MTT spacetime, not a currently selected consequence of the internal finite geometry.
 author:
 - Peter Nero
-current_version: v1.0
-date: January 2026
-generated_from_main_tex_sha256: d864a54ac8e1155b40ea255663693d4ffe0df0f224743c22355f92035a1c31d9
+current_version: v2
+date: July 2026 Version 2
+generated_from_main_tex_sha256: f1111f4d18604bb848ce49fb4d1cb7ac82f579262799dff08b3a65bcc17ecb0d
 paper_id: causal-sets-as-an-effective-limit-of-modal-triplet-theory
 release_state: zenodo_released
-released_version: v1.0
-title: "**Causal Sets as an Effective Limit of Modal Triplet Theory**"
-zenodo_doi: 10.5281/zenodo.18261498
-zenodo_record_id: 18261498
-zenodo_url: "https://zenodo.org/records/18261498"
+released_version: v2
+title: |
+  Causal Sets as a Conditional Coarse-Graining of Modal Triplet Theory:
+  Kinematic Construction, Sampling Choices, and Scale-Typing Boundary
+zenodo_doi: 10.5281/zenodo.21665949
+zenodo_record_id: 21665949
+zenodo_url: "https://zenodo.org/records/21665949"
 ---
 
-# Introduction
+# Version 2 Revision Note
 
-Understanding the origin of spacetime structure remains a central challenge in quantum gravity. Causal Set Theory (CST) addresses this challenge by positing that spacetime is fundamentally discrete and that its essential content is captured by a locally finite partially ordered set, where the order relation encodes causal precedence and cardinality encodes spacetime volume. This approach achieves background independence and maintains Lorentz invariance in a statistical sense, but it does so by elevating causal order and discreteness to axiomatic status.
+<div class="description">
 
-Modal Triplet Theory (MTT) approaches the same foundational problem from a different direction. Rather than assuming spacetime or causal structure as fundamental, MTT posits a continuous modal field defined on a higher–dimensional structured arena and identifies observable four–dimensional spacetime as a stable, coherent projection of that field. In MTT, causality, locality, and the arrow of time are emergent properties associated with stability, damping, and admissibility of coherent configurations.
+Version 1.0, *Causal Sets as an Effective Limit of Modal Triplet Theory*.
 
-At first glance, CST and MTT appear philosophically opposed: CST rejects the continuum at the fundamental level, while MTT recovers the continuum as an emergent structure. The aim of this paper is to show that this opposition is only apparent. We argue that CST can be understood as an effective description of the emergent spacetime sector of MTT, valid at scales where modal structure enforces an effective discreteness. In this sense, CST captures genuine features of physical spacetime, but those features need not be fundamental.
+The original paper identified an internal modal gap with a four-dimensional sprinkling density and described Poisson sampling as derived rather than chosen.
 
-This paper does not attempt to derive the full dynamical growth models of CST from MTT. Rather, it establishes a principled route by which causal sets arise as coarse–grained encodings of MTT coherence, clarifying the conceptual status of causal order and discreteness.
+The spacetime, point process, intensity measure, causal order, and local-finiteness assumptions are now typed separately. The exact kinematic construction is proved without a cross-sector scale claim.
 
-# Minimal Overview of Modal Triplet Theory
+A locally finite sample of a causal spacetime inherits a causal-set order, and covariant Poisson sprinkling gives the standard Lorentz-invariant kinematic model in Minkowski spacetime.
 
-Modal Triplet Theory posits a single underlying physical entity: a modal field defined on a ten–dimensional structured arena
+MTT must derive a physical event/sampling law and its four-dimensional intensity from the selected branch before the causal set can be called an MTT prediction.
+
+</div>
+
+# Causal sets and effective spacetime
+
+A causal set is a pair $`(C,\preceq)`$ such that:
+
+1.  $`\preceq`$ is reflexive;
+
+2.  $`\preceq`$ is antisymmetric;
+
+3.  $`\preceq`$ is transitive;
+
+4.  every order interval
+    ``` math
+    I(x,y)=\{z\in C:x\preceq z\preceq y\}
+    ```
+    is finite.
+
+The order represents causal precedence, while local finiteness supplies discreteness .
+
+MTT currently reaches a selected globally hyperbolic four-dimensional spacetime at a conditional gravity/QFT tier. The question in this paper is not whether spacetime is fundamentally discrete. It is whether a causal-set description can be extracted from that effective spacetime.
+
+# The exact kinematic construction
+
+<div id="thm:inherit" class="theorem">
+
+**Theorem 1** (Inherited causal-set order). *Let $`(Y_4,g)`$ be a causal spacetime, and let $`C\subset Y_4`$ be a set such that $`C\cap K`$ is finite for every compact $`K\subset Y_4`$. Define
 ``` math
-M_{10} = Y^{4} \times X^{6},
+x\preceq y
+ \quad\Longleftrightarrow\quad
+ y\in J^+(x).
 ```
-where $`Y^{4}`$ is the effective spacetime manifold and $`X^{6}`$ is a finite, closed modal geometry associated with each spacetime point. The six modal directions are organized into three mutually commuting filter bundles, each equipped with a Laplace–type operator. The defining mathematical feature of this structure is that the corresponding spectral projectors commute, allowing a well–defined joint coherent projector $`\Pi_{\mathrm{coh}}`$.
+If every causal diamond $`J^+(x)\cap J^-(y)`$ is compact, then $`(C,\preceq)`$ is a causal set.*
 
-The dynamics of the modal field consist of local evolution, including damping and disturbance, combined with projection onto the coherent sector. The latter retains only those configurations that are jointly harmonic with respect to all three modal filters. A central result of MTT is the *Fundamental Contractivity Condition* (FCC), which ensures that under suitable bounds on disturbance and damping, the combined evolve–project map is contractive on the admissible set. This yields a unique coherent regime toward which all admissible configurations relax.
+</div>
 
-Crucially, the coherent regime admits an effective four–dimensional description. In this projected sector, a Lorentzian spacetime metric emerges as an elastic response of the modal field, quantum phenomena arise from finite–width off–diagonal modal fluctuations, and causality appears as a property of retarded propagation in the effective spacetime. None of these structures are fundamental; all are consequences of stability and admissibility in the underlying modal dynamics.
+<div class="proof">
 
-# Minimal Overview of Causal Set Theory
-
-Causal Set Theory is based on the proposal that spacetime is fundamentally a causal set $`(C,\prec)`$, where $`C`$ is a set of elementary events and $`\prec`$ is a partial order satisfying transitivity, acyclicity, and local finiteness. The order relation encodes causal precedence, while the number of elements in a region approximates its spacetime volume. In the continuum approximation, Lorentzian geometry is recovered from the combination of order and counting.
-
-A key technical tool in CST is Poisson sprinkling: points are randomly selected in a Lorentzian manifold at a fixed density, and the induced causal relations define a causal set. This construction preserves Lorentz invariance statistically and provides a concrete link between causal sets and continuum spacetimes. Within CST, however, the discreteness scale and the sprinkling procedure are typically taken as fundamental inputs rather than derived quantities.
-
-CST has achieved notable success in clarifying how causal structure can replace metric structure at the foundational level. Nonetheless, it leaves open the question of why spacetime should be discrete and why causal order should be fundamental rather than emergent.
-
-# From Modal Coherence to Causal Order
-
-A central conceptual difference between MTT and CST concerns the status of causality. In CST, causal order is fundamental: the partial order $`\prec`$ is taken as the primitive structure from which geometry is recovered. In MTT, causality is not assumed at the fundamental level but emerges as a property of the coherent sector after projection.
-
-In MTT, the underlying modal field evolves on $`M_{10}`$ according to well–posed local dynamics that include damping and disturbance. When restricted to the coherent sector selected by the joint projector $`\Pi_{\mathrm{coh}}`$, the effective dynamics on the projected spacetime $`Y^{4}`$ are governed by hyperbolic (or hyperbolic–dominated) equations with retarded Green functions. As a result, influence propagates within light cones defined by the emergent metric $`g_{\mu\nu}`$. Causal structure is therefore induced by stability of the coherent projection rather than postulated.
-
-Two consequences follow. First, causal order in MTT is contingent: it exists only insofar as the coherent spacetime description remains valid. In regions where admissibility fails, the effective causal description breaks down even though the underlying modal dynamics remain well defined. Second, causal order is directional: the arrow of time is determined by the direction of contractive flow guaranteed by the FCC.
-
-From the perspective of CST, this suggests a reinterpretation of the partial order $`\prec`$ as encoding the retarded influence relations of a stable coherent spacetime that has already emerged from deeper modal dynamics.
-
-# Kinematical Construction of a Causal Set from MTT
-
-We now present a concrete construction by which a causal set arises as an effective description of an MTT coherent spacetime.
-
-## Emergent spacetime and discreteness scale
-
-Let $`(Y^{4}, g)`$ denote a spacetime arising as the coherent projection of an admissible MTT configuration. The coherent sector is characterized by finite spectral gaps associated with the modal filters. These gaps define a natural ultraviolet scale $`\ell`$, below which excitations are suppressed and above which the continuum description is valid.
-
-We therefore identify $`\ell`$ as an effective discreteness scale, determined dynamically by modal spectral data rather than imposed by hand.
-
-## Sprinkling and induced order
-
-Given $`(Y^{4}, g)`$ and scale $`\ell`$, define a causal set $`(C,\prec)`$ by choosing a Poisson sprinkling of points in $`Y^{4}`$ with density $`\rho \sim \ell^{-4}`$. For any two sprinkled points $`x,y \in C`$, define
+*Proof.* The causal relation is reflexive and transitive. Causality excludes a nontrivial closed causal curve, giving antisymmetry. For $`x\preceq y`$,
 ``` math
-x \prec y \quad \text{if and only if} \quad x \in J^{-}(y),
+I(x,y)
+ =
+ C\cap J^+(x)\cap J^-(y).
 ```
-where $`J^{-}(y)`$ is the causal past of $`y`$ with respect to the metric $`g`$.
+The diamond is compact, so the assumed local finiteness of $`C`$ makes this intersection finite. ◻
 
-This construction yields a locally finite partially ordered set. Counting elements approximates spacetime volume, while the partial order encodes the causal structure of $`(Y^{4}, g)`$. Thus the standard kinematical content of CST is recovered.
+</div>
 
-## Interpretation
+Global hyperbolicity supplies the compact-diamond hypothesis. The theorem is purely kinematic: it uses a continuum causal spacetime and a locally finite sample. It does not determine how the sample is generated.
 
-Within MTT, this causal set is not fundamental. It is a discrete encoding of an already–emergent spacetime geometry, valid at scales where modal coherence suppresses finer structure. The randomness of the sprinkling reflects coarse–graining rather than intrinsic indeterminacy.
+# Poisson sprinkling
 
-# Selection–Event Causal Sets
+Let $`\mu_g`$ be the spacetime volume measure and let $`\rho>0`$. A Poisson point process with intensity measure
+``` math
+\Lambda(B)=\rho\,\mu_g(B)
+```
+has
+``` math
+\Pr[N(B)=n]
+ =
+ e^{-\Lambda(B)}\frac{\Lambda(B)^n}{n!}
+```
+for measurable regions of finite volume, with independent counts on disjoint regions.
 
-MTT also suggests a more intrinsic route to causal sets that does not rely on arbitrary sampling.
+<div id="thm:poisson" class="theorem">
 
-## Selection events
+**Theorem 2** (Poisson local finiteness). *On a sigma-finite spacetime measure space, a Poisson process with locally finite intensity measure has finitely many points in every relatively compact finite-volume region almost surely. Combined with <a href="#thm:inherit" data-reference-type="ref+label" data-reference="thm:inherit">1</a> on a globally hyperbolic spacetime, it produces a causal set almost surely.*
 
-Physically significant changes in MTT occur when the system undergoes local coherence selection, such as measurement–like interactions, horizon crossings, or strong disturbances forcing re–projection into a new admissible basin. We refer to these occurrences as *selection events*. Selection events are localized in the emergent spacetime and associated with irreversible stabilization.
+</div>
 
-## Event–based causal sets
+<div class="proof">
 
-Define a causal set $`(C_{\mathrm{sel}},\prec)`$ by taking elements to be selection events and ordering them by causal precedence in the emergent spacetime. Local finiteness follows from admissibility: selection events cannot accumulate arbitrarily densely without violating stability margins.
+*Proof.* For such a region $`B`$, $`N(B)`$ is a Poisson random variable with finite mean $`\Lambda(B)`$, and therefore takes a finite integer value almost surely. A countable exhaustion by relatively compact regions gives local finiteness simultaneously. ◻
 
-This construction yields a causal set whose elements correspond to physically meaningful transitions rather than abstract spacetime points.
+</div>
 
-## Advantages
+## Lorentz invariance
 
-Selection–event causal sets provide a natural physical interpretation of causal set elements and suggest a direct link between causal structure and quantum measurement.
+In Minkowski spacetime, the volume measure is invariant under proper orthochronous Poincare transformations. Therefore the law of a homogeneous Poisson process with intensity $`\rho\,d^4x`$ is invariant. Individual realizations are not symmetric configurations; the probability law is.
 
-# Discreteness as a Derived Feature
+On a generic curved spacetime the analogous statement is covariance under isometries of $`(Y_4,g)`$, not global Lorentz invariance. A deterministic lattice or foliation-based sampling can select a preferred frame.
 
-In both constructions above, discreteness arises as a consequence of stability rather than as a primitive assumption. Closed modal fibers and spectral gaps enforce a finite resolution of spacetime structure. Causal sets therefore emerge as effective discrete encodings of a deeper continuous dynamics.
+# Why the density is not derived from an internal gap
 
-# Discussion and Outlook
+Suppose $`\lambda_{\mathrm{int}}`$ is an eigenvalue of an operator on the internal compactification $`X_6`$. A four-dimensional sprinkling intensity has units of inverse four-volume. The relation
+``` math
+\rho\stackrel{?}{=}f(\lambda_{\mathrm{int}})
+```
+is not defined until the internal metric normalization, four-dimensional metric normalization, reduction moduli, and a cross-sector response map are fixed.
 
-We have shown that causal sets can arise naturally as effective descriptions of the emergent spacetime sector of Modal Triplet Theory. The kinematical content of CST is recovered by coarse–graining coherent spacetime at the modal gap scale, while a selection–event construction offers a physically grounded interpretation of causal set elements.
+<div id="prop:scale" class="proposition">
 
-This work does not derive CST growth dynamics from MTT but clarifies the conceptual relationship between the two frameworks. CST captures genuine structural features of spacetime, while MTT explains why such features arise. Future work may explore whether specific classes of CST dynamics correspond to admissible modal evolutions.
+**Proposition 3** (Scale-typing obstruction). *An internal spectral gap alone cannot canonically determine a four-dimensional sprinkling intensity.*
 
-From this perspective, Modal Triplet Theory does not compete with Causal Set Theory but subsumes it as an effective layer, with causal order and discreteness emerging because coherence demands them.
+</div>
+
+<div class="proof">
+
+*Proof.* Rescale the internal and external metrics independently. The internal eigenvalue and the external four-volume transform with independent powers. No relation between them is invariant unless additional reduction data constrain the rescalings and define a unit-preserving map. ◻
+
+</div>
+
+The same obstruction appears in the finite-filter and gravitational-collapse papers. It does not say that a relation is impossible. It identifies the missing theorem.
+
+# Alternative coarse-grainings
+
+Poisson sprinkling is not the only way to produce a locally finite sample. Examples include:
+
+- detector records in a bounded observational protocol;
+
+- a covariantly defined point process with non-Poisson correlations;
+
+- a finite event set produced by a hybrid selection dynamics;
+
+- an adaptive cover or net used only for numerical approximation.
+
+Each choice answers a different question. Detector records describe an operational history. A Poisson process is a statistically Lorentz-invariant encoding. A numerical net is a discretization tool. None should be called the fundamental event ontology without an additional physical argument.
+
+The companion event-selection paper gives sufficient dwell-time and hazard conditions for dynamically generated events to be locally finite. That dynamic problem is deliberately not duplicated here.
+
+# What is and is not reconstructed
+
+The order plus number principle of causal-set theory suggests that causal order and counting density can encode much of Lorentzian geometry under appropriate manifoldlike conditions. The present construction starts from the continuum geometry, so it does not prove the reverse reconstruction or manifoldlikeness of an arbitrary causal set.
+
+<div class="center">
+
+| Statement | Status | Boundary |
+|:---|:---|:---|
+| Locally finite sample inherits causal order | Exact | <a href="#thm:inherit" data-reference-type="ref+label" data-reference="thm:inherit">1</a>. |
+| Poisson sprinkling is locally finite | Exact | <a href="#thm:poisson" data-reference-type="ref+label" data-reference="thm:poisson">2</a>. |
+| Minkowski Poisson law is Lorentz invariant | Exact | Invariance is statistical, not realization-wise. |
+| Causal set reconstructs the input continuum | Not shown | Requires manifoldlikeness and reconstruction results. |
+| MTT selects Poisson statistics | Open | No selected event or sampling law. |
+| MTT selects the density from q79 gap | Open/ill-typed without bridge | Needs base-resolution and unit map. |
+| Causal set is fundamental in MTT | Not claimed | Current role is effective encoding. |
+
+</div>
+
+# Discussion
+
+The corrected relation between MTT and causal sets is straightforward:
+``` math
+\text{selected effective }(Y_4,g)
+\;+\;
+\text{declared locally finite sampling law}
+\longrightarrow
+\text{causal set}.
+```
+That result is useful. It permits causal-set observables and reconstruction tools to be applied to an MTT spacetime, and it provides a concrete way to compare continuum and discrete descriptions.
+
+The missing density theorem is also a productive target. A valid derivation would map selected q79 geometry and the four-dimensional metric to an event intensity or detector-resolution functional with units and covariance preserved. Until that map exists, varying $`\rho`$ is an encoding parameter, not a prediction.
+
+# Conclusion
+
+Causal sets are compatible with MTT as a conditional coarse-graining of its effective spacetime sector. The inherited order and Poisson local-finiteness results are exact. The physical sampling law and its density are not.
+
+This distinction preserves both programs. Causal-set mathematics can be used without claiming that MTT has derived fundamental discreteness, and MTT can seek a dynamical event law without building Poisson statistics into its premises.
 
 <div class="thebibliography">
 
-9
+99
 
-L. Bombelli, J. Lee, D. Meyer, and R. D. Sorkin, Space–time as a causal set, , 59(5):521–524, 1987.
+L. Bombelli, J. Lee, D. Meyer, and R. D. Sorkin, “Space-time as a causal set,” *Physical Review Letters* **59** (1987), 521–524.
 
-R. D. Sorkin, Causal sets: Discrete gravity, in *Lectures on Quantum Gravity*, Springer, 2003.
+R. D. Sorkin, “Causal sets: Discrete gravity,” in A. Gomberoff and D. Marolf, eds., *Lectures on Quantum Gravity*, Springer, 2005, pp. 305–327.
 
-P. Nero, Modal Triplet Theory: Foundations and Fixed–Point Structure, preprint / manuscript, 2025.
+G. Brightwell and R. Gregory, “Structure of random discrete spacetime,” *Physical Review Letters* **66** (1991), 260–263.
+
+D. J. Daley and D. Vere-Jones, *An Introduction to the Theory of Point Processes, Volume I*, Springer, 2003.
+
+P. Nero, *Modal Triplet Theory: Foundations*, current revised MTT paper corpus, 2026.
+
+P. Nero, *Controlled Coherent Reduction to Four-Dimensional Einstein Gravity*, current revised MTT paper corpus, 2026.
 
 </div>

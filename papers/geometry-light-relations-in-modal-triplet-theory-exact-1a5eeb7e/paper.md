@@ -4,34 +4,34 @@ abstract: |
 author:
 - Peter Nero
 current_version: v3
-date: July 2026
-generated_from_main_tex_sha256: e99f3f0219b73017d344892f33be30cdb1f72cba7886d858390a4e9001b9b44f
+date: July 2026 Version 3
+generated_from_main_tex_sha256: c49eddc050691fb2225c219e5772bf165cce4617c2908b469d55ed9c559b608c
 paper_id: geometry-light-relations-in-modal-triplet-theory-exact-1a5eeb7e
 release_state: zenodo_released
-released_version: v1.0
+released_version: v3
 title: |
-  Geometry–Light Relations in Modal Triplet Theory:  
+  Geometry–Light Relations in Modal Triplet Theory:
   Exact Identities, Conditional Bounds, and Principal Symbols
-zenodo_doi: 10.5281/zenodo.18262180
-zenodo_record_id: 18262180
-zenodo_url: "https://zenodo.org/records/18262180"
+zenodo_doi: 10.5281/zenodo.21665977
+zenodo_record_id: 21665977
+zenodo_url: "https://zenodo.org/records/21665977"
 ---
 
-# Revision note for this edition
+# Version 3 Revision Note
 
-Supersedes.  
+Supersedes
 *Geometry–Light Relations in Modal Triplet Theory*, version 2.
 
-Reason.  
+Reason
 Algebraic identities, symmetry assumptions, topology, spectral gaps, propagation speeds, and phenomenological bounds were not consistently separated by logical strength.
 
-Resolution.  
+Resolution
 Version 3 types each statement as exact, conditional, or phenomenological, moves causal speed to principal symbols, and separates internal gaps from external cutoffs.
 
-Retained result.  
+Retained result
 Modal-democracy, holonomy, curvature–mass, and PPN relations remain valid in precisely the displayed conditional forms.
 
-Remaining boundary.  
+Remaining boundary
 Physical light propagation and quantitative bounds require a selected hyperbolic action, response map, and normalization.
 
 # Classification rule
@@ -113,12 +113,17 @@ Lower-order masses, potentials, projectors, or internal overlap coefficients do 
 
 # Representation-only RG signs
 
-Conditional on importing the Standard Model field content and perturbative quantization, the one-loop coefficient
+Conditional on importing the Standard Model field content and perturbative quantization, the one-loop coefficient, written as sums over Dirac fermions and real scalars, is
 ``` math
-b_0=\frac{11}{3}C_A-\frac{4}{3}\sum_fT(R_f)
--\frac{1}{6}\sum_sT(R_s)
+b_0=\frac{11}{3}C_A-\frac{4}{3}\sum_{\rm Dirac}T(R_f)
+-\frac{1}{6}\sum_{\rm real}T(R_s).
 ```
-fixes the qualitative signs of the gauge beta functions. This is a standard QFT consequence of representation content, not a new geometric prediction of MTT. Quantitative running uses the selected multi-loop transport rather than this sign-level approximation.
+Equivalently, without pairing fields,
+``` math
+b_0=\frac{11}{3}C_A-\frac{2}{3}\sum_{\rm Weyl}T(R_f)
+-\frac{1}{3}\sum_{\rm complex}T(R_s).
+```
+These conventions give the same coefficient and fix the qualitative signs of the gauge beta functions. This is a standard QFT consequence of representation content, not a new geometric prediction of MTT. Quantitative running uses the selected multi-loop transport rather than this sign-level approximation.
 
 # Conditional curvature–mass drift
 
@@ -159,9 +164,113 @@ The constants and norm must be computed for the selected background and source. 
 
 An internal Laplacian gap controls suppression of omitted internal modes in a specified reduction. It does not by itself define a four-dimensional UV, coherence, inflationary, or cosmological cutoff. Any such identification needs a dimensionful bridge, an action-level decoupling theorem, and an error bound. The common SMDR point $`Q=M_t`$ is likewise a matching convention rather than a physical cutoff.
 
+# Discussion and proper use
+
+These relations are best used as interface tests. A selected gauge construction may be checked against Equation <a href="#eq:weak-general" data-reference-type="eqref" data-reference="eq:weak-general">[eq:weak-general]</a>, but agreement does not select modal democracy. A selected bundle connection may be checked against the holonomy product, but topological triviality does not supply the required parallel trivialization. A selected gravitational action may be checked for a common photon/graviton cone, but internal rank or spectral data do not supply its principal symbol.
+
+The same distinction controls numerical interpretation. Substituting a measured scale or fitted response coefficient demonstrates compatibility. It becomes a prediction only when the scale, coefficient, and branch were selected without the target observable. Geometry-light formulas are therefore valuable consistency checks and error-detection tools even when they are not source theorems.
+
 # Conclusion
 
 The geometry-light tier contains useful exact relations, but their scope is now explicit. The weak-angle and curvature formulas are algebraic identities conditional on stated ansatz data; holonomy phases require a compatible trivialization; wave-speed equality is a principal-symbol question; RG signs are imported Standard Model QFT; and PPN control needs a quantitative response estimate. These statements can constrain later constructions without being misreported as source-derived numerical predictions.
+
+#### Rows used directly in this paper.
+
+- (*numeric certified*).
+
+  Weighted-theta Fourier-tail and Wiener contraction certificate.
+
+- (*profile replay*).
+
+  Fifteen measured source coordinates, Jacobian and covariance transport.
+
+- (*profile replay*).
+
+  Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+
+- (*derived exact*).
+
+  Sparse 27x27 qutrit-Weyl left-action realization.
+
+- (*derived exact*).
+
+  Promoted P_EW source row at the declared one-shared-primitive standard.
+
+= by -
+
+#### Corpus-state cross-checks.
+
+- (*profile replay*).
+
+  Versioned Yu, Yd, Ye and lambda_H profile packet.
+
+- (*numeric certified*).
+
+  Three selected CKM profile rows and uncertainty comparison.
+
+- (*profile replay*).
+
+  Current non-looping global status and source-certificate map.
+
+- (*derived exact*).
+
+  Promoted direct K_threshold.Omega_H.lambda row.
+
+- (*derived exact*).
+
+  E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+
+- (*profile replay*).
+
+  Twelve-obligation embedded renormalized-SM equivalence audit.
+
+- (*profile replay*).
+
+  Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+
+= by -
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The paper's exact geometry-light identities are proved locally. The HYM, precision, finite-matrix, and electroweak rows instantiate selected computational examples; the remaining flavor and global-closure rows are cross-checks and do not strengthen the local theorem tier. The zero-knob upgrade remains open.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Rows used directly in this paper
+
+- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
+- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
+- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
+- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
+
+## Corpus-state cross-checks
+
+- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
+- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
+- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
+- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
+- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
+- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 

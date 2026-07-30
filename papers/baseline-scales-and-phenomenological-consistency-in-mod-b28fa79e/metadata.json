@@ -1,68 +1,93 @@
 {
-  "abstract": "We provide a corrected scale and provenance ledger for Modal Triplet Theory (MTT). The internal vertical gap, complementary stabilization rate, coherent contraction rate, four-dimensional EFT cutoff, curvature scale, Planck scale, and renormalization scale are distinct objects. The internal gap is an internal mass or truncation scale only after the operator normalization and physical action are specified; it does not automatically damp high four-dimensional energy or satisfy particle, fifth-force, Lorentz-violation, gravitational-wave, general-relativistic, or cosmological bounds. We state the conditional Kaluza\u2013Klein-type bridge under which internal eigenvalues become four-dimensional masses, retain the Schur\u2013Feshbach truncation estimate from the corrected Foundation, and define a formal consistency set built from sourced observable-response maps. A phenomenological consistency claim requires a nonempty common set or an exhibited parameter witness with theory errors and provenance. No such numerical witness is constructed here, so this paper makes no prediction and no assertion of present empirical viability. Its purpose is to prevent scale conflation and to specify exactly what downstream calculations must supply.",
+  "abstract": "We provide a typed scale and provenance ledger for Modal Triplet Theory (MTT). The internal vertical gap, complementary stabilization rate, coherent contraction rate, four-dimensional EFT cutoff, curvature scale, Planck scale, and renormalization scale are distinct objects. The internal gap is an internal mass or truncation scale only after the operator normalization and physical action are specified; it does not automatically damp high four-dimensional energy or satisfy particle, fifth-force, Lorentz-violation, gravitational-wave, general-relativistic, or cosmological bounds. We state the conditional Kaluza\u2013Klein-type bridge under which internal eigenvalues become four-dimensional masses, retain the Foundation's Schur\u2013Feshbach truncation estimate, and define a formal consistency set built from sourced observable-response maps. A phenomenological consistency claim requires a nonempty common set or an exhibited parameter witness with theory errors and provenance. No such numerical witness is constructed here, so this paper makes no prediction and no assertion of present empirical viability. Its purpose is to prevent scale conflation and to specify exactly what downstream calculations must supply.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v2",
-  "date": "July 2026",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18265328",
-    "created": "2026-01-16T06:47:20.350084+00:00",
+    "created": "2026-07-29T08:49:51.050652+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18265329",
+    "doi": "10.5281/zenodo.21665947",
     "files": [
       {
-        "checksum": "md5:97b5b1eb994d7e50244b16502dd789d7",
-        "content_url": "https://zenodo.org/api/records/18265329/files/Baseline_Scales_and_Phenomenological_Consistency_in_Modal_Triplet_Theory%20(1).pdf/content",
-        "key": "Baseline_Scales_and_Phenomenological_Consistency_in_Modal_Triplet_Theory (1).pdf",
-        "size": 290958
+        "checksum": "md5:f5b084aa85d02d39106ca502fca8b914",
+        "content_url": "https://zenodo.org/api/records/21665947/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 322904
       }
     ],
-    "id": "18265329",
-    "match_kind": "title_or_file",
+    "id": "21665947",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-16",
-    "record_url": "https://zenodo.org/records/18265329",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665947",
     "resource_type": "publication",
     "title": "Baseline Scales and Phenomenological Consistency in Modal Triplet Theory",
-    "updated": "2026-01-16T06:47:20.748617+00:00",
-    "version": "v1.0"
+    "updated": "2026-07-29T08:49:51.349790+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "3f5c56a5eb6de0ff2f234bb4f2197c0197a70639f7423eeefeeadc7edaa99eed",
+  "main_tex_sha256": "c31f23a8ae5e60e8add000af0276e1221d3d0b7b28deda5c110e318b7b5e8bef",
   "paper_id": "baseline-scales-and-phenomenological-consistency-in-mod-b28fa79e",
-  "paper_md_sha256": "d06a70cecb5eda757b5c485b0379b015b16494f564f13b30196803b75f2aaf24",
+  "paper_md_sha256": "ca39271d826784ebe5727dd8215ad2adc6614f17eb5fe7aef648dacc7e44f607",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/BASELINE_SCALES_V2_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "c6ac53537625aa4e3c63900e28d3ad65b68e8763db5843595dfceac290d9b681",
+    "revision_evidence_sha256": "d0e933d3ae08b24b2ab15e9e1cb7cede50a59ea8d16453bbaed13257fbd941a3",
     "selected_revision": true,
     "superseded_source_path": "3 Core Foundations/_work/Baseline_Scales_and_Phenomenological_Consistency_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 15727,
+      "bytes": 15698,
       "path": "main.tex",
-      "sha256": "3f5c56a5eb6de0ff2f234bb4f2197c0197a70639f7423eeefeeadc7edaa99eed"
+      "sha256": "c31f23a8ae5e60e8add000af0276e1221d3d0b7b28deda5c110e318b7b5e8bef"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "3 Core Foundations/revised_tex_vnext/Baseline_Scales_and_Phenomenological_Consistency_in_Modal_Triplet_Theory_v2"
   },
-  "source_tree_sha256": "b84881b9c307aa8a21786d2c684cf1e310a2ed8f72b017c4542ebe797187d39e",
+  "source_tree_sha256": "e2d05b2308f0f6b7fd6ccead1f35e0782446e350adbeba8aec763b848367ae70",
   "title": "Baseline Scales and Phenomenological Consistency in Modal Triplet Theory",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18265328",
+      "created": "2026-07-29T08:49:51.050652+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665947",
+      "files": [
+        {
+          "checksum": "md5:f5b084aa85d02d39106ca502fca8b914",
+          "content_url": "https://zenodo.org/api/records/21665947/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 322904
+        }
+      ],
+      "id": "21665947",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665947",
+      "resource_type": "publication",
+      "title": "Baseline Scales and Phenomenological Consistency in Modal Triplet Theory",
+      "updated": "2026-07-29T08:49:51.349790+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18265328",
       "created": "2026-01-16T06:47:20.350084+00:00",

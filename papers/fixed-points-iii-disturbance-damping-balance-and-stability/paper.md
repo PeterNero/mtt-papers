@@ -1,40 +1,71 @@
 ---
 abstract: |
-  We rebuild disturbance–damping stability on the joint spectral decomposition of the corrected FP–II internal operators. For each noncoherent joint mode $`\alpha`$, the one-sided nonlinear damping margin is $`\gamma_\alpha=d_\alpha-L_\alpha`$. Deterministic force amplitude $`f_\alpha`$ and stochastic noise power $`q_\alpha`$ are distinct quantities. We prove the deterministic input-to-state floor $`\limsup|a_\alpha|\le f_\alpha/\gamma_\alpha`$ and the stochastic second-moment floor $`\limsup\mathbb E|a_\alpha|^2\le q_\alpha/(2\gamma_\alpha)`$ when $`\gamma_\alpha>0`$. Gaussian invariant laws and necessity of the sign condition are asserted only for exact Ornstein–Uhlenbeck dynamics or robust worst-case stability. Bundlewise results apply to $`Q\Psi`$ and use separate stochastic trace and deterministic weighted-series conditions. Finally, deterministic homogenization is made conditional on an enhanced functional central-limit theorem, tightness, and rough-path convergence; the corrected Green–Kubo tensor is $`D=\int_0^\infty(R+R^\ast)\,ds`$.
+  We develop disturbance–damping stability on the joint spectral decomposition of the FP–II internal operators. For each noncoherent joint mode $`\alpha`$, the one-sided nonlinear damping margin is $`\gamma_\alpha=d_\alpha-L_\alpha`$. Deterministic force amplitude $`f_\alpha`$ and stochastic noise power $`q_\alpha`$ are distinct quantities. We prove the deterministic input-to-state floor $`\limsup|a_\alpha|\le f_\alpha/\gamma_\alpha`$ and the stochastic second-moment floor $`\limsup\mathbb E|a_\alpha|^2\le q_\alpha/(2\gamma_\alpha)`$ when $`\gamma_\alpha>0`$. Gaussian invariant laws and necessity of the sign condition are asserted only for exact Ornstein–Uhlenbeck dynamics or robust worst-case stability. Bundlewise results apply to $`Q\Psi`$ and use separate stochastic trace and deterministic weighted-series conditions. Finally, deterministic homogenization is made conditional on an enhanced functional central-limit theorem, tightness, and rough-path convergence; the symmetrized Green–Kubo tensor is $`D=\int_0^\infty(R+R^\ast)\,ds`$.
 author:
 - Peter Nero
 bibliography:
 - refs.bib
-current_version: v4
-date: July 2026
-generated_from_main_tex_sha256: c9c404e85c420a04c41fc0b527162f1f34643c2fbfbb5f365b87921040188f9b
+current_version: v5
+date: July 2026 Version 5
+generated_from_main_tex_sha256: fc008122ca171de64b6d409349bdfa4716bd372cfb524f8ed408936e73eac480
 paper_id: fixed-points-iii-disturbance-damping-balance-and-stability
 release_state: zenodo_released
-released_version: v2.0
+released_version: v5
 title: "Fixed Points III: Disturbance–Damping Balance and Stability"
-zenodo_doi: 10.5281/zenodo.18202941
-zenodo_record_id: 18202941
-zenodo_url: "https://zenodo.org/records/18202941"
+zenodo_doi: 10.5281/zenodo.21655371
+zenodo_record_id: 21655371
+zenodo_url: "https://zenodo.org/records/21655371"
 ---
 
-*Part III of VI in the Fixed Point series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*
+# Revision note for version 5
 
-# Revision note for this edition
+Supersedes.
+*Fixed Points III: Disturbance–Damping Balance and Stability*, version 4.
 
-Supersedes.  
+Reason.
+The corrected deterministic and stochastic estimates in version 4 were sound, but their parallel notation could still obscure that force amplitude, noise power, invariant law, and homogenized noise are different objects.
+
+Resolution.
+Version 5 adds an explicit argument map and worked interpretive discussion of the two disturbance lanes, their summability requirements, and the separate homogenization gate. It preserves theorem ownership and separates the public abstract from revision history and reproducibility metadata.
+
+Retained result.
+The deterministic input-to-state floor, stochastic second-moment floor, OU restrictions, and enhanced invariance-principle conditions are unchanged.
+
+Remaining boundary.
+Coherent-sector disturbances, general nonlinear invariant measures, and a physical stochastic source law remain unproved.
+
+# Revision note for version 4
+
+Supersedes.
 *Fixed Points III: Disturbance–Damping Balance and Stability*, version 3.
 
-Reason.  
+Reason.
 Deterministic amplitudes and stochastic powers were conflated, nonlinear systems were assigned Gaussian/OU conclusions, and the Green–Kubo normalization and homogenization hypotheses were incomplete.
 
-Resolution.  
+Resolution.
 Version 4 derives separate deterministic and stochastic floors on the joint modal spectrum, restricts Gaussian claims to exact OU dynamics, and states the enhanced invariance-principle and rough-path gates.
 
-Retained result.  
+Retained result.
 Positive net modal damping still gives quantitative noncoherent stability and disturbance floors.
 
-Remaining boundary.  
+Remaining boundary.
 Coherent disturbances, nonlinear invariant laws, and physical stochastic interpretation require additional assumptions.
+
+# How to read this paper
+
+FP–II separates the coherent sector $`P\Psi`$ from its damped complement $`Q\Psi`$. This paper asks what happens to the complement when it is continually disturbed. The answer depends on what kind of disturbance is meant, so the paper deliberately develops deterministic forcing and stochastic forcing in parallel without identifying their parameters.
+
+#### The central picture in plain language.
+
+For each joint internal mode, damping removes amplitude at a rate $`d_\alpha`$, while nonlinear feedback can return at most $`L_\alpha`$ in the one-sided energy estimate. Their difference $`\gamma_\alpha=d_\alpha-L_\alpha`$ is the available margin. A bounded deterministic push produces an amplitude floor proportional to $`f_\alpha/\gamma_\alpha`$. Brownian forcing deposits variance rather than a fixed amplitude and produces a second-moment floor proportional to $`q_\alpha/(2\gamma_\alpha)`$. The similar-looking denominators do not make $`f_\alpha`$ and $`q_\alpha`$ the same quantity.
+
+#### Argument map.
+
+Sections 1–2 inherit the joint projector and build a non-double-counted spectral index for the overlapping vertical operators. Sections 3–4 derive the deterministic and stochastic modewise bounds. Section 5 identifies the limited settings in which positivity of the margin is also necessary and a Gaussian invariant law follows. Section 6 lifts individual mode bounds to the bundle by summability or covariance-trace conditions. Section 7 explains when rapidly mixing deterministic complement modes can instead appear as effective stochastic forcing of coherent variables. Sections 8–9 separate invariant measures from deterministic fixed points and turn the hypotheses into an execution checklist.
+
+#### Scope boundary.
+
+Every modal result in the main stability chain concerns $`Q\Psi`$. It neither contracts coherent modes nor proves that a physical environment supplies Brownian noise. The homogenized diffusion is an emergent limit only after the enhanced functional-CLT, tightness, and rough-path hypotheses have been verified for the selected dynamics.
 
 # Scope and inherited framework
 
@@ -153,6 +184,10 @@ and therefore
 
 These two theorems are sufficient stability bounds for nonlinear dynamics. They do not assert that a nonlinear invariant law is Gaussian or that $`\gamma_\alpha>0`$ is necessary for every particular forcing history.
 
+#### What the two floors mean.
+
+Both estimates say that positive damping prevents indefinite accumulation in one mode, but they answer different questions. The deterministic theorem bounds every trajectory against a worst-case input amplitude. The stochastic theorem bounds an expectation after quadratic variation has injected power. Neither floor is automatically attained, and neither is a prediction until the mode, margin, and disturbance data have been obtained from the concrete operator model.
+
 # Exact OU theorem and robust necessity
 
 <div id="thm:OU" class="theorem">
@@ -225,6 +260,8 @@ If the joint counting function satisfies $`N(\Lambda)\lesssim\Lambda^{d_{\rm eff
 No statement in this section controls a disturbance acting directly in $`P\Psi`$. Such coherent forcing needs a separate base/coherent stability theorem.
 
 # Deterministic homogenization of coherent dynamics
+
+This section addresses a different route to stochastic behavior. The underlying system can remain deterministic while rapidly mixing noncoherent modes drive slow coherent variables. Under a sufficiently strong limit theorem, the accumulated fast forcing converges to Brownian transport. Ordinary mixing is not enough: the second iterated integrals determine whether the limiting equation is the stated Stratonovich equation or carries an additional bracket drift.
 
 Write $`\Psi=X+Y`$ with $`X=P\Psi`$ and $`Y=Q\Psi`$. For frozen $`x`$, let the fast flow for $`Y`$ have invariant measure $`\mu_x`$, and decompose
 ``` math
@@ -315,6 +352,8 @@ For every concrete geometry:
 
 The damping-margin principle survives, but with precise scope. Positive $`\gamma_\alpha`$ gives deterministic input-to-state and stochastic second-moment bounds. Exact Gaussian invariant laws and sign necessity belong to exact OU or robust worst-case formulations. Bundlewise results concern $`Q\Psi`$ and require either a stochastic trace or deterministic weighted series. The homogenized Stratonovich equation is conditional on enhanced functional-CLT/rough-path data and uses the corrected Green–Kubo normalization. These distinctions prevent stochastic invariant measures from being conflated with deterministic fixed points.
 
+The paper therefore contributes a translation layer between FP–II spectral damping and later statistical descriptions. Its robust content is the pair of modewise inequalities and their bundlewise summability conditions. Exact Gaussianity belongs only to the OU specialization, while emergent diffusion belongs only to the verified homogenization limit. Coherent disturbances, nonlinear invariant-law uniqueness, and a physical identification of the noise source remain separate model-specific tasks.
+
 # Exact OU variance computation
 
 For $`da=-\gamma a\,dt+\sqrt q\,dW_t`$,
@@ -345,3 +384,7 @@ The same bound is uniform for a smoothly base-dependent family remaining in $`\m
 *Proof.* The first positive eigenvalue varies continuously on this compact metric family and is positive for every compact connected fiber, so it attains a positive minimum; compare the spectral-geometric background in . ◻
 
 </div>
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

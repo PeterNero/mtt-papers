@@ -1,4 +1,15 @@
-# Fixed Points II v4 Revision Audit
+# Fixed Points II v5 Release Audit
+
+## v5 publication delta (July 2026)
+
+- **Supersedes:** v4.
+- **Reason:** complement damping, coherent contraction, and equilibrium
+  promotion required a clearer standalone explanation.
+- **Resolution:** add a paper-specific reading guide while retaining FP I as
+  the generic theorem owner.
+- **Retained:** all v4 application theorems and boundaries.
+- **Remaining:** selected physical q79 endpoints, action, Hessian, finite
+  reduction, and Lorentzian interpretation.
 
 ## v4 delta (July 2026)
 
@@ -17,6 +28,15 @@ uniqueness, or equilibrium-promotion theorem.
 
 No FP II fixed-point hypothesis was weakened or replaced. This is a type and
 scope correction at the q79 realization boundary.
+
+## Standalone theorem ownership
+
+FP I remains the canonical source for generic Sobolev-projector,
+fixed-point-existence, equilibrium-promotion, Schauder, and Darbo machinery.
+FP II owns their ten-dimensional application corollaries together with its
+joint-projector, coherent-sector contractivity, and 10D compactness
+specialization. The hypotheses and conclusions are fully stated here, while
+generic proofs are cited to FP I rather than claimed a second time.
 
 ## Prior v3 correction retained
 
@@ -62,9 +82,26 @@ algebra, and nonlinear strain quotient correctly typed. It does not select the
 physical HYM endpoints or action, prove Lorentzian dynamics, or derive coherent
 contraction from internal gaps.
 
+## Expository revision
+
+The current paper now opens with a paper-specific reading guide and organizes
+the application around two independent mechanisms:
+
+- vertical spectral gaps damp the noncoherent `Q` sector;
+- base coercivity or strong monotonicity contracts the coherent `P` sector.
+
+New discussion explains the joint projector, the reason strong commutation
+matters, the distinction between approaching the coherent sector and selecting
+one state inside it, the limited role of equilibrium promotion, and the
+separate existence, Lyapunov, and uniqueness gates. The conclusion now gives
+the complete dependency chain and identifies the remaining realization data.
+No generic FP I theorem was duplicated, and no result from FP III--VI was
+imported. The generic series tagline remains empty.
+
 ## Validation
 
 - The canonical `mtt-qm-source-proof` verifier passes at commit `1615da7`.
 - The 139-paper repository verifier passes after Markdown and hash regeneration.
-- `pdflatex`, `bibtex`, and two final `pdflatex` passes compile FP II v4 with
-  resolved citations and references.
+- The current source compiles with `pdflatex` to a 12-page PDF.
+- The final log has no undefined references, underfull boxes, overfull boxes,
+  or LaTeX/package warnings.

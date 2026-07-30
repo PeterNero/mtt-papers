@@ -1,65 +1,93 @@
 {
-  "abstract": "Algebraic quantum field theory (AQFT) enforces relativistic locality at the level of observable algebras while allowing globally entangled states. However, AQFT alone does not explain why physically realized states are typically entangled, how entanglement propagates, or why measurement reduces entanglement without enabling superluminal signaling. We present a local, state-restricting framework in which physically admissible states are those induced by coherent-sector dynamics (bounded geometry, spectral gap, bounded coherent projector, and contractive stability). Entanglement is shown to arise as a global coherence constraint in configuration space, while microcausality and the time-slice property remain intact on spacetime. Measurement is modeled as localized disturbance followed by stabilization into admissible basins, yielding partial disentanglement. Standard Bell/CHSH and temporal Bell (Leggett\u2013Garg) violations are recovered without nonlocal influence. Entanglement spreading via common ancestors (mediated entanglement and entanglement swapping) is interpreted as causal propagation of coherence constraints through local interactions. The framework integrates the MTT QFT-projection layer, the measurement-as-stabilization model, and the Bell/temporal-Bell analyses in a single AQFT-compatible description.",
+  "abstract": "Algebraic quantum field theory (AQFT) separates locality of observable algebras from factorization of states: spacelike algebras may commute while a state on their joint algebra remains entangled. We formulate the precise MTT-compatible version of this distinction. Given an upper local net indexed over a globally hyperbolic four-dimensional base, a decomposable coherent projector, and the coherent-preserving local subalgebra, the fixed-point locality-descent theorem transports isotony and microcausality to the compressed net. Nonfactorizing states may restrict to that net, but admissibility and locality alone neither force entanglement nor select a Bell-violating state. Bell/CHSH violation is therefore compatible with upper-local dynamics when a suitable nonseparable state and local instruments are independently supplied. Measurement is treated as an ordinary localized completely positive instrument. Such instruments obey operational no-signaling under the standard locality assumptions; they cannot increase an entanglement monotone on average, although an individually postselected branch need not lose entanglement. Common-ancestor protocols and finite-speed correlation spreading remain standard local mechanisms. The result is a conditional AQFT-compatible MTT encoding, not a derivation of all physical states or measurement probabilities from admissibility alone.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "Janury 2026",
+  "current_version": "v2",
+  "date": "July 2026, Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261392",
-    "created": "2026-01-15T19:10:41.601845+00:00",
+    "created": "2026-07-29T08:50:28.993871+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18261393",
+    "doi": "10.5281/zenodo.21665963",
     "files": [
       {
-        "checksum": "md5:2724c8c64985eafdbf758d74aa99e8d0",
-        "content_url": "https://zenodo.org/api/records/18261393/files/Entanglement__Locality__and_Measurement_from_Coherent_Sector_Dynamics%20(2).pdf/content",
-        "key": "Entanglement__Locality__and_Measurement_from_Coherent_Sector_Dynamics (2).pdf",
-        "size": 274978
+        "checksum": "md5:e59d9cce8a209116b4942b099ef320ba",
+        "content_url": "https://zenodo.org/api/records/21665963/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 361202
       }
     ],
-    "id": "18261393",
-    "match_kind": "title_or_file",
+    "id": "21665963",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18261393",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665963",
     "resource_type": "publication",
     "title": "Entanglement, Locality, and Measurement from Coherent Sector Dynamics",
-    "updated": "2026-01-15T19:10:42.022127+00:00",
-    "version": "v1.0"
+    "updated": "2026-07-29T08:50:29.475318+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "1bd31d3d007786e398113b1635d8a137e3f9a450c7bf9eda63b84b0efa0a0674",
+  "main_tex_sha256": "43857ab4b9efbd06603cde2a8a84496589f01d112fa949428482926eb9538980",
   "paper_id": "entanglement-locality-and-measurement-from-coherent-sec-110e8cbe",
-  "paper_md_sha256": "b239aa6cef1b69fcc9891f2ff5157e0dce426d6079873e423904347a3b05cdcf",
+  "paper_md_sha256": "94836afa02a924c87a824450b00a4039db1fdb161fa009ed2065c36cc31c910e",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "84b96c8a8209b9364e804cb2d370f56edfbc937f9ef4ed4d5a8486db972893f0",
+    "selected_revision": true,
+    "superseded_source_path": "9 Bell, Entanglement & Time/_work/Entanglement__Locality__and_Measurement_from_Coherent_Sector_Dynamics"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 24656,
+      "bytes": 29217,
       "path": "main.tex",
-      "sha256": "1bd31d3d007786e398113b1635d8a137e3f9a450c7bf9eda63b84b0efa0a0674"
+      "sha256": "43857ab4b9efbd06603cde2a8a84496589f01d112fa949428482926eb9538980"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "9 Bell, Entanglement & Time/_work/Entanglement__Locality__and_Measurement_from_Coherent_Sector_Dynamics"
   },
-  "source_tree_sha256": "6b385587fcbdaab33fe940e0e41e72152273dc60171f9112d6d61facaff371bd",
+  "source_tree_sha256": "869b7c3673241220135ab3859c8cd667b68b64497bbdc9decea3874daa75db26",
   "title": "Entanglement, Locality, and Measurement from Coherent Sector Dynamics",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261392",
+      "created": "2026-07-29T08:50:28.993871+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665963",
+      "files": [
+        {
+          "checksum": "md5:e59d9cce8a209116b4942b099ef320ba",
+          "content_url": "https://zenodo.org/api/records/21665963/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 361202
+        }
+      ],
+      "id": "21665963",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665963",
+      "resource_type": "publication",
+      "title": "Entanglement, Locality, and Measurement from Coherent Sector Dynamics",
+      "updated": "2026-07-29T08:50:29.475318+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18261392",
       "created": "2026-01-15T19:10:41.601845+00:00",

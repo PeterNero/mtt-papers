@@ -5,17 +5,17 @@ author:
 - Peter Nero
 current_version: v2
 date: July 2026
-generated_from_main_tex_sha256: 906eba951ecbdde54f1efc4636294bf6dd8397535a4987384ada88a178589ade
+generated_from_main_tex_sha256: 81a9ee4fcb190eee65c2fe84c2ddfa8474b52e86b087ca6bc6eb031b08ba5437
 paper_id: the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  The Modal Triplet Theory Program B0:  
-  Circle–Lens–Nil as an Obstruction Taxonomy  
+  The Modal Triplet Theory Program B0:
+  Circle–Lens–Nil as an Obstruction Taxonomy
   and Its Minimal Curvature Realizations
-zenodo_doi: 10.5281/zenodo.18354990
-zenodo_record_id: 18354990
-zenodo_url: "https://zenodo.org/records/18354990"
+zenodo_doi: 10.5281/zenodo.21652638
+zenodo_record_id: 21652638
+zenodo_url: "https://zenodo.org/records/21652638"
 ---
 
 # Revision note for version 2
@@ -39,6 +39,26 @@ Return memory, descriptive redundancy, and chart termination remain useful CLN d
 #### Open boundary.
 
 No theorem here proves that CLN exhausts higher descent, that a lens space or nilmanifold is physically selected, that the three roles are globally nested, that physical time is a compact circle, or that spacetime must be ten-dimensional.
+
+# How to read Program B0
+
+B0 uses the words circle, lens, and nil at three carefully separated levels. At the first level they are tests on an encoding atlas. At the second they have useful geometric examples. At the third, one may choose a restricted curvature realization whose independent channels imply a dimension bound. Only the first level belongs to the general taxonomy.
+
+#### The central picture in plain language.
+
+Circle asks what changes after following a closed chain of descriptions. Lens asks whether distinct upper representatives look the same after reduction. Nil asks whether a required continuation exists at all. A system can answer yes to any combination of these questions. The names record the kind of descriptive behavior, not the topology of the underlying universe.
+
+#### Three elementary cases.
+
+A flat line bundle with nontrivial monodromy has circle behavior without curvature. The map $`\{a,b\}\to\{\ast\}`$ has lens behavior without a loop or boundary. The identity map on $`[0,1)`$ left undefined at $`1`$ has nil behavior without redundancy or return memory. These cases provide the intuition behind the formal independence theorem.
+
+#### Argument map.
+
+Sections 1–3 define the typed atlas, the three profiles, their independence, and invariance under compatible re-encoding. Section 4 separates holonomy from curvature. Section 5 explains why lens spaces and nilmanifolds are models rather than deductions. Sections 6–7 isolate the assumptions behind the $`2+2+2=6`$ and conditional $`4+6=10`$ counts, including the separate world-in-world component decomposition. Sections 8–10 state the corrected MTT interpretation, downstream consequences, and exact frontier.
+
+#### Scope boundary.
+
+The six-dimensional lower bound applies only when all three profiles are represented by nonzero two-forms on independent transverse tangent factors. It does not apply to flat holonomy, reused carriers, quotient data, or discrete encodings. Likewise, the four-dimensional base is supplied input, the shared circle is counted once, and physical time is not its compact phase.
 
 # Scope and Imported Data
 
@@ -386,13 +406,13 @@ A common $`U(1)`$ phase or holonomy line may be pulled through all three carrier
 
 The corrected structural reading is:
 
-Circle.  
+Circle.
 Shared phase, return memory, or holonomy.
 
-Lens.  
+Lens.
 Finite, projective, signed-sheet, or quotient transport.
 
-Nil.  
+Nil.
 Triangular transport, anchoring, or termination in a selected operator filtration.
 
 This taxonomy can be represented by a rank pattern such as $`1+2+3`$ without asserting three nested manifolds. In the current q79 program, the trace line, trace-zero plane, and reused rank-three carrier are a later selected carrier construction. Equality of ranks does not identify that carrier with the local world-in-world strain space; a same-source connection and Hessian intertwiner is still required.
@@ -482,3 +502,7 @@ W. M. Boothby and H. C. Wang, “On contact manifolds,” *Annals of Mathematics
 W. P. Thurston, *Three-Dimensional Geometry and Topology*, volume 1, Princeton University Press, 1997.
 
 </div>
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

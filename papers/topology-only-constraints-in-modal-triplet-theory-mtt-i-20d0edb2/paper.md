@@ -1,23 +1,23 @@
 ---
 abstract: |
-  This revised paper separates topology-only obstructions from representation checks and from physical source theorems. Chiral multiplicity is an index on the compact internal six-manifold $`X_6`$, not on physical spacetime. For an $`SU(r)`$ bundle $`E\to X_6`$, the spin-Dirac index is $`\operatorname{ind}D_E^+=\frac12\int_{X_6}c_3(E)`$. The current q79 branch constructs smooth non-pullback bundles with $`\int c_3=\pm6`$, and therefore index $`\pm3`$, but its holomorphic gerbe lift, balanced Hermitian–Yang–Mills connection, and differential Bianchi representative remain open. Abelian charges are integer characters: a field of integer charge $`n`$ is valued in $`L^{\otimes n}`$ and its physical convention is $`Y=n/N_0`$. The former “exact hypercharge” argument is only a reconstruction after observed charge differences are inserted. A newer finite-branch theorem is stronger: on the selected chiral carrier, anomaly constraints select the primitive relative-charge vector $`6Y=(1,-4,2,-3,6,0)`$ and the faithful gauge group $`(SU(3)\times SU(2)\times U(1))/\mathbb{Z}_6`$. We prove the resulting anomaly checks, the correct character criterion for a bare Majorana bilinear, the distinction between topological, holomorphic, equivariant, flat, and holonomy trivializations, the conditional common-principal-symbol result for photon and graviton cones, and the correctly normalized one-loop beta coefficients. Peccei–Quinn dynamics, particular baryon/lepton operator exclusions, physical family realization, and neutrino ontology remain conditional or open at the precisely stated gates.
+  Topology-only obstructions are separated from representation checks and from physical source theorems. Chiral multiplicity is an index on the compact internal six-manifold $`X_6`$, not on physical spacetime. For an $`SU(r)`$ bundle $`E\to X_6`$, the spin-Dirac index is $`\operatorname{ind}D_E^+=\frac12\int_{X_6}c_3(E)`$. The current q79 branch constructs smooth non-pullback bundles with $`\int c_3=\pm6`$, and therefore index $`\pm3`$, but its holomorphic gerbe lift, balanced Hermitian–Yang–Mills connection, and differential Bianchi representative remain open. Abelian charges are integer characters: a field of integer charge $`n`$ is valued in $`L^{\otimes n}`$ and its physical convention is $`Y=n/N_0`$. A linear difference-charge construction is only a reconstruction after observed charge differences are inserted. A separate finite-branch theorem is stronger: on the selected chiral carrier, anomaly constraints select the primitive relative-charge vector $`6Y=(1,-4,2,-3,6,0)`$ and the faithful gauge group $`(SU(3)\times SU(2)\times U(1))/\mathbb{Z}_6`$. We prove the resulting anomaly checks, the correct character criterion for a bare Majorana bilinear, the distinction between topological, holomorphic, equivariant, flat, and holonomy trivializations, the conditional common-principal-symbol result for photon and graviton cones, and the correctly normalized one-loop beta coefficients. Peccei–Quinn dynamics, particular baryon/lepton operator exclusions, physical family realization, and neutrino ontology remain conditional or open at the precisely stated gates.
 author:
 - Peter Nero
 current_version: v2
-date: July 2026
-generated_from_main_tex_sha256: df10a06948aaf8b32b6d379625a3066a4d9f37e998b26e58aee6d5309a5ae3bc
+date: July 2026 Version 2
+generated_from_main_tex_sha256: c86a09f3efdacf32eedeb34cbf979cb0a8e510ca1ebd23838f50c0bf3861562e
 paper_id: topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  Topological Consistency Conditions in Modal Triplet Theory:  
+  Topological Consistency Conditions in Modal Triplet Theory:
   Internal Indices, Charge Lattices, and Holonomy
-zenodo_doi: 10.5281/zenodo.18260714
-zenodo_record_id: 18260714
-zenodo_url: "https://zenodo.org/records/18260714"
+zenodo_doi: 10.5281/zenodo.21666014
+zenodo_record_id: 21666014
+zenodo_url: "https://zenodo.org/records/21666014"
 ---
 
-# Revision note for version 2
+# Version 2 Revision Note
 
 <div class="description">
 
@@ -493,6 +493,114 @@ Topology supplies powerful integer obstructions and indices, but it does not per
 - Corrected one-loop coefficients for Weyl versus Dirac fermions and real versus complex scalars.
 
 - Replaced the claim that all Tier–1 predictions are fully established by the auditable status ledger above.
+
+#### Rows used directly in this paper.
+
+- (*derived exact*).
+
+  E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+
+- (*derived exact*).
+
+  Executable q=79 exact-branch audit.
+
+- (*derived exact*).
+
+  CRT q=79 theorem on the selected exact branch.
+
+- (*derived exact*).
+
+  Sparse 27x27 qutrit-Weyl left-action realization.
+
+= by -
+
+#### Corpus-state cross-checks.
+
+- (*profile replay*).
+
+  Versioned Yu, Yd, Ye and lambda_H profile packet.
+
+- (*numeric certified*).
+
+  Three selected CKM profile rows and uncertainty comparison.
+
+- (*profile replay*).
+
+  Current non-looping global status and source-certificate map.
+
+- (*derived exact*).
+
+  Promoted direct K_threshold.Omega_H.lambda row.
+
+- (*profile replay*).
+
+  Twelve-obligation embedded renormalized-SM equivalence audit.
+
+- (*numeric certified*).
+
+  Weighted-theta Fourier-tail and Wiener contraction certificate.
+
+- (*profile replay*).
+
+  Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+
+- (*profile replay*).
+
+  Fifteen measured source coordinates, Jacobian and covariance transport.
+
+- (*profile replay*).
+
+  Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+
+- (*derived exact*).
+
+  Promoted P_EW source row at the declared one-shared-primitive standard.
+
+= by -
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The q=79 branch, finite representation, and anomaly packets are used directly as topological or representation consistency examples. Gauge, flavor, precision, HYM, and Higgs rows are not topology-only theorems and are included only as lower-sector cross-checks. The strict source upgrade remains open.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Rows used directly in this paper
+
+- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
+- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
+- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
+
+## Corpus-state cross-checks
+
+- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
+- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
+- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
+- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
+- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
+- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
+- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
+- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 

@@ -1,65 +1,93 @@
 {
-  "abstract": "We propose and formalize a single mechanism in Modal Triplet Theory (MTT) that unifies two apparently unrelated 4D problems: (i) black hole information loss in semiclassical gravity and (ii) quantum measurement collapse in nonrelativistic quantum mechanics. In MTT, 4D physics is the shadow of deterministic dynamics on a higher configuration space under a noninvertible coherent projection. We define admissibility barriers as loci where the coherent projection fails to be stably invertible (spectral gap closure / projector discontinuity / basin rearrangement). We prove a general projection noninvertibility theorem: whenever trajectories cross an admissibility barrier, the induced 4D evolution becomes noninvertible and admits no global information recovery map, despite invertibility of the upstairs evolution. We then show how measurement selection and horizon formation/evaporation are two instantiations of barrier crossing, and we map the resulting 4D shadows to (a) collapse/Born probabilities and (b) thermal Hawking radiation/mixed exterior states. Finally, we relate the framework to the Page curve and island formula program: islands are interpreted as regime-dependent partial inversions (or re-encodings) of the projection on a restricted algebra, rather than restoration of global 4D invertibility.",
+  "abstract": "This paper develops a rigorous Modal Triplet Theory language for projected information, effective dynamics, and restricted recovery. An autonomous projected map exists exactly when the upper evolution preserves projection fibers; it is invertible exactly when the fiber equivalence is preserved in both time directions. Fiber splitting, effective merger, and restricted recovery are therefore distinct mechanisms. Quantum measurement is treated as an ordinary physical instrument followed by retention or loss of a record. Black-hole exterior restriction is a separate physical channel whose identification with an MTT admissibility boundary remains a model assumption. Island and entanglement-wedge results are represented by recovery on a code subspace or observable algebra, not by a partial right inverse between different state spaces. No common origin for Born and Hawking weights is claimed without an explicit measure and both pushforwards. The surviving MTT result is a rigorous language for projected information and recovery, together with a falsifiable source contract; it is not yet a solution of either the measurement problem or the black-hole information problem.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v2",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261429",
-    "created": "2026-01-15T19:15:22.267405+00:00",
+    "created": "2026-07-29T08:49:51.796214+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18261430",
+    "doi": "10.5281/zenodo.21665948",
     "files": [
       {
-        "checksum": "md5:7fe640982a04bdcae95a308d7ea034eb",
-        "content_url": "https://zenodo.org/api/records/18261430/files/Black_Hole_Information_Loss_and_Quantum_Measurement_Collapse%20(3).pdf/content",
-        "key": "Black_Hole_Information_Loss_and_Quantum_Measurement_Collapse (3).pdf",
-        "size": 335800
+        "checksum": "md5:b7114fd85b8da018b2f679a901b33cd1",
+        "content_url": "https://zenodo.org/api/records/21665948/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 321199
       }
     ],
-    "id": "18261430",
-    "match_kind": "title_or_file",
+    "id": "21665948",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18261430",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665948",
     "resource_type": "publication",
-    "title": "Black Hole Information Loss and Quantum Measurement Collapse as the Same Admissibility Transition in Modal Triplet Theory",
-    "updated": "2026-01-15T19:15:22.643020+00:00",
-    "version": "v1.0"
+    "title": "Projected Information Loss in Modal Triplet Theory: Fiber Dynamics, Measurement Channels, and the Black-Hole Recovery Boundary",
+    "updated": "2026-07-29T08:49:52.175496+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "7a28e66b02f1f2231b6998d348dcd81d1cd8ac4155a6e8987897ab568684c119",
+  "main_tex_sha256": "6e5d29deb56f49389363232615d6288d1ff0f402d22c84d9313cc3e92495345d",
   "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
-  "paper_md_sha256": "a6c28c00ad18279729735bb238fd8a94f08c58851ba3105564a4a472e7a53198",
+  "paper_md_sha256": "79fc5d2912b34028c76d7ad8da729f50059defa744e1d342cb5e5b1f360cf338",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "dfa8123d3fdb7b9afb877c3fc49440d3cf016b67fe9c6ce0427aacd6f88876d3",
+    "selected_revision": true,
+    "superseded_source_path": "12 Quantum Gravity/_work/Black_Hole_Information_Loss_and_Quantum_Measurement_Collapse_as_the_Same_Admissibility_Transition_in_MTT"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 36715,
+      "bytes": 20783,
       "path": "main.tex",
-      "sha256": "7a28e66b02f1f2231b6998d348dcd81d1cd8ac4155a6e8987897ab568684c119"
+      "sha256": "6e5d29deb56f49389363232615d6288d1ff0f402d22c84d9313cc3e92495345d"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "8 Measurement, Selection & Computation/_work/Black_Hole_Information_Loss_and_Quantum_Measurement_Collapse"
   },
-  "source_tree_sha256": "c12fa1a388fb4388cdd80fdeee363ef67bb76a405851bfc5aae899d058e34db5",
-  "title": "Black Hole Information Loss and Quantum Measurement Collapse as the Same Admissibility Transition in Modal Triplet Theory",
+  "source_tree_sha256": "09d243a1db58991b57ea20751d76ea19d785568929575795476d272d9d2a3966",
+  "title": "Projected Information Loss in Modal Triplet Theory: Fiber Dynamics, Measurement Channels, and the Black-Hole Recovery Boundary",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261429",
+      "created": "2026-07-29T08:49:51.796214+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665948",
+      "files": [
+        {
+          "checksum": "md5:b7114fd85b8da018b2f679a901b33cd1",
+          "content_url": "https://zenodo.org/api/records/21665948/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 321199
+        }
+      ],
+      "id": "21665948",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665948",
+      "resource_type": "publication",
+      "title": "Projected Information Loss in Modal Triplet Theory: Fiber Dynamics, Measurement Channels, and the Black-Hole Recovery Boundary",
+      "updated": "2026-07-29T08:49:52.175496+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18261429",
       "created": "2026-01-15T19:15:22.267405+00:00",

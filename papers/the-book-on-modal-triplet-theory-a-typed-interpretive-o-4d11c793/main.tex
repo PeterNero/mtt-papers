@@ -4,7 +4,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper,margin=28mm]{geometry}
 \usepackage{setspace}
-\usepackage{amsmath,amssymb}
 \usepackage{array}
 \usepackage{longtable}
 \usepackage[hidelinks]{hyperref}
@@ -12,987 +11,1350 @@
 \onehalfspacing
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 
-\newcommand{\Mten}{M_{10}}
-\newcommand{\Yfour}{Y_4}
-\newcommand{\Xsix}{X_6}
-\newcommand{\Pcoh}{P_{\mathrm{coh}}}
-\newcommand{\Qinc}{Q_{\mathrm{inc}}}
-\newcommand{\Hq}{\mathcal H_{\mathrm{q79}}}
-\newcommand{\WW}{Q_{\mathrm{WW}}}
-\newcommand{\Atrace}{\mathcal A_0}
-\newcommand{\Lshared}{L_{\mathrm{shared}}}
-\newcommand{\Soff}{\mathcal S_{\mathrm{off}}}
-\newcommand{\status}[1]{\textsc{#1}}
+\newenvironment{plainsummary}
+  {\par\small\noindent\textbf{In plain language.}\ }
+  {\par}
+\newenvironment{technicalboundary}
+  {\par\small\noindent\textit{Technical boundary.}\ }
+  {\par}
+\newenvironment{statusnote}
+  {\par\small\noindent\textit{Current status.}\ }
+  {\par}
+\newenvironment{abstract}
+  {\chapter*{Abstract}\addcontentsline{toc}{chapter}{Abstract}\noindent}
+  {\par}
 
 \hypersetup{
-  pdftitle={The Book on Modal Triplet Theory: A Typed Interpretive Overview},
+  pdftitle={The Book on Modal Triplet Theory: An Interpretive Guide},
   pdfauthor={Peter Nero}
 }
 
 \title{\Huge The Book on Modal Triplet Theory\\[2mm]
-\Large A Typed Interpretive Overview of the Current Program\\[4mm]
-\large What is proved, reconstructed, calibrated, and still open}
+\Large An Interpretive Guide\\[4mm]
+\large How to picture the program, what it has achieved, and what remains open}
 \author{Peter Nero}
-\date{July 2026\\Version 10}
+\date{July 2026\\Version 11}
 
 \begin{document}
 \frontmatter
 \maketitle
 
-\chapter*{Abstract and Current Status}
-\addcontentsline{toc}{chapter}{Abstract and Current Status}
+\begin{abstract}
+A plain-language interpretive guide to Modal Triplet Theory. The book
+explains the program's central picture of one connected physical ontology
+described through compatible projections, then follows that picture through
+coherence, world-in-world geometry, the shared circle, q79/Fu--Yau geometry,
+proto-spinors, particles, the Standard Model reconstruction, quantum theory,
+gravity, time, memory, and cosmology. Short technical boundaries distinguish
+established results, declared reconstructions, and open interpretations,
+while proofs remain in their focused papers.
+\end{abstract}
 
-Modal Triplet Theory (MTT) is a proposed architecture for spectral reduction,
-coherent-sector stability, and comparison among physical encodings.  Its
-rigorous core is a dimension-neutral Hilbert-bundle framework with compatible
-vertical operators, a joint spectral projector, separately stated fixed-point
-and equilibrium gates, controlled complementary-mode estimates, and typed
-descent and recovery maps.  A canonical physical realization uses a supplied
-ten-dimensional bundle $\Mten\to\Yfour$ with compact six-dimensional fiber
-$\Xsix$ and a Lorentzian four-dimensional base.
+\chapter*{What This Book Is}
+\addcontentsline{toc}{chapter}{What This Book Is}
 
-The current geometry program combines a local rank-three comparison field
-$\WW\in\Gamma(\operatorname{Hom}(TP,TI))$ with a selected q79 degree-three
-spectral-cover carrier.  Both exhibit a $1+2+3$ rank profile, but their global
-bundle-and-connection intertwiner remains to be proved.  The q79 branch has an
-exact trace split and a local binary-dihedral spin lift; strict global Spin
-closure is still an obstruction calculation.
+This is the plain-language book about Modal Triplet Theory (MTT). It is meant
+to help the reader see the idea before meeting the machinery.
 
-Computationally, MTT closes embedded renormalized-Standard-Model equivalence at
-the declared one-shared-physical-primitive/profile standard.  This includes the
-finite matrix architecture, charged-Yukawa profile, CKM, electroweak,
-threshold, finite-Dirac, and multi-loop precision packets.  It is not strict
-zero-knob selection of the observed universe.  Standard BRST/Faddeev--Popov
-quantization and measured renormalized profile data are admitted at this
-closure tier.
+MTT has grown into a large research program. Its technical papers discuss
+Hilbert bundles, spectral projectors, fixed points, finite algebras,
+heterotic geometry, spin lifts, response matrices, and numerical
+certificates. Those objects matter, but they are not the best place to begin.
+The purpose of this book is to explain why they are being assembled and what
+kind of picture they may form together.
 
-This book is interpretive, but every interpretation is labeled.  It does not
-claim that MTT has derived the Born rule, Einstein gravity, a UV-complete
-quantum gravity, the origin of time, three families, cosmology, or all of
-string theory from projection alone.
+The guiding possibility is simple to state. The many theories used in physics
+may be effective descriptions of one richer structure. A description remains
+physical when it is stable, mutually compatible with the other descriptions,
+and capable of returning to a coherent state after disturbance. What we call
+particles, forces, spacetime, and quantum behavior may then be different
+visible faces of that common structure.
 
-\chapter*{Revision Note for This Edition}
-\addcontentsline{toc}{chapter}{Revision Note for This Edition}
+This is an interpretation of the MTT program, not a proof manual. The book
+owns no theorem and should not be cited in place of the focused papers.
+Technical boundaries are included where an attractive picture would
+otherwise outrun the results. They are deliberately short. Readers who want
+the proofs can follow the paper map near the end of the book.
+
+\begin{plainsummary}
+The book asks the imaginative question: what might the mathematics mean?
+The papers ask the stricter question: what exactly follows from the stated
+assumptions?
+\end{plainsummary}
+
+\chapter*{Version 11 Revision Note}
+\addcontentsline{toc}{chapter}{Version 11 Revision Note}
+
+\begin{description}
+\item[Supersedes.] \emph{The Book on Modal Triplet Theory: An Interpretive
+Guide}, version~10.
+
+\item[Reason.] Version~10 established the correct claim tiers and withdrawals,
+but its presentation still followed the technical corpus too closely in
+places. The book also needed a cleaner separation between its public
+description, its revision history, and the papers that own the mathematical
+results.
+
+\item[Resolution.] Version~11 restores the book's intended role as an
+interpretive guide. It develops the central pictures in ordinary language,
+keeps formulas subordinate to explanation, attributes technical claims to
+their paper owners, and keeps this revision record outside the descriptive
+synopsis used for publication metadata.
+
+\item[Retained content.] The claim-typed overview, corrected q79 and
+shared-circle interpretation, Standard Model profile status, and explicit
+withdrawals of obsolete claims are retained without theorem promotion.
+
+\item[Remaining boundary.] The book remains an interpretive map and proves no
+independent theorem. The open source, action, quantum-probability,
+continuum-QFT, gravity, and cosmology bridges remain exactly those recorded by
+the current technical papers and A/B ledger.
+\end{description}
+
+\chapter*{Version 10 Revision Note}
+\addcontentsline{toc}{chapter}{Version 10 Revision Note}
 
 \begin{description}
 \item[Supersedes.] \emph{The Book on Modal Triplet Theory}, version~9
 (January 2026).
 
-\item[Reason.] Version~9 treated triplet minimality, ten-dimensional geometry,
-particle and force assignments, basin/Born probabilities, Gaussian quantum
-gravity, framework containment, and cosmological scenarios as more established
-than the underlying papers allowed.  It also used the retired few-TeV execution
-chain, conflated the shared phase circle with time-like bookkeeping, and
-predated the selected q79, finite-algebra, HYM, SM-profile, and foundational-
-geometry successor theorems.
+\item[Reason.] The original edition succeeded as an intuitive account, but it
+sometimes described promising interpretations as if the technical papers had
+already proved them. Later work also replaced the literal
+circle--lens--nil topology, corrected the meaning of the shared circle,
+selected a q79/Fu--Yau branch, clarified the local $3$-by-$3$ comparison
+geometry, and completed a much stronger Standard Model reconstruction.
 
-\item[Resolution.] Version~10 is rebuilt around the corrected Foundation,
-Fixed Points I--VI, Projection--Admissibility, Signature, Scale, Relationship
-Atlas, Theta/Execution, q79, proto-spinor, closure-strain, action, and current
-SM ledgers.  It uses explicit claim tiers throughout, corrects the
-$3+3$ versus $3\times3$ distinction, replaces literal circle--lens--nil
-topology by typed carrier roles, and reports numerical closure at its declared
-profile standard.
+\item[Resolution.] This edition restores the original book's explanatory
+purpose while bringing its claims into line with the current papers. The
+mathematics is mostly translated into pictures and ordinary language.
+Statements that remain proposals are presented as proposals, and proved
+results are attributed to their technical owners.
 
-\item[Retained result.] The central interpretive idea survives: one can study
-stable effective descriptions through shared spectral, geometric, and
-fixed-point structures, and several nontrivial MTT realizations now have exact
-or reproducible certificates.
+\item[Retained result.] The central interpretation survives: stable physical
+descriptions may arise through a common geometry of comparison, projection,
+return, and admissibility. Several pieces of that picture now have exact or
+reproducible mathematical realizations.
 
-\item[Remaining boundary.] The leading unresolved promotions are the strict
-global q79 Spin certificate, the world-in-world/strain-to-q79 same-source
-intertwiner, a selected normalized action source, strict no-knob and unique-
-branch selection, and independent MTT derivations of quantum probability,
-gauge quantization, gravity, and cosmology.
+\item[Remaining boundary.] MTT has not yet derived the observed universe from
+a unique parameter-free microscopic source. The decisive missing bridges
+include the global q79 spin decision, the local-to-global geometry map, a
+single selected action and value source, an MTT derivation of quantum
+probability, and a controlled derivation of gravity and cosmology.
 \end{description}
 
-\noindent\textbf{Major withdrawals from version 9.}
-The following are not carried forward as results: universal proof that three
-filters or three families are inevitable; identification of compact phase with
-physical time; literal $S^1\times\mathrm{Lens}\times\mathrm{Nil}$
-compactification; Born probabilities from basin volume alone; instantaneous
-bilocal microcausality; all-loop finite and unitary quantum gravity from a
-Gaussian filter; a derived Big-Bang replacement; and the old $4.2$--$5$ TeV
-cross-sector numerical chain.
+Version~9 is preserved as the historical edition. The changes above do not
+erase its ideas; they separate the ideas that remain fruitful from claims
+that were too strong. In particular, this edition does not identify a compact
+phase circle with physical time, does not treat a literal
+$S^1$--Lens--Nil product as the selected universe, does not derive Born
+probabilities by counting basins, and does not claim completed quantum
+gravity or cosmology.
 
 \tableofcontents
 
 \mainmatter
 
-\part{How to Read the Current MTT Program}
+\part{The Guiding Picture}
 
-\chapter{Ambition with a Type System}
+\chapter{Why Look for Another Language?}
 
-MTT remains ambitious.  It asks whether stable effective physics can be
-organized by one mathematical language of vertical spectra, coherent
-projection, admissible continuation, and controlled reduction.  The ambition
-does not authorize every attractive interpretation.  The first discipline of
-the current program is therefore a type system for claims.
+Physics is extraordinarily successful and strangely divided. General
+relativity describes gravitation through spacetime geometry. Quantum theory
+describes states, amplitudes, and measurements. Quantum field theory turns
+particles into excitations of fields. The Standard Model organizes almost
+everything observed in particle laboratories, yet leaves many measured
+numbers as inputs. String theory, spectral geometry, statistical mechanics,
+and dynamical systems each reveal another aspect of the same world.
 
-\section{Seven claim types}
+This division may reflect nature, but it may also reflect our choice of
+language. A map of a city, a railway timetable, and a geological survey can
+all be correct while looking nothing alike. Their symbols are different
+because their questions are different. Trouble begins when one mistakes a
+map for the city itself or assumes that two maps must be unrelated because
+their symbols do not match.
 
-\begin{description}
-\item[Assumption.] Data inserted into a realization: a manifold, metric,
-operator, representation, measure, action, or boundary condition.
-\item[Conditional theorem.] A proved consequence of explicitly listed
-hypotheses on a stated domain.
-\item[Characterization.] A necessary form for any object satisfying the
-premises, without proving existence or selection.
-\item[Reconstruction.] Recovery of a known framework after target-compatible
-data are supplied.
-\item[Controlled reduction.] A map from one description to another with a
-domain and error estimate.
-\item[Calibration or profile equivalence.] Agreement using measured or
-target-related data, including branch or scheme selection.
-\item[Held-out prediction.] A value not used in construction, normalization,
-scale choice, branch choice, or parameter fitting.
-\end{description}
+MTT begins from the suspicion that some divisions in physics are divisions
+between maps. It asks whether a richer reference system can support several
+familiar descriptions at once and explain why each becomes accurate after the
+appropriate projection. The ambition is not merely to put existing theories
+side by side. It is to understand the transformations that turn one level of
+description into another.
 
-Interpretive correspondence is useful but is not an eighth theorem type.  It
-is a proposed reading of already typed mathematics.
+This changes the kind of question being asked. Instead of starting with a
+list of particles and forces, one asks what allows any persistent physical
+description to exist. Instead of treating a parameter as an unexplained dial,
+one asks whether it is the visible shadow of a relation in the upper
+geometry. Instead of checking complicated rules only after projection, one
+looks for a simpler rule before projection from which those rules descend.
 
-\section{The current one-paragraph verdict}
+That last possibility is especially important. Gauge symmetries, particle
+labels, and quantum rules may appear complicated because they are expressed
+in a reduced language. The same information may be simpler in the larger
+space, just as a rotating three-dimensional object can cast a complicated
+two-dimensional shadow.
 
-The internal spectral/control spine is rigorous under its hypotheses.  The
-selected q79 and finite-algebra branches contain substantial exact structure.
-The Standard Model is reconstructed at a declared profile-equivalence
-standard with one shared physical primitive.  MTT has not yet shown that this
-branch and these profile values are uniquely selected from a parameter-free
-microscopic source.  It is therefore more than a metaphor and less than a
-completed fundamental theory.
+\begin{technicalboundary}
+No theorem presently shows that all established theories are projections of
+one MTT object. The current program contains exact modules, conditional
+bridges, and a broad Standard Model reconstruction. A universal
+preprojection language remains a research target.
+\end{technicalboundary}
 
-\section{Why this narrower statement is stronger}
+\chapter{One World, Several Descriptions}
 
-A broad narrative can always absorb another analogy.  A typed program can
-fail.  If an operator does not commute, a projector cannot be multiplied as
-claimed.  If a relator closes with central sign $-1$, a strict Spin lift fails.
-If normalized overlap rows do not match, the same-source bridge fails.  If a
-registered held-out observable misses its uncertainty band, the numerical
-branch fails.  The revised program gains credibility by creating such points
-of contact.
+The original intuition behind MTT was ontological economy: reality should not
+need a separate fundamental substance for every way we describe it. The
+electron, its wavefunction, the electromagnetic field around it, the
+curvature it contributes to, and the record left in an apparatus should not
+be five unrelated worlds. They should be aspects of one physical process.
 
-\chapter{What Is Assumed}
+The word \emph{modal} is useful here. A mode is a way in which a structure can
+respond, persist, or vary. The same instrument can have many normal modes; the
+same geometric carrier can support many effective fields. MTT imagines a
+richer carrier whose stable modes appear, after reduction, as the familiar
+objects of physics.
 
-No universal physical conclusion follows from ``coherence'' alone.  A concrete
-MTT model declares at least:
+This does not mean that every description is equally fundamental or that all
+are interchangeable everywhere. A fluid description is excellent for an
+ocean and poor for an individual molecule. A quantum field description can
+be indispensable at one scale while a geometric description is more natural
+at another. MTT therefore speaks of domains, projections, and admissibility.
+A description is used where its map is controlled.
 
-\begin{enumerate}
-\item the base, internal bundle, regularity class, and operator domains;
-\item a strongly commuting family of vertical operators, or one total
-internal operator, and its selected spectral cluster;
-\item a well-posed stabilization flow and an invariant domain;
-\item the relation, if any, between stabilization, physical time, and RG scale;
-\item a physical action or evolution law, state space, observables, and
-probability rule when physical claims are made; and
-\item numerical provenance: sourced inputs, fitted inputs, branch selection,
-uncertainty, and held-out outputs.
-\end{enumerate}
+The phrase ``one field'' in this book should be read in this broad,
+interpretive sense: one connected physical ontology rather than a proven
+single scalar or spinor field with a final equation. The present technical
+program is more general. It works with bundles of state spaces and compatible
+operators, allowing different local descriptions to be carried together
+without pretending that they are already identical.
 
-These declarations are not blemishes.  Every physical theory has input
-structure.  The real question is which inputs can later be related or selected
-by a common theorem.
+This is a useful correction to the first edition. The unity sought by MTT is
+not uniformity. A single language can contain distinctions. Indeed, it must.
+Quarks and leptons behave differently; bosons and fermions transform
+differently; time and phase are not the same; local strain and global
+topology are not the same. The aim is to make these distinctions arise in one
+coherent architecture rather than remove them by verbal analogy.
 
-\part{The Rigorous Internal Spine}
+\begin{plainsummary}
+MTT does not ask every theory to say the same thing. It asks whether their
+different statements can be traced to compatible views of one underlying
+structure.
+\end{plainsummary}
 
-\chapter{Hilbert Bundles, Vertical Operators, and Coherence}
+\chapter{Projection Is Not Destruction}
 
-\section{Dimension-neutral architecture}
+Projection is one of the central images of MTT. In ordinary life, projection
+often sounds like loss: a three-dimensional object casts a flatter shadow.
+In mathematics and physics, however, projection can also mean selecting the
+part of a state relevant to a question.
 
-Let $Y$ be a smooth base and $\mathcal E\to Y$ a real or complex Hilbert
-bundle.  On a declared Sobolev space
+A camera does not destroy the object it photographs. It records particular
+relations between the object, the lens, and the detector. A musical score
+does not contain the air pressure at every point in a concert hall, yet it
+retains the structure needed to reproduce the music. A thermodynamic state
+does not list every molecular coordinate, but it can still make exact
+macroscopic predictions.
+
+MTT treats the visible world in a similar way. A projected description may
+omit upper information while preserving the combinations that remain stable
+and observable in its domain. Different projections may retain different
+aspects. Their compatibility is not automatic; it is something the theory
+must check.
+
+This is why projection alone cannot explain everything. If two different
+upper states produce the same visible state, a reduced observer cannot infer
+which upper state occurred without more information. A right section may
+choose a representative, but choosing one is not the same as recovering the
+actual one. Likewise, a many-to-one map does not generate probability,
+entropy, or quantum uncertainty by itself. Those require states, measures,
+and dynamics.
+
+The deeper hope is constructive. Perhaps the rules that look arbitrary after
+projection are consistency conditions among upper descriptions. A gauge rule
+might express the freedom to choose a local frame. A conservation law might
+record an invariant that survives reduction. A family label might record
+where a mode sits in a recursive carrier. If so, the right preprojection
+language would turn several separate postprojection rules into one geometric
+fact.
+
+\begin{technicalboundary}
+The Projection--Admissibility paper gives exact criteria for when an upper
+evolution descends to an autonomous reduced evolution and when information
+can be recovered. It does not claim that every physical projection satisfies
+those criteria.
+\end{technicalboundary}
+
+\chapter{Coherence, Return, and Admissibility}
+
+Projection says which part of a description is retained. Coherence says
+whether the retained parts belong together. Return says whether a disturbed
+state can settle back into a stable regime. Admissibility says whether the
+whole route remains within the domain where the description is valid.
+
+These ideas are familiar outside MTT. A bridge is coherent when its parts
+carry load together. A laser is coherent when phases remain related. A
+biological organism maintains itself by repeatedly returning toward viable
+states. A numerical method is admissible only while its approximations remain
+controlled.
+
+MTT combines these intuitions but does not collapse them into one word. A
+state may be spectrally coherent without being a dynamical equilibrium. A
+projected step may have a fixed point without the upper system being at rest.
+A stable local solution may fail when continued around a nontrivial global
+loop. A calculation may reproduce a measured profile while leaving the
+source of that profile unexplained.
+
+The early slogan of one inequality selecting one inevitable world was
+therefore too compressed. The current program uses several gates. The state
+space must be well defined. The relevant operators must be compatible. The
+evolution must exist. The selected domain must remain invariant. Disturbances
+outside the coherent sector must be controlled. If uniqueness is claimed, a
+valid uniqueness mechanism is needed. If equilibrium is claimed, return under
+one projected step is not enough.
+
+This may sound less dramatic than the original slogan, but it makes the idea
+more powerful. Each gate can be tested. A failure has a location. Different
+physical encodings can share some gates while differing at others. This is
+how an interpretive picture becomes a research program.
+
+\begin{plainsummary}
+Coherence is not a magical force. It is the demand that several descriptions
+remain mutually compatible and dynamically stable on a stated domain.
+\end{plainsummary}
+
+\part{The Geometry Behind the Picture}
+
+\chapter{The Upper World and the Visible World}
+
+The canonical physical picture used by MTT has four extended spacetime
+directions and a six-dimensional internal carrier. This is the familiar
+ten-dimensional shape encountered in several unification programs, but MTT
+uses it in its own way.
+
+The four-dimensional side is the world in which clocks, causal signals, and
+laboratory positions are described. The six-dimensional side carries
+internal comparisons, phases, representation data, and modes that need not
+look like extra corridors in ordinary space. It is better to picture the
+internal directions as ways the physical structure can be arranged than as
+tiny places into which a particle could travel with a sufficiently small
+ruler.
+
+The distinction matters because a dimension can play different roles.
+Spacetime dimensions locate events. Internal dimensions can label
+orientations, phases, shapes, or fibers over spacetime. A six-dimensional
+fiber attached to every spacetime point is not another six-dimensional
+universe sitting beside ours. It is additional structure carried at each
+point of the visible description.
+
+MTT does not currently prove that nature must have this four-plus-six form.
+It selects and studies that realization because it can host the geometric,
+spinorial, heterotic, and finite-operator structures used by the program. The
+abstract fixed-point mathematics itself is dimension-neutral.
+
+The internal and external sides are not meant to be sealed compartments.
+Their interaction is the point. Internal patterns determine what can appear
+as a field or particle in four dimensions, while visible dynamics can disturb
+the internal configuration. The eventual theory must explain this exchange
+through one action and one controlled reduction.
+
+\begin{statusnote}
+The four-plus-six realization is a supplied physical arena with strong
+supporting constructions. Its unique selection from more primitive MTT data
+is still open.
+\end{statusnote}
+
+\chapter{The World-in-World Comparison}
+
+One of the most suggestive MTT ideas is that a world can carry a structured
+comparison with another world-like frame. The phrase ``world in world'' does
+not mean a smaller universe hidden inside a larger one. It means that two
+three-directional structures can be compared point by point.
+
+Imagine holding two small coordinate frames. To say how one sits relative to
+the other, one needs nine comparison numbers: each of three directions in the
+first frame can be compared with each of three directions in the second. That
+is the source of the $3$-by-$3$ object. It is a field of comparisons, not a
+multiplication of manifold dimensions.
+
+Those nine comparison directions divide naturally. Three describe relative
+rotation. The remaining six describe strain: one overall expansion or
+contraction, two diagonal shape changes that preserve total size, and three
+off-diagonal shears. If one also supplies a single ordering direction, the
+component count can be summarized by the book's one useful mnemonic:
+
 \[
- \mathcal H=H^s(Y;\mathcal E),
+ 1+3\times3=(1+3)+(1+2+3)=4+6=10.
 \]
-MTT uses three compatible vertical structures
-\[
- (\mathcal E_i,A_i,P_i),\qquad i=1,2,3.
-\]
-The $A_i$ are nonnegative self-adjoint operators with specified domains.  If
-they strongly commute, their spectral projectors may be multiplied:
-\[
- \Pcoh=P_1P_2P_3,
- \qquad \Qinc=I-\Pcoh.
-\]
-Otherwise one must define a single total internal operator and take its
-spectral projector.  Commutation is a hypothesis or theorem, never a gift of
-notation.
-
-The triplet is not automatically three coordinate manifolds.  Its entries may
-be operators, bundle summands, representation lanes, or filtrations on one
-internal carrier.
-
-\section{Three parameters that must not be merged}
-
-The corrected Foundation distinguishes:
-\[
- \tau=\text{stabilization parameter},\qquad
- t=\text{physical time},\qquad
- \mu=\text{renormalization scale}.
-\]
-A heat or relaxation semigroup $R_\tau$ is not a Lorentzian propagator
-$U(t_2,t_1)$, and neither is an RG trajectory.  A realization may relate them,
-but it must provide the map, dimensions, domain, and error.
-
-\section{Complementary-mode control}
-
-On the noncoherent sector one seeks a semigroup estimate of the form
-\[
- \|e^{\tau L_Q}\|\le M e^{-\gamma\tau},\qquad \gamma>0,
-\]
-or a suitable dissipativity bound.  This form remains meaningful for
-nonnormal generators.  Eigenvalue signs alone do not control transient growth.
-An internal gap controls internal complementary modes; it is not automatically
-a four-dimensional momentum cutoff.
-
-\chapter{Fixed Points Are Not All the Same}
-
-Let $R_\tau$ be a well-posed stabilization map and define a projected step
-\[
- T_\tau=\Pcoh R_\tau.
-\]
-A point satisfying $T_\tau\Psi_\ast=\Psi_\ast$ is a projected time-step fixed
-point.  It is not automatically a steady solution of the upper flow.  A strict
-Lyapunov identity or another stationarity argument is required to promote it
-to an equilibrium.
-
-Banach's theorem supplies existence and uniqueness only when $T_\tau$ is a
-strict contraction on a nonempty complete invariant domain.  Schauder and
-Darbo provide different existence routes and do not imply uniqueness.  This
-is why the old slogan ``one inequality selects one universe'' has been
-retired.  The current theory uses a ledger of independent gates.
-
-\section{The six Fixed-Point papers}
-
-\begin{longtable}{L{0.12\textwidth}L{0.73\textwidth}}
-FP I & Geometry, Sobolev spaces, spectral projectors, semigroup well-posedness,
-conditional existence and uniqueness routes, and Galerkin approximation.\\
-FP II & Application to a supplied $4+6$ control realization, with a shared
-circle counted as bundle data and equilibrium promotion kept separate.\\
-FP III & Deterministic disturbance amplitudes, stochastic noise powers,
-noncoherent damping floors, exact OU statements, and conditional homogenization.\\
-FP IV & Curved spectral-cluster persistence, $Q\mathcal RP$ leakage,
-intrinsic Karcher centroids, first-order modulation, and work-limited exits.\\
-FP V & Frozen linear covariance, canonical-correlation estimates, declared
-admissibility margins, and Gaussian exit bounds.\\
-FP VI & A typed synthesis separating inherited theorem, conditional physical
-completion, and interpretation.\\
-\end{longtable}
-
-These results constitute the strongest general mathematical achievement of
-MTT.  They do not select a particle spectrum or fundamental action by
-themselves.
-
-\chapter{Projection, Descent, and Recovery}
-
-Suppose $P_0:X\to Y_0$ is an initial reduction, $P_t:X\to Y_t$ a final
-reduction, and $\Phi_t:X\to X$ an upper evolution.  Four questions must be
-separated:
-
-\begin{enumerate}
-\item Does a right section choose one compatible upper representative?
-\item Does a left decoder recover the actual upper state?
-\item Does an autonomous reduced map $F_t:Y_0\to Y_t$ exist?
-\item Is that reduced map injective, or do effective labels merge?
-\end{enumerate}
-
-Noninjectivity of $P_0$ does not forbid a right section.  Autonomous descent
-exists exactly when $P_t\Phi_t$ is constant on the equivalence classes of
-$P_0$.  Probability requires a measure and disintegration; entropy requires a
-state or measure plus a dynamical or coarse-graining law.  Neither appears
-from noninjectivity alone.
-
-\part{Geometry: Local Carrier and Global Candidate}
-
-\chapter{The Canonical \texorpdfstring{$4+6$}{4+6} Realization}
-
-The canonical physical specialization is
-\[
- \pi:\Mten\longrightarrow\Yfour,
- \qquad \dim\Yfour=4,
- \qquad \dim X_x=6.
-\]
-The physical completion supplies a globally hyperbolic Lorentzian base and a
-compact Riemannian internal fiber.  This is a selected realization, not a
-dimension theorem of the abstract Hilbert-bundle framework.
-
-If the internal space factorizes, the dimensions of its factors must add to
-six.  A shared phase circle is represented by a principal $U(1)$ bundle or
-Hermitian line bundle.  It is not appended as a seventh coordinate.
-
-\section{Signature comes from a principal symbol}
-
-A Gram tensor
-\[
- G_{\mu\nu}=\langle D_\mu\Psi,D_\nu\Psi\rangle
-\]
-is positive semidefinite and cannot be a Lorentzian metric.  Causal signature
-is read from the principal symbol of a selected hyperbolic physical equation,
-schematically
-\[
- \sigma_{\mathrm{pr}}(x,\xi)
- =g^{\mu\nu}(x)\xi_\mu\xi_\nu I+\text{gauge blocks}.
-\]
-The current signature theorem establishes compatibility and stability of one-
-time hyperbolicity.  It does not derive three spatial dimensions.
-
-\chapter{World-in-World Comparison Geometry}
-
-The lawful version of the world-in-world idea is a field between two oriented
-rank-three bundles:
-\[
- \WW\in\Gamma\!\left(\operatorname{Hom}(TP,TI)\right).
-\]
-In local frames it is a $3\times3$ matrix with nine components.  This is not
-manifold-dimension multiplication.  A rank-three bundle over a three-
-dimensional base has six-dimensional total space.
-
-At an invertible background, polar decomposition separates orientation and
-strain:
-\[
- \operatorname{Mat}(3,\mathbb R)
- =\mathfrak{so}(3)\oplus\operatorname{Sym}(3,\mathbb R),
- \qquad 9=3+6.
-\]
-Once an orthonormal flag is selected, the strain sector splits as
-\[
- \operatorname{Sym}(3,\mathbb R)
- =\mathbb RI_3\oplus\mathcal D_0\oplus\Soff,
- \qquad 6=1+2+3.
-\]
-The scalar, traceless-diagonal, and symmetric off-diagonal projectors are
-orthogonal for the Frobenius metric.  The $1+2+3$ split depends on the selected
-flag; the fully $SO(3)$-invariant split is $1+5$.
-
-Therefore
-\[
- 1+3\times3=(1+3)+(1+2+3)=4+6=10
-\]
-is an exact component identity after an ordering scalar is supplied.  It is
-not a proof that these components are the tangent directions of $\Mten$.
-
-\section{Iwasawa and the nil distinction}
-
-For $GL^+(3,\mathbb R)$, Iwasawa decomposition has dimensions
-\[
- \dim SO(3)=3,\qquad \dim A=3=1+2,\qquad \dim N=3.
-\]
-The upper-unitriangular $N$ is the three-dimensional Heisenberg nil group.
-The symmetric off-diagonal strain space is also three-dimensional, but is not
-itself that Lie algebra.  They are related by a background-dependent local
-coordinate map.  This distinction prevents dimension matching from becoming
-an unproved dynamical identity.
-
-\chapter{The Selected q79 Carrier}
-
-For the selected degree-three spectral cover $\pi:C\to B$, let
-\[
- \mathcal A=\pi_*\mathcal O_C,
- \qquad \Atrace=\ker\operatorname{Tr}.
-\]
-The normalized trace projector gives
-\[
- \mathcal A=\mathcal O\oplus\Atrace,
- \qquad \operatorname{rank}(\mathcal O,\Atrace,\mathcal A)=(1,2,3).
-\]
-The common carrier is
-\[
- \Hq=\Lshared\otimes
- (\mathcal O\oplus\Atrace\oplus\mathcal A),
- \qquad \operatorname{rank}\Hq=6.
-\]
-This is a direct trace/trace-zero/full filtration.  A connected transitive
-cover does not provide a global ordering of three individual sheets.
-
-The q79 arithmetic branch includes the exact selected residue construction
-leading to $q=79$ modulo the declared order-$448$ quotient.  Its value is a
-branch theorem with stated assumptions, not a replacement for the geometry
-selecting every physical observable.
-
-\section{Local spin lift and global obstruction}
-
-The signed sheet representation
-\[
- \rho_+(\sigma)=\operatorname{sgn}(\sigma)P_\sigma
- \in SO(3)
-\]
-has inverse image $\operatorname{Dic}_3$ of order twelve in
-$\operatorname{Spin}(3)$.  Exact quaternion lifts satisfy the local braid and
-central-sign relations.  Strict global Spin closure still requires every
-branch-complement relator to lift with the correct central sign, equivalently
-the relevant obstruction class must vanish.  A shared-circle SpinC
-cancellation is a different conclusion.
-
-\section{Which global topology is current?}
-
-The q79 Fu--Yau branch is the strongest selected physical compactification
-candidate in the current corpus.  The space
-$L(3,1)\times\mathrm{Nil}_3$ remains useful as an auxiliary or effective model.
-They are not the same manifold; even their first Betti numbers differ.  The
-literal product $S^1\times\mathrm{Lens}\times\mathrm{Nil}$ and literal
-manifold nesting are retired as proof sources.
-
-The shared circle is common $U(1)$ phase or holonomy data and is counted once.
-Physical time is noncompact order in the Lorentzian completion.  A map
-$\mathbb R\to S^1$ can synchronize a phase after its frequency is supplied,
-but compact phase and time are not identical objects.
-
-\chapter{The Missing Geometry Theorem}
-
-The local real strain carrier and the complex q79 carrier share the rank
-profile $1+2+3$.  Equality of the integer profile does not yet make them
-objects of the same type.  One type-correct candidate is the complex-bundle
-map
-\[
- \mathfrak I_{\mathrm{WW}\to q79}:
- (\mathbb RI_3\oplus\mathcal D_0\oplus\Soff)
- \otimes_{\mathbb R}\mathbb C
- \longrightarrow
- \Lshared\otimes_{\mathbb C}
- (\mathcal O\oplus\Atrace\oplus\mathcal A).
-\]
-Equivalently, one could first select and prove a rank-six real form of the q79
-carrier.  Either route is additional source data, not a consequence of the
-rank count.  The resulting map must be a global bundle isomorphism and must
-preserve:
-
-\begin{enumerate}
-\item transition functions and the selected flag;
-\item the strain and HYM inner products;
-\item covariant derivatives;
-\item the Hessian and retarded operators; and
-\item the normalized overlap kernels used by the numerical packets.
-\end{enumerate}
-
-This one theorem would connect the most attractive local interpretation to the
-most developed global and numerical branch.  Repeating the rank count does not
-advance it.
-
-\part{From Carrier to Physical Models}
-
-\chapter{Proto-Spinors Without Automatic Particles}
-
-If oriented rank-three frame data must retain the nontrivial class of
-$\pi_1(SO(3))\cong\mathbb Z_2$, an ordinary $SO(3)$ vector description loses
-that loop memory.  The minimal connected cover retaining it is
-\[
- \operatorname{Spin}(3)\cong SU(2).
-\]
-This is a conditional double-cover theorem.  It does not prove that nature
-must begin with rank three, and it does not yet create a Lorentzian fermion.
-
-A physical spacetime spinor requires a Lorentzian spin or SpinC structure,
-tetrad, compatible connection, hyperbolic Dirac operator, statistics, state
-space, and observables.  Weyl, Dirac, Majorana, and twistor descriptions are
-conditional chart languages once their chirality, pairing, reality, and
-conformal assumptions are supplied.
-
-Circle, lens, and nil now name carrier roles:
-
-\begin{description}
-\item[Circle.] Shared phase or holonomy.
-\item[Lens.] Finite, projective, or signed-sheet transport.
-\item[Nil.] Triangular transport, anchoring, or termination in a selected
-operator filtration.
-\end{description}
-
-This taxonomy need not be a literal global product topology.
-
-\chapter{Closure Strain, Scalars, and Mass}
-
-The exact local achievement is the strain normal form.  A positive closure
-Hessian proves local restoring cost on its declared slice.  It does not prove
-that one direction is the Higgs or that an eigenvalue is a physical mass.
-
-A pole mass comes from a canonically normalized quadratic action.  If
-\[
- S_4^{(2)}=\frac12\int\!\sqrt{|g_4|}\,
- \left(Z_{AB}\partial_\mu\varphi^A\partial^\mu\varphi^B
- -M^2_{AB}\varphi^A\varphi^B\right),
-\]
-then the tree-level squared masses are eigenvalues of
-$Z^{-1/2}M^2Z^{-1/2}$.  A closure Hessian becomes $M^2$ only through a
-normalized source map.
-
-The selected finite-algebra computation begins with three rank-four real
-scalar-doublet modules.  A q79/proto-spinor alignment projector selects one
-rank-four module and removes eight unwanted real scalar directions at the
-declared profile tier.  This is the relevant one-Higgs selection result.  It
-does not follow from Hessian positivity alone.
-
-\chapter{A Regime-Local Action, Not a Derived Final Action}
-
-The corrected action paper supplies a ten-dimensional EFT ansatz on a declared
-domain.  A representative two-derivative form contains
-\[
- \begin{aligned}
- \int_{\Mten}\sqrt{|g_{10}|}\,\bigg[
- &\frac{R_{10}}{2\kappa_{10}^2}
- -\frac14 k_{ab}F^a_{MN}F^{bMN}
- -\frac12G_{AB}D_M\phi^A D^M\phi^B-V(\phi)\\
- &{}+i\bar\Psi\Gamma^M D_M\Psi
- -\bar\Psi\mathcal M(\phi)\Psi
- \bigg]
- \end{aligned}
-\]
-plus flux, dilaton, gauge-fixing, ghost, boundary, and higher-order terms.
-
-The metric and Einstein--Hilbert term are inputs.  Curvature is defined by a
-connection; $\nabla S\ne0$ alone does not imply curvature or Frobenius failure.
-Discrete internal spectra require compact resolvent or an equivalent spectral
-compactness theorem.  Consistent four-dimensional truncation requires the
-discarded equations to vanish on the retained ansatz, or an explicit
-Schur--Feshbach error bound.
-
-\part{The Standard Model Result at Its Actual Tier}
-
-\chapter{Finite Algebra and Matrix Architecture}
-
-The selected finite branch uses
-\[
- \mathcal A_F=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)
-\]
-on an explicit three-family particle--antiparticle carrier.  In the declared
-counting, the current finite construction is a 96-dimensional complex finite
-Hilbert space with a $96\times96$ profile Dirac operator satisfying
-self-adjointness, grading, KO-dimension-six reality, order-zero, and structural
-order-one checks.
-
-The $27\times27$ qutrit--Weyl/minimal matrix is a finite response architecture,
-not a standard universal size demanded by quantum mechanics.  Its dimensions
-come from the selected tensor and sector organization.  Exact algebraic and
-profile checks establish that the construction can carry the required gauge,
-family, flavor, phase, Higgs, and threshold data at the adopted standard.
-
-The anomaly analysis selects the usual anomaly-free hypercharge direction on
-the chosen spectrum and preserves the familiar quotient
-\[
- (SU(3)\times SU(2)\times U(1)_Y)/\mathbb Z_6.
-\]
-This is a theorem about the selected finite representation.  The local
-$1+2+3$ strain dimensions alone do not derive these representations.
-
-\chapter{What ``True SM Closure'' Means Here}
-
-The current non-looping ledger reports 12/12 obligations closed for
-\emph{embedded renormalized-Standard-Model equivalence at the
-one-shared-physical-primitive/profile standard}.  The locked baseline includes:
-
-\begin{itemize}
-\item the $27\times27$ finite matrix architecture;
-\item charged Yukawa magnitudes at SM-parity/profile tier;
-\item selected CKM weight rows and their uncertainty certificate;
-\item electroweak and direct Higgs/threshold rows;
-\item the internal threshold ledger;
-\item the finite Dirac operator at profile tier;
-\item selected multi-loop mass-scheme and threshold transport;
-\item a positive-definite precision covariance object; and
-\item a five-arrow renormalized-SM observable functor.
-\end{itemize}
-
-This is a serious reconstruction result.  It shows that the selected MTT
-branch can encode and reproduce the renormalized SM data consistently through
-one finite operator architecture and common transport policy.
-
-It is not a strict no-knob theorem.  Measured renormalized profile parameters
-are admitted downstream, and one shared physical primitive fixes the declared
-normalization.  Standard SM BRST/Faddeev--Popov quantization is imported rather
-than derived from MTT.
-
-\section{Parameters and knobs}
-
-Three standards must remain separate:
-
-\begin{description}
-\item[Profile parity.] Can the architecture represent the accepted SM data
-and reproduce them under the frozen conventions?
-\item[One-shared-primitive equivalence.] Can the sectors be tied consistently
-with one common physical normalization while measured profile values are
-admitted?
-\item[Strict no-knob selection.] Does one microscopic MTT source select the
-branch, dimensionful normalization, and all values without using those data?
-\end{description}
-
-The first two are closed at the stated tier.  The third is an upgrade target.
-Calling all three ``closure'' without the qualifier caused much of the earlier
-confusion.
-
-\section{Neutral sector and strong CP}
-
-The neutral sector has a selected profile realization with declared holonomy
-and absolute-scale inputs.  Strict selection of the phase, scale, and
-Dirac/Majorana ontology remains open.  The strong-CP program has advanced
-substantially through the q79 heterotic axion and anomaly analysis, but the
-strict fully selected numerical nonperturbative source is not yet closed.
-
-\chapter{Theta Closure and the End of the Few-TeV Chain}
-
-The corrected Theta program transports measured source data with a common
-multi-loop scheme to $Q=M_t$.  In its stated normalization the gauge-profile
-targets are
-\[
- \frac{I_2}{I_1}=0.5110273\pm0.0001231,
- \qquad
- \frac{I_3}{I_1}=0.158335\pm0.001098.
-\]
-They are calibrated profile coordinates, not first-principles predictions.
-The overlaps are weighted gauge-kinetic coefficients; unit normalization of
-representatives does not force all of them to one.
-
-An auxiliary round-$S^2$ and Heisenberg-nil ansatz can be retargeted to these
-ratios and passes its declared dimensionless spectral-floor test.  The twistor
-route reproduces the same quadratic functionals under shared conventions and
-is therefore a conditional cross-check, not independent normalization.
-
-The old $4.2$--$5$ TeV crossing is withdrawn.  It is not a coherence scale,
-internal gap, quantum-gravity scale, or prediction source.  The auxiliary
-volume coefficient $20.07064R_1^3$ belongs only to its stated
-$S^1\times S^2\times\mathrm{Nil}_3$ ansatz and is not the q79 Fu--Yau volume.
-
-The weak-angle relation derived from the same gauge ratio is an exact
-round-trip identity, not a held-out prediction.  A genuine test requires an
-MTT source for the ratio that does not use electroweak gauge data.
-
-\part{Quantum, Field-Theoretic, and Gravitational Interpretation}
-
-\chapter{Quantum Mechanics: What Is and Is Not Reconstructed}
-
-Projection, coherent basins, and stable sectors can represent alternatives,
-records, and reduced states.  This gives useful language for decoherence and
-measurement models.  It does not produce quantum probability by itself.
-
-A full quantum reconstruction must supply:
-
-\begin{enumerate}
-\item a complex Hilbert space and observables;
-\item unitary dynamics or a specified open-system law;
-\item canonical commutation relations where relevant;
-\item measurement instruments and update rules; and
-\item the Born functional or a theorem equating basin weights with trace
-probabilities for all relevant states and measurements.
-\end{enumerate}
-
-Basin volume depends on a measure.  Counting basins is not probability.
-Noninjective projection is not uncertainty.  A deterministic branch narrative
-must also confront Bell's theorem: MTT cannot be advertised as a Bell-local
-hidden-variable completion.  A consistent global account would need to state
-its nonfactorization, contextuality, boundary-value, retrocausal, or other
-mechanism explicitly while preserving no-signaling.
-
-The phrase ``no fundamental dice'' is therefore a philosophical preference in
-this book, not a theorem of current MTT.
-
-\chapter{QFT and the Renormalized SM Functor}
-
-The strongest QFT result is a reconstruction on the selected branch.  The
-finite representation and action data feed standard renormalized-SM
-quantization and multi-loop transport, producing a typed observable functor.
-This is enough for profile equivalence.  It does not derive the path integral,
-BRST complex, or continuum interacting QFT from projection.
-
-Fiberwise coherent compression can preserve locality of a supplied upper local
-net when the coherent sector is invariant and the reduction is genuinely
-fiberwise.  This is a meaningful AQFT-style descent theorem.  A spatially
-nonlocal instantaneous kernel is not microcausal merely because it leaves the
-principal symbol unchanged.  A local mediator is the consistent route to
-causal overlap dynamics.
-
-\chapter{Worldsheets, Strings, and Fu--Yau Geometry}
-
-The proto-spinor/worldsheet paper now defines a $C^2$ bridge map between
-declared configuration spaces.  If its derivative $L$ intertwines the two
-Hessians,
-\[
- L^*H_{\mathrm{ws}}L=H_{\mathrm{ps}},
-\]
-then the quadratic diagnostics agree up to a cubic remainder near alignment.
-This is a local conditional bridge.
-
-It does not prove that two-dimensionality is inevitable or that a complete
-string theory follows.  Worldsheet Weyl invariance, beta functions, central
-charge, ghosts, modular invariance, spin-structure sums, anomalies, tadpoles,
-unitarity, and target-space matching remain independent gates.
-
-Fu--Yau/Hull--Strominger mathematics supplies a legitimate class of heterotic
-flux backgrounds and is the right established setting for the selected q79
-branch.  MTT currently reconstructs and selects data inside this setting; it
-does not contain all of string or M-theory as a proved theorem.
-
-\chapter{General Relativity and Gravity}
-
-The canonical completion supplies a Lorentzian base and a gravitational action
-or field equation.  Coherent reduction may then produce a four-dimensional
-effective Einstein sector if discarded equations, moduli, warping, gauge
-vectors, and error terms are controlled.
-
-The internal exact-branch transverse-traceless support packet is a real
-structural result.  Physical Newton/Planck normalization and the complete
-stress-energy response remain separate.  Gravity is therefore a conditional
-physical completion of the MTT spine, not something projection has already
-derived.
-
-The image of gravity as ``elastic response'' can remain an interpretation of
-the selected action and strain fields.  It is not a substitute for deriving
-the Einstein equations and their observables.
-
-\chapter{Quantum Gravity: Present Boundary}
-
-Filtered propagators and proper-time factors can soften selected Euclidean or
-TT integrals.  This does not prove all-loop finiteness, unitarity, constructive
-existence, asymptotic completeness, BRST/BV consistency, causal support, or a
-physical graviton sector.
-
-The old book's ``ontic Gaussian damping'' and completed UV-finite quantum-
-gravity language are withdrawn.  Current QG papers are conditional models and
-diagnostic bridges.  They may inspire a completion, but they are not evidence
-that MTT already exceeds established quantum-gravity programs.
-
-\chapter{Time, Entropy, and Cosmology}
-
-Physical time is the noncompact parameter of a selected Lorentzian evolution.
-Stabilization order $\tau$, RG order, chart refinement, and compact circle
-phase do not become time merely by being ordered.
-
-An arrow of time requires an asymmetric law, state, or boundary condition.
-A Lyapunov function can orient stabilization on its domain; entropy requires a
-measure or state and a coarse-graining or thermodynamic theorem.  These may be
-related in a concrete model, but are not currently identical.
-
-The Great Coherence, pre-Big-Bang continuation, inflation as relaxation, dark
-matter as modal solitons, baryogenesis from geometry, and cosmic renewal are
-interpretive scenarios.  None is a current MTT cosmological prediction.  A
-physical cosmology needs a selected action, solution, initial-state measure,
-perturbation theory, transport to observables, and comparison with data.
-
-\part{Relationships to Established Frameworks}
-
-\chapter{A Typed Atlas, Not a Universal Superset}
-
-\begin{longtable}{L{0.19\textwidth}L{0.25\textwidth}L{0.42\textwidth}}
-Framework & Current relation & Missing promotion\\\hline
+
+The identity is exact as a count of components. Its interpretation is the
+interesting part. The ordering direction and three rotations suggest an
+external four-dimensional lane. The six strains suggest an internal lane.
+This is a possible bridge between the original world-in-world intuition and
+the ten-dimensional carrier used elsewhere in MTT.
+
+But a component count is not yet a universe. To become physics, the
+comparison field must be attached globally, supplied with a metric and
+connection, and related to the operators that determine particles and
+responses. The current work has made the local decomposition precise. The
+global identification is one of the main frontiers.
+
+\begin{plainsummary}
+The $3$-by-$3$ field tells us how two three-directional frames differ. Rotation
+uses three directions; deformation uses six. It is a comparison language,
+not nine ordinary spatial dimensions.
+\end{plainsummary}
+
+\chapter{Why the Pattern One, Two, Three Appears}
+
+The title Modal Triplet Theory can tempt the reader to treat the number three
+as a mystical premise. That would be a mistake. The current program does not
+begin by declaring that everything comes in threes.
+
+What does recur is a rank pattern: first one direction is active, then two,
+then three. A flag in a three-dimensional space works this way. One begins
+with a line, extends it to a plane, and then reaches the full space. The new
+content added at each stage has sizes one, one, and one, while the cumulative
+carriers have ranks one, two, and three. In the strain picture, a related
+decomposition has one scalar direction, two diagonal shape directions, and
+three shear directions.
+
+This is \emph{recursive activation}, not three independent copies of the same
+space. The first lane is intentionally smaller. The second reuses what came
+before and adds structure. The third reuses both and completes the carrier.
+That reuse is one reason the original language of nesting felt natural.
+
+There is also an important symmetry warning. Before a flag is chosen, the
+five shape-changing strains form one rotationally natural block. The more
+detailed split into two and three requires a selected frame or flag. MTT must
+therefore explain where that selection comes from; it cannot treat the
+decomposition as simultaneously frame-free and fully resolved.
+
+The triplet is best understood as an organizational principle that appears in
+several successful constructions. It may label operator lanes, bundle
+summands, representation sectors, or stages of a filtration. Whether one
+common source ultimately selects all of these appearances remains an open and
+testable question.
+
+\chapter{Circle, Lens, and Nil}
+
+The original MTT vocabulary used three memorable geometric images: circle,
+lens, and nil. They remain useful, but their meaning has become more precise.
+They should not be pictured as three literal manifolds nested like shells.
+
+The \emph{circle} represents shared phase or holonomy. A phase can return to
+its starting value after a complete turn while still retaining information
+about how it travelled. In bundle language, the same circle-like degree of
+freedom can be reused across several sectors. It is counted once, not once
+per sector.
+
+The \emph{lens} represents finite or projective transport. A lens space is a
+concrete geometric model with nontrivial global identifications, but the wider
+MTT role is the controlled distinction between paths or sheets that can look
+the same locally. The binary phase choice often described as $+i$ or $-i$
+belongs naturally to this projective or signed transport intuition.
+
+The \emph{nil} represents triangular transport, shear, anchoring, and
+termination. Nilpotent structures remember ordered influence: one direction
+can feed another without every influence being reversible in the same basis.
+The three-dimensional Heisenberg nil group is a standard mathematical model
+for such triangular behavior.
+
+Together, circle, lens, and nil provide a language for recurrence, finite
+identification, and ordered deformation. This language can organize an
+operator filtration even when the global internal manifold is something
+else.
+
+The shared circle is not physical time. Time in the physical completion is a
+noncompact causal order. A circle may synchronize phases along that order,
+and a line can cover a circle repeatedly, but that relation requires a map
+and a frequency. A clock hand is not time itself.
+
+The idea of a double traversal remains an evocative interpretation. One
+traversal may carry a state through a visible branch while a second completes
+the phase or closure relation. Perfect return could then correspond to zero
+residual strain, whereas an incomplete visible return could appear as memory,
+time direction, or gravity. At present this is a hypothesis to be modeled,
+not a result used in the proofs.
+
+\begin{technicalboundary}
+The literal products $S^1\times\mathrm{Lens}\times\mathrm{Nil}$ and
+$L(3,1)\times\mathrm{Nil}_3$ are not the selected q79/Fu--Yau
+compactification. They remain auxiliary models and sources of operator
+intuition.
+\end{technicalboundary}
+
+\chapter{The q79 Global Candidate}
+
+Local pictures are easy to draw and hard to globalize. A coordinate frame can
+always be chosen in a small neighborhood. The real test is what happens when
+the frame is carried around a nontrivial loop and returned to its starting
+point.
+
+The q79 branch is the most developed MTT attempt to provide that global
+carrier. It uses a degree-three spectral cover in a Fu--Yau/Hull--Strominger
+setting. The details belong to algebraic geometry and heterotic
+compactification, but the intuitive point is accessible.
+
+A three-sheeted cover contains three levels of information. There is the part
+common to all sheets, the two-dimensional variation whose total trace
+vanishes, and the full three-dimensional sheet algebra. This produces another
+one-two-three profile. Unlike the local strain split, it is built from the
+trace structure of a global complex carrier.
+
+The branch label $q=79$ is not a fitted particle mass or a mysterious new
+constant of nature. It is selected by an exact finite arithmetic construction
+inside the declared branch and quotient. That is a real achievement, but it
+does not make every physical value follow from 79.
+
+The q79 geometry also carries local spin information. Signed permutations of
+the three sheets can be lifted to a double cover, and the local relations can
+be checked exactly. The remaining global question is whether every relevant
+loop returns with the correct central sign. If not, the natural result may be
+a SpinC structure in which the shared circle participates in the
+cancellation rather than a strict Spin structure.
+
+\begin{statusnote}
+The q79/Fu--Yau branch is the strongest selected global compactification
+candidate in the current corpus. Its strict global spin obstruction is not
+yet fully decided.
+\end{statusnote}
+
+\chapter{The Bridge We Still Need}
+
+The local world-in-world carrier and the global q79 carrier both display a
+one-two-three pattern. This resemblance is why they are exciting together.
+It is also where caution matters most.
+
+Two rooms can have the same dimensions without being the same room. Two
+vector spaces can have the same rank without carrying the same metric,
+connection, symmetry, or dynamics. The local strain carrier is real and
+geometric. The q79 trace carrier is complex and algebro-geometric. Their
+matching rank is an invitation to construct a map, not permission to assume
+one.
+
+The missing bridge must do more than pair basis vectors. It must work from
+patch to patch, respect the selected flag, preserve inner products and
+connections, and carry the relevant response operators and overlap data into
+one another. In physical language, it must show that the local way the medium
+can strain is the same structure that the global compactification uses to
+organize its modes.
+
+If this bridge exists, several strands of MTT would become one chain. The
+world-in-world picture would supply an intuitive local origin for the six
+internal directions. The q79 geometry would tell those directions how to fit
+together globally. The finite operators used in the Standard Model
+reconstruction could then be tested as reductions of the same source rather
+than as a compatible but separately selected architecture.
+
+If no such bridge exists, the rank resemblance remains a useful analogy but
+not the foundation of one theory. Either outcome would be informative. This
+is why the bridge is a better research target than another numerical
+coincidence.
+
+\part{From Geometry to Particles and Forces}
+
+\chapter{The Proto-Spinor}
+
+A vector rotated through a full turn returns to its original direction. A
+spinor carries subtler memory: a full turn need not return its sign, while a
+double turn does. This familiar double-cover behavior is one of the clues
+behind the MTT proto-spinor.
+
+The starting point is orientation. A three-directional frame can be moved
+around a loop that cannot be shrunk away inside the rotation group. An
+ordinary vector description forgets this loop class. Passing to the
+double-covering spin group retains it. In that precise sense, spinorial
+behavior is the minimal way to remember a certain kind of rotational history.
+
+MTT uses the term \emph{proto-spinor} because this is not yet a physical
+electron or quark. It is preprojection orientation data from which a
+spinorial chart may be built. To become a physical fermion, the construction
+still needs a Lorentzian spacetime spin or SpinC structure, a tetrad,
+connection, Dirac operator, statistics, states, and observables.
+
+The distinction is valuable. Conventional particle theory begins with
+spinors as the right representations of spacetime symmetry. MTT asks whether
+the need for those representations can be understood as the visible encoding
+of loop memory in a richer carrier. It does not replace the conventional
+description; it looks for its geometric source.
+
+Weyl, Dirac, Majorana, Clifford, and twistor languages can then be viewed as
+different ways of organizing the completed spinorial data. Clifford algebra
+records how directions multiply and how the metric is represented. Weyl
+language isolates chirality. Dirac language pairs chiral sectors. Twistor
+language reorganizes conformal and causal geometry. The proto-spinor is not a
+rival to these constructions. It is a proposed common preprojection carrier
+from which the appropriate chart might descend.
+
+\begin{plainsummary}
+The proto-spinor is a memory-bearing orientation object. It explains why a
+double cover is natural; further physical structure is required before it
+becomes a fermion.
+\end{plainsummary}
+
+\chapter{Particles as Persistent Patterns}
+
+The interpretive heart of MTT is that a particle need not be a tiny
+indestructible bead. It can be a persistent pattern of the common carrier: a
+mode that survives projection, responds consistently to disturbances, and
+returns to its admissible sector.
+
+This way of speaking is not foreign to physics. A photon is already
+understood as an excitation of a field. A quasiparticle in a material is a
+stable collective mode rather than a new microscopic substance. A soliton is
+a pattern protected by dynamics and topology. MTT extends that style of
+thinking to the full particle inventory.
+
+Different particles would correspond to different ways a mode occupies the
+internal carrier. Charge would record how it transforms under phase and gauge
+transport. Spin would record its response to frame rotation and the
+double-cover structure. Color and weak labels would record how the mode sits
+in the selected finite representation. Mass would describe the energetic or
+dynamical cost of exciting the normalized mode, not merely the curvature of
+an arbitrary unnormalized function.
+
+The original book associated each force or family directly with one of three
+geometric bundles. That assignment was too literal. The current picture is
+more layered. Circle, lens, and nil provide carrier roles. The q79 geometry
+organizes global modes. A finite algebra organizes the observed gauge
+representation. A finite Dirac operator organizes couplings and masses at the
+reconstruction tier. These layers must be connected by source maps; one
+cannot infer the particle table from the number three alone.
+
+There remains an intriguing possibility that quarks represent an additional
+order of internal breakdown or closure strain beyond leptons. Quarks carry
+color, are confined, and participate in a richer mixing and threshold
+structure. A second-order response or a deeper nil/shear activation could
+provide a geometric distinction. This is a promising model-building clue,
+not a current derivation.
+
+\begin{technicalboundary}
+The finite-operator work shows that the chosen MTT architecture can carry the
+Standard Model particle representations and profiles. It does not yet prove
+that those representations are the unique particles selected by the upper
+geometry.
+\end{technicalboundary}
+
+\chapter{Forces as Rules of Comparison}
+
+A force can be described as a push, but modern physics often describes it
+more deeply as geometry. Electromagnetism is organized by a phase connection.
+The weak and strong interactions are organized by non-Abelian gauge
+connections. Gravity is organized by spacetime geometry.
+
+MTT interprets these structures as rules for comparing neighboring
+descriptions. A connection tells us how to carry an internal frame from one
+point to another. Curvature tells us whether the frame returns unchanged
+around a loop. Gauge freedom says that different local frame choices can
+describe the same physical relation.
+
+From this point of view, the gauge groups seen after projection may be the
+symmetries of a selected comparison structure. The upper world need not carry
+the final laboratory labels in their familiar form. It must carry enough
+geometry that the correct labels and transformations descend.
+
+The current finite branch uses the familiar algebraic ingredients associated
+with the Standard Model: complex phase, quaternionic weak structure, and
+three-color matrix structure. On the selected particle carrier, anomaly
+conditions recover the usual hypercharge direction and global gauge quotient.
+This is not produced by the bare one-two-three strain count. It is a result
+of the selected finite representation.
+
+The long-term MTT goal is to reverse the logic. Instead of supplying the
+finite algebra and checking that the right gauge rules follow, one would
+derive that algebra from the shared q79 and comparison geometry. Then the
+complicated postprojection gauge rules would become the natural shadow of a
+simpler upper transport law.
+
+\chapter{What the 27 by 27 Architecture Means}
+
+The number 27 can sound mysterious, especially beside the many other
+dimensions used in particle physics. It should be understood as the size of a
+particular finite response architecture, not as a new number of spacetime
+dimensions and not as a universal matrix size in quantum mechanics.
+
+Quantum mechanics can use matrices of any size appropriate to a chosen state
+space. A two-level system uses two-by-two matrices. A three-level system uses
+three-by-three matrices. Composite systems use tensor products, so their
+dimensions multiply. The MTT 27-by-27 construction similarly comes from a
+chosen organization of three-level and sector data. Its value lies in how the
+blocks are arranged and connected, not in 27 by itself.
+
+The matrix acts as a compact bookkeeping surface for several kinds of
+response. Some blocks organize gauge and family structure. Some carry
+orientation and phase. Some connect Higgs, Yukawa, and threshold information.
+Zeros are as important as nonzero entries because they state which couplings
+are forbidden or absent at that tier.
+
+A larger 96-dimensional finite Hilbert space and its 96-by-96 finite Dirac
+operator provide the particle--antiparticle and three-family realization used
+for the full profile check. The 27-by-27 and 96-by-96 objects therefore serve
+different but related purposes. One is a minimal response architecture; the
+other is the fuller finite particle carrier.
+
+What has been achieved is not that a bare integer matrix predicts nature.
+The achievement is that one finite architecture can consistently host the
+gauge representation, family organization, flavor mixing, phase, Higgs,
+threshold, and precision data needed for a broad Standard Model
+reconstruction. The remaining question is whether the entries themselves are
+emitted by the same selected upper geometry.
+
+\begin{plainsummary}
+The matrix is a structured finite model of how sectors talk to one another.
+Its shape is meaningful because of its blocks and constraints, not because
+all of physics normally uses 27-by-27 matrices.
+\end{plainsummary}
+
+\chapter{Masses, Mixing, and the Standard Model Result}
+
+Masses and mixing angles are where many unification ideas become vague. It is
+easy to reproduce a symmetry. It is much harder to reproduce the numerical
+pattern of electron, muon, tau, quark, Higgs, and threshold data while keeping
+track of what was fitted.
+
+The current MTT calculation program has achieved a broad result at a clearly
+defined standard. The finite matrix, charged Yukawa profiles, CKM mixing,
+electroweak rows, Higgs and threshold responses, finite Dirac operator,
+multi-loop transport, and precision covariance have been joined into one
+consistent renormalized Standard Model reconstruction. The consolidated
+ledger closes all twelve obligations at the adopted
+one-shared-physical-primitive/profile tier.
+
+This means the architecture can represent the measured Standard Model and
+transport its data consistently using one shared physical normalization and a
+common scheme. It is stronger than a collection of unrelated curve fits.
+The sectors are required to agree inside one frozen finite and renormalized
+construction.
+
+It is not yet the strongest possible result. Measured renormalized profile
+values are admitted. Standard quantum-field-theory quantization is imported.
+The one shared physical primitive supplies a normalization rather than being
+derived uniquely from the upper geometry. The result is therefore a
+reconstruction or profile equivalence, not a parameter-free prediction of
+all masses and mixings.
+
+This distinction does not make the reconstruction empty. The ordinary
+Standard Model also takes its Yukawa values and several other quantities from
+experiment. MTT has shown that its selected architecture can carry the whole
+profile coherently and with fewer independent structural choices at its
+declared tier. To surpass the Standard Model as an explanation of those
+numbers, it must now derive the value rows from a source fixed before looking
+at them.
+
+The most credible route is not to keep fitting ever more elaborate formulas.
+It is to compute normalized overlap kernels and response operators from one
+selected q79/Fu--Yau action and test their outputs against data that were not
+used to choose the source.
+
+\chapter{Theta, Thresholds, and a Useful Failure}
+
+The Theta program was created to connect geometric and finite data to
+renormalized physical quantities. It has produced important transport and
+consistency machinery. It also produced one of the program's most useful
+corrections.
+
+An earlier chain appeared to select a crossing in the few-TeV range. For a
+time this looked like a possible new physical scale. Later audits showed that
+the chain mixed calibrated gauge information, auxiliary geometry, and
+round-trip identities in a way that did not support the claimed prediction.
+The old few-TeV chain is withdrawn, and the crossing was retired.
+
+This was progress. A framework that cannot relinquish an attractive number is
+not doing research. The corrected Theta program now treats its gauge ratios
+as measured profile coordinates transported to a common scale. The weak-angle
+relation obtained from the same ratio is a consistency check, not an
+independent prediction. Auxiliary round-sphere and nil models remain
+cross-checks rather than the selected q79 volume.
+
+The positive legacy is a sharper standard for future work. A source must be
+frozen before the target value is inspected. Inputs used for geometry,
+normalization, branch choice, and scheme choice must be listed. A prediction
+must be held out from all of them. This discipline now informs the broader
+Standard Model and precision program.
+
+\part{Quantum Theory as a Visible Language}
+
+\chapter{Before and After Projection}
+
+Quantum mechanics is usually presented in its own native language: complex
+Hilbert spaces, operators, amplitudes, unitary evolution, and the Born rule.
+MTT does not deny this language. It asks whether the language describes the
+visible side of a richer construction.
+
+Before projection, the proposed MTT reference system contains geometric
+carriers, shared phase, orientation memory, spectral modes, and admissible
+flows. After projection, some combinations may be represented as quantum
+states and observables. The hope is that rules that look postulated in the
+quantum description will become compatibility conditions of the upper
+structure.
+
+There are suggestive correspondences. A spectral subspace resembles a space
+of allowed states. A projector resembles a quantum alternative. A connection
+supplies phase transport. A double cover supplies spinorial behavior.
+Noncommuting effective observables might arise from incompatible reductions.
+Stable sectors resemble superselection sectors.
+
+Correspondence is not derivation. To recover quantum mechanics, MTT must
+produce the complex Hilbert structure, observables, composition rules,
+dynamics, and probability functional with the correct operational meaning.
+The present mathematical-language program is searching for precisely this
+preprojection object: a common carrier from which Dirac, Weyl, Clifford,
+twistor, quantum, field-theoretic, and geometric charts descend without being
+inserted independently.
+
+The advantage of looking before projection is conceptual economy. An awkward
+rule in one chart may be a simple relation in the common carrier. The danger
+is equally clear: one can always rename familiar quantum objects as
+projections without explaining anything. The test is whether the upper
+language forces relations that were independent below and makes new,
+held-out predictions.
+
+\chapter{Measurement Is an Ordinary Physical Process}
+
+Measurement is often given a starring role in discussions of quantum theory.
+In the interpretation pursued here, it should not be privileged. A
+measurement is a physical interaction that leaves a usable record. It is not
+a special act by consciousness and not a metaphysical boundary where nature
+changes its laws.
+
+An atom interacting with a detector, a photon scattering from dust, and a
+laboratory apparatus amplifying a microscopic difference are all physical
+processes. Some are called measurements because an observer later uses the
+record. The underlying event does not know that it belongs in an experiment.
+
+MTT can describe such an event as a disturbance followed by physical
+continuation into a stable record sector. The apparatus, environment, and
+system are parts of the same carrier. Projection can explain why an effective
+description loses access to some upper distinctions. Fixed-point and
+admissibility ideas can help explain why records become robust.
+
+None of this supplies probabilities automatically. The number or volume of
+stable basins depends on how states are measured and weighted. The Born rule
+requires a specific state functional and measurement instruments, or a
+theorem showing that the MTT weights equal quantum trace probabilities in the
+full relevant class of experiments.
+
+Nor can a deterministic upper story simply ignore Bell's theorem. If MTT
+eventually provides a deeper deterministic account, it must say exactly where
+Bell factorization fails: perhaps through contextuality, global boundary
+consistency, nonseparability, or another explicit mechanism. It must preserve
+the observed no-signaling structure.
+
+\begin{plainsummary}
+Measurement is not the source of reality. It is one ordinary way physical
+systems interact and create records. The unresolved question is why the
+statistics of those records obey the Born rule.
+\end{plainsummary}
+
+\chapter{Quantum Field Theory and Locality}
+
+Quantum field theory combines quantum rules with locality, relativity, gauge
+symmetry, and renormalization. Reconstructing its particle data is not the
+same as deriving the theory.
+
+At the current Standard Model tier, MTT supplies a finite representation and
+response architecture, then uses standard BRST/Faddeev--Popov quantization and
+multi-loop transport. This is the correct procedure for testing profile
+equivalence. It also marks the boundary: the path integral, gauge complex,
+and interacting continuum theory are not yet consequences of projection.
+
+Locality is a particularly important test. A reduction performed separately
+over each spacetime point can preserve the locality of an upper local theory
+when the selected sector is invariant. By contrast, an instantaneous kernel
+that reaches across space does not become causal merely because its leading
+differential operator looks hyperbolic. A local mediator or a genuinely
+causal retarded kernel is needed.
+
+This is where MTT's insistence on typed maps helps. A relation between distant
+records may be global in the upper state without permitting a controllable
+signal to propagate faster than light. But that sentence is only an
+interpretation until a state space, local algebra, dynamics, and no-signaling
+proof are supplied.
+
+The long-term goal is a common source from which the finite particle
+architecture and the continuum quantum field theory descend together. That
+would turn present profile equivalence into a deeper physical equivalence.
+
+\chapter{Strings, Worldsheets, and Fu--Yau Geometry}
+
+String theory provides one of the richest existing languages for connecting
+geometry, quantum fields, gauge structure, and extra dimensions. MTT has much
+to learn from it. The relationship is not that MTT has already contained or
+replaced string theory.
+
+The proto-spinor and worldsheet constructions identify a local bridge between
+two descriptions near an aligned configuration. When their quadratic
+responses are intertwined, they agree to controlled local order. This gives a
+mathematical reason why a two-dimensional worldsheet language may encode some
+proto-spinor dynamics.
+
+A complete string theory requires much more: Weyl and modular consistency,
+ghosts, spin structures, anomaly cancellation, beta functions, unitarity,
+and target-space matching. Those obligations do not disappear because two
+local Hessians agree.
+
+The strongest established meeting point is Fu--Yau/Hull--Strominger geometry.
+It supplies genuine heterotic flux compactifications on non-Kahler spaces.
+The q79 branch lives naturally in this setting. MTT can therefore use mature
+string-geometric tools while asking a different selection question: why this
+carrier, this cover, and these finite responses?
+
+Fixed-point methods may also be useful to string theory in their own right.
+They provide a disciplined way to ask whether a chosen compactification,
+bundle, or flow returns to a stable admissible sector and whether a finite
+truncation remains controlled. This is a potential contribution even before
+MTT becomes a complete physical theory.
+
+\part{Gravity, Time, and the Larger Story}
+
+\chapter{Gravity as Closure Strain}
+
+The original book pictured gravity as the elastic response of the common
+medium. That remains one of MTT's most intuitive ideas, provided it is stated
+carefully.
+
+Imagine that the upper carrier has preferred relations among its internal
+directions. Matter and quantum fields disturb those relations. The carrier
+responds by changing the geometry through which visible processes propagate.
+From the projected four-dimensional viewpoint, that response can look like
+curved spacetime.
+
+The world-in-world strain field gives this analogy real mathematical
+content. It separates rotation from deformation and identifies scalar,
+shape, and shear responses. The closure Hessian measures the local cost of
+such deformations on a declared slice. The q79 and finite-operator work
+provides candidate internal sources and modes.
+
+But elasticity is not yet Einstein gravity. A physical theory must supply a
+Lorentzian metric, gravitational action or equations, constraints,
+stress-energy coupling, causal initial-value problem, and normalization of
+Newton's constant. It must show that unwanted internal modes do not spoil the
+four-dimensional equations or quantify the error when they are eliminated.
+
+The current ten-dimensional action paper is therefore an ansatz on a stated
+regime, not a final derivation. It includes familiar gravitational, gauge,
+matter, and flux ingredients so that the reduction can be studied. The next
+step is to select that action from the common geometry rather than choose it
+because it has the desired low-energy form.
+
+\begin{plainsummary}
+MTT's picture is not ``gravity is a new force in an elastic substance.''
+It is that the geometry seen as gravity may be the visible response of a
+richer constrained carrier to physical stress.
+\end{plainsummary}
+
+\chapter{What This Means for Quantum Gravity}
+
+The phrase ``quantum gravity'' can suggest that one must take the classical
+gravitational field and quantize it in the same way as another field. MTT
+points toward a different emphasis. Quantum fields and quantized actions may
+already be modes of the common carrier. Their activity places stress on that
+carrier, and the geometric response is what the lower description calls
+gravity.
+
+In this picture one is not ignoring quantum gravity. One is relocating the
+problem. The key object is the joint quantum-geometric response of the upper
+system, not a classical metric treated in isolation. A graviton could still
+appear as a small coherent excitation of the effective geometry, while the
+fundamental ontology is the larger response system.
+
+This approach offers hope because it may avoid forcing incompatible
+descriptions together at the wrong level. The ultraviolet behavior of a
+projected field can be softened by internal spectra, finite projections, and
+nonlocal form factors that arise from a local higher structure. The q79
+geometry and finite spectral algebra provide concrete tools for exploring
+that possibility.
+
+The Planck scale remains essential. It marks the regime where the effective
+separation between matter on spacetime and the spacetime response can no
+longer be trusted. In MTT language, it may be the scale at which internal and
+external response channels can no longer be reduced independently. This is
+an interpretation, not a derived numerical Planck scale.
+
+Filtered propagators can make selected integrals finite. That alone does not
+establish a UV-complete theory. Unitarity, causality, gauge consistency,
+constructive existence, and physical observables must all survive. The
+current QG work has useful conditional models and exact support packets, but
+the older claim of completed all-loop finite and unitary quantum gravity is
+withdrawn.
+
+\chapter{Time, Phase, and the Direction of a Branch}
+
+Time is easy to confuse with any ordered parameter. A smoothing procedure has
+an order. Renormalization has a scale order. A circle has an angular order.
+A proof can proceed step by step. None of these is automatically physical
+time.
+
+In the current MTT completion, physical time belongs to the noncompact
+Lorentzian spacetime description. It is the parameter along which causal
+evolution is posed. The shared circle carries phase or holonomy. A physical
+clock can link elapsed time to repeated phase, but the phase cycle and time
+remain different objects.
+
+The branch idea adds another layer. The underlying equations or global
+carrier may admit more than one orientation or completion. Our universe may
+occupy one branch selected by initial or boundary data. The existence of an
+opposite mathematical branch does not require it to be physically realized,
+stable, or well behaved. It is similar to an equation allowing time-reversed
+solutions while the observed universe has a thermodynamic arrow.
+
+The binary $+i/-i$ choice and the double-cover structure make this question
+especially natural in MTT. Perhaps both orientations belong to the full
+carrier while one is visible after branch selection. Perhaps a double
+traversal is needed for complete closure, with one traversal corresponding to
+the experienced branch. Or perhaps a global obstruction selects one sign.
+These are distinct possibilities and should not be merged before the relator
+and source theorems decide among them.
+
+An arrow of time also needs more than a branch label. It requires an
+asymmetric state, law, or boundary condition. A stabilization function can
+orient a mathematical flow, but physical entropy requires a state, measure,
+and coarse-graining. The two may eventually be connected by the common
+carrier.
+
+\chapter{Memory, Entropy, and Cosmology}
+
+The phrase ``the universe has a bad memory'' captures an important
+interpretive theme. A projected world may retain only part of its upper
+history. Many distinct microscopic routes can merge into one stable visible
+record. The universe can be lawful without carrying a readable copy of every
+detail in every effective description.
+
+This limited memory may help explain why entropy and irreversibility appear.
+As correlations spread into degrees of freedom unavailable to a chosen
+projection, reconstructing the earlier visible state becomes increasingly
+difficult. Yet information loss in an effective description is not
+fundamental destruction. Whether the upper dynamics is reversible, how states
+are weighted, and what information remains globally are separate questions.
+
+The original book extended this picture into a grand cosmology: a Great
+Coherence replacing the Big Bang, inflation as relaxation, dark matter as
+modal solitons, baryogenesis from geometry, and renewal after heat death.
+These remain imaginative scenarios, not current results.
+
+A credible MTT cosmology must begin with the selected action and a valid
+cosmological solution. It must identify initial or boundary data, derive the
+background expansion, calculate perturbations, transport them to observable
+spectra, and compare them with data without using those data to select the
+same branch.
+
+The interpretive picture is still useful. The early universe would be a
+regime in which the separation between internal and visible descriptions was
+changing rapidly. Inflation could correspond to a controlled relaxation only
+if the resulting perturbations and reheating follow. Dark sectors could be
+modes that interact gravitationally while remaining outside the ordinary
+finite particle carrier. These are questions the eventual action can answer.
+
+\part{What the Mathematics Has Actually Secured}
+
+\chapter{Fixed Points Without the Formalism}
+
+A fixed point is a state that returns to itself under a stated operation.
+This simple idea appears throughout MTT because stable physical descriptions
+must survive repeated comparison and reduction.
+
+There are several different notions hiding behind the phrase. A projected
+time step may return a state after one cycle. A continuous flow may have an
+equilibrium that never moves. A statistical system may have an invariant
+distribution even though individual states fluctuate. A curved family of
+spectral subspaces may track a moving center rather than one fixed point.
+
+The six Fixed Points papers separate these cases. The first establishes the
+analytic setting, well-posedness, projectors, existence and uniqueness routes,
+and finite approximation. The second studies the supplied four-plus-six
+realization. The third treats deterministic disturbances, noise, and damping.
+The fourth follows curved spectral clusters and leakage. The fifth studies
+covariance, correlation, and exit risk. The sixth explains how those results
+fit together and what extra assumptions are needed for physical
+interpretation.
+
+The important lesson is not that everything in nature is literally a fixed
+point. It is that claims of stability can be decomposed into checkable
+questions. Does the evolution exist? Does it remain in the admissible domain?
+Does some state return? Is it unique? Is it an equilibrium or only a
+stroboscopic return? How large can disturbances become before the reduction
+fails?
+
+This framework is one of MTT's most mature contributions. It can be used in
+other settings, including compactification and effective-field-theory
+problems, without accepting every physical interpretation in this book.
+
+\chapter{The Strongest Results in Plain Language}
+
+Several achievements now stand independently of the grand interpretation.
+
+\section*{A reusable analytic spine}
+
+The Foundation and Fixed Points series give a dimension-neutral language for
+spectral selection, stable evolution, controlled disturbances, curved
+projectors, covariance, and exits from an admissible regime. Earlier
+conflations among stabilization time, physical time, and renormalization
+scale have been removed.
+
+\section*{An exact local geometry}
+
+The world-in-world comparison field has a precise nine-component
+decomposition into rotation and strain. With a selected flag, the six strains
+split into one scalar, two diagonal shapes, and three shears. This is an exact
+mathematical result, although its physical identification remains
+conditional.
+
+\section*{A selected global candidate}
+
+The q79 degree-three cover supplies an exact one-two-three trace carrier,
+finite arithmetic selection, local signed-sheet spin data, and a developed
+Fu--Yau/HYM setting. It is not merely the old Lens--Nil model under a new
+name.
+
+\section*{A broad Standard Model reconstruction}
+
+The finite algebra, response matrix, flavor and mixing profiles,
+electroweak/Higgs/threshold rows, finite Dirac operator, multi-loop transport,
+and precision covariance form one audited construction. Embedded
+renormalized Standard Model equivalence is closed at the adopted
+one-shared-physical-primitive/profile tier.
+
+\section*{A culture of correction}
+
+Several attractive claims have been rejected by the program's own
+verification: the extra-circle dimension count, a Lorentzian metric built
+from a positive Gram form, the old few-TeV chain, automatic Born weights,
+literal identity of Lens--Nil and q79 topology, and completed Gaussian
+quantum gravity. Retiring a failed claim narrows the theory toward what can
+actually survive.
+
+\chapter{What Has Not Yet Been Secured}
+
+The remaining work is not one vague demand to ``finish the theory.'' It has
+specific layers.
+
+\section*{Connect the local and global geometry}
+
+The world-in-world strain carrier and q79 trace carrier need one global map
+that preserves their frames, metrics, connections, response operators, and
+normalized overlaps. Without it, they are two promising constructions with a
+shared rank pattern.
+
+\section*{Decide the global spin branch}
+
+The local double-cover relations are known. The remaining global loops must
+be lifted and their central signs checked. The result may be strict Spin,
+SpinC with shared-circle cancellation, or an obstruction to the intended
+branch.
+
+\section*{Select one action and value source}
+
+One microscopic q79/Fu--Yau source should emit the normalized modes,
+couplings, thresholds, and response rows used downstream. It must do so
+without importing the values it is meant to explain.
+
+\section*{Promote reconstruction to prediction}
+
+The current Standard Model result is broad profile equivalence. The upgrade
+is to freeze the source and predict held-out quantities. A theory with one to
+three genuinely selected primitives could still be a major reduction; zero
+knobs is an aspiration, not a rule imposed on nature.
+
+\section*{Recover quantum probability and continuum dynamics}
+
+MTT needs a state and measurement framework whose probabilities equal the
+Born rule, together with a derivation or controlled recovery of the continuum
+quantum field theory and its gauge structure.
+
+\section*{Derive gravity and cosmology from the same source}
+
+The selected action must produce the Lorentzian equations, constraints,
+stress response, Planck normalization, controlled four-dimensional
+reduction, cosmological solutions, perturbations, and observables.
+
+\chapter{How the Program Can Fail}
+
+A useful fundamental proposal must expose itself to failure. MTT can fail in
+several concrete ways.
+
+The q79 loops may obstruct the desired global spin structure. The
+world-in-world and q79 carriers may not admit a connection-preserving bridge.
+The selected action may fail anomaly cancellation or consistent reduction.
+The normalized overlap rows may miss the locked Standard Model profile. The
+apparent parameter reduction may disappear when every branch and
+normalization choice is counted. The proposed preprojection quantum language
+may fail to recover the Born rule or locality. The gravitational reduction
+may produce extra fields or incorrect observables.
+
+There is also a broader danger: underdetermination. Many different upper
+constructions can be designed to reproduce the same lower data. Agreement
+then proves that a model is capable of representing nature, not that nature
+must use that model. MTT advances only when one source ties previously
+independent sectors together or predicts something held out.
+
+This is why the current status language matters. A conditional theorem is a
+real theorem on its assumptions. A reconstruction is a real consistency
+achievement. A calibrated profile is a successful replay. A prediction is a
+different object. The categories are not a ranking of worth; they answer
+different questions.
+
+\begin{plainsummary}
+The theory succeeds only if common source relations replace independent
+inputs. A beautiful reinterpretation of known numbers is not enough.
+\end{plainsummary}
+
+\part{A Reader's Map}
+
+\chapter{Where to Find the Mathematics}
+
+This book intentionally leaves the proofs elsewhere. The following map points
+to the papers that own the main results.
+
+\begingroup
+\small
+\begin{longtable}{L{0.27\textwidth}L{0.59\textwidth}}
+\textbf{Question} & \textbf{Technical owner}\\\hline
 \endfirsthead
-Framework & Current relation & Missing promotion\\\hline
+\textbf{Question} & \textbf{Technical owner}\\\hline
 \endhead
-General Relativity & Conditional physical completion and reduction target &
-Selected action, consistent truncation, stress response, and observables.\\
-Quantum Mechanics & Interpretive reconstruction bridge & Born functional,
-measurement instruments, and full equivalence.\\
-QFT/AQFT & Conditional reconstruction with locality descent & Continuum
-interacting theory, states, renormalization, scattering, and anomalies.\\
-Standard Model & Embedded renormalized-SM equivalence at profile standard &
-Strict no-knob source and unique observed-branch selection.\\
-Effective Field Theory & Schur--Feshbach and mode-reduction template &
-Nonlinear error, symmetry, power counting, matching, and RG control.\\
-Kaluza--Klein theory & Conditional internal-mode reconstruction & Selected
-compactification, warping, mixing, and stabilized moduli.\\
-Noncommutative geometry & Selected finite-algebra realization & Full spectral-
-triple axioms and unique geometric source where not already certified.\\
-String/Calabi--Yau & Encoding and reconstruction program & Complete worldsheet
-consistency, dualities, branes/fluxes, and low-energy matching.\\
-Hull--Strominger and Fu--Yau & Conditional solution-slice reconstruction & Unique
-selected background and same-source operator/value emission.\\
-Quantum gravity & Open conditional program & Unitarity, causality, continuum
-existence, BRST/BV, and physical observables.\\
-LQG, causal sets, asymptotic safety & Interpretive or conditional bridges &
-Explicit controlled maps and bidirectional observable equivalence.\\
+What is the abstract MTT architecture? &
+\emph{Modal Triplet Theory: Foundations}.\\
+When do projected states exist, persist, or become unique? &
+\emph{Fixed Points I--VI}, with each paper retaining its standalone
+hypotheses and scope.\\
+When does upper dynamics descend or permit recovery? &
+\emph{The Projection--Admissibility Principle}.\\
+What is known about four-plus-six signature compatibility? &
+\emph{Lorentzian Base Compatibility and Signature Stability}.\\
+What is the exact local $3$-by-$3$ and one-two-three geometry? &
+\emph{World-in-World Genesis} and \emph{Closure-Strain Geometry}.\\
+What is the proto-spinor result? &
+\emph{The Proto-Spinor: Conditional Spinorial Closure and the q79
+Interface}.\\
+What is the selected global compactification candidate? &
+The q79, Fu--Yau, HYM, spin-lift, and foundational-geometry packets.\\
+What action is currently available? &
+\emph{Closure Geometry and a Regime-Local Ten-Dimensional Action Ansatz}.\\
+What is the current Standard Model closure tier? &
+The consolidated True SM Closure ledger and its finite-operator,
+multi-loop, and precision certificates.\\
+What happened to the few-TeV chain? &
+The corrected Theta Closure and Execution papers.\\
+How are relationships to other theories typed? &
+\emph{Modal Triplet Theory: A Typed Relationship Atlas}.\\
 \end{longtable}
+\endgroup
 
-Multiple MTT realizations reproducing the same target data create
-underdetermination.  Agreement proves realizability, not inevitability.  A
-canonical source theorem must select among inequivalent realizations.
+\chapter{A Small Status Guide}
 
-\part{What Has Been Achieved and What Comes Next}
+The reader can understand most of the current program with three labels.
 
-\chapter{The Genuine Achievements}
+\begin{description}
+\item[Established within the stated model.] A mathematical result has been
+proved or exactly verified once its assumptions and selected carrier are
+supplied. Examples include the local strain decomposition, several
+fixed-point and control results, finite algebra checks, and exact q79 branch
+packets.
 
-\section{Methodological}
+\item[Reconstructed at a declared tier.] A familiar physical framework or
+data profile is reproduced after specified physical inputs are admitted. The
+current Standard Model result belongs here at the
+one-shared-physical-primitive/profile tier.
 
-MTT now has a disciplined separation of assumptions, conditional theorems,
-reconstructions, profiles, and predictions.  This sounds modest, but it
-prevents dozens of attractive category errors and makes the program auditable.
+\item[Interpretive or open.] The mathematics suggests a physical picture, but
+the source map, dynamics, probability law, or observable test is incomplete.
+The deepest claims about particles, quantum ontology, gravity, time, and
+cosmology still contain work of this kind.
+\end{description}
 
-\section{Functional analytic}
+These labels keep the book readable without pretending that every sentence
+has the same logical status.
 
-The corrected Foundation and Fixed Points series provide a reusable framework
-for vertical spectral reduction, nonnormal-safe damping, multiple existence
-and uniqueness routes, curved-projector persistence, leakage, covariance, and
-admissibility exits.
+\chapter{Afterword: One Coherent World}
 
-\section{Geometric}
+The original book was driven by a simple dissatisfaction. Physics should not
+look like a cabinet of unrelated rules. Particles, forces, quantum states,
+spacetime, and measurement all belong to one world. A deeper theory should
+show why their descriptions fit together.
 
-The local $3\times3$ comparison carrier and its exact $3+6$ and $1+2+3$
-decompositions are verified.  The q79 degree-three cover supplies a separate
-global $1+2+3$ trace carrier, exact local signed-sheet spin data, and a
-developed Fu--Yau/HYM branch.  The missing bridge is now finite and explicit.
+That dissatisfaction still drives MTT. What has changed is the understanding
+of how difficult the task is. A recurring number is not an explanation. A
+fixed point is not automatically an equilibrium. A phase circle is not time.
+A local double cover is not a global particle theory. A successful matrix
+reconstruction is not yet the unique source of its entries. A softened
+propagator is not quantum gravity.
 
-\section{Computational}
+These corrections do not empty the picture. They reveal its strongest form.
+MTT now has a reusable analytic spine, an exact local comparison geometry, a
+selected global q79/Fu--Yau candidate, a finite operator architecture, and a
+broad Standard Model reconstruction at a declared tier. More importantly, it
+has a short list of maps that would tie these achievements together.
 
-The selected finite-algebra and $27\times27$ architecture pass extensive exact
-and numerical checks.  Embedded renormalized-SM equivalence closes at the
-declared one-shared-primitive/profile standard, including multi-loop precision
-transport and covariance.  This is unusual in breadth for a speculative
-framework, even though it is not yet no-knob prediction.
-
-\section{Epistemic}
-
-Several former claims were disproved or retired: the right-inverse argument,
-Lorentzian Gram metric, extra-circle dimension count, few-TeV chain, independent
-weak-angle test, literal Lens--Nil/q79 identity, and automatic Born/QG claims.
-Finding and correcting these failures is part of the achievement.
-
-\chapter{The Decisive Frontier}
-
-The next work should follow this order.
-
-\section{Global q79 spin decision}
-
-Lift a presentation of the q79 branch complement and compute the central sign
-of every relator.  This decides strict Spin closure.  If the obstruction does
-not vanish, state the SpinC alternative without relabeling it as Spin.
-
-\section{World-in-world to q79 intertwiner}
-
-Construct $\mathfrak I_{\mathrm{WW}\to q79}$ with transition, metric,
-connection, Hessian, retarded, and overlap compatibility.  This is the most
-important foundational bridge for the numerical program.
-
-\section{One selected action source}
-
-Use one q79/Fu--Yau action, gauge fixing, regulator, scale, and scheme to emit
-normalized zero modes and all required finite response rows.  Verify the
-discarded equations or a reduction error bound.
-
-\section{Strict value and branch selection}
-
-Freeze the source before looking at the held-out data.  Count continuous and
-discrete inputs honestly.  Then test future or unused common-scheme observables
-with uncertainty and a preregistered acceptance rule.
-
-\section{Probability and quantization}
-
-Construct the measure/state and prove, or falsify, a basin--trace equality.
-Derive the BRST and path-integral structure from MTT only if one common source map
-actually produces it.
-
-\section{Gravity and cosmology}
-
-After the action is selected, derive the Lorentzian equations, constraints,
-stress response, Planck normalization, cosmological backgrounds, perturbations,
-and observables.  Interpretive cosmology comes last, not first.
-
-\chapter{Falsifiability Without Promotional Predictions}
-
-MTT can fail before new experimental data arrive:
-
-\begin{itemize}
-\item the q79 relator signs may obstruct the desired strict Spin lift;
-\item no global connection-preserving $1+2+3$ intertwiner may exist;
-\item the selected action may fail consistent truncation or anomaly control;
-\item normalized source rows may miss the locked profile;
-\item parameter counting may collapse back to the SM input count;
-\item the basin--trace or locality bridge may be impossible; or
-\item independent held-out observables may disagree with the frozen branch.
-\end{itemize}
-
-A genuine empirical prediction must list every datum used in geometry,
-normalization, scheme choice, branch choice, and parameter fitting.  Agreement
-with a value used anywhere in that chain is a profile check or postdiction.
-
-\chapter{An Interpretive Picture That Survives}
-
-The surviving picture is quieter than version~9 and more interesting.
-Physical descriptions may be stable projections of richer geometric and
-operator data.  Different theories may be charts or reconstructions on
-overlapping domains without one being literally contained in another.
-Triplet structure can be a selected rank filtration rather than a mystical
-universal number.  The shared circle can coordinate phase without becoming
-time.  Particles can be studied as stable excitations without pretending that
-stability alone determines their quantum numbers.  Gravity can be compared to
-strain response after an action is supplied.  Measurement can be modeled as a
-physical interaction without announcing a derivation of probability.
-
-This interpretation is useful because each sentence points to a theorem that
-could be built.  It asks for maps instead of resemblance, sources instead of
-fitted rows, and observables instead of slogans.
-
-\chapter{Afterword}
-
-MTT is no longer best described as ``one field, three filters, one inequality,
-one inevitable world.''  The current program is richer:
+The interpretive proposal can therefore be stated without spectacle:
 
 \begin{quote}
-One typed spectral architecture; several exact internal modules; one selected
-q79/Fu--Yau and finite-algebra branch; a closed renormalized-SM profile
-equivalence; and a short list of decisive bridges still to prove.
+Reality may admit a richer geometric and spectral description in which the
+stable theories we use are compatible projections. The recurring
+one-two-three structures may be stages of one shared carrier. Particles may
+be persistent modes, gauge forces rules of comparison, and gravity the
+visible response of the carrier to physical stress. The current mathematics
+supports parts of this picture and tells us exactly which bridges remain.
 \end{quote}
 
-That statement gives up inevitability but gains contact with mathematics.  It
-also preserves the original impulse of the book: physics should become more
-coherent as its hidden assumptions are exposed.  The next success will not be
-another sweeping interpretation.  It will be one of the missing maps actually
-constructed and independently checked.
-
-\appendix
-
-\chapter{Current Claim Ledger}
-
-\begin{longtable}{L{0.41\textwidth}L{0.20\textwidth}L{0.27\textwidth}}
-Claim & Current status & Controlling boundary\\\hline
-\endfirsthead
-Claim & Current status & Controlling boundary\\\hline
-\endhead
-Hilbert-bundle spectral/control spine & Conditional theorem & Operator domains,
-commutation, gaps, invariant domains.\\
-Projected fixed points & Conditional theorem & Existence route and fixed-point
-type must be stated.\\
-Equilibrium promotion & Conditional theorem & Strict Lyapunov or equivalent
-stationarity gate.\\
-$4+6$ physical realization & Canonical input & Not derived from abstract MTT.\\
-$3\times3=3+6$ local split & Proved & Nonsingular comparison background.\\
-$1+2+3$ strain split & Proved with flag & Flag is selected input/source.\\
-q79 $1+2+3$ trace carrier & Selected theorem & Degree-three cover.\\
-Local $\operatorname{Dic}_3$ lift & Proved & Strict global relators still open.\\
-Fu--Yau/HYM branch & Selected realization & Rank-two literal continuum witness;
-stronger transfer/uniqueness guarded.\\
-Finite matrix and Dirac operator & Closed at profile tier & Selected finite
-representation and profile rows.\\
-Embedded renormalized SM & Closed at one-shared-primitive/profile standard &
-Measured profile and imported SM quantization admitted.\\
-Strict no-knob SM & Open upgrade & Unique source and branch selection.\\
-Born rule & Open & Measure/state and basin--trace theorem.\\
-Einstein gravity & Conditional completion & Selected Lorentzian action and
-controlled reduction.\\
-UV-complete quantum gravity & Open & Full constructive, causal, gauge, and
-unitarity obligations.\\
-Cosmological origin scenario & Interpretation & Selected solution and
-observable pipeline absent.\\
-\end{longtable}
-
-\chapter{Notation and Guardrails}
-
-\begin{description}
-\item[$\Mten\to\Yfour$.] Canonical supplied physical bundle with compact
-six-dimensional fiber $\Xsix$.
-\item[$\WW$.] Rank-three world-in-world comparison field; never the
-noncoherent projector.
-\item[$\Pcoh$.] Joint coherent spectral projector.
-\item[$\Qinc$.] Complementary noncoherent projector $I-\Pcoh$.
-\item[$\tau,t,\mu$.] Stabilization, physical time, and RG scale; distinct by
-default.
-\item[$\Lshared$.] Common phase/holonomy line; not an extra dimension or time.
-\item[$\Soff$.] Real symmetric off-diagonal strain subspace; distinct from
-the structure sheaf $\mathcal O$ used in the q79 carrier.
-\item[$\mathcal A,\Atrace$.] Rank-three q79 cover algebra and its rank-two
-trace-zero summand.
-\item[$\Hq$.] Shared q79 rank-six $1+2+3$ carrier.
-\item[Profile standard.] A reconstruction tier admitting measured
-renormalized coordinates and one shared physical primitive.
-\item[Strict standard.] A source-selected, no-target-input theorem with a
-frozen branch and held-out validation.
-\end{description}
+This book is an invitation to see that possibility. The proofs, failures, and
+decisions belong to the research papers. The next decisive advance will come
+when one of the missing bridges is constructed from the same source and
+survives an independent test.
 
 \backmatter
 
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The Book is interpretive and proves no theorem. The closed, profile, and certified-numerical rows below are used directly only as examples of what the technical corpus currently contains. Their tier labels are preserved verbatim, and the open strict-upgrade ledger is presented as unfinished work rather than an achievement.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/charged_yukawa_higgs_profile} (\emph{profile replay}).\par Versioned Yu, Yd, Ye and lambda\_H profile packet.
+\item \path{A14/ckm_prediction_profile} (\emph{numeric certified}).\par Three selected CKM profile rows and uncertainty comparison.
+\item \path{A01/current_global_lock} (\emph{profile replay}).\par Current non-looping global status and source-certificate map.
+\item \path{A01/direct_k_higgs_row} (\emph{derived exact}).\par Promoted direct K\_threshold.Omega\_H.lambda row.
+\item \path{A22/e6_qpsi_qcd_anomaly} (\emph{derived exact}).\par E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\item \path{A13/gr_tt_support} (\emph{derived exact}).\par Exact-branch internal TT support certificate; physical normalization remains open.
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A07/literal_cech_witness} (\emph{derived exact}).\par Literal 81-entry, 729-cocycle finite Cech witness.
+\item \path{A40/neutral_two_primitive_profile} (\emph{profile replay}).\par Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+\item \path{A02/precision_15_source_transport} (\emph{profile replay}).\par Fifteen measured source coordinates, Jacobian and covariance transport.
+\item \path{A02/precision_8x8_workspace} (\emph{profile replay}).\par Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+\item \path{A11/q79_exact_audit} (\emph{derived exact}).\par Executable q=79 exact-branch audit.
+\item \path{A11/q79_exact_theorem} (\emph{derived exact}).\par CRT q=79 theorem on the selected exact branch.
+\item \path{A01/qutrit_weyl_27_matrix} (\emph{derived exact}).\par Sparse 27x27 qutrit-Weyl left-action realization.
+\item \path{A01/strict_pew_row} (\emph{derived exact}).\par Promoted P\_EW source row at the declared one-shared-primitive standard.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
+
 \chapter{References}
+
+
 
 \begin{thebibliography}{99}
 
@@ -1000,7 +1362,7 @@ frozen branch and held-out validation.
 P.~Nero, \emph{Modal Triplet Theory: Foundations}, version~7, 2026.
 
 \bibitem{FixedPoints2026}
-P.~Nero, \emph{Fixed Points I--VI}, corrected editions, 2026.
+P.~Nero, \emph{Fixed Points I--VI}, corrected standalone editions, 2026.
 
 \bibitem{Projection2026}
 P.~Nero, \emph{The Projection--Admissibility Principle: Descent, Recovery,
@@ -1062,5 +1424,7 @@ S.~Weinberg, \emph{The Quantum Theory of Fields}, Cambridge University Press,
 1995--2000.
 
 \end{thebibliography}
+
+
 
 \end{document}

@@ -1,65 +1,93 @@
 {
-  "abstract": "Modal Triplet Theory (MTT) describes observable physics as arising from projection onto admissible coherent sectors of a higher\u2013dimensional modal geometry. Within this framework, many quantities that are traditionally treated as independent or fundamentally distinct\u2014inertia, gravitational coupling, mass generation, time ordering, and family multiplicity\u2014arise as shadows of a single shared internal structure. In this paper we identify and analyze that structure: the central circle S^1_{\\mathrm{cen}}, the unique internal component reused across all modal bundles in MTT. We argue that the spectral rigidity and universality of this circle force it to act as a global coherence bookkeeping channel. Distinct physical phenomena then emerge as different projections of the same underlying constraint: inertia as the cost of bending coherent histories, gravity as the spatial redistribution of coherence capacity, time as the monotonic ordering induced by noninvertible projection, and fermion families as holonomy sectors of the same circle. Each topic is developed in two stages. We first review the conventional understanding in standard physics, highlighting conceptual tensions and open questions. We then provide an MTT-based explanation centered on the role of the central circle, followed by a technical formulation showing how familiar results\u2014including F=ma, the equivalence of inertial and gravitational mass, and the Einstein field equations\u2014appear as constraint-preserving consistency conditions within the corresponding admissible encodings. Detailed derivations are collected in appendices. The purpose of this work is not to introduce new dynamics, but to make explicit a unifying structure that is already implicit across the MTT corpus. By isolating the role of the central circle, we clarify why mass, inertia, gravity, and time exhibit the universality and rigidity observed in nature, and why their standard descriptions break down coherently at admissibility boundaries such as horizons and selection fronts.",
+  "abstract": "Modal Triplet Theory repeatedly uses a common circle in its bundle, proto-spinor, finite-operator, and compactification descriptions. This paper states what that circle currently means and what it does not yet explain. Its rigorous role is common phase and holonomy data carried by a Hermitian line bundle with connection. On the selected q79 finite symbol, one universal flat line pulls back to the determinant-sign sector, tensors the three trace lanes, and commutes with the finite projectors, complex quarter-turn, and Reynolds-Hessian operator. This is an exact same-source phase-transport result. It neither adds a seventh compact coordinate nor identifies compact phase with Lorentzian time. A physical mass claim still requires a selected Dirac or two-point operator and a dispersion or pole theorem; inertia requires an effective response or worldline coefficient; gravity requires the four-dimensional action and universal stress response; and time requires a Lorentzian evolution and an explicit clock or ordering map. The proposed unification of mass, inertia, gravity, and time is therefore retained as a research program organized by one shared differential line, not as a current derivation of those observables.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18283407",
-    "created": "2026-01-17T19:09:08.006239+00:00",
+    "created": "2026-07-29T08:51:44.801915+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18283408",
+    "doi": "10.5281/zenodo.21666005",
     "files": [
       {
-        "checksum": "md5:c2b5f7c9cb3ea016bc3e0bf867794239",
-        "content_url": "https://zenodo.org/api/records/18283408/files/The_Central_Circle__Inertia__Mass__Gravity__and_Time_as_Shared_Coherence_Bookkeeping_in_Modal_Triplet_Theory%20(3).pdf/content",
-        "key": "The_Central_Circle__Inertia__Mass__Gravity__and_Time_as_Shared_Coherence_Bookkeeping_in_Modal_Triplet_Theory (3).pdf",
-        "size": 497756
+        "checksum": "md5:a355128e62d6137a557d576b0581f99a",
+        "content_url": "https://zenodo.org/api/records/21666005/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 350259
       }
     ],
-    "id": "18283408",
-    "match_kind": "title_or_file",
+    "id": "21666005",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-17",
-    "record_url": "https://zenodo.org/records/18283408",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21666005",
     "resource_type": "publication",
-    "title": "The Central Circle: Inertia, Mass, Gravity, and Time as Shared Coherence Bookkeeping in Modal Triplet Theory",
-    "updated": "2026-01-17T19:09:08.576396+00:00",
-    "version": "v1.0"
+    "title": "The Shared Circle in Modal Triplet Theory: Exact Phase Transport, Interpretive Roles, and Physical Boundaries",
+    "updated": "2026-07-29T08:51:45.294745+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "2d936c90b928278540aa9552579d94e21651c09a5936a28c01adc0175b52d696",
+  "main_tex_sha256": "7ea0f156a75fdaa4e362410f671dbe3deb9e4b3eaee05773990367abdd24eec6",
   "paper_id": "the-central-circle-inertia-mass-gravity-and-time-as-sha-5faa2369",
-  "paper_md_sha256": "4d7b8276a3c3ab380f62edb0eeb7f139d916c42455ba53ce62c4d9a5aaeb8623",
+  "paper_md_sha256": "e794251901b35d6f940aff3da75711636bc14b833b9e697803c939f35f2662bd",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "ed3e322931aa39ad58b3c7434295ddb17239ce932918e9dad14bdfdbe2879e4e",
+    "selected_revision": true,
+    "superseded_source_path": "13 Standard Model & Topology-Only Constraints/_work/The_Central_Circle__Inertia__Mass__Gravity__and_Time_as_Shared_Coherence_Bookkeeping_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 93921,
+      "bytes": 24835,
       "path": "main.tex",
-      "sha256": "2d936c90b928278540aa9552579d94e21651c09a5936a28c01adc0175b52d696"
+      "sha256": "7ea0f156a75fdaa4e362410f671dbe3deb9e4b3eaee05773990367abdd24eec6"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/The_Central_Circle__Inertia__Mass__Gravity__and_Time_as_Shared_Coherence_Bookkeeping_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "8d6806c3189a12a4bea4e9cc2f50706a26eadc314634e9917a23770bcf160de5",
-  "title": "The Central Circle: Inertia, Mass, Gravity, and Time as Shared Coherence Bookkeeping in Modal Triplet Theory",
+  "source_tree_sha256": "f80571964568d713897d4ba86f49c9c92aa82f089b0d4b50d580b6efc20081ed",
+  "title": "The Shared Circle in Modal Triplet Theory: Exact Phase Transport, Interpretive Roles, and Physical Boundaries",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18283407",
+      "created": "2026-07-29T08:51:44.801915+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666005",
+      "files": [
+        {
+          "checksum": "md5:a355128e62d6137a557d576b0581f99a",
+          "content_url": "https://zenodo.org/api/records/21666005/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 350259
+        }
+      ],
+      "id": "21666005",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666005",
+      "resource_type": "publication",
+      "title": "The Shared Circle in Modal Triplet Theory: Exact Phase Transport, Interpretive Roles, and Physical Boundaries",
+      "updated": "2026-07-29T08:51:45.294745+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18283407",
       "created": "2026-01-17T19:09:08.006239+00:00",

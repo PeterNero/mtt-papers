@@ -1,70 +1,98 @@
 {
-  "abstract": "We present a constructive perturbative quantum gravity built from Modal Triplet Theory (MTT). The projected graviton propagator admits a Stieltjes/Bernstein representation, ensuring OS-positivity, unitarity, and causal support. A proper-time coarse-graining (SPT) derived from bounded projectors yields a universal Gaussian damping e^{-\\tau_0 k^2} on every internal graviton line, ensuring all-loop finiteness of graphs containing at least one graviton (due to the universal Gaussian damping on graviton propagators). Purely matter subgraphs renormalize by standard EFT methods and are not claimed UV-finite by this mechanism. BRST/BV consistency is preserved: the quantum master equation holds to all orders for anomaly-free matter content, and gauge-parameter independence is maintained. In the infrared limit, the Bernstein form factor reduces to unity and GR is recovered up to \\mathcal O(\\Box/\\Lambda^2) corrections. In the CY/toroidal corner, modular invariance independently ensures one-loop finiteness. Together these results amount to a rigorous proof (under the SPT factorization hypotheses stated below) that perturbative quantum gravity around MTT fixed points is unitary and causal, and is UV finite to all loop orders for amplitudes with at least one internal graviton line; purely matter subgraphs renormalize by standard EFT methods and are not claimed UV-finite by the SPT mechanism.",
+  "abstract": "This paper isolates the mathematically valid part of a proposed spectral proper-time modification of a transverse-traceless graviton propagator. A positive lower endpoint in an explicitly assumed proper-time measure gives Gaussian Euclidean decay, but it does not follow from a positive internal spectral gap. For a fixed graph, filtered lines control every ultraviolet loop direction exactly when their momentum map has full rank on loop space, equivalently when the unfiltered subgraph is a forest. A nonzero positive Kallen-Lehmann or Stieltjes propagator cannot also have permanent Gaussian decay in the same Euclidean spectral variable. The earlier claims of automatic reflection positivity, causal support, all-loop finiteness, BRST consistency, unitarity, and an MTT-selected ultraviolet completion are withdrawn. The construction remains a conditional Euclidean filter or regulator model.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v4",
-  "date": "January, 2026",
+  "current_version": "v5",
+  "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17077671",
-    "created": "2026-01-21T17:04:35.789297+00:00",
+    "created": "2026-07-29T08:51:21.100693+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18329495",
+    "doi": "10.5281/zenodo.21665988",
     "files": [
       {
-        "checksum": "md5:5a6cf2336f3b05462f232a4d790ee3f2",
-        "content_url": "https://zenodo.org/api/records/18329495/files/Modal_Triplet_Theory__From_MTT_to_a_UV_Finite__Unitary_Quantum_Gravity_v4.pdf/content",
-        "key": "Modal_Triplet_Theory__From_MTT_to_a_UV_Finite__Unitary_Quantum_Gravity_v4.pdf",
-        "size": 543002
+        "checksum": "md5:5f09baf7cedb1dd7d945213fe6fd9f4c",
+        "content_url": "https://zenodo.org/api/records/21665988/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 357557
       }
     ],
-    "id": "18329495",
-    "match_kind": "title_or_file",
+    "id": "21665988",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18329495",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665988",
     "resource_type": "publication",
-    "title": "Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity",
-    "updated": "2026-01-21T17:04:36.600281+00:00",
-    "version": "v4.0"
+    "title": "An SPT-Filtered Euclidean TT Model and Its Conditional Perturbative Properties",
+    "updated": "2026-07-29T08:51:21.506432+00:00",
+    "version": "v5"
   },
-  "main_tex_sha256": "adca935edcce4c549bcfe36b1187676fb975fb820baf20e6a4300a7887b8e935",
+  "main_tex_sha256": "872fb9d53559a8d0ba6e87032639ccdabf2e60d45d1916054265de8d19f42b12",
   "paper_id": "modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0",
-  "paper_md_sha256": "0c7e1e80f254b6920c03218b65260009e3e3f7f960940a59f6b2945a0abd7ebb",
+  "paper_md_sha256": "37845027915825daae882fbcd2c9c11a3afc3fec344554436e226f5137359379",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "cc22e29cfb975f15575717ad0ba857c1c6ed3228b2e31fe936041e8ded7f9b33",
+    "selected_revision": true,
+    "superseded_source_path": "12 Quantum Gravity/_work/Modal_Triplet_Theory__From_MTT_to_a_UV_Finite__Unitary_Quantum_Gravity_v4"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 7650,
+      "bytes": 7665,
       "path": "main.bib",
-      "sha256": "018cd0b25a23e83091fa7bf7a7f1143ecfc28673270293759abc9a063b81b800"
+      "sha256": "e22b2435a184fd466eafa9fd717787017a3fd2a9f1fd925e2f7bb0e48e2729d8"
     },
     {
-      "bytes": 80173,
+      "bytes": 22690,
       "path": "main.tex",
-      "sha256": "adca935edcce4c549bcfe36b1187676fb975fb820baf20e6a4300a7887b8e935"
+      "sha256": "872fb9d53559a8d0ba6e87032639ccdabf2e60d45d1916054265de8d19f42b12"
     },
     {
-      "bytes": 4188,
+      "bytes": 3786,
       "path": "series.sty",
-      "sha256": "9047c3bbfa55deacdb742c6ca479becab6d58e06f07c676ae6084bf2d4f3fcf0"
+      "sha256": "41151b694c539792f80dac6bdcda081c718c26d8a1fd60604e96e5e8792bc982"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "12 Quantum Gravity/_work/Modal_Triplet_Theory__From_MTT_to_a_UV_Finite__Unitary_Quantum_Gravity_v4"
   },
-  "source_tree_sha256": "54d5795724e863e1dfb1e185b6ac8177cc6280088c790ddb95cdc5ac005958e8",
-  "title": "Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity",
+  "source_tree_sha256": "be403111641b39161d1582c27b3a82d0caf15a439e8e5d32f333a7eb9fdce624",
+  "title": "An SPT-Filtered Euclidean TT Model and Its Conditional Perturbative Properties",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.17077671",
+      "created": "2026-07-29T08:51:21.100693+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665988",
+      "files": [
+        {
+          "checksum": "md5:5f09baf7cedb1dd7d945213fe6fd9f4c",
+          "content_url": "https://zenodo.org/api/records/21665988/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 357557
+        }
+      ],
+      "id": "21665988",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665988",
+      "resource_type": "publication",
+      "title": "An SPT-Filtered Euclidean TT Model and Its Conditional Perturbative Properties",
+      "updated": "2026-07-29T08:51:21.506432+00:00",
+      "version": "v5"
+    },
     {
       "concept_doi": "10.5281/zenodo.17077671",
       "created": "2026-01-21T17:04:35.789297+00:00",

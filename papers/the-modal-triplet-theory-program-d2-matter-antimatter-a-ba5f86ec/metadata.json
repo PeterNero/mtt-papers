@@ -1,0 +1,122 @@
+{
+  "abstract": "This paper re-evaluates the proposal that the cosmic matter--antimatter asymmetry is a discrete orientation selection in Modal Triplet Theory (MTT). The current finite MTT construction supplies an explicit particle--antiparticle carrier and exact representation-theoretic consistency checks. That is substantial structural progress, but it is not a source theorem for a nonzero baryon abundance. We prove a finite carrier non-selection theorem: the same conjugation-symmetric particle--antiparticle space and the same baryon-sign observable admit a charge-conjugation-symmetric state with zero asymmetry and branch states with either sign of asymmetry. Carrier geometry, anomaly cancellation, and an available CP-odd phase therefore do not select the state or its population weights. We distinguish two lawful continuations. A branch-state route may postulate or derive a selected asymmetric upper state and then prove its descent. A dynamical route must derive baryon- or lepton-number-changing interactions, CP-odd source terms, nonequilibrium transport or an explicitly declared alternative, and washout control from the selected action. Discrete orientation remains a useful organizing hypothesis, but the present result is a carrier theorem plus a completion and falsification contract. It does not derive the observed baryon-to-entropy ratio.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "July 2026",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.18380139",
+    "created": "2026-07-29T08:52:14.295039+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.21657167",
+    "files": [
+      {
+        "checksum": "md5:8e18b2beb60f37f3191183421153b8ed",
+        "content_url": "https://zenodo.org/api/records/21657167/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 323357
+      }
+    ],
+    "id": "21657167",
+    "match_kind": "published_draft_reconciliation",
+    "match_score": 1.0,
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21657167",
+    "resource_type": "publication",
+    "title": "The Modal Triplet Theory Program D2: Matter--Antimatter Orientation and the Baryogenesis Source Contract",
+    "updated": "2026-07-29T08:52:15.479670+00:00",
+    "version": "v2"
+  },
+  "main_tex_sha256": "05ec296cd03a047f127a56cff3b01e00dcf6d28d5e472ae064318f74ff60a45b",
+  "paper_id": "the-modal-triplet-theory-program-d2-matter-antimatter-a-ba5f86ec",
+  "paper_md_sha256": "2786714b761371fefbf0d2b98a59a2d397966f06a193c43bdb2d9a61bc9704cf",
+  "release_state": "zenodo_released",
+  "result_refs": [],
+  "revision": {
+    "revision_evidence_path": "papers/the-modal-triplet-theory-program-d2-matter-antimatter-a-ba5f86ec/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "27607485c39152926929066dfddbdb93c22f730713059476c95a53ff7d332681",
+    "selected_revision": true,
+    "superseded_source_path": "https://zenodo.org/records/18380140"
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 323357,
+      "path": "main.pdf",
+      "sha256": "f0d2ec82c10e0add68ccf65fd75aaba26cba34bc13b543440a6b503841d2f372"
+    },
+    {
+      "bytes": 23326,
+      "path": "main.tex",
+      "sha256": "05ec296cd03a047f127a56cff3b01e00dcf6d28d5e472ae064318f74ff60a45b"
+    },
+    {
+      "bytes": 4243,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "27607485c39152926929066dfddbdb93c22f730713059476c95a53ff7d332681"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "Zenodo-only PDF record 18380140"
+  },
+  "source_tree_sha256": "6311e14545e5e6dea73b1496aa062713ca8ba53150b081ab0eb70c29eead9f9d",
+  "title": "The Modal Triplet Theory Program D2: Matter--Antimatter Orientation and the Baryogenesis Source Contract",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18380139",
+      "created": "2026-07-29T08:52:14.295039+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21657167",
+      "files": [
+        {
+          "checksum": "md5:8e18b2beb60f37f3191183421153b8ed",
+          "content_url": "https://zenodo.org/api/records/21657167/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 323357
+        }
+      ],
+      "id": "21657167",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21657167",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program D2: Matter--Antimatter Orientation and the Baryogenesis Source Contract",
+      "updated": "2026-07-29T08:52:15.479670+00:00",
+      "version": "v2"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18380139",
+      "created": "2026-01-26T19:28:03.975571+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.18380140",
+      "files": [
+        {
+          "checksum": "md5:38af4aa6afdbe6c7baabb1c2b22699bd",
+          "content_url": "https://zenodo.org/api/records/18380140/files/The_Modal_Triplet_Theory_Program_D2__Matter__Antimatter_Asymmetry_as_Discrete_Orientation_Selection%20(2).pdf/content",
+          "key": "The_Modal_Triplet_Theory_Program_D2__Matter__Antimatter_Asymmetry_as_Discrete_Orientation_Selection (2).pdf",
+          "size": 205664
+        }
+      ],
+      "id": "18380140",
+      "match_kind": "recovered_zenodo_only_record",
+      "match_score": 1.0,
+      "publication_date": "2026-01-26",
+      "record_url": "https://zenodo.org/records/18380140",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program D2: Matter--Antimatter Asymmetry as Discrete Orientation Selection",
+      "updated": "2026-01-26T19:28:05.009910+00:00",
+      "version": "v1.0"
+    }
+  ]
+}

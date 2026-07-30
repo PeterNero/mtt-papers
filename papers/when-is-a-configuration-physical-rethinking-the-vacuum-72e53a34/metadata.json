@@ -48,15 +48,15 @@
       "sha256": "8bd1d842881d1cf59f64b4333159bd3ba8318667d783ffd1cc650ba1a0138b68"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/When_Is_a_Configuration_Physical____Rethinking_the_Vacuum_Selection_Problem"
   },
-  "source_tree_sha256": "ec567e23089752a1bd498bab27c28e5d805f96eed555f818fc3cad78554db5bb",
+  "source_tree_sha256": "6a2a82e293b409a5f3c1d32c3a4fd52124b8efb7c7224218954878554b652202",
   "title": "When Is a Configuration Physical? Rethinking the Vacuum Selection Problem",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

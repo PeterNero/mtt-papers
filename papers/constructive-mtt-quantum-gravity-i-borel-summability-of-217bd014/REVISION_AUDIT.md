@@ -45,3 +45,11 @@ into explicit gates.
 - corrected Constructive MTT Quantum Gravity II;
 - current q79 TT and low-energy gravity ledger status;
 - Gross's abstract Wiener-space construction and Sokal's Borel criterion.
+
+## July 2026 expository review
+
+The selected v2 source now includes a reader map separating fixed-volume measure
+existence, finite-mode interaction, and cutoff removal. It also adds an eigenmode
+variance picture explaining why SPT smoothing constructs the free Gaussian measure
+but does not select or stabilize the nonlinear gravitational interaction. No theorem
+claim or ownership assignment changed in this expository pass.

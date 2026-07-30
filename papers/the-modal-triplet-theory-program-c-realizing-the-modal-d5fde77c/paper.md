@@ -23,23 +23,39 @@ abstract: |
   ```
   The shared circle is line-bundle phase and holonomy data, counted once and not identified with physical time. Equality of the local and global rank profiles does not construct their connection-preserving intertwiner. The physical visible-hidden HYM endpoints, the continuum geometry-to-operator intertwiner, the selected continuum Hessian, the upper action, the general Born source theorem, and the complete worldsheet contract remain open.
 
-  Version 1 correctly emphasized realization nonuniqueness, but several of its stronger claims were invalid. Absence of a global reduced description does not by itself forbid a global coordinate chart; an operator realization need not have discrete spectrum; and saturation does not automatically force extended carriers, worldsheets, or dualities. The old explicit Iwasawa bundle construction and literal Circle–Lens–Nil product topology are quarantined as proof sources. The corrected conclusion is sharper: realizations can establish mathematical existence and compatibility, but nonuniqueness prevents physical prediction until a source law selects one realization and supplies its dynamics and observable map.
+  The resulting conclusion is deliberately typed: realizations can establish mathematical existence and compatibility, but nonuniqueness prevents physical prediction until a source law selects one realization and supplies its dynamics and observable map.
 author:
 - Peter Nero
-current_version: v2
-date: July 2026
-generated_from_main_tex_sha256: 1a4cb7fc6b0e554d2dec3e6b5246497f69f2a775b2540feed268f4a8915c56f4
+current_version: v3
+date: July 2026 Version 3
+generated_from_main_tex_sha256: 31842b7410ca6dfc982f6d7cf0f3fcf24ecba94b85fa886250bd4bdc1a173524
 paper_id: the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c
 release_state: zenodo_released
-released_version: v1.0
+released_version: v3
 title: |
-  The Modal Triplet Theory Program C:  
-  A Typed Dictionary for Geometric, Bundle,  
+  The Modal Triplet Theory Program C:
+  A Typed Dictionary for Geometric, Bundle,
   and Operator Realizations
-zenodo_doi: 10.5281/zenodo.18355143
-zenodo_record_id: 18355143
-zenodo_url: "https://zenodo.org/records/18355143"
+zenodo_doi: 10.5281/zenodo.21655387
+zenodo_record_id: 21655387
+zenodo_url: "https://zenodo.org/records/21655387"
 ---
+
+# Revision note for version 3
+
+<div class="description">
+
+Version 2 of Program C.
+
+The version 2 type dictionary was correct, but its many distinctions between coordinates, bundles, operators, projectors, local strain components, and the q79 carrier were still easy to collapse when read as a theorem list.
+
+Version 3 adds a concrete modal-lane example, a translation workflow, and plain-language explanations of the local $`3\times3`$ decomposition and global $`1+2+3`$ carrier. It sharpens the open connection-preserving intertwiner contract without claiming that the matching ranks construct it.
+
+The joint-projector, compact-resolvent, local decomposition, shared-line, and nonselection statements remain at their version 2 tiers.
+
+The physical realization, action, visible-hidden HYM pair, continuum intertwiner and Hessian, Born source, and complete worldsheet remain open.
+
+</div>
 
 # Revision note for version 2
 
@@ -57,6 +73,50 @@ This paper does not select a physical realization, derive an action or Born rule
 
 </div>
 
+# How to Use Program C
+
+Program C is a translation manual. It should be used whenever an abstract MTT role is assigned a geometric or operator-theoretic realization. The first question is not whether the proposed object has the right informal shape, but whether it has the right mathematical type and whether every required map is defined.
+
+## A concrete modal lane
+
+Take a compact internal space $`X_6`$, a Hermitian vector bundle $`\mathcal E\to X_6`$, and a compatible connection $`\nabla`$. The connection Laplacian
+``` math
+A=\nabla^*\nabla
+```
+is an operator on sections of $`\mathcal E`$, once its domain is declared. If an isolated spectral cluster lies in an interval $`I`$, functional calculus defines the projector
+``` math
+P=\mathbf 1_I(A).
+```
+These three objects play different roles:
+
+- $`\mathcal E`$ says what kind of internal field is carried;
+
+- $`A`$ tests or evolves sections according to geometric data; and
+
+- $`P`$ selects the modes satisfying the declared spectral criterion.
+
+Calling all three “the lens lane” would hide the composition laws needed to combine them. The typed notation $`(\mathcal E,A,P)`$ keeps the carrier, test, and selection operation visible.
+
+## The realization pipeline
+
+A complete use of the dictionary proceeds in five steps.
+
+1.  Choose the physical base and internal coordinate space.
+
+2.  Specify the bundles, transition functions, metrics, and connections.
+
+3.  Define closed operators on stated domains and prove the spectral properties used by the projectors.
+
+4.  Construct the maps that compare local MTT decompositions with the selected global carrier, preserving the structures actually used.
+
+5.  Add source selection, dynamics, states, observables, and empirical conventions before making a physical prediction.
+
+The first three steps give a mathematical representation. The fourth gives a same-object or same-source bridge. Only the fifth can turn that bridge into a physical completion.
+
+## Argument map
+
+Sections 2–4 fix the status hierarchy, physical carrier, and type dictionary. Section 5 develops the operator layer. Sections 6 and 7 compare the local $`3\times3`$ strain decomposition with the selected q=79 global rank profile and state the missing intertwiner. Section 8 keeps spacetime, gauge, and HYM connections distinct. Sections 9–12 explain selection, compare standard physical formalisms, quarantine invalid older realizations, and record the current frontier.
+
 # Scope and Logical Status
 
 Program C begins after the typed structural and intersection results of Programs A0–B5. Its task is not to prove that a familiar physical theory is inevitable. Its task is to answer a narrower question:
@@ -69,19 +129,19 @@ A *realization* in this paper means a typed map from declared abstract data into
 
 We use the following hierarchy.
 
-Representation.  
+Representation.
 Abstract data are mapped into mathematical objects with the required types.
 
-Conditional reconstruction.  
+Conditional reconstruction.
 A known formalism is recovered after its additional hypotheses are supplied.
 
-Selected source realization.  
+Selected source realization.
 One candidate is selected by a declared source law independent of the target observable.
 
-Physical completion.  
+Physical completion.
 The selected realization has a state space, dynamics, observables, probability rule where required, and a convention map.
 
-Empirical adequacy.  
+Empirical adequacy.
 Held-out observables agree within a declared uncertainty model.
 
 No status follows merely from the one above it. In particular, an elegant representation is not yet a source theorem, and a source theorem is not yet a quantum or phenomenological completion.
@@ -142,17 +202,17 @@ is seven-dimensional when each $`F_i`$ is two-dimensional and cannot be used as 
 
 <div class="tabularx">
 
-@P0.15P0.28Y@ Symbol & Type & Meaning and exclusion  
-$`Y_4`$ & Lorentzian manifold & Physical spacetime. It carries causal evolution; it is not a compact phase circle.  
-$`X_6`$ & Compact Riemannian manifold & Internal coordinate space in $`M_{10}=Y_4\times X_6`$.  
-$`F_i`$ & Manifold factor of $`X_6`$ & An actual coordinate factor only after a product decomposition is proved.  
-$`\mathcal E_i`$ & Hermitian vector bundle over $`X_6`$ & Internal representation or field carrier. Its rank is not a coordinate dimension.  
-$`L_{\mathrm{shared}}`$ & Hermitian line bundle with connection & Common phase or holonomy data. It is counted once and is not physical time.  
-$`A_i`$ & Self-adjoint vertical operator on sections of $`\mathcal E_i`$ & An operator with a stated domain; it is neither a coordinate nor a bundle.  
-$`P_i`$ & Spectral projector of $`A_i`$ & A bounded idempotent selecting a declared spectral cluster.  
-$`P_{\mathrm{coh}}`$ & Joint coherent projector & The product $`P_1P_2P_3`$ only under strong commutation, or a spectral projector of one total internal operator.  
-$`Q_{\mathrm{WW}}`$ & Section of $`\operatorname{Hom}(TP,TI)`$ & Local world-in-world comparison field between rank-three bundles; never a projector.  
-$`\mathcal O\oplus\mathcal A_0\oplus\mathcal A`$ & Rank $`1+2+3`$ q=79 carrier & Selected global trace-split representation. Matching ranks do not identify it with the local strain bundle.  
+@P0.15P0.28Y@ Symbol & Type & Meaning and exclusion
+$`Y_4`$ & Lorentzian manifold & Physical spacetime. It carries causal evolution; it is not a compact phase circle.
+$`X_6`$ & Compact Riemannian manifold & Internal coordinate space in $`M_{10}=Y_4\times X_6`$.
+$`F_i`$ & Manifold factor of $`X_6`$ & An actual coordinate factor only after a product decomposition is proved.
+$`\mathcal E_i`$ & Hermitian vector bundle over $`X_6`$ & Internal representation or field carrier. Its rank is not a coordinate dimension.
+$`L_{\mathrm{shared}}`$ & Hermitian line bundle with connection & Common phase or holonomy data. It is counted once and is not physical time.
+$`A_i`$ & Self-adjoint vertical operator on sections of $`\mathcal E_i`$ & An operator with a stated domain; it is neither a coordinate nor a bundle.
+$`P_i`$ & Spectral projector of $`A_i`$ & A bounded idempotent selecting a declared spectral cluster.
+$`P_{\mathrm{coh}}`$ & Joint coherent projector & The product $`P_1P_2P_3`$ only under strong commutation, or a spectral projector of one total internal operator.
+$`Q_{\mathrm{WW}}`$ & Section of $`\operatorname{Hom}(TP,TI)`$ & Local world-in-world comparison field between rank-three bundles; never a projector.
+$`\mathcal O\oplus\mathcal A_0\oplus\mathcal A`$ & Rank $`1+2+3`$ q=79 carrier & Selected global trace-split representation. Matching ranks do not identify it with the local strain bundle.
 
 </div>
 
@@ -170,13 +230,19 @@ $`\mathcal O\oplus\mathcal A_0\oplus\mathcal A`$ & Rank $`1+2+3`$ q=79 carrier &
 
 Unqualified notation such as $`B_i`$ is deprecated when it could mean a base, bundle, factor, boundary, or filter. The symbols in Table <a href="#tab:dictionary" data-reference-type="ref" data-reference="tab:dictionary">[tab:dictionary]</a> are used throughout the corrected corpus.
 
+<div class="example">
+
+**Example 5** (Equal rank does not identify the object). The trivial complex line over $`S^2`$ and the Hopf line bundle both have rank one, but their first Chern classes differ, so they are not isomorphic. Even on one fixed trivial line bundle, two connections can have different holonomy and need not be related by a permitted gauge transformation. Consequently, rank agreement is only a bookkeeping prerequisite for an intertwiner; it is not evidence that transition functions, connections, or operators agree.
+
+</div>
+
 # Modal Lanes and Vertical Operators
 
 ## The typed modal triple
 
 <div class="definition">
 
-**Definition 5** (Vertical modal lane). A vertical modal lane on $`X_6`$ is a triple
+**Definition 6** (Vertical modal lane). A vertical modal lane on $`X_6`$ is a triple
 ``` math
 (\mathcal E_i,A_i,P_i),\qquad i=1,2,3,
 ```
@@ -194,13 +260,13 @@ If the three bundles differ, a common Hilbert bundle or specified embeddings mus
 
 <div id="ass:strong" class="assumption">
 
-**Assumption 6** (Strong commutation). After transport to one Hilbert space, the spectral measures of $`A_1,A_2,A_3`$ commute. Equivalently, the operators admit a joint functional calculus. Their quadratic forms have a common dense domain.
+**Assumption 7** (Strong commutation). After transport to one Hilbert space, the spectral measures of $`A_1,A_2,A_3`$ commute. Equivalently, the operators admit a joint functional calculus. Their quadratic forms have a common dense domain.
 
 </div>
 
 <div id="thm:joint" class="theorem">
 
-**Theorem 7** (Joint coherent projector). *Under Assumption <a href="#ass:strong" data-reference-type="ref" data-reference="ass:strong">6</a>,
+**Theorem 8** (Joint coherent projector). *Under Assumption <a href="#ass:strong" data-reference-type="ref" data-reference="ass:strong">7</a>,
 ``` math
 P_{\mathrm{coh}}=P_1P_2P_3
 ```
@@ -219,9 +285,11 @@ is an orthogonal projector independent of the order of the factors, and
 
 </div>
 
+The theorem says that three tests can be imposed simultaneously without an order ambiguity. It does not say that the three tests are independent or that their common range is nonzero. Both properties must be checked in the selected realization. This is why strong commutation is a compatibility certificate rather than a physical selection rule.
+
 <div id="cor:sum" class="corollary">
 
-**Corollary 8** (Single total operator). *Suppose the nonnegative quadratic-form sum $`A_{\mathrm{int}}=A_1+A_2+A_3`$ is closed. Then
+**Corollary 9** (Single total operator). *Suppose the nonnegative quadratic-form sum $`A_{\mathrm{int}}=A_1+A_2+A_3`$ is closed. Then
 ``` math
 \ker A_{\mathrm{int}}=\bigcap_{i=1}^3\ker A_i.
 ```
@@ -245,7 +313,7 @@ All summands are nonnegative, so the sum vanishes exactly when every summand van
 
 <div id="thm:compact" class="theorem">
 
-**Theorem 9** (Compact-resolvent discreteness). *Let $`A`$ be self-adjoint, bounded below, and have compact resolvent on a separable Hilbert space. Then its spectrum consists of eigenvalues of finite multiplicity with no finite accumulation point, apart from the standard possibility of accumulation at infinity.*
+**Theorem 10** (Compact-resolvent discreteness). *Let $`A`$ be self-adjoint, bounded below, and have compact resolvent on a separable Hilbert space. Then its spectrum consists of eigenvalues of finite multiplicity with no finite accumulation point, apart from the standard possibility of accumulation at infinity.*
 
 </div>
 
@@ -273,7 +341,7 @@ After choosing local orthonormal frames, $`Q_{\mathrm{WW}}`$ is a $`3\times3`$ m
 
 <div id="thm:spatial" class="theorem">
 
-**Theorem 10** (Orientation-strain and $`1+2+3`$ split). *At a nonsingular comparison background,
+**Theorem 11** (Orientation-strain and $`1+2+3`$ split). *At a nonsingular comparison background,
 ``` math
 \operatorname{Mat}(3,\mathbb R)
  =
@@ -355,7 +423,7 @@ The result is finite and flat. It does not identify the nonzero-Chern physical H
 
 <div id="def:intertwiner" class="definition">
 
-**Definition 11** (Continuum realization intertwiner). A continuum realization intertwiner is a bundle map
+**Definition 12** (Continuum realization intertwiner). A continuum realization intertwiner is a bundle map
 ``` math
 \mathfrak I:
  \mathbb RI_3\oplus\mathcal D_0\oplus\mathcal O
@@ -379,17 +447,19 @@ over a declared base map, together with:
 
 <div class="proposition">
 
-**Proposition 12** (Rank matching is insufficient). *The equality $`1+2+3=1+2+3`$ does not imply the existence of $`\mathfrak I`$.*
+**Proposition 13** (Rank matching is insufficient). *The equality $`1+2+3=1+2+3`$ does not imply the existence of $`\mathfrak I`$.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Equal-rank bundles can have different characteristic classes, holonomies, or connections and need not be isomorphic. Even isomorphic bundles can carry operators that are not conjugate. Each row in Definition <a href="#def:intertwiner" data-reference-type="ref" data-reference="def:intertwiner">11</a> is therefore independent of rank equality. ◻
+*Proof.* Equal-rank bundles can have different characteristic classes, holonomies, or connections and need not be isomorphic. Even isomorphic bundles can carry operators that are not conjugate. Each row in Definition <a href="#def:intertwiner" data-reference-type="ref" data-reference="def:intertwiner">12</a> is therefore independent of rank equality. ◻
 
 </div>
 
 Constructing this same-source map on the physical q=79 HYM complex is the current continuum geometry-to-operator blocker. It is not closed by the finite shared-line theorem.
+
+The local theorem and the global carrier are therefore two verified ends of a proposed bridge. The local side explains how six strain components arise after quotienting the three orientation directions of a $`3\times3`$ comparison field. The global side supplies a selected rank-six trace-split carrier with a shared line. Definition <a href="#def:intertwiner" data-reference-type="ref" data-reference="def:intertwiner">12</a> is the load-bearing middle: without it, equality of the two dimension lists remains a structural clue rather than a derivation of the global degrees of freedom from the local comparison field.
 
 # Bundles, Line Bundles, and Connections
 
@@ -407,7 +477,7 @@ These connections may interact in one action or anomaly equation. They are not e
 
 <div class="proposition">
 
-**Proposition 13** (Typed connection comparison). *An identification of two connection realizations requires a bundle map $`U:E\to E'`$ satisfying
+**Proposition 14** (Typed connection comparison). *An identification of two connection realizations requires a bundle map $`U:E\to E'`$ satisfying
 ``` math
 U\circ\nabla=\nabla'\circ U
 ```
@@ -433,7 +503,7 @@ Reference Fu–Yau and Hull–Strominger geometries establish relevant mathemati
 
 <div id="def:contract" class="definition">
 
-**Definition 14** (Realization contract). A realization contract is a tuple
+**Definition 15** (Realization contract). A realization contract is a tuple
 ``` math
 \mathfrak R=
  \left(
@@ -452,7 +522,7 @@ A purely mathematical realization may omit the final two rows, but then it must 
 
 <div id="thm:nonunique" class="theorem">
 
-**Theorem 15** (Nonuniqueness limits prediction). *Suppose two inequivalent realizations $`R_1,R_2\in\mathcal C/{\sim}`$ satisfy the same structural source data and all declared mathematical equations, but an observable has different values,
+**Theorem 16** (Nonuniqueness limits prediction). *Suppose two inequivalent realizations $`R_1,R_2\in\mathcal C/{\sim}`$ satisfy the same structural source data and all declared mathematical equations, but an observable has different values,
 ``` math
 \mathcal O(R_1)\ne\mathcal O(R_2).
 ```
@@ -494,12 +564,12 @@ Missing rows define the theorem boundary; they are not filled by analogy.
 
 <div class="tabularx">
 
-@P0.14P0.33Y@ Framework & Realization data that MTT can organize & Data not supplied by the dictionary alone  
-General relativity & Lorentzian base, frame/spin bundles, connection, curvature, local comparison field & Einstein–Hilbert or alternative action, stress tensor, field equations, hyperbolicity, normalization, and empirical solution.  
-Gauge theory and SM & Principal and associated bundles, representations, connections, finite projectors, anomaly tables & Selected continuum action, couplings, masses, RG transport, quantum state, and no-knob source values.  
-Quantum mechanics & Hilbert spaces, self-adjoint operators, spectral projectors, finite recorder models & General state preparation, Born source theorem, dynamics, detector model, and ontic-history rule.  
-Quantum field theory & Field bundles, local operators, classical BV complexes, finite representations & Selected renormalized quantum measure, nonperturbative completion, positivity, RG matching, and scattering/observable comparison.  
-String theory & Internal complex geometry, bundles, extended-carrier candidates, anomaly and duality contracts & Complete worldsheet action, GSO and analytic data, IR SCFT, selected physical bundle pair, and all-scale completion.  
+@P0.14P0.33Y@ Framework & Realization data that MTT can organize & Data not supplied by the dictionary alone
+General relativity & Lorentzian base, frame/spin bundles, connection, curvature, local comparison field & Einstein–Hilbert or alternative action, stress tensor, field equations, hyperbolicity, normalization, and empirical solution.
+Gauge theory and SM & Principal and associated bundles, representations, connections, finite projectors, anomaly tables & Selected continuum action, couplings, masses, RG transport, quantum state, and no-knob source values.
+Quantum mechanics & Hilbert spaces, self-adjoint operators, spectral projectors, finite recorder models & General state preparation, Born source theorem, dynamics, detector model, and ontic-history rule.
+Quantum field theory & Field bundles, local operators, classical BV complexes, finite representations & Selected renormalized quantum measure, nonperturbative completion, positivity, RG matching, and scattering/observable comparison.
+String theory & Internal complex geometry, bundles, extended-carrier candidates, anomaly and duality contracts & Complete worldsheet action, GSO and analytic data, IR SCFT, selected physical bundle pair, and all-scale completion.
 
 </div>
 
@@ -539,20 +609,20 @@ Programs B4 and B5 provide the correct typed intersection and contract-relative 
 
 <div class="tabularx">
 
-@Y P0.19P0.35@ Object & Status & Exact boundary  
-Canonical $`M_{10}=Y_4\times X_6`$ notation & Declared physical specialization & Not derived by the abstract triplet or the $`3\times3`$ component count.  
-Coordinate/bundle/operator/projector dictionary & Closed in this paper & Types and required comparison maps are explicit.  
-Joint coherent projector & Conditional theorem & Requires a common Hilbert space and strong commutation, or one total operator.  
-Discrete vertical spectrum & Conditional theorem & Requires compact resolvent or another explicit discreteness theorem.  
-Local spatial $`3+(1+2+3)`$ split & Exact & Flag-dependent component theorem; not global geometry.  
-Selected q=79 rank-$`1+2+3`$ carrier & Exact on selected finite carrier & Does not identify the local strain bundle.  
-Universal flat shared line and finite Hessian square & Exact finite theorem & Does not produce the physical nonzero-Chern HYM connection.  
-Physical visible-hidden bundle pair & Open: B.HS.01 & Explicit common HYM chamber and anomaly/Bianchi certificate required.  
-Continuum local-to-q79 intertwiner & Open: B.GEO.01 & Transition, metric, connection, derivative, operator, and Hessian rows required.  
-Selected rank-102 continuum execution & Open: B.OP.01 & Nineteen physical blocks, kernel removal, inverse and radii bounds required.  
-Upper action and automorphism transfer & Open: B.ACTION.01 & One selected upper differential/action must reproduce the lower structures.  
-General Born source theorem & Open: B.QM.01 & The restricted one-anchor result does not cover every apparatus context.  
-Complete q=79 worldsheet contract & Open: B.QG.01 & Currently five of twelve declared rows.  
+@Y P0.19P0.35@ Object & Status & Exact boundary
+Canonical $`M_{10}=Y_4\times X_6`$ notation & Declared physical specialization & Not derived by the abstract triplet or the $`3\times3`$ component count.
+Coordinate/bundle/operator/projector dictionary & Closed in this paper & Types and required comparison maps are explicit.
+Joint coherent projector & Conditional theorem & Requires a common Hilbert space and strong commutation, or one total operator.
+Discrete vertical spectrum & Conditional theorem & Requires compact resolvent or another explicit discreteness theorem.
+Local spatial $`3+(1+2+3)`$ split & Exact & Flag-dependent component theorem; not global geometry.
+Selected q=79 rank-$`1+2+3`$ carrier & Exact on selected finite carrier & Does not identify the local strain bundle.
+Universal flat shared line and finite Hessian square & Exact finite theorem & Does not produce the physical nonzero-Chern HYM connection.
+Physical visible-hidden bundle pair & Open: B.HS.01 & Explicit common HYM chamber and anomaly/Bianchi certificate required.
+Continuum local-to-q79 intertwiner & Open: B.GEO.01 & Transition, metric, connection, derivative, operator, and Hessian rows required.
+Selected rank-102 continuum execution & Open: B.OP.01 & Nineteen physical blocks, kernel removal, inverse and radii bounds required.
+Upper action and automorphism transfer & Open: B.ACTION.01 & One selected upper differential/action must reproduce the lower structures.
+General Born source theorem & Open: B.QM.01 & The restricted one-anchor result does not cover every apparatus context.
+Complete q=79 worldsheet contract & Open: B.QG.01 & Currently five of twelve declared rows.
 
 </div>
 
@@ -591,3 +661,7 @@ S. Kobayashi and K. Nomizu, *Foundations of Differential Geometry, Volume I*, 
 J.-X. Fu and S.-T. Yau, The theory of superstring with flux on non-Kahler manifolds and the complex Monge–Ampere equation, *Journal of Differential Geometry* 78 (2008), 369–428.
 
 </div>
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

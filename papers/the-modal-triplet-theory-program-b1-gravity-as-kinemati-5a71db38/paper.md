@@ -7,16 +7,16 @@ author:
 - Peter Nero
 current_version: v2
 date: July 2026
-generated_from_main_tex_sha256: b8c33c9d49d333c32693bf87e583adf8418d6e627c7ecf533ed7c3566354d81c
+generated_from_main_tex_sha256: defd7d1f2edde7fd1d7b2c8b82cd02b54c3804c90c5f2a5320e783f4e00f1bfa
 paper_id: the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  The Modal Triplet Theory Program B1:  
+  The Modal Triplet Theory Program B1:
   Loop-Transport Consistency and the Conditional Gravity Realization
-zenodo_doi: 10.5281/zenodo.18355020
-zenodo_record_id: 18355020
-zenodo_url: "https://zenodo.org/records/18355020"
+zenodo_doi: 10.5281/zenodo.21652643
+zenodo_record_id: 21652643
+zenodo_url: "https://zenodo.org/records/21652643"
 ---
 
 # Revision note for version 2
@@ -34,6 +34,26 @@ Loop-dependent comparison requires explicit bookkeeping; smooth connections are 
 No theorem here selects the physical base, Lorentzian metric, frame carrier, Einstein–Hilbert action, Newton constant, cosmological constant, matter stress tensor, or a unique gravity theory from the circle profile.
 
 </div>
+
+# How to read Program B1
+
+B1 follows one idea through four increasingly specific levels: abstract transport, smooth connection geometry, causal spacetime geometry, and gravitational dynamics. The paper proves links within and between these levels only when the required carrier and physical data have been supplied.
+
+#### The central picture in plain language.
+
+Carry a value around a closed chain and compare it with its starting value. If it returns changed, the transport has holonomy. A value can nevertheless be globally well defined when every return transformation fixes it. Thus nontrivial return memory is not automatically a contradiction; it tells us which sector descends without path information.
+
+#### A simple phase example.
+
+On a complex line, a loop may multiply a value by $`e^{i\theta}`$. Unless $`e^{i\theta}=1`$, a nonzero scalar value is not fixed and cannot descend as an endpoint-only quantity. One may retain the path-dependent phase, restrict to the fixed sector, or quotient by a declared equivalence. None of these choices says that the line is the spacetime tangent bundle or that its phase is gravity.
+
+#### Argument map.
+
+Sections 1–2 construct the transport groupoid and prove holonomy-fixed descent. Sections 3–4 explain when smooth transport is represented by a connection and why global holonomy need not be curvature. Section 5 adds the metric and tangent/frame carrier needed for the conditional Levi–Civita realization. Section 6 locates causal cones in the principal symbol and proves only their preservation under coherent compression. Section 7 derives Einstein dynamics from a separately selected local action and proves that the obstruction taxonomy cannot select that action. Sections 8–10 collect the consequences and exact research frontier.
+
+#### Scope boundary.
+
+A circle profile selects none of the base, dimension, signature, carrier, connection, local equation, or action. Levi–Civita uniqueness begins after a metric and its standard compatibility conditions are given. Einstein’s equation begins after a differentiable Einstein–Hilbert matter action is given. B1 therefore supplies a conditional realization contract, not a derivation of general relativity from holonomy alone.
 
 # Scope and Imported Data
 
@@ -410,13 +430,13 @@ The theorem proves preservation, not emergence, of Lorentzian geometry. Spatiall
 
 The following notions are not interchangeable:
 
-Encoding boundary.  
+Encoding boundary.
 The boundary of a declared admissible chart or decoder domain.
 
-Characteristic boundary.  
+Characteristic boundary.
 A hypersurface characteristic for the principal symbol of a local physical equation.
 
-Gravitational horizon.  
+Gravitational horizon.
 A global causal boundary in a specified spacetime solution, such as an event, Cauchy, trapping, or Killing horizon, with its own hypotheses.
 
 An encoding boundary may correspond to a physical horizon only after an explicit bridge proves that the encoding loss tracks the relevant causal boundary. Loop transport alone supplies no such bridge.
@@ -630,3 +650,7 @@ R. M. Wald, *General Relativity*, University of Chicago Press, 1984.
 D. Lovelock, “The Einstein tensor and its generalizations,” *Journal of Mathematical Physics* 12 (1971), 498–501.
 
 </div>
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

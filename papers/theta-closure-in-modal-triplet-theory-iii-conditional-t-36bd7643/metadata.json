@@ -1,5 +1,5 @@
 {
-  "abstract": "We audit a conditional Route B representation of the leading\u2013order nonabelian overlap integrals I_2^{(0)} and I_3^{(0)} in Modal Triplet Theory (MTT) using the self\u2013dual Yang\u2013Mills (SDYM) twistor corner. Fiber reduction gives the same quadratic L^2 functional used by Route A. The numerical normalization is not independent, however: the SU(2) result additionally uses the bridge convention dA_{\\mathrm{dir}}=2\\omega_{\\mathrm{FS}} and the effective round-S^2 lens model, while the SU(3) result uses the declared auxiliary nilmanifold, color harmonic, and factorization assumption of Paper II. Under these declared shared inputs Route B reproduces I_2^{(0)}=4\\pi(f_2R_{\\mathrm{lens}})^2 and I_3^{(0)}=\\int\\|\\chi_{\\mathrm{col}}\\|^2d\\mu=c. The result is therefore a conditional representation-level cross-check, not an independent selection of the overlap values or a completed nonabelian \\Theta\u2013closure theorem.",
+  "abstract": "We audit a conditional Route B representation of the leading-order nonabelian overlap coefficients in Modal Triplet Theory using the self-dual Yang-Mills twistor corner. A standard SDYM twistor action is holomorphic BF-type; it does not by itself provide the positive Hermitian norm or relative coupling normalization used by Route A. We therefore isolate a reconstruction-and-norm bridge as an explicit assumption. The weak-sector comparison also uses a direction-sphere bridge and the effective round two-sphere lens model, while the color comparison uses the declared auxiliary nilmanifold, color harmonic, and factorization assumption of Paper II. Under these shared inputs Route B reproduces the two Route A overlap formulas. The result is a conditional dictionary check, not an independent derivation or selection of the overlap values and not a completed nonabelian Theta-closure theorem.",
   "authors": [
     "Peter Nero"
   ],
@@ -9,60 +9,85 @@
   "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262097",
-    "created": "2026-01-15T20:41:33.112528+00:00",
+    "created": "2026-07-29T08:52:22.186920+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18262098",
+    "doi": "10.5281/zenodo.21666011",
     "files": [
       {
-        "checksum": "md5:5bfcbc56494ecad8d02e2032f73bd891",
-        "content_url": "https://zenodo.org/api/records/18262098/files/Theta_Closure_in_Modal_Triplet_Theory_III__Twistor_Action_Matching_and_Independent_Normalization%20(1).pdf/content",
-        "key": "Theta_Closure_in_Modal_Triplet_Theory_III__Twistor_Action_Matching_and_Independent_Normalization (1).pdf",
-        "size": 386236
+        "checksum": "md5:c5b5f6ee8eeddfb68af28d53e2590d98",
+        "content_url": "https://zenodo.org/api/records/21666011/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 427814
       }
     ],
-    "id": "18262098",
-    "match_kind": "title_or_file",
+    "id": "21666011",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18262098",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21666011",
     "resource_type": "publication",
-    "title": "Theta Closure in Modal Triplet Theory III: Twistor\u2013Action Matching and Independent Normalization",
-    "updated": "2026-01-15T20:41:33.461092+00:00",
-    "version": "v1.0"
+    "title": "Theta Closure in Modal Triplet Theory III: Conditional Twistor–Action Matching and Normalization Audit",
+    "updated": "2026-07-29T08:52:22.608484+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "d7134be2a7ebfd2c17fd1c6c366db5a6e6b63bec10321c2ffbf705f2d7f06dd7",
+  "main_tex_sha256": "86fdc659bb995483be2885b1e91dfe5d69c8914e74e94850e25abcc019bd8460",
   "paper_id": "theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643",
-  "paper_md_sha256": "baee614424b2343ca399374f079aee51d3b603565e4971d28141e7e5d779017f",
+  "paper_md_sha256": "d6b80654b1aa491e2dec45f61f0c7c8e6cc9b691e77e53b3216fc4d747fe7300",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
-    "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "de238e84d98e4571b1da7cc9cca7dc828bcb3c2edde61447ff7e4b16ff738c7a",
     "selected_revision": true,
     "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_III__Twistor_Action_Matching_and_Independent_Normalization"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 31130,
+      "bytes": 38681,
       "path": "main.tex",
-      "sha256": "d7134be2a7ebfd2c17fd1c6c366db5a6e6b63bec10321c2ffbf705f2d7f06dd7"
+      "sha256": "86fdc659bb995483be2885b1e91dfe5d69c8914e74e94850e25abcc019bd8460"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_III__Twistor_Action_Matching_and_Independent_Normalization_v2"
   },
-  "source_tree_sha256": "63858e7eb5c93e277959e8107c725efe5d974b73711664112e62244f31fa9fe0",
-  "title": "Theta Closure in Modal Triplet Theory III: Conditional Twistor\u2013Action Matching and Normalization Audit",
-  "version_relation": "current_source_newer_than_release",
+  "source_tree_sha256": "b8b809dead31075bb25f0b39ea81a2dabe9db7096dadf164aac4ba702eb3012c",
+  "title": "Theta Closure in Modal Triplet Theory III: Conditional Twistor–Action Matching and Normalization Audit",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262097",
+      "created": "2026-07-29T08:52:22.186920+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666011",
+      "files": [
+        {
+          "checksum": "md5:c5b5f6ee8eeddfb68af28d53e2590d98",
+          "content_url": "https://zenodo.org/api/records/21666011/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 427814
+        }
+      ],
+      "id": "21666011",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666011",
+      "resource_type": "publication",
+      "title": "Theta Closure in Modal Triplet Theory III: Conditional Twistor–Action Matching and Normalization Audit",
+      "updated": "2026-07-29T08:52:22.608484+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18262097",
       "created": "2026-01-15T20:41:33.112528+00:00",
@@ -84,7 +109,7 @@
       "publication_date": "2026-01-15",
       "record_url": "https://zenodo.org/records/18262098",
       "resource_type": "publication",
-      "title": "Theta Closure in Modal Triplet Theory III: Twistor\u2013Action Matching and Independent Normalization",
+      "title": "Theta Closure in Modal Triplet Theory III: Twistor–Action Matching and Independent Normalization",
       "updated": "2026-01-15T20:41:33.461092+00:00",
       "version": "v1.0"
     }

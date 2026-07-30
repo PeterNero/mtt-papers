@@ -1,21 +1,38 @@
 ---
 abstract: |
-  This paper corrects the first edition’s claim that a full nonperturbative, unitary gravity sector follows from separately filtered graviton and ghost covariances, termwise BRST identities, and reflection positivity of the transverse-traceless sector. Those implications are not valid. We replace them by a typed compatibility contract. First, a common bounded functional calculus preserves a linear BRST complex when the kinetic Laplacians, spectral projections, domains, and boundary conditions intertwine the differential; independently chosen filters do not ensure this. Second, an exact finite-cutoff quantum BRST measure gives Ward identities and gauge-fixing independence by super-Stokes, while Borel summation preserves a linear Ward identity only under a common analytic domain and uniform Gevrey-one remainder bounds. Third, BRST cohomology yields a physical pre-Hilbert space only when reflection positivity is proved on the full BRST-closed positive-time observable algebra and exact classes lie in the reflection null radical. Positivity on the TT subspace alone is insufficient. We also prove that a nonzero positive Kallen–Lehmann measure cannot have permanent Gaussian decay in the same Euclidean spectral variable, so the old SPT positivity argument cannot be used. The result is a rigorous conditional theorem and an explicit exit certificate. Current MTT data provide useful finite classical and free-field inputs, but not yet the selected gravitational quantum measure, quantum master equation, constructive Borel theorem, or physical reflection-positivity theorem required by that certificate.
+  This paper gives a typed compatibility contract for BRST lifting, gauge independence, Borel summation, and reflection positivity in the Modal Triplet Theory quantum-gravity program. First, a common bounded functional calculus preserves a linear BRST complex when the kinetic Laplacians, spectral projections, domains, and boundary conditions intertwine the differential; independently chosen filters do not ensure this. Second, an exact finite-cutoff quantum BRST measure gives Ward identities and gauge-fixing independence by super-Stokes, while Borel summation preserves a linear Ward identity only under a common analytic domain and uniform Gevrey-one remainder bounds. Third, BRST cohomology yields a physical pre-Hilbert space only when reflection positivity is proved on the full BRST-closed positive-time observable algebra and exact classes lie in the reflection null radical. Positivity on the TT subspace alone is insufficient. We also prove that a nonzero positive Kallen–Lehmann measure cannot have permanent Gaussian decay in the same Euclidean spectral variable, so the old SPT positivity argument cannot be used. The result is a rigorous conditional theorem and an explicit exit certificate. Current MTT data provide useful finite classical and free-field inputs, but not yet the selected gravitational quantum measure, quantum master equation, constructive Borel theorem, or physical reflection-positivity theorem required by that certificate.
 author:
 - Peter Nero
 current_version: v2
-date: Corrected second edition, July 2026
-generated_from_main_tex_sha256: bc2d5cadb02e3c99e96998df4d0eacb8e94f5fe35b8be6983e92ded41f3c1381
+date: July 2026 Version 2
+generated_from_main_tex_sha256: 06115993d23c51e9bec4637bf31ff208e2653c48fd138758288da0bfb31bdc40
 paper_id: constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  Constructive MTT Quantum Gravity II:  
+  Constructive MTT Quantum Gravity II:
   A Conditional BRST/BV Compatibility and Physical-State Reconstruction Contract for SPT-Filtered Models
-zenodo_doi: 10.5281/zenodo.18209697
-zenodo_record_id: 18209697
-zenodo_url: "https://zenodo.org/records/18209697"
+zenodo_doi: 10.5281/zenodo.21665957
+zenodo_record_id: 21665957
+zenodo_url: "https://zenodo.org/records/21665957"
 ---
+
+# Version 2 Revision Note
+
+Supersedes:
+Constructive MTT Quantum Gravity II, first release.
+
+Reason:
+Separate graviton and ghost filters, termwise Ward identities, and TT positivity did not imply a full BRST quantum theory.
+
+Resolution:
+The paper now states a shared-filter chain-map theorem, finite-cutoff Ward theorem, conditional Borel inheritance, and the full cohomological Osterwalder–Schrader contract.
+
+Retained result:
+The finite and linear compatibility statements are exact under their declared domains and common-filter hypotheses.
+
+Remaining boundary:
+The selected interacting measure, quantum master equation, constructive Borel control, and physical reflection positivity remain open.
 
 # Scope and revision statement
 
@@ -42,16 +59,22 @@ Version 2 withdraws the claim that these four steps have been completed for MTT 
 
 We use three levels throughout:
 
-Classical algebraic level.  
+Classical algebraic level.
 A nilpotent BRST differential and a classical master action are defined after a gauge symmetry and action are supplied.
 
-Regularized quantum level.  
+Regularized quantum level.
 A regulator, measure, integration cycle, and renormalized action satisfy a quantum master equation with controlled boundaries and anomalies.
 
-Physical reconstruction level.  
+Physical reconstruction level.
 Gauge-invariant Euclidean correlators satisfy the relevant OS axioms and reconstruct a positive Lorentzian theory.
 
 The first level does not imply the second, and the second does not imply the third.
+
+## Reader orientation and intuition
+
+The central picture is a chain of interfaces rather than a single quantization step. A classical gauge symmetry supplies a differential. A regulator must commute with that differential. A quantum measure must then satisfy the measure-dependent master equation. Only after the resulting gauge-invariant correlators obey physical reflection positivity can one reconstruct a positive state space. Sections 4–7 test these interfaces one at a time, Section 8 combines them into a conditional theorem, and Section 9 records the missing objects.
+
+In plain language, filtering the graviton and filtering the ghost with two similar-looking functions is not enough. The filter must respect every arrow of the BRST complex in the same way that a map of chain complexes must respect its boundary operator. Likewise, positivity of the two TT helicities only tests a small physical-looking corner; it does not determine the sign of the full BRST quotient. These two pictures explain why the old promotion from filtered propagators to a physical Hilbert space was too fast.
 
 # Current MTT input and its boundary
 
@@ -296,35 +319,7 @@ Kugo–Ojima positivity similarly requires a representation of the BRST charge, 
 
 # Why permanent Gaussian damping cannot prove standard positivity
 
-The earlier SPT program tried to combine a positive spectral representation with permanent Gaussian ultraviolet damping. The following elementary no-go is independent of the BRST issue.
-
-<div class="theorem">
-
-**Theorem 11** (Positive spectral measure versus Gaussian decay). *Let
-``` math
-D(x)=\int_0^\infty\frac{\rho(ds)}{x+s},\qquad x>0,
-```
-where $`\rho`$ is a nonzero positive measure and $`D(x)`$ is finite. Then there are $`R,m>0`$ such that
-``` math
-D(x)\ge\frac{m}{x+R}.
-```
-Consequently, for no $`C,\tau,\lambda>0`$ can
-``` math
-D(x)\le \frac{C e^{-\tau x}}{x+\lambda}
-```
-hold for all sufficiently large $`x`$.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Because $`\rho`$ is nonzero, some bounded interval $`[0,R]`$ has mass $`m=\rho([0,R])>0`$. Restricting the integral to that interval gives the lower bound. Combining both inequalities would imply
-``` math
-\frac{m}{C}\le e^{-\tau x}\frac{x+R}{x+\lambda},
-```
-whose right-hand side tends to zero. ◻
-
-</div>
+The earlier SPT program tried to combine a positive spectral representation with permanent Gaussian ultraviolet damping. The companion paper *An SPT-Filtered Euclidean TT Model and Its Conditional Perturbative Properties* owns the exact spectral no-go: a nonzero positive Källén–Lehmann/Stieltjes measure gives a lower bound of order $`1/(x+R)`$ and therefore cannot also have permanent Gaussian decay in the same Euclidean spectral variable .
 
 Thus a nontrivial standard positive Kallen–Lehmann measure and permanent Gaussian decay cannot hold in the same Euclidean spectral variable. This does not prove that every nonlocal model is nonunitary; it proves that the old Stieltjes/OS argument cannot establish the desired result. Nonlocal theories require a separate, internally consistent spectral and positivity framework .
 
@@ -334,21 +329,21 @@ We can now state the strongest result supported by the present paper.
 
 <div id="thm:main" class="theorem">
 
-**Theorem 12** (Conditional SPT–BRST reconstruction contract). *Consider an SPT-filtered Euclidean gravity model. Suppose all of the following are supplied independently:*
+**Theorem 11** (Conditional SPT–BRST reconstruction contract). *Consider an SPT-filtered Euclidean gravity model. Suppose all of the following are supplied independently:*
 
-F1.  
+F1.
 *A selected gauge-invariant classical action and a closed BRST/BV complex with compatible boundary domains.*
 
-F2.  
+F2.
 *A shared spectral filter satisfying Assumption <a href="#ass:chain" data-reference-type="ref" data-reference="ass:chain">2</a>, together with a controlled finite-cutoff measure space.*
 
-F3.  
+F3.
 *An anomaly-free quantum measure satisfying Assumption <a href="#ass:qmeasure" data-reference-type="ref" data-reference="ass:qmeasure">5</a> at every cutoff, with a proved removal limit.*
 
-F4.  
+F4.
 *A constructive existence and Borel theorem with a common analytic domain, uniform Gevrey-one remainders, and convergence of the Borel sums as the cutoff and volume are removed.*
 
-F5.  
+F5.
 *The physical gauge-invariant Schwinger functional satisfies Assumption <a href="#ass:physicalOS" data-reference-type="ref" data-reference="ass:physicalOS">8</a> and the remaining OS reconstruction axioms.*
 
 *Then BRST-exact insertions vanish, BRST-closed expectations are independent of the admitted gauge-fixing homotopy, the linear Ward identities survive Borel summation, and the BRST cohomology reconstructs a positive physical Hilbert space. If the global OS, continuation, and time-translation hypotheses are also met, the reconstructed Lorentzian time evolution is unitary.*
@@ -392,13 +387,37 @@ The minimal executable exit packet is therefore:
 
 5.  one physical OS packet evaluating every generator of the declared BRST-closed positive-time observable algebra and proving the completion hypotheses.
 
-This packet would turn Theorem <a href="#thm:main" data-reference-type="ref" data-reference="thm:main">12</a> from a compatibility theorem into a constructed quantum-gravity result.
+This packet would turn Theorem <a href="#thm:main" data-reference-type="ref" data-reference="thm:main">11</a> from a compatibility theorem into a constructed quantum-gravity result.
 
 # Conclusion
 
 SPT filtering, BRST cohomology, Borel summation, and OS reconstruction are compatible only after their interfaces are proved. The shared-filter theorem gives the correct linear interface; the finite quantum-measure theorem gives the correct Ward interface; the uniform Borel theorem gives the correct summation interface; and the cohomological OS theorem gives the correct physical-state interface. The previous edition assumed these interfaces and therefore overstated its conclusion.
 
 The present MTT program has meaningful ingredients on both sides of this contract: finite q79 gravity data, a classical gravitational action at a declared branch tier, a free helicity sector, and exact classical finite gauge BRST data. What remains is sharply localized in F2–F5. Until those objects are constructed, this paper establishes a rigorous dependency theorem and research target, not a nonperturbative unitary theory of quantum gravity.
+
+#### Open boundary (not evidence of closure).
+
+- (*open*).
+
+  Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The BRST/BV compatibility statements are conditional contracts whose hypotheses are displayed in this paper. The mapped open ledger is not evidence of gauge-independent quantum gravity and is included solely as a current boundary on stronger MTT claims.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Open boundary (not evidence of closure)
+
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 
@@ -438,7 +457,7 @@ P. Nero, *Fixed Points VI: Formal Synthesis and Physical Interpretations*, corr
 
 P. Nero, *MTT Quantum-Gravity Research and Paper Status Audit*, research ledger, 2026.
 
-P. Nero, *MTT SPT Gaussian, Stieltjes, and Graph-Rank Correction*, executable research note, 2026.
+P. Nero, *An SPT-Filtered Euclidean TT Model and Its Conditional Perturbative Properties*, corrected MTT quantum-gravity paper, 2026.
 
 P. Nero, *Globally Hyperbolic SM Gauge-Stack Obstruction and BRST Theorem*, executable theorem packet, 2026.
 

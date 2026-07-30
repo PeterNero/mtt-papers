@@ -633,8 +633,11 @@ def build_markdown(
         raise RuntimeError(f"Pandoc Markdown failed for {project}: {completed.stderr}")
     if len(completed.stdout.strip()) < 200:
         raise ValueError(f"implausibly short Markdown conversion: {project}")
+    markdown = "\n".join(
+        line.rstrip() for line in completed.stdout.splitlines()
+    ) + "\n"
     (project / "paper.md").write_text(
-        completed.stdout, encoding="utf-8", newline="\n"
+        markdown, encoding="utf-8", newline="\n"
     )
     return sha256_file(project / "paper.md"), completed.stderr.strip()
 

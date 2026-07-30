@@ -1,304 +1,331 @@
 ---
 abstract: |
-  We derive Loop Quantum Gravity (LQG) from the coherent fixed-point sector of Modal Triplet Theory (MTT). Starting with a $`3+1`$ foliation of the 4D face of the MTT fixed point, we show: (i) the Ashtekar–Barbero connection $`A^i_a=\Gamma^i_a+\gamma K^i_a`$ and densitized triad $`E^a_i`$ arise canonically from the modal tetrad/spin connection; (ii) the holonomy–flux $`*`$-algebra, cylindrical consistency, and the Ashtekar–Lewandowski representation follow from the $`\Pi`$-projected symmetry and yield the LOST uniqueness properties; (iii) the Gauss, diffeomorphism, and Hamiltonian constraints descend from MTT gauge/diffeomorphism invariance and from the fixed-point Hamiltonian, including a Master-constraint form; (iv) area/volume spectra of LQG are recovered with a *computed* Barbero–Immirzi parameter $`\gamma=\gamma_{\mathrm{MTT}}(\Theta)`$ determined by modal overlaps/bottlenecks; and (v) spin–foam dynamics (EPRL/FK) arise from a Holst-like MTT effective action via BF + simplicity constraints, with large-spin Regge asymptotics. The embedding is consistent with the UV-finite, causal perturbative QG sector previously derived from MTT (Stieltjes/Bernstein two-point function and SPT Gaussian damping), and identifies cross-checks linking $`\gamma`$, black-hole entropy, and cosmological loop effects.
+  This paper determines exactly how far the present Modal Triplet Theory (MTT) gravity program reaches into loop quantum gravity (LQG). It proves an exact conditional composition theorem. If the selected four-dimensional MTT action contains a normalized Holst term and if a global three-plus-one splitting, time gauge, nondegenerate tetrad, and required boundary conditions are supplied, then the standard canonical reduction yields the real Ashtekar–Barbero pair. In the convention used here, the coefficient ratio fixes the Immirzi parameter as its negative inverse. Current MTT results conditionally recover the two-derivative Einstein/TEGR tensor structure, but do not yet emit this parity-odd coefficient; therefore they do not yet predict the Immirzi parameter. The LOST representation, geometric spectra, constraint quantization, and EPRL/FK amplitudes are separately inherited only after their standard hypotheses and constructions are added. This establishes a precise LQG interface and a finite exit contract without treating imported LQG machinery as an MTT derivation.
 author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v3
-date: September 19, 2025
-generated_from_main_tex_sha256: 3558359f08042faadbec0a7eb60a32c79a044286cef40abc8cdfeb7086cc5381
+current_version: v4
+date: July 2026 Version 4
+generated_from_main_tex_sha256: 08afaad4eed5ab632804a8ba435fc950e59fe8abcbdf1090f0616636d4b5a847
 paper_id: modal-triplet-theory-from-mtt-to-loop-quantum-gravity-a-4ae4b130
 release_state: zenodo_released
-released_version: v1.0
+released_version: v4
 title: |
-  **Modal Triplet Theory: From MTT to Loop Quantum Gravity:  
-  A Canonical and Spin–Foam Embedding with Predictive Immirzi Map**
-zenodo_doi: 10.5281/zenodo.17162355
-zenodo_record_id: 17162355
-zenodo_url: "https://zenodo.org/records/17162355"
+  Modal Triplet Theory and Loop Quantum Gravity:
+  A Conditional Holst/Canonical Embedding
+zenodo_doi: 10.5281/zenodo.21665997
+zenodo_record_id: 21665997
+zenodo_url: "https://zenodo.org/records/21665997"
 ---
 
-# Introduction and aim
+# Version 4 Revision Note
 
-#### Aim.
+Supersedes:
+The former canonical and spin-foam embedding manuscript, version 3.
 
-We show that the canonical and covariant structures of Loop Quantum Gravity (LQG)—Ashtekar–Barbero variables, holonomy–flux representation and spin networks, quantum constraints, and spin–foam amplitudes—are obtained from the *same* coherent fixed-point geometry that underlies all containments in MTT (modules G,S,$`\Pi`$,F,E).[^1] The Barbero–Immirzi parameter $`\gamma`$ is not free: it is mapped to a *modal overlap ratio* fixed at the coherent point. This ties LQG predictions to the MTT bottleneck vector $`\Theta`$ and to the UV-finite QG form factor.
+Reason:
+Standard LQG representation, constraint, spin-foam, and ultraviolet results had been counted as consequences of projection without their defining source data.
 
-#### Context.
+Resolution:
+This paper is now the sole owner of the conditional Holst-to-Ashtekar–Barbero theorem and types every later LQG layer as a separate inheritance.
 
-LQG quantizes real SU(2) connections and densitized triads on a spatial slice, producing a background-independent kinematics with spin-network basis and discrete geometric spectra, and covariant spin–foam dynamics . We embed these ingredients in the MTT fixed-point framework developing the dictionary and constraints.
+Retained result:
+A complete normalized Holst action yields $`\gamma=-1/r_H`$ and the standard canonical pair under the declared canonical hypotheses.
 
-#### Standing modules.
+Remaining boundary:
+The selected Holst coefficient, LOST state, quantum constraints, EPRL/FK packet, and SPT-to-spin-foam map remain open.
 
-We assume bounded geometry, a uniform spectral gap, a bounded joint projector $`\Pi`$ onto harmonic sectors, smoothing flow, and a convex energy functional near the fixed point (§2).[^2]
+# Purpose and reader orientation
 
-#### Hypotheses and conventions.
+Loop quantum gravity begins from a canonical rewriting of general relativity. After choosing a spatial foliation and an internal time gauge, the spatial geometry is described by a real $`\mathrm{SU}(2)`$ connection and its conjugate densitized triad. Holonomies of that connection and fluxes of the triad then generate the kinematical algebra used in LQG.
 
-We work on a $`3{+}1`$ split $`M_4=\mathbb{R}\times\Sigma`$ of the coherent 4D face with: (H1) $`\Sigma`$ is oriented, connected, piecewise-analytic, of bounded geometry (uniform curvature and injectivity bounds). (H2) Non-degenerate tetrad and time gauge: choose an internal timelike unit $`n^I`$ so that $`e^0{}_a=0`$ and the internal gauge is reduced to $`\mathrm{SU}(2)`$. (H3) The MTT 4D effective action contains Einstein–Hilbert and Holst-type terms with constant coefficients $`\alpha_{\rm EH}(\Theta),\alpha_{\rm Holst}(\Theta)`$ defined by modal overlap integrals on the coherent sector. (H4) The projector $`\Pi`$ commutes with the natural action of analytic diffeomorphisms on the coherent fields, so the induced GNS state is diffeomorphism invariant. All statements below are made under (G,S,$`\Pi`$,F,E) and (H1)–(H4).
-
-# Canonical variables from the MTT fixed point
-
-Let $`M_4= \mathbb{R}\times \Sigma`$ be a $`3+1`$ foliation of the 4D face of the MTT coherent fixed point, with spatial slice $`\Sigma`$ of bounded geometry. Let $`e^I_{\ a}`$ be the spatial triad, $`\omega^{IJ}_{\ a}`$ the spin connection, and $`K^i_{\ a}`$ the extrinsic-curvature one-form in an internal $`\mathfrak{su}(2)`$ basis ($`i=1,2,3`$).
-
-<div id="def:AB" class="defn">
-
-**Definition 1** (MTT$`\to`$Ashtekar–Barbero dictionary). In time gauge (H2), let $`e^i{}_{a}`$ be a spatial triad on $`\Sigma`$, $`\Gamma^i{}_{a}(e)`$ its torsion-free spin connection, and $`K^i{}_{a}`$ the extrinsic curvature one-form. Define
+MTT approaches gravity from a different direction. Its present q79 proto-spinor program selects a finite internal carrier and proves a conditional route to the two-derivative Einstein/TEGR tensor structure. It is therefore natural to ask whether the same selected branch also supports the canonical variables of LQG. The answer is conditional:
 ``` math
-A^i{}_{a}=\Gamma^i{}_{a}+\gamma_{\rm BI}\,K^i{}_{a},\qquad
-E^{a}{}_{i}=\tfrac12\,\epsilon^{abc}\epsilon_{ijk}\,e^j{}_{b}\,e^k{}_{c}.
+\boxed{
+ \text{selected normalized Holst action}
+ \Longrightarrow
+ \text{Ashtekar--Barbero canonical data}
+}
 ```
+but the premise has not yet been supplied by MTT.
 
-Here $`\gamma`$ denotes the Barbero–Immirzi parameter (fixed later in §<a href="#subsec:ImmirziMap" data-reference-type="ref" data-reference="subsec:ImmirziMap">5</a>).
+This distinction matters. A dictionary can show that two constructions agree once their inputs exist. It cannot manufacture those inputs. In particular, an internal projector does not by itself select a foliation, a time gauge, a holonomy–flux state, a Hamiltonian-constraint operator, or a spin-foam measure.
 
-The symplectic structure induced by the MTT action on the coherent sector yields the real bracket
+## What this paper owns
+
+The unique technical result of this paper is the conditional Holst-to-canonical composition theorem in Section <a href="#sec:canonical" data-reference-type="ref" data-reference="sec:canonical">3</a>. It also records exact inheritance conditions for later LQG layers. The companion paper on LQG as a fixed-point shadow is interpretive and imports this result; it does not own another derivation of the same variables.
+
+# Typed inputs and present MTT status
+
+## Imported geometric and canonical inputs
+
+Let $`M`$ be an oriented and time-oriented four-manifold. The canonical reduction considered below requires the following data.
+
+1.  A Lorentzian co-tetrad $`e^I`$ and a Lorentz connection $`\omega^{IJ}`$, with nondegenerate spatial triad.
+
+2.  A global or patchwise-controlled splitting $`M\simeq\mathbb R\times\Sigma`$, together with lapse, shift, and boundary conditions that make the variational principle and symplectic form well-defined.
+
+3.  Internal time gauge, reducing the relevant local rotational symmetry to $`\mathrm{SU}(2)`$.
+
+4.  A four-dimensional first-order action with its overall Newton normalization and parity-even/parity-odd coefficient ratio fixed.
+
+These are standard inputs to the real connection formulation; they are not consequences of the mere existence of a coherent projector.
+
+## The normalized action datum
+
+We use the convention
 ``` math
 \begin{equation}
-\label{eq:PB-AB}
-\{A^{i}{}_{a}(x),\,E^{b}{}_{j}(y)\}
-= 8\pi G\,\gamma_{\mathrm{BI}}\,\delta^{i}{}_{j}\,\delta^{b}{}_{a}\,\delta^{(3)}(x,y).
+\label{eq:holst-action}
+ S_{r_H}[e,\omega]
+ =
+ \frac{1}{16\pi G}
+ \int_M
+ \left[
+  \frac12\varepsilon_{IJKL}\,
+       e^I\wedge e^J\wedge F^{KL}[\omega]
+  +r_H\,e_I\wedge e_J\wedge F^{IJ}[\omega]
+ \right]
+ +S_{\partial M}.
 \end{equation}
 ```
-which matches canonical LQG.
-
-</div>
-
-#### Hypotheses for the canonical sector.
-
-We work on $`(\Sigma,\bar q_{ab})`$ of bounded geometry in the (piecewise) analytic category used in LOST, with triads $`e^i{}_a`$ and torsion-free $`\Gamma^i{}_a(e)`$. The MTT 4D effective action on the coherent face contains Einstein–Hilbert and Holst terms with $`\Theta`$–dependent coefficients,
+For finite nonzero $`\gamma`$, our sign convention is
 ``` math
-S_{\mathrm{eff}}[e,\omega] =
-\alpha_{\mathrm{EH}}(\Theta)\int
-\epsilon_{IJKL}\,e^{I}\wedge e^{J}\wedge F^{KL}[\omega]
-\;+\;
-\alpha_{\mathrm{Holst}}(\Theta)\int e^{I}\wedge e^{J}\wedge F_{IJ}[\omega].
-\footnote{In standard conventions one writes
-$S_{\mathrm{Holst}} \propto \tfrac{1}{\gamma}\int e\wedge e\wedge F[\omega]$.
-Thus identifying $\alpha_{\mathrm{Holst}}(\Theta)\propto 1/\gamma$ yields
-$\gamma_{\mathrm{MTT}}(\Theta)=\alpha_{\mathrm{EH}}(\Theta)/\alpha_{\mathrm{Holst}}(\Theta)$.}
+\begin{equation}
+\label{eq:ratio}
+ r_H=-\frac{1}{\gamma}.
+\end{equation}
 ```
-so that $`\gamma_{\rm MTT}(\Theta):=\alpha_{\rm EH}(\Theta)/\alpha_{\rm Holst}(\Theta)`$. Performing the $`3{+}1`$ split and keeping the standard boundary term, the symplectic potential reduces in the coherent sector to
+Different sign and factor conventions in the literature change the displayed conversion, so a purported prediction of $`\gamma`$ is meaningless unless the complete normalized action convention is stated. Holst’s construction shows how the generalized Hilbert–Palatini action yields the real Barbero canonical formulation .
+
+## What the q79 branch currently supplies
+
+The current MTT gravity ledger supplies:
+
+1.  an exact finite internal transverse-traceless carrier at its declared algebraic tier;
+
+2.  a selected q79 Fu–Yau compactification route compatible with a heterotic completion;
+
+3.  a controlled, conditional reduction to the two-derivative Einstein/TEGR tensor shape after the required Lorentzian and normalization hypotheses are supplied; and
+
+4.  fixed-order quantum-GR effective-field-theory parity after the renormalized action, Wilson coefficients, state, scale, gauge fixing, and scheme are declared.
+
+No current selected result emits the parity-odd four-dimensional coefficient $`r_H`$ in <a href="#eq:holst-action" data-reference-type="eqref" data-reference="eq:holst-action">[eq:holst-action]</a>. Nor does it emit the global foliation, time gauge, LQG kinematical state, or quantum constraint operators. This is the status against which every theorem below is typed.
+
+# The exact conditional canonical embedding
+
+On a spatial slice $`\Sigma`$, let $`e^i_a`$ be the spatial triad and define the densitized triad
 ``` math
-\Theta_{\rm symp}
-= \frac{1}{8\pi G}\int_\Sigma E^a{}_i\,\delta A^i{}_a,
-\qquad
-\{A^i{}_a(x),E^b{}_j(y)\}
-= 8\pi G\,\gamma_{\rm MTT}(\Theta)\,\delta^i{}_j\,\delta^b{}_a\,\delta^{(3)}(x,y),
+\begin{equation}
+\label{eq:E}
+ E^a_i=\frac12\varepsilon^{abc}\varepsilon_{ijk}e^j_b e^k_c.
+\end{equation}
 ```
-i.e. with $`\gamma=\gamma_{\rm MTT}(\Theta)`$.
+Let $`\Gamma^i_a(E)`$ be the torsion-free spin connection compatible with the triad and let $`K^i_a`$ be the extrinsic-curvature one-form. For real $`\gamma\ne0`$, define
+``` math
+\begin{equation}
+\label{eq:A}
+ A^i_a=\Gamma^i_a+\gamma K^i_a .
+\end{equation}
+```
 
-<div class="remark">
+<div id="thm:holst-canonical" class="theorem">
 
-*Remark 2* (Holst and Nieh–Yan). Under (H3) and vanishing torsion, the Holst density differs from a topological Nieh–Yan term; the ratio of the Einstein–Hilbert and Holst coefficients fixes the Immirzi parameter via <a href="#eq:gamma-map" data-reference-type="eqref" data-reference="eq:gamma-map">[eq:gamma-map]</a> below. This also reproduces <a href="#eq:PB-AB" data-reference-type="eqref" data-reference="eq:PB-AB">[eq:PB-AB]</a>.
-
-</div>
-
-<div class="remark">
-
-*Remark 3* (Holst term from MTT). The MTT effective action on the 4D face contains, besides the Einstein–Hilbert term, a parity-odd piece of Holst type $`S_{\mathrm{Holst}}\!\propto\!\gamma^{-1}\!\int e\wedge e \wedge F[\omega]`$. The *ratio* of these two terms is fixed by modal overlap integrals, giving a prediction $`\gamma=\gamma_{\mathrm{MTT}}(\Theta)`$ (see §<a href="#subsec:ImmirziMap" data-reference-type="ref" data-reference="subsec:ImmirziMap">5</a>).
-
-</div>
-
-# Holonomy–flux algebra and the LOST representation
-
-Let $`\Gamma`$ be a piecewise analytic graph on $`\Sigma`$ with oriented edges $`e`$ and dual faces $`S`$. For $`A\in\mathcal{A}`$, define the holonomy $`h_e[A]\in \mathrm{SU}(2)`$ and flux $`E_i(S)=\int_S \epsilon_{abc}\,E^a_{\ i}\,\,\mathrm{d}x^b\wedge \,\mathrm{d}x^c`$.
-
-#### LOST hypotheses.
-
-We work with piecewise analytic graphs on $`\Sigma`$; the holonomy–flux $`*`$-algebra generated by $`\{h_e[A],E_i(S)\}`$; a diffeomorphism-invariant cyclic vector (the $`\Pi`$-induced vacuum); and continuity of parallel transport maps along edges. These are precisely the assumptions under which the Ashtekar–Lewandowski (AL) representation is unique (LOST).
-
-<div class="defn">
-
-**Definition 4** (Holonomy–flux \*-algebra). Cylindrical functions on graphs $`\gamma`$ form $`\mathcal{C}_\gamma`$; the holonomy–flux \*-algebra is generated by $`\{h_e, E_i(S)\}`$ with relations induced by <a href="#eq:PB-AB" data-reference-type="eqref" data-reference="eq:PB-AB">[eq:PB-AB]</a>, Gauss rotations, and spatial diffeomorphisms.
-
-</div>
-
-<div id="thm:LOST" class="theorem">
-
-**Theorem 5** (MTT$`\to`$LOST). *Let $`\mathfrak{A}`$ be the holonomy–flux $`*`$-algebra built from holonomies along piecewise-analytic edges and fluxes through piecewise-analytic surfaces on $`\Sigma`$. Assume: (i) $`\mathrm{Diff}_{\mathrm{an}}(\Sigma)`$ acts by automorphisms on $`\mathfrak{A}`$; (ii) there exists a $`\mathrm{Diff}^{\rm an}`$-invariant cyclic state $`\omega`$; and (iii) holonomies act continuously along analytic edges. Then the GNS representation of $`(\mathfrak{A},\omega)`$ is unitarily equivalent to the Ashtekar–Lewandowski representation with the AL measure on generalized connections. In the MTT embedding, (H1) and (H4) furnish (i)–(iii), hence LOST uniqueness applies. .*
+**Theorem 1** (Conditional Holst-to-canonical composition). *Suppose a selected MTT branch supplies the complete normalized action <a href="#eq:holst-action" data-reference-type="eqref" data-reference="eq:holst-action">[eq:holst-action]</a> with $`r_H\ne0`$, together with the tetrad, connection, $`3+1`$ splitting, time gauge, nondegeneracy, and boundary data listed in Section <a href="#sec:inputs" data-reference-type="ref" data-reference="sec:inputs">2</a>. Assume also that torsion is either absent or treated consistently with all matter and boundary contributions. Then the standard canonical reduction of that action yields the real Ashtekar–Barbero variables <a href="#eq:E" data-reference-type="eqref" data-reference="eq:E">[eq:E]</a>–<a href="#eq:A" data-reference-type="eqref" data-reference="eq:A">[eq:A]</a>, with
+``` math
+\gamma=-\frac1{r_H},
+```
+and canonical bracket
+``` math
+\begin{equation}
+\label{eq:bracket}
+ \{A^i_a(x),E^b_j(y)\}
+ =
+ 8\pi G\,\gamma\,
+ \delta^i_j\delta^b_a\delta^{(3)}(x,y)
+\end{equation}
+```
+in the stated normalization.*
 
 </div>
 
 <div class="proof">
 
-*Idea.* $`\Pi`$ eliminates non-harmonic (KK-like) sectors and enforces background independence on $`\Sigma`$; the induced GNS construction satisfies the LOST axioms, hence uniqueness of the AL representation. ◻
+*Proof.* Equation <a href="#eq:holst-action" data-reference-type="eqref" data-reference="eq:holst-action">[eq:holst-action]</a>, with $`r_H=-1/\gamma`$, is the Holst generalization of the Hilbert–Palatini action in the chosen convention. Perform its $`3+1`$ decomposition, impose the time gauge, solve the second-class connection conditions in the nondegenerate sector, and retain the boundary term required by the variational principle. The resulting symplectic potential has the canonical form
+``` math
+\Theta_{\Sigma}
+ =
+ \frac{1}{8\pi G\gamma}
+ \int_{\Sigma} E^a_i\,\delta A^i_a\,\mathrm d^3x
+ +\delta B,
+```
+where $`\delta B`$ is an exact field-space variation determined by the boundary convention. Its exterior field-space derivative removes $`\delta B`$ and gives
+``` math
+\Omega_{\Sigma}
+ =
+ \frac{1}{8\pi G\gamma}
+ \int_{\Sigma}
+ \delta E^a_i\wedge\delta A^i_a\,\mathrm d^3x .
+```
+Inverting this symplectic form gives <a href="#eq:bracket" data-reference-type="eqref" data-reference="eq:bracket">[eq:bracket]</a>. This is the standard Holst canonical reduction ; MTT enters only by supplying the theorem’s premise. ◻
 
 </div>
 
-<div class="cor">
+<div class="corollary">
 
-**Corollary 6** (Spin networks). *The AL kinematical Hilbert space is $`L^2(\overline{\mathcal{A}},\,\mathrm{d}\mu_{\mathrm{AL}})`$ with orthonormal basis of spin networks $`\psi_{\gamma,\{j_e\},\{\iota_v\}}`$.*
-
-</div>
-
-# Constraints and dynamics
-
-#### Constraints.
-
-The Gauss, diffeomorphism, and Hamiltonian constraints descend from MTT gauge/diffeomorphism invariance and from the fixed-point Hamiltonian in the $`3+1`$ split:
-``` math
-\begin{align}
-\mathcal{G}_i &= D_a E^a_{\ i} \approx 0,\qquad 
-\mathcal{V}_a = E^b_{\ i} F^i_{\ ab} - (1+\gamma^2)\,K^i_{\ a}\,\mathcal{G}_i \approx 0,\\
-\mathcal{H} &= \frac{E^a_{\ i} E^b_{\ j}}{\sqrt{\det E}}\left(\epsilon^{ij}\!_{k}\,F^k_{\ ab} - 2(1+\gamma^2)\,K^i_{\ [a}K^j_{\ b]}\right)\approx 0,
-\end{align}
-```
-where $`F^i_{\ ab}`$ is the curvature of $`A^i_{\ a}`$.
-
-#### Quantization.
-
-In the AL representation the Gauss/diffeomorphism constraints are implemented by group-averaging; for the Hamiltonian we may use Thiemann’s regularization or the Master-constraint .
-
-#### Domains and positivity.
-
-The Gauss and diffeomorphism constraints are implemented by group averaging on the cylindrical, diffeomorphism-invariant dense domain. The Master-constraint $`M=\int_\Sigma \frac{H^2}{\sqrt{\det E}}\,\mathrm{d}^3x`$ defines a positive quadratic form on the diffeo-invariant span of spin networks; closability and existence of a self-adjoint extension hold under the standard assumptions (cylindrical consistency and graph-changing regularisation).
-
-<div class="theorem">
-
-**Theorem 7** (Master-constraint in the MTT embedding). *There exists a positive, diffeomorphism-invariant Master-constraint $`\mathbf{M}=\int_\Sigma \frac{\mathcal{H}^2}{\sqrt{\det E}}\,\mathrm{d}^3x`$ whose quadratic form is well-defined on diffeo-invariant states induced by the $`\Pi`$-projected sector. Its kernel coincides with the simultaneous solution space of $`(\mathcal{G}_i,\mathcal{V}_a,\mathcal{H})`$ in the embedding.*
+**Corollary 2** (Exact location of the Immirzi blocker). *Current MTT gravity results do not determine a numerical Barbero–Immirzi parameter. They would determine one through $`\gamma=-1/r_H`$ if and only if the same selected four-dimensional source that fixes the Einstein normalization also emits a nonzero normalized parity-odd coefficient $`r_H`$.*
 
 </div>
 
-# Geometric operators and the Immirzi map
+<div class="proof">
 
-``` math
-\begin{equation}
-\label{eq:area-volume}
-\hat A(S)\,\psi
-= 8\pi\,\gamma_{\mathrm{BI}}\,\ell_{\mathrm P}^{2}\!
-\sum_{e\cap S}\!\sqrt{j_{e}(j_{e}+1)}\,\psi,
-\qquad
-\hat V(R)\,\psi
-= \sum_{v\in R}\sqrt{\hat Q_{v}}\,\psi,
-\end{equation}
-```
-where $`\widehat{Q}_v`$ is the standard, graph-local, gauge-invariant node operator built from fluxes at $`v`$. Both operators are essentially self-adjoint on the cylindrical domain. .
+*Proof.* The theorem converts a supplied coefficient into $`\gamma`$, but does not compute that coefficient. The present ledger contains no selected $`r_H`$-source row. Therefore the conversion map is exact and its input is open. ◻
 
-#### Predictive $`\gamma`$.
+</div>
 
-In the MTT reduction, the 4D effective action contains the Einstein–Hilbert term and a Holst-like term with coefficients given by *modal overlaps*:
-``` math
-\begin{equation}
-S_{\mathrm{MTT}\to 4\mathrm{D}} \;\sim\; \alpha_{\mathrm{EH}}(\Theta)\,\int \epsilon_{IJKL}\,e^I\wedge e^J\wedge F^{KL}
-\;+\; \alpha_{\mathrm{Holst}}(\Theta)\,\int e_I\wedge e_J\wedge F^{IJ} \,.
-\end{equation}
-```
-Matching to the canonical symplectic structure gives
-``` math
-\begin{equation}
-\label{eq:gammaMap}
-\gamma\;=\; \gamma_{\mathrm{MTT}}(\Theta)\;:=\;\frac{\alpha_{\mathrm{EH}}(\Theta)}{\alpha_{\mathrm{Holst}}(\Theta)}\,.
-\end{equation}
-```
+## Why an overlap symbol is not yet a prediction
 
-Matching the canonical symplectic form and <a href="#eq:PB-AB" data-reference-type="eqref" data-reference="eq:PB-AB">[eq:PB-AB]</a> fixes
+One may formally write coefficients $`\alpha_{\mathrm{even}}(\Theta)`$ and $`\alpha_{\mathrm{odd}}(\Theta)`$ and take their ratio. This is useful notation only after both functionals, their domains, normalization, branch, and evaluated values are supplied by the same source. Naming the second coefficient a “modal overlap” does not prove its existence or select its value. The earlier edition crossed precisely this gap.
+
+# Holonomy–flux kinematics and the LOST boundary
+
+Given the canonical pair, one may define holonomies $`h_e[A]\in\mathrm{SU}(2)`$ along suitable edges $`e\subset\Sigma`$ and fluxes $`E_i(S)`$ through suitable surfaces $`S`$. These generate a holonomy–flux algebra. This construction additionally chooses:
+
+1.  the category of edges and surfaces;
+
+2.  the precise algebra and its domains;
+
+3.  the action of spatial diffeomorphisms; and
+
+4.  a state or representation.
+
+<div id="prop:lost" class="proposition">
+
+**Proposition 3** (Conditional representation inheritance). *If the canonical data of Theorem <a href="#thm:holst-canonical" data-reference-type="ref" data-reference="thm:holst-canonical">1</a> are supplied and the resulting holonomy–flux algebra, diffeomorphism action, cyclic state, regularity, and domain data satisfy the exact hypotheses of a chosen LOST-type uniqueness theorem, then its GNS representation is the corresponding Ashtekar–Lewandowski representation.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* This is direct application of the uniqueness theorem to the supplied algebraic data . No additional MTT step is involved. ◻
+
+</div>
+
+The proposition is intentionally conditional. A bounded projector commuting with some diffeomorphisms does not automatically construct a positive normalized state on the full holonomy–flux algebra, establish its regularity, or verify all domain assumptions. The earlier “MTT to LOST” proof replaced these objects by an assertion that projection furnished them. That argument is withdrawn.
+
+# What is inherited after the representation exists
+
+## Spin networks and geometric operators
+
+In the Ashtekar–Lewandowski representation, spin networks provide a standard orthonormal basis of the kinematical Hilbert space $`\mathcal H_{\mathrm{kin}}=L^2(\overline{\mathcal A},\mathrm d\mu_{\mathrm{AL}})`$. The usual area operator acts schematically as
 ``` math
 \begin{equation}
-\label{eq:gamma-map}
-\gamma_{\rm BI}=\gamma_{\rm BI}^{\rm MTT}(\Theta):=\frac{\alpha_{\rm EH}(\Theta)}{\alpha_{\rm Holst}(\Theta)}\,,
+\label{eq:area}
+ \widehat A(S)\psi
+ =
+ 8\pi\gamma\ell_P^2
+ \sum_{e\cap S}
+ \sqrt{j_e(j_e+1)}\,\psi ,
 \end{equation}
 ```
+subject to the standard intersection and operator conventions. Volume operators are graph-local expressions in fluxes at vertices .
 
-so $`\gamma_{\rm BI}`$ is a *derived* constant determined by the bottleneck vector $`\Theta`$ (spectral gaps, harmonic norms, volumes, curvature/overlap integrals). This directly links LQG geometric spectra and black-hole microstate counts to the same modal data that govern gauge/Yukawa/EFT parameters.
+These spectra are inherited results of the chosen LQG representation and operator definitions. Compactness or finite projection alone does not imply the holonomy–flux commutation relations, the Ashtekar–Lewandowski measure, or the area and volume operators. Their discreteness is therefore not yet an independent prediction of MTT.
 
-<div id="thm:gammaMTT" class="theorem">
+## Classical and quantum constraints
 
-**Theorem 8** (Predictive Immirzi map). *Under the standing MTT hypotheses (bounded geometry, $`\Pi`$-projection, coherent fixed point), the canonical symplectic form induced by $`S_{\rm eff}`$ equals the Ashtekar–Barbero form with
+The time-gauge canonical reduction also produces the standard Gauss, spatial-diffeomorphism, and Hamiltonian constraint functions. Their quantization is a separate layer. It requires regularized operators, common or controlled domains, anomaly analysis, group averaging where applicable, and a construction of physical states. Choosing Thiemann’s Hamiltonian or master-constraint program imports a particular LQG proposal ; it is not forced by the MTT projector.
+
+Consequently, this paper does not claim that the kernel of an MTT-induced master constraint has been constructed. It records that such a continuation becomes available only after the representation and operator data are selected.
+
+# Covariant spin foams are a further construction
+
+The EPRL/FK route requires more than the Holst coefficient. At minimum one must provide:
+
+1.  a BF/Plebanski rewriting and the relevant simplicity constraints;
+
+2.  a discretization or two-complex and boundary Hilbert spaces;
+
+3.  the map from Lorentz representations to $`\mathrm{SU}(2)`$ boundary data;
+
+4.  face, edge, and vertex amplitudes, normalization, and measure; and
+
+5.  control of refinement, semiclassical asymptotics, and any continuum limit being claimed.
+
+With these inputs, standard EPRL/FK amplitudes and their established large-spin results may be studied . Neither the action <a href="#eq:holst-action" data-reference-type="eqref" data-reference="eq:holst-action">[eq:holst-action]</a> nor an MTT fixed point uniquely selects this packet.
+
+<div class="proposition">
+
+**Proposition 4** (Conditional EPRL/FK continuation). *If, in addition to Theorem <a href="#thm:holst-canonical" data-reference-type="ref" data-reference="thm:holst-canonical">1</a>, a selected MTT branch supplies the five items above in exactly the standard EPRL/FK form, then the resulting amplitudes inherit the corresponding EPRL/FK theorems, including only those asymptotic statements whose boundary data and nondegeneracy hypotheses are met.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Once the complete amplitude equals the standard amplitude on the same domain, the result follows by substitution into the established EPRL/FK analysis. The proposition is an equality-and-inheritance statement, not a derivation of the amplitude packet from MTT. ◻
+
+</div>
+
+# No automatic ultraviolet transfer
+
+The MTT SPT construction is presently a finite Euclidean transverse-traceless filter at its declared tier. A function that damps a perturbative propagator does not automatically become a spin-foam face or vertex weight. Such a transfer would have to prove:
+
+1.  a map from the filtered continuum or internal operator to the representation labels of a two-complex;
+
+2.  cylindrical or refinement consistency of the induced weights;
+
+3.  compatibility with gauge and simplicity constraints; and
+
+4.  preservation of the intended semiclassical and unitarity properties.
+
+No such map is currently selected. The old claim that SPT suppression persists in the background-independent spin-foam sum is therefore withdrawn.
+
+# Relation to the q79 heterotic route
+
+The q79 Fu–Yau branch and the LQG interface answer different questions. The former is the current candidate for a selected internal compactification and a conditional heterotic ultraviolet completion. The latter is a canonical quantization interface for an effective four-dimensional gravitational sector. They may be compatible, but neither contains the other automatically.
+
+For a same-source bridge, the q79 reduction must emit the complete four-dimensional first-order action, including $`G`$, boundary terms, torsion/matter contributions, and $`r_H`$. Only then can Theorem <a href="#thm:holst-canonical" data-reference-type="ref" data-reference="thm:holst-canonical">1</a> transport the result into real connection variables. A worldsheet completion would still not prove the LOST state or a spin-foam continuum limit; those remain distinct lower-dimensional quantization choices.
+
+# Result ledger and exit contract
+
+<div class="center">
+
+| Layer | Status | Required object or result |
+|:---|:---|:---|
+| Finite internal TT carrier | Available | Exact at its declared finite algebraic tier |
+| Einstein/TEGR tensor shape | Conditional | Lorentzian branch and normalization hypotheses |
+| Normalized Holst ratio $`r_H`$ | Open | Same-source parity-odd four-dimensional coefficient |
+| Ashtekar–Barbero pair | Conditional exact | Theorem <a href="#thm:holst-canonical" data-reference-type="ref" data-reference="thm:holst-canonical">1</a> |
+| LOST/AL representation | Open inheritance | Exact algebra, state, symmetry, regularity, and domains |
+| Area/volume spectra | Open inheritance | AL representation and standard operators |
+| Quantum constraints | Open | Regularization, domains, anomalies, and physical-state construction |
+| EPRL/FK amplitudes | Open | BF/simplicity/discretization/amplitude packet |
+| SPT-to-spin-foam UV map | Open | Explicit cylindrically consistent weight map |
+
+</div>
+
+The shortest decisive next calculation is not a numerical entropy fit. It is the emission, from the same selected q79 source as the parity-even gravitational term, of the normalized parity-odd coefficient $`r_H`$ with a proven four-dimensional reduction and convention certificate. A successful result would immediately select $`\gamma`$ through $`\gamma=-1/r_H`$. A proof that the coefficient vanishes would instead show that this particular Holst-derived finite-$`\gamma`$ bridge is unavailable.
+
+# Discussion
+
+The corrected conclusion is still useful. MTT and LQG are not being declared equivalent, and LQG is not being derived from projection alone. Rather, the two programs meet at a sharply typed interface. MTT is asked to select a specific normalized effective action. LQG supplies a well-developed canonical and quantum-geometric continuation once its own hypotheses are chosen.
+
+This division makes the comparison testable. A selected MTT action with a nonzero parity-odd ratio predicts a value of $`\gamma`$, which then enters LQG geometric spectra and any chosen horizon-state counting. If no such coefficient is emitted, there is no MTT Immirzi prediction. If the selected action or state fails the canonical or representation hypotheses, the LQG embedding fails at the corresponding row rather than being rescued by a change of interpretation.
+
+# Version 4 revision note
+
+This edition replaces the former derivation claim with a conditional embedding theorem. It removes the unsupported assertions that the coherent projector supplies the LOST state, quantum constraints, master-constraint kernel, EPRL/FK amplitudes, spin-foam ultraviolet damping, black-hole entropy normalization, or loop-cosmology parameters. It also withdraws the claimed computed Immirzi parameter. The exact Holst coefficient-to-$`\gamma`$ map is retained, with its normalization convention and missing MTT source identified explicitly.
+
+# Conclusion
+
+MTT currently has a precise route to LQG, not a completed derivation of LQG. The route is:
 ``` math
-\gamma=\gamma_{\rm MTT}(\Theta)=\frac{\alpha_{\rm EH}(\Theta)}{\alpha_{\rm Holst}(\Theta)}.
+\begin{aligned}
+ \text{q79 selected four-dimensional action}
+ &\longrightarrow \text{normalized Holst coefficient}\\
+ &\longrightarrow \text{Ashtekar--Barbero variables}\\
+ &\longrightarrow \text{separately supplied LQG quantization layers}.
+\end{aligned}
 ```
-Consequently, the spectra of $`\widehat{A}(S)`$ and $`\widehat{V}(R)`$ are the standard LQG spectra with this value of $`\gamma`$, and black-hole microstate counting constraints on $`\gamma`$ become constraints on $`\Theta`$.*
-
-</div>
-
-<div class="remark">
-
-*Remark 9* (Cross-checks). (i) Black-hole entropy fixes $`\gamma`$ in LQG microstate counts, giving a test of <a href="#eq:gammaMap" data-reference-type="eqref" data-reference="eq:gammaMap">[eq:gammaMap]</a>. (ii) Semiclassical weave/coherent states provide an independent constraint via area/volume calibration.
-
-</div>
-
-# Covariant dynamics from MTT: BF + simplicity $`\Rightarrow`$ EPRL/FK
-
-#### Holst/Plebanski form.
-
-The MTT action in the 4D face admits a BF-like rewrite with simplicity constraints. Imposing simplicity with the $`\gamma`$-dependent linear constraints yields the EPRL/FK vertex amplitude on 2-complexes dual to triangulations .
-
-We use the Holst/Plebanski rewrite with linear simplicity constraints adapted to $`\gamma_{\rm BI}`$; imposing them weakly in the boundary Hilbert space yields EPRL/FK vertex amplitudes. In the large-spin asymptotics ($`j\to\infty`$ with areas fixed), stationary phase analysis reproduces Regge gravity with the correct Immirzi dependence.
-
-#### Simplicity constraints.
-
-We impose the linear simplicity constraints corresponding to $`\gamma_{\rm MTT}(\Theta)`$ so that $`SL(2,\mathbb{C})`$ representations $`(\rho,k)`$ map to $`SU(2)`$ spins $`j`$ via the standard $`\gamma`$-dependent embedding (e.g. $`j=k`$, $`\rho=\gamma k`$). This fixes the EPRL/FK vertex labelling and ensures the correct Holst dependence in the large-spin asymptotics.
-
-We employ the standard embedding for (unitary) principal series labels $`(\rho,k)`$ into $`SU(2)`$ spins via $`j=k,\quad \rho=\gamma_{\mathrm{BI}}\,k,`$ so that boundary $`SU(2)`$ spins and intertwiners are $`\gamma_{\mathrm{BI}}`$–compatible with the Holst term.
-
-<div class="theorem">
-
-**Theorem 10** (Spin–foam emergence). *The MTT path integral on the coherent sector reduces, after BF + simplicity reduction with the ratio <a href="#eq:gammaMap" data-reference-type="eqref" data-reference="eq:gammaMap">[eq:gammaMap]</a>, to a spin–foam sum with EPRL/FK vertex weights. In the large-spin limit the amplitude reproduces Regge gravity with the correct Barbero–Immirzi dependence.*
-
-</div>
-
-<div class="remark">
-
-*Remark 11* (Compatibility with the UV-finite QG sector). The Stieltjes/Bernstein two-point structure and SPT Gaussian damping derived in the perturbative MTT QG sector persist in the background-independent sum as vertex/face amplitude suppressions at large momenta, consistent with cylindrical consistency and diffeomorphism invariance.
-
-</div>
-
-# Semiclassical sector and cosmology
-
-#### Complexifier coherent states.
-
-Using Thiemann’s complexifier construction adapted to the MTT symplectic form, one obtains semiclassical states peaked on $`(A,E)`$ reproducing classical geometry at scales $`\gg \ell_P`$ .
-
-#### Weave states.
-
-MTT-induced spin networks with typical edge spacing $`\ell\sim \ell_P`$ and label distribution set by $`\Theta`$ act as weaves approximating a given classical metric on $`\Sigma`$.
-
-#### Loop quantum cosmology (outline).
-
-The MTT $`\to`$ LQG map specializes to homogeneous/isotropic symmetry reduction, yielding effective Friedmann equations with a bounce at critical density $`\rho_c\propto 1/\gamma^3`$ times MTT scalings; thus $`\rho_c`$ is ultimately a function of $`\Theta`$ via <a href="#eq:gammaMap" data-reference-type="eqref" data-reference="eq:gammaMap">[eq:gammaMap]</a> (testable in early-universe scenarios).
-
-In standard LQC reductions one finds a critical density scaling $`\rho_c\propto \gamma_{\rm BI}^{-3}`$ (in natural units), so <a href="#eq:gamma-map" data-reference-type="eqref" data-reference="eq:gamma-map">[eq:gamma-map]</a> makes $`\rho_c`$ a function of $`\Theta`$. Coherent-state calibration of $`\widehat{A}`$ and $`\widehat{V}`$ then provides an independent semiclassical test of $`\gamma_{\rm BI}^{\rm MTT}(\Theta)`$.
-
-# Consistency with MTT’s perturbative QG finiteness
-
-#### Kinematics.
-
-The AL representation and holonomy–flux algebra are consistent with OS positivity and causal support of TT two-point functions when probing around the coherent point (no conflict with background independence).
-
-#### Dynamics.
-
-SPT factorization implies an *effective* Gaussian damping on internal graviton lines of Feynman-like expansions of spin–foam transition amplitudes, preserving cylindrical consistency while ensuring UV suppression in mixed representations.
-
-#### Relation to overlaps.
-
-The same $`\Theta`$ that fixes $`\gamma_{\rm BI}`$ in <a href="#eq:gamma-map" data-reference-type="eqref" data-reference="eq:gamma-map">[eq:gamma-map]</a> appears throughout the Superset overlaps (Planck mass, gauge couplings, Yukawas, EFT/KK scales), so LQG geometric spectra are predicted jointly with non-gravitational observables; see the Superset discussion of bottlenecks and global fits.
-
-<div class="lemma">
-
-**Lemma 12** (Gaussian suppression in mixed representations). *In the $`\Pi`$-projected coherent sector, internal graviton propagators entering Feynman-like expansions of spin-foam transition amplitudes carry an entire/Gaussian form factor with scale set by the MTT spectral gap. Consequently, large-momentum (or large-spin with fixed geometry) sectors are exponentially suppressed, compatibly with cylindrical consistency.*
-
-</div>
-
-#### Coherence with the perturbative sector.
-
-The Stieltjes/Bernstein positivity of TT two-point functions, causal support properties, and the all-orders BV/QME renormalisation established in the perturbative MTT QG construction carry over here at the level of kinematics and regulator removal; see the companion QG paper for full details.
-
-# Conclusions and tests
-
-We have constructed a direct MTT$`\to`$LQG embedding, fixed the Barbero–Immirzi parameter by modal overlaps, and matched both canonical and covariant LQG structures. Key tests:
-
-- **Black-hole entropy:** Check that $`\gamma_{\mathrm{MTT}}(\Theta)`$ matches the value required by microstate counting within uncertainties.
-
-- **Semiclassical calibration:** Compare area/volume expectation values on weave/coherent states to classical geometry induced by the MTT fixed point.
-
-- **Cosmology:** Use $`\gamma_{\mathrm{MTT}}(\Theta)`$ in LQC phenomenology (e.g. $`\rho_c`$) and confront with data.
-
-- **Amplitudes:** Verify Regge asymptotics and form-factor suppression scale derived from the SPT map.
-
-#### Outlook.
-
-Extend the EPRL/FK derivation to include matter (gauge and fermions) from the same modal overlaps; quantify the relation between $`\gamma_{\mathrm{MTT}}`$ and the UV-finite QG form factor at low spin; develop global fits in which $`\gamma`$ is predicted jointly with gauge/Yukawa parameters.
-
-[^1]: See the Superset overview for modules and standing assumptions.
-
-[^2]: These are exactly the modules used in your Superset paper.
+Only the middle implication is proved here, conditional on its input. This places the frontier at a concrete source coefficient and prevents standard LQG results from being counted twice as MTT results.

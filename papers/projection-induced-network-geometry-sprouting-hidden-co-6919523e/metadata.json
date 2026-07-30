@@ -48,15 +48,15 @@
       "sha256": "bf63dbf18d5800d543ce3421d3aa732ca6bfb857b83d627b86c29f4e550d0fcd"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Projection_Induced_Network_Geometry (1)"
   },
-  "source_tree_sha256": "7ef0d9b4983389c2be1af80e14ecc6432368a1fa184151873df52dea96f4abf1",
+  "source_tree_sha256": "f7d6308f600932075ec96be14938715da2144ecd67ccf661e0124e4ae40370d0",
   "title": "Projection-Induced Network Geometry Sprouting, Hidden Correlations, and Boundary Stabilization from Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

@@ -3,10 +3,9 @@
 \usepackage{mathrsfs}
 
 \title{Closure Geometry and a Regime-Local\\
-Ten-Dimensional Action Ansatz\\
-\large Corrected fourth edition}
+Ten-Dimensional Action Ansatz}
 \author{Peter Nero}
-\date{July 2026}
+\date{Corrected fourth edition\\July 2026}
 
 \begin{document}
 \maketitle
@@ -40,7 +39,9 @@ positivity, nil language, and nonuniform strain were also promoted directly to
 mass, one Higgs, quantization, and curvature.
 \item[Resolution.] Version~4 declares a regime-local EFT ansatz, lists omitted
 operators, and supplies separate pole-mass, alignment-projector,
-compact-resolvent, curvature, and consistent-truncation gates.
+compact-resolvent, curvature, and consistent-truncation gates.  This edition
+also adds a reader map and a worked compactification example so that the role
+of each gate can be followed without treating the action as a theorem list.
 \item[Retained result.] The action remains a useful conditional synthesis and
 can host the currently certified finite-SM profile branch.
 \item[Remaining boundary.] A same-source q79 action, normalized zero modes,
@@ -73,6 +74,28 @@ declared compactification;
 
 The component identity $1+3\times3=4+6$ motivates a local comparison carrier
 but supplies none of these global inputs.
+
+\paragraph{How the argument should be read.}
+There are four logically different stages:
+\[
+\begin{gathered}
+\boxed{\text{declared geometry and fields}}
+\longrightarrow
+\boxed{\text{action ansatz}}\\
+\Downarrow\\[-1mm]
+\boxed{\text{equations and mode reduction}}
+\longrightarrow
+\boxed{\text{renormalized observables}} .
+\end{gathered}
+\]
+An implication within this chain can be derived once the object on its left
+has been fixed.  The chain as a whole is not thereby selected by MTT.  In
+particular, varying an assumed ten-dimensional action rigorously derives its
+field equations, but it does not prove that this is the unique action chosen
+by closure geometry.  The separate gates below answer four practical
+questions: which quadratic coefficients are masses, which scalar modes form a
+Higgs doublet, why the internal spectrum is discrete, and when discarding
+heavy modes is legitimate.
 
 \section{Fields and typed geometry}
 
@@ -124,14 +147,33 @@ Equation~\eqref{eq:action} imports the Einstein--Hilbert term and a Lorentzian
 metric.  It therefore realizes gravity; it does not derive gravity from strain
 or projection.
 
+Each displayed term has a distinct job.  The $R_{10}$ term determines the
+metric response, $F^2$ supplies gauge propagation, $G_{AB}D\phi^A D\phi^B$
+defines the scalar normalization, $V$ and $\mathcal M$ supply quadratic and
+interaction coefficients, and $\mathcal L_{H,B,\Phi}$ carries the
+flux--torsion sector.  Varying these fields gives, schematically,
+\[
+\frac{\delta S_{10}}{\delta g_{10}}=0,\qquad
+\frac{\delta S_{10}}{\delta A}=0,\qquad
+\frac{\delta S_{10}}{\delta\phi}=0,\qquad
+\frac{\delta S_{10}}{\delta\overline\Psi}=0.
+\]
+These equations are consequences of the ansatz.  Their coefficients remain
+inputs unless an upstream source theorem derives them from the selected q79
+geometry.  This distinction is important: an internally consistent solution
+of the field equations tests the assumed model, whereas source selection
+explains why that model and those coefficients apply.
+
 \subsection{Omitted operators}
 
 Unless forbidden by a stated symmetry, the effective action can also contain
 \[
+\begin{gathered}
  R^2,\quad R_{MN}R^{MN},\quad R_{MNPQ}R^{MNPQ},\quad
- RF^2,\quad F^3,\quad F^4,\quad (D\phi)^4,\quad
- R(D\phi)^2,\quad \phi^n,\quad
- \overline\Psi\Gamma\Psi D\phi,
+ RF^2,\quad F^3,\quad F^4,\\
+ (D\phi)^4,\quad R(D\phi)^2,\quad \phi^n,\quad
+ \overline\Psi\Gamma\Psi D\phi ,
+\end{gathered}
 \]
 torsion and Chern--Simons terms, higher fermion operators, and higher
 derivatives.  A truncation must bound their contribution by powers of
@@ -221,6 +263,38 @@ group, nil boundary, or divergent cost does not by itself imply compact
 resolvent or isolated minima.  Moreover, spectral discreteness is not a
 derivation of quantum probabilities.  Quantization still requires a state
 space, observable algebra, dynamics, constraints, and probability rule.
+
+\section{A concrete compactification foothold}
+
+The simplest model showing what the spectral and reduction statements do is
+not the selected q79 geometry but a product
+$M_{10}=Y_4\times T^6$ with circle radii $R_i$.  For a real scalar of
+ten-dimensional mass $\mu$, normalized Fourier modes give
+\[
+\Phi(x,y)=
+\sum_{\mathbf n\in\mathbb Z^6}
+\phi_{\mathbf n}(x)
+\prod_{i=1}^{6}
+\frac{\exp(i n_i y_i/R_i)}{\sqrt{2\pi R_i}},
+\qquad
+m_{\mathbf n}^2
+=\mu^2+\sum_{i=1}^{6}\frac{n_i^2}{R_i^2}.
+\]
+Compactness has turned the internal differential operator into a discrete
+mass tower.  The zero mode has mass $\mu$, while the first discarded mode is
+separated by a gap of at least
+$\min_i R_i^{-2}$ in squared mass.  This is the elementary mechanism abstracted
+by the compact-resolvent theorem.
+
+For translation-invariant polynomial interactions, a field that is constant
+on $T^6$ remains constant under multiplication.  The zero-mode sector then
+closes on itself and setting every nonzero mode to zero is an exact consistent
+truncation.  If the background coefficients depend on $y$, or if retained
+nonzero modes multiply to source discarded momenta, that closure fails and
+the Schur--Feshbach estimate below is needed.  Thus ``the heavy modes have a
+large mass'' and ``the heavy modes are not sourced'' are different claims.
+The example explains the logic only; it neither identifies the q79 fiber with
+$T^6$ nor supplies the missing q79 overlap kernels.
 
 \section{Curvature and integrability}
 
@@ -349,6 +423,59 @@ canonical pole normalization, gauge consistency, and controlled reduction.
 The next decisive construction is the same-source q79 intertwiner followed by
 evaluation of the action's normalized internal rows.
 
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The action written here remains a regime-local ansatz. The exact q=79, finite-action, anomaly, HYM, and internal TT packets constrain or instantiate ingredients used by the ansatz, but they do not derive its continuum action, physical normalization, or ultraviolet completion. Profile rows are retained only as cross-checks on the lower effective target.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/direct_k_higgs_row} (\emph{derived exact}).\par Promoted direct K\_threshold.Omega\_H.lambda row.
+\item \path{A22/e6_qpsi_qcd_anomaly} (\emph{derived exact}).\par E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+\item \path{A13/gr_tt_support} (\emph{derived exact}).\par Exact-branch internal TT support certificate; physical normalization remains open.
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A11/q79_exact_audit} (\emph{derived exact}).\par Executable q=79 exact-branch audit.
+\item \path{A11/q79_exact_theorem} (\emph{derived exact}).\par CRT q=79 theorem on the selected exact branch.
+\item \path{A01/qutrit_weyl_27_matrix} (\emph{derived exact}).\par Sparse 27x27 qutrit-Weyl left-action realization.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/charged_yukawa_higgs_profile} (\emph{profile replay}).\par Versioned Yu, Yd, Ye and lambda\_H profile packet.
+\item \path{A14/ckm_prediction_profile} (\emph{numeric certified}).\par Three selected CKM profile rows and uncertainty comparison.
+\item \path{A01/current_global_lock} (\emph{profile replay}).\par Current non-looping global status and source-certificate map.
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\item \path{A40/neutral_two_primitive_profile} (\emph{profile replay}).\par Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+\item \path{A02/precision_15_source_transport} (\emph{profile replay}).\par Fifteen measured source coordinates, Jacobian and covariance transport.
+\item \path{A02/precision_8x8_workspace} (\emph{profile replay}).\par Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+\item \path{A01/strict_pew_row} (\emph{derived exact}).\par Promoted P\_EW source row at the declared one-shared-primitive standard.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
+
 \begin{thebibliography}{9}
 \bibitem{WeinbergEFT}
 S.~Weinberg, \emph{The Quantum Theory of Fields, Vol. II}, Cambridge
@@ -363,5 +490,7 @@ complex Monge--Ampere equation}, J. Differential Geom. 78 (2008).
 P.~Nero, \emph{MTT Current True SM Closure Consolidated Ledger}, internal
 theorem and verification packet, 2026.
 \end{thebibliography}
+
+
 
 \end{document}

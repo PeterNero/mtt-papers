@@ -1,59 +1,59 @@
 {
-  "abstract": "We rebuild curvature coupling and structural transitions on the corrected FP\u2013I\u2013III spine. A Laplace-type operator is normalized as L=\\nabla^\\ast\\nabla+\\mathcal R. Curvature can shift the spectral cluster, mix coherent and noncoherent sectors, and create a leakage floor. If \\|\\mathcal R\\|<\\lambda_\\ast/2, the full curved operator retains a separated low cluster and defines a new Riesz projector; if one retains the unperturbed projector, the term Q\\mathcal RP must appear explicitly. Centroids are defined intrinsically by a Karcher mean inside a convex normal ball. A first-order gradient parent flow yields a first-order modulation law; a Newtonian law requires a separately specified inertial parent equation. Absolute interaction bounds give |E_{\\rm int}|\\le C\\mathcal O, while attraction or repulsion needs a sign hypothesis. Structural transitions are controlled by a Lyapunov mountain-pass/work theorem, and exit detection is separated from selection of the post-transition basin. We also state the exact projective-module transport and finite-reduction boundary: a supplied connection and its Hessian transport naturally, bare compression is exact only on an invariant subspace, and otherwise the Feshbach or reduced-Green operator is required.",
+  "abstract": "We develop curvature coupling and structural transitions on the canonical Fixed Points I\u2013III spine. A Laplace-type operator is separated into its connection Laplacian and curvature contribution. Curvature can shift the spectral cluster, mix coherent and noncoherent sectors, and create a leakage floor. When the curvature term is smaller than half the unperturbed spectral gap, the full curved operator retains a separated low cluster and defines a new Riesz projector; retaining the unperturbed projector instead requires an explicit leakage term. Centroids are defined intrinsically by a Karcher mean inside a convex normal ball. A first-order gradient parent flow yields a first-order modulation law, while a Newtonian law requires a separately specified inertial parent equation. Absolute interaction bounds do not determine attraction or repulsion without a sign hypothesis. Structural transitions are controlled by a Lyapunov mountain-pass and work theorem, and exit detection is separated from selection of the post-transition basin. We also state the projective-module transport and finite-reduction boundary: a supplied connection and its Hessian transport naturally, bare compression is exact only on an invariant subspace, and otherwise the Feshbach or reduced-Green operator is required.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v5",
-  "date": "July 2026",
+  "current_version": "v6",
+  "date": "July 2026 Version 6",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949426",
-    "created": "2026-01-09T21:59:00.828026+00:00",
+    "created": "2026-07-29T08:50:50.714376+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18202984",
+    "doi": "10.5281/zenodo.21655378",
     "files": [
       {
-        "checksum": "md5:169ed1621394501b183fcec8328ecd6c",
-        "content_url": "https://zenodo.org/api/records/18202984/files/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v3%20(2).pdf/content",
-        "key": "Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v3 (2).pdf",
-        "size": 264073
+        "checksum": "md5:942d8ac0b7ba272264fd45db7e3f83c8",
+        "content_url": "https://zenodo.org/api/records/21655378/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 367717
       }
     ],
-    "id": "18202984",
-    "match_kind": "title_or_file",
+    "id": "21655378",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-09",
-    "record_url": "https://zenodo.org/records/18202984",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21655378",
     "resource_type": "publication",
-    "title": "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions on Bundle Manifolds",
-    "updated": "2026-01-09T21:59:01.201032+00:00",
-    "version": "v2.0"
+    "title": "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions",
+    "updated": "2026-07-29T08:50:51.050932+00:00",
+    "version": "v6"
   },
-  "main_tex_sha256": "99056c23cd96f8a7ec1268117b81463376d7819c2669b3e6ed42a55d0db306ef",
+  "main_tex_sha256": "5630bc74869a8a4d726c13b5853da796041065c6a6b604b30c7e77c43ca671a1",
   "paper_id": "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce",
-  "paper_md_sha256": "7aa20b7f6186defc3ab0abf908cd615633cdbccfda4fc3f054ee7235e2bf5283",
+  "paper_md_sha256": "46322e0c722b9961b35c86566ca9bb7fcb15f8df2fe1b1b50716c38a2f86b817",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "fe8bec06e6028cb8e1ef49ae30a3c622c684e5da3b106385bf14663a107bf456",
+    "revision_evidence_sha256": "48521fafe126601039df046c48aac13d76f8301c42bf53fe48f5acd29fbbfc3f",
     "selected_revision": true,
     "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 354008,
+      "bytes": 367717,
       "path": "main.pdf",
-      "sha256": "6dff56c3bd477b263a4332c4a8bedb97e8c6dec91bb5bedec3caae16f4e521be"
+      "sha256": "3416a92a0650aaf283a38f5307b7590c51e685e053edf03b1788bfa59a95e935"
     },
     {
-      "bytes": 17257,
+      "bytes": 25210,
       "path": "main.tex",
-      "sha256": "99056c23cd96f8a7ec1268117b81463376d7819c2669b3e6ed42a55d0db306ef"
+      "sha256": "5630bc74869a8a4d726c13b5853da796041065c6a6b604b30c7e77c43ca671a1"
     },
     {
       "bytes": 3592,
@@ -61,23 +61,73 @@
       "sha256": "53ac02751e592e3cfc713381c0c9b0d2c38417b497e78cf2ed09b9aa58ce7ba5"
     },
     {
-      "bytes": 5511,
+      "bytes": 6894,
       "path": "REVISION_AUDIT.md",
-      "sha256": "fe8bec06e6028cb8e1ef49ae30a3c622c684e5da3b106385bf14663a107bf456"
+      "sha256": "48521fafe126601039df046c48aac13d76f8301c42bf53fe48f5acd29fbbfc3f"
     },
     {
-      "bytes": 15705,
+      "bytes": 15299,
       "path": "series.sty",
-      "sha256": "deaaf90be0b98130189531a83e121ad3934803f4844f2b10571046aec3b3ed3f"
+      "sha256": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4"
   },
-  "source_tree_sha256": "cf8c27f3bd2c0c58c387187a6229701ccbabf3c7ffbb46f9b19e1538174b7946",
+  "source_tree_sha256": "7428fb6a8e7951bb77dd47392a8e2a3fbbd1e82da89cb5a0c3fe053ccd533014",
   "title": "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.16949426",
+      "created": "2026-07-29T08:50:50.714376+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655378",
+      "files": [
+        {
+          "checksum": "md5:942d8ac0b7ba272264fd45db7e3f83c8",
+          "content_url": "https://zenodo.org/api/records/21655378/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 367717
+        }
+      ],
+      "id": "21655378",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655378",
+      "resource_type": "publication",
+      "title": "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions",
+      "updated": "2026-07-29T08:50:51.050932+00:00",
+      "version": "v6"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949426",
+      "created": "2026-07-28T16:40:32.631141+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650435",
+      "files": [
+        {
+          "checksum": "md5:be16e1c13de36a0d25315f65cf3de228",
+          "content_url": "https://zenodo.org/api/records/21650435/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 354008
+        }
+      ],
+      "id": "21650435",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650435",
+      "resource_type": "publication",
+      "title": "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions",
+      "updated": "2026-07-28T16:40:32.913633+00:00",
+      "version": "v5"
+    },
     {
       "concept_doi": "10.5281/zenodo.16949426",
       "created": "2026-01-09T21:59:00.828026+00:00",

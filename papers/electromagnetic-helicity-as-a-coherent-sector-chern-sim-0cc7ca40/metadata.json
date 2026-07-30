@@ -48,15 +48,15 @@
       "sha256": "306c66c45f22d84515b5261dac6d7811bc58ef55e80b1c86f1431ceac3882b42"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/Electromagnetic_Helicity_as_a_Coherent_Sector__Chern__Simons_Functional_in_Modal_Triplet_Theory_v2"
   },
-  "source_tree_sha256": "196a03fc6d7b0a0052954dd55256a9f3f0d62cf747b200c277e4bda6777657ee",
+  "source_tree_sha256": "5e238dcea7b9f5eb0c9b815b3e820a7e45c0a14552bc1627af86142ba2a2709c",
   "title": "Electromagnetic Helicity as a Coherent-Sector Chern\u2013Simons Functional in Modal Triplet Theory Rank-One Abelian Sector, Correct Hopf Normalization, and Admissibility-Controlled Remainders",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

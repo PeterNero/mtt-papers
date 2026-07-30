@@ -1,4 +1,15 @@
-# Program C revision audit
+# Program C v3 Release Audit
+
+## v3 publication delta
+
+- **Supersedes:** v2.
+- **Reason:** the type dictionary required concrete reading examples so ranks
+  and matching component counts would not be mistaken for a global map.
+- **Resolution:** add a modal-lane example and translation workflow while
+  leaving the continuum intertwiner explicitly open.
+- **Retained:** all v2 type and operator results.
+- **Remaining:** physical source selection, action, HYM pair, continuum
+  Hessian, Born source, and worldsheet.
 
 ## Selected revision
 
@@ -273,3 +284,18 @@ paper's purpose but replaces its realization logic, central theorems, and
 physical comparison sections. The Zenodo release should therefore be uploaded
 as a new major paper version with this audit included in the repository
 record.
+
+## Expository revision, 2026-07-28
+
+The corrected theorem set and live frontier are unchanged. The paper now opens
+as a translation manual with a concrete modal lane
+`(Hermitian bundle, connection Laplacian, spectral projector)`, an explicit
+five-step realization pipeline, and a map of the paper's argument.
+
+An equal-rank counterexample using the trivial and Hopf line bundles makes type
+noninterchangeability concrete. Further interpretation explains that strong
+commutation certifies simultaneous spectral tests but neither independence nor
+nonempty survival, and that the local strain theorem and q=79 carrier are
+verified endpoints whose connection still depends on the declared continuum
+intertwiner. No open physical row was promoted or new canonical theorem
+duplicated.

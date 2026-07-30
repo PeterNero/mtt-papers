@@ -29,15 +29,15 @@
       "sha256": "9c9b073f278d04d4f5f3963fdc3fcd829e1bbe4374860ba64b726b5b6b218e92"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Path_Integral_Constraints_as_Finite_Admissibility_Filters"
   },
-  "source_tree_sha256": "74cbcaa1d09889f2cb68d496013a2c1b2940b91e948141edcfde21d0eddd18d2",
+  "source_tree_sha256": "d659f8e77932ef9219e77c63e29bdf817d75808b6b0dc173ad5d03a8ba582b81",
   "title": "Path Integral Constraints as Finite Admissibility Filters Delta Functionals, Soft Constraints, and Projection in Modal Triplet Theory",
   "version_relation": "unknown",
   "zenodo_releases": []

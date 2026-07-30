@@ -24,9 +24,9 @@
       "sha256": "173e420f48f4f521ad9ab10889df18f9923c5b2321f27f19ee1266e1a8c10885"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     {
       "bytes": 54737,
@@ -37,7 +37,7 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Wave__Particle_Duality_as_Projection_Duality_in_Modal_Triplet_Theory_v4"
   },
-  "source_tree_sha256": "b0fb84f617e1c8b2ea306a5ac876766ebf93641564cfb9736d72082d3451bb63",
+  "source_tree_sha256": "6fae39c221b805d88626302efaa424ff868c07444788ad1f207bd7294e514596",
   "title": "Wave\u2013Particle Duality as Projection Duality in Modal Triplet Theory Pointlike Delta Shadows and Wavelike Spectral Shadows of a Single Coherent Kernel",
   "version_relation": "unknown",
   "zenodo_releases": []

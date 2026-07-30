@@ -38,10 +38,11 @@ pair protocols; it does not identify projection alone as the cause.
 We prove the standard bound $-3\leq K\leq1$ from the common-joint-distribution
 contract.  We prove conditional no-retro-signaling for a causal sequential
 instrument model and distinguish it from noninvasive measurability and
-no-signaling in time.  We also prove a non-selection result: projection or
+no-signaling in time.  A simple comparison shows why projection or
 global-history language without dynamics, instruments, and a probability
-source supports both Leggett--Garg-satisfying and violating realizations.
-Finally, an explicit qubit, unitary, and L\"uders-instrument packet gives
+source can support both Leggett--Garg-satisfying and violating realizations;
+this is a scope check, not a new projection theorem.  Finally, an explicit
+qubit, unitary, and L\"uders-instrument packet gives
 $K=3/2$.  This is a standard quantum operational realization.  It becomes
 an MTT result only if a selected MTT source descends to that same packet.
 Thus global consistency remains a possible mechanism for temporal
@@ -49,6 +50,53 @@ contextuality, but the present paper is a conditional reconstruction and
 completion contract, not a generic MTT prediction of temporal Bell
 violation.
 \end{abstract}
+
+\section*{Revision note for this edition}
+\addcontentsline{toc}{section}{Revision note for this edition}
+\begin{description}
+\item[Supersedes.] \emph{Temporal Bell Inequalities and Global Consistency in
+Modal Triplet Theory}, version~2.
+\item[Reason.] The version~2 release established the correct theorem boundary
+but did not include the final theorem-ownership cleanup or enough guidance
+for a reader to connect the probability model, pair protocols, and qubit
+benchmark.
+\item[Resolution.] Version~3 adds a plain-language protocol map and
+result-by-result interpretation, and recasts the projection comparison and
+MTT bridge as explanatory checks rather than duplicate formal theorems.
+\item[Retained result.] The common-joint-distribution Leggett--Garg bound and
+the conditional no-retro-signaling proposition are unchanged.
+\item[Remaining boundary.] MTT does not yet derive the physical clock,
+preparation state, sequential instruments, or arbitrary-apparatus
+probability law required for a generic temporal Bell prediction.
+\end{description}
+
+\section*{How to read this paper}
+\addcontentsline{toc}{section}{How to read this paper}
+The paper has two layers.  The operational layer asks what an actual
+three-time experiment must specify before a temporal correlation can be
+calculated.  The MTT layer then asks whether one selected upper source emits
+that entire operational packet.  Keeping the layers separate prevents a
+geometric projection or a global-consistency slogan from being mistaken for
+a probability law.
+
+\paragraph{The central picture in plain language.}
+Imagine three possible laboratory times but three separate experimental
+runs.  One run measures at $t_1$ and $t_2$, another at $t_2$ and $t_3$, and
+the third at $t_1$ and $t_3$.  Each first measurement can disturb the state
+seen by the second.  The quantity $K$ therefore compares correlations from
+three declared contexts; it is not automatically the expectation of three
+values that existed together before measurement.
+
+\paragraph{Argument map.}
+Sections~1--2 separate physical clock time from the auxiliary parameter of a
+fixed-point construction.  Section~3 defines the state, channels, instruments,
+and pair probabilities.  Section~4 proves the algebraic bound under one
+common joint distribution.  Section~5 distinguishes no-retro-signaling from
+noninvasive measurability and from no-signaling in time.  Section~6 states
+what global consistency can model and what additional MTT source rows are
+still required.  Section~7 executes a concrete qubit example, after which the
+final sections compare spatial Bell tests and state the completion and
+falsification contract.
 
 \tableofcontents
 
@@ -110,6 +158,13 @@ the same separation enforced in the corrected MTT kinematics program
 \section{Sequential Operational Data}
 
 \subsection{Channels and instruments}
+
+This section is the operational engine of the paper.  A channel tells us how
+the unmeasured system propagates.  An instrument contains more information:
+it gives both the probability of each outcome and the conditional state left
+behind.  Temporal correlations depend on that state update, so replacing an
+instrument by a projector symbol or by an outcome label throws away data that
+the experiment actually uses.
 
 Let $\mathcal H$ be a complex Hilbert space and let $\mathfrak T(\mathcal H)$
 be its trace-class operators.  A state is a positive
@@ -177,6 +232,10 @@ classical contract tested by the inequality.
 
 \section{The Leggett--Garg Bound}
 
+The following theorem is deliberately algebraic.  It does not assume quantum
+mechanics or MTT.  It identifies the exact classical data contract whose
+failure is witnessed when the measured value exceeds the bound.
+
 \begin{definition}[Common-joint-distribution contract]
 Three measured pair distributions satisfy the common-joint-distribution
 contract when there is one probability distribution
@@ -207,13 +266,11 @@ Expectation with respect to $\mu$ gives the claimed bound, because the
 pairwise expectations of $\mu$ are the measured $C_{ij}$.
 \end{proof}
 
-\begin{corollary}
-An observed value $K>1$ rules out the common-joint-distribution contract for
-the three measured pair protocols.
-\end{corollary}
+Thus an observed value $K>1$ rules out the common-joint-distribution contract
+for the three measured pair protocols.
 
 \begin{remark}[What the violation does not decide]
-The corollary does not by itself determine whether the failed physical
+This consequence does not by itself determine whether the failed physical
 assumption is macrorealism, noninvasive measurability, context independence,
 preparation equivalence, or another auxiliary premise.  That interpretation
 requires the instruments and protocol controls.  Measurement disturbance is
@@ -221,6 +278,12 @@ therefore not a side issue; it is part of the theorem's empirical interface.
 \end{remark}
 
 \section{Causal Marginals and Measurement Disturbance}
+
+The temporal direction makes two questions easy to confuse.  A later choice
+should not alter a probability already recorded in the past; that is the
+no-retro-signaling statement below.  By contrast, an earlier measurement may
+change a later state and later statistics.  Ruling out that forward
+disturbance is the stronger noninvasive-measurability or NSIT problem.
 
 \subsection{No-retro-signaling}
 
@@ -299,27 +362,21 @@ $\mu$.  This is a possible model of temporal contextuality.  It does not,
 however, force a violation: many context-dependent families still satisfy
 $K\leq1$.
 
-\begin{proposition}[Projection and global-history non-selection]
-\label{prop:nonselection}
+\paragraph{Non-selection check.}
 A projection map, a fixed-point construction, or the bare assertion that
 histories are globally constrained does not determine the sign or magnitude
-of a Leggett--Garg violation.
-\end{proposition}
+of a Leggett--Garg violation.  Keep the descriptive projection equal to the
+identity.  One compatible realization assigns
+$q_1=q_2=q_3=1$, giving $K=1$; another uses the qubit channels and instruments
+of Section~\ref{sec:qubit}, giving $K=3/2$.  The difference lies in the state,
+dynamics, instruments, and probability law, none of which is selected by the
+projection.  This is an application of the general source-separation result,
+not a new projection theorem owned by this paper.
 
-\begin{proof}
-Keep the descriptive projection equal to the identity.  One compatible
-realization assigns one context-independent deterministic value
-$q_1=q_2=q_3=1$, giving $K=1$.  A second compatible realization uses the
-qubit channels and instruments of Section~\ref{sec:qubit}, giving $K=3/2$.
-The same projection data therefore admit both outcomes.  The difference lies
-in the state, dynamics, instruments, and probability law, none of which is
-selected by the projection itself.  The argument applies a fortiori when only
-the phrase ``global constraint'' is supplied.
-\end{proof}
+\subsection{MTT completion contract}
 
-\begin{theorem}[Conditional MTT temporal-correlation bridge]
-\label{thm:mttbridge}
-Suppose one selected MTT source supplies:
+For a selected MTT realization to claim the temporal-correlation result, its
+source must supply:
 \begin{enumerate}[label=(\roman*)]
 \item a physical clock and causal order for $t_1<t_2<t_3$;
 \item a normalized state or history measure;
@@ -329,24 +386,24 @@ Suppose one selected MTT source supplies:
 \item the causal independence assumptions of Proposition~\ref{prop:nrs};
 \item pair correlators with $K>1$.
 \end{enumerate}
-Then that selected realization violates the common-joint-distribution
-contract while satisfying operational no-retro-signaling.
-\end{theorem}
-
-\begin{proof}
-Theorem~\ref{thm:lgi} shows that $K>1$ excludes the common joint
-distribution.  Proposition~\ref{prop:nrs} proves operational
-no-retro-signaling from assumptions (iii)--(v).
-\end{proof}
+With those rows supplied, Theorem~\ref{thm:lgi} excludes a common joint
+distribution and Proposition~\ref{prop:nrs} gives operational
+no-retro-signaling.  This is a completion contract assembled from the two
+owned results, not a third theorem.
 
 \begin{remark}[Current status]
-The theorem is a completion contract.  The general MTT projection vocabulary
+The general MTT projection vocabulary
 does not yet discharge its state, instrument, and source rows.  A selected
 finite recorder may close a narrower apparatus contract without proving the
 statement for arbitrary temporal experiments.
 \end{remark}
 
 \section{Explicit Qubit Benchmark}
+
+This section is a worked example of the operational definitions, not a new
+MTT prediction.  The example is useful because every ingredient is visible:
+the state, the unitary propagator, the two-outcome instrument, the three pair
+protocols, and the final value of $K$.
 \label{sec:qubit}
 
 Let
@@ -449,7 +506,7 @@ earlier marginals depend on later settings contrary to the claimed causal
 contract, or if the predicted $K$ and auxiliary disturbance tests disagree
 with held-out data.
 
-\section{Version 2 Revision Record}
+\section{Previous Revision Record (Version 2)}
 
 Version 2 makes the following corrections:
 \begin{enumerate}[label=\arabic*.]
@@ -479,6 +536,15 @@ or global consistency alone.  The remaining scientific step is a selected
 same-source descent from MTT geometry and dynamics to the state, channels,
 instruments, and uncertainty-controlled observables of a temporal experiment.
 
+The practical lesson is correspondingly modest and useful.  Temporal Bell
+language becomes testable only after every probability-bearing operation is
+typed.  Once that is done, the ordinary inequality, the causal marginal
+statement, and the qubit violation fit together without assigning any special
+physical role to measurement itself.  Measurement is simply the declared
+system--apparatus process that creates the record used in the correlation.
+
+\begingroup
+\raggedright
 \begin{thebibliography}{99}
 
 \bibitem{LeggettGarg1985}
@@ -528,5 +594,6 @@ P.~Nero,
 (2026), current selected MTT source.
 
 \end{thebibliography}
+\endgroup
 
 \end{document}

@@ -1,0 +1,510 @@
+{
+  "schema": "mtt.paper-contextual-evidence.v1",
+  "results_repository": {
+    "commit": "31247ebb5c22f3fbb5443024365433c6ee0bff4a",
+    "manifest_path": "release/result_manifest.json",
+    "manifest_sha256": "fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd",
+    "url": "https://github.com/PeterNero/mtt-results-repro"
+  },
+  "results": {
+    "A01/charged_yukawa_higgs_profile": {
+      "description": "Versioned Yu, Yd, Ye and lambda_H profile packet.",
+      "tier": "PROFILE_REPLAY"
+    },
+    "A01/current_global_lock": {
+      "description": "Current non-looping global status and source-certificate map.",
+      "tier": "PROFILE_REPLAY"
+    },
+    "A01/direct_k_higgs_row": {
+      "description": "Promoted direct K_threshold.Omega_H.lambda row.",
+      "tier": "DERIVED_EXACT"
+    },
+    "A01/qutrit_weyl_27_matrix": {
+      "description": "Sparse 27x27 qutrit-Weyl left-action realization.",
+      "tier": "DERIVED_EXACT"
+    },
+    "A01/strict_pew_row": {
+      "description": "Promoted P_EW source row at the declared one-shared-primitive standard.",
+      "tier": "DERIVED_EXACT"
+    },
+    "A02/precision_15_source_transport": {
+      "description": "Fifteen measured source coordinates, Jacobian and covariance transport.",
+      "tier": "PROFILE_REPLAY"
+    },
+    "A02/precision_8x8_workspace": {
+      "description": "Eight-coordinate SMDR output with positive-definite 8x8 covariance.",
+      "tier": "PROFILE_REPLAY"
+    },
+    "A04/final_12_of_12_audit": {
+      "description": "Twelve-obligation embedded renormalized-SM equivalence audit.",
+      "tier": "PROFILE_REPLAY"
+    },
+    "A05/strict_upgrade_ledger": {
+      "description": "Current 2/9 strict no-knob upgrade ledger.",
+      "tier": "OPEN"
+    },
+    "A07/literal_cech_witness": {
+      "description": "Literal 81-entry, 729-cocycle finite Cech witness.",
+      "tier": "DERIVED_EXACT"
+    },
+    "A11/q79_exact_audit": {
+      "description": "Executable q=79 exact-branch audit.",
+      "tier": "DERIVED_EXACT"
+    },
+    "A11/q79_exact_theorem": {
+      "description": "CRT q=79 theorem on the selected exact branch.",
+      "tier": "DERIVED_EXACT"
+    },
+    "A13/gr_tt_support": {
+      "description": "Exact-branch internal TT support certificate; physical normalization remains open.",
+      "tier": "DERIVED_EXACT"
+    },
+    "A14/ckm_prediction_profile": {
+      "description": "Three selected CKM profile rows and uncertainty comparison.",
+      "tier": "NUMERIC_CERTIFIED"
+    },
+    "A19/hym_wiener_contraction": {
+      "description": "Weighted-theta Fourier-tail and Wiener contraction certificate.",
+      "tier": "NUMERIC_CERTIFIED"
+    },
+    "A22/e6_qpsi_qcd_anomaly": {
+      "description": "E6 Qpsi matter/exotic QCD anomaly cancellation audit.",
+      "tier": "DERIVED_EXACT"
+    },
+    "A40/neutral_two_primitive_profile": {
+      "description": "Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.",
+      "tier": "PROFILE_REPLAY"
+    }
+  },
+  "result_sets": {
+    "book17": [
+      "A01/charged_yukawa_higgs_profile",
+      "A14/ckm_prediction_profile",
+      "A01/current_global_lock",
+      "A01/direct_k_higgs_row",
+      "A22/e6_qpsi_qcd_anomaly",
+      "A04/final_12_of_12_audit",
+      "A13/gr_tt_support",
+      "A19/hym_wiener_contraction",
+      "A07/literal_cech_witness",
+      "A40/neutral_two_primitive_profile",
+      "A02/precision_15_source_transport",
+      "A02/precision_8x8_workspace",
+      "A11/q79_exact_audit",
+      "A11/q79_exact_theorem",
+      "A01/qutrit_weyl_27_matrix",
+      "A01/strict_pew_row",
+      "A05/strict_upgrade_ledger"
+    ],
+    "geometry16": [
+      "A01/charged_yukawa_higgs_profile",
+      "A14/ckm_prediction_profile",
+      "A01/current_global_lock",
+      "A01/direct_k_higgs_row",
+      "A22/e6_qpsi_qcd_anomaly",
+      "A04/final_12_of_12_audit",
+      "A13/gr_tt_support",
+      "A19/hym_wiener_contraction",
+      "A40/neutral_two_primitive_profile",
+      "A02/precision_15_source_transport",
+      "A02/precision_8x8_workspace",
+      "A11/q79_exact_audit",
+      "A11/q79_exact_theorem",
+      "A01/qutrit_weyl_27_matrix",
+      "A01/strict_pew_row",
+      "A05/strict_upgrade_ledger"
+    ],
+    "gr1": [
+      "A13/gr_tt_support"
+    ],
+    "open1": [
+      "A05/strict_upgrade_ledger"
+    ],
+    "qft2": [
+      "A04/final_12_of_12_audit",
+      "A05/strict_upgrade_ledger"
+    ],
+    "sm13": [
+      "A01/charged_yukawa_higgs_profile",
+      "A14/ckm_prediction_profile",
+      "A01/current_global_lock",
+      "A01/direct_k_higgs_row",
+      "A22/e6_qpsi_qcd_anomaly",
+      "A04/final_12_of_12_audit",
+      "A19/hym_wiener_contraction",
+      "A40/neutral_two_primitive_profile",
+      "A02/precision_15_source_transport",
+      "A02/precision_8x8_workspace",
+      "A01/qutrit_weyl_27_matrix",
+      "A01/strict_pew_row",
+      "A05/strict_upgrade_ledger"
+    ],
+    "topology15": [
+      "A01/charged_yukawa_higgs_profile",
+      "A14/ckm_prediction_profile",
+      "A01/current_global_lock",
+      "A01/direct_k_higgs_row",
+      "A22/e6_qpsi_qcd_anomaly",
+      "A04/final_12_of_12_audit",
+      "A19/hym_wiener_contraction",
+      "A40/neutral_two_primitive_profile",
+      "A02/precision_15_source_transport",
+      "A02/precision_8x8_workspace",
+      "A11/q79_exact_audit",
+      "A11/q79_exact_theorem",
+      "A01/qutrit_weyl_27_matrix",
+      "A01/strict_pew_row",
+      "A05/strict_upgrade_ledger"
+    ]
+  },
+  "papers": {
+    "a-third-corner-shadow-bridge-asymptotic-safety-the-stri-37bbd5a2": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The comparison between the asymptotic-safety and string routes is a conditional structural diagnostic. No numerical Standard Model packet proves that comparison. The mapped strict-upgrade ledger is included only to mark the unresolved no-knob boundary inherited by later ultraviolet claims."
+    },
+    "a-tiered-roadmap-for-calculations-in-modal-triplet-theo-da081863": {
+      "direct_result_ids": [
+        "A01/charged_yukawa_higgs_profile",
+        "A14/ckm_prediction_profile",
+        "A01/current_global_lock",
+        "A01/direct_k_higgs_row",
+        "A22/e6_qpsi_qcd_anomaly",
+        "A04/final_12_of_12_audit",
+        "A19/hym_wiener_contraction",
+        "A40/neutral_two_primitive_profile",
+        "A02/precision_15_source_transport",
+        "A02/precision_8x8_workspace",
+        "A01/qutrit_weyl_27_matrix",
+        "A01/strict_pew_row"
+      ],
+      "result_set": "sm13",
+      "scope": "This roadmap reports the status and tier of the calculation program rather than reproving each packet. The closed and profile rows below are used directly as status evidence; the open strict-upgrade row remains an unresolved target and is not counted as closure."
+    },
+    "asymptotic-safety-as-a-truncation-shadow-of-a-coherent-05df2176": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The truncation-residual and scheme-dependence results in this paper are analytic statements under displayed hypotheses. The mapped strict-upgrade ledger does not prove an exact ultraviolet completion; it records a separate open source-selection obligation."
+    },
+    "black-hole-information-loss-and-quantum-measurement-col-7f29501b": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The channel, recovery, and information-loss statements in this paper are operator-theoretic. The mapped strict-upgrade ledger supplies no black-hole recovery theorem and is cited only to prevent later Standard Model closure claims from being read into this analysis."
+    },
+    "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538": {
+      "direct_result_ids": [
+        "A01/direct_k_higgs_row",
+        "A22/e6_qpsi_qcd_anomaly",
+        "A13/gr_tt_support",
+        "A19/hym_wiener_contraction",
+        "A11/q79_exact_audit",
+        "A11/q79_exact_theorem",
+        "A01/qutrit_weyl_27_matrix"
+      ],
+      "result_set": "geometry16",
+      "scope": "The action written here remains a regime-local ansatz. The exact q=79, finite-action, anomaly, HYM, and internal TT packets constrain or instantiate ingredients used by the ansatz, but they do not derive its continuum action, physical normalization, or ultraviolet completion. Profile rows are retained only as cross-checks on the lower effective target."
+    },
+    "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60": {
+      "direct_result_ids": [
+        "A22/e6_qpsi_qcd_anomaly",
+        "A13/gr_tt_support",
+        "A19/hym_wiener_contraction",
+        "A11/q79_exact_audit",
+        "A11/q79_exact_theorem",
+        "A01/qutrit_weyl_27_matrix"
+      ],
+      "result_set": "geometry16",
+      "scope": "The local closure-strain decomposition is proved in the paper. The selected q=79, finite-matrix, anomaly, HYM, and internal TT rows provide concrete realizations or compatibility checks; they do not turn the conditional matter interpretation into a source theorem. The remaining Standard Model packets are corpus-state context."
+    },
+    "constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The finite-volume Gaussian construction and conditional Borel contract are local analytic results. The open strict-upgrade ledger neither proves cutoff removal nor selects a gravitational interaction; it records an independent source-level frontier."
+    },
+    "constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The BRST/BV compatibility statements are conditional contracts whose hypotheses are displayed in this paper. The mapped open ledger is not evidence of gauge-independent quantum gravity and is included solely as a current boundary on stronger MTT claims."
+    },
+    "constructive-mtt-quantum-gravity-iii-infrared-limit-asy-6f8b88d9": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The massive benchmark and massless infrared obligations are separated within this paper. The mapped open strict-upgrade row does not close the massless-graviton limit and is cited only as an adjacent unresolved source obligation."
+    },
+    "determinism-without-superdeterminism-projection-induced-0e405923": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The factorization and conditional-kernel results are measure-theoretic and do not depend on a Standard Model numerical fit. The open strict-upgrade ledger is a corpus boundary, not evidence for determinism, Markov closure, or freedom-of-settings assumptions."
+    },
+    "entanglement-locality-and-measurement-from-coherent-sec-110e8cbe": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The locality discussion depends on algebraic commutation, state nonfactorization, and the supplied measurement model. The mapped open ledger proves none of these statements; it is recorded only to delimit later claims of complete MTT-to-physics descent."
+    },
+    "execution-of-modal-triplet-theory-i-gauge-hym-threshold-abc17efc": {
+      "direct_result_ids": [
+        "A01/current_global_lock",
+        "A01/direct_k_higgs_row",
+        "A22/e6_qpsi_qcd_anomaly",
+        "A04/final_12_of_12_audit",
+        "A19/hym_wiener_contraction",
+        "A02/precision_15_source_transport",
+        "A02/precision_8x8_workspace",
+        "A01/qutrit_weyl_27_matrix",
+        "A01/strict_pew_row"
+      ],
+      "result_set": "sm13",
+      "scope": "This execution paper directly reports the gauge, HYM, threshold, finite-matrix, anomaly, and precision packets listed below. Flavor and neutral-sector rows are included only to locate this paper inside the common profile-standard closure. The strict no-knob upgrade remains open."
+    },
+    "execution-of-modal-triplet-theory-ii-flavor-ckm-neutral-42604e2f": {
+      "direct_result_ids": [
+        "A01/charged_yukawa_higgs_profile",
+        "A14/ckm_prediction_profile",
+        "A01/current_global_lock",
+        "A01/direct_k_higgs_row",
+        "A04/final_12_of_12_audit",
+        "A19/hym_wiener_contraction",
+        "A40/neutral_two_primitive_profile",
+        "A02/precision_15_source_transport",
+        "A02/precision_8x8_workspace",
+        "A01/qutrit_weyl_27_matrix",
+        "A01/strict_pew_row"
+      ],
+      "result_set": "sm13",
+      "scope": "This execution paper directly reports the flavor, CKM, neutral, Higgs, finite-matrix, and common-scheme packets listed below. The anomaly row is a neighboring consistency check rather than a source for the flavor values. Profile replay and certified numerics retain their declared tiers, and the strict no-knob upgrade remains open."
+    },
+    "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7": {
+      "direct_result_ids": [],
+      "result_set": "qft2",
+      "scope": "The precosheaf and conditional-net results are proved from supplied algebraic data, not from the embedded Standard Model profile audit. That audit is a lower-sector cross-check only. The open strict-upgrade ledger records an unresolved source problem and supplies no AQFT reconstruction theorem."
+    },
+    "geometry-light-relations-in-modal-triplet-theory-exact-1a5eeb7e": {
+      "direct_result_ids": [
+        "A19/hym_wiener_contraction",
+        "A02/precision_15_source_transport",
+        "A02/precision_8x8_workspace",
+        "A01/qutrit_weyl_27_matrix",
+        "A01/strict_pew_row"
+      ],
+      "result_set": "sm13",
+      "scope": "The paper's exact geometry-light identities are proved locally. The HYM, precision, finite-matrix, and electroweak rows instantiate selected computational examples; the remaining flavor and global-closure rows are cross-checks and do not strengthen the local theorem tier. The zero-knob upgrade remains open."
+    },
+    "gravitationally-induced-collapse-as-an-effective-limit-d74eb471": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The Penrose-Schoenberg completion and source contract are conditional mathematical constructions. The open strict-upgrade ledger does not derive a collapse rate or select a stochastic law; it is an adjacent corpus-level boundary only."
+    },
+    "inflationary-measures-and-the-born-rule-as-a-single-sha-388b32c2": {
+      "direct_result_ids": [],
+      "result_set": "gr1",
+      "scope": "The common-measure criterion is a measure-theoretic obligation. The internal TT support certificate is relevant geometric context for gravitational sectors, but it does not select either a Born measure or an inflationary measure and is therefore not used as direct proof here."
+    },
+    "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The distinction among coupling, outcome completion, and record stabilization is established from instruments and transition kernels. The open strict-upgrade ledger does not select an outcome law and is cited only to mark the stronger unresolved source boundary."
+    },
+    "measurement-effects-as-finite-survivor-basin-kernels-pr-eb7737ce": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The detector POVM, instrument, and sharp-limit results are finite-resolution measurement statements. The mapped open ledger is not a probability source or detector model; it records a separate corpus-level no-knob obligation."
+    },
+    "modal-triplet-theory-and-asymptotic-safety-asymptotic-s-dc3ce0c2": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The FRG conjugacy and unstable-subspace theorem are conditional on a supplied intertwiner. The open strict-upgrade ledger neither supplies that intertwiner nor proves asymptotic safety; it records an independent source-selection frontier."
+    },
+    "modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The SPT-filtered transverse-traceless model has the perturbative properties proved in this paper only. The open strict-upgrade ledger does not establish reflection positivity, nonperturbative unitarity, or ultraviolet-complete quantum gravity."
+    },
+    "modal-triplet-theory-from-mtt-to-general-relativity": {
+      "direct_result_ids": [
+        "A13/gr_tt_support"
+      ],
+      "result_set": "gr1",
+      "scope": "The internal transverse-traceless certificate is used directly as support for the declared exact branch. Its own boundary is preserved: physical normalization remains open. The paper's four-dimensional Einstein reduction still depends on the stated coherent-reduction and action hypotheses."
+    },
+    "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The fixed-state indivisibility and Markov-order statements are measure-theoretic. The open strict-upgrade ledger supplies no stochastic kernel, probability measure, or quantum reconstruction and is included only as a stronger unresolved corpus boundary."
+    },
+    "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba": {
+      "direct_result_ids": [],
+      "result_set": "qft2",
+      "scope": "The selected free CAR net and its curved-spacetime properties are established independently of the embedded Standard Model profile audit. That audit is contextual evidence for a lower effective target, while the open strict-upgrade row supplies no interacting QFT construction."
+    },
+    "projection-probability-and-irreversibility-shadow-bridg-a86c97e5": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The descent, recovery, and measure-separation results are structural. The open strict-upgrade ledger does not provide a common probability source and is included precisely to prevent profile closure from being mistaken for that missing theorem."
+    },
+    "proto-spinor-closure-and-worldsheet-encoding-in-modal-t-6a9d7abf": {
+      "direct_result_ids": [
+        "A22/e6_qpsi_qcd_anomaly",
+        "A19/hym_wiener_contraction",
+        "A11/q79_exact_audit",
+        "A11/q79_exact_theorem",
+        "A01/qutrit_weyl_27_matrix"
+      ],
+      "result_set": "geometry16",
+      "scope": "The q=79 branch, finite matrix, anomaly, and HYM packets provide concrete compatibility checks for the local proto-spinor/worldsheet encoding. They do not supply the missing global worldsheet, GSO, or physical-bundle theorem. The remaining rows are lower-sector context, and the strict upgrade remains open."
+    },
+    "superset-determinations-in-modal-triplet-theory-paramet-87399967": {
+      "direct_result_ids": [
+        "A01/charged_yukawa_higgs_profile",
+        "A14/ckm_prediction_profile",
+        "A01/current_global_lock",
+        "A01/direct_k_higgs_row",
+        "A22/e6_qpsi_qcd_anomaly",
+        "A04/final_12_of_12_audit",
+        "A19/hym_wiener_contraction",
+        "A40/neutral_two_primitive_profile",
+        "A02/precision_15_source_transport",
+        "A02/precision_8x8_workspace",
+        "A01/qutrit_weyl_27_matrix",
+        "A01/strict_pew_row"
+      ],
+      "result_set": "sm13",
+      "scope": "The listed packets are used directly as the finite family of profile, exact, and certified-numerical examples on which the identifiability analysis operates. Their values are not rederived here, and a profile row remains profile replay. The open ledger states the unresolved reduction from those effective coordinates to a strict no-knob source."
+    },
+    "the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793": {
+      "direct_result_ids": [
+        "A01/charged_yukawa_higgs_profile",
+        "A14/ckm_prediction_profile",
+        "A01/current_global_lock",
+        "A01/direct_k_higgs_row",
+        "A22/e6_qpsi_qcd_anomaly",
+        "A04/final_12_of_12_audit",
+        "A13/gr_tt_support",
+        "A19/hym_wiener_contraction",
+        "A07/literal_cech_witness",
+        "A40/neutral_two_primitive_profile",
+        "A02/precision_15_source_transport",
+        "A02/precision_8x8_workspace",
+        "A11/q79_exact_audit",
+        "A11/q79_exact_theorem",
+        "A01/qutrit_weyl_27_matrix",
+        "A01/strict_pew_row"
+      ],
+      "result_set": "book17",
+      "scope": "The Book is interpretive and proves no theorem. The closed, profile, and certified-numerical rows below are used directly only as examples of what the technical corpus currently contains. Their tier labels are preserved verbatim, and the open strict-upgrade ledger is presented as unfinished work rather than an achievement."
+    },
+    "the-central-circle-inertia-mass-gravity-and-time-as-sha-5faa2369": {
+      "direct_result_ids": [
+        "A01/direct_k_higgs_row",
+        "A22/e6_qpsi_qcd_anomaly",
+        "A19/hym_wiener_contraction",
+        "A11/q79_exact_audit",
+        "A11/q79_exact_theorem",
+        "A01/qutrit_weyl_27_matrix",
+        "A01/strict_pew_row"
+      ],
+      "result_set": "topology15",
+      "scope": "The shared-circle paper uses the selected q=79, finite-matrix, HYM, anomaly, threshold, and electroweak rows as concrete instances of common phase or holonomy data. These packets do not identify the compact circle with physical time or derive inertia, mass, or gravity. The profile rows are context and the strict no-knob upgrade remains open."
+    },
+    "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8": {
+      "direct_result_ids": [
+        "A22/e6_qpsi_qcd_anomaly",
+        "A19/hym_wiener_contraction",
+        "A11/q79_exact_audit",
+        "A11/q79_exact_theorem",
+        "A01/qutrit_weyl_27_matrix"
+      ],
+      "result_set": "geometry16",
+      "scope": "The selected q=79, finite-matrix, anomaly, and HYM rows provide the concrete lower structures used at the proto-spinor interface. They do not prove the supplied Lorentzian, SpinC, worldsheet, or physical-bundle hypotheses. Other Standard Model rows are corpus context, and the strict source upgrade remains open."
+    },
+    "theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f": {
+      "direct_result_ids": [
+        "A01/current_global_lock",
+        "A04/final_12_of_12_audit",
+        "A19/hym_wiener_contraction",
+        "A02/precision_15_source_transport",
+        "A02/precision_8x8_workspace",
+        "A01/strict_pew_row"
+      ],
+      "result_set": "sm13",
+      "scope": "This paper uses the common-scheme precision transport, electroweak row, HYM certificate, and global profile audit to define and check its gauge-overlap targets. Flavor and neutral packets are neighboring profile context rather than inputs to the local overlap identity. The geometric source and zero-knob upgrade remain open."
+    },
+    "theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca": {
+      "direct_result_ids": [
+        "A19/hym_wiener_contraction",
+        "A02/precision_15_source_transport",
+        "A02/precision_8x8_workspace",
+        "A01/qutrit_weyl_27_matrix",
+        "A01/strict_pew_row"
+      ],
+      "result_set": "sm13",
+      "scope": "The HYM contraction, finite-matrix realization, precision transport, and electroweak row are used directly to assess the selected overlap realization. The remaining profile packets locate that realization within the broader closure program but do not prove its geometry. The strict source upgrade remains open."
+    },
+    "theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643": {
+      "direct_result_ids": [
+        "A19/hym_wiener_contraction",
+        "A02/precision_15_source_transport",
+        "A02/precision_8x8_workspace",
+        "A01/qutrit_weyl_27_matrix"
+      ],
+      "result_set": "sm13",
+      "scope": "The HYM, finite-matrix, and common-scheme precision rows provide the computational target for the conditional twistor-action audit. They do not supply the missing action normalization or prove that the twistor corner is the physical branch. Other sector rows are context, and the strict upgrade remains open."
+    },
+    "theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5": {
+      "direct_result_ids": [],
+      "result_set": "sm13",
+      "scope": "This paper audits possible gravity and cosmology scaling from gauge-profile geometry. None of the mapped Standard Model packets derives a physical gravitational normalization or cosmological cutoff, so all closed rows below are corpus-state cross-checks rather than direct proof. The strict upgrade remains open."
+    },
+    "theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c": {
+      "direct_result_ids": [
+        "A01/current_global_lock",
+        "A04/final_12_of_12_audit",
+        "A02/precision_15_source_transport",
+        "A02/precision_8x8_workspace",
+        "A01/strict_pew_row"
+      ],
+      "result_set": "sm13",
+      "scope": "The weak-angle round trip uses the electroweak source row and common-scheme precision workspaces directly, with the global profile audit fixing the comparison convention. Flavor, neutral, HYM, and finite-matrix rows are neighboring context. The non-circular zero-knob source upgrade remains open."
+    },
+    "topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2": {
+      "direct_result_ids": [
+        "A22/e6_qpsi_qcd_anomaly",
+        "A11/q79_exact_audit",
+        "A11/q79_exact_theorem",
+        "A01/qutrit_weyl_27_matrix"
+      ],
+      "result_set": "topology15",
+      "scope": "The q=79 branch, finite representation, and anomaly packets are used directly as topological or representation consistency examples. Gauge, flavor, precision, HYM, and Higgs rows are not topology-only theorems and are included only as lower-sector cross-checks. The strict source upgrade remains open."
+    },
+    "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The separation between a nonselective channel and an outcome instrument is proved within the paper. The open strict-upgrade ledger supplies no outcome law, Born source, or one-history selection and is cited only as a stronger unresolved corpus boundary."
+    },
+    "why-quantum-contextuality-and-measurement-order-depende-e0bdb9bf": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The contextuality and sequential-order obstructions are established from their respective operational data. The open strict-upgrade ledger proves neither obstruction and is included only to delimit stronger claims of complete physical reconstruction."
+    },
+    "why-quantum-theory-must-be-complex-a-soler-admissibilit-b7674be8": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The conditional complex-Hilbert reconstruction depends on Soler rigidity, local tomography, and the stated composition assumptions. The open strict-upgrade ledger is unrelated to that proof and is cited solely as a boundary on broader MTT source claims."
+    },
+    "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872": {
+      "direct_result_ids": [],
+      "result_set": "open1",
+      "scope": "The concentration and persistence bounds are proved in this paper, while the general Born-source theorem remains open. The strict-upgrade ledger is included only as a current source-level boundary; it does not provide the missing outcome weights or select one realized history."
+    },
+    "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73": {
+      "direct_result_ids": [
+        "A13/gr_tt_support",
+        "A19/hym_wiener_contraction",
+        "A11/q79_exact_audit",
+        "A11/q79_exact_theorem",
+        "A01/qutrit_weyl_27_matrix"
+      ],
+      "result_set": "geometry16",
+      "scope": "The q=79, finite-matrix, HYM, and internal TT rows give concrete targets for the proposed globalization map. They do not prove the missing intertwiner from local comparison strain to the physical q=79 vertical geometry. Standard Model profile rows are context, and the strict upgrade remains open."
+    }
+  }
+}

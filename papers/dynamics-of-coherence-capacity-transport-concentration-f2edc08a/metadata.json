@@ -48,15 +48,15 @@
       "sha256": "c919040c692d60f6e438afbe8a443d7fd3aa0a8740fcf110e1fc88f5fef605bc"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Dynamics_of_Coherence_Capacity__Transport__Concentration__and_Exhaustion_v2"
   },
-  "source_tree_sha256": "881ca7a4fad3670fe25697a625cbfc8c768ecd45d79b2e253dda569e58c14326",
+  "source_tree_sha256": "78d0ed5b46b4bd36028ddc7d281cebeadbb9dc5db66c5be72b3d847d02c6bf95",
   "title": "Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

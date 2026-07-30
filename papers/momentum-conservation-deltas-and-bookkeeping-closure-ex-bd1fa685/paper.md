@@ -21,8 +21,6 @@ title: |
   Exact Vertex Conservation as the Singular Limit of Finite Admissible Interaction Support
 ---
 
-*Part VI of VI in the Fixed Points series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*
-
 # Purpose and claim discipline
 
 The earlier papers in this sequence isolated several roles played by Dirac delta distributions: identity kernels, point sources, gauge-fixing slice selectors, measurement projectors, and contact vertices. This paper treats a different but equally central role:

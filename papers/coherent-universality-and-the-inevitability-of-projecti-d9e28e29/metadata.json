@@ -48,15 +48,15 @@
       "sha256": "02fb8ea83b0bfbc1a5ba154c321e8220c0a6dc912c3aa1d3e349e01504095c0f"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2"
   },
-  "source_tree_sha256": "608876916e0ec7451ef430bffff435230573ee44b622a22bea095494e073b5ec",
+  "source_tree_sha256": "f25187d4b442942f8880daa4e419dccbf7f6e39e3016a146fefc1503028a2bc6",
   "title": "Coherent Universality and the Inevitability of Projection-Based Quantum Theories A structural classification of viable measurement, spacetime, and matter frameworks",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

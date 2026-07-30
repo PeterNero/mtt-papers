@@ -1,40 +1,71 @@
 ---
 abstract: |
-  We apply the corrected FP–I machinery to a ten-dimensional control setting $`\ensuremath{M_{10}}=\ensuremath{Y^{4}}\times\ensuremath{X^{6}}`$. The compact six-manifold $`\ensuremath{X^{6}}`$ carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks $`1<2<3`$. In the q79 realization the $`1<2<3`$ flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–$`\tau`$ fixed points by Schauder/Darbo and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent $`Q`$ sector and are never used as coherent damping.
+  We apply the canonical FP–I machinery to a ten-dimensional control setting $`\ensuremath{M_{10}}=\ensuremath{Y^{4}}\times\ensuremath{X^{6}}`$. The compact six-manifold $`\ensuremath{X^{6}}`$ carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from ranks $`1<2<3`$. In the q79 realization the $`1<2<3`$ flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected time–$`\tau`$ fixed points by applying the canonical FP–I Schauder/Darbo gates to this ten-dimensional operator, and prove coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent $`Q`$ sector and are never used as coherent damping.
 author:
 - Peter Nero
 bibliography:
 - references.bib
-current_version: v4
-date: July 2026
-generated_from_main_tex_sha256: 886337d171ca309ebce8913f4515e23ecd3aae126d87d0ea029bd5a143bdcf00
+current_version: v5
+date: July 2026 Version 5
+generated_from_main_tex_sha256: ba452cbe49af339cb3d8a7e72f289c7d78bbf6594ebd915841ea643b000fef6f
 paper_id: fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534
 release_state: zenodo_released
-released_version: v2.0
+released_version: v5
 title: "Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model"
-zenodo_doi: 10.5281/zenodo.18202914
-zenodo_record_id: 18202914
-zenodo_url: "https://zenodo.org/records/18202914"
+zenodo_doi: 10.5281/zenodo.21655370
+zenodo_record_id: 21655370
+zenodo_url: "https://zenodo.org/records/21655370"
 ---
 
-*Part II of VI in the Fixed Point series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*
+# Revision note for version 5
 
-# Revision note for this edition
+Supersedes.
+*Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model*, version 4.
 
-Supersedes.  
+Reason.
+Version 4 gives the corrected ten-dimensional application, but the relation between complement damping, coherent contraction, and equilibrium promotion remained too compressed for a standalone reading.
+
+Resolution.
+Version 5 adds a paper-specific reading guide and examples that separate those three mechanisms, explains the lane factor and shared line without adding dimensions, and keeps the generic fixed-point theorems owned by Fixed Points I. Publication description, revision history, and computational provenance are now separate.
+
+Retained result.
+The version 4 Schauder/Darbo application, conditional coherent uniqueness, and strict-Lyapunov equilibrium gate are unchanged.
+
+Remaining boundary.
+Physical q79 HYM endpoints, action, Hessian, finite reduction, Lorentzian time, and observable interpretation remain open downstream inputs.
+
+# Revision note for version 4
+
+Supersedes.
 *Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model*, version 3.
 
-Reason.  
+Reason.
 The version 3 correction fixed the ten-dimensional control geometry but still described the q79 $`1<2<3`$ carrier too loosely. The exact projective-module theorem excludes placing a nontrivial parallel flag inside an irreducible stable HYM factor and distinguishes post-projection finite algebra from a physical Galerkin subspace.
 
-Resolution.  
-Version 4 retains the corrected FP theorem and places the rank flag on an external lane tensor factor, with the shared differential line as a separate flat scalar factor. It also records that the 27-state algebra is post-projection data and that the six-coordinate strain carrier is a nonlinear quotient shadow rather than a linear subspace of the physical HYM carrier.
+Resolution.
+Version 4 retains the corrected FP theorem and places the rank flag on an external lane tensor factor, with the shared differential line as a separate flat scalar factor. It also records that the 27-state algebra is post-projection data and that the six-coordinate strain carrier is a nonlinear quotient shadow rather than a linear subspace of the physical HYM carrier. Generic existence and equilibrium-promotion results remain owned by FP–I; this paper states their ten-dimensional application corollaries so that it is standalone without duplicating the generic proofs.
 
-Retained result.  
+Retained result.
 Schauder/Darbo existence and conditional coherent uniqueness survive in the corrected ten-dimensional control realization.
 
-Remaining boundary.  
+Remaining boundary.
 The selected visible/hidden q79 HYM endpoints, physical action and Hessian, finite invariant subspace or Feshbach execution, physical time, and Lorentzian dynamics require independent source and completion theorems.
+
+# How to read this application
+
+FP–I proves the generic analytic machinery. This paper asks what that machinery becomes in a ten-dimensional control model with one compact six-dimensional internal space and three compatible vertical operators. Its formal statements are therefore application corollaries and model-specialized estimates, not replacement copies of the FP–I theorems.
+
+#### The central picture in plain language.
+
+There are two independent stabilization questions. First, does the vertical operator suppress every component outside the joint harmonic sector? This is controlled by the fiber gaps and concerns $`Q\Psi`$. Second, does motion inside the joint harmonic sector contract to one state? The vertical operators vanish there, so this requires a base Poincaré gap or strong monotonicity of the coherent nonlinearity. Confusing these mechanisms would make a fiber gap appear to prove uniqueness when it only damps discarded internal modes.
+
+#### Argument map.
+
+Section 1 states the ten-dimensional control scope. Section 2 places the three operators on the same internal Hilbert space, constructs their joint projector, and records the q79 lane/shared-line type boundary. Section 3 then separates the $`\Pi_{\mathrm{coh}}`$ and $`Q`$ evolutions, promotes a projected return only under a strict Lyapunov identity, gives the two coherent contraction routes, and transfers the compact-base and noncompact-base existence gates from FP–I. Section 4 supplies examples of the operator hypotheses. The appendices provide the specialized contraction and damping calculations.
+
+#### What this paper does not select.
+
+The notation $`\ensuremath{M_{10}}=\ensuremath{Y^{4}}\times\ensuremath{X^{6}}`$ is a control realization, not a proof that physical spacetime is this Riemannian product. Nor does the paper derive the q79 HYM bundle, identify the three operators with the $`1<2<3`$ lane projectors, or turn the post-projection 27-state algebra into a continuum Galerkin basis. Those objects must enter through separate source and intertwining theorems before the present estimates become physical predictions.
 
 # Introduction and scope
 
@@ -131,15 +162,21 @@ We view $`\Pi_{\mathrm{coh}}`$ as the induced projector on $`\ensuremath{L^{2}}(
 
 </div>
 
-<div id="lem:Pcoh-H1" class="lemma">
+#### Geometric meaning of the joint projector.
 
-**Lemma 4** (Boundedness on $`H^1`$). *Under the gap condition <a href="#eq:gap" data-reference-type="eqref" data-reference="eq:gap">[eq:gap]</a> and bounded fiber geometry, the joint projector $`\Pi_{\mathrm{coh}}:H^{1}\to H^{1}`$ is bounded with
+Each $`\Pi_n`$ asks whether a field is harmonic for one selected vertical operator. Their product retains only fields that answer yes to all three questions at once. Strong commutation is what makes this simultaneous test a genuine orthogonal projector rather than an order-dependent sequence of filters. Overlap of the underlying vertical structures is harmless at this operator level; literal nesting still requires independently supplied maps.
+
+<div id="lem:Pcoh-H1" class="corollary">
+
+**Corollary 4** (10D joint-projector Sobolev regularity). *Under the gap condition <a href="#eq:gap" data-reference-type="eqref" data-reference="eq:gap">[eq:gap]</a> and bounded fiber geometry, the joint projector $`\Pi_{\mathrm{coh}}:H^{1}\to H^{1}`$ is bounded with
 ``` math
 \|\Pi_{\mathrm{coh}}\|_{H^{1}\to H^{1}}\le C_{\Pi},
 ```
 and $`\mathop{\mathrm{Ran}}\Pi_{\mathrm{coh}}`$ is closed in $`H^{1}`$.*
 
 </div>
+
+This is the commuting three-projector specialization of the FP–I Sobolev projector theorem ; the Riesz–Dunford and elliptic regularity hypotheses are stated here explicitly.
 
 <div class="remark">
 
@@ -213,6 +250,10 @@ No factor $`e^{-\lambda_{A}t}`$ is asserted for $`\Pi_{\mathrm{coh}}w`$. On the 
 ```
 and require base coercivity or coherent monotonicity for contraction.
 
+#### Why the sector split matters.
+
+Equation <a href="#eq:Q-duhamel" data-reference-type="eqref" data-reference="eq:Q-duhamel">[eq:Q-duhamel]</a> says that positive vertical modes are damped up to nonlinear forcing. Equation <a href="#eq:P-flow" data-reference-type="eqref" data-reference="eq:P-flow">[eq:P-flow]</a> says that harmonic modes do not feel that vertical gap at all. Thus approaching the coherent sector and selecting a unique point inside it are two different mathematical events. The first can occur while an entire family of coherent states remains.
+
 <div class="remark">
 
 *Remark 7* (Base lower-order terms). If the $`Q`$ equation includes first/zero-order terms with relative bound $`C_Y\ge0`$, replace the noncoherent decay margin by $`\lambda_{A}-C_Y`$. This modification remains a $`Q`$-sector statement.
@@ -244,17 +285,21 @@ For a gradient flow this follows from $`N=\nabla V`$ with the required domain an
 
 </div>
 
-<div id="prop:proj-eq" class="proposition">
+<div id="prop:proj-eq" class="corollary">
 
-**Proposition 10** (Projected step fixed point and equilibrium promotion). *Under Assumption <a href="#ass:coh-inv" data-reference-type="ref" data-reference="ass:coh-inv">8</a>, a point $`\Psi^\ast\in\mathop{\mathrm{Ran}}\Pi_{\mathrm{coh}}`$ with $`T_\tau(\Psi^\ast)=\Psi^\ast`$ is a fixed point of the time–$`\tau`$ stabilization map. If Assumption <a href="#ass:lyapunov" data-reference-type="ref" data-reference="ass:lyapunov">9</a> also holds, then it is a genuine equilibrium: $`\Phi_t(\Psi^\ast)=\Psi^\ast`$ for all $`t\ge0`$.*
+**Corollary 10** (10D projected-step equilibrium promotion). *Under Assumption <a href="#ass:coh-inv" data-reference-type="ref" data-reference="ass:coh-inv">8</a>, a point $`\Psi^\ast\in\mathop{\mathrm{Ran}}\Pi_{\mathrm{coh}}`$ with $`T_\tau(\Psi^\ast)=\Psi^\ast`$ is a fixed point of the time–$`\tau`$ stabilization map. If Assumption <a href="#ass:lyapunov" data-reference-type="ref" data-reference="ass:lyapunov">9</a> also holds, then it is a genuine equilibrium: $`\Phi_t(\Psi^\ast)=\Psi^\ast`$ for all $`t\ge0`$.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Coherence invariance gives $`T_\tau(\Psi^\ast)=\Phi_\tau(\Psi^\ast)=\Psi^\ast`$. The Lyapunov identity on $`[0,\tau]`$ then has equal endpoint energies, so its nonnegative dissipation integral vanishes. Hence $`\partial_t\Phi_t(\Psi^\ast)=0`$ and the orbit is stationary. Without the Lyapunov identity, a time–$`\tau`$ fixed point could be a nonstationary periodic point. ◻
+*Proof.* Apply the FP–I promotion theorem . In the present realization, coherence invariance gives $`T_\tau(\Psi^\ast)=\Phi_\tau(\Psi^\ast)=\Psi^\ast`$. The Lyapunov identity on $`[0,\tau]`$ then has equal endpoint energies, so its nonnegative dissipation integral vanishes. Hence $`\partial_t\Phi_t(\Psi^\ast)=0`$ and the orbit is stationary. Without the Lyapunov identity, a time–$`\tau`$ fixed point could be a nonstationary periodic point. ◻
 
 </div>
+
+#### What equilibrium promotion establishes.
+
+The corollary closes a logical gap, not a dynamical one. A projected time–$`\tau`$ return becomes an equilibrium because strict energy loss forbids a nonstationary loop with equal endpoint energy. It does not prove that a return exists or that it is unique; those are the separate existence and FCC questions below.
 
 ## Uniqueness via the FCC (anisotropic norm)
 
@@ -271,7 +316,7 @@ Then for $`\Psi_1,\Psi_2\in\mathop{\mathrm{Ran}}\Pi_{\mathrm{coh}}`$,
 ```
 and since $`\|\cdot\|_{\ensuremath{H^{1}_{F}}}=\|\cdot\|_{\ensuremath{L^{2}}}`$ on $`\mathop{\mathrm{Ran}}\Pi_{\mathrm{coh}}`$, the same holds in $`\ensuremath{H^{1}_{F}}`$. Moreover, $`T_\tau=\Pi_{\mathrm{coh}}\Phi_\tau`$ is a Banach contraction on the declared coherent phase space provided either:*
 
-1.  ***Base diffusion:** $`\varepsilon>0`$ and the nonnegative $`\Delta_Y`$ has a PoincarÃ© gap $`\mu_Y>0`$ on a specified invariant subspace (for example mean-zero functions or Dirichlet boundary data), with $`\varepsilon\mu_Y>L_{\mathrm{coh}}`$; then
+1.  ***Base diffusion:** $`\varepsilon>0`$ and the nonnegative $`\Delta_Y`$ has a Poincaré gap $`\mu_Y>0`$ on a specified invariant subspace (for example mean-zero functions or Dirichlet boundary data), with $`\varepsilon\mu_Y>L_{\mathrm{coh}}`$; then
     ``` math
     \|T_\tau(\Psi_1)-T_\tau(\Psi_2)\|_{\ensuremath{L^{2}}}\le e^{-(\varepsilon\mu_Y-L_{\mathrm{coh}})\tau}\|\Psi_1-\Psi_2\|_{\ensuremath{L^{2}}}.
     ```*
@@ -295,7 +340,13 @@ and since $`\|\cdot\|_{\ensuremath{H^{1}_{F}}}=\|\cdot\|_{\ensuremath{L^{2}}}`$ 
 
 </div>
 
+#### Interpretation of the FCC.
+
+The FCC is a uniqueness gate. Its contraction factor compares two coherent initial states after one stabilization step. Base diffusion supplies that factor only after its zero mode has been removed or fixed; strong monotonicity supplies it directly from the nonlinear response. Either route can make Banach’s theorem available, but neither is a consequence of the internal spectral gap.
+
 ## Existence without contraction: Schauder and Darbo
+
+Uniqueness is useful when a contraction is available, but existence should not be made to depend on it. On a compact base, smoothing and Rellich compactness lead to Schauder. On a noncompact base, confinement replaces global compactness by the compact-local/small-tail decomposition inherited from FP–I. The invariant set is part of either theorem and must be constructed in the concrete model.
 
 <div id="ass:conf" class="assumption">
 
@@ -340,15 +391,15 @@ is forward invariant for $`T_\tau`$ and absorbing in the coherent $`\ensuremath{
 
 </div>
 
-<div id="thm:schauder" class="theorem">
+<div id="thm:schauder" class="corollary">
 
-**Theorem 18** (Schauder: compact base). *Assume $`\ensuremath{Y^{4}}`$ is compact and Assumption <a href="#ass:base-smooth" data-reference-type="ref" data-reference="ass:base-smooth">15</a> holds. Then $`T_\tau=\Pi_{\mathrm{coh}}\Phi_\tau`$ maps bounded $`L^2`$ sets into sets relatively compact in $`L^2`$. If a nonempty $`D\subset\mathop{\mathrm{Ran}}\Pi_{\mathrm{coh}}\cap\ensuremath{L^{2}}`$ is $`L^2`$-closed, bounded, convex, and satisfies $`T_\tau(D)\subset D`$, then $`T_\tau`$ has a fixed point in $`D`$.*
+**Corollary 18** (Compact-base FP–I gate in the 10D model). *Assume $`\ensuremath{Y^{4}}`$ is compact and Assumption <a href="#ass:base-smooth" data-reference-type="ref" data-reference="ass:base-smooth">15</a> holds. Then $`T_\tau=\Pi_{\mathrm{coh}}\Phi_\tau`$ maps bounded $`L^2`$ sets into sets relatively compact in $`L^2`$. If a nonempty $`D\subset\mathop{\mathrm{Ran}}\Pi_{\mathrm{coh}}\cap\ensuremath{L^{2}}`$ is $`L^2`$-closed, bounded, convex, and satisfies $`T_\tau(D)\subset D`$, then $`T_\tau`$ has a fixed point in $`D`$.*
 
 </div>
 
 <div id="lem:condensing" class="lemma">
 
-**Lemma 19** (Condensing via compact-local/small-tail decomposition). *Assume Assumptions <a href="#ass:base-smooth" data-reference-type="ref" data-reference="ass:base-smooth">15</a> and <a href="#ass:conf" data-reference-type="ref" data-reference="ass:conf">14</a>. Let $`D_M`$ be a forward-invariant energy sublevel that is bounded in $`H^1`$ and has the uniform tail control of Assumption <a href="#ass:conf" data-reference-type="ref" data-reference="ass:conf">14</a>. Let $`\alpha(\cdot)`$ be the Kuratowski measure of noncompactness in $`\ensuremath{L^{2}}`$. Then $`\Phi_\tau`$ is *Sadovskiı̆-condensing* on $`D_M`$: for every bounded $`E\subset D_M`$ with $`\alpha(E)>0`$,
+**Lemma 19** (10D compact-local/small-tail reduction). *Assume Assumptions <a href="#ass:base-smooth" data-reference-type="ref" data-reference="ass:base-smooth">15</a> and <a href="#ass:conf" data-reference-type="ref" data-reference="ass:conf">14</a>. Let $`D_M`$ be a forward-invariant energy sublevel that is bounded in $`H^1`$ and has the uniform tail control of Assumption <a href="#ass:conf" data-reference-type="ref" data-reference="ass:conf">14</a>. Let $`\alpha(\cdot)`$ be the Kuratowski measure of noncompactness in $`\ensuremath{L^{2}}`$. Then $`\Phi_\tau`$ is *Sadovskiı̆-condensing* on $`D_M`$: for every bounded $`E\subset D_M`$ with $`\alpha(E)>0`$,
 ``` math
 \alpha(\Phi_\tau(E))<\alpha(E).
 ```*
@@ -357,7 +408,7 @@ is forward invariant for $`T_\tau`$ and absorbing in the coherent $`\ensuremath{
 
 <div class="proof">
 
-*Proof sketch (same mechanism as FP–I, but adapted).* Fix a bounded set $`E`$ in a forward-invariant energy sublevel. Let $`\chi_R\in C_c^\infty(\ensuremath{Y^{4}})`$ be a cutoff equal to $`1`$ on $`\{r\le R\}`$ and supported on $`\{r\le 2R\}`$, and extend $`\chi_R`$ to $`\ensuremath{M_{10}}`$ by $`\chi_R\circ\pi`$. Define the output decomposition
+*Transfer of the FP–I mechanism.* Fix a bounded set $`E`$ in a forward-invariant energy sublevel. Let $`\chi_R\in C_c^\infty(\ensuremath{Y^{4}})`$ be a cutoff equal to $`1`$ on $`\{r\le R\}`$ and supported on $`\{r\le 2R\}`$, and extend $`\chi_R`$ to $`\ensuremath{M_{10}}`$ by $`\chi_R\circ\pi`$. Define the output decomposition
 ``` math
 K_R(\Psi_0):=(\chi_R\circ\pi)\,\Phi_\tau(\Psi_0),
 \qquad
@@ -372,9 +423,9 @@ Choose $`R`$ so large that the right-hand side is $`<\alpha(E)`$, giving $`\alph
 
 </div>
 
-<div id="thm:darbo" class="theorem">
+<div id="thm:darbo" class="corollary">
 
-**Theorem 20** (Darbo–Sadovskiı̆: noncompact base with confinement). *Assume $`\ensuremath{Y^{4}}`$ is noncompact and Assumptions <a href="#ass:conf" data-reference-type="ref" data-reference="ass:conf">14</a> and <a href="#ass:base-smooth" data-reference-type="ref" data-reference="ass:base-smooth">15</a> hold. Let $`D\subset \mathop{\mathrm{Ran}}\Pi_{\mathrm{coh}}\cap\ensuremath{L^{2}}`$ be nonempty, $`L^2`$-closed, bounded, convex, and invariant under $`T_\tau`$. Since $`\Pi_{\mathrm{coh}}`$ is an $`L^2`$-orthogonal projection of norm one, Lemma <a href="#lem:condensing" data-reference-type="ref" data-reference="lem:condensing">19</a> implies that $`T_\tau`$ is condensing on $`D`$. Hence $`T_\tau`$ has a fixed point in $`D`$.*
+**Corollary 20** (Noncompact-base FP–I gate in the 10D model). *Assume $`\ensuremath{Y^{4}}`$ is noncompact and Assumptions <a href="#ass:conf" data-reference-type="ref" data-reference="ass:conf">14</a> and <a href="#ass:base-smooth" data-reference-type="ref" data-reference="ass:base-smooth">15</a> hold. Let $`D\subset \mathop{\mathrm{Ran}}\Pi_{\mathrm{coh}}\cap\ensuremath{L^{2}}`$ be nonempty, $`L^2`$-closed, bounded, convex, and invariant under $`T_\tau`$. Since $`\Pi_{\mathrm{coh}}`$ is an $`L^2`$-orthogonal projection of norm one, Lemma <a href="#lem:condensing" data-reference-type="ref" data-reference="lem:condensing">19</a> implies that $`T_\tau`$ is condensing on $`D`$. Hence $`T_\tau`$ has a fixed point in $`D`$.*
 
 </div>
 
@@ -383,6 +434,10 @@ Choose $`R`$ so large that the right-hand side is $`<\alpha(E)`$, giving $`\alph
 *Remark 21* (No full-map decay from the fiber gap). The margin $`\lambda_{A}-C_Y-L_{\mathrm{Lip}}`$ can sharpen estimates for the $`Q`$ component. It cannot imply $`\alpha(\Phi_\tau(E))\le\theta(\tau)\alpha(E)`$ with $`\theta(\tau)\to0`$ for the full map unless the coherent component has its own base or monotonicity contraction.
 
 </div>
+
+#### What the existence gates contribute.
+
+The compact and condensing routes answer only whether $`T_\tau`$ has at least one coherent fixed point in the declared invariant set. Combined with the strict Lyapunov identity, such a point is a full equilibrium. Combined further with the FCC, it is the unique equilibrium in the relevant coherent phase space. Keeping these three gates separate makes clear which conclusion fails when compactness, Lyapunov strictness, or coherent contraction is absent.
 
 ## Damping estimates and effective rates
 
@@ -434,7 +489,22 @@ While this paper is purely mathematical, the following schematic links guide lat
 
 # Concluding remarks
 
-We established conditional existence and uniqueness results for projected stabilization-step fixed points on $`\ensuremath{M_{10}}=\ensuremath{Y^{4}}\times\ensuremath{X^{6}}`$ with three strongly commuting vertical operators. Equilibrium promotion requires a strict Lyapunov identity. The analysis is a Riemannian control model; physical interpretations and Lorentzian dynamics are deferred.
+We specialized the FP–I framework to $`\ensuremath{M_{10}}=\ensuremath{Y^{4}}\times\ensuremath{X^{6}}`$ with three strongly commuting vertical operators on one compact internal space. Their joint spectral projector gives a precise coherent sector, vertical gaps damp its complement, and independent base or monotonicity hypotheses control contraction inside it. Compact-base Schauder and noncompact-base Darbo gates provide alternative existence mechanisms; a strict Lyapunov identity then distinguishes an actual equilibrium from a merely periodic projected return.
+
+The useful result is the resulting dependency chain:
+``` math
+\begin{aligned}
+\text{joint operator data}
+&\Longrightarrow \text{coherent projector}
+\Longrightarrow \text{existence},\\
+\text{existence}
+&\Longrightarrow \text{equilibrium promotion}
+\Longrightarrow \text{conditional uniqueness}.
+\end{aligned}
+```
+No arrow may be skipped. In particular, the fiber gap is not a coherent contraction constant, the shared circle is not an extra internal dimension, and the q79 lane flag is not a parallel subbundle of an irreducible HYM factor.
+
+What remains is a realization problem rather than another abstract fixed-point lemma: a selected physical model must provide the q79 vertical operators, their common domains and commutators, the physical action and strict Lyapunov functional, and the relation between stabilization and Lorentzian evolution. Until those data are supplied, this paper establishes a conditional ten-dimensional control theorem, not a derived physical vacuum.
 
 # Contraction on the coherent sector: details
 
@@ -448,7 +518,7 @@ Throughout, let $`T_\tau=\Pi_{\mathrm{coh}}\Phi_\tau`$ act on the declared coher
 
 <div class="proof">
 
-*Proof of Theorem <a href="#thm:FCC" data-reference-type="ref" data-reference="thm:FCC">11</a>(a) (base diffusion).* Assume $`\varepsilon>0`$ and the nonnegative $`\Delta_Y`$ has a PoincarÃ© gap $`\mu_Y>0`$ on the declared mean-zero or boundary-conditioned coherent subspace. On that subspace the linear generator is $`-\varepsilon\Delta_Y`$, so for $`u(t)`$ as above,
+*Proof of Theorem <a href="#thm:FCC" data-reference-type="ref" data-reference="thm:FCC">11</a>(a) (base diffusion).* Assume $`\varepsilon>0`$ and the nonnegative $`\Delta_Y`$ has a Poincaré gap $`\mu_Y>0`$ on the declared mean-zero or boundary-conditioned coherent subspace. On that subspace the linear generator is $`-\varepsilon\Delta_Y`$, so for $`u(t)`$ as above,
 ``` math
 \frac{d}{dt}\|u\|_{\ensuremath{L^{2}}}^2 \le -2(\varepsilon\mu_Y-L_{\mathrm{coh}})\|u\|_{\ensuremath{L^{2}}}^2,
 ```
@@ -502,3 +572,7 @@ This is the standard mechanism behind Lemma <a href="#lem:Pcoh-H1" data-referen
 #### Base potentials.
 
 Adding a nonnegative confining potential $`V(y)`$ improves tail coercivity on $`\ensuremath{Y^{4}}`$ and underlies Darbo on noncompact bases, but does not change the fiber operators $`A_n(y)`$ and hence does not change $`\ensuremath{\lambda^{\ast}}`$ or $`\lambda_{A}`$.
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

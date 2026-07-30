@@ -1,5 +1,5 @@
 {
-  "abstract": "We present a conditional \\Theta\u2013closure realization relating Standard Model gauge couplings to internal geometric overlap integrals. Measured source data are transported with SMDR v1.3 into the full-Standard-Model \\overline{\\mathrm{MS}} scheme at Q=M_t. In the normalization used here, the resulting profile targets are I_2/I_1=0.5110273\\pm0.0001231,\\qquad I_3/I_1=0.158335\\pm0.001098. They are calibrated profile coordinates, not first-principles predictions of the gauge couplings. We formulate the admissibility and spectral-gap conditions under which an internal realization may reproduce these targets. To address the normalization of nonabelian harmonics, we introduce a high\u2013coherence (twistor) corner with declared period and gauge-kinetic normalizations. An O(\\lambda_Q^{-1}) overlap estimate is conditional on explicit projector and representative perturbation bounds. The old 4.2\u20135~\\mathrm{TeV} crossing and its identification with a physical coherence, gap, or quantum-gravity scale are withdrawn. The scale Q=M_t is a renormalization and matching convention only. Explicit geometric realization must therefore be re-executed against the new target pair.",
+  "abstract": "This paper presents a conditional Theta-closure realization relating Standard Model gauge couplings to internal geometric overlap integrals. Measured source data are transported with SMDR v1.3 into the full-Standard-Model MS-bar scheme at Q = Mt. In the normalization used here, the resulting profile targets are I2/I1 = 0.5110273 +/- 0.0001231 and I3/I1 = 0.158335 +/- 0.001098. They are calibrated profile coordinates, not first-principles predictions of the gauge couplings. The paper formulates the admissibility and spectral-gap conditions under which an internal realization may reproduce these targets. A high-coherence twistor corner uses declared period and gauge-kinetic normalizations; its inverse-gap overlap estimate remains conditional on explicit projector and representative perturbation bounds. The scale Q = Mt is a renormalization and matching convention, not a physical coherence, gap, or quantum-gravity scale. Independent geometric selection remains open.",
   "authors": [
     "Peter Nero"
   ],
@@ -9,60 +9,85 @@
   "date": "July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18255244",
-    "created": "2026-01-15T10:28:40.043341+00:00",
+    "created": "2026-07-29T08:52:18.504203+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18255245",
+    "doi": "10.5281/zenodo.21666007",
     "files": [
       {
-        "checksum": "md5:c07ecc003b6083b6f89dd35598826e43",
-        "content_url": "https://zenodo.org/api/records/18255245/files/Theta_Closure_in_Modal_Triplet_Theory_I__Gauge_Couplings_from_Internal_Geometry%20(1).pdf/content",
-        "key": "Theta_Closure_in_Modal_Triplet_Theory_I__Gauge_Couplings_from_Internal_Geometry (1).pdf",
-        "size": 368040
+        "checksum": "md5:9c633bd34b18c43a6d5878c0defb5691",
+        "content_url": "https://zenodo.org/api/records/21666007/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 425111
       }
     ],
-    "id": "18255245",
-    "match_kind": "title_or_file",
+    "id": "21666007",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18255245",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21666007",
     "resource_type": "publication",
-    "title": "Theta Closure in Modal Triplet Theory I: Gauge Couplings from Internal Geometry",
-    "updated": "2026-01-15T10:28:40.883203+00:00",
-    "version": "v1.0"
+    "title": "Theta Closure in Modal Triplet Theory I: Gauge-Profile Targets from Multi-Loop Common-Scheme Transport",
+    "updated": "2026-07-29T08:52:19.210249+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "4a742c599fb249c90287a61eb6fd49a623d95e5893324de51b700e1937717eba",
+  "main_tex_sha256": "83634ba0257825ccdfde570055204fb0f3af70e47e1f7eb5d27a200bda128201",
   "paper_id": "theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f",
-  "paper_md_sha256": "5ea019fb89cd14cb0b619cee5f8864400029a06a5ce336684adbf6ebe021ad1b",
+  "paper_md_sha256": "18be1a7088ab99b1da3680210d7c7a36706c1eb0d576433ec9908a2ca90d7935",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "revision_evidence_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/REVISION_MANIFEST.md",
-    "revision_evidence_sha256": "671cf544be5b133fb4811d7b7c2bd041a7786593a391878de74e7fbb65a4086c",
+    "revision_evidence_path": "papers/theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "4d2634d16b7bea1ab571f4d40e9b4d7f6638995fce97f6fb97b509aa6f0d4346",
     "selected_revision": true,
     "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_I__Gauge_Couplings_from_Internal_Geometry"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 30707,
+      "bytes": 36781,
       "path": "main.tex",
-      "sha256": "4a742c599fb249c90287a61eb6fd49a623d95e5893324de51b700e1937717eba"
+      "sha256": "83634ba0257825ccdfde570055204fb0f3af70e47e1f7eb5d27a200bda128201"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_I__Gauge_Couplings_from_Internal_Geometry_v2"
   },
-  "source_tree_sha256": "c6e343943a314fd78dc633503daa918f2d4980c352ec376340af8116b8f90f75",
+  "source_tree_sha256": "380ddfa1fb72bbdfc5b25c6891e3c4f97ef468c86fcfa1dddaebca4ab083fbf1",
   "title": "Theta Closure in Modal Triplet Theory I: Gauge-Profile Targets from Multi-Loop Common-Scheme Transport",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255244",
+      "created": "2026-07-29T08:52:18.504203+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666007",
+      "files": [
+        {
+          "checksum": "md5:9c633bd34b18c43a6d5878c0defb5691",
+          "content_url": "https://zenodo.org/api/records/21666007/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 425111
+        }
+      ],
+      "id": "21666007",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666007",
+      "resource_type": "publication",
+      "title": "Theta Closure in Modal Triplet Theory I: Gauge-Profile Targets from Multi-Loop Common-Scheme Transport",
+      "updated": "2026-07-29T08:52:19.210249+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18255244",
       "created": "2026-01-15T10:28:40.043341+00:00",

@@ -1,339 +1,474 @@
 ---
 abstract: |
-  The inflationary measure problem and the origin of quantum probabilities are traditionally treated as independent foundational issues in cosmology and quantum mechanics. In this work we argue that these problems share a common structural origin. Using the framework of Modal Triplet Theory (MTT), we construct a *shadow bridge* between inflationary probability measures and the quantum Born rule. The bridge identifies both as distinct projections of a single basin–measure functional defined on an admissible coherent sector of an underlying modal dynamics. We derive a class of admissibility–weighted distributions over inflationary histories, show that they are normalizable without arbitrary cutoffs, and demonstrate that they reproduce the qualitative features of observed flatness while avoiding runaway eternal inflation. As a concrete validation, we weight standard inflationary models by the induced distribution over e–folds and compare their predictions for $`(n_s,r)`$ against current observational constraints, without fitting potentials or introducing ad hoc measures. Plateau–type models align robustly with the admissibility–weighted region, while chaotic monomial models do not. We conclude with a speculative discussion of the early universe as a large coherent basin and the implications for time, entropy, and quantum measurement.
+  The quantum Born rule and the inflationary measure problem both involve probability after reduction to an effective description, but this resemblance does not prove a common physical origin. We formulate the proposed relation as a typed measure-theoretic obligation. A successful bridge must supply one selected source space and probability law or probability kernel, separate quantum and cosmological observable maps, and verified pushforward equalities on declared domains. Two elementary results expose the difficulty. A non-injective projection does not create probability, and any two prescribed target laws admit a trivial common realization by a product measure. Common origin becomes explanatory only when the source and maps are fixed before the target laws enter. The current MTT q79 construction supplies a selected quantum leg for its canonical binary one-anchor recorder, but not arbitrary apparatus contexts; no selected cosmological history measure or same-source bridge is yet available. We retain the earlier e-fold weighting as a conditional model. For positive parameters, its generalized density is normalizable, has a unique mode, and has an exact curvature pushforward, but its front, barrier, and volume parameters remain ansatz data rather than MTT predictions. The result is a precise common-measure research program, not a derivation of the Born rule, inflationary model preference, or a universal cosmological measure.
 author:
 - Peter Nero
-current_version: v1.0
-date: January 2026
-generated_from_main_tex_sha256: f08582062bddcdc51ee25b51193a005d75ca5e314eab898af96ff0fe879fcb2c
+current_version: v2
+date: July 2026, Version 2
+generated_from_main_tex_sha256: 541306e01db615f87b7bb7dfcb3072223cebe371281b3f5953fd20ee36c593ac
 paper_id: inflationary-measures-and-the-born-rule-as-a-single-sha-388b32c2
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  Inflationary Measures and the Born Rule as a Single Shadow–Bridge Problem  
-  A Modal Triplet Theory Perspective
-zenodo_doi: 10.5281/zenodo.18330675
-zenodo_record_id: 18330675
-zenodo_url: "https://zenodo.org/records/18330675"
+  Born and Inflationary Probabilities as a Common-Measure Obligation:
+  Exact Pushforward Criteria and a Conditional MTT Model
+zenodo_doi: 10.5281/zenodo.21665979
+zenodo_record_id: 21665979
+zenodo_url: "https://zenodo.org/records/21665979"
 ---
 
-# Introduction
+# Version 2 Revision Note
 
-Inflationary cosmology provides a compelling explanation for the observed homogeneity, isotropy, and near–flatness of the universe. Once inflation is allowed to proceed indefinitely or stochastically, however, it gives rise to a profound ambiguity: the *measure problem*. Different choices of time slicing, cutoffs, or weighting prescriptions lead to inequivalent probability assignments for cosmological histories, and no canonical measure is selected by the dynamics alone.
+Supersedes
+*Inflationary Measures and the Born Rule as a Single Shadow–Bridge Problem*, version 1.
 
-Quantum mechanics faces a parallel difficulty at a very different scale. While the Schrödinger equation specifies deterministic unitary evolution, the theory supplements it with the Born rule, assigning probabilities to measurement outcomes. The origin of this rule has been debated for decades, with proposed explanations ranging from axioms and decision–theoretic arguments to environmental decoherence.
+Reason
+The earlier paper treated a schematic basin functional as selected, inferred the Born rule from normalized basin weights, and described an ansatz e-fold density as a regulator-free MTT prediction. It did not specify the source probability law, context dependence, cosmological quotient, or typed pushforward maps, and it used ordinary observational model preferences as validation of the proposed weighting.
 
-The coexistence of two probability problems—one cosmological, one quantum—is striking. In this work we argue that this parallelism is not accidental. Rather, both problems arise from a common structural limitation inherent to effective physical description: the necessity of projection from a richer underlying dynamics to a reduced observable sector.
+Resolution
+This version gives an exact common-measure contract, proves that non-injective projection alone does not generate probabilities, and proves that unconstrained common-source realizations are vacuous. It records the current restricted q79 Born result, isolates the open cosmological and same-source gates, and reclassifies the e-fold density as a conditional four-parameter model whose normalization, mode, and curvature pushforward are proved explicitly.
 
-Using Modal Triplet Theory (MTT), we show that inflationary measures and quantum probabilities are distinct *shadows* of a single basin–measure functional. This identification constitutes a *shadow bridge*: a relation between inequivalent effective descriptions that share a common upstairs origin but admit no invertible map between them downstairs. The goal of this paper is not to modify inflationary dynamics or quantum mechanics, but to explain why probability appears in both contexts and why it ceases to be well–defined beyond certain boundaries.
+Retained result
+Born and cosmological probabilities can meaningfully be compared as typed pushforwards, and the displayed admissibility-weighted e-fold family is a mathematically well-defined illustrative model.
 
-# Projection, Admissibility, and Basins
+Remaining boundary
+MTT has not selected one normalized upper measure with both the required general Born pushforwards and a gauge-invariant cosmological-history pushforward. The e-fold front and weight parameters are not derived from q79 geometry or its selected action.
 
-Modal Triplet Theory treats familiar physical frameworks as effective encodings of a deeper modal dynamics. Observable physics arises through a projection from a high–dimensional configuration space to a lower–dimensional effective description. This projection is necessarily non–injective: many underlying configurations correspond to the same effective state.
+# One analogy, three different questions
 
-A projection is *admissible* only within regions of configuration space where it remains bounded, stable, and spectrally separated. Admissibility is controlled by spectral gaps, stability margins, and contractivity conditions. Outside admissible regions, effective descriptions lose predictive power: probabilities become ill–defined, reconstruction fails, and no autonomous physical laws remain.
+The Born rule and the cosmological measure problem are often placed under the same heading because both ask for probabilities. Their mathematical jobs are different.
 
-Admissible regions generically decompose into *basins*. A basin is a subset of the modal configuration space that is dynamically attracting under the projected evolution. Once a trajectory enters a basin, it remains there for long times, and its effective description becomes robust. Basin interiors support stable observables and autonomous effective dynamics.
+Quantum outcome law
+Given a preparation, instrument, and recorded outcome algebra, determine the probabilities of the possible records.
 
-Crucially, projection collapses internal structure within a basin. Distinctions that exist in the underlying modal dynamics are lost, and only basin–level information survives. This loss of information is responsible for both irreversibility and probabilistic structure in effective theories.
+Cosmological history law
+Given dynamics, initial or boundary data, and an observational conditioning rule, assign weights to histories or events without an arbitrary regulator or slicing dependence.
 
-# The Basin–Measure Functional
+Common-source claim
+Show that both laws are pushforwards of one independently selected upper probability construction.
 
-Within an admissible coherent domain, MTT defines a natural weighting on basins. Let $`B_i`$ denote a basin of the coherent sector. The basin weight is given schematically by
+The third claim is much stronger than the first two. A derivation of one quantum recorder does not define a measure on inflationary histories. Conversely, a cosmological cutoff prescription does not imply the quadratic quantum law.
+
+The useful MTT intuition is that both descriptions may discard upper information. This motivates a common diagram. It does not fill the diagram. The source measure, the observable maps, their domains, and the relevant conditioning must all be supplied.
+
+# The typed common-measure contract
+
+## Fixed-context form
+
+Let
+``` math
+(\mathcal{U},\Sigma_{\mathcal{U}})
+```
+be a source measurable space and let $`\mu`$ be a probability measure on it. Let
+``` math
+(\Omega_Q,\Sigma_Q),\qquad
+(\Omega_C,\Sigma_C)
+```
+be a quantum outcome space and a cosmological observable space. Measurable maps
+``` math
+\pi_Q:\mathcal{U}\longrightarrow\Omega_Q,
+\qquad
+\pi_C:\mathcal{U}\longrightarrow\Omega_C
+```
+induce the pushforward laws
 ``` math
 \begin{equation}
-\mu(B_i) \propto \int_{B_i} e^{-\Delta A/\hbar}\, d\Sigma ,
+\nu_Q=(\pi_Q)_{\!*}\mu,\qquad
+\nu_C=(\pi_C)_{\!*}\mu,
+\label{eq:pushforwards}
 \end{equation}
 ```
-where $`\Delta A`$ is a modal action increment measuring the cost of reaching a given configuration and $`d\Sigma`$ is the induced measure on the coherent sector.
-
-This functional has three essential properties:
-
-1.  **Stability:** It is invariant under admissible perturbations of the underlying dynamics.
-
-2.  **Non–reconstructibility:** It survives projection, while microscopic path information does not.
-
-3.  **Normalizability:** Provided admissibility holds globally, the total weight is finite.
-
-In quantum mechanics, this functional yields the Born rule when basins correspond to pointer–compatible outcome sectors. In the following sections we show that the same functional governs inflationary history weights, thereby establishing the shadow bridge between the two probability problems.
-
-# Shadow A: Quantum Measurement and the Born Rule
-
-In MTT, quantum measurement is not treated as a fundamental stochastic event. Instead, it is understood as a transition from a region of configuration space where multiple basins overlap under projection to a region deep inside a single basin. Environmental coupling, amplification by an apparatus, and record formation collectively drive the system toward basin interiority.
-
-Prior to measurement, the projected description identifies multiple underlying modal configurations as the same effective quantum state. During interaction with the environment, these configurations separate into dynamically distinct basins corresponding to different macroscopic records. Projection collapses the internal structure of each basin, erasing path information and retaining only basin membership.
-
-The relative frequencies of outcomes are therefore determined by the basin weights $`\mu(B_i)`$. Normalization yields
+where
 ``` math
-\begin{equation}
-P_i = \frac{\mu(B_i)}{\sum_j \mu(B_j)} ,
-\end{equation}
+(\pi_Q)_{\!*}\mu(E)=\mu(\pi_Q^{-1}E)
 ```
-which reproduces the Born rule. Importantly, this rule is not postulated but emerges as a consequence of projection and admissibility.
+and similarly for $`\pi_C`$.
 
-The Born rule holds only while the measurement process remains within an admissible regime. If admissibility fails—for example, in hypothetical measurements that attempt to maintain coherence beyond stability margins—no consistent probability assignment exists. This boundary mirrors the breakdown of inflationary probability measures discussed below.
+<div class="definition">
 
-# Shadow B: Inflationary Cosmology and the Measure Problem
-
-Inflationary dynamics also exhibit basin structure. Slow–roll inflation has attractor behavior: a wide range of initial conditions converge toward similar late–time states. These attractors define basins in the space of cosmological histories.
-
-Difficulties arise when inflation is allowed to extend indefinitely. Volume weighting favors arbitrarily large numbers of e–folds, and probability assignments become sensitive to the choice of cutoff or time slicing. This is the inflationary measure problem.
-
-From the MTT perspective, this pathology indicates that the effective inflationary description has crossed an admissibility boundary. Beyond this boundary, projection to four–dimensional observables ceases to be stable, and no globally meaningful probability measure exists.
-
-The appropriate response is therefore not to invent a new cutoff, but to derive an admissibility–weighted distribution over inflationary histories from the basin–measure functional itself. Such a distribution must be normalizable, stable under coarse–graining, and reduce to familiar weighting deep inside the admissible regime.
-
-# Constructing the Shadow Bridge
-
-We now formalize the shadow bridge between quantum probabilities and inflationary measures.
-
-## Shared Admissibility Structure
-
-Both quantum measurement and inflationary cosmology rely on effective descriptions that are valid only within admissible domains. In both cases:
-
-- projection from underlying dynamics is non–injective;
-
-- basin structure organizes long–term behavior;
-
-- probability emerges from loss of reconstructibility under projection;
-
-- breakdown of admissibility leads to ill–defined probabilities.
-
-These shared features identify a common upstairs structure.
-
-## Distinct Derivational Routes
-
-The two contexts differ in how projection is applied:
-
-- In quantum mechanics, projection maps modal configurations to measurement outcomes.
-
-- In cosmology, projection maps entire inflationary histories to late–time observables.
-
-Because different information is discarded in each case, there exists no invertible map between quantum outcome probabilities and inflationary measures. This non–reconstructibility is essential: the relation is not a duality but a shadow bridge.
-
-## The Bridge Statement
-
-We can now state the shadow bridge precisely:
-
-> *Inflationary probability measures and the quantum Born rule are distinct projections of the same basin–measure functional defined on an admissible coherent sector of the underlying modal dynamics.*
-
-Agreement between the two does not arise from equivalence of effective theories, but from shared upstairs structure and shared admissibility boundaries.
-
-# Admissibility–Weighted Distributions over E–Folds
-
-To make the shadow bridge explicit, we construct a class of admissibility–weighted distributions over the total number of inflationary e–folds $`N`$.
-
-## Selection Fronts and Coherence Capacity
-
-In MTT, effective descriptions fail at : boundaries where coherence capacity vanishes and projection loses stability. Let $`C(N)`$ denote a coherence–capacity margin controlling the validity of the inflationary encoding. We assume:
-
-- $`C(N) > 0`$ for admissible inflationary histories;
-
-- $`C(N) \to 0`$ at a critical value $`N = N_c`$;
-
-- Near the front, $`C(N)`$ decreases monotonically.
-
-Close to the front, the simplest admissible form is linear,
+**Definition 1** (Strong fixed-context bridge). A strong common-measure bridge consists of
 ``` math
-\begin{equation}
-C(N) \approx \kappa (N_c - N),
-\end{equation}
+(\mathcal{U},\Sigma_{\mathcal{U}},\mu,\pi_Q,\pi_C)
 ```
-where $`\kappa>0`$ sets the rate at which admissibility is exhausted.
+together with proofs that:
 
-#### Near–front regime.
+1.  $`\mu`$ is normalized and selected without using either target law as construction data;
 
-The functional form adopted for the admissibility margin in this section should be understood as an effective near–front approximation. It captures the leading behavior of the basin stability as admissibility is exhausted, rather than a globally valid description of the inflationary phase. Different microscopic realizations may modify the detailed shape of the margin away from the front, but such modifications do not affect the existence or normalizability of the induced measure, nor the suppression of trajectories approaching the admissibility boundary.
+2.  both maps are defined on the same physical source, not merely on isomorphic copies;
 
-## Barrier Penalty and Basin Weight
+3.  the first equality in <a href="#eq:pushforwards" data-reference-type="eqref" data-reference="eq:pushforwards">[eq:pushforwards]</a> is the intended quantum outcome law;
 
-Admissibility failure is modeled by a barrier penalty in the modal action,
+4.  the second equality is well defined on gauge-equivalence classes of cosmological histories and is independent of arbitrary regulator choices; and
+
+5.  all conditioning, null sets, domains, and approximation errors are stated.
+
+</div>
+
+## Contextual form
+
+One fixed measure cannot express all preparations and instruments unless those choices are included in the source or in its conditioning. Let $`\mathcal{C}`$ be a context space. The appropriate source object is generally a probability kernel
 ``` math
-\begin{equation}
-\frac{\Delta A_{\mathrm{stab}}(N)}{\hbar}
-= \frac{\lambda}{C(N)^2}
-= \frac{\lambda}{\kappa^2 (N_c - N)^2},
-\end{equation}
+\mathsf{M}:\mathcal{C}\times\Sigma_{\mathcal{U}}\longrightarrow[0,1],
+\qquad
+c\longmapsto\mu_c.
 ```
-with $`\lambda>0`$ a dimensionless stiffness parameter. This penalty diverges at the selection front and is negligible deep inside the admissible basin.
+Quantum contexts may include a preparation, a measurement instrument, and a stopping rule. Cosmological contexts may include a background branch, conditioning data, and an observer/event prescription. A full bridge must explain which context variables are physical inputs and which are selected by the theory. Hiding all context dependence in the symbol $`\mu`$ only disguises the parameter ledger.
 
-Combining this penalty with the leading volume–weight factor yields the admissibility–weighted distribution
+# Two exact guardrails
+
+## Non-injectivity does not create probability
+
+<div class="proposition">
+
+**Proposition 2** (Projection guardrail). *Let $`\pi:\mathcal{U}\to\Omega`$ be any measurable map, including a non-injective one. The map alone does not determine a probability law on $`\Omega`$. In particular, if the upper state is the point measure $`\delta_u`$, then
+``` math
+\pi_{\!*}\delta_u=\delta_{\pi(u)}.
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* For every measurable $`E\subseteq\Omega`$,
+``` math
+(\pi_{\!*}\delta_u)(E)
+=\delta_u(\pi^{-1}E)
+=
+\begin{cases}
+1,&\pi(u)\in E,\\
+0,&\pi(u)\notin E.
+\end{cases}
+```
+This is exactly $`\delta_{\pi(u)}`$. Without an upper measure or state there is no object to push forward. ◻
+
+</div>
+
+Many-to-one projection explains loss of reconstructibility: distinct upper points may have the same retained value. It does not choose how much weight to place on those points. That weight must come from a state, invariant measure, normal functional, ensemble, or dynamical sampling theorem.
+
+## An unconstrained common source is automatic
+
+<div class="proposition">
+
+**Proposition 3** (Trivial common realization). *Let $`\nu_Q`$ and $`\nu_C`$ be arbitrary probability measures on $`(\Omega_Q,\Sigma_Q)`$ and $`(\Omega_C,\Sigma_C)`$. Then there exists a common source measure with those two pushforwards.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Take
+``` math
+\mathcal{U}=\Omega_Q\times\Omega_C,\qquad
+\mu=\nu_Q\otimes\nu_C,
+```
+and let $`\pi_Q,\pi_C`$ be the coordinate projections. The defining property of the product measure gives
+``` math
+(\pi_Q)_{\!*}\mu=\nu_Q,\qquad
+(\pi_C)_{\!*}\mu=\nu_C.
+```
+ ◻
+
+</div>
+
+<div class="corollary">
+
+**Corollary 4** (Non-explanatory existence). *The bare statement that the Born law and a cosmological law are projections of one measure has no predictive content. The scientific content must lie in the prior selection of $`\mathcal{U}`$, $`\mu`$, the two maps, and their context dependence.*
+
+</div>
+
+The same conclusion holds with correlated couplings: choosing a joint law with the desired marginals can encode any permitted correlation. A common source becomes evidence only when it is independently constrained enough that the target laws could have come out differently.
+
+# Current MTT status
+
+## What the q79 quantum construction supplies
+
+The current MTT ledger contains a stronger quantum result than was available to version 1. On the canonical q79 binary one-anchor recorder, the selected normal state on the commuting Fock output algebra emits the stopped output measure, and the second-moment capture descent is exact on that domain. No observed probability is inserted as a fit coordinate.
+
+This is a genuine selected quantum leg, but its quantifiers matter. It does not yet cover every allowed apparatus context, finite-bandwidth or non-Markov control, or an objective law selecting one ontic history. The general Born source theorem therefore remains open even though the canonical recorder is closed.
+
+## What is not yet supplied
+
+<div class="center">
+
+| Required object | Current status |
+|:---|:---|
+| Selected q79 source for canonical binary recorder | Available on the declared one-anchor domain |
+| Quantum output pushforward | Exact on that domain |
+| Arbitrary physical instruments and controls | Open |
+| Objective one-history selection | Open |
+| Selected inflationary history space | Open |
+| Gauge- and slicing-invariant history sigma-algebra | Open |
+| Cosmological source law | Open |
+| Cosmological readout map | Open |
+| Same physical source for both legs | Open |
+
+</div>
+
+Accordingly, the current status of the common Born–cosmology bridge is interpretive. The exact quantum leg narrows the missing work; it does not promote the cosmological leg.
+
+# A conditional e-fold model
+
+The earlier paper proposed a coherence front $`N_c`$, a linear margin
+``` math
+C(N)=\kappa(N_c-N),
+```
+a barrier $`\Delta A/\hbar=\lambda/C(N)^2`$, and physical-volume weighting $`e^{3N}`$. Those choices are not consequences of projection. They define a model. It is useful to analyze the whole family transparently.
+
+## Definition and normalization
+
+For
+``` math
+\alpha>0,\qquad \beta>0,\qquad p>0,\qquad N_c\in\mathbb{R},
+```
+define on $`N<N_c`$
 ``` math
 \begin{equation}
-w(N) \propto
-\exp\!\left(
-3N - \frac{\lambda}{\kappa^2 (N_c - N)^2}
+w_{\alpha,\beta,p,N_c}(N)
+=
+\exp\left(
+\beta N-\frac{\alpha}{(N_c-N)^p}
 \right).
+\label{eq:weight}
 \end{equation}
 ```
+The original ansatz is recovered with
+``` math
+\beta=3,\qquad p=2,\qquad
+\alpha=\frac{\lambda}{\kappa^2}.
+```
 
-This distribution has three desirable properties:
+<div class="theorem">
 
-1.  It is normalizable without arbitrary cutoffs.
-
-2.  It reduces to standard volume weighting far from the front.
-
-3.  It suppresses histories that approach inadmissible regimes.
-
-## Connection to Curvature
-
-Spatial curvature scales approximately as
+**Theorem 5** (Conditional e-fold density). *The integral
+``` math
+Z_{\alpha,\beta,p,N_c}
+=\int_{-\infty}^{N_c}
+w_{\alpha,\beta,p,N_c}(N)\,dN
+```
+is finite and positive. The normalized density
+``` math
+f_N(N)=Z_{\alpha,\beta,p,N_c}^{-1}
+w_{\alpha,\beta,p,N_c}(N)
+```
+has a unique mode at
 ``` math
 \begin{equation}
-\Omega_k \propto e^{-2N}.
+N_{\mathrm{mode}}
+=N_c-\left(\frac{\alpha p}{\beta}\right)^{1/(p+1)}.
+\label{eq:mode}
 \end{equation}
 ```
-Thus, admissibility–weighted distributions over $`N`$ induce corresponding distributions over $`\Omega_k`$. Moderate inflation produces small curvature, while extreme over–inflation is suppressed by the barrier penalty.
+All polynomial moments of $`N_c-N`$ are finite.*
 
-This explains why flatness is generic but ultra–extreme flatness is not probabilistically favored.
+</div>
 
-# Validation Against Inflationary Observables
+<div class="proof">
 
-We now validate the shadow–bridge construction by applying the induced distribution over $`N`$ to standard inflationary observables.
+*Proof.* Set $`x=N_c-N>0`$. Then
+``` math
+Z_{\alpha,\beta,p,N_c}
+=e^{\beta N_c}
+\int_0^\infty
+\exp\left(-\beta x-\frac{\alpha}{x^p}\right)dx.
+```
+For $`x\geq1`$, the integrand is bounded by $`e^{-\beta x}`$. For $`0<x\leq1`$, it is bounded by $`e^{-\alpha/x^p}`$, whose integral is finite after the substitution $`y=\alpha/x^p`$. The same estimates with an extra factor $`x^m`$ prove finiteness of every nonnegative polynomial moment.
 
-## Methodology
+The log density in the $`x`$ coordinate is
+``` math
+\ell(x)=-\beta x-\frac{\alpha}{x^p}.
+```
+Its derivative vanishes only when
+``` math
+-\beta+\frac{\alpha p}{x^{p+1}}=0,
+```
+giving $`x_{\mathrm{mode}}=(\alpha p/\beta)^{1/(p+1)}`$. Moreover,
+``` math
+\ell''(x)
+=-\frac{\alpha p(p+1)}{x^{p+2}}<0,
+```
+so this stationary point is the unique mode. Returning to $`N=N_c-x`$ gives <a href="#eq:mode" data-reference-type="eqref" data-reference="eq:mode">[eq:mode]</a>. ◻
 
-We do not fit inflationary potentials or introduce ad hoc measures. Instead:
+</div>
 
-1.  We weight inflationary models by the admissibility–weighted distribution $`p(N)`$.
+## What each parameter means
 
-2.  We treat reheating uncertainty as a nuisance parameter by allowing a broad range of shifts between total and pivot–scale e–folds.
+<div class="center">
 
-3.  We propagate $`p(N)`$ to predictions for $`(n_s,r)`$ using standard slow–roll relations.
+| Symbol | Model role | Source status |
+|:---|:---|:---|
+| $`N_c`$ | location of the proposed admissibility front | not selected by current MTT geometry |
+| $`\beta`$ | exponential history/volume weight | $`\beta=3`$ assumes three-dimensional physical-volume weighting |
+| $`p`$ | barrier exponent | $`p=2`$ is an ansatz, not a theorem |
+| $`\alpha`$ | barrier scale | combines the proposed stiffness and margin normalization |
 
-This procedure tests structural alignment rather than parameter tuning.
+</div>
 
-## Results for Representative Models
+Normalization removes one overall multiplicative constant, but it does not remove these four shape and location inputs. A fitted or hand-selected member of this family is therefore not a zero-parameter prediction.
 
-Applying this weighting yields robust discrimination:
+# Exact curvature pushforward
 
-- Plateau–type models (e.g. Starobinsky–like) predict tensor–to–scalar ratios $`r \sim 10^{-3}`$ across the admissible $`N`$ window and lie entirely within current observational bounds.
-
-- Quadratic and quartic chaotic models predict $`r \gtrsim 10^{-1}`$ throughout the same window and lie entirely outside observationally allowed regions.
-
-This conclusion is insensitive to the choice of reheating uncertainty and to order–unity variations of the selection–front stiffness parameter.
-
-For reference, Planck 2018 reports $`n_s = 0.9649 \pm 0.0042`$ (68% CL) and, when combined with BICEP/Keck BK15, $`r_{0.002}<0.056`$ (95% CL) . More recent joint CMB+BAO analyses find compatible central values and typically tighten the tensor bound to $`r \lesssim \mathcal{O}(10^{-2})`$ .
-
-#### Scope and interpretation.
-
-The comparison presented here is intended as a structural illustration of the admissibility–weighted measure, not as a precision model–selection result. No specific inflationary potential is derived or fit, and no claim is made that the admissibility weighting uniquely selects a particular microscopic inflationary model. The purpose of this section is to demonstrate that, once a projection–based basin measure is imposed, standard classes of inflationary scenarios are filtered differently depending on their proximity to admissibility boundaries. Quantitative discrimination at the level of detailed model selection would require additional dynamical input beyond the scope of this paper.
-
-## Interpretation
-
-The validation shows that admissibility weighting acts as a structural filter on inflationary models. Models are not selected by dynamics alone, but by compatibility with the same basin structure that governs probability in quantum measurement.
-
-The success of plateau–type models is therefore explained without invoking anthropic arguments or finely tuned measures.
-
-# Implications for Inflationary Cosmology
-
-The shadow–bridge construction developed above has several important implications for early–universe cosmology.
-
-## Inflation as an Effective Encoding
-
-From the MTT perspective, inflation is not a fundamental regime that can be extended arbitrarily. It is an effective encoding that remains valid only while admissibility conditions hold. Attempts to extrapolate inflation beyond this domain lead to precisely the pathologies encountered in the measure problem: regulator dependence, slicing ambiguity, and loss of predictivity.
-
-Thus, the question “Why did inflation last a particular number of e–folds?” is reframed as “Why does the inflationary encoding cease to be admissible beyond a certain range of e–folds?”
-
-## Flatness Without Over–Inflation
-
-The admissibility–weighted distribution explains why spatial curvature is small without requiring arbitrarily long inflation. Moderate inflation lies deep inside the admissible basin and is probabilistically favored, while extreme over–inflation is suppressed by coherence–capacity exhaustion.
-
-This naturally explains observed near–flatness without appealing to anthropic selection or infinite inflationary volumes.
-
-## Eternal Inflation as a Boundary Regime
-
-In this framework, eternal inflation is not forbidden dynamically. Rather, it corresponds to a boundary regime where the effective four–dimensional description loses admissibility. Beyond this boundary, probability assignments become ill–defined, just as quantum probabilities fail outside the domain of stable measurement.
-
-The measure problem is therefore reinterpreted as a signal that the inflationary encoding has been pushed beyond its domain of validity.
-
-# Speculative Outlook: The Universe as a Coherent Basin
-
-*This section is explicitly speculative and intended as a conceptual extension of the shadow–bridge results.*
-
-## Basin Entry as the “Beginning”
-
-If the shadow–bridge picture is correct, the early universe may be understood as a single, exceptionally large and long–lived coherent basin of the underlying modal dynamics. In this view, the event conventionally identified as the “Big Bang” is not a creation event in time, but a basin–entry or selection event at which a stable four–dimensional projection became possible.
-
-Prior to this event, modal evolution may have existed without any admissible spacetime description. Questions about “before” the Big Bang are therefore misplaced: time itself emerges only within the basin.
-
-## Time and the Arrow of Evolution
-
-Fundamental modal dynamics in MTT are invertible. The arrow of time arises only as an internal ordering parameter within a basin, defined by progressive exhaustion of coherence capacity and accumulation of records.
-
-It is therefore possible, in principle, that the effective arrow of time inside a basin is opposite to the direction of the underlying modal parameter. What we call the “future” is simply the direction toward decreasing admissibility.
-
-## Entropy and Low Initial Conditions
-
-The apparent low–entropy initial state of the universe is naturally explained in this picture. Basin entry corresponds to a region of configuration space far from admissibility boundaries, where projection retains maximal distinguishability and entropy is low. No special fine–tuning of microstates is required.
-
-Entropy increase reflects the gradual loss of distinguishability as the system moves deeper into the basin and toward its eventual exhaustion.
-
-## Quantum Measurement as a Microscopic Analogue
-
-A striking corollary is that quantum measurement collapse becomes the microscopic analogue of cosmological basin entry. Collapse is not fundamentally instantaneous but corresponds to a finite–duration basin realignment in the underlying modal dynamics. Projection erases the internal duration of this process, making it appear instantaneous in the effective description.
-
-Thus, the early universe and quantum measurement may represent two scales of the same structural phenomenon: transitions between admissible basins.
-
-# Conclusions
-
-We have constructed a shadow bridge between inflationary probability measures and the quantum Born rule within the framework of Modal Triplet Theory. By identifying both as projections of a common basin–measure functional, we derived admissibility–weighted distributions over inflationary histories that are normalizable, regulator–independent, and empirically discriminating.
-
-Applying these distributions to standard inflationary models without fitting potentials or introducing ad hoc measures, we found robust alignment with plateau–type models and strong suppression of chaotic monomial models. The analysis reframes the inflationary measure problem as a manifestation of admissibility failure rather than an ambiguity requiring new postulates.
-
-While speculative elements remain, particularly concerning the global structure of the universe and the emergence of time, the shadow–bridge framework provides a unified structural perspective on probability in quantum mechanics and cosmology. It suggests that both the origin of the Born rule and the apparent fine–tuning of early–universe conditions may be consequences of the same fundamental limitation on effective physical description.
-
-#### What this paper does not claim.
-
-This work does not claim to derive an inflationary potential, fix reheating dynamics, or provide a complete microscopic theory of the early universe. It does not propose a new stochastic inflation model or a modification of standard slow–roll dynamics. Rather, it identifies a shared structural origin of quantum and cosmological probabilities and demonstrates how admissibility constraints render certain probability assignments ill–defined while producing a well–behaved measure within admissible regimes.
-
-# Normalizability of admissibility-weighted inflationary measures
-
-## Boundary convergence at the selection front
-
-Let $`N\in(-\infty,N_c)`$ and define
+Suppose, only for this model, that a positive curvature proxy obeys
 ``` math
 \begin{equation}
-w(N) \;\propto\; \exp\!\left(3N - \frac{\lambda}{\kappa^2 (N_c-N)^2}\right),
-\qquad \lambda,\kappa>0.
+\Omega=\Omega_\star e^{-2N},
+\qquad \Omega_\star>0.
+\label{eq:curvature}
 \end{equation}
 ```
-Setting $`x=N_c-N`$ gives
+The map is monotone and has inverse
+``` math
+N(\Omega)=-\frac12\log\left(\frac{\Omega}{\Omega_\star}\right),
+\qquad
+\left|\frac{dN}{d\Omega}\right|=\frac{1}{2\Omega}.
+```
+Writing
+``` math
+\Omega_c=\Omega_\star e^{-2N_c},
+```
+the exact pushforward density on $`\Omega>\Omega_c`$ is
 ``` math
 \begin{equation}
-\int_{-\infty}^{N_c} w(N)\,\mathrm{d}N
-\;\propto\;
-e^{3N_c}\int_{0}^{\infty} \exp\!\left(-3x - \frac{\lambda}{\kappa^2 x^2}\right)\mathrm{d}x.
+f_\Omega(\Omega)
+=
+\frac{1}{2\Omega Z_{\alpha,\beta,p,N_c}}
+\exp\left[
+-\frac{\beta}{2}\log\left(\frac{\Omega}{\Omega_\star}\right)
+-\frac{\alpha}{
+\left(
+N_c+\frac12\log(\Omega/\Omega_\star)
+\right)^p}
+\right].
+\label{eq:curvature-density}
 \end{equation}
 ```
-The integrand is bounded by $`e^{-3x}`$ for large $`x`$ and by $`\exp\!\big(-\lambda/(\kappa^2 x^2)\big)`$ near $`x\to 0^+`$, which dominates any power-law or exponential growth in $`1/x`$; hence the integral converges absolutely and the distribution is normalizable.
 
-## Universality under exponent deformations
+Equation <a href="#eq:curvature-density" data-reference-type="eqref" data-reference="eq:curvature-density">[eq:curvature-density]</a> is an exact change of variables. It does not establish that <a href="#eq:curvature" data-reference-type="eqref" data-reference="eq:curvature">[eq:curvature]</a> is valid across all histories, fix $`\Omega_\star`$, supply a reheating map, or select the four e-fold parameters. In particular, normalizability of a chosen density is not a solution of the eternal-inflation measure problem. The latter also requires a physical event algebra, regulator independence, conditioning, and a derivation from the underlying dynamics .
 
-More generally, take any $`p>0`$ and define
+# What the observational comparison does and does not test
+
+At leading slow-roll order, representative model curves include
 ``` math
-\begin{equation}
-w_p(N) \;\propto\; \exp\!\left(3N - \frac{\alpha}{(N_c-N)^p}\right), \qquad \alpha>0.
-\end{equation}
+\begin{align}
+\text{Starobinsky-like:}\qquad
+n_s&\simeq1-\frac{2}{N},
+&
+r&\simeq\frac{12}{N^2},
+\label{eq:starobinsky}\\
+V(\phi)\propto\phi^m:\qquad
+n_s&\simeq1-\frac{m+2}{2N},
+&
+r&\simeq\frac{4m}{N}.
+\label{eq:monomial}
+\end{align}
 ```
-Then with $`x=N_c-N`$,
+For $`N=50`$–$`60`$, <a href="#eq:starobinsky" data-reference-type="eqref" data-reference="eq:starobinsky">[eq:starobinsky]</a> gives
 ``` math
-\begin{equation}
-\int_{-\infty}^{N_c} w_p(N)\,\mathrm{d}N
-\;\propto\;
-e^{3N_c}\int_{0}^{\infty}\exp\!\left(-3x-\frac{\alpha}{x^p}\right)\mathrm{d}x < \infty,
-\end{equation}
+n_s\simeq0.960\text{--}0.967,\qquad
+r\simeq0.0048\text{--}0.0033.
 ```
-since $`\exp(-\alpha/x^p)`$ enforces convergence at $`x\to 0^+`$ for every $`p>0`$ and $`e^{-3x}`$ enforces convergence at $`x\to\infty`$. Thus the regulator-free normalizability mechanism is insensitive to the detailed near-front exponent.
+The minimally coupled quadratic model gives
+``` math
+r\simeq0.160\text{--}0.133,
+```
+and the quartic model gives
+``` math
+r\simeq0.320\text{--}0.267.
+```
+
+For historical, reproducible reference, Planck 2018 reported $`n_s=0.9649\pm0.0042`$ at $`68\%`$ confidence and, with BK15, $`r_{0.002}<0.056`$ at $`95\%`$ confidence . The later BICEP/Keck analysis through the 2018 observing season reported $`r_{0.05}<0.036`$ at $`95\%`$ confidence .
+
+These comparisons show that the simple monomial examples have much larger tensor amplitudes than the plateau example. They do not validate <a href="#eq:weight" data-reference-type="eqref" data-reference="eq:weight">[eq:weight]</a>. The model curves already have those properties before any admissibility weighting is applied. A weight over $`N`$ can change how points along a curve are averaged; it cannot turn ordinary agreement of a model curve with data into evidence for the proposed upper measure.
+
+A genuine test would preselect the e-fold density and reheating map, propagate them through a declared likelihood, and compare held-out observables against specified alternatives. No such model-selection pipeline is claimed here.
+
+# The exact completion target
+
+The common-measure proposal becomes a physical MTT theorem only after the following objects are constructed from one branch.
+
+1.  **Source.** A selected measurable upper state space and normalized measure or probability kernel, with its dependence on branch and context declared.
+
+2.  **Quantum map.** A family of selected record maps covering the intended preparations and instruments, together with the Born pushforward equalities and error bounds.
+
+3.  **Cosmological quotient.** A selected history space, its gauge-equivalence relation, and a sigma-algebra of physical events on the quotient.
+
+4.  **Cosmological map.** A measurable map to late-time observables or event classes whose pushforward is finite and independent of arbitrary time slicing or cutoff choices.
+
+5.  **Same-source certificate.** A commuting diagram showing that both maps originate from the same selected upper state and action, preserving the relevant connections, conditioning, and branch data.
+
+6.  **Non-replay test.** A proof that the construction did not use the target Born or cosmological probabilities as source inputs, followed by at least one held-out prediction or exclusion.
+
+In compressed form, the desired diagram is
+``` math
+\begin{array}{ccccc}
+&&(\mathcal{U},\mu_c)&&\\[2mm]
+&\swarrow\pi_{Q,c}&&\searrow\pi_{C,c}&\\[1mm]
+(\Omega_{Q,c},\nu_{Q,c})&&&&
+(\Omega_{C,c},\nu_{C,c}),
+\end{array}
+```
+with both displayed target measures proved to be pushforwards and with the source selected before either target law is read.
+
+# Interpretive consequences
+
+The corrected framework preserves a useful conceptual lesson. Quantum records and cosmological observations can both be described by conditioning and pushforward from richer state spaces. Their effective probability problems may therefore share mathematical tools: disintegration, stopping rules, invariant measures, quotient sigma-algebras, and recovery criteria.
+
+Several stronger conclusions do not follow:
+
+- projection by itself does not produce randomness or the Born rule;
+
+- normalizing one e-fold ansatz does not regulate eternal inflation;
+
+- a preference for plateau model curves does not select the ansatz;
+
+- the compact shared MTT circle is not thereby identified with physical time;
+
+- low initial entropy is not derived from “basin entry”;
+
+- quantum measurement is an ordinary physical record-forming process, not a privileged cosmological event; and
+
+- failure of one effective encoding does not prove that the underlying universe has crossed a literal coherence wall.
+
+These boundaries strengthen the research program. They turn an analogy into a finite list of constructions whose success or failure can be checked.
+
+# Conclusion
+
+The Born rule and inflationary measures can be placed in one exact measure-theoretic language, but they have not yet been derived from one MTT source. Non-injective projection explains why upper distinctions may be lost; it does not supply their weights. Conversely, any desired pair of target laws can be manufactured as marginals of a product measure, so a freely chosen common source proves nothing.
+
+The nontrivial theorem sought by MTT is therefore a selection theorem. One upper state, action, and probability kernel must be fixed independently, then shown to produce the quantum and cosmological laws through typed physical maps. The q79 binary one-anchor recorder now supplies a restricted quantum endpoint. The cosmological history measure and the same-source intertwiner remain open.
+
+The admissibility-weighted e-fold family remains mathematically useful as a conditional model: it is normalizable, unimodal, and has an exact curvature pushforward. Its four continuous inputs are currently assumptions. This is the proper present status of the shadow-bridge idea: a sharpened and testable program, not yet a unified derivation of physical probability.
+
+#### Corpus-state cross-checks.
+
+- (*derived exact*).
+
+  Exact-branch internal TT support certificate; physical normalization remains open.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The common-measure criterion is a measure-theoretic obligation. The internal TT support certificate is relevant geometric context for gravitational sectors, but it does not select either a Born measure or an inflationary measure and is therefore not used as direct proof here.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Corpus-state cross-checks
+
+- `A13/gr_tt_support` (**DERIVED_EXACT**): Exact-branch internal TT support certificate; physical normalization remains open.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 
 99
 
-Y. Akrami et al. (Planck Collaboration), *Planck 2018 results. X. Constraints on inflation*, Astron. Astrophys. **641** (2020) A10, arXiv:1807.06211.
+B. Freivogel, *Making predictions in the multiverse*, Classical and Quantum Gravity **28** (2011) 204007, doi:10.1088/0264-9381/28/20/204007, arXiv:1105.0244.
 
-L. Balkenhol et al., *Inflation at the End of 2025: Constraints on $`r`$ and $`n_s`$ Using the Latest CMB and BAO Data*, arXiv:2512.10613.
+Y. Akrami et al. (Planck Collaboration), *Planck 2018 results. X. Constraints on inflation*, Astronomy & Astrophysics **641** (2020) A10, doi:10.1051/0004-6361/201833887, arXiv:1807.06211.
 
-P. Nero, *Selection fronts and boundary-layer physics at the admissibility threshold*, Zenodo preprint (2026), doi:10.5281/zenodo.18262388.
+P. A. R. Ade et al. (BICEP/Keck Collaboration), *BICEP/Keck XIII: Improved Constraints on Primordial Gravitational Waves using Planck, WMAP, and BICEP/Keck Observations through the 2018 Observing Season*, Physical Review Letters **127** (2021) 151301, doi:10.1103/PhysRevLett.127.151301, arXiv:2110.00483.
 
 </div>

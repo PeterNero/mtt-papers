@@ -1,473 +1,351 @@
 ---
 abstract: |
-  Modal Triplet Theory (MTT) provides a projection-based framework in which quantum mechanics emerges as an effective description of a higher-dimensional coherent sector, with Hilbert space appearing as a representation of basin ensemble statistics rather than as a fundamental ontology. In this paper we address a structural question left implicit in the reconstruction program: why the resulting Hilbert space must be complex.
-
-  Starting from the Hilbert-space reconstruction already established in MTT, we show that the family of admissible measurement outcomes induces an orthomodular lattice of propositions with infinite orthogonality, placing the theory within the scope of Solèr’s theorem and restricting the scalar field to $`\mathbb{R}`$, $`\mathbb{C}`$, or $`\mathbb{H}`$. We then introduce an admissibility formulation of local tomography, expressed directly in the basin-atlas and instrument language of MTT, and show that quaternionic Hilbert space is incompatible with predictive stability under admissible projection. Finally, we show that real Hilbert space fails to support the phase-rich coherence structure required for generic interference and basin-measure dynamics.
-
-  The result is a rigidity theorem: under admissible projection, locality, and basin-measure reconstruction, the effective quantum description in Modal Triplet Theory is uniquely complex. Complex Hilbert space is therefore not an assumption of the theory, but a structural necessity enforced by admissibility and locality.
+  Solèr’s theorem classifies an orthomodular generalized Hilbert space containing an infinite orthonormal sequence as a real, complex, or quaternionic Hilbert space. This classification does not by itself select the complex field. We add a separate finite-composition requirement: a system of dimension $`d`$ over the selected field has the full self-adjoint matrix space as its unnormalized state/effect space; a composite of dimensions $`a`$ and $`b`$ has dimension $`ab`$ over the same field; and independent product effects are tomographically complete. The resulting dimension identity holds for complex Hermitian matrices and fails, by explicit nonzero defects, for real symmetric and quaternionic Hermitian matrices whenever $`a,b>1`$. Complex Hilbert space is therefore rigid within this declared reconstruction class. The conclusion is conditional and representation-sensitive: complex quantum theory can be realified by adjoining an orthogonal complex-structure operator, and alternative composite rules fall outside the theorem. Applied to MTT, the result identifies exact missing premises rather than deriving them. The current q79 finite quantum model and finite complex polarization are compatible with the complex branch, but MTT has not yet sourced the required infinite orthogonality and standard locally tomographic composition from one physical upper construction.
 author:
 - Peter Nero
-current_version: v1.0
-date: January 2026
-generated_from_main_tex_sha256: 33bf7d2d9ae573ffef7e325fac6d8ed9c9d1a604dba091816dcbade693e0ff6d
+bibliography:
+- main.bib
+current_version: v2
+date: July 2026, Version 2
+generated_from_main_tex_sha256: bfaca00316201382337cb836ee63eda64fa268d7ce8b8a7ad576e7b73c01376f
 paper_id: why-quantum-theory-must-be-complex-a-soler-admissibilit-b7674be8
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  Why Quantum Theory Must Be Complex  
-  A Solèr–Admissibility Rigidity Theorem in Modal Triplet Theory
-zenodo_doi: 10.5281/zenodo.18330649
-zenodo_record_id: 18330649
-zenodo_url: "https://zenodo.org/records/18330649"
+  Complex-Hilbert Rigidity under Solèr, Local Tomography,
+  and Standard Composition
+  A Conditional MTT Reconstruction Theorem
+zenodo_doi: 10.5281/zenodo.21666024
+zenodo_record_id: 21666024
+zenodo_url: "https://zenodo.org/records/21666024"
 ---
 
-# Introduction
+# Version 2 Revision Note
 
-Quantum mechanics is formulated on complex Hilbert space. While this fact is central to the theory’s mathematical structure and empirical success, it is rarely explained at a structural level. Most reconstructions of quantum theory either assume complex numbers from the outset or introduce them implicitly through symmetry, continuity, or probabilistic postulates. As a result, the question of why the effective quantum description must be complex—rather than real or quaternionic—is often treated as secondary or merely conventional.
+Supersedes
+*Why Quantum Theory Must Be Complex: A Solèr–Admissibility Rigidity Theorem in Modal Triplet Theory*, version 1.
 
-Modal Triplet Theory (MTT) places this question in a different light. In MTT, quantum mechanics is not postulated but reconstructed as an effective description arising from projection of a higher-dimensional coherent sector. Hilbert space appears as a representation of ensemble statistics over admissible coherence basins, probabilities arise from basin measures, and unitary evolution governs dynamics within admissible domains. None of these steps presupposes the choice of scalar field. The reconstruction establishes the existence of a Hilbert representation, but does not yet classify which Hilbert spaces are admissible.
+Reason
+The earlier paper treated a Hilbert reconstruction, infinite orthogonality, local tomography, and phase-rich composition as already derived by MTT. It also attributed to projection alone the exclusion of real and quaternionic alternatives and did not state the composite-system convention on which that exclusion depends.
 
-This paper addresses precisely that classification problem.
+Resolution
+This version separates the imported Solèr classification from an explicit finite-dimensional composition theorem. It declares the full state/effect spaces, standard same-field composite dimensions, local independence, and tomographic completeness, then proves the real, complex, and quaternionic dimension identities directly. It also records realification and alternative-composition boundaries.
 
-The key observation is that MTT already supplies, implicitly and without additional postulates, the structural ingredients required for a rigidity theorem. Admissible measurement outcomes form mutually exclusive sets within operational contexts, refinement of contexts generates a rich family of such outcomes, and the Hilbert encoding of basin measures associates these outcomes with orthogonal projections. Together, these features induce an orthomodular lattice of propositions equipped with an inner-product geometry. Moreover, the nontriviality of the coherent sector and the existence of arbitrarily refinable admissible contexts guarantee the presence of infinite families of mutually orthogonal propositions.
+Retained result
+Under the stated orthomodular, infinite-orthogonality, full-matrix, and standard locally tomographic composition assumptions, the effective Hilbert theory is uniquely complex.
 
-These are precisely the hypotheses of Solèr’s theorem. As a consequence, the scalar division ring underlying the reconstructed Hilbert space is restricted to $`\mathbb{R}`$, $`\mathbb{C}`$, or $`\mathbb{H}`$.
+Remaining boundary
+MTT has not yet derived the infinite orthogonal sequence, the standard composite rule, or local tomography for all physical contexts from the selected q79 source; its present finite complex model shows compatibility, not independent scalar-field selection.
 
-The remaining task is to determine which of these possibilities is compatible with admissible projection and locality as understood in MTT. We show that this determination does not require new physical assumptions. Instead, it follows from principles already implicit in the framework. In particular, we formulate an admissibility version of local tomography: global admissible states must be separable by statistics of all local product contexts. This condition is natural in a projection-based theory whose effective descriptions are required to be predictive and robust under localized operations. We show that quaternionic Hilbert space violates this requirement by admitting globally distinct states that are indistinguishable by all local measurements. Such hidden global degrees of freedom render the effective description non-injective and therefore inadmissible.
+# The question and the corrected answer
 
-Finally, we show that real Hilbert space lacks the phase-rich structure required to support generic interference and coherence transport. In the language of MTT, it imposes an effective superselection constraint that is incompatible with the observed basin-measure dynamics of quantum systems.
+Why does ordinary quantum mechanics use complex Hilbert space rather than real or quaternionic Hilbert space? There are two different questions hidden here.
 
-Putting these results together yields a rigidity theorem: under admissible projection, locality, and basin-measure reconstruction, the effective quantum description in Modal Triplet Theory is uniquely complex. Complex Hilbert space is not chosen by convention, nor introduced by fiat, but enforced by the structural requirements that make effective physical description possible.
-
-The paper is organized as follows. In Section 2 we summarize the reconstruction inputs from MTT that are assumed throughout. Section 3 shows how admissible basin outcomes induce an orthomodular lattice of propositions. Section 4 establishes the applicability of Solèr’s theorem. Section 5 formulates admissible local tomography and excludes the quaternionic case. Section 6 excludes the real case on coherence grounds. Section 7 states and proves the main rigidity theorem and discusses its consequences for the MTT corpus.
-
-# Reconstruction Inputs from Modal Triplet Theory
-
-This paper does not introduce a new reconstruction of quantum mechanics. Instead, it builds on results already established in the Modal Triplet Theory corpus. For clarity and logical completeness, we collect here the specific structural inputs assumed throughout the remainder of the paper and briefly recall their status.
-
-## Admissible projection and reduced state space
-
-Modal Triplet Theory is formulated on a higher-dimensional configuration space equipped with deterministic, invertible dynamics. Observable physics arises through a non-injective projection from this configuration space to an effective description. The projection is well-defined only on *admissible* domains, characterized by bounded geometry, spectral gaps, bounded projectors, and stability margins. Outside these domains, effective description fails.
-
-Within an admissible domain, projection induces a reduced state space $`X`$ of effective states. In the quantum-mechanical regime, $`X`$ may be taken to be a suitable space of density operators on an effective Hilbert space, although the precise representation is not assumed at this stage. What matters is that $`X`$ supports a well-defined reduced dynamics and a notion of operational measurement contexts.
-
-## Operational contexts and basin atlases
-
-An operational measurement context $`C`$ is modeled as a concrete instrument acting on the reduced state space $`X`$. Each context induces:
-
-- a reduced dynamical map $`T_C : X \to X`$,
-
-- an admissible domain $`X_C \subseteq X`$ on which the reduced description remains stable,
-
-- and a measurable partition $`\mathcal A(C) = \{ B^{(C)}_\alpha \}`$ of $`X_C`$ into *admissible basins*.
-
-Each basin $`B^{(C)}_\alpha`$ is invariant under $`T_C`$ and attracts nearby states within a finite stability margin. Basin boundaries correspond to loss of admissibility and induce irreversible selection events. This basin-atlas structure provides the operational notion of measurement outcomes used throughout the MTT corpus.
-
-## Basin measures and the Hilbert representation
-
-A central result of the MTT reconstruction program is that basin-capture statistics admit a Hilbert-space representation. Concretely, there exists a Hilbert space $`H`$ and a map from admissible reduced states to vectors or density operators on $`H`$ such that, for each context $`C`$ and each basin $`B^{(C)}_\alpha`$, the basin-capture probability is given by
+First, one may ask which scalar division rings are compatible with a sufficiently rich orthomodular quantum logic. Solèr’s theorem answers this under a strong infinite-dimensional hypothesis: the possibilities reduce to
 ``` math
-\mu_C\!\left(B^{(C)}_\alpha\right) = \| P^{(C)}_\alpha \psi \|^2,
+\mathbb{R},\qquad \mathbb{C},\qquad \mathbb{H}.
 ```
-where $`P^{(C)}_\alpha`$ is an orthogonal projector on $`H`$ associated with the basin $`B^{(C)}_\alpha`$ and $`\psi`$ represents the reduced state in the chosen Hilbert encoding.
+It does not choose among them.
 
-This representation is not postulated but reconstructed from basin ensemble statistics and their stability properties. The Hilbert space $`H`$ is therefore understood as a *representation space* for admissible ensemble measures, not as a fundamental ontological arena.
+Second, one may ask which of those theories has the familiar tensor-product parameter count: the state of a composite is determined by joint statistics of independent local measurements. Under the full-matrix and standard-composition convention stated below, a short dimension calculation selects $`\mathbb{C}`$.
 
-## Mutual exclusivity and orthogonality
-
-Within a fixed context $`C`$, admissible basins are mutually exclusive:
+The word “under” matters. The result is not a theorem that nature is metaphysically made of complex numbers. A complex Hilbert theory can be rewritten on a real Hilbert space with an additional operator $`J`$ satisfying $`J^2=-I`$. Conversely, real or quaternionic theories can be paired with altered composite rules. The theorem identifies a rigid *package*:
 ``` math
-B^{(C)}_\alpha \cap B^{(C)}_\beta = \varnothing \qquad (\alpha \neq \beta).
-```
-In the Hilbert representation, this mutual exclusivity corresponds to orthogonality of the associated projectors:
-``` math
-P^{(C)}_\alpha P^{(C)}_\beta = 0 \qquad (\alpha \neq \beta).
-```
-Thus, each context induces a family of pairwise orthogonal projections whose ranges represent mutually exclusive outcomes.
-
-## Nontriviality and infinite orthogonality
-
-The coherent sector underlying the quantum regime is nontrivial: it supports infinitely many distinguishable admissible configurations prior to projection. Moreover, admissible contexts can be refined and varied without bound within stable domains. As a result, the family of admissible basin projectors contains arbitrarily large sets of nonzero mutually orthogonal elements.
-
-In the Hilbert representation, this implies the existence of infinite orthonormal families of vectors. This property will be crucial in the application of Solèr’s theorem in the following sections.
-
-## Summary of assumed inputs
-
-In summary, the following are assumed as established results from the MTT corpus:
-
-1.  the existence of a reduced state space $`X`$ defined via admissible projection,
-
-2.  the basin-atlas structure induced by operational measurement contexts,
-
-3.  a Hilbert-space representation of basin measures with squared-norm probabilities,
-
-4.  orthogonality of mutually exclusive outcomes within a context,
-
-5.  and the existence of infinite families of mutually orthogonal admissible outcomes.
-
-No assumption is made at this stage regarding the scalar field underlying the Hilbert space. The purpose of the present paper is to show that this freedom is illusory: admissibility and locality uniquely fix the scalar structure.
-
-# From Basin Atlases to Quantum Logic
-
-In this section we show that the admissible basin structure induced by operational contexts in Modal Triplet Theory naturally gives rise to an orthomodular lattice of propositions. This places the reconstructed quantum description within the framework of quantum logic and prepares the application of Solèr’s theorem in the following section.
-
-## Propositions associated with admissible basins
-
-Fix an operational context $`C`$ with admissible domain $`X_C \subseteq X`$ and basin atlas $`\mathcal A(C) = \{ B^{(C)}_\alpha \}`$. Each basin $`B^{(C)}_\alpha`$ represents a mutually exclusive measurement outcome within context $`C`$.
-
-Via the Hilbert-space representation of basin measures, each basin is associated with an orthogonal projector $`P^{(C)}_\alpha`$ on the Hilbert space $`H`$. We interpret the range $`\operatorname{Ran}(P^{(C)}_\alpha)`$ as the proposition
-``` math
-\text{``the system yields outcome $\alpha$ when measured in context $C$''}.
+\begin{gathered}
+\text{orthomodular representation}
++\text{ infinite orthogonality}\\
++\text{ standard local composition}\\
+\Longrightarrow\text{ complex Hilbert theory}
+\end{gathered}
 ```
 
-More generally, for any closed subspace $`U \subseteq H`$, we interpret $`U`$ as a proposition about the reduced state of the system.
+This corrected formulation fits the current MTT status. The selected finite q79 quantum model already uses complex Hilbert and operator data, and the finite carrier has an exact complex polarization. What remains open is to derive the assumptions that would make the complex structure unique rather than merely present.
 
-## The lattice of propositions
+# The generalized Hilbert input
 
-Let $`\mathcal L`$ denote the collection of all closed subspaces of $`H`$ generated by:
+## Orthomodular form
 
-- the ranges of basin projectors $`P^{(C)}_\alpha`$ over all admissible contexts $`C`$,
-
-- closed under finite intersections,
-
-- closed under closed linear spans,
-
-- and closed under orthocomplementation.
-
-We equip $`\mathcal L`$ with the partial order
+Let $`K`$ be a division ring with involution $`z\mapsto z^*`$. Let $`V`$ be a right vector space over $`K`$, equipped with a nondegenerate Hermitian form
 ``` math
-U \leq V \quad \Longleftrightarrow \quad U \subseteq V.
+\langle\cdot,\cdot\rangle:V\times V\longrightarrow K.
+```
+For a subspace $`M\subseteq V`$, define
+``` math
+M^\perp=\{v\in V:\langle m,v\rangle=0\text{ for every }m\in M\}.
+```
+The form is called orthomodular when every orthogonally closed subspace $`M=M^{\perp\perp}`$ satisfies
+``` math
+V=M+M^\perp.
+```
+The closed subspaces then form an orthomodular lattice under inclusion, orthogonal complement, intersection, and closed span.
+
+This is not automatic from a list of measurement outcomes. To reach this setting from an operational theory, one must construct:
+
+1.  a proposition lattice;
+
+2.  an orthocomplementation compatible with exclusivity;
+
+3.  a coordinatizing vector space over a division ring with involution;
+
+4.  a nondegenerate Hermitian form; and
+
+5.  orthomodularity of the represented closed subspaces.
+
+These are reconstruction assumptions unless proved by an earlier theorem.
+
+## The infinite-orthogonality gate
+
+Solèr’s theorem requires an infinite orthonormal sequence
+``` math
+e_1,e_2,\ldots,\qquad
+\langle e_j,e_k\rangle=\delta_{jk}.
+```
+Arbitrarily large finite orthogonal families do not automatically give such a sequence in one completed space. An inductive family of finite systems also does not suffice until compatible embeddings and a completed limit have been constructed.
+
+This distinction is decisive for MTT. The canonical q79 quantum carrier is finite. Its exact finite Hilbert structure cannot, by itself, satisfy the infinite-sequence hypothesis.
+
+# What Solèr’s theorem supplies
+
+Solèr’s classification states that an orthomodular form containing an infinite orthonormal sequence is a Hilbert space over $`\mathbb{R}`$, $`\mathbb{C}`$, or $`\mathbb{H}`$, with the standard involution and norm-complete structure . In implication form,
+``` math
+\begin{equation}
+\begin{gathered}
+\text{orthomodular generalized Hilbert representation}\\
++\text{ infinite orthonormal sequence}
+\end{gathered}
+\quad\Longrightarrow\quad
+K\in\{\mathbb{R},\mathbb{C},\mathbb{H}\}.
+\label{eq:soler}
+\end{equation}
 ```
 
-For $`U, V \in \mathcal L`$, define:
+Two guardrails follow immediately.
+
+1.  Solèr’s theorem is an imported classification theorem; MTT does not own its proof.
+
+2.  Equation <a href="#eq:soler" data-reference-type="eqref" data-reference="eq:soler">[eq:soler]</a> leaves three scalar possibilities. Any claim of unique complex structure needs an additional premise.
+
+The additional premise used here is a precise composite-system rule.
+
+# Standard composition and local tomography
+
+## State/effect dimensions
+
+For a finite $`d`$-dimensional Hilbert space over $`F\in\{\mathbb{R},\mathbb{C},\mathbb{H}\}`$, let
 ``` math
-\begin{align*}
-U \wedge V &:= U \cap V, \\
-U \vee V &:= \overline{\operatorname{span}(U \cup V)}, \\
-U^\perp &:= \{ \psi \in H : \langle \psi, \phi \rangle = 0 \ \forall \phi \in U \}.
-\end{align*}
+\operatorname{Herm}_F(d)
+```
+denote the real vector space of self-adjoint $`d\times d`$ matrices over $`F`$. Its dimension is the number of real coordinates needed for an unnormalized state, or equivalently for an unrestricted self-adjoint effect:
+``` math
+\begin{align}
+K_{\mathbb{R}}(d)&=\frac{d(d+1)}{2},\label{eq:KR}\\
+K_{\mathbb{C}}(d)&=d^2,\label{eq:KC}\\
+K_{\mathbb{H}}(d)&=d(2d-1).\label{eq:KH}
+\end{align}
 ```
 
-<div class="proposition">
+The counts are elementary. A real symmetric matrix has $`d`$ diagonal and $`d(d-1)/2`$ off-diagonal entries. A complex Hermitian matrix has $`d`$ real diagonal entries and two real coordinates for each off-diagonal pair. A quaternionic Hermitian matrix has $`d`$ real diagonal entries and four real coordinates for each off-diagonal pair.
 
-**Proposition 1**. *$`\mathcal L`$ is an orthocomplemented lattice.*
+## Declared composite rule
+
+Consider systems $`A`$ and $`B`$ of dimensions $`a,b>1`$ over the same field $`F`$. The theorem below assumes:
+
+Full local spaces
+The unnormalized state/effect spaces are $`\operatorname{Herm}_F(a)`$ and $`\operatorname{Herm}_F(b)`$.
+
+Standard global dimension
+The composite is represented on a same-field Hilbert space of dimension $`ab`$, with global space $`\operatorname{Herm}_F(ab)`$.
+
+Independent product effects
+The bilinear product of local effects has no additional linear identifications, so it spans a space of dimension $`K_F(a)K_F(b)`$.
+
+Tomographic completeness
+Those product effects separate all global states.
+
+The last two conditions together give the dimension identity
+``` math
+\begin{equation}
+K_F(ab)=K_F(a)K_F(b).
+\label{eq:local-tomography}
+\end{equation}
+```
+This is the standard locally tomographic tensor-product condition used in operational reconstructions . Local tomography without a declared composite rule is not enough: different theories may change the global space or allow redundancy among products.
+
+<div id="lem:defects" class="lemma">
+
+**Lemma 1** (Exact composition defects). *For $`a,b>1`$,
+``` math
+\begin{align}
+K_{\mathbb{R}}(ab)-K_{\mathbb{R}}(a)K_{\mathbb{R}}(b)
+&=\frac{ab(a-1)(b-1)}{4}>0,\label{eq:real-defect}\\
+K_{\mathbb{C}}(ab)-K_{\mathbb{C}}(a)K_{\mathbb{C}}(b)
+&=0,\label{eq:complex-defect}\\
+K_{\mathbb{H}}(ab)-K_{\mathbb{H}}(a)K_{\mathbb{H}}(b)
+&=-2ab(a-1)(b-1)<0.\label{eq:quat-defect}
+\end{align}
+```*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Closure under intersection and closed span ensures that $`\wedge`$ and $`\vee`$ are well defined. Orthocomplementation is involutive, order-reversing, and satisfies $`U \wedge U^\perp = \{0\}`$ and $`U \vee U^\perp = H`$ for all $`U \in \mathcal L`$. These are standard properties of closed subspaces of a Hilbert space. ◻
+*Proof.* Substitute <a href="#eq:KR" data-reference-type="eqref" data-reference="eq:KR">[eq:KR]</a>–<a href="#eq:KH" data-reference-type="eqref" data-reference="eq:KH">[eq:KH]</a> and factor. For example,
+``` math
+\frac{ab(ab+1)}2
+-\frac{a(a+1)b(b+1)}4
+=\frac{ab(a-1)(b-1)}4.
+```
+The complex equality is immediate: $`(ab)^2=a^2b^2`$. The quaternionic expression factors as
+``` math
+ab(2ab-1)-ab(2a-1)(2b-1)
+=-2ab(a-1)(b-1).
+```
+ ◻
 
 </div>
 
-## Orthogonality and mutual exclusivity
+#### Interpretation.
 
-Within a fixed context $`C`$, admissible basins are mutually exclusive:
-``` math
-B^{(C)}_\alpha \cap B^{(C)}_\beta = \varnothing \qquad (\alpha \neq \beta).
-```
-In the Hilbert representation this mutual exclusivity is expressed by
-``` math
-P^{(C)}_\alpha P^{(C)}_\beta = 0 \qquad (\alpha \neq \beta),
-```
-so that
-``` math
-\operatorname{Ran}(P^{(C)}_\alpha) \perp \operatorname{Ran}(P^{(C)}_\beta).
-```
+For real matrices, the global space contains parameters that independent local products do not reach. For quaternionic matrices, the naive product count is larger than the same-field global count, so independence and that global convention cannot both hold. Only the complex full-matrix family has exact multiplicativity.
 
-Thus, orthogonality in $`\mathcal L`$ has a direct operational interpretation: two propositions are orthogonal if and only if they correspond to mutually exclusive outcomes within some admissible context.
+<div id="thm:rigidity" class="theorem">
 
-## Orthomodularity
+**Theorem 2** (Conditional complex-Hilbert rigidity). *Assume:*
 
-<div class="theorem">
+1.  *the effective proposition theory has an orthomodular generalized Hilbert representation with an infinite orthonormal sequence;*
 
-**Theorem 2**. *$`\mathcal L`$ is an orthomodular lattice.*
+2.  *finite $`d`$-level systems use the full self-adjoint matrix spaces over the scalar field selected by that representation; and*
+
+3.  *every pair of nontrivial systems obeys the standard same-field composite rule with independent, tomographically complete product effects.*
+
+*Then the scalar field is $`\mathbb{C}`$.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Let $`U, V \in \mathcal L`$ with $`U \subseteq V`$. In a Hilbert space one has the decomposition
-``` math
-V = U \oplus (V \cap U^\perp).
-```
-Taking closed spans, this yields
-``` math
-V = U \vee (V \wedge U^\perp),
-```
-which is precisely the orthomodular identity. Since $`\mathcal L`$ consists of closed subspaces of $`H`$, the identity holds for all $`U \le V`$ in $`\mathcal L`$. ◻
+*Proof.* By Solèr’s theorem, assumption 1 restricts the field to $`\mathbb{R},\mathbb{C},\mathbb{H}`$. Assumptions 2 and 3 require <a href="#eq:local-tomography" data-reference-type="eqref" data-reference="eq:local-tomography">[eq:local-tomography]</a>. Lemma <a href="#lem:defects" data-reference-type="ref" data-reference="lem:defects">1</a> excludes $`\mathbb{R}`$ and $`\mathbb{H}`$ for every $`a,b>1`$, while $`\mathbb{C}`$ satisfies the identity. ◻
 
 </div>
 
-## Interpretation
+# What “complex” means here
 
-The orthomodular structure of $`\mathcal L`$ is not postulated. It arises directly from:
+## Realification
 
-- mutual exclusivity of admissible basins within contexts,
-
-- refinement and combination of contexts,
-
-- and the Hilbert representation of basin measures.
-
-In particular, distributivity fails in general, reflecting the incompatibility of distinct contexts. This non-distributivity is the operational content of quantum contextuality in the present framework.
-
-## Infinite orthogonality
-
-The nontriviality of the coherent sector and the existence of arbitrarily refinable admissible contexts imply that $`\mathcal L`$ contains infinite families of pairwise orthogonal nonzero elements. Concretely, one may construct sequences of contexts whose basin atlases contain increasingly many mutually exclusive outcomes with nonzero measure.
-
-In the Hilbert representation this corresponds to the existence of infinite orthonormal families of vectors in $`H`$.
-
-## Summary
-
-We have shown that the admissible basin structure of Modal Triplet Theory induces an orthomodular lattice $`\mathcal L`$ of propositions with infinite orthogonality. This places the reconstructed quantum description squarely within the class of orthomodular inner- product spaces to which Solèr’s theorem applies. In the next section we recall Solèr’s theorem and derive the resulting restriction on the scalar field underlying $`H`$.
-
-# Solèr’s Theorem and the $`\mathbb{R}/\mathbb{C}/\mathbb{H}`$ Trichotomy
-
-In this section we apply Solèr’s theorem to the orthomodular proposition lattice constructed in the previous section. The result is a sharp mathematical restriction on the scalar field underlying the Hilbert representation reconstructed from admissible basin measures.
-
-## Orthomodular inner-product spaces
-
-An orthomodular lattice $`\mathcal L`$ of propositions equipped with an inner-product geometry may be realized as the lattice of closed subspaces of an inner-product space $`H`$ over a division ring $`\mathbb K`$ with involution. Orthogonality in the lattice is induced by the inner product, and orthocomplementation corresponds to taking orthogonal complements.
-
-In the present setting, $`\mathcal L`$ arises as the lattice of closed subspaces generated by ranges of basin projectors and their refinements. The associated inner-product structure is inherited from the Hilbert-space representation of basin ensemble statistics established in the Modal Triplet Theory reconstruction program.
-
-## Infinite orthogonality
-
-A key hypothesis of Solèr’s theorem is the existence of an infinite orthonormal sequence. As shown in Section 3, the admissible basin structure of Modal Triplet Theory guarantees the existence of arbitrarily large families of mutually exclusive nonzero propositions. In the Hilbert representation this corresponds to the existence of infinite families of pairwise orthogonal nonzero vectors.
-
-Thus, the orthomodular inner-product space associated with $`\mathcal L`$ satisfies the infinite orthogonality condition required by Solèr’s theorem.
-
-## Statement of Solèr’s theorem
-
-We recall the following result.
-
-<div class="theorem">
-
-**Theorem 3** (Solèr). *Let $`H`$ be an infinite-dimensional orthomodular inner-product space over a division ring $`\mathbb K`$ with involution. If $`H`$ contains an infinite orthonormal sequence, then $`\mathbb K`$ is isomorphic to one of the following:
+The scalar label is not representation-invariant by itself. Let $`H_{\mathbb{C}}`$ be a complex Hilbert space. Forget complex scalar multiplication and retain the real Hilbert space $`H_{\mathbb{R}}`$ together with
 ``` math
-\mathbb R,\qquad \mathbb C,\qquad \mathbb H,
+J:H_{\mathbb{R}}\longrightarrow H_{\mathbb{R}},
+\qquad
+J^2=-I,
+\qquad
+J^*=-J.
 ```
-where $`\mathbb H`$ denotes the division ring of quaternions.*
+Multiplication by $`a+ib`$ is represented by $`aI+bJ`$. Complex-linear operators are precisely the real-linear operators commuting with $`J`$. Thus the same complex theory may be written over $`\mathbb{R}`$ if the complex-structure operator and its composition law are retained.
 
-</div>
+<div id="prop:realification" class="proposition">
 
-We refer to the original work of Solèr and subsequent expositions for precise technical conditions and proofs. The formulation above is sufficient for the present application.
-
-## Application to the MTT reconstruction
-
-Combining the results of Sections 2 and 3 with Solèr’s theorem yields the following corollary.
-
-<div class="corollary">
-
-**Corollary 4**. *The scalar field underlying the Hilbert-space representation of admissible basin measures in Modal Triplet Theory is restricted to $`\mathbb R`$, $`\mathbb C`$, or $`\mathbb H`$.*
+**Proposition 3** (Representation guard). *Theorem <a href="#thm:rigidity" data-reference-type="ref" data-reference="thm:rigidity">2</a> selects the complex full-matrix theory with its standard composition class. It does not prove that every faithful presentation must display complex scalar entries.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* By Sections 2 and 3, admissible basin outcomes induce an orthomodular lattice of propositions with an associated inner-product geometry and infinite orthogonality. Solèr’s theorem therefore applies and yields the stated restriction on the scalar field. ◻
+*Proof.* The realification above is faithful: it preserves vectors, inner products through their real and $`J`$-dependent parts, and all complex-linear observables through the commutant of $`J`$. What changes is the declared real state/effect space and tensor product: they are restricted by the shared complex structure rather than being the unrestricted real-symmetric theory counted by $`K_{\mathbb{R}}`$. ◻
 
 </div>
 
-## Scope of the result
+## Alternative composites
 
-At this stage no physical distinction is made between the three possibilities $`\mathbb R`$, $`\mathbb C`$, and $`\mathbb H`$. The result of this section is purely classificatory: it shows that the freedom to choose an arbitrary scalar field in the Hilbert representation is illusory. Only three possibilities are compatible with the structural features already present in the MTT reconstruction.
+Real quantum theory can be bilocally rather than locally tomographic . Quaternionic and Jordan-algebraic theories require particular care in defining composites, and natural alternatives need not equal the naive same-field full-matrix rule . Such theories are not refuted by Theorem <a href="#thm:rigidity" data-reference-type="ref" data-reference="thm:rigidity">2</a>; they reject one of its composition premises.
 
-In the following sections we show that additional requirements implicit in admissible projection and locality further restrict this trichotomy. In particular, we show that quaternionic Hilbert space is incompatible with admissible local tomography, and that real Hilbert space fails to support the phase-rich coherence structure required for generic quantum interference. These arguments uniquely select the complex case.
+The corrected claim is therefore conditional rigidity, not an unconditional impossibility theorem.
 
-# Admissible Local Tomography and the Exclusion of Quaternionic Hilbert Space
+# The MTT interface
 
-In this section we introduce a locality and admissibility requirement implicit in Modal Triplet Theory and show that it excludes quaternionic Hilbert space. The argument is operational and does not rely on additional reconstruction axioms. Instead, it formalizes the requirement that admissible effective descriptions be predictive and separating under localized measurement contexts.
+## What is already available
 
-## Composite systems and product contexts
+Current MTT work supplies two relevant finite results:
 
-Consider a bipartite system $`AB`$ whose reduced state space is denoted $`X_{AB}`$. Let $`C_A`$ be an operational context acting only on subsystem $`A`$, and $`C_B`$ a context acting only on subsystem $`B`$. Following the measurement formalism of Modal Triplet Theory, each context induces a reduced map, an admissible domain, and a basin atlas on the appropriate state space.
+1.  the canonical q79 binary one-anchor operational model has an exact finite complex Hilbert space, state cone, observable algebra, reduced semigroup, Fock dilation, and output probability law on its declared domain; and
 
-A *product context* $`C_A \otimes C_B`$ is defined operationally as the joint implementation of $`C_A`$ on $`A`$ and $`C_B`$ on $`B`$ without additional coupling. It induces a basin atlas
+2.  the selected finite carrier has an exact complex polarization with $`+i`$ and $`-i`$ eigenspaces and a compatible shared-line return structure.
+
+These results establish that complex quantum structure is compatible with, and concretely realized in, the current finite MTT branch. They do not establish the hypotheses of Theorem <a href="#thm:rigidity" data-reference-type="ref" data-reference="thm:rigidity">2</a>.
+
+## What must still be derived
+
+<div class="center">
+
+| Required object | Current status |
+|:---|:---|
+| Finite q79 Hilbert model | Exact complex model on the canonical binary domain |
+| Finite complex polarization | Exact on the declared finite carrier |
+| Orthomodular reconstruction | Must be proved for the intended full proposition family |
+| Infinite orthonormal sequence | Not supplied by the finite q79 carrier |
+| Compatible inductive completion | Open |
+| Standard physical composites | Not derived from one selected upper source |
+| Local independence | Open for arbitrary physical contexts |
+| Tomographic completeness | Open for arbitrary physical contexts |
+| Shared $`U(1)`$ source of $`J`$ | Candidate finite evidence; global theorem open |
+
+</div>
+
+The most direct MTT completion would use the shared circle line as more than a repeated phase label. One would need to prove that its connection and holonomy induce one compatible operator $`J`$ on states, observables, instruments, and composites, and that the resulting balanced composition is the one used by the q79 operational theory. That would connect the finite complex polarization to the physical quantum reconstruction without pretending that Solèr’s infinite hypothesis follows from a finite carrier.
+
+# Consequences and non-consequences
+
+Under its assumptions, Theorem <a href="#thm:rigidity" data-reference-type="ref" data-reference="thm:rigidity">2</a> has a clean consequence: no separate “phase-rich interference” argument is required to eliminate real full-matrix quantum theory. The same standard-composition condition excludes both real and quaternionic candidates by exact parameter counts.
+
+The theorem does *not* establish:
+
+- that projection alone produces Hilbert space;
+
+- that every MTT basin is a quantum proposition;
+
+- that the q79 finite model has an infinite orthogonal completion;
+
+- that physical composites must obey the standard tensor-product rule;
+
+- that real or quaternionic mathematical formulations are inconsistent;
+
+- that complex notation is ontologically fundamental; or
+
+- that Born probabilities for arbitrary apparatus contexts follow from scalar-field selection.
+
+It instead converts a vague question into three auditable gates:
 ``` math
-\mathcal A(C_A \otimes C_B) = \{ B^{(C_A,C_B)}_{\alpha\beta} \},
+\text{Soler gate},\qquad
+\text{composition gate},\qquad
+\text{MTT source gate}.
 ```
-whose elements correspond to joint outcomes $`(\alpha,\beta)`$.
-
-For an admissible joint state $`x \in X_{AB}`$, the theory assigns basin-capture probabilities
-``` math
-p_{C_A \otimes C_B}(\alpha,\beta \mid x)
-```
-via the basin-measure construction. In the Hilbert representation these probabilities are given by squared norms of product projectors.
-
-## Admissible local tomography
-
-We now formulate a separability requirement that is implicit in the admissibility philosophy of Modal Triplet Theory.
-
-<div class="definition">
-
-**Definition 5** (Admissible local tomography). The reduced description of a bipartite system $`AB`$ is said to satisfy *admissible local tomography* if the following holds: for any two admissible joint states $`x,x' \in X_{AB}`$,
-``` math
-p_{C_A \otimes C_B}(\alpha,\beta \mid x)
-=
-p_{C_A \otimes C_B}(\alpha,\beta \mid x')
-\quad
-\text{for all local contexts $C_A,C_B$ and all outcomes $\alpha,\beta$}
-```
-implies $`x = x'`$.
-
-</div>
-
-In words, admissible joint states must be uniquely determined by the statistics of all local product contexts.
-
-This requirement is natural in a projection-based theory. Effective descriptions are intended to be predictive within their admissible domains, and admissibility fails precisely when projection becomes too coarse to separate physically relevant distinctions. If two distinct admissible states were indistinguishable by all local measurements, the reduced description would contain hidden global degrees of freedom not controlled by localized operations, undermining predictive stability.
-
-## Relation to local tomography in generalized probabilistic theories
-
-The condition above is the direct analogue, in basin-atlas language, of *local tomography* as used in generalized probabilistic theories. There, local tomography requires that the joint state of a composite system be determined by joint statistics of local measurements.
-
-In the present framework, this requirement is not imposed as an axiom of information theory. It is a consequence of admissibility: the observable content of the effective description must be exhausted by the family of localized operational contexts admitted by the theory.
-
-## Failure of admissible local tomography in quaternionic Hilbert space
-
-It is a known structural property of quaternionic quantum mechanics that it violates local tomography. Concretely, there exist distinct quaternionic density operators on a composite system $`AB`$ that yield identical expectation values for all product observables of the form $`O_A \otimes O_B`$.
-
-Translated into the present setting, this means that there exist distinct joint states $`x \neq x'`$ whose basin-capture probabilities satisfy
-``` math
-p_{C_A \otimes C_B}(\alpha,\beta \mid x)
-=
-p_{C_A \otimes C_B}(\alpha,\beta \mid x')
-\quad
-\text{for all local contexts $C_A,C_B$}.
-```
-Such states differ by global quaternionic phase data that is invisible to all local measurements but may affect outcomes of genuinely joint contexts.
-
-## Incompatibility with admissibility
-
-This behavior is incompatible with admissible projection in Modal Triplet Theory. The existence of globally distinct admissible states that are indistinguishable by all local contexts implies that the reduced description is not separating: predictive content depends on hidden parameters that cannot be controlled or detected within the admissible operational regime.
-
-From the perspective of basin atlases, admissible local tomography ensures that the family of local atlases forms a separating coordinate system on the admissible state space. Failure of this property implies that basin structure is insufficient to encode all physically relevant distinctions, signaling a breakdown of admissibility.
-
-We therefore conclude:
-
-<div class="proposition">
-
-**Proposition 6**. *Quaternionic Hilbert space is incompatible with admissible local tomography and hence inadmissible as an effective quantum description within Modal Triplet Theory.*
-
-</div>
-
-## Consequence for the Solèr trichotomy
-
-Combining this result with the classification obtained from Solèr’s theorem yields the following restriction.
-
-<div class="corollary">
-
-**Corollary 7**. *Under admissible projection and locality, the scalar field underlying the Hilbert-space representation in Modal Triplet Theory is restricted to $`\mathbb R`$ or $`\mathbb C`$.*
-
-</div>
-
-The exclusion of the real case is addressed in the next section, where we show that real Hilbert space fails to support the phase-rich coherence structure required for generic quantum interference and basin-measure dynamics.
-
-# Phase Richness and the Exclusion of Real Hilbert Space
-
-In this section we exclude the remaining possibility in the Solèr trichotomy, namely real Hilbert space. The argument rests on the requirement that admissible quantum descriptions support a phase-rich coherence structure sufficient to generate generic interference phenomena and stable basin-measure dynamics.
-
-## Phase structure and coherence
-
-In Modal Triplet Theory, coherence is not a purely amplitude-based notion. The coherent sector supports relative phase information that is transported, compared, and stabilized across admissible domains. Interference phenomena arise precisely from relative phase relations between admissible components of the reduced state.
-
-In the Hilbert representation of basin measures, this structure is encoded in the ability to perform continuous phase rotations of pure states while preserving norms and basin measures. Such transformations generate nontrivial interference patterns under changes of context and are essential for the generic non-factorization of admissible states.
-
-## Limitations of real Hilbert space
-
-In a real Hilbert space, the group of norm-preserving transformations acting on a one- dimensional subspace is discrete: a real ray admits only the transformations $`\psi \mapsto
-\pm \psi`$. Continuous phase rotations are absent. As a consequence, relative phase information is severely restricted.
-
-Operationally, this restriction manifests as an effective superselection rule: states that would differ by a relative complex phase in standard quantum mechanics are identified in the real formulation. While real Hilbert space can reproduce a subset of quantum predictions, it fails to support the full range of interference phenomena observed in generic quantum systems.
-
-## Incompatibility with basin-measure dynamics
-
-Within the MTT framework, basin measures are required to vary continuously under admissible deformations of the reduced state and of the measurement context. This continuity reflects the stability margins of admissible basins and the transport of coherence across contexts.
-
-The absence of a continuous internal phase group in real Hilbert space prevents the existence of a generic, continuously parameterized family of admissible pure states with identical basin measures but distinct interference behavior. Consequently, real Hilbert space cannot support the phase-rich basin dynamics required for admissible projection in the quantum regime.
-
-From the perspective of Modal Triplet Theory, real Hilbert space corresponds to a restricted or degenerate encoding of coherence, in which essential degrees of freedom are suppressed rather than projected. Such suppression is incompatible with the observed universality and robustness of quantum interference.
-
-## Exclusion of the real case
-
-We therefore conclude:
-
-<div class="proposition">
-
-**Proposition 8**. *Real Hilbert space fails to support the phase-rich coherence structure required for generic quantum interference and basin-measure dynamics in Modal Triplet Theory and is therefore inadmissible as an effective quantum description.*
-
-</div>
-
-Combining this result with the exclusion of the quaternionic case obtained in the previous section leaves complex Hilbert space as the unique admissible possibility.
-
-# The Complex Hilbert Space Rigidity Theorem
-
-We now state the main result of this paper.
-
-<div class="theorem">
-
-**Theorem 9** (Complex Hilbert Space Rigidity Theorem (MTT)). *Under admissible projection, locality, and basin-measure reconstruction as established in Modal Triplet Theory, the effective quantum description is uniquely a complex Hilbert space.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* By Sections 3 and 4, admissible basin outcomes induce an orthomodular lattice of propositions with infinite orthogonality, and Solèr’s theorem restricts the scalar field underlying the Hilbert representation to $`\mathbb R`$, $`\mathbb C`$, or $`\mathbb H`$.
-
-By Section 5, admissible local tomography—implicit in the locality and predictivity requirements of Modal Triplet Theory—excludes quaternionic Hilbert space.
-
-By Section 6, the requirement of phase-rich coherence and generic interference excludes real Hilbert space.
-
-The only remaining possibility is complex Hilbert space. ◻
-
-</div>
-
-## Interpretation
-
-This theorem establishes complex Hilbert space not as an axiom of quantum theory but as a structural necessity enforced by admissible projection and locality. No new dynamical principles or interpretational assumptions are introduced. The result follows entirely from the internal logic of Modal Triplet Theory once the reconstruction of quantum mechanics is taken seriously as an effective description.
-
-## Consequences for the MTT corpus
-
-The rigidity result obtained here strengthens the foundational structure of the Modal Triplet Theory program. All subsequent results—including the analysis of contextuality, measurement order dependence, the Born rule, and the emergence of classicality—may be understood as consequences of projection and admissibility within a uniquely complex Hilbert-space encoding.
-
-In particular, the complex structure underlying quantum mechanics is shown to be neither conventional nor contingent, but unavoidable given the requirements that make effective physical description possible at all.
+The first is established mathematics. The second is proved here after explicit assumptions. The third remains a research obligation.
 
 # Conclusion
 
-We have shown that the effective quantum description reconstructed in Modal Triplet Theory is uniquely complex. This conclusion follows from a rigidity argument combining orthomodular quantum logic, Solèr’s theorem, admissible local tomography, and phase-rich coherence dynamics. Complex Hilbert space emerges not as a postulate but as a fixed point of admissible projection.
+Complex Hilbert space is uniquely selected within a well-defined reconstruction class. Solèr’s theorem first reduces an infinite orthomodular generalized Hilbert representation to the real, complex, and quaternionic cases. Standard full-matrix composition with independent and tomographically complete local effects then imposes multiplicativity of the self-adjoint parameter count. The complex count is exactly multiplicative; the real and quaternionic counts have nonzero defects.
 
-This result closes a structural gap in the MTT reconstruction program and clarifies why quantum mechanics takes the mathematical form it does. It also illustrates the explanatory power of projection-first reasoning: features long regarded as axiomatic or mysterious are revealed as consequences of stability, locality, and admissibility.
+This is a meaningful rigidity theorem, but it is conditional. Its assumptions include both an infinite-orthogonality completion and a particular physical composition rule. MTT currently realizes the complex branch in a finite q79 operational model and finite polarization, yet still must derive those stronger assumptions from the selected upper geometry. The right next theorem is therefore not another assertion that quantum theory “must” be complex. It is the source theorem connecting the common MTT phase line to one globally compatible complex structure and composite rule.
 
-*Acknowledgment.* The author thanks the reader for insisting on the question of “why complex,” which motivated the present clarification.
+#### Open boundary (not evidence of closure).
 
-<div class="thebibliography">
+- (*open*).
 
-99
+  Current 2/9 strict no-knob upgrade ledger.
 
-M. P. Solèr, *Characterization of Hilbert Spaces by Orthomodular Spaces*, Communications in Algebra **23** (1995), 219–243.
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-C. Piron, *Foundations of Quantum Physics*, W. A. Benjamin, Reading, MA, 1976.
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
 
-S. Maeda, *Probability measures on projections in quaternionic Hilbert spaces*, Reviews in Mathematical Physics **1** (1989), 235–256.
+The conditional complex-Hilbert reconstruction depends on Soler rigidity, local tomography, and the stated composition assumptions. The open strict-upgrade ledger is unrelated to that proof and is cited solely as a boundary on broader MTT source claims.
 
-H. Barnum and A. Wilce, *Local Tomography and the Jordan Structure of Quantum Theory*, Foundations of Physics **44** (2014), 192–212.
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
 
-L. Hardy, *Quantum Theory From Five Reasonable Axioms*, arXiv:quant-ph/0101012.
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
 
-W. K. Wootters, *Local accessibility of quantum states*, in *Complexity, Entropy and the Physics of Information*, SFI Studies in the Sciences of Complexity, Vol. 8, 1986.
+## Open boundary (not evidence of closure)
 
-P. Nero, *Modal Triplet Theory: Foundation*, Zenodo preprint, 2025.
+- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
 
-P. Nero, *Modal Triplet Theory: From MTT to Quantum Mechanics*, Zenodo preprint, 2025.
-
-P. Nero, *Why Quantum Contextuality and Measurement Order Dependence Are the Same Phenomenon*, Zenodo preprint, 2026.
-
-P. Nero, *Why the Born Rule and the Classical Limit Are the Same Problem*, Zenodo preprint, 2026.
-
-P. Nero, *Quantum Field Theory Reconstruction from Coherence Basin Statistics*, Zenodo preprint, 2026.
-
-E. Haapasalo, *Local tomography and the Jordan structure of quantum theory*, Journal of Mathematical Physics **52** (2011), 022101.
-
-E. M. Alfsen and F. W. Shultz, *State Spaces of Operator Algebras*, Birkhäuser, Boston, 2001.
-
-</div>
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

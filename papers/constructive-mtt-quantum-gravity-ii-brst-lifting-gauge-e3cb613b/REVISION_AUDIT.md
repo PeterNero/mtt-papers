@@ -93,7 +93,7 @@ completion.
 ### Permanent Gaussian damping and standard positivity
 
 The later QG audit found a stronger obstruction not present in the compact A10
-entry. V2 proves it directly. If
+entry. The companion Euclidean TT paper now owns its direct proof. If
 
 ```text
 D(x) = integral rho(ds)/(x+s)
@@ -101,9 +101,11 @@ D(x) = integral rho(ds)/(x+s)
 
 has a nonzero positive spectral measure, then `D(x) >= m/(x+R)` for suitable
 `m,R > 0`. It cannot also obey a permanent Gaussian upper bound in the same
-spectral variable. Consequently, the original SPT Stieltjes/OS argument is
-withdrawn. This no-go does not classify every nonlocal theory; it invalidates
-the specific standard-positivity proof used by the old program.
+spectral variable. QG-II imports that result only for its BRST/OS consequence
+rather than duplicating the theorem. Consequently, the original SPT
+Stieltjes/OS argument is withdrawn. This no-go does not classify every
+nonlocal theory; it invalidates the specific standard-positivity proof used by
+the old program.
 
 ## New exact theorems in v2
 
@@ -210,14 +212,25 @@ The corrected paper reduces promotion to five concrete objects:
 The paper becomes a constructed quantum-gravity theorem only when all five are
 supplied from the same selected source chain.
 
+## July 2026 expository and ownership review
+
+The selected v2 source now opens with a reader map and chain-complex intuition
+for the regulator, measure, and physical-state interfaces. The permanent
+Gaussian/Stieltjes no-go is no longer restated as a QG-II theorem: its proof is
+owned by the companion Euclidean TT paper and imported here only for the
+BRST/OS consequence. The shared-filter, finite-cutoff Ward,
+Borel-inheritance, and conditional cohomological reconstruction results remain
+owned by QG-II.
+
 ## Validation record
 
 - Every theorem and proof in v1 was re-evaluated in context.
 - A10 and A18 requirements were mapped individually.
 - The 2026 QG, fixed-point, and mathematical-language packets were read
   directly.
-- The exact filter, independent-filter, TT-positivity, and spectral/Gaussian
-  counterexamples were proved in the successor text.
+- The exact filter, independent-filter, and TT-positivity counterexamples were
+  proved in the successor text; the spectral/Gaussian no-go is imported from
+  its companion theorem source.
 - Primary citations and publication identifiers were checked against original
   journal or arXiv records.
 - TeX compilation, Markdown regeneration, visual inspection, migration, and

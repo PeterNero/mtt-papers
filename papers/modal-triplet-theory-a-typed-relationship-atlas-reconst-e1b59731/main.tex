@@ -22,7 +22,7 @@ We replace the former universal ``MTT as a Superset'' theorem with a typed
 atlas of relationships between Modal Triplet Theory (MTT) and established
 frameworks. A derivation, reconstruction, embedding, controlled reduction,
 conditional bridge, calibration, and interpretive correspondence are
-different claims and require different certificates. The corrected MTT
+different claims and require different certificates. The current MTT
 Foundation and Fixed Points series establish an internal spectral/control
 spine, but do not by themselves derive General Relativity, the Born rule,
 interacting quantum field theory, the Standard Model, string theory, a unique
@@ -57,6 +57,64 @@ same-source state, dynamics, observable, and equivalence certificate is given.
 \end{description}
 
 \tableofcontents
+
+\section{How to Read the Atlas}
+
+The relationship words in this paper describe arrows, not degrees of approval.
+An embedding points from a target model into an MTT realization.  A reduction
+points from an admissible part of an MTT realization to a target model.  A
+reconstruction starts with target-compatible ingredients and builds an MTT
+model around them.  A derivation must instead explain why those ingredients
+arise from source data that did not already contain the target.
+
+For every atlas row, the reader should therefore ask:
+\begin{enumerate}
+\item Which way does the map point?
+\item Which target structures were supplied as inputs?
+\item Do dynamics and observables commute under the map?
+\item Is the realization selected, or is it one compatible example?
+\item Were the compared observables used to construct or calibrate it?
+\end{enumerate}
+The answer determines the relationship type more reliably than the title of a
+paper or the familiarity of its equations.
+
+\subsection{A product example}
+
+Let a target state space be $\mathcal S_T$ and define an enlarged realization
+\[
+ \mathcal S_M=\mathcal S_T\times\mathcal H,
+\]
+where $\mathcal H$ is a hidden sector.  The maps
+\[
+ E(y)=(y,0),
+ \qquad
+ R(y,h)=y
+\]
+give an embedding and a reduction at the level of state spaces.  If the MTT
+dynamics is
+\[
+ \mathcal D_M^t(y,h)
+ =
+ \bigl(\mathcal D_T^t y,\mathcal K^t h\bigr),
+\]
+then $R\mathcal D_M^t=\mathcal D_T^tR$, so the target dynamics is an exact
+reduction.  If the first component instead depends on $h$, this equality can
+fail even though the same state-space maps still exist.
+
+This example also shows why reconstruction is weaker than derivation.  Placing
+the already known target evolution $\mathcal D_T$ in the first component
+constructs a valid target-compatible MTT realization, but it does not explain
+where $\mathcal D_T$ came from.  A source theorem would have to select the
+enlarged dynamics without inserting the target law as an input.
+
+\subsection{How the paper is organized}
+
+The vocabulary and containment certificate define the possible arrows.
+The underdetermination theorem explains why target agreement need not select
+one realization.  The internal-spine section records what MTT can currently
+supply before comparison with another framework.  The framework atlas then
+classifies each external relationship, while the same-source and closure
+sections state the gates for upgrading it.
 
 \section{Why the superset claim is reclassified}
 
@@ -168,6 +226,12 @@ Relationships also do not compose automatically. An embedding of $T_1$ into
 an MTT model and a reduction of a different MTT model to $T_2$ provide no map
 from $T_1$ to $T_2$ unless the two realizations and their domains are connected.
 
+The certificate is consequently a test of a whole commuting structure, not a
+test of whether two theories contain similar-looking equations.  A single
+shared operator can be an important construction ingredient, but containment
+depends on what happens to complete states, admissible evolution, constraints,
+and observables around that operator.
+
 \section{Underdetermination and canonical selection}
 
 Let $\mathfrak R$ be a class of admissible MTT realizations and let
@@ -197,6 +261,11 @@ not that the target is forced or that the reconstruction is unique.
 
 Multiple compatible encodings are useful for comparison but increase
 underdetermination until a canonical source theorem relates or selects them.
+
+This is the familiar inverse-problem issue in typed form.  Observable agreement
+constrains the realization to a fiber of $\mathcal P$.  More accurate data may
+shrink that fiber, but only injectivity on the declared candidate class, or an
+independent source principle, can turn the fit into unique selection.
 
 \section{Authoritative internal MTT spine}
 
@@ -484,5 +553,10 @@ P.~Nero,
 Triplet Theory}, revised v2, 2026.
 
 \end{thebibliography}
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \end{document}

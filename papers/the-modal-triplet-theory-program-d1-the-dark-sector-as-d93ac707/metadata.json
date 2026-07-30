@@ -1,45 +1,45 @@
 {
-  "abstract": "This paper formulates a projection-first dark-sector hypothesis within Modal Triplet Theory (MTT) and identifies exactly what would be required to turn it into a physical model. The retained idea is that a reduced description may have an availability profile in which statistical or relational encodings remain usable while more local encodings do not. We prove, however, that an availability profile alone cannot determine a stress-energy tensor, a modified field equation, an equation of state, or a perturbation spectrum. In particular, statistical encoding does not imply cold, pressureless, collisionless matter, and relational encoding does not imply accelerated expansion. We replace the former identification of dark matter with E9 and dark energy with E8 by two explicit hypotheses. Each requires a selected covariant source map or a selected diffeomorphism-invariant effective action. We derive the associated conservation condition and state separate background, linear-perturbation, lensing, cluster-collision, cosmic-microwave-background, baryon-acoustic-oscillation, structure-growth, and equation-of-state gates. The current MTT result is consequently an organized candidate taxonomy and a completion contract, not a derivation of the observed dark sector.",
+  "abstract": "This paper formulates a projection-first dark-sector hypothesis within Modal Triplet Theory (MTT) and identifies exactly what would be required to turn it into a physical model. The retained idea is that a reduced description may have an availability profile in which statistical or relational encodings remain usable while more local encodings do not. We prove, however, that an availability profile alone cannot determine a stress-energy tensor, a modified field equation, an equation of state, or a perturbation spectrum. In particular, statistical encoding does not imply cold, pressureless, collisionless matter, and relational encoding does not imply accelerated expansion. We therefore replace the former identification of dark matter with E9 and dark energy with E8 by two explicit hypotheses. Each requires a selected covariant source map or a selected diffeomorphism-invariant effective action. We derive the associated conservation condition and state separate background, linear-perturbation, lensing, cluster-collision, cosmic-microwave-background, baryon-acoustic-oscillation, structure-growth, and equation-of-state gates. The current MTT result is consequently an organized candidate taxonomy and a completion contract, not a derivation of the observed dark sector. This revision records which earlier claims are retained, withdrawn, or left open.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "July 2026",
+  "current_version": "v3",
+  "date": "July 2026 Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18355166",
-    "created": "2026-01-23T20:14:52.937887+00:00",
+    "created": "2026-07-29T08:52:03.860941+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18355167",
+    "doi": "10.5281/zenodo.21655391",
     "files": [
       {
-        "checksum": "md5:41fec75f636392e48c92c25fcdd0f31e",
-        "content_url": "https://zenodo.org/api/records/18355167/files/The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings%20(2).pdf/content",
-        "key": "The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings (2).pdf",
-        "size": 214326
+        "checksum": "md5:d27d6043bdd46f9f028b9499b5287ba3",
+        "content_url": "https://zenodo.org/api/records/21655391/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 363063
       }
     ],
-    "id": "18355167",
-    "match_kind": "title_or_file",
+    "id": "21655391",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-23",
-    "record_url": "https://zenodo.org/records/18355167",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21655391",
     "resource_type": "publication",
-    "title": "The Modal Triplet Theory Program D1: The Dark Sector as Missing Encodings",
-    "updated": "2026-01-23T20:14:53.398397+00:00",
-    "version": "v1.0"
+    "title": "The Modal Triplet Theory Program D1: A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract",
+    "updated": "2026-07-29T08:52:04.295781+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "a0ffcea05082d9482a32486f94c0a963cd7a03828b0e627473a8db53f9d5df1a",
+  "main_tex_sha256": "9458091c6e622d8a9ff70ef0973124d0fe33fa61737a5eecc190e0c9b9cf7963",
   "paper_id": "the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707",
-  "paper_md_sha256": "94cffef381b676cce7aa68ae85e4f9af2d303404faeaf115d703b41217083dd2",
+  "paper_md_sha256": "727b3147b500eb53f08657f4bb63932c1463f5748d4bbe0a69ec416ac3af7117",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "80899562be60be2cb5f8cb55a8083bc7d98f69c9f9b36d14a2103c42e2ab3d7d",
+    "revision_evidence_sha256": "3dd76af367b863b4b3bf3d7cafe07728cdf789382807a31e60e4a140c09210f3",
     "selected_revision": true,
     "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings"
   },
@@ -51,33 +51,83 @@
       "sha256": "7ff9f4864d61b9ed30eac8cfe389ee5b5e135d1016219b4937bcdb2001c6fd25"
     },
     {
-      "bytes": 324667,
+      "bytes": 363063,
       "path": "main.pdf",
-      "sha256": "26e9e66489a87a27081173cc8702e153ee04f10dbdc8f237b99486e58c16f83f"
+      "sha256": "1e79ed9a7c26473230aa3e4cb658425abfa27d795fd878fe0d9702b3e08fef88"
     },
     {
-      "bytes": 24974,
+      "bytes": 30887,
       "path": "main.tex",
-      "sha256": "a0ffcea05082d9482a32486f94c0a963cd7a03828b0e627473a8db53f9d5df1a"
+      "sha256": "9458091c6e622d8a9ff70ef0973124d0fe33fa61737a5eecc190e0c9b9cf7963"
     },
     {
-      "bytes": 7113,
+      "bytes": 8398,
       "path": "REVISION_AUDIT.md",
-      "sha256": "80899562be60be2cb5f8cb55a8083bc7d98f69c9f9b36d14a2103c42e2ab3d7d"
+      "sha256": "3dd76af367b863b4b3bf3d7cafe07728cdf789382807a31e60e4a140c09210f3"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_D1__The_Dark_Sector_as_Missing_Encodings"
   },
-  "source_tree_sha256": "474e76461d037d2a6873d72a62259ed6436db5c1cb9a3ca86f5a6cf8fc39878c",
+  "source_tree_sha256": "9d83db48a0aa052b68499a296a3986729333567b0bc4e9260c01498c990fe17d",
   "title": "The Modal Triplet Theory Program D1: A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18355166",
+      "created": "2026-07-29T08:52:03.860941+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655391",
+      "files": [
+        {
+          "checksum": "md5:d27d6043bdd46f9f028b9499b5287ba3",
+          "content_url": "https://zenodo.org/api/records/21655391/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 363063
+        }
+      ],
+      "id": "21655391",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655391",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program D1: A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract",
+      "updated": "2026-07-29T08:52:04.295781+00:00",
+      "version": "v3"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.18355166",
+      "created": "2026-07-28T17:57:53.074270+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650904",
+      "files": [
+        {
+          "checksum": "md5:66c3e41928da43c76ba8a597bd3718ba",
+          "content_url": "https://zenodo.org/api/records/21650904/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 324667
+        }
+      ],
+      "id": "21650904",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650904",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program D1: A Projection-First Dark-Sector Hypothesis and Its Covariant Completion Contract",
+      "updated": "2026-07-28T17:57:53.532632+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18355166",
       "created": "2026-01-23T20:14:52.937887+00:00",

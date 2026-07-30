@@ -48,15 +48,15 @@
       "sha256": "6d88f36245d2b534fbc8d21a78e204945537d5fc342353c2a25ca944420d79b2"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Selection_Fronts_and_Boundary_Layer_Physics_at_the_Admissibility_Threshold"
   },
-  "source_tree_sha256": "eb16fa61bbb186ebbfe26914c258ffd558260f241b5a50b3efe28036971d3bca",
+  "source_tree_sha256": "332ea308a90336c42ea9ccd5474ef0af37c9f97718b8afc62d2f54f5be55e097",
   "title": "Selection Fronts and Boundary-Layer Physics at the Admissibility Threshold",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

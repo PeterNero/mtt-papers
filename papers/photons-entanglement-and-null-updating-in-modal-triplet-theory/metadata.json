@@ -48,15 +48,15 @@
       "sha256": "329a10040e2426aca5fb3c300c80485f4d7b5ce083238a6835ef9a4025042dd9"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Photons__Entanglement__and_Null_Updating_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "f24476f2a303549a1cae9f2db3589e4dad4592334ca15abb6ff17bf94e358500",
+  "source_tree_sha256": "eeab083a21dc8cfa6af71b5e88d5937dc0ab074bc4148950629adaef2010d05a",
   "title": "Photons, Entanglement, and Null Updating in Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

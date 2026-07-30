@@ -9,38 +9,70 @@ author:
 - Peter Nero
 bibliography:
 - refs.bib
-current_version: v6
+current_version: v7
 date: July 2026
-generated_from_main_tex_sha256: 82cd4c9064a42306bf80185a6259d6b86e111bb251fa625c7cb79079dc2715a2
+generated_from_main_tex_sha256: ef75416959ff9689dd486d5498505f03cbdac46634d438ca1f4ee35a3dc874e9
 paper_id: fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce
 release_state: zenodo_released
-released_version: v6
+released_version: v7
 title: |
-  Fixed Points I: Fixed Points over Multi–Bundle Manifolds  
+  Fixed Points I: Fixed Points over Multi–Bundle Manifolds
   A conditional functional-analytic framework with spectral-bundle projections
-zenodo_doi: 10.5281/zenodo.21649308
-zenodo_record_id: 21649308
-zenodo_url: "https://zenodo.org/records/21649308"
+zenodo_doi: 10.5281/zenodo.21657157
+zenodo_record_id: 21657157
+zenodo_url: "https://zenodo.org/records/21657157"
 ---
-
-*Part I of VI in the Fixed Point series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*
 
 # Revision note for this edition
 
-Supersedes.  
-*Fixed Points I: Fixed Points over Multi–Bundle Manifolds*, version 5.
+Supersedes.
+*Fixed Points I: Fixed Points over Multi–Bundle Manifolds*, version 6.
 
-Reason.  
-The earlier proof chain needed explicit control geometry, anisotropic function spaces, projector bounds, compactness mechanisms, and separate hypotheses for existence, uniqueness, rate, and approximation.
+Reason.
+The version 6 technical correction was published before its paper-specific reader map, theorem-cluster explanations, and final boundary discussion were incorporated into the released PDF.
 
-Resolution.  
-Version 6 repairs the spectral-calculus and semigroup estimates, states valid Schauder and Darbo routes, corrects the confining-space norm, and gives a Cea-type Galerkin theorem for the elliptic steady problem.
+Resolution.
+Version 7 publishes the reviewed explanatory source. It adds a plain-language model, a six-stage argument map, interpretation around the principal theorem clusters, and a conclusion that separates analytic control from physical realization. No theorem is strengthened by this editorial repair.
 
-Retained result.  
+Retained result.
 Conditional projected fixed-point existence, coherent-sector uniqueness routes, and convergence remain valid under the displayed analytic hypotheses.
 
-Remaining boundary.  
+Remaining boundary.
 The abstract Riemannian control geometry, flow parameter, and fiber product do not select physical spacetime or the q79 internal carrier.
+
+# Prior technical revision (version 6)
+
+Version 6 repaired the spectral-calculus and semigroup estimates, stated valid Schauder and Darbo routes, corrected the confining-space norm, and proved a Cea-type Galerkin estimate for the elliptic steady problem. Those technical changes are retained unchanged in this edition; their detailed audit remains part of the source archive.
+
+# How to read this paper
+
+This paper answers a deliberately limited question: once a concrete model has supplied a family of compact internal fibers, a coherent projector, and an energy, what analytic conditions are sufficient to guarantee that the projected dynamics has a genuine equilibrium? It does not derive those geometric inputs from MTT. It develops the functional-analytic machine that can be applied after they have been selected.
+
+#### The central picture in plain language.
+
+A field on the total bundle contains two kinds of variation. Its coherent part lies in the fiberwise harmonic modes retained by $`\Pi_{\mathrm{coh}}`$; its incoherent part lies in the positive-spectrum complement. The fiber Laplacian damps the latter, while the nonlinear term determines how the retained modes interact. A projected fixed point is physically useful only if projection has not hidden continuing motion. Coherence invariance and energy dissipation are the conditions that turn such a projected return into a true stationary state.
+
+#### Argument map.
+
+The proof architecture has six stages.
+
+1.  Sections 1–2 define the fiber product and use the uniform fiber gap to construct a bounded harmonic projector.
+
+2.  Section 3 places a dissipative semilinear flow on that space and proves the key implication from projected fixed point to actual equilibrium.
+
+3.  Section 4 gives three alternative existence routes. The variational route is the shortest; Schauder is useful on compact bases with smoothing; Darbo replaces global compactness by confinement and tail control on noncompact bases.
+
+4.  Section 5 separates existence from uniqueness. Strong monotonicity is the direct route, while an inertial manifold provides a finite-dimensional route when global convexity is unavailable.
+
+5.  Section 6 shows how a Galerkin computation approximates the selected steady state once a coercive elliptic problem has been specified.
+
+6.  Sections 7–10 test the hypotheses in examples, establish asymptotic convergence, and explain the controlled removal of auxiliary base regularization.
+
+These routes are alternatives, not a list of conclusions available under one minimal assumption set. In particular, an existence theorem does not supply uniqueness or a rate, and a Galerkin estimate does not select the geometric operator being discretized.
+
+#### What should be carried forward.
+
+Later Fixed Points papers may use the projector, equilibrium, and approximation results by citing the corresponding statements here and checking their hypotheses. They should not restate these theorems, nor infer Lorentzian time, a physical compactification, or a Standard Model vacuum from them. Those are separate realization and identification problems.
 
 # Standing Series Axiom (shared across the FP series)
 
@@ -61,6 +93,8 @@ The abstract Riemannian control geometry, flow parameter, and fiber product do n
 </div>
 
 # Geometry of the internal product and standing hypotheses
+
+The first task is to separate what belongs to geometry from what belongs to dynamics. The base labels the family of internal fibers; the fiber product places all selected internal structures over the same base point. None of this yet says how a configuration evolves. It only provides the space on which the projector and the energy will act.
 
 ## Internal fiber product
 
@@ -159,6 +193,8 @@ H_{\mathrm{coh}}:= \mathrm{Ran}(\Pi_{\mathrm{coh}})\cap H^1(B_{\mathrm{int}}),\q
 ```
 
 # Projectors via fiberwise spectral calculus
+
+The spectral gap now does the decisive organizational work. It separates the zero modes continuously from every positive fiber mode, so the coherent sector is not chosen by an informal truncation: it is the range of a Riesz projector. Uniformity of the gap is what permits one projector bound to hold over the whole base rather than only fiber by fiber.
 
 For each $`y\in Y`$ define the self-adjoint nonnegative operator
 ``` math
@@ -313,6 +349,10 @@ The integrand therefore vanishes, so the orbit is stationary and $`\nabla C(\Psi
 
 </div>
 
+#### What the projected-fixed-point result means.
+
+Projection can make a trajectory appear to return even while discarded components continue to move. Proposition <a href="#prop:projfix" data-reference-type="ref" data-reference="prop:projfix">19</a> rules out that false return in the invariant coherent sector: because the full energy loses exactly the squared gradient along the orbit, returning to the same coherent state after positive flow time leaves no room for hidden dissipation. This is the logical bridge used by every existence route below.
+
 ## Detailed semigroup bound underpinning $`M_1(t)`$
 
 <div id="lem:semigroup" class="lemma">
@@ -349,6 +389,8 @@ Moreover, *compactness* of $`T_t`$ requires base regularization (see Section <a
 </div>
 
 # Existence of equilibria and projected fixed points
+
+There is no single universal compactness argument, so this section presents three routes with different geometric costs. The direct method minimizes the energy on a weakly closed coherent sector. Schauder uses genuine compactness created by base regularization on a compact total space. Darbo is designed for a noncompact base: confinement makes the distant tail uniformly small, while local smoothing supplies compactness on each bounded region. A model needs only one valid route, but it must state which route it uses.
 
 ## Variational existence on the coherent sector
 
@@ -466,7 +508,13 @@ Then $`\Phi_t=K_R+S_R`$. Moreover:*
 
 </div>
 
+#### Interpretation of the three routes.
+
+The variational theorem establishes an equilibrium without first constructing a compact time map. Schauder establishes a fixed point of a compact map but requires compact-base smoothing and an invariant convex set. Darbo weakens compactness to a strict reduction of noncompactness, at the cost of a confining potential and invariant energy sublevel. These are analytic existence mechanisms; none says that the equilibrium is unique, dynamically preferred, or physically realized.
+
 # Uniqueness of equilibria
+
+Existence answers whether at least one coherent stationary configuration is available. It does not answer whether two different initial configurations can settle into different equilibria. Strong monotonicity excludes that possibility directly. The inertial-manifold route instead first proves that long-time motion is captured by finitely many modes and then asks for monotonicity only on that reduced system.
 
 ## Route (A): strong convexity / strong monotonicity on the coherent sector
 
@@ -533,9 +581,13 @@ Let $`P_0`$ be a finite-rank spectral-bundle projection and $`Q_0:=\mathrm{Id}-P
 
 </div>
 
+#### Practical distinction.
+
+The first route is stronger and cleaner when the full coherent energy is uniformly convex. The second can survive a nonconvex ambient energy, but its conclusion is only as global as the attracting manifold and reduced monotonicity hypotheses. The Allen–Cahn example illustrates the intended use: nonconvexity alone need not end the analysis, provided a verified spectral separation controls the reduced dynamics.
+
 # Galerkin approximation for the steady state
 
-We approximate equilibria by discretizing a uniformly elliptic steady problem. To ensure coercivity (and uniqueness) we assume the elliptic part includes a strictly positive zeroth-order term (mass or confinement).
+We next turn from existence to computation. A finite Galerkin matrix is not automatically an approximation of the abstract fiber flow: one must first specify a uniformly elliptic steady operator and a finite-dimensional trial space. To ensure coercivity and uniqueness, the elliptic part includes a strictly positive zeroth-order term, interpreted analytically as a mass or confinement contribution.
 
 <div id="ass:coerciveAeps" class="assumption">
 
@@ -624,6 +676,10 @@ which explains the appearance of the factor $`(1+L/w_0)`$ in the Céa constant.
 
 </div>
 
+#### What the error estimate does and does not certify.
+
+The theorem says that the computed solution is, up to the displayed stability factor, as accurate as the best element available in the chosen Galerkin space. It therefore converts approximation quality into a rigorous solution error. It does not certify that the basis, coefficients, or operator were selected by MTT geometry; those provenance questions must be settled before this numerical theorem is invoked.
+
 # Examples and counterexamples
 
 ## Compact fibers with fixed geometry: circles and tori have $`\ensuremath{\lambda_{1}}>0`$
@@ -684,6 +740,8 @@ such that $`\|\Pi_{\mathrm{coh}}\|_{H^1_F\to H^1_F}\le C_\Pi`$. If the fibers ar
 
 # Łojasiewicz–Simon convergence of the gradient flow
 
+The preceding sections can produce an equilibrium and, under stronger hypotheses, uniqueness. The next question is whether a full trajectory actually converges rather than merely possessing stationary cluster points. Analyticity and the Łojasiewicz–Simon inequality prevent an orbit from wandering indefinitely among nearby critical configurations.
+
 <div id="ass:PS" class="assumption">
 
 **Assumption 52** (Analyticity and Palais–Smale). $`C`$ is real-analytic and satisfies a Palais–Smale condition on energy sublevels: if $`C[\Psi_n]`$ is bounded and $`\|\nabla C(\Psi_n)\|_{L^2}\to 0`$, then $`(\Psi_n)`$ has a convergent subsequence in $`H^1`$. We also assume the orbit under consideration remains in a bounded energy sublevel on which the gradient flow is precompact in $`H^1`$ and the local Łojasiewicz–Simon inequality is valid near every cluster point.
@@ -713,6 +771,8 @@ If coherence invariance holds and $`\Psi(0)\in \mathrm{Ran}(\Pi_{\mathrm{coh}})`
 </div>
 
 # Singular perturbation and the limit $`\ensuremath{\varepsilon\downarrow 0}`$
+
+Base regularization was introduced to obtain compactness, not as a claim that the target model necessarily contains an $`\varepsilon\Delta_Y`$ term. This section checks when the artificial regularization can be removed without losing the coherent equilibrium. The extra condition on the incoherent sector is essential: it is what prevents positive fiber modes from surviving in the limit.
 
 Let $`\Psi_\varepsilon`$ solve the base-regularized steady equation
 ``` math
@@ -756,3 +816,11 @@ Under alternative (i), the right side has absolute value at most $`L\|q\|_{L^2}^
 # Related work and novelty
 
 Our existence and regularity statements are classical in spirit, but three aspects appear new or at least not treated in this precise combination: (i) spectral-bundle projections with uniform constants on fibered products with bounded geometry (Theorem <a href="#thm:PiBound" data-reference-type="ref" data-reference="thm:PiBound">50</a>), including explicit constants in a worked model; (ii) a condensing proof on noncompact bases via a compact-local/small-tail decomposition (Lemma <a href="#lem:KR" data-reference-type="ref" data-reference="lem:KR">31</a>) tied directly to confinement; (iii) a clean link between projected fixed points and true equilibria (Proposition <a href="#prop:projfix" data-reference-type="ref" data-reference="prop:projfix">19</a>) via coherence invariance.
+
+# Conclusion and boundary of the result
+
+The paper constructs a conditional chain from bundle geometry to a computable coherent equilibrium. A uniform fiber gap defines the harmonic projector; bounded geometry controls that projector over the base; dissipative flow and coherence invariance identify projected returns with true equilibria; variational, compact, or condensing arguments establish existence; additional monotonicity or spectral separation supplies uniqueness; and the coercive Galerkin theorem provides a quantitative approximation once the steady operator is fixed.
+
+The principal achievement is therefore not the unconditional existence of an MTT vacuum. It is a reusable checklist of analytic gates with explicit failure modes. Loss of the uniform gap invalidates global projector estimates. Lack of coherence invariance permits false projected returns. Absence of base compactness or confinement defeats the corresponding fixed-point route. Existence without monotonicity leaves multiple equilibria possible, and a discretization without operator provenance remains only a numerical model.
+
+The next Fixed Points papers may build on this analytic foundation to study projected equilibria, damping balances, curvature coupling, and physical interpretation. The separate foundational task is to intertwine the abstract coherent sector used here with the selected q79 vertical geometry and its shared-circle structure. Until that realization theorem is supplied, every physical application of the present results remains conditional on the displayed hypotheses.

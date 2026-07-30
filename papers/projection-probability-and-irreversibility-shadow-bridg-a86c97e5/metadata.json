@@ -1,73 +1,98 @@
 {
-  "abstract": "This corrected successor separates descent of upstairs dynamics, recovery from shadow data, and selection of probability measures. It proves the fiber-preservation criterion for deterministic descent, injectivity on a declared code as the criterion for exact recovery, and reversibility of a quotient when the fiber relation is preserved in both time directions. It also proves that arbitrary finite probability vectors can be represented by basin volumes, so basin representation alone derives neither Born, Hawking nor cosmological weights. Measurement instruments and islands are updates or restricted recovery; a common MTT source remains conditional on one selected upper measure and three explicit pushforwards.",
+  "abstract": "We separate three mathematical questions: whether upstairs dynamics descends to a deterministic shadow map, whether an upstairs state can be recovered from shadow data, and whether probability laws in measurement, black-hole radiation and cosmology have one selected common source. The exact criteria are fiber preservation for descent and injectivity on a declared code for recovery. Noninjective projection alone does not imply an arrow of time; a quotient is reversible when its fiber relation is invariant in both time directions. In current MTT, a canonical q79 binary one-anchor recorder does emit a stopped operational output measure from a selected normal state on its commuting Fock output algebra, and second-moment capture descent is exact on that restricted domain. This is not yet a theorem for arbitrary apparatus contexts or an objective selection of one ontic history. More generally, one upper measure and three explicit outcome maps yield three pushforwards, but arbitrary target weights can be represented by basin sizes. Basin representation alone therefore derives neither the Born rule, Hawking weights nor a cosmological measure. A common theorem still requires one selected upper source and independently derived domain maps.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
   "current_version": "v3",
-  "date": "July 2026",
+  "date": "July 2026 Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262040",
-    "created": "2026-01-15T20:33:15.293536+00:00",
+    "created": "2026-07-29T08:51:39.380083+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18262041",
+    "doi": "10.5281/zenodo.21666001",
     "files": [
       {
-        "checksum": "md5:8124f1c423bd309b6180f487f5ad2b1c",
-        "content_url": "https://zenodo.org/api/records/18262041/files/Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2%20(4).pdf/content",
-        "key": "Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2 (4).pdf",
-        "size": 337954
+        "checksum": "md5:22daa565ed2cab15150b348d1ce2cc07",
+        "content_url": "https://zenodo.org/api/records/21666001/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 330811
       }
     ],
-    "id": "18262041",
-    "match_kind": "title_or_file",
+    "id": "21666001",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18262041",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21666001",
     "resource_type": "publication",
-    "title": "Projection, Probability, and Irreversibility in Modal Triplet Theory",
-    "updated": "2026-01-15T20:33:15.635906+00:00",
-    "version": "v1.0"
+    "title": "Projection, Probability, and Irreversibility: A Descent, Recovery, and Measure-Separation Framework for MTT Shadow Bridges",
+    "updated": "2026-07-29T08:51:39.749289+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "619c935fea0a867af0a668eea6427a517e2d09b6fe02dbd885d143fb51b0ecfd",
+  "main_tex_sha256": "9da3c8bb8deef2d9b716c7b707f048f473a6eda8ce5efc30181c493200d1e14c",
   "paper_id": "projection-probability-and-irreversibility-shadow-bridg-a86c97e5",
-  "paper_md_sha256": "31b44396d705077141b40a26b033a6029d6a4c1f69e9484d5dbb21abcc161099",
+  "paper_md_sha256": "e1ee3be2f2675806e4423ad5731980452f20d4902c45e0c80368a6692ae01bb7",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/projection-probability-and-irreversibility-shadow-bridg-a86c97e5/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "604909b83c074285c5d98d1e692274d10f99eb732cca5277d8267a4fea0e8d2e",
+    "revision_evidence_sha256": "64bc63d366b5403fda2ad690081887182a35d493998d08cffabc4a8b3a9ea32d",
     "selected_revision": true,
     "superseded_source_path": "8 Measurement, Selection & Computation/_work/Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 18761,
+      "bytes": 23523,
       "path": "main.tex",
-      "sha256": "619c935fea0a867af0a668eea6427a517e2d09b6fe02dbd885d143fb51b0ecfd"
+      "sha256": "9da3c8bb8deef2d9b716c7b707f048f473a6eda8ce5efc30181c493200d1e14c"
     },
     {
-      "bytes": 2661,
+      "bytes": 4779,
       "path": "REVISION_AUDIT.md",
-      "sha256": "604909b83c074285c5d98d1e692274d10f99eb732cca5277d8267a4fea0e8d2e"
+      "sha256": "64bc63d366b5403fda2ad690081887182a35d493998d08cffabc4a8b3a9ea32d"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "8 Measurement, Selection & Computation/_work/Projection__Probability__and_Irreversibility__Shadow_Bridges_Between_Measurement__Black_Holes__and_Cosmology_in_Modal_Triplet_Theory_v2"
   },
-  "source_tree_sha256": "ce81e129f694be3634bab25f5ace4347ddafe1b101168b4b373deaa45fb22137",
+  "source_tree_sha256": "c3f34becac1b696d2e6f08e0a89c56fc7d0926e0604fa24d77198f1dcadb0efc",
   "title": "Projection, Probability, and Irreversibility: A Descent, Recovery, and Measure-Separation Framework for MTT Shadow Bridges",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262040",
+      "created": "2026-07-29T08:51:39.380083+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21666001",
+      "files": [
+        {
+          "checksum": "md5:22daa565ed2cab15150b348d1ce2cc07",
+          "content_url": "https://zenodo.org/api/records/21666001/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 330811
+        }
+      ],
+      "id": "21666001",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21666001",
+      "resource_type": "publication",
+      "title": "Projection, Probability, and Irreversibility: A Descent, Recovery, and Measure-Separation Framework for MTT Shadow Bridges",
+      "updated": "2026-07-29T08:51:39.749289+00:00",
+      "version": "v3"
+    },
     {
       "concept_doi": "10.5281/zenodo.18262040",
       "created": "2026-01-15T20:33:15.293536+00:00",

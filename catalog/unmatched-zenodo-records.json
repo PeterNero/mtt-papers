@@ -1,31 +1,4 @@
 {
-  "records": [
-    {
-      "best_candidate": "the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34",
-      "best_score": 0.677966,
-      "concept_doi": "10.5281/zenodo.18380139",
-      "created": "2026-01-26T19:28:03.975571+00:00",
-      "creators": [
-        "Nero, Peter"
-      ],
-      "doi": "10.5281/zenodo.18380140",
-      "files": [
-        {
-          "checksum": "md5:38af4aa6afdbe6c7baabb1c2b22699bd",
-          "content_url": "https://zenodo.org/api/records/18380140/files/The_Modal_Triplet_Theory_Program_D2__Matter__Antimatter_Asymmetry_as_Discrete_Orientation_Selection%20(2).pdf/content",
-          "key": "The_Modal_Triplet_Theory_Program_D2__Matter__Antimatter_Asymmetry_as_Discrete_Orientation_Selection (2).pdf",
-          "size": 205664
-        }
-      ],
-      "id": "18380140",
-      "publication_date": "2026-01-26",
-      "record_url": "https://zenodo.org/records/18380140",
-      "resource_type": "publication",
-      "second_score": 0.609195,
-      "title": "The Modal Triplet Theory Program D2: Matter--Antimatter Asymmetry as Discrete Orientation Selection",
-      "updated": "2026-01-26T19:28:05.009910+00:00",
-      "version": "v1.0"
-    }
-  ],
+  "records": [],
   "schema": "mtt.unmatched-zenodo-records.v1"
 }

@@ -1,5 +1,6 @@
 ---
 current_version: v6
+date: 2026
 generated_from_main_tex_sha256: 847d31b83a43f221acd49e9a469b25d6d0c544d7e0e7b437956fac21d779e8bc
 paper_id: the-universe-has-a-bad-memory
 release_state: not_matched_to_zenodo

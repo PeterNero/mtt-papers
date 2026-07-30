@@ -11,7 +11,7 @@
 \title{Topological Consistency Conditions in Modal Triplet Theory:\\
 Internal Indices, Charge Lattices, and Holonomy}
 \author{Peter Nero}
-\date{July 2026}
+\date{July 2026\\Version 2}
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
@@ -34,8 +34,8 @@ Internal Indices, Charge Lattices, and Holonomy}
 \maketitle
 
 \begin{abstract}
-This revised paper separates topology-only obstructions from representation
-checks and from physical source theorems. Chiral multiplicity is an index on
+Topology-only obstructions are separated from representation checks and from
+physical source theorems. Chiral multiplicity is an index on
 the compact internal six-manifold $X_6$, not on physical spacetime. For an
 $SU(r)$ bundle $E\to X_6$, the spin-Dirac index is
 $\ind D_E^+=\frac12\int_{X_6}c_3(E)$. The current q79 branch constructs smooth
@@ -43,9 +43,9 @@ non-pullback bundles with $\int c_3=\pm6$, and therefore index $\pm3$, but its
 holomorphic gerbe lift, balanced Hermitian--Yang--Mills connection, and
 differential Bianchi representative remain open. Abelian charges are integer
 characters: a field of integer charge $n$ is valued in $L^{\otimes n}$ and its
-physical convention is $Y=n/N_0$. The former ``exact hypercharge'' argument is
-only a reconstruction after observed charge differences are inserted. A newer
-finite-branch theorem is stronger: on the selected chiral carrier, anomaly
+physical convention is $Y=n/N_0$. A linear difference-charge construction is
+only a reconstruction after observed charge differences are inserted. A
+separate finite-branch theorem is stronger: on the selected chiral carrier, anomaly
 constraints select the primitive relative-charge vector
 $6Y=(1,-4,2,-3,6,0)$ and the faithful gauge group
 $(SU(3)\times SU(2)\times U(1))/\Z_6$. We prove the resulting anomaly checks,
@@ -60,27 +60,27 @@ precisely stated gates.
 
 \tableofcontents
 
-\section*{Revision note for version 2}
-\addcontentsline{toc}{section}{Revision note for version 2}
+\section*{Version 2 Revision Note}
+\addcontentsline{toc}{section}{Version 2 Revision Note}
 \begin{description}[style=nextline]
-\item[Supersedes.]
+\item[Supersedes]
 \emph{Topology--Only Constraints in Modal Triplet Theory (MTT): Indices,
 Anomalies, and Line--Bundle Triviality}, version~1.
-\item[Reason.]
+\item[Reason]
 Version~1 placed the family index on physical $Y_4$, treated inserted
 hypercharges as a prediction, confused ordinary line-bundle triviality with
 gauge-equivariant triviality and trivial holonomy, and promoted several
 conditional Standard Model checks to topology-only predictions.
-\item[Resolution.]
+\item[Resolution]
 Version~2 types the physical and internal bases separately, replaces fractional
 line-bundle powers by integer characters, corrects the Majorana and
 renormalization-group formulas, and incorporates the current q79 and finite
 Standard Model theorem packets at their declared scope.
-\item[Retained content.]
+\item[Retained result]
 Index theory, Chern-class obstructions, anomaly sums, tensor-product holonomy,
 and principal-symbol comparisons remain useful exact tools when their displayed
 hypotheses hold.
-\item[Remaining boundary.]
+\item[Remaining boundary]
 Topology does not by itself select the physical compactification, gauge
 connection, low-energy representation, coupling values, PQ current, operator
 coefficients, or Lorentzian action.
@@ -669,6 +669,58 @@ versus complex scalars.
 \item Replaced the claim that all Tier--1 predictions are fully established by
 the auditable status ledger above.
 \end{itemize}
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The q=79 branch, finite representation, and anomaly packets are used directly as topological or representation consistency examples. Gauge, flavor, precision, HYM, and Higgs rows are not topology-only theorems and are included only as lower-sector cross-checks. The strict source upgrade remains open.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A22/e6_qpsi_qcd_anomaly} (\emph{derived exact}).\par E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+\item \path{A11/q79_exact_audit} (\emph{derived exact}).\par Executable q=79 exact-branch audit.
+\item \path{A11/q79_exact_theorem} (\emph{derived exact}).\par CRT q=79 theorem on the selected exact branch.
+\item \path{A01/qutrit_weyl_27_matrix} (\emph{derived exact}).\par Sparse 27x27 qutrit-Weyl left-action realization.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/charged_yukawa_higgs_profile} (\emph{profile replay}).\par Versioned Yu, Yd, Ye and lambda\_H profile packet.
+\item \path{A14/ckm_prediction_profile} (\emph{numeric certified}).\par Three selected CKM profile rows and uncertainty comparison.
+\item \path{A01/current_global_lock} (\emph{profile replay}).\par Current non-looping global status and source-certificate map.
+\item \path{A01/direct_k_higgs_row} (\emph{derived exact}).\par Promoted direct K\_threshold.Omega\_H.lambda row.
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A40/neutral_two_primitive_profile} (\emph{profile replay}).\par Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+\item \path{A02/precision_15_source_transport} (\emph{profile replay}).\par Fifteen measured source coordinates, Jacobian and covariance transport.
+\item \path{A02/precision_8x8_workspace} (\emph{profile replay}).\par Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+\item \path{A01/strict_pew_row} (\emph{derived exact}).\par Promoted P\_EW source row at the declared one-shared-primitive standard.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \begin{thebibliography}{99}
 

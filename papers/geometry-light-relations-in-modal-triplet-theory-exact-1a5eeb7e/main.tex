@@ -15,7 +15,7 @@
 % --- Metadata ---
 \title{Geometry--Light Relations in Modal Triplet Theory:\\Exact Identities, Conditional Bounds, and Principal Symbols}
 \author{Peter Nero}
-\date{July 2026}
+\date{July 2026\\Version 3}
 
 \begin{document}
 \maketitle
@@ -35,20 +35,20 @@ statements provide safe interfaces for later numerical tiers without
 overstating their physical content.
 \end{abstract}
 
-\section*{Revision note for this edition}
-\addcontentsline{toc}{section}{Revision note for this edition}
+\section*{Version 3 Revision Note}
+\addcontentsline{toc}{section}{Version 3 Revision Note}
 \begin{description}
-\item[Supersedes.] \emph{Geometry--Light Relations in Modal Triplet Theory},
+\item[Supersedes] \emph{Geometry--Light Relations in Modal Triplet Theory},
 version~2.
-\item[Reason.] Algebraic identities, symmetry assumptions, topology, spectral
+\item[Reason] Algebraic identities, symmetry assumptions, topology, spectral
 gaps, propagation speeds, and phenomenological bounds were not consistently
 separated by logical strength.
-\item[Resolution.] Version~3 types each statement as exact, conditional, or
+\item[Resolution] Version~3 types each statement as exact, conditional, or
 phenomenological, moves causal speed to principal symbols, and separates
 internal gaps from external cutoffs.
-\item[Retained result.] Modal-democracy, holonomy, curvature--mass, and PPN
+\item[Retained result] Modal-democracy, holonomy, curvature--mass, and PPN
 relations remain valid in precisely the displayed conditional forms.
-\item[Remaining boundary.] Physical light propagation and quantitative bounds
+\item[Remaining boundary] Physical light propagation and quantitative bounds
 require a selected hyperbolic action, response map, and normalization.
 \end{description}
 
@@ -143,12 +143,19 @@ topology, modal counting, or an internal spectral gap.
 \section{Representation-only RG signs}
 
 Conditional on importing the Standard Model field content and perturbative
-quantization, the one-loop coefficient
+quantization, the one-loop coefficient, written as sums over Dirac fermions
+and real scalars, is
 \[
-b_0=\frac{11}{3}C_A-\frac{4}{3}\sum_fT(R_f)
--\frac{1}{6}\sum_sT(R_s)
+b_0=\frac{11}{3}C_A-\frac{4}{3}\sum_{\rm Dirac}T(R_f)
+-\frac{1}{6}\sum_{\rm real}T(R_s).
 \]
-fixes the qualitative signs of the gauge beta functions. This is a standard
+Equivalently, without pairing fields,
+\[
+b_0=\frac{11}{3}C_A-\frac{2}{3}\sum_{\rm Weyl}T(R_f)
+-\frac{1}{3}\sum_{\rm complex}T(R_s).
+\]
+These conventions give the same coefficient and fix the qualitative signs of
+the gauge beta functions. This is a standard
 QFT consequence of representation content, not a new geometric prediction of
 MTT. Quantitative running uses the selected multi-loop transport rather than
 this sign-level approximation.
@@ -201,6 +208,23 @@ a dimensionful bridge, an action-level decoupling theorem, and an error bound.
 The common SMDR point $Q=M_t$ is likewise a matching convention rather than a
 physical cutoff.
 
+\section{Discussion and proper use}
+
+These relations are best used as interface tests. A selected gauge
+construction may be checked against Equation~\eqref{eq:weak-general}, but
+agreement does not select modal democracy. A selected bundle connection may
+be checked against the holonomy product, but topological triviality does not
+supply the required parallel trivialization. A selected gravitational action
+may be checked for a common photon/graviton cone, but internal rank or spectral
+data do not supply its principal symbol.
+
+The same distinction controls numerical interpretation. Substituting a
+measured scale or fitted response coefficient demonstrates compatibility. It
+becomes a prediction only when the scale, coefficient, and branch were
+selected without the target observable. Geometry-light formulas are therefore
+valuable consistency checks and error-detection tools even when they are not
+source theorems.
+
 \section{Conclusion}
 
 The geometry-light tier contains useful exact relations, but their scope is
@@ -210,6 +234,56 @@ trivialization; wave-speed equality is a principal-symbol question; RG signs
 are imported Standard Model QFT; and PPN control needs a quantitative response
 estimate. These statements can constrain later constructions without being
 misreported as source-derived numerical predictions.
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The paper's exact geometry-light identities are proved locally. The HYM, precision, finite-matrix, and electroweak rows instantiate selected computational examples; the remaining flavor and global-closure rows are cross-checks and do not strengthen the local theorem tier. The zero-knob upgrade remains open.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A02/precision_15_source_transport} (\emph{profile replay}).\par Fifteen measured source coordinates, Jacobian and covariance transport.
+\item \path{A02/precision_8x8_workspace} (\emph{profile replay}).\par Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+\item \path{A01/qutrit_weyl_27_matrix} (\emph{derived exact}).\par Sparse 27x27 qutrit-Weyl left-action realization.
+\item \path{A01/strict_pew_row} (\emph{derived exact}).\par Promoted P\_EW source row at the declared one-shared-primitive standard.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/charged_yukawa_higgs_profile} (\emph{profile replay}).\par Versioned Yu, Yd, Ye and lambda\_H profile packet.
+\item \path{A14/ckm_prediction_profile} (\emph{numeric certified}).\par Three selected CKM profile rows and uncertainty comparison.
+\item \path{A01/current_global_lock} (\emph{profile replay}).\par Current non-looping global status and source-certificate map.
+\item \path{A01/direct_k_higgs_row} (\emph{derived exact}).\par Promoted direct K\_threshold.Omega\_H.lambda row.
+\item \path{A22/e6_qpsi_qcd_anomaly} (\emph{derived exact}).\par E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\item \path{A40/neutral_two_primitive_profile} (\emph{profile replay}).\par Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \begin{thebibliography}{99}
 
@@ -293,7 +367,7 @@ Zenodo preprint, January 2026.
 
 \bibitem{MTT-Bell-Beables}
 P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
+\emph{Modal Fixed Points, Bell's Beables, and the Limits of Factorization},
 Zenodo preprint, 2025.
 \url{https://doi.org/10.5281/zenodo.17076300}
 

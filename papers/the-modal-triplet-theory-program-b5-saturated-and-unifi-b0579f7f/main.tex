@@ -21,7 +21,7 @@
 Relative Saturation, Conditional Extended Carriers,\\
 and String-Like Realizations}
 \author{Peter Nero}
-\date{July 2026}
+\date{July 2026\\Version 3}
 
 \begin{document}
 
@@ -65,6 +65,37 @@ a numerical critical dimension, or the physical selection of a saturated
 universe.
 \end{abstract}
 
+\section*{Revision note for version 3}
+\addcontentsline{toc}{section}{Revision note for version 3}
+
+\begin{description}[leftmargin=2.5cm,style=nextline]
+\item[Supersedes.]
+Version~2 of Program B5.
+
+\item[Reason.]
+Version~2 established the correct relative saturation theorem and
+countermodels, but the incidence graph, local-rigidity gate, and separation
+between saturation and physical selection needed a more explanatory
+standalone presentation.
+
+\item[Resolution.]
+Version~3 adds the wiring-diagram interpretation, a guided dependency map,
+and explicit examples of what connected incidence does and does not prove.
+It keeps the q79 result at its declared arithmetic tier, preserves theorem
+ownership, and separates publication description from revision history and
+computational provenance.
+
+\item[Retained content.]
+The relative saturation contract, derivative-incidence criterion,
+countermodels, and conditional status of extended carriers, dimensions,
+anomalies, and dualities are unchanged.
+
+\item[Open boundary.]
+An exhaustive realization category, physical string background, completed
+q79 worldsheet, nonperturbative completion, and physical selection theorem
+remain open.
+\end{description}
+
 \section*{Revision note for version 2}
 
 \begin{description}[leftmargin=2.5cm,style=nextline]
@@ -100,6 +131,59 @@ selecting one saturated realization is established here.
 
 \tableofcontents
 \newpage
+
+\section{How to Read Program B5}
+
+Program B5 asks whether a successful collection of constraints is genuinely
+one coupled construction or merely several independent theories written next
+to one another.  The paper calls the first situation \emph{saturated}, but
+only relative to a declared contract.  This qualification is essential:
+changing which variables are primitive, which constraints count, or which
+factorizations are allowed can change the answer.
+
+\subsection{The central picture: a wiring diagram}
+
+At a solution, linearize every declared constraint.  Place the variable blocks
+on one side of a bipartite graph and the constraint blocks on the other.  Draw
+an edge whenever changing a variable block changes a constraint block to
+first order.  If this graph falls into two pieces, the linearized problem also
+falls into two independent subsystems.  If it is connected, every variable
+block is tied into one first-order network.
+
+This wiring picture gives the paper's exact finite test.  It does not say that
+the full nonlinear theory cannot be separated by a clever change of
+variables, nor that the solution is globally unique.  Those stronger claims
+need their own certificates.  The injective-derivative condition supplies one
+additional fact: the same solution is locally isolated.
+
+\subsection{Five questions kept separate}
+
+The argument proceeds through five questions.
+\begin{enumerate}
+\item Is the candidate complete with respect to the displayed constraint
+inventory?
+\item Is the displayed system indecomposable with respect to the allowed
+factorizations?
+\item Does a separate carrier requirement force positive dimension or a
+worldsheet-like sweep?
+\item Do explicit anomaly, criticality, and duality data make that sweep a
+string-like physical realization?
+\item Is one realization selected by a source law and empirically adequate?
+\end{enumerate}
+The derivative-incidence theorem answers the second question locally.  The
+loop theorem answers a narrow version of the third.  The anomaly, duality, and
+string packages state what must be added for the fourth.  Nothing in the word
+``saturation'' answers the fifth.
+
+\subsection{Suggested reading routes}
+
+Readers interested in the exact mathematical contribution can move from the
+contract definitions to the derivative-incidence theorem and its finite
+example.  Readers interested in the string interpretation should then read
+the countermodels before the worldsheet, anomaly, and duality sections; those
+countermodels prevent conditional realization mechanisms from being mistaken
+for consequences of saturation.  The final theorem ledger and reusable audit
+collect the result and every remaining boundary.
 
 \section{Scope and Dependencies}
 
@@ -368,6 +452,13 @@ worldsheet, critical dimension, anomaly polynomial, or duality.  It proves
 that even the conjunction of completeness, rigidity, and first-order
 indecomposability does not imply any of those additional structures.
 
+The matrix also makes the two tests visibly different.  Its nonzero pattern
+connects all six graph vertices, which certifies coupling.  Its determinant
+certifies local isolation.  A connected singular matrix could pass the first
+test and fail the second, while an invertible block-diagonal matrix could be
+locally isolated yet split into independent sectors.  Saturation and rigidity
+therefore measure different properties.
+
 \section{What Saturation Does Not Force}
 
 \subsection{Pointlike data remain possible}
@@ -612,6 +703,13 @@ dualities.  The logical direction is
 after the map and indecomposability test are proved.  The reverse implication
 is invalid.
 
+This direction preserves the useful connection to string theory without
+turning it into a definition.  Established string constructions provide rich
+packages that may satisfy an MTT contract.  The MTT contract can then compare
+which rows are shared, which are stronger, and which remain open.  It cannot
+replace the worldsheet action, quantum measure, anomaly calculation, or
+duality map by declaring the finished package saturated.
+
 \section{Existence Is Not Physical Selection}
 
 \subsection{Four different claims}
@@ -824,5 +922,10 @@ J.~Polchinski,
 Cambridge University Press, 1998.
 
 \end{thebibliography}
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \end{document}

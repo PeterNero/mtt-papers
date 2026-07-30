@@ -5,7 +5,7 @@
 \title{Admissibility Precosheaves and Conditional AQFT Nets\\
 in Modal Triplet Theory}
 \author{Peter Nero}
-\date{July 2026}
+\date{July 2026\\Version 2}
 
 \hypersetup{
   pdftitle={Admissibility Precosheaves and Conditional AQFT Nets in Modal Triplet Theory},
@@ -16,9 +16,7 @@ in Modal Triplet Theory}
 \maketitle
 
 \begin{abstract}
-This paper replaces the former claim that algebraic quantum field theory
-(AQFT) follows from admissible charts alone.  Two structures must be kept
-separate.  An admissibility-indexed precosheaf is a pregeometric covariant
+An admissibility-indexed precosheaf is a pregeometric covariant
 functor only after its algebras and extension morphisms are supplied; overlap
 or failure of joint representability does not create commutators or imply
 locality.  A physical Haag--Kastler net instead requires a selected Lorentzian
@@ -27,32 +25,34 @@ reduction.  For a decomposable orthogonal projector $P$, we prove that
 compression of the $P$-compatible upper subalgebras preserves isotony and
 spacelike commutation.  This is the rigorous MTT-to-AQFT bridge currently
 available.  We also show why absence of a global admissible chart does not
-forbid an abstract quasilocal algebra or categorical colimit.  It may obstruct
-a single chart-induced physical realization, but states, faithful
-representations, horizon behavior, and irreversibility require separate
-theorems.  The result is a conditional locality-descent theorem and a precise
-ledger of the data still required for a full AQFT reconstruction.
+forbid an abstract quasilocal algebra or categorical colimit.  The current
+q79 source now also supplies a selected free twisted-Dirac construction whose
+even CAR observable net has locality, covariance, the time-slice property,
+and nonempty positive Hadamard state space through standard AQFT results.
+The chart-to-region natural equivalence and the nonperturbative interacting
+C-star completion remain open.
 \end{abstract}
 
-\section*{Revision note for this edition}
-\addcontentsline{toc}{section}{Revision note for this edition}
+\section*{Version 2 Revision Note}
+\addcontentsline{toc}{section}{Version 2 Revision Note}
 \begin{description}
-\item[Supersedes.] Version~1, \emph{From Modal Triplet Theory to Algebraic
+\item[Supersedes] Version~1, \emph{From Modal Triplet Theory to Algebraic
 Quantum Field Theory: Local Nets from Admissible Charts and Coherent Basin
 Persistence}.
-\item[Reason.] Version~1 inferred commutation from non-joint
+\item[Reason] Version~1 inferred commutation from non-joint
 representability, assumed extension of every smaller-chart observable, and
 identified absence of a global chart with absence of an abstract global
 algebra.
-\item[Resolution.] Version~2 distinguishes the pregeometric chart functor from
+\item[Resolution] Version~2 distinguishes the pregeometric chart functor from
 the physical Haag--Kastler net and bases physical locality on an upper local
 net plus coherent locality descent.
-\item[Retained result.] Admissible charts can index a useful partial algebraic
+\item[Retained result] Admissible charts can index a useful partial algebraic
 description when their algebra objects and transition morphisms are explicitly
 given.
-\item[Open boundary.] A selected upper QFT net, state space, covariance,
-spectrum/positivity, time-slice property, nonperturbative continuum limit, and
-the chart-to-region intertwiner remain independent obligations.
+\item[Remaining boundary] The selected free CAR sector is now available, but
+the chart-to-region natural equivalence, interacting physical C-star
+completion, selected interacting state, and nonperturbative continuum limit
+remain independent obligations.
 \end{description}
 
 \tableofcontents
@@ -386,9 +386,12 @@ discrete $A_{\mathrm{QG}}$ realization declaration and one binary
 $A_{\mathrm{causal}}$ boundary mark.  This does not itself construct a QFT
 net.
 
-\item[Upper local theory.] FP~VI identifies a local hyperbolic parent as the
-valid causal completion route but does not select its field content, gauge
-algebra, couplings, state, or operator net.
+\item[Selected free local theory.] A globally hyperbolic framed q79
+representative and selected twisted massless Dirac source now compose with
+standard CAR/AQFT machinery to give an even observable net with locality,
+covariance, the time-slice property, and a nonempty positive Hadamard state
+space \cite{SelectedQFT2026}.  The CAR, microlocal, and time-slice theorems
+are imported standard results whose hypotheses the selected source satisfies.
 
 \item[Locality descent.] Theorem~\ref{thm:descent} is exact under its stated
 upper-net and projector hypotheses.  This is the currently rigorous
@@ -404,10 +407,10 @@ Infinite volume, the full chiral Standard Model, Lorentzian reconstruction,
 and a complete nonperturbative BRST Hilbert space remain open
 \cite{QFTAudit2026}.
 
-\item[Full AQFT equivalence.] Open.  The corpus has not yet supplied one
-selected upper local net together with the naturality interface
-\eqref{eq:naturality}, physical state space, covariance, spectrum condition,
-time-slice theorem, continuum completion, and target-equivalence certificate.
+\item[Full interacting AQFT equivalence.] Open.  The free CAR net does not
+supply the naturality interface \eqref{eq:naturality}, a selected interacting
+state, a fixed-coupling physical interacting C-star algebra, the
+nonperturbative continuum completion, or a target-equivalence certificate.
 \end{description}
 
 \section{Scoped reconstruction theorem}
@@ -461,19 +464,52 @@ the current conditional/finite-domain frontier.
 
 \section{Conclusion}
 
-MTT currently has a rigorous but conditional AQFT bridge.  A local upper
-theory can be compressed to a coherent physical sector without losing isotony
-or spacelike commutation, provided the reduction is fiberwise and the
-observables preserve that sector.  This is meaningful progress: it shows that
-coherent reduction need not destroy an already established local algebraic
-structure.
+MTT currently has both a rigorous conditional locality-descent bridge and one
+selected free realization.  A local upper theory can be compressed to a
+coherent physical sector without losing isotony or spacelike commutation,
+provided the reduction is fiberwise and the observables preserve that sector.
+On the selected q79 twisted-Dirac source, standard CAR/AQFT machinery supplies
+the even free observable net, covariance, time slice, and positive Hadamard
+states.
 
 The result does not make locality emerge from non-comparability.  Nor does it
-construct the upper QFT, the physical state, or the chart-to-region map.
-Separating those obligations gives the program a precise next target: select
-one local Lorentzian upper theory from MTT data and prove the naturality and
-equivalence conditions linking its compressed net to the admissibility
-precosheaf.
+construct the chart-to-region map or the interacting physical completion.
+The precise next targets are the naturality and equivalence conditions linking
+the free physical net to the admissibility precosheaf, followed by a selected
+interacting state and nonperturbative interacting C-star completion.
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The precosheaf and conditional-net results are proved from supplied algebraic data, not from the embedded Standard Model profile audit. That audit is a lower-sector cross-check only. The open strict-upgrade ledger records an unresolved source problem and supplies no AQFT reconstruction theorem.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \begin{thebibliography}{9}
 
@@ -514,6 +550,12 @@ P. Nero,
 P. Nero,
 \emph{MTT Selected Quantization and Nonperturbative-QFT Strict-Upgrade Audit},
 technical audit version 1, 2026.
+
+\bibitem{SelectedQFT2026}
+P. Nero,
+\emph{Modal Triplet Theory and Quantum Field Theory on Curved Spacetime: A
+Selected Free CAR Net and the Interacting Reconstruction Boundary},
+version 4, 2026.
 
 \end{thebibliography}
 

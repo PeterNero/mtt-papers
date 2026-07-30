@@ -1,65 +1,93 @@
 {
-  "abstract": "",
+  "abstract": "A projection-first viewpoint asks which physical structures belong to an effective description and which belong to a richer source from which that description descends. This paper develops the viewpoint as a conceptual tool, not an inevitability theorem. A many-to-one map can identify microscopic states, but it does not by itself define lower dynamics, probabilities, entropy, locality, an arrow of time, quantum theory, or gravity. Those conclusions require additional structures: an intertwining dynamics, a state or measure, observable algebras, stability estimates, and sector-specific source maps. Modal Triplet Theory provides exact examples of finite projectors, a shared phase line, fixed-point constructions, and selected free field and finite Standard-Model carriers at declared tiers. Its broader physical reconstructions remain conditional where the required maps are incomplete. The projection-first framework is therefore most useful as a discipline for typing levels of description and exposing missing bridges.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "July 2026 Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18255659",
-    "created": "2026-01-15T10:53:25.756210+00:00",
+    "created": "2026-07-29T08:49:45.064663+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18255660",
+    "doi": "10.5281/zenodo.21665933",
     "files": [
       {
-        "checksum": "md5:461bb5c984239d793ab93bc09b10f7cc",
-        "content_url": "https://zenodo.org/api/records/18255660/files/A_Projection_First_Reframing_of_Physics%20(3).pdf/content",
-        "key": "A_Projection_First_Reframing_of_Physics (3).pdf",
-        "size": 214537
+        "checksum": "md5:b1d7bc8d67e5e9f78043159de1be1515",
+        "content_url": "https://zenodo.org/api/records/21665933/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 225436
       }
     ],
-    "id": "18255660",
-    "match_kind": "title_or_file",
+    "id": "21665933",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18255660",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21665933",
     "resource_type": "publication",
-    "title": "A Projection-First Reframing of Physics",
-    "updated": "2026-01-15T10:53:26.247345+00:00",
-    "version": "v1.0"
+    "title": "A Projection-First Reframing of Physics: Descent, Effective Description, and the Limits of the Analogy",
+    "updated": "2026-07-29T08:49:45.424616+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "344dd69e3b6a6582398c13822364ff923543aa5884bfd529a65df4a76a867b2f",
+  "main_tex_sha256": "2226db74b148e01d3928bb1eab6dc3b834b073f6abdc04e4aad45615aa888277",
   "paper_id": "a-projection-first-reframing-of-physics",
-  "paper_md_sha256": "f4bf8d7f3591e9c31d18a4b8bb2c113b0bfc41143c0a14d49710b46a67cdcbeb",
+  "paper_md_sha256": "6af6823335cd1cca9238914329c58b3fc1209e2386ca1d2d44386ccb434e60c3",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "REVISION_AUDIT.md",
+    "revision_evidence_sha256": "52ffdf12fabf8a6b94b4bfe1a5308173d3116268e67e7e96c9edaea3a6d4286f",
+    "selected_revision": true,
+    "superseded_source_path": "19 A project-first reframing/_work/A_Projection_First_Reframing_of_Physics"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 48288,
+      "bytes": 12091,
       "path": "main.tex",
-      "sha256": "344dd69e3b6a6582398c13822364ff923543aa5884bfd529a65df4a76a867b2f"
+      "sha256": "2226db74b148e01d3928bb1eab6dc3b834b073f6abdc04e4aad45615aa888277"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "19 A project-first reframing/_work/A_Projection_First_Reframing_of_Physics"
   },
-  "source_tree_sha256": "ac3b3418d823d973fda70aee7eef3460b1e53371bc2b2e41c17055ddc1561bdd",
-  "title": "A Projection-First Reframing of Physics",
+  "source_tree_sha256": "b417cc817bb9e8c70b0dedf5eca67d8410abba8caf757a20240ab252bd04d9a4",
+  "title": "A Projection-First Reframing of Physics: Descent, Effective Description, and the Limits of the Analogy",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255659",
+      "created": "2026-07-29T08:49:45.064663+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21665933",
+      "files": [
+        {
+          "checksum": "md5:b1d7bc8d67e5e9f78043159de1be1515",
+          "content_url": "https://zenodo.org/api/records/21665933/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 225436
+        }
+      ],
+      "id": "21665933",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21665933",
+      "resource_type": "publication",
+      "title": "A Projection-First Reframing of Physics: Descent, Effective Description, and the Limits of the Analogy",
+      "updated": "2026-07-29T08:49:45.424616+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18255659",
       "created": "2026-01-15T10:53:25.756210+00:00",

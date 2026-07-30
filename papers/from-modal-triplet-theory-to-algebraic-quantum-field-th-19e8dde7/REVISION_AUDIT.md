@@ -141,7 +141,12 @@ condition remains necessary.
 - A03: the selected perturbative SM observable functor imports standard
   BRST/Faddeev--Popov quantization rather than deriving it from MTT.
 
-No open QFT result is promoted by this revision.
+The later selected-QFT result is incorporated at its declared tier: a
+globally hyperbolic framed q79 representative and twisted massless Dirac
+source compose with standard CAR/AQFT results to give a closed even free
+observable net with locality, covariance, time slice, and nonempty positive
+Hadamard state space. This does not close the chart-to-region naturality map
+or the interacting physical C-star completion.
 
 ## External standard checked
 
@@ -170,5 +175,5 @@ compression.
 - A10 requirements: mapped one by one above.
 - FP VI and Projection v2 interfaces: checked at their selected scopes.
 - Current A03/A18 QFT status: retained as conditional/partial.
-- TeX compilation, canonical migration and repository verification: recorded
-  by the repository checks after regeneration.
+- The current source compiles successfully with two `pdflatex` passes.
+- The complete PDF is rendered and visually inspected before release freeze.

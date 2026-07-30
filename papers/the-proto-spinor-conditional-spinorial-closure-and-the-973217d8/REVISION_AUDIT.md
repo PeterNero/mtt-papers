@@ -1,4 +1,15 @@
-# Proto-Spinor v6 Shared-Line and SpinC-Return Revision Audit
+# Proto-Spinor v7 Release Audit
+
+## v7 publication delta
+
+- **Supersedes:** v6.
+- **Reason:** loop memory, double covering, finite q79 return, and physical
+  fermions needed to be separated into four readable layers.
+- **Resolution:** add the rotation-lift picture and explicit finite-return
+  calculation without changing theorem status.
+- **Retained:** every v6 shared-line and SpinC-return result.
+- **Remaining:** global Spin, nonflat FM/HYM, continuum intertwining, and
+  Lorentzian particle dynamics.
 
 **Date:** 2026-07-22  
 **Selected source:** `The_Proto_Spinor__Conditional_Spinorial_Closure_and_q79_Interface_v6/main.tex`  
@@ -43,3 +54,17 @@ open and are not inferred from the finite result.
 - The physical continuum HYM connection and Hessian still require a separate
   same-source comparison.
 
+## Expository revision, 2026-07-28
+
+The v6 theorem set and nonpromotion guards are unchanged. The paper now opens
+with a four-layer reading guide separating the local comparison field,
+conditional spin lift, selected q79 finite carrier, and downstream physical
+fermion theory. A continuous `2 pi`/`4 pi` frame-lift explanation makes the
+double-cover theorem concrete without importing a Dirac action or particle
+ontology.
+
+The exact finite return is explained directly from
+`J_FM^2 = -I` and the conjugate `+i/-i` roots. Further discussion clarifies
+that the rank `1+2+3` entries are algebraic carrier roles rather than particle
+assignments, and that SpinC phase compensation does not close the independent
+global Spin obstruction. No open continuum or Lorentzian gate was promoted.

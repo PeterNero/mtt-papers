@@ -1,12 +1,12 @@
 {
-  "canonical_papers": 139,
-  "current_sources_newer_than_release": 50,
+  "canonical_papers": 140,
+  "current_sources_newer_than_release": 0,
   "pandoc_warning_papers": 12,
-  "papers_with_zenodo_release": 119,
-  "papers_without_zenodo_match": 20,
+  "papers_with_zenodo_release": 125,
+  "papers_without_zenodo_match": 15,
   "schema": "mtt.paper-migration-report.v1",
-  "superseded_projects_excluded": 53,
-  "zenodo_records": 120,
-  "zenodo_records_matched": 119,
-  "zenodo_records_unmatched": 1
+  "superseded_projects_excluded": 54,
+  "zenodo_records": 221,
+  "zenodo_records_matched": 221,
+  "zenodo_records_unmatched": 0
 }

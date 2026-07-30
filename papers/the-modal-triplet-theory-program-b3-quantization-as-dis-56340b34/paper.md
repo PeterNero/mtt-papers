@@ -9,16 +9,16 @@ author:
 - Peter Nero
 current_version: v2
 date: July 2026
-generated_from_main_tex_sha256: f719c0c41119e9f88685a6b19116de36b529e5e72a1fad131aba2c4dd270eea5
+generated_from_main_tex_sha256: 5e85579b4047b9d2d838573f039e5aaf72672d0a801675e8fc3bf84a8bbf949f
 paper_id: the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  The Modal Triplet Theory Program B3:  
+  The Modal Triplet Theory Program B3:
   Discrete Survivor Filters and Conditional Quantum Reconstruction
-zenodo_doi: 10.5281/zenodo.18355059
-zenodo_record_id: 18355059
-zenodo_url: "https://zenodo.org/records/18355059"
+zenodo_doi: 10.5281/zenodo.21652653
+zenodo_record_id: 21652653
+zenodo_url: "https://zenodo.org/records/21652653"
 ---
 
 # Revision note for version 2
@@ -36,6 +36,44 @@ Nil-type termination can motivate a survivor filter; compact or topological cons
 No theorem here selects a complex C\*-algebra, Hilbert representation, quantum state, CCR/CAR representation, Hamiltonian, measurement instrument, Born weights, or physical outcome from the nil profile alone.
 
 </div>
+
+# How to Read Program B3
+
+The word “quantization” is used for several mathematically different operations. A continuous model may acquire discrete labels because a constraint has isolated solutions, because a quotient has collapsed an orbit, because an operator has discrete spectrum, or because a quantum observable is represented on a Hilbert space. These mechanisms can coexist, but none of them is interchangeable with the others. The purpose of this paper is to separate them before asking whether MTT supplies a quantum theory.
+
+## The four layers of the argument
+
+The discussion is organized as a sequence of four gates.
+
+1.  **Termination.** A declared chart or decoder ceases to extend. This is the nil-type statement. It concerns the description being used, not the cardinality of the underlying state space.
+
+2.  **Survival.** A constraint, controlled domain, and equivalence relation select the states that remain admissible. Transversality and compactness can then make the reduced survivor set finite.
+
+3.  **Spectrum.** A separately supplied operator can have discrete spectrum. Compact resolvent is one standard sufficient condition, but it already presupposes a Hilbert carrier and operator-domain data.
+
+4.  **Quantum reconstruction.** A complex observable algebra, a state, a representation, dynamics, and measurement effects are supplied from one source. Only at this layer do Hilbert-space amplitudes and Born probabilities become available.
+
+The main logical lesson is therefore
+``` math
+\text{nil termination}
+ \;\not\Rightarrow\;
+ \text{finite survivors}
+ \;\not\Rightarrow\;
+ \text{discrete spectrum}
+ \;\not\Rightarrow\;
+ \text{quantum mechanics}.
+```
+Each arrow can become valid only after the missing hypotheses displayed later in the paper are added.
+
+## Object picture: a chart can end while states continue
+
+Imagine describing a smooth road with a coordinate that becomes infinite at a particular marker. The coordinate description has failed there, but the road has not become a collection of isolated points. Definition <a href="#def:nil" data-reference-type="ref" data-reference="def:nil">1</a> formalizes exactly this relative kind of failure. To obtain isolated survivors one must add an actual selection rule, such as simultaneous constraints whose Jacobian has full rank.
+
+This distinction is especially important in MTT. The circle, lens, and nil profiles describe how a chosen representation behaves. A nil profile may tell us where a continuation is unavailable, while a lens profile may identify many representatives of one reduced state. Neither profile, without a declared source map, chooses an observable algebra or a probability measure.
+
+## What the reader should take from each theorem
+
+The regular-value results explain when geometric constraints isolate survivors. The classical countermodels show that isolation is not uniquely quantum. The compact-resolvent theorem explains a different route to discreteness through operator theory. The commutator no-go prevents a finite matrix model from being mistaken for an exact bosonic canonical system. Finally, the GNS, Born-evaluation, and Stone results show precisely what standard quantum structure follows once the corresponding algebraic data have been supplied. They are reconstruction results, not claims that nil termination generated those data.
 
 # Scope and Imported Data
 
@@ -219,6 +257,8 @@ Maps $`S^1\to S^1`$ are classified up to homotopy by an integer degree. The sect
 
 </div>
 
+Taken together, these examples explain why the survivor theorem should be read as a reusable geometric tool rather than as a definition of the quantum. The same theorem can organize classical equilibria, topological sectors, or candidate outcome labels. What those labels mean physically is decided only by the additional source and representation data attached to them.
+
 # Spectral Discreteness Is a Separate Theorem
 
 ## Compact resolvent
@@ -379,6 +419,8 @@ The cyclic representation is unique up to unitary equivalence  .*
 *Remark 17*. The theorem reconstructs a representation from the supplied pair $`(\mathfrak A,\omega)`$. It does not select either member of that pair from a survivor set.
 
 </div>
+
+In practical terms, GNS is a translator. It turns algebraic expectation data into vectors and operators on a Hilbert space. It does not manufacture the expectation functional, decide which algebra describes the experiment, or identify one survivor with one physical outcome. Those are precisely the same-source tasks retained in Definition <a href="#def:certificate" data-reference-type="ref" data-reference="def:certificate">20</a>.
 
 ## Conditional Born probabilities
 
@@ -566,3 +608,7 @@ O. Bratteli and D. W. Robinson, *Operator Algebras and Quantum Statistical Me
 M. H. Stone, “On one-parameter unitary groups in Hilbert space,” *Annals of Mathematics* 33 (1932), 643–648.
 
 </div>
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

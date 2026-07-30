@@ -1,69 +1,100 @@
 ---
 abstract: |
-  We give a corrected functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle $`M_{10}\to Y_4`$ with compact Riemannian fiber $`X_6`$; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and Banach, Schur–Feshbach, projector-stability, and basin-robustness statements are given with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat $`\mathbb Z_{64}`$ line pulls back coherently to the q79 SpinC determinant, the $`1+2+3`$ carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby–Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time.
+  We develop a functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle $`M_{10}\to Y_4`$ with compact Riemannian fiber $`X_6`$; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and the existence, Lyapunov-promotion, and Banach gates are stated in self-contained form but imported from Fixed Points I, their canonical theorem source. Schur–Feshbach, projector-stability, and basin-robustness statements are given here with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat $`\mathbb Z_{64}`$ line pulls back coherently to the q79 SpinC determinant, the $`1+2+3`$ carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby–Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time.
 author:
 - Peter Nero
-current_version: v8
-date: July 2026
-generated_from_main_tex_sha256: 67b2cd3bb94fe446e2dbde09e93350fd6cc7500fb3dacd6619da134197b450c9
+current_version: v9
+date: July 2026 Version 9
+generated_from_main_tex_sha256: 022af297246466a9fa22832d262d9057aa0a320bf76523b899e3c55c963c7ec6
 paper_id: modal-triplet-theory-foundations
 release_state: zenodo_released
-released_version: v6.0
+released_version: v9
 title: "Modal Triplet Theory: Foundations"
-zenodo_doi: 10.5281/zenodo.18268125
-zenodo_record_id: 18268125
-zenodo_url: "https://zenodo.org/records/18268125"
+zenodo_doi: 10.5281/zenodo.21655367
+zenodo_record_id: 21655367
+zenodo_url: "https://zenodo.org/records/21655367"
 ---
 
-*Part VI of VI in the Fixed Points series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*
+# Revision note for version 9
 
-# Revision note for this edition
+Supersedes.
+*Modal Triplet Theory: Foundations*, version 8.
 
-Supersedes.  
+Reason.
+Version 8 contains the current analytic and shared-line results, but several dependencies were still easiest to read as a catalogue of formal statements. The release record also needed to distinguish the paper’s descriptive abstract from its correction history.
+
+Resolution.
+Version 9 adds a reader map, plain-language explanations of the projector, damping, fixed-point, reduction, and geometry layers, and explicit ownership links to Fixed Points I and the Projection–Admissibility paper. It separates publication description from revision history and adds the managed reproducibility reference without changing a theorem tier.
+
+Retained result.
+Every theorem, hypothesis, and open physical gate reported in version 8 is retained at the same logical strength.
+
+Remaining boundary.
+The selected nonflat HYM endpoints, continuum intertwiner, physical action and Hilbert space, Lorentzian dynamics, and source-selected observables remain outside the Foundation theorem.
+
+# Revision note for version 8
+
+Supersedes.
 *Modal Triplet Theory: Foundations*, version 7.
 
-Reason.  
+Reason.
 Version 7 correctly typed the shared circle as line-bundle data, but it did not yet distinguish the curved Boothby–Wang Lens/Nil realizations from the later exact flat q79 differential-line theorem, nor did it record the resulting finite connection, holonomy, and Hessian identities.
 
-Resolution.  
-Version 8 retains the functional-analytic spine and adds the universal q79 flat differential line, its SpinC/CLN/root-plane/finite- Hessian pullbacks, the parallel Boothby–Wang realization theorem, and the conditional polarized-section readout.
+Resolution.
+Version 8 retains the functional-analytic spine and adds the universal q79 flat differential line, its SpinC/CLN/root-plane/finite- Hessian pullbacks, the parallel Boothby–Wang realization theorem, and the conditional polarized-section readout. It also assigns the generic fixed-point gates to Fixed Points I and autonomous projection descent to the Projection–Admissibility paper; both are restated here as imported contracts rather than duplicated proofs.
 
-Retained result.  
+Retained result.
 The coherent-projector and basin-local fixed-point architecture survives as a conditional control-and-reduction framework.
 
-Remaining boundary.  
+Remaining boundary.
 The flat finite theorem does not identify the nonzero-Chern physical HYM connection, prove the local strain-to-q79 continuum intertwiner, select a physical Hilbert space, or identify compact Reeb flow with time.
+
+# How to read this foundation
+
+The paper has two jobs. First, it supplies a reusable analytic language for selecting and controlling a coherent sector. Second, it shows where a physical MTT realization must add information that the abstract language cannot create.
+
+The central picture is easier than the notation may initially suggest. At each point of a base space there is an internal space of possible modes. Vertical operators distinguish a selected low spectral sector from its complement. A stabilization flow acts on the full state. The Foundation asks whether the selected sector is mathematically well defined, whether unwanted modes decay, whether projected states exist and persist, and whether the discarded modes can be eliminated with a controlled error.
+
+These are different questions. The existence of a spectral gap does not prove that the dynamics preserves the selected modes. The existence of a projected fixed point does not prove that the upper state is stationary. Uniqueness requires a stronger gate than existence. A successful internal reduction does not choose a Lorentzian spacetime, a probability rule, or a particle spectrum. Much of this paper is devoted to keeping those implications separate.
+
+The geometry sections then specialize the language. They compare the local world-in-world strain carrier, the selected q79 trace carrier, the universal shared differential line, and the curved Boothby–Wang Lens and Nil realizations. These objects illuminate one another, but they are not identified merely because their dimensions or circle actions resemble one another.
+
+A reader interested mainly in the analytic spine can move from the abstract Hilbert-bundle form to the joint projector, stable complementary dynamics, fixed-point gates, and reduction sections. A reader interested mainly in the current geometric interface can focus on the local comparison carrier, q79 interface, shared differential line, and Boothby–Wang realization before returning to the synthesis theorem. The formal statements record the exact hypotheses; the surrounding discussion explains why each statement is present and what it does not establish.
 
 # Status, scope, and logical vocabulary
 
 This paper defines an abstract control and reduction architecture. It does not derive a particular quantum theory, gauge group, particle spectrum, spacetime equation, probability law, or numerical constant. Downstream claims must use one of the following statuses:
 
-Axiom or assumption.  
+Axiom or assumption.
 Input structure of a realization.
 
-Conditional theorem.  
+Conditional theorem.
 A consequence proved from listed hypotheses.
 
-Characterization.  
+Characterization.
 A necessary form for objects satisfying the premises.
 
-Reconstruction or embedding.  
+Reconstruction or embedding.
 Recovery or representation of a known framework after compatible data are supplied.
 
-Calibration or postdiction.  
+Calibration or postdiction.
 Numerical agreement using target-related input or model selection.
 
-Held-out prediction.  
+Held-out prediction.
 A quantity not used in construction, calibration, scale choice, or branch selection.
 
-Interpretation.  
+Interpretation.
 A conceptual reading without theorem status.
 
 The word “physical” is reserved for a realization equipped with a selected state space, local evolution law, observable map, and empirical interpretation.
 
+This vocabulary is not decorative caution. It prevents a common failure mode in unification programs: a mathematically valid representation is first described as a reconstruction, then remembered later as a derivation. The status of a statement records what information entered before the conclusion was obtained. In particular, agreement with a datum used to select a branch is a profile check, not a held-out prediction.
+
 # Dimension-neutral architecture and physical realization
 
 ## Abstract Hilbert-bundle form
+
+The abstract level deliberately says as little as possible about particles or spacetime. It provides a place where several internal mode structures can be compared over a common base. This is the level at which the fixed-point and reduction arguments are reusable: their validity should not depend on first assuming the physical conclusion one hopes to derive.
 
 Let $`Y`$ be a smooth base and let $`\mathcal E\to Y`$ be a real or complex separable Hilbert bundle. A state belongs to a declared Sobolev space
 ``` math
@@ -77,7 +108,11 @@ The modal triplet is represented by three compatible vertical structures
 ```
 on the same internal Hilbert fiber. Here $`A_i`$ is a nonnegative self-adjoint vertical operator and $`P_i`$ is its selected low spectral projector. The triplet is not automatically a product of three coordinate manifolds.
 
+The notation $`(\mathcal E_i,A_i,P_i)`$ separates three roles. The bundle data say what kinds of internal states are available. The operator says how those states are spectrally organized. The projector says which cluster is retained in the proposed coherent description. Keeping the roles separate allows a later audit to determine whether a conclusion came from geometry, dynamics, or an explicit selection.
+
 ## Canonical physical realization
+
+The canonical realization adds the physical arena used by the rest of the MTT program. It should be read as a specialization of the abstract language, not as a consequence of the word “triplet.” Four dimensions belong to the Lorentzian base and six to an internal Riemannian fiber; the two sides have different geometric jobs.
 
 The canonical physical specialization is
 ``` math
@@ -88,7 +123,11 @@ where $`Y_4`$ is a four-dimensional globally hyperbolic Lorentzian base in the p
 
 If $`X_6`$ is explicitly factorized as $`F_1\times F_2\times F_3`$, then $`\sum_i\dim F_i=6`$. A shared phase circle is represented by a principal $`U(1)`$ bundle or Hermitian line bundle $`L_{\rm cen}\to X_6`$. It is not appended as a seventh independent product coordinate. Recursive nil/lens/circle descriptions may be used as bundle or filtration data, but their dimensions must not be added unless an actual product decomposition is proved.
 
+This corrects two tempting pictures. A fiber direction is not automatically an additional causal direction, and a common circle reused by several lanes is not a new coordinate every time it appears. The six-dimensional count belongs to the actual fiber. Circle, Lens, and Nil language can further organize that fiber only through explicitly supplied bundle maps.
+
 ## Local comparison carrier and selected q79 interface
+
+The next two carriers answer different questions. The world-in-world field describes a local comparison between two rank-three frames. The q79 carrier describes globally organized sheet data on a selected degree-three cover. Their common one-two-three profile is a clue that motivates an intertwiner; it is not itself that intertwiner.
 
 Let $`TP`$ and $`TI`$ be oriented Euclidean rank-three bundles over a common base. A world-in-world comparison field is a typed section
 ``` math
@@ -128,7 +167,11 @@ where $`\mathcal A_0=\ker\operatorname{Tr}`$. The corresponding common carrier i
 ```
 This proves the selected rank filtration, not its identification with the local strain decomposition. Such an identification requires a same-source bundle-and-connection intertwiner. The line bundle $`L_{\rm shared}`$ carries common $`U(1)`$ phase or holonomy data; it is neither an extra product dimension nor physical Lorentzian time.
 
+In plain terms, the local carrier says how a three-directional comparison can deform, while the q79 carrier says how three sheets split into common, trace-free, and full information. Both supply six organized directions. What is missing is a map showing that transporting, differentiating, and measuring one carrier is equivalent to doing the same with the other. Rank agreement alone cannot provide those dynamical statements.
+
 ## Universal q79 differential line and finite operator square
+
+The shared-line construction addresses one narrower part of that bridge. It asks whether the phase line used in several finite q79 sectors is literally the pullback of one differential object, with the same connection and holonomy, rather than a collection of merely isomorphic circles. This is important because matching fibers at one point would not control what happens around a loop.
 
 The phrase “one shared circle” has a global meaning only after its classifying maps and connection are retained. Let $`\mathcal L_{64}^{\rm univ}\to B_\nabla\mathbb Z_{64}`$ be the universal flat Hermitian line associated to the primitive character
 ``` math
@@ -185,9 +228,13 @@ The lifted Hessian is exactly $`I_{L_{\rm sh}}\otimes H_{\rm fin}`$ and introduc
 
 </div>
 
+The practical content of the theorem is that the same finite phase transport acts compatibly on all three q79 lanes and on the finite Hessian. No dimensionless coefficient is adjusted to make the spectra agree. This closes a finite same-source square that earlier versions of the theory described only by analogy.
+
 The theorem is exact at flat differential-character and finite-symbol tier. It does not identify $`\nabla_{\rm sh}`$ with a nonflat physical HYM connection: a flat trace-free carrier has vanishing real characteristic curvature, whereas the active physical bundle has nonzero $`c_2`$. The continuum target is a spectral-symbol functor and a unitary parallel Hessian comparison, not literal equality of those connections.
 
 ## Boothby–Wang Lens and Nil realizations
+
+The Boothby–Wang construction explains why Lens and Nil repeatedly appear beside a circle in the MTT corpus. Both can be built as curved circle bundles, but they sit over different bases and carry different curvature. The common idea is prequantum circle transport; the resulting total spaces are not nested copies of one another.
 
 Let $`(B,\omega)`$ be an integral symplectic manifold. The Boothby–Wang construction produces a principal circle bundle
 ``` math
@@ -214,7 +261,11 @@ After a polarization, weight-$`m`$ equivariant functions on $`P_k`$ correspond t
 ```
 This is a conditional geometric-quantization Hilbert space, not a Hilbert space selected by the abstract MTT axioms. The periodic Reeb flow is the vertical phase action and must not be identified with noncompact physical time .
 
+These two circle constructions therefore complement rather than replace one another. The flat q79 line provides an exact finite holonomy and Hessian intertwiner. The curved Boothby–Wang bundles explain how Lens and Nil geometries can arise from a common construction principle. A future continuum theorem must relate them on a declared correspondence space while preserving their different curvature data.
+
 # Three independent evolution parameters
+
+Several earlier MTT arguments used the word “flow” for physically different operations. This section prevents that ambiguity. A mathematical relaxation can tell us how an iteration approaches a stable sector without being the time experienced by a physical observer. Renormalization, in turn, compares descriptions at different scales and need not be either process.
 
 The foundation distinguishes:
 
@@ -226,6 +277,8 @@ The foundation distinguishes:
 
 No equality among $`\tau`$, $`t`$, and $`\log\mu`$ is assumed. A theorem relating any two of them must specify the map, units, domain, and approximation error.
 
+For example, a heat-flow parameter has dimensions fixed by the operator that generates it. A physical time coordinate belongs to a Lorentzian initial-value problem. Writing both with an ordered symbol does not make their units or causal meanings agree. The same warning applies to a phase angle on the shared circle: a clock may use repeated phase to measure elapsed time, but phase is not time itself.
+
 We write the stabilization equation as
 ``` math
 \partial_\tau\Psi=F(\Psi),\qquad R_\tau(\Psi_0)=\Psi(\tau).
@@ -233,6 +286,8 @@ We write the stabilization equation as
 Well-posedness is imposed on a declared interval and invariant domain; global well-posedness is not part of the abstract foundation unless proved in a specific realization.
 
 # Joint vertical operator and coherent projector
+
+The coherent projector is the mathematical version of asking which internal modes pass all selected spectral tests. If the tests are compatible, their low-mode projectors can be intersected without depending on the order in which they are applied. If they are not compatible, multiplying the symbols $`P_1P_2P_3`$ need not produce an orthogonal projector at all.
 
 <div id="ass:joint" class="assumption">
 
@@ -245,6 +300,8 @@ Under strong commutation define
 P=\prod_{i=1}^3\mathbf1_{I_i}(A_i),\qquad Q=I-P,
 ```
 for declared isolated low spectral sets $`I_i`$. The product is then an orthogonal projector independent of ordering. Base-only coefficients or separate variable names do not, by themselves, prove strong commutation.
+
+A finite-dimensional toy model makes the issue visible. Three diagonal Hermitian matrices in one basis have commuting spectral projectors, and the joint low sector is the span of basis vectors accepted by all three. Rotate one matrix into a noncommuting basis and successive projections can depend on order. The abstract assumption is the infinite-dimensional replacement for the common-basis situation. A realization that cannot prove it should define one total operator instead of treating the product as canonical.
 
 For harmonic selection one may instead use the form sum $`A_{\rm int}=A_1+A_2+A_3`$. Nonnegativity gives
 ``` math
@@ -264,12 +321,16 @@ and $`P,Q`$ extend boundedly to every Sobolev space used by the dynamics.
 
 The internal gap separates the selected fiber cluster from complementary fiber modes. It does not by itself imply invariance under $`R_\tau`$, existence of a fixed point, coherent contraction, suppression of arbitrarily high four-dimensional energy, or selection of a physical state.
 
+The gap is therefore a separation statement, not a complete stability theorem. It says that leaving the selected internal cluster costs a positive amount in the vertical operator. Whether the actual dynamics respects or damps that separation is the subject of the next section.
+
 # Stable complementary dynamics
+
+The complementary sector contains the modes removed from the coherent description. For a controlled reduction, small disturbances in this sector must not grow without bound before they are eliminated. This is a dynamical requirement, stronger than the spectral gap by itself.
 
 Let $`\Psi_\ast`$ be a reference state at which the stabilization vector field is Fréchet differentiable, and set $`L=DF(\Psi_\ast)`$. The stable sign convention is that $`L_{QQ}=QLQ`$ generates decay:
 ``` math
 \|e^{\tau L_{QQ}}\|\le M_Qe^{-\omega_Q\tau},
- \qquad M_Q\ge1,quad\omega_Q>0.
+ \qquad M_Q\ge1,\qquad\omega_Q>0.
  \label{eq:q-semigroup}
 ```
 This estimate, rather than spectral abscissa alone, is authoritative for a nonnormal generator.
@@ -279,7 +340,7 @@ This estimate, rather than spectral abscissa alone, is authoritative for a nonno
 **Proposition 4** (Gap-to-decay under a bounded perturbation). *Suppose $`Q\mathcal H`$ is invariant and
 ``` math
 L_{QQ}=-\kappa A_{\rm int}|_{Q\mathcal H}+B_Q,
- \qquad \kappa>0,quad B_Q\in\mathcal B(Q\mathcal H).
+ \qquad \kappa>0,\qquad B_Q\in\mathcal B(Q\mathcal H).
 ```
 If $`\omega_Q:=\kappa\lambda_{\rm int}-\|B_Q\|>0`$, then
 ``` math
@@ -294,95 +355,97 @@ If $`\omega_Q:=\kappa\lambda_{\rm int}-\|B_Q\|>0`$, then
 
 </div>
 
+The proposition describes the simplest transparent mechanism. The positive internal operator supplies decay after the required minus sign is included, while the bounded perturbation spends part of that decay margin. Stability survives only when the remaining margin $`\omega_Q`$ is positive.
+
 For a general sectorial or nonnormal $`L_{QQ}`$, the constants $`M_Q`$ and $`\omega_Q`$ must be proved directly. A positive vertical operator cannot be identified with the stabilization generator without the minus sign and the lower-order terms.
+
+Nonnormality matters because eigenvalues alone can hide large transient growth. The prefactor $`M_Q`$ records that possibility. Downstream calculations that quote only a negative spectral abscissa have not yet supplied the semigroup control required by this Foundation.
 
 # Independent logical gates
 
+The following list is the paper’s main dependency map. It replaces the older idea that one favorable “coherence” inequality automatically supplies the entire physical conclusion. Each gate answers a separate failure question: is the sector defined, is it preserved, does a returning state exist, is that state truly stationary, is it unique, and is the reduction accurate?
+
 The following gates are independent and must not be collapsed:
 
-Gap.  
+Gap.
 Spectral separation for $`A_{\rm int}`$.
 
-Projector stability.  
+Projector stability.
 Persistence and regularity of $`P`$ under parameter or curvature variation.
 
-Invariance.  
+Invariance.
 $`R_\tau(P\mathcal H)\subseteq P\mathcal H`$, equivalently $`QF(Pu)=0`$ in a differentiable autonomous realization.
 
-Existence.  
+Existence.
 A fixed-point theorem applies on a declared invariant domain.
 
-Equilibrium identification.  
+Equilibrium identification.
 A projected time-step fixed point is shown to be stationary.
 
-Contraction.  
+Contraction.
 The coherent reduced map is strictly contractive.
 
-Truncation.  
+Truncation.
 The influence of $`Q`$ on $`P`$ is quantitatively bounded.
 
-Selection.  
+Selection.
 A continuation or reset rule is supplied at admissibility exit.
 
 No gate in this list follows solely from the gate preceding it.
 
-# Projected fixed points and equilibria
+A simple projected movie illustrates the distinction. Suppose the visible frame after one step looks exactly as it did before. The hidden part of the state may nevertheless have moved and then been erased by projection. That is a projected time-step fixed point, not an equilibrium of the full dynamics. Likewise, two different upper states may cast the same returning visible frame, so existence does not imply uniqueness.
+
+# Imported fixed-point gates
+
+The Foundation needs fixed-point results in order to state its complete control contract, but Fixed Points I is their canonical owner. They are reproduced here as readable hypotheses and conclusions, without duplicating the owning proofs. The three routes answer increasingly strong questions: existence of at least one returning state, promotion of return to stationarity, and uniqueness with convergence.
 
 Let $`K\subset P\mathcal H`$ be nonempty, closed, bounded, and convex and define
 ``` math
 T_\tau=P R_\tau|_K.
 ```
 
-<div id="thm:existence" class="theorem">
+Fixed Points I is the canonical theorem source for the following three gates . They are restated here, with all hypotheses and conclusions, so that the Foundation remains independently readable.
 
-**Theorem 5** (Projected time-step existence). *Assume $`T_\tau(K)\subset K`$ and either:*
+#### Existence gate.
 
-1.  *$`T_\tau:K\to K`$ is continuous and compact; or*
+Assume $`T_\tau(K)\subset K`$ and either
 
-2.  *$`T_\tau`$ is continuous and condensing for a declared measure of noncompactness.*
+1.  $`T_\tau:K\to K`$ is continuous and compact; or
 
-*Then there is $`u_\ast\in K`$ with $`T_\tau u_\ast=u_\ast`$.*
+2.  $`T_\tau`$ is continuous and condensing for a declared measure of noncompactness.
 
-</div>
-
-<div class="proof">
-
-*Proof.* Apply Schauder in the first case and Darbo–Sadovskii in the second. ◻
-
-</div>
+Then there is $`u_\ast\in K`$ with $`T_\tau u_\ast=u_\ast`$. This is the Schauder or Darbo–Sadovskii gate, respectively.
 
 The conclusion is a *projected time-step fixed point*. It is not named an equilibrium merely because $`P R_\tau u_\ast=u_\ast`$.
 
-<div id="thm:promotion" class="theorem">
+Compactness and condensing behavior are existence mechanisms. They can bring an infinite-dimensional image into a sufficiently controlled set for a fixed point theorem to apply. Neither mechanism says that every initial state converges to the same point.
 
-**Theorem 6** (Strict-Lyapunov equilibrium promotion). *Suppose $`P\mathcal H`$ is invariant, so that $`P R_\tau u_\ast=R_\tau u_\ast=u_\ast`$, and along the orbit
+#### Equilibrium-promotion gate.
+
+Suppose $`P\mathcal H`$ is invariant, so that $`P R_\tau u_\ast=R_\tau u_\ast=u_\ast`$, and along the orbit
 ``` math
 \mathcal C(R_\tau u)-\mathcal C(u)
  =-\int_0^\tau\mathcal D(R_su)\,ds,
  \qquad\mathcal D\ge0,
 ```
-where $`\mathcal D(v)=0`$ exactly when $`F(v)=0`$. Then the fixed point from Theorem <a href="#thm:existence" data-reference-type="ref" data-reference="thm:existence">5</a> is an equilibrium.*
+where $`\mathcal D(v)=0`$ exactly when $`F(v)=0`$. Then the fixed point from the existence gate is an equilibrium: endpoint recurrence makes the left side zero, nonnegativity and continuity force $`\mathcal D=0`$ along the orbit, and strictness gives $`F(u_\ast)=0`$.
 
-</div>
+The Lyapunov identity closes the information hidden by projection. If a strictly decreasing quantity returns to its original value, it could not have dissipated anywhere along the orbit; strictness then forces stationarity.
 
-<div class="proof">
+#### Uniqueness gate.
 
-*Proof.* Endpoint recurrence makes the left side zero. Nonnegativity and continuity force $`\mathcal D=0`$ along the orbit; strictness gives $`F(u_\ast)=0`$. ◻
-
-</div>
-
-<div id="thm:banach" class="theorem">
-
-**Theorem 7** (Banach gate). *If $`K`$ is complete, $`T_\tau(K)\subset K`$, and
+If $`K`$ is complete, $`T_\tau(K)\subset K`$, and
 ``` math
 \|T_\tau u-T_\tau v\|\le q\|u-v\|,
  \qquad0\le q<1,
 ```
-then $`T_\tau`$ has a unique fixed point in $`K`$, and its iterates converge to that point. The theorem does not apply without the invariant complete domain.*
+then $`T_\tau`$ has a unique fixed point in $`K`$, and its iterates converge to that point. This gate does not apply without the invariant complete domain.
 
-</div>
+Banach contraction is correspondingly stronger and more local in its demands. It proves uniqueness only inside the declared complete basin $`K`$. It does not exclude other basins or other physical branches outside that set.
 
 # Schur–Feshbach reduction with domains
+
+Even when complementary modes decay, they can feed back into the coherent sector before disappearing. Schur–Feshbach reduction calculates that feedback. It solves the complementary block in terms of the retained block and substitutes the result back, producing an effective operator rather than simply deleting $`Q`$.
 
 Let $`\mathcal H=P\mathcal H\oplus Q\mathcal H`$. Consider a closed block operator
 ``` math
@@ -398,7 +461,7 @@ with domain $`P\mathcal H\oplus\mathcal D(L_{QQ})`$. Assume:
 
 <div id="thm:feshbach" class="theorem">
 
-**Theorem 8** (Schur–Feshbach equation). *Under these hypotheses, solving $`L(p,q)=(f_P,f_Q)`$ is equivalent to
+**Theorem 5** (Schur–Feshbach equation). *Under these hypotheses, solving $`L(p,q)=(f_P,f_Q)`$ is equivalent to
 ``` math
 S p=f_P-L_{PQ}L_{QQ}^{-1}f_Q,
  \qquad
@@ -425,11 +488,15 @@ If $`\|L_{QQ}^{-1}\|\le C_Q/\omega_Q`$, then
 
 This is a local linear reduction near the reference state. Nonlinear truncation additionally requires control of nonlinear remainders and of the time interval on which the eliminated sector remains small.
 
+The correction $`L_{PQ}L_{QQ}^{-1}L_{QP}`$ has a direct interpretation. The retained sector excites a complementary mode through $`L_{QP}`$, that mode propagates through the complementary inverse, and it returns through $`L_{PQ}`$. A large gap can make the inverse small, but only after domains and mixing blocks have been controlled. This is why “the heavy modes decouple” is a conclusion to quantify rather than a slogan.
+
 # Projector stability and basin-local robustness
+
+Two different notions of robustness are needed. Projector stability asks whether the selected spectral subspace itself changes continuously under a perturbation. Basin robustness asks whether a fixed point moves only a controlled amount once two maps act on the same invariant basin. Neither statement follows from the other.
 
 <div class="proposition">
 
-**Proposition 9** (Riesz-projector stability). *Let $`A(\epsilon)`$ be a norm-resolvent-continuous family and let a contour $`\Gamma`$ remain in the resolvent set while enclosing one isolated cluster. Then
+**Proposition 6** (Riesz-projector stability). *Let $`A(\epsilon)`$ be a norm-resolvent-continuous family and let a contour $`\Gamma`$ remain in the resolvent set while enclosing one isolated cluster. Then
 ``` math
 P(\epsilon)=\frac{1}{2\pi i}\oint_\Gamma(z-A(\epsilon))^{-1}\,dz
 ```
@@ -437,9 +504,11 @@ is norm continuous and has constant finite rank. This proves projector stability
 
 </div>
 
+The contour in this proposition is the protective spectral boundary. As long as no eigenvalue or spectral cluster crosses it, the rank cannot jump. If the contour ceases to lie in the resolvent set, the selected sector may change dimension and the conclusion no longer applies.
+
 <div id="thm:robust" class="theorem">
 
-**Theorem 10** (Basin-local fixed-point robustness). *Let $`T,\widetilde T:K\to K`$ be contractions on the same complete invariant domain with contraction constant at most $`q<1`$. If
+**Theorem 7** (Basin-local fixed-point robustness). *Let $`T,\widetilde T:K\to K`$ be contractions on the same complete invariant domain with contraction constant at most $`q<1`$. If
 ``` math
 \sup_{u\in K}\|T(u)-\widetilde T(u)\|\le\varepsilon,
 ```
@@ -458,34 +527,35 @@ then their fixed points satisfy
 
 This is the justified foundation for a local robustness or universality claim. It is not global universality across arbitrary microscopic models.
 
+The factor $`(1-q)^{-1}`$ also shows the cost of weak contraction. When $`q`$ is close to one, a small change in the map can move the fixed point substantially. A claim of universality must therefore report both the map discrepancy and the contraction margin.
+
 # Projection, descent, and recovery types
+
+Projection can support an effective theory only if upper states that look the same below continue to look the same after evolution. Otherwise the reduced future depends on hidden information and no autonomous reduced law exists. This is the role of the descent criterion.
 
 Let $`r:X\to Y_{\rm eff}`$ be a surjective reduction map on a microscopic state space $`X`$, and let $`\Phi:X\to X`$ be a microscopic step.
 
-<div id="thm:descent" class="theorem">
+#### Imported autonomous-descent criterion.
 
-**Theorem 11** (Autonomous descent criterion). *There exists a unique reduced map $`\overline\Phi:Y_{\rm eff}\to Y_{\rm eff}`$ satisfying
+The Projection–Admissibility paper is the canonical theorem source . There exists a unique reduced map $`\overline\Phi:Y_{\rm eff}\to Y_{\rm eff}`$ satisfying
 ``` math
 \overline\Phi\circ r=r\circ\Phi
 ```
 if and only if
 ``` math
 r(x)=r(x')\quad\Longrightarrow\quad r(\Phi x)=r(\Phi x').
-```*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Necessity follows by applying $`\overline\Phi`$. For sufficiency define $`\overline\Phi(r(x))=r(\Phi x)`$; the implication makes this independent of the representative, and surjectivity gives uniqueness. ◻
-
-</div>
+```
+Necessity follows by applying $`\overline\Phi`$. For sufficiency, define $`\overline\Phi(r(x))=r(\Phi x)`$; the implication makes this independent of the representative, and surjectivity gives uniqueness.
 
 A section $`s:Y_{\rm eff}\to X`$ obeys $`r\circ s=\operatorname{id}`$ and chooses one representative. It does not recover every microscopic state. Exact microscopic recovery would require $`s\circ r=\operatorname{id}_X`$, which is possible only when $`r`$ is injective. An effective merger combines reduced descriptions and is neither kind of inverse unless separately typed and proved.
+
+The distinction between a section and a decoder is especially important in physical language. A section is a convention for choosing one upper representative of each effective state. A decoder would recover the upper state that actually occurred. When several upper states share one effective label, the first operation may exist while the second is impossible from that label alone.
 
 If $`r`$ is fiberwise over the base and the microscopic generator is local in base variables, a reduced local generator may descend when the invariance criterion holds and all coefficients depend locally and smoothly on the base jet. A projection nonlocal in base variables does not inherit locality merely from being a projector.
 
 # Admissibility and hybrid selection
+
+An effective description usually has a domain of trust. Curvature may become too large, a spectral gap may close, a positivity condition may fail, or a truncation error may exceed its tolerance. MTT packages these conditions as admissibility margins so that leaving the domain is an explicit event rather than an unnoticed breakdown of notation.
 
 Let $`m_j(u)`$ be declared continuous margins and define
 ``` math
@@ -506,7 +576,11 @@ At a first exit from $`\mathcal A_0`$, three logically different constructions a
 
 The third option defines a hybrid dynamical system. It changes the continuation law and must separately prove existence, measurability, conservation, and any probability assigned to alternative reset outcomes. Calling the reset “selection” does not make it part of the original flow.
 
+For example, replacing a state by the nearest admissible state after a margin crossing may be a useful numerical prescription. It is nevertheless a new rule. If several replacements are possible, their probabilities cannot be inferred from the existence of the boundary; a measure or dynamical selection mechanism must be supplied.
+
 # Complete admissibility-margin ledger
+
+The ledger below is a practical checklist for constructing or reviewing an MTT realization. It is intentionally longer than a single “closure” condition because each entry can fail independently. A downstream paper should either provide an entry, cite its canonical source, or mark it open.
 
 Every realization must record the following entries independently:
 
@@ -542,7 +616,11 @@ Every realization must record the following entries independently:
 
 No single scalar “coherence scale” may replace this ledger unless a theorem derives all identifications with dimensions and errors.
 
+The ledger also prevents parameters with different units from being merged. An internal spectral gap, a contraction rate, a four-dimensional cutoff, and an RG scale can all be numerically expressed as energies after conventions are chosen, but equality of their numerical values would still require a same-source theorem.
+
 # Lorentzian physical completion
+
+The abstract Hilbert structure is designed for control estimates and carries a positive norm. Physical spacetime needs a different piece of information: a hyperbolic equation whose principal symbol distinguishes one temporal direction from spatial directions. Trying to obtain Lorentzian signature by changing the sign of a positive Gram tensor confuses these roles.
 
 The Hilbert inner product and every Gram tensor constructed from it are positive semidefinite. They cannot acquire Lorentzian signature. In a local physical completion, causal signature is instead read from the principal symbol. For a second-order field equation this has the schematic form
 ``` math
@@ -550,25 +628,35 @@ The Hilbert inner product and every Gram tensor constructed from it are positive
 ```
 Lorentzian hyperbolicity, constraint propagation, and a domain-of-dependence theorem must be verified for the selected equations. The canonical base dimension $`3+1`$ is part of the canonical FP physical realization; it is not derived by the abstract Hilbert-bundle theory. In particular, the component identity $`1+3\times3=4+6`$ neither selects a four-dimensional causal base nor determines its signature.
 
+In other words, the Foundation can prove that a selected internal sector is stable while remaining neutral about which physical equation propagates it. The signature paper and any later action supply that equation. This separation allows the same control spine to be used with different physical completions, but it also means that causality is not derived from projection alone.
+
 # Foundation synthesis theorem
+
+The synthesis theorem gathers the preceding gates without weakening their independence. It should be read as a conditional assembly instruction: when a realization supplies each named hypothesis, the corresponding control conclusion follows. It is not a shortcut by which the word “MTT” supplies all hypotheses at once.
 
 <div id="thm:foundation" class="theorem">
 
-**Theorem 12** (Scoped MTT foundation). *Assume the dimension-neutral Hilbert-bundle architecture, joint spectral structure, internal gap, stable complementary semigroup, and the separately listed hypotheses for a chosen fixed-point theorem. Then the model possesses a bounded coherent decomposition and a projected time-step fixed point. Under strict Lyapunov and invariance hypotheses that point is an equilibrium. Under the Banach gate it is unique in the declared basin. Under the Schur–Feshbach hypotheses the local linear complementary sector can be eliminated with the displayed error bound. Under contraction and map-closeness hypotheses the fixed point is basin-locally robust. Autonomous reduced dynamics exists exactly under the descent criterion.*
+**Theorem 8** (Scoped MTT foundation). *Assume the dimension-neutral Hilbert-bundle architecture, joint spectral structure, internal gap, stable complementary semigroup, and the separately listed hypotheses for a chosen fixed-point theorem. Then the model possesses a bounded coherent decomposition and a projected time-step fixed point. Under strict Lyapunov and invariance hypotheses that point is an equilibrium. Under the Banach gate it is unique in the declared basin. Under the Schur–Feshbach hypotheses the local linear complementary sector can be eliminated with the displayed error bound. Under contraction and map-closeness hypotheses the fixed point is basin-locally robust. Autonomous reduced dynamics exists exactly under the descent criterion.*
 
 </div>
 
 None of these conclusions supplies a physical probability law, Lorentzian field equation, quantum representation, particle spectrum, Standard Model matching, cosmology, or numerical prediction. Those are downstream obligations governed by the admissibility ledger. Nor does equality of the local $`1+2+3`$ strain dimensions and the q79 $`1+2+3`$ trace-split ranks prove the same-source intertwiner needed to identify their metrics, connections, and vertical operators. Theorem <a href="#thm:shared-line" data-reference-type="ref" data-reference="thm:shared-line">1</a> closes the common flat line and finite Hessian square inside the q79 carrier; it does not close that local-to-continuum identification.
 
+What a downstream paper may legitimately inherit is now explicit: a coherent spectral decomposition, conditional fixed-point and equilibrium gates, controlled linear elimination, local robustness, and an exact finite shared-line square, each on its declared hypotheses. What it may not inherit without new work is a physical state space, a gauge or particle representation, a value source, or a causal field equation. This is the operational meaning of calling the present paper a foundation.
+
 # Conclusion
 
 The corrected Foundation provides a typed and noncircular spine for the MTT corpus. It identifies what the triplet and projector mean, how complementary stability is proved, which fixed-point conclusion is available, how reduction is typed, and where physical assumptions enter. Its value is precisely this separation: later realizations can now be tested against explicit gates rather than inheriting conclusions from an undifferentiated appeal to coherence. The shared-circle sector now illustrates the intended discipline particularly well: a curved Boothby–Wang schema, an exact flat q79 differential line, and a conditional polarized Hilbert readout coexist without being conflated.
+
+The broader research direction is to replace the remaining compatibilities by commuting source maps. The highest-value next step is not another rank count or a restatement of the fixed-point gates. It is a continuum intertwiner from the local strain carrier to the physical q79 HYM complex that preserves the connection, Hessian, and normalized response data. With that map and a selected action, the abstract control spine could begin to explain why the successful lower theories arise from one source rather than merely fit together after selection.
 
 <div class="thebibliography">
 
 99
 
-P. Nero, *Fixed Points I–VI*, corrected theorem spine, revised editions, 2026.
+P. Nero, *Fixed Points I: Projected Fixed Points, Equilibria, and Noncompact Domains in Modal Triplet Theory*, revised edition, 2026.
+
+P. Nero, *The Projection–Admissibility Principle: Descent, Recovery, and Structural Constraints on Effective Description*, revised edition, 2026.
 
 T. Kato, *Perturbation Theory for Linear Operators*, Springer, 1995.
 
@@ -585,3 +673,7 @@ N. M. J. Woodhouse, *Geometric Quantization*, second edition, Oxford Universi
 P. Nero, *q79 Universal Shared Differential Line and Finite-Operator Intertwiner*, executable theorem packet, 2026.
 
 </div>
+
+# Computational Evidence and Reproducibility
+
+The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.

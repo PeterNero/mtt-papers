@@ -1,4 +1,15 @@
-# Fixed Points VI v5 Revision Audit
+# Fixed Points VI v6 Release Audit
+
+## v6 publication delta (July 2026)
+
+- **Supersedes:** v5.
+- **Reason:** a standalone synthesis needed clearer reading lanes without
+  becoming a second owner of FP I--V theorems.
+- **Resolution:** distinguish inherited contracts, downstream q79 results,
+  and interpretation; preserve unique theorem ownership.
+- **Retained:** the complete v5 FP spine and FP VI's two causality results.
+- **Remaining:** selected action, continuum operator, Born source, QFT,
+  matching, gravity, and cosmology programs.
 
 ## v5 delta (July 2026)
 
@@ -19,6 +30,18 @@ No selected upper-MTT Lorentzian action, physical q79 endpoint, universal Born
 law, interacting continuum QFT, selected global state, or empirical
 equivalence claim is promoted.
 
+## Theorem ownership correction
+
+FP VI is a synthesis paper. Fixed-point, equilibrium, damping, curvature,
+modulation, covariance, and exit results are stated as self-contained imported
+contracts owned by FP I--V. FP VI has exactly two formal results of its own:
+
+1. the instantaneous bilocal domain-of-dependence obstruction; and
+2. the local-hyperbolic-mediator completion.
+
+The scoped series synthesis is a ledger, not a second theorem. This preserves
+standalone readability without duplicating the formal theorem chain.
+
 ## Prior v4 correction retained
 
 ## Source lineage
@@ -31,9 +54,9 @@ equivalence claim is promoted.
 
 | Finding | v3 evaluation | v4 action |
 |---|---|---|
-| Do not claim a unified covariant field theory from FP I–V | The abstract promoted the control framework directly to a field theory | Introduces explicit statuses: inherited theorem, conditional completion, and physical interpretation |
+| Do not claim a unified covariant field theory from FP I--V | The abstract promoted the control framework directly to a field theory | Introduces explicit statuses: inherited theorem, conditional completion, and physical interpretation |
 | Use the joint projector correctly | The product `Pi_1 Pi_2 Pi_3` was declared an orthogonal projector without strong commutation | Uses the FP II joint spectral projector and permits a product only under strong commutation |
-| Separate projected recurrence from equilibrium | A fixed point of the projected time-step map was treated as a steady solution | Restates the FP I existence alternatives and requires FP II’s strict Lyapunov argument for equilibrium promotion |
+| Separate projected recurrence from equilibrium | A fixed point of the projected time-step map was treated as a steady solution | Restates the FP I existence alternatives and requires FP II's strict Lyapunov argument for equilibrium promotion |
 | Scope uniqueness to an actual inverse | The vertical gap was used as an inverse bound without excluding kernels or proving the operator estimate | Gives a conditional contraction theorem requiring the declared inverse and its norm |
 | Preserve FP III disturbance distinctions | A shared loss/disturbance quantity reappeared | Separates deterministic amplitude, stochastic power, and their different floors |
 | Preserve FP IV curvature structure | Curvature was inserted as a selected affine mass/gap formula | Uses the full curved operator, Riesz projector, and explicit old-projector leakage; affine response is not promoted |
@@ -52,8 +75,8 @@ equivalence claim is promoted.
 | Account for curvature-dependent mass variation | v3 retained a minimal Einstein equation after inserting `R |phi|^2` | States that metric variation produces nonminimal gravitational terms |
 | Do not infer a Lorentz force from covariance | Gauge covariance was promoted directly to point-particle motion | Requires a controlled localized-solution limit |
 | Correct bilocal causality | Equal-time spatial nonlocality was called microcausal because the principal symbol was unchanged | Proves the instantaneous domain-of-dependence obstruction |
-| Supply a causal alternative | “Integrating out a mediator” was treated as equivalent to an equal-time symmetric kernel | Uses a local hyperbolic mediator and notes that elimination gives a retarded memory kernel |
-| Avoid an unsupported local well-posedness theorem | `K in L1` and `s>2` were insufficient for the full Einstein–Yang–Mills–Dirac–scalar claim | Removes the theorem; keeps only the limited statement that `L1` may aid estimates but cannot prove causality |
+| Supply a causal alternative | "Integrating out a mediator" was treated as equivalent to an equal-time symmetric kernel | Uses a local hyperbolic mediator and notes that elimination gives a retarded memory kernel |
+| Avoid an unsupported local well-posedness theorem | `K in L1` and `s>2` were insufficient for the full Einstein--Yang--Mills--Dirac--scalar claim | Removes the theorem; keeps only the limited statement that `L1` may aid estimates but cannot prove causality |
 
 ## Physical-claim corrections
 
@@ -70,7 +93,7 @@ equivalence claim is promoted.
 ## Resulting series-level achievement
 
 FP VI v5 consolidates, without reopening, the corrected achievements of FP
-I–V: projected fixed-point existence under explicit compactness hypotheses,
+I--V: projected fixed-point existence under explicit compactness hypotheses,
 strict-Lyapunov equilibrium promotion, joint-mode stability and disturbance
 floors, curved-cluster persistence and leakage, intrinsic modulation, frozen
 linear covariance/correlation, and admissibility exit diagnostics. Its separate
@@ -78,9 +101,23 @@ downstream ledger records the current scoped q79 geometry, operational QM, and
 QFT achievements without turning them into FP conclusions. It gives a precise
 list of the constructive bridges still required for a physical theory.
 
+## Expository revision
+
+The current synthesis now begins with a paper-specific usage guide. It
+explains the conditional-gate picture, provides separate reading lanes for the
+rigorous FP chain, independent downstream q79 results, and physical
+interpretations, and states why short contracts are repeated while canonical
+proofs are not. New discussion distinguishes classical from quantum
+covariance, a writable Lorentzian action from a selected one, and downstream
+status from FP consequence. The physical-interpretation ledger is explicitly
+defined as a claim type system. The conclusion records the unique ownership of
+each FP paper and keeps FP VI's own formal contribution at exactly two
+bilocal-causality results.
+
 ## Validation
 
 - The canonical `mtt-qm-source-proof` verifier passes at commit `1615da7`.
 - The 139-paper repository verifier passes after Markdown and hash regeneration.
-- Three `pdflatex` passes compile FP VI v5 with resolved citations and
-  cross-references.
+- The current source compiles with `pdflatex` to a 10-page PDF.
+- The final log has no undefined references, underfull boxes, overfull boxes,
+  or LaTeX/package warnings.

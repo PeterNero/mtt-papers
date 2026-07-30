@@ -1,536 +1,477 @@
 \documentclass[11pt]{article}
 
-\usepackage{series}
-\usepackage{amsmath,amssymb,amsfonts}
-\usepackage{mathrsfs}
-\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=28mm]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage{booktabs,tabularx}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 
-\title{Modal Triplet Theory and Asymptotic Safety\\
-Asymptotic Safety as the Controlled FRG Shadow of the Coherent-Sector UV Endpoint}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
 
+\newcommand{\X}{\mathcal X}
+\newcommand{\U}{\mathcal U}
+\newcommand{\Rmap}{\mathcal R}
+\newcommand{\Tmap}{\mathcal T}
+\newcommand{\Cmap}{\mathcal C}
+\newcommand{\Id}{I}
+\newcommand{\spec}{\operatorname{spec}}
+\newcommand{\Ran}{\operatorname{Ran}}
+
+\title{Modal Triplet Theory and Asymptotic Safety:\\
+\large A Conditional FRG Conjugacy and Unstable-Subspace Theorem}
 \author{Peter Nero}
-
-\date{January, 2026}
+\date{July 2026\\Version 2}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We establish a rigorous bridge between Modal Triplet Theory (MTT) and functional
-renormalization group (FRG) formulations of quantum gravity, clarifying the precise
-sense in which asymptotic safety (AS) arises as a controlled shadow of MTT's coherent
-sector. Working on a bounded-geometry time slab and within the coherent universality
-class, we define a background-covariant FRG effective average action $\Gamma_k$ and
-a discrete renormalization-group (RG) step map $\mathcal{R}_b:\Gamma_k\mapsto\Gamma_{bk}$.
-Using the spectral proper-time (SPT) Gaussian ultraviolet damping derived from the
-coherent projector, we prove: (i) existence of a UV endpoint functional
-$\Gamma_\infty=\lim_{k\to\infty}\Gamma_k$ in a Banach space of analytic local plus entire
-form-factor actions equipped with a majorant-series norm; (ii) scheme stability of
-$\Gamma_\infty$ under admissible regulator variations within the coherent universality
-class; and (iii) compactness of the RG-step linearization at $\Gamma_\infty$, yielding a
-finite-dimensional unstable manifold (the MTT-native analogue of ``finite relevant
-directions''). As a corollary, fixed points observed in AS-style truncations are obtained
-as shadows of $\Gamma_\infty$ under continuous truncation and canonical rescaling.
+This paper states the mathematically controlled relation currently available
+between Modal Triplet Theory and functional-renormalization-group
+asymptotic safety. An integrable bound on an effective-action flow gives a
+Banach-space ultraviolet endpoint with an explicit tail estimate, but the
+bound must be proved for the selected four-dimensional flow and is not
+implied by an internal finite projector. Exact conjugacy between an MTT
+coarse-graining map and an FRG step map transports fixed points; approximate
+conjugacy transports only a residual unless a separate fixed-point theorem is
+supplied. Scheme changes are controlled by an endpoint-difference estimate,
+not by unrestricted scheme independence. Finally, a finite-dimensional
+unstable subspace follows when the linearized RG step is quasi-compact with
+essential spectral radius below one. These results define a rigorous
+conditional bridge. The selected MTT-to-FRG chart, physical regulator,
+four-dimensional damping estimate, and quasi-compactness certificate remain
+open source obligations.
 \end{abstract}
+
+\section*{Version 2 Revision Note}
+\begin{description}[leftmargin=3.2cm,style=nextline]
+\item[Supersedes] Version 1.0, \emph{Modal Triplet Theory and Asymptotic
+Safety: Asymptotic Safety as the Controlled FRG Shadow of the
+Coherent-Sector UV Endpoint}.
+\item[Reason] The earlier endpoint, scheme, and unstable-direction claims
+used assumptions that were not separated from conclusions. In particular,
+compactness of one summand did not control the essential spectrum of the
+full linearization.
+\item[Resolution] Endpoint convergence, exact and approximate conjugacy,
+scheme variation, and quasi-compact unstable-subspace control are now
+separate theorems with explicit hypotheses.
+\item[Retained result] Gaussian-integrable flow bounds imply a UV endpoint
+and tail bound; exact conjugacies transport fixed points and linearized
+spectra.
+\item[Remaining boundary] MTT does not yet select the physical FRG chart,
+regulator, dimensionless fixed functional, or quasi-compact linearization.
+The bridge is conditional rather than an established UV completion.
+\end{description}
 
 \tableofcontents
 
-\section{Scope, standing inputs, and claim discipline}
+\section{Question and claim tier}
 
-\subsection{Standing inputs}
-We work under the standing MTT modules $(G,S,\Pi,F,E)$: bounded geometry on a time
-slab, uniform spectral gap separating coherent and noncoherent modes, bounded coherent
-projector $\Pi_{\mathrm{coh}}$, well-posed smoothing flow, and analytic energy/interaction
-structure. These are established in the MTT Foundation, Fixed Points I--VI, and the
-Superset framework.
+Asymptotic safety asks whether a renormalization-group flow for
+dimensionless gravitational couplings approaches a non-Gaussian fixed point
+with finitely many ultraviolet-relevant directions. Functional
+renormalization group (FRG) calculations investigate this question through
+the effective average action \(\Gamma_k\) and the Wetterich equation
+\cite{Wetterich,Reuter,ReuterSaueressig}.
 
-We restrict to the coherent universality class, i.e.\ admissible perturbations preserve
-the coherent sector and its physical relevance, including robustness under RG-compatible
-coarse-graining and controlled truncation.
-
-The ultraviolet mechanism is the spectral proper-time (SPT) factorization of the coherent
-projector, yielding Gaussian ultraviolet damping and a complete Bernstein/Stieltjes
-structure in the TT graviton sector, compatible with BRST/BV symmetry.
-
-\subsection{Claim discipline}
-All results are either:
-\begin{itemize}
-  \item \emph{Derived} in this paper,
-  \item \emph{Imported} as standing results from the MTT corpus,
-  \item \emph{Assumed} explicitly (only where unavoidable, e.g.\ regulator shell localization).
-\end{itemize}
-Open problems are isolated in Section~\ref{sec:open}.
-
-\section{Slab geometry and bounded-geometry setting}
-
-We work on a finite time slab $[0,T]\times\Sigma$ with bounded geometry: uniform bounds
-on curvature and its derivatives and positive injectivity radius on the slab. All Sobolev,
-heat-kernel, and parametrix estimates are uniform on this slab. This is the same setting
-used in the constructive MTT--QG program.
-
-\section{FRG representation and RG step map}
-
-\subsection{Admissible regulator families}
-
-\begin{definition}[Admissible regulator family]
-A family $R_k=R_k(-\bar\nabla^2)$ is admissible if:
-\begin{enumerate}
-\item $R_k$ is background-covariant, depending on the background only via $-\bar\nabla^2$.
-\item $R_k(z)\to k^2$ for $z\ll k^2$ and $R_k(z)\to0$ for $z\gg k^2$.
-\item Regulator-modified Ward/Slavnov identities are of standard background-field type
-and restore as $k\downarrow0$.
-\item Regulator variations preserving (1)--(3) are bounded perturbations compatible with
-coherent-sector stability and controlled truncation.
-\end{enumerate}
-\end{definition}
-
-\subsection{Shell localization}
-
-\begin{lemma}[Shell localization of admissible regulators]
-\label{lem:shell}
-For any admissible regulator family $R_k$, there exist constants $0<a_0<a_1$ such that
-the operator $\partial_k R_k(-\bar\nabla^2)$ is spectrally localized (up to rapidly
-decaying tails) to the band
+MTT uses a different starting language: coherent sectors, selected
+projectors, fixed-point maps, and geometry-to-operator transfers. A relation
+between the two frameworks therefore requires a map, not merely similar
+words. The strongest claim defended here is:
 \[
-a_0 k^2 \;\le\; -\bar\nabla^2 \;\le\; a_1 k^2.
+\text{selected MTT map}
+\xleftrightarrow[\text{proved chart}]{\text{conjugacy}}
+\text{FRG step map}.
 \]
-\end{lemma}
+All fixed-point consequences are conditional on that chart and on the
+analytic hypotheses below.
 
-\begin{proof}
-This follows from the standard construction of FRG regulators as smooth functions of
-$z/k^2$ with compact support or rapid decay of derivatives. The statement is verified
-directly for all commonly used regulator shapes and is taken as part of admissibility.
-\end{proof}
+The paper does not claim that the present q79 internal finite Hessian is a
+four-dimensional FRG regulator. The internal-filter UV no-go theorem in the
+finite-filter paper shows why such an inference would fail without an
+intertwiner.
 
-\subsection{Effective average action and RG step map}
+\section{Typed spaces and maps}
 
-Let $\Gamma_k$ denote the coherent-sector effective average action in background-field
-FRG form. Define RG time $t=\log k$ and fix $b>1$.
+Let \(\X\) be a Banach space of dimensionless effective actions. The exact
+choice of norm is part of the model. A possible controlled setting is a
+bounded-geometry slab with analytic local functionals plus entire form
+factors, equipped with a majorant norm. The theorem statements below use
+only completeness and differentiability where declared.
 
-\begin{definition}[RG step map]
-The RG step map is
-\[
-\mathcal{R}_b:\Gamma_k\longmapsto\Gamma_{bk},
-\]
-the time-$\log b$ map of the FRG flow.
-\end{definition}
-
-\section{Action space and majorant-series norm}
-
-\subsection{Analytic local and entire classes}
-
-We define a Banach space $\mathcal{B}^{(s,R)}$ of admissible actions as the direct sum of:
-\begin{itemize}
-\item $\mathcal{A}_{\mathrm{loc}}^{(s,R)}$: local analytic functionals with factorial
-bounds on Fr\'echet derivatives on the $H^s$-ball of radius $R$,
-\item $\mathcal{A}_{\mathrm{ent}}^{(s,R)}$: entire form-factor completions (complete
-Bernstein/Stieltjes functional calculus) with Gaussian ultraviolet domination in the TT sector.
-\end{itemize}
-
-\subsection{Majorant-series norm}
-
-Fix $\rho>0$. For a functional $F$ smooth on the $H^s$-ball $B_R$, define
-\[
-\|F\|_{\mathrm{maj},\rho;R}
-:=\sum_{n=0}^\infty \frac{\rho^n}{n!}\sup_{\Phi\in B_R}\|D^nF(\Phi)\|.
-\]
-For $\Gamma=V+W$ with $V\in\mathcal{A}_{\mathrm{loc}}$, $W\in\mathcal{A}_{\mathrm{ent}}$, set
-\[
-\|\Gamma\|_{\mathcal{B},\rho;R}
-:=\inf_{\Gamma=V+W}
-\bigl(\|V\|_{\mathrm{maj},\rho;R}+\|W\|_{\mathrm{ent},\rho;R}\bigr).
-\]
-This norm encodes analyticity via factorial bounds and is stable under sums, products,
-and compositions required by FRG and RG-step operations.
-
-\section{SPT-damped UV integrability}
-
-\begin{assumption}[SPT-damped shell integrability]
-\label{ass:spt}
-There exist constants $C>0$, $c>0$, integer $m\ge0$, and $\tau_0>0$ such that for $k\ge k_0$,
-\[
-\|\partial_k\Gamma_k\|_{\mathcal{B},\rho;R}
-\;\le\; C\,k^m e^{-c\tau_0 k^2}.
-\]
-\end{assumption}
-
-This is the FRG analogue of Gaussian domination of graviton-containing graphs and follows
-from SPT factorization and shell localization (Appendix~A).
-
-\section{Existence of the UV endpoint functional}
-
-\begin{theorem}[UV endpoint functional]
-\label{thm:UVendpoint}
-Under the standing inputs and Assumption~\ref{ass:spt}, the limit
-\[
-\Gamma_\infty:=\lim_{k\to\infty}\Gamma_k
-\]
-exists in $\mathcal{B}^{(s,R)}$ with respect to $\|\cdot\|_{\mathcal{B},\rho;R}$.
-Moreover,
-\[
-\|\Gamma_\infty-\Gamma_k\|_{\mathcal{B},\rho;R}
-\le \int_k^\infty C\,k'^m e^{-c\tau_0 k'^2}\,dk'.
-\]
-\end{theorem}
-
-\begin{proof}
-Write $\Gamma_k=\Gamma_{k_0}+\int_{k_0}^k\partial_{k'}\Gamma_{k'}\,dk'$.
-Assumption~\ref{ass:spt} implies absolute integrability of the tail, hence Cauchy
-convergence in the Banach norm.
-\end{proof}
-
-\section{Scheme stability}
-
-\begin{theorem}[Scheme stability of $\Gamma_\infty$]
-Let $R_k$ and $R'_k$ be admissible regulators generating flows $\Gamma_k$, $\Gamma'_k$
-satisfying Assumption~\ref{ass:spt}. Let $\Gamma_\infty$, $\Gamma'_\infty$ be the
-corresponding UV endpoints. Then $\Gamma_\infty$ and $\Gamma'_\infty$ lie in the same
-coherent universality class. In particular there exists a bounded reparametrization
-$\mathcal{U}$ and a controlled remainder $\mathcal{E}$ such that
-\[
-\Gamma'_\infty=\mathcal{U}\cdot\Gamma_\infty+\mathcal{E}.
-\]
-\end{theorem}
-
-\section{Finite-dimensional unstable manifold}
-
-\begin{theorem}[Finite unstable subspace]
-Let $\mathcal{L}_b:=D\mathcal{R}_b|_{\Gamma_\infty}$. Then $\mathcal{L}_b$ decomposes as
-$\mathcal{L}_b=\mathcal{S}_b+\mathcal{K}_b$ with $\mathcal{K}_b$ compact on
-$\mathcal{B}^{(s,R)}$. Consequently, the unstable subspace
-\[
-\mathcal{U}_b:=\mathrm{span}\{v:\mathcal{L}_b v=\lambda v,\ |\lambda|>1\}
-\]
-is finite-dimensional.
-\end{theorem}
-
-\begin{proof}
-Compactness of $\mathcal{K}_b$ follows from Gaussian-damped smoothing of the shell map
-(Appendix~A). Riesz--Schauder theory then yields finite multiplicity of eigenvalues
-outside the essential spectrum.
-\end{proof}
-
-\section{Asymptotic safety as a truncation shadow}
-
-\begin{corollary}[AS fixed points as shadows]
-Let $\mathcal{T}:\mathcal{B}^{(s,R)}\to\mathbb{R}^N$ be a continuous truncation.
-Then $g(k):=\mathcal{T}(\Gamma_k)\to g(\infty):=\mathcal{T}(\Gamma_\infty)$.
-After canonical rescaling to dimensionless couplings, any fixed point observed in the
-truncation is a shadow of $\Gamma_\infty$, and the number of relevant directions is
-bounded by $\dim\mathcal{U}_b$.
-\end{corollary}
-
-\section{Open problems}
-\label{sec:open}
-
-\begin{enumerate}
-\item Existence of a scale-invariant dimensionless fixed functional $\tilde\Gamma_*$.
-\item Identification of critical exponents in standard AS normalization.
-\item Extension from bounded slabs to asymptotically flat slabs with IR regulators.
-\end{enumerate}
-
-\appendix
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Appendix A.0: Majorant-Series Banach Norm}
-\addcontentsline{toc}{section}{Appendix A.0: Majorant-Series Banach Norm}
-
-\subsection*{A.0.1 Motivation}
-
-We require a Banach space of actions that:
-(i) encodes analyticity via factorial bounds,
-(ii) is stable under differentiation, multiplication, and composition,
-(iii) supports Cauchy convergence of the FRG flow,
-(iv) is compatible with constructive QG methods.
-
-The standard solution in constructive field theory is a majorant-series norm.
-
-\subsection*{A.0.2 Analytic local functionals}
-
-Fix $s>2$, $R>0$, and let
-\[
-B_R := \{\Phi : \|\Phi\|_{H^s([0,T]\times\Sigma)} \le R\}.
-\]
-
-For a Fréchet-smooth functional $F$ on $B_R$, define
-\[
-\|D^n F\|_R := \sup_{\Phi\in B_R} \|D^nF(\Phi)\|_{\mathrm{op}}.
-\]
-
-\begin{definition}[Majorant-series norm]
-For $\rho>0$, define
-\[
-\|F\|_{\mathrm{maj},\rho;R}
-:= \sum_{n=0}^\infty \frac{\rho^n}{n!}\,\|D^nF\|_R.
-\]
-\end{definition}
-
-\begin{lemma}[Equivalence with factorial bounds]
-$\|F\|_{\mathrm{maj},\rho;R}<\infty$ iff $F$ is analytic on $B_R$ with
-\[
-\|D^nF\|_R \le \|F\|_{\mathrm{maj},\rho;R}\,\rho^{-n} n!.
-\]
-Conversely, factorial bounds imply finiteness for $\rho<1/K$.
-\end{lemma}
-
-\subsection*{A.0.3 Entire form-factor sector}
-
-Let $W$ be a functional defined by background-covariant kernels
-(e.g.\ $F(-\bar\nabla^2)$ with $F$ complete Bernstein).
-Define
-\[
-\|W\|_{\mathrm{ent},\rho;R}
-:= \sum_{n=0}^\infty \frac{\rho^n}{n!}\|D^nW\|_R + \|W\|_{\mathrm{ker}},
-\]
-where $\|\cdot\|_{\mathrm{ker}}$ is the operator norm $H^s\to H^s$.
-
-\subsection*{A.0.4 Full action space}
-
-\begin{definition}[Banach space $\mathcal B^{(s,R)}$]
 Let
 \[
-\mathcal B^{(s,R)} := \mathcal A_{\mathrm{loc}}^{(s,R)} \oplus
-\mathcal A_{\mathrm{ent}}^{(s,R)},
+ \Rmap_b:\X\longrightarrow\X
 \]
-with norm
+be the time-\(\log b\) step of an autonomous dimensionless FRG flow, for
+\(b>1\). Let \(\U\) be an MTT upper-state space and
 \[
-\|\Gamma\|_{\mathcal B,\rho;R}
-:= \inf_{\Gamma=V+W}
-\bigl(\|V\|_{\mathrm{maj},\rho;R}+\|W\|_{\mathrm{ent},\rho;R}\bigr).
+ \Tmap_b:\U\longrightarrow\U
 \]
-\end{definition}
+its selected coarse-graining step. A chart
+\(\Cmap:\U\to\X\) must specify how coherent variables become effective
+couplings. This chart is not supplied by identifying a coherent projector
+with an FRG cutoff.
 
-\begin{lemma}[Closure properties]
-$\mathcal B^{(s,R)}$ is a Banach space, closed under sums, differentiation,
-and FRG compositions. Analytic bounds are preserved with controlled constants.
-\end{lemma}
+\subsection{Dimensionful endpoints versus fixed points}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Appendix A.1: Bounded-Geometry Slab and Heat-Kernel Bounds}
-\addcontentsline{toc}{section}{Appendix A.1: Bounded-Geometry Slab and Heat-Kernel Bounds}
+A limit of dimensionful actions \(\Gamma_k\) is not automatically an
+asymptotic-safety fixed point. Canonical rescaling must first produce
+dimensionless variables and an autonomous flow. This paper reserves
+\(\Gamma_\ast\) for a fixed point of \(\Rmap_b\) and
+\(\Gamma_\infty\) for a norm limit of a specified curve.
 
-Let $[0,T]\times\Sigma$ be a finite time slab with bounded geometry.
-For any Laplace-type operator $L$, the heat kernel $K_t(x,y)$ satisfies
+\section{What an integrable UV bound proves}
+
+\begin{theorem}[Banach-space endpoint]
+\label{thm:endpoint}
+Let \(\Gamma:[k_0,\infty)\to\X\) be locally absolutely continuous. If
 \[
-\|K_t(x,y)\|
-\le C\,t^{-2}\exp\!\left(-\frac{d_{\bar g}(x,y)^2}{c\,t}\right),
-\quad 0<t\le1.
+ \|\partial_k\Gamma_k\|_{\X}\leq g(k)
+ \quad\text{for almost every }k,
+ \qquad
+ g\in L^1([k_0,\infty)),
 \]
-
-These estimates are uniform on the slab and allow parametrix transfer
-between Fourier and configuration space.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Appendix A.2: SPT-Filtered Covariances}
-\addcontentsline{toc}{section}{Appendix A.2: SPT-Filtered Covariances}
-
-SPT factorization yields TT-sector covariances of the form
+then there is a unique \(\Gamma_\infty\in\X\) such that
 \[
-C = f(L)\,(L+\lambda_*)^{-1},
+ \Gamma_k\longrightarrow\Gamma_\infty,
+ \qquad
+ \|\Gamma_\infty-\Gamma_k\|_{\X}
+ \leq\int_k^\infty g(s)\,ds.
 \]
-with $f$ completely monotone and supported on $[\tau_0,\infty)$.
-
-In Fourier variables,
-\[
-\|\widehat C(p)\| \lesssim \frac{e^{-\tau_0|p|^2}}{|p|^2+\lambda_*}.
-\]
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Appendix A.3: Gaussian Damping Implies Sobolev Smoothing}
-\addcontentsline{toc}{section}{Appendix A.3: Gaussian Damping Implies Sobolev Smoothing}
-
-\begin{lemma}[Sobolev smoothing]
-For any $\sigma\ge0$,
-\[
-C : H^s \to H^{s+\sigma}
-\]
-is bounded. The operator norm depends on $\tau_0,\lambda_*,\sigma$
-and bounded-geometry constants.
-\end{lemma}
+\end{theorem}
 
 \begin{proof}
-The multiplier
+For \(K>k\), absolute continuity gives
 \[
-(1+|p|^2)^{\sigma/2}\frac{e^{-\tau_0|p|^2}}{|p|^2+\lambda_*}
+ \|\Gamma_K-\Gamma_k\|_{\X}
+ \leq\int_k^K\|\partial_s\Gamma_s\|_{\X}\,ds
+ \leq\int_k^\infty g(s)\,ds.
 \]
-is bounded for all $\sigma$; transfer to the slab uses Appendix A.1.
+The tail tends to zero, so \(\Gamma_k\) is Cauchy. Completeness gives the
+limit, and \(K\to\infty\) gives the bound.
 \end{proof}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Appendix A.4: Linearized FRG Shell Operator}
-\addcontentsline{toc}{section}{Appendix A.4: Linearized FRG Shell Operator}
-
-The linearized Wetterich RHS at scale $k$ is
+The commonly used Gaussian estimate
 \[
-\mathcal J_k(\delta\Gamma)
-=\tfrac12\,\mathrm{STr}\bigl[
-G_k\,\delta\Gamma^{(2)}\,G_k\,\partial_kR_k
-\bigr] + \text{ghost/Ward terms}.
+ g(k)=Ck^m e^{-c\tau_0k^2},
+ \qquad C,c,\tau_0>0,
 \]
+satisfies the theorem. This proves an endpoint \emph{if the estimate is
+available}. It does not prove the estimate from MTT geometry. In particular,
+an internal q79 spectral gap does not supply the required suppression of
+four-dimensional FRG shells.
 
-All terms contain two propagators and one shell-localized insertion.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Appendix A.5: Compactness via Rellich on Slabs}
-\addcontentsline{toc}{section}{Appendix A.5: Compactness via Rellich on Slabs}
-
-\begin{lemma}[Rellich compactness]
-On a bounded slab,
+\begin{proposition}[When an endpoint is a fixed point]
+\label{prop:endpoint-fixed}
+Let \(x(t)\) solve the autonomous Banach-space equation
 \[
-H^{s+\sigma}\hookrightarrow H^s
+ \dot x=\beta(x)
 \]
-is compact for $\sigma>0$.
-\end{lemma}
-
-Combined with Appendix A.3, any smoothing operator
-$H^s\to H^{s+\sigma}$ induces a compact map on $H^s$.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Appendix A.6: Quantitative Shell Contraction}
-\addcontentsline{toc}{section}{Appendix A.6: Quantitative Shell Contraction}
-
-\begin{lemma}[Shell localization]
-$\partial_kR_k$ is spectrally supported in
-$a_0k^2\le-\bar\nabla^2\le a_1k^2$.
-\end{lemma}
-
-\begin{lemma}[Quantitative contraction]
-There exist constants $C'(b,\rho,R,s)$ and $c>0$ such that
-\[
-\|\mathcal K_{k\to bk}(\delta\Gamma)\|_{\mathcal B,\rho;R}
-\le C'(b,\rho,R,s)\,k\,e^{-c\tau_0k^2}
-\|\delta\Gamma\|_{\mathcal B,\rho;R}.
-\]
-\end{lemma}
+with locally Lipschitz \(\beta\). If \(x(t)\to x_\ast\) as
+\(t\to\infty\), then \(\beta(x_\ast)=0\). Consequently the time-step map
+fixes \(x_\ast\).
+\end{proposition}
 
 \begin{proof}
-Each TT propagator contributes $e^{-\tau_0|p|^2}$ on the shell,
-yielding an overall $e^{-c\tau_0k^2}$ factor. Analytic bounds
-absorb derivatives; integrate over $[k,bk]$.
+If \(\beta(x_\ast)\neq0\), Hahn--Banach gives a bounded linear functional
+\(\ell\) with \(\ell(\beta(x_\ast))>0\). By continuity,
+\(\ell(\beta(x(t)))\) stays bounded below by a positive constant for all
+sufficiently large \(t\). Then \(\ell(x(t))\) cannot converge, a
+contradiction.
 \end{proof}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Appendix A.7: Spectral Consequences}
-\addcontentsline{toc}{section}{Appendix A.7: Spectral Consequences}
+The proposition explains why dimensionless autonomous variables are
+essential. It cannot be applied to a dimensionful endpoint before the
+rescaling and limiting flow are established.
 
-The RG-step linearization decomposes as
+\section{Exact and approximate conjugacy}
+
+\begin{theorem}[Conditional MTT--FRG conjugacy]
+\label{thm:conjugacy}
+Suppose \(\Cmap:\U\to\X\) is injective and continuously differentiable near
+\(u_\ast\), and
+\begin{equation}
+ \Rmap_b\circ\Cmap=\Cmap\circ\Tmap_b
+ \label{eq:conjugacy}
+\end{equation}
+there. If \(\Tmap_bu_\ast=u_\ast\), then
+\(\Gamma_\ast=\Cmap(u_\ast)\) is an FRG fixed point. If \(D\Cmap(u_\ast)\)
+is a bounded linear isomorphism onto its image, then the restricted
+linearizations are similar:
 \[
-D\mathcal R_b = \mathcal S_b + \mathcal K_b,
+ D\Rmap_b(\Gamma_\ast)|_{\Ran D\Cmap}
+ =
+ D\Cmap(u_\ast)\,D\Tmap_b(u_\ast)\,
+ D\Cmap(u_\ast)^{-1}.
 \]
-with $\mathcal K_b$ compact. By Riesz--Schauder theory,
-only finitely many eigenvalues lie outside the unit disk.
-Hence the unstable manifold is finite-dimensional.
+Thus their spectra and algebraic multiplicities agree on that image.
+\end{theorem}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Appendix A.8: Relation to Probabilistic Slab Admissibility}
-\addcontentsline{toc}{section}{Appendix A.8: Relation to Probabilistic Slab Admissibility}
+\begin{proof}
+Apply \eqref{eq:conjugacy} at \(u_\ast\), then differentiate it and use the
+chain rule.
+\end{proof}
 
-The present appendices establish deterministic operator control
-of RG shell integration on a bounded slab.
+This theorem is deliberately conditional. Conjugacy is the bridge; it is
+not a consequence of having fixed points on both sides.
 
-Recent results on probabilistic admissibility (FP~V) show that,
-in the Gaussian linearized regime, admissible evolution on a slab
-is generic with overwhelming probability. These results are
-independent but compatible: the deterministic compactness
-established here provides the structural backbone for the
-probabilistic persistence results.
+\begin{proposition}[Approximate conjugacy gives a residual]
+\label{prop:approx-conjugacy}
+Assume on a set \(V\subset\U\) that
+\[
+ \|\Rmap_b(\Cmap u)-\Cmap(\Tmap_bu)\|_{\X}\leq\varepsilon
+\]
+and that \(\Cmap\) is \(L\)-Lipschitz there. Then
+\[
+ \|\Rmap_b(\Cmap u)-\Cmap u\|_{\X}
+ \leq \varepsilon+L\|\Tmap_bu-u\|_{\U}.
+\]
+In particular, an upper fixed point produces an FRG
+\(\varepsilon\)-residual, not necessarily a nearby FRG fixed point.
+\end{proposition}
+
+\begin{proof}
+Insert and subtract \(\Cmap(\Tmap_bu)\) and use the triangle inequality.
+\end{proof}
+
+A nearby fixed point follows only after a separate contraction, degree,
+implicit-function, or validated-numerics theorem. This distinction is the
+main correction to the earlier bridge formulation.
+
+\section{Scheme variation without overclaiming}
+
+Let \(\Gamma_k\) and \(\Gamma'_k\) be flows generated by two regulator
+choices in a common normed action space.
+
+\begin{theorem}[Endpoint comparison]
+\label{thm:scheme}
+Suppose both curves satisfy the hypotheses of \autoref{thm:endpoint} and
+\[
+ h(k)=\|\partial_k\Gamma'_k-\partial_k\Gamma_k\|_{\X}
+ \in L^1([k_0,\infty)).
+\]
+Then
+\[
+ \|\Gamma'_\infty-\Gamma_\infty\|_{\X}
+ \leq
+ \|\Gamma'_{k_0}-\Gamma_{k_0}\|_{\X}
+ \int_{k_0}^\infty h(k)\,dk.
+\]
+\end{theorem}
+
+\begin{proof}
+Integrate the difference of the two flows and take the norm and the limit.
+\end{proof}
+
+This is controlled regulator dependence. It is not scheme independence. A
+stronger statement that the endpoints are related by a bounded
+reparametrization requires that reparametrization to be constructed and its
+remainder bounded. Physical universality additionally concerns observables,
+not equality of off-shell effective actions.
+
+\section{Finite relevant directions}
+
+The previous version wrote a linearization as a bounded plus compact
+operator and inferred finitely many unstable directions. That inference is
+invalid unless the noncompact part has controlled essential spectrum.
+
+\begin{theorem}[Quasi-compact unstable subspace]
+\label{thm:quasicompact}
+Let \(L:\X\to\X\) be bounded and suppose its essential spectral radius
+satisfies
+\[
+ r_{\mathrm{ess}}(L)<1.
+\]
+Then the part of \(\spec L\) outside the closed unit disk consists of
+finitely many isolated eigenvalues, each of finite algebraic multiplicity.
+The associated Riesz projection
+\[
+ P_u=\frac{1}{2\pi i}\oint_\gamma(z\Id-L)^{-1}\,dz
+\]
+has finite rank, where \(\gamma\) encloses precisely that spectrum.
+Therefore the linear unstable subspace \(\Ran P_u\) is finite-dimensional.
+\end{theorem}
+
+\begin{proof}
+This is the spectral decomposition theorem for quasi-compact operators:
+outside every circle of radius strictly larger than
+\(r_{\mathrm{ess}}(L)\), the spectrum is a finite set of poles of the
+resolvent with finite-rank Riesz projections \cite{Kato}.
+\end{proof}
+
+If \(L=S+K\) with \(K\) compact, then
+\[
+ r_{\mathrm{ess}}(L)=r_{\mathrm{ess}}(S).
+\]
+Compactness of \(K\) therefore helps only after
+\(r_{\mathrm{ess}}(S)<1\) is proved. A nonlinear local unstable manifold
+also requires a sufficiently smooth RG map and hyperbolicity; it does not
+follow from the linear statement alone.
+
+\section{What SPT damping would have to establish}
+
+The conditional SPT route can now be stated as a finite checklist:
+
+\begin{enumerate}
+\item select a four-dimensional, gauge-compatible TT or BV/BRST operator;
+\item derive its filter from the same MTT geometry rather than insert it as
+a regulator choice;
+\item prove the FRG shell estimate in the declared action norm;
+\item pass to autonomous dimensionless variables;
+\item construct the chart \(\Cmap\) and verify exact conjugacy or a certified
+defect;
+\item bound the essential spectral radius of the linearized step;
+\item compare regulator-independent observables, including errors.
+\end{enumerate}
+
+The current corpus supplies useful ingredients but not this complete chain.
+The finite q79 Hessian is exact at its declared algebraic tier. The
+Euclidean TT/SPT paper gives a conditional filtered model. The constructive
+QG series provides finite-volume and finite-cutoff contracts. The
+continuum physical q79 HYM operator, four-dimensional source map, and
+nonperturbative QFT completion remain open.
+
+\section{Status and interpretation}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}
+>{\raggedright\arraybackslash}p{0.29\textwidth}
+>{\raggedright\arraybackslash}p{0.17\textwidth}
+>{\raggedright\arraybackslash}X@{}}
+\toprule
+Claim & Status & Meaning\\
+\midrule
+Integrable flow gives endpoint & Exact conditional theorem &
+The bound is an input to \autoref{thm:endpoint}.\\
+Endpoint gives fixed point & Conditional &
+Requires autonomous dimensionless flow, as in
+\autoref{prop:endpoint-fixed}.\\
+Fixed points transfer across chart & Exact conditional theorem &
+Requires the conjugacy equation.\\
+Approximate chart gives nearby fixed point & Not automatic &
+It gives only the residual in \autoref{prop:approx-conjugacy}.\\
+Scheme stability & Controlled comparison &
+\autoref{thm:scheme} bounds endpoint differences.\\
+Finite relevant directions & Exact conditional theorem &
+Requires \(r_{\mathrm{ess}}<1\), not smoothing language alone.\\
+MTT proves asymptotic safety & Open &
+The selected chart and all physical analytic certificates are incomplete.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Discussion}
+
+This corrected bridge is useful even before it closes. It tells a future
+calculation exactly what would count as evidence. A numerically observed FRG
+fixed point is evidence about a truncation. An MTT fixed point is evidence
+about an upper map. They become the same mathematical result only after a
+chart intertwines the maps with controlled domain and error.
+
+The quasi-compactness criterion similarly sharpens ``finite
+predictivity.'' Smoothing of one shell contribution does not settle the
+essential spectrum of the full RG derivative. Proving
+\(r_{\mathrm{ess}}<1\), followed by a Riesz-projection computation, would
+give the desired finite-dimensional unstable sector in a form independent
+of basis rhetoric.
+
+\section{Conclusion}
+
+MTT and asymptotic safety presently have a rigorous \emph{conditional}
+relationship. Integrable FRG flow bounds, exact conjugacy, controlled scheme
+variation, and quasi-compact linearization have precise consequences.
+None of those hypotheses is supplied merely by the existence of an internal
+coherent projector.
+
+The next decisive result is a same-source construction of the
+four-dimensional FRG variables and step map from the selected q79 geometry,
+together with a verified shell bound and essential-spectrum estimate. Until
+then, asymptotic safety is a promising diagnostic corner of MTT, not a
+derived equivalence or completed UV theory.
+
+\clearpage
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The FRG conjugacy and unstable-subspace theorem are conditional on a supplied intertwiner. The open strict-upgrade ledger neither supplies that intertwiner nor proves asymptotic safety; it records an independent source-selection frontier.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
+
 \begin{thebibliography}{99}
 
-\bibitem{MTT-Admissibility}
-P.~Nero,
-\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255621}
+\bibitem{Wetterich}
+C.~Wetterich,
+``Exact evolution equation for the effective potential,''
+\emph{Physics Letters B} \textbf{301} (1993), 90--94.
 
-\bibitem{MTT-Foundation}
-P.~Nero,
-\emph{Modal Triplet Theory: Foundation},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.16949762}
+\bibitem{Reuter}
+M.~Reuter,
+``Nonperturbative evolution equation for quantum gravity,''
+\emph{Physical Review D} \textbf{57} (1998), 971--985.
 
-\bibitem{MTT-FixedPoints}
-P.~Nero,
-\emph{Fixed Points I--VI: Complete Coherence Spine},
-Zenodo preprints, August 2025.
-\url{https://doi.org/10.5281/zenodo.16948748}
+\bibitem{ReuterSaueressig}
+M.~Reuter and F.~Saueressig,
+\emph{Quantum Gravity and the Functional Renormalization Group},
+Cambridge University Press, 2019.
 
-\bibitem{MTT-ProjectionAdmissibility}
-P.~Nero,
-\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255838}
+\bibitem{Litim}
+D.~F.~Litim,
+``Optimized renormalization group flows,''
+\emph{Physical Review D} \textbf{64} (2001), 105007.
 
-\bibitem{MTT-Closure}
-P.~Nero,
-\emph{Closure and Inevitability in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255510}
+\bibitem{Kato}
+T.~Kato,
+\emph{Perturbation Theory for Linear Operators},
+Springer, 1995.
 
-\bibitem{MTT-CoherenceCapacity}
+\bibitem{MTTFoundation}
 P.~Nero,
-\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255905}
+\emph{Modal Triplet Theory: Foundations},
+current revised MTT paper corpus, 2026.
 
-\bibitem{MTT-CoherenceDynamics}
+\bibitem{MTTFilter}
 P.~Nero,
-\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256048}
+\emph{Finite Coherent Filters in Modal Triplet Theory: Operator Types,
+Exact Kernels, and Sectoral Boundaries},
+current revised MTT paper corpus, 2026.
 
-\bibitem{MTT-QM}
+\bibitem{MTTQG}
 P.~Nero,
-\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.17074246}
-
-\bibitem{MTT-QFT}
-P.~Nero,
-\emph{From MTT to Quantum Field Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17068816}
-
-\bibitem{MTT-GR}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to General Relativity},
-Zenodo preprint, October 2025.
-\url{https://doi.org/10.5281/zenodo.16950597}
-
-\bibitem{MTT-UVQG}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17077671}
-
-\bibitem{MTT-Measurement}
-P.~Nero,
-\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17177404}
-
-\bibitem{MTT-Irreversibility}
-P.~Nero,
-\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256408}
-
-\bibitem{MTT-Bell-Beables}
-P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17076300}
-
-\bibitem{MTT-Bell-Temporal}
-P.~Nero,
-\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
-Zenodo preprint, August 2025.
-\url{https://doi.org/10.5281/zenodo.18208884}
-
-\bibitem{MTT-Stochastic}
-P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18254862}
+\emph{Modal Triplet Theory: Perturbative Coherent-Sector Quantum Gravity
+and the Heterotic UV-Completion Boundary},
+current revised MTT paper corpus, 2026.
 
 \end{thebibliography}
 

@@ -2,10 +2,9 @@
 \usepackage{series}
 
 \title{The Proto-Spinor:\\
-Conditional Spinorial Closure and the q79 Interface\\
-\large Corrected sixth edition}
+Conditional Spinorial Closure and the q79 Interface}
 \author{Peter Nero}
-\date{July 2026}
+\date{July 2026\\Version 7}
 
 \begin{document}
 \maketitle
@@ -34,8 +33,30 @@ anchoring roles. Lorentzian spinors, masses, and particle assignments remain
 downstream realization problems.
 \end{abstract}
 
-\section*{Revision note for this edition}
-\addcontentsline{toc}{section}{Revision note for this edition}
+\section*{Revision note for version 7}
+\addcontentsline{toc}{section}{Revision note for version 7}
+\begin{description}
+\item[Supersedes.] \emph{The Proto-Spinor: Conditional Spinorial Closure and
+the q79 Interface}, version~6.
+\item[Reason.] Version~6 contains the current finite SpinC and shared-line
+results, but the relation between loop memory, the double cover, the q79
+finite return, and a physical fermion remained too easy to compress into one
+claim.
+\item[Resolution.] Version~7 adds a four-layer reading guide, the explicit
+$2\pi/4\pi$ loop-memory picture, and a one-line derivation of the two
+conjugate finite returns. It keeps strict global Spin, continuum HYM
+intertwining, Lorentzian dynamics, and particle interpretation as separate
+gates and changes no theorem tier.
+\item[Retained result.] The conditional double-cover theorem, universal flat
+shared line, finite Hessian naturality, and binary SpinC--Fourier return are
+retained unchanged.
+\item[Remaining boundary.] Strict global q79 Spin, the nonflat FM/HYM lift,
+the strain-to-q79 continuum intertwiner, and a physical Lorentzian
+particle/action completion remain open.
+\end{description}
+
+\section*{Revision note for version 6}
+\addcontentsline{toc}{section}{Revision note for version 6}
 \begin{description}
 \item[Supersedes.] \emph{The Proto-Spinor: Conditional Spinorial Closure and
 the q79 Interface}, version~5.
@@ -54,6 +75,63 @@ particle/action completion remain open gates.
 \end{description}
 
 \tableofcontents
+
+\section{How to Read the Proto-Spinor}
+
+The construction has four layers, and the word ``proto'' is meant to keep
+them apart.
+\begin{enumerate}
+\item A local comparison field is a linear map between two oriented
+rank-three bundles.  Its $3\times3$ matrix contains orientation and strain
+components.
+\item Requiring the state carrier to remember the nontrivial loop in the
+orientation group replaces $SO(3)$ by its double cover
+$\operatorname{Spin}(3)\cong SU(2)$.
+\item The selected q79 finite geometry supplies a separate rank-$1+2+3$
+carrier, a shared flat differential line, signed sheet monodromy, and an exact
+finite SpinC--Fourier return.
+\item A physical fermion requires a Lorentzian spinor bundle, Dirac dynamics,
+statistics, interactions, observables, and a particle interpretation.
+\end{enumerate}
+The first three layers provide a mathematically controlled precursor to
+spinorial physics.  They do not silently supply the fourth.
+
+\subsection{Object picture: why a double cover appears}
+
+Consider a continuous path of spatial frames describing one full $2\pi$
+rotation.  Its endpoint in $SO(3)$ is the identity, but the path is not
+contractible.  When lifted to $\operatorname{Spin}(3)$, that path begins at
+$+1$ and ends at $-1$.  Repeating the rotation produces a lifted path ending
+at $+1$.  An ordinary vector representation sees only the $SO(3)$ endpoint
+and cannot distinguish the two loop classes; a spinorial carrier retains the
+sign.
+
+This is the exact content of ``loop memory'' in the theorem below.  It does not
+say that a physical object literally rotates through an extra coordinate, and
+it does not derive Fermi statistics or a Dirac equation.  It says that the
+smallest connected faithful carrier for this homotopy information is the
+double cover.
+
+\subsection{The finite double return in one line}
+
+The q79 Fourier operator satisfies $J_{\rm FM}^2=-I$.  The two admissible
+shared-line roots contribute scalar phases $+i$ or $-i$, whose squares are
+also $-1$.  Therefore
+\[
+ (\pm iJ_{\rm FM})^2=(-1)(-I)=I.
+\]
+This is the finite SpinC--Fourier return.  The two signs are complex-conjugate
+lifts of the same determinant structure.  The theorem does not choose one as
+the observed branch and does not identify the compact phase with time.
+
+\subsection{Argument map}
+
+Sections~2--4 construct the local comparison carrier and its conditional spin
+lift.  Sections~5--8 build the selected q79 rank flag, shared line, binary
+sheet lift, and Clifford return.  Sections~9--12 then type the CLN roles and
+state the physical, continuum-intertwiner, and numerical-program boundaries.
+The conclusion should be read as a ledger of which square is closed at the
+finite level and which arrows still require continuum or Lorentzian data.
 
 \section{Status and dependencies}
 
@@ -171,6 +249,12 @@ holonomy data.  The word ``proto'' records that no Lorentzian Dirac operator,
 statistics law, or particle ontology has yet been supplied.
 \end{definition}
 
+The rank-two complex fiber is therefore not a two-component particle model by
+declaration.  It is the smallest representation in which the lifted central
+sign can act nontrivially.  Only after the bundle is connected to Lorentzian
+geometry and an action can its sections be interpreted as physical spinor
+fields.
+
 The theorem does not prove that an internal world must be three-dimensional.
 For example, $SO(2)$ already has nontrivial winding, while higher-dimensional
 orientation groups also possess spin covers.  Rank three is a selected
@@ -216,6 +300,12 @@ direct sum has rank $1+2+3=6$.
 This theorem selects a direct trace/trace-zero/full carrier.  On a connected
 cover with transitive monodromy it does not produce a global ordering of three
 individual sheets.
+
+The labels $1$, $2$, and $3$ refer to ranks of nested algebraic roles:
+the central unit line, the trace-zero complement, and the full cover algebra.
+Their sum gives a six-dimensional fiber carrier.  They are not three particle
+families, three spatial manifolds, or a count of quark colors unless a later
+source map proves such an identification.
 
 \section{Universal shared differential line}
 
@@ -386,6 +476,13 @@ tier. It does not identify compact phase with physical time, choose one of the
 conjugate orientations as the observed universe, or supply the nonflat
 physical FM/HYM correspondence.
 
+The role of SpinC is precise here.  The spin lift contributes a central minus
+sign and the shared $U(1)$ root contributes the compensating phase, so the
+combined finite operator returns exactly.  A strict Spin theorem would have to
+make the spin part close without that $U(1)$ compensation on every global
+relator.  This is why the finite return is a genuine result without resolving
+the separate $w_2$ obstruction.
+
 \section{Circle, lens, and nil as typed carrier roles}
 
 In this revision the three labels have the following nonexhaustive roles:
@@ -483,6 +580,59 @@ sharply separated: the strict global Spin obstruction calculation, the
 physical nonflat FM/HYM lift, the same-source local-to-q79 continuum
 intertwiner, and the Lorentzian action/particle completion.
 
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The selected q=79, finite-matrix, anomaly, and HYM rows provide the concrete lower structures used at the proto-spinor interface. They do not prove the supplied Lorentzian, SpinC, worldsheet, or physical-bundle hypotheses. Other Standard Model rows are corpus context, and the strict source upgrade remains open.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A22/e6_qpsi_qcd_anomaly} (\emph{derived exact}).\par E6 Qpsi matter/exotic QCD anomaly cancellation audit.
+\item \path{A19/hym_wiener_contraction} (\emph{numeric certified}).\par Weighted-theta Fourier-tail and Wiener contraction certificate.
+\item \path{A11/q79_exact_audit} (\emph{derived exact}).\par Executable q=79 exact-branch audit.
+\item \path{A11/q79_exact_theorem} (\emph{derived exact}).\par CRT q=79 theorem on the selected exact branch.
+\item \path{A01/qutrit_weyl_27_matrix} (\emph{derived exact}).\par Sparse 27x27 qutrit-Weyl left-action realization.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Corpus-state cross-checks.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A01/charged_yukawa_higgs_profile} (\emph{profile replay}).\par Versioned Yu, Yd, Ye and lambda\_H profile packet.
+\item \path{A14/ckm_prediction_profile} (\emph{numeric certified}).\par Three selected CKM profile rows and uncertainty comparison.
+\item \path{A01/current_global_lock} (\emph{profile replay}).\par Current non-looping global status and source-certificate map.
+\item \path{A01/direct_k_higgs_row} (\emph{derived exact}).\par Promoted direct K\_threshold.Omega\_H.lambda row.
+\item \path{A04/final_12_of_12_audit} (\emph{profile replay}).\par Twelve-obligation embedded renormalized-SM equivalence audit.
+\item \path{A13/gr_tt_support} (\emph{derived exact}).\par Exact-branch internal TT support certificate; physical normalization remains open.
+\item \path{A40/neutral_two_primitive_profile} (\emph{profile replay}).\par Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
+\item \path{A02/precision_15_source_transport} (\emph{profile replay}).\par Fifteen measured source coordinates, Jacobian and covariance transport.
+\item \path{A02/precision_8x8_workspace} (\emph{profile replay}).\par Eight-coordinate SMDR output with positive-definite 8x8 covariance.
+\item \path{A01/strict_pew_row} (\emph{derived exact}).\par Promoted P\_EW source row at the declared one-shared-primitive standard.
+\end{itemize}
+
+\par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
+
 \begin{thebibliography}{9}
 \bibitem{LawsonMichelsohn}
 H.~B.~Lawson and M.-L.~Michelsohn,
@@ -516,5 +666,7 @@ P.~Nero,
 \emph{q79 Binary-Sheet FM Shared Root and SpinC Return}, executable theorem
 packet, 2026.
 \end{thebibliography}
+
+
 
 \end{document}

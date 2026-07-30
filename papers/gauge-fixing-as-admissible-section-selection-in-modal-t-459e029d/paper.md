@@ -15,8 +15,6 @@ title: |
   Faddeev–Popov Determinants, Ghosts, BRST, and Gribov Ambiguity as Projection Geometry
 ---
 
-*Part VI of VI in the Fixed Points series. As both the cornerstone of the Modal Triplet Theory (MTT) collection and a stand-alone development, the series is intended to function simultaneously as a basis and as a self-contained study. Each paper in the series builds upon its predecessors, extending the fixed-point framework step by step.*
-
 # Purpose and claim discipline
 
 The previous paper in this sequence argued that Dirac delta functions should be read, in MTT-compatible effective descriptions, as singular shadows of finite admissible projection kernels. The present paper applies that principle to the most transparent standard case: gauge fixing.

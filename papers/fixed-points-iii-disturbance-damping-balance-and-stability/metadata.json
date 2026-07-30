@@ -1,59 +1,59 @@
 {
-  "abstract": "We rebuild disturbance\u2013damping stability on the joint spectral decomposition of the corrected FP\u2013II internal operators. For each noncoherent joint mode \\alpha, the one-sided nonlinear damping margin is \\gamma_\\alpha=d_\\alpha-L_\\alpha. Deterministic force amplitude f_\\alpha and stochastic noise power q_\\alpha are distinct quantities. We prove the deterministic input-to-state floor \\limsup|a_\\alpha|\\le f_\\alpha/\\gamma_\\alpha and the stochastic second-moment floor \\limsup\\mathbb E|a_\\alpha|^2\\le q_\\alpha/(2\\gamma_\\alpha) when \\gamma_\\alpha>0. Gaussian invariant laws and necessity of the sign condition are asserted only for exact Ornstein\u2013Uhlenbeck dynamics or robust worst-case stability. Bundlewise results apply to Q\\Psi and use separate stochastic trace and deterministic weighted-series conditions. Finally, deterministic homogenization is made conditional on an enhanced functional central-limit theorem, tightness, and rough-path convergence; the corrected Green\u2013Kubo tensor is D=\\int_0^\\infty(R+R^\\ast)\\,ds.",
+  "abstract": "We develop disturbance\u2013damping stability on the joint spectral decomposition of the Fixed Points II internal operators. For each noncoherent joint mode, its one-sided nonlinear damping margin is the linear damping rate minus the nonlinear Lipschitz allowance. Deterministic force amplitude and stochastic noise power are treated as distinct quantities. We prove separate deterministic input-to-state and stochastic second-moment floors whenever the damping margin is positive. Gaussian invariant laws and necessity of the sign condition are asserted only for exact Ornstein\u2013Uhlenbeck dynamics or robust worst-case stability. Bundlewise results use separate stochastic trace and deterministic weighted-series conditions. Finally, deterministic homogenization is made conditional on an enhanced functional central-limit theorem, tightness, and rough-path convergence, with the effective covariance given by the symmetrized Green\u2013Kubo integral.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v4",
-  "date": "July 2026",
+  "current_version": "v5",
+  "date": "July 2026 Version 5",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949280",
-    "created": "2026-01-09T21:47:16.838606+00:00",
+    "created": "2026-07-29T08:50:35.316982+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18202941",
+    "doi": "10.5281/zenodo.21655371",
     "files": [
       {
-        "checksum": "md5:e755a2f80b3f10a773ce45a68124eb63",
-        "content_url": "https://zenodo.org/api/records/18202941/files/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v3%20(2).pdf/content",
-        "key": "Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v3 (2).pdf",
-        "size": 351567
+        "checksum": "md5:852d83cc98e8abf81e7ed570744a3493",
+        "content_url": "https://zenodo.org/api/records/21655371/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 400012
       }
     ],
-    "id": "18202941",
-    "match_kind": "title_or_file",
+    "id": "21655371",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-09",
-    "record_url": "https://zenodo.org/records/18202941",
+    "publication_date": "2026-07-29",
+    "record_url": "https://zenodo.org/records/21655371",
     "resource_type": "publication",
-    "title": "Fixed Points III: Disturbance - Damping Balance and Stability",
-    "updated": "2026-01-09T21:47:17.291830+00:00",
-    "version": "v2.0"
+    "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
+    "updated": "2026-07-29T08:50:35.802432+00:00",
+    "version": "v5"
   },
-  "main_tex_sha256": "c9c404e85c420a04c41fc0b527162f1f34643c2fbfbb5f365b87921040188f9b",
+  "main_tex_sha256": "fc008122ca171de64b6d409349bdfa4716bd372cfb524f8ed408936e73eac480",
   "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
-  "paper_md_sha256": "edc9e06c23723b4caabff103f48a52aad9ac9a7ad28d6f70e7fac7f45d38fceb",
+  "paper_md_sha256": "37eb4fc8bfe2ac77727687fdd5fd2cc3d3133b2a5b1ea85ee1b07765bef027d0",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_III_V4_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "6c4a92b34ada6d4a62dd5fc19e08d98adff0cacfd10cd956b0f6e571ed3bdd5b",
+    "revision_evidence_sha256": "f76766dde812980b1b5de7b99464565011c7dda3c309cd84e932f21f42e80de1",
     "selected_revision": true,
     "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v3"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 366495,
+      "bytes": 400012,
       "path": "main.pdf",
-      "sha256": "76884c11cae6f7e9b4ea8527f5359f4cded3fd7216d4b2fb1c950aec44401181"
+      "sha256": "a018b2617656fe7227bf93eb7069681054897c5b35d5d46a2140bb9907709c75"
     },
     {
-      "bytes": 16323,
+      "bytes": 22129,
       "path": "main.tex",
-      "sha256": "c9c404e85c420a04c41fc0b527162f1f34643c2fbfbb5f365b87921040188f9b"
+      "sha256": "fc008122ca171de64b6d409349bdfa4716bd372cfb524f8ed408936e73eac480"
     },
     {
       "bytes": 3255,
@@ -61,18 +61,68 @@
       "sha256": "a025981f4252d75be093102a0f9ba352296173c56c0b85177e8a6678aed29870"
     },
     {
-      "bytes": 15705,
+      "bytes": 15299,
       "path": "series.sty",
-      "sha256": "deaaf90be0b98130189531a83e121ad3934803f4844f2b10571046aec3b3ed3f"
+      "sha256": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v4"
   },
-  "source_tree_sha256": "c7d0349e55eff83ec7e95d1cd1d91455a916161c425e02d56c49ba1111a4c00c",
+  "source_tree_sha256": "c458f07fe535e5b332a8f173a0dd00da4460ea1e14eb7c9b96250b7b32edd49b",
   "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
-  "version_relation": "current_source_newer_than_release",
+  "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.16949280",
+      "created": "2026-07-29T08:50:35.316982+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21655371",
+      "files": [
+        {
+          "checksum": "md5:852d83cc98e8abf81e7ed570744a3493",
+          "content_url": "https://zenodo.org/api/records/21655371/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 400012
+        }
+      ],
+      "id": "21655371",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-29",
+      "record_url": "https://zenodo.org/records/21655371",
+      "resource_type": "publication",
+      "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
+      "updated": "2026-07-29T08:50:35.802432+00:00",
+      "version": "v5"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.16949280",
+      "created": "2026-07-28T16:37:05.501397+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21650395",
+      "files": [
+        {
+          "checksum": "md5:3e28ae7854aa87cbdee608ea8ece52fe",
+          "content_url": "https://zenodo.org/api/records/21650395/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 366495
+        }
+      ],
+      "id": "21650395",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-28",
+      "record_url": "https://zenodo.org/records/21650395",
+      "resource_type": "publication",
+      "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
+      "updated": "2026-07-28T16:37:05.916383+00:00",
+      "version": "v4"
+    },
     {
       "concept_doi": "10.5281/zenodo.16949280",
       "created": "2026-01-09T21:47:16.838606+00:00",

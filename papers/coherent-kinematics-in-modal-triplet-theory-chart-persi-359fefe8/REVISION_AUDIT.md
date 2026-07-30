@@ -69,6 +69,5 @@ split probability, horizon entropy, or temporal arrow.
 - Migration and verifier scripts pass Python syntax validation.
 - TeX environment nesting, ASCII/tab guards, and the single-document-terminator
   check pass.
-- PDF compilation remains blocked by the previously identified local MiKTeX
-  dependency `amsthm.sty`; this is an environment issue rather than a detected
-  source error.
+- The current source compiles successfully with two `pdflatex` passes.
+- The complete PDF is rendered and visually inspected before release freeze.

@@ -48,15 +48,15 @@
       "sha256": "4619592e65fc5a313a969fabd58274081324f2c979223f83e4071094acdae314"
     },
     {
-      "bytes": 4186,
+      "bytes": 3784,
       "path": "series.sty",
-      "sha256": "e91fe79eec26fec713bb1ac5f0ca4bea8e9dd32b72bed7608a73c7cf07bafc35"
+      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Effective_Field_Theory_as_a_Shadow_of_Projection__Admissible_Dynamics"
   },
-  "source_tree_sha256": "d26192135808411bbb747528e1e9dfe1be3542cfa102e9124b91989c3e8c6be0",
+  "source_tree_sha256": "49bde456040740c6ab4325897f4e52c70d3ac433743b40647c279499b7768429",
   "title": "Effective Field Theory as a Shadow of Projection\u2013Admissible Dynamics Wilsonian Renormalization under Finite Admissibility",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
