@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18260833",
+      "created": "2026-07-30T21:47:49.445769+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21710653",
+      "files": [
+        {
+          "checksum": "md5:c1e38f76526c4842b54bb752cc5034e6",
+          "content_url": "https://zenodo.org/api/records/21710653/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 358886
+        }
+      ],
+      "id": "21710653",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21710653",
+      "resource_type": "publication",
+      "title": "Local Coherent-Sector Robustness Across Model Families: Transported Resolvents, Accumulated Error, and the Limits of Universality in MTT",
+      "updated": "2026-07-30T21:47:49.788025+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18261353",
       "created": "2026-07-30T21:32:31.916965+00:00",
       "creators": [

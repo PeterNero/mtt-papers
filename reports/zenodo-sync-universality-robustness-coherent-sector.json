@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T21:47:33+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21710653",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "c1e38f76526c4842b54bb752cc5034e6",
+      "local_pdf_sha256": "127c0f141286f0a265083c0269ec6d1e48612d1c60fb7f907e2bb9bf7c7cdf61",
+      "paper_id": "universality-and-robustness-of-the-coherent-sector-in-m-a64842b3",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    }
+  ]
+}

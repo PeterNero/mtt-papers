@@ -12,22 +12,22 @@ Canonical papers audited: **139**.
 | --- | ---: |
 | critical | 7 |
 | major | 7 |
-| moderate | 3 |
+| moderate | 2 |
 | light | 7 |
 | low | 1 |
-| reviewed | 112 |
+| reviewed | 113 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 35 |
+| argument_flow | 34 |
 | conclusion | 12 |
-| concrete_foothold | 37 |
-| object_intuition | 88 |
-| orientation | 47 |
-| result_interpretation | 12 |
+| concrete_foothold | 36 |
+| object_intuition | 87 |
+| orientation | 48 |
+| result_interpretation | 11 |
 
 ## Revision Queue
 
@@ -48,7 +48,6 @@ Canonical papers audited: **139**.
 | major | major | `computational-irreducibility-from-projection-undecidabi-6cc6aafd` | 9 | 190.1 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | major | major | `cosmology-as-global-coherence-capacity-evolution` | 8 | 134.6 | 5/7 | object_intuition, concrete_foothold |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
-| moderate | moderate | `universality-and-robustness-of-the-coherent-sector-in-m-a64842b3` | 4 | 333.5 | 3/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold |
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
 | light | light | `why-general-relativity-and-string-theory-are-the-same-a-98920533` | 4 | 927.2 | 5/7 | object_intuition, conclusion |
@@ -86,6 +85,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6` | 12 | 223.9 | 7/7 | - |
 | reviewed | major | `constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b` | 11 | 156.5 | 7/7 | - |
 | reviewed | major | `the-projection-admissibility-principle-descent-recovery-b0fd6e59` | 11 | 176.0 | 6/7 | object_intuition |
+| reviewed | major | `universality-and-robustness-of-the-coherent-sector-in-m-a64842b3` | 11 | 181.1 | 6/7 | orientation |
 | reviewed | major | `coherent-kinematics-in-modal-triplet-theory-chart-persi-359fefe8` | 10 | 151.1 | 4/7 | orientation, object_intuition, concrete_foothold |
 | reviewed | major | `fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce` | 10 | 234.6 | 7/7 | - |
 | reviewed | major | `modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83` | 10 | 232.0 | 5/7 | orientation, object_intuition |

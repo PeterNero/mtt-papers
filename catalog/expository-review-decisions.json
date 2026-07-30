@@ -912,6 +912,14 @@
       "reviewed_main_tex_sha256": "a64dbb79461e71fbafa2b1f902a357f07595615f3d78f52c48292b8af40aa048",
       "reviewed_pdf_sha256": "05283cb1cabeb634624eb2fdcc8098cc70715b35dc49b373d2e107792ef53a45",
       "reviewed_source_tree_sha256": "0827309394230fab4c0fc78e2c77d61bb9c26b754b0cfbcf2fd265ad609fa843"
+    },
+    "universality-and-robustness-of-the-coherent-sector-in-m-a64842b3": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 2 replaces the global universality claim by a typed local comparison framework. It imports rather than duplicates the single-model Feshbach reduction, transports compressed resolvents to one declared reference Hilbert space, proves local comparison and chainwise error accumulation, specializes to transported Riesz projectors, types quasi-unitary varying-space comparison, separates seven distinct robustness layers, proves finite-time and observable-transfer bounds, and supplies counterexamples showing why reduced spectral agreement does not imply microscopic identity, physical equivalence, long-time agreement, or landscape selection. Current Calabi--Yau, heterotic, string, M-theory, quantum-gravity, and vacuum-selection applications are classified at their actual conditional tiers; the complete 14-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "1db283114f7c49319421b69075c3069e4c782160fdfed5b0abf99ef7a1058fb4",
+      "reviewed_pdf_sha256": "127c0f141286f0a265083c0269ec6d1e48612d1c60fb7f907e2bb9bf7c7cdf61",
+      "reviewed_source_tree_sha256": "217bfdd16df05a6986e41a6d194f652e87c360784d3ccd4708f7157164f60612"
     }
   }
 }

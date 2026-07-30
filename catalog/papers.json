@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
-    "zenodo_records": 250,
-    "zenodo_records_matched": 250,
+    "zenodo_records": 251,
+    "zenodo_records_matched": 251,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -6384,6 +6384,109 @@
           "title": "Horizons, Area Laws, and Entropy from Coherence Capacity Bottlenecks",
           "updated": "2026-01-21T04:55:17.240164+00:00",
           "version": "v2.0"
+        }
+      ]
+    },
+    {
+      "abstract": "Comparing coherent sectors across different geometries is not the same problem as proving that one projector is stable inside one Hilbert space. The models may have different domains, spectra, retained spaces, observables, clocks, and physical interpretations. A claim of universality is therefore meaningful only after those differences are transported into a common comparison record. This paper defines that record. Each model supplies a typed coherent-sector reduction certificate, a nonempty common spectral region, and an explicit unitary or quasi-unitary identification of its retained space with a reference space. The compressed resolvent is then transported to the reference space. We prove a local comparison theorem, a chainwise error-accumulation bound, and an observable-transfer estimate. We also separate projector stability, norm-resolvent robustness, domain or form convergence, finite-time dynamics, observable agreement, and physical equivalence. Two counterexamples mark the boundary of the result. A continuum of microscopically distinct operators can have the same retained resolvent and uniform gap, so local robustness does not make a landscape finite or select one vacuum. Conversely, identical reduced spectral data can be paired with different observable maps and therefore different predictions. The current Modal Triplet Theory applications to Calabi\u2013Yau geometry, heterotic flux backgrounds, perturbative strings, M-theory, and quantum gravity are consequently recorded as conditional realization or compatibility programs, not as members of one proved global physical equivalence class. The result is a rigorous local comparison framework and a concrete completion contract for future cross-model claims.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v2",
+      "date": "Version 2, July 2026",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.18260833",
+        "created": "2026-07-30T21:47:49.445769+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21710653",
+        "files": [
+          {
+            "checksum": "md5:c1e38f76526c4842b54bb752cc5034e6",
+            "content_url": "https://zenodo.org/api/records/21710653/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 358886
+          }
+        ],
+        "id": "21710653",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21710653",
+        "resource_type": "publication",
+        "title": "Local Coherent-Sector Robustness Across Model Families: Transported Resolvents, Accumulated Error, and the Limits of Universality in MTT",
+        "updated": "2026-07-30T21:47:49.788025+00:00",
+        "version": "v2"
+      },
+      "main_tex_sha256": "1db283114f7c49319421b69075c3069e4c782160fdfed5b0abf99ef7a1058fb4",
+      "paper_id": "universality-and-robustness-of-the-coherent-sector-in-m-a64842b3",
+      "paper_md_sha256": "6f4b29fc01510abc65fc26695fd818f9ff64e94784707648a75b0f5fd397dfb5",
+      "release_state": "zenodo_released",
+      "result_refs": [],
+      "revision": {
+        "revision_evidence_path": "papers/universality-and-robustness-of-the-coherent-sector-in-m-a64842b3/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "45b948001505e42705294ab4df4930cb5dc73993b8604f25ce3e5f1d4297bae5",
+        "selected_revision": true
+      },
+      "source_provenance": {
+        "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Universality_and_Robustness_of_the_Coherent_Sector_in_Modal_Triplet_Theory"
+      },
+      "source_tree_sha256": "217bfdd16df05a6986e41a6d194f652e87c360784d3ccd4708f7157164f60612",
+      "title": "Local Coherent-Sector Robustness Across Model Families: Transported Resolvents, Accumulated Error, and the Limits of Universality in MTT",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18260833",
+          "created": "2026-07-30T21:47:49.445769+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21710653",
+          "files": [
+            {
+              "checksum": "md5:c1e38f76526c4842b54bb752cc5034e6",
+              "content_url": "https://zenodo.org/api/records/21710653/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 358886
+            }
+          ],
+          "id": "21710653",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21710653",
+          "resource_type": "publication",
+          "title": "Local Coherent-Sector Robustness Across Model Families: Transported Resolvents, Accumulated Error, and the Limits of Universality in MTT",
+          "updated": "2026-07-30T21:47:49.788025+00:00",
+          "version": "v2"
+        },
+        {
+          "concept_doi": "10.5281/zenodo.18260833",
+          "created": "2026-01-15T18:13:42.156966+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.18260834",
+          "files": [
+            {
+              "checksum": "md5:3ede48156ceae3ece684a5fe9337d4a9",
+              "content_url": "https://zenodo.org/api/records/18260834/files/Universality_and_Robustness_of_the_Coherent_Sector_in_Modal_Triplet_Theory%20(5).pdf/content",
+              "key": "Universality_and_Robustness_of_the_Coherent_Sector_in_Modal_Triplet_Theory (5).pdf",
+              "size": 254164
+            }
+          ],
+          "id": "18260834",
+          "match_kind": "title_or_file",
+          "match_score": 1.0,
+          "publication_date": "2026-01-15",
+          "record_url": "https://zenodo.org/records/18260834",
+          "resource_type": "publication",
+          "title": "Universality and Robustness of the Coherent Sector in Modal Triplet Theory",
+          "updated": "2026-01-15T18:13:42.602587+00:00",
+          "version": "v1.0"
         }
       ]
     },
@@ -13144,82 +13247,6 @@
           "resource_type": "publication",
           "title": "Twistor Encodings as High-Coherence Limits of Modal Triplet Theory",
           "updated": "2026-01-15T10:09:04.793808+00:00",
-          "version": "v1.0"
-        }
-      ]
-    },
-    {
-      "abstract": "A persistent criticism of higher-dimensional and string-inspired frameworks is that their physical predictions depend on finely tuned geometric choices and therefore inherit a large vacuum degeneracy (the landscape). In this paper we show that this criticism does not apply to Modal Triplet Theory (MTT). Building on the Fixed Points series, the Fundamental Contractivity Condition (FCC), the RG\u2013FCC stability theorem, Constructive MTT\u2013QG I\u2013III, and the string/M-theory bridge papers, we prove that the existence, stability, and physical relevance of the coherent sector are universal within a broad class of geometric and spectral models. Calabi\u2013Yau compactifications, heterotic flux vacua (including Strominger systems), and M-theory backgrounds arise as controlled sublimits of the same coherent universality class, while the vast majority of nominal string vacua are excluded by coherence admissibility. This establishes that MTT predictions depend only on the coherent universality class and that the string landscape is reduced to a sharply constrained admissible set.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January, 2026",
-      "latest_zenodo_release": {
-        "concept_doi": "10.5281/zenodo.18260833",
-        "created": "2026-01-15T18:13:42.156966+00:00",
-        "creators": [
-          "Nero, Peter"
-        ],
-        "doi": "10.5281/zenodo.18260834",
-        "files": [
-          {
-            "checksum": "md5:3ede48156ceae3ece684a5fe9337d4a9",
-            "content_url": "https://zenodo.org/api/records/18260834/files/Universality_and_Robustness_of_the_Coherent_Sector_in_Modal_Triplet_Theory%20(5).pdf/content",
-            "key": "Universality_and_Robustness_of_the_Coherent_Sector_in_Modal_Triplet_Theory (5).pdf",
-            "size": 254164
-          }
-        ],
-        "id": "18260834",
-        "match_kind": "title_or_file",
-        "match_score": 1.0,
-        "publication_date": "2026-01-15",
-        "record_url": "https://zenodo.org/records/18260834",
-        "resource_type": "publication",
-        "title": "Universality and Robustness of the Coherent Sector in Modal Triplet Theory",
-        "updated": "2026-01-15T18:13:42.602587+00:00",
-        "version": "v1.0"
-      },
-      "main_tex_sha256": "ca7804a6555ea901168d16e373ef423a22a7089001d7296fad8ac233a6b4a9ce",
-      "paper_id": "universality-and-robustness-of-the-coherent-sector-in-m-a64842b3",
-      "paper_md_sha256": "aaa630c40ac716695fa58e4ee87526b3412840e891069cc005452bbb8d014a3c",
-      "release_state": "zenodo_released",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Universality_and_Robustness_of_the_Coherent_Sector_in_Modal_Triplet_Theory"
-      },
-      "source_tree_sha256": "bbb82e9f2310c5a354b78cba8d036ad06a9efebcfd11a9450441d2e7558d3f7e",
-      "title": "Universality and Robustness of the Coherent Sector in Modal Triplet Theory",
-      "version_relation": "matches_latest_release",
-      "zenodo_releases": [
-        {
-          "concept_doi": "10.5281/zenodo.18260833",
-          "created": "2026-01-15T18:13:42.156966+00:00",
-          "creators": [
-            "Nero, Peter"
-          ],
-          "doi": "10.5281/zenodo.18260834",
-          "files": [
-            {
-              "checksum": "md5:3ede48156ceae3ece684a5fe9337d4a9",
-              "content_url": "https://zenodo.org/api/records/18260834/files/Universality_and_Robustness_of_the_Coherent_Sector_in_Modal_Triplet_Theory%20(5).pdf/content",
-              "key": "Universality_and_Robustness_of_the_Coherent_Sector_in_Modal_Triplet_Theory (5).pdf",
-              "size": 254164
-            }
-          ],
-          "id": "18260834",
-          "match_kind": "title_or_file",
-          "match_score": 1.0,
-          "publication_date": "2026-01-15",
-          "record_url": "https://zenodo.org/records/18260834",
-          "resource_type": "publication",
-          "title": "Universality and Robustness of the Coherent Sector in Modal Triplet Theory",
-          "updated": "2026-01-15T18:13:42.602587+00:00",
           "version": "v1.0"
         }
       ]

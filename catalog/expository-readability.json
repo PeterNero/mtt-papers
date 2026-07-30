@@ -7,17 +7,17 @@
     "light": 7,
     "low": 1,
     "major": 7,
-    "moderate": 3,
+    "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 112
+    "reviewed": 113
   },
   "missing_dimension_counts": {
-    "argument_flow": 35,
+    "argument_flow": 34,
     "conclusion": 12,
-    "concrete_foothold": 37,
-    "object_intuition": 88,
-    "orientation": 47,
-    "result_interpretation": 12
+    "concrete_foothold": 36,
+    "object_intuition": 87,
+    "orientation": 48,
+    "result_interpretation": 11
   },
   "forbidden_boilerplate_hits": [],
   "rows": [
@@ -3268,30 +3268,27 @@
     },
     {
       "paper_id": "universality-and-robustness-of-the-coherent-sector-in-m-a64842b3",
-      "title": "Universality and Robustness of the Coherent Sector in Modal Triplet Theory",
-      "total_words": 1495,
-      "narrative_words": 1334,
-      "formal_results": 4,
-      "proofs": 1,
-      "narrative_words_per_result": 333.5,
-      "orientation": true,
-      "object_intuition": false,
-      "argument_flow": false,
-      "result_interpretation": false,
-      "concrete_foothold": false,
+      "title": "Local Coherent-Sector Robustness Across Model Families: Transported Resolvents, Accumulated Error, and the Limits of Universality in MTT",
+      "total_words": 3744,
+      "narrative_words": 1992,
+      "formal_results": 11,
+      "proofs": 6,
+      "narrative_words_per_result": 181.1,
+      "orientation": false,
+      "object_intuition": true,
+      "argument_flow": true,
+      "result_interpretation": true,
+      "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
-      "coverage_dimensions": 3,
-      "audit_priority": "moderate",
-      "heuristic_priority": "moderate",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "coverage_dimensions": 6,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "major",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "review_note": "Version 2 replaces the global universality claim by a typed local comparison framework. It imports rather than duplicates the single-model Feshbach reduction, transports compressed resolvents to one declared reference Hilbert space, proves local comparison and chainwise error accumulation, specializes to transported Riesz projectors, types quasi-unitary varying-space comparison, separates seven distinct robustness layers, proves finite-time and observable-transfer bounds, and supplies counterexamples showing why reduced spectral agreement does not imply microscopic identity, physical equivalence, long-time agreement, or landscape selection. Current Calabi--Yau, heterotic, string, M-theory, quantum-gravity, and vacuum-selection applications are classified at their actual conditional tiers; the complete 14-page PDF was visually inspected.",
       "missing_dimensions": [
-        "object_intuition",
-        "argument_flow",
-        "result_interpretation",
-        "concrete_foothold"
+        "orientation"
       ]
     },
     {

@@ -1,378 +1,955 @@
 \documentclass[11pt]{article}
-\usepackage{series}
 
-\hypersetup{
-  unicode=true,
-  pdftitle={Universality and Robustness of the Coherent Sector in Modal Triplet Theory},
-  pdfauthor={Peter Nero}
-}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,capitalise]{cleveref}
 
-\title{Universality and Robustness of the Coherent Sector\\
-in Modal Triplet Theory}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\1}{\mathbf 1}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\spec}{\operatorname{spec}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\MTT}{Modal Triplet Theory}
+
+\title{\vspace{-1em}
+Local Coherent-Sector Robustness Across Model Families:\\[0.25em]
+\large Transported Resolvents, Accumulated Error, and the Limits of Universality in MTT}
 \author{Peter Nero}
-\date{January, 2026}
+\date{Version 2, July 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-A persistent criticism of higher-dimensional and string-inspired frameworks is that
-their physical predictions depend on finely tuned geometric choices and therefore
-inherit a large vacuum degeneracy (the ``landscape''). In this paper we show that
-this criticism does not apply to Modal Triplet Theory (MTT).
-Building on the Fixed Points series, the Fundamental Contractivity Condition (FCC),
-the RG--FCC stability theorem, Constructive MTT--QG I--III, and the string/M-theory
-bridge papers, we prove that the existence, stability, and physical relevance of the
-coherent sector are universal within a broad class of geometric and spectral models.
-Calabi--Yau compactifications, heterotic flux vacua (including Strominger systems),
-and M-theory backgrounds arise as controlled sublimits of the same coherent
-universality class, while the vast majority of nominal string vacua are excluded
-by coherence admissibility.
-This establishes that MTT predictions depend only on the coherent universality class
-and that the string ``landscape'' is reduced to a sharply constrained admissible set.
+Comparing coherent sectors across different geometries is not the same
+problem as proving that one projector is stable inside one Hilbert space.
+The models may have different domains, spectra, retained spaces,
+observables, clocks, and physical interpretations.  A claim of
+``universality'' is therefore meaningful only after those differences are
+transported into a common comparison record.
+
+This paper defines that record.  Each model supplies a typed
+coherent-sector reduction certificate, a nonempty common spectral region,
+and an explicit unitary or quasi-unitary identification of its retained
+space with a reference space.  The compressed resolvent is then transported
+to the reference space.  We prove a local comparison theorem, a chainwise
+error-accumulation bound, and an observable-transfer estimate.  We also
+separate projector stability, norm-resolvent robustness, domain or form
+convergence, finite-time dynamics, observable agreement, and physical
+equivalence.
+
+Two counterexamples mark the boundary of the result.  A continuum of
+microscopically distinct operators can have the same retained resolvent and
+uniform gap, so local robustness does not make a landscape finite or select
+one vacuum.  Conversely, identical reduced spectral data can be paired with
+different observable maps and therefore different predictions.  The
+current Modal Triplet Theory applications to Calabi--Yau geometry,
+heterotic flux backgrounds, perturbative strings, M-theory, and quantum
+gravity are consequently recorded as conditional realization or
+compatibility programs, not as members of one proved global physical
+equivalence class.  The result is a rigorous local comparison framework and
+a concrete completion contract for future cross-model claims.
 \end{abstract}
+
+\section*{Revision note: Version 2}
+\addcontentsline{toc}{section}{Revision note: Version 2}
+
+\begin{description}[leftmargin=2.6cm,style=nextline]
+\item[Supersedes]
+Version 2 supersedes Version 1.0, DOI
+\href{https://doi.org/10.5281/zenodo.18260834}
+{10.5281/zenodo.18260834}.
+
+\item[Reason]
+Version 1 defined a broad coherent universality class from generic gap,
+bounded-geometry, and projector language, then treated Calabi--Yau,
+heterotic, string, M-theory, and quantum-gravity constructions as members.
+Its projector theorem did not declare the operator family, contour, or
+perturbation norm.  Its curvature and RG statements did not define an
+evolution or error topology.  It also promoted local spectral control to
+full quantum robustness, physical equivalence, and landscape reduction.
+
+\item[Resolution]
+This revision imports the domain-explicit Feshbach and projector theorem
+from the companion reduction paper rather than duplicating it.  It builds
+the missing cross-model layer: explicit comparison spaces, transported
+compressed resolvents, accumulated errors, state and observable maps, and
+separate dynamical and physical-equivalence gates.
+
+\item[Retained content]
+The useful intuition survives locally.  Families of models can share a
+controlled effective sector when each model has a valid reduction
+certificate and the resulting bounded objects are close after a declared
+identification.
+
+\item[Remaining boundary]
+No current theorem places all viable compactifications, string limits,
+M-theory backgrounds, quantum-gravity constructions, or Standard Model
+realizations in one physical equivalence class.  Nor does a local
+robustness certificate count, select, or empirically identify vacua.
+\end{description}
 
 \tableofcontents
 
-% ============================================================
-\section{Introduction}
+\section{The corrected question}
+\label{sec:question}
 
-The problem of vacuum degeneracy is central to modern unification attempts.
-In string theory, large families of compactifications exist that are
-mathematically consistent but physically indistinguishable at low energies.
-This has led to the ``landscape problem'' and to doubts about predictivity.
-
-The purpose of this paper is to show that, within Modal Triplet Theory (MTT),
-this degeneracy is not fundamental.
-We prove that physical predictions are governed by a \emph{coherent universality class}
-defined by analytic and dynamical conditions, and that most candidate vacua---including
-most string flux compactifications---are excluded by admissibility and stability
-requirements.
-
-This result is not a new postulate.
-It is a synthesis of results proved across:
-\begin{itemize}
-\item the Fixed Points series (existence, stability, curvature robustness);
-\item the MTT Foundation (axioms and ontology);
-\item the RG--FCC theorem (stability under coarse-graining);
-\item Constructive MTT--QG I--III (nonperturbative quantum gravity);
-\item the string, Calabi--Yau, heterotic flux, and M-theory bridge papers.
-\end{itemize}
-
-% ============================================================
-\section{The coherent sector and standing assumptions}
-
-\subsection{Standing assumptions}
-
-We recall the Standing Assumptions (SA.1--SA.4) of the MTT Foundation:
-\begin{enumerate}[label=\textup{(SA\arabic*)}]
-\item $M^{10}=Y^4\times X^6$ with bounded geometry on time slabs;
-\item modal Laplace--type operators are selfadjoint and nonnegative;
-\item a uniform spectral gap separates coherent and noncoherent modes;
-\item the coherent projector $\Pi_{\mathrm{coh}}$ is defined by joint spectral projection.
+The original paper asked whether microscopic geometric changes leave one
+coherent sector physically unchanged.  That sentence contains three
+different mathematical questions:
+\begin{enumerate}[leftmargin=2em]
+\item Does a selected spectral subspace persist under a perturbation?
+\item Can effective operators from different models be compared after
+      their retained spaces are identified?
+\item Does agreement of those effective operators imply agreement of
+      states, observables, dynamics, and physical interpretation?
 \end{enumerate}
 
-These assumptions define the coherent sector
+The first question belongs to spectral perturbation theory.  The second
+requires a transported comparison framework, especially when Hilbert
+spaces or domains vary.  The third requires additional physical maps.  A
+proof of one is not a proof of the next.
+
+\subsection{Why a common gap is not enough}
+
+Suppose two self-adjoint operators each have an isolated low spectral
+cluster.  Even then:
+\begin{itemize}[leftmargin=2em]
+\item their low spaces need not come with a canonical identification;
+\item their operators may have different domains;
+\item operator-norm, graph-norm, form, strong-resolvent, and semigroup
+      convergence are inequivalent hypotheses;
+\item their clocks and observable algebras may be different; and
+\item the same reduced spectrum can carry different physical labels.
+\end{itemize}
+The comparison object must therefore include more than a projector and a
+gap.
+
+\subsection{What this paper does not claim}
+
+This paper does not prove that:
+\begin{itemize}[leftmargin=2em]
+\item one coherent projector exists across every \MTT{} encoding;
+\item all compactifications lie in one connected or controlled family;
+\item local spectral robustness gives uniform long-time dynamics;
+\item a finite or Galerkin comparison converges to a continuum theory;
+\item reduced operator agreement implies physical equivalence;
+\item an admissibility filter makes a candidate landscape finite; or
+\item one selected vacuum follows from the existence of a nonempty
+      admissible set.
+\end{itemize}
+
+\section{The imported single-model reduction}
+\label{sec:imported}
+
+The companion paper
+\cite{MTTCoherentReduction2026} owns the single-model reduction theorem.
+Its essential distinction is worth stating before any cross-model
+comparison.
+
+Let
 \[
-\mathcal{H}_{\mathrm{coh}} := \Ran(\Pi_{\mathrm{coh}}),
+  \cH_a=\cH_{P,a}\oplus\cH_{Q,a}
 \]
-which is the sole carrier of physical degrees of freedom in MTT.
+and let
+\[
+ T_a=
+ \begin{pmatrix}
+ A_a&B_a\\ C_a&D_a
+ \end{pmatrix},
+ \qquad
+ \cD(T_a)=\cD(A_a)\oplus\cD(D_a),
+\]
+where \(A_a\) and \(D_a\) are self-adjoint, \(B_a\) and \(C_a\) are
+bounded, and \(C_a=B_a^*\).  For
+\(z\in\rho(D_a)\), define
+\[
+ F_a(z)=A_a-z-B_a(D_a-z)^{-1}C_a.
+\]
+If \(z\in\rho(T_a)\) as well, then
+\[
+ R_a^P(z)
+ :=
+ P_a(T_a-z)^{-1}P_a\big|_{\cH_{P,a}}
+ =
+ F_a(z)^{-1}.
+\]
 
-\subsection{Physical relevance}
+The bounded correction is
+\[
+ \Sigma_a(z)=B_a(D_a-z)^{-1}C_a
+\]
+and obeys
+\[
+ \|\Sigma_a(z)\|
+ \leq
+ \|B_a\|\,\|(D_a-z)^{-1}\|\,\|C_a\|.
+\]
+Every factor is typed and every spectral parameter is declared.
 
-All constructions in the MTT corpus---effective QFT, quantum gravity,
-measurement dynamics, and phenomenology---are formulated on
-$\mathcal{H}_{\mathrm{coh}}$.
-Noncoherent modes are dynamically suppressed by the FCC and do not
-contribute to physical observables.
+\begin{remark}[Exact spectral projectors]
+If \(P_a\) is the exact spectral projector of the same self-adjoint
+operator \(T_a\), then it reduces \(T_a\), so
+\[
+ P_aT_aQ_a=Q_aT_aP_a=0.
+\]
+A nonzero eliminated-sector correction requires a projector selected from
+a reference operator, symmetry, Galerkin space, localization rule, or
+approximate criterion.  Cross-model comparison must record which case is
+being used.
+\end{remark}
 
-% ============================================================
-\section{Coherent universality class}
+This paper begins only after each model has supplied such an individual
+certificate.  It does not weaken or silently fill a missing single-model
+domain, resolvent, or source row.
 
-\subsection{Definition}
+\section{The transported comparison record}
+\label{sec:record}
 
-\begin{definition}[Coherent universality class]
-Two MTT models lie in the same coherent universality class if:
-\begin{enumerate}[label=\textup{(\roman*)}]
-\item both satisfy the Standing Assumptions;
-\item their modal Laplacians differ by bounded, relatively compact perturbations;
-\item their spectral gaps remain strictly positive;
-\item their coherent projectors differ by a bounded operator of norm $<1$.
+\begin{definition}[Controlled model record]
+\label{def:modelrecord}
+A controlled model record indexed by \(a\) is
+\[
+\cM_a=
+\bigl(
+\cH_a,G_a,T_a,P_a,Q_a,
+A_a,B_a,C_a,D_a,
+\Omega,
+\varepsilon_a,
+U_a,
+\cS_a,\cO_a,\iota_a,
+\pi_a
+\bigr),
+\]
+with the following data:
+\begin{enumerate}[leftmargin=2em]
+\item \(G_a\) is the reference operator or rule selecting \(P_a\);
+\item \(T_a\) and its four blocks satisfy the domain assumptions in
+      \cref{sec:imported};
+\item \(\Omega\) is a nonempty compact set contained in
+      \[
+      \rho(T_a)\cap\rho(D_a);
+      \]
+\item the compressed resolvent \(R_a^P(z)\) is uniformly bounded on
+      \(\Omega\);
+\item \(U_a:\cH_{P,a}\to\cK\) is a declared unitary identification with
+      one reference Hilbert space \(\cK\);
+\item \(\varepsilon_a\) is the individual reduction or numerical error;
+\item \(\cS_a\), \(\cO_a\), and \(\iota_a\) record states, observables,
+      and physical interpretation maps; and
+\item \(\pi_a\) records provenance, theorem status, and source hashes.
 \end{enumerate}
 \end{definition}
 
-This formalizes the notion that microscopic geometric differences
-are physically irrelevant provided coherence persists.
+The common \(\Omega\) is part of the comparison.  Two reductions evaluated
+at unrelated spectral parameters or on disjoint resolvent regions have not
+yet been compared.
 
-\subsection{Stability of the coherent projector}
+\begin{definition}[Transported compressed resolvent]
+For a controlled model record, define
+\[
+ \widehat R_a(z)
+ =
+ U_a R_a^P(z)U_a^*
+ \in\mathcal B(\cK),
+ \qquad z\in\Omega.
+\]
+For two records define
+\[
+ d_\Omega(a,b)
+ =
+ \sup_{z\in\Omega}
+ \|\widehat R_a(z)-\widehat R_b(z)\|.
+\]
+\end{definition}
 
-\begin{theorem}[Projector stability]
-Within a coherent universality class, the coherent projector
-$\Pi_{\mathrm{coh}}$ varies continuously in operator norm and
-defines isomorphic coherent sectors.
+Because the identifications \(U_a\) are part of the records, this
+functional compares bounded operators on one fixed space.  Changing
+\(U_a\) changes the question and must be reported as a different
+comparison convention.
+
+\section{Local comparison and accumulated error}
+\label{sec:comparison}
+
+\begin{theorem}[Transported local comparison]
+\label{thm:transported}
+Let \(a,b\) be controlled model records on a common compact region
+\(\Omega\).  Then \(d_\Omega(a,b)<\infty\).  It is symmetric and obeys
+the triangle inequality.  More generally, suppose
+\[
+ E_a,E_b:\Omega\to\mathcal B(\cK)
+\]
+are declared approximate reduced-resolvent fields satisfying
+\[
+ \sup_{z\in\Omega}\|\widehat R_a(z)-E_a(z)\|
+ \leq\varepsilon_a,
+ \qquad
+ \sup_{z\in\Omega}\|\widehat R_b(z)-E_b(z)\|
+ \leq\varepsilon_b.
+\]
+Then
+\[
+ d_\Omega(a,b)
+ \leq
+ \varepsilon_a
+ +
+ \sup_{z\in\Omega}\|E_a(z)-E_b(z)\|
+ +
+ \varepsilon_b.
+\]
 \end{theorem}
 
 \begin{proof}
-This follows from Kato perturbation theory for isolated spectral
-subspaces combined with the uniform spectral gap established
-in Fixed Points~I and~II.
+Uniform boundedness follows from compactness of \(\Omega\), continuity of
+each resolvent, and the unitary invariance of the operator norm.  Symmetry
+is immediate.  For any third record \(c\),
+\[
+\begin{aligned}
+\|\widehat R_a(z)-\widehat R_c(z)\|
+&\leq
+\|\widehat R_a(z)-\widehat R_b(z)\|\\
+&\quad+
+\|\widehat R_b(z)-\widehat R_c(z)\|.
+\end{aligned}
+\]
+Taking the supremum gives the triangle inequality.  Inserting and
+subtracting \(E_a(z)\) and \(E_b(z)\) gives the final estimate.
 \end{proof}
 
-% ============================================================
-\section{Robustness under curvature, RG flow, and quantum gravity}
-
-\subsection{Curvature robustness}
-
-Fixed Points~IV and~V show that base curvature enters the modal
-dynamics as a bounded lower-order perturbation quantified by
-$\Delta_{\mathrm{curv}}(Y)$.
-
-\begin{theorem}[Curvature robustness]
-If $\Delta_{\mathrm{curv}}(Y)$ remains finite, the FCC remains
-satisfied and the coherent sector persists.
-Regions where curvature drives the system outside the coherence
-window are automatically excluded by admissibility barriers.
-\end{theorem}
-
-\subsection{RG and coarse-graining invariance}
-
-\begin{theorem}[RG--FCC invariance]
-Renormalization group flow compatible with the FCC preserves
-the coherent universality class.
-\end{theorem}
-
-\subsection{Quantum gravity robustness}
-
-Constructive MTT--QG I--III establish that:
-\begin{itemize}
-\item the coherent sector admits a nonperturbative definition
-      via Borel summation;
-\item BRST invariance and gauge independence hold on the Borel sums;
-\item a physical Hilbert space exists;
-\item infrared limits and scattering are well-defined on
-      asymptotically flat slabs.
-\end{itemize}
-
-Thus coherence is preserved not only classically but
-under full quantum dynamics.
-
-% ============================================================
-\section{String theory as a coherent sublimit}
-
-\subsection{Calabi--Yau compactifications}
-
-The Calabi--Yau paper shows that compact CY manifolds with
-Hermitian--Yang--Mills bundles satisfy the Standing Assumptions
-and lie within the coherent universality class.
-The resulting 4D EFT is indistinguishable from standard CY
-compactifications up to local field redefinitions.
-
-Degenerations that collapse the injectivity radius or close
-the spectral gap violate SA.1 or SA.4 and are excluded.
-Thus, the CY ``corner'' of string theory is a proper submanifold
-of the coherent universality class, not the generic case.
-
-\subsection{Heterotic flux vacua and Strominger systems}
-
-The heterotic flux papers show that solutions of the
-Hull--Strominger system arise as stationary points of an
-MTT selection functional.
-Strict convexity near solutions implies local uniqueness
-and stability.
-
-Flux choices that violate the twisted spectral gap or destroy
-the boundedness of $\Pi_{\mathrm{coh}}$ are inadmissible.
-Hence, the heterotic landscape is reduced to a discrete or
-lower-dimensional admissible subset.
-
-\subsection{General string limits}
-
-The ``From MTT to String Theory'' paper shows that
-perturbative string theory arises as a sublimit of MTT
-in which the coherent sector is restricted to backgrounds
-satisfying worldsheet conformal invariance.
-Vanishing of $\beta$-functions follows from action-level
-matching up to local field redefinitions.
-
-Dualities and holographic correspondences appear as
-equivalences within the same coherent universality class,
-not as fundamental symmetries.
-
-% ============================================================
-\section{M-theory and higher-dimensional robustness}
-
-The M-theory bridge paper demonstrates that:
-\begin{itemize}
-\item shifted flux quantization,
-\item anomaly inflow,
-\item M2/M5 brane couplings,
-\item and effective moduli stabilization
-\end{itemize}
-arise naturally from the MTT fixed-point structure.
-
-As in the string case, admissibility and stability restrict
-the space of allowed backgrounds.
-Nominal M-theory vacua that violate coherence conditions
-are excluded dynamically.
-
-% ============================================================
-\section{Landscape reduction as admissibility}
-
-Across string and M-theory limits, the same pattern emerges:
-\begin{quote}
-\emph{The ``landscape'' is not a space of equally viable vacua,
-but a space of candidate configurations, most of which are
-excluded by coherence admissibility.}
-\end{quote}
-
-The physically relevant set is
+\begin{corollary}[Error accumulation along a comparison chain]
+\label{cor:chain}
+For controlled records \(a_0,\ldots,a_N\) on the same \(\Omega\),
 \[
-\mathcal{B}_{\mathrm{adm}}
-=
-\{\beta:\ \text{bounded geometry, spectral gap, FCC margin,
-and bounded }\Pi_{\mathrm{coh}}\}.
+ d_\Omega(a_0,a_N)
+ \leq
+ \sum_{j=0}^{N-1}d_\Omega(a_j,a_{j+1}).
 \]
+Consequently, a chain of \(N\) comparisons each certified only to
+\(\varepsilon\) gives at best an \(N\varepsilon\) endpoint bound unless a
+stronger cancellation theorem is supplied.
+\end{corollary}
 
-This set is typically small, structured, and often discrete.
+\begin{proof}
+Iterate the triangle inequality in
+\cref{thm:transported}.
+\end{proof}
 
-% ============================================================
-\section{Comparison with fine-tuned models}
+This simple bound matters in a large corpus.  A sequence
+\[
+ \text{upper geometry}
+ \longrightarrow
+ \text{finite operator}
+ \longrightarrow
+ \text{four-dimensional action}
+ \longrightarrow
+ \text{observable}
+\]
+cannot reuse the same tolerance at every arrow and report it once at the
+end.  Each arrow contributes its own error and provenance row.
 
-Unlike frameworks that rely on exact holonomy, supersymmetry,
-or isolated compactifications, MTT requires only:
-\begin{itemize}
-\item bounded geometry,
-\item spectral gap,
-\item dynamical stability.
+\subsection{Local class, not global equivalence}
+
+\begin{definition}[Local coherent comparison class]
+Fix a reference record \(a_0\), a common region \(\Omega\), fixed
+identification conventions, and a tolerance \(\varepsilon>0\).  The local
+comparison class is
+\[
+ \mathfrak U_\varepsilon(a_0;\Omega)
+ =
+ \{a:\ d_\Omega(a,a_0)\leq\varepsilon\}.
+\]
+\end{definition}
+
+This is a useful neighborhood, not a theorem that all viable models lie in
+it.  Finite-tolerance membership is also not automatically transitive at
+the same tolerance: two members can be as far as \(2\varepsilon\) apart.
+
+\section{Projector stability is one separate layer}
+\label{sec:projector}
+
+The retained spaces themselves may vary.  To compare their projectors, one
+needs full-space identifications, not only the retained unitaries in
+\cref{def:modelrecord}.
+
+\begin{proposition}[Transported Riesz-projector bound]
+\label{prop:riesz}
+Let \(W_a:\cH_a\to\cH_*\) be unitary and set
+\[
+ \widetilde G_a=W_aG_aW_a^*.
+\]
+Suppose \(G_*\) and \(\widetilde G_a\) are self-adjoint on the same dense
+domain,
+\[
+ V_a=\widetilde G_a-G_*
+\]
+is bounded and self-adjoint, and a positively oriented contour
+\(\Gamma\subset\rho(G_*)\) encloses the selected reference cluster.  Define
+\[
+ M_*=\sup_{z\in\Gamma}\|(G_*-z)^{-1}\|.
+\]
+If \(M_*\|V_a\|<1\), then \(\Gamma\subset\rho(\widetilde G_a)\), and the
+corresponding spectral projectors satisfy
+\[
+ \|W_aP_aW_a^*-P_*\|
+ \leq
+ \frac{\operatorname{length}(\Gamma)}{2\pi}
+ \frac{M_*^2\|V_a\|}
+      {1-M_*\|V_a\|}.
+\]
+If the right-hand side is below one and \(P_*\) has finite rank, the
+retained ranks agree.
+\end{proposition}
+
+\begin{proof}
+This is the standard Riesz-projector perturbation estimate in the
+transported Hilbert space.  The resolvent identity and Neumann series give
+\[
+ \|(\widetilde G_a-z)^{-1}\|
+ \leq
+ \frac{M_*}{1-M_*\|V_a\|}.
+\]
+Integrating the second resolvent identity around \(\Gamma\) yields the
+bound.  Orthogonal projectors at distance below one have isomorphic
+ranges.  See Kato and Davis--Kahan
+\cite{Kato1995,DavisKahan1970}; the domain-explicit \MTT{} specialization
+is recorded in \cite{MTTCoherentReduction2026}.
+\end{proof}
+
+\begin{remark}
+\Cref{prop:riesz} proves projector and finite-rank stability.  It does not
+prove closeness of the full operators, their Feshbach maps, semigroups,
+states, observables, or physical interpretations.
+\end{remark}
+
+\section{When the Hilbert spaces genuinely vary}
+\label{sec:varying}
+
+A unitary \(W_a:\cH_a\to\cH_*\) always exists for Hilbert spaces of the same
+Hilbert dimension, but it may not represent the geometry or preserve the
+operators.  Singular limits can also change effective spaces.  The
+appropriate literature then uses identification maps and explicit defect
+bounds rather than pretending the operators already act on one space
+\cite{KuwaeShioya2003,Post2012}.
+
+\begin{definition}[Quasi-unitary comparison data]
+A quasi-unitary comparison from \(\cH_{P,a}\) to \(\cK\) consists of
+\[
+ J_a:\cH_{P,a}\to\cK,
+ \qquad
+ J_a':\cK\to\cH_{P,a},
+\]
+and a defect \(\eta_a\geq0\) such that
+\[
+ \|J_a\|,\|J_a'\|\leq1+\eta_a,
+\]
+\[
+ \|J_a'J_a-\1_{\cH_{P,a}}\|\leq\eta_a,
+ \qquad
+ \|J_aJ_a'-\1_{\cK}\|\leq\eta_a.
+\]
+One then transports the compressed resolvent as
+\[
+ \widetilde R_a(z)=J_aR_a^P(z)J_a'.
+\]
+\end{definition}
+
+The defect must enter the error budget.  For example, if
+\(\|R_a^P(z)\|\leq r_a\) on \(\Omega\), then
+\[
+ \|\widetilde R_a(z)\|
+ \leq
+ (1+\eta_a)^2r_a.
+\]
+More substantive convergence statements require compatibility of the
+forms, domains, or resolvents with \(J_a,J_a'\).  Mosco-type convergence
+and varying-space norm-resolvent convergence are established frameworks
+for such problems \cite{KuwaeShioya2003,Post2012}.  The phrase ``same
+coherent sector'' is not a replacement for those hypotheses.
+
+\section{Seven robustness layers}
+\label{sec:layers}
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{L{0.20\textwidth}L{0.28\textwidth}Y}
+\toprule
+Layer & Typical certificate & What it does not imply \\
+\midrule
+Selected rank
+& Riesz contour, perturbation norm, rank bound
+& Close reduced operator \\
+Projector
+& Operator-norm or angle estimate after full-space transport
+& Stable domains or dynamics \\
+Reduced resolvent
+& Common \(\Omega\), retained identification, norm bound
+& Uniform long-time evolution \\
+Domain or form
+& Graph-gap, relative-bound, or Mosco hypotheses
+& Observable agreement \\
+Finite-time dynamics
+& Generator or semigroup estimate on a declared interval
+& Arbitrary-time equivalence \\
+States and observables
+& State channel, observable transport, expectation error
+& Same microscopic theory \\
+Physical equivalence
+& Algebra, states, dynamics, symmetries, clocks, and comparison functor
+& Follows from no single spectral row \\
+\bottomrule
+\end{tabularx}
+\caption{Robustness is a stack of distinct claims, not one adjective.}
+\label{tab:layers}
+\end{table}
+
+\subsection{Finite-time dynamics}
+
+\begin{proposition}[Bounded-generator finite-time comparison]
+\label{prop:duhamel}
+Let \(H_a,H_b\) be bounded self-adjoint operators on \(\cK\) and suppose
+\[
+ \|H_a-H_b\|\leq\delta.
+\]
+Then for every \(t\in\RR\),
+\[
+ \|e^{-itH_a}-e^{-itH_b}\|
+ \leq |t|\delta.
+\]
+\end{proposition}
+
+\begin{proof}
+Duhamel's formula gives
+\[
+ e^{-itH_a}-e^{-itH_b}
+ =
+ -i\int_0^t
+ e^{-i(t-s)H_a}(H_a-H_b)e^{-isH_b}\,\dd s.
+\]
+The unitary factors have norm one.
+\end{proof}
+
+This is a standard functional-analytic estimate, not a new \MTT{} law.  It
+also displays the time horizon explicitly.  A local spectral or generator
+error can accumulate into an order-one phase error at sufficiently long
+times.
+
+\subsection{States and observables}
+
+\begin{proposition}[Expectation-transfer bound]
+\label{prop:observable}
+Let \(\rho_a,\rho_b\) be density operators on \(\cK\), and let
+\(O_a,O_b\in\mathcal B(\cK)\) be bounded observables.  Then
+\[
+\left|
+\Tr(\rho_aO_a)-\Tr(\rho_bO_b)
+\right|
+\leq
+\|\rho_a-\rho_b\|_1\,\|O_a\|
++
+\|O_a-O_b\|.
+\]
+\end{proposition}
+
+\begin{proof}
+Insert and subtract \(\Tr(\rho_bO_a)\).  Trace duality bounds the first
+difference by
+\(\|\rho_a-\rho_b\|_1\|O_a\|\).  Since
+\(\|\rho_b\|_1=1\), the second is bounded by
+\(\|O_a-O_b\|\).
+\end{proof}
+
+The proposition shows why reduced-resolvent agreement is not yet empirical
+agreement.  One must also transport states and observables and bound their
+errors.
+
+\section{Three boundary counterexamples}
+\label{sec:counterexamples}
+
+\begin{example}[A robust continuum need not be a small landscape]
+\label{ex:continuum}
+For each \(\lambda\in[0,1]\), let
+\[
+ \cH_\lambda=\CC^3,
+ \qquad
+ T_\lambda=
+ \begin{pmatrix}
+ 0&0&0\\
+ 0&2&0\\
+ 0&0&3+\lambda
+ \end{pmatrix},
+ \qquad
+ P_\lambda=
+ \begin{pmatrix}
+ 1&0&0\\
+ 0&0&0\\
+ 0&0&0
+ \end{pmatrix}.
+\]
+The selected eigenvalue is isolated by a uniform gap of at least two.
+All retained spaces are the same line, and for every common
+\(z\neq0\),
+\[
+ R_\lambda^P(z)=-z^{-1}.
+\]
+Thus
+\[
+ d_\Omega(\lambda,\mu)=0
+\]
+for all \(\lambda,\mu\), while the eliminated spectrum varies continuously.
+Local coherent-sector robustness is therefore compatible with a continuum
+of microscopically distinct models.
+\end{example}
+
+\begin{example}[The same reduced spectrum can give different observables]
+\label{ex:observable}
+Take two records with the same one-dimensional retained Hilbert space and
+the same compressed resolvent.  Give the first record the observable
+\(O_0=0\) and the second \(O_1=\1\).  Their unique normalized state gives
+\[
+ \Tr(\rho O_0)=0,
+ \qquad
+ \Tr(\rho O_1)=1.
+\]
+The spectral comparison error is zero, but the predictions differ.  An
+observable identification is indispensable.
+\end{example}
+
+\begin{example}[Projector stability is not arbitrary-time stability]
+\label{ex:time}
+On \(\CC\), take \(H_0=0\) and \(H_\varepsilon=\varepsilon\).  The projector
+is identical and the resolvents converge away from their poles.  At
+\[
+ t=\frac{\pi}{\varepsilon},
+\]
+however,
+\[
+ \|e^{-itH_\varepsilon}-e^{-itH_0}\|=2.
+\]
+Finite-time bounds do not become uniform-in-time equivalence merely because
+\(\varepsilon\) is small.
+\end{example}
+
+\section{What landscape reduction would require}
+\label{sec:landscape}
+
+Let \(\mathfrak V\) be a declared candidate set and let
+\[
+ C:\mathfrak V\to\{0,1\}
+\]
+be a certified admissibility predicate.  The surviving set is
+\[
+ \mathfrak V_{\rm adm}
+ =
+ \{v\in\mathfrak V:C(v)=1\}.
+\]
+This is a filter.  It becomes a landscape-reduction result only after
+additional questions are answered:
+\begin{enumerate}[leftmargin=2em]
+\item How is \(\mathfrak V\) defined or enumerated?
+\item Is \(C\) decidable or certifiable on every candidate in scope?
+\item What measure, index, or counting convention defines ``most''?
+\item Is the surviving set finite, discrete, compact, or merely nonempty?
+\item What dynamics or selection rule chooses among multiple survivors?
+\item Which survivor is empirically identified with our universe?
+\end{enumerate}
+
+Flux-vacuum counts in string theory illustrate why these inputs matter:
+they start from a specified ensemble, charge cutoff, and index or
+distribution \cite{AshokDouglas2004,DouglasKachru2007}.  A local operator
+gap by itself provides none of that counting data.
+
+\begin{proposition}[An admissibility predicate does not imply uniqueness]
+\label{prop:nonselection}
+If \(|\mathfrak V_{\rm adm}|>1\), then the predicate \(C\) alone does not
+select a unique element of \(\mathfrak V_{\rm adm}\).
+\end{proposition}
+
+\begin{proof}
+Every survivor has the same predicate value \(1\).  No rule using only that
+value distinguishes two different survivors.
+\end{proof}
+
+The logical separation among mathematical existence, chart validity,
+admissibility, realization, and empirical identification is developed in
+\cite{MTTVacuumSelection2026}.  Local robustness belongs between
+admissibility and controlled realization; it is not a substitute for the
+later layers.
+
+\section{Current MTT application map}
+\label{sec:applications}
+
+The present paper does not use older papers as proof sources merely because
+they contain the word ``universality.''  It reads the selected current
+revisions at their declared tiers.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{L{0.20\textwidth}L{0.25\textwidth}Y}
+\toprule
+Target family & Current established role & Missing comparison or selection rows \\
+\midrule
+Fixed-point framework
+& Conditional analytic existence and stability under stated hypotheses
+& Physical carrier, source map, and realization theorem
+  \cite{MTTFixedPointsI2026} \\
+Calabi--Yau
+& Conditional lower realization target; fixed compact elliptic problems have standard spectral control
+& Uniformity over moduli, stable visible--hidden bundle, worldsheet, stabilization, and unique selection
+  \cite{MTTCalabiYau2026} \\
+Heterotic/Fu--Yau
+& Exact local and finite ingredients; Lens--Nil is auxiliary; selected \(q=79\) is a completion program
+& Physical rank-three visible--hidden endpoint and common comparison operator
+  \cite{MTTHeteroticFlux2026,MTTHeteroticSelection2026} \\
+Perturbative string
+& Conditional typed encoding at declared order and genus
+& Complete physical worldsheet record, exact infrared SCFT, GSO/modular data, and quantum completion
+  \cite{MTTPerturbativeString2026} \\
+M-theory low-energy limit
+& Conditional eleven-dimensional target record
+& Selected spin geometry, differential C-field, action, branes, and action-preserving upper map
+  \cite{MTTMTheory2026} \\
+Quantum gravity
+& Exact finite TT support and conditional/fixed-order low-energy parity
+& Physical normalization, complete state and measure, selected higher-derivative values, and nonperturbative UV completion
+  \cite{MTTQuantumGravity2026} \\
+\bottomrule
+\end{tabularx}
+\caption{Current branches are not one proved global physical equivalence class.}
+\label{tab:applications}
+\end{table}
+
+This table does not say the programs are incompatible.  It says that a
+common comparison class must be earned by constructing the same typed rows
+for each member and transporting them through explicit maps.
+
+\section{A complete cross-model certificate}
+\label{sec:certificate}
+
+\begin{definition}[Cross-model robustness certificate]
+A cross-model certificate for records \(a,b\) contains
+\[
+\mathfrak C_{a\leftrightarrow b}
+=
+\bigl(
+\mathfrak C_a,\mathfrak C_b,
+\Omega,
+U_a,U_b,
+d_\Omega,
+\varepsilon_{\rm chain},
+\mathfrak T,
+\mathfrak O,
+\mathfrak I,
+\pi
+\bigr),
+\]
+where:
+\begin{itemize}[leftmargin=2em]
+\item \(\mathfrak C_a,\mathfrak C_b\) are complete single-model reduction
+      certificates;
+\item \(\Omega\) is the common full and eliminated-sector resolvent region;
+\item \(U_a,U_b\), or their quasi-unitary replacements, are the
+      identification maps;
+\item \(d_\Omega\) is the transported compressed-resolvent error;
+\item \(\varepsilon_{\rm chain}\) is the accumulated error across all
+      intermediate arrows;
+\item \(\mathfrak T\) records any finite-time, semigroup, graph, or form
+      comparison;
+\item \(\mathfrak O\) records state, observable, and expectation transport;
+\item \(\mathfrak I\) records clocks, units, symmetries, and physical
+      interpretation; and
+\item \(\pi\) records provenance and theorem status.
+\end{itemize}
+\end{definition}
+
+\subsection{Numerical execution}
+
+For a finite or Galerkin comparison, an executable packet should report:
+\begin{enumerate}[leftmargin=2em]
+\item basis dimensions and immutable basis hashes;
+\item Hermiticity and projector residuals;
+\item source and rank of every projector;
+\item interval enclosures for the common spectral region;
+\item certified norms of the eliminated resolvents and couplings;
+\item the retained identification matrices and their unitary defects;
+\item interval bounds for \(d_\Omega\);
+\item every discretization, reduction, transport, and roundoff error
+      separately;
+\item state and observable comparison rows when empirical claims are made;
+      and
+\item a continuum-transfer theorem when the physical target is not the
+      finite object itself.
+\end{enumerate}
+
+An exact finite calculation is exact for the finite object.  It is not a
+continuum, string, gravitational, or physical-equivalence theorem until
+the corresponding transfer rows are supplied.
+
+\section{Ownership of the mathematics}
+\label{sec:ownership}
+
+Spectral projections, resolvent perturbation, closed-operator stability,
+and semigroup estimates belong to established operator theory
+\cite{Kato1995,DavisKahan1970}.  Frameworks for convergence across varying
+Hilbert spaces and spectral structures are likewise established
+\cite{KuwaeShioya2003,Post2012}.
+
+The \MTT{} Foundation owns the general admissibility and status semantics
+\cite{MTTFoundation2026}.  The companion coherent-sector paper owns the
+domain-explicit Feshbach reduction, exact-projector correction, and
+single-model robustness estimate \cite{MTTCoherentReduction2026}.  The
+current Calabi--Yau, heterotic, string, M-theory, and quantum-gravity papers
+own their individual realization records and boundaries.
+
+This paper owns only the integration layer:
+\begin{itemize}[leftmargin=2em]
+\item the transported cross-model record;
+\item the common-region compressed-resolvent comparison;
+\item chainwise accumulation of reduction and comparison errors;
+\item the state-observable transfer requirement;
+\item the explicit seven-layer robustness hierarchy; and
+\item the counterexamples separating local robustness from landscape
+      reduction and physical equivalence.
 \end{itemize}
 
-These conditions are open and robust, placing MTT in the
-same universality class paradigm as critical phenomena
-and effective field theory.
+\section{Claim status and limitations}
+\label{sec:status}
 
-% ============================================================
-\section{Limitations and scope}
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{L{0.31\textwidth}L{0.18\textwidth}Y}
+\toprule
+Statement & Status here & Boundary \\
+\midrule
+Single-model Feshbach reduction
+& Imported
+& Domain-explicit companion theorem \\
+Transported resolvent comparison
+& Proved
+& Common \(\Omega\), declared identifications \\
+Chainwise error accumulation
+& Proved
+& Sum bound; no assumed cancellation \\
+Riesz-projector stability
+& Imported and specialized
+& Fixed transported domain, bounded perturbation \\
+Finite-time bounded dynamics
+& Standard and proved
+& Bounded generators, declared time interval \\
+Expectation transfer
+& Proved
+& Density operators and bounded observables \\
+Varying-space convergence
+& Contract only
+& Requires quasi-unitary, Mosco, form, or resolvent theorem \\
+One global MTT universality class
+& Not established
+& No common source and full comparison record \\
+Landscape reduction
+& Not established
+& Requires candidate set, count/measure, filter execution, and selection \\
+Physical equivalence
+& Not established
+& Requires states, observables, dynamics, symmetries, clocks, and units \\
+\bottomrule
+\end{tabularx}
+\caption{Claim status in Version 2.}
+\label{tab:status}
+\end{table}
 
-Universality does not imply uniqueness of all parameters.
-Large, discontinuous topology changes are not covered.
-Violations of the Standing Assumptions lie outside the
-theory's domain.
+\section{Completion and falsifiability contract}
+\label{sec:completion}
 
-Within its scope, however, coherence is unavoidable.
+A claimed cross-model class is complete only if it supplies:
+\begin{enumerate}[leftmargin=2em]
+\item one exact list of models or a precisely quantified family;
+\item one valid single-model reduction certificate for every member;
+\item explicit full-space or retained-space identification maps;
+\item a nonempty common spectral region;
+\item fixed-domain, graph, form, or varying-space hypotheses appropriate
+      to the claimed topology;
+\item a certified transported error and an accumulated chain budget;
+\item finite-time or semigroup control if dynamics is claimed;
+\item state and observable maps if predictions are compared;
+\item clock, unit, symmetry, and interpretation maps if physical
+      equivalence is claimed; and
+\item an enumeration, measure, decision procedure, and selector if
+      landscape reduction or unique-vacuum selection is claimed.
+\end{enumerate}
 
-% ============================================================
+The claim fails in its declared regime if the contour meets the spectrum,
+the retained rank changes, the common resolvent region becomes empty, an
+identification defect exceeds its tolerance, accumulated error exceeds the
+observable budget, the domain topology changes without control, or a
+held-out observable violates the expectation bound.
+
 \section{Conclusion}
+\label{sec:conclusion}
 
-The coherent sector of Modal Triplet Theory is universal and robust.
-String theory, Calabi--Yau compactifications, heterotic flux vacua,
-and M-theory backgrounds arise as controlled sublimits of the same
-coherent universality class.
-The apparent string landscape is reduced to a sharply constrained
-admissible set by stability and projection alone.
+Coherent-sector robustness is a meaningful and useful local statement.
+It says that after each model has supplied a valid reduction and after the
+retained spaces have been explicitly identified, their bounded compressed
+resolvents can be compared with a certified error.
 
-This result eliminates the primary structural objection to MTT
-and establishes it as a universality-based framework rather than
-a fine-tuned geometric construction.
+That statement does not become global universality by changing its name.
+Projectors, domains, resolvents, finite-time dynamics, states, observables,
+and physical interpretation are different layers.  Their errors accumulate
+through a chain.  A continuum of microscopic models can share exactly the
+same retained resolvent, and equal spectral data can still support
+different observables.
 
-\begin{thebibliography}{99}
+The corrected role of this paper is therefore precise.  It supplies the
+mathematical language by which future \MTT{} branches can prove that they
+belong to one controlled local comparison class.  The current
+Calabi--Yau, heterotic, string, M-theory, and quantum-gravity branches are
+valuable conditional targets and partial constructions, but their common
+physical equivalence and any resulting landscape reduction remain theorem
+obligations rather than established conclusions.
 
-\bibitem{MTT-Admissibility}
-P.~Nero,
-\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255621}
+\section*{Reproducibility statement}
 
-\bibitem{MTT-Foundation}
-P.~Nero,
-\emph{Modal Triplet Theory: Foundation},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.16949762}
+No numerical result is claimed in this paper.  Every displayed estimate is
+analytic and can be checked directly from the stated assumptions.
+Application-level computations must publish the single-model certificates,
+identification maps, interval or exact norm bounds, source hashes, and
+accumulated error ledger described in \cref{sec:certificate}.
 
-\bibitem{MTT-FixedPoints}
-P.~Nero,
-\emph{Fixed Points I--VI: Complete Coherence Spine},
-Zenodo preprints, August 2025.
-\url{https://doi.org/10.5281/zenodo.16948748}
-
-\bibitem{MTT-ProjectionAdmissibility}
-P.~Nero,
-\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255838}
-
-\bibitem{MTT-Closure}
-P.~Nero,
-\emph{Closure and Inevitability in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255510}
-
-\bibitem{MTT-CoherenceCapacity}
-P.~Nero,
-\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255905}
-
-\bibitem{MTT-CoherenceDynamics}
-P.~Nero,
-\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256048}
-
-\bibitem{MTT-QM}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.17074246}
-
-\bibitem{MTT-QFT}
-P.~Nero,
-\emph{From MTT to Quantum Field Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17068816}
-
-\bibitem{MTT-GR}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to General Relativity},
-Zenodo preprint, October 2025.
-\url{https://doi.org/10.5281/zenodo.16950597}
-
-\bibitem{MTT-UVQG}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17077671}
-
-\bibitem{MTT-Measurement}
-P.~Nero,
-\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17177404}
-
-\bibitem{MTT-Irreversibility}
-P.~Nero,
-\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256408}
-
-\bibitem{MTT-Bell-Beables}
-P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17076300}
-
-\bibitem{MTT-Bell-Temporal}
-P.~Nero,
-\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
-Zenodo preprint, August 2025.
-\url{https://doi.org/10.5281/zenodo.18208884}
-
-\bibitem{MTT-Stochastic}
-P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18254862}
-
-\end{thebibliography}
-
+\bibliographystyle{plain}
+\bibliography{main}
 
 \end{document}
