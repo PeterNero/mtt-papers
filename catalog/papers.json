@@ -3,12 +3,12 @@
     "canonical_papers": 140,
     "current_sources_newer_than_release": 0,
     "pandoc_warning_papers": 12,
-    "papers_with_zenodo_release": 134,
-    "papers_without_zenodo_match": 6,
+    "papers_with_zenodo_release": 137,
+    "papers_without_zenodo_match": 3,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 54,
-    "zenodo_records": 230,
-    "zenodo_records_matched": 230,
+    "zenodo_records": 233,
+    "zenodo_records_matched": 233,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -633,6 +633,85 @@
           "title": "From Modal Triplet Theory to Algebraic Quantum Field Theory: Local Nets from Admissible Charts",
           "updated": "2026-01-21T20:01:20.472468+00:00",
           "version": "v1.0"
+        }
+      ]
+    },
+    {
+      "abstract": "This paper separates the exact admissibility exit time of a damped incoherent sector from the earliest time certified by an exponential semigroup bound. It proves the certified threshold formula and obtains the exact formula when a nonnegative self-adjoint generator is reduced by the incoherent projector. Declared operator, projector, spectral-window, tolerance, and time data then determine a unique functional-calculus filter with a controlled error decomposition and an explicit circle benchmark. The result is conditional rather than a first-principles scale prediction: MTT geometry must still select those source data and their physical intertwiner before the filter can replace a regulator or modify a propagator.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v1",
+      "date": "July 2026, Version 1",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.21704669",
+        "created": "2026-07-30T13:44:39.356368+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21704670",
+        "files": [
+          {
+            "checksum": "md5:87fdef6f7be91be815fe3db3e4780d9d",
+            "content_url": "https://zenodo.org/api/records/21704670/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 398975
+          }
+        ],
+        "id": "21704670",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21704670",
+        "resource_type": "publication",
+        "title": "Admissibility-Time Bounds from Fixed-Point Damping Exact Exit Times, Certified Proper-Time Filters, and the MTT Source Boundary",
+        "updated": "2026-07-30T13:44:39.861980+00:00",
+        "version": "v1"
+      },
+      "main_tex_sha256": "797bcbcd71276505665fd2872493b945abf73a4052d9c09c4829b2debe2f3470",
+      "paper_id": "deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3",
+      "paper_md_sha256": "d09b8c2937c0e1213a4925fda76bb8ea0bf15144aa4fbf8f8ba5be010b05ebe7",
+      "release_state": "zenodo_released",
+      "result_refs": [],
+      "revision": {
+        "revision_evidence_path": "papers/deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "655bb6d1dddc8679f4322f49e0227043eac599b1ff69d528af15169d09412525",
+        "selected_revision": true,
+        "superseded_source_path": "5 Dirac Delta/_work/Deriving_the_MTT_Coherence_Scale_from_Fixed__Point_Damping"
+      },
+      "source_provenance": {
+        "legacy_source_path": "5 Dirac Delta/_work/Deriving_the_MTT_Coherence_Scale_from_Fixed__Point_Damping"
+      },
+      "source_tree_sha256": "b119022c17985c53b871e4339bb765a2d91e059518aafe7620c58f64880f33f9",
+      "title": "Admissibility-Time Bounds from Fixed-Point Damping Exact Exit Times, Certified Proper-Time Filters, and the MTT Source Boundary",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.21704669",
+          "created": "2026-07-30T13:44:39.356368+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21704670",
+          "files": [
+            {
+              "checksum": "md5:87fdef6f7be91be815fe3db3e4780d9d",
+              "content_url": "https://zenodo.org/api/records/21704670/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 398975
+            }
+          ],
+          "id": "21704670",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21704670",
+          "resource_type": "publication",
+          "title": "Admissibility-Time Bounds from Fixed-Point Damping Exact Exit Times, Certified Proper-Time Filters, and the MTT Source Boundary",
+          "updated": "2026-07-30T13:44:39.861980+00:00",
+          "version": "v1"
         }
       ]
     },
@@ -3120,32 +3199,6 @@
       ]
     },
     {
-      "abstract": "The preceding delta-projection papers established a structural dictionary: Dirac delta functions arise as singular limits of finite kernels, filters, shells, or selection operations. A natural objection is that this does not yet select a physical finite kernel. This paper addresses the first execution-level selection problem in the fixed-point regime of Modal Triplet Theory (MTT). We prove that if the incoherent sector of an evolve\u2013project system decays with a quantified semigroup bound \\|Q\\Phi_t Q\\| \\le C_Q e^{-\\lambda_\\ast t}, and if admissibility requires residual incoherent leakage below a tolerance \\varepsilon_{\\rm adm}, then the minimal admissible proper-time/heat-time is not a free regulator but is fixed by \\tau_{\\rm adm}=\\frac{1}{\\lambda_\\ast}\\log\\frac{C_Q}{\\varepsilon_{\\rm adm}} . The corresponding canonical MTT kernel is K_{\\rm adm}(x,y) = \\big\\langle x\\big|P\\,\\chi(A)\\,e^{-\\tau_{\\rm adm}A}\\,\\chi(A)\\,P\\big|y\\big\\rangle, where A is the fixed-point linearized stabilization operator, P is the coherent-sector projector, and \\chi(A) is the admissible spectral acceptance window. We then derive explicit error decompositions, show how the effective scale \\Lambda_{\\rm eff}\\sim \\tau_{\\rm adm}^{-1/2} follows from fixed-point data, and give a fully worked circle model in which (A,P,\\chi,\\tau_{\\rm adm}) are all fixed once the geometry, spectral gap, damping constant, and admissibility tolerance are specified. The result is an execution bridge: the finite kernel used in downstream propagators, Green functions, contact loops, measurements, and constraint filters is selected by fixed-point damping data rather than chosen ad hoc.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "unversioned",
-      "date": "April 2026",
-      "latest_zenodo_release": null,
-      "main_tex_sha256": "a1d96753b36d9ac55f9fa45ad99d103f1be61fcd0e746994b2d0999f5c849f84",
-      "paper_id": "deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3",
-      "paper_md_sha256": "7b72bba76cb011f943762ac5ba768afb55815b48ad1fb589bc6f609ebe3608d3",
-      "release_state": "not_matched_to_zenodo",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "5 Dirac Delta/_work/Deriving_the_MTT_Coherence_Scale_from_Fixed__Point_Damping"
-      },
-      "source_tree_sha256": "43abbaa51b73c9679253d97f5f33d17e629b172c69615284be666e5f40658cfc",
-      "title": "Deriving the MTT Coherence Scale from Fixed\u2013Point Damping Canonical Proper-Time Kernels from Admissibility Thresholds",
-      "version_relation": "unknown",
-      "zenodo_releases": []
-    },
-    {
       "abstract": "A deterministic microscopic evolution need not define a closed deterministic law for a reduced state. The exact obstruction is factorization: a reduced map exists precisely when the next reduced state is constant on every fiber of the retained map. Probability does not follow from failure of this condition. After a preparation measure is supplied, regular conditional measures on the fibers define a one-step kernel. That kernel is Dirac exactly when the next reduced state is conditionally almost surely constant, a weaker statement than global fiber constancy. We give finite counterexamples proving that the same projection and microdynamics can induce different kernels under different preparations and that a stationary projection of deterministic dynamics need not be Markov. Thus a stochastic or Markov effective theory requires a measure, a closure theorem, and often a scaling limit. Existing deterministic homogenization results provide such limits under declared assumptions; projection alone does not. We also prove a coupled-basin contraction theorem: once a record basin is selected, a nonnegative influence matrix with spectral radius below one gives geometric joint stabilization. This does not select the basin. Finally, determinism and superdeterminism are separated. In a Bell experiment, measurement independence, Bell factorization, and operational no-signaling are distinct conditions. The stated MTT route retains measurement independence and upper or base locality while allowing a nonseparable state to violate Bell factorization. Its selected state, instruments, and probability source remain completion obligations.",
       "authors": [
         "Peter Nero"
@@ -4281,6 +4334,85 @@
           "resource_type": "publication",
           "title": "Finite Microcanonical Shells and Their Sharp Constraint Limit Coarea Geometry, Quantitative Bias, and the MTT Source Boundary",
           "updated": "2026-07-30T12:54:46.320171+00:00",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "abstract": "This paper proves a finite-dimensional constraint-localization theorem: normalized approximate-identity filters composed with a smooth regular constraint map converge weakly to the coarea surface delta with its Jacobian. It also proves that the corresponding unnormalized Gaussian penalty converges to zero, so normalization is indispensable. Fourier multiplier damping gives the dual finite-width description. Functional path-integral formulas are retained only as regulator-dependent extensions, and gauge use still requires quotient, determinant, anomaly, and BRST control. The MTT reading is conditional on a selected admissibility cost and regulated measure; the coarea theorem alone does not provide that physical source.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v1",
+      "date": "July 2026, Version 1",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.21704671",
+        "created": "2026-07-30T13:44:40.355137+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21704672",
+        "files": [
+          {
+            "checksum": "md5:1f9a2f39c6c9add868b07cbb750cf4ab",
+            "content_url": "https://zenodo.org/api/records/21704672/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 357999
+          }
+        ],
+        "id": "21704672",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21704672",
+        "resource_type": "publication",
+        "title": "Finite-Dimensional Constraint Filters and Their Path-Integral Extension Coarea Localization, Normalization, and the MTT Source Boundary",
+        "updated": "2026-07-30T13:44:41.115717+00:00",
+        "version": "v1"
+      },
+      "main_tex_sha256": "c3727ac19cf4049e8a641d5e4bfe4ba33b057c4a8f4ae3e5bb7ca2db4e42ac25",
+      "paper_id": "path-integral-constraints-as-finite-admissibility-filte-47c01009",
+      "paper_md_sha256": "c516e26cef862e0d910e5925317f0e08704be88da049b567439ab055df587629",
+      "release_state": "zenodo_released",
+      "result_refs": [],
+      "revision": {
+        "revision_evidence_path": "papers/path-integral-constraints-as-finite-admissibility-filte-47c01009/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "3d586e608dc61144b122d1f692ad9703450ae8a8565f558251322af0cc40e100",
+        "selected_revision": true,
+        "superseded_source_path": "5 Dirac Delta/_work/Path_Integral_Constraints_as_Finite_Admissibility_Filters"
+      },
+      "source_provenance": {
+        "legacy_source_path": "5 Dirac Delta/_work/Path_Integral_Constraints_as_Finite_Admissibility_Filters"
+      },
+      "source_tree_sha256": "9177529a22dd3426b45dd062568eadf1c8d701d9e62c425f1286adf3aecf2156",
+      "title": "Finite-Dimensional Constraint Filters and Their Path-Integral Extension Coarea Localization, Normalization, and the MTT Source Boundary",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.21704671",
+          "created": "2026-07-30T13:44:40.355137+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21704672",
+          "files": [
+            {
+              "checksum": "md5:1f9a2f39c6c9add868b07cbb750cf4ab",
+              "content_url": "https://zenodo.org/api/records/21704672/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 357999
+            }
+          ],
+          "id": "21704672",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21704672",
+          "resource_type": "publication",
+          "title": "Finite-Dimensional Constraint Filters and Their Path-Integral Extension Coarea Localization, Normalization, and the MTT Source Boundary",
+          "updated": "2026-07-30T13:44:41.115717+00:00",
           "version": "v1"
         }
       ]
@@ -8447,32 +8579,6 @@
       ]
     },
     {
-      "abstract": "Delta functionals occur throughout path-integral physics: as hard constraints, gauge-fixing conditions, phase-space reductions, Lagrange-multiplier insertions, and exact selection of histories. In standard formalism they are usually treated as distributional devices. This paper continues the delta/projection program by showing that a delta functional may be understood as the zero-width limit of a finite admissibility filter over histories. The rigorous core is finite-dimensional: for a smooth constraint map C:M\\to\\mathbb R^m with 0 a regular value, normalized Gaussian filters \\mathcal K_\\varepsilon(C(x))=(2\\pi\\varepsilon^2)^{-m/2}\\exp(-|C(x)|^2/2\\varepsilon^2) converge, as measures, to the surface delta \\delta(C(x))\\,dx, including the standard Jacobian factor from the coarea formula. The infinite-dimensional path-integral statement is then treated as a formal extension requiring regularization. In MTT language, the hard delta \\delta[C] is the singular limit of a finite admissibility weight \\exp[-J_{\\mathrm{adm}}/\\epsilon^2]. This also clarifies the relation between multiplier representations, large-penalty localization, and finite admissibility tubes, and unifies the interpretation of classical constraint shells, gauge-fixing deltas, and path-integral restrictions: exact constraint enforcement is the zero-width idealization of finite admissibility selection.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "unversioned",
-      "date": "April 2026",
-      "latest_zenodo_release": null,
-      "main_tex_sha256": "9c9b073f278d04d4f5f3963fdc3fcd829e1bbe4374860ba64b726b5b6b218e92",
-      "paper_id": "path-integral-constraints-as-finite-admissibility-filte-47c01009",
-      "paper_md_sha256": "f5deb0eabce070c7bfaf4ead989352821f7224560e0e0e047299cef95d869249",
-      "release_state": "not_matched_to_zenodo",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "5 Dirac Delta/_work/Path_Integral_Constraints_as_Finite_Admissibility_Filters"
-      },
-      "source_tree_sha256": "d659f8e77932ef9219e77c63e29bdf817d75808b6b0dc173ad5d03a8ba582b81",
-      "title": "Path Integral Constraints as Finite Admissibility Filters Delta Functionals, Soft Constraints, and Projection in Modal Triplet Theory",
-      "version_relation": "unknown",
-      "zenodo_releases": []
-    },
-    {
       "abstract": "We present a unified structural account of photons in Modal Triplet Theory (MTT). In MTT, physical description arises from admissible coherent configurations on a higher-dimensional modal space, projected to an effective four-dimensional encoding. Within this framework, photons are identified as massless gauge-coherence modes whose preferred physical encoding is global and non-factorizing. Localization, particle-like behavior, and discrete detection events emerge only when admissibility constraints enforce a partition of this encoding, as in interaction or measurement. We show that null propagation at the speed of light arises as the unique admissible updating of massless gauge coherence under stability and contractivity conditions, rather than as a kinematic postulate. Wave\u2013particle duality is reinterpreted as a choice of encoding valid on different admissible domains. Gravitational lensing and redshift are described as continuous re-encodings of the same stretched coherence constraint under varying admissibility geometry, without invoking forces acting on localized particles. Photons near horizons provide a particularly transparent illustration of the framework. Horizons are identified as admissibility barriers across which the observable map loses a global right inverse, forcing exterior re-encoding. The resulting thermal description is shown to be consistent with Hawking\u2019s equations and is interpreted as a basin-measure shadow of restricted encoding, structurally analogous to measurement-induced probabilities. Time is treated as an encoding-dependent construct associated with coherence rebalancing and record formation; massless gauge modes admit atemporal encodings along null updating directions. This paper does not modify the equations of quantum electrodynamics, general relativity, or quantum field theory on curved spacetime. Rather, it clarifies their structural origin within MTT and unifies photon propagation, entanglement, measurement, horizons, and thermality as manifestations of a single admissibility\u2013encoding framework.",
       "authors": [
         "Peter Nero"
@@ -9371,30 +9477,83 @@
       ]
     },
     {
-      "abstract": "Dirac delta functions appear in spectral physics as sharp energy levels, stable-particle poles, density-of-states atoms, spectral functions, and exact normal-mode decompositions. In ordinary notation one writes terms such as \\rho(E)=\\sum_n \\delta(E-E_n), \\qquad A(\\omega)=2\\pi Z\\,\\delta(\\omega-\\omega_0)+\\cdots . This paper develops the spectral sequel to the delta-projection program in Modal Triplet Theory (MTT). The core mathematical statement is standard but structurally decisive: Lorentzian/Breit\u2013Wigner kernels form approximate identities, and delta peaks are recovered only in the zero-width or infinite-lifetime limit. A stable spectral delta is therefore the singular idealization of a finite-width survivor mode. We prove the weak convergence of Lorentzian kernels to the Dirac delta, derive the same kernel from exponential decay in time, and state the corresponding spectral-measure smearing theorem. We then interpret sharp spectral atoms, resonances, finite lifetimes, LSZ poles, and density-of-states peaks through the MTT lens: a delta peak is the downstream encoding of a survivor basin whose lifetime and coherence width have been idealized as infinite stability and zero spectral width. This does not deny exact bound-state eigenvalues in self-adjoint spectral theory. Rather, it separates exact mathematical spectral atoms from the physical idealization involved when finite-resolution, finite-lifetime effective descriptions are written as exact deltas.",
+      "abstract": "This paper proves that Lorentzian kernels converge weakly to the Dirac delta, derives the Lorentzian line shape from exponential decay, and proves weak recovery of arbitrary finite spectral measures from Lorentzian resolvent smearing. It distinguishes genuine pure-point spectrum, stable-particle atoms, unstable resonance poles, environmental broadening, and instrumental resolution. Only an identified broadened resonance family has a justified infinite-lifetime delta limit. The MTT survivor-basin reading is therefore conditional: a selected stability or leakage operator must produce the width before it can be interpreted as an intrinsic basin parameter.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "unversioned",
-      "date": "April 2026",
-      "latest_zenodo_release": null,
-      "main_tex_sha256": "ae8366b4d045adf64e783d49e975d0110857104a90ee8a2d4e74b60935d79ff2",
+      "current_version": "v1",
+      "date": "July 2026, Version 1",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.21704673",
+        "created": "2026-07-30T13:44:41.894097+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21704674",
+        "files": [
+          {
+            "checksum": "md5:ba8a1d88c70af512952c565c5684495d",
+            "content_url": "https://zenodo.org/api/records/21704674/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 360631
+          }
+        ],
+        "id": "21704674",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21704674",
+        "resource_type": "publication",
+        "title": "Spectral Delta Peaks, Resonances, and Survivor-Basin Encodings Lorentzian Limits, Exact Spectral Atoms, and the MTT Source Boundary",
+        "updated": "2026-07-30T13:44:42.279806+00:00",
+        "version": "v1"
+      },
+      "main_tex_sha256": "a7609cd417a88a1a571c9c585817a4c578612259c4d41e31670678c2d831822d",
       "paper_id": "spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5",
-      "paper_md_sha256": "33b2dc9b4a16871accfce49e71d34a241b5f040eb49af3e3c3e156ca3fd8becf",
-      "release_state": "not_matched_to_zenodo",
+      "paper_md_sha256": "818c3222818f2b74a2e1d87a2132b0bbd90d54567849f2291e4651d157cec5e2",
+      "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "10008ff5719144768fdd848ae4abcfee8c6e1bbc8cf70302f27722b85c17a6be",
+        "selected_revision": true,
+        "superseded_source_path": "5 Dirac Delta/_work/Spectral_Delta_Peaks_and_Resonances_as_Survivor_Basin_Idealizations"
       },
       "source_provenance": {
         "legacy_source_path": "5 Dirac Delta/_work/Spectral_Delta_Peaks_and_Resonances_as_Survivor_Basin_Idealizations"
       },
-      "source_tree_sha256": "6124b2642b7a27fa52a1ba991909590614e3399efd8d9c30a98ee395cff70d54",
-      "title": "Spectral Delta Peaks and Resonances as Survivor-Basin Idealizations Finite Lifetime, Lorentzian Kernels, and the Delta Limit in Modal Triplet Theory",
-      "version_relation": "unknown",
-      "zenodo_releases": []
+      "source_tree_sha256": "079ccaac51516bfdf90aef8c84b085d5473e1c1192c04a6483053ea876813025",
+      "title": "Spectral Delta Peaks, Resonances, and Survivor-Basin Encodings Lorentzian Limits, Exact Spectral Atoms, and the MTT Source Boundary",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.21704673",
+          "created": "2026-07-30T13:44:41.894097+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21704674",
+          "files": [
+            {
+              "checksum": "md5:ba8a1d88c70af512952c565c5684495d",
+              "content_url": "https://zenodo.org/api/records/21704674/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 360631
+            }
+          ],
+          "id": "21704674",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21704674",
+          "resource_type": "publication",
+          "title": "Spectral Delta Peaks, Resonances, and Survivor-Basin Encodings Lorentzian Limits, Exact Spectral Atoms, and the MTT Source Boundary",
+          "updated": "2026-07-30T13:44:42.279806+00:00",
+          "version": "v1"
+        }
+      ]
     },
     {
       "abstract": "We formulate the MTT superset program as a parameter-identifiability framework. Embedded renormalized-Standard-Model equivalence closes at the adopted one-shared-physical-primitive and measured-profile standard using selected SMDR v1.3 transport and a complete eight-row covariance. The construction ledger contains one shared electroweak primitive and 15 measured SM profile coordinates; transported couplings, nine charged Yukawa rows, the Higgs row, covariance entries, and the 96-dimensional finite Dirac operator are outputs and are not counted again as independent inputs. Exact source-side structure includes the native faithful gauge group, anomaly-free chiral carrier, completed finite triple, one-Higgs projector, and 10/10 finite gauge/ghost spectrum rows. None of these presently replaces the measured profile by a zero-primitive source theorem. We classify every result as a structural theorem, calibration, profile/replay, diagnostic, or held-out prediction and state the resulting identifiability limits.",

@@ -1,20 +1,47 @@
 {
-  "abstract": "The preceding delta-projection papers established a structural dictionary: Dirac delta functions arise as singular limits of finite kernels, filters, shells, or selection operations. A natural objection is that this does not yet select a physical finite kernel. This paper addresses the first execution-level selection problem in the fixed-point regime of Modal Triplet Theory (MTT). We prove that if the incoherent sector of an evolve\u2013project system decays with a quantified semigroup bound \\|Q\\Phi_t Q\\| \\le C_Q e^{-\\lambda_\\ast t}, and if admissibility requires residual incoherent leakage below a tolerance \\varepsilon_{\\rm adm}, then the minimal admissible proper-time/heat-time is not a free regulator but is fixed by \\tau_{\\rm adm}=\\frac{1}{\\lambda_\\ast}\\log\\frac{C_Q}{\\varepsilon_{\\rm adm}} . The corresponding canonical MTT kernel is K_{\\rm adm}(x,y) = \\big\\langle x\\big|P\\,\\chi(A)\\,e^{-\\tau_{\\rm adm}A}\\,\\chi(A)\\,P\\big|y\\big\\rangle, where A is the fixed-point linearized stabilization operator, P is the coherent-sector projector, and \\chi(A) is the admissible spectral acceptance window. We then derive explicit error decompositions, show how the effective scale \\Lambda_{\\rm eff}\\sim \\tau_{\\rm adm}^{-1/2} follows from fixed-point data, and give a fully worked circle model in which (A,P,\\chi,\\tau_{\\rm adm}) are all fixed once the geometry, spectral gap, damping constant, and admissibility tolerance are specified. The result is an execution bridge: the finite kernel used in downstream propagators, Green functions, contact loops, measurements, and constraint filters is selected by fixed-point damping data rather than chosen ad hoc.",
+  "abstract": "This paper separates the exact admissibility exit time of a damped incoherent sector from the earliest time certified by an exponential semigroup bound. It proves the certified threshold formula and obtains the exact formula when a nonnegative self-adjoint generator is reduced by the incoherent projector. Declared operator, projector, spectral-window, tolerance, and time data then determine a unique functional-calculus filter with a controlled error decomposition and an explicit circle benchmark. The result is conditional rather than a first-principles scale prediction: MTT geometry must still select those source data and their physical intertwiner before the filter can replace a regulator or modify a propagator.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "unversioned",
-  "date": "April 2026",
-  "latest_zenodo_release": null,
-  "main_tex_sha256": "a1d96753b36d9ac55f9fa45ad99d103f1be61fcd0e746994b2d0999f5c849f84",
+  "current_version": "v1",
+  "date": "July 2026, Version 1",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.21704669",
+    "created": "2026-07-30T13:44:39.356368+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.21704670",
+    "files": [
+      {
+        "checksum": "md5:87fdef6f7be91be815fe3db3e4780d9d",
+        "content_url": "https://zenodo.org/api/records/21704670/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 398975
+      }
+    ],
+    "id": "21704670",
+    "match_kind": "published_draft_reconciliation",
+    "match_score": 1.0,
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21704670",
+    "resource_type": "publication",
+    "title": "Admissibility-Time Bounds from Fixed-Point Damping Exact Exit Times, Certified Proper-Time Filters, and the MTT Source Boundary",
+    "updated": "2026-07-30T13:44:39.861980+00:00",
+    "version": "v1"
+  },
+  "main_tex_sha256": "797bcbcd71276505665fd2872493b945abf73a4052d9c09c4829b2debe2f3470",
   "paper_id": "deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3",
-  "paper_md_sha256": "7b72bba76cb011f943762ac5ba768afb55815b48ad1fb589bc6f609ebe3608d3",
-  "release_state": "not_matched_to_zenodo",
+  "paper_md_sha256": "d09b8c2937c0e1213a4925fda76bb8ea0bf15144aa4fbf8f8ba5be010b05ebe7",
+  "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "655bb6d1dddc8679f4322f49e0227043eac599b1ff69d528af15169d09412525",
+    "selected_revision": true,
+    "superseded_source_path": "5 Dirac Delta/_work/Deriving_the_MTT_Coherence_Scale_from_Fixed__Point_Damping"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -29,9 +56,9 @@
       "sha256": "e702ca29aa61954c45f6d7d1effb3b298da1d683d33a9ea6c62674fd9b6369bf"
     },
     {
-      "bytes": 18366,
+      "bytes": 21046,
       "path": "main.tex",
-      "sha256": "a1d96753b36d9ac55f9fa45ad99d103f1be61fcd0e746994b2d0999f5c849f84"
+      "sha256": "797bcbcd71276505665fd2872493b945abf73a4052d9c09c4829b2debe2f3470"
     },
     {
       "bytes": 3784,
@@ -42,8 +69,34 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Deriving_the_MTT_Coherence_Scale_from_Fixed__Point_Damping"
   },
-  "source_tree_sha256": "43abbaa51b73c9679253d97f5f33d17e629b172c69615284be666e5f40658cfc",
-  "title": "Deriving the MTT Coherence Scale from Fixed\u2013Point Damping Canonical Proper-Time Kernels from Admissibility Thresholds",
-  "version_relation": "unknown",
-  "zenodo_releases": []
+  "source_tree_sha256": "b119022c17985c53b871e4339bb765a2d91e059518aafe7620c58f64880f33f9",
+  "title": "Admissibility-Time Bounds from Fixed-Point Damping Exact Exit Times, Certified Proper-Time Filters, and the MTT Source Boundary",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.21704669",
+      "created": "2026-07-30T13:44:39.356368+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704670",
+      "files": [
+        {
+          "checksum": "md5:87fdef6f7be91be815fe3db3e4780d9d",
+          "content_url": "https://zenodo.org/api/records/21704670/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 398975
+        }
+      ],
+      "id": "21704670",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704670",
+      "resource_type": "publication",
+      "title": "Admissibility-Time Bounds from Fixed-Point Damping Exact Exit Times, Certified Proper-Time Filters, and the MTT Source Boundary",
+      "updated": "2026-07-30T13:44:39.861980+00:00",
+      "version": "v1"
+    }
+  ]
 }

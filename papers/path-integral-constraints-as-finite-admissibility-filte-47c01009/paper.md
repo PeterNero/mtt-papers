@@ -4,18 +4,39 @@ abstract: |
   ``` math
   \mathcal K_\varepsilon(C(x))=(2\pi\varepsilon^2)^{-m/2}\exp(-|C(x)|^2/2\varepsilon^2)
   ```
-  converge, as measures, to the surface delta $`\delta(C(x))\,dx`$, including the standard Jacobian factor from the coarea formula. The infinite-dimensional path-integral statement is then treated as a formal extension requiring regularization. In MTT language, the hard delta $`\delta[C]`$ is the singular limit of a finite admissibility weight $`\exp[-J_{\mathrm{adm}}/\epsilon^2]`$. This also clarifies the relation between multiplier representations, large-penalty localization, and finite admissibility tubes, and unifies the interpretation of classical constraint shells, gauge-fixing deltas, and path-integral restrictions: exact constraint enforcement is the zero-width idealization of finite admissibility selection.
+  converge, as measures, to the surface delta $`\delta(C(x))\,dx`$, including the standard Jacobian factor from the coarea formula. The infinite-dimensional path-integral statement is then treated as a formal extension requiring regularization. In conditional MTT language, the hard delta $`\delta[C]`$ is the singular limit of a normalized finite admissibility weight $`\mathcal N_\epsilon\exp[-J_{\mathrm{adm}}/\epsilon^2]`$. This also clarifies the relation between multiplier representations, large-penalty localization, and finite admissibility tubes, and unifies the interpretation of classical constraint shells, gauge-fixing deltas, and path-integral restrictions: exact constraint enforcement is the zero-width idealization of finite admissibility selection.
 author:
 - Peter Nero
-current_version: unversioned
-date: April 2026
-generated_from_main_tex_sha256: 9c9b073f278d04d4f5f3963fdc3fcd829e1bbe4374860ba64b726b5b6b218e92
+current_version: v1
+date: July 2026, Version 1
+generated_from_main_tex_sha256: c3727ac19cf4049e8a641d5e4bfe4ba33b057c4a8f4ae3e5bb7ca2db4e42ac25
 paper_id: path-integral-constraints-as-finite-admissibility-filte-47c01009
-release_state: not_matched_to_zenodo
+release_state: zenodo_released
+released_version: v1
 title: |
-  Path Integral Constraints as Finite Admissibility Filters  
-  Delta Functionals, Soft Constraints, and Projection in Modal Triplet Theory
+  Finite-Dimensional Constraint Filters and Their Path-Integral Extension
+  Coarea Localization, Normalization, and the MTT Source Boundary
+zenodo_doi: 10.5281/zenodo.21704672
+zenodo_record_id: 21704672
+zenodo_url: "https://zenodo.org/records/21704672"
 ---
+
+# Version 1 Revision Note
+
+Supersedes
+The unversioned April 2026 manuscript on path-integral constraint filters.
+
+Reason
+The rigorous coarea theorem was sound, but several later formulas suppressed the normalization required for a delta limit and the carrier assignment could be read as already derived.
+
+Resolution
+This version proves that unnormalized penalties converge to zero, restores the normalization and induced Jacobian, and separates the finite-dimensional theorem from the regulator-dependent functional-integral and MTT source problems.
+
+Retained result
+Normalized approximate identities converge to the coarea surface delta, and multiplier damping is the Fourier-dual finite-width description.
+
+Remaining boundary
+A regulated functional measure, anomaly and quotient control, and a selected MTT admissibility cost are still required in a physical field theory.
 
 # Purpose and claim discipline
 
@@ -57,9 +78,10 @@ The finite-filter replacement is
 \quad\leadsto\quad
 \mathcal K_\varepsilon[C[\phi]]
 =
+\mathcal N_\varepsilon
 \exp\!\left(-\frac{1}{2\varepsilon^2}\|C[\phi]\|^2\right),
 ```
-possibly with normalization and with the norm chosen by an admissibility metric. The finite-filter path integral is then
+where the normalization depends on the regulated constraint space and the norm is chosen by an admissibility metric. In $`m`$ finite constraint dimensions with the Euclidean metric, $`\mathcal N_\varepsilon=(2\pi\varepsilon^2)^{-m/2}`$. The finite-filter path integral is then
 ``` math
 Z_\varepsilon
 =
@@ -78,7 +100,7 @@ Z_\varepsilon^{E}
 -\frac{1}{2\varepsilon^2}\|C[\phi]\|^2
 \right).
 ```
-This is a soft-constraint or penalty formulation. The hard constraint is recovered only in the $`\varepsilon\downarrow0`$ limit.
+This is a soft-constraint or penalty formulation. The hard constraint is recovered only in the $`\varepsilon\downarrow0`$ limit after the appropriate normalization is included.
 
 # Finite-dimensional theorem
 
@@ -177,6 +199,28 @@ k_\varepsilon(C(x))\,d\mu(x)\to \delta(C(x))\,d\mu(x).
 ```
 
 Thus the hard delta does not depend on the detailed shape of the finite filter. The detailed shape controls finite-$`\varepsilon`$ corrections. In MTT language, those corrections encode finite admissibility width.
+
+<div class="proposition">
+
+**Proposition 2** (Normalization is indispensable). *For $`m>0`$, the unnormalized weights
+``` math
+u\longmapsto e^{-|u|^2/(2\varepsilon^2)}
+```
+converge to zero as distributions on $`\mathbb R^m`$, not to $`\delta_0`$. Multiplication by $`(2\pi\varepsilon^2)^{-m/2}`$, or an equivalent normalization for the chosen kernel, is required for a unit-mass delta limit.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* For every compactly supported test function $`f`$,
+``` math
+\left|\int_{\mathbb R^m}f(u)e^{-|u|^2/(2\varepsilon^2)}\,du\right|
+\le
+\|f\|_\infty(2\pi)^{m/2}\varepsilon^m\longrightarrow0.
+```
+The normalized family has unit integral and is an approximate identity. $`\square`$ ◻
+
+</div>
 
 # Path integrals: formal functional extension
 
@@ -304,6 +348,7 @@ The finite admissibility version is
 \quad\leadsto\quad
 \mathcal K_\varepsilon(G[A])
 =
+\mathcal N_\varepsilon
 \exp\!\left(-\frac{1}{2\varepsilon^2}\|G[A]\|^2\right).
 ```
 
@@ -328,17 +373,18 @@ should not be treated as primitive. It is the zero-width limit of an admissibili
 ``` math
 \mathcal K_{\epsilon}[C[\phi]]
 =
+\mathcal N_\epsilon
 \exp\!\left(-\frac{1}{\epsilon^2}J_{\mathrm{adm}}[\phi]\right),
 ```
-where $`J_{\mathrm{adm}}`$ measures the degree of constraint violation, closure strain, gauge-slice distance, or failure of coherent continuation.
+where $`J_{\mathrm{adm}}`$ measures the degree of constraint violation, closure strain, gauge-slice distance, or failure of coherent continuation. The normalization and the induced Jacobian must be defined by the regulated measure; they are not optional decorations.
 
 The hard limit is
 ``` math
+\mathcal K_\epsilon[C[\phi]]
+\longrightarrow
 \delta(C[\phi])
-=
-\lim_{\epsilon\downarrow0}\mathcal K_\epsilon[C[\phi]]
 ```
-in the same structural sense that finite-dimensional Gaussian filters converge to surface deltas.
+only in a regulator-defined weak sense. The finite-dimensional theorem proves the model for this statement; it does not by itself construct the functional measure.
 
 ## Triadic reading
 
@@ -354,7 +400,7 @@ The same delta may involve different MTT carrier roles.
 
 </div>
 
-A path-integral delta functional is therefore not a single primitive object in MTT. It is a downstream singular notation for whichever admissibility condition is being enforced.
+This is a proposed carrier dictionary, not a derivation of the three assignments from the shared-circle geometry. A path-integral delta functional may be read as downstream notation for an admissibility condition only after the relevant source map and quotient measure have been supplied.
 
 # Soft constraints versus hard constraints
 
@@ -421,13 +467,25 @@ Path-integral delta functionals are usually written as hard constraints:
 ```
 This paper shows that, at the rigorous finite-dimensional level, such deltas arise as zero-width limits of finite constraint filters. The same pattern extends formally to functional integrals, where a hard delta can be replaced by a finite admissibility weight
 ``` math
-\exp[-\|C[\phi]\|^2/2\varepsilon^2].
+\mathcal N_\varepsilon\exp[-\|C[\phi]\|^2/2\varepsilon^2].
 ```
 
-The MTT reading is direct:
+The conditional MTT reading is:
 ``` math
 \boxed{
 \delta[C]=\text{singular shadow of finite admissibility filtering}.
 }
 ```
 This unifies classical constraint shells, gauge-fixing deltas, soft penalty actions, and path-integral restrictions under one projection-first interpretation.
+
+<div class="thebibliography">
+
+9
+
+H. Federer, *Geometric Measure Theory*, Springer (1969; reprint 1996). [doi:10.1007/978-3-642-62010-2](https://doi.org/10.1007/978-3-642-62010-2).
+
+L. D. Faddeev and V. N. Popov, “Feynman diagrams for the Yang–Mills field,” *Physics Letters B* **25** (1967), 29–30. [doi:10.1016/0370-2693(67)90067-6](https://doi.org/10.1016/0370-2693(67)90067-6).
+
+I. A. Batalin and G. A. Vilkovisky, “Gauge algebra and quantization,” *Physics Letters B* **102** (1981), 27–31. [doi:10.1016/0370-2693(81)90205-7](https://doi.org/10.1016/0370-2693(81)90205-7).
+
+</div>

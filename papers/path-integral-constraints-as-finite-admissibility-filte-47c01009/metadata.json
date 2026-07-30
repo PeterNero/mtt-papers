@@ -1,27 +1,54 @@
 {
-  "abstract": "Delta functionals occur throughout path-integral physics: as hard constraints, gauge-fixing conditions, phase-space reductions, Lagrange-multiplier insertions, and exact selection of histories. In standard formalism they are usually treated as distributional devices. This paper continues the delta/projection program by showing that a delta functional may be understood as the zero-width limit of a finite admissibility filter over histories. The rigorous core is finite-dimensional: for a smooth constraint map C:M\\to\\mathbb R^m with 0 a regular value, normalized Gaussian filters \\mathcal K_\\varepsilon(C(x))=(2\\pi\\varepsilon^2)^{-m/2}\\exp(-|C(x)|^2/2\\varepsilon^2) converge, as measures, to the surface delta \\delta(C(x))\\,dx, including the standard Jacobian factor from the coarea formula. The infinite-dimensional path-integral statement is then treated as a formal extension requiring regularization. In MTT language, the hard delta \\delta[C] is the singular limit of a finite admissibility weight \\exp[-J_{\\mathrm{adm}}/\\epsilon^2]. This also clarifies the relation between multiplier representations, large-penalty localization, and finite admissibility tubes, and unifies the interpretation of classical constraint shells, gauge-fixing deltas, and path-integral restrictions: exact constraint enforcement is the zero-width idealization of finite admissibility selection.",
+  "abstract": "This paper proves a finite-dimensional constraint-localization theorem: normalized approximate-identity filters composed with a smooth regular constraint map converge weakly to the coarea surface delta with its Jacobian. It also proves that the corresponding unnormalized Gaussian penalty converges to zero, so normalization is indispensable. Fourier multiplier damping gives the dual finite-width description. Functional path-integral formulas are retained only as regulator-dependent extensions, and gauge use still requires quotient, determinant, anomaly, and BRST control. The MTT reading is conditional on a selected admissibility cost and regulated measure; the coarea theorem alone does not provide that physical source.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "unversioned",
-  "date": "April 2026",
-  "latest_zenodo_release": null,
-  "main_tex_sha256": "9c9b073f278d04d4f5f3963fdc3fcd829e1bbe4374860ba64b726b5b6b218e92",
+  "current_version": "v1",
+  "date": "July 2026, Version 1",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.21704671",
+    "created": "2026-07-30T13:44:40.355137+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.21704672",
+    "files": [
+      {
+        "checksum": "md5:1f9a2f39c6c9add868b07cbb750cf4ab",
+        "content_url": "https://zenodo.org/api/records/21704672/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 357999
+      }
+    ],
+    "id": "21704672",
+    "match_kind": "published_draft_reconciliation",
+    "match_score": 1.0,
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21704672",
+    "resource_type": "publication",
+    "title": "Finite-Dimensional Constraint Filters and Their Path-Integral Extension Coarea Localization, Normalization, and the MTT Source Boundary",
+    "updated": "2026-07-30T13:44:41.115717+00:00",
+    "version": "v1"
+  },
+  "main_tex_sha256": "c3727ac19cf4049e8a641d5e4bfe4ba33b057c4a8f4ae3e5bb7ca2db4e42ac25",
   "paper_id": "path-integral-constraints-as-finite-admissibility-filte-47c01009",
-  "paper_md_sha256": "f5deb0eabce070c7bfaf4ead989352821f7224560e0e0e047299cef95d869249",
-  "release_state": "not_matched_to_zenodo",
+  "paper_md_sha256": "c516e26cef862e0d910e5925317f0e08704be88da049b567439ab055df587629",
+  "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/path-integral-constraints-as-finite-admissibility-filte-47c01009/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "3d586e608dc61144b122d1f692ad9703450ae8a8565f558251322af0cc40e100",
+    "selected_revision": true,
+    "superseded_source_path": "5 Dirac Delta/_work/Path_Integral_Constraints_as_Finite_Admissibility_Filters"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 16531,
+      "bytes": 19711,
       "path": "main.tex",
-      "sha256": "9c9b073f278d04d4f5f3963fdc3fcd829e1bbe4374860ba64b726b5b6b218e92"
+      "sha256": "c3727ac19cf4049e8a641d5e4bfe4ba33b057c4a8f4ae3e5bb7ca2db4e42ac25"
     },
     {
       "bytes": 16531,
@@ -37,8 +64,34 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Path_Integral_Constraints_as_Finite_Admissibility_Filters"
   },
-  "source_tree_sha256": "d659f8e77932ef9219e77c63e29bdf817d75808b6b0dc173ad5d03a8ba582b81",
-  "title": "Path Integral Constraints as Finite Admissibility Filters Delta Functionals, Soft Constraints, and Projection in Modal Triplet Theory",
-  "version_relation": "unknown",
-  "zenodo_releases": []
+  "source_tree_sha256": "9177529a22dd3426b45dd062568eadf1c8d701d9e62c425f1286adf3aecf2156",
+  "title": "Finite-Dimensional Constraint Filters and Their Path-Integral Extension Coarea Localization, Normalization, and the MTT Source Boundary",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.21704671",
+      "created": "2026-07-30T13:44:40.355137+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704672",
+      "files": [
+        {
+          "checksum": "md5:1f9a2f39c6c9add868b07cbb750cf4ab",
+          "content_url": "https://zenodo.org/api/records/21704672/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 357999
+        }
+      ],
+      "id": "21704672",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704672",
+      "resource_type": "publication",
+      "title": "Finite-Dimensional Constraint Filters and Their Path-Integral Extension Coarea Localization, Normalization, and the MTT Source Boundary",
+      "updated": "2026-07-30T13:44:41.115717+00:00",
+      "version": "v1"
+    }
+  ]
 }

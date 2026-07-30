@@ -2,6 +2,81 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.21704673",
+      "created": "2026-07-30T13:44:41.894097+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704674",
+      "files": [
+        {
+          "checksum": "md5:ba8a1d88c70af512952c565c5684495d",
+          "content_url": "https://zenodo.org/api/records/21704674/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 360631
+        }
+      ],
+      "id": "21704674",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704674",
+      "resource_type": "publication",
+      "title": "Spectral Delta Peaks, Resonances, and Survivor-Basin Encodings Lorentzian Limits, Exact Spectral Atoms, and the MTT Source Boundary",
+      "updated": "2026-07-30T13:44:42.279806+00:00",
+      "version": "v1"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21704671",
+      "created": "2026-07-30T13:44:40.355137+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704672",
+      "files": [
+        {
+          "checksum": "md5:1f9a2f39c6c9add868b07cbb750cf4ab",
+          "content_url": "https://zenodo.org/api/records/21704672/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 357999
+        }
+      ],
+      "id": "21704672",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704672",
+      "resource_type": "publication",
+      "title": "Finite-Dimensional Constraint Filters and Their Path-Integral Extension Coarea Localization, Normalization, and the MTT Source Boundary",
+      "updated": "2026-07-30T13:44:41.115717+00:00",
+      "version": "v1"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21704669",
+      "created": "2026-07-30T13:44:39.356368+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704670",
+      "files": [
+        {
+          "checksum": "md5:87fdef6f7be91be815fe3db3e4780d9d",
+          "content_url": "https://zenodo.org/api/records/21704670/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 398975
+        }
+      ],
+      "id": "21704670",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704670",
+      "resource_type": "publication",
+      "title": "Admissibility-Time Bounds from Fixed-Point Damping Exact Exit Times, Certified Proper-Time Filters, and the MTT Source Boundary",
+      "updated": "2026-07-30T13:44:39.861980+00:00",
+      "version": "v1"
+    },
+    {
       "concept_doi": "10.5281/zenodo.21704389",
       "created": "2026-07-30T13:27:55.506083+00:00",
       "creators": [

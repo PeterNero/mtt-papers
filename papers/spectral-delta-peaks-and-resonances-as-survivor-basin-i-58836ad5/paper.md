@@ -6,20 +6,41 @@ abstract: |
   \qquad
   A(\omega)=2\pi Z\,\delta(\omega-\omega_0)+\cdots .
   ```
-  This paper develops the spectral sequel to the delta-projection program in Modal Triplet Theory (MTT). The core mathematical statement is standard but structurally decisive: Lorentzian/Breit–Wigner kernels form approximate identities, and delta peaks are recovered only in the zero-width or infinite-lifetime limit. A stable spectral delta is therefore the singular idealization of a finite-width survivor mode.
+  This paper develops the spectral sequel to the delta-projection program in Modal Triplet Theory (MTT). The core mathematical statement is standard but structurally decisive: Lorentzian/Breit–Wigner kernels form approximate identities, and an identified broadened resonance family recovers a delta in its zero-width or infinite-lifetime limit. Genuine pure-point spectrum remains exact and need not arise by broadening.
 
-  We prove the weak convergence of Lorentzian kernels to the Dirac delta, derive the same kernel from exponential decay in time, and state the corresponding spectral-measure smearing theorem. We then interpret sharp spectral atoms, resonances, finite lifetimes, LSZ poles, and density-of-states peaks through the MTT lens: a delta peak is the downstream encoding of a survivor basin whose lifetime and coherence width have been idealized as infinite stability and zero spectral width. This does not deny exact bound-state eigenvalues in self-adjoint spectral theory. Rather, it separates exact mathematical spectral atoms from the physical idealization involved when finite-resolution, finite-lifetime effective descriptions are written as exact deltas.
+  We prove the weak convergence of Lorentzian kernels to the Dirac delta, derive the same kernel from exponential decay in time, and state the corresponding spectral-measure smearing theorem. We then classify sharp spectral atoms, resonances, finite lifetimes, LSZ poles, and density-of-states peaks. The MTT survivor-basin reading is conditional: a selected stability or leakage operator must produce the width before it can be interpreted as an intrinsic basin parameter.
 author:
 - Peter Nero
-current_version: unversioned
-date: April 2026
-generated_from_main_tex_sha256: ae8366b4d045adf64e783d49e975d0110857104a90ee8a2d4e74b60935d79ff2
+current_version: v1
+date: July 2026, Version 1
+generated_from_main_tex_sha256: a7609cd417a88a1a571c9c585817a4c578612259c4d41e31670678c2d831822d
 paper_id: spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5
-release_state: not_matched_to_zenodo
+release_state: zenodo_released
+released_version: v1
 title: |
-  Spectral Delta Peaks and Resonances as Survivor-Basin Idealizations  
-  Finite Lifetime, Lorentzian Kernels, and the Delta Limit in Modal Triplet Theory
+  Spectral Delta Peaks, Resonances, and Survivor-Basin Encodings
+  Lorentzian Limits, Exact Spectral Atoms, and the MTT Source Boundary
+zenodo_doi: 10.5281/zenodo.21704674
+zenodo_record_id: 21704674
+zenodo_url: "https://zenodo.org/records/21704674"
 ---
+
+# Version 1 Revision Note
+
+Supersedes
+The unversioned April 2026 manuscript on spectral deltas and resonances.
+
+Reason
+The Lorentzian and spectral-measure results were correct, but the text did not always keep genuine pure-point spectrum distinct from a broadened-family limit, and it could identify a width with an MTT basin before a source map was supplied.
+
+Resolution
+This version preserves exact spectral atoms, restricts the infinite-lifetime statement to identified resonance families, and makes the MTT survivor-basin reading conditional on a selected stability operator.
+
+Retained result
+Lorentzian approximate-identity convergence, exponential-decay line shape, resolvent smearing, and weak convergence of spectral measures remain intact.
+
+Remaining boundary
+MTT must derive the width-producing operator and distinguish intrinsic, environmental, and instrumental broadening.
 
 # Purpose and claim discipline
 
@@ -88,7 +109,7 @@ It is normalized:
 ```
 As $`\Gamma\downarrow0`$, it converges to $`\delta(E-E_0)`$ in the sense of distributions.
 
-The MTT interpretation is:
+One possible MTT interpretation, requiring a sector source map, is:
 ``` math
 \Gamma>0
 \quad\leftrightarrow\quad
@@ -100,6 +121,7 @@ while
 \quad\leftrightarrow\quad
 \text{idealized infinitely stable survivor mode}.
 ```
+The arrows are not identities established by the Lorentzian theorem. The theorem supplies the analytic encoding; MTT geometry must still derive which damping or leakage operator produces $`\Gamma`$.
 
 # Lorentzian approximate identity theorem
 
@@ -274,7 +296,7 @@ More generally, for a self-adjoint $`H`$,
 ```
 Thus finite spectral width is equivalent to evaluating the resolvent off the real axis. The sharp spectral measure is recovered as the boundary value $`\Gamma\downarrow0`$.
 
-In physical language, $`\Gamma`$ may encode finite lifetime, detector resolution, environment coupling, damping, or coherent-sector width. In MTT language, it is the spectral width of the survivor-basin encoding.
+In physical language, $`\Gamma`$ may encode finite lifetime, detector resolution, environment coupling, or damping. In a conditional MTT model it may encode the width of a survivor-basin representation. Those possibilities must not be conflated: instrumental convolution, environmental broadening, and an intrinsic pole width are different source mechanisms.
 
 # Lifetime, width, and complex poles
 
@@ -326,7 +348,7 @@ A_\Gamma(\omega,\mathbf p)
 A_{\mathrm{cont}}(\omega,\mathbf p).
 ```
 
-The delta peak is therefore the infinite-lifetime limit:
+For this resonance family, the delta peak is the infinite-lifetime limit:
 ``` math
 \Gamma\downarrow0
 \quad\Longrightarrow\quad
@@ -397,7 +419,7 @@ The MTT survivor-basin reading applies most directly to the second and third cas
 
 The triadic MTT carrier distinguishes bookkeeping, redundancy transport, and survivorship. Spectral peaks are naturally tied to survivorship: a mode that persists long enough to be tracked as a stable excitation appears as a spectral object.
 
-A finite-width resonance corresponds to a basin that is coherent but not infinitely stable. It has:
+Conditional on a source map identifying the resonance generator with an MTT stability operator, a finite-width resonance corresponds to a basin that is coherent but not infinitely stable. It has:
 
 - a central energy or mass label;
 
@@ -409,16 +431,16 @@ A finite-width resonance corresponds to a basin that is coherent but not infinit
 
 - possible coupling to continuum sectors.
 
-A spectral delta idealizes all of this into an exact survivor:
+A spectral delta can then encode an exact survivor:
 ``` math
 \boxed{
 \delta(E-E_0)
-=
+\longleftrightarrow
 \text{zero-width encoding of an infinitely persistent survivor mode}.
 }
 ```
 
-This aligns with the fixed-point and measurement papers in the sequence. A fixed point may be represented by a delta only after its basin width is ignored. A measurement outcome may be represented by a sharp projector only after finite detector width is ignored. A stable particle may be represented by a spectral delta only after finite lifetime and resolution are ignored.
+This aligns with the fixed-point and measurement papers at the level of representation. It does not make exact pure-point spectrum approximate: a genuine eigenvalue remains an exact atom. The finite-width reading applies when a family of physical or instrumental broadenings has actually been identified.
 
 # Relation to the OU floor
 
@@ -426,7 +448,7 @@ In the MTT measurement and fixed-point stability papers, persistent disturbance 
 ``` math
 \sigma^2=\frac{\delta}{2\gamma}.
 ```
-The spectral analogue is:
+The proposed spectral analogue is:
 ``` math
 \Gamma \sim \text{leakage/damping rate}.
 ```
@@ -439,7 +461,7 @@ If damping and disturbance leave a nonzero effective width, the spectral line do
 \text{or resolution}\to0.
 ```
 
-This gives the MTT diagnostic:
+This gives a diagnostic rather than a derivation:
 
 <div class="center">
 
@@ -456,7 +478,7 @@ This gives the MTT diagnostic:
 | Smeared spectral measures | Proved as weak convergence. |
 | Complex pole interpretation | Standard resonance-theory classification. |
 | Kallen–Lehmann delta atom | Standard QFT spectral structure, used here classificatorily. |
-| Stable particle delta as infinite-lifetime limit | Standard physical interpretation. |
+| Resonance-family delta as infinite-lifetime limit | Standard physical interpretation. |
 | Finite-volume spectral atoms | A distinct mathematical case, explicitly separated from lifetime claims. |
 | MTT survivor-basin reading | Structural interpretation, not a new spectral theorem. |
 | Exact derivation of widths from MTT carrier data | Not done here; belongs to execution-level work. |
@@ -484,9 +506,9 @@ It shows that spectral deltas fit the same pattern as earlier cases:
 
 - contact deltas are zero-width overlap vertices;
 
-- scattering deltas are infinite-time bookkeeping limits;
+- finite-time energy kernels converge to sharp energy deltas, while exact momentum-conservation support follows from translation symmetry;
 
-- spectral deltas are infinite-lifetime survivor limits;
+- identified resonance families have infinite-lifetime delta limits;
 
 - Kallen–Lehmann mass deltas are sharp stable-sector atoms.
 
@@ -496,8 +518,20 @@ Spectral delta peaks are among the most familiar idealizations in physics. They 
 
 The Lorentzian/Breit–Wigner kernel makes this precise. It converges to the Dirac delta as its width tends to zero, and it arises directly from exponential decay in time. Smeared spectral measures converge weakly to the underlying spectral measure. Thus the delta peak is the singular endpoint of a controlled finite-width family.
 
-In MTT language, a spectral delta is the zero-width shadow of a survivor basin whose persistence has been idealized as exact. The question prompted by every spectral delta is therefore:
+In conditional MTT language, a broadened spectral family may be the finite-width encoding of a survivor basin. A genuine exact atom need not hide a width. The useful diagnostic question is therefore:
 
 <div class="center">
+
+</div>
+
+<div class="thebibliography">
+
+9
+
+H. Lehmann, “On properties of propagation functions and renormalization constants of quantized fields,” *Il Nuovo Cimento* **11** (1954), 342–357. [doi:10.1007/BF02783624](https://doi.org/10.1007/BF02783624).
+
+M. Zworski, “Mathematical study of scattering resonances,” *Bulletin of Mathematical Sciences* **7** (2017), 1–85. [doi:10.1007/s13373-017-0099-4](https://doi.org/10.1007/s13373-017-0099-4).
+
+M. J. Colbrook and A. C. Hansen, “Computing spectral measures and spectral types,” *Communications in Mathematical Physics* **384** (2021), 433–501. [doi:10.1007/s00220-021-04072-4](https://doi.org/10.1007/s00220-021-04072-4).
 
 </div>

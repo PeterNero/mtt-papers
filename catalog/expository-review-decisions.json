@@ -752,6 +752,30 @@
       "reviewed_main_tex_sha256": "8deb7d58e0fcc3ab993a79c88b92bbafcf253227b582a26d653d8ea25634c0df",
       "reviewed_pdf_sha256": "e5cb5031ad79f4411d8ea13730b3a3f92080f7b82d54a367c50a9661e067be77",
       "reviewed_source_tree_sha256": "0e4e88dfc5b8f1368116ce0ea63c68871df0967a5f1eae5afbda08321d57c7f4"
+    },
+    "deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 1 distinguishes exact exit time from the earliest time certified by an exponential semigroup estimate, proves equality for a reducing self-adjoint generator, and leaves physical source selection explicit; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "797bcbcd71276505665fd2872493b945abf73a4052d9c09c4829b2debe2f3470",
+      "reviewed_pdf_sha256": "8b66667063f69bf7c45c460a1a6148b581f2f9c9f91c3dc2a65121ccefea2696",
+      "reviewed_source_tree_sha256": "b119022c17985c53b871e4339bb765a2d91e059518aafe7620c58f64880f33f9"
+    },
+    "path-integral-constraints-as-finite-admissibility-filte-47c01009": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 1 retains normalized coarea localization, proves that unnormalized penalties converge to zero, and separates the rigorous finite-dimensional theorem from regulator-dependent path-integral and MTT source claims; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "c3727ac19cf4049e8a641d5e4bfe4ba33b057c4a8f4ae3e5bb7ca2db4e42ac25",
+      "reviewed_pdf_sha256": "6b267f1fec507efe8e23e30599ed0eb648b1b50beabc905bbc0ed9bb698cb89e",
+      "reviewed_source_tree_sha256": "9177529a22dd3426b45dd062568eadf1c8d701d9e62c425f1286adf3aecf2156"
+    },
+    "spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 1 preserves Lorentzian and spectral-measure convergence, separates exact atoms from broadened-family limits, and makes the MTT width interpretation conditional on a selected stability operator; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "a7609cd417a88a1a571c9c585817a4c578612259c4d41e31670678c2d831822d",
+      "reviewed_pdf_sha256": "bcf5532772c2621ab1c4f02aa14f2ed0ee0acca617ea421577744a48b2a3846d",
+      "reviewed_source_tree_sha256": "079ccaac51516bfdf90aef8c84b085d5473e1c1192c04a6483053ea876813025"
     }
   }
 }

@@ -1,31 +1,52 @@
 ---
 abstract: |
-  The preceding delta-projection papers established a structural dictionary: Dirac delta functions arise as singular limits of finite kernels, filters, shells, or selection operations. A natural objection is that this does not yet select a physical finite kernel. This paper addresses the first execution-level selection problem in the fixed-point regime of Modal Triplet Theory (MTT). We prove that if the incoherent sector of an evolve–project system decays with a quantified semigroup bound
+  The preceding delta-projection papers established a structural dictionary: Dirac delta functions arise as singular limits of finite kernels, filters, shells, or selection operations. A natural objection is that this does not yet select a physical finite kernel. This paper isolates what fixed-point damping does and does not determine. If the incoherent sector of an evolve–project system obeys the semigroup estimate
   ``` math
   \|Q\Phi_t Q\| \le C_Q e^{-\lambda_\ast t},
   ```
-  and if admissibility requires residual incoherent leakage below a tolerance $`\varepsilon_{\rm adm}`$, then the minimal admissible proper-time/heat-time is not a free regulator but is fixed by
+  and admissibility requires residual leakage below $`\varepsilon_{\rm adm}`$, then
   ``` math
-  \tau_{\rm adm}=\frac{1}{\lambda_\ast}\log\frac{C_Q}{\varepsilon_{\rm adm}} .
+  \tau_{\rm cert}=\frac{1}{\lambda_\ast}\log\frac{C_Q}{\varepsilon_{\rm adm}}
   ```
-  The corresponding canonical MTT kernel is
+  is the earliest time certified by that bound. It is not, in general, the exact first admissible time. We define the exact exit time directly and prove equality in the reducing self-adjoint case, where $`\|Qe^{-tA}Q\|=e^{-t\inf\sigma(A|_{\operatorname{Ran}Q})}`$. For supplied operator, projector, acceptance window, and tolerance data, the corresponding filtered operator is
   ``` math
   K_{\rm adm}(x,y)
   =
-  \big\langle x\big|P\,\chi(A)\,e^{-\tau_{\rm adm}A}\,\chi(A)\,P\big|y\big\rangle,
+  \big\langle x\big|P\,\chi(A)\,e^{-\tau A}\,\chi(A)\,P\big|y\big\rangle,
   ```
-  where $`A`$ is the fixed-point linearized stabilization operator, $`P`$ is the coherent-sector projector, and $`\chi(A)`$ is the admissible spectral acceptance window. We then derive explicit error decompositions, show how the effective scale $`\Lambda_{\rm eff}\sim \tau_{\rm adm}^{-1/2}`$ follows from fixed-point data, and give a fully worked circle model in which $`(A,P,\chi,\tau_{\rm adm})`$ are all fixed once the geometry, spectral gap, damping constant, and admissibility tolerance are specified. The result is an execution bridge: the finite kernel used in downstream propagators, Green functions, contact loops, measurements, and constraint filters is selected by fixed-point damping data rather than chosen ad hoc.
+  where $`A`$ is the linearized stabilization operator. We derive an exact error decomposition and a circle benchmark. The result is a conditional execution bridge, not a source theorem: MTT still has to select $`A`$, $`P`$, $`\chi`$, and $`\varepsilon_{\rm adm}`$ in the physical sector before this filter can replace a regulator or predict a coherence scale.
 author:
 - Peter Nero
-current_version: unversioned
-date: April 2026
-generated_from_main_tex_sha256: a1d96753b36d9ac55f9fa45ad99d103f1be61fcd0e746994b2d0999f5c849f84
+current_version: v1
+date: July 2026, Version 1
+generated_from_main_tex_sha256: 797bcbcd71276505665fd2872493b945abf73a4052d9c09c4829b2debe2f3470
 paper_id: deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3
-release_state: not_matched_to_zenodo
+release_state: zenodo_released
+released_version: v1
 title: |
-  Deriving the MTT Coherence Scale from Fixed–Point Damping  
-  Canonical Proper-Time Kernels from Admissibility Thresholds
+  Admissibility-Time Bounds from Fixed–Point Damping
+  Exact Exit Times, Certified Proper-Time Filters, and the MTT Source Boundary
+zenodo_doi: 10.5281/zenodo.21704670
+zenodo_record_id: 21704670
+zenodo_url: "https://zenodo.org/records/21704670"
 ---
+
+# Version 1 Revision Note
+
+Supersedes
+The unversioned April 2026 manuscript on fixed-point damping and proper-time kernels.
+
+Reason
+The earlier theorem called a sufficient semigroup threshold the minimal physical admissibility time and described the resulting kernel as MTT-selected.
+
+Resolution
+This version distinguishes the exact exit time from the earliest time certified by an exponential upper bound, proves equality in the reducing self-adjoint case, and makes the operator, projector, spectral window, tolerance, and physical intertwiner explicit source obligations.
+
+Retained result
+The semigroup threshold formula, functional-calculus filter, error decomposition, and circle benchmark remain valid at their corrected conditional tier.
+
+Remaining boundary
+MTT geometry must select the physical source data before the filter predicts a coherence scale or modifies a propagator.
 
 # Purpose and Claim Discipline
 
@@ -44,23 +65,25 @@ K_{\rm coh}
 \text{finite correction}.
 ```
 
-This paper solves the first part of that reverse problem in the fixed-point regime. It proves that once a coherent fixed-point sector has quantified damping and an admissibility tolerance, the proper-time scale $`\tau`$ is fixed by the damping requirement. The kernel is then selected by functional calculus from the same operator data that generates stabilization.
+This paper solves a narrower part of that reverse problem. It converts quantified damping and a supplied admissibility tolerance into either an exact exit time or a certified upper bound. Functional calculus then determines a filter from the supplied operator data. The result does not select those inputs from MTT geometry.
 
 ## What is proved
 
 We prove the following statements in a Hilbert-space fixed-point setting:
 
-1.  A residual incoherent leakage bound determines a minimal admissible proper-time/heat-time $`\tau_{\rm adm}`$.
+1.  A residual incoherent leakage bound determines the earliest time certified by that bound.
 
-2.  This time scale canonically determines the proper-time filter $`e^{-\tau_{\rm adm}A}`$.
+2.  The exact first admissible time is characterized separately and is computed in the reducing self-adjoint case.
 
-3.  Together with a coherent projector $`P`$ and spectral window $`\chi(A)`$, this fixes the kernel $`K_{\rm adm}`$.
+3.  Either time parameter determines a proper-time filter once the choice between exact and conservative execution is declared.
 
-4.  Error terms split into damping leakage, spectral-window truncation, and proper-time smoothing.
+4.  Together with a declared coherent projector $`P`$ and spectral window $`\chi(A)`$, this fixes the conditional kernel $`K_{\rm adm}`$.
+
+5.  Error terms split into damping leakage, spectral-window truncation, and proper-time smoothing.
 
 ## What is not yet proved
 
-This paper does not derive the Standard Model, the numerical physical value of $`\varepsilon_{\rm adm}`$, or a unique universal $`\tau`$ for all regimes. The result is regime-relative: given a fixed-point sector and its damping/admissibility data, the kernel is no longer arbitrary.
+This paper does not derive the Standard Model, the numerical physical value of $`\varepsilon_{\rm adm}`$, a unique universal $`\tau`$, or the selected physical operator/window. The result is regime-relative and conditional on those data.
 
 # Fixed-Point Data
 
@@ -119,19 +142,35 @@ The tolerance $`\varepsilon_{\rm adm}`$ encodes the maximum residual noncoherent
 
 </div>
 
+<div class="definition">
+
+**Definition 3** (Exact admissibility exit time). For $`0<\varepsilon_{\rm adm}<1`$, define
+``` math
+\tau_{\rm exit}
+:=
+\inf\{t\ge0:\|Q\Phi_tQ\|\le\varepsilon_{\rm adm}\}.
+```
+When the leakage norm is nonincreasing, every $`t\ge\tau_{\rm exit}`$ is admissible.
+
+</div>
+
 <div class="theorem">
 
-**Theorem 3** (Minimal admissible proper-time). *Under the incoherent damping bound, any time $`t`$ satisfying
+**Theorem 4** (Certified admissibility time). *Under the incoherent damping bound, any time $`t`$ satisfying
 ``` math
 t\ge \frac{1}{\lambda_\ast}\log\frac{C_Q}{\varepsilon_{\rm adm}}
 ```
-is $`\varepsilon_{\rm adm}`$-admissible. The minimal admissible proper-time determined by this bound is therefore
+is $`\varepsilon_{\rm adm}`$-admissible. The earliest time certified by this bound is
 ``` math
 \boxed{
-\tau_{\rm adm}
+\tau_{\rm cert}
 =
 \frac{1}{\lambda_\ast}\log\frac{C_Q}{\varepsilon_{\rm adm}} .
 }
+```
+If the leakage norm is nonincreasing, then
+``` math
+\tau_{\rm exit}\le\tau_{\rm cert}.
 ```*
 
 </div>
@@ -154,23 +193,53 @@ and hence
 ``` math
 t\ge \lambda_\ast^{-1}\log(C_Q/\varepsilon_{\rm adm}).
 ```
-This is the claimed expression. $`\square`$ ◻
+This is the earliest time at which the stated upper bound itself falls below the tolerance. The actual norm may cross earlier, so the result gives $`\tau_{\rm exit}\le\tau_{\rm cert}`$, not equality in general. $`\square`$ ◻
+
+</div>
+
+<div class="theorem">
+
+**Theorem 5** (Exact exit time for a reducing self-adjoint semigroup). *Assume $`\Phi_t=e^{-tA}`$, $`A\ge0`$ is self-adjoint, $`Q`$ reduces $`A`$, and
+``` math
+\lambda_Q:=\inf\sigma(A|_{\operatorname{Ran}Q})>0.
+```
+Then
+``` math
+\|Qe^{-tA}Q\|=e^{-t\lambda_Q}
+```
+and hence
+``` math
+\boxed{\tau_{\rm exit}=\lambda_Q^{-1}\log(1/\varepsilon_{\rm adm}).}
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Because $`Q`$ reduces $`A`$, the restriction $`A_Q=A|_{\operatorname{Ran}Q}`$ is self-adjoint. The spectral theorem gives
+``` math
+\|e^{-tA_Q}\|=\sup_{\lambda\in\sigma(A_Q)}e^{-t\lambda}
+=e^{-t\inf\sigma(A_Q)}.
+```
+Solving $`e^{-t\lambda_Q}\le\varepsilon_{\rm adm}`$ gives the formula. $`\square`$ ◻
 
 </div>
 
 <div class="remark">
 
-*Remark 4* (Why this is not a regulator choice). A heat-kernel regulator normally chooses $`\tau`$ as a computational cutoff. Here $`\tau_{\rm adm}`$ is fixed by a damping inequality and an admissibility threshold. The scale appears before any divergent integral is considered. It is selected by the fixed-point stabilization mechanism.
+*Remark 6* (Regulator choice versus conditional selection). A heat-kernel regulator normally chooses $`\tau`$ as a computational cutoff. Here a supplied tolerance and a selected damping operator determine an exact or certified time before a loop integral is considered. This removes freedom only after those inputs have been sourced.
 
 </div>
 
 #### What has and has not been fixed.
 
-This result fixes the proper-time scale once the damping data and admissibility tolerance are specified:
+This result fixes an exact or conservative proper-time scale once the damping data and admissibility tolerance are specified:
 ``` math
-(C_Q,\lambda_\ast,\varepsilon_{\rm adm})\quad\Longrightarrow\quad \tau_{\rm adm}.
+(A,Q,\varepsilon_{\rm adm})\quad\Longrightarrow\quad \tau_{\rm exit},
+\qquad
+(C_Q,\lambda_\ast,\varepsilon_{\rm adm})\quad\Longrightarrow\quad \tau_{\rm cert}.
 ```
-Thus $`\tau`$ is no longer an arbitrary Gaussian width. The remaining execution-level task is sharper: in each physical sector one must derive or constrain $`\varepsilon_{\rm adm}`$, together with $`A`$, $`P`$, $`\chi`$, $`C_Q`$, and $`\lambda_\ast`$, from closure strain, basin separation, detector resolution, measured error tolerance, or other sector data. This moves the freedom from an arbitrary regulator scale to physically interpretable admissibility data.
+Thus $`\tau`$ is no longer an arbitrary Gaussian width conditional on the inputs. The remaining execution-level task is sharper: in each physical sector one must derive or constrain $`\varepsilon_{\rm adm}`$, together with $`A`$, $`P`$, $`\chi`$, $`C_Q`$, and $`\lambda_\ast`$, from selected source data. Detector resolution or measured error tolerance may define an effective filter, but cannot establish a first-principles MTT scale.
 
 # Canonical Admissible Kernel
 
@@ -188,18 +257,18 @@ for a sharp spectral window, or a smooth cutoff satisfying
 
 <div class="definition">
 
-**Definition 5** (Canonical admissible MTT filter). The admissible fixed-point filter is
+**Definition 7** (Canonical admissible MTT filter). The admissible fixed-point filter is
 ``` math
-B_{\rm adm}
+B_{\tau}
 =
-P\,\chi(A)\,e^{-\tau_{\rm adm}A}\,\chi(A)\,P .
+P\,\chi(A)\,e^{-\tau A}\,\chi(A)\,P .
 ```
 When the corresponding operator has an integral kernel, we define
 ``` math
 \boxed{
-K_{\rm adm}(x,y)
+K_{\tau}(x,y)
 =
-\langle x|B_{\rm adm}|y\rangle .
+\langle x|B_{\tau}|y\rangle .
 }
 ```
 
@@ -209,25 +278,21 @@ This is the central execution object. It replaces the arbitrary $`K_\epsilon`$ o
 
 <div class="theorem">
 
-**Theorem 6** (Canonical kernel selection). *For fixed regime data
+**Theorem 8** (Conditional uniqueness of the filtered operator). *For declared regime data
 ``` math
-(A,P,\chi,C_Q,\lambda_\ast,\varepsilon_{\rm adm}),
+(A,P,\chi,\tau),
 ```
-the admissible kernel $`K_{\rm adm}`$ is uniquely determined by functional calculus. It is not freely adjustable.*
+the filtered operator $`B_\tau`$ is uniquely determined by functional calculus. If $`\tau`$ is chosen as $`\tau_{\rm exit}`$ or $`\tau_{\rm cert}`$, it is fixed by the corresponding declared damping rule.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* The data determine
+*Proof.* Given $`A`$, the spectral theorem uniquely defines $`\chi(A)`$ and $`e^{-\tau A}`$. Given $`P`$, the product
 ``` math
-\tau_{\rm adm}=\lambda_\ast^{-1}\log(C_Q/\varepsilon_{\rm adm}).
+B_\tau=P\chi(A)e^{-\tau A}\chi(A)P
 ```
-Given $`A`$, the spectral theorem uniquely defines $`\chi(A)`$ and $`e^{-\tau_{\rm adm}A}`$. Given $`P`$, the product
-``` math
-B_{\rm adm}=P\chi(A)e^{-\tau_{\rm adm}A}\chi(A)P
-```
-is therefore uniquely determined as a bounded operator. If an integral kernel representation exists in the chosen function space, that kernel is the Schwartz kernel of $`B_{\rm adm}`$, hence is uniquely determined as a distribution and, under smoothing hypotheses, as a function. $`\square`$ ◻
+is therefore uniquely determined as a bounded operator. If an integral kernel representation exists in the chosen function space, that kernel is the Schwartz kernel of $`B_\tau`$, hence is uniquely determined as a distribution and, under smoothing hypotheses, as a function. $`\square`$ ◻
 
 </div>
 
@@ -237,62 +302,62 @@ The full identity $`I`$ is not generally the correct target. In MTT, $`P`$ is a 
 
 Let
 ``` math
-B_{\rm adm}=P\chi(A)e^{-\tau_{\rm adm}A}\chi(A)P.
+B_\tau=P\chi(A)e^{-\tau A}\chi(A)P.
 ```
 For $`f\in\mathcal H`$,
 ``` math
-f-B_{\rm adm}f
+f-B_\tau f
 =
 (I-P)f
 +
 P(I-\chi(A)^2)Pf
 +
-P\chi(A)\big(I-e^{-\tau_{\rm adm}A}\big)\chi(A)Pf .
+P\chi(A)\big(I-e^{-\tau A}\big)\chi(A)Pf .
 ```
 This is the key execution decomposition.
 
 <div class="theorem">
 
-**Theorem 7** (Three-source correction bound). *Assume $`[P,A]=0`$ and $`0\le\chi\le1`$. Then
+**Theorem 9** (Three-source correction bound). *Assume $`[P,A]=0`$ and $`0\le\chi\le1`$. Then
 ``` math
-\|f-B_{\rm adm}f\|
+\|f-B_\tau f\|
 \le
 \|(I-P)f\|
 +
 \|(I-\chi(A)^2)Pf\|
 +
-\|\chi(A)(I-e^{-\tau_{\rm adm}A})\chi(A)Pf\|.
+\|\chi(A)(I-e^{-\tau A})\chi(A)Pf\|.
 ```
 If $`f\in\operatorname{Ran}P`$ and $`\chi(A)f=f`$, then
 ``` math
-\|f-B_{\rm adm}f\|
+\|f-B_\tau f\|
 \le
-\|(I-e^{-\tau_{\rm adm}A})f\|.
+\|(I-e^{-\tau A})f\|.
 ```
 If additionally the retained spectral support of $`f`$ lies in $`[0,\Lambda^2]`$, then
 ``` math
-\|f-B_{\rm adm}f\|
+\|f-B_\tau f\|
 \le
-\left(1-e^{-\tau_{\rm adm}\Lambda^2}\right)\|f\|.
+\left(1-e^{-\tau\Lambda^2}\right)\|f\|.
 ```
-For $`\tau_{\rm adm}\Lambda^2\ll1`$,
+For $`\tau\Lambda^2\ll1`$,
 ``` math
-\|f-B_{\rm adm}f\|
+\|f-B_\tau f\|
 \le
-\tau_{\rm adm}\Lambda^2\|f\|+O(\tau_{\rm adm}^2\Lambda^4)\|f\|.
+\tau\Lambda^2\|f\|+O(\tau^2\Lambda^4)\|f\|.
 ```*
 
 </div>
 
 <div class="proof">
 
-*Proof.* The algebraic decomposition follows by adding and subtracting $`Pf`$, $`P\chi(A)^2Pf`$, and $`P\chi(A)e^{-\tau_{\rm adm}A}\chi(A)Pf`$, using $`P^2=P`$ and commutation. The norm bound follows by the triangle inequality. If $`f\in\operatorname{Ran}P`$ and $`\chi(A)f=f`$, the first two terms vanish. On spectral support $`[0,\Lambda^2]`$, functional calculus gives
+*Proof.* The algebraic decomposition follows by adding and subtracting $`Pf`$, $`P\chi(A)^2Pf`$, and $`P\chi(A)e^{-\tau A}\chi(A)Pf`$, using $`P^2=P`$ and commutation. The norm bound follows by the triangle inequality. If $`f\in\operatorname{Ran}P`$ and $`\chi(A)f=f`$, the first two terms vanish. On spectral support $`[0,\Lambda^2]`$, functional calculus gives
 ``` math
-\|(I-e^{-\tau_{\rm adm}A})f\|
+\|(I-e^{-\tau A})f\|
 \le
-\sup_{0\le\lambda\le\Lambda^2}|1-e^{-\tau_{\rm adm}\lambda}|\|f\|
+\sup_{0\le\lambda\le\Lambda^2}|1-e^{-\tau\lambda}|\|f\|
 =
-(1-e^{-\tau_{\rm adm}\Lambda^2})\|f\|.
+(1-e^{-\tau\Lambda^2})\|f\|.
 ```
 The small-$`\tau`$ expansion follows from $`1-e^{-x}=x+O(x^2)`$. $`\square`$ ◻
 
@@ -312,19 +377,19 @@ The small-$`\tau`$ expansion follows from $`1-e^{-x}=x+O(x^2)`$. $`\square`$ �
 
 In flat or locally flat sectors where $`A\sim -\Delta`$, spectral values scale like $`\lambda\sim k^2`$. The damping factor becomes
 ``` math
-e^{-\tau_{\rm adm}k^2}.
+e^{-\tau k^2}.
 ```
 The characteristic scale at which damping becomes order one is
 ``` math
-\tau_{\rm adm} k^2\sim1.
+\tau k^2\sim1.
 ```
 Thus
 ``` math
 \boxed{
-\Lambda_{\rm eff}\sim \tau_{\rm adm}^{-1/2}.
+\Lambda_{\rm eff}\sim \tau^{-1/2}.
 }
 ```
-Using the fixed-point expression for $`\tau_{\rm adm}`$,
+Using the certified damping expression $`\tau=\tau_{\rm cert}`$,
 ``` math
 \boxed{
 \Lambda_{\rm eff}
@@ -334,7 +399,7 @@ Using the fixed-point expression for $`\tau_{\rm adm}`$,
 \right)^{1/2}.
 }
 ```
-This is the first explicit route from fixed-point damping data to a finite-width physical correction scale.
+This is an explicit route from declared fixed-point damping data to a finite-width filter scale. It becomes a physical correction scale only after source selection and matching.
 
 # Worked Model: Circle Sector
 
@@ -416,7 +481,7 @@ gives the dimensionless retained-mode scale
 
 This example shows the selection mechanism explicitly. Once $`R`$, $`N_{\rm coh}`$, and $`\varepsilon_{\rm adm}`$ are fixed, the kernel is fixed. No Gaussian width is chosen by hand.
 
-# Application to Propagator Corrections
+# Conditional Application to Propagator Filters
 
 The immediate link to the MTT-corrected propagator paper is:
 ``` math
@@ -430,7 +495,7 @@ The immediate link to the MTT-corrected propagator paper is:
 \lambda_\ast^{-1}\log\frac{C_Q}{\varepsilon_{\rm adm}}.
 }
 ```
-Thus the exponential factor is not chosen at the propagator stage. It is inherited from the minimal fixed-point damping time required by admissibility.
+Thus the exponential factor is inherited from the declared damping rule rather than chosen at the propagator stage. This remains a conditional Euclidean filter until the same physical source theorem selects the stabilization generator and its coupling to the propagating field.
 
 For a scalar Euclidean sector with ordinary propagator
 ``` math
@@ -489,7 +554,7 @@ Hence
 ```
 A real bound requires matching the filtered propagator into the relevant scattering amplitude and observable. The inequality above is only the universal scaling estimate.
 
-# Why This Solves the Kernel-Choice Objection
+# What This Resolves and What It Leaves Open
 
 The criticism of the earlier dictionary papers was correct: showing
 ``` math
@@ -497,7 +562,7 @@ K_\epsilon\to\delta
 ```
 does not identify which $`K_\epsilon`$ nature selects.
 
-The present paper supplies the missing fixed-point selection rule:
+The present paper supplies a conditional fixed-point execution rule:
 ``` math
 (A,P,\chi,C_Q,\lambda_\ast,\varepsilon_{\rm adm})
 \Longrightarrow
@@ -505,7 +570,7 @@ The present paper supplies the missing fixed-point selection rule:
 \Longrightarrow
 K_{\rm adm}.
 ```
-Thus the kernel is canonical inside a regime. It is not a universal constant and not an arbitrary regulator. It is selected by fixed-point damping and admissibility.
+Thus the kernel is unique inside a fully specified regime. The remaining source problem is not hidden: MTT geometry must select the regime data, including the tolerance, before the kernel can be called a physical prediction.
 
 # Next Execution Targets
 
@@ -523,12 +588,12 @@ The most plausible first physical sector is the neutrino soft sector, because th
 
 # Conclusion
 
-This paper converts the delta-projection program from a structural dictionary into an execution rule. In the fixed-point regime, the finite kernel is not chosen by hand. It is determined by damping data, spectral gap, admissibility tolerance, coherent projection, and spectral acceptance.
+This paper converts one part of the delta-projection dictionary into a conditional execution rule. In the fixed-point regime, supplied damping data, spectral gap, admissibility tolerance, coherent projection, and spectral acceptance determine a unique finite filter.
 
 The central formula is
 ``` math
 \boxed{
-\tau_{\rm adm}
+\tau_{\rm cert}
 =
 \frac{1}{\lambda_\ast}\log\frac{C_Q}{\varepsilon_{\rm adm}}
 }
@@ -536,18 +601,30 @@ The central formula is
 and the corresponding kernel is
 ``` math
 \boxed{
-K_{\rm adm}(x,y)
+K_{\tau}(x,y)
 =
-\big\langle x\big|P\chi(A)e^{-\tau_{\rm adm}A}\chi(A)P\big|y\big\rangle.
+\big\langle x\big|P\chi(A)e^{-\tau A}\chi(A)P\big|y\big\rangle.
 }
 ```
 This gives the first rigorous answer to the reverse problem:
 ``` math
 \boxed{
-\text{MTT fixed-point data}
+\text{declared fixed-point data}
 \Rightarrow
-K_{\rm adm}
+K_{\tau}
 \Rightarrow
 \text{finite correction}.
 }
 ```
+
+The missing first-principles step is the selected source map from MTT geometry to those declared data.
+
+<div class="thebibliography">
+
+9
+
+K.-J. Engel and R. Nagel, *One-Parameter Semigroups for Linear Evolution Equations*, Graduate Texts in Mathematics 194, Springer (2000). [doi:10.1007/b97696](https://doi.org/10.1007/b97696).
+
+E. B. Davies, *Heat Kernels and Spectral Theory*, Cambridge Tracts in Mathematics 92, Cambridge University Press (1989). [doi:10.1017/CBO9780511566158](https://doi.org/10.1017/CBO9780511566158).
+
+</div>

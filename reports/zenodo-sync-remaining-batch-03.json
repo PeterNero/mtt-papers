@@ -1,0 +1,49 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T13:44:18+00:00",
+  "mode": "sync",
+  "papers": 3,
+  "ready": 3,
+  "results": [
+    {
+      "draft_id": "21704670",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "87fdef6f7be91be815fe3db3e4780d9d",
+      "local_pdf_sha256": "8b66667063f69bf7c45c460a1a6148b581f2f9c9f91c3dc2a65121ccefea2696",
+      "paper_id": "deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v1"
+    },
+    {
+      "draft_id": "21704672",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "1f9a2f39c6c9add868b07cbb750cf4ab",
+      "local_pdf_sha256": "6b267f1fec507efe8e23e30599ed0eb648b1b50beabc905bbc0ed9bb698cb89e",
+      "paper_id": "path-integral-constraints-as-finite-admissibility-filte-47c01009",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v1"
+    },
+    {
+      "draft_id": "21704674",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "ba8a1d88c70af512952c565c5684495d",
+      "local_pdf_sha256": "bcf5532772c2621ab1c4f02aa14f2ed0ee0acca617ea421577744a48b2a3846d",
+      "paper_id": "spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v1"
+    }
+  ]
+}
