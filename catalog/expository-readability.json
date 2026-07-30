@@ -1,23 +1,23 @@
 {
   "schema": "mtt.expository-readability-audit.v1",
-  "generated_on": "2026-07-30",
+  "generated_on": "2026-07-31",
   "papers": 139,
   "priority_counts": {
-    "critical": 7,
+    "critical": 6,
     "light": 7,
     "low": 1,
     "major": 7,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 113
+    "reviewed": 114
   },
   "missing_dimension_counts": {
-    "argument_flow": 34,
-    "conclusion": 12,
-    "concrete_foothold": 36,
+    "argument_flow": 35,
+    "conclusion": 11,
+    "concrete_foothold": 35,
     "object_intuition": 87,
-    "orientation": 48,
-    "result_interpretation": 11
+    "orientation": 49,
+    "result_interpretation": 10
   },
   "forbidden_boilerplate_hits": [],
   "rows": [
@@ -610,30 +610,29 @@
     },
     {
       "paper_id": "coherent-universality-and-the-inevitability-of-projecti-d9e28e29",
-      "title": "Coherent Universality and the Inevitability of Projection-Based Quantum Theories A structural classification of viable measurement, spacetime, and matter frameworks",
-      "total_words": 1848,
-      "narrative_words": 1199,
-      "formal_results": 15,
-      "proofs": 4,
-      "narrative_words_per_result": 79.9,
-      "orientation": true,
+      "title": "Conditional Classification of Projection-Based Effective Theories: Witness Records, Comparison Axes, and the Limits of Inevitability in Modal Triplet Theory",
+      "total_words": 4450,
+      "narrative_words": 3338,
+      "formal_results": 14,
+      "proofs": 8,
+      "narrative_words_per_result": 238.4,
+      "orientation": false,
       "object_intuition": false,
-      "argument_flow": true,
-      "result_interpretation": false,
-      "concrete_foothold": false,
+      "argument_flow": false,
+      "result_interpretation": true,
+      "concrete_foothold": true,
       "limitations": true,
-      "conclusion": false,
-      "coverage_dimensions": 3,
-      "audit_priority": "critical",
-      "heuristic_priority": "critical",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "conclusion": true,
+      "coverage_dimensions": 4,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "major",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "review_note": "Version 3 withdraws the global inevitability classification and rebuilds the paper as a seven-axis witness taxonomy. It corrects left/right inverse language, separates operational nonrecoverability from algebraic loss, proves compact-core margin, transverse-event, compact-U(1), ultraviolet-nonuniqueness, and axis-refinement results, adds counterexamples and neutral cross-framework comparison, preserves current MTT operator ownership, and the complete 14-page PDF was visually inspected.",
       "missing_dimensions": [
+        "orientation",
         "object_intuition",
-        "result_interpretation",
-        "concrete_foothold",
-        "conclusion"
+        "argument_flow"
       ]
     },
     {

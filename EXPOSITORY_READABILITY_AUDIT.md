@@ -1,6 +1,6 @@
 # MTT Expository Readability Audit
 
-Generated: 2026-07-30
+Generated: 2026-07-31
 
 This is a triage instrument, not a prose-quality certificate. The heuristic score is preserved in the JSON, while an effective `reviewed` or `reference_ready` state is assigned only through the explicit human-review decision file.
 
@@ -10,24 +10,24 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| critical | 7 |
+| critical | 6 |
 | major | 7 |
 | moderate | 2 |
 | light | 7 |
 | low | 1 |
-| reviewed | 113 |
+| reviewed | 114 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 34 |
-| conclusion | 12 |
-| concrete_foothold | 36 |
+| argument_flow | 35 |
+| conclusion | 11 |
+| concrete_foothold | 35 |
 | object_intuition | 87 |
-| orientation | 48 |
-| result_interpretation | 11 |
+| orientation | 49 |
+| result_interpretation | 10 |
 
 ## Revision Queue
 
@@ -36,7 +36,6 @@ Canonical papers audited: **139**.
 | critical | critical | `eth-and-many-body-localization-as-a-single-shadow-bridg-236606dd` | 27 | 45.8 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `electromagnetic-helicity-as-a-coherent-sector-chern-sim-0cc7ca40` | 17 | 63.4 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 17 | 123.5 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
-| critical | critical | `coherent-universality-and-the-inevitability-of-projecti-d9e28e29` | 15 | 79.9 | 3/7 | object_intuition, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 15 | 54.1 | 4/7 | argument_flow, concrete_foothold, conclusion |
 | critical | critical | `topological-phases-of-matter-as-admissible-overlap-stru-837dec46` | 12 | 79.8 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `topology-only-constraints-and-forbidden-operators-in-mo-90db2212` | 12 | 116.0 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
@@ -71,6 +70,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c` | 15 | 238.5 | 4/7 | object_intuition, argument_flow, result_interpretation |
 | reviewed | major | `the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707` | 15 | 189.0 | 6/7 | object_intuition |
 | reviewed | critical | `canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62` | 14 | 110.1 | 6/7 | object_intuition |
+| reviewed | major | `coherent-universality-and-the-inevitability-of-projecti-d9e28e29` | 14 | 238.4 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | major | `the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2` | 14 | 150.4 | 7/7 | - |
 | reviewed | critical | `coherence-capacity-as-the-fundamental-resource-of-effec-cd41c322` | 13 | 147.2 | 7/7 | - |
 | reviewed | major | `coherence-capacity-as-the-invariant-admissibility-margi-423433d4` | 13 | 182.3 | 7/7 | - |

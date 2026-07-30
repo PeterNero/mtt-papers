@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
-    "zenodo_records": 251,
-    "zenodo_records_matched": 251,
+    "zenodo_records": 252,
+    "zenodo_records_matched": 252,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -2439,82 +2439,6 @@
       ]
     },
     {
-      "abstract": "We present a structural classification result for quantum theories capable of reproducing irreversible measurement, stable classical outcomes, relativistic locality, finite predictivity, and observed matter structure. Starting from minimal empirical requirements rather than model-specific assumptions, we derive a sequence of inevitability theorems: effective noninvertible projection, admissible basins with finite stability margins, smooth spectral suppression of ultraviolet modes, discrete selection events at the encoding level, and topology-driven constraints on matter representations and operators are all forced. These conditions define a coherent universality class. We show that all successful existing approaches\u2014collapse models, measurement-induced transitions, asymptotic safety, loop quantum gravity, causal set theory, and noncommutative geometry\u2014implement partial shadows of this class, while structurally distinct alternatives fail one or more necessary conditions. Modal Triplet Theory provides a minimal explicit realization of the class, but the classification result does not depend on MTT-specific constructions. The apparent plurality of quantum gravity and measurement theories is therefore illusory: viable frameworks are constrained to a single universality class characterized by projection, admissibility, and spectral truncation.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v2",
-      "date": "January, 2026",
-      "latest_zenodo_release": {
-        "concept_doi": "10.5281/zenodo.18261806",
-        "created": "2026-01-16T11:37:56.226388+00:00",
-        "creators": [
-          "Nero, Peter"
-        ],
-        "doi": "10.5281/zenodo.18268193",
-        "files": [
-          {
-            "checksum": "md5:227612928884fbe09063e90f9f6da295",
-            "content_url": "https://zenodo.org/api/records/18268193/files/Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2%20(2).pdf/content",
-            "key": "Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2 (2).pdf",
-            "size": 224420
-          }
-        ],
-        "id": "18268193",
-        "match_kind": "title_or_file",
-        "match_score": 1.0,
-        "publication_date": "2026-01-16",
-        "record_url": "https://zenodo.org/records/18268193",
-        "resource_type": "publication",
-        "title": "Coherent Universality and the Inevitability of Projection-Based Quantum Theories",
-        "updated": "2026-01-16T11:37:57.364729+00:00",
-        "version": "v2.0"
-      },
-      "main_tex_sha256": "02fb8ea83b0bfbc1a5ba154c321e8220c0a6dc912c3aa1d3e349e01504095c0f",
-      "paper_id": "coherent-universality-and-the-inevitability-of-projecti-d9e28e29",
-      "paper_md_sha256": "4fa4eac9a70bda6cb73c7ce249f489e7147957ff3f54093518662f017dea6613",
-      "release_state": "zenodo_released",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2"
-      },
-      "source_tree_sha256": "f25187d4b442942f8880daa4e419dccbf7f6e39e3016a146fefc1503028a2bc6",
-      "title": "Coherent Universality and the Inevitability of Projection-Based Quantum Theories A structural classification of viable measurement, spacetime, and matter frameworks",
-      "version_relation": "matches_latest_release",
-      "zenodo_releases": [
-        {
-          "concept_doi": "10.5281/zenodo.18261806",
-          "created": "2026-01-16T11:37:56.226388+00:00",
-          "creators": [
-            "Nero, Peter"
-          ],
-          "doi": "10.5281/zenodo.18268193",
-          "files": [
-            {
-              "checksum": "md5:227612928884fbe09063e90f9f6da295",
-              "content_url": "https://zenodo.org/api/records/18268193/files/Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2%20(2).pdf/content",
-              "key": "Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2 (2).pdf",
-              "size": 224420
-            }
-          ],
-          "id": "18268193",
-          "match_kind": "title_or_file",
-          "match_score": 1.0,
-          "publication_date": "2026-01-16",
-          "record_url": "https://zenodo.org/records/18268193",
-          "resource_type": "publication",
-          "title": "Coherent Universality and the Inevitability of Projection-Based Quantum Theories",
-          "updated": "2026-01-16T11:37:57.364729+00:00",
-          "version": "v2.0"
-        }
-      ]
-    },
-    {
       "abstract": "A coherent-sector truncation is controlled only after the retained subspace, full closed operator, block domains, spectral parameter, eliminated-sector resolvent, and comparison norm have all been specified. A spectral gap alone is not a complete truncation theorem. This paper gives a domain-explicit coherent-sector reduction for a self-adjoint block operator. It first resolves a basic ambiguity: an exact spectral projector of the same operator reduces that operator, so its off-diagonal blocks vanish and the truncation is exact. A nonzero Feshbach correction therefore requires a projector selected from a reference operator, symmetry, Galerkin space, or approximate coherent criterion. For a reference-selected projector, the paper states the exact Feshbach-Schur reduction at a declared spectral parameter and bounds the omitted-sector self-energy by the product of the two coupling norms and the eliminated-sector resolvent norm. It proves the inverse formula, gives a two-mode example, derives Riesz-projector stability under bounded perturbations, and establishes local operator-norm robustness with all block variations explicit. These results define a controlled local comparison class, not a global universality theorem. Resolvent closeness does not imply uniform-in-time dynamical closeness; graph-norm and form robustness require separate hypotheses; and an internal one-parameter unitary is not physical time without a model-specific clock and intertwining theorem. The result is a rigorous methods paper and an executable certificate format for future Modal Triplet Theory reductions.",
       "authors": [
         "Peter Nero"
@@ -2794,6 +2718,109 @@
           "title": "Computational Irreducibility from Projection: Undecidability of Selection Events in Coherent Quantum Dynamics",
           "updated": "2026-01-15T10:29:24.471952+00:00",
           "version": "v1.0"
+        }
+      ]
+    },
+    {
+      "abstract": "Irreversible records, ultraviolet control, event-like outcomes, and consistent matter sectors are genuine demands on physical theories. They do not, by themselves, force all viable theories into one mathematical universality class. The missing information is the mechanism: which states and operations are admitted, what is projected, what counts as recovery, which dynamics stabilizes records, how ultraviolet errors are controlled, how events are generated, and which global gauge and bundle data define the matter sector. This paper replaces an earlier inevitability claim by a conditional classification framework. A theory is represented by a seven-axis witness record covering operational measurement, descent and recovery, stability, ultraviolet control, event structure, gauge and matter data, and empirical validation. We prove five bounded results: noninjective descent has no left inverse; compact cores of open record regions have positive margins; transverse crossings are locally finite; representations of a specified compact U(1) have integer weights; and multi-axis equivalence classes refine monotonically as comparison requirements are added. Explicit counterexamples show why operational irreversibility need not mean algebraic noninvertibility, low-energy predictivity does not select smooth spectral damping, countable outcomes do not create a causal set, and local anomaly cancellation or charge quantization does not determine the observed Standard Model. Collapse models, monitored circuits, effective field theory, asymptotic safety, loop quantum gravity, causal sets, noncommutative geometry, and Modal Triplet Theory are therefore compared only through completed witness rows. The result is a falsifiable taxonomy and release-ready comparison protocol, not a proof that the apparent plurality of physical theories is illusory.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v3",
+      "date": "Version 3, July 2026",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.18261806",
+        "created": "2026-07-30T22:10:12.263688+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21710806",
+        "files": [
+          {
+            "checksum": "md5:64eb68b003963ffcc82a872fffd28f06",
+            "content_url": "https://zenodo.org/api/records/21710806/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 393985
+          }
+        ],
+        "id": "21710806",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21710806",
+        "resource_type": "publication",
+        "title": "Conditional Classification of Projection-Based Effective Theories: Witness Records, Comparison Axes, and the Limits of Inevitability in Modal Triplet Theory",
+        "updated": "2026-07-30T22:10:12.787281+00:00",
+        "version": "v3"
+      },
+      "main_tex_sha256": "947d31cd6193f58d2f14319def73d0475534ba418271867d82349136f5e079e7",
+      "paper_id": "coherent-universality-and-the-inevitability-of-projecti-d9e28e29",
+      "paper_md_sha256": "483597dae8e82e68b31d2e187e22f4b8c8ff8821621d782d8162445bf16fbdac",
+      "release_state": "zenodo_released",
+      "result_refs": [],
+      "revision": {
+        "revision_evidence_path": "papers/coherent-universality-and-the-inevitability-of-projecti-d9e28e29/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "3fca1771683c033d19bfad20c473c2b9975622bd6ee2760eea0a3a5a78e19580",
+        "selected_revision": true
+      },
+      "source_provenance": {
+        "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2"
+      },
+      "source_tree_sha256": "62dda1600c003ee74d76aa52cb82f457e00cc5ab24161f79870426301552d39a",
+      "title": "Conditional Classification of Projection-Based Effective Theories: Witness Records, Comparison Axes, and the Limits of Inevitability in Modal Triplet Theory",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18261806",
+          "created": "2026-07-30T22:10:12.263688+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21710806",
+          "files": [
+            {
+              "checksum": "md5:64eb68b003963ffcc82a872fffd28f06",
+              "content_url": "https://zenodo.org/api/records/21710806/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 393985
+            }
+          ],
+          "id": "21710806",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21710806",
+          "resource_type": "publication",
+          "title": "Conditional Classification of Projection-Based Effective Theories: Witness Records, Comparison Axes, and the Limits of Inevitability in Modal Triplet Theory",
+          "updated": "2026-07-30T22:10:12.787281+00:00",
+          "version": "v3"
+        },
+        {
+          "concept_doi": "10.5281/zenodo.18261806",
+          "created": "2026-01-16T11:37:56.226388+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.18268193",
+          "files": [
+            {
+              "checksum": "md5:227612928884fbe09063e90f9f6da295",
+              "content_url": "https://zenodo.org/api/records/18268193/files/Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2%20(2).pdf/content",
+              "key": "Coherent_Universality_and_the_Inevitability_of_Projection_Based_Quantum_Theories_v2 (2).pdf",
+              "size": 224420
+            }
+          ],
+          "id": "18268193",
+          "match_kind": "title_or_file",
+          "match_score": 1.0,
+          "publication_date": "2026-01-16",
+          "record_url": "https://zenodo.org/records/18268193",
+          "resource_type": "publication",
+          "title": "Coherent Universality and the Inevitability of Projection-Based Quantum Theories",
+          "updated": "2026-01-16T11:37:57.364729+00:00",
+          "version": "v2.0"
         }
       ]
     },

@@ -920,6 +920,14 @@
       "reviewed_main_tex_sha256": "1db283114f7c49319421b69075c3069e4c782160fdfed5b0abf99ef7a1058fb4",
       "reviewed_pdf_sha256": "127c0f141286f0a265083c0269ec6d1e48612d1c60fb7f907e2bb9bf7c7cdf61",
       "reviewed_source_tree_sha256": "217bfdd16df05a6986e41a6d194f652e87c360784d3ccd4708f7157164f60612"
+    },
+    "coherent-universality-and-the-inevitability-of-projecti-d9e28e29": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 3 withdraws the global inevitability classification and rebuilds the paper as a seven-axis witness taxonomy. It corrects left/right inverse language, separates operational nonrecoverability from algebraic loss, proves compact-core margin, transverse-event, compact-U(1), ultraviolet-nonuniqueness, and axis-refinement results, adds counterexamples and neutral cross-framework comparison, preserves current MTT operator ownership, and the complete 14-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "947d31cd6193f58d2f14319def73d0475534ba418271867d82349136f5e079e7",
+      "reviewed_pdf_sha256": "3ec05c192c3cef5e166541cbedae1f8561b525c53714bb9f3422fb5377a2e17d",
+      "reviewed_source_tree_sha256": "62dda1600c003ee74d76aa52cb82f457e00cc5ab24161f79870426301552d39a"
     }
   }
 }

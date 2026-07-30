@@ -1,471 +1,897 @@
 % !TEX program = pdflatex
 \documentclass[11pt]{article}
-% ---------- REQUIRED ----------
-\usepackage{series} % required by user
 
-% ---------- Encoding / Fonts ----------
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{microtype}
-
-% ---------- Layout ----------
-\usepackage{geometry}
-\geometry{margin=1in}
-
-
-
-% ---------- Math / Theorems ----------
+\usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
-
-
-% ---------- Lists ----------
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
 \usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
 
-% ============================================================
-% Safe macros (no physics.sty)
-% ============================================================
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 
-\DeclareMathOperator{\spec}{spec}
-
-\newcommand{\normop}[1]{\left\lVert #1 \right\rVert}
-
-% ============================================================
-% Theorem environments
-% ============================================================
-\theoremstyle{plain}
-
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
 \theoremstyle{definition}
-
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
 \theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
 
-% ============================================================
-% Title
-% ============================================================
-\title{\textbf{Coherent Universality and the Inevitability of Projection-Based Quantum Theories}\\
-\large A structural classification of viable measurement, spacetime, and matter frameworks}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\Ran}{Ran}
+\DeclareMathOperator{\supp}{supp}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\T}{\mathcal{T}}
+\newcommand{\W}{\mathsf{W}}
+\newcommand{\axis}[1]{\mathsf{#1}}
+
+\title{\textbf{Conditional Classification of Projection-Based Effective Theories:}\\
+\large Witness Records, Comparison Axes, and the Limits of Inevitability in Modal Triplet Theory}
 \author{Peter Nero}
-\date{January, 2026}
+\date{Version 3, July 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We present a structural classification result for quantum theories capable of
-reproducing irreversible measurement, stable classical outcomes, relativistic
-locality, finite predictivity, and observed matter structure. Starting from
-minimal empirical requirements rather than model-specific assumptions, we derive
-a sequence of inevitability theorems: effective noninvertible projection,
-admissible basins with finite stability margins, smooth spectral suppression of
-ultraviolet modes, discrete selection events at the encoding level, and
-topology-driven constraints on matter representations and operators are all
-forced. These conditions define a coherent universality class. We show that all
-successful existing approaches—collapse models, measurement-induced transitions,
-asymptotic safety, loop quantum gravity, causal set theory, and noncommutative
-geometry—implement partial shadows of this class, while structurally distinct
-alternatives fail one or more necessary conditions. Modal Triplet Theory provides
-a minimal explicit realization of the class, but the classification result does
-not depend on MTT-specific constructions. The apparent plurality of quantum
-gravity and measurement theories is therefore illusory: viable frameworks are
-constrained to a single universality class characterized by projection,
-admissibility, and spectral truncation.
+Irreversible records, ultraviolet control, event-like outcomes, and consistent
+matter sectors are genuine demands on physical theories. They do not, by
+themselves, force all viable theories into one mathematical universality class.
+The missing information is the mechanism: which states and operations are
+admitted, what is projected, what counts as recovery, which dynamics stabilizes
+records, how ultraviolet errors are controlled, how events are generated, and
+which global gauge and bundle data define the matter sector. This paper replaces
+an earlier inevitability claim by a conditional classification framework. A
+theory is represented by a seven-axis witness record covering operational
+measurement, descent and recovery, stability, ultraviolet control, event
+structure, gauge and matter data, and empirical validation. We prove five
+bounded results: noninjective descent has no left inverse; compact cores of open
+record regions have positive margins; transverse crossings are locally finite;
+representations of a specified compact \(U(1)\) have integer weights; and
+multi-axis equivalence classes refine monotonically as comparison requirements
+are added. Explicit counterexamples show why operational irreversibility need
+not mean algebraic noninvertibility, low-energy predictivity does not select
+smooth spectral damping, countable outcomes do not create a causal set, and
+local anomaly cancellation or charge quantization does not determine the
+observed Standard Model. Collapse models, monitored circuits, effective field
+theory, asymptotic safety, loop quantum gravity, causal sets, noncommutative
+geometry, and Modal Triplet Theory are therefore compared only through completed
+witness rows. The result is a falsifiable taxonomy and release-ready comparison
+protocol, not a proof that the apparent plurality of physical theories is
+illusory.
 \end{abstract}
+
+\section*{Revision note for Version 3}
+
+\begin{description}[leftmargin=3.3cm,style=nextline]
+\item[Supersedes.] Version 2, DOI
+\href{https://doi.org/10.5281/zenodo.18268193}{10.5281/zenodo.18268193}.
+\item[Reason.] Version 2 presented five broad ``inevitability'' theorems and
+concluded that all successful measurement, quantum-gravity, ultraviolet, and
+matter frameworks belong to a single coherent universality class. Those
+conclusions did not follow from the stated empirical requirements.
+\item[Resolution.] Version 3 withdraws that classification, corrects the
+direction of the inverse used in projection arguments, distinguishes
+operational nonrecoverability from algebraic noninvertibility, replaces
+automatic basins and thresholds by typed stability hypotheses, separates
+renormalization from spectral damping, and restores the missing global gauge,
+anomaly-inflow, charge-normalization, and bundle data.
+\item[Retained content.] The paper retains a conditional witness-based taxonomy
+and the correctly scoped local implications proved from completed witness rows.
+\item[Remaining boundary.] No common ontology, ultraviolet completion, event
+source, observed matter spectrum, gravity theory, or global physical equivalence
+is inferred without a separate typed bridge and validation record.
+\end{description}
+
+This revision note records the release delta; it is not part of the abstract.
 
 \tableofcontents
 
-% ============================================================
-\section{Introduction: The False Plurality of Quantum Frameworks}
-% ============================================================
+\section{The question that can actually be answered}
+\label{sec:orientation}
 
-Modern theoretical physics offers a wide range of approaches to quantum
-measurement, spacetime structure, ultraviolet completion, and matter
-organization. These include objective collapse models, decoherence-based
-accounts, asymptotic safety, loop quantum gravity, causal set theory,
-noncommutative geometry, and effective field theory extensions.
+Theories can resemble one another for several different reasons. Two microscopic
+models may have the same infrared fixed point. Two measurement models may
+produce the same outcome probabilities. Two compactifications may have the same
+low-energy gauge algebra. Two operators may have nearby compressed resolvents.
+None of these statements implies the others.
 
-Despite their apparent diversity, successful approaches repeatedly reproduce
-the same structural features: irreversible measurement with stable records,
-discrete events without a fundamental spacetime lattice, ultraviolet softening
-with finite predictivity, and anomaly-free, charge-quantized matter sectors.
-
-This suggests that these features are not optional modeling choices but forced by
-the combination of empirical requirements. In this paper we show that this is
-indeed the case.
-
-% ============================================================
-\section{Minimal Empirical Requirements}
-% ============================================================
-
-We isolate empirical facts only, without interpretive commitments.
-
-\begin{assumption}[Measurement irreversibility]\label{ass:measurement}
-Any viable theory must reproduce:
-\begin{enumerate}[label=(M\arabic*)]
-\item irreversible measurement outcomes at the effective level;
-\item stability of macroscopic records;
-\item reproducibility of outcomes under repeated measurement.
+The word \emph{universality} is therefore incomplete unless it names:
+\begin{enumerate}[label=(\arabic*)]
+  \item the objects being compared;
+  \item the maps that place them in one common space;
+  \item the topology, norm, or operational metric of comparison;
+  \item the parameter range and time horizon;
+  \item the observables whose agreement matters; and
+  \item the error and provenance of the comparison.
 \end{enumerate}
-\end{assumption}
 
-\begin{assumption}[Predictivity and locality]\label{ass:predictivity}
-A viable theory must admit finite predictivity at accessible energies and respect
-relativistic locality and Lorentz covariance at least statistically.
-\end{assumption}
+This distinction is especially important in Modal Triplet Theory (MTT).
+The current operator results establish controlled reduction inside a typed
+model and local comparison after retained spaces have been explicitly
+transported to a common Hilbert space
+\cite{NeroCoherentReduction2026,NeroLocalRobustness2026}. They do not prove that
+unrelated theories share one measurement dynamics, ultraviolet completion,
+event ontology, gauge group, or matter content.
 
-\begin{assumption}[Observed matter structure]\label{ass:matter}
-A viable theory must reproduce:
-\begin{enumerate}[label=(Q\arabic*)]
-\item chiral fermions with gauge interactions;
-\item anomaly-free representations;
-\item quantized charges with observed fractional values;
-\item absence or extreme suppression of rapid baryon and lepton number violation.
+The aim here is modest but useful. We ask:
+\begin{quote}
+What finite record must be supplied before two proposed theories can be said to
+belong to the same controlled class, and what follows from that record?
+\end{quote}
+This converts a broad philosophical slogan into an auditable classification
+problem.
+
+\section{Desiderata are not mechanisms}
+\label{sec:desiderata}
+
+\subsection{Five empirical demands}
+
+For orientation, consider five demands often imposed on a candidate physical
+theory:
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{\(\axis{D}_{\rm rec}\): records.}
+  It reproduces stable macroscopic records and their observed statistics.
+
+  \item \textbf{\(\axis{D}_{\rm loc}\): locality.}
+  It supplies the relevant relativistic locality or causal-compatibility
+  property on the declared observables.
+
+  \item \textbf{\(\axis{D}_{\rm pred}\): predictivity.}
+  It gives finite, controlled predictions in a stated energy and accuracy
+  regime.
+
+  \item \textbf{\(\axis{D}_{\rm event}\): outcomes.}
+  It explains or models individual registered outcomes when such outcomes are
+  part of the intended ontology.
+
+  \item \textbf{\(\axis{D}_{\rm matter}\): matter.}
+  It reproduces the observed gauge representations, anomaly structure, charge
+  assignments, masses, mixings, and forbidden or suppressed processes to its
+  declared tier.
+\end{itemize}
+
+These demands are not yet mathematical premises. For example,
+``irreversible record'' does not say whether irreversibility means a
+noninjective map, absence of a completely positive recovery, thermodynamic cost,
+or practical inaccessibility of environmental degrees of freedom. Likewise,
+``finite predictivity'' does not choose among renormalization, an effective
+cutoff, an ultraviolet fixed point, modular finiteness, a lattice continuum
+limit, or nonlocal spectral damping.
+
+\subsection{A claim ladder}
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}P{0.20\textwidth}Y Y@{}}
+\toprule
+Level & What is established & What is still not established \\
+\midrule
+Vocabulary &
+A common list of words such as projection, basin, gap, event, or topology. &
+That the words denote the same mathematical objects. \\
+
+Typed encoding &
+Each theory supplies objects and maps with compatible domains and codomains. &
+That the maps commute or preserve dynamics and observables. \\
+
+Controlled comparison &
+A norm, region, transport map, and quantitative error are proved. &
+Global identity, arbitrary-time agreement, or physical equivalence. \\
+
+Physical equivalence &
+Preparations, dynamics, observables, units, uncertainties, and interpretation
+are matched. &
+Microscopic identity or unique ontology. \\
+
+Selection &
+One candidate is chosen by an independent source rule and passes held-out
+tests. &
+That every viable theory had to use the same mechanism. \\
+\bottomrule
+\end{tabularx}
+\caption{A comparison must not be promoted by skipping a level.}
+\label{tab:ladder}
+\end{table}
+
+Version 2 moved directly from shared vocabulary and empirical desiderata to
+global physical classification. The remainder of this paper supplies the
+missing intermediate record.
+
+\section{The seven-axis witness record}
+\label{sec:witness}
+
+\begin{definition}[Classification witness]
+\label{def:witness}
+A \emph{classification witness} for a model \(a\) is a tuple
+\[
+ \W_a=
+ \bigl(
+   \axis{M}_a,\axis{P}_a,\axis{S}_a,\axis{U}_a,
+   \axis{E}_a,\axis{G}_a,\axis{V}_a;\pi_a
+ \bigr),
+\]
+with the following rows.
+\begin{enumerate}[label=\(\axis{\Alph*}\),leftmargin=2.8em]
+  \item \(\axis{M}_a\), the operational-measurement row: state space,
+  admissible preparations, instruments, outcomes, record channel, and
+  operational metric.
+
+  \item \(\axis{P}_a\), the projection or descent row: source and effective
+  spaces, descent map, declared recovery class, injectivity or recovery defect,
+  and approximation error.
+
+  \item \(\axis{S}_a\), the stability row: dynamics, domain, metric or norm,
+  record regions or metastable sets, margins, retention estimate, and time
+  horizon.
+
+  \item \(\axis{U}_a\), the ultraviolet row: regulator or construction,
+  renormalization and continuum prescription, symmetry identities, error or
+  remainder, energy range, and status of ultraviolet completion.
+
+  \item \(\axis{E}_a\), the event row: path or history space, event functional,
+  stopping/reset rule, ordering relation, local-finiteness or dwell-time
+  condition, and outcome law.
+
+  \item \(\axis{G}_a\), the gauge-and-matter row: global gauge group,
+  representations, charge normalization, spin and bundle data, anomaly
+  functional including inflow or counterterms, and operator-selection rule.
+
+  \item \(\axis{V}_a\), the validation row: preparation and observable maps,
+  unit conventions, matching scale, uncertainty budget, comparison data, and
+  held-out tests.
 \end{enumerate}
-\end{assumption}
+The provenance row \(\pi_a\) contains source identifiers, versions, hashes,
+proof status, and known open obligations.
+\end{definition}
 
-% ============================================================
-\section{Necessity of Effective Noninvertible Projection}
+The rows deliberately overlap at their interfaces. An outcome law belongs to
+the measurement row, while the event row says how individual events are
+generated or encoded. A spectral gap belongs to the stability or operator
+certificate, while ultraviolet control must explain what happens across scales.
+The validation row prevents formal similarity from being mistaken for
+empirical agreement.
+
+\begin{definition}[Complete comparison on an axis set]
+Let \(I\subseteq\{\axis{M},\axis{P},\axis{S},\axis{U},
+\axis{E},\axis{G},\axis{V}\}\). A comparison of models \(a\) and \(b\) is
+\emph{complete on \(I\)} when every row in \(I\) supplies:
+\begin{enumerate}[label=(\roman*)]
+  \item explicit transports to common comparison objects;
+  \item a declared exact relation or quantitative tolerance;
+  \item all hypotheses needed for that relation;
+  \item an error or obstruction certificate; and
+  \item source provenance.
+\end{enumerate}
+\end{definition}
+
+Blank rows are not failures of a theory. They are failures of the proposed
+comparison. This is the central bookkeeping correction.
+
+\section{Projection, recovery, and operational irreversibility}
 \label{sec:projection}
-% ============================================================
 
-\begin{theorem}[Necessity of effective noninvertible projection]
-\label{thm:projection}
-Let an effective physical description be closed under physically admissible
-operations. Then any theory satisfying Assumption~\ref{ass:measurement} must
-implement an effectively noninvertible projection at the level of observable
-dynamics.
-\end{theorem}
+\subsection{Three notions that must not be conflated}
+
+Let \(X\) be a source state space, \(Y\) an effective state space, and
+\(P:X\to Y\) a descent map.
+\begin{enumerate}[label=(\arabic*)]
+  \item \(P\) is \emph{algebraically noninjective} if two source states have the
+  same image.
+  \item \(P\) is \emph{operationally nonrecoverable} relative to a class
+  \(\mathfrak D\) if no allowed decoder in \(\mathfrak D\) recovers all source
+  states.
+  \item A process is \emph{thermodynamically or practically irreversible} if
+  reversal lies outside a declared resource or control regime.
+\end{enumerate}
+Only the first is a property of the set map alone.
+
+\begin{proposition}[Noninjective descent has no left inverse]
+\label{prop:no-left-inverse}
+If \(P:X\to Y\) is noninjective, there is no map \(L:Y\to X\) satisfying
+\[
+ L\circ P=\id_X.
+\]
+\end{proposition}
 
 \begin{proof}
-Assume the effective dynamics is invertible and that the description is closed
-under admissible operations. Then for any effective evolution map there exists an
-inverse map that is also admissible.
-
-Operational irreversibility requires that no physically admissible protocol
-restores a pre-measurement state together with its macroscopic record. If the
-effective dynamics were invertible within the admissible class, such a protocol
-would exist, contradicting record stability and irreversibility. Therefore
-irreversibility at the effective level requires noninvertible projection.
-\qedhere
+Choose \(x_1\neq x_2\) with \(P(x_1)=P(x_2)\). If a left inverse existed, then
+\[
+ x_1=L(P(x_1))=L(P(x_2))=x_2,
+\]
+a contradiction.
 \end{proof}
 
-\begin{remark}
-This statement does not deny microscopic unitarity. It asserts that any closed
-effective description reproducing irreversible measurement must incorporate
-coarse-graining or projection that is noninvertible within the admissible
-operational class.
+\begin{remark}[Left versus right]
+The obstructed object in \cref{prop:no-left-inverse} is a \emph{left} inverse
+of \(P\). A right inverse \(R:Y\to X\), satisfying \(P\circ R=\id_Y\), is a
+section and may exist for a surjective but noninjective map. Noninjectivity
+therefore proves loss of unique recovery, not absence of every section.
 \end{remark}
 
-% ============================================================
-\section{Necessity of Admissible Basins}
-\label{sec:basins}
-% ============================================================
+\subsection{Operational nonrecoverability can occur without algebraic loss}
 
-\begin{theorem}[Necessity of admissible basins]
-\label{thm:basins}
-Any theory satisfying Assumptions~\ref{ass:measurement} and
-\ref{ass:predictivity} must admit dynamically stable basins with finite stability
-margins in its projected state space.
-\end{theorem}
+Quantum operations are naturally described by completely positive maps and
+instruments \cite{DaviesLewis1970}. A microscopic unitary dilation may coexist
+with a reduced, operationally irreversible channel
+\cite{Stinespring1955}. The following elementary example blocks the old
+necessity argument.
 
-\begin{proof}
-Without stable basins, arbitrarily small perturbations would destabilize
-macroscopic outcomes, violating record stability and reproducibility. Linear
-decoherence suppresses interference but does not select stable outcomes. Finite
-stability margins are therefore required.
-\qedhere
-\end{proof}
+\begin{example}[Invertible linear map with no physical recovery]
+\label{ex:depolarizing}
+On \(d\)-dimensional density matrices let
+\[
+ \Phi_p(\rho)=p\rho+(1-p)\frac{I_d}{d},
+ \qquad 0<p<1.
+\]
+On the affine space of trace-one Hermitian matrices, \(\Phi_p\) has the linear
+inverse
+\[
+ \Phi_p^{-1}(\sigma)
+ =\frac{1}{p}\sigma-\frac{1-p}{pd}I_d.
+\]
+That inverse is not a quantum channel. Indeed, for orthogonal pure states
+\(\rho,\sigma\), trace distance contracts from \(1\) to \(p\). If a completely
+positive trace-preserving map \(D\) recovered both states, contractivity would
+give
+\[
+ 1=D_{\rm tr}(\rho,\sigma)
+ =D_{\rm tr}\bigl(D\Phi_p(\rho),D\Phi_p(\sigma)\bigr)
+ \leq D_{\rm tr}\bigl(\Phi_p(\rho),\Phi_p(\sigma)\bigr)
+ =p,
+\]
+which is impossible.
+\end{example}
 
-\begin{corollary}
-Outcome transitions must exhibit threshold or knee behavior as control parameters
-cross basin boundaries.
-\end{corollary}
+Thus ``no admissible inverse'' is often the correct operational statement.
+It depends on the recovery class. It is not equivalent to noninjectivity, and
+neither statement follows from the bare observation that records look
+irreversible. Objective-collapse models, for example, introduce explicit
+modified dynamics rather than deriving it from a general projection theorem
+\cite{GRW1986}. The current MTT measurement paper likewise treats measurement
+as an ordinary physical interaction plus an explicitly typed completion and
+record process \cite{NeroMeasurement2026}.
 
-% ============================================================
-\section{Equivalence-Class Necessity of Spectral Suppression}
-\label{sec:spectral}
-% ============================================================
-
-\begin{theorem}[Equivalence-class necessity of spectral suppression]
-\label{thm:spectral_truncation}
-Any theory satisfying locality, Lorentz covariance, and
-Assumption~\ref{ass:predictivity} must implement an effective ultraviolet
-suppression mechanism whose induced propagator or kernel belongs to the
-equivalence class of smooth spectral suppression (e.g.\ proper-time damping or
-complete Bernstein/Stieltjes form).
-\end{theorem}
-
-\begin{proof}
-Finite predictivity requires suppression of ultraviolet contributions. Hard
-cutoffs violate Lorentz covariance, while generic higher-derivative completions
-introduce ghosts or infinite parameter freedom. Known viable mechanisms—such as
-asymptotic safety fixed-point behavior, string modular invariance, and entire
-form-factor gravity—differ in implementation but induce equivalent smooth
-spectral suppression at the level of effective kernels. \qedhere
-\end{proof}
-
-% ============================================================
-\section{Inevitability of Discrete Selection Events}
-\label{sec:events}
-% ============================================================
-
-\begin{definition}[Selection event]
-A selection event is the irreversible transition of a projected trajectory
-between admissible basins.
+\begin{definition}[Recovery defect]
+For a source set \(K\subseteq X\), metric \(d_X\), and allowed decoder class
+\(\mathfrak D\), define
+\[
+ \delta_{\rm rec}(P;K,\mathfrak D)
+ =
+ \inf_{D\in\mathfrak D}\;
+ \sup_{x\in K} d_X\bigl(D(Px),x\bigr).
+\]
 \end{definition}
 
-\begin{theorem}[Discrete event inevitability (effective level)]
-\label{thm:events}
-Projection with admissible basin structure necessarily produces discrete
-selection events at the resolution scale implied by truncation tolerance. These
-events are discrete in the effective encoding, though they may correspond to
-extended or smeared regions in the underlying microscopic description.
+This scalar is meaningful only after \(K\), \(d_X\), and \(\mathfrak D\) are
+fixed. It distinguishes exact information loss from restricted or approximate
+recovery.
+
+\section{Record stability is not automatically a dynamical basin}
+\label{sec:stability}
+
+\subsection{Record regions and positive margins}
+
+Let \((Y,d)\) be an effective state space and \(r:Y\to\mathcal R\) a record
+label. For a label \(\alpha\), write \(B_\alpha=r^{-1}(\alpha)\).
+If \(B_\alpha\) is open, nearby states share the same label. This is a
+kinematic robustness statement. A dynamical basin additionally requires a
+specified evolution and an attraction or retention property.
+
+\begin{proposition}[Compact record cores have positive margins]
+\label{prop:record-margin}
+Let \(B_\alpha\) be open in a metric space \(Y\), and let
+\(K_\alpha\subset B_\alpha\) be compact. Then
+\[
+ m_\alpha
+ =
+ \dist\bigl(K_\alpha,Y\setminus B_\alpha\bigr)>0,
+\]
+unless \(Y\setminus B_\alpha\) is empty, in which case the margin is
+unbounded.
+\end{proposition}
+
+\begin{proof}
+The complement \(Y\setminus B_\alpha\) is closed. The continuous function
+\(y\mapsto \dist(y,Y\setminus B_\alpha)\) is strictly positive on
+\(K_\alpha\). Compactness gives a positive minimum.
+\end{proof}
+
+The proposition explains exactly when a finite stability margin is justified.
+It does not prove that every record region is open, that a useful compact core
+exists, or that dynamics preserves it.
+
+\begin{definition}[Finite-horizon record certificate]
+A finite-horizon record certificate consists of a propagator or channel family
+\(\{\Phi_t\}_{0\leq t\leq T}\), a record core \(K_\alpha\), a record region
+\(B_\alpha\), a metric \(d\), and a bound
+\[
+ \inf_{y\in K_\alpha}
+ \Pr_y\!\left[
+   \Phi_t(y)\in B_\alpha\ \text{for all }0\leq t\leq T
+ \right]
+ \geq 1-\eta_\alpha.
+\]
+For deterministic dynamics the probability is omitted.
+\end{definition}
+
+Attraction, metastability, redundancy, superselection, and error correction can
+all stabilize records, but they are different mechanisms. A sharp ``knee'' in
+a control parameter is also not automatic. The smooth response
+\[
+ p(a)=\frac{1}{1+e^{-a}}
+\]
+changes between two record probabilities without a singular threshold. A phase
+transition or first-exit boundary must be proved in the chosen model.
+Measurement-induced entanglement transitions are genuine universality results
+for specified monitored many-body models, not a theorem about all measurement
+dynamics \cite{SkinnerRuhmanNahum2019}.
+
+\section{Ultraviolet control is a family of mechanisms}
+\label{sec:uv}
+
+\subsection{The ultraviolet row}
+
+A usable ultraviolet certificate must state at least:
+\begin{enumerate}[label=(\arabic*)]
+  \item the bare or regulated objects;
+  \item the renormalization or continuum-limit prescription;
+  \item the symmetry or Ward identities maintained or recovered;
+  \item the norm and observable class in which convergence is claimed;
+  \item the energy range and truncation error; and
+  \item whether the construction is an effective theory, a perturbative
+  completion, or a nonperturbative completion.
+\end{enumerate}
+
+Wilsonian coarse-graining and effective Lagrangians
+\cite{WilsonKogut1974,Polchinski1984}, an asymptotic fixed point
+\cite{Reuter1998}, modular finiteness, a discrete continuum limit, and an entire
+spectral form factor are not the same certificate. They may share low-energy
+predictions without sharing ultraviolet operators.
+
+\begin{proposition}[Low-energy agreement does not select spectral damping]
+\label{prop:uv-nonuniqueness}
+Fix \(m>0\), an accessible momentum bound \(E>0\), and \(\Lambda>0\). Define
+\[
+ G_0(p)=\frac{1}{p^2+m^2},
+ \qquad
+ G_\Lambda(p)=\frac{e^{-p^2/\Lambda^2}}{p^2+m^2}.
+\]
+Then for \(|p|\leq E\),
+\[
+ |G_0(p)-G_\Lambda(p)|
+ \leq \frac{E^2}{\Lambda^2m^2}.
+\]
+Consequently, low-energy agreement to any fixed tolerance does not determine
+whether the ultraviolet kernel contains smooth exponential damping.
+\end{proposition}
+
+\begin{proof}
+Use \(0\leq 1-e^{-x}\leq x\) for \(x\geq0\):
+\[
+ |G_0-G_\Lambda|
+ =
+ \frac{1-e^{-p^2/\Lambda^2}}{p^2+m^2}
+ \leq
+ \frac{p^2}{\Lambda^2(p^2+m^2)}
+ \leq
+ \frac{E^2}{\Lambda^2m^2}.
+\]
+\end{proof}
+
+The example does not claim that both kernels define the same complete theory.
+It proves the narrower logical point: finite predictivity on a bounded range
+cannot force one ultraviolet mechanism. It also shows why a four-dimensional
+smooth UV filter cannot be inferred merely from suppression of an internal
+operator sector.
+
+\section{When events are actually discrete}
+\label{sec:events}
+
+An outcome label, a quantum jump, a first-passage time, a detector click, and an
+element of a causal set are different objects. Their discreteness arises from
+different assumptions.
+
+\begin{theorem}[Transverse crossings are finite on compact time intervals]
+\label{thm:transverse-events}
+Let \(f\in C^1([0,T],\R)\). If
+\[
+ f(t)=0\quad\Longrightarrow\quad f'(t)\neq0,
+\]
+then the zero set of \(f\) in \([0,T]\) is finite.
 \end{theorem}
 
 \begin{proof}
-Basins are separated by finite margins. Transitions occur only when admissibility
-fails within the resolution set by truncation tolerance. At this effective level,
-events are isolated and countable. \qedhere
+Every zero is isolated by the inverse-function theorem. If there were
+infinitely many zeros in the compact interval, they would possess an
+accumulation point \(t_\ast\). Continuity gives \(f(t_\ast)=0\). But
+\(f'(t_\ast)\neq0\) makes \(t_\ast\) an isolated zero, contradicting
+accumulation.
 \end{proof}
 
-\begin{corollary}
-The resulting effective event structure is locally finite and partially ordered,
-recovering causal-set–like descriptions without postulating fundamental pointlike
-discreteness.
-\end{corollary}
+This theorem supports an event interpretation for smooth, transverse
+first-exit models on finite horizons. Without the hypothesis, zeros may
+accumulate; stochastic paths may revisit a boundary infinitely often; reset
+dynamics may exhibit Zeno behavior; and an outcome instrument may be discrete
+without any underlying boundary crossing.
 
-% ============================================================
-\section{Inevitability of Standard-Model-Like Matter Structure}
+A causal set requires more still: a partial order and local finiteness of order
+intervals. Those are defining structural data in the causal-set program
+\cite{BombelliEtAl1987}. A countable list of basin transitions does not by
+itself supply either property. Conversely, discrete spacetime proposals cannot
+be rejected merely by saying that a lattice violates Lorentz symmetry; the
+actual construction and continuum approximation must be examined.
+
+\section{Gauge and matter claims require global data}
 \label{sec:matter}
-% ============================================================
 
-\begin{theorem}[Anomaly freedom inevitability]
-Any matter sector compatible with projection-induced admissibility must be
-anomaly-free.
+\subsection{The gauge-and-matter row}
+
+At minimum, a matter certificate must specify:
+\[
+ \axis{G}
+ =
+ \bigl(
+ G_{\rm global},\{\rho_i\},\mathcal H_{\rm ferm},
+ \mathfrak s,\mathcal L,\mathcal A_{\rm tot},
+ \mathcal O_{\rm allowed},\nu
+ \bigr).
+\]
+Here \(G_{\rm global}\) is the global gauge group rather than only its Lie
+algebra; \(\rho_i\) are representations; \(\mathfrak s\) records spin or
+Spin\(^{c}\) data; \(\mathcal L\) records bundles and characteristic classes;
+\(\mathcal A_{\rm tot}\) is the complete anomaly including inflow and
+counterterms; \(\mathcal O_{\rm allowed}\) is the operator-selection rule; and
+\(\nu\) fixes charge normalization.
+
+\subsection{What a compact circle group does prove}
+
+\begin{proposition}[Weights of a specified compact circle]
+\label{prop:u1-weights}
+Every finite-dimensional continuous unitary representation of \(U(1)\) is a
+direct sum of characters
+\[
+ z\longmapsto z^n,
+ \qquad n\in\mathbb Z.
+\]
+Thus charges are integer weights after a generator and normalization have been
+fixed.
+\end{proposition}
+
+\begin{proof}
+The commuting unitary matrices in the image can be simultaneously
+diagonalized. Each one-dimensional continuous character of \(U(1)\) has the
+form \(e^{i\theta}\mapsto e^{in\theta}\) with \(n\in\mathbb Z\).
+\end{proof}
+
+This proposition does not derive the observed hypercharges. Fractional
+numerical values depend on normalization and on the global quotient connecting
+the \(U(1)\) factor to nonabelian centers. Replacing \(U(1)\) by the additive
+group \(\R\) also removes the integer-character conclusion. The common-circle
+idea in MTT is therefore potentially useful only after the same physical line,
+connection, and global group action are identified.
+
+\subsection{Anomalies and operator selection}
+
+Gauge consistency constrains the \emph{total} anomaly. It need not require the
+bare fermion polynomial to vanish term by term: Green--Schwarz inflow is a
+standard counterexample \cite{GreenSchwarz1984}. A theorem must state the
+dimension, chiral content, regularization, local and global anomalies, inflow,
+and boundary conditions.
+
+\begin{proposition}[Conditional bundle obstruction]
+\label{prop:bundle-obstruction}
+Suppose fields \(\psi_i\) are sections of associated bundles \(E_i\), and a
+candidate local monomial with constant scalar coefficient transforms as a
+section of a product bundle \(E_{\mathcal O}\). If \(E_{\mathcal O}\) admits no
+gauge-invariant identification with the scalar-density bundle, that monomial
+cannot define a global gauge-invariant action term with that coefficient.
+Conversely, such an identification removes this obstruction but does not force
+the term to occur or fix its coefficient.
+\end{proposition}
+
+\begin{proof}
+A global action density must be a gauge-invariant scalar density. Without an
+equivariant identification of \(E_{\mathcal O}\) with that target, local
+expressions fail to glue to a global scalar. If an identification exists, the
+gluing obstruction is absent, but dynamics and additional symmetries still
+decide whether the coefficient vanishes.
+\end{proof}
+
+This is the correct scope for topology-only exclusion. It cannot be promoted to
+the statement that all dangerous baryon- or lepton-number violating operators
+are absent in every admissible theory. Such operators are systematically
+present in effective-field-theory classifications unless additional symmetries
+or bundle rules exclude them \cite{Weinberg1979}. Nor do anomaly freedom,
+chirality, and charge quantization alone prove that the Standard Model is the
+unique or near-minimal solution.
+
+\section{The mathematics of a multi-axis classification}
+\label{sec:classification}
+
+\subsection{Exact classes}
+
+Let \(\mathfrak T\) be a set of typed model records. For each axis
+\(k\in K\), let
+\[
+ I_k:\mathfrak T\to Q_k
+\]
+be the invariant extracted from that row, and let \(\simeq_k\) be an
+equivalence relation on \(Q_k\).
+
+\begin{definition}[Axis-set equivalence]
+For \(S\subseteq K\), define
+\[
+ a\sim_S b
+ \quad\Longleftrightarrow\quad
+ I_k(a)\simeq_k I_k(b)
+ \ \text{for every }k\in S.
+\]
+\end{definition}
+
+\begin{theorem}[Intersection and refinement of classification axes]
+\label{thm:axis-refinement}
+For every \(S\subseteq K\), the relation \(\sim_S\) is an equivalence
+relation. If \(S\subseteq T\subseteq K\), then every \(\sim_T\)-class is
+contained in a \(\sim_S\)-class.
 \end{theorem}
 
-\begin{theorem}[Charge quantization inevitability]
-Quantized U(1) charges with a discrete rational lattice are unavoidable in any
-theory satisfying the preceding structural requirements.
-\end{theorem}
+\begin{proof}
+The relation \(\sim_S\) is the intersection of the equivalence relations
+induced by the maps \(I_k\), so it is reflexive, symmetric, and transitive.
+If \(a\sim_T b\), then the defining conditions hold for every \(k\in T\),
+hence for every \(k\in S\).
+\end{proof}
 
-\begin{theorem}[Forbidden operator inevitability]
-Operators mediating rapid baryon or lepton number violation are forbidden or
-parametrically suppressed by admissibility constraints independent of dynamics.
-\end{theorem}
+The theorem is elementary, but it carries the main methodological message:
+adding measurement, ultraviolet, matter, or validation rows can only refine a
+class. Agreement on one row cannot establish agreement on a stronger set.
 
-\begin{corollary}
-Among anomaly-free, charge-quantized, admissible matter sectors with chiral
-fermions, the Standard Model represents a near-minimal solution.
-\end{corollary}
+\begin{proposition}[No inference between independent axes]
+\label{prop:no-cross-axis}
+Let \(Q_1,\ldots,Q_n\) each contain at least two elements, and take
+\(\mathfrak T=Q_1\times\cdots\times Q_n\) with \(I_k\) the coordinate
+projection. For any proper subset \(S\subsetneq\{1,\ldots,n\}\), there exist
+\(a,b\in\mathfrak T\) such that \(a\sim_S b\) but \(I_j(a)\neq I_j(b)\) for
+some \(j\notin S\).
+\end{proposition}
 
-% ============================================================
-\section{Coherent Universality Class}
-\label{sec:universality}
-% ============================================================
+\begin{proof}
+Choose \(a\) and \(b\) equal in every coordinate in \(S\), and choose distinct
+values in one coordinate \(j\notin S\).
+\end{proof}
 
-\begin{definition}[Coherent universality class]
-A theory belongs to the coherent universality class if it implements, at the
-effective level:
-\begin{enumerate}[label=(U\arabic*)]
-\item noninvertible projection;
-\item admissible basins with finite margins;
-\item smooth spectral suppression of ultraviolet modes;
-\item discrete selection events without fundamental lattices;
-\item admissible matter representations satisfying topology-only constraints.
+Physical axes may be coupled by nontrivial theorems. The proposition says that
+the coupling must be proved; it is not supplied by the vocabulary.
+
+\subsection{Approximate classes}
+
+A metric tolerance such as
+\[
+ d_k\bigl(I_k(a),I_k(b)\bigr)\leq\varepsilon_k
+\]
+is generally not transitive. It defines a comparison neighborhood or graph,
+not automatically an equivalence class. To speak of a genuine universality
+class one needs an exact equivalence, a quotient construction, a common limit,
+or a controlled transitive closure whose accumulated error remains acceptable.
+The local coherent-sector comparison paper proves the relevant resolvent bound
+and explicitly tracks chainwise error accumulation
+\cite{NeroLocalRobustness2026}. It does not license unlimited chains.
+
+\begin{definition}[Conditional coherent comparison class]
+A family \(\mathfrak C\subseteq\mathfrak T\) is a \emph{conditional coherent
+comparison class} on axis set \(S\) when:
+\begin{enumerate}[label=(\roman*)]
+  \item every model has a complete witness on \(S\);
+  \item the transport maps and comparison relations are fixed before testing;
+  \item exact equivalence or a uniformly controlled common-limit theorem is
+  proved on each axis in \(S\); and
+  \item the validation row states what physical agreement follows.
 \end{enumerate}
 \end{definition}
 
-% ============================================================
-\section{Embedding Existing Approaches}
-\label{sec:embedding}
-% ============================================================
+This definition deliberately avoids the word ``inevitable.'' Membership is a
+verified property of supplied records.
 
-Collapse models implement noninvertible projection and outcome stabilization, but
-often lack full basin structure and cross-sector closure.
+\section{What the major external frameworks actually contribute}
+\label{sec:external}
 
-Decoherence-based approaches implement spectral suppression but preserve
-invertibility and do not select outcomes.
+The comparison below records native structures, not verdicts on entire research
+programs.
 
-Asymptotic safety implements ultraviolet suppression and finite predictivity; its
-scheme dependence reflects projection effects.
+\begin{table}[htbp]
+\centering
+\scriptsize
+\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\textwidth}{@{}P{0.17\textwidth}Y Y@{}}
+\toprule
+Framework & Native contribution relevant here & What does not follow automatically \\
+\midrule
+Operational quantum theory &
+Instruments, completely positive operations, outcome probabilities, and
+sequential measurement \cite{DaviesLewis1970}. &
+A unique ontology, objective event source, or irreversible microscopic law. \\
 
-Loop quantum gravity captures kinematical truncation and discrete encodings but
-does not implement selection dynamics.
+Objective collapse &
+Explicit stochastic modification producing localization and macroscopic
+classicality \cite{GRW1986}. &
+Derivation from generic record stability or equivalence to coarse-graining. \\
 
-Causal set theory captures the event-level shadow but postulates discreteness
-rather than deriving it from basin transitions.
+Monitored circuits &
+Model-specific entanglement phases and critical behavior under measurement
+\cite{SkinnerRuhmanNahum2019}. &
+A universal solution of measurement or one class for all instruments. \\
 
-Noncommutative geometry captures overlap-geometry and matter admissibility but
-does not encode projection or selection.
+EFT and RG &
+Controlled low-energy expansions, coarse-graining, running couplings, and
+universality near fixed points \cite{WilsonKogut1974,Polchinski1984}. &
+A unique UV completion, literal irreversibility of every beta-function ODE, or
+smooth spectral damping. \\
 
-Each successful approach implements a subset of the universality requirements.
+Asymptotic safety &
+A candidate non-Gaussian fixed-point mechanism formulated through
+scale-dependent effective actions \cite{Reuter1998}. &
+Equality to string modular control or an entire form-factor kernel. \\
 
-\section{Universality versus inevitability}
+Loop quantum gravity &
+Background-independent quantum geometry and a mathematically specific
+kinematical representation \cite{AshtekarLewandowski2004}. &
+An MTT projector, measurement completion, or full low-energy equivalence without
+an explicit bridge. \\
 
-The terms ``universality'' and ``inevitability'' are closely related in a projection-first framework
-but are not identical. This section fixes the distinction used throughout the corpus.
+Causal sets &
+A locally finite partial order proposed as microscopic spacetime structure
+\cite{BombelliEtAl1987}. &
+Derivation from generic basin crossings or failure of Lorentzian approximation. \\
 
-\subsection{Universality (stability class statement)}
+Noncommutative geometry &
+A spectral triple and spectral action once the algebra, Hilbert space, and
+Dirac operator are supplied \cite{ChamseddineConnes1997}. &
+Selection of that triple from a generic coherent sector or uniqueness of the
+observed Standard Model. \\
+\bottomrule
+\end{tabularx}
+\caption{A framework should be compared through its own typed objects.}
+\label{tab:frameworks}
+\end{table}
 
-Universality refers to insensitivity of the effective coherent description to microscopic detail
-\emph{within} an admissible regime. Formally, it is a stability property: multiple distinct
-microscopic realizations produce equivalent effective evolution operators on $\mathcal H_{\mathrm{coh}}$
-up to controlled (gap-suppressed) error.
+The table reverses the old ``partial shadows'' rhetoric. Similarity is now a
+question to be certified, not an interpretation imposed in advance.
 
-Universality therefore depends on:
-(i) persistence of controlled truncation,
-(ii) bounded projector regularity, and
-(iii) bounded mixing between coherent and discarded sectors.
+\section{The present MTT position}
+\label{sec:mtt}
 
-\subsection{Inevitability (conditional closure statement)}
+MTT currently supplies several distinct layers:
+\begin{enumerate}[label=(\arabic*)]
+  \item The Foundations paper defines the closure/admissibility program and its
+  typed status boundaries \cite{NeroFoundation2026}.
+  \item The Projection--Admissibility paper distinguishes descent,
+  recoverability, and structural constraints on an effective description
+  \cite{NeroProjection2026}.
+  \item The coherent-sector reduction paper proves a domain-explicit
+  single-model Feshbach and projector certificate, including the special case
+  in which an exact spectral projector makes the off-diagonal correction vanish
+  \cite{NeroCoherentReduction2026}.
+  \item The local robustness paper transports retained resolvents to one
+  reference Hilbert space and proves bounded local comparison, while separating
+  projector, operator, dynamical, observable, and physical equivalence
+  \cite{NeroLocalRobustness2026}.
+  \item The measurement paper separates physical disturbance, outcome
+  completion, record stabilization, and the still-open source of a general
+  outcome law \cite{NeroMeasurement2026}.
+\end{enumerate}
 
-Inevitability refers to a different claim: \emph{given} the minimal empirical requirements stated
-in this paper, any viable framework must implement an effective structure that lies in the same
-coherent universality class. This is a conditional closure theorem, not a claim that all microscopic
-theories literally coincide.
-
-In particular:
+These are meaningful advances, but they do not close all seven witness rows for
+MTT or for any external framework. In particular:
 \begin{itemize}
-  \item Universality says: many microscopics yield the same effective behavior in admissible regimes.
-  \item Inevitability says: any successful framework must realize projection, admissibility, and spectral
-  suppression at the effective level (possibly in different mathematical languages).
+  \item a selected local projector is not a universal measurement instrument;
+  \item an internal spectral filter is not by itself a four-dimensional UV
+  completion;
+  \item a rank or bundle flag is not yet the observed matter spectrum;
+  \item a finite event encoding is not automatically a causal set;
+  \item local resolvent closeness is not physical equivalence; and
+  \item one successful MTT realization would not prove that all successful
+  theories had to use the same microscopic mechanism.
 \end{itemize}
 
-\subsection{What this paper does not claim}
+The phrase \emph{coherent universality} may still be used, but only with an axis
+set and certificate. For example, ``local norm-resolvent coherent universality
+on \(\Omega\)'' is precise. ``All viable physics belongs to one coherent
+universality class'' is not presently a theorem.
 
-No claim is made that:
-\begin{itemize}
-  \item the microscopic ontology is unique,
-  \item the coherent universality class extends beyond admissible regimes,
-  \item the detailed Standard Model parameter values are fixed without additional bottleneck data.
-\end{itemize}
+\section{A practical comparison protocol}
+\label{sec:protocol}
 
-The purpose of inevitability results is to rule out structurally incompatible approaches, not to
-eliminate the possibility of multiple microscopic realizations within the admissible equivalence class.
+For a proposed comparison between MTT and another framework:
+\begin{enumerate}[label=\textbf{Step \arabic*.},leftmargin=4.8em]
+  \item Freeze the exact source versions and their provenance hashes.
+  \item Choose the axis set \(S\). Do not add untested axes in the conclusion.
+  \item Fill both witness records, including domains, norms, units, and time or
+  energy ranges.
+  \item Construct explicit transports to common objects.
+  \item Prove commutation, convergence, or a quantitative error bound.
+  \item Map preparations, states, observables, and predictions.
+  \item Reserve at least one independent or held-out test.
+  \item Record failed rows and breakdown surfaces as part of the result.
+\end{enumerate}
 
-% ============================================================
-\section{No-Go Results}
-\label{sec:nogo}
-% ============================================================
+\subsection{Minimum machine-readable payload}
 
-Purely unitary effective theories fail irreversibility; decoherence-only models
-fail selection; fundamental spacetime lattices violate Lorentz covariance;
-generic unconstrained EFTs allow inadmissible operators; and ad hoc collapse
-models without closure fail cross-sector consistency. These approaches lie
-outside the coherent universality class.
+A computational record should include:
+\begin{verbatim}
+model_id, source_hashes, axis_set,
+state_space, domains, transports, comparison_norm,
+parameter_region, time_or_energy_horizon,
+error_bounds, observable_map, unit_map,
+status, failed_rows, verifier, artifact_hashes
+\end{verbatim}
+The payload does not replace the proof. It prevents a later comparison from
+silently changing its objects or standard.
 
-% ============================================================
-\section{Conclusions}
-% ============================================================
+\section{Completion and falsifiability}
+\label{sec:falsifiability}
 
-We have established a classification result: any theory reproducing irreversible
-measurement, stable classicality, finite predictivity, relativistic locality, and
-observed matter structure must implement effective projection, admissible basins,
-smooth spectral suppression, discrete selection events, and topology-driven
-matter constraints. These conditions define a coherent universality class.
+The framework can fail in informative ways.
+\begin{enumerate}[label=(F\arabic*)]
+  \item A claimed descent map is injective, while the argument requires
+  information loss.
+  \item The recovery defect vanishes in the declared physical decoder class.
+  \item Record regions have zero margin or fail finite-horizon retention.
+  \item The ultraviolet row lacks a continuum or error certificate.
+  \item event times accumulate, or no causal order is supplied.
+  \item the global gauge group, anomaly total, or bundle product contradicts
+  the proposed matter claim.
+  \item transported observables disagree beyond the declared uncertainty.
+\end{enumerate}
 
-Modal Triplet Theory provides a minimal explicit realization of this class, but
-the classification does not depend on MTT-specific constructions. The apparent
-plurality of quantum gravity and measurement theories is therefore illusory:
-viable frameworks are constrained to a single universality class, differing only
-in which shadows of the underlying structure are made explicit.
-\begin{thebibliography}{99}
+Conversely, completing all rows would justify a strong result: not that two
+theories are ontologically identical, but that they are equivalent on a
+declared physical interface to a certified accuracy.
 
-\bibitem{MTT-Admissibility}
-P.~Nero,
-\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255621}
+\section{Conclusion}
+\label{sec:conclusion}
 
-\bibitem{MTT-Foundation}
-P.~Nero,
-\emph{Modal Triplet Theory: Foundation},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.16949762}
+The strongest correction in this paper is also the simplest. Empirical demands
+constrain theories, but they do not name the mathematical mechanism satisfying
+them. Irreversible records do not alone force a noninjective projection. Stable
+records do not uniquely force attractor basins or sharp knees. Finite
+predictivity does not select smooth spectral damping. Event-like outcomes do
+not automatically define a causal set. Gauge consistency and compact-circle
+weights do not uniquely determine the observed matter sector.
 
-\bibitem{MTT-FixedPoints}
-P.~Nero,
-\emph{Fixed Points I--VI: Complete Coherence Spine},
-Zenodo preprints, August 2025.
-\url{https://doi.org/10.5281/zenodo.16948748}
+What survives is a rigorous and reusable classification method. The seven-axis
+witness record shows exactly what is common, what has merely been translated,
+what is quantitatively controlled, and what remains open. The exact
+classification theorem says that adding axes refines rather than preserves a
+class; the counterexamples show why cross-axis conclusions require their own
+bridges.
 
-\bibitem{MTT-ProjectionAdmissibility}
-P.~Nero,
-\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255838}
+For MTT, this is not a retreat from comparison. It is what makes comparison
+credible. The released operator results now occupy their correct local layer,
+while measurement, ultraviolet completion, event structure, matter selection,
+and empirical equivalence remain independently testable rows. A future theorem
+may couple some of those rows. Until it does, the correct claim is conditional
+classification, not inevitability.
 
-\bibitem{MTT-Closure}
-P.~Nero,
-\emph{Closure and Inevitability in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255510}
+\bibliographystyle{plain}
+\bibliography{main}
 
-\bibitem{MTT-CoherenceCapacity}
-P.~Nero,
-\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255905}
-
-\bibitem{MTT-CoherenceDynamics}
-P.~Nero,
-\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256048}
-
-\bibitem{MTT-QM}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.17074246}
-
-\bibitem{MTT-QFT}
-P.~Nero,
-\emph{From MTT to Quantum Field Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17068816}
-
-\bibitem{MTT-GR}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to General Relativity},
-Zenodo preprint, October 2025.
-\url{https://doi.org/10.5281/zenodo.16950597}
-
-\bibitem{MTT-UVQG}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17077671}
-
-\bibitem{MTT-Measurement}
-P.~Nero,
-\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17177404}
-
-\bibitem{MTT-Irreversibility}
-P.~Nero,
-\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256408}
-
-\bibitem{MTT-Bell-Beables}
-P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17076300}
-
-\bibitem{MTT-Bell-Temporal}
-P.~Nero,
-\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
-Zenodo preprint, August 2025.
-\url{https://doi.org/10.5281/zenodo.18208884}
-
-\bibitem{MTT-Stochastic}
-P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18254862}
-
-\end{thebibliography}
 \end{document}

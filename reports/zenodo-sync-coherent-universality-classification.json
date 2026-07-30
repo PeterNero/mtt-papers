@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T22:09:52+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21710806",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "64eb68b003963ffcc82a872fffd28f06",
+      "local_pdf_sha256": "3ec05c192c3cef5e166541cbedae1f8561b525c53714bb9f3422fb5377a2e17d",
+      "paper_id": "coherent-universality-and-the-inevitability-of-projecti-d9e28e29",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v3"
+    }
+  ]
+}

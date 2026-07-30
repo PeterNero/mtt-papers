@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18261806",
+      "created": "2026-07-30T22:10:12.263688+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21710806",
+      "files": [
+        {
+          "checksum": "md5:64eb68b003963ffcc82a872fffd28f06",
+          "content_url": "https://zenodo.org/api/records/21710806/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 393985
+        }
+      ],
+      "id": "21710806",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21710806",
+      "resource_type": "publication",
+      "title": "Conditional Classification of Projection-Based Effective Theories: Witness Records, Comparison Axes, and the Limits of Inevitability in Modal Triplet Theory",
+      "updated": "2026-07-30T22:10:12.787281+00:00",
+      "version": "v3"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18260833",
       "created": "2026-07-30T21:47:49.445769+00:00",
       "creators": [
