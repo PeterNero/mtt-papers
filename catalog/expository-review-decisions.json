@@ -856,6 +856,14 @@
       "reviewed_main_tex_sha256": "58bdbc6d6d2a7eebb1cab8fe154aac7969f1eacd7db3a3561b20898125d956c5",
       "reviewed_pdf_sha256": "4a387a856a070c9d6464dcc58fe45fa5b2f11ba657eb9ffa79aeeb2449924e14",
       "reviewed_source_tree_sha256": "239c4e20ca00359f676a877e29ef54e426fb2481595baeac3241d4b66a25bee5"
+    },
+    "coherence-capacity-as-the-invariant-admissibility-margi-423433d4": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 4 rebuilds coherence capacity as a sourced dimensionless reserve vector, bottleneck compression, and metric clearance with explicit scales, norms, tolerances, provenance, comparison constants, and active rows. It proves perturbation, uniformity, metric, reparameterization, and first-exit bounds; demonstrates by an orthogonal-projection counterexample why the former no-section theorem was false; preserves Foundation and Fixed Points ownership; removes unsupported gravity, time, entropy, horizon, measurement, probability, and undecidability deductions; and the complete 14-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "bea319301088e16a96b3e701a5a575123f6b194019d9cae9ba10e92edbdf4553",
+      "reviewed_pdf_sha256": "8e1356afb9678570986390c2474c32d234d53844a3a688512423b6ece90b1522",
+      "reviewed_source_tree_sha256": "cf71c0fdf8e0f5eac6e374fdbf6f6ad75dee0834a032ffa552fa1c29531812ad"
     }
   }
 }

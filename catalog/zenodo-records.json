@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18255975",
+      "created": "2026-07-30T19:47:42.292784+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21709472",
+      "files": [
+        {
+          "checksum": "md5:238fb52e4339f97f6caef3cad2ba86c3",
+          "content_url": "https://zenodo.org/api/records/21709472/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 363412
+        }
+      ],
+      "id": "21709472",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21709472",
+      "resource_type": "publication",
+      "title": "Coherence Capacity in Modal Triplet Theory: Normalized Margins, Metric Clearance, and the Invariance Class",
+      "updated": "2026-07-30T19:47:42.824335+00:00",
+      "version": "v4"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18262377",
       "created": "2026-07-30T19:23:22.339789+00:00",
       "creators": [

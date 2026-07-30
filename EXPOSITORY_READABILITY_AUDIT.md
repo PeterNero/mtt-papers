@@ -10,22 +10,22 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| critical | 9 |
+| critical | 8 |
 | major | 8 |
 | moderate | 4 |
 | light | 10 |
 | low | 1 |
-| reviewed | 105 |
+| reviewed | 106 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 38 |
+| argument_flow | 37 |
 | conclusion | 12 |
-| concrete_foothold | 42 |
-| object_intuition | 91 |
+| concrete_foothold | 41 |
+| object_intuition | 90 |
 | orientation | 44 |
 | result_interpretation | 12 |
 
@@ -38,7 +38,6 @@ Canonical papers audited: **139**.
 | critical | critical | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 17 | 123.5 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | critical | critical | `coherent-universality-and-the-inevitability-of-projecti-d9e28e29` | 15 | 79.9 | 3/7 | object_intuition, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 15 | 54.1 | 4/7 | argument_flow, concrete_foothold, conclusion |
-| critical | critical | `coherence-capacity-as-the-invariant-admissibility-margi-423433d4` | 14 | 88.9 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | critical | critical | `dynamics-of-coherence-capacity-transport-concentration-f2edc08a` | 14 | 73.0 | 6/7 | object_intuition |
 | critical | critical | `topological-phases-of-matter-as-admissible-overlap-stru-837dec46` | 12 | 79.8 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `topology-only-constraints-and-forbidden-operators-in-mo-90db2212` | 12 | 116.0 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
@@ -79,6 +78,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707` | 15 | 189.0 | 6/7 | object_intuition |
 | reviewed | critical | `canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62` | 14 | 110.1 | 6/7 | object_intuition |
 | reviewed | major | `the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2` | 14 | 150.4 | 7/7 | - |
+| reviewed | major | `coherence-capacity-as-the-invariant-admissibility-margi-423433d4` | 13 | 182.3 | 7/7 | - |
 | reviewed | critical | `gravitationally-induced-collapse-as-an-effective-limit-d74eb471` | 13 | 149.1 | 4/7 | orientation, object_intuition, result_interpretation |
 | reviewed | major | `theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f` | 13 | 249.2 | 7/7 | - |
 | reviewed | major | `topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2` | 13 | 211.5 | 5/7 | orientation, object_intuition |

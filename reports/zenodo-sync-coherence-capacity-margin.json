@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T19:47:20+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21709472",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "238fb52e4339f97f6caef3cad2ba86c3",
+      "local_pdf_sha256": "8e1356afb9678570986390c2474c32d234d53844a3a688512423b6ece90b1522",
+      "paper_id": "coherence-capacity-as-the-invariant-admissibility-margi-423433d4",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v4"
+    }
+  ]
+}

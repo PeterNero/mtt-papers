@@ -1,65 +1,93 @@
 {
-  "abstract": "Across the Modal Triplet Theory (MTT) corpus, effective physical descriptions are shown to exist only within restricted admissible domains controlled by spectral gaps, projector regularity, and truncation stability. Outside these domains, effective evolution becomes irreversible despite invertibility of the underlying dynamics. In this paper we extract and formalize the invariant structure underlying these results. We show that all MTT admissibility conditions define a single finite stability margin, which we term coherence capacity. Coherence capacity is not an additional dynamical field, but a scalar measure of how much projection-based effective description can be supported before controlled truncation fails. We prove, in MTT-native language, that exhaustion of coherence capacity implies the nonexistence of a global measurable section of the coherent projection, yielding effective irreversibility as a structural necessity. This formulation does not modify existing MTT constructions; it compresses them, making explicit which aspects of MTT are contingent and which are unavoidable in any projection-based theory with finite control margins.",
+  "abstract": "Modal Triplet Theory (MTT) uses several independent control conditions: spectral separation, projector and resolvent bounds, complementary stability, leakage control, contraction, truncation accuracy, descent, and domain or hyperbolicity requirements. A quantitative compression of these conditions must preserve their units, logical independence, and source provenance. A common zero set alone is insufficient because an arbitrary reparameterization can change gradients, rates, magnitudes, and any proposed physical coupling. This paper defines a coherence-capacity record. Each declared admissibility condition has a signed slack, a provenance, a tolerance, and a positive scale with the same units. Division by those scales produces a dimensionless reserve vector. Its minimum is the bottleneck capacity, while a separately declared metric gives a geometric clearance from the inadmissible set. We prove four elementary but useful facts: positivity of the bottleneck is exactly simultaneous satisfaction of the declared conditions; its value gives a quantitative perturbation certificate; uniform positive capacity is equivalent to a uniform reserve on a region; and controlled changes of margin coordinates or bi-Lipschitz metrics preserve a capacity class up to explicit comparison constants. Distance and slack definitions agree quantitatively only when an error-bound or transversality estimate is supplied. The scalar is therefore a normalized diagnostic compression, not a new field, conserved charge, probability, force, entropy, or gravitational coupling. Capacity exhaustion means that at least one declared certificate has reached its boundary. It does not by itself imply failure of the upper dynamics, nonexistence of a measurable section, irreversible evolution, collapse, a horizon, or an arrow of time. Those conclusions require separate dynamics, constitutive laws, instruments, or geometric theorems. The MTT Foundation remains the owner of the complete admissibility ledger and continuation alternatives; this paper supplies the metric and normalization layer needed to compare and transport that ledger without conflating quantities of different units.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v3",
-  "date": "January 2026",
+  "current_version": "v4",
+  "date": "Version 4, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18255975",
-    "created": "2026-01-21T04:52:56.600701+00:00",
+    "created": "2026-07-30T19:47:42.292784+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18322057",
+    "doi": "10.5281/zenodo.21709472",
     "files": [
       {
-        "checksum": "md5:ccb4c3a3127619ab74466142ea1c6f79",
-        "content_url": "https://zenodo.org/api/records/18322057/files/Coherence_Capacity_as_the_Invariant_Admissibility_Margin_of_Modal_Triplet_Theory_v3.pdf/content",
-        "key": "Coherence_Capacity_as_the_Invariant_Admissibility_Margin_of_Modal_Triplet_Theory_v3.pdf",
-        "size": 271266
+        "checksum": "md5:238fb52e4339f97f6caef3cad2ba86c3",
+        "content_url": "https://zenodo.org/api/records/21709472/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 363412
       }
     ],
-    "id": "18322057",
-    "match_kind": "title_or_file",
+    "id": "21709472",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18322057",
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21709472",
     "resource_type": "publication",
-    "title": "Coherence Capacity as the Invariant Admissibility Margin of Modal Triplet Theory",
-    "updated": "2026-01-21T04:52:57.024992+00:00",
-    "version": "v3.0"
+    "title": "Coherence Capacity in Modal Triplet Theory: Normalized Margins, Metric Clearance, and the Invariance Class",
+    "updated": "2026-07-30T19:47:42.824335+00:00",
+    "version": "v4"
   },
-  "main_tex_sha256": "7af26b805cf9d8eeef642d19a2a017de6def912b1dee55e99e36c431268a4ffe",
+  "main_tex_sha256": "bea319301088e16a96b3e701a5a575123f6b194019d9cae9ba10e92edbdf4553",
   "paper_id": "coherence-capacity-as-the-invariant-admissibility-margi-423433d4",
-  "paper_md_sha256": "6ea36f9561b67fdacc34a3b94ada986ac2bdeef63b4aedfe4e38b3714d3c711d",
+  "paper_md_sha256": "e966f8a7456fac95608ce1ca38614ac98bb965379c02846c7ceda5627d2bd8b8",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/coherence-capacity-as-the-invariant-admissibility-margi-423433d4/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "8be5948ef6800ac7045228722a3c8376d05d911c4e110605e9b8118fbb3a1e01",
+    "selected_revision": true,
+    "superseded_source_path": "14 Coherence Capacity Program/_work/Coherence_Capacity_as_the_Invariant_Admissibility_Margin_of_Modal_Triplet_Theory_v3"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 15107,
-      "path": "main.tex",
-      "sha256": "7af26b805cf9d8eeef642d19a2a017de6def912b1dee55e99e36c431268a4ffe"
+      "bytes": 2369,
+      "path": "main.bib",
+      "sha256": "0925028a12fd8f8b95302263139d9a063e56b1388b4aedf688c7f57e7f56ae6f"
     },
     {
-      "bytes": 3784,
-      "path": "series.sty",
-      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+      "bytes": 35599,
+      "path": "main.tex",
+      "sha256": "bea319301088e16a96b3e701a5a575123f6b194019d9cae9ba10e92edbdf4553"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Coherence_Capacity_as_the_Invariant_Admissibility_Margin_of_Modal_Triplet_Theory_v3"
   },
-  "source_tree_sha256": "94594934156e6676709b6715e13eed6c984ec9fbddf37b2cdfe6c733c6d80b0c",
-  "title": "Coherence Capacity as the Invariant Admissibility Margin of Modal Triplet Theory",
+  "source_tree_sha256": "cf71c0fdf8e0f5eac6e374fdbf6f6ad75dee0834a032ffa552fa1c29531812ad",
+  "title": "Coherence Capacity in Modal Triplet Theory: Normalized Margins, Metric Clearance, and the Invariance Class",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255975",
+      "created": "2026-07-30T19:47:42.292784+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21709472",
+      "files": [
+        {
+          "checksum": "md5:238fb52e4339f97f6caef3cad2ba86c3",
+          "content_url": "https://zenodo.org/api/records/21709472/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 363412
+        }
+      ],
+      "id": "21709472",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21709472",
+      "resource_type": "publication",
+      "title": "Coherence Capacity in Modal Triplet Theory: Normalized Margins, Metric Clearance, and the Invariance Class",
+      "updated": "2026-07-30T19:47:42.824335+00:00",
+      "version": "v4"
+    },
     {
       "concept_doi": "10.5281/zenodo.18255975",
       "created": "2026-01-21T04:52:56.600701+00:00",
