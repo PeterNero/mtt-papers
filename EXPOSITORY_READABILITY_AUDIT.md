@@ -12,10 +12,10 @@ Canonical papers audited: **140**.
 | --- | ---: |
 | critical | 10 |
 | major | 11 |
-| moderate | 6 |
+| moderate | 5 |
 | light | 14 |
 | low | 2 |
-| reviewed | 95 |
+| reviewed | 96 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -55,7 +55,6 @@ Canonical papers audited: **140**.
 | major | major | `cosmology-as-global-coherence-capacity-evolution` | 8 | 134.6 | 5/7 | object_intuition, concrete_foothold |
 | major | major | `modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d` | 8 | 192.0 | 3/7 | object_intuition, argument_flow, result_interpretation, conclusion |
 | major | major | `modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927` | 5 | 354.2 | 2/7 | object_intuition, argument_flow, result_interpretation, limitations, conclusion |
-| moderate | moderate | `wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8` | 32 | 382.8 | 7/7 | - |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | moderate | moderate | `coherent-sector-universality-and-controlled-truncation-0ccddc56` | 7 | 148.6 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | moderate | moderate | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 7 | 311.9 | 4/7 | object_intuition, argument_flow, concrete_foothold |
@@ -79,6 +78,7 @@ Canonical papers audited: **140**.
 | low | low | `the-universe-has-a-bad-memory` | 0 | 70482.0 | 7/7 | - |
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
 | reviewed | critical | `fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce` | 43 | 69.9 | 7/7 | - |
+| reviewed | moderate | `wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8` | 34 | 375.2 | 7/7 | - |
 | reviewed | critical | `the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38` | 19 | 128.5 | 7/7 | - |
 | reviewed | major | `the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113` | 18 | 169.9 | 6/7 | object_intuition |
 | reviewed | major | `the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f` | 18 | 173.9 | 7/7 | - |

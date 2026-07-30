@@ -3,15 +3,94 @@
     "canonical_papers": 140,
     "current_sources_newer_than_release": 0,
     "pandoc_warning_papers": 12,
-    "papers_with_zenodo_release": 137,
-    "papers_without_zenodo_match": 3,
+    "papers_with_zenodo_release": 138,
+    "papers_without_zenodo_match": 2,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 54,
-    "zenodo_records": 233,
-    "zenodo_records_matched": 233,
+    "zenodo_records": 234,
+    "zenodo_records_matched": 234,
     "zenodo_records_unmatched": 0
   },
   "papers": [
+    {
+      "abstract": "This paper gives a conditional operator encoding of wave-particle duality. A positive filtered operator has local and spectral representations; an exhausting sharp-limit family yields a delta kernel, coherent phase transport yields interference, positive Schur multipliers yield valid dephasing channels, and POVMs completed by quantum instruments model outcome probabilities and state updates. These results are mathematically compatible with standard quantum mechanics but do not derive it, because the state, Hamiltonian, effects, instrument, and damping channel are supplied as inputs. A survivor-basin account is an additional MTT interpretation. It reproduces the Born rule only if a state-dependent basin measure satisfies the explicit basin-Born bridge criterion for every admitted state and outcome. A selected common MTT source for all these objects remains open.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v5",
+      "date": "July 2026, Version 5",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.21704911",
+        "created": "2026-07-30T14:02:29.297622+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21704912",
+        "files": [
+          {
+            "checksum": "md5:4a91609217aa227480568090ceb89a26",
+            "content_url": "https://zenodo.org/api/records/21704912/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 754657
+          }
+        ],
+        "id": "21704912",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21704912",
+        "resource_type": "publication",
+        "title": "A Conditional Operator Encoding of Wave-Particle Duality in MTT Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary",
+        "updated": "2026-07-30T14:02:29.640775+00:00",
+        "version": "v5"
+      },
+      "main_tex_sha256": "58bdbc6d6d2a7eebb1cab8fe154aac7969f1eacd7db3a3561b20898125d956c5",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "paper_md_sha256": "bb661aae05c6e68f29625b33ba7bab3265160542e7b4381e6f875ca6d6e9b806",
+      "release_state": "zenodo_released",
+      "result_refs": [],
+      "revision": {
+        "revision_evidence_path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "2cfdff01a2bbbe3733ad63aa16e207f871c2c4f7d37caf20804beecb17f8554f",
+        "selected_revision": true,
+        "superseded_source_path": "5 Dirac Delta/_work/Wave__Particle_Duality_as_Projection_Duality_in_Modal_Triplet_Theory_v4"
+      },
+      "source_provenance": {
+        "legacy_source_path": "5 Dirac Delta/_work/Wave__Particle_Duality_as_Projection_Duality_in_Modal_Triplet_Theory_v4"
+      },
+      "source_tree_sha256": "239c4e20ca00359f676a877e29ef54e426fb2481595baeac3241d4b66a25bee5",
+      "title": "A Conditional Operator Encoding of Wave-Particle Duality in MTT Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.21704911",
+          "created": "2026-07-30T14:02:29.297622+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21704912",
+          "files": [
+            {
+              "checksum": "md5:4a91609217aa227480568090ceb89a26",
+              "content_url": "https://zenodo.org/api/records/21704912/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 754657
+            }
+          ],
+          "id": "21704912",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21704912",
+          "resource_type": "publication",
+          "title": "A Conditional Operator Encoding of Wave-Particle Duality in MTT Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary",
+          "updated": "2026-07-30T14:02:29.640775+00:00",
+          "version": "v5"
+        }
+      ]
+    },
     {
       "abstract": "A projection can identify source states that an effective description no longer distinguishes. This observation is useful, but it is not by itself a theory of information, computation, complexity, or undecidability. Information quantities require a state or probability law and a specified channel; computation requires an encoding, evolution rule, readout, and resource model; undecidability requires an unbounded problem family and an explicit reduction from a known undecidable problem. This paper gives a projection-first account of these layers. Classical and quantum data-processing inequalities formalize loss of distinguishability under channels, while recovery maps state when the loss can be reversed on a selected family of states. Noninvertibility alone does not imply entropy production, an arrow of time, computational hardness, or undecidability. For Modal Triplet Theory, finite selected operators supply concrete descriptive channels, but a physical undecidability theorem remains open until a uniform computational embedding is constructed.",
       "authors": [
@@ -12716,32 +12795,6 @@
           "version": "v1.0"
         }
       ]
-    },
-    {
-      "abstract": "Wave\u2013particle duality is usually presented as a primitive feature of quantum theory: microscopic systems propagate as extended wave amplitudes, interfere through coherent phase relations, and yet appear as localized particle-like events under measurement. Modal Triplet Theory (MTT) reframes this duality as a projection phenomenon. The apparent opposition between wave and particle is not fundamental. It arises because one finite coherent-sector excitation admits two downstream shadows: a local delta-like shadow and a spectral phase-coherent shadow. In an admissible MTT fixed-point regime, the relevant object is the finite coherent kernel B_{\\mathrm{adm}} = P\\chi(A)e^{-\\tau_{\\mathrm{adm}}A}\\chi(A)P, where A is the fixed-point stabilization operator, P is the coherent-sector projector, \\chi(A) is the admissible spectral window, and \\tau_{\\mathrm{adm}} = \\lambda_\\ast^{-1}\\log(C_Q/\\epsilon_{\\mathrm{adm}}) is the damping-selected proper-time/heat-time scale. In the local representation, the kernel K_{\\mathrm{adm}}(x,y)=\\langle x|B_{\\mathrm{adm}}|y\\rangle defines a finite localization profile and recovers the Dirac delta only in the sharp limit. This is the particle shadow. In the spectral representation, K_{\\mathrm{adm}}(x,y) = \\sum_{n\\in \\mathrm{coh}} \\chi(\\lambda_n)^2 e^{-\\tau_{\\mathrm{adm}}\\lambda_n} \\phi_n(x)\\phi_n^\\ast(y), the same object appears as a weighted coherent modal structure whose phase evolution produces interference. This is the wave shadow. The paper strengthens this statement in three ways. First, the delta limit is stated as a distributional convergence theorem. Second, branch damping is formulated as a Schur product quantum channel, with the positivity condition D\\succeq0 ensuring complete positivity and trace preservation. Third, finite detector effects are treated as normalized POVM kernels, so localized detection is a finite survivor-basin selection process rather than a primitive collapse postulate. The double-slit experiment is then a canonical example: branch coherence gives interference, while which-way selection damps off-diagonal branch terms and leaves localized events. The main result is a projection-duality theorem: wave-like interference and particle-like localization are not competing ontologies but complementary effective descriptions induced by different projections of one coherent-sector excitation. Standard quantum mechanics is recovered in the sharp coherent limit; MTT supplies the deeper projection architecture from which the dual shadows arise.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v4",
-      "date": "April 2026",
-      "latest_zenodo_release": null,
-      "main_tex_sha256": "173e420f48f4f521ad9ab10889df18f9923c5b2321f27f19ee1266e1a8c10885",
-      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
-      "paper_md_sha256": "76fc61bc31f8e634b55e1c3e5040f092cac7be828523fdfddcc86e801629285f",
-      "release_state": "not_matched_to_zenodo",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "5 Dirac Delta/_work/Wave__Particle_Duality_as_Projection_Duality_in_Modal_Triplet_Theory_v4"
-      },
-      "source_tree_sha256": "6fae39c221b805d88626302efaa424ff868c07444788ad1f207bd7294e514596",
-      "title": "Wave\u2013Particle Duality as Projection Duality in Modal Triplet Theory Pointlike Delta Shadows and Wavelike Spectral Shadows of a Single Coherent Kernel",
-      "version_relation": "unknown",
-      "zenodo_releases": []
     },
     {
       "abstract": "Despite decades of progress in quantum gravity, string theory, cosmology, and effective field theory, no consensus has emerged on how to select a unique or sharply constrained vacuum describing observed physics. This persistent difficulty is commonly framed as a problem of combinatorics, statistics, or anthropic weighting over a large landscape of vacua. In this work we argue that the difficulty may instead reflect a mis-posed question: the assumption that physics is defined throughout configuration space. We observe that core physical notions\u2014Hilbert spaces, probability, effective field theory, and renormalization group flow\u2014already presuppose stability, boundedness, and spectral separation, none of which are guaranteed globally. As a consequence, selection cannot meaningfully act pointwise on vacua but must instead operate on admissible regions defined by dynamical and spectral inequalities. These regions need not be connected or accessible by continuous deformation, rendering standard landscape searches ineffective by construction. The goal of this paper is not to propose a new fundamental theory, but to clarify the conceptual structure underlying vacuum selection and to explain why existing approaches have struggled to converge.",

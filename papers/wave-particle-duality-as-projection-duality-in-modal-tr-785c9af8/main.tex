@@ -7,10 +7,10 @@
 \renewcommand\PartArabic{1}
 \renewcommand\PartsInSeries{I}
 
-\title{Wave--Particle Duality as Projection Duality in Modal Triplet Theory\\
-\large Pointlike Delta Shadows and Wavelike Spectral Shadows of a Single Coherent Kernel}
+\title{A Conditional Operator Encoding of Wave--Particle Duality in MTT\\
+\large Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary}
 \author{Peter Nero}
-\date{April 2026}
+\date{July 2026, Version 5}
 
 % Paper-specific notation
 \newcommand{\Kadm}{K_{\mathrm{adm}}}
@@ -66,25 +66,26 @@
 Wave--particle duality is usually presented as a primitive feature of quantum theory:
 microscopic systems propagate as extended wave amplitudes, interfere through coherent
 phase relations, and yet appear as localized particle-like events under measurement.
-Modal Triplet Theory (MTT) reframes this duality as a projection phenomenon. The
-apparent opposition between ``wave'' and ``particle'' is not fundamental. It arises because
-one finite coherent-sector excitation admits two downstream shadows: a local delta-like
-shadow and a spectral phase-coherent shadow.
+Modal Triplet Theory (MTT) proposes to encode this duality as a projection phenomenon:
+one finite coherent-sector excitation has a local delta-like representation and a spectral
+phase-coherent representation.
 
-In an admissible MTT fixed-point regime, the relevant object is the finite coherent kernel
+In a declared fixed-point regime, the relevant operator is
 \[
   \Badm
   =
   P\chi(A)e^{-\ta A}\chi(A)P,
 \]
-where \(A\) is the fixed-point stabilization operator, \(P\) is the coherent-sector
-projector, \(\chi(A)\) is the admissible spectral window, and
+where \(A\) is a stabilization operator, \(P\) is a coherent-sector projector,
+\(\chi(A)\) is a spectral window, and
 \[
   \ta
   =
   \lambda_\ast^{-1}\log(C_Q/\epsadm)
 \]
-is the damping-selected proper-time/heat-time scale. In the local representation, the kernel
+is the earliest proper-time/heat-time certified by the stated exponential leakage bound. It
+is not automatically the exact first admissible time or a first-principles physical scale.
+In the local representation, the kernel
 \[
   \Kadm(x,y)=\langle x|\Badm|y\rangle
 \]
@@ -100,21 +101,40 @@ This is the particle shadow. In the spectral representation,
 the same object appears as a weighted coherent modal structure whose phase evolution
 produces interference. This is the wave shadow.
 
-The paper strengthens this statement in three ways. First, the delta limit is stated as
+The paper organizes this conditional encoding in three ways. First, the delta limit is stated as
 a distributional convergence theorem. Second, branch damping is formulated as a Schur
 product quantum channel, with the positivity condition \(D\succeq0\) ensuring complete
 positivity and trace preservation. Third, finite detector effects are treated as normalized
-POVM kernels, so localized detection is a finite survivor-basin selection process rather than
-a primitive collapse postulate. The double-slit experiment is then a canonical example:
+POVM kernels and are completed by quantum instruments when outcome probabilities and
+post-measurement states are discussed. A survivor-basin mechanism is an additional MTT
+interpretation, not a consequence of the POVM axioms. The double-slit experiment is a
+canonical example:
 branch coherence gives interference, while which-way selection damps off-diagonal branch
 terms and leaves localized events.
 
-The main result is a projection-duality theorem: wave-like interference and particle-like
-localization are not competing ontologies but complementary effective descriptions induced
-by different projections of one coherent-sector excitation. Standard quantum mechanics is
-recovered in the sharp coherent limit; MTT supplies the deeper projection architecture from
-which the dual shadows arise.
+The rigorous result is an operator dual-representation theorem: one positive filtered operator
+has local and spectral representations, while valid POVMs, instruments, and Schur channels
+model localization and coherence loss. This reproduces standard quantum predictions only
+because the quantum state, dynamics, effects, and instrument are supplied as inputs. The
+claim that all of them descend from one MTT source remains a conditional encoding theorem,
+and the Born rule requires an independent basin-measure intertwiner.
 \end{abstract}
+
+\section*{Version 5 Revision Note}
+\begin{description}
+\item[Supersedes] The April 2026 Version 4 manuscript with the same subject.
+\item[Reason] The earlier paper contained valid kernel, POVM, and Schur-channel results but
+could be read as deriving measurement outcomes, the Born rule, and standard quantum
+mechanics from the existence of two kernel representations.
+\item[Resolution] This version distinguishes exact and certified damping times, adds the
+quantum-instrument layer required for operational measurement, states the exact
+Born-bridge condition, and classifies projection duality as a conditional MTT encoding.
+\item[Retained result] The local/spectral kernel identity, distributional sharp limit,
+positive Schur-channel criterion, and visibility calculations are retained.
+\item[Remaining boundary] A selected common MTT source must derive the state, Hamiltonian,
+effects, instrument, branch kernel, and basin measure without importing their measured
+predictions.
+\end{description}
 
 \tableofcontents
 
@@ -140,9 +160,9 @@ smoothing by the canonical admissible operator
   P\chi(A)e^{-\ta A}\chi(A)P,
   \label{eq:purpose-badm}
 \end{equation}
-where \(A\) is the fixed-point stabilization operator, \(P\) is the coherent-sector projector,
-\(\chi(A)\) is the admissible spectral window, and \(\ta\) is the damping-selected
-proper-time/heat-time scale.
+where \(A\) is the declared fixed-point stabilization operator, \(P\) is the coherent-sector
+projector, \(\chi(A)\) is the spectral window, and \(\ta\) is the proper-time/heat-time
+certified by the declared damping bound.
 
 The present paper applies this same object to the wave--particle problem. The claim is not
 that there are two underlying things, one wave-like and one particle-like. Nor is the claim
@@ -162,8 +182,8 @@ Equivalently,
 \begin{equation}
   \boxed{
   \text{wave--particle duality}
-  =
-  \text{projection duality}.
+  \quad\leadsto\quad
+  \text{a conditional projection-duality encoding}.
   }
   \label{eq:purpose-projection-duality}
 \end{equation}
@@ -226,13 +246,16 @@ so that the Schur map
 is completely positive and trace preserving. This condition is essential: not every proposed
 interference-damping rule is physically admissible.
 
-Fifth, measurement is treated as finite survivor-basin selection. A detector is represented by
-a measurement context \(\Meas\), with its own device-sector data
+Fifth, measurement is represented first by standard operational data and only then compared
+with a possible survivor-basin completion. A detector context \(\Meas\) has device-sector data
 \begin{equation}
   (A_{\Meas},P_{\Meas},\chi_{\Meas},\tau_{\Meas},
-  \{E_i^{(\Meas)}\}_{i\in I},\mathfrak B_{\Meas}).
+  \{E_i^{(\Meas)}\}_{i\in I},
+  \{\mathcal I_i^{(\Meas)}\}_{i\in I},
+  \mathfrak B_{\Meas}).
 \end{equation}
-Here \(\mathfrak B_{\Meas}=\{B_i^{(\Meas)}\}_{i\in I}\) denotes the survivor-basin partition.
+Here the effects and instrument define probabilities and state updates;
+\(\mathfrak B_{\Meas}=\{B_i^{(\Meas)}\}_{i\in I}\) is an additional proposed survivor-basin partition.
 Different devices can therefore disturb the same coherent excitation in different ways, select
 different branch bases, and induce different damping matrices
 \begin{equation}
@@ -240,9 +263,9 @@ different branch bases, and induce different damping matrices
   =
   \exp[-\tau_{\Meas}\Lambda_{ab}^{(\Meas)}],
 \end{equation}
-when the exponent defines an admissible positive kernel. The exact detector record is not a
-pre-existing context-free point value revealed without disturbance. It is a stabilized downstream
-record produced by the device-specific evolve--project--stabilize cycle.
+when the exponent defines an admissible positive kernel. Identifying an instrument outcome
+with a stabilized basin record requires a further intertwining theorem; it does not follow
+from positivity of the effects or damping channel alone.
 
 \subsection{What is not being claimed}
 \label{subsec:not-claimed}
@@ -298,9 +321,12 @@ A common source of confusion is to conflate two different questions:
 \end{align}
 MTT treats these as related but distinct questions.
 
-The first question is answered by basin-measure structure. In the Born-rule shadow-bridge
-program, outcome probabilities are associated with the relative measures of stabilized
-selection basins. Schematically,
+The first question is answered operationally by the supplied POVM or instrument:
+\[
+  p_i=\tr(\rho E_i)=\tr\mathcal I_i(\rho).
+\]
+The Born-rule shadow-bridge program proposes to reproduce these probabilities by relative
+measures of stabilized selection basins:
 \begin{equation}
   \mathbb P(i)
   =
@@ -308,7 +334,14 @@ selection basins. Schematically,
   \label{eq:basin-born}
 \end{equation}
 where \(B_i\) is the basin of the \(i\)-th stabilized outcome and \(\mu\) is the relevant
-admissibility-weighted basin measure. This is the probability side of measurement.
+admissibility-weighted basin measure. Exact agreement requires the bridge condition
+\[
+  \frac{\mu_\rho(B_i)}{\sum_j\mu_\rho(B_j)}
+  =
+  \tr(\rho E_i)
+  \qquad\text{for every admitted }\rho\text{ and }i.
+\]
+This condition is not proved by the existence of the two kernel representations.
 
 The second question is answered by branch-coherence survival. Before a unique outcome is
 stabilized, or in arrangements where alternatives are recombined, the off-diagonal terms
@@ -324,7 +357,7 @@ Thus this paper does not replace Born probabilities with visibility damping. Ins
 the two roles separate:
 \begin{equation}
   \boxed{
-  \text{basin measure determines stabilized outcome frequencies},
+  \text{a proved basin--Born bridge would reproduce stabilized outcome frequencies},
   }
 \end{equation}
 whereas
@@ -350,13 +383,12 @@ the available survivor basins.
 
 In symbolic form, a measurement context induces the sequence
 \begin{equation}
+  \begin{aligned}
   \text{coherent evolution}
-  \longrightarrow
-  \text{localized disturbance}
-  \longrightarrow
-  \text{projection}
-  \longrightarrow
-  \text{survivor-basin stabilization}.
+  &\longrightarrow \text{localized disturbance}
+  \longrightarrow \text{projection}\\
+  &\longrightarrow \text{survivor-basin stabilization}.
+  \end{aligned}
   \label{eq:evolve-project-stabilize-purpose}
 \end{equation}
 Different devices implement different versions of this sequence. A weak which-way marker,
@@ -367,10 +399,9 @@ measurement contexts \(\Meas\), different branch partitions, and different dampi
 This is why the device matters in the double-slit experiment. With no which-way device,
 the two path branches remain mutually coherent and the off-diagonal term survives. With a
 weak which-way device, the off-diagonal term is partially damped. With a strong which-way
-device, the path branches are separated into distinct survivor basins and the interference term
-is suppressed. The outcome is exact within the selected measurement context because the
-device stabilizes a definite record, but the context itself is created by the device-specific
-disturbance.
+device, the path branches are separated and the interference term is suppressed. The
+instrument supplies a definite operational record. Calling that record a stabilized survivor
+basin additionally invokes the declared instrument--basin intertwiner.
 
 \subsection{Why this is not merely decoherence}
 \label{subsec:not-merely-decoherence}
@@ -510,12 +541,12 @@ The discarded component \(Q\Psi\) is not necessarily nonexistent; it is inadmiss
 chosen effective chart.
 \end{definition}
 
-\subsection{Damping-selected proper-time scale}
+\subsection{Exact and certified proper-time scales}
 \label{subsec:damping-selected-time}
 
-The admissible kernel contains a heat/proper-time parameter. In ordinary regularization this
-parameter is often chosen by hand. In the MTT fixed-point setting, it is selected by the damping
-required to reduce discarded-sector leakage below an admissibility tolerance.
+The filtered kernel contains a heat/proper-time parameter. An exponential damping estimate
+can certify an admissible time, but a bound need not identify the exact first crossing, and
+neither quantity is physical until its operator and tolerance are selected.
 
 Let \(\Phi_t\) denote the local linearized or locally controlled damping flow. In the simplest
 self-adjoint linear case,
@@ -546,7 +577,17 @@ by basin separation, detector resolution, closure strain, or other sector data. 
 universal constant in this paper.
 \end{definition}
 
-\begin{proposition}[Minimal admissible heat/proper-time]
+\begin{definition}[Exact exit time]
+\label{def:exact-exit-time}
+Define
+\begin{equation}
+  \tau_{\rm exit}
+  :=
+  \inf\{t\ge0:\norm{Q\Phi_tQ}\le\epsadm\}.
+\end{equation}
+\end{definition}
+
+\begin{proposition}[Certified admissible heat/proper-time]
 \label{prop:minimal-admissible-time}
 Under the damping estimate \eqref{eq:discarded-sector-bound}, every
 \begin{equation}
@@ -554,7 +595,7 @@ Under the damping estimate \eqref{eq:discarded-sector-bound}, every
   \lambda_\ast^{-1}
   \log\frac{C_Q}{\epsadm}
 \end{equation}
-is \(\epsadm\)-admissible. The minimal time selected by this bound is
+is \(\epsadm\)-admissible. The earliest time certified by this bound is
 \begin{equation}
   \ta
   :=
@@ -562,6 +603,12 @@ is \(\epsadm\)-admissible. The minimal time selected by this bound is
   \log\frac{C_Q}{\epsadm}.
   \label{eq:tau-adm}
 \end{equation}
+If the leakage norm is nonincreasing, then
+\begin{equation}
+  \tau_{\rm exit}\le\ta.
+\end{equation}
+Equality requires additional information. In the reducing self-adjoint case it follows from
+the exact spectral norm formula, as proved in the dedicated admissibility-time paper.
 \end{proposition}
 
 \begin{proof}
@@ -580,6 +627,8 @@ Taking logarithms yields
   t\ge
   \lambda_\ast^{-1}\log(C_Q/\epsadm).
 \end{equation}
+The right-hand side is an upper bound for the actual leakage, so its crossing time may be
+later than the exact exit time.
 \end{proof}
 
 \begin{remark}[Heat-time rather than clock time]
@@ -604,9 +653,9 @@ and the effective coherence-energy scale is
 \subsection{The admissible coherent kernel}
 \label{subsec:admissible-kernel}
 
-\begin{definition}[Admissible coherent operator]
+\begin{definition}[Conditionally specified coherent operator]
 \label{def:admissible-coherent-operator}
-Given the fixed-point data of Assumption~\ref{ass:fixed-point-spectral-data} and the damping-selected
+Given the declared data of Assumption~\ref{ass:fixed-point-spectral-data} and the certified
 scale \(\ta\), define
 \begin{equation}
   \Badm
@@ -728,8 +777,9 @@ When the context is a position-sensitive detector we also write
 \end{equation}
 \end{definition}
 
-Thus \(K_{\rm det}\) is not an extra arbitrary smoothing function. It is the detector-sector
-realization of the same MTT admissible-kernel architecture. Different devices may have
+Thus \(K_{\rm det}\) is a detector-sector realization of the same proposed kernel
+architecture. This definition does not derive it from the system kernel. A physical model
+must supply a connection-preserving source map between the two sectors. Different devices may have
 different \(A_{\Meas}\), \(P_{\Meas}\), \(\chi_{\Meas}\), and \(\tau_{\Meas}\), and therefore disturb and
 select the coherent excitation differently.
 
@@ -769,6 +819,30 @@ and
   \tr(\rho I_{\rm coh}).
 \end{equation}
 For normalized states on the retained sector, this equals one.
+
+\begin{definition}[Instrument completion]
+\label{def:instrument-completion}
+A POVM specifies outcome probabilities but not the state update. An operational
+measurement therefore also requires a quantum instrument
+\(\{\mathcal I_i\}_{i\in I}\): each \(\mathcal I_i\) is completely positive and
+trace-nonincreasing, \(\sum_i\mathcal I_i\) is trace preserving for a closed detector, and
+\[
+  E_i=\mathcal I_i^\ast(I_{\rm coh}).
+\]
+For input state \(\rho\),
+\[
+  p_i=\tr\mathcal I_i(\rho)=\tr(\rho E_i),
+  \qquad
+  \rho_i'=\frac{\mathcal I_i(\rho)}{p_i}
+\]
+when \(p_i>0\).
+\end{definition}
+
+\begin{remark}[What the POVM does not prove]
+The effects \(\{E_i\}\) determine the Born probabilities only after the quantum state and
+Born pairing are supplied. They do not select a unique instrument, do not prove a unique
+outcome, and do not identify an MTT survivor basin. Those are separate promotion steps.
+\end{remark}
 
 \begin{remark}[Open detectors and leakage]
 \label{rem:open-detectors}
@@ -1534,7 +1608,9 @@ In MTT, a measurement context \(\Meas\) includes:
   \Meas
   =
   (A_{\Meas},P_{\Meas},\chi_{\Meas},\tau_{\Meas},
-  \{E_i^{(\Meas)}\}_{i\in I},\mathfrak B_{\Meas}).
+  \{E_i^{(\Meas)}\}_{i\in I},
+  \{\mathcal I_i^{(\Meas)}\}_{i\in I},
+  \mathfrak B_{\Meas}).
   \label{eq:measurement-context-data}
 \end{equation}
 Here:
@@ -1545,7 +1621,8 @@ Here:
   \item \(\tau_{\Meas}\) is the detector-sector proper-time/heat-time scale;
   \item \(\{E_i^{(\Meas)}\}_{i\in I}\) is the finite effect family associated with the possible
   records;
-  \item \(\mathfrak B_{\Meas}=\{B_i^{(\Meas)}\}_{i\in I}\) is the corresponding survivor-basin
+  \item \(\{\mathcal I_i^{(\Meas)}\}_{i\in I}\) is an instrument completion of those effects;
+  \item \(\mathfrak B_{\Meas}=\{B_i^{(\Meas)}\}_{i\in I}\) is a proposed corresponding survivor-basin
   partition.
 \end{enumerate}
 
@@ -1637,8 +1714,9 @@ the local stabilization dynamics.
 
 The measurement process has two logically distinct parts.
 
-First, it has an outcome-selection part. In the basin-measure account, outcome probabilities
-are determined by the relative measures of stabilized basins:
+First, it has an outcome-selection part. Operationally, the supplied instrument gives
+\(p_i=\tr\mathcal I_i(\rho)=\tr(\rho E_i)\). The basin-measure account proposes the relative
+measures
 \begin{equation}
   \mathbb P(i)
   =
@@ -1646,7 +1724,8 @@ are determined by the relative measures of stabilized basins:
   {\sum_j\mu(B_j^{(\Meas)})},
   \label{eq:basin-probabilities-measurement}
 \end{equation}
-where \(\mu\) is the admissibility-weighted measure on the relevant ensemble.
+where \(\mu\) is the admissibility-weighted measure on the relevant ensemble. This equals the
+Born probability only when the basin--Born bridge criterion holds.
 
 Second, it has a coherence-visibility part. Before or during final selection, branch coherences
 may survive, partially survive, or be suppressed. These off-diagonal terms determine whether
@@ -1656,15 +1735,11 @@ Thus one must not identify Born probabilities with visibility damping. The forme
 which basin is selected. The latter concerns how much off-diagonal coherence remains between
 branches.
 
-\begin{equation}
-  \boxed{
-  \text{basin measure controls outcome frequency},
-  }
-  \qquad
-  \boxed{
-  \text{branch damping controls interference visibility}.
-  }
-\end{equation}
+\begin{align}
+  &\boxed{\text{a valid basin--Born bridge reproduces outcome frequency}},
+  \\
+  &\boxed{\text{branch damping controls visibility}}.
+\end{align}
 
 This distinction is especially important in the double-slit experiment. Each detection event
 is localized, but the ensemble distribution can still display interference if branch coherence
@@ -2228,8 +2303,8 @@ and
 \begin{equation}
   E_x\to |x\rangle\langle x|.
 \end{equation}
-But the finite kernel is the native MTT object. The delta/PVM form is the singular
-measurement limit.
+In the proposed MTT encoding, the finite kernel is the retained object. The delta/PVM form
+is its singular measurement limit.
 
 Thus the double-slit experiment contains both shadows at once:
 \begin{enumerate}[label=(\roman*)]
@@ -2295,7 +2370,7 @@ while
   \boxed{
   \text{localized screen click}
   =
-  \text{finite survivor-basin record}.
+  \text{finite detector record}.
   }
 \end{equation}
 
@@ -2618,13 +2693,12 @@ ordinary reversible dephasing and genuine record formation into the same categor
 
 Across these examples the same structure repeats:
 \begin{equation}
+  \begin{aligned}
   \text{coherent branches}
-  \quad\longrightarrow\quad
-  \text{device-dependent disturbance}
-  \quad\longrightarrow\quad
-  \text{branch damping or survivor-basin selection}
-  \quad\longrightarrow\quad
-  \text{localized records}.
+  &\longrightarrow \text{device-dependent disturbance}\\
+  &\longrightarrow \text{branch damping or basin selection}
+  \longrightarrow \text{localized records}.
+  \end{aligned}
 \end{equation}
 
 The wave-like shadow is visible when branch coherence survives:
@@ -2685,9 +2759,10 @@ Assumption~\ref{ass:fixed-point-spectral-data}.
   \end{equation}
   \item In the local representation, \(x\mapsto \Kadm(x,x_0)\) is the finite coherent
   response to an ideal source at \(x_0\).
-  \item Under the joint sharp limit of complete bandwidth and vanishing proper-time width,
-  \(\Kadm(x,y)\) converges to \(\delta(x-y)\) distributionally in the sense of
-  \cref{thm:delta-limit}.
+  \item For an exhausting family of projectors and windows
+  \((P_N,\chi_N)\) together with \(\tau_N\downarrow0\) satisfying the hypotheses of
+  \cref{thm:delta-limit}, the corresponding kernels converge to
+  \(\delta(x-y)\) distributionally.
 \end{enumerate}
 \end{theorem}
 
@@ -2738,13 +2813,15 @@ In addition to the hypotheses of \cref{thm:kernel-dual-representation}, assume:
   giving unitary phase evolution \(U_t^{\rm coh}=e^{-itH_{\rm coh}}\);
   \item measurement contexts are represented by finite POVMs or effect densities on the
   retained sector;
+  \item each operational measurement includes an instrument completing those effects;
   \item branch damping induced by a measurement context is represented by a valid Schur
   channel \(\rho\mapsto D\circ\rho\), with \(D\succeq0\) and \(D_{aa}=1\);
-  \item stabilized detector records correspond to survivor basins of the measurement context.
+  \item an explicit intertwiner identifies instrument outcomes with survivor basins of the
+  measurement context.
 \end{enumerate}
 \end{assumption}
 
-\begin{theorem}[Wave--particle projection duality]
+\begin{theorem}[Conditional wave--particle operator encoding]
 \label{thm:wave-particle-projection-duality}
 Under Assumptions~\ref{ass:fixed-point-spectral-data},
 \ref{ass:coherent-phase-evolution}, and
@@ -2756,10 +2833,10 @@ a finite coherent-sector excitation has two downstream shadows:
   \item a wave-like spectral shadow, obtained when retained modal or branch phases evolve
   coherently and contribute off-diagonal interference terms to observable probabilities.
 \end{enumerate}
-Measurement contexts interpolate between these shadows by damping or preserving
-off-diagonal branch coherences and stabilizing survivor-basin records. Therefore wave-like
-interference and particle-like localization are not distinct ontological primitives; they are
-different projection shadows of one finite coherent-sector excitation.
+Measurement contexts interpolate between these representations by damping or preserving
+off-diagonal branch coherences and by applying an instrument. Under the stated basin
+intertwiner, instrument outcomes also label survivor-basin records. Thus the supplied data
+give one consistent operator encoding of wave-like interference and particle-like localization.
 \end{theorem}
 
 \begin{proof}
@@ -2783,19 +2860,19 @@ For the measurement statement, \cref{thm:schur-channel} shows that admissible br
 damping is a valid quantum channel when \(D\succeq0\) and \(D_{aa}=1\). If \(D_{ab}\approx1\)
 for relevant branches, off-diagonal coherence survives and the wave-like shadow is visible.
 If \(D_{ab}\approx0\), off-diagonal coherence is suppressed and the downstream description
-is a mixture of branch-stabilized records. The exact record is supplied by survivor-basin
-stabilization in the measurement context.
+is a mixture of branch records. The assumed instrument--basin intertwiner identifies the
+operational record with survivor-basin stabilization.
 
-Thus the same coherent excitation gives wave-like or particle-like behavior according to
-which projection context is imposed and which coherences survive. This proves the
-projection-duality statement.
+Thus the same declared coherent-sector model represents wave-like or particle-like behavior
+according to the measurement context and surviving coherences. This proves the conditional
+encoding statement. It does not derive the supplied quantum data from MTT.
 \end{proof}
 
 \begin{equation}
   \boxed{
   \text{wave--particle duality}
-  =
-  \text{projection duality}.
+  \quad\leadsto\quad
+  \text{a conditional projection-duality encoding}.
   }
 \end{equation}
 
@@ -2850,27 +2927,20 @@ The Schur map sends \(\rho_{ab}\mapsto D_{ab}\rho_{ab}\). If \(D_{ab}\approx0\) 
 therefore contain only diagonal branch contributions.
 \end{proof}
 
-\begin{corollary}[No primitive wave-to-particle conversion]
+\begin{remark}[Interpretive non-conversion reading]
 \label{cor:no-primitive-conversion}
 Within the stated assumptions, measurement does not require a primitive conversion of a
 wave into a particle. It requires only a change in projection context: branch coherences are
 preserved, damped, or selected according to the measurement-device data.
-\end{corollary}
-
-\begin{proof}
-The proof of \cref{thm:wave-particle-projection-duality} shows that wave-like and
-particle-like descriptions are downstream shadows of the same coherent-sector excitation.
-Measurement changes the effective description by applying finite effects and admissible
-branch damping, not by changing the ontological type of the excitation.
-\end{proof}
+\end{remark}
 
 \subsection{Relation to complementarity}
 \label{subsec:relation-complementarity}
 
-The projection-duality theorem refines, rather than discards, the traditional complementarity
+The conditional encoding refines, rather than discards, the traditional complementarity
 intuition. Complementarity says that wave and particle descriptions are revealed by different
-experimental arrangements. MTT explains why this is so: different experimental arrangements
-implement different projection contexts.
+experimental arrangements. The MTT encoding represents those arrangements by different
+projection and instrument contexts.
 
 An interference setup preserves or recombines branch coherence:
 \begin{equation}
@@ -2890,7 +2960,7 @@ picture.
 \subsection{Interpretive conclusion}
 \label{subsec:projection-duality-interpretive-conclusion}
 
-The theorem gives the formal version of the central claim:
+The theorem gives the formal version of the conditional encoding:
 \begin{equation}
   \boxed{
   \text{one finite coherent-sector excitation}
@@ -2908,9 +2978,8 @@ deltas. The ordinary wave picture is recovered when retained phases evolve coher
 off-diagonal terms survive. The ordinary measurement picture is recovered when finite
 effects are idealized by sharp projectors and survivor-basin selection has stabilized a record.
 
-Thus wave--particle duality is not an additional mystery placed on top of MTT. It is a direct
-consequence of coherent projection, finite kernels, phase evolution, and survivor-basin
-selection.
+Thus the supplied operator data can encode wave--particle duality without a primitive
+wave-to-particle conversion. Deriving those data from one MTT source remains open.
 \section{Relation to standard quantum mechanics and existing accounts}
 \label{sec:relation-existing-accounts}
 
@@ -2923,7 +2992,8 @@ approaches such as string theory.
 \subsection{Recovery of standard quantum mechanics}
 \label{subsec:recovery-standard-qm}
 
-Standard quantum mechanics is recovered in the appropriate limiting regimes.
+Standard quantum mechanics is embedded in the appropriate limiting regimes once its state,
+Hamiltonian, effects, and channels are supplied.
 
 When coherent phase evolution is retained, a state evolves as
 \begin{equation}
@@ -2951,7 +3021,7 @@ recovered. When branch damping is strong,
 the density matrix reduces to the corresponding incoherent mixture in the selected branch
 basis.
 
-Thus the MTT construction reproduces the standard cases:
+Thus the conditional construction reproduces the standard cases:
 \begin{align}
   D_{ab}=1
   &\quad\Longrightarrow\quad
@@ -2968,25 +3038,28 @@ Thus the MTT construction reproduces the standard cases:
 
 The difference is not in the limiting formulas. The difference is in the order of explanation.
 In standard quantum mechanics, wave evolution and pointlike measurement are part of the
-formal postulates. In MTT, both are downstream limits of finite coherent projection.
+formal structure. The MTT program proposes to obtain both as downstream limits of finite
+coherent projection; this paper encodes but does not derive that proposal.
 
 \subsection{Born probabilities and basin weights}
 \label{subsec:born-basin-weights}
 
-The projection-duality theorem concerns the coexistence of wave-like interference and
-particle-like localization. It does not by itself replace the Born rule. In the MTT corpus,
-Born probabilities are associated with basin-measure structure.
+The conditional encoding concerns the coexistence of wave-like interference and
+particle-like localization. It does not derive the Born rule. Operationally,
+\(\mathbb P(i)=\tr(\rho E_i)\). The MTT corpus proposes to reproduce this pairing with
+basin-measure structure.
 
-Let \(\{B_i\}_{i\in I}\) be the survivor-basin partition associated with a measurement context
-\(\Meas\), and let \(\mu\) be the relevant admissibility-weighted basin measure. The outcome
-probability is
+Let \(\{B_i\}_{i\in I}\) be the proposed survivor-basin partition associated with a
+measurement context \(\Meas\), and let \(\mu_\rho\) be a state-dependent
+admissibility-weighted basin measure. The candidate basin probability is
 \begin{equation}
   \mathbb P(i)
   =
-  \frac{\mu(B_i)}{\sum_j\mu(B_j)}.
+  \frac{\mu_\rho(B_i)}{\sum_j\mu_\rho(B_j)}.
   \label{eq:born-basin-probability-existing}
 \end{equation}
-This answers the question:
+It answers the operational question only when it equals \(\tr(\rho E_i)\) for every admitted
+state, as required by \cref{thm:basin-born-criterion}:
 \begin{equation}
   \text{Which stabilized record occurs?}
 \end{equation}
@@ -3007,11 +3080,11 @@ fringes only if branch coherences survive:
 Thus:
 \begin{equation}
   \boxed{
-  \text{Born weights govern selection frequency},
+  \text{supplied Born weights govern selection frequency},
   }
   \qquad
   \boxed{
-  \text{branch damping governs interference visibility}.
+  \text{branch damping governs visibility}.
   }
 \end{equation}
 
@@ -3026,9 +3099,9 @@ This resemblance is not accidental. Environmental entanglement is one physical w
 suppressing off-diagonal coherences in a reduced density matrix. Standard decoherence
 therefore captures an important part of the wave-to-classical transition.
 
-The MTT claim is broader and more structured. Decoherence explains how coherence can
-become inaccessible after tracing out environmental degrees of freedom. MTT additionally
-requires:
+The proposed MTT completion is broader and more structured. Decoherence explains how
+coherence can become inaccessible after tracing out environmental degrees of freedom. A
+full MTT completion would additionally require:
 \begin{enumerate}[label=(\roman*)]
   \item a finite coherent kernel determining admissible support;
   \item a detector or environment sector that supplies a valid measurement context;
@@ -3163,24 +3236,23 @@ The distinctive claim is the unified selection architecture:
   \end{cases}
   }
 \end{equation}
-The kernel is not chosen as a phenomenological smoothing function. It is selected by
-fixed-point coherent data and damping/admissibility. Branch damping is not an arbitrary
+The kernel is conditionally specified by declared fixed-point data and a certified
+damping/admissibility time. A first-principles MTT source theorem is still required. Branch damping is not an arbitrary
 visibility factor. It must define a valid quantum channel. Outcome probabilities are not
 identified with damping factors. They are basin-measure weights.
 
 This combination is the specific MTT contribution:
-\begin{equation}
-  \boxed{
-  \text{wave and particle are not two primitives, but two projection shadows of one
-  admissible coherent-sector structure.}
-  }
-\end{equation}
+\begin{center}
+\fbox{\parbox{0.86\linewidth}{\centering
+Within the conditional encoding, wave-like and particle-like behavior are two
+representations of one declared coherent-sector structure.}}
+\end{center}
 
 
 
 
 
-\section{Compatibility with basin-measure and disturbance-stabilization papers}
+\section{Compatibility with Prior Measurement Papers}
 \label{sec:compatibility-prior-papers}
 
 This section records how the present projection-duality theorem fits with two earlier MTT
@@ -3196,19 +3268,44 @@ structures:
 \subsection{Compatibility with the basin-measure Born-rule bridge}
 \label{subsec:compatibility-born-bridge}
 
-The basin-measure bridge treats quantum probabilities as shadows of basin measures on an
+The basin-measure bridge proposes quantum probabilities as shadows of basin measures on an
 admissible coherent sector. In its simplest form, if a measurement context has survivor basins
 \begin{equation}
   \{B_i\}_{i\in I},
 \end{equation}
-and if \(\mu\) is the admissibility-weighted basin measure, then the outcome probability is
+and if \(\mu_\rho\) is a state-dependent admissibility-weighted basin measure, the proposed
+outcome probability is
 \begin{equation}
   \mathbb P(i)
   =
   \frac{\mu(B_i)}{\sum_j\mu(B_j)}.
   \label{eq:compat-born-basin}
 \end{equation}
-This answers the outcome-frequency question:
+This answers the outcome-frequency question only if it agrees with the operational effect
+probability \(\tr(\rho E_i)\).
+
+\begin{theorem}[Exact basin--Born bridge criterion]
+\label{thm:basin-born-criterion}
+Let \(\{E_i\}\) be a POVM and \(\{B_i\}\) a measurable basin partition. The normalized basin
+rule reproduces the Born rule for every admitted state \(\rho\) if and only if there is a
+positive normalization \(c(\rho)\) such that
+\[
+  \mu_\rho(B_i)=c(\rho)\tr(\rho E_i)
+  \qquad\text{for every }i.
+\]
+When \(\mu_\rho(\Omega)=1\), one has \(c(\rho)=1\).
+\end{theorem}
+
+\begin{proof}
+If the displayed condition holds, normalization cancels \(c(\rho)\) because
+\(\sum_i\tr(\rho E_i)=1\). Conversely, equality of the normalized basin and Born
+probabilities implies the displayed condition with
+\(c(\rho)=\sum_j\mu_\rho(B_j)\). \(\square\)
+\end{proof}
+
+The theorem isolates rather than solves the source problem: MTT must construct
+\(\mu_\rho\) and the basin/effect correspondence from the same upstream data.
+The operational question is:
 \begin{equation}
   \text{Which stabilized record occurs, and how often?}
 \end{equation}
@@ -3220,10 +3317,10 @@ The present paper answers a different question:
 The answer is that the excitation has both a spectral phase shadow and a local delta-like
 shadow, and measurement contexts determine which branch coherences survive.
 
-Thus the Born-rule bridge and the projection-duality theorem are complementary. The Born
-bridge supplies the basin-measure weights for stabilized outcomes. The duality theorem
-supplies the representation structure explaining why coherent interference can coexist with
-localized detection.
+Thus the proposed Born bridge and the projection-duality encoding are complementary. The
+former still owes the criterion in \cref{thm:basin-born-criterion}; the latter supplies only
+the representation structure explaining how coherent interference can coexist with localized
+detection once standard quantum data are supplied.
 
 \begin{proposition}[Separation of probability and visibility]
 \label{prop:probability-visibility-separation}
@@ -3382,10 +3479,10 @@ resolution scale.
 
 The earlier measurement papers explain how outcomes stabilize and how probabilities arise
 from basins. The present paper adds a specific structural synthesis:
-\begin{equation}
-  \text{the same finite coherent kernel has both a local delta-like shadow and a spectral
-  phase-coherent shadow}.
-\end{equation}
+\begin{center}
+\emph{The same finite coherent kernel has both a local delta-like representation and a
+spectral phase-coherent representation.}
+\end{center}
 It also adds a channel-consistency condition for interference damping:
 \begin{equation}
   D\succeq0,
@@ -3740,7 +3837,7 @@ duality theorem; it is a failure of the theorem's hypotheses.
 \subsection{Divergent or undefined admissible proper time}
 \label{subsec:failure-tau}
 
-The damping-selected time is
+The time certified by the damping bound is
 \begin{equation}
   \ta
   =
@@ -3906,19 +4003,21 @@ this paper.
 \subsection{Domain of validity}
 \label{subsec:domain-validity}
 
-The projection-duality theorem applies in regimes where:
+The operator encoding applies in regimes where:
 \begin{enumerate}[label=(\roman*)]
   \item a coherent spectral sector is isolated;
   \item the discarded sector has a positive damping gap;
   \item the admissible proper-time scale is finite;
   \item the retained sector supports coherent phase evolution;
   \item detector effects form a valid POVM or a clearly specified open measurement;
+  \item a quantum instrument supplies the operational state update;
   \item branch damping defines a completely positive trace-preserving channel;
   \item survivor-basin capture is well-defined for the measurement context.
 \end{enumerate}
 
-Within this domain, wave-like interference and particle-like localization are not separate
-postulates. They follow from the same coherent projection architecture.
+Within this domain, wave-like interference and particle-like localization admit one consistent
+operator encoding. Their derivation from one MTT source additionally requires intertwiners
+from the source to the quantum state, dynamics, effects, instrument, and basin data.
 
 Outside this domain, the theorem does not apply directly. The failure mode itself then becomes
 physically meaningful: it indicates loss of coherent representability, gap closure, invalid
@@ -3932,12 +4031,11 @@ Its strength comes from its explicit hypotheses. If the hypotheses hold, then th
 particle descriptions are recovered as shadows of one finite coherent-sector excitation. If the
 hypotheses fail, the theory identifies why the simple wave-particle description breaks down.
 
-\begin{equation}
-  \boxed{
-  \text{Projection duality is valid exactly where coherent projection, phase transport,
-  and survivor-basin measurement are valid.}
-  }
-\end{equation}
+\begin{center}
+\fbox{\parbox{0.86\linewidth}{\centering
+The conditional encoding is valid where coherent projection, phase transport, an
+operational instrument, and the declared basin intertwiner are valid.}}
+\end{center}
 \section{Conclusion}
 \label{sec:conclusion}
 
@@ -3983,12 +4081,11 @@ context-free classical property. It is a device-specific disturbance and stabili
   \Meas
   =
   (A_{\Meas},P_{\Meas},\chi_{\Meas},\tau_{\Meas},
-  \{E_i^{(\Meas)}\},\mathfrak B_{\Meas}).
+  \{E_i^{(\Meas)}\},\{\mathcal I_i^{(\Meas)}\},\mathfrak B_{\Meas}).
 \end{equation}
-Different devices can therefore define different branch bases, different finite detector
-effects, different damping matrices, and different survivor-basin partitions. The exact
-detector record is exact inside the measurement context because the device stabilizes one
-survivor basin.
+Different devices can therefore define different branch bases, finite detector effects,
+instruments, damping matrices, and proposed survivor-basin partitions. The instrument
+defines the operational record; the declared intertwiner identifies it with a basin record.
 
 The interference side is controlled by off-diagonal branch coherence. A measurement-induced
 damping map has the form
@@ -4039,12 +4136,12 @@ Branch damping answers:
 Thus Born frequencies and interference visibility are related but distinct layers of the MTT
 measurement architecture.
 
-The resulting theorem is:
+The resulting conditional statement is:
 \begin{equation}
   \boxed{
   \text{wave--particle duality}
-  =
-  \text{projection duality}.
+  \quad\leadsto\quad
+  \text{a projection-duality encoding}.
   }
 \end{equation}
 More explicitly,
@@ -4063,9 +4160,8 @@ More explicitly,
 The ordinary quantum descriptions are recovered in the appropriate limits. Standard wave
 mechanics is recovered when coherent phases are retained. Pointlike detection is recovered
 when finite detector effects are idealized by sharp projectors. Incoherent mixtures are
-recovered when branch coherences are strongly damped. Thus MTT does not reject the
-standard formalism; it supplies a deeper projection architecture explaining why the standard
-formalism has both wave-like and particle-like faces.
+recovered when branch coherences are strongly damped. Thus the encoding is compatible with
+the standard formalism. It is not yet a derivation of that formalism from MTT.
 
 The remaining execution tasks are sector-specific. To turn the scaling relations into numerical
 predictions, one must derive or constrain:
@@ -4075,15 +4171,16 @@ predictions, one must derive or constrain:
 and, for each measurement context,
 \begin{equation}
   A_{\Meas},\quad P_{\Meas},\quad \chi_{\Meas},\quad \tau_{\Meas},\quad
-  \Lambda_{ab}^{(\Meas)},\quad \{E_i^{(\Meas)}\},\quad \mathfrak B_{\Meas}.
+  \Lambda_{ab}^{(\Meas)},\quad \{E_i^{(\Meas)}\},\quad
+  \{\mathcal I_i^{(\Meas)}\},\quad \mathfrak B_{\Meas}.
 \end{equation}
 Only then does the theory produce numerical predictions for finite-width deviations,
 visibility loss, detector-resolution effects, or threshold knees.
 
-Nevertheless, the structural conclusion is already fixed. The quantum object is not forced
-to be either a wave or a particle. In MTT, both are downstream shadows of one finite coherent
-excitation, revealed differently by local probing, spectral phase evolution, and device-specific
-survivor-basin selection.
+The structural result is therefore conditional but useful: one filtered operator can support
+local and spectral representations compatible with localized and interference experiments.
+Whether both descend from one physical MTT excitation remains the selected-source theorem
+to be proved.
 
 \begin{thebibliography}{20}
 
@@ -4134,12 +4231,12 @@ MTT Delta--Projection sequence.
 
 \bibitem{MTTKernel}
 P. Nero,
-\emph{Canonical Coherent Kernels from MTT Fixed-Point Data},
+\emph{Projected Heat Kernels from MTT Fixed-Point Data},
 MTT Delta--Projection sequence.
 
 \bibitem{MTTDamping}
 P. Nero,
-\emph{Deriving the MTT Coherence Scale from Fixed-Point Damping},
+\emph{Admissibility-Time Bounds from Fixed-Point Damping},
 MTT Delta--Projection sequence.
 
 
@@ -4167,6 +4264,18 @@ Cambridge University Press.
 M. A. Nielsen and I. L. Chuang,
 \emph{Quantum Computation and Quantum Information},
 Cambridge University Press.
+
+\bibitem{DaviesLewis}
+E. B. Davies and J. T. Lewis,
+``An operational approach to quantum probability,''
+\emph{Communications in Mathematical Physics} \textbf{17} (1970), 239--260.
+\href{https://doi.org/10.1007/BF01647093}{doi:10.1007/BF01647093}.
+
+\bibitem{Ozawa}
+M. Ozawa,
+``Quantum measuring processes of continuous observables,''
+\emph{Journal of Mathematical Physics} \textbf{25} (1984), 79--87.
+\href{https://doi.org/10.1063/1.526000}{doi:10.1063/1.526000}.
 
 \bibitem{Polchinski}
 J. Polchinski,

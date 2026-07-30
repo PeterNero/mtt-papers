@@ -1,0 +1,23 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T14:02:21+00:00",
+  "mode": "sync",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21704912",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "4a91609217aa227480568090ceb89a26",
+      "local_pdf_sha256": "4a387a856a070c9d6464dcc58fe45fa5b2f11ba657eb9ffa79aeeb2449924e14",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v5"
+    }
+  ]
+}

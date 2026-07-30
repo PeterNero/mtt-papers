@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.21704911",
+      "created": "2026-07-30T14:02:29.297622+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704912",
+      "files": [
+        {
+          "checksum": "md5:4a91609217aa227480568090ceb89a26",
+          "content_url": "https://zenodo.org/api/records/21704912/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 754657
+        }
+      ],
+      "id": "21704912",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704912",
+      "resource_type": "publication",
+      "title": "A Conditional Operator Encoding of Wave-Particle Duality in MTT Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary",
+      "updated": "2026-07-30T14:02:29.640775+00:00",
+      "version": "v5"
+    },
+    {
       "concept_doi": "10.5281/zenodo.21704673",
       "created": "2026-07-30T13:44:41.894097+00:00",
       "creators": [

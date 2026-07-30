@@ -776,6 +776,14 @@
       "reviewed_main_tex_sha256": "a7609cd417a88a1a571c9c585817a4c578612259c4d41e31670678c2d831822d",
       "reviewed_pdf_sha256": "bcf5532772c2621ab1c4f02aa14f2ed0ee0acca617ea421577744a48b2a3846d",
       "reviewed_source_tree_sha256": "079ccaac51516bfdf90aef8c84b085d5473e1c1192c04a6483053ea876813025"
+    },
+    "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 5 retains the local/spectral kernel mathematics, distinguishes exact exit time from semigroup-certified time, adds quantum instruments and an exact basin-Born bridge criterion, and makes physical source selection explicit; 57-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "58bdbc6d6d2a7eebb1cab8fe154aac7969f1eacd7db3a3561b20898125d956c5",
+      "reviewed_pdf_sha256": "4a387a856a070c9d6464dcc58fe45fa5b2f11ba657eb9ffa79aeeb2449924e14",
+      "reviewed_source_tree_sha256": "239c4e20ca00359f676a877e29ef54e426fb2481595baeac3241d4b66a25bee5"
     }
   }
 }

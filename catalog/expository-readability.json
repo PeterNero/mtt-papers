@@ -7,9 +7,9 @@
     "light": 14,
     "low": 2,
     "major": 11,
-    "moderate": 6,
+    "moderate": 5,
     "reference_ready": 2,
-    "reviewed": 95
+    "reviewed": 96
   },
   "missing_dimension_counts": {
     "argument_flow": 43,
@@ -3339,12 +3339,12 @@
     },
     {
       "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
-      "title": "Wave\u2013Particle Duality as Projection Duality in Modal Triplet Theory Pointlike Delta Shadows and Wavelike Spectral Shadows of a Single Coherent Kernel",
-      "total_words": 17337,
-      "narrative_words": 12248,
-      "formal_results": 32,
+      "title": "A Conditional Operator Encoding of Wave-Particle Duality in MTT Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary",
+      "total_words": 18009,
+      "narrative_words": 12757,
+      "formal_results": 34,
       "proofs": 19,
-      "narrative_words_per_result": 382.8,
+      "narrative_words_per_result": 375.2,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -3353,11 +3353,11 @@
       "limitations": true,
       "conclusion": true,
       "coverage_dimensions": 7,
-      "audit_priority": "moderate",
+      "audit_priority": "reviewed",
       "heuristic_priority": "moderate",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "review_note": "Version 5 retains the local/spectral kernel mathematics, distinguishes exact exit time from semigroup-certified time, adds quantum instruments and an exact basin-Born bridge criterion, and makes physical source selection explicit; 57-page PDF visually inspected.",
       "missing_dimensions": []
     },
     {

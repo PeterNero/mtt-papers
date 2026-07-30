@@ -1,11 +1,12 @@
 # MTT Paper Catalog
 
-Canonical papers: **140**. Zenodo-linked papers: **137**. Current sources newer than their latest release: **0**.
+Canonical papers: **140**. Zenodo-linked papers: **138**. Current sources newer than their latest release: **0**.
 
 The list is alphabetical and intentionally has no topical grouping.
 
 | Paper | Current | Public release | Sources |
 | --- | --- | --- | --- |
+| A Conditional Operator Encoding of Wave-Particle Duality in MTT Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary | v5 | [v5](https://zenodo.org/records/21704912) | [TeX](papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex) / [Markdown](papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/paper.md) |
 | A Projection-First Reframing of Information and Computation: Distinguishability, Channels, and Conditional Undecidability | v2 | [v2](https://zenodo.org/records/21665930) | [TeX](papers/a-projection-first-reframing-of-information-computation-dab93645/main.tex) / [Markdown](papers/a-projection-first-reframing-of-information-computation-dab93645/paper.md) |
 | A Projection-First Reframing of Physics: Descent, Effective Description, and the Limits of the Analogy | v2 | [v2](https://zenodo.org/records/21665933) | [TeX](papers/a-projection-first-reframing-of-physics/main.tex) / [Markdown](papers/a-projection-first-reframing-of-physics/paper.md) |
 | A Projection-First Reframing of Quantum Gravity | v2 | [v2](https://zenodo.org/records/21665936) | [TeX](papers/a-projection-first-reframing-of-quantum-gravity/main.tex) / [Markdown](papers/a-projection-first-reframing-of-quantum-gravity/paper.md) |
@@ -140,7 +141,6 @@ The list is alphabetical and intentionally has no topical grouping.
 | Topology-Only Constraints and Forbidden Operators in Modal Triplet Theory Anomaly cancellation, hypercharge quantization, and early falsifiability from overlap bundles | v1.0 | [v1.0](https://zenodo.org/records/18261774) | [TeX](papers/topology-only-constraints-and-forbidden-operators-in-mo-90db2212/main.tex) / [Markdown](papers/topology-only-constraints-and-forbidden-operators-in-mo-90db2212/paper.md) |
 | Twistor Encodings as High Coherence Limits of Modal Triplet Theory | v1.0 | [v1.0](https://zenodo.org/records/18255155) | [TeX](papers/twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29/main.tex) / [Markdown](papers/twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29/paper.md) |
 | Universality and Robustness of the Coherent Sector in Modal Triplet Theory | v1.0 | [v1.0](https://zenodo.org/records/18260834) | [TeX](papers/universality-and-robustness-of-the-coherent-sector-in-m-a64842b3/main.tex) / [Markdown](papers/universality-and-robustness-of-the-coherent-sector-in-m-a64842b3/paper.md) |
-| Wave–Particle Duality as Projection Duality in Modal Triplet Theory Pointlike Delta Shadows and Wavelike Spectral Shadows of a Single Coherent Kernel | v4 | not matched | [TeX](papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex) / [Markdown](papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/paper.md) |
 | When Is a Configuration Physical? Rethinking the Vacuum Selection Problem | v1.0 | [v1.0](https://zenodo.org/records/18255208) | [TeX](papers/when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34/main.tex) / [Markdown](papers/when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34/paper.md) |
 | Why Decoherence Cannot Replace Measurement Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory | v2 | [v2](https://zenodo.org/records/21666019) | [TeX](papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/main.tex) / [Markdown](papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/paper.md) |
 | Why General Relativity and String Theory Are the Same Admissibility Constraint A Technical Shadow–Bridge Between IR Geometry and Worldsheet RG in Modal Triplet Theory | v1.0 | [v1.0](https://zenodo.org/records/18261980) | [TeX](papers/why-general-relativity-and-string-theory-are-the-same-a-98920533/main.tex) / [Markdown](papers/why-general-relativity-and-string-theory-are-the-same-a-98920533/paper.md) |
