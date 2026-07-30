@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T20:06:43+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21709596",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "90b3795e3e9e90f9d129be2f3aa418fd",
+      "local_pdf_sha256": "1b779c4e0d598cb78b77992ef910a7fc65ba06896a51e5d1a25f69ab07573964",
+      "paper_id": "coherence-capacity-as-the-fundamental-resource-of-effec-cd41c322",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v4"
+    }
+  ]
+}

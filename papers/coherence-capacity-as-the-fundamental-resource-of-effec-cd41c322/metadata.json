@@ -1,65 +1,93 @@
 {
-  "abstract": "We identify a single structural resource underlying effective physical descriptions: a finite coherence capacity, defined as the stability margin that allows a projection-based description to remain predictive under disturbance. We consider a general class of theories in which observable physics arises via a noninvertible projection from a higher-dimensional configuration space with invertible dynamics. Under minimal axioms, we prove that exhaustion of coherence capacity necessarily induces noninvertibility of the effective evolution, forcing irreversibility in the observable description despite invertibility of the underlying dynamics. Measurement collapse, thermalization, and black hole information loss are shown to be instances of the same admissibility transition. We further show that spatial variation of coherence capacity induces a geometric response identical in form to Einstein gravity, with Newton\u2019s constant emerging as a conversion factor between coherence capacity and curvature units. The framework is independent of any specific microscopic model; Modal Triplet Theory is cited only as a concrete realization of the axioms.",
+  "abstract": "Coherence capacity is a normalized summary of how far a declared effective construction lies from failure of one of its control conditions. This paper asks when that diagnostic can also be called a resource. The answer requires additional operational data. One must specify an allowed perturbation family, a cost, an action of perturbations on states, a composition rule, and, for a genuine resource theory, a class of free operations and a conversion preorder. Given those data, we define the control budget as the least perturbation cost that exits the admissible set. In a metric perturbation model this is exactly the distance to inadmissibility and hence the largest guaranteed open perturbation ball. We prove a cumulative-consumption theorem for normalized reserve vectors, a parallel-composition bottleneck law, and controlled transport bounds between models. These results make capacity operationally useful as a robustness budget. They also show why it is generally neither additive nor conserved: repair, feedback, redundancy, and changes of metric can alter the budget. A capacity value alone is not a probability measure, force, entropy, thermodynamic monotone, gravitational coupling, reset law, or arrow of time. Noninjectivity also does not rule out a right inverse; an orthogonal projection has the inclusion of its range as a bounded section. Any physical use therefore needs a separate action, channel, constitutive law, instrument, state count, or causal geometry. Within MTT, the normalized margin paper supplies the capacity record and the Foundation supplies the complete admissibility ledger. The present paper contributes the model-specific control-budget and resource-completion layer. It does not promote coherence capacity to a universal substance underlying all effective physics.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v3",
-  "date": "January 2026",
+  "current_version": "v4",
+  "date": "Version 4, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18255905",
-    "created": "2026-01-21T04:51:47.104673+00:00",
+    "created": "2026-07-30T20:07:06.754629+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18322036",
+    "doi": "10.5281/zenodo.21709596",
     "files": [
       {
-        "checksum": "md5:2b814bcf3d906cfd90e7bb7e6616c779",
-        "content_url": "https://zenodo.org/api/records/18322036/files/Coherence_Capacity_as_the_Fundamental_Resource_of_Effective_Physics_v3.pdf/content",
-        "key": "Coherence_Capacity_as_the_Fundamental_Resource_of_Effective_Physics_v3.pdf",
-        "size": 241496
+        "checksum": "md5:90b3795e3e9e90f9d129be2f3aa418fd",
+        "content_url": "https://zenodo.org/api/records/21709596/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 332256
       }
     ],
-    "id": "18322036",
-    "match_kind": "title_or_file",
+    "id": "21709596",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18322036",
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21709596",
     "resource_type": "publication",
-    "title": "Coherence Capacity as the Fundamental Resource of Effective Physics",
-    "updated": "2026-01-21T04:51:47.589393+00:00",
-    "version": "v3.0"
+    "title": "Coherence Capacity as a Control Budget for Effective Descriptions: Robustness, Composition, and the Limits of Resource Language",
+    "updated": "2026-07-30T20:07:07.184776+00:00",
+    "version": "v4"
   },
-  "main_tex_sha256": "a9645bdd5aa97068c0263d6ad23e16c10def6fe68b569c62d3d07cd85d2ea0f4",
+  "main_tex_sha256": "b7af07348d7463fbf17042c67a84b792eb9ab8b3c152fb9155565f27eba212b2",
   "paper_id": "coherence-capacity-as-the-fundamental-resource-of-effec-cd41c322",
-  "paper_md_sha256": "6f491b5a9b26eb328e9efa183b0fea4d669ed485e46d86ff3e718e44a3eec116",
+  "paper_md_sha256": "98add82f1076323668dbacb3c909c9863a2c7bfa337822b22606c317032e999f",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/coherence-capacity-as-the-fundamental-resource-of-effec-cd41c322/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "270a6fd6b7f15385cf079f5ebf2078a2064e1e79cc50a7af1679ddfce8d91052",
+    "selected_revision": true,
+    "superseded_source_path": "14 Coherence Capacity Program/_work/Coherence_Capacity_as_the_Fundamental_Resource_of_Effective_Physics_v3"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 15388,
-      "path": "main.tex",
-      "sha256": "a9645bdd5aa97068c0263d6ad23e16c10def6fe68b569c62d3d07cd85d2ea0f4"
+      "bytes": 2663,
+      "path": "main.bib",
+      "sha256": "41e3e8b03ffac4e052250b9e2940364952221fbf33bbc661f91435edf6f6266e"
     },
     {
-      "bytes": 3784,
-      "path": "series.sty",
-      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+      "bytes": 30312,
+      "path": "main.tex",
+      "sha256": "b7af07348d7463fbf17042c67a84b792eb9ab8b3c152fb9155565f27eba212b2"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Coherence_Capacity_as_the_Fundamental_Resource_of_Effective_Physics_v3"
   },
-  "source_tree_sha256": "dca5bab3b74ed00a58eae04664de15e113db3810ac12a247170eb21abb93b889",
-  "title": "Coherence Capacity as the Fundamental Resource of Effective Physics",
+  "source_tree_sha256": "dccd636b41afa1c0e7de73de2d1be9c28b8d556adacc7165ad7b1cd207113a0c",
+  "title": "Coherence Capacity as a Control Budget for Effective Descriptions: Robustness, Composition, and the Limits of Resource Language",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255905",
+      "created": "2026-07-30T20:07:06.754629+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21709596",
+      "files": [
+        {
+          "checksum": "md5:90b3795e3e9e90f9d129be2f3aa418fd",
+          "content_url": "https://zenodo.org/api/records/21709596/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 332256
+        }
+      ],
+      "id": "21709596",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21709596",
+      "resource_type": "publication",
+      "title": "Coherence Capacity as a Control Budget for Effective Descriptions: Robustness, Composition, and the Limits of Resource Language",
+      "updated": "2026-07-30T20:07:07.184776+00:00",
+      "version": "v4"
+    },
     {
       "concept_doi": "10.5281/zenodo.18255905",
       "created": "2026-01-21T04:51:47.104673+00:00",

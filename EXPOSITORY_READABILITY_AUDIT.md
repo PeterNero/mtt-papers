@@ -11,21 +11,21 @@ Canonical papers audited: **139**.
 | Priority | Papers |
 | --- | ---: |
 | critical | 8 |
-| major | 8 |
+| major | 7 |
 | moderate | 4 |
 | light | 10 |
 | low | 1 |
-| reviewed | 106 |
+| reviewed | 107 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 37 |
+| argument_flow | 36 |
 | conclusion | 12 |
-| concrete_foothold | 41 |
-| object_intuition | 90 |
+| concrete_foothold | 40 |
+| object_intuition | 89 |
 | orientation | 44 |
 | result_interpretation | 12 |
 
@@ -43,7 +43,6 @@ Canonical papers audited: **139**.
 | critical | critical | `topology-only-constraints-and-forbidden-operators-in-mo-90db2212` | 12 | 116.0 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | major | major | `projection-limited-coherence-a-structural-theory-of-eff-3343fe62` | 32 | 168.6 | 7/7 | - |
 | major | major | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 15 | 210.5 | 7/7 | - |
-| major | major | `coherence-capacity-as-the-fundamental-resource-of-effec-cd41c322` | 11 | 140.5 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | major | major | `horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71` | 11 | 102.7 | 5/7 | object_intuition, concrete_foothold |
 | major | major | `quantum-field-theory-reconstruction-from-coherence-basi-ef12097a` | 11 | 107.5 | 5/7 | object_intuition, concrete_foothold |
 | major | major | `particles-and-forces-as-coherence-basins-and-capacity-gradients` | 10 | 124.0 | 5/7 | object_intuition, concrete_foothold |
@@ -78,6 +77,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707` | 15 | 189.0 | 6/7 | object_intuition |
 | reviewed | critical | `canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62` | 14 | 110.1 | 6/7 | object_intuition |
 | reviewed | major | `the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2` | 14 | 150.4 | 7/7 | - |
+| reviewed | critical | `coherence-capacity-as-the-fundamental-resource-of-effec-cd41c322` | 13 | 147.2 | 7/7 | - |
 | reviewed | major | `coherence-capacity-as-the-invariant-admissibility-margi-423433d4` | 13 | 182.3 | 7/7 | - |
 | reviewed | critical | `gravitationally-induced-collapse-as-an-effective-limit-d74eb471` | 13 | 149.1 | 4/7 | orientation, object_intuition, result_interpretation |
 | reviewed | major | `theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f` | 13 | 249.2 | 7/7 | - |

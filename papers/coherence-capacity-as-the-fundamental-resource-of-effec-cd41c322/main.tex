@@ -1,335 +1,878 @@
 \documentclass[11pt]{article}
-\usepackage{series}
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{geometry}
-\usepackage{hyperref}
 
-\geometry{margin=1in}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
 
-\title{\textbf{Coherence Capacity as the Fundamental Resource of Effective Physics}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\cY}{\mathcal Y}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\MTT}{Modal Triplet Theory}
+
+\title{\vspace{-1em}
+Coherence Capacity as a Control Budget\\
+for Effective Descriptions:\\[0.25em]
+\large Robustness, Composition, and the Limits of Resource Language}
 \author{Peter Nero}
-\date{January 2026}
+\date{Version 4, July 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We identify a single structural resource underlying effective physical descriptions: a finite \emph{coherence capacity}, defined as the stability margin that allows a projection-based description to remain predictive under disturbance. We consider a general class of theories in which observable physics arises via a noninvertible projection from a higher-dimensional configuration space with invertible dynamics. Under minimal axioms, we prove that exhaustion of coherence capacity necessarily induces noninvertibility of the effective evolution, forcing irreversibility in the observable description despite invertibility of the underlying dynamics. Measurement collapse, thermalization, and black hole information loss are shown to be instances of the same admissibility transition. We further show that spatial variation of coherence capacity induces a geometric response identical in form to Einstein gravity, with Newton's constant emerging as a conversion factor between coherence capacity and curvature units. The framework is independent of any specific microscopic model; Modal Triplet Theory is cited only as a concrete realization of the axioms.
+Coherence capacity is a normalized summary of how far a declared effective
+construction lies from failure of one of its control conditions.  This paper
+asks when that diagnostic can also be called a \emph{resource}.  The answer
+requires additional operational data.  One must specify an allowed
+perturbation family, a cost, an action of perturbations on states, a
+composition rule, and, for a genuine resource theory, a class of free
+operations and a conversion preorder.
+
+Given those data, we define the control budget as the least perturbation
+cost that exits the admissible set.  In a metric perturbation model this is
+exactly the distance to inadmissibility and hence the largest guaranteed
+open perturbation ball.  We prove a cumulative-consumption theorem for
+normalized reserve vectors, a parallel-composition bottleneck law, and
+controlled transport bounds between models.  These results make capacity
+operationally useful as a robustness budget.  They also show why it is
+generally neither additive nor conserved: repair, feedback, redundancy, and
+changes of metric can alter the budget.
+
+A capacity value alone is not a probability measure, force, entropy,
+thermodynamic monotone, gravitational coupling, reset law, or arrow of time.
+Noninjectivity also does not rule out a right inverse; an orthogonal
+projection has the inclusion of its range as a bounded section.  Any
+physical use therefore needs a separate action, channel, constitutive law,
+instrument, state count, or causal geometry.  Within MTT, the normalized
+margin paper supplies the capacity record and the Foundation supplies the
+complete admissibility ledger.  The present paper contributes the
+model-specific control-budget and resource-completion layer.  It does not
+promote coherence capacity to a universal substance underlying all
+effective physics.
 \end{abstract}
 
-\section{Introduction}
+\section*{Revision note: Version 4}
+\addcontentsline{toc}{section}{Revision note: Version 4}
+\begin{description}[leftmargin=2.5cm,style=nextline]
+\item[Supersedes]
+Version 4 supersedes Version 3.0, DOI
+\href{https://doi.org/10.5281/zenodo.18322036}
+{10.5281/zenodo.18322036}.
 
-Modern physics is built from effective descriptions: quantum mechanics, quantum field theory, and general relativity each apply only within domains where their assumptions remain valid. Outside those domains, familiar laws break down. Measurement yields irreversible outcomes, thermalization erases memory, and black holes appear to destroy information. These phenomena are usually treated as distinct puzzles.
+\item[Reason]
+Version 3 called an arbitrary positive margin the fundamental resource of
+effective physics.  It then used the same scalar to infer a missing right
+inverse, irreversible shadow dynamics, gravity, time, entropy, measurement
+collapse, horizons, thermalization, and undecidability.  None of those
+conclusions follows from a zero set or stability margin alone.
 
-In this work we argue that they share a single structural origin: the exhaustion of a finite \emph{coherence capacity}, the margin that allows a projection-based effective description to remain stable.
+\item[Resolution]
+The title and central theorem have been replaced.  Capacity becomes an
+operational control budget only after a perturbation class and cost are
+specified.  A full resource interpretation additionally requires free
+operations, composition, and conversion rules.  The paper proves
+robust-radius, cumulative-consumption, composition, and transport results,
+while assigning probability, force, entropy, gravity, and continuation laws
+to separate source theorems.
 
-We do not modify fundamental dynamics, introduce new degrees of freedom, or postulate stochastic collapse. Instead, we analyze the unavoidable consequences of describing physics via noninvertible projection from a higher-dimensional configuration space. Our results apply to any theory satisfying a small set of axioms stated explicitly below.
+\item[Retained content]
+The physically useful intuition survives: a controlled effective
+description has a finite tolerance to disturbance, and its weakest reserve
+can organize robustness calculations.
 
-\paragraph{Scope.}
-This paper establishes \emph{inevitability results}, not existence results. We do not prove that a theory satisfying the axioms exists; rather, we show what must follow if it does. Modal Triplet Theory provides one explicit realization, but no use is made of its specific constructions.
-
-\section{Levels of Description}
-
-We distinguish three levels.
-
-\subsection{Upstairs configuration space}
-
-Let $(X,\mathcal{B})$ be a standard measurable space representing the full configuration space of a physical system. We assume:
-
-\begin{itemize}
-\item A deterministic, invertible evolution $\Phi : X \to X$ (or a flow $\Phi_t$).
-\item No fundamental time parameter; $\Phi$ provides only an ordering of configurations.
-\end{itemize}
-
-\subsection{Projection and observables}
-
-Observable physics is defined via a measurable projection
-\[
-P : X \to Y,
-\]
-where $Y$ is the space of effective (observable) states. The projection is generally noninjective.
-
-\subsection{Effective shadow}
-
-The induced observable evolution is
-\[
-T := P \circ \Phi : X \to Y.
-\]
-All effective laws (dynamics, geometry, probabilities) refer to this shadow level.
-
-\section{Core Definitions}
-
-This section fixes the primitive objects used throughout the paper.
-All subsequent results depend only on these definitions and the axioms
-already stated.
-
-\subsection{Coherence Capacity}
-
-\begin{definition}[Upstairs coherence capacity]
-Let $x\in X$. The upstairs coherence capacity $\mathcal C_X(x)$ is defined
-as the maximal disturbance amplitude for which the projection-based
-description remains stable in a neighborhood of $x$.
-\end{definition}
-
-\begin{definition}[Effective coherence capacity]
-For $y\in Y$, define the effective coherence capacity
-\[
-\mathcal C_Y(y) := \inf_{x\in P^{-1}(y)} \mathcal C_X(x).
-\]
-When an effective spacetime description exists, we write $\mathcal C(x^\mu)$
-for $\mathcal C_Y(y(x^\mu))$.
-\end{definition}
-
-Thus coherence capacity is fundamentally defined on $X$ and pushed forward
-to the effective description. All statements of $\mathcal C>0$ refer to the
-effective capacity unless stated otherwise.
-
-\paragraph{Capacity as a collected invariant.}
-Coherence capacity is not a primitive postulate of the framework. It is a unifying name for a
-collection of structural constraints that must hold simultaneously for a projection-based
-effective description to remain admissible. These include bounded projector regularity,
-spectral separation, finite truncation error, and dynamical stability margins. Any scalar
-functional that vanishes precisely when these constraints fail may serve as a capacity
-parameter. The results of this paper are therefore invariant under redefinitions of $C$
-that preserve its zero set and positivity domain.
-
-\subsection{Admissibility}
-
-\begin{definition}[Admissible region]
-A region $A\subset X$ is admissible if and only if:
-\begin{itemize}
-\item the projection $P$ is well-defined and regular on $A$,
-\item truncation or coarse-graining errors remain below fixed tolerance,
-\item the induced effective dynamics is contractive on $P(A)$.
-\end{itemize}
-\end{definition}
-
-Equivalently, admissibility holds precisely where $\mathcal C_X(x)>0$.
-
-\subsection{Coherence Basins}
-
-\begin{definition}[Coherence basin]
-A coherence basin $B_\alpha\subset Y$ is a forward-invariant subset of
-effective state space such that there exists $0<\lambda<1$ with
-\[
-\|T(y_1)-T(y_2)\|\le\lambda\|y_1-y_2\| \quad \forall y_1,y_2\in B_\alpha.
-\]
-\end{definition}
-
-Coherence basins are stable regions of effective description; disturbances
-within a basin are damped rather than amplified.
-
-
-\section{Axioms}
-
-We now state the axioms required for all subsequent results.
-
-\begin{description}
-\item[Axiom A1 (Invertible fundamental dynamics).]  
-The upstairs evolution $\Phi$ is invertible.
-
-\item[Axiom A2 (Noninjective projection).]  
-The observable map $P$ is noninjective on $X$.
-
-\item[Axiom A3 (Admissible domain).]  
-There exists a subset $A \subset X$ on which the projection-based description is stable and predictive. Outside $A$, the effective description ceases to be valid.
-
-\item[Axiom A4 (Finite stability margin).]  
-Stability of the effective description on $A$ is controlled by a finite margin that can be exhausted under disturbance.
+\item[Remaining boundary]
+MTT does not yet select one universal perturbation metric, cost, free
+operation class, or conservation law for every encoding.  This paper
+therefore establishes a reusable conditional framework, not a universal
+physical resource theory.
 \end{description}
 
-No further structure is assumed.
-\paragraph{Scope clarification.}
-This paper does not establish the existence of a physical theory satisfying
-Axioms A1--A4. Rather, it establishes structural consequences that follow
-if such a theory exists. No claim is made that coherence capacity is unique
-or fundamental in all possible formulations; the results apply to any
-projection-based effective description with finite stability margins.
+\tableofcontents
 
-\section{Coherence Capacity}
+\section{Introduction and roadmap}
+\label{sec:intro}
 
-\subsection{Definition}
+The word \emph{resource} has several meanings in physics and mathematics.
+Energy is a conserved or exchanged dynamical quantity.  Entanglement is a
+resource only relative to a specified class of free operations.  A robust
+control margin is a budget because it measures the smallest allowed
+perturbation that destroys stability.  These meanings cannot be exchanged
+by analogy.
 
-\begin{definition}[Coherence capacity]
-Let $x \in A$. The \emph{coherence capacity} $\mathcal{C}(x)$ is a nonnegative scalar functional measuring the maximal disturbance amplitude that preserves validity of the effective description near $x$.
-\end{definition}
+The corrected capacity paper defines a sourced, dimensionless reserve
+vector, a bottleneck scalar, and a metric distance to inadmissibility
+\cite{CapacityMargin2026}.  The MTT Foundation owns the complete ledger of
+conditions being summarized \cite{MTTFoundation2026}.  Those constructions
+answer:
+\begin{quote}
+How close is this declared effective description to failure?
+\end{quote}
+This paper addresses the next question:
+\begin{quote}
+Under what additional assumptions does that clearance become a usable
+control budget or a resource monotone?
+\end{quote}
 
-Operationally, $\mathcal{C}(x) > 0$ means the projection $P$ remains stable and predictive; $\mathcal{C}(x) = 0$ marks the boundary of admissibility.
-\paragraph{Interpretive clarification.}
-Coherence capacity is not introduced here as a new dynamical field, degree of freedom, or
-fundamental scalar quantity. Writing $C(x)$ reflects the spatial dependence of the
-\emph{admissibility margin} in regimes where an effective spacetime description exists and a
-derivative expansion is meaningful. The capacity field is therefore a descriptive encoding of
-how boundedness, spectral separation, and stability margins vary across an effective
-description, not an additional component of the microscopic dynamics.
+The answer is deliberately layered.
+\begin{enumerate}[leftmargin=2em]
+\item Section~\ref{sec:levels} distinguishes a diagnostic margin, an
+      operational budget, a resource theory, and a physical field or charge.
+\item Sections~\ref{sec:budget}--\ref{sec:composition} define perturbation
+      budgets and prove their robustness, consumption, and composition
+      properties.
+\item Section~\ref{sec:resource} states what is still required for a genuine
+      resource theory.
+\item Section~\ref{sec:examples} gives concrete operator and algorithmic
+      examples.
+\item Section~\ref{sec:limits} identifies the former deductions that do not
+      follow.
+\item Sections~\ref{sec:mtt}--\ref{sec:contract} locate the framework within
+      MTT and give a falsifiable completion contract.
+\end{enumerate}
 
+\section{Four levels that must not be conflated}
+\label{sec:levels}
 
-\subsection{Basic properties}
-
-\begin{lemma}
-$\mathcal{C}(x) > 0$ for all $x \in A$.
-\end{lemma}
-
-\begin{lemma}
-If $x_n \to x$ with $x_n \in A$ and $x \notin A$, then $\mathcal{C}(x_n) \to 0$.
-\end{lemma}
-
-\section{Projection Noninvertibility Theorem}
-
-We now state the central result.
-
-\begin{definition}
-The shadow evolution $T$ is \emph{globally invertible} if there exists a measurable map $S : Y \to X$ such that
+\begin{definition}[Diagnostic capacity]
+A diagnostic capacity record consists of normalized signed slacks
 \[
-T \circ S = \mathrm{Id}_Y.
+ r(x)=\bigl(r_i(x)\bigr)_{i\in\cI}
+\]
+for a finite list of sourced admissibility conditions.  Its signed
+bottleneck and clipped scalar are
+\[
+ D(x)=\min_i r_i(x),
+ \qquad
+ C(x)=\min\{1,\max\{0,D(x)\}\}.
 \]
 \end{definition}
 
-\begin{theorem}[Coherence Capacity Collapse Implies Shadow Noninvertibility]
-Assume Axioms A1--A4. If a trajectory $\{x, \Phi(x), \Phi^2(x), \dots\}$ crosses a point where $\mathcal{C}=0$, then the induced shadow evolution $T$ admits no global measurable right inverse.
+This level says which certificate is closest to failure.  It is defined by
+the normalized-margin paper \cite{CapacityMargin2026}.  A value of
+\(C=0.2\) has no operational meaning until the normalization and
+perturbations are stated.
+
+\begin{definition}[Operational control budget]
+An operational control budget specifies what disturbances are allowed, how
+they act, and how much they cost.  Its value at \(x\) is the least cost of a
+disturbance that takes \(x\) outside the declared admissible set.
+\end{definition}
+
+This is analogous to a stability radius in robust control, where distance
+to instability is defined relative to a structured perturbation class
+\cite{HinrichsenPritchard1986}.  Different uncertainty structures can give
+different radii for the same unperturbed system.
+
+\begin{definition}[Resource theory]
+A resource theory specifies objects, allowed compositions, a distinguished
+class of free objects or free operations, and a conversion preorder.  A
+resource monotone is a function whose allowed direction under free
+operations is fixed by that theory.
+\end{definition}
+
+This usage follows the general mathematical theory of resources
+\cite{CoeckeFritzSpekkens2016}.  Quantum resource theories likewise begin
+with operational restrictions rather than with a scalar alone
+\cite{ChitambarGour2019}.
+
+\begin{definition}[Dynamical or physical resource]
+A dynamical resource is a quantity entering a supplied action, Hamiltonian,
+continuity equation, balance law, channel capacity, or constitutive
+relation.  Its units, exchange law, sources, and observables are part of the
+model.
+\end{definition}
+
+The implications run only downward after extra data are supplied.  A
+diagnostic margin can become an operational budget.  A budget can be placed
+inside a resource theory.  A resource monotone can enter a physical model.
+None of those promotions is automatic.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}L{0.23\textwidth}Y Y@{}}
+\toprule
+Level & Required data & What is not yet supplied \\
+\midrule
+Diagnostic margin
+& Slacks, units, scales, norms, tolerances, provenance
+& Perturbation meaning and cost\\
+
+Operational budget
+& Allowed perturbations, action, cost, failure set
+& Free operations and conversion order\\
+
+Resource theory
+& Objects, free operations, composition, monotones
+& A physical conservation or exchange law\\
+
+Physical resource
+& Action or constitutive law, units, sources, observables
+& Nothing further only if the complete physical model is supplied\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Perturbation models and the robust budget}
+\label{sec:budget}
+
+\begin{definition}[Perturbation model]
+\label{def:perturbation}
+A perturbation model is a tuple
+\[
+ \cR_{\rm ctrl}
+ =
+ \bigl(
+ \cX,\cA,\cP,\odot,c,\cD,\pi
+ \bigr),
+\]
+where:
+\begin{enumerate}[leftmargin=2.2em]
+\item \(\cX\) is the state-and-control space and
+      \(\cA\subseteq\cX\) the declared admissible set;
+\item \(\cP_x\) is the set of perturbations allowed at \(x\);
+\item \(p\odot x\) is the perturbed state when defined;
+\item \(c_x(p)\in[0,\infty]\) is its cost;
+\item \(\cD\) records domains, regularity, and composition conventions; and
+\item \(\pi\) records the source and units of all these choices.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}[Exit budget]
+\label{def:exitbudget}
+For \(x\in\cA\), define
+\[
+ B_{\cR}(x)
+ =
+ \inf\bigl\{
+ c_x(p):p\in\cP_x,\ p\odot x\notin\cA
+ \bigr\}.
+\]
+If no allowed perturbation exits \(\cA\), set \(B_{\cR}(x)=+\infty\).
+\end{definition}
+
+The budget is relative to \(\cP\) and \(c\).  Restricting perturbations can
+increase it; changing the cost units rescales it.  These are not defects.
+They are why the perturbation model belongs in every statement.
+
+\subsection{Metric perturbations}
+
+Suppose \((\cX,d)\) is a metric space, every \(y\in\cX\) can be treated as
+the endpoint of an allowed perturbation from \(x\), and its cost is
+\(c_x(y)=d(x,y)\).  Then Definition~\ref{def:exitbudget} becomes
+\[
+ B_d(x)=\dist_d(x,\cX\setminus\cA).
+\]
+
+\begin{theorem}[Maximal guaranteed perturbation ball]
+\label{thm:ball}
+Let \(\cA\) be open in \((\cX,d)\), and let \(x\in\cA\).  Then:
+\begin{enumerate}[leftmargin=2em]
+\item every \(y\) with \(d(x,y)<B_d(x)\) lies in \(\cA\);
+\item for every \(\varepsilon>0\), there exists
+      \(z\in\cX\setminus\cA\) with
+      \(d(x,z)<B_d(x)+\varepsilon\), unless the complement is empty.
+\end{enumerate}
+Thus \(B_d(x)\) is exactly the supremal radius of an open metric ball around
+\(x\) guaranteed to remain admissible.
 \end{theorem}
 
 \begin{proof}
-At a point where $\mathcal{C}=0$, the projection $P$ identifies distinct configurations $x_1 \neq x_2$ in $X$ with the same image in $Y$, and stability of the effective description fails. Since $\Phi$ is invertible, $\Phi(x_1)$ and $\Phi(x_2)$ remain distinct. Any putative inverse $S$ would be required to select a unique preimage for identical shadow states, which is impossible on a set of nonzero measure. Hence no global right inverse exists.
+If \(d(x,y)<B_d(x)\) and \(y\notin\cA\), then \(y\) belongs to the set over
+which the defining infimum is taken, contradicting
+\(B_d(x)\le d(x,y)\).  The second statement is the defining approximation
+property of an infimum.
 \end{proof}
 
-\begin{corollary}
-Irreversibility in the effective description is unavoidable once coherence capacity is exhausted, even though the fundamental dynamics remains invertible.
-\end{corollary}
+This theorem supplies a precise sense in which capacity is a resource:
+it is a tolerance budget for a declared class of perturbations.  It does
+not say that the budget is carried by a new physical field.
 
-\section{Gravity as the Geometric Bookkeeping of Coherence Capacity}
+\subsection{Controlled transport between equivalent models}
 
-Within an admissible regime, the effective description admits a local
-four-dimensional geometric representation. The role of geometry in this
-framework is not to mediate forces, but to encode where and how a
-projection-based description remains stable.
+A coordinate or representation change need not preserve a numerical budget
+exactly.  It does preserve the budget up to explicit constants when the
+change controls distances in both directions.
 
-The central observation is that coherence capacity may vary across the
-effective description. Such variation must be tracked consistently and
-locally. The only available structure capable of doing this—while
-preserving locality and diffeomorphism invariance—is geometry.
-
-Accordingly, coherence capacity enters the effective action as a
-curvature stiffness. The minimal local, diffeomorphism-invariant action
-consistent with this interpretation is
+\begin{theorem}[Bi-Lipschitz transport of exit budgets]
+\label{thm:transport}
+Let \((\cX,d_X)\) and \((\cY,d_Y)\) be metric spaces with admissible sets
+\(\cA_X\subseteq\cX\) and \(\cA_Y\subseteq\cY\).  Suppose
+\(F:\cX\to\cY\) is a bijection satisfying
 \[
-S_{\mathrm{eff}} = \int \sqrt{-g}\,\frac{\mathcal C(x)}{16\pi} R
-+ \mathcal L_m + \mathcal O(R^2).
+ F(\cA_X)=\cA_Y
 \]
-
-Varying with respect to the metric yields
+and, for constants \(0<m\le M<\infty\),
 \[
-\mathcal C\,G_{\mu\nu}
-+ (g_{\mu\nu}\Box - \nabla_\mu\nabla_\nu)\mathcal C
-= 8\pi T_{\mu\nu} + \cdots.
+ m\,d_X(x,z)
+ \le
+ d_Y(Fx,Fz)
+ \le
+ M\,d_X(x,z)
+ \qquad(x,z\in\cX).
 \]
-
-This equation should not be read as introducing a new gravitational
-degree of freedom. Rather, it states that geometry is the bookkeeping
-device that tracks how much coherence capacity remains available to
-support a spacetime description. When $\mathcal C$ is constant, Einstein
-gravity is recovered with
+Then the metric exit budgets obey
 \[
-G_{\mathrm{eff}} = \frac{1}{\mathcal C}.
+ m\,B_X(x)
+ \le
+ B_Y(Fx)
+ \le
+ M\,B_X(x)
+ \qquad(x\in\cA_X).
 \]
+\end{theorem}
 
-Gravity is therefore not fundamental interaction but the structural
-response of the effective description to capacity gradients. This statement concerns the effective description only and does not assert that microscopic
-gravitational dynamics are generated by capacity.
+\begin{proof}
+Bijectivity and \(F(\cA_X)=\cA_Y\) imply
+\(F(\cX\setminus\cA_X)=\cY\setminus\cA_Y\).  Therefore
+\[
+ B_Y(Fx)
+ =
+ \inf_{z\notin\cA_X}d_Y(Fx,Fz).
+\]
+Applying the two metric-comparison inequalities inside the infimum gives
+the result.
+\end{proof}
 
+Exact invariance is the special case \(m=M=1\).  A one-sided Lipschitz map,
+a nonbijective projection, or a map that does not carry the complete
+failure set to the complete failure set does not satisfy this theorem.
+Those cases require their own decoder or quotient analysis.
 
-\section{Emergence of Time and the Arrow of Irreversibility}
+\subsection{Connecting the budget to normalized margins}
 
-The upstairs dynamics admits no fundamental time parameter. It provides
-only an ordering of configurations. The notion of time arises only at the
-level of effective description, where successive admissible projections
-can be parametrized.
+Let \(D(x)=\min_i r_i(x)>0\) be a normalized bottleneck.  Suppose the margin
+map is \(L\)-Lipschitz in the sup norm:
+\[
+ \|r(y)-r(x)\|_\infty\le Ld(x,y).
+\]
+Then the perturbation proposition in the capacity paper gives
+\[
+ B_d(x)\ge\frac{D(x)}{L}.
+\]
+The margin value is therefore a certified \emph{lower bound} on the true
+metric exit budget.  Equality needs an active perturbation reaching the
+boundary at that cost.  It cannot be inferred from Lipschitz continuity
+alone.
 
-Within a single admissible basin, projection remains invertible and the
-effective evolution may be reversed. In this regime, time behaves as a
-coordinate parametrizing reversible ordering.
+\section{Cumulative consumption and repair}
+\label{sec:consumption}
 
-Irreversibility enters only at admissibility barriers. When coherence
-capacity collapses ($\mathcal C \to 0$), the effective description must be
-reset to a new admissible basin. The shadow evolution becomes
-noninvertible, and no effective inverse exists.
+An operational budget becomes especially useful for sequences of
+controlled transformations.
 
-\begin{definition}[Arrow of time]
-The arrow of time is defined as the ordering induced by the sequence of
-coherence capacity exhaustion events.
+\begin{assumption}[Rowwise consumption bound]
+\label{ass:consumption}
+Let \(x_0,x_1,\ldots,x_N\in\cX\), and let
+\(r_i(x)\) be normalized signed reserves.  For every step \(k\), suppose a
+nonnegative consumption vector
+\[
+ a^{(k)}=\bigl(a_i^{(k)}\bigr)_{i\in\cI}
+\]
+is certified such that
+\[
+ r_i(x_{k+1})
+ \ge
+ r_i(x_k)-a_i^{(k)}
+ \qquad
+ \text{for all }i.
+\]
+\end{assumption}
+
+\begin{theorem}[Cumulative budget certificate]
+\label{thm:cumulative}
+Under Assumption~\ref{ass:consumption},
+\[
+ r_i(x_N)
+ \ge
+ r_i(x_0)-\sum_{k=0}^{N-1}a_i^{(k)}
+ \qquad
+ \text{for every }i.
+\]
+Hence the complete sequence remains admissible whenever
+\[
+ \sum_{k=0}^{N-1}a_i^{(k)}<r_i(x_0)
+ \qquad
+ \text{for every }i.
+\]
+A simpler sufficient condition is
+\[
+ \sum_{k=0}^{N-1}\|a^{(k)}\|_\infty<D(x_0).
+\]
+\end{theorem}
+
+\begin{proof}
+Iterating the rowwise inequality gives the first display.  If each final
+lower bound is positive, every final reserve is positive.  For the scalar
+condition,
+\[
+ \sum_k a_i^{(k)}
+ \le
+ \sum_k\|a^{(k)}\|_\infty
+ <
+ D(x_0)
+ \le r_i(x_0)
+\]
+for every row \(i\).
+\end{proof}
+
+The vector condition is sharper than the scalar one because different
+operations may consume different rows.  An operation that spends spectral
+gap need not spend the same amount of truncation reserve.
+
+\subsection{Repair and feedback}
+
+The inequality in Assumption~\ref{ass:consumption} is one-sided.  A repair
+or feedback operation can increase some \(r_i\).  Redundancy can move the
+effective state farther from a failure set.  Re-estimating an operator in a
+better norm can improve a certified lower bound without changing the
+physical state.
+
+Therefore capacity is not generally conserved.  A balance equation would
+need to distinguish:
+\[
+ \text{consumption},\qquad
+ \text{repair},\qquad
+ \text{exchange},\qquad
+ \text{reclassification}.
+\]
+The capacity definition supplies none of those rates.
+
+\section{Composition laws}
+\label{sec:composition}
+
+Resource language is incomplete without composition.  Even in the simplest
+independent case, the natural law is a bottleneck rather than a sum.
+
+\begin{theorem}[Independent parallel bottleneck]
+\label{thm:parallel}
+Let \((\cX_A,d_A)\) and \((\cX_B,d_B)\) have open admissible sets
+\(\cA_A\) and \(\cA_B\).  Equip
+\(\cX_A\times\cX_B\) with the max-product metric
+\[
+ d_\infty\bigl((x_A,x_B),(y_A,y_B)\bigr)
+ =
+ \max\{d_A(x_A,y_A),d_B(x_B,y_B)\},
+\]
+and let the product admissible set be
+\(\cA_A\times\cA_B\).  Then
+\[
+ B_\infty(x_A,x_B)
+ =
+ \min\{B_A(x_A),B_B(x_B)\}.
+\]
+\end{theorem}
+
+\begin{proof}
+The complement of the product admissible set is
+\[
+ \bigl((\cX_A\setminus\cA_A)\times\cX_B\bigr)
+ \cup
+ \bigl(\cX_A\times(\cX_B\setminus\cA_B)\bigr).
+\]
+The distance to the first set is \(B_A(x_A)\), because the second coordinate
+may remain fixed; the distance to the second is \(B_B(x_B)\).  Distance to
+their union is the minimum of the two distances.
+\end{proof}
+
+Parallel capacity is therefore limited by the weaker subsystem.  This is
+not an extensive thermodynamic law.
+
+\subsection{Coupled and redundant systems}
+
+If the admissible set is not a Cartesian product, Theorem~\ref{thm:parallel}
+does not apply.  Coupling can introduce new joint failure surfaces.
+Conversely, an error-correcting code can make the logical admissible set
+larger than the naive product.  A legitimate composition theorem must
+specify:
+\begin{enumerate}[leftmargin=2em]
+\item the joint state space and metric;
+\item the joint admissible set;
+\item correlations in the perturbation family;
+\item encoding and decoding maps;
+\item resources consumed by repair; and
+\item whether the reported budget is component, logical, or end-to-end.
+\end{enumerate}
+
+There is no universal formula \(B_{AB}=B_A+B_B\).  Additivity, subadditivity,
+or superadditivity is a model result.
+
+\section{When does this become a resource theory?}
+\label{sec:resource}
+
+Let \(\cS\) be a class of states and \(\cF\) a class of operations closed
+under identity and composition.  Define a convertibility preorder by
+\[
+ x\succeq_{\cF} y
+ \quad\Longleftrightarrow\quad
+ y=F(x)\text{ for some }F\in\cF.
+\]
+A conventional resource monotone \(M\) satisfies
+\[
+ M(F(x))\le M(x)
+ \qquad(F\in\cF).
+\]
+Whether larger or smaller numerical values mean ``more resource'' is a
+convention, but the allowed direction must be consistent.
+
+\begin{proposition}[Capacity is not automatically a monotone]
+\label{prop:notmonotone}
+An exit budget \(B\) need not be monotone under an arbitrary admissibility-
+preserving operation.  In particular, a repair operation can map \(x\) to a
+state \(F(x)\) with \(B(F(x))>B(x)\), while a degrading operation can produce
+\(B(F(x))<B(x)\).
+\end{proposition}
+
+\begin{proof}
+Take \(\cX=\mathbb R\), \(\cA=(-1,1)\), and
+\(B(x)=1-|x|\).  On the admissible subdomain \((0,1)\), the map
+\(F_{\rm repair}(x)=x/2\) satisfies
+\[
+ B(F_{\rm repair}(x))=1-\frac{x}{2}>1-x=B(x),
+\]
+whereas \(F_{\rm degrade}(x)=(x+1)/2\) satisfies
+\[
+ B(F_{\rm degrade}(x))
+ =
+ \frac{1-x}{2}
+ <
+ 1-x
+ =
+ B(x).
+\]
+Both maps take \((0,1)\) into \((0,1)\).
+\end{proof}
+
+The example is elementary, but the lesson is general.  If repair is free,
+capacity can be created for free and is not a resource monotone in the usual
+direction.  If repair consumes ancillas, work, communication, or control
+authority, those inputs must be included in the resource ledger.
+
+\subsection{A valid model-specific monotone}
+
+One can still define a resource theory by choosing free operations that
+obey a declared comparison.  For example, suppose every \(F\in\cF\) has a
+certified constant \(\alpha_F>0\) such that
+\[
+ B(F(x))\ge\alpha_F B(x).
+\]
+This is a robustness-preservation guarantee, not a monotonicity theorem.
+Alternatively, choose operations satisfying \(B(F(x))\le B(x)\) and use
+\(B\) as a consumable monotone.  The choice depends on the operational task.
+
+\begin{definition}[Capacity-resource completion]
+A capacity record is promoted to a capacity resource theory only when the
+following are supplied:
+\[
+ \bigl(
+ \cS,\cF,\otimes,\succeq_{\cF},
+ B,\text{conversion rates},\text{catalysts},
+ \text{error convention}
+ \bigr).
+\]
 \end{definition}
 
-This arrow is structural, not statistical. It does not require entropy
-maximization or probabilistic assumptions. Entropy increase is a
-consequence of capacity loss, not its cause.
+This is the same discipline used in established resource theories: the
+restriction on operations gives the resource its meaning
+\cite{CoeckeFritzSpekkens2016,ChitambarGour2019}.
 
-\section{Measurement, Black Holes, and Thermalization as a Single Mechanism}
+\section{Concrete conditional examples}
+\label{sec:examples}
 
-We now show that three traditionally distinct phenomena—measurement
-collapse, black hole information loss, and thermalization—are instances
-of the same structural transition.
+\subsection{Spectral-gap robustness}
 
-\subsection{Measurement}
+Let \(A\) be a Hermitian matrix with a selected spectral cluster separated
+from the remainder by a gap \(\gamma>0\).  Let \(E\) be a Hermitian
+perturbation.  Standard spectral perturbation theory bounds eigenvalue
+motion by \(\|E\|\) and invariant-subspace rotation in terms of the gap
+\cite{Kato1966,DavisKahan1970}.
 
-Measurement introduces additional constraints on admissibility by
-coupling the system to an apparatus. This coupling reduces coherence
-capacity locally. When $\mathcal C \to 0$, projection becomes
-noninvertible and the system is forced into a new admissible basin. This
-is what is observed as collapse.
+If the two sides of the selected gap can each move by at most \(\|E\|\),
+then
+\[
+ \operatorname{gap}(A+E)
+ \ge
+ \gamma-2\|E\|.
+\]
+Thus
+\[
+ \|E\|<\frac{\gamma}{2}
+\]
+is a sufficient robustness budget for preserving positive separation.
+It may not be the exact structured stability radius.  Restrictions on the
+allowed perturbation matrix can increase the true budget.
 
-\subsection{Black holes}
+This example makes every ingredient visible:
+\begin{enumerate}[leftmargin=2em]
+\item the state is the operator \(A\);
+\item the perturbations are Hermitian matrices \(E\);
+\item the cost is the chosen operator norm;
+\item failure is closure of the selected gap; and
+\item \(\gamma/2\) is a certified lower bound, not a new energy.
+\end{enumerate}
 
-In gravitational settings, inward capacity flux may exceed outward
-redistribution. When this occurs, coherence capacity collapses on a
-codimension-one surface. The resulting bottleneck is a horizon. Exterior
-observers cannot invert the effective evolution across it.
+\subsection{A contraction budget}
 
-\subsection{Thermalization}
+Suppose a family of maps has contraction factors \(q(x)<1\) in a declared
+norm and invariant set.  The normalized reserve \(1-q(x)\) can bound how
+much a perturbation may increase the Lipschitz constant before contraction
+is lost.  But the invariant-set reserve, domain, and fixed-point theorem
+remain separate rows.  Fixed Points I owns the corresponding conditional
+MTT framework \cite{FixedPointsI2026}.
 
-In high-capacity regimes, basins mix and memory is erased. In low-capacity
-or fragmented regimes, memory persists. Thermalization is therefore not a
-universal tendency but a capacity-dependent phenomenon.
+\subsection{A guarded numerical algorithm}
 
-All three cases correspond to the same event: exhaustion of coherence
-capacity forcing projection noninvertibility.
+Let an algorithm evolve while \(C(x)>0\).  Introducing
+\[
+ U_\varepsilon(x)=-\log\bigl(\varepsilon+C(x)\bigr)
+\]
+and following \(-\nabla U_\varepsilon\) makes capacity a penalty potential
+by explicit design.  The resulting force depends on the representative
+\(C\), its metric, and \(\varepsilon\).  Replacing \(C\) by \(C^3\) changes
+the trajectory even though the admissible set is unchanged.
 
-\section{Simulability and the Necessity of Undecidability}
+At \(C=0\), the algorithm still needs a guard and one of:
+\[
+ \text{stop},\qquad
+ \text{continue in another chart},\qquad
+ \text{apply a reset map or kernel}.
+\]
+The capacity boundary does not choose the reset or its probabilities.
 
-If capacity exhaustion events were decidable in advance, effective
-evolution would require global foresight over exponentially many
-counterfactual futures. This would render physical evolution
-computationally inconsistent.
+\subsection{A channel or experimental tolerance}
 
-The undecidability of capacity exhaustion localizes irreducibility to the
-boundary itself. The system evolves deterministically until admissibility
-fails, at which point projection enforces selection.
+An experiment may define the budget as the largest calibration error,
+noise strength, or control drift for which an output guarantee remains
+inside tolerance.  This can be directly useful.  It is still not the
+probability of an outcome.  Probabilities require a state and an
+instrument; the budget only certifies the domain on which their predictions
+are controlled.
 
-This guarantees that physical evolution remains simulable in real time
-by itself. Undecidability is therefore not a defect but a consistency
-requirement.
+\section{What the budget does not derive}
+\label{sec:limits}
 
-\section{Relation to Modal Triplet Theory}
+\subsection{No right-inverse theorem}
 
-Modal Triplet Theory provides an explicit realization of the axioms used
-here, with coherence capacity constructed from spectral gaps, projector
-regularity, and dynamical margins. The present analysis does not rely on
-those constructions and applies to any projection-based effective theory
-with finite stability margins.
+Let \(P:\cH\to P\cH\) be an orthogonal projection.  If
+\(\ker P\ne\{0\}\), then \(P\) is noninjective.  Nevertheless the inclusion
+\[
+ \iota:P\cH\hookrightarrow\cH
+\]
+satisfies
+\[
+ P\circ\iota=\Id_{P\cH}.
+\]
+It is a bounded measurable right inverse.  Noninjectivity prevents a left
+inverse that recovers every original upper state; it does not prevent a
+section selecting one representative.
 
-The capacity framework may therefore be viewed either as a reparameterized
-description of the MTT admissibility structure or as a reparameterization of the same admissibility structure expressed in different
-descriptive variables.
+Capacity exhaustion may invalidate a particular decoder or commuting
+diagram, but that requires a decoder theorem.  It does not follow from
+noninjectivity.
+
+\subsection{No automatic irreversibility or reset}
+
+A first exit says that one lower certificate has ended.  The upper evolution
+may remain invertible, another lower chart may exist, or the description may
+simply stop.  A reset law defines a hybrid system and must separately prove
+existence, measurability, conservation, and outcome probabilities.
+
+\subsection{No probability}
+
+A positive scalar and a boundary do not define a normalized measure.
+Quadratic quantum probabilities require a state, observable algebra, and
+instrument or a same-source probability theorem.  Capacity can restrict the
+domain of such a theorem but cannot replace it.
+
+\subsection{No force or equation of motion}
+
+A gradient becomes a force only after it appears in an action, Hamiltonian,
+or constitutive law with declared units and sign.  Arbitrary
+reparameterization of the same zero set changes the gradient, so a
+same-zero-set capacity class cannot select a unique force.
+
+\subsection{No entropy or thermodynamics}
+
+Entropy requires a state count, measure, density operator, coarse-graining,
+or thermodynamic potential.  A control budget can constrain accessible
+states without being their entropy.  A conservation or balance law requires
+a symmetry or constitutive postulate.
+
+\subsection{No gravity or Newton constant}
+
+Postulating
+\[
+ S[g,C]=\int\sqrt{-g}\,f(C)R
+\]
+adds a scalar-tensor coupling unless \(f(C)\) is fixed and constant.
+The capacity record does not select \(f\), the Einstein-Hilbert
+normalization, or the observed value of \(G\).  Identifying
+\(G^{-1}=C\) is also incompatible with arbitrary allowed changes of
+capacity representative.
+
+\subsection{No horizon, collapse, or arrow of time}
+
+Horizons require Lorentzian causal geometry and field equations.
+Measurement requires a system-apparatus interaction and outcome records.
+An arrow of time requires asymmetric dynamics, boundary conditions,
+record stability, or thermodynamic structure.  A list of first-exit events
+does not supply those ingredients.
+
+\section{Role within Modal Triplet Theory}
+\label{sec:mtt}
+
+The capacity papers now have distinct roles.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}L{0.28\textwidth}Y@{}}
+\toprule
+Source & Canonical responsibility \\
+\midrule
+MTT Foundation
+& Complete admissibility ledger, independent control rows, and the
+  stop/continue/reset alternatives \cite{MTTFoundation2026}.\\
+
+Coherence Capacity: normalized margins
+& Signed slacks, normalization scales, reserve vector, bottleneck scalar,
+  metric clearance, active rows, and capacity-equivalence class
+  \cite{CapacityMargin2026}.\\
+
+This paper
+& Perturbation model, exit budget, maximal guaranteed ball, cumulative
+  consumption, independent composition, and resource-completion contract.\\
+
+Fixed Points I
+& Conditional spectral-projector, invariant-set, existence, contraction,
+  and stability gates \cite{FixedPointsI2026}.\\
+
+Future dynamics papers
+& Any transport, repair, exchange, conservation, force, entropy, or
+  geometric response law.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+This hierarchy prevents a loop.  One first proves the control rows, then
+normalizes them, then defines an operational perturbation budget, and only
+then asks whether a task-specific resource theory or physical law exists.
+
+\section{Completion contract and falsifiability}
+\label{sec:contract}
+
+A claim that coherence capacity is a resource for a particular model must
+publish at least the following rows.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}L{0.25\textwidth}Y@{}}
+\toprule
+Row & Required content \\
+\midrule
+State and domain
+& State space, operator domains, boundary conditions, and admissible set.\\
+
+Capacity source
+& Full normalized reserve vector, scales, tolerances, provenance, and active
+  row; never the scalar alone.\\
+
+Perturbations
+& Allowed structured disturbances and their action on states.\\
+
+Cost
+& Metric or cost functional, units, uncertainty, and normalization.\\
+
+Budget theorem
+& Exact radius or certified lower and upper bounds with error control.\\
+
+Composition
+& Parallel, sequential, correlated, and redundant composition rules.\\
+
+Free operations
+& Operations regarded as costless and proof that they preserve the required
+  closure properties.\\
+
+Monotone direction
+& Whether capacity must increase, decrease, or remain comparable under free
+  operations.\\
+
+Repair ledger
+& Ancillas, work, communication, feedback, or other resources consumed by
+  stabilization.\\
+
+Physical promotion
+& Separate action, instrument, measure, entropy, or geometry theorem if a
+  physical interpretation is claimed.\\
+
+Provenance
+& Source-independent inputs, fitted inputs, held-out outputs, intervals,
+  code, commit, and hashes for numerical values.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The framework is falsifiable at several levels.  A claimed radius fails if
+an allowed cheaper perturbation exits the admissible set.  A claimed
+composition law fails if a joint perturbation violates its bound.  A
+resource monotone fails if a declared free operation moves it in the
+forbidden direction.  A physical promotion fails if the predicted
+observable or held-out comparison fails.  These are stronger tests than
+asking whether a scalar happened to vanish at a chosen boundary.
 
 \section{Conclusion}
+\label{sec:conclusion}
 
-We have shown that coherence capacity is the fundamental resource governing
-effective physical descriptions. Its conservation within admissible
-regimes and exhaustion at boundaries unify gravity, time, measurement,
-thermalization, and information loss as structural necessities.
+Coherence capacity can be a genuine \emph{control budget}: after the
+perturbations and their cost are fixed, it measures the least disturbance
+that destroys a declared effective description.  That interpretation gives
+precise robustness, cumulative-consumption, and composition theorems.
 
-Effective laws persist precisely because coherence capacity is finite.
-Their breakdown is not a failure of fundamental dynamics, but the price
-paid for stability, locality, and predictability.
+It is not, by definition, the fundamental resource of all effective
+physics.  A resource theory needs operational restrictions and conversion
+rules.  A physical resource needs dynamics, units, sources, and observables.
+Keeping those levels separate makes the capacity idea more useful, because
+each proposed application now has an exact completion contract and an
+observable failure mode.
 
+\section*{Reproducibility statement}
+
+This paper reports structural definitions and proofs, not a fitted
+parameter or numerical physical prediction.  The source TeX, bibliography,
+revision audit, and generated PDF are versioned in the MTT papers
+repository.  A future numerical control-budget result must additionally
+archive its perturbation family, cost, full reserve vector, active rows,
+interval bounds, code commit, and verification hashes.
+
+\bibliographystyle{plain}
+\bibliography{main}
 
 \end{document}

@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18255905",
+      "created": "2026-07-30T20:07:06.754629+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21709596",
+      "files": [
+        {
+          "checksum": "md5:90b3795e3e9e90f9d129be2f3aa418fd",
+          "content_url": "https://zenodo.org/api/records/21709596/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 332256
+        }
+      ],
+      "id": "21709596",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21709596",
+      "resource_type": "publication",
+      "title": "Coherence Capacity as a Control Budget for Effective Descriptions: Robustness, Composition, and the Limits of Resource Language",
+      "updated": "2026-07-30T20:07:07.184776+00:00",
+      "version": "v4"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18255975",
       "created": "2026-07-30T19:47:42.292784+00:00",
       "creators": [
