@@ -928,6 +928,14 @@
       "reviewed_main_tex_sha256": "947d31cd6193f58d2f14319def73d0475534ba418271867d82349136f5e079e7",
       "reviewed_pdf_sha256": "3ec05c192c3cef5e166541cbedae1f8561b525c53714bb9f3422fb5377a2e17d",
       "reviewed_source_tree_sha256": "62dda1600c003ee74d76aa52cb82f457e00cc5ab24161f79870426301552d39a"
+    },
+    "computational-irreducibility-from-projection-undecidabi-6cc6aafd": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 2 withdraws generic projection-induced undecidability and rebuilds the paper as a conditional selection-reachability analysis. It imports Program A2 theorem ownership, proves a decidable noninjective-projection counterexample, an effective descent-transfer theorem, finite-horizon positive-margin certification, a compact uniform-margin obstruction, and coexistence of computable finite prefixes with undecidable unbounded reachability; removes unsupported gravity and all-trajectory irreducibility claims; compares the primary hybrid and analog-computation literature; and the complete 11-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "9896f29fee9668a4320c3274fb0c35e3ca6bd7c3d11d9710e7be84144940454a",
+      "reviewed_pdf_sha256": "7d74461ec42884ca4cff0bb929100e34667d6d315cc26349bdf09d483631ac17",
+      "reviewed_source_tree_sha256": "2ee50240ec59b61639bd6b997f32f68bebc382ebf44017d9f1737224865ff388"
     }
   }
 }

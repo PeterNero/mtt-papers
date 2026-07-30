@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18255388",
+      "created": "2026-07-30T22:32:37.584848+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21710992",
+      "files": [
+        {
+          "checksum": "md5:61d62035e60e39249742bef25b882bd7",
+          "content_url": "https://zenodo.org/api/records/21710992/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 330395
+        }
+      ],
+      "id": "21710992",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21710992",
+      "resource_type": "publication",
+      "title": "Selection Reachability in Projection-Based Dynamics: Conditional Undecidability, Robust Encoding, and Finite-Capacity Limits in Modal Triplet Theory",
+      "updated": "2026-07-30T22:32:37.845988+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18261806",
       "created": "2026-07-30T22:10:12.263688+00:00",
       "creators": [

@@ -1,0 +1,32 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T22:35:22+00:00",
+  "mode": "published_verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "concept_doi": "10.5281/zenodo.18255388",
+      "description_has_tex": false,
+      "doi": "10.5281/zenodo.21710992",
+      "exact_remote_pdf_count": 1,
+      "file_count": 1,
+      "local_pdf_md5": "61d62035e60e39249742bef25b882bd7",
+      "local_pdf_sha256": "7d74461ec42884ca4cff0bb929100e34667d6d315cc26349bdf09d483631ac17",
+      "paper_id": "computational-irreducibility-from-projection-undecidabi-6cc6aafd",
+      "ready": true,
+      "record_id": "21710992",
+      "record_state": "done",
+      "record_url": "https://zenodo.org/records/21710992",
+      "references": 14,
+      "related_identifiers": 2,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "source": "direct_zenodo_api_after_publication_and_ledger_reconciliation",
+      "submitted": true,
+      "title": "Selection Reachability in Projection-Based Dynamics: Conditional Undecidability, Robust Encoding, and Finite-Capacity Limits in Modal Triplet Theory",
+      "version": "v2"
+    }
+  ]
+}

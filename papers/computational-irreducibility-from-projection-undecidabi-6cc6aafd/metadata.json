@@ -1,65 +1,97 @@
 {
-  "abstract": "We prove that any effective physical description in the coherent universality class capable of reproducing irreversible measurement, stable classical records, relativistic locality, and finite predictivity necessarily exhibits algorithmic undecidability at the level of observable dynamics. Within the coherent universality class realized explicitly by Modal Triplet Theory (MTT), noninvertible projection together with admissible basin structure forces the existence of well-posed physical decision problems that no algorithm can decide. The result is formulated without reference to external time: the relevant bound is instead a coherence budget determined by basin geometry, spectral gaps, stability margins, and gravity. The proof constructs a uniform many-one reduction from the halting problem for universal two-counter machines to robust selection-event occurrence under admissibility. Computational irreducibility is thus shown to be a structural consequence of viable physical theories, distinct from chaos or stochasticity, and explains the absence of globally valid effective laws across measurement, spacetime, and ultraviolet completion.",
+  "abstract": "Projection, stable records, and threshold events do not by themselves imply algorithmic undecidability. Undecidability enters only after a dynamical realization is shown to simulate a universal machine uniformly for arbitrarily long admissible runs. This paper replaces an earlier generic claim by an auditable reachability framework. It imports, without duplicating, the conditional two-counter-machine theorem of the revised MTT Program A2 and proves four complementary results. First, a finite projection system can have noninjective descent, an absorbing record basin, and completely decidable selection. Second, undecidable reachability descends through a projection only under an effective semiconjugacy, admissibility, input, and target-fidelity contract. Third, a finite-horizon robust event is decidable once a complete positive-margin enclosure certificate is supplied. Fourth, a compact carrier cannot encode infinitely many distinct configurations with one uniform positive decoding radius; unbounded robust computation therefore requires shrinking margins, a non-totally-bounded carrier, a growing family of carriers, or another explicitly verified mechanism. We also prove that every finite trajectory prefix may be computable while unbounded target reachability is undecidable. Thus reachability undecidability is not a theorem that every trajectory is uncomputable, that no shortcut exists, or that projection creates universal computation. Current MTT has not yet supplied a selected physical embedding satisfying the complete unbounded robustness contract, so its physical selection-reachability claim remains conditional.",
   "authors": [
-    "Peter Nero Independent Researcher"
+    "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "",
+  "current_version": "v2",
+  "date": "Version 2, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18255388",
-    "created": "2026-01-15T10:29:23.715387+00:00",
+    "created": "2026-07-30T22:32:37.584848+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18255391",
+    "doi": "10.5281/zenodo.21710992",
     "files": [
       {
-        "checksum": "md5:6dbbe111e2c2dcdf4b18505488ebd4e7",
-        "content_url": "https://zenodo.org/api/records/18255391/files/Computational_Irreducibility_from_Projection__Undecidability_of_Selection_Events_in_Coherent_Quantum_Dynamics%20(4).pdf/content",
-        "key": "Computational_Irreducibility_from_Projection__Undecidability_of_Selection_Events_in_Coherent_Quantum_Dynamics (4).pdf",
-        "size": 312801
+        "checksum": "md5:61d62035e60e39249742bef25b882bd7",
+        "content_url": "https://zenodo.org/api/records/21710992/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 330395
       }
     ],
-    "id": "18255391",
-    "match_kind": "title_or_file",
+    "id": "21710992",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18255391",
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21710992",
     "resource_type": "publication",
-    "title": "Computational Irreducibility from Projection: Undecidability of Selection Events in Coherent Quantum Dynamics",
-    "updated": "2026-01-15T10:29:24.471952+00:00",
-    "version": "v1.0"
+    "title": "Selection Reachability in Projection-Based Dynamics: Conditional Undecidability, Robust Encoding, and Finite-Capacity Limits in Modal Triplet Theory",
+    "updated": "2026-07-30T22:32:37.845988+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "7da3fd5ca3ca14aa5ffbfba172b70b61101f68babf8c3994306561d9e83fe4f7",
+  "main_tex_sha256": "9896f29fee9668a4320c3274fb0c35e3ca6bd7c3d11d9710e7be84144940454a",
   "paper_id": "computational-irreducibility-from-projection-undecidabi-6cc6aafd",
-  "paper_md_sha256": "b36a47c03fb84794b1e7556b4717c3e43f5cce932f54f654c79b70ba281a80fb",
+  "paper_md_sha256": "f70edb422d8978badfb7006639d5d61e66a5fa17331c53a19ceb5c09152d96d9",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/computational-irreducibility-from-projection-undecidabi-6cc6aafd/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "80498f78511c282038c366a21b86e191445645877dc6c8c88930666369afb33c",
+    "selected_revision": true
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 25216,
+      "bytes": 27956,
       "path": "main.tex",
-      "sha256": "7da3fd5ca3ca14aa5ffbfba172b70b61101f68babf8c3994306561d9e83fe4f7"
+      "sha256": "9896f29fee9668a4320c3274fb0c35e3ca6bd7c3d11d9710e7be84144940454a"
     },
     {
-      "bytes": 3784,
-      "path": "series.sty",
-      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+      "bytes": 4038,
+      "path": "main.bib",
+      "sha256": "49e5a8fd593941a2aeb08cb3cc0062b4e6565c7c0cb5aa61797167acb2d07e7e"
+    },
+    {
+      "bytes": 330395,
+      "path": "main.pdf",
+      "sha256": "7d74461ec42884ca4cff0bb929100e34667d6d315cc26349bdf09d483631ac17"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Computational_Irreducibility_from_Projection__Undecidability_of_Selection_Events_in_Coherent_Quantum_Dynamics"
   },
-  "source_tree_sha256": "ec1f194cab85e0ae32b69865de4b14f7a7f51d02fa740b40af4c4e2bec88c4fb",
-  "title": "Computational Irreducibility from Projection: Undecidability of Selection Events in Coherent Quantum Dynamics",
+  "source_tree_sha256": "2ee50240ec59b61639bd6b997f32f68bebc382ebf44017d9f1737224865ff388",
+  "title": "Selection Reachability in Projection-Based Dynamics: Conditional Undecidability, Robust Encoding, and Finite-Capacity Limits in Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255388",
+      "created": "2026-07-30T22:32:37.584848+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21710992",
+      "files": [
+        {
+          "checksum": "md5:61d62035e60e39249742bef25b882bd7",
+          "content_url": "https://zenodo.org/api/records/21710992/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 330395
+        }
+      ],
+      "id": "21710992",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21710992",
+      "resource_type": "publication",
+      "title": "Selection Reachability in Projection-Based Dynamics: Conditional Undecidability, Robust Encoding, and Finite-Capacity Limits in Modal Triplet Theory",
+      "updated": "2026-07-30T22:32:37.845988+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18255388",
       "created": "2026-01-15T10:29:23.715387+00:00",
