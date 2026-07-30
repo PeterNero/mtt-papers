@@ -103,6 +103,20 @@
       "title": "Modal Triplet Theory and the M-Theory Low-Energy Limit: A Conditional Eleven-Dimensional Encoding Contract"
     },
     {
+      "abstract": "This paper asks what Modal Triplet Theory (MTT) presently establishes about Kaluza-Klein reduction. A Kaluza-Klein construction begins with a supplied higher-dimensional geometry, action, field content, operator domains, mode normalizations, and reduction ansatz. Compactness then gives discrete internal spectra, but it does not select the internal manifold, its scale, the higher-dimensional action, or a nonlinearly consistent truncation. We package the required inputs as a typed Kaluza-Klein record and define a partial map from an upper MTT state to that record. The main realization theorem is conditional: if one selected MTT state emits every row of the record, the lower consistency and error conditions hold, and MTT evaluation factors through the standard reduction, then MTT realizes that reduced sector at the declared cutoff and order. For a fixed compact fiber we derive the usual tower masses from the eigenvalues of the appropriate internal Laplace-, Dirac-, or Lichnerowicz-type operator. We also distinguish an exact consistent truncation from a spectral projection and give a Lyapunov-Schmidt residual certificate for controlled approximate reduction. The canonical MTT specialization is a ten-dimensional bundle over a four-dimensional Lorentzian base with compact six-dimensional Riemannian fiber. Its constant-time 9-to-3 description is the spatial slice of the same 10-to-4 fibration, not an independent derivation. The local 1+3x3=4+6 component identity and the selected finite shared-line carrier motivate this geometry, but they do not yet construct the physical six-manifold or preserve its connection and Hessian. Consequently the paper establishes a reusable and testable reduction contract, not a first-principles selection of extra dimensions, Kaluza-Klein radii, gauge groups, particle masses, or Standard Model parameters.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "current_version": "v2",
+      "date": "July 2026",
+      "paper_id": "modal-triplet-theory-from-mtt-to-kaluza-klein-theory",
+      "path": "papers/modal-triplet-theory-from-mtt-to-kaluza-klein-theory",
+      "revision_evidence": "REVISION_AUDIT.md",
+      "source_provenance": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Kaluza__Klein_Theory",
+      "superseded_project": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Kaluza__Klein_Theory",
+      "title": "Modal Triplet Theory and Kaluza-Klein Reduction: A Conditional 4+6 Spectral and Truncation Contract"
+    },
+    {
       "abstract": "We give a typed, conditional formulation of Modal Triplet Theory as a theory of reduced description. A representative section, an exact upper decoder, autonomous reduced evolution, and merger of effective states solve four different mathematical problems; none follows merely from noninjectivity of a projection. We prove the factor-through criterion for autonomous descent, a finite-diameter obstruction for a genuinely contractive reduced self-map, exact basin-local fixed-point results, and controlled approximate-orbit estimates. Admissibility boundaries are defined by explicit margins and section or projector conditioning rather than by assuming the desired obstruction. The encoding atlas and its relations are consequently local and conditional. Probability, irreversibility, physical time, and any concrete physical realization require their own measure, evolution, and source hypotheses.",
       "authors": [
         "Peter Nero"

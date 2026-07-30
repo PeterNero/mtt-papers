@@ -12,21 +12,21 @@ Canonical papers audited: **139**.
 | --- | ---: |
 | critical | 9 |
 | major | 8 |
-| moderate | 5 |
+| moderate | 4 |
 | light | 12 |
 | low | 1 |
-| reviewed | 102 |
+| reviewed | 103 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 39 |
+| argument_flow | 38 |
 | conclusion | 12 |
-| concrete_foothold | 44 |
+| concrete_foothold | 43 |
 | object_intuition | 91 |
-| orientation | 41 |
+| orientation | 42 |
 | result_interpretation | 12 |
 
 ## Revision Queue
@@ -52,7 +52,6 @@ Canonical papers audited: **139**.
 | major | major | `cosmology-as-global-coherence-capacity-evolution` | 8 | 134.6 | 5/7 | object_intuition, concrete_foothold |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | moderate | moderate | `coherent-sector-universality-and-controlled-truncation-0ccddc56` | 7 | 148.6 | 4/7 | object_intuition, argument_flow, concrete_foothold |
-| moderate | moderate | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 7 | 311.9 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | moderate | moderate | `universality-and-robustness-of-the-coherent-sector-in-m-a64842b3` | 4 | 333.5 | 3/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold |
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-quantum-mechanics` | 14 | 459.6 | 6/7 | object_intuition |
@@ -108,6 +107,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3` | 8 | 205.4 | 5/7 | object_intuition, result_interpretation |
 | reviewed | moderate | `dirac-delta-functions-as-singular-shadows-of-admissible-6e0ddf3f` | 8 | 330.2 | 6/7 | orientation |
 | reviewed | major | `fixed-points-iii-disturbance-damping-balance-and-stability` | 8 | 222.2 | 7/7 | - |
+| reviewed | light | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 8 | 408.0 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014` | 7 | 251.7 | 7/7 | - |
 | reviewed | moderate | `entanglement-locality-and-measurement-from-coherent-sec-110e8cbe` | 7 | 379.0 | 6/7 | object_intuition |
 | reviewed | moderate | `finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb` | 7 | 269.3 | 4/7 | orientation, object_intuition, argument_flow |

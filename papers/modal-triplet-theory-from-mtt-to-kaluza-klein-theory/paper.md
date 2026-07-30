@@ -1,418 +1,666 @@
 ---
 abstract: |
-  We present a first-principles derivation of Kaluza–Klein (KK) compactification from Modal Triplet Theory (MTT), embedding the standard KK framework into MTT’s geometric/topological fixed-point structure. Starting from the MTT higher-dimensional configuration space and modal gap data, we show that the internal space $`B_{\rm KK}`$, its scale $`R_{\rm KK}`$, and the zero-mode spectrum are *selected* by a finite set of algebraic and integral constraints in a left-invariant basis. We formalize these constraints as a *fixed-point compactification condition (FCC)* and prove an equivalence (background level) between solving the higher-dimensional field equations in the left-invariant sector and solving the FCC. We then prove that the familiar 10D$`\to`$<!-- -->4D compactification (with a compact $`B_6`$) is *equivalent*, at background and zero-mode level, to the 9D$`\to`$<!-- -->3D *projection* description used in the fixed-point series (Riemannian submersion with compact six-dimensional fibers). The 4D Planck mass, gauge couplings, and KK masses are calculable geometric invariants of $`B_{\rm KK}`$ set by MTT gap parameters. Throughout we keep the presentation conservative and theory-agnostic on matter content, with a short outlook to phenomenology.
+  This paper asks what Modal Triplet Theory (MTT) presently establishes about Kaluza–Klein reduction. A Kaluza–Klein construction begins with a supplied higher-dimensional geometry, action, field content, operator domains, mode normalizations, and reduction ansatz. Compactness then gives discrete internal spectra, but it does not select the internal manifold, its scale, the higher-dimensional action, or a nonlinearly consistent truncation. We package the required inputs as a typed Kaluza–Klein record and define a partial map from an upper MTT state to that record. The main realization theorem is conditional: if one selected MTT state emits every row of the record, the lower consistency and error conditions hold, and MTT evaluation factors through the standard reduction, then MTT realizes that reduced sector at the declared cutoff and order. For a fixed compact fiber we derive the usual tower masses from the eigenvalues of the appropriate internal Laplace-, Dirac-, or Lichnerowicz-type operator. We also distinguish an exact consistent truncation from a spectral projection and give a Lyapunov–Schmidt residual certificate for controlled approximate reduction. The canonical MTT specialization is a ten-dimensional bundle over a four-dimensional Lorentzian base with compact six-dimensional Riemannian fiber. Its constant-time $`9\to3`$ description is the spatial slice of the same $`10\to4`$ fibration, not an independent derivation. The local $`1+3\times3=4+6`$ component identity and the selected finite shared-line carrier motivate this geometry, but they do not yet construct the physical six-manifold or preserve its connection and Hessian. Consequently the paper establishes a reusable and testable reduction contract, not a first-principles selection of extra dimensions, Kaluza–Klein radii, gauge groups, particle masses, or Standard Model parameters.
 author:
 - Peter Nero
-current_version: v1.0
-date: September 2, 2025
-generated_from_main_tex_sha256: 347e75fa877868631dc871867be4e458d742985999d89c1a7c9e2a7f43483f4e
+bibliography:
+- main.bib
+current_version: v2
+date: Version 2, July 2026
+generated_from_main_tex_sha256: 3b67d245f3bddee30ff8177512dc63b40d2c299d600c775de08071d361ea6b87
 paper_id: modal-triplet-theory-from-mtt-to-kaluza-klein-theory
 release_state: zenodo_released
-released_version: v1.0
-title: "**Modal Triplet Theory: From MTT to Kaluza–Klein Theory**"
-zenodo_doi: 10.5281/zenodo.17038314
-zenodo_record_id: 17038314
-zenodo_url: "https://zenodo.org/records/17038314"
+released_version: v2
+title: |
+  Modal Triplet Theory and Kaluza–Klein Reduction:
+  A Conditional $`4+6`$ Spectral and Truncation Contract
+zenodo_doi: 10.5281/zenodo.21708733
+zenodo_record_id: 21708733
+zenodo_url: "https://zenodo.org/records/21708733"
 ---
 
-# Introduction and Motivation
+# Revision note: Version 2
 
-## Kaluza–Klein theory in context
+<div class="description">
 
-Kaluza–Klein (KK) theory unifies gravity with gauge interactions by starting from a higher-dimensional spacetime and compactifying the extra dimensions. The simplest 5D Einstein–Hilbert action compactified on a circle $`S^1`$ yields 4D gravity, a $`U(1)`$ gauge field from $`g_{\mu5}`$, and a scalar from $`g_{55}`$. Generalizing to more dimensions and nontrivial internal manifolds produces non-Abelian gauge groups and scalar sectors that match, at low energies, the bosonic content of known interactions (see  for classic references).
+Version 2 supersedes Version 1 and its claims that MTT had already selected the Kaluza–Klein internal space, radius, zero-mode spectrum, gauge couplings, family number, and a finite fixed-point system equivalent to the full higher-dimensional field equations.
 
-## MTT as a higher-dimensional superset
+The former paper combined valid Kaluza–Klein formulas with unproved MTT source claims. It treated a finite left-invariant ansatz as automatically complete for a nonlinear PDE, used cohomological completeness as if it were solution-space completeness, and inferred controlled truncation from a gap ratio without bounding the omitted equations. It also described the constant-time $`9\to3`$ slice as an independently proved compactification equivalence and imported obsolete Iwasawa and Lens–Nil selection claims.
 
-Modal Triplet Theory (MTT) posits a ten-dimensional modal configuration space $`M_{10}`$ equipped with a fixed-point field configuration determined by curvature–gap dynamics, topological superselection integers, and modal coherence conditions. In prior work, the MTT fixed-point has been shown to project onto GR, QM/QFT on curved spacetimes, Standard Model-like sectors, and higher-dimensional unifying frameworks. We use only structural inputs here: (i) topology/metric class of $`B_{\rm KK}`$, (ii) curvature–gap scales selecting characteristic radii, and (iii) superselection integers fixing bundles/holonomies. [^1]
+This revision defines the full lower record, separates kinematic mode expansion from dynamical truncation, proves a conditional MTT realization theorem, and gives an explicit omitted-mode residual certificate. It uses the canonical $`4+6`$ geometry and states precisely what the $`1+3\times3=4+6`$ identity does and does not imply. Standard Kaluza–Klein formulas retain their literature ownership.
 
-#### Projection language used in the fixed-point series.
+Compact internal operators still organize four-dimensional towers; internal isometries can supply gauge fields; normalized overlap integrals determine effective couplings; and finite invariant ansatzes can exactly encode the equations restricted to those ansatzes. These are valuable lower-level tools once their inputs and domains are supplied.
 
-In the fixed-point series we often speak of “projecting nine spatial dimensions to the observed three”: work on a constant-time slice $`\Sigma^9`$ and use a Riemannian submersion $`\pi_{\rm sp}:\Sigma^9\to M_3`$ with compact six-dimensional fibers $`F_6`$. In Section <a href="#subsec:proj" data-reference-type="ref" data-reference="subsec:proj">3.5</a> we formalize this and prove it is *equivalent*, at background and zero-mode level, to the standard 10D$`\to`$<!-- -->4D compactification with internal space $`B_6=F_6`$; see also the explicit Iwasawa and Lens$`\times`$Nil realizations in the companion fixed-point paper.
+The current MTT research ledger leaves the continuum geometry-to-operator naturality problem open. Its exit requires a same-source commuting map from the world-in-world/strain carrier to the physical $`q=79`$ vertical Hermitian–Yang–Mills complex that preserves the connection, covariant derivatives, and Hessian. Without that map, the finite carrier does not select the physical Kaluza–Klein fiber or its operators.
 
-#### Organisation.
+</div>
 
-Section <a href="#sec:MTT" data-reference-type="ref" data-reference="sec:MTT">2</a> summarizes the MTT higher-dimensional framework used here. Section <a href="#sec:ansatz" data-reference-type="ref" data-reference="sec:ansatz">3</a> develops the KK metric/field ansatz and the compactification vs. projection equivalence. Section <a href="#sec:FCC" data-reference-type="ref" data-reference="sec:FCC">4</a> states and proves the FCC–KK background equivalence in the left-invariant sector. Section <a href="#sec:4D" data-reference-type="ref" data-reference="sec:4D">5</a> derives the 4D effective action (Planck mass, gauge couplings, scalars, fermions, topological terms). Section <a href="#sec:mass" data-reference-type="ref" data-reference="sec:mass">6</a> gives the KK spectrum and mass formulas. Section <a href="#sec:gauge" data-reference-type="ref" data-reference="sec:gauge">7</a> discusses gauge couplings and unification patterns. Section <a href="#sec:pheno" data-reference-type="ref" data-reference="sec:pheno">8</a> sketches phenomenology. We conclude in Section <a href="#sec:concl" data-reference-type="ref" data-reference="sec:concl">9</a>.
+# The corrected question
 
-# MTT Higher-Dimensional Framework
+Kaluza–Klein theory is a method of reduction. One starts with a field theory on a space of dimension $`D=4+d`$, resolves its fields into internal modes, and asks which lower-dimensional fields and interactions survive at the scale of interest. Kaluza’s five-dimensional metric ansatz and Klein’s compact circle gave the original example; modern supergravity and string compactifications use the same architecture with richer fields and internal geometries .
 
-## Modal 10D structure
+There are two logically different questions:
 
-We consider a ten-dimensional manifold $`M_{10}\simeq M_4\times B_{\rm int}`$, with $`B_{\rm int}`$ a compact six-manifold encoding modal degrees of freedom. The field content includes: (i) a 10D Lorentzian metric $`g_{AB}`$, (ii) gauge connections $`A^{(n)}{}_A`$ for each factor $`G_n`$, (iii) fermions $`\Psi_{ij}`$ obeying a two-of-three family rule,[^2] (iv) coherent scalars $`\phi_n`$ with curvature–gap mass terms, and (v) topological superselection data $`(Q_{ij},k_2,k_3;g)`$ labeling sectors.
+1.  *Reduction question.* Given the higher-dimensional theory and compactification data, what lower-dimensional theory follows?
 
-## Extension to $`D`$ dimensions
+2.  *Source question.* Why are that theory, internal geometry, radius, bundle, vacuum, and truncation selected?
 
-For KK we write $`M_D=M_4\times B_{\rm KK}`$ with $`d=D-4=\dim B_{\rm KK}`$. The MTT fixed point determines the topology and metric of $`B_{\rm KK}`$, together with curvature–gap parameters that fix characteristic scales and isometries.
+Kaluza–Klein analysis answers the first question. It does not by itself answer the second. The corrected MTT question is therefore:
 
-## Action and gap data
+> Does one selected upper MTT state emit a complete higher-dimensional record, and does MTT evaluation factor through a mathematically controlled Kaluza–Klein reduction of that same record?
 
-We take a schematic $`D`$-dimensional action
+This formulation makes the burden of proof visible. A metric with six unlabelled internal coordinates is not yet a compactification. Nor is an orthogonal projector a consistent low-energy theory. The action, gauge identifications, operator domains, mode normalization, nonlinear ansatz, source terms, and approximation error all matter.
+
+## Result and non-result
+
+The positive result of this paper is a conditional realization contract. It states exactly what MTT must provide and what follows once it does. The spectral and truncation statements below are ordinary mathematical consequences of a fixed lower record. They are included because they expose the interface that an MTT source theorem must satisfy.
+
+The paper does not prove that MTT already selects a unique compact six-manifold, radius, higher-dimensional action, gauge group, chiral spectrum, or observed mass. In particular, a dimension count is not a geometric construction, and agreement with a profile used to choose a branch is not a held-out prediction.
+
+# The lower Kaluza–Klein object
+
+## Geometry
+
+Let $`M_4`$ be a time-oriented Lorentzian four-manifold and let
+``` math
+\pi:Y_D\longrightarrow M_4,\qquad D=4+d,
+```
+be a smooth fiber bundle with compact $`d`$-dimensional fibers $`X_x=\pi^{-1}(x)`$. A horizontal distribution $`\mathcal H\subset TY_D`$ gives
+``` math
+TY_D=\mathcal H\oplus\mathcal V,\qquad \mathcal V=\operatorname{Ker}\mathrm d\pi .
+```
+The higher-dimensional metric is Lorentzian on the horizontal directions and Riemannian on the vertical directions. In a local trivialization it may be written schematically as
 ``` math
 \begin{equation}
-S^{(D)}_{\rm MTT}=\frac{1}{2\kappa_D^2}\int_{M_D}\!\mathrm{d}^Dx\,\sqrt{-g}\,\Big(R_D-2\Lambda_D+{\cal L}_{\rm YM}+{\cal L}_{\rm Dirac}+{\cal L}_{\phi,\vartheta}\Big)+S_{\rm top}[Q_{ij},k_2,k_3;g],
-\label{eq:MTTaction}
+\label{eq:kkmetric}
+\mathrm ds_D^2
+ =g_{\mu\nu}(x)\,\mathrm dx^\mu\mathrm dx^\nu
+ +h_{mn}(x,y)
+   \bigl(\mathrm dy^m+\mathcal A^m{}_\mu(x,y)\mathrm dx^\mu\bigr)
+   \bigl(\mathrm dy^n+\mathcal A^n{}_\nu(x,y)\mathrm dx^\nu\bigr).
 \end{equation}
 ```
-with gap parameters correlating internal curvature radii and the internal mass scales. We remain agnostic about specific matter representations.
+Equation <a href="#eq:kkmetric" data-reference-type="eqref" data-reference="eq:kkmetric">[eq:kkmetric]</a> is a local decomposition of supplied metric data. It neither proves that $`Y_D`$ exists globally nor selects $`(X,h,\mathcal H)`$.
 
-# Metric and Field Ansatz for KK Reduction
+Warping, boundaries, orbifold strata, monodromy, and varying fibers require additional data. To keep the spectral theorems transparent, the principal calculation below uses a closed compact fiber and a product or adiabatically controlled background. More general cases require the corresponding family, boundary, or singular elliptic theory.
 
-## Block-diagonal metric and isometries
+## Fields, action, and operators
 
-Adopt the standard KK decomposition
+A reduction must specify the higher-dimensional fields and the action from which their equations follow. We denote by $`\mathcal F_D`$ the collection of metrics, connections, spinors, differential forms, scalars, source data, and any gauge-fixing or constraint variables. Let
 ``` math
-\begin{equation}
-\label{eq:metric}
-\mathrm{d}s_D^2=g_{\mu\nu}(x)\,\mathrm{d}x^\mu\mathrm{d}x^\nu+h_{mn}(y)\Big(\mathrm{d}y^m+A^{(m)}{}_\mu(x)\,\mathrm{d}x^\mu\Big)\Big(\mathrm{d}y^n+A^{(n)}{}_\nu(x)\,\mathrm{d}x^\nu\Big),
-\end{equation}
+S_D:\mathcal D(S_D)\subset\mathcal F_D\longrightarrow\mathbb R
 ```
-with internal coordinates $`y^m`$ ($`m=1,\dots,d`$) and internal metric $`h_{mn}(y)`$. Let $`\{\xi^{(a)}\}`$ be Killing vectors of $`(B_{\rm KK},h)`$; then
+be the action at a declared derivative and quantum order, with equations $`\mathcal E_D(\Phi)=0`$. Gauge transformations, diffeomorphisms, boundary conditions, and normalizations are part of the record rather than ellipsis.
+
+Each field type has its own vertical operator. Scalar modes may be organized by a Laplace-type operator, spinors by a twisted Dirac operator, one-forms by a gauge-fixed Hodge operator, and metric fluctuations by a Lichnerowicz-type operator. Background flux, curvature, torsion, and potentials may add lower-order terms. A single formula $`-\Delta_XY_n=\lambda_nY_n`$ is therefore illustrative, not universal.
+
+<div id="def:record" class="definition">
+
+**Definition 1** (Complete Kaluza–Klein record). A *complete Kaluza–Klein record* at scope $`\sigma=(D,N,\ell,\partial,\mathrm{obs})`$ is
 ``` math
-\begin{equation}
-\label{eq:Killingexp}
-A^{(m)}{}_\mu(x,y)=\sum_a A^{(a)}{}_\mu(x)\,\xi^{(a)m}(y)+\cdots,\qquad [\xi^{(a)},\xi^{(b)}]=f^{ab}{}_c\,\xi^{(c)}.
-\end{equation}
+\mathcal K_\sigma=
+\bigl(
+Y_D,\pi,g_D,\mathcal H;\,
+\mathcal F_D,S_D,\mathcal G_D;\,
+\{L_\alpha,\mathcal D(L_\alpha)\}_\alpha;\,
+\{u_{\alpha n}\};\,
+P_N,\iota_N,\mathcal E_4;\,
+\mathcal C_N,\mathcal N,\mathcal O
+\bigr),
 ```
+where:
 
-## Internal metric deformations and scalars
+1.  $`(Y_D,\pi,g_D,\mathcal H)`$ is the global geometric and connection data;
 
-Fluctuations of $`h_{mn}`$ around the fixed-point geometry $`h^*_{mn}`$ expand in Lichnerowicz eigenmodes $`Y^{(I)}_{mn}`$,
+2.  $`(\mathcal F_D,S_D,\mathcal G_D)`$ gives fields, action, symmetries, constraints, sources, and boundary conditions;
+
+3.  every $`L_\alpha`$ is the appropriate closed vertical operator with a specified domain, measure, adjoint convention, and normalization;
+
+4.  $`\{u_{\alpha n}\}`$ is a complete normalized mode system whenever such a system is invoked;
+
+5.  $`P_N`$ is the retained spectral or representation projector and $`\iota_N`$ is the full nonlinear uplift ansatz, not merely a linear inclusion;
+
+6.  $`\mathcal E_4`$ is the claimed lower equation or action;
+
+7.  $`\mathcal C_N`$ records exact consistency or an explicit residual and error certificate;
+
+8.  $`\mathcal N`$ contains coupling, scale, frame, and measure normalizations; and
+
+9.  $`\mathcal O`$ declares the observables and comparison map at which the reduction is asserted.
+
+</div>
+
+The record is deliberately longer than a metric ansatz. Most false compactification arguments omit precisely the rows that decide whether the calculation is physical: the nonlinear uplift, normalization, domain, and error rows.
+
+# The MTT realization contract
+
+Let $`\mathcal U_{\mathrm{MTT}}`$ be the domain of admissible upper MTT states. A candidate source map is a partial typed map
 ``` math
-\begin{equation}
-h_{mn}(x,y)=h^*_{mn}(y)+\sum_I \phi^I(x)\,Y^{(I)}_{mn}(y).
-\end{equation}
+\mathcal R_{\mathrm{KK}}:
+  \mathcal U_{\mathrm{MTT}}\dashrightarrow \mathfrak K_\sigma ,
 ```
-The $`\phi^I`$ are 4D scalars (moduli). Gap terms lift some or all of them.
+where $`\mathfrak K_\sigma`$ is the class of records in Definition <a href="#def:record" data-reference-type="ref" data-reference="def:record">1</a>. The dashed arrow matters: not every abstract coherent state contains spacetime, action, or reduction data.
 
-## KK mode expansions
-
-For a generic field $`\Phi(x,y)`$,
+Let
 ``` math
-\begin{equation}
-\Phi(x,y)=\sum_n \varphi_n(x)\,Y_n(y),\qquad -\Delta Y_n=\lambda_n\,Y_n,\qquad m_n^2=\lambda_n/R_{\rm KK}^2.
-\end{equation}
+\operatorname{Red}_{\mathrm{KK}}:\mathfrak K_\sigma
+ \dashrightarrow \mathfrak L_\sigma
 ```
+be the standard lower-dimensional reduction functional and let $`\operatorname{Ev}_{\mathrm{MTT}}`$ and $`\operatorname{Ev}_4`$ be the upper and lower observable evaluations on their declared common domain.
 
-## Gauge and matter couplings
+<div id="def:realization" class="definition">
 
-Overlap integrals over $`B_{\rm KK}`$ determine the 4D couplings:
+**Definition 2** (Complete MTT–KK realization). A selected state $`u_\ast\in\mathcal U_{\mathrm{MTT}}`$ realizes a Kaluza–Klein sector at scope $`\sigma`$ when:
+
+1.  $`\mathcal R_{\mathrm{KK}}(u_\ast)`$ is a complete record;
+
+2.  every global, gauge, analytic, and source condition required by that record is satisfied;
+
+3.  the truncation certificate $`\mathcal C_N`$ is exact or gives a stated error bound on the requested domain; and
+
+4.  the observable diagram commutes,
+    ``` math
+    \begin{CD}
+    u_\ast @>{\mathcal R_{\mathrm{KK}}}>>
+           \mathcal K_\sigma @>{\operatorname{Red}_{\mathrm{KK}}}>>
+           \mathfrak L_\sigma\\
+    @V{\operatorname{Ev}_{\mathrm{MTT}}}VV
+    && @VV{\operatorname{Ev}_4}V\\
+    \mathcal O_\sigma @= \mathcal O_\sigma .
+    \end{CD}
+    ```
+
+</div>
+
+Equivalently, the commuting condition may be read algebraically as
 ``` math
-\begin{equation}
-g_{abc}\sim \int_{B_{\rm KK}}\!\mathrm{d}^dy\,\sqrt{h}\;Y_a(y)Y_b(y)Y_c(y).
-\end{equation}
+\operatorname{Ev}_{\mathrm{MTT}}(u_\ast)
+ =
+ \operatorname{Ev}_4\!\left(
+ \operatorname{Red}_{\mathrm{KK}}
+ (\mathcal R_{\mathrm{KK}}(u_\ast))\right).
 ```
 
-## Dimensional interpretation: compactification vs. projection
+<div id="thm:conditional" class="theorem">
 
-We now give a precise account of the two equivalent descriptions used in this series.
-
-#### (A) Standard compactification (10D $`\to`$ 4D).
-
-Write $`M_{10}=\mathbb{R}_t\times M_3\times B_6`$, with $`B_6`$ compact. Use the block form <a href="#eq:metric" data-reference-type="eqref" data-reference="eq:metric">[eq:metric]</a>, expand fields in harmonics on $`B_6`$, and integrate over $`B_6`$ to obtain the 4D effective theory.
-
-#### (B) Spatial projection (9D $`\to`$ 3D).
-
-Work on a constant-time slice $`\Sigma^9`$ and choose a *Riemannian submersion*
+**Theorem 3** (Conditional MTT–Kaluza–Klein realization). *Suppose a selected MTT state $`u_\ast`$ satisfies Definition <a href="#def:realization" data-reference-type="ref" data-reference="def:realization">2</a>. Then MTT realizes the lower Kaluza–Klein sector
 ``` math
-\pi_{\rm sp}:\ \Sigma^9\longrightarrow M_3,
+\operatorname{Red}_{\mathrm{KK}}
+ \bigl(\mathcal R_{\mathrm{KK}}(u_\ast)\bigr)
 ```
-with compact oriented six-dimensional fibers $`F_6=\pi_{\rm sp}^{-1}(x)`$. Let $`T\Sigma^9=\mathcal{H}\oplus\mathcal{V}`$ be the orthogonal horizontal/vertical split. An Ehresmann connection identifies $`\mathcal{H}`$ and defines horizontal lifts. In adapted coordinates
-``` math
-g_{\Sigma^9}=g_{M_3}+h_{mn}(y)\,(\mathrm{d}y^m+A^{(m)}{}_\mu\mathrm{d}x^\mu)(\mathrm{d}y^n+A^{(n)}{}_\nu\mathrm{d}x^\nu),
-```
-which is the KK metric <a href="#eq:metric" data-reference-type="eqref" data-reference="eq:metric">[eq:metric]</a> on $`\Sigma^9`$. Reattaching time gives $`M_{10}=\mathbb{R}_t\times\Sigma^9`$.
-
-<div id="lem:dictionary" class="lemma">
-
-**Lemma 1** (Zero-mode dictionary). Assume $`(F_6,h)`$ is compact and the background lies in the left-invariant sector on $`F_6`$. Then:
-
-1.  Harmonic zero-modes on $`B_6`$ in (A) are in one-to-one correspondence with fiberwise constant horizontal sections in (B).
-
-2.  The isometry-induced gauge bosons $`A^{(a)}{}_\mu`$ are obtained in both pictures by projecting $`g_{\mu m}`$ on Killing vectors $`\xi^{(a)m}`$; the kinetic matrix equals $`V_6^{-1}\!\int_{F_6}\sqrt{h}\,h_{mn}\,\xi^{(a)m}\xi^{(b)n}`$.
-
-3.  The Planck mass and gauge couplings computed by fiber integration in (B) coincide with the $`B_6`$ integrals in (A).
+at scope $`\sigma`$. If $`\mathcal C_N`$ is exact, the assertion is exact on the declared ansatz. If $`\mathcal C_N`$ supplies error $`\epsilon_N`$, every observable in $`\mathcal O_\sigma`$ is realized only to the propagated stated error.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* (i) Left-invariance on $`F_6`$ restricts background tensors to a finite invariant basis; harmonic zero-modes are horizontal fiberwise constants. (ii) In both pictures $`g_{\mu m}`$ expands on the Killing frame, producing the same $`A^{(a)}{}_\mu`$ and inner product. (iii) Fubini’s theorem factorizes the time and fiber integrals, so reduced 4D couplings agree term-by-term with $`B_6`$ integration. ◻
-
-</div>
-
-<div id="prop:proj-compact" class="proposition">
-
-**Proposition 2** (Projection–compactification equivalence). *Let $`\pi_{\rm sp}:\Sigma^9\to M_3`$ be a Riemannian submersion with compact fibers $`F_6`$, and assume the background and zero-modes lie in the left-invariant sector on $`F_6`$. Then (B) is equivalent, at background and zero-mode level, to (A) with $`B_6=F_6`$: (a) the KK metric is <a href="#eq:metric" data-reference-type="eqref" data-reference="eq:metric">[eq:metric]</a>; (b) the set of zero-modes and their masses/couplings coincide; (c) the 4D action from integrating over $`F_6`$ equals that from integrating over $`B_6`$.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Combine Lemma <a href="#lem:dictionary" data-reference-type="ref" data-reference="lem:dictionary">1</a> with $`M_{10}=\mathbb{R}_t\times\Sigma^9`$ and <a href="#eq:metric" data-reference-type="eqref" data-reference="eq:metric">[eq:metric]</a>. Masses $`m_n^2=\lambda_n/R_{\rm KK}^2`$ depend only on the fiber spectrum and $`R_{\rm KK}`$; couplings follow from the same fiber integrals (see §<a href="#sec:4D" data-reference-type="ref" data-reference="sec:4D">5</a>). ◻
-
-</div>
-
-#### Triplet geometry and “one $`3`$D + internal $`(3{+}3)`$D.”
-
-In the modal triplet setting, nine spatial directions organize as three orthogonal 3D bundles. Selecting *one* as the observed $`M_3`$, the remaining two combine into $`F_6`$: “every 3D point carries an internal $`(3{+}3)`$D fiber”, which is exactly the KK internal $`B_6`$.
-
-#### Remarks on twisting/warping/boundaries.
-
-Nontrivial fibrations (monodromies/Wilson lines) contribute to the effective gauging; warping alters fiber measures; orbifolds/boundaries project modes. The equivalence above persists at background/zero-mode level.
-
-# FCC–KK Background Equivalence (Left-Invariant Sector)
-
-<div class="definition">
-
-**Definition 3** (Left-invariant ansatz). Let $`\{\omega^A\}`$ be a finite left-invariant basis of forms on $`B_{\rm KK}`$. A *left-invariant background* is one for which the metric, torsion (if any), gauge fields, and curvature tensors expand entirely on $`\{\omega^A\}`$ and their wedge products.
+*Proof.* The source map supplies one lower record rather than a list of mutually unrelated compatible objects. The standard reduction functional is therefore defined on that record. The consistency certificate makes the reduction exact or controlled at the declared scope, while commutation of the evaluation diagram identifies the upper and lower observable values. No conclusion is asserted outside the domains, order, cutoff, sources, or observables recorded in $`\sigma`$. ◻
 
 </div>
 
 <div class="remark">
 
-**Remark 4** (Nomizu and invariant cohomology). On nilmanifolds and many homogeneous spaces the left-invariant complex computes de Rham cohomology (Nomizu’s theorem ). In such cases, expanding $`\mathrm{d}H`$, $`\mathrm{Tr}R^2`$, $`\mathrm{Tr}F^2`$ and similar tensors on a left-invariant basis is *cohomologically complete*. This justifies the componentwise FCC analysis in explicit fixed-point examples.
+*Remark 4* (Why the theorem is substantive but conditional). The theorem is not the empty statement that equal models are equal. It fixes the exact source, covariance, normalization, truncation, and evaluation obligations whose omission previously allowed a representation to be remembered as a derivation. Its hypotheses are nevertheless not yet all discharged by current MTT geometry.
 
 </div>
 
-<div id="def:FCC" class="definition">
+# Canonical $`4+6`$ geometry
 
-**Definition 5** (Fixed-point compactification condition (FCC)). Fix integer data $`\mathbf{n}\in\mathbb{Z}^N`$ (fluxes/holonomies) and continuous parameters $`\bm{\lambda}\in\mathbb{R}^M`$ (radii/torsion constants). The *FCC* is the finite algebraic/Diophantine system
+## The physical specialization
+
+The canonical physical specialization used in current MTT is
 ``` math
-\begin{equation}
-\label{eq:FCC}
-\mathbf{F}(\bm{\lambda};\mathbf{n})=0,
-\end{equation}
+\pi:M_{10}\longrightarrow M_4,
+  \qquad \dim M_4=4,\qquad \dim X_x=6,
 ```
-consisting of (i) componentwise background equations (Einstein and, where relevant, Bianchi/duality) projected on left-invariant bases, together with (ii) primitivity and (iii) quantization/integrality constraints.
+with a globally hyperbolic Lorentzian base in the physical completion and compact Riemannian fibers. Positive elliptic modal operators act vertically. They organize internal states; they do not add causal time directions .
 
-</div>
+This $`4+6`$ architecture is a declared physical realization of the dimension-neutral MTT Hilbert-bundle formalism. It is not derived merely from the existence of three modal labels. If a selected physical six-manifold is eventually supplied, it must still come with the geometry, connections, action, operators, and reduction data in Definition <a href="#def:record" data-reference-type="ref" data-reference="def:record">1</a>.
 
-<div id="prop:alg" class="proposition">
+## What the $`3\times3`$ field actually counts
 
-**Proposition 6** (Algebraic reduction). *In the left-invariant ansatz, the higher-dimensional background equations for $`M_4\times B_{\rm KK}`$ reduce exactly to the finite algebraic/Diophantine system <a href="#eq:FCC" data-reference-type="eqref" data-reference="eq:FCC">[eq:FCC]</a>.*
+Let $`TP`$ and $`TI`$ be oriented Euclidean rank-three bundles. A local world-in-world comparison field
+``` math
+Q_{\mathrm{WW}}\in\Gamma(\operatorname{Hom}(TP,TI))
+```
+has nine components after choosing frames. Around a nonsingular background, polar decomposition gives
+``` math
+\operatorname{Mat}(3,\mathbb R)
+ =
+ \mathfrak{so}(3)\oplus\operatorname{Sym}(3,\mathbb R),
+ \qquad 9=3+6.
+```
+Relative to an orthonormal flag,
+``` math
+\operatorname{Sym}(3,\mathbb R)
+ =
+ \mathbb RI_3\oplus\mathcal D_0\oplus\mathcal O,
+ \qquad \dim(\mathbb RI_3,\mathcal D_0,\mathcal O)=(1,2,3).
+```
+Thus the component identity
+``` math
+1+3\times3=(1+3)+(1+2+3)=4+6=10
+```
+is exact once one ordering scalar is supplied. It is not manifold-dimension multiplication. Nor does it prove that the four components are a Lorentzian tangent space or that the six strain components globalize to the tangent bundle of a compact physical fiber.
+
+The identity is useful because it presents a candidate local interface: orientation directions can be quotiented while the six strain directions carry the $`1+2+3`$ filtration. The missing theorem is global. It must intertwine bundles, connections, covariant derivatives, measures, and operators, not just match ranks.
+
+## The constant-time $`9\to3`$ picture
+
+Suppose the ten-dimensional fibration already has compatible splittings
+``` math
+M_{10}\simeq\mathbb R_t\times\Sigma_9,
+ \qquad
+ M_4\simeq\mathbb R_t\times M_3,
+```
+and $`\pi`$ preserves the time coordinate. Restriction to a time slice then gives
+``` math
+\pi_t:\Sigma_9\longrightarrow M_3
+```
+with the same six-dimensional fiber. Reattaching time recovers the original $`10\to4`$ fibration.
+
+<div id="prop:slice" class="proposition">
+
+**Proposition 5** (Spatial-slice identity). *Under the compatible product and time-preservation hypotheses above, the $`9\to3`$ spatial projection and the $`10\to4`$ fibration describe the same fiberwise geometric data after restriction and reattachment of the supplied time factor.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Each tensor (Ricci, stress tensors, topological densities) wedges and contracts to a finite combination of invariant basis elements; so do flux/holonomy contributions. Projecting yields a *finite* set of scalar equations in the expansion coefficients. Primitivity and quantization add linear/integral constraints. Conversely, a solution of <a href="#eq:FCC" data-reference-type="eqref" data-reference="eq:FCC">[eq:FCC]</a> reconstructs all tensors as invariant combinations obeying the background equations. No PDE remains. ◻
-
-</div>
-
-<div id="thm:equiv" class="theorem">
-
-**Theorem 7** (FCC–KK equivalence (background level)). *Let $`B_{\rm KK}`$ admit a left-invariant basis and let the background lie in the left-invariant sector. Then any left-invariant solution of the higher-dimensional equations is a solution of <a href="#eq:FCC" data-reference-type="eqref" data-reference="eq:FCC">[eq:FCC]</a>, and any solution of <a href="#eq:FCC" data-reference-type="eqref" data-reference="eq:FCC">[eq:FCC]</a> yields a left-invariant background solving the higher-dimensional equations.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Forward: project a solution on the finite basis to obtain <a href="#eq:FCC" data-reference-type="eqref" data-reference="eq:FCC">[eq:FCC]</a>. Converse: given $`(\bm{\lambda},\mathbf{n})`$ solving <a href="#eq:FCC" data-reference-type="eqref" data-reference="eq:FCC">[eq:FCC]</a>, assemble tensors from invariant coefficients; the equations hold componentwise on the spanning basis. ◻
-
-</div>
-
-<div id="cor:implicit" class="corollary">
-
-**Corollary 8** (Local existence/uniqueness). *Assume $`\mathbf{F}`$ is $`C^1`$ in $`\bm{\lambda}`$ for fixed $`\mathbf{n}`$ and the Jacobian $`\partial \mathbf{F}/\partial\bm{\lambda}`$ is invertible at $`(\bm{\lambda}_*,\mathbf{n}_*)`$. Then a unique solution branch $`\bm{\lambda}(\mathbf{n})`$ exists locally (implicit function theorem).*
+*Proof.* The restriction of $`\pi`$ to $`\{t\}\times\Sigma_9`$ has base $`\{t\}\times M_3`$ and unchanged vertical bundle. Conversely, taking the product of $`\pi_t`$ with $`\operatorname{Id}_{\mathbb R_t}`$ reconstructs $`\pi`$. The claim is therefore an identity between two descriptions of one already supplied fibration. ◻
 
 </div>
 
 <div class="remark">
 
-**Remark 9** (Concrete illustrations). On Iwasawa the FCC reduces to one scalar equation fixing a radius in terms of integer flux data; on Lens$`\times`$Nil it fixes a ratio of radii in the invariant sector. See the companion fixed-point paper for coefficient-level solutions (explicit bases, integers, anomaly matching).
+*Remark 6*. Proposition <a href="#prop:slice" data-reference-type="ref" data-reference="prop:slice">5</a> is not a derivation of time, three-space, or six compact directions. If the metric is not product-like, the fibration depends on time, or the horizontal distribution mixes causal and vertical directions, additional hypotheses replace this elementary identity.
 
 </div>
 
-# Effective 4D Action from MTT
+## The shared circle
 
-## Planck mass and Weyl frame
+Current MTT finite geometry contains one universal flat cyclic line whose pullbacks agree across several selected finite carriers. This is stronger than noticing several isomorphic copies of $`U(1)`$: it identifies common connection and holonomy data at the proven finite level . It still does not make that line:
 
-Define $`V_d=\int_{B_{\rm KK}}\mathrm{d}^dy\,\sqrt{h}`$. Reducing <a href="#eq:MTTaction" data-reference-type="eqref" data-reference="eq:MTTaction">[eq:MTTaction]</a> and rescaling to 4D Einstein frame yield
+-
+-
+-
+-
+
+Any of those identifications requires a source-preserving geometric intertwiner with the relevant metric radius, spin structure, connection, and action. The corrected M-theory paper states the analogous circle boundary for eleven-dimensional reduction .
+
+# Spectral origin of Kaluza–Klein masses
+
+## A fixed compact fiber
+
+Let $`X`$ be a closed compact Riemannian manifold and let $`E\to X`$ be a Hermitian vector bundle. A formally self-adjoint elliptic operator
 ``` math
-\begin{equation}
-\label{eq:Mpl}
-M_{\rm Pl}^2=\frac{V_d}{\kappa_D^2}.
-\end{equation}
+L_X:\mathcal D(L_X)\subset L^2(X,E)\longrightarrow L^2(X,E)
 ```
+with its self-adjoint realization has compact resolvent. Its spectrum is discrete with finite multiplicities and an orthonormal eigenbasis $`\{u_n\}`$ . The use of internal momentum and twists to generate lower-dimensional masses is standard Kaluza–Klein machinery .
 
-## Gravitational sector
-
-The $`D`$-dimensional Ricci scalar splits as
+Consider first a scalar on the unwarped product $`M_4\times X`$ with
 ``` math
-\begin{equation}
-\label{eq:Rsplit}
-R_D=R_4+R_h-\frac14 h_{mn}F^{(m)}_{\ \mu\nu}F^{(n)\,\mu\nu}-\frac14 \mathrm{Tr}\!\big(h^{-1}\partial_\mu h\,h^{-1}\partial^\mu h\big)+\cdots,
-\end{equation}
+S[\Phi]=-\frac12\int_{M_4\times X}
+ \left(
+ |\mathrm d_{M_4}\Phi|^2
+ +\langle\Phi,L_X\Phi\rangle
+ +m_D^2|\Phi|^2
+ \right)\mathrm d\mathrm{vol}_{4}\mathrm d\mathrm{vol}_{X}.
 ```
-with $`F^{(m)}{}_{\mu\nu}=\partial_\mu A^{(m)}{}_\nu-\partial_\nu A^{(m)}{}_\mu+\cdots`$. Integration and Weyl rescaling give the 4D Einstein term, gauge kinetic terms from isometries, sigma-model terms for moduli, and a geometric potential from $`R_h`$ and Weyl terms.
-
-## Gauge sector from isometries
-
-Let $`\{\xi^{(a)}\}`$ generate $`G_{\rm KK}`$ with inner products
+For
 ``` math
-\begin{equation}
-\label{eq:gammaab}
-\gamma_{ab}=\frac{1}{V_d}\int_{B_{\rm KK}}\mathrm{d}^dy\,\sqrt{h}\,h_{mn}\,\xi^{(a)m}\xi^{(b)n}.
-\end{equation}
+L_Xu_n=\lambda_nu_n,\qquad
+ \int_X\overline{u_m}u_n\,\mathrm d\mathrm{vol}_{X}=\delta_{mn},
+\qquad
+ \Phi(x,y)=\sum_n\phi_n(x)u_n(y),
 ```
-From <a href="#eq:Rsplit" data-reference-type="eqref" data-reference="eq:Rsplit">[eq:Rsplit]</a> one finds
+orthogonality diagonalizes the quadratic action.
+
+<div id="lem:masses" class="lemma">
+
+**Lemma 7** (Fixed-background spectral mass dictionary). *Under the preceding hypotheses, the four-dimensional scalar modes have
 ``` math
-\begin{equation}
-\label{eq:gaugecoupling}
-S^{(4)}_{\rm gauge}=-\frac14\int\mathrm{d}^4x\,\sqrt{-g}\,\Big(\frac{M_{\rm Pl}^2}{2}\,\gamma^{ab}\Big)F^{(a)}_{\mu\nu}F^{(b)\,\mu\nu},\qquad \frac{1}{g_{ab}^2}=\frac{M_{\rm Pl}^2}{2}\,\gamma^{ab}.
-\end{equation}
+m_n^2=m_D^2+\lambda_n.
 ```
-*Dimensional check.* With $`[\kappa_D^{-2}]=L^{-(D-2)}`$ and $`[V_d]=L^d`$, $`M_{\rm Pl}^2`$ has $`L^{-2}`$; $`\gamma^{ab}`$ is dimensionless. Hence $`g_{ab}`$ is dimensionless.
-
-## Scalars and moduli
-
-Write $`h_{mn}=h^*_{mn}+\sum_I \phi^I Y^{(I)}_{mn}`$. Then
+If $`h=R^2h_0`$ and $`L_X=-\Delta_h`$, then
 ``` math
-\begin{equation}
-S^{(4)}_{\rm moduli}=-\frac12\int\mathrm{d}^4x\,\sqrt{-g}\,G_{IJ}\,\partial_\mu\phi^I\partial^\mu\phi^J - \int\mathrm{d}^4x\,\sqrt{-g}\,V_{\rm mod}(\phi),
-\end{equation}
+\lambda_n(h)=R^{-2}\widehat\lambda_n(h_0),
+ \qquad
+ m_n^2=m_D^2+\frac{\widehat\lambda_n}{R^2}.
 ```
-with $`G_{IJ}`$ from the trace term in <a href="#eq:Rsplit" data-reference-type="eqref" data-reference="eq:Rsplit">[eq:Rsplit]</a> and $`V_{\rm mod}`$ induced by $`R_h`$ plus gap terms. The FCC typically fixes some ratios and may leave an overall scale at this order.
-
-## Fermions and chirality
-
-Internal eigenspinors of the Dirac operator $`D_h`$ give 4D spinors with masses $`m_r=|\lambda_r|/R_{\rm KK}`$; chiral zero-modes occur when $`{\rm index}(D_h)\neq 0`$, fixed by topology and bundle data on $`B_{\rm KK}`$.
-
-## Topological terms
-
-Higher-dimensional topological terms reduce to 4D Chern–Simons and $`\theta`$-like couplings with coefficients given by internal characteristic class integrals.
-
-## Truncation consistency and gap control
-
-Let $`\lambda_*>0`$ be the first nonzero eigenvalue of the relevant internal operator (Laplacian/Dirac/Lichnerowicz). Define
-``` math
-\begin{equation}
-\label{eq:eps}
-M_{\rm KK}:=\frac{\sqrt{\lambda_*}}{R_{\rm KK}},\qquad \varepsilon:=\frac{M_{\rm KK}}{\Lambda_{\rm gap}}\ll 1,
-\end{equation}
-```
-where $`\Lambda_{\rm gap}`$ is the modal gap scale (MTT). Then mixings that source heavy modes are suppressed by $`\varepsilon`$ at tree level, justifying a zero-mode truncation. On homogeneous cosets $`B_{\rm KK}=G/H`$ the standard group-theoretic consistent truncation applies; the FCC selects the discrete invariant vacuum within that truncation.
-
-# Mass Spectrum and Mode Expansion
-
-## Eigenmodes and masses
-
-Scalars: $`-\Delta_0Y_n=\lambda_n^{(0)}Y_n\Rightarrow m_n^2=M_D^2+\lambda_n^{(0)}/R_{\rm KK}^2`$. Coexact vectors: $`-\Delta_1Y^{(n)}_m=\lambda_n^{(1)}Y^{(n)}_m`$, $`\nabla^mY^{(n)}_m=0\Rightarrow m_n^2=\lambda_n^{(1)}/R_{\rm KK}^2`$. Dirac: $`D_h\eta_r=\lambda_r^{(1/2)}\eta_r\Rightarrow m_r=|\lambda_r^{(1/2)}|/R_{\rm KK}`$.
-
-## Degeneracies and selection rules
-
-If $`B_{\rm KK}`$ is homogeneous, harmonics furnish $`G_{\rm KK}`$ representations; overlap integrals obey Clebsch–Gordan selection rules.
-
-## Mixings from curvature and background fields
-
-Background curvature, torsion, and internal gauge backgrounds induce mixings among near-degenerate modes; the mass matrix schematically reads
-``` math
-M^2_{mn}=\frac{\lambda_n}{R_{\rm KK}^2}\delta_{mn}+\langle Y_m|\delta\mathcal{O}(R_h,\text{torsion},F;\text{gap})|Y_n\rangle.
-```
-
-## Examples
-
-Flat $`T^d`$: $`\lambda_{\vec n}=(2\pi)^2\sum_i n_i^2/L_i^2\Rightarrow m^2_{\vec n}=\sum_i(2\pi n_i)^2/L_i^2+M_D^2`$. Sphere $`S^d(R)`$: $`\lambda_\ell^{(0)}=\ell(\ell+d-1)`$, $`m_\ell^2=\ell(\ell+d-1)/R^2+M_D^2`$.
-
-## Chirality and index
-
-Chiral 4D fermions correspond to zero-modes of $`D_h`$ with $`{\rm index}(D_h)=\int_{B_{\rm KK}}\widehat{A}(TB_{\rm KK})\wedge \mathrm{ch}(V)`$, fixed by internal topology and bundle data.
-
-# Gauge Coupling Structure
-
-## Isometry–gauge correspondence
-
-Zero-mode gauge bosons originate from internal metric components along Killing vectors of $`B_{\rm KK}`$. Equations <a href="#eq:gammaab" data-reference-type="eqref" data-reference="eq:gammaab">[eq:gammaab]</a>–<a href="#eq:gaugecoupling" data-reference-type="eqref" data-reference="eq:gaugecoupling">[eq:gaugecoupling]</a> give the 4D kinetic matrix and couplings.
-
-## Higher-dimensional gauge fields
-
-If $`D`$-dimensional Yang–Mills fields are present, singlet internal profiles supply additional gauge factors with $`g_{n,4D}^{-2}=V_d\,g_{n,D}^{-2}`$.
-
-## Unification patterns and kinetic mixing
-
-In symmetric compactifications (e.g. cosets) $`\gamma_{ab}\propto\delta_{ab}`$ and gauge couplings unify at $`\mu=M_{\rm KK}`$. For anisotropic $`B_{\rm KK}`$, $`\gamma_{ab}`$ can be non-diagonal; diagonalization fixes physical couplings and generator alignments. The FCC fixes the moduli entering $`\gamma_{ab}`$ at the compactification point, so $`g_{ab}(\mu=M_{\rm KK})`$ are predicted numbers.
-
-# Phenomenology and Symmetry Breaking
-
-## Sources of symmetry breaking
-
-Symmetry breaking can arise from scalar vevs, geometric asymmetries of $`B_{\rm KK}`$, Wilson lines, flux backgrounds, and orbifold/boundary projections. The FCC constrains which patterns are compatible.
-
-## Hierarchy of scales
-
-Key scales: $`M_{\rm Pl}\sim V_d^{1/2}/\kappa_D`$, $`M_{\rm KK}\sim 1/R_{\rm KK}`$, $`\Lambda_{\rm gap}\gg M_{\rm KK}`$. The FCC correlates $`R_{\rm KK}`$ with gap parameters.
-
-## Chirality and families
-
-Anomaly-safe chiral spectra follow from the index; superselection integers fix family number (e.g. $`N_{\rm chiral}=3`$ in SM-like sectors).
-
-## Thresholds and running
-
-Below $`M_{\rm KK}`$, standard RG running applies from initial conditions set by <a href="#eq:gaugecoupling" data-reference-type="eqref" data-reference="eq:gaugecoupling">[eq:gaugecoupling]</a>; threshold corrections are controlled by $`\varepsilon`$ in <a href="#eq:eps" data-reference-type="eqref" data-reference="eq:eps">[eq:eps]</a>.
-
-# Conclusion and Outlook
-
-#### Summary.
-
-We have shown that, in the left-invariant sector, MTT’s fixed point selects KK backgrounds via a finite algebraic/Diophantine system—the FCC—which is equivalent to the higher-dimensional background equations. The 4D Planck mass, gauge couplings, and mass spectra are geometric invariants determined by the selected $`B_{\rm KK}`$ and $`R_{\rm KK}`$. We proved that the 9D$`\to`$<!-- -->3D projection language used in the fixed-point series is equivalent to the standard 10D$`\to`$<!-- -->4D compactification at background/zero-mode level.
-
-#### Outlook.
-
-Combining this with explicit matter sectors and specific $`B_{\rm KK}`$ (e.g. group/coset manifolds) yields phenomenology-ready models. The companion fixed-point constructions supply detailed exemplars where the FCC is solved at the coefficient level; the same template extends to other settings.
-
-# Projection formalism cheat-sheet
-
-#### Data.
-
-A Riemannian submersion $`\pi_{\rm sp}:\Sigma^9\to M_3`$ with compact fiber $`(F_6,h)`$, horizontal distribution $`\mathcal{H}`$ (Ehresmann connection), vertical distribution $`\mathcal{V}=\ker\,\mathrm{d}\pi_{\rm sp}`$.
-
-#### Metric.
-
-In horizontal/vertical adapted frames,
-``` math
-g_{\Sigma^9}=g_{M_3}+h_{mn}(y)\,(\mathrm{d}y^m + A^{(m)}{}_\mu\,\mathrm{d}x^\mu)(\mathrm{d}y^n + A^{(n)}{}_\nu\,\mathrm{d}x^\nu).
-```
-
-#### Gauge bosons.
-
-Expand $`A^{(m)}{}_\mu`$ on Killing vectors $`\xi^{(a)m}(y)`$: $`A^{(m)}{}_\mu = A^{(a)}{}_\mu\,\xi^{(a)m} + \cdots`$. Then
-``` math
-\frac{1}{g_{ab}^2}=\frac{M_{\rm Pl}^2}{2}\,\gamma^{ab},\qquad
-\gamma_{ab}=\frac{1}{V_6}\int_{F_6}\!\sqrt{h}\,h_{mn}\,\xi^{(a)m}\xi^{(b)n},
-```
-identical to the compactification formula <a href="#eq:gaugecoupling" data-reference-type="eqref" data-reference="eq:gaugecoupling">[eq:gaugecoupling]</a>.
-
-#### Masses.
-
-Zero-modes: fiberwise constant harmonics on $`F_6`$; KK tower: $`m_n^2=\lambda_n/R_{\rm KK}^2`$, with $`\lambda_n`$ eigenvalues on $`F_6`$.
-
-#### FCC.
-
-In left-invariant backgrounds the higher-dimensional equations reduce to a finite algebraic/Diophantine system in fiber radii/torsion constants and integer data (flux/holonomy). Solving this system *selects* the background, independent of whether one speaks the compactification or projection language (Thm. <a href="#thm:equiv" data-reference-type="ref" data-reference="thm:equiv">7</a>).
-
-<div class="thebibliography">
-
-99
-
-T. Kaluza, *Zum Unitätsproblem der Physik*, Sitzungsber. Preuss. Akad. Wiss. Berlin (Math. Phys.) (1921) 966–972.
-
-O. Klein, *Quantentheorie und fünfdimensionale Relativitätstheorie*, Z. Phys. **37** (1926) 895–906.
-
-M. J. Duff, B. E. W. Nilsson and C. N. Pope, *Kaluza–Klein Supergravity*, Phys. Rept. **130** (1986) 1–142.
-
-T. Appelquist, A. Chodos and P. G. O. Freund (eds.), *Modern Kaluza–Klein Theories*, Addison–Wesley (1987).
-
-I. Chavel, *Eigenvalues in Riemannian Geometry*, Academic Press (1984).
-
-K. Nomizu, *On the cohomology of compact homogeneous spaces*, Ann. Math. **59** (1954) 531–538.
-
-P. Nero, *Fixed-Point Flux Compactifications in Heterotic String Theory: Explicit Solutions on the Iwasawa Manifold and Lens$`\times`$Nil Geometries* (2025).
-
-P. Nero. *Modal Triplet Theory: Foundation* Zenodo, 2025.
-
-P. Nero. *Fixed Points VI: Formal Synthesis and Physical Interpretations* Zenodo, 2025.
+The zero modes are $`\operatorname{Ker}L_X`$; a positive first omitted eigenvalue gives a quadratic spectral separation, not by itself a nonlinear truncation.*
 
 </div>
 
-[^1]: For explicit fixed-point compactifications (Iwasawa and Lens$`\times`$Nil) solved coefficient-by-coefficient in a left-invariant basis, see the companion work on heterotic fixed points; we reference it for context, but do not import string-specific formulae.
+<div class="proof">
 
-[^2]: *Two-of-three rule.* Only two family indices may be simultaneously active in any local interaction monomial in the internal sector, ensuring anomaly-safe representations and forbidding dangerous cubic couplings. At 4D level it induces selection rules in overlap integrals but does not modify the KK reduction.
+*Proof.* Insert the normalized eigenmode expansion into the quadratic action. Self-adjointness and orthogonality remove cross terms, leaving one four-dimensional quadratic action for each $`n`$ with mass squared $`m_D^2+\lambda_n`$. The inverse-square scaling follows from the metric scaling of the scalar Laplacian. ◻
+
+</div>
+
+## Different fields use different operators
+
+For a twisted spinor, the internal Dirac eigenvalue enters the four-dimensional mass matrix, with chirality and zero modes controlled by the spin or spin$`^{c}`$ bundle, twisting connection, and index. For differential forms, the relevant Hodge operator must be combined with gauge constraints and harmonic representatives. Metric fluctuations use a gauge-fixed Lichnerowicz-type operator and can mix with form and scalar fluctuations. Background curvature, torsion, flux, or bundle curvature changes the operator and may produce a matrix-valued eigenproblem.
+
+It is therefore more accurate to write
+``` math
+M^2_{\alpha,mn}
+  =
+  M^2_{\alpha,\mathrm{bulk}}\delta_{mn}
+  +
+  \bigl\langle u_{\alpha m},
+  L_{\alpha,X}u_{\alpha n}\bigr\rangle
+```
+after all constraints and normalizations are fixed. A numerical Kaluza–Klein mass is a conclusion only after $`L_{\alpha,X}`$, its domain, the scale, and the background are selected independently of the target mass.
+
+## Uniform gaps are additional results
+
+Every fixed closed compact elliptic problem has discrete spectrum. A uniform lower bound on the first positive eigenvalue across a varying family does not follow from compactness of each member. Collapse, degeneration, or an eigenvalue crossing zero can destroy such a bound. The corrected Calabi–Yau paper owns the corresponding fixed-background spectral admissibility statement and its uniformity warning . The present paper uses that result rather than duplicating it as an MTT theorem.
+
+# Projection is not truncation
+
+## The nonlinear consistency condition
+
+Let $`P_N`$ project onto retained modes and let $`Q_N=\operatorname{Id}-P_N`$. Writing a field as $`P_N\Phi+Q_N\Phi`$ is a kinematic decomposition. Setting $`Q_N\Phi=0`$ is dynamically valid only if the omitted equations remain satisfied.
+
+<div id="def:consistent" class="definition">
+
+**Definition 8** (Exact consistent truncation). An uplift $`\iota_N:\mathcal F_4\to\mathcal F_D`$ is an exact consistent truncation when there is a lower equation $`\mathcal E_4`$ such that
+``` math
+\mathcal E_D(\iota_N\varphi)=0
+ \quad\Longleftrightarrow\quad
+ \mathcal E_4(\varphi)=0
+```
+on the declared domains. Equivalently, every lower solution uplifts to a higher-dimensional solution, and no omitted equation is sourced by the retained configuration.
+
+</div>
+
+Generic zero-mode truncations are not automatically consistent at nonlinear order. Products of retained harmonics can contain omitted harmonics. Special sphere, group-manifold, and supergravity ansatzes may nevertheless be consistent because symmetry and nonlinear field combinations enforce cancellations . The consistency belongs to the specific uplift ansatz, not to the word “compact.”
+
+## A controlled residual certificate
+
+When exact consistency fails, one can still justify an effective reduction by solving for the omitted modes and bounding their response. The following standard Lyapunov–Schmidt estimate makes the needed information explicit.
+
+<div id="prop:residual" class="proposition">
+
+**Proposition 9** (Omitted-mode correction bound). *Let $`\mathcal E_D:\mathcal X\to\mathcal Y`$ be $`C^1`$ between Banach spaces with compatible splittings $`P_N+Q_N=\operatorname{Id}`$. Fix a retained configuration $`u_0=\iota_N\varphi`$, set
+``` math
+r_N=Q_N\mathcal E_D(u_0),\qquad
+ A_N=Q_ND\mathcal E_D(u_0)\big|_{Q_N\mathcal X},
+```
+and suppose $`A_N:Q_N\mathcal X\to Q_N\mathcal Y`$ is invertible with $`\|A_N^{-1}\|\le\gamma_N^{-1}`$. On the ball $`\|\eta\|\le\rho`$, suppose
+``` math
+\left\|
+Q_N\!\left[
+\mathcal E_D(u_0+\eta)-\mathcal E_D(u_0)-D\mathcal E_D(u_0)\eta
+\right]
+-
+Q_N\!\left[
+\mathcal E_D(u_0+\zeta)-\mathcal E_D(u_0)-D\mathcal E_D(u_0)\zeta
+\right]
+\right\|
+\le L_\rho\|\eta-\zeta\|.
+```
+If
+``` math
+\frac{L_\rho}{\gamma_N}<1,
+ \qquad
+ \frac{\|r_N\|}{\gamma_N}
+ \le
+ \left(1-\frac{L_\rho}{\gamma_N}\right)\rho ,
+```
+then there is a unique $`\eta_\ast\in Q_N\mathcal X`$ in that ball such that
+``` math
+Q_N\mathcal E_D(u_0+\eta_\ast)=0,
+\qquad
+ \|\eta_\ast\|
+ \le
+ \frac{\|r_N\|}
+      {\gamma_N-L_\rho}.
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Write the omitted equation as the fixed-point problem
+``` math
+\eta=
+-A_N^{-1}r_N
+-A_N^{-1}Q_N\!
+\left[
+\mathcal E_D(u_0+\eta)-\mathcal E_D(u_0)-D\mathcal E_D(u_0)\eta
+\right].
+```
+The first inequality makes this map a contraction, and the second makes the closed radius-$`\rho`$ ball invariant. Banach’s fixed-point theorem gives existence and uniqueness. Taking norms in the fixed-point equation gives the stated bound. ◻
+
+</div>
+
+<div class="remark">
+
+*Remark 10* (What a gap does). A spectral gap can help bound $`\|A_N^{-1}\|`$, but the other quantities do not disappear. One must still compute the omitted residual $`r_N`$, control the nonlinear Lipschitz constant $`L_\rho`$, and propagate the correction into the retained equation and requested observables. A dimensionless ratio of two named scales is not an error estimate unless these links are proved.
+
+</div>
+
+# Finite invariant ansatzes and the FCC
+
+Version 1 introduced a fixed-point compactification condition (FCC): a finite algebraic system obtained by expanding a higher-dimensional background in a left-invariant basis. That construction has a correct but narrow scope.
+
+Let $`\mathcal A_{\mathrm{inv}}=\{u(a):a\in\mathbb R^k\}`$ be a finite invariant ansatz. Suppose all derivatives, contractions, and nonlinear operations appearing in $`\mathcal E_D`$ send $`\mathcal A_{\mathrm{inv}}`$ into a finite residual space with linearly independent basis $`\{e_j\}_{j=1}^{m}`$. Then
+``` math
+\mathcal E_D(u(a))=\sum_{j=1}^{m}F_j(a)e_j.
+```
+
+<div id="prop:fcc" class="proposition">
+
+**Proposition 11** (Exact scope of an invariant coefficient system). *Under the stated closure and linear-independence hypotheses,
+``` math
+\mathcal E_D(u(a))=0
+ \quad\Longleftrightarrow\quad
+ F_1(a)=\cdots=F_m(a)=0
+```
+for configurations $`u(a)`$ inside the chosen ansatz.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The forward implication follows by taking coefficients. The converse follows because vanishing of every coefficient makes the residual zero in the finite residual space. ◻
+
+</div>
+
+Proposition <a href="#prop:fcc" data-reference-type="ref" data-reference="prop:fcc">11</a> does not say that every solution of the full PDE is left-invariant, that time-dependent perturbations remain in the ansatz, or that the ansatz gives a consistent truncation. Those are separate statements. Nomizu’s theorem computes de Rham cohomology from invariant forms on compact nilmanifolds ; it does not imply that all metrics, connections, nonlinear field configurations, or PDE solutions are invariant.
+
+Nor does a finite algebraic system automatically select a unique vacuum. It may have no solutions, several isolated solutions, positive-dimensional branches, or singular components. An invertible Jacobian at one solution gives a locally unique branch under specified parameter variation; it does not select the integer data, fix an overall scale, or prove global uniqueness.
+
+Accordingly, “FCC” can be retained as a useful name for the residual coefficient system of a declared invariant ansatz. It must not be described as equivalent to the unrestricted higher-dimensional theory without an independent completeness or consistent-truncation theorem.
+
+# Four-dimensional quantities
+
+## Planck normalization
+
+For an unwarped product with fixed internal metric and Einstein–Hilbert term
+``` math
+S_D^{\mathrm{EH}}
+ =
+ \frac{1}{2\kappa_D^2}
+ \int_{M_4\times X}\sqrt{-g_D}\,R_D,
+```
+integration over $`X`$ gives
+``` math
+\frac{1}{\kappa_4^2}
+ =
+ \frac{\operatorname{Vol}(X,h)}{\kappa_D^2}
+```
+before any further convention-dependent rescaling. Warping, a varying dilaton, or moduli replace the ordinary volume by a weighted integral and require an explicit Weyl transformation to four-dimensional Einstein frame. Thus the formula computes $`\kappa_4`$ from supplied $`(\kappa_D,h)`$; it does not select either input.
+
+## Gauge fields and couplings
+
+If $`K_a`$ are Killing vector fields of the internal metric, off-diagonal metric components along them can produce lower-dimensional vector fields. The Lie brackets
+``` math
+[K_a,K_b]=f_{ab}{}^{c}K_c
+```
+give the candidate gauge algebra. In a simple unwarped convention, the kinetic matrix contains the internal Gram integral
+``` math
+\mathcal G_{ab}
+ \propto
+ \frac{1}{\kappa_D^2}
+ \int_X
+ h(K_a,K_b)\,\mathrm d\mathrm{vol}_h .
+```
+The proportionality factor depends on the metric ansatz, generator normalization, radius factors, and Weyl frame. Higher-dimensional gauge connections provide additional gauge sectors by a different mechanism.
+
+An internal isometry therefore makes a gauge interpretation possible, but it does not select the observed gauge group or its normalized couplings. Moreover, retaining all isometry vectors need not define a nonlinearly consistent truncation for an arbitrary compact space .
+
+## Overlap couplings
+
+For normalized internal profiles, effective cubic coefficients have the generic form
+``` math
+g_{ijk}^{(4)}
+ =
+ g_D
+ \int_X
+ \mathcal I\!\left(u_i,u_j,u_k;
+ h,\nabla,F,\ldots\right)
+ \mathrm d\mathrm{vol}_h ,
+```
+where $`\mathcal I`$ includes the contractions and background insertions dictated by the higher-dimensional action. Selection rules can follow from representations, parity, index theory, or bundle cohomology. Numerical Yukawa or threshold values require the actual normalized wavefunctions, connections, scales, and renormalization transport. The mere existence of an overlap formula is not a value-source theorem.
+
+# Relation to current MTT geometry
+
+## What is already available
+
+Current MTT work provides several pieces that are relevant to a future Kaluza–Klein source map:
+
+1.  a dimension-neutral Hilbert-bundle architecture with explicit operator domains, coherent spectral projectors, and separate stabilization and truncation gates;
+
+2.  the canonical $`4+6`$ physical specialization;
+
+3.  the local six-dimensional strain decomposition $`\operatorname{Sym}(3)=1\oplus2\oplus3`$;
+
+4.  a selected finite $`q=79`$ carrier with the same rank filtration; and
+
+5.  one universal finite differential line with connection- and holonomy-preserving pullbacks across the proven finite sectors .
+
+These are nontrivial compatibility results. They make the desired global map more structured than a guess.
+
+## What is not yet available
+
+Rank agreement does not identify the local strain carrier with the vertical tangent or field bundle of a physical compactification. The current open step is a same-source continuum intertwiner that preserves:
+``` math
+\text{bundle transitions},\quad
+\text{connection},\quad
+\nabla,\quad
+\text{measure},\quad
+\text{operator domains},\quad
+\text{Hessian}.
+```
+The physical $`q=79`$ program additionally needs the selected visible and hidden holomorphic bundles and their Hermitian–Yang–Mills connections before those vertical operators can be executed. Until then, the finite rank carrier is not a Kaluza–Klein compactification record.
+
+## Calabi–Yau, Fu–Yau, and M-theory branches
+
+The corrected Calabi–Yau paper treats strict Calabi–Yau compactification as a conditional realization map and separates fixed-background spectral facts from vacuum selection . The selected $`q=79`$ Fu–Yau program is instead a torsional non-Kähler heterotic branch; it cannot be substituted for a strict Calabi–Yau result merely because both use six internal dimensions.
+
+The corrected M-theory paper treats the eleven-dimensional low-energy record and its massless type-IIA circle reduction . That circle is not automatically the finite shared MTT phase line. This paper supplies the general Kaluza–Klein reduction interface; it does not re-own either the Calabi–Yau spectral theorem or the M-theory circle dictionary.
+
+## Lens–Nil and recursive topology
+
+Circle, Lens, and Nil language may organize filtrations, bundle towers, or effective local models. Literal $`S^1\times\mathrm{Lens}\times\mathrm{Nil}`$ and literal manifold nesting are not current proof sources for the physical $`q=79`$ compactification. In particular, the old Lens–Nil and Fu–Yau models have different global topological data and must not be identified. A recursive or circle-fibered description becomes physical only when the relevant total space, transition functions, connection, and operator compatibility are specified.
+
+# Claim disposition
+
+| Version 1 claim | Version 2 status | Resolution |
+|:---|:---|:---|
+| MTT derives Kaluza–Klein compactification from first principles | Withdrawn | MTT currently supplies a conditional source-and-factorization contract. |
+| MTT selects $`B_{\rm KK}`$, $`R_{\rm KK}`$, and the zero-mode spectrum | Open | These must be emitted as geometry, scale, and operator data by one selected source. |
+| $`9\to3`$ projection independently proves $`10\to4`$ compactification | Narrowed | They are spatial and spacetime descriptions of the same supplied time-compatible $`4+6`$ fibration. |
+| The finite FCC is equivalent to the higher-dimensional PDE | Corrected | It is equivalent only to the residual equations restricted to a closed finite ansatz. |
+| Invariant cohomology makes the ansatz complete | Withdrawn | Cohomological completeness does not imply field-configuration or PDE completeness. |
+| A spectral gap justifies zero-mode truncation | Corrected | A gap helps invert the omitted linear block; residual and nonlinear bounds are also required. |
+| Planck, gauge, and KK masses are MTT predictions | Conditional formulas | They are computed from supplied action normalizations, geometry, operators, and radii. |
+| Internal isometries select the observed gauge group | Open | Isometries provide candidate gauge vectors; selection and nonlinear consistency require additional data. |
+| Iwasawa and Lens–Nil examples prove physical compactification selection | Retired as proof sources | They may remain auxiliary invariant models but do not establish the current physical $`q=79`$ branch. |
+| MTT gap data fix families, thresholds, and observed couplings | Removed | Those claims require selected normalized modes, source values, and renormalization transport. |
+
+# Completion contract
+
+A selected MTT Kaluza–Klein realization will be established only when one source supplies and one independent verification checks the following:
+
+1.  a global $`D`$-dimensional Lorentzian fibration with compact internal geometry, transition maps, horizontal connection, spin or spin$`^{c}`$ data, and all required bundles;
+
+2.  the higher-dimensional field content, action, symmetries, sources, normalizations, and declared classical or quantum order;
+
+3.  the vertical operators with domains, measures, adjoints, boundary conditions, normalized modes, and scale conventions;
+
+4.  the selected background and a proof that it solves the supplied equations, rather than only a subset of projected coefficients;
+
+5.  an exact nonlinear uplift or a residual certificate of the form in Proposition <a href="#prop:residual" data-reference-type="ref" data-reference="prop:residual">9</a>, including propagation to the stated observables;
+
+6.  a source-preserving map from the MTT strain and shared-line data to the physical vertical bundles, connections, derivatives, and Hessians;
+
+7.  normalized four-dimensional Planck, gauge, mass, chirality, and interaction data derived from that same source; and
+
+8.  a clear separation between construction inputs, fitted values, profile checks, and held-out predictions.
+
+The first five items would establish a controlled Kaluza–Klein reduction. The sixth would make it an MTT-sourced reduction. The final two would be needed before phenomenological equivalence or prediction could be claimed.
+
+# Discussion
+
+## Why this correction strengthens the program
+
+The corrected paper asks less rhetorically and more mathematically. It no longer treats the existence of familiar lower formulas as evidence that their inputs were derived. Instead, it turns the missing source into a finite list of typed obligations. This is useful even before closure: different candidate compactifications can be compared row by row, and a failure in geometry, action, truncation, or normalization cannot be hidden inside a generic projection symbol.
+
+The distinction between spectrum and truncation is especially important. Compactness gives a tower. It does not say that the light part of the tower is closed under interactions. The residual certificate identifies the quantities that a computation must actually bound. It also gives a natural place for the MTT fixed-point and semigroup machinery: those methods may control $`\gamma_N`$, $`L_\rho`$, and $`r_N`$, but only after the physical operator and its source have been identified.
+
+## What could become distinctive
+
+Traditional Kaluza–Klein theory begins after a higher-dimensional record is chosen. MTT asks one level upstream whether the same upper object sources the internal geometry, shared line, operators, action, and admissible low sector. A connection-preserving intertwiner and upper-action map would not replace Kaluza–Klein theory; they would explain why a particular record is the correct lower image and why its truncation is admissible.
+
+That is the credible advantage of the MTT route. Component counts and replayed four-dimensional values remain insufficient: the upstream source must reduce independent choices, not rename them.
+
+# Conclusion
+
+Kaluza–Klein reduction is exact mathematics once its higher-dimensional record and consistency hypotheses are fixed. On a closed compact fiber, self-adjoint elliptic operators give discrete towers, and the tower masses are internal eigenvalues with the appropriate metric scaling. Internal isometries and normalized overlap integrals can generate gauge fields and effective couplings. Finite invariant ansatzes can turn their restricted equations into exact algebraic systems.
+
+None of those facts selects the internal space, radius, action, gauge group, or nonlinear truncation. Version 2 therefore replaces the former first-principles claim by a conditional MTT realization theorem and an explicit truncation certificate. It reconciles the spatial $`9\to3`$ language with the canonical $`10\to4`$ fibration, keeps the shared circle as common phase/holonomy data at its proven level, and separates local $`1+2+3`$ rank agreement from the still-open physical continuum intertwiner.
+
+The route forward is sharp: select one physical vertical geometry and action, preserve their connection and Hessian under the MTT source map, execute the appropriate internal operators, and certify the retained sector by exact consistency or quantitative residual bounds. That would turn this contract into a selected MTT Kaluza–Klein realization. Until then it proves compatibility and a rigorous proof interface, not extra-dimensional phenomenology.
+
+#### Corpus-state cross-checks.
+
+- (*numeric certified*).
+
+  Weighted-theta Fourier-tail and Wiener contraction certificate.
+
+- (*derived exact*).
+
+  Literal 81-entry, 729-cocycle finite Cech witness.
+
+- (*derived exact*).
+
+  Executable q=79 exact-branch audit.
+
+- (*derived exact*).
+
+  CRT q=79 theorem on the selected exact branch.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The exact q79 arithmetic, finite rank-two Cech witness, and rank-two Wiener-contraction certificate are contextual evidence for an adjacent selected heterotic branch. They do not directly construct the physical compact six-manifold, higher-dimensional action, nonlinear uplift, normalized vertical mode system, Kaluza-Klein radius, gauge group, consistent truncation, or the connection- and Hessian-preserving MTT-to-Kaluza-Klein realization map.
+
+The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+## Corpus-state cross-checks
+
+- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
+- `A07/literal_cech_witness` (**DERIVED_EXACT**): Literal 81-entry, 729-cocycle finite Cech witness.
+- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
+- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
+
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

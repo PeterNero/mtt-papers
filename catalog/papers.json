@@ -6,9 +6,9 @@
     "papers_with_zenodo_release": 138,
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
-    "superseded_projects_excluded": 59,
-    "zenodo_records": 240,
-    "zenodo_records_matched": 240,
+    "superseded_projects_excluded": 60,
+    "zenodo_records": 241,
+    "zenodo_records_matched": 241,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -7243,6 +7243,110 @@
       ]
     },
     {
+      "abstract": "This paper asks what Modal Triplet Theory (MTT) presently establishes about Kaluza-Klein reduction. A Kaluza-Klein construction begins with a supplied higher-dimensional geometry, action, field content, operator domains, mode normalizations, and reduction ansatz. Compactness then gives discrete internal spectra, but it does not select the internal manifold, its scale, the higher-dimensional action, or a nonlinearly consistent truncation. We package the required inputs as a typed Kaluza-Klein record and define a partial map from an upper MTT state to that record. The main realization theorem is conditional: if one selected MTT state emits every row of the record, the lower consistency and error conditions hold, and MTT evaluation factors through the standard reduction, then MTT realizes that reduced sector at the declared cutoff and order. For a fixed compact fiber we derive the usual tower masses from the eigenvalues of the appropriate internal Laplace-, Dirac-, or Lichnerowicz-type operator. We also distinguish an exact consistent truncation from a spectral projection and give a Lyapunov-Schmidt residual certificate for controlled approximate reduction. The canonical MTT specialization is a ten-dimensional bundle over a four-dimensional Lorentzian base with compact six-dimensional Riemannian fiber. Its constant-time 9-to-3 description is the spatial slice of the same 10-to-4 fibration, not an independent derivation. The local 1 + 3 x 3 = 4 + 6 component identity and the selected finite shared-line carrier motivate this geometry, but they do not yet construct the physical six-manifold or preserve its connection and Hessian. Consequently the paper establishes a reusable and testable reduction contract, not a first-principles selection of extra dimensions, Kaluza-Klein radii, gauge groups, particle masses, or Standard Model parameters.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v2",
+      "date": "Version 2, July 2026",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.17038313",
+        "created": "2026-07-30T18:31:10.210729+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21708733",
+        "files": [
+          {
+            "checksum": "md5:80f15a4e435812a74437bacfaef8132e",
+            "content_url": "https://zenodo.org/api/records/21708733/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 434405
+          }
+        ],
+        "id": "21708733",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21708733",
+        "resource_type": "publication",
+        "title": "Modal Triplet Theory and Kaluza–Klein Reduction: A Conditional 4+6 Spectral and Truncation Contract",
+        "updated": "2026-07-30T18:31:10.954668+00:00",
+        "version": "v2"
+      },
+      "main_tex_sha256": "3b67d245f3bddee30ff8177512dc63b40d2c299d600c775de08071d361ea6b87",
+      "paper_id": "modal-triplet-theory-from-mtt-to-kaluza-klein-theory",
+      "paper_md_sha256": "05c7b70f52a963ebbb09d2d00cfb191d6ff71e9638bec8bb0e9116184b92c9b9",
+      "release_state": "zenodo_released",
+      "result_refs": [],
+      "revision": {
+        "revision_evidence_path": "papers/modal-triplet-theory-from-mtt-to-kaluza-klein-theory/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "e3426788bf82c48df14bbfcca3e808eaa1e61a7eb4d02574bc46e79fa8a23844",
+        "selected_revision": true,
+        "superseded_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Kaluza__Klein_Theory"
+      },
+      "source_provenance": {
+        "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Kaluza__Klein_Theory"
+      },
+      "source_tree_sha256": "b7be645a82c8906c98ee175cb6acaa2daebc2070738bbcf2fe791dbb4c8ab07c",
+      "title": "Modal Triplet Theory and Kaluza–Klein Reduction: A Conditional 4+6 Spectral and Truncation Contract",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.17038313",
+          "created": "2026-07-30T18:31:10.210729+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21708733",
+          "files": [
+            {
+              "checksum": "md5:80f15a4e435812a74437bacfaef8132e",
+              "content_url": "https://zenodo.org/api/records/21708733/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 434405
+            }
+          ],
+          "id": "21708733",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21708733",
+          "resource_type": "publication",
+          "title": "Modal Triplet Theory and Kaluza–Klein Reduction: A Conditional 4+6 Spectral and Truncation Contract",
+          "updated": "2026-07-30T18:31:10.954668+00:00",
+          "version": "v2"
+        },
+        {
+          "concept_doi": "10.5281/zenodo.17038313",
+          "created": "2025-09-02T15:35:29.128595+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.17038314",
+          "files": [
+            {
+              "checksum": "md5:e57336bef1d02c36692ce67dcba9f47e",
+              "content_url": "https://zenodo.org/api/records/17038314/files/Modal_Triplet_Theory__From_MTT_to_Kaluza__Klein_Theory.pdf/content",
+              "key": "Modal_Triplet_Theory__From_MTT_to_Kaluza__Klein_Theory.pdf",
+              "size": 304567
+            }
+          ],
+          "id": "17038314",
+          "match_kind": "title_or_file",
+          "match_score": 1.0,
+          "publication_date": "2025-09-02",
+          "record_url": "https://zenodo.org/records/17038314",
+          "resource_type": "publication",
+          "title": "Modal Triplet Theory: From MTT to Kaluza--Klein Theory",
+          "updated": "2025-09-02T15:35:29.622304+00:00",
+          "version": "v1.0"
+        }
+      ]
+    },
+    {
       "abstract": "This paper determines exactly how far the present Modal Triplet Theory (MTT) gravity program reaches into loop quantum gravity (LQG). It proves an exact conditional composition theorem. If the selected four-dimensional MTT action contains a normalized Holst term and if a global three-plus-one splitting, time gauge, nondegenerate tetrad, and required boundary conditions are supplied, then the standard canonical reduction yields the real Ashtekar–Barbero pair. In the convention used here, the coefficient ratio fixes the Immirzi parameter as its negative inverse. Current MTT results conditionally recover the two-derivative Einstein/TEGR tensor structure, but do not yet emit this parity-odd coefficient; therefore they do not yet predict the Immirzi parameter. The LOST representation, geometric spectra, constraint quantization, and EPRL/FK amplitudes are separately inherited only after their standard hypotheses and constructions are added. This establishes a precise LQG interface and a finite exit contract without treating imported LQG machinery as an MTT derivation.",
       "authors": [
         "Peter Nero"
@@ -8136,82 +8240,6 @@
           "title": "Modal Triplet Theory: Foundation",
           "updated": "2026-01-16T11:34:24.315287+00:00",
           "version": "v6.0"
-        }
-      ]
-    },
-    {
-      "abstract": "We present a first-principles derivation of Kaluza–Klein (KK) compactification from Modal Triplet Theory (MTT), embedding the standard KK framework into MTT’s geometric/topological fixed-point structure. Starting from the MTT higher-dimensional configuration space and modal gap data, we show that the internal space B_{\\rm KK}, its scale R_{\\rm KK}, and the zero-mode spectrum are selected by a finite set of algebraic and integral constraints in a left-invariant basis. We formalize these constraints as a fixed-point compactification condition (FCC) and prove an equivalence (background level) between solving the higher-dimensional field equations in the left-invariant sector and solving the FCC. We then prove that the familiar 10D\\to4D compactification (with a compact B_6) is equivalent, at background and zero-mode level, to the 9D\\to3D projection description used in the fixed-point series (Riemannian submersion with compact six-dimensional fibers). The 4D Planck mass, gauge couplings, and KK masses are calculable geometric invariants of B_{\\rm KK} set by MTT gap parameters. Throughout we keep the presentation conservative and theory-agnostic on matter content, with a short outlook to phenomenology.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "September 2, 2025",
-      "latest_zenodo_release": {
-        "concept_doi": "10.5281/zenodo.17038313",
-        "created": "2025-09-02T15:35:29.128595+00:00",
-        "creators": [
-          "Nero, Peter"
-        ],
-        "doi": "10.5281/zenodo.17038314",
-        "files": [
-          {
-            "checksum": "md5:e57336bef1d02c36692ce67dcba9f47e",
-            "content_url": "https://zenodo.org/api/records/17038314/files/Modal_Triplet_Theory__From_MTT_to_Kaluza__Klein_Theory.pdf/content",
-            "key": "Modal_Triplet_Theory__From_MTT_to_Kaluza__Klein_Theory.pdf",
-            "size": 304567
-          }
-        ],
-        "id": "17038314",
-        "match_kind": "title_or_file",
-        "match_score": 1.0,
-        "publication_date": "2025-09-02",
-        "record_url": "https://zenodo.org/records/17038314",
-        "resource_type": "publication",
-        "title": "Modal Triplet Theory: From MTT to Kaluza--Klein Theory",
-        "updated": "2025-09-02T15:35:29.622304+00:00",
-        "version": "v1.0"
-      },
-      "main_tex_sha256": "347e75fa877868631dc871867be4e458d742985999d89c1a7c9e2a7f43483f4e",
-      "paper_id": "modal-triplet-theory-from-mtt-to-kaluza-klein-theory",
-      "paper_md_sha256": "78fd96bee7acc8cf07471896cbe0c8a1d848a210d07d22c2004ecffcb239f3a7",
-      "release_state": "zenodo_released",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Modal_Triplet_Theory__From_MTT_to_Kaluza__Klein_Theory"
-      },
-      "source_tree_sha256": "f41dab5e6e108a188246e2485cd2cbdd63ab74fb73a76548469e90175eff82ba",
-      "title": "Modal Triplet Theory: From MTT to Kaluza–Klein Theory",
-      "version_relation": "matches_latest_release",
-      "zenodo_releases": [
-        {
-          "concept_doi": "10.5281/zenodo.17038313",
-          "created": "2025-09-02T15:35:29.128595+00:00",
-          "creators": [
-            "Nero, Peter"
-          ],
-          "doi": "10.5281/zenodo.17038314",
-          "files": [
-            {
-              "checksum": "md5:e57336bef1d02c36692ce67dcba9f47e",
-              "content_url": "https://zenodo.org/api/records/17038314/files/Modal_Triplet_Theory__From_MTT_to_Kaluza__Klein_Theory.pdf/content",
-              "key": "Modal_Triplet_Theory__From_MTT_to_Kaluza__Klein_Theory.pdf",
-              "size": 304567
-            }
-          ],
-          "id": "17038314",
-          "match_kind": "title_or_file",
-          "match_score": 1.0,
-          "publication_date": "2025-09-02",
-          "record_url": "https://zenodo.org/records/17038314",
-          "resource_type": "publication",
-          "title": "Modal Triplet Theory: From MTT to Kaluza--Klein Theory",
-          "updated": "2025-09-02T15:35:29.622304+00:00",
-          "version": "v1.0"
         }
       ]
     },

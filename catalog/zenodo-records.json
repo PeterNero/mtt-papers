@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.17038313",
+      "created": "2026-07-30T18:31:10.210729+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21708733",
+      "files": [
+        {
+          "checksum": "md5:80f15a4e435812a74437bacfaef8132e",
+          "content_url": "https://zenodo.org/api/records/21708733/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 434405
+        }
+      ],
+      "id": "21708733",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21708733",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and Kaluza\u2013Klein Reduction: A Conditional 4+6 Spectral and Truncation Contract",
+      "updated": "2026-07-30T18:31:10.954668+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.17068816",
       "created": "2026-07-30T17:55:25.119017+00:00",
       "creators": [

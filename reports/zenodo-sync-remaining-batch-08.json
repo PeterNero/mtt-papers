@@ -1,18 +1,18 @@
 {
   "failed": 0,
   "failures": [],
-  "generated_at": "2026-07-30T17:54:52+00:00",
+  "generated_at": "2026-07-30T18:30:37+00:00",
   "mode": "verify",
   "papers": 1,
   "ready": 1,
   "results": [
     {
-      "draft_id": "21708348",
+      "draft_id": "21708733",
       "exact_remote_pdf_count": 1,
       "failures": [],
-      "local_pdf_md5": "ae2c63af02692909af3080708291c295",
-      "local_pdf_sha256": "208f45bff5328a1b3c29dfa40ee7127e866c6696a7afe167241f0087781b3924",
-      "paper_id": "modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880",
+      "local_pdf_md5": "80f15a4e435812a74437bacfaef8132e",
+      "local_pdf_sha256": "97e9b13e5a1979e66992e775e62e2203b40608ea8264fb57c5f6239d3d5e20ae",
+      "paper_id": "modal-triplet-theory-from-mtt-to-kaluza-klein-theory",
       "ready": true,
       "remote_pdf": "main.pdf",
       "remote_pdf_count": 1,

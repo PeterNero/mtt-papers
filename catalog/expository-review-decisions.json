@@ -1,6 +1,14 @@
 {
   "schema": "mtt.expository-review-decisions.v1",
   "papers": {
+    "modal-triplet-theory-from-mtt-to-kaluza-klein-theory": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Rebuilt as an explanatory conditional 4+6 spectral and truncation contract. The paper defines the complete higher-dimensional reduction record; proves a conditional MTT realization theorem, fixed-background spectral mass dictionary, invariant-ansatz result, and omitted-mode residual bound; distinguishes spectrum, projection, exact truncation, and controlled approximation; treats the 9-to-3 description only as the spatial slice of a supplied 10-to-4 fibration; keeps the shared circle at its proven phase/holonomy level; corrects the scope of Nomizu cohomology and the finite FCC; withdraws unsupported selection, gauge, mass, and phenomenology claims; states the open continuum connection-and-Hessian-preserving intertwiner explicitly; and the complete 16-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "3b67d245f3bddee30ff8177512dc63b40d2c299d600c775de08071d361ea6b87",
+      "reviewed_pdf_sha256": "97e9b13e5a1979e66992e775e62e2203b40608ea8264fb57c5f6239d3d5e20ae",
+      "reviewed_source_tree_sha256": "b7be645a82c8906c98ee175cb6acaa2daebc2070738bbcf2fe791dbb4c8ab07c"
+    },
     "modal-triplet-theory-from-mtt-to-m-theory-a-first-princ-d579e880": {
       "status": "reviewed",
       "reviewed_on": "2026-07-30",
