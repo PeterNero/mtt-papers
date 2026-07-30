@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T21:01:02+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21710105",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "57b5ba423cacc040eacf246028652e51",
+      "local_pdf_sha256": "3b57e3367e71b6b7c3cc0f55ab14830719f8a17ff0068beb69dc162fa0b6a876",
+      "paper_id": "selection-fronts-and-boundary-layer-physics-at-the-admi-b6234575",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    }
+  ]
+}

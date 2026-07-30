@@ -1,65 +1,93 @@
 {
-  "abstract": "Recent work has suggested that the long-standing difficulty of vacuum selection in quantum gravity and high-energy theory reflects a mis-posed question: the assumption that physics is defined throughout configuration space. In admissibility-first approaches, physical description exists only on stability-selected regions, while large portions of configuration space are non-physical. In this paper we investigate the dynamical behavior near the boundary of admissibility. We argue that this boundary defines a distinct physical regime, which we call a selection front. Near the admissibility threshold, dynamics is governed by boundary-layer behavior characterized by large deviations, metastability, and non-perturbative sensitivity to control parameters. Standard effective descriptions fail in a controlled but abrupt manner. We analyze the universal features of selection fronts and explore their consequences for cosmology, black hole physics, quantum measurement, and the limits of effective field theory.",
+  "abstract": "An admissibility boundary is the place where at least one declared control condition loses positive reserve. That static fact does not by itself produce a boundary layer, metastability, a large-deviation law, a measurement outcome, or a new physical phase. Those conclusions require a specified dynamical model. This paper gives a precise conditional meaning to the term selection front. The input is a finite vector of normalized signed reserve rows, including the rows needed for spectral separation, projector control, well-posedness, descent, coherent stability, truncation, and numerical certification. The exact boundary is distinguished from a conservative numerical event guard. At one regular active row the boundary is a smooth facet; at transverse row ties it is locally an orthant corner. A dynamical front additionally requires a drift, diffusion, initial law, stopping rule, interior return set, observables, and a post-exit stop, chart-transition, reset map, or reset kernel. The central calculation is an exactly solvable normal diffusion on an interval. Its guard-hitting committor and mean exit time are derived in closed form. Drift away from the guard gives an exponential boundary layer of thickness proportional to noise divided by drift; zero drift gives a linear committor and inverse-noise exit time; drift toward the guard gives neither behavior. Thus no universal sigmoid, metastable law, or first-passage scaling follows from admissibility alone. Eyring\u2013Kramers and Freidlin\u2013Wentzell asymptotics remain available when a small-noise family, attracting basin, quasipotential barrier, and regularity hypotheses are independently supplied. The result is a reproducible local theory of first exit and a strict application contract. It does not derive vacuum selection, black-hole dynamics, cosmological measures, quantum collapse, or limits on scalable coherence.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v2",
+  "date": "Version 2, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262388",
-    "created": "2026-01-15T21:35:54.281541+00:00",
+    "created": "2026-07-30T21:01:15.231548+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18262389",
+    "doi": "10.5281/zenodo.21710105",
     "files": [
       {
-        "checksum": "md5:768761d55ee881d09fc55aab789ab669",
-        "content_url": "https://zenodo.org/api/records/18262389/files/Selection_Fronts_and_Boundary_Layer_Physics_at_the_Admissibility_Threshold%20(2).pdf/content",
-        "key": "Selection_Fronts_and_Boundary_Layer_Physics_at_the_Admissibility_Threshold (2).pdf",
-        "size": 245555
+        "checksum": "md5:57b5ba423cacc040eacf246028652e51",
+        "content_url": "https://zenodo.org/api/records/21710105/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 389411
       }
     ],
-    "id": "18262389",
-    "match_kind": "title_or_file",
+    "id": "21710105",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18262389",
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21710105",
     "resource_type": "publication",
-    "title": "Selection Fronts and Boundary-Layer Physics at the Admissibility Threshold",
-    "updated": "2026-01-15T21:35:54.734289+00:00",
-    "version": "v1.0"
+    "title": "Selection Fronts at an Admissibility Boundary: Local Exit Geometry, Conditional Boundary Layers, and Reset Semantics",
+    "updated": "2026-07-30T21:01:15.642091+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "6d88f36245d2b534fbc8d21a78e204945537d5fc342353c2a25ca944420d79b2",
+  "main_tex_sha256": "583fd0ce8b87b0ba74250755c01add519d39405f6f4752007bab1f5e50317223",
   "paper_id": "selection-fronts-and-boundary-layer-physics-at-the-admi-b6234575",
-  "paper_md_sha256": "5b59f06d718fd16e926c877a6c29b4ace3c1483da9a38257e7908025be2e0ecf",
+  "paper_md_sha256": "456dc81485ad08c7b6063060cad6fa8351769491b6460be98aaff1bf8e5a6239",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/selection-fronts-and-boundary-layer-physics-at-the-admi-b6234575/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "f93bc2bb83129bfb90b6554420560d1872d8830be4e82890350605f963d0d832",
+    "selected_revision": true,
+    "superseded_source_path": "2 Meta & Diagnosis & Universality/_work/Selection_Fronts_and_Boundary_Layer_Physics_at_the_Admissibility_Threshold"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 25462,
+      "bytes": 37045,
       "path": "main.tex",
-      "sha256": "6d88f36245d2b534fbc8d21a78e204945537d5fc342353c2a25ca944420d79b2"
+      "sha256": "583fd0ce8b87b0ba74250755c01add519d39405f6f4752007bab1f5e50317223"
     },
     {
-      "bytes": 3784,
-      "path": "series.sty",
-      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+      "bytes": 5298,
+      "path": "main.bib",
+      "sha256": "c29eaaaf30b13344278f45de0a49e26b7f89f76b13d58f1e11641ab188675a7c"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Selection_Fronts_and_Boundary_Layer_Physics_at_the_Admissibility_Threshold"
   },
-  "source_tree_sha256": "332ea308a90336c42ea9ccd5474ef0af37c9f97718b8afc62d2f54f5be55e097",
-  "title": "Selection Fronts and Boundary-Layer Physics at the Admissibility Threshold",
+  "source_tree_sha256": "b769cd7887c3f3d054fbd30bbec755295b8400a0234375d535e017f6a94365f7",
+  "title": "Selection Fronts at an Admissibility Boundary: Local Exit Geometry, Conditional Boundary Layers, and Reset Semantics",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262388",
+      "created": "2026-07-30T21:01:15.231548+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21710105",
+      "files": [
+        {
+          "checksum": "md5:57b5ba423cacc040eacf246028652e51",
+          "content_url": "https://zenodo.org/api/records/21710105/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 389411
+        }
+      ],
+      "id": "21710105",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21710105",
+      "resource_type": "publication",
+      "title": "Selection Fronts at an Admissibility Boundary: Local Exit Geometry, Conditional Boundary Layers, and Reset Semantics",
+      "updated": "2026-07-30T21:01:15.642091+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18262388",
       "created": "2026-01-15T21:35:54.281541+00:00",

@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18262388",
+      "created": "2026-07-30T21:01:15.231548+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21710105",
+      "files": [
+        {
+          "checksum": "md5:57b5ba423cacc040eacf246028652e51",
+          "content_url": "https://zenodo.org/api/records/21710105/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 389411
+        }
+      ],
+      "id": "21710105",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21710105",
+      "resource_type": "publication",
+      "title": "Selection Fronts at an Admissibility Boundary: Local Exit Geometry, Conditional Boundary Layers, and Reset Semantics",
+      "updated": "2026-07-30T21:01:15.642091+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18274654",
       "created": "2026-07-30T20:45:18.436999+00:00",
       "creators": [

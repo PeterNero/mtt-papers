@@ -888,6 +888,14 @@
       "reviewed_main_tex_sha256": "8fd8910fc64488c5fe076290edc00632a3cefdddc3a08cf81b8e255b49017c79",
       "reviewed_pdf_sha256": "e10b8dfdbaa6c0124247ca2c021eb4eeb5059d87ea91afd89601f5d489ea20ce",
       "reviewed_source_tree_sha256": "725f69f068c5197dcfaa53fab2208c4938e7ba54f2105ea790cf4ec082884233"
+    },
+    "selection-fronts-and-boundary-layer-physics-at-the-admi-b6234575": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 2 rebuilds the universal selection-front narrative as a conditional local first-exit theory. It uses the complete normalized reserve vector, distinguishes exact and numerical guards, proves the transverse active-row orthant-corner result, specifies the generator/initial-law/guard/reset record, derives exact committor and mean-exit formulas for the normal constant-drift diffusion, exhibits three incompatible drift/noise regimes, restricts Freidlin--Wentzell and Eyring--Kramers claims to their actual hypotheses, separates diagnostic barriers from inserted forces and exit from reset, withdraws unsupported cosmology, black-hole, measurement, EFT, and coherence-limit claims, supplies numerical and application contracts, and the complete 17-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "583fd0ce8b87b0ba74250755c01add519d39405f6f4752007bab1f5e50317223",
+      "reviewed_pdf_sha256": "3b57e3367e71b6b7c3cc0f55ab14830719f8a17ff0068beb69dc162fa0b6a876",
+      "reviewed_source_tree_sha256": "b769cd7887c3f3d054fbd30bbec755295b8400a0234375d535e017f6a94365f7"
     }
   }
 }

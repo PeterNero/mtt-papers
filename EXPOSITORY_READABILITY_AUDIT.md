@@ -13,9 +13,9 @@ Canonical papers audited: **139**.
 | critical | 7 |
 | major | 7 |
 | moderate | 4 |
-| light | 9 |
+| light | 8 |
 | low | 1 |
-| reviewed | 109 |
+| reviewed | 110 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -26,7 +26,7 @@ Canonical papers audited: **139**.
 | conclusion | 12 |
 | concrete_foothold | 39 |
 | object_intuition | 88 |
-| orientation | 44 |
+| orientation | 45 |
 | result_interpretation | 12 |
 
 ## Revision Queue
@@ -58,7 +58,6 @@ Canonical papers audited: **139**.
 | light | light | `modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8` | 0 | 9868.0 | 6/7 | object_intuition |
 | light | light | `modal-triplet-theory-parameters-closure-and-structural-ae734bf0` | 0 | 4982.0 | 5/7 | object_intuition, concrete_foothold |
 | light | light | `photons-entanglement-and-null-updating-in-modal-triplet-theory` | 0 | 5021.0 | 6/7 | object_intuition |
-| light | light | `selection-fronts-and-boundary-layer-physics-at-the-admi-b6234575` | 0 | 3029.0 | 5/7 | object_intuition, argument_flow |
 | light | light | `when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34` | 0 | 2533.0 | 5/7 | object_intuition, concrete_foothold |
 | low | low | `projection-induced-network-geometry-sprouting-hidden-co-6919523e` | 17 | 552.5 | 7/7 | - |
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
@@ -133,6 +132,7 @@ Canonical papers audited: **139**.
 | reviewed | light | `modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d` | 5 | 524.6 | 6/7 | orientation |
 | reviewed | light | `modal-triplet-theory-from-mtt-to-string-theory-a-first-4b1100fc` | 5 | 640.4 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685` | 5 | 311.6 | 4/7 | object_intuition, argument_flow, concrete_foothold |
+| reviewed | light | `selection-fronts-and-boundary-layer-physics-at-the-admi-b6234575` | 5 | 585.6 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | low | `constructive-mtt-quantum-gravity-iii-infrared-limit-asy-6f8b88d9` | 4 | 621.0 | 7/7 | - |
 | reviewed | light | `contact-interactions-and-renormalization-as-over-sharp-c2cfaa22` | 4 | 485.0 | 6/7 | object_intuition |
 | reviewed | moderate | `geometry-light-relations-in-modal-triplet-theory-exact-1a5eeb7e` | 4 | 378.5 | 3/7 | orientation, object_intuition, argument_flow, concrete_foothold |
