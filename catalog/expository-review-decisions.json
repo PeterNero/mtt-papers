@@ -880,6 +880,14 @@
       "reviewed_main_tex_sha256": "bfc1ef9fb8d75ae4baa729496c47e831cae6425a0afab90963053dd1623dea8f",
       "reviewed_pdf_sha256": "d34c0f4db0e479155086085f2963bdcbde98d8b79a818c96e70ce67907d2e72a",
       "reviewed_source_tree_sha256": "548421532bc1fbaf2f2a7448d4a737ddf0c003030ad383e4de6492d1f86b4dc0"
+    },
+    "capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 3 rebuilds the particle-field construction as a typed hybrid stochastic model. It fixes normalized signed rows, exact and numerical guards, a smooth rowwise barrier force, flow and diffusion data, deterministic or Markov resets, a reset-support contract, event-aware Euler--Maruyama execution, and a complete parameter/provenance ledger; proves conditional well-posedness, guard underdetermination of restart outcomes, and classical cross-particle dependence; distinguishes Gaussian mean-field coupling from strict locality and quantum entanglement; reclassifies boundary layers, hesitation, channels, sprouting, and basins as diagnostics; locates the model within established hybrid, viability, barrier, and mean-field mathematics; and the complete 17-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "8fd8910fc64488c5fe076290edc00632a3cefdddc3a08cf81b8e255b49017c79",
+      "reviewed_pdf_sha256": "e10b8dfdbaa6c0124247ca2c021eb4eeb5059d87ea91afd89601f5d489ea20ce",
+      "reviewed_source_tree_sha256": "725f69f068c5197dcfaa53fab2208c4938e7ba54f2105ea790cf4ec082884233"
     }
   }
 }

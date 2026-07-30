@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T20:43:41+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21709930",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "5407607911b5965eeec50956737a91ee",
+      "local_pdf_sha256": "e10b8dfdbaa6c0124247ca2c021eb4eeb5059d87ea91afd89601f5d489ea20ce",
+      "paper_id": "capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v3"
+    }
+  ]
+}

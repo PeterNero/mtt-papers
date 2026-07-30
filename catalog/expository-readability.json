@@ -4,18 +4,18 @@
   "papers": 139,
   "priority_counts": {
     "critical": 7,
-    "light": 10,
+    "light": 9,
     "low": 1,
     "major": 7,
     "moderate": 4,
     "reference_ready": 2,
-    "reviewed": 108
+    "reviewed": 109
   },
   "missing_dimension_counts": {
     "argument_flow": 36,
     "conclusion": 12,
-    "concrete_foothold": 40,
-    "object_intuition": 89,
+    "concrete_foothold": 39,
+    "object_intuition": 88,
     "orientation": 44,
     "result_interpretation": 12
   },
@@ -310,29 +310,26 @@
     },
     {
       "paper_id": "capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90",
-      "title": "Capacity-Gated Projection Dynamics: A Concrete Algorithmic Realization of Admissibility-Limited Description",
-      "total_words": 8037,
-      "narrative_words": 7920,
-      "formal_results": 0,
-      "proofs": 0,
-      "narrative_words_per_result": 7920.0,
+      "title": "Capacity-Gated Projection Dynamics: A Typed Hybrid Stochastic Model and Executable Specification",
+      "total_words": 4886,
+      "narrative_words": 2798,
+      "formal_results": 8,
+      "proofs": 5,
+      "narrative_words_per_result": 349.8,
       "orientation": true,
-      "object_intuition": false,
+      "object_intuition": true,
       "argument_flow": true,
       "result_interpretation": true,
-      "concrete_foothold": false,
+      "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
-      "coverage_dimensions": 5,
-      "audit_priority": "light",
-      "heuristic_priority": "light",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
-      "missing_dimensions": [
-        "object_intuition",
-        "concrete_foothold"
-      ]
+      "coverage_dimensions": 7,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "moderate",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "review_note": "Version 3 rebuilds the particle-field construction as a typed hybrid stochastic model. It fixes normalized signed rows, exact and numerical guards, a smooth rowwise barrier force, flow and diffusion data, deterministic or Markov resets, a reset-support contract, event-aware Euler--Maruyama execution, and a complete parameter/provenance ledger; proves conditional well-posedness, guard underdetermination of restart outcomes, and classical cross-particle dependence; distinguishes Gaussian mean-field coupling from strict locality and quantum entanglement; reclassifies boundary layers, hesitation, channels, sprouting, and basins as diagnostics; locates the model within established hybrid, viability, barrier, and mean-field mathematics; and the complete 17-page PDF was visually inspected.",
+      "missing_dimensions": []
     },
     {
       "paper_id": "causal-sets-as-an-effective-limit-of-modal-triplet-theory",

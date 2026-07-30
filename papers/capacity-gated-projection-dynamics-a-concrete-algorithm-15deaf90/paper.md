@@ -1,759 +1,653 @@
 ---
 abstract: |
-  We introduce a class of dynamical systems in which evolution is governed by admissibility constraints imposed by finite coherence capacity rather than by optimization, energy minimization, or utility functions. The system evolves according to a local update rule while representational strain remains within capacity. When this capacity is exhausted, continuation of the current effective description becomes inadmissible and the system undergoes a forced regime transition induced by projection.
+  This paper turns the qualitative idea of capacity-gated projection into a complete model specification. The model contains finitely many particles, declared relational summary fields, normalized admissibility rows, a bottleneck reserve, within-mode drift and diffusion, flow and jump sets, and a deterministic reset map or Markov reset kernel. These data define a hybrid stochastic particle system. They are not consequences of a capacity scalar alone.
 
-  A central feature of the framework is that projection is many-to-one and non-invertible, mapping underlying configurations to an admissibility-dependent effective state space. When capacity is sufficient, the effective description factorizes into independent agent-level states. As capacity is reduced, such factorization may fail, forcing the system to adopt a joint effective state spanning multiple agents. Admissibility is therefore evaluated collectively on the projected relational description, yielding non-factorizable, entanglement-like coordination without communication, shared objectives, or global control.
+  The distinction repairs several ambiguities in the previous version. The logarithmic expression used there is a barrier potential, and its negative gradient is a genuine feedback force or penalty within the reduced model. A capacity-dependent speed cap and noise schedule are constitutive choices. Reaching a guard does not select a successor state until a reset law is supplied. Shared relational fields generally produce classical collective dependence, not quantum entanglement. The use of a Gaussian kernel also creates all-to-all mean-field coupling rather than strictly local interaction.
 
-  We provide an explicit, runnable algorithm implementing capacity-gated projection dynamics with strictly local, real-time updates and no look-ahead. The resulting dynamics exhibit hesitation, channeling, boundary-layer behavior, and discrete selection events that resemble decision-making or adaptive coordination, yet arise purely from structural constraints on effective description. The model serves as a constructive existence proof for projection-limited dynamics and provides a testbed for studying selection, irreversibility, and regime change in physical, biological, and artificial systems.
+  We give a typed model record, a smooth rowwise barrier, a conditional well-posedness theorem up to guard accumulation, an explicit no-selection result for an unspecified reset, a generator criterion for classical nonfactorization, and an event-driven Euler–Maruyama specification that does not silently step through the guard. A two-particle circle model shows every object in closed form, including a translation-covariant reset kernel. A parameter and provenance ledger separates quantities inherited from an MTT admissibility problem from modeling choices and numerical controls. Boundary layers, hesitation, channels, sprouting, and persistent basins are therefore simulation observables to test under stated parameters, not inevitable consequences of projection. The result is a reproducible conditional model and a clear contract for promoting it to a physical application.
 author:
 - Peter Nero
-current_version: v2
-date: January, 2026
-generated_from_main_tex_sha256: 1fbb30c72c1808bf3337e6a8e7eb5ca2d842448246ba385b527b4726c14aff20
+bibliography:
+- main.bib
+current_version: v3
+date: Version 3, July 2026
+generated_from_main_tex_sha256: 8fd8910fc64488c5fe076290edc00632a3cefdddc3a08cf81b8e255b49017c79
 paper_id: capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90
 release_state: zenodo_released
-released_version: v2.0
+released_version: v3
 title: |
-  Capacity-Gated Projection Dynamics:  
-  A Concrete Algorithmic Realization of Admissibility-Limited Description
-zenodo_doi: 10.5281/zenodo.18283389
-zenodo_record_id: 18283389
-zenodo_url: "https://zenodo.org/records/18283389"
+  Capacity-Gated Projection Dynamics:
+  A Typed Hybrid Stochastic Model and Executable Specification
+zenodo_doi: 10.5281/zenodo.21709930
+zenodo_record_id: 21709930
+zenodo_url: "https://zenodo.org/records/21709930"
 ---
 
-# Introduction
+# Revision note: Version 3
 
-A recurring difficulty in the development of foundational and complex-systems theories is the gap between abstract structural arguments and concrete dynamical realizations. Frameworks that reorganize how description, prediction, and stability are understood are often received as interpretive or philosophical unless accompanied by explicit constructions that demonstrate how the proposed principles operate in practice.
+<div class="description">
 
-Projection-first approaches fall squarely into this category. They emphasize that effective description is necessarily non-injective, that it remains viable only within finite admissibility margins, and that breakdown of description is a structural feature rather than a defect to be repaired. While these ideas clarify why irreversibility, horizons, undecidability, and state selection arise across disparate domains, they are frequently misread as reinterpretations of familiar mechanisms such as optimization with constraints, soft penalties, or safety filtering.
+Version 3 supersedes Version 2.0, DOI [10.5281/zenodo.18283389](https://doi.org/10.5281/zenodo.18283389).
 
-The source of this misreading is not conceptual weakness but concreteness. In the absence of an explicit algorithm, readers instinctively project familiar categories onto the framework. Global objectives are assumed to exist implicitly. Constraints are treated as secondary modifications of dynamics. Relations are assumed to live at the same representational level as states. As a result, projection-first reasoning is often reabsorbed into standard modeling paradigms that it was intended to challenge.
+Version 2 presented a logarithmic barrier and its gradient as though they were not a force or penalty, left the response at zero capacity undefined, and described regime changes, irreversibility, nonfactorization, boundary layers, state selection, and absence of close analogues as necessary consequences. The displayed update is instead a hybrid constrained stochastic particle model. Its continuation requires flow domains, guards, reset laws, invariance conditions, and a solution concept.
 
-The purpose of this paper is to close that gap.
+The capacity input is now the fixed normalized row record developed in the preceding capacity papers. The revision declares every additional dynamical ingredient, uses a rowwise barrier on a positive flow domain, defines deterministic and stochastic resets, states regularity and nonaccumulation hypotheses, and distinguishes classical shared-field dependence from quantum entanglement.
 
-We present a minimal but complete algorithmic realization of admissibility-limited, projection-based dynamics. The algorithm is intentionally simple in its components and explicit in its operation. Its role is not to model any specific physical, biological, or cognitive system in detail, but to demonstrate—constructively—what projection-first dynamics looks like when instantiated as an actual dynamical system.
+The useful construction survives: coarse relational summaries can be fed back into particle dynamics through a weakest-row admissibility gate, and a guard can trigger a change of effective chart or mode.
 
-The resulting behavior differs qualitatively from that of optimization-based, control-theoretic, or graph-interaction models. There is no single global objective function. There is no globally valid effective law. Instead, admissibility and representational capacity gate which dynamics are allowed at any moment, inducing regime changes when capacity is strained or exhausted. Failure of prediction and sudden state formation are not artifacts of noise or heuristics, but necessary consequences of finite representational viability.
-
-This paper is intended as a methods and conceptual bridge. It does not introduce new physical postulates, nor does it attempt to derive established physical theories. Rather, it provides a concrete realization that makes the abstract commitments of projection-first reasoning operational, testable, and difficult to misclassify.
-
-# What Kind of Algorithm This Is (and Is Not)
-
-Before presenting the algorithm itself, it is essential to clarify the class of models to which it does *not* belong. Much of the confusion surrounding projection-based frameworks arises from implicit assumptions about what an algorithm governing collective behavior must look like.
-
-## What This Algorithm Is Not
-
-The framework presented here is not an instance of any of the following familiar modeling paradigms:
-
-- **Global objective optimization.** There is no cost, utility, or reward function whose extremization governs behavior. The algorithm does not seek equilibria or optima.
-
-- **Hamiltonian or variational dynamics.** The system is not generated by a Hamiltonian, action principle, or globally defined differential equation valid across all regimes.
-
-- **Reinforcement learning or decision logic.** Agents do not evaluate options, select actions by preference, or update policies via reward signals.
-
-- **Graph-based interaction models.** Relations between agents are not encoded as edges, adjacency matrices, or pairwise couplings.
-
-- **Soft constraint or penalty methods.** Constraints are not added as tunable penalties that trade off against objectives.
-
-These exclusions are not rhetorical. Each of the above paradigms presupposes that a single effective law or objective exists that remains valid across the system’s admissible domain. The present framework explicitly rejects that presupposition.
-
-## Definition of the Algorithmic Class
-
-We instead work within the following class.
-
-**Definition (Capacity-gated projection dynamics).** A capacity-gated projection system is a dynamical system in which behavior arises from the projection of higher-level relational structure onto agents, subject to finite admissibility margins that gate the allowable dynamics. As admissibility is strained, the set of permitted dynamics contracts, inducing regime changes and selection events when representational capacity is exhausted.
-
-Several consequences follow immediately from this definition:
-
-- No single effective evolution law applies globally.
-
-- Dynamics are conditional on representational viability.
-
-- Breakdown of predictability is structural rather than numerical.
-
-In particular, the algorithm does not fail when it ceases to predict behavior smoothly. Such failures are expected and, in fact, diagnostic of admissibility exhaustion.
-
-## Constraints as Prior to Dynamics
-
-A key distinction from standard modeling approaches is the ordering of constraints and dynamics. In most frameworks, one first specifies dynamics and then imposes constraints as corrections, penalties, or filters. Here, admissibility constraints define which dynamics are allowed in the first place.
-
-When representational capacity is high, a broad class of effective dynamics is permitted. As capacity is reduced, this class collapses, and only slower, more constrained evolution remains admissible. At the boundary of admissibility, the current description becomes non-invertible and must be replaced by a new stable configuration.
-
-This reversal—constraints prior to dynamics rather than subordinate to them—is essential. Without it, the phenomena of regime switching, hesitation, and sudden state formation that characterize the algorithm cannot arise without ad hoc rules.
-
-## Relations Above States
-
-Finally, the framework assumes a layered representational structure. Relations are not encoded at the same level as agent states. Instead, they are represented as higher-level, aggregated relational fields. Observable agent behavior is a projection of this relational structure.
-
-This distinction is not cosmetic. Once relations live at a higher representational level, they can saturate independently of any single agent’s intent or motion. Representational bottlenecks, capacity exhaustion, and selection fronts become possible only under this separation.
-
-In the sections that follow, we make these commitments concrete by constructing an explicit algorithm that implements capacity-gated projection dynamics and by examining the qualitative behaviors that necessarily result.
-
-# Representational Architecture: Higher-Level Relations and Projection
-
-The defining feature of capacity-gated projection dynamics is not a particular update rule or force model, but its representational architecture. Behavior emerges from the interaction between two distinct representational layers: a lower-level kinematic layer and a higher-level relational layer. This separation is essential. Without it, admissibility, capacity exhaustion, and regime switching cannot arise as intrinsic features of the dynamics.
-
-## Two-Level Structure
-
-The framework assumes a minimal two-level organization:
-
-- **Lower level (agent layer).** Agents possess only minimal kinematic state (e.g., position and velocity) and do not encode explicit knowledge of other agents or of global structure.
-
-- **Higher level (relational layer).** Relations among agents are represented collectively as continuous fields defined over the domain. These fields encode aggregated properties such as crowding, influence, threat, or other relational load measures.
-
-Agents do not interact directly with one another. All coupling occurs indirectly through the relational layer. Agent behavior is therefore determined not by pairwise interactions, but by the projection of global relational structure back onto local kinematic state.
-
-This architectural choice is deliberate. It enforces a clear separation between *what exists as a relation* and *what an agent can act upon*.
-
-## Relations as First-Class Objects
-
-In most agent-based and collective models, relations are encoded at the same representational level as agent state. Typical examples include:
-
-- pairwise forces or potentials,
-
-- graph edges or adjacency matrices,
-
-- local neighborhood rules.
-
-In such models, relations scale linearly with agent count and remain intrinsically local. They cannot saturate independently of agent motion, nor can they fail structurally without direct collision or explicit thresholds.
-
-In contrast, the present framework treats relations as first-class representational objects. Relational fields are:
-
-- **Aggregated**: constructed by pooling contributions from many agents,
-
-- **Smoothed**: defined at a spatial scale larger than individual interactions,
-
-- **Global**: extended across the domain rather than localized to neighborhoods.
-
-These fields do not represent physical substances or forces. They represent statistical summaries of relational load imposed on the effective description. As such, they are capable of saturating even when individual agent motion remains smooth and non-collisional.
-
-## Why Higher-Level Relations Are Necessary
-
-The introduction of a higher-level relational layer enables phenomena that cannot arise in flat, single-level representations.
-
-First, it allows representational strain to accumulate nonlocally. Capacity can be exhausted not because any single agent violates a constraint, but because collective relational load exceeds what the description can sustain.
-
-Second, it decouples intent from outcome. An individual agent may act in a locally admissible way while still contributing to global inadmissibility through aggregation.
-
-Third, it makes admissibility a property of description rather than of physical configuration. Breakdown occurs when relational structure becomes too dense or too conflicted to be projected coherently, not when agents collide or violate explicit rules.
-
-Without this representational separation, admissibility would have to be imposed artificially via thresholds or conditional logic. Here, it arises naturally from aggregation and projection.
-
-## Projection as the Generative Step
-
-Agent behavior is generated through projection. At each update step:
-
-1.  Agents contribute to the relational fields based on their current kinematic state.
-
-2.  Relational fields are aggregated and smoothed.
-
-3.  A capacity margin is computed from these fields.
-
-4.  Agents sample local values and gradients of the relational structure.
-
-5.  Allowed dynamics are gated by the local admissibility margin.
-
-Projection is therefore not a metaphor but an explicit operational step. It is the mechanism by which higher-level relational organization constrains lower-level motion.
-
-Crucially, projection is non-invertible. Multiple distinct underlying configurations may project to the same effective relational state. This non-invertibility is the source of irreversibility, regime switching, and state selection in the dynamics. In addition, projection is not restricted to factorized effective descriptions. When admissibility margins are sufficient, the projected state may factorize into independent agent-level descriptions. However, as relational strain increases, such factorized descriptions may cease to exist. In those cases, the only admissible effective description is a joint state spanning multiple agents. Projection therefore maps underlying configurations not to a single fixed state space, but to an admissibility-dependent family of effective states whose cardinality may be single-agent or collective.
-
-## Capacity as a Representational Property
-
-Because relations are represented at a higher level, their stability is finite. The framework therefore introduces a scalar capacity margin $`C(x)`$, defined pointwise over the domain, that quantifies the remaining viability of the relational description.
-
-Capacity is not a reward, cost, or energy. It measures how close the current relational configuration is to losing representational coherence. When $`C(x) > 0`$, projection remains admissible. When $`C(x) = 0`$, the current description becomes non-invertible and must be replaced.
-
-This interpretation is essential. Capacity is a property of description, not of agents. Agents respond to capacity because it gates which dynamics remain admissible, not because it encodes preference or utility.
-
-## Summary
-
-The representational architecture introduced here departs fundamentally from standard agent-based models. By elevating relations to a higher representational layer and treating projection as a non-invertible generative step, the framework makes finite capacity, admissibility exhaustion, and regime switching unavoidable rather than optional.
-
-In the next section, we make this architecture concrete by defining capacity formally and by showing how admissibility is computed and enforced within the algorithm.
-
-## Stratified Effective State Space
-
-The effective state space induced by projection is stratified by admissibility. When representational capacity is high, the effective description factorizes into independent single-agent states. As capacity is reduced, this factorization may become inadmissible, forcing the system to adopt a joint effective state spanning multiple agents.
-
-This stratification is enforced structurally, not heuristically. It reflects the fact that admissibility is evaluated on the projected relational description as a whole, rather than on agent states in isolation. The same underlying configuration may therefore admit qualitatively different effective state descriptions depending on local and collective capacity margins.
-
-In this sense, the effective state is not intrinsically tied to a fixed agent decomposition. Whether the admissible state describes one agent or many is itself determined by projection and capacity, not by design choice or coordination logic.
-
-# Capacity and Admissibility
-
-The representational architecture described in the previous section makes it possible for relational structure to become strained independently of individual agent motion. To formalize this strain and its consequences, we introduce the notions of capacity and admissibility. These concepts are central to the framework and must be distinguished carefully from more familiar ideas such as cost, energy, or risk.
-
-## Capacity as a Stability Margin
-
-Let $`C(x) \geq 0`$ denote a scalar *capacity margin* defined over the domain. Operationally, $`C(x)`$ measures the remaining stability of the relational description at location $`x`$. When capacity is high, projection from the relational layer to agent-level behavior is robust. As capacity decreases, projection becomes increasingly fragile. When capacity vanishes, the current relational description can no longer be maintained coherently.
-
-Capacity is not an objective function to be optimized, nor a penalty to be minimized. It does not encode preference, desirability, or utility. Instead, it quantifies how close the system is to losing the ability to represent its relational structure without ambiguity.
-
-This distinction is crucial. In optimization-based models, costs can always be traded off against one another. In the present framework, capacity cannot. Once exhausted, no admissible dynamics exist within the current representational regime.
-
-## Construction of Capacity
-
-In the concrete algorithm presented in Section 5, capacity is computed from one or more relational fields. Typical examples include fields representing crowding, conflict, threat, or other forms of relational load. Let $`D(x)`$, $`T(x)`$, $`\ldots`$ denote such fields. Capacity is then defined as an envelope or minimum over margins associated with these quantities:
-``` math
-C(x) = \min\{C_D(x), C_T(x), \ldots\},
-```
-where each term represents the remaining margin before a corresponding relational constraint is violated.
-
-This construction reflects a weakest-link principle: the relational description fails when *any* essential constraint is exhausted. Importantly, the specific choice of relational fields is not fundamental. What matters is that capacity aggregates relational strain into a single stability margin that governs admissibility.
-
-## Admissibility as a Structural Constraint
-
-A configuration is said to be *admissible* at location $`x`$ if $`C(x) > 0`$. The admissible region is therefore defined as the subset of the domain on which the relational description remains viable.
-
-Crossing the boundary $`C(x) = 0`$ is not analogous to incurring a large cost. It represents a qualitative change: the loss of invertibility of projection. Beyond this boundary, the current relational state cannot be consistently mapped back to agent-level behavior.
-
-For this reason, admissibility is enforced as a hard structural constraint. Dynamics are not allowed to proceed arbitrarily close to or beyond the boundary without modification. Instead, as capacity is strained, the set of admissible dynamics contracts.
-
-## Barrier Structure and Boundary Layers
-
-To implement this contraction smoothly while preserving the qualitative distinction between admissible and inadmissible regimes, the framework introduces a barrier potential
-``` math
-U(x) = -\log(\varepsilon + C(x)),
-```
-with a small regularization parameter $`\varepsilon > 0`$.
-
-The role of this barrier is not to repel agents from forbidden regions by force, but to encode the rapid loss of representational stability as capacity approaches zero. Gradients of $`U`$ dominate behavior near the admissibility boundary, giving rise to boundary layers in which motion becomes highly constrained.
-
-These boundary layers are a defining feature of the algorithm. They are not numerical artifacts and do not disappear under refinement. They express the fact that only a narrow class of trajectories remains representable as admissibility is exhausted.
-
-## Capacity-Gated Regimes
-
-A central consequence of finite capacity is that the system naturally decomposes into distinct dynamical regimes.
-
-When capacity is high, a broad class of dynamics is admissible. Agents may move relatively freely, exploration is possible, and noise or variability does not threaten representational coherence.
-
-As capacity decreases, the admissible set contracts. Dynamics must slow, noise must be reduced, and motion must align more closely with gradients that preserve admissibility. This contraction is not gradual in the sense of continuous tradeoffs; it reflects the approach to a structural boundary.
-
-When capacity is exhausted, the current relational configuration becomes inadmissible. At this point, the system must undergo a qualitative transition: the current state cannot persist and must be replaced by a new admissible configuration. Such transitions are referred to as *selection events*.
-
-## Capacity Is Not a Cost
-
-It is worth emphasizing again that capacity does not function as a cost or penalty. Agents do not weigh capacity against goals or rewards. Instead, capacity determines which actions are even available.
-
-This distinction explains several qualitative features of the dynamics:
-
-- hesitation arises near admissibility boundaries because few dynamics remain viable,
-
-- sudden state formation occurs when admissibility is lost,
-
-- failure of prediction is structural rather than stochastic.
-
-Any attempt to reinterpret capacity as a tunable penalty undermines these features and collapses the framework back into conventional optimization.
-
-## Summary
-
-Capacity and admissibility formalize the finite viability of relational description. They introduce hard structural limits on dynamics without appealing to objectives, preferences, or external control. As capacity is strained, admissible dynamics contract, boundary layers form, and selection events become inevitable.
-
-In the next section, we present the full algorithmic construction that implements these principles explicitly and examine how capacity-gated projection dynamics unfolds step by step.
-
-# The Algorithm: Explicit Construction
-
-We now present a concrete algorithm that implements capacity-gated projection dynamics. The construction is deliberately minimal: each component is introduced only insofar as it is required to realize admissibility-limited behavior. No learning, optimization, or domain-specific decision logic is assumed.
-
-## State Variables and Inputs
-
-The system evolves in discrete time steps indexed by $`t`$. The state consists of:
-
-- A set of $`N`$ agents with positions $`x_i(t) \in \Omega \subset \mathbb{R}^d`$ and velocities $`v_i(t)`$.
-
-- A set of relational fields defined over $`\Omega`$, denoted collectively by $`\mathcal{F}(x,t)`$.
-
-- A scalar capacity field $`C(x,t) \geq 0`$.
-
-Agents do not possess internal memory, goals, or symbolic state. All nontrivial structure enters through the relational fields and capacity.
-
-## Relational Field Construction
-
-At each time step, agents contribute to one or more relational fields. Let $`f_k(x,t)`$ denote the $`k`$-th relational field (e.g. crowding, influence, threat). Each field is constructed by aggregating agent contributions and smoothing over a spatial scale $`\sigma_k`$:
-``` math
-f_k(x,t) = \sum_{i=1}^N w_{k,i} \, K_{\sigma_k}(x - x_i(t)),
-```
-where $`K_{\sigma_k}`$ is a smoothing kernel (e.g. Gaussian) and $`w_{k,i}`$ are fixed weights.
-
-This aggregation step is global and many-to-one: distinct agent configurations may induce indistinguishable relational fields.
-
-## Capacity Computation
-
-Capacity is computed pointwise from the relational fields as a stability margin. For each relational constraint $`k`$, define a margin function
-``` math
-C_k(x,t) = C_k^{\max} - f_k(x,t),
-```
-where $`C_k^{\max}`$ is a fixed admissibility threshold. The total capacity is then defined as
-``` math
-C(x,t) = \min_k C_k(x,t),
-```
-with $`C(x,t)`$ clipped below at zero.
-
-This definition implements a weakest-link principle: admissibility fails when any essential relational constraint is exhausted.
-
-## Barrier Potential
-
-To encode the rapid loss of representational stability near the admissibility boundary, define the barrier potential
-``` math
-U(x,t) = -\log(\varepsilon + C(x,t)),
-```
-with a small $`\varepsilon > 0`$ to regularize numerical evaluation.
-
-The gradient $`\nabla U`$ becomes dominant as $`C \to 0`$, inducing boundary-layer dynamics without introducing hard discontinuities.
-
-## Projection to Agent-Level Forces
-
-Agents do not interact directly. Instead, each agent samples local values and gradients of the relational and capacity fields at its current position:
-``` math
-\nabla U_i(t) = \nabla U(x_i(t),t), \quad 
-\nabla f_{k,i}(t) = \nabla f_k(x_i(t),t).
-```
-
-The agent-level force is defined as a weighted combination of these projected quantities:
-``` math
-F_i(t) = -w_C \nabla U_i(t) + \sum_k w_k \nabla f_{k,i}(t),
-```
-where $`w_C`$ and $`w_k`$ are fixed coefficients.
-
-This force is not derived from a global potential or objective. It is defined operationally as the projection of relational structure onto agent motion.
-
-It is important to note that admissibility is evaluated on the projected relational description, not on agent states independently. As a result, the algorithm implicitly operates on a joint effective state whenever factorized descriptions become inadmissible. No explicit group state, coordination protocol, or synchronization step is required. Joint behavior emerges because projection enforces shared constraints on the effective description itself.
-
-## Capacity-Gated Regimes
-
-A central feature of the algorithm is that the admissible dynamics depend explicitly on local capacity. Define two regimes based on thresholds $`C_{\mathrm{hi}} > C_{\mathrm{lo}} > 0`$:
-
-- **Normal regime** ($`C(x_i) \ge C_{\mathrm{hi}}`$). Broad dynamics are admissible. Agents move with higher noise, higher maximum speed, and weaker alignment constraints.
-
-- **Boundary regime** ($`C(x_i) \le C_{\mathrm{lo}}`$). Dynamics are strongly restricted. Noise amplitude is reduced, maximum speed is lowered, and motion aligns more strongly with admissible gradients.
-
-Between these thresholds, dynamics interpolate smoothly. Crucially, the *set of allowed actions itself changes* as capacity is strained.
-
-## Speed Capping as a Representational Bound
-
-Agent velocities are subject to a capacity-dependent speed cap:
-``` math
-\|v_i(t)\| \le v_{\max}(C(x_i(t))).
-```
-
-This cap is not a physical velocity limit. It bounds the rate at which an effective state may change while remaining representable under projection. As capacity decreases, rapid motion would outrun relational updates and destabilize the description, and is therefore disallowed.
-
-## Time Update
-
-Agent velocities and positions are updated as
-``` math
-v_i(t+1) = v_i(t) + \Delta t \left(F_i(t) - \gamma v_i(t)\right) + \eta_i(t),
-```
-``` math
-x_i(t+1) = x_i(t) + \Delta t \, v_i(t+1),
-```
-where $`\gamma`$ is a damping coefficient and $`\eta_i(t)`$ is stochastic noise whose variance depends on the local regime.
-
-Boundary conditions (e.g. reflection) are applied to maintain agents within $`\Omega`$.
-
-## Selection Events and State Formation
-
-When capacity vanishes along a trajectory, the current relational configuration becomes inadmissible. At this point, the system must undergo a qualitative transition: the existing state cannot persist and a new admissible configuration must form.
-
-Operationally, this appears as abrupt stabilization into a different basin of relational structure. Such transitions are referred to as *selection events*. They are not triggered by explicit rules or thresholds at the agent level, but by exhaustion of representational viability.
-
-## Algorithm Summary
-
-The algorithm proceeds as follows:
-
-1.  Aggregate agent contributions into relational fields.
-
-2.  Compute capacity as a stability margin.
-
-3.  Construct the barrier potential.
-
-4.  Project relational gradients onto agents.
-
-5.  Gate admissible dynamics based on capacity.
-
-6.  Update agent motion subject to speed caps and damping.
-
-7.  Detect and respond to admissibility exhaustion.
-
-At no point is a global objective evaluated or optimized. Behavior arises entirely from projection, capacity gating, and admissibility constraints.
-
-## Remarks on Minimality
-
-Each component of the algorithm is necessary. Removing higher-level relations eliminates capacity exhaustion. Removing capacity gating collapses regime structure. Removing projection reduces the system to direct interaction models.
-
-The algorithm is therefore minimal with respect to the phenomena it produces.
-
-In the next section, we examine the qualitative behavioral signatures that necessarily arise from this construction.
-
-# Behavioral Signatures
-
-The algorithm defined in the previous section exhibits a set of qualitative behaviors that are not incidental, tunable, or domain-specific. They arise necessarily from the combination of higher-level relational representation, finite capacity, and admissibility-gated dynamics. In this section we describe these behavioral signatures and explain why they cannot be reproduced by conventional modeling approaches without fundamentally altering their assumptions.
-
-## Non-Factorizable Projection and Entanglement-Like Coordination
-
-Because projection is many-to-one and capacity is evaluated collectively on relational structure, effective descriptions need not factorize across agents. When several agents contribute to and depend upon the same projected relational fields, their admissibility becomes shared. In such cases, the effective state of the system cannot be written as a product of independent agent states.
-
-This structure is formally analogous to entanglement in quantum theory. In both settings, local dynamics remain well-defined and deterministic, but effective descriptions are non-factorizable due to shared projection. No nonlocal signaling or coordination is introduced. The coupling arises entirely from the requirement that a single projected description remain admissible.
-
-Operationally, this means that strain induced by one agent reduces the admissibility margin available to others occupying the same projected basin. Capacity exhaustion, regime switching, and selection events may therefore occur collectively, even though agents execute only local updates.
-
-The coordination observed in the algorithm—lane formation, group splitting, hesitation, and collective state transitions—does not result from communication, optimization, or explicit synchronization. It is enforced by the necessity of maintaining a joint admissible description under projection.
-
-## Boundary Layers
-
-A defining feature of capacity-gated projection dynamics is the emergence of boundary layers near regions where capacity approaches zero. As $`C(x,t) \to 0`$, the barrier potential $`U(x,t)`$ becomes dominant, and the set of admissible trajectories collapses rapidly.
-
-Within these boundary layers:
-
-- motion becomes strongly constrained,
-
-- gradients of admissibility dominate over other influences,
-
-- small perturbations can have large qualitative effects.
-
-These layers are not numerical artifacts. They persist under refinement of spatial resolution, timestep, and noise level. Their presence reflects a structural fact: only a narrow class of trajectories remains representable as admissibility is exhausted.
-
-## Channel Formation
-
-When admissible regions are elongated or constrained by surrounding low-capacity zones, agents spontaneously align their motion along narrow corridors of high capacity. These channels are not planned paths and do not correspond to minima of a global potential.
-
-Channel formation occurs because:
-
-- gradients of the barrier potential suppress transverse motion near boundaries,
-
-- admissible directions remain available only along ridges of capacity,
-
-- speed capping and noise reduction stabilize flow alignment.
-
-The resulting channels persist over time and can support sustained flow without explicit coordination or communication between agents.
-
-## Flow Splitting and Sprouting
-
-As relational load increases, a single admissible channel may become unable to support further flow without exhausting capacity. When this occurs, the system does not gradually degrade performance. Instead, a qualitative transition takes place.
-
-New channels or branches form spontaneously as alternative admissible pathways. This phenomenon, referred to here as *sprouting*, arises without any explicit branching rule, symmetry breaking instruction, or optimization criterion.
-
-Sprouting reflects the exhaustion of admissibility in the existing configuration and the necessity of forming a new relational arrangement to sustain continued evolution.
-
-## Hesitation and Near-Critical Dynamics
-
-Near admissibility boundaries, agents exhibit markedly reduced speed, diminished noise, and increased sensitivity to relational gradients. This regime is characterized by slow, constrained motion and frequent reorientation without decisive progression.
-
-This behavior corresponds to what is commonly described, in cognitive or behavioral contexts, as *hesitation*. Importantly, hesitation here is not a heuristic delay or indecision mechanism. It is the direct consequence of representational strain: few admissible trajectories remain, and rapid motion would destabilize the description.
-
-Hesitation therefore signals that a stable state has not yet formed, rather than that the system is inefficiently searching for one.
-
-## Abrupt State Formation
-
-When admissibility is finally exhausted along a trajectory, the current relational configuration becomes non-invertible. At this point, gradual evolution is no longer possible. The system undergoes an abrupt transition into a new admissible configuration.
-
-Such transitions are observed as sudden stabilization into a coherent pattern or basin. They are not triggered by thresholds at the agent level, nor by explicit event detectors. Instead, they are enforced by the loss of representational viability.
-
-These transitions correspond to *selection events*: moments at which the system is compelled to replace one effective description with another.
-
-## Anticipatory Avoidance Without Prediction
-
-Agents in this framework often avoid future bottlenecks or congested regions before reaching them, even though they possess no memory, foresight, or predictive model.
-
-This anticipatory behavior arises because relational fields encode aggregate strain ahead of individual agents. Capacity gradients therefore guide motion away from regions that would soon become inadmissible.
-
-No explicit prediction is required. Avoidance emerges as a local response to projected relational structure.
-
-## Absence of Global Convergence
-
-Finally, it is important to note what the system does *not* exhibit. There is no tendency toward global equilibrium, optimal configuration, or steady state unless enforced by external boundary conditions.
-
-Instead, the system remains perpetually poised between admissible configurations, with local stability punctuated by selection events. This absence of global convergence is not a failure to optimize; it is a direct consequence of finite capacity and non-invertible projection.
-
-## Summary
-
-The behaviors described above—boundary layers, channel formation, sprouting, hesitation, abrupt state formation, and anticipatory avoidance—are not individually surprising. What is distinctive is that they arise collectively, robustly, and without domain-specific rules.
-
-They are signatures of admissibility-limited projection dynamics. Any model that reproduces these behaviors must either adopt the same structural commitments or reintroduce them indirectly through hybrid logic, thresholds, or externally imposed regime switching.
-
-In the next section, we interpret these behaviors in terms of state formation and decision dynamics, clarifying how stable states arise without explicit decision-making mechanisms.
-
-# Interpretation as State Formation and Decision Dynamics
-
-Although the algorithm introduced above was defined without reference to cognition, goals, or internal representations, its dynamics admit a natural interpretation in terms of state formation and decision-like behavior. This interpretation does not require adding new mechanisms. It follows directly from the structure of admissibility-limited projection dynamics.
-
-## States as Stable Basins
-
-In the present framework, a *state* is not a variable assignment or symbolic label. It is a dynamically stable configuration of relational structure that remains admissible under ongoing evolution. Formally, a state corresponds to a basin of attraction in the space of relational fields for which capacity remains positive and small perturbations decay.
-
-Once such a basin forms, agent behavior appears coherent and consistent over time. Motion is stable, variability is suppressed, and the configuration resists disruption. These properties align closely with what is informally described as a persistent mental, behavioral, or system state.
-
-Crucially, states are not chosen or computed. They are selected by basin geometry under admissibility constraints.
-
-## Hesitation as Near-Critical Instability
-
-When the system evolves near an admissibility boundary, no stable basin yet exists. Capacity is low but nonzero, and the relational configuration is close to becoming non-invertible. In this regime, the algorithm enforces reduced speed, reduced noise, and strong alignment with admissible gradients.
-
-The resulting behavior is slow, cautious, and indecisive in appearance. Agents may oscillate, reorient, or pause without committing to a direction. This behavior corresponds naturally to what is described as *hesitation*.
-
-Importantly, hesitation here is not the result of deliberation, conflict resolution, or uncertainty estimation. It is the direct consequence of representational strain: few admissible trajectories remain, and the system cannot yet stabilize into a coherent state.
-
-## Decision and State Selection
-
-A qualitative transition occurs when admissibility is finally exhausted along a trajectory. At this point, the current relational configuration cannot be maintained. Gradual evolution is no longer possible, and the system must undergo a structural transition into a new admissible basin.
-
-This transition is abrupt and irreversible at the level of effective description. It appears as sudden stabilization into a new state. In cognitive or behavioral language, this corresponds to *making a decision* or *changing one’s mind*.
-
-Within the framework, however, no decision rule is evaluated and no alternative is compared. The transition is enforced by the loss of representational viability of the prior state. The new state is selected, not chosen.
-
-## Non-Decision as a Legitimate Regime
-
-A notable feature of the algorithm is that it admits extended periods in which no stable state exists and no decision occurs. These periods are not failures of the model. They are legitimate dynamical regimes corresponding to near-critical representational configurations.
-
-In many decision-making and control frameworks, non-decision must be artificially limited or penalized. Here, it arises naturally and necessarily. Forcing premature stabilization would produce brittle states with low admissibility margins.
-
-Thus, hesitation and delayed commitment are not inefficiencies but indicators that the system has not yet found a representationally viable configuration.
-
-## Interpretation for NPC and Brain-Like Systems
-
-When interpreted as a simplified model of decision dynamics, the algorithm offers a principled mechanism for behaviors often difficult to capture in artificial agents:
-
-- hesitation without explicit uncertainty modeling,
-
-- sudden commitment without evaluation logic,
-
-- state changes triggered by contextual overload rather than preference reversal.
-
-An NPC implemented using this framework would not “decide” in the usual sense. Instead, it would stabilize into behaviors when relational constraints permit and remain hesitant when they do not. Changes of behavior would occur when the current state becomes inadmissible, not when a better option is identified.
-
-This interpretation does not claim to model consciousness, subjective experience, or neural detail. It addresses only the structural dynamics of state formation under finite representational capacity.
-
-## Relation to Other Selection Phenomena
-
-The mechanism described here is structurally identical to selection processes appearing elsewhere in projection-first frameworks, including measurement collapse, record formation, and basin capture in physical systems. The interpretation as decision dynamics reflects a change of context, not a change of mechanism.
-
-This unification underscores the generality of admissibility-limited projection dynamics: the same structural process governs state formation across physical, biological, and behavioral domains.
-
-## Summary
-
-State formation, hesitation, and decision-like transitions emerge naturally in capacity-gated projection dynamics without explicit decision rules, optimization, or internal evaluation. Stable states correspond to admissible basins. Hesitation reflects near-critical instability. Decisions correspond to enforced selection events when admissibility is exhausted.
-
-In the next section, we compare this framework explicitly with conventional optimization, control, and agent-based models to clarify why similar behavior cannot be obtained without adopting equivalent structural commitments.
-
-# Comparison with Conventional Approaches
-
-The behaviors and mechanisms described in the preceding sections may appear superficially similar to those produced by a variety of existing modeling approaches. In this section we compare capacity-gated projection dynamics explicitly with several common paradigms and clarify why none of them reproduces the same structure without abandoning their core assumptions.
-
-The goal of this comparison is not to claim superiority, but to make clear why close analogues are rare and why attempts to reinterpret the present framework in familiar terms consistently fail.
-
-## Global Objective and Potential-Field Models
-
-Many collective and agent-based models are formulated as gradient descent or stochastic descent on a global potential or cost function. Such models can produce avoidance, aggregation, and channeling behavior by suitable choice of potentials.
-
-However, global objective models differ fundamentally in three respects.
-
-First, the dynamics are governed by a single scalar function defined everywhere on the state space. Even when the objective is nonconvex or time-dependent, it remains globally valid.
-
-Second, constraints are incorporated as additional terms in the objective and therefore remain commensurable with other influences. Any constraint can, in principle, be traded off against reward.
-
-Third, the dynamics do not change their admissible action set. Only the direction or magnitude of motion changes.
-
-In contrast, capacity-gated projection dynamics admits no globally valid objective. Admissibility is not a term in a cost function, but a hard structural constraint. As capacity is exhausted, entire classes of motion become disallowed. The resulting regime changes and selection events cannot be reproduced by smooth potential-based models without introducing discontinuities or hybrid logic that lies outside the optimization paradigm.
-
-## Soft Constraints and Penalty Methods
-
-Penalty-based approaches extend objective models by imposing large costs near forbidden regions. When penalties are sufficiently steep, behavior may resemble avoidance enforced by hard constraints.
-
-Such methods suffer from two inherent limitations.
-
-First, penalty strength must be tuned. If penalties are too weak, constraint violations occur. If too strong, dynamics become stiff or globally dominated by the penalty term.
-
-Second, penalties never truly forbid behavior. They merely discourage it. As a result, trajectories may cross constraint boundaries under strong driving or noise.
-
-Capacity-gated dynamics differs in kind. Admissibility boundaries are not high-cost regions; they are limits of representability. Motion beyond them is not discouraged but undefined. Boundary layers arise because admissible dynamics collapse near the boundary, not because penalties grow large.
-
-## Barrier Methods
-
-Barrier methods come closest in spirit, particularly those employing logarithmic barriers to enforce feasibility in constrained optimization.
-
-However, in classical barrier methods:
-
-- the barrier is an implementation device rather than a physical or structural object,
-
-- dynamics remain governed by a single objective,
-
-- the barrier does not change the action set or noise structure.
-
-In the present framework, the barrier encodes representational viability itself. It is not removed after optimization, nor does it merely enforce a constraint during descent. It reshapes the allowable dynamics, inducing boundary layers, speed capping, and regime switching. These features are extraneous to standard barrier formulations.
-
-## Graph-Based and Local Interaction Models
-
-Models based on graphs, adjacency matrices, or local neighborhoods encode relations directly at the agent level. They are well suited to capturing local coordination and pairwise interaction.
-
-However, such models lack a distinct representational layer in which relations can saturate independently of agent state. As a result:
-
-- representational overload cannot occur without explicit collision or crowding rules,
-
-- admissibility must be enforced by hand-crafted thresholds,
-
-- global bottlenecks and horizons do not arise naturally.
-
-In contrast, capacity-gated projection dynamics allows relational strain to accumulate nonlocally through aggregation. Breakdown of description can therefore occur even when all local interactions remain smooth.
-
-## Hybrid Control and Model Predictive Control
-
-Hybrid control systems and model predictive control (MPC) frameworks can, in principle, reproduce some of the behaviors described here by introducing state-dependent constraints, mode switches, and safety filters.
-
-However, achieving this requires:
-
-- explicit hybrid modes,
-
-- manually specified guards or thresholds,
-
-- forward simulation over future horizons,
-
-- state-dependent feasibility checks.
-
-At this point, the controller becomes structurally complex, brittle, and computationally expensive. Moreover, reachability and feasibility questions in such hybrid systems are known to be undecidable in general.
-
-Capacity-gated projection dynamics does not attempt to solve these problems. It embodies them. Regime switching, non-predictability, and selection events are intrinsic features rather than control failures.
-
-## Decision-Theoretic and Cognitive Models
-
-Decision-theoretic and cognitive models typically assume that agents evaluate options, compare values, and select actions according to preferences or beliefs. Hesitation is modeled as uncertainty or conflict between options.
-
-In contrast, the present framework contains no evaluation mechanism. Hesitation arises because admissible trajectories are scarce, not because options are being weighed. Decisions occur when a representational state becomes inadmissible and a new one must form.
-
-This distinction matters: decision-like behavior emerges without internal comparison, deliberation, or symbolic reasoning.
-
-## Summary of Differences
-
-Table <a href="#tab:comparison" data-reference-type="ref" data-reference="tab:comparison">1</a> summarizes the principal distinctions.
-
-<div id="tab:comparison">
-
-|                    | Conventional models | This framework |
-|:-------------------|:-------------------:|:--------------:|
-| Global objective   |         Yes         |       No       |
-| Constraints        |      Secondary      |    Primary     |
-| Relations          |     Agent-level     |  Higher-level  |
-| Action set         |        Fixed        | Capacity-gated |
-| Regime switching   |      External       |   Intrinsic    |
-| Prediction failure |     Accidental      |   Structural   |
-
-Comparison of capacity-gated projection dynamics with conventional modeling approaches.
+MTT does not currently select a universal relational kernel, force law, noise schedule, guard threshold, or reset kernel. A physical application must derive those data from its upper operator or action and validate the result against observations not used in construction.
 
 </div>
 
-Unlike multi-agent optimization or planning frameworks, joint behavior in the present system is not imposed by explicit coordination or shared objectives, but is forced by the failure of independent effective descriptions under projection.
+# Question, answer, and scope
 
-The distinctions summarized here explain why close analogues to the present framework are rare. Reproducing its behavior requires abandoning assumptions that are foundational to most existing approaches.
+The question of this paper is deliberately concrete:
 
-In the next section, we make this point explicit by identifying the underlying assumptions that prevent close analogues from arising.
+> What must be specified before “capacity-gated projection dynamics” is an actual dynamical system rather than a suggestive phrase?
 
-# Why There Are No Close Analogues
+The answer is more structured than a single update equation. A static capacity record tells us where a chosen effective description is certified. It does not say how a state moves, whether a boundary is invariant, what happens at first exit, or how randomness enters. The corrected MTT capacity chain makes this separation explicit:
 
-The absence of close analogues to capacity-gated projection dynamics is not accidental, nor is it the result of limited exploration within existing modeling traditions. It follows from the fact that the framework violates several deeply entrenched assumptions that shape what kinds of models are typically constructed and regarded as reasonable. These assumptions are rarely stated explicitly, but they exert strong constraints on both modeling practice and interpretation.
+1.  the MTT Foundation owns the admissibility ledger and the stop/continue/reset alternatives ;
 
-In this section, we identify three such assumptions and explain why abandoning them is necessary for admissibility-limited dynamics to arise.
+2.  the normalized-margin paper owns signed slacks, scales, reserve rows, bottleneck capacity, and metric clearance ;
 
-## Assumption 1: Existence of a Single Global Effective Law
+3.  the control-budget paper owns perturbation cost and cumulative consumption certificates ; and
 
-Most modeling frameworks presuppose that system behavior is governed by a single, globally valid effective rule. This rule may take the form of a cost function, a Hamiltonian, a partial differential equation, or a stochastic evolution law, but it is assumed to apply uniformly across all admissible configurations.
+4.  the transport paper explains which additional data promote a static reserve to a continuous-time model .
 
-Even in models exhibiting chaos, stochasticity, or phase transitions, there remains an implicit belief that a single law exists that governs evolution, albeit with sensitive dependence or probabilistic outcomes.
+This paper supplies one such promotion for an interacting particle model. It does not claim that the promotion is unique or selected by present MTT geometry. Its contribution is a typed construction whose assumptions can be inspected, implemented, varied, and falsified.
 
-Capacity-gated projection dynamics explicitly rejects this assumption. Because projection is non-invertible and admissibility is finite, there exist well-defined configurations for which no effective continuation law can be specified without reference to future relational strain. In such cases, prediction fails not due to lack of computational power or insufficient modeling detail, but because the effective description itself ceases to exist.
+The resulting mathematical neighbors are familiar: hybrid systems use flow sets, jump sets, flow maps, and jump maps ; stochastic hybrid systems add diffusion and reset kernels ; viability theory studies evolution constrained to a set ; barrier functions enforce forward-invariance conditions ; and mean-field particle systems couple particles through aggregate empirical fields . The MTT-specific feature is not a new existence theory for these objects. It is the provenance-aware use of a multirow admissibility record as the gate and the refusal to confuse guard hitting with a sourced physical outcome.
 
-As a result, no single effective law can apply globally. Different regimes admit different dynamics, and transitions between regimes cannot, in general, be decided in advance. Selection events mark the breakdown of one effective law and the enforced adoption of another.
+# What is inherited and what is supplied
 
-If one assumes *a priori* that a global effective law must exist, one will never construct a framework in which breakdown of predictability is a necessary structural feature rather than a modeling deficiency.
+The easiest way to prevent hidden assumptions is to divide the model into two layers.
 
-## Assumption 2: Constraints Are Secondary to Dynamics
+<div class="tabularx">
 
-A second deeply ingrained assumption is that constraints modify dynamics but do not define them. In most approaches, one first specifies dynamics and then introduces constraints as penalties, filters, or corrective terms. Even hard constraints are often implemented as limiting cases of soft ones.
+L0.24YY Object & Inherited from a capacity problem & Supplied by this reduced model
+State and effective chart & Declared domain and admissibility rows & Particle coordinates, velocities, and mode labels
+Normalization & Row tolerances and positive scales & None; the inherited normalization is frozen
+Relational summary & Only if derived by the application & Kernels, weights, field evaluation, and sampling rule
+Within-mode evolution & Only if an upper action or operator supplies it & Drift, damping, diffusion, speed gate, and barrier gain
+First-exit logic & Stop/continue/reset alternatives & Numerical guard threshold and event detector
+Post-exit continuation & Not selected by a scalar reserve & Stop rule, deterministic reset, or Markov reset kernel
+Physical interpretation & Only at the tier proved by the source theory & No automatic gravity, quantum, cognitive, or thermodynamic meaning
 
-Capacity-gated projection dynamics reverses this ordering. Admissibility constraints determine which dynamics are allowed at all. When capacity is high, a wide class of dynamics is admissible. As capacity is strained, this class contracts. At the admissibility boundary, the current dynamics becomes invalid and must be replaced.
+</div>
 
-This reversal has far-reaching consequences. Regime switching, boundary layers, hesitation, and abrupt state formation arise automatically once constraints are treated as prior to dynamics. In conventional models, these features must be introduced artificially through hybrid logic or threshold rules.
+This division changes the status of the algorithm. It is a *conditional reconstruction*: if a particular application provides the rows and accepts the declared constitutive data, the hybrid process is well defined under the hypotheses below. It is not a derivation of those data from projection alone.
 
-Most agent-based, control-theoretic, and optimization frameworks are not designed to treat feasibility as ontologically prior to behavior. As a result, they cannot naturally express admissibility-limited evolution.
+# Particle state, relational summaries, and reserve rows
 
-## Assumption 3: Relations Live at the Same Representational Level as States
+## Microscopic state
 
-Finally, most modeling traditions assume that relations between entities are encoded at the same representational level as the entities themselves. Relations appear as forces, couplings, edges, or interaction terms, but they do not possess independent representational structure.
+Let $`\Omega`$ be a smooth compact $`d`$-dimensional manifold. A flat torus is a convenient boundary-free simulation domain; a bounded Euclidean domain may instead be used together with a declared reflecting, absorbing, or periodic boundary rule. For $`N`$ labeled particles, write
+``` math
+X=(x_1,\ldots,x_N)\in\Omega^N,
+ \qquad
+ V=(v_1,\ldots,v_N)\in(T\Omega)^N.
+```
+Let $`q`$ lie in a finite mode set $`\mathcal Q`$. The reduced state is
+``` math
+z=(X,V,q)\in\mathcal E.
+```
+Extra memory, records, or internal states must be appended to $`\mathcal E`$ if an application uses them. They are not implicit.
 
-In capacity-gated projection dynamics, relations are elevated to a higher representational layer. They are aggregated, global, and many-to-one. Observable agent behavior is obtained only by projecting this relational structure back onto local kinematic state.
+## Relational field map
 
-This separation is decisive. Once relations live at a higher level, they can saturate independently of individual agent motion. Representational overload, bottlenecks, and loss of admissibility become possible without local violations or collisions.
+Choose $`K`$ summary channels. Channel $`k`$ has a kernel $`K_k:\Omega\times\Omega\to\mathbb R`$ and fixed weights $`w_{kj}`$. Define
+``` math
+f_k(x;X)=\sum_{j=1}^{N}w_{kj}K_k(x,x_j).
+```
+The map
+``` math
+\mathcal P:X\longmapsto(f_1(\,\cdot\,;X),\ldots,f_K(\,\cdot\,;X))
+```
+is the relational summary map. It is an explicit coarse observable, not a new physical substance.
 
-Without this move, capacity exhaustion cannot occur as a structural phenomenon. Horizons, selection fronts, and state collapse must instead be imposed externally, if they are represented at all.
+Compactly supported $`K_k`$ give finite-range coupling. Gaussian kernels are nonzero at every finite separation and therefore give all-to-all coupling, even though their influence decays with distance. Calling the latter update “strictly local” would be incorrect.
 
-## Implications
+<div id="prop:noninjective" class="proposition">
 
-Taken together, these three departures explain why close analogues to the present framework are rare. Most existing approaches adopt at least one of the above assumptions as foundational. As a result, they systematically exclude admissibility-limited dynamics from the space of models they consider.
+**Proposition 1** (A sufficient source of noninjectivity). *Suppose particles $`a\ne b`$ have equal weights in every channel: $`w_{ka}=w_{kb}`$ for all $`k`$. If labels belong to the microscopic state, then exchanging $`x_a`$ and $`x_b`$ leaves $`\mathcal P(X)`$ unchanged. Hence $`\mathcal P`$ is noninjective on labeled configurations whenever the exchange changes $`X`$.*
 
-Reproducing the behavior of capacity-gated projection dynamics within such frameworks requires reintroducing the same structural features under different names: hybrid modes, state-dependent constraints, non-predictable transitions, or explicit regime switching. At that point, the distinction becomes terminological rather than substantive.
+</div>
 
-## Summary
+<div class="proof">
 
-There are no close analogues to capacity-gated projection dynamics because the framework rejects three assumptions that are deeply embedded in conventional modeling practice: the existence of a single global effective law, the subordination of constraints to dynamics, and the flat representation of relations.
+*Proof.* Every $`f_k`$ is a sum. The two exchanged summands have equal coefficients, so their sum and therefore every field $`f_k`$ is unchanged. ◻
 
-Once these assumptions are abandoned, admissibility-limited behavior is not only possible but unavoidable. The algorithm presented in this paper should therefore be understood not as a variation on existing methods, but as an explicit realization of a different modeling paradigm.
+</div>
 
-In the concluding section, we summarize the scope and limits of this paradigm and discuss its relevance for future work.
+<div class="remark">
 
-# Conclusion, Scope, and Reproducibility
+*Remark 2*. The proposition proves only a model-relative loss of label information. If particles are physically indistinguishable and the microscopic state is already quotiented by permutations, this argument does not prove further noninjectivity. Nor does noninjectivity alone imply irreversibility; a section may exist on the selected range.
 
-This paper has presented a concrete algorithmic realization of admissibility-limited, projection-based dynamics. The central contribution is not a new optimization method, control strategy, or interaction rule, but a minimal construction that makes projection-first commitments operational. By elevating relations to a higher representational layer and enforcing finite capacity as a structural constraint, the algorithm exhibits behaviors—boundary layers, channel formation, hesitation, sprouting, and abrupt state selection—that cannot be reduced to familiar modeling paradigms without reintroducing equivalent structure under different names.
+</div>
 
-## Summary of Contributions
+## Signed normalized reserve rows
 
-The key results of this work can be summarized as follows:
+For each particle $`i`$, mode $`q`$, and constraint row $`a\in\{1,\ldots,m\}`$, let
+``` math
+\sigma_{ia}^{q}(X,V)
+```
+be a signed slack and let $`s_{ia}^{q}>0`$ have the same units. Define
+``` math
+r_{ia}^{q}(z)=\frac{\sigma_{ia}^{q}(X,V)}{s_{ia}^{q}},
+ \qquad
+ c_q(z)=\min_{i,a}r_{ia}^{q}(z).
+```
+The vector $`r^q=(r_{ia}^q)`$ is primary. The scalar $`c_q`$ is its bottleneck compression. No row is clipped at zero: negative values retain which condition failed and by how much.
 
-- We introduced a fully explicit, runnable algorithm in which behavior is governed by admissibility rather than by global objectives or evaluation rules.
+The exact admissible set in mode $`q`$ is
+``` math
+\mathcal A_q=\{z:r_{ia}^{q}(z)>0\text{ for every }i,a\}.
+```
+The active set is
+``` math
+I_q(z)=\{(i,a):r_{ia}^{q}(z)=c_q(z)\}.
+```
+The minimum is generally nonsmooth when $`I_q(z)`$ contains more than one row. This is why the smooth barrier below is built row by row rather than by differentiating the bottleneck without qualification.
 
-- We demonstrated that finite representational capacity naturally induces regime switching, boundary layers, and selection events without ad hoc thresholds.
+# The typed hybrid record
 
-- We showed how higher-level relational representation enables saturation, bottlenecks, and loss of invertibility independently of individual agent motion.
+<div id="def:record" class="definition">
 
-- We provided a principled interpretation of hesitation and state formation as near-critical and post-critical admissibility dynamics, respectively.
+**Definition 3** (Capacity-gated hybrid record). A capacity-gated hybrid record is the tuple
+``` math
+\mathfrak H=
+(\mathcal E,\mathcal Q,\mathcal P,r,\eta,\mathcal C,\mathcal D,b,\Sigma,U,\mathcal R,\mathcal B,\mathfrak s,\mathfrak p),
+```
+where:
 
-- We clarified why close analogues are absent by identifying three foundational assumptions violated by the framework.
+1.  $`\mathcal E`$ is the state space and $`\mathcal Q`$ the finite mode set;
 
-Together, these results establish capacity-gated projection dynamics as a distinct algorithmic paradigm rather than a variant of existing approaches.
+2.  $`\mathcal P`$ is the relational summary map;
 
-## Scope and Limits
+3.  $`r=(r_{ia}^{q})`$ is one fixed normalized reserve record;
 
-It is important to state clearly what this framework does and does not claim.
+4.  $`\eta=(\eta_q)`$ is a nonnegative numerical guard margin;
 
-The algorithm is not intended as a detailed model of any specific physical, biological, or cognitive system. It does not assert claims about microscopic ontology, neural implementation, or subjective experience. Nor does it propose new physical laws or challenge the empirical validity of existing theories.
+5.  $`\mathcal C_q`$ is the flow set and $`\mathcal D_q`$ the jump or stop set;
 
-Instead, the framework should be understood as an *effective* model of how stable description, behavior, and state formation can arise under finite representational capacity. Its purpose is structural rather than predictive: to demonstrate what kinds of dynamics are unavoidable once projection and admissibility are taken seriously.
+6.  $`b_q`$ and $`\Sigma_q`$ are within-mode drift and diffusion;
 
-The simplicity of the algorithm is intentional. Additional domain-specific structure—learning, memory, signaling, or embodiment—may be layered on top of the present framework, but doing so is not required to obtain the behaviors described here.
+7.  $`U_q`$ is a declared barrier or feedback potential;
 
-## Reproducibility and Implementation
+8.  $`\mathcal R_q(z,\mathrm dz')`$ is a deterministic or Markov reset law;
 
-All components of the algorithm are explicitly defined. Relational fields, capacity computation, barrier construction, regime gating, and time updates are specified operationally. No hidden parameters, implicit objectives, or learning rules are assumed.
+9.  $`\mathcal B`$ is the spatial boundary rule;
 
-The framework is therefore straightforward to implement in simulation environments commonly used for agent-based modeling. Different choices of relational fields or capacity thresholds may alter quantitative details, but the qualitative behaviors described in this paper are robust consequences of the representational architecture and admissibility constraints.
+10. $`\mathfrak s`$ is the strong, weak, martingale, or numerical solution concept; and
 
-The algorithm is intended to be reproducible and extensible. Readers are encouraged to implement minimal versions and explore variations to test the generality of the behavioral signatures reported here.
+11. $`\mathfrak p`$ records the source, units, version, and hash of every nontrivial ingredient.
 
-## Outlook
+</div>
 
-Capacity-gated projection dynamics provides a concrete bridge between abstract projection-first theory and practical dynamical modeling. Its relevance extends beyond any single application domain. Similar admissibility-limited mechanisms appear in measurement, state selection, irreversible dynamics, and decision-like behavior across physical and biological systems.
+The exact failure boundary is $`c_q=0`$. Numerical simulation normally jumps earlier. For a chosen $`\eta_q>0`$, define
+``` math
+\mathcal C_q=\{z:c_q(z)\ge\eta_q\},
+ \qquad
+ \mathcal D_q=\{z:c_q(z)\le\eta_q\}.
+```
+Their overlap at equality permits event handling. One may instead use disjoint conventions, hysteresis, or a set-valued rule, but the convention must be stated.
 
-Future work may explore:
+<div class="remark">
 
-- systematic classification of admissible basins and selection fronts,
+*Remark 4* (Guard margin versus physics). The value $`\eta_q`$ is a numerical or control margin unless a source theorem assigns it physical meaning. A result that changes when $`\eta_q`$ changes is a property of the implemented guard, not of the exact boundary alone.
 
-- quantitative measures of representational strain and recovery,
+</div>
 
-- extensions incorporating memory, learning, or communication,
+# Within-mode dynamics and the barrier force
 
-- connections to undecidability and limits of prediction in hybrid systems.
+## A smooth rowwise barrier
 
-More broadly, the framework suggests a shift in modeling perspective. Instead of asking how agents optimize behavior within a fixed description, it invites inquiry into how descriptions themselves remain viable—and how behavior reorganizes when they do not.
+Choose nonnegative barrier weights $`\alpha_{ia}^{q}`$. On the exact admissible set define
+``` math
+U_q(z)
+ =
+ -\sum_{i,a}\alpha_{ia}^{q}\log r_{ia}^{q}(z).
+```
+On any closed numerical flow set $`c_q\ge\eta_q>0`$, this function is smooth whenever the rows are smooth. Its gradient is
+``` math
+\nabla U_q(z)
+ =
+ -\sum_{i,a}
+ \frac{\alpha_{ia}^{q}}{r_{ia}^{q}(z)}
+ \nabla r_{ia}^{q}(z).
+```
+Unlike $`-\log(\varepsilon+c_q)`$, this expression does not hide active-row ties inside an unjustified ordinary gradient.
 
-## Closing Remark
+<div id="prop:barrier-force" class="proposition">
 
-The algorithm presented here is deliberately unfamiliar. That unfamiliarity is not a liability, but a signal that deeply ingrained assumptions have been relaxed. Once those assumptions are abandoned, admissibility-limited dynamics cease to be exotic and become inevitable.
+**Proposition 5** (The barrier is dynamical feedback). *If the reduced equation contains $`-\nabla U_q`$, then $`U_q`$ is a potential and $`-\nabla U_q`$ is a force or feedback term in that reduced equation. This remains true if $`U_q`$ was motivated by representational admissibility rather than by microscopic energy.*
 
-Capacity-gated projection dynamics offers a concrete demonstration of that inevitability.
+</div>
+
+<div class="proof">
+
+*Proof.* A force term is identified by its role in the evolution equation, not by its interpretation. The displayed vector is the negative gradient of a scalar potential and changes the acceleration or drift. It is therefore a gradient feedback force in the reduced model. No claim that it equals a fundamental physical force follows. ◻
+
+</div>
+
+The logarithmic barrier is familiar from constrained optimization and control. Control barrier functions can certify forward invariance when their derivative inequalities are verified . Merely placing a logarithm in an update does not prove invariance. That requires a tangency, viability, or barrier inequality for the complete drift and diffusion.
+
+## Stochastic flow
+
+Within mode $`q`$, a transparent second-order model is
+``` math
+\begin{align}
+ \mathrm dX_t &= V_t\,\mathrm dt, \label{eq:flow-x}\\
+ \mathrm dV_t
+ &=
+ \bigl[
+ B_q(X_t,V_t)
+ -\Gamma_q(X_t,V_t)V_t
+ -G_q(X_t,V_t)\nabla_X U_q(X_t,V_t)
+ \bigr]\mathrm dt
+ \nonumber\\
+ &\quad
+ +\Sigma_q(X_t,V_t)\,\mathrm dW_t,
+ \label{eq:flow-v}
+\end{align}
+```
+until the first hitting time of $`\mathcal D_q`$. Here $`B_q`$ is a declared base drift, $`\Gamma_q`$ is damping, $`G_q`$ is a mobility or gain, and $`W_t`$ is a Brownian driver of declared dimension and covariance convention.
+
+Every term is optional but none is implicit. Setting $`\Sigma_q=0`$ gives a deterministic hybrid system. A first-order model can omit $`V`$. A discrete-time model can be specified directly, but must still define what happens when a step crosses the guard.
+
+## Speed and noise gates
+
+A speed gate can be imposed through a projection
+``` math
+\Pi_{V_q(c)}(v)
+ =
+ \begin{cases}
+ v,&\|v\|\le V_q(c),\\[0.3em]
+ V_q(c)\,v/\|v\|,&\|v\|>V_q(c),
+ \end{cases}
+```
+or through a drift that enforces an invariant velocity set. A diffusion schedule may use $`\Sigma_q(z)=\chi_q(c_q(z))\Sigma_q^0(z)`$.
+
+These choices can produce slow motion or reduced noise near a guard, but that behavior has been inserted through $`V_q`$ or $`\chi_q`$. It is not a theorem about finite capacity. Conversely, a model with constant diffusion and no speed gate need not “hesitate” at all.
+
+# Guards, resets, and continuation
+
+Let
+``` math
+\tau_1=\inf\{t>0:Z_t\in\mathcal D_{q_0}\}
+```
+be the first guard-hitting time. At $`\tau_1`$ there are four distinct contracts.
+
+1.  **Stop.** The effective trajectory terminates at $`\tau_1`$.
+
+2.  **Continue in another chart.** A declared transition map changes coordinates while representing the same upper state.
+
+3.  **Deterministic reset.** A measurable map $`R_q:\mathcal D_q\to\mathcal E`$ sets $`Z_{\tau_1}=R_q(Z_{\tau_1^-})`$.
+
+4.  **Stochastic reset.** A Markov kernel $`\mathcal R_q(z,\mathrm dz')`$ samples the post-jump state.
+
+Boundary-hitting diffusions with deterministic resets and their Fokker–Planck equations are established mathematical objects . The reset is part of the model data, not a consequence of the boundary.
+
+<div id="def:reset-support" class="definition">
+
+**Definition 6** (Reset support contract). Choose a restart margin $`\eta_q^{\rm reset}>\eta_q`$. A reset law is admissibility restoring if
+``` math
+\mathcal R_q\bigl(z,\{z':c_{q'}(z')\ge
+ \eta_{q'}^{\rm reset}\}\bigr)=1
+```
+for every guard state $`z`$ at which a reset is permitted, with $`q'`$ the post-jump mode contained in $`z'`$.
+
+</div>
+
+<div id="prop:no-selection" class="proposition">
+
+**Proposition 7** (A guard does not select an outcome). *Suppose a guard state $`z`$ admits two distinct admissibility-restoring restart states. Then the state space, flow law, reserve rows, and guard do not determine a unique post-guard trajectory from $`z`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Let $`z_1\ne z_2`$ be the two restart states. The deterministic kernels $`\delta_{z_1}`$ and $`\delta_{z_2}`$ have the same state space, flow law, rows, and guard but produce different continuations. A nontrivial convex mixture of these kernels produces a third continuation law. Therefore the pre-guard data do not select one of them. ◻
+
+</div>
+
+<div id="cor:no-irreversibility" class="corollary">
+
+**Corollary 8** (No automatic irreversibility). *Guard hitting alone proves neither reversibility nor irreversibility. Those properties depend on the continuation rule, retained records, coarse-graining, and the state space on which reversal is tested.*
+
+</div>
+
+A bijective chart transition may preserve information. A many-to-one reset may discard it. A stochastic reset may introduce an outcome law. Those are different mechanisms and should not be merged under the word “selection.”
+
+# Conditional well-posedness
+
+The next result states exactly what the model obtains from standard stochastic and hybrid-system theory.
+
+<div id="thm:wellposed" class="theorem">
+
+**Theorem 9** (Guarded hybrid existence and uniqueness). *Assume for every mode $`q`$ that:*
+
+1.  *$`\Omega`$ is compact, or the coefficients satisfy standard nonexplosion growth bounds;*
+
+2.  *every reserve row is $`C^2`$ on an open neighborhood of $`\mathcal C_q`$ and $`\eta_q>0`$;*
+
+3.  *the drift and diffusion in <a href="#eq:flow-x,eq:flow-v" data-reference-type="ref+label" data-reference="eq:flow-x,eq:flow-v">[eq:flow-x,eq:flow-v]</a> are locally Lipschitz on that neighborhood;*
+
+4.  *the spatial boundary rule is well posed;*
+
+5.  *$`\mathcal R_q`$ is a measurable probability kernel satisfying <a href="#def:reset-support" data-reference-type="ref+label" data-reference="def:reset-support">6</a>; and*
+
+6.  *almost surely, jump times have no finite accumulation point.*
+
+*Then an initial state in a flow or restart set determines a unique strong within-mode solution up to its next guard time. Concatenating that solution with the reset kernels defines a strong Markov hybrid process for all finite times. If the reset is deterministic, the same statement holds with a deterministic jump map.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Because $`c_q\ge\eta_q>0`$ on the closed numerical flow set, every denominator in $`\nabla U_q`$ is bounded away from zero. The assumed row regularity makes the barrier gradient locally Lipschitz there. Standard SDE existence and pathwise uniqueness therefore apply until the first exit from the flow domain. At the exit, the measurable reset kernel supplies the conditional law of the next initial state. Iterating this construction gives the usual piecing-out construction of a stochastic hybrid process . The no-accumulation hypothesis ensures that only finitely many pieces occur on each finite time interval. ◻
+
+</div>
+
+<div class="remark">
+
+*Remark 10* (What the theorem does not prove). The theorem does not prove that a guard is reached, that a reset state is physically selected, that the process converges, that the safe set is invariant, or that the model is a faithful description of a target system. Those are separate reachability, source, stability, and validation questions.
+
+</div>
+
+<div class="remark">
+
+*Remark 11* (Zeno behavior). A restart margin alone does not always rule out infinitely many jumps in finite time. One may establish a positive dwell time from bounded drift and a positive reserve gap, introduce hysteresis or a timer, or treat Zeno completion explicitly. The chosen route belongs in the model record.
+
+</div>
+
+# Classical collective dependence
+
+The shared fields make particle updates dependent. This is important, but it should be named correctly.
+
+Let $`\mathcal L`$ be the within-mode generator. If particles were dynamically independent, it would decompose as
+``` math
+\mathcal L=\sum_{i=1}^{N}\mathcal L_i,
+```
+where $`\mathcal L_i`$ acts only on the coordinates of particle $`i`$. Shared-field feedback generally violates this decomposition.
+
+<div id="prop:cross-dependence" class="proposition">
+
+**Proposition 12** (Cross-dependence criterion). *Suppose the drift of particle $`i`$ contains $`\nabla_{x_i}f_k(x_i;X)`$ and for some $`j\ne i`$
+``` math
+w_{kj}\,\nabla_{x_i}K_k(x_i,x_j)\ne0
+```
+on an open set. Then the drift of particle $`i`$ depends on $`x_j`$ on that set. The generator is not a sum of single-particle generators there, and the finite-time transition law is not generically a product of independent single-particle transition laws.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Differentiating the field gives
+``` math
+\nabla_{x_i}f_k(x_i;X)
+ =
+ \sum_{\ell=1}^{N}
+ w_{k\ell}\nabla_1K_k(x_i,x_\ell).
+```
+The nonzero $`j`$ term changes when $`x_j`$ changes while $`x_i`$ is held fixed. Thus the $`i`$ drift cannot be a function of the $`i`$ state alone. The generator consequently contains cross-coordinate dependence, which generically prevents product transition kernels. ◻
+
+</div>
+
+This is classical collective correlation or mean-field dependence. A claim of quantum entanglement would additionally require a quantum state space or observable algebra, a subsystem composition rule, a state, and a separability or entanglement criterion. Those data are absent here. Quantum separability is a precise property of states on composite quantum systems ; classical nonfactorization of a particle transition law is not a substitute for it.
+
+# An executable event-driven specification
+
+The continuous model can be simulated by an event-aware discretization. The following specification is intentionally explicit about failure.
+
+    INPUT:
+      model record H, final time T, initial state z0,
+      step h, event tolerance tol, random seed
+
+    REQUIRE:
+      z0 is in a flow or restart set
+      all source hashes and units in the provenance ledger match
+
+    t <- 0
+    z <- z0
+    while t < T:
+        q <- mode(z)
+        compute every signed row r_ia^q(z)
+        if min(r_ia^q(z)) <= eta_q:
+            if policy is STOP:
+                return trajectory with certified first-exit record
+            z <- sample R_q(z, .) or evaluate deterministic reset R_q(z)
+            verify reset support and record random draw
+            continue
+
+        compute relational fields and their derivatives
+        compute rowwise barrier gradient
+        propose one Euler--Maruyama step z_trial
+
+        if z_trial stays in the flow set:
+            accept z_trial
+            t <- t + h
+        else:
+            bracket the first guard crossing on the same noise increment
+            refine the crossing time to tolerance tol
+            advance to the guard and apply the declared stop/reset policy
+
+    OUTPUT:
+      path, mode history, row history, active rows,
+      guard events, reset draws, seed, parameter ledger,
+      source hashes, tolerances
+
+## Why naive clipping is not enough
+
+Replacing every negative row by zero before event detection loses the failed-row identity and violation size. Accepting an Euler step that jumps from $`c_q>\eta_q`$ to $`c_q<0`$ also invents dynamics outside the declared flow domain. The event-aware scheme brackets that crossing and invokes the declared continuation rule.
+
+## Numerical versus exact statements
+
+Euler–Maruyama is an approximation, not the hybrid process itself. Convergence requires the usual coefficient and event-detection hypotheses; hybrid simulators need additional care near jumps . A reproducibility packet should report step refinement, event tolerance refinement, random seeds, and the fraction of trajectories affected by guard localization.
+
+# Complete parameter and provenance ledger
+
+The phrase “no hidden parameters” is justified only by publishing all of them. A minimal ledger contains the following rows.
+
+<div class="tabularx">
+
+L0.22L0.25Y Entry & Mathematical role & Required provenance
+$`N,d,\Omega`$ & particle count, dimension, domain & physical source, model choice, or test-grid declaration
+Boundary rule & periodic, reflecting, absorbing, or reset & domain theorem or constitutive choice
+$`K_k,\sigma_k`$ & relational kernels and ranges & upper overlap calculation or chosen interaction scale
+$`w_{kj}`$ & channel weights & symmetry/source rule or explicit model parameter
+$`\sigma_{ia}^{q}`$ & signed admissibility slacks & exact source condition and convention
+$`s_{ia}^{q}`$ & row normalization scales & units, tolerance, and calibration source
+$`\eta_q`$ & numerical guard margin & numerical choice or sourced physical threshold
+$`\alpha_{ia}^{q}`$ & barrier gains & control design or source derivation
+$`B_q,\Gamma_q,G_q`$ & base drift, damping, mobility & action/operator derivation or constitutive model
+$`\Sigma_q`$ & diffusion and covariance & noise source, units, and stochastic convention
+$`V_q,\chi_q`$ & speed and noise gates & constitutive schedule and regularity
+$`\mathcal R_q`$ & deterministic or stochastic continuation & source rule, support proof, and randomization semantics
+$`h,\mathrm{tol}`$ & time step and event tolerance & convergence study
+Seed and generator & reproducible random stream & algorithm, version, and seed
+Initial law & starting ensemble & independent protocol, not selected after seeing outcomes
+Diagnostics & reported observables and estimators & definitions fixed before interpretation
+
+</div>
+
+Parameters may be fixed for a toy model without being fitted. That makes the example reproducible, not parameter free. For a physical claim, the ledger must also distinguish:
+
+- values selected by an upstream theorem;
+
+- conventional choices that change coordinates but not predictions;
+
+- numerical controls removed by convergence;
+
+- genuine constitutive parameters;
+
+- quantities fitted to the same data later reported; and
+
+- held-out observables used only for validation.
+
+# A closed-form two-particle circle model
+
+This example is not a physical fit. Its purpose is to show that every item in the hybrid record can be filled without ambiguity.
+
+Let $`\Omega=\mathbb R/L\mathbb Z`$ and $`N=2`$. Use the periodic kernel
+``` math
+K(y)=1+\cos\left(\frac{2\pi y}{L}\right).
+```
+Define one relational field
+``` math
+f(x;X)=K(x-x_1)+K(x-x_2)
+```
+and one reserve row per particle,
+``` math
+r_i(X)=4-f(x_i;X).
+```
+At coincidence $`x_1=x_2`$, each row is zero because $`f(x_i;X)=4`$. At antipodal separation $`x_2=x_1+L/2`$, each row equals $`2`$ because the self-term is $`2`$ and the cross-term is zero.
+
+Choose a guard $`\eta\in(0,2)`$ and barrier
+``` math
+U(X)=-\alpha\bigl(\log r_1(X)+\log r_2(X)\bigr)
+```
+on $`r_1,r_2\ge\eta`$. Let the within-mode dynamics be
+``` math
+\mathrm dx_i=v_i\,\mathrm dt,
+ \qquad
+ \mathrm dv_i=
+ \bigl[-\gamma v_i-\partial_{x_i}U(X)\bigr]\mathrm dt
+ +\sigma\,\mathrm dW_i.
+```
+All four parameters $`L,\alpha,\gamma,\sigma`$ and the guard $`\eta`$ are declared model inputs.
+
+At the guard, choose a random global phase $`\xi`$ uniformly on the circle and reset
+``` math
+(x_1,x_2,v_1,v_2)
+ \longmapsto
+ (\xi,\xi+L/2,0,0).
+```
+This Markov reset is translation covariant and returns both rows to $`2`$. It therefore satisfies the reset support contract for every $`\eta^{\rm reset}<2`$.
+
+The same flow and guard could instead stop, reverse the relative velocity, or reset to another safe configuration. <a href="#prop:no-selection" data-reference-type="ref+Label" data-reference="prop:no-selection">7</a> explains why none of these outcomes follows from the guard itself. The example also shows classical dependence: the force on particle $`1`$ depends on $`x_2-x_1`$.
+
+# Behavioral diagnostics, not automatic conclusions
+
+The previous version described several behaviors as necessary. In the typed model they become measurable questions.
+
+<div class="tabularx">
+
+L0.20YY Label & Operational diagnostic & What must be shown
+Boundary layer & systematic change of drift, residence time, or density as $`c_q\downarrow\eta_q`$ & asymptotic analysis or step-refined simulation, separated from a barrier inserted by design
+Hesitation & reduced speed or increased dwell time near the guard & dependence on the declared speed, damping, and noise schedules
+Channel & persistent anisotropic path concentration & geometry of the reserve rows and comparison with a matched baseline
+Sprouting & reproducible bifurcation into new path families & parameter sweep, stability analysis, and finite-size checks
+Collective dependence & nonzero cross-response or nonproduct transition law & cross-coordinate generator term or statistical dependence test
+Selection event & guard hit followed by a recorded jump & explicit reset law and outcome provenance
+Stable basin & invariant or metastable set with quantified residence time & Lyapunov, spectral, large-deviation, or controlled numerical evidence
+Irreversibility & failure of a stated reversal criterion & record/coarse-graining theorem or path-measure comparison
+
+</div>
+
+Several simple countermodels show why the labels are not inevitable. With $`G_q=0`$, the barrier does not affect the drift. With constant speed and diffusion schedules, reduced capacity does not impose hesitation. With a reserve depending only on one coordinate, no channel branching need occur. With a stop policy, no post-guard state forms. With a bijective chart transition, the jump need not discard information.
+
+# Relation to established mathematical frameworks
+
+## Hybrid systems
+
+The tuple of flow set, flow map, jump set, and jump map is standard in hybrid dynamics . The present model is not outside that class. Its distinctive bookkeeping is that the flow and jump sets are generated from a normalized multi-condition capacity record.
+
+## Viability and barrier methods
+
+Viability theory asks whether trajectories can remain in a constrained set and studies viability kernels and exit tubes . Control barrier functions provide derivative conditions for safety or forward invariance . A capacity row can participate in such a certificate, but positivity at one instant does not establish invariance. The derivative condition must be checked for the supplied dynamics.
+
+## Mean-field and interacting particle systems
+
+Fields built by summing kernels over all particles are standard interacting particle constructions. Their large-$`N`$ limits can lead to McKean–Vlasov equations and propagation-of-chaos questions . The MTT vocabulary does not remove the need for finite-$`N`$ estimates, mean-field scaling, or convergence proofs.
+
+## What remains specifically useful here
+
+The construction still contributes a useful research discipline:
+
+1.  begin with independently sourced, normalized admissibility rows;
+
+2.  preserve row identities rather than hiding them in one arbitrary scalar;
+
+3.  let the weakest row define a transparent guard;
+
+4.  declare the feedback and reset as separate model layers;
+
+5.  record whether the result stops, changes chart, or samples a new state; and
+
+6.  refuse downstream physical language until its required mathematical structure is present.
+
+That composition can be valuable even though its component mathematics has close analogues.
+
+# Claim status and theorem ownership
+
+This paper owns the following local results and definitions:
+
+1.  the typed capacity-gated hybrid record in <a href="#def:record" data-reference-type="ref+label" data-reference="def:record">3</a>;
+
+2.  the rowwise barrier construction tied to the MTT reserve record;
+
+3.  the barrier-feedback classification in <a href="#prop:barrier-force" data-reference-type="ref+label" data-reference="prop:barrier-force">5</a>;
+
+4.  the reset support contract in <a href="#def:reset-support" data-reference-type="ref+label" data-reference="def:reset-support">6</a>;
+
+5.  the no-selection result in <a href="#prop:no-selection" data-reference-type="ref+label" data-reference="prop:no-selection">7</a>;
+
+6.  the guarded hybrid well-posedness specialization in <a href="#thm:wellposed" data-reference-type="ref+label" data-reference="thm:wellposed">9</a>;
+
+7.  the shared-field cross-dependence criterion in <a href="#prop:cross-dependence" data-reference-type="ref+label" data-reference="prop:cross-dependence">12</a>; and
+
+8.  the complete executable and provenance contracts.
+
+Standard SDE existence, strong Markov piecing-out, hybrid-system solution theory, viability theory, barrier certificates, mean-field limits, and quantum separability retain their literature ownership.
+
+The following claims are *not* established:
+
+- a universal MTT capacity evolution law;
+
+- a geometry-selected relational kernel or reset kernel;
+
+- inevitable guard hitting or inevitable basin formation;
+
+- quantum entanglement, Bell correlations, or collapse;
+
+- thermodynamic entropy production or an arrow of time;
+
+- gravity, horizons, biological decision making, or consciousness;
+
+- structural unpredictability beyond the chosen hybrid model; or
+
+- superiority to established hybrid, control, or particle methods.
+
+# Completion and falsifiability contract
+
+A proposed application is complete at the model level only if it supplies:
+
+1.  the exact upper state or action from which the rows are computed;
+
+2.  the fixed normalization, units, and hashes of all reserve rows;
+
+3.  the derivation or constitutive status of every kernel and coefficient;
+
+4.  the flow and jump sets, including tie and overlap conventions;
+
+5.  the reset map or kernel and its support proof;
+
+6.  a well-posedness or numerical-convergence certificate;
+
+7.  preregistered diagnostics and matched baselines;
+
+8.  uncertainty, finite-size, and discretization studies;
+
+9.  held-out validation data; and
+
+10. a tier statement distinguishing toy model, reconstruction, fit, controlled numerical result, and selected prediction.
+
+The model is falsified as a claimed application if, for example, its rows cannot be sourced, its reset leaves the declared admissible set, its reported behavior disappears under event or step refinement, its claimed locality uses a noncompact kernel without qualification, or its held-out predictions fail outside the construction data.
+
+# Conclusion
+
+Capacity-gated projection dynamics can be made precise, but precision changes what may be claimed. The concrete construction is a hybrid stochastic particle model. Its relational fields provide classical coupling. Its logarithmic barrier provides gradient feedback. Its guard marks the boundary of one declared flow regime. Its reset law, not the guard, determines continuation.
+
+That correction does not empty the idea. It turns it into a usable object. The model can now be simulated without silently crossing its domain, compared with established hybrid and mean-field methods, and promoted to a physical application only when an upstream source supplies its coefficients and reset. The central methodological lesson is simple: capacity can gate dynamics, but it does not write the dynamics for us.

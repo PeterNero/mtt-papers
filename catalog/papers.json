@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
-    "zenodo_records": 246,
-    "zenodo_records_matched": 246,
+    "zenodo_records": 247,
+    "zenodo_records_matched": 247,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -1424,54 +1424,82 @@
       ]
     },
     {
-      "abstract": "We introduce a class of dynamical systems in which evolution is governed by admissibility constraints imposed by finite coherence capacity rather than by optimization, energy minimization, or utility functions. The system evolves according to a local update rule while representational strain remains within capacity. When this capacity is exhausted, continuation of the current effective description becomes inadmissible and the system undergoes a forced regime transition induced by projection. A central feature of the framework is that projection is many-to-one and non-invertible, mapping underlying configurations to an admissibility-dependent effective state space. When capacity is sufficient, the effective description factorizes into independent agent-level states. As capacity is reduced, such factorization may fail, forcing the system to adopt a joint effective state spanning multiple agents. Admissibility is therefore evaluated collectively on the projected relational description, yielding non-factorizable, entanglement-like coordination without communication, shared objectives, or global control. We provide an explicit, runnable algorithm implementing capacity-gated projection dynamics with strictly local, real-time updates and no look-ahead. The resulting dynamics exhibit hesitation, channeling, boundary-layer behavior, and discrete selection events that resemble decision-making or adaptive coordination, yet arise purely from structural constraints on effective description. The model serves as a constructive existence proof for projection-limited dynamics and provides a testbed for studying selection, irreversibility, and regime change in physical, biological, and artificial systems.",
+      "abstract": "This paper turns the qualitative idea of capacity-gated projection into a complete model specification. The model contains finitely many particles, declared relational summary fields, normalized admissibility rows, a bottleneck reserve, within-mode drift and diffusion, flow and jump sets, and a deterministic reset map or Markov reset kernel. These data define a hybrid stochastic particle system. They are not consequences of a capacity scalar alone. The distinction repairs several ambiguities in the previous version. The logarithmic expression used there is a barrier potential, and its negative gradient is a genuine feedback force or penalty within the reduced model. A capacity-dependent speed cap and noise schedule are constitutive choices. Reaching a guard does not select a successor state until a reset law is supplied. Shared relational fields generally produce classical collective dependence, not quantum entanglement. The use of a Gaussian kernel also creates all-to-all mean-field coupling rather than strictly local interaction. We give a typed model record, a smooth rowwise barrier, a conditional well-posedness theorem up to guard accumulation, an explicit no-selection result for an unspecified reset, a generator criterion for classical nonfactorization, and an event-driven Euler\u2013Maruyama specification that does not silently step through the guard. A two-particle circle model shows every object in closed form, including a translation-covariant reset kernel. A parameter and provenance ledger separates quantities inherited from an MTT admissibility problem from modeling choices and numerical controls. Boundary layers, hesitation, channels, sprouting, and persistent basins are therefore simulation observables to test under stated parameters, not inevitable consequences of projection. The result is a reproducible conditional model and a clear contract for promoting it to a physical application.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v2",
-      "date": "January, 2026",
+      "current_version": "v3",
+      "date": "Version 3, July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18274654",
-        "created": "2026-01-17T19:03:36.204380+00:00",
+        "created": "2026-07-30T20:45:18.436999+00:00",
         "creators": [
           "Nero, Peter"
         ],
-        "doi": "10.5281/zenodo.18283389",
+        "doi": "10.5281/zenodo.21709930",
         "files": [
           {
-            "checksum": "md5:541165ac4248adf7d72aaaf10fdd9dba",
-            "content_url": "https://zenodo.org/api/records/18283389/files/Capacity_Gated_Projection_Dynamics_v2%20(2).pdf/content",
-            "key": "Capacity_Gated_Projection_Dynamics_v2 (2).pdf",
-            "size": 294866
+            "checksum": "md5:5407607911b5965eeec50956737a91ee",
+            "content_url": "https://zenodo.org/api/records/21709930/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 411184
           }
         ],
-        "id": "18283389",
-        "match_kind": "title_or_file",
+        "id": "21709930",
+        "match_kind": "published_draft_reconciliation",
         "match_score": 1.0,
-        "publication_date": "2026-01-17",
-        "record_url": "https://zenodo.org/records/18283389",
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21709930",
         "resource_type": "publication",
-        "title": "Capacity-Gated Projection Dynamics",
-        "updated": "2026-01-17T19:03:36.707572+00:00",
-        "version": "v2.0"
+        "title": "Capacity-Gated Projection Dynamics: A Typed Hybrid Stochastic Model and Executable Specification",
+        "updated": "2026-07-30T20:45:18.774939+00:00",
+        "version": "v3"
       },
-      "main_tex_sha256": "1fbb30c72c1808bf3337e6a8e7eb5ca2d842448246ba385b527b4726c14aff20",
+      "main_tex_sha256": "8fd8910fc64488c5fe076290edc00632a3cefdddc3a08cf81b8e255b49017c79",
       "paper_id": "capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90",
-      "paper_md_sha256": "7adf35fcc347a16ac0bff94554f7ae4e5c44c57b6211378e90ba29f73daea4a9",
+      "paper_md_sha256": "c2c7b4c06a59726eb788cfb4759cb650eb5d32a784e880ce751d7c596ddcc5fc",
       "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "4ab8e4b36a28a9033d18ac2fad5db7b77d2fe099bcbbc1b79cfcbb2a5b740ee4",
+        "selected_revision": true,
+        "superseded_source_path": "14 Coherence Capacity Program/_work/Capacity_Gated_Projection_Dynamics_v2 (1)"
       },
       "source_provenance": {
         "legacy_source_path": "14 Coherence Capacity Program/_work/Capacity_Gated_Projection_Dynamics_v2 (1)"
       },
-      "source_tree_sha256": "0c54ce448dd3465e5255f3af9fd5efbed941f173532d48b259cac06945edbe06",
-      "title": "Capacity-Gated Projection Dynamics: A Concrete Algorithmic Realization of Admissibility-Limited Description",
+      "source_tree_sha256": "725f69f068c5197dcfaa53fab2208c4938e7ba54f2105ea790cf4ec082884233",
+      "title": "Capacity-Gated Projection Dynamics: A Typed Hybrid Stochastic Model and Executable Specification",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18274654",
+          "created": "2026-07-30T20:45:18.436999+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21709930",
+          "files": [
+            {
+              "checksum": "md5:5407607911b5965eeec50956737a91ee",
+              "content_url": "https://zenodo.org/api/records/21709930/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 411184
+            }
+          ],
+          "id": "21709930",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21709930",
+          "resource_type": "publication",
+          "title": "Capacity-Gated Projection Dynamics: A Typed Hybrid Stochastic Model and Executable Specification",
+          "updated": "2026-07-30T20:45:18.774939+00:00",
+          "version": "v3"
+        },
         {
           "concept_doi": "10.5281/zenodo.18274654",
           "created": "2026-01-17T19:03:36.204380+00:00",

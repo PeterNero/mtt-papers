@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18274654",
+      "created": "2026-07-30T20:45:18.436999+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21709930",
+      "files": [
+        {
+          "checksum": "md5:5407607911b5965eeec50956737a91ee",
+          "content_url": "https://zenodo.org/api/records/21709930/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 411184
+        }
+      ],
+      "id": "21709930",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21709930",
+      "resource_type": "publication",
+      "title": "Capacity-Gated Projection Dynamics: A Typed Hybrid Stochastic Model and Executable Specification",
+      "updated": "2026-07-30T20:45:18.774939+00:00",
+      "version": "v3"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18256048",
       "created": "2026-07-30T20:23:15.330146+00:00",
       "creators": [

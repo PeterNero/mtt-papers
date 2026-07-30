@@ -13,9 +13,9 @@ Canonical papers audited: **139**.
 | critical | 7 |
 | major | 7 |
 | moderate | 4 |
-| light | 10 |
+| light | 9 |
 | low | 1 |
-| reviewed | 108 |
+| reviewed | 109 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -24,8 +24,8 @@ Canonical papers audited: **139**.
 | --- | ---: |
 | argument_flow | 36 |
 | conclusion | 12 |
-| concrete_foothold | 40 |
-| object_intuition | 89 |
+| concrete_foothold | 39 |
+| object_intuition | 88 |
 | orientation | 44 |
 | result_interpretation | 12 |
 
@@ -55,7 +55,6 @@ Canonical papers audited: **139**.
 | light | light | `why-general-relativity-and-string-theory-are-the-same-a-98920533` | 4 | 927.2 | 5/7 | object_intuition, conclusion |
 | light | light | `effective-field-theory-as-a-shadow-of-projection-admiss-ec123406` | 3 | 1040.3 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | light | light | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 1 | 7592.0 | 6/7 | object_intuition |
-| light | light | `capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90` | 0 | 7920.0 | 5/7 | object_intuition, concrete_foothold |
 | light | light | `modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8` | 0 | 9868.0 | 6/7 | object_intuition |
 | light | light | `modal-triplet-theory-parameters-closure-and-structural-ae734bf0` | 0 | 4982.0 | 5/7 | object_intuition, concrete_foothold |
 | light | light | `photons-entanglement-and-null-updating-in-modal-triplet-theory` | 0 | 5021.0 | 6/7 | object_intuition |
@@ -102,6 +101,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `mtt-corrected-contact-loops-and-finite-one-loop-tadpole-cdd66d8e` | 9 | 123.2 | 5/7 | object_intuition, concrete_foothold |
 | reviewed | moderate | `the-proto-spinor-conditional-spinorial-closure-and-the-973217d8` | 9 | 316.7 | 6/7 | object_intuition |
 | reviewed | moderate | `why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2` | 9 | 274.4 | 5/7 | orientation, object_intuition |
+| reviewed | moderate | `capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90` | 8 | 349.8 | 7/7 | - |
 | reviewed | major | `deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3` | 8 | 205.4 | 5/7 | object_intuition, result_interpretation |
 | reviewed | moderate | `dirac-delta-functions-as-singular-shadows-of-admissible-6e0ddf3f` | 8 | 330.2 | 6/7 | orientation |
 | reviewed | major | `fixed-points-iii-disturbance-damping-balance-and-stability` | 8 | 222.2 | 7/7 | - |
