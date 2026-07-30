@@ -712,6 +712,46 @@
       "reviewed_main_tex_sha256": "c660d446d9990dfe60a154c43d593b0cabb8c8a69b68557d696623cc88127b81",
       "reviewed_pdf_sha256": "7f3603caaafc5b03dc54d56851df93d8308f5228bab6b20d0fb0393031c393da",
       "reviewed_source_tree_sha256": "fc6c8928cb602ad8fb1a2e2e141b78fe6bed280fa2ea836435937bb12723ce25"
+    },
+    "contact-interactions-and-renormalization-as-over-sharp-c2cfaa22": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 1 retains the overlap sharp-limit and finite spectral tensor results, classifies fixed-width vertices as nonlocal EFT interactions absent a local parent, and separates all-loop, causal, unitary and gauge/BRST promotion gates; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "7f66a88799986a792fa9b714dc99a7b533f8e6f38d0cc4e5f056a19c3b14613f",
+      "reviewed_pdf_sha256": "72fd10a22fddcf59d3b5c4cd6a1fe98b853291ec0b95ce415cae0b606a90df0f",
+      "reviewed_source_tree_sha256": "c8d5b2d513acec5e3e56eb588a6788fa4f6f0b80068fade8db2a1f3622969a80"
+    },
+    "mtt-corrected-contact-loops-and-finite-one-loop-tadpole-cdd66d8e": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 1 preserves the exact Euclidean Gaussian-filtered tadpole, Schwinger representation, four-dimensional closed form and local-limit asymptotics while withdrawing the unsupported MTT external-filter selection and all-loop inference; 8-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "15aebcbdf0a2bd4bc0075947e3fe7920e82999774c3197e3fbde252928514b65",
+      "reviewed_pdf_sha256": "9f46c1744027991c300ac8baf875a8affb0d64cccc6adb4ec8a062a355077d1f",
+      "reviewed_source_tree_sha256": "d7df33457bad46898e21a764bc977c3ea5e75a5b4495d52ebb79dc2259e38ac4"
+    },
+    "mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 1 retains exact Euclidean recovery, coincidence finiteness and conditional all-graph Gaussian domination, but treats the external filter as declared and makes source intertwining, reflection positivity, gauge/BRST and Lorentzian unitarity independent obligations; 12-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "2cf4c81a9b0eb44e790d78341da388cefe671123e268e77279f6b086665b8581",
+      "reviewed_pdf_sha256": "bcada12a5e1659d278a56680b1f191a9faea55a84f0bbd36529cee3458ee12fa",
+      "reviewed_source_tree_sha256": "27bba804fd9a60fc65cd88ecb6b57e04f5d458f90faefc103b12112c1d5b9c99"
+    },
+    "finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 1 retains the standard sinc, smooth-window, Plancherel, golden-rule and spacetime delta limits while separating experimental duration, broken-support symmetry and a possible fundamental MTT width; 9-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "05fa89b720930ab481b8c2d7b29cf3aa352cdf1416aee419fdbc9e28866a38a1",
+      "reviewed_pdf_sha256": "b08cbece9177e678fe7a9ef824fb54eebd4ed464fb16ce25e63a0e06eff69976",
+      "reviewed_source_tree_sha256": "32b5bebe74e4b968d41d11c3f63a9d4809c935ba04d161df1e4d93a0516bb100"
+    },
+    "momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Version 1 makes Ward-Noether translation symmetry the authority for exact conservation, retains finite-window Fourier limits, rejects universal softening, and leaves the circle bookkeeping profile conditional on a selected source; 10-page PDF visually inspected.",
+      "reviewed_main_tex_sha256": "8deb7d58e0fcc3ab993a79c88b92bbafcf253227b582a26d653d8ea25634c0df",
+      "reviewed_pdf_sha256": "e5cb5031ad79f4411d8ea13730b3a3f92080f7b82d54a367c50a9661e067be77",
+      "reviewed_source_tree_sha256": "0e4e88dfc5b8f1368116ce0ea63c68871df0967a5f1eae5afbda08321d57c7f4"
     }
   }
 }

@@ -1,20 +1,47 @@
 {
-  "abstract": "Local quantum field theory writes interactions as pointwise products, for example \\int_X \\lambda \\phi(x)^4\\,dx. In perturbation theory these contact vertices generate coincidence limits, momentum-conservation delta functions, and ultraviolet singularities. Building on the preceding papers on Dirac deltas, coherent Green functions, gauge fixing, and measurement effects, this paper develops the contact-interaction member of the same projection-kernel program. The central claim is narrow: a point-local interaction vertex is the zero-width limit of a finite coherent overlap vertex. The mathematical core is an approximate-identity theorem. Given a bounded smoothing kernel K_\\epsilon(x,y), define the smeared field \\phi_\\epsilon(x)=\\int_X K_\\epsilon(x,y)\\phi(y)\\,dy and the finite overlap interaction S_{\\mathrm{int},\\epsilon}[\\phi] = \\frac{\\lambda}{4!}\\int_X \\phi_\\epsilon(x)^4\\,dx . For smooth fields, S_{\\mathrm{int},\\epsilon}\\to S_{\\mathrm{int}}= \\frac{\\lambda}{4!}\\int_X\\phi(x)^4\\,dx as \\epsilon\\downarrow0. On a compact spectral model, replacing the identity by a finite spectral projector \\Pi_\\Lambda yields a finite vertex tensor and finite coincident covariance in the retained sector. In momentum space, heat-kernel smearing multiplies propagators and vertices by rapidly decaying form factors, turning point-contact singularities into finite coherent-overlap expressions before the sharp limit is taken. The MTT interpretation is that ordinary contact interactions are not primitive zero-width events. They are downstream idealizations of finite admissible overlap among coherent modes. Renormalization is therefore re-read, not abolished, as the repair procedure needed when a downstream theory replaces finite coherent overlap by a point-local delta/contact idealization. The paper proves the kernel-convergence, general n-point sharp-limit, and finite-cutoff statements; broader claims about physical renormalization are presented as structural interpretation and research program, not as completed phenomenology. We also emphasize that admissible kernels are not arbitrary regulators: they must respect the causal, symmetry, and quotient structures of the effective theory.",
+  "abstract": "This paper proves that a point-local interaction vertex is the zero-width limit of a finite coherent overlap vertex. For smooth fields, bounded approximate-identity kernels give convergence of general finite-overlap interactions to their local contact limits. On compact spectral models, finite projection yields finite vertex tensors and finite coincident covariance within the retained sector. The MTT interpretation is conditional: if a selected physical sector supplies such a kernel and an intertwiner to external fields, the local vertex may be read as its sharp limit. At nonzero width the construction is generally a nonlocal effective interaction, not automatically a local ultraviolet completion. A local parent mediator or equivalent localization theorem would be needed to change that classification. The paper does not infer all-loop renormalizability, ultraviolet completion, Lorentzian causality, unitarity, reflection positivity, or gauge and BRST consistency from finite width alone.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "unversioned",
-  "date": "April 2026",
-  "latest_zenodo_release": null,
-  "main_tex_sha256": "cb272180e6bf044e4bb9332ede3a7441bccf1aae43aa2785b8c06a33ebba3785",
+  "current_version": "v1",
+  "date": "July 2026, Version 1",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.21704381",
+    "created": "2026-07-30T13:27:52.356983+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.21704382",
+    "files": [
+      {
+        "checksum": "md5:a19f6e0631804472d062c4f604b0d506",
+        "content_url": "https://zenodo.org/api/records/21704382/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 378186
+      }
+    ],
+    "id": "21704382",
+    "match_kind": "published_draft_reconciliation",
+    "match_score": 1.0,
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21704382",
+    "resource_type": "publication",
+    "title": "Finite Coherent Overlap Vertices and Their Local Contact Limit Conditional EFT Interpretation and the Renormalization Boundary",
+    "updated": "2026-07-30T13:27:53.518465+00:00",
+    "version": "v1"
+  },
+  "main_tex_sha256": "7f66a88799986a792fa9b714dc99a7b533f8e6f38d0cc4e5f056a19c3b14613f",
   "paper_id": "contact-interactions-and-renormalization-as-over-sharp-c2cfaa22",
-  "paper_md_sha256": "948bde5152c30eb4f01e915479f05b809d82509249f58032c3a4155b4c8b4bf7",
-  "release_state": "not_matched_to_zenodo",
+  "paper_md_sha256": "e97a62ca6b326de8c80cad57651328bb1b671a9588b870522e3611ef2121978b",
+  "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/contact-interactions-and-renormalization-as-over-sharp-c2cfaa22/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "7be340284127bab934e40a34556a03c14e425496d21a6aea3503cc2960ecf5cb",
+    "selected_revision": true,
+    "superseded_source_path": "5 Dirac Delta/_work/Contact_Interactions_and_Renormalization_as_Over__Sharp_Projection__Finite_Coherent_Overlap_Vertices_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -24,9 +51,9 @@
       "sha256": "cb272180e6bf044e4bb9332ede3a7441bccf1aae43aa2785b8c06a33ebba3785"
     },
     {
-      "bytes": 21246,
+      "bytes": 22751,
       "path": "main.tex",
-      "sha256": "cb272180e6bf044e4bb9332ede3a7441bccf1aae43aa2785b8c06a33ebba3785"
+      "sha256": "7f66a88799986a792fa9b714dc99a7b533f8e6f38d0cc4e5f056a19c3b14613f"
     },
     {
       "bytes": 3784,
@@ -37,8 +64,34 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Contact_Interactions_and_Renormalization_as_Over__Sharp_Projection__Finite_Coherent_Overlap_Vertices_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "21bc3daf2927262750691570164165c3bf83501dda2d5ea89eac9af9c35bda7c",
-  "title": "Contact Interactions and Renormalization as Over\u2013Sharp Projection Finite Coherent Overlap Vertices in Modal Triplet Theory",
-  "version_relation": "unknown",
-  "zenodo_releases": []
+  "source_tree_sha256": "c8d5b2d513acec5e3e56eb588a6788fa4f6f0b80068fade8db2a1f3622969a80",
+  "title": "Finite Coherent Overlap Vertices and Their Local Contact Limit Conditional EFT Interpretation and the Renormalization Boundary",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.21704381",
+      "created": "2026-07-30T13:27:52.356983+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704382",
+      "files": [
+        {
+          "checksum": "md5:a19f6e0631804472d062c4f604b0d506",
+          "content_url": "https://zenodo.org/api/records/21704382/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 378186
+        }
+      ],
+      "id": "21704382",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704382",
+      "resource_type": "publication",
+      "title": "Finite Coherent Overlap Vertices and Their Local Contact Limit Conditional EFT Interpretation and the Renormalization Boundary",
+      "updated": "2026-07-30T13:27:53.518465+00:00",
+      "version": "v1"
+    }
+  ]
 }

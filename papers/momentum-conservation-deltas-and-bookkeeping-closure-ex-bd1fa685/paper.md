@@ -8,18 +8,39 @@ abstract: |
 
   We prove the elementary but structurally decisive result that the exact conservation delta is the distributional limit of finite interaction-window Fourier kernels. If an interaction is supported by a spacetime window $`w_R(x)`$, its vertex factor contains $`\widehat w_R(q)`$, where $`q=\sum_i p_i`$ is the bookkeeping mismatch. Under standard approximate-identity hypotheses, $`\widehat w_R(q)\to (2\pi)^d\delta(q)`$. Thus exact conservation is recovered as the infinite-support, zero-mismatch-width limit. For Gaussian windows this yields an explicit finite-width conservation kernel; for box windows it yields sinc/Dirichlet-type kernels.
 
-  The MTT interpretation is that momentum-conservation deltas are the circle-sector analogue of the same projection pattern studied in the earlier papers: exact deltas arise when finite admissible bookkeeping kernels are collapsed to sharp constraints. Gauge fixing expressed lens-redundancy selection; measurement expressed nil-survivor selection; momentum conservation expresses circle bookkeeping closure. The result is not a denial of conservation laws, but a clarification of their delta notation: exact conservation deltas are idealized distributional limits of finite coherent bookkeeping support.
+  Exact vertex conservation is first a Ward–Noether consequence of exact translation symmetry; its delta must be preserved when that symmetry holds. Finite windows instead describe switching, finite volume or time, detector resolution, or an explicitly non-translation- invariant effective interaction. They are not a universal MTT softening of conservation. The circle-sector bookkeeping interpretation is therefore conditional on a selected MTT source for the relevant finite window.
 author:
 - Peter Nero
-current_version: unversioned
-date: April 2026
-generated_from_main_tex_sha256: 39e2be437d595dcdd5e3feffda6e8f615b62adc4446b4df3cef8bee00389b2a6
+current_version: v1
+date: July 2026, Version 1
+generated_from_main_tex_sha256: 8deb7d58e0fcc3ab993a79c88b92bbafcf253227b582a26d653d8ea25634c0df
 paper_id: momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685
-release_state: not_matched_to_zenodo
+release_state: zenodo_released
+released_version: v1
 title: |
-  Momentum Conservation Deltas and Bookkeeping Closure  
-  Exact Vertex Conservation as the Singular Limit of Finite Admissible Interaction Support
+  Momentum-Conservation Deltas from Translation Symmetry and Finite Windows
+  Exact Ward–Noether Closure and the MTT Bookkeeping Boundary
+zenodo_doi: 10.5281/zenodo.21704388
+zenodo_record_id: 21704388
+zenodo_url: "https://zenodo.org/records/21704388"
 ---
+
+# Version 1 Revision Note
+
+Supersedes
+The unversioned April 2026 manuscript.
+
+Reason
+The Fourier limits were correct, but the earlier title and interpretation could blur exact symmetry conservation with finite-window resolution.
+
+Resolution
+This version makes the Ward–Noether source of exact momentum conservation primary, classifies finite windows by their actual symmetry and experimental inputs, and leaves an MTT window source conditional.
+
+Retained result
+The Gaussian, box-window, finite-time, and golden-rule limits are unchanged.
+
+Remaining boundary
+The finite window is not MTT-selected in this paper.
 
 # Purpose and claim discipline
 
@@ -29,12 +50,13 @@ The earlier papers in this sequence isolated several roles played by Dirac delta
 ```
 the conservation delta appearing at interaction vertices.
 
-The central claim is:
-``` math
-\boxed{\text{a momentum-conservation delta is the sharp limit of finite bookkeeping closure.}}
-```
+The central analytic claim is:
 
-This paper proves a narrow analytic statement and then gives the MTT interpretation. The analytic statement is simply Fourier analysis: integration over an increasingly large spacetime support produces an approximate identity in momentum mismatch. The MTT statement is interpretive: this approximate identity is the finite admissible bookkeeping kernel whose singular limit is the conservation delta.
+<div class="center">
+
+</div>
+
+This paper proves a narrow analytic statement and then gives a conditional MTT interpretation. The analytic statement is Fourier analysis: integration over increasingly large spacetime support produces an approximate identity in momentum mismatch. The exact conservation law itself follows from translation symmetry through Noether and Ward identities.
 
 ## Non-claims
 
@@ -51,6 +73,16 @@ We do not claim:
 5.  that arbitrary smearing is physically admissible.
 
 The narrower claim is that the *delta notation* for exact conservation is the infinite-support limit of a finite bookkeeping kernel.
+
+# Ward–Noether priority
+
+For an exactly translation-invariant action and state, the conserved stress-energy charge and the corresponding Ward identities enforce exact momentum balance . In perturbative translation-invariant amplitudes, the vertex delta is the Fourier representation of that exact symmetry statement. Replacing it by a finite kernel changes the symmetry assumptions unless the kernel belongs only to preparation, switching, finite volume, or detector response.
+
+Accordingly, this paper never prescribes universal softening:
+``` math
+\boxed{\text{exact translation symmetry}\ \Longrightarrow\
+\text{preserve the exact conservation delta}.}
+```
 
 ## Fourier conventions
 
@@ -440,7 +472,7 @@ This distinction is important. The statement
 ```
 does not imply that the theory violates translation symmetry. It may simply mean that the experimental or effective interaction region is not the infinite translation-invariant idealization required to produce the exact delta.
 
-Equivalently, finite-time broadening expresses uncertainty in the bookkeeping readout, not necessarily nonconservation in the closed system. In MTT language, the finite kernel is the admissible bookkeeping profile of the effective interaction; the delta is the collapsed infinite-support ledger.
+Equivalently, finite-time broadening expresses switching or readout resolution, not necessarily nonconservation in the closed system. In MTT language, the finite kernel is only a candidate bookkeeping profile until selected geometry derives that profile.
 
 # Scope of proof
 
@@ -451,7 +483,8 @@ Equivalently, finite-time broadening expresses uncertainty in the bookkeeping re
 
 \textbf{Standard physics input:} vertex conservation deltas arise from Fourier integration over translation-invariant support and from infinite-time scattering limits.
 
-\textbf{MTT interpretation:} finite conservation kernels are circle-sector bookkeeping kernels; exact conservation deltas are their singular infinite-support and infinite-time limits.
+\textbf{Conditional MTT interpretation:} selected finite conservation kernels may encode
+circle-sector bookkeeping; this paper does not derive their source.
 
 \textbf{Not proved here:} a full derivation of all conservation laws from MTT, or a replacement for standard scattering theory.
 \end{minipage}
@@ -460,15 +493,15 @@ Equivalently, finite-time broadening expresses uncertainty in the bookkeeping re
 
 # Conclusion
 
-Momentum-conservation deltas are not isolated formal devices. They fit the same projection pattern as the other delta functions studied in this sequence. A finite interaction region produces a finite mismatch kernel. Infinite translation-invariant support collapses that kernel to an exact Dirac delta.
+Momentum-conservation deltas are the Fourier form of exact translation-symmetry bookkeeping. A finite interaction region produces a finite mismatch kernel because its support or switching breaks the ideal translation-invariant setup. Infinite translation-invariant support recovers the exact Dirac delta.
 
 Thus the conservation delta
 ``` math
 (2\pi)^d\delta^{(d)}\left(\sum_i p_i\right)
 ```
-is best read as a singular bookkeeping kernel: the zero-width limit of exact closure in the momentum ledger.
+may be represented as the distributional endpoint of finite-window kernels, but its physical authority is the Ward–Noether symmetry statement.
 
-Together with the earlier papers, this completes the basic triadic dictionary:
+Together with the earlier papers, this supplies the following interpretive dictionary:
 ``` math
 \text{lens: gauge redundancy},
 \qquad
@@ -476,5 +509,18 @@ Together with the earlier papers, this completes the basic triadic dictionary:
 \qquad
 \text{circle: bookkeeping closure}.
 ```
+The dictionary organizes roles; it does not derive the physical kernels or the conservation law from the triplet labels alone.
 
 The next step is to combine these strands into a unified account of perturbative vertices in which position-space contact, momentum-space conservation, gauge redundancy, and finite coherent support are treated as different faces of the same admissible projection architecture.
+
+<div class="thebibliography">
+
+9
+
+E. Noether, “Invariante Variationsprobleme,” *Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse* (1918), 235–257. English translation: <https://arxiv.org/abs/physics/0503066>
+
+J. C. Ward, “An Identity in Quantum Electrodynamics,” *Physical Review* **78** (1950), 182. <https://doi.org/10.1103/PhysRev.78.182>
+
+Y. Takahashi, “On the generalized Ward identity,” *Il Nuovo Cimento* **6** (1957), 371–375. <https://doi.org/10.1007/BF02832514>
+
+</div>

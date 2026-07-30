@@ -2,6 +2,131 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.21704389",
+      "created": "2026-07-30T13:27:55.506083+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704390",
+      "files": [
+        {
+          "checksum": "md5:ea8bf84b1c6e0ec3191b555c814917dc",
+          "content_url": "https://zenodo.org/api/records/21704390/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 400917
+        }
+      ],
+      "id": "21704390",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704390",
+      "resource_type": "publication",
+      "title": "Gaussian-Filtered Contact Loops and Finite One-Loop Tadpoles Exact Euclidean Benchmark and the Local-Limit Counterterm",
+      "updated": "2026-07-30T13:27:55.927374+00:00",
+      "version": "v1"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21704387",
+      "created": "2026-07-30T13:27:54.728846+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704388",
+      "files": [
+        {
+          "checksum": "md5:7aafb14d0e814a662a98ef9b4bb51009",
+          "content_url": "https://zenodo.org/api/records/21704388/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 361550
+        }
+      ],
+      "id": "21704388",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704388",
+      "resource_type": "publication",
+      "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward\u2013Noether Closure and the MTT Bookkeeping Boundary",
+      "updated": "2026-07-30T13:27:55.100890+00:00",
+      "version": "v1"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21704385",
+      "created": "2026-07-30T13:27:54.011526+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704386",
+      "files": [
+        {
+          "checksum": "md5:c8eb4c88bddb774747db99ed7eea1017",
+          "content_url": "https://zenodo.org/api/records/21704386/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 363529
+        }
+      ],
+      "id": "21704386",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704386",
+      "resource_type": "publication",
+      "title": "Finite-Time Scattering Windows and Asymptotic Delta Limits Standard Fourier Mathematics and the MTT Source Boundary",
+      "updated": "2026-07-30T13:27:54.358780+00:00",
+      "version": "v1"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21704381",
+      "created": "2026-07-30T13:27:52.356983+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704382",
+      "files": [
+        {
+          "checksum": "md5:a19f6e0631804472d062c4f604b0d506",
+          "content_url": "https://zenodo.org/api/records/21704382/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 378186
+        }
+      ],
+      "id": "21704382",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704382",
+      "resource_type": "publication",
+      "title": "Finite Coherent Overlap Vertices and Their Local Contact Limit Conditional EFT Interpretation and the Renormalization Boundary",
+      "updated": "2026-07-30T13:27:53.518465+00:00",
+      "version": "v1"
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21704282",
+      "created": "2026-07-30T13:27:51.619589+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704283",
+      "files": [
+        {
+          "checksum": "md5:cb17adf67ee0a406961e812f74a1508b",
+          "content_url": "https://zenodo.org/api/records/21704283/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 406995
+        }
+      ],
+      "id": "21704283",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704283",
+      "resource_type": "publication",
+      "title": "Gaussian-Filtered Euclidean Propagators and UV Behaviour Exact Domination under a Declared External Filter",
+      "updated": "2026-07-30T13:27:51.902184+00:00",
+      "version": "v1"
+    },
+    {
       "concept_doi": "10.5281/zenodo.21703916",
       "created": "2026-07-30T12:54:50.245178+00:00",
       "creators": [

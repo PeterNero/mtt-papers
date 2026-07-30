@@ -1,0 +1,62 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T13:27:42+00:00",
+  "mode": "sync",
+  "papers": 4,
+  "ready": 4,
+  "results": [
+    {
+      "draft_id": "21704382",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "a19f6e0631804472d062c4f604b0d506",
+      "local_pdf_sha256": "72fd10a22fddcf59d3b5c4cd6a1fe98b853291ec0b95ce415cae0b606a90df0f",
+      "paper_id": "contact-interactions-and-renormalization-as-over-sharp-c2cfaa22",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v1"
+    },
+    {
+      "draft_id": "21704386",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "c8eb4c88bddb774747db99ed7eea1017",
+      "local_pdf_sha256": "b08cbece9177e678fe7a9ef824fb54eebd4ed464fb16ce25e63a0e06eff69976",
+      "paper_id": "finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v1"
+    },
+    {
+      "draft_id": "21704388",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "7aafb14d0e814a662a98ef9b4bb51009",
+      "local_pdf_sha256": "e5cb5031ad79f4411d8ea13730b3a3f92080f7b82d54a367c50a9661e067be77",
+      "paper_id": "momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v1"
+    },
+    {
+      "draft_id": "21704390",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "ea8bf84b1c6e0ec3191b555c814917dc",
+      "local_pdf_sha256": "9f46c1744027991c300ac8baf875a8affb0d64cccc6adb4ec8a062a355077d1f",
+      "paper_id": "mtt-corrected-contact-loops-and-finite-one-loop-tadpole-cdd66d8e",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v1"
+    }
+  ]
+}

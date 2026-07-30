@@ -3,12 +3,12 @@
     "canonical_papers": 140,
     "current_sources_newer_than_release": 0,
     "pandoc_warning_papers": 12,
-    "papers_with_zenodo_release": 129,
-    "papers_without_zenodo_match": 11,
+    "papers_with_zenodo_release": 134,
+    "papers_without_zenodo_match": 6,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 54,
-    "zenodo_records": 225,
-    "zenodo_records_matched": 225,
+    "zenodo_records": 230,
+    "zenodo_records_matched": 230,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -2836,32 +2836,6 @@
       ]
     },
     {
-      "abstract": "Local quantum field theory writes interactions as pointwise products, for example \\int_X \\lambda \\phi(x)^4\\,dx. In perturbation theory these contact vertices generate coincidence limits, momentum-conservation delta functions, and ultraviolet singularities. Building on the preceding papers on Dirac deltas, coherent Green functions, gauge fixing, and measurement effects, this paper develops the contact-interaction member of the same projection-kernel program. The central claim is narrow: a point-local interaction vertex is the zero-width limit of a finite coherent overlap vertex. The mathematical core is an approximate-identity theorem. Given a bounded smoothing kernel K_\\epsilon(x,y), define the smeared field \\phi_\\epsilon(x)=\\int_X K_\\epsilon(x,y)\\phi(y)\\,dy and the finite overlap interaction S_{\\mathrm{int},\\epsilon}[\\phi] = \\frac{\\lambda}{4!}\\int_X \\phi_\\epsilon(x)^4\\,dx . For smooth fields, S_{\\mathrm{int},\\epsilon}\\to S_{\\mathrm{int}}= \\frac{\\lambda}{4!}\\int_X\\phi(x)^4\\,dx as \\epsilon\\downarrow0. On a compact spectral model, replacing the identity by a finite spectral projector \\Pi_\\Lambda yields a finite vertex tensor and finite coincident covariance in the retained sector. In momentum space, heat-kernel smearing multiplies propagators and vertices by rapidly decaying form factors, turning point-contact singularities into finite coherent-overlap expressions before the sharp limit is taken. The MTT interpretation is that ordinary contact interactions are not primitive zero-width events. They are downstream idealizations of finite admissible overlap among coherent modes. Renormalization is therefore re-read, not abolished, as the repair procedure needed when a downstream theory replaces finite coherent overlap by a point-local delta/contact idealization. The paper proves the kernel-convergence, general n-point sharp-limit, and finite-cutoff statements; broader claims about physical renormalization are presented as structural interpretation and research program, not as completed phenomenology. We also emphasize that admissible kernels are not arbitrary regulators: they must respect the causal, symmetry, and quotient structures of the effective theory.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "unversioned",
-      "date": "April 2026",
-      "latest_zenodo_release": null,
-      "main_tex_sha256": "cb272180e6bf044e4bb9332ede3a7441bccf1aae43aa2785b8c06a33ebba3785",
-      "paper_id": "contact-interactions-and-renormalization-as-over-sharp-c2cfaa22",
-      "paper_md_sha256": "948bde5152c30eb4f01e915479f05b809d82509249f58032c3a4155b4c8b4bf7",
-      "release_state": "not_matched_to_zenodo",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "5 Dirac Delta/_work/Contact_Interactions_and_Renormalization_as_Over__Sharp_Projection__Finite_Coherent_Overlap_Vertices_in_Modal_Triplet_Theory"
-      },
-      "source_tree_sha256": "21bc3daf2927262750691570164165c3bf83501dda2d5ea89eac9af9c35bda7c",
-      "title": "Contact Interactions and Renormalization as Over\u2013Sharp Projection Finite Coherent Overlap Vertices in Modal Triplet Theory",
-      "version_relation": "unknown",
-      "zenodo_releases": []
-    },
-    {
       "abstract": "Quantum contextuality and sequential measurement order effects are related, but they are not the same mathematical phenomenon. Kochen\u2013Specker contextuality is a static obstruction to gluing locally compatible value assignments into one global noncontextual assignment. An order effect is a dynamical statement about the noncommuting composition of quantum instruments, including their state-update maps. We formulate both structures explicitly and prove two separation results. First, projective qubit measurements exhibit an exact order effect even though the original projective Kochen\u2013Specker obstruction does not apply in dimension two. Second, two instruments can have the same effects and identical one-step outcome probabilities while producing different sequential statistics. Effect or valuation data therefore cannot determine order dependence. A common MTT carrier may nevertheless source both structures. We state the required context-indexed source, instrument, measure, and naturality data for such a unification and identify the missing comparison theorem. The current q79 binary one-anchor recorder supplies an exact stopped-output law for one restricted apparatus domain; it does not yet provide the family of contexts needed for a contextuality theorem or a general contextuality\u2013order equivalence.",
       "authors": [
         "Peter Nero"
@@ -4154,6 +4128,85 @@
       ]
     },
     {
+      "abstract": "This paper proves that a point-local interaction vertex is the zero-width limit of a finite coherent overlap vertex. For smooth fields, bounded approximate-identity kernels give convergence of general finite-overlap interactions to their local contact limits. On compact spectral models, finite projection yields finite vertex tensors and finite coincident covariance within the retained sector. The MTT interpretation is conditional: if a selected physical sector supplies such a kernel and an intertwiner to external fields, the local vertex may be read as its sharp limit. At nonzero width the construction is generally a nonlocal effective interaction, not automatically a local ultraviolet completion. A local parent mediator or equivalent localization theorem would be needed to change that classification. The paper does not infer all-loop renormalizability, ultraviolet completion, Lorentzian causality, unitarity, reflection positivity, or gauge and BRST consistency from finite width alone.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v1",
+      "date": "July 2026, Version 1",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.21704381",
+        "created": "2026-07-30T13:27:52.356983+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21704382",
+        "files": [
+          {
+            "checksum": "md5:a19f6e0631804472d062c4f604b0d506",
+            "content_url": "https://zenodo.org/api/records/21704382/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 378186
+          }
+        ],
+        "id": "21704382",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21704382",
+        "resource_type": "publication",
+        "title": "Finite Coherent Overlap Vertices and Their Local Contact Limit Conditional EFT Interpretation and the Renormalization Boundary",
+        "updated": "2026-07-30T13:27:53.518465+00:00",
+        "version": "v1"
+      },
+      "main_tex_sha256": "7f66a88799986a792fa9b714dc99a7b533f8e6f38d0cc4e5f056a19c3b14613f",
+      "paper_id": "contact-interactions-and-renormalization-as-over-sharp-c2cfaa22",
+      "paper_md_sha256": "e97a62ca6b326de8c80cad57651328bb1b671a9588b870522e3611ef2121978b",
+      "release_state": "zenodo_released",
+      "result_refs": [],
+      "revision": {
+        "revision_evidence_path": "papers/contact-interactions-and-renormalization-as-over-sharp-c2cfaa22/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "7be340284127bab934e40a34556a03c14e425496d21a6aea3503cc2960ecf5cb",
+        "selected_revision": true,
+        "superseded_source_path": "5 Dirac Delta/_work/Contact_Interactions_and_Renormalization_as_Over__Sharp_Projection__Finite_Coherent_Overlap_Vertices_in_Modal_Triplet_Theory"
+      },
+      "source_provenance": {
+        "legacy_source_path": "5 Dirac Delta/_work/Contact_Interactions_and_Renormalization_as_Over__Sharp_Projection__Finite_Coherent_Overlap_Vertices_in_Modal_Triplet_Theory"
+      },
+      "source_tree_sha256": "c8d5b2d513acec5e3e56eb588a6788fa4f6f0b80068fade8db2a1f3622969a80",
+      "title": "Finite Coherent Overlap Vertices and Their Local Contact Limit Conditional EFT Interpretation and the Renormalization Boundary",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.21704381",
+          "created": "2026-07-30T13:27:52.356983+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21704382",
+          "files": [
+            {
+              "checksum": "md5:a19f6e0631804472d062c4f604b0d506",
+              "content_url": "https://zenodo.org/api/records/21704382/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 378186
+            }
+          ],
+          "id": "21704382",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21704382",
+          "resource_type": "publication",
+          "title": "Finite Coherent Overlap Vertices and Their Local Contact Limit Conditional EFT Interpretation and the Renormalization Boundary",
+          "updated": "2026-07-30T13:27:53.518465+00:00",
+          "version": "v1"
+        }
+      ]
+    },
+    {
       "abstract": "The formal microcanonical density concentrated on a fixed energy is a surface distribution, not an ordinary phase-space probability density. This paper gives a finite-shell formulation and states precisely when its normalized measures approach the sharp microcanonical ensemble. For a regular energy, the coarea formula reduces phase-space integration to density-of-states functions on nearby energy surfaces. A normalized approximate identity in energy then makes the finite-shell expectation a ratio of two ordinary convolutions, which converges to the sharp shell expectation. When the relevant density-of-states functions are locally Lipschitz, an explicit first-order error bound separates shell width, kernel shape, observable variation, and normalization bias. On a symplectic phase space, every shell whose density depends only on the Hamiltonian is exactly invariant under Hamiltonian flow; ergodicity is neither needed for invariance nor proved here. Critical energies, noncompact shells, ensemble equivalence, and a physical choice of shell profile require separate hypotheses. In Modal Triplet Theory, the result supplies a rigorous downstream target: selected geometry may emit a finite energy-tolerance profile, but neither the coarea theorem nor the sharp limit selects that profile or its width.",
       "authors": [
         "Peter Nero"
@@ -4391,30 +4444,83 @@
       ]
     },
     {
-      "abstract": "The exact energy\u2013momentum conserving delta functions of the scattering matrix, (2\\pi)^4\\delta^{(4)}(p_f-p_i), are usually introduced as consequences of translation invariance and asymptotic scattering theory. This paper continues the sequence interpreting Dirac deltas as singular shadows of admissible projection. The previous bookkeeping paper showed that momentum-conservation deltas arise as infinite-support limits of finite interaction-window Fourier kernels. Here we focus on scattering itself: finite-time transition amplitudes do not produce exact energy deltas, but finite-width sinc or window kernels. The exact S-matrix delta appears only after the asymptotic idealization of infinite observation time, infinite spatial support, and stable in/out sectors. We prove a standard finite-time transition theorem: for a constant perturbation acting during a time window of length T, the first-order transition amplitude contains W_T(\\Delta E)=\\int_{-T/2}^{T/2}e^{i\\Delta E t}\\,dt =2\\frac{\\sin(\\Delta E T/2)}{\\Delta E}, and the normalized squared kernel converges distributionally to 2\\pi\\delta(\\Delta E). More generally, smooth time windows yield approximate energy-conservation kernels through their Fourier transforms, with normalization fixed by Plancherel. The transition-rate limit reproduces the usual Fermi-golden-rule factor, and wave-packet scattering shows how plane-wave deltas are always integrated against finite profiles in physical amplitudes. We then combine finite time and finite spatial support to obtain finite energy\u2013momentum bookkeeping kernels replacing the exact S-matrix conservation delta. The MTT interpretation is that exact scattering deltas are not primitive conservation objects inside finite processes. They are asymptotic bookkeeping limits of admissible transition windows once the interaction is idealized as infinitely extended and the in/out sectors are stable enough to support an S-matrix description. Finite-time scattering therefore provides a concrete bridge between coherent admissible dynamics and the distributional conservation structure of perturbative QFT.",
+      "abstract": "This paper proves standard finite-time and finite-support scattering limits. A constant perturbation acting for a finite duration produces a sinc-shaped transition kernel, and its normalized square converges distributionally to the energy-conservation delta as the duration tends to infinity. Smooth windows give the corresponding approximate identities through Fourier transformation and Plancherel normalization, while finite spacetime support yields finite energy-momentum kernels whose infinite-support limits are the usual scattering deltas. The MTT interpretation is conditional: these kernels become MTT bookkeeping outputs only if selected dynamics derives the preparation, switching, detector, or finite-time profile. Finite experimental duration must not be identified with a fundamental admissibility width. Exact conservation continues to follow from the symmetry assumptions of the closed theory.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "unversioned",
-      "date": "April 2026",
-      "latest_zenodo_release": null,
-      "main_tex_sha256": "c8dfdbb72fa2ed82eda536f08eee70461e7cf5d444484e4fcff0b63ee10c265d",
+      "current_version": "v1",
+      "date": "July 2026, Version 1",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.21704385",
+        "created": "2026-07-30T13:27:54.011526+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21704386",
+        "files": [
+          {
+            "checksum": "md5:c8eb4c88bddb774747db99ed7eea1017",
+            "content_url": "https://zenodo.org/api/records/21704386/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 363529
+          }
+        ],
+        "id": "21704386",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21704386",
+        "resource_type": "publication",
+        "title": "Finite-Time Scattering Windows and Asymptotic Delta Limits Standard Fourier Mathematics and the MTT Source Boundary",
+        "updated": "2026-07-30T13:27:54.358780+00:00",
+        "version": "v1"
+      },
+      "main_tex_sha256": "05fa89b720930ab481b8c2d7b29cf3aa352cdf1416aee419fdbc9e28866a38a1",
       "paper_id": "finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c",
-      "paper_md_sha256": "f89bb45b5868479590d93b7aa8960fe53ff731205897cb8f222d2fa6a10009f9",
-      "release_state": "not_matched_to_zenodo",
+      "paper_md_sha256": "3d7a7190e986b578f665da03f19b9db5116a3fed7d5d6fca7032405de41da5d9",
+      "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "e88bb23e5a52a03f308bf31b1f9254b1c7fdafe706aa016c984ec984861a263a",
+        "selected_revision": true,
+        "superseded_source_path": "5 Dirac Delta/_work/Finite_Time_Scattering_and_S_Matrix_Deltas_as_Asymptotic_Bookkeeping_Limits"
       },
       "source_provenance": {
         "legacy_source_path": "5 Dirac Delta/_work/Finite_Time_Scattering_and_S_Matrix_Deltas_as_Asymptotic_Bookkeeping_Limits"
       },
-      "source_tree_sha256": "279585911bdadbd85c7caf2dcdf1921684e453a98c454b404346e1671e2b1c49",
-      "title": "Finite-Time Scattering and S-Matrix Deltas as Asymptotic Bookkeeping Limits Energy\u2013Momentum Conservation Deltas from Admissible Transition Windows",
-      "version_relation": "unknown",
-      "zenodo_releases": []
+      "source_tree_sha256": "32b5bebe74e4b968d41d11c3f63a9d4809c935ba04d161df1e4d93a0516bb100",
+      "title": "Finite-Time Scattering Windows and Asymptotic Delta Limits Standard Fourier Mathematics and the MTT Source Boundary",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.21704385",
+          "created": "2026-07-30T13:27:54.011526+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21704386",
+          "files": [
+            {
+              "checksum": "md5:c8eb4c88bddb774747db99ed7eea1017",
+              "content_url": "https://zenodo.org/api/records/21704386/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 363529
+            }
+          ],
+          "id": "21704386",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21704386",
+          "resource_type": "publication",
+          "title": "Finite-Time Scattering Windows and Asymptotic Delta Limits Standard Fourier Mathematics and the MTT Source Boundary",
+          "updated": "2026-07-30T13:27:54.358780+00:00",
+          "version": "v1"
+        }
+      ]
     },
     {
       "abstract": "We develop a conditional fixed-point framework for gradient flows on internal fiber products of smooth bundles over a base manifold. The fibers are compact and have uniformly bounded geometry. We construct spectral-bundle projections onto the joint harmonic sector and study flows generated by coercive analytic energies on the internal fiber product. The paper establishes the geometric and anisotropic Sobolev setting, uniform first-order Sobolev bounds for the coherent projector, analytic-semigroup well-posedness and smoothing, projected fixed-point existence by variational, Schauder, or Darbo methods, coherent uniqueness under strong convexity or a clean spectral-gap reduction, quantitative Galerkin approximation, explicit examples, and \u0141ojasiewicz\u2013Simon convergence. All results are analytic and control-theoretic statements under the displayed hypotheses. The Riemannian base is not automatically physical Lorentzian spacetime, the flow parameter is not automatically physical time, and the abstract fiber product does not by itself select the canonical MTT internal topology.",
@@ -5452,6 +5558,164 @@
           "resource_type": "publication",
           "title": "Gauge Fixing as Admissible Section Selection in Modal Triplet Theory Faddeev\u2013Popov Determinants, Ghosts, BRST, and Gribov Ambiguity as Projection Geometry",
           "updated": "2026-07-30T12:54:50.621054+00:00",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "abstract": "This paper studies an exact Euclidean scalar one-loop benchmark with a declared Gaussian momentum filter. The filtered tadpole is finite in every finite dimension for positive mass and filter scale. We derive its exact Schwinger representation, its four-dimensional exponential-integral form, and its local-limit asymptotics. The divergent local theory is recovered as the filter scale tends to zero, so ordinary counterterms remain the appropriate sharp-limit subtraction. The calculation does not derive the external filter from an internal MTT fixed-point operator and does not prove all-loop finiteness or physical Lorentzian consistency. MTT promotion requires a selected internal-to-external source map; gauge and BRST identities, reflection positivity, causality, and unitarity require separate certificates.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v1",
+      "date": "July 2026, Version 1",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.21704389",
+        "created": "2026-07-30T13:27:55.506083+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21704390",
+        "files": [
+          {
+            "checksum": "md5:ea8bf84b1c6e0ec3191b555c814917dc",
+            "content_url": "https://zenodo.org/api/records/21704390/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 400917
+          }
+        ],
+        "id": "21704390",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21704390",
+        "resource_type": "publication",
+        "title": "Gaussian-Filtered Contact Loops and Finite One-Loop Tadpoles Exact Euclidean Benchmark and the Local-Limit Counterterm",
+        "updated": "2026-07-30T13:27:55.927374+00:00",
+        "version": "v1"
+      },
+      "main_tex_sha256": "15aebcbdf0a2bd4bc0075947e3fe7920e82999774c3197e3fbde252928514b65",
+      "paper_id": "mtt-corrected-contact-loops-and-finite-one-loop-tadpole-cdd66d8e",
+      "paper_md_sha256": "73e7a6d562103dfcbe4323b49924099dd0b33e459ae21bc9ea02cde6e699f22f",
+      "release_state": "zenodo_released",
+      "result_refs": [],
+      "revision": {
+        "revision_evidence_path": "papers/mtt-corrected-contact-loops-and-finite-one-loop-tadpole-cdd66d8e/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "abb4590f90fc5ae2c78713e67a91145a12d4da443517fb21bd5b840bd399fe35",
+        "selected_revision": true,
+        "superseded_source_path": "5 Dirac Delta/_work/MTT_Corrected_Contact_Loops_and_Finite_One_Loop_Tadpoles"
+      },
+      "source_provenance": {
+        "legacy_source_path": "5 Dirac Delta/_work/MTT_Corrected_Contact_Loops_and_Finite_One_Loop_Tadpoles"
+      },
+      "source_tree_sha256": "d7df33457bad46898e21a764bc977c3ea5e75a5b4495d52ebb79dc2259e38ac4",
+      "title": "Gaussian-Filtered Contact Loops and Finite One-Loop Tadpoles Exact Euclidean Benchmark and the Local-Limit Counterterm",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.21704389",
+          "created": "2026-07-30T13:27:55.506083+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21704390",
+          "files": [
+            {
+              "checksum": "md5:ea8bf84b1c6e0ec3191b555c814917dc",
+              "content_url": "https://zenodo.org/api/records/21704390/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 400917
+            }
+          ],
+          "id": "21704390",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21704390",
+          "resource_type": "publication",
+          "title": "Gaussian-Filtered Contact Loops and Finite One-Loop Tadpoles Exact Euclidean Benchmark and the Local-Limit Counterterm",
+          "updated": "2026-07-30T13:27:55.927374+00:00",
+          "version": "v1"
+        }
+      ]
+    },
+    {
+      "abstract": "This paper studies Euclidean propagators obtained after declaring an external Gaussian momentum filter. On a single declared operator domain, functional calculus defines a unique compressed covariance. We prove distributional recovery of the ordinary propagator as the filter width tends to zero, finite coincidence values at positive width, and Gaussian ultraviolet domination. Every scalar Euclidean graph whose internal lines are explicitly assigned this filter is absolutely ultraviolet finite under the stated quadratic-control hypothesis. This is a conditional model theorem, not a source theorem: an internal MTT gap does not select external momentum damping without an internal-to-external intertwiner. Reflection positivity, gauge invariance, causal support, and Lorentzian unitarity remain independent requirements.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v1",
+      "date": "July 2026, Version 1",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.21704282",
+        "created": "2026-07-30T13:27:51.619589+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21704283",
+        "files": [
+          {
+            "checksum": "md5:cb17adf67ee0a406961e812f74a1508b",
+            "content_url": "https://zenodo.org/api/records/21704283/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 406995
+          }
+        ],
+        "id": "21704283",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21704283",
+        "resource_type": "publication",
+        "title": "Gaussian-Filtered Euclidean Propagators and UV Behaviour Exact Domination under a Declared External Filter",
+        "updated": "2026-07-30T13:27:51.902184+00:00",
+        "version": "v1"
+      },
+      "main_tex_sha256": "2cf4c81a9b0eb44e790d78341da388cefe671123e268e77279f6b086665b8581",
+      "paper_id": "mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f",
+      "paper_md_sha256": "5572a77f9f3073f4de3f4f689b147976bcf2c9134dd1a52052ce659ae0431bec",
+      "release_state": "zenodo_released",
+      "result_refs": [],
+      "revision": {
+        "revision_evidence_path": "papers/mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "9c777226ab4548e5157bf312d68a2ff87e762eab0103f40d0cbfb0e126ff1bbf",
+        "selected_revision": true,
+        "superseded_source_path": "5 Dirac Delta/_work/MTT_Corrected_Propagators_and_UV_Behaviour"
+      },
+      "source_provenance": {
+        "legacy_source_path": "5 Dirac Delta/_work/MTT_Corrected_Propagators_and_UV_Behaviour"
+      },
+      "source_tree_sha256": "27bba804fd9a60fc65cd88ecb6b57e04f5d458f90faefc103b12112c1d5b9c99",
+      "title": "Gaussian-Filtered Euclidean Propagators and UV Behaviour Exact Domination under a Declared External Filter",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.21704282",
+          "created": "2026-07-30T13:27:51.619589+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21704283",
+          "files": [
+            {
+              "checksum": "md5:cb17adf67ee0a406961e812f74a1508b",
+              "content_url": "https://zenodo.org/api/records/21704283/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 406995
+            }
+          ],
+          "id": "21704283",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21704283",
+          "resource_type": "publication",
+          "title": "Gaussian-Filtered Euclidean Propagators and UV Behaviour Exact Domination under a Declared External Filter",
+          "updated": "2026-07-30T13:27:51.902184+00:00",
           "version": "v1"
         }
       ]
@@ -8002,30 +8266,83 @@
       ]
     },
     {
-      "abstract": "Momentum-conservation Dirac deltas are among the most familiar distributions in quantum field theory. At an ideal translation-invariant vertex one obtains (2\\pi)^d\\delta^{(d)}\\!\\left(\\sum_i p_i\\right), which enforces exact closure of the incoming and outgoing momentum ledger. This paper continues the program in which Dirac deltas are read as singular shadows of admissible projection. Here the relevant projection is not primarily point-source localization, gauge-slice selection, or measurement collapse, but bookkeeping closure: the enforcement of exact conservation after interaction support has been idealized as infinite, homogeneous, and perfectly translation invariant. We prove the elementary but structurally decisive result that the exact conservation delta is the distributional limit of finite interaction-window Fourier kernels. If an interaction is supported by a spacetime window w_R(x), its vertex factor contains \\widehat w_R(q), where q=\\sum_i p_i is the bookkeeping mismatch. Under standard approximate-identity hypotheses, \\widehat w_R(q)\\to (2\\pi)^d\\delta(q). Thus exact conservation is recovered as the infinite-support, zero-mismatch-width limit. For Gaussian windows this yields an explicit finite-width conservation kernel; for box windows it yields sinc/Dirichlet-type kernels. The MTT interpretation is that momentum-conservation deltas are the circle-sector analogue of the same projection pattern studied in the earlier papers: exact deltas arise when finite admissible bookkeeping kernels are collapsed to sharp constraints. Gauge fixing expressed lens-redundancy selection; measurement expressed nil-survivor selection; momentum conservation expresses circle bookkeeping closure. The result is not a denial of conservation laws, but a clarification of their delta notation: exact conservation deltas are idealized distributional limits of finite coherent bookkeeping support.",
+      "abstract": "This paper proves that exact momentum-conservation deltas are distributional limits of finite interaction-window Fourier kernels. Gaussian windows give explicit finite-width kernels, while box and finite-time windows yield sinc or Dirichlet-type forms. The physical authority for exact vertex conservation is the Ward-Noether consequence of exact translation symmetry, and the exact delta must be preserved when that symmetry holds. Finite windows instead describe switching, finite volume or time, detector resolution, or an explicitly non-translation-invariant effective interaction; they are not a universal MTT softening of conservation. The circle-sector bookkeeping interpretation is conditional on a selected MTT source for the relevant finite window.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "unversioned",
-      "date": "April 2026",
-      "latest_zenodo_release": null,
-      "main_tex_sha256": "39e2be437d595dcdd5e3feffda6e8f615b62adc4446b4df3cef8bee00389b2a6",
+      "current_version": "v1",
+      "date": "July 2026, Version 1",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.21704387",
+        "created": "2026-07-30T13:27:54.728846+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21704388",
+        "files": [
+          {
+            "checksum": "md5:7aafb14d0e814a662a98ef9b4bb51009",
+            "content_url": "https://zenodo.org/api/records/21704388/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 361550
+          }
+        ],
+        "id": "21704388",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21704388",
+        "resource_type": "publication",
+        "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward\u2013Noether Closure and the MTT Bookkeeping Boundary",
+        "updated": "2026-07-30T13:27:55.100890+00:00",
+        "version": "v1"
+      },
+      "main_tex_sha256": "8deb7d58e0fcc3ab993a79c88b92bbafcf253227b582a26d653d8ea25634c0df",
       "paper_id": "momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685",
-      "paper_md_sha256": "10c334dcafee63fd243c5d699b430b93db2666990840973fab5d994cd6eb590f",
-      "release_state": "not_matched_to_zenodo",
+      "paper_md_sha256": "684c1c7d5962adf5e1420320d499e4a1321b66045d89a6291e0bf586a0e9d73e",
+      "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "47961e055e5c02db3a4ce318aeeae174473e3a9326b2e678b1f783d8074b18c2",
+        "selected_revision": true,
+        "superseded_source_path": "5 Dirac Delta/_work/Momentum_Conservation_Deltas_and_Bookkeeping_Closure_Exact_Vertex_Conservation"
       },
       "source_provenance": {
         "legacy_source_path": "5 Dirac Delta/_work/Momentum_Conservation_Deltas_and_Bookkeeping_Closure_Exact_Vertex_Conservation"
       },
-      "source_tree_sha256": "1380d4aa89d57258e637a6c5f3de13aa8cb26c8ae354ece0be1824c560dacd93",
-      "title": "Momentum Conservation Deltas and Bookkeeping Closure Exact Vertex Conservation as the Singular Limit of Finite Admissible Interaction Support",
-      "version_relation": "unknown",
-      "zenodo_releases": []
+      "source_tree_sha256": "0e4e88dfc5b8f1368116ce0ea63c68871df0967a5f1eae5afbda08321d57c7f4",
+      "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward\u2013Noether Closure and the MTT Bookkeeping Boundary",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.21704387",
+          "created": "2026-07-30T13:27:54.728846+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21704388",
+          "files": [
+            {
+              "checksum": "md5:7aafb14d0e814a662a98ef9b4bb51009",
+              "content_url": "https://zenodo.org/api/records/21704388/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 361550
+            }
+          ],
+          "id": "21704388",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21704388",
+          "resource_type": "publication",
+          "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward\u2013Noether Closure and the MTT Bookkeeping Boundary",
+          "updated": "2026-07-30T13:27:55.100890+00:00",
+          "version": "v1"
+        }
+      ]
     },
     {
       "abstract": "",
@@ -8050,58 +8367,6 @@
       },
       "source_tree_sha256": "8efcfd8f1fb073a302678594775d39b5001ffe94c3c149cf7d8e5c70a3a38aa3",
       "title": "MTT GPT Corpus Index (Grouped Reference)",
-      "version_relation": "unknown",
-      "zenodo_releases": []
-    },
-    {
-      "abstract": "Earlier papers in this sequence established a structural dictionary in which Dirac delta distributions arise as singular limits of finite projection kernels, admissibility filters, survivor-basin effects, and bookkeeping kernels. The execution bridge paper then identified the canonical finite kernel selected by Modal Triplet Theory (MTT) fixed-point data: the proper-time coherent kernel generated by the same operator that governs stabilization. The present paper applies that kernel to the first contact-loop calculation. We study the Euclidean scalar one-loop tadpole I_0^{(d)}(m)=\\int_{\\mathbb R^d}\\frac{d^d k}{(2\\pi)^d}\\frac{1}{k^2+m^2}, which is ultraviolet divergent for d\\ge 2, and replace the point-contact propagator by the MTT proper-time filtered propagator \\Delta_\\tau(k)=\\frac{e^{-\\tau k^2}}{k^2+m^2},\\qquad \\tau>0. We prove that I_\\tau^{(d)}(m)=\\int_{\\mathbb R^d}\\frac{d^d k}{(2\\pi)^d}\\frac{e^{-\\tau k^2}}{k^2+m^2} is finite for every d, m>0, and \\tau>0, and derive the exact Schwinger representation I_\\tau^{(d)}(m) =(4\\pi)^{-d/2}\\int_0^\\infty e^{-m^2 s}(s+\\tau)^{-d/2}\\,ds. In four dimensions this gives the closed form I_\\tau^{(4)}(m) =\\frac{1}{16\\pi^2}\\left[ \\frac{1}{\\tau} -m^2 e^{m^2\\tau}E_1(m^2\\tau) \\right], with the local-limit asymptotics I_\\tau^{(4)}(m) = \\frac{1}{16\\pi^2} \\left[ \\frac{1}{\\tau} + m^2\\bigl(\\gamma+\\log(m^2\\tau)\\bigr) +O(m^4\\tau|\\log(m^2\\tau)|) \\right]. Thus the MTT coherence scale \\tau gives a definite finite correction and an effective ultraviolet scale \\Lambda_{\\rm eff}\\sim \\tau^{-1/2}. The divergent local theory is recovered as the singular limit \\tau\\downarrow0. Renormalization is therefore not abolished; rather, the usual local counterterms are reinterpreted as the subtractions needed when the finite coherent kernel is forced into the zero-width contact limit.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "unversioned",
-      "date": "April 2026",
-      "latest_zenodo_release": null,
-      "main_tex_sha256": "170d993b02db870ec0924d3896e973955c084b7f8f18f167cf3d23d156b82a44",
-      "paper_id": "mtt-corrected-contact-loops-and-finite-one-loop-tadpole-cdd66d8e",
-      "paper_md_sha256": "ce5dc4480fd283a2fc348345435edb9aad72b6dda98532ac1639776d1b044de6",
-      "release_state": "not_matched_to_zenodo",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "5 Dirac Delta/_work/MTT_Corrected_Contact_Loops_and_Finite_One_Loop_Tadpoles"
-      },
-      "source_tree_sha256": "b23484402b562c7aa6538c8a7ad7604e71832ca84c04e4b91410641c5a823db7",
-      "title": "MTT-Corrected Contact Loops and Finite One-Loop Tadpoles Proper-Time Coherent Kernels, UV Softening, and the Local-Limit Counterterm",
-      "version_relation": "unknown",
-      "zenodo_releases": []
-    },
-    {
-      "abstract": "The preceding delta-projection papers established a structural dictionary: many Dirac delta functions in physics are sharp limits of finite kernels, filters, shells, windows, or survivor-basin effects. The remaining execution-level problem is to determine which finite kernel is selected by Modal Triplet Theory (MTT), rather than introducing an arbitrary regulator. Building on the canonical coherent-kernel construction from fixed-point data, this paper studies the first concrete dynamical application: propagators. In a flat coherent chart, with positive quadratic operator L_m=-\\Delta+m^2 and MTT proper-time scale \\tau>0, the canonical corrected Euclidean propagator is \\Delta_\\tau(k)=\\frac{e^{-\\tau |k|^2}}{|k|^2+m^2}. More generally, with a coherent spectral window B(A)=P\\chi(A)e^{-\\tau A/2}\\chi(A)P, the corrected covariance is \\Delta_{\\mathrm{MTT}} = B(A)L_m^{-1}B(A)^\\ast . We prove that \\Delta_\\tau recovers the ordinary propagator distributionally as \\tau\\downarrow0, has finite coincident value in every finite dimension for \\tau>0, and yields Gaussian UV domination. For scalar polynomial perturbation theory in a fixed coherent sector, every Euclidean Feynman integral whose internal lines carry the canonical Gaussian filter is absolutely UV finite. The leading low-momentum correction is controlled by \\tau |k|^2, giving an effective coherence scale \\Lambda_{\\mathrm{eff}}\\sim\\tau^{-1/2}. These results do not yet fix the numerical value of \\tau in a physical sector; rather, they show that once fixed-point operator data determine \\tau, the propagator correction is no longer arbitrary.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "unversioned",
-      "date": "April 2026",
-      "latest_zenodo_release": null,
-      "main_tex_sha256": "aff77e161625b15a2897b6e4b328ee00419d0b5db290c40d9aa1cb189c811eac",
-      "paper_id": "mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f",
-      "paper_md_sha256": "dfc7a70dea08c706226e5610d614d69efca48c77a8cc537f626c4b943317df9e",
-      "release_state": "not_matched_to_zenodo",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "5 Dirac Delta/_work/MTT_Corrected_Propagators_and_UV_Behaviour"
-      },
-      "source_tree_sha256": "52cecac1286913f48257485ed0db23acab4a41324df25732a0d161246cd19f6a",
-      "title": "MTT-Corrected Propagators and UV Behaviour Canonical Coherent Filtering from Fixed-Point Data",
       "version_relation": "unknown",
       "zenodo_releases": []
     },

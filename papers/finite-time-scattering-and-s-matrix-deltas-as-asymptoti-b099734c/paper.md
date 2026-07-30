@@ -13,18 +13,39 @@ abstract: |
   ```
   and the normalized squared kernel converges distributionally to $`2\pi\delta(\Delta E)`$. More generally, smooth time windows yield approximate energy-conservation kernels through their Fourier transforms, with normalization fixed by Plancherel. The transition-rate limit reproduces the usual Fermi-golden-rule factor, and wave-packet scattering shows how plane-wave deltas are always integrated against finite profiles in physical amplitudes. We then combine finite time and finite spatial support to obtain finite energy–momentum bookkeeping kernels replacing the exact S-matrix conservation delta.
 
-  The MTT interpretation is that exact scattering deltas are not primitive conservation objects inside finite processes. They are asymptotic bookkeeping limits of admissible transition windows once the interaction is idealized as infinitely extended and the in/out sectors are stable enough to support an S-matrix description. Finite-time scattering therefore provides a concrete bridge between coherent admissible dynamics and the distributional conservation structure of perturbative QFT.
+  The MTT interpretation is conditional. These standard window kernels may serve as bookkeeping outputs if selected MTT dynamics derives the preparation, switching, detector, or finite-time profile. This paper does not derive such a profile, and finite experimental duration must not be identified with a fundamental admissibility width. Exact conservation continues to follow from the symmetry assumptions of the closed theory.
 author:
 - Peter Nero
-current_version: unversioned
-date: April 2026
-generated_from_main_tex_sha256: c8dfdbb72fa2ed82eda536f08eee70461e7cf5d444484e4fcff0b63ee10c265d
+current_version: v1
+date: July 2026, Version 1
+generated_from_main_tex_sha256: 05fa89b720930ab481b8c2d7b29cf3aa352cdf1416aee419fdbc9e28866a38a1
 paper_id: finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c
-release_state: not_matched_to_zenodo
+release_state: zenodo_released
+released_version: v1
 title: |
-  Finite-Time Scattering and S-Matrix Deltas as Asymptotic Bookkeeping Limits  
-  Energy–Momentum Conservation Deltas from Admissible Transition Windows
+  Finite-Time Scattering Windows and Asymptotic Delta Limits
+  Standard Fourier Mathematics and the MTT Source Boundary
+zenodo_doi: 10.5281/zenodo.21704386
+zenodo_record_id: 21704386
+zenodo_url: "https://zenodo.org/records/21704386"
 ---
+
+# Version 1 Revision Note
+
+Supersedes
+The unversioned April 2026 manuscript.
+
+Reason
+The finite-window limits were standard and correct, but the earlier MTT language could make an externally chosen observation window sound geometrically selected.
+
+Resolution
+This version separates exact symmetry conservation, finite experimental resolution, and a possible fundamental MTT width. Only the first two are established here.
+
+Retained result
+The sinc, smooth-window, Plancherel, golden-rule, and spacetime distributional limits are unchanged.
+
+Remaining boundary
+Selected dynamics must emit any claimed MTT transition window.
 
 # Purpose and claim discipline
 
@@ -34,11 +55,23 @@ We do not claim to reconstruct full scattering theory from first principles in t
 
 > Exact S-matrix delta functions arise only after idealizing finite transition windows into infinite asymptotic support.
 
-The mathematical statement is elementary Fourier analysis. The MTT interpretation is structural: finite admissible interactions carry finite bookkeeping kernels; exact conservation deltas are the singular limit of those kernels.
+The mathematical statement is elementary Fourier analysis. The MTT interpretation is an additional source question: a kernel becomes an MTT output only if selected dynamics emits the corresponding preparation, interaction, or detector window.
 
 <div class="center">
 
 </div>
+
+# Three distinct notions of width
+
+The same formula can occur in three logically different settings:
+
+1.  a switching or observation time chosen by an experiment;
+
+2.  finite-volume or finite-duration support that breaks exact translation invariance in an effective description;
+
+3.  a fundamental admissibility width selected by an underlying theory.
+
+The first two are ordinary scattering inputs. The third is not established by the Fourier limit. In particular, a measured duration $`T`$ does not determine an MTT coherence scale.
 
 # Fourier conventions
 
@@ -263,7 +296,7 @@ In MTT terms, wave packets are closer to admissible finite bookkeeping than plan
 
 # LSZ, asymptotic regimes, and admissible scattering
 
-The exact S-matrix is not available in arbitrary dynamical regimes. It requires stable asymptotic sectors in which in/out states can be defined and compared. In ordinary QFT this is the role of Haag–Ruelle/LSZ-type scattering theory in regimes with appropriate mass gaps, stability, and asymptotic separation.
+The exact S-matrix is not available in arbitrary dynamical regimes. It requires stable asymptotic sectors in which in/out states can be defined and compared. In ordinary QFT this is the role of Haag–Ruelle/LSZ-type scattering theory in regimes with appropriate mass gaps, stability, and asymptotic separation .
 
 The present paper does not derive LSZ or Haag–Ruelle theory. It uses their standard lesson as a domain condition:
 
@@ -383,7 +416,7 @@ It is instead:
 
 # Conclusion
 
-Finite-time scattering exposes the same projection structure that appeared in point sources, gauge fixing, measurement, and contact interactions. A finite process produces a finite kernel. The exact Dirac delta appears only after an asymptotic idealization.
+Finite-time scattering makes the sharp-limit structure explicit: a finite process produces a finite kernel, while the Dirac delta appears in the asymptotic idealization.
 
 The central result is:
 ``` math
@@ -407,4 +440,14 @@ in the distributional amplitude sense, and
 ```
 in the normalized transition-rate sense.
 
-Thus S-matrix deltas are not mysterious primitive conservation objects inside finite dynamics. They are the distributional endpoints of finite admissible transition kernels. In MTT language, they are singular asymptotic shadows of bookkeeping closure.
+Thus S-matrix deltas are the asymptotic endpoints of standard finite transition kernels. An MTT preparation, detector, or fundamental-width source remains to be derived.
+
+<div class="thebibliography">
+
+9
+
+H. Lehmann, K. Symanzik, and W. Zimmermann, “On the formulation of quantized field theories,” *Il Nuovo Cimento* **1** (1955), 205–225. <https://doi.org/10.1007/BF02731765>
+
+D. Ruelle, “On the asymptotic condition in quantum field theory,” *Helvetica Physica Acta* **35** (1962), 147–163. <https://www.e-periodica.ch/digbib/view?pid=hpa-001:1962:35::472>
+
+</div>

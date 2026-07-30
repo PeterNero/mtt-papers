@@ -1,20 +1,47 @@
 {
-  "abstract": "The exact energy\u2013momentum conserving delta functions of the scattering matrix, (2\\pi)^4\\delta^{(4)}(p_f-p_i), are usually introduced as consequences of translation invariance and asymptotic scattering theory. This paper continues the sequence interpreting Dirac deltas as singular shadows of admissible projection. The previous bookkeeping paper showed that momentum-conservation deltas arise as infinite-support limits of finite interaction-window Fourier kernels. Here we focus on scattering itself: finite-time transition amplitudes do not produce exact energy deltas, but finite-width sinc or window kernels. The exact S-matrix delta appears only after the asymptotic idealization of infinite observation time, infinite spatial support, and stable in/out sectors. We prove a standard finite-time transition theorem: for a constant perturbation acting during a time window of length T, the first-order transition amplitude contains W_T(\\Delta E)=\\int_{-T/2}^{T/2}e^{i\\Delta E t}\\,dt =2\\frac{\\sin(\\Delta E T/2)}{\\Delta E}, and the normalized squared kernel converges distributionally to 2\\pi\\delta(\\Delta E). More generally, smooth time windows yield approximate energy-conservation kernels through their Fourier transforms, with normalization fixed by Plancherel. The transition-rate limit reproduces the usual Fermi-golden-rule factor, and wave-packet scattering shows how plane-wave deltas are always integrated against finite profiles in physical amplitudes. We then combine finite time and finite spatial support to obtain finite energy\u2013momentum bookkeeping kernels replacing the exact S-matrix conservation delta. The MTT interpretation is that exact scattering deltas are not primitive conservation objects inside finite processes. They are asymptotic bookkeeping limits of admissible transition windows once the interaction is idealized as infinitely extended and the in/out sectors are stable enough to support an S-matrix description. Finite-time scattering therefore provides a concrete bridge between coherent admissible dynamics and the distributional conservation structure of perturbative QFT.",
+  "abstract": "This paper proves standard finite-time and finite-support scattering limits. A constant perturbation acting for a finite duration produces a sinc-shaped transition kernel, and its normalized square converges distributionally to the energy-conservation delta as the duration tends to infinity. Smooth windows give the corresponding approximate identities through Fourier transformation and Plancherel normalization, while finite spacetime support yields finite energy-momentum kernels whose infinite-support limits are the usual scattering deltas. The MTT interpretation is conditional: these kernels become MTT bookkeeping outputs only if selected dynamics derives the preparation, switching, detector, or finite-time profile. Finite experimental duration must not be identified with a fundamental admissibility width. Exact conservation continues to follow from the symmetry assumptions of the closed theory.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "unversioned",
-  "date": "April 2026",
-  "latest_zenodo_release": null,
-  "main_tex_sha256": "c8dfdbb72fa2ed82eda536f08eee70461e7cf5d444484e4fcff0b63ee10c265d",
+  "current_version": "v1",
+  "date": "July 2026, Version 1",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.21704385",
+    "created": "2026-07-30T13:27:54.011526+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.21704386",
+    "files": [
+      {
+        "checksum": "md5:c8eb4c88bddb774747db99ed7eea1017",
+        "content_url": "https://zenodo.org/api/records/21704386/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 363529
+      }
+    ],
+    "id": "21704386",
+    "match_kind": "published_draft_reconciliation",
+    "match_score": 1.0,
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21704386",
+    "resource_type": "publication",
+    "title": "Finite-Time Scattering Windows and Asymptotic Delta Limits Standard Fourier Mathematics and the MTT Source Boundary",
+    "updated": "2026-07-30T13:27:54.358780+00:00",
+    "version": "v1"
+  },
+  "main_tex_sha256": "05fa89b720930ab481b8c2d7b29cf3aa352cdf1416aee419fdbc9e28866a38a1",
   "paper_id": "finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c",
-  "paper_md_sha256": "f89bb45b5868479590d93b7aa8960fe53ff731205897cb8f222d2fa6a10009f9",
-  "release_state": "not_matched_to_zenodo",
+  "paper_md_sha256": "3d7a7190e986b578f665da03f19b9db5116a3fed7d5d6fca7032405de41da5d9",
+  "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "e88bb23e5a52a03f308bf31b1f9254b1c7fdafe706aa016c984ec984861a263a",
+    "selected_revision": true,
+    "superseded_source_path": "5 Dirac Delta/_work/Finite_Time_Scattering_and_S_Matrix_Deltas_as_Asymptotic_Bookkeeping_Limits"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
@@ -24,9 +51,9 @@
       "sha256": "c8dfdbb72fa2ed82eda536f08eee70461e7cf5d444484e4fcff0b63ee10c265d"
     },
     {
-      "bytes": 16480,
+      "bytes": 17802,
       "path": "main.tex",
-      "sha256": "c8dfdbb72fa2ed82eda536f08eee70461e7cf5d444484e4fcff0b63ee10c265d"
+      "sha256": "05fa89b720930ab481b8c2d7b29cf3aa352cdf1416aee419fdbc9e28866a38a1"
     },
     {
       "bytes": 3784,
@@ -37,8 +64,34 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Finite_Time_Scattering_and_S_Matrix_Deltas_as_Asymptotic_Bookkeeping_Limits"
   },
-  "source_tree_sha256": "279585911bdadbd85c7caf2dcdf1921684e453a98c454b404346e1671e2b1c49",
-  "title": "Finite-Time Scattering and S-Matrix Deltas as Asymptotic Bookkeeping Limits Energy\u2013Momentum Conservation Deltas from Admissible Transition Windows",
-  "version_relation": "unknown",
-  "zenodo_releases": []
+  "source_tree_sha256": "32b5bebe74e4b968d41d11c3f63a9d4809c935ba04d161df1e4d93a0516bb100",
+  "title": "Finite-Time Scattering Windows and Asymptotic Delta Limits Standard Fourier Mathematics and the MTT Source Boundary",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.21704385",
+      "created": "2026-07-30T13:27:54.011526+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704386",
+      "files": [
+        {
+          "checksum": "md5:c8eb4c88bddb774747db99ed7eea1017",
+          "content_url": "https://zenodo.org/api/records/21704386/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 363529
+        }
+      ],
+      "id": "21704386",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704386",
+      "resource_type": "publication",
+      "title": "Finite-Time Scattering Windows and Asymptotic Delta Limits Standard Fourier Mathematics and the MTT Source Boundary",
+      "updated": "2026-07-30T13:27:54.358780+00:00",
+      "version": "v1"
+    }
+  ]
 }

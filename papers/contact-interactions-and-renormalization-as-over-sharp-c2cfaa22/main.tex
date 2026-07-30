@@ -1,10 +1,10 @@
 \documentclass[11pt]{article}
 \usepackage{series}
 
-\title{Contact Interactions and Renormalization as Over--Sharp Projection\\
-\large Finite Coherent Overlap Vertices in Modal Triplet Theory}
+\title{Finite Coherent Overlap Vertices and Their Local Contact Limit\\
+\large Conditional EFT Interpretation and the Renormalization Boundary}
 \author{Peter Nero}
-\date{April 2026}
+\date{July 2026, Version 1}
 
 \begin{document}
 \maketitle
@@ -33,14 +33,29 @@ heat-kernel smearing multiplies propagators and vertices by rapidly decaying for
 turning point-contact singularities into finite coherent-overlap expressions before the sharp
 limit is taken.
 
-The MTT interpretation is that ordinary contact interactions are not primitive zero-width
-events.  They are downstream idealizations of finite admissible overlap among coherent
-modes.  Renormalization is therefore re-read, not abolished, as the repair procedure needed
-when a downstream theory replaces finite coherent overlap by a point-local delta/contact
-idealization.  The paper proves the kernel-convergence, general \(n\)-point sharp-limit, and finite-cutoff statements; broader
-claims about physical renormalization are presented as structural interpretation and research
-program, not as completed phenomenology.  We also emphasize that admissible kernels are not arbitrary regulators: they must respect the causal, symmetry, and quotient structures of the effective theory.
+The MTT interpretation is conditional.  If a selected physical sector supplies such a finite
+overlap kernel and an intertwiner to external fields, the local vertex may be read as its sharp
+limit.  At nonzero width the construction is generally a nonlocal effective interaction, not
+automatically a local ultraviolet completion.  A local parent mediator or an equivalent
+localization theorem would be needed to change that classification.  The paper proves
+kernel convergence, the general \(n\)-point sharp limit, and finite-cutoff statements.  It
+does not infer all-loop renormalizability, ultraviolet completion, Lorentzian causality,
+unitarity, or gauge/BRST consistency from finite width alone.
 \end{abstract}
+
+\section*{Version 1 Revision Note}
+\begin{description}
+\item[Supersedes] The unversioned April 2026 manuscript with the same subject.
+\item[Reason] The earlier text correctly proved an approximate-identity limit but could be
+read as promoting finite overlap directly to a physical MTT interaction.
+\item[Resolution] This version classifies the finite-width vertex as a nonlocal EFT
+interaction unless a local parent or localization theorem is supplied, and separates the
+proved finite-cutoff statements from all-loop, causal, unitary, and gauge claims.
+\item[Retained result] The sharp-limit theorem and finite spectral vertex tensors are
+unchanged.
+\item[Remaining boundary] A selected external-field source map and physical compatibility
+certificates are still required.
+\end{description}
 
 \section{Purpose and claim discipline}
 
@@ -112,6 +127,13 @@ compatible with causal propagation on the admissible slab.
 
 Thus the paper proves convergence and finiteness statements for controlled kernels, but does
 not claim that arbitrary smearing produces a consistent QFT.
+
+\begin{remark}[EFT classification]
+At fixed nonzero width, \(V_\epsilon\) couples fields at separated points.  It is therefore a
+nonlocal EFT vertex unless it is obtained by integrating out a declared local mediator or a
+localization theorem supplies an equivalent local parent theory.  Finiteness of a vertex
+tensor at fixed cutoff does not imply all-loop renormalizability or ultraviolet completion.
+\end{remark}
 
 \section{Local contact vertices and their hidden delta structure}
 
@@ -238,7 +260,7 @@ dense in the usual test-function topology on compact products; continuity gives 
 case.
 \end{proof}
 
-\section{General \(n\)-point overlap vertices}
+\section{General \texorpdfstring{\(n\)}{n}-point overlap vertices}
 
 The quartic case is not special.  For an \(n\)-field local vertex, define
 \[
@@ -458,26 +480,27 @@ limit.
 From the present viewpoint, renormalization has a two-sided interpretation.
 
 First, it is the standard and indispensable method for defining local QFT after singular
-limits have been taken.  Nothing in this paper challenges that.
+limits have been taken.  Nothing in this paper challenges the causal-local or renormalization-
+group constructions \cite{EpsteinGlaser1973,WilsonKogut1974}.
 
 Second, it can be structurally re-read as a repair mechanism:
 \[
-\text{finite overlap vertex}
-\longrightarrow
-\text{zero-width contact vertex}
-\longrightarrow
-\text{coincident singularities}
-\longrightarrow
-\text{renormalization}.
+\begin{array}{c}
+\text{finite overlap vertex}\longrightarrow\text{zero-width contact vertex}\\
+\phantom{\text{finite overlap vertex}}\longrightarrow
+\text{coincident singularities}\longrightarrow\text{renormalization}
+\end{array}
 \]
 In MTT terms, the local theory has projected away the finite overlap structure and then must
 restore predictivity by absorbing the consequences into parameters, counterterms, or running
 couplings.
 
 Thus:
-\[
-\boxed{\text{renormalization repairs the downstream theory after admissible overlap has been idealized as point contact}.}
-\]
+\begin{center}
+\fbox{\parbox{0.86\linewidth}{\centering
+Renormalization repairs the downstream theory after admissible overlap has been
+idealized as point contact.}}
+\end{center}
 This is not a new computational scheme by itself.  It is a structural reinterpretation of why
 the scheme is needed.  In particular, the existence of a finite kernel does not abolish
 renormalization in the sharp local limit.  It identifies the finite object whose removal creates
@@ -516,13 +539,11 @@ field theory is obtained by a chosen kernel.
 
 The physical MTT claim is conditional:
 
-\[
-\boxed{
-\text{If an effective local QFT is the sharp limit of an admissible coherent projection,}
-\quad
-\text{then its contact vertices should be read as zero-width overlap limits.}
-}
-\]
+\begin{center}
+\fbox{\parbox{0.86\linewidth}{\centering
+If an effective local QFT is the sharp limit of an admissible coherent projection, then its
+contact vertices should be read as zero-width overlap limits.}}
+\end{center}
 
 This conditional form is important.  It avoids the false inference that any smoothing kernel is
 physically meaningful.  Only kernels tied to the admissibility, symmetry, and projection
@@ -547,16 +568,17 @@ This paper & \(\phi(x)^4\leadsto\) finite coherent overlap vertex\\
 \end{center}
 
 The common pattern is now visible:
-\[
-\boxed{\text{singular local object}=\text{zero-width limit of bounded admissible kernel}.}
-\]
+\begin{center}
+\fbox{\parbox{0.78\linewidth}{\centering
+singular local object \(=\) zero-width limit of a bounded admissible kernel.}}
+\end{center}
 
 \section{Scope of proof}
 
 The proof content of this paper is deliberately modest.
 
 \begin{center}
-\begin{tabular}{p{0.30\linewidth}p{0.58\linewidth}}
+\begin{tabular}{p{0.38\linewidth}p{0.50\linewidth}}
 \hline
 \textbf{Claim} & \textbf{Status}\\
 \hline
@@ -567,6 +589,7 @@ Heat damping makes tadpole-type integrals finite & standard analytic fact, illus
 General \(n\)-point contact vertices arise as sharp overlap limits & proved for smooth fields\\
 Arbitrary smearing preserves locality, unitarity, and gauge symmetry & not claimed\\
 All QFT renormalization is solved by MTT kernels & not claimed\\
+Finite contact width proves all-loop UV completion & not claimed\\
 The Standard Model has been recalculated with these kernels & not claimed\\
 \hline
 \end{tabular}
@@ -574,20 +597,28 @@ The Standard Model has been recalculated with these kernels & not claimed\\
 
 \section{Conclusion}
 
-Contact interactions are among the most important places where physics writes an exact local
-object and then pays for it through singularities and renormalization.  This paper has shown
-that the local quartic vertex can be obtained as the zero-width limit of a finite coherent
-overlap vertex.  At finite spectral bandwidth or finite heat-kernel width, the vertex is a
-bounded overlap tensor and coincident covariance is finite inside the retained sector.
+The local quartic vertex is the zero-width limit of a finite overlap vertex.  At finite
+spectral bandwidth the vertex tensor and coincident covariance are finite in the retained
+sector.
 
-The MTT interpretation is that contact interactions are not primitive point events.  They are
-downstream singular shadows of finite admissible overlap.  Renormalization is then re-read as
-the repair procedure required when a downstream QFT replaces finite coherent overlap by
-point-local contact.
+The MTT reading is conditional: fixed width defines a nonlocal EFT until locality, causal
+support, unitarity, and gauge/BRST compatibility are proved.  Renormalization remains the
+standard sharp-limit analysis.
 
-The guiding diagnostic remains:
-\[
-\boxed{\text{where a local theory writes exact contact, ask what coherent overlap has been collapsed}.}
-\]
+\begin{thebibliography}{9}
+
+\bibitem{EpsteinGlaser1973}
+H. Epstein and V. Glaser,
+``The role of locality in perturbation theory,''
+\emph{Annales de l'Institut Henri Poincar\'e A} \textbf{19} (1973), 211--295.
+\url{https://eudml.org/doc/75788}
+
+\bibitem{WilsonKogut1974}
+K. G. Wilson and J. Kogut,
+``The renormalization group and the \(\epsilon\) expansion,''
+\emph{Physics Reports} \textbf{12} (1974), 75--199.
+\url{https://doi.org/10.1016/0370-1573(74)90023-4}
+
+\end{thebibliography}
 
 \end{document}

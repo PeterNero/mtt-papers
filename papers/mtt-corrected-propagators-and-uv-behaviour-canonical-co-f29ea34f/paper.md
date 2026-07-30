@@ -1,25 +1,50 @@
 ---
 abstract: |
-  The preceding delta-projection papers established a structural dictionary: many Dirac delta functions in physics are sharp limits of finite kernels, filters, shells, windows, or survivor-basin effects. The remaining execution-level problem is to determine which finite kernel is selected by Modal Triplet Theory (MTT), rather than introducing an arbitrary regulator. Building on the canonical coherent-kernel construction from fixed-point data, this paper studies the first concrete dynamical application: propagators. In a flat coherent chart, with positive quadratic operator $`L_m=-\Delta+m^2`$ and MTT proper-time scale $`\tau>0`$, the canonical corrected Euclidean propagator is
+  The preceding delta-projection papers established a structural dictionary: many Dirac delta functions arise as sharp limits of finite kernels. This paper studies the Euclidean propagator obtained after declaring the external Gaussian filter
   ``` math
   \Delta_\tau(k)=\frac{e^{-\tau |k|^2}}{|k|^2+m^2}.
   ```
-  More generally, with a coherent spectral window $`B(A)=P\chi(A)e^{-\tau A/2}\chi(A)P`$, the corrected covariance is
+  More generally, on one declared operator domain, let
   ``` math
-  \Delta_{\mathrm{MTT}} = B(A)L_m^{-1}B(A)^\ast .
+  B(A)=P\chi(A)e^{-\tau A/2}\chi(A)P .
   ```
-  We prove that $`\Delta_\tau`$ recovers the ordinary propagator distributionally as $`\tau\downarrow0`$, has finite coincident value in every finite dimension for $`\tau>0`$, and yields Gaussian UV domination. For scalar polynomial perturbation theory in a fixed coherent sector, every Euclidean Feynman integral whose internal lines carry the canonical Gaussian filter is absolutely UV finite. The leading low-momentum correction is controlled by $`\tau |k|^2`$, giving an effective coherence scale $`\Lambda_{\mathrm{eff}}\sim\tau^{-1/2}`$. These results do not yet fix the numerical value of $`\tau`$ in a physical sector; rather, they show that once fixed-point operator data determine $`\tau`$, the propagator correction is no longer arbitrary.
+  This spectral window defines the compressed covariance
+  ``` math
+  \Delta_B = B(A)L_m^{-1}B(A)^\ast .
+  ```
+  We prove distributional recovery as $`\tau\downarrow0`$, finite coincidence values, and Gaussian ultraviolet domination. Every scalar Euclidean graph whose internal lines are explicitly assigned this filter is absolutely ultraviolet finite under the stated quadratic-control hypothesis. This is a conditional model theorem, not a source theorem: an internal MTT gap does not select external momentum damping without an internal-to-external intertwiner. Reflection positivity, gauge invariance, causal support, and Lorentzian unitarity remain independent requirements.
 author:
 - Peter Nero
-current_version: unversioned
-date: April 2026
-generated_from_main_tex_sha256: aff77e161625b15a2897b6e4b328ee00419d0b5db290c40d9aa1cb189c811eac
+current_version: v1
+date: July 2026, Version 1
+generated_from_main_tex_sha256: 2cf4c81a9b0eb44e790d78341da388cefe671123e268e77279f6b086665b8581
 paper_id: mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f
-release_state: not_matched_to_zenodo
+release_state: zenodo_released
+released_version: v1
 title: |
-  MTT-Corrected Propagators and UV Behaviour  
-  Canonical Coherent Filtering from Fixed-Point Data
+  Gaussian-Filtered Euclidean Propagators and UV Behaviour
+  Exact Domination under a Declared External Filter
+zenodo_doi: 10.5281/zenodo.21704283
+zenodo_record_id: 21704283
+zenodo_url: "https://zenodo.org/records/21704283"
 ---
+
+# Version 1 Revision Note
+
+Supersedes
+The unversioned April 2026 manuscript.
+
+Reason
+The earlier version promoted a familiar external heat filter from specified model data to a physically selected MTT propagator.
+
+Resolution
+This version retains the exact Euclidean convergence and graph-domination theorems but treats the filter as a declared model input. It explicitly separates the missing source intertwiner, reflection positivity, gauge/BRST consistency, and Lorentzian unitarity.
+
+Retained result
+All conditional Euclidean estimates remain available unchanged.
+
+Remaining boundary
+A selected source theorem must emit the same external filter.
 
 # Purpose and claim discipline
 
@@ -35,9 +60,9 @@ That is mathematically useful but not sufficient for prediction. The predictive 
         \Longrightarrow
         \text{finite correction}.
 ```
-The companion paper on canonical coherent kernels supplied the first step: fixed-point operator data select a finite kernel through functional calculus. The present paper applies that kernel to propagators.
+Functional calculus selects a unique kernel once an operator, projector, domain, and scale have been declared. It does not identify that kernel with an external spacetime propagator. The present paper studies the consequences of making that additional model identification.
 
-The paper proves a controlled statement in a flat Euclidean coherent chart. It does not claim to complete the full interacting Standard Model, quantum gravity, or nonperturbative MTT. It proves that the canonical MTT filter gives a specific UV-softened propagator and that this propagator has precise convergence, finiteness, and perturbative domination properties.
+The paper proves a controlled statement in a flat Euclidean chart. It does not claim to complete an interacting physical QFT. It proves precise convergence, coincidence-finiteness, and perturbative domination properties for the displayed filter.
 
 <div class="center">
 
@@ -45,7 +70,7 @@ The paper proves a controlled statement in a flat Euclidean coherent chart. It d
 |:---|:---|
 | Proved here | Gaussian-proper-time filtered propagators are finite at coincidence and recover the local propagator as $`\tau\downarrow0`$. |
 | Proved here | Euclidean scalar Feynman integrals with filtered internal lines are absolutely UV finite. |
-| Interpreted here | $`\tau`$ is the downstream proper-time/coherence scale inherited from MTT fixed-point data. |
+| Conditional interpretation | $`\tau`$ may be an MTT coherence scale if a selected source intertwiner emits the external filter. |
 | Not proved here | The numerical value of $`\tau`$ in a real physical sector. |
 | Not proved here | Full Lorentzian unitarity, gauge invariance, or Standard Model phenomenology. |
 
@@ -59,10 +84,10 @@ The formula
 ```
 is not, by itself, a new regularization formula. Exponential and heat-kernel regulators are standard tools in mathematical physics and quantum field theory. The novelty claimed here is therefore not the bare functional form.
 
-The novelty claim is the following selection statement:
+The possible MTT novelty is therefore a still-open selection statement:
 ``` math
 \boxed{
-        \text{the filter is not chosen to regulate a divergent integral; it is inherited from fixed-point data.}
+        \text{selected MTT geometry emits this same external filter before amplitudes are evaluated.}
         }
 ```
 In an MTT fixed-point regime, the data $`(A,P,\chi,\tau)`$ have independent meaning before any loop integral is evaluated:
@@ -75,7 +100,7 @@ In an MTT fixed-point regime, the data $`(A,P,\chi,\tau)`$ have independent mean
 
 - $`\tau`$ is the proper-time/coherence support scale of the evolve–project cycle.
 
-Thus the finite propagator is not an arbitrary Gaussian regulator. It is the downstream covariance selected by the fixed-point sector.
+Those meanings make the tuple a well-defined model input. They do not yet prove that its operator acts on external momentum or that the resulting covariance is the physical one.
 
 Equivalently, the paper distinguishes three statements:
 
@@ -89,15 +114,15 @@ Equivalently, the paper distinguishes three statements:
 
 </div>
 
-This paper proves the third statement in the model fixed-point setting where the operator data are specified. It does not yet claim that the numerical value of $`\tau`$ has been derived for the Standard Model or for quantum gravity.
+This paper proves the consequences of the third statement *conditional on* the required source intertwiner. It does not prove the selection statement itself.
 
-# Canonical fixed-point input
+# Declared Euclidean benchmark input
 
 Let $`X`$ denote a flat coherent chart, either $`\mathbb R^d`$ or a torus $`T^d`$. Let
 ``` math
 A=-\Delta
 ```
-be the nonnegative coherent-chart Laplacian. Let $`P`$ denote the coherent-sector projector inherited from fixed-point data, and let $`\chi(A)`$ be an admissible spectral window. The canonical coherent filter is
+be the nonnegative chart Laplacian. Let $`P`$ be a declared projector and let $`\chi(A)`$ be a declared spectral window. The associated filter is
 ``` math
 B_{\tau,\chi}
         :=
@@ -137,9 +162,9 @@ K_\tau(x-y)
 
 </div>
 
-# A worked fixed-point selection example: $`S^1_R`$
+# A worked declared circle example: $`S^1_R`$
 
-To make the selection mechanism explicit, consider the coherent chart $`X=S^1_R`$, the circle of radius $`R`$, with coordinate $`\theta\in[0,2\pi)`$. Let
+To make the functional-calculus mechanism explicit, consider the chart $`X=S^1_R`$, the circle of radius $`R`$, with coordinate $`\theta\in[0,2\pi)`$. Let
 ``` math
 A=-R^{-2}\partial_\theta^2 .
 ```
@@ -150,7 +175,7 @@ The eigenfunctions and eigenvalues are
         \lambda_n=\frac{n^2}{R^2},
         \qquad n\in\mathbb Z .
 ```
-If the fixed-point cycle supplies a proper-time scale $`\tau_0>0`$, the canonical heat/proper-time kernel is not chosen by hand. It is fixed:
+Once a proper-time scale $`\tau_0>0`$ is declared, functional calculus fixes
 ``` math
 K_{\tau_0}^{S^1_R}(\theta,\theta')
         =
@@ -168,11 +193,11 @@ The corresponding scalar propagator with mass $`m>0`$ is
         \frac{e^{-\tau_0 n^2/R^2}}{n^2/R^2+m^2}
         e^{in(\theta-\theta')}.
 ```
-In this example the finite correction is fully determined by the triple
+Relative to the declared model, the finite correction is fully determined by
 ``` math
 (R,A,\tau_0).
 ```
-There is no independent choice of a Gaussian regulator.
+There is no further freedom after that triple is fixed. The example does not select the triple or identify the circle operator with external spacetime momentum.
 
 The effective spectral width is read off from
 ``` math
@@ -184,14 +209,14 @@ or, in physical momentum units,
 ``` math
 p_{\mathrm{eff}}\sim \tau_0^{-1/2}.
 ```
-This is the simplest explicit model of the general claim:
+This is the simplest explicit model of the conditional claim:
 ``` math
 \boxed{
-        \text{fixed-point operator data select the finite kernel.}
+        \text{declared operator data determine a unique finite kernel.}
         }
 ```
 
-# MTT-corrected scalar propagator
+# Gaussian-filtered scalar propagator
 
 Let
 ``` math
@@ -202,7 +227,7 @@ The ordinary Euclidean propagator is
 ``` math
 \Delta_0 := L_m^{-1}.
 ```
-The MTT-corrected propagator is the filtered covariance
+The filtered covariance is
 ``` math
 \Delta_{\tau,\chi}
         :=
@@ -228,7 +253,7 @@ Hence in momentum space,
 
 <div class="definition">
 
-**Definition 2** (MTT effective coherence scale). The proper-time parameter $`\tau>0`$ defines the effective coherence scale
+**Definition 2** (Effective filter scale). The proper-time parameter $`\tau>0`$ defines the effective coherence scale
 ``` math
 \Lambda_{\mathrm{eff}}
         :=
@@ -377,7 +402,7 @@ e^{-\tau A}(A+m^2)^{-1},
         \qquad
         e^{-\tau(A+m^2)}(A+m^2)^{-1}.
 ```
-They differ by the finite factor $`e^{-\tau m^2}`$. All UV statements are unchanged. When positivity/proper-time support is emphasized, the second convention is often cleaner.
+They differ by the finite factor $`e^{-\tau m^2}`$. All ultraviolet estimates are unchanged. For a proper-time representation the second convention is often cleaner. Neither convention by itself proves Osterwalder–Schrader reflection positivity.
 
 </div>
 
@@ -479,7 +504,7 @@ for some $`C_p,c_\tau>0`$. The denominator is positive and polynomial, so the in
 
 # All-graph Euclidean UV domination
 
-We now state a controlled perturbative result for scalar Euclidean diagrams. The point is not to construct a full QFT, but to show that canonical MTT filtering gives absolute UV convergence once every internal line carries the fixed-point Gaussian factor.
+We now state a controlled perturbative result for scalar Euclidean diagrams. The point is not to construct a full QFT, but to show that the declared filtering gives absolute ultraviolet convergence once every internal line carries the Gaussian factor.
 
 Consider a connected graph $`\Gamma`$ with $`L`$ loop momenta $`\ell=(\ell_1,\dots,\ell_L)\in(\mathbb R^d)^L`$, internal lines $`e\in E(\Gamma)`$, and fixed external momenta. Each internal line momentum has the affine form
 ``` math
@@ -512,7 +537,7 @@ times a polynomial numerator $`P(\ell)`$, if derivative interactions are present
 
 <div class="theorem">
 
-**Theorem 9** (Euclidean all-graph UV finiteness under canonical line filtering). *Fix $`m>0`$, $`\tau>0`$, and a connected scalar Euclidean Feynman graph $`\Gamma`$. Suppose every internal line carries the canonical Gaussian factor $`e^{-\tau |q_e|^2}`$. Then the loop integral
+**Theorem 9** (Euclidean all-graph UV finiteness under declared line filtering). *Fix $`m>0`$, $`\tau>0`$, and a connected scalar Euclidean Feynman graph $`\Gamma`$. Suppose every internal line carries the declared Gaussian factor $`e^{-\tau |q_e|^2}`$. Then the loop integral
 ``` math
 \int_{(\mathbb R^d)^L}
         |P(\ell)|
@@ -545,7 +570,7 @@ which is integrable on finite-dimensional loop-momentum space. ◻
 
 <div class="remark">
 
-*Remark 10* (Gauge and Lorentzian caveat). This theorem is Euclidean and scalar. Gauge theories require compatible filtering of fields, ghosts, vertices, and Ward/BRST identities. Lorentzian unitarity requires a separate analytic-continuation or positive spectral representation argument. The present theorem proves UV domination, not by itself full physical consistency.
+*Remark 10* (Physical compatibility boundary). This theorem is Euclidean and scalar. Gauge theories require compatible filtering of fields, ghosts, vertices, and Ward/BRST identities. Lorentzian unitarity requires a separate continuation or positive spectral representation, and Euclidean use requires a reflection-positivity certificate. The theorem proves ultraviolet domination only.
 
 </div>
 
@@ -570,21 +595,21 @@ This is a positive proper-time integral with a lower support gap $`s\ge\tau`$. T
         \int_{0}^{\infty} e^{-s(|k|^2+m^2)}\,ds.
 ```
 
-This representation gives the MTT reading:
+This representation gives the Euclidean model reading:
 ``` math
 \boxed{\text{UV softening}=\text{absence of arbitrarily short proper-time support}.}
 ```
-It matches the fixed-point interpretation of $`\tau`$ as finite coherent support rather than an arbitrary regulator.
+It is compatible with interpreting $`\tau`$ as finite coherent support, but does not derive that interpretation.
 
-# Regulator versus MTT kernel
+# Regulator and the MTT source obligation
 
-Mathematically, the factor $`e^{-\tau |k|^2}`$ resembles a UV regulator. The MTT claim is stronger and narrower:
+Mathematically, the factor $`e^{-\tau |k|^2}`$ is a standard UV filter. The stronger MTT claim would require:
 ``` math
 \boxed{
-        \text{the filter is admissible only when derived from fixed-point operator data.}
+        \text{a selected operator-domain intertwiner derives the external filter from MTT geometry.}
         }
 ```
-The direction of explanation is therefore reversed relative to ordinary regularization. In a regulator calculation one first has a divergent integral and then chooses a cutoff. In the MTT execution reading one first has fixed-point data $`(A,P,\chi,\tau)`$, obtains the coherent filter, and only then computes amplitudes. The Gaussian factor is a consequence of coherent stabilization, not a post hoc cure for a divergence.
+Until that theorem is supplied, this paper is a regulator calculation with a precisely declared filter. Functional calculus makes the output unique relative to the input tuple, but it does not select that tuple or identify its domain with external momentum space.
 
 An arbitrary smearing function may break locality, positivity, gauge symmetry, or unitarity. A physically admissible MTT kernel must be selected by the coherent projector, spectral window, proper-time support, and compatibility conditions of the relevant sector.
 
@@ -592,12 +617,12 @@ An arbitrary smearing function may break locality, positivity, gauge symmetry, o
 
 | Object | Role |
 |:---|:---|
-| $`A`$ | fixed-point linearized damping/geometric operator |
-| $`P`$ | coherent-sector projector |
-| $`\chi(A)`$ | admissible spectral window |
-| $`\tau`$ | proper-time/coherence support scale |
-| $`B_{\tau,\chi}`$ | canonical coherent filter |
-| $`\Delta_{\tau,\chi}`$ | MTT-corrected covariance/propagator |
+| $`A`$ | declared nonnegative Euclidean operator |
+| $`P`$ | declared retained-sector projector |
+| $`\chi(A)`$ | declared spectral window |
+| $`\tau`$ | declared proper-time/filter scale |
+| $`B_{\tau,\chi}`$ | declared functional-calculus filter |
+| $`\Delta_{\tau,\chi}`$ | Gaussian-filtered covariance/propagator |
 | $`\Lambda_{\mathrm{eff}}\sim\tau^{-1/2}`$ | effective UV/coherence scale |
 
 </div>
@@ -667,7 +692,7 @@ The important point is conceptual: the filtered propagator converts any empirica
 
 # What becomes predictive
 
-The paper proves that, once $`A,P,\chi,\tau`$ are fixed by an MTT sector, the propagator correction is fixed. The remaining execution tasks are now concrete:
+The paper proves that, once $`A,P,\chi,\tau`$ and the external-domain identification are declared, the propagator correction is fixed. The remaining execution tasks are concrete:
 ``` math
 (A,P,\chi,\tau)
         \Longrightarrow
@@ -687,27 +712,25 @@ Examples include:
 
 5.  effective scale constraints $`\Lambda_{\mathrm{eff}}\sim\tau^{-1/2}`$.
 
-The crucial change from the earlier dictionary papers is that the kernel is no longer freely chosen. The corrected propagator is dictated by the canonical fixed-point filter.
+The crucial unresolved step is to remove the word “declared”: the corrected propagator must be emitted by a selected source theorem rather than chosen for its ultraviolet behavior.
 
 # Conclusion
 
-The delta-projection program required a transition from interpretation to execution. The canonical coherent-kernel paper supplied the missing kernel-selection theorem. This paper applied that theorem to propagators.
+The delta-projection program requires a transition from interpretation to execution. The canonical coherent-kernel paper supplies a conditional functional-calculus construction. This paper evaluates its external Gaussian benchmark, without claiming the missing physical source theorem.
 
-In a flat coherent chart, MTT fixed-point data select the corrected propagator
+In a flat Euclidean chart, the declared filter gives
 ``` math
 \widehat{\Delta_\tau}(k)
         =
         \frac{e^{-\tau |k|^2}}{|k|^2+m^2}.
 ```
-This propagator recovers the ordinary local propagator as $`\tau\downarrow0`$, has finite coincident value for every finite dimension when $`\tau>0`$, and gives all-graph Euclidean UV domination for scalar perturbation theory when every internal line carries the canonical filter.
+This propagator recovers the ordinary local propagator as $`\tau\downarrow0`$, has finite coincident value in every finite dimension when $`\tau>0`$, and gives all-graph Euclidean ultraviolet domination for scalar perturbation theory when every internal line carries the declared filter.
 
-The result does not yet derive the numerical value of $`\tau`$ from the full MTT carrier. It does something more basic and necessary: it shows that once an MTT fixed-point sector supplies $`\tau`$ and the operator data, the finite correction is specific. Existing high-energy data can then be translated into bounds on $`\sqrt{\tau}`$, as illustrated above.
+The result neither derives $`\tau`$ nor proves that an MTT fixed-point sector supplies this external momentum filter. It shows what follows if it does. Existing high-energy data can be translated into bounds on $`\sqrt{\tau}`$ only under that same physical identification.
 
-``` math
-\boxed{
-        \text{MTT does not merely soften deltas; it selects the propagator correction.}
-        }
-```
+<div class="center">
+
+</div>
 
 <div class="thebibliography">
 

@@ -11,18 +11,18 @@ Canonical papers audited: **140**.
 | Priority | Papers |
 | --- | ---: |
 | critical | 10 |
-| major | 12 |
-| moderate | 9 |
-| light | 18 |
+| major | 11 |
+| moderate | 7 |
+| light | 16 |
 | low | 2 |
-| reviewed | 87 |
+| reviewed | 92 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 44 |
+| argument_flow | 43 |
 | conclusion | 16 |
 | concrete_foothold | 43 |
 | limitations | 1 |
@@ -52,7 +52,6 @@ Canonical papers audited: **140**.
 | major | major | `modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83` | 10 | 210.3 | 6/7 | object_intuition |
 | major | major | `particles-and-forces-as-coherence-basins-and-capacity-gradients` | 10 | 124.0 | 5/7 | object_intuition, concrete_foothold |
 | major | major | `computational-irreducibility-from-projection-undecidabi-6cc6aafd` | 9 | 190.1 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
-| major | major | `mtt-corrected-contact-loops-and-finite-one-loop-tadpole-cdd66d8e` | 9 | 106.4 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | major | major | `cosmology-as-global-coherence-capacity-evolution` | 8 | 134.6 | 5/7 | object_intuition, concrete_foothold |
 | major | major | `modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d` | 8 | 192.0 | 3/7 | object_intuition, argument_flow, result_interpretation, conclusion |
 | major | major | `modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927` | 5 | 354.2 | 2/7 | object_intuition, argument_flow, result_interpretation, limitations, conclusion |
@@ -60,20 +59,16 @@ Canonical papers audited: **140**.
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | moderate | moderate | `coherent-sector-universality-and-controlled-truncation-0ccddc56` | 7 | 148.6 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | moderate | moderate | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 7 | 311.9 | 4/7 | object_intuition, argument_flow, concrete_foothold |
-| moderate | moderate | `mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f` | 7 | 256.3 | 6/7 | object_intuition |
 | moderate | moderate | `deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3` | 6 | 240.5 | 5/7 | object_intuition, result_interpretation |
-| moderate | moderate | `momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685` | 5 | 271.6 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | moderate | moderate | `universality-and-robustness-of-the-coherent-sector-in-m-a64842b3` | 4 | 333.5 | 3/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold |
 | moderate | moderate | `modal-triplet-theory-from-mtt-to-string-theory-a-first-4b1100fc` | 2 | 339.5 | 3/7 | object_intuition, argument_flow, result_interpretation, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-quantum-mechanics` | 14 | 459.6 | 6/7 | object_intuition |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
 | light | light | `modal-triplet-theory-from-mtt-to-pilot-wave-dynamics` | 6 | 400.2 | 5/7 | object_intuition, concrete_foothold |
-| light | light | `contact-interactions-and-renormalization-as-over-sharp-c2cfaa22` | 4 | 434.5 | 6/7 | object_intuition |
 | light | light | `flux-compactifications-in-heterotic-string-theory-expli-08b38155` | 4 | 984.2 | 5/7 | object_intuition, argument_flow |
 | light | light | `spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5` | 4 | 447.2 | 5/7 | object_intuition, concrete_foothold |
 | light | light | `why-general-relativity-and-string-theory-are-the-same-a-98920533` | 4 | 927.2 | 5/7 | object_intuition, conclusion |
 | light | light | `effective-field-theory-as-a-shadow-of-projection-admiss-ec123406` | 3 | 1040.3 | 4/7 | object_intuition, argument_flow, concrete_foothold |
-| light | light | `finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c` | 1 | 1636.0 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | light | light | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 1 | 7592.0 | 6/7 | object_intuition |
 | light | light | `path-integral-constraints-as-finite-admissibility-filte-47c01009` | 1 | 1522.0 | 5/7 | object_intuition, argument_flow |
 | light | light | `capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90` | 0 | 7920.0 | 5/7 | object_intuition, concrete_foothold |
@@ -117,6 +112,7 @@ Canonical papers audited: **140**.
 | reviewed | moderate | `gauge-fixing-as-admissible-section-selection-in-modal-t-459e029d` | 9 | 253.9 | 5/7 | object_intuition, argument_flow |
 | reviewed | major | `lorentzian-base-compatibility-and-signature-stability-i-6ac3fbb9` | 9 | 134.2 | 4/7 | orientation, object_intuition, concrete_foothold |
 | reviewed | major | `modal-fixed-points-bell-s-beables-and-the-limits-of-fac-59a69f5c` | 9 | 129.4 | 7/7 | - |
+| reviewed | major | `mtt-corrected-contact-loops-and-finite-one-loop-tadpole-cdd66d8e` | 9 | 123.2 | 5/7 | object_intuition, concrete_foothold |
 | reviewed | moderate | `the-proto-spinor-conditional-spinorial-closure-and-the-973217d8` | 9 | 316.7 | 6/7 | object_intuition |
 | reviewed | moderate | `why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2` | 9 | 274.4 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `dirac-delta-functions-as-singular-shadows-of-admissible-6e0ddf3f` | 8 | 330.2 | 6/7 | orientation |
@@ -125,6 +121,7 @@ Canonical papers audited: **140**.
 | reviewed | moderate | `entanglement-locality-and-measurement-from-coherent-sec-110e8cbe` | 7 | 379.0 | 6/7 | object_intuition |
 | reviewed | moderate | `finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb` | 7 | 269.3 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | moderate | `measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e` | 7 | 334.3 | 4/7 | orientation, argument_flow, result_interpretation |
+| reviewed | moderate | `mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f` | 7 | 253.0 | 6/7 | object_intuition |
 | reviewed | moderate | `temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb` | 7 | 350.7 | 7/7 | - |
 | reviewed | low | `theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643` | 7 | 514.3 | 7/7 | - |
 | reviewed | moderate | `deterministic-projection-diffusive-limits-and-knee-like-a0b81ad7` | 6 | 263.0 | 6/7 | object_intuition |
@@ -142,7 +139,9 @@ Canonical papers audited: **140**.
 | reviewed | moderate | `determinism-without-superdeterminism-projection-induced-0e405923` | 5 | 395.6 | 5/7 | orientation, object_intuition |
 | reviewed | light | `inflationary-measures-and-the-born-rule-as-a-single-sha-388b32c2` | 5 | 438.4 | 6/7 | orientation |
 | reviewed | light | `measurement-effects-as-finite-survivor-basin-kernels-pr-eb7737ce` | 5 | 404.2 | 5/7 | orientation, object_intuition |
+| reviewed | moderate | `momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685` | 5 | 311.6 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | reviewed | low | `constructive-mtt-quantum-gravity-iii-infrared-limit-asy-6f8b88d9` | 4 | 621.0 | 7/7 | - |
+| reviewed | light | `contact-interactions-and-renormalization-as-over-sharp-c2cfaa22` | 4 | 485.0 | 6/7 | object_intuition |
 | reviewed | moderate | `geometry-light-relations-in-modal-triplet-theory-exact-1a5eeb7e` | 4 | 378.5 | 3/7 | orientation, object_intuition, argument_flow, concrete_foothold |
 | reviewed | light | `modal-triplet-theory-from-mtt-to-loop-quantum-gravity-a-4ae4b130` | 4 | 495.0 | 5/7 | object_intuition, concrete_foothold |
 | reviewed | moderate | `causal-sets-as-an-effective-limit-of-modal-triplet-theory` | 3 | 379.7 | 4/7 | orientation, object_intuition, argument_flow |
@@ -157,6 +156,7 @@ Canonical papers audited: **140**.
 | reviewed | low | `the-modal-triplet-theory-program-d2-matter-antimatter-a-ba5f86ec` | 2 | 1352.0 | 7/7 | - |
 | reviewed | low | `theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca` | 2 | 1077.5 | 7/7 | - |
 | reviewed | light | `why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872` | 2 | 970.5 | 4/7 | orientation, object_intuition, concrete_foothold |
+| reviewed | light | `finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c` | 1 | 1785.0 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | reviewed | light | `modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba` | 1 | 2149.0 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | light | `superset-determinations-in-modal-triplet-theory-paramet-87399967` | 1 | 1958.0 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | reviewed | low | `theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c` | 1 | 1593.0 | 7/7 | - |

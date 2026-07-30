@@ -1,27 +1,54 @@
 {
-  "abstract": "The preceding delta-projection papers established a structural dictionary: many Dirac delta functions in physics are sharp limits of finite kernels, filters, shells, windows, or survivor-basin effects. The remaining execution-level problem is to determine which finite kernel is selected by Modal Triplet Theory (MTT), rather than introducing an arbitrary regulator. Building on the canonical coherent-kernel construction from fixed-point data, this paper studies the first concrete dynamical application: propagators. In a flat coherent chart, with positive quadratic operator L_m=-\\Delta+m^2 and MTT proper-time scale \\tau>0, the canonical corrected Euclidean propagator is \\Delta_\\tau(k)=\\frac{e^{-\\tau |k|^2}}{|k|^2+m^2}. More generally, with a coherent spectral window B(A)=P\\chi(A)e^{-\\tau A/2}\\chi(A)P, the corrected covariance is \\Delta_{\\mathrm{MTT}} = B(A)L_m^{-1}B(A)^\\ast . We prove that \\Delta_\\tau recovers the ordinary propagator distributionally as \\tau\\downarrow0, has finite coincident value in every finite dimension for \\tau>0, and yields Gaussian UV domination. For scalar polynomial perturbation theory in a fixed coherent sector, every Euclidean Feynman integral whose internal lines carry the canonical Gaussian filter is absolutely UV finite. The leading low-momentum correction is controlled by \\tau |k|^2, giving an effective coherence scale \\Lambda_{\\mathrm{eff}}\\sim\\tau^{-1/2}. These results do not yet fix the numerical value of \\tau in a physical sector; rather, they show that once fixed-point operator data determine \\tau, the propagator correction is no longer arbitrary.",
+  "abstract": "This paper studies Euclidean propagators obtained after declaring an external Gaussian momentum filter. On a single declared operator domain, functional calculus defines a unique compressed covariance. We prove distributional recovery of the ordinary propagator as the filter width tends to zero, finite coincidence values at positive width, and Gaussian ultraviolet domination. Every scalar Euclidean graph whose internal lines are explicitly assigned this filter is absolutely ultraviolet finite under the stated quadratic-control hypothesis. This is a conditional model theorem, not a source theorem: an internal MTT gap does not select external momentum damping without an internal-to-external intertwiner. Reflection positivity, gauge invariance, causal support, and Lorentzian unitarity remain independent requirements.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "unversioned",
-  "date": "April 2026",
-  "latest_zenodo_release": null,
-  "main_tex_sha256": "aff77e161625b15a2897b6e4b328ee00419d0b5db290c40d9aa1cb189c811eac",
+  "current_version": "v1",
+  "date": "July 2026, Version 1",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.21704282",
+    "created": "2026-07-30T13:27:51.619589+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.21704283",
+    "files": [
+      {
+        "checksum": "md5:cb17adf67ee0a406961e812f74a1508b",
+        "content_url": "https://zenodo.org/api/records/21704283/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 406995
+      }
+    ],
+    "id": "21704283",
+    "match_kind": "published_draft_reconciliation",
+    "match_score": 1.0,
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21704283",
+    "resource_type": "publication",
+    "title": "Gaussian-Filtered Euclidean Propagators and UV Behaviour Exact Domination under a Declared External Filter",
+    "updated": "2026-07-30T13:27:51.902184+00:00",
+    "version": "v1"
+  },
+  "main_tex_sha256": "2cf4c81a9b0eb44e790d78341da388cefe671123e268e77279f6b086665b8581",
   "paper_id": "mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f",
-  "paper_md_sha256": "dfc7a70dea08c706226e5610d614d69efca48c77a8cc537f626c4b943317df9e",
-  "release_state": "not_matched_to_zenodo",
+  "paper_md_sha256": "5572a77f9f3073f4de3f4f689b147976bcf2c9134dd1a52052ce659ae0431bec",
+  "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "9c777226ab4548e5157bf312d68a2ff87e762eab0103f40d0cbfb0e126ff1bbf",
+    "selected_revision": true,
+    "superseded_source_path": "5 Dirac Delta/_work/MTT_Corrected_Propagators_and_UV_Behaviour"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 26759,
+      "bytes": 26859,
       "path": "main.tex",
-      "sha256": "aff77e161625b15a2897b6e4b328ee00419d0b5db290c40d9aa1cb189c811eac"
+      "sha256": "2cf4c81a9b0eb44e790d78341da388cefe671123e268e77279f6b086665b8581"
     },
     {
       "bytes": 19185,
@@ -42,8 +69,34 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/MTT_Corrected_Propagators_and_UV_Behaviour"
   },
-  "source_tree_sha256": "52cecac1286913f48257485ed0db23acab4a41324df25732a0d161246cd19f6a",
-  "title": "MTT-Corrected Propagators and UV Behaviour Canonical Coherent Filtering from Fixed-Point Data",
-  "version_relation": "unknown",
-  "zenodo_releases": []
+  "source_tree_sha256": "27bba804fd9a60fc65cd88ecb6b57e04f5d458f90faefc103b12112c1d5b9c99",
+  "title": "Gaussian-Filtered Euclidean Propagators and UV Behaviour Exact Domination under a Declared External Filter",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.21704282",
+      "created": "2026-07-30T13:27:51.619589+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704283",
+      "files": [
+        {
+          "checksum": "md5:cb17adf67ee0a406961e812f74a1508b",
+          "content_url": "https://zenodo.org/api/records/21704283/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 406995
+        }
+      ],
+      "id": "21704283",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704283",
+      "resource_type": "publication",
+      "title": "Gaussian-Filtered Euclidean Propagators and UV Behaviour Exact Domination under a Declared External Filter",
+      "updated": "2026-07-30T13:27:51.902184+00:00",
+      "version": "v1"
+    }
+  ]
 }

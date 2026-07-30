@@ -1,27 +1,54 @@
 {
-  "abstract": "Momentum-conservation Dirac deltas are among the most familiar distributions in quantum field theory. At an ideal translation-invariant vertex one obtains (2\\pi)^d\\delta^{(d)}\\!\\left(\\sum_i p_i\\right), which enforces exact closure of the incoming and outgoing momentum ledger. This paper continues the program in which Dirac deltas are read as singular shadows of admissible projection. Here the relevant projection is not primarily point-source localization, gauge-slice selection, or measurement collapse, but bookkeeping closure: the enforcement of exact conservation after interaction support has been idealized as infinite, homogeneous, and perfectly translation invariant. We prove the elementary but structurally decisive result that the exact conservation delta is the distributional limit of finite interaction-window Fourier kernels. If an interaction is supported by a spacetime window w_R(x), its vertex factor contains \\widehat w_R(q), where q=\\sum_i p_i is the bookkeeping mismatch. Under standard approximate-identity hypotheses, \\widehat w_R(q)\\to (2\\pi)^d\\delta(q). Thus exact conservation is recovered as the infinite-support, zero-mismatch-width limit. For Gaussian windows this yields an explicit finite-width conservation kernel; for box windows it yields sinc/Dirichlet-type kernels. The MTT interpretation is that momentum-conservation deltas are the circle-sector analogue of the same projection pattern studied in the earlier papers: exact deltas arise when finite admissible bookkeeping kernels are collapsed to sharp constraints. Gauge fixing expressed lens-redundancy selection; measurement expressed nil-survivor selection; momentum conservation expresses circle bookkeeping closure. The result is not a denial of conservation laws, but a clarification of their delta notation: exact conservation deltas are idealized distributional limits of finite coherent bookkeeping support.",
+  "abstract": "This paper proves that exact momentum-conservation deltas are distributional limits of finite interaction-window Fourier kernels. Gaussian windows give explicit finite-width kernels, while box and finite-time windows yield sinc or Dirichlet-type forms. The physical authority for exact vertex conservation is the Ward-Noether consequence of exact translation symmetry, and the exact delta must be preserved when that symmetry holds. Finite windows instead describe switching, finite volume or time, detector resolution, or an explicitly non-translation-invariant effective interaction; they are not a universal MTT softening of conservation. The circle-sector bookkeeping interpretation is conditional on a selected MTT source for the relevant finite window.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "unversioned",
-  "date": "April 2026",
-  "latest_zenodo_release": null,
-  "main_tex_sha256": "39e2be437d595dcdd5e3feffda6e8f615b62adc4446b4df3cef8bee00389b2a6",
+  "current_version": "v1",
+  "date": "July 2026, Version 1",
+  "latest_zenodo_release": {
+    "concept_doi": "10.5281/zenodo.21704387",
+    "created": "2026-07-30T13:27:54.728846+00:00",
+    "creators": [
+      "Nero, Peter"
+    ],
+    "doi": "10.5281/zenodo.21704388",
+    "files": [
+      {
+        "checksum": "md5:7aafb14d0e814a662a98ef9b4bb51009",
+        "content_url": "https://zenodo.org/api/records/21704388/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 361550
+      }
+    ],
+    "id": "21704388",
+    "match_kind": "published_draft_reconciliation",
+    "match_score": 1.0,
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21704388",
+    "resource_type": "publication",
+    "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward\u2013Noether Closure and the MTT Bookkeeping Boundary",
+    "updated": "2026-07-30T13:27:55.100890+00:00",
+    "version": "v1"
+  },
+  "main_tex_sha256": "8deb7d58e0fcc3ab993a79c88b92bbafcf253227b582a26d653d8ea25634c0df",
   "paper_id": "momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685",
-  "paper_md_sha256": "10c334dcafee63fd243c5d699b430b93db2666990840973fab5d994cd6eb590f",
-  "release_state": "not_matched_to_zenodo",
+  "paper_md_sha256": "684c1c7d5962adf5e1420320d499e4a1321b66045d89a6291e0bf586a0e9d73e",
+  "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "47961e055e5c02db3a4ce318aeeae174473e3a9326b2e678b1f783d8074b18c2",
+    "selected_revision": true,
+    "superseded_source_path": "5 Dirac Delta/_work/Momentum_Conservation_Deltas_and_Bookkeeping_Closure_Exact_Vertex_Conservation"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 17350,
+      "bytes": 19445,
       "path": "main.tex",
-      "sha256": "39e2be437d595dcdd5e3feffda6e8f615b62adc4446b4df3cef8bee00389b2a6"
+      "sha256": "8deb7d58e0fcc3ab993a79c88b92bbafcf253227b582a26d653d8ea25634c0df"
     },
     {
       "bytes": 17350,
@@ -37,8 +64,34 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Momentum_Conservation_Deltas_and_Bookkeeping_Closure_Exact_Vertex_Conservation"
   },
-  "source_tree_sha256": "1380d4aa89d57258e637a6c5f3de13aa8cb26c8ae354ece0be1824c560dacd93",
-  "title": "Momentum Conservation Deltas and Bookkeeping Closure Exact Vertex Conservation as the Singular Limit of Finite Admissible Interaction Support",
-  "version_relation": "unknown",
-  "zenodo_releases": []
+  "source_tree_sha256": "0e4e88dfc5b8f1368116ce0ea63c68871df0967a5f1eae5afbda08321d57c7f4",
+  "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward\u2013Noether Closure and the MTT Bookkeeping Boundary",
+  "version_relation": "matches_latest_release",
+  "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.21704387",
+      "created": "2026-07-30T13:27:54.728846+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21704388",
+      "files": [
+        {
+          "checksum": "md5:7aafb14d0e814a662a98ef9b4bb51009",
+          "content_url": "https://zenodo.org/api/records/21704388/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 361550
+        }
+      ],
+      "id": "21704388",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21704388",
+      "resource_type": "publication",
+      "title": "Momentum-Conservation Deltas from Translation Symmetry and Finite Windows Exact Ward\u2013Noether Closure and the MTT Bookkeeping Boundary",
+      "updated": "2026-07-30T13:27:55.100890+00:00",
+      "version": "v1"
+    }
+  ]
 }

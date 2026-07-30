@@ -1,0 +1,40 @@
+{
+  "failed": 4,
+  "failures": [
+    {
+      "error": "contact-interactions-and-renormalization-as-over-sharp-c2cfaa22: no external references could be extracted",
+      "paper_id": "contact-interactions-and-renormalization-as-over-sharp-c2cfaa22"
+    },
+    {
+      "error": "finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c: no external references could be extracted",
+      "paper_id": "finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c"
+    },
+    {
+      "error": "momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685: no external references could be extracted",
+      "paper_id": "momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685"
+    },
+    {
+      "error": "mtt-corrected-contact-loops-and-finite-one-loop-tadpole-cdd66d8e: no external references could be extracted",
+      "paper_id": "mtt-corrected-contact-loops-and-finite-one-loop-tadpole-cdd66d8e"
+    }
+  ],
+  "generated_at": "2026-07-30T13:20:57+00:00",
+  "mode": "sync",
+  "papers": 5,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21704283",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "cb17adf67ee0a406961e812f74a1508b",
+      "local_pdf_sha256": "bcada12a5e1659d278a56680b1f191a9faea55a84f0bbd36529cee3458ee12fa",
+      "paper_id": "mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "strategy": "create_new_draft",
+      "version": "v1"
+    }
+  ]
+}
