@@ -13,9 +13,9 @@ Canonical papers audited: **139**.
 | critical | 6 |
 | major | 6 |
 | moderate | 2 |
-| light | 7 |
+| light | 6 |
 | low | 1 |
-| reviewed | 115 |
+| reviewed | 116 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -24,9 +24,9 @@ Canonical papers audited: **139**.
 | --- | ---: |
 | argument_flow | 34 |
 | conclusion | 10 |
-| concrete_foothold | 34 |
+| concrete_foothold | 33 |
 | object_intuition | 87 |
-| orientation | 50 |
+| orientation | 51 |
 | result_interpretation | 10 |
 
 ## Revision Queue
@@ -49,7 +49,6 @@ Canonical papers audited: **139**.
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
 | light | light | `why-general-relativity-and-string-theory-are-the-same-a-98920533` | 4 | 927.2 | 5/7 | object_intuition, conclusion |
-| light | light | `effective-field-theory-as-a-shadow-of-projection-admiss-ec123406` | 3 | 1040.3 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | light | light | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 1 | 7592.0 | 6/7 | object_intuition |
 | light | light | `modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8` | 0 | 9868.0 | 6/7 | object_intuition |
 | light | light | `modal-triplet-theory-parameters-closure-and-structural-ae734bf0` | 0 | 4982.0 | 5/7 | object_intuition, concrete_foothold |
@@ -102,6 +101,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90` | 8 | 349.8 | 7/7 | - |
 | reviewed | major | `deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3` | 8 | 205.4 | 5/7 | object_intuition, result_interpretation |
 | reviewed | moderate | `dirac-delta-functions-as-singular-shadows-of-admissible-6e0ddf3f` | 8 | 330.2 | 6/7 | orientation |
+| reviewed | moderate | `effective-field-theory-as-a-shadow-of-projection-admiss-ec123406` | 8 | 370.9 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | major | `fixed-points-iii-disturbance-damping-balance-and-stability` | 8 | 222.2 | 7/7 | - |
 | reviewed | light | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 8 | 408.0 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014` | 7 | 251.7 | 7/7 | - |

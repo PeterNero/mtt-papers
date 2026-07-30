@@ -4,19 +4,19 @@
   "papers": 139,
   "priority_counts": {
     "critical": 6,
-    "light": 7,
+    "light": 6,
     "low": 1,
     "major": 6,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 115
+    "reviewed": 116
   },
   "missing_dimension_counts": {
     "argument_flow": 34,
     "conclusion": 10,
-    "concrete_foothold": 34,
+    "concrete_foothold": 33,
     "object_intuition": 87,
-    "orientation": 50,
+    "orientation": 51,
     "result_interpretation": 10
   },
   "forbidden_boilerplate_hits": [],
@@ -910,29 +910,29 @@
     },
     {
       "paper_id": "effective-field-theory-as-a-shadow-of-projection-admiss-ec123406",
-      "title": "Effective Field Theory as a Shadow of Projection\u2013Admissible Dynamics Wilsonian Renormalization under Finite Admissibility",
-      "total_words": 3198,
-      "narrative_words": 3121,
-      "formal_results": 3,
-      "proofs": 0,
-      "narrative_words_per_result": 1040.3,
-      "orientation": true,
+      "title": "Wilsonian Coarse-Graining and Projection-Admissible Description: Inverse Maps, RG Flow, Universality, and Model-Specific Validity in Modal Triplet Theory",
+      "total_words": 3693,
+      "narrative_words": 2967,
+      "formal_results": 8,
+      "proofs": 6,
+      "narrative_words_per_result": 370.9,
+      "orientation": false,
       "object_intuition": false,
       "argument_flow": false,
       "result_interpretation": true,
-      "concrete_foothold": false,
+      "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
       "coverage_dimensions": 4,
-      "audit_priority": "light",
-      "heuristic_priority": "light",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "audit_priority": "reviewed",
+      "heuristic_priority": "moderate",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 2 withdraws the claim that projection alone makes Wilsonian EFT, RG flow, universality, fixed points, and cutoff breakdown inevitable. It separates exact mode integration, finite truncation, representative sections, exact decoders, and locally reversible coupling ODEs; gives an exact Gaussian elimination example; proves a noninjective semigroup obstruction, a finite counterexample to generic universality, a contraction criterion, local validity-margin stability, and an approximate MTT-Wilsonian observable-transfer bound; distinguishes six scale roles and seven breakdown meanings; imports current theorem ownership without duplication; keeps the physical MTT bridge explicitly model-dependent; and the complete 12-page PDF was visually inspected.",
       "missing_dimensions": [
+        "orientation",
         "object_intuition",
-        "argument_flow",
-        "concrete_foothold"
+        "argument_flow"
       ]
     },
     {

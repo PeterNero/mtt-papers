@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18262360",
+      "created": "2026-07-30T23:01:37.531027+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21711197",
+      "files": [
+        {
+          "checksum": "md5:31bbc47f23889417f1e3287718b6e1ba",
+          "content_url": "https://zenodo.org/api/records/21711197/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 342269
+        }
+      ],
+      "id": "21711197",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21711197",
+      "resource_type": "publication",
+      "title": "Wilsonian Coarse-Graining and Projection-Admissible Description: Inverse Maps, RG Flow, Universality, and Model-Specific Validity in Modal Triplet Theory",
+      "updated": "2026-07-30T23:01:37.838181+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18255388",
       "created": "2026-07-30T22:32:37.584848+00:00",
       "creators": [

@@ -1,6 +1,14 @@
 {
   "schema": "mtt.expository-review-decisions.v1",
   "papers": {
+    "effective-field-theory-as-a-shadow-of-projection-admiss-ec123406": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 withdraws the claim that projection alone makes Wilsonian EFT, RG flow, universality, fixed points, and cutoff breakdown inevitable. It separates exact mode integration, finite truncation, representative sections, exact decoders, and locally reversible coupling ODEs; gives an exact Gaussian elimination example; proves a noninjective semigroup obstruction, a finite counterexample to generic universality, a contraction criterion, local validity-margin stability, and an approximate MTT-Wilsonian observable-transfer bound; distinguishes six scale roles and seven breakdown meanings; imports current theorem ownership without duplication; keeps the physical MTT bridge explicitly model-dependent; and the complete 12-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "fd382717b5422739071d0562322aabe7367081044798010496fe09519b6b79ed",
+      "reviewed_pdf_sha256": "2878f2b6dc4b53c8b1f438c8e4d1a46554152aa7280e0cad25eb8a41d02084ba",
+      "reviewed_source_tree_sha256": "a4f8e46689e10b107f6ce5a133a18c4acfe2abaa707e88db8fe3807fd26ff8b2"
+    },
     "modal-triplet-theory-from-mtt-to-kaluza-klein-theory": {
       "status": "reviewed",
       "reviewed_on": "2026-07-30",

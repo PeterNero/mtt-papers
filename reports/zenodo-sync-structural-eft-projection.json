@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T23:01:14+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21711197",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "31bbc47f23889417f1e3287718b6e1ba",
+      "local_pdf_sha256": "2878f2b6dc4b53c8b1f438c8e4d1a46554152aa7280e0cad25eb8a41d02084ba",
+      "paper_id": "effective-field-theory-as-a-shadow-of-projection-admiss-ec123406",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    }
+  ]
+}

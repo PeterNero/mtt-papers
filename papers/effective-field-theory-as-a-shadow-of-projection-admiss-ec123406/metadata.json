@@ -1,65 +1,97 @@
 {
-  "abstract": "Wilsonian effective field theory (EFT) is among the most successful frameworks in modern physics, yet its conceptual status remains ambiguous. EFT is explicitly non-fundamental, non-invertible, and valid only within restricted regimes. Renormalization group (RG) flow is irreversible, universality is ubiquitous, and breakdown at strong coupling or high curvature is expected rather than anomalous. In this paper we show that these features are not contingent properties of quantum field theories, but structural consequences of projection under finite admissibility. Building on the Projection\u2013Admissibility Principle, we identify Wilsonian coarse-graining as a noninjective projection from underlying dynamics to an effective description. The cutoff is interpreted as an admissibility boundary, RG flow as induced effective evolution, and universality as equivalence under projection. No new dynamics or ultraviolet completion is proposed. Instead, EFT is shown to be the inevitable form of any stable, finite, predictive description. We further clarify how Modal Triplet Theory (MTT) provides an explicit realization in which EFT arises as a shadow of coherent-sector projection.",
+  "abstract": "Wilsonian effective field theory combines several operations that are often described by the single word renormalization: exact integration of unresolved modes, truncation to a finite operator basis, matching of couplings, and evolution of coordinates with scale. Those operations have different domains and different notions of reversibility. This paper replaces an earlier global identification with a typed structural comparison. A noninjective coarse-graining map has no exact decoder for the actual ultraviolet input, but it may have many right sections selecting representative ultraviolet completions. At the same time, a beta-function ordinary differential equation can be locally invertible wherever its vector field has a unique two-sided flow. These facts are compatible because coupling-space evolution does not restore eliminated microscopic data. We prove that noninjectivity alone does not imply universality, while a declared contraction on an invariant basin does. We separate regulator, matching, threshold, renormalization, and breakdown scales, and define an observable-specific EFT validity certificate with a quantitative stability margin. Its zero-margin surface is an admissibility boundary for that certificate, not automatically a universal physical cutoff. Finally, an approximate intertwining theorem gives the precise data required to identify a selected Modal Triplet Theory (MTT) descent with a Wilsonian reduction: a same-source commuting diagram, observable map, truncation error, and provenance-controlled scale correspondence. Current MTT provides typed projection and local Feshbach\u2013resolvent control for selected operator problems, but it does not yet supply this certificate for arbitrary quantum field theories. The result is therefore a rigorous structural interpretation and a completion contract, not a derivation of every EFT or a new ultraviolet completion.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v2",
+  "date": "Version 2, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262360",
-    "created": "2026-01-15T21:28:54.252138+00:00",
+    "created": "2026-07-30T23:01:37.531027+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18262361",
+    "doi": "10.5281/zenodo.21711197",
     "files": [
       {
-        "checksum": "md5:af88c529a0c892b06d5acdf53b493e7f",
-        "content_url": "https://zenodo.org/api/records/18262361/files/Effective_Field_Theory_as_a_Shadow_of_Projection__Admissible_Dynamics%20(1).pdf/content",
-        "key": "Effective_Field_Theory_as_a_Shadow_of_Projection__Admissible_Dynamics (1).pdf",
-        "size": 352404
+        "checksum": "md5:31bbc47f23889417f1e3287718b6e1ba",
+        "content_url": "https://zenodo.org/api/records/21711197/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 342269
       }
     ],
-    "id": "18262361",
-    "match_kind": "title_or_file",
+    "id": "21711197",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18262361",
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21711197",
     "resource_type": "publication",
-    "title": "Effective Field Theory as a Shadow of Projection\u2013Admissible Dynamics",
-    "updated": "2026-01-15T21:28:54.799599+00:00",
-    "version": "v1.0"
+    "title": "Wilsonian Coarse-Graining and Projection-Admissible Description: Inverse Maps, RG Flow, Universality, and Model-Specific Validity in Modal Triplet Theory",
+    "updated": "2026-07-30T23:01:37.838181+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "4619592e65fc5a313a969fabd58274081324f2c979223f83e4071094acdae314",
+  "main_tex_sha256": "fd382717b5422739071d0562322aabe7367081044798010496fe09519b6b79ed",
   "paper_id": "effective-field-theory-as-a-shadow-of-projection-admiss-ec123406",
-  "paper_md_sha256": "c6ec8694cf1db833f3db94488f23b1c192d59d73b6575da4f57fc19bd8b077b5",
+  "paper_md_sha256": "6cbd761db2443d2e41d27565774199ad026ee403404255b5bd53574495245eee",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/effective-field-theory-as-a-shadow-of-projection-admiss-ec123406/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "746bb1d40cfbfb21d3cd64e12c84cfcc665e6da20ab777fa9def43dfbb5c71d6",
+    "selected_revision": true
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 25629,
+      "bytes": 31160,
       "path": "main.tex",
-      "sha256": "4619592e65fc5a313a969fabd58274081324f2c979223f83e4071094acdae314"
+      "sha256": "fd382717b5422739071d0562322aabe7367081044798010496fe09519b6b79ed"
     },
     {
-      "bytes": 3784,
-      "path": "series.sty",
-      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+      "bytes": 4800,
+      "path": "main.bib",
+      "sha256": "ee15c8af3cbb29535e16e760e6a027b38b2531f9d50682458c999ccb434b52ee"
+    },
+    {
+      "bytes": 342269,
+      "path": "main.pdf",
+      "sha256": "2878f2b6dc4b53c8b1f438c8e4d1a46554152aa7280e0cad25eb8a41d02084ba"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "15 Discrete & Spectral & Operator Geometric Theories/_work/Effective_Field_Theory_as_a_Shadow_of_Projection__Admissible_Dynamics"
   },
-  "source_tree_sha256": "49bde456040740c6ab4325897f4e52c70d3ac433743b40647c279499b7768429",
-  "title": "Effective Field Theory as a Shadow of Projection\u2013Admissible Dynamics Wilsonian Renormalization under Finite Admissibility",
+  "source_tree_sha256": "a4f8e46689e10b107f6ce5a133a18c4acfe2abaa707e88db8fe3807fd26ff8b2",
+  "title": "Wilsonian Coarse-Graining and Projection-Admissible Description: Inverse Maps, RG Flow, Universality, and Model-Specific Validity in Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18262360",
+      "created": "2026-07-30T23:01:37.531027+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21711197",
+      "files": [
+        {
+          "checksum": "md5:31bbc47f23889417f1e3287718b6e1ba",
+          "content_url": "https://zenodo.org/api/records/21711197/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 342269
+        }
+      ],
+      "id": "21711197",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21711197",
+      "resource_type": "publication",
+      "title": "Wilsonian Coarse-Graining and Projection-Admissible Description: Inverse Maps, RG Flow, Universality, and Model-Specific Validity in Modal Triplet Theory",
+      "updated": "2026-07-30T23:01:37.838181+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18262360",
       "created": "2026-01-15T21:28:54.252138+00:00",
