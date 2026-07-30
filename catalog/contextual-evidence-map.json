@@ -199,6 +199,11 @@
       "result_set": "heterotic4",
       "scope": "The exact q79 arithmetic, finite rank-two Cech witness, and rank-two Wiener-contraction certificate are contextual evidence for adjacent non-Kahler heterotic work. They do not directly prove a strict Calabi-Yau topology, metric, stable visible-hidden bundle pair, MTT-to-CY source map, worldsheet completion, or stabilized four-dimensional vacuum."
     },
+    "modal-triplet-theory-from-mtt-to-string-theory-a-first-4b1100fc": {
+      "direct_result_ids": [],
+      "result_set": "heterotic4",
+      "scope": "The exact q79 arithmetic, finite rank-two Cech witness, and rank-two Wiener-contraction certificate are contextual evidence for the selected heterotic branch. They do not directly construct the physical non-pullback visible-hidden bundle, exact infrared (0,2) SCFT, analytic modular/GSO characters, quantum BV packet, tadpole prescription, all-genus completion, or the typed MTT-to-worldsheet evaluation factorization."
+    },
     "a-third-corner-shadow-bridge-asymptotic-safety-the-stri-37bbd5a2": {
       "direct_result_ids": [],
       "result_set": "open1",

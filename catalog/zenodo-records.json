@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.17068114",
+      "created": "2026-07-30T17:31:22.886945+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21708018",
+      "files": [
+        {
+          "checksum": "md5:e89246d609ed59ff48c814e3258ce994",
+          "content_url": "https://zenodo.org/api/records/21708018/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 440975
+        }
+      ],
+      "id": "21708018",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21708018",
+      "resource_type": "publication",
+      "title": "Modal Triplet Theory and Perturbative String Theory: A Conditional Encoding Contract and the q=79 Worldsheet Boundary",
+      "updated": "2026-07-30T17:31:23.222674+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.17071246",
       "created": "2026-07-30T17:09:53.276001+00:00",
       "creators": [

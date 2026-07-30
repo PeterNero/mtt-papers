@@ -12,22 +12,22 @@ Canonical papers audited: **139**.
 | --- | ---: |
 | critical | 10 |
 | major | 8 |
-| moderate | 6 |
+| moderate | 5 |
 | light | 12 |
 | low | 1 |
-| reviewed | 100 |
+| reviewed | 101 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 41 |
-| conclusion | 14 |
+| argument_flow | 40 |
+| conclusion | 13 |
 | concrete_foothold | 44 |
 | object_intuition | 92 |
-| orientation | 39 |
-| result_interpretation | 14 |
+| orientation | 40 |
+| result_interpretation | 13 |
 
 ## Revision Queue
 
@@ -55,7 +55,6 @@ Canonical papers audited: **139**.
 | moderate | moderate | `coherent-sector-universality-and-controlled-truncation-0ccddc56` | 7 | 148.6 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | moderate | moderate | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 7 | 311.9 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | moderate | moderate | `universality-and-robustness-of-the-coherent-sector-in-m-a64842b3` | 4 | 333.5 | 3/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold |
-| moderate | moderate | `modal-triplet-theory-from-mtt-to-string-theory-a-first-4b1100fc` | 2 | 339.5 | 3/7 | object_intuition, argument_flow, result_interpretation, conclusion |
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-quantum-mechanics` | 14 | 459.6 | 6/7 | object_intuition |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
@@ -135,6 +134,7 @@ Canonical papers audited: **139**.
 | reviewed | light | `inflationary-measures-and-the-born-rule-as-a-single-sha-388b32c2` | 5 | 438.4 | 6/7 | orientation |
 | reviewed | light | `measurement-effects-as-finite-survivor-basin-kernels-pr-eb7737ce` | 5 | 404.2 | 5/7 | orientation, object_intuition |
 | reviewed | light | `modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d` | 5 | 524.6 | 6/7 | orientation |
+| reviewed | light | `modal-triplet-theory-from-mtt-to-string-theory-a-first-4b1100fc` | 5 | 640.4 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `momentum-conservation-deltas-and-bookkeeping-closure-ex-bd1fa685` | 5 | 311.6 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | reviewed | low | `constructive-mtt-quantum-gravity-iii-infrared-limit-asy-6f8b88d9` | 4 | 621.0 | 7/7 | - |
 | reviewed | light | `contact-interactions-and-renormalization-as-over-sharp-c2cfaa22` | 4 | 485.0 | 6/7 | object_intuition |

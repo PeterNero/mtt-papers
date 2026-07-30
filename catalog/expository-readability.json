@@ -7,17 +7,17 @@
     "light": 12,
     "low": 1,
     "major": 8,
-    "moderate": 6,
+    "moderate": 5,
     "reference_ready": 2,
-    "reviewed": 100
+    "reviewed": 101
   },
   "missing_dimension_counts": {
-    "argument_flow": 41,
-    "conclusion": 14,
+    "argument_flow": 40,
+    "conclusion": 13,
     "concrete_foothold": 44,
     "object_intuition": 92,
-    "orientation": 39,
-    "result_interpretation": 14
+    "orientation": 40,
+    "result_interpretation": 13
   },
   "forbidden_boilerplate_hits": [],
   "rows": [
@@ -1828,7 +1828,7 @@
     {
       "paper_id": "modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d",
       "title": "Modal Triplet Theory and Calabi\u2013Yau Compactification: A Conditional Realization Map and Its Selection Boundary",
-      "total_words": 3859,
+      "total_words": 3855,
       "narrative_words": 2623,
       "formal_results": 5,
       "proofs": 3,
@@ -2083,30 +2083,28 @@
     },
     {
       "paper_id": "modal-triplet-theory-from-mtt-to-string-theory-a-first-4b1100fc",
-      "title": "Modal Triplet Theory: From MTT to String Theory: A First-Principles Embedding with Worldsheet Projection",
-      "total_words": 820,
-      "narrative_words": 679,
-      "formal_results": 2,
-      "proofs": 0,
-      "narrative_words_per_result": 339.5,
-      "orientation": true,
+      "title": "Modal Triplet Theory and Perturbative String Theory: A Conditional Encoding Contract and the q=79 Worldsheet Boundary",
+      "total_words": 4351,
+      "narrative_words": 3202,
+      "formal_results": 5,
+      "proofs": 3,
+      "narrative_words_per_result": 640.4,
+      "orientation": false,
       "object_intuition": false,
-      "argument_flow": false,
-      "result_interpretation": false,
+      "argument_flow": true,
+      "result_interpretation": true,
       "concrete_foothold": true,
       "limitations": true,
-      "conclusion": false,
-      "coverage_dimensions": 3,
-      "audit_priority": "moderate",
-      "heuristic_priority": "moderate",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "conclusion": true,
+      "coverage_dimensions": 5,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "light",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "review_note": "Rebuilt as an explanatory conditional perturbative-string encoding contract. The paper defines the full target, worldsheet, BRST, projection, anomaly, modular/factorization, and infrared record; proves the conditional realization theorem and controlled residual-transfer proposition; checks standard heterotic central-charge arithmetic without treating it as MTT selection; imports rather than duplicates the proto-spinor bridge and q79 fixed-genus UV theorem; narrows circle spectral symmetry to the T-duality seed; and gives the current 5 available, 2 partial, 5 open q79 worldsheet cutset. PDF visual inspection is required before release.",
       "missing_dimensions": [
-        "object_intuition",
-        "argument_flow",
-        "result_interpretation",
-        "conclusion"
+        "orientation",
+        "object_intuition"
       ]
     },
     {

@@ -1,6 +1,14 @@
 {
   "schema": "mtt.expository-review-decisions.v1",
   "papers": {
+    "modal-triplet-theory-from-mtt-to-string-theory-a-first-4b1100fc": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "note": "Rebuilt as an explanatory conditional perturbative-string encoding contract. The paper defines the full target, worldsheet, BRST, projection, anomaly, modular/factorization, and infrared record; proves the conditional realization theorem and controlled residual-transfer proposition; checks standard heterotic central-charge arithmetic without treating it as MTT selection; imports rather than duplicates the proto-spinor bridge and q79 fixed-genus UV theorem; narrows circle spectral symmetry to the T-duality seed; and gives the current 5 available, 2 partial, 5 open q79 worldsheet cutset. PDF visual inspection is required before release.",
+      "reviewed_main_tex_sha256": "67043e8ea77e1cbbab5458234cbd5c013ea9171c589ecfd2b9e680f81a20fc07",
+      "reviewed_pdf_sha256": "66e2c40db4bf4f93ad07d92885f83f945ac2c508979fcc4f09341422b816079d",
+      "reviewed_source_tree_sha256": "b454ff587ed44464b418fd1f345d0ab81624f62adbedff7a00a1c81108f7840b"
+    },
     "modal-triplet-theory-from-mtt-to-calabi-yau-compactific-1061378d": {
       "status": "reviewed",
       "reviewed_on": "2026-07-30",

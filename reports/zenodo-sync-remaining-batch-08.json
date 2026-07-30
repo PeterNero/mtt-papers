@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T17:31:16+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21708018",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "e89246d609ed59ff48c814e3258ce994",
+      "local_pdf_sha256": "66e2c40db4bf4f93ad07d92885f83f945ac2c508979fcc4f09341422b816079d",
+      "paper_id": "modal-triplet-theory-from-mtt-to-string-theory-a-first-4b1100fc",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    }
+  ]
+}
