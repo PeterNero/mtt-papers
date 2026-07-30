@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T20:22:36+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21709740",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "725e05f8455429774f6db1e7951f7a24",
+      "local_pdf_sha256": "d34c0f4db0e479155086085f2963bdcbde98d8b79a818c96e70ce67907d2e72a",
+      "paper_id": "dynamics-of-coherence-capacity-transport-concentration-f2edc08a",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v3"
+    }
+  ]
+}

@@ -10,12 +10,12 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| critical | 8 |
+| critical | 7 |
 | major | 7 |
 | moderate | 4 |
 | light | 10 |
 | low | 1 |
-| reviewed | 107 |
+| reviewed | 108 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -38,7 +38,6 @@ Canonical papers audited: **139**.
 | critical | critical | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 17 | 123.5 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | critical | critical | `coherent-universality-and-the-inevitability-of-projecti-d9e28e29` | 15 | 79.9 | 3/7 | object_intuition, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 15 | 54.1 | 4/7 | argument_flow, concrete_foothold, conclusion |
-| critical | critical | `dynamics-of-coherence-capacity-transport-concentration-f2edc08a` | 14 | 73.0 | 6/7 | object_intuition |
 | critical | critical | `topological-phases-of-matter-as-admissible-overlap-stru-837dec46` | 12 | 79.8 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `topology-only-constraints-and-forbidden-operators-in-mo-90db2212` | 12 | 116.0 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | major | major | `projection-limited-coherence-a-structural-theory-of-eff-3343fe62` | 32 | 168.6 | 7/7 | - |
@@ -72,6 +71,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34` | 17 | 179.1 | 6/7 | object_intuition |
 | reviewed | critical | `the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad` | 16 | 132.1 | 7/7 | - |
 | reviewed | major | `the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a` | 16 | 150.7 | 7/7 | - |
+| reviewed | major | `dynamics-of-coherence-capacity-transport-concentration-f2edc08a` | 15 | 181.9 | 6/7 | object_intuition |
 | reviewed | major | `fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534` | 15 | 197.8 | 6/7 | conclusion |
 | reviewed | major | `the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c` | 15 | 238.5 | 4/7 | object_intuition, argument_flow, result_interpretation |
 | reviewed | major | `the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707` | 15 | 189.0 | 6/7 | object_intuition |

@@ -3,13 +3,13 @@
   "generated_on": "2026-07-30",
   "papers": 139,
   "priority_counts": {
-    "critical": 8,
+    "critical": 7,
     "light": 10,
     "low": 1,
     "major": 7,
     "moderate": 4,
     "reference_ready": 2,
-    "reviewed": 107
+    "reviewed": 108
   },
   "missing_dimension_counts": {
     "argument_flow": 36,
@@ -892,12 +892,12 @@
     },
     {
       "paper_id": "dynamics-of-coherence-capacity-transport-concentration-f2edc08a",
-      "title": "Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion",
-      "total_words": 1691,
-      "narrative_words": 1022,
-      "formal_results": 14,
-      "proofs": 4,
-      "narrative_words_per_result": 73.0,
+      "title": "Dynamics of Coherence Capacity: Constitutive Transport, Balance Laws, and First Exit",
+      "total_words": 3838,
+      "narrative_words": 2728,
+      "formal_results": 15,
+      "proofs": 10,
+      "narrative_words_per_result": 181.9,
       "orientation": true,
       "object_intuition": false,
       "argument_flow": true,
@@ -906,11 +906,11 @@
       "limitations": true,
       "conclusion": true,
       "coverage_dimensions": 6,
-      "audit_priority": "critical",
-      "heuristic_priority": "critical",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "audit_priority": "reviewed",
+      "heuristic_priority": "major",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-30",
+      "review_note": "Version 3 rebuilds capacity dynamics as a typed model-level framework. It separates material scalar, additive density, and advection-diffusion-reaction transport; proves continuous rowwise reserve, first-exit, active-row, integral-balance, and reparameterization results; proves that regular source-free passive and continuity transport cannot generically exhaust a positive reserve or density; gives an explicit counterexample to a universal focusing inequality; derives codimension-one boundaries only under unique-active-row and regular-value hypotheses; supplies a conditional compression-to-depletion law and two worked models; withdraws automatic conservation, gravity, horizon, entropy, collapse, irreversibility, and time-arrow claims; and the complete 15-page PDF was visually inspected.",
       "missing_dimensions": [
         "object_intuition"
       ]

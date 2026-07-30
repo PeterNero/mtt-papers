@@ -1,65 +1,93 @@
 {
-  "abstract": "We develop the dynamical theory of coherence capacity introduced in Coherence Capacity as the Fundamental Resource of Effective Physics. Coherence capacity is defined as the finite stability margin that allows a projection-based effective description to remain predictive. Under minimal axioms, we show that coherence capacity admits a local transport law and behaves as a conserved resource within admissible regimes. We prove that capacity transport generically exhibits focusing, leading to concentration, bottleneck formation, and exhaustion on codimension-one surfaces. These results provide the dynamical substrate for gravitational attraction, horizon formation, thermalization, and irreversibility, without modifying fundamental dynamics or introducing new degrees of freedom. All transport statements are effective/encoding-level, slab-local, and conditional on regularity and constitutive closure assumptions stated explicitly below.",
+  "abstract": "Coherence capacity is a sourced diagnostic of the remaining validity of an effective description. A diagnostic does not move merely because it has been named. To discuss transport one must additionally choose a base space, an ordering variable, a fixed normalized capacity representative, a velocity or flux, source and repair terms, boundary conditions, and a solution concept. This paper supplies that missing model-level framework. We distinguish three inequivalent equations: material transport of a scalar reserve, a balance law for an additive density, and advection\u2013diffusion\u2013reaction of a field. We derive the corresponding integral balance, show exactly how nonlinear reparameterization changes a continuity equation, and extend the rowwise capacity budget to continuous trajectories. The bottleneck is the minimum of the reserve rows and is generally nonsmooth when the active row changes. Under a unique active row and a regular-value hypothesis, its first-exit set is a moving codimension-one hypersurface with an explicit normal-velocity formula. Two no-go results correct the former transport picture. Source-free passive transport preserves a positive reserve along characteristics. Source-free continuity transport preserves a positive density for every finite interval on which the flow has finite integrated divergence. Compression increases such a density; it does not by itself exhaust a reserve. A focusing inequality, finite-time zero, conservation law, or capacity bottleneck therefore requires additional dynamics or a declared constitutive relation. We give one explicit conditional model in which a compressing carrier lowers a reserve through a fixed decreasing constitutive map. No gravity, horizon, entropy, probability, collapse, irreversibility, or arrow of time is derived from transport alone.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "January 2026",
+  "current_version": "v3",
+  "date": "Version 3, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18256048",
-    "created": "2026-01-21T04:54:06.115966+00:00",
+    "created": "2026-07-30T20:23:15.330146+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18322062",
+    "doi": "10.5281/zenodo.21709740",
     "files": [
       {
-        "checksum": "md5:4b2bbc3e3198576be73dd2abbeb331e4",
-        "content_url": "https://zenodo.org/api/records/18322062/files/Dynamics_of_Coherence_Capacity__Transport__Concentration__and_Exhaustion_v2%20(2).pdf/content",
-        "key": "Dynamics_of_Coherence_Capacity__Transport__Concentration__and_Exhaustion_v2 (2).pdf",
-        "size": 209262
+        "checksum": "md5:725e05f8455429774f6db1e7951f7a24",
+        "content_url": "https://zenodo.org/api/records/21709740/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 357417
       }
     ],
-    "id": "18322062",
-    "match_kind": "title_or_file",
+    "id": "21709740",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18322062",
+    "publication_date": "2026-07-30",
+    "record_url": "https://zenodo.org/records/21709740",
     "resource_type": "publication",
-    "title": "Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion",
-    "updated": "2026-01-21T04:54:06.464102+00:00",
-    "version": "v2.0"
+    "title": "Dynamics of Coherence Capacity: Constitutive Transport, Balance Laws, and First Exit",
+    "updated": "2026-07-30T20:23:15.725962+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "c919040c692d60f6e438afbe8a443d7fd3aa0a8740fcf110e1fc88f5fef605bc",
+  "main_tex_sha256": "bfc1ef9fb8d75ae4baa729496c47e831cae6425a0afab90963053dd1623dea8f",
   "paper_id": "dynamics-of-coherence-capacity-transport-concentration-f2edc08a",
-  "paper_md_sha256": "cd4bad472dc3244f3d4b3e964b4ad6791f8abd59e317f7ca5db45f7117312603",
+  "paper_md_sha256": "faca1e88fa70f33de78fe0716a9f25000f86eafbcfaca4f2635b4e4d44303e66",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/dynamics-of-coherence-capacity-transport-concentration-f2edc08a/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "67599e62e664472714d68de9753d6181e844efb67c5c1f26e7436ac6a862833c",
+    "selected_revision": true,
+    "superseded_source_path": "14 Coherence Capacity Program/_work/Dynamics_of_Coherence_Capacity__Transport__Concentration__and_Exhaustion_v2"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 14052,
-      "path": "main.tex",
-      "sha256": "c919040c692d60f6e438afbe8a443d7fd3aa0a8740fcf110e1fc88f5fef605bc"
+      "bytes": 3412,
+      "path": "main.bib",
+      "sha256": "2b2b412ae71bf2e6761fb61e7812780f76188f68d703d3f7934b84ce482993c1"
     },
     {
-      "bytes": 3784,
-      "path": "series.sty",
-      "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+      "bytes": 31015,
+      "path": "main.tex",
+      "sha256": "bfc1ef9fb8d75ae4baa729496c47e831cae6425a0afab90963053dd1623dea8f"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Dynamics_of_Coherence_Capacity__Transport__Concentration__and_Exhaustion_v2"
   },
-  "source_tree_sha256": "78d0ed5b46b4bd36028ddc7d281cebeadbb9dc5db66c5be72b3d847d02c6bf95",
-  "title": "Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion",
+  "source_tree_sha256": "548421532bc1fbaf2f2a7448d4a737ddf0c003030ad383e4de6492d1f86b4dc0",
+  "title": "Dynamics of Coherence Capacity: Constitutive Transport, Balance Laws, and First Exit",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18256048",
+      "created": "2026-07-30T20:23:15.330146+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21709740",
+      "files": [
+        {
+          "checksum": "md5:725e05f8455429774f6db1e7951f7a24",
+          "content_url": "https://zenodo.org/api/records/21709740/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 357417
+        }
+      ],
+      "id": "21709740",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21709740",
+      "resource_type": "publication",
+      "title": "Dynamics of Coherence Capacity: Constitutive Transport, Balance Laws, and First Exit",
+      "updated": "2026-07-30T20:23:15.725962+00:00",
+      "version": "v3"
+    },
     {
       "concept_doi": "10.5281/zenodo.18256048",
       "created": "2026-01-21T04:54:06.115966+00:00",

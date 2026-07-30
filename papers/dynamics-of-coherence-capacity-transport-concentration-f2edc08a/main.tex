@@ -1,379 +1,1002 @@
 \documentclass[11pt]{article}
-\usepackage{series}
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{geometry}
-\usepackage{hyperref}
 
-\geometry{margin=1in}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
 
-\title{\textbf{Dynamics of Coherence Capacity:\\ Transport, Concentration, and Exhaustion}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\Div}{\operatorname{div}}
+\newcommand{\essinf}{\operatorname*{ess\,inf}}
+
+\title{\vspace{-1em}
+Dynamics of Coherence Capacity:\\
+\large Constitutive Transport, Balance Laws, and First Exit}
 \author{Peter Nero}
-\date{January 2026}
+\date{Version 3, July 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We develop the dynamical theory of coherence capacity introduced in
-``Coherence Capacity as the Fundamental Resource of Effective Physics.''
-Coherence capacity is defined as the finite stability margin that allows
-a projection-based effective description to remain predictive.
-Under minimal axioms, we show that coherence capacity admits a local
-transport law and behaves as a conserved resource within admissible
-regimes. We prove that capacity transport generically exhibits focusing,
-leading to concentration, bottleneck formation, and exhaustion on
-codimension-one surfaces. These results provide the dynamical substrate
-for gravitational attraction, horizon formation, thermalization, and
-irreversibility, without modifying fundamental dynamics or introducing
-new degrees of freedom. All transport statements are effective/encoding-level, slab-local, and conditional on regularity and constitutive closure assumptions stated explicitly below.
+Coherence capacity is a sourced diagnostic of the remaining validity of an
+effective description.  A diagnostic does not move merely because it has
+been named.  To discuss transport one must additionally choose a base
+space, an ordering variable, a fixed normalized capacity representative,
+a velocity or flux, source and repair terms, boundary conditions, and a
+solution concept.  This paper supplies that missing model-level framework.
+
+We distinguish three inequivalent equations: material transport of a
+scalar reserve, a balance law for an additive density, and
+advection--diffusion--reaction of a field.  We derive the corresponding
+integral balance, show exactly how nonlinear reparameterization changes a
+continuity equation, and extend the rowwise capacity budget to continuous
+trajectories.  The bottleneck is the minimum of the reserve rows and is
+generally nonsmooth when the active row changes.  Under a unique active row
+and a regular-value hypothesis, its first-exit set is a moving
+codimension-one hypersurface with an explicit normal-velocity formula.
+
+Two no-go results correct the former transport picture.  Source-free
+passive transport preserves a positive reserve along characteristics.
+Source-free continuity transport preserves a positive density for every
+finite interval on which the flow has finite integrated divergence.
+Compression increases such a density; it does not by itself exhaust a
+reserve.  A focusing inequality, finite-time zero, conservation law, or
+capacity bottleneck therefore requires additional dynamics or a declared
+constitutive relation.  We give one explicit conditional model in which a
+compressing carrier lowers a reserve through a fixed decreasing
+constitutive map.  No gravity, horizon, entropy, probability, collapse,
+irreversibility, or arrow of time is derived from transport alone.
 \end{abstract}
 
-\section{Introduction}
+\section*{Revision note: Version 3}
+\addcontentsline{toc}{section}{Revision note: Version 3}
+\begin{description}[leftmargin=2.5cm,style=nextline]
+\item[Supersedes]
+Version 3 supersedes Version 2.0, DOI
+\href{https://doi.org/10.5281/zenodo.18322062}
+{10.5281/zenodo.18322062}.
 
-In the preceding work we identified coherence capacity as the structural
-resource governing the validity of effective physical descriptions.
-Exhaustion of coherence capacity forces noninvertibility of the effective
-evolution, producing irreversibility even when the underlying dynamics
-is deterministic and invertible.
+\item[Reason]
+Version 2 inferred a divergence-free capacity current, generic focusing,
+codimension-one exhaustion, irreversibility, gravity, and horizons from
+projection and a finite stability margin.  Neither a current nor its
+conservation follows from those assumptions.  The proposed focusing
+inequality also lacked an evolution equation for the velocity field.
 
-The present paper extends that analysis from kinematics to dynamics.
-Specifically, we address the question: how does coherence capacity move,
-redistribute, concentrate, and fail?
+\item[Resolution]
+The paper now treats every transport equation as constitutive or
+action-derived model data.  It fixes the normalized capacity
+representative before taking gradients or fluxes, separates scalar
+transport from density conservation, proves conditional balance and
+first-exit results, and gives counterexamples to generic focusing and
+generic finite-time exhaustion.
 
-We show that coherence capacity is not merely a diagnostic but a physical
-resource admitting local transport and conservation laws. Within
-admissible regimes, capacity is conserved and redistributed; under
-persistent strain it concentrates and forms bottlenecks where effective
-descriptions necessarily break down.
+\item[Retained content]
+The useful question survives: once a particular effective model supplies
+dynamics for its reserve rows, how can those rows be transported,
+consumed, repaired, concentrated, and monitored for first exit?
 
-This transport picture provides the missing dynamical link between
-capacity exhaustion and familiar physical phenomena such as gravitational
-attraction, horizon formation, and loss of memory.
-
-\section{Levels of Description}
-
-We distinguish three levels.
-
-\subsection{Upstairs configuration space}
-
-Let $(X,\mathcal B)$ be a measurable configuration space equipped with an
-invertible evolution $\Phi:X\to X$ (or a flow $\Phi_t$). No fundamental
-time parameter is assumed; $\Phi$ defines only an ordering of
-configurations.
-
-\subsection{Projection and observables}
-
-Observable physics is defined by a measurable projection
-\[
-P:X\to Y,
-\]
-where $Y$ is the space of effective states. The projection is generally
-noninjective.
-
-\subsection{Effective shadow}
-
-The induced observable evolution is
-\[
-T := P\circ \Phi : X \to Y.
-\]
-All effective laws refer to this shadow level.
-
-\section{Axioms}
-
-The results of this paper rest on the following minimal axioms.
-
-\begin{description}
-\item[Axiom A1 (Invertible fundamental dynamics).]
-The evolution $\Phi$ is invertible on $X$.
-
-\item[Axiom A2 (Projection).]
-The observable map $P:X\to Y$ is measurable and noninjective.
-
-\item[Axiom A3 (Admissibility).]
-There exists a subset $A\subset X$ on which the projection-based
-description is stable and predictive.
-
-\item[Axiom A4 (Finite coherence capacity).]
-Stability of the effective description on $A$ is controlled by a finite
-margin that can be exhausted under disturbance.
+\item[Remaining boundary]
+MTT does not yet select one universal capacity evolution law.  Any
+application must derive or postulate its velocity, diffusion, source,
+repair, boundary, and reset data and then validate them against the
+underlying operator dynamics.
 \end{description}
 
-No assumption of fundamental stochasticity, collapse, or time asymmetry
-is made.
+\tableofcontents
 
-\section{Coherence Capacity}
+\section{Introduction and roadmap}
+\label{sec:intro}
 
-\subsection{Definition}
+The two preceding capacity papers answer static and operational questions.
+The normalized-margin paper defines signed reserve rows, their scales, a
+bottleneck scalar, and a metric clearance \cite{CapacityMargin2026}.  The
+control-budget paper defines the least cost of an allowed perturbation that
+leaves the admissible set \cite{CapacityBudget2026}.  Neither definition
+contains a velocity field, a flux, a diffusion tensor, or a source.
 
-\begin{definition}[Coherence capacity]
-For $x\in A$, the coherence capacity $\mathcal C(x)$ is the maximal
-disturbance amplitude such that the projection-based effective
-description remains stable in a neighborhood of $x$.
+This distinction matters.  A temperature field can be advected, diffuse,
+or react, but those verbs come from a heat or transport model, not from the
+definition of temperature.  A stability margin is similar.  It can change
+along an evolving state, yet its change law must be calculated from that
+state evolution or supplied as a reduced constitutive equation.
+
+The paper proceeds in five stages:
+\begin{enumerate}[leftmargin=2em]
+\item Section~\ref{sec:promotion} lists the data needed to promote a static
+      capacity record to a dynamical model.
+\item Section~\ref{sec:pathwise} derives continuous-time rowwise budget and
+      first-exit bounds without assuming a local conservation law.
+\item Sections~\ref{sec:balance}--\ref{sec:pde} distinguish scalar
+      transport, density balance, and advection--diffusion--reaction.
+\item Sections~\ref{sec:nogo}--\ref{sec:boundary} prove the no-go and
+      regular-boundary results that replace the former generic focusing
+      argument.
+\item Sections~\ref{sec:models}--\ref{sec:contract} give conditional
+      models, locate theorem ownership, and state the completion contract
+      for a physical application.
+\end{enumerate}
+
+\section{From a static record to a dynamical model}
+\label{sec:promotion}
+
+\subsection{The static input}
+
+Let \(\cI=\{1,\ldots,m\}\) index a finite list of sourced admissibility
+conditions.  Their normalized signed reserves are
+\[
+ r(t,x)=\bigl(r_i(t,x)\bigr)_{i\in\cI},
+\]
+and the signed bottleneck is
+\[
+ D(t,x)=\min_{i\in\cI}r_i(t,x).
+\]
+The state is admissible exactly when every declared row is positive.
+The clipped display scalar
+\[
+ C(t,x)=\min\{1,\max\{0,D(t,x)\}\}
+\]
+is useful for plots but loses information outside the interval
+\([0,1]\).  Dynamics should therefore be stated first for the full row
+vector or for the signed bottleneck \(D\), not only for \(C\).
+
+The symbol \(x\) can denote an effective spatial coordinate, a point in a
+configuration manifold, or a control parameter.  Those interpretations
+are not interchangeable.
+
+\subsection{The dynamical promotion record}
+
+\begin{definition}[Capacity-dynamics record]
+\label{def:record}
+A capacity-dynamics record is
+\[
+ \cD_{\rm cap}
+ =
+ \bigl(
+ I,\cM,g,\mu,r,v,K,s,\cB,\cS,\pi
+ \bigr),
+\]
+where:
+\begin{enumerate}[leftmargin=2.2em]
+\item \(I=[0,T]\) is an ordering interval;
+\item \((\cM,g,\mu)\) is the base manifold, metric, and reference measure;
+\item \(r=(r_i)\) is one fixed normalized reserve record;
+\item \(v\) is a supplied transport velocity when used;
+\item \(K=(K_i)\) is a supplied diffusion or mobility record when used;
+\item \(s=(s_i)\) contains consumption, repair, exchange, and
+      reclassification terms;
+\item \(\cB\) contains initial and boundary data;
+\item \(\cS\) specifies regularity and the classical, weak, renormalized,
+      or entropy solution concept; and
+\item \(\pi\) records derivation, units, uncertainty, and provenance.
+\end{enumerate}
 \end{definition}
 
-$\mathcal C(x)>0$ characterizes admissible regions; $\mathcal C(x)=0$
-marks admissibility barriers.
+The record is deliberately larger than a single PDE.  Without its base
+measure, a quantity cannot be classified as a density.  Without boundary
+data, an integral conservation statement is incomplete.  Without a
+solution concept, a discontinuous transport law can be ambiguous.
 
-\subsection{Basic properties}
+\subsection{Three meanings of transport}
 
-\begin{lemma}
-$\mathcal C(x)>0$ for all $x\in A$.
-\end{lemma}
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}L{0.22\textwidth}Y Y@{}}
+\toprule
+Object & Representative equation & Meaning \\
+\midrule
+Material scalar
+& \(\partial_t r+v\cdot\nabla r=s\)
+& A label or reserve carried along trajectories.\\
 
-\begin{lemma}
-If $x_n\in A$ converges to $x\notin A$, then $\mathcal C(x_n)\to 0$.
-\end{lemma}
+Additive density
+& \(\partial_t\rho+\Div(\rho v)=s\)
+& An extensive amount per unit reference volume.\\
 
-These properties follow directly from the definition of admissibility.
+Diffusive/reactive field
+& \(\partial_t r+v\cdot\nabla r
+   =\Div(K\nabla r)+s\)
+& A constitutive smoothing and source model.\\
+\bottomrule
+\end{tabularx}
+\end{center}
 
-\section{Capacity as a Physical Resource}
+Calling all three a ``capacity current'' would conceal their different
+transformation laws.  In particular, the normalized bottleneck need not be
+additive over disjoint regions, so it is not automatically a conserved
+density.
 
-We now elevate coherence capacity from a diagnostic to a physical
-resource.
+\section{Pathwise reserve dynamics}
+\label{sec:pathwise}
 
-\begin{definition}[Coherence capacity resource]
-Coherence capacity is a locally defined scalar resource whose preservation
-is necessary and sufficient for the continued validity of a projection-
-based effective description.
-\end{definition}
+The weakest dynamical statement follows the actual state trajectory and
+does not require a spacetime current.
 
-This resource can be redistributed, concentrated, and exhausted, but not
-created from nothing within admissible regimes.
-\paragraph{Interpretive clarification.}
-Referring to coherence capacity as a ``resource'' is a descriptive choice, not an ontological
-claim. Coherence capacity is not a new degree of freedom, field, or conserved charge. The
-resource language encodes the fact that admissibility margins can be redistributed, depleted,
-or concentrated within an effective description, even though the underlying dynamics on $X$
-remains invertible. All statements in this section concern the structure of effective
-description, not additional microscopic physics.
-
-\section{Capacity Transport and Currents}
-
-\subsection{Existence of a capacity current}
-
-\begin{theorem}[Existence of a coherence-capacity current]
-Within any admissible basin, there exists a locally defined effective current 
-$J^\mu_{\mathcal C}$ on $Y$, defined up to
-coarse-graining, such that
+\begin{assumption}[Continuous rowwise budget]
+\label{ass:path}
+Let \(x:[0,T]\to\cX\) be an absolutely continuous trajectory.  Suppose
+each reserve
 \[
-\nabla_\mu J^\mu_{\mathcal C} = 0
+ R_i(t)=r_i(t,x(t))
 \]
-holds pointwise inside the basin. Concretely, take any admissibility margin functional $C$ defined on the coherent basin and
-consider its pushforward density under the projection map $P$ restricted to that basin; under
-the stated absolute continuity and regularity assumptions, this pushforward admits a local
-representation by an effective current.
-
-\end{theorem}
-
-\begin{proof}
-Inside an admissible basin the projection remains stable and the
-effective description is predictive. The invertibility of $\Phi$ ensures
-that admissibility-defining structure is preserved under evolution.
-Pushing forward this structure defines a local flow of coherence capacity
-on $Y$, yielding a divergence-free current $J^\mu_{\mathcal C}$.
-Here ``current'' refers to an effective representation of admissibility transport under the
-assumption that Y admits a smooth local chart and that the pushforward of admissibility-
-preserving structure is absolutely continuous.
-
-\end{proof}
-
-\subsection{Continuity equation}
-
-The local conservation law
+is absolutely continuous and, for almost every \(t\),
 \[
-\boxed{
-\nabla_\mu J^\mu_{\mathcal C} = 0 \qquad (\mathcal C>0)
-}
+ \dot R_i(t)\ge-a_i(t),
+ \qquad
+ a_i(t)\ge0,
 \]
-expresses conservation of coherence capacity within admissible regimes.
-
-\section{Capacity Nonconservation at Admissibility Barriers}
-
-Conservation of coherence capacity holds only within admissible regions.
-At admissibility barriers, the defining inequalities of stability fail and
-capacity is no longer preserved.
-
-\begin{theorem}[Capacity exhaustion at admissibility barriers]
-Let $B\subset Y$ be the projection of an admissibility barrier. Then the
-capacity current satisfies
-\[
-\nabla_\mu J^\mu_{\mathcal C} = \mathcal S_B,
-\]
-where $\mathcal S_B$ is a distribution supported on $B$.
-\end{theorem}
-
-\begin{proof}
-At an admissibility barrier $\mathcal C\to 0$ and the projection $P$ loses
-regularity. The pushforward flow defining $J^\mu_{\mathcal C}$ ceases to be
-well-defined across $B$. As a result, the local conservation law acquires
-a source term supported on the barrier.
-\end{proof}
-
-\begin{corollary}
-All irreversible changes in the effective description correspond to flux
-of coherence capacity through admissibility barriers.
-\end{corollary}
-
-This establishes irreversibility as a structural necessity rather than a
-dynamical assumption.
-
-\section{Capacity Flux Direction and Strain}
-
-The continuity equation alone does not determine the direction of capacity
-transport. Physical interpretation requires identifying what drives
-capacity redistribution.
-
-\subsection{Capacity strain}
-
-\begin{definition}[Capacity strain]
-Let $\mathcal L(x)$ denote the local load imposed on the effective
-description by interactions, curvature, entanglement growth, measurement
-coupling, or environmental noise. Capacity strain is the tendency of
-$\mathcal C$ to decrease in regions where $\mathcal L$ is large.
-\end{definition}
-
-\begin{assumption}[Downhill transport principle]
-Coherence capacity is transported so as to oppose capacity strain: capacity
-flows away from regions of lower effective stability toward regions of
-higher effective stability. 
-
+with \(a_i\in L^1(0,T)\).
 \end{assumption}
 
-This assumption is a constitutive choice describing how admissibility margins are encoded at
-the effective level; it does not introduce new microscopic dynamics.
-\section{Capacity Focusing and Concentration}
-
-We now show that capacity transport generically leads to concentration.
-
-\begin{definition}[Flow direction and expansion]
-Where $J_C^\mu \neq 0$, define the unit flow
-direction $u^\mu := J_C^\mu / \|J_C\|$ (with $\|\cdot\|$ taken with respect to the effective
-metric on $Y$ when such a chart exists). Define the expansion of the capacity flow by
+\begin{theorem}[Continuous cumulative budget]
+\label{thm:pathbudget}
+Under Assumption~\ref{ass:path},
 \[
-\theta := \nabla_\mu u^\mu .
+ R_i(t)
+ \ge
+ R_i(0)-\int_0^t a_i(\sigma)\,\dd\sigma
+ \qquad(i\in\cI).
 \]
-Inside admissible basins, $\nabla_\mu J_C^\mu = 0$ expresses conservation of the effective
-capacity current, but $\theta$ need not vanish; instead, it encodes the focusing or
-defocusing of the integral curves of the normalized flow $u^\mu$.
-
-\end{definition}
-
-\begin{theorem}[Capacity focusing]
-Assume persistent capacity strain along integral curves of $u^\mu$. Then
-there exists $\kappa>0$ such that
+Consequently,
 \[
-\frac{d\theta}{d\tau} \le -\kappa\,\theta^2
+ D(t,x(t))
+ \ge
+ D(0,x(0))
+ -
+ \int_0^t
+ \max_{i\in\cI}a_i(\sigma)\,\dd\sigma.
 \]
-along the flow.
+The trajectory remains admissible whenever the right-hand side is
+positive.
 \end{theorem}
 
 \begin{proof}
-Capacity strain induces gradients in $\mathcal C$ that bias the flux
-according to the downhill transport principle. Contractivity of projection
-ensures that deviations from uniform flux amplify concentration rather
-than dispersion, producing a quadratic suppression term analogous to
-Raychaudhuri focusing.
+The first inequality is the fundamental theorem of calculus for
+absolutely continuous functions.  For every row,
+\[
+ R_i(t)
+ \ge
+ R_i(0)-\int_0^t\max_j a_j(\sigma)\,\dd\sigma
+ \ge
+ D(0,x(0))-\int_0^t\max_j a_j(\sigma)\,\dd\sigma.
+\]
+Taking the minimum over \(i\) proves the second inequality.
 \end{proof}
 
-\begin{corollary}
-If capacity strain persists for sufficient duration, coherence capacity
-concentrates and $\theta$ becomes negative in finite parameter distance.
+\begin{corollary}[Certified first-exit lower bound]
+\label{cor:exit}
+Define
+\[
+ \tau_{\rm exit}
+ =
+ \inf\{t\in[0,T]:D(t,x(t))\le0\}.
+\]
+If \(\max_i a_i(t)\le A\) almost everywhere for a constant \(A>0\), then
+\[
+ \tau_{\rm exit}\ge\frac{D(0,x(0))}{A}
+\]
+whenever the quotient lies in \([0,T]\).
 \end{corollary}
 
-\section{Bottleneck and Boundary Formation}
+The bound is one-sided.  It is not an exact lifetime unless a row is known
+to consume its full allowance and actually reaches its boundary.
 
-Capacity concentration has a sharp endpoint.
+\subsection{Switching of the active row}
 
-\begin{theorem}[Bottleneck formation]
-If inward coherence-capacity flux into a compact region exceeds outward
-transport for sufficient duration, then $\mathcal C\to 0$ on a
-codimension-one hypersurface surrounding the region.
+\begin{definition}[Active set]
+At a point \((t,x)\), define
+\[
+ \cI_{\rm act}(t,x)
+ =
+ \{i:r_i(t,x)=D(t,x)\}.
+\]
+\end{definition}
+
+\begin{proposition}[One-sided derivative of the bottleneck]
+\label{prop:min}
+Let the finite family \(R_i(t)\) be differentiable at \(t_0\).  Then the
+right directional derivative of
+\[
+ D(t)=\min_iR_i(t)
+\]
+exists and satisfies
+\[
+ D'_+(t_0)
+ =
+ \min_{i\in\cI_{\rm act}(t_0)}\dot R_i(t_0).
+\]
+\end{proposition}
+
+\begin{proof}
+Rows outside the active set have a strictly positive separation from the
+minimum at \(t_0\) and cannot become minimizing for all sufficiently small
+positive increments.  Expanding the finitely many active rows to first
+order and taking their minimum gives the formula.
+\end{proof}
+
+Thus \(D\) can have a kink even when every row is smooth.  A scalar PDE
+written directly for \(D\) must account for active-row switching; it is not
+generally obtained by applying the same PDE to the minimum.
+
+\section{Balance laws require additional structure}
+\label{sec:balance}
+
+\subsection{Local and integral balance}
+
+Suppose a model promotes a quantity \(\rho\) to an additive density with
+flux \(J\) and source \(s\):
+\[
+ \partial_t\rho+\Div J=s.
+\]
+For a material flux \(J=\rho v\), this is the continuity equation
+\[
+ \partial_t\rho+\Div(\rho v)=s.
+\]
+Balance laws of this form are standard in continuum physics
+\cite{Dafermos2016}.  Their use here is conditional on the promotion of a
+particular capacity-related object to a density.
+
+\begin{theorem}[Integral balance on a fixed region]
+\label{thm:integral}
+Let \(\Omega\subset\cM\) be a compact region with smooth boundary and
+outward normal \(n\).  For a classical solution of
+\[
+ \partial_t\rho+\Div J=s,
+\]
+\[
+ \frac{\dd}{\dd t}\int_\Omega\rho\,\dd\mu
+ =
+ -\int_{\partial\Omega}J\cdot n\,\dd A
+ +\int_\Omega s\,\dd\mu.
+\]
+Hence total \(\rho\) is conserved only when the net boundary flux and
+integrated source vanish.
 \end{theorem}
 
 \begin{proof}
-By the focusing theorem, persistent negative expansion drives capacity to
-zero in finite parameter distance. Conservation forbids disappearance of
-capacity elsewhere, so depletion localizes on a bounding hypersurface in the effective transport representation.
+Differentiate under the integral, substitute the field equation, and use
+the divergence theorem.
 \end{proof}
 
-\begin{definition}[Capacity bottleneck]
-A capacity bottleneck is a connected hypersurface on which $\mathcal C=0$
-and across which the effective description is noninvertible.
-\end{definition}
+This theorem does not derive the local balance law.  It states what follows
+after that law and its regularity have been supplied.  On a moving region,
+the Reynolds transport term must also be included.
 
-Capacity bottlenecks are the structural origin of horizons and collapse
-boundaries.
+\subsection{Normalization rigidity}
 
-\section{Sources of Capacity Strain}
+The capacity representative must be fixed before a density law is used.
+An arbitrary same-zero-set reparameterization changes the law.
 
-The following processes contribute to capacity strain:
-
-\begin{itemize}
-\item \textbf{Interaction strength:} strong coupling increases projection
-load.
-\item \textbf{Curvature:} geometric distortion raises the cost of
-maintaining stability.
-\item \textbf{Entanglement growth:} rapid correlation buildup strains
-coherent truncation.
-\item \textbf{Measurement coupling:} external apparatus imposes additional
-projection constraints.
-\item \textbf{Noise and environment:} uncontrolled coupling drains
-capacity through noncoherent channels.
-\end{itemize}
-
-Any combination of these can drive $\mathcal C\to 0$.
-
-\section{A Minimal Illustrative Model}
-
-The following model is purely illustrative and does not represent a proposed fundamental
-dynamical law for coherence capacity; it serves only to visualize focusing, relaxation, and
-barrier formation under admissibility-preserving transport.
-
-
-Consider a one-dimensional effective space with coordinate $x$, coherence
-capacity $\mathcal C(x,t)$, and current
+\begin{theorem}[Reparameterization identity]
+\label{thm:reparam}
+Let \(C>0\) satisfy
 \[
-J_{\mathcal C} = -D\,\partial_x \mathcal C + v(x)\,\mathcal C,
+ \partial_tC+\Div(Cv)=s
 \]
-where $v(x)$ represents capacity strain and $D>0$ is a contractivity
-constant.
-
-The continuity equation becomes
+classically, and let \(f\in C^1((0,\infty))\).  Then
 \[
-\partial_t \mathcal C
-= D\,\partial_x^2 \mathcal C - \partial_x(v\,\mathcal C).
+ \partial_t f(C)+\Div(f(C)v)
+ =
+ f'(C)s+
+ \bigl[f(C)-Cf'(C)\bigr]\Div v.
+\]
+For arbitrary compressible velocities, a source-free density law is
+preserved under \(C\mapsto f(C)\) only for
+\[
+ f(C)=aC
+\]
+with constant \(a\).
+\end{theorem}
+
+\begin{proof}
+The original equation gives
+\[
+ \partial_tC+v\cdot\nabla C=s-C\Div v.
+\]
+The chain and product rules yield
+\[
+ \partial_t f(C)+\Div(f(C)v)
+ =
+ f'(C)\bigl(\partial_tC+v\cdot\nabla C\bigr)+f(C)\Div v,
+\]
+which is the stated identity.  In the source-free case, invariance for
+arbitrary \(\Div v\) requires \(f(C)-Cf'(C)=0\).  Solving this ordinary
+differential equation gives \(f(C)=aC\).
+\end{proof}
+
+The functions \(C\), \(C^2\), and \(\sqrt C\) can have the same positive
+region and zero set, yet they do not represent the same conserved density.
+This is why the normalization and reference measure are part of
+Definition~\ref{def:record}.
+
+\section{Constitutive PDE classes}
+\label{sec:pde}
+
+\subsection{Passive scalar transport}
+
+A reserve label carried by a supplied velocity satisfies
+\[
+ \partial_t r_i+v\cdot\nabla r_i=s_i.
+\]
+Along a characteristic \(X(t)\) solving
+\[
+ \dot X(t)=v(t,X(t)),
+\]
+the row obeys
+\[
+ \frac{\dd}{\dd t}r_i(t,X(t))
+=s_i(t,X(t)).
+\]
+This form is appropriate when \(r_i\) is a local diagnostic rather than an
+additive amount.
+
+\subsection{Advection--diffusion--reaction}
+
+A model can instead supply
+\[
+ \partial_t r_i+v\cdot\nabla r_i
+=
+\Div(K_i\nabla r_i)+s_i(t,x,r).
+\]
+The diffusion tensor \(K_i\), reaction law \(s_i\), and boundary conditions
+are new physical or algorithmic inputs.  A positive-semidefinite \(K_i\)
+can smooth spatial variation; it does not specify what is being conserved.
+
+\subsection{Weak and rough transport}
+
+Classical characteristic formulas require regular velocity fields.  For
+Sobolev or bounded-variation velocities, existence, uniqueness, and
+renormalization require the hypotheses of the appropriate transport
+theory.  DiPerna--Lions theory treats Sobolev vector fields
+\cite{DiPernaLions1989}, and Ambrosio extends the framework to bounded
+variation under declared divergence control \cite{Ambrosio2004}.
+Nonlinear scalar conservation laws require an entropy condition; the
+Kruzhkov theory is a standard reference \cite{Kruzhkov1970}.  General
+elliptic, parabolic, and hyperbolic solution concepts are reviewed in
+\cite{Evans2010}.
+
+These references matter because a formal current is not enough.  A paper
+claiming transport must state whether it has a classical, weak,
+renormalized, or entropy solution and which theorem supplies
+well-posedness.
+
+\section{What source-free transport cannot do}
+\label{sec:nogo}
+
+\subsection{Passive transport preserves positive reserve}
+
+\begin{theorem}[No exhaustion from source-free passive transport]
+\label{thm:passive}
+Let \(r\) solve
+\[
+ \partial_t r+v\cdot\nabla r=0
+\]
+on a domain where the characteristic flow \(X(t;x_0)\) exists.  Then
+\[
+ r(t,X(t;x_0))=r(0,x_0).
+\]
+In particular, a strictly positive reserve cannot reach zero along a
+characteristic by passive transport alone.
+\end{theorem}
+
+\begin{proof}
+The chain rule gives
+\[
+ \frac{\dd}{\dd t}r(t,X(t;x_0))
+=
+\partial_t r+v\cdot\nabla r=0.
+\]
+\end{proof}
+
+\subsection{A positive density stays positive under smooth continuity flow}
+
+\begin{theorem}[No finite-time zero from regular source-free continuity]
+\label{thm:densitypositive}
+Let \(v\) generate a classical flow \(X(t;x_0)\), and let
+\(\rho\) solve
+\[
+ \partial_t\rho+\Div(\rho v)=0.
+\]
+Then
+\[
+ \rho(t,X(t;x_0))
+ =
+ \rho_0(x_0)
+ \exp\left(
+ -\int_0^t\Div v(\sigma,X(\sigma;x_0))\,\dd\sigma
+ \right).
+\]
+If \(\rho_0(x_0)>0\) and the divergence integral is finite, then
+\(\rho(t,X(t;x_0))>0\).
+\end{theorem}
+
+\begin{proof}
+Along the flow,
+\[
+ \frac{\dd}{\dd t}\rho(t,X(t))
+=
+-\rho(t,X(t))\Div v(t,X(t)).
+\]
+Solving this scalar linear equation gives the formula.
+\end{proof}
+
+\begin{corollary}[Compression raises a conserved density]
+If \(\Div v<0\) along a trajectory, then a positive source-free density
+increases along that trajectory.
+\end{corollary}
+
+This is the opposite of the former claim that generic focusing exhausts a
+conserved capacity.  A reserve can still decrease under compression, but
+only if the model supplies a separate relation between the carrier density
+and the reserve.
+
+\subsection{Continuity does not imply a focusing equation}
+
+\begin{proposition}[No universal Raychaudhuri-type inequality]
+\label{prop:nofocus}
+The continuity equation alone does not imply
+\[
+ \dot\theta\le-\kappa\theta^2
+\]
+for \(\theta=\Div v\) and any fixed \(\kappa>0\).
+\end{proposition}
+
+\begin{proof}
+On \(\mathbb R\), take
+\[
+ v(x)=ax,
+ \qquad
+ \rho(t,x)=\rho_0e^{-at},
+\]
+where \(\rho_0>0\) and \(a<0\).  Then
+\[
+ \partial_t\rho+\partial_x(\rho v)=0,
+\qquad
+ \theta=\partial_xv=a,
+\qquad
+ \dot\theta=0.
+\]
+The proposed inequality would require
+\[
+ 0\le-\kappa a^2,
+\]
+which is false.
+\end{proof}
+
+A Raychaudhuri equation follows from geometric and dynamical equations for
+a congruence, not from a scalar continuity law.  Capacity dynamics would
+need an independently derived equation for \(v\), its acceleration,
+curvature coupling, and any shear or vorticity terms.
+
+\subsection{The actual routes to first exit}
+
+A positive reserve can reach zero if at least one of the following is
+present:
+\begin{enumerate}[leftmargin=2em]
+\item a negative source or consumption term;
+\item outward boundary loss;
+\item a time-dependent admissible set, tolerance, or normalization;
+\item a constitutive relation to another concentrating field;
+\item singular or nonunique flow behavior outside the regular theorem;
+\item a change of chart or model that reclassifies the active rows; or
+\item initial data already touching the boundary.
+\end{enumerate}
+Each mechanism has different mathematics and must be recorded separately.
+
+\section{First-exit geometry}
+\label{sec:boundary}
+
+\subsection{When is the boundary a hypersurface?}
+
+\begin{theorem}[Regular active-row boundary]
+\label{thm:regularboundary}
+Fix a time \(t_0\).  Suppose \(r_j(t_0,\cdot)\) is \(C^1\) near \(x_0\),
+\[
+ r_j(t_0,x_0)=0,
+\qquad
+ \nabla r_j(t_0,x_0)\ne0,
+\]
+and \(j\) is the unique active row near \(x_0\).  Then the local
+first-exit boundary
+\[
+ \{x:D(t_0,x)=0\}
+\]
+is a \(C^1\) codimension-one hypersurface near \(x_0\).
+\end{theorem}
+
+\begin{proof}
+Uniqueness of the active row gives \(D=r_j\) locally.  The conclusion is
+the regular-value theorem applied to \(r_j(t_0,\cdot)\).
+\end{proof}
+
+Without the nonzero-gradient condition, the zero set can be singular or
+have codimension greater than one.  It can also contain an open region.
+Without a unique active row, several hypersurfaces can meet and the
+bottleneck can be nonsmooth.
+Codimension one is therefore a theorem under hypotheses, not a generic
+consequence of capacity language.
+
+\subsection{Normal velocity of a regular boundary}
+
+\begin{theorem}[Level-set motion law]
+\label{thm:normalvelocity}
+Let \(r_j(t,x)=0\) define a regular moving boundary and set
+\[
+ n=\frac{\nabla r_j}{|\nabla r_j|}.
+\]
+Its normal velocity is
+\[
+ V_n=-\frac{\partial_t r_j}{|\nabla r_j|}.
+\]
+If the row satisfies
+\[
+ \partial_t r_j+v\cdot\nabla r_j=s_j,
+\]
+then
+\[
+ V_n=v\cdot n-\frac{s_j}{|\nabla r_j|}.
+\]
+\end{theorem}
+
+\begin{proof}
+For a boundary trajectory \(x_b(t)\),
+\[
+ 0=\frac{\dd}{\dd t}r_j(t,x_b(t))
+ =\partial_t r_j+\dot x_b\cdot\nabla r_j.
+\]
+Taking the normal component gives the first formula.  Substitution of the
+transport equation gives the second.
+\end{proof}
+
+This is the standard level-set logic used for moving fronts
+\cite{OsherSethian1988}.  It tracks a boundary after its PDE has been
+supplied; it does not choose the PDE.
+
+\subsection{Exit is not a reset}
+
+At \(D=0\), one declared description has reached its boundary.  The model
+must still choose among:
+\[
+ \begin{aligned}
+ &\text{stop},\qquad
+ \text{continue in another chart},\\
+ &\text{apply a deterministic reset},\qquad
+ \text{apply a stochastic kernel}.
+ \end{aligned}
+\]
+Those choices define different hybrid systems.  A first-exit surface alone
+does not define an outcome, a probability law, or an irreversible update.
+
+\section{Concentration and reserve are different objects}
+\label{sec:concentration}
+
+Concentration describes how an additive measure or density occupies a
+region.  Reserve describes distance from a declared failure condition.
+They can be related, but the relation is constitutive.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}L{0.23\textwidth}Y Y@{}}
+\toprule
+Question & Density \(\rho\) & Reserve \(r\) \\
+\midrule
+Additive over regions?
+& Yes, when promoted as a density
+& Generally no\\
+
+Compression under continuity?
+& Raises \(\rho\)
+& Undetermined without a relation to \(\rho\)\\
+
+Zero means?
+& Absence of represented amount
+& Failure boundary of a declared condition\\
+
+Conservation source?
+& Continuity law or symmetry
+& Not supplied by its definition\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{proposition}[Conditional compression-to-depletion law]
+\label{prop:constitutive}
+Suppose a positive density obeys
+\[
+ \partial_t\rho+\Div(\rho v)=0
+\]
+and a reserve is defined by a fixed \(C^1\) constitutive map
+\[
+ r=h(\rho).
+\]
+Along characteristics,
+\[
+ \frac{\dd r}{\dd t}
+=
+-h'(\rho)\rho\,\Div v.
+\]
+If \(h'(\rho)<0\) and \(\Div v<0\), then the reserve decreases.
+\end{proposition}
+
+\begin{proof}
+The continuity equation gives
+\[
+ \frac{\dd\rho}{\dd t}=-\rho\Div v.
+\]
+Apply the chain rule to \(r=h(\rho)\).
+\end{proof}
+
+This proposition is a valid route from concentration to reserve loss, but
+the decreasing function \(h\) is part of the model.  It cannot be inferred
+from projection alone.
+
+\section{Two explicit conditional models}
+\label{sec:models}
+
+\subsection{Advected consumption on a circle}
+
+Let \(x\in S^1\), let \(u\) be constant, and consider
+\[
+ \partial_t r+u\,\partial_xr=-\sigma(t,x),
+\qquad
+ \sigma\ge0.
+\]
+Along \(X(t)=x_0+ut\),
+\[
+ r(t,X(t))
+=
+r_0(x_0)-\int_0^t\sigma(\tau,X(\tau))\,\dd\tau.
+\]
+The first exit occurs when accumulated consumption reaches the initial
+reserve.  If \(\sigma\le A\), Corollary~\ref{cor:exit} gives
+\[
+ \tau_{\rm exit}\ge\frac{\min_x r_0(x)}{A}.
 \]
 
-If $v(x)$ is inward-directed and sufficiently strong, solutions develop a
-finite-time zero of $\mathcal C$, signaling breakdown of the effective
-description at a moving boundary.
+This example has a genuine transport velocity and a genuine sink.  The
+sink is not produced by the word ``capacity''; it must be calculated from
+the underlying operator or control model.
 
-This toy model captures relaxation when capacity is abundant, focusing
-under strain, and barrier formation without singular dynamics.
+\subsection{Compression with a supplied constitutive reserve}
 
-\section{Discussion}
+On \(\mathbb R\), choose
+\[
+ v(x)=-kx,
+\qquad
+ k>0,
+\]
+and a spatially uniform carrier density
+\[
+ \rho(t)=\rho_0e^{kt}.
+\]
+It solves the source-free continuity equation.  Now supply the decreasing
+constitutive relation
+\[
+ r(t)=R-\alpha\rho(t),
+\qquad
+ R>0,\quad\alpha>0.
+\]
+If \(R>\alpha\rho_0\), the reserve is initially positive and reaches zero
+at
+\[
+ t_*=\frac1k\log\left(\frac{R}{\alpha\rho_0}\right).
+\]
 
-Coherence capacity behaves as a genuine physical resource: it is
-conserved within admissible regimes, transported and concentrated by
-interaction and geometry, and exhausted at moving boundaries. These
-properties are independent of microscopic details and follow solely from
-projection-based effective description with finite stability margins.
+The model cleanly separates the steps:
+\begin{enumerate}[leftmargin=2em]
+\item continuity transport concentrates \(\rho\);
+\item the chosen map \(r=R-\alpha\rho\) turns concentration into reserve
+      consumption; and
+\item the zero of \(r\) is a first exit.
+\end{enumerate}
+No gravity, entropy, or horizon follows from these equations.
 
-In subsequent work we will show that capacity concentration produces
-gravitational attraction, capacity bottlenecks generate horizons and area
-laws, and competing transport regimes yield thermalization or persistent
-memory.
+\section{Role within Modal Triplet Theory}
+\label{sec:mtt}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}L{0.28\textwidth}Y@{}}
+\toprule
+Source & Canonical responsibility \\
+\midrule
+MTT Foundation
+& Complete admissibility ledger and the stop/continue/reset alternatives
+  \cite{MTTFoundation2026}.\\
+
+Normalized capacity paper
+& Signed slacks, normalization, reserve vector, bottleneck, metric
+  clearance, and active rows \cite{CapacityMargin2026}.\\
+
+Control-budget paper
+& Allowed perturbations, exit cost, cumulative discrete consumption,
+  composition, and resource-completion contract
+  \cite{CapacityBudget2026}.\\
+
+This paper
+& Conditional continuous-time row budgets, scalar-versus-density
+  transport, balance identities, no-go results, regular first-exit
+  geometry, and model-level examples.\\
+
+Future source dynamics
+& A selected action, velocity, diffusion, source, repair, exchange,
+  constitutive relation, boundary law, and reset kernel.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The corrected order is:
+\[
+ \begin{aligned}
+ \text{operator control rows}
+ &\longrightarrow
+ \text{normalized capacity record}\\
+ &\longrightarrow
+ \text{selected or postulated dynamics}
+ \longrightarrow
+ \text{first-exit analysis}.
+ \end{aligned}
+\]
+The dynamics cannot be read backward from the existence of the scalar.
+
+\section{What is not derived}
+\label{sec:limits}
+
+\subsection{No automatic conservation}
+
+Conservation requires a balance law plus boundary and source conditions.
+In a fundamental field theory it can be derived from an action and
+symmetry; in a reduced model it can be a constitutive postulate.  The
+capacity definition supplies neither.
+
+\subsection{No force or gravity}
+
+A flux velocity is not a force law.  A gradient is not a force until an
+action, Hamiltonian, or constitutive equation assigns it that role.
+Einstein gravity requires Lorentzian geometry, a gravitational action or
+field equations, and a sourced normalization.  None is contained in a
+capacity transport template.
+
+\subsection{No entropy or thermalization}
+
+Mixing a scalar field does not by itself define entropy.  Thermalization
+requires a state, dynamics, coarse-graining, equilibrium notion, and
+thermodynamic limit or statistical theorem.
+
+\subsection{No horizon or area law}
+
+A regular zero-level set is only a failure boundary for the declared
+certificate.  A horizon requires a causal metric and trapped or
+event-horizon definition.  An area law requires state counting and a
+coefficient.
+
+\subsection{No probability, collapse, or arrow of time}
+
+A deterministic PDE supplies no outcome probabilities unless a random
+initial state, noise law, or stochastic kernel is added.  A first exit
+does not choose a reset.  An arrow of time requires asymmetric dynamics,
+boundary conditions, stable records, or thermodynamic structure.
+
+\section{Completion and falsifiability contract}
+\label{sec:contract}
+
+A physical capacity-dynamics claim must publish at least the following
+rows.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}L{0.25\textwidth}Y@{}}
+\toprule
+Row & Required content \\
+\midrule
+Base and ordering
+& Manifold or configuration space, metric, measure, and ordering variable.\\
+
+Capacity source
+& Full normalized reserve vector, scales, tolerances, provenance, and
+  active-row convention.\\
+
+Transport type
+& Material scalar, additive density, diffusive field, or another explicit
+  type.\\
+
+Dynamical source
+& Action, operator evolution, constitutive postulate, or reduction that
+  yields the PDE.\\
+
+Coefficients
+& Velocity, flux, diffusion, reaction, consumption, repair, and exchange
+  terms with units.\\
+
+Initial and boundary data
+& Domains, inflow/outflow, no-flux, periodic, interface, and compatibility
+  conditions.\\
+
+Solution concept
+& Classical, weak, renormalized, entropy, stochastic, or hybrid, with a
+  well-posedness theorem.\\
+
+Conservation claim
+& Exact source and boundary conditions or the symmetry that proves it.\\
+
+First-exit claim
+& Active row, regularity, transversality, time bound, and error control.\\
+
+Post-exit rule
+& Stop, chart change, deterministic reset, or stochastic kernel.\\
+
+Physical promotion
+& Separate theorem connecting the model to force, gravity, entropy,
+  measurement, or another observable.\\
+
+Provenance
+& Independent inputs, fitted inputs, held-out outputs, code, commit,
+  uncertainty, and hashes for numerical work.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The framework is falsifiable.  A claimed conservation law fails if its
+source or boundary flux is nonzero.  A pathwise budget fails if an allowed
+trajectory consumes more than the certified row bounds.  A hypersurface
+claim fails at a zero where transversality or active-row uniqueness fails.
+A constitutive concentration mechanism fails if the supplied relation
+does not match the underlying operator evolution.  A physical promotion
+fails if its held-out observable does not agree.
 
 \section{Conclusion}
 
-We have developed a dynamical theory of coherence capacity. By introducing
-capacity currents, transport laws, and focusing theorems, we have shown
-that coherence capacity flows, concentrates, and exhausts in a manner
-analogous to conserved physical resources.
+Coherence capacity can have dynamics, but only after dynamics are supplied.
+The mathematically clean starting point is the full normalized reserve
+vector.  Along trajectories it supports cumulative consumption and
+first-exit bounds.  On a base manifold it can be placed in a scalar
+transport, density balance, or advection--diffusion--reaction model, each
+with different meaning.
 
-This dynamical picture completes the structural framework begun in the
-preceding work. Gravity, irreversibility, and breakdown of effective laws
-emerge not as separate postulates, but as unavoidable consequences of
-capacity transport and exhaustion.
+The main correction is constructive.  Source-free regular transport does
+not generically exhaust positive capacity, and continuity does not produce
+a focusing equation.  Genuine exhaustion needs a sink, boundary loss,
+changing admissible set, singular regime, or explicit constitutive link to
+another field.  Once one of those mechanisms is derived, the regular-value
+and level-set results provide a precise way to analyze the resulting
+first-exit boundary.
+
+\section*{Reproducibility statement}
+
+This paper reports structural definitions, identities, counterexamples,
+and conditional PDE theorems.  It contains no fitted parameter or
+numerical physical prediction.  The source TeX, bibliography, revision
+audit, and generated PDF are versioned in the MTT papers repository.  A
+future numerical dynamics result must additionally archive its capacity
+record, PDE coefficients, initial and boundary data, solver, convergence
+study, error bounds, code commit, and verification hashes.
+
+\bibliographystyle{plain}
+\bibliography{main}
 
 \end{document}

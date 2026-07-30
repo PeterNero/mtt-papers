@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18256048",
+      "created": "2026-07-30T20:23:15.330146+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21709740",
+      "files": [
+        {
+          "checksum": "md5:725e05f8455429774f6db1e7951f7a24",
+          "content_url": "https://zenodo.org/api/records/21709740/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 357417
+        }
+      ],
+      "id": "21709740",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21709740",
+      "resource_type": "publication",
+      "title": "Dynamics of Coherence Capacity: Constitutive Transport, Balance Laws, and First Exit",
+      "updated": "2026-07-30T20:23:15.725962+00:00",
+      "version": "v3"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18255905",
       "created": "2026-07-30T20:07:06.754629+00:00",
       "creators": [
