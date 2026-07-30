@@ -100,6 +100,11 @@ def main() -> int:
     )
     parser.add_argument("paper_ids", nargs="*")
     parser.add_argument("--all", action="store_true")
+    parser.add_argument(
+        "--prune-missing",
+        action="store_true",
+        help="remove catalog rows whose canonical paper directory no longer exists",
+    )
     parser.add_argument("--sync-descriptive-metadata", action="store_true")
     args = parser.parse_args()
 
@@ -113,13 +118,27 @@ def main() -> int:
         )
     else:
         paper_ids = args.paper_ids
-    if not paper_ids:
+    if not paper_ids and not args.prune_missing:
         parser.error("provide at least one paper id or --all")
 
     catalog = load_json(CATALOG_PATH)
     catalog_by_id = {
         str(row["paper_id"]): row for row in catalog.get("papers") or []
     }
+    removed_release_ids: set[str] = set()
+    if args.prune_missing:
+        missing_ids = {
+            paper_id
+            for paper_id in catalog_by_id
+            if not (PAPERS / paper_id / "metadata.json").is_file()
+        }
+        for paper_id in missing_ids:
+            row = catalog_by_id.pop(paper_id)
+            removed_release_ids.update(
+                str(release["id"])
+                for release in row.get("zenodo_releases") or []
+                if release.get("id") is not None
+            )
     warnings = []
     for paper_id in paper_ids:
         result = refresh_one(
@@ -148,6 +167,7 @@ def main() -> int:
         row
         for row in unmatched_payload.get("records") or []
         if str(row.get("id") or "") not in matched_ids
+        and str(row.get("id") or "") not in removed_release_ids
     ]
     write_json(
         UNMATCHED_PATH,
@@ -158,9 +178,20 @@ def main() -> int:
         },
     )
 
-    zenodo_ids = {
-        str(row["id"]) for row in load_json(ZENODO_PATH).get("records") or []
-    }
+    zenodo_payload = load_json(ZENODO_PATH)
+    zenodo_records = [
+        row
+        for row in zenodo_payload.get("records") or []
+        if str(row.get("id") or "") not in removed_release_ids
+    ]
+    write_json(
+        ZENODO_PATH,
+        {
+            **zenodo_payload,
+            "records": zenodo_records,
+        },
+    )
+    zenodo_ids = {str(row["id"]) for row in zenodo_records}
     config = load_json(CONFIG_PATH)
     report = load_json(REPORT_PATH)
     report.update(

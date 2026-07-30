@@ -1,10 +1,10 @@
 {
   "counts": {
-    "canonical_papers": 140,
+    "canonical_papers": 139,
     "current_sources_newer_than_release": 0,
     "pandoc_warning_papers": 12,
     "papers_with_zenodo_release": 138,
-    "papers_without_zenodo_match": 2,
+    "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 54,
     "zenodo_records": 234,
@@ -8556,19 +8556,20 @@
       ]
     },
     {
-      "abstract": "",
+      "abstract": "This notice records the retirement of the former grouped MTT GPT corpus index. The grouping was created to fit a historical custom-chat file limit and is not a scientific paper, authority ledger, or current representation of the research corpus. Canonical papers are now stored individually in the MTT papers repository, while current status, dependencies, results, blockers, and continuation state are served by the MTT Research Kernel.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v8",
-      "date": "January 2026",
+      "current_version": "v9",
+      "date": "July 2026, Version 9",
       "latest_zenodo_release": null,
-      "main_tex_sha256": "28ccd1702ad2d7343779c3ea7d8a08fec512a7194422399fabcf8faf3177f579",
+      "main_tex_sha256": "43989f38e3300ca59c77491a8c932b3995c464388a424cf67fa9c990c4af7def",
       "paper_id": "mtt-gpt-corpus-index-grouped-reference",
-      "paper_md_sha256": "b0031fbef295fcd713f588fdcef317b27762381a922bfd4be38fabb0b56f9629",
-      "release_state": "not_matched_to_zenodo",
+      "paper_md_sha256": "290be9ee6847b4abee5b0422e2b03f8de4f8bb492593b14f136c96a39bfee56a",
+      "publication_policy": "archive_only",
+      "release_state": "publication_exempt",
       "result_refs": [],
       "revision": {
         "selected_revision": false
@@ -8576,9 +8577,9 @@
       "source_provenance": {
         "legacy_source_path": "0 Index Corpus/_work/Modal_Triplet_Theory__Corpus_Index_and_Reference_v8"
       },
-      "source_tree_sha256": "8efcfd8f1fb073a302678594775d39b5001ffe94c3c149cf7d8e5c70a3a38aa3",
-      "title": "MTT GPT Corpus Index (Grouped Reference)",
-      "version_relation": "unknown",
+      "source_tree_sha256": "7a4706ecb03e68892ee448e683b0722a9637b02c0afc2c689e4bb7e6d1d53027",
+      "title": "MTT Corpus Navigation: Retired Grouped-Index Notice",
+      "version_relation": "not_applicable",
       "zenodo_releases": []
     },
     {
@@ -11843,32 +11844,6 @@
           "version": "v1.0"
         }
       ]
-    },
-    {
-      "abstract": "A book-length interpretive account of persistence, finite capacity, admissible projection and reusable coherence across physics, life, mind and cosmology. The second revised edition distinguishes established science, structural interpretation and conditional Modal Triplet Theory extensions.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v6",
-      "date": "2026",
-      "latest_zenodo_release": null,
-      "main_tex_sha256": "847d31b83a43f221acd49e9a469b25d6d0c544d7e0e7b437956fac21d779e8bc",
-      "paper_id": "the-universe-has-a-bad-memory",
-      "paper_md_sha256": "3e04572c4e455100f6707f6201a046aa302515a4761f6775e96ef1733671e284",
-      "release_state": "not_matched_to_zenodo",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "obsidian-books/The_Universe_Has_a_Bad_Memory/The_Universe_Has_a_Bad_Memory__Why_Physics_Holds__Second_Revised_Edition_v6.tex"
-      },
-      "source_tree_sha256": "a3f380960e2a7569e589efc665841049693194afc8a42a03baffb47792db1099",
-      "title": "The Universe Has a Bad Memory",
-      "version_relation": "unknown",
-      "zenodo_releases": []
     },
     {
       "abstract": "This paper presents a conditional Theta-closure realization relating Standard Model gauge couplings to internal geometric overlap integrals. Measured source data are transported with SMDR v1.3 into the full-Standard-Model MS-bar scheme at Q = Mt. In the normalization used here, the resulting profile targets are I2/I1 = 0.5110273 +/- 0.0001231 and I3/I1 = 0.158335 +/- 0.001098. They are calibrated profile coordinates, not first-principles predictions of the gauge couplings. The paper formulates the admissibility and spectral-gap conditions under which an internal realization may reproduce these targets. A high-coherence twistor corner uses declared period and gauge-kinetic normalizations; its inverse-gap overlap estimate remains conditional on explicit projector and representative perturbation bounds. The scale Q = Mt is a renormalization and matching convention, not a physical coherence, gap, or quantum-gravity scale. Independent geometric selection remains open.",

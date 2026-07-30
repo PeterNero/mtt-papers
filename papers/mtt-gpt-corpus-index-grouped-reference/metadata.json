@@ -1,17 +1,18 @@
 {
-  "abstract": "",
+  "abstract": "This notice records the retirement of the former grouped MTT GPT corpus index. The grouping was created to fit a historical custom-chat file limit and is not a scientific paper, authority ledger, or current representation of the research corpus. Canonical papers are now stored individually in the MTT papers repository, while current status, dependencies, results, blockers, and continuation state are served by the MTT Research Kernel.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v8",
-  "date": "January 2026",
+  "current_version": "v9",
+  "date": "July 2026, Version 9",
   "latest_zenodo_release": null,
-  "main_tex_sha256": "28ccd1702ad2d7343779c3ea7d8a08fec512a7194422399fabcf8faf3177f579",
+  "main_tex_sha256": "43989f38e3300ca59c77491a8c932b3995c464388a424cf67fa9c990c4af7def",
   "paper_id": "mtt-gpt-corpus-index-grouped-reference",
-  "paper_md_sha256": "b0031fbef295fcd713f588fdcef317b27762381a922bfd4be38fabb0b56f9629",
-  "release_state": "not_matched_to_zenodo",
+  "paper_md_sha256": "290be9ee6847b4abee5b0422e2b03f8de4f8bb492593b14f136c96a39bfee56a",
+  "publication_policy": "archive_only",
+  "release_state": "publication_exempt",
   "result_refs": [],
   "revision": {
     "selected_revision": false
@@ -19,8 +20,13 @@
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 47796,
+      "bytes": 2875,
       "path": "main.tex",
+      "sha256": "43989f38e3300ca59c77491a8c932b3995c464388a424cf67fa9c990c4af7def"
+    },
+    {
+      "bytes": 47796,
+      "path": "legacy_grouped_index_v8.tex",
       "sha256": "28ccd1702ad2d7343779c3ea7d8a08fec512a7194422399fabcf8faf3177f579"
     },
     {
@@ -32,8 +38,8 @@
   "source_provenance": {
     "legacy_source_path": "0 Index Corpus/_work/Modal_Triplet_Theory__Corpus_Index_and_Reference_v8"
   },
-  "source_tree_sha256": "8efcfd8f1fb073a302678594775d39b5001ffe94c3c149cf7d8e5c70a3a38aa3",
-  "title": "MTT GPT Corpus Index (Grouped Reference)",
-  "version_relation": "unknown",
+  "source_tree_sha256": "7a4706ecb03e68892ee448e683b0722a9637b02c0afc2c689e4bb7e6d1d53027",
+  "title": "MTT Corpus Navigation: Retired Grouped-Index Notice",
+  "version_relation": "not_applicable",
   "zenodo_releases": []
 }

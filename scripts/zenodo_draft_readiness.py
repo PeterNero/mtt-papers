@@ -69,7 +69,7 @@ THEBIBLIOGRAPHY_RE = re.compile(
     re.DOTALL,
 )
 REFERENCES_SECTION_RE = re.compile(
-    r"\\section\*?\{References\}"
+    r"\\(?:section|chapter)\*?\{References\}"
     r".*?"
     r"(?=\\end\{document\}|\Z)",
     re.DOTALL | re.IGNORECASE,

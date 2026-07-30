@@ -4,7 +4,7 @@ Generated: 2026-07-30
 
 This is a triage instrument, not a prose-quality certificate. The heuristic score is preserved in the JSON, while an effective `reviewed` or `reference_ready` state is assigned only through the explicit human-review decision file.
 
-Canonical papers audited: **140**.
+Canonical papers audited: **139**.
 
 ## Priority Summary
 
@@ -12,9 +12,9 @@ Canonical papers audited: **140**.
 | --- | ---: |
 | critical | 10 |
 | major | 11 |
-| moderate | 5 |
-| light | 14 |
-| low | 2 |
+| moderate | 6 |
+| light | 13 |
+| low | 1 |
 | reviewed | 96 |
 | reference_ready | 2 |
 
@@ -22,13 +22,13 @@ Canonical papers audited: **140**.
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 43 |
+| argument_flow | 44 |
 | conclusion | 16 |
-| concrete_foothold | 43 |
+| concrete_foothold | 44 |
 | limitations | 1 |
 | object_intuition | 93 |
 | orientation | 36 |
-| result_interpretation | 15 |
+| result_interpretation | 16 |
 
 ## Revision Queue
 
@@ -60,6 +60,7 @@ Canonical papers audited: **140**.
 | moderate | moderate | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 7 | 311.9 | 4/7 | object_intuition, argument_flow, concrete_foothold |
 | moderate | moderate | `universality-and-robustness-of-the-coherent-sector-in-m-a64842b3` | 4 | 333.5 | 3/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold |
 | moderate | moderate | `modal-triplet-theory-from-mtt-to-string-theory-a-first-4b1100fc` | 2 | 339.5 | 3/7 | object_intuition, argument_flow, result_interpretation, conclusion |
+| moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-quantum-mechanics` | 14 | 459.6 | 6/7 | object_intuition |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
 | light | light | `modal-triplet-theory-from-mtt-to-pilot-wave-dynamics` | 6 | 400.2 | 5/7 | object_intuition, concrete_foothold |
@@ -70,12 +71,10 @@ Canonical papers audited: **140**.
 | light | light | `capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90` | 0 | 7920.0 | 5/7 | object_intuition, concrete_foothold |
 | light | light | `modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8` | 0 | 9868.0 | 6/7 | object_intuition |
 | light | light | `modal-triplet-theory-parameters-closure-and-structural-ae734bf0` | 0 | 4982.0 | 5/7 | object_intuition, concrete_foothold |
-| light | light | `mtt-gpt-corpus-index-grouped-reference` | 0 | 5585.0 | 4/7 | orientation, object_intuition, conclusion |
 | light | light | `photons-entanglement-and-null-updating-in-modal-triplet-theory` | 0 | 5021.0 | 6/7 | object_intuition |
 | light | light | `selection-fronts-and-boundary-layer-physics-at-the-admi-b6234575` | 0 | 3029.0 | 5/7 | object_intuition, argument_flow |
 | light | light | `when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34` | 0 | 2533.0 | 5/7 | object_intuition, concrete_foothold |
 | low | low | `projection-induced-network-geometry-sprouting-hidden-co-6919523e` | 17 | 552.5 | 7/7 | - |
-| low | low | `the-universe-has-a-bad-memory` | 0 | 70482.0 | 7/7 | - |
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
 | reviewed | critical | `fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce` | 43 | 69.9 | 7/7 | - |
 | reviewed | moderate | `wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8` | 34 | 375.2 | 7/7 | - |
