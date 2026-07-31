@@ -13,9 +13,9 @@ Canonical papers audited: **139**.
 | critical | 3 |
 | major | 6 |
 | moderate | 2 |
-| light | 6 |
+| light | 5 |
 | low | 1 |
-| reviewed | 119 |
+| reviewed | 120 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -24,10 +24,10 @@ Canonical papers audited: **139**.
 | --- | ---: |
 | argument_flow | 32 |
 | conclusion | 8 |
-| concrete_foothold | 31 |
+| concrete_foothold | 30 |
 | object_intuition | 86 |
-| orientation | 53 |
-| result_interpretation | 8 |
+| orientation | 54 |
+| result_interpretation | 9 |
 
 ## Revision Queue
 
@@ -48,7 +48,6 @@ Canonical papers audited: **139**.
 | light | light | `why-general-relativity-and-string-theory-are-the-same-a-98920533` | 4 | 927.2 | 5/7 | object_intuition, conclusion |
 | light | light | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 1 | 7592.0 | 6/7 | object_intuition |
 | light | light | `modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8` | 0 | 9868.0 | 6/7 | object_intuition |
-| light | light | `modal-triplet-theory-parameters-closure-and-structural-ae734bf0` | 0 | 4982.0 | 5/7 | object_intuition, concrete_foothold |
 | light | light | `photons-entanglement-and-null-updating-in-modal-triplet-theory` | 0 | 5021.0 | 6/7 | object_intuition |
 | low | low | `projection-induced-network-geometry-sprouting-hidden-co-6919523e` | 17 | 552.5 | 7/7 | - |
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
@@ -80,6 +79,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed` | 12 | 283.5 | 6/7 | object_intuition |
 | reviewed | major | `modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6` | 12 | 223.9 | 7/7 | - |
 | reviewed | major | `constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b` | 11 | 156.5 | 7/7 | - |
+| reviewed | moderate | `modal-triplet-theory-parameters-closure-and-structural-ae734bf0` | 11 | 276.1 | 4/7 | orientation, object_intuition, result_interpretation |
 | reviewed | major | `the-projection-admissibility-principle-descent-recovery-b0fd6e59` | 11 | 176.0 | 6/7 | object_intuition |
 | reviewed | major | `universality-and-robustness-of-the-coherent-sector-in-m-a64842b3` | 11 | 181.1 | 6/7 | orientation |
 | reviewed | major | `coherent-kinematics-in-modal-triplet-theory-chart-persi-359fefe8` | 10 | 151.1 | 4/7 | orientation, object_intuition, concrete_foothold |

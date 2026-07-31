@@ -968,6 +968,14 @@
       "reviewed_main_tex_sha256": "7c7def0a0f309fe350508a0deccc23d706f958582cb084095d1038be2d4b8898",
       "reviewed_pdf_sha256": "af47f7af2a5b645ef21301b828ccd9640b14c2f297e2d92cf1fde66ee0f95af1",
       "reviewed_source_tree_sha256": "1c9ffe0b55f1f39304948ff1f135889e78cc72e80ca19bbb7aba8194fc33a471"
+    },
+    "modal-triplet-theory-parameters-closure-and-structural-ae734bf0": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 replaces the zero-parameter and universal-falsifier narrative by a tier-relative identifiability ledger. It distinguishes structural assumptions, selected discrete data, one continuous construction primitive, fifteen measured source coordinates, nuisance and metrology inputs, derived outputs, uncertainty data, and genuinely held-out tests; proves raw symbol-count noninvariance, the nonpredictive status of profile replay, and the insufficiency of a scalar capacity diagnostic to reconstruct source data; replaces absence of a global right inverse by a scope-bound conditional test; preserves the current 12-of-12 profile-standard result while keeping strict no-knob closure at 2-of-9; supplies exact certificate, provenance, cross-sector, and held-out falsification capsules; and the complete 13-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "f7fb7e7c3f6e7355614a06c8717e4d3cc9e554c20c5401cdbe192b8ccdb77d2e",
+      "reviewed_pdf_sha256": "99a37230c678968a867c6ced40646861663bfe5beef782376f2f2e77ab99b4e6",
+      "reviewed_source_tree_sha256": "0d0dcea1b6bb19b5603fad22419813eb857deffc8b3d1f28e61a43653ab8d984"
     }
   }
 }

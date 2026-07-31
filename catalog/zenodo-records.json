@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18255573",
+      "created": "2026-07-31T04:47:44.983992+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21713803",
+      "files": [
+        {
+          "checksum": "md5:18805288dc704a1a2dc010962656d072",
+          "content_url": "https://zenodo.org/api/records/21713803/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 336547
+        }
+      ],
+      "id": "21713803",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21713803",
+      "resource_type": "publication",
+      "title": "Parameters, Source Provenance, and Structural Falsifiability in Modal Triplet Theory An Auditable Identifiability Ledger",
+      "updated": "2026-07-31T04:47:45.250831+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18261773",
       "created": "2026-07-31T04:26:14.001620+00:00",
       "creators": [

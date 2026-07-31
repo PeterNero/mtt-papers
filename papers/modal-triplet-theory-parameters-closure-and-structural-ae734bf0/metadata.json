@@ -1,65 +1,112 @@
 {
-  "abstract": "Modal Triplet Theory (MTT) derives quantum mechanics, quantum field theory, spacetime geometry, irreversibility, and cosmology from a projection-based architecture with finite admissibility. While these results are technically explicit and mutually consistent, questions naturally arise regarding the status of parameters, residual degrees of freedom, and falsifiability. In this work we provide a unified accounting of all parameters appearing in MTT. We classify them according to structural necessity, bounded geometric control, superset latent variables, and remaining bottleneck degrees of freedom, and explain how many apparent parameters collapse into a small set of invariant admissibility margins. We then develop a systematic falsifiability framework appropriate to projection-based theories, identifying exact no-go results, bounded inequality violations, cross-sector closure failures, and near-term physical discriminators. This paper does not extend the dynamics of Modal Triplet Theory. Its purpose is to make explicit the conditions under which the existing theory would fail.",
+  "abstract": "A parameter count is meaningful only relative to a model, a physical tier, a choice of observables, a quotient by redundancies, and a rule separating construction data from held-out tests. This paper rebuilds the parameter and falsifiability account of Modal Triplet Theory (MTT) around that principle. We distinguish structural assumptions, selected discrete data, continuous construction primitives, measured source coordinates, nuisance and metrology inputs, derived outputs, and uncertainty data. We prove that raw symbol counts are not invariant under reparameterization or gauge redundancy, that replay of data used in construction is not a held-out prediction, that loss of a global right inverse is not by itself a falsifier, and that a scalar coherence-capacity diagnostic cannot eliminate the full source ledger. At the current profile-standard Standard Model tier, the auditable ledger contains one shared electroweak construction primitive and fifteen measured common-scheme source coordinates. The transported couplings, charged Yukawa rows, Higgs row, covariance workspace, and finite operators are outputs of that declared construction and are not counted again. This is a coherent embedding and reuse result, not a strict reduction of the Standard Model parameter set. The stronger no-knob program remains two of nine upgrades closed. We give valid falsification capsules for exact algebraic results, numerical certificates, source provenance, and held-out empirical predictions. The result is an honest parameter-identifiability framework: MTT has substantial structural economy, but strict numerical economy must be demonstrated rather than inferred from notation.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January 2026",
+  "current_version": "v2",
+  "date": "Version 2, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18255573",
-    "created": "2026-01-15T10:44:15.004648+00:00",
+    "created": "2026-07-31T04:47:44.983992+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18255574",
+    "doi": "10.5281/zenodo.21713803",
     "files": [
       {
-        "checksum": "md5:241796c315d2bd54e865be268f8cae4c",
-        "content_url": "https://zenodo.org/api/records/18255574/files/Modal_Triplet_Theory__Parameters__Closure__and_Structural_Falsifiability%20(1).pdf/content",
-        "key": "Modal_Triplet_Theory__Parameters__Closure__and_Structural_Falsifiability (1).pdf",
-        "size": 227396
+        "checksum": "md5:18805288dc704a1a2dc010962656d072",
+        "content_url": "https://zenodo.org/api/records/21713803/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 336547
       }
     ],
-    "id": "18255574",
-    "match_kind": "title_or_file",
+    "id": "21713803",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18255574",
+    "publication_date": "2026-07-31",
+    "record_url": "https://zenodo.org/records/21713803",
     "resource_type": "publication",
-    "title": "Modal Triplet Theory: Parameters, Closure, and Structural Falsifiability",
-    "updated": "2026-01-15T10:44:16.109851+00:00",
-    "version": "v1.0"
+    "title": "Parameters, Source Provenance, and Structural Falsifiability in Modal Triplet Theory An Auditable Identifiability Ledger",
+    "updated": "2026-07-31T04:47:45.250831+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "2aed535c6bfeb44a143e4afbf94e4da2639bc7f20b217befcf64539db9535adc",
+  "main_tex_sha256": "f7fb7e7c3f6e7355614a06c8717e4d3cc9e554c20c5401cdbe192b8ccdb77d2e",
   "paper_id": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
-  "paper_md_sha256": "faaf8b39d03b1e06b23e82128145b899429fa74128f6f9d843a5a34b6366006e",
+  "paper_md_sha256": "bd04261aa9b92b673d9a6dcb70160812b4846d1066b12b5e0e981d07247c0547",
   "release_state": "zenodo_released",
-  "result_refs": [],
+  "result_refs": [
+    "charged_yukawa_higgs_profile",
+    "current_global_lock",
+    "final_12_of_12_audit",
+    "native_gauge_group",
+    "precision_15_source_transport",
+    "precision_8x8_workspace",
+    "strict_pew_row",
+    "strict_upgrade_ledger",
+    "su3_finite_gauge_spectrum"
+  ],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "9d7dd5ab94642bc7deed58170ef2cfe659241011a10644a682fd12fafd6be4aa",
+    "selected_revision": true
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 43109,
+      "bytes": 32774,
       "path": "main.tex",
-      "sha256": "2aed535c6bfeb44a143e4afbf94e4da2639bc7f20b217befcf64539db9535adc"
+      "sha256": "f7fb7e7c3f6e7355614a06c8717e4d3cc9e554c20c5401cdbe192b8ccdb77d2e"
     },
     {
       "bytes": 3784,
       "path": "series.sty",
       "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+    },
+    {
+      "bytes": 2892,
+      "path": "main.bib",
+      "sha256": "127a459fefb43e467e985764b92f7640cee2499fe90a3da4881cc7d734fe5732"
+    },
+    {
+      "bytes": 336547,
+      "path": "main.pdf",
+      "sha256": "99a37230c678968a867c6ced40646861663bfe5beef782376f2f2e77ab99b4e6"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "2 Meta & Diagnosis & Universality/_work/Modal_Triplet_Theory__Parameters__Closure__and_Structural_Falsifiability"
   },
-  "source_tree_sha256": "5ac3e894d5fea4f4af7ee202264434aa573062b6cb0e45653515cdb8bc3f4b72",
-  "title": "Modal Triplet Theory: Parameters, Closure, and Structural Falsifiability",
+  "source_tree_sha256": "0d0dcea1b6bb19b5603fad22419813eb857deffc8b3d1f28e61a43653ab8d984",
+  "title": "Parameters, Source Provenance, and Structural Falsifiability in Modal Triplet Theory An Auditable Identifiability Ledger",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18255573",
+      "created": "2026-07-31T04:47:44.983992+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21713803",
+      "files": [
+        {
+          "checksum": "md5:18805288dc704a1a2dc010962656d072",
+          "content_url": "https://zenodo.org/api/records/21713803/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 336547
+        }
+      ],
+      "id": "21713803",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21713803",
+      "resource_type": "publication",
+      "title": "Parameters, Source Provenance, and Structural Falsifiability in Modal Triplet Theory An Auditable Identifiability Ledger",
+      "updated": "2026-07-31T04:47:45.250831+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18255573",
       "created": "2026-01-15T10:44:15.004648+00:00",

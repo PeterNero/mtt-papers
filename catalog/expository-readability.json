@@ -4,20 +4,20 @@
   "papers": 139,
   "priority_counts": {
     "critical": 3,
-    "light": 6,
+    "light": 5,
     "low": 1,
     "major": 6,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 119
+    "reviewed": 120
   },
   "missing_dimension_counts": {
     "argument_flow": 32,
     "conclusion": 8,
-    "concrete_foothold": 31,
+    "concrete_foothold": 30,
     "object_intuition": 86,
-    "orientation": 53,
-    "result_interpretation": 8
+    "orientation": 54,
+    "result_interpretation": 9
   },
   "forbidden_boilerplate_hits": [],
   "rows": [
@@ -2141,28 +2141,29 @@
     },
     {
       "paper_id": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
-      "title": "Modal Triplet Theory: Parameters, Closure, and Structural Falsifiability",
-      "total_words": 4982,
-      "narrative_words": 4982,
-      "formal_results": 0,
-      "proofs": 0,
-      "narrative_words_per_result": 4982.0,
-      "orientation": true,
+      "title": "Parameters, Source Provenance, and Structural Falsifiability in Modal Triplet Theory An Auditable Identifiability Ledger",
+      "total_words": 4006,
+      "narrative_words": 3037,
+      "formal_results": 11,
+      "proofs": 6,
+      "narrative_words_per_result": 276.1,
+      "orientation": false,
       "object_intuition": false,
       "argument_flow": true,
-      "result_interpretation": true,
-      "concrete_foothold": false,
+      "result_interpretation": false,
+      "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
-      "coverage_dimensions": 5,
-      "audit_priority": "light",
-      "heuristic_priority": "light",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "coverage_dimensions": 4,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "moderate",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 2 replaces the zero-parameter and universal-falsifier narrative by a tier-relative identifiability ledger. It distinguishes structural assumptions, selected discrete data, one continuous construction primitive, fifteen measured source coordinates, nuisance and metrology inputs, derived outputs, uncertainty data, and genuinely held-out tests; proves raw symbol-count noninvariance, the nonpredictive status of profile replay, and the insufficiency of a scalar capacity diagnostic to reconstruct source data; replaces absence of a global right inverse by a scope-bound conditional test; preserves the current 12-of-12 profile-standard result while keeping strict no-knob closure at 2-of-9; supplies exact certificate, provenance, cross-sector, and held-out falsification capsules; and the complete 13-page PDF was visually inspected.",
       "missing_dimensions": [
+        "orientation",
         "object_intuition",
-        "concrete_foothold"
+        "result_interpretation"
       ]
     },
     {
