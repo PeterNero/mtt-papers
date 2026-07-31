@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
-    "zenodo_records": 277,
-    "zenodo_records_matched": 277,
+    "zenodo_records": 278,
+    "zenodo_records_matched": 278,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -14076,54 +14076,82 @@
       ]
     },
     {
-      "abstract": "In perturbative string theory, the requirement of quantum Weyl invariance of the worldsheet sigma model yields vanishing beta functions whose leading-order content reproduces the Einstein field equations for the target-space metric, together with equations for additional background fields and higher-curvature corrections. In Modal Triplet Theory (MTT), an independent line of analysis shows that coherent-sector admissibility and stability under coarse-graining select Einstein\u2013Hilbert dynamics as the unique infrared effective description, again with controlled higher-curvature corrections governed by a spectral gap \\lambda_\\ast. In this work we establish, under explicit encoding and scheme-equivalence hypotheses, that these two consistency conditions are equivalent shadows of a single upstairs admissibility constraint. We define the string corner as the regime in which coherent overlap data admit a two-dimensional sigma-model encoding, and we show that coherent admissibility is equivalent, up to controlled truncation error \\mathcal{O}(\\lambda_\\ast^{-1}), to the existence of a worldsheet renormalization-group fixed point, which is in turn equivalent to satisfaction of the infrared Einstein equations with suppressed corrections. General Relativity and perturbative string theory are thus shown to be dual diagnostics of the same coherent fixed-point condition, rather than one being derived from the other.",
+      "abstract": "The statement that General Relativity falls out of string theory is memorable but easy to misunderstand. A perturbative string background is described by a two-dimensional quantum field theory. Its couplings include the target-space metric, antisymmetric tensor, dilaton, and, in appropriate models, gauge and fermionic data. Requiring quantum Weyl consistency constrains these couplings. At leading order those constraints agree, after the required conventions and field redefinitions, with equations derived from a target-space effective action containing the Einstein-Hilbert term. Pure Einstein gravity appears only in a further low-energy and restricted field corner. This paper explains that chain without treating measurement, observation, or mathematical representation as physically privileged acts. It then gives the restrained Modal Triplet Theory (MTT) interpretation: the worldsheet and spacetime equations may be two diagnostics emitted by one preprojection source, but this is established only when explicit source maps and a controlled comparison square are constructed. The formal theorem is owned by the companion technical paper and is not repeated here. Current q79 work provides five of twelve worldsheet contract rows, partially provides two, and leaves five open. The result is therefore an explanatory bridge and a concrete completion program, not a proof that GR and string theory are the same theory or that MTT has already derived either one in full.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January, 2026",
+      "current_version": "v2",
+      "date": "July 2026, Version 2",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18262011",
-        "created": "2026-01-15T20:27:51.278187+00:00",
+        "created": "2026-07-31T10:33:44.771107+00:00",
         "creators": [
           "Nero, Peter"
         ],
-        "doi": "10.5281/zenodo.18262012",
+        "doi": "10.5281/zenodo.21719670",
         "files": [
           {
-            "checksum": "md5:9093cbfe80261ddfd3606ddad5915d42",
-            "content_url": "https://zenodo.org/api/records/18262012/files/Why__GR_Falls_Out_of_String_Theory___A_Coherent_Admissibility_Shadow_Bridge_in_Modal_Triplet_Theory%20(2).pdf/content",
-            "key": "Why__GR_Falls_Out_of_String_Theory___A_Coherent_Admissibility_Shadow_Bridge_in_Modal_Triplet_Theory (2).pdf",
-            "size": 327663
+            "checksum": "md5:7eeb42d4298208c367efd43da8351f2a",
+            "content_url": "https://zenodo.org/api/records/21719670/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 285461
           }
         ],
-        "id": "18262012",
-        "match_kind": "title_or_file",
+        "id": "21719670",
+        "match_kind": "published_draft_reconciliation",
         "match_score": 1.0,
-        "publication_date": "2026-01-15",
-        "record_url": "https://zenodo.org/records/18262012",
+        "publication_date": "2026-07-31",
+        "record_url": "https://zenodo.org/records/21719670",
         "resource_type": "publication",
-        "title": "Why General Relativity Falls Out of String Theory",
-        "updated": "2026-01-15T20:27:51.726957+00:00",
-        "version": "v1.0"
+        "title": "Why General Relativity Appears in Perturbative String Theory: A careful MTT interpretation of worldsheet consistency and target-space dynamics",
+        "updated": "2026-07-31T10:33:45.062345+00:00",
+        "version": "v2"
       },
-      "main_tex_sha256": "1d167ec931b27c686537a6e9fc7c66a28243475d1b8f9b4c1100e19b5645b96c",
+      "main_tex_sha256": "79d64f02f02218a6e859a06b20225a245e24d610c01bb4346fce361ab39f1711",
       "paper_id": "why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7",
-      "paper_md_sha256": "793e7ce46f4a02495745c7a447033370ce91f029687b0334a3275e9677dc5d31",
+      "paper_md_sha256": "f00a083dab4cbb20d4eabc50166d1e4304b24e5dafb04ff9186712a2efa64886",
       "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "dcf0f964d4fdf8cb51838bb89250c88e3ac13423b7c86ac471b1a0e3fbcdb45d",
+        "selected_revision": true,
+        "superseded_source_path": "11 General Relativity & Geometry/_work/Why__GR_Falls_Out_of_String_Theory___A_Coherent_Admissibility_Shadow_Bridge_in_Modal_Triplet_Theory"
       },
       "source_provenance": {
         "legacy_source_path": "11 General Relativity & Geometry/_work/Why__GR_Falls_Out_of_String_Theory___A_Coherent_Admissibility_Shadow_Bridge_in_Modal_Triplet_Theory"
       },
-      "source_tree_sha256": "ee20da870550d1176ba2af1017b51ad6ebc32d2aa0f94c923a2a7da60810e60c",
-      "title": "Why GR Falls Out of String Theory: A Coherent-Admissibility Shadow Bridge in Modal Triplet Theory",
+      "source_tree_sha256": "d592c809779831d594d8c7c1703e87b80fc278d07a883270107cedc1de343abb",
+      "title": "Why General Relativity Appears in Perturbative String Theory: A careful MTT interpretation of worldsheet consistency and target-space dynamics",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18262011",
+          "created": "2026-07-31T10:33:44.771107+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21719670",
+          "files": [
+            {
+              "checksum": "md5:7eeb42d4298208c367efd43da8351f2a",
+              "content_url": "https://zenodo.org/api/records/21719670/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 285461
+            }
+          ],
+          "id": "21719670",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-31",
+          "record_url": "https://zenodo.org/records/21719670",
+          "resource_type": "publication",
+          "title": "Why General Relativity Appears in Perturbative String Theory: A careful MTT interpretation of worldsheet consistency and target-space dynamics",
+          "updated": "2026-07-31T10:33:45.062345+00:00",
+          "version": "v2"
+        },
         {
           "concept_doi": "10.5281/zenodo.18262011",
           "created": "2026-01-15T20:27:51.278187+00:00",

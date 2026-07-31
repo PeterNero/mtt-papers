@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18262011",
+      "created": "2026-07-31T10:33:44.771107+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21719670",
+      "files": [
+        {
+          "checksum": "md5:7eeb42d4298208c367efd43da8351f2a",
+          "content_url": "https://zenodo.org/api/records/21719670/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 285461
+        }
+      ],
+      "id": "21719670",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21719670",
+      "resource_type": "publication",
+      "title": "Why General Relativity Appears in Perturbative String Theory: A careful MTT interpretation of worldsheet consistency and target-space dynamics",
+      "updated": "2026-07-31T10:33:45.062345+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18261979",
       "created": "2026-07-31T10:24:13.080481+00:00",
       "creators": [

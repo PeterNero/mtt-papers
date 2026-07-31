@@ -1088,6 +1088,14 @@
       "reviewed_main_tex_sha256": "25b4b7e0707e660d25b4e57cc80d4d91004c23e8d2f59567bed316e5cb44574d",
       "reviewed_pdf_sha256": "97f6bb5c56ce96d12d66eb665e295b825a4405c1549b5baca4006fe82fdaa006",
       "reviewed_source_tree_sha256": "8c44ec93b6f80ab8715da28af296b871831a110c2b0946e399fa85a145520587"
+    },
+    "why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 rebuilds the paper as the standalone explanatory companion to the formal worldsheet-spacetime diagnostic-square paper. It explains how target fields become worldsheet couplings, why Weyl-anomaly coefficients constrain them, how the target effective action enters, and why pure four-dimensional Einstein gravity is a further restricted low-energy corner; distinguishes alpha-prime, string-loop, worldsheet, scheme, compactification, and MTT-projection controls; removes the duplicated equivalence theorem and assumed proper-time/RG conjugacy; treats the worldsheet and measurement as ordinary physical processes; explains the MTT common-source diagram without treating it as proof; states the authoritative five-available, two-partial, five-open q79 position and the B.QG.01/B.ACTION.01 boundary; and the complete 8-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "79d64f02f02218a6e859a06b20225a245e24d610c01bb4346fce361ab39f1711",
+      "reviewed_pdf_sha256": "ce9b6d92db248ab5174b48a1b79aadcfa7232d9ff9daeb7334dcceb0cfc1aceb",
+      "reviewed_source_tree_sha256": "d592c809779831d594d8c7c1703e87b80fc278d07a883270107cedc1de343abb"
     }
   }
 }

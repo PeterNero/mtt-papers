@@ -10,27 +10,26 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| moderate | 2 |
+| moderate | 1 |
 | light | 1 |
-| reviewed | 134 |
+| reviewed | 135 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 32 |
-| conclusion | 4 |
+| argument_flow | 33 |
+| conclusion | 3 |
 | concrete_foothold | 23 |
-| object_intuition | 85 |
-| orientation | 63 |
+| object_intuition | 84 |
+| orientation | 64 |
 | result_interpretation | 7 |
 
 ## Revision Queue
 
 | Effective priority | Heuristic | Paper | Formal results | Narrative words/result | Coverage | Missing |
 | --- | --- | --- | ---: | ---: | ---: | --- |
-| moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
@@ -167,6 +166,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `loop-quantum-gravity-as-a-shadow-of-coherent-fixed-poin-9133be75` | 0 | 2025.0 | 3/7 | orientation, object_intuition, argument_flow, concrete_foothold |
 | reviewed | light | `the-central-circle-inertia-mass-gravity-and-time-as-sha-5faa2369` | 0 | 3012.0 | 4/7 | orientation, object_intuition, concrete_foothold |
 | reviewed | low | `theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5` | 0 | 1849.0 | 7/7 | - |
+| reviewed | light | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 0 | 2264.0 | 4/7 | orientation, argument_flow, concrete_foothold |
 | reference_ready | reference_ready | `modal-triplet-theory-foundations` | 8 | 715.0 | 7/7 | - |
 | reference_ready | reference_ready | `the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793` | 0 | 7384.0 | 6/7 | concrete_foothold |
 
