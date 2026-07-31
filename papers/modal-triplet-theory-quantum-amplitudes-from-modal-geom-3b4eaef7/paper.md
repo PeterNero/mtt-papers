@@ -443,6 +443,8 @@ Quantum amplitudes are downstream objects. They require a local quantum algebra,
 
 The same framework proves the limits of current claims. An action and graph grammar do not select a state or scattering regime. Same-input agreement is equivalence, not held-out prediction. Current MTT therefore supports a rigorous selected free-field source, a conditional formal interacting pipeline, and profile-level Standard-Model equivalence. Full first-principles phenomenology awaits the selected upper action, fixed-coupling interacting completion, no-knob or explicitly primitive parameter source, precision transport, uncertainty budget, and held-out observable packet.
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
-The amplitude transport and provenance theorems proved here are analytic statements. The curated repository <https://github.com/PeterNero/mtt-results-repro> supplies current MTT status context. The mapped is profile-replay evidence for embedded renormalized-Standard-Model equivalence. The mapped is an open stronger-upgrade ledger. Neither row proves the analytic theorems in this paper, and the open row is not evidence of closure. Exact artifacts, tier labels, and source hashes are retained in the repository.
+The amplitude transport and provenance theorems proved here are analytic statements. The curated [MTT Results Reproduction repository](https://github.com/PeterNero/mtt-results-repro) supplies current MTT status context. The mapped `A04/final_12_of_12_audit` row is profile-replay evidence for embedded renormalized-Standard-Model equivalence. The mapped `A05/strict_upgrade_ledger` row is an open stronger-upgrade ledger. Neither row proves the analytic theorems in this paper, and the open row is not evidence of closure. Exact artifacts, tier labels, and source hashes are retained in the repository.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
