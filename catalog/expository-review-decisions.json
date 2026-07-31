@@ -984,6 +984,14 @@
       "reviewed_main_tex_sha256": "d03c6de4843fc501295fd52cadcbb33cb25ad2da36881497e2593dfb7c8e74b6",
       "reviewed_pdf_sha256": "4f93cdbf38b0f29d04b0c490d6799444eceb2581e9faf122034e1c12bb23575f",
       "reviewed_source_tree_sha256": "9981ce82f5a81e4ae7a73e2cc5cedc9e83a2983bcb19eb801d990e24e5fbc6e0"
+    },
+    "projection-limited-coherence-a-structural-theory-of-eff-3343fe62": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 replaces the universal projection narrative by exact, separately typed criteria. It proves the deterministic fiber and stochastic lumpability tests; distinguishes representative sections from actual source recovery; gives explicit many-to-one and no-continuous-section counterexamples with invertible shadow dynamics; defines compatibility through the realizable image or joint measure; restricts entropy claims to conditional information loss and data processing unless a physical entropy-production law is supplied; restricts capacity to a control margin unless a constitutive or conservation law is supplied; withdraws memory-to-computational-irreducibility inference; reclassifies biology, cognition, AI, consciousness, and civilization material as domain-model research programs; provides a seven-part validation certificate; and the complete 14-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "a9852de96917d666ae7f305a732a38c2c603dc91c45884c8e3c430b2153d11bd",
+      "reviewed_pdf_sha256": "97b54ee6e79527c7c3eab12fd8a5a14ee66d93ad9c71319f10cdcc018dacfb77",
+      "reviewed_source_tree_sha256": "833c3a1cff6e7f802e264a89e0078c87a4f20759a4d1c47e98f869fec04632a4"
     }
   }
 }

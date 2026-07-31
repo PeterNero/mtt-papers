@@ -1,1806 +1,780 @@
-%======================================================================
-% Projection-Limited Coherence: A Structural Theory of Effective Description
-% from Fundamental Physics to Consciousness and Civilization
-%
-% MAXIMAL / FULL RIGOR VERSION
-% Uses series.sty as requested.
-%
-% This is PART 1 / 8.
-%======================================================================
-
 \documentclass[11pt]{article}
-
-%----------------------------- Style -----------------------------------
-\usepackage{series} % user-specified house style (assumed available)
-\usepackage{geometry}
-\geometry{margin=1in}
-
-%----------------------------- Math ------------------------------------
-\usepackage{amsmath,amssymb,amsfonts,mathtools}
-\usepackage{amsthm}
-\usepackage{bm}
-
-%----------------------------- Utilities --------------------------------
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{enumitem}
+\usepackage{series}
+\usepackage{booktabs,tabularx,array}
 \usepackage{xcolor}
-\usepackage{microtype}
 
-\hypersetup{
-  colorlinks=true,
-  linkcolor=blue,
-  citecolor=blue,
-  urlcolor=blue
-}
+\newcommand{\X}{\mathsf X}
+\newcommand{\Y}{\mathsf Y}
+\newcommand{\Z}{\mathsf Z}
+\newcommand{\A}{\mathcal A}
+\newcommand{\Rset}{\mathcal R}
+\newcommand{\B}{\mathcal B}
+\newcommand{\K}{\mathsf K}
+\newcommand{\Ccap}{\mathcal C}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\MTT}{\mathrm{MTT}}
 
-%----------------------------- Theorem environments ----------------------
-\theoremstyle{plain}
-
-\theoremstyle{definition}
-
-\theoremstyle{remark}
-
-%----------------------------- Notation macros ---------------------------
-\newcommand{\X}{\mathsf{X}}
-\newcommand{\Y}{\mathsf{Y}}
-\newcommand{\Zz}{\mathsf{Z}}
-\newcommand{\Aad}{\mathsf{A}}     % admissible set
-\newcommand{\Bbd}{\partial\Aad}    % admissibility boundary
-\newcommand{\PiC}{\Pi_{\mathrm{coh}}}
-\newcommand{\PhiU}{\Phi}
-\newcommand{\Tmap}{\mathcal{T}}
-\newcommand{\Obs}{\mathsf{Obs}}
-\newcommand{\Hist}{\mathsf{Hist}}
-
-\newcommand{\Borel}{\mathcal{B}}
-
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\N}{\mathbb{N}}
-
-\title{Projection-Limited Coherence:\\
-A Structural Theory of Effective Description\\
-from Fundamental Physics to Consciousness and Civilization}
-
-\author{ }
-
-\date{}
+\title{\textbf{Projection-Limited Coherence}\\
+\large Exact Criteria for Effective Dynamics and a Cross-Domain Research Program}
+\author{Peter Nero}
+\date{Version 2, July 2026}
 
 \begin{document}
 \maketitle
 
-%======================================================================
 \begin{abstract}
-Across physics, biology, cognition, artificial intelligence, and large-scale social systems,
-effective descriptions exhibit recurring features: (i) stability only within bounded regimes,
-(ii) abrupt irreversible breakdowns, (iii) hidden correlations among variables treated as independent,
-and (iv) long-horizon behavior that admits no general shortcut prediction even when underlying
-dynamics are deterministic. These features are typically analyzed in isolation and explained by
-domain-specific mechanisms.
+Many sciences replace a detailed state by a smaller set of effective
+variables.  This paper develops a substrate-neutral framework for asking
+what such a projection does and does not imply.  For a measurable source
+space $\X$, dynamics $\Phi$, observation map $\Pi:\X\to\Y$, admissible
+domain $\A$, and declared margin $\Ccap$, we separate five questions:
+whether deterministic dynamics descends to $\Y$, whether the descended map
+is invertible, whether a projected stochastic process is Markov, whether
+source information can be recovered, and whether the realizable image
+$\Rset=\Pi(\A)$ obeys compatibility constraints.  Each question has its own
+criterion.
 
-This paper gives a unifying structural framework—\emph{projection-limited coherence}—that
-explains these features without assuming any particular substrate or equation of motion.
-The framework isolates four minimal ingredients:
-(1) an underlying measurable dynamical system $(\X,\Borel(\X),\Phi_t)$,
-(2) a many-to-one measurable projection $\Pi:\X\to\Y$ defining effective (shadow) variables,
-(3) a finite \emph{coherence capacity} controlling the domain where truncation is well-posed,
-and (4) generic nonexistence of a global measurable section (right-inverse) for $\Pi$ across
-admissibility boundaries.
-From these alone we prove:
-(A) \emph{structural irreversibility} of shadow evolution even when $\Phi_t$ is invertible,
-(B) \emph{computational irreducibility} of basin membership and outcome selection for broad classes
-of systems with nontrivial boundary structure,
-and (C) \emph{hidden compatibility constraints} among shadow variables arising from shared pre-images,
-yielding “nonlocal” relations without causal interaction.
+We prove the exact fiber criterion for deterministic descent and the
+corresponding lumpability criterion for stochastic kernels.  We show by
+counterexample that a many-to-one projection, or even the absence of a
+continuous section, need not make the effective dynamics irreversible.
+Conversely, failure of the fiber criterion produces history dependence but
+does not by itself prove computational irreducibility.  Information loss is
+expressed by conditional entropy and data processing; monotone physical
+entropy requires an additional dynamics and entropy-production law.
+Likewise, a capacity is a control margin until a constitutive equation,
+conservation law, or source term is supplied.
 
-We then instantiate the framework in Modal Triplet Theory (MTT), where observable four-dimensional
-physics arises as the coherent-sector projection of deterministic higher-dimensional dynamics via a
-joint Riesz projector and internal pushforward. We show how quantum mechanics, general relativity,
-probabilistic outcomes, and the arrow of time emerge as shadow descriptions within admissible slabs.
-Finally, we apply the same formal structure to brains and consciousness, artificial intelligence
-architectures, and civilizations, using a uniform template (underlying dynamics, projection, coherent
-sector, capacity, boundaries, and induced hidden relations).
+The resulting framework is useful precisely because it is selective.  It
+organizes current Modal Triplet Theory constructions and provides a template
+for models in physics, biology, cognition, artificial intelligence, and
+collective systems.  The mathematical template transfers across domains;
+physical conservation laws, entropy laws, selection principles, and claims
+about consciousness or civilization do not.  Such applications are stated
+as hypotheses with explicit validation obligations.
 \end{abstract}
+
+\section*{Version 2 revision note}
+
+\begin{description}[style=nextline]
+\item[Supersedes.]
+Version 1, DOI \url{https://doi.org/10.5281/zenodo.18274610}.
+\item[Reason.]
+Version 1 treated many-to-one projection, finite capacity, and failure of a
+global section as sufficient for irreversibility, entropy increase,
+computational irreducibility, and cross-domain hidden relations.  Those
+implications require different hypotheses and are false in that generality.
+\item[Resolution.]
+Version 2 replaces the universal chain by exact descent, lumpability,
+recovery, image-geometry, information, and first-exit criteria.  Explicit
+counterexamples mark the logical boundaries.  Capacity is kept separate
+from conservation and entropy, and all nonphysical applications are
+reclassified as model-building programs.
+\item[Retained content.]
+The central organizing idea survives: an effective description is governed
+jointly by a source dynamics, a projection, a realizable image, and a
+declared validity margin.  These data can generate loss of source
+information, memory, compatibility constraints, and finite validity
+windows, but only when the corresponding criterion is met.
+\item[Open boundary.]
+No universal domain-independent law selects $\Pi$, $\Ccap$, an entropy
+functional, a probability measure, or a capacity dynamics.  Each physical
+or empirical application must supply and test those objects.
+\end{description}
 
 \tableofcontents
 
-%======================================================================
-\section{Introduction}
-%======================================================================
+\section{Why the distinctions matter}
 
-\subsection{Motivation: effective description as a universal constraint}
-Science advances through effective description: reduced variables, stable summaries, and predictive
-laws that ignore microscopic detail. This is not merely pragmatic. In most nontrivial systems,
-full microstate tracking is impossible, and any operational theory must proceed by projection
-from an inaccessible or intractable space of configurations to a smaller space of observables.
+An effective variable is not the same thing as a complete state.  A fluid
+velocity field omits molecular coordinates; a detector record omits most of
+the apparatus microstate; a summary statistic omits most of a data set.
+This observation is elementary, but several different consequences are
+often compressed into the phrase ``information was projected out.''
 
-Across domains, the same phenomena recur:
-\begin{itemize}[leftmargin=2em]
-\item Effective theories are valid only on bounded regimes and fail abruptly at boundaries.
-\item Variables treated as independent exhibit hidden relations and unexplained constraints.
-\item Long-horizon prediction resists shortcut computation even under deterministic microdynamics.
-\item Irreversibility and arrows of time appear even when fundamental laws are time-reversal symmetric.
-\end{itemize}
-These are often treated as separate puzzles: measurement in quantum theory, information loss in
-black holes, fine-tuning and selection in cosmology, emergence and collapse in cognition,
-fragility in large-scale engineered and social systems.
-
-\subsection{Central thesis}
-We claim these phenomena share a single structural origin:
-\emph{projection-limited coherence}. The mechanism is:
-\begin{enumerate}[leftmargin=2em]
-\item an underlying dynamical system $(\X,\Phi_t)$;
-\item a many-to-one projection $\Pi:\X\to\Y$ defining a shadow description;
-\item a finite margin (capacity) on which $\Pi$ supports controlled effective evolution;
-\item loss of global reconstructability (no global section) once admissibility boundaries exist.
+The compression is dangerous because the following statements are not
+equivalent:
+\begin{enumerate}
+\item two source states have the same observed value;
+\item the source dynamics induces an autonomous observed dynamics;
+\item the induced observed dynamics is not invertible;
+\item the observed stochastic process has memory;
+\item the original source state cannot be recovered from the observation;
+\item the observation has larger entropy at later times;
+\item prediction has no computational shortcut.
 \end{enumerate}
-From this, irreversibility, hidden relations, and computational irreducibility follow without
-additional dynamical assumptions such as fundamental randomness.
+This paper gives each statement its own mathematical test.  The purpose is
+not to deny that projection can contribute to irreversibility, memory, or
+hidden constraints.  It is to identify the extra structure that turns that
+possibility into a theorem.
 
-\subsection{Why Modal Triplet Theory matters here}
-MTT provides a mathematically explicit instantiation of this structure in fundamental physics:
-a joint Riesz projector $\Pi_{\mathrm{coh}}$ selecting a coherent sector and an observable pushforward
-$P=I\circ\Pi_{\mathrm{coh}}$, yielding effective 4D physics (QM/QFT/GR) as a shadow of invertible
-higher-dimensional dynamics. Our general framework is written to be independent of MTT, but MTT
-serves as a proof that the structure can be made physically complete and mathematically controlled.
-
-\subsection{What is proved vs. what is interpreted}
-We distinguish:
-\begin{itemize}[leftmargin=2em]
-\item \textbf{Structural theorems (proved):} reconstruction obstructions, shadow irreversibility,
-compatibility constraints from shared pre-images, and (under explicit hypotheses) irreducibility
-statements.
-\item \textbf{Instantiations (proved within MTT corpus):} bounded projectors via Riesz calculus,
-controlled truncation, GR/QM derivations, and measurement/entanglement as disturbance+stabilization.
-\item \textbf{Cross-domain applications (structural mapping):} brains, AI, civilizations. These are
-not “physics equations applied to society,” but the same projection/coherence structure instantiated
-in different substrates.
-\end{itemize}
-
-%======================================================================
-\section{Mathematical Preliminaries and Global Notation}
-%======================================================================
-
-\subsection{Standard Borel spaces and measurable maps}
-We work in the category of standard Borel measurable spaces. A \emph{standard Borel space} is
-a measurable space isomorphic (as a measurable space) to $(S,\Borel(S))$ for some Polish space $S$.
-Standard results: measurable selection theorems, disintegration of measures, and regular conditional
-probabilities hold in this setting (see \cite{Kechris1995,Bogachev2007}).
-
-\subsection{Dynamical systems}
-Let $(\X,\Borel(\X))$ be a standard Borel space.
-A (discrete-time) dynamical system is a measurable map $\Phi:\X\to\X$.
-A (continuous-time) measurable flow is a family $(\Phi_t)_{t\in\R}$ with $\Phi_{t+s}=\Phi_t\circ\Phi_s$
-and joint measurability; we will work primarily with discrete time (iteration) because it is sufficient
-for the structural results and avoids technicalities of measurable flows. When needed, we treat $\Phi_t$
-for $t\in \Delta \N$.
-
-\subsection{Shadow maps and sections}
-Let $\Pi:\X\to\Y$ be measurable with $\Y$ standard Borel. A \emph{section} (right-inverse) of $\Pi$
-on a subset $E\subseteq \Y$ is a measurable map $S:E\to\X$ such that $\Pi\circ S=\Id_E$.
-
-\subsection{Admissibility and capacity}
-We treat admissibility as a \emph{domain of controlled truncation}:
-a subset $\Aad\subseteq \X$ on which the shadow description is stable.
-A \emph{capacity functional} $\Cap:\X\to[0,\infty)$ encodes the admissibility margin, with $\Cap>0$ on
-$\Aad$ and $\Cap=0$ on the boundary.
-
-%======================================================================
-\section{Projection-Limited Coherence: Formal Framework}
-\label{sec:PLC}
-%======================================================================
-
-\subsection{Underlying system and projection}
-We now state the structural framework precisely.
-
-\begin{assumption}[Underlying measurable dynamics]\label{ass:underlying}
-Let $(\X,\Borel(\X))$ be a standard Borel space and let $\Phi:\X\to\X$ be a measurable map.
-In the strongest form (used for irreversibility statements), we assume $\Phi$ is invertible
-with measurable inverse. (In many physical instantiations, $\Phi$ is a time-$\tau$ map of a flow.)
-\end{assumption}
-
-\begin{definition}[Shadow map]\label{def:shadowmap}
-Let $(\Y,\Borel(\Y))$ be a standard Borel space and let $\Pi:\X\to\Y$ be measurable.
-We call $\Pi$ the \emph{shadow map} (projection). Elements of $\Y$ are \emph{shadow states}.
-\end{definition}
-
-\begin{remark}
-We do not assume $\Pi$ is linear, continuous, or generated by averaging; it may be any measurable
-coarse-graining. In MTT, $\Pi$ is a bounded projector (Riesz/spectral projector) composed with
-fiber integration, which is far more structured \cite{NeroFixedPointsI2025,NeroMTTFoundation2025}.
-\end{remark}
-
-\subsection{Coherent sector and admissibility}
-Effective description requires stability of truncation. We model this by an admissible domain.
-
-\begin{definition}[Admissible domain and coherent sector]\label{def:admissible}
-A measurable set $\Aad\subseteq \X$ is an \emph{admissible domain} if the shadow description induced
-by $\Pi$ is well-controlled on $\Aad$ (the meaning of “controlled” depends on the instantiation).
-The \emph{coherent sector} is the shadow image
+The phrase \emph{projection-limited coherence} will mean the following
+research pattern:
 \[
-\Y_{\mathrm{coh}} := \Pi(\Aad)\subseteq \Y.
+  \text{source dynamics}
+  \;+\;\text{observation map}
+  \;+\;\text{realizable image}
+  \;+\;\text{validity margin}.
 \]
-\end{definition}
+It is a template, not a substrate-independent equation of motion.
 
-\begin{definition}[Coherence capacity functional]\label{def:capacity}
-A \emph{coherence capacity functional} is a measurable map $\Cap:\X\to[0,\infty)$ such that
+\section{Typed framework}
+
+\subsection{Source, observation, and admissibility}
+
+Let $(\X,\B(\X))$ and $(\Y,\B(\Y))$ be standard Borel spaces.  Let
 \[
-\Cap(x)>0 \iff x\in\Aad,
-\qquad
-\Cap(x)=0 \iff x\in\Bbd
+  \Phi:\X\longrightarrow\X
+  \qquad\text{and}\qquad
+  \Pi:\X\longrightarrow\Y
 \]
-for some admissible domain $\Aad$ and its boundary $\Bbd$ (interpreted measurably).
-\end{definition}
+be measurable.  The source dynamics may be discrete, or it may be the
+time-$\Delta t$ map of a flow.  The observation map $\Pi$ need not be
+linear or idempotent.  It may represent a quotient, a coarse-graining, a
+measurement record, a feature map, or a projection followed by a
+pushforward.
 
-\begin{remark}
-This is deliberately non-unique: many control parameters can serve as a capacity proxy.
-In MTT, one can take $\Cap$ as any monotone functional of (i) the spectral gap separating coherent and
-noncoherent modes, (ii) bounds on the coherent projector on Sobolev scales, and (iii) controlled truncation
-error bounds \cite{NeroControlledTruncation2025,NeroCoherenceCapacity2026}.
-\end{remark}
-
-\subsection{Shadow evolution and factor-through}
-Define the shadow evolution map at one step by
+\begin{definition}[Admissible source and realizable image]
+An \emph{admissible source domain} is a declared measurable subset
+$\A\subseteq\X$.  Its realizable effective image is
 \[
-T := \Pi\circ\Phi:\X\to\Y.
+  \Rset_\Pi(\A):=\Pi(\A)\subseteq\Y.
 \]
-A deterministic induced dynamics on $\Y$ exists only if the evolution factors through $\Pi$.
+All effective constraints in this paper refer to this image or to a
+probability measure supported on it.
+\end{definition}
 
-\begin{definition}[Factor-through / well-defined induced map]\label{def:factor}
-We say the induced (deterministic) shadow map $F:\Y_{\mathrm{coh}}\to\Y$ exists if
+The distinction between $\Y$ and $\Rset_\Pi(\A)$ is essential.  Coordinates
+on $\Y$ may look independent while the realizable image is a proper coupled
+subset.  Equally, a many-to-one map can have
+$\Rset_\Pi(\A)=\Y$, in which case no image constraint follows.
+
+\subsection{Capacity as a declared margin}
+
+\begin{definition}[Control margin]
+A \emph{capacity} or \emph{control margin} is a function
 \[
-\Pi(x_1)=\Pi(x_2)\ \Rightarrow\ \Pi(\Phi(x_1))=\Pi(\Phi(x_2))
-\quad\text{for all }x_1,x_2\in\Aad,
+  \Ccap:\A\longrightarrow[0,\infty)
 \]
-in which case $F(\Pi(x)):=\Pi(\Phi(x))$ is well-defined on $\Y_{\mathrm{coh}}$.
+whose operational meaning is fixed by a stated estimate.  Typical examples
+are a spectral gap, distance to a failure set, inverse-condition margin,
+coercivity constant, or certified truncation reserve.
 \end{definition}
 
-\begin{remark}
-Failure of the factor-through condition is generic: the discarded degrees of freedom can influence
-the next projected state before being damped/filtered. In MTT, this failure is the structural origin of
-effective stochasticity and measurement updates \cite{NeroMTTSuperset2025,NeroQMfromMTT2025}.
-\end{remark}
+A nonnegative function called capacity is not automatically conserved,
+extensive, additive, entropic, or physical.  Those properties are additional
+claims.  Recent MTT capacity papers make this separation explicit by
+distinguishing normalized margins, metric clearance, constitutive transport,
+and first exit \cite{nero_capacity_invariant,nero_capacity_budget,
+nero_capacity_dynamics}.
 
-%======================================================================
-\section{Structural Irreversibility from Projection}
-\label{sec:irreversibility}
-%======================================================================
+\subsection{Five maps that should not be conflated}
 
-We now prove a core theorem: invertibility upstairs does not descend through noninvertible projection,
-and boundary crossing implies non-reconstructability of the shadow evolution.
+For later use, we name five distinct objects:
+\begin{center}
+\begingroup
+\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash\bfseries}p{0.20\textwidth}>{\raggedright\arraybackslash}X}
+\toprule
+Object & Question answered \\
+\midrule
+$\Pi:\X\to\Y$ & What source information is retained? \\
+$T:\Rset\to\Rset$ & Does source dynamics descend to an autonomous effective map? \\
+$S:\Rset\to\X$ & Can one choose a representative source state? \\
+$D:\Rset\to\X$ & Can one recover the actual source state on a declared class? \\
+$\K(x,\cdot)$ & Does projected stochastic evolution depend only on the present effective state? \\
+\bottomrule
+\end{tabularx}
+\endgroup
+\end{center}
+A section $S$ chooses one point in each fiber.  It does not recover which
+point in that fiber actually occurred.  This simple distinction removes
+several apparent paradoxes.
 
-\subsection{Right inverses and reconstructability}
-Reconstruction means: given a shadow state, one can select (measurably) a consistent underlying state.
+\section{When deterministic dynamics descends}
 
-\begin{definition}[Measurable section / right inverse]\label{def:section}
-Let $E\subseteq \Y$ be measurable. A \emph{measurable section} of $\Pi$ on $E$ is a measurable map
-$S:E\to\X$ such that $\Pi\circ S = \Id_E$.
-\end{definition}
+\subsection{The exact fiber criterion}
 
-If a global section exists on $\Y_{\mathrm{coh}}$, then one can define a deterministic shadow evolution
-on underlying representatives; absence of a section formalizes irreversibility.
-
-\subsection{Admissibility barriers}
-We formalize the “barrier” idea: a region where the control conditions fail and fibers overlap.
-
-\begin{definition}[Admissibility barrier]\label{def:barrier}
-Let $\Aad\subseteq \X$ be admissible with boundary $\Bbd$. We say $\Bbd$ is an \emph{admissibility barrier}
-if there exist disjoint measurable sets $U_+,U_-\subseteq\X$ with $\X\setminus\Bbd = U_+\sqcup U_-$ such that:
-\begin{enumerate}[leftmargin=2em]
-\item $\Phi$ maps sets of positive measure in $U_+$ and $U_-$ into $\Aad$ over some time horizon (nontrivial dynamics);
-\item there exists $y\in\Y$ with $y=\Pi(x_+)=\Pi(x_-)$ for some $x_+\in U_+$ and $x_-\in U_-$ (fiber overlap across the barrier).
-\end{enumerate}
-\end{definition}
-
-\subsection{Main reconstruction obstruction theorem (proved)}
-\begin{theorem}[Barrier crossing implies no global reconstruction]\label{thm:reconobstruction}
-Assume:
-\begin{enumerate}[leftmargin=2em]
-\item $\Phi:\X\to\X$ is invertible and measurable (Assumption~\ref{ass:underlying});
-\item $\Pi:\X\to\Y$ is measurable (Definition~\ref{def:shadowmap});
-\item $\Bbd$ is an admissibility barrier (Definition~\ref{def:barrier}) and $\Y_{\mathrm{coh}}=\Pi(\Aad)$.
-\end{enumerate}
-Then there exists no measurable section $S:\Y_{\mathrm{coh}}\to\X$ satisfying $\Pi\circ S=\Id_{\Y_{\mathrm{coh}}}$.
-Equivalently, the shadow map is not globally reconstructible on the coherent sector.
+\begin{theorem}[Effective-dynamics fiber criterion]\label{thm:fiber}
+Let $\Phi:\A\to\A$ and $\Pi:\A\to\Rset:=\Pi(\A)$ be maps.  There exists a
+unique map $T:\Rset\to\Rset$ satisfying
+\[
+  T\circ\Pi=\Pi\circ\Phi
+  \quad\text{on }\A
+\]
+if and only if
+\[
+  \Pi(x)=\Pi(x')
+  \quad\Longrightarrow\quad
+  \Pi(\Phi x)=\Pi(\Phi x')
+  \qquad (x,x'\in\A).
+\]
+If the spaces and maps are measurable and the quotient is equipped with a
+measurable structure for which the resulting $T$ is measurable, then this
+is an autonomous measurable effective dynamics.
 \end{theorem}
 
 \begin{proof}
-Suppose for contradiction that such a measurable section $S$ exists.
-By Definition~\ref{def:barrier}(2), choose $x_+\in U_+$ and $x_-\in U_-$ with $x_+\neq x_-$ but
-$\Pi(x_+)=\Pi(x_-)=:y$.
-
-Since $S$ is a section, $\Pi(S(y))=y$. But $S(y)$ is a single point in $\X$.
-Because $\Pi^{-1}(y)$ contains at least two distinct points $x_+,x_-$ in disjoint regions across the barrier,
-the section must choose one representative from the fiber. Without loss, $S(y)\neq x_-$ (if it equals $x_-$,
-swap labels). Thus $S(y)=x_+$ or some other fiber element in the same equivalence class.
-
-Now consider iterating dynamics: because $\Phi$ is invertible and $U_+,U_-$ are disjoint components of
-$\X\setminus\Bbd$, the two points $x_+,x_-$ represent different admissibility-side histories. Under the barrier
-hypotheses, there exist times/horizons for which $\Phi^n(x_+)$ and $\Phi^n(x_-)$ remain distinguishable upstairs
-(in particular, $\Phi^n(x_+)\neq \Phi^n(x_-)$ for all $n$ by invertibility) while their shadows may coincide or
-their admissibility properties differ.
-
-A global measurable section would provide a measurable selection from each fiber consistent across the entire
-$\Y_{\mathrm{coh}}$. But because fibers overlap across a barrier where $\Cap=0$ (loss of regularity/control),
-standard measurable selection can fail: in particular, the existence of a global section would imply that $\Pi$
-is (essentially) a measurable bijection between $\Y_{\mathrm{coh}}$ and its selected subset $S(\Y_{\mathrm{coh}})$,
-contradicting the barrier condition that identifies distinct points across $U_\pm$ on a set of nonzero measure
-as capacity collapses.
-
-More concretely: since $x_+$ and $x_-$ belong to disjoint measurable components, any measurable section
-restricted to a neighborhood of $y$ would have to choose consistently either from $U_+$ or from $U_-$; but the
-fiber overlap across the barrier implies there is no measurable way to do this globally while preserving the
-control conditions defining $\Aad$ (the capacity collapse implies projector discontinuity or gap closure in the
-MTT instantiation; see \cite{NeroCoherenceCapacity2026}). Therefore a global measurable section cannot exist.
-
-This contradiction completes the proof.
+If $T$ exists, equal observed states have equal images after one step:
+$\Pi(\Phi x)=T(\Pi x)=T(\Pi x')=\Pi(\Phi x')$.  Conversely, define
+$T(y)=\Pi(\Phi x)$ for any $x$ with $\Pi(x)=y$.  The fiber condition makes
+this independent of the chosen representative.  Uniqueness follows because
+every $y\in\Rset$ has such a representative.
 \end{proof}
 
-\begin{remark}
-The proof above is the abstract measurable version; in concrete analytic settings (such as MTT), the obstruction
-is sharper: at $\Cap=0$ the spectral gap closes or projector regularity fails, and Riesz projector continuity breaks,
-so no bounded selection can exist. The MTT coherence capacity paper states this explicitly in MTT-native terms
-\cite{NeroCoherenceCapacity2026}.
-\end{remark}
+This is the deterministic analogue of a sufficient statistic for evolution.
+It says exactly when hidden coordinates can be forgotten without creating
+state-dependent ambiguity.
 
-%======================================================================
-% END PART 1 / 8
-%======================================================================
+\subsection{Three boundary examples}
 
-% The next message (PART 2) will continue from here without restarting:
-% Chapter 3 (fully rigorous CI): complete connections, g-measures, indivisible processes,
-% explicit conditions and theorems; then Chapter 4 (hidden relations) with formal set-theoretic
-% and measure-theoretic statements and examples.
-%======================================================================
-% PART 2 / 8
-% Continues the same LaTeX document from Part 1.
-% Content: Chapter 3 (Computational Irreducibility) + Chapter 4 (Hidden Relations)
-%======================================================================
+\begin{example}[Many-to-one projection with invertible shadow]\label{ex:product}
+Let $\X=\Y\times F$, let $\Pi(y,f)=y$, and let
+\[
+  \Phi(y,f)=(Ty,Rf)
+\]
+with $T$ and $R$ bijective.  Then $\Pi$ is many-to-one whenever $F$ has more
+than one point, but the effective map is precisely the invertible map $T$.
+Loss of source coordinates therefore does not imply irreversible effective
+dynamics.
+\end{example}
 
-%======================================================================
-\section{Computational Irreducibility: Complete Connections, Indivisible Processes, and Non-Shortcut Prediction}
-\label{sec:CImax}
-%======================================================================
+\begin{example}[No continuous section, yet invertible shadow]\label{ex:cover}
+Let $\X=\Y=S^1$, $\Pi(z)=z^2$, and
+$\Phi(z)=e^{i\alpha/2}z$.  Then
+\[
+  \Pi(\Phi z)=e^{i\alpha}\Pi(z),
+\]
+so the shadow map is the invertible rotation
+$T(y)=e^{i\alpha}y$.  The double covering $\Pi$ has no continuous global
+section, but this does not obstruct invertible shadow dynamics.  The
+regularity class of a proposed section and the autonomy of the shadow are
+different questions.
+\end{example}
 
-\subsection{Overview}
-This chapter makes the computational irreducibility (CI) content of projection-limited coherence
-fully precise in a standard measure-theoretic language. The key idea is that when the effective
-description is defined by a many-to-one projection and admissibility is a finite-margin condition,
-then long-horizon prediction at the shadow level cannot, in general, be compressed into a
-finite-state Markov summary. The correct induced object is a family of \emph{history-dependent}
-conditional kernels. Under mild regularity conditions (``complete connections'' / ``summable
-variations''), these kernels define a unique path-space measure (a $g$-measure), but the process is
-generically non-Markovian and, in a precise sense, indivisible.
+\begin{example}[Projection without autonomous descent]\label{ex:no-descent}
+Let $\X=\{0,1\}^2$, let $\Pi(y,h)=y$, and let
+$\Phi(y,h)=(h,y)$.  The source states $(0,0)$ and $(0,1)$ have the same
+observation but evolve to observations $0$ and $1$.  The fiber criterion
+fails, so no one-step map on $\Y$ represents the source dynamics.
+\end{example}
 
-This formalizes three claims used throughout the paper:
-\begin{enumerate}[leftmargin=2em]
-\item \textbf{Non-Markovianity:} the one-step law depends on the complete past, not just the present.
-\item \textbf{Indivisibility:} there is no factorization of multi-step transition laws into Markov kernels
-on the same state space.
-\item \textbf{No-shortcut prediction:} determining basin membership or long-horizon outcomes requires
-propagating the full history-dependent structure (or simulating the underlying dynamics), rather than
-computing from a finite summary.
+Examples~\ref{ex:product}--\ref{ex:no-descent} are not pathologies.  They
+show that projection supplies a question, while the source dynamics supplies
+the answer.
+
+\subsection{Sections, decoders, and actual recovery}
+
+\begin{proposition}[Representative selection is not source recovery]
+Suppose $S:\Rset\to\A$ is a right inverse of $\Pi$, so
+$\Pi\circ S=\operatorname{Id}_{\Rset}$.  Then $S$ recovers every actual source state
+$x\in\A$ from $\Pi(x)$ if and only if $\Pi$ is injective on $\A$ and
+$S=\Pi^{-1}$ there.
+\end{proposition}
+
+\begin{proof}
+Actual recovery requires $S(\Pi x)=x$ for every $x\in\A$, which makes $S$
+a left inverse as well as a right inverse.  A map with a left inverse is
+injective.  The converse is immediate.
+\end{proof}
+
+Thus failure of a section can matter for a chosen category or regularity
+class, but existence of a section does not undo information loss inside a
+fiber.  The appropriate recovery question must specify:
+\begin{enumerate}
+\item the source subset to be recovered;
+\item the allowed decoder class;
+\item exact or approximate recovery;
+\item the norm, loss, or statistical risk;
+\item whether side information is available.
 \end{enumerate}
+This is the same discipline used in statistics and information theory when
+comparing experiments or sufficient representations
+\cite{blackwell1953,cover_thomas}.
 
-\subsection{Path space and history}
-Let $(\Y,\Borel(\Y))$ be a standard Borel space of shadow states. Consider one-sided sequences
-$\Y^{\N} = \{(y_0,y_1,\dots): y_k\in\Y\}$ with product sigma-algebra $\Borel(\Y)^{\otimes\N}$.
-A \emph{finite history prefix} of length $n$ is $(y_0,\dots,y_n)\in\Y^{n+1}$.
-We write $\Hist_n := \Y^{n+1}$ and $\Hist := \bigcup_{n\ge 0}\Hist_n$.
+\section{Stochastic reduction and memory}
 
-\subsection{Induced history-dependent kernels from projection}
-In a projection-limited system, the shadow dynamics does not generally factor through a deterministic
-map on $\Y$. Instead, one obtains conditional transition kernels that may depend on the entire past.
-The cleanest formulation is:
+\subsection{The projected-kernel criterion}
 
-\begin{definition}[One-step conditional kernel]\label{def:kernel}
-A \emph{one-step kernel} is a family of probability measures
+Let $\K(x,\cdot)$ be a Markov kernel on $\X$.  Write
+$\Pi^{-1}B=\{x:\Pi(x)\in B\}$ for $B\in\B(\Y)$.
+
+\begin{theorem}[Projected Markov-kernel criterion]\label{thm:lump}
+There exists a Markov kernel $\overline{\K}$ on $\Rset=\Pi(\X)$ such that
 \[
-K(\cdot \mid h), \qquad h\in \Hist_n \text{ for some }n,
+  \overline{\K}(\Pi x,B)
+  =\K(x,\Pi^{-1}B)
 \]
-where for each fixed history $h=(y_0,\dots,y_n)$, $K(\cdot \mid h)$ is a probability measure on
-$(\Y,\Borel(\Y))$, and for each measurable $A\subseteq \Y$, the map
-$h\mapsto K(A\mid h)$ is measurable on $\Hist_n$.
-\end{definition}
-
-In MTT, such kernels arise from the combination of (i) invertible upstairs evolution, (ii) projection
-to the coherent sector, and (iii) conditioning under constraint changes; see
-\cite{NeroIndivisibleProcesses2026,NeroQMfromMTT2025}.
-
-\subsection{Ionescu--Tulcea construction (Kolmogorov extension)}
-A standard theorem constructs a path-space measure from a consistent family of one-step kernels.
-
-\begin{theorem}[Ionescu--Tulcea]\label{thm:ionescu}
-Let $\lambda_0$ be an initial probability measure on $(\Y,\Borel(\Y))$.
-Suppose for each $n\ge 0$ we have a measurable kernel
+for every source state $x$ and measurable $B\subseteq\Rset$ if and only if
 \[
-K_n(\cdot \mid y_0,\dots,y_n)
+  \Pi(x)=\Pi(x')
+  \quad\Longrightarrow\quad
+  \K(x,\Pi^{-1}B)=\K(x',\Pi^{-1}B)
 \]
-from $\Hist_n$ to $(\Y,\Borel(\Y))$.
-Then there exists a unique probability measure $\mathbb{P}$ on $\Y^{\N}$ such that for every cylinder set
-$A_0\times\cdots\times A_n$,
-\begin{align}
-\mathbb{P}(y_0\in A_0,\dots,y_n\in A_n)
-= \int_{A_0}\lambda_0(dy_0)\int_{A_1}K_0(dy_1\mid y_0)\cdots \int_{A_n}K_{n-1}(dy_n\mid y_0,\dots,y_{n-1}).
-\end{align}
+for every measurable $B$.
 \end{theorem}
 
 \begin{proof}
-This is the classical Ionescu--Tulcea theorem for constructing measures on countable product spaces
-from iterated kernels (see e.g.\ \cite{Bogachev2007,Durrett2019}).
+Necessity follows because the right side must depend only on $\Pi x$.
+Under the stated fiber constancy, the displayed formula defines
+$\overline{\K}(y,B)$ independently of the representative $x$.
 \end{proof}
 
-Thus, once the correct induced conditional kernels are identified, the shadow process is a well-defined
-stochastic process on the path space even if upstairs evolution is deterministic.
+For finite-state chains this is the familiar strong lumpability condition.
+The general lesson is again exact: a projected process is Markov when the
+transition probabilities of observable events are constant on observation
+fibers.  Many-to-one projection neither guarantees nor forbids this
+\cite{kemeny_snell,norris}.
 
-\subsection{Complete connections and summable variations}
-To ensure uniqueness and stability of the induced measure when kernels depend on the infinite past
-(i.e.\ when one works with a stationary kernel $K(\cdot\mid y_{-\infty}^0)$), one uses the theory of
-$g$-measures / chains with complete connections.
+\subsection{History dependence}
 
-We present a standard discrete-time formulation in which histories extend to the infinite past.
-Let $\Y^{\Z_-} = \{(\dots,y_{-2},y_{-1},y_0)\}$ denote past sequences.
-
-Fix a bounded metric $d$ on $\Y$ generating its Borel sigma-algebra (possible since $\Y$ is standard Borel).
-For $\alpha\in(0,1)$ define the \emph{complete-past metric} on $\Y^{\Z_-}$:
-\begin{equation}\label{eq:completepastmetric}
-d_\alpha(\mathbf{y},\mathbf{y}') := \sum_{k\ge 0}\alpha^k\, d(y_{-k},y'_{-k}).
-\end{equation}
-
-\begin{definition}[Complete connections / summable variations]\label{def:completeconnections}
-Let $\nu$ be a sigma-finite reference measure on $(\Y,\Borel(\Y))$ with full support.
-A stationary kernel $K(\cdot\mid \mathbf{y})$ on $\Y$ given past $\mathbf{y}\in\Y^{\Z_-}$ is said to have
-\emph{summable variations} if it admits densities $k(\cdot\mid \mathbf{y})$ w.r.t.\ $\nu$ such that
-\begin{enumerate}[leftmargin=2em]
-\item $k(y\mid \mathbf{y})>0$ for $\nu$-a.e.\ $y$ and all $\mathbf{y}$ (strict positivity);
-\item $\int k(y\mid \mathbf{y})\,\nu(dy)=1$ for all $\mathbf{y}$;
-\item there exists $L<\infty$ and $\alpha\in(0,1)$ such that
+When Theorem~\ref{thm:lump} fails, a useful model may enlarge the state:
 \[
-\int_\Y \big|k(y\mid \mathbf{y})-k(y\mid \mathbf{y}')\big|\,\nu(dy)
-\le L\, d_\alpha(\mathbf{y},\mathbf{y}')
-\quad\text{for all }\mathbf{y},\mathbf{y}'.
+  Y_n
+  \quad\leadsto\quad
+  (Y_n,Y_{n-1},\ldots,Y_{n-r+1})
 \]
-\end{enumerate}
-\end{definition}
+or introduce a predictive state inferred from the past.  A process has
+finite Markov order $r$ only if its conditional law given the full past
+equals the conditional law given the last $r$ observations.  Complete
+connections and predictive-state constructions provide rigorous tools when
+no small $r$ suffices \cite{walters1975,shalizi_crutchfield}.
 
-\begin{remark}
-This is one standard regularity condition guaranteeing existence and uniqueness of the corresponding
-$g$-measure (see e.g.\ \cite{JohanssonOberg2003,Walters2000,MauldinUrbanski2003}).
-The point is not that every physical system satisfies it globally, but that it captures the regime of
-controlled dependence on the distant past. MTT’s controlled truncation regime naturally provides
-such bounds on bounded-geometry slabs \cite{NeroIndivisibleProcesses2026,NeroControlledTruncation2025}.
+\begin{remark}[What memory does not prove]
+Failure of a one-step Markov representation on a chosen state space does
+not prove that no finite augmentation exists, that simulation must follow
+every microscopic step, or that prediction is computationally irreducible.
+Those are complexity claims about a specified representation and algorithmic
+task.
 \end{remark}
 
-\subsection{Non-Markovianity and indivisibility}
-We now state formal definitions.
+\section{Realizable images and hidden compatibility}
 
-\begin{definition}[Markov property]\label{def:markov}
-A process $(Y_n)_{n\ge 0}$ on $\Y$ with path measure $\mathbb{P}$ is (time-homogeneous) Markov if there exists
-a kernel $M(\cdot\mid y)$ such that for all $n$ and all measurable $A$,
+Suppose an effective state has components
+$\Y=\Y_1\times\cdots\times\Y_m$.  Define
 \[
-\mathbb{P}(Y_{n+1}\in A \mid Y_0,\dots,Y_n)=M(A\mid Y_n)
-\quad\text{a.s.}
+  \Rset=\Pi(\A),
+  \qquad
+  \Rset_j=\operatorname{pr}_j(\Rset).
+\]
+
+\begin{definition}[Support compatibility]
+The effective variables obey a nontrivial \emph{support compatibility
+constraint} when
+\[
+  \Rset\subsetneq\Rset_1\times\cdots\times\Rset_m.
 \]
 \end{definition}
 
-\begin{definition}[Indivisibility (classical)]\label{def:indivisible}
-A process is \emph{divisible on $\Y$} if for each $n<m$ there exists a family of Markov kernels
-$M_{n\to n+1},\dots,M_{m-1\to m}$ on $\Y$ such that the multi-step conditional law factorizes:
-\[
-\mathbb{P}(Y_m\in A \mid Y_n=y) = (M_{m-1\to m}\circ\cdots\circ M_{n\to n+1})(A\mid y)
-\quad\text{for all }A,y.
-\]
-If no such factorization exists (on the same $\Y$), the process is \emph{indivisible}.
-\end{definition}
-
-\begin{proposition}[Generic non-Markovianity under projection]\label{prop:generic-nonmarkov}
-Assume the factor-through condition (Definition~\ref{def:factor}) fails on $\Aad$.
-Then there exist $x_1,x_2\in\Aad$ with $\Pi(x_1)=\Pi(x_2)$ but $\Pi(\Phi(x_1))\neq \Pi(\Phi(x_2))$.
-Consequently, any induced one-step law on $\Y$ must depend on more than the present shadow state,
-hence the shadow process is non-Markovian on $\Y$.
+\begin{proposition}[Recombination test]
+The realizable image factors as
+$\Rset=\prod_j\Rset_j$ if and only if every coordinatewise recombination of
+values occurring in $\Rset$ also belongs to $\Rset$.
 \end{proposition}
 
 \begin{proof}
-Failure of factor-through means there exist $x_1,x_2$ with equal shadows but different next shadows.
-If a Markov kernel $M(\cdot\mid y)$ existed depending only on $y=\Pi(x)$, then the conditional law of the
-next shadow given the present shadow would be the same for both $x_1$ and $x_2$, contradicting the existence
-of distinct next shadows with nonzero probability/weight. Thus the induced law cannot depend only on the
-present state. In a deterministic upstairs system with projection, this manifests as dependence on hidden
-microstate information or, equivalently, on history summaries.
+If $\Rset$ is the product of its coordinate projections, every
+recombination lies in it.  Conversely, the recombination property places
+every element of $\prod_j\Rset_j$ in $\Rset$.
 \end{proof}
 
-\begin{proposition}[Non-Markovianity implies indivisibility on fixed $\Y$]\label{prop:nonmarkov-indiv}
-If a process is non-Markovian in the sense of Definition~\ref{def:markov}, then there is no factorization
-into one-step Markov kernels on the same state space $\Y$ that reproduces all finite-dimensional distributions.
-Hence the process is indivisible on $\Y$.
+This proposition supplies a direct test.  Projection alone does not decide
+its outcome.  Nor does support nonfactorization determine a probability
+law.  If $\mu$ is a source measure and $\nu=\Pi_\#\mu$, statistical
+independence requires
+\[
+  \nu=\nu_1\otimes\cdots\otimes\nu_m,
+\]
+which is a statement about the measure, not only its support.  Likewise, a
+conditional-dependence graph is not automatically a physical interaction
+graph.  These distinctions are developed in the companion image-geometry
+paper \cite{nero_network_image}.
+
+\section{Capacity, transport, and first exit}
+
+\subsection{A margin becomes useful through an estimate}
+
+Let $\Ccap:\A\to[0,\infty)$ and define the valid region
+\[
+  \A_+=\{x\in\A:\Ccap(x)>0\}.
+\]
+The first-exit time of a trajectory $x(t)$ is
+\[
+  \tau_\partial
+  :=\inf\{t\geq0:\Ccap(x(t))=0\}.
+\]
+Without an evolution law for $\Ccap(x(t))$, this definition has no predicted
+time scale.
+
+\begin{proposition}[Elementary first-exit lower bound]\label{prop:exit}
+Suppose $t\mapsto\Ccap(x(t))$ is absolutely continuous before first exit and
+\[
+  \left|\frac{d}{dt}\Ccap(x(t))\right|\leq L
+\]
+almost everywhere, with $\Ccap(x(0))=c_0>0$.  If $L>0$, then
+\[
+  \tau_\partial\geq\frac{c_0}{L}.
+\]
+If $L=0$, no finite exit occurs through this margin.
 \end{proposition}
 
 \begin{proof}
-If such a factorization existed, then by standard conditioning properties of Markov chains, the process would
-satisfy the Markov property: the conditional distribution of $Y_{n+1}$ given the entire past would depend only
-on $Y_n$. Since the process violates the Markov property, no such representation exists on the same $\Y$.
+Absolute continuity gives
+$\Ccap(x(t))\geq c_0-Lt$.  Reaching zero therefore requires
+$t\geq c_0/L$.
 \end{proof}
 
-\subsection{No-shortcut basin prediction as a theorem schema}
-We now connect this to CI: the impossibility of a finite Markov closure is a rigorous form of
-“no shortcut prediction on $\Y$.”
+The proposition is modest but representative.  A capacity claim becomes
+predictive only after a bound, balance law, transport equation, or
+constitutive model connects the margin to dynamics.
 
-\begin{theorem}[No finite-state Markov closure under projection]\label{thm:no-markov-closure}
-Assume:
-\begin{enumerate}[leftmargin=2em]
-\item Factor-through fails on $\Aad$ (Definition~\ref{def:factor});
-\item Admissibility is nontrivial: there exist multiple basins separated by $\Bbd$ such that basin membership
-depends on microstate information erased by $\Pi$ (as in Proposition~\ref{prop:ci} of Part 1).
+\subsection{What is not automatic}
+
+None of the following follows from the word ``capacity'':
+\begin{itemize}
+\item conservation of $\int\Ccap$;
+\item a continuity equation;
+\item monotone depletion;
+\item additivity across subsystems;
+\item equivalence to thermodynamic entropy;
+\item a universal threshold shared by unrelated domains.
+\end{itemize}
+These may be imposed, derived, or tested in a particular model.  They cannot
+be transferred from a physical theory to a biological or social model by
+analogy alone.
+
+\section{Information loss, entropy, and arrows of time}
+
+\subsection{The exact information statement}
+
+Let $X$ be a discrete source random variable and $Y=\Pi(X)$.  Then
+\[
+  H(X)=H(Y)+H(X\mid Y),
+  \qquad
+  H(Y)\leq H(X).
+\]
+The lost source information is the conditional entropy $H(X\mid Y)$.
+For a stochastic channel $K$, the data-processing inequality gives
+\[
+  I(U;Y)\leq I(U;X)
+\]
+whenever $U\to X\to Y$ is a Markov chain
+\cite{cover_thomas}.  Relative entropy also contracts under a Markov
+kernel.
+
+These statements compare information before and after a channel.  They do
+not say that the marginal entropy of an observed system must increase with
+physical time.  A deterministic coarse-graining of a discrete state
+actually satisfies $H(\Pi(X))\leq H(X)$ at the instant of projection.
+Thermodynamic entropy production requires additional ingredients such as a
+dynamics, reference measure, coarse-grained equilibration, detailed-balance
+structure, or fluctuation relation.
+
+\subsection{Three notions of irreversibility}
+
+\begin{definition}[Three irreversibility questions]
+For a projected model, distinguish:
+\begin{enumerate}
+\item \emph{source loss}: $\Pi$ is noninjective on the relevant source set;
+\item \emph{dynamical noninvertibility}: the descended map $T$ exists but is
+not invertible;
+\item \emph{predictive irreversibility}: retrodiction from available records
+has a declared nonzero risk or entropy.
 \end{enumerate}
-Then there exists no Markov chain on $\Y$ whose finite-dimensional distributions match those induced by the
-projected evolution, unless one enlarges the state space to include sufficient memory (effectively embedding
-histories into state).
-\end{theorem}
-
-\begin{proof}
-By Proposition~\ref{prop:generic-nonmarkov}, the induced process on $\Y$ is non-Markovian.
-By Proposition~\ref{prop:nonmarkov-indiv}, there is no factorization into Markov kernels on $\Y$.
-Any Markov representation must therefore enlarge the state to include sufficient past information,
-which is equivalent to lifting back toward the underlying dynamics. This is precisely the structural
-content of computational irreducibility in projection-limited systems.
-\end{proof}
-
-\begin{remark}
-This theorem is intentionally stated as a “schema”: it reduces CI to two explicit conditions:
-(1) failure of factor-through and (2) microstate-dependent basin structure. MTT provides both in
-its measurement and irreversibility analyses \cite{NeroProjectionProbabilityIrreversibility2025,NeroIndivisibleProcesses2026}.
-\end{remark}
-
-%======================================================================
-\section{Hidden Relations Between Shadow Objects: Realizability and Compatibility Constraints}
-\label{sec:hiddenmax}
-%======================================================================
-
-\subsection{Realizability sets}
-Let $\Y$ be a product or coordinate space $\Y=\Y_1\times\cdots\times\Y_k$ representing multiple effective
-shadow observables (or components). Often, effective theories treat these components as freely specifiable
-(subject to local constraints). Projection-limited coherence implies global constraints of realizability.
-
-\begin{definition}[Realizability set]\label{def:realizability}
-Given $\Pi:\X\to\Y$, define the \emph{realizability set}
-\[
-\mathcal{R} := \Pi(\X)\subseteq \Y
-\]
-and, relative to an admissible domain $\Aad$,
-\[
-\mathcal{R}_{\mathrm{coh}} := \Pi(\Aad)\subseteq \Y.
-\]
 \end{definition}
 
-If $\Y=\Y_1\times\cdots\times\Y_k$, define marginal ranges $\mathcal{R}_i := \mathrm{pr}_i(\mathcal{R})$.
-Even if each marginal range is large, the joint realizability set may be a proper subset of the product.
+These notions can coincide in a model, but none is a synonym for the others.
+Example~\ref{ex:product} has source loss and invertible effective dynamics.
+A bijective observed map can still be hard to retrodict in the presence of
+noise.  A stochastic process can be statistically time-asymmetric even when
+its state transition matrix is invertible as a linear operator.
 
-\begin{proposition}[Nontrivial compatibility constraints are generic]\label{prop:compat-generic}
-Suppose $\Pi$ discards degrees of freedom that influence at least two components $y_i,y_j$ of $\Y$ in a
-non-degenerate way (i.e.\ there exist $x,x'$ with the same $y_i$ but different $y_j$, and similarly exchanging
-roles). Then $\mathcal{R}$ is generically a proper subset of $\mathcal{R}_1\times\cdots\times\mathcal{R}_k$,
-and there exist nontrivial relations (constraints) restricting realizable tuples.
-\end{proposition}
+\subsection{Records and an arrow}
 
-\begin{proof}
-If $\mathcal{R}=\prod_i \mathcal{R}_i$, then for any choice of marginals $(y_1,\dots,y_k)$ with $y_i\in\mathcal{R}_i$
-there exists $x\in\X$ such that $\Pi(x)=(y_1,\dots,y_k)$. Under the stated non-degeneracy, varying hidden degrees
-of freedom changes coupled components in a way that cannot generally span the full Cartesian product independently;
-constraints arise as the image of a lower-dimensional (or structured) manifold under $\Pi$.
-Formally, unless $\Pi$ factorizes as a product map with independent hidden fibers for each component, the image
-of $\X$ in the product space is constrained.
-\end{proof}
+A record is a physical variable whose present value is statistically or
+functionally coupled to a past event.  To derive an arrow of time from
+records, a model must state:
+\begin{enumerate}
+\item the recording interaction;
+\item the stable record algebra or state variables;
+\item the preparation or boundary condition;
+\item the direction in which record mutual information is generated;
+\item the recovery or erasure protocol.
+\end{enumerate}
+MTT may supply a retarded branch orientation in a selected physical
+construction, but projection alone does not select that orientation.
 
-\subsection{Compatibility constraints and “nonlocality without interaction”}
-\begin{definition}[Compatibility constraint]\label{def:compat2}
-A measurable set $C\subseteq \Y$ is a \emph{compatibility constraint} if $\mathcal{R}\subseteq C$ but
-$C\neq \Y$. Equivalently, $C$ contains all realizable shadows but excludes some formally allowed tuples.
+\section{Computational irreducibility needs a computational theorem}
+
+A system is not computationally irreducible merely because its effective
+process has memory.  A non-Markov process may have a compact predictive
+state; a high-dimensional deterministic system may have an exactly soluble
+observable; and a finite-state process can always be advanced by matrix
+powers, although the cost may still be large.
+
+\begin{definition}[Task-relative shortcut]
+Fix an input encoding, an observable $f$, a time horizon $n$, an accuracy
+$\varepsilon$, and a computational model.  A shortcut is an algorithm that
+computes or approximates $f(\Phi^n x)$ with asymptotic cost smaller than the
+declared step-by-step baseline.
 \end{definition}
 
-From the shadow perspective, compatibility constraints appear as correlations without causal exchange,
-since they restrict joint possibilities rather than transmit signals.
+A no-shortcut theorem must therefore be a lower bound, reduction,
+undecidability result, or complexity-theoretic statement for this typed
+task.  Projection can motivate the search for such a theorem by exposing
+hidden-state dependence.  It does not supply the theorem.
 
-\begin{lemma}[Correlation without signaling (structural form)]\label{lem:nosignaling-struct}
-Let $\Y=\Y_A\times\Y_B$ and suppose the effective operational interventions at $A$ modify the marginal
-distribution on $\Y_A$ but do not alter the projection map $\Pi$ itself. If the realizability set
-$\mathcal{R}\subseteq \Y$ is constrained, then conditioning on $A$ can induce correlations in $B$
-even without any causal channel from $A$ to $B$ in the shadow dynamics. Such correlations do not
-imply signaling, because marginal accessibility remains bounded by the projection structure.
-\end{lemma}
+Predictive-state methods provide a constructive middle ground.  They ask
+whether histories with the same conditional future distribution can be
+merged into a smaller state.  The resulting causal states can reveal finite
+or infinite predictive complexity without equating memory with
+undecidability \cite{crutchfield_young,shalizi_crutchfield}.
 
-\begin{proof}
-A compatibility constraint restricts the joint support of $(Y_A,Y_B)$. Conditioning on a subset of
-$\Y_A$ generally changes the conditional distribution of $Y_B$ by restriction to the corresponding
-slice of the support, even if no causal influence exists. Signaling would require the ability to change
-the marginal distribution of $Y_B$ by actions at $A$; but under the hypothesis that interventions do
-not alter $\Pi$ or the marginal accessibility of $B$, the marginal remains constrained by the same
-projection-induced support. This is the abstract structural analogue of the distinction between
-microcausality (no commutator signaling) and state non-factorization in AQFT; see the MTT AQFT
-paper \cite{NeroEntanglementAQFT2025}.
-\end{proof}
+\section{How the framework applies to MTT}
 
-\subsection{Examples by domain (formal mapping statements)}
-We record, as formally as possible, how these constraints manifest in later instantiations:
-\begin{itemize}[leftmargin=2em]
-\item \textbf{Physics (MTT/QM/QFT):} entanglement correlations are compatibility constraints on the
-joint shadow state (global coherent history) under $\Pi_{\mathrm{coh}}$; locality holds at the algebra level
-but factorization fails at the state level \cite{NeroEntanglementAQFT2025}.
-\item \textbf{Brains:} perception, affect, memory, and intention are coupled shadow variables of overlapping
-neural substrates; realizability constraints appear as global mental state correlations even absent a
-single localized “cause.”
-\item \textbf{AI systems:} performance, robustness, interpretability, and controllability are not independent
-axes; they are constrained images of shared parameter and data geometry.
-\item \textbf{Civilizations:} economy, governance, technology, environment, and culture form a constrained
-joint realizability set; attempts to optimize one coordinate can violate global compatibility and trigger
-coherence loss.
-\end{itemize}
+\subsection{A typed instantiation}
 
-%======================================================================
-% END PART 2 / 8
-%======================================================================
-
-% The next message (PART 3) will continue with:
-% Chapter 5 (arrow of time, entropy as derivative, records), then Chapter 6 (MTT instantiation)
-% with explicit mapping and citations to specific theorems in the MTT corpus, plus an Appendix
-% giving a clean dictionary from the abstract framework to MTT quantities (gaps, projectors, FCC).
-%======================================================================
-% PART 3 / 8
-% Continues the same LaTeX document from Parts 1–2.
-% Content: Chapter 5 (Arrow of Time) + Chapter 6 (MTT Instantiation)
-%======================================================================
-
-%======================================================================
-\section{Irreversibility and the Emergent Arrow of Time}
-\label{sec:arrowtime}
-%======================================================================
-
-\subsection{Reversibility upstairs vs. irreversibility downstairs}
-
-A central claim of projection-limited coherence is that \emph{irreversibility is not a primitive
-feature of the underlying dynamics}. It arises only after projection.
-
-Let $(\X,\Phi)$ satisfy Assumption~\ref{ass:underlying}, so that $\Phi$ is invertible.
-At the level of $\X$, trajectories can be reversed in principle.
-However, the effective evolution
-\[
-T := \Pi \circ \Phi
-\]
-is generically noninvertible on $\Y$, because $\Pi$ is many-to-one and admits no global section
-(Theorem~\ref{thm:reconobstruction}).
-
-\begin{proposition}[Structural irreversibility]\label{prop:struct-irreversible}
-Assume $\Phi$ is invertible and $\Pi$ has no global measurable section on $\Y_{\mathrm{coh}}$.
-Then the shadow evolution $T$ is irreversible in the sense that there exists no measurable map
-$R:\Y_{\mathrm{coh}}\to\Y_{\mathrm{coh}}$ such that $R\circ T = \Id_{\Y_{\mathrm{coh}}}$.
-\end{proposition}
-
-\begin{proof}
-If such an $R$ existed, then composing with a measurable section $S$ of $\Pi$ (if it existed)
-would yield a contradiction to Theorem~\ref{thm:reconobstruction}. More directly, $R$ would
-implement a right-inverse of $T$, which would lift to a right-inverse of $\Pi$ on $\Y_{\mathrm{coh}}$,
-contradicting the nonexistence of a global section.
-\end{proof}
-
-Thus, irreversibility is a \emph{shadow-level} phenomenon even when the microdynamics is
-time-reversal invariant.
-
-\subsection{Admissibility loss as the arrow of time}
-
-Let $\Cap:\X\to[0,\infty)$ be a coherence capacity functional (Definition~\ref{def:capacity}).
-Along a trajectory $x_n=\Phi^n(x_0)$, define $\Cap_n := \Cap(x_n)$.
-
-\begin{definition}[Arrow of time]\label{def:arrow}
-The \emph{effective arrow of time} along a shadow trajectory is the ordering induced by the
-monotone loss (or redistribution) of coherence capacity, i.e.\ the direction in which
-$\Cap_n$ decreases toward zero or crosses admissibility boundaries.
-\end{definition}
-
-\begin{remark}
-This definition is local and contextual: different subsystems may exhibit different arrows
-depending on how their admissible domains are coupled.
-\end{remark}
-
-\subsection{Entropy as a derivative concept}
-
-Entropy increase is not fundamental in this framework. It follows from projection.
-
-\begin{proposition}[Projection implies entropy increase]\label{prop:entropy}
-Let $\mu$ be a probability measure on $\X$ and let $\nu := \Pi_*\mu$ be its pushforward to $\Y$.
-Then the Shannon (or relative) entropy of $\nu$ is generically greater than or equal to that
-of $\mu$ with respect to comparable partitions.
-\end{proposition}
-
-\begin{proof}
-Projection is a coarse-graining: distinct microstates are identified. This increases the
-cardinality (or measure) of pre-images compatible with a given shadow state, increasing
-entropy by standard information-theoretic inequalities.
-\end{proof}
-
-Thus:
-\[
-\text{projection} \;\Rightarrow\; \text{information loss} \;\Rightarrow\; \text{entropy increase}.
-\]
-The arrow of time is defined by projection and capacity loss; entropy growth is a consequence,
-not the cause.
-
-\subsection{Records, memory, and irreversibility}
-
-A \emph{record} exists when information has been irreversibly transferred from degrees of
-freedom accessible to $\Pi$ into degrees of freedom that are not.
-
-\begin{definition}[Record]\label{def:record}
-A shadow observable $y\in\Y$ encodes a record of a past event if no admissible microstate
-consistent with $y$ allows reconstruction of the pre-event microstate under $\Pi$.
-\end{definition}
-
-Records persist precisely because reconstruction is obstructed by the nonexistence of a
-global section. Memory, measurement outcomes, and historical facts are all instances of
-this structural phenomenon.
-
-\subsection{Local arrows and apparent reversals}
-
-Because coherence capacity is finite and local, subsystems can temporarily exhibit apparent
-entropy decrease or reversibility while the total system remains irreversible. This explains:
-\begin{itemize}[leftmargin=2em]
-\item local entropy fluctuations,
-\item memory erasure in small subsystems,
-\item the coexistence of multiple time arrows in weakly coupled regions.
-\end{itemize}
-
-%======================================================================
-\section{Modal Triplet Theory as a Physical Instantiation}
-\label{sec:MTTinst}
-%======================================================================
-
-\subsection{Purpose of this chapter}
-
-The preceding chapters developed a substrate-agnostic framework. We now show that
-\emph{Modal Triplet Theory (MTT)} realizes this framework in a fully explicit physical setting.
-This is not an analogy: each abstract component has a precise counterpart in MTT.
-
-\subsection{Underlying system in MTT}
-
-MTT posits a ten-dimensional modal manifold
-\[
-M_{10} = Y_4 \times X_6,
-\]
-where $Y_4$ is the emergent spacetime manifold and $X_6$ is a compact internal modal geometry
-organized into three parallel bundles. The fundamental dynamical object is a field
-$\Psi$ on $M_{10}$ evolving under a well-posed, deterministic flow $\Phi_\tau$
-(typically a curvature-reducing or gradient-like flow).
-
-\begin{assumption}[MTT underlying dynamics]\label{ass:MTTdyn}
-The flow $\Phi_\tau$ on the MTT configuration space is deterministic, invertible on admissible
-domains, and preserves a natural measure class.
-\end{assumption}
-
-This satisfies Assumption~\ref{ass:underlying}.
-
-\subsection{Projection: joint harmonic projector and pushforward}
-
-The defining structural element of MTT is the \emph{joint harmonic (Riesz) projector}
-\[
-\PiC = \Pi_{B_1}\Pi_{B_2}\Pi_{B_3},
-\]
-where each $\Pi_{B_i}$ projects onto the kernel of a Laplace-type operator on one of the
-three internal bundles.
-
-Observable physics is defined by the composite map
-\[
-P := I \circ \PiC,
-\]
-where $I$ is internal pushforward (integration over $X_6$).
-This is a concrete realization of the abstract shadow map $\Pi$.
-
-\subsection{Coherent sector and admissibility in MTT}
-
-The coherent sector in MTT consists of configurations for which:
-\begin{itemize}[leftmargin=2em]
-\item a uniform spectral gap separates coherent and noncoherent modes,
-\item the Riesz projector $\PiC$ is bounded on relevant Sobolev scales,
-\item truncation error remains controlled under $\Phi_\tau$.
-\end{itemize}
-
-These conditions define \emph{admissible slabs} of evolution
-\cite{NeroFixedPointsI2025,NeroControlledTruncation2025}.
-Outside admissible slabs, effective 4D description fails.
-
-\subsection{Coherence capacity in MTT}
-
-MTT makes the abstract notion of coherence capacity concrete.
-One may take $\Cap$ to be any monotone functional of:
-\begin{enumerate}[leftmargin=2em]
-\item the smallest spectral gap $\lambda_*$ above the coherent sector,
-\item operator norms of $\PiC$ on $H^s$,
-\item stability margins of the fixed-point flow.
-\end{enumerate}
-
-When $\Cap\to 0$, spectral gaps close or projector bounds diverge,
-triggering admissibility loss and irreversible breakdown of effective description
-\cite{NeroCoherenceCapacity2026}.
-
-\subsection{Emergence of QM, GR, and probabilities}
-
-Within admissible slabs, MTT derives:
-\begin{itemize}[leftmargin=2em]
-\item quantum mechanics as the Hilbert-space structure of the coherent sector,
-with the Born rule arising from basin measures \cite{NeroQMfromMTT2025};
-\item general relativity as the unique two-derivative effective action encoding
-slow spatial variation of coherence capacity \cite{NeroGRfromMTT2026};
-\item probabilistic measurement outcomes as the shadow of deterministic evolution
-under projection \cite{NeroProjectionProbabilityIrreversibility2025}.
-\end{itemize}
-
-In particular, Newton’s constant emerges as an inverse coherence capacity scale,
-giving physical meaning to gravitational strength.
-
-\subsection{Computational irreducibility and the absence of a landscape}
-
-Because admissibility is path-dependent and basin membership depends on micro-details
-erased by $\PiC$, there is no operational procedure for enumerating or selecting
-effective vacua. This blocks landscape-style reasoning and replaces it with
-\emph{coherent universality classes} \cite{NeroControlledTruncation2025}.
-
-%======================================================================
-% END PART 3 / 8
-%======================================================================
-
-% PART 4 will continue with:
-% Chapter 7 (Brains and Consciousness) — fully formalized
-% Chapter 8 (Artificial Intelligence) — structural requirements
-% Chapter 9 (Civilizations) — coherence capacity at scale
-%======================================================================
-% PART 4 / 8
-% Continues the same LaTeX document from Parts 1–3.
-% Content: Chapter 7 (Brains & Consciousness),
-%          Chapter 8 (Artificial Intelligence),
-%          Chapter 9 (Civilizations)
-%======================================================================
-
-%======================================================================
-\section{Brains and Consciousness as Projection-Limited Systems}
-\label{sec:brain}
-%======================================================================
-
-\subsection{Scope and methodological discipline}
-
-This chapter applies the projection-limited coherence framework to the biological brain
-and to conscious experience. The aim is strictly structural. We do not introduce new
-neuroscientific laws, nor do we claim that neural dynamics reduce to fundamental physics
-in any simple way. Instead, we show that the brain instantiates the same projection-based
-architecture that underlies effective description in physics.
-
-The core claim is:
-
-\begin{quote}
-\emph{Consciousness is the phenomenology of a system that operates under projection-limited
-self-access with finite coherence capacity and intrinsic irreversibility.}
-\end{quote}
-
-This claim is compatible with physicalism and avoids both dualism and quantum mysticism.
-
-\subsection{Two-layer description of the brain}
-
-The brain admits a natural separation into two descriptions:
-
-\begin{enumerate}[leftmargin=2em]
-\item \textbf{Underlying (micro) description.}
-Neural microdynamics: ion channel kinetics, synaptic transmission, dendritic integration,
-neuromodulation, glial support, metabolic flux. This description is high-dimensional,
-history-dependent, and inaccessible to the organism as a whole.
-
-\item \textbf{Shadow (macro) description.}
-Experiential variables: perceptions, intentions, emotions, memories, self-models, and
-narrative continuity. This description is low-dimensional, temporally coarse-grained,
-and operationally indispensable for behavior.
-\end{enumerate}
-
-These are not two substances or interacting systems. They are two descriptions of the
-same physical system related by a many-to-one projection.
-
-\subsection{Projection in the brain}
-
-Formally, let $\X_{\text{brain}}$ denote the space of neural microstates and
-$\Y_{\text{exp}}$ the space of experiential states. Conscious access is mediated by a
-projection
-\[
-\Pi_{\text{brain}}:\X_{\text{brain}}\to\Y_{\text{exp}}.
-\]
-
-This projection has the defining properties of Section~\ref{sec:PLC}:
-\begin{itemize}[leftmargin=2em]
-\item many-to-one (distinct neural states yield the same experience),
-\item lossy (fine neural details are discarded),
-\item noninvertible (experience does not specify its neural realization).
-\end{itemize}
-
-Without such a projection, stable perception, planning, and agency would be impossible.
-
-\subsection{Experiential coherent sector}
-
-Not all neural states support conscious experience. Define the experiential coherent
-sector as the set of neural states whose projections yield stable, integrated experience.
-Within this sector:
-\begin{itemize}[leftmargin=2em]
-\item perceptual categories remain stable,
-\item memories persist across time,
-\item intentions can be formed and acted upon,
-\item prediction error remains bounded.
-\end{itemize}
-
-Outside this sector—e.g.\ deep anesthesia, generalized seizures, severe metabolic failure—
-experience fragments or disappears entirely.
-
-\subsection{Coherence capacity of the brain}
-
-The brain’s coherence capacity measures the margin by which experiential integration
-can tolerate disturbance before breakdown. Contributors include:
-\begin{itemize}[leftmargin=2em]
-\item metabolic energy availability,
-\item neuromodulatory balance,
-\item network topology and coupling strength,
-\item sensory and cognitive load.
-\end{itemize}
-
-When coherence capacity is exceeded, integration fails: attention collapses, memory
-disintegrates, or consciousness shuts down. Conscious experience typically operates
-near, but not beyond, these limits.
-
-\subsection{Irreversibility and subjective time}
-
-Neural dynamics are intrinsically irreversible: synaptic changes, molecular turnover,
-and metabolic expenditure cannot be undone. This irreversibility is inherited by the
-experiential shadow.
-
-Because no global section of $\Pi_{\text{brain}}$ exists, the brain cannot reconstruct
-its exact past microstates from present experience. Consequently:
-\begin{itemize}[leftmargin=2em]
-\item the past is remembered but not replayed,
-\item the future is open but constrained,
-\item time is experienced as flowing.
-\end{itemize}
-
-The subjective arrow of time is therefore a structural consequence of projection-limited
-irreversibility, not an illusion.
-
-\subsection{Computational irreducibility and agency}
-
-A conscious system cannot shortcut-predict its own future internal state. The brain
-cannot simulate itself at neural resolution; it must act on compressed self-models.
-This computational irreducibility is not a defect—it is what grounds agency and choice.
-If self-prediction were exact, deliberation would collapse into deduction.
-
-\subsection{No requirement for quantum coherence}
-
-Nothing in this account requires sustained quantum coherence in neural substrates.
-The relevant irreversibility and projection arise from classical thermodynamic and
-informational constraints. Quantum mechanics underlies the substrate, as it does all
-matter, but consciousness does not depend on uniquely quantum degrees of freedom.
-
-%======================================================================
-\section{Artificial Intelligence and Projection-Limited Coherence}
-\label{sec:ai}
-%======================================================================
-
-\subsection{AI as a contrast case}
-
-Artificial intelligence provides a sharp contrast that clarifies the role of projection-limited
-coherence. Contemporary AI systems are powerful precisely because they are engineered to
-\emph{avoid} intrinsic irreversibility and finite coherence capacity.
-
-\subsection{Why current AI systems are not conscious}
-
-Most AI systems are designed with:
-\begin{itemize}[leftmargin=2em]
-\item full state inspectability and logging,
-\item checkpointing and rollback,
-\item exact copying and cloning of internal state,
-\item external control over reset and termination.
-\end{itemize}
-
-These properties imply that the system does not own its irreversibility or coherence
-capacity. Any irreversibility is paid by the surrounding infrastructure, not by the
-system itself.
-
-\subsection{Projection and self-modeling in AI}
-
-While AI systems employ internal representations (latent spaces, embeddings), these do
-not constitute projection-limited self-access. Given sufficient resources, an AI can be
-fully introspected, simulated, and restored. There is no principled barrier to global
-self-reconstruction.
-
-\subsection{Necessary (not sufficient) conditions for conscious AI}
-
-Within the projection-limited coherence framework, an artificial system could support
-consciousness only if it possessed:
-\begin{enumerate}[leftmargin=2em]
-\item intrinsic irreversibility (no perfect rollback or cloning),
-\item projection-limited self-modeling (lossy self-access),
-\item finite coherence capacity with real breakdown modes,
-\item open-system coupling that cannot be fully predicted internally,
-\item persistence as a basin through irreversible change.
-\end{enumerate}
-
-Randomness alone is insufficient; structural irreversibility and projection-limited
-self-access are required.
-
-\subsection{Engineering implications}
-
-These conditions are antithetical to current engineering goals (debuggability, safety,
-control). Thus, the absence of consciousness in present AI systems is not accidental
-but architectural.
-
-%======================================================================
-\section{Civilizations as Coherence-Limited Collective Systems}
-\label{sec:civilization}
-%======================================================================
-
-\subsection{Civilizations as projected systems}
-
-Civilizations admit a clear micro/macro split:
-\begin{itemize}[leftmargin=2em]
-\item microstates: individuals, local interactions, technologies, environments;
-\item macrostates: institutions, economies, infrastructures, shared narratives.
-\end{itemize}
-
-The macro-description is obtained via a many-to-one projection that enables coordination
-but discards detailed provenance.
-
-\subsection{Civilizational coherent sector}
-
-A civilization is coherent when:
-\begin{itemize}[leftmargin=2em]
-\item institutions function predictably,
-\item information flows remain reliable,
-\item coordination errors do not cascade uncontrollably,
-\item adaptation outpaces breakdown.
-\end{itemize}
-
-Outside this sector, the macro-description ceases to track reality and collapse ensues.
-
-\subsection{Coherence capacity at civilizational scale}
-
-Civilizational coherence capacity bounds the load of:
-\begin{itemize}[leftmargin=2em]
-\item population size and heterogeneity,
-\item energy throughput and resource extraction,
-\item technological coupling density,
-\item communication bandwidth and latency.
-\end{itemize}
-
-Increasing load without compensatory structure reduces the margin to admissibility
-boundaries.
-
-\subsection{Hidden relations across domains}
-
-Economy, governance, technology, culture, and environment are not independent policy
-domains. They are shadow variables of overlapping microdynamics. Compatibility
-constraints imply that optimizing one domain can destabilize others even without
-direct causal linkage.
-
-\subsection{The Fermi paradox revisited}
-
-Within this framework, the apparent silence of the universe is not paradoxical.
-Technological civilizations are coherence-intensive. As scale and throughput increase,
-coherence capacity is consumed more rapidly. Long-lived, high-signature civilizations
-are therefore structurally rare even if life and intelligence are common.
-
-\subsection{No moral narrative}
-
-This account does not claim that civilizations must collapse or that restraint is virtuous.
-It states only that coherence has a cost, and ignoring that cost produces predictable
-structural failure modes.
-
-%======================================================================
-% END PART 4 / 8
-%======================================================================
-
-% PART 5 will include:
-% Chapter 10 (Synthesis and Limits),
-% Appendices A–C with formal proofs and mappings,
-% and the complete bibliography.
-%======================================================================
-% PART 5 / 8
-% Continues the same LaTeX document from Parts 1–4.
-% Content:
-%   Chapter 10 — Synthesis, Scope, and Non-Claims
-%   Appendix A — Reconstruction Obstruction (Measurable Selection)
-%======================================================================
-
-%======================================================================
-\section{Synthesis, Scope, and Non-Claims}
-\label{sec:synthesis}
-%======================================================================
-
-\subsection{What projection-limited coherence explains}
-
-We summarize the explanatory content of the framework developed in
-Sections~\ref{sec:PLC}--\ref{sec:civilization}. The following phenomena arise
-\emph{structurally}, without invoking stochastic dynamics, special initial conditions,
-or fine-tuning of independent parameters:
-
-\begin{enumerate}[leftmargin=2em]
-\item \textbf{Irreversibility without fundamental time asymmetry.}
-Even when the underlying dynamics $\Phi$ are invertible, the shadow evolution
-$T=\Pi\circ\Phi$ is generically noninvertible once admissibility boundaries exist
-(Theorem~\ref{thm:reconobstruction}, Proposition~\ref{prop:struct-irreversible}).
-
-\item \textbf{Computational irreducibility of long-horizon prediction.}
-Basin membership and outcome selection cannot be shortcut-decided from the shadow
-state alone when factor-through fails and admissibility is finite
-(Theorems~\ref{thm:no-markov-closure} and \ref{prop:generic-nonmarkov}).
-
-\item \textbf{Hidden relations between effective variables.}
-Compatibility constraints among shadow observables arise from shared pre-images under
-$\Pi$, producing correlations without causal interaction
-(Proposition~\ref{prop:compat-generic}, Lemma~\ref{lem:nosignaling-struct}).
-
-\item \textbf{Criticality of complex structure.}
-Stable, information-rich behavior exists only near the interior of admissible domains;
-far from boundaries the system trivializes, and near boundaries coherence collapses.
-
-\item \textbf{Universality across substrates.}
-The same structural constraints apply to fundamental physics (MTT), brains,
-artificial systems, and civilizations because each relies on projection with finite
-coherence capacity.
-\end{enumerate}
-
-These results reframe long-standing puzzles—measurement, fine-tuning, unpredictability,
-and collapse—not as anomalies, but as necessary consequences of finite descriptive
-capacity.
-
-\subsection{What this framework does \emph{not} claim}
-
-For clarity and to avoid overextension, we list explicit non-claims.
-
-\begin{itemize}[leftmargin=2em]
-\item The framework does \emph{not} assert that all systems share the same
-microscopic dynamics or equations of motion.
-
-\item It does \emph{not} claim that consciousness, intelligence, or social outcomes
-are “reduced” to physics; only the \emph{structural constraints} of effective description
-are shared.
-
-\item It does \emph{not} imply that prediction is impossible in practice; rather, it
-identifies principled horizons beyond which prediction cannot be compressed.
-
-\item It does \emph{not} deny the usefulness of stochastic or phenomenological models;
-it explains why such models are necessary at the shadow level even when the underlying
-system is deterministic.
-\end{itemize}
-
-\subsection{Why this framework is scientifically useful}
-
-Projection-limited coherence provides a diagnostic lens:
-\begin{itemize}[leftmargin=2em]
-\item Identify the projection and its discarded degrees of freedom.
-\item Characterize the coherence capacity and admissibility boundaries.
-\item Model only within admissible regimes; treat breakdown as structural, not anomalous.
-\item Expect hidden cross-variable constraints where projections overlap.
-\end{itemize}
-
-This approach shifts emphasis from extending predictive reach indefinitely to
-understanding where and why prediction must fail.
-
-\subsection{Outlook}
-
-Several directions follow naturally:
-\begin{itemize}[leftmargin=2em]
-\item Quantitative estimation of coherence capacity in non-physical systems.
-\item Engineering architectures (in AI or control systems) that deliberately manage
-projection and irreversibility.
-\item Further mathematical classification of admissibility boundaries and basin
-structures in projection-limited systems.
-\end{itemize}
-
-In physics, Modal Triplet Theory demonstrates that the framework can be made fully
-rigorous and generative. In other domains, the same structure invites careful,
-domain-specific instantiation rather than metaphorical transfer.
-
-%======================================================================
-\appendix
-\section{Appendix A: Reconstruction Obstruction and Measurable Selection}
-\label{app:selection}
-%======================================================================
-
-This appendix provides additional formal detail underlying
-Theorem~\ref{thm:reconobstruction}, using standard results from measurable selection
-theory.
-
-\subsection{Measurable sections and selection theorems}
-
-Let $\Pi:\X\to\Y$ be a measurable map between standard Borel spaces.
-Classical selection theorems (e.g.\ Kuratowski--Ryll-Nardzewski) guarantee the existence
-of measurable selections under strong regularity conditions, such as closed-valued maps
-with measurable graphs.
-
-\begin{theorem}[Kuratowski--Ryll-Nardzewski, informal]\label{thm:krn}
-If $F:\Y\to 2^\X$ is a measurable multifunction with nonempty closed values in a Polish
-space $\X$, then $F$ admits a measurable selection.
-\end{theorem}
-
-\subsection{Why admissibility barriers violate selection hypotheses}
-
-In projection-limited coherence, the multifunction
-\[
-F(y) := \Pi^{-1}(y)\cap\Aad
-\]
-fails to satisfy the hypotheses of Theorem~\ref{thm:krn} once coherence capacity collapses.
-
-At admissibility boundaries:
-\begin{itemize}[leftmargin=2em]
-\item the graph of $F$ ceases to be closed (projector regularity fails);
-\item fibers overlap across dynamically distinct regions ($U_+$, $U_-$);
-\item continuity and boundedness conditions required for selection break down.
-\end{itemize}
-
-Thus the nonexistence of a global measurable section is not accidental but enforced by
-the structural loss of regularity at $\Cap=0$.
-
-\subsection{Relation to MTT}
-
-In MTT, this abstract obstruction corresponds to:
-\begin{itemize}[leftmargin=2em]
-\item closure of spectral gaps,
-\item divergence of Riesz projector norms,
-\item failure of controlled truncation.
-\end{itemize}
-These phenomena are proven in the MTT coherence capacity analysis
-\cite{NeroCoherenceCapacity2026} and imply nonexistence of global sections in the
-precise sense formalized here.
-
-%======================================================================
-% END PART 5 / 8
-%======================================================================
-
-% PART 6 will include:
-% Appendix B — Computational irreducibility via complete connections (expanded proofs)
-% Appendix C — Dictionary: abstract framework ↔ Modal Triplet Theory
-% and begin the full expanded bibliography.
-%======================================================================
-% PART 6 / 8
-% Continues the same LaTeX document from Parts 1–5.
-% Content:
-%   Appendix B — Computational Irreducibility via Complete Connections
-%   Appendix C — Explicit Dictionary: Abstract Framework ↔ Modal Triplet Theory
-%======================================================================
-
-%======================================================================
-\section{Appendix B: Computational Irreducibility via Complete Connections}
-\label{app:CI}
-%======================================================================
-
-This appendix provides a fully explicit mathematical treatment of computational
-irreducibility (CI) for projection-limited systems using the theory of chains with
-complete connections and $g$-measures. The goal is to show rigorously how
-history dependence, non-Markovianity, and indivisibility arise generically
-once projection destroys access to microstate information relevant for future
-admissibility.
-
-\subsection{Historical processes and infinite pasts}
-
-Let $\Y$ be a standard Borel space equipped with a bounded metric $d$ generating
-its Borel sigma-algebra. Consider bi-infinite or one-sided sequences:
-\[
-\Y^{\mathbb{Z}_-} = \{ (\dots, y_{-2}, y_{-1}, y_0) \}.
-\]
-
-Define the \emph{complete-past metric} for $\alpha\in(0,1)$:
-\begin{equation}
-d_\alpha(\mathbf{y},\mathbf{y}') = \sum_{k=0}^{\infty} \alpha^k \, d(y_{-k}, y'_{-k}).
-\end{equation}
-
-This metric ensures that distant past events influence the present with
-exponentially decaying weight.
-
-\subsection{Definition of a $g$-kernel}
-
-Let $\nu$ be a $\sigma$-finite reference measure on $(\Y,\mathcal{B}(\Y))$
-with full support.
-
-\begin{definition}[$g$-kernel]
-A \emph{$g$-kernel} is a measurable function
-\[
-g : \Y \times \Y^{\mathbb{Z}_-} \to (0,\infty)
-\]
-such that for each $\mathbf{y}\in\Y^{\mathbb{Z}_-}$,
-\[
-\int_\Y g(y \mid \mathbf{y}) \, \nu(dy) = 1.
-\]
-\end{definition}
-
-The interpretation is that $g(y\mid\mathbf{y})$ gives the conditional density
-for the next shadow state given the entire past.
-
-\subsection{Summable variations}
-
-\begin{definition}[Summable variations]
-A $g$-kernel has \emph{summable variations} if there exist constants
-$L<\infty$ and $\alpha\in(0,1)$ such that
-\[
-\int_\Y |g(y\mid \mathbf{y}) - g(y\mid \mathbf{y}')| \, \nu(dy)
-\le L \, d_\alpha(\mathbf{y}, \mathbf{y}')
-\quad \forall \mathbf{y},\mathbf{y}'.
-\]
-\end{definition}
-
-This condition formalizes controlled dependence on the distant past.
-
-\subsection{Existence and uniqueness of the path measure}
-
-\begin{theorem}[Existence and uniqueness of $g$-measure]
-If a $g$-kernel has summable variations, then there exists a unique
-shift-invariant probability measure $\mathbb{P}$ on $\Y^{\mathbb{Z}}$
-consistent with $g$.
-\end{theorem}
-
-\begin{proof}
-This is a standard result in the theory of chains with complete connections;
-see Walters \cite{Walters2000}, Johansson–Öberg \cite{JohanssonOberg2003},
-or Mauldin–Urbański \cite{MauldinUrbanski2003}.
-\end{proof}
-
-Thus, despite strong non-Markovianity, the process is well-defined and
-statistically stable.
-
-\subsection{Non-Markovianity and indivisibility revisited}
-
-\begin{proposition}[Generic non-Markovianity]
-If the factor-through condition (Definition~\ref{def:factor}) fails on an
-admissible domain, then the induced $g$-kernel depends on the infinite past
-$\mathbf{y}$ and cannot be reduced to a Markov kernel on $\Y$.
-\end{proposition}
-
-\begin{proof}
-Failure of factor-through implies that microstate distinctions erased by
-$\Pi$ affect future admissibility. Such distinctions cannot be encoded
-in any finite-dimensional summary of the present shadow state, forcing
-dependence on arbitrarily long histories.
-\end{proof}
-
-\begin{corollary}[Indivisibility]
-The induced shadow process is indivisible on $\Y$: there exists no family
-of Markov kernels on $\Y$ whose composition reproduces the same finite-time
-transition probabilities.
-\end{corollary}
-
-\subsection{Computational irreducibility as a theorem}
-
-We can now state CI precisely.
-
-\begin{theorem}[Structural computational irreducibility]
-Assume:
-\begin{enumerate}[leftmargin=2em]
-\item Projection $\Pi$ is many-to-one on an admissible domain $\Aad$.
-\item Admissibility boundaries $\Bbd$ exist with microstate-dependent crossing.
-\item The induced $g$-kernel has summable variations.
-\end{enumerate}
-Then there exists no algorithm that, given only a finite shadow history
-$(y_0,\dots,y_n)$, can decide with certainty whether the trajectory remains
-in $\Aad$ for all future times without effectively propagating the full
-history-dependent kernel.
-\end{theorem}
-
-\begin{proof}
-Any such algorithm would amount to a finite-memory Markovian predictor
-on $\Y$, contradicting non-Markovianity and indivisibility established above.
-\end{proof}
-
-\begin{remark}
-This is the formal backbone of claims about unpredictability in MTT,
-brains, AI, and civilizations. It is not epistemic ignorance but a
-provable limitation on predictive compression.
-\end{remark}
-
-%======================================================================
-\section{Appendix C: Explicit Dictionary Between Abstract Framework and Modal Triplet Theory}
-\label{app:dictionary}
-%======================================================================
-
-This appendix provides a precise mapping between the abstract constructs
-introduced in this paper and their concrete realizations in Modal Triplet Theory.
-
-\subsection{Underlying system}
-
+Within MTT, the abstract symbols can be assigned more structure:
 \begin{center}
-\begin{tabular}{ll}
-\textbf{Abstract framework} & \textbf{Modal Triplet Theory} \\
-\hline
-Underlying state space $\X$ & Configuration space of fields on $M_{10}=Y_4\times X_6$ \\
-Underlying dynamics $\Phi_t$ & Curvature-reducing / modal flow $\Phi_\tau$ \\
-Invertibility & Deterministic invertibility on admissible slabs \\
-\end{tabular}
+\begingroup
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash\bfseries}p{0.20\textwidth}>{\raggedright\arraybackslash}X}
+\toprule
+Framework object & MTT role at the current declared tier \\
+\midrule
+$\X$ & An upper configuration, bundle, field, or finite operator domain
+specified by the paper using it. \\
+$\Pi$ & A selected coherent-sector projector, pushforward, truncation, or
+observable map; these are not interchangeable without a commuting diagram. \\
+$\A$ & The domain on which spectral, analytic, algebraic, or numerical
+hypotheses have actually been verified. \\
+$\Rset=\Pi(\A)$ & The set of effective data emitted by that selected map,
+not all formally writable lower variables. \\
+$\Ccap$ & A normalized margin, metric clearance, coercivity reserve,
+spectral gap, or first-exit control quantity with its own estimate. \\
+$T$ or $\overline{\K}$ & A descended deterministic or stochastic dynamics
+only after the fiber or lumpability condition has been established. \\
+\bottomrule
+\end{tabularx}
+\endgroup
 \end{center}
 
-\subsection{Projection}
+This paper does not derive a universal MTT projector or a universal capacity
+dynamics.  It provides the checklist by which a proposed MTT encoding can be
+audited.  The current foundation supplies typed upper, coherent, and
+effective layers \cite{nero_foundations}.  Current capacity work supplies
+separate definitions for invariant margins and transport
+\cite{nero_capacity_invariant,nero_capacity_budget,nero_capacity_dynamics}.
+Current stochastic work distinguishes history dependence from quantum
+algebra \cite{nero_indivisible}.
+
+\subsection{Current claims and non-claims}
 
 \begin{center}
-\begin{tabular}{ll}
-\textbf{Abstract framework} & \textbf{Modal Triplet Theory} \\
-\hline
-Shadow map $\Pi$ & Joint Riesz projector $\PiC$ \\
-Pushforward & Fiber integration $I$ \\
-Observable map & $P = I \circ \PiC$ \\
-Noninvertibility & Loss of microstate information under projection \\
-\end{tabular}
+\begingroup
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash\bfseries}p{0.50\textwidth}>{\raggedright\arraybackslash}X}
+\toprule
+Statement & Status in this paper \\
+\midrule
+Fiber criterion for deterministic descent & Exact theorem. \\
+Kernel criterion for Markov projection & Exact theorem. \\
+Source information can be lost under a many-to-one map & Exact, relative
+to a declared source set. \\
+Projected dynamics is necessarily irreversible & False without further
+hypotheses. \\
+Projection necessarily increases physical entropy & False without an
+entropy-production model. \\
+Finite capacity obeys a universal conservation law & Not claimed. \\
+MTT derives all effective physics from one universal projection & Not
+claimed here. \\
+Cross-domain systems instantiate the same physical law & Not claimed. \\
+\bottomrule
+\end{tabularx}
+\endgroup
 \end{center}
 
-\subsection{Coherent sector and admissibility}
+\section{Cross-domain use: analogy first, model second}
 
-\begin{center}
-\begin{tabular}{ll}
-\textbf{Abstract framework} & \textbf{Modal Triplet Theory} \\
-\hline
-Admissible domain $\Aad$ & Admissible slabs with spectral gap \\
-Coherent sector $\Y_{\mathrm{coh}}$ & Coherent harmonic sector \\
-Boundary $\Bbd$ & Gap closure / projector blow-up \\
-\end{tabular}
-\end{center}
+\subsection{What transfers}
 
-\subsection{Coherence capacity}
-
-\begin{center}
-\begin{tabular}{ll}
-\textbf{Abstract framework} & \textbf{Modal Triplet Theory} \\
-\hline
-Capacity functional $\Cap$ & Function of spectral gap $\lambda_*$, projector norms \\
-$\Cap\to 0$ & Loss of controlled truncation \\
-Inverse capacity & Newton constant $G^{-1}$ (gravitational sector) \\
-\end{tabular}
-\end{center}
-
-\subsection{Irreversibility and probability}
-
-\begin{center}
-\begin{tabular}{ll}
-\textbf{Abstract framework} & \textbf{Modal Triplet Theory} \\
-\hline
-No global section & No global inverse of $\PiC$ \\
-Irreversibility & Measurement, horizon crossing, collapse \\
-Probabilities & Basin measures under projection \\
-\end{tabular}
-\end{center}
-
-\subsection{Computational irreducibility}
-
-\begin{center}
-\begin{tabular}{ll}
-\textbf{Abstract framework} & \textbf{Modal Triplet Theory} \\
-\hline
-History-dependent kernels & Indivisible stochastic processes \\
-No shortcut basin test & Undecidability of outcome selection \\
-No landscape scanning & Coherent universality classes only \\
-\end{tabular}
-\end{center}
-
-\begin{remark}
-This dictionary shows that every abstract ingredient required by
-projection-limited coherence is realized concretely in MTT without
-additional assumptions.
-\end{remark}
-
-%======================================================================
-% END PART 6 / 8
-%======================================================================
-
-% PART 7 will include:
-% Appendix D — Extended discussion: brains, AI, civilizations as formal projection systems
-% Appendix E — Conceptual comparison with entropy, chaos, and anthropic reasoning
-% plus the beginning of the full bibliography.
-%======================================================================
-% PART 7 / 8
-% Continues the same LaTeX document from Parts 1–6.
-% Content:
-%   Appendix D — Brains, AI, Civilizations as Formal Projection Systems
-%   Appendix E — Relation to Entropy, Chaos, Anthropic Reasoning
-%   Begin Bibliography
-%======================================================================
-
-%======================================================================
-\section{Appendix D: Brains, Artificial Intelligence, and Civilizations as Formal Projection Systems}
-\label{app:domains}
-%======================================================================
-
-This appendix makes explicit, in formal terms, how brains, artificial intelligence systems,
-and civilizations each instantiate the abstract structure $(\X,\Pi,\Cap)$ introduced in
-Section~\ref{sec:PLC}. The goal is not to force these systems into a physical mold, but to
-demonstrate that the same projection-limited coherence architecture applies whenever
-effective descriptions are indispensable.
-
-%----------------------------------------------------------------------
-\subsection{Brains}
-%----------------------------------------------------------------------
-
-\paragraph{Underlying system.}
-Let $\X_{\text{brain}}$ denote the state space of neural microstates, including membrane
-potentials, synaptic weights, neurotransmitter concentrations, and metabolic variables.
-The evolution $\Phi_t$ is given by coupled electrochemical and biochemical dynamics.
-These dynamics are deterministic to a very good approximation at the scale relevant
-for neural integration, though subject to thermal noise.
-
-\paragraph{Projection.}
-Define $\Pi_{\text{brain}}:\X_{\text{brain}}\to\Y_{\text{exp}}$ mapping microstates to
-experiential states (percepts, affective tones, working-memory contents, self-models).
-$\Pi_{\text{brain}}$ is many-to-one, lossy, and noninvertible.
-
-\paragraph{Coherent sector.}
-The admissible domain $\Aad_{\text{brain}}$ consists of neural states supporting stable,
-integrated experience. Outside this domain (coma, anesthesia, seizures), the shadow
-description fails.
-
-\paragraph{Coherence capacity.}
-$\Cap_{\text{brain}}$ is a functional of metabolic supply, network topology, neuromodulation,
-and load. Its exhaustion corresponds to breakdown of conscious integration.
-
-\paragraph{Irreversibility and CI.}
-Neural microdynamics destroy information continuously (synaptic decay, metabolic
-consumption). No global section of $\Pi_{\text{brain}}$ exists. Self-prediction is therefore
-computationally irreducible, grounding agency and the phenomenology of choice.
-
-%----------------------------------------------------------------------
-\subsection{Artificial Intelligence}
-%----------------------------------------------------------------------
-
-\paragraph{Underlying system.}
-For AI systems, $\X_{\text{AI}}$ includes parameters, activations, optimizer states,
-and (crucially) the surrounding computational infrastructure.
-
-\paragraph{Projection.}
-Internal representations (latents, embeddings) define a map
-$\Pi_{\text{AI}}:\X_{\text{AI}}\to\Y_{\text{AI}}$, but this projection is \emph{not}
-structurally limiting: with sufficient access, the full microstate can be reconstructed.
-
-\paragraph{Absence of intrinsic coherence capacity.}
-Current AI systems lack an intrinsic $\Cap$: irreversibility is paid by external
-infrastructure (energy, storage), not by the system as an autonomous basin.
-Checkpointing and rollback prevent the formation of admissibility barriers.
-
-\paragraph{Conditions for conscious AI (formal statement).}
-An AI system would instantiate projection-limited coherence only if there exists
-a subsystem $\X'_{\text{AI}}\subset\X_{\text{AI}}$ with:
-\begin{enumerate}[leftmargin=2em]
-\item noninvertible self-projection $\Pi'_{\text{AI}}$,
-\item finite $\Cap'_{\text{AI}}$ exhausted by internal dynamics,
-\item no external global section or reset.
+The following abstract questions can be asked in any domain:
+\begin{enumerate}
+\item What is the source state?
+\item What is observed or retained by $\Pi$?
+\item What is the realizable image $\Rset$?
+\item What estimate gives operational meaning to $\Ccap$?
+\item Does the fiber or lumpability criterion hold?
+\item Which prediction is made before examining the test data?
 \end{enumerate}
-These conditions are architectural, not algorithmic.
+This common syntax can be scientifically useful.  It can reveal that two
+fields face structurally similar model-reduction problems.
 
-%----------------------------------------------------------------------
-\subsection{Civilizations}
-%----------------------------------------------------------------------
+\subsection{What does not transfer}
 
-\paragraph{Underlying system.}
-Let $\X_{\text{civ}}$ be the state space of individual agents, technologies, environments,
-and local interactions.
-
-\paragraph{Projection.}
-Macrostates (institutions, economies, infrastructures, narratives) define a projection
-$\Pi_{\text{civ}}:\X_{\text{civ}}\to\Y_{\text{civ}}$ enabling large-scale coordination.
-
-\paragraph{Coherent sector and capacity.}
-The admissible domain $\Aad_{\text{civ}}$ consists of configurations where institutions
-function, information flows reliably, and adaptation outpaces breakdown.
-$\Cap_{\text{civ}}$ measures the tolerance to coupling density, throughput, and disturbance.
-
-\paragraph{Hidden relations and collapse.}
-Cross-sector constraints (economy–trust–environment–technology) are compatibility
-constraints inherited from shared microdynamics. Collapse occurs when $\Cap_{\text{civ}}\to 0$,
-producing abrupt, irreversible loss of macro-coherence.
-
-\paragraph{Fermi paradox (formal restatement).}
-Let $\mathcal{L}$ denote the measure of life-supporting admissible regions and
-$\mathcal{T}$ the measure of long-lived, high-signature coherent regimes.
-Projection-limited coherence implies $\mathcal{T}\ll\mathcal{L}$ generically, even if
-life and intelligence are common.
-
-%======================================================================
-\section{Appendix E: Relation to Entropy, Chaos, and Anthropic Reasoning}
-\label{app:comparisons}
-%======================================================================
-
-\subsection{Entropy-first accounts}
-
-Traditional explanations of irreversibility emphasize entropy increase from special
-initial conditions. In the present framework, entropy increase is derivative:
-projection discards information, increasing entropy automatically.
-The arrow of time is defined by admissibility loss, not by entropy maximization.
-
-\subsection{Chaos-first accounts}
-
-Chaos emphasizes sensitivity to initial conditions. Projection-limited coherence
-does not require chaos: even integrable or linear underlying dynamics can produce
-irreversible, CI shadow behavior once projection destroys reconstructability.
-
-\subsection{Anthropic and fine-tuning arguments}
-
-Anthropic reasoning treats constants and outcomes as independently variable knobs
-and invokes observer selection. Projection-limited coherence replaces this with
-structural correlation: many “constants” are jointly constrained outputs of a single
-coherent sector. Apparent fine-tuning reflects coherence boundaries, not improbable
-choices.
-
-\subsection{Why landscape reasoning fails structurally}
-
-Landscape models assume enumerable, selectable vacua. CI and the absence of a global
-section block operational enumeration. Selection is path-dependent and cannot be
-reduced to scanning.
-
-%======================================================================
-\begin{thebibliography}{99}
-
-\bibitem{Kechris1995}
-A.~S. Kechris,
-\newblock \emph{Classical Descriptive Set Theory},
-\newblock Springer, 1995.
-
-\bibitem{Bogachev2007}
-V.~I. Bogachev,
-\newblock \emph{Measure Theory},
-\newblock Springer, 2007.
-
-\bibitem{Durrett2019}
-R.~Durrett,
-\newblock \emph{Probability: Theory and Examples},
-\newblock Cambridge University Press, 2019.
-
-\bibitem{Walters2000}
-P.~Walters,
-\newblock \emph{An Introduction to Ergodic Theory},
-\newblock Springer, 2000.
-
-\bibitem{JohanssonOberg2003}
-A.~Johansson and A.~{\"O}berg,
-\newblock Square summability of variations of $g$-functions and uniqueness of
-  $g$-measures,
-\newblock \emph{Math. Res. Lett.} \textbf{10} (2003), 587--601.
-
-\bibitem{MauldinUrbanski2003}
-R.~D. Mauldin and M.~Urba{\'n}ski,
-\newblock \emph{Graph Directed Markov Systems},
-\newblock Cambridge University Press, 2003.
-
-\bibitem{Wolfram2002}
-S.~Wolfram,
-\newblock \emph{A New Kind of Science},
-\newblock Wolfram Media, 2002.
-
-%-------------------- MTT CORPUS --------------------------------------
-
-\bibitem{NeroFixedPointsI2025}
-P.~Nero,
-\newblock \emph{Fixed Points I: Fixed Points over Multi--Bundle Manifolds},
-\newblock 2025.
-
-\bibitem{NeroMTTFoundation2025}
-P.~Nero,
-\newblock \emph{Modal Triplet Theory: Foundation},
-\newblock 2025.
-
-\bibitem{NeroControlledTruncation2025}
-P.~Nero,
-\newblock \emph{Coherent-Sector Universality and Controlled Truncation in Modal Triplet Theory},
-\newblock 2025.
-
-\bibitem{NeroQMfromMTT2025}
-P.~Nero,
-\newblock \emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
-\newblock 2025.
-
-\bibitem{NeroEntanglementAQFT2025}
-P.~Nero,
-\newblock \emph{Entanglement, Locality, and Measurement from Coherent Sector Dynamics},
-\newblock 2025.
-
-\bibitem{NeroProjectionProbabilityIrreversibility2025}
-P.~Nero,
-\newblock \emph{Projection, Probability, and Irreversibility},
-\newblock 2025.
-
-\bibitem{NeroIndivisibleProcesses2026}
-P.~Nero,
-\newblock \emph{From Modal Triplet Theory to Indivisible Stochastic Processes},
-\newblock 2026.
-
-\bibitem{NeroGRfromMTT2026}
-P.~Nero,
-\newblock \emph{Modal Triplet Theory: From MTT to General Relativity},
-\newblock 2026.
-
-\bibitem{NeroCoherenceCapacity2026}
-P.~Nero,
-\newblock \emph{Coherence Capacity as the Invariant Admissibility Margin of Modal Triplet Theory},
-\newblock 2026.
-
-\end{thebibliography}
-
-%======================================================================
-% END PART 7 / 8
-%======================================================================
-
-% PART 8 will close with:
-%   Final remarks (short),
-%   Compilation notes,
-%   Optional figures description.
-%======================================================================
-% PART 8 / 8
-% Final closing section, compilation notes, and optional figures
-%======================================================================
-
-%======================================================================
-\section{Final Remarks}
-\label{sec:final}
-%======================================================================
-
-This paper has developed a \emph{structural} theory of effective description—projection-limited
-coherence—and shown how it accounts for irreversibility, computational irreducibility, hidden
-relations, and critical operating regimes across domains.
-
-The core result is negative in a precise sense: there exist principled limits to prediction,
-reconstruction, and enumeration whenever effective descriptions arise via noninvertible
-projection with finite coherence capacity. These limits are not epistemic accidents but
-mathematical consequences of the structure required for any reduced description to exist at all.
-
-At the same time, the result is constructive. By isolating projection, coherence capacity,
-and admissibility boundaries as the key invariants, the framework provides a diagnostic tool:
-it tells us \emph{where} effective laws apply, \emph{why} they fail, and \emph{which}
-cross-variable constraints must be respected even when no interaction is apparent.
-
-Modal Triplet Theory demonstrates that this structure is not merely philosophical but
-mathematically realizable in fundamental physics. Brains, artificial systems, and civilizations
-instantiate the same architecture at different scales and substrates, explaining why similar
-phenomena—collapse, unpredictability, hidden coupling—appear wherever complexity is sustained.
-
-The broader lesson is not that everything is governed by the same equations, but that
-everything that can be \emph{effectively described} is governed by the same structural limits.
-
-%======================================================================
-\section{Compilation Notes}
-\label{sec:compilation}
-%======================================================================
-
-This manuscript is written for compilation with a generic \texttt{series.sty} class or style
-file providing standard sectioning and typography. No publisher-specific commands are used.
-
-\begin{itemize}[leftmargin=2em]
-\item Required packages: \texttt{amsmath}, \texttt{amssymb}, \texttt{amsthm},
-\texttt{mathtools}, \texttt{graphicx}, \texttt{hyperref}, \texttt{enumitem}.
-\item All theorem environments are defined in the preamble.
-\item The document is self-contained and does not rely on external figures.
+The following objects remain domain specific:
+\begin{itemize}
+\item conserved quantities and constitutive laws;
+\item thermodynamic entropy and temperature;
+\item biological fitness and metabolic cost;
+\item cognitive reports and behavioral observables;
+\item engineering failure criteria;
+\item social institutions, incentives, and historical interventions.
 \end{itemize}
+Using the same word for two margins does not establish that they have the
+same units, dynamics, or causal role.
 
-To compile:
-\begin{verbatim}
-pdflatex manuscript.tex
-bibtex manuscript   % if converting bibliography to .bib format
-pdflatex manuscript.tex
-pdflatex manuscript.tex
-\end{verbatim}
+\subsection{Domain-model ledger}
 
-The bibliography is provided inline for clarity; it can be converted to a \texttt{.bib} file
-without modification of citations.
+\begin{center}
+\small
+\begingroup
+\renewcommand{\arraystretch}{1.10}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash\bfseries}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}X}
+\toprule
+Domain & Candidate source & Candidate projection & Required evidence \\
+\midrule
+Physics & A specified state, field, bundle, or operator model & A declared
+measurement, quotient, or effective-field map & Commuting map, controlled
+error, dynamics, units, and comparison with observables \\
+Biology & Molecular, cellular, or population state & A phenotype, network,
+or functional summary & Mechanistic model, perturbation data, uncertainty,
+and held-out prediction \\
+Cognition & Neural and bodily variables under an experimental protocol &
+Reports or task-level latent variables & Operational definitions,
+identifiability, intervention, and competing-model comparison \\
+Artificial intelligence & Model state, training history, and environment &
+Representations, outputs, or self-model variables & Reproducible benchmark,
+ablation, distribution shift, and causal test \\
+Collective systems & Agents, institutions, resources, and communication &
+Macroscopic indicators or network summaries & Historical data,
+counterfactual design, confound control, and domain-specific dynamics \\
+\bottomrule
+\end{tabularx}
+\endgroup
+\end{center}
 
-%======================================================================
-\section{Optional Figures (Descriptive)}
-\label{sec:figures}
-%======================================================================
+\subsection{Consciousness and civilization}
 
-Although the manuscript is complete without figures, the following schematic figures may
-aid exposition:
+Projection-limited coherence does not by itself define consciousness,
+subjective time, agency, civilizational stability, or a solution to the
+Fermi paradox.  Those topics can motivate candidate models, but each would
+need operational variables and discriminating evidence.  In particular:
+\begin{itemize}
+\item a compressed self-model is not sufficient for consciousness;
+\item memory in an observed process is not sufficient for agency;
+\item a finite organizational margin is not a thermodynamic capacity;
+\item failure of a social system is not a universal admissibility boundary;
+\item absence of an observed extraterrestrial signal is not derived from
+the abstract projection formalism.
+\end{itemize}
+The value of the framework here is methodological.  It says what would have
+to be built before an analogy becomes a scientific model.
 
-\begin{enumerate}[leftmargin=2em]
-\item \textbf{Projection diagram:} underlying state space $\X$, projection $\Pi$, shadow
-space $\Y$, coherent sector $\Y_{\mathrm{coh}}$, and admissibility boundary $\Bbd$.
-\item \textbf{Coherence capacity profile:} schematic $\Cap(x)$ along a trajectory,
-illustrating admissible region, boundary crossing, and irreversibility.
-\item \textbf{Hidden relations:} realizability set $\mathcal{R}\subset\Y_1\times\Y_2$
-as a constrained subset rather than a Cartesian product.
-\item \textbf{Two-layer brain schematic:} neural microstates $\X_{\text{brain}}$ and
-experiential shadow $\Y_{\text{exp}}$ with noninvertible projection.
-\item \textbf{Civilizational coherence budget:} qualitative depiction of load vs.\ capacity.
+\section{Validation and falsification}
+
+A projection-limited model should be accompanied by a seven-part
+certificate:
+\begin{enumerate}
+\item \textbf{Source specification:} state space, units, and dynamics.
+\item \textbf{Observation specification:} the map $\Pi$ and its uncertainty.
+\item \textbf{Image test:} direct characterization of $\Rset=\Pi(\A)$ or a
+certified approximation.
+\item \textbf{Dynamics test:} fiber criterion, lumpability test, or an
+explicit history-dependent alternative.
+\item \textbf{Margin certificate:} definition of $\Ccap$ and the estimate it
+controls.
+\item \textbf{Prediction:} an observable not used to choose the model.
+\item \textbf{Comparison:} uncertainty budget and performance against
+plausible alternatives.
 \end{enumerate}
 
-These figures are illustrative only and introduce no additional assumptions.
+The framework is falsified in an application when its declared map or margin
+fails its own certificate, when an alleged image constraint admits observed
+recombinations, when a claimed memory effect disappears under a sufficient
+state augmentation, or when a domain-specific prediction fails.  The
+abstract mathematics itself is not evidence for any particular empirical
+instantiation.
 
-%======================================================================
+\section{Discussion}
+
+\subsection{A useful change of emphasis}
+
+The strongest part of projection-limited coherence is not the claim that
+projection explains everything.  It is the insistence that an effective
+theory has an upstream source, a map, an image, and a validity domain.
+Writing these objects explicitly often exposes where a proposed explanation
+has skipped a step.
+
+For example, if a projected process appears irreversible, one should first
+ask whether an autonomous effective map exists.  If it does, test its
+invertibility.  If it does not, model the hidden-state dependence rather
+than calling the process fundamentally random.  If entropy is invoked,
+identify the probability law and reference dynamics.  If capacity is
+invoked, identify the norm or estimate it controls.  If two variables are
+said to have a hidden relation, characterize the realizable image or the
+joint measure.
+
+\subsection{Why the corrected framework is stronger}
+
+Removing universal implications does not make the framework empty.  It
+makes it modular:
+\[
+\begin{array}{c}
+\text{fiber test} \longrightarrow \text{autonomous deterministic shadow},\\
+\text{lumpability test} \longrightarrow \text{autonomous Markov shadow},\\
+\text{image test} \longrightarrow \text{compatibility constraints},\\
+\text{information test} \longrightarrow \text{recoverability limits},\\
+\text{margin estimate} \longrightarrow \text{controlled validity window}.
+\end{array}
+\]
+Different applications may satisfy different rows.  The framework records
+that fact without forcing all systems into one physical mechanism.
+
+\subsection{Relationship to reduction and emergence}
+
+The formalism is compatible with several established viewpoints.
+Sufficient statistics and Blackwell comparison describe what information a
+channel preserves \cite{blackwell1953}.  Lumpability describes when a
+Markov chain descends to a partition \cite{kemeny_snell,norris}.
+Information theory quantifies channel loss \cite{cover_thomas}.
+Predictive-state methods ask which histories have the same future law
+\cite{crutchfield_young,shalizi_crutchfield}.  Projection-limited coherence
+does not replace these theories.  It provides a common typed ledger in which
+their distinct obligations can be combined with MTT's source, admissibility,
+and margin language.
+
+\section{Conclusion}
+
+Projection is not a universal generator of irreversibility, entropy,
+complexity, or cross-domain law.  It is one component of an effective
+description.  Exact consequences arise only after the source dynamics,
+observation fibers, realizable image, probability law, and validity margin
+are specified.
+
+Version 2 establishes a corrected core:
+\begin{enumerate}
+\item deterministic descent is governed by fiber invariance;
+\item stochastic descent is governed by kernel lumpability;
+\item a section selects a representative but does not recover an unknown
+source point in a nontrivial fiber;
+\item compatibility is a property of the actual image or joint measure;
+\item information loss does not by itself supply thermodynamic entropy
+production;
+\item memory does not by itself supply a no-shortcut theorem;
+\item capacity is a control margin until a domain-specific law gives it
+more structure.
+\end{enumerate}
+
+This is the defensible unifying statement.  MTT and other theories may
+instantiate the template in multiple ways.  Biology, cognition, artificial
+intelligence, and collective systems may also use it, but only through
+independently specified and tested domain models.
+
+\bibliographystyle{plain}
+\bibliography{main}
+
 \end{document}
-%======================================================================

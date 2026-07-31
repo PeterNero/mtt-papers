@@ -5,17 +5,17 @@
   "priority_counts": {
     "critical": 3,
     "light": 5,
-    "major": 6,
+    "major": 5,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 121
+    "reviewed": 122
   },
   "missing_dimension_counts": {
     "argument_flow": 32,
     "conclusion": 8,
     "concrete_foothold": 30,
-    "object_intuition": 87,
-    "orientation": 55,
+    "object_intuition": 88,
+    "orientation": 56,
     "result_interpretation": 9
   },
   "forbidden_boilerplate_hits": [],
@@ -2426,26 +2426,29 @@
     },
     {
       "paper_id": "projection-limited-coherence-a-structural-theory-of-eff-3343fe62",
-      "title": "Projection-Limited Coherence: A Structural Theory of Effective Description from Fundamental Physics to Consciousness and Civilization",
-      "total_words": 8342,
-      "narrative_words": 5395,
-      "formal_results": 32,
-      "proofs": 12,
-      "narrative_words_per_result": 168.6,
-      "orientation": true,
-      "object_intuition": true,
+      "title": "Projection-Limited Coherence: Exact Criteria for Effective Dynamics and a Cross-Domain Research Program",
+      "total_words": 3806,
+      "narrative_words": 3191,
+      "formal_results": 10,
+      "proofs": 5,
+      "narrative_words_per_result": 319.1,
+      "orientation": false,
+      "object_intuition": false,
       "argument_flow": true,
       "result_interpretation": true,
       "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
-      "coverage_dimensions": 7,
-      "audit_priority": "major",
-      "heuristic_priority": "major",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
-      "missing_dimensions": []
+      "coverage_dimensions": 5,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "moderate",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 2 replaces the universal projection narrative by exact, separately typed criteria. It proves the deterministic fiber and stochastic lumpability tests; distinguishes representative sections from actual source recovery; gives explicit many-to-one and no-continuous-section counterexamples with invertible shadow dynamics; defines compatibility through the realizable image or joint measure; restricts entropy claims to conditional information loss and data processing unless a physical entropy-production law is supplied; restricts capacity to a control margin unless a constitutive or conservation law is supplied; withdraws memory-to-computational-irreducibility inference; reclassifies biology, cognition, AI, consciousness, and civilization material as domain-model research programs; provides a seven-part validation certificate; and the complete 14-page PDF was visually inspected.",
+      "missing_dimensions": [
+        "orientation",
+        "object_intuition"
+      ]
     },
     {
       "paper_id": "projection-probability-and-irreversibility-shadow-bridg-a86c97e5",

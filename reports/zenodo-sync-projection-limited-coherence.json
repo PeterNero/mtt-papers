@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-31T05:31:22+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21714517",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "38568881496b454416915362e262af2b",
+      "local_pdf_sha256": "97b54ee6e79527c7c3eab12fd8a5a14ee66d93ad9c71319f10cdcc018dacfb77",
+      "paper_id": "projection-limited-coherence-a-structural-theory-of-eff-3343fe62",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    }
+  ]
+}

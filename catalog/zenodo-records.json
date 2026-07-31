@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18274609",
+      "created": "2026-07-31T05:31:31.247873+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21714517",
+      "files": [
+        {
+          "checksum": "md5:38568881496b454416915362e262af2b",
+          "content_url": "https://zenodo.org/api/records/21714517/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 351643
+        }
+      ],
+      "id": "21714517",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21714517",
+      "resource_type": "publication",
+      "title": "Projection-Limited Coherence: Exact Criteria for Effective Dynamics and a Cross-Domain Research Program",
+      "updated": "2026-07-31T05:31:31.635112+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18274628",
       "created": "2026-07-31T05:09:53.435292+00:00",
       "creators": [

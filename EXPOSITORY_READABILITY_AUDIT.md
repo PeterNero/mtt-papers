@@ -11,10 +11,10 @@ Canonical papers audited: **139**.
 | Priority | Papers |
 | --- | ---: |
 | critical | 3 |
-| major | 6 |
+| major | 5 |
 | moderate | 2 |
 | light | 5 |
-| reviewed | 121 |
+| reviewed | 122 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -24,8 +24,8 @@ Canonical papers audited: **139**.
 | argument_flow | 32 |
 | conclusion | 8 |
 | concrete_foothold | 30 |
-| object_intuition | 87 |
-| orientation | 55 |
+| object_intuition | 88 |
+| orientation | 56 |
 | result_interpretation | 9 |
 
 ## Revision Queue
@@ -35,7 +35,6 @@ Canonical papers audited: **139**.
 | critical | critical | `eth-and-many-body-localization-as-a-single-shadow-bridg-236606dd` | 27 | 45.8 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 17 | 123.5 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | critical | critical | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 15 | 54.1 | 4/7 | argument_flow, concrete_foothold, conclusion |
-| major | major | `projection-limited-coherence-a-structural-theory-of-eff-3343fe62` | 32 | 168.6 | 7/7 | - |
 | major | major | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 15 | 210.5 | 7/7 | - |
 | major | major | `horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71` | 11 | 102.7 | 5/7 | object_intuition, concrete_foothold |
 | major | major | `quantum-field-theory-reconstruction-from-coherence-basi-ef12097a` | 11 | 107.5 | 5/7 | object_intuition, concrete_foothold |
@@ -85,6 +84,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `computational-irreducibility-from-projection-undecidabi-6cc6aafd` | 10 | 251.4 | 5/7 | orientation, object_intuition |
 | reviewed | major | `fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce` | 10 | 234.6 | 7/7 | - |
 | reviewed | major | `modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83` | 10 | 232.0 | 5/7 | orientation, object_intuition |
+| reviewed | moderate | `projection-limited-coherence-a-structural-theory-of-eff-3343fe62` | 10 | 319.1 | 5/7 | orientation, object_intuition |
 | reviewed | major | `projection-probability-and-irreversibility-shadow-bridg-a86c97e5` | 10 | 217.9 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | major | `closure-and-inevitability-in-modal-triplet-theory` | 9 | 215.7 | 7/7 | - |
 | reviewed | major | `coherent-green-functions-replacing-point-sources-by-adm-98607519` | 9 | 236.1 | 7/7 | - |
