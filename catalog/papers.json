@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
-    "zenodo_records": 256,
-    "zenodo_records_matched": 256,
+    "zenodo_records": 257,
+    "zenodo_records_matched": 257,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -1419,6 +1419,116 @@
           "resource_type": "publication",
           "title": "Why the Born Rule and the Classical Limit Are the Same Problem",
           "updated": "2026-01-15T20:01:47.452764+00:00",
+          "version": "v1.0"
+        }
+      ]
+    },
+    {
+      "abstract": "Topology can constrain a four-dimensional effective theory, but only after the global gauge group, field representations, internal bundles, zero-mode spaces, coefficient bundles, and contraction maps have been specified. This paper replaces an earlier topology-only argument by that typed statement. For a fixed global gauge group, characters of its U(1) factor form an integer lattice; rational hypercharges arise after a normalization choice and quotient compatibility conditions. This lattice does not by itself select the observed matter representations. Gauge anomalies are encoded by the determinant or Pfaffian line of a family of chiral Dirac operators over background-field space, rather than by the determinant of the matter bundle on spacetime. Local anomaly is detected by curvature and global anomaly by holonomy; cancellation requires a compatible local equivariant trivialization. For effective operators, we give the exact tensor-product line classes of the Yukawa, Weinberg, QQQL, u-c u-c d-c e-c, and singlet-Majorana monomials. The two baryon-number violating examples are Standard Model gauge singlets and, in nonsupersymmetric SMEFT, have mass dimension six. They are excluded only if a declared realization supplies an additional bundle, symmetry, cohomology, or overlap obstruction. We prove a sufficient bundle-selection theorem and explain why passing its tests does not guarantee a nonzero coupling. Current Modal Triplet Theory (MTT) has exact finite results for a selected chiral representation, its anomaly table, the faithful (SU(3) x SU(2) x U(1))/Z6 group, and a unique anomaly-free shared hypercharge direction within the chosen finite completion. Those results do not yet select the physical compactification endpoint or prove that every dangerous operator is absent. The result is a rigorous realization-by-realization selection framework, not a universal topology-only derivation of the Standard Model.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v2",
+      "date": "Version 2, July 2026",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.18261773",
+        "created": "2026-07-31T04:14:17.730800+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21713543",
+        "files": [
+          {
+            "checksum": "md5:31a8bdc9267f9865c4ec3b497296f2c4",
+            "content_url": "https://zenodo.org/api/records/21713543/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 367630
+          }
+        ],
+        "id": "21713543",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-31",
+        "record_url": "https://zenodo.org/records/21713543",
+        "resource_type": "publication",
+        "title": "Bundle Selection Rules, Anomaly Lines, and Charge Lattices A Conditional Topological Layer for Modal Triplet Theory",
+        "updated": "2026-07-31T04:14:18.208713+00:00",
+        "version": "v2"
+      },
+      "main_tex_sha256": "02ba3c274b8b0eacf86b79e26a278706bc335a881780a3f04db60be22f5f0c24",
+      "paper_id": "topology-only-constraints-and-forbidden-operators-in-mo-90db2212",
+      "paper_md_sha256": "dd0868012e92f1c2a7175d36e38cf9bb508e3da6f448ad3b92360f1e10c7b027",
+      "release_state": "zenodo_released",
+      "result_refs": [
+        "e6_qpsi_qcd_anomaly",
+        "final_12_of_12_audit",
+        "native_gauge_group",
+        "neutral_summand_hypercharge",
+        "strict_upgrade_ledger",
+        "typed_family_representation"
+      ],
+      "revision": {
+        "revision_evidence_path": "papers/topology-only-constraints-and-forbidden-operators-in-mo-90db2212/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "223bef75eb9f767b466f81245b68c54bb9a65919cc7262fc4d9ef356dbc9670d",
+        "selected_revision": true
+      },
+      "source_provenance": {
+        "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory"
+      },
+      "source_tree_sha256": "14b4626c2f56e52d5404c3452563a987104e64d2506abff44cd433a4f76a8ebb",
+      "title": "Bundle Selection Rules, Anomaly Lines, and Charge Lattices A Conditional Topological Layer for Modal Triplet Theory",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18261773",
+          "created": "2026-07-31T04:14:17.730800+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21713543",
+          "files": [
+            {
+              "checksum": "md5:31a8bdc9267f9865c4ec3b497296f2c4",
+              "content_url": "https://zenodo.org/api/records/21713543/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 367630
+            }
+          ],
+          "id": "21713543",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-31",
+          "record_url": "https://zenodo.org/records/21713543",
+          "resource_type": "publication",
+          "title": "Bundle Selection Rules, Anomaly Lines, and Charge Lattices A Conditional Topological Layer for Modal Triplet Theory",
+          "updated": "2026-07-31T04:14:18.208713+00:00",
+          "version": "v2"
+        },
+        {
+          "concept_doi": "10.5281/zenodo.18261773",
+          "created": "2026-01-15T19:54:19.755571+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.18261774",
+          "files": [
+            {
+              "checksum": "md5:4a5d578a2e594935dc51fa98fcae11a9",
+              "content_url": "https://zenodo.org/api/records/18261774/files/Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory%20(2).pdf/content",
+              "key": "Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory (2).pdf",
+              "size": 281504
+            }
+          ],
+          "id": "18261774",
+          "match_kind": "title_or_file",
+          "match_score": 1.0,
+          "publication_date": "2026-01-15",
+          "record_url": "https://zenodo.org/records/18261774",
+          "resource_type": "publication",
+          "title": "Topology-Only Constraints and Forbidden Operators in Modal Triplet Theory",
+          "updated": "2026-01-15T19:54:20.203429+00:00",
           "version": "v1.0"
         }
       ]
@@ -13129,82 +13239,6 @@
           "resource_type": "publication",
           "title": "Topological Phases of Matter as Effective Overlap Structures",
           "updated": "2026-01-15T20:05:18.265377+00:00",
-          "version": "v1.0"
-        }
-      ]
-    },
-    {
-      "abstract": "We derive a Tier\u20131 layer of predictions in Modal Triplet Theory (MTT) using topology and admissibility alone, without invoking renormalization group flow, collapse dynamics, or spectral actions. Matter fields are modeled as globally admissible sections of overlap bundles formed from three internal bundles. This immediately quantizes hypercharge on a discrete lattice determined by integral cohomology, forbids anomalous representations as topological obstructions in determinant line bundles, and excludes broad classes of baryon- and lepton-number violating operators (including leading proton decay operators) as globally inadmissible bundle products. We also obtain topological constraints on neutrino mass terms: Majorana masses require a global real structure on the relevant overlap bundle. These results supply early falsifiability criteria independent of Planck-scale dynamics. All statements are slab-local and admissibility-conditioned, but require no dynamics beyond global definability of overlap sections.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January, 2026",
-      "latest_zenodo_release": {
-        "concept_doi": "10.5281/zenodo.18261773",
-        "created": "2026-01-15T19:54:19.755571+00:00",
-        "creators": [
-          "Nero, Peter"
-        ],
-        "doi": "10.5281/zenodo.18261774",
-        "files": [
-          {
-            "checksum": "md5:4a5d578a2e594935dc51fa98fcae11a9",
-            "content_url": "https://zenodo.org/api/records/18261774/files/Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory%20(2).pdf/content",
-            "key": "Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory (2).pdf",
-            "size": 281504
-          }
-        ],
-        "id": "18261774",
-        "match_kind": "title_or_file",
-        "match_score": 1.0,
-        "publication_date": "2026-01-15",
-        "record_url": "https://zenodo.org/records/18261774",
-        "resource_type": "publication",
-        "title": "Topology-Only Constraints and Forbidden Operators in Modal Triplet Theory",
-        "updated": "2026-01-15T19:54:20.203429+00:00",
-        "version": "v1.0"
-      },
-      "main_tex_sha256": "6b499ecf6a39c5ab945542e7ca01cf2863157ebcd20d8c5d3dd9761923c7823b",
-      "paper_id": "topology-only-constraints-and-forbidden-operators-in-mo-90db2212",
-      "paper_md_sha256": "ba604740ff84c204ba866eb0f06115c7c4bee4feb898e131270c9185ebdf6333",
-      "release_state": "zenodo_released",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory"
-      },
-      "source_tree_sha256": "000c9f855d059b491fc8d5b2b0b423fb1a2506e3bb0fbf088b1a0fdf921d85be",
-      "title": "Topology-Only Constraints and Forbidden Operators in Modal Triplet Theory Anomaly cancellation, hypercharge quantization, and early falsifiability from overlap bundles",
-      "version_relation": "matches_latest_release",
-      "zenodo_releases": [
-        {
-          "concept_doi": "10.5281/zenodo.18261773",
-          "created": "2026-01-15T19:54:19.755571+00:00",
-          "creators": [
-            "Nero, Peter"
-          ],
-          "doi": "10.5281/zenodo.18261774",
-          "files": [
-            {
-              "checksum": "md5:4a5d578a2e594935dc51fa98fcae11a9",
-              "content_url": "https://zenodo.org/api/records/18261774/files/Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory%20(2).pdf/content",
-              "key": "Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory (2).pdf",
-              "size": 281504
-            }
-          ],
-          "id": "18261774",
-          "match_kind": "title_or_file",
-          "match_score": 1.0,
-          "publication_date": "2026-01-15",
-          "record_url": "https://zenodo.org/records/18261774",
-          "resource_type": "publication",
-          "title": "Topology-Only Constraints and Forbidden Operators in Modal Triplet Theory",
-          "updated": "2026-01-15T19:54:20.203429+00:00",
           "version": "v1.0"
         }
       ]

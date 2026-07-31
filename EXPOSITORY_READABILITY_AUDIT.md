@@ -10,12 +10,12 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| critical | 4 |
+| critical | 3 |
 | major | 6 |
 | moderate | 2 |
 | light | 6 |
 | low | 1 |
-| reviewed | 118 |
+| reviewed | 119 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -23,10 +23,10 @@ Canonical papers audited: **139**.
 | Dimension | Papers flagged |
 | --- | ---: |
 | argument_flow | 32 |
-| conclusion | 9 |
-| concrete_foothold | 32 |
+| conclusion | 8 |
+| concrete_foothold | 31 |
 | object_intuition | 86 |
-| orientation | 52 |
+| orientation | 53 |
 | result_interpretation | 8 |
 
 ## Revision Queue
@@ -36,7 +36,6 @@ Canonical papers audited: **139**.
 | critical | critical | `eth-and-many-body-localization-as-a-single-shadow-bridg-236606dd` | 27 | 45.8 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 17 | 123.5 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | critical | critical | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 15 | 54.1 | 4/7 | argument_flow, concrete_foothold, conclusion |
-| critical | critical | `topology-only-constraints-and-forbidden-operators-in-mo-90db2212` | 12 | 116.0 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | major | major | `projection-limited-coherence-a-structural-theory-of-eff-3343fe62` | 32 | 168.6 | 7/7 | - |
 | major | major | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 15 | 210.5 | 7/7 | - |
 | major | major | `horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71` | 11 | 102.7 | 5/7 | object_intuition, concrete_foothold |
@@ -118,6 +117,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0` | 6 | 354.2 | 7/7 | - |
 | reviewed | light | `modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927` | 6 | 464.5 | 5/7 | orientation, object_intuition |
 | reviewed | low | `the-modal-triplet-theory-program-a1-coherent-kinematics` | 6 | 461.2 | 7/7 | - |
+| reviewed | light | `topology-only-constraints-and-forbidden-operators-in-mo-90db2212` | 6 | 438.0 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | light | `when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34` | 6 | 500.3 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `white-noise-and-markov-limits-as-delta-correlation-idea-854be499` | 6 | 241.3 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `why-quantum-contextuality-and-measurement-order-depende-e0bdb9bf` | 6 | 385.7 | 6/7 | orientation |

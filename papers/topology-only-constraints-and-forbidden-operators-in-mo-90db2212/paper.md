@@ -1,288 +1,356 @@
 ---
 abstract: |
-  We derive a Tier–1 layer of predictions in Modal Triplet Theory (MTT) using topology and admissibility alone, without invoking renormalization group flow, collapse dynamics, or spectral actions. Matter fields are modeled as globally admissible sections of overlap bundles formed from three internal bundles. This immediately quantizes hypercharge on a discrete lattice determined by integral cohomology, forbids anomalous representations as topological obstructions in determinant line bundles, and excludes broad classes of baryon- and lepton-number violating operators (including leading proton decay operators) as globally inadmissible bundle products. We also obtain topological constraints on neutrino mass terms: Majorana masses require a global real structure on the relevant overlap bundle. These results supply early falsifiability criteria independent of Planck-scale dynamics. All statements are slab-local and admissibility-conditioned, but require no dynamics beyond global definability of overlap sections.
+  Topology can constrain a four-dimensional effective theory, but only after the global gauge group, field representations, internal bundles, zero-mode spaces, coefficient bundles, and contraction maps have been specified. This paper replaces an earlier topology-only argument by that typed statement. For a fixed global gauge group, characters of its $`U(1)`$ factor form an integer lattice; rational hypercharges arise after a normalization choice and quotient compatibility conditions. This lattice does not by itself select the observed matter representations. Gauge anomalies are encoded by the determinant or Pfaffian line of a family of chiral Dirac operators over background-field space, rather than by the determinant of the matter bundle on spacetime. Local anomaly is detected by curvature and global anomaly by holonomy; cancellation requires a compatible local equivariant trivialization. For effective operators, we give the exact tensor-product line classes of the Yukawa, Weinberg, $`QQQL`$, $`u^cu^cd^ce^c`$, and singlet-Majorana monomials. The two baryon-number violating examples are Standard Model gauge singlets and, in nonsupersymmetric SMEFT, have mass dimension six. They are excluded only if a declared realization supplies an additional bundle, symmetry, cohomology, or overlap obstruction. We prove a sufficient bundle-selection theorem and explain why passing its tests does not guarantee a nonzero coupling. Current Modal Triplet Theory (MTT) has exact finite results for a selected chiral representation, its anomaly table, the faithful $`(SU(3)\times SU(2)\times U(1))/\mathbb{Z}_6`$ group, and a unique anomaly-free shared hypercharge direction within the chosen finite completion. Those results do not yet select the physical compactification endpoint or prove that every dangerous operator is absent. The result is a rigorous realization-by-realization selection framework, not a universal topology-only derivation of the Standard Model.
 author:
 - Peter Nero
-current_version: v1.0
-date: January, 2026
-generated_from_main_tex_sha256: 6b499ecf6a39c5ab945542e7ca01cf2863157ebcd20d8c5d3dd9761923c7823b
+bibliography:
+- main.bib
+current_version: v2
+date: Version 2, July 2026
+generated_from_main_tex_sha256: 02ba3c274b8b0eacf86b79e26a278706bc335a881780a3f04db60be22f5f0c24
 paper_id: topology-only-constraints-and-forbidden-operators-in-mo-90db2212
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  **Topology-Only Constraints and Forbidden Operators in Modal Triplet Theory**  
-  Anomaly cancellation, hypercharge quantization, and early falsifiability from overlap bundles
-zenodo_doi: 10.5281/zenodo.18261774
-zenodo_record_id: 18261774
-zenodo_url: "https://zenodo.org/records/18261774"
+  **Bundle Selection Rules, Anomaly Lines, and Charge Lattices**
+  A Conditional Topological Layer for Modal Triplet Theory
+zenodo_doi: 10.5281/zenodo.21713543
+zenodo_record_id: 21713543
+zenodo_url: "https://zenodo.org/records/21713543"
 ---
 
-# Introduction
+# Version 2 revision note
 
-A fundamental theory should exclude inconsistent effective descriptions as early as possible. In practice, many constraints in particle physics are often presented as dynamical results or as consequences of postulated symmetries (e.g. GUT symmetries or discrete parities). This paper isolates a stricter layer: *topology-only* constraints that arise before dynamics, renormalization, or collapse physics enter.
+<div class="description">
 
-In Modal Triplet Theory (MTT), observable matter degrees of freedom arise in the coherent sector as admissible overlap channels between three internal bundles. The requirement that these overlaps be globally well-defined immediately constrains charges, representations, and operators. We show that:
+Version 1, DOI [`10.5281/zenodo.18261774`](https://doi.org/10.5281/zenodo.18261774).
 
-- Hypercharge is quantized on a discrete lattice fixed by integral cohomology classes of overlap bundles (Sec. <a href="#sec:hypercharge" data-reference-type="ref" data-reference="sec:hypercharge">3</a>);
+Version 1 used rational tensor powers of a line bundle without first choosing a root, placed the anomaly line on the wrong base, treated existence of a global section as equivalent to bundle triviality, and suggested that Standard Model gauge topology removes operators that are already Standard Model gauge singlets.
 
-- Anomalous representations are forbidden because anomaly bundles fail to trivialize globally (Sec. <a href="#sec:anomalies" data-reference-type="ref" data-reference="sec:anomalies">4</a>);
+Version 2 separates character lattices, global gauge-group descent, determinant-line anomalies, internal Picard classes, coefficient spaces, and actual overlap pairings. Every displayed operator now has an explicit class and a stated decision rule.
 
-- Many baryon/lepton violating operators are forbidden by global bundle inconsistency independently of coupling strength (Sec. <a href="#sec:forbidden_ops" data-reference-type="ref" data-reference="sec:forbidden_ops">5</a>);
+The useful core survives: topology can provide exact, pre-dynamical obstructions inside a fixed realization, and those obstructions are valuable early consistency and falsifiability tests.
 
-- Majorana masses are allowed only when a global real structure exists on the relevant overlap bundle (Sec. <a href="#sec:neutrino" data-reference-type="ref" data-reference="sec:neutrino">6</a>).
-
-These constitute early falsifiability conditions: if an observed charge assignment or operator requires a globally inadmissible bundle, the coherent-sector framework is ruled out, independently of Planck-scale physics.
-
-# Minimal Topological Inputs and Admissibility
-
-## Slab-locality
-
-<div id="ass:slab" class="assumption">
-
-**Assumption 1** (Slab-local admissible regime). All statements are made on bounded-geometry slabs $`\Omega=[0,T]\times\Sigma`$ where coherent projection is defined and bounded. Topological statements refer to the topology of the spatial slice $`\Sigma`$ (or of regions of $`\Sigma`$) and to globally defined bundles on it.
+MTT has not yet selected the physical bundle endpoint and coefficient functional that would decide all proton-decay and lepton-number-violating operators. Its current exact finite gauge and anomaly results are recorded without promoting them to a no-knob compactification theorem.
 
 </div>
 
-## Internal bundles and overlap bundles
+# What a topology-only claim must contain
 
-We assume three internal bundles $`B_1,B_2,B_3`$ over $`Y_4`$, and consider the induced bundle data restricted to spatial slices $`\Sigma`$. The only structure used here is that matter fields correspond to globally admissible overlap sections constructed from $`B_i`$ and their duals.
+The phrase “forbidden by topology” sounds stronger than it usually is. It can mean at least four different things:
 
-<div id="ass:global_overlap" class="assumption">
+1.  a proposed field is not a representation of the global gauge group;
 
-**Assumption 2** (Globally admissible overlaps). Admissible matter fields correspond to globally defined sections of overlap bundles formed from tensor products of $`B_1,B_2,B_3`$ and their duals. Local patching without a global section is not admissible.
+2.  a family of chiral fermions has an uncancelled local or global anomaly;
 
-</div>
+3.  an internal bundle product has no allowed coefficient or invariant pairing;
 
-<div class="definition">
+4.  a particular overlap integral vanishes.
 
-**Definition 3** (Overlap bundle). An *overlap bundle* is any bundle of the form
+These statements live on different spaces and require different proofs. A charge is a representation label. An anomaly is a property of a quantum fermion theory over its background-field space. An internal selection rule is a statement about bundles and mode spaces on a compactification or overlap base. A vanishing coefficient is a statement about a specific multilinear functional. Conflating them makes an argument look shorter, but also makes its conclusion undecidable.
+
+## The typed realization record
+
+Let $`X`$ denote the internal or overlap space relevant to a proposed four-dimensional realization. It need not be physical space and it is not identified with a spatial slice. Let
 ``` math
-\mathcal{E}=\bigotimes_{i=1}^3 B_i^{\otimes n_i}\otimes (B_i^\ast)^{\otimes m_i},
+G=\frac{SU(3)\times SU(2)\times U(1)}{\Gamma}
 ```
-for integers $`n_i,m_i\ge 0`$, equipped with the induced connection. A matter field is admissible only if it is a globally defined section of $`\mathcal{E}`$.
-
-</div>
-
-<div class="remark">
-
-*Remark 4*. This paper treats the overlap-bundle picture as an abstract admissibility principle. No specific internal geometry is needed; only global definability and integral cohomology.
-
-</div>
-
-# Hypercharge Quantization from Bundle Topology
-
-In this section we show that hypercharge assignments are quantized by topology alone.
-
-## U(1) charges as line-bundle holonomy weights
-
-Hypercharge is modeled as a U(1) weight associated with a complex line bundle $`L_Y`$ whose connection defines holonomy phases on closed loops.
-
-<div class="definition">
-
-**Definition 5** (Hypercharge weight). Let $`L_Y\to \Sigma`$ be the U(1) line bundle associated with hypercharge. A field of hypercharge $`q_Y\in\mathbb{Q}`$ transforms by the representation
+be the declared global gauge group, where $`\Gamma`$ is a specified central subgroup. For every four-dimensional field label $`f`$, a usable record contains:
 ``` math
-\mathrm{Hol}_{L_Y}(\gamma)\mapsto \exp(i q_Y \theta(\gamma))
+\bigl(R_f,n_f,\mathcal{L}_f,V_f,\nabla_f\bigr).
 ```
-for loops $`\gamma`$ with holonomy angle $`\theta(\gamma)`$.
+Here $`R_f`$ is the nonabelian representation, $`n_f\in\mathbb{Z}`$ is the normalized $`U(1)`$ character, $`\mathcal{L}_f\to X`$ is the internal line or more general bundle factor, $`V_f`$ is the selected zero-mode space, and $`\nabla_f`$ is the connection when holonomy or parallel transport matters.
+
+For a monomial
+``` math
+\mathcal{O}=\prod_{a=1}^{r} f_a,
+```
+define
+``` math
+\begin{align}
+R_{\mathcal{O}}&=\bigotimes_{a=1}^{r}R_{f_a},&
+n_{\mathcal{O}}&=\sum_{a=1}^{r}n_{f_a},&
+\mathcal{L}_{\mathcal{O}}&=\bigotimes_{a=1}^{r}\mathcal{L}_{f_a}.
+\label{eq:operator-data}
+\end{align}
+```
+Dual or conjugate fields contribute the dual representation, opposite character, and dual line bundle.
+
+<div id="def:completion" class="definition">
+
+**Definition 1** (Operator completion record). An operator completion record consists of the data in <a href="#eq:operator-data" data-reference-type="eqref" data-reference="eq:operator-data">[eq:operator-data]</a>, an allowed coefficient space
+``` math
+\mathcal{C}_{\mathcal{O}}\subseteq
+\Gamma\!\left(X,\mathcal{L}_{\mathcal{O}}^{*}\right),
+```
+a $`G`$-invariant contraction of the nonabelian representations, and a multilinear functional
+``` math
+\mu_{\mathcal{O}}:
+\mathcal{C}_{\mathcal{O}}\otimes V_{f_1}\otimes\cdots\otimes V_{f_r}
+\longrightarrow \mathbb{C}.
+```
+The four-dimensional coefficient is the value of $`\mu_{\mathcal{O}}`$ on the selected coefficient and zero modes.
 
 </div>
 
-## Quantization theorem
+This definition accommodates several familiar cases. A constant scalar coefficient corresponds to a chosen trivialization of $`\mathcal{L}_{\mathcal{O}}`$. A holomorphic compactification may instead use a section of $`\mathcal{L}_{\mathcal{O}}^{*}`$ and a cohomological cup product. A Kaluza–Klein reduction may use an integral of mode representatives. A discrete symmetry can set $`\mathcal{C}_{\mathcal{O}}=0`$. The final scalar cannot be inferred from the symbol $`\mathcal{L}_{\mathcal{O}}`$ alone.
 
-<div id="thm:hypercharge" class="theorem">
+## Four distinctions that prevent false selection rules
 
-**Theorem 6** (Hypercharge quantization). *Assume <a href="#ass:global_overlap" data-reference-type="ref" data-reference="ass:global_overlap">2</a>. Then admissible hypercharge assignments lie in a discrete lattice $`\Lambda_Y\subset\mathbb{Q}`$ determined by integral cohomology:
-``` math
-q_Y \in \Lambda_Y \quad\text{where}\quad \Lambda_Y = \left\{\frac{n}{N_0}: n\in\mathbb{Z}\right\}
-```
-for some integer $`N_0\ge 1`$ determined by the primitive generator(s) of $`H^2(\Sigma,\mathbb{Z})`$ and by the overlap-bundle construction. Charges outside $`\Lambda_Y`$ are topologically inadmissible.*
+<div id="prop:distinctions" class="proposition">
+
+**Proposition 2** (Section, trivialization, and connection). *Let $`\mathcal{L}\to X`$ be a complex line bundle.*
+
+1.  *A nowhere-zero global section trivializes $`\mathcal{L}`$, but an arbitrary global section may have zeros and need not trivialize it.*
+
+2.  *If $`c_1(\mathcal{L})\ne0`$, then $`\mathcal{L}`$ is not topologically trivial. The converse can fail when torsion or flat Picard data are present.*
+
+3.  *A flat connection can have nontrivial holonomy.*
+
+4.  *A trivial line bundle can carry a connection with nonzero curvature.*
+
+*A nonzero global parallel section exists exactly when the connection has trivial holonomy; such a section supplies a connection-preserving trivialization.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* A U(1) gauge field on $`\Sigma`$ is a connection on a line bundle $`L_Y`$ with $`c_1(L_Y)\in H^2(\Sigma,\mathbb{Z})`$. For a field of charge $`q_Y`$, the associated bundle is $`L_Y^{\otimes q_Y}`$. Global definability requires that the holonomy around any loop be single-valued, equivalently that the Chern class of the charged bundle be integral. Thus $`q_Y c_1(L_Y)\in H^2(\Sigma,\mathbb{Z})`$. If $`c_1(L_Y)`$ is primitive, this forces $`q_Y\in \frac{1}{N_0}\mathbb{Z}`$ for some $`N_0`$. Overlap bundles built from $`B_i`$ restrict $`N_0`$ further but cannot make $`\Lambda_Y`$ dense. ◻
+*Proof.* The first statement follows by using a nowhere-zero section as a global frame. The Chern class obstructs a topological trivialization, but does not classify every line bundle on every space. Flatness sets the curvature to zero but leaves a representation of $`\pi_1(X)`$ as holonomy. Conversely, on the trivial line, $`d+iA`$ has curvature $`i\,dA`$, which need not vanish. Parallel transport of a nonzero vector produces a path-independent global parallel section exactly when all holonomies fix it; for a line this means trivial holonomy. ◻
 
 </div>
 
 <div class="remark">
 
-*Remark 7*. This yields hypercharge quantization without invoking grand unification or anomaly cancellation. Anomaly cancellation becomes an additional consistency condition (Sec. <a href="#sec:anomalies" data-reference-type="ref" data-reference="sec:anomalies">4</a>), but the lattice already exists pre-dynamically.
+*Remark 3*. Version 1 repeatedly moved between these notions. In the revised argument, “topologically trivial,” “flat,” “trivial holonomy,” and “equipped with a selected trivialization” are never synonyms.
 
 </div>
 
-# Anomaly Cancellation as a Pre-Dynamical Constraint
+# Charge lattices and what they do not select
 
-Gauge and mixed anomalies correspond to obstructions to defining fermion determinants as globally consistent sections of determinant line bundles.
+## Integer characters come first
 
-## Determinant line bundles and obstructions
+The continuous characters of $`U(1)`$ are
+``` math
+\chi_n(z)=z^n,\qquad n\in\mathbb{Z}.
+```
+Thus a principal $`U(1)`$ bundle $`P_Y`$ and its weight-one associated line $`K`$ generate the charged lines
+``` math
+K_n=P_Y\times_{\chi_n}\mathbb{C}\cong K^{\otimes n},
+\qquad
+c_1(K_n)=n\,c_1(K).
+```
+There is no canonical rational tensor power $`K^{\otimes q}`$. Writing a rational physical hypercharge $`Y=n/N`$ presupposes a normalization $`N`$, or equivalently a primitive line whose integer weight is $`n`$. If one starts from a nonprimitive line and wants an $`N`$-th root, existence of that root is additional global data.
 
-<div class="definition">
+<div id="thm:charge-lattice" class="theorem">
 
-**Definition 8** (Determinant line bundle). Given a chiral fermion bundle $`\mathcal{E}\to\Sigma`$, the determinant line bundle $`\det \mathcal{E}`$ is the line bundle whose local trivializations encode the fermion measure phase. A gauge anomaly corresponds to the nontriviality of $`\det \mathcal{E}`$ as a gauge-equivariant line bundle.
+**Theorem 4** (Fixed-group charge lattice). *Fix a compact global gauge group
+``` math
+G=(G_{\mathrm{ss}}\times U(1))/\Gamma
+```
+with finite central $`\Gamma`$. Every finite-dimensional representation of $`G`$ pulls back to a representation of $`G_{\mathrm{ss}}\times U(1)`$ with integer $`U(1)`$ character $`n`$. It descends to $`G`$ exactly when the combined action of every element of $`\Gamma`$ is trivial. Consequently the allowed labels form an integer lattice with congruence conditions. After a normalization $`Y=n/N`$, they form a rational lattice. This determines allowed representation labels, not which labels occur in nature.*
 
 </div>
 
-<div class="definition">
+<div class="proof">
 
-**Definition 9** (Anomalous representation). A representation is *anomalous* if the associated determinant line bundle fails to admit a global trivialization compatible with gauge transformations.
+*Proof.* Every continuous character of $`U(1)`$ is $`\chi_n`$ for a unique $`n\in\mathbb{Z}`$. A representation of the quotient is precisely a representation of the covering product on which the quotient subgroup $`\Gamma`$ acts trivially. The descent condition is therefore a finite set of congruences relating $`n`$ to the central characters of $`G_{\mathrm{ss}}`$. Selecting a matter spectrum is extra data: the representation ring contains many allowed elements. ◻
 
 </div>
 
-## Topological anomaly forbiddance
+For the conventional left-handed Standard Model labels, the useful integer normalization is $`n=6Y`$:
+
+<div id="tab:sm-labels">
+
+| field | $`Q`$ | $`u^c`$ | $`d^c`$ | $`L`$ | $`e^c`$ | $`N^c`$ |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| $`SU(3)\times SU(2)`$ | $`(\mathbf3,\mathbf2)`$ | $`(\bar{\mathbf3},\mathbf1)`$ | $`(\bar{\mathbf3},\mathbf1)`$ | $`(\mathbf1,\mathbf2)`$ | $`(\mathbf1,\mathbf1)`$ | $`(\mathbf1,\mathbf1)`$ |
+| $`6Y`$ | $`1`$ | $`-4`$ | $`2`$ | $`-3`$ | $`6`$ | $`0`$ |
+
+Conventional one-family labels. These are an example to be reproduced, not a consequence of the abstract lattice theorem.
+
+</div>
+
+The global form of the gauge group matters. Different quotients of groups with the same Lie algebra can impose different descent conditions . This is why “integral cohomology quantizes hypercharge” is incomplete: one must name the primitive character, the global group, its quotient, and the field representations.
+
+# Anomalies live over background-field space
+
+## The determinant line has a different base
+
+Let $`\mathcal{B}`$ be a space of gauge and metric backgrounds and let $`\mathcal{G}`$ be the relevant gauge group. A chiral fermion representation defines a family of chiral Dirac operators
+``` math
+D_b^+:\Gamma(S^+\otimes E_b)\longrightarrow
+\Gamma(S^-\otimes E_b),
+\qquad b\in\mathcal{B}.
+```
+Its determinant line is the family-index line
+``` math
+\operatorname{Det}D^+\longrightarrow \mathcal{B}
+\quad\text{or, equivariantly, over }\mathcal{B}/\mathcal{G}.
+```
+It is not the ordinary top exterior power $`\det E_b`$ of the matter bundle over spacetime. The Bismut–Freed connection on this family line has a curvature determined by the local index density, while its holonomy detects global anomaly information .
 
 <div id="thm:anomaly" class="theorem">
 
-**Theorem 10** (Topology-forbidden anomalies). *Assume <a href="#ass:global_overlap" data-reference-type="ref" data-reference="ass:global_overlap">2</a>. Any gauge, mixed, or gravitational anomaly corresponds to a nontrivial obstruction class in a determinant line bundle built from overlap bundles and is therefore topologically inadmissible. Hence anomalous representations are excluded before dynamics is specified.*
+**Theorem 5** (Scoped anomaly criterion). *For a declared family of chiral Dirac operators, a nonzero equivariant curvature of the determinant or Pfaffian line is a local anomaly obstruction, and nontrivial equivariant holonomy of a flat anomaly line is a global anomaly obstruction. Anomaly cancellation on that domain requires a local, gauge-compatible trivialization of the anomaly theory; in the determinant-line model this includes vanishing curvature and holonomy after all allowed counterterms and inflow contributions are included.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* By Assumption <a href="#ass:global_overlap" data-reference-type="ref" data-reference="ass:global_overlap">2</a>, admissible fermions must be globally defined overlap sections. The fermion measure is a section of the corresponding determinant line bundle. If the determinant bundle is nontrivial (or not trivialisable gauge-equivariantly), there is no globally consistent measure, contradicting admissibility. Thus representations that would generate anomalies are excluded by the absence of a global trivialization. ◻
+*Proof.* The fermionic functional integral is naturally a section of the determinant or Pfaffian line. A gauge-compatible scalar partition function requires a compatible trivialization. Curvature obstructs local flatness and encodes the perturbative anomaly. If curvature vanishes, nontrivial holonomy still prevents a single-valued gauge-compatible section around loops in background-field space. Conversely, a compatible local equivariant trivialization converts the section into a scalar functional on the stated domain. The locality qualifier is essential: an arbitrary nonlocal trivialization is not an admissible counterterm. ◻
 
 </div>
 
-<div class="remark">
+## The conventional one-family arithmetic
 
-*Remark 11*. This reinterprets anomaly cancellation as an admissibility filter: the Standard Model’s anomaly cancellation is a reflection of topological consistency, not a dynamical coincidence.
-
-</div>
-
-# Topology-Forbidden Operators
-
-Effective field theory allows many operators compatible with local gauge symmetry. In the overlap-bundle framework, operators must correspond to globally defined sections of the tensor product bundle formed from their constituent fields.
-
-## Operator admissibility
-
-<div class="definition">
-
-**Definition 12** (Admissible operator). Let fields $`\psi_a`$ be sections of overlap bundles $`\mathcal{E}_a`$. An operator $`\mathcal{O}=\prod_a \psi_a`$ is *admissible* only if the tensor product bundle $`\bigotimes_a \mathcal{E}_a`$ admits a global section (equivalently is globally consistent with the overlap admissibility constraints).
-
-</div>
-
-## Baryon/lepton violating operators
-
-Consider standard dimension-5 proton decay operators schematically
+The representation labels in <a href="#tab:sm-labels" data-reference-type="ref+label" data-reference="tab:sm-labels">1</a> satisfy the familiar four-dimensional anomaly equations. Omitting common positive normalization factors,
 ``` math
-QQQL,\qquad u^c u^c d^c e^c,
+\begin{align}
+\mathcal A_{SU(3)^2Y}
+ &=2Y_Q+Y_{u^c}+Y_{d^c}=0,\\
+\mathcal A_{SU(2)^2Y}
+ &=3Y_Q+Y_L=0,\\
+\mathcal A_{\mathrm{grav}^2Y}
+ &=6Y_Q+3Y_{u^c}+3Y_{d^c}+2Y_L+Y_{e^c}=0,\\
+\mathcal A_{Y^3}
+ &=6Y_Q^3+3Y_{u^c}^3+3Y_{d^c}^3+2Y_L^3+Y_{e^c}^3=0.
+\end{align}
 ```
-whose existence in generic EFTs leads to rapid proton decay unless suppressed.
+The color cubic anomaly cancels between two triplet components of $`Q`$ and the two antitriplets $`u^c,d^c`$. The number of weak doublets per family, counting color, is $`3+1=4`$, so the Witten $`SU(2)`$ global anomaly also cancels. These equations verify a chosen representation. They do not by themselves derive that representation or its multiplicity.
 
-<div id="thm:proton" class="theorem">
+# Exact operator classes and selection rules
 
-**Theorem 13** (Topology-forbidden B/L violation). *Assume <a href="#ass:global_overlap" data-reference-type="ref" data-reference="ass:global_overlap">2</a> and Theorem <a href="#thm:hypercharge" data-reference-type="ref" data-reference="thm:hypercharge">6</a>. Operators whose constituent bundles combine into a tensor product carrying a nontrivial obstruction class (e.g. nonintegral hypercharge, incompatible overlap holonomy, or nontrivial determinant obstruction) are inadmissible. In particular, the leading baryon- and lepton-number violating operators are forbidden whenever their bundle product fails to admit a global section, independently of coupling strength.*
+## Field lines
+
+Attach internal line bundles
+``` math
+\mathcal{L}_Q,\ \mathcal{L}_u,\ \mathcal{L}_d,\ \mathcal{L}_L,\ \mathcal{L}_e,\
+\mathcal{L}_N,\ \mathcal{L}_H
+\quad\text{in }\operatorname{Pic}(X)
+```
+to the left-handed fields in <a href="#tab:sm-labels" data-reference-type="ref+label" data-reference="tab:sm-labels">1</a> and to a Higgs doublet $`H`$ with $`6Y_H=3`$. Write
+``` math
+\ell_f=[\mathcal{L}_f]\in\operatorname{Pic}(X)
+```
+additively. Complex conjugation contributes $`-\ell_f`$. The following table now makes every claim checkable.
+
+<div class="tabularx">
+
+@lcccY@ monomial & 4D dimension & $`6Y`$ sum & internal Picard class & exact additional test
+$`QHu^c`$ & $`4`$ & $`1+3-4=0`$ & $`\ell_Q+\ell_H+\ell_u`$ & An $`SU(3)\times SU(2)`$ singlet exists. A constant Yukawa needs a selected trivialization; a geometric Yukawa needs a nonzero allowed overlap functional.
+$`QH^\dagger d^c`$ & $`4`$ & $`1-3+2=0`$ & $`\ell_Q-\ell_H+\ell_d`$ & Same distinction between a trivial line and a nonzero overlap coefficient.
+$`LH^\dagger e^c`$ & $`4`$ & $`-3-3+6=0`$ & $`\ell_L-\ell_H+\ell_e`$ & Gauge neutrality does not determine the charged-lepton Yukawa matrix.
+$`(LH)(LH)`$ & $`5`$ & $`2(-3+3)=0`$ & $`2\ell_L+2\ell_H`$ & The Weinberg coefficient lies in the dual line and a symmetric flavor pairing; it is not decided by a bare “real structure” statement.
+$`QQQL`$ & $`6`$ & $`3(1)-3=0`$ & $`3\ell_Q+\ell_L`$ & It is already an SM gauge singlet. Exclusion requires this extra class, an additional symmetry, a vanishing cohomology group, or a zero overlap functional.
+$`u^cu^cd^ce^c`$ & $`6`$ & $`2(-4)+2+6=0`$ & $`2\ell_u+\ell_d+\ell_e`$ & It is also an SM gauge singlet. The same realization-specific certificate is required.
+$`N^cN^c`$ & $`3`$ & $`0`$ & $`2\ell_N`$ & A bare Majorana mass needs an allowed invariant symmetric bilinear or a coefficient section of $`\mathcal{L}_N^{-2}`$.
+
+</div>
+
+In nonsupersymmetric SMEFT, $`QQQL`$ and $`u^cu^cd^ce^c`$ are four-fermion operators of mass dimension six . In supersymmetric language, analogous four-chiral-superfield superpotential monomials are often called dimension-five proton-decay operators after the superspace measure and effective suppression are accounted for. The framework must state which convention it uses.
+
+## The selection theorem
+
+<div id="thm:selection" class="theorem">
+
+**Theorem 6** (Typed bundle-selection rule). *Fix an operator completion record as in <a href="#def:completion" data-reference-type="ref+label" data-reference="def:completion">1</a>. The operator $`\mathcal{O}`$ is absent on the declared realization if any one of the following holds:*
+
+1.  *$`\operatorname{Inv}_G(R_{\mathcal{O}})=0`$;*
+
+2.  *the allowed coefficient space $`\mathcal{C}_{\mathcal{O}}`$ is zero;*
+
+3.  *every allowed invariant multilinear functional $`\mu_{\mathcal{O}}`$ vanishes on the selected zero-mode spaces.*
+
+*If coefficients are restricted to constants, nontriviality of $`\mathcal{L}_{\mathcal{O}}`$ is a sufficient obstruction. In particular, $`c_1(\mathcal{L}_{\mathcal{O}})\ne0`$ is a sufficient certificate in that restricted constant-coefficient setting. Passing all of these tests is necessary for a nonzero coupling but does not guarantee one.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Each fermion field is a section of an overlap bundle whose U(1) charge lies in the lattice $`\Lambda_Y`$. The operator $`\mathcal{O}`$ corresponds to a section of the product bundle $`\bigotimes_a \mathcal{E}_a`$. For $`QQQL`$ and $`u^c u^c d^c e^c`$, the hypercharge and nonabelian representation content require the product bundle to be gauge-trivial and globally defined. If the corresponding Chern classes or obstruction classes are nontrivial, no global section exists and the operator is inadmissible by definition. This forbiddance is topological and does not depend on any dynamical suppression. ◻
+*Proof.* Without a $`G`$-invariant contraction, the monomial cannot be a gauge scalar. Without an allowed dual coefficient, its internal bundle factor cannot be paired into a scalar. If every allowed multilinear functional vanishes, dimensional reduction emits zero coefficient. For a constant coefficient, pairing requires a selected trivialization of $`\mathcal{L}_{\mathcal{O}}`$; a nontrivial line has none. A nonzero first Chern class certifies nontriviality. Conversely, a gauge singlet with a trivial total line can still have zero coefficient because its zero-mode product, symmetry selection rule, or overlap integral vanishes. ◻
+
+</div>
+
+<div id="cor:proton" class="corollary">
+
+**Corollary 7** (What must be shown for the two proton-decay examples). *Topology removes $`QQQL`$ or $`u^cu^cd^ce^c`$ from a chosen realization only after that realization proves, respectively,
+``` math
+3\ell_Q+\ell_L\ne0,
+\qquad
+2\ell_u+\ell_d+\ell_e\ne0,
+```
+in the relevant Picard or differential-cohomology group under a constant-coefficient rule, or supplies an equivalent vanishing certificate for the allowed coefficient space or overlap functional.*
 
 </div>
 
 <div class="remark">
 
-*Remark 14*. This provides a pre-dynamical explanation for proton stability: forbidden operators are excluded by global consistency rather than by fine-tuned small coefficients.
+*Remark 8*. This is weaker than Version 1 rhetorically and stronger mathematically. It does not announce proton stability from generic overlap language. It tells a calculation exactly what class or functional must be emitted before that claim can be made. Concrete heterotic line-bundle models illustrate this model-by-model logic: additional $`U(1)`$ symmetries can forbid particular operators, but the allowed spectrum is explicitly computed for each bundle choice .
 
 </div>
 
-# Neutrino Mass Structure
+# Majorana terms: the precise condition
 
-Neutrino masses are sensitive probes of admissibility because Majorana masses require a global real structure on the relevant bundle.
+A “real structure” is one sufficient route to a Majorana pairing, but it is not the most precise universal criterion. Let $`E`$ be the gauge and internal bundle carried by a left-handed Weyl field. A bare mass requires a gauge-invariant symmetric bilinear in the internal/flavor labels compatible with the antisymmetric spinor contraction. Equivalently, the relevant singlet must occur in the correct symmetry component of $`E\otimes E`$, and its coefficient bundle must be allowed. A real representation often provides such a bilinear; a pseudoreal representation may require multiple flavors. A complex charged representation generally does not allow a bare Majorana term without symmetry breaking or an additional field.
 
-## Majorana admissibility
+For a sterile $`N^c`$, the internal line condition is the last row of <a href="#tab:operators" data-reference-type="ref+label" data-reference="tab:operators">[tab:operators]</a>. For active Standard Model neutrinos, the leading gauge-invariant route is the dimension-five Weinberg operator $`(LH)(LH)`$ . The exact internal class is
+``` math
+2\ell_L+2\ell_H.
+```
+If the operator is absent at one level, higher-dimensional operators, symmetry-breaking insertions, or a different completion can still generate a Majorana mass. Therefore failure of a bare real structure does not imply that every neutrino mass must be Dirac.
 
-<div class="definition">
+# What current MTT has actually established
 
-**Definition 15** (Majorana admissibility). A Majorana mass term is admissible only if the overlap bundle supporting the neutrino field admits a global real (or pseudo-real) structure compatible with the coherent projector, allowing a gauge-invariant identification of the field with its charge conjugate.
+The current corpus is stronger than the abstract Version 1 picture in some finite directions and weaker in the physical compactification direction. The distinction is important enough to state row by row.
 
-</div>
+<div class="tabularx">
 
-<div id="prop:neutrino" class="proposition">
-
-**Proposition 16** (Topology-constrained neutrino masses). *Assume <a href="#ass:global_overlap" data-reference-type="ref" data-reference="ass:global_overlap">2</a>. Majorana mass terms are admissible only if the relevant overlap bundle admits a global real structure; otherwise Majorana bilinears fail to define global sections and are inadmissible. In that case neutrino masses must be Dirac or arise from higher-order admissible operators.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* A Majorana bilinear is a section of $`\mathcal{E}\otimes \mathcal{E}`$, identified with a scalar only if $`\mathcal{E}`$ admits a real structure compatible with charge conjugation. If no such structure exists globally, the bilinear cannot be made gauge-invariant and globally defined. By Assumption <a href="#ass:global_overlap" data-reference-type="ref" data-reference="ass:global_overlap">2</a>, such a term is inadmissible. ◻
-
-</div>
-
-<div class="remark">
-
-*Remark 17*. This provides an early discriminator between neutrino mass models without using RG or dynamics: Majorana masses require a topological condition, not merely the absence of a symmetry.
+@P0.19P0.18Y@ object & current tier & statement
+Typed family carrier (A46) & derived exact; vacuum selector open & A 48-state family-diagonal chiral representation emits the $`Q,u^c,d^c,
+L,e^c,N^c`$ rows and exactly verifies the local and global anomaly table.
+Native gauge group (A47) & derived exact & The selected rank-$`1,2,3`$ finite carriers have native $`U(1),SU(2),SU(3)`$ automorphisms, and the diagonal center kernel is $`\mathbb{Z}_6`$. The faithful group is $`(SU(3)\times SU(2)\times U(1))/\mathbb{Z}_6`$.
+Shared hypercharge line (A50) & derived exact; profile tier & Within the chosen finite completion, the abelian anomaly equations have the unique primitive null vector that yields $`6Y=(1,-4,2,-3,6,0)`$. This adds no continuous knob, but it is a low-energy finite-profile theorem.
+$`E_6`$ $`Q_\psi`$ color anomaly (A22) & derived exact; strong-CP map open & Three matter families contribute $`+12`$, complete-$`\mathbf{27}`$ exotics contribute $`-12`$, and the selected trace cancels. The axion-current threshold map remains a separate obligation.
+Embedded renormalized-SM equivalence (A04) & closed at declared profile standard & The twelve-obligation baseline is closed at one shared physical primitive and measured-profile standard. This is not zero-knob prediction.
+Strict no-knob upgrade (A05) & open, $`2/9`$ closed & Physical source selection, remaining values, and stronger prediction claims are not supplied by the topology-only layer.
 
 </div>
 
-# Comparison with EFT and GUT Approaches
+The exact finite results are reproducible in the curated MTT calculation repository and summarized in the current typed Standard Model compatibility and noncommutative-geometry papers . They improve the charge and anomaly part of the old paper substantially. They do not yet provide the operator-specific internal classes in <a href="#tab:operators" data-reference-type="ref+label" data-reference="tab:operators">[tab:operators]</a> on a selected physical visible–hidden compactification. In particular, no current theorem may replace the two conditions in <a href="#cor:proton" data-reference-type="ref+label" data-reference="cor:proton">7</a> by the word “generic.”
 
-Effective field theory allows all operators compatible with local gauge symmetry, typically suppressing unwanted terms by high scales or additional symmetries. Grand unification forbids operators by embedding the Standard Model into a larger symmetry group.
+# Falsifiability after the correction
 
-By contrast, the overlap-bundle admissibility principle forbids operators by global consistency: if the corresponding bundle product has no global section, the operator is absent regardless of scale. This mechanism can reproduce many selection-rule effects often attributed to GUT symmetries without requiring a larger gauge group.
+The revised framework produces sharp tests, but each test is conditional on a declared realization.
 
-# Early Falsifiability Criteria
+1.  **Global-group descent.** If a claimed field representation fails the $`\Gamma`$-descent condition, the realization is inconsistent.
 
-Topology-only constraints provide early falsifiability channels:
+2.  **Anomaly line.** If the complete fermion and inflow content leaves nonzero anomaly curvature or holonomy, the quantum gauge theory is inconsistent on that domain.
 
-1.  **Hypercharge lattice violation:** any observed charge outside $`\Lambda_Y`$ falsifies the overlap-bundle admissibility framework.
+3.  **Operator certificate.** If a paper claims that an operator is absent, it must publish $`R_{\mathcal{O}},n_{\mathcal{O}},\mathcal{L}_{\mathcal{O}},\mathcal{C}_{\mathcal{O}},V_f,\mu_{\mathcal{O}}`$ or an equivalent complete certificate. A nonzero observed coefficient contradicts that declared certificate.
 
-2.  **Anomalous representation:** any required anomalous representation violates Theorem <a href="#thm:anomaly" data-reference-type="ref" data-reference="thm:anomaly">10</a>.
+4.  **Charge selection.** An allowed charge lattice is not a prediction of the observed assignment. A predictive claim must also identify the selection theorem that chooses the observed primitive vector and matter multiplicities.
 
-3.  **Observed forbidden operator:** observation of an operator whose associated bundle product lacks a global section falsifies the framework.
+5.  **Held-out consequence.** Selection data used to construct a model cannot count again as a prediction. A physical claim requires an observable not used to choose the bundles, representations, or coefficient functional.
 
-4.  **Neutrino mass inconsistency:** evidence requiring a Majorana mass term when no global real structure exists falsifies admissibility.
+An observed proton-decay channel would therefore falsify an MTT realization that had already certified the corresponding operator as absent. It would not, by itself, falsify the abstract idea that some other overlap realizations possess topological selection rules. This distinction turns a broad slogan into a testable scientific statement.
 
-These criteria are independent of Planck-scale dynamics and apply in any slab-local coherent regime.
+# Version 2 changes and reasons
 
-# Relation to Other Shadow Papers
+<div class="tabularx">
 
-This topology-only paper sits beneath all shadow-bridge papers in the program: collapse/measurement thresholds, causal-set event structure, AS/FRG UV endpoints, LQG kinematics, and NCG spectral action all presuppose admissible overlap-bundle consistency. Therefore any failure of the topology-only layer rules out the later shadow constructions automatically.
-
-Conversely, agreement of later shadow constructions across sectors (cross-sector closure) provides additional indirect validation of the same topological admissibility constraints.
-
-# Conclusions
-
-We have derived a Tier–1 layer of constraints in Modal Triplet Theory using topology and admissibility alone. Hypercharge quantization follows from integral cohomology of overlap line bundles. Anomalous representations are excluded as determinant-bundle obstructions. Broad classes of baryon- and lepton-number violating operators are forbidden by global inconsistency of the associated bundle products. Neutrino mass terms are topologically constrained: Majorana masses require a global real structure on the relevant overlap bundle.
-
-These results provide early falsifiability criteria independent of Planck-scale dynamics and independent of the specific details of coherent-sector evolution. All statements are slab-local and admissibility-conditioned, but require no dynamical inputs beyond global definability.
-
-<div class="thebibliography">
-
-99
-
-P. Nero, *Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255621>
-
-P. Nero, *Modal Triplet Theory: Foundation*, Zenodo preprint, September 2025. <https://doi.org/10.5281/zenodo.16949762>
-
-P. Nero, *Fixed Points I–VI: Complete Coherence Spine*, Zenodo preprints, August 2025. <https://doi.org/10.5281/zenodo.16948748>
-
-P. Nero, *The Projection–Admissibility Principle: Structural Constraints on Effective Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255838>
-
-P. Nero, *Closure and Inevitability in Modal Triplet Theory*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255510>
-
-P. Nero, *Coherence Capacity as the Fundamental Resource of Effective Physics*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255905>
-
-P. Nero, *Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18256048>
-
-P. Nero, *Modal Triplet Theory: From MTT to Quantum Mechanics*, Zenodo preprint, September 2025. <https://doi.org/10.5281/zenodo.17074246>
-
-P. Nero, *From MTT to Quantum Field Theory*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17068816>
-
-P. Nero, *Modal Triplet Theory: From MTT to General Relativity*, Zenodo preprint, October 2025. <https://doi.org/10.5281/zenodo.16950597>
-
-P. Nero, *Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17077671>
-
-P. Nero, *Measurement as Disturbance and Stabilization in Modal Triplet Theory*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17177404>
-
-P. Nero, *Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18256408>
-
-P. Nero, *Modal Fixed Points, Bell’s Beables, and the Limits of Factorization*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17076300>
-
-P. Nero, *Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory*, Zenodo preprint, August 2025. <https://doi.org/10.5281/zenodo.18208884>
-
-P. Nero, *From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18254862>
+@P0.28YY@ Version 1 statement & Version 2 decision & Reason
+Rational charges use $`L_Y^{\otimes q}`$. & Replace by integer characters $`K^{\otimes n}`$, quotient descent, and an explicit normalization $`Y=n/N`$. & Rational tensor powers are not defined without root data.
+Integral cohomology selects hypercharge. & Narrow to an allowed charge lattice; record the separate A50 finite selection theorem. & A lattice does not select a spectrum or normalization by itself.
+The anomaly line is $`\det\mathcal E\to\Sigma`$. & Replace by $`\operatorname{Det}D^+\to\mathcal{B}/\mathcal{G}`$ with curvature, holonomy, locality, counterterm, and inflow data. & The fermionic anomaly is a family-index object over background-field space.
+An operator is allowed iff its bundle has a global section. & Replace by the completion record and <a href="#thm:selection" data-reference-type="ref+label" data-reference="thm:selection">6</a>. & A section may vanish; nontrivial bundles may have sections; a coupling requires an invariant scalar functional.
+$`QQQL`$ and $`u^cu^cd^ce^c`$ are leading dimension-five operators forbidden by overlap topology. & Correct to nonsupersymmetric dimension six, show both are SM gauge singlets, and state their exact extra Picard classes. & Their exclusion is realization-specific, not a consequence of SM hypercharge.
+Majorana mass requires a real structure. & Use the invariant symmetric bilinear and coefficient-space criterion; keep real structure as one sufficient route. & Representation type, flavor multiplicity, Higgs insertions, and higher operators all matter.
+Topology-only results explain proton stability universally. & Withdraw. & Current MTT has not emitted the two physical operator-class certificates.
 
 </div>
+
+# Conclusion
+
+Topology is most useful here as a compiler of exact obstructions. Once a global gauge group and a physical bundle realization are fixed, it can say that a representation does not descend, an anomaly line cannot be trivialized, or an operator has no allowed coefficient or overlap functional. Those are strong, pre-dynamical conclusions.
+
+Topology cannot, without additional source data, choose the observed matter spectrum, make every dangerous Standard Model gauge singlet disappear, or turn a vanishing first Chern class into a nonzero coupling. Version 2 makes that boundary explicit. The present MTT finite carrier already supplies an exact $`\mathbb{Z}_6`$ global group, a chiral anomaly table, and a unique anomaly-free normalized hypercharge vector inside its chosen completion. The next physical theorem is now concrete: emit the selected internal classes and coefficient functionals for the operator rows in <a href="#tab:operators" data-reference-type="ref+label" data-reference="tab:operators">[tab:operators]</a> on the same compactification branch. Until then, the paper provides a rigorous conditional selection language and an auditable completion contract.

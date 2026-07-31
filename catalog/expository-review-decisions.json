@@ -960,6 +960,14 @@
       "reviewed_main_tex_sha256": "e3d50561bc0fef5cb045401b572be80c5700106d999868c2c905f09894a54d53",
       "reviewed_pdf_sha256": "4c6b2fa1184e9dc2c6e79daffd91d6b6a158f622dd9833f4f24ccb038f0e4200",
       "reviewed_source_tree_sha256": "03365c611136bf36ac26cf7c189008f7593a8be749f936cffdd286802e92abf0"
+    },
+    "topology-only-constraints-and-forbidden-operators-in-mo-90db2212": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 replaces universal topology-only Standard Model claims by a typed realization-level selection framework. It proves the integer U(1) character and central-quotient descent theorem; separates an allowed charge lattice from selection of the observed spectrum; places determinant and Pfaffian anomaly lines over background-field space with curvature, holonomy, locality, counterterm, and inflow conditions; distinguishes sections, trivializations, flatness, and holonomy; defines coefficient spaces and overlap functionals; gives exact dimensions, hypercharge sums, and Picard classes for Yukawa, Weinberg, QQQL, u-c u-c d-c e-c, and singlet-Majorana rows; corrects the proton-decay examples to dimension-six Standard Model gauge singlets in nonsupersymmetric SMEFT; proves a sufficient bundle-selection theorem; integrates exact A22/A46/A47/A50 finite MTT gauge and anomaly results while preserving the A04 profile and A05 no-knob boundaries; and the complete 11-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "02ba3c274b8b0eacf86b79e26a278706bc335a881780a3f04db60be22f5f0c24",
+      "reviewed_pdf_sha256": "c039abd076bb1b4171777d93ad3883a6f6e3b1dbcbd02a71e055b5b09ab836b6",
+      "reviewed_source_tree_sha256": "14b4626c2f56e52d5404c3452563a987104e64d2506abff44cd433a4f76a8ebb"
     }
   }
 }

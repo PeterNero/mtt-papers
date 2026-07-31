@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18261773",
+      "created": "2026-07-31T04:14:17.730800+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21713543",
+      "files": [
+        {
+          "checksum": "md5:31a8bdc9267f9865c4ec3b497296f2c4",
+          "content_url": "https://zenodo.org/api/records/21713543/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 367630
+        }
+      ],
+      "id": "21713543",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21713543",
+      "resource_type": "publication",
+      "title": "Bundle Selection Rules, Anomaly Lines, and Charge Lattices A Conditional Topological Layer for Modal Triplet Theory",
+      "updated": "2026-07-31T04:14:18.208713+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18261451",
       "created": "2026-07-31T03:55:16.700953+00:00",
       "creators": [
