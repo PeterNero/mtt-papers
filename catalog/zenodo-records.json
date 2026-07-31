@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18256429",
+      "created": "2026-07-31T06:01:29.992123+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21714936",
+      "files": [
+        {
+          "checksum": "md5:7d66fc0c845fa50954f6c48449070e27",
+          "content_url": "https://zenodo.org/api/records/21714936/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 364028
+        }
+      ],
+      "id": "21714936",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21714936",
+      "resource_type": "publication",
+      "title": "From Coherence-Basin Statistics to a Local Quantum-Field Interface: Commutative Measures, the Selected Free CAR Net, and the Interacting Boundary",
+      "updated": "2026-07-31T06:01:30.405259+00:00",
+      "version": "v3"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18274609",
       "created": "2026-07-31T05:31:31.247873+00:00",
       "creators": [

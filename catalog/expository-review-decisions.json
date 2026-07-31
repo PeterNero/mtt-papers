@@ -992,6 +992,14 @@
       "reviewed_main_tex_sha256": "a9852de96917d666ae7f305a732a38c2c603dc91c45884c8e3c430b2153d11bd",
       "reviewed_pdf_sha256": "97b54ee6e79527c7c3eab12fd8a5a14ee66d93ad9c71319f10cdcc018dacfb77",
       "reviewed_source_tree_sha256": "833c3a1cff6e7f802e264a89e0078c87a4f20759a4d1c47e98f869fec04632a4"
+    },
+    "quantum-field-theory-reconstruction-from-coherence-basi-ef12097a": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 3 replaces the unsupported derivation of noncommutative QFT from classical basin statistics by an exact typed interface. It proves the commutative L2 multiplication representation, the resulting CCR/CAR obstruction, an explicit two-level nonselection witness, and the state-restriction/state-extension theorem for commutative record subalgebras; distinguishes convex mixtures from coherent superposition, four different kernels, classical characteristic functionals from quantum path integrals, and statistical marginalization from RG transport; treats measurement as an ordinary physical instrument rather than an ontologically privileged act; imports without duplicating the companion paper's currently closed selected q79 twisted-Dirac even-CAR local-net theorem; preserves the geometry-selected nonperturbative interacting gauge-BRST C-star completion and unique full-branch state as open; and the complete 13-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "54382b40794f6a0c0c77f151b4750262a84cc7c75d9089dc433f547e26fbdbf5",
+      "reviewed_pdf_sha256": "86becfcdb3c181d5b1b0de1f580695c2024efc5cf22ffdc298b51f620b34f0f5",
+      "reviewed_source_tree_sha256": "cf29ec96df63d92191ec0aa8490cc0e6c04f8c24db63f781b81b3c05e305abed"
     }
   }
 }

@@ -5,17 +5,17 @@
   "priority_counts": {
     "critical": 3,
     "light": 5,
-    "major": 5,
+    "major": 4,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 122
+    "reviewed": 123
   },
   "missing_dimension_counts": {
     "argument_flow": 32,
     "conclusion": 8,
-    "concrete_foothold": 30,
+    "concrete_foothold": 29,
     "object_intuition": 88,
-    "orientation": 56,
+    "orientation": 57,
     "result_interpretation": 9
   },
   "forbidden_boilerplate_hits": [],
@@ -2504,28 +2504,28 @@
     },
     {
       "paper_id": "quantum-field-theory-reconstruction-from-coherence-basi-ef12097a",
-      "title": "Quantum Field Theory Reconstruction from Coherence Basin Statistics",
-      "total_words": 1704,
-      "narrative_words": 1183,
-      "formal_results": 11,
+      "title": "From Coherence-Basin Statistics to a Local Quantum-Field Interface: Commutative Measures, the Selected Free CAR Net, and the Interacting Boundary",
+      "total_words": 3685,
+      "narrative_words": 3116,
+      "formal_results": 6,
       "proofs": 5,
-      "narrative_words_per_result": 107.5,
-      "orientation": true,
+      "narrative_words_per_result": 519.3,
+      "orientation": false,
       "object_intuition": false,
       "argument_flow": true,
       "result_interpretation": true,
-      "concrete_foothold": false,
+      "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
       "coverage_dimensions": 5,
-      "audit_priority": "major",
-      "heuristic_priority": "major",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "audit_priority": "reviewed",
+      "heuristic_priority": "light",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 3 replaces the unsupported derivation of noncommutative QFT from classical basin statistics by an exact typed interface. It proves the commutative L2 multiplication representation, the resulting CCR/CAR obstruction, an explicit two-level nonselection witness, and the state-restriction/state-extension theorem for commutative record subalgebras; distinguishes convex mixtures from coherent superposition, four different kernels, classical characteristic functionals from quantum path integrals, and statistical marginalization from RG transport; treats measurement as an ordinary physical instrument rather than an ontologically privileged act; imports without duplicating the companion paper's currently closed selected q79 twisted-Dirac even-CAR local-net theorem; preserves the geometry-selected nonperturbative interacting gauge-BRST C-star completion and unique full-branch state as open; and the complete 13-page PDF was visually inspected.",
       "missing_dimensions": [
-        "object_intuition",
-        "concrete_foothold"
+        "orientation",
+        "object_intuition"
       ]
     },
     {

@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
-    "zenodo_records": 261,
-    "zenodo_records_matched": 261,
+    "zenodo_records": 262,
+    "zenodo_records_matched": 262,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -5871,6 +5871,109 @@
       ]
     },
     {
+      "abstract": "This paper asks a narrower and more useful question than whether quantum field theory can be reconstructed from classical ensemble statistics. Let an admissible coherence-basin space carry a probability measure and bounded basin observables. We prove that these data have a canonical Hilbert-space representation by multiplication operators on an L^2 space. The representation is commutative. Convex mixtures, covariance kernels, Gaussian characteristic functionals, and classical coarse-graining follow within that layer, but canonical commutation or anticommutation relations, quantum interference, time ordering, a local net, and renormalized interactions do not. The correct connection to quantum field theory is an interface rather than an emergence-by-statistics theorem. A state on a quantum observable algebra restricts to a probability measure on every commutative record subalgebra; equivalently, a positive operator-valued measurement or instrument produces classical outcome statistics. Conversely, every state on a commutative subalgebra has extensions to the ambient C^*-algebra, but those extensions are generally nonunique. Identical basin statistics can therefore coexist with inequivalent quantum phases and correlations. This distinction can now be applied to the current Modal Triplet Theory (MTT) corpus. A companion paper owns the selected free-field construction: on the declared globally hyperbolic framed q79 representative, a twisted massless Dirac source composes with standard CAR/AQFT machinery to give an even local observable net with locality, covariance, the time-slice property, and a nonempty positive Hadamard state space. Basin and detector statistics may be read from commuting subalgebras or instruments of that net. The geometry-selected nonperturbative interacting gauge-BRST C^*-bridge, selected full-branch state, renormalization-group matching, and observable uncertainty packet remain open. The result is a precise classical-to-quantum interface and a closed selected free-QFT source, not a derivation of noncommutative QFT from probability alone.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v3",
+      "date": "Version 3, July 2026",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.18256429",
+        "created": "2026-07-31T06:01:29.992123+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21714936",
+        "files": [
+          {
+            "checksum": "md5:7d66fc0c845fa50954f6c48449070e27",
+            "content_url": "https://zenodo.org/api/records/21714936/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 364028
+          }
+        ],
+        "id": "21714936",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-31",
+        "record_url": "https://zenodo.org/records/21714936",
+        "resource_type": "publication",
+        "title": "From Coherence-Basin Statistics to a Local Quantum-Field Interface: Commutative Measures, the Selected Free CAR Net, and the Interacting Boundary",
+        "updated": "2026-07-31T06:01:30.405259+00:00",
+        "version": "v3"
+      },
+      "main_tex_sha256": "54382b40794f6a0c0c77f151b4750262a84cc7c75d9089dc433f547e26fbdbf5",
+      "paper_id": "quantum-field-theory-reconstruction-from-coherence-basi-ef12097a",
+      "paper_md_sha256": "6a811470585da57e8e9f00c16e9fb122ffeec093585481763a4debb191721164",
+      "release_state": "zenodo_released",
+      "result_refs": [],
+      "revision": {
+        "revision_evidence_path": "papers/quantum-field-theory-reconstruction-from-coherence-basi-ef12097a/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "929a72c16a844bd887f577acb8d62b1e383a9bb15c96171e0f7a485ebe8209f9",
+        "selected_revision": true
+      },
+      "source_provenance": {
+        "legacy_source_path": "14 Coherence Capacity Program/_work/Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2"
+      },
+      "source_tree_sha256": "cf29ec96df63d92191ec0aa8490cc0e6c04f8c24db63f781b81b3c05e305abed",
+      "title": "From Coherence-Basin Statistics to a Local Quantum-Field Interface: Commutative Measures, the Selected Free CAR Net, and the Interacting Boundary",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18256429",
+          "created": "2026-07-31T06:01:29.992123+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21714936",
+          "files": [
+            {
+              "checksum": "md5:7d66fc0c845fa50954f6c48449070e27",
+              "content_url": "https://zenodo.org/api/records/21714936/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 364028
+            }
+          ],
+          "id": "21714936",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-31",
+          "record_url": "https://zenodo.org/records/21714936",
+          "resource_type": "publication",
+          "title": "From Coherence-Basin Statistics to a Local Quantum-Field Interface: Commutative Measures, the Selected Free CAR Net, and the Interacting Boundary",
+          "updated": "2026-07-31T06:01:30.405259+00:00",
+          "version": "v3"
+        },
+        {
+          "concept_doi": "10.5281/zenodo.18256429",
+          "created": "2026-01-21T04:58:25.570218+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.18322089",
+          "files": [
+            {
+              "checksum": "md5:2479529b98bc39417f4de8cc5aee55b2",
+              "content_url": "https://zenodo.org/api/records/18322089/files/Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2%20(1).pdf/content",
+              "key": "Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2 (1).pdf",
+              "size": 190291
+            }
+          ],
+          "id": "18322089",
+          "match_kind": "title_or_file",
+          "match_score": 1.0,
+          "publication_date": "2026-01-21",
+          "record_url": "https://zenodo.org/records/18322089",
+          "resource_type": "publication",
+          "title": "Quantum Field Theory Reconstruction from Coherence Basin Statistics",
+          "updated": "2026-01-21T04:58:25.980185+00:00",
+          "version": "v2.0"
+        }
+      ]
+    },
+    {
       "abstract": "We analyze the relation between Modal Triplet Theory (MTT) and noncommutative geometry (NCG). A coherent fixed-point projector does not by itself derive a spectral triple, the Standard Model finite algebra, a Wick rotation, or the spectral action. We prove the precise compression theorem that is available when a projector reduces an already specified real even spectral triple. We then record the stronger finite results now available in the selected MTT branch. The family factor is separated from the rank-one, rank-two, and rank-three gauge carrier; an explicit three-family chiral representation and the faithful group (SU(3) x SU(2) x U(1)_Y)/Z_6 are obtained; and the finite real-even triple is completed at profile tier by the additional neutral complex summand C_N. Direct enumeration of all 676 finite one-form basis pairs gives a raw rank-twelve scalar space, consisting of three Higgs-doublet modules. The selected q79/proto-spinor alignment projector has rank four and leaves one complex Higgs doublet. These are finite, reproducible results, but the entries of D_F remain profile data. The selected representation also derives the one-loop coefficient vector (41/10,-19/6,-7), and all ten matter, scalar, and gauge/ghost internal spectrum rows are now exact finite calculations with no added continuous parameter. Their normalized nonzero spectral shape is universal, however, so they do not generate the missing nonuniversal gauge thresholds. The four-dimensional compact Riemannian spin triple, Wick dictionary, cutoff function, and spectral moments are not derived by the fixed-point construction. Moreover, the selected pure-Standard-Model running branch rules out one universal gauge normalization: the best common-scale coupling ratio remains 1.046656046. A positive overlap kinetic metric reconstructs the profile couplings exactly but uses two measured relative coordinates. Thus MTT currently supplies a typed almost-commutative profile encoding with an executed finite factor, not a first-principles derivation of NCG or a no-knob derivation of the Standard Model.",
       "authors": [
         "Peter Nero"
@@ -10059,82 +10162,6 @@
           "title": "Proto-Spinor Closure and Worldsheet Encoding in Modal Triplet Theory",
           "updated": "2026-04-12T10:42:41.536620+00:00",
           "version": "v3.0"
-        }
-      ]
-    },
-    {
-      "abstract": "We show how quantum field theory arises as an effective statistical representation of coherence basin ensembles, under the same admissibility, regularity, and coarse-graining assumptions used elsewhere in the coherence-capacity framework. We show that quantum fields arise as collective variables encoding statistics of localized coherence basins, while quantum states correspond to ensemble distributions over admissible basins. Correlation functions, operators, and Hilbert-space structure emerge as bookkeeping devices for basin statistics, rather than fundamental ontological entities. This reconstruction explains the origin of operator algebras, superposition, and probabilistic measurement without postulating fundamental wave functions or fields.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v2",
-      "date": "January 2026",
-      "latest_zenodo_release": {
-        "concept_doi": "10.5281/zenodo.18256429",
-        "created": "2026-01-21T04:58:25.570218+00:00",
-        "creators": [
-          "Nero, Peter"
-        ],
-        "doi": "10.5281/zenodo.18322089",
-        "files": [
-          {
-            "checksum": "md5:2479529b98bc39417f4de8cc5aee55b2",
-            "content_url": "https://zenodo.org/api/records/18322089/files/Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2%20(1).pdf/content",
-            "key": "Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2 (1).pdf",
-            "size": 190291
-          }
-        ],
-        "id": "18322089",
-        "match_kind": "title_or_file",
-        "match_score": 1.0,
-        "publication_date": "2026-01-21",
-        "record_url": "https://zenodo.org/records/18322089",
-        "resource_type": "publication",
-        "title": "Quantum Field Theory Reconstruction from Coherence Basin Statistics",
-        "updated": "2026-01-21T04:58:25.980185+00:00",
-        "version": "v2.0"
-      },
-      "main_tex_sha256": "dd5d9aab4b0197e1f124b67fb7889c07c395820c54ac3dc92993bfb2bd1b4e4a",
-      "paper_id": "quantum-field-theory-reconstruction-from-coherence-basi-ef12097a",
-      "paper_md_sha256": "abe0f058aef41b203568aed80b16379d2a0336b6d34b32ce54d40c100fcf87cc",
-      "release_state": "zenodo_released",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "14 Coherence Capacity Program/_work/Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2"
-      },
-      "source_tree_sha256": "d2279bac121b15e467363b6f5d39037004db48e92fff1ece15f737d9b50499fd",
-      "title": "Quantum Field Theory Reconstruction from Coherence Basin Statistics",
-      "version_relation": "matches_latest_release",
-      "zenodo_releases": [
-        {
-          "concept_doi": "10.5281/zenodo.18256429",
-          "created": "2026-01-21T04:58:25.570218+00:00",
-          "creators": [
-            "Nero, Peter"
-          ],
-          "doi": "10.5281/zenodo.18322089",
-          "files": [
-            {
-              "checksum": "md5:2479529b98bc39417f4de8cc5aee55b2",
-              "content_url": "https://zenodo.org/api/records/18322089/files/Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2%20(1).pdf/content",
-              "key": "Quantum_Field_Theory_Reconstruction_from_Coherence_Basin_Statistics_v2 (1).pdf",
-              "size": 190291
-            }
-          ],
-          "id": "18322089",
-          "match_kind": "title_or_file",
-          "match_score": 1.0,
-          "publication_date": "2026-01-21",
-          "record_url": "https://zenodo.org/records/18322089",
-          "resource_type": "publication",
-          "title": "Quantum Field Theory Reconstruction from Coherence Basin Statistics",
-          "updated": "2026-01-21T04:58:25.980185+00:00",
-          "version": "v2.0"
         }
       ]
     },

@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-31T06:01:13+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21714936",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "7d66fc0c845fa50954f6c48449070e27",
+      "local_pdf_sha256": "86becfcdb3c181d5b1b0de1f580695c2024efc5cf22ffdc298b51f620b34f0f5",
+      "paper_id": "quantum-field-theory-reconstruction-from-coherence-basi-ef12097a",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v3"
+    }
+  ]
+}
