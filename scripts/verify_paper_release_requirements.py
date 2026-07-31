@@ -274,13 +274,22 @@ def verify_publication_api(base_url: str) -> dict[str, int]:
     ready = ready_papers()
     drafts = 0
     released = 0
+    exempt = 0
     for paper_id, _decision in ready:
+        metadata = read_json(PAPERS / paper_id / "metadata.json")
         encoded = urllib.parse.quote(paper_id)
         status = request_json(
             "GET",
             f"{base}/api/publications/papers/{encoded}",
         )
         state = str(status.get("publication_state") or "")
+        if state == "not_applicable":
+            assert (
+                metadata.get("release_state") == "publication_exempt"
+                or metadata.get("publication_policy") == "archive_only"
+            ), f"{paper_id}: publication exemption lacks archive policy"
+            exempt += 1
+            continue
         assert state in {"zenodo_draft", "released"}, (
             f"{paper_id}: publication state is {state!r}"
         )
@@ -304,7 +313,6 @@ def verify_publication_api(base_url: str) -> dict[str, int]:
         else:
             released += 1
 
-        metadata = read_json(PAPERS / paper_id / "metadata.json")
         preview = request_json(
             "POST",
             f"{base}/api/publications/papers/{encoded}/preview",
@@ -342,6 +350,7 @@ def verify_publication_api(base_url: str) -> dict[str, int]:
     return {
         "zenodo_drafts": drafts,
         "released_current": released,
+        "publication_exempt": exempt,
     }
 
 

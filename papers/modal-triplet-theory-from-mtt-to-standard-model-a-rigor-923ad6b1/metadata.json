@@ -32,9 +32,9 @@
     "updated": "2026-07-31T11:02:09.656472+00:00",
     "version": "v3"
   },
-  "main_tex_sha256": "cab4193377383c0aa7305c4d556e41521a40c83963fa51b39b11c33b6124eac9",
+  "main_tex_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
   "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
-  "paper_md_sha256": "89170010da49eda22da438ac09754d1226185560a81a9d5064854159c16486bc",
+  "paper_md_sha256": "956622ab983b5930e4d2d1b63d2a554f8f4b176bc8e3863a48a42787f0c7e266",
   "release_state": "zenodo_released",
   "result_refs": [
     "charged_yukawa_higgs_profile",
@@ -65,9 +65,9 @@
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 31989,
+      "bytes": 32073,
       "path": "main.tex",
-      "sha256": "cab4193377383c0aa7305c4d556e41521a40c83963fa51b39b11c33b6124eac9"
+      "sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536"
     },
     {
       "bytes": 3723,
@@ -78,7 +78,7 @@
   "source_provenance": {
     "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Modal_Triplet_Theory__From_MTT_to_Standard_Model_v2"
   },
-  "source_tree_sha256": "43fc2b4d08e7ff2fc60402136ab7231f98e517ef26ae501e18913daef83ced35",
+  "source_tree_sha256": "89c8356518d1e2c170e98bad61836912c8f1c5ba294c1e992276c05488053197",
   "title": "From Modal Triplet Theory to a Standard-Model Sector: Exact Finite Structure, Profile-Level Equivalence, and the No-Knob Boundary",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [

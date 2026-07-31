@@ -7,7 +7,7 @@ author:
 - Peter Nero
 current_version: v3
 date: July 2026, Version 3
-generated_from_main_tex_sha256: cab4193377383c0aa7305c4d556e41521a40c83963fa51b39b11c33b6124eac9
+generated_from_main_tex_sha256: 33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536
 paper_id: modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1
 release_state: zenodo_released
 released_version: v3
@@ -379,6 +379,7 @@ Strong CP and branch choice & Open/partial & No selected suppression mechanism o
 
 The rows overlap and must not be arithmetically summed as independent knobs. The defensible global statement is simpler: at the adopted equivalence tier, measured renormalized SM coordinates remain admissible inputs. Therefore the current result does not establish fewer empirical parameters than the SM. “One shared primitive” means one upstream electroweak primitive within this architecture; it does not mean one free parameter for all observed particle physics.
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Reproducibility and Result Ownership
 
 The calculations cited here are curated at commit `31247ebb5c22` of the public [MTT results repository](https://github.com/PeterNero/mtt-results-repro/tree/31247ebb5c22f3fbb5443024365433c6ee0bff4a). The repository binds each result identifier to an authority row, source artifact, hash, and verification tier. The most relevant entries are:
@@ -400,6 +401,7 @@ The calculations cited here are curated at commit `31247ebb5c22` of the public [
 - **Global scope.** `final_12_of_12_audit` closes declared-standard embedded equivalence; `strict_upgrade_ledger` records the stronger open no-knob and foundational program.
 
 Reproduction should start from those released artifacts, not from historical status sentences in the development corpus. The current authority ledger is deliberately stronger than search order: an old file containing “open” or “closed” does not override the selected row and hash.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 # Relation to Standard Approaches
 
