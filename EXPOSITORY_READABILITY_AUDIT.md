@@ -13,19 +13,19 @@ Canonical papers audited: **139**.
 | critical | 3 |
 | major | 4 |
 | moderate | 2 |
-| light | 5 |
-| reviewed | 123 |
+| light | 4 |
+| reviewed | 124 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 32 |
+| argument_flow | 33 |
 | conclusion | 8 |
 | concrete_foothold | 29 |
-| object_intuition | 88 |
-| orientation | 57 |
+| object_intuition | 87 |
+| orientation | 58 |
 | result_interpretation | 9 |
 
 ## Revision Queue
@@ -44,7 +44,6 @@ Canonical papers audited: **139**.
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
 | light | light | `why-general-relativity-and-string-theory-are-the-same-a-98920533` | 4 | 927.2 | 5/7 | object_intuition, conclusion |
 | light | light | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 1 | 7592.0 | 6/7 | object_intuition |
-| light | light | `modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8` | 0 | 9868.0 | 6/7 | object_intuition |
 | light | light | `photons-entanglement-and-null-updating-in-modal-triplet-theory` | 0 | 5021.0 | 6/7 | object_intuition |
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
 | reviewed | critical | `fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce` | 43 | 69.9 | 7/7 | - |
@@ -105,6 +104,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb` | 7 | 269.3 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | light | `flux-compactifications-in-heterotic-string-theory-expli-08b38155` | 7 | 420.1 | 6/7 | object_intuition |
 | reviewed | moderate | `measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e` | 7 | 334.3 | 4/7 | orientation, argument_flow, result_interpretation |
+| reviewed | light | `modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8` | 7 | 402.7 | 5/7 | orientation, argument_flow |
 | reviewed | moderate | `mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f` | 7 | 253.0 | 6/7 | object_intuition |
 | reviewed | moderate | `temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb` | 7 | 350.7 | 7/7 | - |
 | reviewed | low | `theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643` | 7 | 514.3 | 7/7 | - |

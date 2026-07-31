@@ -4,18 +4,18 @@
   "papers": 139,
   "priority_counts": {
     "critical": 3,
-    "light": 5,
+    "light": 4,
     "major": 4,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 123
+    "reviewed": 124
   },
   "missing_dimension_counts": {
-    "argument_flow": 32,
+    "argument_flow": 33,
     "conclusion": 8,
     "concrete_foothold": 29,
-    "object_intuition": 88,
-    "orientation": 57,
+    "object_intuition": 87,
+    "orientation": 58,
     "result_interpretation": 9
   },
   "forbidden_boilerplate_hits": [],
@@ -1638,27 +1638,28 @@
     },
     {
       "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
-      "title": "Modal Diagrammatics: The Origin of Feynman Rules from Coherent Modal Geometry",
-      "total_words": 10054,
-      "narrative_words": 9868,
-      "formal_results": 0,
-      "proofs": 0,
-      "narrative_words_per_result": 9868.0,
-      "orientation": true,
-      "object_intuition": false,
-      "argument_flow": true,
+      "title": "Universal Perturbative Graph Structure: A Typed Modal Diagrammatics and Its Quantum Boundary",
+      "total_words": 3660,
+      "narrative_words": 2819,
+      "formal_results": 7,
+      "proofs": 5,
+      "narrative_words_per_result": 402.7,
+      "orientation": false,
+      "object_intuition": true,
+      "argument_flow": false,
       "result_interpretation": true,
       "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
-      "coverage_dimensions": 6,
-      "audit_priority": "light",
+      "coverage_dimensions": 5,
+      "audit_priority": "reviewed",
       "heuristic_priority": "light",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 2 replaces the claim that coherence alone makes physical Feynman rules inevitable by a typed finite graded Wick graph theorem, an exact all-retained projection theorem, a closed-sector factorization corollary, and an identity-intertwining proposition. It proves that graph combinatorics cannot select numerical weights, statistics, causal prescriptions, gauge data, or renormalization; distinguishes six commonly conflated kernels; assigns the selected q79 free even-CAR theorem to its companion paper; keeps the upper action and fixed-coupling interacting gauge-BRST completion open; adds examples, validation obligations, and current ledger reconciliation; and the complete 11-page PDF was visually inspected.",
       "missing_dimensions": [
-        "object_intuition"
+        "orientation",
+        "argument_flow"
       ]
     },
     {

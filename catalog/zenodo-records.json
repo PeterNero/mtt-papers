@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18330803",
+      "created": "2026-07-31T06:25:09.644940+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21715156",
+      "files": [
+        {
+          "checksum": "md5:63ba9dabc2a8546f44e1dfb8aa32ce9b",
+          "content_url": "https://zenodo.org/api/records/21715156/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 376702
+        }
+      ],
+      "id": "21715156",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21715156",
+      "resource_type": "publication",
+      "title": "Universal Perturbative Graph Structure: A Typed Modal Diagrammatics and Its Quantum Boundary",
+      "updated": "2026-07-31T06:25:10.309750+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18256429",
       "created": "2026-07-31T06:01:29.992123+00:00",
       "creators": [

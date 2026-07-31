@@ -1,51 +1,53 @@
 {
-  "abstract": "Feynman diagrams and their associated rules appear across a wide range of physical theories, including relativistic quantum field theory, classical statistical field theory, condensed\u2013matter systems, and effective descriptions of gravity. Their ubiquity is often attributed to the quantization of fields, yet closely related diagrammatic structures arise in contexts with no intrinsic quantum interpretation. This raises a conceptual question: why does the same perturbative grammar recur so universally? In this paper we propose and develop an explanatory viewpoint based on Modal Triplet Theory (MTT). Building on recent results that derive algebraic quantum field theory (AQFT) and perturbative amplitudes rigorously from coherent modal geometry, we show that the essential structure underlying Feynman rules already exists at the level of coherent modal fluctuations around stable fixed points. Propagator\u2013 and vertex\u2013like objects arise as the inverse of the quadratic form governing coherent fluctuations and as higher variations of the modal action, respectively. Diagrammatic expansions then follow inevitably from Gaussian combinatorics, independently of quantization prescriptions, Hilbert spaces, or path integrals. This modal diagrammatics perspective does not replace the AQFT or pAQFT constructions, which remain essential for causal locality, renormalization control, and global consistency. Rather, it explains why those rigorous frameworks necessarily reproduce the familiar diagrammatic rules when projected to four\u2013dimensional spacetime. We further show how internal overlap integrals, selection rules, and curvature\u2013gap thresholds emerge naturally as vertex factors and propagator spectra in the projected theory. Finally, we discuss broader implications of this viewpoint. It clarifies why classical statistical field theories also admit Feynman diagrams, suggests an interpretation of quantumness as a particular coherence regime rather than a fundamental ontology, and offers a coherent way to understand the limited domain of validity of perturbative quantum gravity. The result is a unifying conceptual account of diagrammatics as the universal perturbative language of coherent systems.",
+  "abstract": "Feynman graphs are used in quantum field theory, classical statistical field theory, stochastic dynamics, and effective descriptions of gravity. Their recurrence has a precise but limited explanation. Once one specifies a nondegenerate quadratic kernel, interaction tensors, a grading, and a contraction rule, Wick expansion organizes perturbative coefficients by graphs. The graph grammar is therefore not uniquely quantum. It also does not, by itself, select a physical propagator, Bose or Fermi statistics, causal locality, gauge reduction, counterterms, positivity, or unitarity. This paper reformulates modal diagrammatics around that distinction. We prove a finite graded graph-expansion theorem and an exact projection theorem: if an even projector intertwines the quadratic operator, interaction tensors, grading, and declared identities, then every all-retained graph coefficient agrees with the coefficient computed in the projected theory. We also prove a nonselection theorem showing that the same graph combinatorics supports continuously many inequivalent weights and different statistics. Thus basin adjacency or coherence language alone cannot derive Feynman rules. For Modal Triplet Theory, the result supplies a rigorous transfer target. The selected q79 twisted-Dirac construction already composes with standard CAR/AQFT machinery to give a free even local net. The present theorem explains how a selected upper action could transfer its perturbative graph data to a lower effective sector. It does not manufacture that action. The geometry-selected upper action, fixed-coupling interacting gauge\u2013BRST C^*-completion, renormalization-group matching, and observable uncertainty packet remain open. The formulation retains the explanatory value of modal diagrammatics while making its mathematical and physical boundary explicit.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v2",
+  "date": "Version 2, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18330803",
-    "created": "2026-01-21T20:04:43.241292+00:00",
+    "created": "2026-07-31T06:25:09.644940+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18330804",
+    "doi": "10.5281/zenodo.21715156",
     "files": [
       {
-        "checksum": "md5:49aa409368befd1b9a1f7b0a9644a78f",
-        "content_url": "https://zenodo.org/api/records/18330804/files/Modal_Diagrammatics__The_Origin_of_Feynman_Rules_from_Coherent_Modal_Geometry%20(1).pdf/content",
-        "key": "Modal_Diagrammatics__The_Origin_of_Feynman_Rules_from_Coherent_Modal_Geometry (1).pdf",
-        "size": 349752
+        "checksum": "md5:63ba9dabc2a8546f44e1dfb8aa32ce9b",
+        "content_url": "https://zenodo.org/api/records/21715156/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 376702
       }
     ],
-    "id": "18330804",
-    "match_kind": "title_or_file",
+    "id": "21715156",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18330804",
+    "publication_date": "2026-07-31",
+    "record_url": "https://zenodo.org/records/21715156",
     "resource_type": "publication",
-    "title": "Modal Diagrammatics: The Origin of Feynman Rules from Coherent Modal Geometry",
-    "updated": "2026-01-21T20:04:43.679771+00:00",
-    "version": "v1.0"
+    "title": "Universal Perturbative Graph Structure: A Typed Modal Diagrammatics and Its Quantum Boundary",
+    "updated": "2026-07-31T06:25:10.309750+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "c901d892106dffe861c3e26b5f71e656f39ba709b7272572543adca0911e39ce",
+  "main_tex_sha256": "3e02bffabd34d5a711ba23c10a8d5a63d77d409de28fc75b62f5bc29cf88a2a6",
   "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
-  "paper_md_sha256": "e52b70501350a0ac091092cc002ae79d9323af69e1adcc627cd0045d860200a3",
+  "paper_md_sha256": "8815f280cc5d75a48d90abae9cabed497a06396faaa5c5fb18fe5492ba6859f1",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "5d62ae9a0f266bbda5f8a2b0d9cb1e0070f4e3290b857a673872a9992b9d2cc1",
+    "selected_revision": true
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 80028,
+      "bytes": 30187,
       "path": "main.tex",
-      "sha256": "c901d892106dffe861c3e26b5f71e656f39ba709b7272572543adca0911e39ce"
+      "sha256": "3e02bffabd34d5a711ba23c10a8d5a63d77d409de28fc75b62f5bc29cf88a2a6"
     },
     {
       "bytes": 3784,
@@ -56,10 +58,35 @@
   "source_provenance": {
     "legacy_source_path": "7 Quantum Field Theory/_work/Modal_Diagrammatics__The_Origin_of_Feynman_Rules_from_Coherent_Modal_Geometry"
   },
-  "source_tree_sha256": "4a8678d633f7fda3f83e26ab90112f2161ec0b53f34be82b3a69f1ae9911c72f",
-  "title": "Modal Diagrammatics: The Origin of Feynman Rules from Coherent Modal Geometry",
+  "source_tree_sha256": "da72d1f433f4df6de56759f92f139321a4505548f251a3563c77c6c4ab9d69c0",
+  "title": "Universal Perturbative Graph Structure: A Typed Modal Diagrammatics and Its Quantum Boundary",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18330803",
+      "created": "2026-07-31T06:25:09.644940+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21715156",
+      "files": [
+        {
+          "checksum": "md5:63ba9dabc2a8546f44e1dfb8aa32ce9b",
+          "content_url": "https://zenodo.org/api/records/21715156/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 376702
+        }
+      ],
+      "id": "21715156",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21715156",
+      "resource_type": "publication",
+      "title": "Universal Perturbative Graph Structure: A Typed Modal Diagrammatics and Its Quantum Boundary",
+      "updated": "2026-07-31T06:25:10.309750+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18330803",
       "created": "2026-01-21T20:04:43.241292+00:00",
