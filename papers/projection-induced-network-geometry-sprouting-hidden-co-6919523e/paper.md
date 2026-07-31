@@ -1,1445 +1,605 @@
 ---
 abstract: |
-  Empirical studies of biological, physical, and engineered networks reveal robust structural features that defy explanation by local optimization rules. In particular, junction motifs exhibit hidden correlations among branching angles, thickness ratios, and node degrees, and frequently display “sprouting” behavior in which a thin branch emerges approximately orthogonal to an otherwise straight dominant channel. Existing explanations typically appeal to variational principles or string–theoretic minimal surfaces. In this work we show that neither optimization nor string theory is required.
+  Projection can discard information without selecting a network geometry. This paper develops a rigorous Modal Triplet Theory (MTT) framework in which observable motif constraints are determined from the actual image
+  ``` math
+  \mathcal R=F(\mathcal A)\subseteq\mathcal M,
+  ```
+  where $`\mathcal A`$ is a declared admissible source domain and $`F`$ includes projection, network extraction, and motif measurement. Compatibility constraints are properties of $`\mathcal R`$, not consequences of noninvertibility by itself. We give an exact recombination test for support nonfactorization, a graph-of-a-map sufficient condition, and a regular-value description of local image geometry. A covering-map counterexample proves that failure of a continuous section is compatible with a full product image. We also separate three distinct objects: an embedded physical network, a constrained motif support, and a statistical conditional-dependence graph.
 
-  Working entirely within Modal Triplet Theory (MTT), we derive these network phenomena directly from projection-limited coherent description. The central mechanism is admissibility: effective network configurations exist only as shadows of an underlying coherent sector, selected by spectral gaps, bounded projectors, and stability margins. We prove that the nonexistence of a global reconstruction map forces hidden compatibility constraints among local network observables, ruling out purely local generative models. We further show that near the boundary of admissibility, only a restricted class of local deformations preserves coherence. These admissibility-preserving deformations correspond precisely to empirical sprouts.
-
-  Using operator-theoretic bounds and a Schur–complement analysis, we demonstrate that thin branches couple perturbatively to a dominant transport channel, while bending the dominant channel consumes coherence capacity coercively. This yields a quantitative prediction: the maximal admissible sprout thickness ratio scales as the square root of the coherence capacity, $`\rho_{\mathrm{th}} \sim \sqrt{C}`$. We derive statistical concentration results showing that sprout motifs become dominant in boundary-layer ensembles and provide a concrete empirical protocol for testing these predictions using capacity proxies such as curvature, crowding, or taper gradients.
-
-  Our results establish sprouting as a universal boundary-stabilization phenomenon inherent to projection-limited descriptions, unifying disparate network observations under a single structural principle and extending the scope of MTT beyond quantum and geometric settings to complex networks.
+  For a declared local reserve model, we derive a useful conditional result. If the leading coherence deficit is
+  ``` math
+  Q(\beta,q_\parallel,q_\perp)
+    =a\beta^2+b(q_\parallel^2+q_\perp^2)+cq_\parallel^2,
+    \qquad a,b,c>0,
+  ```
+  then every admissible branch of thickness $`\rho=(q_\parallel^2+q_\perp^2)^{1/2}`$ satisfies $`\rho\leq\sqrt{C/b}`$. Near saturation, the dominant channel is forced to remain nearly straight and the branch nearly orthogonal. The estimate is stable under a relative remainder bound. This proves the square-root law inside the stated quadratic model; it does not derive the model, its coefficients, a branch-creation law, or universal empirical prevalence. Those require a selected network source, Hessian, extraction pipeline, and probability or growth dynamics. The result is a falsifiable conditional encoding rather than a universal theory of network morphology.
 author:
 - Peter Nero
-current_version: v1.0
-date: January 2026
-generated_from_main_tex_sha256: bf63dbf18d5800d543ce3421d3aa732ca6bfb857b83d627b86c29f4e550d0fcd
+bibliography:
+- main.bib
+current_version: v2
+date: Version 2, July 2026
+generated_from_main_tex_sha256: d03c6de4843fc501295fd52cadcbb33cb25ad2da36881497e2593dfb7c8e74b6
 paper_id: projection-induced-network-geometry-sprouting-hidden-co-6919523e
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  Projection-Induced Network Geometry  
-  Sprouting, Hidden Correlations, and Boundary Stabilization from Modal Triplet Theory
-zenodo_doi: 10.5281/zenodo.18274629
-zenodo_record_id: 18274629
-zenodo_url: "https://zenodo.org/records/18274629"
+  **Admissible Image Geometry for Network Motifs in Modal Triplet Theory**
+  Conditional Correlations, Sprout Bounds, and What Projection Alone Does Not Imply
+zenodo_doi: 10.5281/zenodo.21714026
+zenodo_record_id: 21714026
+zenodo_url: "https://zenodo.org/records/21714026"
 ---
 
-# Introduction
+# Version 2 revision note
 
-Networks arising in biology, physics, and engineering exhibit strikingly regular local motifs despite vast diversity in scale and function. Across neuronal arbors, vascular systems, plant roots, fungal hyphae, coral growth, and transport networks, junctions often favor low-degree branching, correlated angles, and a characteristic “sprouting” geometry in which a thin branch emerges approximately orthogonal to a dominant pathway. These features persist across species, substrates, and growth conditions, suggesting a structural rather than domain-specific origin.
+<div class="description">
 
-At first glance, such motifs invite explanation via local optimization principles. Classical approaches invoke Steiner trees, volume minimization, flow optimization, or, more recently, string–theoretic minimal surfaces to account for observed branching geometries. While these methods can reproduce certain empirical distributions, they suffer from two conceptual limitations. First, they presuppose global optimization criteria that are neither directly accessible nor evidently implemented by local growth processes. Second, they do not explain why local network variables—branching angles, thickness ratios, and junction degrees—exhibit strong correlations that cannot be generated by any purely local rule.
+Version 1, DOI <https://doi.org/10.5281/zenodo.18274629>.
 
-In this paper we propose a different explanation. We show that these network features arise generically from projection-limited coherent description, without invoking optimization or string theory. Our framework is Modal Triplet Theory (MTT), which characterizes physical description as a projection from an underlying coherent configuration space to an effective observable layer. Crucially, this projection is admissible only on restricted domains: spectral gaps, bounded projectors, and stability margins must persist for an effective description to exist. Outside these domains, reconstruction fails and effective variables cannot be specified independently.
+Version 1 treated the absence of a global reconstruction map as if it forced a proper, nonfactorizing motif image and then used that inference to derive specific graph geometry, sprout prevalence, and a universal square-root law. None of those implications follows from noninvertibility alone.
 
-This perspective has two immediate consequences. First, because the coherent projection admits no global section, local network observables cannot be freely combined. Hidden compatibility constraints necessarily restrict the realizable set of local motifs, explaining the empirical failure of factorized or Markovian generative models. Second, near the boundary of admissibility, only a limited set of local deformations preserves coherence. We show that these admissibility-preserving deformations correspond exactly to empirical sprouts.
+Version 2 defines the image $`\mathcal R=F(\mathcal A)`$ explicitly, supplies direct tests for its geometry, separates image constraints from graph extraction and statistical dependence, and states the sprout result as a theorem of a declared positive quadratic reserve model.
 
-The core contribution of this work is a rigorous derivation of sprouting behavior as a boundary-stabilization phenomenon. Using Riesz–resolvent bounds for coherent projectors and a block–operator (Schur complement) analysis of junction modes, we prove that bending a dominant transport channel consumes coherence capacity coercively, while coupling to a thin branch enters only at second order. As a result, when coherence capacity is low, the only admissible way to add connectivity is via a thin, approximately orthogonal sprout. This yields a quantitative prediction: the maximal admissible sprout thickness ratio scales as the square root of the remaining capacity.
+The useful local idea survives: a selected positive Hessian can make bending and longitudinal branch growth more expensive than a transverse thin mode. Near a small reserve boundary, that anisotropy yields a controlled, approximately orthogonal sprout bound.
 
-Beyond explaining individual motifs, we derive statistical consequences for ensembles of networks. In boundary-layer regimes, the distribution of sprout thickness ratios contracts, and the fraction of sprout-like junctions approaches unity under appropriate conditioning. We provide a concrete empirical protocol for testing these predictions using observable proxies for coherence capacity, such as local curvature, spatial crowding, or thickness gradients. These predictions are falsifiable and do not depend on the details of any particular biological or physical system.
-
-Finally, we clarify the relation of our results to variational and string-based approaches. Minimal-surface and string-theoretic constructions can be understood as convenient encodings of admissible coherent configurations in special regimes. They are not fundamental to the mechanism we identify. Admissibility, not minimality, is primary; optimization emerges only as a secondary variational shadow of coherence constraints.
-
-By deriving network sprouting and hidden correlations directly from projection-limited coherence, this work extends MTT into the domain of complex networks and demonstrates the universality of admissibility-driven boundary phenomena across physics, biology, and geometry.
-
-# Conceptual Framework: Two Layers and Projection
-
-The starting point of our analysis is the recognition that network descriptions are effective, not fundamental. The geometric and combinatorial features measured in empirical networks—branching angles, thickness ratios, and node degrees—do not constitute an autonomous state space. Rather, they arise as shadows of a higher-level coherent configuration subject to projection and stability constraints. This section formalizes that two-layer structure within Modal Triplet Theory (MTT) and establishes the conceptual foundations for all subsequent results.
-
-## Upstairs coherent configurations
-
-In MTT, physical description begins with an underlying configuration space $`\mathcal{X}`$ equipped with invertible evolution. Elements $`x \in \mathcal{X}`$ represent full configurations of the system, including degrees of freedom that are not directly observable at the effective level. No assumption is made that $`\mathcal{X}`$ admits a preferred low-dimensional parameterization or local coordinate chart suitable for empirical modeling.
-
-A distinguished subset of $`\mathcal{X}`$ is selected dynamically: the coherent sector. Coherent configurations are characterized by the existence of spectral gaps, bounded projectors, and stability margins that allow controlled truncation to an effective description. These conditions are formalized through the joint harmonic (Riesz) projector $`\Pi_{\mathrm{coh}}`$, defined on admissible slabs of configuration space. The precise construction of $`\Pi_{\mathrm{coh}}`$ is not required for the present argument; what matters is that coherence is a structural property, not an imposed constraint.
-
-## Projection to effective descriptions
-
-Observable descriptions arise through projection. Let $`I`$ denote the observable pushforward that integrates out internal or non-observable degrees of freedom. The effective description is given by the composition
-``` math
-P := I \circ \Pi_{\mathrm{coh}} : \mathcal{X} \to \mathcal{Y},
-```
-where $`\mathcal{Y}`$ is the space of effective states accessible to observation and measurement. In the present context, elements of $`\mathcal{Y}`$ encode network-level information such as skeleton geometry and local branch attributes.
-
-Crucially, $`P`$ is generically many-to-one. Distinct coherent configurations in $`\mathcal{X}`$ may project to the same effective description in $`\mathcal{Y}`$. As a result, there is no guarantee that effective variables form a complete or independent coordinate system for the underlying dynamics.
-
-## Admissibility and the absence of global reconstruction
-
-The projection $`P`$ is well-defined only on an admissible domain $`\mathcal{A} \subset \mathcal{X}`$. Admissibility requires that spectral gaps persist, projectors remain bounded and regular, and stability margins are positive. These conditions ensure that small perturbations of a coherent configuration remain within the domain where effective description is meaningful.
-
-A central structural fact follows: on $`P(\mathcal{A}) \subset \mathcal{Y}`$ there exists no global measurable section $`S`$ such that
-``` math
-P \circ S = \mathrm{id}_{P(\mathcal{A})}.
-```
-In other words, there is no globally consistent way to reconstruct a unique coherent configuration from effective data alone. This reconstruction obstruction is not a technical limitation but a structural consequence of projection-limited description.
-
-## Capacity as distance to the admissibility boundary
-
-To quantify proximity to admissibility failure, MTT introduces a scalar coherence capacity or admissibility margin, denoted $`C(x) > 0`$ for $`x \in \mathcal{A}`$. The capacity aggregates the control parameters governing effective description—spectral gaps, projector regularity, and stability margins—into a single measure. As $`x`$ approaches the boundary $`\partial \mathcal{A}`$, at least one control parameter degrades and $`C(x) \to 0`$.
-
-Capacity plays a central role in what follows. It is not an energy, cost function, or optimization target. Rather, it measures how much freedom remains for admissible deformation of the effective description before projection ceases to be controlled. Boundary-layer phenomena occur precisely in regions where $`C`$ is small but nonzero.
-
-## Consequences for network descriptions
-
-When applied to networks, this framework has immediate implications. Effective network variables—junction degree, branching angles, thickness ratios—are functions on $`\mathcal{Y}`$. Because $`P`$ admits no global section, these variables cannot be freely specified or independently combined. Hidden compatibility constraints necessarily restrict the set of realizable local motifs.
-
-Moreover, near the boundary of admissibility, only certain local deformations preserve coherence. As we will show, these admissibility-preserving deformations correspond exactly to sprout-like motifs observed empirically. Sprouting is therefore not an optimization outcome or a special biological mechanism, but a universal boundary-stabilization phenomenon inherent to projection-limited coherent description.
-
-This two-layer perspective—coherent upstairs configurations projected to constrained effective network shadows—provides the conceptual foundation for the rigorous results developed in the following sections.
-
-# Network Shadows and Empirical Observables
-
-Having established the two-layer projection framework, we now specify how effective network descriptions arise as shadows of admissible coherent configurations and how the empirical observables used in network studies are represented within this framework. This section provides the precise interface between Modal Triplet Theory and measured network data.
-
-## Network extraction as a shadow map
-
-Let $`\mathcal{Y}`$ denote the space of effective descriptions obtained by projection from the coherent sector, as defined in the previous section. In empirical settings, elements of $`\mathcal{Y}`$ are not observed directly. Instead, they are further reduced to network skeletons through a deterministic extraction procedure.
-
-We model this by introducing a measurable network extraction map
-``` math
-\Gamma : \mathcal{Y} \to \mathcal{N},
-```
-where $`\mathcal{N}`$ is the space of embedded networks. An element $`n \in \mathcal{N}`$ consists of:
-
-- a graph structure with nodes and edges,
-
-- an embedding of edges as curves in $`\mathbb{R}^3`$ (or an ambient manifold),
-
-- a local thickness or radius field defined along edges.
-
-The precise construction of $`\Gamma`$ (e.g. skeletonization, medial-axis extraction, thinning algorithms) is not essential for our analysis. What matters is that $`\Gamma`$ is a fixed, deterministic map applied uniformly across configurations, and that local network motifs correspond to local neighborhoods in the projected description.
-
-The composite map
-``` math
-\mathcal{X} \xrightarrow{P} \mathcal{Y} \xrightarrow{\Gamma} \mathcal{N}
-```
-defines the effective network shadow of a coherent configuration.
-
-## Junction motifs and local measurement pipeline
-
-Empirical analyses focus on local junction motifs, particularly degree–3 nodes (bifurcations), which dominate across a wide range of natural networks. We therefore restrict attention to such motifs.
-
-For a network $`n \in \mathcal{N}`$ and a degree–3 node $`v`$, we extract a local motif consisting of:
-
-- three incident edges meeting at $`v`$,
-
-- the unit tangent vectors $`t_1,t_2,t_3`$ of these edges at the junction,
-
-- the local thicknesses $`w_1,w_2,w_3`$ measured at $`v`$.
-
-This defines a measurable motif-extraction map
-``` math
-\mathsf{M} : \mathcal{N} \to \mathcal{M},
-```
-where $`\mathcal{M}`$ is the space of degree–3 junction motifs with geometric data.
-
-## Empirical observables
-
-From each motif $`m = \mathsf{M}(n)`$, we define the empirical observables used in network studies:
-
-1.  **Branching angles.** The pairwise angles
-    ``` math
-    \theta_{ij} := \angle(t_i,t_j), \qquad i,j \in \{1,2,3\}.
-    ```
-
-2.  **Dominant-channel imbalance.** To identify motifs with two comparable main branches, define
-    ``` math
-    \delta(m) := \frac{|w_1 - w_2|}{w_1 + w_2}.
-    ```
-    Motifs with $`\delta`$ below a fixed tolerance are said to possess a dominant transport channel.
-
-3.  **Thin-branch ratio.** The relative thickness of the third branch is quantified by
-    ``` math
-    \rho(m) := \frac{w_3}{(w_1 + w_2)/2}.
-    ```
-
-4.  **Dominant-channel bend.** The geometric distortion of the dominant channel is measured by
-    ``` math
-    \beta(m) := \angle(t_1,t_2),
-    ```
-    with $`\beta \approx 0`$ corresponding to a straight-through dominant path.
-
-These observables coincide with those employed in empirical analyses of sprouting and branching across neuronal, vascular, plant, fungal, and coral networks.
-
-## Sprout and non-sprout classification
-
-Within this observable space, we distinguish two classes of motifs:
-
-Sprout motifs.  
-Motifs for which the dominant channel remains approximately straight ($`\beta \approx 0`$) and the third branch emerges approximately orthogonal to the dominant direction. These motifs are characterized by small $`\rho`$ and near-orthogonality of $`t_3`$ to $`(t_1+t_2)/\|t_1+t_2\|`$.
-
-Non-sprout motifs.  
-Motifs for which the dominant channel is significantly bent ($`\beta`$ bounded away from zero), regardless of the thickness of the third branch.
-
-This classification is purely geometric and empirical. No optimization or growth rule is assumed at this stage.
-
-## Balanced-dominant regime
-
-Our analysis focuses on the balanced-dominant regime defined by
-``` math
-E_\delta := \{ m \in \mathcal{M} : \delta(m) \le \delta_0 \},
-```
-where $`\delta_0`$ is a small tolerance. This corresponds to motifs in which two main branches carry comparable thickness and thus form a single dominant channel.
-
-Empirically, this is precisely the regime in which sprouting behavior is observed and in which local optimization rules are most strongly violated. Structurally, this regime is singled out because it maximizes coupling within the coherent sector and therefore is most sensitive to admissibility constraints.
-
-## Hidden constraints and the role of projection
-
-At this point, it is important to emphasize that the observables $`(\theta_{ij}, \rho, \delta)`$ do not parameterize an unconstrained product space. Because the network $`n`$ arises as a shadow of an admissible coherent configuration, not every combination of these local quantities is realizable.
-
-The set of empirically realizable motifs,
-``` math
-\mathcal{R} := \mathsf{M}(\Gamma(P(\mathcal{A}))) \subset \mathcal{M},
-```
-is a proper subset of the naive space of all possible angle and thickness combinations. This restriction is not imposed by optimization or by local rules, but by the absence of a global reconstruction map for the projection $`P`$.
-
-In the following sections, we show that these hidden compatibility constraints force nontrivial correlations among local network observables and, near the boundary of admissibility, single out sprout-like motifs as the only locally admissible deformations.
-
-# Admissibility and Capacity in Modal Triplet Theory
-
-We now formalize the notion of admissibility and introduce the coherence capacity that governs the existence and stability of effective network descriptions. This section establishes the control parameter that will later determine which local network deformations are allowed and which necessarily destroy coherence.
-
-## Admissible domains and controlled truncation
-
-In Modal Triplet Theory, effective description is not globally defined on the underlying configuration space $`\mathcal{X}`$. Instead, it exists only on admissible domains $`\mathcal{A}\subset\mathcal{X}`$, characterized by controlled truncation. Concretely, a configuration $`x\in\mathcal{X}`$ is admissible if the following conditions hold on a slab containing $`x`$:
-
-1.  **Spectral separation.** The operators defining the coherent sector possess an isolated spectral island, separated by a positive gap from the remainder of the spectrum.
-
-2.  **Projector regularity.** The coherent projector $`\Pi_{\mathrm{coh}}`$ defined by Riesz–spectral calculus is bounded and varies continuously (in operator norm) under admissible perturbations.
-
-3.  **Stability margin.** The projected dynamics satisfy a contraction or damping-balance condition (FCC), ensuring persistence of coherence under small disturbances.
-
-These conditions are standard in the MTT fixed-point framework and ensure that the projection $`P = I\circ \Pi_{\mathrm{coh}}`$ defines a stable, physically meaningful effective description.
-
-## The admissibility boundary
-
-The admissible domain $`\mathcal{A}`$ is not open-ended. As parameters vary or as configurations are deformed, one or more of the control conditions above may fail. We define the admissibility boundary $`\partial\mathcal{A}`$ as the locus where at least one control condition is saturated:
-
-- the spectral gap closes,
-
-- the coherent projector becomes unbounded or singular,
-
-- or the stability margin vanishes.
-
-Beyond $`\partial\mathcal{A}`$, the effective description ceases to exist: projection becomes ill-conditioned, reconstruction fails, and network-level observables lose physical meaning. Importantly, this boundary is not associated with singular behavior in the underlying dynamics; it marks the limit of effective description, not the limit of evolution itself.
-
-## Coherence capacity as a unified control parameter
-
-To quantify distance to the admissibility boundary, we introduce a scalar coherence capacity (or admissibility margin)
-``` math
-C : \mathcal{A} \to (0,\infty).
-```
-
-The capacity compresses the multiple control parameters governing admissibility into a single measure. A convenient choice is
-``` math
-C(x) := \min\big\{\Delta(x),\,M_\Pi(x)^{-1},\,m_{\mathrm{FCC}}(x)\big\},
-```
-where:
-
-- $`\Delta(x)`$ is a normalized spectral gap margin,
-
-- $`M_\Pi(x)`$ controls the size and variation of the coherent projector,
-
-- $`m_{\mathrm{FCC}}(x)`$ is the contractivity margin of the projected dynamics.
-
-By construction, $`C(x)>0`$ for all $`x\in\mathcal{A}`$ and $`C(x)\to 0`$ as $`x\to\partial\mathcal{A}`$. The precise functional form of $`C`$ is not unique; any scalar that vanishes precisely when admissibility fails is sufficient. What matters is that $`C`$ decreases monotonically as effective description becomes more strained.
-
-## Interpretation of capacity
-
-Coherence capacity is not an energy, cost function, or optimization target. It measures the remaining freedom available for admissible deformation of the effective description. When $`C`$ is large, a wide range of local modifications preserve coherence. When $`C`$ is small, only a restricted class of deformations remains admissible.
-
-This interpretation is central for network geometry. As networks grow, remodel, or encounter spatial constraints, their effective descriptions may approach $`\partial\mathcal{A}`$. In these boundary-layer regions, admissibility severely restricts local branching geometry. As we will show, this restriction singles out sprout-like motifs as the only admissible local deformations.
-
-## Capacity and locality
-
-Although capacity is defined upstairs on $`\mathcal{X}`$, it admits local manifestations in the effective network description. Geometric strain, crowding, curvature, and sharp tapering all increase the sensitivity of the coherent projector and reduce stability margins. Consequently, they serve as observable proxies for decreasing capacity.
-
-This locality is crucial: it allows boundary-layer phenomena to be detected empirically without access to the underlying coherent variables. In subsequent sections we exploit this fact to derive quantitative predictions for sprouting behavior in network ensembles and to propose empirical tests based on observable capacity proxies.
-
-## Summary
-
-Admissibility and coherence capacity provide the structural control parameters governing effective network descriptions. Hidden compatibility constraints arise because projection lacks a global reconstruction map, and boundary phenomena occur as $`C\to 0`$. In the following sections we show that dominant-channel distortion consumes capacity coercively, while thin-branch coupling is perturbative, leading to a universal mechanism for sprouting near the admissibility boundary.
-
-# Hidden Compatibility Constraints from Projection
-
-We now show that hidden correlations among local network observables are not accidental or system-specific, but follow inevitably from projection-limited coherent description. This section formalizes the failure of local factorization and establishes why no purely local or Markovian generative rule can reproduce the set of admissible network motifs.
-
-## Local observables as a measurable feature map
-
-Let $`P = I\circ \Pi_{\mathrm{coh}} : \mathcal{A}\to \mathcal{Y}`$ be the admissible projection. Let $`\Gamma:\mathcal{Y}\to \mathcal{N}`$ be the (measurable) network extraction map and $`\mathsf{M}:\mathcal{N}\to \mathcal{M}`$ the (measurable) motif extraction map.
-
-Fix a finite collection of measurable local observables (features)
-``` math
-f_i:\mathcal{M}\to Z_i,\qquad i=1,\dots,m,
-```
-with each $`Z_i`$ a standard Borel space. Define the joint feature map
-``` math
-F:\mathcal{A}\to Z:=\prod_{i=1}^m Z_i,\qquad
-F(x):=(f_1(\mathsf{M}(\Gamma(P(x)))),\dots,f_m(\mathsf{M}(\Gamma(P(x))))).
-```
-Define the realizability set
-``` math
-\mathcal{R}:=F(\mathcal{A})\subseteq Z.
-```
-
-<div id="ass:no-section" class="assumption">
-
-**Assumption 1** (No global section on the admissible shadow). There is no measurable section $`S:P(\mathcal{A})\to \mathcal{A}`$ such that $`P\circ S = \mathrm{id}_{P(\mathcal{A})}`$.
+MTT has not yet selected a physical network source, the map $`F`$, the coefficients $`a,b,c`$, a capacity calibration, or a growth law for any biological or engineered system. Cross-domain universality and empirical prevalence are therefore open.
 
 </div>
 
-<div id="ass:feature-complete" class="assumption">
+# The question this paper can answer
 
-**Assumption 2** (Local completeness of the chosen features). The feature map factors through $`P(\mathcal{A})`$ and is injective there: there exists a measurable $`\widehat F:P(\mathcal{A})\to Z`$ with $`F=\widehat F\circ P`$ on $`\mathcal{A}`$, and $`\widehat F`$ is injective.
+Networks appear in vasculature, leaf venation, fungal growth, neural arborization, infrastructure, and many other settings. Their common visual vocabulary does not imply a common microscopic cause. Even within transport networks, optimization, adaptation, damage tolerance, fluctuating loads, and tissue growth can produce different structures . Network motifs are useful empirical summaries, but a repeated motif is not itself a derivation of its mechanism .
 
-</div>
+The narrow MTT question is this:
 
-<div id="thm:hidden-compatibility" class="theorem">
+> Given a selected source domain, a selected projection and extraction map, and a certified local reserve function, what restrictions follow for the observable motif image?
 
-**Theorem 3** (Hidden compatibility constraints). *Under Assumptions <a href="#ass:no-section" data-reference-type="ref" data-reference="ass:no-section">1</a> and <a href="#ass:feature-complete" data-reference-type="ref" data-reference="ass:feature-complete">2</a>, the realizability set $`\mathcal{R}`$ is a proper subset of the naive product space $`Z`$:
+This question is mathematically meaningful. It is also weaker than the claim that projection alone explains real network morphology. The difference matters. A many-to-one map tells us that some source information was forgotten. It does not tell us which motifs remain, which edges appear, or how probability is distributed over the surviving motifs.
+
+Version 2 therefore uses four rules.
+
+1.  The realizable set is computed from the image of a declared map.
+
+2.  Nonfactorization is proved by a failed recombination or an explicit coupled constraint.
+
+3.  Graph topology is supplied by an extraction rule, not inferred from correlation.
+
+4.  A prevalence statement requires a measure or dynamics in addition to a feasible set.
+
+These rules turn the paper from a universality claim into a reusable conditional framework.
+
+# Typed source, image, and graph objects
+
+## The full map
+
+Let $`\mathcal X`$ be a source configuration space and let $`\mathcal A\subseteq\mathcal X`$ be the domain on which the relevant MTT source, projector, and stability conditions have been verified. Let
 ``` math
-\mathcal{R}\subsetneq Z.
+P:\mathcal A\longrightarrow\mathcal Y
 ```
-Equivalently, not all combinations of local observables $`(f_1,\dots,f_m)`$ are jointly realizable by admissible configurations; there exist nontrivial compatibility constraints among them.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Assume for contradiction that $`\mathcal{R}=Z`$. Then $`\widehat F:P(\mathcal{A})\to Z`$ is a measurable bijection between standard Borel spaces. Hence $`\widehat F`$ admits a measurable inverse $`\widehat F^{-1}:Z\to P(\mathcal{A})`$ (Borel isomorphism theorem / Lusin–Souslin).
-
-Define $`T:=\widehat F^{-1}\circ \widehat F = \mathrm{id}_{P(\mathcal{A})}`$. If there existed any measurable selector $`\sigma:Z\to \mathcal{A}`$ with $`P(\sigma(z))=\widehat F^{-1}(z)`$, then $`S:=\sigma\circ \widehat F`$ would satisfy $`P\circ S=\mathrm{id}_{P(\mathcal{A})}`$, contradicting Assumption <a href="#ass:no-section" data-reference-type="ref" data-reference="ass:no-section">1</a>. Such a selector exists whenever the fibers $`\{x\in\mathcal{A}:P(x)=y\}`$ admit a measurable choice over $`y\in P(\mathcal{A})`$; this is exactly what a global section would provide. Therefore $`\mathcal{R}\neq Z`$, i.e. $`\mathcal{R}\subsetneq Z`$. ◻
-
-</div>
-
-## Local observables and realizability
-
-Let $`\mathcal{M}`$ denote the space of local junction motifs defined in Section 3, parameterized by empirical observables such as branching angles, thickness ratios, and node degree. Naively, one might expect $`\mathcal{M}`$ to factorize as a product of independent local variables. However, only a subset of these combinations is realized by admissible coherent configurations.
-
-Define the realizability set
+be the effective projection. Network extraction is a separate map
 ``` math
-\mathcal{R} := \mathsf{M}\big(\Gamma(P(\mathcal{A}))\big) \subset \mathcal{M},
+\Gamma:\mathcal Y\longrightarrow\mathcal G,
 ```
-i.e. the set of local motifs that actually occur as shadows of admissible configurations.
-
-## Non-factorization theorem
-
-We now state the key structural result.
-
-<div class="theorem">
-
-**Theorem 4** (Hidden compatibility constraints). *The realizability set $`\mathcal{R}`$ is a proper subset of the naive product space of local observables. In particular, there exist nontrivial compatibility constraints among branching angles, thickness ratios, and junction geometry such that not all locally conceivable combinations are realizable by admissible configurations.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Suppose, for contradiction, that all combinations of local observables were realizable, so that $`\mathcal{R}`$ coincides with the full product space. Then local observables would define a global coordinate system on $`P(\mathcal{A})`$, and one could construct a measurable section $`S`$ selecting an admissible representative for each effective configuration based solely on local data.
-
-This would yield a global measurable right inverse of $`P`$ on $`P(\mathcal{A})`$, contradicting the reconstruction obstruction established above. Therefore $`\mathcal{R}`$ must be a strict subset of the naive product space, and hidden compatibility constraints necessarily exist. ◻
-
-</div>
-
-These constraints do not arise from optimization, energetic considerations, or biological regulation. They are purely structural, imposed by the absence of a global reconstruction map for the coherent projection.
-
-## Failure of local generative rules
-
-The non-factorization of $`\mathcal{R}`$ has immediate consequences for network modeling. Any local generative rule that treats junction observables as independent—such as rules based on local angle optimization, thickness balancing, or Markovian growth—will necessarily generate configurations outside $`\mathcal{R}`$.
+where an element of $`\mathcal G`$ contains a graph, an embedding when relevant, and edge attributes such as radius or conductivity. Finally, let
+``` math
+m:\mathcal G\longrightarrow\mathcal M
+```
+be the declared motif-measurement map. The complete observable map is
+``` math
+F=m\circ\Gamma\circ P:\mathcal A\longrightarrow\mathcal M.
+```
 
 <div class="definition">
 
-**Definition 5** (Factorized local generator class). Fix the feature space $`Z=\prod_{i=1}^m Z_i`$ from Theorem <a href="#thm:hidden-compatibility" data-reference-type="ref" data-reference="thm:hidden-compatibility">3</a>. A factorized local generator is any procedure whose one-step proposals are drawn from a product kernel
+**Definition 1** (Admissible motif image). The realizable motif support of the declared construction is
 ``` math
-K(z,dz')=\bigotimes_{i=1}^m K_i(z_i,dz_i')
+\mathcal R:=F(\mathcal A)\subseteq\mathcal M.
 ```
-(or, in the i.i.d. case, from a product measure $`\nu=\bigotimes_i \nu_i`$), i.e. updates treat local features as independent degrees of freedom at proposal time.
+If the source carries a probability measure $`\nu`$, its observable law is $`\mu=F_\ast\nu`$. The pair $`(\mathcal R,\mu)`$ contains more information than either object alone.
 
 </div>
 
-<div id="cor:no-factorized-generator" class="corollary">
+Every arrow in this definition has an owner. Changing the skeletonization algorithm changes $`\Gamma`$. Changing how a junction is measured changes $`m`$. Changing the coherent branch or projector changes $`P`$ and possibly $`\mathcal A`$. Those changes need not preserve $`\mathcal R`$.
 
-**Corollary 6** (No factorized local generator can reproduce admissible motifs). *Assume Theorem <a href="#thm:hidden-compatibility" data-reference-type="ref" data-reference="thm:hidden-compatibility">3</a> and let $`\mathcal{R}\subsetneq Z`$ be the realizability set. Let $`K`$ be any factorized local generator whose support is full on each coordinate (i.e. each $`K_i`$ assigns positive mass to nontrivial neighborhoods in $`Z_i`$). Then $`K`$ assigns positive mass to $`Z\setminus \mathcal{R}`$ and therefore cannot generate samples supported entirely on $`\mathcal{R}`$ without additional nonlocal constraints or rejection.*
+## Motif coordinates
 
-</div>
-
-<div class="proof">
-
-*Proof.* Because $`\mathcal{R}\subsetneq Z`$, the complement $`Z\setminus \mathcal{R}`$ contains a measurable set of positive product measure. Since $`K`$ factorizes and has full coordinate support, it assigns positive mass to any product neighborhood and therefore to some subset of $`Z\setminus \mathcal{R}`$. Hence it produces unrealizable feature combinations with nonzero probability. ◻
-
-</div>
-
-<div class="proof">
-
-*Proof.* A local generative rule implicitly assumes that local observables can be freely specified and combined. This corresponds to sampling from the full product space of local variables. Since $`\mathcal{R}`$ is a proper subset of that space, any such model necessarily produces unrealizable motifs with nonzero probability. Hence no purely local rule can generate exactly $`\mathcal{R}`$. ◻
-
-</div>
-
-This explains the empirical failure of Steiner-tree rules, volume-minimization heuristics, and other local optimization schemes. Their failure is not due to incorrect objective functions, but to the structural impossibility of capturing global coherence constraints using only local degrees of freedom.
-
-## Hidden correlations as shadow non-factorization
-
-From the effective viewpoint, the compatibility constraints encoded in $`\mathcal{R}`$ appear as hidden correlations among local observables. Branching angles, thickness ratios, and junction types exhibit statistical dependence even in the absence of direct local interaction rules.
-
-Within MTT, these correlations have a clear origin: they reflect the non-factorization of the shadow description induced by projection. Multiple local observables share common preimages in the coherent sector, and therefore cannot vary independently. This mechanism is identical in structure to the emergence of entanglement in quantum systems, though here it operates in a purely classical and geometric setting.
-
-## Implications for boundary phenomena
-
-The existence of hidden compatibility constraints sets the stage for boundary effects. As the admissibility margin $`C`$ decreases, the realizability set $`\mathcal{R}`$ contracts further, eliminating entire classes of local motifs. In the next sections we show that near the admissibility boundary, only a narrow subset of local deformations remains allowed. These deformations correspond precisely to sprout-like motifs observed empirically.
-
-Thus, hidden correlations are not merely a statistical curiosity. They are the structural precursor to boundary stabilization phenomena that govern network morphology in constrained regimes.
-
-# Dominant-Channel Distortion and Projector Strain
-
-We now identify the precise mechanism by which local geometric deformations consume coherence capacity. The key result of this section is that distortion of a dominant transport channel produces a coercive increase in projector strain and therefore a non-perturbative loss of admissibility. This establishes why certain local deformations are forbidden near the admissibility boundary, independently of any optimization principle.
-
-## Dominant channels in balanced junctions
-
-We restrict attention to the balanced-dominant regime defined in Section 3, where two branches at a degree–3 junction carry comparable thickness and therefore form a single dominant transport channel. In this regime, the effective coherent dynamics preferentially propagate along the combined direction of the two main branches.
-
-Let $`m \in \mathcal{M}`$ be a junction motif with branch tangents $`t_1,t_2,t_3`$ and thicknesses $`w_1,w_2,w_3`$, ordered such that $`w_1 \approx w_2 \gg w_3`$. The dominant channel is defined by the pair $`(t_1,t_2)`$, and its geometric integrity is characterized by the angle
+For a degree-three embedded junction, a convenient local coordinate chart is
 ``` math
-\beta(m) := \angle(t_1,t_2).
+u=(\beta,q_\parallel,q_\perp,\eta)\in\mathbb R^4.
 ```
-When $`\beta(m)=0`$, the dominant channel is straight; when $`\beta(m)>0`$, the dominant channel is distorted.
-
-## Distortion functional
-
-To quantify the geometric distortion of the dominant channel, we introduce a distortion functional
+Here $`\beta`$ measures bending of a declared dominant channel, $`q_\parallel`$ and $`q_\perp`$ are longitudinal and transverse components of a candidate third branch, and $`\eta`$ collects any additional measured attribute such as taper or imbalance. Define
 ``` math
-D : [0,\pi] \to \mathbb{R}_{\ge 0},
+\rho=\sqrt{q_\parallel^2+q_\perp^2}.
 ```
-defined by
+When $`\rho>0`$, the branch angle $`\phi`$ relative to the dominant channel satisfies
 ``` math
-D(\beta) := 1 - \cos\beta.
+\cos\phi=\frac{q_\parallel}{\rho}.
 ```
+Thus $`q_\parallel=0`$ means an orthogonal branch in this local chart.
 
-This choice has several advantages. It is smooth, nonnegative, vanishes if and only if $`\beta=0`$, and for small angles satisfies
-``` math
-D(\beta) \sim \tfrac{1}{2}\beta^2.
-```
-Any equivalent coercive function of $`\beta`$ would suffice; the specific form of $`D`$ is not essential for the structural arguments that follow.
+These variables are measurements after $`\Gamma`$ and $`m`$. They do not create a graph edge. A branch must already have been detected by the network-extraction rule before its angle and thickness can be measured.
 
-## Projector strain induced by dominant-channel bending
+# What failure of reconstruction does not prove
 
-We now connect dominant-channel distortion to admissibility loss. Recall that the coherent projector $`\Pi_{\mathrm{coh}}`$ is defined by Riesz–spectral calculus from a family of self-adjoint operators with a uniform spectral gap on admissible configurations. Admissibility requires not only the existence of this gap, but also boundedness and regularity of the projector under admissible perturbations.
+Projection and reconstruction are easily confused. A section of $`P:\mathcal A\to P(\mathcal A)`$ is a map $`s`$ with $`P\circ s=\mathrm{id}`$. Its existence depends on the regularity category: set-theoretic, measurable, continuous, smooth, or connection-preserving sections are different claims. Version 1 did not keep those categories separate.
 
-Local deformations of a network motif induce localized perturbations of the underlying operators that define $`\Pi_{\mathrm{coh}}`$. In the balanced-dominant regime, bending the dominant channel produces a perturbation that couples directly into the leading coherent modes. As a result, the norm and derivatives of the projector increase in a manner controlled by the distortion $`D(\beta)`$.
+<div class="proposition">
 
-<div id="lem:distortion-projector" class="lemma">
-
-**Lemma 7** (Dominant-channel distortion forces projector strain). *Let $`x\in\mathcal{A}`$ be admissible and let $`x\mapsto x'`$ be a local deformation supported in a bounded-geometry neighborhood of a balanced-dominant junction motif. Let $`\beta=\beta(\mathsf{M}(x'))`$ be the dominant-channel bend angle and $`\rho=\rho(\mathsf{M}(x'))`$ the thin-branch ratio.*
-
-*Assume the coherent projector $`\Pi_{\mathrm{coh}}(x)`$ is defined by Riesz–spectral calculus from a self-adjoint Laplace-type operator family $`A(x)`$ with a uniform spectral gap on $`\mathcal{A}`$. Define the projector strain functional
-``` math
-M_\Pi(x)
-:=
-\sup_{u\in U(v)}
-\big(
-\|\nabla_u \Pi_{\mathrm{coh}}(x)\|_{H^1\to H^{-1}}
-+
-\|\partial_t \Pi_{\mathrm{coh}}(x)\|_{H^1\to H^{-1}}
-\big).
-```*
-
-*Then there exist admissible-slab constants $`c_1,c_2>0`$ such that
-``` math
-M_\Pi(x')
-\;\ge\;
-M_\Pi(x)
-\;+\;
-c_1\,D(\beta)
-\;-\;
-c_2\,\rho^2,
-\qquad
-D(\beta)=1-\cos\beta.
-```*
+**Proposition 2** (No section does not determine image geometry). *There is a continuous surjection onto a full product space that has no continuous global section.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* We decompose the proof into three steps.
-
-#### Step 1: Coercive operator perturbation from dominant-channel bending.
-
-On the motif neighborhood, the dominant-channel operator $`A_\parallel(x)`$ admits a local Laplace-type representation along an arclength coordinate $`s`$ aligned with the dominant transport direction. A bend by angle $`\beta`$ changes the principal symbol of the dominant-channel transport operator. By Lemma <a href="#lem:bend-operator" data-reference-type="ref" data-reference="lem:bend-operator">17</a> (Appendix <a href="#app:bend-coercive" data-reference-type="ref" data-reference="app:bend-coercive">18.4</a>), this induces a coercive lower bound on the operator perturbation:
+*Proof.* Consider
 ``` math
-\|A_\parallel(x')-A_\parallel(x)\|_{H^1\to H^{-1}}
-\;\ge\;
-\kappa\,D(\beta),
+p:S^1\times[-1,1]\longrightarrow S^1\times[-1,1],
+  \qquad p(z,t)=(z^2,t).
 ```
-with $`\kappa>0`$ depending only on bounded-geometry constants of the admissible slab.
-
-#### Step 2: Thin-branch contribution is quadratic.
-
-In the balanced-dominant regime, the local operator admits a block decomposition
-``` math
-A(x')=
-\begin{pmatrix}
-A_\parallel(x') & \rho B \\
-\rho B^* & A_\perp(x')
-\end{pmatrix},
-```
-with $`A_\perp(x')\ge\lambda_\perp I`$ uniformly and $`\|B\|`$ uniformly bounded. By the Schur-complement analysis of Section 8, the contribution of the thin branch to the dominant-sector resolvent, and hence to the coherent projector, enters at order $`\rho^2`$.
-
-#### Step 3: Riesz calculus and projector strain.
-
-Using the resolvent identity
-``` math
-(z-A')^{-1}-(z-A)^{-1}
-=
-(z-A')^{-1}(A-A')(z-A)^{-1},
-```
-together with uniform resolvent bounds on the Riesz contour, the operator perturbation from Steps 1–2 yields a corresponding bound on $`\nabla_u\Pi_{\mathrm{coh}}`$ and $`\partial_t\Pi_{\mathrm{coh}}`$. Combining the coercive $`D(\beta)`$ contribution with the $`O(\rho^2)`$ Schur-complement term yields the stated inequality. ◻
+It is onto, so its image is the complete product $`S^1\times[-1,1]`$. If a continuous section existed, the induced maps on the fundamental group of the circle factor would satisfy $`p_\ast s_\ast=\mathrm{id}_{\mathbb Z}`$. But $`p_\ast`$ is multiplication by $`2`$, so this would require an integer $`k`$ with $`2k=1`$, which is impossible. ◻
 
 </div>
 
-The proof, given in Appendix C, uses resolvent bounds for Riesz projectors and a block-operator decomposition of junction modes. The key point is that dominant-channel bending couples linearly into the coherent sector, while the thin branch couples only quadratically when the dominant channel remains straight.
+The example has two consequences. First, lack of a continuous section does not imply that the image is a proper subset of the target. Second, it does not imply coupled coordinate constraints. A reconstruction obstruction describes the fibers or topology of a map; image geometry must be determined separately.
 
-## Capacity loss inequality
-
-Because coherence capacity includes the inverse of the projector strain as a control parameter, the projector strain bound immediately yields a capacity loss inequality.
-
-<div id="cor:capacity-loss" class="corollary">
-
-**Corollary 8** (Capacity loss from dominant-channel distortion). *There exist constants $`a>0`$ and $`b\ge0`$ such that for any admissible $`x\in\mathcal{A}`$ and any local deformation $`x\mapsto x'`$ supported near a balanced-dominant junction,
-``` math
-C(x')
-\;\le\;
-C(x)
-\;-\;
-a\,D\!\big(\beta(\mathsf{M}(x'))\big)
-\;+\;
-b\,\rho(\mathsf{M}(x'))^2.
-```*
-
-</div>
-
-<div class="proof">
-
-*Proof.* The coherence capacity $`C`$ includes $`M_\Pi^{-1}`$ as one of its defining components. An increase in projector strain therefore decreases capacity. Applying Lemma <a href="#lem:distortion-projector" data-reference-type="ref" data-reference="lem:distortion-projector">7</a> and absorbing constants yields the stated inequality. ◻
-
-</div>
-
-This inequality is one-sided and coercive in the distortion $`D(\beta)`$. In particular, when $`\rho`$ is small, any nonzero dominant-channel bend produces a finite decrease in capacity that cannot be compensated by arbitrarily small deformation amplitude.
-
-## Interpretation
-
-The capacity loss inequality has a clear structural meaning. Near the admissibility boundary, coherence capacity is scarce. Bending the dominant transport channel consumes this capacity directly and irreversibly, while coupling to a sufficiently thin branch produces only a perturbative effect. As a result, non-sprout deformations become forbidden in low-capacity regimes, while sprout-compatible deformations remain admissible.
-
-This mechanism is entirely independent of optimization or energetic considerations. It arises from the operator-theoretic structure of the coherent projector and the geometry of the dominant channel. In the next section we use this result to prove that sprout-like motifs are the only admissibility-preserving local deformations near the boundary of admissibility.
-
-# Sprouts as Boundary-Stabilizing Deformations
-
-We now prove the central result of this work: in the balanced-dominant regime, and sufficiently close to the boundary of admissibility, sprout-like motifs are the *only* local deformations that preserve coherence. All other local branching geometries necessarily exhaust coherence capacity and therefore become inadmissible.
-
-## Sprout-compatible and non-sprout deformations
-
-Fix an admissible configuration $`x \in \mathcal{A}`$ and a balanced-dominant junction motif
-``` math
-m = \mathsf{M}(x) \in \mathcal{M},
-```
-with $`\delta(m)\le \delta_0`$ for a fixed tolerance $`\delta_0`$. Recall that the dominant channel is defined by the pair of branches $`(t_1,t_2)`$ with comparable thickness.
-
-We classify local motif deformations as follows:
-
-Sprout-compatible deformations.  
-Local deformations $`x \mapsto x'`$ such that the dominant channel remains straight,
-``` math
-D\!\big(\beta(\mathsf{M}(x'))\big) = 0,
-```
-and the third branch emerges as a thin auxiliary branch (i.e. $`\rho(\mathsf{M}(x'))`$ remains small).
-
-Non-sprout deformations.  
-Local deformations $`x \mapsto x'`$ for which the dominant channel is bent by a nonzero amount,
-``` math
-D\!\big(\beta(\mathsf{M}(x'))\big) \ge d_0,
-```
-for some fixed distortion threshold $`d_0>0`$, regardless of the value of $`\rho`$.
-
-This classification is purely geometric and refers only to observable motif data.
-
-## Statement of the sprout stabilization theorem
-
-<div id="thm:sprout" class="theorem">
-
-**Theorem 9** (Sprouts stabilize admissibility near the boundary). *There exists a thickness threshold $`\rho_{\mathrm{th}}>0`$ such that the following holds.*
-
-*Let $`\{x_n\}\subset \mathcal{A}`$ be any sequence of admissible configurations approaching the boundary,
-``` math
-C(x_n)\downarrow 0,
-```
-and suppose the associated motifs satisfy the balanced-dominant condition $`\delta(\mathsf{M}(x_n))\to 0`$.*
-
-*Then there exists $`n_0`$ such that for all $`n\ge n_0`$:*
-
-1.  ***Necessity.** For any non-sprout deformation $`x_n \mapsto x_n'`$ with
-    ``` math
-    D\!\big(\beta(\mathsf{M}(x_n'))\big) \ge d_0
-    \quad\text{and}\quad
-    \rho(\mathsf{M}(x_n')) \le \rho_{\mathrm{th}},
-    ```
-    the deformed configuration is inadmissible:
-    ``` math
-    x_n' \notin \mathcal{A}.
-    ```*
-
-2.  ***Existence.** There exist sprout-compatible deformations $`x_n \mapsto \tilde x_n`$ with
-    ``` math
-    D\!\big(\beta(\mathsf{M}(\tilde x_n))\big) = 0
-    \quad\text{and}\quad
-    \rho(\mathsf{M}(\tilde x_n)) \le \rho_{\mathrm{th}},
-    ```
-    such that
-    ``` math
-    \tilde x_n \in \mathcal{A}.
-    ```*
-
-*In particular, near the admissibility boundary, sprout-like motifs are the only locally admissible branching geometries.*
-
-</div>
-
-## Proof
-
-The proof relies only on the capacity loss inequality derived in Section 6 and on the perturbative character of thin branches.
-
-#### Necessity.
-
-Let $`x_n`$ be as stated and consider any non-sprout deformation $`x_n \mapsto x_n'`$ with $`D(\beta(\mathsf{M}(x_n'))) \ge d_0`$ and $`\rho(\mathsf{M}(x_n')) \le \rho_{\mathrm{th}}`$. By the capacity loss inequality,
-``` math
-C(x_n') \;\le\; C(x_n) \;-\; a\,D\!\big(\beta(\mathsf{M}(x_n'))\big) \;+\; b\,\rho(\mathsf{M}(x_n'))^2.
-```
-Choosing $`\rho_{\mathrm{th}}`$ so that $`b\rho_{\mathrm{th}}^2 < \tfrac{a}{2}d_0`$, we obtain
-``` math
-C(x_n') \;\le\; C(x_n) \;-\; \tfrac{a}{2}d_0.
-```
-Since $`C(x_n)\to 0`$, there exists $`n_0`$ such that for all $`n\ge n_0`$,
-``` math
-C(x_n) < \tfrac{a}{2}d_0,
-```
-which implies $`C(x_n') \le 0`$ and hence $`x_n'\notin \mathcal{A}`$. This proves necessity.
-
-#### Existence.
-
-Now consider sprout-compatible deformations $`x_n \mapsto \tilde x_n`$ with $`D(\beta(\mathsf{M}(\tilde x_n)))=0`$ and $`\rho(\mathsf{M}(\tilde x_n))\le \rho_{\mathrm{th}}`$. By the two-sided capacity control established in Section 6,
-``` math
-C(\tilde x_n) \;\ge\; C(x_n) \;-\; k_1\rho(\mathsf{M}(\tilde x_n))^2 \;-\; k_2\varepsilon,
-```
-where $`\varepsilon`$ is the amplitude of the local deformation. Choosing $`\rho_{\mathrm{th}}`$ sufficiently small and $`\varepsilon`$ sufficiently small ensures $`C(\tilde x_n)>0`$, and therefore $`\tilde x_n\in\mathcal{A}`$. This proves existence.
-
-## Interpretation
-
-Theorem <a href="#thm:sprout" data-reference-type="ref" data-reference="thm:sprout">9</a> shows that sprouting is not an optimization outcome or a special biological rule. It is a structural consequence of projection-limited coherent description. Near the admissibility boundary, coherence capacity is scarce. Bending the dominant transport channel consumes this capacity coercively and therefore becomes forbidden, while adding a sufficiently thin auxiliary branch preserves coherence.
-
-Sprouts are thus boundary-stabilizing deformations: they are the only local modifications that maintain admissibility when effective description is close to failure. This explains both the ubiquity of sprouting across disparate systems and its restriction to specific geometric regimes.
-
-# Thin-Branch Perturbativity via Schur Complement
-
-In this section we show that coupling to a thin auxiliary branch affects admissibility only at second order. This result provides the operator-theoretic justification for the quadratic $`\rho^2`$ term appearing in the capacity bounds and is essential for the quantitative sprout threshold derived in the following section.
-
-## Local operator decomposition at a junction
-
-Consider an admissible configuration $`x \in \mathcal{A}`$ and a balanced-dominant junction motif
-``` math
-m = \mathsf{M}(x),
-```
-with $`w_1 \approx w_2 \gg w_3`$. On a bounded-geometry neighborhood $`U(v)`$ of the junction, the coherent projector $`\Pi_{\mathrm{coh}}`$ is defined via Riesz–spectral calculus from a self-adjoint operator $`A(x)`$ (e.g. a joint vertical Laplacian or equivalent operator used in the MTT spine).
-
-We decompose the local Hilbert space into dominant and auxiliary sectors,
-``` math
-\mathcal{H} = \mathcal{H}_{\parallel} \oplus \mathcal{H}_{\perp},
-```
-where:
-
-- $`\mathcal{H}_{\parallel}`$ contains modes propagating along the dominant channel formed by branches $`1`$ and $`2`$,
-
-- $`\mathcal{H}_{\perp}`$ contains modes localized on or coupling through the thin third branch.
-
-In this decomposition, the operator $`A(x)`$ admits a block representation
-``` math
-A =
-\begin{pmatrix}
-A_{\parallel} & \rho B \\
-\rho B^{*} & A_{\perp}
-\end{pmatrix},
-```
-where $`B`$ is a bounded operator determined by local geometry, and the coupling strength is proportional to the thin-branch ratio $`\rho`$.
-
-## Dominant-channel straightness and spectral separation
-
-We assume sprout-compatible geometry, i.e. the dominant channel is straight to leading order:
-``` math
-D\!\big(\beta(\mathsf{M}(x))\big)=0.
-```
-In this case, the dominant-sector operator $`A_{\parallel}`$ inherits the spectral gap controlling coherence, while the auxiliary operator $`A_{\perp}`$ is spectrally separated from the coherent island by a strictly positive gap:
-``` math
-A_{\perp} \ge \lambda_{\perp} I,
-\qquad \lambda_{\perp} > 0,
-```
-uniformly on the admissible slab.
-
-This separation expresses the fact that the thin branch does not support low-lying coherent modes comparable to those of the dominant channel.
-
-## Schur complement and effective dominant operator
-
-For $`z`$ in the resolvent set near the coherent spectral island (e.g. on the Riesz contour $`\Gamma`$), the resolvent $`(z-A)^{-1}`$ exists and the effective operator acting on $`\mathcal{H}_{\parallel}`$ is governed by the Schur complement
-``` math
-S_{\parallel}(z)
-=
-z - A_{\parallel}
--
-\rho^2 B (z - A_{\perp})^{-1} B^{*}.
-```
-
-The correction term is explicitly quadratic in $`\rho`$. This reflects the fact that coupling to the thin branch requires propagation into $`\mathcal{H}_{\perp}`$ and back, and therefore enters at second order.
-
-## Second-order control of resolvents and projectors
-
-<div class="lemma">
-
-**Lemma 10** (Second-order thin-branch perturbativity). *There exist admissible-slab constants $`K,K'>0`$ such that for all $`z \in \Gamma`$,
-``` math
-\|S_{\parallel}(z) - (z - A_{\parallel})\|
-\le
-K \rho^2,
-```
-and
-``` math
-\|(z-A)^{-1} - (z-A_{\parallel} \oplus A_{\perp})^{-1}\|
-\le
-K' \rho^2.
-```*
-
-</div>
-
-<div class="proof">
-
-*Proof.* For $`z \in \Gamma`$, the resolvent $`(z-A_{\perp})^{-1}`$ is uniformly bounded by spectral separation. Therefore
-``` math
-\|\rho^2 B (z - A_{\perp})^{-1} B^{*}\|
-\le
-\rho^2 \|B\|^2 \|(z-A_{\perp})^{-1}\|
-\le
-K \rho^2,
-```
-which yields the first bound. The second follows from standard block-resolvent identities and the bounded-geometry assumptions on the slab. ◻
-
-</div>
-
-Integrating the resolvent bounds over the Riesz contour yields an analogous estimate for the coherent projector.
+The measurable case requires its own theorem and hypotheses. One must not take failure of a continuous section and silently promote it to failure of a measurable section. Standard measurable-selection results make such a promotion particularly unsafe .
 
 <div class="corollary">
 
-**Corollary 11** (Quadratic control of projector variation). *Let $`\Pi(x)`$ denote the coherent projector associated with $`A(x)`$ and $`\Pi_0`$ the projector associated with the decoupled operator $`A_{\parallel} \oplus A_{\perp}`$. Then
-``` math
-\|\Pi(x) - \Pi_0\| \le \tilde K \rho^2
-```
-for some constant $`\tilde K>0`$ depending only on admissible-slab bounds.*
+**Corollary 3** (Correct use of no-section results). *A no-section theorem can falsify a claim that explicitly requires a section of the same regularity on the same domain. By itself it cannot prove that $`\mathcal R`$ is proper, nonfactorizing, low-dimensional, graph-like, or sprout-selecting.*
 
 </div>
 
-## Implications for capacity
+# Direct tests for hidden compatibility
 
-Because the coherence capacity $`C`$ includes control of projector norms and their derivatives, the quadratic bound on $`\|\Pi(x)-\Pi_0\|`$ implies that thin-branch effects enter capacity estimates at order $`\rho^2`$ when the dominant channel remains straight. There is no linear contribution in $`\rho`$ in this regime.
+## Support factorization
 
-This result completes the operator-theoretic justification for the capacity inequalities used in Section 7. It explains why thin branches are admissible as boundary-stabilizing deformations and why the sprout threshold depends quadratically on the thin-branch ratio.
-
-## Summary
-
-Coupling to a thin auxiliary branch affects coherent projection only through second-order Schur-complement corrections, provided the dominant channel is straight. This perturbative structure is independent of optimization or variational assumptions and follows directly from spectral separation and bounded geometry. In the next section we use this result to derive a quantitative, capacity-dependent sprout threshold and its statistical consequences.
-
-# Capacity-Dependent Sprout Threshold
-
-We now derive a quantitative bound on sprouting that follows directly from admissibility. The result identifies a capacity-dependent threshold for the thin-branch ratio and shows that this threshold vanishes as the admissibility boundary is approached.
-
-## Definition of the sprout threshold
-
-Fix an admissible configuration $`x\in\mathcal{A}`$ and consider balanced-dominant junction motifs extracted from $`\Gamma(P(x))`$. Recall that sprout-compatible deformations are those for which the dominant channel remains straight,
+Suppose the motif chart is a product
 ``` math
-D\!\big(\beta(\mathsf{M}(x'))\big)=0,
+\mathcal M=M_1\times\cdots\times M_k
 ```
-and the third branch has thin-branch ratio $`\rho(\mathsf{M}(x'))=\rho`$.
+with coordinate projections $`\pi_i`$. There are at least two notions of factorization.
 
 <div class="definition">
 
-**Definition 12** (Local sprout threshold). For $`x\in\mathcal{A}`$, define the sprout threshold $`\rho_{\mathrm{th}}(x)`$ as the supremum of $`\rho\ge 0`$ such that there exists a sprout-compatible local deformation $`x\mapsto x'`$ with thin-branch ratio $`\rho`$ and $`x'\in\mathcal{A}`$:
+**Definition 4** (Support factorization). A subset $`\mathcal R\subseteq\mathcal M`$ factorizes by coordinates if
 ``` math
-\rho_{\mathrm{th}}(x)
-:=
-\sup\Big\{\rho\ge 0:\ \exists\,x'\in\mathcal{A}\ \text{with}\ D(\beta(\mathsf{M}(x')))=0,\ \rho(\mathsf{M}(x'))=\rho\Big\}.
+\mathcal R=\prod_{i=1}^k\pi_i(\mathcal R).
 ```
+Failure of this equality means that some individually realizable coordinate values cannot be recombined into a jointly realizable motif.
 
 </div>
 
-This definition is purely structural and does not rely on optimization or growth dynamics. It captures the largest admissible side-branch that can be added locally without violating coherence.
+<div class="definition">
 
-## Upper bound from capacity loss
-
-From the two-sided capacity control for sprout-compatible perturbations (Section 6), there exist constants $`k_1,k_2>0`$ such that for sufficiently small deformation amplitude $`\varepsilon`$,
+**Definition 5** (Probabilistic factorization). A probability law $`\mu`$ on $`\mathcal M`$ factorizes if
 ``` math
-C(x') \;\ge\; C(x) - k_1\rho^2 - k_2\varepsilon.
+\mu=\mu_1\otimes\cdots\otimes\mu_k
 ```
-Admissibility requires $`C(x')>0`$. Letting $`\varepsilon\downarrow 0`$ yields the necessary condition
-``` math
-\rho^2 < \frac{C(x)}{k_1}.
-```
-Therefore,
-``` math
-\rho_{\mathrm{th}}(x) \;\le\; \sqrt{\frac{C(x)}{k_1}}.
-```
-
-## Lower bound from admissible construction
-
-Conversely, fix any $`\rho`$ satisfying
-``` math
-\rho^2 \le \frac{C(x)}{2k_1}.
-```
-Choose a sprout-compatible deformation with thin-branch ratio $`\rho`$ and sufficiently small amplitude $`\varepsilon`$ such that $`k_2\varepsilon \le \tfrac{1}{2}C(x)`$. Then
-``` math
-C(x') \;\ge\; C(x) - k_1\rho^2 - k_2\varepsilon \;\ge\; 0,
-```
-with strict inequality for appropriate choices. Hence $`x'\in\mathcal{A}`$ and such a deformation is admissible. This establishes the existence of admissible sprouts up to a constant multiple of $`\sqrt{C(x)}`$.
-
-## Square-root scaling law
-
-Combining the upper and lower bounds yields the main quantitative result.
-
-<div id="thm:threshold" class="theorem">
-
-**Theorem 13** (Square-root sprout threshold). *There exist constants $`c_-,c_+>0`$, depending only on admissible-slab bounds, such that for all $`x\in\mathcal{A}`$ sufficiently close to the admissibility boundary,
-``` math
-c_-\,\sqrt{C(x)} \;\le\; \rho_{\mathrm{th}}(x) \;\le\; c_+\,\sqrt{C(x)}.
-```
-In particular, $`\rho_{\mathrm{th}}(x)\to 0`$ as $`x\to\partial\mathcal{A}`$.*
+for its coordinate marginals. This is a statement about a law, not only its support.
 
 </div>
 
-## Interpretation
+<div class="proposition">
 
-Theorem <a href="#thm:threshold" data-reference-type="ref" data-reference="thm:threshold">13</a> shows that sprouting is controlled by proximity to the admissibility boundary. As coherence capacity decreases, the maximum admissible thickness of a side branch shrinks as the square root of the remaining capacity. Near $`\partial\mathcal{A}`$, only very thin sprouts can be added without destroying coherence, while thicker side branches are forbidden.
-
-This scaling is structural. It does not depend on energetic optimality, surface minimization, or any domain-specific growth rule. Instead, it reflects the quadratic perturbativity of thin branches and the coercive capacity loss associated with dominant-channel distortion.
-
-## Consequences
-
-Several immediate consequences follow:
-
-- Sprout thresholds are not universal constants; they depend on local capacity and therefore vary across a network.
-
-- Boundary-layer regions, where $`C`$ is small, necessarily exhibit smaller sprout thresholds and higher sprout prevalence.
-
-- Any empirical model predicting a fixed sprouting threshold independent of context is incompatible with admissibility-controlled description.
-
-In the next section we translate this local threshold law into statistical predictions for network ensembles and show how it leads to concentration of sprout statistics in boundary-layer strata.
-
-# Statistical Consequences and Concentration
-
-The capacity-dependent sprout threshold derived in the previous section has direct and testable implications for network ensembles. In this section we translate the local admissibility constraint into statistical predictions for distributions of junction motifs and show how boundary-layer effects manifest as concentration phenomena in empirical data.
-
-## Ensemble measures and motif sampling
-
-Let $`\mathbb{P}`$ denote a probability measure on the admissible domain $`\mathcal{A}`$. This measure may arise from sampling along a dynamical trajectory, from aggregating motifs across spatial regions of a single network, or from pooling data across multiple specimens or realizations. No assumption of equilibrium or stationarity is required.
-
-Each configuration $`x\in\mathcal{A}`$ induces a multiset of junction motifs through the composition
-``` math
-x \xrightarrow{P} y \xrightarrow{\Gamma} n \xrightarrow{\mathsf{M}} \mathcal{M}.
-```
-Sampling motifs according to $`\mathbb{P}`$ therefore induces a probability measure on the motif space $`\mathcal{M}`$, which we denote by the same symbol for simplicity.
-
-Throughout this section we restrict attention to the balanced-dominant regime
-``` math
-E_\delta := \{m\in\mathcal{M} : \delta(m)\le \delta_0\},
-```
-as defined in Section 3.
-
-## Boundary-layer stratification
-
-Although coherence capacity $`C`$ is defined upstairs on $`\mathcal{X}`$, it admits observable proxies at the network level, as discussed in Section 11. For the present argument, we require only that there exists a measurable function
-``` math
-P_{\mathrm{cap}} : \mathcal{M} \to \mathbb{R}_{\ge 0},
-```
-which is monotone with decreasing capacity. Examples include local curvature, spatial crowding, or thickness gradients.
-
-For any $`\epsilon>0`$, define the boundary-layer event
-``` math
-B_\epsilon := \{ m\in\mathcal{M} : C(m)\le \epsilon \},
-```
-or, in practice, an equivalent proxy-based event such as $`\{P_{\mathrm{cap}} \ge q\}`$ for a high quantile $`q`$. We assume $`\mathbb{P}(B_\epsilon\cap E_\delta)>0`$ for the values of $`\epsilon`$ considered.
-
-## Support restriction of thin-branch ratios
-
-The capacity-dependent sprout threshold implies a hard restriction on the support of the thin-branch ratio $`\rho`$ within boundary layers.
-
-<div id="thm:support" class="theorem">
-
-**Theorem 14** (Support contraction of $`\rho`$). *There exists a constant $`c_+>0`$ such that for all sufficiently small $`\epsilon>0`$,
-``` math
-\mathbb{P}\big(\rho > c_+\sqrt{\epsilon} \,\big|\, B_\epsilon \cap E_\delta\big)=0.
-```
-Equivalently, conditioned on $`B_\epsilon\cap E_\delta`$, the random variable $`\rho`$ has support contained in $`[0,c_+\sqrt{\epsilon}]`$.*
+**Proposition 6** (Recombination certificate). *If $`u,v\in\mathcal R`$ and a point $`w`$ obtained by taking at least one coordinate from $`u`$ and another from $`v`$ is not in $`\mathcal R`$, then $`\mathcal R`$ does not factorize.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* On $`B_\epsilon`$, capacity satisfies $`C\le \epsilon`$. By Theorem <a href="#thm:threshold" data-reference-type="ref" data-reference="thm:threshold">13</a>, any admissible sprout-compatible motif must satisfy $`\rho\le \rho_{\mathrm{th}}(x)\le c_+\sqrt{C}\le c_+\sqrt{\epsilon}`$. Since inadmissible motifs do not occur in $`\mathcal{R}`$, the conditional probability of $`\rho>c_+\sqrt{\epsilon}`$ vanishes. ◻
+*Proof.* Every coordinate of $`w`$ belongs to the corresponding projection $`\pi_i(\mathcal R)`$. Hence $`w`$ belongs to $`\prod_i\pi_i(\mathcal R)`$. Since $`w\notin\mathcal R`$, equality with that product is impossible. ◻
 
 </div>
 
-This result shows that boundary-layer conditioning produces a sharp cutoff in the distribution of thin-branch ratios.
+This gives a finite falsification certificate when membership in $`\mathcal R`$ can be checked. It also identifies what must be computed: two accepted motifs and one rejected recombination from the same frozen source and extraction rule.
 
-## Concentration of sprout motifs
+## Constraint and graph forms
 
-We now show that sprout-like motifs dominate statistically in boundary layers.
+An explicit constraint can describe the image locally. Let $`h:\mathcal M\to\mathbb R^r`$ be continuously differentiable and suppose that the declared image is contained in $`h^{-1}(0)`$.
 
-Let $`S:\mathcal{M}\to\{0,1\}`$ be the indicator function of sprout motifs, with $`S(m)=1`$ if $`m`$ is sprout-like and $`S(m)=0`$ otherwise.
+<div class="proposition">
 
-<div id="thm:dominance" class="theorem">
+**Proposition 7** (Regular local image constraint). *If $`0`$ is a regular value of $`h`$, then $`h^{-1}(0)`$ is a submanifold of codimension $`r`$. If $`\mathcal R`$ contains a relatively open subset of this level set, then the stated equations give its local compatibility geometry.*
 
-**Theorem 15** (Boundary-layer dominance of sprouts). *For any fixed $`\eta>0`$,
+</div>
+
+<div class="proof">
+
+*Proof.* This is the regular-value theorem . ◻
+
+</div>
+
+Codimension alone does not identify which variables are coupled. A direct and useful sufficient condition is a graph relation.
+
+<div class="proposition">
+
+**Proposition 8** (Graph-of-a-map nonfactorization). *Let $`U\subseteq M_1`$ and let $`f:U\to M_2`$ be nonconstant. Then
 ``` math
-\lim_{\epsilon\downarrow 0}
-\mathbb{P}\big(S=1 \,\big|\, B_\epsilon \cap E_\delta \cap \{\rho\le \eta\sqrt{\epsilon}\}\big)=1.
+\mathcal R_f=\{(x,f(x)):x\in U\}
+```
+does not factorize as $`\pi_1(\mathcal R_f)\times\pi_2(\mathcal R_f)`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Choose $`x_1,x_2`$ with $`f(x_1)\neq f(x_2)`$. Both $`(x_1,f(x_1))`$ and $`(x_2,f(x_2))`$ lie in $`\mathcal R_f`$, while the recombination $`(x_1,f(x_2))`$ does not. Apply the recombination certificate. ◻
+
+</div>
+
+In an MTT application, $`h`$ or $`f`$ must come from a selected source calculation, a certified reduced equation, or a declared phenomenological model. Writing the symbol $`\mathcal R`$ does not establish any constraint.
+
+# Correlation constraints are not graph edges
+
+Three different uses of the word “network” must be separated.
+
+1.  A *physical or geometric graph* has vertices and edges extracted by $`\Gamma`$ from an image, flow field, point cloud, or other effective state.
+
+2.  A *motif support* is a set $`\mathcal R\subseteq\mathcal M`$ of allowed measurements.
+
+3.  A *statistical graph* encodes conditional independences of a probability law.
+
+None determines the others without additional assumptions. In particular, a correlated pair of motif coordinates is not a new physical edge. Conversely, two physical edges can carry independent measured attributes. Graphical-model edges require a specified law and a Markov convention .
+
+<div class="proposition">
+
+**Proposition 9** (Support does not determine dependence). *The square $`[-1,1]^2`$ supports both an independent distribution and a correlated distribution with a strictly positive density everywhere.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The uniform density $`f_0(x,y)=1/4`$ is independent. For $`0<|\epsilon|<1`$, define
+``` math
+f_\epsilon(x,y)=\frac14(1+\epsilon xy).
+```
+It is positive and normalized on the same square. Its marginals are uniform, but
+``` math
+\mathbb E_\epsilon[XY]=\frac{\epsilon}{9}\neq0.
+```
+Thus identical full support is compatible with different dependence. ◻
+
+</div>
+
+<div class="proposition">
+
+**Proposition 10** (Dependence does not determine a physical graph). *Fix any nonproduct law on a two-coordinate motif space. The same law can be attached to different embedded graphs by changing the extraction map $`\Gamma`$ while leaving the measured coordinate pair unchanged.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* For example, assign the same joint attribute law to two marked branches in a three-edge star or to two marked edges in a cycle. The coordinate law is unchanged while the physical edge sets differ. ◻
+
+</div>
+
+The corrected chain is therefore
+``` math
+\text{source}
+  \xrightarrow{P}
+  \text{effective state}
+  \xrightarrow{\Gamma}
+  \text{physical graph}
+  \xrightarrow{m}
+  \text{motif coordinates}.
+```
+A statistical graph may be inferred only after a law on those coordinates has also been supplied.
+
+# How a local reserve model can arise
+
+## Full and reduced quadratic forms
+
+Near a selected reference configuration, a twice differentiable deficit or action can be expanded in visible motif coordinates $`u`$ and hidden response coordinates $`z`$:
+``` math
+D(u,z)
+  =
+  D(0,0)
+  +\frac12
+  \begin{pmatrix}u\\ z\end{pmatrix}^{\!T}
+  \begin{pmatrix}A&B\\ B^T&D\end{pmatrix}
+  \begin{pmatrix}u\\ z\end{pmatrix}
+  +R_3(u,z).
+```
+The notation $`D`$ for both the hidden block and the full deficit is avoided below by writing the hidden block as $`H_{zz}`$.
+
+<div class="theorem">
+
+**Theorem 11** (Schur-complement reduction). *Let
+``` math
+H=
+  \begin{pmatrix}H_{uu}&H_{uz}\\H_{zu}&H_{zz}\end{pmatrix}
+```
+be symmetric with $`H_{zz}>0`$. Minimizing the quadratic form over $`z`$ gives
+``` math
+\inf_z\frac12
+  \begin{pmatrix}u\\z\end{pmatrix}^{\!T}
+  H
+  \begin{pmatrix}u\\z\end{pmatrix}
+  =
+  \frac12u^TH_{\mathrm{eff}}u,
+\qquad
+  H_{\mathrm{eff}}
+  =
+  H_{uu}-H_{uz}H_{zz}^{-1}H_{zu}.
+```
+If $`H>0`$, then $`H_{\mathrm{eff}}>0`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Complete the square using $`z_\ast=-H_{zz}^{-1}H_{zu}u`$. Positivity of the Schur complement follows from positivity of $`H`$ . ◻
+
+</div>
+
+This theorem explains how a local visible Hessian can be computed from a larger source Hessian. It does not guarantee any particular entries. In a physical MTT network model, $`H`$ must come from the same selected source that defines $`P`$ and $`\mathcal A`$, and the remainder $`R_3`$ needs a certified bound.
+
+## The anisotropic sprout chart
+
+Take
+``` math
+u=(\beta,q_\parallel,q_\perp).
+```
+The simplest positive quadratic model that penalizes bending, total branch size, and longitudinal alignment is
+``` math
+Q(u)
+  =
+  a\beta^2
+  b(q_\parallel^2+q_\perp^2)
+  cq_\parallel^2,
+  \qquad a,b,c>0.
+```
+The coefficient $`b`$ is the isotropic branch-size cost. The coefficient $`c`$ is an additional longitudinal penalty. Such a diagonal form may result from symmetry or from diagonalizing a positive local Hessian, but the identification of the eigenvectors with physical bend and branch directions is an extra source statement.
+
+For a reserve $`C>0`$, define the local feasible image
+``` math
+\mathcal R_C^{(2)}=\{u:Q(u)\leq C\}.
+```
+This is an ellipsoid in local motif coordinates. Its geometry, rather than projection noninvertibility, produces the following result.
+
+# The conditional sprout theorem
+
+<div class="theorem">
+
+**Theorem 12** (Quadratic reserve bound). *Let $`a,b,c,C>0`$ and let $`u\in\mathcal R_C^{(2)}`$. Then
+``` math
+\rho\leq\sqrt{\frac{C}{b}}.
+```
+Equality holds only when
+``` math
+\beta=0,\qquad q_\parallel=0,
+```
+so a saturating branch leaves the dominant channel straight and is orthogonal in the declared local chart.*
+
+*More generally, if $`0<\lambda\leq1`$ and
+``` math
+\rho\geq\lambda\sqrt{\frac{C}{b}},
+```
+then
+``` math
+|\beta|
+  \leq
+  \sqrt{\frac{C(1-\lambda^2)}{a}},
+\qquad
+  |q_\parallel|
+  \leq
+  \sqrt{\frac{C(1-\lambda^2)}{c}}.
+```
+For $`\rho>0`$ this gives
+``` math
+\cos^2\phi
+  \leq
+  \frac{b(1-\lambda^2)}{c\lambda^2}.
 ```*
 
 </div>
 
 <div class="proof">
 
-*Proof.* By Theorem <a href="#thm:sprout" data-reference-type="ref" data-reference="thm:sprout">9</a>, non-sprout motifs with $`\delta\le\delta_0`$ and $`\rho\le\rho_{\mathrm{th}}(x)`$ become inadmissible as $`C\to 0`$. Hence, within $`B_\epsilon\cap E_\delta`$, the probability of observing a non-sprout motif with $`\rho\le \eta\sqrt{\epsilon}`$ tends to zero as $`\epsilon\downarrow 0`$. Conditioning on $`\rho\le \eta\sqrt{\epsilon}`$ therefore selects sprout motifs with probability tending to one. ◻
+*Proof.* Since
+``` math
+C\geq Q
+  =a\beta^2+b\rho^2+cq_\parallel^2
+  \geq b\rho^2,
+```
+the first bound follows. Equality requires both nonnegative residual terms to vanish. Under the lower bound on $`\rho`$,
+``` math
+a\beta^2+cq_\parallel^2
+  \leq C-b\rho^2
+  \leq C(1-\lambda^2).
+```
+Bounding each term separately proves the next two inequalities. Divide the $`q_\parallel`$ bound by $`\rho^2\geq\lambda^2C/b`$ to obtain the angle estimate. ◻
 
 </div>
 
-## Observable signatures
+The theorem says less, and more precisely, than Version 1. It does not say that a branch must appear. It says that if a branch in this chart uses a large fraction of the available quadratic reserve, then it must be thin on the absolute scale $`\sqrt C`$, nearly transverse, and accompanied by little dominant-channel bending.
 
-Theorems <a href="#thm:support" data-reference-type="ref" data-reference="thm:support">14</a> and <a href="#thm:dominance" data-reference-type="ref" data-reference="thm:dominance">15</a> yield several observable signatures:
+## Controlled nonlinear remainder
 
-1.  **Monotonic threshold shift.** Stratifying motifs by increasingly boundary-like conditions produces a monotonic decrease in the observed sprout threshold $`\rho_{\mathrm{th}}`$.
-
-2.  **Distribution contraction.** The conditional distribution of $`\rho`$ given $`B_\epsilon\cap E_\delta`$ contracts toward zero as $`\epsilon`$ decreases.
-
-3.  **Sprout prevalence.** Within sufficiently boundary-like strata, sprout-like motifs dominate the population of balanced-dominant junctions.
-
-These signatures are independent of network domain and do not rely on fitting or optimization assumptions.
-
-## Falsifiability
-
-The statistical predictions above are falsifiable. If boundary-layer stratification by any reasonable capacity proxy fails to induce monotonic contraction of $`\rho`$ or increased sprout prevalence, then the admissibility-driven boundary stabilization mechanism does not govern the system under study. Conversely, systematic confirmation of these trends supports the projection-limited explanation advanced here.
-
-## Summary
-
-Boundary-layer conditioning transforms local admissibility constraints into sharp statistical signatures. The contraction of thin-branch ratios and the dominance of sprout motifs near the admissibility boundary provide a direct empirical manifestation of projection-limited coherent description in network geometry.
-
-# Operationalizing Capacity Proxies and Empirical Protocol
-
-The results of Sections 9 and 10 yield sharp, falsifiable predictions, but they are expressed in terms of the coherence capacity $`C`$, which is defined upstairs in the MTT framework and is not directly observable. In this section we describe how $`C`$ can be operationalized empirically through measurable proxies derived from network geometry, and we provide a concrete protocol for testing the boundary-stabilization mechanism in data.
-
-## Principles for capacity proxies
-
-A capacity proxy is any observable quantity that is monotone with decreasing admissibility margin. From the MTT perspective, capacity decreases when effective description becomes ill-conditioned due to geometric strain, crowding, or instability of the coherent projection. Consequently, suitable proxies should increase when:
-
-- local curvature or torsion becomes large,
-
-- branches are forced into close proximity,
-
-- thickness varies rapidly along edges,
-
-- or network geometry approaches a spatial or mechanical constraint.
-
-The role of a proxy is not to reproduce $`C`$ quantitatively, but to stratify motifs into increasingly boundary-like subsets.
-
-## Generic geometric proxies
-
-The following proxies can be computed from any embedded network with thickness data.
-
-#### Local curvature proxy.
-
-For each junction $`v`$, compute the curvature $`\kappa_i`$ of each incident branch in a neighborhood of $`v`$, and define
+A physical deficit is rarely exactly quadratic. Let
 ``` math
-P_{\kappa}(v) := \max_i \kappa_i(v).
+\widetilde Q(u)=Q(u)+R(u).
 ```
-High curvature indicates limited geometric freedom and reduced admissibility margin.
 
-#### Crowding or clearance proxy.
+<div class="theorem">
 
-Let $`d_{\min}(v)`$ be the minimum Euclidean distance from the junction neighborhood to any other branch not incident on $`v`$. Define
+**Theorem 13** (Relative-error stability). *Suppose $`|R(u)|\leq\epsilon Q(u)`$ on the declared chart, with $`0\leq\epsilon<1`$. If $`\widetilde Q(u)\leq C`$, then
 ``` math
-P_{\mathrm{crowd}}(v) := \frac{1}{d_{\min}(v)}.
-```
-Small clearance implies strong geometric constraints and reduced capacity.
+\rho
+  \leq
+  \sqrt{\frac{C}{(1-\epsilon)b}}.
+```*
 
-#### Thickness-gradient proxy.
+</div>
 
-Let $`w_i(s)`$ denote the thickness along branch $`i`$ as a function of arclength $`s`$. Define
+<div class="proof">
+
+*Proof.* The remainder bound gives $`\widetilde Q\geq(1-\epsilon)Q\geq(1-\epsilon)b\rho^2`$. ◻
+
+</div>
+
+An additive error $`|R|\leq\delta`$ instead yields
 ``` math
-P_{\mathrm{grad}}(v) := \max_i \left| \nabla_s \log w_i \right|.
+\rho\leq\sqrt{\frac{C+\delta}{b}}.
 ```
-Sharp tapering reflects local instability or stress and correlates with decreased capacity.
+Both forms expose the verification obligation. One must state the chart, norm, remainder bound, and source of the Hessian coefficients.
 
-## Domain-specific proxies
+## Why the exponent is not universal
 
-In addition to generic geometric proxies, domain-specific observables may provide more sensitive indicators of proximity to admissibility boundaries.
+<div class="proposition">
 
-#### Vascular networks.
-
-Define the Murray-law residual
+**Proposition 14** (Order of contact determines the scaling exponent). *Suppose for small $`\rho`$ the branch deficit satisfies
 ``` math
-P_{\mathrm{Murray}}(v) := 
-\left| \frac{r_0^3 - (r_1^3 + r_2^3)}{r_0^3} \right|,
+k_-\rho^p\leq D(\rho)\leq k_+\rho^p,
+  \qquad p>0,\quad k_\pm>0.
 ```
-where $`r_0`$ is the parent radius and $`r_{1,2}`$ are daughter radii. Large residuals indicate deviation from classical flow-optimization assumptions and signal additional constraints.
-
-#### Neuronal arbors.
-
-Local neurite density, distance to nearby axons or dendrites, or proximity to synaptic targets can serve as crowding proxies. Even without synapse labels, local point-cloud density of other processes provides a useful indicator.
-
-#### Plant and fungal networks.
-
-Distance to growth fronts or apical tips, combined with curvature or tapering measures, provides a proxy for boundary-layer growth regions.
-
-## Boundary-layer stratification
-
-Given a chosen proxy $`P(v)`$, we define boundary-layer strata by quantiles. For a quantile level $`q \in (0,1)`$, let
+Then the maximal feasible branch scale obeys
 ``` math
-B_q := \{ v : P(v) \ge P_q \},
+\left(\frac{C}{k_+}\right)^{1/p}
+  \leq \rho_{\max}(C)
+  \leq
+  \left(\frac{C}{k_-}\right)^{1/p}.
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Apply the two inequalities to the condition $`D(\rho)\leq C`$ and to a trial value satisfying the upper estimate. ◻
+
+</div>
+
+Thus the exponent $`1/2`$ is evidence for a nondegenerate quadratic leading term. A quartic flat direction gives $`C^{1/4}`$; a nonsmooth linear cost gives $`C`$. Projection alone selects none of these.
+
+# Feasible sets do not supply probabilities
+
+Version 1 inferred that sprout motifs become statistically dominant near the boundary. A feasible set cannot establish that conclusion without a law.
+
+<div class="proposition">
+
+**Proposition 15** (No universal prevalence from support). *Let $`\mathcal R_C^{(2)}`$ contain both the origin and at least one nonzero near-saturating sprout. There are probability measures supported on the same set for which the sprout probability is $`0`$, $`1`$, or any prescribed number in $`[0,1]`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Use a Dirac measure at the origin, a Dirac measure at a declared sprout, or their convex mixtures. ◻
+
+</div>
+
+A statistical theorem therefore needs one of the following:
+
+- a source probability measure $`\nu`$ and its pushforward $`F_\ast\nu`$;
+
+- a stochastic growth process with a stopping rule;
+
+- a deterministic ensemble and a declared sampling measure;
+
+- or a Gibbs, maximum-entropy, or other law justified independently.
+
+Even then, conditioning must be specified. A concentration statement can be valid under a chosen law while failing under another law with the same support. The current MTT network program has not selected such a law.
+
+# Boundary language and capacity
+
+MTT coherence capacity is best treated as a sourced reserve vector or a declared normalized margin class, not as a universal scalar force. A local network model may choose a scalar reserve
+``` math
+C=\min_i r_i
 ```
-where $`P_q`$ is the $`q`$-th quantile of $`P`$ restricted to the balanced-dominant set $`E_\delta`$.
+or another monotone functional of certified reserve rows $`r=(r_1,\ldots,r_n)`$. That scalar is useful for a bottleneck estimate but does not reconstruct the rows or their Hessian.
 
-Increasing $`q`$ corresponds to selecting motifs that are increasingly boundary-like, i.e. with smaller effective capacity $`C`$.
+For this paper, $`C`$ has only the following role:
 
-## Empirical test protocol
+> $`C`$ is the certified amount by which the declared local deficit may increase before leaving the selected admissible chart.
 
-The empirical protocol for testing the MTT predictions is as follows:
+It is not automatically energy, curvature, crowding, entropy, stress, or biological fitness. A proposed observable proxy $`\widehat C`$ must be calibrated against the reserve it is intended to estimate. Monotonicity between a proxy and a geometric feature cannot be used both to define capacity and to confirm the prediction without circularity.
 
-1.  Extract junction motifs and compute local observables $`(\delta,\rho,\beta)`$.
+# A valid empirical test contract
 
-2.  Restrict to the balanced-dominant regime $`E_\delta`$.
+The corrected model can be tested, but only with a predeclared data-use contract.
 
-3.  Choose one or more capacity proxies $`P`$ and stratify motifs into boundary layers $`B_q`$.
+## Training-stage obligations
 
-4.  Within each stratum, estimate the sprout threshold $`\rho_{\mathrm{th}}(q)`$ using angle distributions or sprout classification.
+1.  Fix the network-extraction algorithm $`\Gamma`$, including resolution, pruning, junction, and thickness rules.
 
-5.  Test monotonicity:
-    ``` math
-    q_1 < q_2 < q_3
-    \quad \Rightarrow \quad
-    \rho_{\mathrm{th}}(q_1) \ge \rho_{\mathrm{th}}(q_2) \ge \rho_{\mathrm{th}}(q_3).
-    ```
+2.  Fix the motif map $`m`$ and the local coordinate chart $`(\beta,q_\parallel,q_\perp,\eta)`$.
 
-6.  Examine contraction of the conditional distribution of $`\rho`$ and increasing prevalence of sprout motifs as $`q`$ increases.
+3.  State how a candidate reserve or reserve proxy is obtained.
 
-## Falsifiability
+4.  Estimate or derive the local Hessian and verify $`a,b,c>0`$ on the training domain.
 
-The boundary-stabilization mechanism makes falsifiable predictions. If stratification by a reasonable capacity proxy fails to induce monotonic contraction of $`\rho`$ or increased sprout prevalence, then admissibility-controlled projection does not govern the system under study. Conversely, systematic confirmation across multiple proxies and datasets strongly supports the projection-limited explanation.
+5.  Bound the nonlinear remainder and freeze the accepted chart.
 
-## Summary
+## Held-out obligations
 
-Capacity proxies provide a practical bridge between MTT and empirical network analysis. They enable boundary-layer stratification without direct access to the coherent sector and allow the quantitative predictions of Sections 9 and 10 to be tested directly in data.
+On data not used to choose the extraction, proxy, chart, or coefficients, test:
 
-# Relation to String-Based and Variational Approaches
+1.  whether observed accepted motifs lie inside the certified feasible region up to measurement error;
 
-Several recent approaches explain branching and sprouting phenomena in networks by invoking variational principles, most prominently minimal-surface constructions inspired by string theory. In this section we clarify the relationship between such approaches and the projection-limited derivation presented here. We show that string-based and variational methods can be understood as special encodings of admissible coherent configurations, but are not required for the emergence of sprouting or hidden correlations.
+2.  whether the upper envelope of $`\rho`$ follows the predicted reserve scaling;
 
-## What variational and string-based methods achieve
+3.  whether high-reserve-fraction branches obey the bend and angle bounds;
 
-Variational approaches typically proceed by embedding a network skeleton into a higher-dimensional geometric object and minimizing a global functional, such as total length, area, or a Nambu–Goto-type action. When successful, these constructions reproduce observed features of real networks, including restricted junction geometries and sprout-like motifs.
+4.  whether the same coefficients transfer across the preregistered conditions claimed by the model.
 
-From the present perspective, these methods perform two roles:
+Failure of a bound with verified premises falsifies the local reserve model on that domain. Failure of an uncalibrated proxy does not falsify MTT as a whole. Conversely, a fitted square-root envelope is not a source theorem: many positive quadratic models share it.
 
-1.  They provide a concrete parametrization of a subset of admissible coherent configurations.
+## What would count as strong evidence
 
-2.  They supply a calculational framework for exploring global compatibility constraints among local network variables.
+The strongest version would derive $`F`$, $`H_{\mathrm{eff}}`$, and the reserve rows from one selected source before the network measurements are used. The theorem would then predict coefficients and transfer behavior out-of-sample. A weaker but still useful phenomenological test can fit $`a,b,c`$ on one condition and validate them on another. The two evidence tiers must not be merged.
 
-Importantly, these methods do not operate at the level of local network rules. Instead, they implicitly impose global coherence and smoothness constraints that correlate distant parts of the network.
+# Relation to established network models
 
-## Why string theory is not required
+This framework does not show that optimization is unnecessary in real networks. Established models demonstrate that optimization, damage tolerance, fluctuating loads, local adaptation, and growth can alter network topology and hierarchy . Those results are mechanisms with their own state variables and objectives.
 
-The derivations in this paper do not rely on worldsheet geometry, minimal surfaces, or string-theoretic actions. All results follow from three structural ingredients:
+The MTT reserve model is different. It asks whether a selected source and projection induce a constrained motif image whose local Hessian has a specific anisotropy. If so, the conditional sprout theorem follows without minimizing a global network functional. But the source of the local quadratic form still needs explanation. In some systems it may arise from elasticity, transport, growth, or an optimization principle. MTT does not erase those domain dynamics.
 
-1.  the existence of a coherent sector selected by spectral and stability conditions,
+Nor does the framework establish a string-theory description. A minimal surface or worldsheet model can be compared only after an explicit map identifies its fields, boundary conditions, and observables with the same network construction. Similar-looking geometry is not an equivalence theorem.
 
-2.  projection from this sector to an effective network description,
+# Current MTT status
 
-3.  and the absence of a global reconstruction map on the admissible domain.
+Table <a href="#tab:status" data-reference-type="ref" data-reference="tab:status">1</a> prevents the conditional theorem from being read as a selected physical result.
 
-These ingredients are sufficient to produce hidden compatibility constraints, coercive capacity loss under dominant-channel distortion, and sprout-like boundary-stabilizing deformations. String theory provides one possible intermediate encoding of coherent geometry, but it is neither necessary nor fundamental for the phenomena discussed here.
+<div id="tab:status">
 
-## Minimality as a secondary shadow
+| Object | Current tier | What is established or missing |
+|:---|:---|:---|
+| Typed chain $`F=m\circ\Gamma\circ P`$ | framework | A valid way to state a network encoding; no physical network instance is selected by the notation. |
+| Image tests | exact mathematics | Recombination, graph-of-a-map, and regular-value tests are rigorous once membership or constraints are supplied. |
+| No-section implication | withdrawn | No-section alone does not imply a proper or nonfactorizing image. |
+| Quadratic sprout bound | conditional exact | Exact for the declared $`Q`$ and controlled under the stated remainder bound. |
+| Physical network source | open | No selected MTT operator or action currently emits $`\Gamma`$, the motif chart, and the local network Hessian from one source. |
+| Coefficients $`a,b,c`$ | open | Not derived for a biological, physical, or engineered network. |
+| Capacity calibration | open | Curvature, crowding, and taper are not accepted universal capacity proxies. |
+| Prevalence or growth law | open | A feasible image does not select a probability measure or branch-creation dynamics. |
+| Cross-domain universality | not established | Similar motifs across domains do not establish a common source. |
 
-In variational formulations, minimality plays a central role: networks are assumed to minimize some global functional. In contrast, minimality does not appear as a primitive principle in the present framework. Instead, admissibility is primary. Effective descriptions exist only where coherence capacity is positive, and local deformations are constrained by stability margins.
+The corrected claim ledger.
 
-In regimes where admissible coherent configurations admit a variational characterization, minimality can emerge as a secondary shadow of admissibility. That is, among admissible configurations, those that extremize certain global functionals may be preferentially realized or easier to parametrize. However, this is contingent and regime-dependent. The existence of sprouting and hidden correlations does not depend on the existence of any variational minimum.
+</div>
 
-## Advantages of the projection-first derivation
+The model is therefore a conditional encoding at the representation and local reconstruction level. It is not a derivation of observed network statistics from current MTT geometry.
 
-Deriving network geometry directly from projection-limited coherence offers several advantages over variational or string-based approaches:
+# Version 2 changes and reasons
 
-- **Generality.** The results apply to any system admitting an admissible coherent sector, independent of dimensionality, embedding, or action functional.
+| Version 1 statement | Version 2 decision | Reason |
+|:---|:---|:---|
+| No global reconstruction forces hidden motif constraints | Withdraw | A surjective map without a continuous section can have a full product image. |
+| Local observables cannot be freely combined | Replace by a direct image test | Nonfactorization requires a failed recombination or an explicit coupled constraint. |
+| Correlation constraints generate network geometry | Separate the objects | Physical edges come from $`\Gamma`$; statistical edges require a law and conditional-independence convention. |
+| Sprouting is the only admissible boundary deformation | Narrow to a local quadratic theorem | The conclusion needs a positive anisotropic Hessian and a controlled remainder. |
+| $`\rho_{\rm th}\sim\sqrt C`$ is universal | Make conditional | The exponent is $`1/p`$ when the first nonzero branch cost has order $`p`$. |
+| Sprouts dominate boundary ensembles | Withdraw without a measure | The same support admits probability laws with any sprout prevalence. |
+| Capacity proxies test the theory directly | Require calibration and held-out data | An observable proxy is not automatically the sourced reserve. |
+| Optimization and string descriptions are unnecessary | Remove as a general claim | Other mechanisms can generate network structure; comparison requires an explicit common map. |
 
-- **Necessity.** Hidden correlations and sprouting follow inevitably from structural constraints, not from particular modeling choices.
-
-- **Falsifiability.** Capacity-dependent predictions yield monotonic, testable signatures that do not depend on fitting a variational model.
-
-- **Conceptual clarity.** Sprouting is identified as a boundary phenomenon associated with the breakdown of effective description, not as an optimization outcome.
-
-## Compatibility with string-theoretic encodings
-
-Nothing in the present framework is in conflict with string theory or related geometric constructions. When string-based methods successfully describe network geometry, they can be viewed as providing a convenient coordinate chart on a subset of the admissible coherent sector. Quantization of such encodings, where relevant, may introduce additional structure, but the classical geometric correlations discussed here arise prior to any quantization step.
-
-Thus, the relationship is one of containment rather than competition: string-based and variational approaches occupy special corners of the broader admissibility-controlled landscape described by Modal Triplet Theory.
-
-## Summary
-
-Sprouting and hidden correlations do not require string theory, minimal surfaces, or optimization principles for their existence. These methods can be reinterpreted as secondary encodings of admissible coherent configurations. The projection-first approach developed here identifies the structural origin of these phenomena and explains their universality across networked systems.
-
-# Conceptual Implications
-
-The results developed in this paper have implications that extend beyond the specific context of network geometry. In this section we situate sprouting and hidden correlations within the broader conceptual framework of Modal Triplet Theory and clarify how these phenomena relate to non-factorization, entanglement, and boundary effects across physical descriptions.
-
-## Sprouting as a boundary phenomenon
-
-A central lesson of this work is that sprouting is not a feature of interior, high-capacity regimes. It is a boundary phenomenon. Sprout-like motifs arise precisely when effective description approaches the edge of admissibility, where coherence capacity is scarce and only a restricted class of local deformations remains possible.
-
-This observation places sprouting on the same conceptual footing as other phenomena that occur near admissibility boundaries in MTT. In each case, the underlying dynamics remain well-defined and invertible, but the effective description becomes constrained, non-invertible, or irreversible. Sprouting is therefore not an anomaly to be explained by special local rules, but a structural response to diminishing descriptive capacity.
-
-## Hidden correlations and non-factorization
-
-The hidden correlations observed among local network observables reflect a deeper non-factorization of the effective description. Because the projection from coherent configurations to effective network variables admits no global reconstruction map, local observables cannot vary independently. Compatibility constraints restrict the realizable combinations of angles, thickness ratios, and junction types.
-
-This mechanism is entirely analogous to the emergence of non-factorizable descriptions in other contexts treated by MTT. In quantum mechanics, the same structural feature appears as entanglement: effective degrees of freedom fail to factorize because they share common preimages in the coherent sector. In the present setting, the phenomenon is purely classical and geometric, but the underlying logic is identical.
-
-It is important to emphasize that no probabilistic or quantum structure is required here. Non-factorization arises prior to quantization and reflects the structure of projection itself. Entanglement can thus be understood as a specific quantum encoding of a more general projection-induced constraint.
-
-## Minimality, optimization, and descriptive shadows
-
-The projection-first perspective clarifies the role of optimization principles in network geometry. Variational or minimal-surface constructions do not generate coherence; they encode it. When admissible coherent configurations admit a variational characterization, minimality may appear as a convenient descriptive proxy. However, minimality is neither necessary nor primary.
-
-From the MTT viewpoint, optimization emerges only after admissibility has selected the space of allowed configurations. The present results show that key network features—sprouting, restricted junction types, and hidden correlations—exist independently of any global minimization principle. Optimization, where applicable, is a secondary shadow of deeper coherence constraints.
-
-## Universality across domains
-
-One striking feature of sprouting is its ubiquity across domains with vastly different microscopic dynamics: neuronal arbors, vascular systems, plant roots, fungal networks, and engineered structures all exhibit similar motifs. The projection-limited explanation provided here accounts for this universality.
-
-Because admissibility depends only on structural properties—spectral separation, bounded projection, and stability margins—the resulting boundary phenomena are insensitive to microscopic details. Any system whose effective description arises via projection from a coherent sector will exhibit analogous constraints near its admissibility boundary. Sprouting is therefore not a biological peculiarity or an engineering artifact, but a universal signature of coherence-limited description.
-
-## Boundary effects beyond networks
-
-Sprouting joins a broader class of boundary phenomena identified in MTT. These include the emergence of probability and irreversibility in measurement, the loss of reconstructability at horizons, and the breakdown of classical predictability in strongly coupled regimes. In each case, effective description fails in a controlled and structured way as admissibility margins vanish.
-
-Seen from this perspective, networks provide a particularly transparent setting in which to study boundary stabilization. Unlike quantum or gravitational systems, network geometry is directly observable, making the structural consequences of projection-limited description empirically accessible.
-
-## Summary
-
-The conceptual implications of this work can be summarized succinctly. Sprouting is a classical, geometric manifestation of the same projection-induced non-factorization that underlies entanglement and irreversibility in other physical contexts. It arises necessarily near admissibility boundaries, independent of optimization principles or domain-specific mechanisms. This unifies network morphology with a wider class of phenomena governed by coherence, projection, and capacity.
+Claim-by-claim revision ledger.
 
 # Conclusion
 
-We have shown that characteristic branching motifs observed across real-world networks—most notably sprouting behavior and hidden correlations among local observables—arise as unavoidable consequences of projection-limited coherent description. Within Modal Triplet Theory, these phenomena follow directly from admissibility: effective network configurations exist only as shadows of an underlying coherent sector selected by spectral gaps, bounded projectors, and stability margins.
+The central correction is simple: information loss is not geometry. Projection may make reconstruction nonunique or obstruct regular sections, but the observable network constraints live in the actual image $`\mathcal R=F(\mathcal A)`$. They must be computed or specified there.
 
-The central result is that near the boundary of admissibility, only a restricted class of local deformations preserves coherence. Bending a dominant transport channel consumes coherence capacity coercively, while coupling to a thin auxiliary branch enters only perturbatively. This asymmetry forces admissible local modifications to take a sprout-like form: the dominant channel remains straight while a thin branch emerges approximately orthogonal. Using operator-theoretic bounds and a Schur–complement analysis, we derived a quantitative prediction for this regime: the maximal admissible sprout thickness ratio scales as the square root of the remaining coherence capacity, $`\rho_{\mathrm{th}} \sim \sqrt{C}`$.
+Once that is done, MTT can support a clean local theorem. A selected positive Hessian with an extra longitudinal penalty defines an ellipsoidal reserve region. The maximal branch scale is then proportional to $`\sqrt C`$, and branches near that scale are forced to be approximately orthogonal while the dominant channel remains nearly straight. A relative remainder certificate preserves the conclusion with an explicit loss.
 
-Beyond individual motifs, we established statistical consequences for network ensembles. In boundary-layer regions—where coherence capacity is low—the support of the sprout thickness distribution contracts and sprout-like junctions become dominant under appropriate conditioning. These results explain why local generative rules fail and why empirically observed correlations persist across disparate systems. Importantly, the mechanism is structural rather than variational: no optimization principle, minimal surface assumption, or string-theoretic machinery is required.
-
-We also provided a concrete empirical protocol for testing these predictions. Although coherence capacity is not directly observable, it admits robust proxies derived from network geometry, such as local curvature, crowding, and thickness gradients. Stratifying motifs by these proxies yields falsifiable predictions: the sprouting threshold must decrease monotonically across boundary-layer strata, and conditional distributions must concentrate accordingly. Failure of these monotonic trends falsifies the boundary-stabilization mechanism for the system under study.
-
-Our results clarify the role of variational and string-based approaches to network geometry. Such methods can be understood as convenient encodings of admissible coherent configurations in special regimes, but they are not fundamental to the emergence of sprouting or hidden correlations. Admissibility, not minimality, is primary; optimization appears only as a secondary shadow of coherence constraints.
-
-More broadly, this work extends the scope of Modal Triplet Theory beyond quantum and geometric settings to complex networks. Sprouting joins measurement collapse, entanglement, and irreversibility as a boundary phenomenon: a signature of projection-limited description near the edge of coherence. This unifies network morphology with a wider class of phenomena governed by the same structural principles.
-
-Future directions include applying the present framework to time-dependent growth processes, quantifying capacity dynamics during network remodeling, and exploring higher-valence junctions and looped motifs within the same admissibility-driven approach. Taken together, these results demonstrate that seemingly diverse network behaviors are governed by a single, universal mechanism rooted in coherence, projection, and admissibility.
-
-# Limitations and Scope
-
-The results of this paper are structural and deliberately limited in scope. In this section we clarify what is and is not claimed, and we delineate the domain of validity of the projection-limited explanation of network sprouting.
-
-## No claim of universal network optimality
-
-We do not claim that all networks optimize a global functional, nor that observed network geometries are globally optimal in any variational sense. On the contrary, one of the central conclusions of this work is that key features of network morphology arise independently of optimization. Where variational descriptions succeed, they should be interpreted as secondary encodings of admissible coherent configurations rather than as fundamental generative principles.
-
-## No claim of universal applicability
-
-Not all networks necessarily operate near an admissibility boundary. The boundary-stabilization mechanism identified here applies only in regimes where coherence capacity is sufficiently low that admissibility constraints dominate local geometry. Networks operating deep inside admissible regions may exhibit different motifs or admit a wider range of local deformations. The present framework does not assert that sprouting must occur in every network or at every scale.
-
-## Independence from microscopic dynamics
-
-The analysis presented here is intentionally agnostic about microscopic dynamics and growth mechanisms. We do not model biological regulation, material properties, or developmental rules. The results apply only to the effective network description and rely solely on structural features of projection and admissibility. Consequently, this work does not replace domain-specific models, but instead constrains the space of effective geometries such models must inhabit.
-
-## Capacity proxies and empirical interpretation
-
-While the theory makes quantitative predictions in terms of coherence capacity, capacity itself is not directly observable. Empirical tests therefore rely on proxies derived from network geometry or context. The validity of any specific proxy must be assessed empirically. Failure of a given proxy to exhibit the predicted monotonic trends does not invalidate the theory, but rather indicates that the proxy does not faithfully track admissibility in that system.
-
-## Classical regime only
-
-All results in this paper are classical. Although the projection-limited mechanism underlying sprouting is structurally analogous to mechanisms that produce entanglement and irreversibility in quantum systems, no quantum or probabilistic structure is assumed here. Extending the present analysis to quantized network models or stochastic growth processes is an interesting direction for future work, but lies beyond the scope of this paper.
-
-## Summary
-
-This paper identifies a universal boundary-stabilization mechanism governing network sprouting under projection-limited coherent description. It does not propose a complete theory of network formation, nor does it claim that all observed network features reduce to admissibility effects. Instead, it provides a rigorous structural explanation for a class of robust, cross-domain phenomena that have resisted local or variational explanation.
-
-# Measurability and Selection Results
-
-This appendix collects standard measurability and selection results used implicitly throughout the paper. All statements are classical and included for completeness.
-
-## Standard Borel structure
-
-The configuration space $`\mathcal{X}`$, the effective space $`\mathcal{Y}`$, the network space $`\mathcal{N}`$, and the motif space $`\mathcal{M}`$ are assumed to be standard Borel spaces. This is satisfied whenever these spaces arise as separable metric spaces modulo measurable equivalence, as is the case for configuration spaces of fields on bounded-geometry manifolds and for finite-dimensional geometric data extracted from embedded networks.
-
-## Measurability of projection and extraction
-
-The coherent projector $`\Pi_{\mathrm{coh}}`$ is measurable as an operator-valued function on admissible slabs by construction via Riesz–spectral calculus. The observable pushforward $`I`$ is measurable by definition. Hence the projection
-``` math
-P = I \circ \Pi_{\mathrm{coh}} : \mathcal{X} \to \mathcal{Y}
-```
-is measurable.
-
-The network extraction map $`\Gamma:\mathcal{Y}\to\mathcal{N}`$ is assumed measurable, as are standard skeletonization procedures. The motif extraction map $`\mathsf{M}:\mathcal{N}\to\mathcal{M}`$ is measurable because it consists of local geometric measurements (angles, thicknesses) applied deterministically.
-
-## Absence of global measurable sections
-
-The statement that $`P`$ admits no global measurable section on $`P(\mathcal{A})`$ is central. This follows from the reconstruction obstruction results in projection-limited coherent descriptions: the fibers of $`P`$ are nontrivial on sets of positive measure, and admissibility failure prevents measurable global selection. Standard results from descriptive set theory imply that if $`\mathcal{R}`$ were a full product space of local observables, a measurable section could be constructed, contradicting admissibility.
-
-—
-
-# Local Motif Realizability
-
-Here we justify the use of local deformations realizing prescribed motif parameters.
-
-## Statement
-
-<div class="lemma">
-
-**Lemma 16** (Local motif realizability). *Let $`x\in\mathcal{A}`$ be admissible and let $`m=\mathsf{M}(x)`$ be a degree–3 motif. For any sufficiently small target parameters $`(\beta,\rho)`$, there exists a local deformation $`x\mapsto x'`$ supported in a bounded neighborhood of the motif such that
-``` math
-\beta(\mathsf{M}(x'))=\beta, \qquad \rho(\mathsf{M}(x'))=\rho.
-```*
-
-</div>
-
-## Proof
-
-Work in a bounded-geometry chart around the junction. Local deformations of branch tangents and thickness profiles can be constructed smoothly using compactly supported perturbations of the embedding and radius field. Because admissibility is open in the chosen topology, sufficiently small deformations remain within $`\mathcal{A}`$. The mapping from deformation parameters to $`(\beta,\rho)`$ is continuous and locally surjective, yielding the result by the inverse function theorem. 0◻
-
-—
-
-# Riesz–Resolvent Bounds for Coherent Projectors
-
-We summarize the operator-theoretic bounds underlying projector regularity.
-
-## Operator class and norms used throughout
-
-All operator inequalities in this paper are formulated in the $`H^1\to H^{-1}`$ operator norm on bounded-geometry patches. This choice is natural for Laplace-type operators and ensures that first-order geometric perturbations are captured coercively at the level of quadratic forms.
-
-The operator families $`A(x)`$ defining the coherent projector are assumed to be self-adjoint, uniformly elliptic, and to depend smoothly on $`x`$ in the sense that coefficients in local charts vary in $`C^1`$ with bounded derivatives. These assumptions are standard in the MTT spine and ensure the validity of Riesz–resolvent calculus, Schur-complement decompositions, and parameter-dependent projector bounds.
-
-## Setup
-
-Let $`A(x)`$ be a family of self-adjoint operators depending continuously on $`x\in\mathcal{A}`$, with a uniformly isolated spectral island at $`0`$. Let $`\Gamma`$ be a contour enclosing this island and no other spectrum.
-
-The coherent projector is
-``` math
-\Pi_{\mathrm{coh}}(x)=\frac{1}{2\pi i}\oint_\Gamma (z-A(x))^{-1}\,dz.
-```
-
-## Perturbation bounds
-
-If $`A(x')=A(x)+\delta A`$ with $`\|\delta A\|`$ sufficiently small, then for all $`z\in\Gamma`$,
-``` math
-\|(z-A(x'))^{-1}-(z-A(x))^{-1}\|
-\le
-\frac{\|\delta A\|}{\mathrm{gap}^2}.
-```
-Integrating around $`\Gamma`$ yields
-``` math
-\|\Pi_{\mathrm{coh}}(x')-\Pi_{\mathrm{coh}}(x)\|
-\le
-C\,\|\delta A\|.
-```
-Similar bounds hold for spatial and temporal derivatives of $`\Pi_{\mathrm{coh}}`$ provided $`A(x)`$ varies smoothly.
-
-## Coercive operator perturbation from dominant-channel bending
-
-We make explicit the coercive estimate used in Step 1 of Lemma <a href="#lem:distortion-projector" data-reference-type="ref" data-reference="lem:distortion-projector">7</a>: dominant-channel bending produces an operator perturbation bounded below by a multiple of $`D(\beta)=1-\cos\beta`$.
-
-<div id="lem:bend-operator" class="lemma">
-
-**Lemma 17** (Bend induces coercive perturbation in a Laplace-type dominant-channel model). *Let $`U`$ be a bounded-geometry neighborhood of a junction and let $`s\in(-\ell,\ell)`$ be an arclength coordinate along the dominant channel through the junction (the straight-through direction when $`\beta=0`$). Let $`\mathcal{H}_\parallel=L^2((-\ell,\ell);\mathbb{C}^r)`$ and consider the dominant-channel operator family
-``` math
-A_\parallel(e) \;:=\; L(e)^*L(e) \;+\; V(s),
-\qquad
-L(e) \;:=\; e(s)\cdot\nabla_s \;+\; W(s),
-```
-where:*
-
-- *$`e(s)\in \mathbb{R}^d`$ is a unit tangent field along the dominant channel, $`\|e(s)\|=1`$;*
-
-- *$`\nabla_s=\partial_s`$ is the arclength derivative in the chosen chart;*
-
-- *$`W(s)`$ is a bounded matrix-valued coefficient (connection / lower-order term) with $`\|W\|_{L^\infty}\le M_W`$;*
-
-- *$`V(s)`$ is a bounded self-adjoint matrix-valued potential with $`\|V\|_{L^\infty}\le M_V`$.*
-
-*Assume bounded geometry on $`U`$ so that all coefficients are uniformly bounded and the chart is uniformly controlled.*
-
-*Let $`e_0(s)\equiv e_0`$ be constant (straight dominant channel) and let $`e_\beta(s)`$ be a unit tangent field such that for $`|s|\le s_0`$ (a fixed junction core),
-``` math
-e_\beta(s)\cdot e_0 = \cos\beta,
-\qquad
-\beta\in[0,\beta_{\max}],
-```
-i.e. the dominant channel is bent by angle $`\beta`$ through the junction core.*
-
-*Then there exists a constant $`\kappa>0`$, depending only on $`(\ell,s_0,M_W,M_V)`$ and bounded-geometry constants of $`U`$, such that for $`\beta`$ in a fixed small range,
-``` math
-\big\|A_\parallel(e_\beta)-A_\parallel(e_0)\big\|_{H^1\to H^{-1}}
-\;\ge\;
-\kappa\,(1-\cos\beta).
-\tag{C.1}
-```
-Equivalently, using $`1-\cos\beta \simeq \beta^2/2`$ for small $`\beta`$,
-``` math
-\big\|A_\parallel(e_\beta)-A_\parallel(e_0)\big\|_{H^1\to H^{-1}}
-\;\ge\;
-\kappa'\,\beta^2.
-\tag{C.2}
-```*
-
-</div>
-
-<div class="proof">
-
-*Proof.* We work in the form sense on $`H^1((-\ell,\ell);\mathbb{C}^r)`$. Let $`q_e[\psi]:=\langle \psi, A_\parallel(e)\psi\rangle`$ denote the quadratic form. Since $`A_\parallel(e)=L(e)^*L(e)+V`$, we have
-``` math
-q_e[\psi]=\|L(e)\psi\|_{L^2}^2 + \langle \psi, V\psi\rangle_{L^2}.
-```
-The potential term cancels in the difference because $`V`$ is independent of $`e`$, so
-``` math
-q_{e_\beta}[\psi]-q_{e_0}[\psi]=\|L(e_\beta)\psi\|_{L^2}^2-\|L(e_0)\psi\|_{L^2}^2.
-```
-
-Write $`L(e)=e(s)\partial_s + W(s)`$. For any $`\psi`$ supported in the junction core $`|s|\le s_0`$, we have
-``` math
-L(e_\beta)\psi - L(e_0)\psi = (e_\beta-e_0)\partial_s \psi.
-```
-Therefore
-``` math
-\begin{align*}
-\|L(e_\beta)\psi\|_{L^2}^2-\|L(e_0)\psi\|_{L^2}^2
-&=
-\langle L(e_\beta)\psi + L(e_0)\psi,\ (L(e_\beta)-L(e_0))\psi\rangle \\
-&=
-\langle (e_\beta+e_0)\partial_s\psi + 2W\psi,\ (e_\beta-e_0)\partial_s\psi\rangle.
-\end{align*}
-```
-Using $`\|e_\beta\|=\|e_0\|=1`$ and Cauchy–Schwarz,
-``` math
-\big| \langle 2W\psi,\ (e_\beta-e_0)\partial_s\psi\rangle \big|
-\;\le\;
-2\|W\|_{L^\infty}\,\|\psi\|_{L^2}\,\|e_\beta-e_0\|_{L^\infty}\,\|\partial_s\psi\|_{L^2}.
-```
-The leading term is
-``` math
-\langle (e_\beta+e_0)\partial_s\psi,\ (e_\beta-e_0)\partial_s\psi\rangle
-=
-\langle ( (e_\beta+e_0)\cdot(e_\beta-e_0) )\,\partial_s\psi,\ \partial_s\psi\rangle
-=
-(\|e_\beta\|^2-\|e_0\|^2)\|\partial_s\psi\|_{L^2}^2 = 0,
-```
-so we need a slightly sharper test function that detects the geometric mismatch across the junction. To do so, choose $`\psi`$ supported in $`|s|\le s_0`$ with $`\partial_s\psi`$ aligned to the dominant transport direction in the chart. Because $`e_\beta(s)\cdot e_0=\cos\beta`$ on the core, we have
-``` math
-\|e_\beta-e_0\|^2 = 2(1-\cos\beta)
-\quad\text{pointwise on }|s|\le s_0.
-```
-Now consider the positive form
-``` math
-\|(e_\beta-e_0)\partial_s\psi\|_{L^2}^2
-=
-\int_{|s|\le s_0}\|e_\beta-e_0\|^2\,|\partial_s\psi|^2\,ds
-=
-2(1-\cos\beta)\,\|\partial_s\psi\|_{L^2(|s|\le s_0)}^2.
-```
-Since $`A_\parallel(e)=L(e)^*L(e)+V`$ is uniformly elliptic in the $`s`$ direction (bounded geometry), the operator difference controls the form difference via
-``` math
-\big| q_{e_\beta}[\psi]-q_{e_0}[\psi]\big|
-\;\ge\;
-c\,\|(e_\beta-e_0)\partial_s\psi\|_{L^2}^2
-\;-\;
-C\,\|W\|_{L^\infty}\,\|\psi\|_{H^1}^2,
-```
-for constants $`c,C`$ depending only on the slab bounds. Choosing $`\psi`$ with $`\|\psi\|_{H^1}=1`$ and supported in the core yields
-``` math
-\big| q_{e_\beta}[\psi]-q_{e_0}[\psi]\big|
-\;\ge\;
-c\,2(1-\cos\beta)\,\|\partial_s\psi\|_{L^2(|s|\le s_0)}^2 - C\,M_W.
-```
-For sufficiently small $`\beta`$ (and fixed $`M_W`$), the first term dominates uniformly for a suitable choice of $`\psi`$ with $`\|\partial_s\psi\|_{L^2(|s|\le s_0)}`$ bounded below, giving
-``` math
-\sup_{\|\psi\|_{H^1}=1}\big| q_{e_\beta}[\psi]-q_{e_0}[\psi]\big|
-\;\ge\;
-\kappa(1-\cos\beta).
-```
-By standard form/operator duality, this implies the operator norm lower bound $`\|A_\parallel(e_\beta)-A_\parallel(e_0)\|_{H^1\to H^{-1}}\ge \kappa(1-\cos\beta)`$. The equivalence to $`\kappa'\beta^2`$ for small $`\beta`$ follows from $`1-\cos\beta\simeq \beta^2/2`$. ◻
-
-</div>
-
-<div class="remark">
-
-*Remark 18*. The lemma is stated for a one-dimensional arclength coordinate $`s`$ for clarity. In higher-dimensional bounded-geometry neighborhoods, the same estimate holds with $`e(s)\partial_s`$ replaced by the directional derivative along the dominant tangent field and with $`H^1\to H^{-1}`$ norms taken on the local patch. The dependence on $`(\ell,s_0,M_W,M_V)`$ is absorbed into admissible-slab constants.
-
-</div>
-
-# Schur Complement and Thin-Branch Perturbativity
-
-This appendix provides the detailed block-operator analysis used in Section 8.
-
-## Block decomposition
-
-With respect to $`\mathcal{H}=\mathcal{H}_{\parallel}\oplus\mathcal{H}_{\perp}`$, write
-``` math
-A=
-\begin{pmatrix}
-A_{\parallel} & \rho B \\
-\rho B^{*} & A_{\perp}
-\end{pmatrix},
-```
-with $`A_{\perp}\ge \lambda_{\perp}I`$ uniformly.
-
-## Schur complement
-
-For $`z`$ near $`0`$,
-``` math
-(z-A)^{-1}_{\parallel} =
-\big(z-A_{\parallel}-\rho^2 B(z-A_{\perp})^{-1}B^{*}\big)^{-1}.
-```
-Because $`(z-A_{\perp})^{-1}`$ is uniformly bounded, the correction is $`O(\rho^2)`$.
-
-## Projector difference
-
-Integrating the resolvent difference around $`\Gamma`$ yields
-``` math
-\|\Pi(x)-\Pi_0\|\le K\rho^2,
-```
-where $`\Pi_0`$ is the projector of the decoupled operator. This establishes quadratic perturbativity.
-
-—
-
-# Statistical Limits and Conditional Concentration
-
-We provide measure-theoretic justification for the statistical limits used in Section 10.
-
-## Conditional probability
-
-All conditional probabilities are defined with respect to regular conditional distributions on standard Borel spaces. Existence and uniqueness follow from standard theorems.
-
-## Limit arguments
-
-Let $`B_\epsilon=\{C\le\epsilon\}`$. Because $`\rho_{\mathrm{th}}(x)\le c_+\sqrt{C(x)}`$, the event $`\{\rho>c_+\sqrt{\epsilon}\}`$ is disjoint from admissible motifs in $`B_\epsilon`$. This yields support contraction.
-
-Dominance of sprout motifs follows from the necessity part of the sprout theorem: non-sprout motifs have vanishing probability mass in $`B_\epsilon`$ as $`\epsilon\downarrow 0`$.
-
-## Exchange of limits
-
-All limits $`\epsilon\downarrow 0`$ are taken along sequences for which $`\mathbb{P}(B_\epsilon)>0`$. Standard dominated convergence arguments justify the exchange of limits and conditioning.
-
-—
-
-# Appendix Summary
-
-The appendices establish measurability, local realizability, operator bounds, perturbative structure, and statistical rigor required by the main text. Together they ensure that all results stated in the body of the paper follow from explicit, well-defined assumptions without hidden technical gaps.
+This is a useful result, but it is conditional. It neither creates the branch nor predicts its frequency. It does not choose graph edges, source coefficients, a biological capacity proxy, or a cross-domain growth law. Those are precisely the objects that a future selected MTT network model must emit. By separating them, Version 2 turns a broad analogy into an auditable research program with exact mathematical tests and clear failure conditions.

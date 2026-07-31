@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-31T05:09:35+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21714026",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "be27de246dce5da5eadef34919c18a48",
+      "local_pdf_sha256": "4f93cdbf38b0f29d04b0c490d6799444eceb2581e9faf122034e1c12bb23575f",
+      "paper_id": "projection-induced-network-geometry-sprouting-hidden-co-6919523e",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    }
+  ]
+}

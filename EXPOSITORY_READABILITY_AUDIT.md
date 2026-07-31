@@ -14,8 +14,7 @@ Canonical papers audited: **139**.
 | major | 6 |
 | moderate | 2 |
 | light | 5 |
-| low | 1 |
-| reviewed | 120 |
+| reviewed | 121 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -25,8 +24,8 @@ Canonical papers audited: **139**.
 | argument_flow | 32 |
 | conclusion | 8 |
 | concrete_foothold | 30 |
-| object_intuition | 86 |
-| orientation | 54 |
+| object_intuition | 87 |
+| orientation | 55 |
 | result_interpretation | 9 |
 
 ## Revision Queue
@@ -49,7 +48,6 @@ Canonical papers audited: **139**.
 | light | light | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 1 | 7592.0 | 6/7 | object_intuition |
 | light | light | `modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8` | 0 | 9868.0 | 6/7 | object_intuition |
 | light | light | `photons-entanglement-and-null-updating-in-modal-triplet-theory` | 0 | 5021.0 | 6/7 | object_intuition |
-| low | low | `projection-induced-network-geometry-sprouting-hidden-co-6919523e` | 17 | 552.5 | 7/7 | - |
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
 | reviewed | critical | `fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce` | 43 | 69.9 | 7/7 | - |
 | reviewed | moderate | `wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8` | 34 | 375.2 | 7/7 | - |
@@ -61,6 +59,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a` | 16 | 150.7 | 7/7 | - |
 | reviewed | major | `dynamics-of-coherence-capacity-transport-concentration-f2edc08a` | 15 | 181.9 | 6/7 | object_intuition |
 | reviewed | major | `fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534` | 15 | 197.8 | 6/7 | conclusion |
+| reviewed | major | `projection-induced-network-geometry-sprouting-hidden-co-6919523e` | 15 | 189.1 | 5/7 | orientation, object_intuition |
 | reviewed | major | `the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c` | 15 | 238.5 | 4/7 | object_intuition, argument_flow, result_interpretation |
 | reviewed | major | `the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707` | 15 | 189.0 | 6/7 | object_intuition |
 | reviewed | critical | `canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62` | 14 | 110.1 | 6/7 | object_intuition |

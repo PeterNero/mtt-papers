@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18274628",
+      "created": "2026-07-31T05:09:53.435292+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21714026",
+      "files": [
+        {
+          "checksum": "md5:be27de246dce5da5eadef34919c18a48",
+          "content_url": "https://zenodo.org/api/records/21714026/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 356708
+        }
+      ],
+      "id": "21714026",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21714026",
+      "resource_type": "publication",
+      "title": "Admissible Image Geometry for Network Motifs in Modal Triplet Theory Conditional Correlations, Sprout Bounds, and What Projection Alone Does Not Imply",
+      "updated": "2026-07-31T05:09:53.730925+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18255573",
       "created": "2026-07-31T04:47:44.983992+00:00",
       "creators": [

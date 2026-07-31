@@ -976,6 +976,14 @@
       "reviewed_main_tex_sha256": "f7fb7e7c3f6e7355614a06c8717e4d3cc9e554c20c5401cdbe192b8ccdb77d2e",
       "reviewed_pdf_sha256": "99a37230c678968a867c6ced40646861663bfe5beef782376f2f2e77ab99b4e6",
       "reviewed_source_tree_sha256": "0d0dcea1b6bb19b5603fad22419813eb857deffc8b3d1f28e61a43653ab8d984"
+    },
+    "projection-induced-network-geometry-sprouting-hidden-co-6919523e": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 withdraws the inference from no global reconstruction to specific image or graph geometry; defines the typed source, projection, extraction, motif map, and admissible image; proves a covering-map counterexample, direct recombination and graph-of-a-map nonfactorization tests, and the distinction between physical graphs, motif supports, and statistical dependence graphs; derives a Schur-complement local Hessian only under declared positivity; proves exact square-root, bend, and near-orthogonality bounds for an explicit anisotropic quadratic reserve with a relative-remainder certificate; shows the scaling exponent depends on the first nonzero order and that support alone supplies no prevalence law; retains the result as a conditional MTT encoding with source coefficients, capacity calibration, growth dynamics, and cross-domain validation open; and the complete 14-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "d03c6de4843fc501295fd52cadcbb33cb25ad2da36881497e2593dfb7c8e74b6",
+      "reviewed_pdf_sha256": "4f93cdbf38b0f29d04b0c490d6799444eceb2581e9faf122034e1c12bb23575f",
+      "reviewed_source_tree_sha256": "9981ce82f5a81e4ae7a73e2cc5cedc9e83a2983bcb19eb801d990e24e5fbc6e0"
     }
   }
 }

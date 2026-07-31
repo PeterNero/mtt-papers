@@ -5,18 +5,17 @@
   "priority_counts": {
     "critical": 3,
     "light": 5,
-    "low": 1,
     "major": 6,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 120
+    "reviewed": 121
   },
   "missing_dimension_counts": {
     "argument_flow": 32,
     "conclusion": 8,
     "concrete_foothold": 30,
-    "object_intuition": 86,
-    "orientation": 54,
+    "object_intuition": 87,
+    "orientation": 55,
     "result_interpretation": 9
   },
   "forbidden_boilerplate_hits": [],
@@ -2401,26 +2400,29 @@
     },
     {
       "paper_id": "projection-induced-network-geometry-sprouting-hidden-co-6919523e",
-      "title": "Projection-Induced Network Geometry Sprouting, Hidden Correlations, and Boundary Stabilization from Modal Triplet Theory",
-      "total_words": 11756,
-      "narrative_words": 9392,
-      "formal_results": 17,
-      "proofs": 10,
-      "narrative_words_per_result": 552.5,
-      "orientation": true,
-      "object_intuition": true,
+      "title": "Admissible Image Geometry for Network Motifs in Modal Triplet Theory Conditional Correlations, Sprout Bounds, and What Projection Alone Does Not Imply",
+      "total_words": 3774,
+      "narrative_words": 2837,
+      "formal_results": 15,
+      "proofs": 11,
+      "narrative_words_per_result": 189.1,
+      "orientation": false,
+      "object_intuition": false,
       "argument_flow": true,
       "result_interpretation": true,
       "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
-      "coverage_dimensions": 7,
-      "audit_priority": "low",
-      "heuristic_priority": "low",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
-      "missing_dimensions": []
+      "coverage_dimensions": 5,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "major",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 2 withdraws the inference from no global reconstruction to specific image or graph geometry; defines the typed source, projection, extraction, motif map, and admissible image; proves a covering-map counterexample, direct recombination and graph-of-a-map nonfactorization tests, and the distinction between physical graphs, motif supports, and statistical dependence graphs; derives a Schur-complement local Hessian only under declared positivity; proves exact square-root, bend, and near-orthogonality bounds for an explicit anisotropic quadratic reserve with a relative-remainder certificate; shows the scaling exponent depends on the first nonzero order and that support alone supplies no prevalence law; retains the result as a conditional MTT encoding with source coefficients, capacity calibration, growth dynamics, and cross-domain validation open; and the complete 14-page PDF was visually inspected.",
+      "missing_dimensions": [
+        "orientation",
+        "object_intuition"
+      ]
     },
     {
       "paper_id": "projection-limited-coherence-a-structural-theory-of-eff-3343fe62",
