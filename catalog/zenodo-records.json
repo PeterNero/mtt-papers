@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18262339",
+      "created": "2026-07-31T07:14:42.233808+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21715791",
+      "files": [
+        {
+          "checksum": "md5:4855aed159af07d8c835abf8579a43f6",
+          "content_url": "https://zenodo.org/api/records/21715791/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 377910
+        }
+      ],
+      "id": "21715791",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21715791",
+      "resource_type": "publication",
+      "title": "Photons, Entanglement, and Null Updating in Modal Triplet Theory: A Conditional Maxwell-to-Encoding Analysis",
+      "updated": "2026-07-31T07:14:42.775220+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.17076216",
       "created": "2026-07-31T06:43:47.379874+00:00",
       "creators": [

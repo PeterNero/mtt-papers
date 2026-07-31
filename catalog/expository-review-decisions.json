@@ -1,6 +1,14 @@
 {
   "schema": "mtt.expository-review-decisions.v1",
   "papers": {
+    "photons-entanglement-and-null-updating-in-modal-triplet-theory": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 replaces the unsupported derivation of light speed by exclusion, informal helicity counting, and global-right-inverse horizon claim with a typed conditional Maxwell-to-encoding interface. It derives the null characteristic cone and two physical helicities from the Maxwell principal symbol and gauge quotient; proves that global nonfactorization is compatible with local commutativity and no signaling; treats detection as an ordinary local instrument; keeps lensing, redshift, and Hawking thermality downstream of standard local equations; replaces horizon language by code-relative exterior recovery; distinguishes the closed fermionic q79 CAR net from the open bosonic Maxwell/CCR source; preserves the shared circle as a connection-and-holonomy intertwiner target; adds primary external references and a seven-step completion program; and the complete 12-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "d999dc775645cf2fc04a32bc894b61eb3848aaa1ecaef995547d8b976c684ce7",
+      "reviewed_pdf_sha256": "20cee129806a05d74ebfad249c91ce948bce87a132c0d44af7794b047b84b758",
+      "reviewed_source_tree_sha256": "4b30b0e12f0b67a00c4c6d58f4fb0dca8ab9b44741829d13e4b0f371eaf238fa"
+    },
     "modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7": {
       "status": "reviewed",
       "reviewed_on": "2026-07-31",

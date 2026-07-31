@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
-    "zenodo_records": 264,
-    "zenodo_records_matched": 264,
+    "zenodo_records": 265,
+    "zenodo_records_matched": 265,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -9418,54 +9418,81 @@
       ]
     },
     {
-      "abstract": "We present a unified structural account of photons in Modal Triplet Theory (MTT). In MTT, physical description arises from admissible coherent configurations on a higher-dimensional modal space, projected to an effective four-dimensional encoding. Within this framework, photons are identified as massless gauge-coherence modes whose preferred physical encoding is global and non-factorizing. Localization, particle-like behavior, and discrete detection events emerge only when admissibility constraints enforce a partition of this encoding, as in interaction or measurement. We show that null propagation at the speed of light arises as the unique admissible updating of massless gauge coherence under stability and contractivity conditions, rather than as a kinematic postulate. Wave\u2013particle duality is reinterpreted as a choice of encoding valid on different admissible domains. Gravitational lensing and redshift are described as continuous re-encodings of the same stretched coherence constraint under varying admissibility geometry, without invoking forces acting on localized particles. Photons near horizons provide a particularly transparent illustration of the framework. Horizons are identified as admissibility barriers across which the observable map loses a global right inverse, forcing exterior re-encoding. The resulting thermal description is shown to be consistent with Hawking\u2019s equations and is interpreted as a basin-measure shadow of restricted encoding, structurally analogous to measurement-induced probabilities. Time is treated as an encoding-dependent construct associated with coherence rebalancing and record formation; massless gauge modes admit atemporal encodings along null updating directions. This paper does not modify the equations of quantum electrodynamics, general relativity, or quantum field theory on curved spacetime. Rather, it clarifies their structural origin within MTT and unifies photon propagation, entanglement, measurement, horizons, and thermality as manifestations of a single admissibility\u2013encoding framework.",
+      "abstract": "This paper gives a typed account of photons in Modal Triplet Theory (MTT). The effective spacetime is a four-dimensional Lorentzian manifold Y4, while the candidate upper carrier is written Y4 x X6. The internal factor does not by itself select electromagnetism. A photon analysis additionally requires a U(1) gauge sector, its Maxwell action or equations, a physical state, and an upper-to-lower encoding map. Once the Maxwell sector is supplied, two central statements are exact. The principal symbol of the gauge-reduced Maxwell operator has nonzero physical characteristics only on the metric null cone. For each nonzero null covector in four dimensions, the transverse polarization space modulo gauge is two-dimensional and decomposes into helicities +1 and -1. Null updating is therefore a useful MTT name for Maxwell characteristic propagation; it is not an independent derivation obtained merely by excluding static or superluminal motion. We then separate global quantum structure from local propagation. A state on a local algebra net may be nonfactorizing across regions while spacelike observables commute. Entanglement is consequently compatible with local dynamics and no signaling. Localization and discrete photon records arise through ordinary local couplings and quantum instruments, not through a metaphysically special act of measurement. Gravitational lensing and redshift remain consequences of Maxwell theory on curved spacetime and admit an MTT encoding interpretation only downstream of those equations. For horizons, the relevant question is code-relative: can one exterior description recover a declared class of global states and correlations while respecting the dynamics and observable algebra? Hawking thermality is treated as an imported result of quantum field theory on curved spacetime, not derived from projection language alone. The result is a rigorous conditional photon interface and a sharply stated frontier: MTT still needs a same-source upper action that selects the bosonic U(1) sector, its state, and its interacting and horizon completions.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January 2026",
+      "current_version": "v2",
+      "date": "Version 2, July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18262339",
-        "created": "2026-01-15T21:24:19.435890+00:00",
+        "created": "2026-07-31T07:14:42.233808+00:00",
         "creators": [
           "Nero, Peter"
         ],
-        "doi": "10.5281/zenodo.18262340",
+        "doi": "10.5281/zenodo.21715791",
         "files": [
           {
-            "checksum": "md5:2ce704f1f21111ad12ee713896068959",
-            "content_url": "https://zenodo.org/api/records/18262340/files/Photons__Entanglement__and_Null_Updating_in_Modal_Triplet_Theory%20(1).pdf/content",
-            "key": "Photons__Entanglement__and_Null_Updating_in_Modal_Triplet_Theory (1).pdf",
-            "size": 296843
+            "checksum": "md5:4855aed159af07d8c835abf8579a43f6",
+            "content_url": "https://zenodo.org/api/records/21715791/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 377910
           }
         ],
-        "id": "18262340",
-        "match_kind": "title_or_file",
+        "id": "21715791",
+        "match_kind": "published_draft_reconciliation",
         "match_score": 1.0,
-        "publication_date": "2026-01-15",
-        "record_url": "https://zenodo.org/records/18262340",
+        "publication_date": "2026-07-31",
+        "record_url": "https://zenodo.org/records/21715791",
         "resource_type": "publication",
-        "title": "Photons, Entanglement, and Null Updating in Modal Triplet Theory",
-        "updated": "2026-01-15T21:24:19.956695+00:00",
-        "version": "v1.0"
+        "title": "Photons, Entanglement, and Null Updating in Modal Triplet Theory: A Conditional Maxwell-to-Encoding Analysis",
+        "updated": "2026-07-31T07:14:42.775220+00:00",
+        "version": "v2"
       },
-      "main_tex_sha256": "329a10040e2426aca5fb3c300c80485f4d7b5ce083238a6835ef9a4025042dd9",
+      "main_tex_sha256": "d999dc775645cf2fc04a32bc894b61eb3848aaa1ecaef995547d8b976c684ce7",
       "paper_id": "photons-entanglement-and-null-updating-in-modal-triplet-theory",
-      "paper_md_sha256": "3473528f5c4954a68720dfd15124630a69ec060300aaae1c45c020af6de9b999",
+      "paper_md_sha256": "436ec72f3b07b607b486ce1d444ebf3df336b4eeb71c32d6eb30045d8d1e8492",
       "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/photons-entanglement-and-null-updating-in-modal-triplet-theory/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "3124400d076923fab4f58542964dd3c4bf3e541524c4efe54bdc61f8a5a41683",
+        "selected_revision": true
       },
       "source_provenance": {
         "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Photons__Entanglement__and_Null_Updating_in_Modal_Triplet_Theory"
       },
-      "source_tree_sha256": "eeab083a21dc8cfa6af71b5e88d5937dc0ab074bc4148950629adaef2010d05a",
-      "title": "Photons, Entanglement, and Null Updating in Modal Triplet Theory",
+      "source_tree_sha256": "4b30b0e12f0b67a00c4c6d58f4fb0dca8ab9b44741829d13e4b0f371eaf238fa",
+      "title": "Photons, Entanglement, and Null Updating in Modal Triplet Theory: A Conditional Maxwell-to-Encoding Analysis",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18262339",
+          "created": "2026-07-31T07:14:42.233808+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21715791",
+          "files": [
+            {
+              "checksum": "md5:4855aed159af07d8c835abf8579a43f6",
+              "content_url": "https://zenodo.org/api/records/21715791/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 377910
+            }
+          ],
+          "id": "21715791",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-31",
+          "record_url": "https://zenodo.org/records/21715791",
+          "resource_type": "publication",
+          "title": "Photons, Entanglement, and Null Updating in Modal Triplet Theory: A Conditional Maxwell-to-Encoding Analysis",
+          "updated": "2026-07-31T07:14:42.775220+00:00",
+          "version": "v2"
+        },
         {
           "concept_doi": "10.5281/zenodo.18262339",
           "created": "2026-01-15T21:24:19.435890+00:00",
