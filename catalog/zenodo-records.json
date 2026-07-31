@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18261749",
+      "created": "2026-07-31T09:41:33.827309+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21718806",
+      "files": [
+        {
+          "checksum": "md5:4513947b229a3d9c26e1ae9ef7883cfe",
+          "content_url": "https://zenodo.org/api/records/21718806/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 365185
+        }
+      ],
+      "id": "21718806",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21718806",
+      "resource_type": "publication",
+      "title": "The Spectral Action as a Conditional Shadow of Coherent Fixed-Point Geometry A source contract between Modal Triplet Theory and almost-commutative geometry",
+      "updated": "2026-07-31T09:41:34.112398+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18355142",
       "created": "2026-07-31T09:23:12.265009+00:00",
       "creators": [

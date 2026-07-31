@@ -10,11 +10,10 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| critical | 1 |
 | major | 2 |
 | moderate | 2 |
 | light | 2 |
-| reviewed | 130 |
+| reviewed | 131 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -22,9 +21,9 @@ Canonical papers audited: **139**.
 | Dimension | Papers flagged |
 | --- | ---: |
 | argument_flow | 31 |
-| conclusion | 6 |
-| concrete_foothold | 25 |
-| object_intuition | 85 |
+| conclusion | 5 |
+| concrete_foothold | 24 |
+| object_intuition | 86 |
 | orientation | 60 |
 | result_interpretation | 7 |
 
@@ -32,7 +31,6 @@ Canonical papers audited: **139**.
 
 | Effective priority | Heuristic | Paper | Formal results | Narrative words/result | Coverage | Missing |
 | --- | --- | --- | ---: | ---: | ---: | --- |
-| critical | critical | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 15 | 54.1 | 4/7 | argument_flow, concrete_foothold, conclusion |
 | major | major | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 15 | 210.5 | 7/7 | - |
 | major | major | `particles-and-forces-as-coherence-basins-and-capacity-gradients` | 10 | 124.0 | 5/7 | object_intuition, concrete_foothold |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
@@ -90,6 +88,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `modal-fixed-points-bell-s-beables-and-the-limits-of-fac-59a69f5c` | 9 | 129.4 | 7/7 | - |
 | reviewed | major | `mtt-corrected-contact-loops-and-finite-one-loop-tadpole-cdd66d8e` | 9 | 123.2 | 5/7 | object_intuition, concrete_foothold |
 | reviewed | moderate | `the-proto-spinor-conditional-spinorial-closure-and-the-973217d8` | 9 | 316.7 | 6/7 | object_intuition |
+| reviewed | moderate | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 9 | 310.6 | 5/7 | object_intuition, argument_flow |
 | reviewed | moderate | `why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2` | 9 | 274.4 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90` | 8 | 349.8 | 7/7 | - |
 | reviewed | major | `deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3` | 8 | 205.4 | 5/7 | object_intuition, result_interpretation |

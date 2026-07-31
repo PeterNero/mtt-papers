@@ -1056,6 +1056,14 @@
       "reviewed_main_tex_sha256": "86b26c459c3a25de7fdcb999a77eada36dc6ac8ac716e03395dc9f1588ca984d",
       "reviewed_pdf_sha256": "357b339fa33a210eb9b2493bb6f1de5da024d9cd2becb03f768f0bce6b4604e6",
       "reviewed_source_tree_sha256": "71e5edb77ba1c2a9374fdfd0c6120f8e4e2752350af9eb4757c3a9146a490b8a"
+    },
+    "the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 rebuilds the spectral-action claim as a conditional same-source descent theorem. It separates standard almost-commutative spectral-action mathematics from the executed finite MTT packets and the open upper-action theorem; reports the exact representation, gauge-group, algebra-completion, and selected one-Higgs results at their actual tiers; keeps the finite Dirac entries and traces at profile tier; proves a proper-time representation and an explicit counterexample showing that a spectral gap or lower support bound cannot select the cutoff function; withdraws the one-bottleneck-vector coupling and cross-sector closure claims; defines the complete upper action, intertwiner, cutoff, Wick, and RG source contract; and the complete 11-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "55b231ec665734cffeca194165e41646d642988f7ce5fdc8cae10234932b9287",
+      "reviewed_pdf_sha256": "e10c8d9c2a6c195aed1bac7684bc9aa3bad0fd668f071b452d769a7457377294",
+      "reviewed_source_tree_sha256": "b2f2bce1876736985f58f1a6cb3f8e933be0f4a730a8869c65d27b9d538af5a7"
     }
   }
 }

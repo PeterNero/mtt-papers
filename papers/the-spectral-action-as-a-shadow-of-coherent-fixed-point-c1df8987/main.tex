@@ -1,390 +1,658 @@
 % !TEX program = pdflatex
 \documentclass[11pt]{article}
-\usepackage{series} % required by user
-% ---------- Encoding / Fonts ----------
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{microtype}
-
-% ---------- Layout ----------
-\usepackage{geometry}
-\geometry{margin=1in}
-
-% ---------- REQUIRED ----------
-
-
-% ---------- Math / Theorems ----------
-\usepackage{amsmath,amssymb,amsthm,mathtools}
-
-
-
-% ---------- Lists ----------
-\usepackage{enumitem}
-
-% ============================================================
-% Safe macros (no physics.sty)
-% ============================================================
+\usepackage{series}
+\usepackage{booktabs}
+\usepackage{array}
 
 \DeclareMathOperator{\Tr}{Tr}
 \DeclareMathOperator{\spec}{spec}
+\newcommand{\AF}{\mathcal{A}_F}
+\newcommand{\HF}{\mathcal{H}_F}
+\newcommand{\DF}{D_F}
+\newcommand{\AlgE}{\mathcal{A}_E}
+\newcommand{\HilbE}{\mathcal{H}_E}
+\newcommand{\DirE}{D_E}
+\newcommand{\AU}{\mathcal{A}_U}
+\newcommand{\HU}{\mathcal{H}_U}
+\newcommand{\DU}{D_U}
+\newcommand{\PU}{P_U}
 
-\newcommand{\normop}[1]{\left\lVert #1 \right\rVert}
-
-% ============================================================
-% Theorem environments
-% ============================================================
-\theoremstyle{plain}
-
-\theoremstyle{definition}
-
-\theoremstyle{remark}
-
-% ============================================================
-% Notation
-% ============================================================
-\newcommand{\ThetaB}{\Theta}
-
-% ============================================================
-% Title
-% ============================================================
-\title{\textbf{The Spectral Action as a Shadow of Coherent Fixed-Point Geometry}\\
-\large Standard Model couplings, Higgs sector, and noncommutative geometry from Modal Triplet Theory}
+\title{\textbf{The Spectral Action as a Conditional Shadow of Coherent Fixed-Point Geometry}\\
+\large A source contract between Modal Triplet Theory and almost-commutative geometry}
 \author{Peter Nero}
-\date{January, 2026}
+\date{July 2026, Version 2}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We show that the Connes--Chamseddine spectral action and the associated noncommutative
-geometric formulation of the Standard Model arise as four-dimensional shadows of
-coherent fixed-point geometry under projection and truncation in Modal Triplet
-Theory (MTT). The almost-commutative spectral triple---including its finite algebra,
-fermionic Hilbert space, and Dirac operator---emerges as an effective encoding of
-coherent-sector overlap geometry. The cutoff scale and cutoff function of the
-spectral action are fixed (up to admissible reparametrization) by the coherent
-spectral gap and spectral proper-time (SPT) damping, eliminating their apparent
-arbitrariness. Gauge couplings, Yukawa matrices, and Higgs-sector parameters are
-not independently tunable within a coherent universality class, but are fixed
-functions of a single bottleneck vector $\Theta$ that also controls collapse
-thresholds, spacetime event density, ultraviolet completion, and canonical geometric
-discreteness in independent shadow constructions. All results are slab-local and
-admissibility-conditioned.
+This paper asks when the Connes--Chamseddine spectral action may be interpreted
+as a lower-dimensional encoding of Modal Triplet Theory (MTT).  The answer is
+conditional and can be stated precisely.  Given a real even finite spectral
+triple, a compact four-dimensional Euclidean spin triple, cutoff data, and an
+intertwining source map from a selected MTT upper complex, the
+almost-commutative product and its spectral action follow by standard
+noncommutative geometry.  Current MTT calculations supply substantial finite
+data: a three-family chiral representation with exact anomaly cancellation, the
+faithful Standard Model gauge group, a necessary neutral algebra summand, an
+explicit finite Dirac operator at profile tier, and a selected rank-four
+one-form sector representing one complex Higgs doublet.  They do not yet derive
+the physical entries of the finite Dirac operator, the continuum Euclidean
+triple, the cutoff function and scale, absolute field normalization, or the
+renormalization-group transport from one selected upper action.  In particular,
+a spectral gap alone does not determine a cutoff function, and the Standard
+Model couplings are not presently fixed by one bottleneck vector.  The result
+is therefore a rigorous spectral-action encoding theorem and an explicit
+source-obligation theorem, not a derivation of the full Standard Model action.
 \end{abstract}
+
+\section*{Version 2 Revision Note}
+\begin{description}[leftmargin=2.8cm,style=nextline]
+\item[Supersedes] Version 1.0, released in January 2026.
+\item[Reason] The original paper promoted assumed overlap and proper-time data
+to a canonical spectral triple, a unique cutoff, and source-derived Standard
+Model parameters.  Those conclusions did not follow from the stated
+hypotheses.
+\item[Resolution] This version separates standard spectral-action mathematics,
+executed finite MTT results, and the open source/descent problem.  It proves a
+conditional descent theorem, gives a counterexample to cutoff uniqueness from
+a gap, and reports the exact and profile tiers of the current finite
+calculations.
+\item[Retained content] The spectral action remains a natural candidate for a
+four-dimensional encoding of coherent fixed-point data, and inner
+fluctuations remain the correct language for the gauge and scalar sectors once
+the spectral triple is supplied.
+\item[Open boundary] A selected upper differential/action, continuum
+Euclidean-to-Lorentzian bridge, source-derived finite Dirac entries, cutoff
+measure, absolute normalization, and quantum/RG transport remain open.
+\end{description}
 
 \tableofcontents
 
-% ============================================================
-\section{Introduction}
-% ============================================================
+\section{Question, answer, and scope}
 
-The noncommutative geometric (NCG) formulation of the Standard Model provides a
-remarkably economical geometric description of matter and gravity via the
-Connes--Chamseddine spectral action. Despite its success, several structural
-questions remain open within NCG itself: the origin of the finite algebra,
-fermionic Hilbert space, and Dirac operator; the physical meaning of the cutoff
-scale and cutoff function; and the apparent freedom of Standard Model parameters.
+The spectral action packages geometry and matter into operator data.  For a
+spectral triple $(\mathcal{A},\mathcal{H},D)$, the bosonic term is a trace of a
+function of the Dirac operator, while the fermionic term pairs fermions with
+the fluctuated Dirac operator.  In the almost-commutative Standard Model, the
+continuous spin geometry and a finite noncommutative geometry are combined in
+one product triple \cite{CC1996,CCM2006}.  This economy makes the construction
+an attractive possible endpoint for an MTT projection.
 
-In this paper we show that these structures are not fundamental but arise as
-four-dimensional shadows of coherent fixed-point geometry under projection and
-truncation in Modal Triplet Theory (MTT). This places NCG on the same footing as
-other effective frameworks---asymptotic safety, loop quantum gravity, and causal
-set theory---all of which appear as partial encodings of the same coherent sector
-in companion works.
+The important word is \emph{endpoint}.  A lower spectral triple does not by
+itself explain which upper dynamics selected its algebra, representation,
+Dirac operator, or cutoff data.  Conversely, a coherent projector or a
+spectral gap is not automatically a spectral triple.  The purpose of this
+paper is to identify the exact bridge that would make the ``shadow'' language
+mathematical and to report how much of that bridge has actually been built.
 
-The present paper completes the matter-sector component of a multi-sector
-validation program by demonstrating cross-sector closure: the same finite
-bottleneck vector $\Theta$ governs collapse, event structure, ultraviolet
-completion, canonical geometry, and Standard Model couplings.
-
-% ============================================================
-\section{Minimal Coherent-Sector Inputs}
-% ============================================================
-
-\begin{assumption}[Slab-local coherent regime]\label{ass:slab}
-All results are asserted on bounded-geometry time slabs where:
-\begin{enumerate}[label=(S\arabic*)]
-\item the coherent projector is bounded on the controlled domain;
-\item a uniform spectral gap $\lambda_\ast$ separates coherent and noncoherent modes;
-\item admissible basins possess strictly positive stability margins away from boundaries.
+Three layers must be kept separate.
+\begin{enumerate}
+\item \textbf{Imported spectral geometry.}  Once an almost-commutative real
+even spectral triple and cutoff data are given, standard spectral-action
+mathematics produces a bosonic action and fermionic couplings.
+\item \textbf{Executed finite MTT encoding.}  Current calculations construct
+and test a particular finite representation, algebra completion, finite Dirac
+operator at profile tier, and finite one-form sector.
+\item \textbf{Open MTT source theorem.}  One selected upper action must still
+emit those lower objects through commuting, connection-preserving maps and
+must supply their physical numerical values.
 \end{enumerate}
-\end{assumption}
 
-\begin{definition}[Bottleneck vector]\label{def:Theta}
-The bottleneck vector $\ThetaB$ consists of the finite set of coherent-sector data
-controlling projection, truncation, and stability, including the spectral gap,
-projector norms, overlap geometry, and symplectic normalization.
+This distinction is not a retreat from the original proposal.  It turns a
+broad analogy into a testable research program.  The finite calculations tell
+us that a noncommutative-geometric encoding is compatible with the selected
+MTT branch.  The source theorem would explain why that encoding, with those
+values, is physically selected.
+
+\subsection{Status vocabulary}
+
+\begin{definition}[Claim tiers]\label{def:tiers}
+In this paper:
+\begin{enumerate}
+\item \emph{derived exact} means an algebraic or finite computational statement
+proved from the declared packet without measured Standard Model values;
+\item \emph{profile replay} means that accepted physical parameter values are
+inserted into a typed operator and the resulting identities or spectra are
+then checked;
+\item \emph{conditional} means a theorem whose hypotheses include mathematical
+objects not yet selected by MTT;
+\item \emph{open} means that no accepted source theorem currently emits the
+required object or value.
+\end{enumerate}
 \end{definition}
 
-\begin{remark}
-The role of $\ThetaB$ is operational: it is the minimal data required to control
-slab-local reduced dynamics. No global claims beyond admissibility are made.
-\end{remark}
+Profile replay is useful: it tests whether the proposed carrier can hold the
+known theory without contradiction.  It is not numerical prediction.
+Likewise, a conditional theorem can close the logic of a bridge while leaving
+the existence or selection of its input data open.
 
-% ============================================================
-\section{Emergence of the Spectral Triple}
-\label{sec:spectral_triple}
-% ============================================================
+\section{The standard spectral-action contract}
 
-\begin{assumption}[Coherent overlap structure]\label{ass:overlap}
-The coherent sector admits finitely many admissible internal overlap channels,
-stable under truncation and determined by $\ThetaB$.
-\end{assumption}
+\subsection{Finite and continuous triples}
 
-\begin{definition}[Overlap algebra]
-Let $\mathcal{A}_{\mathrm{coh}}$ denote the involutive algebra generated by admissible
-overlap operators acting on the reduced coherent Hilbert space.
+\begin{definition}[Finite real even spectral data]\label{def:finite}
+A finite real even spectral datum is a tuple
+\[
+  (\AF,\HF,\DF,J_F,\gamma_F)
+\]
+where $\AF$ is a finite-dimensional involutive algebra represented on the
+finite-dimensional Hilbert space $\HF$, $\DF=\DF^\ast$, $J_F$ is an
+antilinear real structure, and $\gamma_F$ is a grading.  The tuple becomes a
+finite real even spectral triple only after the relevant reality, grading,
+order-zero, order-one, orientability, and Poincare-duality conditions are
+verified in the chosen convention.
 \end{definition}
 
-\begin{proposition}[Finite spectral algebra from coherent overlaps]
-\label{prop:finite_algebra}
-Under Assumption~\ref{ass:overlap}, the admissible overlap algebra
-$\mathcal{A}_{\mathrm{coh}}$ admits a canonical representative
-(up to Morita equivalence and admissible basis choice)
-that may be identified with the finite algebra $\mathcal{A}_F$
-of an almost-commutative spectral triple satisfying unimodularity,
-KO-dimension, and first-order conditions.
-\end{proposition}
-
-\begin{proof}
-Admissibility restricts overlaps to finitely many stable channels closed under
-composition and involution. Imposing unimodularity and KO-dimension constraints
-selects a canonical real form and representation class. Within this class,
-$\mathcal{A}_{\mathrm{coh}}$ admits a representative Morita-equivalent to the
-standard finite algebra used in the Connes--Chamseddine construction. \qedhere
-\end{proof}
-
-\begin{proposition}[Fermionic Hilbert space]
-The fermionic Hilbert space $\mathcal{H}_F$ of the spectral triple is the reduced
-coherent Hilbert space obtained by projecting admissible internal modes.
-\end{proposition}
-
-\begin{theorem}[Dirac operator as overlap generator]
-\label{thm:dirac}
-Compatibility with the coherent overlap algebra, bounded commutators, grading,
-and reality conditions selects a canonical Dirac-type operator on the reduced
-Hilbert space, unique up to bounded perturbations and admissible inner
-fluctuations. This operator coincides with the Dirac operator of the
-corresponding almost-commutative spectral triple.
-\end{theorem}
-
-\begin{proof}
-Coherent overlap dynamics induces a first-order differential generator.
-Requiring bounded commutators with $\mathcal{A}_F$, compatibility with grading
-and reality inherited from admissibility, and stability under inner fluctuations
-restricts the generator to a Dirac-type operator. Uniqueness holds up to bounded
-perturbations and inner fluctuations, as in standard spectral triple theory.
-\qedhere
-\end{proof}
-
-% ============================================================
-\section{The Spectral Action as a Coherent Truncation Shadow}
-% ============================================================
-
-\begin{assumption}[Coherent proper-time kernel]\label{ass:kernel}
-The coherent fixed-point action admits a proper-time representation with a positive
-measure $\mu(\tau)$ supported on $\tau\ge\tau_0\sim\lambda_\ast^{-1}$, encoding
-spectral proper-time (SPT) damping.
-\end{assumption}
-
-\begin{theorem}[Spectral action as coherent truncation shadow]
-\label{thm:spectral_shadow}
-Within the coherent universality class, the spectral action
+\begin{definition}[Euclidean base triple]\label{def:base}
+Let $Y_E$ be a compact four-dimensional Riemannian spin manifold.  Its
+canonical Euclidean spin triple is
 \[
-S_{\mathrm{spec}} = \Tr\, f\!\left(\frac{D^2}{\Lambda^2}\right)
+  \bigl(\AlgE,\HilbE,\DirE\bigr)
+  =
+  \bigl(C^\infty(Y_E),L^2(Y_E,S),\not{D}_{Y_E}\bigr).
 \]
-arises as the truncation shadow of the coherent fixed-point action. The cutoff
-scale satisfies $\Lambda\sim\lambda_\ast^{1/2}$, and the cutoff function $f$ is
-completely monotone and fixed (up to admissible reparametrization) by the SPT
-kernel.
+The compactness, spin structure, Riemannian signature, and domain of
+$\not{D}_{Y_E}$ are part of the input.  They are not consequences of a finite
+internal triple.
+\end{definition}
+
+Given Definitions~\ref{def:finite} and~\ref{def:base}, the
+almost-commutative product uses
+\[
+ \mathcal{A}=\AlgE\otimes\AF,\qquad
+ \mathcal{H}=\HilbE\otimes\HF,\qquad
+ D=\DirE\otimes 1+\gamma_E\otimes\DF.
+\]
+The exact signs and KO-dimension conventions must be fixed consistently.
+Inner fluctuations of $D$ then generate gauge and scalar fields.  This is
+standard noncommutative geometry; it should not be counted as a new MTT
+derivation.
+
+\subsection{Bosonic and fermionic actions}
+
+For a suitable positive cutoff profile $f$ and scale $\Lambda>0$, write
+\begin{equation}\label{eq:spectral-action}
+ S_{\mathrm{bos}}[D_A]
+   =\Tr f(D_A^2/\Lambda^2),
+\end{equation}
+\par\smallskip\noindent
+where $D_A$ is the fluctuated Dirac operator.  The fermionic part is represented
+schematically by
+\begin{equation}\label{eq:fermionic-action}
+ S_{\mathrm{ferm}}[\Psi,D_A]
+   =\frac12\langle J\Psi,D_A\Psi\rangle ,
+\end{equation}
+\par\smallskip\noindent
+with the physical fermion space and doubling prescription stated separately.
+
+Under the usual ellipticity and regularity assumptions, the large-$\Lambda$
+expansion of \cref{eq:spectral-action} has the form
+\begin{equation}\label{eq:heat}
+ \Tr f(D_A^2/\Lambda^2)
+ \sim
+ \sum_{k\geq 0} F_{4-k}\,\Lambda^{4-k}\,a_k(D_A^2),
+\end{equation}
+\par\smallskip\noindent
+where the $a_k$ are heat-kernel coefficients and the $F_j$ are moments or
+derivatives of $f$, according to convention.  The Einstein--Hilbert,
+cosmological, gauge, scalar kinetic, and scalar potential terms arise from
+this expansion when the chosen product triple has the required content.
+
+\begin{theorem}[Conditional spectral-action output]\label{thm:standard}
+Assume the Euclidean base triple, a finite real even spectral triple, a valid
+almost-commutative product, a fluctuated self-adjoint Dirac operator with the
+required elliptic regularity, and cutoff data $(f,\Lambda)$.  Then
+\cref{eq:spectral-action,eq:heat} define the bosonic spectral action and its
+asymptotic local expansion.  If the finite representation and finite Dirac
+operator are those of the Standard Model encoding, the expansion has the
+corresponding gauge, Higgs, and Yukawa operator content.
 \end{theorem}
 
 \begin{proof}
-The coherent action admits a proper-time representation
-\[
-S_{\mathrm{coh}} = \int_0^\infty \dd\tau\, \mu(\tau)\,
-\Tr\!\left(e^{-\tau D^2}\right),
-\]
-with $\mu(\tau)$ supported on $\tau\ge\tau_0$. Truncation replaces the integral
-by a regulated trace, yielding the spectral action with
-\[
-f(x)=\int_{\tau_0}^\infty \dd\tau\,\mu(\tau)e^{-\tau x}.
-\]
-Thus $f$ belongs to a constrained completely monotone class, and
-$\Lambda\sim\tau_0^{-1/2}\sim\lambda_\ast^{1/2}$. \qedhere
+This is the standard heat-kernel consequence of the spectral-action principle
+applied to the declared product triple \cite{CC1996,CCM2006}.  The theorem is
+conditional because the triple and cutoff data occur among its hypotheses.
 \end{proof}
 
-% ============================================================
-\section{Standard Model Couplings Are Not Independently Tunable}
-% ============================================================
+The theorem explains what the spectral action does after its inputs are known.
+It does not select those inputs, prove that they descend from MTT, or determine
+the physical renormalized parameters.
 
-\begin{proposition}[Gauge kinetic normalization]
-Gauge kinetic terms arise from overlap normalization and are fixed functions of
-$\ThetaB$.
+\section{Proper time, spectral gaps, and cutoff nonuniqueness}
+
+Version 1 proposed that a coherent proper-time kernel and a spectral gap fix the
+cutoff function.  There is a correct mathematical statement nearby, but the
+selection claim was too strong.
+
+\begin{proposition}[Proper-time representation]\label{prop:proper}
+Let $\mu$ be a finite positive Borel measure on $[0,\infty)$.  Then
+\[
+  f_\mu(x)=\int_0^\infty e^{-\tau x}\,\dd\mu(\tau),
+  \qquad x\geq 0,
+\]
+is completely monotone.  For a positive self-adjoint operator $D^2$, whenever
+the traces and interchange of integrals are justified,
+\[
+  \Tr f_\mu(D^2/\Lambda^2)
+  =
+  \int_0^\infty
+  \Tr\!\left(e^{-\tau D^2/\Lambda^2}\right)\dd\mu(\tau).
+\]
 \end{proposition}
 
-\begin{proposition}[Yukawa matrices as overlap matrices]
-Yukawa matrices encode overlap strengths between coherent internal sectors and are
-fixed (up to admissible basis changes) by $\ThetaB$.
+\begin{proof}
+Differentiation under the integral gives
+$(-1)^n f_\mu^{(n)}(x)=\int \tau^n e^{-\tau x}\dd\mu(\tau)\geq0$.
+The trace identity follows from the functional calculus and Tonelli's theorem
+under the stated finiteness assumptions.
+\end{proof}
+
+\begin{proposition}[A gap does not select the cutoff]\label{prop:no-gap}
+Knowledge of a positive spectral gap or of a lower proper-time support bound
+$\tau_0>0$ does not determine the cutoff profile.
 \end{proposition}
 
-\begin{theorem}[Higgs sector coefficients]
-\label{thm:higgs}
-Within a coherent universality class, the Higgs mass parameter and quartic
-self-coupling appearing in the spectral action are fixed functions of $\ThetaB$ and
-are not independently tunable.
+\begin{proof}
+The two positive measures
+\[
+  \mu_1=\delta_{\tau_0},
+  \qquad
+  \mu_2=\tfrac12\delta_{\tau_0}+\tfrac12\delta_{2\tau_0}
+\]
+have the same lower support point $\tau_0$, but give
+\[
+ f_1(x)=e^{-\tau_0x},
+ \qquad
+ f_2(x)=\tfrac12e^{-\tau_0x}+\tfrac12e^{-2\tau_0x}.
+\]
+They are different cutoff functions and have different moments.  A relation
+such as $\Lambda\sim\tau_0^{-1/2}$ therefore sets at most a characteristic
+scale after a convention is chosen; it does not select $f$.
+\end{proof}
+
+This no-go result identifies the missing datum cleanly.  MTT needs a selected
+proper-time measure, or an equivalent source functional, together with a
+normalization convention.  A family of admissible damping functions is not the
+same as one predicted cutoff profile.
+
+\section{The finite MTT execution}
+
+The current finite results are stronger than the assumptions used in Version
+1, but their status is more differentiated.  They should be presented
+directly rather than summarized as one undefined bottleneck vector.
+
+\subsection{Representation and gauge group}
+
+The selected finite carrier has a three-family chiral sector
+\[
+  \mathcal{H}_{\mathrm{chiral}}
+   =\mathbb{C}^3_{\mathrm{family}}\otimes\mathcal{H}_{16},
+  \qquad \dim_\mathbb{C}\mathcal{H}_{\mathrm{chiral}}=48.
+\]
+Its rows reproduce the $Q,u^c,d^c,L,e^c,N^c$ representation pattern.  On that
+same packet the local cubic, mixed, gravitational, and global $SU(2)$ anomaly
+checks cancel exactly.  This is an exact finite representation result, not yet
+a theorem selecting a physical compactification vacuum.
+
+The native bundle automorphisms produce
+\[
+ U(1)\times SU(2)\times SU(3)
+\]
+on the selected carriers.  Their central action has diagonal kernel
+$\mathbb{Z}_6$, giving the faithful group
+\[
+ G_{\mathrm{SM}}
+   =\frac{SU(3)\times SU(2)\times U(1)_Y}{\mathbb{Z}_6}.
+\]
+This exact result establishes the lower finite gauge group.  It does not by
+itself provide its kinetic action or running couplings.
+
+\subsection{Why the finite algebra requires completion}
+
+The native three-summand candidate
+\[
+  \mathbb{C}\oplus\mathbb{H}\oplus M_3(\mathbb{C})
+\]
+supports the familiar Standard Model representation, but the executed
+finite-axiom test finds a genuine obstruction in the neutral sector: the
+$N^c$ self-edge obstructs orientability and the associated antisymmetric
+intersection form is singular.  Thus the uncompleted native triple is not a
+full finite real-even triple.
+
+The minimal four-summand completion
+\[
+ \AF=
+ \mathbb{C}\oplus\mathbb{H}\oplus M_3(\mathbb{C})\oplus\mathbb{C}_N
+\]
+moves the neutral right-handed state to a distinct central sheet.  The
+completed packet has an explicit orienting cycle and a nondegenerate
+intersection form.  The anomaly equations then select one primitive
+anomaly-free abelian direction, reproducing hypercharge while excluding a
+second independent physical $U(1)$.
+
+This is an important correction to the idea that ``coherent overlap'' alone
+canonically gives the standard finite algebra.  The algebra was selected only
+after a no-go theorem and a specific minimal completion.
+
+\subsection{Finite Dirac operator and Higgs one-forms}
+
+On the completed finite Hilbert space, the current execution constructs an
+explicit $96\times96$ finite Dirac operator.  Self-adjointness, oddness,
+KO-dimension-six reality, and the order-zero and order-one conditions are
+checked on the accepted profile.  The word \emph{profile} matters: the charged,
+neutral, and Majorana entries are accepted physical coordinates, not yet
+values emitted by an MTT source theorem.
+
+The one-form calculation evaluates all $26\times26=676$ real-algebra basis
+pairs.  The unrestricted real fluctuation space has rank $12$, consisting of
+three rank-four scalar-doublet modules.  It therefore does not automatically
+give the one-Higgs Standard Model.  A selected q79/proto-spinor alignment
+projector has rank $4$ and removes eight unwanted real scalar directions,
+leaving one complex Higgs doublet.
+
+The finite gauge traces are $10:6:6$ before the conventional $5/3$
+hypercharge normalization and $6:6:6$ afterward.  The profile finite Dirac
+operator also emits finite Yukawa invariants.  These are exact calculations
+\emph{of the selected/profile packet}; they are not yet high-scale physical
+predictions or an absolute normalization theorem.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth}
+                >{\raggedright\arraybackslash}p{0.20\textwidth}
+                >{\raggedright\arraybackslash}p{0.40\textwidth}}
+\toprule
+Object & Current tier & What remains \\
+\midrule
+Three-family representation and anomaly cancellation
+& Derived exact
+& Physical vacuum/source selector \\
+Faithful $G_{\mathrm{SM}}/\mathbb{Z}_6$ structure
+& Derived exact
+& Upper automorphism and action transfer \\
+Four-summand finite algebra
+& Derived exact after no-go
+& Same-source continuum realization \\
+$96\times96$ finite Dirac operator
+& Profile replay
+& Source-derived masses, mixings, and phases \\
+Rank-four one-Higgs submodule
+& Derived exact for selected projector
+& Upstream derivation of the projector \\
+Gauge and Yukawa finite traces
+& Exact evaluation of profile data
+& Cutoff moments, absolute normalization, and RG transport \\
+\bottomrule
+\end{tabular}
+\caption{The finite spectral-action status.  ``Exact'' describes the declared
+packet and must not be read as source selection of its profile entries.}
+\label{tab:status}
+\end{table}
+
+\section{The missing source/descent contract}
+
+To call the spectral action an MTT shadow in more than an interpretive sense,
+one must specify how upper coherent data descend to the lower product triple.
+The following contract makes that obligation explicit.
+
+\begin{definition}[Selected spectral-action source contract]\label{def:source}
+A selected spectral-action source contract consists of:
+\begin{enumerate}
+\item an upper Hilbert complex $(\HU,\DU)$ with a specified dense domain,
+upper involutive algebra $\AU$, real/grading data where required, and one
+selected action $S_U$;
+\item a selected orthogonal projector $\PU$ whose range reduces $\DU$ and the
+relevant upper algebra action;
+\item a unitary
+\[
+ U:\Ran\PU\longrightarrow \HilbE\otimes\HF
+\]
+and a representation homomorphism
+$\iota:\AlgE\otimes\AF\to\PU\AU\PU$;
+\item the intertwining identities
+\[
+ U(\PU\DU\PU)U^{-1}
+ =\DirE\otimes1+\gamma_E\otimes\DF
+ \quad\text{and}\quad
+ U\,\iota(a)\,U^{-1}=\pi(a);
+\]
+\item compatible transfer of the real structure, grading, domains,
+connections, inner fluctuations, and trace or measure entering the action;
+\item a selected rule sending the upper action to the lower bosonic and
+fermionic functionals, including $(f,\Lambda)$, field normalization, Wick
+dictionary, and RG/mass-scheme convention.
+\end{enumerate}
+\end{definition}
+
+The reducing condition is essential.  A generic compression $PDP$ need not
+inherit the bounded-commutator, first-order, reality, or domain properties of a
+spectral triple.  Nor does equality of finite dimensions produce a canonical
+unitary intertwiner.
+
+\begin{theorem}[Conditional MTT spectral-action encoding]\label{thm:descent}
+If a selected MTT upper object satisfies
+Definition~\ref{def:source}, then the lower almost-commutative triple and its spectral
+action are certified encodings of that upper object.  Every lower operator,
+inner fluctuation, and action term is then the image of declared upper data
+under the same commuting source map.
 \end{theorem}
 
 \begin{proof}
-The Higgs field arises as an inner fluctuation of $D_F$. Its potential is determined
-by Seeley--DeWitt coefficients, which depend on traces of powers of $D_F$. Since
-$D_F$ is fixed (up to admissible fluctuations) by Theorem~\ref{thm:dirac}, the Higgs
-coefficients are fixed by $\ThetaB$. \qedhere
+The first four clauses identify the reduced upper algebra, Hilbert space, and
+differential with the lower product triple.  Compatibility with the real
+structure, grading, domains, and connections transfers the finite and product
+axioms.  The final clause identifies the upper action functional and trace data
+with \cref{eq:spectral-action,eq:fermionic-action}.  The standard output theorem
+\ref{thm:standard} then supplies the lower spectral-action expansion.  Because
+all maps belong to one contract, the result is a source-preserving descent
+rather than an after-the-fact isomorphism.
 \end{proof}
 
-% ============================================================
-\section{Relation to RG Flow and UV Completion}
-% ============================================================
-
-\begin{proposition}[Spectral action as IR shadow of $\Gamma_\infty$]
-The spectral action corresponds to the infrared truncation of the ultraviolet
-endpoint functional $\Gamma_\infty$ obtained in the asymptotic safety shadow.
-\end{proposition}
-
-% ============================================================
-\section{Relation to NCG and Standard Model Phenomenology}
-% ============================================================
-
-The coherent-shadow interpretation explains why NCG predictions are robust yet
-sensitive to truncation, why coupling relations are approximate, and why no exact
-predictions arise without cross-sector closure.
-
-% ============================================================
-\section{Cross-Sector Closure and Falsifiability}
-% ============================================================
-
-\begin{theorem}[Cross-sector closure]
-Within the coherent universality class on slabs, collapse thresholds, spacetime
-event density, ultraviolet completion, canonical geometry, and Standard Model
-parameters are fixed functions of the same bottleneck vector $\ThetaB$.
-\end{theorem}
-
-\begin{corollary}[Falsifiability]
-If any sector requires parameter values incompatible with $\ThetaB$ inferred from
-another, the coherent-sector framework is falsified.
+\begin{corollary}[What remains open]\label{cor:open}
+The current finite carrier and spectral calculations do not prove
+\cref{thm:descent}.  They establish lower representation compatibility and
+finite operator content, but they do not supply the selected upper
+differential/action, continuum base triple, full intertwiner, cutoff measure,
+or physical source values required by Definition~\ref{def:source}.
 \end{corollary}
 
-% ============================================================
-\section{Conclusions}
-% ============================================================
+This is the precise frontier denoted by the live upper-action blocker.  Adding
+another compatible lower matrix cannot close it.  Closure requires one upper
+object whose automorphisms, zero modes, products, finite operators, and action
+all commute with the same descent maps.
 
-We have shown that the spectral action and the noncommutative geometric formulation
-of the Standard Model arise as shadows of coherent fixed-point geometry under
-projection and truncation. Matter, gravity, collapse, spacetime events, ultraviolet
-completion, and canonical geometry are unified through a single bottleneck vector
-controlling admissibility.
+\section{Which parameter claims survive}
 
-All results are slab-local and admissibility-conditioned. Together with companion
-shadow-bridge analyses, this work completes a multi-sector validation program for
-coherence-based fundamental dynamics.
+\subsection{Gauge sector}
+
+The finite representation fixes the gauge generators and their trace ratios on
+the selected packet.  Once a cutoff moment and field normalization are supplied,
+these traces constrain relative kinetic coefficients.  They do not select the
+absolute coupling scale, the matching scale, threshold corrections, or the RG
+trajectory.  Therefore the exact finite trace ratio is a structural result;
+measured low-energy gauge couplings are not derived by this paper.
+
+\subsection{Yukawa and mass sector}
+
+In almost-commutative geometry the entries of $\DF$ carry the Yukawa and neutral
+mass information.  The current $96\times96$ construction shows that the accepted
+profile can be placed in a finite Dirac operator satisfying the tested axioms.
+This closes an encoding problem.  A strict MTT prediction would instead require
+the upper source to emit the entries of $\DF$ before observed masses, mixings,
+or phases are inserted.  That source-value theorem remains open.
+
+\subsection{Higgs sector}
+
+The executed one-form calculation and the rank-four alignment projector explain
+how one complex Higgs doublet can be isolated inside the completed finite
+geometry.  The coefficients of its effective potential depend on finite Dirac
+invariants, spectral moments, normalization, matching conditions, and RG
+transport.  Since several of these inputs are still profile or open, the Higgs
+mass parameter and quartic coupling are not presently fixed functions of a
+single MTT vector.
+
+\subsection{Cutoff and gravitational terms}
+
+The cosmological and gravitational coefficients in the heat-kernel expansion
+depend on different moments of $f$ and on the continuum geometry.  The gap
+no-go in Proposition~\ref{prop:no-gap} prevents these moments from being inferred from one
+spectral scale.  A physical Lorentzian interpretation additionally requires a
+Wick or real-time contract; a Euclidean heat-kernel calculation alone does not
+provide unitary Lorentzian dynamics.
+
+\section{A concrete reading of the shadow proposal}
+
+It is useful to see what the current result does accomplish.  Begin with the
+selected finite family and gauge representation.  Complete its algebra only
+after the neutral-sector no-go forces a distinct central sheet.  Insert the
+accepted finite Dirac profile and verify the finite axioms.  Enumerate the
+finite one-forms, observe that the raw scalar space is too large, and apply the
+selected rank-four alignment projector.  The result is a typed finite
+noncommutative geometry with the Standard Model gauge representation and one
+complex Higgs doublet.
+
+At this stage the word ``shadow'' has an operational but limited meaning: the
+finite MTT packet can be represented by the lower noncommutative data, and the
+spectral action is the standard action language for that data after the
+continuum and cutoff inputs are appended.  What is not yet known is whether
+the same selected upper geometry generates every appended datum.
+
+The distinction resembles the difference between fitting coordinates to a
+known solution and deriving the evolution equation that selects it.  The
+finite execution has made the coordinates and consistency checks explicit.
+The source/descent contract asks for the evolution and selection law.
+
+\section{Relation to the broader MTT program}
+
+This paper is deliberately downstream of the MTT fixed-point, projection, and
+typed-realization papers.  Fixed points can identify stable or invariant
+subspaces.  Projection can define a reduced carrier.  Neither operation alone
+constructs a self-adjoint Dirac operator, a real structure, a cutoff measure,
+or an action.  Those objects require the additional clauses in
+Definition~\ref{def:source}.
+
+The paper is also narrower than the dedicated MTT-to-NCG analysis.  That work
+audits the complete finite spectral-triple axioms, the Euclidean product, the
+Wick contract, moment identifiability, and the finite gauge-fixed complex in
+detail.  The present contribution is the action-level synthesis: it states
+exactly when the spectral action may be called an MTT encoding and why the
+upper action remains the decisive missing object.
+
+Claims about collapse, event density, asymptotic safety, loop variables, or
+other shadows cannot be bundled into a single parameter vector merely because
+similar words such as gap, coherence, or projection occur in each construction.
+Cross-sector closure requires typed maps and common source data.  It is a
+future theorem, not a premise of the spectral-action bridge.
+
+\section{Falsifiability and next theorem}
+
+The revised bridge has concrete failure modes.
+\begin{enumerate}
+\item If no upper differential has a reducing sector unitarily equivalent to
+the selected product Dirac operator, the proposed MTT source fails.
+\item If the upper automorphism action does not descend to the finite gauge
+action, representation compatibility is accidental rather than generative.
+\item If no selected upper trace or measure yields the required cutoff moments,
+the spectral action remains an appended effective functional.
+\item If source-derived $\DF$ entries fail to reproduce masses, mixings, and
+phases after declared transport, the numerical branch is falsified.
+\item If the continuum or Wick contract fails, the Euclidean spectral action
+cannot be promoted to a physical Lorentzian theory.
+\end{enumerate}
+
+The next decisive theorem is therefore not another finite spectral identity.
+It is an \emph{upper action and automorphism transfer theorem}: construct one
+selected q79 upper complex and action, identify its zero modes, transfer its
+products and automorphisms, and prove that the finite and continuum operators
+used here arise by commuting maps.  Success would promote the current
+conditional encoding into a derivation.  Failure would localize exactly which
+part of the spectral-action interpretation must be abandoned.
+
+\section{Conclusion}
+
+The spectral action remains one of the clearest mathematical languages in
+which MTT could encode a four-dimensional matter-and-geometry sector.  The
+current finite work has moved beyond analogy: it contains an exact chiral
+representation and gauge group, a proved algebraic obstruction and minimal
+completion, a profile-tier finite Dirac operator, and an exact selected
+one-Higgs submodule.
+
+What has not been proved is equally clear.  MTT has not yet selected the
+continuum product triple, generated the physical finite Dirac entries, fixed
+the cutoff profile or absolute normalization, or transferred a single upper
+action to all lower sectors.  Version 2 therefore replaces the claim that the
+spectral action has already emerged with the stronger scientific object we
+actually possess: a conditional descent theorem, an executed finite encoding,
+and a sharply stated source obligation.
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The finite calculations used by this paper are archived in the
+\href{https://github.com/PeterNero/mtt-results-repro/tree/31247ebb5c22f3fbb5443024365433c6ee0bff4a}
+{curated MTT results repository at commit \texttt{31247ebb5c22}}.
+The mapped authority/result identifiers are:
+\begin{itemize}
+\item \nolinkurl{A46/typed_family_representation};
+\item \nolinkurl{A47/native_gauge_group};
+\item \nolinkurl{A49/physical_df_96};
+\item \nolinkurl{A50/neutral_summand_hypercharge};
+\item \nolinkurl{A51/finite_inner_fluctuation};
+\item \nolinkurl{A62/su3_finite_gauge_spectrum}.
+\end{itemize}
+Their manifests distinguish exact finite derivations from profile replay.
+Repository linkage does not promote profile values to source-derived
+predictions.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
+
 \begin{thebibliography}{99}
 
-\bibitem{MTT-Admissibility}
+\bibitem{CC1996}
+A.~H.~Chamseddine and A.~Connes,
+\emph{The Spectral Action Principle},
+Communications in Mathematical Physics \textbf{186} (1997), 731--750.
+\url{https://arxiv.org/abs/hep-th/9606001}
+
+\bibitem{CCM2006}
+A.~H.~Chamseddine, A.~Connes, and M.~Marcolli,
+\emph{Gravity and the Standard Model with Neutrino Mixing},
+Advances in Theoretical and Mathematical Physics \textbf{11} (2007), 991--1089.
+\url{https://arxiv.org/abs/hep-th/0610241}
+
+\bibitem{MTT-NCG}
 P.~Nero,
-\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255621}
+\emph{From Modal Triplet Theory to Noncommutative Geometry:
+Spectral Triples, Finite Geometry, and the Exact Status of the Standard Model
+Encoding},
+Zenodo preprint, July 2026.
 
 \bibitem{MTT-Foundation}
 P.~Nero,
 \emph{Modal Triplet Theory: Foundation},
-Zenodo preprint, September 2025.
+Zenodo preprint, revised July 2026.
 \url{https://doi.org/10.5281/zenodo.16949762}
 
 \bibitem{MTT-FixedPoints}
 P.~Nero,
-\emph{Fixed Points I--VI: Complete Coherence Spine},
-Zenodo preprints, August 2025.
+\emph{Fixed Points I--VI},
+Zenodo preprints, revised July 2026.
 \url{https://doi.org/10.5281/zenodo.16948748}
 
-\bibitem{MTT-ProjectionAdmissibility}
+\bibitem{MTT-ProgramC}
 P.~Nero,
-\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255838}
+\emph{The Modal Triplet Theory Program C: A Typed Dictionary for Geometric,
+Bundle, and Operator Realizations},
+Version 4, July 2026.
+\url{https://doi.org/10.5281/zenodo.21718498}
 
-\bibitem{MTT-Closure}
+\bibitem{MTTResultsRepro}
 P.~Nero,
-\emph{Closure and Inevitability in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255510}
-
-\bibitem{MTT-CoherenceCapacity}
-P.~Nero,
-\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255905}
-
-\bibitem{MTT-CoherenceDynamics}
-P.~Nero,
-\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256048}
-
-\bibitem{MTT-QM}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.17074246}
-
-\bibitem{MTT-QFT}
-P.~Nero,
-\emph{From MTT to Quantum Field Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17068816}
-
-\bibitem{MTT-GR}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to General Relativity},
-Zenodo preprint, October 2025.
-\url{https://doi.org/10.5281/zenodo.16950597}
-
-\bibitem{MTT-UVQG}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17077671}
-
-\bibitem{MTT-Measurement}
-P.~Nero,
-\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17177404}
-
-\bibitem{MTT-Irreversibility}
-P.~Nero,
-\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256408}
-
-\bibitem{MTT-Bell-Beables}
-P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17076300}
-
-\bibitem{MTT-Bell-Temporal}
-P.~Nero,
-\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
-Zenodo preprint, August 2025.
-\url{https://doi.org/10.5281/zenodo.18208884}
-
-\bibitem{MTT-Stochastic}
-P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18254862}
+\emph{MTT Curated Results and Reproducibility Repository},
+commit \texttt{31247ebb5c22f3fbb5443024365433c6ee0bff4a},
+2026.
+\url{https://github.com/PeterNero/mtt-results-repro/tree/31247ebb5c22f3fbb5443024365433c6ee0bff4a}
 
 \end{thebibliography}
+
 \end{document}

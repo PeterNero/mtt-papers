@@ -3,18 +3,17 @@
   "generated_on": "2026-07-31",
   "papers": 139,
   "priority_counts": {
-    "critical": 1,
     "light": 2,
     "major": 2,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 130
+    "reviewed": 131
   },
   "missing_dimension_counts": {
     "argument_flow": 31,
-    "conclusion": 6,
-    "concrete_foothold": 25,
-    "object_intuition": 85,
+    "conclusion": 5,
+    "concrete_foothold": 24,
+    "object_intuition": 86,
     "orientation": 60,
     "result_interpretation": 7
   },
@@ -3010,29 +3009,28 @@
     },
     {
       "paper_id": "the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987",
-      "title": "The Spectral Action as a Shadow of Coherent Fixed-Point Geometry Standard Model couplings, Higgs sector, and noncommutative geometry from Modal Triplet Theory",
-      "total_words": 1495,
-      "narrative_words": 811,
-      "formal_results": 15,
+      "title": "The Spectral Action as a Conditional Shadow of Coherent Fixed-Point Geometry A source contract between Modal Triplet Theory and almost-commutative geometry",
+      "total_words": 3641,
+      "narrative_words": 2795,
+      "formal_results": 9,
       "proofs": 4,
-      "narrative_words_per_result": 54.1,
+      "narrative_words_per_result": 310.6,
       "orientation": true,
-      "object_intuition": true,
+      "object_intuition": false,
       "argument_flow": false,
       "result_interpretation": true,
-      "concrete_foothold": false,
+      "concrete_foothold": true,
       "limitations": true,
-      "conclusion": false,
-      "coverage_dimensions": 4,
-      "audit_priority": "critical",
-      "heuristic_priority": "critical",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "conclusion": true,
+      "coverage_dimensions": 5,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "moderate",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 2 rebuilds the spectral-action claim as a conditional same-source descent theorem. It separates standard almost-commutative spectral-action mathematics from the executed finite MTT packets and the open upper-action theorem; reports the exact representation, gauge-group, algebra-completion, and selected one-Higgs results at their actual tiers; keeps the finite Dirac entries and traces at profile tier; proves a proper-time representation and an explicit counterexample showing that a spectral gap or lower support bound cannot select the cutoff function; withdraws the one-bottleneck-vector coupling and cross-sector closure claims; defines the complete upper action, intertwiner, cutoff, Wick, and RG source contract; and the complete 11-page PDF was visually inspected.",
       "missing_dimensions": [
-        "argument_flow",
-        "concrete_foothold",
-        "conclusion"
+        "object_intuition",
+        "argument_flow"
       ]
     },
     {
