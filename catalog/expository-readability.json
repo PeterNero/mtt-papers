@@ -5,16 +5,16 @@
   "priority_counts": {
     "critical": 3,
     "light": 2,
-    "major": 3,
+    "major": 2,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 127
+    "reviewed": 128
   },
   "missing_dimension_counts": {
     "argument_flow": 33,
     "conclusion": 8,
-    "concrete_foothold": 28,
-    "object_intuition": 86,
+    "concrete_foothold": 27,
+    "object_intuition": 85,
     "orientation": 60,
     "result_interpretation": 9
   },
@@ -756,29 +756,26 @@
     },
     {
       "paper_id": "cosmology-as-global-coherence-capacity-evolution",
-      "title": "Cosmology as Global Coherence Capacity Evolution",
-      "total_words": 1484,
-      "narrative_words": 1077,
-      "formal_results": 8,
+      "title": "A Covariant Effective Model for Coherence-Capacity Cosmology: Equations, Degeneracies, and Observational Tests",
+      "total_words": 3107,
+      "narrative_words": 2274,
+      "formal_results": 9,
       "proofs": 6,
-      "narrative_words_per_result": 134.6,
+      "narrative_words_per_result": 252.7,
       "orientation": true,
-      "object_intuition": false,
+      "object_intuition": true,
       "argument_flow": true,
       "result_interpretation": true,
-      "concrete_foothold": false,
+      "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
-      "coverage_dimensions": 5,
-      "audit_priority": "major",
-      "heuristic_priority": "major",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
-      "missing_dimensions": [
-        "object_intuition",
-        "concrete_foothold"
-      ]
+      "coverage_dimensions": 7,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "moderate",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 3 replaces the heuristic capacity cosmology by a declared covariant scalar-tensor effective action and derives its metric, scalar, homogeneous Friedmann, and exact acceleration equations. It proves that positive capacity alone implies neither expansion nor acceleration, establishes a background reconstruction-degeneracy theorem, exhibits the LambdaCDM nested limit, separates capacity-zero level sets from causal horizons, separates positive capacity from past completeness, and keeps time orientation distinct from irreversible entropy production. It supplies background and perturbation observables, parameter accounting, a reproducible comparison contract, and falsifiers; preserves the same-source selection of the capacity source map, coupling functions, initial state, and held-out observational validation as open; and the complete 10-page PDF was visually inspected.",
+      "missing_dimensions": []
     },
     {
       "paper_id": "deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3",

@@ -1032,6 +1032,14 @@
       "reviewed_main_tex_sha256": "f0b99c12301eb8b0514d1233de49f98ff0c051f1b6c8a1397ae75cbfb815fda3",
       "reviewed_pdf_sha256": "bd0b802e119ff06cb1590fc65b20e99d1f5c8f3ea2ed8ac4ee5cf9483dca1929",
       "reviewed_source_tree_sha256": "d205b61651aa41d46e3cac2d6f47857c391032d36bc591d605776b0975d3a780"
+    },
+    "cosmology-as-global-coherence-capacity-evolution": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 3 replaces the heuristic capacity cosmology by a declared covariant scalar-tensor effective action and derives its metric, scalar, homogeneous Friedmann, and exact acceleration equations. It proves that positive capacity alone implies neither expansion nor acceleration, establishes a background reconstruction-degeneracy theorem, exhibits the LambdaCDM nested limit, separates capacity-zero level sets from causal horizons, separates positive capacity from past completeness, and keeps time orientation distinct from irreversible entropy production. It supplies background and perturbation observables, parameter accounting, a reproducible comparison contract, and falsifiers; preserves the same-source selection of the capacity source map, coupling functions, initial state, and held-out observational validation as open; and the complete 10-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "b61f3a68e7547f87ac157c4308a444c0c5066bd62d7f9cf364db861bbccfc3a3",
+      "reviewed_pdf_sha256": "778646bfc0830785ee6d4a87b7080a01932d47127a8cdd3e4bd3d2b62f287553",
+      "reviewed_source_tree_sha256": "b8f5e3721d37a2f122508a773e6f0485f384f6a7d0948efefcb704ced9a9ff49"
     }
   }
 }

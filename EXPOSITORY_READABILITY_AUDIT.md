@@ -11,10 +11,10 @@ Canonical papers audited: **139**.
 | Priority | Papers |
 | --- | ---: |
 | critical | 3 |
-| major | 3 |
+| major | 2 |
 | moderate | 2 |
 | light | 2 |
-| reviewed | 127 |
+| reviewed | 128 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -23,8 +23,8 @@ Canonical papers audited: **139**.
 | --- | ---: |
 | argument_flow | 33 |
 | conclusion | 8 |
-| concrete_foothold | 28 |
-| object_intuition | 86 |
+| concrete_foothold | 27 |
+| object_intuition | 85 |
 | orientation | 60 |
 | result_interpretation | 9 |
 
@@ -37,7 +37,6 @@ Canonical papers audited: **139**.
 | critical | critical | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 15 | 54.1 | 4/7 | argument_flow, concrete_foothold, conclusion |
 | major | major | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 15 | 210.5 | 7/7 | - |
 | major | major | `particles-and-forces-as-coherence-basins-and-capacity-gradients` | 10 | 124.0 | 5/7 | object_intuition, concrete_foothold |
-| major | major | `cosmology-as-global-coherence-capacity-evolution` | 8 | 134.6 | 5/7 | object_intuition, concrete_foothold |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
@@ -84,6 +83,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `projection-probability-and-irreversibility-shadow-bridg-a86c97e5` | 10 | 217.9 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | major | `closure-and-inevitability-in-modal-triplet-theory` | 9 | 215.7 | 7/7 | - |
 | reviewed | major | `coherent-green-functions-replacing-point-sources-by-adm-98607519` | 9 | 236.1 | 7/7 | - |
+| reviewed | moderate | `cosmology-as-global-coherence-capacity-evolution` | 9 | 252.7 | 7/7 | - |
 | reviewed | major | `from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7` | 9 | 219.7 | 5/7 | object_intuition, concrete_foothold |
 | reviewed | moderate | `gauge-fixing-as-admissible-section-selection-in-modal-t-459e029d` | 9 | 253.9 | 5/7 | object_intuition, argument_flow |
 | reviewed | major | `lorentzian-base-compatibility-and-signature-stability-i-6ac3fbb9` | 9 | 134.2 | 4/7 | orientation, object_intuition, concrete_foothold |

@@ -1,51 +1,58 @@
 {
-  "abstract": "We show that cosmological expansion, acceleration, and horizon structure arise naturally as effective consequences of global coherence-capacity evolution under the same transport, closure, and regularity assumptions used elsewhere in the coherence-capacity framework. Building on the theory of coherence capacity and its transport, concentration, and exhaustion, we show that cosmology is not the dynamics of spacetime itself, but the global bookkeeping of how coherence capacity is redistributed and depleted over large scales. Under minimal axioms, we derive generalized Friedmann-type equations governing capacity flow, identify expansion as a relaxation process under spare capacity, and interpret cosmological horizons as global capacity bottlenecks. This framework requires no fundamental inflaton, vacuum energy, or initial singularity.",
+  "abstract": "This paper replaces an earlier heuristic cosmology with a covariant effective-model interface. Coherence capacity in Modal Triplet Theory is an admissibility margin; by itself it does not determine a spacetime metric, expansion, acceleration, a causal horizon, a cosmological singularity, or an arrow of time. A Jordan-frame scalar-tensor action is declared in which a scalar capacity variable is proposed as the large-scale image of MTT capacity data. The metric equation, scalar equation, homogeneous Friedmann equations, and exact acceleration condition are derived. A reconstruction-degeneracy theorem shows that freely chosen coupling functions can reproduce broad classes of expansion histories, so agreement with measured expansion is not a prediction until MTT selects those functions and their initial data independently. Capacity-zero level sets are separated from Lorentzian horizons, positive capacity is separated from past completeness, and time orientation is separated from irreversible entropy production. The result is a conditional effective realization and an explicit observational test contract, not a derivation of cosmology from the present MTT axioms.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "January 2026",
+  "current_version": "v3",
+  "date": "Version 3, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18256381",
-    "created": "2026-01-21T04:56:22.697692+00:00",
+    "created": "2026-07-31T07:56:55.314960+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18322077",
+    "doi": "10.5281/zenodo.21716823",
     "files": [
       {
-        "checksum": "md5:2ae64df85c483e119ebfc93fb2869389",
-        "content_url": "https://zenodo.org/api/records/18322077/files/Cosmology_as_Global_Coherence_Capacity_Evolution_v2.pdf/content",
-        "key": "Cosmology_as_Global_Coherence_Capacity_Evolution_v2.pdf",
-        "size": 207895
+        "checksum": "md5:827b58b31c9b28b88d38cd80183427b0",
+        "content_url": "https://zenodo.org/api/records/21716823/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 312941
       }
     ],
-    "id": "18322077",
-    "match_kind": "title_or_file",
+    "id": "21716823",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18322077",
+    "publication_date": "2026-07-31",
+    "record_url": "https://zenodo.org/records/21716823",
     "resource_type": "publication",
-    "title": "Cosmology as Global Coherence Capacity Evolution",
-    "updated": "2026-01-21T04:56:23.020297+00:00",
-    "version": "v2.0"
+    "title": "A Covariant Effective Model for Coherence-Capacity Cosmology: Equations, Degeneracies, and Observational Tests",
+    "updated": "2026-07-31T07:56:55.642054+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "8bb44638d3e5c58da9ec842e549ea915e5d26760cb26e0502efebdf6639484d9",
+  "main_tex_sha256": "b61f3a68e7547f87ac157c4308a444c0c5066bd62d7f9cf364db861bbccfc3a3",
   "paper_id": "cosmology-as-global-coherence-capacity-evolution",
-  "paper_md_sha256": "1587834fdf6e9fcb3a0851f2cf8b913568ac4a9068d1cd8c3bf5646d22536757",
+  "paper_md_sha256": "9b2e2002f6ab979ebb994f92ff2469309520d9220cdb680d06f31f824ee59032",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/cosmology-as-global-coherence-capacity-evolution/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "c241b3f855787bad86b5b77cd0c07f7112c35e3028b0b6eb275a9d6d565e2b4c",
+    "selected_revision": true
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 12317,
+      "bytes": 25233,
       "path": "main.tex",
-      "sha256": "8bb44638d3e5c58da9ec842e549ea915e5d26760cb26e0502efebdf6639484d9"
+      "sha256": "b61f3a68e7547f87ac157c4308a444c0c5066bd62d7f9cf364db861bbccfc3a3"
+    },
+    {
+      "bytes": 3857,
+      "path": "main.bib",
+      "sha256": "9c985fa19e393c9ff7c23c8ef2d48b6a46e999fe7d201cc633a2d234b56d44d6"
     },
     {
       "bytes": 3784,
@@ -56,10 +63,35 @@
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Cosmology_as_Global_Coherence_Capacity_Evolution_v2"
   },
-  "source_tree_sha256": "04eab450202fdd8eb57c0530767ace15b5bb980338eeec79a0e0c1e7c733b723",
-  "title": "Cosmology as Global Coherence Capacity Evolution",
+  "source_tree_sha256": "b8f5e3721d37a2f122508a773e6f0485f384f6a7d0948efefcb704ced9a9ff49",
+  "title": "A Covariant Effective Model for Coherence-Capacity Cosmology: Equations, Degeneracies, and Observational Tests",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18256381",
+      "created": "2026-07-31T07:56:55.314960+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21716823",
+      "files": [
+        {
+          "checksum": "md5:827b58b31c9b28b88d38cd80183427b0",
+          "content_url": "https://zenodo.org/api/records/21716823/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 312941
+        }
+      ],
+      "id": "21716823",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21716823",
+      "resource_type": "publication",
+      "title": "A Covariant Effective Model for Coherence-Capacity Cosmology: Equations, Degeneracies, and Observational Tests",
+      "updated": "2026-07-31T07:56:55.642054+00:00",
+      "version": "v3"
+    },
     {
       "concept_doi": "10.5281/zenodo.18256381",
       "created": "2026-01-21T04:56:22.697692+00:00",

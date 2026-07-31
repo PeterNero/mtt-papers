@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18256381",
+      "created": "2026-07-31T07:56:55.314960+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21716823",
+      "files": [
+        {
+          "checksum": "md5:827b58b31c9b28b88d38cd80183427b0",
+          "content_url": "https://zenodo.org/api/records/21716823/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 312941
+        }
+      ],
+      "id": "21716823",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21716823",
+      "resource_type": "publication",
+      "title": "A Covariant Effective Model for Coherence-Capacity Cosmology: Equations, Degeneracies, and Observational Tests",
+      "updated": "2026-07-31T07:56:55.642054+00:00",
+      "version": "v3"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18256339",
       "created": "2026-07-31T07:40:38.759619+00:00",
       "creators": [
