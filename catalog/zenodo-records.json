@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18256105",
+      "created": "2026-07-31T09:56:01.667785+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21719055",
+      "files": [
+        {
+          "checksum": "md5:39e5542abfea5c8a87fd504e4d3d53fe",
+          "content_url": "https://zenodo.org/api/records/21719055/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 312073
+        }
+      ],
+      "id": "21719055",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21719055",
+      "resource_type": "publication",
+      "title": "Particles and Forces as Conditional Coherence-Basin Encodings: Effective actions, centroid laws, and the limits of capacity gradients",
+      "updated": "2026-07-31T09:56:01.893374+00:00",
+      "version": "v3"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18261749",
       "created": "2026-07-31T09:41:33.827309+00:00",
       "creators": [

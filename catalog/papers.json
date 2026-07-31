@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
-    "zenodo_records": 274,
-    "zenodo_records_matched": 274,
+    "zenodo_records": 275,
+    "zenodo_records_matched": 275,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -9475,54 +9475,82 @@
       ]
     },
     {
-      "abstract": "We show how particles and forces arise as effective structures in admissible descriptions built from coherence basins and coherence-capacity transport, under the same stability, regularity, and closure assumptions used elsewhere in the coherence-capacity framework. Building on the transport theory developed in Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion, we show that localized, persistent excitations correspond to stable coherence basins, while forces arise from gradients and flows of coherence capacity. Newtonian motion, the Lorentz force, and confinement phenomena are obtained as basin-centroid and coherence-transport effects without introducing fundamental force carriers. Particle number nonconservation, charge conservation, and universality of gravity follow naturally from the basin framework.",
+      "abstract": "This paper examines a concrete MTT proposal: localized persistent structures may be represented as coherence basins, while their effective motion may be described by capacity-dependent forces. The basin part is viable only after a map from effective state space to spatial observables is supplied; distinct basins need not have distinct spatial densities. The force part requires still more structure. A gradient of a diagnostic admissibility margin is not a force until a selected action, Hamiltonian, stress law, or constitutive equation couples that margin to motion. We derive the exact centroid balance law for a localized density and show how Newtonian and Lorentz equations follow conditionally from a declared effective action. The integrated basin weight equals inertial mass only when the kinetic term is normalized accordingly. Gauge charge conservation requires a symmetry or transported representation label, not basin persistence alone. Confinement follows from a capacity interpretation only after a coercive separation energy is proved; an area law does not follow from qualitative strain. The result is a rigorous effective-particle and force-encoding framework. It preserves coherence basins as a useful model proposal while leaving the selected MTT action, constitutive map, physical masses, interaction laws, and gravitational coupling open.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v2",
-      "date": "January 2026",
+      "current_version": "v3",
+      "date": "July 2026, Version 3",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18256105",
-        "created": "2026-01-21T04:57:26.802354+00:00",
+        "created": "2026-07-31T09:56:01.667785+00:00",
         "creators": [
           "Nero, Peter"
         ],
-        "doi": "10.5281/zenodo.18322084",
+        "doi": "10.5281/zenodo.21719055",
         "files": [
           {
-            "checksum": "md5:6dd75d338e64590ffbb4147ca522164f",
-            "content_url": "https://zenodo.org/api/records/18322084/files/Particles_and_Forces_as_Coherence_Basins_and_Capacity_Gradients_v2%20(1).pdf/content",
-            "key": "Particles_and_Forces_as_Coherence_Basins_and_Capacity_Gradients_v2 (1).pdf",
-            "size": 205987
+            "checksum": "md5:39e5542abfea5c8a87fd504e4d3d53fe",
+            "content_url": "https://zenodo.org/api/records/21719055/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 312073
           }
         ],
-        "id": "18322084",
-        "match_kind": "title_or_file",
+        "id": "21719055",
+        "match_kind": "published_draft_reconciliation",
         "match_score": 1.0,
-        "publication_date": "2026-01-21",
-        "record_url": "https://zenodo.org/records/18322084",
+        "publication_date": "2026-07-31",
+        "record_url": "https://zenodo.org/records/21719055",
         "resource_type": "publication",
-        "title": "Particles and Forces as Coherence Basins and Capacity Gradients",
-        "updated": "2026-01-21T04:57:27.258771+00:00",
-        "version": "v2.0"
+        "title": "Particles and Forces as Conditional Coherence-Basin Encodings: Effective actions, centroid laws, and the limits of capacity gradients",
+        "updated": "2026-07-31T09:56:01.893374+00:00",
+        "version": "v3"
       },
-      "main_tex_sha256": "3d3990ace558f14a54068fb5789d89c4f77aad91aa0cfa9c87cf433e6f4d8aef",
+      "main_tex_sha256": "4925b8cfecd02875f040021f3baf7230f5b2243f43b2c8993153a58b3ddeef54",
       "paper_id": "particles-and-forces-as-coherence-basins-and-capacity-gradients",
-      "paper_md_sha256": "7607dbe7a2cc82fbe2e5f3914254dc5e1f6b34508a9b629c9a5f28533e259207",
+      "paper_md_sha256": "37ceed704b6675526da4f2e70b465a9468253c0e3ad53dc68776f554b080504d",
       "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/particles-and-forces-as-coherence-basins-and-capacity-gradients/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "be08bdf5144e87f6ad192b71d22b530f5e277ce6e501116144e7e952ed4e756f",
+        "selected_revision": true,
+        "superseded_source_path": "14 Coherence Capacity Program/_work/Particles_and_Forces_as_Coherence_Basins_and_Capacity_Gradients_v2"
       },
       "source_provenance": {
         "legacy_source_path": "14 Coherence Capacity Program/_work/Particles_and_Forces_as_Coherence_Basins_and_Capacity_Gradients_v2"
       },
-      "source_tree_sha256": "d2e6bafa7408a947b5852fb69beadd651e1e68ab5d076a45fc9192750715fd87",
-      "title": "Particles and Forces as Coherence Basins and Capacity Gradients",
+      "source_tree_sha256": "725e57103e027883acfeabb25a67a9922af1f9e62181857da6686585c09ba69b",
+      "title": "Particles and Forces as Conditional Coherence-Basin Encodings: Effective actions, centroid laws, and the limits of capacity gradients",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18256105",
+          "created": "2026-07-31T09:56:01.667785+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21719055",
+          "files": [
+            {
+              "checksum": "md5:39e5542abfea5c8a87fd504e4d3d53fe",
+              "content_url": "https://zenodo.org/api/records/21719055/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 312073
+            }
+          ],
+          "id": "21719055",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-31",
+          "record_url": "https://zenodo.org/records/21719055",
+          "resource_type": "publication",
+          "title": "Particles and Forces as Conditional Coherence-Basin Encodings: Effective actions, centroid laws, and the limits of capacity gradients",
+          "updated": "2026-07-31T09:56:01.893374+00:00",
+          "version": "v3"
+        },
         {
           "concept_doi": "10.5281/zenodo.18256105",
           "created": "2026-01-21T04:57:26.802354+00:00",

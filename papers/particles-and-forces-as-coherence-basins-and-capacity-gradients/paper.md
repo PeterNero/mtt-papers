@@ -1,297 +1,496 @@
 ---
 abstract: |
-  We show how particles and forces arise as effective structures in admissible descriptions built from coherence basins and coherence-capacity transport, under the same stability, regularity, and closure assumptions used elsewhere in the coherence-capacity framework. Building on the transport theory developed in “Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion,” we show that localized, persistent excitations correspond to stable coherence basins, while forces arise from gradients and flows of coherence capacity. Newtonian motion, the Lorentz force, and confinement phenomena are obtained as basin-centroid and coherence-transport effects without introducing fundamental force carriers. Particle number nonconservation, charge conservation, and universality of gravity follow naturally from the basin framework.
+  This paper examines a concrete MTT proposal: localized persistent structures may be represented as coherence basins, while their effective motion may be described by capacity-dependent forces. The basin part is viable only after a map from effective state space to spatial observables is supplied; distinct basins need not have distinct spatial densities. The force part requires still more structure. A gradient of a diagnostic admissibility margin is not a force until a selected action, Hamiltonian, stress law, or constitutive equation couples that margin to motion. We derive the exact centroid balance law for a localized density and show how Newtonian and Lorentz equations follow conditionally from a declared effective action. The integrated basin weight equals inertial mass only when the kinetic term is normalized accordingly. Gauge charge conservation requires a symmetry or transported representation label, not basin persistence alone. Confinement follows from a capacity interpretation only after a coercive separation energy is proved; an area law does not follow from qualitative “strain.” The result is a rigorous effective-particle and force-encoding framework. It preserves coherence basins as a useful model proposal while leaving the selected MTT action, constitutive map, physical masses, interaction laws, and gravitational coupling open.
 author:
 - Peter Nero
-current_version: v2
-date: January 2026
-generated_from_main_tex_sha256: 3d3990ace558f14a54068fb5789d89c4f77aad91aa0cfa9c87cf433e6f4d8aef
+current_version: v3
+date: July 2026, Version 3
+generated_from_main_tex_sha256: 4925b8cfecd02875f040021f3baf7230f5b2243f43b2c8993153a58b3ddeef54
 paper_id: particles-and-forces-as-coherence-basins-and-capacity-gradients
 release_state: zenodo_released
-released_version: v2.0
+released_version: v3
 title: |
-  **Particles and Forces as Coherence Basins  
-  and Capacity Gradients**
-zenodo_doi: 10.5281/zenodo.18322084
-zenodo_record_id: 18322084
-zenodo_url: "https://zenodo.org/records/18322084"
+  **Particles and Forces as Conditional Coherence-Basin Encodings:**
+  Effective actions, centroid laws, and the limits of capacity gradients
+zenodo_doi: 10.5281/zenodo.21719055
+zenodo_record_id: 21719055
+zenodo_url: "https://zenodo.org/records/21719055"
 ---
 
-# Introduction
+# Version 3 Revision Note
 
-In the preceding papers we identified coherence capacity as the fundamental resource governing effective physical descriptions and developed its transport, concentration, and exhaustion dynamics. In this work we show how the familiar ontology of particles and forces arises from that same structure.
+<div class="description">
 
-The central claim of this paper is simple: *particles are stable coherence basins, and forces are the shadows of coherence-capacity gradients acting on those basins*.
+Version 2.0, released in January 2026.
 
-This viewpoint eliminates the need to treat particles as fundamental point objects or forces as primitive interactions. Instead, particles and forces emerge from the same projection-based stability constraints that govern gravity, time, and irreversibility.
+The previous version identified a diagnostic capacity gradient with force, identified integrated density with mass, and claimed Newtonian, Lorentz, confinement, charge, and gravity results without deriving the action or constitutive laws that generate them.
 
-# Effective States and Coherence Basins
+Version 3 defines a complete effective-particle record, proves the exact centroid balance law, gives a reparameterization no-go for bare capacity gradients, and derives conditional force laws from a declared effective action. It replaces the confinement and conservation claims by their correct conditional statements.
 
-## Effective state space
+Stable localized basins remain candidate effective particle encodings, and capacity may enter interaction potentials or stress laws when a selected source map assigns it that role.
 
-Let $`Y`$ denote the space of effective (observable) states obtained by projection from the fundamental configuration space. Within admissible regions, effective dynamics is well-defined and predictive.
-
-#### Effective description level.
-
-The effective state space $`Y`$ should be understood as the image of an admissible projection from the coherent sector of the underlying state space, equipped with whatever minimal structure (topological, measure-theoretic, or differentiable) is required to support the effective equations used below. No claim is made that $`Y`$ exists globally or independently of the admissible regime.
-
-## Coherence basins
-
-<div class="definition">
-
-**Definition 1** (Coherence basin). A coherence basin $`B_\alpha \subset Y`$ is a connected region of effective state space such that:
-
-- projection stability holds throughout $`B_\alpha`$,
-
-- trajectories entering $`B_\alpha`$ remain in $`B_\alpha`$ under admissible evolution,
-
-- disturbances within $`B_\alpha`$ are contractively damped.
+MTT has not yet selected the upper action, spatial observation map, kinetic normalization, capacity-to-potential map, physical mass spectrum, transition law, or universal gravitational coupling.
 
 </div>
 
-Coherence basins are the effective analogues of attractors or fixed-point regions in dynamical systems.
+# The proposal and its logical layers
 
-<div class="definition">
+The intuitive proposal is attractive. A physical particle is not observed as an abstract point with no internal structure; it is recognized through persistence, localization, charges, and reproducible responses. A stable region of an effective state space can model persistence. A localized density can model position. An internal representation can model charge. A selected action can model response to fields. Taken together, these ingredients form a credible effective-particle record.
 
-**Definition 2** (Particle). A particle is a localized, persistent coherence basin whose support in effective space remains bounded and identifiable over admissible evolution.
+They do not follow from one another automatically. In particular:
 
-</div>
+1.  a basin in state space is not yet a region of physical space;
 
-This definition makes no reference to point-like ontology or fundamental fields. Persistence and localization are properties of basin stability.
+2.  a spatial density is not yet a mass density;
 
-# Basin Density and Centroid Dynamics
+3.  a scalar margin is not yet an energy;
 
-## Effective density representation (assumption)
+4.  a gradient is not yet a force;
 
-In admissible regimes where a smooth effective chart exists, we assume that the restriction of the coherence basin admits an absolutely continuous representation with respect to the effective spatial measure, yielding a basin density $`\rho_\alpha(x,t)`$. This representation is effective and slab-local; it does not assert a fundamental density or fluid ontology. All subsequent continuum equations are understood in this restricted, encoding-level sense.
+5.  a persistent label is not automatically a conserved Noether charge;
 
-<div class="lemma">
+6.  a growing diagnostic cost is not yet confinement or a Wilson-loop area law.
 
-**Lemma 3** (Preservation of basin identity under effective representation). *Within admissible regimes, the effective density representation $`\rho_\alpha(x,t)`$ uniquely tracks the identity of the underlying coherence basin. Distinct coherence basins cannot yield identical effective density evolutions on overlapping admissible charts, except at admissibility barriers where basin merge–split occurs.*
+The purpose of this revision is to keep these types separate and then prove the bridges that can actually be proved. The final result is conditional, but it is operational: every missing physical statement is attached to a specific source row rather than absorbed into the word “coherence.”
 
-</div>
+## Status language
 
-## Basin density
+<div id="def:status" class="definition">
 
-To describe motion of a coherence basin, we introduce a basin density $`\rho_\alpha(x,t)`$ on an effective spatial slice $`\Sigma`$.
-
-Normalization:
-``` math
-M_\alpha := \int_\Sigma \rho_\alpha(x,t)\,d^3x
-```
-is conserved within admissible regimes.
-
-## Centroid definition
-
-<div class="definition">
-
-**Definition 4** (Basin centroid). The centroid of a coherence basin is
-``` math
-X^i(t) := \frac{1}{M_\alpha}\int_\Sigma x^i\,\rho_\alpha(x,t)\,d^3x.
-```
+**Definition 1** (Encoding, dynamics, and selection). An *encoding* is a typed representation of one effective object by another. A *dynamical model* supplies an action, generator, balance law, or constitutive evolution. A *selected MTT derivation* additionally proves that those data descend from one accepted upper source without fitting the target behavior.
 
 </div>
 
-The centroid is the effective worldline of the particle.
+This paper closes several encoding-level and conditional dynamical statements. It does not claim the final selected derivation.
 
-# Continuity and Momentum Balance
+# From an effective basin to a spatial particle
 
-## Continuity equation
+## Invariant basins
 
-Within an admissible basin, the reduced dynamics yields a continuity equation:
+Let $`\mathcal{Y}`$ be an effective state space on a declared time slab, with evolution $`\Phi_{t,s}`$ wherever that evolution is defined.
+
+<div id="def:basin" class="definition">
+
+**Definition 2** (Stable coherence basin). A set $`\mathcal{B}_\alpha\subset\mathcal{Y}`$ is a stable coherence basin on $`[t_0,t_1]`$ if:
+
+1.  it is invariant on the slab: $`\Phi_{t,s}(\mathcal{B}_\alpha)\subseteq\mathcal{B}_\alpha`$;
+
+2.  nearby allowed states are attracted or remain controlled according to a specified stability estimate;
+
+3.  the basin remains separated from competing basins by a declared positive margin on the controlled domain.
+
+</div>
+
+This definition captures persistence in state space. It says nothing yet about spatial localization, spin, statistics, energy, or particle detection.
+
+## The observation map
+
+Let $`\Sigma`$ be a physical or effective spatial slice. A spatial representation requires a map
 ``` math
-\partial_t \rho_\alpha + \nabla\cdot(\rho_\alpha v) = 0,
+\mathcal{O}_t:\mathcal{Y}\longrightarrow \mathcal{M}_+(\Sigma)\times\mathcal{J}(\Sigma),
 ```
-where $`v`$ is the effective velocity field induced by the underlying dynamics and projection.
-
-#### Constitutive closure.
-
-The continuity and momentum-balance equations below are constitutive relations of the effective description. Their existence follows from the assumed regularity of the basin density representation and does not introduce new microscopic dynamics.
-
-## Momentum balance
-
-Assume the existence of an effective momentum flux tensor $`\Pi^{ij}`$ such that:
+where $`\mathcal{M}_+(\Sigma)`$ is a class of positive finite measures or densities and $`\mathcal{J}(\Sigma)`$ is a class of currents. Write
 ``` math
-\partial_t(\rho_\alpha v^i) + \partial_j \Pi^{ij}
-= \rho_\alpha a^i_{\mathrm{eff}},
+\mathcal{O}_t(y)=(\rho_y(\,\cdot\,,t),j_y(\,\cdot\,,t)).
 ```
-where $`a^i_{\mathrm{eff}}`$ encodes bias induced by coherence-capacity gradients and internal connections.
+The map, its regularity, and its physical meaning are additional data.
 
-# Newtonian Motion from Basin Centroids
+<div id="prop:noninjective" class="proposition">
 
-<div class="theorem">
+**Proposition 3** (Spatial identity does not follow from basin identity). *Distinct invariant basins can have identical spatial density histories.*
 
-**Theorem 5** (Centroid equation of motion, effective). *If the basin is narrow compared to the scale of variation of $`a^i_{\mathrm{eff}}`$, then the centroid satisfies
+</div>
+
+<div class="proof">
+
+*Proof.* Let $`\mathcal{Y}=\mathcal{D}\times\{-1,+1\}`$, let the evolution preserve the second coordinate, and let
 ``` math
-M_\alpha \ddot X^i = F^i(X),
+\mathcal{B}_\pm=\mathcal{D}\times\{\pm1\}.
 ```
-where
+Define $`\mathcal{O}_t(\rho,\sigma)=(\rho,j_\rho)`$ independently of $`\sigma`$. Then $`\mathcal{B}_+`$ and $`\mathcal{B}_-`$ are distinct invariant basins but have the same image under $`\mathcal{O}_t`$. Thus the spatial observation map need not be injective. ◻
+
+</div>
+
+The proposition withdraws the earlier claim that an effective density uniquely tracks basin identity. Hidden spin, flavor, gauge, or topological labels may be invisible to a chosen density observable. A complete particle record must carry them separately.
+
+<div id="def:particle-record" class="definition">
+
+**Definition 4** (Effective particle record). An effective particle record on a slab is
 ``` math
-F^i(X) := M_\alpha a^i_{\mathrm{eff}}(X).
+\mathfrak{P}_\alpha
+ =
+ (\mathcal{B}_\alpha,\mathcal{O},\rho_\alpha,j_\alpha,
+  \Pi_\alpha,b_\alpha,S_{\mathrm{eff}},
+  \mathcal{R}_\alpha,\varepsilon_\alpha),
+```
+where:
+
+1.  $`\mathcal{B}_\alpha`$ is a stable basin;
+
+2.  $`(\rho_\alpha,j_\alpha)`$ is its selected spatial image;
+
+3.  $`\Pi_\alpha`$ is a momentum-flux or stress tensor;
+
+4.  $`b_\alpha`$ is a body-force density or source term;
+
+5.  $`S_{\mathrm{eff}}`$ is an effective action, or a declared constitutive replacement sufficient to determine $`\Pi_\alpha`$ and $`b_\alpha`$;
+
+6.  $`\mathcal{R}_\alpha`$ contains internal representation and charge data;
+
+7.  $`\varepsilon_\alpha`$ records approximation and slab errors.
+
+</div>
+
+A basin is therefore the persistence component of a particle model, not the entire particle theorem.
+
+# Exact centroid mechanics
+
+## Balance assumptions
+
+Assume $`\rho\geq0`$, $`j=\rho v`$, and sufficient integrability on a fixed region $`\Omega\subset\Sigma`$. Define
+``` math
+M(t)=\int_\Omega \rho\,\mathrm{d}x,\qquad
+ X^i(t)=\frac{1}{M(t)}\int_\Omega x^i\rho\,\mathrm{d}x,\qquad
+ P^i(t)=\int_\Omega \rho v^i\,\mathrm{d}x.
+```
+Suppose
+``` math
+\begin{align}
+ \partial_t\rho+\partial_j(\rho v^j)&=0,
+ \label{eq:continuity}\\
+ \partial_t(\rho v^i)+\partial_j\Pi^{ij}&=b^i.
+ \label{eq:momentum}
+\end{align}
+```
+These are dynamical or constitutive assumptions. A smooth density representation alone does not imply them.
+
+<div id="thm:centroid" class="theorem">
+
+**Theorem 5** (Exact centroid balance). *If the mass flux through $`\partial\Omega`$ vanishes and $`M>0`$, then $`M`$ is constant and
+``` math
+\begin{align}
+ M\dot X^i&=P^i,\label{eq:first-moment}\\
+ M\ddot X^i
+ &=\int_\Omega b^i\,\mathrm{d}x
+   -\int_{\partial\Omega}\Pi^{ij}n_j\,\mathrm{d}S.
+ \label{eq:centroid}
+\end{align}
 ```*
 
 </div>
 
 <div class="proof">
 
-*Proof.* The result holds in the narrow-basin, slowly varying limit of the effective continuum representation. Integrating the momentum balance equation over space and using localization of $`\rho_\alpha`$ yields the stated result. ◻
+*Proof.* Integrating <a href="#eq:continuity" data-reference-type="ref+label" data-reference="eq:continuity">[eq:continuity]</a> gives $`\dot M=-\int_{\partial\Omega}\rho v\cdot n\,\mathrm{d}S=0`$. Multiplying <a href="#eq:continuity" data-reference-type="ref+label" data-reference="eq:continuity">[eq:continuity]</a> by $`x^i`$, integrating by parts, and using the same boundary condition gives <a href="#eq:first-moment" data-reference-type="ref+label" data-reference="eq:first-moment">[eq:first-moment]</a>. Integrating <a href="#eq:momentum" data-reference-type="ref+label" data-reference="eq:momentum">[eq:momentum]</a> and applying the divergence theorem gives
+``` math
+\dot P^i
+ =\int_\Omega b^i\,\mathrm{d}x
+  -\int_{\partial\Omega}\Pi^{ij}n_j\,\mathrm{d}S.
+```
+Differentiating <a href="#eq:first-moment" data-reference-type="ref+label" data-reference="eq:first-moment">[eq:first-moment]</a> completes the proof. ◻
 
 </div>
 
-<div class="corollary">
+This theorem is stronger and clearer than the former narrow-basin argument. It identifies the force on the centroid as the integrated body source plus the boundary traction. The equation does not say where those terms come from.
 
-**Corollary 6**. *Newton’s second law arises as the narrow-basin limit of coherence-basin dynamics.*
+<div id="cor:narrow" class="corollary">
+
+**Corollary 6** (Controlled point-particle approximation). *Suppose the boundary traction vanishes and $`b^i(x,t)=\rho(x,t)a^i(x,t)`$, with $`a(\,\cdot\,,t)`$ Lipschitz on the basin support with constant $`L_a(t)`$. Then
+``` math
+\left|
+ M\ddot X^i-Ma^i(X,t)
+ \right|
+ \leq
+ L_a(t)\int_\Omega |x-X|\,\rho(x,t)\,\mathrm{d}x.
+```*
 
 </div>
 
-This law is not fundamental but emergent: the “force” reflects bias in capacity transport rather than interaction between point objects.
+<div class="proof">
 
-# Interpretation
-
-The derivation above shows that classical particle motion emerges whenever coherence basins are sufficiently localized and capacity gradients vary slowly. Mass corresponds to the integrated coherence weight $`M_\alpha`$ of the basin; force corresponds to spatial variation of the effective capacity-induced acceleration field. This quantity encodes inertial resistance of the basin to chart reconfiguration, not a fundamental mass density; its appearance as an integral reflects the chosen effective representation.
-
-No assumption of fundamental forces has been made.
-
-# Electromagnetism as Phase-Coherence Transport
-
-## Phase coherence and internal connections
-
-In addition to spatial localization, coherence basins generally carry internal phase structure inherited from the projection of the fundamental configuration space. We model this by associating to each basin a complex amplitude
-``` math
-\psi(x) = \sqrt{\rho(x)}\,e^{i\theta(x)},
-```
-where $`\rho`$ is the basin density and $`\theta`$ is an internal phase.
-
-Gauge freedom arises because only relative phase is physically meaningful. Accordingly, the effective description involves a connection $`A_\mu(x)`$, and physical phase gradients appear only in the gauge-covariant combination
-``` math
-p_\mu := \partial_\mu \theta - q A_\mu,
-```
-where $`q`$ labels the basin’s coupling to the internal phase connection.
-
-## Phase-gradient transport
-
-Assuming the Hamilton–Jacobi constraint obtained in the eikonal limit of coherent wave reconstruction, within an admissible basin, coherent evolution preserves the Hamilton–Jacobi constraint
-``` math
-g^{\mu\nu} p_\mu p_\nu = m^2,
-```
-which may be viewed as the eikonal limit of coherent wave dynamics.
-
-Taking a covariant derivative along the basin centroid worldline $`X^\mu(\tau)`$ yields
-``` math
-\frac{D p_\mu}{D\tau}
-= -q\,\partial_\mu A_\nu\,\dot X^\nu
-+ q\,\partial_\nu A_\mu\,\dot X^\nu.
-```
-
-Introducing the field strength
-``` math
-F_{\mu\nu} := \partial_\mu A_\nu - \partial_\nu A_\mu,
-```
-we obtain the effective equation of motion
-``` math
-m\,\frac{D \dot X^\mu}{D\tau} = q\,F^\mu{}_{\nu}\,\dot X^\nu.
-```
-
-<div class="theorem">
-
-**Theorem 7** (Lorentz force as effective coherence-transport law). *The Lorentz force arises as the condition that phase coherence be preserved under admissible transport of coherence basins.*
+*Proof.* Subtract $`Ma^i(X,t)`$ from the volume term in <a href="#eq:centroid" data-reference-type="ref+label" data-reference="eq:centroid">[eq:centroid]</a> and apply the Lipschitz bound. ◻
 
 </div>
 
-This result holds at the effective description level and presupposes the phase-coherent transport structure established in the underlying reconstruction.
+Newtonian form is therefore a controlled localized limit of an already specified momentum law. It is not generated by localization alone.
 
-Electromagnetism therefore does not represent a fundamental force carrier, but the bookkeeping of phase-coherence preservation during basin motion.
+# Why a capacity gradient is not yet a force
 
-# Gauge Charge and Conservation Laws
+Let $`C:\Sigma\to\mathbb{R}`$ be a normalized diagnostic margin. Its zero set may mark loss of admissibility, and its sign may rank distance from a chosen boundary. Neither fact supplies dimensions of energy or a coupling to motion.
 
-## Charge as a basin invariant
+<div id="prop:reparam" class="proposition">
 
-The quantity $`q`$ appearing in the covariant phase gradient is an invariant label of the coherence basin. It characterizes how the basin transforms under internal phase rotations.
-
-<div class="definition">
-
-**Definition 8** (Gauge charge). Gauge charge is the representation label associated with internal phase-coherence transport of a coherence basin.
+**Proposition 7** (Reparameterization obstruction). *Let $`\phi`$ be strictly increasing with $`\phi(0)=0`$. Then $`C`$ and $`\widetilde C=\phi\circ C`$ have the same sign and zero set, but
+``` math
+\nabla\widetilde C=\phi'(C)\nabla C.
+```
+Consequently a force rule $`F=-\nabla C`$ is not invariant under admissibility- preserving reparameterization of the diagnostic.*
 
 </div>
+
+<div class="proof">
+
+*Proof.* Monotonicity preserves the sign and zero set. The gradient identity is the chain rule. Unless $`\phi'(C)=1`$, the proposed force changes. ◻
+
+</div>
+
+The obstruction is decisive because capacity diagnostics often admit equivalent monotone normalizations. A physical force can still depend on capacity, but the theory must select both a representative and a coupling law.
+
+<div id="def:promotion" class="definition">
+
+**Definition 8** (Capacity-to-dynamics promotion). A capacity-to-dynamics promotion consists of:
+
+1.  a fixed normalized capacity representative $`C`$;
+
+2.  an effective action, Hamiltonian, stress law, or mobility law;
+
+3.  a dimensionful constitutive map, for example $`V_C=G(C)`$;
+
+4.  boundary conditions and a solution concept;
+
+5.  a source theorem or calibration rule for every coefficient;
+
+6.  an error budget and declared domain of validity.
+
+</div>
+
+With $`V_C=G(C)`$ selected, the conservative capacity contribution becomes
+``` math
+F_C=-\nabla V_C=-G'(C)\nabla C.
+```
+Under $`C\mapsto\phi(C)`$, the same physical potential is preserved only if the constitutive function transforms to $`G\circ\phi^{-1}`$. The invariant object is the selected potential, not the bare diagnostic gradient.
+
+# Conditional Newton and Lorentz equations
+
+## A declared effective action
+
+Consider one localized basin with centroid $`X(t)`$ on a Riemannian spatial chart, inertial coefficient $`m_I>0`$, scalar potential $`\Phi`$, connection $`A_i`$, representation label $`q`$, and capacity potential $`V_C`$. Take
+``` math
+\begin{equation}
+\label{eq:lagrangian}
+ L_{\mathrm{eff}}
+ =
+ \frac12m_I g_{ij}(X)\dot X^i\dot X^j
+ +qA_i(X,t)\dot X^i
+ -q\Phi(X,t)-V_C(X,t).
+\end{equation}
+```
+
+<div id="thm:force" class="theorem">
+
+**Theorem 9** (Conditional force law). *The Euler–Lagrange equations of <a href="#eq:lagrangian" data-reference-type="ref+label" data-reference="eq:lagrangian">[eq:lagrangian]</a> give
+``` math
+m_I\frac{D\dot X^i}{\mathrm{d}t}
+ =
+ q\bigl(E^i+F^i{}_j\dot X^j\bigr)
+ -\nabla^iV_C,
+```
+where
+``` math
+F_{ij}=\partial_iA_j-\partial_jA_i,
+ \qquad
+ E_i=-\partial_i\Phi-\partial_tA_i.
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Differentiate $`\partial L/\partial\dot X^i`$, subtract $`\partial L/\partial X^i`$, and collect the Levi–Civita terms into the covariant acceleration. The antisymmetric derivative of $`A`$ gives $`F_{ij}`$, the time derivative gives $`E_i`$, and the remaining scalar term is $`-\nabla_iV_C`$. ◻
+
+</div>
+
+The theorem shows exactly what survives from the earlier argument. The Lorentz force follows from gauge-covariant minimal coupling in the effective action. If MTT derives that action and its $`U(1)`$ connection from the same source, the result becomes an MTT force law. Phase coherence by itself does not select the kinetic term, charge, connection, or mass.
+
+## Three distinct notions of mass
+
+The previous paper used
+``` math
+M_\rho=\int\rho\,\mathrm{d}x
+```
+as both normalization and mass. Three quantities must instead be separated:
+
+1.  $`M_\rho`$, the conserved weight of the chosen density;
+
+2.  $`m_I`$, the coefficient of the kinetic term and hence inertial response;
+
+3.  $`m_{\mathrm{spec}}`$, a rest-energy or spectral mass extracted from a physical operator.
+
+<div id="prop:mass" class="proposition">
+
+**Proposition 10** (Mass-identification condition). *The equality $`M_\rho=m_I`$ is a convention or a constitutive theorem, not a consequence of the continuity equation.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* For any constant $`c>0`$, replacing $`\rho`$ by $`c\rho`$ leaves the normalized centroid $`X`$ unchanged and preserves the homogeneous continuity equation, but changes $`M_\rho`$ by $`c`$. The kinetic coefficient $`m_I`$ in <a href="#eq:lagrangian" data-reference-type="ref+label" data-reference="eq:lagrangian">[eq:lagrangian]</a> is unchanged unless a separate rule ties it to $`\rho`$. ◻
+
+</div>
+
+A selected theory may prove $`M_\rho=m_I=m_{\mathrm{spec}}`$ after fixing normalization. Until then, “mass is integrated coherence weight” is only a model ansatz.
+
+# Charge and particle number
 
 ## Charge conservation
 
-Because admissible evolution preserves basin identity except at barriers, gauge charge is conserved along admissible basin trajectories, except at admissibility barriers.
+A representation label can remain constant under parallel transport, but that statement requires a fixed representation bundle and compatible connection. In an action formulation, continuous charge conservation is normally tied to a symmetry and a current identity.
 
-<div class="theorem">
+<div id="thm:charge" class="theorem">
 
-**Theorem 9** (Charge conservation). *Within admissible regimes, gauge charge is conserved along coherence-basin trajectories.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Charge labels are topological invariants of the basin structure and cannot change under continuous admissible evolution. ◻
-
-</div>
-
-In contrast, particle number is not protected: basins may merge, split, or dissolve at admissibility barriers, leading to particle creation and annihilation.
-
-# Confinement as Coherence Protection
-
-## Non-Abelian coherence strain
-
-In sectors with non-Abelian internal structure, coherence transport imposes additional strain. Maintaining non-singlet coherence across extended regions requires preserving correlated internal orientations, which rapidly consumes coherence capacity.
-
-## Area-law cost
-
-Consider separating two coherence basins carrying non-Abelian charge. Maintaining admissibility requires preserving a coherent “string” of internal alignment between them. The capacity cost of this configuration grows with the area swept by the separation process.
-
-<div class="theorem">
-
-**Theorem 10** (Confinement from capacity exhaustion, conditional). *Assume bounded transport flux and persistent coherence strain under non-Abelian separation. Non-singlet coherence basins in non-Abelian sectors experience capacity exhaustion under separation, forcing recombination into singlet basins.*
+**Theorem 11** (Conditional charge conservation). *Assume an effective action invariant under a $`U(1)`$ gauge symmetry, a well-defined gauge current $`J^\mu`$, and equations of motion for which the Noether identity is valid. Then
+``` math
+\nabla_\mu J^\mu=0.
+```
+If boundary flux vanishes, the total charge on a spatial slice is conserved.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Persistent capacity strain along the separation direction induces focusing of capacity flux and eventual formation of a bottleneck. The only admissible configuration that avoids capacity exhaustion is one in which net non-Abelian charge is neutralized locally. ◻
+*Proof.* This is the standard Noether identity for the declared gauge symmetry, followed by integration of the continuity equation. ◻
 
 </div>
 
-This reproduces confinement and the area-law behavior of Wilson loops as consequences of coherence protection rather than fundamental interaction potentials.
+Basin persistence alone is insufficient. A persistent basin may contain a nonconserved internal coordinate, while a conserved charge may be shared across several changing quasiparticle basins.
 
-# Summary of Particle and Force Emergence
+## Particle number
 
-We summarize the emergent picture:
+Basin merge, split, creation, or dissolution are possible descriptions of particle-number change, but possibility is not dynamics. A physical claim requires a transition kernel, field equation, interaction vertex, or singular-limit rule that determines rates and preserves the required charges. Version 3 therefore retains basin recombination as an interpretation and withdraws automatic particle creation or annihilation from barrier crossing.
 
-- Particles are stable coherence basins.
+# Confinement requires a coercive energy law
 
-- Mass is the integrated coherence weight of a basin.
+Qualitative non-Abelian “strain” does not prove confinement. A useful capacity model must produce a gauge-invariant energy or action whose cost grows with separation.
 
-- Motion arises from capacity-gradient bias.
+<div id="thm:confinement" class="theorem">
 
-- Gravity appears as the universal response to total coherence-capacity distribution in effective geometric encodings.
+**Theorem 12** (Conditional separation bound). *Let $`R\geq0`$ be a gauge-invariant separation coordinate for a nonsinglet configuration. If a selected effective energy satisfies
+``` math
+V_{\mathrm{sep}}(R)\geq\sigma R-c,
+ \qquad \sigma>0,
+```
+then every configuration in the energy sublevel $`V_{\mathrm{sep}}\leq E`$ obeys
+``` math
+R\leq\frac{E+c}{\sigma}.
+```*
 
-- Electromagnetism preserves phase coherence under transport.
+</div>
 
-- Gauge charges are basin invariants.
+<div class="proof">
 
-- Confinement enforces coherence protection in non-Abelian sectors.
+*Proof.* Combine the lower bound with $`V_{\mathrm{sep}}(R)\leq E`$ and solve for $`R`$. ◻
 
-No fundamental point particles or force carriers are required.
+</div>
 
-# Discussion
+This is a genuine confinement-type statement for finite-energy sublevels. To connect it to Yang–Mills confinement one still needs the physical gauge field, Hilbert space or path-integral measure, static-source limit, renormalization, and a Wilson-loop or equivalent observable. A Wilson-loop area law cannot be inferred merely from a capacity bottleneck. Capacity may help generate $`V_{\mathrm{sep}}`$, but the coercive estimate is the theorem that must be derived.
 
-Particles and forces emerge here as structural features of projection-based effective descriptions with finite coherence capacity. This framework explains why gravity is universal, why gauge interactions are quantized, and why particle number is not conserved, while charge is.
+# Gravity and universality
 
-The derivations rely only on stability, projection, and capacity transport, and therefore apply broadly to any effective theory with similar structure.
+The universality of gravity does not follow from the fact that every basin has a capacity record. A gravitational model needs Lorentzian geometry, a stress-energy source, field equations or an action, and a rule connecting the particle record to geodesic or forced motion.
+
+At the effective level one may append
+``` math
+S_{\mathrm{grav}}[g]
+ +S_{\mathrm{matter}}[g,\Psi]
+```
+and derive both the gravitational field equation and covariant matter response. Equality of inertial and gravitational mass, universal free fall, and backreaction then become testable properties of the common action. They are not consequences of a scalar capacity gradient.
+
+The basin proposal remains compatible with gravity: a localized solution of a matter theory may define a quasiparticle whose centroid follows a controlled worldline limit. The missing step is the same-source action and limit theorem.
+
+# The MTT source contract
+
+<div id="def:source" class="definition">
+
+**Definition 13** (Selected basin-particle source contract). A selected MTT basin-particle derivation must provide:
+
+1.  one upper state complex and selected action or generator;
+
+2.  a coherent projector and a proved stable-basin sector;
+
+3.  a spatial observation map with localization and approximation bounds;
+
+4.  a momentum or stress balance derived from the same action;
+
+5.  kinetic normalization and a source-derived mass observable;
+
+6.  gauge representation, connection, current, and charge identity;
+
+7.  any capacity-to-potential or capacity-to-stress constitutive map;
+
+8.  transition dynamics for merge, split, creation, and annihilation;
+
+9.  for confinement, a gauge-invariant coercive energy or area-law theorem;
+
+10. for gravity, a common metric coupling and controlled worldline limit.
+
+</div>
+
+<div id="thm:encoding" class="theorem">
+
+**Theorem 14** (Conditional basin-particle encoding). *If the rows of Definition <a href="#def:source" data-reference-type="ref" data-reference="def:source">13</a> are supplied by one selected upper MTT object and commute with projection to the effective record, then each stable localized basin defines a controlled effective particle model. Its centroid obeys <a href="#thm:centroid" data-reference-type="ref+label" data-reference="thm:centroid">5</a>; its force law is determined by the projected action or constitutive stress; and its masses and charges have the status proved by their source rows.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The basin and observation rows construct Definition <a href="#def:particle-record" data-reference-type="ref" data-reference="def:particle-record">4</a>. The common action supplies the balance law and internal symmetry. The centroid theorem transfers the distributed dynamics to a worldline equation with an explicit localization error. Because the remaining quantities are carried by the same commuting source maps, no force, mass, or charge is introduced by relabeling a diagnostic. ◻
+
+</div>
+
+Current MTT work has not instantiated the full contract. In particular, the live upper-action blocker remains open. The theorem is therefore a precise conditional target, not a claim that MTT has already replaced quantum field theory’s particle and interaction structure.
+
+# What the basin picture achieves
+
+The corrected proposal still has real value.
+
+1.  It gives a common effective vocabulary for persistence, localization, internal labels, and transition events.
+
+2.  It replaces an ideal point particle by a controlled localized record, which is often the natural object in soliton, quasiparticle, and wave-packet limits.
+
+3.  It supplies an exact route from distributed balance laws to centroid mechanics.
+
+4.  It identifies how a capacity diagnostic may enter physics without confusing admissibility with energy: through a selected potential, action, or stress law.
+
+5.  It turns broad claims about mass, charge, confinement, and gravity into separate falsifiable source obligations.
+
+The proposal is not a proof that all elementary particles are classical attractors. Fermionic statistics, spin, relativistic localization, quantum superselection, scattering, and particle creation require the appropriate quantum field-theoretic carrier. A basin may encode a sector or stable excitation in that carrier; it need not be a literal classical region in three-space.
+
+# Falsifiability and next steps
+
+A concrete basin-particle model should publish:
+
+1.  the state space, evolution, basin, and stability estimate;
+
+2.  the spatial observation map and localization error;
+
+3.  the action or constitutive laws producing $`\Pi`$ and $`b`$;
+
+4.  independent definitions of density weight, inertial mass, spectral mass, and gravitational coupling;
+
+5.  the gauge bundle, current, and conservation proof;
+
+6.  the capacity normalization and selected coupling function;
+
+7.  held-out predictions for motion, scattering, spectra, or transitions.
+
+The immediate MTT frontier is to derive one nontrivial entry of this list from the selected upper action. A useful first target would be a localized mode of the selected operator whose effective kinetic term, mass coefficient, and one gauge coupling are all obtained by the same projection. That would establish more than a visual resemblance to a particle: it would connect persistence, inertia, and interaction in one source-preserving calculation.
 
 # Conclusion
 
-We have shown that particles and forces arise naturally from the dynamics of coherence capacity. Stable coherence basins behave as particles, while gradients and transport of coherence capacity generate the effective forces governing their motion.
+Stable coherence basins remain plausible effective encodings of persistent localized excitations. The mathematical content begins only after the basin is connected to spatial observables and dynamics. Under declared continuity and momentum balances, the exact centroid equation follows. Under a declared gauge-covariant action, Newtonian and Lorentz force laws follow. Under a coercive separation energy, a confinement-type finite-energy bound follows.
 
-This completes the coherence-capacity trilogy at the level of effective emergence:
+None of these laws follows from a diagnostic capacity gradient alone. Version 3 therefore replaces the claim that particles and forces have already been derived with a more useful result: a complete typed particle record, exact centroid mechanics, conditional force theorems, no-go results for untyped identifications, and a sharply stated same-source action target.
 
-- coherence capacity as the fundamental resource,
+<div class="thebibliography">
 
-- its transport, concentration, and exhaustion,
+99
 
-- and the emergence of particles and forces.
+P. Nero, *Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion*, Version 3, July 2026.
 
-Further work will address cosmology, entropy bounds, and quantum field theory reconstruction within this framework.
+P. Nero, *Coherence Capacity as the Invariant Admissibility Margin*, revised 2026.
+
+P. Nero, *Projection-Limited Coherence: A Structural Theory of Effective Description*, Version 2, July 2026.
+
+P. Nero, *Modal Triplet Theory: Foundation*, revised July 2026. <https://doi.org/10.5281/zenodo.16949762>
+
+</div>

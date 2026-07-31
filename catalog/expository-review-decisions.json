@@ -1064,6 +1064,14 @@
       "reviewed_main_tex_sha256": "55b231ec665734cffeca194165e41646d642988f7ce5fdc8cae10234932b9287",
       "reviewed_pdf_sha256": "e10c8d9c2a6c195aed1bac7684bc9aa3bad0fd668f071b452d769a7457377294",
       "reviewed_source_tree_sha256": "b2f2bce1876736985f58f1a6cb3f8e933be0f4a730a8869c65d27b9d538af5a7"
+    },
+    "particles-and-forces-as-coherence-basins-and-capacity-gradients": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 3 rebuilds the basin proposal as a typed conditional effective-particle framework. It proves noninjectivity of spatial observation maps, defines a complete particle record, derives exact centroid balance with boundary traction and a controlled localized limit, proves the reparameterization obstruction for bare capacity gradients, derives Newton and Lorentz terms from a declared effective action, separates density weight, inertial mass, spectral mass, and gravitational mass, gives conditional gauge-charge conservation and a coercive separation bound, withdraws automatic particle-number, gravity, and area-law claims, preserves basin language as a model proposal, keeps the selected same-source action and constitutive map open, and the complete 10-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "4925b8cfecd02875f040021f3baf7230f5b2243f43b2c8993153a58b3ddeef54",
+      "reviewed_pdf_sha256": "f74794b24c934bac460fd841c34cad8aff0d9b1cd9de3b86a5c1dc795544862d",
+      "reviewed_source_tree_sha256": "725e57103e027883acfeabb25a67a9922af1f9e62181857da6686585c09ba69b"
     }
   }
 }

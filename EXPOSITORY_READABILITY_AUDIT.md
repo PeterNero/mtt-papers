@@ -10,21 +10,21 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| major | 2 |
+| major | 1 |
 | moderate | 2 |
 | light | 2 |
-| reviewed | 131 |
+| reviewed | 132 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 31 |
+| argument_flow | 32 |
 | conclusion | 5 |
-| concrete_foothold | 24 |
-| object_intuition | 86 |
-| orientation | 60 |
+| concrete_foothold | 23 |
+| object_intuition | 85 |
+| orientation | 61 |
 | result_interpretation | 7 |
 
 ## Revision Queue
@@ -32,7 +32,6 @@ Canonical papers audited: **139**.
 | Effective priority | Heuristic | Paper | Formal results | Narrative words/result | Coverage | Missing |
 | --- | --- | --- | ---: | ---: | ---: | --- |
 | major | major | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 15 | 210.5 | 7/7 | - |
-| major | major | `particles-and-forces-as-coherence-basins-and-capacity-gradients` | 10 | 124.0 | 5/7 | object_intuition, concrete_foothold |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
@@ -53,6 +52,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707` | 15 | 189.0 | 6/7 | object_intuition |
 | reviewed | critical | `canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62` | 14 | 110.1 | 6/7 | object_intuition |
 | reviewed | major | `coherent-universality-and-the-inevitability-of-projecti-d9e28e29` | 14 | 238.4 | 4/7 | orientation, object_intuition, argument_flow |
+| reviewed | critical | `particles-and-forces-as-coherence-basins-and-capacity-gradients` | 14 | 140.2 | 5/7 | orientation, argument_flow |
 | reviewed | major | `the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2` | 14 | 150.4 | 7/7 | - |
 | reviewed | critical | `coherence-capacity-as-the-fundamental-resource-of-effec-cd41c322` | 13 | 147.2 | 7/7 | - |
 | reviewed | major | `coherence-capacity-as-the-invariant-admissibility-margi-423433d4` | 13 | 182.3 | 7/7 | - |
