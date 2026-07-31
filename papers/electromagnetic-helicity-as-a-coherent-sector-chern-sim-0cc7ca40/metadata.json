@@ -1,65 +1,102 @@
 {
-  "abstract": "We construct a fully rigorous electromagnetic helicity/Chern\u2013Simons (CS) functional on the finite-rank coherent electromagnetic line bundle selected by MTT\u2019s joint harmonic (Riesz) projector \\Pi_{\\mathrm{coh}}(t,x). Because the projector varies over the base, the induced coherent connection necessarily contains Berry/Grassmann (projector) terms; ignoring them makes the curvature and balance laws incorrect. We (i) define the induced coherent connection and compute its curvature including the Berry term; (ii) define both the physical, unnormalized coherent helicity H_{\\mathrm{coh}}=\\int_\\Sigma \\bm A^{\\mathrm{coh}}\\cdot\\bm B^{\\mathrm{coh}}\\,d^3x and the Hopf-normalized CS functional Q_{\\mathrm{coh}}=\\frac{1}{16\\pi^2}\\int_\\Sigma \\mathcal A^{\\mathrm{coh}}\\wedge d_\\Sigma\\mathcal A^{\\mathrm{coh}}; (iii) prove exact balance laws with explicit remainder \\mathcal R_\\Pi(t) that captures projector variation/noncommutation; and (iv) bound \\mathcal R_\\Pi(t) in terms of \\|\\partial_t\\Pi\\| and \\|d_\\Sigma\\Pi\\| with an explicit admissible-slab constant C_\\Pi:=\\sup_{\\mathcal U}\\max\\{\\|\\partial_t\\Pi\\|,\\|d_\\Sigma\\Pi\\|\\}. We connect \\|\\partial_t\\Pi\\| to standard spectral projector perturbation bounds via Riesz calculus and a uniform spectral gap, in the precise manner used in the MTT fixed-point spine. Finally, we state the MTT-aligned admissibility result: on admissible coherent slabs the functionals are well-defined and conserved up to a remainder controlled by the admissibility margin; at barrier/exit events this control can fail, providing the mathematically correct sense in which admissibility/FCC replaces homotopy protection.",
+  "abstract": "A smooth rank-one orthogonal projector on a Hermitian bundle defines a line subbundle and an induced unitary connection. This elementary construction provides a precise setting in which Berry curvature, Abelian Chern\u2013Simons functionals, magnetic helicity, and Hopf invariants can be compared. We derive the induced curvature, including its projector term, and formulate helicity only after specifying a global trivialization or a relative-helicity protocol. The exact slice balance is the usual electric\u2013magnetic pairing plus an explicit boundary flux. There is no additional projector remainder when the electric and magnetic fields are those of the full induced connection: projector variation is already part of those fields. A quantitative comparison theorem bounds the error made when the Berry curvature is omitted and only the ambient Abelian field is retained. We also give a correctly scaled Riesz-projector derivative estimate and state the Hopf normalization with all conventions visible. Modal Triplet Theory (MTT) can use this construction as a conditional encoding once a selected source emits the Hermitian bundle, connection, rank-one projector, physical field identification, and boundary data. Current MTT results do not yet establish that source theorem for the physical electromagnetic sector. The paper therefore proves an exact geometric dictionary and a controlled comparison result, not a universal electromagnetic prediction.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "January, 2026",
+  "current_version": "v3",
+  "date": "Version 3, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261451",
-    "created": "2026-01-15T19:19:41.408957+00:00",
+    "created": "2026-07-31T03:55:16.700953+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18261452",
+    "doi": "10.5281/zenodo.21713347",
     "files": [
       {
-        "checksum": "md5:1043a7533f2df35519a7fcb896d4b698",
-        "content_url": "https://zenodo.org/api/records/18261452/files/Electromagnetic_Helicity_as_a_Coherent_Sector__Chern__Simons_Functional_in_Modal_Triplet_Theory_v2%20(4).pdf/content",
-        "key": "Electromagnetic_Helicity_as_a_Coherent_Sector__Chern__Simons_Functional_in_Modal_Triplet_Theory_v2 (4).pdf",
-        "size": 371074
+        "checksum": "md5:5a839b88256c77d445b30cc2da3f2414",
+        "content_url": "https://zenodo.org/api/records/21713347/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 346309
       }
     ],
-    "id": "18261452",
-    "match_kind": "title_or_file",
+    "id": "21713347",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18261452",
+    "publication_date": "2026-07-31",
+    "record_url": "https://zenodo.org/records/21713347",
     "resource_type": "publication",
-    "title": "Electromagnetic Helicity and Chern\u2013Simons Structure in Modal Triplet Theory",
-    "updated": "2026-01-15T19:19:41.795767+00:00",
-    "version": "v2.0"
+    "title": "Electromagnetic Helicity from an Induced Line Connection Exact Chern\u2013Simons Identities and a Conditional MTT Encoding",
+    "updated": "2026-07-31T03:55:17.158996+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "306c66c45f22d84515b5261dac6d7811bc58ef55e80b1c86f1431ceac3882b42",
+  "main_tex_sha256": "e3d50561bc0fef5cb045401b572be80c5700106d999868c2c905f09894a54d53",
   "paper_id": "electromagnetic-helicity-as-a-coherent-sector-chern-sim-0cc7ca40",
-  "paper_md_sha256": "c41c4fd364358fffd0fb7bd5e19faaf58e714f646fab5f804806296713c71f85",
+  "paper_md_sha256": "cf899b72df511ad6a9b99b0b8d521c7fdfc611922c4929416fe1f76923aa2be3",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/electromagnetic-helicity-as-a-coherent-sector-chern-sim-0cc7ca40/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "9c729c741e4ec918cd740c6f958f3a6432e1b647a1610d9df1b1ebd1d3362b2e",
+    "selected_revision": true
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 20494,
+      "bytes": 24385,
       "path": "main.tex",
-      "sha256": "306c66c45f22d84515b5261dac6d7811bc58ef55e80b1c86f1431ceac3882b42"
+      "sha256": "e3d50561bc0fef5cb045401b572be80c5700106d999868c2c905f09894a54d53"
     },
     {
       "bytes": 3784,
       "path": "series.sty",
       "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+    },
+    {
+      "bytes": 2499,
+      "path": "main.bib",
+      "sha256": "cbbbb49ad971a30ef01f4b614199f4079e6e48c9e4650a2335b74a46e59ecf14"
+    },
+    {
+      "bytes": 346309,
+      "path": "main.pdf",
+      "sha256": "4c6b2fa1184e9dc2c6e79daffd91d6b6a158f622dd9833f4f24ccb038f0e4200"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/Electromagnetic_Helicity_as_a_Coherent_Sector__Chern__Simons_Functional_in_Modal_Triplet_Theory_v2"
   },
-  "source_tree_sha256": "5e238dcea7b9f5eb0c9b815b3e820a7e45c0a14552bc1627af86142ba2a2709c",
-  "title": "Electromagnetic Helicity as a Coherent-Sector Chern\u2013Simons Functional in Modal Triplet Theory Rank-One Abelian Sector, Correct Hopf Normalization, and Admissibility-Controlled Remainders",
+  "source_tree_sha256": "03365c611136bf36ac26cf7c189008f7593a8be749f936cffdd286802e92abf0",
+  "title": "Electromagnetic Helicity from an Induced Line Connection Exact Chern\u2013Simons Identities and a Conditional MTT Encoding",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261451",
+      "created": "2026-07-31T03:55:16.700953+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21713347",
+      "files": [
+        {
+          "checksum": "md5:5a839b88256c77d445b30cc2da3f2414",
+          "content_url": "https://zenodo.org/api/records/21713347/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 346309
+        }
+      ],
+      "id": "21713347",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21713347",
+      "resource_type": "publication",
+      "title": "Electromagnetic Helicity from an Induced Line Connection Exact Chern\u2013Simons Identities and a Conditional MTT Encoding",
+      "updated": "2026-07-31T03:55:17.158996+00:00",
+      "version": "v3"
+    },
     {
       "concept_doi": "10.5281/zenodo.18261451",
       "created": "2026-01-15T19:19:41.408957+00:00",

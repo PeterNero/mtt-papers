@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-31T03:54:52+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21713347",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "5a839b88256c77d445b30cc2da3f2414",
+      "local_pdf_sha256": "4c6b2fa1184e9dc2c6e79daffd91d6b6a158f622dd9833f4f24ccb038f0e4200",
+      "paper_id": "electromagnetic-helicity-as-a-coherent-sector-chern-sim-0cc7ca40",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v3"
+    }
+  ]
+}

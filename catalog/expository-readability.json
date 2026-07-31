@@ -3,21 +3,21 @@
   "generated_on": "2026-07-31",
   "papers": 139,
   "priority_counts": {
-    "critical": 5,
+    "critical": 4,
     "light": 6,
     "low": 1,
     "major": 6,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 117
+    "reviewed": 118
   },
   "missing_dimension_counts": {
-    "argument_flow": 33,
+    "argument_flow": 32,
     "conclusion": 9,
     "concrete_foothold": 32,
     "object_intuition": 86,
     "orientation": 52,
-    "result_interpretation": 9
+    "result_interpretation": 8
   },
   "forbidden_boilerplate_hits": [],
   "rows": [
@@ -937,29 +937,27 @@
     },
     {
       "paper_id": "electromagnetic-helicity-as-a-coherent-sector-chern-sim-0cc7ca40",
-      "title": "Electromagnetic Helicity as a Coherent-Sector Chern\u2013Simons Functional in Modal Triplet Theory Rank-One Abelian Sector, Correct Hopf Normalization, and Admissibility-Controlled Remainders",
-      "total_words": 2052,
-      "narrative_words": 1077,
-      "formal_results": 17,
-      "proofs": 1,
-      "narrative_words_per_result": 63.4,
+      "title": "Electromagnetic Helicity from an Induced Line Connection Exact Chern\u2013Simons Identities and a Conditional MTT Encoding",
+      "total_words": 2974,
+      "narrative_words": 1942,
+      "formal_results": 13,
+      "proofs": 8,
+      "narrative_words_per_result": 149.4,
       "orientation": true,
       "object_intuition": false,
-      "argument_flow": false,
-      "result_interpretation": false,
+      "argument_flow": true,
+      "result_interpretation": true,
       "concrete_foothold": false,
       "limitations": true,
       "conclusion": false,
-      "coverage_dimensions": 2,
-      "audit_priority": "critical",
+      "coverage_dimensions": 4,
+      "audit_priority": "reviewed",
       "heuristic_priority": "critical",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 3 reclassifies the paper as a conditional induced-line encoding; corrects the spacetime-versus-spatial type error; derives the projected connection and exact boundary-aware helicity balance; removes the double-counted projector remainder; proves a controlled ambient-surrogate rate error; distinguishes absolute, relative, and differential-character domains; fixes both Hopf normalization conventions; replaces the obscured gap-squared estimate by the correctly scaled bounded-family Riesz bound while preserving the unbounded-domain obligation; defines a six-row MTT electromagnetic source contract; leaves the physical photon-line and dynamical source rows open; and the complete 10-page PDF was visually inspected.",
       "missing_dimensions": [
         "object_intuition",
-        "argument_flow",
-        "result_interpretation",
         "concrete_foothold",
         "conclusion"
       ]

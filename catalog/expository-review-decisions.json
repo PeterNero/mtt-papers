@@ -952,6 +952,14 @@
       "reviewed_main_tex_sha256": "cb16cd6d384633e46ae9df5ea4dc9c6a4cb807a13f1f5591c8993eb1b6751f6f",
       "reviewed_pdf_sha256": "1af929ca51731548b5969892e120565360a2067d66f3f4c123af4e35f5311bf3",
       "reviewed_source_tree_sha256": "64ed569b03d149c9a8938634535e23d0cd4b15997c172d3583d82587da5a3da5"
+    },
+    "electromagnetic-helicity-as-a-coherent-sector-chern-sim-0cc7ca40": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 3 reclassifies the paper as a conditional induced-line encoding; corrects the spacetime-versus-spatial type error; derives the projected connection and exact boundary-aware helicity balance; removes the double-counted projector remainder; proves a controlled ambient-surrogate rate error; distinguishes absolute, relative, and differential-character domains; fixes both Hopf normalization conventions; replaces the obscured gap-squared estimate by the correctly scaled bounded-family Riesz bound while preserving the unbounded-domain obligation; defines a six-row MTT electromagnetic source contract; leaves the physical photon-line and dynamical source rows open; and the complete 10-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "e3d50561bc0fef5cb045401b572be80c5700106d999868c2c905f09894a54d53",
+      "reviewed_pdf_sha256": "4c6b2fa1184e9dc2c6e79daffd91d6b6a158f622dd9833f4f24ccb038f0e4200",
+      "reviewed_source_tree_sha256": "03365c611136bf36ac26cf7c189008f7593a8be749f936cffdd286802e92abf0"
     }
   }
 }

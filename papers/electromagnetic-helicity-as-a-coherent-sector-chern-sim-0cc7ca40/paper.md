@@ -1,383 +1,471 @@
 ---
 abstract: |
-  We construct a fully rigorous electromagnetic helicity/Chern–Simons (CS) functional on the finite-rank coherent electromagnetic line bundle selected by MTT’s joint harmonic (Riesz) projector $`\Pi_{\mathrm{coh}}(t,x)`$. Because the projector varies over the base, the induced coherent connection necessarily contains Berry/Grassmann (projector) terms; ignoring them makes the curvature and balance laws incorrect. We (i) define the induced coherent connection and compute its curvature including the Berry term; (ii) define both the physical, unnormalized coherent helicity $`H_{\mathrm{coh}}=\int_\Sigma \bm A^{\mathrm{coh}}\cdot\bm B^{\mathrm{coh}}\,d^3x`$ and the Hopf-normalized CS functional $`Q_{\mathrm{coh}}=\frac{1}{16\pi^2}\int_\Sigma \mathcal A^{\mathrm{coh}}\wedge d_\Sigma\mathcal A^{\mathrm{coh}}`$; (iii) prove exact balance laws with explicit remainder $`\mathcal R_\Pi(t)`$ that captures projector variation/noncommutation; and (iv) bound $`\mathcal R_\Pi(t)`$ in terms of $`\|\partial_t\Pi\|`$ and $`\|d_\Sigma\Pi\|`$ with an explicit admissible-slab constant $`C_\Pi:=\sup_{\mathcal U}\max\{\|\partial_t\Pi\|,\|d_\Sigma\Pi\|\}`$. We connect $`\|\partial_t\Pi\|`$ to standard spectral projector perturbation bounds via Riesz calculus and a uniform spectral gap, in the precise manner used in the MTT fixed-point spine. Finally, we state the MTT-aligned admissibility result: on admissible coherent slabs the functionals are well-defined and conserved up to a remainder controlled by the admissibility margin; at barrier/exit events this control can fail, providing the mathematically correct sense in which admissibility/FCC replaces homotopy protection.
+  A smooth rank-one orthogonal projector on a Hermitian bundle defines a line subbundle and an induced unitary connection. This elementary construction provides a precise setting in which Berry curvature, Abelian Chern–Simons functionals, magnetic helicity, and Hopf invariants can be compared. We derive the induced curvature, including its projector term, and formulate helicity only after specifying a global trivialization or a relative-helicity protocol. The exact slice balance is the usual electric–magnetic pairing plus an explicit boundary flux. There is no additional projector remainder when the electric and magnetic fields are those of the full induced connection: projector variation is already part of those fields. A quantitative comparison theorem bounds the error made when the Berry curvature is omitted and only the ambient Abelian field is retained. We also give a correctly scaled Riesz-projector derivative estimate and state the Hopf normalization with all conventions visible. Modal Triplet Theory (MTT) can use this construction as a conditional encoding once a selected source emits the Hermitian bundle, connection, rank-one projector, physical field identification, and boundary data. Current MTT results do not yet establish that source theorem for the physical electromagnetic sector. The paper therefore proves an exact geometric dictionary and a controlled comparison result, not a universal electromagnetic prediction.
 author:
 - Peter Nero
-current_version: v2
-date: January, 2026
-generated_from_main_tex_sha256: 306c66c45f22d84515b5261dac6d7811bc58ef55e80b1c86f1431ceac3882b42
+bibliography:
+- main.bib
+current_version: v3
+date: Version 3, July 2026
+generated_from_main_tex_sha256: e3d50561bc0fef5cb045401b572be80c5700106d999868c2c905f09894a54d53
 paper_id: electromagnetic-helicity-as-a-coherent-sector-chern-sim-0cc7ca40
 release_state: zenodo_released
-released_version: v2.0
+released_version: v3
 title: |
-  **Electromagnetic Helicity as a Coherent-Sector  
-  Chern–Simons Functional in Modal Triplet Theory  
-  Rank-One Abelian Sector, Correct Hopf Normalization, and Admissibility-Controlled Remainders**
-zenodo_doi: 10.5281/zenodo.18261452
-zenodo_record_id: 18261452
-zenodo_url: "https://zenodo.org/records/18261452"
+  **Electromagnetic Helicity from an Induced Line Connection
+  Exact Chern–Simons Identities and a Conditional MTT Encoding**
+zenodo_doi: 10.5281/zenodo.21713347
+zenodo_record_id: 21713347
+zenodo_url: "https://zenodo.org/records/21713347"
 ---
 
-# Introduction
+# Revision note for Version 3
 
-Topological soliton models and electromagnetic Hopfions exhibit stability via topology, with an integer Hopf invariant $`Q_H\in\pi_3(S^2)\cong\mathbb Z`$. MTT organizes stability via a dynamically selected coherent sector determined by a joint harmonic projector $`\Pi_{\mathrm{coh}}`$, spectral gaps, and contraction/stability margins (FCC/admissibility). This paper provides a referee-robust bridge by defining (i) a physical coherent helicity $`H_{\mathrm{coh}}`$ and (ii) a Hopf-normalized coherent CS functional $`Q_{\mathrm{coh}}`$ on the coherent line bundle, both with correct Berry/projector terms and with exact balance laws including projector-variation remainders.
+<div class="description">
 
-# Setting and boundary conditions
+Version 2, DOI [10.5281/zenodo.18261452](https://doi.org/10.5281/zenodo.18261452).
 
-Let $`\mathcal U=[t_0,t_1]\times \Sigma`$ be a bounded-geometry slab, $`\Sigma`$ a Cauchy slice. Work with Sobolev $`H^s(\Sigma)`$, $`s>3/2`$, so products are controlled.
+Version 2 correctly retained the Berry term in the induced curvature, but it then counted projector variation a second time as a remainder in the exact helicity balance. It also contracted a spatial two-form to define the electric field, mixed two Hopf normalizations, and treated a candidate rank-one coherent line as the selected physical electromagnetic sector.
 
-<div id="ass:boundary" class="assumption">
+Version 3 distinguishes the full spacetime curvature from its spatial and electric parts, proves the boundary-aware balance for the full induced field, and uses projector control only for the error made by an ambient-field surrogate. It declares the global gauge and topology domain, fixes the Hopf and Riesz constants, and makes physical MTT sourcing a six-row conditional contract.
 
-**Assumption 1** (Boundary/decay conditions). Either (i) $`\Sigma`$ is compact without boundary; or (ii) $`\Sigma=\mathbb R^3`$ with sufficient decay; or (iii) boundary conditions/relative helicity are used so CS/helicity identities have no boundary remainder.
+The projected-connection construction and the fact that its curvature contains a Berry/Grassmann term remain valid. The revision changes the balance-law bookkeeping and physical claim status, not that underlying geometry.
 
-</div>
-
-# Coherent projector and rank-one EM sector
-
-<div id="ass:PiReg" class="assumption">
-
-**Assumption 2** (Projector regularity). On $`\mathcal U`$, $`\Pi(t,x)=\Pi_{\mathrm{coh}}(t,x)`$ satisfies: (i) orthogonal projector of constant finite rank; (ii) $`\Pi\in C^1(\mathcal U;\mathcal B(\mathcal E))`$; (iii) uniform Sobolev boundedness $`\|\Pi\|_{H^1\to H^1}\le C_\Pi^{(0)}`$.
+Current MTT results do not yet select the physical photon line, identify the induced curvature with the physical electromagnetic field, or transport the required dynamics. Those source rows remain explicit conditions rather than results of this paper.
 
 </div>
 
-<div id="ass:rank1" class="assumption">
+# Purpose and corrected scope
 
-**Assumption 3** (Rank-one EM coherent sector). For the electromagnetic leg, $`\mathrm{rank}\,\mathcal H^{(\mathrm{EM})}_{\mathrm{coh}}(t,x)=1`$ on $`\mathcal U`$.
-
-</div>
-
-<div id="ass:scalarU1" class="assumption">
-
-**Assumption 4** (Scalar $`U(1)`$ action). On the EM leg, the ambient Abelian covariant derivative acts as $`D=d+iA\,I_{\mathcal E}`$ with $`A`$ a real 1-form on $`\mathcal U`$. Hence $`[A,\Pi]=0`$.
-
-</div>
-
-# Induced coherent connection and curvature
-
-<div class="definition">
-
-**Definition 5** (Induced coherent connection). On sections $`s=\Pi s`$ of the coherent EM line bundle, define
+Magnetic helicity is often written as
 ``` math
-\nabla^{\mathrm{coh}}:=\Pi\circ(d+iA).
+H=\int_\Sigma \bm A\cdot\bm B\,d^3x
+  =\int_\Sigma a\wedge da.
 ```
-Locally, choosing a unit section $`u`$ with $`\Pi=|u\rangle\langle u|`$, the induced spatial 1-form is
-``` math
-\mathcal A^{\mathrm{coh}} = \underbrace{-i\langle u,d_\Sigma u\rangle}_{\mathcal A^\Pi} + A|_\Sigma.
-```
+The compact formula hides three separate questions. First, does a global potential $`a`$ exist? Second, which gauge transformations and boundary conditions leave the integral unchanged? Third, if a projector defines a moving coherent line, is the relevant field the ambient Abelian field or the curvature of the induced line connection?
+
+The needed ingredients are standard but belong to different literatures: Chern–Simons transgression , magnetic and relative helicity , and Berry holonomy . Keeping their domains distinct is what makes the combined statement reliable.
+
+The purpose of this paper is to answer those questions in a typed order. The answer to the third is especially important. The projector contribution is not an extra force added after a Chern–Simons balance has been written. It is a part of the induced curvature itself. Consequently, the exact balance law for the total induced field has no separate “projector remainder.” Such a term appears only when one compares the total induced field with a surrogate that has deliberately omitted the Berry contribution.
+
+This distinction also fixes the relation to MTT. Projection and spectral gaps can control a supplied coherent line. They do not, by themselves, prove that this line is the physical photon sector or that its curvature obeys Maxwell, magnetohydrodynamic, or other chosen dynamics. Those identifications belong to a source contract stated in <a href="#sec:mtt" data-reference-type="ref+label" data-reference="sec:mtt">9</a>.
+
+# The typed geometric contract
+
+Let $`I=[t_0,t_1]`$, let $`\Sigma`$ be an oriented Riemannian three-manifold, and set $`\mathcal U=I\times\Sigma`$. Write $`\iota_t:\Sigma\hookrightarrow\mathcal U`$ for the slice inclusion. The basic objects are listed in <a href="#tab:contract" data-reference-type="ref+label" data-reference="tab:contract">1</a>.
+
+<div id="tab:contract">
+
+| Object | Type | Role |
+|:---|:---|:---|
+| $`\mathcal E\to\mathcal U`$ | Hermitian vector bundle | Ambient carrier |
+| $`D`$ | Unitary connection on $`\mathcal E`$ | Ambient parallel transport |
+| $`P`$ | $`C^2`$ rank-one orthogonal projection | Defines $`\mathcal L=\operatorname{Ran}P`$ |
+| $`\nabla^\mathcal L=P D`$ | Unitary connection on $`\mathcal L`$ | Total induced connection |
+| $`f=-iF_{\nabla^\mathcal L}`$ | Real two-form on $`\mathcal U`$ | Total induced field strength |
+| $`b_t=\iota_t^*f`$ | Spatial two-form | Magnetic part |
+| $`e_t=-\iota_t^*(\iota_{\partial_t}f)`$ | Spatial one-form | Electric part |
+| Boundary protocol | Closed slice, decay, or relative data | Makes helicity typed |
+
+The minimal geometric data. No physical interpretation is inferred from these types alone.
 
 </div>
 
-<div id="thm:curv" class="theorem">
-
-**Theorem 6** (Curvature with Berry term). *Assume <a href="#ass:PiReg" data-reference-type="ref" data-reference="ass:PiReg">2</a> and <a href="#ass:scalarU1" data-reference-type="ref" data-reference="ass:scalarU1">4</a>. The curvature 2-form of $`\nabla^{\mathrm{coh}}`$ is
+The sign in the definition of $`e_t`$ is chosen so that, in a global gauge $`\mathcal A=\phi\,dt+a_t`$,
 ``` math
-\Omega^{\mathrm{coh}} = i\,\Pi(dA)\Pi + \Pi(d\Pi)\wedge(d\Pi)\Pi.
-```*
-
-</div>
-
-# Two invariants: physical helicity and Hopf-normalized CS
-
-## Intrinsic coherent spatial field strength
-
-<div id="def:Fcoh" class="definition">
-
-**Definition 7** (Intrinsic coherent spatial field strength). On a spatial slice $`\Sigma`$ at time $`t`$, define
-``` math
-F^{\mathrm{coh}}(t):=(-i)\,\Omega^{\mathrm{coh}}(t)\big|_\Sigma.
-```
-In rank-one, $`F^{\mathrm{coh}}=d_\Sigma\mathcal A^{\mathrm{coh}}`$ in any local unit section.
-
-</div>
-
-## Unnormalized coherent helicity $`H_{\mathrm{coh}}`$
-
-<div id="def:H" class="definition">
-
-**Definition 8** (Physical (unnormalized) coherent helicity). Assume <a href="#ass:boundary" data-reference-type="ref" data-reference="ass:boundary">1</a>. In a vector calculus representation on $`\Sigma\subset\mathbb R^3`$, choose a gauge/frame for which $`\bm B^{\mathrm{coh}}=\nabla\times \bm A^{\mathrm{coh}}`$ represents the same $`F^{\mathrm{coh}}`$. Define the physical helicity
-``` math
-H_{\mathrm{coh}}(t):=\int_\Sigma \bm A^{\mathrm{coh}}(t)\cdot \bm B^{\mathrm{coh}}(t)\,d^3x
-\;=\;\int_\Sigma \mathcal A^{\mathrm{coh}}(t)\wedge F^{\mathrm{coh}}(t).
-```
-
-</div>
-
-## Hopf-normalized coherent CS functional $`Q_{\mathrm{coh}}`$
-
-<div id="def:Q" class="definition">
-
-**Definition 9** (Hopf-normalized coherent CS). Assume <a href="#ass:boundary" data-reference-type="ref" data-reference="ass:boundary">1</a>. Define
-``` math
-\begin{equation}
-\label{eq:Qdef}
-Q_{\mathrm{coh}}(t):=\frac{1}{16\pi^2}\int_\Sigma \mathcal A^{\mathrm{coh}}(t)\wedge F^{\mathrm{coh}}(t)
-=\frac{1}{16\pi^2}\int_\Sigma \mathcal A^{\mathrm{coh}}(t)\wedge d_\Sigma\mathcal A^{\mathrm{coh}}(t).
-\end{equation}
-```
-Thus $`Q_{\mathrm{coh}} = \frac{1}{16\pi^2} H_{\mathrm{coh}}`$ whenever the same representative is used.
-
-</div>
-
-# Balance laws and corrected constants
-
-Define the coherent electric 1-form on $`\Sigma`$ intrinsically:
-``` math
-E^{\mathrm{coh}}(t):=\iota_{\partial_t}F^{\mathrm{coh}}(t).
-```
-
-<div class="remark">
-
-*Remark 10* (Relation to spacetime components). If $`\Omega^{\mathrm{coh}}`$ denotes the full spacetime curvature 2-form of the induced coherent connection, then
-``` math
-E^{\mathrm{coh}} = \iota_{\partial_t} F^{\mathrm{coh}}
-```
-coincides with the spatial 1-form whose components are $`(\Omega^{\mathrm{coh}})_{0i}\,dx^i`$ in any coordinate system adapted to the time slicing of the slab. Thus $`E^{\mathrm{coh}}`$ agrees with the usual electric field associated with the coherent connection.
-
-</div>
-
-<div id="thm:Hbalance" class="theorem">
-
-**Theorem 11** (Exact balance law for $`H_{\mathrm{coh}}`$ with remainder). *Assume <a href="#ass:boundary" data-reference-type="ref" data-reference="ass:boundary">1</a>, <a href="#ass:PiReg" data-reference-type="ref" data-reference="ass:PiReg">2</a>, <a href="#ass:rank1" data-reference-type="ref" data-reference="ass:rank1">3</a>, <a href="#ass:scalarU1" data-reference-type="ref" data-reference="ass:scalarU1">4</a>. Then
-``` math
-\begin{equation}
-\label{eq:Hbalance}
-\frac{d}{dt}H_{\mathrm{coh}}(t)
-=
--2\int_\Sigma E^{\mathrm{coh}}(t)\wedge F^{\mathrm{coh}}(t) \;+\; R_\Pi^{(H)}(t),
-\end{equation}
-```
-where the remainder $`R_\Pi^{(H)}(t)`$ arises from projector variation/frame noncommutation and is given explicitly in Appendix <a href="#app:R" data-reference-type="ref" data-reference="app:R">11</a>. Moreover, for any $`s>3/2`$,
-``` math
-\begin{equation}
-\label{eq:HRemBound}
-|R_\Pi^{(H)}(t)|
-\le
-C_s\,C_\Pi\Big(\|\partial_t\Pi(t)\|_{\mathrm{op}}+\|d_\Sigma\Pi(t)\|_{\mathrm{op}}\Big)\,
-\|\mathcal A^{\mathrm{coh}}(t)\|_{H^s(\Sigma)}\,\|F^{\mathrm{coh}}(t)\|_{H^{s-1}(\Sigma)},
-\end{equation}
-```
-where
-``` math
-C_\Pi:=\sup_{(t,x)\in\mathcal U}\max\{\|\partial_t\Pi(t,x)\|_{\mathrm{op}},\|d_\Sigma\Pi(t,x)\|_{\mathrm{op}}\}<\infty.
-```*
-
-</div>
-
-<div id="thm:Qbalance" class="theorem">
-
-**Theorem 12** (Exact balance law for $`Q_{\mathrm{coh}}`$ with remainder). *Under the same hypotheses,
-``` math
-\begin{equation}
-\label{eq:Qbalance}
-\frac{d}{dt}Q_{\mathrm{coh}}(t)
-=
--\frac{1}{8\pi^2}\int_\Sigma E^{\mathrm{coh}}(t)\wedge F^{\mathrm{coh}}(t)\;+\;R_\Pi^{(Q)}(t),
-\end{equation}
-```
-with $`R_\Pi^{(Q)}(t)=\frac{1}{16\pi^2}R_\Pi^{(H)}(t)`$ and the bound <a href="#eq:HRemBound" data-reference-type="eqref" data-reference="eq:HRemBound">[eq:HRemBound]</a> scaled accordingly.*
-
-</div>
-
-<div id="cor:clean" class="corollary">
-
-**Corollary 13** (Clean vacuum constants under frozen projector). *If $`\partial_t\Pi\equiv0`$ on $`\mathcal U`$(or more generally, if the Berry/Grassmann contribution to $`\mathcal A^{\mathrm{coh}}`$ is time independent up to an exact spatial 1-form, so that its time derivative contributes only exact terms to the Chern–Simons functional, which vanish under Assumption <a href="#ass:boundary" data-reference-type="ref" data-reference="ass:boundary">1</a>) , then $`R_\Pi^{(H)}=R_\Pi^{(Q)}=0`$. In vector calculus notation this gives
-``` math
-\frac{d}{dt}H_{\mathrm{coh}}(t) = -2\int_\Sigma \bm E^{\mathrm{coh}}\cdot\bm B^{\mathrm{coh}}\,d^3x,
+f=d\mathcal A
+  =dt\wedge(\dot a_t-d_\Sigma\phi)+d_\Sigma a_t,
 \qquad
-\frac{d}{dt}Q_{\mathrm{coh}}(t) = -\frac{1}{8\pi^2}\int_\Sigma \bm E^{\mathrm{coh}}\cdot\bm B^{\mathrm{coh}}\,d^3x.
-```*
+e_t=d_\Sigma\phi-\dot a_t.
+```
+Other sign conventions are equivalent after changing all balance formulas consistently.
 
-</div>
+# The induced line connection
 
-# Spectral projector bounds for $`\|\partial_t\Pi\|`$ and $`\|d_\Sigma\Pi\|`$ (Riesz calculus + gap)
+<div id="def:projected-connection" class="definition">
 
-Let $`L(t)`$ be the relevant fiberwise Laplace-type operator family defining $`\Pi(t)`$ as a Riesz projector. Assume a uniform gap $`\lambda_*>0`$: $`\sigma(L(t))\subset\{0\}\cup[\lambda_*,\infty)`$. Let $`\Gamma`$ enclose $`0`$ and no other spectrum, e.g. radius $`\lambda_*/2`$.
-
+**Definition 1** (Projected connection). For a section $`s`$ of $`\mathcal L=\operatorname{Ran}P`$, define
 ``` math
-\begin{equation}
-\Pi(t)=\frac{1}{2\pi i}\oint_\Gamma (z-L(t))^{-1}\,dz.
-\end{equation}
+\nabla^\mathcal Ls:=P(Ds).
 ```
 
-<div id="ass:Ldiff" class="assumption">
-
-**Assumption 14** (Differentiability of operator family). $`t\mapsto L(t)`$ is differentiable in operator norm with $`\|\partial_tL(t)\|_{\mathrm{op}}<\infty`$ on $`\mathcal U`$. Likewise, $`x\mapsto L(t,x)`$ is $`C^1`$ in operator norm on $`\Sigma`$ with $`\|d_\Sigma L(t)\|_{\mathrm{op}}<\infty`$.
-
 </div>
 
-<div id="thm:RieszBound" class="theorem">
+Because $`P`$ is orthogonal and $`D`$ is unitary, $`\nabla^\mathcal L`$ is a unitary connection. It depends on both the ambient connection and the way the range of $`P`$ turns inside $`\mathcal E`$.
 
-**Theorem 15** (Riesz projector perturbation bounds). *Under the uniform gap and <a href="#ass:Ldiff" data-reference-type="ref" data-reference="ass:Ldiff">14</a>,
+<div id="thm:projected-curvature" class="theorem">
+
+**Theorem 2** (Curvature of the projected connection). *Let $`F_D=D^2`$ and let $`DP=[D,P]`$. The curvature of $`\nabla^\mathcal L`$ is
 ``` math
-\partial_t\Pi(t)=\frac{1}{2\pi i}\oint_\Gamma (z-L(t))^{-1}(\partial_tL(t))(z-L(t))^{-1}\,dz,
+F_{\nabla^\mathcal L}
+ =P F_D P+P(DP)\wedge(DP)P
 ```
-and
-``` math
-\|\partial_t\Pi(t)\|_{\mathrm{op}}\le C_\Gamma\,\frac{\|\partial_tL(t)\|_{\mathrm{op}}}{\lambda_*^2}.
-```
-Similarly,
-``` math
-\|d_\Sigma\Pi(t)\|_{\mathrm{op}}\le C_\Gamma\,\frac{\|d_\Sigma L(t)\|_{\mathrm{op}}}{\lambda_*^2}.
-```*
+as an endomorphism-valued two-form restricted to $`\mathcal L`$.*
 
 </div>
-
-<div class="remark">
-
-*Remark 16* (MTT coherence alignment). In MTT, $`L(t)`$ is the vertical Laplace-type operator (or commuting sum) whose kernel defines the coherent sector. Bounded geometry + uniform gap give uniform resolvent control on $`\Gamma`$, so these bounds are precisely the projector-control mechanism used throughout the fixed-point series and Foundation spine.
-
-</div>
-
-# Hopf quantization specialization (correct normalization)
-
-<div id="prop:Hopf" class="proposition">
-
-**Proposition 17** (Hopf quantization specialization). *Assume:*
-
-1.  *$`\Sigma\simeq S^3`$;*
-
-2.  *$`H^2(S^3)=0`$, so for any closed 2-form $`F^{\mathrm{coh}}`$ there exists a global 1-form $`\mathcal A^{\mathrm{coh}}`$ with $`d\mathcal A^{\mathrm{coh}}=F^{\mathrm{coh}}`$;*
-
-3.  *$`F^{\mathrm{coh}} = n^*\omega_{S^2}`$ for a map $`n:S^3\to S^2`$ and the standard normalized area form $`\omega_{S^2}`$, so the Hopf class $`Q_H\in\mathbb Z`$ is defined.*
-
-*Then with Definition <a href="#def:Q" data-reference-type="ref" data-reference="def:Q">9</a>,
-``` math
-Q_{\mathrm{coh}} = Q_H\in\mathbb Z.
-```*
-
-</div>
-
-<div class="remark">
-
-*Remark 18* (Gauge independence on $`S^3`$). On $`\Sigma\simeq S^3`$, the condition $`H^2(S^3)=0`$ guarantees the existence of a global 1-form $`A`$ satisfying $`dA=F^{\mathrm{coh}}`$. Any two such choices differ by an exact 1-form $`A\mapsto A+d\chi`$. Since
-``` math
-\int_{S^3} (A+d\chi)\wedge d(A+d\chi)
-=
-\int_{S^3} A\wedge dA
-+
-\int_{S^3} d(\chi\,dA),
-```
-and $`\int_{S^3} d(\chi\,dA)=0`$, the integral $`\int_{S^3} A\wedge dA`$ is gauge independent. Thus the integer-valued Hopf quantization of $`Q_{\mathrm{coh}}`$ in Proposition <a href="#prop:Hopf" data-reference-type="ref" data-reference="prop:Hopf">17</a> is well defined.
-
-</div>
-
-# MTT admissibility/FCC control statement (rigorous form)
-
-<div id="ass:admissible" class="assumption">
-
-**Assumption 19** (Admissible coherent slab (MTT)). On $`\mathcal U`$, the coherent regime persists with strict margins:
-``` math
-\lambda(t,x)\ge \lambda_{\min}>0,\qquad
-\gamma(t,x)\ge \delta(t,x)+\varepsilon,
-```
-for all occupied channels, and an FCC-type stability margin holds for the projected coherent dynamics. Additionally, the operator families defining $`\Pi`$ satisfy <a href="#ass:Ldiff" data-reference-type="ref" data-reference="ass:Ldiff">14</a> on $`\mathcal U`$.
-
-</div>
-
-<div id="thm:admissibleControl" class="theorem">
-
-**Theorem 20** (Admissible-slab control of remainders). *Assume <a href="#ass:admissible" data-reference-type="ref" data-reference="ass:admissible">19</a>. Then Theorem <a href="#thm:RieszBound" data-reference-type="ref" data-reference="thm:RieszBound">15</a> yields uniform bounds on $`\|\partial_t\Pi\|`$ and $`\|d_\Sigma\Pi\|`$ on $`\mathcal U`$, hence $`C_\Pi<\infty`$ and the remainder bounds <a href="#eq:HRemBound" data-reference-type="eqref" data-reference="eq:HRemBound">[eq:HRemBound]</a> (and its $`Q`$-scaled version) are quantitative on $`\mathcal U`$. If the admissibility/adiabatic conditions make $`\|\partial_tL\|`$ and $`\|d_\Sigma L\|`$ small compared to $`\lambda_*^2`$, then $`R_\Pi^{(H)}`$ and $`R_\Pi^{(Q)}`$ are small and $`H_{\mathrm{coh}}`$, $`Q_{\mathrm{coh}}`$ are conserved up to controlled error.*
-
-</div>
-
-# Curvature derivation
 
 <div class="proof">
 
-*Proof of Theorem <a href="#thm:curv" data-reference-type="ref" data-reference="thm:curv">6</a>.* Let $`D=d+iA`$ with scalar $`U(1)`$ action. For sections $`s=\Pi s`$, $`\nabla^{\mathrm{coh}}s=\Pi Ds`$. Then
+*Proof.* For $`s=Ps`$,
 ``` math
-(\nabla^{\mathrm{coh}})^2 s = \Pi D(\Pi Ds) = \Pi(D\Pi)\wedge Ds + \Pi\Pi D^2 s.
+(P D)^2s=P D(PDs)
+       =P(DP)\wedge Ds+P D^2s.
 ```
-Since $`D^2=i\,dA`$, the second term gives $`i\,\Pi(dA)\Pi s`$. For the first term, write $`D\Pi=d\Pi+iA\Pi`$; scalar commutation and $`\Pi(d\Pi)\Pi=0`$ from $`d(\Pi^2)=d\Pi`$ leave precisely the Grassmann term $`\Pi(d\Pi)\wedge(d\Pi)\Pi`$. ◻
+Differentiate $`P^2=P`$ to obtain $`P(DP)P=0`$. Splitting $`Ds=P Ds+(1-P)Ds`$ and using $`(1-P)Ds=(DP)s`$ gives the stated Grassmann-curvature term. ◻
 
 </div>
 
-# Balance-law remainder $`R_\Pi`$ and explicit bilinear-to-linear step
-
-## B.1 Rank-one Berry term and its time derivative
-
-With $`\Pi=|u\rangle\langle u|`$ (local unit section), the Berry 1-form is $`\mathcal A^\Pi=-i\langle u,d_\Sigma u\rangle`$. Then
+The most transparent specialization is an ambient scalar $`U(1)`$ connection. Suppose that, in a local frame,
 ``` math
-\dot{\mathcal A}^\Pi
-= -i\langle \dot u, d_\Sigma u\rangle - i\langle u, d_\Sigma \dot u\rangle.
+D=d+iA\,\mathrm{Id}_{\mathcal E},
 ```
-Up to an exact form (which vanishes in $`\int_\Sigma \dot{\mathcal A}^\Pi\wedge F^{\mathrm{coh}}`$ under Assumption <a href="#ass:boundary" data-reference-type="ref" data-reference="ass:boundary">1</a>), this is controlled by the bilinear pairing of $`\dot u`$ and $`d_\Sigma u`$.
-
-## B.2 Remainder definition
-
-Starting from $`H_{\mathrm{coh}}(t)=\int_\Sigma \mathcal A^{\mathrm{coh}}\wedge F^{\mathrm{coh}}`$, differentiate and integrate by parts to obtain the standard term $`-2\int E^{\mathrm{coh}}\wedge F^{\mathrm{coh}}`$ plus the projector/frame remainder
+where $`A`$ is a real one-form. Then $`DP=dP`$, $`F_D=i\,dA`$, and the real curvature of the induced line is
 ``` math
-R_\Pi^{(H)}(t) := 2\int_\Sigma \dot{\mathcal A}^\Pi(t)\wedge F^{\mathrm{coh}}(t).
-```
-Then $`R_\Pi^{(Q)}=\frac{1}{16\pi^2}R_\Pi^{(H)}`$.
-
-## B.3 Bilinear bound and explicit linearization constant
-
-From $`\Pi=|u\rangle\langle u|`$,
-``` math
-\dot\Pi = |\dot u\rangle\langle u| + |u\rangle\langle \dot u|,
+\begin{equation}
+f=dA+q_P,
 \qquad
-d_\Sigma\Pi = |d_\Sigma u\rangle\langle u| + |u\rangle\langle d_\Sigma u|.
+q_P:=-i\,\mathop{\mathrm{Tr}}\!\bigl(P\,dP\wedge dP\bigr).
+\label{eq:curvature-split}
+\end{equation}
 ```
-Thus in operator norm,
+The second term is the Berry or Grassmann curvature. In a local unit section $`u`$ with $`P=|u\rangle\langle u|`$, the induced real connection form is
 ``` math
-\|\dot\Pi\|_{\mathrm{op}} \le 2\|\dot u\|, \qquad
-\|d_\Sigma\Pi\|_{\mathrm{op}} \le 2\|d_\Sigma u\|.
+\mathcal A=A-i\langle u,du\rangle,
+\qquad
+f=d\mathcal A.
 ```
-Choosing the gauge $`\langle u,\dot u\rangle=0`$ locally yields converses up to a universal factor, hence
-``` math
-\|\dot u\|\,\|d_\Sigma u\| \;\lesssim\; \|\dot\Pi\|_{\mathrm{op}}\,\|d_\Sigma\Pi\|_{\mathrm{op}}.
-```
-Therefore, for $`s>3/2`$,
-``` math
-|R_\Pi^{(H)}(t)| \le C_s\,\|\dot\Pi(t)\|_{\mathrm{op}}\,\|d_\Sigma\Pi(t)\|_{\mathrm{op}}\,
-\|\mathcal A^{\mathrm{coh}}(t)\|_{H^s}\,\|F^{\mathrm{coh}}(t)\|_{H^{s-1}}.
-```
-Now define the explicit admissible-slab constant
-``` math
-C_\Pi := \sup_{\mathcal U}\max\{\|\dot\Pi\|_{\mathrm{op}},\|d_\Sigma\Pi\|_{\mathrm{op}}\} <\infty.
-```
-Then pointwise in $`t`$,
-``` math
-\|\dot\Pi\|_{\mathrm{op}}\,\|d_\Sigma\Pi\|_{\mathrm{op}}
-\le C_\Pi\left(\|\dot\Pi\|_{\mathrm{op}}+\|d_\Sigma\Pi\|_{\mathrm{op}}\right),
-```
-which yields the linear bound <a href="#eq:HRemBound" data-reference-type="eqref" data-reference="eq:HRemBound">[eq:HRemBound]</a> with an explicit constant depending on $`C_\Pi`$. This is the precise step replacing the earlier rhetorical “absorption.” 0◻
+Under $`u\mapsto e^{i\chi}u`$, this local form changes by $`\mathcal A\mapsto\mathcal A+d\chi`$, while $`f`$ is unchanged.
 
-<div class="thebibliography">
+# When helicity is a real-valued functional
 
-99
+The local formula for $`\mathcal A`$ does not guarantee a global real one-form on a slice. A nontrivial line bundle has no global unit frame, and even a trivial bundle requires a boundary and gauge convention before $`\int a\wedge da`$ is an invariant real number.
 
-P. Nero, *Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255621>
+<div id="ass:absolute-domain" class="assumption">
 
-P. Nero, *Modal Triplet Theory: Foundation*, Zenodo preprint, September 2025. <https://doi.org/10.5281/zenodo.16949762>
+**Assumption 3** (Absolute-helicity domain). For each time under consideration, $`\mathcal L|_{\Sigma_t}`$ is supplied with a global unitary trivialization. In that trivialization, $`a_t=\iota_t^*\mathcal A`$ and $`b_t=d_\Sigma a_t`$. In addition, one of the following holds:
 
-P. Nero, *Fixed Points I–VI: Complete Coherence Spine*, Zenodo preprints, August 2025. <https://doi.org/10.5281/zenodo.16948748>
+1.  $`\Sigma`$ is closed and allowed gauge transformations lift to single-valued real functions $`\chi`$;
 
-P. Nero, *The Projection–Admissibility Principle: Structural Constraints on Effective Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255838>
+2.  $`\Sigma=\mathbb R^3`$ and all fields and gauge functions decay enough to remove the boundary term; or
 
-P. Nero, *Closure and Inevitability in Modal Triplet Theory*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255510>
-
-P. Nero, *Coherence Capacity as the Fundamental Resource of Effective Physics*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255905>
-
-P. Nero, *Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18256048>
-
-P. Nero, *Modal Triplet Theory: From MTT to Quantum Mechanics*, Zenodo preprint, September 2025. <https://doi.org/10.5281/zenodo.17074246>
-
-P. Nero, *From MTT to Quantum Field Theory*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17068816>
-
-P. Nero, *Modal Triplet Theory: From MTT to General Relativity*, Zenodo preprint, October 2025. <https://doi.org/10.5281/zenodo.16950597>
-
-P. Nero, *Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17077671>
-
-P. Nero, *Measurement as Disturbance and Stabilization in Modal Triplet Theory*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17177404>
-
-P. Nero, *Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18256408>
-
-P. Nero, *Modal Fixed Points, Bell’s Beables, and the Limits of Factorization*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17076300>
-
-P. Nero, *Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory*, Zenodo preprint, August 2025. <https://doi.org/10.5281/zenodo.18208884>
-
-P. Nero, *From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18254862>
+3.  a boundary gauge is fixed so that the flux terms displayed below are part of the data.
 
 </div>
+
+<div id="def:helicity" class="definition">
+
+**Definition 4** (Induced helicity). On the domain of Assumption <a href="#ass:absolute-domain" data-reference-type="ref" data-reference="ass:absolute-domain">3</a>, define
+``` math
+H_\mathcal L(t):=\int_\Sigma a_t\wedge b_t.
+```
+
+</div>
+
+<div id="prop:gauge-change" class="proposition">
+
+**Proposition 5** (Gauge change). *Under $`a_t\mapsto a_t+d_\Sigma\chi_t`$,
+``` math
+H_\mathcal L\mapsto H_\mathcal L+\int_{\partial\Sigma}\chi_t b_t.
+```
+Thus $`H_\mathcal L`$ is invariant for closed slices and for the decay or fixed boundary protocols in Assumption <a href="#ass:absolute-domain" data-reference-type="ref" data-reference="ass:absolute-domain">3</a>. On a general open or multiply connected domain, one must instead supply a reference field and use relative helicity, or retain the boundary term explicitly.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Since $`d_\Sigma b_t=0`$,
+``` math
+\int_\Sigma d_\Sigma\chi_t\wedge b_t
+ =\int_\Sigma d_\Sigma(\chi_t b_t)
+ =\int_{\partial\Sigma}\chi_t b_t.
+```
+ ◻
+
+</div>
+
+For a nontrivial line bundle, Abelian Chern–Simons data can still be formulated relative to a reference connection or as a differential character, generally with a value defined modulo a period lattice. That construction is not the same object as the real-valued absolute helicity in Definition <a href="#def:helicity" data-reference-type="ref" data-reference="def:helicity">4</a>. This paper uses the latter only on its declared domain.
+
+# Exact balance and boundary flux
+
+<div id="thm:balance" class="theorem">
+
+**Theorem 6** (Exact induced-helicity balance). *Assume Assumption <a href="#ass:absolute-domain" data-reference-type="ref" data-reference="ass:absolute-domain">3</a> and write the full induced connection as $`\mathcal A=\phi\,dt+a_t`$. Then
+``` math
+\begin{equation}
+\frac{d}{dt}H_\mathcal L(t)
+=-2\int_\Sigma e_t\wedge b_t
+ \int_{\partial\Sigma}\bigl(\phi b_t+a_t\wedge e_t\bigr).
+\label{eq:balance}
+\end{equation}
+```
+In particular, on a closed slice or under a protocol that removes the displayed boundary flux,
+``` math
+\frac{d}{dt}H_\mathcal L(t)=-2\int_\Sigma e_t\wedge b_t.
+```
+The formula contains no additional projector remainder.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Differentiate $`H_\mathcal L=\int_\Sigma a_t\wedge d_\Sigma a_t`$. Stokes’ theorem gives
+``` math
+\frac{dH_\mathcal L}{dt}
+=2\int_\Sigma \dot a_t\wedge b_t
+-\int_{\partial\Sigma}a_t\wedge\dot a_t.
+```
+Substitute $`\dot a_t=d_\Sigma\phi-e_t`$, use $`d_\Sigma b_t=0`$, and integrate the exact boundary two-form $`d_\Sigma(\phi a_t)`$ over $`\partial\Sigma`$. This yields <a href="#eq:balance" data-reference-type="ref+label" data-reference="eq:balance">[eq:balance]</a>. ◻
+
+</div>
+
+<div id="cor:conservation" class="corollary">
+
+**Corollary 7** (Conservation criterion). *Under vanishing boundary flux, $`H_\mathcal L`$ is conserved whenever $`\int_\Sigma e_t\wedge b_t=0`$. Pointwise ideal evolution $`e_t\wedge b_t=0`$ is sufficient but not necessary.*
+
+</div>
+
+Small projector derivatives alone do not imply helicity conservation. They control only the Berry part of the field. The ambient contribution to $`e_t\wedge b_t`$ may remain nonzero.
+
+# What projector control actually bounds
+
+Let
+``` math
+f_0=dA,\qquad f=f_0+q_P
+```
+be the ambient and induced real curvatures from <a href="#eq:curvature-split" data-reference-type="ref+label" data-reference="eq:curvature-split">[eq:curvature-split]</a>. Decompose them on a slice as
+``` math
+b=b_0+\Delta b,\qquad e=e_0+\Delta e,
+```
+where
+``` math
+\Delta b=\iota_t^*q_P,
+\qquad
+\Delta e=-\iota_t^*(\iota_{\partial_t}q_P).
+```
+
+<div id="prop:berry-bounds" class="proposition">
+
+**Proposition 8** (Berry-curvature component bounds). *For tangent vectors $`X,Y`$,
+``` math
+|q_P(X,Y)|
+\le 2\,\|d_XP\|_{\mathrm{op}}\,\|d_YP\|_{\mathrm{op}}.
+```
+Consequently, up to fixed norm-equivalence constants determined by the metric on $`\Sigma`$,
+``` math
+|\Delta b|\le 2|d_\Sigma P|^2,
+\qquad
+|\Delta e|\le 2|\partial_tP|\,|d_\Sigma P|.
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Expand the wedge product:
+``` math
+q_P(X,Y)
+=-i\,\mathop{\mathrm{Tr}}\!\left(P(d_XP\,d_YP-d_YP\,d_XP)\right).
+```
+Because $`P`$ has rank one, the trace of $`PT`$ is bounded by $`\|T\|_{\mathrm{op}}`$. Apply submultiplicativity to the two terms. ◻
+
+</div>
+
+The next result places the old “remainder” in its correct role. It measures the error in using the ambient field instead of the induced field; it is not an extra term in <a href="#thm:balance" data-reference-type="ref+label" data-reference="thm:balance">6</a>.
+
+<div id="thm:surrogate-error" class="theorem">
+
+**Theorem 9** (Ambient-surrogate rate error). *Assume the boundary flux vanishes and all displayed fields are in $`L^2`$. Let
+``` math
+\dot H_{\rm ind}:=-2\int_\Sigma e\wedge b,
+\qquad
+\dot H_{\rm amb}:=-2\int_\Sigma e_0\wedge b_0.
+```
+Then
+``` math
+\begin{align}
+|\dot H_{\rm ind}-\dot H_{\rm amb}|
+\le 2\bigl(&\|\Delta e\|_{L^2}\|b_0\|_{L^2}
+ \|e_0\|_{L^2}\|\Delta b\|_{L^2}\notag\\
+&+\|\Delta e\|_{L^2}\|\Delta b\|_{L^2}\bigr).
+\label{eq:surrogate-bound}
+\end{align}
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Expand $`(e_0+\Delta e)\wedge(b_0+\Delta b)-e_0\wedge b_0`$ and apply Cauchy–Schwarz to each of the three remaining pairings. ◻
+
+</div>
+
+Combining Proposition <a href="#prop:berry-bounds" data-reference-type="ref" data-reference="prop:berry-bounds">8</a> and Theorem <a href="#thm:surrogate-error" data-reference-type="ref" data-reference="thm:surrogate-error">9</a> gives a quantitative adiabatic comparison whenever $`\partial_tP`$ and $`d_\Sigma P`$ are controlled. The estimate does not erase the Berry term and does not turn a nonconserved ambient field into a conserved induced one.
+
+# Hopf specialization and normalization
+
+Let $`\Omega_{S^2}`$ be the standard oriented area form on the unit two-sphere, normalized by
+``` math
+\int_{S^2}\Omega_{S^2}=4\pi.
+```
+
+<div id="thm:hopf" class="theorem">
+
+**Theorem 10** (Whitehead integral formula in the chosen normalization). *Let $`n:S^3\to S^2`$ be smooth. Since $`H^2_{\mathrm{dR}}(S^3)=0`$, choose a real one-form $`a`$ satisfying
+``` math
+da=n^*\Omega_{S^2}.
+```
+Then
+``` math
+\operatorname{Hopf}(n)
+=\frac{1}{16\pi^2}\int_{S^3}a\wedge da
+\in\mathbb Z.
+```
+The value is independent of the choice of $`a`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* This is Whitehead’s integral formula with the area form of total area $`4\pi`$. If $`a'`$ is another primitive, then $`a'-a`$ is closed and hence exact on $`S^3`$. The resulting change of the integral is the integral of an exact three-form and vanishes. ◻
+
+</div>
+
+If instead one uses $`\omega_{S^2}=\Omega_{S^2}/(4\pi)`$, whose integral is one, and $`d\alpha=n^*\omega_{S^2}`$, the same statement reads $`\operatorname{Hopf}(n)=\int_{S^3}\alpha\wedge d\alpha`$. Mixing these two normalizations is a common source of an erroneous factor of $`16\pi^2`$; the integral construction is due to Whitehead .
+
+For an induced MTT line connection, integer Hopf quantization follows only if its spatial curvature is actually of the form $`n^*\Omega_{S^2}`$ for a specified map $`n`$. Rank one, coherence, or a spectral gap does not imply that pullback condition.
+
+# Riesz projectors and correctly scaled derivative bounds
+
+Projector control can be obtained from a gapped operator family, but the operator domain and the gap scaling must be explicit.
+
+<div id="thm:riesz" class="theorem">
+
+**Theorem 11** (Bounded-family Riesz estimate). *Let $`y\mapsto L(y)`$ be a $`C^1`$ family of bounded self-adjoint operators on a fixed Hilbert space. Suppose
+``` math
+\sigma(L(y))\subset\{0\}\cup[\lambda_*,\infty),
+\qquad \lambda_*>0,
+```
+and the multiplicity of the zero eigenspace is constant. Let $`P(y)`$ be the orthogonal projection onto $`\ker L(y)`$. For the positively oriented circle $`\Gamma=\{z:|z|=\lambda_*/2\}`$,
+``` math
+P(y)=\frac{1}{2\pi i}\oint_\Gamma (z-L(y))^{-1}\,dz
+```
+and, for every parameter direction $`v`$,
+``` math
+\partial_vP
+=\frac{1}{2\pi i}\oint_\Gamma
+(z-L)^{-1}(\partial_vL)(z-L)^{-1}\,dz.
+```
+Moreover,
+``` math
+\begin{equation}
+\|\partial_vP\|_{\mathrm{op}}
+\le \frac{2}{\lambda_*}\,
+\|\partial_vL\|_{\mathrm{op}}.
+\label{eq:riesz-bound}
+\end{equation}
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Differentiate the resolvent identity under the contour integral. On $`\Gamma`$, self-adjointness and the spectral assumption give $`\|(z-L)^{-1}\|\le2/\lambda_*`$. Since $`\operatorname{len}(\Gamma)=\pi\lambda_*`$, the contour estimate is
+``` math
+\frac{\pi\lambda_*}{2\pi}
+\left(\frac{2}{\lambda_*}\right)^2
+\|\partial_vL\|
+=\frac{2}{\lambda_*}\|\partial_vL\|.
+```
+ ◻
+
+</div>
+
+For unbounded Laplace-type families, norm differentiability in $`\mathcal B(\mathcal{H})`$ is generally the wrong hypothesis. One instead fixes a common domain or uses graph-norm and relative-resolvent bounds, as in Kato perturbation theory. The same contour identity remains available after those domain hypotheses are supplied. This paper does not silently replace that unbounded problem by the bounded theorem above. The relevant perturbation framework is developed systematically by Kato .
+
+# Conditional MTT encoding
+
+The preceding results are ordinary differential geometry and functional analysis. MTT enters only through a proposed source for the typed data. The current scope is aligned with the revised Foundation, fixed-point, and topological-encoding papers .
+
+<div id="def:source-contract" class="definition">
+
+**Definition 12** (Electromagnetic source contract). An MTT electromagnetic source packet on $`\mathcal U`$ must provide:
+
+1.  a Hermitian carrier $`(\mathcal E,D)`$;
+
+2.  a $`C^2`$, constant-rank, rank-one projector $`P`$;
+
+3.  a theorem identifying $`\operatorname{Ran}P`$, rather than merely an isomorphic line, with the physical electromagnetic sector;
+
+4.  an intertwiner identifying $`-iF_{PD}`$ with the physical electromagnetic field strength and preserving its dynamics;
+
+5.  a trivialization, relative connection, or differential-character protocol that types the claimed helicity observable;
+
+6.  when Hopf quantization is claimed, a selected map $`n:S^3\to S^2`$ and the equality $`\iota_t^*(-iF_{PD})=n^*\Omega_{S^2}`$.
+
+</div>
+
+<div id="thm:conditional-pullback" class="theorem">
+
+**Theorem 13** (Conditional pullback of helicity statements). *If an MTT source packet satisfies S1–S5, then Theorem <a href="#thm:projected-curvature" data-reference-type="ref" data-reference="thm:projected-curvature">2</a>, Proposition <a href="#prop:gauge-change" data-reference-type="ref" data-reference="prop:gauge-change">5</a>, Theorem <a href="#thm:balance" data-reference-type="ref" data-reference="thm:balance">6</a>, Proposition <a href="#prop:berry-bounds" data-reference-type="ref" data-reference="prop:berry-bounds">8</a>, and Theorem <a href="#thm:surrogate-error" data-reference-type="ref" data-reference="thm:surrogate-error">9</a> apply to the emitted physical electromagnetic sector. If S6 also holds, <a href="#thm:hopf" data-reference-type="ref+label" data-reference="thm:hopf">10</a> supplies the integer Hopf invariant. If $`P`$ is emitted as the kernel projector of a bounded family satisfying <a href="#thm:riesz" data-reference-type="ref+label" data-reference="thm:riesz">11</a>, then <a href="#eq:riesz-bound" data-reference-type="ref+label" data-reference="eq:riesz-bound">[eq:riesz-bound]</a> controls its parameter derivatives.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Each source row identifies an emitted object with the corresponding typed hypothesis of the cited result. Composition with the stated intertwiners therefore transports those identities without changing their domains. ◻
+
+</div>
+
+<div id="tab:mtt-status">
+
+| Rows | Status here | Meaning |
+|:---|:---|:---|
+| S1–S2 | Conditional representation data | Standard projected-connection mathematics applies once supplied |
+| S3–S4 | Open source identification | No current theorem in this paper selects the physical photon line and its dynamics |
+| S5 | Case-dependent | Closed, decaying, relative, and differential-character domains are distinct |
+| S6 | Specialization only | Hopf quantization requires the explicit pullback condition |
+
+Claim status of the MTT bridge.
+
+</div>
+
+The conditional theorem is useful because it states exactly what remains to be constructed. It is not evidence that S3–S4 already hold.
+
+# What the paper establishes
+
+The durable mathematical conclusions are:
+
+1.  a rank-one projector and ambient unitary connection define an induced line connection with the exact curvature in <a href="#thm:projected-curvature" data-reference-type="ref+label" data-reference="thm:projected-curvature">2</a>;
+
+2.  absolute helicity is a typed observable only after trivialization, gauge, and boundary data are fixed;
+
+3.  the exact balance law is <a href="#eq:balance" data-reference-type="ref+label" data-reference="eq:balance">[eq:balance]</a>;
+
+4.  omission of the Berry curvature has the controlled comparison error in <a href="#eq:surrogate-bound" data-reference-type="ref+label" data-reference="eq:surrogate-bound">[eq:surrogate-bound]</a>;
+
+5.  Hopf quantization is valid under the explicit pullback and normalization in <a href="#thm:hopf" data-reference-type="ref+label" data-reference="thm:hopf">10</a>; and
+
+6.  a spectral gap controls a bounded-family Riesz projector with scaling $`1/\lambda_*`$, not an unexplained $`1/\lambda_*^2`$ factor.
+
+The paper does not derive Maxwell’s equations, ideal magnetohydrodynamics, a physical photon sector, a universal helicity conservation law, or a universal topological classification from MTT. Those claims require the source and dynamical rows in Definition <a href="#def:source-contract" data-reference-type="ref" data-reference="def:source-contract">12</a>.
+
+# Version 3 changes and reasons
+
+<div class="center">
+
+| Change | Earlier issue | Reason |
+|:---|:---|:---|
+| Retitled and reclassified as a conditional encoding | The previous title implied that MTT had selected the physical coherent electromagnetic line | The selected physical source remains open |
+| Replaced the projector-remainder balance | Projector variation was counted once in the induced field and again as a remainder | The exact balance must use the full connection; comparison error is a separate question |
+| Separated spacetime and slice forms | The electric field was defined by contracting a spatial two-form | The contraction must be taken before pullback to the slice |
+| Added gauge, topology, and boundary domains | A local connection form was treated as a global helicity potential | Nontrivial bundles and open domains require relative or differential data |
+| Fixed the Hopf convention | The normalized area form and the factor $`1/(16\pi^2)`$ were mixed | The coefficient depends on whether the sphere area is $`4\pi`$ or $`1`$ |
+| Corrected the Riesz estimate | The contour constant obscured the gap dimension and unbounded-domain issue | The bounded theorem gives $`2\|\partial L\|/\lambda_*`$; Laplace-type families need graph-domain hypotheses |
+
+</div>
+
+# Discussion
+
+The main conceptual lesson is modest but useful. A varying projector can produce a genuine geometric contribution to an Abelian field strength. That contribution is neither optional nor mysterious: it is the curvature of the projected connection. Once it is included, the usual Chern–Simons calculus works without modification. The new quantitative question is how far the induced field lies from an ambient-field approximation, and <a href="#thm:surrogate-error" data-reference-type="ref+label" data-reference="thm:surrogate-error">9</a> answers that question on its stated domain.
+
+For MTT, this yields a clean research target. A future source theorem should not merely point to a rank-one coherent subspace. It must identify the same line and connection with the physical electromagnetic sector, transport the dynamics, and specify the global observable domain. If that target is met, the geometric results in this paper apply immediately. Until then, they are a rigorous compatibility and completion contract.

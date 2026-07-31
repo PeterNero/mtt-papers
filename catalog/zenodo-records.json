@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18261451",
+      "created": "2026-07-31T03:55:16.700953+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21713347",
+      "files": [
+        {
+          "checksum": "md5:5a839b88256c77d445b30cc2da3f2414",
+          "content_url": "https://zenodo.org/api/records/21713347/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 346309
+        }
+      ],
+      "id": "21713347",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21713347",
+      "resource_type": "publication",
+      "title": "Electromagnetic Helicity from an Induced Line Connection Exact Chern\u2013Simons Identities and a Conditional MTT Encoding",
+      "updated": "2026-07-31T03:55:17.158996+00:00",
+      "version": "v3"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18261858",
       "created": "2026-07-31T03:24:00.055450+00:00",
       "creators": [

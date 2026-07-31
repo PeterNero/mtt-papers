@@ -10,31 +10,30 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| critical | 5 |
+| critical | 4 |
 | major | 6 |
 | moderate | 2 |
 | light | 6 |
 | low | 1 |
-| reviewed | 117 |
+| reviewed | 118 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 33 |
+| argument_flow | 32 |
 | conclusion | 9 |
 | concrete_foothold | 32 |
 | object_intuition | 86 |
 | orientation | 52 |
-| result_interpretation | 9 |
+| result_interpretation | 8 |
 
 ## Revision Queue
 
 | Effective priority | Heuristic | Paper | Formal results | Narrative words/result | Coverage | Missing |
 | --- | --- | --- | ---: | ---: | ---: | --- |
 | critical | critical | `eth-and-many-body-localization-as-a-single-shadow-bridg-236606dd` | 27 | 45.8 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
-| critical | critical | `electromagnetic-helicity-as-a-coherent-sector-chern-sim-0cc7ca40` | 17 | 63.4 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 17 | 123.5 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | critical | critical | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 15 | 54.1 | 4/7 | argument_flow, concrete_foothold, conclusion |
 | critical | critical | `topology-only-constraints-and-forbidden-operators-in-mo-90db2212` | 12 | 116.0 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
@@ -71,6 +70,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2` | 14 | 150.4 | 7/7 | - |
 | reviewed | critical | `coherence-capacity-as-the-fundamental-resource-of-effec-cd41c322` | 13 | 147.2 | 7/7 | - |
 | reviewed | major | `coherence-capacity-as-the-invariant-admissibility-margi-423433d4` | 13 | 182.3 | 7/7 | - |
+| reviewed | critical | `electromagnetic-helicity-as-a-coherent-sector-chern-sim-0cc7ca40` | 13 | 149.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | reviewed | critical | `gravitationally-induced-collapse-as-an-effective-limit-d74eb471` | 13 | 149.1 | 4/7 | orientation, object_intuition, result_interpretation |
 | reviewed | major | `theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f` | 13 | 249.2 | 7/7 | - |
 | reviewed | major | `topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2` | 13 | 211.5 | 5/7 | orientation, object_intuition |
