@@ -5,10 +5,10 @@
   "priority_counts": {
     "critical": 1,
     "light": 2,
-    "major": 3,
+    "major": 2,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 129
+    "reviewed": 130
   },
   "missing_dimension_counts": {
     "argument_flow": 31,
@@ -1338,11 +1338,11 @@
     {
       "paper_id": "from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3",
       "title": "From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier",
-      "total_words": 3729,
-      "narrative_words": 2539,
+      "total_words": 3800,
+      "narrative_words": 2610,
       "formal_results": 12,
       "proofs": 5,
-      "narrative_words_per_result": 211.6,
+      "narrative_words_per_result": 217.5,
       "orientation": true,
       "object_intuition": false,
       "argument_flow": false,
@@ -1614,11 +1614,11 @@
       "limitations": true,
       "conclusion": true,
       "coverage_dimensions": 6,
-      "audit_priority": "major",
+      "audit_priority": "reviewed",
       "heuristic_priority": "major",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 2 replaces the universal identification of measurement-induced transitions, collapse thresholds, basin loss, and Zeno/anti-Zeno behavior by a typed instrument analysis. It fixes a hybrid monitored-circuit model; separates conditioned trajectories, record probabilities, and the averaged channel; proves the exact Holevo record-information gap; gives a finite-record smoothness theorem; declares the complete basin first-passage record; derives basin-local OU contraction and the exact mean first-passage integral; derives an exact repeated-projection Zeno limit and a counterexample to unavoidable anti-Zeno behavior; treats measurement as an ordinary physical process; states a conditional MTT instrument-transport theorem; preserves the arbitrary-context Born source, one-history selection, selected basin coefficients, and thermodynamic transition as open; and the complete 8-page PDF was visually inspected.",
       "missing_dimensions": [
         "object_intuition"
       ]

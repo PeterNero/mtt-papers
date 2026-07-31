@@ -11,10 +11,10 @@ Canonical papers audited: **139**.
 | Priority | Papers |
 | --- | ---: |
 | critical | 1 |
-| major | 3 |
+| major | 2 |
 | moderate | 2 |
 | light | 2 |
-| reviewed | 129 |
+| reviewed | 130 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -34,7 +34,6 @@ Canonical papers audited: **139**.
 | --- | --- | --- | ---: | ---: | ---: | --- |
 | critical | critical | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 15 | 54.1 | 4/7 | argument_flow, concrete_foothold, conclusion |
 | major | major | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 15 | 210.5 | 7/7 | - |
-| major | major | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 10 | 196.6 | 6/7 | object_intuition |
 | major | major | `particles-and-forces-as-coherence-basins-and-capacity-gradients` | 10 | 124.0 | 5/7 | object_intuition, concrete_foothold |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
@@ -65,7 +64,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2` | 13 | 211.5 | 5/7 | orientation, object_intuition |
 | reviewed | major | `coherent-sector-universality-and-controlled-truncation-0ccddc56` | 12 | 223.2 | 5/7 | orientation, object_intuition |
 | reviewed | major | `fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8` | 12 | 157.5 | 7/7 | - |
-| reviewed | major | `from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3` | 12 | 211.6 | 5/7 | object_intuition, argument_flow |
+| reviewed | major | `from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3` | 12 | 217.5 | 5/7 | object_intuition, argument_flow |
 | reviewed | major | `modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731` | 12 | 205.0 | 6/7 | object_intuition |
 | reviewed | moderate | `modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed` | 12 | 283.5 | 6/7 | object_intuition |
 | reviewed | major | `modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6` | 12 | 223.9 | 7/7 | - |
@@ -78,6 +77,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `coherent-kinematics-in-modal-triplet-theory-chart-persi-359fefe8` | 10 | 151.1 | 4/7 | orientation, object_intuition, concrete_foothold |
 | reviewed | moderate | `computational-irreducibility-from-projection-undecidabi-6cc6aafd` | 10 | 251.4 | 5/7 | orientation, object_intuition |
 | reviewed | major | `fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce` | 10 | 234.6 | 7/7 | - |
+| reviewed | major | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 10 | 196.6 | 6/7 | object_intuition |
 | reviewed | major | `modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83` | 10 | 232.0 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `projection-limited-coherence-a-structural-theory-of-eff-3343fe62` | 10 | 319.1 | 5/7 | orientation, object_intuition |
 | reviewed | major | `projection-probability-and-irreversibility-shadow-bridg-a86c97e5` | 10 | 217.9 | 4/7 | orientation, object_intuition, argument_flow |

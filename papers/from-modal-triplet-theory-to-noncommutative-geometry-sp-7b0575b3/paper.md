@@ -9,33 +9,33 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v5
-date: July 2026, Version 5
-generated_from_main_tex_sha256: 9aa403d0bba86458efc6c1d74844bf4ac224f57da114de545183745517d48976
+current_version: v6
+date: July 2026, Version 6
+generated_from_main_tex_sha256: 0a4d115442f13897102321d989943e5a6d7479fc5b2984695c918fd9e0430387
 paper_id: from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3
 release_state: zenodo_released
-released_version: v5
+released_version: v6
 title: "**From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier**"
-zenodo_doi: 10.5281/zenodo.21665974
-zenodo_record_id: 21665974
-zenodo_url: "https://zenodo.org/records/21665974"
+zenodo_doi: 10.5281/zenodo.21717774
+zenodo_record_id: 21717774
+zenodo_url: "https://zenodo.org/records/21717774"
 ---
 
-# Version 5 Revision Note
+# Version 6 Revision Note
 
 Supersedes
-*From Modal Triplet Theory to Noncommutative Geometry: Spectral Triples, Spectral Action, and the Standard Model Embedding*, corrected version 4.
+Version 5 of this paper.
 
 Reason
-Version 4 correctly replaced the original first-principles claims by a typed finite profile encoding, but it predated the completed gauge-fixed fluctuation complex and the exact ten-row internal spectrum calculation.
+Version 5 already gave the corrected typed almost-commutative result and named its finite calculations in prose, but its six declared result mappings were not exposed through the repository’s stable machine-readable reproducibility contract in both the TeX and Markdown sources.
 
 Resolution
-Version 5 retains the A44–A52 correction and adds the verified A57–A62 finite gauge/ghost chain. It records the exact representation-theoretic one-loop coefficients and all ten exact internal spectrum rows, while also recording the resulting no-go for obtaining nonuniversal gauge thresholds from their common normalized shape.
+Version 6 adds the bounded computational-evidence block required by the publication ledger. It identifies the exact and profile-replay packets actually used by the paper and pins their curated repository revision. No theorem, proof tier, numerical value, or physical interpretation is promoted or reopened.
 
-Retained result
-Given the declared Euclidean spin triple and the selected finite profile triple, standard almost-commutative NCG reconstructs the corresponding bosonic operator content.
+Retained content
+The Version 5 scientific result is unchanged: given the declared Euclidean spin triple and selected finite profile triple, standard almost-commutative NCG reconstructs the corresponding bosonic operator content.
 
-Remaining boundary
+Open boundary
 A physical Lorentzian-to-Euclidean dictionary, source-derived $`D_{F}`$ values, a selected proper-time measure and overlap metric, a physical continuum HYM threshold source, nonperturbative quantum transport, and a same-source physical q79 continuum realization remain open.
 
 # Status and logical scope
@@ -540,3 +540,7 @@ The next strict mathematical exits are:
 # Conclusion
 
 The corrected result is narrower than v3 and materially stronger than a disclaimer. MTT now has an executed finite almost-commutative profile encoding: the family and gauge carriers are correctly typed, the finite real-even triple is completed, the anomaly-free circle and global gauge group are explicit, and the finite one-form calculation explains why a selected projector is needed to obtain one Higgs doublet. The gauge-fixed complex now also derives the one-loop representation coefficients and closes all ten finite internal spectrum rows. The same analysis identifies exact obstructions: the qutrit algebra cannot simply be renamed as the Standard Model algebra, the uncompleted three-summand finite triple fails orientation and duality, the raw fluctuation space has three doublets, the normalized finite spectra cannot generate nonuniversal thresholds, and a single universal spectral normalization fails on the selected pure-SM running branch. What remains is not “derive NCG again.” It is to source the Euclidean/Lorentzian bridge, finite values, physical threshold operator, overlap metric, and spectral moments from one physical MTT geometry.
+
+# Computational Evidence and Reproducibility
+
+The finite calculations used by this paper are archived in the [curated results repository at commit `31247ebb5c22`](https://github.com/PeterNero/mtt-results-repro/tree/31247ebb5c22f3fbb5443024365433c6ee0bff4a). The mapped authority/result identifiers are `A51/finite_inner_fluctuation`, `A47/native_gauge_group`, `A50/neutral_summand_hypercharge`, `A49/physical_df_96`, `A62/su3_finite_gauge_spectrum`, and `A46/typed_family_representation`. Their manifest tiers distinguish exact finite derivations from profile replay; the repository reference does not promote either profile packet.

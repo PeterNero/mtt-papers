@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.17162075",
+      "created": "2026-07-31T08:47:34.690861+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21717774",
+      "files": [
+        {
+          "checksum": "md5:946e8f42baa58f148b8cb5168a6bc0a8",
+          "content_url": "https://zenodo.org/api/records/21717774/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 365140
+        }
+      ],
+      "id": "21717774",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21717774",
+      "resource_type": "publication",
+      "title": "From Modal Triplet Theory to Noncommutative Geometry: A Typed Almost-Commutative Encoding and Its Current Finite-Triple Frontier",
+      "updated": "2026-07-31T08:47:35.028502+00:00",
+      "version": "v6"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18261631",
       "created": "2026-07-31T08:25:21.927657+00:00",
       "creators": [

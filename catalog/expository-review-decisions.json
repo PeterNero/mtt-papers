@@ -685,9 +685,9 @@
       "status": "reviewed",
       "reviewed_on": "2026-07-29",
       "note": "Corrected fifth edition checked against A44-A62: the typed finite profile triple, neutral completion and one-Higgs projector are retained; the exact one-loop coefficient vector and all ten zero-parameter finite spectrum rows are added; their universal normalized shape is correctly recorded as a no-go for nonuniversal thresholds; a concrete 96-state explanation and all continuum, Wick, value-source and QFT boundaries are included; 12-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "9aa403d0bba86458efc6c1d74844bf4ac224f57da114de545183745517d48976",
-      "reviewed_pdf_sha256": "4f7f4b95210312ef34b473ba280ad16e4c4089d1d9383f20ea79f7243242f0e8",
-      "reviewed_source_tree_sha256": "a42bbdede4d4bf9777d13b7adfdfc459e3ebb97a05fa91970155ff54dee5d255"
+      "reviewed_main_tex_sha256": "0a4d115442f13897102321d989943e5a6d7479fc5b2984695c918fd9e0430387",
+      "reviewed_pdf_sha256": "98d169385614c7ebab71139ba6367a1965fe2a413467689515fed10eefd00913",
+      "reviewed_source_tree_sha256": "1b8a37954a4ae0e2267647e44621406a5548b6d289161f38e2f51923f79f2ec8"
     },
     "entanglement-locality-and-measurement-from-coherent-sec-110e8cbe": {
       "status": "reviewed",

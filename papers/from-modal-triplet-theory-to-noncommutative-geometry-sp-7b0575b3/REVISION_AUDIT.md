@@ -1,10 +1,29 @@
-# MTT to Noncommutative Geometry v5 Revision Audit
+# MTT to Noncommutative Geometry v6 Revision Audit
 
 Date: 2026-07-29
 
-Status: implemented as a new TeX successor; released v4 preserved
+Status: Version 6 reproducibility successor; released Versions 4 and 5 preserved
 
 ## Current version delta
+
+Version 6 is a bounded reproducibility revision. It preserves every
+scientific statement, theorem tier, numerical value, and open boundary from
+Version 5. It adds stable managed evidence blocks to the TeX and Markdown,
+maps exactly the six result rows declared in `metadata.json`, and pins those
+rows to curated-results commit
+`31247ebb5c22f3fbb5443024365433c6ee0bff4a`.
+
+The six mappings are tier-sensitive:
+
+- exact: `native_gauge_group`, `neutral_summand_hypercharge`,
+  `su3_finite_gauge_spectrum`, and `typed_family_representation`;
+- profile replay: `finite_inner_fluctuation` and `physical_df_96`.
+
+The repository citation is provenance, not a promotion of the two profile
+packets or a claim that the open continuum and source-value layers have
+closed.
+
+## Retained Version 5 scientific delta
 
 Version 5 retains v4's replacement of the original first-principles claim by
 a typed almost-commutative profile encoding. It adds the A57--A62
@@ -153,9 +172,11 @@ B.QFT.02, B.SM.01, and B.SM.02 frontier.
 ## Release Requirements
 
 - The abstract contains scientific content only.
-- The unnumbered Version 5 Revision Note contains Supersedes, Reason,
-  Resolution, Retained result, and Remaining boundary.
+- The unnumbered Version 6 Revision Note contains Supersedes, Reason,
+  Resolution, Retained content, and Open boundary.
 - The A57--A62 results are summarized and attributed rather than duplicated
   as new theorem bodies.
+- The six metadata result mappings occur in managed TeX and Markdown
+  evidence blocks and preserve their exact/profile tiers.
 - The TeX, PDF, Markdown transcription, metadata, and source-tree hashes must
   be refreshed and visually checked before the release is frozen.
