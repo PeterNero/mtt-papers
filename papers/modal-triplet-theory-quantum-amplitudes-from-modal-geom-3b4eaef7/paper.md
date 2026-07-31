@@ -1,873 +1,448 @@
 ---
 abstract: |
-  We present a first–principles derivation of perturbative quantum field theory amplitudes from Modal Triplet Theory (MTT). Starting from the coherent fixed–point sector of the modal configuration space, we employ the MTT $`\rightarrow`$ QFT projection to obtain a locally covariant algebraic quantum field theory (AQFT) on a globally hyperbolic four–dimensional spacetime. Within this framework we construct the local net of observables, establish algebraic propagation via the time–slice axiom, and define interacting quantum fields using perturbative algebraic quantum field theory (pAQFT).
+  A scattering amplitude is not determined by field content or an action symbol alone. It requires a quantum observable algebra, state or asymptotic representation, gauge reduction, renormalized products, a kinematic regime, parameter values, and external-state conventions. On generic curved or time-dependent spacetimes, a global $`S`$-matrix may not exist and in–in observables replace amplitudes.
 
-  Feynman rules, loop corrections, and renormalization are derived as consequences of the algebraic construction rather than postulated. Dimensional regularization with minimal subtraction and the covariant functional renormalization group are recovered as concrete realizations of the underlying algebraic renormalization freedom. We identify the precise conditions under which scattering amplitudes exist, formulate amplitudes via Haag–Ruelle/LSZ theory in admissible scattering regimes, and distinguish them from local or in–in observables in generic curved or time–dependent backgrounds.
+  This paper gives Modal Triplet Theory (MTT) a rigorous amplitude interface. We define the complete typed record required for perturbative correlators, LSZ amplitudes, and in–in observables. We prove a coefficient-transport theorem: an intertwiner that preserves the algebra, state, free contractions, interaction, renormalized time-ordered products, gauge identities, and external-state maps preserves every declared perturbative coefficient. Under the additional LSZ or Haag–Ruelle hypotheses it preserves scattering amplitudes. We also prove two nonselection results. The action and graph grammar do not select a state or scattering regime, and replaying observed parameters inside a standard amplitude formula is equivalence at those inputs rather than a new prediction.
 
-  All effective couplings, masses, and mixing parameters are determined by bounded overlap integrals and curvature–gap data intrinsic to Modal Triplet Theory. When evaluated with identical low–energy inputs, the resulting amplitudes coincide with those of the Standard Model. The construction yields a complete and logically closed amplitudes layer for MTT, bridging modal geometry to perturbative quantum field theory in a mathematically rigorous and regime–aware manner.
+  The current MTT ledger then has a precise interpretation. The selected q79 twisted-Dirac source composes with standard CAR/AQFT machinery to give a free even local net. A formal perturbative BV/QME bridge and embedded renormalized-Standard-Model profile equivalence are available at their declared tiers. Standard gauge quantization is imported, measured profile coordinates remain inputs, and a geometry-selected upper action, fixed-coupling interacting gauge–BRST $`C^*`$-completion, full RG and threshold transport, uncertainty budget, and held-out observable packet remain open. Thus MTT has a coherent conditional amplitude pipeline, not yet a no-input first-principles phenomenology.
 author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v2
-date: September 8, 2025
-generated_from_main_tex_sha256: c50c4376deecacfaa85cc14f639b9c2445df4f8f423640f6b333d1bd15e986d0
+current_version: v3
+date: Version 3, July 2026
+generated_from_main_tex_sha256: 6a014ddb181bd264184982f900600fd524393139b45afe20aec8d2f535162fbe
 paper_id: modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7
 release_state: zenodo_released
-released_version: v2.0
+released_version: v3
 title: |
-  **Modal Triplet Theory: Quantum Amplitudes from Modal Geometry**  
-  A First–Principles Derivation of Feynman Rules, Running, and Phenomenology
-zenodo_doi: 10.5281/zenodo.18329567
-zenodo_record_id: 18329567
-zenodo_url: "https://zenodo.org/records/18329567"
+  **Conditional Quantum Amplitudes in Modal Triplet Theory:**
+  Typed Inputs, Regime Selection, and the Prediction Boundary
+zenodo_doi: 10.5281/zenodo.21715418
+zenodo_record_id: 21715418
+zenodo_url: "https://zenodo.org/records/21715418"
 ---
 
-# Introduction and scope
+# Version 3 revision note
 
-Modal Triplet Theory (MTT) provides a fixed–point, gap–structured framework in which four–dimensional physics emerges from a higher–dimensional modal geometry. Previous work has established explicit projections from MTT to quantum mechanics and to general relativity, as well as a projection to algebraic quantum field theory (QFT) on curved spacetimes. In that construction, the projection $`\Pi_{\mathrm{QFT}}`$ maps a coherent modal configuration to a locally covariant algebraic QFT equipped with a Hadamard state, thereby enabling well–defined local observables, renormalization, and backreaction.
+#### Supersedes.
 
-The purpose of the present paper is to complete the program by deriving *perturbative quantum field theory amplitudes* from Modal Triplet Theory in a manner that is mathematically rigorous, logically closed, and explicit about its domain of validity. In particular, we address the following question:
+Version 2.0, DOI [10.5281/zenodo.18329567](https://doi.org/10.5281/zenodo.18329567).
 
-> Given a coherent modal sector and the induced algebraic QFT on spacetime, under what conditions do standard Feynman rules and scattering amplitudes emerge, and how are they computed from first principles?
+#### Reason.
 
-A central theme of this work is that scattering amplitudes are *not* fundamental objects. In generic curved or time–dependent spacetimes, no global $`S`$–matrix exists, and physical predictions must be formulated in terms of local or in–in observables. Amplitudes arise only in special regimes admitting asymptotic particle states, such as asymptotically flat or stationary backgrounds. Any first–principles derivation of amplitudes must therefore make these regimes explicit rather than assuming them implicitly.
+The earlier version described a complete first-principles derivation of amplitudes, running, anomaly cancellation, and phenomenology from modal geometry. That description conflated a conditional pAQFT construction, imported gauge quantization, and same-input Standard-Model replay with selected source derivation and held-out prediction.
 
-To achieve this, we proceed in four logically distinct steps.
+#### Resolution.
 
-First, we specify the Modal Triplet Theory input data relevant for quantum field theory: the coherent sector, the emergent four–dimensional field content, and the overlap integrals that determine effective couplings, masses, and mixing parameters. No quantum field theoretic assumptions enter at this stage.
+Version 3 defines every required input, proves a conditional coefficient and amplitude transport theorem, distinguishes scattering from in–in observables, and adds exact state/regime and parameter-provenance nonselection results. Benchmark formulas are retained only as illustrations of the typed pipeline.
 
-Second, we formulate the kinematics of quantum fields using algebraic quantum field theory. We construct the local net of observables, establish microcausality, and identify the time–slice axiom as the precise algebraic statement of causal propagation. This step provides the correct notion of locality and dynamics without reference to particles or Feynman diagrams.
+#### Retained result.
 
-Third, we introduce interactions using perturbative algebraic quantum field theory (pAQFT). Interacting fields are defined via time–ordered products and the Bogoliubov map, with renormalization appearing as a finite and local ambiguity classified by covariance and power counting. Standard schemes such as dimensional regularization with minimal subtraction and the covariant functional renormalization group are recovered as specific realizations of this algebraic freedom.
+The paper retains the valid statement that, once the same renormalized quantum data and parameter values are supplied, MTT and Standard-Model presentations produce the same perturbative coefficients on the common domain.
 
-Fourth, we show how Feynman rules and scattering amplitudes emerge from the algebraic framework. Wick expansion of time–ordered products yields the familiar diagrammatic representation, while Haag–Ruelle and LSZ theory identify the precise conditions under which amputated correlation functions define scattering amplitudes. Outside these conditions, the same formalism yields local correlation functions or in–in observables.
+#### Remaining boundary.
 
-The result is a complete amplitudes layer for Modal Triplet Theory. All perturbative quantum field theoretic structures—propagators, vertices, loop corrections, running couplings, and benchmark amplitudes—are derived rather than assumed, and their regime of validity is stated explicitly. When evaluated with the same low–energy inputs, the resulting amplitudes coincide with those of the Standard Model, while retaining a clear geometric origin in the modal overlaps and curvature–gap data.
+A selected upper action, nonperturbative interacting gauge–BRST completion, no-knob parameter source, full multi-loop transport, covariance and uncertainty packet, and held-out observable comparison remain open.
 
-The paper is organized as follows. In Section 2 we summarize the Modal Triplet Theory input data and the QFT projection. Section 3 derives the effective four–dimensional field content and the overlaps$`\rightarrow`$parameters pipeline. Sections 4–7 develop the algebraic and perturbative quantum field theory framework, culminating in the derivation of Feynman rules. Section 8 defines scattering amplitudes and their regimes of validity. Section 9 presents benchmark calculations. Subsequent sections address gauge symmetry, anomalies, confinement bounds, and the synthesis of this work with the broader MTT corpus.
+# What an amplitude actually depends on
 
-# Modal Triplet Theory input and the QFT projection
+The word “amplitude” often compresses a long construction. In Minkowski-space textbook calculations the background, vacuum, asymptotic states, gauge fixing, and renormalization convention are so familiar that they become invisible. They cannot be omitted in a derivation claim.
 
-This section summarizes the Modal Triplet Theory (MTT) structures that serve as input for the quantum field theoretic construction developed in the remainder of the paper. No new results are proved here; rather, we isolate the precise data inherited from MTT and fix notation. Readers are referred to the foundational and projection papers in the MTT corpus for detailed proofs.
+At least three outputs must be distinguished:
 
-## Modal configuration space and coherent sector
+1.  local or time-ordered correlation functions;
 
-The kinematical configuration space of Modal Triplet Theory is a ten–dimensional manifold of the form
+2.  in–in expectation values for a specified initial state and closed-time contour;
+
+3.  in–out scattering amplitudes between asymptotic particle states.
+
+The first can exist without either of the latter. The second is natural in cosmology and nonequilibrium settings . The third requires a suitable asymptotic regime and, for LSZ, poles and residues associated with one-particle states .
+
+The purpose of this paper is to state exactly what MTT must provide, what standard QFT supplies after that point, and what current MTT results actually close.
+
+# The typed amplitude record
+
+<div id="def:record" class="definition">
+
+**Definition 1** (Perturbative quantum record). A perturbative quantum record on a declared domain is
 ``` math
-M_{10} \;=\; Y_4 \times B_1 \times B_2 \times B_3 ,
+\mathfrak Q=
+(Y_4,\mathcal A,\omega,D_0,G,\mathcal S_{\mathrm{int}},
+\mathcal B_{\mathrm{BV}},\mathcal T^{\mathcal R},\mathfrak p,\mathfrak c,\mathfrak P),
 ```
-where $`Y_4`$ is a four–dimensional Lorentzian spacetime and the $`B_n`$ are compact internal modal bundles. Each $`B_n`$ carries its own elliptic operator (typically a Laplacian or Dirac–type operator) governing internal excitations.
+where:
 
-MTT dynamics admit stable coherent fixed points characterized by a spectral gap separating a finite–dimensional coherent sector from higher internal excitations. Let $`\Pi_{\mathrm{coh}}`$ denote the joint Riesz projector onto this coherent sector. The existence, boundedness, and stability of $`\Pi_{\mathrm{coh}}`$ on admissible spacetime slabs are guaranteed by the Fundamental Contractivity Condition and the fixed–point theorems of the MTT foundation.
+1.  $`Y_4`$ is a globally hyperbolic spacetime or a specified local causal domain;
 
-All constructions in this paper are conditional on working within such an admissible slab, where coherent projection is well defined and stable. No global–in–time extension is assumed.
+2.  $`\mathcal A`$ is a local quantum observable or field algebra;
 
-## Effective four–dimensional field content
+3.  $`\omega`$ is a state, with Hadamard regularity when local curved spacetime renormalization requires it;
 
-Restriction of a coherent modal configuration to the base spacetime $`Y_4`$ yields an effective four–dimensional field content consisting of:
+4.  $`D_0`$ is the free Green-hyperbolic operator and $`G`$ denotes the declared causal, two-point, or time-ordered kernels;
 
-- gauge fields associated with internal isometries or symmetry bundles,
+5.  $`\mathcal S_{\mathrm{int}}`$ is the interaction functional;
 
-- fermionic fields arising from spinor representations on the internal bundles,
+6.  $`\mathcal B_{\mathrm{BV}}`$ records gauge fixing, ghosts, the BV/BRST complex, and its identities;
 
-- scalar fields corresponding to coherent internal modes and symmetry breaking sectors.
+7.  $`\mathcal T^{\mathcal R}`$ is a family of renormalized time-ordered products in scheme $`\mathcal R`$;
 
-The representation content, family structure, and anomaly cancellation properties are determined by internal topology, holonomy, and the “two–of–three” selection mechanism characteristic of MTT. These features fix the field multiplets and symmetry assignments of the effective theory independently of any quantum field theoretic considerations.
+8.  $`\mathfrak p`$ is the complete parameter and matching record;
 
-## Overlap integrals and geometric parameters
+9.  $`\mathfrak c`$ is the calculation regime and observable map;
 
-All dimensionless couplings and mass parameters of the effective four–dimensional theory are determined by bounded overlap integrals on the internal bundles. In particular:
-
-- gauge couplings arise from quadratic overlaps of normalized internal harmonic forms,
-
-- Yukawa couplings arise from trilinear overlaps,
-
-- mixing angles and CP–violating phases arise from internal holonomy data,
-
-- effective mass scales and thresholds receive curvature–dependent shifts governed by representation–correct gap laws.
-
-These overlap integrals are finite by construction and depend only on the modal geometry. They provide numerical input data for the quantum field theory but do not rely on any perturbative or diagrammatic machinery.
-
-## The QFT projection $`\Pi_{\mathrm{QFT}}`$
-
-The projection from Modal Triplet Theory to quantum field theory is implemented by a map
-``` math
-\Pi_{\mathrm{QFT}} :
-\{\text{coherent modal configurations}\}
-\;\longrightarrow\;
-(\mathcal{A}(Y_4,g),\omega) ,
-```
-where $`\mathcal{A}(Y_4,g)`$ is an algebra of quantum fields on the spacetime $`(Y_4,g)`$ and $`\omega`$ is a state on that algebra.
-
-The defining properties of $`\Pi_{\mathrm{QFT}}`$ are:
-
-- **Algebraic output:** The image is a CCR (bosonic) and CAR (fermionic) algebra of quantum fields, not a Hilbert space representation.
-
-- **Hadamard state selection:** The state $`\omega`$ satisfies the Hadamard condition, ensuring that local composite operators and renormalized expectation values are well defined.
-
-- **Local covariance:** The construction is covariant under admissible embeddings of spacetime regions.
-
-- **Slab–local validity:** The projection is defined only on finite spacetime slabs where coherent projection and bounded geometry hold.
-
-The QFT projection incorporates no additional dynamical assumptions beyond those already present in MTT. In particular, it does not assume a Lagrangian path integral, Feynman diagrams, or scattering theory. It supplies only the algebraic and state–theoretic data required for quantum field theory.
-
-## Role of this section
-
-The data specified above constitute the *entire input* from Modal Triplet Theory used in the remainder of the paper. All subsequent constructions—local nets, interacting fields, renormalization, and amplitudes—are derived from these inputs using algebraic quantum field theory and its perturbative extension.
-
-In particular, no phenomenological assumptions or standard quantum field theoretic rules are imported at this stage. The emergence of Feynman rules and amplitudes will be shown explicitly in later sections.
-
-# Emergent $`3{+}1`$ field content and the overlaps$`\rightarrow`$parameters pipeline
-
-In this section we derive the effective four–dimensional field theory that serves as input to the algebraic quantum field theoretic construction developed in later sections. The result is a canonically normalized classical action on $`(Y_4,g)`$ together with a complete set of parameters determined by modal geometry. No quantum field theoretic assumptions enter at this stage.
-
-## Emergent classical action
-
-Restriction of a coherent modal configuration to the base spacetime $`Y_4`$ yields an effective classical action of the form
-``` math
-S_{\mathrm{eff}}
-=
-\int_{Y_4} d^4x\,\sqrt{-g}\,
-\Big[
--\frac{1}{4} F^a_{\mu\nu} F^{a\,\mu\nu}
-+ \bar{\psi}\, i \gamma^\mu D_\mu \psi
-+ |D_\mu \phi|^2
-- V(\phi)
-- \bar{\psi}_i Y_{ij} \psi_j \phi
-+ \mathrm{h.c.}
-\Big],
-```
-where $`F^a_{\mu\nu}`$ are gauge field strengths, $`\psi`$ denotes fermionic multiplets, $`\phi`$ scalar fields, and $`D_\mu`$ the gauge–covariant derivative determined by the representation content fixed in Section 2.
-
-The field content and symmetry assignments are inherited directly from the internal modal geometry. In particular, the gauge group, matter representations, and family structure are determined independently of any quantum field theoretic considerations.
-
-## Canonical normalization
-
-The effective action obtained by dimensional reduction is canonically normalized by construction. Internal harmonic representatives on the modal bundles $`B_n`$ are chosen to be orthonormal with respect to the natural $`L^2`$ inner product induced by the internal metric. With this choice:
-
-- gauge kinetic terms reduce to the standard Yang–Mills form,
-
-- fermionic kinetic terms reduce to the standard Dirac form,
-
-- scalar kinetic terms are canonically normalized.
-
-All dimensionful factors arising from the higher–dimensional action and internal volumes are absorbed into the normalization of the effective couplings defined below. No further field rescalings are required at the four–dimensional level.
-
-## Gauge couplings from overlap integrals
-
-Gauge couplings are determined by quadratic overlap integrals of normalized internal modes. For each gauge factor labelled by $`a`$, one has
-``` math
-\frac{1}{g_a^2}
-=
-N_a \int_{B_a} \langle \omega_a, \omega_a \rangle \, d\mu_{B_a},
-```
-where $`\omega_a`$ is the normalized harmonic representative on the corresponding internal bundle and $`N_a`$ is a fixed numerical factor determined by the higher–dimensional action and representation conventions.
-
-For hypercharge we adopt the GUT–normalized convention
-``` math
-g_1 \equiv \sqrt{\frac{5}{3}}\, g',
-\qquad
-\alpha_1 = \frac{5}{3}\,\alpha_Y,
-```
-so that the one–loop $`\beta`$–function coefficient takes its standard value. All gauge couplings are finite and computable from the modal geometry.
-
-## Yukawa couplings, mixing, and CP phases
-
-Yukawa couplings arise from trilinear overlap integrals on the full internal space $`B_1 \times B_2 \times B_3`$. Their magnitudes are bounded by construction, while flavor mixing angles and CP–violating phases are determined by internal holonomy data, in particular by phases associated with nontrivial cycles of the internal geometry.
-
-The resulting Yukawa matrices are generic subject to the symmetry and selection rules of Modal Triplet Theory, and provide the complete set of fermion masses and mixings after spontaneous symmetry breaking.
-
-## Curvature–gap mass shifts and thresholds
-
-In addition to masses generated by spontaneous symmetry breaking, effective mass scales receive curvature–dependent shifts governed by representation–correct gap laws. For example, in a background with scalar curvature $`\mathrm{Scal}`$,
-``` math
-\begin{align}
-M^2_{\mathrm{spinor}} &\sim m^2 + \frac{1}{4}\,\mathrm{Scal}, \\
-M^2_{\mathrm{scalar}} &\sim m^2 + \frac{1}{6}\,\mathrm{Scal},
-\end{align}
-```
-with analogous expressions for higher–spin fields.
-
-These curvature–gap masses determine physical thresholds in the effective field theory and play a central role in decoupling and renormalization group flow. All such thresholds are fixed geometrically and introduce no free parameters.
-
-## Summary
-
-At the end of this section, we have obtained:
-
-- a canonically normalized classical field theory on $`(Y_4,g)`$,
-
-- a complete set of gauge, Yukawa, and scalar couplings determined by overlap integrals,
-
-- geometrically fixed mass scales and thresholds.
-
-No quantum field theoretic constructions have yet been introduced. In the next section we use this classical data as input to algebraic quantum field theory, where locality and propagation are defined independently of perturbative diagrams or scattering theory.
-
-# Algebraic Quantum Field Theory: Kinematics
-
-In this section we define the kinematic framework within which quantum fields propagate. Propagation is formulated algebraically, without reference to particle trajectories or background transport laws. This provides the precise notion of locality and causality required for a first–principles derivation of amplitudes.
-
-Throughout this section, let $`(Y_4,g)`$ denote the globally hyperbolic four–dimensional spacetime obtained from the Modal Triplet Theory projection $`\Pi_{\mathrm{QFT}}`$ on a fixed admissible slab. All statements are understood slab–locally; no global–in–time claims are made.
-
-## Field algebras on curved spacetime
-
-Let $`P`$ denote a normally hyperbolic operator defining the free equation of motion for a bosonic field $`\phi`$ (e.g. Klein–Gordon with curvature coupling), or a Dirac–type operator for fermionic fields. Let $`\Delta = E_{\mathrm{ret}} - E_{\mathrm{adv}}`$ be the causal propagator associated with $`P`$.
-
-The algebra of observables $`\mathcal{A}(Y_4,g)`$ is defined as the CCR (bosonic) or CAR (fermionic) $`*`$–algebra generated by smeared fields $`\Phi(f)`$ (or $`\Psi(f)`$) with $`f \in C^\infty_0(Y_4)`$, modulo:
-``` math
-\begin{align}
-[\Phi(f),\Phi(h)] &= i\Delta(f,h)\,\mathbf{1}, \\
-\Phi(Pf) &= 0 ,
-\end{align}
-```
-and the analogous anticommutation relations for fermions.
-
-States on $`\mathcal{A}(Y_4,g)`$ are positive normalized linear functionals. In the MTT projection, the state $`\omega`$ selected by $`\Pi_{\mathrm{QFT}}`$ is of Hadamard form, ensuring well–defined local observables and renormalization.
-
-## Local nets
-
-For each open region $`\mathcal{O}\subset Y_4`$, define the local algebra
-``` math
-\mathcal{A}(\mathcal{O}) :=
-\langle \Phi(f)\;|\; f\in C^\infty_0(Y_4),\ \mathrm{supp}(f)\subset\mathcal{O} \rangle_* .
-```
-
-This assignment satisfies the Haag–Kastler axioms relevant for the present work:
-
-#### Isotony.
-
-If $`\mathcal{O}_1 \subset \mathcal{O}_2`$, then $`\mathcal{A}(\mathcal{O}_1) \subset \mathcal{A}(\mathcal{O}_2)`$.
-
-#### Microcausality.
-
-If $`\mathcal{O}_1`$ and $`\mathcal{O}_2`$ are causally disjoint, then
-``` math
-[\mathcal{A}(\mathcal{O}_1),\mathcal{A}(\mathcal{O}_2)] = 0
-```
-for bosons (or graded commutator zero for fermions).
-
-These properties follow directly from the support properties of the causal propagator $`\Delta`$.
-
-## Time–slice axiom and algebraic propagation
-
-The fundamental propagation principle in algebraic quantum field theory is the time–slice axiom.
-
-<div class="theorem">
-
-**Theorem 1** (Time–slice property). *Let $`\mathcal{O}\subset Y_4`$ be an open region containing a Cauchy surface for $`(Y_4,g)`$ (or for the relevant admissible slab). Then the inclusion
-``` math
-\mathcal{A}(\mathcal{O}) \hookrightarrow \mathcal{A}(Y_4,g)
-```
-is an isomorphism onto the algebra of the domain of dependence $`D(\mathcal{O})`$.*
+10. $`\mathfrak P`$ records source provenance, fitted inputs, held-out data, conventions, and uncertainty.
 
 </div>
 
-This theorem provides the precise algebraic meaning of causal propagation: all observables in the causal future and past of $`\mathcal{O}`$ are generated by data localized arbitrarily close to a Cauchy surface. No additional degrees of freedom propagate superluminally or nonlocally.
+No component is decorative. Removing $`\omega`$ loses the state-dependent two-point function. Removing $`\mathcal B_{\mathrm{BV}}`$ loses the physical gauge quotient. Removing $`\mathcal T^{\mathcal R}`$ leaves singular products undefined. Removing $`\mathfrak c`$ obscures whether the output is in–in or in–out. Removing $`\mathfrak P`$ makes a replay look like a prediction.
 
-The AQFT net $`(\mathcal{O}\mapsto\mathcal{A}(\mathcal{O}))`$ constructed here coincides with the net induced by admissible chart overlap in Modal Triplet Theory when the QFT projection exists, as established in the companion work on AQFT nets from MTT.
+## The regime record
 
-# Interacting Fields via Perturbative Algebraic QFT
+For scattering, $`\mathfrak c_{\mathrm{scatt}}`$ must include:
 
-We now construct interacting quantum fields without assuming a Lagrangian path integral or diagrammatic rules. Interactions are defined algebraically using perturbative algebraic quantum field theory (pAQFT), which is compatible with curved spacetimes and local covariance.
+1.  asymptotically stationary or otherwise controlled in/out regions;
 
-## Local functionals and observables
+2.  a physical Hilbert-space or algebraic scattering construction;
 
-Let $`\mathcal{F}_{\mathrm{loc}}`$ denote the space of local classical functionals of the field configuration, i.e. functionals of the form
+3.  stable one-particle sectors and a mass gap or suitable replacement;
+
+4.  external wave packets, normalization, and LSZ residues;
+
+5.  an infrared prescription for massless fields;
+
+6.  the observable and inclusive/exclusive definition.
+
+Haag–Ruelle theory gives a rigorous route under its spectral and locality hypotheses . Those hypotheses are not automatic on a generic curved spacetime.
+
+For an in–in calculation, $`\mathfrak c_{\mathrm{inin}}`$ instead records the initial state, time contour, switching functions, final-time observable, and any finite-time detector model.
+
+## The parameter record
+
+Write
 ``` math
-F(\phi) = \int_{Y_4} \mathcal{L}(x,\phi(x),\nabla\phi(x),\ldots)\, d\mathrm{vol}_g ,
+\mathfrak p=(p_{\mathrm{src}},p_{\mathrm{fit}},
+p_{\mathrm{obs}},p_{\mathrm{scheme}},p_{\mathrm{nuis}}).
 ```
-with compact support and polynomial dependence on the fields and their derivatives.
+The separation means:
 
-Quantum observables are obtained by deformation quantization of $`\mathcal{F}_{\mathrm{loc}}`$ using a chosen Hadamard two–point function, inducing a noncommutative $`\star`$–product.
+1.  $`p_{\mathrm{src}}`$: values derived from a selected source without using the target observable;
 
-## Time–ordered products
+2.  $`p_{\mathrm{fit}}`$: parameters fitted on declared training data;
 
-A renormalized time–ordered product is a family of multilinear maps
+3.  $`p_{\mathrm{obs}}`$: measured coordinates replayed as inputs;
+
+4.  $`p_{\mathrm{scheme}}`$: scale and scheme coordinates;
+
+5.  $`p_{\mathrm{nuis}}`$: experimental or theoretical nuisance parameters.
+
+An honest result must declare which set each number belongs to.
+
+# Formal perturbative construction
+
+Given $`\mathfrak Q`$, pAQFT constructs interacting fields as formal power series using renormalized time-ordered products. In schematic notation,
 ``` math
-T_n : \mathcal{F}_{\mathrm{loc}}^{\otimes n}
-\longrightarrow \mathcal{A}(Y_4,g)[[\hbar]]
+\mathcal S_{\mathcal R}(V)
+ =
+ \sum_{n\geq0}\frac{i^n}{n!\hbar^n}
+ \mathcal T_n^{\mathcal R}(V^{\otimes n}).
 ```
-satisfying:
+The relative $`S`$-matrix and Bogoliubov map then define interacting local observables. Causal perturbation theory and local covariance control the renormalization freedom .
 
-- locality and covariance,
+This is a formal construction unless convergence or another completion is proved. It can be mathematically rigorous order by order while still not selecting a unique theory at fixed nonzero coupling.
 
-- symmetry under permutations,
+## Graph expansion
 
-- causal factorization,
+The companion modal-diagrammatics paper proves the finite graded graph expansion and exact all-retained projection theorem . This paper does not duplicate those results. Here the graph datum is one component of $`\mathfrak Q`$. A physical coefficient additionally depends on state, gauge, renormalization, external states, and parameters.
 
-- the microlocal spectrum condition.
+# The coefficient-transport theorem
 
-For Hadamard states on globally hyperbolic spacetimes, such time–ordered products exist, with a finite renormalization freedom classified by local covariant counterterms (Hollands–Wald).
+<div class="definition">
 
-## Interacting algebra
-
-Let $`V \in \mathcal{F}_{\mathrm{loc}}`$ denote the interaction functional corresponding to the effective interactions determined by Modal Triplet Theory (gauge couplings, Yukawas, scalar potentials).
-
-Define the relative $`S`$–matrix
+**Definition 2** (Typed amplitude intertwiner). Let $`\mathfrak Q`$ and $`\mathfrak Q'`$ be perturbative quantum records. A typed amplitude intertwiner is a family of maps
 ``` math
-S(V) := T \exp\!\left(\frac{i}{\hbar} V\right)
-= \sum_{n\ge0} \frac{i^n}{n!\hbar^n} T_n(V^{\otimes n}) .
+\Phi=(\Phi_Y,\Phi_{\mathcal A},\Phi_{\mathrm{test}},
+\Phi_{\mathrm{BV}},\Phi_{\mathfrak p},\Phi_{\mathfrak c})
 ```
+that preserves:
 
-Interacting observables are defined via the Bogoliubov map
+1.  localization, products, involution, and grading of the algebras;
+
+2.  the state: $`\omega' \circ \Phi_{\mathcal A}=\omega`$;
+
+3.  free operators and every declared contraction kernel;
+
+4.  the interaction tensors or functionals;
+
+5.  the BV/BRST differential, bracket, and declared Ward/QME identities;
+
+6.  renormalized time-ordered products:
+    ``` math
+    \Phi_{\mathcal A}\mathcal T_n^{\mathcal R}
+    =
+    \mathcal T_n^{\mathcal R'}\Phi_{\mathcal A}^{\otimes n};
+    ```
+
+7.  parameter values and scheme/matching conventions;
+
+8.  the chosen observable and, where applicable, external-state maps and residues.
+
+</div>
+
+<div id="thm:transport" class="theorem">
+
+**Theorem 3** (Coefficient transport). *If $`\Phi:\mathfrak Q\to\mathfrak Q'`$ is a typed amplitude intertwiner, then every perturbative coefficient of every observable in the declared common domain agrees after transport. The equality includes graded signs, counterterm insertions, state contractions, and parameter factors.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* At order $`n`$, a coefficient is a finite sum of compositions of renormalized time-ordered products, interaction insertions, contractions, algebra products, state evaluation, and parameter coefficients. Each elementary operation commutes with its component of $`\Phi`$ by hypothesis. Their finite sums and compositions therefore commute with $`\Phi`$. State preservation identifies the resulting scalars. Induction over perturbative order proves the claim. ◻
+
+</div>
+
+<div id="cor:lsz" class="corollary">
+
+**Corollary 4** (LSZ amplitude transport). *Assume, in addition, that both records satisfy the same declared Haag–Ruelle or LSZ hypotheses and that $`\Phi`$ intertwines the one-particle subspaces, external wave packets, pole masses, residues, and infrared prescription. Then the corresponding perturbative scattering amplitudes agree order by order.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The LSZ map is obtained from time-ordered correlation functions by applying the external inverse free operators, Fourier/wave-packet maps, residues, and on-shell limits. Each operation is intertwined by assumption. Apply <a href="#thm:transport" data-reference-type="ref+label" data-reference="thm:transport">3</a>. ◻
+
+</div>
+
+<div id="cor:inin" class="corollary">
+
+**Corollary 5** (In–in observable transport). *If instead $`\Phi`$ preserves the initial state, closed-time contour, switching data, and final observable, then the perturbative in–in coefficients agree order by order.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The doubled contour expansion is again built from the preserved time-ordered and anti-time-ordered products, state contractions, interactions, and observable map. The proof of <a href="#thm:transport" data-reference-type="ref+label" data-reference="thm:transport">3</a> applies branch by branch. ◻
+
+</div>
+
+<div class="remark">
+
+*Remark 6*. The theorem is a rigorous equivalence criterion, not a source theorem. It says what follows after every required datum is matched. It does not derive those data from modal geometry.
+
+</div>
+
+# Two exact nonselection results
+
+## The action does not select the state or regime
+
+<div id="prop:state-nonselection" class="proposition">
+
+**Proposition 7** (State and regime nonselection). *A local action and its perturbative graph grammar do not uniquely determine a state, a Feynman two-point function, or an $`S`$-matrix regime.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Even for a free field on Minkowski spacetime, the vacuum state and thermal KMS states are distinct states on the same field algebra and obey the same field equation. Their two-point functions differ, so state-dependent correlators differ. On a generic globally hyperbolic time-dependent spacetime, the local field algebra may exist while no preferred global vacuum or asymptotic time-translation generator exists. Hence a global in–out $`S`$-matrix is not selected by the local action. The same action and graph valences therefore admit different state/regime completions. ◻
+
+</div>
+
+## Replay is not prediction
+
+<div id="thm:provenance" class="theorem">
+
+**Theorem 8** (Parameter-provenance classification). *Let $`O=F(p)`$ be a calculated observable. If any coordinate of $`p`$ is chosen from the measured value of $`O`$, or from a data set containing the target without a declared holdout, agreement of $`F(p)`$ with $`O`$ is not a held-out prediction. If $`p`$ is supplied independently of the target, all fitting data are declared, and $`O`$ is evaluated on a disjoint holdout with an uncertainty budget, the result qualifies as a prediction at the stated model and uncertainty tier.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* In the first case the map from data to $`p`$ depends on the target, so the target is part of the construction input. The comparison tests consistency or replay, not out-of-sample consequence. In the second case the construction of $`p`$ is independent of the held-out $`O`$, so $`F(p)`$ is fixed before comparison. The remaining qualification is the declared uncertainty and model domain. ◻
+
+</div>
+
+<div class="corollary">
+
+**Corollary 9** (Same-input Standard-Model equality). *If an MTT presentation and the Standard Model use the same renormalized action, state, scheme, matching conditions, external states, and measured parameter coordinates, <a href="#thm:transport" data-reference-type="ref+label" data-reference="thm:transport">3</a> can establish perturbative equivalence at those inputs. It does not establish a no-knob derivation of the shared coordinates.*
+
+</div>
+
+# Renormalization, running, and thresholds
+
+## What local renormalization proves
+
+Renormalized time-ordered products are constrained by locality, covariance, scaling, causal factorization, and field identities. The remaining finite freedoms are local counterterms. Choosing dimensional regularization and minimal subtraction is one concrete scheme, not a theorem that MTT uniquely selects that scheme. Likewise, a functional RG equation is a scale-dependent representation requiring a regulator and truncation .
+
+## Scheme transport
+
+Suppose $`p'=\sigma(p)`$ is a finite scheme change and field/observable maps are transformed consistently. Physical predictions can agree even though beta functions and intermediate coefficients differ. Therefore, “the same running” is meaningful only after specifying the coupling basis, loop order, matching surfaces, masses, thresholds, and scheme transport.
+
+## Thresholds
+
+Decoupling requires both a mass spectrum and a matching rule . A geometric overlap or eigenvalue may parameterize a mass or coupling, but it becomes a prediction only when its normalization and numerical value are sourced independently of the target data. Current profile results can validate the transport machinery while remaining profile inputs.
+
+# Gauge symmetry, anomalies, and unitarity
+
+The current MTT amplitude chain imports standard Faddeev–Popov/BRST/BV quantization rather than deriving it solely from coherence geometry . For a physical gauge amplitude one must establish:
+
+1.  a gauge-fixed Green-hyperbolic complex;
+
+2.  BRST cohomology or equivalent physical observable space;
+
+3.  Ward or Slavnov–Taylor identities under renormalization;
+
+4.  local and global anomaly cancellation for the selected representation content;
+
+5.  positivity or a physical-state theorem on the quotient;
+
+6.  infrared-safe observables where massless gauge fields occur.
+
+Anomaly cancellation of a Standard-Model representation is an important consistency check. It does not show that MTT selected that representation or its couplings. Perturbative unitarity identities do not by themselves provide a nonperturbative $`C^*`$-completion at fixed coupling.
+
+# Illustrative amplitude templates
+
+## Tree-level exchange
+
+Given a selected or supplied gauge coupling $`g`$, propagator prescription, external spinors, and kinematic regime, a tree exchange coefficient has the familiar form
 ``` math
-R_V(F) :=
-\left.\frac{\hbar}{i}\frac{d}{d\lambda}\right|_{\lambda=0}
-S(V)^{-1} \star S(V+\lambda F) .
-```
-
-The interacting algebra $`\mathcal{A}_V(\mathcal{O})`$ is generated by $`R_V(F)`$ with $`\mathrm{supp}(F)\subset\mathcal{O}`$. Causal factorization guarantees that $`\mathcal{O}\mapsto\mathcal{A}_V(\mathcal{O})`$ again defines a local net satisfying isotony and microcausality.
-
-This construction defines interacting quantum fields in a mathematically controlled way, independent of perturbative diagrams.
-
-# Renormalization from First Principles
-
-Renormalization in the present framework is not introduced as a procedural subtraction, but arises as a structural feature of the algebraic definition of time–ordered products.
-
-## Renormalization freedom
-
-The ambiguity in the definition of the time–ordered products $`T_n`$ is finite and local, corresponding to the addition of local covariant counterterms consistent with:
-
-- locality and covariance,
-
-- power counting,
-
-- symmetries (gauge, BRST, discrete symmetries).
-
-This freedom is precisely the renormalization freedom classified in curved–spacetime QFT (Hollands–Wald).
-
-## Dimensional regularization and minimal subtraction
-
-In flat spacetime or approximately flat regimes, dimensional regularization with minimal subtraction provides a concrete realization of the algebraic renormalization freedom. The counterterms selected by $`\overline{\mathrm{MS}}`$ correspond to a particular choice of $`T_n`$ within the allowed class.
-
-The one–loop $`\beta`$–functions and anomalous dimensions used in later sections are instances of this general algebraic structure.
-
-## Covariant functional renormalization group
-
-To track scale dependence on curved spacetimes, we employ the covariant functional renormalization group (FRG). The effective average action $`\Gamma_k`$ satisfies the Wetterich equation with a background–covariant regulator.
-
-In the MTT framework, heavy internal modes generate threshold corrections determined by curvature–gap masses. As long as the admissibility margins remain positive, the FRG flow preserves locality and the validity of the effective field theory.
-
-Thus DR/MS and FRG are understood as complementary realizations of the same underlying renormalization freedom inherent in the algebraic construction.
-
-# Emergence of Feynman Rules
-
-We now show how the familiar Feynman rules arise from the algebraic construction of the preceding sections.
-
-## Wick expansion in Hadamard states
-
-For quasifree Hadamard states, Wick’s theorem holds for the free theory. Products of fields can be expanded in terms of normal–ordered products and contractions determined by the Hadamard two–point function.
-
-## Graph expansion of time–ordered products
-
-Expanding the relative $`S`$–matrix and the Bogoliubov map in powers of the interaction functional $`V`$ yields a formal power series whose coefficients are finite sums over graphs:
-
-- vertices correspond to local monomials in $`V`$,
-
-- propagators correspond to the two–point function,
-
-- symmetry factors arise from combinatorics of $`T_n`$.
-
-Renormalization amounts to replacing ill–defined graph contributions by the renormalized time–ordered products selected in Sec. 6.
-
-## Equivalence with standard perturbative rules
-
-In asymptotically flat regimes, the resulting expansion coincides with the standard Feynman rules of perturbative quantum field theory. The propagators and vertices listed in Sec. 3.3 and Appendix A are therefore derived consequences of the algebraic framework, not independent assumptions.
-
-This establishes the logical bridge from Modal Triplet Theory to conventional perturbative amplitudes.
-
-# Scattering Theory and the Definition of Amplitudes
-
-Having constructed the local net of observables, the interacting algebra, and the perturbative expansion from first principles, we now address the precise meaning of *scattering amplitudes*. This requires distinguishing regimes in which asymptotic particle states exist from those in which only local or in–in observables are well defined.
-
-## Scattering regimes
-
-Scattering theory requires more structure than local propagation. In particular, one needs:
-
-- a notion of asymptotic time evolution,
-
-- a stable one–particle subspace,
-
-- a mass gap separating single–particle states from the continuum.
-
-Accordingly, we restrict the notion of scattering amplitudes to regimes in which the effective spacetime $`(Y_4,g)`$ is asymptotically stationary or asymptotically flat on the admissible slab. This includes Minkowski space, stationary curved backgrounds, and cosmological spacetimes with asymptotically adiabatic regions.
-
-Outside such regimes, no global $`S`$–matrix exists, and amplitudes must be replaced by local correlation functions or in–in observables.
-
-## Asymptotic fields and Haag–Ruelle theory
-
-Assume that $`(Y_4,g)`$ admits asymptotic regions in which the interacting dynamics approaches a free theory with the same mass spectrum. Let $`\mathcal{H}`$ be the Hilbert space obtained from a Hadamard state $`\omega`$ via the GNS construction.
-
-Under the usual spectral and stability assumptions (mass gap, absence of infraparticles), Haag–Ruelle theory applies. One may define asymptotic in– and out–fields
-``` math
-\Phi_{\mathrm{in/out}}(f)
+\mathcal M_{\mathrm{tree}}
 =
-\lim_{t\to\mp\infty} \Phi_t(f_t),
+\bar u(p_3)\Gamma^\mu u(p_1)\,
+G_{\mu\nu}(q)\,
+\bar u(p_4)\Gamma^\nu u(p_2),
+\qquad \Gamma^\mu\propto g.
 ```
-where $`f_t`$ are suitably chosen solutions of the free field equation with compact momentum support.
+The formula is a consequence of the specified record. Its numerical value is not predicted until $`g`$, masses, wave functions, and normalizations have independent provenance.
 
-These asymptotic fields generate Fock spaces $`\mathcal{H}_{\mathrm{in}}`$ and $`\mathcal{H}_{\mathrm{out}}`$ describing incoming and outgoing particle states. The interacting dynamics defines a unitary scattering operator
+## Loop coefficient
+
+At one loop, the coefficient additionally depends on the regularization, counterterms, subtraction scale, and matching convention. A successful same-input comparison verifies implementation and equivalence. A first-principles claim requires the source and uncertainty record as well.
+
+## Curved-spacetime observable
+
+When no scattering regime exists, a better output is a local expectation such as
 ``` math
-S:\mathcal{H}_{\mathrm{in}}\to\mathcal{H}_{\mathrm{out}},
+\omega\!\left(\mathcal O_{\mathrm{int}}(f)\right)
 ```
-intertwining the asymptotic representations.
+or a finite-time detector response. Hadamard regularity and local covariant renormalization make such quantities meaningful without inventing asymptotic particles.
 
-## LSZ reduction
+# Current MTT amplitude status
 
-In scattering regimes, matrix elements of the $`S`$–matrix can be expressed in terms of time–ordered correlation functions via LSZ reduction. For scalar fields, one has schematically
+## Closed selected free source
+
+The companion MTT-to-QFT paper owns the selected free q79 result . On the declared globally hyperbolic framed q79 representative, the twisted massless Dirac operator composes with standard Green-hyperbolic and CAR/AQFT theorems to give an even local net with locality, covariance, time-slice, and nonempty positive Hadamard state space. This is the quantum algebraic source used here; it is not re-proved.
+
+## Formal interacting tier
+
+Current work composes the selected carrier with a classical BV master action, a gauge-fixed Green-hyperbolic equicausal algebra, and a formal all-orders anomaly-free QME and physical-state functor at the declared formal tier. These results support conditional perturbative coefficients. They do not select a unique fixed-nonzero-coupling interacting $`C^*`$-theory.
+
+## Embedded Standard-Model profile tier
+
+The current A04 audit closes twelve obligations for embedded renormalized-Standard-Model equivalence at the adopted one-shared-physical-primitive/profile standard. This is a substantial representation and replay result. Standard gauge quantization is imported, and measured/profile coordinates remain construction inputs. The A05 strict-upgrade ledger keeps the stronger no-knob obligations open.
+
+## Status table
+
+<div class="center">
+
+| Layer | Current status | Meaning for amplitudes |
+|:---|:---|:---|
+| Finite graded graph transfer | Exact companion result | Graph coefficients transfer when all typed data intertwine |
+| Selected q79 free even-CAR net | Closed at declared tier | Free local quantum algebra and state space available |
+| Perturbative BV/QME bridge | Formal/conditional | Order-by-order interacting algebra under declared hypotheses |
+| Embedded renormalized-SM equivalence | Closed at profile tier | Same-input profile amplitudes can be replayed |
+| Upper action and automorphism transfer | Open | No same-source derivation of all interactions |
+| Fixed-coupling gauge–BRST $`C^*`$ bridge | Open | No selected nonperturbative interacting completion |
+| No-knob SM values and precision packet | Open | No held-out full-precision phenomenology yet |
+
+</div>
+
+# What would make a first-principles prediction
+
+A publishable prediction packet should contain:
+
+1.  the selected source and action, with immutable hashes;
+
+2.  all continuous and discrete inputs classified by provenance;
+
+3.  a convention map to the target observable;
+
+4.  full multi-loop RG, mass-scheme, and threshold transport;
+
+5.  regulator and truncation controls;
+
+6.  correlated theoretical and experimental covariance;
+
+7.  a target declared held out before evaluation;
+
+8.  independent replay by a verifier that does not import target values.
+
+One to three genuinely selected physical primitives may still be a valuable theory. They must be declared as primitives rather than hidden inside normalizations, matching scales, or selected rows.
+
+# Validation checklist
+
+Before an MTT amplitude claim is promoted, verify:
+
+1.  **Algebra:** locality, covariance, time-slice, and physical observable domain.
+
+2.  **State:** positivity and Hadamard or other required regularity.
+
+3.  **Interaction:** same-source action and all vertex normalizations.
+
+4.  **Gauge:** BV/BRST identities, anomalies, and physical quotient.
+
+5.  **Renormalization:** scheme, scale, loop order, and counterterm freedoms.
+
+6.  **Regime:** LSZ/Haag–Ruelle or in–in hypotheses.
+
+7.  **Parameters:** source, fit, observed, scheme, and nuisance classification.
+
+8.  **Transport:** thresholds, masses, matching, and conventions.
+
+9.  **Uncertainty:** truncation, numerical, model, and covariance budget.
+
+10. **Prediction:** held-out target and independent verifier.
+
+# Discussion
+
+## What has genuinely been achieved
+
+MTT is no longer limited to saying that quantum language resembles modal geometry. The selected q79 free-CAR source gives an actual local quantum net on its declared branch. The formal BV/QME chain shows that the interacting perturbative machinery can be composed consistently under explicit hypotheses. The Standard-Model profile program demonstrates that the finite carrier can encode and replay a broad accepted lower structure with unusually detailed provenance.
+
+## What the earlier wording obscured
+
+There is a large logical difference between:
 ``` math
-\langle p_1',\ldots,p_m'|S|p_1,\ldots,p_n\rangle
-=
-\prod_i (p_i^2-m^2)
-\prod_j (p_j'^2-m^2)
-\,
-\widetilde{G}_{m+n}(p',p),
+\text{same inputs}\Longrightarrow\text{same amplitudes}
 ```
-where $`\widetilde{G}_{m+n}`$ denotes the Fourier transform of the renormalized time–ordered $`n{+}m`$–point function constructed in Secs. 5–7.
-
-Field–strength renormalization factors are absorbed into the LSZ residues, which in the present framework are determined by the normalization of the two–point function selected by the MTT projection.
-
-Thus, when the LSZ assumptions hold, the perturbative expansion of the interacting algebra yields well–defined scattering amplitudes in the usual sense.
-
-## Amplitudes versus local observables
-
-It is important to emphasize that scattering amplitudes are *not* fundamental objects in the present framework. They are derived quantities, available only in special regimes. The fundamental objects are:
-
-- local algebras $`\mathcal{A}(\mathcal{O})`$,
-
-- interacting observables $`R_V(F)`$,
-
-- local correlation functions.
-
-In generic curved or time–dependent spacetimes where asymptotic states do not exist, physical predictions are formulated in terms of in–in expectation values
+and
 ``` math
-\langle R_V(F_1)\cdots R_V(F_n)\rangle_\omega ,
+\text{selected geometry}\Longrightarrow
+\text{independently predicted inputs and amplitudes}.
 ```
-computed using the same perturbative machinery. Cosmological particle production, nonequilibrium processes, and backreaction effects fall into this category.
+The first is an equivalence theorem. The second is a source and prediction theorem. Current MTT has strong parts of the first and selected free-field input, but not yet the complete second.
 
-## Summary
+## Best next result
 
-In summary:
-
-- The AQFT and pAQFT constructions provide a universal definition of interacting quantum fields and local observables.
-
-- Scattering amplitudes emerge only in regimes admitting asymptotic particle states.
-
-- When such regimes exist, LSZ and Haag–Ruelle theory identify amplitudes with appropriately amputated time–ordered correlation functions.
-
-- Outside scattering regimes, the same formalism yields local or in–in observables rather than a global $`S`$–matrix.
-
-With this distinction in place, we now proceed to explicit benchmark calculations in regimes where scattering amplitudes are well defined.
-
-# Benchmark Calculations
-
-In this section we present representative benchmark calculations demonstrating how standard perturbative results emerge from the algebraic framework developed in Secs. 4–8. All results below are derived from the interacting algebra and its perturbative expansion, under the scattering assumptions specified in Sec. <a href="#sec:scattering-amplitudes" data-reference-type="ref" data-reference="sec:scattering-amplitudes">8</a>. No additional dynamical or kinematic assumptions are introduced at this stage.
-
-## Tree–level scattering processes
-
-We begin with simple $`2\to2`$ scattering processes in asymptotically flat regimes. In such settings, the LSZ conditions of Sec. <a href="#sec:scattering-amplitudes" data-reference-type="ref" data-reference="sec:scattering-amplitudes">8</a> apply and scattering amplitudes are well defined.
-
-#### $`e^+e^- \to \mu^+\mu^-`$.
-
-At energies far below the $`Z`$ pole, the dominant contribution arises from $`s`$–channel photon exchange. The amplitude is obtained from the amputated four–point function constructed via the perturbative expansion of the interacting algebra, yielding
+The shortest route forward is not another benchmark amplitude. It is a same-source packet joining:
 ``` math
-\sigma(s) = \frac{4\pi\alpha^2}{3s},
+\begin{gathered}
+\text{selected upper action}\\
+\downarrow\\
+\text{physical gauge-fixed interacting record}\\
+\downarrow\\
+\text{RG, threshold, state, and observable transport}\\
+\downarrow\\
+\text{held-out comparison with uncertainty}.
+\end{gathered}
 ```
-with $`\alpha`$ determined by the overlap–defined gauge coupling at the reference scale. Near the $`Z`$ pole, $`Z`$ exchange and $`\gamma`$–$`Z`$ interference enter, with couplings $`g_1`$ and $`g_2`$ fixed by internal overlap integrals as described in Sec. <a href="#sec:overlaps-parameters" data-reference-type="ref" data-reference="sec:overlaps-parameters">[sec:overlaps-parameters]</a>.
+<a href="#thm:transport" data-reference-type="ref+Label" data-reference="thm:transport">3</a> then turns the commuting record into coefficient equality without repeating diagram-by-diagram arguments.
 
-#### $`e^-\mu^- \to e^-\mu^-`$.
+# Conclusion
 
-$`t`$–channel photon exchange in QED yields the standard Rutherford scattering amplitude. Field–strength renormalization factors are absorbed into LSZ residues and do not alter the tree–level result.
+Quantum amplitudes are downstream objects. They require a local quantum algebra, state, interactions, gauge reduction, renormalized products, regime, external states, parameters, and provenance. We organized those requirements into a typed record and proved that a complete intertwiner preserves perturbative coefficients, LSZ amplitudes, or in–in observables on their declared domains.
 
-These examples illustrate that once canonical normalization is fixed by the overlap construction, the resulting amplitudes coincide with their Standard Model counterparts.
+The same framework proves the limits of current claims. An action and graph grammar do not select a state or scattering regime. Same-input agreement is equivalence, not held-out prediction. Current MTT therefore supports a rigorous selected free-field source, a conditional formal interacting pipeline, and profile-level Standard-Model equivalence. Full first-principles phenomenology awaits the selected upper action, fixed-coupling interacting completion, no-knob or explicitly primitive parameter source, precision transport, uncertainty budget, and held-out observable packet.
 
-## Weak charged–current processes
+# Computational Evidence and Reproducibility
 
-#### $`u\bar d \to W^+ \to \mu^+\nu_\mu`$.
-
-Charged–current amplitudes are generated by the interaction functional $`V`$ containing the $`SU(2)_L`$ gauge coupling. The amplitude is controlled by $`g_2`$, determined by overlap integrals on $`B_2`$, and by the CKM matrix elements arising from internal holonomy data. At tree level, the resulting cross section agrees with the Standard Model expression when evaluated with the same low–energy inputs.
-
-## One–loop running and threshold matching
-
-Loop corrections arise from the renormalized time–ordered products constructed in Sec. 6. The one–loop renormalization group equations take the form
-``` math
-\mu\frac{d g_a}{d\mu} = \frac{b_a}{16\pi^2} g_a^3 + \cdots ,
-```
-with coefficients $`(b_1,b_2,b_3) = (41/10,-19/6,-7)`$ for $`U(1)_Y`$, $`SU(2)_L`$, and $`SU(3)_c`$, respectively, using GUT–normalized hypercharge.
-
-Threshold matching is implemented at scales $`\mu \simeq M_{\mathrm{heavy}}`$, where $`M_{\mathrm{heavy}}`$ are the effective masses determined by curvature–gap eigenvalues and heavy internal excitations. This realizes Appelquist–Carazzone decoupling within the algebraic renormalization framework.
-
-## Leptonic and pseudoscalar decays
-
-#### Muon decay.
-
-The muon lifetime is obtained from the effective four–fermion interaction generated by integrating out the $`W`$ boson. The decay rate
-``` math
-\Gamma_\mu =
-\frac{G_F^2 m_\mu^5}{192\pi^3}
-f\!\left(\frac{m_e^2}{m_\mu^2}\right)
-\left[1+\Delta_{\mathrm{RC}}^{(\mu)}\right]
-```
-is reproduced, with the radiative correction $`\Delta_{\mathrm{RC}}^{(\mu)}`$ arising from one–loop time–ordered products. The Fermi constant $`G_F`$ is fixed by the overlap–defined $`SU(2)_L`$ coupling and the $`W`$ mass.
-
-#### $`\pi^\pm,K^\pm \to \ell^\pm\nu_\ell[\gamma]`$.
-
-The decay widths
-``` math
-\Gamma(P\to \ell\nu[\gamma]) =
-\frac{G_F^2 |V_{qQ}|^2 f_P^2 m_\ell^2 m_P}{8\pi}
-\left(1-\frac{m_\ell^2}{m_P^2}\right)^2
-\left[1+\delta_{\mathrm{EM}}^P+\delta_{\mathrm{SU(2)}}^P\right]
-```
-are obtained, including electromagnetic and isospin–breaking corrections. In the present framework, decay constants and CKM elements may be taken as empirical inputs or evaluated directly from overlap integrals, yielding agreement with Standard Model phenomenology when the same low–energy data are used.
-
-## Non–scattering regimes
-
-In cosmological or otherwise time–dependent backgrounds where asymptotic states do not exist, the same perturbative machinery yields local or in–in observables rather than scattering amplitudes. Particle production in expanding spacetimes, nonequilibrium effects, and backreaction phenomena are computed as expectation values in the interacting algebra, using the same renormalized time–ordered products.
-
-## Summary
-
-The benchmark calculations presented in this section demonstrate that:
-
-- the algebraic construction of interacting fields reproduces standard perturbative results in scattering regimes,
-
-- loop corrections and running couplings arise naturally from algebraic renormalization,
-
-- thresholds are fixed by geometric curvature–gap data,
-
-- phenomenological agreement with the Standard Model is obtained when evaluated with identical low–energy inputs.
-
-All results are consequences of the AQFT and pAQFT framework developed in Secs. 4–8, together with the Modal Triplet Theory determination of effective field content and parameters.
-
-# Gauge symmetry, BRST, and unitarity
-
-Gauge symmetry plays a dual role in the present framework. At the classical level it is fixed by the modal geometry and internal symmetry data of Modal Triplet Theory. At the quantum level it constrains the admissible renormalization freedom and guarantees unitarity of the interacting theory. In this section we show how gauge fixing, BRST symmetry, and unitarity are implemented consistently within the algebraic and perturbative framework developed in the preceding sections.
-
-## Gauge fixing in the algebraic framework
-
-Gauge theories require gauge fixing in order to define propagators and time–ordered products. In the algebraic setting this is implemented by enlarging the field algebra to include ghost fields and auxiliary fields, and by working with a gauge–fixed action that preserves locality and covariance.
-
-We employ background–covariant gauge fixing conditions of Lorenz type,
-``` math
-\mathcal{L}_{\mathrm{gf}}
-=
--\frac{1}{2\xi}(\nabla^\mu A^a_\mu)^2,
-```
-together with the corresponding Faddeev–Popov ghost action. The resulting free field operators remain normally hyperbolic, so the AQFT and pAQFT constructions of Secs. 4–6 apply without modification.
-
-## BRST symmetry
-
-The gauge–fixed theory admits a nilpotent BRST differential $`s`$ acting on the enlarged field algebra. For gauge fields $`A^a_\mu`$, ghosts $`c^a`$, antighosts $`\bar c^a`$, auxiliary fields $`B^a`$, and matter fields $`\psi`$, the BRST transformations take the standard form
-``` math
-\begin{align}
-s A^a_\mu &= D_\mu c^a, \\
-s c^a &= -\tfrac{1}{2} f^{abc} c^b c^c, \\
-s \bar c^a &= B^a, \\
-s B^a &= 0, \\
-s \psi &= i g c^a T^a \psi,
-\end{align}
-```
-with $`s^2 = 0`$ on all fields.
-
-In the algebraic setting, physical observables are identified with BRST cohomology classes. The interacting algebra constructed via pAQFT preserves BRST symmetry provided the renormalization conditions respect the associated Ward identities.
-
-## Renormalization and Ward identities
-
-The finite renormalization freedom in the definition of time–ordered products is constrained by gauge symmetry. In particular, counterterms must be chosen so that the quantum BRST operator remains nilpotent and the interacting theory satisfies the Ward–Takahashi or Slavnov–Taylor identities.
-
-Standard results ensure that this is always possible for renormalizable gauge theories in four dimensions. Dimensional regularization with minimal subtraction provides one explicit scheme in which these identities are preserved automatically, while the covariant functional renormalization group realizes the same constraints at finite coarse–graining scale.
-
-## Unitarity and the physical Hilbert space
-
-Unitarity of the physical theory is recovered after restriction to the BRST cohomology. Unphysical degrees of freedom introduced by gauge fixing (longitudinal modes, ghosts) cancel from physical matrix elements.
-
-In scattering regimes, unitarity of the $`S`$–matrix follows from the optical theorem, which in turn is guaranteed by BRST invariance and the causal factorization property of time–ordered products. In the algebraic formulation this unitarity statement is expressed as the isometry of the $`S`$–matrix on the physical subspace of asymptotic states.
-
-## Relation to Modal Triplet Theory
-
-From the Modal Triplet Theory perspective, gauge symmetry is not imposed but inherited from internal isometries and bundle automorphisms of the modal geometry. The BRST structure introduced here is therefore a technical device for quantization rather than a fundamental ingredient. Its consistency and unitarity properties follow from the same admissibility and stability conditions that guarantee the existence of the QFT projection.
-
-## Summary
-
-Gauge fixing, BRST symmetry, and unitarity are fully compatible with the AQFT and pAQFT framework developed in this paper. They impose constraints on renormalization but do not introduce additional assumptions or degrees of freedom. As a result, gauge theories derived from Modal Triplet Theory admit a consistent and unitary perturbative quantum description whenever the scattering assumptions of Section 8 are satisfied.
-
-# Anomalies and global consistency
-
-Quantum consistency of gauge theories requires the absence of anomalies that would invalidate gauge symmetry or diffeomorphism invariance at the quantum level. In this section we show that the effective quantum field theory derived from Modal Triplet Theory is anomaly–free, both locally and globally, and that this property follows from the structure of the modal geometry rather than from ad hoc field–theoretic constraints.
-
-## Local gauge anomalies
-
-Local (perturbative) gauge anomalies arise from the non–invariance of the quantum effective action under infinitesimal gauge transformations. In four dimensions, they are characterized by triangle diagrams involving chiral fermions.
-
-In the present framework, the chiral fermion content of the effective theory is fixed by the internal modal geometry and the “two–of–three” selection mechanism described in Section 2. As a result, fermions appear in representations that satisfy the standard anomaly cancellation conditions:
-
-- pure gauge anomalies cancel within each gauge factor,
-
-- mixed gauge anomalies cancel between different factors,
-
-- mixed gauge–gravitational anomalies vanish.
-
-These cancellations can be verified explicitly by computing the relevant traces over representation matrices. However, their origin is geometric: anomaly–free combinations correspond to admissible coherent sectors of the modal configuration space. No additional anomaly cancellation conditions are imposed at the level of the effective field theory.
-
-## BRST consistency and quantum gauge invariance
-
-Local anomaly cancellation ensures the existence of a nilpotent quantum BRST operator. As discussed in Section 10, the renormalization freedom of perturbative algebraic quantum field theory can be restricted so that the interacting theory satisfies the quantum BRST identities (Slavnov–Taylor identities).
-
-This guarantees that gauge invariance is preserved at the quantum level and that physical observables, defined as BRST cohomology classes, are well defined. In particular, unitarity of the physical $`S`$–matrix in scattering regimes follows from BRST invariance together with causal factorization.
-
-## Global anomalies
-
-In addition to local anomalies, certain gauge theories admit global (non–perturbative) anomalies that are invisible in perturbation theory. The most prominent example in four dimensions is the $`\mathbb{Z}_2`$ global anomaly of $`SU(2)`$ discovered by Witten.
-
-In the present construction, the fermion content derived from Modal Triplet Theory always contains an even number of left–handed $`SU(2)`$ doublets. This follows from the internal bundle structure and family replication mechanism inherent in the modal geometry. As a result, the mod–$`2`$ index governing the global $`SU(2)`$ anomaly vanishes, and the theory is globally anomaly–free.
-
-## Gravitational anomalies
-
-Pure gravitational anomalies do not occur in four dimensions for the field content under consideration. Mixed gauge–gravitational anomalies are absent for the same reasons that pure gauge anomalies cancel. The Hadamard state selected by the QFT projection ensures that the renormalized stress–energy tensor is locally covariant and conserved, so that diffeomorphism invariance is preserved at the quantum level.
-
-## Structural origin of anomaly cancellation
-
-A key point of the present framework is that anomaly cancellation is not an independent constraint imposed on the effective theory. Rather, it is a consequence of the existence of a coherent, admissible modal sector admitting a stable QFT projection.
-
-Modal configurations that would give rise to anomalous effective theories fail to satisfy the admissibility and stability conditions required for coherent projection. In this sense, anomaly cancellation is enforced “upstream” at the level of modal geometry rather than “downstream” at the level of quantum field theory.
-
-## Summary
-
-The effective quantum field theory derived from Modal Triplet Theory is free of both local and global anomalies. Gauge invariance, BRST consistency, and diffeomorphism invariance are preserved at the quantum level without additional assumptions. This anomaly freedom is a structural consequence of the modal geometry and the coherent sector selection, and it ensures the internal consistency of the amplitudes and observables derived in earlier sections.
-
-# Confinement: what is and is not proven
-
-A complete first–principles derivation of nonabelian confinement remains one of the outstanding open problems in quantum field theory. In this section we clarify precisely what can be established within the Modal Triplet Theory framework and the algebraic quantum field theoretic construction developed in this paper, and what remains beyond its current scope.
-
-## Geometric origin of color degrees of freedom
-
-In Modal Triplet Theory, nonabelian gauge fields arise from internal symmetry bundles associated with compact modal manifolds. In particular, color degrees of freedom are supported on a distinguished internal bundle $`B_3`$ whose topology and holonomy structure differ qualitatively from those associated with electroweak interactions.
-
-The internal geometry of $`B_3`$ admits nontrivial cycles and flux sectors that do not decompose into globally trivial configurations. As a result, color–charged excitations cannot be represented as globally separable coherent modes on admissible slabs unless they combine into color–singlet configurations.
-
-This mechanism enforces color neutrality at the level of admissible coherent sectors and is independent of perturbative dynamics.
-
-## Wilson loops and area–law bounds
-
-Within the effective four–dimensional theory, the geometric structure of $`B_3`$ induces nontrivial holonomy for nonabelian gauge fields. One can define Wilson loop observables associated with closed spacetime curves $`C`$ and internal flux surfaces $`S`$.
-
-Using standard inequalities, one obtains a lower bound of area–law type for the Wilson loop expectation value,
-``` math
-\langle W(C) \rangle \;\lesssim\; \exp[-\sigma\, \mathrm{Area}(S)] ,
-```
-where the effective string tension $`\sigma`$ is determined by internal flux quantization and geometric data of $`B_3`$. This bound reflects the energetic cost of separating color–charged sources and provides a geometric obstruction to asymptotic color states.
-
-The derivation of this bound relies only on geometric and topological features of the modal bundle and does not depend on the details of perturbative renormalization.
-
-## Limits of the present analysis
-
-Despite the existence of geometric area–law bounds and the absence of admissible color–charged coherent sectors, the present framework does *not* constitute a full nonperturbative proof of confinement in the sense of Yang–Mills theory.
-
-In particular:
-
-- a complete control of the nonabelian Wilson loop at all scales is not provided,
-
-- the existence of a mass gap in pure Yang–Mills theory is not proven here,
-
-- the detailed infrared dynamics of flux tube formation and breaking are not derived.
-
-These limitations are shared by all perturbative and semiclassical approaches to confinement and are not specific to Modal Triplet Theory.
-
-## Interpretation within the amplitudes framework
-
-From the perspective of the present amplitudes construction, confinement enters as a *consistency constraint* rather than as a dynamical theorem. Scattering amplitudes involving colored external states are excluded because such states do not correspond to admissible asymptotic particle configurations. Only color–singlet combinations admit asymptotic states and well–defined scattering amplitudes.
-
-This restriction is compatible with all perturbative calculations presented earlier: whenever perturbative QCD amplitudes are computed, they are implicitly understood as describing short–distance processes embedded in color–neutral hadronic states.
-
-## Summary
-
-The Modal Triplet Theory framework provides a geometric mechanism that enforces color neutrality and yields area–law bounds suggestive of confinement. While this falls short of a complete nonperturbative proof of Yang–Mills confinement, it explains why colored asymptotic states are excluded and why scattering amplitudes must be formulated in terms of color–singlet degrees of freedom.
-
-In this sense, confinement is built into the admissibility structure of the theory rather than emerging as a purely infrared dynamical phenomenon.
-
-# Synthesis with the Modal Triplet Theory corpus
-
-We now place the results of this paper within the broader Modal Triplet Theory (MTT) program. The purpose of this section is not to introduce new technical content, but to clarify how the amplitudes construction developed here interfaces with, and completes, the existing MTT corpus.
-
-## Position of the amplitudes layer
-
-The MTT program may be viewed as consisting of a sequence of logically distinct layers:
-
-1.  a foundational layer establishing coherent fixed points, spectral gaps, and admissible domains,
-
-2.  a kinematic layer defining localization, propagation, and persistence without assuming background spacetime notions,
-
-3.  a quantum field theory layer deriving algebraic QFT on curved spacetimes,
-
-4.  an amplitudes layer deriving perturbative scattering amplitudes and phenomenology.
-
-The present paper occupies the final position in this sequence. Its role is to show how, once an algebraic quantum field theory has been obtained from Modal Triplet Theory, the familiar perturbative machinery of quantum field theory emerges in a mathematically controlled and regime–aware manner.
-
-## Relation to AQFT nets from admissible charts
-
-In companion work, algebraic quantum field theory nets are derived directly from the overlap structure of admissible charts in Modal Triplet Theory, without assuming a background spacetime or particle interpretation. When the QFT projection exists, those admissibility–indexed nets reduce to the spacetime–indexed Haag–Kastler nets used in the present paper.
-
-Sections 4 and 5 of this work can therefore be read as a specialization of the more general net construction to regimes admitting an effective spacetime description. The amplitudes derived here are consequently conditional on the same admissibility criteria that govern the existence of the AQFT net itself.
-
-## Relation to QFT on curved spacetime
-
-The derivation of algebraic quantum field theory on curved spacetime from Modal Triplet Theory provides the immediate input for the present work. In that construction, the projection $`\Pi_{\mathrm{QFT}}`$ yields:
-
-- a locally covariant field algebra,
-
-- a Hadamard state ensuring renormalized local observables,
-
-- a controlled description of scale dependence via the covariant functional renormalization group.
-
-The present paper does not modify or extend that construction. Instead, it addresses the question of how perturbative amplitudes and standard phenomenology arise from it when additional scattering assumptions are satisfied. In this sense, the amplitudes layer is strictly downstream of the curved–spacetime QFT layer.
-
-## Relation to kinematics and irreversibility
-
-Earlier work within the MTT corpus has emphasized that notions of position, motion, and irreversibility are not fundamental, but arise from the persistence of coherent structures across overlapping admissible descriptions. The algebraic propagation and time–slice axiom used in the present work are consistent with this perspective: propagation is defined without reference to trajectories, and irreversibility arises from the absence of global sections rather than from microscopic nonunitarity.
-
-Scattering amplitudes therefore represent a further specialization of kinematic persistence, valid only when coherent structures admit asymptotic free descriptions. This interpretation aligns the amplitude concept with the general MTT view that physical notions are conditional rather than absolute.
-
-## Completeness of the program
-
-Taken together with the foundational, kinematic, and QFT projection papers, the present work completes the Modal Triplet Theory program at the level of perturbative quantum field theory. All standard structures—locality, propagation, interactions, renormalization, and amplitudes—are derived from modal geometry and coherence, with their regimes of validity made explicit.
-
-No additional postulates are required beyond those already present in the MTT foundation. Conversely, no claim is made that perturbative amplitudes exhaust the physical content of the theory. Nonperturbative phenomena, global questions, and strong–coupling dynamics remain subjects for future investigation.
-
-## Summary
-
-The amplitudes construction developed in this paper should be understood as the final, downstream realization of Modal Triplet Theory in regimes where perturbative quantum field theory is applicable. It neither replaces nor competes with the earlier layers of the program, but rather shows how they culminate in the familiar computational framework used in particle physics when appropriate conditions are met.
-
-# Conclusions and outlook
-
-In this paper we have completed the derivation of perturbative quantum field theory amplitudes from Modal Triplet Theory (MTT) in a mathematically rigorous and logically closed manner. Starting from the coherent fixed–point sector of the modal configuration space, we have shown how the full perturbative machinery of quantum field theory emerges as a downstream consequence of algebraic and geometric structures, rather than as a set of independent postulates.
-
-The central results of this work may be summarized as follows.
-
-First, given an admissible coherent modal sector, the MTT $`\rightarrow`$ QFT projection yields a locally covariant algebraic quantum field theory on a globally hyperbolic four–dimensional spacetime, equipped with a Hadamard state. This provides a well–defined framework for local observables, causal propagation, and renormalization on curved backgrounds.
-
-Second, interactions are constructed from first principles using perturbative algebraic quantum field theory. Interacting fields are defined via time–ordered products and the Bogoliubov map, with renormalization appearing as a finite, local ambiguity constrained by covariance, power counting, and gauge symmetry. Standard schemes such as dimensional regularization with minimal subtraction and the covariant functional renormalization group are recovered as concrete realizations of this algebraic structure.
-
-Third, the familiar Feynman rules of perturbative quantum field theory are shown to arise from the Wick expansion of time–ordered products in Hadamard states. Diagrams, propagators, and vertices are therefore derived artifacts of the algebraic construction, not primitive assumptions.
-
-Fourth, scattering amplitudes are defined precisely and conditionally. Using Haag–Ruelle and LSZ theory, amplitudes emerge only in regimes admitting asymptotic particle states, such as asymptotically flat or stationary spacetimes. In generic curved or time–dependent backgrounds, the same formalism yields local or in–in observables rather than a global $`S`$–matrix. This distinction is essential for a correct interpretation of quantum field theory in cosmological and gravitational settings.
-
-Fifth, all effective couplings, masses, mixing parameters, and thresholds entering the amplitudes are determined by bounded overlap integrals and curvature–gap data intrinsic to Modal Triplet Theory. When evaluated with identical low–energy inputs, the resulting amplitudes coincide with those of the Standard Model, while retaining a clear geometric origin in the modal structure.
-
-Taken together with earlier work on the foundations, kinematics, and curved–spacetime quantum field theory projection of MTT, the present paper completes the amplitudes layer of the program. Locality, propagation, interactions, renormalization, and perturbative phenomenology are all shown to arise from modal geometry and coherence, with their domains of validity stated explicitly.
-
-Several important directions remain open. A full nonperturbative treatment of confinement and strong–coupling dynamics lies beyond the scope of the present work. Global–in–time questions, including cosmological initial conditions and singularity resolution, require further development of the admissibility and fixed–point framework. Extensions to finite temperature, nonequilibrium steady states, and genuinely quantum gravitational regimes remain to be explored.
-
-These open problems do not detract from the main conclusion of this paper. Rather, they underscore the central lesson of Modal Triplet Theory: physical structures are conditional on coherence and admissibility, and familiar concepts such as particles, amplitudes, and scattering emerge only in regimes where those conditions are satisfied.
-
-The derivation presented here demonstrates that perturbative quantum field theory is not a fundamental starting point, but a consequence of deeper geometric and algebraic principles. In this sense, Modal Triplet Theory provides a unified and conceptually transparent path from modal geometry to the full perturbative apparatus of modern particle physics.
-
-# Canonical normalization and overlap integrals
-
-This appendix collects the technical details underlying the canonical normalization of the effective four–dimensional fields and the evaluation of overlap integrals used to define couplings in Section 3.
-
-Let $`\omega_a`$ denote a harmonic representative on the internal bundle $`B_a`$, normalized with respect to the $`L^2`$ inner product induced by the internal metric:
-``` math
-\int_{B_a} \langle \omega_a,\omega_a\rangle\, d\mu_{B_a} = 1 .
-```
-With this choice, dimensional reduction of the higher–dimensional kinetic terms yields canonically normalized gauge, fermion, and scalar kinetic terms on $`(Y_4,g)`$.
-
-All numerical prefactors arising from the higher–dimensional action and internal volumes are absorbed into fixed constants $`N_a`$ multiplying the overlap integrals. No further field rescalings are required in the effective theory.
-
-# Propagator and vertex rule cards
-
-For convenience, we collect here the explicit propagators and vertices corresponding to the effective action of Section 3. These expressions are not postulated, but arise from the graph expansion of time–ordered products derived in Section 7.
-
-Metric signature is $`(+,-,-,-)`$ and all momenta are taken incoming.
-
-#### Propagators (Feynman gauge).
-
-- Scalar: $`\displaystyle \frac{i}{p^2 - m^2 + i0}`$,
-
-- Fermion: $`\displaystyle \frac{i(\slashed{p}+m)}{p^2 - m^2 + i0}`$,
-
-- Gauge boson: $`\displaystyle \frac{-ig_{\mu\nu}}{p^2 + i0}`$.
-
-#### Vertices.
-
-- QED: $`-ie\gamma^\mu`$,
-
-- QCD: $`-ig_s\gamma^\mu T^a`$,
-
-- Yukawa: $`-iY_{ij}`$,
-
-- Three–gauge vertex: standard Yang–Mills form.
-
-These rules coincide with the Standard Model when evaluated with identical low–energy inputs.
-
-# Representative decay calculations
-
-This appendix provides explicit formulas used in the benchmark calculations of Section 9.
-
-#### Muon decay.
-
-``` math
-\Gamma_\mu =
-\frac{G_F^2 m_\mu^5}{192\pi^3}
-f\!\left(\frac{m_e^2}{m_\mu^2}\right)
-\left[1+\Delta_{\mathrm{RC}}^{(\mu)}\right],
-\quad
-f(x)=1-8x+8x^3-x^4-12x^2\ln x .
-```
-
-#### Pseudoscalar leptonic decays.
-
-``` math
-\Gamma(P\to \ell\nu[\gamma]) =
-\frac{G_F^2 |V_{qQ}|^2 f_P^2 m_\ell^2 m_P}{8\pi}
-\left(1-\frac{m_\ell^2}{m_P^2}\right)^2
-\left[1+\delta_{\mathrm{EM}}+\delta_{\mathrm{SU(2)}}\right].
-```
-
-All quantities are evaluated using overlap–determined couplings or empirical inputs, as described in the main text.
-
-# Gauge coupling normalization from modal geometry
-
-Gauge couplings are defined by quadratic overlap integrals on internal bundles. For hypercharge we adopt the GUT–normalized convention
-``` math
-g_1 = \sqrt{\frac{5}{3}}\, g' ,
-```
-so that the one–loop coefficient takes its standard value.
-
-A representative example on $`S^1_{\mathrm{cen}}`$ yields
-``` math
-\|\omega\|_{L^2}^2 = \int_{0}^{2\pi R} R^{-2} R\, d\theta = 2\pi ,
-```
-fixing the normalization uniquely.
-
-# BRST symmetry and Ward identities
-
-Gauge fixing introduces ghost fields and a nilpotent BRST differential $`s`$. Physical observables are identified with BRST cohomology classes.
-
-Renormalized time–ordered products can always be chosen so that the interacting theory satisfies the quantum BRST identities. In dimensional regularization with minimal subtraction, Ward identities are preserved automatically.
-
-This guarantees unitarity of the physical $`S`$–matrix in scattering regimes.
-
-# Curvature–gap coefficients and threshold matching
-
-Representation–dependent curvature corrections take the form
-``` math
-M^2 = m^2 + \beta_{\mathrm{rep}}\, \mathrm{Scal} + \cdots ,
-```
-with
-``` math
-\beta_{\mathrm{spinor}}=\frac{1}{4},
-\qquad
-\beta_{\mathrm{scalar}}=\frac{1}{6}.
-```
-
-These coefficients determine physical thresholds entering renormalization group flow and decoupling.
-
-# Wilson loops and geometric confinement bounds
-
-Let $`W(C)`$ denote a Wilson loop associated with a closed curve $`C`$. For nontrivial internal flux sectors one obtains
-``` math
-\langle W(C) \rangle \lesssim \exp[-\sigma\, \mathrm{Area}(S)],
-```
-where $`S`$ is a spanning surface and $`\sigma`$ depends on internal geometric data.
-
-This provides a lower bound consistent with confinement, but does not constitute a full nonperturbative proof.
+The amplitude transport and provenance theorems proved here are analytic statements. The curated repository <https://github.com/PeterNero/mtt-results-repro> supplies current MTT status context. The mapped is profile-replay evidence for embedded renormalized-Standard-Model equivalence. The mapped is an open stronger-upgrade ledger. Neither row proves the analytic theorems in this paper, and the open row is not evidence of closure. Exact artifacts, tier labels, and source hashes are retained in the repository.

@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.17076216",
+      "created": "2026-07-31T06:43:47.379874+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21715418",
+      "files": [
+        {
+          "checksum": "md5:807917b0719234c0e9aa86c8fd0356ca",
+          "content_url": "https://zenodo.org/api/records/21715418/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 317858
+        }
+      ],
+      "id": "21715418",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21715418",
+      "resource_type": "publication",
+      "title": "Conditional Quantum Amplitudes in Modal Triplet Theory: Typed Inputs, Regime Selection, and the Prediction Boundary",
+      "updated": "2026-07-31T06:43:47.862690+00:00",
+      "version": "v3"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18330803",
       "created": "2026-07-31T06:25:09.644940+00:00",
       "creators": [

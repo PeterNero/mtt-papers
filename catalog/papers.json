@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
-    "zenodo_records": 263,
-    "zenodo_records_matched": 263,
+    "zenodo_records": 264,
+    "zenodo_records_matched": 264,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -3087,6 +3087,109 @@
           "title": "Closure and Inevitability in Modal Triplet Theory",
           "updated": "2026-01-15T10:40:40.705425+00:00",
           "version": "v1.0"
+        }
+      ]
+    },
+    {
+      "abstract": "A scattering amplitude is not determined by field content or an action symbol alone. It requires a quantum observable algebra, state or asymptotic representation, gauge reduction, renormalized products, a kinematic regime, parameter values, and external-state conventions. On generic curved or time-dependent spacetimes, a global S-matrix may not exist and in\u2013in observables replace amplitudes. This paper gives Modal Triplet Theory (MTT) a rigorous amplitude interface. We define the complete typed record required for perturbative correlators, LSZ amplitudes, and in\u2013in observables. We prove a coefficient-transport theorem: an intertwiner that preserves the algebra, state, free contractions, interaction, renormalized time-ordered products, gauge identities, and external-state maps preserves every declared perturbative coefficient. Under the additional LSZ or Haag\u2013Ruelle hypotheses it preserves scattering amplitudes. We also prove two nonselection results. The action and graph grammar do not select a state or scattering regime, and replaying observed parameters inside a standard amplitude formula is equivalence at those inputs rather than a new prediction. The current MTT ledger then has a precise interpretation. The selected q79 twisted-Dirac source composes with standard CAR/AQFT machinery to give a free even local net. A formal perturbative BV/QME bridge and embedded renormalized-Standard-Model profile equivalence are available at their declared tiers. Standard gauge quantization is imported, measured profile coordinates remain inputs, and a geometry-selected upper action, fixed-coupling interacting gauge\u2013BRST C^*-completion, full RG and threshold transport, uncertainty budget, and held-out observable packet remain open. Thus MTT has a coherent conditional amplitude pipeline, not yet a no-input first-principles phenomenology.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v3",
+      "date": "Version 3, July 2026",
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.17076216",
+        "created": "2026-07-31T06:43:47.379874+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21715418",
+        "files": [
+          {
+            "checksum": "md5:807917b0719234c0e9aa86c8fd0356ca",
+            "content_url": "https://zenodo.org/api/records/21715418/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 317858
+          }
+        ],
+        "id": "21715418",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1.0,
+        "publication_date": "2026-07-31",
+        "record_url": "https://zenodo.org/records/21715418",
+        "resource_type": "publication",
+        "title": "Conditional Quantum Amplitudes in Modal Triplet Theory: Typed Inputs, Regime Selection, and the Prediction Boundary",
+        "updated": "2026-07-31T06:43:47.862690+00:00",
+        "version": "v3"
+      },
+      "main_tex_sha256": "6a014ddb181bd264184982f900600fd524393139b45afe20aec8d2f535162fbe",
+      "paper_id": "modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7",
+      "paper_md_sha256": "27561d512e9e26aa4809d2daccd19c6ed79015b83aed65e50b1aafd2568649c5",
+      "release_state": "zenodo_released",
+      "result_refs": [],
+      "revision": {
+        "revision_evidence_path": "papers/modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "44bed1a453d52dadf43158110620edbf5cad9cb49e366dbc1ff44a7952914c76",
+        "selected_revision": true
+      },
+      "source_provenance": {
+        "legacy_source_path": "7 Quantum Field Theory/_work/Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2"
+      },
+      "source_tree_sha256": "92266b4e4abf340c9c1c12a35bc4c74794298d922dce1765724c3c2afec6f6a0",
+      "title": "Conditional Quantum Amplitudes in Modal Triplet Theory: Typed Inputs, Regime Selection, and the Prediction Boundary",
+      "version_relation": "matches_latest_release",
+      "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.17076216",
+          "created": "2026-07-31T06:43:47.379874+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21715418",
+          "files": [
+            {
+              "checksum": "md5:807917b0719234c0e9aa86c8fd0356ca",
+              "content_url": "https://zenodo.org/api/records/21715418/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 317858
+            }
+          ],
+          "id": "21715418",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-31",
+          "record_url": "https://zenodo.org/records/21715418",
+          "resource_type": "publication",
+          "title": "Conditional Quantum Amplitudes in Modal Triplet Theory: Typed Inputs, Regime Selection, and the Prediction Boundary",
+          "updated": "2026-07-31T06:43:47.862690+00:00",
+          "version": "v3"
+        },
+        {
+          "concept_doi": "10.5281/zenodo.17076216",
+          "created": "2026-01-21T17:16:38.598475+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.18329567",
+          "files": [
+            {
+              "checksum": "md5:fb81e3b4682f86ee73f9dfeb77cede9a",
+              "content_url": "https://zenodo.org/api/records/18329567/files/Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2%20(1).pdf/content",
+              "key": "Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2 (1).pdf",
+              "size": 348486
+            }
+          ],
+          "id": "18329567",
+          "match_kind": "title_or_file",
+          "match_score": 1.0,
+          "publication_date": "2026-01-21",
+          "record_url": "https://zenodo.org/records/18329567",
+          "resource_type": "publication",
+          "title": "Modal Triplet Theory: Quantum Amplitudes from Modal Geometry",
+          "updated": "2026-01-21T17:16:38.904084+00:00",
+          "version": "v2.0"
         }
       ]
     },
@@ -9016,82 +9119,6 @@
           "title": "Modal Triplet Theory: Perturbative Coherent-Sector Quantum Gravity and the Heterotic UV-Completion Boundary",
           "updated": "2026-07-29T08:51:38.902604+00:00",
           "version": "v6"
-        }
-      ]
-    },
-    {
-      "abstract": "We present a first\u2013principles derivation of perturbative quantum field theory amplitudes from Modal Triplet Theory (MTT). Starting from the coherent fixed\u2013point sector of the modal configuration space, we employ the MTT \\rightarrow QFT projection to obtain a locally covariant algebraic quantum field theory (AQFT) on a globally hyperbolic four\u2013dimensional spacetime. Within this framework we construct the local net of observables, establish algebraic propagation via the time\u2013slice axiom, and define interacting quantum fields using perturbative algebraic quantum field theory (pAQFT). Feynman rules, loop corrections, and renormalization are derived as consequences of the algebraic construction rather than postulated. Dimensional regularization with minimal subtraction and the covariant functional renormalization group are recovered as concrete realizations of the underlying algebraic renormalization freedom. We identify the precise conditions under which scattering amplitudes exist, formulate amplitudes via Haag\u2013Ruelle/LSZ theory in admissible scattering regimes, and distinguish them from local or in\u2013in observables in generic curved or time\u2013dependent backgrounds. All effective couplings, masses, and mixing parameters are determined by bounded overlap integrals and curvature\u2013gap data intrinsic to Modal Triplet Theory. When evaluated with identical low\u2013energy inputs, the resulting amplitudes coincide with those of the Standard Model. The construction yields a complete and logically closed amplitudes layer for MTT, bridging modal geometry to perturbative quantum field theory in a mathematically rigorous and regime\u2013aware manner.",
-      "authors": [
-        "Peter Nero"
-      ],
-      "canonical_markdown": "paper.md",
-      "canonical_tex": "main.tex",
-      "current_version": "v2",
-      "date": "September 8, 2025",
-      "latest_zenodo_release": {
-        "concept_doi": "10.5281/zenodo.17076216",
-        "created": "2026-01-21T17:16:38.598475+00:00",
-        "creators": [
-          "Nero, Peter"
-        ],
-        "doi": "10.5281/zenodo.18329567",
-        "files": [
-          {
-            "checksum": "md5:fb81e3b4682f86ee73f9dfeb77cede9a",
-            "content_url": "https://zenodo.org/api/records/18329567/files/Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2%20(1).pdf/content",
-            "key": "Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2 (1).pdf",
-            "size": 348486
-          }
-        ],
-        "id": "18329567",
-        "match_kind": "title_or_file",
-        "match_score": 1.0,
-        "publication_date": "2026-01-21",
-        "record_url": "https://zenodo.org/records/18329567",
-        "resource_type": "publication",
-        "title": "Modal Triplet Theory: Quantum Amplitudes from Modal Geometry",
-        "updated": "2026-01-21T17:16:38.904084+00:00",
-        "version": "v2.0"
-      },
-      "main_tex_sha256": "c50c4376deecacfaa85cc14f639b9c2445df4f8f423640f6b333d1bd15e986d0",
-      "paper_id": "modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7",
-      "paper_md_sha256": "40ec92761cbc2b99497b4c8531ce62cb39f1375458d61492020e76407148c526",
-      "release_state": "zenodo_released",
-      "result_refs": [],
-      "revision": {
-        "selected_revision": false
-      },
-      "source_provenance": {
-        "legacy_source_path": "7 Quantum Field Theory/_work/Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2"
-      },
-      "source_tree_sha256": "271a8597f741d656e12f4f314edab6b8ecaa2e9d70f78e577d1061173feac602",
-      "title": "Modal Triplet Theory: Quantum Amplitudes from Modal Geometry A First\u2013Principles Derivation of Feynman Rules, Running, and Phenomenology",
-      "version_relation": "matches_latest_release",
-      "zenodo_releases": [
-        {
-          "concept_doi": "10.5281/zenodo.17076216",
-          "created": "2026-01-21T17:16:38.598475+00:00",
-          "creators": [
-            "Nero, Peter"
-          ],
-          "doi": "10.5281/zenodo.18329567",
-          "files": [
-            {
-              "checksum": "md5:fb81e3b4682f86ee73f9dfeb77cede9a",
-              "content_url": "https://zenodo.org/api/records/18329567/files/Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2%20(1).pdf/content",
-              "key": "Modal_Triplet_Theory__Quantum_Amplitudes_from_Modal_Geometry_v2 (1).pdf",
-              "size": 348486
-            }
-          ],
-          "id": "18329567",
-          "match_kind": "title_or_file",
-          "match_score": 1.0,
-          "publication_date": "2026-01-21",
-          "record_url": "https://zenodo.org/records/18329567",
-          "resource_type": "publication",
-          "title": "Modal Triplet Theory: Quantum Amplitudes from Modal Geometry",
-          "updated": "2026-01-21T17:16:38.904084+00:00",
-          "version": "v2.0"
         }
       ]
     },

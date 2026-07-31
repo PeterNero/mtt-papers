@@ -1,6 +1,14 @@
 {
   "schema": "mtt.expository-review-decisions.v1",
   "papers": {
+    "modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 3 replaces the claimed complete first-principles derivation of amplitudes, running, and phenomenology by a typed conditional amplitude interface. It defines the full quantum, gauge, renormalization, regime, parameter, and provenance record; proves coefficient transport plus LSZ and in-in corollaries; proves state/regime nonselection and an exact replay-versus-prediction classification; separates local, in-in, and scattering outputs; imports the selected q79 free even-CAR theorem without duplication; retains A04 as profile replay and A05 as open; keeps B.ACTION.01, B.QFT.02, and B.SM.02 open; and the complete 11-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "6a014ddb181bd264184982f900600fd524393139b45afe20aec8d2f535162fbe",
+      "reviewed_pdf_sha256": "eb8c6e0d8397a08004adfccf38b3bbf60460dbb78cda885efb3d8c1e9d601cd5",
+      "reviewed_source_tree_sha256": "92266b4e4abf340c9c1c12a35bc4c74794298d922dce1765724c3c2afec6f6a0"
+    },
     "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8": {
       "status": "reviewed",
       "reviewed_on": "2026-07-31",

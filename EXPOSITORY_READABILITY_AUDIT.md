@@ -13,8 +13,8 @@ Canonical papers audited: **139**.
 | critical | 3 |
 | major | 4 |
 | moderate | 2 |
-| light | 4 |
-| reviewed | 124 |
+| light | 3 |
+| reviewed | 125 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -25,7 +25,7 @@ Canonical papers audited: **139**.
 | conclusion | 8 |
 | concrete_foothold | 29 |
 | object_intuition | 87 |
-| orientation | 58 |
+| orientation | 59 |
 | result_interpretation | 9 |
 
 ## Revision Queue
@@ -43,7 +43,6 @@ Canonical papers audited: **139**.
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
 | light | light | `why-general-relativity-and-string-theory-are-the-same-a-98920533` | 4 | 927.2 | 5/7 | object_intuition, conclusion |
-| light | light | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 1 | 7592.0 | 6/7 | object_intuition |
 | light | light | `photons-entanglement-and-null-updating-in-modal-triplet-theory` | 0 | 5021.0 | 6/7 | object_intuition |
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
 | reviewed | critical | `fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce` | 43 | 69.9 | 7/7 | - |
@@ -99,6 +98,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `effective-field-theory-as-a-shadow-of-projection-admiss-ec123406` | 8 | 370.9 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | major | `fixed-points-iii-disturbance-damping-balance-and-stability` | 8 | 222.2 | 7/7 | - |
 | reviewed | light | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 8 | 408.0 | 5/7 | orientation, object_intuition |
+| reviewed | moderate | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 8 | 277.6 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014` | 7 | 251.7 | 7/7 | - |
 | reviewed | moderate | `entanglement-locality-and-measurement-from-coherent-sec-110e8cbe` | 7 | 379.0 | 6/7 | object_intuition |
 | reviewed | moderate | `finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb` | 7 | 269.3 | 4/7 | orientation, object_intuition, argument_flow |
