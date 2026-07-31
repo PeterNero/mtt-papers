@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
-    "zenodo_records": 254,
-    "zenodo_records_matched": 254,
+    "zenodo_records": 255,
+    "zenodo_records_matched": 255,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -13004,54 +13004,81 @@
       ]
     },
     {
-      "abstract": "Topological phases of matter exhibit robustness, quantized response, and protected boundary modes that are not explained by local symmetry breaking or microscopic Hamiltonian details. We present a structural account of topological phases based on coarse\u2013grained projection and global admissibility of local effective descriptions. We show that phases correspond to admissible basins of coarse\u2013grained dynamics, and that topological phases arise precisely when locally well\u2013defined effective descriptions fail to admit a globally consistent completion. Topological invariants appear as obstruction classes of overlap structures, explaining quantization and robustness. Bulk\u2013boundary correspondence follows inevitably: boundary modes arise as compensating degrees of freedom required to restore local consistency at interfaces. The framework applies equally to interacting and disordered systems with a spectral gap or mobility gap and does not rely on band topology or free\u2013fermion assumptions.",
+      "abstract": "Topological phases cannot be identified from generic overlap structure alone. A valid cocycle glues local frames into a bundle; it does not make that bundle trivial. Nontriviality is carried by the cocycle class, or by the corresponding projector, symmetry-protected, many-body, or operator-algebraic invariant. This paper corrects an earlier formulation that treated failure of the cocycle condition as the source of topology and then inferred robustness and bulk\u2013boundary correspondence without the needed Hamiltonian and index hypotheses. We give a typed phase record containing the physical algebra or Hamiltonian, Fermi or ground-state projector, symmetry class, gap condition, invariant, allowed deformations, and interface construction. For a smooth gapped two-dimensional class-A family, the occupied projector defines a vector bundle whose first Chern number is constant along every uniform gap-preserving homotopy. A quantitative norm bound gives an explicit stability certificate. We then separate the free-fermion tenfold-way setting from mobility-gap, interacting, symmetry-protected, and intrinsic topological-order settings. Bulk\u2013boundary correspondence is stated in its proper conditional form: a Toeplitz or interface index theorem maps a difference of bulk classes to protected boundary spectral flow or transport. Modal Triplet Theory (MTT) supplies useful language for projection, admissibility, coherent projectors, and local spectral stability, but those objects are not automatically Fermi projectors or condensed-matter phase invariants. We prove an exact and an error-controlled pullback theorem: once a selected MTT source emits the complete typed phase record and intertwines its allowed deformations, the standard topological invariant becomes a stable label of that encoding. Current MTT has not yet supplied such a selected source for all topological phases. The result is therefore a rigorous conditional bridge and completion contract, not a new universal classification.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January, 2026",
+      "current_version": "v2",
+      "date": "Version 2, July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18261858",
-        "created": "2026-01-15T20:05:17.873277+00:00",
+        "created": "2026-07-31T03:24:00.055450+00:00",
         "creators": [
           "Nero, Peter"
         ],
-        "doi": "10.5281/zenodo.18261859",
+        "doi": "10.5281/zenodo.21711367",
         "files": [
           {
-            "checksum": "md5:02ec40b5907134524b62c4817074bc25",
-            "content_url": "https://zenodo.org/api/records/18261859/files/Topological_Phases_of_Matter_as_Admissible_Overlap_Structures%20(2).pdf/content",
-            "key": "Topological_Phases_of_Matter_as_Admissible_Overlap_Structures (2).pdf",
-            "size": 238617
+            "checksum": "md5:064a0daa7a663e743cabcb492ca13bf3",
+            "content_url": "https://zenodo.org/api/records/21711367/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 352564
           }
         ],
-        "id": "18261859",
-        "match_kind": "title_or_file",
+        "id": "21711367",
+        "match_kind": "published_draft_reconciliation",
         "match_score": 1.0,
-        "publication_date": "2026-01-15",
-        "record_url": "https://zenodo.org/records/18261859",
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21711367",
         "resource_type": "publication",
-        "title": "Topological Phases of Matter as Effective Overlap Structures",
-        "updated": "2026-01-15T20:05:18.265377+00:00",
-        "version": "v1.0"
+        "title": "Topological Phases as Bundle and Index Data: A Conditional Projection-Admissible Encoding in Modal Triplet Theory",
+        "updated": "2026-07-31T03:24:00.522606+00:00",
+        "version": "v2"
       },
-      "main_tex_sha256": "82c2bdfbe0379a4ff08385b67f1393f95256251bf18545d22d1898c34033fc1d",
+      "main_tex_sha256": "cb16cd6d384633e46ae9df5ea4dc9c6a4cb807a13f1f5591c8993eb1b6751f6f",
       "paper_id": "topological-phases-of-matter-as-admissible-overlap-stru-837dec46",
-      "paper_md_sha256": "f9a068518c540f963005e1ef3f65756e97a4620dd3f730e80a72113fa81634f8",
+      "paper_md_sha256": "498d229758fdc904b012e285cd012f1750218a03c688a8b4252c6fd82d935cbb",
       "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/topological-phases-of-matter-as-admissible-overlap-stru-837dec46/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "390ef86034183e07e14c5116a63f816e3635cbcbd936f7cd50f190daeb1acc09",
+        "selected_revision": true
       },
       "source_provenance": {
         "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/Topological_Phases_of_Matter_as_Admissible_Overlap_Structures"
       },
-      "source_tree_sha256": "3b91fc45247971aae64cf7ce526a2766df8590a469e6f84ee626e4c0d10b3590",
-      "title": "Topological Phases of Matter as Admissible Overlap Structures A projection\u2013based account of robustness and bulk\u2013boundary correspondence",
+      "source_tree_sha256": "64ed569b03d149c9a8938634535e23d0cd4b15997c172d3583d82587da5a3da5",
+      "title": "Topological Phases as Bundle and Index Data: A Conditional Projection-Admissible Encoding in Modal Triplet Theory",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18261858",
+          "created": "2026-07-31T03:24:00.055450+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21711367",
+          "files": [
+            {
+              "checksum": "md5:064a0daa7a663e743cabcb492ca13bf3",
+              "content_url": "https://zenodo.org/api/records/21711367/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 352564
+            }
+          ],
+          "id": "21711367",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-30",
+          "record_url": "https://zenodo.org/records/21711367",
+          "resource_type": "publication",
+          "title": "Topological Phases as Bundle and Index Data: A Conditional Projection-Admissible Encoding in Modal Triplet Theory",
+          "updated": "2026-07-31T03:24:00.522606+00:00",
+          "version": "v2"
+        },
         {
           "concept_doi": "10.5281/zenodo.18261858",
           "created": "2026-01-15T20:05:17.873277+00:00",

@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18261858",
+      "created": "2026-07-31T03:24:00.055450+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21711367",
+      "files": [
+        {
+          "checksum": "md5:064a0daa7a663e743cabcb492ca13bf3",
+          "content_url": "https://zenodo.org/api/records/21711367/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 352564
+        }
+      ],
+      "id": "21711367",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-30",
+      "record_url": "https://zenodo.org/records/21711367",
+      "resource_type": "publication",
+      "title": "Topological Phases as Bundle and Index Data: A Conditional Projection-Admissible Encoding in Modal Triplet Theory",
+      "updated": "2026-07-31T03:24:00.522606+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18262360",
       "created": "2026-07-30T23:01:37.531027+00:00",
       "creators": [

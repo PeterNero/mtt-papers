@@ -10,24 +10,24 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| critical | 6 |
+| critical | 5 |
 | major | 6 |
 | moderate | 2 |
 | light | 6 |
 | low | 1 |
-| reviewed | 116 |
+| reviewed | 117 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 34 |
-| conclusion | 10 |
-| concrete_foothold | 33 |
-| object_intuition | 87 |
-| orientation | 51 |
-| result_interpretation | 10 |
+| argument_flow | 33 |
+| conclusion | 9 |
+| concrete_foothold | 32 |
+| object_intuition | 86 |
+| orientation | 52 |
+| result_interpretation | 9 |
 
 ## Revision Queue
 
@@ -37,7 +37,6 @@ Canonical papers audited: **139**.
 | critical | critical | `electromagnetic-helicity-as-a-coherent-sector-chern-sim-0cc7ca40` | 17 | 63.4 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 17 | 123.5 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | critical | critical | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 15 | 54.1 | 4/7 | argument_flow, concrete_foothold, conclusion |
-| critical | critical | `topological-phases-of-matter-as-admissible-overlap-stru-837dec46` | 12 | 79.8 | 2/7 | object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | critical | critical | `topology-only-constraints-and-forbidden-operators-in-mo-90db2212` | 12 | 116.0 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | major | major | `projection-limited-coherence-a-structural-theory-of-eff-3343fe62` | 32 | 168.6 | 7/7 | - |
 | major | major | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 15 | 210.5 | 7/7 | - |
@@ -112,6 +111,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f` | 7 | 253.0 | 6/7 | object_intuition |
 | reviewed | moderate | `temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb` | 7 | 350.7 | 7/7 | - |
 | reviewed | low | `theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643` | 7 | 514.3 | 7/7 | - |
+| reviewed | moderate | `topological-phases-of-matter-as-admissible-overlap-stru-837dec46` | 7 | 385.3 | 6/7 | orientation |
 | reviewed | moderate | `deterministic-projection-diffusive-limits-and-knee-like-a0b81ad7` | 6 | 263.0 | 6/7 | object_intuition |
 | reviewed | moderate | `fermions-in-loop-quantum-gravity-from-modal-triplet-the-c9d451aa` | 6 | 309.3 | 6/7 | orientation |
 | reviewed | moderate | `modal-triplet-theory-and-asymptotic-safety-asymptotic-s-dc3ce0c2` | 6 | 262.8 | 4/7 | orientation, object_intuition, argument_flow |

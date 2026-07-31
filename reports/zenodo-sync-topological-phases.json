@@ -1,0 +1,22 @@
+{
+  "failed": 0,
+  "failures": [],
+  "generated_at": "2026-07-30T23:28:45+00:00",
+  "mode": "verify",
+  "papers": 1,
+  "ready": 1,
+  "results": [
+    {
+      "draft_id": "21711367",
+      "exact_remote_pdf_count": 1,
+      "failures": [],
+      "local_pdf_md5": "064a0daa7a663e743cabcb492ca13bf3",
+      "local_pdf_sha256": "1af929ca51731548b5969892e120565360a2067d66f3f4c123af4e35f5311bf3",
+      "paper_id": "topological-phases-of-matter-as-admissible-overlap-stru-837dec46",
+      "ready": true,
+      "remote_pdf": "main.pdf",
+      "remote_pdf_count": 1,
+      "version": "v2"
+    }
+  ]
+}

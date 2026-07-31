@@ -944,6 +944,14 @@
       "reviewed_main_tex_sha256": "9896f29fee9668a4320c3274fb0c35e3ca6bd7c3d11d9710e7be84144940454a",
       "reviewed_pdf_sha256": "7d74461ec42884ca4cff0bb929100e34667d6d315cc26349bdf09d483631ac17",
       "reviewed_source_tree_sha256": "2ee50240ec59b61639bd6b997f32f68bebc382ebf44017d9f1737224865ff388"
+    },
+    "topological-phases-of-matter-as-admissible-overlap-stru-837dec46": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 corrects the central cocycle error by distinguishing valid bundle gluing from coboundary trivialization; gives a degree-one line-bundle counterexample; defines a complete physical phase record; proves uniform-gap homotopy invariance and a norm-gap Chern stability certificate; separates tenfold-way, disorder, mobility-gap, interacting, SPT, and intrinsic-order domains; replaces generic boundary compensation by a conditional Toeplitz/Fredholm bulk-interface index theorem; distinguishes MTT coherent, Fermi, and many-body projectors; proves an exact and error-controlled MTT invariant-pullback theorem; retains current MTT as a conditional encoding rather than a universal classification; and the complete 12-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "cb16cd6d384633e46ae9df5ea4dc9c6a4cb807a13f1f5591c8993eb1b6751f6f",
+      "reviewed_pdf_sha256": "1af929ca51731548b5969892e120565360a2067d66f3f4c123af4e35f5311bf3",
+      "reviewed_source_tree_sha256": "64ed569b03d149c9a8938634535e23d0cd4b15997c172d3583d82587da5a3da5"
     }
   }
 }
