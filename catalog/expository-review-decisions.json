@@ -397,9 +397,9 @@
       "status": "reviewed",
       "reviewed_on": "2026-07-28",
       "note": "Relative saturation explained through a derivative-incidence wiring picture and separated from string realization and selection; 14-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "d43cb53d7bd28ab8a9a95cae73f4233d45abcb110bff84ff56c81a22c55e4ebe",
-      "reviewed_pdf_sha256": "10c2f293e111fbe7d1a11d29ef9e8d91f5ef12eda0987a4951f052a647874714",
-      "reviewed_source_tree_sha256": "425e9432018f9fff6aebdb5cb893ff043e434d215768f588d287e1cdba4a0dbf"
+      "reviewed_main_tex_sha256": "295ecec094f2b6a5d02b3049aebb6dbf8d7dd775ccb01ea0d3e0912a2be64254",
+      "reviewed_pdf_sha256": "0e23ef86559bfcc9015a71c9b849a58669860f1b236675682c55db463f4e98d0",
+      "reviewed_source_tree_sha256": "bd16b676a3b7d012d8c7f97b7784d175877d1a745aadd670d3aa7e23496f131b"
     },
     "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c": {
       "status": "reviewed",

@@ -44,7 +44,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8` | 34 | 375.2 | 7/7 | - |
 | reviewed | critical | `the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38` | 19 | 128.5 | 7/7 | - |
 | reviewed | major | `the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113` | 18 | 170.3 | 6/7 | object_intuition |
-| reviewed | major | `the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f` | 18 | 173.9 | 7/7 | - |
+| reviewed | major | `the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f` | 18 | 166.6 | 7/7 | - |
 | reviewed | major | `the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34` | 17 | 179.1 | 6/7 | object_intuition |
 | reviewed | critical | `the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad` | 16 | 132.1 | 7/7 | - |
 | reviewed | major | `the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a` | 16 | 150.7 | 7/7 | - |

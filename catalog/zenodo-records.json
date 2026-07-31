@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18355129",
+      "created": "2026-07-31T09:14:02.121131+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21718246",
+      "files": [
+        {
+          "checksum": "md5:58a44ff73b915db0e11cfcf96aea3d22",
+          "content_url": "https://zenodo.org/api/records/21718246/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 435060
+        }
+      ],
+      "id": "21718246",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21718246",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
+      "updated": "2026-07-31T09:14:02.573501+00:00",
+      "version": "v4"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18355085",
       "created": "2026-07-31T09:01:40.616539+00:00",
       "creators": [

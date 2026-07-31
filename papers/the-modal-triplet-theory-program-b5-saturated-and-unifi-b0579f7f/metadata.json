@@ -5,43 +5,43 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v3",
-  "date": "July 2026 Version 3",
+  "current_version": "v4",
+  "date": "July 2026 Version 4",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18355129",
-    "created": "2026-07-29T08:52:02.401907+00:00",
+    "created": "2026-07-31T09:14:02.121131+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.21655386",
+    "doi": "10.5281/zenodo.21718246",
     "files": [
       {
-        "checksum": "md5:54c49efb082a680c418389cf4e30c07c",
-        "content_url": "https://zenodo.org/api/records/21655386/files/main.pdf/content",
+        "checksum": "md5:58a44ff73b915db0e11cfcf96aea3d22",
+        "content_url": "https://zenodo.org/api/records/21718246/files/main.pdf/content",
         "key": "main.pdf",
-        "size": 373683
+        "size": 435060
       }
     ],
-    "id": "21655386",
+    "id": "21718246",
     "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-07-29",
-    "record_url": "https://zenodo.org/records/21655386",
+    "publication_date": "2026-07-31",
+    "record_url": "https://zenodo.org/records/21718246",
     "resource_type": "publication",
     "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
-    "updated": "2026-07-29T08:52:02.729849+00:00",
-    "version": "v3"
+    "updated": "2026-07-31T09:14:02.573501+00:00",
+    "version": "v4"
   },
-  "main_tex_sha256": "d43cb53d7bd28ab8a9a95cae73f4233d45abcb110bff84ff56c81a22c55e4ebe",
+  "main_tex_sha256": "295ecec094f2b6a5d02b3049aebb6dbf8d7dd775ccb01ea0d3e0912a2be64254",
   "paper_id": "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
-  "paper_md_sha256": "f951c6b916a1487b2f7ad7b34ea36e2f428211dc324f93daeb3188180658913f",
+  "paper_md_sha256": "7c3f475d2188ec88f2db6aa3f254cf867f1fcc1e504acbdee4e0db1d4b5fe57d",
   "release_state": "zenodo_released",
   "result_refs": [
     "q79_exact_theorem"
   ],
   "revision": {
     "revision_evidence_path": "papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "59d36af43f53ba1122cb468ee8fb8c04dd63091f76989dbfd3f432616e5b92a9",
+    "revision_evidence_sha256": "0655e28c0605ba38bc300ce873ce1cc83d2f3cc570f774fc96108a521a679d46",
     "selected_revision": true,
     "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings"
   },
@@ -53,19 +53,19 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 373683,
+      "bytes": 435060,
       "path": "main.pdf",
-      "sha256": "10c2f293e111fbe7d1a11d29ef9e8d91f5ef12eda0987a4951f052a647874714"
+      "sha256": "0e23ef86559bfcc9015a71c9b849a58669860f1b236675682c55db463f4e98d0"
     },
     {
-      "bytes": 38161,
+      "bytes": 36903,
       "path": "main.tex",
-      "sha256": "d43cb53d7bd28ab8a9a95cae73f4233d45abcb110bff84ff56c81a22c55e4ebe"
+      "sha256": "295ecec094f2b6a5d02b3049aebb6dbf8d7dd775ccb01ea0d3e0912a2be64254"
     },
     {
-      "bytes": 12135,
+      "bytes": 12766,
       "path": "REVISION_AUDIT.md",
-      "sha256": "59d36af43f53ba1122cb468ee8fb8c04dd63091f76989dbfd3f432616e5b92a9"
+      "sha256": "0655e28c0605ba38bc300ce873ce1cc83d2f3cc570f774fc96108a521a679d46"
     },
     {
       "bytes": 3784,
@@ -76,10 +76,35 @@
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings"
   },
-  "source_tree_sha256": "425e9432018f9fff6aebdb5cb893ff043e434d215768f588d287e1cdba4a0dbf",
+  "source_tree_sha256": "bd16b676a3b7d012d8c7f97b7784d175877d1a745aadd670d3aa7e23496f131b",
   "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18355129",
+      "created": "2026-07-31T09:14:02.121131+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21718246",
+      "files": [
+        {
+          "checksum": "md5:58a44ff73b915db0e11cfcf96aea3d22",
+          "content_url": "https://zenodo.org/api/records/21718246/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 435060
+        }
+      ],
+      "id": "21718246",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21718246",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
+      "updated": "2026-07-31T09:14:02.573501+00:00",
+      "version": "v4"
+    },
     {
       "concept_doi": "10.5281/zenodo.18355129",
       "created": "2026-07-29T08:52:02.401907+00:00",

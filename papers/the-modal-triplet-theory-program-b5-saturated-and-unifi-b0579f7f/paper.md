@@ -9,50 +9,34 @@ abstract: |
   We also separate existence, local rigidity, uniqueness within a declared candidate class, physical selection, and empirical adequacy. The current selected q=79 arithmetic theorem supplies an exact finite branch, but the physical visible-hidden Hull–Strominger endpoints, the remaining seven rows of the twelve-row worldsheet contract, and an all-scale nonperturbative completion remain open. Program B5 therefore provides a rigorous language and a finite indecomposability test for unified encodings. It does not derive string theory, a numerical critical dimension, or the physical selection of a saturated universe.
 author:
 - Peter Nero
-current_version: v3
-date: July 2026 Version 3
-generated_from_main_tex_sha256: d43cb53d7bd28ab8a9a95cae73f4233d45abcb110bff84ff56c81a22c55e4ebe
+current_version: v4
+date: July 2026 Version 4
+generated_from_main_tex_sha256: 295ecec094f2b6a5d02b3049aebb6dbf8d7dd775ccb01ea0d3e0912a2be64254
 paper_id: the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f
 release_state: zenodo_released
-released_version: v3
+released_version: v4
 title: |
   The Modal Triplet Theory Program B5:
   Relative Saturation, Conditional Extended Carriers,
   and String-Like Realizations
-zenodo_doi: 10.5281/zenodo.21655386
-zenodo_record_id: 21655386
-zenodo_url: "https://zenodo.org/records/21655386"
+zenodo_doi: 10.5281/zenodo.21718246
+zenodo_record_id: 21718246
+zenodo_url: "https://zenodo.org/records/21718246"
 ---
 
-# Revision note for version 3
+# Revision note for version 4
 
 <div class="description">
 
-Version 2 of Program B5.
+Version 3 of Program B5.
 
-Version 2 established the correct relative saturation theorem and countermodels, but the incidence graph, local-rigidity gate, and separation between saturation and physical selection needed a more explanatory standalone presentation.
+Version 3 already supplied the reviewed relative-saturation theorem, countermodels, and explanatory wiring-diagram presentation. Its managed reproducibility block nevertheless reported that no result row was mapped, although the paper uses the exact selected q=79 arithmetic packet.
 
-Version 3 adds the wiring-diagram interpretation, a guided dependency map, and explicit examples of what connected incidence does and does not prove. It keeps the q79 result at its declared arithmetic tier, preserves theorem ownership, and separates publication description from revision history and computational provenance.
+Version 4 maps the A11 q=79 theorem explicitly in both canonical sources and pins the curated repository revision. The in-paper release note now records only the current version delta; the complete revision history remains in the accompanying audit. No theorem or physical-selection claim changes.
 
 The relative saturation contract, derivative-incidence criterion, countermodels, and conditional status of extended carriers, dimensions, anomalies, and dualities are unchanged.
 
 An exhaustive realization category, physical string background, completed q79 worldsheet, nonperturbative completion, and physical selection theorem remain open.
-
-</div>
-
-# Revision note for version 2
-
-<div class="description">
-
-Version 1 of Program B5.
-
-Version 1 defined saturation by inseparability and then used that definition to claim that pointlike carriers fail, one-dimensional carriers are forced, critical dimensions appear, all anomalies cancel internally, and dualities are mandatory. The required categories, anomaly classes, carrier hypotheses, dimension equations, equivalences, and selection rule were not supplied.
-
-Version 2 makes saturation relative to a declared contract, proves an exact derivative-incidence criterion for first-order indecomposability, and supplies countermodels to every withdrawn unconditional implication. Extended carriers, critical dimensions, anomaly cancellation, worldsheets, and dualities are retained as conditional realization results under explicit hypotheses.
-
-Combining several constraints in one source can make a model much less decomposable; extended-carrier and string-like realizations are important unification candidates; and local rigidity can be informative without global uniqueness.
-
-No exhaustive candidate category, selected physical string background, complete q=79 worldsheet theory, all-scale quantum completion, or theorem selecting one saturated realization is established here.
 
 </div>
 
@@ -684,6 +668,8 @@ J. Polchinski, *String Theory, Volume I: An Introduction to the Bosonic String*
 
 </div>
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
-The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+The finite arithmetic claim used by this paper is archived in the [curated results repository at commit `31247ebb5c22`](https://github.com/PeterNero/mtt-results-repro/tree/31247ebb5c22f3fbb5443024365433c6ee0bff4a). The mapped authority/result identifier is `A11/q79_exact_theorem`. It is an exact result on the selected finite arithmetic and charge branch. It does not supply a critical dimension, a completed worldsheet, physical Hull–Strominger endpoints, or a selection theorem for a saturated universe.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
