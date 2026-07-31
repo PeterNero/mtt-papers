@@ -5,16 +5,16 @@
   "priority_counts": {
     "critical": 3,
     "light": 2,
-    "major": 4,
+    "major": 3,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 126
+    "reviewed": 127
   },
   "missing_dimension_counts": {
     "argument_flow": 33,
     "conclusion": 8,
-    "concrete_foothold": 29,
-    "object_intuition": 87,
+    "concrete_foothold": 28,
+    "object_intuition": 86,
     "orientation": 60,
     "result_interpretation": 9
   },
@@ -1451,29 +1451,26 @@
     },
     {
       "paper_id": "horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71",
-      "title": "Horizons, Area Laws, and Entropy from Coherence Capacity Bottlenecks",
-      "total_words": 1567,
-      "narrative_words": 1130,
+      "title": "Horizons, Capacity Bounds, and Entropy in Modal Triplet Theory: A Conditional Interface with Black-Hole Thermodynamics",
+      "total_words": 3289,
+      "narrative_words": 2556,
       "formal_results": 11,
-      "proofs": 6,
-      "narrative_words_per_result": 102.7,
+      "proofs": 8,
+      "narrative_words_per_result": 232.4,
       "orientation": true,
-      "object_intuition": false,
+      "object_intuition": true,
       "argument_flow": true,
       "result_interpretation": true,
-      "concrete_foothold": false,
+      "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
-      "coverage_dimensions": 5,
-      "audit_priority": "major",
+      "coverage_dimensions": 7,
+      "audit_priority": "reviewed",
       "heuristic_priority": "major",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
-      "missing_dimensions": [
-        "object_intuition",
-        "concrete_foothold"
-      ]
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 3 separates capacity certificates, causal horizons, entropy functionals, transport laws, and recovery channels. It proves the regular certificate-boundary theorem, counterexamples to horizon formation from scalar imbalance, the exact conditional area upper bound, necessary and sufficient almost-everywhere saturation conditions for equality, strictness on unsaturated sets, the failure of capacity decrease to imply entropy growth, and the correct code-relative recovery criterion. It imports Hawking radiation, generalized entropy, islands, and the Bekenstein-Hawking coefficient at their established tiers; preserves the same-source gravitational, quantum-state, entropy-capacity comparison, saturation, coefficient, and decoder obligations as open; and the complete 10-page PDF was visually inspected.",
+      "missing_dimensions": []
     },
     {
       "paper_id": "inflationary-measures-and-the-born-rule-as-a-single-sha-388b32c2",
@@ -2378,11 +2375,11 @@
     {
       "paper_id": "photons-entanglement-and-null-updating-in-modal-triplet-theory",
       "title": "Photons, Entanglement, and Null Updating in Modal Triplet Theory: A Conditional Maxwell-to-Encoding Analysis",
-      "total_words": 4108,
-      "narrative_words": 3252,
+      "total_words": 4103,
+      "narrative_words": 3247,
       "formal_results": 6,
       "proofs": 4,
-      "narrative_words_per_result": 542.0,
+      "narrative_words_per_result": 541.2,
       "orientation": false,
       "object_intuition": false,
       "argument_flow": true,

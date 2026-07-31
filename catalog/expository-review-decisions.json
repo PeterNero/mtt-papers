@@ -1024,6 +1024,14 @@
       "reviewed_main_tex_sha256": "54382b40794f6a0c0c77f151b4750262a84cc7c75d9089dc433f547e26fbdbf5",
       "reviewed_pdf_sha256": "86becfcdb3c181d5b1b0de1f580695c2024efc5cf22ffdc298b51f620b34f0f5",
       "reviewed_source_tree_sha256": "cf29ec96df63d92191ec0aa8490cc0e6c04f8c24db63f781b81b3c05e305abed"
+    },
+    "horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 3 separates capacity certificates, causal horizons, entropy functionals, transport laws, and recovery channels. It proves the regular certificate-boundary theorem, counterexamples to horizon formation from scalar imbalance, the exact conditional area upper bound, necessary and sufficient almost-everywhere saturation conditions for equality, strictness on unsaturated sets, the failure of capacity decrease to imply entropy growth, and the correct code-relative recovery criterion. It imports Hawking radiation, generalized entropy, islands, and the Bekenstein-Hawking coefficient at their established tiers; preserves the same-source gravitational, quantum-state, entropy-capacity comparison, saturation, coefficient, and decoder obligations as open; and the complete 10-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "f0b99c12301eb8b0514d1233de49f98ff0c051f1b6c8a1397ae75cbfb815fda3",
+      "reviewed_pdf_sha256": "bd0b802e119ff06cb1590fc65b20e99d1f5c8f3ea2ed8ac4ee5cf9483dca1929",
+      "reviewed_source_tree_sha256": "d205b61651aa41d46e3cac2d6f47857c391032d36bc591d605776b0975d3a780"
     }
   }
 }

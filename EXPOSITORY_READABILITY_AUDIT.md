@@ -11,10 +11,10 @@ Canonical papers audited: **139**.
 | Priority | Papers |
 | --- | ---: |
 | critical | 3 |
-| major | 4 |
+| major | 3 |
 | moderate | 2 |
 | light | 2 |
-| reviewed | 126 |
+| reviewed | 127 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -23,8 +23,8 @@ Canonical papers audited: **139**.
 | --- | ---: |
 | argument_flow | 33 |
 | conclusion | 8 |
-| concrete_foothold | 29 |
-| object_intuition | 87 |
+| concrete_foothold | 28 |
+| object_intuition | 86 |
 | orientation | 60 |
 | result_interpretation | 9 |
 
@@ -36,7 +36,6 @@ Canonical papers audited: **139**.
 | critical | critical | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 17 | 123.5 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | critical | critical | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 15 | 54.1 | 4/7 | argument_flow, concrete_foothold, conclusion |
 | major | major | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 15 | 210.5 | 7/7 | - |
-| major | major | `horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71` | 11 | 102.7 | 5/7 | object_intuition, concrete_foothold |
 | major | major | `particles-and-forces-as-coherence-basins-and-capacity-gradients` | 10 | 124.0 | 5/7 | object_intuition, concrete_foothold |
 | major | major | `cosmology-as-global-coherence-capacity-evolution` | 8 | 134.6 | 5/7 | object_intuition, concrete_foothold |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
@@ -73,6 +72,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed` | 12 | 283.5 | 6/7 | object_intuition |
 | reviewed | major | `modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6` | 12 | 223.9 | 7/7 | - |
 | reviewed | major | `constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b` | 11 | 156.5 | 7/7 | - |
+| reviewed | major | `horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71` | 11 | 232.4 | 7/7 | - |
 | reviewed | moderate | `modal-triplet-theory-parameters-closure-and-structural-ae734bf0` | 11 | 276.1 | 4/7 | orientation, object_intuition, result_interpretation |
 | reviewed | major | `the-projection-admissibility-principle-descent-recovery-b0fd6e59` | 11 | 176.0 | 6/7 | object_intuition |
 | reviewed | major | `universality-and-robustness-of-the-coherent-sector-in-m-a64842b3` | 11 | 181.1 | 6/7 | orientation |
@@ -113,7 +113,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `modal-triplet-theory-and-asymptotic-safety-asymptotic-s-dc3ce0c2` | 6 | 262.8 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | moderate | `modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0` | 6 | 354.2 | 7/7 | - |
 | reviewed | light | `modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927` | 6 | 464.5 | 5/7 | orientation, object_intuition |
-| reviewed | light | `photons-entanglement-and-null-updating-in-modal-triplet-theory` | 6 | 542.0 | 5/7 | orientation, object_intuition |
+| reviewed | light | `photons-entanglement-and-null-updating-in-modal-triplet-theory` | 6 | 541.2 | 5/7 | orientation, object_intuition |
 | reviewed | light | `quantum-field-theory-reconstruction-from-coherence-basi-ef12097a` | 6 | 519.3 | 5/7 | orientation, object_intuition |
 | reviewed | low | `the-modal-triplet-theory-program-a1-coherent-kinematics` | 6 | 461.2 | 7/7 | - |
 | reviewed | light | `topology-only-constraints-and-forbidden-operators-in-mo-90db2212` | 6 | 481.2 | 4/7 | orientation, object_intuition, argument_flow |

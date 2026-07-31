@@ -1,51 +1,53 @@
 {
-  "abstract": "We derive horizon formation, area laws, and entropy bounds as necessary consequences of coherence-capacity bottlenecks in projection-based effective descriptions. Building on the theory of coherence capacity and its transport developed in preceding work, we show that whenever inward capacity flux exceeds outward transport, admissibility fails on a codimension-one surface. Such surfaces act as horizons: effective descriptions become noninvertible across them, and global information recovery is impossible. We demonstrate that entropy arises as the bookkeeping of coherence capacity loss and that area laws follow from geometric bounds on capacity flux. The results are independent of microscopic dynamics and apply to any effective theory with finite stability margins.",
+  "abstract": "This paper determines exactly what coherence-capacity data can and cannot establish about horizons and entropy in Modal Triplet Theory (MTT). A zero of a declared capacity certificate is a failure boundary for that certificate. It is not, by itself, an event horizon, a trapped surface, an entropy, or an arrow of time. Those notions require additional Lorentzian, state, algebraic, and dynamical data. The positive result is a typed conditional theorem. Let Sigma be a cross-section of a separately specified causal horizon. Suppose a selected model supplies an entropy-transfer density s_Sigma, an integrated capacity-transfer density q_Sigma, and nonnegative constants kappa and sigma_max such that s_Sigma is at most kappa times q_Sigma and q_Sigma is at most sigma_max almost everywhere. Then Delta S(Sigma) is at most kappa sigma_max Area(Sigma). Equality holds precisely when both inequalities saturate almost everywhere, up to null sets. Thus bounded capacity transport can support an area upper bound, but an area equality requires a saturation theorem. Reproducing black-hole entropy further requires an independent source for kappa sigma_max = 1/(4 G hbar) in units c = k_B = 1. Capacity terminology alone does not derive that coefficient. Recovery is also formulated correctly. For an exterior channel E_ext, recovery means that a channel R reconstructs a declared code or observable algebra, with R after E_ext equal to the identity on that domain. It is not a partial right inverse of a noninjective projection, and noninjectivity alone neither proves nor forbids code-relative recovery. Hawking radiation, generalized entropy, island formulas, and Page curves remain imported results of their established regimes. MTT contributes a common typed language and a finite source contract for connecting those results to an upper admissibility model.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "January 2026",
+  "current_version": "v3",
+  "date": "Version 3, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18256339",
-    "created": "2026-01-21T04:55:16.774740+00:00",
+    "created": "2026-07-31T07:40:38.759619+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18322069",
+    "doi": "10.5281/zenodo.21716284",
     "files": [
       {
-        "checksum": "md5:e45f1639a4c383daf52b44f54199373a",
-        "content_url": "https://zenodo.org/api/records/18322069/files/Horizons__Area_Laws__and_Entropy_from_Coherence_Capacity_Bottlenecks_v2.pdf/content",
-        "key": "Horizons__Area_Laws__and_Entropy_from_Coherence_Capacity_Bottlenecks_v2.pdf",
-        "size": 200637
+        "checksum": "md5:ed85eb18ad956a04bdcc710445d8ed9b",
+        "content_url": "https://zenodo.org/api/records/21716284/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 357970
       }
     ],
-    "id": "18322069",
-    "match_kind": "title_or_file",
+    "id": "21716284",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-21",
-    "record_url": "https://zenodo.org/records/18322069",
+    "publication_date": "2026-07-31",
+    "record_url": "https://zenodo.org/records/21716284",
     "resource_type": "publication",
-    "title": "Horizons, Area Laws, and Entropy from Coherence Capacity Bottlenecks",
-    "updated": "2026-01-21T04:55:17.240164+00:00",
-    "version": "v2.0"
+    "title": "Horizons, Capacity Bounds, and Entropy in Modal Triplet Theory: A Conditional Interface with Black-Hole Thermodynamics",
+    "updated": "2026-07-31T07:40:39.125614+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "5c23ace35477bc30b6c0452d7a94ac980a8499d0a0bfffeae65fe26cda9923d2",
+  "main_tex_sha256": "f0b99c12301eb8b0514d1233de49f98ff0c051f1b6c8a1397ae75cbfb815fda3",
   "paper_id": "horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71",
-  "paper_md_sha256": "d186a6d60af3e222e6d29fefc65181b22a66da4cfb4a27ea34b2a3b821f33420",
+  "paper_md_sha256": "d67c3903c93a36e9193033d6c79f1c51116306bcac2bc918858cb660862a462a",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "821d381adbab91e6e92b5c1e4e8ee14fa1635b21e021ab8a91b1b9dc31517066",
+    "selected_revision": true
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 12585,
+      "bytes": 27893,
       "path": "main.tex",
-      "sha256": "5c23ace35477bc30b6c0452d7a94ac980a8499d0a0bfffeae65fe26cda9923d2"
+      "sha256": "f0b99c12301eb8b0514d1233de49f98ff0c051f1b6c8a1397ae75cbfb815fda3"
     },
     {
       "bytes": 3784,
@@ -56,10 +58,35 @@
   "source_provenance": {
     "legacy_source_path": "14 Coherence Capacity Program/_work/Horizons__Area_Laws__and_Entropy_from_Coherence_Capacity_Bottlenecks_v2"
   },
-  "source_tree_sha256": "fb779cd77529b732362a7212abefdf9dba1f11da119b3dff15a2acee0833fbed",
-  "title": "Horizons, Area Laws, and Entropy from Coherence Capacity Bottlenecks",
+  "source_tree_sha256": "d205b61651aa41d46e3cac2d6f47857c391032d36bc591d605776b0975d3a780",
+  "title": "Horizons, Capacity Bounds, and Entropy in Modal Triplet Theory: A Conditional Interface with Black-Hole Thermodynamics",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18256339",
+      "created": "2026-07-31T07:40:38.759619+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21716284",
+      "files": [
+        {
+          "checksum": "md5:ed85eb18ad956a04bdcc710445d8ed9b",
+          "content_url": "https://zenodo.org/api/records/21716284/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 357970
+        }
+      ],
+      "id": "21716284",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21716284",
+      "resource_type": "publication",
+      "title": "Horizons, Capacity Bounds, and Entropy in Modal Triplet Theory: A Conditional Interface with Black-Hole Thermodynamics",
+      "updated": "2026-07-31T07:40:39.125614+00:00",
+      "version": "v3"
+    },
     {
       "concept_doi": "10.5281/zenodo.18256339",
       "created": "2026-01-21T04:55:16.774740+00:00",

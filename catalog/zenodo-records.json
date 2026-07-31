@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18256339",
+      "created": "2026-07-31T07:40:38.759619+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21716284",
+      "files": [
+        {
+          "checksum": "md5:ed85eb18ad956a04bdcc710445d8ed9b",
+          "content_url": "https://zenodo.org/api/records/21716284/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 357970
+        }
+      ],
+      "id": "21716284",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21716284",
+      "resource_type": "publication",
+      "title": "Horizons, Capacity Bounds, and Entropy in Modal Triplet Theory: A Conditional Interface with Black-Hole Thermodynamics",
+      "updated": "2026-07-31T07:40:39.125614+00:00",
+      "version": "v3"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18262339",
       "created": "2026-07-31T07:14:42.233808+00:00",
       "creators": [
