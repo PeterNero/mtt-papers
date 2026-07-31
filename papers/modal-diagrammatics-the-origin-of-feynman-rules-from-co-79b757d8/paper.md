@@ -472,8 +472,10 @@ We proved that compatible finite projection preserves every all-retained graph c
 
 For MTT, the free q79 even-CAR net is already available through a companion construction using standard CAR/AQFT machinery. The next frontier is the same-source upper action and its interacting gauge–BRST completion. A future success there can plug directly into the theorem proved here.
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
-The theorems proved here are finite algebraic statements and do not depend on numerical fitting. The curated repository <https://github.com/PeterNero/mtt-results-repro> is cited for current MTT status context. In particular, records embedded renormalized-Standard-Model equivalence at the adopted profile tier, while records stronger no-knob obligations that remain open. Neither row proves <a href="#thm:wick-graph,thm:projection,thm:nonselection" data-reference-type="ref+label" data-reference="thm:wick-graph,thm:projection,thm:nonselection">[thm:wick-graph,thm:projection,thm:nonselection]</a>, and the open row is not evidence of closure.
+The theorems proved here are finite algebraic statements and do not depend on numerical fitting. The curated [MTT Results Reproduction repository](https://github.com/PeterNero/mtt-results-repro) is cited for current MTT status context. In particular, `A04/final_12_of_12_audit` records embedded renormalized-Standard-Model equivalence at the adopted profile tier, while `A05/strict_upgrade_ledger` records stronger no-knob obligations that remain open. Neither row proves the finite graph-expansion, projection, or nonselection theorems in this paper, and the open row is not evidence of closure.
 
-The selected free-CAR theorem and the classical-to-quantum interface are documented in the companion records . Exact release artifacts, source hashes, and the revision audit accompany this paper in the MTT papers repository.
+The selected free-CAR theorem and the classical-to-quantum interface are documented in the companion records [10.5281/zenodo.21665998](https://doi.org/10.5281/zenodo.21665998) and [10.5281/zenodo.21714936](https://doi.org/10.5281/zenodo.21714936). Exact release artifacts, source hashes, and the revision audit accompany this paper in the MTT papers repository.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
