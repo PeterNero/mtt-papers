@@ -1,430 +1,372 @@
 ---
-abstract: |
-  General Relativity and perturbative string theory are usually related by the statement that Einstein gravity emerges as the low-energy effective theory required for consistency of string propagation. This relation is typically presented as an internal result of string theory, derived from vanishing worldsheet beta functions or Weyl invariance of the sigma model. In this work we show that both General Relativity and string worldsheet consistency arise as distinct shadows of a single admissibility constraint in Modal Triplet Theory (MTT). Starting from the same upstairs coherent-sector projector, spectral gap, and admissibility data, we construct two dual encodings: an infrared spacetime effective field theory and a two-dimensional worldsheet renormalization-group flow. We prove that coherent-sector admissibility is equivalent, up to controlled truncation error governed by the spectral gap, to the existence of a worldsheet RG fixed point. In the spacetime encoding this condition yields the Einstein equations (with higher-curvature corrections), while in the worldsheet encoding it yields vanishing sigma-model beta functions. General Relativity and string theory are thus shown to be equivalent technical shadows of the same coherent fixed-point condition, rather than one being derived from the other.
 author:
 - Peter Nero
-current_version: v1.0
-date: January, 2026
-generated_from_main_tex_sha256: f7b57c5de08a276f49eee24388bfd7fed67184b929cc0cb8d38d76c7b5c09f4f
+current_version: v2
+date: July 2026, Version 2
+generated_from_main_tex_sha256: 25b4b7e0707e660d25b4e57cc80d4d91004c23e8d2f59567bed316e5cb44574d
 paper_id: why-general-relativity-and-string-theory-are-the-same-a-98920533
 release_state: zenodo_released
-released_version: v1.0
+released_version: v2
 title: |
-  **Why General Relativity and String Theory Are the Same Admissibility Constraint  
-  A Technical Shadow–Bridge Between IR Geometry and Worldsheet RG in Modal Triplet Theory**
-zenodo_doi: 10.5281/zenodo.18261980
-zenodo_record_id: 18261980
-zenodo_url: "https://zenodo.org/records/18261980"
+  **Worldsheet and Spacetime Consistency as a Conditional Diagnostic Square:**
+  Sigma-model beta functions, target-space equations, and the MTT source contract
+zenodo_doi: 10.5281/zenodo.21719524
+zenodo_record_id: 21719524
+zenodo_url: "https://zenodo.org/records/21719524"
 ---
 
-# Introduction
+<div class="center">
 
-General Relativity and string theory are often presented as fundamentally different approaches to quantum gravity. General Relativity is formulated as a four-dimensional geometric field theory, while string theory is formulated as a two-dimensional conformal field theory whose consistency conditions determine the dynamics of an emergent spacetime background.
-
-Despite these differences, it has long been known that Einstein’s equations appear as consistency conditions for string propagation. Vanishing of the worldsheet beta functions for the sigma-model couplings yields the Einstein equations for the target-space metric, together with equations for additional fields such as the antisymmetric tensor and the dilaton. This fact is usually summarized by saying that General Relativity “falls out” of string theory.
-
-In this paper we argue that this familiar result is a shadow of a deeper and more general statement. Within Modal Triplet Theory, both General Relativity and string worldsheet consistency arise from the same upstairs admissibility constraint enforced by coherent-sector projection and stability. The appearance of Einstein gravity in string theory is not a string-specific miracle, but a necessary consequence of representing the same admissibility condition in a different encoding.
-
-The purpose of this work is to make this equivalence precise at a technical level. We construct the induced worldsheet renormalization-group flow as a shadow of the upstairs projected dynamics, identify its fixed points with coherent admissible backgrounds, and show that the same fixed-point condition yields the infrared Einstein equations in the spacetime effective description.
-
-# S1 — Coherent-Sector Admissibility and Fixed Points
-
-We begin by formalizing the upstairs structure common to both General Relativity and string theory within Modal Triplet Theory. This section implements the first step of the shadow-bridge template: identifying the unique admissibility constraint in the coherent sector whose shadows will later appear as spacetime field equations and worldsheet renormalization-group fixed points.
-
-## Coherent-sector projection and spectral gap
-
-Let $`\mathcal{H}_{\mathrm{ext}}`$ denote the extended Hilbert space of Modal Triplet Theory, supporting microscopic unitary evolution. The coherent sector $`\mathcal{H}_{\mathrm{coh}}\subset\mathcal{H}_{\mathrm{ext}}`$ is defined as the joint spectral subspace associated with the lowest eigenvalues of the modal Laplace-type operators.
-
-The coherent-sector projector
-``` math
-\Pi_{\mathrm{coh}}:\mathcal{H}_{\mathrm{ext}}\rightarrow\mathcal{H}_{\mathrm{coh}}
-```
-is bounded due to the existence of a finite spectral gap $`\lambda_\ast>0`$ separating coherent from noncoherent modes. This gap ensures stability of the projection under bounded perturbations and under coarse-grained renormalization.
-
-All effective low-energy descriptions considered in this work arise from restricting to $`\mathcal{H}_{\mathrm{coh}}`$ and projecting observables to appropriate reduced encodings.
-
-## Admissibility functional and fixed points
-
-Modal Triplet Theory characterizes physically meaningful effective descriptions by an admissibility condition. This condition may be expressed in terms of a functional
-``` math
-\mathfrak{A}:\mathcal{H}_{\mathrm{coh}}\times\Theta\rightarrow\mathbb{R},
-```
-where $`\Theta`$ denotes the finite bottleneck data controlling overlap structure, truncation, and stability.
-
-<div class="definition">
-
-**Definition 1** (Coherent admissibility). A coherent configuration $`\psi\in\mathcal{H}_{\mathrm{coh}}`$ is admissible if:
-
-1.  $`\mathfrak{A}(\psi;\Theta)`$ lies below a critical threshold determined by $`\lambda_\ast`$,
-
-2.  small perturbations of $`\psi`$ remain within the admissible domain,
-
-3.  projected dynamics exhibits contractive behavior toward a stable configuration.
+**Abstract**
 
 </div>
 
-Admissible configurations define a set of coherent fixed points or fixed-point manifolds under the projected dynamics. These fixed points are not assumed a priori; they are selected by the admissibility constraint itself.
+> Perturbative string theory supplies a precise relation between two-dimensional Weyl consistency and target-space field equations. At leading order the metric beta function contains the Ricci tensor, but the complete statement also involves the antisymmetric tensor, dilaton, renormalization scheme, higher powers of alpha-prime, string loops, and the domain of the worldsheet theory. It is therefore inaccurate to identify General Relativity and string theory as theories, or to infer their equivalence merely because their consistency equations meet in a low-energy corner. This paper gives the correct technical bridge and states what Modal Triplet Theory (MTT) would have to add. We define a worldsheet diagnostic, a target-space Euler–Lagrange diagnostic, two source encodings, and an explicit comparison operator. A controlled diagnostic-square theorem proves exact and approximate transfer of solutions when these maps intertwine and the comparison operator has the required inverse estimate. A counterexample shows that coincident fixed points alone do not establish this bridge. The standard sigma-model result supplies a perturbative instance after field redefinitions; it does not supply an upstream MTT source. We finish with a twelve-row same-source contract and a separate error ledger. Current q79 work provides five rows, partially provides two, and leaves five open. Accordingly, the paper establishes a rigorous conditional comparison framework, not a derivation of string theory, pure Einstein gravity, or their ontological identity from MTT.
 
-## Controlled truncation and error bounds
+# Version 2 Revision Note
 
-The spectral gap $`\lambda_\ast`$ provides quantitative control over truncation error when passing from the coherent sector to reduced encodings. Corrections to any effective description are suppressed by powers of $`\lambda_\ast^{-1}`$ and by overlap scales encoded in $`\Theta`$.
+<div class="description">
 
-This control will be crucial when comparing the infrared spacetime effective field equations with the worldsheet renormalization-group equations, as both arise as approximations to the same admissibility condition with different encoding choices.
+Version 1.0, released in January 2026.
 
-# S1 — Two Dual Encodings of the Same Admissibility Constraint
+The previous version identified GR and string theory as the same constraint, assumed that an MTT proper-time flow was conjugate to worldsheet RG, identified $`\alpha'`$ with an inverse spectral gap, and treated common fixed points as a proof of equivalence.
 
-We now describe two distinct encodings of coherent admissibility that arise from the same upstairs structure. These encodings correspond to different choices of effective variables and coarse-graining procedures, but are constrained by the same admissibility functional.
+Version 2 separates the established perturbative worldsheet-to-target result from the proposed MTT common-source explanation. It proves a typed conditional diagnostic-square theorem, gives a no-go counterexample, and records every approximation and source obligation.
 
-## Infrared spacetime encoding
+The central intuition survives in narrower form: worldsheet and spacetime equations may be two controlled diagnostics of one selected background record.
 
-In the infrared encoding, coherent configurations are represented by fields on a four-dimensional spacetime manifold. The effective degrees of freedom include a metric $`g_{\mu\nu}`$ and, in general, additional tensor fields induced by the overlap structure.
-
-Admissibility in this encoding requires that the effective spacetime dynamics be stable under coarse-graining and that higher-derivative corrections remain controlled by $`\lambda_\ast`$. As shown elsewhere in the MTT corpus, these requirements select a narrow class of infrared actions dominated by the Einstein–Hilbert term, with higher-curvature corrections suppressed by powers of $`\lambda_\ast^{-1}`$.
-
-## Worldsheet encoding
-
-In the worldsheet encoding, coherent configurations are represented by a two-dimensional sigma model describing the propagation of extended probes. The couplings of this sigma model encode the same geometric data that appear as spacetime fields in the infrared description.
-
-Admissibility in this encoding is expressed as stability of the two-dimensional theory under scale transformations. This stability is governed by the worldsheet renormalization-group flow, whose fixed points correspond to conformally invariant backgrounds.
-
-The next sections make this correspondence precise by constructing the worldsheet RG flow as a shadow of the upstairs projected dynamics and by showing that its fixed points coincide with coherent admissible configurations.
-
-## Formal alignment: the string corner and identification with standard worldsheet RG
-
-We now make explicit the only additional alignment needed to connect the MTT-induced scale flow to the formally standard string-theoretic derivation of Einstein equations from vanishing sigma-model beta functions.
-
-#### Definition of the string corner (encoding hypothesis).
-
-We say that a coherent admissible configuration $`\psi\in\mathcal{H}_{\mathrm{coh}}`$ lies in the *string corner* if its overlap data admit a two-dimensional sigma-model encoding in the following precise sense: there exists a two-dimensional Euclidean QFT on a worldsheet $`(\Sigma_2,h)`$ with fields $`X:\Sigma_2\to Y^D`$ and local action functional
-``` math
-\begin{equation}
-S_{\Sigma}[X;g,B,\Phi]
-=
-\frac{1}{4\pi\alpha'}\int_{\Sigma_2} d^2\sigma\,\sqrt{h}\,
-\Big(
-h^{ab} g_{\mu\nu}(X)\partial_a X^\mu\partial_b X^\nu
-+\epsilon^{ab}B_{\mu\nu}(X)\partial_a X^\mu\partial_b X^\nu
-+\alpha' R^{(2)}(h)\,\Phi(X)
-\Big),
-\end{equation}
-```
-such that the background fields $`(g,B,\Phi)`$ are computable functionals of the upstairs coherent overlap/bottleneck data $`\Theta`$ for $`\psi`$ (the explicit construction of this encoding is given in the MTT strings/flux volume).
-
-In this corner, the observable scale transformation of the 2D theory is identified with standard UV renormalization of the sigma model, i.e. there is a renormalization prescription (choice of scheme) for which the couplings $`(g,B,\Phi)`$ are renormalized by integrating out worldsheet modes in momentum shells, producing the renormalized effective action $`S_{\Sigma}^{(\mu)}`$ at scale $`\mu`$ with beta functions
-``` math
-\begin{equation}
-\mu\frac{d}{d\mu} g_{\mu\nu} = \beta^{g}_{\mu\nu}(g,B,\Phi),\qquad
-\mu\frac{d}{d\mu} B_{\mu\nu} = \beta^{B}_{\mu\nu}(g,B,\Phi),\qquad
-\mu\frac{d}{d\mu} \Phi = \beta^{\Phi}(g,B,\Phi).
-\end{equation}
-```
-
-#### Identification of the MTT scale flow with worldsheet RG (scheme statement).
-
-The MTT-induced scale transformation constructed from proper-time rescaling in Sec. <a href="#sec:proper-time-flow" data-reference-type="ref" data-reference="sec:proper-time-flow">[sec:proper-time-flow]</a> defines a map on the same coupling space,
-``` math
-\mathrm{RG}_{\mathrm{MTT}}:\ (g,B,\Phi)\mapsto (g',B',\Phi'),
-```
-obtained by changing the proper-time cutoff and re-projecting to the sigma-model encoding. In the string corner, we require (and henceforth assume) that $`\mathrm{RG}_{\mathrm{MTT}}`$ is *scheme-equivalent* to the standard worldsheet RG: there exists an admissible local field redefinition (a bounded reparametrization) $`\mathcal{U}`$ on coupling space such that, to the order of controlled truncation error,
-``` math
-\begin{equation}
-\mathrm{RG}_{\mathrm{MTT}} = \mathcal{U}^{-1}\circ \mathrm{RG}_{\mathrm{ws}}\circ \mathcal{U}
-\;+\;\mathcal{O}(\lambda_\ast^{-1}),
-\end{equation}
-```
-where $`\mathrm{RG}_{\mathrm{ws}}`$ is the RG step map generated by the sigma-model beta functions in the chosen renormalization scheme. The $`\mathcal{O}(\lambda_\ast^{-1})`$ term is the controlled truncation remainder associated with discarding noncoherent modes.
-
-#### Weyl invariance as the fixed-point form of admissibility.
-
-In standard string theory, the physical consistency condition is quantum Weyl invariance of the worldsheet theory, which is equivalent (in a renormalizable scheme) to vanishing of the beta functions:
-``` math
-\begin{equation}
-\beta^{g}=0,\qquad \beta^{B}=0,\qquad \beta^{\Phi}=0.
-\end{equation}
-```
-Under the scheme-equivalence above, existence of a fixed point of $`\mathrm{RG}_{\mathrm{MTT}}`$ is therefore equivalent, up to $`\mathcal{O}(\lambda_\ast^{-1})`$ error, to Weyl invariance of the sigma model. This supplies the formal alignment: the MTT admissibility-fixed-point condition in the worldsheet encoding is exactly the usual string condition, expressed in the same coupling space and differing only by admissible scheme reparametrizations.
-
-#### Practical consequence.
-
-With this alignment in place, all subsequent uses of “RG fixed point” in this paper are to be read as the standard vanishing-beta-function condition of the sigma model, up to admissible scheme choice and controlled truncation error. This removes any ambiguity between proper-time rescaling and worldsheet UV renormalization: the former is a constructive representation of the latter in the coherent universality class.
-
-# S2 — Construction of the Worldsheet RG as a Shadow of Coherent Projection
-
-We now implement the second step of the shadow-bridge template in technical detail. Starting from the same upstairs coherent-sector projection and admissibility data, we construct the two-dimensional worldsheet renormalization-group flow as a shadow of the projected dynamics. This construction follows and extends the analysis developed in *Strings, Flux, and M-Theory* and *Loop Quantum Gravity and Kaluza–Klein Theory* within the MTT corpus.
-
-## Proper-time representation and induced scale flow
-
-Let $`\psi\in\mathcal{H}_{\mathrm{coh}}`$ be a coherent admissible configuration. As shown in *Strings, Flux, and M-Theory*, the coherent-sector propagator admits a proper-time representation controlled by the spectral gap $`\lambda_\ast`$,
-``` math
-G = \int_{0}^{\infty} ds \, e^{-s \Delta_{\mathrm{coh}}} \, ,
-```
-where $`\Delta_{\mathrm{coh}}`$ denotes the effective Laplace-type operator on the coherent sector.
-
-The proper-time parameter $`s`$ plays a dual role. In the infrared spacetime encoding, it corresponds to a short-distance regulator controlling higher- curvature corrections. In the worldsheet encoding, it induces a scale parameter for the two-dimensional theory.
-
-Admissibility requires that the proper-time integral converge uniformly under coarse-graining. This requirement induces a flow on the effective couplings appearing in the worldsheet sigma model.
-
-## Sigma-model couplings as overlap data
-
-Following *Strings, Flux, and M-Theory*, we represent the coherent overlap data by a two-dimensional sigma model with action
-``` math
-S_{\Sigma} = \frac{1}{4\pi\alpha'} \int d^2\sigma \,
-\Bigl(
-g_{\mu\nu}(X)\,\partial_a X^\mu \partial^a X^\nu
-+ B_{\mu\nu}(X)\,\epsilon^{ab}\partial_a X^\mu \partial_b X^\nu
-+ \alpha' R^{(2)} \Phi(X)
-\Bigr),
-```
-where the target-space fields $`(g_{\mu\nu},B_{\mu\nu},\Phi)`$ encode the same coherent-sector data that appear as spacetime fields in the infrared description.
-
-In Modal Triplet Theory, these fields are not fundamental degrees of freedom. They are effective parameters describing how coherent modes overlap when restricted to extended probes.
-
-## Induced renormalization-group map
-
-The requirement that the proper-time representation remain admissible under coarse-graining induces a renormalization-group map
-``` math
-\mathrm{RG}: (g_{\mu\nu},B_{\mu\nu},\Phi) \longmapsto
-(g_{\mu\nu}',B_{\mu\nu}',\Phi'),
-```
-defined by integrating out short-distance fluctuations on the worldsheet.
-
-This RG map is not postulated independently. It is the shadow, in the two-dimensional encoding, of the same projected dynamics that governs coherent stability in the upstairs theory. The flow parameter corresponds to rescaling of the proper-time cutoff, and its generator is determined by the overlap structure encoded in $`\Theta`$.
-
-## Worldsheet beta functions as admissibility diagnostics
-
-To leading order in $`\alpha'`$, the RG flow is generated by the sigma-model beta functions
-``` math
-\beta^g_{\mu\nu}, \qquad \beta^B_{\mu\nu}, \qquad \beta^\Phi,
-```
-whose explicit forms are standard. In the MTT framework, these beta functions play the role of admissibility diagnostics: they measure the failure of the two-dimensional encoding to remain stable under scale transformations.
-
-Admissibility of the coherent configuration requires that the induced RG flow admit a fixed point,
-``` math
-\beta^g_{\mu\nu} = 0, \qquad
-\beta^B_{\mu\nu} = 0, \qquad
-\beta^\Phi = 0,
-```
-up to corrections suppressed by powers of $`\lambda_\ast^{-1}`$.
-
-Failure of these conditions corresponds to loss of admissibility in the worldsheet encoding, just as violation of the infrared stability conditions corresponds to loss of admissibility in the spacetime encoding.
-
-## Relation to MTT string results
-
-In *Strings, Flux, and M-Theory*, it was shown that the sigma-model beta functions arise naturally when expressing coherent overlap conditions in a two-dimensional language. The present construction clarifies that these beta functions are not special to string theory. They are the universal shadow of the same admissibility constraint that governs all coherent fixed points.
-
-In particular, the appearance of worldsheet Weyl invariance as a consistency requirement is identified here as the two-dimensional expression of coherent admissibility under projection.
-
-# S2 — Infrared Spacetime Encoding and Einstein Dynamics
-
-We now turn to the complementary encoding of the same admissibility constraint: the four-dimensional infrared spacetime description.
-
-## Effective action from coherent admissibility
-
-As shown in *Relativity and QFT from MTT* and *Perturbative and Constructive Quantum Gravity*, coherent admissibility restricts the form of the infrared effective action. Stability under coarse-graining and suppression of higher-derivative instabilities select an action of the form
-``` math
-S_{\mathrm{IR}} = \frac{1}{16\pi G} \int d^4x \sqrt{-g}
-\Bigl( R - 2\Lambda + \mathcal{O}(\lambda_\ast^{-1}) \Bigr),
-```
-with controlled higher-curvature corrections.
-
-The Einstein–Hilbert term appears as the unique leading contribution compatible with coherent-sector stability and locality.
-
-## Einstein equations as admissibility conditions
-
-Variation of the infrared action yields the Einstein equations
-``` math
-R_{\mu\nu} - \tfrac{1}{2}g_{\mu\nu}R + \Lambda g_{\mu\nu}
-= 8\pi G\, T_{\mu\nu},
-```
-together with higher-curvature corrections suppressed by powers of $`\lambda_\ast^{-1}`$.
-
-In Modal Triplet Theory, these equations are not fundamental dynamical laws. They are the condition that the infrared encoding of the coherent sector remain admissible under coarse-graining. Violation of the Einstein equations signals loss of admissibility and breakdown of the effective description.
-
-## Matching of truncation errors
-
-The same spectral gap $`\lambda_\ast`$ that controls the validity of the infrared Einstein description also controls the truncation of the worldsheet beta functions. Higher-curvature corrections in spacetime correspond to higher-order $`\alpha'`$ corrections in the sigma-model beta functions.
-
-This correspondence, developed technically in *Strings, Flux, and M-Theory*, is here reinterpreted as the statement that both encodings approximate the same admissibility constraint with controlled error.
-
-The next section establishes the precise bridge: admissibility of the coherent sector is equivalent to the existence of a worldsheet RG fixed point, and both are equivalent to satisfaction of the infrared Einstein equations, up to controlled truncation error.
-
-# S3 — Equivalence of Coherent Admissibility and Worldsheet RG Fixed Points
-
-We now state and prove the central technical result of this paper: coherent-sector admissibility, infrared Einstein dynamics, and worldsheet renormalization-group fixed points are equivalent shadows of the same upstairs constraint, up to controlled truncation error governed by the spectral gap.
-
-## Admissibility versus RG fixed points
-
-We begin by formalizing the notion of admissibility in the two encodings.
-
-<div class="definition">
-
-**Definition 2** (Worldsheet admissibility). A sigma-model background $`(g_{\mu\nu},B_{\mu\nu},\Phi)`$ is worldsheet-admissible if the induced renormalization-group flow admits a fixed point up to corrections suppressed by $`\lambda_\ast^{-1}`$, i.e.
-``` math
-\beta^g_{\mu\nu} = \mathcal{O}(\lambda_\ast^{-1}), \quad
-\beta^B_{\mu\nu} = \mathcal{O}(\lambda_\ast^{-1}), \quad
-\beta^\Phi = \mathcal{O}(\lambda_\ast^{-1}).
-```
+MTT has not yet supplied one selected q79 physical visible–hidden worldsheet theory, upper action, and comparison map that closes the twelve-row contract.
 
 </div>
 
-<div class="definition">
+# What the familiar statement actually means
 
-**Definition 3** (Infrared admissibility). An infrared spacetime configuration $`(g_{\mu\nu},\text{matter})`$ is IR-admissible if the effective action remains stable under coarse-graining and the equations of motion derived from it are satisfied up to corrections suppressed by $`\lambda_\ast^{-1}`$.
+The phrase “GR falls out of string theory” compresses several distinct claims. Perturbative string theory starts with a two-dimensional quantum field theory whose couplings are target-space fields. Quantum Weyl invariance constrains those couplings. In a perturbative scheme, the constraints agree with equations derived from a target-space effective action. In a further low-energy and field-content reduction, part of that action resembles Einstein gravity.
+
+This chain is important, but it does not say that the theories are identical. Their variables, observables, dimensions, quantization data, and regimes are different. The careful statement is:
+``` math
+\begin{array}{c}
+\text{worldsheet Weyl-anomaly coefficients: }\bar\beta^i=0\\[0.35em]
+\Updownarrow\quad\text{at a declared order, scheme, and field content}\quad\\[0.35em]
+\text{target-space equations: }\delta S_{\mathrm{eff}}/\delta\varphi^i=0 .
+\end{array}
+```
+The arrow concerns diagnostics on a shared background-coupling space. It is not an identity between complete theories.
+
+## Three levels that must not be conflated
+
+<div class="description">
+
+A perturbative equivalence between Weyl-anomaly coefficients and target effective equations, modulo field redefinitions and at a stated order.
+
+A proof that both diagnostics are images of one declared upper source under explicit maps.
+
+A proof that the upper source, branch, action, normalizations, and physical state are selected without importing the desired lower solution.
 
 </div>
 
-## Equivalence theorem
+This paper formalizes the second level conditionally. It neither reproves all of the first nor claims the third.
 
-<div id="thm:admissibility-RG" class="theorem">
+# The standard worldsheet-to-target bridge
 
-**Theorem 4** (Admissibility–RG Equivalence). *Let $`\psi\in\mathcal{H}_{\mathrm{coh}}`$ be a coherent configuration with bottleneck data $`\Theta`$ and spectral gap $`\lambda_\ast`$. Then, up to truncation errors suppressed by $`\lambda_\ast^{-1}`$, the following are equivalent:*
+## Worldsheet data
 
-1.  *$`\psi`$ is admissible in the coherent sector.*
+For a bosonic background record
+``` math
+\varphi=(g_{\mu\nu},B_{\mu\nu},\Phi,\ldots)
+```
+on a target $`Y`$, the Euclidean sigma-model action contains
+``` math
+\begin{align}
+S_\Sigma[X;\varphi]
+={}&\frac{1}{4\pi\alpha'}\int_\Sigma
+\sqrt{h}\,h^{ab}g_{\mu\nu}(X)
+\partial_aX^\mu\partial_bX^\nu\,d^2\sigma \nonumber\\
+&+\frac{i}{4\pi\alpha'}\int_\Sigma
+\epsilon^{ab}B_{\mu\nu}(X)
+\partial_aX^\mu\partial_bX^\nu\,d^2\sigma
++\frac{1}{4\pi}\int_\Sigma\sqrt h\,
+R^{(2)}\Phi(X)\,d^2\sigma ,
+\label{eq:sigma-action}
+\end{align}
+```
+with convention-dependent normalizations. A complete superstring or heterotic model also needs worldsheet fermions, ghosts, spin structures, GSO data, gauge-bundle couplings, a measure, and global consistency.
 
-2.  *The induced worldsheet sigma model admits a renormalization-group fixed point.*
+At leading order in one common convention, the metric anomaly coefficient has the form
+``` math
+\begin{equation}
+\bar\beta^g_{\mu\nu}
+=\alpha'\left(
+R_{\mu\nu}+2\nabla_\mu\nabla_\nu\Phi
+-\frac14H_{\mu\rho\sigma}H_\nu{}^{\rho\sigma}
+\right)+O(\alpha'^2),
+\label{eq:metric-beta}
+\end{equation}
+```
+where $`H=dB`$ is modified in heterotic theory by the appropriate Chern–Simons terms. The $`B`$-field and dilaton have their own anomaly coefficients. Thus $`\bar\beta^g=0`$ is not generally the vacuum Einstein equation.
 
-3.  *The induced infrared spacetime fields satisfy the Einstein equations with controlled higher-curvature corrections.*
+## Target-space data
+
+At string tree level and leading derivative order, the NS–NS part of a target effective action is schematically
+``` math
+\begin{equation}
+S_{\mathrm{eff}}
+=\frac{1}{2\kappa^2}\int_Y
+\sqrt{-g}\,e^{-2\Phi}
+\left[
+R+4|\nabla\Phi|^2-\frac1{12}|H|^2+O(\alpha')
+\right]d^Dx .
+\label{eq:effective-action}
+\end{equation}
+```
+Gauge, fermion, source, compactification, and loop terms must be added for the intended string. After compatible field redefinitions, the Euler–Lagrange equations of <a href="#eq:effective-action" data-reference-type="eqref" data-reference="eq:effective-action">[eq:effective-action]</a> agree with the worldsheet Weyl conditions at the calculated order .
+
+Vacuum Einstein gravity appears only after further restrictions, for example constant dilaton, vanishing flux and sources, suitable dimension reduction, and neglect of higher-derivative and loop effects. These are hypotheses, not consequences of writing down <a href="#eq:sigma-action" data-reference-type="eqref" data-reference="eq:sigma-action">[eq:sigma-action]</a>.
+
+## Scheme and field-redefinition dependence
+
+Beta functions are coordinates on a space of couplings. Local field redefinitions change their components and change the representative effective action while preserving the appropriate on-shell physics. Accordingly, comparison must either fix a common scheme or include the field-redefinition map. Equality of two unlabelled formulae is not a scheme-independent theorem.
+
+# A typed diagnostic square
+
+## Objects and maps
+
+Let $`\mathcal{U}`$ be a declared upper-source space. Let $`\mathcal{C}_{\mathrm{ws}}`$ be the space of complete worldsheet coupling records and $`\mathcal{C}_{\mathrm{st}}`$ the space of target effective-field records. Encoding maps
+``` math
+E_{\mathrm{ws}}:\mathcal{U}\to\mathcal{C}_{\mathrm{ws}},
+\qquad
+E_{\mathrm{st}}:\mathcal{U}\to\mathcal{C}_{\mathrm{st}}
+```
+must be independently defined. They are not names for fitting the same lower data twice.
+
+Let
+``` math
+D_{\mathrm{ws}}:\mathcal{C}_{\mathrm{ws}}\to\mathcal{B}_{\mathrm{ws}},
+\qquad
+D_{\mathrm{st}}:\mathcal{C}_{\mathrm{st}}\to\mathcal{B}_{\mathrm{st}}
+```
+denote the full Weyl-anomaly and target Euler–Lagrange diagnostics. The spaces $`\mathcal{B}_{\mathrm{ws}}`$ and $`\mathcal{B}_{\mathrm{st}}`$ carry declared norms on a domain $`\mathcal{U}_0\subseteq\mathcal{U}`$. A comparison family
+``` math
+J_u:\mathcal{B}_{\mathrm{st}}\to\mathcal{B}_{\mathrm{ws}}
+```
+includes conventions, field redefinitions, gauge quotients, and any dimensional reduction used in the comparison.
+
+<div class="definition">
+
+**Definition 1** (Controlled diagnostic square). The data above form a controlled diagnostic square on $`\mathcal{U}_0`$ when
+``` math
+\begin{equation}
+D_{\mathrm{ws}}(E_{\mathrm{ws}}u)
+=J_uD_{\mathrm{st}}(E_{\mathrm{st}}u)+r(u),
+\qquad
+\|r(u)\|_{\mathrm{ws}}\leq\varepsilon(u),
+\label{eq:square}
+\end{equation}
+```
+and $`J_u`$ is injective on the compared diagnostic subspace with
+``` math
+\|v\|_{\mathrm{st}}\leq M(u)\|J_uv\|_{\mathrm{ws}}.
+```
+The square is exact when $`r=0`$.
+
+</div>
+
+The inverse estimate matters. Without it, a small worldsheet residual can hide a large target residual in a poorly conditioned or discarded direction.
+
+<div id="thm:square" class="theorem">
+
+**Theorem 2** (Controlled worldsheet–spacetime diagnostic transfer). *Let the controlled diagnostic square hold at $`u\in\mathcal{U}_0`$. Then
+``` math
+\begin{equation}
+\|D_{\mathrm{st}}(E_{\mathrm{st}}u)\|_{\mathrm{st}}
+\leq M(u)\left(
+\|D_{\mathrm{ws}}(E_{\mathrm{ws}}u)\|_{\mathrm{ws}}
++\varepsilon(u)\right).
+\label{eq:target-bound}
+\end{equation}
+```
+If the square is exact and $`J_u`$ is injective on the compared subspace, worldsheet consistency implies the compared target equations. If $`J_u`$ is also surjective and boundedly invertible on the full diagnostic spaces, the two zero conditions are equivalent. None of these conclusions identifies the complete theories.*
 
 </div>
 
 <div class="proof">
 
-*Proof sketch.* $`(i)\Rightarrow(ii)`$: Coherent admissibility requires stability of the proper-time representation under rescaling. In the worldsheet encoding, this stability condition induces a scale transformation generated by the RG flow. Failure of the beta functions to vanish would correspond to divergence of the proper-time integral and loss of admissibility. Hence admissibility implies existence of an RG fixed point.
-
-$`(ii)\Rightarrow(iii)`$: Vanishing of the sigma-model beta functions yields the spacetime field equations for $`(g_{\mu\nu},B_{\mu\nu},\Phi)`$, whose leading term is the Einstein equation with corrections suppressed by $`\alpha'`$. Identifying $`\alpha'\sim\lambda_\ast^{-1}`$ yields the infrared admissibility condition.
-
-$`(iii)\Rightarrow(i)`$: Satisfaction of the infrared equations ensures that coarse-graining preserves stability of the effective description. Controlled higher-curvature corrections guarantee boundedness of the projected dynamics, implying coherent admissibility. ◻
+*Proof.* Rearranging <a href="#eq:square" data-reference-type="eqref" data-reference="eq:square">[eq:square]</a> gives
+``` math
+J_uD_{\mathrm{st}}(E_{\mathrm{st}}u)
+=D_{\mathrm{ws}}(E_{\mathrm{ws}}u)-r(u).
+```
+Apply the inverse estimate and the triangle inequality to obtain <a href="#eq:target-bound" data-reference-type="eqref" data-reference="eq:target-bound">[eq:target-bound]</a>. For $`r=0`$, injectivity transfers a worldsheet zero to a target zero. Surjectivity and bounded invertibility give the reverse implication on the declared spaces. The theorem compares diagnostic values only, so it makes no statement about equality of states, observables, or quantizations. ◻
 
 </div>
 
-## Interpretation
+<div class="corollary">
 
-Theorem <a href="#thm:admissibility-RG" data-reference-type="ref" data-reference="thm:admissibility-RG">4</a> shows that General Relativity and string worldsheet consistency are not hierarchically related. Neither is derived from the other. Both arise as equivalent encodings of the same coherent admissibility constraint.
-
-The familiar statement that “GR falls out of string theory” is therefore a shadow of a deeper fact: admissibility of coherent-sector projection enforces both Einstein dynamics in the infrared and Weyl invariance in the worldsheet encoding.
-
-# S4 — Validation Against Known Results
-
-We now validate the equivalence theorem by comparison with established results in string theory and gravitational effective field theory.
-
-## Sigma-model beta functions
-
-The explicit forms of the beta functions,
+**Corollary 3** (Perturbative string instance). *Suppose a fixed string model, renormalization scheme, field-redefinition map, and perturbative order $`N`$ give
 ``` math
-\beta^g_{\mu\nu} = \alpha' R_{\mu\nu} + \cdots,
+D_{\mathrm{ws}}=J D_{\mathrm{st}}+O(\alpha'^{N+1})
 ```
-are recovered in the present framework as the leading admissibility diagnostics of the worldsheet encoding. Higher-order terms correspond to controlled truncation corrections in the coherent sector.
+on a controlled background family. Then Theorem <a href="#thm:square" data-reference-type="ref" data-reference="thm:square">2</a> transfers the residual with $`\varepsilon=O(\alpha'^{N+1})`$, together with whatever string-loop, compactification, and analytic errors are separately present.*
 
-## Uniqueness of Einstein dynamics
+</div>
 
-Infrared analyses in *Relativity and QFT from MTT* and *Perturbative and Constructive Quantum Gravity* show that the Einstein– Hilbert action is the unique stable infrared fixed point compatible with admissibility and locality. This uniqueness is mirrored by the uniqueness of worldsheet RG fixed points under Weyl invariance.
+This corollary organizes the standard result. It does not prove that an MTT source emitted the string model.
 
-## Limits of the correspondence
+# Why matching fixed points is insufficient
 
-The equivalence holds only within the regime where the coherent projector remains bounded and the spectral gap remains open. Closing of the gap or violation of admissibility signals breakdown of both the infrared and worldsheet encodings, predicting where the GR–string correspondence must fail.
+<div id="prop:no-go" class="proposition">
 
-# Consequences, Cross-Checks, and Falsifiability
+**Proposition 4** (Common-zero no-go). *Equality of the zero sets of two diagnostics does not imply a controlled diagnostic square with a uniformly invertible linear comparison.*
 
-We now spell out the concrete consequences of the admissibility–RG equivalence and identify points of contact with existing results, as well as conditions under which the correspondence must fail. These consequences are not additional assumptions; they follow directly from the shared upstairs admissibility constraint.
+</div>
 
-## Why General Relativity “falls out” of string theory
+<div class="proof">
 
-In standard string theory, the appearance of the Einstein equations is usually presented as a consequence of worldsheet conformal invariance. From the present perspective, this derivation is a shadow of a deeper fact: both the worldsheet beta-function conditions and the infrared Einstein equations are expressions of the same coherent admissibility condition.
+*Proof.* On $`\mathbb{R}`$, let $`D_1(x)=x`$ and $`D_2(x)=x^3`$. Both have zero set $`\{0\}`$. Any pointwise scalar comparison satisfying $`D_2(x)=J_xD_1(x)`$ for $`x\neq0`$ has $`J_x=x^2`$. Its inverse norm diverges as $`x\to0`$. Thus common fixed points do not provide the stability or residual transfer required by Theorem <a href="#thm:square" data-reference-type="ref" data-reference="thm:square">2</a>. ◻
 
-The appearance of Einstein gravity is therefore not a special feature of strings as fundamental objects. Any encoding of the coherent sector that admits a proper-time or heat-kernel representation and a controlled truncation must reproduce the same infrared equations. String theory is one such encoding, but not the only one.
+</div>
 
-#### GR–String correspondence as a shadow bridge.
+This elementary example exposes the defect in an argument of the form “both flows have the same fixed point, therefore they encode the same constraint.” A second circular argument is to assume a conjugacy $`F_{\mathrm{ws}}=U^{-1}F_{\mathrm{st}}U`$ and then advertise fixed-point transfer as a derivation. Conjugacy does transfer fixed points, but the research task is to construct and verify $`U`$. Naming it does not do so.
 
-In Modal Triplet Theory, the familiar statement that General Relativity “falls out” of string theory is reinterpreted as a shadow-bridge phenomenon rather than a hierarchical derivation. Both the Einstein field equations in the infrared spacetime description and the vanishing of worldsheet beta functions in perturbative string theory arise as distinct encodings of a single admissibility constraint imposed on the coherent sector. In the spacetime encoding, admissibility appears as stability under coarse-graining and locality, yielding the Einstein–Hilbert dynamics with controlled higher-curvature corrections. In the worldsheet encoding, the same admissibility condition appears as quantum Weyl invariance, expressed through renormalization-group fixed points of the sigma model. The standard string-theoretic result that Weyl invariance implies Einstein equations is thus recovered, but its status is clarified: neither string theory derives gravity nor gravity derives string theory; rather, both are equivalent shadows of the same coherent fixed-point condition, valid within a common universality class and breaking down simultaneously when admissibility fails.
+# What MTT would add
 
-## Higher-curvature corrections and controlled error
+MTT proposes an explanation upstream of the standard bridge: both lower diagnostics may descend from one selected source. That proposal becomes mathematical only after the maps in <a href="#eq:square" data-reference-type="eqref" data-reference="eq:square">[eq:square]</a> are built from the same source, with provenance.
 
-Both encodings predict systematic corrections to the leading Einstein dynamics. In the worldsheet encoding, these appear as higher-order $`\alpha'`$ corrections to the beta functions. In the infrared encoding, they appear as higher-curvature terms suppressed by powers of $`\lambda_\ast^{-1}`$.
+## The same-source contract
 
-The identification $`\alpha' \sim \lambda_\ast^{-1}`$ is not a conjecture but a reflection of the shared truncation scale. The same spectral gap that suppresses noncoherent modes controls the magnitude of both types of corrections.
+<div class="center">
 
-This correspondence provides a quantitative cross-check: coefficients inferred from one encoding must match those inferred from the other, up to scheme dependence controlled by admissibility margins.
+<div class="tabularx">
 
-## Predictive failure modes
+@L0.07X L0.27@ Row & Required object & Current q79 status
+W1 & Time-oriented q79 target branch & Available
+W2 & Fu–Yau charge and Green–Schwarz/Bianchi sector & Available
+W3 & Visible curvature-level Green–Schwarz cancellation & Available at curvature tier
+W4 & Critical heterotic central-charge balance & Available universally
+W5 & q79 low-energy GR and quantum-EFT parity limit & Available at its declared tier
+W6 & Global differential gerbe and full visible-cycle consistency & Open; finite representative only
 
-The equivalence established here has a limited domain of validity. Breakdown occurs precisely when admissibility fails in the coherent sector. This may happen when:
+</div>
 
-- the spectral gap $`\lambda_\ast`$ closes,
+<div class="tabularx">
 
-- truncation error becomes uncontrolled,
+@L0.07X L0.27@ Row & Required object & Current q79 status
+W7 & All-orders-in-$`\alpha'`$ q79 target background & Open; present background is first order
+W8 & Exact q79 heterotic $`(0,2)`$ SCFT or complete beta functions & Partial; base GLSM and local/topological data exist, but the physical bundle and IR SCFT do not
+W9 & Modular-invariant q79 GSO partition function and factorization & Partial; finite torsion data exist, while analytic characters and GSO remain open
+W10 & q79-specific string-field vertices and BV master action & Open
+W11 & Tadpole, vacuum-shift, infrared, and soft-state completion & Open
+W12 & All-genus convergence or a nonperturbative definition & Open
 
-- overlap structure encoded in $`\Theta`$ becomes singular,
+</div>
 
-- nonlocal effects invalidate slab-local dynamics.
+</div>
 
-In such regimes, neither the infrared Einstein description nor the worldsheet RG fixed-point description is reliable. This predicts the simultaneous failure of GR and perturbative string methods in the same physical regimes, providing a sharp criterion for the limits of both frameworks.
+The count is five available, two partial, and five open. In the live research ledger, $`B.\mathrm{QG}.01`$ asks for all twelve rows on the same physical nonpullback visible–hidden bundle. $`B.\mathrm{ACTION}.01`$ separately asks for the selected upper differential or action whose automorphisms and descendants reproduce the lower structures. Neither blocker is closed by the theorem in this paper.
 
-## Relation to other MTT shadow bridges
+## Why a projector and a gap are not enough
 
-The present GR–string bridge fits into a broader pattern established elsewhere in the MTT corpus. In each case, apparently distinct frameworks arise as shadows of the same coherent admissibility constraint:
+A coherent projector can select a subspace, and a spectral gap can control leakage from it. Neither object alone determines a target manifold, worldsheet measure, BRST complex, anomaly coefficients, effective action, comparison map, or renormalization scheme. Likewise, proper-time representations and worldsheet Wilsonian RG are not automatically the same flow. To identify them one needs a proved intertwiner with domain and error control.
 
-- quantum mechanics and classical mechanics,
+The formerly asserted relation
+``` math
+\alpha'\sim\lambda_*^{-1}
+```
+is therefore not used as an identity. $`\alpha'`$ is the string tension scale in the sigma model; $`\lambda_*`$ may be a spectral control scale in an MTT reduction. A selected source theorem could relate them, but dimensional compatibility and matching of one asymptotic order would still not determine all coefficients.
 
-- decoherence and measurement,
+# The complete error ledger
 
-- contextuality and measurement order dependence,
+A useful bridge reports errors by origin rather than hiding them in one symbol.
 
-- asymptotic safety and UV endpoint structure.
+<div class="center">
 
-The GR–string correspondence is thus one instance of a general phenomenon: different encodings of the same admissibility condition yield different-looking but equivalent effective theories.
+| Source | Typical control | What failure means |
+|:---|:---|:---|
+| $`\alpha'`$ expansion | curvature and derivative bounds in string units | higher-derivative terms are not small |
+| String loops | powers of $`g_s=e^\Phi`$ and genus estimates | tree-level target action is insufficient |
+| Worldsheet analysis | anomaly, modular, GSO, factorization, IR SCFT | no complete perturbative string background |
+| Scheme/redefinition | explicit local map and Jacobian bounds | component beta functions cannot be compared directly |
+| Compactification | Kaluza–Klein scale, moduli, warping, sources | the lower-dimensional GR truncation is uncontrolled |
+| MTT projection | leakage, domain, spectral and truncation estimates | upper-to-lower descent is uncontrolled |
+| Diagnostic comparison | residual $`r`$ and inverse bound $`M`$ | lower zeros or small residuals do not transfer |
+| Quantum/observable match | state, BRST/BV, renormalization, uncertainty | equation-level parity is not physical equivalence |
 
-## Falsifiable implications
+</div>
 
-Because the bridge identifies a single upstairs control parameter set $`\Theta`$, it yields falsifiable constraints. In particular, if a background is admissible in one encoding but fails in the other, the correspondence is violated.
+These errors need not scale together. In particular, a small projection error says nothing by itself about string loops or modular consistency.
 
-For example, a putative string background whose beta functions vanish but whose infrared effective action exhibits uncontrolled instabilities would contradict the MTT prediction. Conversely, an infrared geometry that is stable under coarse-graining but admits no worldsheet fixed point would also contradict the bridge.
+# Interpretation and consequences
 
-These criteria provide sharper tests than the usual “string implies GR” heuristic, which lacks a clear failure mode.
+## What is genuinely unified
 
-# Conclusions
+The standard string result already unifies a set of worldsheet and target-space consistency equations within one perturbative construction. The MTT proposal is stronger in a different direction: it seeks one preprojection object from which the worldsheet and spacetime records descend. If the twelve-row contract and Theorem <a href="#thm:square" data-reference-type="ref" data-reference="thm:square">2</a>’s hypotheses are realized from one selected q79 source, then the two diagnostics would be certified views of that source. This would explain their agreement without claiming that a two-dimensional QFT and a spacetime effective theory are the same mathematical object.
 
-We have shown that General Relativity and perturbative string theory are not hierarchically related but are equivalent technical shadows of a single admissibility constraint in Modal Triplet Theory. Starting from the same coherent-sector projector, spectral gap, and bottleneck data, we constructed two dual encodings: an infrared spacetime effective theory and a two-dimensional worldsheet renormalization-group flow.
+## What is not yet unified
 
-We proved that coherent-sector admissibility is equivalent, up to controlled truncation error, to the existence of a worldsheet RG fixed point, and that both are equivalent to satisfaction of the infrared Einstein equations with suppressed higher-curvature corrections. The familiar appearance of Einstein gravity in string theory is thus reinterpreted as a shadow of coherent admissibility rather than as a string-specific miracle.
+The present framework does not derive:
 
-This result clarifies why string theory and General Relativity continue to agree where they do, why both break down in the same regimes, and why neither can be considered more fundamental than the other within the coherent universality class. More broadly, it reinforces the central lesson of Modal Triplet Theory: physically viable theories are selected by admissibility, and diverse mathematical formalisms arise as different shadows of the same underlying constraint.
+- a complete physical q79 heterotic worldsheet;
 
-Future work may extend this technical bridge to nonperturbative string sectors, holographic dualities, and emergent spacetime constructions, where admissibility is expected to impose similarly rigid constraints across seemingly disparate frameworks.
+- an exact $`(0,2)`$ IR SCFT or modular-invariant GSO sum;
+
+- the nonperturbative string theory or all-genus completion;
+
+- a selected upper MTT action;
+
+- pure four-dimensional Einstein gravity without reduction hypotheses;
+
+- equality of worldsheet and spacetime observables; or
+
+- a unique physical vacuum or branch.
+
+It also does not prove that all quantum gravity theories are shadows of one constraint. That may be a research program, but each proposed diagnostic square needs its own maps and certificate.
+
+## Falsifiability
+
+Once source maps are explicit, the bridge can fail in informative ways. The worldsheet record may violate modular invariance; the target equations may contain a component outside the range controlled by $`J`$; the inverse bound may diverge; the $`\alpha'`$ or loop expansion may cease to be small; or two purported descendants may have incompatible source hashes. Any of these failures blocks promotion. Agreement obtained only after adjusting the source to the desired lower equations is reconstruction, not prediction.
+
+# Research program
+
+The shortest rigorous path is:
+
+1.  construct the physical q79 visible and hidden holomorphic bundles in one positive HYM chamber;
+
+2.  close the global differential Green–Schwarz and gerbe data;
+
+3.  construct the heterotic $`(0,2)`$ worldsheet theory, analytic characters, GSO projection, and factorization;
+
+4.  derive its anomaly coefficients in a declared scheme;
+
+5.  derive the target effective equations from the same source and at the same order;
+
+6.  emit $`J`$, $`r`$, $`\varepsilon`$, and the inverse estimate $`M`$;
+
+7.  compare states and observables only after the equation-level square is closed; and
+
+8.  keep the all-genus or nonperturbative completion as a separate tier.
+
+This order prevents a familiar loop: proving a formal transfer theorem again while the physical source rows remain absent. The theorem is now owned here. Future progress must fill a row or improve a bound.
+
+# Conclusion
+
+General Relativity and perturbative string theory are not the same theory. The accurate mathematical relation is a controlled correspondence between worldsheet Weyl diagnostics and target-space effective equations on a shared background record, at a declared perturbative order and scheme. Pure Einstein gravity is a further low-energy corner.
+
+MTT offers a potentially deeper explanation only if one selected upper source emits both records and the comparison square. Theorem <a href="#thm:square" data-reference-type="ref" data-reference="thm:square">2</a> states exactly what that would prove and Proposition <a href="#prop:no-go" data-reference-type="ref" data-reference="prop:no-go">4</a> shows why common fixed points do not suffice. With five of twelve q79 worldsheet rows available, two partial, and five open, the bridge is a serious, well-typed program rather than a completed equivalence.
 
 <div class="thebibliography">
 
 99
 
-P. Nero, *Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255621>
+D. Friedan, “Nonlinear models in $`2+\epsilon`$ dimensions,” *Physical Review Letters* **45** (1980), 1057–1060. <https://doi.org/10.1103/PhysRevLett.45.1057>
 
-P. Nero, *Modal Triplet Theory: Foundation*, Zenodo preprint, September 2025. <https://doi.org/10.5281/zenodo.16949762>
+C. G. Callan, D. Friedan, E. J. Martinec, and M. J. Perry, “Strings in background fields,” *Nuclear Physics B* **262** (1985), 593–609. <https://doi.org/10.1016/0550-3213(85)90506-1>
 
-P. Nero, *Fixed Points I–VI: Complete Coherence Spine*, Zenodo preprints, August 2025. <https://doi.org/10.5281/zenodo.16948748>
+C. M. Hull and P. K. Townsend, “String effective actions from sigma-model conformal anomalies,” *Nuclear Physics B* **301** (1988), 197–223. <https://doi.org/10.1016/0550-3213(88)90692-5>
 
-P. Nero, *The Projection–Admissibility Principle: Structural Constraints on Effective Physical Description*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255838>
+R. R. Metsaev and A. A. Tseytlin, “Order $`\alpha'`$ (two-loop) equivalence of the string equations of motion and the sigma-model Weyl invariance conditions,” *Nuclear Physics B* **293** (1987), 385–419. <https://doi.org/10.1016/0550-3213(87)90077-0>
 
-P. Nero, *Closure and Inevitability in Modal Triplet Theory*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255510>
+P. Nero, *A Projection-First Reframing of String Theory: Conditional Encodings, Worldsheet Gates, and the q79 Boundary*, Version 2, 2026.
 
-P. Nero, *Coherence Capacity as the Fundamental Resource of Effective Physics*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18255905>
-
-P. Nero, *Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18256048>
-
-P. Nero, *Modal Triplet Theory: From MTT to Quantum Mechanics*, Zenodo preprint, September 2025. <https://doi.org/10.5281/zenodo.17074246>
-
-P. Nero, *From MTT to Quantum Field Theory*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17068816>
-
-P. Nero, *Modal Triplet Theory: From MTT to General Relativity*, Zenodo preprint, October 2025. <https://doi.org/10.5281/zenodo.16950597>
-
-P. Nero, *Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17077671>
-
-P. Nero, *Measurement as Disturbance and Stabilization in Modal Triplet Theory*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17177404>
-
-P. Nero, *Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18256408>
-
-P. Nero, *Modal Fixed Points, Bell’s Beables, and the Limits of Factorization*, Zenodo preprint, 2025. <https://doi.org/10.5281/zenodo.17076300>
-
-P. Nero, *Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory*, Zenodo preprint, August 2025. <https://doi.org/10.5281/zenodo.18208884>
-
-P. Nero, *From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation*, Zenodo preprint, January 2026. <https://doi.org/10.5281/zenodo.18254862>
+P. Nero, *Modal Triplet Theory to the Hull–Strominger System: A Conditional Fixed-Point Correspondence*, Version 2, 2026.
 
 </div>

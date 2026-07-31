@@ -3,17 +3,17 @@
   "generated_on": "2026-07-31",
   "papers": 139,
   "priority_counts": {
-    "light": 2,
+    "light": 1,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 133
+    "reviewed": 134
   },
   "missing_dimension_counts": {
     "argument_flow": 32,
-    "conclusion": 5,
+    "conclusion": 4,
     "concrete_foothold": 23,
-    "object_intuition": 86,
-    "orientation": 62,
+    "object_intuition": 85,
+    "orientation": 63,
     "result_interpretation": 7
   },
   "forbidden_boilerplate_hits": [],
@@ -3379,28 +3379,27 @@
     },
     {
       "paper_id": "why-general-relativity-and-string-theory-are-the-same-a-98920533",
-      "title": "Why General Relativity and String Theory Are the Same Admissibility Constraint A Technical Shadow\u2013Bridge Between IR Geometry and Worldsheet RG in Modal Triplet Theory",
-      "total_words": 4103,
-      "narrative_words": 3709,
+      "title": "Worldsheet and Spacetime Consistency as a Conditional Diagnostic Square: Sigma-model beta functions, target-space equations, and the MTT source contract",
+      "total_words": 2603,
+      "narrative_words": 2169,
       "formal_results": 4,
-      "proofs": 1,
-      "narrative_words_per_result": 927.2,
-      "orientation": true,
-      "object_intuition": false,
+      "proofs": 2,
+      "narrative_words_per_result": 542.2,
+      "orientation": false,
+      "object_intuition": true,
       "argument_flow": true,
       "result_interpretation": true,
       "concrete_foothold": true,
       "limitations": true,
-      "conclusion": false,
-      "coverage_dimensions": 5,
-      "audit_priority": "light",
+      "conclusion": true,
+      "coverage_dimensions": 6,
+      "audit_priority": "reviewed",
       "heuristic_priority": "light",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 2 replaces the identity of General Relativity and string theory by a typed conditional diagnostic square. It states the standard sigma-model action, coupled metric beta function, and target effective action at their proper perturbative tiers; separates pure Einstein gravity as a further restricted corner; proves exact and residual-controlled transport under an explicit comparison map and inverse estimate; proves that common fixed points alone are insufficient; withdraws the assumed proper-time/RG conjugacy and inverse-gap identification of alpha-prime; gives separate alpha-prime, loop, worldsheet, scheme, compactification, projection, comparison, and observable error rows; reproduces the authoritative five-available, two-partial, five-open q79 worldsheet contract; keeps B.QG.01 and B.ACTION.01 open; assigns the formal theorem uniquely to this paper; and the complete 9-page PDF was visually inspected.",
       "missing_dimensions": [
-        "object_intuition",
-        "conclusion"
+        "orientation"
       ]
     },
     {

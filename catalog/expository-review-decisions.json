@@ -1080,6 +1080,14 @@
       "reviewed_main_tex_sha256": "bebc579cb9395d23bc00d236638bef4596892a6ae7af1c0d0c12f512c46122a8",
       "reviewed_pdf_sha256": "8ce40e79ed573d6886c727612a0506c7f8c1c81a06f813df7c3a31f178bda9a5",
       "reviewed_source_tree_sha256": "f60e510cea66cf35e70b548068f139d3f1231689264ad841dfc8505c0165a942"
+    },
+    "why-general-relativity-and-string-theory-are-the-same-a-98920533": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 replaces the identity of General Relativity and string theory by a typed conditional diagnostic square. It states the standard sigma-model action, coupled metric beta function, and target effective action at their proper perturbative tiers; separates pure Einstein gravity as a further restricted corner; proves exact and residual-controlled transport under an explicit comparison map and inverse estimate; proves that common fixed points alone are insufficient; withdraws the assumed proper-time/RG conjugacy and inverse-gap identification of alpha-prime; gives separate alpha-prime, loop, worldsheet, scheme, compactification, projection, comparison, and observable error rows; reproduces the authoritative five-available, two-partial, five-open q79 worldsheet contract; keeps B.QG.01 and B.ACTION.01 open; assigns the formal theorem uniquely to this paper; and the complete 9-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "25b4b7e0707e660d25b4e57cc80d4d91004c23e8d2f59567bed316e5cb44574d",
+      "reviewed_pdf_sha256": "97f6bb5c56ce96d12d66eb665e295b825a4405c1549b5baca4006fe82fdaa006",
+      "reviewed_source_tree_sha256": "8c44ec93b6f80ab8715da28af296b871831a110c2b0946e399fa85a145520587"
     }
   }
 }

@@ -11,8 +11,8 @@ Canonical papers audited: **139**.
 | Priority | Papers |
 | --- | ---: |
 | moderate | 2 |
-| light | 2 |
-| reviewed | 133 |
+| light | 1 |
+| reviewed | 134 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -20,10 +20,10 @@ Canonical papers audited: **139**.
 | Dimension | Papers flagged |
 | --- | ---: |
 | argument_flow | 32 |
-| conclusion | 5 |
+| conclusion | 4 |
 | concrete_foothold | 23 |
-| object_intuition | 86 |
-| orientation | 62 |
+| object_intuition | 85 |
+| orientation | 63 |
 | result_interpretation | 7 |
 
 ## Revision Queue
@@ -33,7 +33,6 @@ Canonical papers audited: **139**.
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
-| light | light | `why-general-relativity-and-string-theory-are-the-same-a-98920533` | 4 | 927.2 | 5/7 | object_intuition, conclusion |
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
 | reviewed | critical | `fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce` | 43 | 69.9 | 7/7 | - |
 | reviewed | moderate | `wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8` | 34 | 375.2 | 7/7 | - |
@@ -136,6 +135,7 @@ Canonical papers audited: **139**.
 | reviewed | light | `modal-triplet-theory-from-mtt-to-loop-quantum-gravity-a-4ae4b130` | 4 | 495.0 | 5/7 | object_intuition, concrete_foothold |
 | reviewed | light | `modal-triplet-theory-from-mtt-to-quantum-mechanics` | 4 | 944.5 | 5/7 | orientation, object_intuition |
 | reviewed | light | `spectral-delta-peaks-and-resonances-as-survivor-basin-i-58836ad5` | 4 | 496.5 | 5/7 | object_intuition, concrete_foothold |
+| reviewed | light | `why-general-relativity-and-string-theory-are-the-same-a-98920533` | 4 | 542.2 | 6/7 | orientation |
 | reviewed | moderate | `causal-sets-as-an-effective-limit-of-modal-triplet-theory` | 3 | 379.7 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | light | `classical-constraint-deltas-and-microcanonical-shells-a-9f4bdcc1` | 3 | 549.7 | 5/7 | orientation, object_intuition |
 | reviewed | low | `modal-triplet-theory-from-mtt-to-general-relativity` | 3 | 925.7 | 7/7 | - |

@@ -1,51 +1,54 @@
 {
-  "abstract": "General Relativity and perturbative string theory are usually related by the statement that Einstein gravity emerges as the low-energy effective theory required for consistency of string propagation. This relation is typically presented as an internal result of string theory, derived from vanishing worldsheet beta functions or Weyl invariance of the sigma model. In this work we show that both General Relativity and string worldsheet consistency arise as distinct shadows of a single admissibility constraint in Modal Triplet Theory (MTT). Starting from the same upstairs coherent-sector projector, spectral gap, and admissibility data, we construct two dual encodings: an infrared spacetime effective field theory and a two-dimensional worldsheet renormalization-group flow. We prove that coherent-sector admissibility is equivalent, up to controlled truncation error governed by the spectral gap, to the existence of a worldsheet RG fixed point. In the spacetime encoding this condition yields the Einstein equations (with higher-curvature corrections), while in the worldsheet encoding it yields vanishing sigma-model beta functions. General Relativity and string theory are thus shown to be equivalent technical shadows of the same coherent fixed-point condition, rather than one being derived from the other.",
+  "abstract": "Perturbative string theory supplies a precise relation between two-dimensional Weyl consistency and target-space field equations. At leading order the metric beta function contains the Ricci tensor, but the complete statement also involves the antisymmetric tensor, dilaton, renormalization scheme, higher powers of alpha-prime, string loops, and the domain of the worldsheet theory. It is therefore inaccurate to identify General Relativity and string theory as theories, or to infer their equivalence merely because their consistency equations meet in a low-energy corner. This paper gives the correct technical bridge and states what Modal Triplet Theory (MTT) would have to add. We define a worldsheet diagnostic, a target-space Euler-Lagrange diagnostic, two source encodings, and an explicit comparison operator. A controlled diagnostic-square theorem proves exact and approximate transfer of solutions when these maps intertwine and the comparison operator has the required inverse estimate. A counterexample shows that coincident fixed points alone do not establish this bridge. The standard sigma-model result supplies a perturbative instance after field redefinitions; it does not supply an upstream MTT source. We finish with a twelve-row same-source contract and a separate error ledger. Current q79 work provides five rows, partially provides two, and leaves five open. Accordingly, the paper establishes a rigorous conditional comparison framework, not a derivation of string theory, pure Einstein gravity, or their ontological identity from MTT.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1.0",
-  "date": "January, 2026",
+  "current_version": "v2",
+  "date": "July 2026, Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261979",
-    "created": "2026-01-15T20:23:23.027144+00:00",
+    "created": "2026-07-31T10:24:13.080481+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.18261980",
+    "doi": "10.5281/zenodo.21719524",
     "files": [
       {
-        "checksum": "md5:c773cb0468ce52936455940ea286e7ad",
-        "content_url": "https://zenodo.org/api/records/18261980/files/Why_General_Relativity_and_String_Theory_Are_the_Same_Admissibility_Constraint%20(3).pdf/content",
-        "key": "Why_General_Relativity_and_String_Theory_Are_the_Same_Admissibility_Constraint (3).pdf",
-        "size": 308365
+        "checksum": "md5:4c2aa0531c0ca9d76bd543489e9845f8",
+        "content_url": "https://zenodo.org/api/records/21719524/files/main.pdf/content",
+        "key": "main.pdf",
+        "size": 327569
       }
     ],
-    "id": "18261980",
-    "match_kind": "title_or_file",
+    "id": "21719524",
+    "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
-    "publication_date": "2026-01-15",
-    "record_url": "https://zenodo.org/records/18261980",
+    "publication_date": "2026-07-31",
+    "record_url": "https://zenodo.org/records/21719524",
     "resource_type": "publication",
-    "title": "Why General Relativity and String Theory Are the Same Admissibility Constraint",
-    "updated": "2026-01-15T20:23:23.554564+00:00",
-    "version": "v1.0"
+    "title": "Worldsheet and Spacetime Consistency as a Conditional Diagnostic Square: Sigma-model beta functions, target-space equations, and the MTT source contract",
+    "updated": "2026-07-31T10:24:13.771694+00:00",
+    "version": "v2"
   },
-  "main_tex_sha256": "f7b57c5de08a276f49eee24388bfd7fed67184b929cc0cb8d38d76c7b5c09f4f",
+  "main_tex_sha256": "25b4b7e0707e660d25b4e57cc80d4d91004c23e8d2f59567bed316e5cb44574d",
   "paper_id": "why-general-relativity-and-string-theory-are-the-same-a-98920533",
-  "paper_md_sha256": "136c3bb04a7f676648ca32b53f4f19240f0ab679a230558bd72edf6c00883b73",
+  "paper_md_sha256": "2695a2f326888df3d44739c2a7741c3f70f2f7489ee89f40d526595c7b2432d7",
   "release_state": "zenodo_released",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/why-general-relativity-and-string-theory-are-the-same-a-98920533/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "3655ad4ca44b08098d57534626e5926c859ae815fe349bbf3c286fa45a454745",
+    "selected_revision": true,
+    "superseded_source_path": "11 General Relativity & Geometry/_work/Why_General_Relativity_and_String_Theory_Are_the_Same_Admissibility_Constraint"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 35035,
+      "bytes": 21856,
       "path": "main.tex",
-      "sha256": "f7b57c5de08a276f49eee24388bfd7fed67184b929cc0cb8d38d76c7b5c09f4f"
+      "sha256": "25b4b7e0707e660d25b4e57cc80d4d91004c23e8d2f59567bed316e5cb44574d"
     },
     {
       "bytes": 3784,
@@ -56,10 +59,35 @@
   "source_provenance": {
     "legacy_source_path": "11 General Relativity & Geometry/_work/Why_General_Relativity_and_String_Theory_Are_the_Same_Admissibility_Constraint"
   },
-  "source_tree_sha256": "649c06a7ba26a6403b9fc76a9a6f0bb99880a58ff2f34f3dafd4a34589f4d565",
-  "title": "Why General Relativity and String Theory Are the Same Admissibility Constraint A Technical Shadow\u2013Bridge Between IR Geometry and Worldsheet RG in Modal Triplet Theory",
+  "source_tree_sha256": "8c44ec93b6f80ab8715da28af296b871831a110c2b0946e399fa85a145520587",
+  "title": "Worldsheet and Spacetime Consistency as a Conditional Diagnostic Square: Sigma-model beta functions, target-space equations, and the MTT source contract",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261979",
+      "created": "2026-07-31T10:24:13.080481+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21719524",
+      "files": [
+        {
+          "checksum": "md5:4c2aa0531c0ca9d76bd543489e9845f8",
+          "content_url": "https://zenodo.org/api/records/21719524/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 327569
+        }
+      ],
+      "id": "21719524",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21719524",
+      "resource_type": "publication",
+      "title": "Worldsheet and Spacetime Consistency as a Conditional Diagnostic Square: Sigma-model beta functions, target-space equations, and the MTT source contract",
+      "updated": "2026-07-31T10:24:13.771694+00:00",
+      "version": "v2"
+    },
     {
       "concept_doi": "10.5281/zenodo.18261979",
       "created": "2026-01-15T20:23:23.027144+00:00",

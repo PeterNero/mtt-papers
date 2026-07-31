@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18261979",
+      "created": "2026-07-31T10:24:13.080481+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21719524",
+      "files": [
+        {
+          "checksum": "md5:4c2aa0531c0ca9d76bd543489e9845f8",
+          "content_url": "https://zenodo.org/api/records/21719524/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 327569
+        }
+      ],
+      "id": "21719524",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21719524",
+      "resource_type": "publication",
+      "title": "Worldsheet and Spacetime Consistency as a Conditional Diagnostic Square: Sigma-model beta functions, target-space equations, and the MTT source contract",
+      "updated": "2026-07-31T10:24:13.771694+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18255154",
       "created": "2026-07-31T10:07:13.401102+00:00",
       "creators": [
