@@ -16,7 +16,7 @@
     "concrete_foothold": 25,
     "object_intuition": 85,
     "orientation": 60,
-    "result_interpretation": 8
+    "result_interpretation": 7
   },
   "forbidden_boilerplate_hits": [],
   "rows": [
@@ -2887,19 +2887,19 @@
     {
       "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
       "title": "The Modal Triplet Theory Program C: A Typed Dictionary for Geometric, Bundle, and Operator Realizations",
-      "total_words": 4585,
-      "narrative_words": 3578,
+      "total_words": 4460,
+      "narrative_words": 3453,
       "formal_results": 15,
       "proofs": 9,
-      "narrative_words_per_result": 238.5,
+      "narrative_words_per_result": 230.2,
       "orientation": true,
       "object_intuition": false,
       "argument_flow": false,
-      "result_interpretation": false,
+      "result_interpretation": true,
       "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
-      "coverage_dimensions": 4,
+      "coverage_dimensions": 5,
       "audit_priority": "reviewed",
       "heuristic_priority": "major",
       "review_status": "reviewed",
@@ -2907,8 +2907,7 @@
       "review_note": "Typed realization dictionary explained through a concrete modal lane and five-step pipeline; 15-page PDF visually inspected.",
       "missing_dimensions": [
         "object_intuition",
-        "argument_flow",
-        "result_interpretation"
+        "argument_flow"
       ]
     },
     {

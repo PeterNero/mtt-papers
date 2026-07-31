@@ -1,4 +1,20 @@
-# Program C v3 Release Audit
+# Program C v4 Release Audit
+
+## v4 reproducibility delta
+
+Version 4 preserves the complete Version 3 scientific revision. It replaces
+the stale managed statement `no result rows mapped` by the exact result object
+already used in the paper:
+
+- `q79_exact_theorem` (A11), at the `DERIVED_EXACT` selected finite-branch
+  tier.
+
+Both canonical sources point to curated-results commit
+`31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The in-paper release note now
+contains only the Version 4 delta; this audit retains the earlier history.
+This is a provenance and presentation correction. It does not close the
+connection-preserving local-to-q79 intertwiner, physical HYM endpoints,
+continuum Hessian, upper action, or physical selection.
 
 ## v3 publication delta
 
@@ -17,7 +33,7 @@
 - Superseded source: version 1.0
 - Superseded source SHA-256:
   `888b00ae0a235416cb101469d5ad53030caad843ce70b84571d5b17c67f41869`
-- Selected successor: version 2
+- Selected successor: version 4
 - Controlling correction authority: `A10`
 - A10 SHA-256:
   `78be7385c3acfb484f31db7fad08a525bced4b86eb0df63c4622a772e730571e`

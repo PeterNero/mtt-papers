@@ -405,9 +405,9 @@
       "status": "reviewed",
       "reviewed_on": "2026-07-28",
       "note": "Typed realization dictionary explained through a concrete modal lane and five-step pipeline; 15-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "31842b7410ca6dfc982f6d7cf0f3fcf24ecba94b85fa886250bd4bdc1a173524",
-      "reviewed_pdf_sha256": "66015761325673e6b914fc768611c926112175e78cb75088d2d100e7cbee2d3c",
-      "reviewed_source_tree_sha256": "bbb12003eafa122ef94c3a126c26d841097b9703eaedecbef94d77b6e25275ab"
+      "reviewed_main_tex_sha256": "d180d1c4e425f46d2976b9f04f1312e8a6631b8b51ac7a5c889038b50ed51dec",
+      "reviewed_pdf_sha256": "faf9248c706980e0e6b63dcfa1d084558b1468ff2e33f35a320bcdfe274e516b",
+      "reviewed_source_tree_sha256": "67a1b310ab3960996ffa4aea7aff58b4fb50e6ccb71721bc89a53c614abcd34e"
     },
     "the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707": {
       "status": "reviewed",

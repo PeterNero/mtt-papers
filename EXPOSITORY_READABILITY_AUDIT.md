@@ -26,7 +26,7 @@ Canonical papers audited: **139**.
 | concrete_foothold | 25 |
 | object_intuition | 85 |
 | orientation | 60 |
-| result_interpretation | 8 |
+| result_interpretation | 7 |
 
 ## Revision Queue
 
@@ -51,7 +51,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `dynamics-of-coherence-capacity-transport-concentration-f2edc08a` | 15 | 181.9 | 6/7 | object_intuition |
 | reviewed | major | `fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534` | 15 | 197.8 | 6/7 | conclusion |
 | reviewed | major | `projection-induced-network-geometry-sprouting-hidden-co-6919523e` | 15 | 189.1 | 5/7 | orientation, object_intuition |
-| reviewed | major | `the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c` | 15 | 238.5 | 4/7 | object_intuition, argument_flow, result_interpretation |
+| reviewed | major | `the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c` | 15 | 230.2 | 5/7 | object_intuition, argument_flow |
 | reviewed | major | `the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707` | 15 | 189.0 | 6/7 | object_intuition |
 | reviewed | critical | `canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62` | 14 | 110.1 | 6/7 | object_intuition |
 | reviewed | major | `coherent-universality-and-the-inevitability-of-projecti-d9e28e29` | 14 | 238.4 | 4/7 | orientation, object_intuition, argument_flow |

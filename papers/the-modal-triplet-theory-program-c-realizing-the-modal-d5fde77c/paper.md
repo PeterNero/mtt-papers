@@ -26,50 +26,34 @@ abstract: |
   The resulting conclusion is deliberately typed: realizations can establish mathematical existence and compatibility, but nonuniqueness prevents physical prediction until a source law selects one realization and supplies its dynamics and observable map.
 author:
 - Peter Nero
-current_version: v3
-date: July 2026 Version 3
-generated_from_main_tex_sha256: 31842b7410ca6dfc982f6d7cf0f3fcf24ecba94b85fa886250bd4bdc1a173524
+current_version: v4
+date: July 2026 Version 4
+generated_from_main_tex_sha256: d180d1c4e425f46d2976b9f04f1312e8a6631b8b51ac7a5c889038b50ed51dec
 paper_id: the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c
 release_state: zenodo_released
-released_version: v3
+released_version: v4
 title: |
   The Modal Triplet Theory Program C:
   A Typed Dictionary for Geometric, Bundle,
   and Operator Realizations
-zenodo_doi: 10.5281/zenodo.21655387
-zenodo_record_id: 21655387
-zenodo_url: "https://zenodo.org/records/21655387"
+zenodo_doi: 10.5281/zenodo.21718498
+zenodo_record_id: 21718498
+zenodo_url: "https://zenodo.org/records/21718498"
 ---
 
-# Revision note for version 3
+# Revision note for version 4
 
 <div class="description">
 
-Version 2 of Program C.
+Version 3 of Program C.
 
-The version 2 type dictionary was correct, but its many distinctions between coordinates, bundles, operators, projectors, local strain components, and the q79 carrier were still easy to collapse when read as a theorem list.
+Version 3 already supplied the reviewed typed dictionary and explanatory workflow, but its managed reproducibility block reported that no result row was mapped although the paper uses the exact selected q=79 arithmetic packet.
 
-Version 3 adds a concrete modal-lane example, a translation workflow, and plain-language explanations of the local $`3\times3`$ decomposition and global $`1+2+3`$ carrier. It sharpens the open connection-preserving intertwiner contract without claiming that the matching ranks construct it.
+Version 4 maps the A11 q=79 theorem explicitly in both canonical sources and pins the curated repository revision. The in-paper release note now records only the current version delta; the complete revision history remains in the accompanying audit. No realization or intertwiner theorem changes.
 
-The joint-projector, compact-resolvent, local decomposition, shared-line, and nonselection statements remain at their version 2 tiers.
+The typed dictionary, joint-projector and compact-resolvent statements, local $`3\times3`$ decomposition, global $`1+2+3`$ carrier, shared-line interpretation, and nonselection statements remain at their version 3 tiers.
 
 The physical realization, action, visible-hidden HYM pair, continuum intertwiner and Hessian, Born source, and complete worldsheet remain open.
-
-</div>
-
-# Revision note for version 2
-
-<div class="description">
-
-Version 1.0 of Program C.
-
-The first version did not distinguish coordinate factors, bundles, line bundles, operators, and projectors. It also inferred the absence of global charts, purely discrete spectra, one-dimensional carriers, worldsheets, and dualities from premises that do not imply those conclusions.
-
-Version 2 supplies the authoritative type dictionary, fixes the canonical physical product $`M_{10}=Y_4\times X_6`$, proves the valid conditional geometric and spectral statements, adds counterexamples to the withdrawn claims, and connects the local spatial-triplet representation to the selected q=79 carrier only through an explicitly open intertwiner contract.
-
-Geometry, bundles, and operators remain useful realization languages. Different mathematical realizations can instantiate the same abstract constraint pattern, and their nonuniqueness is an important fact.
-
-This paper does not select a physical realization, derive an action or Born rule, construct the physical visible-hidden HYM pair, execute the continuum q=79 Hessian, or complete a worldsheet theory.
 
 </div>
 
@@ -662,6 +646,8 @@ J.-X. Fu and S.-T. Yau, The theory of superstring with flux on non-Kahler mani
 
 </div>
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
-The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+The finite arithmetic claim used by this paper is archived in the [curated results repository at commit `31247ebb5c22`](https://github.com/PeterNero/mtt-results-repro/tree/31247ebb5c22f3fbb5443024365433c6ee0bff4a). The mapped authority/result identifier is `A11/q79_exact_theorem`. It is exact on the selected finite arithmetic and charge branch. Matching its rank profile to the local $`1+2+3`$ decomposition does not construct the open connection-preserving intertwiner, physical HYM endpoints, continuum Hessian, or upper action.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

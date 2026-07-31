@@ -26,7 +26,7 @@
 A Typed Dictionary for Geometric, Bundle,\\
 and Operator Realizations}
 \author{Peter Nero}
-\date{July 2026\\Version 3}
+\date{July 2026\\Version 4}
 
 \begin{document}
 
@@ -80,65 +80,39 @@ prediction until a source law selects one realization and supplies its
 dynamics and observable map.
 \end{abstract}
 
-\section*{Revision note for version 3}
-\addcontentsline{toc}{section}{Revision note for version 3}
+\section*{Revision note for version 4}
+\addcontentsline{toc}{section}{Revision note for version 4}
 
 \begin{description}[leftmargin=2.5cm,style=nextline]
 \item[Supersedes.]
-Version~2 of Program C.
+Version~3 of Program C.
 
 \item[Reason.]
-The version~2 type dictionary was correct, but its many distinctions between
-coordinates, bundles, operators, projectors, local strain components, and
-the q79 carrier were still easy to collapse when read as a theorem list.
+Version~3 already supplied the reviewed typed dictionary and explanatory
+workflow, but its managed reproducibility block reported that no result row
+was mapped although the paper uses the exact selected q=79 arithmetic packet.
 
 \item[Resolution.]
-Version~3 adds a concrete modal-lane example, a translation workflow, and
-plain-language explanations of the local $3\times3$ decomposition and global
-$1+2+3$ carrier. It sharpens the open connection-preserving intertwiner
-contract without claiming that the matching ranks construct it.
+Version~4 maps the A11 q=79 theorem explicitly in both canonical sources and
+pins the curated repository revision.  The in-paper release note now records
+only the current version delta; the complete revision history remains in the
+accompanying audit.  No realization or intertwiner theorem changes.
 
 \item[Retained content.]
-The joint-projector, compact-resolvent, local decomposition, shared-line, and
-nonselection statements remain at their version~2 tiers.
+The typed dictionary, joint-projector and compact-resolvent statements, local
+$3\times3$ decomposition, global $1+2+3$ carrier, shared-line interpretation,
+and nonselection statements remain at their version~3 tiers.
 
 \item[Open boundary.]
 The physical realization, action, visible-hidden HYM pair, continuum
 intertwiner and Hessian, Born source, and complete worldsheet remain open.
 \end{description}
 
-\section*{Revision note for version 2}
-\addcontentsline{toc}{section}{Revision note for version 2}
-
-\begin{description}[leftmargin=2.5cm,style=nextline]
-\item[Supersedes.]
-Version~1.0 of Program C.
-
-\item[Reason.]
-The first version did not distinguish coordinate factors, bundles, line
-bundles, operators, and projectors.  It also inferred the absence of global
-charts, purely discrete spectra, one-dimensional carriers, worldsheets, and
-dualities from premises that do not imply those conclusions.
-
-\item[Resolution.]
-Version~2 supplies the authoritative type dictionary, fixes the canonical
-physical product $M_{10}=Y_4\times X_6$, proves the valid conditional
-geometric and spectral statements, adds counterexamples to the withdrawn
-claims, and connects the local spatial-triplet representation to the selected
-q=79 carrier only through an explicitly open intertwiner contract.
-
-\item[Retained content.]
-Geometry, bundles, and operators remain useful realization languages.
-Different mathematical realizations can instantiate the same abstract
-constraint pattern, and their nonuniqueness is an important fact.
-
-\item[Open boundary.]
-This paper does not select a physical realization, derive an action or Born
-rule, construct the physical visible-hidden HYM pair, execute the continuum
-q=79 Hessian, or complete a worldsheet theory.
-\end{description}
-
+\begingroup
+\scriptsize
+\setlength{\parskip}{0pt}
 \tableofcontents
+\endgroup
 \newpage
 
 \section{How to Use Program C}
@@ -996,7 +970,14 @@ the complex Monge--Ampere equation,
 
 % BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
 \section*{Computational Evidence and Reproducibility}
-The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+The finite arithmetic claim used by this paper is archived in the
+\href{https://github.com/PeterNero/mtt-results-repro/tree/31247ebb5c22f3fbb5443024365433c6ee0bff4a}
+{curated results repository at commit \texttt{31247ebb5c22}}.
+The mapped authority/result identifier is
+\nolinkurl{A11/q79_exact_theorem}.  It is exact on the selected finite
+arithmetic and charge branch.  Matching its rank profile to the local
+$1+2+3$ decomposition does not construct the open connection-preserving
+intertwiner, physical HYM endpoints, continuum Hessian, or upper action.
 % END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \end{document}

@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18355142",
+      "created": "2026-07-31T09:23:12.265009+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21718498",
+      "files": [
+        {
+          "checksum": "md5:6c7e65715b3e424a0457db42f8cd1a79",
+          "content_url": "https://zenodo.org/api/records/21718498/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 447707
+        }
+      ],
+      "id": "21718498",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21718498",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program C: A Typed Dictionary for Geometric, Bundle, and Operator Realizations",
+      "updated": "2026-07-31T09:23:12.575499+00:00",
+      "version": "v4"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18355129",
       "created": "2026-07-31T09:14:02.121131+00:00",
       "creators": [
