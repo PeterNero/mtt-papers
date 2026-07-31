@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18261959",
+      "created": "2026-07-31T08:14:52.026623+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21717186",
+      "files": [
+        {
+          "checksum": "md5:a76946d708ad817c79cb41aed4d4f46e",
+          "content_url": "https://zenodo.org/api/records/21717186/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 303213
+        }
+      ],
+      "id": "21717186",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21717186",
+      "resource_type": "publication",
+      "title": "ETH and Many-Body Localization Through an Operational Basin Diagnostic A Model-Dependent Bridge with Exact Coarse-Dynamics Identities",
+      "updated": "2026-07-31T08:14:52.515098+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18256381",
       "created": "2026-07-31T07:56:55.314960+00:00",
       "creators": [

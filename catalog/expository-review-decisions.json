@@ -1040,6 +1040,14 @@
       "reviewed_main_tex_sha256": "b61f3a68e7547f87ac157c4308a444c0c5066bd62d7f9cf364db861bbccfc3a3",
       "reviewed_pdf_sha256": "778646bfc0830785ee6d4a87b7080a01932d47127a8cdd3e4bd3d2b62f287553",
       "reviewed_source_tree_sha256": "b8f5e3721d37a2f122508a773e6f0485f384f6a7d0948efefcb704ced9a9ff49"
+    },
+    "eth-and-many-body-localization-as-a-single-shadow-bridg-236606dd": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 replaces universal ETH/MBL/monitored-transition basin equivalences by a model-dependent operational bridge. It fixes a finite random-field XXZ family and a complete comparison capsule; distinguishes eigenstate, level-statistics, memory, and entanglement diagnostics; proves the exact reduced-semigroup defect, unitary trace-distance isometry, a sufficient effective-contraction criterion, the exact diagonal-bias plus temporal-fluctuation decomposition, and a quasi-LIOM memory bound; proves that finite data do not select a universal knee; supplies finite-size and uncertainty requirements; separates the MTT Hessian, Hamiltonian, channel, and mobility gaps; states a conditional diagnostic-transport theorem; preserves the selected MTT source-and-intertwiner construction as open; and the complete 10-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "0e87cda0c6cb602bde35a6107a77382512562d22b6af77baec4b6f290c15de0a",
+      "reviewed_pdf_sha256": "dd97a1e47039c9ad8d89b6bcc02753834c6efe1e9856d72c70d4684bf3908ff1",
+      "reviewed_source_tree_sha256": "eeb1e778a2d65a82fae4bb0f98027de712e706ef67dfbbf8af09afeee59f3d9b"
     }
   }
 }

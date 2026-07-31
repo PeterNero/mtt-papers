@@ -3,20 +3,20 @@
   "generated_on": "2026-07-31",
   "papers": 139,
   "priority_counts": {
-    "critical": 3,
+    "critical": 2,
     "light": 2,
-    "major": 2,
+    "major": 3,
     "moderate": 2,
     "reference_ready": 2,
     "reviewed": 128
   },
   "missing_dimension_counts": {
-    "argument_flow": 33,
-    "conclusion": 8,
-    "concrete_foothold": 27,
+    "argument_flow": 32,
+    "conclusion": 7,
+    "concrete_foothold": 26,
     "object_intuition": 85,
     "orientation": 60,
-    "result_interpretation": 9
+    "result_interpretation": 8
   },
   "forbidden_boilerplate_hits": [],
   "rows": [
@@ -985,31 +985,27 @@
     },
     {
       "paper_id": "eth-and-many-body-localization-as-a-single-shadow-bridg-236606dd",
-      "title": "ETH and Many\u2013Body Localization as a Single Shadow\u2013Bridge Problem A rigorous projection\u2013based basin framework unifying ETH, MBL, and monitored transitions",
-      "total_words": 2585,
-      "narrative_words": 1237,
-      "formal_results": 27,
-      "proofs": 8,
-      "narrative_words_per_result": 45.8,
+      "title": "ETH and Many-Body Localization Through an Operational Basin Diagnostic A Model-Dependent Bridge with Exact Coarse-Dynamics Identities",
+      "total_words": 3299,
+      "narrative_words": 2450,
+      "formal_results": 11,
+      "proofs": 7,
+      "narrative_words_per_result": 222.7,
       "orientation": true,
       "object_intuition": false,
-      "argument_flow": false,
-      "result_interpretation": false,
-      "concrete_foothold": false,
+      "argument_flow": true,
+      "result_interpretation": true,
+      "concrete_foothold": true,
       "limitations": true,
-      "conclusion": false,
-      "coverage_dimensions": 2,
-      "audit_priority": "critical",
-      "heuristic_priority": "critical",
+      "conclusion": true,
+      "coverage_dimensions": 6,
+      "audit_priority": "major",
+      "heuristic_priority": "major",
       "review_status": "",
       "reviewed_on": "",
       "review_note": "",
       "missing_dimensions": [
-        "object_intuition",
-        "argument_flow",
-        "result_interpretation",
-        "concrete_foothold",
-        "conclusion"
+        "object_intuition"
       ]
     },
     {
