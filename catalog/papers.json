@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
-    "zenodo_records": 268,
-    "zenodo_records_matched": 268,
+    "zenodo_records": 269,
+    "zenodo_records_matched": 269,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -7230,54 +7230,81 @@
       ]
     },
     {
-      "abstract": "Measurement-induced phase transitions (MIPTs) in monitored many-body systems and collapse-like irreversibility in measurement contexts are typically treated as distinct phenomena. We show that they arise as two effective 4D shadows of the same reduced-dynamical mechanism: noninvertible projection onto an admissible coherent sector with basin stabilization. We formulate a general projected evolution map for reduced states, define admissible basins via contractivity margins, and prove that both MIPTs and collapse thresholds correspond to the same loss of contractivity at basin boundaries. We then establish a finite-strength nonanalytic crossover (knee) theorem via a local Ornstein\u2013Uhlenbeck/Kramers reduction near basin boundaries, and prove protocol dependence and Zeno/anti-Zeno structure as unavoidable consequences of noncommutativity between probing and projection. Finally, we show that linear time-homogeneous measurement-only or decoherence-only models cannot reproduce the combined phenomena (knees, protocol dependence, and Zeno/anti-Zeno coexistence) without introducing state-dependent stabilization equivalent to basin dynamics. The results are slab-local and admissibility-conditioned: they apply on bounded-geometry time slabs where controlled truncation and positive stability margins hold. This provides a unifying reduced-dynamical bridge that aligns with, and contributes to, ongoing experimental and theoretical work on monitored circuits, continuous measurement, and irreversibility.",
+      "abstract": "This paper replaces a universal identification of measurement-induced phase transitions, collapse thresholds, basin loss, and Zeno or anti-Zeno behavior by a typed, model-dependent framework. A hybrid monitored circuit is specified by its Hilbert space, unitary layers, measurement instrument, record law, conditioned trajectories, and averaged channel. The trajectory-averaged subsystem entropy is proved to differ from the entropy of the averaged state by a nonnegative Holevo quantity; consequently, the averaged channel does not retain the trajectory data that define the entanglement transition. Basin margins are retained as an effective model class only after a metric, boundary, generator, initial law, and stopping rule are fixed. For a stable Ornstein\u2013Uhlenbeck coordinate with an absorbing boundary, we derive the exact mean first-passage integral and a basin-local contraction bound. The result is smooth in finite positive parameters and supplies no universal logistic knee. For a two-level system repeatedly projected at intervals of length tau, we derive the exact survival probability and its Zeno limit. Anti-Zeno enhancement is not universal and requires a specified reservoir or protocol. Measurement remains an ordinary physical interaction; outcome completion and the selection of one record are separate from an ensemble entanglement transition. The Modal Triplet Theory interpretation is conditional on a same-source map that emits the instrument, record weights, effective basin coordinate, and comparison errors.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "January, 2026",
+      "current_version": "v2",
+      "date": "Version 2, July 2026",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18261631",
-        "created": "2026-01-15T19:38:23.246393+00:00",
+        "created": "2026-07-31T08:25:21.927657+00:00",
         "creators": [
           "Nero, Peter"
         ],
-        "doi": "10.5281/zenodo.18261632",
+        "doi": "10.5281/zenodo.21717359",
         "files": [
           {
-            "checksum": "md5:3106c63d5507570d49114e3273ad08d0",
-            "content_url": "https://zenodo.org/api/records/18261632/files/Measurement_Induced_Phase_Transitions_as_a_Shadow_of_Coherence_Basin_Dynamics%20(2).pdf/content",
-            "key": "Measurement_Induced_Phase_Transitions_as_a_Shadow_of_Coherence_Basin_Dynamics (2).pdf",
-            "size": 325086
+            "checksum": "md5:fcdf34908dcc637f0b0f46364cd42637",
+            "content_url": "https://zenodo.org/api/records/21717359/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 319231
           }
         ],
-        "id": "18261632",
-        "match_kind": "title_or_file",
+        "id": "21717359",
+        "match_kind": "published_draft_reconciliation",
         "match_score": 1.0,
-        "publication_date": "2026-01-15",
-        "record_url": "https://zenodo.org/records/18261632",
+        "publication_date": "2026-07-31",
+        "record_url": "https://zenodo.org/records/21717359",
         "resource_type": "publication",
-        "title": "Measurement-Induced Phase Transitions in Modal Triplet Theory",
-        "updated": "2026-01-15T19:38:23.663991+00:00",
-        "version": "v1.0"
+        "title": "Measurement-Induced Entanglement Transitions and Basin Diagnostics Instruments, First Passage, and Protocol Limits",
+        "updated": "2026-07-31T08:25:22.372037+00:00",
+        "version": "v2"
       },
-      "main_tex_sha256": "43e4db0108d380c235d57caae1ae9a111f8c7137e931c3560809ac7c6f54ee18",
+      "main_tex_sha256": "86b26c459c3a25de7fdcb999a77eada36dc6ac8ac716e03395dc9f1588ca984d",
       "paper_id": "measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee",
-      "paper_md_sha256": "d984e02d316c8d87e50508859d128c83b507c7cbf55879759b623244355a672a",
+      "paper_md_sha256": "6444abf0f333cb5975c28267f695ea9d613523da8ad8a2913bc72bb66ed69ee2",
       "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "dce9e5f21450d00cf4a3989ce6897e88c78cef4c6655b027a75c01429b9babab",
+        "selected_revision": true
       },
       "source_provenance": {
         "legacy_source_path": "8 Measurement, Selection & Computation/_work/Measurement_Induced_Phase_Transitions_as_a_Shadow_of_Coherence_Basin_Dynamics"
       },
-      "source_tree_sha256": "de49f0ad6fbd39e9529095fee1a6b2525cccaa5e0aa4614a3980c15b1cbe2d8c",
-      "title": "Measurement-Induced Phase Transitions as a Shadow of Coherence Basin Dynamics A projection-induced bridge between monitored-circuit transitions and collapse thresholds",
+      "source_tree_sha256": "71e5edb77ba1c2a9374fdfd0c6120f8e4e2752350af9eb4757c3a9146a490b8a",
+      "title": "Measurement-Induced Entanglement Transitions and Basin Diagnostics Instruments, First Passage, and Protocol Limits",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18261631",
+          "created": "2026-07-31T08:25:21.927657+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21717359",
+          "files": [
+            {
+              "checksum": "md5:fcdf34908dcc637f0b0f46364cd42637",
+              "content_url": "https://zenodo.org/api/records/21717359/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 319231
+            }
+          ],
+          "id": "21717359",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-31",
+          "record_url": "https://zenodo.org/records/21717359",
+          "resource_type": "publication",
+          "title": "Measurement-Induced Entanglement Transitions and Basin Diagnostics Instruments, First Passage, and Protocol Limits",
+          "updated": "2026-07-31T08:25:22.372037+00:00",
+          "version": "v2"
+        },
         {
           "concept_doi": "10.5281/zenodo.18261631",
           "created": "2026-01-15T19:38:23.246393+00:00",

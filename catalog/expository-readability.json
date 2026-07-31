@@ -3,17 +3,17 @@
   "generated_on": "2026-07-31",
   "papers": 139,
   "priority_counts": {
-    "critical": 2,
+    "critical": 1,
     "light": 2,
     "major": 3,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 128
+    "reviewed": 129
   },
   "missing_dimension_counts": {
-    "argument_flow": 32,
-    "conclusion": 7,
-    "concrete_foothold": 26,
+    "argument_flow": 31,
+    "conclusion": 6,
+    "concrete_foothold": 25,
     "object_intuition": 85,
     "orientation": 60,
     "result_interpretation": 8
@@ -999,11 +999,11 @@
       "limitations": true,
       "conclusion": true,
       "coverage_dimensions": 6,
-      "audit_priority": "major",
+      "audit_priority": "reviewed",
       "heuristic_priority": "major",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 2 replaces universal ETH/MBL/monitored-transition basin equivalences by a model-dependent operational bridge. It fixes a finite random-field XXZ family and a complete comparison capsule; distinguishes eigenstate, level-statistics, memory, and entanglement diagnostics; proves the exact reduced-semigroup defect, unitary trace-distance isometry, a sufficient effective-contraction criterion, the exact diagonal-bias plus temporal-fluctuation decomposition, and a quasi-LIOM memory bound; proves that finite data do not select a universal knee; supplies finite-size and uncertainty requirements; separates the MTT Hessian, Hamiltonian, channel, and mobility gaps; states a conditional diagnostic-transport theorem; preserves the selected MTT source-and-intertwiner construction as open; and the complete 10-page PDF was visually inspected.",
       "missing_dimensions": [
         "object_intuition"
       ]
@@ -1600,30 +1600,27 @@
     },
     {
       "paper_id": "measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee",
-      "title": "Measurement-Induced Phase Transitions as a Shadow of Coherence Basin Dynamics A projection-induced bridge between monitored-circuit transitions and collapse thresholds",
-      "total_words": 3485,
-      "narrative_words": 2100,
-      "formal_results": 17,
-      "proofs": 6,
-      "narrative_words_per_result": 123.5,
+      "title": "Measurement-Induced Entanglement Transitions and Basin Diagnostics Instruments, First Passage, and Protocol Limits",
+      "total_words": 2721,
+      "narrative_words": 1966,
+      "formal_results": 10,
+      "proofs": 7,
+      "narrative_words_per_result": 196.6,
       "orientation": true,
       "object_intuition": false,
-      "argument_flow": false,
+      "argument_flow": true,
       "result_interpretation": true,
-      "concrete_foothold": false,
+      "concrete_foothold": true,
       "limitations": true,
-      "conclusion": false,
-      "coverage_dimensions": 3,
-      "audit_priority": "critical",
-      "heuristic_priority": "critical",
+      "conclusion": true,
+      "coverage_dimensions": 6,
+      "audit_priority": "major",
+      "heuristic_priority": "major",
       "review_status": "",
       "reviewed_on": "",
       "review_note": "",
       "missing_dimensions": [
-        "object_intuition",
-        "argument_flow",
-        "concrete_foothold",
-        "conclusion"
+        "object_intuition"
       ]
     },
     {

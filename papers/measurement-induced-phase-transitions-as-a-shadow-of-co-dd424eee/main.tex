@@ -1,547 +1,543 @@
-% !TEX program = pdflatex
 \documentclass[11pt]{article}
-\usepackage{series} % uses series.sty
-% ---------- Encoding / Fonts ----------
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{microtype}
+\usepackage{series}
+\usepackage{booktabs}
+\usepackage{array}
 
-% ---------- Layout ----------
-\usepackage{geometry}
-\geometry{margin=1in}
-
-% ---------- REQUIRED by user ----------
-
-
-% ---------- Math / Theorems ----------
-\usepackage{amsmath,amssymb,amsthm,mathtools}
-
-
-
-% ---------- Lists ----------
-\usepackage{enumitem}
-
-% ============================================================
-% Safe macros (no physics package)
-% ============================================================
-
-% Operators
-
-\DeclareMathOperator{\Dom}{Dom}
-\DeclareMathOperator{\spec}{spec}
-\DeclareMathOperator{\Tr}{Tr}
-\newcommand{\normop}[1]{\left\lVert #1 \right\rVert}
-
-% Bra-ket (self-defined)
-\newcommand{\ket}[1]{\left|#1\right\rangle}
-\newcommand{\bra}[1]{\left\langle#1\right|}
-\newcommand{\ketbra}[2]{\ket{#1}\!\bra{#2}}
-
-% Commutators
-\newcommand{\comm}[2]{\left[#1,#2\right]}
-\newcommand{\dcomm}[3]{\left[#1,\left[#2,#3\right]\right]}
-
-% Differentials
-\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
-\newcommand{\od}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
-
-% ============================================================
-% Theorem environments
-% ============================================================
-\theoremstyle{plain}
-
-\theoremstyle{definition}
-
-\theoremstyle{remark}
-
-% ============================================================
-% Notation
-% ============================================================
-\newcommand{\Hten}{\mathcal H_{10}}
-\newcommand{\Hfour}{\mathcal H_{4}}
-\newcommand{\Hcoh}{\mathcal H_{\mathrm{coh}}}
-\newcommand{\Hnc}{\mathcal H_{\mathrm{nc}}}
-\newcommand{\PiC}{\Pi}
-\newcommand{\Qop}{Q}
-
-% ============================================================
-% Title
-% ============================================================
-\title{\textbf{Measurement-Induced Phase Transitions as a Shadow of Coherence Basin Dynamics}\\
-\large A projection-induced bridge between monitored-circuit transitions and collapse thresholds}
+\title{\textbf{Measurement-Induced Entanglement Transitions and Basin Diagnostics}\\
+\large Instruments, First Passage, and Protocol Limits}
 \author{Peter Nero}
-\date{January, 2026}
+\date{Version 2, July 2026}
+
+\hypersetup{
+  pdftitle={Measurement-Induced Entanglement Transitions and Basin Diagnostics},
+  pdfauthor={Peter Nero}
+}
+
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\E}{\mathbb E}
+\newcommand{\Dens}{\mathcal D}
+\newcommand{\Inst}{\mathfrak I}
+\newcommand{\Chan}{\mathcal N}
+\newcommand{\Rec}{\mathcal R}
+\newcommand{\Hilb}{\mathcal H}
+\newcommand{\id}{\mathbf 1}
+\newcommand{\Wone}{W_1}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Measurement-induced phase transitions (MIPTs) in monitored many-body systems and collapse-like irreversibility in measurement contexts are typically treated as distinct phenomena. We show that they arise as two effective 4D shadows of the same reduced-dynamical mechanism: noninvertible projection onto an admissible coherent sector with basin stabilization. We formulate a general projected evolution map for reduced states, define admissible basins via contractivity margins, and prove that both MIPTs and collapse thresholds correspond to the same loss of contractivity at basin boundaries. We then establish a finite-strength nonanalytic crossover (``knee'') theorem via a local Ornstein--Uhlenbeck/Kramers reduction near basin boundaries, and prove protocol dependence and Zeno/anti-Zeno structure as unavoidable consequences of noncommutativity between probing and projection. Finally, we show that linear time-homogeneous measurement-only or decoherence-only models cannot reproduce the combined phenomena (knees, protocol dependence, and Zeno/anti-Zeno coexistence) without introducing state-dependent stabilization equivalent to basin dynamics. The results are slab-local and admissibility-conditioned: they apply on bounded-geometry time slabs where controlled truncation and positive stability margins hold. This provides a unifying reduced-dynamical bridge that aligns with, and contributes to, ongoing experimental and theoretical work on monitored circuits, continuous measurement, and irreversibility.
+This paper replaces a universal identification of measurement-induced
+phase transitions, collapse thresholds, basin loss, and Zeno or
+anti-Zeno behavior by a typed, model-dependent framework.  A hybrid
+monitored circuit is specified by its Hilbert space, unitary layers,
+measurement instrument, record law, conditioned trajectories, and
+averaged channel.  The trajectory-averaged subsystem entropy is proved
+to differ from the entropy of the averaged state by a nonnegative Holevo
+quantity; consequently, the averaged channel does not retain the
+trajectory data that define the entanglement transition.  Basin margins
+are retained as an effective model class only after a metric, boundary,
+generator, initial law, and stopping rule are fixed.  For a stable
+Ornstein--Uhlenbeck coordinate with an absorbing boundary, we derive the
+exact mean first-passage integral and a basin-local contraction bound.
+The result is smooth in finite positive parameters and supplies no
+universal logistic knee.  For a two-level system repeatedly projected at
+intervals of length tau, we derive the exact survival probability and
+its Zeno limit.  Anti-Zeno enhancement is not universal and requires a
+specified reservoir or protocol.  Measurement remains an ordinary
+physical interaction; outcome completion and the selection of one
+record are separate from an ensemble entanglement transition.  The Modal
+Triplet Theory interpretation is conditional on a same-source map that
+emits the instrument, record weights, effective basin coordinate, and
+comparison errors.
 \end{abstract}
 
-\tableofcontents
+\section*{Version 2 Revision Note}
 
-% ============================================================
+\begin{description}
+\item[Supersedes.] Version 1, \emph{Measurement-Induced Phase
+Transitions as a Shadow of Coherence Basin Dynamics}.
+\item[Reason.] The earlier paper identified several inequivalent
+phenomena by definition and asserted universal finite-strength knees and
+Zeno/anti-Zeno crossovers without fixing an instrument, reduced
+generator, boundary geometry, reservoir, or first-passage problem.
+\item[Resolution.] Version 2 declares a hybrid monitored-circuit
+instrument, separates conditioned trajectories from the averaged
+channel, derives an exact first-passage model and an exact two-level
+Zeno law, and replaces universal thresholds by finite-size scaling and
+protocol-specific tests.
+\item[Retained content.] Basin-margin language is retained as one
+possible effective description of record dynamics when its state
+coordinate, metric, generator, boundary, and stopping rule are explicit.
+\item[Open boundary.] MTT has not yet selected the monitored-circuit
+instrument, its record probabilities for arbitrary apparatus contexts,
+the effective first-passage coefficients, or a thermodynamic critical
+point from one accepted upper source.
+\end{description}
+
 \section{Introduction}
-% ============================================================
 
-Two active research programs have developed largely independently:
-(i) measurement-induced phase transitions (MIPTs) in monitored many-body and circuit dynamics, diagnosed by changes in entanglement scaling as measurement rate is varied; and
-(ii) collapse-like irreversibility in measurement contexts, diagnosed by loss of reversibility, sharp threshold behavior, and stabilization into definite outcomes under monitoring.
+Measurement-induced entanglement transitions occur in quantum dynamics
+that combines entangling evolution with local monitoring.  In a
+trajectory description, weak monitoring can permit volume-law
+entanglement, while sufficiently strong monitoring can support an
+area-law regime \cite{skinner2019,li2018}.  Related purification
+transitions diagnose how rapidly a monitored system loses dependence on
+an initially mixed state \cite{gullans2020}.  These are ensemble and
+thermodynamic statements about conditioned quantum trajectories.
 
-Despite shared qualitative features---finite-strength transitions, protocol dependence, and Zeno/anti-Zeno effects---there is no generally accepted reduced-dynamical mechanism that unifies these phenomena without introducing model-specific assumptions. This paper provides such a mechanism: both MIPTs and collapse thresholds arise as shadows of a single projection-induced basin transition in reduced state space.
+They are not automatically statements about a single run ``collapsing,''
+about an averaged density operator, or about a classical particle
+crossing a basin boundary.  The distinctions matter:
+\begin{enumerate}
+\item a quantum instrument gives record probabilities and conditional
+post-measurement states;
+\item averaging over records gives a completely positive
+trace-preserving channel;
+\item a trajectory entanglement statistic is nonlinear in the
+conditional state; and
+\item selecting or observing one record is a physical event whose
+probability law is an input to, or a theorem about, the instrument.
+\end{enumerate}
 
-Our approach is strictly reduced-dynamical:
-no interpretational postulates are invoked. The key structural ingredient is a noninvertible projection onto observable degrees of freedom together with stabilization dynamics that yields admissible basins. Within this framework we identify a common transition mechanism, prove universal knee behavior, and derive protocol dependence and Zeno/anti-Zeno structure.
+The earlier version of this paper compressed these layers into one
+projection-induced basin transition.  That move obscured the actual
+mathematics and produced claims that were stronger than their
+assumptions.  The revised paper asks a more precise question: which
+parts of basin language can be derived for a declared reduced model, and
+what additional map would be required for that model to explain a
+measurement-induced entanglement transition?
 
-% ============================================================
-\section{Minimal Framework: Projected Dynamics with Admissible Basins}
-% ============================================================
+\section{Claim tier and ownership}
 
-\subsection{Underlying and reduced spaces}
+The exact results below are finite-dimensional or one-dimensional
+stochastic statements.  We prove:
+\begin{enumerate}
+\item the instrument normalization and trajectory/ensemble distinction;
+\item an exact entropy identity showing what is lost by record
+averaging;
+\item a basin-local contraction estimate and exact mean first-passage
+formula for a declared Ornstein--Uhlenbeck model;
+\item smoothness rather than a universal knee for that finite model; and
+\item an exact repeated-projection survival law and Zeno limit.
+\end{enumerate}
 
-\begin{definition}[Extended configuration space]
-Let \(\mathcal{H}_{\mathrm{ext}}\) be a (possibly very large) Hilbert space supporting an ``upstairs'' description of dynamics. In applications this may be the Hilbert space of a system plus auxiliary degrees of freedom (environment, apparatus, discarded modes), or a higher-dimensional configuration space from which 4D observables are extracted.
-\end{definition}
+We do not prove the existence or universality class of a thermodynamic
+MIPT for arbitrary circuits.  We do not derive an anti-Zeno regime, an
+objective single-history law, or the Born rule for every apparatus
+context.  The exact reduced-semigroup defect for evolve--coarse-grain
+maps belongs to the companion ETH/MBL paper and is not duplicated here
+\cite{nero_eth_mbl}.  Standard monitored-circuit and replica results are
+imported from their primary sources
+\cite{skinner2019,li2018,bao2020,gullans2020}.
 
-\begin{definition}[Reduced observable Hilbert space]
-Let \(\Hfour\) be the Hilbert space supporting the reduced (observable) description, with reduced density operators \(\rho\) acting on \(\Hfour\).
-\end{definition}
+\section{A typed monitored-circuit model}
 
-\subsection{Noninvertible projection and reduced map}
+\subsection{Circuit and instrument}
 
-\begin{assumption}[Noninvertible projection]\label{ass:projection}
-There exists a bounded linear map \(P:\mathcal{H}_{\mathrm{ext}}\to \Hfour\) that is generally many-to-one. We assume \(P\) extends to density operators by the natural pushforward \(\rho \mapsto P \rho P^\dagger\) on the controlled domain.
-\end{assumption}
-
-\begin{assumption}[Well-posed microscopic evolution]\label{ass:Phi}
-For each protocol strength parameter \(p\) and time step \(\Delta t>0\), there exists a well-posed microscopic evolution map \(\Phi^{(p)}_{\Delta t}\) on density operators on \(\mathcal{H}_{\mathrm{ext}}\), such that \(\Phi^{(p)}_{\Delta t}\) depends continuously on \(p\) in the operator topology on the slab of interest.
-\end{assumption}
-
-\begin{definition}[Protocol-cycle reduced map]\label{def:M}
-For protocol parameters \((p,\Delta t)\), define the reduced protocol map
-\begin{equation}\label{eq:Mdef}
-\mathcal{M}_{p,\Delta t}(\rho)
-:=
-P\,\Phi^{(p)}_{\Delta t}\!\big(P^\dagger \rho P\big)\,P^\dagger,
+Let $\Hilb_L=(\bbC^q)^{\otimes L}$.  A depth-$T$ hybrid
+circuit consists of brickwork unitary layers $U_t$ and local
+measurements.  At each eligible site and layer, a Bernoulli choice with
+parameter $p$ either applies no measurement or one of the projectors
+$\{P_a\}_{a=1}^q$, where
+\[
+ P_aP_b=\delta_{ab}P_a,\qquad \sum_aP_a=\id .
+\]
+The complete record $r\in\Rec_{L,T}$ contains both the measurement
+locations and their outcomes.  It determines a Kraus operator $K_r(p)$.
+The Bernoulli weights can be absorbed into the Kraus operators so that
+\begin{equation}\label{eq:complete}
+ \sum_{r\in\Rec_{L,T}}K_r(p)^\dagger K_r(p)=\id .
 \end{equation}
-whenever \(P^\dagger \rho P\) lies in the domain of \(\Phi^{(p)}_{\Delta t}\).
+
+\begin{definition}[Trajectory instrument]\label{def:instrument}
+For an initial state $\rho_0$, the record probability and conditioned
+state are
+\begin{equation}\label{eq:trajectory}
+ \pi_r=\Tr[K_r\rho_0K_r^\dagger],\qquad
+ \rho_r=\frac{K_r\rho_0K_r^\dagger}{\pi_r}
+\end{equation}
+whenever $\pi_r>0$.  The family of completely positive maps
+$\Inst_r(\rho)=K_r\rho K_r^\dagger$ is the instrument.
 \end{definition}
 
-After \(n\) cycles (total time \(t=n\Delta t\)),
+\Cref{eq:complete} implies $\sum_r\pi_r=1$.  Nothing in the
+normalization makes measurement metaphysically special.  It is simply
+the mathematical record of a physical coupling and readout protocol.
+
+\begin{definition}[Record-averaged channel]\label{def:channel}
+Discarding the record gives
+\begin{equation}\label{eq:channel}
+ \Chan_{p,T}(\rho)=\sum_rK_r(p)\rho K_r(p)^\dagger
+ =\sum_r\pi_r\rho_r .
+\end{equation}
+This map is completely positive and trace preserving.
+\end{definition}
+
+\subsection{The transition observable}
+
+For a bipartition $A\cup\bar A$, define
 \[
-\rho(t) = \big(\mathcal{M}_{p,\Delta t}\big)^n(\rho_0).
+ \rho_{A,r}=\Tr_{\bar A}\rho_r,\qquad
+ \bar\rho_A=\sum_r\pi_r\rho_{A,r}.
 \]
+The trajectory-averaged von Neumann entropy is
+\begin{equation}\label{eq:traj-entropy}
+ \overline S_A=\sum_r\pi_r S(\rho_{A,r}),
+\end{equation}
+while the averaged-state entropy is $S(\bar\rho_A)$.  A MIPT analysis
+uses quantities such as \cref{eq:traj-entropy}, trajectory mutual
+information, purification time, or replica moments.  It is not defined
+by $S(\bar\rho_A)$ alone.
 
-\subsection{Controlled truncation and slab-locality}
-
-\begin{assumption}[Slab-local controlled reduction]\label{ass:slab}
-All statements in this paper are asserted on bounded-geometry time slabs where:
-(i) the reduced map \(\mathcal{M}_{p,\Delta t}\) is well-defined on the controlled domain,
-(ii) operator norms needed for continuity and contraction estimates are finite,
-and (iii) stability margins defining admissible basins remain strictly positive away from boundaries.
-\end{assumption}
-
-\subsection{Admissible basins}
-
-\begin{definition}[Admissible basin]\label{def:basin}
-Fix protocol parameters \((p,\Delta t)\). An admissible basin \(\mathcal{B}\subset \mathcal{D}\) (where \(\mathcal{D}\) is a controlled domain of reduced states) is a set such that:
-\begin{enumerate}[label=(B\arabic*)]
-\item \textbf{(Invariance)} \(\mathcal{M}_{p,\Delta t}(\mathcal{B})\subseteq \mathcal{B}\).
-\item \textbf{(Contractivity)} There exists \(q(p,\Delta t)\in[0,1)\) such that for all \(\rho,\sigma\in\mathcal{B}\),
+\begin{theorem}[Exact record-information gap]\label{thm:holevo}
+For every finite instrument,
+\begin{equation}\label{eq:holevo}
+ S(\bar\rho_A)-\overline S_A
+ =
+ \sum_r\pi_r
+ D\!\left(\rho_{A,r}\middle\Vert\bar\rho_A\right)
+ =:\chi(A{:}R)\geq0 ,
+\end{equation}
+where $D(\cdot\Vert\cdot)$ is quantum relative entropy.  Moreover,
 \[
-d\!\left(\mathcal{M}_{p,\Delta t}(\rho),\mathcal{M}_{p,\Delta t}(\sigma)\right)
-\le q(p,\Delta t)\,d(\rho,\sigma),
+ 0\leq\chi(A{:}R)\leq H(\{\pi_r\}).
 \]
-for a chosen metric \(d\) on \(\mathcal{D}\) compatible with the trace norm.
-\item \textbf{(Stability margin)} The contractivity factor satisfies \(1-q(p,\Delta t)\ge \epsilon\) for some \(\epsilon>0\) on the slab for the range of parameters considered.
-\end{enumerate}
-\end{definition}
-
-\begin{remark}
-The specific metric \(d\) is not essential; any metric dominating the trace norm and compatible with the topology of trace-class operators suffices. The stability margin is the key ingredient for basin robustness and threshold analysis.
-\end{remark}
-
-% ============================================================
-\section{Measurement-Induced Phase Transitions as a 4D Shadow}
-% ============================================================
-
-In monitored circuit and hybrid unitary-measurement dynamics, one varies a measurement rate (or strength) parameter \(p\), and observes a sharp change in long-time entanglement scaling. In the present framework, this is captured by a change in invariant basin structure of \(\mathcal{M}_{p,\Delta t}\) as \(p\) is varied.
-
-\begin{definition}[MIPT (reduced-dynamical formulation)]
-A measurement-induced phase transition occurs at \(p=p_\ast\) if the set of admissible basins (or the stability margins of the dominant invariant basin) changes discontinuously in the sense that no single basin decomposition with uniformly positive margin persists across \(p_\ast\).
-\end{definition}
-
-The remainder of the paper does not require a specific many-body model; it only requires the existence of basins and continuity in \(p\) on the slab (Assumptions~\ref{ass:Phi}, \ref{ass:slab}).
-
-% ============================================================
-\section{Collapse and Irreversibility as a 4D Shadow}
-% ============================================================
-
-In collapse-like settings, one prepares an initial reduced state \(\rho_0\) within an admissible basin and asks for the probability of exiting that basin and stabilizing elsewhere under monitoring.
-
-\begin{definition}[Basin survival and exit probabilities]
-Let \(\mathcal{B}\) be an admissible basin and \(\Pi_{\mathcal{B}}\) a (possibly coarse) projector or indicator functional that detects membership in \(\mathcal{B}\) within the controlled domain. Define:
-\[
-P_{\mathrm{surv}}(p,t) := \Tr\!\left(\Pi_{\mathcal{B}}\,\rho(t)\right),
-\qquad
-P_{\mathrm{exit}}(p,t) := 1-P_{\mathrm{surv}}(p,t).
-\]
-A collapse-like irreversibility event corresponds to basin exit followed by capture into a competing basin.
-\end{definition}
-
-% ============================================================
-\section{Measurement--Collapse Shadow Bridge}
-\label{sec:bridge}
-% ============================================================
-
-\subsection{Control parameters and reduced dynamics}
-
-The protocol parameters \((p,\Delta t)\) appear both in monitored-circuit dynamics and in measurement-induced collapse experiments. In the present setting, both are encoded by the same reduced map \(\mathcal{M}_{p,\Delta t}\) (Definition~\ref{def:M}).
-
-\subsection{Two shadows of the same basin structure}
-
-\begin{itemize}
-\item \textbf{Shadow A (MIPT):} diagnosed by long-time entanglement scaling properties, which depend on the invariant basin structure as \(p\) varies.
-\item \textbf{Shadow B (collapse/irreversibility):} diagnosed by basin survival and exit probabilities, i.e.\ whether the reduced state remains confined to the initial basin.
-\end{itemize}
-
-\subsection{Bridge theorem}
-
-\begin{theorem}[Measurement--Collapse Shadow Equivalence]\label{thm:bridge}
-Assume:
-\begin{enumerate}[label=(A\arabic*)]
-\item the reduced dynamics is given by \(\rho(t+\Delta t)=\mathcal{M}_{p,\Delta t}(\rho(t))\) on a slab-local controlled domain \(\mathcal{D}\);
-\item admissible basins exist for \(p\) in an interval \(I\subset\mathbb{R}\) except possibly at isolated transition values;
-\item \(\mathcal{M}_{p,\Delta t}\) depends continuously on \(p\) in operator topology on the slab.
-\end{enumerate}
-Then:
-\begin{enumerate}[label=(\roman*)]
-\item a measurement-induced phase transition at \(p=p_\ast\) (defined as a change in admissible basin structure) is equivalent to loss of contractivity margin at a basin boundary at \(p=p_\ast\);
-\item the same critical value \(p_\ast\) governs collapse-like basin exit from any basin whose margin vanishes at that boundary.
-\end{enumerate}
 \end{theorem}
 
 \begin{proof}
-By Definition~\ref{def:basin}, an admissible basin requires a strictly positive contractivity margin. A measurement-induced phase transition in the reduced-dynamical sense occurs when no basin decomposition with uniform positive margin persists across \(p_\ast\), i.e.\ when the margin vanishes for at least one dynamically relevant basin. This is precisely loss of contractivity at a basin boundary. Basin exit becomes non-negligible once the stability margin collapses, so the same \(p_\ast\) also marks the onset of collapse-like irreversibility for states supported near that boundary. \qedhere
+Expanding the relative entropies gives
+\[
+\sum_r\pi_r\Tr[\rho_{A,r}\log\rho_{A,r}]
+-\Tr[\bar\rho_A\log\bar\rho_A],
+\]
+which is $S(\bar\rho_A)-\sum_r\pi_rS(\rho_{A,r})$.
+Nonnegativity follows from positivity of relative entropy.  The upper
+bound is the standard Holevo bound for the classical--quantum state
+$\sum_r\pi_r|r\rangle\langle r|\otimes\rho_{A,r}$.
 \end{proof}
 
-\begin{remark}
-The theorem is slab-local and does not assume a particular microscopic measurement model. The only essential ingredients are noninvertible projection (Assumption~\ref{ass:projection}), basin stabilization (Definition~\ref{def:basin}), and continuity in \(p\) (Assumption~\ref{ass:Phi}).
-\end{remark}
+\Cref{thm:holevo} is the decisive type check.  Record averaging can
+change an entanglement diagnostic by a positive information term.  Many
+different ensembles can have the same average state, so the averaged
+channel does not reconstruct the conditioned ensemble without the
+instrument decomposition and record.
 
-% ============================================================
-\section{Finite-Strength Threshold (``Knee'') Structure}
-\label{sec:knee}
-% ============================================================
-
-In this section we prove that the common basin transition of Theorem~\ref{thm:bridge}
-generically produces a finite-strength, nonanalytic crossover (``knee'') in basin exit
-probabilities, thereby explaining why both MIPTs and collapse thresholds are sharp in practice.
-
-\subsection{Local reduction near a basin boundary}
-
-Fix a basin boundary point where a single direction becomes least stable. Introduce a local coordinate \(u\in\mathbb{R}\) normal to the boundary such that \(u<0\) lies inside the basin and \(u>0\) corresponds to exit.
-
-\begin{assumption}[OU reduction near boundary]\label{ass:OU}
-Near the boundary and on the slab, the effective dynamics of the least-stable coordinate admits the approximation
-\begin{equation}\label{eq:OU}
-\dot u(t) = -\gamma(p)\,u(t) + \eta(t),
-\end{equation}
-where \(\gamma(p)\) is continuous in \(p\), and \(\eta(t)\) is mean-zero Gaussian noise with covariance
-\(\mathbb{E}[\eta(t)\eta(t')]=2D\,\delta(t-t')\) for some \(D>0\).
-\end{assumption}
-
-\begin{lemma}[Finite critical protocol strength]\label{lem:critical}
-Under Assumptions~\ref{ass:slab} and \ref{ass:OU}, there exists \(p_\ast\) such that
+\begin{example}[Same state, different records]\label{ex:ensembles}
+The maximally mixed qubit has both decompositions
 \[
-\gamma(p_\ast)=0,\qquad
-\gamma(p)>0 \text{ for } p<p_\ast,\qquad
-\gamma(p)<0 \text{ for } p>p_\ast.
+\frac{\id}{2}
+=\frac12|0\rangle\langle0|+\frac12|1\rangle\langle1|
+=\frac12|+\rangle\langle+|+\frac12|-\rangle\langle-|.
 \]
-\end{lemma}
+The average state is identical, while the record-conditioned states and
+their correlations with a chosen apparatus basis differ.
+\end{example}
 
-\begin{proof}
-For sufficiently small \(p\), admissibility implies contractivity in the least-stable direction, hence \(\gamma(p)>0\). At the boundary associated with the MIPT/collapse transition, the contractivity margin vanishes, implying \(\gamma(p)\le 0\) at criticality. Continuity of \(\gamma(p)\) yields a finite crossing point \(p_\ast\). \qedhere
-\end{proof}
+\section{Finite circuits and thermodynamic transitions}
 
-\subsection{Knee theorem}
+For fixed $L$ and $T$, the record set is finite.  The unnormalized
+weights $\Inst_r(\rho_0)$ are finite products of unitary matrices,
+projectors, and Bernoulli factors.  Away from parameter values where a
+record probability or a reduced-state eigenvalue vanishes, finite
+trajectory observables are smooth functions of $p$.  Singular behavior
+associated with a phase transition requires a declared limiting
+procedure, commonly $L\to\infty$ followed by a long-time or steady-state
+limit.
 
-\begin{theorem}[Finite-strength knee]\label{thm:knee}
-Assume \ref{ass:slab} and \ref{ass:OU}. Let \(P_{\mathrm{exit}}(p,t)\) denote the probability that \(u(t)\) crosses from \(u<0\) to \(u\ge 0\) by time \(t\), starting from an initial distribution supported in \(u<0\). Then, on the slab time window where exponential survival approximation holds,
-\[
-P_{\mathrm{exit}}(p,t) = 1-\exp\!\big(-\Gamma(p)\,t\big),
-\]
-with an exit rate \(\Gamma(p)\) exhibiting a finite-strength nonanalytic crossover at \(p=p_\ast\). Moreover, \(\Gamma(p)\) admits an interpolation of sigmoid form
-\[
-\Gamma(p)\approx \Gamma_0\,
-\frac{1}{1+\exp\!\left(\frac{p_\ast-p}{\delta p}\right)},
-\]
-where \(\delta p\) is controlled by \(D\) and \(|\gamma'(p_\ast)|\).
-\end{theorem}
-
-\begin{proof}
-For \(p<p_\ast\), \(\gamma(p)>0\) and the OU process is stable; first-passage across the boundary is noise-activated and exponentially suppressed (Kramers regime). For \(p>p_\ast\), \(\gamma(p)<0\) and drift expels trajectories, producing rapid exit on a timescale \(|\gamma(p)|^{-1}\). Matching these regimes yields a sharp crossover of width set by diffusion scale \(D\) and the slope at criticality. A detailed reduction is provided in Appendix~\ref{app:A}. \qedhere
-\end{proof}
-
-\subsection{No-go for linear measurement-only/decoherence-only models}
-
-\begin{proposition}[No knee without stabilization]\label{prop:noknee}
-Consider any reduced dynamics generated by a linear time-homogeneous channel whose generator depends on \(p\) only through a smooth rate prefactor and lacks state-dependent stabilization (i.e.\ does not admit basin boundaries characterized by loss of contractivity). Then \(P_{\mathrm{exit}}(p,t)\) varies smoothly with \(p\), and finite-strength knee behavior of the form in Theorem~\ref{thm:knee} cannot occur.
+\begin{proposition}[Finite records do not imply a universal knee]
+\label{prop:no-knee}
+Let $F_{L,T}(p)$ be a finite-record statistic built from smooth Kraus
+operators on an interval where all terms entering its logarithms have a
+uniform positive lower bound.  Then $F_{L,T}$ is smooth on that interval.
+No interior nonanalytic threshold follows from instrument normalization
+or noninvertibility alone.
 \end{proposition}
 
 \begin{proof}
-A linear time-homogeneous generator with smooth dependence on \(p\) produces a semigroup whose spectral decay rates vary smoothly with \(p\). Knee behavior requires a sign change in an internal restoring rate and hence a qualitative change in local stability (Lemma~\ref{lem:critical}), which is absent without basin stabilization. \qedhere
+Finite sums, products, partial traces, and spectral functions restricted
+away from zero eigenvalues preserve smooth parameter dependence.
 \end{proof}
 
-% ============================================================
-\section{Protocol Dependence and Zeno/Anti-Zeno Structure}
-\label{sec:protocol}
-% ============================================================
-
-\subsection{Protocol parameters and reduced evolution}
-
-We treat \((p,\Delta t)\) as independent protocol parameters. The reduced evolution is
+The finite-size transition question is therefore empirical and
+model-specific.  A report should state the circuit ensemble, local
+dimension, boundary conditions, initial state, record sampling,
+entanglement estimator, disorder or circuit realizations, numerical
+uncertainty, and order of limits.  One may test a scaling form such as
 \[
-\rho(t) = (\mathcal{M}_{p,\Delta t})^n(\rho_0),
-\qquad t=n\Delta t.
+ X_L(p)=F\!\left((p-p_c)L^{1/\nu}\right)
+ +L^{-\omega}G\!\left((p-p_c)L^{1/\nu}\right),
 \]
-Because \(P\) is noninvertible, changes in \((p,\Delta t)\) generally alter which degrees of freedom are discarded and how stability margins renormalize; thus the effective generator is protocol-dependent.
+but the functions, exponents, corrections, fit window, and covariance
+model are part of the hypothesis.  Large-$q$ mappings can select special
+critical values in special circuit ensembles \cite{bao2020}; those
+values are not universal consequences of projection.
 
-\subsection{Effective generator dependence}
+\section{Basin margins as a declared model class}
 
-\begin{assumption}[Protocol continuity]\label{ass:protocol-cont}
-The map \((p,\Delta t)\mapsto \mathcal{M}_{p,\Delta t}\) is continuous in operator topology on the slab, and admits a generator expansion
+\subsection{Complete stochastic record}
+
+A basin model begins only after the following data are fixed:
+\begin{equation}\label{eq:basin-record}
+ \mathfrak B=(X,\mathsf d,\mathcal L,\mu_0,B,\partial_{\rm abs}B,
+ \partial_{\rm ref}B,\tau_B,\mathcal O,\mathcal E).
+\end{equation}
+Here $X$ is the reduced state space, $\mathsf d$ its metric,
+$\mathcal L$ the generator, $\mu_0$ the initial law, $B$ the basin,
+the two boundary parts carry absorbing and reflecting conditions,
+$\tau_B$ is the stopping time, $\mathcal O$ the reported observables,
+and $\mathcal E$ the approximation/error certificate.  A scalar
+``margin'' without these rows is not a first-passage problem.
+
+\subsection{An exact local model}
+
+To exhibit what can actually be derived, consider
+\begin{equation}\label{eq:ou}
+ \dd X_t=-\kappa X_t\,\dd t+\sqrt{2D}\,\dd W_t,
+ \qquad \kappa>0,\ D>0,
+\end{equation}
+on $(-\infty,b)$ with $b>0$, absorbing at $b$, and with the natural
+boundary condition at $-\infty$.  The stable point $0$ lies inside the
+basin, and
 \[
-\mathcal{M}_{p,\Delta t} = \exp\!\big(\Delta t\,\mathcal{L}_{\mathrm{eff}}(p,\Delta t)\big) + \mathcal{O}(\Delta t^2)
+ \tau_b=\inf\{t\geq0:X_t=b\}
 \]
-on the controlled domain.
-\end{assumption}
+is the exit time.
 
-\subsection{Zeno/anti-Zeno theorem}
-
-\begin{theorem}[Zeno/anti-Zeno crossover]\label{thm:zeno}
-Assume \ref{ass:slab}, \ref{ass:protocol-cont}, and the existence of a basin boundary with least-stable coordinate admitting the reduction in Assumption~\ref{ass:OU}. Then there exist finite protocol scales \(p_Z\) and \(\Delta t_Z\) such that:
-\begin{enumerate}[label=(\roman*)]
-\item \textbf{(Zeno regime)} For \(p\gg p_Z\) and \(\Delta t\ll \Delta t_Z\), basin exit is suppressed and \(\Gamma_{\mathrm{exit}}(p,\Delta t)\to 0\).
-\item \textbf{(Anti-Zeno regime)} For intermediate \((p,\Delta t)\) near \((p_Z,\Delta t_Z)\), basin exit is enhanced:
-\(\Gamma_{\mathrm{exit}}(p,\Delta t)>\Gamma_{\mathrm{exit}}(0,\Delta t)\).
-\end{enumerate}
-\end{theorem}
-
-\begin{proof}
-In the strong/frequent probing limit, repeated application of \(\mathcal{M}_{p,\Delta t}\) confines trajectories to the most stable subspace within the basin, suppressing excursions along the least-stable direction (Zeno). At intermediate probing, the protocol injects fluctuations aligned with the least-stable coordinate and lowers the effective barrier governing exit (Theorem~\ref{thm:knee}), enhancing exit (anti-Zeno). Existence of finite crossover scales follows from continuity and the sign-change structure near the boundary (Lemma~\ref{lem:critical}). \qedhere
-\end{proof}
-
-\subsection{No-go for protocol dependence without stabilization}
-
-\begin{proposition}[Absence of protocol dependence without basin renormalization]\label{prop:noprotocol}
-If the reduced dynamics is generated by a linear time-homogeneous channel whose generator depends only on \(p\) through an overall smooth prefactor and does not depend on \(\Delta t\) (beyond the trivial time-rescaling), then Zeno/anti-Zeno crossover behavior as in Theorem~\ref{thm:zeno} cannot occur. Any observed dependence on \(\Delta t\) at fixed \(p\) requires state-dependent stabilization or generator renormalization by the protocol.
+\begin{proposition}[Basin-local synchronous contraction]
+\label{prop:ou-contraction}
+Let $X_t^x$ and $X_t^y$ solve \cref{eq:ou} with the same Brownian path
+and initial values $x,y<b$.  Before either process is stopped,
+\[
+ |X_t^x-X_t^y|=e^{-\kappa t}|x-y|.
+\]
+Consequently, the unrestricted OU transition kernel contracts the
+one-Wasserstein distance by at most $e^{-\kappa t}$.
 \end{proposition}
 
 \begin{proof}
-With a generator \(\mathcal{L}(p)=\alpha(p)\mathcal{L}_0\), the evolution is \(e^{t\alpha(p)\mathcal{L}_0}\), and protocol timing \(\Delta t\) affects only the discretization of the same semigroup. There is no mechanism for intermediate enhancement relative to baseline beyond monotonic scaling in \(\alpha(p)\). Zeno/anti-Zeno behavior requires protocol-dependent modification of stability margins and coupling to least-stable directions, which is absent without basin renormalization. \qedhere
+The noise cancels in the difference, which solves
+$\dd(X_t^x-X_t^y)=-\kappa(X_t^x-X_t^y)\dd t$.  The Wasserstein statement
+follows by applying the synchronous coupling to an optimal initial
+coupling.
 \end{proof}
 
-% ============================================================
-\section{Relation to Ongoing Research and Validation Pathways}
-\label{sec:validation}
-% ============================================================
+The statement is deliberately basin-local.  Stopping, conditioning on
+survival, or resetting after exit changes the transition law and must be
+specified separately.
 
-This section positions the derived structure relative to ongoing experimental and theoretical programs. The purpose is not to cite any one platform as definitive, but to show that multiple independent communities have identified facets of the same reduced-dynamical behavior.
+\begin{theorem}[Exact OU mean first-passage time]\label{thm:mfpt}
+For $x<b$, the mean exit time $T(x)=\E_x[\tau_b]$ is
+\begin{equation}\label{eq:mfpt}
+ T(x)=\frac1D\int_x^b
+ e^{\kappa y^2/(2D)}
+ \left(\int_{-\infty}^{y}e^{-\kappa z^2/(2D)}\,\dd z\right)\dd y .
+\end{equation}
+\end{theorem}
 
-\subsection{Monitored many-body systems and measurement-induced transitions}
-
-Hybrid unitary--measurement dynamics exhibits sharp changes in entanglement scaling as measurement rate varies. In the present framework these correspond to changes in admissible basin structure as \(p\) crosses \(p_\ast\) (Theorem~\ref{thm:bridge}). The knee theorem (Theorem~\ref{thm:knee}) explains why transitions can be sharp at finite measurement strength, rather than smooth decoherence crossovers.
-
-\subsection{Continuous measurement and Zeno physics}
-
-Continuous measurement experiments display Zeno suppression at strong/frequent probing and anti-Zeno enhancement at intermediate probing. Theorem~\ref{thm:zeno} shows these are structural consequences of projection-induced basin dynamics, not artifacts of any particular measurement model.
-
-\subsection{Weak measurement, reversibility, and echo protocols}
-
-Weak-measurement experiments combined with echo/reversal protocols observe a transition from reversible to irreversible behavior as measurement strength increases. In our framework this corresponds to confinement within a basin versus exit and capture across a basin boundary, with the finite-strength crossover quantified by Theorem~\ref{thm:knee}.
-
-\subsection{Limitations of measurement-only and decoherence-only models}
-
-Propositions~\ref{prop:noknee} and~\ref{prop:noprotocol} formalize a common empirical challenge: linear time-homogeneous models reproduce smooth decay but do not generically yield finite-strength knees and full protocol dependence without introducing additional state-dependent stabilization. This clarifies why extensions with feedback, nonlinearities, or trajectory dependence are repeatedly required in practice.
-
-\subsection{Unified predictions and validation channels}
-
-The framework yields validation channels that are largely platform-independent:
-\begin{enumerate}[label=(V\arabic*)]
-\item \textbf{Universality of knees:} knee sharpness depends on stability margins and noise floors, not on microscopic circuit details.
-\item \textbf{Two-parameter protocol geometry:} behavior depends on both \(p\) and \(\Delta t\), not on a single effective rate.
-\item \textbf{Echo asymmetry near criticality:} forward/backward protocols exhibit asymmetry near basin boundaries due to capture dynamics.
-\end{enumerate}
-These predictions are falsified if experiments show smooth, protocol-independent behavior across regimes where basin stability margins are demonstrably changing.
-
-% ============================================================
-\section{Conclusions}
-\label{sec:conclusions}
-% ============================================================
-
-We have constructed a reduced-dynamical bridge between measurement-induced phase transitions and collapse-like irreversibility by deriving both as shadows of projection-induced basin dynamics.
-
-The principal results are:
-
-\begin{enumerate}[label=(C\arabic*)]
-\item A unified reduced map \(\mathcal{M}_{p,\Delta t}\) (Definition~\ref{def:M}) encodes monitored dynamics and collapse contexts within a single projection framework.
-\item Measurement-induced phase transitions and collapse thresholds correspond to the same loss of contractivity at admissible basin boundaries (Theorem~\ref{thm:bridge}).
-\item Basin exit exhibits a finite-strength nonanalytic crossover (knee) at a critical monitoring strength (Theorem~\ref{thm:knee}), derived from a local OU/Kramers reduction.
-\item Protocol dependence and Zeno/anti-Zeno structure are unavoidable consequences of noninvertible projection with stabilization (Theorem~\ref{thm:zeno}).
-\item Linear time-homogeneous measurement-only or decoherence-only models cannot reproduce the combined set of features without introducing state-dependent stabilization equivalent to basin dynamics (Propositions~\ref{prop:noknee} and~\ref{prop:noprotocol}).
-\end{enumerate}
-
-All statements are slab-local and admissibility-conditioned: the reduced map, contractivity margins, OU/Kramers reduction, and protocol-dependent generator structure are asserted only on bounded-geometry time slabs where the projection is bounded on the controlled domain and stability margins remain positive away from basin boundaries.
-
-These results provide a unifying reduced-dynamical explanation for why finite-strength transitions, knees, and protocol dependence appear across diverse platforms and why additional state-dependent structure is repeatedly required beyond simple decoherence models. The bridge complements analogous shadow-bridge analyses linking collapse phenomena to other effective sectors; together, such bridges provide multiple independent validation channels for a common underlying projection-and-stabilization mechanism.
-
-% ============================================================
-% Appendices
-% ============================================================
-\appendix
-
-\section{OU/Kramers Reduction Near Basin Boundaries}
-\label{app:A}
-
-This appendix provides the technical underpinning for Theorem~\ref{thm:knee}.
-Assume the OU reduction \eqref{eq:OU} holds on a slab time window.
-
-\subsection*{A.1 Stable regime \(p<p_\ast\)}
-If \(\gamma(p)>0\), the OU process has stationary variance \(\mathbb{E}[u^2]=D/\gamma(p)\).
-First-passage from \(u<0\) to \(u\ge 0\) is noise-activated; standard Kramers-type estimates imply an exponentially small exit rate in the small-noise or large-margin regime, with leading dependence controlled by \(\gamma(p)/D\).
-
-\subsection*{A.2 Unstable regime \(p>p_\ast\)}
-If \(\gamma(p)<0\), deterministic drift dominates and typical trajectories exit on a time scale \(\sim |\gamma(p)|^{-1}\), yielding rapid basin exit.
-
-\subsection*{A.3 Crossover width}
-Near \(p_\ast\), expand \(\gamma(p)\approx \gamma'(p_\ast)(p-p_\ast)\).
-The crossover width in \(p\) is controlled by the diffusion scale \(D\) and \(|\gamma'(p_\ast)|\),
-yielding the sigmoid interpolation stated in Theorem~\ref{thm:knee}.
-
-\section{Generator Expansion and Protocol Dependence}
-\label{app:B}
-
-This appendix records the minimal generator-level assumptions used in Section~\ref{sec:protocol}.
-
-\subsection*{B.1 Generator expansion}
-Assumption~\ref{ass:protocol-cont} posits that, on the slab and on the controlled domain,
+\begin{proof}
+The backward equation is
 \[
-\mathcal{M}_{p,\Delta t} = \exp\!\big(\Delta t\,\mathcal{L}_{\mathrm{eff}}(p,\Delta t)\big)+\mathcal{O}(\Delta t^2).
+ DT''(x)-\kappa xT'(x)=-1,\qquad T(b)=0,
 \]
-Such expansions are standard when the microscopic dynamics is sufficiently regular and the reduced map is differentiable in \(\Delta t\) at \(\Delta t=0\).
+with the natural condition
+$T'(x)e^{-\kappa x^2/(2D)}\to0$ as $x\to-\infty$.  Multiplying the
+differential equation by $e^{-\kappa x^2/(2D)}$ and integrating from
+$-\infty$ to $y$ gives
+\[
+T'(y)=-\frac1D e^{\kappa y^2/(2D)}
+\int_{-\infty}^{y}e^{-\kappa z^2/(2D)}\,\dd z .
+\]
+Integrating from $x$ to $b$ and using $T(b)=0$ yields
+\cref{eq:mfpt}.
+\end{proof}
 
-\subsection*{B.2 Noncommutativity of probing and projection}
-Protocol dependence arises because changing \(p\) and \(\Delta t\) changes the microscopic evolution \(\Phi^{(p)}_{\Delta t}\) \emph{before} projection. Since \(P\) is noninvertible, the reduced generator cannot, in general, be written as a fixed generator multiplied by a scalar prefactor.
+\begin{corollary}[No universal logistic law]\label{cor:smooth}
+For $\kappa,D,b>0$ and $x<b$, $T(x)$ is smooth in the finite parameters
+on compact subsets of that domain.  A logistic crossover is not implied
+by the OU generator.
+\end{corollary}
 
-\subsection*{B.3 Necessity for Zeno/anti-Zeno}
-Theorem~\ref{thm:zeno} requires that probing renormalizes stability margins near basin boundaries, which is exactly the content of the protocol dependence of \(\mathcal{L}_{\mathrm{eff}}(p,\Delta t)\).
+This model can be a useful local surrogate if a monitored-circuit
+coordinate is independently shown to obey \cref{eq:ou} with a controlled
+error.  It does not derive a MIPT, and its parameters cannot be read from
+a generic capacity margin.
 
-\section{Discrete-to-Continuous Limit in Monitored Dynamics}
-\label{app:C}
+\section{Protocol-specific Zeno behavior}
 
-This appendix states a standard discrete-to-continuous connection used implicitly in Sections~\ref{sec:bridge}--\ref{sec:protocol}.
+Consider a two-level system with
+\[
+ H=\frac{\Omega}{2}\sigma_x,\qquad
+ P_0=|0\rangle\langle0|,
+\]
+initially in $|0\rangle$.  Evolve for time $\tau$, measure
+$\{P_0,\id-P_0\}$, and repeat.  Condition on obtaining the survival
+record $0$ at every step.
 
-Let \(\Delta t\to 0\) with \(p=p(\Delta t)\) chosen such that the combined effect of monitoring per unit time converges. Under regularity assumptions on \(\Phi^{(p)}_{\Delta t}\), the reduced evolution converges to a continuous-time semigroup generated by \(\mathcal{L}_{\mathrm{eff}}\). The present paper does not require a specific scaling law; it requires only that such a limit exists on the slab in the regimes where continuous-time language is used.
-\begin{thebibliography}{99}
+\begin{theorem}[Exact repeated-projection survival law]\label{thm:zeno}
+For $n=t/\tau\in\bbN$,
+\begin{equation}\label{eq:zeno}
+ P_{\rm surv}(t;\tau)
+ =
+ \left[\cos^2\!\left(\frac{\Omega\tau}{2}\right)\right]^{t/\tau}.
+\end{equation}
+At fixed $t$,
+\[
+ \log P_{\rm surv}(t;\tau)
+ =-\frac{\Omega^2t}{4}\tau+O(t\tau^3),
+ \qquad
+ \lim_{\tau\downarrow0}P_{\rm surv}(t;\tau)=1 .
+\]
+\end{theorem}
 
-\bibitem{MTT-Admissibility}
-P.~Nero,
-\emph{Modal Triplet Theory: Admissibility, Encodings, and the Structure of Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255621}
+\begin{proof}
+One interval has amplitude
+$\langle0|e^{-iH\tau}|0\rangle=\cos(\Omega\tau/2)$.
+Conditional survival over independent repeated projections multiplies
+the interval probabilities, giving \cref{eq:zeno}.  The expansion follows
+from $\log\cos^2 u=-u^2+O(u^4)$.
+\end{proof}
 
-\bibitem{MTT-Foundation}
-P.~Nero,
-\emph{Modal Triplet Theory: Foundation},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.16949762}
+This is a genuine Zeno theorem because the Hamiltonian, projector,
+timing, conditioning, and comparison quantity are explicit.  It is not a
+theorem that every measurement protocol has an anti-Zeno regime.
 
-\bibitem{MTT-FixedPoints}
-P.~Nero,
-\emph{Fixed Points I--VI: Complete Coherence Spine},
-Zenodo preprints, August 2025.
-\url{https://doi.org/10.5281/zenodo.16948748}
+\begin{proposition}[Anti-Zeno behavior is not unavoidable]
+\label{prop:anti}
+If a measured projector $P$ commutes with $H$ and the initial state lies
+in $\operatorname{Ran}P$, then repeated measurements preserve the state
+for every measurement interval.  There is no intermediate enhancement
+of escape.
+\end{proposition}
 
-\bibitem{MTT-ProjectionAdmissibility}
-P.~Nero,
-\emph{The Projection--Admissibility Principle: Structural Constraints on Effective Physical Description},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255838}
+\begin{proof}
+Commutation makes $\operatorname{Ran}P$ invariant under the unitary
+evolution, so every survival probability equals one.
+\end{proof}
 
-\bibitem{MTT-Closure}
-P.~Nero,
-\emph{Closure and Inevitability in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255510}
+Anti-Zeno enhancement can occur in models where measurement broadening
+overlaps a reservoir spectrum, but its presence and crossover scale
+depend on that spectral density and protocol \cite{kofman2000}.  It
+cannot be inferred from noncommutativity or noninvertibility alone.
 
-\bibitem{MTT-CoherenceCapacity}
-P.~Nero,
-\emph{Coherence Capacity as the Fundamental Resource of Effective Physics},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18255905}
+\section{Outcome completion is not the entanglement transition}
 
-\bibitem{MTT-CoherenceDynamics}
-P.~Nero,
-\emph{Dynamics of Coherence Capacity: Transport, Concentration, and Exhaustion},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256048}
+The instrument in \cref{def:instrument} supplies a normalized law for
+records and a conditional state for each record.  The MIPT concerns the
+large-system behavior of nonlinear statistics across that record
+ensemble.  An actual detector run realizes one record as an ordinary
+physical process.  These statements should not be collapsed:
+\begin{enumerate}
+\item decoherence or record averaging suppresses selected coherences;
+\item conditioning updates the state associated with an observed record;
+\item basin contraction can stabilize a record after it exists;
+\item none of those facts alone derives the probability law from an
+upper geometry; and
+\item an ensemble phase transition does not select one ontic history.
+\end{enumerate}
 
-\bibitem{MTT-QM}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to Quantum Mechanics},
-Zenodo preprint, September 2025.
-\url{https://doi.org/10.5281/zenodo.17074246}
+The companion MTT measurement paper gives the general completion-kernel
+and record-stabilization framework and records the current limited
+q79 one-anchor result \cite{nero_measurement}.  Its arbitrary-context
+Born source and objective one-history obligations remain open.  This
+paper neither re-proves nor enlarges those claims.
 
-\bibitem{MTT-QFT}
-P.~Nero,
-\emph{From MTT to Quantum Field Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17068816}
+\section{Conditional interface with MTT}
 
-\bibitem{MTT-GR}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to General Relativity},
-Zenodo preprint, October 2025.
-\url{https://doi.org/10.5281/zenodo.16950597}
+MTT contains coherent spectral projectors and stability margins at its
+current foundation tier \cite{nero_foundation}.  A coherent projector is
+not automatically a measurement instrument.  To derive the monitored
+model above from MTT, one same-source construction must emit:
+\begin{enumerate}
+\item the physical Hilbert space and circuit or continuous generator;
+\item the outcome-indexed completely positive maps $\Inst_r$;
+\item the normalization and record weights $\pi_r$;
+\item the map from upper observables to trajectory entanglement
+diagnostics;
+\item any reduced basin coordinate, metric, generator, and absorbing
+boundary; and
+\item finite-volume and limiting comparison errors.
+\end{enumerate}
 
-\bibitem{MTT-UVQG}
-P.~Nero,
-\emph{Modal Triplet Theory: From MTT to a UV-Finite, Unitary Quantum Gravity},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17077671}
+\begin{theorem}[Conditional instrument transport]\label{thm:transport}
+Suppose an upper MTT instrument
+$\{\widehat{\Inst}_r\}$ and a channel isometry $V$ satisfy, for every
+allowed input state,
+\[
+ \left\|
+ V\widehat{\Inst}_r(\widehat\rho)V^\dagger
+ -\Inst_r(V\widehat\rho V^\dagger)
+ \right\|_1\leq\epsilon_r
+\]
+and $\sum_r\epsilon_r\leq\epsilon$.  Then the total-variation distance
+between the two record laws is at most $\epsilon/2$, and every bounded
+record statistic $f$ satisfies
+\[
+ \left|\E_{\widehat\pi}f-\E_{\pi}f\right|
+ \leq \epsilon\,\norm{f}_\infty .
+\]
+\end{theorem}
 
-\bibitem{MTT-Measurement}
-P.~Nero,
-\emph{Measurement as Disturbance and Stabilization in Modal Triplet Theory},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17177404}
+\begin{proof}
+Taking traces and using
+$|\Tr A|\leq\norm{A}_1$ gives
+$\sum_r|\widehat\pi_r-\pi_r|\leq\epsilon$.  The first statement is the
+definition of total variation.  The second follows by summing
+$f(r)(\widehat\pi_r-\pi_r)$ and applying the same bound.
+\end{proof}
 
-\bibitem{MTT-Irreversibility}
-P.~Nero,
-\emph{Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18256408}
+Transporting trajectory entropies additionally requires control of the
+normalized conditional states when $\pi_r$ is small; a probability floor
+or weighted continuity theorem must therefore be declared.  The theorem
+shows exactly where an MTT source would enter, without pretending that
+basin vocabulary already supplies the source.
 
-\bibitem{MTT-Bell-Beables}
-P.~Nero,
-\emph{Modal Fixed Points, Bell’s Beables, and the Limits of Factorization},
-Zenodo preprint, 2025.
-\url{https://doi.org/10.5281/zenodo.17076300}
+\section{Validation and falsification protocol}
 
-\bibitem{MTT-Bell-Temporal}
-P.~Nero,
-\emph{Temporal Bell Inequalities and Global Consistency in Modal Triplet Theory},
-Zenodo preprint, August 2025.
-\url{https://doi.org/10.5281/zenodo.18208884}
+A serious numerical or experimental claim should publish:
+\begin{enumerate}
+\item the complete instrument or enough circuit data to reconstruct its
+Kraus maps;
+\item record-resolved data or sufficient statistics, not only the
+averaged density operator;
+\item the distinction between $\overline S_A$ and $S(\bar\rho_A)$;
+\item sizes, depths, samples, seeds, error bars, fit windows, and
+correlated covariance;
+\item at least one alternative crossover model and a held-out size or
+observable;
+\item for a basin claim, every row of \cref{eq:basin-record};
+\item for a Zeno or anti-Zeno claim, the unmeasured comparison dynamics,
+projector, timing convention, and reservoir spectrum if present; and
+\item for an MTT claim, the source hashes and transport errors required
+by \cref{thm:transport}.
+\end{enumerate}
 
-\bibitem{MTT-Stochastic}
-P.~Nero,
-\emph{From Modal Triplet Theory to Indivisible Stochastic Processes: A First-Principles, Fully Rigorous Derivation},
-Zenodo preprint, January 2026.
-\url{https://doi.org/10.5281/zenodo.18254862}
+The framework is falsified as an explanation if its selected basin
+coordinate does not predict record-resolved observables beyond the
+standard instrument model, if the first-passage approximation fails its
+error certificate, or if the proposed MTT source map is chosen only
+after seeing the target critical data.
 
-\end{thebibliography}
+\section{Conclusion}
+
+Measurement-induced entanglement transitions, averaged decoherence,
+record completion, first passage, and Zeno physics can interact in one
+experiment, but they are not one theorem.  The correct common language
+is a typed physical instrument plus explicitly declared effective
+models.  The trajectory/ensemble entropy identity proves why records
+cannot be discarded when studying a MIPT.  The OU calculation shows what
+a genuine basin theorem requires and why it does not produce a universal
+knee.  The repeated-projection calculation shows how a Zeno limit is
+derived from a protocol, while a commuting counterexample rules out
+unavoidable anti-Zeno behavior.
+
+MTT may ultimately explain why a particular instrument and effective
+basin model are selected together.  That claim now has a precise exit:
+construct the same-source instrument, record law, observable transport,
+and error bounds.  Until then, basin margins are a useful model class,
+not a universal identification of measurement phenomena.
+
+\bibliographystyle{plain}
+\bibliography{main}
+
 \end{document}

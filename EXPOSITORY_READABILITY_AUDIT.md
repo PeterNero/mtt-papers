@@ -10,20 +10,20 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| critical | 2 |
+| critical | 1 |
 | major | 3 |
 | moderate | 2 |
 | light | 2 |
-| reviewed | 128 |
+| reviewed | 129 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 32 |
-| conclusion | 7 |
-| concrete_foothold | 26 |
+| argument_flow | 31 |
+| conclusion | 6 |
+| concrete_foothold | 25 |
 | object_intuition | 85 |
 | orientation | 60 |
 | result_interpretation | 8 |
@@ -32,10 +32,9 @@ Canonical papers audited: **139**.
 
 | Effective priority | Heuristic | Paper | Formal results | Narrative words/result | Coverage | Missing |
 | --- | --- | --- | ---: | ---: | ---: | --- |
-| critical | critical | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 17 | 123.5 | 3/7 | object_intuition, argument_flow, concrete_foothold, conclusion |
 | critical | critical | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 15 | 54.1 | 4/7 | argument_flow, concrete_foothold, conclusion |
 | major | major | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 15 | 210.5 | 7/7 | - |
-| major | major | `eth-and-many-body-localization-as-a-single-shadow-bridg-236606dd` | 11 | 222.7 | 6/7 | object_intuition |
+| major | major | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 10 | 196.6 | 6/7 | object_intuition |
 | major | major | `particles-and-forces-as-coherence-basins-and-capacity-gradients` | 10 | 124.0 | 5/7 | object_intuition, concrete_foothold |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
@@ -71,6 +70,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed` | 12 | 283.5 | 6/7 | object_intuition |
 | reviewed | major | `modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6` | 12 | 223.9 | 7/7 | - |
 | reviewed | major | `constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b` | 11 | 156.5 | 7/7 | - |
+| reviewed | major | `eth-and-many-body-localization-as-a-single-shadow-bridg-236606dd` | 11 | 222.7 | 6/7 | object_intuition |
 | reviewed | major | `horizons-area-laws-and-entropy-from-coherence-capacity-b849ea71` | 11 | 232.4 | 7/7 | - |
 | reviewed | moderate | `modal-triplet-theory-parameters-closure-and-structural-ae734bf0` | 11 | 276.1 | 4/7 | orientation, object_intuition, result_interpretation |
 | reviewed | major | `the-projection-admissibility-principle-descent-recovery-b0fd6e59` | 11 | 176.0 | 6/7 | object_intuition |

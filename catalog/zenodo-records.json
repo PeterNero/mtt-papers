@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18261631",
+      "created": "2026-07-31T08:25:21.927657+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21717359",
+      "files": [
+        {
+          "checksum": "md5:fcdf34908dcc637f0b0f46364cd42637",
+          "content_url": "https://zenodo.org/api/records/21717359/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 319231
+        }
+      ],
+      "id": "21717359",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21717359",
+      "resource_type": "publication",
+      "title": "Measurement-Induced Entanglement Transitions and Basin Diagnostics Instruments, First Passage, and Protocol Limits",
+      "updated": "2026-07-31T08:25:22.372037+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18261959",
       "created": "2026-07-31T08:14:52.026623+00:00",
       "creators": [

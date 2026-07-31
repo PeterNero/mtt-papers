@@ -1048,6 +1048,14 @@
       "reviewed_main_tex_sha256": "0e87cda0c6cb602bde35a6107a77382512562d22b6af77baec4b6f290c15de0a",
       "reviewed_pdf_sha256": "dd97a1e47039c9ad8d89b6bcc02753834c6efe1e9856d72c70d4684bf3908ff1",
       "reviewed_source_tree_sha256": "eeb1e778a2d65a82fae4bb0f98027de712e706ef67dfbbf8af09afeee59f3d9b"
+    },
+    "measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 replaces the universal identification of measurement-induced transitions, collapse thresholds, basin loss, and Zeno/anti-Zeno behavior by a typed instrument analysis. It fixes a hybrid monitored-circuit model; separates conditioned trajectories, record probabilities, and the averaged channel; proves the exact Holevo record-information gap; gives a finite-record smoothness theorem; declares the complete basin first-passage record; derives basin-local OU contraction and the exact mean first-passage integral; derives an exact repeated-projection Zeno limit and a counterexample to unavoidable anti-Zeno behavior; treats measurement as an ordinary physical process; states a conditional MTT instrument-transport theorem; preserves the arbitrary-context Born source, one-history selection, selected basin coefficients, and thermodynamic transition as open; and the complete 8-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "86b26c459c3a25de7fdcb999a77eada36dc6ac8ac716e03395dc9f1588ca984d",
+      "reviewed_pdf_sha256": "357b339fa33a210eb9b2493bb6f1de5da024d9cd2becb03f768f0bce6b4604e6",
+      "reviewed_source_tree_sha256": "71e5edb77ba1c2a9374fdfd0c6120f8e4e2752350af9eb4757c3a9146a490b8a"
     }
   }
 }
