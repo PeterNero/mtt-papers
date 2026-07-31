@@ -117,7 +117,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0` | 6 | 354.2 | 7/7 | - |
 | reviewed | light | `modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927` | 6 | 464.5 | 5/7 | orientation, object_intuition |
 | reviewed | low | `the-modal-triplet-theory-program-a1-coherent-kinematics` | 6 | 461.2 | 7/7 | - |
-| reviewed | light | `topology-only-constraints-and-forbidden-operators-in-mo-90db2212` | 6 | 438.0 | 4/7 | orientation, object_intuition, argument_flow |
+| reviewed | light | `topology-only-constraints-and-forbidden-operators-in-mo-90db2212` | 6 | 481.2 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | light | `when-is-a-configuration-physical-rethinking-the-vacuum-72e53a34` | 6 | 500.3 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `white-noise-and-markov-limits-as-delta-correlation-idea-854be499` | 6 | 241.3 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `why-quantum-contextuality-and-measurement-order-depende-e0bdb9bf` | 6 | 385.7 | 6/7 | orientation |

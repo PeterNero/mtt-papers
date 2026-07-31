@@ -31,7 +31,7 @@
 \title{\textbf{Bundle Selection Rules, Anomaly Lines, and Charge Lattices}\\
 \large A Conditional Topological Layer for Modal Triplet Theory}
 \author{Peter Nero}
-\date{Version 2, July 2026}
+\date{Version 3, July 2026}
 
 \begin{document}
 \maketitle
@@ -67,27 +67,27 @@ realization-by-realization selection framework, not a universal topology-only
 derivation of the Standard Model.
 \end{abstract}
 
-\section*{Version 2 revision note}
+\section*{Version 3 revision note}
 
 \begin{description}[style=nextline]
 \item[Supersedes.]
-Version 1, DOI \href{https://doi.org/10.5281/zenodo.18261774}
-{\texttt{10.5281/zenodo.18261774}}.
+Version 2, \url{https://doi.org/10.5281/zenodo.21713543}; and the original
+Version 1, \url{https://doi.org/10.5281/zenodo.18261774}.
 \item[Reason.]
-Version 1 used rational tensor powers of a line bundle without first choosing
-a root, placed the anomaly line on the wrong base, treated existence of a
-global section as equivalent to bundle triviality, and suggested that
-Standard Model gauge topology removes operators that are already Standard
-Model gauge singlets.
+Version 1 contained the mathematical errors corrected below. Version 2 made
+those corrections but cited the curated calculation repository only at
+repository level; it did not include the hash-bound per-result evidence block
+required to reproduce the current finite MTT status rows.
 \item[Resolution.]
-Version 2 separates character lattices, global gauge-group descent,
+Version 3 retains the Version 2 mathematics, which separates character
+lattices, global gauge-group descent,
 determinant-line anomalies, internal Picard classes, coefficient spaces, and
-actual overlap pairings. Every displayed operator now has an explicit class
-and a stated decision rule.
+actual overlap pairings. It adds an explicit computational-evidence section
+with repository commit, manifest hash, result identifiers, tiers, and the
+open strict-upgrade row.
 \item[Retained content.]
-The useful core survives: topology can provide exact, pre-dynamical
-obstructions inside a fixed realization, and those obstructions are valuable
-early consistency and falsifiability tests.
+All Version 2 theorems, corrections, explanatory discussion, and physical
+scope boundaries are unchanged.
 \item[Open boundary.]
 MTT has not yet selected the physical bundle endpoint and coefficient
 functional that would decide all proton-decay and lepton-number-violating
@@ -613,7 +613,11 @@ not, by itself, falsify the abstract idea that some other overlap
 realizations possess topological selection rules. This distinction turns a
 broad slogan into a testable scientific statement.
 
-\section{Version 2 changes and reasons}
+\section{Version 3 changes and reasons}
+
+Version 3 preserves the mathematical decisions made in Version 2 and adds
+the hash-bound evidence record below. The table therefore compares the
+original Version 1 statements with the corrected Version 2--3 position.
 
 \begin{table}[ht]
 \centering
@@ -681,6 +685,70 @@ classes and coefficient functionals for the operator rows in
 \cref{tab:operators} on the same compactification branch. Until then, the
 paper provides a rigorous conditional selection language and an auditable
 completion contract.
+
+% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Computational Evidence and Reproducibility}
+The finite MTT statements in \cref{tab:mtt-status} are status imports, not
+proofs of the bundle-selection theorems in this paper. The exact rows support
+only the declared finite representation, gauge-group, hypercharge, and
+anomaly statements. The profile row records the adopted embedded-SM standard,
+and the open row marks the stronger no-knob boundary.
+
+The referenced rows are frozen to the curated results repository state below.
+Hashes are grouped in eight-character blocks for line breaking.
+\begin{quote}\small
+\textbf{Repository:}
+\url{https://github.com/PeterNero/mtt-results-repro}\\
+\textbf{Commit:}
+\texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
+\textbf{Manifest:} \path{release/result_manifest.json}\\
+\textbf{Manifest SHA-256:}\\
+\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
+\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\end{quote}
+
+Tier labels are quoted verbatim from that manifest. A row used directly
+supports only its stated finite calculation; it does not select the physical
+compactification or prove an operator coefficient.
+
+\paragraph{Rows used directly in this paper.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A46/typed_family_representation}
+(\emph{derived exact}).\par
+48-state family-diagonal chiral representation and anomaly table.
+\item \path{A47/native_gauge_group}
+(\emph{derived exact}).\par
+Native \(U(1)\), \(SU(2)\), \(SU(3)\) automorphisms and \(\Z_6\) quotient.
+\item \path{A50/neutral_summand_hypercharge}
+(\emph{derived exact}).\par
+Neutral-summand completion and unique anomaly-free shared hypercharge circle.
+\item \path{A22/e6_qpsi_qcd_anomaly}
+(\emph{derived exact}).\par
+\(E_6\) \(Q_\psi\) matter/exotic QCD anomaly cancellation audit.
+\end{itemize}
+
+\paragraph{Corpus-status cross-check.}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A04/final_12_of_12_audit}
+(\emph{profile replay}).\par
+Twelve-obligation embedded renormalized-SM equivalence audit at the declared
+profile standard.
+\end{itemize}
+
+\paragraph{Open boundary (not evidence of closure).}
+\begin{itemize}
+\setlength{\itemsep}{0.25em}
+\item \path{A05/strict_upgrade_ledger}
+(\emph{open}).\par
+Current \(2/9\) strict no-knob upgrade ledger.
+\end{itemize}
+
+No imported row changes theorem ownership or promotes a neighboring claim:
+all local statements retain their stated hypotheses, domains, and
+limitations.
+% END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \bibliographystyle{plain}
 \bibliography{main}

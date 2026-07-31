@@ -3183,11 +3183,11 @@
     {
       "paper_id": "topology-only-constraints-and-forbidden-operators-in-mo-90db2212",
       "title": "Bundle Selection Rules, Anomaly Lines, and Charge Lattices A Conditional Topological Layer for Modal Triplet Theory",
-      "total_words": 3527,
-      "narrative_words": 2628,
+      "total_words": 3786,
+      "narrative_words": 2887,
       "formal_results": 6,
       "proofs": 4,
-      "narrative_words_per_result": 438.0,
+      "narrative_words_per_result": 481.2,
       "orientation": false,
       "object_intuition": false,
       "argument_flow": false,
@@ -3200,7 +3200,7 @@
       "heuristic_priority": "light",
       "review_status": "reviewed",
       "reviewed_on": "2026-07-31",
-      "review_note": "Version 2 replaces universal topology-only Standard Model claims by a typed realization-level selection framework. It proves the integer U(1) character and central-quotient descent theorem; separates an allowed charge lattice from selection of the observed spectrum; places determinant and Pfaffian anomaly lines over background-field space with curvature, holonomy, locality, counterterm, and inflow conditions; distinguishes sections, trivializations, flatness, and holonomy; defines coefficient spaces and overlap functionals; gives exact dimensions, hypercharge sums, and Picard classes for Yukawa, Weinberg, QQQL, u-c u-c d-c e-c, and singlet-Majorana rows; corrects the proton-decay examples to dimension-six Standard Model gauge singlets in nonsupersymmetric SMEFT; proves a sufficient bundle-selection theorem; integrates exact A22/A46/A47/A50 finite MTT gauge and anomaly results while preserving the A04 profile and A05 no-knob boundaries; and the complete 11-page PDF was visually inspected.",
+      "review_note": "Version 3 retains Version 2's typed realization-level selection framework, integer U(1) character and central-quotient descent theorem, determinant/Pfaffian anomaly-line geometry, exact operator-class table, corrected dimension-six proton-decay examples, and conditional bundle-selection theorem. It adds a hash-bound computational-evidence section that identifies the exact A22/A46/A47/A50 rows, the A04 profile row, and the open A05 no-knob row without promoting any neighboring claim; the complete 12-page PDF was visually inspected.",
       "missing_dimensions": [
         "orientation",
         "object_intuition",

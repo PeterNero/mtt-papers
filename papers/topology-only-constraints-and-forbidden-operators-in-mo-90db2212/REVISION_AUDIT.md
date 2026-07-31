@@ -2,13 +2,18 @@
 
 ## Scope
 
-This audit governs Version 2 of:
+This audit governs Version 3 of:
 
 `topology-only-constraints-and-forbidden-operators-in-mo-90db2212`
 
 Supersedes:
 
+- Version 2, DOI `10.5281/zenodo.21713543`;
 - Version 1, DOI `10.5281/zenodo.18261774`.
+
+Version 3 is a reproducibility correction. It preserves the Version 2
+mathematics and adds the hash-bound, per-result computational-evidence block
+required by the current cross-repository release contract.
 
 Controlling correction authority:
 
@@ -123,7 +128,7 @@ declared.
 
 ## Theorem ownership
 
-Version 2 owns:
+Version 3 owns:
 
 - the typed MTT operator completion record;
 - the realization-scoped bundle-selection theorem;
@@ -155,7 +160,7 @@ The revision was checked against primary records for:
 
 ## Expository review
 
-The revision:
+The Version 2 mathematical revision, retained unchanged in Version 3:
 
 - begins by separating four meanings of "forbidden by topology";
 - identifies the base space and type of every bundle;
@@ -180,15 +185,23 @@ Version 1 claimed broad topology-only hypercharge selection, anomaly
 exclusion, proton stability, and Majorana constraints using objects on the
 wrong bases and incomplete operator tests.
 
-After:
-Version 2 establishes a typed realization-by-realization framework. It
+After Version 2:
+Version 2 established a typed realization-by-realization framework. It
 proves the allowed charge lattice and sufficient bundle-selection theorem,
 corrects anomaly-line geometry, emits exact classes for seven representative
 operators, and records current exact finite MTT gauge/anomaly achievements.
 Universal dangerous-operator exclusion and physical compactification
 selection remain explicitly open.
 
-## Release verification
+After Version 3:
+The mathematical frontier is unchanged. Version 3 binds every imported finite
+MTT status row to the curated results repository commit, manifest hash, row
+identifier, and declared tier. A46, A47, A50, and A22 are used only at their
+exact finite tiers; A04 is identified as profile replay; A05 is explicitly
+open. This removes an evidence-provenance omission without promoting any
+claim.
+
+## Version 2 release record
 
 Version 2 was released on Zenodo as
 [`10.5281/zenodo.21713543`](https://doi.org/10.5281/zenodo.21713543),
@@ -203,7 +216,7 @@ The released record contains exactly one file, `main.pdf`, with:
 - 9 explicit references; and
 - 2 related identifiers.
 
-The final PDF has 11 pages. All 11 rendered pages were visually inspected
+The Version 2 PDF has 11 pages. All 11 rendered pages were visually inspected
 for clipping, overlap, equation placement, table layout, references, and
 legibility. The final canonical hashes are:
 
@@ -221,3 +234,39 @@ The theorem-ownership, interpretive-book, release-requirement, full paper,
 strict-boilerplate, and diff checks passed before publication. The canonical
 artifact refresh and reviewed-artifact freeze were rerun after
 publication-ledger reconciliation.
+
+## Version 3 release verification
+
+Version 3 was released on Zenodo as
+[`10.5281/zenodo.21713632`](https://doi.org/10.5281/zenodo.21713632),
+under concept DOI
+[`10.5281/zenodo.18261773`](https://doi.org/10.5281/zenodo.18261773).
+The released record contains exactly one file, `main.pdf`, with:
+
+- remote MD5 `55e8fa65faa8da6e3a0459762b825fd2`;
+- local SHA-256
+  `af47f7af2a5b645ef21301b828ccd9640b14c2f297e2d92cf1fde66ee0f95af1`;
+- size 378,613 bytes;
+- 9 explicit references; and
+- 2 related identifiers.
+
+The final PDF has 12 pages. All 12 rendered pages were visually inspected for
+clipping, overlap, equation placement, table layout, evidence-block
+legibility, references, and line breaking. The final canonical hashes are:
+
+- `main.tex`:
+  `7c7def0a0f309fe350508a0deccc23d706f958582cb084095d1038be2d4b8898`;
+- `main.bib`:
+  `c236b0b7af8e25e9c36e18f990a87ed91495b3340ecc5134b05111f2845a9745`;
+- `main.pdf`:
+  `af47f7af2a5b645ef21301b828ccd9640b14c2f297e2d92cf1fde66ee0f95af1`;
+  and
+- source tree:
+  `1c9ffe0b55f1f39304948ff1f135889e78cc72e80ca19bbb7aba8194fc33a471`.
+
+The remote metadata was checked before publication: the abstract is plain
+text, the version is `v3`, and the release is a preprint. Local theorem
+ownership, interpretive-book, release-requirement, strict-boilerplate, full
+repository, and diff checks passed before publication. Publication-ledger
+reconciliation succeeded. The final cross-repository API gate and Kernel
+test suite are recorded after the Kernel refresh.

@@ -1,22 +1,22 @@
 {
   "failed": 0,
   "failures": [],
-  "generated_at": "2026-07-31T04:13:56+00:00",
+  "generated_at": "2026-07-31T04:25:51+00:00",
   "mode": "verify",
   "papers": 1,
   "ready": 1,
   "results": [
     {
-      "draft_id": "21713543",
+      "draft_id": "21713632",
       "exact_remote_pdf_count": 1,
       "failures": [],
-      "local_pdf_md5": "31a8bdc9267f9865c4ec3b497296f2c4",
-      "local_pdf_sha256": "c039abd076bb1b4171777d93ad3883a6f6e3b1dbcbd02a71e055b5b09ab836b6",
+      "local_pdf_md5": "55e8fa65faa8da6e3a0459762b825fd2",
+      "local_pdf_sha256": "af47f7af2a5b645ef21301b828ccd9640b14c2f297e2d92cf1fde66ee0f95af1",
       "paper_id": "topology-only-constraints-and-forbidden-operators-in-mo-90db2212",
       "ready": true,
       "remote_pdf": "main.pdf",
       "remote_pdf_count": 1,
-      "version": "v2"
+      "version": "v3"
     }
   ]
 }

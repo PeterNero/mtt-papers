@@ -964,10 +964,10 @@
     "topology-only-constraints-and-forbidden-operators-in-mo-90db2212": {
       "status": "reviewed",
       "reviewed_on": "2026-07-31",
-      "note": "Version 2 replaces universal topology-only Standard Model claims by a typed realization-level selection framework. It proves the integer U(1) character and central-quotient descent theorem; separates an allowed charge lattice from selection of the observed spectrum; places determinant and Pfaffian anomaly lines over background-field space with curvature, holonomy, locality, counterterm, and inflow conditions; distinguishes sections, trivializations, flatness, and holonomy; defines coefficient spaces and overlap functionals; gives exact dimensions, hypercharge sums, and Picard classes for Yukawa, Weinberg, QQQL, u-c u-c d-c e-c, and singlet-Majorana rows; corrects the proton-decay examples to dimension-six Standard Model gauge singlets in nonsupersymmetric SMEFT; proves a sufficient bundle-selection theorem; integrates exact A22/A46/A47/A50 finite MTT gauge and anomaly results while preserving the A04 profile and A05 no-knob boundaries; and the complete 11-page PDF was visually inspected.",
-      "reviewed_main_tex_sha256": "02ba3c274b8b0eacf86b79e26a278706bc335a881780a3f04db60be22f5f0c24",
-      "reviewed_pdf_sha256": "c039abd076bb1b4171777d93ad3883a6f6e3b1dbcbd02a71e055b5b09ab836b6",
-      "reviewed_source_tree_sha256": "14b4626c2f56e52d5404c3452563a987104e64d2506abff44cd433a4f76a8ebb"
+      "note": "Version 3 retains Version 2's typed realization-level selection framework, integer U(1) character and central-quotient descent theorem, determinant/Pfaffian anomaly-line geometry, exact operator-class table, corrected dimension-six proton-decay examples, and conditional bundle-selection theorem. It adds a hash-bound computational-evidence section that identifies the exact A22/A46/A47/A50 rows, the A04 profile row, and the open A05 no-knob row without promoting any neighboring claim; the complete 12-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "7c7def0a0f309fe350508a0deccc23d706f958582cb084095d1038be2d4b8898",
+      "reviewed_pdf_sha256": "af47f7af2a5b645ef21301b828ccd9640b14c2f297e2d92cf1fde66ee0f95af1",
+      "reviewed_source_tree_sha256": "1c9ffe0b55f1f39304948ff1f135889e78cc72e80ca19bbb7aba8194fc33a471"
     }
   }
 }

@@ -5,31 +5,31 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v2
-date: Version 2, July 2026
-generated_from_main_tex_sha256: 02ba3c274b8b0eacf86b79e26a278706bc335a881780a3f04db60be22f5f0c24
+current_version: v3
+date: Version 3, July 2026
+generated_from_main_tex_sha256: 7c7def0a0f309fe350508a0deccc23d706f958582cb084095d1038be2d4b8898
 paper_id: topology-only-constraints-and-forbidden-operators-in-mo-90db2212
 release_state: zenodo_released
-released_version: v2
+released_version: v3
 title: |
   **Bundle Selection Rules, Anomaly Lines, and Charge Lattices**
   A Conditional Topological Layer for Modal Triplet Theory
-zenodo_doi: 10.5281/zenodo.21713543
-zenodo_record_id: 21713543
-zenodo_url: "https://zenodo.org/records/21713543"
+zenodo_doi: 10.5281/zenodo.21713632
+zenodo_record_id: 21713632
+zenodo_url: "https://zenodo.org/records/21713632"
 ---
 
-# Version 2 revision note
+# Version 3 revision note
 
 <div class="description">
 
-Version 1, DOI [`10.5281/zenodo.18261774`](https://doi.org/10.5281/zenodo.18261774).
+Version 2, <https://doi.org/10.5281/zenodo.21713543>; and the original Version 1, <https://doi.org/10.5281/zenodo.18261774>.
 
-Version 1 used rational tensor powers of a line bundle without first choosing a root, placed the anomaly line on the wrong base, treated existence of a global section as equivalent to bundle triviality, and suggested that Standard Model gauge topology removes operators that are already Standard Model gauge singlets.
+Version 1 contained the mathematical errors corrected below. Version 2 made those corrections but cited the curated calculation repository only at repository level; it did not include the hash-bound per-result evidence block required to reproduce the current finite MTT status rows.
 
-Version 2 separates character lattices, global gauge-group descent, determinant-line anomalies, internal Picard classes, coefficient spaces, and actual overlap pairings. Every displayed operator now has an explicit class and a stated decision rule.
+Version 3 retains the Version 2 mathematics, which separates character lattices, global gauge-group descent, determinant-line anomalies, internal Picard classes, coefficient spaces, and actual overlap pairings. It adds an explicit computational-evidence section with repository commit, manifest hash, result identifiers, tiers, and the open strict-upgrade row.
 
-The useful core survives: topology can provide exact, pre-dynamical obstructions inside a fixed realization, and those obstructions are valuable early consistency and falsifiability tests.
+All Version 2 theorems, corrections, explanatory discussion, and physical scope boundaries are unchanged.
 
 MTT has not yet selected the physical bundle endpoint and coefficient functional that would decide all proton-decay and lepton-number-violating operators. Its current exact finite gauge and anomaly results are recorded without promoting them to a no-knob compactification theorem.
 
@@ -334,7 +334,9 @@ The revised framework produces sharp tests, but each test is conditional on a de
 
 An observed proton-decay channel would therefore falsify an MTT realization that had already certified the corresponding operator as absent. It would not, by itself, falsify the abstract idea that some other overlap realizations possess topological selection rules. This distinction turns a broad slogan into a testable scientific statement.
 
-# Version 2 changes and reasons
+# Version 3 changes and reasons
+
+Version 3 preserves the mathematical decisions made in Version 2 and adds the hash-bound evidence record below. The table therefore compares the original Version 1 statements with the corrected Version 2–3 position.
 
 <div class="tabularx">
 
@@ -354,3 +356,47 @@ Topology-only results explain proton stability universally. & Withdraw. & Curren
 Topology is most useful here as a compiler of exact obstructions. Once a global gauge group and a physical bundle realization are fixed, it can say that a representation does not descend, an anomaly line cannot be trivialized, or an operator has no allowed coefficient or overlap functional. Those are strong, pre-dynamical conclusions.
 
 Topology cannot, without additional source data, choose the observed matter spectrum, make every dangerous Standard Model gauge singlet disappear, or turn a vanishing first Chern class into a nonzero coupling. Version 2 makes that boundary explicit. The present MTT finite carrier already supplies an exact $`\mathbb{Z}_6`$ global group, a chiral anomaly table, and a unique anomaly-free normalized hypercharge vector inside its chosen completion. The next physical theorem is now concrete: emit the selected internal classes and coefficient functionals for the operator rows in <a href="#tab:operators" data-reference-type="ref+label" data-reference="tab:operators">[tab:operators]</a> on the same compactification branch. Until then, the paper provides a rigorous conditional selection language and an auditable completion contract.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The finite MTT statements in the current-status table are imports, not proofs
+of the bundle-selection theorems in this paper. The exact rows support only
+the declared finite representation, gauge-group, hypercharge, and anomaly
+statements. The profile row records the adopted embedded-SM standard, and the
+open row marks the stronger no-knob boundary.
+
+- **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+- **Commit:** `31247ebb5c22f3fbb5443024365433c6ee0bff4a`
+- **Manifest:** `release/result_manifest.json`
+- **Manifest SHA-256:** `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`
+
+Tier labels below are quoted from that manifest. A row supports only its
+stated finite calculation; it does not select the physical compactification
+or prove an operator coefficient.
+
+## Rows used directly
+
+- `A46/typed_family_representation` (**DERIVED_EXACT**): 48-state
+  family-diagonal chiral representation and anomaly table.
+- `A47/native_gauge_group` (**DERIVED_EXACT**): native `U(1)`, `SU(2)`,
+  `SU(3)` automorphisms and the `Z6` quotient.
+- `A50/neutral_summand_hypercharge` (**DERIVED_EXACT**): neutral-summand
+  completion and unique anomaly-free shared hypercharge circle.
+- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): `E6` `Q_psi`
+  matter/exotic QCD anomaly cancellation audit.
+
+## Corpus-status cross-check
+
+- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): twelve-obligation embedded
+  renormalized-SM equivalence audit at the declared profile standard.
+
+## Open boundary
+
+- `A05/strict_upgrade_ledger` (**OPEN**): current `2/9` strict no-knob
+  upgrade ledger. This row is not evidence of closure.
+
+No imported row changes theorem ownership or promotes a neighboring claim.
+All local statements retain their stated hypotheses, domains, and
+limitations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

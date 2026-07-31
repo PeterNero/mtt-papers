@@ -5,36 +5,36 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "Version 2, July 2026",
+  "current_version": "v3",
+  "date": "Version 3, July 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261773",
-    "created": "2026-07-31T04:14:17.730800+00:00",
+    "created": "2026-07-31T04:26:14.001620+00:00",
     "creators": [
       "Nero, Peter"
     ],
-    "doi": "10.5281/zenodo.21713543",
+    "doi": "10.5281/zenodo.21713632",
     "files": [
       {
-        "checksum": "md5:31a8bdc9267f9865c4ec3b497296f2c4",
-        "content_url": "https://zenodo.org/api/records/21713543/files/main.pdf/content",
+        "checksum": "md5:55e8fa65faa8da6e3a0459762b825fd2",
+        "content_url": "https://zenodo.org/api/records/21713632/files/main.pdf/content",
         "key": "main.pdf",
-        "size": 367630
+        "size": 378613
       }
     ],
-    "id": "21713543",
+    "id": "21713632",
     "match_kind": "published_draft_reconciliation",
     "match_score": 1.0,
     "publication_date": "2026-07-31",
-    "record_url": "https://zenodo.org/records/21713543",
+    "record_url": "https://zenodo.org/records/21713632",
     "resource_type": "publication",
     "title": "Bundle Selection Rules, Anomaly Lines, and Charge Lattices A Conditional Topological Layer for Modal Triplet Theory",
-    "updated": "2026-07-31T04:14:18.208713+00:00",
-    "version": "v2"
+    "updated": "2026-07-31T04:26:14.543713+00:00",
+    "version": "v3"
   },
-  "main_tex_sha256": "02ba3c274b8b0eacf86b79e26a278706bc335a881780a3f04db60be22f5f0c24",
+  "main_tex_sha256": "7c7def0a0f309fe350508a0deccc23d706f958582cb084095d1038be2d4b8898",
   "paper_id": "topology-only-constraints-and-forbidden-operators-in-mo-90db2212",
-  "paper_md_sha256": "dd0868012e92f1c2a7175d36e38cf9bb508e3da6f448ad3b92360f1e10c7b027",
+  "paper_md_sha256": "3ea7a6c9d9a02538b58aa42629c535eee1ae86f28a807a386c228c6939f516a9",
   "release_state": "zenodo_released",
   "result_refs": [
     "e6_qpsi_qcd_anomaly",
@@ -46,15 +46,15 @@
   ],
   "revision": {
     "revision_evidence_path": "papers/topology-only-constraints-and-forbidden-operators-in-mo-90db2212/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "223bef75eb9f767b466f81245b68c54bb9a65919cc7262fc4d9ef356dbc9670d",
+    "revision_evidence_sha256": "4b6679687c503483786b750f2b8417702d914b36eeceb3a62a43edbf26e6e9ae",
     "selected_revision": true
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 28596,
+      "bytes": 31340,
       "path": "main.tex",
-      "sha256": "02ba3c274b8b0eacf86b79e26a278706bc335a881780a3f04db60be22f5f0c24"
+      "sha256": "7c7def0a0f309fe350508a0deccc23d706f958582cb084095d1038be2d4b8898"
     },
     {
       "bytes": 3784,
@@ -67,18 +67,43 @@
       "sha256": "c236b0b7af8e25e9c36e18f990a87ed91495b3340ecc5134b05111f2845a9745"
     },
     {
-      "bytes": 367630,
+      "bytes": 378613,
       "path": "main.pdf",
-      "sha256": "c039abd076bb1b4171777d93ad3883a6f6e3b1dbcbd02a71e055b5b09ab836b6"
+      "sha256": "af47f7af2a5b645ef21301b828ccd9640b14c2f297e2d92cf1fde66ee0f95af1"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Topology_Only_Constraints_and_Forbidden_Operators_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "14b4626c2f56e52d5404c3452563a987104e64d2506abff44cd433a4f76a8ebb",
+  "source_tree_sha256": "1c9ffe0b55f1f39304948ff1f135889e78cc72e80ca19bbb7aba8194fc33a471",
   "title": "Bundle Selection Rules, Anomaly Lines, and Charge Lattices A Conditional Topological Layer for Modal Triplet Theory",
   "version_relation": "matches_latest_release",
   "zenodo_releases": [
+    {
+      "concept_doi": "10.5281/zenodo.18261773",
+      "created": "2026-07-31T04:26:14.001620+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21713632",
+      "files": [
+        {
+          "checksum": "md5:55e8fa65faa8da6e3a0459762b825fd2",
+          "content_url": "https://zenodo.org/api/records/21713632/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 378613
+        }
+      ],
+      "id": "21713632",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21713632",
+      "resource_type": "publication",
+      "title": "Bundle Selection Rules, Anomaly Lines, and Charge Lattices A Conditional Topological Layer for Modal Triplet Theory",
+      "updated": "2026-07-31T04:26:14.543713+00:00",
+      "version": "v3"
+    },
     {
       "concept_doi": "10.5281/zenodo.18261773",
       "created": "2026-07-31T04:14:17.730800+00:00",
