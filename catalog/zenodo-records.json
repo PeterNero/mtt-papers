@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18355085",
+      "created": "2026-07-31T09:01:40.616539+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21718038",
+      "files": [
+        {
+          "checksum": "md5:ae1a86eea970b9f822a14850fe54d401",
+          "content_url": "https://zenodo.org/api/records/21718038/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 420140
+        }
+      ],
+      "id": "21718038",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21718038",
+      "resource_type": "publication",
+      "title": "The Modal Triplet Theory Program B4: Typed Encoding Intersections, Conditional Rigidity, and Standard Model Compatibility",
+      "updated": "2026-07-31T09:01:40.957359+00:00",
+      "version": "v3"
+    },
+    {
       "concept_doi": "10.5281/zenodo.17162075",
       "created": "2026-07-31T08:47:34.690861+00:00",
       "creators": [

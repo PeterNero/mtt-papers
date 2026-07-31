@@ -23,7 +23,7 @@
 Typed Encoding Intersections, Conditional Rigidity,\\
 and Standard Model Compatibility}
 \author{Peter Nero}
-\date{July 2026}
+\date{July 2026, Version 3}
 
 \begin{document}
 
@@ -60,25 +60,22 @@ therefore supplies a conditional rigidity theorem and a Standard Model
 compatibility certificate, not a uniqueness theorem for the observed theory.
 \end{abstract}
 
-\section*{Revision note for version 2}
+\section*{Revision note for version 3}
 
 \begin{description}[leftmargin=2.5cm,style=nextline]
 \item[Supersedes.]
-Version~1 of Program B4.
+Version~2 of Program B4.
 
 \item[Reason.]
-The first version called triple intersections generically rigid without
-specifying a topology, deformation class, independent constraint equations, or
-quotient by equivalence.  It also conflated classical overlap failure with
-quantum anomaly and moved from Standard Model consistency to an informal
-explanation of its exceptional selection.
+Version~2 already supplied the corrected conditional-rigidity theorem and
+used three exact finite Standard Model packets, but its managed
+reproducibility block incorrectly reported that no result rows were mapped.
 
 \item[Resolution.]
-Version~2 defines compatibility, local rigidity, infinitesimal rigidity,
-persistence, and global uniqueness separately.  It proves a full-rank local
-rigidity criterion and a transverse intersection dimension theorem, states the
-required representation/anomaly/overlap contract, and gives explicit
-nonuniqueness countermodels.
+Version~3 maps the A46 representation, A47 faithful gauge group, and A50
+hypercharge-line packets explicitly in both canonical sources and pins their
+curated repository revision.  All three packets are retained at their
+declared exact finite tier.  No theorem, proof, or uniqueness claim changes.
 
 \item[Retained content.]
 Combining independently meaningful constraints can narrow a realization
@@ -92,7 +89,11 @@ beyond-Standard-Model branches.  Consequently no global uniqueness or
 inevitability claim is made.
 \end{description}
 
+\begingroup
+\small
+\setlength{\parskip}{0pt}
 \tableofcontents
+\endgroup
 \newpage
 
 \section{How to Read Program B4}
@@ -873,7 +874,16 @@ E.~Witten,
 
 % BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
 \section*{Computational Evidence and Reproducibility}
-The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+The finite compatibility claims used by this paper are archived in the
+\href{https://github.com/PeterNero/mtt-results-repro/tree/31247ebb5c22f3fbb5443024365433c6ee0bff4a}
+{curated results repository at commit \texttt{31247ebb5c22}}.
+The mapped authority/result identifiers are
+\nolinkurl{A47/native_gauge_group},
+\nolinkurl{A50/neutral_summand_hypercharge}, and
+\nolinkurl{A46/typed_family_representation}.
+All three are exact finite results on the selected carrier.  Their citation
+does not turn conditional uniqueness inside that carrier into an exhaustive
+classification of alternative physical theories.
 % END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \end{document}

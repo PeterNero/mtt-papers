@@ -389,9 +389,9 @@
       "status": "reviewed",
       "reviewed_on": "2026-07-28",
       "note": "Compatibility, local rigidity, branch-internal uniqueness, and exhaustive selection separated; 14-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "cd29276ede02f9971e2782edcaff830a40c2ff9f7917a25c6d26fc485d5088f9",
-      "reviewed_pdf_sha256": "e5ccea5afa336ec38d386b09d41dbc0531c7c4d40754b2fc5ceb7a7e41c8dfa2",
-      "reviewed_source_tree_sha256": "1a9d23a065a4dadd05e769b91a8a159edcd7e501353f2aaf793dfa994d80c040"
+      "reviewed_main_tex_sha256": "c2d1e3306c44c368db643a89728d0a88c152d07969f2adb6a5f80e813bad3e33",
+      "reviewed_pdf_sha256": "cd69576414dddc331da294a7f63380fca25f41aefd287193218245ea748e83f5",
+      "reviewed_source_tree_sha256": "7f929f49807691f5574bc07730946e7b2db795db21c4c8fc6301707054c6dee4"
     },
     "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f": {
       "status": "reviewed",

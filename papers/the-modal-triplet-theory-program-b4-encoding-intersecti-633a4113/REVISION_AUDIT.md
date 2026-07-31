@@ -1,11 +1,26 @@
 # Program B4 revision audit
 
+## Version 3 reproducibility delta
+
+Version 3 preserves the complete Version 2 scientific correction. It replaces
+the stale managed statement `no result rows mapped` by the three exact result
+objects already used in the paper:
+
+- `typed_family_representation` (A46);
+- `native_gauge_group` (A47); and
+- `neutral_summand_hypercharge` (A50).
+
+Both canonical sources point to curated-results commit
+`31247ebb5c22f3fbb5443024365433c6ee0bff4a`. This is a provenance correction,
+not a new rigidity or Standard Model uniqueness theorem. The open exhaustive
+classification boundary is unchanged.
+
 ## Selected revision
 
 - Paper: `The Modal Triplet Theory Program B4`
 - Superseded source: version 1.0
 - Superseded source SHA-256: `498fbc58d177335a41210378439ffe333eca0ae3191cba6298ffd9decfdbd16c`
-- Selected successor: version 2
+- Selected successor: version 3
 - Controlling correction authority: `A10`
 - A10 SHA-256: `78be7385c3acfb484f31db7fad08a525bced4b86eb0df63c4622a772e730571e`
 

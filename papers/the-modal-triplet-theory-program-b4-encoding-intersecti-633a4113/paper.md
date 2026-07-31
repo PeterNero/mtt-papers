@@ -7,30 +7,30 @@ abstract: |
   We distinguish classical bundle-cocycle consistency from quantum gauge anomalies. Anomaly cancellation is necessary for a declared chiral quantum gauge realization but does not select a unique group or representation. Within the fixed selected finite MTT carrier, later exact packets establish a 48-state family-diagonal chiral representation, the faithful global group $`(SU(3)\times SU(2)\times U(1))/\mathbb Z_6`$, and a unique anomaly-free hypercharge line for the completed finite algebra. We reproduce the relevant anomaly cancellations and state their exact scope. They prove one selected compatibility branch, not an exhaustive classification of alternative representations, topologies, actions, or ultraviolet completions. Program B4 therefore supplies a conditional rigidity theorem and a Standard Model compatibility certificate, not a uniqueness theorem for the observed theory.
 author:
 - Peter Nero
-current_version: v2
-date: July 2026
-generated_from_main_tex_sha256: cd29276ede02f9971e2782edcaff830a40c2ff9f7917a25c6d26fc485d5088f9
+current_version: v3
+date: July 2026, Version 3
+generated_from_main_tex_sha256: c2d1e3306c44c368db643a89728d0a88c152d07969f2adb6a5f80e813bad3e33
 paper_id: the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113
 release_state: zenodo_released
-released_version: v2
+released_version: v3
 title: |
   The Modal Triplet Theory Program B4:
   Typed Encoding Intersections, Conditional Rigidity,
   and Standard Model Compatibility
-zenodo_doi: 10.5281/zenodo.21652656
-zenodo_record_id: 21652656
-zenodo_url: "https://zenodo.org/records/21652656"
+zenodo_doi: 10.5281/zenodo.21718038
+zenodo_record_id: 21718038
+zenodo_url: "https://zenodo.org/records/21718038"
 ---
 
-# Revision note for version 2
+# Revision note for version 3
 
 <div class="description">
 
-Version 1 of Program B4.
+Version 2 of Program B4.
 
-The first version called triple intersections generically rigid without specifying a topology, deformation class, independent constraint equations, or quotient by equivalence. It also conflated classical overlap failure with quantum anomaly and moved from Standard Model consistency to an informal explanation of its exceptional selection.
+Version 2 already supplied the corrected conditional-rigidity theorem and used three exact finite Standard Model packets, but its managed reproducibility block incorrectly reported that no result rows were mapped.
 
-Version 2 defines compatibility, local rigidity, infinitesimal rigidity, persistence, and global uniqueness separately. It proves a full-rank local rigidity criterion and a transverse intersection dimension theorem, states the required representation/anomaly/overlap contract, and gives explicit nonuniqueness countermodels.
+Version 3 maps the A46 representation, A47 faithful gauge group, and A50 hypercharge-line packets explicitly in both canonical sources and pins their curated repository revision. All three packets are retained at their declared exact finite tier. No theorem, proof, or uniqueness claim changes.
 
 Combining independently meaningful constraints can narrow a realization space; anomaly equations can remove candidate chiral representations; and the Standard Model furnishes an important compatible realization.
 
@@ -603,6 +603,8 @@ E. Witten, “An $`SU(2)`$ anomaly,” *Physics Letters B* 117 (1982), 324–32
 
 </div>
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
-The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+The finite compatibility claims used by this paper are archived in the [curated results repository at commit `31247ebb5c22`](https://github.com/PeterNero/mtt-results-repro/tree/31247ebb5c22f3fbb5443024365433c6ee0bff4a). The mapped authority/result identifiers are `A47/native_gauge_group`, `A50/neutral_summand_hypercharge`, and `A46/typed_family_representation`. All three are exact finite results on the selected carrier. Their citation does not turn conditional uniqueness inside that carrier into an exhaustive classification of alternative physical theories.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
