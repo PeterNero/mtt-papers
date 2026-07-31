@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.18255154",
+      "created": "2026-07-31T10:07:13.401102+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21719211",
+      "files": [
+        {
+          "checksum": "md5:6976a4e224c2e071d3f03e43b83830ec",
+          "content_url": "https://zenodo.org/api/records/21719211/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 341898
+        }
+      ],
+      "id": "21719211",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21719211",
+      "resource_type": "publication",
+      "title": "Twistor Encodings as a Conditional High-Coherence Corner of MTT: Conformal-spin geometry, controlled reduction, and the limits of the bridge",
+      "updated": "2026-07-31T10:07:13.998592+00:00",
+      "version": "v2"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18256105",
       "created": "2026-07-31T09:56:01.667785+00:00",
       "creators": [

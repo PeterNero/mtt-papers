@@ -1072,6 +1072,14 @@
       "reviewed_main_tex_sha256": "4925b8cfecd02875f040021f3baf7230f5b2243f43b2c8993153a58b3ddeef54",
       "reviewed_pdf_sha256": "f74794b24c934bac460fd841c34cad8aff0d9b1cd9de3b86a5c1dc795544862d",
       "reviewed_source_tree_sha256": "725e57103e027883acfeabb25a67a9922af1f9e62181857da6686585c09ba69b"
+    },
+    "twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 2 separates coherent-sector reduction from twistor correspondence. It states the conformal-spin carrier, twistor distribution, double fibration, Penrose-Ward field data, reality conditions, action bridge, and four independent error rows; proves that a gapped projector does not generate twistor geometry; derives the exact projected memory equation and its gap-controlled norm; proves that loss of a gap bound does not force stochastic or kernel-valued evolution; gives a conditional same-source twistor-descent theorem; scopes Yang-Mills, gravity, massive, and non-self-dual extensions; preserves the high-coherence twistor corner as a conditional encoding rather than a universal MTT limit; keeps the selected upper action and intertwiner open; and the complete 11-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "bebc579cb9395d23bc00d236638bef4596892a6ae7af1c0d0c12f512c46122a8",
+      "reviewed_pdf_sha256": "8ce40e79ed573d6886c727612a0506c7f8c1c81a06f813df7c3a31f178bda9a5",
+      "reviewed_source_tree_sha256": "f60e510cea66cf35e70b548068f139d3f1231689264ad841dfc8505c0165a942"
     }
   }
 }

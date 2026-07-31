@@ -4,17 +4,16 @@
   "papers": 139,
   "priority_counts": {
     "light": 2,
-    "major": 1,
     "moderate": 2,
     "reference_ready": 2,
-    "reviewed": 132
+    "reviewed": 133
   },
   "missing_dimension_counts": {
     "argument_flow": 32,
     "conclusion": 5,
     "concrete_foothold": 23,
-    "object_intuition": 85,
-    "orientation": 61,
+    "object_intuition": 86,
+    "orientation": 62,
     "result_interpretation": 7
   },
   "forbidden_boilerplate_hits": [],
@@ -3228,26 +3227,29 @@
     },
     {
       "paper_id": "twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29",
-      "title": "Twistor Encodings as High Coherence Limits of Modal Triplet Theory",
-      "total_words": 5212,
-      "narrative_words": 3158,
-      "formal_results": 15,
-      "proofs": 10,
-      "narrative_words_per_result": 210.5,
-      "orientation": true,
-      "object_intuition": true,
+      "title": "Twistor Encodings as a Conditional High-Coherence Corner of MTT: Conformal-spin geometry, controlled reduction, and the limits of the bridge",
+      "total_words": 3202,
+      "narrative_words": 2421,
+      "formal_results": 8,
+      "proofs": 4,
+      "narrative_words_per_result": 302.6,
+      "orientation": false,
+      "object_intuition": false,
       "argument_flow": true,
       "result_interpretation": true,
       "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
-      "coverage_dimensions": 7,
-      "audit_priority": "major",
-      "heuristic_priority": "major",
-      "review_status": "",
-      "reviewed_on": "",
-      "review_note": "",
-      "missing_dimensions": []
+      "coverage_dimensions": 5,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "moderate",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "review_note": "Version 2 separates coherent-sector reduction from twistor correspondence. It states the conformal-spin carrier, twistor distribution, double fibration, Penrose-Ward field data, reality conditions, action bridge, and four independent error rows; proves that a gapped projector does not generate twistor geometry; derives the exact projected memory equation and its gap-controlled norm; proves that loss of a gap bound does not force stochastic or kernel-valued evolution; gives a conditional same-source twistor-descent theorem; scopes Yang-Mills, gravity, massive, and non-self-dual extensions; preserves the high-coherence twistor corner as a conditional encoding rather than a universal MTT limit; keeps the selected upper action and intertwiner open; and the complete 11-page PDF was visually inspected.",
+      "missing_dimensions": [
+        "orientation",
+        "object_intuition"
+      ]
     },
     {
       "paper_id": "universality-and-robustness-of-the-coherent-sector-in-m-a64842b3",

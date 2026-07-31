@@ -10,10 +10,9 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| major | 1 |
 | moderate | 2 |
 | light | 2 |
-| reviewed | 132 |
+| reviewed | 133 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -23,15 +22,14 @@ Canonical papers audited: **139**.
 | argument_flow | 32 |
 | conclusion | 5 |
 | concrete_foothold | 23 |
-| object_intuition | 85 |
-| orientation | 61 |
+| object_intuition | 86 |
+| orientation | 62 |
 | result_interpretation | 7 |
 
 ## Revision Queue
 
 | Effective priority | Heuristic | Paper | Formal results | Narrative words/result | Coverage | Missing |
 | --- | --- | --- | ---: | ---: | ---: | --- |
-| major | major | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 15 | 210.5 | 7/7 | - |
 | moderate | moderate | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 8 | 381.4 | 4/7 | object_intuition, concrete_foothold, conclusion |
 | moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
@@ -97,6 +95,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `fixed-points-iii-disturbance-damping-balance-and-stability` | 8 | 222.2 | 7/7 | - |
 | reviewed | light | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 8 | 408.0 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 8 | 277.6 | 5/7 | orientation, object_intuition |
+| reviewed | moderate | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 8 | 302.6 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014` | 7 | 251.7 | 7/7 | - |
 | reviewed | moderate | `entanglement-locality-and-measurement-from-coherent-sec-110e8cbe` | 7 | 379.0 | 6/7 | object_intuition |
 | reviewed | moderate | `finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb` | 7 | 269.3 | 4/7 | orientation, object_intuition, argument_flow |

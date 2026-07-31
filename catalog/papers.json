@@ -7,8 +7,8 @@
     "papers_without_zenodo_match": 1,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
-    "zenodo_records": 275,
-    "zenodo_records_matched": 275,
+    "zenodo_records": 276,
+    "zenodo_records_matched": 276,
     "zenodo_records_unmatched": 0
   },
   "papers": [
@@ -13638,52 +13638,82 @@
       ]
     },
     {
-      "abstract": "Penrose twistor theory provides a powerful holomorphic encoding of massless, self-dual, and conformally invariant sectors of four-dimensional field theories, yet has long resisted interpretation as a fundamental description of nature. In this paper we show that twistor theory arises naturally as an effective encoding of a distinguished high-coherence regime of Modal Triplet Theory (MTT). Using the coherent-sector projection, spectral-gap control, and controlled truncation framework of MTT, we define a precise twistor corner in which twistor methods are valid, explain their efficiency and limitations, and derive a sharp criterion for their breakdown. Technically, we identify the twistor corner as the regime in which noncoherent modes are suppressed, mass-generation effects are negligible, scale variation is slow, and the coherent gauge or gravitational sector is near self-dual. We prove that in this regime the coherent dynamics admits a Schur\u2013Feshbach reduced generator whose correction term is suppressed by the inverse spectral gap. Twistor encoding is valid precisely while this controlled truncation correction remains below an admissibility threshold. When the gap collapses or coherent\u2013noncoherent mixing grows beyond threshold, the induced evolution on coherent data becomes kernel-valued, signaling a genuine MTT selection event and forcing re-projection into a new admissible basin. This work situates twistor theory within a broader theory of coherence, selection, and irreversibility, explaining both its remarkable successes and its intrinsic domain of validity.",
-      "authors": [],
+      "abstract": "Twistor methods encode important four-dimensional massless, conformal, and self-dual field sectors in holomorphic geometry. This paper asks a narrower MTT question: when may an already selected coherent sector be represented by such twistor data? The answer requires two logically independent bridges. First, controlled projection must reduce upper dynamics to a four-dimensional sector with an explicit error estimate. Second, that sector must carry the conformal spin geometry, integrable twistor distribution, reality structure, and field equations required by the Penrose or Penrose\u2013Ward correspondence. A spectral gap can support the first bridge but cannot create the second. We prove this separation by a finite-dimensional counterexample, derive the exact memory equation for projected dynamics, and show that loss of a gap or error bound does not imply stochastic, set-valued, or kernel-valued evolution. We then state a conditional twistor-descent theorem: if one selected MTT source supplies the projection, four-dimensional conformal-spin carrier, self-dual field sector, twistor double fibration, reconstruction map, and commuting dynamics, the standard twistor correspondence becomes a valid encoding of that MTT sector. Approximate use additionally requires stability estimates for both truncation and holomorphic or self-duality defects. This revision preserves the high-coherence twistor corner as a useful conditional encoding, while withdrawing claims that twistor geometry, optimality, selection events, irreversibility, or arbitrary MTT dynamics follow from spectral suppression alone.",
+      "authors": [
+        "Peter Nero"
+      ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1.0",
-      "date": "",
+      "current_version": "v2",
+      "date": "July 2026, Version 2",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18255154",
-        "created": "2026-01-15T10:09:04.392874+00:00",
+        "created": "2026-07-31T10:07:13.401102+00:00",
         "creators": [
           "Nero, Peter"
         ],
-        "doi": "10.5281/zenodo.18255155",
+        "doi": "10.5281/zenodo.21719211",
         "files": [
           {
-            "checksum": "md5:77a77a2636a59ccfe957e7b62b09c268",
-            "content_url": "https://zenodo.org/api/records/18255155/files/Twistor_Encodings_as_High_Coherence_Limits_of_Modal_Triplet_Theory%20(5).pdf/content",
-            "key": "Twistor_Encodings_as_High_Coherence_Limits_of_Modal_Triplet_Theory (5).pdf",
-            "size": 319805
+            "checksum": "md5:6976a4e224c2e071d3f03e43b83830ec",
+            "content_url": "https://zenodo.org/api/records/21719211/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 341898
           }
         ],
-        "id": "18255155",
-        "match_kind": "title_or_file",
+        "id": "21719211",
+        "match_kind": "published_draft_reconciliation",
         "match_score": 1.0,
-        "publication_date": "2026-01-15",
-        "record_url": "https://zenodo.org/records/18255155",
+        "publication_date": "2026-07-31",
+        "record_url": "https://zenodo.org/records/21719211",
         "resource_type": "publication",
-        "title": "Twistor Encodings as High-Coherence Limits of Modal Triplet Theory",
-        "updated": "2026-01-15T10:09:04.793808+00:00",
-        "version": "v1.0"
+        "title": "Twistor Encodings as a Conditional High-Coherence Corner of MTT: Conformal-spin geometry, controlled reduction, and the limits of the bridge",
+        "updated": "2026-07-31T10:07:13.998592+00:00",
+        "version": "v2"
       },
-      "main_tex_sha256": "0c25787aa20c061590224a56ffa9757558739957b6dc297800e31e8bcbd94bba",
+      "main_tex_sha256": "bebc579cb9395d23bc00d236638bef4596892a6ae7af1c0d0c12f512c46122a8",
       "paper_id": "twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29",
-      "paper_md_sha256": "56c2ebe74e5c37825723a73a56b4dd20bf98d0960d72669ddd75590b28ca3126",
+      "paper_md_sha256": "b530706e0eafecc182aeab5e26c0b147d02cb5663e3aaa5d2a4c7144812a9de3",
       "release_state": "zenodo_released",
       "result_refs": [],
       "revision": {
-        "selected_revision": false
+        "revision_evidence_path": "papers/twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "5d36e39e4cd7efcfa125f06b9df4fee4e8b43dcbd2c1f80f21d71e44b657d38f",
+        "selected_revision": true,
+        "superseded_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/Twistor_Encodings_as_High_Coherence_Limits_of_Modal_Triplet_Theory"
       },
       "source_provenance": {
         "legacy_source_path": "17 Topology, Invariants & Condensed-Matter Shadows/_work/Twistor_Encodings_as_High_Coherence_Limits_of_Modal_Triplet_Theory"
       },
-      "source_tree_sha256": "48f952d4c402f127ed7689ccb2f63125ddbd2511e493138d20987726f731fb15",
-      "title": "Twistor Encodings as High Coherence Limits of Modal Triplet Theory",
+      "source_tree_sha256": "f60e510cea66cf35e70b548068f139d3f1231689264ad841dfc8505c0165a942",
+      "title": "Twistor Encodings as a Conditional High-Coherence Corner of MTT: Conformal-spin geometry, controlled reduction, and the limits of the bridge",
       "version_relation": "matches_latest_release",
       "zenodo_releases": [
+        {
+          "concept_doi": "10.5281/zenodo.18255154",
+          "created": "2026-07-31T10:07:13.401102+00:00",
+          "creators": [
+            "Nero, Peter"
+          ],
+          "doi": "10.5281/zenodo.21719211",
+          "files": [
+            {
+              "checksum": "md5:6976a4e224c2e071d3f03e43b83830ec",
+              "content_url": "https://zenodo.org/api/records/21719211/files/main.pdf/content",
+              "key": "main.pdf",
+              "size": 341898
+            }
+          ],
+          "id": "21719211",
+          "match_kind": "published_draft_reconciliation",
+          "match_score": 1.0,
+          "publication_date": "2026-07-31",
+          "record_url": "https://zenodo.org/records/21719211",
+          "resource_type": "publication",
+          "title": "Twistor Encodings as a Conditional High-Coherence Corner of MTT: Conformal-spin geometry, controlled reduction, and the limits of the bridge",
+          "updated": "2026-07-31T10:07:13.998592+00:00",
+          "version": "v2"
+        },
         {
           "concept_doi": "10.5281/zenodo.18255154",
           "created": "2026-01-15T10:09:04.392874+00:00",

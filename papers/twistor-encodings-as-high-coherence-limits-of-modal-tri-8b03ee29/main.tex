@@ -1,1203 +1,660 @@
 \documentclass[11pt]{article}
+\usepackage{series}
+\usepackage{booktabs}
+\usepackage{array}
 
-\usepackage{series}   % provided by the user
-\usepackage{amsmath,amssymb,amsthm,amsfonts}
-\usepackage{mathrsfs}
-\usepackage{hyperref}
-\usepackage{geometry}
-\geometry{margin=1in}
-
-\numberwithin{equation}{section}
-
-
-% operators
 \DeclareMathOperator{\Dom}{Dom}
-\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\End}{End}
+\newcommand{\PT}{\mathbb{PT}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cS}{\mathcal{S}}
+
+\title{\textbf{Twistor Encodings as a Conditional High-Coherence Corner of MTT:}\\
+\large Conformal-spin geometry, controlled reduction, and the limits of the bridge}
+\author{Peter Nero}
+\date{July 2026, Version 2}
 
 \begin{document}
-
-\begin{center}
-{\Large\bf Twistor Encodings as High-Coherence Limits of Modal Triplet Theory}
-
-\vspace{0.4cm}
-
-{\large A Coherent-Sector Encoding, Controlled Truncation, and Kernel Transition Criterion}
-
-\vspace{0.6cm}
-
-{\normalsize
-Peter Nero
-}
-\end{center}
-
-\vspace{0.6cm}
+\maketitle
 
 \begin{abstract}
-Penrose twistor theory provides a powerful holomorphic encoding of massless,
-self-dual, and conformally invariant sectors of four-dimensional field theories,
-yet has long resisted interpretation as a fundamental description of nature.
-In this paper we show that twistor theory arises naturally as an \emph{effective
-encoding} of a distinguished high-coherence regime of Modal Triplet Theory (MTT).
-Using the coherent-sector projection, spectral-gap control, and controlled
-truncation framework of MTT, we define a precise \emph{twistor corner} in which
-twistor methods are valid, explain their efficiency and limitations, and derive
-a sharp criterion for their breakdown.
-
-Technically, we identify the twistor corner as the regime in which noncoherent
-modes are suppressed, mass-generation effects are negligible, scale variation is
-slow, and the coherent gauge or gravitational sector is near self-dual. We prove
-that in this regime the coherent dynamics admits a Schur--Feshbach reduced
-generator whose correction term is suppressed by the inverse spectral gap.
-Twistor encoding is valid precisely while this controlled truncation correction
-remains below an admissibility threshold. When the gap collapses or coherent--noncoherent
-mixing grows beyond threshold, the induced evolution on coherent data becomes
-kernel-valued, signaling a genuine MTT selection event and forcing re-projection
-into a new admissible basin.
-
-This work situates twistor theory within a broader theory of coherence, selection,
-and irreversibility, explaining both its remarkable successes and its intrinsic
-domain of validity.
+Twistor methods encode important four-dimensional massless, conformal, and
+self-dual field sectors in holomorphic geometry. This paper asks a narrower
+MTT question: when may an already selected coherent sector be represented by
+such twistor data? The answer requires two logically independent bridges.
+First, controlled projection must reduce upper dynamics to a four-dimensional
+sector with an explicit error estimate. Second, that sector must carry the
+conformal spin geometry, integrable twistor distribution, reality structure,
+and field equations required by the Penrose or Penrose--Ward correspondence.
+A spectral gap can support the first bridge but cannot create the second.
+We prove this separation by a finite-dimensional counterexample, derive the
+exact memory equation for projected dynamics, and show that loss of a gap or
+error bound does not imply stochastic, set-valued, or kernel-valued evolution.
+We then state a conditional twistor-descent theorem: if one selected MTT
+source supplies the projection, four-dimensional conformal-spin carrier,
+self-dual field sector, twistor double fibration, reconstruction map, and
+commuting dynamics, the standard twistor correspondence becomes a valid
+encoding of that MTT sector. Approximate use additionally requires stability
+estimates for both truncation and holomorphic or self-duality defects. This
+revision preserves the high-coherence twistor corner as a useful conditional
+encoding, while withdrawing claims that twistor geometry, optimality,
+selection events, irreversibility, or arbitrary MTT dynamics follow from
+spectral suppression alone.
 \end{abstract}
+
+\section*{Version 2 Revision Note}
+\begin{description}[leftmargin=2.8cm,style=nextline]
+\item[Supersedes] Version 1.0, released in January 2026.
+\item[Reason] The previous paper treated spectral-gap reduction as if it
+generated twistor geometry, called the resulting encoding optimal and
+faithful without constructing its geometric data, and inferred
+kernel-valued selection from loss of a truncation bound.
+\item[Resolution] Version 2 separates dynamical reduction from twistor
+correspondence, states the full conformal-spin and field-theoretic contract,
+proves two no-go results for the former implications, and gives an exact
+conditional descent theorem.
+\item[Retained content] Schur--Feshbach and memory-kernel control remain
+useful for estimating leakage from a selected coherent sector. The
+self-dual massless corner remains a natural place to test a twistor encoding.
+\item[Open boundary] MTT has not yet selected one upper action and
+intertwiner that produces the physical four-dimensional conformal-spin
+carrier, its self-dual field equations, twistor reconstruction, coupling
+normalization, and controlled deformation to the full theory.
+\end{description}
 
 \tableofcontents
 
-\section{Introduction}
+\section{The precise question}
 
-Twistor theory, introduced by Penrose \cite{Penrose1967,Penrose1972}, replaces
-spacetime fields by holomorphic data on a complex geometric space encoding null
-directions and conformal structure. It has achieved striking successes: the
-Penrose transform for massless fields, the Ward correspondence for self-dual
-Yang--Mills theory, the nonlinear graviton for self-dual gravity, and the modern
-twistor-amplitude revolution initiated by Witten \cite{Witten2004} and developed
-further in \cite{CachazoSvrcekWitten2004,MasonSkinner2009}.
-
-At the same time, twistor theory has well-known limitations. It is naturally
-adapted to massless and self-dual sectors, struggles with mass generation,
-confinement, and generic curved backgrounds, and does not by itself provide a
-framework for probability, measurement, or irreversibility. These facts have
-often been viewed as obstacles to twistor theory as a fundamental description.
-
-Modal Triplet Theory (MTT) takes a different starting point. Rather than proposing
-a new geometric container, MTT introduces a \emph{selection principle} based on
-coherent projection, spectral gaps, and controlled truncation. Observable physics
-arises as the coherent sector of a higher-dimensional modal dynamics, and
-effective descriptions are valid only within admissible slabs where coherence
-capacity remains positive.
-
-The central claim of this paper is that twistor theory is neither accidental nor
-fundamental. Instead:
-
-\begin{quote}
-\emph{Twistor theory is the optimal holomorphic encoding of the maximally coherent,
-null-dominated, self-dual corner of the MTT coherent sector.}
-\end{quote}
-
-MTT explains why this corner exists, why twistor methods are so effective there,
-and why they must fail beyond it.
-
-\subsection*{What this paper does and does not do}
-
-\begin{itemize}
-\item We do \emph{not} propose a new twistor theory.
-\item We do \emph{not} claim twistor space is fundamental or replaces the MTT modal
-space.
-\item We \emph{do} provide a precise regime (the twistor corner) in which twistor
-encoding is valid.
-\item We \emph{do} derive a sharp breakdown criterion tied to MTT admissibility and
-controlled truncation.
-\end{itemize}
-
-\section{Modal Triplet Theory: Minimal Background}
-
-We summarize only the components of MTT required for this paper. For full
-development see the MTT corpus \cite{MTTFoundation,MTTFixedPoints,MTTTruncation,MTTCoherence}.
-
-\subsection{Modal geometry and coherent projection}
-
-MTT is defined on a modal configuration space
-\begin{equation}
-M_{10} = Y^4 \times B_1 \times B_2 \times B_3 ,
-\end{equation}
-where $Y^4$ is the emergent spacetime base and $B_i$ are compact internal bundles
-equipped with Laplace-type operators $\Delta_{B_i}$. The $\Delta_{B_i}$ commute,
-allowing definition of a joint coherent projector
-\begin{equation}
-\Pi_{\mathrm{coh}} = \Pi_{B_1}\Pi_{B_2}\Pi_{B_3},
-\end{equation}
-where $\Pi_{B_i}$ is the Riesz projector onto $\ker \Delta_{B_i}$.
-
-Observable physics arises from the coherent sector
+Twistor theory and MTT address different mathematical operations. Twistor
+theory replaces suitable four-dimensional fields by holomorphic data on a
+complex space. MTT proposes that an effective physical description descends
+from an upper object through a selected projection. A relation between them
+therefore has the form
 \[
-H_P := \Ran \Pi_{\mathrm{coh}},
+\text{upper MTT source}
+\longrightarrow
+\text{four-dimensional coherent fields}
+\longleftrightarrow
+\text{twistor data}.
 \]
-while $H_Q := \Ran (I-\Pi_{\mathrm{coh}})$ contains noncoherent modes.
+The left arrow is an MTT reduction problem. The right double arrow is a
+twistor correspondence problem. The purpose of this paper is to specify when
+they compose.
 
-\subsection{Admissible slabs and controlled truncation}
+The phrase \emph{high coherence} will mean that a declared coherent sector is
+dynamically stable or approximately autonomous in specified norms. It will
+not mean holomorphic, conformal, massless, or self-dual unless those
+properties are separately proved.
 
-An \emph{admissible slab} $\mathcal S \subset Y^4$ is a spacetime region on which:
+\subsection{Three status levels}
 
-\begin{itemize}
-\item the internal Laplacians have a uniform spectral gap $\lambda_Q>0$,
-\item the projector $\Pi_{\mathrm{coh}}$ is bounded on the relevant Sobolev scales,
-\item truncation errors from discarding $H_Q$ are controlled.
-\end{itemize}
-
-On such slabs, effective four-dimensional quantum field theory and general
-relativity emerge as controlled approximations. When admissibility fails, no
-single-valued effective description exists.
-
-\section{Definition of the Twistor Corner}
-
-We now define the regime in which twistor theory becomes a natural encoding of the
-MTT coherent sector.
-
-\begin{definition}[Twistor Corner]
-Let $\mathcal S$ be an admissible slab. We say that $\mathcal S$ lies in the
-\emph{twistor corner} of MTT if the following dimensionless parameters satisfy
-\[
-(\varepsilon_1,\varepsilon_2,\varepsilon_3,\varepsilon_4) \ll 1:
-\]
-\begin{enumerate}
-\item (\emph{Self-duality}) $\varepsilon_1 := \|F^-\|/\|F\|$, where $F^\pm$ are the
-(anti-)self-dual components of the coherent gauge curvature.
-\item (\emph{Mass suppression}) $\varepsilon_2 := m/E$, where $m$ denotes masses
-generated by overlap/Higgs structure and $E$ is the characteristic energy scale.
-\item (\emph{Slow scale variation}) $\varepsilon_3 := \|\nabla C_{\mathrm{MTT}}\|/
-C_{\mathrm{MTT}}$, where $C_{\mathrm{MTT}}$ is the coherence-capacity bookkeeping
-field.
-\item (\emph{Leakage}) $\varepsilon_4 := \|(I-\Pi_{\mathrm{coh}})\Psi\|/\|\Psi\|$.
-\end{enumerate}
+\begin{definition}[Twistor compatibility]
+An effective sector is \emph{twistor-compatible} when it has the geometric
+and field-equation data required by a standard twistor correspondence.
 \end{definition}
 
-\begin{remark}
-The parameters $\varepsilon_i$ are dimensionless control quantities whose smallness
-is understood in operator-norm or Sobolev-norm estimates appropriate to the slab
-$\mathcal S$. No claim of uniform smallness across all scales or all solutions is
-made; rather, $\varepsilon_i \ll 1$ denotes membership in an admissible neighborhood
-of the twistor corner on $\mathcal S$.
-\end{remark}
+\begin{definition}[Controlled twistor encoding]
+A twistor-compatible sector has a \emph{controlled twistor encoding} when
+the reconstruction map and the projected dynamics commute exactly or up to
+a stated norm bound on a declared domain.
+\end{definition}
 
-\begin{remark}
-Intuitively, the twistor corner is the regime in which the coherent dynamics is
-null-dominated, approximately conformal, and near an integrable self-dual
-subsector, with negligible excitation of noncoherent modes.
-\end{remark}
+\begin{definition}[Selected MTT twistor descent]
+A controlled twistor encoding is \emph{selected by MTT} only when the
+projection, conformal-spin geometry, field sector, twistor data, action,
+normalizations, and error bounds descend from one accepted upper source
+without being chosen to reproduce the desired correspondence.
+\end{definition}
 
-In the remainder of the paper we show that:
-\begin{itemize}
-\item in the twistor corner, twistor theory provides a faithful and efficient
-encoding of the coherent EFT;
-\item deviations from this corner correspond to controlled holomorphicity-breaking
-deformations;
-\item loss of admissibility corresponds to a sharp transition to kernel-valued
-evolution.
-\end{itemize}
+The current result reaches the second level conditionally. The third remains
+an explicit source theorem.
 
-\bigskip
+\section{Standard twistor data}
 
-% References will be added in the final section
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Part II: Generator Decomposition and Controlled Truncation
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Conformal spin geometry}
 
-\section{Generator Decomposition and Projected Dynamics}
-
-We now place the twistor corner definition into the analytic framework used
-throughout the MTT corpus: semigroup evolution, coherent projection, and
-controlled truncation.
-
-\subsection{Unprojected and projected evolution}
-
-Let $H$ denote the slab-local state space (a Hilbert or Banach space depending on
-the model), and let
+Let \(M_{\mathbb C}\) be a complex four-manifold, or a suitable complexification
+of a real four-manifold, with conformal spin structure. Locally its complexified
+tangent bundle factors as
 \[
-\Phi_t = e^{tL}, \qquad t \ge 0,
+TM_{\mathbb C}\cong S\otimes S',
 \]
-be the unprojected evolution on $H$ generated by a closed operator
+where \(S\) and \(S'\) are rank-two spin bundles. The projectivized primed
+spin bundle
 \[
-L : \Dom(L) \subset H \to H .
+\cF=\mathbb{P}(S')
 \]
-
-Define the coherent and noncoherent subspaces
+is the correspondence space. It carries a rank-two distribution generated
+locally by
 \[
-H_P := \Ran \Pi_{\mathrm{coh}}, \qquad
-H_Q := \Ran Q, \qquad Q := I - \Pi_{\mathrm{coh}},
+V_A=\pi^{A'}\nabla_{AA'},
 \]
-so that
+where \([\pi_{A'}]\) is the homogeneous coordinate on the projective spin
+fiber.
+
+With a fixed chirality convention, integrability of this distribution is
+tied to vanishing of one half of the conformal Weyl curvature. When the
+required analytic and regularity hypotheses hold, the local leaf space is a
+complex three-fold \(\PT\), giving the double fibration
 \[
-H = H_P \oplus H_Q .
+\begin{array}{ccc}
+&\cF&\\[-0.4em]
+p\swarrow&&\searrow q\\[-0.4em]
+M_{\mathbb C}&&\PT .
+\end{array}
 \]
+The sign called self-dual or anti-self-dual varies with orientation and
+spinor convention. This paper fixes neither name globally; it always means
+the half selected by the chosen twistor distribution.
 
-The observable (coherent) evolution is the \emph{projected} map
-\begin{equation}
-T_t := \Pi_{\mathrm{coh}}\, e^{tL}.
-\end{equation}
-
-A central question of MTT is: when does $T_t$ induce a well-defined effective
-dynamics on $H_P$ that is approximately independent of the discarded data in
-$H_Q$?
-
-\subsection{Block decomposition of the generator}
-
-With respect to the splitting $H = H_P \oplus H_Q$, the generator admits the block
-form
-\begin{equation}
-L =
-\begin{pmatrix}
-L_{PP} & L_{PQ} \\
-L_{QP} & L_{QQ}
-\end{pmatrix},
-\label{eq:blockL}
-\end{equation}
-where, for example,
+In complexified flat spacetime the incidence relation may be written
 \[
-L_{PQ} := \Pi_{\mathrm{coh}} L Q : H_Q \to H_P .
+\omega^A=i x^{AA'}\pi_{A'}.
 \]
+This formula depends on an already available four-dimensional spinor
+factorization. It is not produced by a Hilbert-space projection.
 
-\begin{remark}
-$L_{PP}$ governs the intrinsic coherent-sector dynamics. The off-diagonal blocks
-$L_{PQ}$ and $L_{QP}$ describe mixing between coherent and noncoherent modes. The
-operator $L_{QQ}$ governs the internal, nonobservable sector.
-\end{remark}
+\subsection{Field correspondences}
 
-\subsection{Gap-induced damping of the noncoherent sector}
-
-A defining admissibility assumption of MTT is that the noncoherent sector is
-uniformly damped.
-
-\begin{assumption}[Gap/Damping Condition]
-\label{ass:gap}
-There exists $\lambda_Q > 0$ such that
-\begin{equation}
-L_{QQ} \le -\lambda_Q I \quad \text{on } H_Q ,
-\end{equation}
-in the sense that $L_{QQ}$ generates a contraction semigroup with
+The linear Penrose transform identifies suitable sheaf-cohomology classes on
+twistor space with zero-rest-mass fields on spacetime, subject to domain,
+support, reality, and regularity hypotheses. In one common helicity
+convention the relevant group has the form
 \[
-\|e^{tL_{QQ}}\|_{H_Q \to H_Q} \le e^{-\lambda_Q t}.
+H^1(U,\cO(-2h-2))
 \]
-\end{assumption}
-This is the analytic expression of the spectral gap separating coherent from
-noncoherent modes.
-\begin{remark}
-In the twistor corner, the gap/damping condition is not a generic property of gauge
-or gravitational dynamics. Rather, it is a property of the high-coherence regime
-selected by MTT admissibility on the slab $\mathcal S$. Outside this regime the gap
-may collapse, in which case the Schur complement diverges and the kernel transition
-described below is triggered.
-\end{remark}
+for helicity \(h\). The precise group changes with helicity convention,
+region, and support condition.
 
+The nonlinear Penrose--Ward correspondence relates suitable holomorphic
+vector bundles on twistor space, trivial on the twistor lines
+\(L_x\cong\mathbb{CP}^1\), to local self-dual Yang--Mills connections. The
+nonlinear graviton construction similarly relates appropriate deformations
+of twistor complex structure to self-dual conformal geometry. These are
+substantial geometric theorems, not consequences of a small operator
+correction.
 
+\subsection{Full theories and deformations}
 
-\section{Schur--Feshbach Reduction of the Coherent Generator}
+It is too strong to say that twistor methods simply fail outside a strictly
+self-dual sector. Twistor actions and amplitude methods can describe
+deformations toward full Yang--Mills theory, and several gravitational and
+supersymmetric sectors have twistor formulations
+\cite{Mason2005,MasonWolf2009,AtiyahDunajskiMason2017}.
+What changes is the simplicity of the holomorphic correspondence and the
+data needed to reconstruct a full interacting theory. The MTT claim in this
+paper is therefore about a particularly transparent corner, not an exclusive
+domain of all twistor mathematics.
 
-We now show that controlled truncation is precisely the Schur--Feshbach
-elimination of the $H_Q$ sector.
+\section{What coherent projection does not supply}
 
-\subsection{Exact Schur complement}
-
-Consider the resolvent $(z - L)^{-1}$ for $\Re z \ge 0$. When $(z - L_{QQ})$ is
-invertible (guaranteed by Assumption~\ref{ass:gap}), the $PP$-block of the
-resolvent is given by the exact Schur complement identity
-\begin{equation}
-\Pi_{\mathrm{coh}} (z - L)^{-1} \Pi_{\mathrm{coh}}
-=
-\bigl(z - L_{\mathrm{eff}}(z)\bigr)^{-1},
-\end{equation}
-where the \emph{effective coherent generator} is
-\begin{equation}
-L_{\mathrm{eff}}(z)
-:=
-L_{PP} + L_{PQ} (z - L_{QQ})^{-1} L_{QP}.
-\label{eq:Leffz}
-\end{equation}
-
-Evaluating at $z=0$ yields the slab-local effective generator
-\begin{equation}
-L_{\mathrm{eff}}
-:=
-L_{PP} + \Delta L,
-\qquad
-\Delta L := L_{PQ} (-L_{QQ})^{-1} L_{QP}.
-\label{eq:Leff}
-\end{equation}
-
-\begin{remark}
-Equation~\eqref{eq:Leff} is the precise operator-theoretic form of the
-``controlled truncation correction'' introduced in the MTT truncation papers.
-\end{remark}
-
-\subsection{Norm bound and gap suppression}
-
-Assumption~\ref{ass:gap} implies that $(-L_{QQ})^{-1}$ exists and satisfies
-\begin{equation}
-\|(-L_{QQ})^{-1}\|_{H_Q \to H_Q} \le \frac{1}{\lambda_Q}.
-\end{equation}
-
-Therefore:
-
-\begin{proposition}[Gap-Suppressed Truncation Correction]
-\label{prop:gapbound}
-The controlled truncation correction satisfies the bound
-\begin{equation}
-\|\Delta L\|
-\le
-\frac{\|L_{PQ}\|\,\|L_{QP}\|}{\lambda_Q}.
-\label{eq:gapbound}
-\end{equation}
+\begin{proposition}[Projection and a gap do not create twistor geometry]
+\label{prop:no-geometry}
+A bounded coherent projector and a gapped complementary generator do not
+imply the existence of a four-dimensional conformal-spin manifold, a twistor
+space, or a Penrose transform.
 \end{proposition}
 
 \begin{proof}
-Immediate from~\eqref{eq:Leff} and the operator norm inequality
-$\|ABC\| \le \|A\|\,\|B\|\,\|C\|$.
+Take \(H=\mathbb{C}^2\),
+\[
+P=\begin{pmatrix}1&0\\0&0\end{pmatrix},
+\qquad
+L=\begin{pmatrix}0&0\\0&-1\end{pmatrix}.
+\]
+The complementary sector is exponentially damped with unit gap and the
+projected sector is exactly autonomous. These finite-dimensional operator
+data contain no four-manifold, tangent bundle, conformal class, spin
+factorization, complex three-fold, incidence relation, or holomorphic
+bundle. Hence the twistor data do not follow from projection and a gap.
 \end{proof}
 
-\begin{remark}
-Equation~\eqref{eq:gapbound} is the mathematical core of MTT's selection
-principle: influence of discarded modes on observable dynamics is suppressed by
-the inverse spectral gap.
-\end{remark}
+The counterexample does not deny that a particular MTT source may produce
+both structures. It shows that the map between them must be an additional
+theorem.
 
-\section{Controlled Truncation Theorem}
+\subsection{Independent control quantities}
 
-We now state the main truncation theorem in a form adapted to the twistor corner.
+A meaningful twistor corner needs at least four distinct controls:
+\begin{align}
+\varepsilon_{\mathrm{red}}
+&=\text{projected-dynamics or memory error},\\
+\varepsilon_{\mathrm{geom}}
+&=\text{defect in conformal-spin or twistor-distribution data},\\
+\varepsilon_{\mathrm{sd}}
+&=\text{self-duality or field-equation residual},\\
+\varepsilon_{\mathrm{rec}}
+&=\text{reconstruction/intertwining error}.
+\end{align}
+Mass and conformal-breaking effects may require additional rows. No theorem
+presently identifies these quantities with one universal ``coherence
+capacity.'' Small \(\varepsilon_{\mathrm{red}}\) does not imply small
+\(\varepsilon_{\mathrm{geom}}\) or \(\varepsilon_{\mathrm{sd}}\).
 
-\begin{theorem}[Controlled Truncation and Effective Coherent Dynamics]
-\label{thm:controlled}
-Let $\mathcal S$ be an admissible slab satisfying
-Assumption~\ref{ass:gap}, and let $L$ be decomposed as in
-\eqref{eq:blockL}. There exists a critical threshold
-$\delta_{\mathrm{crit}} > 0$ such that if
-\begin{equation}
-\|\Delta L\| \le \delta_{\mathrm{crit}},
-\label{eq:deltaCrit}
-\end{equation}
-then:
+\section{Controlled reduction of the dynamics}
 
-\begin{enumerate}
-\item The projected evolution $T_t = \Pi_{\mathrm{coh}} e^{tL}$ induces an
-approximately deterministic effective evolution on $H_P$ with generator
-$L_{\mathrm{eff}}$.
+\subsection{Exact memory equation}
 
-\item The dependence of $T_t \Psi$ on the discarded component $Q\Psi$ remains
-uniformly bounded by the truncation error estimate associated with
-$\delta_{\mathrm{crit}}$.
-
-\item The coherent-sector evolution closes to controlled error for times
-$t \in [0,t_0]$ determined by slab admissibility.
-\end{enumerate}
-\end{theorem}
-
-\begin{proof}[Proof sketch]
-Using the variation-of-constants formula for the $H_Q$ component and the damping
-estimate from Assumption~\ref{ass:gap}, one derives the effective equation
+Let \(H=H_P\oplus H_Q\), with bounded projection \(P\) and \(Q=I-P\).
+For a linear evolution
 \[
-\dot u(t) = L_{\mathrm{eff}} u(t) + \mathcal R(t),
+\dot\Psi=L\Psi,
+\qquad
+L=
+\begin{pmatrix}
+L_{PP}&L_{PQ}\\
+L_{QP}&L_{QQ}
+\end{pmatrix},
 \]
-where $\|\mathcal R(t)\|$ is bounded by terms proportional to
-$e^{-\lambda_Q t}$ and $\|\Delta L\|$. Condition~\eqref{eq:deltaCrit} ensures that
-$\mathcal R(t)$ remains below the admissibility margin on $\mathcal S$, yielding
-a well-defined effective dynamics.
-\end{proof}
-
-\begin{remark}
-The constant $\delta_{\mathrm{crit}}$ is precisely the ``coherence capacity''
-margin of the slab. When it is exceeded, no deterministic effective description
-exists.
-\end{remark}
-
-\section{Connection to the Twistor Corner}
-
-In the twistor corner defined in Section~3, the deformation parameters
-$(\varepsilon_1,\varepsilon_2,\varepsilon_3,\varepsilon_4)$ control the size of
-the block operators:
-
-\begin{itemize}
-\item $\varepsilon_1,\varepsilon_2,\varepsilon_3$ primarily deform $L_{PP}$
-(coherent-sector dynamics).
-\item $\varepsilon_4$ controls $\|L_{PQ}\|$ and $\|L_{QP}\|$ (coherent--noncoherent
-mixing).
-\end{itemize}
-
-By Proposition~\ref{prop:gapbound}, admissibility in the twistor corner reduces to
-the inequality
+write \(u=P\Psi\) and \(v=Q\Psi\). Whenever variation of constants is valid,
+\begin{align}
+\dot u(t)&=L_{PP}u(t)+L_{PQ}v(t),\\
+v(t)&=e^{tL_{QQ}}v_0+
+\int_0^t e^{(t-s)L_{QQ}}L_{QP}u(s)\,\dd s.
+\end{align}
+Substitution gives the exact equation
 \begin{equation}
-\frac{\|L_{PQ}\|\,\|L_{QP}\|}{\lambda_Q} \ll \delta_{\mathrm{crit}},
-\end{equation}
-which is the precise analytic criterion for remaining in ``working MTT mode''
-while unfreezing twistor parameters.
-
-\begin{remark}
-This inequality explains why twistor methods may degrade gradually (as
-$\varepsilon_1,\varepsilon_2,\varepsilon_3$ increase) yet fail sharply when
-$\varepsilon_4$ grows or $\lambda_Q$ collapses.
-\end{remark}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% End of Part II
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Part III: Kernel Transition and Worked Example
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Kernel Transition and Loss of Deterministic Effective Evolution}
-
-The controlled truncation theorem establishes when an effective coherent
-generator exists. We now show that \emph{failure} of the truncation bound
-corresponds to a sharp qualitative transition: the induced evolution on coherent
-data ceases to be function-valued and becomes kernel-valued.
-
-\subsection{Fiber invariance and induced maps}
-
-A deterministic induced evolution on the coherent sector would require the
-existence of a family of maps
-\[
-F_t : H_P \to H_P
-\]
-such that for all $\Psi \in H$,
-\begin{equation}
-\Pi_{\mathrm{coh}} e^{tL} \Psi = F_t(\Pi_{\mathrm{coh}}\Psi).
-\label{eq:fiberinv}
-\end{equation}
-
-Condition~\eqref{eq:fiberinv} is equivalent to \emph{fiber invariance} of the
-projection: states differing only in their $H_Q$ components must have the same
-coherent image at time $t$.
-
-\subsection{Failure of fiber invariance}
-
-Using the block decomposition, write initial data as
-\[
-\Psi(0) = u_0 + v_0, \qquad u_0 \in H_P,\ v_0 \in H_Q.
-\]
-
-The coherent component of the evolved state is
-\begin{equation}
-u(t) = \Pi_{\mathrm{coh}} e^{tL}(u_0 + v_0).
-\end{equation}
-
-When $\|\Delta L\|$ is bounded by the admissibility margin, the influence of
-$v_0$ on $u(t)$ is suppressed by the gap, and fiber invariance holds to controlled
-error. When this bound fails, different choices of $v_0$ in the same fiber
-$\Pi_{\mathrm{coh}}^{-1}(u_0)$ lead to macroscopically different $u(t)$.
-
-\begin{theorem}[Kernel Transition Criterion]
-\label{thm:kernel}
-Let $\mathcal S$ be a slab and suppose that along the evolution either
-\begin{equation}
-\|\Delta L\| > \delta_{\mathrm{crit}}
-\qquad\text{or}\qquad
-\lambda_Q \to 0.
-\end{equation}
-Then, in general, there exists no single-valued induced map $F_t:H_P\to H_P$
-satisfying~\eqref{eq:fiberinv}. The correct induced object is a
-\emph{kernel-valued evolution}
-\[
-K_t(u_0, A)
-:=
-\mu_{u_0}\bigl(
-\{\Psi:\Pi_{\mathrm{coh}}\Psi=u_0,\ \Pi_{\mathrm{coh}}e^{tL}\Psi\in A\}
-\bigr),
-\]
-where $\mu_{u_0}$ is the conditional measure on the fiber
-$\Pi_{\mathrm{coh}}^{-1}(u_0)$.
-\end{theorem}
-\begin{remark}
-Here ``kernel-valued'' means that the induced evolution on coherent data is represented
-by a probability transition kernel on $H_P$, rather than by a single-valued deterministic
-map. No claim is made that this kernel is Markovian or memoryless beyond the slab-local
-regime; in general it may retain dependence on the history of the discarded sector.
-\end{remark}
-
-\begin{proof}[Proof sketch]
-Failure of the bound on $\Delta L$ implies that the memory kernel
-\[
-\int_0^t L_{PQ} e^{(t-s)L_{QQ}} L_{QP} u(s)\,ds
-\]
-is no longer integrable in operator norm. Consequently, the influence of $v_0$
-on $u(t)$ is unsuppressed, and fiber invariance fails generically. Without fiber
-invariance, no function-valued induced map can exist; only a transition kernel
-on coherent states is well-defined.
-\end{proof}
-
-\begin{remark}
-This kernel transition is the analytic expression of an MTT
-\emph{selection event}. It corresponds physically to coherence-capacity
-exhaustion and irreversibility.
-\end{remark}
-
-\section{Worked Example: Self-Dual to Full Yang--Mills}
-
-We now give a concrete example illustrating how the truncation correction grows
-as one unfreezes the twistor corner.
-
-\subsection{Self-dual Yang--Mills as the twistor corner}
-
-Consider the coherent four-dimensional gauge sector restricted to
-self-dual Yang--Mills (SDYM):
-\begin{equation}
-F^- = 0.
-\end{equation}
-
-In this limit:
-\begin{itemize}
-\item the field equations are integrable,
-\item solutions are classified by holomorphic vector bundles on twistor space
-(Ward correspondence),
-\item coherent--noncoherent mixing is minimal.
-\end{itemize}
-
-In operator language, the generator has negligible mixing:
-\[
-L_{PQ} \approx 0, \qquad L_{QP} \approx 0,
-\]
-and therefore
-\[
-\Delta L \approx 0.
-\]
-
-\subsection{Unfreezing self-duality}
-
-Let us now turn on a small anti-self-dual component:
-\begin{equation}
-F^- = \varepsilon_1 G,
-\end{equation}
-where $G$ is a bounded ASD curvature source and $\varepsilon_1 \ll 1$.
-
-This introduces interaction terms that couple the coherent sector to discarded
-modes. At leading order we may write
-\begin{equation}
-L_{PQ} = \varepsilon_1 A, \qquad
-L_{QP} = \varepsilon_1 B,
-\end{equation}
-for bounded operators $A:H_Q\to H_P$ and $B:H_P\to H_Q$.
-
-Assume the noncoherent sector remains gapped:
-\[
-L_{QQ} \le -\lambda_Q I, \qquad \lambda_Q>0.
-\]
-
-\subsection{Growth of the truncation correction}
-
-The controlled truncation correction becomes
-\begin{equation}
-\Delta L
-=
-L_{PQ}(-L_{QQ})^{-1}L_{QP}
-=
-\varepsilon_1^2\, A(-L_{QQ})^{-1}B.
-\end{equation}
-
-By Proposition~\ref{prop:gapbound},
-\begin{equation}
-\|\Delta L\|
-\le
-\varepsilon_1^2 \frac{\|A\|\,\|B\|}{\lambda_Q}.
-\label{eq:SDYMbound}
-\end{equation}
-
-\begin{remark}
-Equation~\eqref{eq:SDYMbound} shows that self-duality breaking enters the coherent
-effective generator quadratically, while being suppressed by the inverse gap.
-Twistor holomorphicity degrades linearly in $\varepsilon_1$, but coherent-sector
-predictability degrades quadratically until the admissibility threshold is
-reached.
-\end{remark}
-
-\subsection{Critical self-duality breaking scale}
-
-The admissibility condition $\|\Delta L\|\le\delta_{\mathrm{crit}}$ implies
-\begin{equation}
-\varepsilon_1^2
-\le
-\delta_{\mathrm{crit}}\,\frac{\lambda_Q}{\|A\|\,\|B\|}.
-\end{equation}
-
-Thus there exists a critical scale
-\[
-\varepsilon_{1,\mathrm{crit}}
-\sim
-\sqrt{\delta_{\mathrm{crit}}\,\frac{\lambda_Q}{\|A\|\,\|B\|}},
-\]
-beyond which coherent evolution becomes kernel-valued.
-
-\section{Twistor Degradation Ladder}
-
-We summarize the qualitative behavior as parameters are unfrozen.
-
-\begin{corollary}[Twistor Degradation Ladder]
-As the system evolves away from the twistor corner, degradation proceeds
-generically through the following stages:
-\begin{enumerate}
-\item \emph{Twistor efficiency loss:} $\varepsilon_1,\varepsilon_2,\varepsilon_3$
-grow while $\|\Delta L\|\ll\delta_{\mathrm{crit}}$. Twistor methods become
-inefficient but the coherent EFT remains valid.
-\item \emph{Twistor encoding breakdown:} global holomorphic encoding fails, but
-$\|\Delta L\|\le\delta_{\mathrm{crit}}$ still holds. MTT remains in working mode.
-\item \emph{Kernel transition:} $\|\Delta L\|>\delta_{\mathrm{crit}}$ or
-$\lambda_Q\to 0$. Deterministic effective evolution ceases; kernel-valued
-dynamics and selection events occur.
-\end{enumerate}
-\end{corollary}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% End of Part III
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Part IV: Interpretation, Relation to Twistor Theory, Conclusions, References
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Interpretation and Physical Meaning}
-
-The results above place twistor theory in a precise structural role within Modal
-Triplet Theory. This section is interpretive. It draws physical meaning from the analytic results
-established above without introducing new mathematical claims or assumptions.
-
-
-\subsection{Why twistor theory works where it does}
-
-The twistor corner is characterized by:
-\begin{itemize}
-\item dominance of null propagation,
-\item approximate conformal invariance,
-\item near self-duality,
-\item strong suppression of noncoherent modes.
-\end{itemize}
-
-These conditions are exactly those under which the Schur--Feshbach correction
-\[
-\Delta L = L_{PQ}(-L_{QQ})^{-1}L_{QP}
-\]
-is smallest. In this regime, coherent-sector dynamics is almost entirely governed
-by $L_{PP}$, and holomorphic structures provide an efficient representation.
-
-Thus, the classical successes of twistor theory are explained not by special
-miracles of complex geometry, but by coherence selection: twistor theory is the
-natural encoding of the highest-coherence corner of four-dimensional physics.
-
-\subsection{Why twistor theory must fail beyond this corner}
-
-The same analysis explains twistor theory's limitations. When:
-\begin{itemize}
-\item masses become important,
-\item confinement or strong coupling develops,
-\item curvature varies rapidly,
-\item or coherent--noncoherent mixing increases,
-\end{itemize}
-the truncation correction $\Delta L$ grows and eventually exceeds the admissible
-margin. At this point the induced evolution on coherent data becomes kernel-valued,
-and no holomorphic encoding can remain globally valid.
-
-Twistor breakdown is therefore not a deficiency of twistor theory, but a
-diagnostic signal that the system has exited the admissible regime in which a
-four-dimensional coherent description exists.
-
-\section{Relation to Classical Twistor Literature}
-
-\subsection{Penrose transform and massless fields}
-
-The Penrose transform \cite{Penrose1967,Penrose1972} arises in MTT as the encoding
-of free massless coherent fields in the limit $\varepsilon_2\to 0$. MTT explains
-why this correspondence is exact for massless fields and approximate otherwise.
-
-\subsection{Ward correspondence and self-dual Yang--Mills}
-
-The Ward correspondence \cite{Ward1977} is recovered precisely in the strict
-self-dual limit $\varepsilon_1=0$. The present work clarifies that the
-integrability of self-dual Yang--Mills is equivalent to vanishing truncation
-correction $\Delta L=0$.
-
-\subsection{Nonlinear graviton}
-
-Penrose's nonlinear graviton construction \cite{Penrose1976} appears as the
-encoding of the self-dual gravitational corner of the coherent sector. Generic
-gravitational dynamics lies outside this integrable corner, consistent with the
-necessity of patchwise or approximate twistor descriptions.
-
-\subsection{Twistor string and amplitude methods}
-
-The twistor-string formulation of gauge-theory amplitudes \cite{Witten2004} and
-its descendants \cite{CachazoSvrcekWitten2004,MasonSkinner2009} exploit the same
-high-coherence regime identified here. In MTT language, modern amplitude
-simplicity reflects small $\Delta L$ rather than a fundamental rewriting of
-physics.
-
-\section{Limitations and Scope}
-
-This work does not:
-\begin{itemize}
-\item claim twistor space is fundamental,
-\item extend twistor theory to all physical regimes,
-\item resolve confinement, mass generation, or cosmology within twistor language,
-\item propose new experimental predictions.
-\end{itemize}
-
-Instead, it provides a structural explanation of when and why twistor methods
-apply, and a mathematically sharp criterion for their breakdown.
-
-\section{Conclusions and Outlook}
-
-We have shown that:
-\begin{enumerate}
-\item Twistor theory is an effective holomorphic encoding of the maximally
-coherent corner of Modal Triplet Theory.
-\item The validity of twistor encoding is governed by the same admissibility and
-controlled truncation conditions that govern all effective physics in MTT.
-\item Breakdown of twistor methods coincides with a sharp kernel transition in
-the projected dynamics, signaling selection events and irreversibility.
-\end{enumerate}
-
-This reframes twistor theory from a candidate foundation to a powerful diagnostic
-and computational tool whose scope is physically explained.
-
-Future directions include:
-\begin{itemize}
-\item extending the analysis to massive twistor constructions as controlled
-deformations,
-\item applying the framework to curved-space twistor patching,
-\item and using the truncation correction $\Delta L$ as a quantitative measure of
-encoding validity across different effective descriptions.
-\end{itemize}
-
-\section*{Acknowledgments}
-
-The author thanks the developers of Modal Triplet Theory and the twistor community
-for decades of deep insights into geometry, coherence, and field theory.
-\appendix
-\section{Rigorous Controlled Truncation via Duhamel and Schur Reduction}
-\label{sec:rigorous-truncation}
-
-We now upgrade Theorem~\ref{thm:controlled} from a proof sketch to a complete
-rigorous statement in the standard semigroup framework.
-
-\subsection{Semigroup hypotheses}
-
-Let $H$ be a Hilbert space and let $\Pi$ be a bounded projector on $H$ with
-$Q:=I-\Pi$. Set $H_P:=\Ran\Pi$ and $H_Q:=\Ran Q$ so $H=H_P\oplus H_Q$.
-Let $L:\Dom(L)\subset H\to H$ be a closed operator generating a strongly continuous
-semigroup $(e^{tL})_{t\ge0}$ on $H$.
-
-Assume that the block operators in \eqref{eq:blockL} satisfy:
-\begin{enumerate}
-\item[(H1)] $L_{PP}$ generates a strongly continuous semigroup on $H_P$ with
-\[
-\|e^{tL_{PP}}\|_{H_P\to H_P}\le M_P e^{\omega_P t}\quad(t\ge0).
-\]
-\item[(H2)] $L_{QQ}$ generates an exponentially stable semigroup on $H_Q$:
-there exist $M_Q\ge1$ and $\lambda_Q>0$ such that
-\begin{equation}
-\|e^{tL_{QQ}}\|_{H_Q\to H_Q}\le M_Q e^{-\lambda_Q t}\quad(t\ge0).
-\label{eq:QQdecay}
-\end{equation}
-\item[(H3)] The mixing blocks are bounded:
-\[
-L_{PQ}\in\mathcal B(H_Q,H_P),\qquad L_{QP}\in\mathcal B(H_P,H_Q).
-\]
-\item[(H4)] (Initial data) We consider mild solutions with initial state
-$\Psi_0=u_0+v_0$ where $u_0\in H_P$ and $v_0\in H_Q$.
-\end{enumerate}
-
-\begin{remark}
-(H1)--(H3) are standard ``well-posed splitting'' hypotheses. In MTT they are
-realized on admissible slabs because the $Q$ sector is gapped/damped by the
-uniform spectral gap, and bounded geometry yields boundedness of the coherent
-projector on the Sobolev scale used.
-\end{remark}
-
-\subsection{Exact coupled mild system}
-
-Let $u(t):=\Pi\Psi(t)\in H_P$ and $v(t):=Q\Psi(t)\in H_Q$ for the mild solution
-$\Psi(t)=e^{tL}\Psi_0$. Then $(u,v)$ solves the coupled system
-\begin{equation}
-\begin{cases}
-\dot u(t)=L_{PP}u(t)+L_{PQ}v(t),\\
-\dot v(t)=L_{QP}u(t)+L_{QQ}v(t),
-\end{cases}
-\qquad u(0)=u_0,\ v(0)=v_0,
-\label{eq:uvsystem}
-\end{equation}
-in mild form.
-
-\begin{lemma}[Variation-of-constants in the $Q$ sector]
-\label{lem:VOC}
-Under (H2)--(H4), for every $t\ge0$,
-\begin{equation}
-v(t)=e^{tL_{QQ}}v_0+\int_0^t e^{(t-s)L_{QQ}}\,L_{QP}\,u(s)\,ds,
-\label{eq:VOCv}
-\end{equation}
-where the integral is a Bochner integral in $H_Q$.
-\end{lemma}
-
-\begin{proof}
-This is the standard variation-of-constants formula for the inhomogeneous
-linear equation $\dot v=L_{QQ}v+L_{QP}u(t)$ with strongly continuous semigroup
-$e^{tL_{QQ}}$ and bounded forcing $L_{QP}u(t)$. Bochner integrability follows
-from strong continuity of $u$ and boundedness of $L_{QP}$.
-\end{proof}
-
-Substituting \eqref{eq:VOCv} into the $u$-equation yields an exact memory equation.
-
-\begin{lemma}[Exact memory equation on $H_P$]
-\label{lem:memory}
-Under (H1)--(H4), $u$ satisfies
-\begin{equation}
-\dot u(t)=L_{PP}u(t)+L_{PQ}e^{tL_{QQ}}v_0
-+\int_0^t K(t-s)\,u(s)\,ds,
+\dot u(t)
+=L_{PP}u(t)+L_{PQ}e^{tL_{QQ}}v_0
++\int_0^t K(t-s)u(s)\,\dd s,
+\qquad
+K(r)=L_{PQ}e^{rL_{QQ}}L_{QP}.
 \label{eq:memory}
 \end{equation}
-where the operator-valued kernel $K:[0,\infty)\to\mathcal B(H_P)$ is
-\begin{equation}
-K(r):=L_{PQ}\,e^{rL_{QQ}}\,L_{QP}.
-\label{eq:kernelK}
-\end{equation}
-\end{lemma}
+This is a reduction identity. It is not yet a twistor statement.
 
-\begin{proof}
-Differentiate $u$ using \eqref{eq:uvsystem} and substitute \eqref{eq:VOCv}.
-Bochner integrability of the convolution term follows from boundedness of
-$L_{PQ},L_{QP}$ and \eqref{eq:QQdecay}.
-\end{proof}
-
-\subsection{Integrability of the memory kernel and Schur complement}
-
-\begin{proposition}[Kernel integrability and Schur correction]
-\label{prop:Kintegrable}
-Under (H2)--(H3), the kernel $K$ is integrable in operator norm:
-\begin{equation}
-\int_0^\infty \|K(r)\|\,dr \le \frac{M_Q}{\lambda_Q}\,\|L_{PQ}\|\,\|L_{QP}\|.
-\label{eq:Kbound}
-\end{equation}
-Moreover, the Bochner integral
-\begin{equation}
-\Delta L := \int_0^\infty K(r)\,dr
-\label{eq:DeltaL-as-int}
-\end{equation}
-exists in $\mathcal B(H_P)$ and satisfies the Schur/Feshbach identity
-\begin{equation}
-\Delta L = L_{PQ}\,(-L_{QQ})^{-1}\,L_{QP}
-\label{eq:SchurIdentity}
-\end{equation}
-with the bound
-\begin{equation}
-\|\Delta L\|\le \frac{M_Q}{\lambda_Q}\,\|L_{PQ}\|\,\|L_{QP}\|.
-\label{eq:Deltabound}
-\end{equation}
+\begin{proposition}[Gap-controlled memory norm]
+\label{prop:memory}
+Suppose
+\[
+\|e^{tL_{QQ}}\|\leq M_Qe^{-\lambda_Qt},
+\qquad t\geq0,
+\]
+with \(\lambda_Q>0\). Then
+\[
+\|K(t)\|
+\leq
+M_Q\|L_{PQ}\|\,\|L_{QP}\|e^{-\lambda_Qt}
+\]
+and
+\[
+\int_0^\infty\|K(t)\|\,\dd t
+\leq
+\frac{M_Q\|L_{PQ}\|\,\|L_{QP}\|}{\lambda_Q}.
+\]
 \end{proposition}
 
 \begin{proof}
-From \eqref{eq:kernelK} and \eqref{eq:QQdecay},
-\[
-\|K(r)\|\le \|L_{PQ}\|\,\|e^{rL_{QQ}}\|\,\|L_{QP}\|
-\le \|L_{PQ}\|\,M_Q e^{-\lambda_Q r}\,\|L_{QP}\|.
-\]
-Integrating yields \eqref{eq:Kbound}, hence $K\in L^1([0,\infty);\mathcal B(H_P))$
-and the Bochner integral \eqref{eq:DeltaL-as-int} exists with bound
-\eqref{eq:Deltabound}.
-
-For \eqref{eq:SchurIdentity}, exponential stability of $e^{tL_{QQ}}$ implies
-$0\in\rho(L_{QQ})$ and the Laplace transform identity holds:
-\[
-(-L_{QQ})^{-1}=\int_0^\infty e^{rL_{QQ}}\,dr
-\quad\text{(Bochner integral in }\mathcal B(H_Q)\text{)}.
-\]
-Multiplying by $L_{PQ}$ and $L_{QP}$ gives \eqref{eq:SchurIdentity}.
+Apply submultiplicativity to the definition of \(K(t)\), then integrate the
+exponential bound.
 \end{proof}
 
-\subsection{A rigorous effective equation and an explicit remainder bound}
+The ratio on the right controls the total memory-kernel norm. Replacing the
+memory term by a time-local Schur or quasistatic correction requires further
+resolvent, regularity, and slow-variation hypotheses. The current
+controlled-truncation paper owns that broader analysis; the present paper
+uses only the separation in \cref{eq:memory}.
 
-Define the effective coherent generator
-\[
-L_{\mathrm{eff}}:=L_{PP}+\Delta L,
-\]
-with $\Delta L$ as above.
+\subsection{Failure of control is not branching}
 
-We now quantify the error made by replacing the memory equation
-\eqref{eq:memory} by the Markovian effective equation $\dot u=L_{\mathrm{eff}}u$.
-
-\begin{theorem}[Controlled truncation with explicit remainder]
-\label{thm:rigorous-controlled}
-Assume (H1)--(H4). Let $u$ be the (mild) $H_P$-component of $e^{tL}\Psi_0$
-and let $u_{\mathrm{eff}}$ solve the effective equation
-\begin{equation}
-\dot u_{\mathrm{eff}}(t)=L_{\mathrm{eff}}u_{\mathrm{eff}}(t),
-\qquad u_{\mathrm{eff}}(0)=u_0.
-\label{eq:ueff}
-\end{equation}
-Assume in addition that $u$ is Lipschitz on $[0,T]$ in $H_P$:
-\begin{equation}
-\|u(t)-u(s)\|\le L_u\,|t-s|\quad(0\le s,t\le T).
-\label{eq:Lipschitz}
-\end{equation}
-Then for all $t\in[0,T]$,
-\begin{equation}
-\|u(t)-u_{\mathrm{eff}}(t)\|
-\le
-C_1\,e^{-\lambda_Q t}\,\|v_0\|
-+
-C_2\,\frac{L_u}{\lambda_Q},
-\label{eq:rigerror}
-\end{equation}
-where $C_1:=\|L_{PQ}\|M_Q$ and $C_2:=\|L_{PQ}\|M_Q\|L_{QP}\|$.
-\end{theorem}
+\begin{proposition}[Gap loss does not force a kernel transition]
+\label{prop:no-kernel}
+The condition \(\lambda_Q=0\), or failure of a bound based on
+\(\lambda_Q^{-1}\), does not imply stochastic, set-valued, or kernel-valued
+projected evolution.
+\end{proposition}
 
 \begin{proof}
-Subtract \eqref{eq:ueff} from \eqref{eq:memory} and use $\Delta L=\int_0^\infty K(r)dr$.
-Write
+Take any Hilbert space decomposition and let \(L=0\). Then no positive
+decay gap exists on \(H_Q\). Nevertheless
 \[
-\int_0^t K(t-s)u(s)\,ds
-=
-\int_0^t K(r)u(t-r)\,dr,
+Pe^{tL}\Psi=P\Psi
 \]
-and compare with $\Delta L u(t)=\int_0^\infty K(r)u(t)\,dr$:
-\[
-\int_0^t K(r)u(t-r)\,dr - \Delta L u(t)
-=
--\int_t^\infty K(r)u(t)\,dr
-+
-\int_0^t K(r)\big(u(t-r)-u(t)\big)\,dr.
-\]
-Hence
-\[
-\|\dot u(t)-L_{\mathrm{eff}}u(t)\|
-\le
-\|L_{PQ}\|\|e^{tL_{QQ}}v_0\|
-+
-\int_t^\infty \|K(r)\|\,\|u(t)\|\,dr
-+
-\int_0^t \|K(r)\|\,\|u(t-r)-u(t)\|\,dr.
-\]
-Using \eqref{eq:QQdecay} gives the first term
-$\le \|L_{PQ}\|M_Q e^{-\lambda_Q t}\|v_0\|$.
-
-For the tail term,
-\[
-\int_t^\infty \|K(r)\|\,dr
-\le \|L_{PQ}\|M_Q\|L_{QP}\|\int_t^\infty e^{-\lambda_Q r}\,dr
-\le \frac{\|L_{PQ}\|M_Q\|L_{QP}\|}{\lambda_Q}\,e^{-\lambda_Q t}.
-\]
-For the Lipschitz term, \eqref{eq:Lipschitz} gives
-$\|u(t-r)-u(t)\|\le L_u r$, so
-\[
-\int_0^t \|K(r)\|\,\|u(t-r)-u(t)\|\,dr
-\le
-\|L_{PQ}\|M_Q\|L_{QP}\|\,L_u\int_0^\infty r e^{-\lambda_Q r}\,dr
-=
-\|L_{PQ}\|M_Q\|L_{QP}\|\,L_u\,\frac{1}{\lambda_Q^2}.
-\]
-This yields an explicit bound on the defect $\dot u-L_{\mathrm{eff}}u$.
-Finally, standard variation-of-constants for the difference $w:=u-u_{\mathrm{eff}}$
-and Gr\"onwall (using semigroup bounds for $L_{\mathrm{eff}}$) yields
-\eqref{eq:rigerror} with the stated constants (absorbing factors from the
-$L_{\mathrm{eff}}$ semigroup bound into $C_2$).
+for every \(t\) and every \(\Psi\). The projected evolution is the
+single-valued identity map on \(H_P\). Thus loss of the gap hypothesis does
+not imply branching.
 \end{proof}
 
-\begin{remark}
-Condition \eqref{eq:Lipschitz} is the precise analytic version of ``slow variation
-relative to the gap''. In the twistor corner this is controlled by the smallness
-parameters $\varepsilon_1,\varepsilon_2,\varepsilon_3$ and by remaining in an
-admissible slab.
-\end{remark}
-\section{Rigorous Kernel Transition via Disintegration of Measure}
-\label{sec:rigorous-kernel}
+More generally, a failed estimate says only that the estimate is unavailable.
+A non-Dirac reduced probability kernel requires a source ensemble or state,
+disintegration along fibers, and actual variation of projected outcomes
+within a fiber. An MTT selection event additionally requires a selected
+branch or instrument law. None follows from \(\lambda_Q\to0\).
 
-We now upgrade Theorem~\ref{thm:kernel} to a fully rigorous statement. The key
-idea is standard: whenever fiber invariance fails on a set of positive measure,
-the induced evolution on coherent data cannot be represented by a function and
-must be represented by a probability kernel (a disintegration of the upstairs
-ensemble along the fibers of $\Pi$).
+\section{The conditional MTT-to-twistor bridge}
 
-\subsection{Measurable setting}
+\subsection{The source contract}
 
-Assume $H$ is separable and equipped with its Borel $\sigma$-algebra $\mathscr B(H)$.
-Assume $\Pi:H\to H_P$ is Borel measurable and $T_t:=\Pi e^{tL}:H\to H_P$ is Borel
-measurable for each fixed $t$ (true if $e^{tL}$ is strongly continuous and $\Pi$
-bounded).
-
-Let $\mu$ be a Borel probability measure on $H$ representing the physically relevant
-ensemble restricted to the slab (e.g. supported on an admissible set). Define the
-pushforward
-\[
-\nu := \Pi_* \mu,
-\]
-a probability measure on $(H_P,\mathscr B(H_P))$.
-
-\subsection{Disintegration along coherent fibers}
-
-\begin{theorem}[Disintegration along $\Pi$]
-\label{thm:disintegration}
-There exists a $\nu$-a.e.\ uniquely defined measurable family of probability measures
-$\{\mu_u\}_{u\in H_P}$ on $H$ such that:
+\begin{definition}[Selected twistor source contract]
+\label{def:contract}
+A selected MTT twistor descent on a slab consists of:
 \begin{enumerate}
-\item $\mu_u$ is supported on the fiber $\Pi^{-1}(u)$ for $\nu$-a.e.\ $u$,
-\item for every bounded measurable $f:H\to\mathbb R$,
-\[
-\int_H f(\Psi)\,d\mu(\Psi)
-=
-\int_{H_P}\left(\int_H f(\Psi)\,d\mu_u(\Psi)\right)\,d\nu(u).
-\]
+\item an upper state complex or field space \(\cH_{\mathrm{up}}\) and selected
+action or generator \(L_{\mathrm{up}}\);
+\item a coherent projector \(P\), domain, norms, and reduction estimate;
+\item a four-dimensional oriented conformal-spin carrier
+\((M,[g],S,S')\), including signature, complexification, and reality data;
+\item a field map
+\(\mathcal J:\Ran P\to\mathcal E(M)\) into a declared gauge, gravity, or
+zero-rest-mass sector;
+\item the self-dual or conformal field equation obeyed by
+\(\mathcal J(P\Psi)\), exactly or with a residual bound;
+\item the correspondence space \(\cF=\mathbb P(S')\), twistor distribution,
+leaf space \(\PT\), and double fibration;
+\item a Penrose, Penrose--Ward, or nonlinear-graviton transform
+\(\mathcal W\) with its bundle, line-triviality, cohomology, and reality
+conditions;
+\item an intertwining relation between upper, spacetime, and twistor
+dynamics;
+\item an action and norm bridge fixing couplings and positive physical
+inner products;
+\item separate error bounds for reduction, geometry, self-duality, and
+reconstruction.
 \end{enumerate}
-\end{theorem}
-
-\begin{remark}
-This is the standard disintegration theorem for probability measures on standard
-Borel spaces. Separability of $H$ and Borel measurability of $\Pi$ are sufficient.
-\end{remark}
-
-\subsection{Induced transition kernel on coherent data}
-
-\begin{definition}[Induced coherent transition kernel]
-For $t\ge0$, define
-\begin{equation}
-K_t(u,A)
-:=
-\mu_u\big(\{\Psi\in H:\ T_t(\Psi)\in A\}\big),
-\qquad A\in\mathscr B(H_P).
-\label{eq:Ktdef}
-\end{equation}
 \end{definition}
 
-\begin{proposition}
-\label{prop:kernel}
-For each $t\ge0$, $K_t$ is a probability kernel on $H_P$:
-\begin{enumerate}
-\item for fixed $u$, $A\mapsto K_t(u,A)$ is a probability measure;
-\item for fixed $A$, $u\mapsto K_t(u,A)$ is measurable.
-\end{enumerate}
-\end{proposition}
+The contract deliberately does not include a universal threshold at which
+twistor data ``become a kernel.'' If the contract fails, the conclusion is
+that this encoding is no longer certified.
 
-\begin{proof}
-For fixed $u$, $K_t(u,\cdot)$ is the pushforward of $\mu_u$ under $T_t$, hence a
-probability measure. Measurability in $u$ follows from measurability of the
-disintegration and measurability of $T_t$.
-\end{proof}
-
-\subsection{Deterministic induced map as a degenerate kernel}
-
-\begin{proposition}[Kernel collapses to a function iff fiber invariance holds]
-\label{prop:kerneldegenerate}
-Suppose there exists a measurable map $F_t:H_P\to H_P$ such that
+\begin{theorem}[Conditional twistor descent]
+\label{thm:descent}
+Assume all exact rows of Definition~\ref{def:contract} on a common domain,
+and assume the chosen standard twistor correspondence is bijective on the
+declared quotient or gauge-equivalence classes. Then
 \[
-T_t(\Psi) = F_t(\Pi\Psi) \quad \text{for }\mu\text{-a.e.\ }\Psi.
+\mathcal T=\mathcal W\circ\mathcal J\circ P
 \]
-Then for $\nu$-a.e.\ $u$,
+is a well-defined twistor encoding of the selected coherent MTT sector.
+If the dynamics intertwine,
 \[
-K_t(u,A)=\mathbf{1}_A(F_t(u)).
+\mathcal T e^{tL_{\mathrm{up}}}
+=U_t^{\mathrm{tw}}\mathcal T
 \]
-Conversely, if for $\nu$-a.e.\ $u$, $K_t(u,\cdot)$ is a Dirac measure, then there
-exists a measurable $F_t$ with the property above.
-\end{proposition}
-
-\begin{proof}
-If $T_t(\Psi)=F_t(\Pi\Psi)$, then on the fiber $\Pi^{-1}(u)$ one has $T_t(\Psi)=F_t(u)$
-$\mu_u$-a.s., so the pushforward is $\delta_{F_t(u)}$. Conversely, if $K_t(u,\cdot)=\delta_{x(u)}$
-for measurable $x(u)$, define $F_t(u):=x(u)$; then $T_t(\Psi)=F_t(\Pi\Psi)$ $\mu$-a.s.
-by disintegration.
-\end{proof}
-
-\subsection{Kernel transition from truncation blow-up}
-
-We now show that failure of controlled truncation implies that the kernel cannot remain
-degenerate (Dirac), i.e. fiber invariance fails on a set of positive measure.
-
-\begin{theorem}[Kernel transition from admissibility failure]
-\label{thm:kernelrigorous}
-Assume Theorem~\ref{thm:rigorous-controlled} holds on an admissible slab, and suppose
-there exists a sequence of times $t_n$ approaching a boundary of admissibility such that
-either $\lambda_Q(t_n)\to 0$ or $\|\Delta L(t_n)\|\to\infty$.
-Assume further that the conditional fiber measures $\mu_u$ are nontrivial in the sense that,
-for $\nu$-positive measure of $u$, the fiber $\Pi^{-1}(u)$ contains at least two sets of
-positive $\mu_u$-measure whose $Q$-components differ by $O(1)$ in $H_Q$.
-
-Then there exist $t$ and $A\in\mathscr B(H_P)$ and a set of coherent states $U\subset H_P$
-with $\nu(U)>0$ such that for all $u\in U$,
-\[
-0 < K_t(u,A) < 1.
-\]
-In particular, $K_t$ is not degenerate and there is no function-valued induced map $F_t$.
+on that sector, the spacetime and twistor descriptions represent the same
+reduced evolution there.
 \end{theorem}
 
 \begin{proof}
-When $\|\Delta L\|$ is bounded, Theorem~\ref{thm:rigorous-controlled} shows that dependence
-of $u(t)$ on $v_0$ is suppressed by $e^{-\lambda_Q t}$ and by $\|\Delta L\|$.
-If $\lambda_Q\to 0$ or $\|\Delta L\|\to\infty$, the suppression mechanism fails: the $Q$-sector
-influence term in the exact memory equation \eqref{eq:memory} is no longer uniformly controlled.
-By the nontriviality of $\mu_u$ on fibers, for $\nu$-positive measure of $u$ there exist two
-sets of initial states in $\Pi^{-1}(u)$ with positive $\mu_u$-measure whose $Q$-components
-drive distinct coherent outcomes at time $t$. Taking $A$ to capture one such outcome region,
-we obtain $0<K_t(u,A)<1$ on a set of positive $\nu$-measure. Proposition~\ref{prop:kerneldegenerate}
-then implies no measurable induced map $F_t$ exists.
+The projector sends admissible upper states to the declared coherent domain.
+The field map sends that domain to solutions of the field equation for which
+the chosen twistor correspondence is defined. The correspondence therefore
+assigns a unique twistor equivalence class. Composition gives
+\(\mathcal T\). The displayed intertwining relation identifies the time
+evolution of the two encodings. Gauge or cohomological equivalence is handled
+by the quotient included in the hypotheses.
 \end{proof}
 
-\begin{remark}
-The mild nontriviality assumption on fiber measures is physically natural: if $\Pi$ is many-to-one,
-then typical conditioning on $\Pi\Psi=u$ induces a non-atomic distribution on the discarded
-coordinates. The theorem formalizes that once truncation control fails, those discarded coordinates
-produce branching in coherent outcomes.
-\end{remark}
+This theorem is a composition theorem, not a derivation of the standard
+Penrose--Ward correspondence. Its MTT content is the demand that all rows
+come from one source and commute.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% References
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Controlled approximate use}
+
+Suppose instead that the four maps commute only approximately. Let
+\(\|\cdot\|_{\mathrm{tw}}\) be a norm on a fixed gauge slice or quotient chart
+where reconstruction is locally Lipschitz with constant \(C_{\mathcal W}\).
+If
+\[
+\varepsilon_{\mathrm{tot}}
+=
+C_{\mathcal W}
+\big(
+\varepsilon_{\mathrm{red}}
++\varepsilon_{\mathrm{geom}}
++\varepsilon_{\mathrm{sd}}
++\varepsilon_{\mathrm{rec}}
+\big)
+\]
+is finite on a controlled domain, then the twistor representation has at
+most that declared error. This estimate is conditional on the local
+stability of the transform. Small curvature residual alone does not prove
+such stability; gauge fixing, elliptic estimates, and possible cohomological
+obstructions must be controlled.
+
+\section{Gauge and gravity examples}
+
+\subsection{Self-dual Yang--Mills}
+
+For a gauge bundle \(E\to M\), the transparent classical target is
+\[
+F^-_A=0
+\]
+in a fixed chirality convention. The Ward transform assigns a holomorphic
+bundle \(\mathcal E\to\PT\), trivial on each twistor line, to a gauge
+equivalence class of local self-dual connections. In an MTT realization the
+following are still separate obligations:
+\begin{enumerate}
+\item show that \(\mathcal J(P\Psi)\) is a connection on \(E\);
+\item derive \(F^-_A=0\) or bound its residual from the upper action;
+\item prove line triviality and the required reality condition;
+\item match the twistor and four-dimensional action normalizations;
+\item control the deformation toward full Yang--Mills.
+\end{enumerate}
+
+The existing Theta III paper studies the fourth row conditionally. It
+explicitly assumes the twistor corner and reconstruction-and-norm bridge.
+That result is compatible with this paper but does not select the bridge.
+
+\subsection{Self-dual conformal gravity}
+
+For gravity, the nonlinear-graviton route additionally requires a
+four-dimensional conformal structure whose selected Weyl half vanishes and
+a family of suitable rational curves in the twistor space. An upper metric
+Hessian or a stable coherent subspace does not by itself provide those
+curves. To connect this route to the MTT gravity program one must show that
+the selected effective metric, its spin connection, and its self-dual
+curvature arise from the same upper action that controls the coherent
+projection.
+
+\subsection{Mass, non-self-duality, and generic backgrounds}
+
+Massive fields, both helicity sectors, generic curvature, and full
+interactions do not fit the simplest Penrose or Ward correspondence.
+Possible extensions include ambitwistor constructions, twistor actions with
+additional nonlocal terms, deformations of holomorphic structures, and
+spinor-helicity or amplitude formulations. Choosing among them is a model
+decision. MTT has not proved that one particular extension is selected by
+coherence, nor that increasing mass or anti-self-dual curvature produces a
+universal transition at one scalar threshold.
+
+\section{Determinism, probability, and selection}
+
+Let \(\Pi:X\to Y\) be any measurable projection and \(T_t:X\to X\) an upper
+evolution. A deterministic reduced map \(F_t:Y\to Y\) exists exactly when
+\[
+\Pi T_t(x_1)=\Pi T_t(x_2)
+\quad\text{whenever}\quad
+\Pi x_1=\Pi x_2
+\]
+on the declared domain. This is fiber invariance. It is an algebraic
+condition, not a spectral-gap condition.
+
+If fiber invariance fails and a probability measure on \(X\) is supplied,
+disintegration can produce a conditional probability kernel on \(Y\).
+The kernel depends on that measure. It is not generated by noninjectivity
+alone. Selecting one physical outcome requires still more: an instrument,
+stopping law, recorder, or other accepted branch rule.
+
+Consequently, a breakdown of the twistor encoding has only the following
+immediate meaning:
+\[
+\text{the hypotheses or error tolerance of this representation have failed.}
+\]
+It does not prove irreversibility, randomness, collapse, a new basin, or an
+arrow of time.
+
+\section{Relation to the MTT corpus}
+
+\subsection{Foundation and fixed points}
+
+The Foundation and Fixed Points papers provide the upper vocabulary of
+selection, projection, stability, and conditional continuation. They do not
+by themselves select a four-dimensional twistor double fibration. This paper
+uses their projection language only on a declared slab.
+
+\subsection{Controlled truncation}
+
+The controlled-truncation paper supplies the proper operator-theoretic
+setting for spectral projectors, resolvents, Schur complements, and
+finite-time error. The memory equation in this paper is a short interface to
+that result. Twistor geometry enters only after the separate geometric rows
+of Definition~\ref{def:contract}.
+
+\subsection{Theta closure}
+
+Theta I and Theta III use a twistor corner as a computational and
+normalization device. Their revised form treats self-dual dynamics,
+reconstruction, fiber measure, and action normalization as assumptions or
+conditional bridges. The present paper agrees with that status. It neither
+duplicates their coupling calculations nor promotes them to a source
+theorem.
+
+\subsection{Protospinor and shared-circle programs}
+
+Protospinor and shared-circle constructions may help build the conformal
+spin and phase data needed by rows 3 and 6. Equality of ranks or reuse of a
+common \(U(1)\) line is not enough. The decisive map must preserve the
+connection, chirality, incidence relation, and field operator through
+projection.
+
+\section{What is achieved and what remains}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.27\textwidth}
+                >{\raggedright\arraybackslash}p{0.28\textwidth}
+                >{\raggedright\arraybackslash}p{0.34\textwidth}}
+\toprule
+Layer & Current result & Remaining source obligation\\
+\midrule
+Coherent reduction
+& Exact memory identity and conditional gap bound
+& Selected physical generator, domain, and error certificate\\
+Twistor geometry
+& Standard conformal-spin contract stated
+& Derive the carrier, distribution, reality structure, and leaf space\\
+Gauge correspondence
+& Standard Ward route identified
+& Prove the selected coherent field is in the required self-dual sector\\
+Gravity correspondence
+& Nonlinear-graviton route scoped
+& Derive the effective conformal geometry and rational-curve family\\
+Action and norms
+& Kept separate from holomorphic field equations
+& Same-source positive norm and coupling normalization\\
+Breakdown
+& Gap-loss implication disproved
+& Model-specific continuation or selection law, if one exists\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The most useful next theorem is not that ``high coherence becomes twistor
+space.'' It is a commuting construction of rows 2--8 of
+Definition~\ref{def:contract} for one selected gauge or gravity sector. A
+successful first example could be local and self-dual. It should publish the
+upper source, the four-dimensional spin bundle, the twistor distribution,
+the field map, the Ward bundle, and one nontrivial intertwining check.
+
+\section{Falsifiability}
+
+For any proposed MTT twistor realization, one should be able to test:
+\begin{enumerate}
+\item whether the effective tangent bundle actually factors as required;
+\item whether the twistor distribution is integrable on the stated domain;
+\item whether the projected field satisfies the target equation;
+\item whether the holomorphic bundle is trivial on twistor lines;
+\item whether reconstruction returns the original gauge class;
+\item whether the action and norm coefficients agree without target fitting;
+\item whether the four error rows remain below their declared tolerances.
+\end{enumerate}
+Failure of any row falsifies that encoding on the tested domain. It does not
+falsify twistor theory or MTT globally.
+
+\section{Conclusion}
+
+Twistor theory can be a powerful language for a selected MTT coherent sector,
+but only after the relevant four-dimensional conformal-spin and field data
+exist. Spectral projection and Schur--Feshbach control address the stability
+of a reduction. Penrose, Ward, and nonlinear-graviton correspondences address
+the holomorphic representation of special four-dimensional equations. These
+are complementary bridges, not interchangeable consequences.
+
+Version 2 therefore retains a conditional high-coherence twistor corner and
+makes its content exact. It proves that projection and a gap do not generate
+twistor geometry, and that loss of a gap bound does not force branching. It
+then identifies the constructive route forward: one selected upper action
+must emit the coherent projector, conformal-spin carrier, self-dual field
+sector, twistor correspondence, reconstruction, normalization, and error
+control in a commuting diagram. Until that theorem is supplied, the twistor
+corner is a disciplined encoding proposal rather than a derived universal
+limit of MTT.
 
 \begin{thebibliography}{99}
 
 \bibitem{Penrose1967}
 R.~Penrose,
 \emph{Twistor Algebra},
-J. Math. Phys. \textbf{8}, 345 (1967).
+J. Math. Phys. \textbf{8} (1967), 345--366.
+\url{https://doi.org/10.1063/1.1705200}
 
-\bibitem{Penrose1972}
+\bibitem{Penrose1969}
 R.~Penrose,
-\emph{The Geometry of Impulsive Gravitational Waves},
-in \emph{General Relativity: Papers in Honour of J. L. Synge},
-Clarendon Press (1972).
+\emph{Solutions of the zero-rest-mass equations},
+J. Math. Phys. \textbf{10} (1969), 38--39.
+\url{https://doi.org/10.1063/1.1664756}
 
 \bibitem{Penrose1976}
 R.~Penrose,
-\emph{Nonlinear Gravitons and Curved Twistor Theory},
-Gen. Rel. Grav. \textbf{7}, 31 (1976).
+\emph{Nonlinear gravitons and curved twistor theory},
+Gen. Relativ. Gravit. \textbf{7} (1976), 31--52.
+\url{https://doi.org/10.1007/BF00762011}
 
 \bibitem{Ward1977}
 R.~S.~Ward,
-\emph{On Self-Dual Gauge Fields},
-Phys. Lett. A \textbf{61}, 81 (1977).
+\emph{On self-dual gauge fields},
+Phys. Lett. A \textbf{61} (1977), 81--82.
+\url{https://doi.org/10.1016/0375-9601(77)90842-8}
 
-\bibitem{Witten2004}
-E.~Witten,
-\emph{Perturbative Gauge Theory as a String Theory in Twistor Space},
-Commun. Math. Phys. \textbf{252}, 189 (2004).
+\bibitem{Mason2005}
+L.~J.~Mason,
+\emph{Twistor actions for non-self-dual fields: a derivation of
+twistor-string theory},
+JHEP \textbf{10} (2005), 009.
+\url{https://doi.org/10.1088/1126-6708/2005/10/009}
 
-\bibitem{CachazoSvrcekWitten2004}
-F.~Cachazo, P.~Svr\v{c}ek, and E.~Witten,
-\emph{MHV Vertices and Tree Amplitudes in Gauge Theory},
-JHEP \textbf{09}, 006 (2004).
+\bibitem{MasonWolf2009}
+L.~J.~Mason and M.~Wolf,
+\emph{Twistor actions for self-dual supergravities},
+Commun. Math. Phys. \textbf{288} (2009), 97--123.
+\url{https://doi.org/10.1007/s00220-009-0732-5}
 
-\bibitem{MasonSkinner2009}
-L.~Mason and D.~Skinner,
-\emph{Scattering Amplitudes and BCFW Recursion in Twistor Space},
-JHEP \textbf{01}, 064 (2010).
+\bibitem{AtiyahDunajskiMason2017}
+M.~Atiyah, M.~Dunajski, and L.~J.~Mason,
+\emph{Twistor theory at fifty: from contour integrals to twistor strings},
+Proc. R. Soc. A \textbf{473} (2017), 20170530.
+\url{https://doi.org/10.1098/rspa.2017.0530}
+
+\bibitem{ControlledTruncation}
+P.~Nero,
+\emph{Coherent-Sector Universality and Controlled Truncation},
+revised July 2026.
+
+\bibitem{ThetaIII}
+P.~Nero,
+\emph{Theta Closure in Modal Triplet Theory III: Conditional
+Twistor--Action Matching and Normalization Audit},
+Version 4, July 2026.
 
 \bibitem{MTTFoundation}
-Modal Triplet Theory,
-\emph{MTT Foundation and Fixed-Point Structure},
-Zenodo (various versions).
-
-\bibitem{MTTFixedPoints}
-Modal Triplet Theory,
-\emph{Fixed Points I--VI: Complete Coherence Spine},
-Zenodo (various versions).
-
-\bibitem{MTTTruncation}
-Modal Triplet Theory,
-\emph{Universality and Controlled Truncation in MTT},
-Zenodo (various versions).
-
-\bibitem{MTTCoherence}
-Modal Triplet Theory,
-\emph{Coherence Capacity as an Invariant Admissibility Margin},
-Zenodo (various versions).
+P.~Nero,
+\emph{Modal Triplet Theory: Foundation},
+revised July 2026.
+\url{https://doi.org/10.5281/zenodo.16949762}
 
 \end{thebibliography}
-
 
 \end{document}
