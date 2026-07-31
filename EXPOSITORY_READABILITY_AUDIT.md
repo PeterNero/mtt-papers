@@ -10,28 +10,24 @@ Canonical papers audited: **139**.
 
 | Priority | Papers |
 | --- | ---: |
-| moderate | 1 |
-| light | 1 |
-| reviewed | 135 |
+| reviewed | 137 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
 
 | Dimension | Papers flagged |
 | --- | ---: |
-| argument_flow | 33 |
+| argument_flow | 32 |
 | conclusion | 3 |
-| concrete_foothold | 23 |
+| concrete_foothold | 24 |
 | object_intuition | 84 |
-| orientation | 64 |
+| orientation | 65 |
 | result_interpretation | 7 |
 
 ## Revision Queue
 
 | Effective priority | Heuristic | Paper | Formal results | Narrative words/result | Coverage | Missing |
 | --- | --- | --- | ---: | ---: | ---: | --- |
-| moderate | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
-| light | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 7 | 526.7 | 5/7 | object_intuition, argument_flow |
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
 | reviewed | critical | `fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce` | 43 | 69.9 | 7/7 | - |
 | reviewed | moderate | `wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8` | 34 | 375.2 | 7/7 | - |
@@ -108,6 +104,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `fermions-in-loop-quantum-gravity-from-modal-triplet-the-c9d451aa` | 6 | 309.3 | 6/7 | orientation |
 | reviewed | moderate | `modal-triplet-theory-and-asymptotic-safety-asymptotic-s-dc3ce0c2` | 6 | 262.8 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | moderate | `modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0` | 6 | 354.2 | 7/7 | - |
+| reviewed | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 6 | 501.8 | 4/7 | orientation, object_intuition, concrete_foothold |
 | reviewed | light | `modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927` | 6 | 464.5 | 5/7 | orientation, object_intuition |
 | reviewed | light | `photons-entanglement-and-null-updating-in-modal-triplet-theory` | 6 | 541.2 | 5/7 | orientation, object_intuition |
 | reviewed | light | `quantum-field-theory-reconstruction-from-coherence-basi-ef12097a` | 6 | 519.3 | 5/7 | orientation, object_intuition |
@@ -164,6 +161,7 @@ Canonical papers audited: **139**.
 | reviewed | light | `execution-of-modal-triplet-theory-i-gauge-hym-threshold-abc17efc` | 0 | 2074.0 | 4/7 | orientation, object_intuition, concrete_foothold |
 | reviewed | moderate | `execution-of-modal-triplet-theory-ii-flavor-ckm-neutral-42604e2f` | 0 | 2239.0 | 3/7 | orientation, object_intuition, argument_flow, concrete_foothold |
 | reviewed | moderate | `loop-quantum-gravity-as-a-shadow-of-coherent-fixed-poin-9133be75` | 0 | 2025.0 | 3/7 | orientation, object_intuition, argument_flow, concrete_foothold |
+| reviewed | moderate | `mtt-gpt-corpus-index-grouped-reference` | 0 | 340.0 | 1/7 | orientation, object_intuition, argument_flow, result_interpretation, concrete_foothold, conclusion |
 | reviewed | light | `the-central-circle-inertia-mass-gravity-and-time-as-sha-5faa2369` | 0 | 3012.0 | 4/7 | orientation, object_intuition, concrete_foothold |
 | reviewed | low | `theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5` | 0 | 1849.0 | 7/7 | - |
 | reviewed | light | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 0 | 2264.0 | 4/7 | orientation, argument_flow, concrete_foothold |

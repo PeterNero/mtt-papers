@@ -2,6 +2,31 @@
   "community": "mtt",
   "records": [
     {
+      "concept_doi": "10.5281/zenodo.16950516",
+      "created": "2026-07-31T11:02:09.270932+00:00",
+      "creators": [
+        "Nero, Peter"
+      ],
+      "doi": "10.5281/zenodo.21720135",
+      "files": [
+        {
+          "checksum": "md5:ec97434ec4c1ba9a5e2db2424099891f",
+          "content_url": "https://zenodo.org/api/records/21720135/files/main.pdf/content",
+          "key": "main.pdf",
+          "size": 370880
+        }
+      ],
+      "id": "21720135",
+      "match_kind": "published_draft_reconciliation",
+      "match_score": 1.0,
+      "publication_date": "2026-07-31",
+      "record_url": "https://zenodo.org/records/21720135",
+      "resource_type": "publication",
+      "title": "From Modal Triplet Theory to a Standard-Model Sector: Exact Finite Structure, Profile-Level Equivalence, and the No-Knob Boundary",
+      "updated": "2026-07-31T11:02:09.656472+00:00",
+      "version": "v3"
+    },
+    {
       "concept_doi": "10.5281/zenodo.18262011",
       "created": "2026-07-31T10:33:44.771107+00:00",
       "creators": [

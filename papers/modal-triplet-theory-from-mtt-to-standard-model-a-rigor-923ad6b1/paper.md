@@ -1,545 +1,450 @@
 ---
 abstract: |
-  We derive the full Standard Model (SM) from the coherent fixed-point sector of the Modal Triplet Theory (MTT). Internally, three parallel bundles $`(B_1,B_2,B_3)`$ over $`Y^4`$ with base-only warping ensure commuting vertical Laplacians, so the joint Riesz projector $`\Pi`$ is well-defined and bounded on $`H^1`$. The Fundamental Contractivity Condition (FCC) then yields a unique coherent fixed point, and the $`4`$D EFT arises by restricting the MTT energy to $`\mathrm{Ran}\Pi`$.
+  This paper audits the strongest currently reproducible connection between Modal Triplet Theory (MTT) and the Standard Model (SM). The result is substantial but tiered. At the exact finite-structure tier, released calculations provide a 27-dimensional qutrit–Weyl carrier, the faithful gauge action $`(\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_6`$, a three-family chiral representation with all local and global gauge anomalies cancelled, a completed finite real-even geometry, and a rank-four one-Higgs projection inside its rank-twelve raw scalar fluctuation space. At the profile tier, an explicit $`96\times96`$ finite Dirac operator contains the accepted charged and neutral Yukawa matrices; CKM, Higgs, threshold, and precision packets have executable provenance and pass their declared audits. At the embedded-equivalence tier, the selected branch reproduces the same renormalized SM action, parameter point, scheme, and perturbative observable functor, with twelve of twelve declared obligations verified.
 
-  We prove: (i) the SM gauge group emerges with the canonical identification $`B_1\!\to\mathrm{U}(1)_Y`$, $`B_2\!\to\mathrm{SU}(2)_L`$, $`B_3\!\to\mathrm{SU}(3)_C`$; (ii) the SM chiral content in *three families* is obtained by a clean, gauge-preserving mechanism via a *flavor* line bundle $`L_F`$ with $`Z_3`$ holonomy; (iii) anomaly cancellation is shown constructively by an integer-lattice basis; (iv) the Higgs sector and EWSB follow with representation-correct curvature shift (Bochner/Lichnerowicz) and RG-driven sign flip; (v) Yukawa hierarchies and mixings arise from internal overlap integrals; (vi) a numerical one-loop RG run with modest high-scale thresholds matches observed low-energy couplings. We add a particle dictionary (fermions, bosons, hadrons) with stability mechanisms, check the global $`SU(2)`$ anomaly, discuss strong-CP and proton stability, and clarify the origin of high-scale gauge normalization from internal overlap norms. The result is a referee-ready, self-contained bridge from MTT to the complete SM.
+  This is not a zero-parameter derivation of the measured SM. The adopted closure standard allows one shared electroweak primitive and measured renormalized profile coordinates downstream. In particular, the finite carrier and gauge representation do not by themselves select Yukawa singular values, mixing matrices, absolute neutrino data, the strong-CP mechanism, or a unique observed branch. We state the exact reconstruction theorem, prove a family-intertwiner nonselection result, explain the distinct roles of the $`27\times27`$ and $`96\times96`$ matrices, give a parameter and provenance ledger, and isolate the remaining source theorems needed for strict no-knob Standard-Model closure.
 author:
 - Peter Nero
-current_version: v2
-date: August 2025
-generated_from_main_tex_sha256: 201721294ec743dc1f7b58b981833de776141f56ea40a5f013c170c1e4e3ab84
+current_version: v3
+date: July 2026, Version 3
+generated_from_main_tex_sha256: cab4193377383c0aa7305c4d556e41521a40c83963fa51b39b11c33b6124eac9
 paper_id: modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1
 release_state: zenodo_released
-released_version: v2
+released_version: v3
 title: |
-  Modal Triplet Theory: From MTT to Standard Model  
-  A Rigorous Derivation of Gauge, Matter, and Symmetry Breaking
-zenodo_doi: 10.5281/zenodo.18200819
-zenodo_record_id: 18200819
-zenodo_url: "https://zenodo.org/records/18200819"
+  From Modal Triplet Theory to a Standard-Model Sector
+  Exact Finite Structure, Profile-Level Equivalence, and the No-Knob Boundary
+zenodo_doi: 10.5281/zenodo.21720135
+zenodo_record_id: 21720135
+zenodo_url: "https://zenodo.org/records/21720135"
 ---
 
-# Introduction and context
+# Version 3 Revision Note
 
-Modal Triplet Theory (MTT) provides a mathematically controlled route from a ten-dimensional modal geometry to an emergent $`3{+}1`$D world: three internal bundles $`B_1,B_2,B_3`$ over $`Y^4`$ with *base-only warping* yield $`[\Delta_{B_i},\Delta_{B_j}]=0`$, a joint harmonic projector $`\Pi=\Pi_{B_1}\Pi_{B_2}\Pi_{B_3}`$ bounded on $`H^1`$, and—by the Fundamental Contractivity Condition (FCC)—a unique coherent fixed point of the projected flow $`T_\tau=\Pi\circ\Phi_\tau`$. The $`4`$D effective field theory (EFT) results by restricting the MTT energy to $`\mathrm{Ran}\Pi`$.
+Supersedes.
+Version 2, *Modal Triplet Theory: From MTT to Standard Model*.
 
-This paper completes the derivation to the *full* Standard Model (SM): we fix the bundle$`\to`$group map
-``` math
-B_1\to \mathrm{U}(1)_Y,\qquad B_2\to \mathrm{SU}(2)_L,\qquad B_3\to \mathrm{SU}(3)_C,
-```
-construct three coherent families via a gauge-neutral $`Z_3`$ flavor holonomy on the internal circle, provide a constructive integer proof of anomaly cancellation, obtain the Higgs/EWSB sector with the correct curvature shift and RG running, derive Yukawas from internal overlaps (with a toy hierarchy/mixing example), and perform a one-loop RG benchmark including small high-scale thresholds attributable to nearby modal excitations. We include a particle dictionary and address standard referee checkpoints (global $`SU(2)`$ anomaly, strong-CP status, proton stability, and gauge normalization origin).
+Reason.
+Version 2 identified a useful proposed bridge, but described bundle-to-group assignments, family number, electroweak breaking, Yukawa values, and a one-loop benchmark as a complete first-principles derivation. The present calculation repositories now contain much stronger finite results and, equally importantly, exact tier and parameter audits that rule out that wording.
 
-# MTT baseline and projection to 4D
+Resolution.
+Version 3 replaces the old argument by a hash-addressed reconstruction. It separates exact structural theorems, profile-dependent executions, measured-parameter equivalence, and open source selection. It also incorporates the native gauge-group theorem, the finite-triple no-go and minimal completion, the one-Higgs projector, the current CKM and SMDR precision results, and the strict-upgrade ledger.
 
-#### Bundles and commutation.
+Retained content.
+The chiral field dictionary, explicit anomaly checks, Higgs and Yukawa interpretation, and the goal of connecting MTT finite geometry to the SM remain, but only at their justified tiers.
 
-Internally $`X^6`$ splits orthogonally as $`B_1\oplus^\perp B_2\oplus^\perp B_3`$ with block-diagonal metric depending only on $`y\in Y^4`$ (base-only warping). Then $`[\Delta_{B_i},\Delta_{B_j}]=0`$ and the joint projector $`\Pi`$ exists and is $`H^1`$-bounded.
+Open boundary.
+Zero-primitive electroweak normalization, no-knob flavor and precision values, absolute neutrino ontology, strong CP, the selected upper action, nonperturbative four-dimensional QFT, and unique observed-branch selection remain open.
 
-#### Spectral gap and FCC.
+# What Question Is Actually Answered?
 
-Uniform vertical gaps $`\lambda_{n,\ast}>0`$ yield a global $`\lambda_\ast=\min_n\lambda_{n,\ast}>0`$; the Riesz projector satisfies $`\|\Pi\|_{H^1\to H^1}\le C_\Pi`$. The FCC,
-``` math
-C_\Pi\,\mathrm{e}^{-(\min_n\kappa_n\lambda_\ast - L)\tau}<1,
-```
-with Lipschitz $`L`$ on the invariant sublevel and $`\kappa_n>0`$, ensures a unique coherent fixed point with geometric convergence of Picard iterates.
+There are several inequivalent meanings of “derive the Standard Model.” A construction may recover the SM gauge representation but not its couplings. It may reproduce a measured parameter point without predicting that point. It may build a finite Dirac operator but still borrow the quantum field theory used to interpret it. Confusing these tasks makes a calculation look stronger than it is and also hides genuine progress.
 
-#### Projection.
+The current MTT result answers the following precise question:
 
-Set $`H_{\rm coh}:=\mathrm{Ran}\Pi`$. The $`4`$D EFT Lagrangian arises by restricting the MTT energy to $`H_{\rm coh}`$ and integrating out the vertical fibers. Gauge fields descend as harmonic connections of the internal bundles; matter fields are coherent spinors.
+> Can one selected finite MTT branch carry the exact SM representation and finite-geometric operator structure, and can that branch be mapped to the renormalized SM at a declared measured parameter point with executable precision transport?
 
-# Emergence of the SM gauge group
+At the adopted standard the answer is yes. The stronger question—whether MTT selects all measured values from prior geometry with no continuous empirical input—has not yet been answered. This paper is organized around that distinction.
 
-<div id="prop:bundles" class="proposition">
+## Four status tiers
 
-**Proposition 1** (Bundle $`\leftrightarrow`$ group mapping). *Modal reuse and orthogonality select the identification
-``` math
-B_1 \longrightarrow \mathrm{U}(1)_Y,\qquad
-B_2 \longrightarrow \mathrm{SU}(2)_L,\qquad
-B_3 \longrightarrow \mathrm{SU}(3)_C.
-```
-Harmonic vertical connections project to the SM gauge potentials $`(B_\mu, W_\mu^i, G_\mu^a)`$ on $`Y^4`$.*
+<div class="definition">
 
-</div>
+**Definition 1** (Structural, profile, equivalence, and prediction tiers). For this paper the following terms have fixed meanings.
 
-<div class="remark">
+1.  A *structural exact* result uses discrete or symbolic source data and verifies the stated algebraic identity without observed SM values.
 
-*Remark 2* (BRST & Ward identities). Covariant gauge-fixing and BRST charge descend to the $`4`$D EFT; Ward–Slavnov–Taylor identities hold as in the SM.
+2.  A *profile* result executes a mathematically definite operator after a declared set of measured or calibrated entries has been supplied.
+
+3.  *Embedded renormalized-SM equivalence* means that the selected branch is identified with the same renormalized SM action, parameter point, scheme, and observable functor. It is an existence and consistency statement at that point.
+
+4.  A *strict no-knob prediction* requires the numerical values to be emitted by a selected upstream MTT source before comparison with the observations used to test them.
 
 </div>
 
-# Chiral matter and anomaly cancellation
+The status words are part of the mathematics. A profile theorem does not become a prediction because its matrix calculation is exact after the entries are inserted. Conversely, use of a profile does not invalidate an exact theorem about the representation, anomaly lattice, or operator identities surrounding it.
 
-#### Modal-reuse selection (clarifying the “two-of-three”).
+# The Two Finite Matrices Have Different Jobs
 
-Internal *nonlinear* channels that stabilize coherent spinors are pairwise (see FP–R05); this *does not* constrain the $`4`$D gauge representation. After projection, fermions couple to the full covariant derivative $`D_\mu=\partial_\mu + i g' Y B_\mu + i g T^i W^i_\mu + i g_s T^a G^a_\mu`$ and can carry all three SM charges.
+Two matrix sizes recur in the calculation program. They should not be conflated.
 
-<div id="prop:anom" class="proposition">
+## The $`27\times27`$ qutrit–Weyl realization
 
-**Proposition 3** (Anomaly-free hypercharge lattice). *Per family, the anomaly equations define a rank-$`2`$ $`\mathbb{Z}`$-sublattice in $`\mathbb{Z}^5`$ for $`(q_Q,q_u,q_d,q_L,q_e)`$. A $`\mathbb{Z}`$-basis is $`u^{(1)}=(1,4,-2,-3,-6)`$ and $`u^{(2)}=(1,1,1,-3,3)`$. Any $`q=\alpha u^{(1)}+\beta u^{(2)}`$ is anomaly-free. The SM choice is $`Y=\frac{1}{6}u^{(1)}`$.*
-
-</div>
-
-<div class="proof">
-
-*Sketch.* Solve the three independent linear anomaly constraints over $`\mathbb{Z}`$; check the cubic $`U(1)^3`$ anomaly by multilinearity. Direct verification yields the stated basis. ◻
-
-</div>
-
-<div id="lem:witten" class="lemma">
-
-**Lemma 4** (Global $`SU(2)`$ anomaly absent). *The number of left-handed $`SU(2)_L`$ doublets per family is $`4`$ (three colors of $`Q_L`$ plus one lepton doublet). For three families this is $`12`$, even; hence the mod-$`2`$ global $`SU(2)`$ anomaly vanishes.*
-
-</div>
-
-<div id="lem:charge-quant" class="lemma">
-
-**Lemma 5** (Charge quantization from the internal/anomaly lattices). *Let $`(q_Q,q_u,q_d,q_L,q_e)\in\mathbb{Z}^5`$ satisfy the linear anomaly constraints and write $`q=\alpha u^{(1)}+\beta u^{(2)}`$ with $`u^{(1)},u^{(2)}`$ as in Prop. <a href="#prop:anom" data-reference-type="ref" data-reference="prop:anom">3</a>. Then the physical hypercharges $`Y=\frac{1}{6}q`$ lie in a $`\frac{1}{6}\mathbb{Z}`$ lattice. Moreover, the internal period lattice of the harmonic $`U(1)_Y`$ connection induces the same quantization on the fiber holonomies, so electric charge is quantized consistently with the anomaly lattice.*
-
-</div>
-
-<div class="proof">
-
-*Sketch.* The integer lattice basis implies $`Y\in\frac{1}{6}\mathbb{Z}`$ by construction. Holonomies of the harmonic $`U(1)_Y`$ connection live in $`2\pi\mathbb{Z}`$, giving the same charge lattice for Wilson lines. ◻
-
-</div>
-
-# Three families via a flavor $`Z_3`$ holonomy
-
-<div id="thm:families" class="theorem">
-
-**Theorem 6** (Three coherent families via $`Z_3`$ flavor holonomy). *Let $`L_F\to S^1_{\mathrm{cen}}`$ be a flat complex line bundle with holonomy group $`\mathrm{Hol}(L_F)\cong Z_3=\{1,\omega,\omega^2\}`$, $`\omega=\mathrm{e}^{2\pi i/3}`$. Assume coherent internal profiles are twisted by $`L_F`$ while SM gauge indices are untwisted. Then the space of globally well-defined coherent profiles decomposes into three inequivalent character sectors, producing exactly three orthogonal coherent families without breaking $`SU(3)_C`$, $`SU(2)_L`$, or $`U(1)_Y`$.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Zero modes along $`S^1_{\rm cen}`$ must satisfy twisted periodicity by a character of $`Z_3`$. Since $`Z_3`$ has exactly three one-dimensional irreps, twisted sections split into three inequivalent sectors. The twist acts only on $`L_F`$ and commutes with SM gauge factors, so no gauge symmetry is broken. Orthogonality of distinct characters gives a direct-sum decomposition into three families. ◻
-
-</div>
-
-<div id="rem:flavor-anomaly" class="remark">
-
-*Remark 7* (Flavor twist and anomaly safety). The $`Z_3`$ twist acts only on the external flavor line bundle $`L_F`$ and commutes with the SM gauge action. It is not introduced as a gauged 4D symmetry and does not act on gauge indices. Consequently there is no additional gauge or mixed discrete anomaly to check. We use $`L_F`$ purely as a geometric device to produce three inequivalent coherent sectors (families) without breaking $`SU(3)_C`$, $`SU(2)_L`$, or $`U(1)_Y`$.
-
-</div>
-
-# Higgs sector and electroweak symmetry breaking
-
-A coherent scalar doublet $`\Phi\in(\mathbf{1},\mathbf{2},+1/2)`$ arises from the internal scalar sector aligned with $`B_2/B_1`$ reuse. Representation-correct Bochner/Lichnerowicz yields the curvature shift
+Let $`X,Z\in\operatorname{End}(\mathbb{C}^3)`$ be the qutrit shift and clock operators,
 ``` math
 \begin{equation}
-m_\Phi^2(\mu;R)\;=\;\kappa\,\lambda_\ast\;-\;\frac{1}{6}\,\mathrm{Scal}\;+\;\delta m_\Phi^2(\mu),
-\label{eq:Hmass}
+ZX=\omega XZ,\qquad X^3=Z^3=I,\qquad
+\omega=\exp(2\pi i/3).
 \end{equation}
 ```
-with $`\lambda_\ast>0`$ the vertical spectral gap and $`\delta m_\Phi^2(\mu)`$ the renormalized mass at scale $`\mu`$. EWSB occurs when $`m_\Phi^2(\mu_{\rm EW};R_{\rm EW})<0`$ predominantly by RG running of $`\delta m_\Phi^2(\mu)`$; curvature provides a threshold shift in <a href="#eq:Hmass" data-reference-type="eqref" data-reference="eq:Hmass">[eq:Hmass]</a>. Minimization gives $`v=\mu/\sqrt{\lambda}`$, and $`m_W=\tfrac12 g v`$, $`m_Z=\tfrac12\sqrt{g^2+g'^2}\,v`$, $`m_f=\tfrac{v}{\sqrt2}y_f`$.
-
-<div class="remark">
-
-*Remark 8* (Example: $`k`$ is $`\mathcal{O}(1)`$). Consider normalized internal profiles with comparable $`L^2`$ norms on $`B_1`$ and $`B_2`$ and a mild base-only warp factor. Then $`\|A^{(1)}\|_{\rm int}^2/\|A^{(2)}\|_{\rm int}^2=k`$ differs from unity by geometric factors of order one (fiber radii and smooth warp averages). A representative choice yields $`k\simeq 5/3`$ (GUT normalization) but other $`\mathcal{O}(1)`$ values are consistent depending on internal normalization; our numerical thresholds absorb the small differences.
-
-</div>
-
-#### Selection potential $`\Xi`$ (FP–R06) in the SM limit.
-
-The selection potential $`\Xi`$ introduced in FP–R06 collects curvature-coupled and interaction terms that govern modal transitions. Restricted to the coherent SM sector, $`\Xi`$ reduces to the electroweak scalar potential plus Yukawa interactions (up to higher-dimension operators suppressed by the gap). Thus the usual Higgs-Yukawa structure is the low-energy face of the general selection dynamics.
-
-# Yukawas, flavor, and CP: internal overlaps
-
-Yukawas arise from internal overlap integrals of left/right coherent spinors with the scalar precursor, $`Y_f \sim \int (\psi_{f_L})^\dagger \Phi \psi_{f_R}`$ over the fiber. Internal localization and phases produce hierarchies and mixings.
-
-#### Toy overlap model (hierarchies and phases).
-
-Let $`u`$ parametrize $`S^1_{\rm cen}`$; take three Gaussian family profiles with centers $`(u_1,u_2,u_3)`$ and widths $`\sigma`$, and a broad Higgs profile of width $`\Sigma`$. Then
-``` math
-(Y_f)_{ab}\ \propto\ \exp\!\Big(-\tfrac{(u_a-u_b)^2}{2(\sigma_{f_L}^2+\sigma_{f_R}^2+\Sigma^2)}\Big)\,
-\mathrm{e}^{i(\phi_{f_R,b}-\phi_{f_L,a})},
-```
-which yields diagonal hierarchies for separated centers and off-diagonal entries from small offsets; complex phases propagate to CKM/PMNS.
-
-# Particle dictionary: construction, charges, stability
-
-## Fermions (per family)
-
-| Field | SM rep | Internal supp | Construction | Stability reason |
-|:---|:---|:---|:---|:---|
-| $`Q_L`$ | $`(\mathbf{3},\mathbf{2},+1/6)`$ | $`B_3\oplus B_2\oplus B_1`$ | Coherent spinor; color triplet, weak doublet | Gap protection; baryon \# approx. |
-| $`u_R`$ | $`(\mathbf{3},\mathbf{1},+2/3)`$ | $`B_3\oplus B_1`$ | Right spinor; color triplet, $`Y=+2/3`$ | Decays via $`W`$ if heavy |
-| $`d_R`$ | $`(\mathbf{3},\mathbf{1},-1/3)`$ | $`B_3\oplus B_1`$ | Right spinor; color triplet, $`Y=-1/3`$ | Same |
-| $`L_L`$ | $`(\mathbf{1},\mathbf{2},-1/2)`$ | $`B_2\oplus B_1`$ | Coherent spinor; weak doublet | Lepton \# approx. |
-| $`e_R`$ | $`(\mathbf{1},\mathbf{1},-1)`$ | $`B_1`$ | Right spinor; $`Y=-1`$ | Atomic stability |
-| $`\nu_R`$ | $`(\mathbf{1},\mathbf{1},0)`$ | none | Sterile coherent spinor | Seesaw option |
-
-*Stability note (pairwise mechanism).* In the fixed-point contraction regime, *pairwise* internal interaction channels on $`B_1,B_2,B_3`$ are the ones that generically keep $`\gamma_{n,k}=\kappa_{n,k}\lambda_{n,k}-L-\Delta_{\mathrm{curv}}`$ positive. Pure single-bundle and fully tri-bundle nonlinearities do not at the same scale without additional smallness/gap. This is a *dynamical* selection on the internal channel and **does not** restrict the $`4`$D gauge content: after projection, fermions couple to the full covariant derivative and can carry all three SM charges.
-
-## Gauge bosons and Higgs
-
-| Boson | SM rep | Origin in MTT | Why massless / $`m\neq0`$ | Role |
-|:---|:---|:---|:---|:---|
-| $`G_\mu^a`$ | $`(\mathbf{8},\mathbf{1},0)`$ | Harmonic connection on $`B_3`$ | Unbroken $`\mathrm{SU}(3)`$ | Color force (confining) |
-| $`W^\pm,Z`$ | $`(\mathbf{1},\mathbf{3},0)`$ mix | Harmonic connection on $`B_2`$ | Higgs mechanism | Weak interaction |
-| $`B_\mu\to A_\mu`$ | $`(\mathbf{1},\mathbf{1},0)`$ | Harmonic connection on $`B_1`$ | Unbroken $`\mathrm{U}(1)`$ | Photon; long range |
-| $`H`$ | $`(\mathbf{1},\mathbf{2},+1/2)`$ | Scalar precursor (reuse $`B_2/B_1`$) | <a href="#eq:Hmass" data-reference-type="eqref" data-reference="eq:Hmass">[eq:Hmass]</a> and RG | EWSB |
-
-## Hadrons (examples; color singlets)
-
-| State | Quark content | Color | Construction | Stability/decay |
-|:---|:---|:---|:---|:---|
-| $`\pi^\pm,\pi^0`$ | $`q\bar q`$ | singlet | Two-spinor bound state (chiral ps.) | Strong decays if open |
-| $`p`$ | $`uud`$ | singlet ($`\epsilon_{abc}`$) | Three-spinor antisym. in color | Stable (B#); atomic matter |
-| $`n`$ | $`udd`$ | singlet | As above | $`\beta`$-decay (free); nuclear bound states stable |
-| $`J/\psi,\Upsilon`$ | $`c\bar c,\ b\bar b`$ | singlet | Heavy quarkonia | Narrow resonances |
-
-# 8A. Quantitative Admissibility Ordering of Standard Model Multiplets
-
-Section 8 provided a qualitative particle dictionary identifying the Standard Model (SM) multiplets as coherent spinorial or gauge excitations supported on specific internal bundle combinations $`B_1,B_2,B_3`$. In this section we refine that dictionary by giving a *quantitative admissibility analysis* that determines, from first principles, which SM multiplets are maximally robust, which are marginal, and where near–gap (heavy or decoupled) behavior must first arise.
-
-This analysis sharpens the qualitative stability statement of Section 8 (“pairwise channels are generically stable”) into a field–by–field ordering derived directly from the fixed–point damping condition.
-
-## 8A.1. Effective damping and admissibility
-
-In the Fixed–Point framework, stability of a non–harmonic mode $`a_{n,k}`$ is governed by an effective damping margin of the form
+The nine Weyl operators $`W_{ab}=Z^aX^b`$, $`a,b\in\mathbb{Z}_3`$, form an orthogonal basis of $`\operatorname{HS}(\mathbb{C}^3)`$. The selected finite carrier is
 ``` math
 \begin{equation}
-\gamma_{n,k}(x)
-\;=\;
-\kappa_{n,k}\,\lambda^{\mathrm{eff}}_{n,k}(x)
-\;-\;
-L_{n,k}(x),
-\label{eq:gamma_fp}
+\mathcal{H}_Q=\mathbb{C}^3_{\mathrm{class}}\otimes\operatorname{HS}(\mathbb{C}^3_{\mathrm{qutrit}}),
+\qquad \dim_{\mathbb{C}}\mathcal{H}_Q=3\cdot9=27,
 \end{equation}
 ```
-where $`\lambda^{\mathrm{eff}}_{n,k}(x)`$ is the *representation–correct effective eigenvalue*, incorporating curvature–gap coupling (Bochner/Lichnerowicz), and $`L_{n,k}(x)`$ is the local Lipschitz constant of the nonlinear remainder on the invariant sublevel. The disturbance amplitude $`\delta_{n,k}(x)`$ enters through the Ornstein–Uhlenbeck balance, and admissibility requires a strict margin
-``` math
-\begin{equation}
-\gamma_{n,k}(x)
-\;\ge\;
-\delta_{n,k}(x)
-\;+\;
-\varepsilon,
-\label{eq:admissibility}
-\end{equation}
-```
-for some $`\varepsilon>0`$.
+with ordered basis $`|c,a,b\rangle`$. Left multiplication by $`X`$ and $`Z`$ gives two sparse $`27\times27`$ matrices. The released packet verifies rank $`27`$ for each, $`27`$ nonzero entries in each matrix, full rank $`27`$ for the represented algebra basis, and residuals below $`3\times10^{-15}`$ for the left-action Weyl relation. No observed SM value is used.
 
-For a coherent SM multiplet $`X`$ supported on a finite set of internal bundles
-``` math
-\mathrm{supp}(X)\subset\{B_1,B_2,B_3\},
-```
-we define the *support gap* by
-``` math
-\begin{equation}
-\lambda_{\mathrm{supp}}(X)
-\;:=\;
-\min_{B_n\in\mathrm{supp}(X)} \lambda^{\mathrm{eff}}_{B_n},
-\label{eq:lambda_supp}
-\end{equation}
-```
-where $`\lambda^{\mathrm{eff}}_{B_n}`$ denotes the effective first positive vertical gap of $`\Delta_{B_n}`$, including curvature shifts.
+This is an exact finite algebraic carrier. It is not a $`27`$-particle list, not the SM mass matrix, and not the SM Lagrangian written as one matrix. Its role is to make the discrete class/phase/shift algebra and its projectors executable. Gauge, chirality, flavor magnitudes, and the action require additional typed objects.
 
-<div class="remark">
+## The $`96\times96`$ finite Dirac operator
 
-*Remark 9*. The use of <a href="#eq:lambda_supp" data-reference-type="eqref" data-reference="eq:lambda_supp">[eq:lambda_supp]</a> corresponds to the block–diagonal Laplacian and negligible inter–bundle coupling approximation realized in the baseline MTT geometry. Possible inter–bundle couplings shift $`\lambda_{\mathrm{supp}}`$ at higher order and do not affect the ordering results below.
+The second matrix acts on the completed finite fermion Hilbert space. There are sixteen left-handed Weyl slots per family when a neutral singlet is included, forty-eight slots for three families, and the real finite geometry includes the conjugate sector, giving dimension $`96`$. The finite Dirac operator $`D_F`$ connects left and right representation slots and carries the Yukawa and neutral-mass blocks.
 
-</div>
-
-We then define the *raw channel margin*
-``` math
-\begin{equation}
-\gamma_{\mathrm{raw}}(X)
-\;:=\;
-\kappa\,\lambda_{\mathrm{supp}}(X)
-\;-\;
-L(X),
-\label{eq:gamma_raw}
-\end{equation}
-```
-where $`L(X)`$ is the effective Lipschitz scale associated with the nonlinear interactions of $`X`$.
-
-## 8A.2. Channel dependence and effective margin
-
-As emphasized in Section 8, internal interaction channels fall into three structural classes:
-
-1.  *Pairwise channels* $`B_i\oplus B_j`$,
-
-2.  *Single–bundle channels* $`B_i`$,
-
-3.  *Tri–bundle channels* $`B_1\oplus B_2\oplus B_3`$.
-
-The Fixed–Point stability analysis shows that pairwise channels benefit from cross–bundle stabilization, while single–bundle and fully tri–bundle nonlinearities require additional smallness or gap to maintain the admissibility margin <a href="#eq:admissibility" data-reference-type="eqref" data-reference="eq:admissibility">[eq:admissibility]</a> at the same scale.
-
-To encode this effect at the level of a diagnostic ordering, we introduce an *effective channel penalty* $`P(X)`$ and define the *effective admissibility margin*
-``` math
-\begin{equation}
-\gamma_{\mathrm{eff}}(X)
-\;:=\;
-\gamma_{\mathrm{raw}}(X)
-\;-\;
-P(X),
-\label{eq:gamma_eff}
-\end{equation}
-```
-where $`P(X)`$ is an effective measure of how the disturbance scale $`\delta(X)`$ and/or the nonlinear Lipschitz constant $`L(X)`$ grows with channel complexity. Concretely, one may take
-``` math
-\begin{equation}
-P(X)
-\;=\;
-\begin{cases}
-0, & X \text{ pairwise supported},\\[4pt]
-\eta_s\,\lambda_{\mathrm{supp}}(X), & X \text{ single--bundle},\\[4pt]
-\eta_t\,\lambda_{\mathrm{supp}}(X), & X \text{ tri--bundle},
-\end{cases}
-\label{eq:channel_penalty}
-\end{equation}
-```
-with fixed $`0<\eta_s<\eta_t<1`$. This form is not assumed as a universal law, but as an effective parametrization of the channel–dependent scaling of $`L(X)`$ and $`\delta(X)`$ observed in the FP analysis.
-
-A multiplet $`X`$ is called:
-
-- *robust* if $`\gamma_{\mathrm{eff}}(X)\ge \delta(X)+\varepsilon`$,
-
-- *marginal* if $`0<\gamma_{\mathrm{eff}}(X)<\delta(X)+\varepsilon`$,
-
-- *near–gap* if $`\gamma_{\mathrm{eff}}(X)\le 0`$.
-
-## 8A.3. Ordering of SM multiplets
-
-Using the internal supports listed in Section 8:
-``` math
-\begin{align*}
-u_R,d_R &:\; B_3\oplus B_1 \quad \text{(pairwise)},\\
-L_L &:\; B_2\oplus B_1 \quad \text{(pairwise)},\\
-e_R &:\; B_1 \quad \text{(single)},\\
-Q_L &:\; B_3\oplus B_2\oplus B_1 \quad \text{(tri--bundle)},
-\end{align*}
-```
-and noting that gauge bosons arise as harmonic connections on a single $`B_n`$, we obtain the following result.
-
-<div class="theorem">
-
-**Theorem 10** (Relative admissibility of SM multiplets). *Assume uniform vertical gaps $`\lambda^{\mathrm{eff}}_{B_n}>0`$ and the Fundamental Contractivity Condition on the coherent sector. Then:*
-
-1.  *All SM gauge bosons are robust (harmonic modes not subject to non–harmonic damping).*
-
-2.  *Right–handed quarks $`u_R,d_R`$ and left–handed leptons $`L_L`$ are generically robust.*
-
-3.  *Right–handed charged leptons $`e_R`$ are admissible but more sensitive to disturbance.*
-
-4.  *Left–handed quark doublets $`Q_L`$ are the *first SM multiplets to become marginal* as gaps decrease or disturbance increases.*
-
-*This ordering is independent of family index and depends only on internal support structure.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* All multiplets sharing the same minimal support gap $`\lambda_{\mathrm{supp}}`$ differ only by the channel–dependent contribution to $`L(X)`$ and $`\delta(X)`$ encoded in $`P(X)`$. Pairwise channels incur the smallest effective disturbance and nonlinear scale, while single–bundle and tri–bundle channels incur larger effective penalties. Since $`Q_L`$ is the unique SM fermion with tri–bundle support, its effective margin $`\gamma_{\mathrm{eff}}(Q_L)`$ is strictly smallest among SM multiplets at fixed gaps. ◻
-
-</div>
-
-## 8A.4. Admissibility ordering and proton stability
-
-The admissibility ordering above has a direct implication for baryon number and proton stability.
-
-<div class="lemma">
-
-**Lemma 11** (Penalized–channel activation in baryon–violating operators). *Any gauge–invariant dimension–six baryon–number–violating operator in the Standard Model necessarily induces a coherent excitation that activates at least one *penalized channel* in the MTT admissibility ordering, namely either a single–bundle or a tri–bundle internal support.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* At dimension six, the gauge–invariant baryon–number–violating operators of the Standard Model fall into two classes. Operators of the $`QQQL`$ type necessarily contain at least one left–handed quark doublet $`Q_L`$, whose internal support is $`B_3\oplus B_2\oplus B_1`$, thereby activating the tri–bundle channel.
-
-The remaining independent class, schematically of the $`u^cu^cd^ce^c`$ type, contains no SU(2)$`_L`$ doublets but necessarily includes a right–handed charged lepton $`e_R`$, whose internal support is the single–bundle channel $`B_1`$. Thus these operators activate a single–bundle channel.
-
-In both cases, baryon–number violation necessarily probes at least one channel that is penalized relative to pairwise–supported multiplets in the admissibility ordering. ◻
-
-</div>
-
-<div class="remark">
-
-*Remark 12* (Emergent baryon number). Baryon–number–violating operators necessarily activate at least one penalized channel in the MTT admissibility ordering. The most strongly suppressed channels are those involving the left–handed quark doublet $`Q_L`$, the unique SM fermion with tri–bundle support, while alternative baryon–violating operators activate single–bundle channels such as $`e_R`$. Consequently, baryon–number violation is dynamically suppressed by the gap scale and pushed toward the near–gap sector.
-
-This provides a geometric and dynamical explanation for the approximate conservation of baryon number and proton longevity. Compatibility with bounds on possible dimension–five operators remains as discussed in Section 15, where additional selection rules or discrete remnants may further suppress such contributions.
-
-</div>
-
-## 8A.5. Near–gap exotics
-
-As gaps decrease or disturbance increases, the first channels to approach the admissibility boundary are those containing $`Q_L`$. Near–gap vector–like or exotic states therefore couple preferentially to left–handed quark doublets. This provides a first–principles explanation of the “heavy exotics near the gap” discussed in Section 15 and yields a clear phenomenological handle.
-
-In all cases these couplings remain suppressed in absolute magnitude by the gap scale, in accordance with the heavy near–gap exotic sector described in Section 15; the “preference” here refers to relative visibility among otherwise suppressed channels.
-
-## 8A.6. Weinberg operator: admissibility bridge
-
-The unique dimension–five gauge–invariant lepton–number–violating operator of the Standard Model is the Weinberg operator
-``` math
-\mathcal O_W \;=\; \frac{c_{ij}}{\Lambda}\,(L_L^i H)(L_L^j H),
-```
-which generates Majorana neutrino masses after electroweak symmetry breaking. In contrast to the baryon–number–violating operators discussed above, $`\mathcal O_W`$ does not necessarily activate a tri–bundle internal channel in the baseline MTT particle dictionary.
-
-In the support assignment of Section 8, both the lepton doublet $`L_L`$ and the Higgs field $`H`$ are supported on pairwise internal bundles. Consequently, the Weinberg operator is *not* automatically penalized by channel complexity alone. This explains why lepton number violation and neutrino masses require additional structure beyond the arguments used for baryon number.
-
-Within MTT, two complementary mechanisms naturally arise.
-
-#### (A) Selection–rule or remnant–symmetry branch.
-
-The coherent sector selected by the joint harmonic projector may forbid the contraction structure required by $`\mathcal O_W`$ at leading order. In this case, lepton number emerges as an approximate symmetry of the coherent effective theory, broken only by subleading effects or discrete remnants. The Weinberg operator is then absent or highly suppressed without invoking heavy mediators, consistent with the dimension–five caveat discussed in Section 15.
-
-#### (B) Near–gap mediation branch.
-
-Alternatively, $`\mathcal O_W`$ may be generated by integrating out heavy degrees of freedom such as right–handed neutrinos, scalar triplets, or fermion triplets. In MTT language, these mediators belong to near–gap or marginal channels whose admissibility margins are small. The coefficient $`c_{ij}/\Lambda`$ is then controlled by the same spectral gaps and admissibility bounds that govern projector variation and heavy exotics. Neutrino masses arise dynamically as a near–gap effect,
-``` math
-m_\nu \;\sim\; \frac{v^2}{\Lambda_{\mathrm{gap}}}
-\times (\text{admissibility suppression}),
-```
-placing lepton–number violation parametrically below the robust coherent sector.
-
-Thus, while baryon–number violation is suppressed by unavoidable activation of penalized channels, the Weinberg operator probes a distinct admissibility pathway. Its smallness or absence is not imposed by hand, but emerges from either coherent–sector selection rules or near–gap mediation within the same modal–geometric framework.
-
-## 8A.X. Phenomenology summary: supports, penalties, and leading signatures
+Thus the dimensions answer different questions:
 
 <div class="center">
 
 <div class="tabularx">
 
-@ L2.6cm L3.0cm L2.6cm L2.2cm Y @ **Item** & **Internal support** & **Channel class** & **Penalty tier** & **MTT admissibility takeaway / signature**  
-Gauge bosons $`(G,W,B)`$ & harmonic on $`B_n`$ & harmonic & none & Coherent by construction; not governed by the non–harmonic damping inequality.  
-$`u_R, d_R`$ & $`B_3\oplus B_1`$ & pairwise & $`P=0`$ & Generically robust in baseline geometry; useful reference channel when discussing relative suppression elsewhere.  
-$`L_L`$ & $`B_2\oplus B_1`$ & pairwise & $`P=0`$ & Robust pairwise sector; Weinberg-type effects are *not* automatically penalized unless mediation/selection rules impose it.  
-$`e_R`$ & $`B_1`$ & single & $`P=\eta_s\,\lambda_{\mathrm{supp}}`$ & More disturbance-sensitive; operators requiring $`e_R`$ necessarily probe a penalized channel.  
-$`Q_L`$ & $`B_3\oplus B_2\oplus B_1`$ & tri-bundle & $`P=\eta_t\,\lambda_{\mathrm{supp}}`$ & Most constrained SM fermion; first to go marginal as gaps shrink / disturbance grows. Near-gap/exotic effects are *most visible* in $`Q_L`$-containing processes (relative preference within overall suppression).  
-
-**Process / operator class** & **Field content** & **Forces penalized channel?** & **Bottleneck** & **Consequence**  
-
-Dim-6 baryon violation & $`QQQL`$ & yes (tri) & $`Q_L`$ & Strong suppression via smallest margin; naturally pushed toward near-gap mediation; supports proton longevity.  
-Dim-6 baryon violation & $`u^c u^c d^c e^c`$ & yes (single) & $`e_R`$ & Also suppressed (penalized channel), typically weaker than tri-bundle suppression if $`\eta_t>\eta_s`$.  
-Weinberg (dim-5) & $`(LH)(LH)`$ & model-dependent & model-dependent & Not automatically suppressed by channel complexity in the baseline mapping; either (i) forbidden/suppressed by selection rules/remnants, or (ii) generated via near-gap mediators (seesaw) whose channel class determines suppression.  
-Near-gap heavy exotics & vector-like / exotic states & typically yes & often $`Q_L`$ & Couplings suppressed in absolute magnitude by the gap scale; relative visibility tends to peak in the $`Q_L`$ bottleneck sector.  
+0.94@L0.17Y Y@ Object & What indexes its basis & What it establishes
+$`27\times27`$ & Three discrete classes times nine qutrit–Weyl operators & A faithful finite left-action realization of the selected Weyl carrier
+$`96\times96`$ & Three-family particle and conjugate finite-fermion slots & The finite Dirac, grading, reality, order-zero, and order-one calculations at the declared profile
 
 </div>
 
 </div>
 
-# Photons, bosons as interactions, and speed $`c`$
+Neither dimension is the dimension of spacetime, and neither is a conventional SM requirement. They are dimensions of two MTT finite carriers.
 
-The photon is the massless gauge mode associated with unbroken $`U(1)_{\rm em}`$ (after $`B_\mu`$–$`W^3_\mu`$ mixing). Its dynamics are governed by the Maxwell action on $`(Y^4,g)`$; null characteristics coincide with the Lorentzian light cone, so wave packets propagate at $`c`$. Non-abelian connections from $`B_2,B_3`$ yield $`W/Z`$ (mass via Higgs) and gluons (massless, but confining).
+# Exact Gauge and Chiral Structure
 
-# Quarks, hadrons, and confinement
+## Native bundle automorphisms
 
-A quark is a coherent 4D spinor with internal profile in the fundamental of $`\mathrm{SU}(3)`$ (from $`B_3`$), with hypercharge from $`B_1`$ and weak isospin from $`B_2`$ (modal reuse). Hadrons are color-singlet *composites* minimizing the projected energy:
+The selected rank-one, rank-two, and determinant-trivial rank-three carrier tensors have native automorphism groups
 ``` math
-|M\rangle\sim \sum c_{ab}|q_a\bar q_b\rangle,\qquad
-|B\rangle\sim \sum c_{abc}\,\epsilon^{\alpha\beta\gamma}|q_{a,\alpha}q_{b,\beta}q_{c,\gamma}\rangle.
+\begin{equation}
+\mathrm{U}(1),\qquad \operatorname{USp}(2)=\mathrm{SU}(2),\qquad \mathrm{SU}(3),
+\end{equation}
 ```
-Confinement is encoded in the non-perturbative $`\mathrm{SU}(3)`$ dynamics (area law for large Wilson loops); in the MTT energy, it appears as competition between gauge curvature and overlap functionals: color charge isolation is energetically forbidden.
-
-#### Overlap/barrier energetics and fragmentation (FP–R04 link).
-
-The overlap functionals and barrier theorems of FP–R04 imply that color-nonsinglet separations face growing energetic barriers, while color-singlet recombinations lower the projected energy. String breaking and jet fragmentation correspond to barrier crossing along directions of increasing overlap with color-singlet channels. This provides a geometric energy-landscape picture underlying hadronization, consistent with the area law and with the composite coherent minima described above.
-
-# Spinors with bundles: how charges arise
-
-4D spinors live in $`S(Y^4)\otimes \eta_{\rm int}`$, with $`\eta_{\rm int}`$ built from bundle harmonics on $`B_1,B_2,B_3`$. Pairings with harmonic connections yield conserved currents and charges $`Q_Y=\int j_Y^0 d^3x`$, $`Q_{\rm weak}^i=\int j^{0,i}_{\rm weak} d^3x`$, $`Q_{\rm color}^a=\int j^{0,a}_{\rm color} d^3x`$. Quantization follows from internal period lattices. Modal reuse enforces the group-theoretic inclusions $`U(1)\subset SU(2)\subset SU(3)`$ at the level of geometry, matching the SM embedding.
-
-## Spin–statistics and the Pauli principle
-
-Quantization of the coherent sector proceeds with canonical anticommutation relations (CAR) for 4D spinor fields on the spin bundle $`S(Y^4)`$, tensored with the finite-dimensional internal fiber $`\eta_{\rm int}`$. Hence the usual spin–statistics theorem applies: coherent spinors obey Fermi statistics and the Pauli exclusion principle holds exactly as in standard QFT. The internal bundle structure supplies gauge charges and family labels but does not alter CAR on $`S(Y^4)`$.
-
-# Why everyday matter is first generation
-
-Higher families have larger Yukawas from internal localization/phase structure, hence larger masses and faster weak decays; the first-generation charges allow the lightest color-singlet baryon (proton) and the lightest charged lepton (electron) to form atoms. In MTT this follows from (i) overlap hierarchies, (ii) CKM/PMNS mixings, and (iii) energy minimization under the coherent fixed-point projection.
-
-# High-scale boundary conditions and RG flow (with numerics)
-
-#### Gauge couplings (boundary).
-
-Internal normalization fixes a boundary relation at $`\mu_0`$:
+respectively. On the selected chiral representation, the central element
 ``` math
-g_s(\mu_0)=g(\mu_0)=\sqrt{k}\,g'(\mu_0),
+\begin{equation}
+(\omega_3,-1,e^{i\pi/3})
+\end{equation}
 ```
-with rational $`k`$ set by the internal overlap norms of the harmonic connections (see <a href="#rem:normalization" data-reference-type="ref+Label" data-reference="rem:normalization">13</a> below).
-
-#### One-loop running.
-
-Using GUT-normalized $`\alpha_1=\tfrac{5}{3}\alpha_Y`$ with one-loop coefficients $`(b_1,b_2,b_3)=(\tfrac{41}{10},-\tfrac{19}{6},-7)`$,
+acts trivially and generates a six-element kernel. The faithful image of this particular field representation is therefore
 ``` math
-\frac{d\,\alpha_i^{-1}}{d\ln\mu}=-\frac{b_i}{2\pi},\qquad
-\alpha_i^{-1}(M_Z)=\alpha_U^{-1}+\frac{b_i}{2\pi}\ln\frac{\mu_0}{M_Z}.
+\begin{equation}
+G_{\mathrm{SM}}=\frac{\mathrm{SU}(3)_C\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y}{\mathbb{Z}_6}.
+\end{equation}
 ```
-For $`\mu_0=10^{16}\,`$GeV, $`\ln(\mu_0/M_Z)\simeq 32.329`$:
-``` math
-\Delta_1\simeq 21.11,\quad \Delta_2\simeq -16.30,\quad \Delta_3\simeq -36.03.
-```
-Thus $`\alpha_i^{-1}(M_Z)=\alpha_U^{-1}+\Delta_i`$. As in the minimal SM, one-loop lines do not meet exactly; in MTT small, *calculable* high-scale thresholds from nearby modal excitations
-``` math
-\alpha_i^{-1}(M_Z)=\bigl[\alpha_U^{-1}+\Delta_i^{\rm thr}\bigr]+\frac{b_i}{2\pi}\ln\frac{\mu_0}{M_Z}
-```
-(with $`(\Delta_1,\Delta_2,\Delta_3)`$ modest and $`\mathcal{O}(1)`$) align the three couplings, with the geometric origin in overlap-normalization and spectral gaps.
+This is an exact statement about the selected representation. It should not be confused with an experimental determination of the complete global line-operator spectrum: local SM fields alone can be compatible with several quotients, as emphasized in the standard analysis of global SM gauge structure .
 
-<div id="rem:normalization" class="remark">
+## Three-family chiral carrier
 
-*Remark 13* (High-scale gauge normalization). The boundary relation $`g_s(\mu_0)=g(\mu_0)=\sqrt{k}\,g'(\mu_0)`$ arises from internal overlap normalizations $`\langle A^{(n)},A^{(n)}\rangle_{\rm int}`$ of the harmonic connections. Concretely, $`k=\|A^{(1)}\|_{\rm int}^2/\|A^{(2)}\|_{\rm int}^2`$ (and similarly for $`g_s`$) once the internal profiles are fixed. In the numerical baselines, $`k=\mathcal{O}(1)`$.
+Using left-handed Weyl notation, one family is
+``` math
+\begin{equation}
+\mathcal{H}_{16}=Q\oplus u^c\oplus d^c\oplus L\oplus e^c\oplus N^c,
+\qquad
+\mathcal{H}_{\mathrm{ch}}=\mathbb{C}^3_{\mathrm{family}}\otimes\mathcal{H}_{16}.
+\end{equation}
+```
+The gauge action is family diagonal,
+``` math
+\begin{equation}
+\rho_{\mathrm{ch}}(g)=I_3\otimes\rho_{16}(g),
+\end{equation}
+```
+and the six rows are
+``` math
+\begin{equation}
+\begin{aligned}
+Q&:(\mathbf3,\mathbf2)_{1/6},&
+u^c&:(\bar{\mathbf3},\mathbf1)_{-2/3},&
+d^c&:(\bar{\mathbf3},\mathbf1)_{1/3},\\
+L&:(\mathbf1,\mathbf2)_{-1/2},&
+e^c&:(\mathbf1,\mathbf1)_{1},&
+N^c&:(\mathbf1,\mathbf1)_{0}.
+\end{aligned}
+\end{equation}
+```
+The Higgs row $`(\mathbf1,\mathbf2)_{1/2}`$ is scalar and contributes no chiral gauge anomaly.
+
+## Anomaly audit
+
+The cancellation can be seen without a numerical fit. Per family,
+``` math
+\begin{align}
+\mathrm{SU}(3)^3 &: 2-1-1=0,\\
+\mathrm{SU}(3)^2\mathrm{U}(1)_Y &: 2\left(\frac12\right)\frac16
+ +\left(\frac12\right)\left(-\frac23\right)
+ +\left(\frac12\right)\frac13=0,\\
+\mathrm{SU}(2)^2\mathrm{U}(1)_Y &: 3\left(\frac12\right)\frac16
+ +\left(\frac12\right)\left(-\frac12\right)=0,\\
+\mathrm{grav}^2\mathrm{U}(1)_Y &: 6\frac16+3\left(-\frac23\right)
+ +3\frac13+2\left(-\frac12\right)+1=0,\\
+\mathrm{U}(1)_Y^3 &: 6\left(\frac16\right)^3+3\left(-\frac23\right)^3
+ +3\left(\frac13\right)^3+2\left(-\frac12\right)^3+1=0.
+\end{align}
+```
+There are four $`\mathrm{SU}(2)`$ doublets per family after color multiplicity and hence twelve for three families, so the global Witten anomaly is absent . The released representation packet evaluates the same coefficients on the same forty-eight-state carrier, rather than combining anomaly statements from unrelated conventions.
+
+<div class="proposition">
+
+**Proposition 2** (Exact finite gauge-content result). *The selected native carrier and chiral packet define an anomaly-free representation of $`G_{\mathrm{SM}}`$ on three identical families, with no continuous parameter used to select the group, hypercharge lattice, or anomaly cancellations.*
 
 </div>
 
-# Consistency checks and standard objections
+<div class="proof">
 
-#### Global $`SU(2)`$ anomaly.
-
-Covered by <a href="#lem:witten" data-reference-type="ref+Label" data-reference="lem:witten">4</a> (even number of $`SU(2)`$ doublets).
-
-#### Measurement disturbance and OU balance.
-
-In the FP framework, disturbance enters as additive noise with covariance density $`\delta_{n,k}`$ for non-harmonic modes; damping margins are $`\gamma_{n,k}=\kappa_{n,k}\lambda_{n,k}-L-\Delta_{\rm curv}`$. Modewise OU variance is $`\sigma_{n,k}^2=\delta_{n,k}/(2\gamma_{n,k})`$, while bundlewise stability requires the weighted summability $`\sum_{n,k}(1+\lambda_{n,k})\,\delta_{n,k}/\gamma_{n,k}<\infty`$. In laboratory measurements, a finite coupling to the apparatus increases $`\delta_{n,k}`$ and can temporarily reduce the effective $`\gamma_{n,k}`$, enhancing decoherence; the coherent sector remains stable precisely when the summability criterion holds. This connects the MTT fixed-point picture to standard decoherence phenomenology without additional postulates.
-
-#### Strong CP.
-
-<div class="remark">
-
-*Remark 14* (Strong CP). The minimal MTT$`\to`$SM setup reproduces the SM with a generic $`\theta_{\rm QCD}`$. An explicit MTT mechanism for $`\theta\approx 0`$ (e.g. a PQ-like $`U(1)_{\rm PQ}`$ realized by an internal flat direction, or symmetry alignment of phases) is beyond the present scope and left for future work. The results here do not depend on $`\theta`$.
+*Proof.* The native automorphism groups give the three local factors. Exhaustive center action gives the $`\mathbb{Z}_6`$ kernel. The displayed representation and anomaly sums prove the local conditions, and the even number of weak doublets proves the global condition. These operations use only integer charges, representation multiplicities, and finite matrices. ◻
 
 </div>
 
-#### Proton stability.
+# Finite Geometry and the Higgs Module
 
-<div class="remark">
+## A no-go result and its minimal completion
 
-*Remark 15* (Proton stability). Gauge interactions do not generate dimension-6 $`X,Y`$ exchange operators. Higher-dimension four-fermion operators induced by heavy modal states are suppressed by the gap scale $`\Lambda_{\rm MTT}`$. An approximate global $`U(1)_B`$ (or a discrete remnant) can forbid dimension-$`5`$ operators, ensuring compatibility with current proton-decay bounds.
+For a KO-dimension-six finite geometry, the original three-summand algebra $`\mathbb{C}\oplus\mathbb H\oplus M_3(\mathbb{C})`$ has two problems when the selected neutral singlet is included. The $`N_R:\mathbb{C}\!\to\!\mathbb{C}`$ self-edge obstructs orientability, in agreement with the known right-handed-neutrino issue , and the one-family intersection form
+``` math
+\begin{equation}
+\begin{pmatrix}
+0&2&2\\[-1mm]
+-2&0&-2\\[-1mm]
+-2&2&0
+\end{pmatrix}
+\end{equation}
+```
+is antisymmetric of odd rank and has determinant zero.
+
+The selected neutral line $`1_M=N^c`$ canonically supplies
+``` math
+\begin{equation}
+\mathbb{C}_N=\operatorname{End}_{\mathbb{C}}(1_M),\qquad
+\mathcal{A}_F'=\mathbb{C}\oplus\mathbb H\oplus M_3(\mathbb{C})\oplus\mathbb{C}_N.
+\end{equation}
+```
+With the neutral edge moved to the distinct $`\mathbb{C}_N`$ sheet, an explicit Hochschild zero-cycle represents the grading with zero stored residual, and the four-summand intersection form has determinant $`4`$ per family. This completion adds a primitive central idempotent but no particle slot and no continuous coefficient.
+
+The distinct complex sheets do not create a second physical circle. If their Abelian phases are $`(\alpha,\mu,\nu)`$, the independent linear anomaly equations are
+``` math
+\begin{equation}
+\alpha+3\mu=0,\qquad \alpha-\nu=0.
+\end{equation}
+```
+Their primitive integer null vector is $`(3,-1,3)`$, which yields
+``` math
+\begin{equation}
+6Y=(1,-4,2,-3,6,0)
+\end{equation}
+```
+on $`(Q,u^c,d^c,L,e^c,N^c)`$. The cubic anomaly vanishes on the same line; an independent neutral phase is anomalous. This is the finite-geometric realization of one shared anomaly-free hypercharge circle.
+
+## The one-Higgs projection
+
+The complete one-form calculation executes all $`26^2=676`$ real-algebra basis pairs in
+``` math
+\begin{equation}
+\Omega^1_{D_F}(\mathcal{A}_F')=\operatorname{span}\{\rho(a)[D_F,\rho(b)]\},
+\qquad A_{\mathrm{real}}=A+J_FAJ_F^{-1}.
+\end{equation}
+```
+The unrestricted real fluctuation space has rank twelve. It is therefore a three-doublet scalar space, not automatically the one-Higgs SM. The selected q79/proto-spinor alignment rule is
+``` math
+\begin{equation}
+H_{\mathrm{up}}=H_{\nu}=H,\qquad
+H_{\mathrm{down}}=H_e=-\varepsilon\overline H.
+\end{equation}
+```
+When executed on the actual one-form space, its image has real rank four and removes eight real scalar directions. The stored inclusion residual is $`6.15\times10^{-15}`$. The survivor is one complex weak doublet of hypercharge $`1/2`$.
+
+The finite gauge traces are
+``` math
+\begin{equation}
+k_Y:k_2:k_3=10:6:6,
+\end{equation}
+```
+which become $`6:6:6`$ after the conventional $`5/3`$ hypercharge normalization. This supplies a finite normalization relation. It does not determine the observed gauge couplings without a four-dimensional Dirac geometry, cutoff moments, canonical field normalization, a matching scale, and renormalization-group transport. Those distinctions are standard in the spectral action framework .
+
+# Where the Numerical Values Enter
+
+The renormalized SM action can be written schematically as
+``` math
+\begin{equation}
+S_{\mathrm{SM}}[\mathbf p(\mu);\mathfrak s]
+=\int \!d^4x\,\bigl(\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{fermion}}
++\mathcal{L}_{\mathrm{Higgs}}+\mathcal{L}_{\mathrm{Yukawa}}+\mathcal{L}_{\theta}\bigr),
+\end{equation}
+```
+where $`\mathbf p(\mu)`$ is the renormalized parameter vector and $`\mathfrak s`$ records the scheme, scale, loop order, and matching conventions. Structural reconstruction fixes which terms and representations are allowed. Numerical equivalence additionally needs $`\mathbf p(\mu)`$ and $`\mathfrak s`$.
+
+## Charged flavor and the finite Dirac operator
+
+The released profile packet supplies $`Y_u,Y_d,Y_e`$ and $`\lambda_H`$ at a common declared scale. Inserted into $`D_F`$, these matrices pass self-adjointness, grading, reality, order-zero, and order-one checks. The profile traces are
+``` math
+\begin{equation}
+a=\operatorname{Tr}(Y^\dagger Y)=3.15667873398489,
+\qquad
+b=\operatorname{Tr}[(Y^\dagger Y)^2]=3.31696406124945,
+\end{equation}
+```
+with color multiplicities included. These are exact evaluations of the supplied profile, not predictions of its entries.
+
+The CKM packet contains three selected profile rows and a declared uncertainty comparison. Its largest displacement from the comparison profile is $`2.36\times10^{-4}`$ standard deviations. The obsolete requirement of exact equality to a moving experimental central estimator has been retired. This is a numerically certified profile result; it does not turn all flavor values into upstream algebraic constants.
+
+## Neutral profile
+
+The current neutral execution uses a normal-ordering Dirac profile with lightest mass set to zero. Two measured mass-squared splittings calibrate two neutral coordinates and emit the corresponding mass, Yukawa, and mixing rows. Absolute mass, ordering, Dirac-versus-Majorana ontology, and the source of those calibration coordinates are separate questions. The finite operator is complete at this declared profile, while strict neutral source selection remains open.
+
+## Electroweak normalization and Higgs row
+
+The adopted baseline counts one shared physical primitive, denoted $`P_{\mathrm{EW}}`$. Given that primitive, the strict electroweak source row and the direct $`K_{\mathrm{threshold}}.\Omega_H.\lambda`$ row are exact in the released ledger. No separate Higgs-specific continuous parameter is added by that construction. Deriving $`P_{\mathrm{EW}}`$ itself from selected source geometry is the stronger zero-primitive problem.
+
+## Multi-loop precision transport
+
+The precision workspace transports fifteen declared source coordinates through SMDR v1.3 to an eight-coordinate output with a positive-definite $`8\times8`$ covariance. SMDR is an established multi-loop implementation of the $`\overline{\mathrm{MS}}`$ SM, including running and threshold matching . In MTT the result proves that the selected profile can be carried consistently through a modern common scheme. It is not an independent prediction when the same measured source coordinates are used to construct the input point. The current accepted workspace uses a declared diagonal source covariance; a complete official joint input likelihood is a stricter upgrade.
+
+# The Reconstruction Theorem
+
+<div class="definition">
+
+**Definition 3** (Selected SM reconstruction record). A selected reconstruction record is
+``` math
+\begin{equation}
+\mathfrak R_{\mathrm{SM}}=
+(\mathcal{H}_Q,L_X,L_Z;G_{\mathrm{SM}},\mathcal{H}_{\mathrm{ch}};
+\mathcal{A}_F',\mathcal{H}_F,D_F,J_F,\Gamma_F;P_H;
+\mathbf p,\mathfrak s,\mathcal{O}_{\mathrm{ren}}),
+\end{equation}
+```
+where the semicolon-separated blocks are, respectively, the discrete finite carrier, gauge and chiral data, finite real-even geometry, one-Higgs projector, and renormalized profile plus observable functor.
 
 </div>
 
-# Predictions and observational handles
+<div class="definition">
 
-- **Threshold patterns:** small, correlated high-scale thresholds in gauge couplings; testable in precision unification fits.
+**Definition 4** (Embedded renormalized-SM equivalence). An MTT branch has embedded renormalized-SM equivalence when there is a typed identification from its selected coherent sector to a standard SM presentation that intertwines the gauge action and finite fermion operator, sends the selected action to $`S_{\mathrm{SM}}[\mathbf p(\mu);\mathfrak s]`$, and gives the same declared perturbative observable functor $`\mathcal{O}_{\mathrm{ren}}`$ with the same input provenance and uncertainties.
 
-- **Flavor textures:** hierarchy/mixing patterns tied to internal localization; testable in rare decays and CP violation observables.
+</div>
 
-- **Heavy exotics:** near-gap vector-like states with suppressed couplings; possible signals at future colliders.
+<div class="theorem">
 
-- **Cosmology:** curvature–gap ties early-universe thresholds to background curvature; stochastic GW backgrounds from modal transitions.
+**Theorem 5** (Current released reconstruction). *For the hash-addressed result packets listed in <a href="#sec:repro" data-reference-type="ref+label" data-reference="sec:repro">8</a>, the selected MTT record has:*
+
+1.  *exact qutrit–Weyl, gauge-group, chiral-representation, anomaly, hypercharge, finite-algebra, and one-Higgs structural rows;*
+
+2.  *an explicit profile-level $`96\times96`$ finite Dirac operator and accepted charged, neutral, Higgs, CKM, threshold, and precision rows;*
+
+3.  *embedded renormalized-SM equivalence at the one-shared-physical-primitive/profile standard, with all twelve declared audit obligations satisfied.*
+
+*The theorem does not imply strict no-knob value selection, unique branch selection, or a nonperturbative construction of the interacting four-dimensional quantum field theory.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Part (a) is the composition of the independently replayed exact packets for the $`27`$-carrier, native gauge action, typed family representation and anomalies, neutral algebra completion, and rank-four Higgs projection. Their shared convention map identifies the six left-Weyl rows and the unique anomaly-free hypercharge line. Part (b) uses the same representation to assemble $`D_F`$ and then applies the declared profile and SMDR transport packets. The final global audit checks the compatibility interfaces, parameter provenance, scheme, observable functor, and recovery rows and reports twelve accepted obligations out of twelve. The final sentence follows because the same audit explicitly admits measured profile coordinates, imports perturbative SM quantization, and retains the stronger source and nonperturbative-QFT rows as open. ◻
+
+</div>
+
+This theorem is best read as a reproducible existence and consistency result. It is stronger than saying that some matrices can be fitted to SM data, because much of the representation and finite geometry is fixed and exactly checked. It is weaker than a parameter prediction, because the observed profile is still part of the input record.
+
+# Why the Structural Data Do Not Yet Select All Values
+
+<div class="theorem">
+
+**Theorem 6** (Family-intertwiner nonselection). *The family-diagonal gauge representation $`\rho_{\mathrm{ch}}=I_3\otimes\rho_{16}`$ does not uniquely determine the charged Yukawa matrices or their singular values and mixings.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* The gauge action is trivial on the family factor. Consequently, every family transformation $`U\in\mathrm{U}(3)`$ commutes with it. Gauge-invariant Yukawa maps between the allowed left and right representation slots may therefore carry arbitrary family matrices $`Y_u,Y_d,Y_e\in M_3(\mathbb{C})`$, subject only to the chosen reality and Higgs-conjugation conventions. Changing their singular values changes masses while preserving the gauge representation and anomaly equations. Changing their relative left singular vectors changes CKM mixing while preserving the same structural data. Hence a further selected source functional is necessary. ◻
+
+</div>
+
+The theorem pinpoints the remaining task. More algebraic execution of the same representation cannot, by itself, determine the missing numbers. One needs a map from selected geometry and action data to the family coefficients, together with an exactness or uncertainty certificate and a held-out comparison.
+
+## Parameter ledger
+
+<div class="center">
+
+<div class="tabularx">
+
+0.96@L0.23L0.18Y@ Layer & Current status & Parameter meaning
+Finite carrier, gauge group, anomalies, algebra completion, Higgs projector & Structural exact & Zero continuous fit parameters are introduced by these finite executions.
+Shared $`P_{\mathrm{EW}}`$ & One admitted physical primitive & Counted once across electroweak and direct Higgs/threshold rows; its zero-primitive source remains open.
+Charged Yukawa and Higgs values & Profile replay & Measured/common-scale coordinates are accepted downstream; their exact matrix evaluation is not source prediction.
+CKM & Certified prediction profile & Three selected rows with uncertainty comparison; a complete no-knob flavor source theorem is stronger.
+Neutrino sector & Two-splitting profile & Two measured splittings plus declared normal-ordering, Dirac, and lightest-mass assumptions; absolute source and ontology remain open.
+Precision outputs & Multi-loop profile transport & Fifteen declared source coordinates are transported to eight outputs; source correlations and held-out prediction are separate tests.
+Strong CP and branch choice & Open/partial & No selected suppression mechanism or unique global observed-branch measure is established.
+
+</div>
+
+</div>
+
+The rows overlap and must not be arithmetically summed as independent knobs. The defensible global statement is simpler: at the adopted equivalence tier, measured renormalized SM coordinates remain admissible inputs. Therefore the current result does not establish fewer empirical parameters than the SM. “One shared primitive” means one upstream electroweak primitive within this architecture; it does not mean one free parameter for all observed particle physics.
+
+# Reproducibility and Result Ownership
+
+The calculations cited here are curated at commit `31247ebb5c22` of the public [MTT results repository](https://github.com/PeterNero/mtt-results-repro/tree/31247ebb5c22f3fbb5443024365433c6ee0bff4a). The repository binds each result identifier to an authority row, source artifact, hash, and verification tier. The most relevant entries are:
+
+- **Discrete carrier.** `qutrit_weyl_27_matrix` is the exact sparse $`27\times27`$ Weyl left action.
+
+- **Gauge and matter.** `typed_family_representation` and `native_gauge_group` are the exact chiral, anomaly, native-group, and $`\mathbb{Z}_6`$-kernel packets.
+
+- **Finite geometry.** `physical_df_96`, `neutral_summand_hypercharge`, and `finite_inner_fluctuation` contain the profile $`D_F`$, the exact native no-go and minimal completion, the shared hypercharge line, the full one-form execution, and the selected one-Higgs projector.
+
+- **Flavor and Higgs profiles.** `charged_yukawa_higgs_profile` is the charged/Higgs replay;
+  `neutral_two_primitive_profile` is the neutral replay; and `ckm_prediction_profile` is the numerical prediction-profile certificate.
+
+- **Electroweak rows.** `strict_pew_row` and `direct_k_higgs_row` are exact at the adopted shared primitive tier.
+
+- **Precision transport.** `precision_15_source_transport` is the SMDR source packet;
+  `precision_8x8_workspace` is the corresponding output profile packet.
+
+- **Global scope.** `final_12_of_12_audit` closes declared-standard embedded equivalence; `strict_upgrade_ledger` records the stronger open no-knob and foundational program.
+
+Reproduction should start from those released artifacts, not from historical status sentences in the development corpus. The current authority ledger is deliberately stronger than search order: an old file containing “open” or “closed” does not override the selected row and hash.
+
+# Relation to Standard Approaches
+
+The ordinary renormalized SM specifies the field representations and treats its masses, mixings, couplings, Higgs parameters, and CP data as measured renormalized coordinates. The present MTT program adds an explicit finite carrier and a selected structural route to the same representation. That is a meaningful reduction of structural arbitrariness, especially for the anomaly-free shared circle, finite-algebra completion, and one-Higgs submodule. It is not yet a reduction of all empirical parameter freedom.
+
+Almost-commutative spectral geometry is the closest established mathematical comparison. It also encodes the SM representation and Higgs field through a finite algebra and Dirac operator, and the spectral action produces the corresponding bosonic operator content . The MTT calculation differs by adding the $`27`$-dimensional Weyl carrier, q79/proto-spinor source constraints, and a tiered same-source program. At present it shares the familiar limitation that finite Dirac entries and absolute action normalization require additional input or selection.
+
+The SMDR calculation is not an alternative fundamental theory. It is the precision engine used to transport a declared renormalized SM point. Its inclusion greatly improves consistency and reproducibility, but does not convert an input point into a prediction.
+
+# Remaining Theorems and Falsifiers
+
+The remaining frontier is short enough to state without reopening solved finite rows.
+
+1.  **Zero-primitive electroweak source (B.SM.01).** Emit $`P_{\mathrm{EW}}`$ from the selected source geometry and action normalization without using its observed target.
+
+2.  **No-knob SM values and precision (B.SM.02).** Emit the gauge, charged-flavor, CKM/PMNS, Higgs, and threshold values from that same source; transport them with a complete uncertainty and covariance record; and compare held-out observables.
+
+3.  **Selected upper action (B.ACTION.01).** Construct one upper differential/action whose automorphisms, zero modes, and transferred products reproduce the accepted lower operators.
+
+4.  **Interacting quantum completion (B.QFT.02).** Supply the geometry-selected nonperturbative gauge–BRST completion or controlled regulator limit and its physical state.
+
+5.  **Neutrino, strong-CP, and branch selection.** Select the absolute neutrino data and ontology, a suppression or relaxation mechanism for $`\bar\theta`$, and the global observed branch.
+
+The program is falsifiable at several levels. A failed exact replay of the released finite packets would invalidate the corresponding structural claim. A proof that the selected projector is not compatible with the full upper action would invalidate the one-Higgs source interpretation. A future source emitter that uses measured targets in its construction would remain a replay, not a prediction. Finally, a held-out parameter or observable outside the certified uncertainty region would refute that proposed no-knob source law without undoing the exact representation theory.
 
 # Conclusion
 
-From the coherent fixed-point sector of MTT—supported by spectral gaps, $`H^1`$-bounded projectors, and FCC—we have derived the full Standard Model: $`B_1\!\to U(1)_Y`$, $`B_2\!\to SU(2)_L`$, $`B_3\!\to SU(3)_C`$; chiral matter in three families via a *flavor* $`Z_3`$ holonomy (without breaking SM gauge groups); constructive anomaly cancellation; a representation-correct Higgs sector with RG-driven EWSB; Yukawas from internal overlaps; and a numerical one-loop RG run with geometric thresholds. A detailed particle dictionary and standard consistency checks are included. This places MTT on firm ground as a unified geometric origin of the SM at low energies, with clear avenues for quantitative tests.
+The current MTT-to-SM result is neither the old speculative bundle dictionary nor a completed parameter-free theory. It is a reproducible, layered construction. The discrete $`27`$-carrier, native gauge group, three-family anomaly-free representation, finite-algebra completion, and one-Higgs projector are genuine finite structural results. The $`96\times96`$ Dirac operator, Yukawa and neutrino entries, CKM profile, and precision transport are executable at explicitly declared profile tiers. Together they establish embedded renormalized-SM equivalence at the one-shared-physical-primitive/profile standard.
 
-# Anomaly lattice: constructive basis
-
-Let $`(q_Q,q_u,q_d,q_L,q_e)\in\mathbb{Z}^5`$ denote integer hypercharges with physical $`Y=\tfrac{1}{6}q`$. The linear anomaly constraints (per family) are
-``` math
-\begin{aligned}
-&\text{$SU(3)^2\!-\!U(1)$:} && 2q_Q - q_u - q_d = 0,\\
-&\text{$SU(2)^2\!-\!U(1)$:} && 3 q_Q + q_L = 0,\\
-&\text{Grav$^2\!-\!U(1)$:} && 6 q_Q - 3q_u - 3q_d + 2q_L - q_e = 0.
-\end{aligned}
-```
-Row-reduction over $`\mathbb{Z}`$ gives a rank-$`3`$ matrix with nullspace rank $`2`$ spanned by $`u^{(1)}=(1,4,-2,-3,-6)`$ and $`u^{(2)}=(1,1,1,-3,3)`$. The cubic $`U(1)^3`$ anomaly vanishes for any integer combination $`q=\alpha u^{(1)}+\beta u^{(2)}`$ by multilinearity once the linear constraints hold. The SM hypercharge corresponds to $`Y=\tfrac{1}{6}u^{(1)}`$.
+The remaining scientific leap is not to recompute those matrices again. It is to construct the same-source value functional and upper action that select the admitted profile before empirical comparison. That boundary is now explicit, testable, and narrow enough to guide the next work.
 
 <div class="thebibliography">
 
 10
 
-P. Nero. *Modal Triplet Theory: Foundation* Zenodo, 2025.
+A. H. Chamseddine and A. Connes, “The Spectral Action Principle,” *Commun. Math. Phys.* **186** (1997) 731–750, [arXiv:hep-th/9606001](https://arxiv.org/abs/hep-th/9606001).
+
+C. A. Stephan, “Almost-Commutative Geometry, Massive Neutrinos and the Orientability Axiom in KO-Dimension 6,” *J. Phys. A* **40** (2007) 9941–9956, [arXiv:hep-th/0610097](https://arxiv.org/abs/hep-th/0610097).
+
+D. Tong, “Line Operators in the Standard Model,” *JHEP* **07** (2017) 104, [arXiv:1705.01853](https://arxiv.org/abs/1705.01853).
+
+E. Witten, “An $`SU(2)`$ Anomaly,” *Phys. Lett. B* **117** (1982) 324–328.
+
+S. P. Martin and D. G. Robertson, “Standard Model Parameters in the Tadpole-Free Pure $`\overline{\mathrm{MS}}`$ Scheme,” *Phys. Rev. D* **100** (2019) 073004, [arXiv:1907.02500](https://arxiv.org/abs/1907.02500).
+
+P. Nero, “MTT Results Reproducibility Capsule,” commit `31247ebb5c22`, <https://github.com/PeterNero/mtt-results-repro>.
 
 </div>

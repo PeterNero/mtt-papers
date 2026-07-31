@@ -1,6 +1,22 @@
 {
   "schema": "mtt.expository-review-decisions.v1",
   "papers": {
+    "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 3 replaces the earlier full-derivation narrative with a tiered and reproducible Standard-Model-sector synthesis. It separates exact finite structure, profile replay, embedded equivalence, and strict no-knob prediction; distinguishes the 27-dimensional qutrit-Weyl carrier from the 96-dimensional physical finite Dirac operator; records the native gauge quotient, three-family anomaly cancellation, finite-triple completion, and selected one-Higgs projector; proves the family-intertwiner nonselection boundary; states the charged, neutral, CKM, electroweak, Higgs, threshold, and precision rows at their actual tiers; gives a non-overcounting parameter ledger and explicit falsifiers; and the complete 11-page PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "cab4193377383c0aa7305c4d556e41521a40c83963fa51b39b11c33b6124eac9",
+      "reviewed_pdf_sha256": "6ff5a20aafa517d8332accf5dc3ea377db8736407310202e3897d906105e05e9",
+      "reviewed_source_tree_sha256": "43fc2b4d08e7ff2fc60402136ab7231f98e517ef26ae501e18913daef83ced35"
+    },
+    "mtt-gpt-corpus-index-grouped-reference": {
+      "status": "reviewed",
+      "reviewed_on": "2026-07-31",
+      "note": "Version 9 is a selected two-page archival notice, not a scientific paper. It retires the historical grouped custom-chat index, preserves the version-8 source for provenance, directs readers to the flat paper catalog, curated results repository, Zenodo community, and Research Kernel, and explicitly marks the record publication-exempt; the complete PDF was visually inspected.",
+      "reviewed_main_tex_sha256": "43989f38e3300ca59c77491a8c932b3995c464388a424cf67fa9c990c4af7def",
+      "reviewed_pdf_sha256": "43bb9e38610d55c46a2d9cd8082c5ef674fa24e88d63bc1287b45231ec239010",
+      "reviewed_source_tree_sha256": "7a4706ecb03e68892ee448e683b0722a9637b02c0afc2c689e4bb7e6d1d53027"
+    },
     "photons-entanglement-and-null-updating-in-modal-triplet-theory": {
       "status": "reviewed",
       "reviewed_on": "2026-07-31",

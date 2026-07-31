@@ -15,7 +15,10 @@
   "release_state": "publication_exempt",
   "result_refs": [],
   "revision": {
-    "selected_revision": false
+    "revision_evidence_path": "papers/mtt-gpt-corpus-index-grouped-reference/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "6430e48d3e429a214785cb037c99d4c425eb7bd9e38a2d0fbcace74bfbeb1a6a",
+    "selected_revision": true,
+    "superseded_source_path": "0 Index Corpus/_work/Modal_Triplet_Theory__Corpus_Index_and_Reference_v8"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
