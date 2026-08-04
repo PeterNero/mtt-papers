@@ -112,7 +112,9 @@ Before a paper is marked ready:
    bad page breaks, and unreadable text;
 4. regenerate `paper.md` and descriptive metadata from canonical TeX;
 5. verify source and artifact hashes;
-6. verify that the PDF is newer than every TeX, style, and bibliography input;
+6. before committing, verify that the PDF was rebuilt after every TeX, style,
+   and bibliography input; in cloned repositories, where Git does not preserve
+   modification times, verify the reviewed TeX, PDF, and source-tree hashes;
 7. run the theorem-ownership, Book-role, readability, and repository
    verifiers; and
 8. record the human review decision.
@@ -168,3 +170,18 @@ python scripts/verify_paper_release_requirements.py `
 Any failed gate returns the paper to revision. A Zenodo draft is not evidence
 that the paper is correct, and a successful calculation process is not theorem
 promotion.
+
+## 9. Public-Corpus Exclusions and Release Identity
+
+- A paper marked `matches_latest_release` must have a local `main.pdf` whose
+  byte length and Zenodo MD5 checksum equal the latest public Zenodo file.
+- A locally newer authoring edition must be assigned a newer version and marked
+  `current_source_newer_than_release`; it must never inherit the released
+  edition's identity merely because its title is unchanged.
+- The commercial book *The Universe Has a Bad Memory*, its `HumanVoicePass`
+  source, and companion-site artifacts are outside the MTT scholarly paper
+  corpus. They must not appear as paper entries, Zenodo-community records, or
+  repository file paths.
+- A phrase used incidentally in scholarly prose is not a publication artifact;
+  the exclusion concerns the commercial manuscript, title record, source tree,
+  and companion application.

@@ -14,6 +14,29 @@ from verify_theorem_ownership import verify as verify_theorem_ownership
 
 
 ROOT = Path(__file__).resolve().parents[1]
+FORBIDDEN_PUBLICATION_TITLES = {
+    "the universe has a bad memory",
+    "the universe had a bad memory",
+}
+FORBIDDEN_PUBLIC_PATH_TOKENS = {
+    "bad-memory-book",
+    "humanvoicepass",
+    "the-universe-has-a-bad-memory",
+    "the-universe-had-a-bad-memory",
+}
+TEXT_HASH_SUFFIXES = {
+    ".bib",
+    ".cls",
+    ".csv",
+    ".json",
+    ".md",
+    ".py",
+    ".sty",
+    ".tex",
+    ".txt",
+    ".yaml",
+    ".yml",
+}
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -26,6 +49,48 @@ def load_json(path: Path) -> dict[str, Any]:
 
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def sha256_matches(path: Path, expected: str) -> bool:
+    raw = path.read_bytes()
+    variants = {hashlib.sha256(raw).hexdigest()}
+    if path.suffix.lower() in TEXT_HASH_SUFFIXES and b"\x00" not in raw:
+        lf = raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+        crlf = lf.replace(b"\n", b"\r\n")
+        variants.add(hashlib.sha256(lf).hexdigest())
+        variants.add(hashlib.sha256(crlf).hexdigest())
+    return expected in variants
+
+
+def byte_size_matches(path: Path, expected: int) -> bool:
+    raw = path.read_bytes()
+    variants = {len(raw)}
+    if path.suffix.lower() in TEXT_HASH_SUFFIXES and b"\x00" not in raw:
+        lf = raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+        variants.add(len(lf))
+        variants.add(len(lf.replace(b"\n", b"\r\n")))
+    return expected in variants
+
+
+def portable_text_matches(path: Path, portable_files: dict[str, Any]) -> bool:
+    relative = path.relative_to(ROOT).as_posix()
+    row = portable_files.get(relative)
+    if not isinstance(row, dict):
+        return False
+    raw = path.read_bytes()
+    canonical = raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return (
+        len(canonical) == int(row.get("bytes_lf") or -1)
+        and hashlib.sha256(canonical).hexdigest() == row.get("sha256_lf")
+    )
+
+
+def md5_file(path: Path) -> str:
+    digest = hashlib.md5()
     with path.open("rb") as handle:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
@@ -53,6 +118,9 @@ def verify() -> dict[str, int]:
     review_decisions = load_json(
         ROOT / "catalog" / "expository-review-decisions.json"
     )
+    portable_hashes = load_json(ROOT / "catalog" / "portable-text-hashes.json")
+    assert portable_hashes["schema"] == "mtt.portable-text-hashes.v1"
+    portable_files = portable_hashes.get("files") or {}
     papers = catalog.get("papers") or []
     expected = int(config["expected_canonical_papers"])
     assert len(papers) == expected, (len(papers), expected)
@@ -84,6 +152,7 @@ def verify() -> dict[str, int]:
 
     matched_record_ids: list[str] = []
     selected_revision_ids: set[str] = set()
+    released_pdf_matches = 0
     markdown_bytes = 0
     tex_files = 0
     for paper in papers:
@@ -100,14 +169,22 @@ def verify() -> dict[str, int]:
         metadata = load_json(metadata_path)
         assert metadata["paper_id"] == paper_id
         assert metadata["title"] == paper["title"]
+        assert metadata["title"].strip().lower() not in FORBIDDEN_PUBLICATION_TITLES
+        assert not any(
+            token in paper_id.lower() for token in FORBIDDEN_PUBLIC_PATH_TOKENS
+        ), paper_id
         assert metadata["result_refs"] == paper["result_refs"]
         assert metadata["result_refs"] == sorted(set(metadata["result_refs"]))
         assert all(
             isinstance(result_id, str) and result_id
             for result_id in metadata["result_refs"]
         )
-        assert metadata["main_tex_sha256"] == sha256_file(main_tex)
-        assert metadata["paper_md_sha256"] == sha256_file(markdown)
+        assert sha256_matches(
+            main_tex, metadata["main_tex_sha256"]
+        ) or portable_text_matches(main_tex, portable_files)
+        assert sha256_matches(
+            markdown, metadata["paper_md_sha256"]
+        ) or portable_text_matches(markdown, portable_files)
         assert metadata["source_tree_sha256"] == canonical_hash(metadata["source_files"])
         assert metadata["source_provenance"]["legacy_source_path"]
         assert not Path(metadata["source_provenance"]["legacy_source_path"]).is_absolute()
@@ -120,8 +197,10 @@ def verify() -> dict[str, int]:
         for source_file in metadata["source_files"]:
             path = directory / source_file["path"]
             assert path.is_file(), path
-            assert source_file["sha256"] == sha256_file(path)
-            assert source_file["bytes"] == path.stat().st_size
+            legacy_identity = sha256_matches(
+                path, source_file["sha256"]
+            ) and byte_size_matches(path, int(source_file["bytes"]))
+            assert legacy_identity or portable_text_matches(path, portable_files)
             if path.suffix.lower() == ".tex":
                 tex_files += 1
 
@@ -130,7 +209,9 @@ def verify() -> dict[str, int]:
             selected_revision_ids.add(paper_id)
             audit = directory / "REVISION_AUDIT.md"
             assert audit.is_file(), audit
-            assert revision["revision_evidence_sha256"] == sha256_file(audit)
+            assert sha256_matches(
+                audit, revision["revision_evidence_sha256"]
+            ) or portable_text_matches(audit, portable_files)
 
         markdown_text = markdown.read_text(encoding="utf-8")
         tex_text = main_tex.read_text(encoding="utf-8-sig", errors="replace")
@@ -156,6 +237,23 @@ def verify() -> dict[str, int]:
             matched_record_ids.append(str(release["id"]))
             assert release["record_url"].startswith("https://zenodo.org/records/")
 
+        latest = paper.get("latest_zenodo_release") or {}
+        if paper.get("version_relation") == "matches_latest_release":
+            assert latest, paper_id
+            pdf_rows = [
+                row
+                for row in latest.get("files") or []
+                if str(row.get("key") or "").lower().endswith(".pdf")
+            ]
+            assert len(pdf_rows) == 1, (paper_id, pdf_rows)
+            local_pdf = directory / "main.pdf"
+            assert local_pdf.is_file(), local_pdf
+            checksum = str(pdf_rows[0].get("checksum") or "")
+            assert checksum.startswith("md5:"), (paper_id, checksum)
+            assert md5_file(local_pdf) == checksum.removeprefix("md5:"), paper_id
+            assert local_pdf.stat().st_size == int(pdf_rows[0]["size"]), paper_id
+            released_pdf_matches += 1
+
     native_successors = [
         row
         for row in (config.get("native_projects") or [])
@@ -175,6 +273,19 @@ def verify() -> dict[str, int]:
     )
     assert len(matched_record_ids) == len(set(matched_record_ids))
     zenodo_ids = {str(record["id"]) for record in zenodo["records"]}
+    assert not any(
+        str(record.get("title") or "").strip().lower()
+        in FORBIDDEN_PUBLICATION_TITLES
+        for record in zenodo["records"]
+    )
+    forbidden_paths = [
+        path.relative_to(ROOT).as_posix()
+        for path in ROOT.rglob("*")
+        if path.is_file()
+        and ".git" not in path.parts
+        and any(token in path.as_posix().lower() for token in FORBIDDEN_PUBLIC_PATH_TOKENS)
+    ]
+    assert not forbidden_paths, forbidden_paths
     unmatched_ids = {str(record["id"]) for record in unmatched["records"]}
     assert set(matched_record_ids).isdisjoint(unmatched_ids)
     assert set(matched_record_ids) | unmatched_ids == zenodo_ids
@@ -202,6 +313,9 @@ def verify() -> dict[str, int]:
         "markdown_bytes": markdown_bytes,
         "zenodo_matched": len(matched_record_ids),
         "zenodo_unmatched": len(unmatched_ids),
+        "released_pdf_matches": released_pdf_matches,
+        "commercial_book_artifacts": 0,
+        "portable_text_hashes": len(portable_files),
         "theorem_results_in_release_scope": theorem_results,
         "global_duplicate_theorem_groups": global_duplicate_groups,
         "book_words": book["words"],

@@ -51,6 +51,13 @@ python scripts/migrate.py --source-root C:\Users\nero_\Downloads\TEXPAPERS --ref
 python scripts/verify.py
 ```
 
+The verifier also checks that every paper declared to match its latest Zenodo
+release has the exact published PDF checksum and size. It rejects accidental
+inclusion of the separate commercial-book project or its companion artifacts.
+Clone-portable LF-normalized text hashes are stored in
+`catalog/portable-text-hashes.json`; rebuild them from committed paper sources
+with `python scripts/build_portable_text_hashes.py --ref HEAD`.
+
 Migration is deterministic with respect to the selected source files and the
 cached Zenodo record set. It stages the complete flat paper tree before
 replacing the previous generated tree.

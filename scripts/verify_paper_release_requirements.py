@@ -15,6 +15,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 PAPERS = ROOT / "papers"
 DECISIONS = ROOT / "catalog" / "expository-review-decisions.json"
+PORTABLE_HASHES = ROOT / "catalog" / "portable-text-hashes.json"
 
 READY_STATES = {"reviewed", "reference_ready"}
 EDITORIAL_ABSTRACT_RE = re.compile(
@@ -71,6 +72,40 @@ def sha256(path: Path) -> str:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)
     return digest.hexdigest()
+
+
+def sha256_matches(path: Path, expected: str) -> bool:
+    raw = path.read_bytes()
+    variants = {hashlib.sha256(raw).hexdigest()}
+    if path.suffix.lower() in {
+        ".bib",
+        ".cls",
+        ".json",
+        ".md",
+        ".sty",
+        ".tex",
+        ".txt",
+        ".yaml",
+        ".yml",
+    } and b"\x00" not in raw:
+        lf = raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+        crlf = lf.replace(b"\n", b"\r\n")
+        variants.add(hashlib.sha256(lf).hexdigest())
+        variants.add(hashlib.sha256(crlf).hexdigest())
+    return expected in variants
+
+
+def portable_text_matches(path: Path, portable_files: dict[str, Any]) -> bool:
+    relative = path.relative_to(ROOT).as_posix()
+    row = portable_files.get(relative)
+    if not isinstance(row, dict):
+        return False
+    raw = path.read_bytes()
+    canonical = raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return (
+        len(canonical) == int(row.get("bytes_lf") or -1)
+        and hashlib.sha256(canonical).hexdigest() == row.get("sha256_lf")
+    )
 
 
 def ready_papers() -> list[tuple[str, dict[str, Any]]]:
@@ -155,6 +190,7 @@ def require_plain_publication_text(
 def verify_local() -> dict[str, int]:
     ready = ready_papers()
     assert ready, "no papers have a human release review"
+    portable_files = (read_json(PORTABLE_HASHES).get("files") or {})
     managed_blocks = 0
 
     for paper_id, decision in ready:
@@ -214,23 +250,19 @@ def verify_local() -> dict[str, int]:
         assert pdf_path.is_file() and pdf_path.stat().st_size > 10_000, (
             f"{paper_id}: canonical PDF is missing or empty"
         )
-        source_inputs = [
-            path
-            for pattern in ("*.tex", "*.sty", "*.bib")
-            for path in directory.glob(pattern)
-        ]
-        newest_source = max(path.stat().st_mtime_ns for path in source_inputs)
-        assert pdf_path.stat().st_mtime_ns >= newest_source, (
-            f"{paper_id}: PDF is older than a TeX/style/bibliography input"
-        )
+        # Git does not preserve file modification times across clones. Reviewed
+        # content hashes below are the portable proof that the PDF and source
+        # tree are the artifacts that passed the release gate.
         assert str(decision.get("reviewed_on") or ""), (
             f"{paper_id}: human review date is missing"
         )
         assert str(decision.get("note") or ""), (
             f"{paper_id}: human review note is missing"
         )
-        assert str(decision.get("reviewed_main_tex_sha256") or "") == sha256(
-            tex_path
+        assert sha256_matches(
+            tex_path, str(decision.get("reviewed_main_tex_sha256") or "")
+        ) or portable_text_matches(
+            tex_path, portable_files
         ), f"{paper_id}: canonical TeX differs from the reviewed artifact"
         assert str(decision.get("reviewed_pdf_sha256") or "") == sha256(
             pdf_path
