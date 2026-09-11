@@ -17,11 +17,11 @@ abstract: |
   where $`A`$ is the linearized stabilization operator. We derive an exact error decomposition and a circle benchmark. The result is a conditional execution bridge, not a source theorem: MTT still has to select $`A`$, $`P`$, $`\chi`$, and $`\varepsilon_{\rm adm}`$ in the physical sector before this filter can replace a regulator or predict a coherence scale.
 author:
 - Peter Nero
-current_version: v1
-date: July 2026, Version 1
-generated_from_main_tex_sha256: 797bcbcd71276505665fd2872493b945abf73a4052d9c09c4829b2debe2f3470
+current_version: v2
+date: September 2026, Version 2
+generated_from_main_tex_sha256: de26334048c3cf82082c72858737053ea63d3b33f16165304027e4b7958822cc
 paper_id: deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v1
 title: |
   Admissibility-Time Bounds from Fixed–Point Damping
@@ -30,6 +30,23 @@ zenodo_doi: 10.5281/zenodo.21704670
 zenodo_record_id: 21704670
 zenodo_url: "https://zenodo.org/records/21704670"
 ---
+
+# Version 2 Revision Note
+
+Supersedes
+Version 1. The previous release remains public until a new release is approved.
+
+Reason
+Replace the nonlinear operator norm by a typed Lipschitz or derivative bound.
+
+Resolution
+Restricts operator-norm theorems to linear flows and supplies a separate nonlinear comparison with transverse drift.
+
+Retained result
+Correctly scoped results and explanatory examples remain; no physical source-selection claim is promoted.
+
+Remaining boundary
+Realization hypotheses and physical source or apparatus bridges remain separate obligations. This is an unreleased authoring revision.
 
 # Version 1 Revision Note
 
@@ -110,11 +127,16 @@ We also assume the coherent projection is compatible with the linearized operato
 ```
 on the relevant domain. This assumption is automatic when $`P`$ is a spectral/Riesz projector of $`A`$. If $`P`$ is only an admissible sector projector not exactly spectral for $`A`$, the results below apply after replacing commutation by the corresponding bounded commutator estimates; that perturbative extension is not needed for the core theorem.
 
-Let $`\Phi_t`$ denote the linearized or locally linearized damping flow. In the linear model,
+In all operator-norm statements below, $`\Phi_t`$ denotes a linear damping semigroup or a proved linear variational flow at a declared background. In the self-adjoint linear model,
 ``` math
 \Phi_t=e^{-tA}.
 ```
-In the nonlinear local fixed-point model, the same estimates hold on an admissible slab after replacing $`C_Q`$ and $`\lambda_\ast`$ by the constants in the local semigroup/contractivity estimate.
+For a genuinely nonlinear flow, an operator norm of $`Q\Phi_tQ`$ is not defined. A separate comparison uses a specified forward-invariant domain $`D`$ and
+``` math
+L_Q(t)=\operatorname{Lip}_D(Q\Phi_t)
+ =\sup_{u\ne v\in D}\frac{\|Q\Phi_t(u)-Q\Phi_t(v)\|}{\|u-v\|}.
+```
+If $`L_Q(t)\le C_Qe^{-\lambda_\ast t}`$ is proved, the same logarithmic bound below controls differences, not the absolute transverse displacement. To control leakage of a state, also require $`Pu\in D`$ and coherent invariance $`Q\Phi_t(Pu)=0`$. Then comparison with $`Pu`$ gives $`\|Q\Phi_t(u)\|\le L_Q(t)\|Qu\|`$. With nonzero transverse drift, the term $`\|Q\Phi_t(Pu)\|`$ must instead be retained. A bound on a Fréchet derivative is an alternative only after differentiability and the relevant comparison paths in $`D`$ have been established. None of these nonlinear hypotheses follows from the linear spectral gap alone.
 
 # Admissibility Tolerance and Minimal Projection Time
 

@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v5",
-  "date": "July 2026 Version 5",
+  "current_version": "v6",
+  "date": "September 2026 Version 6",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949280",
     "created": "2026-07-29T08:50:35.316982+00:00",
@@ -24,7 +24,7 @@
     ],
     "id": "21655371",
     "match_kind": "published_draft_reconciliation",
-    "match_score": 1.0,
+    "match_score": 1,
     "publication_date": "2026-07-29",
     "record_url": "https://zenodo.org/records/21655371",
     "resource_type": "publication",
@@ -32,28 +32,28 @@
     "updated": "2026-07-29T08:50:35.802432+00:00",
     "version": "v5"
   },
-  "main_tex_sha256": "fc008122ca171de64b6d409349bdfa4716bd372cfb524f8ed408936e73eac480",
+  "main_tex_sha256": "8c06687a6bd689dab772d14c996e1f99c9393b0871d3a28138643f8336cee1a2",
   "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
-  "paper_md_sha256": "37eb4fc8bfe2ac77727687fdd5fd2cc3d3133b2a5b1ea85ee1b07765bef027d0",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "a3790afc726e43f57380c463ce9b13a1bc1bf9885f6c5c492224a64d6f63131b",
+  "release_state": "current_revised_tex",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_III_V4_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "f76766dde812980b1b5de7b99464565011c7dda3c309cd84e932f21f42e80de1",
+    "revision_evidence_sha256": "14e57120534c944ebd5f7dfde4d1d6744612d66bc006d99d91be74bdf62ca8d6",
     "selected_revision": true,
     "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v3"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 400012,
+      "bytes": 400729,
       "path": "main.pdf",
-      "sha256": "a018b2617656fe7227bf93eb7069681054897c5b35d5d46a2140bb9907709c75"
+      "sha256": "5bb703930150c02350d80c35b9fda8e5fcdf26504a39be25ab7509b9a8253425"
     },
     {
-      "bytes": 22129,
+      "bytes": 22812,
       "path": "main.tex",
-      "sha256": "fc008122ca171de64b6d409349bdfa4716bd372cfb524f8ed408936e73eac480"
+      "sha256": "8c06687a6bd689dab772d14c996e1f99c9393b0871d3a28138643f8336cee1a2"
     },
     {
       "bytes": 3255,
@@ -69,9 +69,9 @@
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v4"
   },
-  "source_tree_sha256": "c458f07fe535e5b332a8f173a0dd00da4460ea1e14eb7c9b96250b7b32edd49b",
+  "source_tree_sha256": "516dc166a8850c75de87e9072b0d27e50f0fc86f5988d717b2d3a1e2abe6a76c",
   "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.16949280",
@@ -90,7 +90,7 @@
       ],
       "id": "21655371",
       "match_kind": "published_draft_reconciliation",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-07-29",
       "record_url": "https://zenodo.org/records/21655371",
       "resource_type": "publication",
@@ -115,7 +115,7 @@
       ],
       "id": "21650395",
       "match_kind": "published_draft_reconciliation",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-07-28",
       "record_url": "https://zenodo.org/records/21650395",
       "resource_type": "publication",
@@ -140,7 +140,7 @@
       ],
       "id": "18202941",
       "match_kind": "title_or_file",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-01-09",
       "record_url": "https://zenodo.org/records/18202941",
       "resource_type": "publication",

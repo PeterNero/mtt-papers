@@ -1,0 +1,104 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{series}[2026/08/26 MTT paper macros]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{lmodern}
+\RequirePackage[a4paper,margin=28mm]{geometry}
+\RequirePackage{microtype}
+\linespread{1.045}
+
+\setlength{\abovedisplayskip}{12pt}
+\setlength{\belowdisplayskip}{12pt}
+\setlength{\abovedisplayshortskip}{9pt}
+\setlength{\belowdisplayshortskip}{9pt}
+
+\RequirePackage{amsmath,amssymb,amsthm,mathtools}
+\RequirePackage{bm}
+\allowdisplaybreaks
+
+\RequirePackage{enumitem}
+\setlist{itemsep=2.5pt, topsep=6pt, parsep=0pt}
+
+\RequirePackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue,
+  pdfauthor={Peter Nero},
+  pdftitle={Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows},
+  pdfcreator={LaTeX}
+}
+\RequirePackage[nameinlink,capitalise,noabbrev]{cleveref}
+
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{note}[theorem]{Note}
+
+\crefname{theorem}{theorem}{theorems}\Crefname{theorem}{Theorem}{Theorems}
+\crefname{lemma}{lemma}{lemmas}\Crefname{lemma}{Lemma}{Lemmas}
+\crefname{proposition}{proposition}{propositions}\Crefname{proposition}{Proposition}{Propositions}
+\crefname{corollary}{corollary}{corollaries}\Crefname{corollary}{Corollary}{Corollaries}
+\crefname{definition}{definition}{definitions}\Crefname{definition}{Definition}{Definitions}
+\crefname{assumption}{assumption}{assumptions}\Crefname{assumption}{Assumption}{Assumptions}
+\crefname{conjecture}{conjecture}{conjectures}\Crefname{conjecture}{Conjecture}{Conjectures}
+\crefname{example}{example}{examples}\Crefname{example}{Example}{Examples}
+\crefname{remark}{remark}{remarks}\Crefname{remark}{Remark}{Remarks}
+\crefname{equation}{equation}{equations}\Crefname{equation}{Equation}{Equations}
+\crefname{figure}{figure}{figures}\Crefname{figure}{Figure}{Figures}
+\crefname{table}{table}{tables}\Crefname{table}{Table}{Tables}
+\crefname{section}{section}{sections}\Crefname{section}{Section}{Sections}
+
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\Hess}{Hess}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Ext}{Ext}
+\DeclareMathOperator{\Crit}{Crit}
+\DeclareMathOperator{\spec}{spec}
+\DeclareMathOperator{\Str}{Str}
+\DeclareMathOperator{\Cone}{Cone}
+
+\newcommand{\Id}{\mathrm{Id}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\calR}{\mathcal{R}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\ip}[2]{\left\langle #1,\,#2 \right\rangle}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\MTT}{\mathrm{MTT}}
+\newcommand{\BV}{\mathrm{BV}}
+\newcommand{\BRST}{\mathrm{BRST}}
+\newcommand{\QFT}{\mathrm{QFT}}
+\providecommand{\Ran}{\mathrm{Ran}}

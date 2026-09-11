@@ -1,5 +1,15 @@
 # Revision Audit: Entanglement, Locality, and Measurement v2
 
+## September 2026 Current-Version Delta (v3)
+
+- Supersedes: v2; no Zenodo record changed.
+- Reason: Use the closed convex hull definition of infinite-dimensional separability.
+- Resolution: Defines separability by closed convex hulls with an explicitly chosen topology.
+- Ownership: Focused quantum-information correction independent of the Fixed Points proof repair.
+- Retained: valid scoped results and examples, without physical promotion.
+- Remaining: future source integration and author release approval.
+
+
 ## Verdict
 
 The central compatibility claim survives: commuting spacelike observable

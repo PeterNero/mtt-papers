@@ -1,11 +1,11 @@
 ---
 author:
 - Peter Nero
-current_version: v11
-date: July 2026 Version 11
-generated_from_main_tex_sha256: 4deac85014c21ba07ce28614828fe0fb3c0b42e08e3ba58749c69584ef229f53
+current_version: v12
+date: September 2026, Version 12
+generated_from_main_tex_sha256: a8e2c5278f48f5757bae2f2f36e9effe785a1634f1f13c2630cbe63b2dd88597
 paper_id: the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v11
 title: |
   The Book on Modal Triplet Theory
@@ -19,6 +19,23 @@ zenodo_url: "https://zenodo.org/records/21655366"
 ## Abstract
 
 A plain-language interpretive guide to Modal Triplet Theory. The book explains the program’s central picture of one connected physical ontology described through compatible projections, then follows that picture through coherence, world-in-world geometry, the shared circle, q79/Fu–Yau geometry, proto-spinors, particles, the Standard Model reconstruction, quantum theory, gravity, time, memory, and cosmology. Short technical boundaries distinguish established results, declared reconstructions, and open interpretations, while proofs remain in their focused papers.
+
+## Version 12 Revision Note
+
+Supersedes
+Version 11. The previous release remains public until a new release is approved.
+
+Reason
+Narrow the Book’s fixed-point and stationary-noise wording.
+
+Resolution
+Explains the assumptions of each model. Separates settling from recurring motion and noise, without adding theorems.
+
+Retained result
+Correctly scoped results and explanatory examples remain; no physical source-selection claim is promoted.
+
+Remaining boundary
+Realization hypotheses and physical source or apparatus bridges remain separate obligations. This is an unreleased authoring revision.
 
 ## What This Book Is
 
@@ -408,7 +425,9 @@ A fixed point is a state that returns to itself under a stated operation. This s
 
 There are several different notions hiding behind the phrase. A projected time step may return a state after one cycle. A continuous flow may have an equilibrium that never moves. A statistical system may have an invariant distribution even though individual states fluctuate. A curved family of spectral subspaces may track a moving center rather than one fixed point.
 
-The six Fixed Points papers separate these cases. The first establishes the analytic setting, well-posedness, projectors, existence and uniqueness routes, and finite approximation. The second studies the supplied four-plus-six realization. The third treats deterministic disturbances, noise, and damping. The fourth follows curved spectral clusters and leakage. The fifth studies covariance, correlation, and exit risk. The sixth explains how those results fit together and what extra assumptions are needed for physical interpretation.
+The six Fixed Points papers separate these cases. The first establishes specified analytic realizations, including a coercive quadratic model, and states the hypotheses for existence, uniqueness, and approximation. Nonlinear applications must still establish their own continuation and invariance; the general framework does not do that for every proposed flow. The second studies the supplied four-plus-six realization. The third treats deterministic disturbances, noise, and damping. The fourth follows curved spectral clusters and leakage. The fifth studies covariance, correlation, and exit risk. The sixth explains how those results fit together and what extra assumptions are needed for physical interpretation.
+
+Stabilization also differs from a source of continuing fluctuations. A strictly dissipative repair process settles; it does not automatically produce stationary noise. Conversely, a closed finite-mode unitary model can recur rather than lose memory irreversibly. Fixed Points III separates these mechanisms: a diffusion approximation needs an independently justified recurrent fast driver and a suitable limit, or an explicitly open system. This limits a proposed explanation of noise without undoing the stability results .
 
 The important lesson is not that everything in nature is literally a fixed point. It is that claims of stability can be decomposed into checkable questions. Does the evolution exist? Does it remain in the admissible domain? Does some state return? Is it unique? Is it an equilibrium or only a stroboscopic return? How large can disturbances become before the reduction fails?
 
@@ -531,6 +550,25 @@ The interpretive proposal can therefore be stated without spectacle:
 
 This book is an invitation to see that possibility. The proofs, failures, and decisions belong to the research papers. The next decisive advance will come when one of the missing bridges is constructed from the same source and survives an independent test.
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+### Computational Evidence and Reproducibility
+
+The Book is interpretive and proves no theorem. The closed, profile, and certified-numerical rows below are used directly only as examples of what the technical corpus currently contains. Their tier labels are preserved verbatim, and the open strict-upgrade ledger is presented as unfinished work rather than an achievement.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+
 ###### Rows used directly in this paper.
 
 - (*profile replay*).
@@ -608,41 +646,6 @@ This book is an invitation to see that possibility. The proofs, failures, and de
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
 ## References
-
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
-
-The Book is interpretive and proves no theorem. The closed, profile, and certified-numerical rows below are used directly only as examples of what the technical corpus currently contains. Their tier labels are preserved verbatim, and the open strict-upgrade ledger is presented as unfinished work rather than an achievement.
-
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
-
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
-
-## Rows used directly in this paper
-
-- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
-- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
-- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
-- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
-- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
-- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
-- `A13/gr_tt_support` (**DERIVED_EXACT**): Exact-branch internal TT support certificate; physical normalization remains open.
-- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
-- `A07/literal_cech_witness` (**DERIVED_EXACT**): Literal 81-entry, 729-cocycle finite Cech witness.
-- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
-- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
-- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
-- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
-- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
-- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
-- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
-
-## Open boundary (not evidence of closure)
-
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
-
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 

@@ -1,5 +1,15 @@
 # Projected Heat Kernels v1 Revision Audit
 
+## September 2026 Current-Version Delta (v2)
+
+- Supersedes: v1; no Zenodo record changed.
+- Reason: Restrict all-orders boundary convergence to the compatible operator domain.
+- Resolution: Separates strong L2, distributional-kernel and compatible-domain smooth convergence, with a Dirichlet counterexample and graph-norm proof.
+- Ownership: This paper should own the corrected spectral sharp-limit theorem.
+- Retained: valid scoped results and examples, without physical promotion.
+- Remaining: future source integration and author release approval.
+
+
 ## Current version delta
 
 The unversioned source contained correct compact elliptic functional-calculus

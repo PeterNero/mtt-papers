@@ -31,7 +31,7 @@
 
 \title{Fixed Points III: Disturbance--Damping Balance and Stability}
 \author{Peter Nero}
-\date{July 2026\\Version 5}
+\date{September 2026\\Version 6}
 
 \begin{document}
 \maketitle
@@ -55,6 +55,13 @@ homogenization is made conditional on an enhanced functional central-limit
 theorem, tightness, and rough-path convergence; the symmetrized Green--Kubo tensor
 is $D=\int_0^\infty(R+R^\ast)\,ds$.
 \end{abstract}
+
+\section*{Version 6 Revision Note}
+\noindent\textbf{Supersedes.} Version 5, which remains the released edition.
+\textbf{Reason and resolution.} Separates the standalone analytic theorems from the physical source-selection problem.
+\textbf{Retained results.} The previous mathematical results and proofs are unchanged.
+\textbf{Boundary.} This is a contextual clarification in an unreleased revision,
+not a new physical-source theorem.
 
 \section*{Revision note for version 5}
 \addcontentsline{toc}{section}{Revision note for version 5}
@@ -131,6 +138,11 @@ contracts coherent modes nor proves that a physical environment supplies
 Brownian noise.  The homogenized diffusion is an emergent limit only after
 the enhanced functional-CLT, tightness, and rough-path hypotheses have been
 verified for the selected dynamics.
+
+A physical q79 application must independently select the damping generator,
+coherent projector, invariant domain, gap data, and forcing or noise law.  The
+analytic estimates below consume those typed inputs; they do not emit them
+from MTT geometry.
 
 \tableofcontents
 

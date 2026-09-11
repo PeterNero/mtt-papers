@@ -3,7 +3,7 @@
 
 \title{Modal Triplet Theory: Foundations}
 \author{Peter Nero}
-\date{July 2026\\Version 9}
+\date{September 2026, Version 10}
 
 \begin{document}
 \maketitle
@@ -41,6 +41,15 @@ nil manifolds as parallel curved prequantum circle bundles over different
 bases. These results are compatible but not identical, and neither compact
 circle flow is physical Lorentzian time.
 \end{abstract}
+
+\section*{Version 10 Revision Note}
+\begin{description}
+\item[Supersedes] Version 9. The previous release remains public until a new release is approved.
+\item[Reason] Condition algebraic tangency before promoting it to flow invariance.
+\item[Resolution] Uses actual flow invariance and states sufficient mild-realization hypotheses for tangency.
+\item[Retained result] Correctly scoped results and explanatory examples remain; no physical source-selection claim is promoted.
+\item[Remaining boundary] Realization hypotheses and physical source or apparatus bridges remain separate obligations. This is an unreleased authoring revision.
+\end{description}
 
 \section*{Revision note for version 9}
 \addcontentsline{toc}{section}{Revision note for version 9}
@@ -591,8 +600,9 @@ The following gates are independent and must not be collapsed:
 \item[Gap.] Spectral separation for $A_{\rm int}$.
 \item[Projector stability.] Persistence and regularity of $P$ under parameter
 or curvature variation.
-\item[Invariance.] $R_\tau(P\mathcal H)\subseteq P\mathcal H$, equivalently
-$QF(Pu)=0$ in a differentiable autonomous realization.
+\item[Invariance.] $R_t(P\mathcal H)\subseteq P\mathcal H$ for every
+time in the stated existence interval. Algebraic tangency $QF(Pu)=0$
+alone is not a substitute for this flow statement.
 \item[Existence.] A fixed-point theorem applies on a declared invariant domain.
 \item[Equilibrium identification.] A projected time-step fixed point is shown
 to be stationary.
@@ -603,6 +613,15 @@ exit.
 \end{description}
 
 No gate in this list follows solely from the gate preceding it.
+
+For a mild equation with a commuting linear semigroup and a globally
+Hilbert-space-Lipschitz nonlinear term, tangency of that nonlinear term
+to $P\mathcal H$ is sufficient: the restricted mild solution stays in the
+subspace and uniqueness identifies it with the full solution. This is the
+mild-invariance criterion imported from Fixed Points~I \cite{FixedPoints}.
+In a different Sobolev phase space, a locally defined flow, or a weak
+realization, continuation, domain compatibility, and uniqueness must be
+proved there before the same inference is used.
 
 A simple projected movie illustrates the distinction. Suppose the visible
 frame after one step looks exactly as it did before. The hidden part of the

@@ -1,5 +1,15 @@
 # Coherent Green Functions v1 Revision Audit
 
+## September 2026 Current-Version Delta (v2)
+
+- Supersedes: v1; no Zenodo record changed.
+- Reason: Correct boundary-domain and Sobolev-norm claims for Green responses.
+- Resolution: Repairs both convergence theorems and distinguishes spectral from geometric Sobolev norms.
+- Ownership: Own the Green-response specialization while importing the common sharp-limit result.
+- Retained: valid scoped results and examples, without physical promotion.
+- Remaining: future source integration and author release approval.
+
+
 ## Current version delta
 
 Version 1 retains the finite spectral and heat-filtered elliptic Green

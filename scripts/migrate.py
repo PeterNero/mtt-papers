@@ -603,6 +603,11 @@ def build_markdown(
         "-M",
         f"generated_from_main_tex_sha256={main_hash}",
     ]
+    # Native papers can preserve specialized bibliography/cross-reference markup.
+    # Projects without this explicit local filter retain the existing conversion.
+    local_filter = project / "paper-markdown.lua"
+    if local_filter.is_file():
+        command.extend(["--lua-filter", str(local_filter.resolve())])
     if date_override:
         command.extend(["-M", f"date={date_override}"])
     if latest_release:

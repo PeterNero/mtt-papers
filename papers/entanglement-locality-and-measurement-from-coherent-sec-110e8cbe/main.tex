@@ -10,7 +10,7 @@
 
 \title{Entanglement, Locality, and Measurement from Coherent Sector Dynamics}
 \author{Peter Nero}
-\date{July 2026, Version 2}
+\date{September 2026, Version 3}
 
 \begin{document}
 \maketitle
@@ -37,6 +37,15 @@ correlation spreading remain standard local mechanisms.  The result is a
 conditional AQFT-compatible MTT encoding, not a derivation of all physical
 states or measurement probabilities from admissibility alone.
 \end{abstract}
+
+\section*{Version 3 Revision Note}
+\begin{description}
+\item[Supersedes] Version 2. The previous release remains public until a new release is approved.
+\item[Reason] Use the closed convex hull definition of infinite-dimensional separability.
+\item[Resolution] Defines separability by closed convex hulls with an explicitly chosen topology.
+\item[Retained result] Correctly scoped results and explanatory examples remain; no physical source-selection claim is promoted.
+\item[Remaining boundary] Realization hypotheses and physical source or apparatus bridges remain separate obligations. This is an unreleased authoring revision.
+\end{description}
 
 \section*{Version 2 Revision Note}
 \addcontentsline{toc}{section}{Version 2 Revision Note}
@@ -150,11 +159,21 @@ States need not factorize over commuting subalgebras, and AQFT explicitly permit
 Let $\mathcal{A}_1:=\mathcal{A}(\mathcal{O}_1)$ and $\mathcal{A}_2:=\mathcal{A}(\mathcal{O}_2)$ for spacelike-separated regions.
 Microcausality implies $[A,B]=0$ for $A\in\mathcal{A}_1$ and $B\in\mathcal{A}_2$, but it does \emph{not} imply state factorization.
 
-A state is \emph{separable} on $\mathcal{A}_1\vee\mathcal{A}_2$ if it admits a convex decomposition
+A state is \emph{separable} when it belongs to the closed convex hull of
+product states, with the closure topology specified. In the ordinary
+bipartite density-operator setting we use trace-norm closure. In the
+$C^*$-algebraic discussion here we use weak-* closure in the state space
+of $\mathcal{A}_1\vee\mathcal{A}_2$, and require the product functionals
+to extend to states on that joint algebra. Explicitly,
 \begin{equation}\label{eq:separable}
-\omega(AB)=\sum_i p_i\,\omega^{(1)}_i(A)\,\omega^{(2)}_i(B),
-\quad A\in\mathcal{A}_1,\;B\in\mathcal{A}_2,\; p_i\ge 0,\;\sum_i p_i=1.
+ \omega\in\overline{\operatorname{conv}}^{\,\mathcal T}
+ \{\omega_1\otimes\omega_2\},
+ \qquad (\omega_1\otimes\omega_2)(AB)=\omega_1(A)\omega_2(B).
 \end{equation}
+Here $\mathcal T$ denotes the chosen topology. Finite or countable convex
+sums are examples, not a complete definition in infinite dimension. A
+normal-state or split-property specialization must state its own topology
+and tensor-product identification; commutation alone does not supply them.
 Otherwise it is entangled. Thus entanglement is compatible with AQFT locality:
 non-factorization is a property of the state, not of commutators.
 

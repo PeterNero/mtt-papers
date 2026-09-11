@@ -33,11 +33,11 @@ abstract: |
   The rigorous result is an operator dual-representation theorem: one positive filtered operator has local and spectral representations, while valid POVMs, instruments, and Schur channels model localization and coherence loss. This reproduces standard quantum predictions only because the quantum state, dynamics, effects, and instrument are supplied as inputs. The claim that all of them descend from one MTT source remains a conditional encoding theorem, and the Born rule requires an independent basin-measure intertwiner.
 author:
 - Peter Nero
-current_version: v5
-date: July 2026, Version 5
-generated_from_main_tex_sha256: 58bdbc6d6d2a7eebb1cab8fe154aac7969f1eacd7db3a3561b20898125d956c5
+current_version: v6
+date: September 2026, Version 6
+generated_from_main_tex_sha256: 76f0a8dd61c68e43e2e15da7634429b9d5365e979a69d2fa6f5705667b1dc58a
 paper_id: wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v5
 title: |
   A Conditional Operator Encoding of Wave–Particle Duality in MTT
@@ -46,6 +46,23 @@ zenodo_doi: 10.5281/zenodo.21704912
 zenodo_record_id: 21704912
 zenodo_url: "https://zenodo.org/records/21704912"
 ---
+
+# Version 6 Revision Note
+
+Supersedes
+Version 5. The previous release remains public until a new release is approved.
+
+Reason
+Import the corrected sharp-limit theorem with its boundary domain.
+
+Resolution
+Imports the corrected sharp-limit statement and removes its duplicated proof.
+
+Retained result
+Correctly scoped results and explanatory examples remain; no physical source-selection claim is promoted.
+
+Remaining boundary
+Realization hypotheses and physical source or apparatus bridges remain separate obligations. This is an unreleased authoring revision.
 
 # Version 5 Revision Note
 
@@ -900,15 +917,15 @@ Let
 ```
 When $`B_{N,\tau}`$ has a kernel, denote it by $`K_{N,\tau}(x,y)`$.
 
-<div id="thm:delta-limit" class="theorem">
+<div id="thm:delta-limit" class="remark">
 
-**Theorem 18** (Delta limit of finite coherent kernels). *Let $`X`$ be compact and $`A\ge0`$ be self-adjoint elliptic with compact resolvent. Let $`\tau_N\downarrow0`$ and $`\Lambda_N\to\infty`$. Then, for every $`f\in C^\infty(X)`$,
+*Remark 18* (Imported delta limit of finite coherent kernels). The joint sharp-limit theorem is owned by the projected-kernel paper ; we import its corrected realization-dependent statement. Fix a nonnegative self-adjoint elliptic realization $`A`$ on compact $`X`$, including its boundary conditions. For $`\tau_N\downarrow0`$ and $`\Lambda_N\to\infty`$,
 ``` math
 \begin{equation}
   B_{N,\tau_N}f\longrightarrow f
 \end{equation}
 ```
-in $`C^\infty(X)`$. Equivalently,
+strongly in $`L^2`$ for every $`L^2`$ input. For $`f\in D_\infty(A)=\bigcap_{m\ge0}\operatorname{Dom}(A^m)`$, convergence also holds in every graph norm and hence smoothly. This domain equals $`C^\infty(X)`$ on a closed manifold, but at a boundary it imposes all-order compatibility. Independently,
 ``` math
 \begin{equation}
   K_{N,\tau_N}(x,y)
@@ -916,38 +933,7 @@ in $`C^\infty(X)`$. Equivalently,
   \delta(x-y)
 \end{equation}
 ```
-in the distributional sense on $`X\times X`$.*
-
-</div>
-
-<div class="proof">
-
-*Proof.* Write
-``` math
-\begin{equation}
-  f-B_{N,\tau_N}f
-  =
-  (I-P_N)f
-  +
-  P_N(I-e^{-\tau_NA})P_N f.
-  \label{eq:delta-proof-split}
-\end{equation}
-```
-The first term tends to zero in all Sobolev norms because spectral projectors converge strongly to the identity on smooth functions, and smooth functions have rapidly decaying spectral coefficients.
-
-For the second term, fix a Sobolev index $`s`$. Choose $`M>s`$. Since $`f\in C^\infty(X)`$,
-``` math
-\begin{equation}
-  \sum_n (1+\lambda_n)^M |\langle\phi_n,f\rangle|^2<\infty.
-\end{equation}
-```
-For each fixed $`n`$,
-``` math
-\begin{equation}
-  1-e^{-\tau_N\lambda_n}\to0.
-\end{equation}
-```
-Moreover, the Sobolev-weighted summands are dominated by a summable multiple of $`(1+\lambda_n)^M|\langle\phi_n,f\rangle|^2`$. Dominated convergence gives convergence to zero in $`H^s`$. Since $`s`$ is arbitrary, Sobolev embedding gives convergence in $`C^\infty(X)`$. The distributional convergence of kernels is the kernel formulation of strong convergence to the identity on test functions. ◻
+distributionally on the interior product, or on $`X\times X`$ for closed $`X`$. These are distinct topologies, not equivalent assertions. The owning theorem gives the proof. For this paper the consequence is a controlled sharp representation limit, not a derivation of Born probabilities, apparatus dynamics, physical source selection, or collapse.
 
 </div>
 
@@ -2704,7 +2690,7 @@ Then:*
 
 4.  *In the local representation, $`x\mapsto K_{\mathrm{adm}}(x,x_0)`$ is the finite coherent response to an ideal source at $`x_0`$.*
 
-5.  *For an exhausting family of projectors and windows $`(P_N,\chi_N)`$ together with $`\tau_N\downarrow0`$ satisfying the hypotheses of <a href="#thm:delta-limit" data-reference-type="ref+label" data-reference="thm:delta-limit">18</a>, the corresponding kernels converge to $`\delta(x-y)`$ distributionally.*
+5.  *For an exhausting family of projectors and windows $`(P_N,\chi_N)`$ together with $`\tau_N\downarrow0`$ satisfying the hypotheses of Remark <a href="#thm:delta-limit" data-reference-type="ref" data-reference="thm:delta-limit">18</a>, the corresponding kernels converge to $`\delta(x-y)`$ distributionally.*
 
 </div>
 
@@ -2727,7 +2713,7 @@ The local response statement follows from the definition of the Schwartz kernel:
   (B_{\mathrm{adm}}\delta_{x_0})(x)=K_{\mathrm{adm}}(x,x_0)
 \end{equation}
 ```
-in the distributional sense. The sharp delta limit is exactly <a href="#thm:delta-limit" data-reference-type="ref+label" data-reference="thm:delta-limit">18</a>. ◻
+in the distributional sense. The sharp delta limit is exactly Remark <a href="#thm:delta-limit" data-reference-type="ref" data-reference="thm:delta-limit">18</a>. ◻
 
 </div>
 
@@ -2773,7 +2759,7 @@ We now add the physical assumptions needed to interpret the two representations.
 
 *Proof.* By <a href="#thm:kernel-dual-representation" data-reference-type="ref+label" data-reference="thm:kernel-dual-representation">42</a>, the admissible coherent operator has a local kernel representation and a spectral modal representation.
 
-For the particle-like statement, fix a detector context whose finite effects $`E_x`$ have localization width below the detector resolution. Then the local kernel response $`K_{\mathrm{adm}}(x,x_0)`$, or the corresponding detector effect $`E_x`$, is operationally indistinguishable from a sharp position effect. By <a href="#thm:delta-limit" data-reference-type="ref+label" data-reference="thm:delta-limit">18</a>, the exact sharp position description is obtained as the distributional delta limit. Hence particle-like localization is the local sharp shadow of the finite coherent kernel.
+For the particle-like statement, fix a detector context whose finite effects $`E_x`$ have localization width below the detector resolution. Then the local kernel response $`K_{\mathrm{adm}}(x,x_0)`$, or the corresponding detector effect $`E_x`$, is operationally indistinguishable from a sharp position effect. By Remark <a href="#thm:delta-limit" data-reference-type="ref" data-reference="thm:delta-limit">18</a>, the exact sharp position description is obtained as the distributional delta limit. Hence particle-like localization is the local sharp shadow of the finite coherent kernel.
 
 For the wave-like statement, Assumption <a href="#ass:coherent-phase-evolution" data-reference-type="ref" data-reference="ass:coherent-phase-evolution">21</a> gives unitary phase transport on the retained sector. By <a href="#prop:interference-criterion" data-reference-type="ref+label" data-reference="prop:interference-criterion">24</a>, observable probabilities are phase-sensitive exactly when off-diagonal branch or modal coherences contribute. Therefore the spectral representation of the retained coherent sector gives wave-like interference whenever those coherences survive.
 

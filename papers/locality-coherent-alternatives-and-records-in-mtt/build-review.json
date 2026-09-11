@@ -1,0 +1,102 @@
+{
+  "schema": "mtt.interpretive-manuscript-review.v1",
+  "paper_id": "locality-coherent-alternatives-and-records-in-mtt",
+  "date": "2026-09-06",
+  "version": "v1",
+  "reviewer_kind": "assistant_editorial_and_artifact_review",
+  "manuscript_state": "unpublished_manuscript_author_review",
+  "author_review_required": true,
+  "zenodo_actions_performed": false,
+  "pdf": {
+    "path": "main.pdf",
+    "pages": 22,
+    "sha256": "6f234eeebbf74ad78c331b06a056a05c00a5d6e78934891bac1a2a2107072135",
+    "compile_exit_code": 0,
+    "unresolved_reference_warnings": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 0,
+    "visual_review": "All 22 pages inspected in rendered contact sheets, with selected full-size checks. After the final version-note change all pages were re-rendered: only page 1 differed; page 1 was inspected again."
+  },
+  "source": {
+    "main_tex_sha256": "3b4b684061ccc70355858af985bf1a58bd952f0f9897955f30733b59ec0d2f7d",
+    "markdown_sha256": "72e01d56c79b73e7fd812795c7da9ebeb441fbbc7ea4929abd06f5cb8971e16a",
+    "source_tree_sha256": "70a64bc2a9279d944fa78b51bd75add1d84f6423d668e46f3b69549099c257fc"
+  },
+  "tests": [
+    {
+      "command": "python -B examples/check_explanatory_examples_v2.py",
+      "passed": 18,
+      "failed": 0,
+      "scope": "Ideal finite quantum examples, not selected physical-source proofs."
+    },
+    {
+      "command": "python -B examples/check_ontology_examples_v1.py",
+      "passed": 13,
+      "failed": 0,
+      "scope": "Finite ontology and Wigner protocol examples, not a universal ontology theorem."
+    },
+    {
+      "command": "python -B examples/check_publication_artifacts.py",
+      "passed": 6,
+      "failed": 0,
+      "scope": "Citation/anchor/table preservation, source hashes, manuscript scope and no duplicate formal blocks."
+    },
+    {
+      "command": "python -B scripts/audit_expository_readability.py --write --strict-boilerplate",
+      "scope": "mtt-papers repository",
+      "exit_code": 0,
+      "papers": 141,
+      "forbidden_boilerplate_hits": 0
+    },
+    {
+      "command": "python -B scripts/verify_theorem_ownership.py",
+      "scope": "mtt-papers repository",
+      "exit_code": 0,
+      "known_global_duplicate_bodies": 0
+    },
+    {
+      "command": "python -B scripts/verify_book_interpretive_role.py",
+      "scope": "Existing repository companion; unchanged by this task",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B scripts/verify_paper_release_requirements.py",
+      "scope": "140 previously review-ready papers; new manuscript deliberately excluded pending author review",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B scripts/verify.py",
+      "scope": "Repository-wide",
+      "exit_code": 1,
+      "existing_blocker": {
+        "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
+        "location": "scripts/verify.py:253",
+        "reason": "The local PDF differs from the recorded Zenodo checksum while version_relation remains matches_latest_release. This paper was already modified by another worker before this task and was not changed here."
+      }
+    }
+  ],
+  "evidence": {
+    "curated_result_artifacts": 9,
+    "curated_revision": "db79bcebec12da558eef22f11ae7bbe8171fb595",
+    "manifest": "evidence-manifest.json",
+    "new_physical_promotions": 0
+  },
+  "kernel": {
+    "candidate_id": "P.NEW.LOCALITY_QUANTUM_RECORDS",
+    "handoff_id": "4a195887-e8e7-41b2-95ba-10a6bc11d03b",
+    "registration_verified": true,
+    "completion_domain": "interpretive_paper",
+    "theorem_role": "interpretive_synthesis",
+    "publication_state": "not_deposited",
+    "pdf_state": "ready",
+    "calculation_reference_state": "current",
+    "scientific_boundary_retained": "B.QM.03",
+    "note": "Interpretive completeness does not promote the universal apparatus or actualization source."
+  },
+  "remaining_before_release": [
+    "Author review of the manuscript and its relationship to the earlier constraint-realism essay.",
+    "Explicit release authorization and Zenodo metadata review.",
+    "Optional archival DOI for the portable supplement; none has been invented."
+  ],
+  "tooling_note": "Only this paper opts into paper-markdown.lua. The shared converter's optional five-line filter hook leaves every other paper on its existing conversion path."
+}

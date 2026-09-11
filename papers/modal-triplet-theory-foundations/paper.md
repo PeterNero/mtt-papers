@@ -3,17 +3,34 @@ abstract: |
   We develop a functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle $`M_{10}\to Y_4`$ with compact Riemannian fiber $`X_6`$; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and the existence, Lyapunov-promotion, and Banach gates are stated in self-contained form but imported from Fixed Points I, their canonical theorem source. Schur–Feshbach, projector-stability, and basin-robustness statements are given here with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat $`\mathbb Z_{64}`$ line pulls back coherently to the q79 SpinC determinant, the $`1+2+3`$ carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby–Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time.
 author:
 - Peter Nero
-current_version: v9
-date: July 2026 Version 9
-generated_from_main_tex_sha256: 022af297246466a9fa22832d262d9057aa0a320bf76523b899e3c55c963c7ec6
+current_version: v10
+date: September 2026, Version 10
+generated_from_main_tex_sha256: 8fa740c7a0777ef191aeb0302b43d62e2a43b5aa291fe888ffc6f912e4f57fae
 paper_id: modal-triplet-theory-foundations
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v9
 title: "Modal Triplet Theory: Foundations"
 zenodo_doi: 10.5281/zenodo.21655367
 zenodo_record_id: 21655367
 zenodo_url: "https://zenodo.org/records/21655367"
 ---
+
+# Version 10 Revision Note
+
+Supersedes
+Version 9. The previous release remains public until a new release is approved.
+
+Reason
+Condition algebraic tangency before promoting it to flow invariance.
+
+Resolution
+Uses actual flow invariance and states sufficient mild-realization hypotheses for tangency.
+
+Retained result
+Correctly scoped results and explanatory examples remain; no physical source-selection claim is promoted.
+
+Remaining boundary
+Realization hypotheses and physical source or apparatus bridges remain separate obligations. This is an unreleased authoring revision.
 
 # Revision note for version 9
 
@@ -374,7 +391,7 @@ Projector stability.
 Persistence and regularity of $`P`$ under parameter or curvature variation.
 
 Invariance.
-$`R_\tau(P\mathcal H)\subseteq P\mathcal H`$, equivalently $`QF(Pu)=0`$ in a differentiable autonomous realization.
+$`R_t(P\mathcal H)\subseteq P\mathcal H`$ for every time in the stated existence interval. Algebraic tangency $`QF(Pu)=0`$ alone is not a substitute for this flow statement.
 
 Existence.
 A fixed-point theorem applies on a declared invariant domain.
@@ -392,6 +409,8 @@ Selection.
 A continuation or reset rule is supplied at admissibility exit.
 
 No gate in this list follows solely from the gate preceding it.
+
+For a mild equation with a commuting linear semigroup and a globally Hilbert-space-Lipschitz nonlinear term, tangency of that nonlinear term to $`P\mathcal H`$ is sufficient: the restricted mild solution stays in the subspace and uniqueness identifies it with the full solution. This is the mild-invariance criterion imported from Fixed Points I . In a different Sobolev phase space, a locally defined flow, or a weak realization, continuation, domain compatibility, and uniqueness must be proved there before the same inference is used.
 
 A simple projected movie illustrates the distinction. Suppose the visible frame after one step looks exactly as it did before. The hidden part of the state may nevertheless have moved and then been erased by projection. That is a projected time-step fixed point, not an equilibrium of the full dynamics. Likewise, two different upper states may cast the same returning visible frame, so existence does not imply uniqueness.
 
@@ -674,6 +693,8 @@ P. Nero, *q79 Universal Shared Differential Line and Finite-Operator Intertwine
 
 </div>
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
 The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

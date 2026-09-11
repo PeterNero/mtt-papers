@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v5",
-  "date": "July 2026, Version 5",
+  "current_version": "v6",
+  "date": "September 2026, Version 6",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.21704911",
     "created": "2026-07-30T14:02:29.297622+00:00",
@@ -32,23 +32,23 @@
     "updated": "2026-07-30T14:02:29.640775+00:00",
     "version": "v5"
   },
-  "main_tex_sha256": "58bdbc6d6d2a7eebb1cab8fe154aac7969f1eacd7db3a3561b20898125d956c5",
+  "main_tex_sha256": "76f0a8dd61c68e43e2e15da7634429b9d5365e979a69d2fa6f5705667b1dc58a",
   "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
-  "paper_md_sha256": "bb661aae05c6e68f29625b33ba7bab3265160542e7b4381e6f875ca6d6e9b806",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "1a6518ce87789d5ed830d0b36d8863c7abf133bdb0444c72863b8367c8a9000d",
+  "release_state": "current_revised_tex",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "2cfdff01a2bbbe3733ad63aa16e207f871c2c4f7d37caf20804beecb17f8554f",
+    "revision_evidence_sha256": "cda616ca17c3a832a0cb6da177c086bbe07022b0c6ea7fe524b1a9e9a1ab98f3",
     "selected_revision": true,
     "superseded_source_path": "5 Dirac Delta/_work/Wave__Particle_Duality_as_Projection_Duality_in_Modal_Triplet_Theory_v4"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 158322,
+      "bytes": 158669,
       "path": "main.tex",
-      "sha256": "58bdbc6d6d2a7eebb1cab8fe154aac7969f1eacd7db3a3561b20898125d956c5"
+      "sha256": "76f0a8dd61c68e43e2e15da7634429b9d5365e979a69d2fa6f5705667b1dc58a"
     },
     {
       "bytes": 3784,
@@ -64,9 +64,9 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Wave__Particle_Duality_as_Projection_Duality_in_Modal_Triplet_Theory_v4"
   },
-  "source_tree_sha256": "239c4e20ca00359f676a877e29ef54e426fb2481595baeac3241d4b66a25bee5",
+  "source_tree_sha256": "f922cf73d97b4bf4f69553b92ee6e268986e075fed1c9c6de431a10c00dcd549",
   "title": "A Conditional Operator Encoding of Wave-Particle Duality in MTT Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.21704911",

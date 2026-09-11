@@ -1,5 +1,9 @@
 # Revision Audit: Heterotic Flux Compactifications
 
+## Version 5: September 2026 Consolidation
+
+Added the current local-source, B89 rejection and T69-T73 observability developments, with frozen public source links and an explanatory local/global distinction. T69 retracts the global ranks-through-1449 exclusion but retains the fixed-fiber calculation. T72's box certificate concerns coefficient rank; T73's canonical-dual bilinear is certified at midpoints only. These do not select the common physical endpoint. The original local Iwasawa audit, its proofs and the typed compactification contract remain unchanged. This revision is not yet on Zenodo.
+
 ## Current revision
 
 - Version: v4

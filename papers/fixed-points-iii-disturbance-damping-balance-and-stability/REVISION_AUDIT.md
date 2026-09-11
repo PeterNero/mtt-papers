@@ -75,3 +75,10 @@ Points paper is restated as new work.
 - The current source compiles with `pdflatex` to a 9-page PDF.
 - The final log has no undefined references, underfull boxes, overfull boxes,
   or LaTeX/package warnings.
+
+## Corpus coherence reconciliation, 2026-08-02
+
+The selected TeX now states the paper-specific `C.FP.01` boundary explicitly:
+the damping generator, coherent projector, invariant domain, gap data, and
+forcing/noise law are physical q79 inputs, not outputs of the abstract FP III
+estimates. This is a scope clarification and does not change any theorem.

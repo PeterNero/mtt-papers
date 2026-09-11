@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v9",
-  "date": "July 2026 Version 9",
+  "current_version": "v10",
+  "date": "September 2026, Version 10",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949762",
     "created": "2026-07-29T08:51:20.203508+00:00",
@@ -32,28 +32,28 @@
     "updated": "2026-07-29T08:51:20.648443+00:00",
     "version": "v9"
   },
-  "main_tex_sha256": "022af297246466a9fa22832d262d9057aa0a320bf76523b899e3c55c963c7ec6",
+  "main_tex_sha256": "8fa740c7a0777ef191aeb0302b43d62e2a43b5aa291fe888ffc6f912e4f57fae",
   "paper_id": "modal-triplet-theory-foundations",
-  "paper_md_sha256": "8bc47d1d0768d023189d62dab71169035d579ec1d25ddb6c4d36d55a82c6abe0",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "11d886069ed567bb124edde4d0e4f60607b8197e894a2a7067a398223df33577",
+  "release_state": "current_revised_tex",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V8_SHARED_LINE_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "dc55df4de2b082785180b8c244d6ad757151a931862d89e740b176ed3f6a414c",
+    "revision_evidence_sha256": "d437e04a894cbf3a283973ce5be5ec4f260b52402b659ed7c1d6a04e0ff3a34a",
     "selected_revision": true,
     "superseded_source_path": "3 Core Foundations/_work/Modal_Triplet_Theory__Foundation_v6 (1)"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 439234,
+      "bytes": 441603,
       "path": "main.pdf",
-      "sha256": "8bc712f06b738429d59b140e571ebe5814f6e4d60e07277da8eec2ac12d58fc3"
+      "sha256": "2b5af97fd9121c2c209793ad481b56356f41255bbdce718fe02c075950ebc55a"
     },
     {
-      "bytes": 50411,
+      "bytes": 51681,
       "path": "main.tex",
-      "sha256": "022af297246466a9fa22832d262d9057aa0a320bf76523b899e3c55c963c7ec6"
+      "sha256": "8fa740c7a0777ef191aeb0302b43d62e2a43b5aa291fe888ffc6f912e4f57fae"
     },
     {
       "bytes": 3784,
@@ -64,9 +64,9 @@
   "source_provenance": {
     "legacy_source_path": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__Foundation_v8"
   },
-  "source_tree_sha256": "ba640da274c464f5229d612449dc5b76e663646ba280481519c6082ab9b4559e",
+  "source_tree_sha256": "a00789d4973ab75f48ad6da5591ae6b0a846b2c5e3d8aba759c4562dfb965bca",
   "title": "Modal Triplet Theory: Foundations",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.16949762",

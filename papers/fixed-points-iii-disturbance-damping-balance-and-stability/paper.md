@@ -5,17 +5,21 @@ author:
 - Peter Nero
 bibliography:
 - refs.bib
-current_version: v5
-date: July 2026 Version 5
-generated_from_main_tex_sha256: fc008122ca171de64b6d409349bdfa4716bd372cfb524f8ed408936e73eac480
+current_version: v6
+date: September 2026 Version 6
+generated_from_main_tex_sha256: 8c06687a6bd689dab772d14c996e1f99c9393b0871d3a28138643f8336cee1a2
 paper_id: fixed-points-iii-disturbance-damping-balance-and-stability
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v5
 title: "Fixed Points III: Disturbance–Damping Balance and Stability"
 zenodo_doi: 10.5281/zenodo.21655371
 zenodo_record_id: 21655371
 zenodo_url: "https://zenodo.org/records/21655371"
 ---
+
+# Version 6 Revision Note
+
+**Supersedes.** Version 5, which remains the released edition. **Reason and resolution.** Separates the standalone analytic theorems from the physical source-selection problem. **Retained results.** The previous mathematical results and proofs are unchanged. **Boundary.** This is a contextual clarification in an unreleased revision, not a new physical-source theorem.
 
 # Revision note for version 5
 
@@ -66,6 +70,8 @@ Sections 1–2 inherit the joint projector and build a non-double-counted spect
 #### Scope boundary.
 
 Every modal result in the main stability chain concerns $`Q\Psi`$. It neither contracts coherent modes nor proves that a physical environment supplies Brownian noise. The homogenized diffusion is an emergent limit only after the enhanced functional-CLT, tightness, and rough-path hypotheses have been verified for the selected dynamics.
+
+A physical q79 application must independently select the damping generator, coherent projector, invariant domain, gap data, and forcing or noise law. The analytic estimates below consume those typed inputs; they do not emit them from MTT geometry.
 
 # Scope and inherited framework
 
@@ -385,6 +391,8 @@ The same bound is uniform for a smoothly base-dependent family remaining in $`\m
 
 </div>
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
 The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

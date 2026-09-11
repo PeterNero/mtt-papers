@@ -18,7 +18,7 @@
 \title{Fixed Points V: Curvature Coupling, Multi-Structure Dynamics,\\
 and Admissibility Barriers}
 \author{Peter Nero}
-\date{July 2026\\Version 7}
+\date{September 2026\\Version 8}
 
 \begin{document}
 \maketitle
@@ -42,6 +42,13 @@ exit bounds. Cross-correlation controls simultaneous exits on a declared
 observation grid; it does not by itself prove localization, non-propagation,
 or selection of a post-exit state.
 \end{abstract}
+
+\section*{Version 8 Revision Note}
+\noindent\textbf{Supersedes.} Version 7, which remains the released edition.
+\textbf{Reason and resolution.} Separates the standalone analytic theorems from the physical source-selection problem.
+\textbf{Retained results.} The previous mathematical results and proofs are unchanged.
+\textbf{Boundary.} This is a contextual clarification in an unreleased revision,
+not a new physical-source theorem.
 
 \section*{Revision note for version 7}
 \addcontentsline{toc}{section}{Revision note for version 7}
@@ -133,6 +140,11 @@ Existence of a projected fixed point and promotion to a full equilibrium are
 inherited only when the hypotheses of FP~I and FP~II hold. Disturbance floors
 are interpreted according to FP~III, and curvature uses the full operator and
 projector construction of FP~IV.
+
+A physical q79 application must therefore select the coupled generator,
+projector, covariance source, invariant domain, and any post-exit transition
+kernel independently.  The covariance and exit theorems below diagnose those
+supplied data; they do not construct physical operators from q79 geometry.
 
 At a frozen configuration $x$, write
 \[

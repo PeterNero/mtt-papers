@@ -3,17 +3,34 @@ abstract: |
   Algebraic quantum field theory (AQFT) separates locality of observable algebras from factorization of states: spacelike algebras may commute while a state on their joint algebra remains entangled. We formulate the precise MTT-compatible version of this distinction. Given an upper local net indexed over a globally hyperbolic four-dimensional base, a decomposable coherent projector, and the coherent-preserving local subalgebra, the fixed-point locality-descent theorem transports isotony and microcausality to the compressed net. Nonfactorizing states may restrict to that net, but admissibility and locality alone neither force entanglement nor select a Bell-violating state. Bell/CHSH violation is therefore compatible with upper-local dynamics when a suitable nonseparable state and local instruments are independently supplied. Measurement is treated as an ordinary localized completely positive instrument. Such instruments obey operational no-signaling under the standard locality assumptions; they cannot increase an entanglement monotone on average, although an individually postselected branch need not lose entanglement. Common-ancestor protocols and finite-speed correlation spreading remain standard local mechanisms. The result is a conditional AQFT-compatible MTT encoding, not a derivation of all physical states or measurement probabilities from admissibility alone.
 author:
 - Peter Nero
-current_version: v2
-date: July 2026, Version 2
-generated_from_main_tex_sha256: 43857ab4b9efbd06603cde2a8a84496589f01d112fa949428482926eb9538980
+current_version: v3
+date: September 2026, Version 3
+generated_from_main_tex_sha256: 613bdba3208c4022ddec9e3cc0f4a1b77b3ca80d4f4bb38343aeb562d4d14886
 paper_id: entanglement-locality-and-measurement-from-coherent-sec-110e8cbe
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v2
 title: Entanglement, Locality, and Measurement from Coherent Sector Dynamics
 zenodo_doi: 10.5281/zenodo.21665963
 zenodo_record_id: 21665963
 zenodo_url: "https://zenodo.org/records/21665963"
 ---
+
+# Version 3 Revision Note
+
+Supersedes
+Version 2. The previous release remains public until a new release is approved.
+
+Reason
+Use the closed convex hull definition of infinite-dimensional separability.
+
+Resolution
+Defines separability by closed convex hulls with an explicitly chosen topology.
+
+Retained result
+Correctly scoped results and explanatory examples remain; no physical source-selection claim is promoted.
+
+Remaining boundary
+Realization hypotheses and physical source or apparatus bridges remain separate obligations. This is an unreleased authoring revision.
 
 # Version 2 Revision Note
 
@@ -88,15 +105,16 @@ States need not factorize over commuting subalgebras, and AQFT explicitly permit
 
 Let $`\mathcal{A}_1:=\mathcal{A}(\mathcal{O}_1)`$ and $`\mathcal{A}_2:=\mathcal{A}(\mathcal{O}_2)`$ for spacelike-separated regions. Microcausality implies $`[A,B]=0`$ for $`A\in\mathcal{A}_1`$ and $`B\in\mathcal{A}_2`$, but it does *not* imply state factorization.
 
-A state is *separable* on $`\mathcal{A}_1\vee\mathcal{A}_2`$ if it admits a convex decomposition
+A state is *separable* when it belongs to the closed convex hull of product states, with the closure topology specified. In the ordinary bipartite density-operator setting we use trace-norm closure. In the $`C^*`$-algebraic discussion here we use weak-\* closure in the state space of $`\mathcal{A}_1\vee\mathcal{A}_2`$, and require the product functionals to extend to states on that joint algebra. Explicitly,
 ``` math
 \begin{equation}
 \label{eq:separable}
-\omega(AB)=\sum_i p_i\,\omega^{(1)}_i(A)\,\omega^{(2)}_i(B),
-\quad A\in\mathcal{A}_1,\;B\in\mathcal{A}_2,\; p_i\ge 0,\;\sum_i p_i=1.
+ \omega\in\overline{\operatorname{conv}}^{\,\mathcal T}
+ \{\omega_1\otimes\omega_2\},
+ \qquad (\omega_1\otimes\omega_2)(AB)=\omega_1(A)\omega_2(B).
 \end{equation}
 ```
-Otherwise it is entangled. Thus entanglement is compatible with AQFT locality: non-factorization is a property of the state, not of commutators.
+Here $`\mathcal T`$ denotes the chosen topology. Finite or countable convex sums are examples, not a complete definition in infinite dimension. A normal-state or split-property specialization must state its own topology and tensor-product identification; commutation alone does not supply them. Otherwise it is entangled. Thus entanglement is compatible with AQFT locality: non-factorization is a property of the state, not of commutators.
 
 AQFT therefore answers the compatibility question, “How can entanglement exist without signaling?” It does not by itself select a particular nonfactorizing preparation.
 
@@ -414,6 +432,25 @@ nonseparable even when $`A`$ and $`B`$ never interact directly. Calling $`C`$ a 
 
 </div>
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The locality discussion depends on algebraic commutation, state nonfactorization, and the supplied measurement model. The mapped open ledger proves none of these statements; it is recorded only to delimit later claims of complete MTT-to-physics descent.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+
 #### Open boundary (not evidence of closure).
 
 - (*open*).
@@ -421,22 +458,6 @@ nonseparable even when $`A`$ and $`B`$ never interact directly. Calling $`C`$ a 
   Current 2/9 strict no-knob upgrade ledger.
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
-
-The locality discussion depends on algebraic commutation, state nonfactorization, and the supplied measurement model. The mapped open ledger proves none of these statements; it is recorded only to delimit later claims of complete MTT-to-physics descent.
-
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
-
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
-
-## Open boundary (not evidence of closure)
-
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
-
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 

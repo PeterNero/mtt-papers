@@ -1,5 +1,15 @@
 # Revision Audit
 
+## September 2026 Current-Version Delta (v2)
+
+- Supersedes: v1; no Zenodo record changed.
+- Reason: Replace the nonlinear operator norm by a typed Lipschitz or derivative bound.
+- Resolution: Restricts operator-norm theorems to linear flows and supplies a separate nonlinear comparison with transverse drift.
+- Ownership: This paper owns the coherence-time specialization, not the general invariant-set theorem.
+- Retained: valid scoped results and examples, without physical promotion.
+- Remaining: future source integration and author release approval.
+
+
 ## Current Delta
 
 - Replaced the claimed minimal time from a semigroup upper bound by an exact exit-time

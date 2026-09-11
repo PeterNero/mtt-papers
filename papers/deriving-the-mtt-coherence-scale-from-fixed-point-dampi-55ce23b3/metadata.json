@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1",
-  "date": "July 2026, Version 1",
+  "current_version": "v2",
+  "date": "September 2026, Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.21704669",
     "created": "2026-07-30T13:44:39.356368+00:00",
@@ -32,14 +32,14 @@
     "updated": "2026-07-30T13:44:39.861980+00:00",
     "version": "v1"
   },
-  "main_tex_sha256": "797bcbcd71276505665fd2872493b945abf73a4052d9c09c4829b2debe2f3470",
+  "main_tex_sha256": "de26334048c3cf82082c72858737053ea63d3b33f16165304027e4b7958822cc",
   "paper_id": "deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3",
-  "paper_md_sha256": "d09b8c2937c0e1213a4925fda76bb8ea0bf15144aa4fbf8f8ba5be010b05ebe7",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "c1415ecb3dae7aa9af831d283b73749fcd7fde214c54753e8bca44987e8de791",
+  "release_state": "current_revised_tex",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "655bb6d1dddc8679f4322f49e0227043eac599b1ff69d528af15169d09412525",
+    "revision_evidence_sha256": "34340ba8d552a2e0b6b7cb78d5b1bbcfb15c013800bd78a964fc05ac517a2f44",
     "selected_revision": true,
     "superseded_source_path": "5 Dirac Delta/_work/Deriving_the_MTT_Coherence_Scale_from_Fixed__Point_Damping"
   },
@@ -56,9 +56,9 @@
       "sha256": "e702ca29aa61954c45f6d7d1effb3b298da1d683d33a9ea6c62674fd9b6369bf"
     },
     {
-      "bytes": 21046,
+      "bytes": 22521,
       "path": "main.tex",
-      "sha256": "797bcbcd71276505665fd2872493b945abf73a4052d9c09c4829b2debe2f3470"
+      "sha256": "de26334048c3cf82082c72858737053ea63d3b33f16165304027e4b7958822cc"
     },
     {
       "bytes": 3784,
@@ -69,9 +69,9 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Deriving_the_MTT_Coherence_Scale_from_Fixed__Point_Damping"
   },
-  "source_tree_sha256": "b119022c17985c53b871e4339bb765a2d91e059518aafe7620c58f64880f33f9",
+  "source_tree_sha256": "bad44e5dde4b46d947a282875e57b91701738d0deb13046e401ae5e687bbae17",
   "title": "Admissibility-Time Bounds from Fixed-Point Damping Exact Exit Times, Certified Proper-Time Filters, and the MTT Source Boundary",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.21704669",

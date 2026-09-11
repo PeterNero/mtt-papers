@@ -10,7 +10,7 @@
 \title{A Conditional Operator Encoding of Wave--Particle Duality in MTT\\
 \large Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary}
 \author{Peter Nero}
-\date{July 2026, Version 5}
+\date{September 2026, Version 6}
 
 % Paper-specific notation
 \newcommand{\Kadm}{K_{\mathrm{adm}}}
@@ -119,6 +119,15 @@ because the quantum state, dynamics, effects, and instrument are supplied as inp
 claim that all of them descend from one MTT source remains a conditional encoding theorem,
 and the Born rule requires an independent basin-measure intertwiner.
 \end{abstract}
+
+\section*{Version 6 Revision Note}
+\begin{description}
+\item[Supersedes] Version 5. The previous release remains public until a new release is approved.
+\item[Reason] Import the corrected sharp-limit theorem with its boundary domain.
+\item[Resolution] Imports the corrected sharp-limit statement and removes its duplicated proof.
+\item[Retained result] Correctly scoped results and explanatory examples remain; no physical source-selection claim is promoted.
+\item[Remaining boundary] Realization hypotheses and physical source or apparatus bridges remain separate obligations. This is an unreleased authoring revision.
+\end{description}
 
 \section*{Version 5 Revision Note}
 \begin{description}
@@ -1010,50 +1019,32 @@ Let
 \end{equation}
 When \(B_{N,\tau}\) has a kernel, denote it by \(K_{N,\tau}(x,y)\).
 
-\begin{theorem}[Delta limit of finite coherent kernels]
+\begin{remark}[Imported delta limit of finite coherent kernels]
 \label{thm:delta-limit}
-Let \(X\) be compact and \(A\ge0\) be self-adjoint elliptic with compact resolvent. Let
-\(\tau_N\downarrow0\) and \(\Lambda_N\to\infty\). Then, for every \(f\in C^\infty(X)\),
+The joint sharp-limit theorem is owned by the projected-kernel paper
+\cite{MTTKernel}; we import its corrected realization-dependent statement.
+Fix a nonnegative self-adjoint elliptic realization \(A\) on compact \(X\),
+including its boundary conditions. For \(\tau_N\downarrow0\) and
+\(\Lambda_N\to\infty\),
 \begin{equation}
   B_{N,\tau_N}f\longrightarrow f
 \end{equation}
-in \(C^\infty(X)\). Equivalently,
+strongly in \(L^2\) for every \(L^2\) input. For
+\(f\in D_\infty(A)=\bigcap_{m\ge0}\operatorname{Dom}(A^m)\), convergence
+also holds in every graph norm and hence smoothly. This domain equals
+\(C^\infty(X)\) on a closed manifold, but at a boundary it imposes
+all-order compatibility. Independently,
 \begin{equation}
   K_{N,\tau_N}(x,y)
   \longrightarrow
   \delta(x-y)
 \end{equation}
-in the distributional sense on \(X\times X\).
-\end{theorem}
-
-\begin{proof}
-Write
-\begin{equation}
-  f-B_{N,\tau_N}f
-  =
-  (I-P_N)f
-  +
-  P_N(I-e^{-\tau_NA})P_N f.
-  \label{eq:delta-proof-split}
-\end{equation}
-The first term tends to zero in all Sobolev norms because spectral projectors converge
-strongly to the identity on smooth functions, and smooth functions have rapidly decaying
-spectral coefficients.
-
-For the second term, fix a Sobolev index \(s\). Choose \(M>s\). Since \(f\in C^\infty(X)\),
-\begin{equation}
-  \sum_n (1+\lambda_n)^M |\langle\phi_n,f\rangle|^2<\infty.
-\end{equation}
-For each fixed \(n\),
-\begin{equation}
-  1-e^{-\tau_N\lambda_n}\to0.
-\end{equation}
-Moreover, the Sobolev-weighted summands are dominated by a summable multiple of
-\((1+\lambda_n)^M|\langle\phi_n,f\rangle|^2\). Dominated convergence gives convergence
-to zero in \(H^s\). Since \(s\) is arbitrary, Sobolev embedding gives convergence in
-\(C^\infty(X)\). The distributional convergence of kernels is the kernel formulation of
-strong convergence to the identity on test functions.
-\end{proof}
+distributionally on the interior product, or on \(X\times X\) for closed
+\(X\). These are distinct topologies, not equivalent assertions. The
+owning theorem gives the proof. For this paper the consequence is a
+controlled sharp representation limit, not a derivation of Born
+probabilities, apparatus dynamics, physical source selection, or collapse.
+\end{remark}
 
 \begin{remark}[Meaning of the sharp limit]
 \label{rem:meaning-sharp-limit}
@@ -2761,7 +2752,7 @@ Assumption~\ref{ass:fixed-point-spectral-data}.
   response to an ideal source at \(x_0\).
   \item For an exhausting family of projectors and windows
   \((P_N,\chi_N)\) together with \(\tau_N\downarrow0\) satisfying the hypotheses of
-  \cref{thm:delta-limit}, the corresponding kernels converge to
+  Remark~\ref{thm:delta-limit}, the corresponding kernels converge to
   \(\delta(x-y)\) distributionally.
 \end{enumerate}
 \end{theorem}
@@ -2789,7 +2780,7 @@ The local response statement follows from the definition of the Schwartz kernel:
 \begin{equation}
   (\Badm\delta_{x_0})(x)=\Kadm(x,x_0)
 \end{equation}
-in the distributional sense. The sharp delta limit is exactly \cref{thm:delta-limit}.
+in the distributional sense. The sharp delta limit is exactly Remark~\ref{thm:delta-limit}.
 \end{proof}
 
 \begin{remark}[Why the theorem is not merely interpretive]
@@ -2846,7 +2837,7 @@ representation and a spectral modal representation.
 For the particle-like statement, fix a detector context whose finite effects \(E_x\) have
 localization width below the detector resolution. Then the local kernel response
 \(\Kadm(x,x_0)\), or the corresponding detector effect \(E_x\), is operationally indistinguishable
-from a sharp position effect. By \cref{thm:delta-limit}, the exact sharp position description is
+from a sharp position effect. By Remark~\ref{thm:delta-limit}, the exact sharp position description is
 obtained as the distributional delta limit. Hence particle-like localization is the local sharp
 shadow of the finite coherent kernel.
 

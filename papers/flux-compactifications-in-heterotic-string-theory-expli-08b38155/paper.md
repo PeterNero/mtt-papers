@@ -5,11 +5,11 @@ author:
 - Peter Nero
 bibliography:
 - references.bib
-current_version: v4
-date: July 2026, Version 4
-generated_from_main_tex_sha256: 1ced1fa62136d291d0e58bd033f68c42cd51c3086f56236c94c2080b9387d461
+current_version: v5
+date: September 2026, Version 5
+generated_from_main_tex_sha256: 6661702d6e38f645126c40cde66f2d92e745c214ed6422290f02cebc178a5b50
 paper_id: flux-compactifications-in-heterotic-string-theory-expli-08b38155
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v4
 title: |
   Auditing Heterotic Flux Compactifications on Iwasawa and Lens–Nil Geometries:
@@ -18,6 +18,10 @@ zenodo_doi: 10.5281/zenodo.21705964
 zenodo_record_id: 21705964
 zenodo_url: "https://zenodo.org/records/21705964"
 ---
+
+# Version 5 Revision Note
+
+**Supersedes.** Version 4, which remains the released edition. **Reason and resolution.** Incorporates the new local q79 response certificates and the correction separating a fixed-fiber Picard test from the global BHT obstruction. **Retained results.** The Iwasawa audit and typed compactification contract are unchanged. **Boundary.** The new certificates do not construct the selected common physical endpoint.
 
 # Introduction
 
@@ -336,7 +340,7 @@ The former Lens–Nil section explicitly found $`\mathrm{d}\Omega\neq0`$ and des
 
 This conclusion does not say that Lens or Nil geometry is useless in MTT. It can remain an auxiliary spectral, transport, or rank-filter model. What must be retired is the inference from that auxiliary role to a literal physical Hull–Strominger compactification. The literal $`L(3,1)\times\mathrm{Nil}_3`$ model is also not the selected $`q=79`$ Fu–Yau candidate; distinct topology cannot be erased by assigning the same interpretive labels.
 
-# The current q79 evidence and its exact scope
+# Baseline q79 evidence and its exact scope
 
 The failure of the old Iwasawa bundle does not return the broader MTT program to zero. It changes which results may be composed.
 
@@ -378,6 +382,18 @@ The current branch must still produce the following objects on one and the same 
 | W1 | Exact heterotic worldsheet and modular/factorization data | open downstream |
 
 </div>
+
+## September update: local observability and the global obstruction
+
+The baseline above is not an exhaustive inventory of the later q79 research. There is now a full selected $`164\times164`$ local Gauss–Manin coefficient source with a certified correlated lift on $`0\leq u\leq2^{-96}`$. Separately, the completed same-source affine Deligne test proves $`\beta_C(B89)\neq0`$. Thus B89 is rejected from the zero locus; neither the small local interval nor that rejection determines the global answer for every other cover. These results narrow an actual construction problem without changing the ranks or carriers of the baseline HYM theorems.
+
+One correction is particularly important for subsequent searches. The non-torsion calculation at an initial Picard point on one genus-82 fiber does not compute the full global BHT obstruction. CBF T69 retracts the attempted global exclusion of ranks $`1`$ through $`1449`$. The fixed-fiber calculation survives, while the global rank-one and rank-two alternatives remain undecided. The valid implication that an actual rank-$`r`$ twisted spectral object requires $`r\beta_C=0`$ must be applied to that global class, not to a substitute evaluated at one fiber.
+
+The newer response certificates explain why comparing several fibers is useful. CBF T70 finds rank $`70`$ for one coefficient evaluation of a $`122`$-dimensional projective tangent space, leaving a $`52`$-dimensional kernel. CBF T71–T72 instead recover rank $`122`$ from three evaluations. T72 proves the characteristic-zero statement at the three physical midpoints and preserves the coefficient rank on independent boxes $`|s_i-1/2|\leq2^{-32}`$, with certified Neumann defect below $`0.199`$.
+
+CBF T73 supplies the canonical-dual response at those midpoints. K3 adjunction identifies the quotient $`H^0(\mathcal O(9H))/\langle F\rangle`$ with an $`82`$-dimensional canonical space. The three bilinear blocks are invertible and have total rank $`246`$; postcomposition preserves the coefficient rank $`122`$. This last bilinear invertibility is a midpoint result, not yet a certificate over the whole three-panel boxes. In particular, none of these coefficient ranks is silently identified with the derivative of the nonlinear global Picard/BHT restriction map.
+
+All statements in this update are imported from the frozen [curated result manifest at commit f141a20e](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/result_manifest.json), including the records [CBF T69 (corrected global-rank scope)](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_framed_member_spectral_rank_exclusion/artifact.json), [CBF T72 (three-evaluation frame)](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_physical_midpoint_three_evaluation_frame/artifact.json), and [CBF T73 (canonical-dual response)](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_physical_canonical_dual_response_observability/artifact.json). The certificates and their original proofs remain the theorem owners. The next bridge is to certify the finite-trace bilinear over all three panels, complete global transport and the integral readout, and evaluate the actual global obstruction. The common HYM/Hull–Strominger endpoint and its physical overlaps still require the remaining rows below.
 
 # A typed completion theorem
 
@@ -486,6 +502,25 @@ The program still needs one common q79 rank-three visible–hidden Hull–Stromi
 
 The earlier paper did not construct the two claimed heterotic compactifications. What survives is a correct Iwasawa balanced-geometry calculation, an exact diagnosis of the failed bundle, and a sharper route forward. The selected $`q=79`$ program has nontrivial finite, topological, and rank-two analytic evidence, but a physical Hull–Strominger compactification still requires one common rank-three visible–hidden tuple satisfying every gate in Theorem <a href="#thm:contract" data-reference-type="ref" data-reference="thm:contract">7</a>. That is the precise frontier.
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The q79 arithmetic theorem and audit, literal finite rank-two Cech witness, and rank-two Wiener-contraction certificate are used directly at their declared finite, topological, or rank-two analytic tiers. They do not construct the missing physical rank-three visible-hidden bundle, differential Green-Schwarz representative, flux gerbe, or worldsheet theory. The paper’s SU3 repair obstruction is checked by its own exact local verifier and is not relabeled as a promoted q79 HYM endpoint.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+
 #### Rows used directly in this paper.
 
 - (*numeric certified*).
@@ -505,22 +540,3 @@ The earlier paper did not construct the two claimed heterotic compactifications.
   CRT q=79 theorem on the selected exact branch.
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
-
-The q79 arithmetic theorem and audit, literal finite rank-two Cech witness, and rank-two Wiener-contraction certificate are used directly at their declared finite, topological, or rank-two analytic tiers. They do not construct the missing physical rank-three visible-hidden bundle, differential Green-Schwarz representative, flux gerbe, or worldsheet theory. The paper's SU3 repair obstruction is checked by its own exact local verifier and is not relabeled as a promoted q79 HYM endpoint.
-
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
-
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
-
-## Rows used directly in this paper
-
-- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
-- `A07/literal_cech_witness` (**DERIVED_EXACT**): Literal 81-entry, 729-cocycle finite Cech witness.
-- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
-- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
-
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

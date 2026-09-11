@@ -11,11 +11,11 @@ abstract: |
   These facts do not authorize a universal replacement of spacetime deltas, canonical commutators, gauge constraints, or local vertices. Such a replacement is a new physical model unless a selected realization supplies the operator domain, $`A`$, $`P`$, and $`\tau`$, and separately proves locality or causal support, covariance, gauge/BRST compatibility, and the relevant algebraic identities. The result is therefore a conditional execution interface, not a derivation of a universal MTT regulator.
 author:
 - Peter Nero
-current_version: v1
-date: July 2026, Version 1
-generated_from_main_tex_sha256: 54abab1f209b263464450b4c6873b0b22713195eb43c7022ee91438ce7d36c7f
+current_version: v2
+date: September 2026, Version 2
+generated_from_main_tex_sha256: a6372b278314f9f2f27c459905cd31808b848e577a5b0e255d980a6d2ac8dfb9
 paper_id: canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v1
 title: |
   **Projected Heat Kernels from MTT Fixed-Point Data**
@@ -24,6 +24,23 @@ zenodo_doi: 10.5281/zenodo.21703907
 zenodo_record_id: 21703907
 zenodo_url: "https://zenodo.org/records/21703907"
 ---
+
+# Version 2 Revision Note
+
+Supersedes
+Version 1. The previous release remains public until a new release is approved.
+
+Reason
+Restrict all-orders boundary convergence to the compatible operator domain.
+
+Resolution
+Separates strong L2, distributional-kernel and compatible-domain smooth convergence, with a Dirichlet counterexample and graph-norm proof.
+
+Retained result
+Correctly scoped results and explanatory examples remain; no physical source-selection claim is promoted.
+
+Remaining boundary
+Realization hypotheses and physical source or apparatus bridges remain separate obligations. This is an unreleased authoring revision.
 
 # Version 1 Revision Note
 
@@ -352,31 +369,25 @@ B_{N,\tau}:=P_Ne^{-\tau A}P_N.
 
 <div id="thm:sharp" class="theorem">
 
-**Theorem 13** (Joint sharp limit). *Let $`f\in C^\infty(X)`$. Suppose $`\Lambda_N\to\infty`$ and $`\tau_N\downarrow0`$. Then
+**Theorem 13** (Joint sharp limit). *Fix the self-adjoint elliptic realization of $`A`$, including its boundary conditions. Suppose $`\Lambda_N\to\infty`$ and $`\tau_N\downarrow0`$. Then $`B_{N,\tau_N}f\to f`$ strongly in $`L^2(X)`$ for every $`f\in L^2(X)`$. For
 ``` math
-B_{N,\tau_N}f\to f
+D_\infty(A):=\bigcap_{m\geq0}\operatorname{Dom}(A^m),
 ```
-in $`C^\infty(X)`$. Equivalently, the kernels of $`B_{N,\tau_N}`$ converge to $`\delta(x-y)`$ in the distributional sense on $`X\times X`$.*
+convergence holds in every graph norm $`\|(I+A)^m\cdot\|_2`$, and hence in $`C^\infty`$ by elliptic estimates and Sobolev embedding. On a closed manifold $`D_\infty(A)=C^\infty(X)`$; with boundary this domain imposes compatibility at every order. Independently, the kernels converge to the identity distribution on the interior product (and on $`X\times X`$ when $`X`$ is closed). Distributional convergence is weaker than smooth convergence on inputs; these statements are not equivalent.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Write
+*Proof.* In an eigenbasis the multiplier is $`b_N(\lambda)=\mathbf1_{[0,\Lambda_N]}(\lambda)e^{-\tau_N\lambda}`$. It lies in $`[0,1]`$ and tends to one at each fixed eigenvalue. Dominated convergence applied to
 ``` math
-f-B_{N,\tau_N}f
-        =
-        (I-P_N)f
-        +
-        P_N(I-e^{-\tau_N A})P_Nf.
+\sum_n(1+\lambda_n)^{2m}|1-b_N(\lambda_n)|^2|f_n|^2
 ```
-The first term tends to zero in all Sobolev norms because spectral projectors converge strongly to the identity on smooth functions, and smooth spectral coefficients decay rapidly. For the second term, fix a Sobolev index $`s`$. Choose $`M>s`$. Since $`f\in C^\infty`$,
-``` math
-\sum_n (1+\lambda_n)^M |\langle \phi_n,f\rangle|^2<\infty.
-```
-For each fixed $`n`$, $`1-e^{-\tau_N\lambda_n}\to0`$. The summand is dominated by a multiple of $`(1+\lambda_n)^M|\langle\phi_n,f\rangle|^2`$ for $`N`$ large enough and $`M`$ chosen above $`s`$. Dominated convergence gives convergence to zero in $`H^s`$. Since $`s`$ is arbitrary, Sobolev embedding gives convergence in $`C^\infty`$. The distributional kernel statement is the usual kernel form of convergence to the identity. ◻
+proves the $`L^2`$ assertion for $`m=0`$ and all graph-norm assertions for $`f\in D_\infty(A)`$. The elliptic realization supplies the comparison with geometric Sobolev norms. For a smooth compactly supported test kernel, the associated smoothing operator is trace class. Uniform boundedness and strong convergence of $`B_{N,\tau_N}`$ imply convergence of its pairing with that trace-class operator, proving distributional kernel convergence. ◻
 
 </div>
+
+For example, the constant function on a Dirichlet interval is smooth but violates the boundary condition. Each finite spectral output vanishes at the endpoints, so it cannot converge uniformly there to that constant. The strong $`L^2`$ and interior distributional limits still hold. This is why specifying the realization changes the permitted convergence topology, not the underlying heat-kernel identity.
 
 <div id="cor:meaning" class="corollary">
 

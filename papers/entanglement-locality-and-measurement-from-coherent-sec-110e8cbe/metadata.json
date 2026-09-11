@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "July 2026, Version 2",
+  "current_version": "v3",
+  "date": "September 2026, Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261392",
     "created": "2026-07-29T08:50:28.993871+00:00",
@@ -32,23 +32,23 @@
     "updated": "2026-07-29T08:50:29.475318+00:00",
     "version": "v2"
   },
-  "main_tex_sha256": "43857ab4b9efbd06603cde2a8a84496589f01d112fa949428482926eb9538980",
+  "main_tex_sha256": "613bdba3208c4022ddec9e3cc0f4a1b77b3ca80d4f4bb38343aeb562d4d14886",
   "paper_id": "entanglement-locality-and-measurement-from-coherent-sec-110e8cbe",
-  "paper_md_sha256": "94836afa02a924c87a824450b00a4039db1fdb161fa009ed2065c36cc31c910e",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "a0aa6c3ef7ef0fa6066fca857e265d9b62f3c812d1ff5bbc8117f8853f3a8a9e",
+  "release_state": "current_revised_tex",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "REVISION_AUDIT.md",
-    "revision_evidence_sha256": "84b96c8a8209b9364e804cb2d370f56edfbc937f9ef4ed4d5a8486db972893f0",
+    "revision_evidence_sha256": "203615f1938a6610ec55f9c14ca4e52e2ff075843b3f6551b85a2b14f16a053f",
     "selected_revision": true,
     "superseded_source_path": "9 Bell, Entanglement & Time/_work/Entanglement__Locality__and_Measurement_from_Coherent_Sector_Dynamics"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 29217,
+      "bytes": 30492,
       "path": "main.tex",
-      "sha256": "43857ab4b9efbd06603cde2a8a84496589f01d112fa949428482926eb9538980"
+      "sha256": "613bdba3208c4022ddec9e3cc0f4a1b77b3ca80d4f4bb38343aeb562d4d14886"
     },
     {
       "bytes": 3784,
@@ -59,9 +59,9 @@
   "source_provenance": {
     "legacy_source_path": "9 Bell, Entanglement & Time/_work/Entanglement__Locality__and_Measurement_from_Coherent_Sector_Dynamics"
   },
-  "source_tree_sha256": "869b7c3673241220135ab3859c8cd667b68b64497bbdc9decea3874daa75db26",
+  "source_tree_sha256": "d3ad0f9a5b390e28b4777222093f3b32b86759277c32e6ba0629865e9f54c199",
   "title": "Entanglement, Locality, and Measurement from Coherent Sector Dynamics",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18261392",

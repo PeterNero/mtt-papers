@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v11",
-  "date": "July 2026 Version 11",
+  "current_version": "v12",
+  "date": "September 2026, Version 12",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17162671",
     "created": "2026-07-29T08:51:43.416541+00:00",
@@ -32,36 +32,36 @@
     "updated": "2026-07-29T08:51:44.146058+00:00",
     "version": "v11"
   },
-  "main_tex_sha256": "4deac85014c21ba07ce28614828fe0fb3c0b42e08e3ba58749c69584ef229f53",
+  "main_tex_sha256": "a8e2c5278f48f5757bae2f2f36e9effe785a1634f1f13c2630cbe63b2dd88597",
   "paper_id": "the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793",
-  "paper_md_sha256": "43c70cc36afafb5334215392b199d4e5160dad440cad7b91ccad8403e2702ba3",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "05916eaf384814268213a173420e28d3b25d000a735408597d0cd11f0970da35",
+  "release_state": "current_revised_tex",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "10 The Book on Modal Triplet Theory/BOOK_V10_CURRENT_CORPUS_RECONCILIATION_AUDIT_2026-07-15.md",
-    "revision_evidence_sha256": "36f1717cb42742253bf7712a5600888c90cfde73feb242033f13a86472a4f971",
+    "revision_evidence_sha256": "8c844b65b399daff064e72a075f5169748c31e117f36b7cc3842f5e3a2109ad3",
     "selected_revision": true,
     "superseded_source_path": "10 The Book on Modal Triplet Theory/_work/The_Book_on_Modal_Triplet_Theory_v9"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 415653,
+      "bytes": 418260,
       "path": "main.pdf",
-      "sha256": "70fb322051ae610780e4dfe21018f50a34ff1306c8460c32b9612a58299453fb"
+      "sha256": "349564c21f4fbb8355b45fd512800a9f08a50da236a9c587e36920b193d56b6f"
     },
     {
-      "bytes": 71591,
+      "bytes": 72998,
       "path": "main.tex",
-      "sha256": "4deac85014c21ba07ce28614828fe0fb3c0b42e08e3ba58749c69584ef229f53"
+      "sha256": "a8e2c5278f48f5757bae2f2f36e9effe785a1634f1f13c2630cbe63b2dd88597"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "10 The Book on Modal Triplet Theory/revised_tex_vnext/The_Book_on_Modal_Triplet_Theory_v10"
   },
-  "source_tree_sha256": "95401ff2a6f99aa81ea54d21d905fec7db8909cf3942830069a7776b9858bc5f",
+  "source_tree_sha256": "1ab50598a2a47dcf3529fb6d4e252f032a72e552ecfbc1497bb3863732e47f83",
   "title": "The Book on Modal Triplet Theory An Interpretive Guide How to picture the program, what it has achieved, and what remains open",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.17162671",

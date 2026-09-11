@@ -3,11 +3,11 @@ abstract: |
   We formulate multi-structure covariance and admissibility diagnostics on the canonical FP–I–IV spine. Curvature enters through the full Laplace-type operator and its curved spectral projector, not through an unproved affine eigenvalue rule. Exact Gaussian claims are restricted to frozen linear Ornstein–Uhlenbeck systems. The scalar OU baseline is imported from Fixed Points III, its canonical owner, and the genuinely multi-structure stationary covariance derived here satisfies a Lyapunov equation, and block-diagonal damping gives a correct cross-covariance and canonical-correlation estimate. Admissibility is encoded by a finite or trace-controlled family of declared spectral, damping, and performance margins. The resulting deficit score detects exit but is neither a force nor an energy unless a separate variational source theorem is supplied. For affine Gaussian margin observables we prove finite-grid and continuous-time exit bounds. Cross-correlation controls simultaneous exits on a declared observation grid; it does not by itself prove localization, non-propagation, or selection of a post-exit state.
 author:
 - Peter Nero
-current_version: v7
-date: July 2026 Version 7
-generated_from_main_tex_sha256: 4e014f3af6686d3e4af042e3ae923fd3021bb09ad74d323207db0d676b0499ed
+current_version: v8
+date: September 2026 Version 8
+generated_from_main_tex_sha256: 557f94317cc54929ddc803b9d4c36959096c780c10c8f0b15b560727a4db9988
 paper_id: fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v7
 title: |
   Fixed Points V: Curvature Coupling, Multi-Structure Dynamics,
@@ -16,6 +16,10 @@ zenodo_doi: 10.5281/zenodo.21655379
 zenodo_record_id: 21655379
 zenodo_url: "https://zenodo.org/records/21655379"
 ---
+
+# Version 8 Revision Note
+
+**Supersedes.** Version 7, which remains the released edition. **Reason and resolution.** Separates the standalone analytic theorems from the physical source-selection problem. **Retained results.** The previous mathematical results and proofs are unchanged. **Boundary.** This is a contextual clarification in an unreleased revision, not a new physical-source theorem.
 
 # Revision note for version 7
 
@@ -74,6 +78,8 @@ The covariance theorems are frozen-linear results. The Gaussian exit theorems re
 # Inherited setting and scope
 
 Let $`I=[t_0,t_1]`$ be a finite parameter interval and let $`(B,g_t)`$ be a Riemannian base with uniformly bounded geometry on $`I`$. This formulation does not identify the FP stabilization parameter with physical Lorentzian time. Existence of a projected fixed point and promotion to a full equilibrium are inherited only when the hypotheses of FP I and FP II hold. Disturbance floors are interpreted according to FP III, and curvature uses the full operator and projector construction of FP IV.
+
+A physical q79 application must therefore select the coupled generator, projector, covariance source, invariant domain, and any post-exit transition kernel independently. The covariance and exit theorems below diagnose those supplied data; they do not construct physical operators from q79 geometry.
 
 At a frozen configuration $`x`$, write
 ``` math
@@ -414,6 +420,8 @@ R. Temam, *Infinite-Dimensional Dynamical Systems in Mechanics and Physics*, Ap
 
 </div>
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
 The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

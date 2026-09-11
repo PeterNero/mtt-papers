@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1",
-  "date": "July 2026, Version 1",
+  "current_version": "v2",
+  "date": "September 2026, Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.21703914",
     "created": "2026-07-30T12:54:48.475622+00:00",
@@ -32,14 +32,14 @@
     "updated": "2026-07-30T12:54:48.787855+00:00",
     "version": "v1"
   },
-  "main_tex_sha256": "55041b3beddd6e57ff9324dceed9c0c51b7e81f4671f5c86bd2c9fe803ee9881",
+  "main_tex_sha256": "f12bec1462e36962fa0f73f6c6bf0f13e8f2cb400d6f5a5a2a22cac1e81313c1",
   "paper_id": "coherent-green-functions-replacing-point-sources-by-adm-98607519",
-  "paper_md_sha256": "f47b3f45a2d22de8186165812d9acbcafdbb1632acfe4b09c43c434d52e4d383",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "4d77add1fc53418fbae8623d0357be4bffaf842a41b3d875ca0a81931414f05d",
+  "release_state": "current_revised_tex",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/coherent-green-functions-replacing-point-sources-by-adm-98607519/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "7b491fc003c964e0e6387f0cc2d596290aff93c30d19743cf5eb47d7e84bf874",
+    "revision_evidence_sha256": "7940e96a5dbe69627d3a78d60e41f2e3eb84566a5346e1996f2e3f243912bd75",
     "selected_revision": true,
     "superseded_source_path": "5 Dirac Delta/_work/Coherent_Green_Functions__Replacing_Point_Sources_by_Admissible_Kernels_in_Modal_Triplet_Theory"
   },
@@ -56,9 +56,9 @@
       "sha256": "6d07eb847e6c0fe7dc3270cfeb1d9a52254cd12c997a4f45785d6bc8418bcc09"
     },
     {
-      "bytes": 24375,
+      "bytes": 26125,
       "path": "main.tex",
-      "sha256": "55041b3beddd6e57ff9324dceed9c0c51b7e81f4671f5c86bd2c9fe803ee9881"
+      "sha256": "f12bec1462e36962fa0f73f6c6bf0f13e8f2cb400d6f5a5a2a22cac1e81313c1"
     },
     {
       "bytes": 3784,
@@ -69,9 +69,9 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Coherent_Green_Functions__Replacing_Point_Sources_by_Admissible_Kernels_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "a269f6fcca37e1fddd556a6f7d3cd4bd7060ee0290d1280aa6de960399a3b57d",
+  "source_tree_sha256": "8cbbbd4e28ed1c3e441568ee29afd5113ea9fabe1394e4459191f1d997dedfe8",
   "title": "Coherent Green Functions from Declared Projection Kernels Elliptic Results and the MTT Source Boundary",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.21703914",

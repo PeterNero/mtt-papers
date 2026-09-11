@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v7",
-  "date": "July 2026 Version 7",
+  "current_version": "v8",
+  "date": "September 2026 Version 8",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949503",
     "created": "2026-07-29T08:50:51.494193+00:00",
@@ -24,7 +24,7 @@
     ],
     "id": "21655379",
     "match_kind": "published_draft_reconciliation",
-    "match_score": 1.0,
+    "match_score": 1,
     "publication_date": "2026-07-29",
     "record_url": "https://zenodo.org/records/21655379",
     "resource_type": "publication",
@@ -32,28 +32,28 @@
     "updated": "2026-07-29T08:50:52.349661+00:00",
     "version": "v7"
   },
-  "main_tex_sha256": "4e014f3af6686d3e4af042e3ae923fd3021bb09ad74d323207db0d676b0499ed",
+  "main_tex_sha256": "557f94317cc54929ddc803b9d4c36959096c780c10c8f0b15b560727a4db9988",
   "paper_id": "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8",
-  "paper_md_sha256": "53af70cc5af499cec765c37c6c96879c3facb24022469985b5c7eca91e27ef8b",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "d88cce5c5a5332031b7159da33d64487a30c8805e17f265fed5ce3225d89f370",
+  "release_state": "current_revised_tex",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_V_V6_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "bc3e1be8930a3fb1492bbe5079b5f638e232edf9b4e1efece42b2553d5c98788",
+    "revision_evidence_sha256": "eae8daecf6c36825665f5643d82fd0fe703b6ae1c586190ef2c83e48a23c3e21",
     "selected_revision": true,
     "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v5"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 333363,
+      "bytes": 336100,
       "path": "main.pdf",
-      "sha256": "24523849592ecd78dd55695b3e3fb9ce8ea658defe68bf3be979a1ff6a470cec"
+      "sha256": "b93c246dff3ad768c4d9b4a733d8aab5c53b3c053c9c981351479bbf5ae679b3"
     },
     {
-      "bytes": 22681,
+      "bytes": 23417,
       "path": "main.tex",
-      "sha256": "4e014f3af6686d3e4af042e3ae923fd3021bb09ad74d323207db0d676b0499ed"
+      "sha256": "557f94317cc54929ddc803b9d4c36959096c780c10c8f0b15b560727a4db9988"
     },
     {
       "bytes": 15299,
@@ -64,9 +64,9 @@
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v6"
   },
-  "source_tree_sha256": "302483fd70fd458b4040172f42e2b0a6568a3ab7cc6ae78075452a920a6ea30a",
+  "source_tree_sha256": "d64a86ef83f9dfddb8e67123c2eac192b023d0376ae2bd51e4ad9d60c2aff2a4",
   "title": "Fixed Points V: Curvature Coupling, Multi-Structure Dynamics, and Admissibility Barriers",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.16949503",
@@ -85,7 +85,7 @@
       ],
       "id": "21655379",
       "match_kind": "published_draft_reconciliation",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-07-29",
       "record_url": "https://zenodo.org/records/21655379",
       "resource_type": "publication",
@@ -110,7 +110,7 @@
       ],
       "id": "21650468",
       "match_kind": "published_draft_reconciliation",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-07-28",
       "record_url": "https://zenodo.org/records/21650468",
       "resource_type": "publication",
@@ -135,7 +135,7 @@
       ],
       "id": "18200121",
       "match_kind": "title_or_file",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-01-09",
       "record_url": "https://zenodo.org/records/18200121",
       "resource_type": "publication",

@@ -88,3 +88,11 @@ reclaimed as an FP V result.
 - The current source compiles with `pdflatex` to an 8-page PDF.
 - The final log has no undefined references, underfull boxes, overfull boxes,
   or LaTeX/package warnings.
+
+## Corpus coherence reconciliation, 2026-08-02
+
+The selected TeX now states the paper-specific `C.FP.01` boundary explicitly:
+the coupled generator, projector, covariance source, invariant domain, and any
+post-exit transition kernel must be selected by the physical q79 model. FP V
+diagnoses supplied data and does not emit those physical operators. No theorem
+or estimate is changed.

@@ -163,7 +163,7 @@ def build_paper(
     warnings = sorted(
         {
             match.group(0)
-            for output in outputs
+            for output in outputs[-1:]
             for match in WARNING_RE.finditer(output)
         }
     )
@@ -188,7 +188,8 @@ def main() -> int:
     document = read_json(MAP_PATH)
     all_ids = sorted(document["papers"])
     paper_ids = args.paper_id or all_ids
-    unknown = sorted(set(paper_ids) - set(all_ids))
+    catalog_ids = {row["paper_id"] for row in read_json(ROOT / "catalog/papers.json")["papers"]}
+    unknown = sorted(set(paper_ids) - catalog_ids)
     if unknown:
         print(
             "unknown paper IDs: " + ", ".join(unknown),

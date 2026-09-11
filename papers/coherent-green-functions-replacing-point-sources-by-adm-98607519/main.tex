@@ -11,7 +11,7 @@
 \title{Coherent Green Functions from Declared Projection Kernels\\
 \large Elliptic Results and the MTT Source Boundary}
 \author{Peter Nero}
-\date{July 2026, Version 1}
+\date{September 2026, Version 2}
 
 \begin{document}
 \maketitle
@@ -39,6 +39,15 @@ different finite predictions.  The rigorous result is therefore the
 elliptic response theorem and its singular limit; physical kernel selection
 remains open.
 \end{abstract}
+
+\section*{Version 2 Revision Note}
+\begin{description}
+\item[Supersedes] Version 1. The previous release remains public until a new release is approved.
+\item[Reason] Correct boundary-domain and Sobolev-norm claims for Green responses.
+\item[Resolution] Repairs both convergence theorems and distinguishes spectral from geometric Sobolev norms.
+\item[Retained result] Correctly scoped results and explanatory examples remain; no physical source-selection claim is promoted.
+\item[Remaining boundary] Realization hypotheses and physical source or apparatus bridges remain separate obligations. This is an unreleased authoring revision.
+\end{description}
 
 \section*{Version 1 Revision Note}
 \addcontentsline{toc}{section}{Version 1 Revision Note}
@@ -198,13 +207,16 @@ Let \(L\) be a positive self-adjoint elliptic operator of order two on a compact
 \item For each finite \(\Lambda\), \(G_\Lambda(x,y)\) is smooth on \(X\times X\).
 \item \(L_xG_\Lambda(x,y)=K_\Lambda(x,y)\).
 \item As \(\Lambda\to\infty\), \(G_\Lambda\to G=L^{-1}\) in the distributional kernel sense.
-\item For every test function \(f\in C^\infty(X)\),
+\item For every \(f\in D_\infty(L):=\bigcap_{m\ge0}\operatorname{Dom}(L^m)\),
 \[
 G_\Lambda f:=\int_XG_\Lambda(x,y)f(y)\,dy
 \longrightarrow
 Gf:=L^{-1}f
 \]
-in \(C^\infty(X)\).
+in \(C^\infty(X)\). On a closed manifold this includes every smooth
+input. With boundary, all powers of the selected elliptic realization
+impose compatibility; arbitrary smooth boundary data are not included.
+For every \(f\in L^2(X)\), convergence still holds in \(L^2\).
 \end{enumerate}
 \end{theorem}
 
@@ -227,13 +239,21 @@ G_\Lambda f=\sum_{\mu_n\le\Lambda}\frac{f_n}{\mu_n}\phi_n,
 \qquad
 Gf=\sum_{n=0}^\infty\frac{f_n}{\mu_n}\phi_n.
 \]
-For any Sobolev index \(s\),
+For \(s\ge0\), define the spectral graph norm
+\(\|h\|_{\mathcal H_L^s}:=\|(I+L)^{s/2}h\|_2\). Then exactly
 \[
-\norm{Gf-G_\Lambda f}_{H^s}^2
+\norm{Gf-G_\Lambda f}_{\mathcal H_L^s}^2
 =
 \sum_{\mu_n>\Lambda}(1+\mu_n)^s \frac{|f_n|^2}{\mu_n^2}.
 \]
-Since \(f\in C^\infty(X)\), its spectral coefficients decay rapidly, so the right-hand side tends to zero for every \(s\). Thus \(G_\Lambda f\to Gf\) in all Sobolev norms, hence in \(C^k\) for every finite \(k\) by Sobolev embedding. This proves (3) and (4). 
+For \(f\in D_\infty(L)\) this tail tends to zero at every order. Geometric
+Sobolev norms are compared by elliptic estimates; they are not identically
+the displayed spectral norm. Sobolev embedding gives the smooth limit.
+For general \(L^2\) input use \(s=0\) and boundedness of \(L^{-1}\).
+The distributional kernel limit follows by testing against smoothing
+trace-class operators. This is the Green-response specialization of the
+joint sharp-limit theorem in \cite{MTTKernel}, not an equivalence between
+smooth and distributional convergence.
 \end{proof}
 
 \begin{corollary}[Coherent Green functions are regularized point-source responses]
@@ -262,7 +282,10 @@ Then:
 \item \(G_\tau(x,y)\) is smooth for every \(\tau>0\);
 \item \(L_xG_\tau(x,y)=H_\tau(x,y)\);
 \item as \(\tau\downarrow0\), \(G_\tau\to G=L^{-1}\) distributionally;
-\item for every \(f\in C^\infty(X)\), \(G_\tau f\to Gf\) in \(C^\infty(X)\).
+\item for every \(f\in D_\infty(\Delta)\), \(G_\tau f\to Gf\) in
+\(C^\infty(X)\); for every \(L^2\) input, convergence holds in \(L^2\).
+The all-powers domain uses the same boundary realization for \(\Delta\)
+and \(L=\Delta+m^2\).
 \end{enumerate}
 \end{theorem}
 
@@ -275,7 +298,10 @@ G_\tau f=\sum_{n=0}^\infty \frac{e^{-\tau\lambda_n}}{\lambda_n+m^2} f_n\phi_n,
 \qquad
 Gf=\sum_{n=0}^\infty \frac{1}{\lambda_n+m^2} f_n\phi_n.
 \]
-For smooth \(f\), rapid decay of \(f_n\) and dominated convergence in every Sobolev norm imply \(G_\tau f\to Gf\). 
+For \(f\in D_\infty(\Delta)\), dominated convergence in each spectral
+graph norm followed by elliptic Sobolev comparison proves the smooth
+limit. The order-zero estimate proves the general \(L^2\) limit and
+trace-class testing proves the distributional kernel assertion.
 \end{proof}
 
 \section{Finite diagonal values and coincidence singularities}
@@ -653,6 +679,10 @@ derive a selected kernel and prove the required covariance, gauge, causal,
 and interacting consistency conditions in each target domain.
 
 \begin{thebibliography}{9}
+
+\bibitem{MTTKernel}
+P. Nero, \emph{Projected Heat Kernels from MTT Fixed-Point Data},
+version 2, 2026, joint sharp-limit theorem.
 
 \bibitem{Hormander}
 L. H{\"o}rmander,

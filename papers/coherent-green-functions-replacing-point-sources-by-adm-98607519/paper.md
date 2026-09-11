@@ -13,11 +13,11 @@ abstract: |
   Within Modal Triplet Theory (MTT), these theorems provide a conditional downstream interface rather than a universal replacement rule. A selected physical realization must still supply $`L`$, the projector or filter, its width, and the map from an internal or Euclidean spectral problem to the claimed external source. It must also prove that covariance, gauge constraints, locality or causal support, and boundary conditions survive. Different finite kernels can share the same sharp limit while giving different finite predictions. The rigorous result is therefore the elliptic response theorem and its singular limit; physical kernel selection remains open.
 author:
 - Peter Nero
-current_version: v1
-date: July 2026, Version 1
-generated_from_main_tex_sha256: 55041b3beddd6e57ff9324dceed9c0c51b7e81f4671f5c86bd2c9fe803ee9881
+current_version: v2
+date: September 2026, Version 2
+generated_from_main_tex_sha256: f12bec1462e36962fa0f73f6c6bf0f13e8f2cb400d6f5a5a2a22cac1e81313c1
 paper_id: coherent-green-functions-replacing-point-sources-by-adm-98607519
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v1
 title: |
   Coherent Green Functions from Declared Projection Kernels
@@ -26,6 +26,23 @@ zenodo_doi: 10.5281/zenodo.21703915
 zenodo_record_id: 21703915
 zenodo_url: "https://zenodo.org/records/21703915"
 ---
+
+# Version 2 Revision Note
+
+Supersedes
+Version 1. The previous release remains public until a new release is approved.
+
+Reason
+Correct boundary-domain and Sobolev-norm claims for Green responses.
+
+Resolution
+Repairs both convergence theorems and distinguishes spectral from geometric Sobolev norms.
+
+Retained result
+Correctly scoped results and explanatory examples remain; no physical source-selection claim is promoted.
+
+Remaining boundary
+Realization hypotheses and physical source or apparatus bridges remain separate obligations. This is an unreleased authoring revision.
 
 # Version 1 Revision Note
 
@@ -208,13 +225,13 @@ L_xG_\tau(x,y)=H_\tau(x,y).
 
 3.  *As $`\Lambda\to\infty`$, $`G_\Lambda\to G=L^{-1}`$ in the distributional kernel sense.*
 
-4.  *For every test function $`f\in C^\infty(X)`$,
+4.  *For every $`f\in D_\infty(L):=\bigcap_{m\ge0}\operatorname{Dom}(L^m)`$,
     ``` math
     G_\Lambda f:=\int_XG_\Lambda(x,y)f(y)\,dy
     \longrightarrow
     Gf:=L^{-1}f
     ```
-    in $`C^\infty(X)`$.*
+    in $`C^\infty(X)`$. On a closed manifold this includes every smooth input. With boundary, all powers of the selected elliptic realization impose compatibility; arbitrary smooth boundary data are not included. For every $`f\in L^2(X)`$, convergence still holds in $`L^2`$.*
 
 </div>
 
@@ -238,13 +255,13 @@ G_\Lambda f=\sum_{\mu_n\le\Lambda}\frac{f_n}{\mu_n}\phi_n,
 \qquad
 Gf=\sum_{n=0}^\infty\frac{f_n}{\mu_n}\phi_n.
 ```
-For any Sobolev index $`s`$,
+For $`s\ge0`$, define the spectral graph norm $`\|h\|_{\mathcal H_L^s}:=\|(I+L)^{s/2}h\|_2`$. Then exactly
 ``` math
-\left\lVert Gf-G_\Lambda f \right\rVert_{H^s}^2
+\left\lVert Gf-G_\Lambda f \right\rVert_{\mathcal H_L^s}^2
 =
 \sum_{\mu_n>\Lambda}(1+\mu_n)^s \frac{|f_n|^2}{\mu_n^2}.
 ```
-Since $`f\in C^\infty(X)`$, its spectral coefficients decay rapidly, so the right-hand side tends to zero for every $`s`$. Thus $`G_\Lambda f\to Gf`$ in all Sobolev norms, hence in $`C^k`$ for every finite $`k`$ by Sobolev embedding. This proves (3) and (4). ◻
+For $`f\in D_\infty(L)`$ this tail tends to zero at every order. Geometric Sobolev norms are compared by elliptic estimates; they are not identically the displayed spectral norm. Sobolev embedding gives the smooth limit. For general $`L^2`$ input use $`s=0`$ and boundedness of $`L^{-1}`$. The distributional kernel limit follows by testing against smoothing trace-class operators. This is the Green-response specialization of the joint sharp-limit theorem in , not an equivalence between smooth and distributional convergence. ◻
 
 </div>
 
@@ -280,7 +297,7 @@ Then:*
 
 3.  *as $`\tau\downarrow0`$, $`G_\tau\to G=L^{-1}`$ distributionally;*
 
-4.  *for every $`f\in C^\infty(X)`$, $`G_\tau f\to Gf`$ in $`C^\infty(X)`$.*
+4.  *for every $`f\in D_\infty(\Delta)`$, $`G_\tau f\to Gf`$ in $`C^\infty(X)`$; for every $`L^2`$ input, convergence holds in $`L^2`$. The all-powers domain uses the same boundary realization for $`\Delta`$ and $`L=\Delta+m^2`$.*
 
 </div>
 
@@ -294,7 +311,7 @@ G_\tau f=\sum_{n=0}^\infty \frac{e^{-\tau\lambda_n}}{\lambda_n+m^2} f_n\phi_n,
 \qquad
 Gf=\sum_{n=0}^\infty \frac{1}{\lambda_n+m^2} f_n\phi_n.
 ```
-For smooth $`f`$, rapid decay of $`f_n`$ and dominated convergence in every Sobolev norm imply $`G_\tau f\to Gf`$. ◻
+For $`f\in D_\infty(\Delta)`$, dominated convergence in each spectral graph norm followed by elliptic Sobolev comparison proves the smooth limit. The order-zero estimate proves the general $`L^2`$ limit and trace-class testing proves the distributional kernel assertion. ◻
 
 </div>
 
@@ -675,6 +692,8 @@ The next step is not automatic substitution in other theories. It is to derive a
 <div class="thebibliography">
 
 9
+
+P. Nero, *Projected Heat Kernels from MTT Fixed-Point Data*, version 2, 2026, joint sharp-limit theorem.
 
 L. Hörmander, *The Analysis of Linear Partial Differential Operators*, Springer.
 

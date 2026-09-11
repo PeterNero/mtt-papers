@@ -1,17 +1,18 @@
 {
   "schema": "mtt.expository-readability-audit.v1",
-  "generated_on": "2026-07-31",
-  "papers": 139,
+  "generated_on": "2026-09-11",
+  "papers": 141,
   "priority_counts": {
+    "light": 1,
     "reference_ready": 2,
-    "reviewed": 137
+    "reviewed": 138
   },
   "missing_dimension_counts": {
     "argument_flow": 32,
     "conclusion": 3,
     "concrete_foothold": 24,
     "object_intuition": 84,
-    "orientation": 65,
+    "orientation": 66,
     "result_interpretation": 7
   },
   "forbidden_boilerplate_hits": [],
@@ -281,11 +282,11 @@
     {
       "paper_id": "canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62",
       "title": "Projected Heat Kernels from MTT Fixed-Point Data Conditional Sector Identities and the Physical-Replacement Boundary",
-      "total_words": 2814,
-      "narrative_words": 1541,
+      "total_words": 2985,
+      "narrative_words": 1669,
       "formal_results": 14,
       "proofs": 9,
-      "narrative_words_per_result": 110.1,
+      "narrative_words_per_result": 119.2,
       "orientation": true,
       "object_intuition": false,
       "argument_flow": true,
@@ -297,8 +298,8 @@
       "audit_priority": "reviewed",
       "heuristic_priority": "critical",
       "review_status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "review_note": "Version 1 replaces the universal delta-replacement claim by an exact typed projected heat-kernel theorem, proves harmonic-projector degeneracy and gap estimates, and requires explicit intertwiners plus symmetry, support, gauge and measurement compatibility before physical reuse; 10-page PDF visually inspected.",
+      "reviewed_on": "2026-09-11",
+      "review_note": "Version 1 replaces the universal delta-replacement claim by an exact typed projected heat-kernel theorem, proves harmonic-projector degeneracy and gap estimates, and requires explicit intertwiners plus symmetry, support, gauge and measurement compatibility before physical reuse; 10-page PDF visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
       "missing_dimensions": [
         "object_intuition"
       ]
@@ -530,11 +531,11 @@
     {
       "paper_id": "coherent-green-functions-replacing-point-sources-by-adm-98607519",
       "title": "Coherent Green Functions from Declared Projection Kernels Elliptic Results and the MTT Source Boundary",
-      "total_words": 3044,
-      "narrative_words": 2125,
+      "total_words": 3245,
+      "narrative_words": 2205,
       "formal_results": 9,
       "proofs": 3,
-      "narrative_words_per_result": 236.1,
+      "narrative_words_per_result": 245.0,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -546,8 +547,8 @@
       "audit_priority": "reviewed",
       "heuristic_priority": "major",
       "review_status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "review_note": "Version 1 retains exact elliptic spectral and heat-filtered Green-function convergence while separating band-limited sources from physical source selection, causal propagation, gauge/BRST consistency, locality and renormalization; 12-page PDF visually inspected.",
+      "reviewed_on": "2026-09-11",
+      "review_note": "Version 1 retains exact elliptic spectral and heat-filtered Green-function convergence while separating band-limited sources from physical source selection, causal propagation, gauge/BRST consistency, locality and renormalization; 12-page PDF visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
       "missing_dimensions": []
     },
     {
@@ -629,6 +630,29 @@
         "object_intuition",
         "argument_flow"
       ]
+    },
+    {
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "title": "Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary",
+      "total_words": 7099,
+      "narrative_words": 4798,
+      "formal_results": 19,
+      "proofs": 13,
+      "narrative_words_per_result": 252.5,
+      "orientation": true,
+      "object_intuition": true,
+      "argument_flow": true,
+      "result_interpretation": true,
+      "concrete_foothold": true,
+      "limitations": true,
+      "conclusion": true,
+      "coverage_dimensions": 7,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "moderate",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-09-11",
+      "review_note": "Version 1 is a new canonical theorem-owner paper. It derives the covariant residual Hessian, exact-zero normal square, repair flow, tangent Hodge semigroup, cohesive twist cancellation, Maurer-Cartan repair, Hodge/Green/kernel package, nonlinear Cech descent, compatible projection, and complete repair jet in one standalone explanatory chain. It includes the nonzero-defect correction, the exact stratified Green blow-up witness, and a theorem-level separation of positive repair from signed physical action through Helmholtz, multiplier, and cyclic-action results. It applies the chain only to the q79 Hartshorne-Serre cohesive benchmark, keeps physical V3/W9 selection, HYM metric, full action, Lorentzian domains, and continuum-to-finite transport open, includes reproducibility references and a version-provenance audit, and the complete 21-page PDF was visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
+      "missing_dimensions": []
     },
     {
       "paper_id": "computational-irreducibility-from-projection-undecidabi-6cc6aafd",
@@ -776,11 +800,11 @@
     {
       "paper_id": "deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3",
       "title": "Admissibility-Time Bounds from Fixed-Point Damping Exact Exit Times, Certified Proper-Time Filters, and the MTT Source Boundary",
-      "total_words": 2409,
-      "narrative_words": 1643,
+      "total_words": 2605,
+      "narrative_words": 1822,
       "formal_results": 8,
       "proofs": 4,
-      "narrative_words_per_result": 205.4,
+      "narrative_words_per_result": 227.8,
       "orientation": true,
       "object_intuition": false,
       "argument_flow": true,
@@ -792,8 +816,8 @@
       "audit_priority": "reviewed",
       "heuristic_priority": "major",
       "review_status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "review_note": "Version 1 distinguishes exact exit time from the earliest time certified by an exponential semigroup estimate, proves equality for a reducing self-adjoint generator, and leaves physical source selection explicit; 10-page PDF visually inspected.",
+      "reviewed_on": "2026-09-11",
+      "review_note": "Version 1 distinguishes exact exit time from the earliest time certified by an exponential semigroup estimate, proves equality for a reducing self-adjoint generator, and leaves physical source selection explicit; 10-page PDF visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
       "missing_dimensions": [
         "object_intuition",
         "result_interpretation"
@@ -957,11 +981,11 @@
     {
       "paper_id": "entanglement-locality-and-measurement-from-coherent-sec-110e8cbe",
       "title": "Entanglement, Locality, and Measurement from Coherent Sector Dynamics",
-      "total_words": 3280,
-      "narrative_words": 2653,
+      "total_words": 3422,
+      "narrative_words": 2807,
       "formal_results": 7,
       "proofs": 5,
-      "narrative_words_per_result": 379.0,
+      "narrative_words_per_result": 401.0,
       "orientation": true,
       "object_intuition": false,
       "argument_flow": true,
@@ -971,10 +995,10 @@
       "conclusion": true,
       "coverage_dimensions": 6,
       "audit_priority": "reviewed",
-      "heuristic_priority": "moderate",
+      "heuristic_priority": "light",
       "review_status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "review_note": "Version 2 checked against the Foundation locality-descent owner and current Bell/QM status: the coherent-preserving compressed net is defined; locality is separated from state factorization; Bell and temporal-Bell claims are conditional on selected states and instruments; local no-signaling and average entanglement monotonicity are corrected; upper contraction is no longer treated as an entanglement-decay theorem; 10-page PDF visually inspected.",
+      "reviewed_on": "2026-09-11",
+      "review_note": "Version 2 checked against the Foundation locality-descent owner and current Bell/QM status: the coherent-preserving compressed net is defined; locality is separated from state factorization; Bell and temporal-Bell claims are conditional on selected states and instruments; local no-signaling and average entanglement monotonicity are corrected; upper contraction is no longer treated as an entanglement-decay theorem; 10-page PDF visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
       "missing_dimensions": [
         "object_intuition"
       ]
@@ -1189,11 +1213,11 @@
     {
       "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
       "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
-      "total_words": 2479,
-      "narrative_words": 1778,
+      "total_words": 2563,
+      "narrative_words": 1862,
       "formal_results": 8,
       "proofs": 3,
-      "narrative_words_per_result": 222.2,
+      "narrative_words_per_result": 232.8,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -1205,8 +1229,8 @@
       "audit_priority": "reviewed",
       "heuristic_priority": "major",
       "review_status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "review_note": "Deterministic, stochastic, and homogenized roles explained; 9-page PDF visually inspected.",
+      "reviewed_on": "2026-09-11",
+      "review_note": "Deterministic, stochastic, and homogenized roles explained; 9-page PDF visually inspected. September consolidation: retained the existing scoped source-selection clarification, versioned it separately from the released PDF, regenerated Markdown and visually reviewed all pages of the rebuilt PDF. No mathematical result is promoted.",
       "missing_dimensions": []
     },
     {
@@ -1235,11 +1259,11 @@
     {
       "paper_id": "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8",
       "title": "Fixed Points V: Curvature Coupling, Multi-Structure Dynamics, and Admissibility Barriers",
-      "total_words": 2691,
-      "narrative_words": 1890,
+      "total_words": 2777,
+      "narrative_words": 1976,
       "formal_results": 12,
       "proofs": 8,
-      "narrative_words_per_result": 157.5,
+      "narrative_words_per_result": 164.7,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -1251,8 +1275,8 @@
       "audit_priority": "reviewed",
       "heuristic_priority": "major",
       "review_status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "review_note": "Covariance, diagnostic margins, and exit boundaries explained; 8-page PDF visually inspected.",
+      "reviewed_on": "2026-09-11",
+      "review_note": "Covariance, diagnostic margins, and exit boundaries explained; 8-page PDF visually inspected. September consolidation: retained the existing scoped source-selection clarification, versioned it separately from the released PDF, regenerated Markdown and visually reviewed all pages of the rebuilt PDF. No mathematical result is promoted.",
       "missing_dimensions": []
     },
     {
@@ -1482,6 +1506,31 @@
       "review_status": "reviewed",
       "reviewed_on": "2026-07-29",
       "review_note": "Version 2 replaces the claimed completed Born-cosmology unification by an exact common-measure obligation: it proves that non-injective projection does not generate probability and that unconstrained common-source realizations are vacuous; the selected q79 binary recorder is retained at its actual restricted tier; the cosmological and same-source legs remain open; and the four-parameter e-fold family is proved normalizable, unimodal, and exactly pushforwardable without presenting its ansatz inputs or ordinary inflationary-model comparisons as MTT predictions; 9-page PDF visually inspected.",
+      "missing_dimensions": [
+        "orientation"
+      ]
+    },
+    {
+      "paper_id": "locality-coherent-alternatives-and-records-in-mtt",
+      "title": "Locality, Coherent Alternatives, and Physical Records: An Interpretive Account of Quantum Experiments in Modal Triplet Theory",
+      "total_words": 8403,
+      "narrative_words": 8166,
+      "formal_results": 0,
+      "proofs": 0,
+      "narrative_words_per_result": 8166.0,
+      "orientation": false,
+      "object_intuition": true,
+      "argument_flow": true,
+      "result_interpretation": true,
+      "concrete_foothold": true,
+      "limitations": true,
+      "conclusion": true,
+      "coverage_dimensions": 6,
+      "audit_priority": "light",
+      "heuristic_priority": "light",
+      "review_status": "needs_author_review",
+      "reviewed_on": "2026-09-06",
+      "review_note": "New standalone interpretive manuscript. Technical and visual review completed on all 22 pages, with 31 explanatory model checks and 6 publication-artifact checks. The paper separates established experiments, scoped MTT results, and the proposed single-world ontology; preserves canonical recorder/free-net results; imports rather than duplicates theorems; distinguishes one-arm monitoring, particle number, temporal protocols, Bell assumptions, and local-first Wigner reversal. Author approval and any Zenodo release remain pending.",
       "missing_dimensions": [
         "orientation"
       ]
@@ -1748,11 +1797,11 @@
     {
       "paper_id": "modal-triplet-theory-foundations",
       "title": "Modal Triplet Theory: Foundations",
-      "total_words": 6526,
-      "narrative_words": 5720,
+      "total_words": 6689,
+      "narrative_words": 5883,
       "formal_results": 8,
       "proofs": 4,
-      "narrative_words_per_result": 715.0,
+      "narrative_words_per_result": 735.4,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -1764,8 +1813,8 @@
       "audit_priority": "reference_ready",
       "heuristic_priority": "reference_ready",
       "review_status": "reference_ready",
-      "reviewed_on": "2026-07-28",
-      "review_note": "Technical expository reference; context-reviewed, compiled, and visually inspected.",
+      "reviewed_on": "2026-09-11",
+      "review_note": "Technical expository reference; context-reviewed, compiled, and visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
       "missing_dimensions": []
     },
     {
@@ -2621,11 +2670,11 @@
     {
       "paper_id": "the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793",
       "title": "The Book on Modal Triplet Theory An Interpretive Guide How to picture the program, what it has achieved, and what remains open",
-      "total_words": 9949,
-      "narrative_words": 7384,
+      "total_words": 10119,
+      "narrative_words": 7482,
       "formal_results": 0,
       "proofs": 0,
-      "narrative_words_per_result": 7384.0,
+      "narrative_words_per_result": 7482.0,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -2637,8 +2686,8 @@
       "audit_priority": "reference_ready",
       "heuristic_priority": "reference_ready",
       "review_status": "reference_ready",
-      "reviewed_on": "2026-07-28",
-      "review_note": "Interpretation-first reference; no formal theorem blocks; compiled and visually inspected.",
+      "reviewed_on": "2026-09-11",
+      "review_note": "Interpretation-first reference; no formal theorem blocks; compiled and visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
       "missing_dimensions": [
         "concrete_foothold"
       ]
@@ -2861,11 +2910,11 @@
     {
       "paper_id": "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
       "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
-      "total_words": 4352,
-      "narrative_words": 2999,
+      "total_words": 4434,
+      "narrative_words": 3081,
       "formal_results": 18,
       "proofs": 8,
-      "narrative_words_per_result": 166.6,
+      "narrative_words_per_result": 171.2,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -2877,8 +2926,8 @@
       "audit_priority": "reviewed",
       "heuristic_priority": "major",
       "review_status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "review_note": "Relative saturation explained through a derivative-incidence wiring picture and separated from string realization and selection; 14-page PDF visually inspected.",
+      "reviewed_on": "2026-09-11",
+      "review_note": "Relative saturation explained through a derivative-incidence wiring picture and separated from string realization and selection; 14-page PDF visually inspected. September consolidation: retained the existing scoped source-selection clarification, versioned it separately from the released PDF, regenerated Markdown and visually reviewed all pages of the rebuilt PDF. No mathematical result is promoted.",
       "missing_dimensions": []
     },
     {
@@ -3278,11 +3327,11 @@
     {
       "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
       "title": "A Conditional Operator Encoding of Wave-Particle Duality in MTT Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary",
-      "total_words": 18009,
-      "narrative_words": 12757,
-      "formal_results": 34,
-      "proofs": 19,
-      "narrative_words_per_result": 375.2,
+      "total_words": 18035,
+      "narrative_words": 12961,
+      "formal_results": 33,
+      "proofs": 18,
+      "narrative_words_per_result": 392.8,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -3294,8 +3343,8 @@
       "audit_priority": "reviewed",
       "heuristic_priority": "moderate",
       "review_status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "review_note": "Version 5 retains the local/spectral kernel mathematics, distinguishes exact exit time from semigroup-certified time, adds quantum instruments and an exact basin-Born bridge criterion, and makes physical source selection explicit; 57-page PDF visually inspected.",
+      "reviewed_on": "2026-09-11",
+      "review_note": "Version 5 retains the local/spectral kernel mathematics, distinguishes exact exit time from semigroup-certified time, adds quantum instruments and an exact basin-Born bridge criterion, and makes physical source selection explicit; 57-page PDF visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
       "missing_dimensions": []
     },
     {

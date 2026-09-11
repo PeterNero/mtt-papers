@@ -9,11 +9,11 @@ abstract: |
   We also separate existence, local rigidity, uniqueness within a declared candidate class, physical selection, and empirical adequacy. The current selected q=79 arithmetic theorem supplies an exact finite branch, but the physical visible-hidden Hull–Strominger endpoints, the remaining seven rows of the twelve-row worldsheet contract, and an all-scale nonperturbative completion remain open. Program B5 therefore provides a rigorous language and a finite indecomposability test for unified encodings. It does not derive string theory, a numerical critical dimension, or the physical selection of a saturated universe.
 author:
 - Peter Nero
-current_version: v4
-date: July 2026 Version 4
-generated_from_main_tex_sha256: 295ecec094f2b6a5d02b3049aebb6dbf8d7dd775ccb01ea0d3e0912a2be64254
+current_version: v5
+date: September 2026 Version 5
+generated_from_main_tex_sha256: 7ebf375feeedf8244f3bf1ab430c44d3a1b2a9ccf50cd91a14a3d857cc4fdb2b
 paper_id: the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v4
 title: |
   The Modal Triplet Theory Program B5:
@@ -23,6 +23,10 @@ zenodo_doi: 10.5281/zenodo.21718246
 zenodo_record_id: 21718246
 zenodo_url: "https://zenodo.org/records/21718246"
 ---
+
+# Version 5 Revision Note
+
+**Supersedes.** Version 4, which remains the released edition. **Reason and resolution.** Distinguishes the local Circle–Lens–Nil carrier taxonomy from the global q79 geometry. **Retained results.** The previous mathematical results and proofs are unchanged. **Boundary.** This is a contextual clarification in an unreleased revision, not a new physical-source theorem.
 
 # Revision note for version 4
 
@@ -73,6 +77,8 @@ Readers interested in the exact mathematical contribution can move from the cont
 # Scope and Dependencies
 
 Program B5 begins after the typed intersection theory of Program B4. It does not infer a unified theory directly from the words circle, lens, and nil. Program A0 supplies typed reductions, quotient relations, and factorization criteria . Program B0 treats circle, lens, and nil as useful but nonexhaustive obstruction profiles . Programs B1–B3 state the additional geometric, gauge, and quantum data needed before those profiles become physical theories . Program B4 defines a common realization locus and separates compatibility, local rigidity, persistence, and global uniqueness .
+
+These Circle–Lens–Nil profiles are not a global topology and are not identified with the selected q79 Fu–Yau/Hull–Strominger compactification. They remain a local obstruction and carrier taxonomy unless an explicit global realization map is supplied.
 
 The question addressed here is narrower:
 

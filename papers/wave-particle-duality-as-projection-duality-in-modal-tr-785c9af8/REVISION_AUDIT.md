@@ -1,5 +1,15 @@
 # Revision Audit
 
+## September 2026 Current-Version Delta (v6)
+
+- Supersedes: v5; no Zenodo record changed.
+- Reason: Import the corrected sharp-limit theorem with its boundary domain.
+- Resolution: Imports the corrected sharp-limit statement and removes its duplicated proof.
+- Ownership: Readable consumer of the canonical-kernel theorem; no duplicate proof body.
+- Retained: valid scoped results and examples, without physical promotion.
+- Remaining: future source integration and author release approval.
+
+
 ## Current Delta
 
 - Reclassified projection duality as a conditional operator encoding rather than a

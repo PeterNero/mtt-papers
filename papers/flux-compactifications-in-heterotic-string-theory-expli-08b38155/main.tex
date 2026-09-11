@@ -40,7 +40,7 @@
 Lens--Nil Geometries:\\
 Bundle Obstructions and a \(q=79\) Fu--Yau Completion Contract}
 \author{Peter Nero}
-\date{July 2026, Version 4}
+\date{September 2026, Version 5}
 
 \begin{document}
 \maketitle
@@ -65,6 +65,14 @@ Hull--Strominger compactification.  We finish by separating the exact
 physical rank-three problem, and state a typed completion contract for a
 future Fu--Yau endpoint.
 \end{abstract}
+
+\section*{Version 5 Revision Note}
+\noindent\textbf{Supersedes.} Version 4, which remains the released edition.
+\textbf{Reason and resolution.} Incorporates the new local q79 response
+certificates and the correction separating a fixed-fiber Picard test from
+the global BHT obstruction. \textbf{Retained results.} The Iwasawa audit and
+typed compactification contract are unchanged. \textbf{Boundary.} The new
+certificates do not construct the selected common physical endpoint.
 
 \tableofcontents
 
@@ -479,7 +487,7 @@ physical Hull--Strominger compactification.  The literal
 Fu--Yau candidate; distinct topology cannot be erased by assigning the same
 interpretive labels.
 
-\section{The current q79 evidence and its exact scope}
+\section{Baseline q79 evidence and its exact scope}
 \label{sec:q79}
 
 The failure of the old Iwasawa bundle does not return the broader MTT program
@@ -553,6 +561,56 @@ W1 & Exact heterotic worldsheet and modular/factorization data
 \bottomrule
 \end{tabular}
 \end{center}
+
+\subsection{September update: local observability and the global obstruction}
+
+The baseline above is not an exhaustive inventory of the later q79 research.
+There is now a full selected $164\times164$ local Gauss--Manin coefficient
+source with a certified correlated lift on $0\leq u\leq2^{-96}$.
+Separately, the completed same-source affine Deligne test proves
+$\beta_C(B89)\neq0$. Thus B89 is rejected from the zero locus; neither the
+small local interval nor that rejection determines the global answer for
+every other cover. These results narrow an actual construction problem
+without changing the ranks or carriers of the baseline HYM theorems.
+
+One correction is particularly important for subsequent searches.
+The non-torsion calculation at an initial Picard point on one genus-82
+fiber does not compute the full global BHT obstruction. CBF~T69 retracts
+the attempted global exclusion of ranks $1$ through $1449$.
+The fixed-fiber calculation survives, while the global rank-one and
+rank-two alternatives remain undecided. The valid implication that an
+actual rank-$r$ twisted spectral object requires $r\beta_C=0$ must be
+applied to that global class, not to a substitute evaluated at one fiber.
+
+The newer response certificates explain why comparing several fibers is
+useful. CBF~T70 finds rank $70$ for one coefficient evaluation of a
+$122$-dimensional projective tangent space, leaving a $52$-dimensional
+kernel. CBF~T71--T72 instead recover rank $122$ from three evaluations.
+T72 proves the characteristic-zero statement at the three physical
+midpoints and preserves the coefficient rank on independent boxes
+$|s_i-1/2|\leq2^{-32}$, with certified Neumann defect below $0.199$.
+
+CBF~T73 supplies the canonical-dual response at those midpoints.
+K3 adjunction identifies the quotient
+$H^0(\mathcal O(9H))/\langle F\rangle$ with an $82$-dimensional canonical
+space. The three bilinear blocks are invertible and have total rank $246$;
+postcomposition preserves the coefficient rank $122$. This last bilinear
+invertibility is a midpoint result, not yet a certificate over the whole
+three-panel boxes. In particular, none of these coefficient ranks is
+silently identified with the derivative of the nonlinear global
+Picard/BHT restriction map.
+
+All statements in this update are imported from the frozen
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/result_manifest.json}{curated result manifest at commit f141a20e},
+including the records
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_framed_member_spectral_rank_exclusion/artifact.json}{CBF T69 (corrected global-rank scope)},
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_physical_midpoint_three_evaluation_frame/artifact.json}{CBF T72 (three-evaluation frame)}, and
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_physical_canonical_dual_response_observability/artifact.json}{CBF T73 (canonical-dual response)}.
+The certificates and their original proofs remain the theorem owners.
+The next bridge is to certify the finite-trace bilinear over all three
+panels, complete global transport and the integral readout, and evaluate
+the actual global obstruction. The common HYM/Hull--Strominger endpoint
+and its physical overlaps still require the remaining rows below.
 
 \section{A typed completion theorem}
 \label{sec:contract}

@@ -15,6 +15,13 @@ contains only the Version 4 delta; this audit retains the earlier history.
 This is a provenance and presentation correction, not a critical-dimension,
 worldsheet-completion, or physical-selection theorem.
 
+## Corpus coherence reconciliation, 2026-08-02
+
+The selected TeX now states the paper-specific `C.GEO.01` boundary explicitly:
+Circle--Lens--Nil is a local obstruction/carrier taxonomy, not a global
+topology and not the selected q79 Fu--Yau/Hull--Strominger compactification.
+This clarification preserves the saturation theorems and their declared scope.
+
 ## v3 publication delta
 
 - **Supersedes:** v2.

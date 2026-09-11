@@ -1,5 +1,15 @@
 # Book v11 Interpretive Release Audit
 
+## September 2026 Current-Version Delta (v12)
+
+- Supersedes: v11; no Zenodo record changed.
+- Reason: Narrow the Book's fixed-point and stationary-noise wording.
+- Resolution: Explains supplied-model hypotheses, stabilization and recurrence without adding theorems.
+- Ownership: Interpretive synthesis only.
+- Retained: valid scoped results and examples, without physical promotion.
+- Remaining: future source integration and author release approval.
+
+
 ## v11 publication delta
 
 - **Supersedes:** v10.

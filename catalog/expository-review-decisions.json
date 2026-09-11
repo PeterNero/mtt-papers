@@ -1,6 +1,26 @@
 {
   "schema": "mtt.expository-review-decisions.v1",
   "papers": {
+    "locality-coherent-alternatives-and-records-in-mtt": {
+      "status": "needs_author_review",
+      "reviewed_on": "2026-09-06",
+      "reviewer_kind": "assistant_editorial_and_artifact_review",
+      "note": "New standalone interpretive manuscript. Technical and visual review completed on all 22 pages, with 31 explanatory model checks and 6 publication-artifact checks. The paper separates established experiments, scoped MTT results, and the proposed single-world ontology; preserves canonical recorder/free-net results; imports rather than duplicates theorems; distinguishes one-arm monitoring, particle number, temporal protocols, Bell assumptions, and local-first Wigner reversal. Author approval and any Zenodo release remain pending.",
+      "reviewed_main_tex_sha256": "3b4b684061ccc70355858af985bf1a58bd952f0f9897955f30733b59ec0d2f7d",
+      "reviewed_pdf_sha256": "6f234eeebbf74ad78c331b06a056a05c00a5d6e78934891bac1a2a2107072135",
+      "reviewed_source_tree_sha256": "70a64bc2a9279d944fa78b51bd75add1d84f6423d668e46f3b69549099c257fc",
+      "author_review_required": true,
+      "release_authorized": false
+    },
+    "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows": {
+      "status": "reviewed",
+      "reviewed_on": "2026-09-11",
+      "note": "Version 1 is a new canonical theorem-owner paper. It derives the covariant residual Hessian, exact-zero normal square, repair flow, tangent Hodge semigroup, cohesive twist cancellation, Maurer-Cartan repair, Hodge/Green/kernel package, nonlinear Cech descent, compatible projection, and complete repair jet in one standalone explanatory chain. It includes the nonzero-defect correction, the exact stratified Green blow-up witness, and a theorem-level separation of positive repair from signed physical action through Helmholtz, multiplier, and cyclic-action results. It applies the chain only to the q79 Hartshorne-Serre cohesive benchmark, keeps physical V3/W9 selection, HYM metric, full action, Lorentzian domains, and continuum-to-finite transport open, includes reproducibility references and a version-provenance audit, and the complete 21-page PDF was visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
+      "reviewed_main_tex_sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30",
+      "reviewed_pdf_sha256": "2dfeedea800ffb22c112640c7863981b87e4bee700d020e8311d71148134eeee",
+      "reviewed_source_tree_sha256": "d5d291ac864599bfa9983bd964690f8b3f59dd0ef98aae70431883a20075406e",
+      "release_authorized": false
+    },
     "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1": {
       "status": "reviewed",
       "reviewed_on": "2026-07-31",
@@ -115,11 +135,12 @@
     },
     "flux-compactifications-in-heterotic-string-theory-expli-08b38155": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "note": "Rebuilt as a rigorous audit: the local Iwasawa balanced geometry is retained with corrected torsion, the nonclosed Chern datum and nonintegrable Dolbeault matrix are exposed, the unique minimal repair is proved gauge-redundant and non-simple, the former Bianchi/generation/Yukawa claims are withdrawn, Lens-Nil is reclassified as auxiliary, and the q79 Fu-Yau completion gates are stated at their current tiers; exact verifier passes, managed result references are current, and the 12-page PDF was visually inspected.",
-      "reviewed_main_tex_sha256": "1ced1fa62136d291d0e58bd033f68c42cd51c3086f56236c94c2080b9387d461",
-      "reviewed_pdf_sha256": "4f9ae09d3e8ad9f1eed3b9a2ea7dadeffd06f9c82920c362f68d1fa7eb5726d6",
-      "reviewed_source_tree_sha256": "0a40e02ff1119244b5f7e66224ffa617d14c6f88e4a01abe4d6707e1ab31c604"
+      "reviewed_on": "2026-09-11",
+      "note": "Version 5 preserves the Iwasawa and Lens-Nil audit and adds the September q79 reconciliation in context: the full 164-dimensional local certificate, B89 candidate rejection, T69 retraction of the unsupported global rank exclusion, T70-T72 evaluation ranks, and T73 midpoint-only canonical-dual composition. Local coefficients, fixed-fiber points and the actual global Picard/BHT obstruction are explicitly separated. Frozen public result links accompany the new discussion. All 13 rebuilt pages were rendered and visually inspected; no physical endpoint or Zenodo release is claimed.",
+      "release_authorized": false,
+      "reviewed_main_tex_sha256": "6661702d6e38f645126c40cde66f2d92e745c214ed6422290f02cebc178a5b50",
+      "reviewed_pdf_sha256": "cd55d441415e8ce392a7dfb58360a67f121e81d78f226e6f253e052c6f88d51d",
+      "reviewed_source_tree_sha256": "09f9afd4291096b52f917b3dacfd66ba804594dac92ee4579d52553b5e8ac3be"
     },
     "a-projection-first-reframing-of-quantum-gravity": {
       "status": "reviewed",
@@ -275,19 +296,21 @@
     },
     "the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793": {
       "status": "reference_ready",
-      "reviewed_on": "2026-07-28",
-      "note": "Interpretation-first reference; no formal theorem blocks; compiled and visually inspected.",
-      "reviewed_main_tex_sha256": "4deac85014c21ba07ce28614828fe0fb3c0b42e08e3ba58749c69584ef229f53",
-      "reviewed_pdf_sha256": "70fb322051ae610780e4dfe21018f50a34ff1306c8460c32b9612a58299453fb",
-      "reviewed_source_tree_sha256": "95401ff2a6f99aa81ea54d21d905fec7db8909cf3942830069a7776b9858bc5f"
+      "reviewed_on": "2026-09-11",
+      "note": "Interpretation-first reference; no formal theorem blocks; compiled and visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
+      "reviewed_main_tex_sha256": "a8e2c5278f48f5757bae2f2f36e9effe785a1634f1f13c2630cbe63b2dd88597",
+      "reviewed_pdf_sha256": "349564c21f4fbb8355b45fd512800a9f08a50da236a9c587e36920b193d56b6f",
+      "reviewed_source_tree_sha256": "1ab50598a2a47dcf3529fb6d4e252f032a72e552ecfbc1497bb3863732e47f83",
+      "release_authorized": false
     },
     "modal-triplet-theory-foundations": {
       "status": "reference_ready",
-      "reviewed_on": "2026-07-28",
-      "note": "Technical expository reference; context-reviewed, compiled, and visually inspected.",
-      "reviewed_main_tex_sha256": "022af297246466a9fa22832d262d9057aa0a320bf76523b899e3c55c963c7ec6",
-      "reviewed_pdf_sha256": "8bc712f06b738429d59b140e571ebe5814f6e4d60e07277da8eec2ac12d58fc3",
-      "reviewed_source_tree_sha256": "ba640da274c464f5229d612449dc5b76e663646ba280481519c6082ab9b4559e"
+      "reviewed_on": "2026-09-11",
+      "note": "Technical expository reference; context-reviewed, compiled, and visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
+      "reviewed_main_tex_sha256": "8fa740c7a0777ef191aeb0302b43d62e2a43b5aa291fe888ffc6f912e4f57fae",
+      "reviewed_pdf_sha256": "2b5af97fd9121c2c209793ad481b56356f41255bbdce718fe02c075950ebc55a",
+      "reviewed_source_tree_sha256": "a00789d4973ab75f48ad6da5591ae6b0a846b2c5e3d8aba759c4562dfb965bca",
+      "release_authorized": false
     },
     "fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce": {
       "status": "reviewed",
@@ -307,11 +330,12 @@
     },
     "fixed-points-iii-disturbance-damping-balance-and-stability": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "note": "Deterministic, stochastic, and homogenized roles explained; 9-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "fc008122ca171de64b6d409349bdfa4716bd372cfb524f8ed408936e73eac480",
-      "reviewed_pdf_sha256": "a018b2617656fe7227bf93eb7069681054897c5b35d5d46a2140bb9907709c75",
-      "reviewed_source_tree_sha256": "c458f07fe535e5b332a8f173a0dd00da4460ea1e14eb7c9b96250b7b32edd49b"
+      "reviewed_on": "2026-09-11",
+      "note": "Deterministic, stochastic, and homogenized roles explained; 9-page PDF visually inspected. September consolidation: retained the existing scoped source-selection clarification, versioned it separately from the released PDF, regenerated Markdown and visually reviewed all pages of the rebuilt PDF. No mathematical result is promoted.",
+      "reviewed_main_tex_sha256": "8c06687a6bd689dab772d14c996e1f99c9393b0871d3a28138643f8336cee1a2",
+      "reviewed_pdf_sha256": "5bb703930150c02350d80c35b9fda8e5fcdf26504a39be25ab7509b9a8253425",
+      "reviewed_source_tree_sha256": "516dc166a8850c75de87e9072b0d27e50f0fc86f5988d717b2d3a1e2abe6a76c",
+      "release_authorized": false
     },
     "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce": {
       "status": "reviewed",
@@ -323,11 +347,12 @@
     },
     "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "note": "Covariance, diagnostic margins, and exit boundaries explained; 8-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "4e014f3af6686d3e4af042e3ae923fd3021bb09ad74d323207db0d676b0499ed",
-      "reviewed_pdf_sha256": "24523849592ecd78dd55695b3e3fb9ce8ea658defe68bf3be979a1ff6a470cec",
-      "reviewed_source_tree_sha256": "302483fd70fd458b4040172f42e2b0a6568a3ab7cc6ae78075452a920a6ea30a"
+      "reviewed_on": "2026-09-11",
+      "note": "Covariance, diagnostic margins, and exit boundaries explained; 8-page PDF visually inspected. September consolidation: retained the existing scoped source-selection clarification, versioned it separately from the released PDF, regenerated Markdown and visually reviewed all pages of the rebuilt PDF. No mathematical result is promoted.",
+      "reviewed_main_tex_sha256": "557f94317cc54929ddc803b9d4c36959096c780c10c8f0b15b560727a4db9988",
+      "reviewed_pdf_sha256": "b93c246dff3ad768c4d9b4a733d8aab5c53b3c053c9c981351479bbf5ae679b3",
+      "reviewed_source_tree_sha256": "d64a86ef83f9dfddb8e67123c2eac192b023d0376ae2bd51e4ad9d60c2aff2a4",
+      "release_authorized": false
     },
     "fixed-points-vi-formal-synthesis-and-physical-interpretations": {
       "status": "reviewed",
@@ -411,11 +436,12 @@
     },
     "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "note": "Relative saturation explained through a derivative-incidence wiring picture and separated from string realization and selection; 14-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "295ecec094f2b6a5d02b3049aebb6dbf8d7dd775ccb01ea0d3e0912a2be64254",
-      "reviewed_pdf_sha256": "0e23ef86559bfcc9015a71c9b849a58669860f1b236675682c55db463f4e98d0",
-      "reviewed_source_tree_sha256": "bd16b676a3b7d012d8c7f97b7784d175877d1a745aadd670d3aa7e23496f131b"
+      "reviewed_on": "2026-09-11",
+      "note": "Relative saturation explained through a derivative-incidence wiring picture and separated from string realization and selection; 14-page PDF visually inspected. September consolidation: retained the existing scoped source-selection clarification, versioned it separately from the released PDF, regenerated Markdown and visually reviewed all pages of the rebuilt PDF. No mathematical result is promoted.",
+      "reviewed_main_tex_sha256": "7ebf375feeedf8244f3bf1ab430c44d3a1b2a9ccf50cd91a14a3d857cc4fdb2b",
+      "reviewed_pdf_sha256": "267eae8f383c8f11e3dfbff4751066861887141d13779877339a2af357c786a7",
+      "reviewed_source_tree_sha256": "60bef840394fd299e3366efcfaf8822d07fc3a359a1b9666edf70e58b8c5eee8",
+      "release_authorized": false
     },
     "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c": {
       "status": "reviewed",
@@ -707,11 +733,12 @@
     },
     "entanglement-locality-and-measurement-from-coherent-sec-110e8cbe": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Version 2 checked against the Foundation locality-descent owner and current Bell/QM status: the coherent-preserving compressed net is defined; locality is separated from state factorization; Bell and temporal-Bell claims are conditional on selected states and instruments; local no-signaling and average entanglement monotonicity are corrected; upper contraction is no longer treated as an entanglement-decay theorem; 10-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "43857ab4b9efbd06603cde2a8a84496589f01d112fa949428482926eb9538980",
-      "reviewed_pdf_sha256": "50d7e7778590814d92c8ca53943f1da63dcf5530a0fc5fdba5820a51e3e6884e",
-      "reviewed_source_tree_sha256": "869b7c3673241220135ab3859c8cd667b68b64497bbdc9decea3874daa75db26"
+      "reviewed_on": "2026-09-11",
+      "note": "Version 2 checked against the Foundation locality-descent owner and current Bell/QM status: the coherent-preserving compressed net is defined; locality is separated from state factorization; Bell and temporal-Bell claims are conditional on selected states and instruments; local no-signaling and average entanglement monotonicity are corrected; upper contraction is no longer treated as an entanglement-decay theorem; 10-page PDF visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
+      "reviewed_main_tex_sha256": "613bdba3208c4022ddec9e3cc0f4a1b77b3ca80d4f4bb38343aeb562d4d14886",
+      "reviewed_pdf_sha256": "aa935f40691a51a266db356f44959372329d061cdccd80c5bf1075db857b1420",
+      "reviewed_source_tree_sha256": "d3ad0f9a5b390e28b4777222093f3b32b86759277c32e6ba0629865e9f54c199",
+      "release_authorized": false
     },
     "deterministic-projection-diffusive-limits-and-knee-like-a0b81ad7": {
       "status": "reviewed",
@@ -803,19 +830,21 @@
     },
     "canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "note": "Version 1 replaces the universal delta-replacement claim by an exact typed projected heat-kernel theorem, proves harmonic-projector degeneracy and gap estimates, and requires explicit intertwiners plus symmetry, support, gauge and measurement compatibility before physical reuse; 10-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "54abab1f209b263464450b4c6873b0b22713195eb43c7022ee91438ce7d36c7f",
-      "reviewed_pdf_sha256": "0c3237fb0d39ccb2e606b10c3266c17492d03ff8b364c94b7e52f8127306a52c",
-      "reviewed_source_tree_sha256": "a080a716debd7cc8d53282126b0607c0d235df4e3a8aa503e292b6ef9136fdaa"
+      "reviewed_on": "2026-09-11",
+      "note": "Version 1 replaces the universal delta-replacement claim by an exact typed projected heat-kernel theorem, proves harmonic-projector degeneracy and gap estimates, and requires explicit intertwiners plus symmetry, support, gauge and measurement compatibility before physical reuse; 10-page PDF visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
+      "reviewed_main_tex_sha256": "a6372b278314f9f2f27c459905cd31808b848e577a5b0e255d980a6d2ac8dfb9",
+      "reviewed_pdf_sha256": "218a21e3fcafab7e801055d62a9c1eac03cc570054031d8be587284c71154ddd",
+      "reviewed_source_tree_sha256": "bd037fda3c515ade43b61a4b64384ec854f04b913b608f221c09fbab6219752b",
+      "release_authorized": false
     },
     "coherent-green-functions-replacing-point-sources-by-adm-98607519": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "note": "Version 1 retains exact elliptic spectral and heat-filtered Green-function convergence while separating band-limited sources from physical source selection, causal propagation, gauge/BRST consistency, locality and renormalization; 12-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "55041b3beddd6e57ff9324dceed9c0c51b7e81f4671f5c86bd2c9fe803ee9881",
-      "reviewed_pdf_sha256": "f23a7aa38b881f2302d74e5487ef1cb4b3a557cff7ee223f3262c363d50c9886",
-      "reviewed_source_tree_sha256": "a269f6fcca37e1fddd556a6f7d3cd4bd7060ee0290d1280aa6de960399a3b57d"
+      "reviewed_on": "2026-09-11",
+      "note": "Version 1 retains exact elliptic spectral and heat-filtered Green-function convergence while separating band-limited sources from physical source selection, causal propagation, gauge/BRST consistency, locality and renormalization; 12-page PDF visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
+      "reviewed_main_tex_sha256": "f12bec1462e36962fa0f73f6c6bf0f13e8f2cb400d6f5a5a2a22cac1e81313c1",
+      "reviewed_pdf_sha256": "ab4dcd3c55f249ca6c6423677e5ceaee9bc9e0c26178d41d3dc10214fa40adb6",
+      "reviewed_source_tree_sha256": "8cbbbd4e28ed1c3e441568ee29afd5113ea9fabe1394e4459191f1d997dedfe8",
+      "release_authorized": false
     },
     "gauge-fixing-as-admissible-section-selection-in-modal-t-459e029d": {
       "status": "reviewed",
@@ -875,11 +904,12 @@
     },
     "deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "note": "Version 1 distinguishes exact exit time from the earliest time certified by an exponential semigroup estimate, proves equality for a reducing self-adjoint generator, and leaves physical source selection explicit; 10-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "797bcbcd71276505665fd2872493b945abf73a4052d9c09c4829b2debe2f3470",
-      "reviewed_pdf_sha256": "8b66667063f69bf7c45c460a1a6148b581f2f9c9f91c3dc2a65121ccefea2696",
-      "reviewed_source_tree_sha256": "b119022c17985c53b871e4339bb765a2d91e059518aafe7620c58f64880f33f9"
+      "reviewed_on": "2026-09-11",
+      "note": "Version 1 distinguishes exact exit time from the earliest time certified by an exponential semigroup estimate, proves equality for a reducing self-adjoint generator, and leaves physical source selection explicit; 10-page PDF visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
+      "reviewed_main_tex_sha256": "de26334048c3cf82082c72858737053ea63d3b33f16165304027e4b7958822cc",
+      "reviewed_pdf_sha256": "13e924f6c92585d22fde0279512910bb65602cb8068e77607e695aaa4848264e",
+      "reviewed_source_tree_sha256": "bad44e5dde4b46d947a282875e57b91701738d0deb13046e401ae5e687bbae17",
+      "release_authorized": false
     },
     "path-integral-constraints-as-finite-admissibility-filte-47c01009": {
       "status": "reviewed",
@@ -899,11 +929,12 @@
     },
     "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "note": "Version 5 retains the local/spectral kernel mathematics, distinguishes exact exit time from semigroup-certified time, adds quantum instruments and an exact basin-Born bridge criterion, and makes physical source selection explicit; 57-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "58bdbc6d6d2a7eebb1cab8fe154aac7969f1eacd7db3a3561b20898125d956c5",
-      "reviewed_pdf_sha256": "4a387a856a070c9d6464dcc58fe45fa5b2f11ba657eb9ffa79aeeb2449924e14",
-      "reviewed_source_tree_sha256": "239c4e20ca00359f676a877e29ef54e426fb2481595baeac3241d4b66a25bee5"
+      "reviewed_on": "2026-09-11",
+      "note": "Version 5 retains the local/spectral kernel mathematics, distinguishes exact exit time from semigroup-certified time, adds quantum instruments and an exact basin-Born bridge criterion, and makes physical source selection explicit; 57-page PDF visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
+      "reviewed_main_tex_sha256": "76f0a8dd61c68e43e2e15da7634429b9d5365e979a69d2fa6f5705667b1dc58a",
+      "reviewed_pdf_sha256": "5071f7c3a257dc6f4ddd707ad9790d2aaee5a374a3efd0c05fe735b594e9575c",
+      "reviewed_source_tree_sha256": "f922cf73d97b4bf4f69553b92ee6e268986e075fed1c9c6de431a10c00dcd549",
+      "release_authorized": false
     },
     "coherence-capacity-as-the-invariant-admissibility-margi-423433d4": {
       "status": "reviewed",

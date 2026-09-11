@@ -1,10 +1,10 @@
 {
   "counts": {
-    "canonical_papers": 139,
-    "current_sources_newer_than_release": 0,
+    "canonical_papers": 141,
+    "current_sources_newer_than_release": 11,
     "pandoc_warning_papers": 12,
     "papers_with_zenodo_release": 138,
-    "papers_without_zenodo_match": 1,
+    "papers_without_zenodo_match": 3,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
     "zenodo_records": 279,
@@ -19,8 +19,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v5",
-      "date": "July 2026, Version 5",
+      "current_version": "v6",
+      "date": "September 2026, Version 6",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.21704911",
         "created": "2026-07-30T14:02:29.297622+00:00",
@@ -46,23 +46,23 @@
         "updated": "2026-07-30T14:02:29.640775+00:00",
         "version": "v5"
       },
-      "main_tex_sha256": "58bdbc6d6d2a7eebb1cab8fe154aac7969f1eacd7db3a3561b20898125d956c5",
+      "main_tex_sha256": "76f0a8dd61c68e43e2e15da7634429b9d5365e979a69d2fa6f5705667b1dc58a",
       "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
-      "paper_md_sha256": "bb661aae05c6e68f29625b33ba7bab3265160542e7b4381e6f875ca6d6e9b806",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "1a6518ce87789d5ed830d0b36d8863c7abf133bdb0444c72863b8367c8a9000d",
+      "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "2cfdff01a2bbbe3733ad63aa16e207f871c2c4f7d37caf20804beecb17f8554f",
+        "revision_evidence_sha256": "cda616ca17c3a832a0cb6da177c086bbe07022b0c6ea7fe524b1a9e9a1ab98f3",
         "selected_revision": true,
         "superseded_source_path": "5 Dirac Delta/_work/Wave__Particle_Duality_as_Projection_Duality_in_Modal_Triplet_Theory_v4"
       },
       "source_provenance": {
         "legacy_source_path": "5 Dirac Delta/_work/Wave__Particle_Duality_as_Projection_Duality_in_Modal_Triplet_Theory_v4"
       },
-      "source_tree_sha256": "239c4e20ca00359f676a877e29ef54e426fb2481595baeac3241d4b66a25bee5",
+      "source_tree_sha256": "f922cf73d97b4bf4f69553b92ee6e268986e075fed1c9c6de431a10c00dcd549",
       "title": "A Conditional Operator Encoding of Wave-Particle Duality in MTT Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.21704911",
@@ -825,8 +825,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1",
-      "date": "July 2026, Version 1",
+      "current_version": "v2",
+      "date": "September 2026, Version 2",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.21704669",
         "created": "2026-07-30T13:44:39.356368+00:00",
@@ -852,23 +852,23 @@
         "updated": "2026-07-30T13:44:39.861980+00:00",
         "version": "v1"
       },
-      "main_tex_sha256": "797bcbcd71276505665fd2872493b945abf73a4052d9c09c4829b2debe2f3470",
+      "main_tex_sha256": "de26334048c3cf82082c72858737053ea63d3b33f16165304027e4b7958822cc",
       "paper_id": "deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3",
-      "paper_md_sha256": "d09b8c2937c0e1213a4925fda76bb8ea0bf15144aa4fbf8f8ba5be010b05ebe7",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "c1415ecb3dae7aa9af831d283b73749fcd7fde214c54753e8bca44987e8de791",
+      "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "655bb6d1dddc8679f4322f49e0227043eac599b1ff69d528af15169d09412525",
+        "revision_evidence_sha256": "34340ba8d552a2e0b6b7cb78d5b1bbcfb15c013800bd78a964fc05ac517a2f44",
         "selected_revision": true,
         "superseded_source_path": "5 Dirac Delta/_work/Deriving_the_MTT_Coherence_Scale_from_Fixed__Point_Damping"
       },
       "source_provenance": {
         "legacy_source_path": "5 Dirac Delta/_work/Deriving_the_MTT_Coherence_Scale_from_Fixed__Point_Damping"
       },
-      "source_tree_sha256": "b119022c17985c53b871e4339bb765a2d91e059518aafe7620c58f64880f33f9",
+      "source_tree_sha256": "bad44e5dde4b46d947a282875e57b91701738d0deb13046e401ae5e687bbae17",
       "title": "Admissibility-Time Bounds from Fixed-Point Damping Exact Exit Times, Certified Proper-Time Filters, and the MTT Source Boundary",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.21704669",
@@ -1215,8 +1215,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v4",
-      "date": "July 2026, Version 4",
+      "current_version": "v5",
+      "date": "September 2026, Version 5",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.17072372",
         "created": "2026-07-30T15:20:09.617485+00:00",
@@ -1234,7 +1234,7 @@
         ],
         "id": "21705964",
         "match_kind": "published_draft_reconciliation",
-        "match_score": 1.0,
+        "match_score": 1,
         "publication_date": "2026-07-30",
         "record_url": "https://zenodo.org/records/21705964",
         "resource_type": "publication",
@@ -1242,10 +1242,10 @@
         "updated": "2026-07-30T15:20:10.331271+00:00",
         "version": "v4"
       },
-      "main_tex_sha256": "1ced1fa62136d291d0e58bd033f68c42cd51c3086f56236c94c2080b9387d461",
+      "main_tex_sha256": "6661702d6e38f645126c40cde66f2d92e745c214ed6422290f02cebc178a5b50",
       "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
-      "paper_md_sha256": "599a0d3e7afe72b00da78fc62730b8bdbb1ab7f3d6357b25b61edd40f84664b9",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "7087bf855b9ee87902a0125caddc56395f53335e5c859c8fdb1671ae84f987c5",
+      "release_state": "current_revised_tex",
       "result_refs": [
         "hym_wiener_contraction",
         "literal_cech_witness",
@@ -1254,16 +1254,16 @@
       ],
       "revision": {
         "revision_evidence_path": "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "32c57c2c738d8eae8003ad5ee067c30cd48c97a1383174908434b47a3ea1dc14",
+        "revision_evidence_sha256": "4c1428e4236f3ca58fdf141023b7c4551bd0939ebdfadb3e01705aff1f824f17",
         "selected_revision": true,
         "superseded_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Flux_Compactifications_in_Heterotic_String_Theory_v3"
       },
       "source_provenance": {
         "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Flux_Compactifications_in_Heterotic_String_Theory_v3"
       },
-      "source_tree_sha256": "0a40e02ff1119244b5f7e66224ffa617d14c6f88e4a01abe4d6707e1ab31c604",
+      "source_tree_sha256": "09f9afd4291096b52f917b3dacfd66ba804594dac92ee4579d52553b5e8ac3be",
       "title": "Auditing Heterotic Flux Compactifications on Iwasawa and Lens\u2013Nil Geometries: Bundle Obstructions and a q=79 Fu\u2013Yau Completion Contract",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.17072372",
@@ -1282,7 +1282,7 @@
           ],
           "id": "21705964",
           "match_kind": "published_draft_reconciliation",
-          "match_score": 1.0,
+          "match_score": 1,
           "publication_date": "2026-07-30",
           "record_url": "https://zenodo.org/records/21705964",
           "resource_type": "publication",
@@ -1307,7 +1307,7 @@
           ],
           "id": "18205997",
           "match_kind": "title_or_file",
-          "match_score": 1.0,
+          "match_score": 1,
           "publication_date": "2026-01-10",
           "record_url": "https://zenodo.org/records/18205997",
           "resource_type": "publication",
@@ -2603,8 +2603,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1",
-      "date": "July 2026, Version 1",
+      "current_version": "v2",
+      "date": "September 2026, Version 2",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.21703914",
         "created": "2026-07-30T12:54:48.475622+00:00",
@@ -2630,23 +2630,23 @@
         "updated": "2026-07-30T12:54:48.787855+00:00",
         "version": "v1"
       },
-      "main_tex_sha256": "55041b3beddd6e57ff9324dceed9c0c51b7e81f4671f5c86bd2c9fe803ee9881",
+      "main_tex_sha256": "f12bec1462e36962fa0f73f6c6bf0f13e8f2cb400d6f5a5a2a22cac1e81313c1",
       "paper_id": "coherent-green-functions-replacing-point-sources-by-adm-98607519",
-      "paper_md_sha256": "f47b3f45a2d22de8186165812d9acbcafdbb1632acfe4b09c43c434d52e4d383",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "4d77add1fc53418fbae8623d0357be4bffaf842a41b3d875ca0a81931414f05d",
+      "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/coherent-green-functions-replacing-point-sources-by-adm-98607519/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "7b491fc003c964e0e6387f0cc2d596290aff93c30d19743cf5eb47d7e84bf874",
+        "revision_evidence_sha256": "7940e96a5dbe69627d3a78d60e41f2e3eb84566a5346e1996f2e3f243912bd75",
         "selected_revision": true,
         "superseded_source_path": "5 Dirac Delta/_work/Coherent_Green_Functions__Replacing_Point_Sources_by_Admissible_Kernels_in_Modal_Triplet_Theory"
       },
       "source_provenance": {
         "legacy_source_path": "5 Dirac Delta/_work/Coherent_Green_Functions__Replacing_Point_Sources_by_Admissible_Kernels_in_Modal_Triplet_Theory"
       },
-      "source_tree_sha256": "a269f6fcca37e1fddd556a6f7d3cd4bd7060ee0290d1280aa6de960399a3b57d",
+      "source_tree_sha256": "8cbbbd4e28ed1c3e441568ee29afd5113ea9fabe1394e4459191f1d997dedfe8",
       "title": "Coherent Green Functions from Declared Projection Kernels Elliptic Results and the MTT Source Boundary",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.21703914",
@@ -2881,6 +2881,48 @@
           "version": "v1.0"
         }
       ]
+    },
+    {
+      "abstract": "Modal Triplet Theory repeatedly uses fixed points, positive Hessians, heat kernels, coherent projectors, and perturbative graphs. These objects have often appeared as neighboring constructions without one theorem stating their exact common source. This paper supplies that theorem at the structural tier. Begin with a nonlinear defect section Phi on a metric configuration space and the positive repair cost C = 1/2 ||Phi||^2. Its negative gradient is closure repair. At a zero-defect fixed point the Hessian is exactly the normal operator D Phi^dagger D Phi; its heat semigroup, Green operator, spectral projectors, local kernel, and complete finite repair-vertex jet are then different mathematical shadows of the same linearized source. At a nonzero-defect critical point an additional covariant residual term is present, so the normal-square formula cannot be used without qualification. The construction is extended to local Cech descent and to an alpha-twisted cohesive module. The projective twist cancels in the endomorphism algebra, the Maurer-Cartan curvature F(a) = da + a^2 gives a canonical nonlinear repair residual, and a chosen Hermitian structure yields the Hodge operator and tangent heat flow. An exact stratified example shows simultaneously that the full cohesive operator may remain regular while every uniform fiberwise Green operator diverges across a cohomology-rank jump. Compatible isometric intertwiners transport the repair flow, functional calculus, projectors, kernels, and formal graph coefficients. The paper also proves the necessary boundary. A positive repair square is not a signed physical action. It loses first-order sign, phase, Morse index, causal support, and generally the physical interaction vertices. A direct action requires a variational anchor satisfying Helmholtz conditions; a universal multiplier lift always exists; and a cyclic Maurer-Cartan source admits a Chern-Simons-type signed action. For the q79 program, the cohesive Hartshorne-Serre benchmark closes the structural chain exactly after a Hermitian choice. Selection of the physical V3/W9 endpoint, its HYM metric, full Hull-Strominger action, Lorentzian domains, and the continuum-to-finite intertwiner remain open. Thus closure repair explains why the operator and kernel language should recur, without promoting that recurrence into a completed theory of dynamics or quantization.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v2",
+      "date": "September 2026, Version 2",
+      "latest_zenodo_release": null,
+      "main_tex_sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "paper_md_sha256": "9becf69a2f414d9f60abd9baa411171f6b14e116ff9e0afcd6d41ae13c754403",
+      "release_state": "current_revised_tex",
+      "result_refs": [
+        "local_cech_hilbert_descent",
+        "local_closure_repair_descent",
+        "preprojection_covariant_residual_hessian",
+        "preprojection_h4_cyclic_mc_action_descent",
+        "preprojection_h4_q79_string_cyclic_cotangent",
+        "preprojection_h4_variational_anchor_multiplier_lift",
+        "preprojection_nonzero_defect_hessian_witness",
+        "preprojection_repair_jet_graph_functor",
+        "preprojection_reversible_dissipative_repair",
+        "q79_cohesive_superconnection",
+        "q79_maurer_cartan_repair"
+      ],
+      "revision": {
+        "revision_evidence_path": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "51192fbf3e3d52d30a2f198f495728a80403b9cce4603e3fad906255c00fd3b9",
+        "selected_revision": true
+      },
+      "source_provenance": {
+        "legacy_source_path": "repository-native/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "repository_native_path": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "results_snapshot": "ba0874012246bb930677ebfa6f0a6eb33a57a8f0"
+      },
+      "source_tree_sha256": "d5d291ac864599bfa9983bd964690f8b3f59dd0ef98aae70431883a20075406e",
+      "title": "Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary",
+      "version_relation": "unreleased_new_paper",
+      "zenodo_releases": []
     },
     {
       "abstract": "Sol\u00e8r's theorem classifies an orthomodular generalized Hilbert space containing an infinite orthonormal sequence as a real, complex, or quaternionic Hilbert space. This classification does not by itself select the complex field. We add a separate finite-composition requirement: a system of dimension d over the selected field has the full self-adjoint matrix space as its unnormalized state/effect space; a composite of dimensions a and b has dimension ab over the same field; and independent product effects are tomographically complete. The resulting dimension identity holds for complex Hermitian matrices and fails, by explicit nonzero defects, for real symmetric and quaternionic Hermitian matrices whenever a and b are both greater than one. Complex Hilbert space is therefore rigid within this declared reconstruction class. The conclusion is conditional and representation-sensitive: complex quantum theory can be realified by adjoining an orthogonal complex-structure operator, and alternative composite rules fall outside the theorem. Applied to MTT, the result identifies exact missing premises rather than deriving them. The current q79 finite quantum model and finite complex polarization are compatible with the complex branch, but MTT has not yet sourced the required infinite orthogonality and standard locally tomographic composition from one physical upper construction.",
@@ -4317,8 +4359,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v2",
-      "date": "July 2026, Version 2",
+      "current_version": "v3",
+      "date": "September 2026, Version 3",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18261392",
         "created": "2026-07-29T08:50:28.993871+00:00",
@@ -4344,23 +4386,23 @@
         "updated": "2026-07-29T08:50:29.475318+00:00",
         "version": "v2"
       },
-      "main_tex_sha256": "43857ab4b9efbd06603cde2a8a84496589f01d112fa949428482926eb9538980",
+      "main_tex_sha256": "613bdba3208c4022ddec9e3cc0f4a1b77b3ca80d4f4bb38343aeb562d4d14886",
       "paper_id": "entanglement-locality-and-measurement-from-coherent-sec-110e8cbe",
-      "paper_md_sha256": "94836afa02a924c87a824450b00a4039db1fdb161fa009ed2065c36cc31c910e",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "a0aa6c3ef7ef0fa6066fca857e265d9b62f3c812d1ff5bbc8117f8853f3a8a9e",
+      "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "REVISION_AUDIT.md",
-        "revision_evidence_sha256": "84b96c8a8209b9364e804cb2d370f56edfbc937f9ef4ed4d5a8486db972893f0",
+        "revision_evidence_sha256": "203615f1938a6610ec55f9c14ca4e52e2ff075843b3f6551b85a2b14f16a053f",
         "selected_revision": true,
         "superseded_source_path": "9 Bell, Entanglement & Time/_work/Entanglement__Locality__and_Measurement_from_Coherent_Sector_Dynamics"
       },
       "source_provenance": {
         "legacy_source_path": "9 Bell, Entanglement & Time/_work/Entanglement__Locality__and_Measurement_from_Coherent_Sector_Dynamics"
       },
-      "source_tree_sha256": "869b7c3673241220135ab3859c8cd667b68b64497bbdc9decea3874daa75db26",
+      "source_tree_sha256": "d3ad0f9a5b390e28b4777222093f3b32b86759277c32e6ba0629865e9f54c199",
       "title": "Entanglement, Locality, and Measurement from Coherent Sector Dynamics",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.18261392",
@@ -5518,8 +5560,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v5",
-      "date": "July 2026 Version 5",
+      "current_version": "v6",
+      "date": "September 2026 Version 6",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.16949280",
         "created": "2026-07-29T08:50:35.316982+00:00",
@@ -5537,7 +5579,7 @@
         ],
         "id": "21655371",
         "match_kind": "published_draft_reconciliation",
-        "match_score": 1.0,
+        "match_score": 1,
         "publication_date": "2026-07-29",
         "record_url": "https://zenodo.org/records/21655371",
         "resource_type": "publication",
@@ -5545,23 +5587,23 @@
         "updated": "2026-07-29T08:50:35.802432+00:00",
         "version": "v5"
       },
-      "main_tex_sha256": "fc008122ca171de64b6d409349bdfa4716bd372cfb524f8ed408936e73eac480",
+      "main_tex_sha256": "8c06687a6bd689dab772d14c996e1f99c9393b0871d3a28138643f8336cee1a2",
       "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
-      "paper_md_sha256": "37eb4fc8bfe2ac77727687fdd5fd2cc3d3133b2a5b1ea85ee1b07765bef027d0",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "a3790afc726e43f57380c463ce9b13a1bc1bf9885f6c5c492224a64d6f63131b",
+      "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_III_V4_REVISION_AUDIT.md",
-        "revision_evidence_sha256": "f76766dde812980b1b5de7b99464565011c7dda3c309cd84e932f21f42e80de1",
+        "revision_evidence_sha256": "14e57120534c944ebd5f7dfde4d1d6744612d66bc006d99d91be74bdf62ca8d6",
         "selected_revision": true,
         "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v3"
       },
       "source_provenance": {
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v4"
       },
-      "source_tree_sha256": "c458f07fe535e5b332a8f173a0dd00da4460ea1e14eb7c9b96250b7b32edd49b",
+      "source_tree_sha256": "516dc166a8850c75de87e9072b0d27e50f0fc86f5988d717b2d3a1e2abe6a76c",
       "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.16949280",
@@ -5580,7 +5622,7 @@
           ],
           "id": "21655371",
           "match_kind": "published_draft_reconciliation",
-          "match_score": 1.0,
+          "match_score": 1,
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21655371",
           "resource_type": "publication",
@@ -5605,7 +5647,7 @@
           ],
           "id": "21650395",
           "match_kind": "published_draft_reconciliation",
-          "match_score": 1.0,
+          "match_score": 1,
           "publication_date": "2026-07-28",
           "record_url": "https://zenodo.org/records/21650395",
           "resource_type": "publication",
@@ -5630,7 +5672,7 @@
           ],
           "id": "18202941",
           "match_kind": "title_or_file",
-          "match_score": 1.0,
+          "match_score": 1,
           "publication_date": "2026-01-09",
           "record_url": "https://zenodo.org/records/18202941",
           "resource_type": "publication",
@@ -5776,8 +5818,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v7",
-      "date": "July 2026 Version 7",
+      "current_version": "v8",
+      "date": "September 2026 Version 8",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.16949503",
         "created": "2026-07-29T08:50:51.494193+00:00",
@@ -5795,7 +5837,7 @@
         ],
         "id": "21655379",
         "match_kind": "published_draft_reconciliation",
-        "match_score": 1.0,
+        "match_score": 1,
         "publication_date": "2026-07-29",
         "record_url": "https://zenodo.org/records/21655379",
         "resource_type": "publication",
@@ -5803,23 +5845,23 @@
         "updated": "2026-07-29T08:50:52.349661+00:00",
         "version": "v7"
       },
-      "main_tex_sha256": "4e014f3af6686d3e4af042e3ae923fd3021bb09ad74d323207db0d676b0499ed",
+      "main_tex_sha256": "557f94317cc54929ddc803b9d4c36959096c780c10c8f0b15b560727a4db9988",
       "paper_id": "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8",
-      "paper_md_sha256": "53af70cc5af499cec765c37c6c96879c3facb24022469985b5c7eca91e27ef8b",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "d88cce5c5a5332031b7159da33d64487a30c8805e17f265fed5ce3225d89f370",
+      "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_V_V6_REVISION_AUDIT.md",
-        "revision_evidence_sha256": "bc3e1be8930a3fb1492bbe5079b5f638e232edf9b4e1efece42b2553d5c98788",
+        "revision_evidence_sha256": "eae8daecf6c36825665f5643d82fd0fe703b6ae1c586190ef2c83e48a23c3e21",
         "selected_revision": true,
         "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v5"
       },
       "source_provenance": {
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v6"
       },
-      "source_tree_sha256": "302483fd70fd458b4040172f42e2b0a6568a3ab7cc6ae78075452a920a6ea30a",
+      "source_tree_sha256": "d64a86ef83f9dfddb8e67123c2eac192b023d0376ae2bd51e4ad9d60c2aff2a4",
       "title": "Fixed Points V: Curvature Coupling, Multi-Structure Dynamics, and Admissibility Barriers",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.16949503",
@@ -5838,7 +5880,7 @@
           ],
           "id": "21655379",
           "match_kind": "published_draft_reconciliation",
-          "match_score": 1.0,
+          "match_score": 1,
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21655379",
           "resource_type": "publication",
@@ -5863,7 +5905,7 @@
           ],
           "id": "21650468",
           "match_kind": "published_draft_reconciliation",
-          "match_score": 1.0,
+          "match_score": 1,
           "publication_date": "2026-07-28",
           "record_url": "https://zenodo.org/records/21650468",
           "resource_type": "publication",
@@ -5888,7 +5930,7 @@
           ],
           "id": "18200121",
           "match_kind": "title_or_file",
-          "match_score": 1.0,
+          "match_score": 1,
           "publication_date": "2026-01-09",
           "record_url": "https://zenodo.org/records/18200121",
           "resource_type": "publication",
@@ -7064,6 +7106,53 @@
           "version": "v1.0"
         }
       ]
+    },
+    {
+      "abstract": "Quantum experiments are often explained with words that change meaning during the explanation: locality becomes Bell factorization, a coherent alternative becomes another actual object, and a state update becomes a physical influence. This paper develops a qualified vocabulary and an interpretation-first account of the relevant experiments within Modal Triplet Theory. Beginning with individual photons and electrons, it distinguishes path coherence, localized detection, detector entanglement, one-arm monitoring, null records, many-particle effects, delayed conditioning, temporal correlations, and Bell nonfactorizability. It then connects these distinctions to a local-first constraint interpretation: actual events and records are generated by physical processes, while coherent source relations constrain their possible continuations. No fundamental universal wavefunction, additional spacelike source shortcut, or privileged role for consciousness is assumed. The account incorporates existing scoped MTT results on the canonical record measure, free local field algebra, compatible local descent, compression leakage, and the non-entailment of an ontology from operational data. Wigner\u2019s friend is analyzed through separate record-reading and coherent-reversal protocols, with actuality without automatic dephasing identified as an interpretive commitment rather than a derived universal law. The contribution is a unified conceptual account with reproducible finite examples, not a new derivation of every quantum experiment or a claim that the remaining physical apparatus and actualization problems are solved.",
+      "author_review_required": true,
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v1",
+      "date": "Version 1.0, 6 September 2026 Unpublished interpretive manuscript",
+      "latest_zenodo_release": null,
+      "main_tex_sha256": "3b4b684061ccc70355858af985bf1a58bd952f0f9897955f30733b59ec0d2f7d",
+      "manuscript_status": "unpublished_interpretive_manuscript",
+      "paper_id": "locality-coherent-alternatives-and-records-in-mtt",
+      "paper_md_sha256": "72e01d56c79b73e7fd812795c7da9ebeb441fbbc7ea4929abd06f5cb8971e16a",
+      "release_state": "not_matched_to_zenodo",
+      "result_refs": [
+        "causal_base_constraint_compression_leakage_packet",
+        "local_cech_hilbert_descent",
+        "local_closure_repair_descent",
+        "q79_continuum_recorder_compiler",
+        "q79_fock_output_measure",
+        "q79_free_dirac_car_net",
+        "q79_minimal_recorder_action",
+        "q79_ontology_nonentailment",
+        "q79_projective_record_descent"
+      ],
+      "revision": {
+        "revision_evidence_path": "papers/locality-coherent-alternatives-and-records-in-mtt/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "b17150019d1f6a781661b15b1c8db422145584311586dee0cd179290e5de080b",
+        "selected_revision": false
+      },
+      "source_provenance": {
+        "legacy_source_path": "repository-native/locality-coherent-alternatives-and-records-in-mtt",
+        "predecessor_handoffs": [
+          "19e36028-6259-4b72-8f46-2b7f8900ac4d",
+          "5ca75fa1-438b-4e6f-a4d4-c66d4e26725d",
+          "f7dc5a48-b425-4094-bd5c-58366a691a94"
+        ],
+        "repository_native_path": "papers/locality-coherent-alternatives-and-records-in-mtt",
+        "results_snapshot": "db79bcebec12da558eef22f11ae7bbe8171fb595"
+      },
+      "source_tree_sha256": "70a64bc2a9279d944fa78b51bd75add1d84f6423d668e46f3b69549099c257fc",
+      "title": "Locality, Coherent Alternatives, and Physical Records: An Interpretive Account of Quantum Experiments in Modal Triplet Theory",
+      "version_relation": "unknown",
+      "zenodo_releases": []
     },
     {
       "abstract": "This paper develops an interpretive comparison between loop quantum gravity (LQG) and the coherent fixed-point sector of Modal Triplet Theory (MTT). The comparison is useful, but it is not a derivation of LQG from projection. Fixed-point stability, finite survivor sectors, compact reuse channels, and noninvertible projection suggest why graph-based states and discrete labels can be effective descriptions of coherent geometry. They do not by themselves construct the Ashtekar\u2013Barbero phase space, the holonomy\u2013flux algebra, the Ashtekar\u2013Lewandowski state, area and volume operators, quantum constraints, or spin-foam amplitudes. Those objects require the explicit canonical and representation data stated in the companion technical paper. In particular, the Barbero\u2013Immirzi parameter is selected by MTT only if the same four-dimensional source that fixes the parity-even gravitational action also emits a normalized parity-odd Holst coefficient. That coefficient is currently open. The result is a disciplined shadow dictionary: it identifies a plausible overlap regime, explains what fixed-point geometry contributes, and gives concrete conditions under which the analogy would become a mathematical embedding.",
@@ -9101,8 +9190,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v9",
-      "date": "July 2026 Version 9",
+      "current_version": "v10",
+      "date": "September 2026, Version 10",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.16949762",
         "created": "2026-07-29T08:51:20.203508+00:00",
@@ -9128,23 +9217,23 @@
         "updated": "2026-07-29T08:51:20.648443+00:00",
         "version": "v9"
       },
-      "main_tex_sha256": "022af297246466a9fa22832d262d9057aa0a320bf76523b899e3c55c963c7ec6",
+      "main_tex_sha256": "8fa740c7a0777ef191aeb0302b43d62e2a43b5aa291fe888ffc6f912e4f57fae",
       "paper_id": "modal-triplet-theory-foundations",
-      "paper_md_sha256": "8bc47d1d0768d023189d62dab71169035d579ec1d25ddb6c4d36d55a82c6abe0",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "11d886069ed567bb124edde4d0e4f60607b8197e894a2a7067a398223df33577",
+      "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V8_SHARED_LINE_REVISION_AUDIT.md",
-        "revision_evidence_sha256": "dc55df4de2b082785180b8c244d6ad757151a931862d89e740b176ed3f6a414c",
+        "revision_evidence_sha256": "d437e04a894cbf3a283973ce5be5ec4f260b52402b659ed7c1d6a04e0ff3a34a",
         "selected_revision": true,
         "superseded_source_path": "3 Core Foundations/_work/Modal_Triplet_Theory__Foundation_v6 (1)"
       },
       "source_provenance": {
         "legacy_source_path": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__Foundation_v8"
       },
-      "source_tree_sha256": "ba640da274c464f5229d612449dc5b76e663646ba280481519c6082ab9b4559e",
+      "source_tree_sha256": "a00789d4973ab75f48ad6da5591ae6b0a846b2c5e3d8aba759c4562dfb965bca",
       "title": "Modal Triplet Theory: Foundations",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.16949762",
@@ -9738,8 +9827,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v1",
-      "date": "July 2026, Version 1",
+      "current_version": "v2",
+      "date": "September 2026, Version 2",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.21703906",
         "created": "2026-07-30T12:54:41.649671+00:00",
@@ -9765,23 +9854,23 @@
         "updated": "2026-07-30T12:54:42.346504+00:00",
         "version": "v1"
       },
-      "main_tex_sha256": "54abab1f209b263464450b4c6873b0b22713195eb43c7022ee91438ce7d36c7f",
+      "main_tex_sha256": "a6372b278314f9f2f27c459905cd31808b848e577a5b0e255d980a6d2ac8dfb9",
       "paper_id": "canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62",
-      "paper_md_sha256": "d35d57d299c24a8b1395c6f934dc77c36967f3561b81cfe0d3f67088970007c5",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "9ba548e504cc29c4e8ec782e2e40840675c2c1f9f9fd91b553d3964225db0129",
+      "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "e2d04279c57b97b229bfb831831f9aaff9e831b959b6822e97437f9b24031da2",
+        "revision_evidence_sha256": "eda4d1495bb4c8260e3184898d56c42b249f2748d64add692bc1c071f772f565",
         "selected_revision": true,
         "superseded_source_path": "5 Dirac Delta/_work/Canonical_Coherent_Kernels_from_MTT_Fixed_Point_Data"
       },
       "source_provenance": {
         "legacy_source_path": "5 Dirac Delta/_work/Canonical_Coherent_Kernels_from_MTT_Fixed_Point_Data"
       },
-      "source_tree_sha256": "a080a716debd7cc8d53282126b0607c0d235df4e3a8aa503e292b6ef9136fdaa",
+      "source_tree_sha256": "bd037fda3c515ade43b61a4b64384ec854f04b913b608f221c09fbab6219752b",
       "title": "Projected Heat Kernels from MTT Fixed-Point Data Conditional Sector Identities and the Physical-Replacement Boundary",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.21703906",
@@ -10984,8 +11073,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v11",
-      "date": "July 2026 Version 11",
+      "current_version": "v12",
+      "date": "September 2026, Version 12",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.17162671",
         "created": "2026-07-29T08:51:43.416541+00:00",
@@ -11011,23 +11100,23 @@
         "updated": "2026-07-29T08:51:44.146058+00:00",
         "version": "v11"
       },
-      "main_tex_sha256": "4deac85014c21ba07ce28614828fe0fb3c0b42e08e3ba58749c69584ef229f53",
+      "main_tex_sha256": "a8e2c5278f48f5757bae2f2f36e9effe785a1634f1f13c2630cbe63b2dd88597",
       "paper_id": "the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793",
-      "paper_md_sha256": "43c70cc36afafb5334215392b199d4e5160dad440cad7b91ccad8403e2702ba3",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "05916eaf384814268213a173420e28d3b25d000a735408597d0cd11f0970da35",
+      "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "10 The Book on Modal Triplet Theory/BOOK_V10_CURRENT_CORPUS_RECONCILIATION_AUDIT_2026-07-15.md",
-        "revision_evidence_sha256": "36f1717cb42742253bf7712a5600888c90cfde73feb242033f13a86472a4f971",
+        "revision_evidence_sha256": "8c844b65b399daff064e72a075f5169748c31e117f36b7cc3842f5e3a2109ad3",
         "selected_revision": true,
         "superseded_source_path": "10 The Book on Modal Triplet Theory/_work/The_Book_on_Modal_Triplet_Theory_v9"
       },
       "source_provenance": {
         "legacy_source_path": "10 The Book on Modal Triplet Theory/revised_tex_vnext/The_Book_on_Modal_Triplet_Theory_v10"
       },
-      "source_tree_sha256": "95401ff2a6f99aa81ea54d21d905fec7db8909cf3942830069a7776b9858bc5f",
+      "source_tree_sha256": "1ab50598a2a47dcf3529fb6d4e252f032a72e552ecfbc1497bb3863732e47f83",
       "title": "The Book on Modal Triplet Theory An Interpretive Guide How to picture the program, what it has achieved, and what remains open",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.17162671",
@@ -11974,8 +12063,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v4",
-      "date": "July 2026 Version 4",
+      "current_version": "v5",
+      "date": "September 2026 Version 5",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.18355129",
         "created": "2026-07-31T09:14:02.121131+00:00",
@@ -11993,7 +12082,7 @@
         ],
         "id": "21718246",
         "match_kind": "published_draft_reconciliation",
-        "match_score": 1.0,
+        "match_score": 1,
         "publication_date": "2026-07-31",
         "record_url": "https://zenodo.org/records/21718246",
         "resource_type": "publication",
@@ -12001,25 +12090,25 @@
         "updated": "2026-07-31T09:14:02.573501+00:00",
         "version": "v4"
       },
-      "main_tex_sha256": "295ecec094f2b6a5d02b3049aebb6dbf8d7dd775ccb01ea0d3e0912a2be64254",
+      "main_tex_sha256": "7ebf375feeedf8244f3bf1ab430c44d3a1b2a9ccf50cd91a14a3d857cc4fdb2b",
       "paper_id": "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
-      "paper_md_sha256": "a8a866661e0c873be6fd100aafec031875a1ef96a73b4667fd0134179e8d5eaf",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "b82d493d4acbce0a1e5bd59d7707520d8ef53d07823efaf3a76c636524c610df",
+      "release_state": "current_revised_tex",
       "result_refs": [
         "q79_exact_theorem"
       ],
       "revision": {
         "revision_evidence_path": "papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "0655e28c0605ba38bc300ce873ce1cc83d2f3cc570f774fc96108a521a679d46",
+        "revision_evidence_sha256": "905a1e147b631171f06c13743725401f563ed7fb3d53b4822e36c9f33f18ff6a",
         "selected_revision": true,
         "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings"
       },
       "source_provenance": {
         "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings"
       },
-      "source_tree_sha256": "bd16b676a3b7d012d8c7f97b7784d175877d1a745aadd670d3aa7e23496f131b",
+      "source_tree_sha256": "60bef840394fd299e3366efcfaf8822d07fc3a359a1b9666edf70e58b8c5eee8",
       "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.18355129",
@@ -12038,7 +12127,7 @@
           ],
           "id": "21718246",
           "match_kind": "published_draft_reconciliation",
-          "match_score": 1.0,
+          "match_score": 1,
           "publication_date": "2026-07-31",
           "record_url": "https://zenodo.org/records/21718246",
           "resource_type": "publication",
@@ -12063,7 +12152,7 @@
           ],
           "id": "21655386",
           "match_kind": "published_draft_reconciliation",
-          "match_score": 1.0,
+          "match_score": 1,
           "publication_date": "2026-07-29",
           "record_url": "https://zenodo.org/records/21655386",
           "resource_type": "publication",
@@ -12088,7 +12177,7 @@
           ],
           "id": "21650889",
           "match_kind": "published_draft_reconciliation",
-          "match_score": 1.0,
+          "match_score": 1,
           "publication_date": "2026-07-28",
           "record_url": "https://zenodo.org/records/21650889",
           "resource_type": "publication",
@@ -12113,7 +12202,7 @@
           ],
           "id": "18355130",
           "match_kind": "title_or_file",
-          "match_score": 1.0,
+          "match_score": 1,
           "publication_date": "2026-01-23",
           "record_url": "https://zenodo.org/records/18355130",
           "resource_type": "publication",

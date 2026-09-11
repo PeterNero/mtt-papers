@@ -1,0 +1,65 @@
+{
+  "abstract": "Modal Triplet Theory repeatedly uses fixed points, positive Hessians, heat kernels, coherent projectors, and perturbative graphs. These objects have often appeared as neighboring constructions without one theorem stating their exact common source. This paper supplies that theorem at the structural tier. Begin with a nonlinear defect section Phi on a metric configuration space and the positive repair cost C = 1/2 ||Phi||^2. Its negative gradient is closure repair. At a zero-defect fixed point the Hessian is exactly the normal operator D Phi^dagger D Phi; its heat semigroup, Green operator, spectral projectors, local kernel, and complete finite repair-vertex jet are then different mathematical shadows of the same linearized source. At a nonzero-defect critical point an additional covariant residual term is present, so the normal-square formula cannot be used without qualification. The construction is extended to local Cech descent and to an alpha-twisted cohesive module. The projective twist cancels in the endomorphism algebra, the Maurer-Cartan curvature F(a) = da + a^2 gives a canonical nonlinear repair residual, and a chosen Hermitian structure yields the Hodge operator and tangent heat flow. An exact stratified example shows simultaneously that the full cohesive operator may remain regular while every uniform fiberwise Green operator diverges across a cohomology-rank jump. Compatible isometric intertwiners transport the repair flow, functional calculus, projectors, kernels, and formal graph coefficients. The paper also proves the necessary boundary. A positive repair square is not a signed physical action. It loses first-order sign, phase, Morse index, causal support, and generally the physical interaction vertices. A direct action requires a variational anchor satisfying Helmholtz conditions; a universal multiplier lift always exists; and a cyclic Maurer-Cartan source admits a Chern-Simons-type signed action. For the q79 program, the cohesive Hartshorne-Serre benchmark closes the structural chain exactly after a Hermitian choice. Selection of the physical V3/W9 endpoint, its HYM metric, full Hull-Strominger action, Lorentzian domains, and the continuum-to-finite intertwiner remain open. Thus closure repair explains why the operator and kernel language should recur, without promoting that recurrence into a completed theory of dynamics or quantization.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v2",
+  "date": "September 2026, Version 2",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30",
+  "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+  "paper_md_sha256": "9becf69a2f414d9f60abd9baa411171f6b14e116ff9e0afcd6d41ae13c754403",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "local_cech_hilbert_descent",
+    "local_closure_repair_descent",
+    "preprojection_covariant_residual_hessian",
+    "preprojection_h4_cyclic_mc_action_descent",
+    "preprojection_h4_q79_string_cyclic_cotangent",
+    "preprojection_h4_variational_anchor_multiplier_lift",
+    "preprojection_nonzero_defect_hessian_witness",
+    "preprojection_repair_jet_graph_functor",
+    "preprojection_reversible_dissipative_repair",
+    "q79_cohesive_superconnection",
+    "q79_maurer_cartan_repair"
+  ],
+  "revision": {
+    "revision_evidence_path": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "51192fbf3e3d52d30a2f198f495728a80403b9cce4603e3fad906255c00fd3b9",
+    "selected_revision": true
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 474259,
+      "path": "main.pdf",
+      "sha256": "2dfeedea800ffb22c112640c7863981b87e4bee700d020e8311d71148134eeee"
+    },
+    {
+      "bytes": 57445,
+      "path": "main.tex",
+      "sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30"
+    },
+    {
+      "bytes": 4744,
+      "path": "main.bib",
+      "sha256": "01b0c5b5d91ba4d26e719973af8bda739be4e2cfb310aa30419b8a5ec1293fdb"
+    },
+    {
+      "bytes": 3676,
+      "path": "series.sty",
+      "sha256": "d850b60db401996d33e22cafbe1f89180e4f5581dd2a4024b84d8ac403795533"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "repository-native/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+    "repository_native_path": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+    "results_snapshot": "ba0874012246bb930677ebfa6f0a6eb33a57a8f0"
+  },
+  "source_tree_sha256": "d5d291ac864599bfa9983bd964690f8b3f59dd0ef98aae70431883a20075406e",
+  "title": "Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary",
+  "version_relation": "unreleased_new_paper",
+  "zenodo_releases": []
+}

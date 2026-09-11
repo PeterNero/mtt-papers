@@ -1,5 +1,15 @@
 # Foundation v9 Release and Expository Audit
 
+## September 2026 Current-Version Delta (v10)
+
+- Supersedes: v9; no Zenodo record changed.
+- Reason: Condition algebraic tangency before promoting it to flow invariance.
+- Resolution: Uses actual flow invariance and states sufficient mild-realization hypotheses for tangency.
+- Ownership: Import the mild-invariance criterion from Fixed Points I rather than reproducing it.
+- Retained: valid scoped results and examples, without physical promotion.
+- Remaining: future source integration and author release approval.
+
+
 ## v9 publication delta
 
 - **Supersedes:** v8.

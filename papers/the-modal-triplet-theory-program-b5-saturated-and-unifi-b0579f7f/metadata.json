@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v4",
-  "date": "July 2026 Version 4",
+  "current_version": "v5",
+  "date": "September 2026 Version 5",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18355129",
     "created": "2026-07-31T09:14:02.121131+00:00",
@@ -24,7 +24,7 @@
     ],
     "id": "21718246",
     "match_kind": "published_draft_reconciliation",
-    "match_score": 1.0,
+    "match_score": 1,
     "publication_date": "2026-07-31",
     "record_url": "https://zenodo.org/records/21718246",
     "resource_type": "publication",
@@ -32,16 +32,16 @@
     "updated": "2026-07-31T09:14:02.573501+00:00",
     "version": "v4"
   },
-  "main_tex_sha256": "295ecec094f2b6a5d02b3049aebb6dbf8d7dd775ccb01ea0d3e0912a2be64254",
+  "main_tex_sha256": "7ebf375feeedf8244f3bf1ab430c44d3a1b2a9ccf50cd91a14a3d857cc4fdb2b",
   "paper_id": "the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f",
-  "paper_md_sha256": "7c3f475d2188ec88f2db6aa3f254cf867f1fcc1e504acbdee4e0db1d4b5fe57d",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "b82d493d4acbce0a1e5bd59d7707520d8ef53d07823efaf3a76c636524c610df",
+  "release_state": "current_revised_tex",
   "result_refs": [
     "q79_exact_theorem"
   ],
   "revision": {
     "revision_evidence_path": "papers/the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "0655e28c0605ba38bc300ce873ce1cc83d2f3cc570f774fc96108a521a679d46",
+    "revision_evidence_sha256": "905a1e147b631171f06c13743725401f563ed7fb3d53b4822e36c9f33f18ff6a",
     "selected_revision": true,
     "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings"
   },
@@ -53,19 +53,19 @@
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 435060,
+      "bytes": 437203,
       "path": "main.pdf",
-      "sha256": "0e23ef86559bfcc9015a71c9b849a58669860f1b236675682c55db463f4e98d0"
+      "sha256": "267eae8f383c8f11e3dfbff4751066861887141d13779877339a2af357c786a7"
     },
     {
-      "bytes": 36903,
+      "bytes": 37596,
       "path": "main.tex",
-      "sha256": "295ecec094f2b6a5d02b3049aebb6dbf8d7dd775ccb01ea0d3e0912a2be64254"
+      "sha256": "7ebf375feeedf8244f3bf1ab430c44d3a1b2a9ccf50cd91a14a3d857cc4fdb2b"
     },
     {
-      "bytes": 12766,
+      "bytes": 13122,
       "path": "REVISION_AUDIT.md",
-      "sha256": "0655e28c0605ba38bc300ce873ce1cc83d2f3cc570f774fc96108a521a679d46"
+      "sha256": "905a1e147b631171f06c13743725401f563ed7fb3d53b4822e36c9f33f18ff6a"
     },
     {
       "bytes": 3784,
@@ -76,9 +76,9 @@
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_B5__Saturated_and_Unified_Encodings"
   },
-  "source_tree_sha256": "bd16b676a3b7d012d8c7f97b7784d175877d1a745aadd670d3aa7e23496f131b",
+  "source_tree_sha256": "60bef840394fd299e3366efcfaf8822d07fc3a359a1b9666edf70e58b8c5eee8",
   "title": "The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18355129",
@@ -97,7 +97,7 @@
       ],
       "id": "21718246",
       "match_kind": "published_draft_reconciliation",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-07-31",
       "record_url": "https://zenodo.org/records/21718246",
       "resource_type": "publication",
@@ -122,7 +122,7 @@
       ],
       "id": "21655386",
       "match_kind": "published_draft_reconciliation",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-07-29",
       "record_url": "https://zenodo.org/records/21655386",
       "resource_type": "publication",
@@ -147,7 +147,7 @@
       ],
       "id": "21650889",
       "match_kind": "published_draft_reconciliation",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-07-28",
       "record_url": "https://zenodo.org/records/21650889",
       "resource_type": "publication",
@@ -172,7 +172,7 @@
       ],
       "id": "18355130",
       "match_kind": "title_or_file",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-01-23",
       "record_url": "https://zenodo.org/records/18355130",
       "resource_type": "publication",

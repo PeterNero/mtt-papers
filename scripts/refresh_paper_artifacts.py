@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
+import re
 
 from migrate import (
     build_markdown,
@@ -21,6 +22,14 @@ UNMATCHED_PATH = ROOT / "catalog" / "unmatched-zenodo-records.json"
 ZENODO_PATH = ROOT / "catalog" / "zenodo-records.json"
 REPORT_PATH = ROOT / "catalog" / "migration-report.json"
 CONFIG_PATH = ROOT / "config" / "migration.json"
+TEX_MANAGED_BEGIN = "% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE"
+MD_MANAGED_BEGIN = "<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->"
+MD_MANAGED_END = "<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->"
+EVIDENCE_HEADING_RE = re.compile(
+    r"^(#{1,6}) Computational Evidence and Reproducibility\s*$",
+    re.MULTILINE,
+)
+NEXT_HEADING_RE = re.compile(r"^#{1,6} \S", re.MULTILINE)
 
 
 def catalog_row(metadata: dict) -> dict:
@@ -29,6 +38,32 @@ def catalog_row(metadata: dict) -> dict:
         for key, value in metadata.items()
         if key not in {"schema", "source_files"}
     }
+
+
+def restore_managed_markdown_markers(directory: Path, main_tex: Path) -> None:
+    tex_text = main_tex.read_text(encoding="utf-8-sig", errors="replace")
+    if TEX_MANAGED_BEGIN not in tex_text:
+        return
+    markdown_path = directory / "paper.md"
+    markdown = markdown_path.read_text(encoding="utf-8-sig", errors="replace")
+    if MD_MANAGED_BEGIN in markdown:
+        return
+    heading = EVIDENCE_HEADING_RE.search(markdown)
+    if heading is None:
+        raise ValueError(
+            f"{directory.name}: TeX has managed computational evidence but "
+            "the generated Markdown lacks its section"
+        )
+    next_heading = NEXT_HEADING_RE.search(markdown, heading.end())
+    section_end = next_heading.start() if next_heading is not None else len(markdown)
+    prefix = markdown[: heading.start()].rstrip()
+    section = markdown[heading.start() : section_end].strip()
+    suffix = markdown[section_end:].lstrip()
+    rebuilt = (
+        f"{prefix}\n\n{MD_MANAGED_BEGIN}\n{section}\n{MD_MANAGED_END}\n"
+        + (f"\n{suffix}" if suffix else "")
+    )
+    markdown_path.write_text(rebuilt, encoding="utf-8", newline="\n")
 
 
 def refresh_one(paper_id: str, *, sync_descriptive_metadata: bool = False) -> dict:
@@ -60,6 +95,8 @@ def refresh_one(paper_id: str, *, sync_descriptive_metadata: bool = False) -> di
         latest if isinstance(latest, dict) else None,
         str(metadata.get("date") or ""),
     )
+    restore_managed_markdown_markers(directory, main_tex)
+    paper_md_hash = sha256_file(directory / "paper.md")
 
     source_files = []
     for row in metadata["source_files"]:

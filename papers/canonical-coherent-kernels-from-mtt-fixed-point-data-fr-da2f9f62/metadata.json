@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1",
-  "date": "July 2026, Version 1",
+  "current_version": "v2",
+  "date": "September 2026, Version 2",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.21703906",
     "created": "2026-07-30T12:54:41.649671+00:00",
@@ -32,14 +32,14 @@
     "updated": "2026-07-30T12:54:42.346504+00:00",
     "version": "v1"
   },
-  "main_tex_sha256": "54abab1f209b263464450b4c6873b0b22713195eb43c7022ee91438ce7d36c7f",
+  "main_tex_sha256": "a6372b278314f9f2f27c459905cd31808b848e577a5b0e255d980a6d2ac8dfb9",
   "paper_id": "canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62",
-  "paper_md_sha256": "d35d57d299c24a8b1395c6f934dc77c36967f3561b81cfe0d3f67088970007c5",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "9ba548e504cc29c4e8ec782e2e40840675c2c1f9f9fd91b553d3964225db0129",
+  "release_state": "current_revised_tex",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "e2d04279c57b97b229bfb831831f9aaff9e831b959b6822e97437f9b24031da2",
+    "revision_evidence_sha256": "eda4d1495bb4c8260e3184898d56c42b249f2748d64add692bc1c071f772f565",
     "selected_revision": true,
     "superseded_source_path": "5 Dirac Delta/_work/Canonical_Coherent_Kernels_from_MTT_Fixed_Point_Data"
   },
@@ -51,9 +51,9 @@
       "sha256": "6a2e297137a1f3f58ead9ac5a392d7fc71fe486f16a0773160b38c58b71b6494"
     },
     {
-      "bytes": 24017,
+      "bytes": 25482,
       "path": "main.tex",
-      "sha256": "54abab1f209b263464450b4c6873b0b22713195eb43c7022ee91438ce7d36c7f"
+      "sha256": "a6372b278314f9f2f27c459905cd31808b848e577a5b0e255d980a6d2ac8dfb9"
     },
     {
       "bytes": 3784,
@@ -64,9 +64,9 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Canonical_Coherent_Kernels_from_MTT_Fixed_Point_Data"
   },
-  "source_tree_sha256": "a080a716debd7cc8d53282126b0607c0d235df4e3a8aa503e292b6ef9136fdaa",
+  "source_tree_sha256": "bd037fda3c515ade43b61a4b64384ec854f04b913b608f221c09fbab6219752b",
   "title": "Projected Heat Kernels from MTT Fixed-Point Data Conditional Sector Identities and the Physical-Replacement Boundary",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.21703906",

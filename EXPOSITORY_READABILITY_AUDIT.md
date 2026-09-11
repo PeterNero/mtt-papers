@@ -1,16 +1,17 @@
 # MTT Expository Readability Audit
 
-Generated: 2026-07-31
+Generated: 2026-09-11
 
 This is a triage instrument, not a prose-quality certificate. The heuristic score is preserved in the JSON, while an effective `reviewed` or `reference_ready` state is assigned only through the explicit human-review decision file.
 
-Canonical papers audited: **139**.
+Canonical papers audited: **141**.
 
 ## Priority Summary
 
 | Priority | Papers |
 | --- | ---: |
-| reviewed | 137 |
+| light | 1 |
+| reviewed | 138 |
 | reference_ready | 2 |
 
 ## Missing-Dimension Summary
@@ -21,19 +22,21 @@ Canonical papers audited: **139**.
 | conclusion | 3 |
 | concrete_foothold | 24 |
 | object_intuition | 84 |
-| orientation | 65 |
+| orientation | 66 |
 | result_interpretation | 7 |
 
 ## Revision Queue
 
 | Effective priority | Heuristic | Paper | Formal results | Narrative words/result | Coverage | Missing |
 | --- | --- | --- | ---: | ---: | ---: | --- |
+| light | light | `locality-coherent-alternatives-and-records-in-mtt` | 0 | 8166.0 | 6/7 | orientation |
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
 | reviewed | critical | `fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce` | 43 | 69.9 | 7/7 | - |
-| reviewed | moderate | `wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8` | 34 | 375.2 | 7/7 | - |
+| reviewed | moderate | `wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8` | 33 | 392.8 | 7/7 | - |
+| reviewed | moderate | `cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows` | 19 | 252.5 | 7/7 | - |
 | reviewed | critical | `the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38` | 19 | 128.5 | 7/7 | - |
 | reviewed | major | `the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113` | 18 | 170.3 | 6/7 | object_intuition |
-| reviewed | major | `the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f` | 18 | 166.6 | 7/7 | - |
+| reviewed | major | `the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f` | 18 | 171.2 | 7/7 | - |
 | reviewed | major | `the-modal-triplet-theory-program-b3-quantization-as-dis-56340b34` | 17 | 179.1 | 6/7 | object_intuition |
 | reviewed | critical | `the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad` | 16 | 132.1 | 7/7 | - |
 | reviewed | major | `the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a` | 16 | 150.7 | 7/7 | - |
@@ -42,7 +45,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `projection-induced-network-geometry-sprouting-hidden-co-6919523e` | 15 | 189.1 | 5/7 | orientation, object_intuition |
 | reviewed | major | `the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c` | 15 | 230.2 | 5/7 | object_intuition, argument_flow |
 | reviewed | major | `the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707` | 15 | 189.0 | 6/7 | object_intuition |
-| reviewed | critical | `canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62` | 14 | 110.1 | 6/7 | object_intuition |
+| reviewed | critical | `canonical-coherent-kernels-from-mtt-fixed-point-data-fr-da2f9f62` | 14 | 119.2 | 6/7 | object_intuition |
 | reviewed | major | `coherent-universality-and-the-inevitability-of-projecti-d9e28e29` | 14 | 238.4 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | critical | `particles-and-forces-as-coherence-basins-and-capacity-gradients` | 14 | 140.2 | 5/7 | orientation, argument_flow |
 | reviewed | major | `the-modal-triplet-theory-program-b0-why-description-for-eb6e91b2` | 14 | 150.4 | 7/7 | - |
@@ -53,7 +56,7 @@ Canonical papers audited: **139**.
 | reviewed | major | `theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f` | 13 | 249.2 | 7/7 | - |
 | reviewed | major | `topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2` | 13 | 211.5 | 5/7 | orientation, object_intuition |
 | reviewed | major | `coherent-sector-universality-and-controlled-truncation-0ccddc56` | 12 | 223.2 | 5/7 | orientation, object_intuition |
-| reviewed | major | `fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8` | 12 | 157.5 | 7/7 | - |
+| reviewed | major | `fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8` | 12 | 164.7 | 7/7 | - |
 | reviewed | major | `from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3` | 12 | 217.5 | 5/7 | object_intuition, argument_flow |
 | reviewed | major | `modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731` | 12 | 205.0 | 6/7 | object_intuition |
 | reviewed | moderate | `modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed` | 12 | 283.5 | 6/7 | object_intuition |
@@ -72,7 +75,7 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `projection-limited-coherence-a-structural-theory-of-eff-3343fe62` | 10 | 319.1 | 5/7 | orientation, object_intuition |
 | reviewed | major | `projection-probability-and-irreversibility-shadow-bridg-a86c97e5` | 10 | 217.9 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | major | `closure-and-inevitability-in-modal-triplet-theory` | 9 | 215.7 | 7/7 | - |
-| reviewed | major | `coherent-green-functions-replacing-point-sources-by-adm-98607519` | 9 | 236.1 | 7/7 | - |
+| reviewed | major | `coherent-green-functions-replacing-point-sources-by-adm-98607519` | 9 | 245.0 | 7/7 | - |
 | reviewed | moderate | `cosmology-as-global-coherence-capacity-evolution` | 9 | 252.7 | 7/7 | - |
 | reviewed | major | `from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7` | 9 | 219.7 | 5/7 | object_intuition, concrete_foothold |
 | reviewed | moderate | `gauge-fixing-as-admissible-section-selection-in-modal-t-459e029d` | 9 | 253.9 | 5/7 | object_intuition, argument_flow |
@@ -83,15 +86,15 @@ Canonical papers audited: **139**.
 | reviewed | moderate | `the-spectral-action-as-a-shadow-of-coherent-fixed-point-c1df8987` | 9 | 310.6 | 5/7 | object_intuition, argument_flow |
 | reviewed | moderate | `why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2` | 9 | 274.4 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `capacity-gated-projection-dynamics-a-concrete-algorithm-15deaf90` | 8 | 349.8 | 7/7 | - |
-| reviewed | major | `deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3` | 8 | 205.4 | 5/7 | object_intuition, result_interpretation |
+| reviewed | major | `deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3` | 8 | 227.8 | 5/7 | object_intuition, result_interpretation |
 | reviewed | moderate | `dirac-delta-functions-as-singular-shadows-of-admissible-6e0ddf3f` | 8 | 330.2 | 6/7 | orientation |
 | reviewed | moderate | `effective-field-theory-as-a-shadow-of-projection-admiss-ec123406` | 8 | 370.9 | 4/7 | orientation, object_intuition, argument_flow |
-| reviewed | major | `fixed-points-iii-disturbance-damping-balance-and-stability` | 8 | 222.2 | 7/7 | - |
+| reviewed | major | `fixed-points-iii-disturbance-damping-balance-and-stability` | 8 | 232.8 | 7/7 | - |
 | reviewed | light | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 8 | 408.0 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 8 | 277.6 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 8 | 302.6 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014` | 7 | 251.7 | 7/7 | - |
-| reviewed | moderate | `entanglement-locality-and-measurement-from-coherent-sec-110e8cbe` | 7 | 379.0 | 6/7 | object_intuition |
+| reviewed | light | `entanglement-locality-and-measurement-from-coherent-sec-110e8cbe` | 7 | 401.0 | 6/7 | object_intuition |
 | reviewed | moderate | `finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb` | 7 | 269.3 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | light | `flux-compactifications-in-heterotic-string-theory-expli-08b38155` | 7 | 420.1 | 6/7 | object_intuition |
 | reviewed | moderate | `measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e` | 7 | 334.3 | 4/7 | orientation, argument_flow, result_interpretation |
@@ -165,8 +168,8 @@ Canonical papers audited: **139**.
 | reviewed | light | `the-central-circle-inertia-mass-gravity-and-time-as-sha-5faa2369` | 0 | 3012.0 | 4/7 | orientation, object_intuition, concrete_foothold |
 | reviewed | low | `theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5` | 0 | 1849.0 | 7/7 | - |
 | reviewed | light | `why-gr-falls-out-of-string-theory-a-coherent-admissibil-1734b7a7` | 0 | 2264.0 | 4/7 | orientation, argument_flow, concrete_foothold |
-| reference_ready | reference_ready | `modal-triplet-theory-foundations` | 8 | 715.0 | 7/7 | - |
-| reference_ready | reference_ready | `the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793` | 0 | 7384.0 | 6/7 | concrete_foothold |
+| reference_ready | reference_ready | `modal-triplet-theory-foundations` | 8 | 735.4 | 7/7 | - |
+| reference_ready | reference_ready | `the-book-on-modal-triplet-theory-a-typed-interpretive-o-4d11c793` | 0 | 7482.0 | 6/7 | concrete_foothold |
 
 ## Forbidden Boilerplate
 
