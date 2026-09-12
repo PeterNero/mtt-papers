@@ -1,10 +1,10 @@
 {
   "counts": {
-    "canonical_papers": 141,
+    "canonical_papers": 142,
     "current_sources_newer_than_release": 12,
     "pandoc_warning_papers": 12,
     "papers_with_zenodo_release": 138,
-    "papers_without_zenodo_match": 3,
+    "papers_without_zenodo_match": 4,
     "schema": "mtt.paper-migration-report.v1",
     "superseded_projects_excluded": 61,
     "zenodo_records": 279,
@@ -2896,12 +2896,12 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v3",
-      "date": "September 2026, Version 3",
+      "current_version": "v4",
+      "date": "September 2026, Version 4",
       "latest_zenodo_release": null,
-      "main_tex_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "main_tex_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
       "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
-      "paper_md_sha256": "5e56609daf24314b8d3031e58b7c00e8eb8575e4531e8f60acf47860725a5460",
+      "paper_md_sha256": "8372da495fdf01c0638100dead2e5d2b49c401df1e0e9c333db867874c4c378f",
       "release_state": "current_revised_tex",
       "result_refs": [
         "causal_base_q79_seven_row_endpoint_factorization_packet",
@@ -2917,13 +2917,14 @@
         "preprojection_repair_jet_graph_functor",
         "preprojection_reversible_dissipative_repair",
         "q79_cohesive_superconnection",
+        "q79_continuum_finite_intertwiner_cutset",
         "q79_maurer_cartan_repair",
         "q79_rank102_qutrit_reduction",
         "q79_v3w9_full_residual"
       ],
       "revision": {
         "revision_evidence_path": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "c6c6d0d79cbdbb51da3524a3b2eb58d9cbfbeda13496f3a09d5021e816826ae2",
+        "revision_evidence_sha256": "e0bd24c584964ef316f6d0de46a70e8e6969f429ae274c03d62e6af46ab8ab60",
         "selected_revision": true
       },
       "source_provenance": {
@@ -2931,7 +2932,7 @@
         "repository_native_path": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
         "results_snapshot": "ba0874012246bb930677ebfa6f0a6eb33a57a8f0"
       },
-      "source_tree_sha256": "6b47e4fac0fbb1d4d4029302e1eafd27776af27698c3997c7473d8f50e2eb030",
+      "source_tree_sha256": "0a4f55fe0d2d70982eb475299ba216fc70d979bf940c7d3ab380c678d097f561",
       "title": "Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary",
       "version_relation": "unreleased_new_paper",
       "zenodo_releases": []
@@ -5175,6 +5176,41 @@
       ]
     },
     {
+      "abstract": "Can an interacting finite-mode closure model support controlled quantum dynamics, and can that same model supply an irreversible stochastic driver? We answer these questions separately. For a supplied radial potential and Dirichlet/Friedrichs quantization, coercivity constructs an interacting Hamiltonian without an occupation cutoff. Compact resolvent gives quantum recurrence, not late-time mixing. In a seven-spatial-mode realization, an exact angular average of the squared cubic interaction sharpens all-occupation equilibrium trace-norm bounds. A separate 489-state calculation, lifted into the radial operator domain and tested against outside-state residuals, encloses a nonzero transition probability between 0.05568344585 and 0.05936794417 at the declared long time. We explain the source, preparation, normalization, and error certificates behind these numbers. Temperature, coupling, boundary quantization, and the physical source are inputs, not predictions. The results provide a calculation companion to Fixed Points III without assuming its stochastic-limit hypotheses have already been realized.",
+      "authors": [
+        "Peter Nero"
+      ],
+      "canonical_markdown": "paper.md",
+      "canonical_tex": "main.tex",
+      "current_version": "v1",
+      "date": "September 2026, Version 1",
+      "latest_zenodo_release": null,
+      "main_tex_sha256": "a036564181a0c13ab1fad776493318091bcec821d05947bf3026a9f7e7f863db",
+      "paper_id": "finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds",
+      "paper_md_sha256": "ad2967c4bed967f2edae6ccd09c6d2acd1fbc2b4fd9cbba97dd515dea152b61e",
+      "release_state": "current_revised_tex",
+      "result_refs": [
+        "fixed_points_cubic_heat_trace_bound",
+        "fixed_points_finite_mode_recurrence_boundary",
+        "fixed_points_frontier_consolidation_20260911",
+        "fixed_points_l11_phase_channel"
+      ],
+      "revision": {
+        "revision_evidence_path": "papers/finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "01869e100604e4be72271147b893924e176238ac9aad57f189debe98ab3a58db",
+        "selected_revision": true
+      },
+      "source_provenance": {
+        "legacy_source_path": "repository-native/finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds",
+        "repository_native_path": "papers/finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds",
+        "results_snapshot": "f141a20ea23c5c3ff19cc2161c0e226e29ade8a7"
+      },
+      "source_tree_sha256": "34363e8914a1620273fa2053dbf9afe7b3a946c47e81ccbf9f17b2bd6d22f097",
+      "title": "Finite-Mode Closure Dynamics: Recurrence, Equilibrium Bounds, and a Certified Transition Channel",
+      "version_relation": "unreleased_new_paper",
+      "zenodo_releases": []
+    },
+    {
       "abstract": "Measurement is an ordinary physical interaction. Its mathematical description nevertheless has several layers: an effect-valued measure gives outcome probabilities, an instrument also gives conditional post-interaction states, a realized record requires an outcome-completion rule, and later dynamics may stabilize that record. This paper constructs the first two layers exactly for finite-resolution position detection and keeps the latter two distinct. On the square-integrable Hilbert space over Euclidean position space, a normalized detector response defines a commutative positive operator-valued measure that is precisely a classical smearing of the sharp position projection-valued measure. Its outcome density is the convolution of the detector response with the sharp Born density, and converges in total variation to that density. For densities with one integrable weak derivative, an explicit error bound separates detector resolution, detector shape, and spatial variation of the input. A square-root instrument realizes the same effects and produces a finite post-measurement filter. For a Gaussian response, detector blur adds exactly epsilon squared times the identity to the outcome covariance. A two-outcome qubit example shows that finite unsharp effects converge in operator norm to a discrete projective measurement, so not every projective measurement is a distributional singularity. In Modal Triplet Theory, these results supply a rigorous downstream detector interface. They do not derive the instrument from selected geometry, select one realized outcome, or identify detector width with a coherence or Ornstein-Uhlenbeck floor.",
       "authors": [
         "Peter Nero"
@@ -5572,8 +5608,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v6",
-      "date": "September 2026 Version 6",
+      "current_version": "v7",
+      "date": "September 2026, Version 7",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.16949280",
         "created": "2026-07-29T08:50:35.316982+00:00",
@@ -5599,21 +5635,21 @@
         "updated": "2026-07-29T08:50:35.802432+00:00",
         "version": "v5"
       },
-      "main_tex_sha256": "8c06687a6bd689dab772d14c996e1f99c9393b0871d3a28138643f8336cee1a2",
+      "main_tex_sha256": "63582488d784052c7cdb8461833c411533f658dd2ac796e6779b601a1cd47fac",
       "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
-      "paper_md_sha256": "a3790afc726e43f57380c463ce9b13a1bc1bf9885f6c5c492224a64d6f63131b",
+      "paper_md_sha256": "1e28583c6743890cb1dde027b3580e5716630fdb6434dd7a2a32f5bb6443cbb8",
       "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
-        "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_III_V4_REVISION_AUDIT.md",
-        "revision_evidence_sha256": "14e57120534c944ebd5f7dfde4d1d6744612d66bc006d99d91be74bdf62ca8d6",
+        "revision_evidence_path": "papers/fixed-points-iii-disturbance-damping-balance-and-stability/REVISION_AUDIT.md",
+        "revision_evidence_sha256": "5b89018a4b04fb0acac30c89a7813a2cea1b81850333a88eeb772f165d8ed328",
         "selected_revision": true,
         "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v3"
       },
       "source_provenance": {
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v4"
       },
-      "source_tree_sha256": "516dc166a8850c75de87e9072b0d27e50f0fc86f5988d717b2d3a1e2abe6a76c",
+      "source_tree_sha256": "65c0c352b42044c59214e9ae33011ee83c2f2118acbb9f07146e58f23c6a572b",
       "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [

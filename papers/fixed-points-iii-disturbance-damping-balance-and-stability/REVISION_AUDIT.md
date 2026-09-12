@@ -82,3 +82,13 @@ The selected TeX now states the paper-specific `C.FP.01` boundary explicitly:
 the damping generator, coherent projector, invariant domain, gap data, and
 forcing/noise law are physical q79 inputs, not outputs of the abstract FP III
 estimates. This is a scope clarification and does not change any theorem.
+# Version 7: Finite-Mode Companion Bridge
+
+September 2026. Supersedes authoring v6, not the unchanged released v5.
+The scalar deterministic/stochastic bounds and conditional homogenization
+theorems are retained without proof changes. A new explanatory paragraph
+cites the standalone finite-mode calculation companion and distinguishes
+its exact recurrence and certified transition from a mixing/Brownian limit.
+No numerical proof blocks are duplicated here. The four curated calculation
+results now belong to the companion rather than being counted as unexplained
+additions to FP III. Abstract content and released Zenodo metadata are retained.

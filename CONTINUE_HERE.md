@@ -4,12 +4,17 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
 
 ## What Is Already Done
 
-- The catalog contains 141 papers, and all 305 curated results have one integration home.
+- The catalog contains 142 papers, and all 305 curated results have one integration home.
 - Flux v6 now preserves the established projective rank-nine hidden carrier and existential HYM connection. The numerical chamber, common visible endpoint and Bianchi data remain separate.
-- The cohesive manuscript is now v3: explicit six-row residual, 25-block support,
+- The cohesive manuscript is now v4: explicit six-row residual, 25-block support,
   conditional character reduction, metric comparison and source-factorization
   imports are integrated. Its isometric-embedding statement is corrected.
-  The existing repair/noise/recurrence discussion is retained.
+  V4 additionally corrects whole-projector comparison: exact retained
+  intertwining does not rule out additional ambient zero modes. The existing
+  repair/noise/recurrence discussion is retained.
+- The new nine-page finite-mode calculation companion owns the recurrence,
+  cubic heat-trace and L11 channel package. FP III v7 adds a scoped citation;
+  its foundational theorems are unchanged. Do not redo this placement.
 - SM v4 now incorporates all 14 previously confirmed additions. Its finite
   structure, admitted electroweak primitive, Yukawa profiles and precision
   reconstruction survive. The effective 13/19-coordinate ledger is a profile
@@ -19,10 +24,10 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
 
 `catalog/research-integration-reviews.json` is the manual contextual record. `catalog/research-ownership.json` and per-paper `RESEARCH_INTEGRATION.md` are generated views.
 
-51 result assignments have been reviewed: 46 integrated, one historical
-provenance record needing no new theorem, and four additions needed. The other
-254 are unreviewed, not known omissions. This pass resolved 15 of the former
-19 additions/details and reviewed nine formerly unreviewed assignments.
+52 result assignments have been reviewed: 50 integrated and two historical
+provenance records needing no new theorem. All 19 originally confirmed
+additions/details have been handled. The other 253 are unreviewed, not known
+omissions. This is editorial integration, not a new physical closure claim.
 A literal ID in metadata is not manuscript integration. A missing literal ID
 does not prove the mathematics is absent.
 
@@ -30,13 +35,14 @@ Reviews bind LF-normalized manuscript bytes, exact result hashes and real source
 
 ## Next Editorial Work
 
-1. Place the four finite-mode heat-trace/L11/recurrence records in a calculation
-   companion. Keep FP III standalone and add only a scoped consumer discussion.
-   The current summary and immutable sources are in its integration record.
-2. Continue the 254 contextual reviews in the order and clusters recorded in
+1. Continue with the remaining 55 cohesive-source assignments, grouping local
+   transfer/action witnesses rather than adding a long packet inventory. The
+   evolving mathematical-language atlas needs separate scoped reading.
+2. Continue the 253 contextual reviews in the order and clusters recorded in
    EDITORIAL_INTEGRATION_PLAN.md. SM has no remaining assigned imports.
 3. Review downstream uses of embedded isometries against the corrected cohesive
-   theorem. Cost pullback alone is not reducing operator intertwining.
+   theorem. Cost pullback alone is not reducing operator intertwining; exact
+   intertwining is not completeness of the entire ambient harmonic sector.
 4. Do not repeat the completed SM/residual edits or treat review counts as
    scientific closure counts. Preserve historical artifacts without importing
    obsolete status fields as current.

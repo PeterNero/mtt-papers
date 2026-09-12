@@ -1,0 +1,53 @@
+{
+  "abstract": "Can an interacting finite-mode closure model support controlled quantum dynamics, and can that same model supply an irreversible stochastic driver? We answer these questions separately. For a supplied radial potential and Dirichlet/Friedrichs quantization, coercivity constructs an interacting Hamiltonian without an occupation cutoff. Compact resolvent gives quantum recurrence, not late-time mixing. In a seven-spatial-mode realization, an exact angular average of the squared cubic interaction sharpens all-occupation equilibrium trace-norm bounds. A separate 489-state calculation, lifted into the radial operator domain and tested against outside-state residuals, encloses a nonzero transition probability between 0.05568344585 and 0.05936794417 at the declared long time. We explain the source, preparation, normalization, and error certificates behind these numbers. Temperature, coupling, boundary quantization, and the physical source are inputs, not predictions. The results provide a calculation companion to Fixed Points III without assuming its stochastic-limit hypotheses have already been realized.",
+  "authors": [
+    "Peter Nero"
+  ],
+  "canonical_markdown": "paper.md",
+  "canonical_tex": "main.tex",
+  "current_version": "v1",
+  "date": "September 2026, Version 1",
+  "latest_zenodo_release": null,
+  "main_tex_sha256": "a036564181a0c13ab1fad776493318091bcec821d05947bf3026a9f7e7f863db",
+  "paper_id": "finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds",
+  "paper_md_sha256": "ad2967c4bed967f2edae6ccd09c6d2acd1fbc2b4fd9cbba97dd515dea152b61e",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "fixed_points_cubic_heat_trace_bound",
+    "fixed_points_finite_mode_recurrence_boundary",
+    "fixed_points_frontier_consolidation_20260911",
+    "fixed_points_l11_phase_channel"
+  ],
+  "revision": {
+    "revision_evidence_path": "papers/finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "01869e100604e4be72271147b893924e176238ac9aad57f189debe98ab3a58db",
+    "selected_revision": true
+  },
+  "schema": "mtt.paper.v1",
+  "source_files": [
+    {
+      "bytes": 26250,
+      "path": "main.tex",
+      "sha256": "a036564181a0c13ab1fad776493318091bcec821d05947bf3026a9f7e7f863db"
+    },
+    {
+      "bytes": 372474,
+      "path": "main.pdf",
+      "sha256": "17dc4c73c568c6da50638861b30769ccda95b284d57369a776f82fee121eff49"
+    },
+    {
+      "bytes": 2281,
+      "path": "refs.bib",
+      "sha256": "3235e680e212b3cb2376ffcec89e050f52cd25812d84783170d61a4c683db81a"
+    }
+  ],
+  "source_provenance": {
+    "legacy_source_path": "repository-native/finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds",
+    "repository_native_path": "papers/finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds",
+    "results_snapshot": "f141a20ea23c5c3ff19cc2161c0e226e29ade8a7"
+  },
+  "source_tree_sha256": "34363e8914a1620273fa2053dbf9afe7b3a946c47e81ccbf9f17b2bd6d22f097",
+  "title": "Finite-Mode Closure Dynamics: Recurrence, Equilibrium Bounds, and a Certified Transition Channel",
+  "version_relation": "unreleased_new_paper",
+  "zenodo_releases": []
+}

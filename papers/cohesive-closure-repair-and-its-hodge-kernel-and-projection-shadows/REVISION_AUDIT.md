@@ -1,5 +1,33 @@
 # Cohesive Source Revision Audit
 
+## Version 4 Projector Completeness Correction
+
+Date: 2026-09-12. Supersedes local v3; no release authorized.
+
+The frozen `q79_continuum_finite_intertwiner_cutset` correctly distinguishes
+exact operator intertwining from a mere compression. Its approximate global
+projector estimate nevertheless omits completeness of the retained harmonic
+sector. An exact reducing embedding with an additional transverse zero mode
+has zero intertwining residual and projector-distance one.
+
+The manuscript now gives this counterexample, preserves exact retained
+projector transport, and requires absence of transverse zero modes for equality
+with the whole ambient projector. Approximate comparisons use isolated Riesz
+clusters and a resolvent-contour estimate on a common Hilbert space; a small
+perturbation need not preserve the literal kernel. These are a narrow source
+erratum and its explanation, not a reversal of the finite calculations.
+
+The frozen scientific artifact is not rewritten. Its exact source hash,
+review anchors and the local correction are recorded in the integration ledger.
+The older twelve reviewed imports are retained; their substantive sections
+remain unchanged in this revision. The broad mathematical-language atlas is
+not marked reviewed: it includes many later appended results and requires its
+own scoped review rather than being treated as a July-only historical record.
+
+Artifact review: all 27 pages of v4 were rendered and visually inspected on
+2026-09-12; the build has zero warnings. Five small editorial source tests
+pass, including both the extra-zero-mode and lifted-kernel counterexamples.
+
 ## Version 3 Contextual Integration Delta
 
 Date: 2026-09-12. Supersedes local v2; no release authorized.

@@ -5,9 +5,9 @@ author:
 - Peter Nero
 bibliography:
 - refs.bib
-current_version: v6
-date: September 2026 Version 6
-generated_from_main_tex_sha256: 8c06687a6bd689dab772d14c996e1f99c9393b0871d3a28138643f8336cee1a2
+current_version: v7
+date: September 2026, Version 7
+generated_from_main_tex_sha256: 63582488d784052c7cdb8461833c411533f658dd2ac796e6779b601a1cd47fac
 paper_id: fixed-points-iii-disturbance-damping-balance-and-stability
 release_state: current_revised_tex
 released_version: v5
@@ -16,6 +16,10 @@ zenodo_doi: 10.5281/zenodo.21655371
 zenodo_record_id: 21655371
 zenodo_url: "https://zenodo.org/records/21655371"
 ---
+
+# Version 7 Revision Note
+
+**Supersedes.** Version 6, the previous authoring revision; version 5 remains the released edition. **Reason.** The finite-mode calculations now have a separate manuscript owner and must not be mistaken for a realization of the mixing hypothesis. **Resolution.** Adds a scoped companion citation and distinguishes recurrence, finite-time transition control, and the stochastic-driver limit. **Retained result.** The deterministic, stochastic, and conditional homogenization theorems and their proofs are unchanged. **Remaining boundary.** A selected physical noise source and controlled reduced-dynamics limit are still required.
 
 # Version 6 Revision Note
 
@@ -269,6 +273,10 @@ No statement in this section controls a disturbance acting directly in $`P\Psi`$
 
 This section addresses a different route to stochastic behavior. The underlying system can remain deterministic while rapidly mixing noncoherent modes drive slow coherent variables. Under a sufficiently strong limit theorem, the accumulated fast forcing converges to Brownian transport. Ordinary mixing is not enough: the second iterated integrals determine whether the limiting equation is the stated Stratonovich equation or carries an additional bracket drift.
 
+#### A concrete candidate and its limit.
+
+The calculation companion constructs a supplied radial quantum Hamiltonian with finitely many spatial modes but no occupation cutoff. It has compact resolvent and recurrent state orbits. Its all-occupation equilibrium bounds and certified nonzero channel transition are genuine results at that model’s declared boundary, normalization, sector, and preparation. They do not make its nonconstant Gibbs correlations mixing. Thus increasing the occupation cutoff alone does not supply the enhanced invariance principle below. A suitable system–bath or spatial/volume limit, and its reduced path law, must be established separately. The detailed domain construction and calculations belong to that companion; the present paper retains the analytic disturbance and homogenization statements.
+
 Write $`\Psi=X+Y`$ with $`X=P\Psi`$ and $`Y=Q\Psi`$. For frozen $`x`$, let the fast flow for $`Y`$ have invariant measure $`\mu_x`$, and decompose
 ``` math
 g(x,y)=\bar g(x)+G(x,y),
@@ -394,5 +402,5 @@ The same bound is uniform for a smoothly base-dependent family remaining in $`\m
 <!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
-The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+The analytic disturbance and homogenization statements are proved or explicitly conditioned in this paper. The finite-mode calculation discussed in Section 7 has its own manuscript and reproduction references ; its four frozen records are held in the [curated MTT results repository](https://github.com/PeterNero/mtt-results-repro). They concern the supplied radial model, cubic heat-trace bound, L11 pure channel, and historical frontier map. This citation does not replace the enhanced invariance principle or identify the calculated transition with a selected physical noise law.
 <!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

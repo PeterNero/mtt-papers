@@ -48,6 +48,27 @@ class EditorialImportTests(unittest.TestCase):
         self.assertIn(r"J'^\dagger U=TJ^\dagger", tex)
         self.assertIn("rather than an onto equivalence", tex)
 
+    def test_zero_residual_does_not_control_ambient_projector(self):
+        H, Hprime = (0, 1), (0, 1, 0)
+        self.assertEqual(Hprime[:2], H)
+        retained = tuple(int(x == 0) for x in H) + (0,)
+        ambient = tuple(int(x == 0) for x in Hprime)
+        self.assertEqual(max(abs(a - b) for a, b in zip(ambient, retained)), 1)
+        self.assertEqual(min(x for x in Hprime if x > 0), 1)
+        tex = (ROOT / "papers" / COH / "main.tex").read_text()
+        self.assertIn("Retained projectors are not the whole ambient projector", tex)
+        self.assertIn(r"\Pi'=T\Pi T^\dagger+\Pi'_\perp", tex)
+        self.assertIn("common rectifiable", tex)
+
+    def test_small_perturbation_does_not_preserve_literal_kernel(self):
+        from fractions import Fraction
+        A, B = (0, 1), (Fraction(1, 1000), 1)
+        self.assertEqual(max(abs(a - b) for a, b in zip(A, B)), Fraction(1, 1000))
+        self.assertEqual(sum(x == 0 for x in A), 1)
+        self.assertEqual(sum(x == 0 for x in B), 0)
+        self.assertEqual(sum(x < Fraction(1, 2) for x in A),
+                         sum(x < Fraction(1, 2) for x in B))
+
 
 if __name__ == "__main__":
     unittest.main()

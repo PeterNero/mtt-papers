@@ -15,10 +15,10 @@
     "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows": {
       "status": "reviewed",
       "reviewed_on": "2026-09-12",
-      "note": "Version 3 integrates the explicit six-row residual, 25-block rank-102 compiler, conditional 1548-position symmetry count, transported-metric test and GAS/SYN/BV4 dependency factorization. It corrects an overbroad embedded-isometry claim by distinguishing pullback from reducing operator intertwining, with an explicit counterexample and the needed adjoint hypothesis. Existing structural theorems and later Flux hidden-carrier/HYM advances are retained. All 25 PDF pages were rendered and visually inspected; compilation has no warnings. No public release or physical-source promotion is implied.",
-      "reviewed_main_tex_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
-      "reviewed_pdf_sha256": "b92af710d4f0cfaa2a4cc27163eb56aad3ad5da463ad17b937d443c0ed47c062",
-      "reviewed_source_tree_sha256": "6b47e4fac0fbb1d4d4029302e1eafd27776af27698c3997c7473d8f50e2eb030",
+      "note": "Version 4 corrects the frozen cutset's whole-projector estimate: extra transverse zero modes are invisible to a retained intertwining residual. The exact counterexample, completeness requirement and isolated-cluster resolvent comparison are proved and explained. Existing twelve imports were reread and retained; no source-selection or physical claim was promoted. All 27 PDF pages were rendered and visually inspected; compilation has zero warnings. Five focused editorial regression tests pass.",
+      "reviewed_main_tex_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
+      "reviewed_pdf_sha256": "461288cb33b9bd84d0205c41fea1ed95ac657447c069f1c844be7e2a9e792a09",
+      "reviewed_source_tree_sha256": "0a4f55fe0d2d70982eb475299ba216fc70d979bf940c7d3ab380c678d097f561",
       "release_authorized": false
     },
     "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1": {
@@ -331,11 +331,11 @@
     },
     "fixed-points-iii-disturbance-damping-balance-and-stability": {
       "status": "reviewed",
-      "reviewed_on": "2026-09-11",
-      "note": "Deterministic, stochastic, and homogenized roles explained; 9-page PDF visually inspected. September consolidation: retained the existing scoped source-selection clarification, versioned it separately from the released PDF, regenerated Markdown and visually reviewed all pages of the rebuilt PDF. No mathematical result is promoted.",
-      "reviewed_main_tex_sha256": "8c06687a6bd689dab772d14c996e1f99c9393b0871d3a28138643f8336cee1a2",
-      "reviewed_pdf_sha256": "5bb703930150c02350d80c35b9fda8e5fcdf26504a39be25ab7509b9a8253425",
-      "reviewed_source_tree_sha256": "516dc166a8850c75de87e9072b0d27e50f0fc86f5988d717b2d3a1e2abe6a76c",
+      "reviewed_on": "2026-09-12",
+      "note": "Version 7 keeps the standalone fixed-point, stationary-ensemble and homogenization theorem ownership unchanged. It adds a scoped citation to the new finite-mode calculation companion and explains why finite-unitary recurrence differs from an independent mixing driver. Evidence boilerplate was replaced by contextual references. All ten PDF pages were rendered and visually inspected, final evidence/bibliography page rechecked. Zero PDF build warnings; pre-existing benign Pandoc series macro warning noted.",
+      "reviewed_main_tex_sha256": "63582488d784052c7cdb8461833c411533f658dd2ac796e6779b601a1cd47fac",
+      "reviewed_pdf_sha256": "be0852118b8af78c3d6f60c084bc47f5e84ecc8cd2143c4fc38690a282ccd53b",
+      "reviewed_source_tree_sha256": "65c0c352b42044c59214e9ae33011ee83c2f2118acbb9f07146e58f23c6a572b",
       "release_authorized": false
     },
     "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce": {
@@ -1144,6 +1144,15 @@
       "reviewed_main_tex_sha256": "79d64f02f02218a6e859a06b20225a245e24d610c01bb4346fce361ab39f1711",
       "reviewed_pdf_sha256": "ce9b6d92db248ab5174b48a1b79aadcfa7232d9ff9daeb7334dcceb0cfc1aceb",
       "reviewed_source_tree_sha256": "d592c809779831d594d8c7c1703e87b80fc278d07a883270107cedc1de343abb"
+    },
+    "finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds": {
+      "status": "reviewed",
+      "reviewed_on": "2026-09-12",
+      "note": "New standalone calculation companion v1, with explanation and full ownership boundaries: recurrence for the supplied radial finite-mode Hamiltonian, exact cubic-angle identity, all-occupation equilibrium bounds and a certified nonzero L11 transition. Frozen artifacts and source derivations were reviewed in context; only three L11 norm columns have independent replay. All nine PDF pages were rendered and visually inspected, final title page rechecked, zero build warnings. Four source-import regression tests pass. This is not physical q79 source selection or continuum QFT.",
+      "reviewed_main_tex_sha256": "a036564181a0c13ab1fad776493318091bcec821d05947bf3026a9f7e7f863db",
+      "reviewed_pdf_sha256": "17dc4c73c568c6da50638861b30769ccda95b284d57369a776f82fee121eff49",
+      "reviewed_source_tree_sha256": "34363e8914a1620273fa2053dbf9afe7b3a946c47e81ccbf9f17b2bd6d22f097",
+      "release_authorized": false
     }
   }
 }

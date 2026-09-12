@@ -265,8 +265,8 @@
         "Hodge and kernel package",
         "The q79 benchmark and its exact boundary"
       ],
-      "assessment": "The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem.",
-      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "assessment": "The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
+      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
       "result_hashes": {
         "q79_cohesive_superconnection": "8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8",
         "preprojection_covariant_residual_hessian": "247b1b52198dc250f80293e6807f1d2fc7ac126a930c9642ef2b5a3fb7a74921"
@@ -285,38 +285,12 @@
         "The explicit residual and its block support",
         "These are imported compiler results"
       ],
-      "assessment": "Version 3 displays all six extra residuals, fixed-chart derivatives including alpha-prime/2, the lane incidence matrix and the 19-to-25-block correction. It explains that allowed support is neither a numerical nonzero matrix nor the full Hilbert-space dimension. The exact kernel intersection is retained, while the old candidate audit is explicitly historical so later hidden-carrier/HYM advances are not regressed.",
-      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "assessment": "Version 3 displays all six extra residuals, fixed-chart derivatives including alpha-prime/2, the lane incidence matrix and the 19-to-25-block correction. It explains that allowed support is neither a numerical nonzero matrix nor the full Hilbert-space dimension. The exact kernel intersection is retained, while the old candidate audit is explicitly historical so later hidden-carrier/HYM advances are not regressed. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
+      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
       "result_hashes": {
         "q79_v3w9_full_residual": "937039df105881a4dcbf1ed31d86ab842b5da2ee6df832e7c834d9eb71cae441"
       }
     },
-    {
-      "id": "FP-FRONTIER-PLACEMENT-20260912",
-      "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
-      "reviewed_at": "2026-09-12",
-      "reviewer": "Codex contextual consolidation",
-      "state": "addition_needed",
-      "result_ids": [
-        "fixed_points_frontier_consolidation_20260911",
-        "fixed_points_cubic_heat_trace_bound",
-        "fixed_points_l11_phase_channel",
-        "fixed_points_finite_mode_recurrence_boundary"
-      ],
-      "anchors": [
-        "\\begin{document}"
-      ],
-      "assessment": "The canonical scalar disturbance/OU paper is not the supplied finite-spatial-mode heat-trace and L11 calculation paper. Its existing stochastic discussion does not contain the cubic moment, 489-dimensional calculation or compact-resolvent recurrence result. Assignment to this family did not integrate those results.",
-      "remaining_action": "Keep FP III standalone. Decide a calculation-companion owner for the new finite-mode package, then add a scoped citation and driver/recurrence distinction to FP III rather than appending unrelated matrix calculations.",
-      "main_tex_lf_sha256": "7ba829182e55b626f875622823d0dab590000f86c532abc7b44978309032bb0e",
-      "result_hashes": {
-        "fixed_points_frontier_consolidation_20260911": "c27196ef86037725588e128dd6fd8e93d7a665629928157d4e4a047ce664a0c8",
-        "fixed_points_cubic_heat_trace_bound": "affd30c6fa9ca9d5c8e08f0349cc92b419afd84ade8d666125f05af483dba54a",
-        "fixed_points_l11_phase_channel": "a4f90611cc10dff2ad8945b0f05d19bb9b7373bf64b1b3b7617c4fa4928f0f0f",
-        "fixed_points_finite_mode_recurrence_boundary": "7bdcad1f8dc2b752e1e4ada03fcea6e7c95d4dbf5e065f04718096fcc507f798"
-      }
-    }
-    ,
     {
       "id": "COHESIVE-DESCENT-20260912",
       "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
@@ -333,8 +307,8 @@
         "Nonlinear repair descent",
         "For a finite connected cover with unitary local-system transitions"
       ],
-      "assessment": "The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred.",
-      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "assessment": "The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
+      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
       "result_hashes": {
         "q79_maurer_cartan_repair": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6",
         "local_cech_hilbert_descent": "b6d9a73e29ec3b2e832c99544efa1a8b364db84e0b9ca91c99ad8d26a9e99912",
@@ -357,8 +331,8 @@
         "Repair monotonicity and tangent generator",
         "Information erased by the square"
       ],
-      "assessment": "The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication.",
-      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "assessment": "The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
+      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
       "result_hashes": {
         "preprojection_nonzero_defect_hessian_witness": "1c17362537af94ecbbb40de8944ae0c1fd583aa3ffd31231b55e0c6eeef91d15",
         "preprojection_first_order_phase_loss_witness": "9a0a92dad8ad6d461b0d67c61c8b96c266d43c94a1f83a626063c786805a1496",
@@ -378,8 +352,8 @@
         "The transported-metric result makes the latter task concrete",
         "For example, let"
       ],
-      "assessment": "Version 3 gives the transported metric, physical distortion, adjoint and chain-commutator formulas, the I2 versus diag(4,1/9) witness, and the polar product criterion. Bounded invertibility and domain transport are stated. The related embedding counterexample repairs the formerly overbroad projection claim; a physical analytic BHT map remains unconstructed.",
-      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "assessment": "Version 3 gives the transported metric, physical distortion, adjoint and chain-commutator formulas, the I2 versus diag(4,1/9) witness, and the polar product criterion. Bounded invertibility and domain transport are stated. The related embedding counterexample repairs the formerly overbroad projection claim; a physical analytic BHT map remains unconstructed. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
+      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
       "result_hashes": {
         "preprojection_bht_transported_metric": "67a0109c6a7c7d02b97e863af1f6ebdeab3a66b27e8e37f4adc4733bb368fee7"
       }
@@ -396,8 +370,8 @@
       "anchors": [
         "There is also a lawful conditional sparsification"
       ],
-      "assessment": "The additional E[3] invariance and 22 neutral external-mode assumptions are displayed beside the 1548 count, hidden character multiplicities and general sum-of-squares formula. This is a conditional character reduction, not 1548 accepted numerical coefficients and not a retraction of dense structural support.",
-      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "assessment": "The additional E[3] invariance and 22 neutral external-mode assumptions are displayed beside the 1548 count, hidden character multiplicities and general sum-of-squares formula. This is a conditional character reduction, not 1548 accepted numerical coefficients and not a retraction of dense structural support. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
+      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
       "result_hashes": {
         "q79_rank102_qutrit_reduction": "18b978d0bab66d3f40cf45f8ceab33fd5c6fe6bb031ae8f66c10721fdc5f43d7"
       }
@@ -414,10 +388,74 @@
       "anchors": [
         "The later endpoint-factorization record organizes seven acceptance rows"
       ],
-      "assessment": "The manuscript imports the exact dependency organization into GAS, SYN and BV4 and identifies shared-line calculus and Galerkin/Feshbach execution as derived arrows. It states explicitly that three structured packet types are not three scalar parameters and that complete physical source acceptance remains open.",
-      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "assessment": "The manuscript imports the exact dependency organization into GAS, SYN and BV4 and identifies shared-line calculus and Galerkin/Feshbach execution as derived arrows. It states explicitly that three structured packet types are not three scalar parameters and that complete physical source acceptance remains open. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
+      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
       "result_hashes": {
         "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      }
+    },
+    {
+      "id": "FP-CALCULATION-COMPANION-20260912",
+      "paper_id": "finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual editorial integration",
+      "state": "integrated",
+      "result_ids": [
+        "fixed_points_cubic_heat_trace_bound",
+        "fixed_points_l11_phase_channel",
+        "fixed_points_finite_mode_recurrence_boundary"
+      ],
+      "anchors": [
+        "Finite-mode recurrence boundary",
+        "Independent-angle cubic identity",
+        "A certified nonzero channel, not merely a matrix plot",
+        "Inputs, achievements, and the remaining driver problem"
+      ],
+      "assessment": "The new companion owns the supplied radial finite-mode model, compact-resolvent recurrence theorem, independent-angle cubic formula and equilibrium certificate, and L11 all-pair phase-channel bound. Inputs, occupation versus spatial cutoffs, outward rounding, partial independent replay and the remaining driver/source boundaries are explained. Source notes and frozen certificates were compared in context; no large scientific run was repeated. FP III v7 only cites this calculation companion and retains its standalone theorems.",
+      "main_tex_lf_sha256": "a036564181a0c13ab1fad776493318091bcec821d05947bf3026a9f7e7f863db",
+      "result_hashes": {
+        "fixed_points_cubic_heat_trace_bound": "affd30c6fa9ca9d5c8e08f0349cc92b419afd84ade8d666125f05af483dba54a",
+        "fixed_points_l11_phase_channel": "a4f90611cc10dff2ad8945b0f05d19bb9b7373bf64b1b3b7617c4fa4928f0f0f",
+        "fixed_points_finite_mode_recurrence_boundary": "7bdcad1f8dc2b752e1e4ada03fcea6e7c95d4dbf5e065f04718096fcc507f798"
+      }
+    },
+    {
+      "id": "FP-CONSOLIDATION-PROVENANCE-20260912",
+      "paper_id": "finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual editorial integration",
+      "state": "historical_context",
+      "result_ids": [
+        "fixed_points_frontier_consolidation_20260911"
+      ],
+      "anchors": [
+        "Computational Evidence and Reproducibility",
+        "fixed\\_points\\_frontier\\_consolidation\\_20260911"
+      ],
+      "assessment": "The consolidation artifact is provenance and prior frontier organization, not an additional theorem or an independent numerical certificate. The companion identifies its frozen record alongside the three substantive result owners and uses their later detailed bounds. No stale progress counter is imported as a current scientific verdict.",
+      "main_tex_lf_sha256": "a036564181a0c13ab1fad776493318091bcec821d05947bf3026a9f7e7f863db",
+      "result_hashes": {
+        "fixed_points_frontier_consolidation_20260911": "c27196ef86037725588e128dd6fd8e93d7a665629928157d4e4a047ce664a0c8"
+      }
+    },
+    {
+      "id": "COHESIVE-PROJECTOR-COMPLETENESS-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual editorial integration",
+      "state": "integrated",
+      "result_ids": [
+        "q79_continuum_finite_intertwiner_cutset"
+      ],
+      "anchors": [
+        "Retained projectors are not the whole ambient projector",
+        "its unqualified whole-projector gap estimate is corrected explicitly",
+        "common rectifiable"
+      ],
+      "assessment": "Contextual import with an explicit source correction, not blanket validation: exact isometric intertwining and rational witnesses are retained. The old global projector estimate from embedding residual and gap alone is false when transverse zero modes exist. V4 gives an exact counterexample, the missing completeness condition and a Riesz-contour replacement on common operator domains. Literal kernels need not persist under small perturbation. The source artifact is immutable; this review records the rejected subclaim and the repair.",
+      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
+      "result_hashes": {
+        "q79_continuum_finite_intertwiner_cutset": "565219b949d9f82cb39090489994450f7dfc2a54e9abbb4a28332a3ab2d73891"
       }
     }
   ]

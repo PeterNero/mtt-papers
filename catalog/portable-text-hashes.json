@@ -601,28 +601,28 @@
       "sha256_lf": "483597dae8e82e68b31d2e187e22f4b8c8ff8821621d782d8162445bf16fbdac"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 72676,
-      "sha256_lf": "f7e94070a502c9442b553aacc57a24413cbbd657bcdc889c0d27c494c76d71d5"
+      "bytes_lf": 75934,
+      "sha256_lf": "666c28f8c87d187dd4f9d66c2630159f248da02f24ac199c9aabc609c6405f7e"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/REVISION_AUDIT.md": {
-      "bytes_lf": 6546,
-      "sha256_lf": "c6c6d0d79cbdbb51da3524a3b2eb58d9cbfbeda13496f3a09d5021e816826ae2"
+      "bytes_lf": 8165,
+      "sha256_lf": "e0bd24c584964ef316f6d0de46a70e8e6969f429ae274c03d62e6af46ab8ab60"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.bib": {
-      "bytes_lf": 4744,
-      "sha256_lf": "01b0c5b5d91ba4d26e719973af8bda739be4e2cfb310aa30419b8a5ec1293fdb"
+      "bytes_lf": 5243,
+      "sha256_lf": "a87105cf9cd6cc0e598f499c756d91a4b0a9e3cb7990894fa6682512515716d8"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex": {
-      "bytes_lf": 68400,
-      "sha256_lf": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7"
+      "bytes_lf": 71628,
+      "sha256_lf": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/metadata.json": {
-      "bytes_lf": 5221,
-      "sha256_lf": "df1acfb201e021f5c36655f918f18758b9c04e84c61f9de301ea80df535904ab"
+      "bytes_lf": 5268,
+      "sha256_lf": "589d73c342906afee117b0bc9a02e946334e47505b55cd73e532220b5ea2073b"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/paper.md": {
-      "bytes_lf": 72585,
-      "sha256_lf": "5e56609daf24314b8d3031e58b7c00e8eb8575e4531e8f60acf47860725a5460"
+      "bytes_lf": 75833,
+      "sha256_lf": "8372da495fdf01c0638100dead2e5d2b49c401df1e0e9c333db867874c4c378f"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/series.sty": {
       "bytes_lf": 3676,
@@ -1132,6 +1132,30 @@
       "bytes_lf": 3784,
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
+    "papers/finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds/RESEARCH_INTEGRATION.md": {
+      "bytes_lf": 7148,
+      "sha256_lf": "16e054675a5796dda89de950461150da5907e9e7863aabf73cc2fb200c7dc173"
+    },
+    "papers/finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds/REVISION_AUDIT.md": {
+      "bytes_lf": 2811,
+      "sha256_lf": "01869e100604e4be72271147b893924e176238ac9aad57f189debe98ab3a58db"
+    },
+    "papers/finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds/main.tex": {
+      "bytes_lf": 26250,
+      "sha256_lf": "a036564181a0c13ab1fad776493318091bcec821d05947bf3026a9f7e7f863db"
+    },
+    "papers/finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds/metadata.json": {
+      "bytes_lf": 3209,
+      "sha256_lf": "013e04a3358e5c1991c4f8f54fbaf7d722169555e46f98c3ea73c100fdc8e9de"
+    },
+    "papers/finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds/paper.md": {
+      "bytes_lf": 26710,
+      "sha256_lf": "ad2967c4bed967f2edae6ccd09c6d2acd1fbc2b4fd9cbba97dd515dea152b61e"
+    },
+    "papers/finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds/refs.bib": {
+      "bytes_lf": 2281,
+      "sha256_lf": "3235e680e212b3cb2376ffcec89e050f52cd25812d84783170d61a4c683db81a"
+    },
     "papers/finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c/RESEARCH_INTEGRATION.md": {
       "bytes_lf": 665,
       "sha256_lf": "66afcda77cd6296448f5ff4d198dc0c9ba1b177034638f195ca263f7b459122e"
@@ -1217,28 +1241,28 @@
       "sha256_lf": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 6363,
-      "sha256_lf": "7c43c6065f1e18cba5b7a771c230b134ee550ffbe08c8793b1bae70e94f6104e"
+      "bytes_lf": 611,
+      "sha256_lf": "95521e02a9c16821cd16f78ed6bdaaaf41bd981b87e1d0ac42d4dd98fa05981d"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/REVISION_AUDIT.md": {
-      "bytes_lf": 5163,
-      "sha256_lf": "14e57120534c944ebd5f7dfde4d1d6744612d66bc006d99d91be74bdf62ca8d6"
+      "bytes_lf": 5808,
+      "sha256_lf": "5b89018a4b04fb0acac30c89a7813a2cea1b81850333a88eeb772f165d8ed328"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/main.tex": {
-      "bytes_lf": 22284,
-      "sha256_lf": "7ba829182e55b626f875622823d0dab590000f86c532abc7b44978309032bb0e"
+      "bytes_lf": 24086,
+      "sha256_lf": "b455229ff01a17bc555ad822b89c412f31cb42cacbbcae26d0927708b5cbf688"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/metadata.json": {
-      "bytes_lf": 6387,
-      "sha256_lf": "ff11d2ff3b38aba5ac57e2ce1bc0cfc9d2649b54569db34d7779d1f60d2bdbd2"
+      "bytes_lf": 6401,
+      "sha256_lf": "b9146a43ff8d4526b4db28f7d19c62e489c9ccaa993940f7363cad10cdb73de6"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/paper.md": {
-      "bytes_lf": 21881,
-      "sha256_lf": "a3790afc726e43f57380c463ce9b13a1bc1bf9885f6c5c492224a64d6f63131b"
+      "bytes_lf": 23598,
+      "sha256_lf": "1e28583c6743890cb1dde027b3580e5716630fdb6434dd7a2a32f5bb6443cbb8"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/refs.bib": {
-      "bytes_lf": 3255,
-      "sha256_lf": "a025981f4252d75be093102a0f9ba352296173c56c0b85177e8a6678aed29870"
+      "bytes_lf": 3837,
+      "sha256_lf": "65376b5e6b2af2ea44e1140155a3e78158ed681ba9284c9932a87f2f49c8be8f"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/series.sty": {
       "bytes_lf": 15299,
@@ -3655,5 +3679,5 @@
   },
   "normalization": "CRLF and CR converted to LF; all other bytes preserved",
   "schema": "mtt.portable-text-hashes.v1",
-  "source_ref": "4c59f3bd182d58c5b09e498b02316be78b6a9c16"
+  "source_ref": "14b854a6796c2407a37cdf893a2174edd2c796ca"
 }

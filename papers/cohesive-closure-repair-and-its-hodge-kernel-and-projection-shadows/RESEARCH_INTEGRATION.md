@@ -34,12 +34,12 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cohesive_superconnection/artifact.json); SHA-256 `8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8`.
 
-Reviewed 2026-09-12: The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem.
+Reviewed 2026-09-12: The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:229`: `Covariant residual-Hessian identity`
-- `main.tex:484`: `Endomorphism untwisting`
-- `main.tex:598`: `Hodge and kernel package`
-- `main.tex:1186`: `The q79 benchmark and its exact boundary`
+- `main.tex:243`: `Covariant residual-Hessian identity`
+- `main.tex:498`: `Endomorphism untwisting`
+- `main.tex:612`: `Hodge and kernel package`
+- `main.tex:1247`: `The q79 benchmark and its exact boundary`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -57,11 +57,11 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_maurer_cartan_repair/artifact.json); SHA-256 `4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6`.
 
-Reviewed 2026-09-12: The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred.
+Reviewed 2026-09-12: The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:541`: `Cohesive Maurer--Cartan repair`
-- `main.tex:720`: `Nonlinear repair descent`
-- `main.tex:760`: `For a finite connected cover with unitary local-system transitions`
+- `main.tex:555`: `Cohesive Maurer--Cartan repair`
+- `main.tex:734`: `Nonlinear repair descent`
+- `main.tex:774`: `For a finite connected cover with unitary local-system transitions`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -93,11 +93,11 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/local_cech_hilbert_descent/artifact.json); SHA-256 `b6d9a73e29ec3b2e832c99544efa1a8b364db84e0b9ca91c99ad8d26a9e99912`.
 
-Reviewed 2026-09-12: The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred.
+Reviewed 2026-09-12: The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:541`: `Cohesive Maurer--Cartan repair`
-- `main.tex:720`: `Nonlinear repair descent`
-- `main.tex:760`: `For a finite connected cover with unitary local-system transitions`
+- `main.tex:555`: `Cohesive Maurer--Cartan repair`
+- `main.tex:734`: `Nonlinear repair descent`
+- `main.tex:774`: `For a finite connected cover with unitary local-system transitions`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -115,11 +115,11 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/local_closure_repair_descent/artifact.json); SHA-256 `b83aadb5b7d611f11db0d5c307b897cc7230e0f7ebf06681beae4abbe789cafc`.
 
-Reviewed 2026-09-12: The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred.
+Reviewed 2026-09-12: The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:541`: `Cohesive Maurer--Cartan repair`
-- `main.tex:720`: `Nonlinear repair descent`
-- `main.tex:760`: `For a finite connected cover with unitary local-system transitions`
+- `main.tex:555`: `Cohesive Maurer--Cartan repair`
+- `main.tex:734`: `Nonlinear repair descent`
+- `main.tex:774`: `For a finite connected cover with unitary local-system transitions`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -165,10 +165,10 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_v3w9_full_residual/artifact.json); SHA-256 `937039df105881a4dcbf1ed31d86ab842b5da2ee6df832e7c834d9eb71cae441`.
 
-Reviewed 2026-09-12: Version 3 displays all six extra residuals, fixed-chart derivatives including alpha-prime/2, the lane incidence matrix and the 19-to-25-block correction. It explains that allowed support is neither a numerical nonzero matrix nor the full Hilbert-space dimension. The exact kernel intersection is retained, while the old candidate audit is explicitly historical so later hidden-carrier/HYM advances are not regressed.
+Reviewed 2026-09-12: Version 3 displays all six extra residuals, fixed-chart derivatives including alpha-prime/2, the lane incidence matrix and the 19-to-25-block correction. It explains that allowed support is neither a numerical nonzero matrix nor the full Hilbert-space dimension. The exact kernel intersection is retained, while the old candidate audit is explicitly historical so later hidden-carrier/HYM advances are not regressed. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:1245`: `The explicit residual and its block support`
-- `main.tex:1356`: `These are imported compiler results`
+- `main.tex:1306`: `The explicit residual and its block support`
+- `main.tex:1417`: `These are imported compiler results`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -180,11 +180,19 @@ Same-source continuum-to-finite intertwiner cutset.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_continuum_finite_intertwiner_cutset/artifact.json); SHA-256 `565219b949d9f82cb39090489994450f7dfc2a54e9abbb4a28332a3ab2d73891`.
+
+Reviewed 2026-09-12: Contextual import with an explicit source correction, not blanket validation: exact isometric intertwining and rational witnesses are retained. The old global projector estimate from embedding residual and gap alone is false when transverse zero modes exist. V4 gives an exact counterexample, the missing completeness condition and a Riesz-contour replacement on common operator domains. Literal kernels need not persist under small perturbation. The source artifact is immutable; this review records the rejected subclaim and the repair.
+
+- `main.tex:844`: `Retained projectors are not the whole ambient projector`
+- `main.tex:1760`: `its unqualified whole-projector gap estimate is corrected explicitly`
+- `main.tex:876`: `common rectifiable`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## q79_rank102_qutrit_reduction
 
@@ -200,9 +208,9 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_rank102_qutrit_reduction/artifact.json); SHA-256 `18b978d0bab66d3f40cf45f8ceab33fd5c6fe6bb031ae8f66c10721fdc5f43d7`.
 
-Reviewed 2026-09-12: The additional E[3] invariance and 22 neutral external-mode assumptions are displayed beside the 1548 count, hidden character multiplicities and general sum-of-squares formula. This is a conditional character reduction, not 1548 accepted numerical coefficients and not a retraction of dense structural support.
+Reviewed 2026-09-12: The additional E[3] invariance and 22 neutral external-mode assumptions are displayed beside the 1548 count, hidden character multiplicities and general sum-of-squares formula. This is a conditional character reduction, not 1548 accepted numerical coefficients and not a retraction of dense structural support. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:1341`: `There is also a lawful conditional sparsification`
+- `main.tex:1402`: `There is also a lawful conditional sparsification`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -220,11 +228,11 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_nonzero_defect_hessian_witness/artifact.json); SHA-256 `1c17362537af94ecbbb40de8944ae0c1fd583aa3ffd31231b55e0c6eeef91d15`.
 
-Reviewed 2026-09-12: The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication.
+Reviewed 2026-09-12: The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:310`: `Why the correction cannot be dropped`
-- `main.tex:374`: `Repair monotonicity and tangent generator`
-- `main.tex:1024`: `Information erased by the square`
+- `main.tex:324`: `Why the correction cannot be dropped`
+- `main.tex:388`: `Repair monotonicity and tangent generator`
+- `main.tex:1085`: `Information erased by the square`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -242,11 +250,11 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_first_order_phase_loss_witness/artifact.json); SHA-256 `9a0a92dad8ad6d461b0d67c61c8b96c266d43c94a1f83a626063c786805a1496`.
 
-Reviewed 2026-09-12: The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication.
+Reviewed 2026-09-12: The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:310`: `Why the correction cannot be dropped`
-- `main.tex:374`: `Repair monotonicity and tangent generator`
-- `main.tex:1024`: `Information erased by the square`
+- `main.tex:324`: `Why the correction cannot be dropped`
+- `main.tex:388`: `Repair monotonicity and tangent generator`
+- `main.tex:1085`: `Information erased by the square`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -278,12 +286,12 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_covariant_residual_hessian/artifact.json); SHA-256 `247b1b52198dc250f80293e6807f1d2fc7ac126a930c9642ef2b5a3fb7a74921`.
 
-Reviewed 2026-09-12: The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem.
+Reviewed 2026-09-12: The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:229`: `Covariant residual-Hessian identity`
-- `main.tex:484`: `Endomorphism untwisting`
-- `main.tex:598`: `Hodge and kernel package`
-- `main.tex:1186`: `The q79 benchmark and its exact boundary`
+- `main.tex:243`: `Covariant residual-Hessian identity`
+- `main.tex:498`: `Endomorphism untwisting`
+- `main.tex:612`: `Hodge and kernel package`
+- `main.tex:1247`: `The q79 benchmark and its exact boundary`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -301,11 +309,11 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_reversible_dissipative_repair/artifact.json); SHA-256 `d8ca1cee978ee72b57deb6990b50614a058d499b1a12f249f46a71cc460892cf`.
 
-Reviewed 2026-09-12: The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication.
+Reviewed 2026-09-12: The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:310`: `Why the correction cannot be dropped`
-- `main.tex:374`: `Repair monotonicity and tangent generator`
-- `main.tex:1024`: `Information erased by the square`
+- `main.tex:324`: `Why the correction cannot be dropped`
+- `main.tex:388`: `Repair monotonicity and tangent generator`
+- `main.tex:1085`: `Information erased by the square`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -505,10 +513,10 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_bht_transported_metric/artifact.json); SHA-256 `67a0109c6a7c7d02b97e863af1f6ebdeab3a66b27e8e37f4adc4733bb368fee7`.
 
-Reviewed 2026-09-12: Version 3 gives the transported metric, physical distortion, adjoint and chain-commutator formulas, the I2 versus diag(4,1/9) witness, and the polar product criterion. Bounded invertibility and domain transport are stated. The related embedding counterexample repairs the formerly overbroad projection claim; a physical analytic BHT map remains unconstructed.
+Reviewed 2026-09-12: Version 3 gives the transported metric, physical distortion, adjoint and chain-commutator formulas, the I2 versus diag(4,1/9) witness, and the polar product criterion. Bounded invertibility and domain transport are stated. The related embedding counterexample repairs the formerly overbroad projection claim; a physical analytic BHT map remains unconstructed. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:838`: `The transported-metric result makes the latter task concrete`
-- `main.tex:820`: `For example, let`
+- `main.tex:899`: `The transported-metric result makes the latter task concrete`
+- `main.tex:834`: `For example, let`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -1044,9 +1052,9 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json); SHA-256 `a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa`.
 
-Reviewed 2026-09-12: The manuscript imports the exact dependency organization into GAS, SYN and BV4 and identifies shared-line calculus and Galerkin/Feshbach execution as derived arrows. It states explicitly that three structured packet types are not three scalar parameters and that complete physical source acceptance remains open.
+Reviewed 2026-09-12: The manuscript imports the exact dependency organization into GAS, SYN and BV4 and identifies shared-line calculus and Galerkin/Feshbach execution as derived arrows. It states explicitly that three structured packet types are not three scalar parameters and that complete physical source acceptance remains open. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:1541`: `The later endpoint-factorization record organizes seven acceptance rows`
+- `main.tex:1602`: `The later endpoint-factorization record organizes seven acceptance rows`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 

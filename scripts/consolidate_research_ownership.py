@@ -16,6 +16,7 @@ COH = "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
 QM = "modal-triplet-theory-from-mtt-to-quantum-mechanics"
 QG = "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d"
 FP3 = "fixed-points-iii-disturbance-damping-balance-and-stability"
+FP_CALC = "finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds"
 PROTO = "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8"
 PARAM = "modal-triplet-theory-parameters-closure-and-structural-ae734bf0"
 ACTION = "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538"
@@ -32,7 +33,7 @@ FAMILY_OWNER = {
     "beq_external": STOCH, "q79_total_superconnection": PROTO,
     "q79_mirror_current": QG, "unified_source_g3gms": COH,
     "causal_base_constraint_fiber": COH, "eta9_three_cycle_current": FLUX,
-    "fixed_points_frontier_20260911": FP3,
+    "fixed_points_frontier_20260911": FP_CALC,
 }
 
 REVIEW_STATES = {"integrated", "summary_present", "addition_needed", "historical_context"}

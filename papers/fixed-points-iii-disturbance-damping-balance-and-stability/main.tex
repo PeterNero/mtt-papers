@@ -31,7 +31,7 @@
 
 \title{Fixed Points III: Disturbance--Damping Balance and Stability}
 \author{Peter Nero}
-\date{September 2026\\Version 6}
+\date{September 2026\\Version 7}
 
 \begin{document}
 \maketitle
@@ -55,6 +55,18 @@ homogenization is made conditional on an enhanced functional central-limit
 theorem, tightness, and rough-path convergence; the symmetrized Green--Kubo tensor
 is $D=\int_0^\infty(R+R^\ast)\,ds$.
 \end{abstract}
+
+\section*{Version 7 Revision Note}
+\noindent\textbf{Supersedes.} Version 6, the previous authoring revision;
+version 5 remains the released edition.
+\textbf{Reason.} The finite-mode calculations now have a separate manuscript
+owner and must not be mistaken for a realization of the mixing hypothesis.
+\textbf{Resolution.} Adds a scoped companion citation and distinguishes
+recurrence, finite-time transition control, and the stochastic-driver limit.
+\textbf{Retained result.} The deterministic, stochastic, and conditional
+homogenization theorems and their proofs are unchanged.
+\textbf{Remaining boundary.} A selected physical noise source and controlled
+reduced-dynamics limit are still required.
 
 \section*{Version 6 Revision Note}
 \noindent\textbf{Supersedes.} Version 5, which remains the released edition.
@@ -385,6 +397,20 @@ Ordinary mixing is not enough: the second iterated integrals determine whether
 the limiting equation is the stated Stratonovich equation or carries an
 additional bracket drift.
 
+\paragraph{A concrete candidate and its limit.}
+The calculation companion \cite{NeroFiniteMode2026} constructs a supplied
+radial quantum Hamiltonian with finitely many spatial modes but no
+occupation cutoff. It has compact resolvent and recurrent state orbits.
+Its all-occupation equilibrium bounds and certified nonzero channel
+transition are genuine results at that model's declared boundary,
+normalization, sector, and preparation. They do not make its nonconstant
+Gibbs correlations mixing. Thus increasing the occupation cutoff alone
+does not supply the enhanced invariance principle below. A suitable
+system--bath or spatial/volume limit, and its reduced path law, must be
+established separately. The detailed domain construction and calculations
+belong to that companion; the present paper retains the analytic
+disturbance and homogenization statements.
+
 Write $\Psi=X+Y$ with $X=P\Psi$ and $Y=Q\Psi$. For frozen $x$, let the fast
 flow for $Y$ have invariant measure $\mu_x$, and decompose
 \[
@@ -541,7 +567,15 @@ positive minimum; compare the spectral-geometric background in
 
 % BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
 \section*{Computational Evidence and Reproducibility}
-The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+The analytic disturbance and homogenization statements are proved or
+explicitly conditioned in this paper. The finite-mode calculation discussed
+in Section~7 has its own manuscript and reproduction references
+\cite{NeroFiniteMode2026}; its four frozen records are held in the
+\href{https://github.com/PeterNero/mtt-results-repro}{curated MTT results
+repository}. They concern the supplied radial model, cubic heat-trace bound,
+L11 pure channel, and historical frontier map. This citation does not
+replace the enhanced invariance principle or identify the calculated
+transition with a selected physical noise law.
 % END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \end{document}

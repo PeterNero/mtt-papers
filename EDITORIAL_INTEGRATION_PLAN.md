@@ -1,6 +1,7 @@
 # Editorial Integration Plan
 
-Checkpoint: 2026-09-12, after SM v4 and cohesive v3.
+Checkpoint: 2026-09-12, after the finite-mode companion v1, FP III v7 and
+cohesive v4. SM v4 remains unchanged.
 This is an editorial queue, not a list of unproved research claims.
 No Zenodo upload or publication is authorized.
 
@@ -26,9 +27,9 @@ Both manuscripts have regenerated Markdown, plain metadata abstracts, new
 version deltas, and rebuilt PDFs with all 16/25 pages visually inspected.
 These are current authoring versions, not claims that Zenodo has changed.
 
-## Next: Four Fixed-Point Calculation Imports
+## Completed: Four Fixed-Point Calculation Imports
 
-The four confirmed additions are one coherent calculation package, not four
+The four formerly confirmed additions are one coherent calculation package, not four
 new foundational axioms:
 
 1. fixed_points_frontier_consolidation_20260911: organize the accepted model,
@@ -46,14 +47,21 @@ new foundational axioms:
    Do not promote the pure-channel result to a mixed thermal result or imply
    full independent worker replay when only three norm columns were checked.
 
-Preferred placement: a standalone calculation companion in the FP III family,
-with its own readable setup, proof/evidence ownership and reproduction references.
-FP III itself needs only a scoped bridge/citation and the correct driver/limit
-distinction. Do not append all numerical matrices to the foundational paper.
+Placement completed: `finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds`
+is a new nine-page calculation companion, with its own readable setup,
+proof/evidence ownership, contextual input ledger and reproduction references.
+The first record is historical provenance; the three substantive records are
+integrated. FP III v7 adds a scoped citation and driver/limit distinction;
+its foundational theorems and proofs are unchanged. All nine and ten pages were
+rendered and visually reviewed. Four focused numerical-import tests pass.
 
-Before accepting these four as integrated, bind the companion source and PDF
-in the metadata/review machinery as well as the main-paper citation. A queue
-entry or detached Markdown plan is not manuscript integration.
+Cohesive v4 additionally reviews the older continuum/finite cutset. Its exact
+intertwining statement survives, but its whole-projector estimate from a
+retained residual alone is false when extra transverse zero modes exist.
+The manuscript gives an exact counterexample, completeness condition and
+Riesz-cluster replacement. All 27 pages were inspected; five source-regression
+tests pass. The frozen artifact is preserved, with the subclaim correction
+recorded in Kernel rather than silently overwriting historical evidence.
 
 ## Remaining Contextual Review
 
@@ -63,7 +71,7 @@ do not infer absence or completion from an identifier search.
 
 | Order | Owner family | Unreviewed | Focus |
 |---|---|---:|---|
-| 1 | Cohesive source | 56 | Separate local transfer witnesses, finite signed-edge calculus, endpoint contracts and physical geometry. Prefer a focused companion if the main synthesis would become an inventory. |
+| 1 | Cohesive source | 55 | Separate local transfer witnesses, finite signed-edge calculus, endpoint contracts and physical geometry. Prefer a focused companion if the main synthesis would become an inventory. |
 | 2 | Flux/q79 | 51 | Read latest correction before earlier source-route claims. Preserve local versus global domains, auxiliary versus physical spectral class, and hidden existence. |
 | 3 | Hull-Strominger | 37 | Common-source realization, moment-map role reduction and current hidden existence without relabeling symbolic formulas as evaluated coefficients. |
 | 4 | Proto-spinor | 29 | Shared-line and representation imports; distinguish finite algebra, graded matter index, first-order operators and the physical endpoint. |
@@ -76,7 +84,12 @@ do not infer absence or completion from an identifier search.
 | 11 | Perturbative QG | 6 | State the established perturbative/conditional scope, not UV-complete gravity. |
 | 12 | Parameters | 2 | No double-counting of shared inputs, profile coordinates and derived outputs. |
 | 13 | Closure strain | 1 | Preserve local carrier/strain and physical-spacetime distinctions. |
-| | Total | 254 | These are not 254 confirmed omissions. |
+| | Total | 253 | These are not 253 confirmed omissions. |
+
+The broad `mathematical_language_atlas` remains unreviewed. It is an evolving
+multi-thousand-line artifact with later appendices, not merely a July status
+snapshot. Review it by source family; do not relabel the entire artifact as
+historical after reading only its early inventory or newest tail.
 
 ## Acceptance And Continuation
 
@@ -93,5 +106,8 @@ do not infer absence or completion from an identifier search.
   public results paper lock from committed manuscript state.
 - End the next handoff with exact completed result IDs and remaining counts.
 
-Current totals: 305 assigned, 51 reviewed (46 integrated, one historical,
-four confirmed additions), 254 unreviewed, zero stale contextual reviews.
+Current totals: 305 assigned, 52 reviewed (50 integrated, two historical),
+zero currently confirmed additions, 253 unreviewed, zero stale contextual
+reviews. The original 19 additions/details are now handled. Further reviews
+may legitimately identify new additions or corrections; these counts are not
+scientific proof-completion scores.

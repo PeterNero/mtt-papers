@@ -1,0 +1,353 @@
+---
+abstract: |
+  Can an interacting finite-mode closure model support controlled quantum dynamics, and can that same model supply an irreversible stochastic driver? We answer these questions separately. For a supplied radial potential and Dirichlet/Friedrichs quantization, coercivity constructs an interacting Hamiltonian without an occupation cutoff. Compact resolvent gives quantum recurrence, not late-time mixing. In a seven-spatial-mode realization, an exact angular average of the squared cubic interaction sharpens all-occupation equilibrium trace-norm bounds. A separate 489-state calculation, lifted into the radial operator domain and tested against outside-state residuals, encloses a nonzero transition probability in $`[0.05568344585,0.05936794417]`$ at the declared long time. We explain the source, preparation, normalization, and error certificates behind these numbers. Temperature, coupling, boundary quantization, and the physical source are inputs, not predictions. The results provide a calculation companion to Fixed Points III without assuming its stochastic-limit hypotheses have already been realized.
+author:
+- Peter Nero
+bibliography:
+- refs.bib
+current_version: v1
+date: September 2026, Version 1
+generated_from_main_tex_sha256: a036564181a0c13ab1fad776493318091bcec821d05947bf3026a9f7e7f863db
+paper_id: finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds
+release_state: current_revised_tex
+title: |
+  Finite-Mode Closure Dynamics:
+  Recurrence, Equilibrium Bounds,
+  and a Certified Transition Channel
+---
+
+# Version 1 revision note
+
+#### Supersedes.
+
+No published paper. This is the first manuscript home for the finite-mode calculation package recorded on 11 September 2026.
+
+#### Reason.
+
+The model, proofs, and numerical certificates require a coherent explanation outside the foundational Fixed Points sequence.
+
+#### Resolution.
+
+The radial construction, recurrence boundary, equilibrium comparison, and pure-channel calculation are presented together.
+
+#### Retained content.
+
+FP III retains its deterministic and stochastic disturbance theorems as independently readable results.
+
+#### Remaining boundary.
+
+This supplied model does not select a physical noise law, continuum limit, or q79 endpoint.
+
+# The question and the three different objects
+
+A finite matrix can display a transition without saying how much error comes from the states it omits. A Gibbs density can be stationary without being approached by a closed system. A recurrent quantum model can be well defined without producing Brownian noise. These distinctions organize this paper rather than appearing only as disclaimers after the numbers.
+
+The starting object is a nonlinear *field potential*, quantized on a specified coefficient-space domain. Its quantum wavefunction still evolves linearly and unitarily. The second object is an equilibrium density for that Hamiltonian at a supplied temperature and momentum. The third is a particular prepared incoming channel and its transition into an outgoing channel. Static and dynamical errors belong to different comparisons.
+
+FP III proves disturbance–damping estimates and a conditional homogenization statement . It does not assert that any finite quantum model provides the required mixing environment. Here we construct and analyze one such candidate model, exhibit useful calculations, and identify precisely why more occupation states alone cannot complete that driver argument. The proof architecture uses closed forms, the spectral theorem, and min–max comparison ; those are established tools, not new consequences of MTT.
+
+#### Reading map.
+
+Section 2 specifies the Hamiltonian and its radial boundary. Section 3 explains recurrence and energy control. Section 4 fixes the seven-mode calculation. Sections 5 and 6 give the equilibrium and channel certificates. Section 7 separates physical inputs from numerical-analysis choices and states the remaining route to an effective stochastic law.
+
+# A radial Hamiltonian with all occupations
+
+Choose $`m,v,\epsilon>0`$, a compact flat torus, and a finite real orthonormal Fourier basis $`f_1,\ldots,f_M`$, including the constant mode. Write $`\phi_q(x)=\sum_jq_jf_j(x)`$. The canonical fluctuation has lower boundary $`\phi\ge-v/\epsilon`$, and its potential is
+``` math
+\begin{equation}
+ U_\epsilon(\phi)=\frac{m^2}{2}\phi^2
+       \left(1+\frac{\epsilon\phi}{2v}\right)^2.
+ \label{eq:potential}
+\end{equation}
+```
+Equivalently the cubic and quartic coefficients in $`m^2\phi^2/2+\epsilon g\phi^3/3+\epsilon^2h\phi^4/4`$ are $`g=3m^2/(2v)`$ and $`h=m^2/(2v^2)`$. The shared phase identification in the source does not turn the second algebraic zero at $`-2v/\epsilon`$ into another radial vacuum: it lies outside this chart’s physical half-line. The full-line polynomial remains an auxiliary calculation tool.
+
+Let
+``` math
+\begin{align}
+ D_\epsilon&=\{q:\min_x\phi_q(x)>-v/\epsilon\},\\
+ V_\epsilon(q)&=\int\left(\tfrac12|\nabla_x\phi_q|^2+
+                         U_\epsilon(\phi_q)\right)dx,\\
+ \mathfrak h_\epsilon[\psi]&=
+ \tfrac12\|\nabla_q\psi\|_2^2+\int_{D_\epsilon}V_\epsilon|\psi|^2\,dq,
+ \label{eq:form}\\
+ Q(\mathfrak h_\epsilon)&=H_0^1(D_\epsilon)\cap
+              \{\psi:\int V_\epsilon|\psi|^2dq<\infty\}.
+\end{align}
+```
+The flat measure $`dq`$ and the Dirichlet/Friedrichs extension are *supplied quantization choices*. A classical radial constraint does not by itself select the reduced quantum measure or every possible self-adjoint boundary extension.
+
+<div id="prop:radial" class="proposition">
+
+**Proposition 1** (Coercivity and the specified quantum evolution). *The form in <a href="#eq:form" data-reference-type="eqref" data-reference="eq:form">[eq:form]</a> defines a nonnegative self-adjoint Hamiltonian $`H_\epsilon`$ with compact resolvent. If $`J`$ denotes extension by zero and $`H_{\rm osc}=\sum_j\omega_j(N_j+1/2)`$, where $`\omega_j^2=m^2+|k_j|^2`$, then
+``` math
+\begin{equation}
+ \mathfrak h_\epsilon[\psi]\ge
+ \tfrac14\langle J\psi,H_{\rm osc}J\psi\rangle,\qquad
+ \operatorname{Tr}e^{-\beta H_\epsilon}\le
+ \prod_j[2\sinh(\beta\omega_j/8)]^{-1},\quad\beta>0.
+ \label{eq:coercive}
+\end{equation}
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* For $`x=\epsilon\phi/v\ge-1`$, $`(1+x/2)^2-1/4=(x+1)(x+3)/4\ge0`$. Thus $`U_\epsilon\ge m^2\phi^2/8`$ on the allowed domain. The kinetic and spatial-gradient terms dominate their quarter-oscillator counterparts. Zero extension is legitimate on $`H_0^1`$, giving the form inequality. The domain is open, convex, and nonempty; the locally bounded nonnegative potential and Dirichlet kinetic form have a closed, densely defined sum. Its Friedrichs operator is therefore self-adjoint. The form bounds both the coefficient-space gradient and $`|q|^2`$ moment. Rellich compactness on bounded sets and the moment tail bound give compact embedding of the form domain. Min–max comparison with the full oscillator, followed by summing eigenvalue exponentials, proves the trace estimate. No operator-monotonicity assertion for the exponential is used. ◻
+
+</div>
+
+There is no occupation cutoff in this proposition: the Hilbert space is infinite dimensional even though only $`M`$ spatial modes were chosen. Unitary evolution $`e^{-itH_\epsilon}`$ exists at every real time. Neither that existence result nor the finite Gibbs trace removes the spatial cutoff or specifies physical values of $`m,v,\epsilon`$.
+
+# What recurrence does, and does not, permit
+
+<div id="thm:recurrence" class="theorem">
+
+**Theorem 2** (Finite-mode recurrence boundary). *Every individual state orbit of $`H_\epsilon`$ is norm almost periodic. Every trace-class density orbit is trace-norm almost periodic. For bounded observables $`A,B`$, the stationary Gibbs correlation $`\operatorname{Tr}(\rho_\beta A(t)B)`$ is almost periodic. In particular a nonconstant such correlation cannot converge to a mixing limit as $`t\to+\infty`$.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* Compact resolvent supplies an orthonormal eigenbasis with discrete eigenvalues tending to infinity. Approximate a vector by finitely many eigenvectors. The truncated orbit is a finite trigonometric sum, and its norm error is uniform in time by unitarity. For a trace-class operator, finite spectral compressions converge in trace norm, again uniformly along the orbit. For correlations, first truncate the Gibbs sum, then approximate the finitely many vectors $`B e_j`$ in the eigenbasis. Boundedness of $`A,B`$ controls the errors uniformly. This gives uniform trigonometric approximants. Finally, arbitrarily late almost periods of an almost periodic function force any one-sided limiting value to be its value at every fixed time. A nonconstant function therefore has no such limit. ◻
+
+</div>
+
+This is not operator-norm recurrence of the entire propagator family. Unbounded observables require additional domain and integrability control. The theorem rules out nontrivial *asymptotic mixing at fixed model*, not transient dephasing, finite-time effective behavior, or irreversible limits of a sequence of larger open systems. A stationary Gibbs density exists but need not be dynamically reached.
+
+## Energy control is useful but is a different result
+
+The source calculation also gives a boundary-compatible preparation . For the seven-mode real basis, $`\|\phi_q\|_\infty\le\sqrt{7/V}|q|`$. Put $`R=v\sqrt{V}/(\epsilon\sqrt7)`$, and filter the free Gibbs state with a $`C^1`$ window $`f`$: it equals one through $`3R/4`$ and zero beyond $`7R/8`$. A cubic transition gives $`|\nabla f|\le12/R`$. If $`\delta\ge\Pr_\beta(|q|>3R/4)<1`$, then
+``` math
+\begin{equation}
+ \rho_f=\frac{f\rho_\beta f}{\operatorname{Tr}(f^2\rho_\beta)},\qquad
+ \|\rho_f-\rho_\beta\|_1\le2\sqrt{\delta}.
+\end{equation}
+```
+This is filtering of a mathematical preparation, not a special role for measurement. A discontinuous boundary projection would generally have infinite kinetic energy; the smooth window avoids that failure.
+
+The localization estimate in gives
+``` math
+\begin{equation}
+ \operatorname{Tr}(H_\epsilon\rho_f)\le
+ E_*=\frac{529}{256}\frac{E_\beta+72\delta/R^2}{1-\delta},
+ \qquad E_\beta=\tfrac12\sum_j\omega_j\coth(\beta\omega_j/2).
+\end{equation}
+```
+Energy conservation and <a href="#eq:coercive" data-reference-type="eqref" data-reference="eq:coercive">[eq:coercive]</a> imply, at every time,
+``` math
+\begin{equation}
+ \operatorname{Tr}(\mathbf1_{N>L}J\rho_tJ^*)\le
+ \min\left(1,\frac{4E_*-E_{\rm vac}}{m(L+1)}\right).
+ \label{eq:tight}
+\end{equation}
+```
+This establishes state approximability. It does not identify a projected exact state with a state evolved by a truncated matrix. Nor does a first moment bound imply the higher moments required by a dynamical normal-form remainder. These are distinct analytic obligations.
+
+# The seven-mode calculation and its supplied inputs
+
+Use mass units $`m=1`$ and $`\hbar=1`$ for the numerical work. The retained momenta and frequencies, in their occupation-vector order, are
+``` math
+0,a,-a,b,-b,r,-r,\quad r=a+b,\qquad
+ \omega=(1,3/2,3/2,3/2,3/2,2,2).
+```
+A flat reciprocal metric with $`|a|^2=|b|^2=5/4`$ and $`a\cdot b=1/4`$ gives $`|r|^2=3`$. The chosen torus has $`V=(2\pi)^3/\sqrt{3/2}`$. The calculation fixes total momentum to $`r`$. This is a spatial Fourier label, not a q79 charge or spacetime dimension.
+
+Let $`\eta=\epsilon/(2v\sqrt V)=1/300`$. Then the coordinate Hamiltonian is
+``` math
+\begin{equation}
+ H=H_0+\eta C_3+\eta^2C_4,\qquad
+ C_3=\sqrt V\int\phi_q^3,\quad
+ C_4=\tfrac V2\int\phi_q^4\ge0 .
+ \label{eq:seven}
+\end{equation}
+```
+The inherited source convention takes $`A_H=1`$; its weak-family conversion gives $`\epsilon=0.096853651360445858\ldots`$. Equivalently, for the dimensionless calculation one may specify $`\eta`$, the above geometry, and the time directly. No observation was fitted to choose these inputs.
+
+In the weighted Fock representation, normal ordering *retains* all contractions:
+``` math
+H-E_{\rm vac}I=H_{\rm exc}+
+ \eta(W_3+7W_1)+\eta^2(\tfrac12W_4+7W_2+\tfrac{49}{6}I),
+ \qquad E_{\rm vac}=11/2 .
+```
+Here $`W_d`$ denotes the normal-ordered momentum-conserving $`d`$-field words; $`\sum_j(2\omega_j)^{-1}=7/3`$ fixes the contraction factors. The coordinate formula <a href="#eq:seven" data-reference-type="eqref" data-reference="eq:seven">[eq:seven]</a> is the unambiguous definition. Removing the linear, quadratic, or scalar contractions would change the model.
+
+Two distinct uses of this Hamiltonian follow. The equilibrium comparison uses its stationary density $`\rho_{\beta,r}=e^{-\beta H_r}/Z_{\beta,r}`$. The transition test instead prepares two normalized, filtered channel vectors. It is not a thermal initial state.
+
+# An exact cubic moment sharpens equilibrium bounds
+
+Write $`x_j=q_{jc}^2+q_{js}^2`$, $`S=x_a+x_b+x_r`$ in the real sine/cosine coordinates, and
+``` math
+T=(q_{ac}q_{bc}-q_{as}q_{bs})q_{rc}
+    +(q_{ac}q_{bs}+q_{as}q_{bc})q_{rs}.
+```
+The zero Fourier coefficient is $`C_3=q_0^3+3q_0S+3\sqrt2T`$.
+
+<div id="prop:cubic" class="proposition">
+
+**Proposition 3** (Independent-angle cubic identity). *With all three oscillator-plane angles averaged independently,
+``` math
+\begin{equation}
+ \langle C_3^2\rangle_{\rm angles}
+ =q_0^6+6q_0^4S+9q_0^2S^2+9x_ax_bx_r.
+ \label{eq:cubic}
+\end{equation}
+```*
+
+</div>
+
+<div class="proof">
+
+*Proof.* At fixed radii, $`T=\sqrt{x_ax_bx_r}\cos(\theta_a+\theta_b-\theta_r)`$, whose mean is zero and mean square is $`x_ax_bx_r/2`$. Squaring the displayed polynomial and averaging proves the identity. Its polynomial itself follows by enumerating ordered Fourier triples with zero total momentum. ◻
+
+</div>
+
+The independent rotations belong to the *reference harmonic diagonal*, not to the interacting dynamics. In the projected heat-trace argument, angular blocks have nonnegative radial heat kernels. Dirichlet killing on an interior ball decreases each such radial kernel, and the diagonal angular factors have modulus squared one. Summation over $`\ell_a=\ell_b=1-\ell_r`$ preserves that diagonal inequality. An arbitrary oscillatory projector would not have this property.
+
+## The all-occupation trace and the certificate
+
+The harmonic generating trace is $`M_\beta(t)=\operatorname{Tr}_r(e^{-\beta H_0}e^{t|q|^2})`$, for $`t<\tanh(\beta/2)`$. Mehler’s identity gives the zero-mode factor $`Z_0(t)=[2\sinh(\beta/2)\sqrt{1-t\coth(\beta/2)}]^{-1}`$. For a plane of frequency $`\omega`$, define
+``` math
+C_\omega(t)=\cosh(\beta\omega)-\tfrac{t}{\omega}\sinh(\beta\omega),
+ \qquad z_\omega(t)=(C_\omega+\sqrt{C_\omega^2-1})^{-1}.
+```
+With $`u=z_{3/2}`$ and $`w=z_2`$, the plane factor is
+``` math
+P(t)=\frac{u^2w(w+u^2)}
+ {(1-u^2)^2(1-w^2)(1-u^2w)},\qquad M_\beta(t)=Z_0(t)P(t).
+```
+The geometric series here include *every occupation*. Applying <a href="#eq:cubic" data-reference-type="eqref" data-reference="eq:cubic">[eq:cubic]</a>, with $`v_0=\coth(\beta/2)/(2[1-t\coth(\beta/2)])`$, gives
+``` math
+\begin{equation}
+ F_\beta(t)=\operatorname{Tr}_r(e^{-\beta H_0}C_3^2e^{t|q|^2})
+ =Z_0(t)\bigl(15v_0^3P+18v_0^2P'+9v_0P''+9T_{111}\bigr).
+ \label{eq:moment}
+\end{equation}
+```
+$`T_{111}`$ is the mixed derivative of the plane trace with separate tilts for $`x_a,x_b,x_r`$, once in each tilt, evaluated at equal tilts. This specifies it without a finite occupation sum or a numerical difference.
+
+On an interior ball of radius $`R_1`$, set $`A=\beta\eta\sqrt7R_1<\tanh(\beta/2)`$. The exact cosh remainder and $`|C_3|\le\sqrt7|q|^3`$ yield
+``` math
+Z_{\rm int}\le M_\beta(0)+\beta^2\eta^2
+ \int_0^1(1-s)\frac{F_\beta(sA)+F_\beta(-sA)}2\,ds.
+```
+The comparison combines the Golden–Thompson inequality on the total momentum sector with the sector-diagonal argument above. The positive quartic is retained in $`H`$ and discarded only in a *lower comparison*. Reflection cancellation is on the symmetric interior ball, not the asymmetric physical radial domain. We neither exponentiate the averaged cubic square nor replace the interacting law by its angular average.
+
+For $`R_1=R_0+w_0`$ and an exterior fraction $`a\in(0,1)`$, localization and the exterior coercive comparison supply
+``` math
+\begin{equation}
+ Z_{\beta,r}\le e^{\beta\pi^2/(8w_0^2)}
+ \left[M_\beta(0)+\beta^2\eta^2 I_{\rm up}
+       +e^{-\beta aR_0^2/8}Z_{1/4}((1-a)\beta)\right]=Z_{\rm up}.
+ \label{eq:partition}
+\end{equation}
+```
+$`Z_{1/4}`$ is the exact sector trace of the oscillator with squared frequencies $`|k_j|^2+1/4`$. The nondecreasing, positive symmetrized integrand is enclosed on 64 cells, using endpoint bounds and the exact integrals of $`1-s`$. The radii and exterior fractions select valid comparison inequalities, not physical parameters.
+
+The trial density is also specified rather than assumed to be an exact eigenbasis. If $`U`$ contains the supplied $`L=9`$ spectral proposals and $`f`$ is the boundary filter, put $`Q=fU[(fU)^*fU]^{-1/2}`$ and $`\sigma_\beta=Q\operatorname{diag}(e^{-\beta D_j}/Z_D)Q^*`$. Certified Gram and residual bounds ensure that the inverse exists and bound the energy error by $`e_\beta`$. With natural logarithms,
+``` math
+Z_D e^{-\beta e_\beta}\le Z_{\beta,r}\le Z_{\rm up},\quad
+ D(\sigma_\beta\|\rho_{\beta,r})\le
+ \log(Z_{\rm up}/Z_D)+\beta e_\beta=:\Delta .
+```
+Quantum Pinsker gives $`\|\sigma_\beta-\rho_{\beta,r}\|_1
+\le\min(2,\sqrt{2\Delta})`$ . The trial density is defined by exact polar functional calculus; its unknown entries are bounded, not silently replaced by rounded orthonormal eigenvectors.
+
+<div class="center">
+
+| $`\beta m`$ | Earlier bound | Cubic-square bound |  $`(R_0,w_0,a)`$ |
+|------------:|--------------:|-------------------:|-----------------:|
+|           1 |      0.164792 |           0.120292 |  $`(14,16,3/4)`$ |
+|           2 |      0.243814 |           0.169007 |  $`(14,16,7/8)`$ |
+|           4 |      0.542670 |           0.399192 |    $`(9,9,7/8)`$ |
+|           8 |      1.786803 |           1.369221 | $`(17/2,4,7/8)`$ |
+
+</div>
+
+All displayed error bounds are rounded upward from . They are full trace norms, whose maximum for densities is two, not relative percentage errors. An effect’s probability error is at most half the trace norm. The cold-regime bound remains broad: localization and comparison slack dominate. Increasing the occupation matrix does not remove those terms, since this trace already includes all occupations.
+
+# A certified nonzero channel, not merely a matrix plot
+
+The incoming and outgoing occupation vectors are
+``` math
+I=(1,0,0,0,0,1,0),\qquad F=(0,1,0,1,0,0,0).
+```
+Both have total momentum $`r`$ and free energy $`3m`$. That degeneracy is kinematics; the evolution includes the interactions of <a href="#eq:seven" data-reference-type="eqref" data-reference="eq:seven">[eq:seven]</a>. For $`u_j=\sqrt{\omega_j}q_j`$, filter each channel by a radial window $`f=1`$ for $`|u|\le20`$ and $`f=0`$ for $`|u|\ge22`$, with a cubic $`C^1`$ transition. Normalize to obtain $`I_f,F_f`$. Since $`|q|\le|u|`$ and $`7\cdot22^2<150^2`$, the support lies strictly inside $`D_\epsilon`$. The filter preserves momentum and its bounded weak second derivatives put the trial functions in $`\operatorname{Dom}(H)`$.
+
+Let $`P_L`$ retain the momentum-$`r`$ occupation states with $`N\le L`$. At $`L=11`$ its dimension is 489. The map $`(1-P_L)H_{\rm aux}P_L`$ has 1,149 reachable outside states, all with $`L<N\le L+4`$. Polynomial products are formed *before* compression. Without this outside map, agreement between two finite matrices would not be an error bound against the exact radial dynamics.
+
+## How the error is controlled
+
+The weighted Gram matrix is diagonal: $`G_{nn}=\prod_k n_k!/(2\omega_k)^{n_k}`$. Rounded spectral columns and energies are treated as exact rational *proposals*; their Gram defect and residuals are retained. The full Gram product gives $`\|U^*U-I\|\le5.943\cdot10^{-13}`$. The boundary commutator $`[H_{\rm aux},f]=-\nabla f\cdot\nabla-\Delta f/2`$ is bounded using Mehler tails. This controls an actual domain-compatible lift.
+
+For clarity, the phase-aware principle can be stated without an eigensolver. Suppose a lifted trial trajectory has residual $`\sum_j a_j e^{-itd_j}r_j`$, with fixed vectors $`r_j`$ and real $`d_j`$. Set $`b_j\ge |a_j|\|r_j\|`$. Integrating its squared norm over $`[0,T]`$ and bounding each oscillatory integral yields
+``` math
+\begin{align}
+ \frac1T\int_0^T\left\|\sum_j a_je^{-itd_j}r_j\right\|^2dt
+ &\le Q_T,\\
+ Q_T&=\sum_jb_j^2+
+ 2\sum_{i<j}b_ib_j\min\left(1,\frac{2}{T|d_i-d_j|}\right).
+ \label{eq:phase}
+\end{align}
+```
+For coincident energies the factor is one. Cauchy–Schwarz and variation of constants turn this into a vector error $`T\sqrt{Q_T}`$, plus initial and normalization errors. There is no assumption that the phases are random. All pairs, including nearly degenerate ones, must be included.
+
+In the frozen L11 certificate , $`Q_T\le1.142389612496\cdot10^{-13}`$. The complete bound includes the Gram defect, outside-state residual, boundary commutator, and the normalization floor. At $`mT=11364.125136705829\ldots=\epsilon^{-4}`$ it gives
+``` math
+\begin{align}
+ e_{\rm vector}&<0.003840990,\\
+ e_{\rm full\ trace}&<0.015363959,\\
+ \left|\langle F_f,e^{-iTH}I_f\rangle\right|^2
+ &\in[0.05568344585,\ 0.05936794417].
+ \label{eq:channel}
+\end{align}
+```
+The full trace bound uses the certificate’s conservative $`4e_{\rm vector}`$ normalization estimate. The probability interval instead follows from the amplitude enclosure with its own channel-normalization correction; it is not obtained by reading an error percentage off the matrix. Subtracting $`11/2`$ from both exact and trial Hamiltonians only changes a common phase and leaves <a href="#eq:channel" data-reference-type="eqref" data-reference="eq:channel">[eq:channel]</a> unchanged.
+
+#### Verification scope matters.
+
+The L11 worker supplied the complete residual table. Requester validation checked its source binding, all proposal labels, the full rational Gram product, and every spectral pair; three norm columns were independently recomputed. It did *not* independently recompute every worker norm column. The imported directed certificate is therefore not described as full independent replay or proof-assistant verification. This editorial integration did not launch a new eigensolve.
+
+The strictly positive lower probability bound is a real conditional transition result for the occupation-untruncated radial model. It is not an asymptotic scattering cross section, measured particle rate, thermal mixing theorem, or prediction of a physical q79 source. The older mixed-state quench calculations and the equilibrium trial above remain separate; a better pure-channel certificate does not upgrade them.
+
+# Inputs, achievements, and the remaining driver problem
+
+<div class="center">
+
+| Object | Role in the calculation |
+|:---|:---|
+| $`m,v`$ and action normalization | Supplied source coordinates; using $`m=1`$ sets units and does not predict a physical mass. |
+| Torus and seven modes | Supplied finite spatial regulator and geometry. |
+| Flat measure and boundary extension | Declared quantization, not derived from the radial half-line alone. |
+| $`\eta=1/300`$, $`T`$, $`I_f,F_f`$ | Supplied weak-family member, time, sector and preparation. |
+| $`\beta m=1,2,4,8`$ | Supplied equilibrium temperatures, not inferred values. |
+| $`L`$, proof radii, 64 cells | Numerical-analysis choices with explicit error bounds, not additional physical constants. |
+
+</div>
+
+There are three achievements. First, the nonlinear radial potential supports a well-defined quantum dynamics with energy control and no occupation cutoff. Second, retaining its actual cubic structure improves an all-occupation equilibrium certificate. Third, the pure-channel calculation is bounded against exact dynamics rather than another truncation. These are useful even though recurrence prevents this fixed model from serving as a nontrivially mixing closed bath.
+
+The route to FP III is consequently a *controlled change of limit*, not a relabeling of the finite output as noise. One must specify a local state, observable algebra and system–bath split, then control increasing spatial modes or volume and the relevant reduced dynamics. If a classical stochastic description is desired, the enhanced path law, covariance, time scaling and possible area drift must be proved for that construction. Total-occupation tightness at fixed volume is not a uniform local thermodynamic-limit theorem.
+
+Independent analytic review of the sector-domain comparison and full independent replay of the L11 norms remain meaningful verification upgrades. They are different from physical source selection. Neither research task is discharged by placing these calculations in a manuscript.
+
+# Conclusion
+
+The finite model now has a clear place in the corpus. It is a rigorous supplied-model testing ground for domains, equilibrium approximation, and channel dynamics, with explicitly bounded numerical examples. It supports the analytical distinction made by Fixed Points III instead of circumventing it: stability, stationarity, recurrence, and a stochastic limit are not interchangeable notions. The next physical step is to construct the limiting environment and source data, while preserving the finite certificates already obtained.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The curated [MTT results repository](https://github.com/PeterNero/mtt-results-repro) owns the frozen evidence used here. Its snapshot `f141a20ea23c5c3ff19cc2161c0e226e29ade8a7` contains:
+
+- `fixed_points_finite_mode_recurrence_boundary`: the radial form, energy preparation, recurrence scope and weighted limits.
+
+- `fixed_points_cubic_heat_trace_bound`: the 38-check directed equilibrium report, including the four bounds, comparison witnesses and source hashes.
+
+- `fixed_points_l11_phase_channel`: the 13-check phase report, exact Gram-defect value, probability interval and explicit independent-replay boundary.
+
+- `fixed_points_frontier_consolidation_20260911`: the historical dependency and scope map, not an additional theorem.
+
+Normal bibliographic links below address these records individually. The curated snapshot also preserves the cubic derivation note from its document source. The underlying source program uses `verify_cubic_heat_trace.py`, `validate_seven_mode_readout.py`, and `verify_L11_phase_readout.py`; these names are source-program entry points, not a claim that every large worker input is packaged in this manuscript. The public capsule’s verifier checks frozen hashes and declared result invariants. A complete independent numerical rerun must also acquire the hash-addressed worker inputs.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

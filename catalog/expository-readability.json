@@ -1,18 +1,18 @@
 {
   "schema": "mtt.expository-readability-audit.v1",
   "generated_on": "2026-09-12",
-  "papers": 141,
+  "papers": 142,
   "priority_counts": {
     "light": 1,
     "reference_ready": 2,
-    "reviewed": 138
+    "reviewed": 139
   },
   "missing_dimension_counts": {
     "argument_flow": 32,
     "conclusion": 3,
-    "concrete_foothold": 23,
-    "object_intuition": 84,
-    "orientation": 66,
+    "concrete_foothold": 24,
+    "object_intuition": 85,
+    "orientation": 67,
     "result_interpretation": 7
   },
   "forbidden_boilerplate_hits": [],
@@ -634,11 +634,11 @@
     {
       "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
       "title": "Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary",
-      "total_words": 8437,
-      "narrative_words": 5825,
+      "total_words": 8825,
+      "narrative_words": 6189,
       "formal_results": 19,
       "proofs": 13,
-      "narrative_words_per_result": 306.6,
+      "narrative_words_per_result": 325.7,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -651,7 +651,7 @@
       "heuristic_priority": "moderate",
       "review_status": "reviewed",
       "reviewed_on": "2026-09-12",
-      "review_note": "Version 3 integrates the explicit six-row residual, 25-block rank-102 compiler, conditional 1548-position symmetry count, transported-metric test and GAS/SYN/BV4 dependency factorization. It corrects an overbroad embedded-isometry claim by distinguishing pullback from reducing operator intertwining, with an explicit counterexample and the needed adjoint hypothesis. Existing structural theorems and later Flux hidden-carrier/HYM advances are retained. All 25 PDF pages were rendered and visually inspected; compilation has no warnings. No public release or physical-source promotion is implied.",
+      "review_note": "Version 4 corrects the frozen cutset's whole-projector estimate: extra transverse zero modes are invisible to a retained intertwining residual. The exact counterexample, completeness requirement and isolated-cluster resolvent comparison are proved and explained. Existing twelve imports were reread and retained; no source-selection or physical claim was promoted. All 27 PDF pages were rendered and visually inspected; compilation has zero warnings. Five focused editorial regression tests pass.",
       "missing_dimensions": []
     },
     {
@@ -1136,6 +1136,33 @@
       ]
     },
     {
+      "paper_id": "finite-mode-closure-dynamics-recurrence-and-certified-channel-bounds",
+      "title": "Finite-Mode Closure Dynamics: Recurrence, Equilibrium Bounds, and a Certified Transition Channel",
+      "total_words": 3254,
+      "narrative_words": 2617,
+      "formal_results": 3,
+      "proofs": 3,
+      "narrative_words_per_result": 872.3,
+      "orientation": false,
+      "object_intuition": false,
+      "argument_flow": true,
+      "result_interpretation": true,
+      "concrete_foothold": false,
+      "limitations": true,
+      "conclusion": true,
+      "coverage_dimensions": 4,
+      "audit_priority": "reviewed",
+      "heuristic_priority": "light",
+      "review_status": "reviewed",
+      "reviewed_on": "2026-09-12",
+      "review_note": "New standalone calculation companion v1, with explanation and full ownership boundaries: recurrence for the supplied radial finite-mode Hamiltonian, exact cubic-angle identity, all-occupation equilibrium bounds and a certified nonzero L11 transition. Frozen artifacts and source derivations were reviewed in context; only three L11 norm columns have independent replay. All nine PDF pages were rendered and visually inspected, final title page rechecked, zero build warnings. Four source-import regression tests pass. This is not physical q79 source selection or continuum QFT.",
+      "missing_dimensions": [
+        "orientation",
+        "object_intuition",
+        "concrete_foothold"
+      ]
+    },
+    {
       "paper_id": "finite-time-scattering-and-s-matrix-deltas-as-asymptoti-b099734c",
       "title": "Finite-Time Scattering Windows and Asymptotic Delta Limits Standard Fourier Mathematics and the MTT Source Boundary",
       "total_words": 2199,
@@ -1213,11 +1240,11 @@
     {
       "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
       "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
-      "total_words": 2563,
-      "narrative_words": 1862,
+      "total_words": 2788,
+      "narrative_words": 2087,
       "formal_results": 8,
       "proofs": 3,
-      "narrative_words_per_result": 232.8,
+      "narrative_words_per_result": 260.9,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -1227,10 +1254,10 @@
       "conclusion": true,
       "coverage_dimensions": 7,
       "audit_priority": "reviewed",
-      "heuristic_priority": "major",
+      "heuristic_priority": "moderate",
       "review_status": "reviewed",
-      "reviewed_on": "2026-09-11",
-      "review_note": "Deterministic, stochastic, and homogenized roles explained; 9-page PDF visually inspected. September consolidation: retained the existing scoped source-selection clarification, versioned it separately from the released PDF, regenerated Markdown and visually reviewed all pages of the rebuilt PDF. No mathematical result is promoted.",
+      "reviewed_on": "2026-09-12",
+      "review_note": "Version 7 keeps the standalone fixed-point, stationary-ensemble and homogenization theorem ownership unchanged. It adds a scoped citation to the new finite-mode calculation companion and explains why finite-unitary recurrence differs from an independent mixing driver. Evidence boilerplate was replaced by contextual references. All ten PDF pages were rendered and visually inspected, final evidence/bibliography page rechecked. Zero PDF build warnings; pre-existing benign Pandoc series macro warning noted.",
       "missing_dimensions": []
     },
     {

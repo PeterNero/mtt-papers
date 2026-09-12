@@ -28,6 +28,7 @@ Standalone does not mean that the same proof is published repeatedly.
 | Generic projected existence, equilibrium promotion, Banach uniqueness, compact/noncompact fixed-point gates | Fixed Points I | Application corollaries in FP II; imported contracts in Foundation and FP VI |
 | Ten-dimensional joint projector and coherent-sector application | Fixed Points II | Summarized in FP VI |
 | Scalar deterministic/stochastic disturbance and scalar OU baseline | Fixed Points III | Imported baseline in FP V and FP VI |
+| Supplied radial finite-mode coercivity/recurrence, cubic heat-trace and phase-channel calculation | Finite-Mode Closure Dynamics | Scoped driver distinction in FP III; no duplicated calculation proofs |
 | Curved cluster, leakage, and intrinsic centroid modulation | Fixed Points IV | Summarized in FP VI |
 | Vector/nonnormal covariance, correlation, and admissibility exit | Fixed Points V | Summarized in FP VI |
 | Instantaneous bilocal obstruction and local-mediator completion | Fixed Points VI | Not duplicated |

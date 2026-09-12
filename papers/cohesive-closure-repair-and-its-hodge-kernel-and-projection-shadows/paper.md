@@ -9,15 +9,32 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v3
-date: September 2026, Version 3
-generated_from_main_tex_sha256: 8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7
+current_version: v4
+date: September 2026, Version 4
+generated_from_main_tex_sha256: d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45
 paper_id: cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows
 release_state: current_revised_tex
 title: |
   **Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:**
   From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary
 ---
+
+# Version 4 Revision Note
+
+Supersedes
+The local Version 3 manuscript; no public release is implied.
+
+Reason
+An older continuum-to-finite contract bounded the whole ambient harmonic projector using only an intertwining residual on the retained space.
+
+Resolution
+Gives an exact counterexample, separates retained from ambient spectral sectors, and states the completeness and isolated-cluster conditions needed for projector comparison.
+
+Retained result
+Exact reducing intertwiners still transport every retained spectral projector. The repair, residual and finite numerical results are unchanged.
+
+Remaining boundary
+No additional ambient zero modes, common analytic domains and perturbative spectral separation require their own certificates.
 
 # Version 3 Revision Note
 
@@ -669,6 +686,32 @@ H'Tx=(x,x)\ne(x,0)=THx .
 ```
 The transverse response prevents reduction. This explains why a dimension match, an isometric compression or a compatible cost restricted to a subspace cannot replace a full operator intertwiner.
 
+#### Retained projectors are not the whole ambient projector.
+
+There is a second, independent completeness requirement in the older continuum-to-finite cutset record . Even exact reducing intertwining gives $`\Pi'T=T\Pi`$, not necessarily $`\Pi'=T\Pi T^\dagger`$. For a concrete counterexample, take
+``` math
+H=\operatorname{diag}(0,1),\qquad
+H'=\operatorname{diag}(0,1,0),\qquad T(x,y)=(x,y,0).
+```
+The intertwining residual is zero, both positive spectral gaps are one, and the range of $`T`$ is reducing. Nevertheless,
+``` math
+\Pi'-T\Pi T^\dagger=\operatorname{diag}(0,0,1),\qquad
+\left\lVert \Pi'-T\Pi T^\dagger \right\rVert=1.
+```
+Thus the packet’s unrestricted whole-projector estimate $`\left\lVert \Pi'-T\Pi T^\dagger \right\rVert\leq2\epsilon_H/g`$, based only on $`\epsilon_H=\left\lVert H'T-TH \right\rVert`$ and a gap $`g`$, is false. It must not be used to promote the ambient kernel. In the exact reducing case the precise identity is
+``` math
+\Pi'=T\Pi T^\dagger+\Pi'_\perp,
+```
+where $`\Pi'_\perp`$ projects onto the zero modes in $`(\mathrm{Ran}T)^\perp`$. Equality of the whole projectors requires $`\Pi'_\perp=0`$; the retained intertwining identity needs no such assumption.
+
+For approximate comparisons, the spectral object must also be fixed correctly. A small positive perturbation of a zero eigenvalue changes its literal kernel, although an isolated spectral cluster can persist. On a common Hilbert space let $`A,B`$ be self-adjoint, let $`A-B`$ extend to a bounded operator on their common operator domain, and let a common rectifiable resolvent contour $`\Gamma`$ isolate the two clusters being compared. Writing $`M_A=\sup_{z\in\Gamma}\left\lVert (z-A)^{-1} \right\rVert`$, and similarly $`M_B`$, the resolvent identity and contour integral give
+``` math
+\left\lVert \Pi_A-\Pi_B \right\rVert
+ \leq \frac{\operatorname{length}(\Gamma)}{2\pi}
+ M_A M_B\left\lVert A-B \right\rVert.
+```
+Indeed, subtract the two Riesz integrals and insert $`(z-A)^{-1}-(z-B)^{-1}=(z-A)^{-1}(A-B)(z-B)^{-1}`$. This is a cluster-comparison estimate, not a bound derived from an embedding residual alone. Identifying either cluster with the full physical harmonic sector requires a separate completeness certificate.
+
 For a non-isometric Fourier–Mukai or BHT transform, derived equivalence alone is insufficient. It may preserve Ext groups, Yoneda products, and the formal Maurer–Cartan deformation problem after dg enhancement . It does not automatically preserve the Hermitian metric, adjoint, Hodge spectrum, or numerical kernel. Those require a transported metric theorem or a quantified comparison defect.
 
 The transported-metric result makes the latter task concrete. For a bounded invertible chain/product map $`T`$, with domains also carried by $`T`$, set
@@ -1293,5 +1336,5 @@ Version 3 additionally imports:
 - the endpoint factorization record, listed under
   `causal_base_q79_seven_row_endpoint_factorization_packet`.
 
-The local Cech equalizer, nonlinear descent, nonzero-defect example and phase-loss and damping witnesses are explicitly compared in the current contextual integration ledger. These imports use the frozen result manifest at [`f141a20ea23c`](https://github.com/PeterNero/mtt-results-repro/tree/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results); the integration companion gives each artifact hash and manuscript location. Each record declares its theorem tier, source artifacts, verifier, zero-fit status, and nonpromotion guards. The exact witnesses use rational or symbolic arithmetic where stated. They do not select the physical q79 endpoint or supply measured values. The source TeX, generated Markdown, compiled PDF, metadata hashes, and version-provenance audit accompany this paper in the public MTT papers repository. The evidence snapshot used for Version 1 is commit `ba0874012246bb930677ebfa6f0a6eb33a57a8f0`.
+Version 4 reviews `q79_continuum_finite_intertwiner_cutset`. Its exact intertwining conditions and rational witnesses are retained; its unqualified whole-projector gap estimate is corrected explicitly in the projection section. The frozen artifact remains unchanged for audit. The local Cech equalizer, nonlinear descent, nonzero-defect example and phase-loss and damping witnesses are explicitly compared in the current contextual integration ledger. These imports use the frozen result manifest at [`f141a20ea23c`](https://github.com/PeterNero/mtt-results-repro/tree/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results); the integration companion gives each artifact hash and manuscript location. Each record declares its theorem tier, source artifacts, verifier, zero-fit status, and nonpromotion guards. The exact witnesses use rational or symbolic arithmetic where stated. They do not select the physical q79 endpoint or supply measured values. The source TeX, generated Markdown, compiled PDF, metadata hashes, and version-provenance audit accompany this paper in the public MTT papers repository. The evidence snapshot used for Version 1 is commit `ba0874012246bb930677ebfa6f0a6eb33a57a8f0`.
 <!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
