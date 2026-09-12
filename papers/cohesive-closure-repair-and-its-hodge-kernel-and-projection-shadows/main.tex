@@ -17,7 +17,7 @@
 \title{\textbf{Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:}\\
 \large From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary}
 \author{Peter Nero}
-\date{September 2026, Version 6}
+\date{September 2026, Version 7}
 
 \begin{document}
 \maketitle
@@ -61,6 +61,22 @@ continuum-to-finite intertwiner remain open.  Thus closure repair explains
 why the operator and kernel language should recur, without promoting that
 recurrence into a completed theory of dynamics or quantization.
 \end{abstract}
+
+\section*{Version 7 Revision Note}
+\begin{description}
+\item[Supersedes] The local Version 6 manuscript; no public release is implied.
+\item[Reason] The inner-charge discussion and finite transfer results needed
+their nested Witten and noncentral coefficient constructions explained together.
+\item[Resolution] Integrates six local records from outer nilpotence through
+restricted contraction to a positive curved coefficient algebra. Distinguishes
+the self-adjoint coefficient matrix from the full module superconnection,
+cyclic from positive pairings, and minimal from nonminimal transfer.
+\item[Retained result] Previous residual, projection, first-jet, charge and
+finite-response results remain at their stated scopes. Fixed Points I--VI
+are unchanged.
+\item[Remaining boundary] The finite tensor model does not select a physical
+factorization, global shared-line realization, analytic domain, action or value.
+\end{description}
 
 \section*{Version 6 Revision Note}
 \begin{description}
@@ -1426,6 +1442,267 @@ of sufficient source identities for transporting it. It has not selected
 the continuum HYM source or its Lorentzian/cyclic action. These \(m_n\)
 are not measured Yukawa or gauge couplings: they specify what must be
 preserved before that physical interpretation is justified.
+
+\section{Nested repair and curvature-preserving transfer}
+\label{sec:nested-transfer}
+
+There are two different places where a differential can act: inside a
+configuration, and on the space of configurations. Keeping them distinct
+allows a curved internal charge to coexist with an ordinary outer complex.
+The six source records discussed here join that observation to the
+Heisenberg example in \cref{sec:excursion-comparison}, then pass from
+central curvature to a positive noncentral coefficient algebra. They are
+finite or local structural results, not a new physical endpoint.
+
+\subsection{Inner curvature and an outer nilpotent differential}
+\label{sec:nested-witten}
+Let \(M\) be a smooth Riemannian configuration manifold with a smooth
+internal charge \(Q_x\), defect \(\Phi(x)=Q_x^2\), and a declared positive
+fiber metric. Put \(V=\frac12\norm{\Phi}^2\), allowing an explicitly
+normalized trace in the finite examples below. On forms over \(M\), define
+\[
+ d_{\beta,V}=e^{-\beta V}d_M e^{\beta V}
+             =d_M+\beta\,dV\wedge,\qquad \beta\geq0.
+\]
+This is Witten deformation \cite{WittenMorse1982}. Conjugation gives
+\(d_{\beta,V}^2=0\) for every smooth \(V\), whether or not the internal
+defect vanishes \cite{PreprojectionNestedWitten2026}. Thus
+\([Q_x,-]^2=[\Phi(x),-]\) can be nonzero while the outer differential is
+nilpotent. These operators act on different spaces; neither identity
+repairs the other by changing its meaning.
+
+For a closed compact \(M\), the usual elliptic realization gives the
+positive operator
+\[
+ H_{\beta,V}=d_{\beta,V}d_{\beta,V}^{\dagger}
+            +d_{\beta,V}^{\dagger}d_{\beta,V}
+\]
+and its contractive heat semigroup. Boundary or noncompact settings need
+compatible adjoints and self-adjoint domains; the polynomial computations
+below are formal differential-operator identities, not domain certificates.
+On the configuration line let \(A_V=\partial_x+\beta V'\). Then
+\begin{align*}
+ H_0=A_V^\dagger A_V&=-\partial_x^2+\beta^2(V')^2-\beta V'',\\
+ H_1=A_V A_V^\dagger&=-\partial_x^2+\beta^2(V')^2+\beta V''.
+\end{align*}
+At a critical point, \(V''\) contains the full residual-Hessian term from
+\cref{thm:residual-hessian}, not just the Gram term. For
+\(\Phi(x)=1+x^2\), one has \(V=\frac12(1+x^2)^2\) and, at zero,
+\[
+ \Phi=1,\quad \Phi'=0,\quad V'=0,\qquad
+ |\Phi'|^2=0,\quad \Phi\Phi''=2,\quad V''=2.
+\]
+The opposite potential terms \(-2\beta\) and \(2\beta\) are not opposite
+spectral-positivity claims: positivity belongs to the factorized
+differential operators, including their kinetic terms.
+
+This construction retains the defect's full second jet, but it does not
+make the Witten operator equal to the internal curvature or to the
+finite-dimensional Hessian matrix. On a closed compact \(M\), multiplication
+by \(e^{\beta V}\) identifies its cohomology with de Rham cohomology.
+Nilpotence alone therefore does not select zero defect or a unique
+physical configuration. The supplied \(\beta\) is a localization parameter,
+not Lorentzian time or a derived thermodynamic temperature.
+
+\subsection{What the eliminated pair leaves behind}
+\label{sec:nil-minimal-model}
+For the auxiliary algebra \(\Lambda(a,b,c)\) with \(dc=ab\), the six
+harmonic representatives are
+\[
+ H=\operatorname{span}(1,a,b,ac,bc,abc).
+\]
+Let \(i\) include them, let \(p\) remove the pair \(c,ab\), and set
+\(h(ab)=c\), with \(h=0\) otherwise. Then
+\[
+ pi=I_H,\quad dh+hd=I-ip,\quad h^2=ph=hi=0.
+\]
+Under the transfer convention already used in
+\cref{sec:response-retract}, the two nonzero examples are
+\[
+ m_3(a,a,b)=ac,\qquad m_3(a,b,b)=-bc
+ \quad\cite{PreprojectionNilTransfer2026}.
+\]
+They remember the removed relation \(dc=ab\); a cohomology-dimension count
+does not encode them. Minimal-model and strict-unital constructions are
+standard homological algebra \cite{KellerAInfinity2001,BurkeUnital2018}.
+
+With weights \(w(a)=w(b)=1\), \(w(c)=2\), every source operation and
+contraction map preserves total integer weight, hence also its reduction
+modulo three. This is a representation-level phase statement, not a
+construction of the continuum shared line or an identification of
+Heisenberg/Nil with the global q79 manifold.
+
+The top-form functional \(\tau_A(u)=[abc]u\) is graded cyclic but is not a
+positive Hilbert norm. It also carries weight four: under the stated
+circle action, \(\tau_A(g_\theta u)=e^{4i\theta}\tau_A(u)\).
+Thus its pairing is covariant with that character, not automatically an
+invariant scalar pairing. An invariant scalar interpretation needs the
+inverse-character line or equivalent compensating data. Preserving a
+cyclic contraction and preserving weights are compatible assertions;
+neither supplies that additional scalar trivialization.
+
+\subsection{Which data a nested contraction must preserve}
+\label{sec:restricted-nested-arrow}
+A quasi-isomorphism is insufficient for this purpose. The restricted
+transfer record requires the same admissible base, typing and boundary
+data; maps \(p,i,h\) satisfying the contraction and side identities;
+first-order and adjoint intertwiners; compatible cyclic and Hilbert
+pairings; a unit and equal normalized repair potentials; and shared-line
+equivariance \cite{PreprojectionRestrictedNested2026}. The maps must be
+parallel over the configuration base, with a common \(\beta\), to
+intertwine the outer Witten operators. Transfer trees also need a
+terminating filtration or a proved convergence domain.
+
+For two algebraically compatible contractions the composite is
+\[
+ p=p_2p_1,\qquad i=i_1i_2,\qquad h=h_1+i_1h_2p_1.
+\]
+These formulas preserve the normalized contraction identities. Analytic
+admissibility of the composite still needs a common transfer-control
+class; convergence on unrelated domains is not automatically enough.
+Likewise, local arrows alone do not prove effective overlap descent.
+
+Here is the same-source central example. Let \(\Gamma_A\) be form parity,
+take \(S=\mathbb R^{2|2}\), and define
+\[
+ R(x)=\begin{pmatrix}1&x\\-x&1\end{pmatrix},\qquad
+ C(x)=\begin{pmatrix}0&R(x)\\R(x)^{\mathsf T}&0\end{pmatrix},\qquad
+ Q_A=d\otimes I_4+\Gamma_A\otimes C(x).
+\]
+Since \(C(x)^2=(1+x^2)I_4\) and \(d\Gamma_A=-\Gamma_A d\),
+\[
+ Q_A^2=(1+x^2)I_{32},\qquad
+ Q_H=\Gamma_H\otimes C(x),\qquad Q_H^2=(1+x^2)I_{24}.
+\]
+Tensor the preceding contraction with \(I_4\). It intertwines \(Q\),
+its declared adjoint and curvature. Rank-normalized trace gives
+\(V=\frac12(1+x^2)^2\) on both fibers; raw traces would differ with rank.
+Because \(p\) is independent of \(x\), it also intertwines the formal
+outer Witten blocks. The same \(p,i,h\) produce the nonzero \(m_3\).
+
+Strict intertwining and transfer remain different claims: the source
+DGA has no ternary operation to project, while its minimal model has
+one. Equality of normalized costs is verified for this source, not
+inferred from any arbitrary rank-reducing map.
+
+\subsection{Two ways to retain noncentral curvature}
+\label{sec:noncentral-nested}
+The infinitesimal route works over
+\(D=\mathbb Q[\epsilon]/(\epsilon^2)\), with matrix indices starting at
+zero and parities \((0,1,0)\). Put
+\[
+ q=E_{10}+\epsilon E_{21},\qquad
+ F=q^2=\epsilon E_{20},\qquad [F,E_{00}]=F\ne0.
+\]
+For homogeneous \(X\), the graded commutator
+\(d_qX=qX-(-1)^{|X|}Xq\) satisfies \(d_q^2X=[F,X]\) and \(d_qF=0\).
+Every two-curvature product \(FXF\) vanishes over \(D\).
+For the Heisenberg contraction and \(\delta=\Gamma_A\otimes q\),
+\[
+ (h\delta)^2=(\delta h)^2=0,\qquad
+ (I-h\delta)^{-1}=I+h\delta.
+\]
+This is exact algebraic termination, not a small numerical error
+\cite{PreprojectionNoncentralTransfer2026}. The \(24\)-to-\(18\) module
+ranks are over \(D\), hence double over \(\mathbb Q\).
+The coefficient-of-\(\epsilon\) supertrace is nondegenerate and graded
+cyclic, not positive. No nonzero nilpotent self-adjoint operator can
+represent this \(F\) on a positive finite Hilbert space.
+
+The positive route instead takes \(S=\mathbb R^{1|2}\) and
+\[
+ q(x)=\begin{pmatrix}0&1&x\\1&0&0\\x&0&0\end{pmatrix},\qquad
+ F(x)=q(x)^2=
+ \begin{pmatrix}1+x^2&0&0\\0&1&x\\0&x&x^2\end{pmatrix}.
+\]
+Here \(q=q^{\mathsf T}\), \(F=q^{\mathsf T}q\geq0\), and
+\([F(0),E_{12}]=E_{12}\). The same form contraction gives
+\(Q_A=d\otimes I_3+\Gamma_A\otimes q\) on 24 module directions and
+\(Q_H=\Gamma_H\otimes q\) on 18. It retains
+\(Q_A^2=I_A\otimes F\), adjoint intertwining and the normalized cost
+\[
+ V(x)=\tfrac13(1+x^2)^2,\qquad
+ V''(0)=\tfrac13\norm{F'(0)}_{\HS}^2+
+         \tfrac13\langle F(0),F''(0)\rangle_{\HS}
+       =\tfrac23+\tfrac23=\tfrac43
+ \quad\cite{PreprojectionPositiveNested2026}.
+\]
+The omitted half would be a genuine error in a Gram-only Hessian.
+The positive norm uses ordinary trace; graded cyclicity uses supertrace.
+They are separate pairings, not one automatically positive cyclic form.
+
+A wording correction is necessary here. The self-adjoint coefficient
+matrix is \(q\), not the full module superconnection:
+\[
+ Q_A-Q_A^\dagger=(d-d^\dagger)\otimes I_3\ne0.
+\]
+Indeed \(d(c)=ab\) while \(d^\dagger(c)=0\) in the monomial metric.
+The positive square \(Q_A^2=I_A\otimes F\) and all displayed
+intertwiners remain exact, but \(Q_A^2\) must not be renamed
+\(Q_A^\dagger Q_A\). Neither this module dimension nor the central
+example's outer-form dimension identifies the different CBF response
+carrier, the physical 27-carrier, or the rank-102 bundle.
+
+\subsection{Curvature as retained coefficients}
+\label{sec:unital-curved-coefficients}
+The positive curvature is not nilpotent. Nevertheless the strict-unital
+extension record closes the local curvature-insertion problem for this
+particular tensor construction \cite{PreprojectionUnitalCurvature2026}.
+Keep \(B=\operatorname{End}(\mathbb R^{1|2})[x]\), with
+\(d_B=[q,-]\) graded and \(d_B^2=[F,-]\), as the coefficient algebra.
+Transfer only the Heisenberg form factor.
+
+For this six-class minimal model, \(m_n=0\) for \(n\geq4\).
+A nonzero internal homotopy introduces \(c\); a later homotopy cannot
+remove it to recover \(ab\), and two branches carrying \(c\) multiply
+to zero. Hence every tree with at least two homotopies vanishes.
+This is specific to the displayed exterior algebra and contraction,
+not a universal termination theorem.
+
+Use total \(\mathbb Z_2\) grading for the supermatrix extension;
+the integer form grading alone does not give an integer grading of
+the finite matrices. On \(K=H\otimes B\), the source convention is
+\begin{align*}
+ M_0&=-1_H\otimes F,\\
+ M_1(u\otimes b)&=(-1)^{|u|}u\otimes d_Bb,\\
+ M_n(u_1\otimes b_1,\ldots,u_n\otimes b_n)
+ &=(-1)^\chi m_n(u_1,\ldots,u_n)\otimes b_1\cdots b_n
+ \quad(n=2,3),\\
+ \chi&=\sum_{i<j}|b_i||u_j|,\qquad M_n=0\quad(n\geq4).
+\end{align*}
+The ordered coefficient product is essential; \(B\) is not commutative.
+At fixed \(x\), \(K\) has dimension \(6\cdot9=54\), an operator
+algebra carrier rather than the 18-dimensional module above.
+
+The curved arity-one identity reads
+\[
+ M_1^2(X)+M_2(M_0,X)-M_2(X,M_0)=0.
+\]
+Thus \(M_0=-F\) is a sign convention, not a claim that positive
+curvature became a negative repair norm. In every higher curvature
+insertion the \(H\) factor is the strict unit, so
+\(M_n(\ldots,M_0,\ldots)=0\) for \(n\geq3\).
+The remaining identities reduce to Bianchi, the graded derivation rule
+and the Heisenberg \(m_2/m_3\) identities through arity five. No term
+remains at higher arity. The frozen record checks the 20,736 and
+248,832 form/parity cases at arities four and five; those tables are
+not rerun here.
+
+The scalar-curvature notation \(m_0=\lambda1\) in the earlier finite
+example must likewise be interpreted in parity grading, or with a
+formal parameter of degree two if integer cohomological degrees are
+required. A real degree-zero scalar is not an integer-degree-two
+curvature merely because it is called even.
+
+This closes the local algebraic conjunction of noncentral curvature,
+positive cost, outer nilpotent repair and transferred interactions.
+It does not require an infinite curvature-insertion sum in this model.
+There is no contradiction with the nontruncating CBF hierarchy of
+\cref{sec:response-retract}: that target is a different, nonminimal
+48-dimensional response retract. A selected physical factorization,
+global descent, domains, shared differential line, signed action and
+normalization still require their own evidence. The examples explain
+what those data could organize; they do not select them.
 
 \section{Higher repair jets and graph shadows}
 \label{sec:graphs}

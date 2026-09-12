@@ -1,5 +1,46 @@
 # Cohesive Source Revision Audit
 
+## Version 7 Nested Witten and Curved Coefficient Integration
+
+Date: 2026-09-12. Supersedes local v6; no release authorized.
+
+Six frozen local records are integrated into "Nested repair and
+curvature-preserving transfer". Their proofs and exact artifacts were read,
+including later qualifications in the source theorem notes. Earlier
+substantive sections remain unchanged; the new section imports rather than
+duplicates their projection, Hessian or transfer proofs.
+
+- Separate inner curvature from the outer Witten differential. Outer
+  nilpotence and ordinary de Rham cohomology do not require inner zero defect.
+  Formal polynomial adjoints are not analytic domain certificates.
+- Explain the six-class Heisenberg minimal model and weight-preserving m3.
+  Its top-form cyclic pairing has weight four; a scalar invariant pairing
+  needs compensation. It is not the positive trace norm.
+- State the restricted contraction data, normalized-cost preservation,
+  adjoint and parallelism clauses. Algebraic composition is exact;
+  composite analytic control and global gluing remain additional conditions.
+- Integrate the dual-number noncentral termination witness and the positive
+  24-to-18 example with full Hessian 2/3+2/3=4/3.
+- Correct the H4-T3 claim's self-adjoint wording: q is symmetric but the full
+  Q_A=d tensor I+Gamma tensor q is not. Its positive curvature and adjoint
+  intertwining survive; Q_A squared is not Q_A-adjoint Q_A.
+- Explain the strict-unital coefficient extension, M0=-F sign convention,
+  total parity grading and exact termination in this model. No infinite
+  curvature-insertion series is left here. Do not reopen this local result
+  from H4-T3's older guard; H4-T4 supplies its missing construction.
+- Distinguish the 54-dimensional coefficient algebra, 18-dimensional module,
+  six-class minimal model and nonminimal 48-dimensional CBF response retract.
+  The latter's nontruncating hierarchy is not contradicted.
+
+All source artifacts remain immutable at snapshot f141a20ea23c. The full
+superconnection wording correction is separately recorded in Kernel and
+curated Result Errata. No physical tier or Fixed Points paper is changed.
+The 40-page PDF builds without warnings; every page was visually inspected.
+Eight focused exact editorial tests pass in
+`scripts/test_cohesive_nested_editorial.py`. Large archived transfer tables
+were not rerun. The reviewed LF-normalized TeX hash is
+`f6c41d8d10b25f7ded5478ff674ca6391f4851a6424f76cdb4578f6cb6979849`.
+
 ## Version 6 Charge, Curvature and Admissible Geometry
 
 Date: 2026-09-12. Supersedes local v5; no release authorized.

@@ -6,7 +6,7 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
 
 - The catalog contains 142 papers, and all 305 curated results have one integration home.
 - Flux v6 now preserves the established projective rank-nine hidden carrier and existential HYM connection. The numerical chamber, common visible endpoint and Bianchi data remain separate.
-- The cohesive manuscript is now v6: explicit six-row residual, 25-block support,
+- The cohesive manuscript is now v7: explicit six-row residual, 25-block support,
   conditional character reduction, metric comparison and source-factorization
   imports are integrated. Its isometric-embedding statement is corrected.
   V4 additionally corrects whole-projector comparison: exact retained
@@ -21,6 +21,11 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
   characters, nilpotent and curved squares, Jordan/Lie readouts and constrained
   Hessians. Phase dependence is not phase identification; central ambiguity
   is not a total physical parameter count. All 35 v6 PDF pages were inspected.
+  V7 adds six nested Witten/Heisenberg/curved-coefficient imports in section 9.
+  The positive coefficient q is self-adjoint; the full Q_A is not. Positive
+  curvature and transfer survive. Strict-unital local termination does not
+  contradict the different nonminimal CBF hierarchy. All 40 pages inspected;
+  eight new exact editorial tests pass. Earlier substantive sections retained.
 - The new nine-page finite-mode calculation companion owns the recurrence,
   cubic heat-trace and L11 channel package. It cites the foundational series;
   the reverse FP III citation has been removed in v8.
@@ -40,9 +45,9 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
 
 `catalog/research-integration-reviews.json` is the manual contextual record. `catalog/research-ownership.json` and per-paper `RESEARCH_INTEGRATION.md` are generated views.
 
-69 result assignments have been reviewed: 67 integrated and two historical
+75 result assignments have been reviewed: 73 integrated and two historical
 provenance records needing no new theorem. All 19 originally confirmed
-additions/details have been handled. The other 236 are unreviewed, not known
+additions/details have been handled. The other 230 are unreviewed, not known
 omissions. This is editorial integration, not a new physical closure claim.
 A literal ID in metadata is not manuscript integration. A missing literal ID
 does not prove the mathematics is absent.
@@ -51,14 +56,15 @@ Reviews bind LF-normalized manuscript bytes, exact result hashes and real source
 
 ## Next Editorial Work
 
-1. Continue with the remaining 38 cohesive-source assignments, grouping local
+1. Continue with the remaining 32 cohesive-source assignments, grouping local
    transfer/action witnesses rather than adding a long packet inventory. The
    evolving mathematical-language atlas needs separate scoped reading.
-   Next coherent cluster: nested Witten repair, Heisenberg/Nil transfer and
-   restricted nested transfer; then compare the noncentral curved/positive
-   nested and strict-unital extension records. Check against sections 5 and 8;
-   do not repeat the completed six charge and eleven CBF transfer reviews.
-2. Continue the 236 contextual reviews in the order and clusters recorded in
+   Next coherent cluster: `preprojection_twisted_morita_overlap_descent` and
+   `preprojection_q79_hirsch_transfer`; then review cotangent/BV reduction and
+   normalized orientation against those descent hypotheses. Check sections
+   5, 8 and 9; do not repeat the completed charge, CBF or nested six-record
+   reviews. Local termination is already resolved by the strict-unital record.
+2. Continue the 230 contextual reviews in the order and clusters recorded in
    EDITORIAL_INTEGRATION_PLAN.md. SM has no remaining assigned imports.
 3. Review downstream uses of embedded isometries against the corrected cohesive
    theorem. Cost pullback alone is not reducing operator intertwining; exact
