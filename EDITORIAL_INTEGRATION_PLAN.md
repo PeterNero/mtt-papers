@@ -2,7 +2,7 @@
 
 Checkpoint: 2026-09-12, after the foundational dependency repair: FP I v7,
 II v6, III v8, IV v7, V v9 and VI v7. The finite-mode companion v1,
-cohesive v7 and SM v4. Fixed Points and the companion remain unchanged.
+cohesive v8 and SM v4. Fixed Points and the companion remain unchanged.
 This is an editorial queue, not a list of unproved research claims.
 No Zenodo upload or publication is authorized.
 
@@ -105,7 +105,16 @@ The self-adjoint coefficient q is distinguished from the non-self-adjoint
 full module Q_A; positive curvature, intertwiners and the residual Hessian
 remain valid. Cyclic pairing, positive norm and phase weight are separate.
 All 40 PDF pages were inspected; eight new exact editorial tests pass.
-Current reviewed assignments: 75, comprising 73 integrated and two historical.
+The v7 checkpoint had 75 reviewed assignments: 73 integrated and two historical.
+
+V8 integrates twisted Morita curved descent and q79 Hirsch transfer in
+section 10. It explains the actual rational 96-to-88 contraction and why
+mn>=3 vanish there without removing coefficient-level interactions. The
+finite overlap witness preserves the algebra, but scalar cyclic pairing
+requires phase compensation. The intrinsic compiler range uses transported
+unit and trace. No new physical endpoint, HYM metric or 27 map is selected.
+All 44 PDF pages were inspected; seven new exact checks pass. Current totals
+are 77 reviewed, comprising 75 integrated and two historical.
 
 Counts below come from the current source-bound ownership registry. Review
 source hypotheses, actual paper discussion and the latest superseding result;
@@ -113,7 +122,7 @@ do not infer absence or completion from an identifier search.
 
 | Order | Owner family | Unreviewed | Focus |
 |---|---|---:|---|
-| 1 | Cohesive source | 32 | Next: twisted Morita overlap descent and q79 Hirsch transfer, followed by cotangent/BV reduction and normalized orientation. Charge, CBF and the six nested imports are done. Keep local/nested transfer and selected physical geometry distinct. |
+| 1 | Cohesive source | 30 | Next: cotangent/BV reduction and normalized orientation. Charge, CBF, nested transfer, Morita and Hirsch imports are done. Compare the closed structural/topological steps with the hypotheses of physical compactification. |
 | 2 | Flux/q79 | 51 | Read latest correction before earlier source-route claims. Preserve local versus global domains, auxiliary versus physical spectral class, and hidden existence. |
 | 3 | Hull-Strominger | 37 | Common-source realization, moment-map role reduction and current hidden existence without relabeling symbolic formulas as evaluated coefficients. |
 | 4 | Proto-spinor | 29 | Shared-line and representation imports; distinguish finite algebra, graded matter index, first-order operators and the physical endpoint. |
@@ -126,7 +135,7 @@ do not infer absence or completion from an identifier search.
 | 11 | Perturbative QG | 6 | State the established perturbative/conditional scope, not UV-complete gravity. |
 | 12 | Parameters | 2 | No double-counting of shared inputs, profile coordinates and derived outputs. |
 | 13 | Closure strain | 1 | Preserve local carrier/strain and physical-spacetime distinctions. |
-| | Total | 230 | These are not 230 confirmed omissions. |
+| | Total | 228 | These are not 228 confirmed omissions. |
 
 The broad `mathematical_language_atlas` remains unreviewed. It is an evolving
 multi-thousand-line artifact with later appendices, not merely a July status
@@ -148,8 +157,8 @@ historical after reading only its early inventory or newest tail.
   public results paper lock from committed manuscript state.
 - End the next handoff with exact completed result IDs and remaining counts.
 
-Current totals: 305 assigned, 75 reviewed (73 integrated, two historical),
-zero currently confirmed additions, 230 unreviewed, zero stale contextual
+Current totals: 305 assigned, 77 reviewed (75 integrated, two historical),
+zero currently confirmed additions, 228 unreviewed, zero stale contextual
 reviews. The original 19 additions/details are now handled. Further reviews
 may legitimately identify new additions or corrections; these counts are not
 scientific proof-completion scores.

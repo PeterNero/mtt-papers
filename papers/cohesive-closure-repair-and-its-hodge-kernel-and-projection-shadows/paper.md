@@ -9,15 +9,32 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v7
-date: September 2026, Version 7
-generated_from_main_tex_sha256: f6c41d8d10b25f7ded5478ff674ca6391f4851a6424f76cdb4578f6cb6979849
+current_version: v8
+date: September 2026, Version 8
+generated_from_main_tex_sha256: def433a6c6165a9df2b25deeb3aa9962e8e8dabe21f8839aed72cb81d4f3949c
 paper_id: cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows
 release_state: current_revised_tex
 title: |
   **Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:**
   From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary
 ---
+
+# Version 8 Revision Note
+
+Supersedes
+The local Version 7 manuscript; no public release is implied.
+
+Reason
+Local nested transfer needed its global overlap and actual q79 rational-topology context.
+
+Resolution
+Imports the curved projective-overlap theorem and the 96-to-88 Hirsch contraction, with examples explaining cyclic-pairing compensation, strict topology and nontrivial coefficient interactions.
+
+Retained result
+Earlier charge, residual, projection and transfer results keep their stated scopes. Fixed Points I–VI are unchanged.
+
+Remaining boundary
+Topological contraction and algebraic descent do not select a physical metric, endpoint, analytic reduction or 27-state map.
 
 # Version 7 Revision Note
 
@@ -172,7 +189,7 @@ The central distinction of this paper is therefore:
 
 ## How to read the paper
 
-Readers interested in the universal differential geometry may read <a href="#sec:residual-hessian,sec:dynamics" data-reference-type="ref+label" data-reference="sec:residual-hessian,sec:dynamics">[sec:residual-hessian,sec:dynamics]</a>. The cohesive and q79 construction is in <a href="#sec:cohesive,sec:q79" data-reference-type="ref+label" data-reference="sec:cohesive,sec:q79">[sec:cohesive,sec:q79]</a>. The operator, kernel, and projection chain is proved in <a href="#sec:hodge,sec:descent-projection" data-reference-type="ref+label" data-reference="sec:hodge,sec:descent-projection">[sec:hodge,sec:descent-projection]</a>. The relation to perturbative graphs is in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">10</a>. The crucial warning that repair is not automatically action appears in <a href="#sec:action-boundary" data-reference-type="ref+label" data-reference="sec:action-boundary">11</a>. The final status and theorem-ownership tables are in <a href="#sec:ownership,sec:frontier" data-reference-type="ref+label" data-reference="sec:ownership,sec:frontier">[sec:ownership,sec:frontier]</a>.
+Readers interested in the universal differential geometry may read <a href="#sec:residual-hessian,sec:dynamics" data-reference-type="ref+label" data-reference="sec:residual-hessian,sec:dynamics">[sec:residual-hessian,sec:dynamics]</a>. The cohesive and q79 construction is in <a href="#sec:cohesive,sec:q79" data-reference-type="ref+label" data-reference="sec:cohesive,sec:q79">[sec:cohesive,sec:q79]</a>. The operator, kernel, and projection chain is proved in <a href="#sec:hodge,sec:descent-projection" data-reference-type="ref+label" data-reference="sec:hodge,sec:descent-projection">[sec:hodge,sec:descent-projection]</a>. The relation to perturbative graphs is in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">11</a>. The crucial warning that repair is not automatically action appears in <a href="#sec:action-boundary" data-reference-type="ref+label" data-reference="sec:action-boundary">12</a>. The final status and theorem-ownership tables are in <a href="#sec:ownership,sec:frontier" data-reference-type="ref+label" data-reference="sec:ownership,sec:frontier">[sec:ownership,sec:frontier]</a>.
 
 ## Vocabulary of claim strength
 
@@ -1164,6 +1181,140 @@ Thus $`M_0=-F`$ is a sign convention, not a claim that positive curvature became
 The scalar-curvature notation $`m_0=\lambda1`$ in the earlier finite example must likewise be interpreted in parity grading, or with a formal parameter of degree two if integer cohomological degrees are required. A real degree-zero scalar is not an integer-degree-two curvature merely because it is called even.
 
 This closes the local algebraic conjunction of noncentral curvature, positive cost, outer nilpotent repair and transferred interactions. It does not require an infinite curvature-insertion sum in this model. There is no contradiction with the nontruncating CBF hierarchy of <a href="#sec:response-retract" data-reference-type="ref+label" data-reference="sec:response-retract">8.5</a>: that target is a different, nonminimal 48-dimensional response retract. A selected physical factorization, global descent, domains, shared differential line, signed action and normalization still require their own evidence. The examples explain what those data could organize; they do not select them.
+
+# Global descent and the actual rational topology
+
+The local tensor examples answer how a coherent algebra can retain curvature under transfer. Two further records separate the global questions: how projective charts glue that algebra, and which rational form factor the q79 topology actually supplies. Neither question is answered by identifying every circle construction with the auxiliary Heisenberg example.
+
+## What descends through projective overlaps
+
+Keep the projective atlas of <a href="#thm:end-untwist" data-reference-type="ref+label" data-reference="thm:end-untwist">8</a>. On a good cover, let $`G_{ij}`$ be even unitary transitions satisfying $`G_{ij}G_{jk}G_{ki}=\alpha_{ijk}I`$, and suppose odd coefficient charges obey $`q_i=G_{ij}q_jG_{ij}^{-1}`$. Set
+``` math
+B_i=\mathop{\mathrm{End}}(E_i),\qquad F_i=q_i^2,\qquad d_i=[q_i,-].
+```
+Conjugation is an honest algebra cocycle even though the module cocycle is projective. Squaring and taking graded commutators give
+``` math
+F_i=\operatorname{Ad}(G_{ij})F_j,\qquad
+ d_i\operatorname{Ad}(G_{ij})=\operatorname{Ad}(G_{ij})d_j .
+```
+Thus the earlier endomorphism untwisting extends to a curved differential, not just to the zero-curvature case . The coefficient charge need not commute with the transitions; it need only transform correctly.
+
+Suppose the form-factor contractions have honest overlaps $`T_{ij}`$ preserving the unit and intertwining their transferred $`m_n`$. Then
+``` math
+R_{ij}=T_{ij}\widehat\otimes\operatorname{Ad}(G_{ij})
+```
+has an honest triple law. For the coefficient operations of <a href="#sec:unital-curved-coefficients" data-reference-type="ref+label" data-reference="sec:unital-curved-coefficients">9.5</a>,
+``` math
+R_{ij}M_{n,j}=M_{n,i}R_{ij}^{\otimes n},\qquad n\geq0.
+```
+For $`n=0`$ this means transport of curvature. For $`n\geq2`$ it follows from transport of $`m_n`$ and the ordered coefficient product; even transitions preserve the Koszul signs. Hence the local curved identities glue without introducing another curvature-insertion series. This imports the overlap extension; it does not duplicate the untwisting proof.
+
+An ordinary endomorphism sheaf is not necessarily a globally split matrix algebra. In the locally free case it can be an Azumaya algebra with nontrivial Brauer class . The scalar twist cancels from conjugation, not from the original module. For the same reason, central shared-line holonomy cannot be reconstructed from this adjoint action alone. The Hermitian differential line remains separate source data.
+
+## A noncommuting witness and its metric boundary
+
+Let $`X,Z`$ be the qutrit shift and clock, with $`X e_j=e_{j+1}`$, $`Z e_j=\omega^j e_j`$, and $`\omega^3=1`$. On $`\mathbb C^{1|2}\otimes\mathbb C^3`$, take
+``` math
+G_{01}=I_3\otimes X,\quad G_{12}=I_3\otimes Z,\quad
+ G_{20}=\omega(G_{01}G_{12})^{-1},
+```
+so their product is $`\omega I_9`$, while the adjoint triple is the identity. A nonidentity triple in this chosen atlas does not by itself certify that a global gerbe class is nonzero. The source charge is
+``` math
+q_0=(E_{01}+E_{10})\otimes I_3
+       +E_{02}\otimes X+E_{20}\otimes X^\dagger .
+```
+It is odd and self-adjoint, and a clock overlap moves it nontrivially. The transformed charges glue, their $`F_i=q_i^\dagger q_i=q_i^2`$ are positive and noncentral, and every chart has
+``` math
+V_i=\frac1{18}\operatorname{Tr}(F_i^\dagger F_i)=\frac43.
+```
+Here self-adjointness concerns the displayed coefficient $`q_i`$, not the full form-module operator corrected in <a href="#sec:noncentral-nested" data-reference-type="ref+label" data-reference="sec:noncentral-nested">9.4</a>. The witness tests actual conjugation, not a commuting-factor substitute.
+
+There is also a useful limit to this example. Its Heisenberg overlap acts by $`\omega^{w}`$, where the top form $`abc`$ has weight four. Consequently its top-form functional satisfies
+``` math
+\tau_A(Ta\,Tb)=\omega\,\tau_A(ab),
+```
+not scalar invariance. The finite check certifies algebraic equivariance and the triple law, not all scalar cyclic-pairing hypotheses of the general descent theorem. A line-valued pairing, or the inverse-character line, supplies the needed compensation. This does not invalidate the algebraic descent or the positive coefficient trace.
+
+Likewise, coordinate-dependent transitions require the connection law, not only matrix conjugation. In a local trivialization it has the form
+``` math
+{\cal A}_i=G_{ij}{\cal A}_jG_{ij}^{-1}
+                 -(dG_{ij})G_{ij}^{-1},
+```
+up to central terms invisible on endomorphisms. Parallel overlap maps, compatible adjoints and common domains are needed before concluding that the corresponding Hodge and Witten operators glue. Unitary conjugation does preserve the normalized coefficient cost; it does not select those connection or physical-domain data.
+
+## The q79 circle extension, not a Nil replacement
+
+Let $`B`$ be the selected K3 surface, with classes
+``` math
+H^2=2,\qquad \delta^2=-4,\qquad H\cdot\delta=0,
+```
+and primitive $`\delta`$. The topology under discussion is $`X_{q79}=P_\delta\times S^1_{\rm shared}`$, where the principal circle bundle $`P_\delta\to B`$ has Euler class $`\delta`$. K3 formality and the circle-extension model give the rational CDGA
+``` math
+{\cal A}_{q79}=H^*(B;\mathbb Q)\otimes\Lambda(u,v),\qquad
+ |u|=|v|=1,\quad du=\delta,\quad dv=0
+ \quad\cite{DGMS1975,GorokhovskySullivanXie2017}.
+```
+The source-specific calculation uses the full intersection lattice $`3U\oplus2E_8(-1)`$, not a fitted list of Betti numbers . There are $`24\cdot2\cdot2=96`$ rational basis states. This is not the physical 96-dimensional Dirac carrier merely because the numbers agree. The generator $`v`$ records the shared circle topologically, not its connection, charge spectrum or Lorentzian time.
+
+Write $`t`$ for the K3 top class, with $`xy=(x\cdot y)t`$ in degree four, and put
+``` math
+\gamma=\frac{\delta}{\delta^2}=-\frac14\delta,\qquad
+ x_\perp=x-\frac{\delta\cdot x}{\delta^2}\delta.
+```
+On the factor without $`v`$, the source projection $`p`$ and homotopy $`h`$ are
+``` math
+\begin{array}{c|cccccc}
+z&1&x&t&u&ux&ut\\ \hline
+p(z)&1&x_\perp&0&0&u x_\perp&ut\\
+h(z)&0&\dfrac{\delta\cdot x}{\delta^2}u&u\gamma&0&0&0
+\end{array}
+```
+and extend by tensoring with the identity on $`\Lambda(v)`$. Here $`p`$ is the ambient idempotent onto representatives; factoring it through its image gives the usual projection and inclusion. They obey
+``` math
+dh+hd=I-p,\qquad p^2=p,\qquad h^2=ph=hp=0.
+```
+This orthogonality is for the indefinite K3 intersection form, not a selected positive HYM inner product.
+
+Since $`\dim\delta^\perp=21`$, the retained representatives are $`1,v,x,ux,xv,uxv,ut,utv`$, with $`x\in\delta^\perp`$. Thus
+``` math
+(b_0,\ldots,b_6)=(1,1,21,42,21,1,1),\qquad
+ \dim H^*(X_{q79};\mathbb Q)=88.
+```
+The smaller algebra generated by $`H,\delta,u,v`$ has 16 source states and only eight cohomology states, of ranks $`(1,1,1,2,1,1,1)`$. It is a submodel, not the full compactification. The cyclic pairing is the coefficient of $`tuv`$ in a product. It is nondegenerate but not a positive Hilbert norm.
+
+## Strict topology does not mean a free physical theory
+
+For these representatives, $`m_2(a,b)=p(ab)`$. A nonzero $`h(ab)`$ is proportional to $`u\gamma`$, possibly with $`v`$. Its product with a retained $`\delta^\perp`$ class vanishes because $`\gamma\cdot\delta^\perp=0`$; its other products project to zero. Both terms of the ternary transfer therefore vanish:
+``` math
+m_3=0.
+```
+All homotopy images contain $`u`$, their pairwise products vanish, and another homotopy annihilates a product already containing $`u`$. These facts also kill every binary transfer tree of arity at least four. The source record confirms all $`88^3=681472`$ triples and gives the structural all-arity argument. Hence, at this topology-only tier,
+``` math
+m_1=0,\qquad m_2\ \hbox{survives},\qquad m_n=0\quad(n\geq3).
+```
+
+Strict transferred operations do not make the displayed representative inclusion multiplicative. For example,
+``` math
+p(H)=H,\qquad H H=2t,\qquad p(HH)=0,\qquad h(HH)=2u\gamma .
+```
+The homotopy carries the difference. Nor does algebraic $`p`$ supply a spectral gap, an analytic Hodge projector or a low-energy truncation.
+
+This result identifies where additional structure is needed, not a no-go for physical interactions. It concerns higher operations transferred from this particular rational cup-product DGA. A nonlinear residual with nonzero higher jets, twisted bundle coefficients, Yoneda operations or analytic overlap data is a different source of vertices. The repair-jet mechanism already explained in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">11</a> remains valid; its physical coefficients must still be evaluated. The full Hull–Strominger source is not proved formal, and no spacetime scattering amplitude vanishes merely because the topology model has $`m_3=0`$.
+
+The contrast with the auxiliary Heisenberg model is deliberate: $`dc=ab`$ leaves a nonzero ternary operation there; the selected q79 Hirsch contraction does not. The nonminimal CBF response hierarchy is a third object. None should replace either of the others solely because it is finite-dimensional.
+
+## How the compiler uses these results
+
+The hidden projective rank-nine module contributes an honestly descending traceless adjoint of rank $`9^2-1=80`$. This fits the declared $`3+8+8+80+3=102`$ deformation block, but does not evaluate its endpoint arrays. The twisted coefficient model on the relative Jacobian $`J`$ and the Hirsch model on $`X_{q79}`$ cannot simply be tensored as if they already lived on the same differential-geometric source. A typed realization between those presentations and the metric/domain comparison of the preceding projection section are required.
+
+For a supplied isometry $`U`$, operations transport exactly to its intrinsic range:
+``` math
+\widetilde M_n(y_1,\ldots,y_n)
+ =U M_n(U^\dagger y_1,\ldots,U^\dagger y_n).
+```
+At arity zero this means $`\widetilde M_0=UM_0`$. The unit, cyclic functional and pairings must also be transported to that range. Using an unrelated ambient unit or ambient rank-normalized trace is not the same construction. This is consistent with the corrected embedded-intertwiner and whole-projector results above.
+
+Thus two obligations are resolved at their stated tiers: projective coefficient descent and rational q79 topology transfer. A selected physical coefficient-to-carrier map, common connection and analytic domains, signed action, and independent map to the accepted 27-state algebra remain distinct tasks. No numerical dimension equality closes those maps.
 
 # Higher repair jets and graph shadows
 

@@ -15,10 +15,10 @@
     "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows": {
       "status": "reviewed",
       "reviewed_on": "2026-09-12",
-      "note": "V7 integrates six nested Witten/Heisenberg/noncentral coefficient records in one explanatory chain. Separates cyclic pairing from positive norm, inner curvature from outer nilpotence, module from operator-algebra dimensions, and exact minimal termination from the nonminimal CBF hierarchy. Corrects self-adjoint q versus non-self-adjoint full Q_A; positive curvature and transfer remain valid. Earlier thirty reviewed imports are retained without substantive changes. All 40 PDF pages visually inspected; zero build warnings and eight new exact checks pass. No large research reruns, physical-source promotion or Zenodo authorization.",
-      "reviewed_main_tex_sha256": "f6c41d8d10b25f7ded5478ff674ca6391f4851a6424f76cdb4578f6cb6979849",
-      "reviewed_pdf_sha256": "1f3daf502986ff9e296f14202c7068e292b8f3fc59f1807fd2283600a557b14f",
-      "reviewed_source_tree_sha256": "ad40f355b5e1c4ce573a2c81260aceea9398ad923816cbeea02f5a3da7b1efdc",
+      "note": "V8 explains curved projective-overlap descent and the actual rational q79 Hirsch topology, preserving all thirty-six earlier substantive imports. Includes the noncommuting positive 4/3-cost witness, cyclic-pairing compensation, connection law, 96-to-88 contraction, strict higher-operation vanishing and a nonmultiplicative representative example. Distinguishes rational topology, twisted coefficients, analytic/HYM realization and physical carriers. All 44 PDF pages inspected; zero warnings and seven new exact checks pass. No archived triple-table rerun, physical-tier promotion or Zenodo authorization.",
+      "reviewed_main_tex_sha256": "def433a6c6165a9df2b25deeb3aa9962e8e8dabe21f8839aed72cb81d4f3949c",
+      "reviewed_pdf_sha256": "fd2aae31db37ff401416895b0a02de212a9a40239a3530682d0ae94b3a2b18eb",
+      "reviewed_source_tree_sha256": "dfc40142b2ef5d9b599049a29d2f67f098e4bb498a762693ebe76675469f3a49",
       "release_authorized": false
     },
     "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1": {

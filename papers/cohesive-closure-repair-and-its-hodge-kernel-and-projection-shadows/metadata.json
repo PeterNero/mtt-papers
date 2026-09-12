@@ -5,12 +5,12 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v7",
-  "date": "September 2026, Version 7",
+  "current_version": "v8",
+  "date": "September 2026, Version 8",
   "latest_zenodo_release": null,
-  "main_tex_sha256": "f6c41d8d10b25f7ded5478ff674ca6391f4851a6424f76cdb4578f6cb6979849",
+  "main_tex_sha256": "def433a6c6165a9df2b25deeb3aa9962e8e8dabe21f8839aed72cb81d4f3949c",
   "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
-  "paper_md_sha256": "06b5926d932c736dd84598052457d31700bbe0f158af76f985e99b3647570636",
+  "paper_md_sha256": "0f2b26bf9f78a006f8110bcd5bb31673b8a697ea475da2f06a44290ee6c3bf9e",
   "release_state": "current_revised_tex",
   "result_refs": [
     "causal_base_cohesive_repair_compression_transfer_comparison_packet",
@@ -42,12 +42,14 @@
     "preprojection_noncentral_curved_transfer",
     "preprojection_nonzero_defect_hessian_witness",
     "preprojection_positive_noncentral_nested_transfer",
+    "preprojection_q79_hirsch_transfer",
     "preprojection_qutrit_central_extension_witness",
     "preprojection_repair_jet_graph_functor",
     "preprojection_restricted_nested_transfer",
     "preprojection_reversible_dissipative_repair",
     "preprojection_single_charge_factorization",
     "preprojection_strict_unital_curvature_extension",
+    "preprojection_twisted_morita_overlap_descent",
     "q79_cohesive_superconnection",
     "q79_continuum_finite_intertwiner_cutset",
     "q79_maurer_cartan_repair",
@@ -56,25 +58,25 @@
   ],
   "revision": {
     "revision_evidence_path": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "f6afdbc588d09aaa97cfc8f3fee2728eda8d3db6dfda9590e48bcc4498553a59",
+    "revision_evidence_sha256": "7479afe8d60a14b3c772544d1a44bde594bc210013a05356d053464859224d8e",
     "selected_revision": true
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 656065,
+      "bytes": 683055,
       "path": "main.pdf",
-      "sha256": "1f3daf502986ff9e296f14202c7068e292b8f3fc59f1807fd2283600a557b14f"
+      "sha256": "fd2aae31db37ff401416895b0a02de212a9a40239a3530682d0ae94b3a2b18eb"
     },
     {
-      "bytes": 109581,
+      "bytes": 120901,
       "path": "main.tex",
-      "sha256": "f6c41d8d10b25f7ded5478ff674ca6391f4851a6424f76cdb4578f6cb6979849"
+      "sha256": "def433a6c6165a9df2b25deeb3aa9962e8e8dabe21f8839aed72cb81d4f3949c"
     },
     {
-      "bytes": 16584,
+      "bytes": 18361,
       "path": "main.bib",
-      "sha256": "c71d98e65e7482b0c00f4fedd39fa6221b2b278979c3fea0934e566e224c3613"
+      "sha256": "5568469f59718a14b75aee2f6ecf99584bc1ee53c0144f77fd37da7292d6b08d"
     },
     {
       "bytes": 3676,
@@ -87,7 +89,7 @@
     "repository_native_path": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
     "results_snapshot": "ba0874012246bb930677ebfa6f0a6eb33a57a8f0"
   },
-  "source_tree_sha256": "ad40f355b5e1c4ce573a2c81260aceea9398ad923816cbeea02f5a3da7b1efdc",
+  "source_tree_sha256": "dfc40142b2ef5d9b599049a29d2f67f098e4bb498a762693ebe76675469f3a49",
   "title": "Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary",
   "version_relation": "unreleased_new_paper",
   "zenodo_releases": []

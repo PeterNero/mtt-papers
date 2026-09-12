@@ -1,5 +1,47 @@
 # Cohesive Source Revision Audit
 
+## Version 8 Global Descent and Rational q79 Topology
+
+Date: 2026-09-12. Supersedes local v7; no release authorized.
+
+The H4-T5 and H4-T6 frozen artifacts, owning theorem notes and implementation
+formulas were read in context. The existing endomorphism-untwisting proof,
+transported-metric discussion and thirty-six earlier integrations are retained.
+
+- Extend scalar-cocycle cancellation to the full curved coefficient package,
+  assuming operation-compatible overlap maps. Do not duplicate the earlier
+  zero-curvature untwisting theorem or infer that the original gerbe is neutral.
+- Explain the positive noncommuting nine-dimensional overlap witness and cost
+  4/3. Distinguish the coefficient charge from the full module operator.
+- Qualify the finite Heisenberg witness: algebraic equivariance does not
+  certify scalar cyclic-pairing descent. The top form has character omega;
+  an inverse-character line supplies compensation. The general theorem's
+  pairing-preservation hypothesis remains valid and necessary.
+- State the coordinate-dependent connection transformation and analytic
+  domain conditions before transporting Hodge/Witten operators.
+- Import the actual rational q79 circle extension with du=delta, dv=0,
+  full 96-to-88 contraction and Betti ranks (1,1,21,42,21,1,1).
+  Its 16-state submodel is not the whole source. Intersection and cyclic
+  pairings are not selected positive HYM metrics.
+- Explain why every transferred mn for n>=3 vanishes at this topology-only
+  tier. The finite span proof is independently checked without rerunning
+  all 681,472 archived triples. The Heisenberg and nonminimal CBF models
+  retain their different higher operations.
+- Demonstrate that strict transferred operations do not make the displayed
+  representative inclusion multiplicative: H squared is 2t but p(2t)=0.
+- Distinguish the source on J, topology on X, rank-102 deformation block,
+  96-state topology model, physical Dirac carrier and accepted 27 algebra.
+  Transport the unit and normalization to the intrinsic range of a compiler.
+
+Seven new exact editorial tests pass in
+`scripts/test_cohesive_global_editorial.py`. These test the small overlap
+and phase witness, all 96 contraction states, the finite higher-tree
+vanishing conditions, cyclic projection, and range normalization.
+Archived artifacts and research worker checkouts are unchanged.
+The 44-page PDF builds with zero warnings, and every page was visually
+inspected. The reviewed LF-normalized TeX hash is
+`def433a6c6165a9df2b25deeb3aa9962e8e8dabe21f8839aed72cb81d4f3949c`.
+
 ## Version 7 Nested Witten and Curved Coefficient Integration
 
 Date: 2026-09-12. Supersedes local v6; no release authorized.

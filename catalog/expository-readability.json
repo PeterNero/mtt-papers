@@ -634,11 +634,11 @@
     {
       "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
       "title": "Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary",
-      "total_words": 13728,
-      "narrative_words": 10626,
+      "total_words": 15215,
+      "narrative_words": 11947,
       "formal_results": 19,
       "proofs": 13,
-      "narrative_words_per_result": 559.3,
+      "narrative_words_per_result": 628.8,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -651,7 +651,7 @@
       "heuristic_priority": "low",
       "review_status": "reviewed",
       "reviewed_on": "2026-09-12",
-      "review_note": "V7 integrates six nested Witten/Heisenberg/noncentral coefficient records in one explanatory chain. Separates cyclic pairing from positive norm, inner curvature from outer nilpotence, module from operator-algebra dimensions, and exact minimal termination from the nonminimal CBF hierarchy. Corrects self-adjoint q versus non-self-adjoint full Q_A; positive curvature and transfer remain valid. Earlier thirty reviewed imports are retained without substantive changes. All 40 PDF pages visually inspected; zero build warnings and eight new exact checks pass. No large research reruns, physical-source promotion or Zenodo authorization.",
+      "review_note": "V8 explains curved projective-overlap descent and the actual rational q79 Hirsch topology, preserving all thirty-six earlier substantive imports. Includes the noncommuting positive 4/3-cost witness, cyclic-pairing compensation, connection law, 96-to-88 contraction, strict higher-operation vanishing and a nonmultiplicative representative example. Distinguishes rational topology, twisted coefficients, analytic/HYM realization and physical carriers. All 44 PDF pages inspected; zero warnings and seven new exact checks pass. No archived triple-table rerun, physical-tier promotion or Zenodo authorization.",
       "missing_dimensions": []
     },
     {
