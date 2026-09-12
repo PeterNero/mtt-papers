@@ -9,15 +9,32 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v13
-date: September 2026, Version 13
-generated_from_main_tex_sha256: b292dfed0cd6d05cb455a5d025e91d0e11fe19d9f32d8aed0a0d64d53a83ae54
+current_version: v14
+date: September 2026, Version 14
+generated_from_main_tex_sha256: c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc
 paper_id: cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows
 release_state: current_revised_tex
 title: |
   **Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:**
   From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary
 ---
+
+# Version 14 Revision Note
+
+Supersedes
+The local Version 13 manuscript; no public release is implied.
+
+Reason
+Three remaining q79 imports needed explanations distinguishing global support, large-gauge topology and operational record dynamics.
+
+Resolution
+Integrates ordinary Fitting descent of a twisted source, the rank-zero large-gauge kernel and the exact first-count instrument. Examples explain why their physical conclusions are different.
+
+Retained result
+All sixty-four prior integrations and the foundational Fixed Points series retain their stated scope.
+
+Remaining boundary
+Support descent is not gerbe trivialization; rank zero is not zero parameters; a path law is not physical actualization. The full mathematical-language atlas still awaits contextual review.
 
 # Version 13 Revision Note
 
@@ -2414,6 +2431,42 @@ The current q79 research program provides a hash-bound $`\alpha`$-twisted cohesi
 
 The q79 result is not merely a finite analogy. It applies the general mathematics to one explicit twisted perfect-complex atlas. But it is a benchmark object, not yet the selected physical visible/hidden endpoint.
 
+## Global support without untwisting the source
+
+The Fitting-descent record answers a question that precedes metric selection: do the rank strata of the twisted object make sense globally? For a finitely presented module, its Fitting ideals are independent of its presentation and commute with restriction . Trivialize an invertible transition line on an overlap. Tensoring by that line then changes the presentation only by invertible local operations. Its minors generate the same ideals; the scalar gerbe units also leave the ideals unchanged. Consequently
+``` math
+\operatorname{Fitt}_k\bigl(\mathcal H^j(\mathcal{S}_{\mathrm{HS}})\bigr)
+```
+is an ordinary ideal sheaf on $`J`$, even when $`\mathcal H^j(\mathcal{S}_{\mathrm{HS}})`$ is $`\alpha`$-twisted. This is intrinsic descent, not an execution of the literal overlap matrices.
+
+The selected local differential is equivalent to three two-by-two blocks:
+``` math
+\begin{equation}
+ M_0\simeq B_a\oplus B_1\oplus B_1,\qquad
+ B_c=\begin{pmatrix}c&r\\-t&0\end{pmatrix},
+ \qquad \det M_0=(rt)^3 .
+ \tag{Q1}\label{eq:q79-fitting-blocks}
+\end{equation}
+```
+Eliminating the two unit pivots leaves $`B_a\oplus(rt)\oplus(rt)`$. Its minors give the ladder
+``` math
+\begin{equation}
+\begin{aligned}
+ \operatorname{Fitt}_0&=((rt)^3),&
+ \operatorname{Fitt}_1&=((rt)^2),&
+ \operatorname{Fitt}_2&=(rt),\\
+ \operatorname{Fitt}_3&=(a,r,t),&
+ \operatorname{Fitt}_4&=R .
+\end{aligned}
+\tag{Q2}\label{eq:q79-fitting-ladder}
+\end{equation}
+```
+Thus the presentation matrix has rank six off $`rt=0`$, rank three generically on that divisor, and rank two at $`a=r=t=0`$. These are presentation ranks, not particle multiplicities. The selected chart has two reduced points in the deepest stratum, at the two zeros $`(u,W)=(0,\pm3)`$ of the degree-two section.
+
+The global source identifies $`\operatorname{div}(r)`$ with the class-$`H`$ support and $`\operatorname{div}(t)`$ with $`D_0`$. The leading Fitting divisor therefore has class $`3H+3D_0`$, agreeing with the independent BHT virtual class and determinant line $`\mathcal O_J(3H+3D_0)`$. The first two higher ideal sheaves are $`\mathcal O_J(-2H-2D_0)`$ and $`\mathcal O_J(-H-D_0)`$. The agreement is about this Hartshorne–Serre benchmark, not an identification with the physical eta9 class $`9H+3D_0`$ in <a href="#sec:deligne-rank-separation" data-reference-type="ref+label" data-reference="sec:deligne-rank-separation">12.1</a>.
+
+Why is this useful without a smooth spectral line? It supplies an invariant description of where the source loses rank, so local operator calculations can refer to the same strata. But multiplicity three in a determinant does not make the cokernel a line: its generic corank here is three, not one. Neither ordinary Fitting ideals nor their determinant trivialize the gerbe. Purity, WIT, a recombined rank-one spectral sheaf and literal connection overlaps require their own arguments. The packet’s older open HYM labels are not current authority: later hidden-carrier and existential HYM results remain retained. This support theorem does not by itself supply the common visible/hidden physical endpoint.
+
 ## The proposed full defect and why it remains proposed
 
 The physical source program organizes the Hull–Strominger obligations into a multi-lane residual of the schematic form
@@ -2537,6 +2590,39 @@ The shared circle enters this construction as a differential line $`(L_{\mathrm{
 ```
 in the appropriate equivariant sense. It would then follow that the repair Hessian and all its functional-calculus shadows preserve the shared charge sectors. This is a serious unification condition. It does not identify compact phase with Lorentzian time.
 
+## What the rank-zero large-gauge kernel actually means
+
+The selected real K3 benchmark has $`\mathrm{NS}(S)=\langle H,\delta\rangle`$ with Gram matrix $`\operatorname{diag}(2,-4)`$, Picard rank two and transcendental rank twenty. The imported exact certificate resolves a global ambiguity of its two-real-parameter $`B`$-field plane, not of the repair Hessian. Put $`L=H^2(S,\mathbb Z)`$ and $`W=\operatorname{span}_{\mathbb R}\{\operatorname{Re}\Omega,
+\operatorname{Im}\Omega\}`$. For the stated $`X_{q79}=P_\delta\times S^1_{\rm sh}`$ topology, the free large-gauge identification gives
+``` math
+\begin{equation}
+ \Lambda_b=W\cap(L+\mathbb R\delta),\qquad
+ b_{K3}:W/\Lambda_b\longrightarrow B_{\rm flat}(X_{q79}).
+ \tag{Q3}\label{eq:q79-bk3-kernel}
+\end{equation}
+```
+Pairing $`w=\ell+c\delta`$ with $`\delta`$, using $`w\perp\delta`$ and $`\delta^2=-4`$, makes $`c`$ rational; indeed $`4w`$ is integral. Thus a nonzero gauge identification would give a rational period vector. Two independent such vectors would make $`W`$ rational, forcing twenty algebraic directions, contrary to Picard rank two.
+
+Here is the additional argument that excludes rank one. Real conjugation preserves $`W`$ and $`L`$, so its one-dimensional rational resonance space would have a generator $`v`$ of eigenvalue $`+1`$ or $`-1`$. The rational orthogonal reflection $`s_v`$, composed with conjugation, is a Hodge endomorphism of the transcendental space. The simplicity of that polarized Hodge structure implies that an endomorphism vanishing on $`H^{2,0}`$ is zero . Accordingly $`s_vc=-I`$ in the $`+1`$ case and $`s_vc=I`$ in the $`-1`$ case. Conjugation would have transcendental eigendimensions $`(1,19)`$ or $`(19,1)`$.
+
+The certificate excludes both possibilities without numerical periods. Its squarefree critical-value resultant has degree thirty and six real roots; exact regular-fiber counts are
+``` math
+(2,0,2,0,2,0,2).
+```
+The two regular points at infinity join the outer arcs. This gives three real branch ovals. Allowing every nesting and sign yields $`\chi(S(\mathbb R))\in\{-4,-2,0,2,4,6\}`$. The real Lefschetz formula $`\chi(S(\mathbb R))=2+\operatorname{tr}(c^*|H^2)`$, together with the two real divisor classes in the minus eigenspace, gives transcendental pairs from $`(8,12)`$ through $`(13,7)`$. None is an extreme pair. Hence $`\Lambda_b=\{0\}`$ exactly. This paragraph imports the frozen Sturm/topology certificate; it does not rerun its large elimination.
+
+There is no contradiction between injectivity and density. Integral characters annihilating $`W`$ are $`\mathrm{NS}(S)\cap\delta^\perp`$, of rank one inside the rank-21 character lattice. Its image therefore has a twenty-dimensional compact torus as closure:
+``` math
+\begin{equation}
+ b_{K3}:\mathbb R^2\hookrightarrow \mathbb T^{20},
+ \qquad \overline{b_{K3}(\mathbb R^2)}=\mathbb T^{20}.
+ \tag{Q4}\label{eq:q79-bk3-dense}
+\end{equation}
+```
+The map is an injective immersion with dense nonclosed image, not an embedding with the subspace topology. The exact torus lattice includes discriminant gluing: it is $`\operatorname{sat}_L(T(S)+\mathbb Z\delta)/\mathbb Z\delta`$, not automatically the unmodified transcendental lattice.
+
+Thus *rank zero* removes periodic identifications; it does not remove the two continuous coordinates or turn them into twenty independent parameters. It does not count $`\ker A_*`$, decide the unrelated eta9 $`F_0`$ lift, select the shared-circle action, or fix a kinetic scale. Period normalization and the physical source remain separate questions.
+
 ## Status table
 
 <div class="center">
@@ -2570,6 +2656,60 @@ The fixed-point theory keeps its existing theorem ownership. It proves existence
 ## Wave and particle representations
 
 The positive filtered operator in the wave–particle paper no longer needs to be viewed as mathematically arbitrary on the cohesive benchmark. It can be the functional calculus of a repair Hessian. Its local and spectral descriptions then become the localized and normal-mode shadows of one tangent repair process. The quantum state, Born bridge, instrument, and physical time evolution remain separate obligations.
+
+## Repair convergence and an operational record trajectory
+
+A repair semigroup is not already a law for which detector record occurs. The pathwise q79 result makes this distinction explicit using the same finite Hessian projectors. Let $`P=\frac13\mathbf1\mathbf1^\dagger`$ on $`\mathbb C^3`$, with $`\mathbf1=(1,1,1)^{\mathsf T}`$, and $`Q=I-P`$. For the initial ray $`e_0`$, $`p_0=\langle e_0,Pe_0\rangle=1/3`$. Normalized repair by $`R_t=P+e^{-t}Q`$ gives
+``` math
+\begin{equation}
+ p(t)=\frac{p_0}{p_0+e^{-2t}(1-p_0)}\longrightarrow1 .
+ \tag{Q5}\label{eq:q79-repair-weight}
+\end{equation}
+```
+The outcome is deterministic attraction to the coherent subspace, not $`P/Q`$ frequencies $`1/3,2/3`$. The invariant set $`p_0=0`$ remains in $`Q`$. Nor does the binary-variance alternative $`p(1-p)`$ solve the problem: in the source Fubini–Study normalization its negative gradient has $`\dot p=4p(1-p)(2p-1)`$, so the root flows to $`Q`$. Haar measure on $`\mathbb{CP}^2`$ has marginal density $`2(1-p)`$; the two basin masses are $`1/4,3/4`$, not the required pair. Haar preparation is also not a pure-state ensemble representing this particular root.
+
+The stronger obstruction is elementary and narrowly scoped. If $`\rho_0=|e_0\rangle\langle e_0|=\int |z\rangle\langle z|\,d\mu(z)`$ for normalized rays, then
+``` math
+\int\|(I-\rho_0)z\|^2\,d\mu(z)
+ =\operatorname{tr}((I-\rho_0)\rho_0)=0 .
+```
+Nonnegativity forces $`\mu`$ onto the root ray. Any deterministic record map whose complete state is only that ray then gives a single delta outcome. This does not exclude a richer preprojection microstate projecting to the ray; it requires that richer state and its preparation law to be specified. It is not a general impossibility theorem for deterministic MTT.
+
+The accepted operational construction instead supplies a marked first-count instrument. In its dimensionless clock convention,
+``` math
+L_P=\sqrt{\gamma}\,P,\qquad L_Q=\sqrt{\gamma}\,Q,
+ \qquad \gamma=\log448,\qquad \sum_aL_a^\dagger L_a=\gamma I .
+```
+Quantum-jump unravelling is standard mathematics ; here the projectors, context and clock are inherited source data. With no additional Hamiltonian in this finite recorder frame, the normalized no-count state stays fixed. Survival is $`e^{-\gamma u}`$; a first mark $`a`$ at time $`s`$ has density $`\gamma e^{-\gamma s}\operatorname{tr}(\rho P_a)\,ds`$ and update $`P_a\rho P_a/\operatorname{tr}(\rho P_a)`$ when its denominator is positive. A zero-weight mark has zero probability and needs no conditional state. Stopping at the first count, or retaining only its mark, gives
+``` math
+\begin{equation}
+ \mathcal M_{{\rm ready},u}(\rho)=e^{-\gamma u}\rho,\qquad
+ \mathcal M_{a,u}(\rho)=(1-e^{-\gamma u})P_a\rho P_a .
+ \tag{Q6}\label{eq:q79-path-instrument}
+\end{equation}
+```
+This is not a claim that the un-stopped counting process can jump only once. For the root at $`u=1`$, its probabilities are
+``` math
+(\Pr({\rm ready}),\Pr(P),\Pr(Q))
+ =\left(\frac1{448},\frac{149}{448},\frac{149}{224}\right).
+```
+The normalized $`P`$ state is $`P`$; the normalized $`Q`$ state is the projector onto $`(2,-1,-1)/\sqrt6`$. Their probability-weighted sum, including the ready state, is the finite nonselective channel
+``` math
+\begin{equation}
+ \rho_1=\frac1{1344}
+ \begin{pmatrix}
+ 748&-149&-149\\
+ -149&298&298\\
+ -149&298&298
+ \end{pmatrix}.
+ \tag{Q7}\label{eq:q79-record-state}
+\end{equation}
+```
+For a general mixed input the conditional $`Q`$ state need not have rank one. No additional empirical probabilities are inserted by this disintegration, but its inherited clock and apparatus context are inputs, not zero-input physical predictions.
+
+Unitary overlap conjugation preserves hazards and intertwines conditional updates. Scalar shared-line phases cancel, so the marked law descends on the established open stratum. This does not extend it automatically across the exceptional stratum. A detector is an ordinary coupled physical system, not a privileged observer or an extra act of measurement. The continuum repair-to-recorder compiler is conditional on the selected invariant modes, isometry and coupling; an abstract compiler is not those physical inputs.
+
+Finally, a probability measure does not identify its realized sample. A single compatible path, a richer deterministic upper completion and an operational-only interpretation must be distinguished from the proved instrument. None is selected merely by the presence of the shared circle, and compact phase is not Lorentzian time. These qualifications retain the canonical operational result instead of relabeling it as open.
 
 ## Perturbative graphs
 

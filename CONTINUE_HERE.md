@@ -6,7 +6,7 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
 
 - The catalog contains 142 papers, and all 305 curated results have one integration home.
 - Flux v6 now preserves the established projective rank-nine hidden carrier and existential HYM connection. The numerical chamber, common visible endpoint and Bianchi data remain separate.
-- The cohesive manuscript is now v13: explicit six-row residual, 25-block support,
+- The cohesive manuscript is now v14: explicit six-row residual, 25-block support,
   conditional character reduction, metric comparison and source-factorization
   imports are integrated. Its isometric-embedding statement is corrected.
   V4 additionally corrects whole-projector comparison: exact retained
@@ -79,13 +79,24 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
   reconstruction survive. The effective 13/19-coordinate ledger is a profile
   count, not independent predictive validation.
 
+## Latest Addition: Cohesive v14
+
+Three q79 imports are now explained in sections 19.2, 19.6 and 20.3.
+Global Fitting support does not untwist the source. The BK3 rank-zero
+large-gauge kernel is not a zero-dimensional physical parameter space.
+Exact first-count trajectories are not derived physical actualization.
+All 64 prior imports are unchanged, with their source hashes rebound only
+after checking the additive diff and manuscript context. The 72-page PDF
+was visually inspected; eight new bounded exact checks pass. No large
+worker calculation or frozen result was changed. Cohesive is 67/68 integrated.
+
 ## Review Queue, Not Missing Mathematics
 
 `catalog/research-integration-reviews.json` is the manual contextual record. `catalog/research-ownership.json` and per-paper `RESEARCH_INTEGRATION.md` are generated views.
 
-103 result assignments have been reviewed: 101 integrated and two historical
+106 result assignments have been reviewed: 104 integrated and two historical
 provenance records needing no new theorem. All 19 originally confirmed
-additions/details have been handled. The other 202 are unreviewed, not known
+additions/details have been handled. The other 199 are unreviewed, not known
 omissions. This is editorial integration, not a new physical closure claim.
 A literal ID in metadata is not manuscript integration. A missing literal ID
 does not prove the mathematics is absent.
@@ -94,13 +105,13 @@ Reviews bind LF-normalized manuscript bytes, exact result hashes and real source
 
 ## Next Editorial Work
 
-1. Continue with the remaining four cohesive-source assignments: global Fitting
-   descent, pathwise repair, BK3 and the separately scoped mathematical-language
-   atlas. The atlas needs full scoped reading, not only an early inventory.
-   Do not repeat the auxiliary-pencil/Deligne or PBW/apolar clusters; all 64
-   earlier integrations retain their stated scope. Check consumer uses of
-   the new integral-lattice and Neron-applicability qualifications.
-2. Continue the 202 contextual reviews in the order and clusters recorded in
+1. Finish the one remaining cohesive assignment: the full mathematical-language
+   atlas (200,945 bytes in the frozen artifact). Review by source family, including
+   later appendices; do not relabel it after an early inventory or newest tail.
+   Fitting descent, BK3 and pathwise repair are now integrated in v14.
+   All 67 integrations retain their scopes. Apply existing lattice/Neron
+   qualifications to consumers without reopening independent results.
+2. Continue the 199 contextual reviews in the order and clusters recorded in
    EDITORIAL_INTEGRATION_PLAN.md. SM has no remaining assigned imports.
 3. Review downstream uses of embedded isometries against the corrected cohesive
    theorem. Cost pullback alone is not reducing operator intertwining; exact

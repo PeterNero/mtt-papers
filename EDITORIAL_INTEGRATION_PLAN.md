@@ -2,7 +2,7 @@
 
 Checkpoint: 2026-09-12, after the foundational dependency repair: FP I v7,
 II v6, III v8, IV v7, V v9 and VI v7. The finite-mode companion v1,
-cohesive v13 and SM v4. Fixed Points and the companion remain unchanged.
+cohesive v14 and SM v4. Fixed Points and the companion remain unchanged.
 This is an editorial queue, not a list of unproved research claims.
 No Zenodo upload or publication is authorized.
 
@@ -164,8 +164,17 @@ lattice. Degree-two gerbe quotients do not inherit ordinary weight-minus-one
 Neron models without a comparison. Both qualifications are recorded in
 public errata and Kernel; rational and scoped local results survive.
 All 69 pages inspected; nine new exact editorial tests pass.
-Cohesive is 64/68 integrated, with four unreviewed assignments remaining.
-Corpus totals: 103 reviewed, 101 integrated, two historical, 202 unreviewed.
+At the v13 checkpoint Cohesive was 64/68 integrated; the corpus had
+103 reviewed, 101 integrated, two historical and 202 unreviewed.
+
+V14 adds three targeted q79 imports in sections 19.2, 19.6 and 20.3:
+ordinary Fitting descent, the rank-zero BK3 large-gauge kernel, and the
+canonical first-count instrument with its deterministic-pure-ray boundary.
+The physical eta9 class, common HYM source, clock normalization and
+actualization are not inferred from these distinct results. All 64 prior
+imports remain unchanged. All 72 pages inspected; eight new bounded tests
+pass. Cohesive is 67/68 integrated; only the full atlas remains.
+Corpus totals: 106 reviewed, 104 integrated, two historical, 199 unreviewed.
 
 Counts below come from the current source-bound ownership registry. Review
 source hypotheses, actual paper discussion and the latest superseding result;
@@ -173,7 +182,7 @@ do not infer absence or completion from an identifier search.
 
 | Order | Owner family | Unreviewed | Focus |
 |---|---|---:|---|
-| 1 | Cohesive source | 4 | Global Fitting descent, pathwise repair, BK3 and the full scoped atlas. All 64 integrated assignments are retained; apply lattice/Neron qualifications to consumers. |
+| 1 | Cohesive source | 1 | Full scoped atlas, read by source family and later appendices. All 67 integrated assignments retained; apply lattice/Neron qualifications to consumers. |
 | 2 | Flux/q79 | 51 | Read latest correction before earlier source-route claims. Preserve local versus global domains, auxiliary versus physical spectral class, and hidden existence. |
 | 3 | Hull-Strominger | 37 | Common-source realization, moment-map role reduction and current hidden existence without relabeling symbolic formulas as evaluated coefficients. |
 | 4 | Proto-spinor | 29 | Shared-line and representation imports; distinguish finite algebra, graded matter index, first-order operators and the physical endpoint. |
@@ -186,7 +195,7 @@ do not infer absence or completion from an identifier search.
 | 11 | Perturbative QG | 6 | State the established perturbative/conditional scope, not UV-complete gravity. |
 | 12 | Parameters | 2 | No double-counting of shared inputs, profile coordinates and derived outputs. |
 | 13 | Closure strain | 1 | Preserve local carrier/strain and physical-spacetime distinctions. |
-| | Total | 202 | These are not 202 confirmed omissions. |
+| | Total | 199 | These are not 199 confirmed omissions. |
 
 The broad `mathematical_language_atlas` remains unreviewed. It is an evolving
 multi-thousand-line artifact with later appendices, not merely a July status
@@ -208,8 +217,8 @@ historical after reading only its early inventory or newest tail.
   public results paper lock from committed manuscript state.
 - End the next handoff with exact completed result IDs and remaining counts.
 
-Current totals: 305 assigned, 103 reviewed (101 integrated, two historical),
-zero currently confirmed additions, 202 unreviewed, zero stale contextual
+Current totals: 305 assigned, 106 reviewed (104 integrated, two historical),
+zero currently confirmed additions, 199 unreviewed, zero stale contextual
 reviews. The original 19 additions/details are now handled. Further reviews
 may legitimately identify new additions or corrections; these counts are not
 scientific proof-completion scores.

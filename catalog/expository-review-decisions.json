@@ -16,9 +16,9 @@
       "status": "reviewed",
       "reviewed_on": "2026-09-12",
       "note": "V12 integrates eight PBW/apolar/socle results through a connected explanatory section, examples and frozen source citations. All 48 prior source integrations remain unchanged. Distinguishes finite field and anchor scopes, tensor covariance from fixed-metric invariance, quotient descent from complement lifts, and actual source returns from reconstructed quotient bases. All 62 final PDF pages visually inspected; zero build warnings and nine new exact editorial tests pass. Worker code, frozen artifacts and FP I--VI unchanged. No physics-tier promotion or Zenodo authorization.",
-      "reviewed_main_tex_sha256": "b292dfed0cd6d05cb455a5d025e91d0e11fe19d9f32d8aed0a0d64d53a83ae54",
-      "reviewed_pdf_sha256": "dd7d83962e4db764f6d467454dd090c1464f4ec5a523bc46009b555cd8f5cc72",
-      "reviewed_source_tree_sha256": "bc9ff9e25413b13f42e555d70addc46c5743f61a5ea57c5a8ba630de81d5bebc",
+      "reviewed_main_tex_sha256": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "reviewed_pdf_sha256": "378bfbd07d7af2b9735be1d8ec62ae1e0d75dcd7480f397e5599ee7eea06d66c",
+      "reviewed_source_tree_sha256": "7183d703c19fe912c573ca9de8d2ad310135fc5f11ff85593a8a8df32bc43090",
       "release_authorized": false
     },
     "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1": {

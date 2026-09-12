@@ -1,5 +1,16 @@
 # Cohesive Source Revision Audit
 
+## Version 14: Global Support, Gauge Kernel and Record Paths (2026-09-12)
+
+- Reason: the final three targeted q79 certificates lacked contextual explanation in their assigned owner. The 200,945-byte mathematical-language atlas remains separately unreviewed.
+- Resolution: added global Fitting descent and the local minor ladder in the q79 benchmark, the real-K3 rank-zero/dense-image argument beside shared-line geometry, and the exact first-count instrument beside the wave/particle discussion.
+- Scope: generic corank three is not a spectral line; 3H+3D0 is not the physical eta9 9H+3D0 class. Rank-zero gauge kernel removes no continuous coordinates. Deterministic pure-ray exclusion does not exclude richer upper states. The inherited operational clock is dimensionless, and zero-probability conditional marks are not divided by zero.
+- Source context: read all three frozen JSON records, their source explanations and the relevant atlas continuation. Source bytes match the worker certificates. The later continuum-recorder compiler is conditional, and newer hidden-carrier/existential HYM progress is retained rather than reset by historical packet labels.
+- Exposition: seven displayed equations connect the arguments; no duplicate theorem environments were introduced. Primary references explain the standard Fitting, Hodge and quantum-trajectory machinery. The abstract is unchanged and contains no revision prose.
+- Preservation: removing only the v14 note and three additions recovers the prior TeX exactly (apart from the version label). FP I--VI and all 64 prior integrations are unchanged. No worker calculation, frozen scientific result or Zenodo release is modified.
+- Validation: see the matching Kernel Q79 terminal review for bounded checks, rendered-page inspection and final committed hashes. These checks do not independently reproduce the K3 elimination or select a physical endpoint.
+
+
 ## Version 13 Auxiliary Pencils, Deligne Data and Integral Typing
 
 Date: 2026-09-12. Supersedes local v12; no release authorized.
