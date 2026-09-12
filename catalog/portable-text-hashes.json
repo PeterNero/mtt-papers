@@ -601,28 +601,28 @@
       "sha256_lf": "483597dae8e82e68b31d2e187e22f4b8c8ff8821621d782d8162445bf16fbdac"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 84703,
-      "sha256_lf": "ea635eaa0366d77ab22c76cbd74a77c72d0fb45cc4b78de1b6e770f0abde9ab6"
+      "bytes_lf": 87523,
+      "sha256_lf": "6f514cf9be6519ed2ccae96108c3a3b8d64dd9af70f49228d5a91c479fff1f18"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/REVISION_AUDIT.md": {
-      "bytes_lf": 13319,
-      "sha256_lf": "03954b2d2f3a6069484dc0dc13f8170007101d5c041ee65b60bf004f579eb127"
+      "bytes_lf": 15806,
+      "sha256_lf": "f6afdbc588d09aaa97cfc8f3fee2728eda8d3db6dfda9590e48bcc4498553a59"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.bib": {
-      "bytes_lf": 13598,
-      "sha256_lf": "c39174a7711a098ce2c84e2ae7b9b03796c13f7d8ce636683be040f36a7888b7"
+      "bytes_lf": 16584,
+      "sha256_lf": "c71d98e65e7482b0c00f4fedd39fa6221b2b278979c3fea0934e566e224c3613"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex": {
-      "bytes_lf": 96319,
-      "sha256_lf": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78"
+      "bytes_lf": 109581,
+      "sha256_lf": "f6c41d8d10b25f7ded5478ff674ca6391f4851a6424f76cdb4578f6cb6979849"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/metadata.json": {
-      "bytes_lf": 6352,
-      "sha256_lf": "fc798a5ff468182b7ccca5c23c11ad0cbc07ef930ba16dde79b880d5c054fbbe"
+      "bytes_lf": 6648,
+      "sha256_lf": "1db9d4aa87a456ce49a0c90ae218b02290146f222b42b34d3fd5b7f37f57a21e"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/paper.md": {
-      "bytes_lf": 99707,
-      "sha256_lf": "4f084dc3e4e78eec551aa83db8589041d54fb190d94b57e0a843caf84f43bf03"
+      "bytes_lf": 112933,
+      "sha256_lf": "06b5926d932c736dd84598052457d31700bbe0f158af76f985e99b3647570636"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/series.sty": {
       "bytes_lf": 3676,
@@ -3679,5 +3679,5 @@
   },
   "normalization": "CRLF and CR converted to LF; all other bytes preserved",
   "schema": "mtt.portable-text-hashes.v1",
-  "source_ref": "402b2d10e8f8ae6031c5f1af890c50bf68007585"
+  "source_ref": "a8653e1091c99917f2d30fd927d014ea40fb030f"
 }
