@@ -2,7 +2,7 @@
 
 Checkpoint: 2026-09-12, after the foundational dependency repair: FP I v7,
 II v6, III v8, IV v7, V v9 and VI v7. The finite-mode companion v1,
-cohesive v11 and SM v4. Fixed Points and the companion remain unchanged.
+cohesive v12 and SM v4. Fixed Points and the companion remain unchanged.
 This is an editorial queue, not a list of unproved research claims.
 No Zenodo upload or publication is authorized.
 
@@ -145,7 +145,16 @@ Conditional tangent restriction does not delete ambient anomaly support.
 Pseudo-Kahler geometry is not automatically positive, and an adjoint Lie
 embedding is not associative. All forty-five earlier conclusions survive.
 Ten new exact editorial tests pass; all 58 final PDF pages were inspected.
-Current totals are 87 reviewed: 85 integrated and two historical; 218 unreviewed.
+The v11 checkpoint had 87 reviewed: 85 integrated and two historical; 218 unreviewed.
+
+V12 integrates eight G3GMS--G3GMZ PBW/apolar/socle records in section 9.
+The narrative moves from the typed response boundary and 12+6 orbit to a
+complement-independent quotient and an explicit terminal-socle chain map.
+All 48 earlier integrations remain unchanged. Finite-field Gram forms are
+not positive physical metrics; 48 reconstructed quotients are not 48 actual
+source returns. Later source refinements supersede only their precise
+historical boundaries. All 62 pages inspected; nine exact editorial tests
+pass. Current totals are 95 reviewed: 93 integrated, two historical; 210 unreviewed.
 
 Counts below come from the current source-bound ownership registry. Review
 source hypotheses, actual paper discussion and the latest superseding result;
@@ -153,7 +162,7 @@ do not infer absence or completion from an identifier search.
 
 | Order | Owner family | Unreviewed | Focus |
 |---|---|---:|---|
-| 1 | Cohesive source | 20 | Next: eight G3GMS--G3GMZ PBW/apolar/socle imports, then the auxiliary-pencil/global-Deligne cluster. String/Bott-Chern, index/matter and earlier transfers are done. Preserve selected-chart versus global physical data. |
+| 1 | Cohesive source | 12 | Next: auxiliary-pencil/global-Deligne, reading spectral-class/rank separation first; then global Fitting, pathwise repair, BK3 and the atlas. PBW/apolar and earlier imports are retained. |
 | 2 | Flux/q79 | 51 | Read latest correction before earlier source-route claims. Preserve local versus global domains, auxiliary versus physical spectral class, and hidden existence. |
 | 3 | Hull-Strominger | 37 | Common-source realization, moment-map role reduction and current hidden existence without relabeling symbolic formulas as evaluated coefficients. |
 | 4 | Proto-spinor | 29 | Shared-line and representation imports; distinguish finite algebra, graded matter index, first-order operators and the physical endpoint. |
@@ -166,7 +175,7 @@ do not infer absence or completion from an identifier search.
 | 11 | Perturbative QG | 6 | State the established perturbative/conditional scope, not UV-complete gravity. |
 | 12 | Parameters | 2 | No double-counting of shared inputs, profile coordinates and derived outputs. |
 | 13 | Closure strain | 1 | Preserve local carrier/strain and physical-spacetime distinctions. |
-| | Total | 218 | These are not 218 confirmed omissions. |
+| | Total | 210 | These are not 210 confirmed omissions. |
 
 The broad `mathematical_language_atlas` remains unreviewed. It is an evolving
 multi-thousand-line artifact with later appendices, not merely a July status
@@ -188,8 +197,8 @@ historical after reading only its early inventory or newest tail.
   public results paper lock from committed manuscript state.
 - End the next handoff with exact completed result IDs and remaining counts.
 
-Current totals: 305 assigned, 84 reviewed (82 integrated, two historical),
-zero currently confirmed additions, 221 unreviewed, zero stale contextual
+Current totals: 305 assigned, 95 reviewed (93 integrated, two historical),
+zero currently confirmed additions, 210 unreviewed, zero stale contextual
 reviews. The original 19 additions/details are now handled. Further reviews
 may legitimately identify new additions or corrections; these counts are not
 scientific proof-completion scores.

@@ -1,5 +1,53 @@
 # Cohesive Source Revision Audit
 
+## Version 12 PBW/Apolar Quotient and Terminal-Socle Integration
+
+Date: 2026-09-12. Supersedes local v11; no release authorized.
+
+Read all eight G3GMS--G3GMZ frozen theorem artifacts and their core verifier
+formulas. The corresponding current owning theorem files match all eight
+frozen SHA-256 hashes literally. No worker script was executed or modified.
+Later results in this sequence supersede earlier chart/identification
+boundaries only on their exact domains; no historical open field is imported
+as a current research downgrade.
+
+- Explain the typed PBW anomaly and conjugated response lift, including rank
+  doubling. Separate 48-fiber covariance from anchor ordering equivalence.
+- Explain 120+18-2 coefficient presentation, canonical 12+6 Fitting split,
+  orbit-normalized arrows and 6+6+6 finite decomposition. The partial
+  involution is not a differential; the signed mapping cone is square-zero.
+- Preserve the finite negative shortcut audits without treating them as a
+  universal no-go. A later left quotient repair is a different operation.
+- Explain selected-chart versus factorial-apolar retraction. Restricted Gram
+  invertibility is not automatic; nondegenerate symmetric over a finite
+  field does not mean positive, and the complement lift need not be orthogonal.
+- Derive the adapted quotient-coordinate law and illustrate why a complement
+  shift changes an embedded projector but not the quotient map. No separate
+  guessed ambient cocycle is required once source subbundles and pairing exist.
+- Explain the q^4 Sym7 source surjection and the separate actual anchor return.
+  Forty-eight reconstructed quotient bases are not forty-eight actual returns.
+- Explain the socle duality and degree shift, then the explicit terminal-Koszul
+  chain comparison. Quotient classes, not polynomial representatives, are
+  independent of the contracting chart. Keep divided-power duality distinct
+  from the auxiliary ambient Gram pairing.
+
+All 48 prior source integrations were checked against the additive diff and
+retained manuscript context. Their source text is unchanged. The abstract
+is unchanged, the current delta is separate and source theorem ownership is
+retained. FP I--VI and the adopted scientific authority tiers are unchanged.
+
+Nine bounded exact editorial tests cover response-lift products/ranks,
+Fitting projectors, partial involutions and cone signs, nonorthogonal
+retractions, full tensor/adapted covariance, complement shifts, the singular
+restricted-Gram counterexample, divided-power duality and source anchors.
+These tests do not replay or independently certify the full finite campaign.
+
+The final 62-page PDF builds with zero warnings. All pages, including new
+section 9, the two-page contents and references, were visually inspected.
+
+Reviewed LF-normalized TeX SHA-256:
+`0afc3ae0af7d40e6ed42fc3ba282b4414ee9fbc7bc62735c58d1d15c9efa2d45`.
+
 ## Version 11 String-Algebroid Constructor and Constrained Repair
 
 Date: 2026-09-12. Supersedes local v10; no release authorized.

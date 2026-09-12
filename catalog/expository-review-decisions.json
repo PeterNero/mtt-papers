@@ -15,10 +15,10 @@
     "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows": {
       "status": "reviewed",
       "reviewed_on": "2026-09-12",
-      "note": "V11 integrates three string-algebroid/Bott-Chern/Calabi records with explanatory examples and explicit source conditions. All forty-five prior conclusions retained; ambient volume-form roles are clarified without deleting anomaly blocks. Distinguishes a nonlinear MC-set lift from full cohesive equivalence and a pseudo-Kahler structure from a positive physical metric. All 58 final PDF pages visually inspected; zero build warnings and ten new focused exact editorial tests pass. Independent worker, frozen scientific artifacts and FP I--VI unchanged. No physical-tier promotion or Zenodo authorization.",
-      "reviewed_main_tex_sha256": "6898afdfd380a9cc04afea86f4a455e2728f8c22dc5e84e76cc523b4c460e786",
-      "reviewed_pdf_sha256": "ad6b6416703d79f3358720224937e2fac15be37b39a6cd5f7535c8f879fbdb8d",
-      "reviewed_source_tree_sha256": "2b469decae58c1d9469160a291e981d69e4d7cacc62e6a530f82414c4863931f",
+      "note": "V12 integrates eight PBW/apolar/socle results through a connected explanatory section, examples and frozen source citations. All 48 prior source integrations remain unchanged. Distinguishes finite field and anchor scopes, tensor covariance from fixed-metric invariance, quotient descent from complement lifts, and actual source returns from reconstructed quotient bases. All 62 final PDF pages visually inspected; zero build warnings and nine new exact editorial tests pass. Worker code, frozen artifacts and FP I--VI unchanged. No physics-tier promotion or Zenodo authorization.",
+      "reviewed_main_tex_sha256": "0afc3ae0af7d40e6ed42fc3ba282b4414ee9fbc7bc62735c58d1d15c9efa2d45",
+      "reviewed_pdf_sha256": "983263ece125da93ee9fcc7f2669782b59174eda70e9b75b9c0abc5a72c19085",
+      "reviewed_source_tree_sha256": "04d99a002f1c60ccc1f65cdcac7fd9f7005b536e6559329194a0e1f7c4f48ceb",
       "release_authorized": false
     },
     "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1": {

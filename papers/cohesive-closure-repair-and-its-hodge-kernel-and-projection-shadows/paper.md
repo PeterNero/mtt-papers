@@ -9,15 +9,32 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v11
-date: September 2026, Version 11
-generated_from_main_tex_sha256: 6898afdfd380a9cc04afea86f4a455e2728f8c22dc5e84e76cc523b4c460e786
+current_version: v12
+date: September 2026, Version 12
+generated_from_main_tex_sha256: 0afc3ae0af7d40e6ed42fc3ba282b4414ee9fbc7bc62735c58d1d15c9efa2d45
 paper_id: cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows
 release_state: current_revised_tex
 title: |
   **Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:**
   From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary
 ---
+
+# Version 12 Revision Note
+
+Supersedes
+The local Version 11 manuscript; no public release is implied.
+
+Reason
+The primitive repair target and its connection to the terminal resolution needed the eight existing PBW/apolar/socle source results.
+
+Resolution
+Explains response typing, ordering-orbit normalization, tensor-natural retraction, complement-independent quotient descent and the explicit terminal-to-socle comparison, with examples of the lost choices.
+
+Retained result
+All forty-eight prior source integrations and the foundational Fixed Points series retain their stated scope.
+
+Remaining boundary
+A finite-field pairing is not a positive physical metric. Reconstructing quotient bases is not executing all actual source returns. These imports do not promote a selected physical endpoint.
 
 # Version 11 Revision Note
 
@@ -240,7 +257,7 @@ The central distinction of this paper is therefore:
 
 ## How to read the paper
 
-Readers interested in the universal differential geometry may read <a href="#sec:residual-hessian,sec:dynamics" data-reference-type="ref+label" data-reference="sec:residual-hessian,sec:dynamics">[sec:residual-hessian,sec:dynamics]</a>. The cohesive and q79 construction is in <a href="#sec:cohesive,sec:q79" data-reference-type="ref+label" data-reference="sec:cohesive,sec:q79">[sec:cohesive,sec:q79]</a>. The operator, kernel, and projection chain is proved in <a href="#sec:hodge,sec:descent-projection" data-reference-type="ref+label" data-reference="sec:hodge,sec:descent-projection">[sec:hodge,sec:descent-projection]</a>. The relation to perturbative graphs is in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">11</a>. The crucial warning that repair is not automatically action appears in <a href="#sec:action-boundary" data-reference-type="ref+label" data-reference="sec:action-boundary">12</a>. The final status and theorem-ownership tables are in <a href="#sec:ownership,sec:frontier" data-reference-type="ref+label" data-reference="sec:ownership,sec:frontier">[sec:ownership,sec:frontier]</a>.
+Readers interested in the universal differential geometry may read <a href="#sec:residual-hessian,sec:dynamics" data-reference-type="ref+label" data-reference="sec:residual-hessian,sec:dynamics">[sec:residual-hessian,sec:dynamics]</a>. The cohesive and q79 construction is in <a href="#sec:cohesive,sec:q79" data-reference-type="ref+label" data-reference="sec:cohesive,sec:q79">[sec:cohesive,sec:q79]</a>. The operator, kernel, and projection chain is proved in <a href="#sec:hodge,sec:descent-projection" data-reference-type="ref+label" data-reference="sec:hodge,sec:descent-projection">[sec:hodge,sec:descent-projection]</a>. The relation to perturbative graphs is in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">12</a>. The crucial warning that repair is not automatically action appears in <a href="#sec:action-boundary" data-reference-type="ref+label" data-reference="sec:action-boundary">13</a>. The final status and theorem-ownership tables are in <a href="#sec:ownership,sec:frontier" data-reference-type="ref+label" data-reference="sec:ownership,sec:frontier">[sec:ownership,sec:frontier]</a>.
 
 ## Vocabulary of claim strength
 
@@ -1088,6 +1105,175 @@ The finite translation and Fourier generators preserve the complete 144-to-48 co
 
 The finite program thus has an exact response hierarchy and a finite set of sufficient source identities for transporting it. It has not selected the continuum HYM source or its Lorentzian/cyclic action. These $`m_n`$ are not measured Yukawa or gauge couplings: they specify what must be preserved before that physical interpretation is justified.
 
+# Primitive repair as a quotient, not a chosen plane
+
+The preceding projection results ask what survives after a complex is compressed. A complementary question occurs in the component-20 algebraic calculation: what is the correct target of the repair map itself? Eight source records, UST.G3GMS–G3GMZ, successively replace matching ranks, ordering conventions and embedded complements by a typed boundary map and an intrinsic quotient. Their proofs and archived arrays remain owned by the cited source records. Here we explain how their conclusions fit the repair language, rather than introducing eight duplicate theorems.
+
+These are finite algebraic results. The campaign consists of eight primes with six selected roots each, hence 48 fibers. The complete ordering calculations in G3GMT and G3GMU are at the anchor $`k=\mathbb F_{21817}`$, $`\gamma=5`$. They are not automatically 48-fiber ordering theorems. The degree-15 polynomial carrier has dimension $`\binom{17}{2}=136`$; it is neither the finite 27-state carrier nor a physical mass matrix. *Repair* below first means an algebraic retraction, not a positive heat generator or a new spacetime dynamics.
+
+## The PBW correction identifies maps, not just ranks
+
+The Poincare–Birkhoff–Witt (PBW) calculation measures a defect in an ordered presentation of the selected response complex. Two earlier constructions had rank-six corrections in different spaces. Their equal ranks alone gave no reason to identify them. The G3GMS result supplies the missing typed identification . With an injective response boundary $`N`$, invertible adjugate normalization $`R_H`$, and anomaly factor $`R_{Q,H}`$, write
+``` math
+N_H=NR_H,\qquad
+ A_{\mathrm{PBW}}=R_H^{-1}R_{Q,H},\qquad
+ N_HA_{\mathrm{PBW}}=NR_{Q,H}.
+ \tag{P1}\label{eq:pbw-normalization}
+```
+The response splitting provides maps $`J,W,L_H`$ with
+``` math
+[\,J\ N_H\,]^{-1}=
+ \begin{bmatrix}W\\L_H\end{bmatrix}.
+```
+Thus the lifted coefficient action is
+``` math
+\Lambda_H(A)=JAW+N_HAL_H
+ =[\,J\ N_H\,]\operatorname{diag}(A,A)[\,J\ N_H\,]^{-1}.
+ \tag{P2}\label{eq:pbw-response-lift}
+```
+This explains why a rank-six coefficient action lifts to rank twelve, and why its algebraic relations survive. The archived response differential and homotopy commute with this lift.
+
+At the anchor, the 36 row/column block orders yield distinct raw presentations but one response-boundary image. Explicit invertible six-by-six matrices relate their boundary bases. This does not say that the raw matrices or their transfer determinants coincide. At all 48 fibers the normalized anomaly and response lift have ranks six and twelve, respectively, with the recorded chart covariance. The common boundary image is the invariant at this stage, not a preferred ordering.
+
+## The ordering orbit has a canonical finite decomposition
+
+G3GMT next constructs the left coefficient presentation . Let $`F_o`$ be the structural tail evaluator for an ordering $`o`$, and $`C_{qr}`$ the concatenated $`q`$-principal, $`q`$-commutator and $`r`$-commutator blocks. For every anchor ordering,
+``` math
+\operatorname{rank}F_o=120,\quad
+ \operatorname{rank}C_{qr}=18,\quad
+ \operatorname{rank}[\,F_o\ C_{qr}\,]=136.
+```
+Consequently the presentation has a two-dimensional relation space:
+``` math
+0\longrightarrow k^2\longrightarrow k^{120}\oplus k^{18}
+ \longrightarrow \operatorname{Sym}^{15}(k^3)\longrightarrow0.
+ \tag{P3}\label{eq:pbw-presentation}
+```
+The two-plane is a genuine overlap, not an extra physical freedom.
+
+The source minimal polynomial of $`A_{\mathrm{PBW}}`$ is $`xf(x)`$, where $`f`$ has degree six and $`f(0)\ne0`$. Coprimality gives the Fitting split and its polynomial projector:
+``` math
+k^{18}=\ker(A_{\mathrm{PBW}})_{12}\oplus
+          \operatorname{im}(A_{\mathrm{PBW}})_6,\qquad
+ P=I-\frac{f(A_{\mathrm{PBW}})}{f(0)},\quad Q=I-P.
+ \tag{P4}\label{eq:pbw-fitting}
+```
+Here $`P`$ is algebraic, not a Hilbert-space orthogonal projector.
+
+G3GMU uses the supplied factorial-apolar symmetric pairing on the three quadratic blocks to connect these factors . Writing an overlap basis as $`X_o`$, put $`K_o=QX_o`$, $`Y_o=PX_o`$. The nondegenerate restricted Gram forms define, for example,
+``` math
+T_o=Y_o(K_o^tGK_o)^{-1}K_o^tGQ.
+```
+The reverse arrow is defined by exchanging the two factors. Averaging the 36 arrows, then normalizing the return on $`\operatorname{im}P`$, gives
+``` math
+T^2=S^2=0,\qquad TS=P,\qquad ST=R,\qquad
+ I=P+R+(Q-R).
+ \tag{P5}\label{eq:apolar-arrows}
+```
+All three summands have rank six; $`T+S`$ is a partial involution, $`(T+S)^2=P+R`$, rather than a square-zero differential. A square-zero mapping cone instead uses the lifted arrow and the correct opposite differential on its second diagonal block.
+
+This distinction matters in the cohesive language: an off-diagonal extension can be exact without being the final coefficient compiler. The source-first tests reject seven elementary averaging/cross-term outputs in G3GMT, six direct-arrow outputs and nine central-character outputs in G3GMU. They reject those finite candidates, not all repair maps. The later quotient construction below is not a claim that a rejected right multiplication suddenly works.
+
+## From chart retraction to a tensor-natural extension
+
+For the selected graded ideal $`I\subset k[x,y,z]`$, let $`I_{15}`$ be its degree-15 part and $`K=I_{15}^{\perp}`$ its inverse system, using the dual divided-power coordinates. The source ranks are
+``` math
+\dim I_{15}=100,\qquad \dim K=36,\qquad
+ K=H\oplus C,\quad \dim H=\dim C=18.
+```
+The inherited derivative space $`H`$ is intrinsic to the supplied ideal and derivative filtration; the displayed complement $`C`$ is initially a normalized chart. G3GMV constructs an idempotent ambient retraction onto that complement . It reconstructs the 48 quotient bases before opening the comparison archive.
+
+G3GMW improves the extension away from $`K`$ . With $`B=[\,H\ C\,]`$, use the supplied factorial-apolar form $`G_{15}`$, whose displayed monomial diagonal is $`a!b!c!`$ for $`a+b+c=15`$, and define
+``` math
+G_B=B^tG_{15}B,\qquad
+ F_B=[\,0\ I_{18}\,]G_B^{-1}B^tG_{15},\qquad
+ R_{\mathrm{nat}}=CF_B.
+ \tag{P6}\label{eq:apolar-natural-map}
+```
+Invertibility of $`G_B`$ is a separate verified condition at every archived fiber; nondegeneracy of the ambient form alone would not imply it. All campaign primes exceed 15. The form is nondegenerate and symmetric over those finite fields, not a positive physical metric.
+
+The identities $`F_BH=0`$, $`F_BC=I_{18}`$ imply $`R_{\mathrm{nat}}^2=R_{\mathrm{nat}}`$ and rank eighteen. It is the specified projection on $`K`$, extended by zero on $`K^{\perp_{G_{15}}}`$. It need not be self-adjoint: $`H`$ and $`C`$ are not assumed orthogonal. Changing bases within $`H`$ and $`C`$ leaves the operator unchanged. An ambient change $`U`$ requires transporting the pairing as a tensor:
+``` math
+B'=UB,\qquad G'_{15}=U^{-t}G_{15}U^{-1}
+ \quad\Longrightarrow\quad
+ R'_{\mathrm{nat}}=UR_{\mathrm{nat}}U^{-1}.
+ \tag{P7}\label{eq:apolar-tensor-law}
+```
+This is covariance of the full supplied datum, not invariance under arbitrary $`U`$ while keeping a fixed numerical diagonal.
+
+The actual anchor source return $`M_{\mathrm{act}}`$ satisfies $`\operatorname{rank}(F_BM_{\mathrm{act}})=18`$. Therefore
+``` math
+R_{\mathrm{nat}}M_{\mathrm{act}}
+ (F_BM_{\mathrm{act}})^{-1}=C.
+```
+Normalization recovers the source-derived quotient exactly. The 48 reconstructed quotient bases are not 48 independently executed actual source returns. This is an important distinction in interpreting the frozen comparison, even though both calculations use exact arithmetic.
+
+## The complement disappears in the quotient
+
+The stronger target is $`\mathcal Q=K/H`$, not an embedded $`C`$. G3GMX proves the adapted change-of-frame law . If
+``` math
+B'=UB\begin{bmatrix}A&E\\0&D\end{bmatrix},\qquad
+ G'_{15}=U^{-t}G_{15}U^{-1},
+```
+then
+``` math
+F_{B'}=D^{-1}F_BU^{-1}.
+ \tag{P8}\label{eq:apolar-quotient-law}
+```
+The mixing block $`E`$ disappears because the bottom block row of the inverse adapted frame is $`[\,0\ D^{-1}\,]`$. Thus no preferred global complement is needed. Once $`K,H`$ are subbundles and the pairing and overlaps are compatible, these formulas give the quotient-map descent. They do not by themselves construct those subbundles in characteristic zero.
+
+A small example clarifies what is and is not independent of splitting. Take $`K=k^2`$, $`H=ke_1`$, $`C=ke_2`$, and the identity pairing. The quotient coordinate is $`F=(0,1)`$. Replacing $`e_2`$ by $`e_2+a e_1`$ leaves $`F`$ unchanged, but changes its ambient lift to
+``` math
+R_a=\begin{pmatrix}0&a\\0&1\end{pmatrix}.
+```
+Every $`R_a`$ is idempotent. The common output is the class modulo $`H`$, not a unique matrix of representatives. A physical orthogonal projector would require additional compatible structure.
+
+The same source record also binds a concrete input carrier: for $`q=xz-y^2`$, the restriction
+``` math
+q^4\operatorname{Sym}^7(k^3)\longrightarrow K/H
+```
+is surjective at all 48 archived fibers. Its source has dimension 36 and target dimension 18, with an emitted kernel relation matrix. This is stronger than guessing eighteen ambient vectors and weaker than a global physical-source selection theorem.
+
+## The quotient is dual to the socle
+
+G3GMY identifies why this quotient occurs . Put $`\mathcal A=k[x,y,z]/I`$, and $`K_d=\mathcal A_d^*`$ in divided-power coordinates. The socle is the part annihilated by multiplication by all three variables. At degree 15,
+``` math
+\operatorname{Soc}(\mathcal A)_{15}
+ =\ker\bigl[\mathcal A_{15}\xrightarrow{(x,y,z)}
+                  \mathcal A_{16}^{\oplus3}\bigr].
+```
+Multiplication is dual to divided-power differentiation. Hence
+``` math
+\operatorname{Soc}(\mathcal A)_{15}^*
+ \simeq K_{15}/
+ (\partial_xK_{16}+\partial_yK_{16}+\partial_zK_{16})
+ =K/H.
+ \tag{P9}\label{eq:apolar-socle-duality}
+```
+Here $`\dim K_{16}=11`$, while the combined derivative image has rank 18. Its three summands need not be independent. This dual pairing is the multiplication/derivative pairing; it should not silently be replaced by the auxiliary ambient Gram form in <a href="#eq:apolar-natural-map" data-reference-type="eqref" data-reference="eq:apolar-natural-map">[eq:apolar-natural-map]</a>. Divided-power conventions are described in the standard inverse-system documentation .
+
+For intuition, in $`k[x,y,z]/(x,y,z)^2`$ all degree-one classes are socle classes. There is no degree-two inverse system to differentiate, so the primitive degree-one quotient is the entire dual three-space. The selected component-20 quotient obeys the same kernel/cokernel logic, but with a nonzero inherited derivative space. Its rank eighteen is therefore explained by an algebraic duality, not by a particle count.
+
+## The terminal resolution supplies the actual comparison map
+
+For an Artinian quotient of a three-variable polynomial ring, top Koszul homology gives $`\beta_{3,j}=\dim\operatorname{Soc}(\mathcal A)_{j-3}`$. The source terminal row is
+``` math
+R(-18)^{18}\oplus R(-19)\oplus R(-22),
+ \qquad R=k[x,y,z].
+```
+Thus the degree-18 terminal block matches the degree-15 socle in rank. G3GMZ supplies more than this numerical match: it emits a chain comparison at all 48 fibers .
+
+For the selected free resolution $`F_\bullet`$ and the Koszul complex $`K_\bullet(x,y,z)`$, use $`D=d_F+(-1)^p d_K`$ on $`F_p\otimes K_q`$. A terminal generator $`u_3`$ is completed to a total cycle through
+``` math
+d_Ku_2=-d_3u_3,\qquad
+ d_Ku_1=d_2u_2,\qquad
+ d_Ku_0=-d_1u_1.
+ \tag{P10}\label{eq:apolar-terminal-zigzag}
+```
+The final coefficient modulo $`I_{15}`$ lies in the socle. The emitted eighteen classes are independent and pair nondegenerately with $`K/H`$. Forward and reverse choices of Koszul preimages give the same quotient classes. Their polynomial representatives need not agree. This is the appropriate comparison-up-to-homotopy principle, not a claim of unique contracting matrices .
+
+Together, these records remove an arbitrary complement and a separate terminal-to-socle identification from the finite construction. They do not select a positive HYM Hessian, establish an analytic semigroup or derive a physical value. The general formulas apply beyond the finite campaign when their source complex, ranks and pairings are supplied. These eight certificates alone do not supply a symbolic common complex over $`\mathbb Q(\gamma)`$ or the other 47 actual source returns. Historical open sentences in G3GMS–G3GMY are read through the later refinements above, not reimported as current research blockers. Broader promotion belongs to the current source ledger; this section records the precise contribution of these eight archived results.
+
 # Nested repair and curvature-preserving transfer
 
 There are two different places where a differential can act: inside a configuration, and on the space of configurations. Keeping them distinct allows a curved internal charge to coexist with an ordinary outer complex. The six source records discussed here join that observation to the Heisenberg example in <a href="#sec:excursion-comparison" data-reference-type="ref+label" data-reference="sec:excursion-comparison">8.2</a>, then pass from central curvature to a positive noncentral coefficient algebra. They are finite or local structural results, not a new physical endpoint.
@@ -1254,7 +1440,7 @@ Suppose the form-factor contractions have honest overlaps $`T_{ij}`$ preserving 
 ``` math
 R_{ij}=T_{ij}\widehat\otimes\operatorname{Ad}(G_{ij})
 ```
-has an honest triple law. For the coefficient operations of <a href="#sec:unital-curved-coefficients" data-reference-type="ref+label" data-reference="sec:unital-curved-coefficients">9.5</a>,
+has an honest triple law. For the coefficient operations of <a href="#sec:unital-curved-coefficients" data-reference-type="ref+label" data-reference="sec:unital-curved-coefficients">10.5</a>,
 ``` math
 R_{ij}M_{n,j}=M_{n,i}R_{ij}^{\otimes n},\qquad n\geq0.
 ```
@@ -1278,7 +1464,7 @@ It is odd and self-adjoint, and a clock overlap moves it nontrivially. The trans
 ``` math
 V_i=\frac1{18}\operatorname{Tr}(F_i^\dagger F_i)=\frac43.
 ```
-Here self-adjointness concerns the displayed coefficient $`q_i`$, not the full form-module operator corrected in <a href="#sec:noncentral-nested" data-reference-type="ref+label" data-reference="sec:noncentral-nested">9.4</a>. The witness tests actual conjugation, not a commuting-factor substitute.
+Here self-adjointness concerns the displayed coefficient $`q_i`$, not the full form-module operator corrected in <a href="#sec:noncentral-nested" data-reference-type="ref+label" data-reference="sec:noncentral-nested">10.4</a>. The witness tests actual conjugation, not a commuting-factor substitute.
 
 There is also a useful limit to this example. Its Heisenberg overlap acts by $`\omega^{w}`$, where the top form $`abc`$ has weight four. Consequently its top-form functional satisfies
 ``` math
@@ -1350,7 +1536,7 @@ p(H)=H,\qquad H H=2t,\qquad p(HH)=0,\qquad h(HH)=2u\gamma .
 ```
 The homotopy carries the difference. Nor does algebraic $`p`$ supply a spectral gap, an analytic Hodge projector or a low-energy truncation.
 
-This result identifies where additional structure is needed, not a no-go for physical interactions. It concerns higher operations transferred from this particular rational cup-product DGA. A nonlinear residual with nonzero higher jets, twisted bundle coefficients, Yoneda operations or analytic overlap data is a different source of vertices. The repair-jet mechanism already explained in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">11</a> remains valid; its physical coefficients must still be evaluated. The full Hull–Strominger source is not proved formal, and no spacetime scattering amplitude vanishes merely because the topology model has $`m_3=0`$.
+This result identifies where additional structure is needed, not a no-go for physical interactions. It concerns higher operations transferred from this particular rational cup-product DGA. A nonlinear residual with nonzero higher jets, twisted bundle coefficients, Yoneda operations or analytic overlap data is a different source of vertices. The repair-jet mechanism already explained in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">12</a> remains valid; its physical coefficients must still be evaluated. The full Hull–Strominger source is not proved formal, and no spacetime scattering amplitude vanishes merely because the topology model has $`m_3=0`$.
 
 The contrast with the auxiliary Heisenberg model is deliberate: $`dc=ab`$ leaves a nonzero ternary operation there; the selected q79 Hirsch contraction does not. The nonminimal CBF response hierarchy is a third object. None should replace either of the others solely because it is finite-dimensional.
 
@@ -1667,7 +1853,7 @@ D\mathcal A\,j=D\mathcal N\,j=0,\qquad
 ```
 Here $`W`$ is any chosen positive residual metric. All terms involving the vanished rows, including cross terms, vanish on this tangent space. The proof is the chain rule at $`D\mathcal{C}=0`$, not cancellation of positive terms in the ambient Hessian. The normal and obstruction complex is still needed. Gauge/diffeomorphism slices concern the quotient analysis; they are not additional physical residual equations.
 
-For example, take an ambient $`\mathbb R^{11}`$ with coordinates $`(\phi,a,\mu_1,\ldots,\mu_4,n,g_1,\ldots,g_4)`$. Let $`J=(I_7\ 0)`$. Its Euclidean Gram matrix has rank seven. Inclusion of $`(\mu_1,\ldots,\mu_4,g_1,\ldots,g_4)`$, setting $`\phi=a=n=0`$, pulls it back to $`\operatorname{diag}(I_4,0_4)`$, of rank four. The three removed directions are transverse, not three newly discovered physical gauge modes. This conditional restriction does not contradict the ambient 25-block support in <a href="#sec:q79" data-reference-type="ref+label" data-reference="sec:q79">17</a>, and is not proof of a reducing or isometric spectral intertwiner. Without the inclusion and convention match, deleting the anomaly row remains unjustified.
+For example, take an ambient $`\mathbb R^{11}`$ with coordinates $`(\phi,a,\mu_1,\ldots,\mu_4,n,g_1,\ldots,g_4)`$. Let $`J=(I_7\ 0)`$. Its Euclidean Gram matrix has rank seven. Inclusion of $`(\mu_1,\ldots,\mu_4,g_1,\ldots,g_4)`$, setting $`\phi=a=n=0`$, pulls it back to $`\operatorname{diag}(I_4,0_4)`$, of rank four. The three removed directions are transverse, not three newly discovered physical gauge modes. This conditional restriction does not contradict the ambient 25-block support in <a href="#sec:q79" data-reference-type="ref+label" data-reference="sec:q79">18</a>, and is not proof of a reducing or isometric spectral intertwiner. Without the inclusion and convention match, deleting the anomaly row remains unjustified.
 
 ## The action bridge and its positivity boundary
 
@@ -1735,7 +1921,7 @@ The cyclic integrability action in the preceding section supplies one signed fie
 
 ## The exact unit–orientation construction
 
-There is nevertheless a simple exact reduction mechanism. Use the rational q79 algebra of Section <a href="#sec:q79-hirsch-model" data-reference-type="ref" data-reference="sec:q79-hirsch-model">10.3</a>, and let $`\nu=utv`$ be its degree-six top class, with $`\tau(\nu)=1`$. The two-dimensional subalgebra
+There is nevertheless a simple exact reduction mechanism. Use the rational q79 algebra of Section <a href="#sec:q79-hirsch-model" data-reference-type="ref" data-reference="sec:q79-hirsch-model">11.3</a>, and let $`\nu=utv`$ be its degree-six top class, with $`\tau(\nu)=1`$. The two-dimensional subalgebra
 ``` math
 R=\operatorname{span}\{1,\nu\},\qquad
  1\nu=\nu1=\nu,\qquad \nu^2=0
@@ -1828,7 +2014,7 @@ If a group acts trivially on the topology factor, then
 ```
 Tensoring changes multiplicities, not character support. This elementary obstruction does not identify the shared differential line with hypercharge, and does not say that every adjoint is neutral under every subgroup. An adjoint of a larger group can acquire nonzero weights on restriction. The no-go concerns a *specified action that is trivial on the source*. Charged/chiral modes may instead enter through bundle-valued cohomology, off-diagonal Hom sectors or an index-bearing Dirac complex.
 
-The selected physical comparison must therefore supply one compatible chain: an externalized source and field-only action; its charged fields and duals; density, degree and real-structure maps; a BV-compatible low-energy contraction; Lorentzian gauge-fixed domains; and, for a quantum claim, the measure, integration cycle and master-equation transport. Sections <a href="#sec:morita-metric-boundary" data-reference-type="ref" data-reference="sec:morita-metric-boundary">10.2</a> and <a href="#sec:morita-compiler-range" data-reference-type="ref" data-reference="sec:morita-compiler-range">10.5</a> still govern the global pairing and normalization. The exact two-profile construction removes the need to invent abstract product reduction. It neither replaces those physical inputs nor reopens the accepted downstream BV results at their declared scope.
+The selected physical comparison must therefore supply one compatible chain: an externalized source and field-only action; its charged fields and duals; density, degree and real-structure maps; a BV-compatible low-energy contraction; Lorentzian gauge-fixed domains; and, for a quantum claim, the measure, integration cycle and master-equation transport. Sections <a href="#sec:morita-metric-boundary" data-reference-type="ref" data-reference="sec:morita-metric-boundary">11.2</a> and <a href="#sec:morita-compiler-range" data-reference-type="ref" data-reference="sec:morita-compiler-range">11.5</a> still govern the global pairing and normalization. The exact two-profile construction removes the need to invent abstract product reduction. It neither replaces those physical inputs nor reopens the accepted downstream BV results at their declared scope.
 
 # From background repair to a chiral matter test
 
@@ -2134,7 +2320,7 @@ K_{\mathcal N}v&=i(\dot\Psi\wedge\bar\Psi+
 ```
 Here $`\dot{\log\nu}=\operatorname{Re}\langle\dot\Omega_{\rm hol},
 \Omega_{\rm hol}\rangle/
-\|\Omega_{\rm hol}\|^2-\tfrac12\operatorname{tr}_g\dot g`$ in the fixed-chart metric convention. Varying complex structure requires the corresponding typed chart terms as well; these formulas do not supply their endpoint coefficients. In particular the factor $`\alpha'/2`$, rather than $`\alpha'/4`$, is forced by differentiating the curvature square. On the normalized chart $`\Psi=\Omega_{\rm unit}`$, with matching volume constants, $`\mathcal N`$ is an identity and its tangent derivative vanishes. If instead $`\Psi=\Omega_{\rm hol}`$, its vanishing imposes the additional constant-norm condition discussed in <a href="#sec:string-calabi" data-reference-type="ref+label" data-reference="sec:string-calabi">13.3</a>. This role clarification preserves the six-row ambient differentiation, while avoiding an unintended restriction on conformally balanced solutions.
+\|\Omega_{\rm hol}\|^2-\tfrac12\operatorname{tr}_g\dot g`$ in the fixed-chart metric convention. Varying complex structure requires the corresponding typed chart terms as well; these formulas do not supply their endpoint coefficients. In particular the factor $`\alpha'/2`$, rather than $`\alpha'/4`$, is forced by differentiating the curvature square. On the normalized chart $`\Psi=\Omega_{\rm unit}`$, with matching volume constants, $`\mathcal N`$ is an identity and its tangent derivative vanishes. If instead $`\Psi=\Omega_{\rm hol}`$, its vanishing imposes the additional constant-norm condition discussed in <a href="#sec:string-calabi" data-reference-type="ref+label" data-reference="sec:string-calabi">14.3</a>. This role clarification preserves the six-row ambient differentiation, while avoiding an unintended restriction on conformally balanced solutions.
 
 The rank-102 complex fiber is
 ``` math
