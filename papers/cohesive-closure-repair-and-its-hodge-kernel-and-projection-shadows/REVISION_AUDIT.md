@@ -1,5 +1,56 @@
 # Cohesive Source Revision Audit
 
+## Version 11 String-Algebroid Constructor and Constrained Repair
+
+Date: 2026-09-12. Supersedes local v10; no release authorized.
+
+Read H4-T11/T12/T13 frozen artifacts, owning proofs and core verifier formulas,
+and checked the promoted Bott-Chern/cohesive source hashes. Their later
+constructor, MC lift and already-integrated cyclic-cotangent continuation
+override the older "next construction" descriptions on precisely their domains.
+
+- Explain rank-102 splitting versus the anomaly triple that constructs its
+  Courant operations. The bracket is not an independent choice once supplied.
+- Use full q79 Bott-Chern injectivity, not only an invariant reduction, to
+  obtain the conditional complex anomaly primitive. Check both transgression
+  signs, product trace weights and the deformed H-b convention.
+- Explain the nonlinear MC-set section, its closed-form affine fibers and
+  representable product-adjoint domain. This is not an all-cohesive or gauge
+  equivalence; integral string data and a real physical flux are not selected.
+- Clarify Lie versus associative embedding with E12 E21 = E11. This qualifies
+  an overreading of the endomorphism embedding, not its valid Lie statement.
+- Organize three HYM plus balanced rows as one Calabi moment map, with anomaly
+  and integrability as stratum data only after the exact convention match.
+- Correct the ambient volume-form notation: balanced geometry uses Omega_hol;
+  the normalization row uses an independent Psi, or the dependent Omega_unit
+  chart. Equating both adds a constant-norm constraint. The derivative and
+  25-block ambient compiler survive; tangent restriction is not a spectral
+  intertwiner or deletion of the normal/obstruction complex.
+- Preserve the primary literature's pseudo-Kahler, possibly degenerate metric.
+  Positive horizontal lifts do not establish a positive field-space metric,
+  global convexity, coercivity, an HYM solution or a Lorentzian physical action.
+
+All forty-five earlier source integrations were reevaluated against the diff
+and manuscript context. Their formulas are unchanged except the explicitly
+documented volume-form role clarification in the physical residual compiler.
+The graded matter/BHT, BV, Hirsch, charge, CBF and projector-completeness
+results retain their existing scopes. FP I--VI are untouched.
+
+Ten new exact local editorial tests cover the double complex, anomaly and
+deformation signs, finite DGLA axioms, MC roots and nonlinearity, closed fiber,
+Lie/associative distinction, moment-map signs and indefinite counterexample,
+weighted constrained Gram identity, non-reducing inclusion and volume roles.
+These are bounded witnesses, not a new continuum or worker calculation.
+Frozen scientific artifacts and A/B authority tiers are not changed.
+
+The final 58-page PDF builds with zero warnings. All pages were visually
+inspected, including the two-page contents, new section 13 and the revised
+status table and residual notation. The abstract is unchanged; corrections
+remain in the separate version delta and contextual discussion.
+
+Reviewed LF-normalized TeX SHA-256:
+`6898afdfd380a9cc04afea86f4a455e2728f8c22dc5e84e76cc523b4c460e786`.
+
 ## Version 10 Graded Matter and Selected-Line Localization
 
 Date: 2026-09-12. Supersedes local v9; no release authorized.

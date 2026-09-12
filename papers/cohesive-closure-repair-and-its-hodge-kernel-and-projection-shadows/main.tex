@@ -17,7 +17,7 @@
 \title{\textbf{Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:}\\
 \large From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary}
 \author{Peter Nero}
-\date{September 2026, Version 10}
+\date{September 2026, Version 11}
 
 \begin{document}
 \maketitle
@@ -61,6 +61,22 @@ continuum-to-finite intertwiner remain open.  Thus closure repair explains
 why the operator and kernel language should recur, without promoting that
 recurrence into a completed theory of dynamics or quantization.
 \end{abstract}
+
+\section*{Version 11 Revision Note}
+\begin{description}
+\item[Supersedes] The local Version 10 manuscript; no public release is implied.
+\item[Reason] The repair/action boundary needed the established anomaly-to-string
+constructor, Bott--Chern deformation lift and constrained moment-map roles.
+\item[Resolution] Connects these three results, distinguishes holomorphic from
+unit-normalized volume forms, and retains the pseudo-Kahler qualification.
+An adjoint Lie-algebra inclusion is not an associative-algebra inclusion.
+\item[Retained result] All forty-five earlier source integrations survive.
+The ambient six-row compiler is retained with its volume-form roles clarified;
+a constrained Hessian is not an ambient spectral intertwiner.
+\item[Remaining boundary] A complex anomaly primitive does not select a real
+physical flux, a positive Calabi metric, a common endpoint or its action.
+The foundational Fixed Points series is unchanged.
+\end{description}
 
 \section*{Version 10 Revision Note}
 \begin{description}
@@ -239,6 +255,7 @@ actualization, or selection of the physical q79 endpoint.  The q79 cohesive
 application remains an exact structural benchmark rather than a physical
 promotion.
 
+\clearpage
 \begingroup
 \fontsize{9}{10.5}\selectfont
 \tableofcontents
@@ -2237,6 +2254,238 @@ and \eqref{eq:mc-action} becomes holomorphic Chern--Simons theory
 integrability lane.  It does not automatically supply nondegenerate cyclic
 pairings for the HYM, balanced, anomaly, coframe, and Lorentzian lanes.
 
+\section{From anomaly data to a constrained repair problem}
+\label{sec:string-repair}
+
+There is a useful intermediate answer to the action question. The anomaly
+equation need not be an unrelated extra row appended to a bundle complex.
+It can help define the complex itself. Three existing source results make
+this precise: a string-algebroid constructor, a Bott--Chern lift of bundle
+deformations, and a moment-map interpretation of the remaining equations
+\cite{PreprojectionStringConstructor2026,PreprojectionBCLift2026,
+PreprojectionCalabiRoles2026}. Their order matters. Constructing the complex
+does not solve its moment-map equations, and solving a form equation over
+real or complex coefficients does not select an integral flux sector.
+
+\subsection{The rank-102 carrier acquires structure}
+\label{sec:string-constructor}
+
+Let \(P\) be the holomorphic product principal bundle for the tangent,
+visible and projective hidden factors, and let \(c\) be a specified
+nondegenerate invariant bilinear pairing on its Lie algebra. Given a
+compatible connection \(\theta\) and a form
+\(H\in\Omega^{3,0}\oplus\Omega^{2,1}\) satisfying
+\[
+ F_\theta^{0,2}=0,\qquad dH+c(F_\theta\wedge F_\theta)=0,
+ \tag{S1}\label{eq:string-anomaly}
+\]
+the standard string-algebroid construction supplies the holomorphic
+Courant structure, including its anchor, pairing and bracket
+\cite[Proposition 2.4]{GarciaRubioTiplerString2018}. It fits into
+\[
+ 0\longrightarrow T^*X\longrightarrow Q\longrightarrow A_P
+ \longrightarrow0,\qquad
+ 0\longrightarrow\ad P\longrightarrow A_P\longrightarrow TX
+ \longrightarrow0.
+\]
+Its smooth splitting has complex rank \(3+8+8+80+3=102\).
+The finite central quotient of the hidden group leaves its rank-80 adjoint
+honest. It does not trivialize the hidden fundamental gerbe. Thus rank
+matching identifies the carrier type; the anomaly triple supplies its
+operations. Once that triple is given, a bracket is not another free choice.
+
+The q79 promotion uses more than an invariant-form computation. The full
+real map \(H^{2,2}_{BC}(X)\to H^4_{\rm dR}(X;\mathbb R)\) is injective on
+the specified q79 geometry. For supplied holomorphic product bundles with
+the required total characteristic cancellation, choose Chern connections.
+Their real, closed, pure-type form
+\(\Xi=c(F_\theta\wedge F_\theta)\) is de Rham exact. Consequently one may
+write, in the source's convention,
+\[
+ \Xi=2i\partial\bar\partial\tau,\qquad
+ H=2i\partial\tau,\qquad dH=-\Xi .
+ \tag{S2}\label{eq:string-bc-primitive}
+\]
+The sign follows from \(\bar\partial\partial=-\partial\bar\partial\).
+This is a conditional existence construction for the complex anomaly data,
+not a numerical solution of the HYM equations. Changing the primitive can
+change the string extension class. Nor is this complex truncated form
+automatically the real torsion \(H_{\mathbb R}=d^c\omega\): reality, trace
+coefficients, integral refinements and the tangent-connection convention
+must still match. Existing existential hidden-bundle/HYM results are not
+reopened by these additional requirements on a common physical source.
+
+A small exact witness checks the mechanism, not the continuum existence
+premises. Take \(\partial\tau=h\), \(\bar\partial\tau=k\),
+\(\partial k=v\), \(\bar\partial h=-v\), with all further maps zero.
+Three closed curvature labels with squares \(2v\), weighted by
+\((3/2,-1/2,-1/2)\), give \(\Xi=v\). Then \(H=h\) solves
+\(dH+\Xi=0\). This rational form complex verifies the transgression sign
+and product-gauge accounting; it is not a selected curvature table.
+
+\subsection{What the Bott--Chern lift actually lifts}
+\label{sec:string-mc-lift}
+
+The form lane remains visible in the deformation algebra. Write
+\(\mathfrak g^k=\Omega^{0,k}(\ad P)\) and
+\(\mathfrak F^k=\bigoplus_{j=0}^k\Omega^{j+2,k-j}\), omitting types outside
+the dimension of \(X\). In nonnegative degrees the string differential
+graded Lie algebra \(\mathfrak L_Q\) is an extension of \(\mathfrak g\)
+by this abelian form complex. In the constructor's convention,
+\[
+ d_Q(a,b)=\bigl(\bar\partial_\theta a,
+             db-2c(\partial_\theta a\wedge F_\theta)\bigr).
+\]
+The bracket also has a quadratic form component. In particular, for a
+bundle Maurer--Cartan solution
+\(\bar\partial_\theta a+\tfrac12[a,a]=0\), define
+\[
+ \Delta(a)=2c(\partial_\theta a\wedge F_\theta)
+                 +c(\partial_\theta a\wedge\partial_\theta a).
+ \tag{S3}\label{eq:string-deformation}
+\]
+The full equation is \(db=\Delta(a)\), and the deformed anomaly triple is
+\((\theta+a,H-b)\), not \((\theta+a,H+b)\). On the fixed smooth bundle,
+\(\Delta(a)\) is closed, pure \((2,2)\) and de Rham exact. Complexifying
+the full q79 Bott--Chern injectivity result gives
+\(\Delta(a)=2i\partial\bar\partial\tau_a\); hence
+\(b=-2i\partial\tau_a\) solves it exactly. The connection \(\theta+a\)
+need not be the Chern connection of the old Hermitian metric.
+
+An auxiliary Hermitian elliptic solution operator \(\mathcal K_{BC}\)
+can select a primitive on this exact-form subspace. It defines a section
+of Maurer--Cartan \emph{sets},
+\[
+ s_{\mathcal K}(a)=(a,\mathcal K_{BC}\Delta(a)),\qquad
+ \pi s_{\mathcal K}(a)=a.
+ \tag{S4}\label{eq:string-mc-section}
+\]
+For each \(a\), its unquotiented fiber is affine over the closed degree-one
+form lane. The auxiliary metric chooses a representative, not a physical
+flux. The section is generally nonlinear, and gauge-equivariance,
+integral refinement or an \(L_\infty\) equivalence do not follow from
+\(\pi s=1\). The representable product-adjoint subcomplex embeds as a
+Lie dg algebra in the commutator algebra of cohesive endomorphisms. It is
+not an associative dg subalgebra: traceless matrices are closed under
+commutators, but \(E_{12}E_{21}=E_{11}\) has nonzero trace. Arbitrary
+off-diagonal or higher cohesive deformations are not covered by this lift.
+
+The finite source example makes the distinction tangible. In degree one
+use \((e,b,z)\), in degree two \((c,v)\), and set
+\[
+ de=c-2v,\quad db=v,\quad dz=0,\quad [e,e]=2c-2v,
+\]
+with all other brackets and degree-two differentials zero. Its
+Maurer--Cartan residual at \(xe+yb+\lambda z\) is
+\[
+ (x+x^2)c+(y-2x-x^2)v.
+\]
+Thus \(s(x)=(x,2x+x^2,0)\) lifts precisely the two base roots \(x=0,-1\),
+and \(\lambda z\) remains free. The polynomial extension obeys
+\(s(2)-2s(1)=2b\), so it is not a linear splitting. A source section has
+been constructed; uniqueness of a complete physical deformation has not.
+
+\subsection{One moment map, with distinct volume-form roles}
+\label{sec:string-calabi}
+
+On a compact real form, the integrable positive horizontal-lift space has
+the Calabi moment-map description. For fixed positive volume \(\mu\), put
+\(f_\omega=\tfrac12\log((\omega^n/n!)/\mu)\). Its zero locus consists of
+\[
+ F_\theta\wedge\omega^{n-1}=0,\qquad
+ d(e^{-\ell f_\omega}\omega^{n-1})=0,
+\]
+together with the integrability equations \(F^{0,2}=0\) and
+\(dd^c\omega+c(F\wedge F)=0\). For \(n=3\), \(\ell=1\), and the
+holomorphic volume convention, \(e^{-f_\omega}=\|\Omega_{\rm hol}\|_\omega\).
+This recovers the Hull--Strominger equations
+\cite[Proposition 5.14 and Corollary 5.15]{GarciaRubioTiplerGauge2020}.
+For the MTT product group, the three HYM rows and the balanced row are
+components of one moment map; the integrability and anomaly equations
+instead define its configuration stratum. Matching the selected physical
+trace and real torsion conventions is required for this interpretation.
+
+The normalization row has a different role again. If
+\(\mu_{\Omega_{\rm hol}}\) is the positive volume of the holomorphic form,
+define
+\[
+ \Omega_{\rm unit}=e^{f_\omega}\Omega_{\rm hol},\qquad
+ \mu_{\Omega_{\rm unit}}
+ =e^{2f_\omega}\mu_{\Omega_{\rm hol}}=\omega^3/3!.
+ \tag{S5}\label{eq:string-unit-volume}
+\]
+This is a coordinate identity. In general
+\(d\Omega_{\rm unit}=e^{f_\omega}df_\omega\wedge\Omega_{\rm hol}\ne0\).
+Requiring the same form to be both holomorphic and unit normalized adds
+a constant-norm restriction. The conformally balanced equation must use
+\(\Omega_{\rm hol}\); replacing it by the unit representative would
+wrongly force \(d\omega^2=0\). Thus the two uses of the symbol \(\Omega\)
+in an ambient residual compiler must be separated before physical use.
+
+\subsection{Restrict the Hessian, not the ambient proof}
+\label{sec:string-constrained-hessian}
+
+Suppose an actual stratum inclusion \(\iota:\mathcal Z\to\mathcal C\)
+implements the constructor, normalization chart and same-complex
+identification just described. At an exact solution, let \(j=D\iota\).
+If \(\mathcal A\circ\iota=\mathcal N\circ\iota=0\), then
+\[
+ D\mathcal A\,j=D\mathcal N\,j=0,\qquad
+ \operatorname{Hess}(\calC\circ\iota)
+       =j^\dagger D\Phi^\dagger W D\Phi j .
+ \tag{S6}\label{eq:string-restricted-gram}
+\]
+Here \(W\) is any chosen positive residual metric. All terms involving
+the vanished rows, including cross terms, vanish on this tangent space.
+The proof is the chain rule at \(D\calC=0\), not cancellation of positive
+terms in the ambient Hessian. The normal and obstruction complex is still
+needed. Gauge/diffeomorphism slices concern the quotient analysis; they
+are not additional physical residual equations.
+
+For example, take an ambient \(\mathbb R^{11}\) with coordinates
+\((\phi,a,\mu_1,\ldots,\mu_4,n,g_1,\ldots,g_4)\). Let
+\(J=(I_7\ 0)\). Its Euclidean Gram matrix has rank seven. Inclusion of
+\((\mu_1,\ldots,\mu_4,g_1,\ldots,g_4)\), setting \(\phi=a=n=0\),
+pulls it back to \(\operatorname{diag}(I_4,0_4)\), of rank four. The three
+removed directions are transverse, not three newly discovered physical
+gauge modes. This conditional restriction does not contradict the ambient
+25-block support in \cref{sec:q79}, and is not proof of a reducing or
+isometric spectral intertwiner. Without the inclusion and convention
+match, deleting the anomaly row remains unjustified.
+
+\subsection{The action bridge and its positivity boundary}
+\label{sec:string-positivity}
+
+With convention \(d\langle\boldsymbol\mu,\xi\rangle
+=\iota_{\rho_\xi}\varpi\) and \(g(u,v)=\varpi(u,Iv)\), one has
+\(\operatorname{grad}_g\langle\boldsymbol\mu,\xi\rangle=I\rho_\xi\)
+where the metric is nondegenerate. This ties the moment-map components to
+infinitesimal complexified gauge motion. The rational witness on
+\(\mathbb R^4_x\oplus\mathbb R^4_y\) has standard \(\varpi,I\),
+\(g=I_8\), \(\rho_i=-\partial_{y_i}\) and \(\mu_i=x_i\).
+Its orbit Jacobian is \(I_4\). It illustrates a variational anchor but
+does not establish positivity in the geometric moduli problem.
+
+In particular, the cited Calabi construction is generally
+\emph{pseudo-Kahler}, possibly degenerate, not automatically a positive
+repair metric. A positive horizontal lift means that its underlying
+Hermitian form is positive; it does not give positivity of every field-space
+metric. The anomaly pairing has signed factor weights. Nondegeneracy,
+positive directions, convexity and coercive estimates need their own
+hypotheses; at degeneracy an inverse-metric gradient is not available.
+Neither a local orbit-potential argument nor the finite positive witness
+establishes global minimization or a Lorentzian physical action.
+
+The later cyclic-cotangent result is already incorporated in the action
+discussion: the uncompleted string form lane does not automatically inherit
+a nondegenerate cyclic trace, whereas a shifted cotangent completion supplies
+dual variables. Shared-line compatibility on the neutral product-adjoint
+sector likewise does not identify every fundamental charged field.
+These three imports therefore remove independent bracket and form-lift
+searches on their stated domain, organize the residual roles, and feed the
+existing BV construction. They do not select the common physical endpoint,
+the remaining flux data or the four-dimensional action.
+
 \section{From a cotangent lift to a four-dimensional BV theory}
 \label{sec:bv-reduction}
 
@@ -2951,8 +3200,10 @@ been reached.
 
 The full-residual record improves the schematic notation in
 \eqref{eq:seven-lane} to an explicit differential-operator compiler. Write
-\(\nu=\|\Omega\|_\omega\), and reserve \(c_{\rm vol}\) for the volume
-normalization constant, not a third Chern class. The six extra rows are
+\(\nu=\|\Omega_{\rm hol}\|_\omega\), and reserve \(c_{\rm vol}\) for the
+volume normalization constant, not a third Chern class. Let \(\Psi\) denote
+the independently varied volume-form representative in the ambient compiler;
+it is not silently identified with \(\Omega_{\rm hol}\). The six extra rows are
 \begin{align}
 \mu_{TX}&=R_\Theta\wedge\omega^2,&
 \mu_V&=F_V\wedge\omega^2,&
@@ -2961,7 +3212,7 @@ normalization constant, not a third Chern class. The six extra rows are
 \mathcal A&=dH-\frac{\alpha'}4
  \bigl(\operatorname{tr}R_\Theta^2-\operatorname{tr}F_V^2
                          -\operatorname{tr}F_W^2\bigr),\nonumber\\
-\mathcal N&=i\Omega\wedge\bar\Omega-c_{\rm vol}\omega^3.
+\mathcal N&=i\Psi\wedge\bar\Psi-c_{\rm vol}\omega^3.
 \label{eq:explicit-six-rows}
 \end{align}
 Their target is the orthogonal sum of the six spaces
@@ -2990,17 +3241,24 @@ K_{\mathcal A}v&=d\dot H-\frac{\alpha'}2
   \{\operatorname{tr}(R_\Theta\wedge d_\Theta a_{TX})
        -\operatorname{tr}(F_V\wedge d_{A_V}a_V)
        -\operatorname{tr}(F_W\wedge d_{A_W}a_W)\},\nonumber\\
-K_{\mathcal N}v&=i(\dot\Omega\wedge\bar\Omega+
-                      \Omega\wedge\dot{\bar\Omega})
+K_{\mathcal N}v&=i(\dot\Psi\wedge\bar\Psi+
+                      \Psi\wedge\dot{\bar\Psi})
                       -3c_{\rm vol}\omega^2\wedge\dot\omega .
 \label{eq:explicit-K}
 \end{align}
-Here \(\dot{\log\nu}=\operatorname{Re}\langle\dot\Omega,\Omega\rangle/
-\|\Omega\|^2-\tfrac12\operatorname{tr}_g\dot g\) in the packet's fixed-chart
+Here \(\dot{\log\nu}=\operatorname{Re}\langle\dot\Omega_{\rm hol},
+\Omega_{\rm hol}\rangle/
+\|\Omega_{\rm hol}\|^2-\tfrac12\operatorname{tr}_g\dot g\) in the fixed-chart
 metric convention. Varying complex structure requires the corresponding
 typed chart terms as well; these formulas do not supply their endpoint
 coefficients. In particular the factor \(\alpha'/2\), rather than
 \(\alpha'/4\), is forced by differentiating the curvature square.
+On the normalized chart \(\Psi=\Omega_{\rm unit}\), with matching volume
+constants, \(\mathcal N\) is an identity and its tangent derivative vanishes.
+If instead \(\Psi=\Omega_{\rm hol}\), its vanishing imposes the additional
+constant-norm condition discussed in \cref{sec:string-calabi}. This role
+clarification preserves the six-row ambient differentiation, while avoiding
+an unintended restriction on conformally balanced solutions.
 
 The rank-102 complex fiber is
 \[
@@ -3107,6 +3365,12 @@ Repair jet to formal graph data & Exact finite/formal &
 Not a physical QFT action\\
 Cyclic action for the integrability lane & Exact conditional &
 Requires cyclic trace and domain hypotheses\\
+Anomaly triple to string algebroid & Exact constructor &
+Supplied holomorphic bundles, pairing and anomaly data\\
+q79 Bott--Chern MC lift & Exact on stated sublocus &
+Nonlinear section, not a full cohesive equivalence\\
+Calabi role reduction & Exact conditional &
+Matched conventions; pseudo-Kahler is not automatically positive\\
 Selected physical \(V_3/W_9\) cohesive or pure-bundle endpoint & Open &
 Current source-selection frontier\\
 Full HYM/balanced/anomaly action and real slice & Open &

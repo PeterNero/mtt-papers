@@ -2,7 +2,7 @@
 
 Checkpoint: 2026-09-12, after the foundational dependency repair: FP I v7,
 II v6, III v8, IV v7, V v9 and VI v7. The finite-mode companion v1,
-cohesive v10 and SM v4. Fixed Points and the companion remain unchanged.
+cohesive v11 and SM v4. Fixed Points and the companion remain unchanged.
 This is an editorial queue, not a list of unproved research claims.
 No Zenodo upload or publication is authorized.
 
@@ -134,7 +134,18 @@ criterion is not an emitted geometric matrix. Equivariant duality retains
 its canonical character; a positive rank witness does not supply bosonic
 statistics or a physical conjugate-pair mass action. All 41 earlier imports
 are retained. Eleven new exact tests pass; all 53 PDF pages were inspected.
-Current totals are 84 reviewed: 82 integrated and two historical; 221 unreviewed.
+The v10 checkpoint had 84 reviewed: 82 integrated and two historical; 221 unreviewed.
+
+V11 integrates H4-T11/T12/T13 in section 13: the anomaly-triple constructor,
+full q79 Bott-Chern MC-set lift, form-lane affine fibers and Calabi role
+reduction. It uses the later constructor/lift, not their obsolete open
+precursors. The holomorphic and unit-normalized volume forms are distinct;
+the six-row ambient compiler remains valid with that role clarification.
+Conditional tangent restriction does not delete ambient anomaly support.
+Pseudo-Kahler geometry is not automatically positive, and an adjoint Lie
+embedding is not associative. All forty-five earlier conclusions survive.
+Ten new exact editorial tests pass; all 58 final PDF pages were inspected.
+Current totals are 87 reviewed: 85 integrated and two historical; 218 unreviewed.
 
 Counts below come from the current source-bound ownership registry. Review
 source hypotheses, actual paper discussion and the latest superseding result;
@@ -142,7 +153,7 @@ do not infer absence or completion from an identifier search.
 
 | Order | Owner family | Unreviewed | Focus |
 |---|---|---:|---|
-| 1 | Cohesive source | 23 | Next: q79 string-algebroid promotion, Bott-Chern Maurer-Cartan lift and moment-map reduction. Index/matter/BHT/theta imports are done. Preserve source/action versus evaluated physical data. |
+| 1 | Cohesive source | 20 | Next: eight G3GMS--G3GMZ PBW/apolar/socle imports, then the auxiliary-pencil/global-Deligne cluster. String/Bott-Chern, index/matter and earlier transfers are done. Preserve selected-chart versus global physical data. |
 | 2 | Flux/q79 | 51 | Read latest correction before earlier source-route claims. Preserve local versus global domains, auxiliary versus physical spectral class, and hidden existence. |
 | 3 | Hull-Strominger | 37 | Common-source realization, moment-map role reduction and current hidden existence without relabeling symbolic formulas as evaluated coefficients. |
 | 4 | Proto-spinor | 29 | Shared-line and representation imports; distinguish finite algebra, graded matter index, first-order operators and the physical endpoint. |
@@ -155,7 +166,7 @@ do not infer absence or completion from an identifier search.
 | 11 | Perturbative QG | 6 | State the established perturbative/conditional scope, not UV-complete gravity. |
 | 12 | Parameters | 2 | No double-counting of shared inputs, profile coordinates and derived outputs. |
 | 13 | Closure strain | 1 | Preserve local carrier/strain and physical-spacetime distinctions. |
-| | Total | 221 | These are not 221 confirmed omissions. |
+| | Total | 218 | These are not 218 confirmed omissions. |
 
 The broad `mathematical_language_atlas` remains unreviewed. It is an evolving
 multi-thousand-line artifact with later appendices, not merely a July status

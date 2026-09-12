@@ -6,7 +6,7 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
 
 - The catalog contains 142 papers, and all 305 curated results have one integration home.
 - Flux v6 now preserves the established projective rank-nine hidden carrier and existential HYM connection. The numerical chamber, common visible endpoint and Bianchi data remain separate.
-- The cohesive manuscript is now v10: explicit six-row residual, 25-block support,
+- The cohesive manuscript is now v11: explicit six-row residual, 25-block support,
   conditional character reduction, metric comparison and source-factorization
   imports are integrated. Its isometric-embedding statement is corrected.
   V4 additionally corrects whole-projector comparison: exact retained
@@ -45,6 +45,13 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
   selected-line 85-by-82 evaluation test. Canonical-character duality and
   physical Higgs/mass typing remain explicit. All 53 pages inspected;
   eleven new exact tests pass. All 41 earlier imports remain unchanged.
+  V11 integrates H4-T11/T12/T13 in section 13: anomaly-to-string constructor,
+  full Bott-Chern MC-set lift and one Calabi moment map with constrained
+  residual roles. Holomorphic and unit-normalized volume forms are separated;
+  a pseudo-Kahler structure is not automatically positive. The adjoint map
+  is a Lie map, not an associative embedding. All 45 earlier conclusions
+  survive, with the ambient volume-row notation clarified. All 58 final
+  PDF pages inspected; ten new exact checks pass. No physical tier changes.
 - The new nine-page finite-mode calculation companion owns the recurrence,
   cubic heat-trace and L11 channel package. It cites the foundational series;
   the reverse FP III citation has been removed in v8.
@@ -64,9 +71,9 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
 
 `catalog/research-integration-reviews.json` is the manual contextual record. `catalog/research-ownership.json` and per-paper `RESEARCH_INTEGRATION.md` are generated views.
 
-84 result assignments have been reviewed: 82 integrated and two historical
+87 result assignments have been reviewed: 85 integrated and two historical
 provenance records needing no new theorem. All 19 originally confirmed
-additions/details have been handled. The other 221 are unreviewed, not known
+additions/details have been handled. The other 218 are unreviewed, not known
 omissions. This is editorial integration, not a new physical closure claim.
 A literal ID in metadata is not manuscript integration. A missing literal ID
 does not prove the mathematics is absent.
@@ -75,16 +82,16 @@ Reviews bind LF-normalized manuscript bytes, exact result hashes and real source
 
 ## Next Editorial Work
 
-1. Continue with the remaining 23 cohesive-source assignments, grouping local
+1. Continue with the remaining 20 cohesive-source assignments, grouping local
    transfer/action witnesses rather than adding a long packet inventory. The
    evolving mathematical-language atlas needs separate scoped reading.
-   Next coherent cluster: the q79 string-algebroid promotion, Bott-Chern
-   Maurer-Cartan lift and string-algebroid moment-map reduction assignments.
-   Read their exact source hypotheses before importing them; do not turn a
-   structural action bridge into an evaluated endpoint or coefficient table.
-   Do not repeat charge, CBF, nested, Morita, Hirsch, BV/Euler or matter reviews. Their
+   Next coherent cluster: eight G3GMS--G3GMZ PBW/apolar/socle assignments.
+   Read their exact selected-chart, quotient and 48-fiber hypotheses before
+   importing them. Do not identify an apolar quotient with a physical HYM
+   endpoint. The auxiliary-pencil/global-Deligne cluster follows separately.
+   Do not repeat string/Bott-Chern, charge, CBF, nested, Morita, Hirsch, BV/Euler or matter reviews. Their
    structural results are closed; physical realization has different premises.
-2. Continue the 221 contextual reviews in the order and clusters recorded in
+2. Continue the 218 contextual reviews in the order and clusters recorded in
    EDITORIAL_INTEGRATION_PLAN.md. SM has no remaining assigned imports.
 3. Review downstream uses of embedded isometries against the corrected cohesive
    theorem. Cost pullback alone is not reducing operator intertwining; exact
