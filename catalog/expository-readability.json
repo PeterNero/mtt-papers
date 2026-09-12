@@ -1,6 +1,6 @@
 {
   "schema": "mtt.expository-readability-audit.v1",
-  "generated_on": "2026-09-11",
+  "generated_on": "2026-09-12",
   "papers": 141,
   "priority_counts": {
     "light": 1,
@@ -10,7 +10,7 @@
   "missing_dimension_counts": {
     "argument_flow": 32,
     "conclusion": 3,
-    "concrete_foothold": 24,
+    "concrete_foothold": 23,
     "object_intuition": 84,
     "orientation": 66,
     "result_interpretation": 7
@@ -634,11 +634,11 @@
     {
       "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
       "title": "Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary",
-      "total_words": 7099,
-      "narrative_words": 4798,
+      "total_words": 8437,
+      "narrative_words": 5825,
       "formal_results": 19,
       "proofs": 13,
-      "narrative_words_per_result": 252.5,
+      "narrative_words_per_result": 306.6,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -650,8 +650,8 @@
       "audit_priority": "reviewed",
       "heuristic_priority": "moderate",
       "review_status": "reviewed",
-      "reviewed_on": "2026-09-11",
-      "review_note": "Version 1 is a new canonical theorem-owner paper. It derives the covariant residual Hessian, exact-zero normal square, repair flow, tangent Hodge semigroup, cohesive twist cancellation, Maurer-Cartan repair, Hodge/Green/kernel package, nonlinear Cech descent, compatible projection, and complete repair jet in one standalone explanatory chain. It includes the nonzero-defect correction, the exact stratified Green blow-up witness, and a theorem-level separation of positive repair from signed physical action through Helmholtz, multiplier, and cyclic-action results. It applies the chain only to the q79 Hartshorne-Serre cohesive benchmark, keeps physical V3/W9 selection, HYM metric, full action, Lorentzian domains, and continuum-to-finite transport open, includes reproducibility references and a version-provenance audit, and the complete 21-page PDF was visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
+      "reviewed_on": "2026-09-12",
+      "review_note": "Version 3 integrates the explicit six-row residual, 25-block rank-102 compiler, conditional 1548-position symmetry count, transported-metric test and GAS/SYN/BV4 dependency factorization. It corrects an overbroad embedded-isometry claim by distinguishing pullback from reducing operator intertwining, with an explicit counterexample and the needed adjoint hypothesis. Existing structural theorems and later Flux hidden-carrier/HYM advances are retained. All 25 PDF pages were rendered and visually inspected; compilation has no warnings. No public release or physical-source promotion is implied.",
       "missing_dimensions": []
     },
     {
@@ -1307,11 +1307,11 @@
     {
       "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
       "title": "Auditing Heterotic Flux Compactifications on Iwasawa and Lens\u2013Nil Geometries: Bundle Obstructions and a q=79 Fu\u2013Yau Completion Contract",
-      "total_words": 3775,
-      "narrative_words": 2941,
+      "total_words": 4579,
+      "narrative_words": 3742,
       "formal_results": 7,
       "proofs": 6,
-      "narrative_words_per_result": 420.1,
+      "narrative_words_per_result": 534.6,
       "orientation": true,
       "object_intuition": false,
       "argument_flow": true,
@@ -1323,8 +1323,8 @@
       "audit_priority": "reviewed",
       "heuristic_priority": "light",
       "review_status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "review_note": "Rebuilt as a rigorous audit: the local Iwasawa balanced geometry is retained with corrected torsion, the nonclosed Chern datum and nonintegrable Dolbeault matrix are exposed, the unique minimal repair is proved gauge-redundant and non-simple, the former Bianchi/generation/Yukawa claims are withdrawn, Lens-Nil is reclassified as auxiliary, and the q79 Fu-Yau completion gates are stated at their current tiers; exact verifier passes, managed result references are current, and the 12-page PDF was visually inspected.",
+      "reviewed_on": "2026-09-12",
+      "review_note": "Version 6 preserves the Iwasawa audit and T69-T73 local/global reconciliation. Corrects the V2/H1 table and explains the already established rank-nine projective hidden carrier and existential HYM threshold using frozen UST.G3T/G3V records. Explicitly separates existence from numerical M/t/connection coefficients and the common visible-hidden/Bianchi endpoint. All 14 rebuilt pages were rendered and visually inspected, including the changed table and discussion at full resolution. Metadata abstract is plain text with no correction history. No theorem is duplicated and no physical endpoint or Zenodo release is claimed.",
       "missing_dimensions": [
         "object_intuition"
       ]
@@ -2069,29 +2069,28 @@
     },
     {
       "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
-      "title": "From Modal Triplet Theory to a Standard-Model Sector: Exact Finite Structure, Profile-Level Equivalence, and the No-Knob Boundary",
-      "total_words": 3785,
-      "narrative_words": 3011,
+      "title": "From Modal Triplet Theory to a Standard-Model Sector Exact Finite Structure, Profile-Level Equivalence, and the No-Knob Boundary",
+      "total_words": 5804,
+      "narrative_words": 4926,
       "formal_results": 6,
       "proofs": 3,
-      "narrative_words_per_result": 501.8,
+      "narrative_words_per_result": 821.0,
       "orientation": false,
       "object_intuition": false,
       "argument_flow": true,
       "result_interpretation": true,
-      "concrete_foothold": false,
+      "concrete_foothold": true,
       "limitations": true,
       "conclusion": true,
-      "coverage_dimensions": 4,
+      "coverage_dimensions": 5,
       "audit_priority": "reviewed",
       "heuristic_priority": "light",
       "review_status": "reviewed",
-      "reviewed_on": "2026-07-31",
-      "review_note": "Version 3 replaces the earlier full-derivation narrative with a tiered and reproducible Standard-Model-sector synthesis. It separates exact finite structure, profile replay, embedded equivalence, and strict no-knob prediction; distinguishes the 27-dimensional qutrit-Weyl carrier from the 96-dimensional physical finite Dirac operator; records the native gauge quotient, three-family anomaly cancellation, finite-triple completion, and selected one-Higgs projector; proves the family-intertwiner nonselection boundary; states the charged, neutral, CKM, electroweak, Higgs, threshold, and precision rows at their actual tiers; gives a non-overcounting parameter ledger and explicit falsifiers; and the complete 11-page PDF was visually inspected.",
+      "reviewed_on": "2026-09-12",
+      "review_note": "Version 4 retains the reconstruction and family-intertwiner theorems and contextually integrates all fourteen queued SM results. It explains gauge spectra and density, common normalization with one anchor, the effective 13/19-coordinate profile ledger, neutral holonomy and conditional branch measure, axion quality and multi-axion rank tests, and the limited Cech/rank-two HYM support witnesses. Profile compatibility is not independent prediction. All sixteen PDF pages were rendered and visually inspected; compilation has no warnings. The metadata abstract is plain text. This authoring revision is not a Zenodo release.",
       "missing_dimensions": [
         "orientation",
-        "object_intuition",
-        "concrete_foothold"
+        "object_intuition"
       ]
     },
     {
@@ -3327,7 +3326,7 @@
     {
       "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
       "title": "A Conditional Operator Encoding of Wave-Particle Duality in MTT Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary",
-      "total_words": 18035,
+      "total_words": 18038,
       "narrative_words": 12961,
       "formal_results": 33,
       "proofs": 18,

@@ -601,28 +601,28 @@
       "sha256_lf": "483597dae8e82e68b31d2e187e22f4b8c8ff8821621d782d8162445bf16fbdac"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 66783,
-      "sha256_lf": "9fa1f46d4b5dc67f80fb1c14bdecff7481dd9ceb740f042e38e93a128ccc0aa1"
+      "bytes_lf": 72676,
+      "sha256_lf": "f7e94070a502c9442b553aacc57a24413cbbd657bcdc889c0d27c494c76d71d5"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/REVISION_AUDIT.md": {
-      "bytes_lf": 4129,
-      "sha256_lf": "51192fbf3e3d52d30a2f198f495728a80403b9cce4603e3fad906255c00fd3b9"
+      "bytes_lf": 6546,
+      "sha256_lf": "c6c6d0d79cbdbb51da3524a3b2eb58d9cbfbeda13496f3a09d5021e816826ae2"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.bib": {
       "bytes_lf": 4744,
       "sha256_lf": "01b0c5b5d91ba4d26e719973af8bda739be4e2cfb310aa30419b8a5ec1293fdb"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex": {
-      "bytes_lf": 57445,
-      "sha256_lf": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30"
+      "bytes_lf": 68400,
+      "sha256_lf": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/metadata.json": {
-      "bytes_lf": 4996,
-      "sha256_lf": "d5f1c6cd5d4ecf41417db82f70ec53c25f874e2a7430a689c44bd8ab765ad638"
+      "bytes_lf": 5221,
+      "sha256_lf": "df1acfb201e021f5c36655f918f18758b9c04e84c61f9de301ea80df535904ab"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/paper.md": {
-      "bytes_lf": 61595,
-      "sha256_lf": "9becf69a2f414d9f60abd9baa411171f6b14e116ff9e0afcd6d41ae13c754403"
+      "bytes_lf": 72585,
+      "sha256_lf": "5e56609daf24314b8d3031e58b7c00e8eb8575e4531e8f60acf47860725a5460"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/series.sty": {
       "bytes_lf": 3676,
@@ -2113,24 +2113,24 @@
       "sha256_lf": "0396ad7bcdb2362410cab7307cb1e762f1d97e60a52a33844f15c72b26e8e20d"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 37471,
-      "sha256_lf": "3138fa83aa0c39785e36494cdb27dc4ffa14f5f82009f6a4056622e78ed7a618"
+      "bytes_lf": 37993,
+      "sha256_lf": "f8629cc13e439c2f5adcc512c93d871633300693ad5b342abad554468cae6cd3"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/REVISION_AUDIT.md": {
-      "bytes_lf": 7819,
-      "sha256_lf": "38399f59beb32afee7adf3fc47ea509079795130b5ee2446f78a42cea9366a25"
+      "bytes_lf": 10585,
+      "sha256_lf": "7f88a8687a883788063559456b7e5780c033dcecdd75ca280d0e9f5e8d974fed"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex": {
-      "bytes_lf": 32073,
-      "sha256_lf": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536"
+      "bytes_lf": 48443,
+      "sha256_lf": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/metadata.json": {
-      "bytes_lf": 6692,
-      "sha256_lf": "797a1a6139fb9af46db4dead3d1c20d474e8b0b1fca8a3d3a03d5fa95087fe5e"
+      "bytes_lf": 7494,
+      "sha256_lf": "aa0059b3ac66ce17913ef2585720635835bec6e839252d42b6a98a3690a6e477"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/paper.md": {
-      "bytes_lf": 31558,
-      "sha256_lf": "956622ab983b5930e4d2d1b63d2a554f8f4b176bc8e3863a48a42787f0c7e266"
+      "bytes_lf": 47288,
+      "sha256_lf": "0ef71a10d27473aa5d42a02827b867b8036599820679380eb7bdfd5bf7399ac7"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/series.sty": {
       "bytes_lf": 3723,
@@ -3655,5 +3655,5 @@
   },
   "normalization": "CRLF and CR converted to LF; all other bytes preserved",
   "schema": "mtt.portable-text-hashes.v1",
-  "source_ref": "557b3419f13f33284790fa8cf2fd6e7c76e5f6bf"
+  "source_ref": "4c59f3bd182d58c5b09e498b02316be78b6a9c16"
 }

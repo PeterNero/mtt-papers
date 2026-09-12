@@ -26,7 +26,7 @@ TEX_MANAGED_BEGIN = "% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE"
 MD_MANAGED_BEGIN = "<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->"
 MD_MANAGED_END = "<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->"
 EVIDENCE_HEADING_RE = re.compile(
-    r"^(#{1,6}) Computational Evidence and Reproducibility\s*$",
+    r"^(#{1,6}) (?:Computational Evidence and Reproducibility|Reproducibility and Result Ownership)\s*$",
     re.MULTILINE,
 )
 NEXT_HEADING_RE = re.compile(r"^#{1,6} \S", re.MULTILINE)

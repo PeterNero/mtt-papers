@@ -11,14 +11,13 @@
     "owner_papers": 15,
     "manuscript_integration": {
       "historical_context": 1,
-      "integrated": 22,
-      "unreviewed": 263,
-      "addition_needed": 18,
-      "summary_present": 1
+      "integrated": 46,
+      "unreviewed": 254,
+      "addition_needed": 4
     },
     "reference_scan": {
-      "tex_hits": 21,
-      "metadata_hits": 33
+      "tex_hits": 35,
+      "metadata_hits": 50
     }
   },
   "results": [
@@ -46,17 +45,17 @@
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 522,
+            "line_start": 752,
             "anchor": "an old file containing"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 399,
+            "line_start": 507,
             "anchor": "Current released reconstruction"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "f1a4c656fed97eb9d185c30a852404b3e0e029952c142dc7db6d72b85cdd4883",
         "stale_reasons": []
       }
@@ -85,17 +84,17 @@
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 399,
+            "line_start": 507,
             "anchor": "Current released reconstruction"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 545,
+            "line_start": 777,
             "anchor": "Remaining Theorems and Falsifiers"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "d783988a4d10f10abfa4f5fa2769219cbea3fae238e3894d405c404fc3f546e9",
         "stale_reasons": []
       }
@@ -158,27 +157,27 @@
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 118,
+            "line_start": 139,
             "anchor": "The Two Finite Matrices Have Different Jobs"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 169,
+            "line_start": 190,
             "anchor": "Exact Gauge and Chiral Structure"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 249,
+            "line_start": 295,
             "anchor": "Finite Geometry and the Higgs Module"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "af5bff7f860e7a65bae49d0e8ed2fbaddb5a7ae2e9f41fd972537022eb06f7f1",
         "stale_reasons": []
       }
@@ -203,31 +202,31 @@
         "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.",
+        "assessment": "Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 317,
+            "line_start": 407,
             "anchor": "Where the Numerical Values Enter"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 365,
+            "line_start": 473,
             "anchor": "Multi-loop precision transport"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 452,
+            "line_start": 560,
             "anchor": "Parameter ledger"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "9648804f5b9f0867ccfa55b3b1bc9cc11332576d41e573b5900c4caafca90ad9",
         "stale_reasons": []
       }
@@ -252,31 +251,31 @@
         "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.",
+        "assessment": "Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 317,
+            "line_start": 407,
             "anchor": "Where the Numerical Values Enter"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 365,
+            "line_start": 473,
             "anchor": "Multi-loop precision transport"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 452,
+            "line_start": 560,
             "anchor": "Parameter ledger"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "c5af11222a282343ab6009038a4fd61bcaec6406e88c537c8bc64ebdd9267ecf",
         "stale_reasons": []
       }
@@ -301,31 +300,31 @@
         "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.",
+        "assessment": "Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 317,
+            "line_start": 407,
             "anchor": "Where the Numerical Values Enter"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 365,
+            "line_start": 473,
             "anchor": "Multi-loop precision transport"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 452,
+            "line_start": 560,
             "anchor": "Parameter ledger"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "55df4532ae2bb6dd5995ed5e7e0d16308d5e0647fbfa99bd82e767be0859da59",
         "stale_reasons": []
       }
@@ -350,31 +349,31 @@
         "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.",
+        "assessment": "Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 317,
+            "line_start": 407,
             "anchor": "Where the Numerical Values Enter"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 365,
+            "line_start": 473,
             "anchor": "Multi-loop precision transport"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 452,
+            "line_start": 560,
             "anchor": "Parameter ledger"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "2de3384b83ce4cd37ac734dfc21adb2f58ff8a5e6cf187df18cbc5c701d74e39",
         "stale_reasons": []
       }
@@ -399,31 +398,31 @@
         "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.",
+        "assessment": "Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 317,
+            "line_start": 407,
             "anchor": "Where the Numerical Values Enter"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 365,
+            "line_start": 473,
             "anchor": "Multi-loop precision transport"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 452,
+            "line_start": 560,
             "anchor": "Parameter ledger"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "203f294f770c724295f89307b6cebea8f813c5abd15add73d3772492ea04c787",
         "stale_reasons": []
       }
@@ -448,31 +447,31 @@
         "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.",
+        "assessment": "Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 317,
+            "line_start": 407,
             "anchor": "Where the Numerical Values Enter"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 365,
+            "line_start": 473,
             "anchor": "Multi-loop precision transport"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 452,
+            "line_start": 560,
             "anchor": "Parameter ledger"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "af063d74ab102fc3c0905822bdb35ad5210c40f69d98107a8e583548e94334dd",
         "stale_reasons": []
       }
@@ -488,30 +487,35 @@
       "description": "Literal 81-entry, 729-cocycle finite Cech witness.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
-        "metadata": false
+        "tex": true,
+        "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-ADJACENT-WITNESSES-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The current main text does not explain these five assigned result-specific constructions. The SU2/SU3 identifiers in metadata are not manuscript integration. The rank-two Cech/HYM witness must not be promoted to the physical rank-three visible endpoint.",
+        "assessment": "Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
-            "anchor": "Reproducibility and Result Ownership"
+            "line_start": 270,
+            "anchor": "What the finite gauge spectra add"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 471,
-            "anchor": "Strong CP and branch choice"
+            "line_start": 680,
+            "anchor": "What the geometric support witnesses do establish"
+          },
+          {
+            "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
+            "line_start": 624,
+            "anchor": "Strong CP: the current and the quality question"
           }
         ],
-        "remaining_action": "Add short, scoped imports where they support the reconstruction or strong-CP discussion; cite the original geometry/anomaly owner and keep rank-two support separate. Do not duplicate the proofs.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "a764508cb39789f6cc62af27658caf8fc93d718c3ec726846b9b7878090ac9af",
         "stale_reasons": []
       }
@@ -527,30 +531,35 @@
       "description": "Weighted-theta Fourier-tail and Wiener contraction certificate.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
-        "metadata": false
+        "tex": true,
+        "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-ADJACENT-WITNESSES-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The current main text does not explain these five assigned result-specific constructions. The SU2/SU3 identifiers in metadata are not manuscript integration. The rank-two Cech/HYM witness must not be promoted to the physical rank-three visible endpoint.",
+        "assessment": "Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
-            "anchor": "Reproducibility and Result Ownership"
+            "line_start": 270,
+            "anchor": "What the finite gauge spectra add"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 471,
-            "anchor": "Strong CP and branch choice"
+            "line_start": 680,
+            "anchor": "What the geometric support witnesses do establish"
+          },
+          {
+            "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
+            "line_start": 624,
+            "anchor": "Strong CP: the current and the quality question"
           }
         ],
-        "remaining_action": "Add short, scoped imports where they support the reconstruction or strong-CP discussion; cite the original geometry/anomaly owner and keep rank-two support separate. Do not duplicate the proofs.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "be8fefa3239c51e6818eccc4e64fa9b0aae17b7ea60876f03a11c52ff2436ac5",
         "stale_reasons": []
       }
@@ -575,31 +584,31 @@
         "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.",
+        "assessment": "Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 317,
+            "line_start": 407,
             "anchor": "Where the Numerical Values Enter"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 365,
+            "line_start": 473,
             "anchor": "Multi-loop precision transport"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 452,
+            "line_start": 560,
             "anchor": "Parameter ledger"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "c934af81cd3b5058205199295c914601751750f4eeb9adf1d1fee76152ef1ea7",
         "stale_reasons": []
       }
@@ -628,27 +637,27 @@
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 118,
+            "line_start": 139,
             "anchor": "The Two Finite Matrices Have Different Jobs"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 169,
+            "line_start": 190,
             "anchor": "Exact Gauge and Chiral Structure"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 249,
+            "line_start": 295,
             "anchor": "Finite Geometry and the Higgs Module"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "528af6955b3b7207a9db178d14d95cb4078f895f946a7d204fa680bc5754f657",
         "stale_reasons": []
       }
@@ -677,27 +686,27 @@
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 118,
+            "line_start": 139,
             "anchor": "The Two Finite Matrices Have Different Jobs"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 169,
+            "line_start": 190,
             "anchor": "Exact Gauge and Chiral Structure"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 249,
+            "line_start": 295,
             "anchor": "Finite Geometry and the Higgs Module"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "eeb8c7bb501d151a53ba2df109654e34ea4735560338c86e978107c9b5678582",
         "stale_reasons": []
       }
@@ -726,27 +735,27 @@
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 118,
+            "line_start": 139,
             "anchor": "The Two Finite Matrices Have Different Jobs"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 169,
+            "line_start": 190,
             "anchor": "Exact Gauge and Chiral Structure"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 249,
+            "line_start": 295,
             "anchor": "Finite Geometry and the Higgs Module"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "ad1af2f80691c2cfe2fd73ea96d1448113dd67ba9dce8fbba295c7c9e8381079",
         "stale_reasons": []
       }
@@ -775,27 +784,27 @@
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 118,
+            "line_start": 139,
             "anchor": "The Two Finite Matrices Have Different Jobs"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 169,
+            "line_start": 190,
             "anchor": "Exact Gauge and Chiral Structure"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 249,
+            "line_start": 295,
             "anchor": "Finite Geometry and the Higgs Module"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "89a1bb179af408da9d1d8408a9063331d21c8e429bb7a9bb52976bbf857e172c",
         "stale_reasons": []
       }
@@ -824,27 +833,27 @@
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 118,
+            "line_start": 139,
             "anchor": "The Two Finite Matrices Have Different Jobs"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 169,
+            "line_start": 190,
             "anchor": "Exact Gauge and Chiral Structure"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 249,
+            "line_start": 295,
             "anchor": "Finite Geometry and the Higgs Module"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
+            "line_start": 699,
             "anchor": "Reproducibility and Result Ownership"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "4f2b6f68fd5b6c26fb88e9ad137165a205e39c4a4766cf5347d083e3407cc03a",
         "stale_reasons": []
       }
@@ -860,30 +869,35 @@
       "description": "Exact SU2 finite gauge/ghost spectrum row.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
+        "tex": true,
         "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-ADJACENT-WITNESSES-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The current main text does not explain these five assigned result-specific constructions. The SU2/SU3 identifiers in metadata are not manuscript integration. The rank-two Cech/HYM witness must not be promoted to the physical rank-three visible endpoint.",
+        "assessment": "Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
-            "anchor": "Reproducibility and Result Ownership"
+            "line_start": 270,
+            "anchor": "What the finite gauge spectra add"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 471,
-            "anchor": "Strong CP and branch choice"
+            "line_start": 680,
+            "anchor": "What the geometric support witnesses do establish"
+          },
+          {
+            "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
+            "line_start": 624,
+            "anchor": "Strong CP: the current and the quality question"
           }
         ],
-        "remaining_action": "Add short, scoped imports where they support the reconstruction or strong-CP discussion; cite the original geometry/anomaly owner and keep rank-two support separate. Do not duplicate the proofs.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "abd813c5e6a0055e76113fbb71617cb3698e7277d9d071bcc8b5e1b195348441",
         "stale_reasons": []
       }
@@ -899,30 +913,35 @@
       "description": "Exact SU3 adjoint-central-trivial row and ten-spectrum closure/no-go.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
+        "tex": true,
         "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-ADJACENT-WITNESSES-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The current main text does not explain these five assigned result-specific constructions. The SU2/SU3 identifiers in metadata are not manuscript integration. The rank-two Cech/HYM witness must not be promoted to the physical rank-three visible endpoint.",
+        "assessment": "Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
-            "anchor": "Reproducibility and Result Ownership"
+            "line_start": 270,
+            "anchor": "What the finite gauge spectra add"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 471,
-            "anchor": "Strong CP and branch choice"
+            "line_start": 680,
+            "anchor": "What the geometric support witnesses do establish"
+          },
+          {
+            "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
+            "line_start": 624,
+            "anchor": "Strong CP: the current and the quality question"
           }
         ],
-        "remaining_action": "Add short, scoped imports where they support the reconstruction or strong-CP discussion; cite the original geometry/anomaly owner and keep rank-two support separate. Do not duplicate the proofs.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "b106f81bee0af46148a99ac55422524bcac0f1a3b2f01689bf01a0747f96f2e0",
         "stale_reasons": []
       }
@@ -938,30 +957,35 @@
       "description": "E6 Qpsi matter/exotic QCD anomaly cancellation audit.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
-        "metadata": false
+        "tex": true,
+        "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-ADJACENT-WITNESSES-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The current main text does not explain these five assigned result-specific constructions. The SU2/SU3 identifiers in metadata are not manuscript integration. The rank-two Cech/HYM witness must not be promoted to the physical rank-three visible endpoint.",
+        "assessment": "Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 485,
-            "anchor": "Reproducibility and Result Ownership"
+            "line_start": 270,
+            "anchor": "What the finite gauge spectra add"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 471,
-            "anchor": "Strong CP and branch choice"
+            "line_start": 680,
+            "anchor": "What the geometric support witnesses do establish"
+          },
+          {
+            "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
+            "line_start": 624,
+            "anchor": "Strong CP: the current and the quality question"
           }
         ],
-        "remaining_action": "Add short, scoped imports where they support the reconstruction or strong-CP discussion; cite the original geometry/anomaly owner and keep rank-two support separate. Do not duplicate the proofs.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "36935d55a6ab3e19d77ff6e6c4d369ecd0948613ea177a89c8b715632f592be8",
         "stale_reasons": []
       }
@@ -1007,17 +1031,17 @@
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 399,
+            "line_start": 507,
             "anchor": "Current released reconstruction"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 545,
+            "line_start": 777,
             "anchor": "Remaining Theorems and Falsifiers"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "659afd20a06fcc6492cfb77688dae81d109dfd16b368d877e1ea4d92da5e97ac",
         "stale_reasons": []
       }
@@ -1505,27 +1529,27 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 211,
+            "line_start": 229,
             "anchor": "Covariant residual-Hessian identity"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 466,
+            "line_start": 484,
             "anchor": "Endomorphism untwisting"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 580,
+            "line_start": 598,
             "anchor": "Hodge and kernel package"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1105,
+            "line_start": 1186,
             "anchor": "The q79 benchmark and its exact boundary"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30",
+        "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
         "result_sha256": "8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8",
         "stale_reasons": []
       }
@@ -1544,8 +1568,35 @@
         "tex": false,
         "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COHESIVE-DESCENT-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual editorial integration",
+        "assessment": "The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 541,
+            "anchor": "Cohesive Maurer--Cartan repair"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 720,
+            "anchor": "Nonlinear repair descent"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 760,
+            "anchor": "For a finite connected cover with unitary local-system transitions"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+        "result_sha256": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "q79_global_fitting_descent",
@@ -1612,8 +1663,35 @@
         "tex": false,
         "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COHESIVE-DESCENT-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual editorial integration",
+        "assessment": "The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 541,
+            "anchor": "Cohesive Maurer--Cartan repair"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 720,
+            "anchor": "Nonlinear repair descent"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 760,
+            "anchor": "For a finite connected cover with unitary local-system transitions"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+        "result_sha256": "b6d9a73e29ec3b2e832c99544efa1a8b364db84e0b9ca91c99ad8d26a9e99912",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "local_closure_repair_descent",
@@ -1629,8 +1707,35 @@
         "tex": false,
         "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COHESIVE-DESCENT-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual editorial integration",
+        "assessment": "The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 541,
+            "anchor": "Cohesive Maurer--Cartan repair"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 720,
+            "anchor": "Nonlinear repair descent"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 760,
+            "anchor": "For a finite connected cover with unitary local-system transitions"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+        "result_sha256": "b83aadb5b7d611f11db0d5c307b897cc7230e0f7ebf06681beae4abbe789cafc",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "q79_projective_record_descent",
@@ -1695,24 +1800,29 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
-      "manuscript_integration": "summary_present",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "COHESIVE-PHYSICAL-RESIDUAL-20260912",
-        "state": "summary_present",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The paper explains the full physical defect as a proposed source and retains the K-dagger-K augmentation. It does not display the corrected 25-block rank-102 mask or all six symbolic row definitions of the later execution packet.",
+        "assessment": "Version 3 displays all six extra residuals, fixed-chart derivatives including alpha-prime/2, the lane incidence matrix and the 19-to-25-block correction. It explains that allowed support is neither a numerical nonzero matrix nor the full Hilbert-space dimension. The exact kernel intersection is retained, while the old candidate audit is explicitly historical so later hidden-carrier/HYM advances are not regressed.",
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1129,
-            "anchor": "The proposed full defect and why it remains proposed"
+            "line_start": 1245,
+            "anchor": "The explicit residual and its block support"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 1356,
+            "anchor": "These are imported compiler results"
           }
         ],
-        "remaining_action": "Import the exact six-row/25-block compiler with its owner citation, without replacing the open numerical endpoint by the symbolic mask.",
-        "main_tex_lf_sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
         "result_sha256": "937039df105881a4dcbf1ed31d86ab842b5da2ee6df832e7c834d9eb71cae441",
         "stale_reasons": []
       }
@@ -1763,10 +1873,27 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COHESIVE-SYMMETRY-IMPORT-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual editorial integration",
+        "assessment": "The additional E[3] invariance and 22 neutral external-mode assumptions are displayed beside the 1548 count, hidden character multiplicities and general sum-of-squares formula. This is a conditional character reduction, not 1548 accepted numerical coefficients and not a retraction of dense structural support.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 1341,
+            "anchor": "There is also a lawful conditional sparsification"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+        "result_sha256": "18b978d0bab66d3f40cf45f8ceab33fd5c6fe6bb031ae8f66c10721fdc5f43d7",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "eta9_gate1_campaign",
@@ -2445,8 +2572,35 @@
         "tex": false,
         "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COHESIVE-LOCAL-WITNESSES-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual editorial integration",
+        "assessment": "The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 310,
+            "anchor": "Why the correction cannot be dropped"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 374,
+            "anchor": "Repair monotonicity and tangent generator"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 1024,
+            "anchor": "Information erased by the square"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+        "result_sha256": "1c17362537af94ecbbb40de8944ae0c1fd583aa3ffd31231b55e0c6eeef91d15",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "preprojection_first_order_phase_loss_witness",
@@ -2460,10 +2614,37 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COHESIVE-LOCAL-WITNESSES-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual editorial integration",
+        "assessment": "The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 310,
+            "anchor": "Why the correction cannot be dropped"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 374,
+            "anchor": "Repair monotonicity and tangent generator"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 1024,
+            "anchor": "Information erased by the square"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+        "result_sha256": "9a0a92dad8ad6d461b0d67c61c8b96c266d43c94a1f83a626063c786805a1496",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "preprojection_qutrit_central_extension_witness",
@@ -2506,27 +2687,27 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 211,
+            "line_start": 229,
             "anchor": "Covariant residual-Hessian identity"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 466,
+            "line_start": 484,
             "anchor": "Endomorphism untwisting"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 580,
+            "line_start": 598,
             "anchor": "Hodge and kernel package"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1105,
+            "line_start": 1186,
             "anchor": "The q79 benchmark and its exact boundary"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30",
+        "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
         "result_sha256": "247b1b52198dc250f80293e6807f1d2fc7ac126a930c9642ef2b5a3fb7a74921",
         "stale_reasons": []
       }
@@ -2545,8 +2726,35 @@
         "tex": false,
         "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COHESIVE-LOCAL-WITNESSES-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual editorial integration",
+        "assessment": "The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 310,
+            "anchor": "Why the correction cannot be dropped"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 374,
+            "anchor": "Repair monotonicity and tangent generator"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 1024,
+            "anchor": "Information erased by the square"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+        "result_sha256": "d8ca1cee978ee72b57deb6990b50614a058d499b1a12f249f46a71cc460892cf",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "preprojection_single_charge_factorization",
@@ -2798,10 +3006,32 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COHESIVE-METRIC-IMPORT-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual editorial integration",
+        "assessment": "Version 3 gives the transported metric, physical distortion, adjoint and chain-commutator formulas, the I2 versus diag(4,1/9) witness, and the polar product criterion. Bounded invertibility and domain transport are stated. The related embedding counterexample repairs the formerly overbroad projection claim; a physical analytic BHT map remains unconstructed.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 838,
+            "anchor": "The transported-metric result makes the latter task concrete"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 820,
+            "anchor": "For example, let"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+        "result_sha256": "67a0109c6a7c7d02b97e863af1f6ebdeab3a66b27e8e37f4adc4733bb368fee7",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "preprojection_repair_jet_graph_functor",
@@ -3290,30 +3520,30 @@
       "description": "Route-A promotion of the positive C1 density and accepted finite gauge-action shape at corpus-action tier.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
-        "metadata": false
+        "tex": true,
+        "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-GAUGE-LEDGER-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The paper discusses finite traces and warns against double-counting parameters, but does not yet state the later Route-A density, common scheme map, scale-orbit result or the effective 13/19-coordinate ledger. The old generic statement is not equivalent to integrating those computations.",
+        "assessment": "Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 307,
-            "anchor": "The finite gauge traces are"
+            "line_start": 363,
+            "anchor": "Selected density, relative shape and the remaining amplitude"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 477,
+            "line_start": 585,
             "anchor": "The rows overlap and must not be arithmetically summed"
           }
         ],
-        "remaining_action": "Update the normalization and parameter subsections from the same-source ledger with convention/input accounting. Explain 13/19 as effective profile coordinates, not a zero-input prediction.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "5714fa1d7e887cc971be4f779773bd6d466d3d037405654f4031c0ad0b0e7c00",
         "stale_reasons": []
       }
@@ -3329,30 +3559,30 @@
       "description": "Convention-safe one-anchor gauge-coupling map and covariance-aware compatibility replay.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
-        "metadata": false
+        "tex": true,
+        "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-GAUGE-LEDGER-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The paper discusses finite traces and warns against double-counting parameters, but does not yet state the later Route-A density, common scheme map, scale-orbit result or the effective 13/19-coordinate ledger. The old generic statement is not equivalent to integrating those computations.",
+        "assessment": "Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 307,
-            "anchor": "The finite gauge traces are"
+            "line_start": 363,
+            "anchor": "Selected density, relative shape and the remaining amplitude"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 477,
+            "line_start": 585,
             "anchor": "The rows overlap and must not be arithmetically summed"
           }
         ],
-        "remaining_action": "Update the normalization and parameter subsections from the same-source ledger with convention/input accounting. Explain 13/19 as effective profile coordinates, not a zero-input prediction.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "a0614ae32571ae22d39078abed47f418a4d45fb0d03b3dce220120a76534cd79",
         "stale_reasons": []
       }
@@ -3368,30 +3598,30 @@
       "description": "Exact one-dimensional common normalization orbit and zero-anchor obstruction.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
-        "metadata": false
+        "tex": true,
+        "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-GAUGE-LEDGER-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The paper discusses finite traces and warns against double-counting parameters, but does not yet state the later Route-A density, common scheme map, scale-orbit result or the effective 13/19-coordinate ledger. The old generic statement is not equivalent to integrating those computations.",
+        "assessment": "Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 307,
-            "anchor": "The finite gauge traces are"
+            "line_start": 363,
+            "anchor": "Selected density, relative shape and the remaining amplitude"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 477,
+            "line_start": 585,
             "anchor": "The rows overlap and must not be arithmetically summed"
           }
         ],
-        "remaining_action": "Update the normalization and parameter subsections from the same-source ledger with convention/input accounting. Explain 13/19 as effective profile coordinates, not a zero-input prediction.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "a24846826596d87dc67bf26f1521eaaf9df2a7c313776c24a892853f266a3d5d",
         "stale_reasons": []
       }
@@ -3407,30 +3637,30 @@
       "description": "Current effective 13-coordinate non-neutrino and 19-coordinate minimal-neutral profile ledger.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
-        "metadata": false
+        "tex": true,
+        "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-GAUGE-LEDGER-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The paper discusses finite traces and warns against double-counting parameters, but does not yet state the later Route-A density, common scheme map, scale-orbit result or the effective 13/19-coordinate ledger. The old generic statement is not equivalent to integrating those computations.",
+        "assessment": "Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 307,
-            "anchor": "The finite gauge traces are"
+            "line_start": 363,
+            "anchor": "Selected density, relative shape and the remaining amplitude"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 477,
+            "line_start": 585,
             "anchor": "The rows overlap and must not be arithmetically summed"
           }
         ],
-        "remaining_action": "Update the normalization and parameter subsections from the same-source ledger with convention/input accounting. Explain 13/19 as effective profile coordinates, not a zero-input prediction.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "b75c2545c3472d0745519137090e47b01a0b8cca95fa24cef0bae9197be0c80f",
         "stale_reasons": []
       }
@@ -3446,30 +3676,30 @@
       "description": "One-holonomy plus one-scale neutral profile closure, Dirac-only branch and normal-ordering chamber.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
-        "metadata": false
+        "tex": true,
+        "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-NEUTRAL-BRANCH-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The older two-splitting profile and open global branch statement survive, but omit the newer one-holonomy/one-scale neutral refinement and conditional antiunitary branch measure. Those do not establish unique observed-branch selection.",
+        "assessment": "Version 4 imports the U5 holonomy chamber, Majorana compatibility test and supplied scale/nil-boundary assumptions. It explains the U9 equal-weight antiunitary orbit and probability-one conditioning on the selected retarded branch without claiming a unique universal branch. Adopted 4/4/1 and strict 2/6/1 tallies are kept separate.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 349,
+            "line_start": 439,
             "anchor": "Neutral profile"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 558,
-            "anchor": "Neutrino, strong-CP, and branch selection."
+            "line_start": 608,
+            "anchor": "The conditional branch measure"
           }
         ],
-        "remaining_action": "Add the declared U5 and U9 conditional conclusions while retaining the distinction between within-branch reconstruction and selection of the universe's branch.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "8e9ebe682f13d8ec1bb16b728661a6cfcff9c8a6c53b11e4a727fd6b9a2d40a1",
         "stale_reasons": []
       }
@@ -3485,30 +3715,30 @@
       "description": "Antiunitary two-branch invariant measure and retarded conditional q79 selection at the adopted tier.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
-        "metadata": false
+        "tex": true,
+        "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-NEUTRAL-BRANCH-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The older two-splitting profile and open global branch statement survive, but omit the newer one-holonomy/one-scale neutral refinement and conditional antiunitary branch measure. Those do not establish unique observed-branch selection.",
+        "assessment": "Version 4 imports the U5 holonomy chamber, Majorana compatibility test and supplied scale/nil-boundary assumptions. It explains the U9 equal-weight antiunitary orbit and probability-one conditioning on the selected retarded branch without claiming a unique universal branch. Adopted 4/4/1 and strict 2/6/1 tallies are kept separate.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 349,
+            "line_start": 439,
             "anchor": "Neutral profile"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 558,
-            "anchor": "Neutrino, strong-CP, and branch selection."
+            "line_start": 608,
+            "anchor": "The conditional branch measure"
           }
         ],
-        "remaining_action": "Add the declared U5 and U9 conditional conclusions while retaining the distinction between within-branch reconstruction and selection of the universe's branch.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "7b9a420629f047d44605d6f8e47a49602c11be91e23bb55471d15a193a4e4c4c",
         "stale_reasons": []
       }
@@ -3524,30 +3754,30 @@
       "description": "Four-dimensional model-independent Green-Schwarz axion reduction and primitive color anomaly coefficient.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
-        "metadata": false
+        "tex": true,
+        "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-AXION-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The current strong-CP paragraph is a general open boundary and contains none of the three later scoped axion results. The conditional reduction, global-minimum quality bound and hidden-blind direction criterion warrant integration, but do not supply the missing hidden source amplitudes.",
+        "assessment": "Version 4 distinguishes the periodic model-independent Green-Schwarz axion from the flat internal gerbe, states primitive k3=1 at its declared normalization, gives all three nonlinear quality inequalities with convergence and angle assumptions, and explains the hidden-blind rank criterion. Hidden amplitudes, phases, lifting and selection remain open; the illustrative flat hidden case is not substituted for physical HYM data.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 471,
-            "anchor": "Strong CP and branch choice"
+            "line_start": 624,
+            "anchor": "Strong CP: the current and the quality question"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 559,
-            "anchor": "a suppression or relaxation mechanism"
+            "line_start": 664,
+            "anchor": "The multi-axion import supplies a complementary route"
           }
         ],
-        "remaining_action": "Add an explained conditional strong-CP subsection importing the three results and the remaining source payload. Do not describe the quality criterion as a completed physical solution.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "f2b95c1bbbe2452cd687277de9644ee035e112d0e0ac7e5b7b49b8040466e75f",
         "stale_reasons": []
       }
@@ -3563,30 +3793,30 @@
       "description": "Nonlinear global-minimum axion-quality certificate with hidden source payload still open.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
-        "metadata": false
+        "tex": true,
+        "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-AXION-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The current strong-CP paragraph is a general open boundary and contains none of the three later scoped axion results. The conditional reduction, global-minimum quality bound and hidden-blind direction criterion warrant integration, but do not supply the missing hidden source amplitudes.",
+        "assessment": "Version 4 distinguishes the periodic model-independent Green-Schwarz axion from the flat internal gerbe, states primitive k3=1 at its declared normalization, gives all three nonlinear quality inequalities with convergence and angle assumptions, and explains the hidden-blind rank criterion. Hidden amplitudes, phases, lifting and selection remain open; the illustrative flat hidden case is not substituted for physical HYM data.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 471,
-            "anchor": "Strong CP and branch choice"
+            "line_start": 624,
+            "anchor": "Strong CP: the current and the quality question"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 559,
-            "anchor": "a suppression or relaxation mechanism"
+            "line_start": 664,
+            "anchor": "The multi-axion import supplies a complementary route"
           }
         ],
-        "remaining_action": "Add an explained conditional strong-CP subsection importing the three results and the remaining source payload. Do not describe the quality criterion as a completed physical solution.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "f5ef2463010c80e53cf8b35ab9fd8aeeb5d87c5e17132a8be25c8374cc4b6719",
         "stale_reasons": []
       }
@@ -3602,30 +3832,30 @@
       "description": "Fu-Yau multi-axion lower bound, hidden-blind QCD-direction criterion and remaining same-source cutset.",
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
-        "tex": false,
-        "metadata": false
+        "tex": true,
+        "metadata": true
       },
-      "manuscript_integration": "addition_needed",
+      "manuscript_integration": "integrated",
       "contextual_review": {
         "id": "SM-AXION-20260912",
-        "state": "addition_needed",
+        "state": "integrated",
         "reviewed_at": "2026-09-12",
         "reviewer": "Codex contextual consolidation",
-        "assessment": "The current strong-CP paragraph is a general open boundary and contains none of the three later scoped axion results. The conditional reduction, global-minimum quality bound and hidden-blind direction criterion warrant integration, but do not supply the missing hidden source amplitudes.",
+        "assessment": "Version 4 distinguishes the periodic model-independent Green-Schwarz axion from the flat internal gerbe, states primitive k3=1 at its declared normalization, gives all three nonlinear quality inequalities with convergence and angle assumptions, and explains the hidden-blind rank criterion. Hidden amplitudes, phases, lifting and selection remain open; the illustrative flat hidden case is not substituted for physical HYM data.",
         "locations": [
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 471,
-            "anchor": "Strong CP and branch choice"
+            "line_start": 624,
+            "anchor": "Strong CP: the current and the quality question"
           },
           {
             "source_ref": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex",
-            "line_start": 559,
-            "anchor": "a suppression or relaxation mechanism"
+            "line_start": 664,
+            "anchor": "The multi-axion import supplies a complementary route"
           }
         ],
-        "remaining_action": "Add an explained conditional strong-CP subsection importing the three results and the remaining source payload. Do not describe the quality criterion as a completed physical solution.",
-        "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+        "remaining_action": "",
+        "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
         "result_sha256": "028ead7223c7facaa7e7dd3035c31a719698c5cb095bed4c1776b281579c0e42",
         "stale_reasons": []
       }
@@ -5699,10 +5929,27 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COHESIVE-ENDPOINT-IMPORT-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual editorial integration",
+        "assessment": "The manuscript imports the exact dependency organization into GAS, SYN and BV4 and identifies shared-line calculus and Galerkin/Feshbach execution as derived arrows. It states explicitly that three structured packet types are not three scalar parameters and that complete physical source acceptance remains open.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 1541,
+            "anchor": "The later endpoint-factorization record organizes seven acceptance rows"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+        "result_sha256": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "eta9_three_cycle_full_coverage",

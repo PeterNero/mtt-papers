@@ -2,14 +2,14 @@
 abstract: |
   This paper audits the strongest currently reproducible connection between Modal Triplet Theory (MTT) and the Standard Model (SM). The result is substantial but tiered. At the exact finite-structure tier, released calculations provide a 27-dimensional qutrit–Weyl carrier, the faithful gauge action $`(\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_6`$, a three-family chiral representation with all local and global gauge anomalies cancelled, a completed finite real-even geometry, and a rank-four one-Higgs projection inside its rank-twelve raw scalar fluctuation space. At the profile tier, an explicit $`96\times96`$ finite Dirac operator contains the accepted charged and neutral Yukawa matrices; CKM, Higgs, threshold, and precision packets have executable provenance and pass their declared audits. At the embedded-equivalence tier, the selected branch reproduces the same renormalized SM action, parameter point, scheme, and perturbative observable functor, with twelve of twelve declared obligations verified.
 
-  This is not a zero-parameter derivation of the measured SM. The adopted closure standard allows one shared electroweak primitive and measured renormalized profile coordinates downstream. In particular, the finite carrier and gauge representation do not by themselves select Yukawa singular values, mixing matrices, absolute neutrino data, the strong-CP mechanism, or a unique observed branch. We state the exact reconstruction theorem, prove a family-intertwiner nonselection result, explain the distinct roles of the $`27\times27`$ and $`96\times96`$ matrices, give a parameter and provenance ledger, and isolate the remaining source theorems needed for strict no-knob Standard-Model closure.
+  This is not a zero-parameter derivation of the measured SM. The adopted closure standard allows one shared electroweak primitive and measured renormalized profile coordinates downstream. In particular, the finite carrier and gauge representation do not by themselves select Yukawa singular values, mixing matrices, absolute neutrino data, the strong-CP mechanism, or a unique observed branch. We state the exact reconstruction theorem, prove a family-intertwiner nonselection result, explain the distinct roles of the $`27\times27`$ and $`96\times96`$ matrices, give a parameter and provenance ledger, and isolate the remaining source theorems needed for strict no-knob Standard-Model closure. Later same-source imports reduce the effective non-neutrino profile to thirteen coordinates, excluding QCD theta, and the minimal neutral extension to nineteen. These counts include empirical inputs and are not prospectively validated parameter predictions. Conditional neutral-holonomy, branch-measure and axion-quality results specify more precisely which selections are still required.
 author:
 - Peter Nero
-current_version: v3
-date: July 2026, Version 3
-generated_from_main_tex_sha256: 33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536
+current_version: v4
+date: September 2026, Version 4
+generated_from_main_tex_sha256: f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550
 paper_id: modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v3
 title: |
   From Modal Triplet Theory to a Standard-Model Sector
@@ -18,6 +18,23 @@ zenodo_doi: 10.5281/zenodo.21720135
 zenodo_record_id: 21720135
 zenodo_url: "https://zenodo.org/records/21720135"
 ---
+
+# Version 4 Revision Note
+
+Supersedes.
+Version 3 of this paper; the earlier released PDF remains a separate edition.
+
+Reason.
+The reconstruction was already in place, but its normalization, parameter, neutral and strong-CP discussions did not include the later accepted source results.
+
+Resolution.
+Add scoped imports of the finite gauge spectra and common-scale obstruction, positive gauge density, one-anchor coupling map, thirteen/nineteen-coordinate ledger, neutral holonomy and conditional branch measure, and the Green–Schwarz axion and quality criteria. Explain the finite Cech and rank-two HYM witnesses without transferring them to the physical visible rank-three bundle.
+
+Retained result.
+The finite-carrier, anomaly, Higgs, reconstruction and family-intertwiner results are unchanged. No source proof is duplicated and no numerical artifact is refitted.
+
+Open boundary.
+Independent physical value selection, a common visible–hidden endpoint, global branch uniqueness, the nonperturbative axion payload and interacting QFT completion remain separate from the adopted profile closures.
 
 # Version 3 Revision Note
 
@@ -194,6 +211,19 @@ There are four $`\mathrm{SU}(2)`$ doublets per family after color multiplicity a
 
 </div>
 
+## What the finite gauge spectra add
+
+Representation content and a kinetic operator answer different questions. The released gauge-spectrum packets supply the latter on the nine-state finite base $`\mathbb F_3^2`$, with eigenvalues $`0,g,2g`$ of multiplicities $`1,4,4`$ and $`g\simeq4.386490844928604`$ in the packet’s selected units. Tensoring the base operator with the adjoint, and using the selected unitary transport $`U`$ for the weak sector, gives
+``` math
+\begin{equation}
+\Delta_2^{\rm fin}=U(\Delta_{\mathbb F_3^2}\otimes I_3)U^{-1},\qquad
+\Delta_3^{\rm fin}=\Delta_{\mathbb F_3^2}\otimes I_8.
+\end{equation}
+```
+The weak multiplicities are $`(3,12,12)`$ and the color multiplicities are $`(8,32,32)`$. For color the admitted background is central and hence acts trivially in the adjoint. These are finite-dimensional exactness statements, not zero-error truncations of an arbitrary continuum HYM operator. In particular, $`U`$ is an operator in the transport-closed quotient; raw multiplication in a twenty-seven-mode Fourier truncation is not its substitute.
+
+The two packets close the ten-row finite spectral family. Their common base spectrum also proves an obstruction: this family alone produces a common renormalization-scale shift, not an independent nonuniversal threshold shape. The combined gauge/ghost indices are $`-22/3`$ and $`-11`$; multiplying an additional continuum ghost determinant into those already combined indices would double count without a new factorization theorem. The later positive-density construction below adds genuinely different operator information rather than reopening these spectral rows .
+
 # Finite Geometry and the Higgs Module
 
 ## A no-go result and its minimal completion
@@ -259,6 +289,42 @@ k_Y:k_2:k_3=10:6:6,
 ```
 which become $`6:6:6`$ after the conventional $`5/3`$ hypercharge normalization. This supplies a finite normalization relation. It does not determine the observed gauge couplings without a four-dimensional Dirac geometry, cutoff moments, canonical field normalization, a matching scale, and renormalization-group transport. Those distinctions are standard in the spectral action framework .
 
+## Selected density, relative shape and the remaining amplitude
+
+The later Route-A source supplies response operators $`I+Z`$ and $`I+X`$. Their Gram map $`G(M)=MM^\dagger`$ gives positive, basis-covariant densities
+``` math
+\begin{equation}
+\begin{aligned}
+\Phi_u=\Phi_e&=G(I+Z),&\Phi_d=\Phi_N&=G(I+X),\\
+\Phi_Q=\Phi_L&=G(I+Z)+G(I+X).
+\end{aligned}
+\end{equation}
+```
+Both right-hand densities have spectrum $`(1,1,4)`$ and trace six; the left trace is twelve. Together with the admitted heat-shadow and finite-action rules, this yields the relative gauge-action shape
+``` math
+\begin{equation}
+\widehat K=K/K_2=(1.9568437044693519,\ 1,\ 0.3098373950028702).
+\end{equation}
+```
+This is a source-owned result at the declared corpus-action tier. It is not a derivation of the proper-time/action premise from primitive MTT. Nor should these density-weighted coefficients be confused with the unweighted traces $`10:6:6`$ above.
+
+In the normalized convention the coupling map is
+``` math
+\begin{equation}
+g_i^{-2}=c\widehat K_i,\qquad c=6f_0,
+\qquad g_1=\sqrt{5/3}\,g_Y.
+\end{equation}
+```
+Here $`f_0`$ denotes the common spectral-action amplitude in that convention. Supplying only $`g_2=0.6475986707537685`$ fixes $`c=2.3844493555491852`$ and gives
+``` math
+\begin{equation}
+g_1=0.46294338085858994,\qquad g_3=1.1634267159672989.
+\end{equation}
+```
+At the frozen SMDR scheme and scale, the correlated two-coordinate statistic is $`\chi^2=5.725295700053512\times10^{-6}`$. This is a close compatibility check, not held-out evidence: the comparison profile was known while the shape construction was developed. A frozen no-retuning ratio test is available for future independent data.
+
+The unresolved amplitude is exactly one dimensional within this map. Replacing $`c`$ by $`a c`$, $`a>0`$, sends every $`g_i`$ to $`a^{-1/2}g_i`$ and leaves all ratios unchanged. Normalizing a Born probability or a filter measure does not select this action amplitude. In particular, $`P_{\rm EW}=0.0685013467625`$ is a different typed quantity and cannot replace $`c`$ in the kinetic term. A zero-anchor extension must supply a common-convention modal action, twistor-action amplitude, or spectral-action measure that fixes $`c`$ independently. The three normalization packets establish these imports and the scope of the scale obstruction .
+
 # Where the Numerical Values Enter
 
 The renormalized SM action can be written schematically as
@@ -287,7 +353,17 @@ The CKM packet contains three selected profile rows and a declared uncertainty c
 
 ## Neutral profile
 
-The current neutral execution uses a normal-ordering Dirac profile with lightest mass set to zero. Two measured mass-squared splittings calibrate two neutral coordinates and emit the corresponding mass, Yukawa, and mixing rows. Absolute mass, ordering, Dirac-versus-Majorana ontology, and the source of those calibration coordinates are separate questions. The finite operator is complete at this declared profile, while strict neutral source selection remains open.
+The original neutral execution used two measured mass-squared splittings and a declared zero lightest mass. The later U5 import reparameterizes those two coordinates as one central holonomy $`\phi`$ and one atmospheric mass-squared scale. It is a structural refinement, not a reduction from two empirical inputs to one .
+
+For $`\zeta_3=e^{2\pi i/3}`$, the retained holonomy is
+``` math
+\begin{equation}
+H_\nu(\phi)=e^{i\phi}\operatorname{diag}(1,\zeta_3,\zeta_3^2).
+\end{equation}
+```
+If the neutral action preserves this holonomy, a Majorana entry can survive $`H_\nu^T M_MH_\nu=M_M`$ only when the corresponding eigenvalue product is one. Thus all Majorana entries vanish away from the self-conjugate values $`\phi=0,\pi/3`$ modulo the shape period. The accepted profile $`\phi=0.02619638630300379`$ avoids those values and lies in the normal-ordering chamber $`0<|\phi|<\pi/6`$ of the selected neutral spectrum. Its conjugate $`-\phi`$ has the same sorted masses, with the low-family labels exchanged.
+
+Consequently Dirac character and normal ordering are fixed *within this admitted holonomy-preserving profile*. They are no longer additional arbitrary ontology choices inside that profile. The nil minimal-trace boundary $`m_{\rm lightest}=0`$, the holonomy value, the absolute scale and the right-handed basis convention remain declared inputs or source conditions. The resulting thirty-six mass, Yukawa and matrix rows are closed at the one-holonomy/one-scale tier. Selecting those inputs from the physical source remains open.
 
 ## Electroweak normalization and Higgs row
 
@@ -369,20 +445,79 @@ Finite carrier, gauge group, anomalies, algebra completion, Higgs projector & St
 Shared $`P_{\mathrm{EW}}`$ & One admitted physical primitive & Counted once across electroweak and direct Higgs/threshold rows; its zero-primitive source remains open.
 Charged Yukawa and Higgs values & Profile replay & Measured/common-scale coordinates are accepted downstream; their exact matrix evaluation is not source prediction.
 CKM & Certified prediction profile & Three selected rows with uncertainty comparison; a complete no-knob flavor source theorem is stronger.
-Neutrino sector & Two-splitting profile & Two measured splittings plus declared normal-ordering, Dirac, and lightest-mass assumptions; absolute source and ontology remain open.
+Neutrino sector & One-holonomy/one-scale profile & Dirac character and normal ordering follow within the retained profile; its holonomy, scale and nil boundary remain source conditions.
 Precision outputs & Multi-loop profile transport & Fifteen declared source coordinates are transported to eight outputs; source correlations and held-out prediction are separate tests.
-Strong CP and branch choice & Open/partial & No selected suppression mechanism or unique global observed-branch measure is established.
+Strong CP and branch choice & Conditional imports & The two-point conditional measure is fixed; global uniqueness and the selected nonperturbative axion-quality payload remain open.
 
 </div>
 
 </div>
 
-The rows overlap and must not be arithmetically summed as independent knobs. The defensible global statement is simpler: at the adopted equivalence tier, measured renormalized SM coordinates remain admissible inputs. Therefore the current result does not establish fewer empirical parameters than the SM. “One shared primitive” means one upstream electroweak primitive within this architecture; it does not mean one free parameter for all observed particle physics.
+The rows overlap and must not be arithmetically summed as independent knobs. The later deduplicated ledger does give an effective count at the adopted standard :
+``` math
+\begin{equation}
+\underbrace{1}_{\text{gauge anchor}}+
+\underbrace{9}_{\text{charged magnitudes}}+
+\underbrace{1}_{\text{CKM phase}}+
+\underbrace{1}_{\text{EW scale}}+
+\underbrace{1}_{P_{\rm EW}}=13.
+\end{equation}
+```
+QCD theta is excluded from this count. Relative to the previous eighteen-coordinate non-neutrino profile, the common gauge shape replaces two relative coupling coordinates and the three accepted CKM-angle prediction profiles replace three more. The CKM phase is *not* removed: the q79 phase comparison has a $`2.213743629348511`$ degree residual and remains a contact/postcheck, separate from the much closer three-angle comparison above.
+
+The minimal neutral extension adds three mixing angles, one Dirac CP phase, one holonomy shape and one mass scale, giving nineteen coordinates in total. This is an effective model-coordinate reduction at a specified profile standard, not five independently confirmed predictions and not a no-input parameter count. The SMDR fifteen-source vector is a transport input chart, not another fifteen independent fundamental parameters to add to this ledger. “One shared primitive” refers to the upstream electroweak/Higgs object, not to the total freedom of observed particle physics.
+
+## The conditional branch measure
+
+The U9 import considers the selected two-point antiunitary orbit $`\{q79/F/m1,q369/F^*/m2\}`$. Antiunitary invariance and normalization force equal weights $`1/2`$. Conditioning on the independently specified retarded singleton then gives probability one for q79; the advanced condition gives its conjugate . This introduces no new continuous parameter. The shared compact phase circle is not identified with Lorentzian time by that conditioning.
+
+This small probability space must not be substituted for the space of every admissible MTT carrier. The full carrier domain, quotient, measurable structure, selected measure or coercive action, and existence/support result remain to be constructed. U5 and U9 are therefore closed at their adopted profile/conditional-orbit tiers while remaining open as strict source/global statements. The later adopted upgrade tally is four closed, four partial and one dependency-blocked; the stricter tally remains two, six and one.
+
+## Strong CP: the current and the quality question
+
+The $`E_6`$ branching $`27=16_1\oplus10_{-2}\oplus1_4`$ gives a useful negative check. With $`\mathcal A_3=\sum 2T(R)Q_\psi`$ including multiplicities, three light matter families contribute $`+12`$, while the colored partners contribute $`-12`$. The complete representation has zero anomaly. Discarding the partners does not by itself select a surviving anomalous Peccei–Quinn current; threshold anomaly matching must be accounted for .
+
+The independent candidate is the model-independent Green–Schwarz axion, the periodic scalar dual of the spacetime two-form. In the source normalization it is $`\theta_{\rm MI}=2\pi\int_{X_6}B_6`$, with period $`2\pi`$, and $`a_{\rm MI}=f_{\rm MI}\theta_{\rm MI}`$. It is not the flat order-three internal gerbe. The conditional reduction gives the primitive color term $`-\theta_{\rm MI}k_3c_2(F_c)`$ with $`k_3=1`$, and hence domain-wall number one for this primitive single-axion coupling. Its kinetic normalization still depends on the ten-dimensional action, volume and coupling. Neither the anomaly index nor the reduction formula selects a physical axion scale by itself.
+
+There is now a nonlinear sufficient quality test, not just an appeal to a small extra potential. Write
+``` math
+\begin{equation}
+V(\theta)=\chi_{\rm QCD}[1-\cos(\theta+\bar\theta)]
+-\sum_j\Lambda_j^4\cos(n_j\theta+\delta_j).
+\end{equation}
+```
+Set $`M_0=\sum_j\Lambda_j^4`$ and $`M_k=\sum_j|n_j|^k\Lambda_j^4`$ for $`k=1,2`$. Assume the periodic perturbation is twice differentiable, the displayed sums converge, $`\chi_{\rm QCD}>0`$ and $`0<\epsilon<\pi/2`$. The imported criterion is
+``` math
+\begin{equation}
+\begin{aligned}
+M_1&<\chi_{\rm QCD}\sin\epsilon,&
+M_2&<\chi_{\rm QCD}\cos\epsilon,\\
+2M_0&<\chi_{\rm QCD}(1+\cos\epsilon).
+\end{aligned}
+\end{equation}
+```
+It places the unique global minimum modulo $`2\pi`$ within $`\epsilon`$ of the CP-conserving point. The bounds control the derivative, curvature and competing far minimum respectively; they do not assume a linearized small-angle solution. The missing physical input is the same-source non-QCD harmonic/amplitude table, including hidden-gauge and wrapped-brane contributions. A topological anomaly calculation cannot bound those amplitudes.
+
+The multi-axion import supplies a complementary route. For the admitted principal $`T^2`$ bundle over K3 with real Chern-class span of rank $`r=1`$ or $`2`$, the pre-lifting count is $`b_2(X_6)=22-r`$, so there are at least twenty model-dependent candidates in addition to the universal mode. This is not a count of light physical axions. For $`N`$ surviving real directions, non-QCD charge matrix $`K_{\rm nq}`$ and QCD row $`k_{\rm QCD}`$, a direction blind to the former but not the latter exists precisely when
+``` math
+\begin{equation}
+\operatorname{rank}K_{\rm nq}<N,\qquad
+\operatorname{rank}\begin{pmatrix}K_{\rm nq}\\ k_{\rm QCD}\end{pmatrix}
+>\operatorname{rank}K_{\rm nq}.
+\end{equation}
+```
+The illustrative hidden-flat case cannot be silently imposed on the selected nonflat hidden HYM bundle. The actual coupling lattice, gauged/lifted quotient and instanton zero modes still have to be emitted together. These results make the strong-CP target precise, but do not close it .
+
+## What the geometric support witnesses do establish
+
+The reconstruction also uses scoped tests of the mathematical machinery. The finite $`\mathbb F_3^2`$ Cech witness gives eighty-one cocycle entries with vanishing curvature and the selected central phase. Separately, the rank-two scalar HYM calculation is a contraction in a zero-mean Wiener ball on $`T^4`$: at radius $`r=0.01`$, $`Y=0.005476265398865539`$ and $`Z(r)=0.3850761192575742`$ satisfy $`Y+Z(r)r=0.00932702659144128<r`$ and $`Z(r)<1`$. Gaussian Fourier tails and an explicit roundoff envelope are included. The result gives existence and uniqueness in that ball, with the stated transition-law patching .
+
+These are genuine finite-cocycle and rank-two analytic witnesses. They do not evaluate the full analytic Deligne obstruction of a varying q79 spectral cover, prove global uniqueness outside the Wiener ball, or supply the physical rank-three visible bundle and its same-source rank-nine partner. Their construction details belong to the geometry/Flux source; here they explain why a successful support calculation and an open physical endpoint can coexist without contradiction.
 
 <!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Reproducibility and Result Ownership
 
-The calculations cited here are curated at commit `31247ebb5c22` of the public [MTT results repository](https://github.com/PeterNero/mtt-results-repro/tree/31247ebb5c22f3fbb5443024365433c6ee0bff4a). The repository binds each result identifier to an authority row, source artifact, hash, and verification tier. The most relevant entries are:
+The calculations cited here are curated at commit `f141a20ea23c` of the public [MTT results repository](https://github.com/PeterNero/mtt-results-repro/tree/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7). The repository binds each result identifier to an authority row, source artifact, hash, and verification tier. The most relevant entries are:
 
 - **Discrete carrier.** `qutrit_weyl_27_matrix` is the exact sparse $`27\times27`$ Weyl left action.
 
@@ -400,12 +535,23 @@ The calculations cited here are curated at commit `31247ebb5c22` of the public [
 
 - **Global scope.** `final_12_of_12_audit` closes declared-standard embedded equivalence; `strict_upgrade_ledger` records the stronger open no-knob and foundational program.
 
+- **Gauge spectra and action.**
+  `su2_finite_gauge_spectrum`, `su3_finite_gauge_spectrum`,
+  `sm_gauge_density_source_promotion`, `sm_gauge_common_scheme_map`, and `sm_gauge_scale_orbit_nogo` separate finite spectra, density-weighted shape and the common kinetic anchor.
+
+- **Refined bookkeeping.**
+  `sm_minimal_parameter_ledger`, `sm_neutral_u5_tier_decision`, and `sm_branch_u9_conditional_measure` state the effective counts and adopted neutral/branch closures; the historical strict ledger is not relabeled by them.
+
+- **Strong-CP reductions.** `e6_qpsi_qcd_anomaly`, `sm_axion_gs_reduction`, `sm_axion_quality_bound`, and `sm_multiaxion_superset` supply the current, coupling and quality criteria, not the missing physical instanton amplitudes.
+
+- **Geometric support.** `literal_cech_witness` and `hym_wiener_contraction` are the finite-cocycle and certified rank-two witnesses, not the visible rank-three endpoint.
+
 Reproduction should start from those released artifacts, not from historical status sentences in the development corpus. The current authority ledger is deliberately stronger than search order: an old file containing “open” or “closed” does not override the selected row and hash.
 <!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 # Relation to Standard Approaches
 
-The ordinary renormalized SM specifies the field representations and treats its masses, mixings, couplings, Higgs parameters, and CP data as measured renormalized coordinates. The present MTT program adds an explicit finite carrier and a selected structural route to the same representation. That is a meaningful reduction of structural arbitrariness, especially for the anomaly-free shared circle, finite-algebra completion, and one-Higgs submodule. It is not yet a reduction of all empirical parameter freedom.
+The ordinary renormalized SM specifies the field representations and treats its masses, mixings, couplings, Higgs parameters, and CP data as measured renormalized coordinates. The present MTT program adds an explicit finite carrier and a selected structural route to the same representation. That is a meaningful reduction of structural arbitrariness, especially for the anomaly-free shared circle, finite-algebra completion, and one-Higgs submodule. The effective thirteen/nineteen coordinate ledger additionally records a declared profile reduction. Independent prospective validation of those reductions, and selection of the remaining empirical values, are stronger questions.
 
 Almost-commutative spectral geometry is the closest established mathematical comparison. It also encodes the SM representation and Higgs field through a finite algebra and Dirac operator, and the spectral action produces the corresponding bosonic operator content . The MTT calculation differs by adding the $`27`$-dimensional Weyl carrier, q79/proto-spinor source constraints, and a tiered same-source program. At present it shares the familiar limitation that finite Dirac entries and absolute action normalization require additional input or selection.
 
@@ -423,13 +569,15 @@ The remaining frontier is short enough to state without reopening solved finite 
 
 4.  **Interacting quantum completion (B.QFT.02).** Supply the geometry-selected nonperturbative gauge–BRST completion or controlled regulator limit and its physical state.
 
-5.  **Neutrino, strong-CP, and branch selection.** Select the absolute neutrino data and ontology, a suppression or relaxation mechanism for $`\bar\theta`$, and the global observed branch.
+5.  **Strict neutral, strong-CP, and global branch sources.** Select the neutral holonomy, scale and nil boundary independently; fill the nonperturbative axion-quality and coupling-lattice payload; and define the global carrier space and selection measure. Do not reopen the holonomy-preserving Dirac/ordering result or the finite conditional branch measure.
 
 The program is falsifiable at several levels. A failed exact replay of the released finite packets would invalidate the corresponding structural claim. A proof that the selected projector is not compatible with the full upper action would invalidate the one-Higgs source interpretation. A future source emitter that uses measured targets in its construction would remain a replay, not a prediction. Finally, a held-out parameter or observable outside the certified uncertainty region would refute that proposed no-knob source law without undoing the exact representation theory.
 
 # Conclusion
 
 The current MTT-to-SM result is neither the old speculative bundle dictionary nor a completed parameter-free theory. It is a reproducible, layered construction. The discrete $`27`$-carrier, native gauge group, three-family anomaly-free representation, finite-algebra completion, and one-Higgs projector are genuine finite structural results. The $`96\times96`$ Dirac operator, Yukawa and neutrino entries, CKM profile, and precision transport are executable at explicitly declared profile tiers. Together they establish embedded renormalized-SM equivalence at the one-shared-physical-primitive/profile standard.
+
+The later imports replace a generic parameter warning by an explicit thirteen-coordinate non-neutrino and nineteen-coordinate minimal-neutral ledger, excluding QCD theta. They also close the declared neutral and two-branch conditional problems and identify exact tests for the strong-CP mechanism. Their assumptions explain both the progress and why a selected universe with independently predicted values is still a stronger target.
 
 The remaining scientific leap is not to recompute those matrices again. It is to construct the same-source value functional and upper action that select the admitted profile before empirical comparison. That boundary is now explicit, testable, and narrow enough to guide the next work.
 
@@ -447,6 +595,18 @@ E. Witten, “An $`SU(2)`$ Anomaly,” *Phys. Lett. B* **117** (1982) 324–328
 
 S. P. Martin and D. G. Robertson, “Standard Model Parameters in the Tadpole-Free Pure $`\overline{\mathrm{MS}}`$ Scheme,” *Phys. Rev. D* **100** (2019) 073004, [arXiv:1907.02500](https://arxiv.org/abs/1907.02500).
 
-P. Nero, “MTT Results Reproducibility Capsule,” commit `31247ebb5c22`, <https://github.com/PeterNero/mtt-results-repro>.
+P. Nero, “MTT Results Reproducibility Capsule,” commit `f141a20ea23c`, <https://github.com/PeterNero/mtt-results-repro>.
+
+P. Nero, selected finite weak/color gauge-spectrum certificates, frozen in Ref. , entries `su2_finite_gauge_spectrum` and `su3_finite_gauge_spectrum`.
+
+P. Nero, selected positive-density promotion, common-scheme coupling map and scale-orbit obstruction, frozen in Ref. , entries `sm_gauge_density_source_promotion`, `sm_gauge_common_scheme_map`, `sm_gauge_scale_orbit_nogo`.
+
+P. Nero, post-A89 minimal parameter ledger, frozen in Ref. , entry `sm_minimal_parameter_ledger`.
+
+P. Nero, neutral U5 tier decision and conditional U9 measure, frozen in Ref. , entries `sm_neutral_u5_tier_decision` and `sm_branch_u9_conditional_measure`.
+
+P. Nero, $`E_6`$ current audit and conditional Green–Schwarz axion/quality reductions, frozen in Ref. , entries `e6_qpsi_qcd_anomaly`, `sm_axion_gs_reduction`, `sm_axion_quality_bound`, and `sm_multiaxion_superset`.
+
+P. Nero, finite Cech witness and certified rank-two HYM contraction, frozen in Ref. , entries `literal_cech_witness` and `hym_wiener_contraction`; interpreted in the Flux compactification audit.
 
 </div>

@@ -1,4 +1,42 @@
-# Version 1 Provenance Audit
+# Cohesive Source Revision Audit
+
+## Version 3 Contextual Integration Delta
+
+Date: 2026-09-12. Supersedes local v2; no release authorized.
+
+- Import the six additional physical residuals, their derivatives, target spaces,
+  incidence matrix, 25-block/10,404-position support and 2,688-position correction.
+  Explain allowed support versus numerical coefficients and a full-rank fiber
+  versus the form-augmented infinite-dimensional Hilbert space.
+- Import the conditional E[3] character reduction to 1,548 positions without
+  replacing the unconditioned support or inventing physical character data.
+- Correct the projection theorem: residual pullback through an isometric embedding
+  implies compressed Hessian equality, not ambient intertwining. Add the adjoint
+  compatibility condition and an explicit two-dimensional counterexample. Onto
+  unitary equivalence and reducing projections retain the original conclusion.
+- Carry the same distinction into the master composition theorem: a reducing
+  quadratic projector does not automatically intertwine nonlinear repair or all
+  graph vertices. State those extra hypotheses explicitly, and require smooth
+  source/metric data for an all-orders jet instead of only two derivatives.
+- Explain the bounded transported-metric theorem, distortion commutators and
+  polar product obstruction; do not identify an arbitrary BHT equivalence with
+  a physical unitary map.
+- Spell out the local Hilbert equalizer and projector compatibility already used
+  by nonlinear descent. Keep outcome selection distinct.
+- Import the seven-row dependency factorization through GAS, SYN and BV4. These
+  are structured source types, not three scalar fitting parameters.
+- Retain the later hidden-carrier/HYM progress in Flux rather than importing the
+  old candidate-status flags from the August residual artifact as current.
+
+Sources are frozen at mtt-results-repro commit
+f141a20ea23c5c3ff19cc2161c0e226e29ade8a7. Exact result hashes and manuscript
+locations are in the contextual integration registry. No long research
+calculation is rerun. All previous version notes below are historical provenance.
+
+Artifact review: the v3 PDF compiled without warnings. All 25 pages were
+rendered and visually inspected on 2026-09-12. The current metadata abstract is
+plain text. The review registry binds twelve assigned result imports to this
+exact manuscript; the remaining assigned source families are still unreviewed.
 
 ## September 2026 Current-Version Delta (v2)
 

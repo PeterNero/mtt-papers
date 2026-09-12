@@ -1,4 +1,33 @@
-# From MTT to a Standard-Model Sector v3 Release Audit
+# From MTT to a Standard-Model Sector Revision Audit
+
+## Version 4 Contextual Integration Delta
+
+Date: 2026-09-12. Supersedes the local authoring version v3; published DOI
+`10.5281/zenodo.21720135` remains unchanged. No Zenodo action is authorized.
+
+The 14 reviewed additions are now imported in the main argument, not merely listed
+as identifiers. The frozen result source is
+`f141a20ea23c5c3ff19cc2161c0e226e29ade8a7`. No scientific artifact is recalculated or
+promoted by this editorial operation.
+
+| Cluster | Contextual resolution | Boundary preserved |
+|---|---|---|
+| SU2/SU3 finite spectra | Explain the nine-state base, adjoint multiplicities, exact quotient, combined ghost index and common-scale obstruction. | Finite exactness is not an arbitrary continuum truncation certificate; no second ghost factor is inserted. |
+| Positive density and common gauge scheme | State Gram densities, density-weighted shape, normalized coupling map, one-anchor numbers and known-profile comparison. | P_EW is not the kinetic coefficient; probability normalization does not fix action amplitude; prospective test has not occurred. |
+| Effective parameter ledger | Give the explicit 1+9+1+1+1=13 count and six-coordinate neutral extension to 19. | QCD theta excluded; effective profile count is not an independently validated no-input reduction. CKM phase remains a coordinate. |
+| Neutral U5 and branch U9 | Explain the holonomy-preserving Majorana gate, selected ordering chamber and two-point conditional measure. | Strict source values, nil boundary and global carrier measure remain open; compact phase is not Lorentzian time. |
+| E6 and axion family | Retain the +12/-12 matter/exotic cancellation; distinguish the universal Green-Schwarz shift current; state quality inequalities and hidden-blind rank criterion. | The flat gerbe is not the continuous axion. Hidden-flat examples do not select the nonflat hidden bundle. Instanton amplitudes and lifted quotient are absent. |
+| Cech and rank-two HYM witnesses | Give finite cocycle scope and the certified Wiener radius, residual and contraction numbers. | No rank-three visible transfer, global analytic Deligne decision or uniqueness outside the certified ball. |
+
+The existing formal definitions, gauge-content proposition, reconstruction theorem,
+family-intertwiner theorem and their proofs are retained. New imports are explanatory
+subsections with source references, not duplicated theorem bodies. The historical
+v3 audit below remains provenance. The 16-page PDF compiled without warnings;
+all pages were rendered and visually inspected on 2026-09-12. The metadata abstract
+is plain text. All thirty assigned results now have current source-bound contextual
+reviews; one is historical provenance rather than an additional theorem.
+
+## Historical Version 3 Audit
 
 ## Selected revision
 

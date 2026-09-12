@@ -14,20 +14,21 @@
     },
     "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows": {
       "status": "reviewed",
-      "reviewed_on": "2026-09-11",
-      "note": "Version 1 is a new canonical theorem-owner paper. It derives the covariant residual Hessian, exact-zero normal square, repair flow, tangent Hodge semigroup, cohesive twist cancellation, Maurer-Cartan repair, Hodge/Green/kernel package, nonlinear Cech descent, compatible projection, and complete repair jet in one standalone explanatory chain. It includes the nonzero-defect correction, the exact stratified Green blow-up witness, and a theorem-level separation of positive repair from signed physical action through Helmholtz, multiplier, and cyclic-action results. It applies the chain only to the q79 Hartshorne-Serre cohesive benchmark, keeps physical V3/W9 selection, HYM metric, full action, Lorentzian domains, and continuum-to-finite transport open, includes reproducibility references and a version-provenance audit, and the complete 21-page PDF was visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
-      "reviewed_main_tex_sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30",
-      "reviewed_pdf_sha256": "2dfeedea800ffb22c112640c7863981b87e4bee700d020e8311d71148134eeee",
-      "reviewed_source_tree_sha256": "d5d291ac864599bfa9983bd964690f8b3f59dd0ef98aae70431883a20075406e",
+      "reviewed_on": "2026-09-12",
+      "note": "Version 3 integrates the explicit six-row residual, 25-block rank-102 compiler, conditional 1548-position symmetry count, transported-metric test and GAS/SYN/BV4 dependency factorization. It corrects an overbroad embedded-isometry claim by distinguishing pullback from reducing operator intertwining, with an explicit counterexample and the needed adjoint hypothesis. Existing structural theorems and later Flux hidden-carrier/HYM advances are retained. All 25 PDF pages were rendered and visually inspected; compilation has no warnings. No public release or physical-source promotion is implied.",
+      "reviewed_main_tex_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "reviewed_pdf_sha256": "b92af710d4f0cfaa2a4cc27163eb56aad3ad5da463ad17b937d443c0ed47c062",
+      "reviewed_source_tree_sha256": "6b47e4fac0fbb1d4d4029302e1eafd27776af27698c3997c7473d8f50e2eb030",
       "release_authorized": false
     },
     "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-31",
-      "note": "Version 3 replaces the earlier full-derivation narrative with a tiered and reproducible Standard-Model-sector synthesis. It separates exact finite structure, profile replay, embedded equivalence, and strict no-knob prediction; distinguishes the 27-dimensional qutrit-Weyl carrier from the 96-dimensional physical finite Dirac operator; records the native gauge quotient, three-family anomaly cancellation, finite-triple completion, and selected one-Higgs projector; proves the family-intertwiner nonselection boundary; states the charged, neutral, CKM, electroweak, Higgs, threshold, and precision rows at their actual tiers; gives a non-overcounting parameter ledger and explicit falsifiers; and the complete 11-page PDF was visually inspected.",
-      "reviewed_main_tex_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
-      "reviewed_pdf_sha256": "6ff5a20aafa517d8332accf5dc3ea377db8736407310202e3897d906105e05e9",
-      "reviewed_source_tree_sha256": "89c8356518d1e2c170e98bad61836912c8f1c5ba294c1e992276c05488053197"
+      "reviewed_on": "2026-09-12",
+      "note": "Version 4 retains the reconstruction and family-intertwiner theorems and contextually integrates all fourteen queued SM results. It explains gauge spectra and density, common normalization with one anchor, the effective 13/19-coordinate profile ledger, neutral holonomy and conditional branch measure, axion quality and multi-axion rank tests, and the limited Cech/rank-two HYM support witnesses. Profile compatibility is not independent prediction. All sixteen PDF pages were rendered and visually inspected; compilation has no warnings. The metadata abstract is plain text. This authoring revision is not a Zenodo release.",
+      "reviewed_main_tex_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
+      "reviewed_pdf_sha256": "9915388f1dd95d9dc0029598558c1db1e564b63de886e6358e3ee68dfa8e33a3",
+      "reviewed_source_tree_sha256": "87d22b9d35e414173bee3b1f1da853bc72d769093eab5358751611f4dcbc9c36",
+      "release_authorized": false
     },
     "mtt-gpt-corpus-index-grouped-reference": {
       "status": "reviewed",

@@ -1,7 +1,7 @@
 {
   "counts": {
     "canonical_papers": 141,
-    "current_sources_newer_than_release": 11,
+    "current_sources_newer_than_release": 12,
     "pandoc_warning_papers": 12,
     "papers_with_zenodo_release": 138,
     "papers_without_zenodo_match": 3,
@@ -2896,17 +2896,20 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v2",
-      "date": "September 2026, Version 2",
+      "current_version": "v3",
+      "date": "September 2026, Version 3",
       "latest_zenodo_release": null,
-      "main_tex_sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30",
+      "main_tex_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
       "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
-      "paper_md_sha256": "9becf69a2f414d9f60abd9baa411171f6b14e116ff9e0afcd6d41ae13c754403",
+      "paper_md_sha256": "5e56609daf24314b8d3031e58b7c00e8eb8575e4531e8f60acf47860725a5460",
       "release_state": "current_revised_tex",
       "result_refs": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet",
         "local_cech_hilbert_descent",
         "local_closure_repair_descent",
+        "preprojection_bht_transported_metric",
         "preprojection_covariant_residual_hessian",
+        "preprojection_first_order_phase_loss_witness",
         "preprojection_h4_cyclic_mc_action_descent",
         "preprojection_h4_q79_string_cyclic_cotangent",
         "preprojection_h4_variational_anchor_multiplier_lift",
@@ -2914,11 +2917,13 @@
         "preprojection_repair_jet_graph_functor",
         "preprojection_reversible_dissipative_repair",
         "q79_cohesive_superconnection",
-        "q79_maurer_cartan_repair"
+        "q79_maurer_cartan_repair",
+        "q79_rank102_qutrit_reduction",
+        "q79_v3w9_full_residual"
       ],
       "revision": {
         "revision_evidence_path": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "51192fbf3e3d52d30a2f198f495728a80403b9cce4603e3fad906255c00fd3b9",
+        "revision_evidence_sha256": "c6c6d0d79cbdbb51da3524a3b2eb58d9cbfbeda13496f3a09d5021e816826ae2",
         "selected_revision": true
       },
       "source_provenance": {
@@ -2926,7 +2931,7 @@
         "repository_native_path": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
         "results_snapshot": "ba0874012246bb930677ebfa6f0a6eb33a57a8f0"
       },
-      "source_tree_sha256": "d5d291ac864599bfa9983bd964690f8b3f59dd0ef98aae70431883a20075406e",
+      "source_tree_sha256": "6b47e4fac0fbb1d4d4029302e1eafd27776af27698c3997c7473d8f50e2eb030",
       "title": "Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary",
       "version_relation": "unreleased_new_paper",
       "zenodo_releases": []
@@ -6180,14 +6185,14 @@
       ]
     },
     {
-      "abstract": "This paper audits the strongest currently reproducible connection between Modal Triplet Theory (MTT) and the Standard Model (SM). The result is substantial but tiered. At the exact finite-structure tier, released calculations provide a 27-dimensional qutrit-Weyl carrier, the faithful gauge action (SU(3) x SU(2) x U(1))/Z6, a three-family chiral representation with all local and global gauge anomalies cancelled, a completed finite real-even geometry, and a rank-four one-Higgs projection inside its rank-twelve raw scalar fluctuation space. At the profile tier, an explicit 96 by 96 finite Dirac operator contains the accepted charged and neutral Yukawa matrices; CKM, Higgs, threshold, and precision packets have executable provenance and pass their declared audits. At the embedded-equivalence tier, the selected branch reproduces the same renormalized SM action, parameter point, scheme, and perturbative observable functor, with twelve of twelve declared obligations verified. This is not a zero-parameter derivation of the measured SM. The adopted closure standard allows one shared electroweak primitive and measured renormalized profile coordinates downstream. In particular, the finite carrier and gauge representation do not by themselves select Yukawa singular values, mixing matrices, absolute neutrino data, the strong-CP mechanism, or a unique observed branch. We state the exact reconstruction theorem, prove a family-intertwiner nonselection result, explain the distinct roles of the 27 by 27 and 96 by 96 matrices, give a parameter and provenance ledger, and isolate the remaining source theorems needed for strict no-knob Standard-Model closure.",
+      "abstract": "This paper audits the strongest currently reproducible connection between Modal Triplet Theory (MTT) and the Standard Model (SM). The result is substantial but tiered. At the exact finite-structure tier, released calculations provide a 27-dimensional qutrit\u2013Weyl carrier, the faithful gauge action (SU(3) x SU(2) x U(1))/Z6, a three-family chiral representation with all local and global gauge anomalies cancelled, a completed finite real-even geometry, and a rank-four one-Higgs projection inside its rank-twelve raw scalar fluctuation space. At the profile tier, an explicit 96 x 96 finite Dirac operator contains the accepted charged and neutral Yukawa matrices; CKM, Higgs, threshold, and precision packets have executable provenance and pass their declared audits. At the embedded-equivalence tier, the selected branch reproduces the same renormalized SM action, parameter point, scheme, and perturbative observable functor, with twelve of twelve declared obligations verified. This is not a zero-parameter derivation of the measured SM. The adopted closure standard allows one shared electroweak primitive and measured renormalized profile coordinates downstream. In particular, the finite carrier and gauge representation do not by themselves select Yukawa singular values, mixing matrices, absolute neutrino data, the strong-CP mechanism, or a unique observed branch. We state the exact reconstruction theorem, prove a family-intertwiner nonselection result, explain the distinct roles of the 27 x 27 and 96 x 96 matrices, give a parameter and provenance ledger, and isolate the remaining source theorems needed for strict no-knob Standard-Model closure. Later same-source imports reduce the effective non-neutrino profile to thirteen coordinates, excluding QCD theta, and the minimal neutral extension to nineteen. These counts include empirical inputs and are not prospectively validated parameter predictions. Conditional neutral-holonomy, branch-measure and axion-quality results specify more precisely which selections are still required.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v3",
-      "date": "July 2026, Version 3",
+      "current_version": "v4",
+      "date": "September 2026, Version 4",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.16950516",
         "created": "2026-07-31T11:02:09.270932+00:00",
@@ -6213,17 +6218,20 @@
         "updated": "2026-07-31T11:02:09.656472+00:00",
         "version": "v3"
       },
-      "main_tex_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "main_tex_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
       "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
-      "paper_md_sha256": "956622ab983b5930e4d2d1b63d2a554f8f4b176bc8e3863a48a42787f0c7e266",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "0ef71a10d27473aa5d42a02827b867b8036599820679380eb7bdfd5bf7399ac7",
+      "release_state": "current_revised_tex",
       "result_refs": [
         "charged_yukawa_higgs_profile",
         "ckm_prediction_profile",
         "current_global_lock",
         "direct_k_higgs_row",
+        "e6_qpsi_qcd_anomaly",
         "final_12_of_12_audit",
         "finite_inner_fluctuation",
+        "hym_wiener_contraction",
+        "literal_cech_witness",
         "native_gauge_group",
         "neutral_summand_hypercharge",
         "neutral_two_primitive_profile",
@@ -6231,6 +6239,15 @@
         "precision_15_source_transport",
         "precision_8x8_workspace",
         "qutrit_weyl_27_matrix",
+        "sm_axion_gs_reduction",
+        "sm_axion_quality_bound",
+        "sm_branch_u9_conditional_measure",
+        "sm_gauge_common_scheme_map",
+        "sm_gauge_density_source_promotion",
+        "sm_gauge_scale_orbit_nogo",
+        "sm_minimal_parameter_ledger",
+        "sm_multiaxion_superset",
+        "sm_neutral_u5_tier_decision",
         "strict_pew_row",
         "strict_upgrade_ledger",
         "su2_finite_gauge_spectrum",
@@ -6239,16 +6256,16 @@
       ],
       "revision": {
         "revision_evidence_path": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "38399f59beb32afee7adf3fc47ea509079795130b5ee2446f78a42cea9366a25",
+        "revision_evidence_sha256": "7f88a8687a883788063559456b7e5780c033dcecdd75ca280d0e9f5e8d974fed",
         "selected_revision": true,
         "superseded_source_path": "13 Standard Model & Topology-Only Constraints/_work/Modal_Triplet_Theory__From_MTT_to_Standard_Model_v2"
       },
       "source_provenance": {
         "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Modal_Triplet_Theory__From_MTT_to_Standard_Model_v2"
       },
-      "source_tree_sha256": "89c8356518d1e2c170e98bad61836912c8f1c5ba294c1e992276c05488053197",
-      "title": "From Modal Triplet Theory to a Standard-Model Sector: Exact Finite Structure, Profile-Level Equivalence, and the No-Knob Boundary",
-      "version_relation": "matches_latest_release",
+      "source_tree_sha256": "87d22b9d35e414173bee3b1f1da853bc72d769093eab5358751611f4dcbc9c36",
+      "title": "From Modal Triplet Theory to a Standard-Model Sector Exact Finite Structure, Profile-Level Equivalence, and the No-Knob Boundary",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.16950516",

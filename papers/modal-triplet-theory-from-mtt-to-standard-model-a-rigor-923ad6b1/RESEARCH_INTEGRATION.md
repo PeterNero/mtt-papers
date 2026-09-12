@@ -1,6 +1,6 @@
 # Research Integration Record
 
-From Modal Triplet Theory to a Standard-Model Sector: Exact Finite Structure, Profile-Level Equivalence, and the No-Knob Boundary
+From Modal Triplet Theory to a Standard-Model Sector Exact Finite Structure, Profile-Level Equivalence, and the No-Knob Boundary
 
 This companion records the current research assigned to this paper. It is not part of the released PDF, not a new theorem, and not a release approval.
 
@@ -22,8 +22,8 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: This is the frozen status/provenance map behind the cited audit, not an additional theorem that must be copied into the manuscript. Retain it as capsule navigation; the reconstruction result is already contextualized.
 
-- `main.tex:522`: `an old file containing`
-- `main.tex:399`: `Current released reconstruction`
+- `main.tex:752`: `an old file containing`
+- `main.tex:507`: `Current released reconstruction`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -43,8 +43,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The reconstruction theorem and its discussion import the twelve-obligation audit and the stricter upgrade ledger with measured-parameter, nonperturbative-QFT and source-selection limits. The paper need not reproduce the entire runtime audit to own this conditional synthesis.
 
-- `main.tex:399`: `Current released reconstruction`
-- `main.tex:545`: `Remaining Theorems and Falsifiers`
+- `main.tex:507`: `Current released reconstruction`
+- `main.tex:777`: `Remaining Theorems and Falsifiers`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -64,10 +64,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.
 
-- `main.tex:118`: `The Two Finite Matrices Have Different Jobs`
-- `main.tex:169`: `Exact Gauge and Chiral Structure`
-- `main.tex:249`: `Finite Geometry and the Higgs Module`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:139`: `The Two Finite Matrices Have Different Jobs`
+- `main.tex:190`: `Exact Gauge and Chiral Structure`
+- `main.tex:295`: `Finite Geometry and the Higgs Module`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -85,12 +85,12 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/charged_yukawa_higgs_profile/artifact.json); SHA-256 `9648804f5b9f0867ccfa55b3b1bc9cc11332576d41e573b5900c4caafca90ad9`.
 
-Reviewed 2026-09-12: Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.
+Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:317`: `Where the Numerical Values Enter`
-- `main.tex:365`: `Multi-loop precision transport`
-- `main.tex:452`: `Parameter ledger`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:407`: `Where the Numerical Values Enter`
+- `main.tex:473`: `Multi-loop precision transport`
+- `main.tex:560`: `Parameter ledger`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -108,12 +108,12 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/precision_8x8_workspace/artifact.json); SHA-256 `c5af11222a282343ab6009038a4fd61bcaec6406e88c537c8bc64ebdd9267ecf`.
 
-Reviewed 2026-09-12: Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.
+Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:317`: `Where the Numerical Values Enter`
-- `main.tex:365`: `Multi-loop precision transport`
-- `main.tex:452`: `Parameter ledger`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:407`: `Where the Numerical Values Enter`
+- `main.tex:473`: `Multi-loop precision transport`
+- `main.tex:560`: `Parameter ledger`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -131,12 +131,12 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/precision_15_source_transport/artifact.json); SHA-256 `55df4532ae2bb6dd5995ed5e7e0d16308d5e0647fbfa99bd82e767be0859da59`.
 
-Reviewed 2026-09-12: Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.
+Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:317`: `Where the Numerical Values Enter`
-- `main.tex:365`: `Multi-loop precision transport`
-- `main.tex:452`: `Parameter ledger`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:407`: `Where the Numerical Values Enter`
+- `main.tex:473`: `Multi-loop precision transport`
+- `main.tex:560`: `Parameter ledger`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -154,12 +154,12 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/ckm_prediction_profile/artifact.json); SHA-256 `2de3384b83ce4cd37ac734dfc21adb2f58ff8a5e6cf187df18cbc5c701d74e39`.
 
-Reviewed 2026-09-12: Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.
+Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:317`: `Where the Numerical Values Enter`
-- `main.tex:365`: `Multi-loop precision transport`
-- `main.tex:452`: `Parameter ledger`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:407`: `Where the Numerical Values Enter`
+- `main.tex:473`: `Multi-loop precision transport`
+- `main.tex:560`: `Parameter ledger`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -177,12 +177,12 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/strict_pew_row/artifact.json); SHA-256 `203f294f770c724295f89307b6cebea8f813c5abd15add73d3772492ea04c787`.
 
-Reviewed 2026-09-12: Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.
+Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:317`: `Where the Numerical Values Enter`
-- `main.tex:365`: `Multi-loop precision transport`
-- `main.tex:452`: `Parameter ledger`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:407`: `Where the Numerical Values Enter`
+- `main.tex:473`: `Multi-loop precision transport`
+- `main.tex:560`: `Parameter ledger`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -200,12 +200,12 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/direct_k_higgs_row/artifact.json); SHA-256 `af063d74ab102fc3c0905822bdb35ad5210c40f69d98107a8e583548e94334dd`.
 
-Reviewed 2026-09-12: Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.
+Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:317`: `Where the Numerical Values Enter`
-- `main.tex:365`: `Multi-loop precision transport`
-- `main.tex:452`: `Parameter ledger`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:407`: `Where the Numerical Values Enter`
+- `main.tex:473`: `Multi-loop precision transport`
+- `main.tex:560`: `Parameter ledger`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -217,18 +217,19 @@ Literal 81-entry, 729-cocycle finite Cech witness.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/literal_cech_witness/artifact.json); SHA-256 `a764508cb39789f6cc62af27658caf8fc93d718c3ec726846b9b7878090ac9af`.
 
-Reviewed 2026-09-12: The current main text does not explain these five assigned result-specific constructions. The SU2/SU3 identifiers in metadata are not manuscript integration. The rank-two Cech/HYM witness must not be promoted to the physical rank-three visible endpoint.
+Reviewed 2026-09-12: Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.
 
-- `main.tex:485`: `Reproducibility and Result Ownership`
-- `main.tex:471`: `Strong CP and branch choice`
+- `main.tex:270`: `What the finite gauge spectra add`
+- `main.tex:680`: `What the geometric support witnesses do establish`
+- `main.tex:624`: `Strong CP: the current and the quality question`
 
-Remaining: Add short, scoped imports where they support the reconstruction or strong-CP discussion; cite the original geometry/anomaly owner and keep rank-two support separate. Do not duplicate the proofs.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## hym_wiener_contraction
 
@@ -238,18 +239,19 @@ Weighted-theta Fourier-tail and Wiener contraction certificate.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/hym_wiener_contraction/artifact.json); SHA-256 `be8fefa3239c51e6818eccc4e64fa9b0aae17b7ea60876f03a11c52ff2436ac5`.
 
-Reviewed 2026-09-12: The current main text does not explain these five assigned result-specific constructions. The SU2/SU3 identifiers in metadata are not manuscript integration. The rank-two Cech/HYM witness must not be promoted to the physical rank-three visible endpoint.
+Reviewed 2026-09-12: Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.
 
-- `main.tex:485`: `Reproducibility and Result Ownership`
-- `main.tex:471`: `Strong CP and branch choice`
+- `main.tex:270`: `What the finite gauge spectra add`
+- `main.tex:680`: `What the geometric support witnesses do establish`
+- `main.tex:624`: `Strong CP: the current and the quality question`
 
-Remaining: Add short, scoped imports where they support the reconstruction or strong-CP discussion; cite the original geometry/anomaly owner and keep rank-two support separate. Do not duplicate the proofs.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## neutral_two_primitive_profile
 
@@ -265,12 +267,12 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/neutral_two_primitive_profile/artifact.json); SHA-256 `c934af81cd3b5058205199295c914601751750f4eeb9adf1d1fee76152ef1ea7`.
 
-Reviewed 2026-09-12: Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.
+Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:317`: `Where the Numerical Values Enter`
-- `main.tex:365`: `Multi-loop precision transport`
-- `main.tex:452`: `Parameter ledger`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:407`: `Where the Numerical Values Enter`
+- `main.tex:473`: `Multi-loop precision transport`
+- `main.tex:560`: `Parameter ledger`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -290,10 +292,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.
 
-- `main.tex:118`: `The Two Finite Matrices Have Different Jobs`
-- `main.tex:169`: `Exact Gauge and Chiral Structure`
-- `main.tex:249`: `Finite Geometry and the Higgs Module`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:139`: `The Two Finite Matrices Have Different Jobs`
+- `main.tex:190`: `Exact Gauge and Chiral Structure`
+- `main.tex:295`: `Finite Geometry and the Higgs Module`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -313,10 +315,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.
 
-- `main.tex:118`: `The Two Finite Matrices Have Different Jobs`
-- `main.tex:169`: `Exact Gauge and Chiral Structure`
-- `main.tex:249`: `Finite Geometry and the Higgs Module`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:139`: `The Two Finite Matrices Have Different Jobs`
+- `main.tex:190`: `Exact Gauge and Chiral Structure`
+- `main.tex:295`: `Finite Geometry and the Higgs Module`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -336,10 +338,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.
 
-- `main.tex:118`: `The Two Finite Matrices Have Different Jobs`
-- `main.tex:169`: `Exact Gauge and Chiral Structure`
-- `main.tex:249`: `Finite Geometry and the Higgs Module`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:139`: `The Two Finite Matrices Have Different Jobs`
+- `main.tex:190`: `Exact Gauge and Chiral Structure`
+- `main.tex:295`: `Finite Geometry and the Higgs Module`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -359,10 +361,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.
 
-- `main.tex:118`: `The Two Finite Matrices Have Different Jobs`
-- `main.tex:169`: `Exact Gauge and Chiral Structure`
-- `main.tex:249`: `Finite Geometry and the Higgs Module`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:139`: `The Two Finite Matrices Have Different Jobs`
+- `main.tex:190`: `Exact Gauge and Chiral Structure`
+- `main.tex:295`: `Finite Geometry and the Higgs Module`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -382,10 +384,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.
 
-- `main.tex:118`: `The Two Finite Matrices Have Different Jobs`
-- `main.tex:169`: `Exact Gauge and Chiral Structure`
-- `main.tex:249`: `Finite Geometry and the Higgs Module`
-- `main.tex:485`: `Reproducibility and Result Ownership`
+- `main.tex:139`: `The Two Finite Matrices Have Different Jobs`
+- `main.tex:190`: `Exact Gauge and Chiral Structure`
+- `main.tex:295`: `Finite Geometry and the Higgs Module`
+- `main.tex:699`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -397,18 +399,19 @@ Exact SU2 finite gauge/ghost spectrum row.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/su2_finite_gauge_spectrum/artifact.json); SHA-256 `abd813c5e6a0055e76113fbb71617cb3698e7277d9d071bcc8b5e1b195348441`.
 
-Reviewed 2026-09-12: The current main text does not explain these five assigned result-specific constructions. The SU2/SU3 identifiers in metadata are not manuscript integration. The rank-two Cech/HYM witness must not be promoted to the physical rank-three visible endpoint.
+Reviewed 2026-09-12: Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.
 
-- `main.tex:485`: `Reproducibility and Result Ownership`
-- `main.tex:471`: `Strong CP and branch choice`
+- `main.tex:270`: `What the finite gauge spectra add`
+- `main.tex:680`: `What the geometric support witnesses do establish`
+- `main.tex:624`: `Strong CP: the current and the quality question`
 
-Remaining: Add short, scoped imports where they support the reconstruction or strong-CP discussion; cite the original geometry/anomaly owner and keep rank-two support separate. Do not duplicate the proofs.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## su3_finite_gauge_spectrum
 
@@ -418,18 +421,19 @@ Exact SU3 adjoint-central-trivial row and ten-spectrum closure/no-go.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/su3_finite_gauge_spectrum/artifact.json); SHA-256 `b106f81bee0af46148a99ac55422524bcac0f1a3b2f01689bf01a0747f96f2e0`.
 
-Reviewed 2026-09-12: The current main text does not explain these five assigned result-specific constructions. The SU2/SU3 identifiers in metadata are not manuscript integration. The rank-two Cech/HYM witness must not be promoted to the physical rank-three visible endpoint.
+Reviewed 2026-09-12: Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.
 
-- `main.tex:485`: `Reproducibility and Result Ownership`
-- `main.tex:471`: `Strong CP and branch choice`
+- `main.tex:270`: `What the finite gauge spectra add`
+- `main.tex:680`: `What the geometric support witnesses do establish`
+- `main.tex:624`: `Strong CP: the current and the quality question`
 
-Remaining: Add short, scoped imports where they support the reconstruction or strong-CP discussion; cite the original geometry/anomaly owner and keep rank-two support separate. Do not duplicate the proofs.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## e6_qpsi_qcd_anomaly
 
@@ -439,18 +443,19 @@ E6 Qpsi matter/exotic QCD anomaly cancellation audit.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/e6_qpsi_qcd_anomaly/artifact.json); SHA-256 `36935d55a6ab3e19d77ff6e6c4d369ecd0948613ea177a89c8b715632f592be8`.
 
-Reviewed 2026-09-12: The current main text does not explain these five assigned result-specific constructions. The SU2/SU3 identifiers in metadata are not manuscript integration. The rank-two Cech/HYM witness must not be promoted to the physical rank-three visible endpoint.
+Reviewed 2026-09-12: Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.
 
-- `main.tex:485`: `Reproducibility and Result Ownership`
-- `main.tex:471`: `Strong CP and branch choice`
+- `main.tex:270`: `What the finite gauge spectra add`
+- `main.tex:680`: `What the geometric support witnesses do establish`
+- `main.tex:624`: `Strong CP: the current and the quality question`
 
-Remaining: Add short, scoped imports where they support the reconstruction or strong-CP discussion; cite the original geometry/anomaly owner and keep rank-two support separate. Do not duplicate the proofs.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## strict_upgrade_ledger
 
@@ -468,8 +473,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The reconstruction theorem and its discussion import the twelve-obligation audit and the stricter upgrade ledger with measured-parameter, nonperturbative-QFT and source-selection limits. The paper need not reproduce the entire runtime audit to own this conditional synthesis.
 
-- `main.tex:399`: `Current released reconstruction`
-- `main.tex:545`: `Remaining Theorems and Falsifiers`
+- `main.tex:507`: `Current released reconstruction`
+- `main.tex:777`: `Remaining Theorems and Falsifiers`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -481,18 +486,18 @@ Route-A promotion of the positive C1 density and accepted finite gauge-action sh
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/sm_gauge_density_source_promotion/artifact.md); SHA-256 `5714fa1d7e887cc971be4f779773bd6d466d3d037405654f4031c0ad0b0e7c00`.
 
-Reviewed 2026-09-12: The paper discusses finite traces and warns against double-counting parameters, but does not yet state the later Route-A density, common scheme map, scale-orbit result or the effective 13/19-coordinate ledger. The old generic statement is not equivalent to integrating those computations.
+Reviewed 2026-09-12: Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.
 
-- `main.tex:307`: `The finite gauge traces are`
-- `main.tex:477`: `The rows overlap and must not be arithmetically summed`
+- `main.tex:363`: `Selected density, relative shape and the remaining amplitude`
+- `main.tex:585`: `The rows overlap and must not be arithmetically summed`
 
-Remaining: Update the normalization and parameter subsections from the same-source ledger with convention/input accounting. Explain 13/19 as effective profile coordinates, not a zero-input prediction.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## sm_gauge_common_scheme_map
 
@@ -502,18 +507,18 @@ Convention-safe one-anchor gauge-coupling map and covariance-aware compatibility
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/sm_gauge_common_scheme_map/artifact.md); SHA-256 `a0614ae32571ae22d39078abed47f418a4d45fb0d03b3dce220120a76534cd79`.
 
-Reviewed 2026-09-12: The paper discusses finite traces and warns against double-counting parameters, but does not yet state the later Route-A density, common scheme map, scale-orbit result or the effective 13/19-coordinate ledger. The old generic statement is not equivalent to integrating those computations.
+Reviewed 2026-09-12: Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.
 
-- `main.tex:307`: `The finite gauge traces are`
-- `main.tex:477`: `The rows overlap and must not be arithmetically summed`
+- `main.tex:363`: `Selected density, relative shape and the remaining amplitude`
+- `main.tex:585`: `The rows overlap and must not be arithmetically summed`
 
-Remaining: Update the normalization and parameter subsections from the same-source ledger with convention/input accounting. Explain 13/19 as effective profile coordinates, not a zero-input prediction.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## sm_gauge_scale_orbit_nogo
 
@@ -523,18 +528,18 @@ Exact one-dimensional common normalization orbit and zero-anchor obstruction.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/sm_gauge_scale_orbit_nogo/artifact.md); SHA-256 `a24846826596d87dc67bf26f1521eaaf9df2a7c313776c24a892853f266a3d5d`.
 
-Reviewed 2026-09-12: The paper discusses finite traces and warns against double-counting parameters, but does not yet state the later Route-A density, common scheme map, scale-orbit result or the effective 13/19-coordinate ledger. The old generic statement is not equivalent to integrating those computations.
+Reviewed 2026-09-12: Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.
 
-- `main.tex:307`: `The finite gauge traces are`
-- `main.tex:477`: `The rows overlap and must not be arithmetically summed`
+- `main.tex:363`: `Selected density, relative shape and the remaining amplitude`
+- `main.tex:585`: `The rows overlap and must not be arithmetically summed`
 
-Remaining: Update the normalization and parameter subsections from the same-source ledger with convention/input accounting. Explain 13/19 as effective profile coordinates, not a zero-input prediction.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## sm_minimal_parameter_ledger
 
@@ -544,18 +549,18 @@ Current effective 13-coordinate non-neutrino and 19-coordinate minimal-neutral p
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/sm_minimal_parameter_ledger/artifact.md); SHA-256 `b75c2545c3472d0745519137090e47b01a0b8cca95fa24cef0bae9197be0c80f`.
 
-Reviewed 2026-09-12: The paper discusses finite traces and warns against double-counting parameters, but does not yet state the later Route-A density, common scheme map, scale-orbit result or the effective 13/19-coordinate ledger. The old generic statement is not equivalent to integrating those computations.
+Reviewed 2026-09-12: Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.
 
-- `main.tex:307`: `The finite gauge traces are`
-- `main.tex:477`: `The rows overlap and must not be arithmetically summed`
+- `main.tex:363`: `Selected density, relative shape and the remaining amplitude`
+- `main.tex:585`: `The rows overlap and must not be arithmetically summed`
 
-Remaining: Update the normalization and parameter subsections from the same-source ledger with convention/input accounting. Explain 13/19 as effective profile coordinates, not a zero-input prediction.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## sm_neutral_u5_tier_decision
 
@@ -565,18 +570,18 @@ One-holonomy plus one-scale neutral profile closure, Dirac-only branch and norma
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/sm_neutral_u5_tier_decision/artifact.md); SHA-256 `8e9ebe682f13d8ec1bb16b728661a6cfcff9c8a6c53b11e4a727fd6b9a2d40a1`.
 
-Reviewed 2026-09-12: The older two-splitting profile and open global branch statement survive, but omit the newer one-holonomy/one-scale neutral refinement and conditional antiunitary branch measure. Those do not establish unique observed-branch selection.
+Reviewed 2026-09-12: Version 4 imports the U5 holonomy chamber, Majorana compatibility test and supplied scale/nil-boundary assumptions. It explains the U9 equal-weight antiunitary orbit and probability-one conditioning on the selected retarded branch without claiming a unique universal branch. Adopted 4/4/1 and strict 2/6/1 tallies are kept separate.
 
-- `main.tex:349`: `Neutral profile`
-- `main.tex:558`: `Neutrino, strong-CP, and branch selection.`
+- `main.tex:439`: `Neutral profile`
+- `main.tex:608`: `The conditional branch measure`
 
-Remaining: Add the declared U5 and U9 conditional conclusions while retaining the distinction between within-branch reconstruction and selection of the universe's branch.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## sm_branch_u9_conditional_measure
 
@@ -586,18 +591,18 @@ Antiunitary two-branch invariant measure and retarded conditional q79 selection 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/sm_branch_u9_conditional_measure/artifact.md); SHA-256 `7b9a420629f047d44605d6f8e47a49602c11be91e23bb55471d15a193a4e4c4c`.
 
-Reviewed 2026-09-12: The older two-splitting profile and open global branch statement survive, but omit the newer one-holonomy/one-scale neutral refinement and conditional antiunitary branch measure. Those do not establish unique observed-branch selection.
+Reviewed 2026-09-12: Version 4 imports the U5 holonomy chamber, Majorana compatibility test and supplied scale/nil-boundary assumptions. It explains the U9 equal-weight antiunitary orbit and probability-one conditioning on the selected retarded branch without claiming a unique universal branch. Adopted 4/4/1 and strict 2/6/1 tallies are kept separate.
 
-- `main.tex:349`: `Neutral profile`
-- `main.tex:558`: `Neutrino, strong-CP, and branch selection.`
+- `main.tex:439`: `Neutral profile`
+- `main.tex:608`: `The conditional branch measure`
 
-Remaining: Add the declared U5 and U9 conditional conclusions while retaining the distinction between within-branch reconstruction and selection of the universe's branch.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## sm_axion_gs_reduction
 
@@ -607,18 +612,18 @@ Four-dimensional model-independent Green-Schwarz axion reduction and primitive c
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/sm_axion_gs_reduction/artifact.md); SHA-256 `f2b95c1bbbe2452cd687277de9644ee035e112d0e0ac7e5b7b49b8040466e75f`.
 
-Reviewed 2026-09-12: The current strong-CP paragraph is a general open boundary and contains none of the three later scoped axion results. The conditional reduction, global-minimum quality bound and hidden-blind direction criterion warrant integration, but do not supply the missing hidden source amplitudes.
+Reviewed 2026-09-12: Version 4 distinguishes the periodic model-independent Green-Schwarz axion from the flat internal gerbe, states primitive k3=1 at its declared normalization, gives all three nonlinear quality inequalities with convergence and angle assumptions, and explains the hidden-blind rank criterion. Hidden amplitudes, phases, lifting and selection remain open; the illustrative flat hidden case is not substituted for physical HYM data.
 
-- `main.tex:471`: `Strong CP and branch choice`
-- `main.tex:559`: `a suppression or relaxation mechanism`
+- `main.tex:624`: `Strong CP: the current and the quality question`
+- `main.tex:664`: `The multi-axion import supplies a complementary route`
 
-Remaining: Add an explained conditional strong-CP subsection importing the three results and the remaining source payload. Do not describe the quality criterion as a completed physical solution.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## sm_axion_quality_bound
 
@@ -628,18 +633,18 @@ Nonlinear global-minimum axion-quality certificate with hidden source payload st
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/sm_axion_quality_bound/artifact.md); SHA-256 `f5ef2463010c80e53cf8b35ab9fd8aeeb5d87c5e17132a8be25c8374cc4b6719`.
 
-Reviewed 2026-09-12: The current strong-CP paragraph is a general open boundary and contains none of the three later scoped axion results. The conditional reduction, global-minimum quality bound and hidden-blind direction criterion warrant integration, but do not supply the missing hidden source amplitudes.
+Reviewed 2026-09-12: Version 4 distinguishes the periodic model-independent Green-Schwarz axion from the flat internal gerbe, states primitive k3=1 at its declared normalization, gives all three nonlinear quality inequalities with convergence and angle assumptions, and explains the hidden-blind rank criterion. Hidden amplitudes, phases, lifting and selection remain open; the illustrative flat hidden case is not substituted for physical HYM data.
 
-- `main.tex:471`: `Strong CP and branch choice`
-- `main.tex:559`: `a suppression or relaxation mechanism`
+- `main.tex:624`: `Strong CP: the current and the quality question`
+- `main.tex:664`: `The multi-axion import supplies a complementary route`
 
-Remaining: Add an explained conditional strong-CP subsection importing the three results and the remaining source payload. Do not describe the quality criterion as a completed physical solution.
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## sm_multiaxion_superset
 
@@ -649,16 +654,16 @@ Fu-Yau multi-axion lower bound, hidden-blind QCD-direction criterion and remaini
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `addition_needed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/sm_multiaxion_superset/artifact.md); SHA-256 `028ead7223c7facaa7e7dd3035c31a719698c5cb095bed4c1776b281579c0e42`.
 
-Reviewed 2026-09-12: The current strong-CP paragraph is a general open boundary and contains none of the three later scoped axion results. The conditional reduction, global-minimum quality bound and hidden-blind direction criterion warrant integration, but do not supply the missing hidden source amplitudes.
+Reviewed 2026-09-12: Version 4 distinguishes the periodic model-independent Green-Schwarz axion from the flat internal gerbe, states primitive k3=1 at its declared normalization, gives all three nonlinear quality inequalities with convergence and angle assumptions, and explains the hidden-blind rank criterion. Hidden amplitudes, phases, lifting and selection remain open; the illustrative flat hidden case is not substituted for physical HYM data.
 
-- `main.tex:471`: `Strong CP and branch choice`
-- `main.tex:559`: `a suppression or relaxation mechanism`
+- `main.tex:624`: `Strong CP: the current and the quality question`
+- `main.tex:664`: `The multi-axion import supplies a complementary route`
 
-Remaining: Add an explained conditional strong-CP subsection importing the three results and the remaining source payload. Do not describe the quality criterion as a completed physical solution.
+Remaining: Preserve the reviewed scope; no new integration action.
 

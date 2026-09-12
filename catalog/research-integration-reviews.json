@@ -23,7 +23,7 @@
         "Reproducibility and Result Ownership"
       ],
       "assessment": "The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.",
-      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
       "result_hashes": {
         "qutrit_weyl_27_matrix": "af5bff7f860e7a65bae49d0e8ed2fbaddb5a7ae2e9f41fd972537022eb06f7f1",
         "typed_family_representation": "528af6955b3b7207a9db178d14d95cb4078f895f946a7d204fa680bc5754f657",
@@ -54,8 +54,8 @@
         "Parameter ledger",
         "Reproducibility and Result Ownership"
       ],
-      "assessment": "Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.",
-      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "assessment": "Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.",
+      "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
       "result_hashes": {
         "charged_yukawa_higgs_profile": "9648804f5b9f0867ccfa55b3b1bc9cc11332576d41e573b5900c4caafca90ad9",
         "neutral_two_primitive_profile": "c934af81cd3b5058205199295c914601751750f4eeb9adf1d1fee76152ef1ea7",
@@ -81,7 +81,7 @@
         "Remaining Theorems and Falsifiers"
       ],
       "assessment": "The reconstruction theorem and its discussion import the twelve-obligation audit and the stricter upgrade ledger with measured-parameter, nonperturbative-QFT and source-selection limits. The paper need not reproduce the entire runtime audit to own this conditional synthesis.",
-      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
       "result_hashes": {
         "final_12_of_12_audit": "d783988a4d10f10abfa4f5fa2769219cbea3fae238e3894d405c404fc3f546e9",
         "strict_upgrade_ledger": "659afd20a06fcc6492cfb77688dae81d109dfd16b368d877e1ea4d92da5e97ac"
@@ -101,7 +101,7 @@
         "Current released reconstruction"
       ],
       "assessment": "This is the frozen status/provenance map behind the cited audit, not an additional theorem that must be copied into the manuscript. Retain it as capsule navigation; the reconstruction result is already contextualized.",
-      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
       "result_hashes": {
         "current_global_lock": "f1a4c656fed97eb9d185c30a852404b3e0e029952c142dc7db6d72b85cdd4883"
       }
@@ -111,7 +111,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
       "reviewed_at": "2026-09-12",
       "reviewer": "Codex contextual consolidation",
-      "state": "addition_needed",
+      "state": "integrated",
       "result_ids": [
         "literal_cech_witness",
         "hym_wiener_contraction",
@@ -120,12 +120,12 @@
         "e6_qpsi_qcd_anomaly"
       ],
       "anchors": [
-        "Reproducibility and Result Ownership",
-        "Strong CP and branch choice"
+        "What the finite gauge spectra add",
+        "What the geometric support witnesses do establish",
+        "Strong CP: the current and the quality question"
       ],
-      "assessment": "The current main text does not explain these five assigned result-specific constructions. The SU2/SU3 identifiers in metadata are not manuscript integration. The rank-two Cech/HYM witness must not be promoted to the physical rank-three visible endpoint.",
-      "remaining_action": "Add short, scoped imports where they support the reconstruction or strong-CP discussion; cite the original geometry/anomaly owner and keep rank-two support separate. Do not duplicate the proofs.",
-      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "assessment": "Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.",
+      "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
       "result_hashes": {
         "literal_cech_witness": "a764508cb39789f6cc62af27658caf8fc93d718c3ec726846b9b7878090ac9af",
         "hym_wiener_contraction": "be8fefa3239c51e6818eccc4e64fa9b0aae17b7ea60876f03a11c52ff2436ac5",
@@ -139,7 +139,7 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
       "reviewed_at": "2026-09-12",
       "reviewer": "Codex contextual consolidation",
-      "state": "addition_needed",
+      "state": "integrated",
       "result_ids": [
         "sm_gauge_density_source_promotion",
         "sm_gauge_common_scheme_map",
@@ -147,12 +147,11 @@
         "sm_minimal_parameter_ledger"
       ],
       "anchors": [
-        "The finite gauge traces are",
+        "Selected density, relative shape and the remaining amplitude",
         "The rows overlap and must not be arithmetically summed"
       ],
-      "assessment": "The paper discusses finite traces and warns against double-counting parameters, but does not yet state the later Route-A density, common scheme map, scale-orbit result or the effective 13/19-coordinate ledger. The old generic statement is not equivalent to integrating those computations.",
-      "remaining_action": "Update the normalization and parameter subsections from the same-source ledger with convention/input accounting. Explain 13/19 as effective profile coordinates, not a zero-input prediction.",
-      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "assessment": "Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.",
+      "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
       "result_hashes": {
         "sm_gauge_density_source_promotion": "5714fa1d7e887cc971be4f779773bd6d466d3d037405654f4031c0ad0b0e7c00",
         "sm_gauge_common_scheme_map": "a0614ae32571ae22d39078abed47f418a4d45fb0d03b3dce220120a76534cd79",
@@ -165,18 +164,17 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
       "reviewed_at": "2026-09-12",
       "reviewer": "Codex contextual consolidation",
-      "state": "addition_needed",
+      "state": "integrated",
       "result_ids": [
         "sm_neutral_u5_tier_decision",
         "sm_branch_u9_conditional_measure"
       ],
       "anchors": [
         "Neutral profile",
-        "Neutrino, strong-CP, and branch selection."
+        "The conditional branch measure"
       ],
-      "assessment": "The older two-splitting profile and open global branch statement survive, but omit the newer one-holonomy/one-scale neutral refinement and conditional antiunitary branch measure. Those do not establish unique observed-branch selection.",
-      "remaining_action": "Add the declared U5 and U9 conditional conclusions while retaining the distinction between within-branch reconstruction and selection of the universe's branch.",
-      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "assessment": "Version 4 imports the U5 holonomy chamber, Majorana compatibility test and supplied scale/nil-boundary assumptions. It explains the U9 equal-weight antiunitary orbit and probability-one conditioning on the selected retarded branch without claiming a unique universal branch. Adopted 4/4/1 and strict 2/6/1 tallies are kept separate.",
+      "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
       "result_hashes": {
         "sm_neutral_u5_tier_decision": "8e9ebe682f13d8ec1bb16b728661a6cfcff9c8a6c53b11e4a727fd6b9a2d40a1",
         "sm_branch_u9_conditional_measure": "7b9a420629f047d44605d6f8e47a49602c11be91e23bb55471d15a193a4e4c4c"
@@ -187,19 +185,18 @@
       "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
       "reviewed_at": "2026-09-12",
       "reviewer": "Codex contextual consolidation",
-      "state": "addition_needed",
+      "state": "integrated",
       "result_ids": [
         "sm_axion_gs_reduction",
         "sm_axion_quality_bound",
         "sm_multiaxion_superset"
       ],
       "anchors": [
-        "Strong CP and branch choice",
-        "a suppression or relaxation mechanism"
+        "Strong CP: the current and the quality question",
+        "The multi-axion import supplies a complementary route"
       ],
-      "assessment": "The current strong-CP paragraph is a general open boundary and contains none of the three later scoped axion results. The conditional reduction, global-minimum quality bound and hidden-blind direction criterion warrant integration, but do not supply the missing hidden source amplitudes.",
-      "remaining_action": "Add an explained conditional strong-CP subsection importing the three results and the remaining source payload. Do not describe the quality criterion as a completed physical solution.",
-      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "assessment": "Version 4 distinguishes the periodic model-independent Green-Schwarz axion from the flat internal gerbe, states primitive k3=1 at its declared normalization, gives all three nonlinear quality inequalities with convergence and angle assumptions, and explains the hidden-blind rank criterion. Hidden amplitudes, phases, lifting and selection remain open; the illustrative flat hidden case is not substituted for physical HYM data.",
+      "main_tex_lf_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
       "result_hashes": {
         "sm_axion_gs_reduction": "f2b95c1bbbe2452cd687277de9644ee035e112d0e0ac7e5b7b49b8040466e75f",
         "sm_axion_quality_bound": "f5ef2463010c80e53cf8b35ab9fd8aeeb5d87c5e17132a8be25c8374cc4b6719",
@@ -269,7 +266,7 @@
         "The q79 benchmark and its exact boundary"
       ],
       "assessment": "The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem.",
-      "main_tex_lf_sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30",
+      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
       "result_hashes": {
         "q79_cohesive_superconnection": "8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8",
         "preprojection_covariant_residual_hessian": "247b1b52198dc250f80293e6807f1d2fc7ac126a930c9642ef2b5a3fb7a74921"
@@ -280,16 +277,16 @@
       "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
       "reviewed_at": "2026-09-12",
       "reviewer": "Codex contextual consolidation",
-      "state": "summary_present",
+      "state": "integrated",
       "result_ids": [
         "q79_v3w9_full_residual"
       ],
       "anchors": [
-        "The proposed full defect and why it remains proposed"
+        "The explicit residual and its block support",
+        "These are imported compiler results"
       ],
-      "assessment": "The paper explains the full physical defect as a proposed source and retains the K-dagger-K augmentation. It does not display the corrected 25-block rank-102 mask or all six symbolic row definitions of the later execution packet.",
-      "remaining_action": "Import the exact six-row/25-block compiler with its owner citation, without replacing the open numerical endpoint by the symbolic mask.",
-      "main_tex_lf_sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30",
+      "assessment": "Version 3 displays all six extra residuals, fixed-chart derivatives including alpha-prime/2, the lane incidence matrix and the 19-to-25-block correction. It explains that allowed support is neither a numerical nonzero matrix nor the full Hilbert-space dimension. The exact kernel intersection is retained, while the old candidate audit is explicitly historical so later hidden-carrier/HYM advances are not regressed.",
+      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
       "result_hashes": {
         "q79_v3w9_full_residual": "937039df105881a4dcbf1ed31d86ab842b5da2ee6df832e7c834d9eb71cae441"
       }
@@ -317,6 +314,110 @@
         "fixed_points_cubic_heat_trace_bound": "affd30c6fa9ca9d5c8e08f0349cc92b419afd84ade8d666125f05af483dba54a",
         "fixed_points_l11_phase_channel": "a4f90611cc10dff2ad8945b0f05d19bb9b7373bf64b1b3b7617c4fa4928f0f0f",
         "fixed_points_finite_mode_recurrence_boundary": "7bdcad1f8dc2b752e1e4ada03fcea6e7c95d4dbf5e065f04718096fcc507f798"
+      }
+    }
+    ,
+    {
+      "id": "COHESIVE-DESCENT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual editorial integration",
+      "state": "integrated",
+      "result_ids": [
+        "q79_maurer_cartan_repair",
+        "local_cech_hilbert_descent",
+        "local_closure_repair_descent"
+      ],
+      "anchors": [
+        "Cohesive Maurer--Cartan repair",
+        "Nonlinear repair descent",
+        "For a finite connected cover with unitary local-system transitions"
+      ],
+      "assessment": "The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred.",
+      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "result_hashes": {
+        "q79_maurer_cartan_repair": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6",
+        "local_cech_hilbert_descent": "b6d9a73e29ec3b2e832c99544efa1a8b364db84e0b9ca91c99ad8d26a9e99912",
+        "local_closure_repair_descent": "b83aadb5b7d611f11db0d5c307b897cc7230e0f7ebf06681beae4abbe789cafc"
+      }
+    },
+    {
+      "id": "COHESIVE-LOCAL-WITNESSES-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual editorial integration",
+      "state": "integrated",
+      "result_ids": [
+        "preprojection_nonzero_defect_hessian_witness",
+        "preprojection_first_order_phase_loss_witness",
+        "preprojection_reversible_dissipative_repair"
+      ],
+      "anchors": [
+        "Why the correction cannot be dropped",
+        "Repair monotonicity and tangent generator",
+        "Information erased by the square"
+      ],
+      "assessment": "The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication.",
+      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "result_hashes": {
+        "preprojection_nonzero_defect_hessian_witness": "1c17362537af94ecbbb40de8944ae0c1fd583aa3ffd31231b55e0c6eeef91d15",
+        "preprojection_first_order_phase_loss_witness": "9a0a92dad8ad6d461b0d67c61c8b96c266d43c94a1f83a626063c786805a1496",
+        "preprojection_reversible_dissipative_repair": "d8ca1cee978ee72b57deb6990b50614a058d499b1a12f249f46a71cc460892cf"
+      }
+    },
+    {
+      "id": "COHESIVE-METRIC-IMPORT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual editorial integration",
+      "state": "integrated",
+      "result_ids": [
+        "preprojection_bht_transported_metric"
+      ],
+      "anchors": [
+        "The transported-metric result makes the latter task concrete",
+        "For example, let"
+      ],
+      "assessment": "Version 3 gives the transported metric, physical distortion, adjoint and chain-commutator formulas, the I2 versus diag(4,1/9) witness, and the polar product criterion. Bounded invertibility and domain transport are stated. The related embedding counterexample repairs the formerly overbroad projection claim; a physical analytic BHT map remains unconstructed.",
+      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "result_hashes": {
+        "preprojection_bht_transported_metric": "67a0109c6a7c7d02b97e863af1f6ebdeab3a66b27e8e37f4adc4733bb368fee7"
+      }
+    },
+    {
+      "id": "COHESIVE-SYMMETRY-IMPORT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual editorial integration",
+      "state": "integrated",
+      "result_ids": [
+        "q79_rank102_qutrit_reduction"
+      ],
+      "anchors": [
+        "There is also a lawful conditional sparsification"
+      ],
+      "assessment": "The additional E[3] invariance and 22 neutral external-mode assumptions are displayed beside the 1548 count, hidden character multiplicities and general sum-of-squares formula. This is a conditional character reduction, not 1548 accepted numerical coefficients and not a retraction of dense structural support.",
+      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "result_hashes": {
+        "q79_rank102_qutrit_reduction": "18b978d0bab66d3f40cf45f8ceab33fd5c6fe6bb031ae8f66c10721fdc5f43d7"
+      }
+    },
+    {
+      "id": "COHESIVE-ENDPOINT-IMPORT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual editorial integration",
+      "state": "integrated",
+      "result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "anchors": [
+        "The later endpoint-factorization record organizes seven acceptance rows"
+      ],
+      "assessment": "The manuscript imports the exact dependency organization into GAS, SYN and BV4 and identifies shared-line calculus and Galerkin/Feshbach execution as derived arrows. It states explicitly that three structured packet types are not three scalar parameters and that complete physical source acceptance remains open.",
+      "main_tex_lf_sha256": "8f4e04974e471ae5e731b898f96c0286a779a78c6f61c6cfcd31f497726a46d7",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
       }
     }
   ]

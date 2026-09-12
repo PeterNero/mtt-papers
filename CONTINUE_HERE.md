@@ -6,23 +6,40 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
 
 - The catalog contains 141 papers, and all 305 curated results have one integration home.
 - Flux v6 now preserves the established projective rank-nine hidden carrier and existential HYM connection. The numerical chamber, common visible endpoint and Bianchi data remain separate.
-- The cohesive manuscript is v2 and already contains the repair/noise/finite-mode recurrence distinction. Do not repeat the old v1 integration task.
-- The SM v3 finite structure, admitted electroweak primitive, Yukawa profiles and precision reconstruction are retained. A stricter physical-source theorem is a different research task.
+- The cohesive manuscript is now v3: explicit six-row residual, 25-block support,
+  conditional character reduction, metric comparison and source-factorization
+  imports are integrated. Its isometric-embedding statement is corrected.
+  The existing repair/noise/recurrence discussion is retained.
+- SM v4 now incorporates all 14 previously confirmed additions. Its finite
+  structure, admitted electroweak primitive, Yukawa profiles and precision
+  reconstruction survive. The effective 13/19-coordinate ledger is a profile
+  count, not independent predictive validation.
 
 ## Review Queue, Not Missing Mathematics
 
 `catalog/research-integration-reviews.json` is the manual contextual record. `catalog/research-ownership.json` and per-paper `RESEARCH_INTEGRATION.md` are generated views.
 
-42 result assignments have been reviewed: 22 integrated, one historical provenance record needing no new theorem, 18 additions needed and one summary needing details. The other 263 are unreviewed, not known omissions. A literal ID in metadata is not manuscript integration. A missing literal ID does not prove the mathematics is absent.
+51 result assignments have been reviewed: 46 integrated, one historical
+provenance record needing no new theorem, and four additions needed. The other
+254 are unreviewed, not known omissions. This pass resolved 15 of the former
+19 additions/details and reviewed nine formerly unreviewed assignments.
+A literal ID in metadata is not manuscript integration. A missing literal ID
+does not prove the mathematics is absent.
 
 Reviews bind LF-normalized manuscript bytes, exact result hashes and real source anchors. Do not refresh a changed hash without reading the change. Generating a new ownership view flags stale reviews; the repository verifier rejects them until reevaluated.
 
 ## Next Editorial Work
 
-1. Finish the SM v4 update from the 14 reviewed additions in its companion: gauge spectra/support, normalization/13-and-19-coordinate accounting, neutral/branch refinements and conditional axion results. Keep profile reconstruction separate from no-input prediction.
-2. Integrate the physical six-row/25-block residual compiler into the cohesive source discussion without treating a symbolic mask as an evaluated physical endpoint.
-3. Place the new finite-mode heat-trace/L11/recurrence package in a calculation companion. Keep FP III a standalone scalar disturbance and conditional homogenization paper; use it as a scoped consumer, not a collection of unrelated matrices.
-4. Continue contextual review of the other assigned results. Keep original source theorem ownership and distinguish current results from historical experiments.
+1. Place the four finite-mode heat-trace/L11/recurrence records in a calculation
+   companion. Keep FP III standalone and add only a scoped consumer discussion.
+   The current summary and immutable sources are in its integration record.
+2. Continue the 254 contextual reviews in the order and clusters recorded in
+   EDITORIAL_INTEGRATION_PLAN.md. SM has no remaining assigned imports.
+3. Review downstream uses of embedded isometries against the corrected cohesive
+   theorem. Cost pullback alone is not reducing operator intertwining.
+4. Do not repeat the completed SM/residual edits or treat review counts as
+   scientific closure counts. Preserve historical artifacts without importing
+   obsolete status fields as current.
 
 The Locality manuscript still needs the author's ontological wording review. Technical examples passing is not author approval.
 

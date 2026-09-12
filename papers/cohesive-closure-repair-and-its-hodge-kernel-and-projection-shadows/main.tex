@@ -17,7 +17,7 @@
 \title{\textbf{Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:}\\
 \large From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary}
 \author{Peter Nero}
-\date{September 2026, Version 2}
+\date{September 2026, Version 3}
 
 \begin{document}
 \maketitle
@@ -61,6 +61,24 @@ continuum-to-finite intertwiner remain open.  Thus closure repair explains
 why the operator and kernel language should recur, without promoting that
 recurrence into a completed theory of dynamics or quantization.
 \end{abstract}
+
+\section*{Version 3 Revision Note}
+\begin{description}
+\item[Supersedes] The local Version 2 manuscript; no new public release is implied.
+\item[Reason] The physical residual had only a schematic description, and the
+projection statement did not distinguish a unitary equivalence from an isometric
+embedding with transverse coupling.
+\item[Resolution] Displays the six additional residuals, their derivatives and
+the corrected 25-block rank-102 support. States the extra adjoint condition for
+embedded Hessian transport, explains transported metrics, and organizes the
+physical endpoint contract into three structured source types.
+\item[Retained result] The residual-Hessian, cohesive, descent, repair-jet and
+action-boundary theorems remain at their stated tiers. Previously established
+local and finite results are not reopened.
+\item[Remaining boundary] A structural support mask is not a numerical matrix;
+symmetry reduction requires endpoint equivariance. Physical source selection,
+the common analytic domain and the four-dimensional action remain distinct.
+\end{description}
 
 \section*{Version 2 Revision Note}
 \begin{description}
@@ -739,6 +757,19 @@ basins.
 
 \subsection{Tangent and spectral projection}
 
+For a finite connected cover with unitary local-system transitions, the
+linear equalizer is concretely
+\[
+\Gamma(\mathcal H)=\ker d_0,\qquad
+(d_0\psi)_{ij}=\psi_j-U_{ij}\psi_i.
+\]
+Transport along a spanning tree determines all components from one root
+vector; the remaining edges impose the cycle-holonomy fixed equations.
+Thus the global space is the intersection of those fixed spaces, not a
+tensor product over overlapping charts. Projectors descend only when
+\(U_{ij}P_i=P_jU_{ij}\). These are the finite linear conclusions of the
+local Cech--Hilbert record cited in the evidence section.
+
 Differentiate \eqref{eq:defect-descent} at a compatible zero-defect fixed
 point.  The Jacobians and Hessians intertwine, so the tangent heat semigroup
 preserves the linear Cech equalizer.  The Hilbert-space description is thus
@@ -758,21 +789,43 @@ PG=G_PP,
 \label{eq:functional-intertwining}
 \end{equation}
 where the Green identity is taken on the corresponding harmonic
-complements.  If an isometry \(T\) intertwines two residuals, their metrics,
-and their backgrounds, then it transports the full nonlinear cost jet,
-Hessian, heat semigroup, Green operator, spectral projectors, and admitted
-kernel functional calculus.
+complements. A unitary equivalence \(T\) of configuration spaces and a
+unitary equivalence \(U\) of residual spaces, satisfying
+\(\Phi'(Ta)=U\Phi(a)\), transport the nonlinear cost jet and the tangent
+functional calculus at compatible zero-defect backgrounds.
+
+For an isometric embedding rather than an onto equivalence, the cost jet
+is transported only as a pullback. Full tangent transport additionally
+requires, on the common operator domains,
+\[
+J'T=UJ,\qquad J'^\dagger U=TJ^\dagger.
+\]
+These identities make the embedded tangent range reducing for the
+self-adjoint Hessian. Without the second identity only
+\(T^\dagger H'T=H\) is implied, not \(H'T=TH\).
 \end{theorem}
 
 \begin{proof}
 The first three identities are consequences of the spectral theorem for a
-reducing subspace.  For the residual statement, suppose
-\(\Phi'(Ta)=U\Phi(a)\) and the residual pairings are carried by the isometry
-\(U\).  Differentiation transports every residual derivative.  The cost
-identity \(\calC'(Ta)=\calC(a)\) transports every cost derivative.  At the
-quadratic level this gives \(H'T=TH\), after which the spectral theorem gives
-the remaining functional-calculus identities.
+reducing subspace. The residual identity gives the pullback equality
+\(\calC'(Ta)=\calC(a)\) and hence equality of all pulled-back cost
+derivatives. At a zero-defect background the two displayed derivative
+identities give
+\(H'T=J'^\dagger J'T=J'^\dagger UJ=TJ^\dagger J=TH\).
+For onto unitary maps the adjoint identity follows from the chain identity.
+For an embedding it is an extra hypothesis. The common-domain self-adjoint
+intertwining then gives the claimed functional calculus.
 \end{proof}
+
+For example, let \(\Phi(x)=x\), \(\Phi'(x,y)=x+y\),
+\(Tx=(x,0)\), and \(U=1\). The residual and cost pull back exactly, but
+\[
+H=1,\qquad H'=\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
+H'Tx=(x,x)\ne(x,0)=THx .
+\]
+The transverse response prevents reduction. This explains why a
+dimension match, an isometric compression or a compatible cost restricted
+to a subspace cannot replace a full operator intertwiner.
 
 For a non-isometric Fourier--Mukai or BHT transform, derived equivalence alone
 is insufficient.  It may preserve Ext groups, Yoneda products, and the formal
@@ -781,6 +834,27 @@ Maurer--Cartan deformation problem after dg enhancement
 automatically preserve the Hermitian metric, adjoint, Hodge spectrum, or
 numerical kernel.  Those require a transported metric theorem or a quantified
 comparison defect.
+
+The transported-metric result makes the latter task concrete. For a bounded
+invertible chain/product map \(T\), with domains also carried by \(T\), set
+\[
+g_{\rm tr}=(T^{-1})^\dagger g\,T^{-1}.
+\]
+Then \(T\) is unitary for this transported metric. If a separately selected
+physical metric is \(g_{\rm phys}(x,y)=g_{\rm tr}(x,Ey)\), its positive
+distortion \(E\) changes the degree-\(k\) adjoint by
+\[
+D_k^{\dagger_{\rm phys}}
+ =E_k^{-1}D_k^{\dagger_{\rm tr}}E_{k+1},\qquad
+C_k=E_{k+1}D_k-D_kE_k .
+\]
+Thus \(C_k=0\) is the metric-chain compatibility test. The exact witness
+in the transported-metric record has transported Hodge matrix \(I_2\)
+but physical matrix \(\operatorname{diag}(4,1/9)\). Polar normalization
+does not automatically repair the product: if \(T=US\), its positive
+factor must itself respect the differential and product for \(U\) to be
+a dg-algebra map. These are explicit comparison tests, not a construction
+of the physical BHT operator or its HYM metric.
 
 \section{Higher repair jets and graph shadows}
 \label{sec:graphs}
@@ -1042,8 +1116,9 @@ The preceding results can now be stated as one composition theorem.
 \label{thm:master}
 Suppose the following data are supplied:
 \begin{enumerate}
-\item a metric configuration space with a twice differentiable defect
-section \(\Phi\) and an exact-zero background \(p_*\);
+\item a metric configuration space with a smooth defect
+section \(\Phi\), smooth metric data and an exact-zero background \(p_*\)
+(a \(C^N\) source gives only the cost jet through the available order);
 \item compatible local isometric/unitary descent data;
 \item on the cohesive branch, an integrable possibly twisted
 superconnection whose endomorphism algebra realizes the defect complex;
@@ -1073,9 +1148,15 @@ K_f(x,y)=\langle x|f(H)|y\rangle,\\
 \end{gathered}
 \label{eq:master-chain}
 \end{equation}
-The nonlinear flow, tangent calculus, and existing basin limits descend.
-Compatible projections and isometric intertwiners transport every object in
-\eqref{eq:master-chain}.
+The nonlinear flow, tangent calculus, and existing basin limits descend
+through the compatible local chart equivalences.
+Reducing projections transport the tangent functional calculus.
+An onto unitary equivalence of the full residual and metric transports
+every object in \eqref{eq:master-chain}. An embedded nonlinear subsystem
+additionally needs invariance of its repair vector field; exact retained
+graph transport requires compatibility of the full typed vertex, grading
+and contraction data, as in the diagrammatics theorem. Reduction of the
+quadratic operator alone does not supply these nonlinear hypotheses.
 
 The theorem does not identify \(\calC\) with a signed physical action.  Such
 an identification requires a variational anchor or a separately typed
@@ -1160,6 +1241,124 @@ domains supply every row}.  The current corpus has not yet supplied that
 complete physical object.  Equation \eqref{eq:augmented-hessian} is therefore
 the correct target theorem, not a declaration that the target has already
 been reached.
+
+\subsection{The explicit residual and its block support}
+
+The full-residual record improves the schematic notation in
+\eqref{eq:seven-lane} to an explicit differential-operator compiler. Write
+\(\nu=\|\Omega\|_\omega\), and reserve \(c_{\rm vol}\) for the volume
+normalization constant, not a third Chern class. The six extra rows are
+\begin{align}
+\mu_{TX}&=R_\Theta\wedge\omega^2,&
+\mu_V&=F_V\wedge\omega^2,&
+\mu_W&=F_W\wedge\omega^2,\nonumber\\
+\mathcal B&=d(\nu\omega^2),\nonumber\\
+\mathcal A&=dH-\frac{\alpha'}4
+ \bigl(\operatorname{tr}R_\Theta^2-\operatorname{tr}F_V^2
+                         -\operatorname{tr}F_W^2\bigr),\nonumber\\
+\mathcal N&=i\Omega\wedge\bar\Omega-c_{\rm vol}\omega^3.
+\label{eq:explicit-six-rows}
+\end{align}
+Their target is the orthogonal sum of the six spaces
+\[
+\begin{gathered}
+\Omega^6(\ad TX),\quad\Omega^6(\ad V_3),\quad\Omega^6(\ad W_9^\tau),\\
+\Omega^5,\quad\Omega^4,\quad\Omega^6 .
+\end{gathered}
+\]
+This is a choice of positive repair metric after a common scale is
+factored out. It is not an identification with a Lorentzian action.
+
+At a fixed complex-structure chart, put
+\(a=(a_{TX},a_V,a_W)\). Exterior differentiation and the covariant
+curvature variation give
+\begin{align}
+K_{TX}v&=d_\Theta a_{TX}\wedge\omega^2+
+               2R_\Theta\wedge\omega\wedge\dot\omega,\nonumber\\
+K_Vv&=d_{A_V}a_V\wedge\omega^2+
+               2F_V\wedge\omega\wedge\dot\omega,\nonumber\\
+K_Wv&=d_{A_W}a_W\wedge\omega^2+
+               2F_W\wedge\omega\wedge\dot\omega,\nonumber\\
+K_{\mathcal B}v&=d\{\nu(2\omega\wedge\dot\omega+
+                                \dot{\log\nu}\,\omega^2)\},\nonumber\\
+K_{\mathcal A}v&=d\dot H-\frac{\alpha'}2
+  \{\operatorname{tr}(R_\Theta\wedge d_\Theta a_{TX})
+       -\operatorname{tr}(F_V\wedge d_{A_V}a_V)
+       -\operatorname{tr}(F_W\wedge d_{A_W}a_W)\},\nonumber\\
+K_{\mathcal N}v&=i(\dot\Omega\wedge\bar\Omega+
+                      \Omega\wedge\dot{\bar\Omega})
+                      -3c_{\rm vol}\omega^2\wedge\dot\omega .
+\label{eq:explicit-K}
+\end{align}
+Here \(\dot{\log\nu}=\operatorname{Re}\langle\dot\Omega,\Omega\rangle/
+\|\Omega\|^2-\tfrac12\operatorname{tr}_g\dot g\) in the packet's fixed-chart
+metric convention. Varying complex structure requires the corresponding
+typed chart terms as well; these formulas do not supply their endpoint
+coefficients. In particular the factor \(\alpha'/2\), rather than
+\(\alpha'/4\), is forced by differentiating the curvature square.
+
+The rank-102 complex fiber is
+\[
+\mathcal Q=T^*X\oplus\ad(TX)\oplus\ad(V_3)
+              \oplus\ad(W_9^\tau)\oplus TX,\qquad
+\mathbf r=(3,8,8,80,3).
+\]
+It is not the full form-augmented Hilbert space and not a finite
+discretization dimension. In this lane order the extra-row incidence is
+\[
+I_K=\begin{pmatrix}
+1&1&0&0&1\\
+1&0&1&0&1\\
+1&0&0&1&1\\
+1&0&0&0&1\\
+1&1&1&1&1\\
+1&0&0&0&1
+\end{pmatrix}.
+\]
+A one means allowed dependence, not a certified nonzero coefficient.
+The anomaly row has a common target for all five lanes. Its Gram square
+therefore allows all 25 ordered blocks and \(102^2=10\,404\) ordered
+fiber positions. Omitting it had allowed only 19 blocks and 7\,716
+positions. The six cross-gauge blocks contribute
+\(2(8\cdot8+8\cdot80+8\cdot80)=2\,688\) positions.
+They must not be forced to zero before evaluating the same-source
+operator. Nor may the real Bianchi row be deleted as already contained in
+the complex without a same-domain isometry proving that exact redundancy.
+
+This correction changes the possible coupling pattern, not the
+positivity identity. On the common closed form domain,
+\[
+H_{\rm phys}=\Delta_{\mathcal Y,1}+K^\dagger K
+ \ \geq\ \Delta_{\mathcal Y,1},\qquad
+\ker H_{\rm phys}=\ker\Delta_{\mathcal Y,1}\cap\ker K .
+\]
+The finite witness in the source has
+\(\Delta=\operatorname{diag}(0,0,1,2,4)\) and \(K=(1,1,0,0,0)\).
+It removes one of two harmonic directions and retains a positive gap
+of one. That example shows why neither the harmonic projector nor
+a scalar rescaling of the bare Hodge operator can be assumed.
+
+There is also a lawful conditional sparsification. If the physical
+endpoint, residual, metric and Galerkin projection all respect the
+projective \(E[3]\) action, character orthogonality removes unequal-character
+blocks. The hidden adjoint multiplicities are 8 for the trivial
+character and 9 for each of eight others. If, additionally, all 22
+non-hidden modes are trivial, the count becomes
+\[
+30^2+8\cdot9^2=1\,548 .
+\]
+The general count is
+\(\sum_\chi(m_{{\rm ext},\chi}+m_{{\rm hid},\chi})^2\).
+The value 1\,548 is not a selected physical matrix count until these
+representation and invariance hypotheses are verified. It complements,
+and does not retract, the unconditioned 25-block support.
+
+These are imported compiler results, not newly proved source existence.
+The earlier candidate audit in that record is historical. In particular,
+later hidden-carrier and existential HYM progress retained in the Flux
+paper is not undone by its old status fields. A common physical visible
+endpoint, all differential residual rows and their numerical coefficients
+are the stronger input needed here.
 
 \subsection{The shared circle}
 
@@ -1339,6 +1538,23 @@ which arrow is missing; it does not send the program back to the beginning.
 \section{Frontier theorem}
 \label{sec:frontier}
 
+The later endpoint-factorization record organizes seven acceptance rows
+into three structured sources:
+\begin{enumerate}
+\item \textbf{GAS}, geometry and action: the physical endpoint and signed
+upper action;
+\item \textbf{SYN}, spectral synthesis: the analytic intertwiner and
+compatible chain/product contraction data;
+\item \textbf{BV4}, a BV-compatible four-dimensional compactification.
+\end{enumerate}
+Shared-line functional calculus and the Galerkin/Feshbach execution are
+then consequences of compatible GAS and SYN data, rather than two more
+independent source objects. Three structured sources are not three scalar
+parameters. None of the three complete physical packages is accepted
+in the cited record. This dependency reduction preserves the exact
+finite constructions while preventing another round of inventing
+independent kernels for already derived arrows.
+
 The decisive next theorem is not another abstract Hessian statement.  That
 part is now complete.  It is a selected-source theorem of the following
 form.
@@ -1467,6 +1683,24 @@ Reproduction repository}.  The principal result records are:
 \item the cyclic Maurer--Cartan action-descent record; and
 \item the q79 string cyclic-cotangent boundary record.
 \end{itemize}
+Version 3 additionally imports:
+\begin{itemize}
+\item the explicit six-row/25-block compiler:
+\texttt{q79\_v3w9\_full\_residual};
+\item its conditional character reduction:
+\texttt{q79\_rank102\_qutrit\_reduction};
+\item the bounded transported-metric record:
+\texttt{preprojection\_bht\_transported\_metric};
+\item the endpoint factorization record, listed under\\
+\texttt{causal\_base\_q79\_seven\_row\_endpoint\_factorization\_packet}.
+\end{itemize}
+The local Cech equalizer, nonlinear descent, nonzero-defect example and
+phase-loss and damping witnesses are explicitly compared in the current
+contextual integration ledger. These imports use the frozen result
+manifest at
+\href{https://github.com/PeterNero/mtt-results-repro/tree/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results}
+{\texttt{f141a20ea23c}}; the integration companion gives each artifact
+hash and manuscript location.
 Each record declares its theorem tier, source artifacts, verifier, zero-fit
 status, and nonpromotion guards.  The exact witnesses use rational or
 symbolic arithmetic where stated.  They do not select the physical q79

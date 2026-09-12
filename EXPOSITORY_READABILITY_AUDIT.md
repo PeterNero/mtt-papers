@@ -1,6 +1,6 @@
 # MTT Expository Readability Audit
 
-Generated: 2026-09-11
+Generated: 2026-09-12
 
 This is a triage instrument, not a prose-quality certificate. The heuristic score is preserved in the JSON, while an effective `reviewed` or `reference_ready` state is assigned only through the explicit human-review decision file.
 
@@ -20,7 +20,7 @@ Canonical papers audited: **141**.
 | --- | ---: |
 | argument_flow | 32 |
 | conclusion | 3 |
-| concrete_foothold | 24 |
+| concrete_foothold | 23 |
 | object_intuition | 84 |
 | orientation | 66 |
 | result_interpretation | 7 |
@@ -33,7 +33,7 @@ Canonical papers audited: **141**.
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
 | reviewed | critical | `fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce` | 43 | 69.9 | 7/7 | - |
 | reviewed | moderate | `wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8` | 33 | 392.8 | 7/7 | - |
-| reviewed | moderate | `cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows` | 19 | 252.5 | 7/7 | - |
+| reviewed | moderate | `cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows` | 19 | 306.6 | 7/7 | - |
 | reviewed | critical | `the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38` | 19 | 128.5 | 7/7 | - |
 | reviewed | major | `the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113` | 18 | 170.3 | 6/7 | object_intuition |
 | reviewed | major | `the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f` | 18 | 171.2 | 7/7 | - |
@@ -96,7 +96,7 @@ Canonical papers audited: **141**.
 | reviewed | moderate | `constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014` | 7 | 251.7 | 7/7 | - |
 | reviewed | light | `entanglement-locality-and-measurement-from-coherent-sec-110e8cbe` | 7 | 401.0 | 6/7 | object_intuition |
 | reviewed | moderate | `finite-coherent-projection-in-modal-triplet-theory-a-co-064c2edb` | 7 | 269.3 | 4/7 | orientation, object_intuition, argument_flow |
-| reviewed | light | `flux-compactifications-in-heterotic-string-theory-expli-08b38155` | 7 | 420.1 | 6/7 | object_intuition |
+| reviewed | light | `flux-compactifications-in-heterotic-string-theory-expli-08b38155` | 7 | 534.6 | 6/7 | object_intuition |
 | reviewed | moderate | `measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e` | 7 | 334.3 | 4/7 | orientation, argument_flow, result_interpretation |
 | reviewed | light | `modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8` | 7 | 402.7 | 5/7 | orientation, argument_flow |
 | reviewed | moderate | `mtt-corrected-propagators-and-uv-behaviour-canonical-co-f29ea34f` | 7 | 253.0 | 6/7 | object_intuition |
@@ -107,7 +107,7 @@ Canonical papers audited: **141**.
 | reviewed | moderate | `fermions-in-loop-quantum-gravity-from-modal-triplet-the-c9d451aa` | 6 | 309.3 | 6/7 | orientation |
 | reviewed | moderate | `modal-triplet-theory-and-asymptotic-safety-asymptotic-s-dc3ce0c2` | 6 | 262.8 | 4/7 | orientation, object_intuition, argument_flow |
 | reviewed | moderate | `modal-triplet-theory-from-mtt-to-a-uv-finite-unitary-qu-9a90a5c0` | 6 | 354.2 | 7/7 | - |
-| reviewed | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 6 | 501.8 | 4/7 | orientation, object_intuition, concrete_foothold |
+| reviewed | light | `modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1` | 6 | 821.0 | 5/7 | orientation, object_intuition |
 | reviewed | light | `modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927` | 6 | 464.5 | 5/7 | orientation, object_intuition |
 | reviewed | light | `photons-entanglement-and-null-updating-in-modal-triplet-theory` | 6 | 541.2 | 5/7 | orientation, object_intuition |
 | reviewed | light | `quantum-field-theory-reconstruction-from-coherence-basi-ef12097a` | 6 | 519.3 | 5/7 | orientation, object_intuition |
