@@ -14,7 +14,9 @@ Curved repair germs split cleanly into zero, central nonzero and noncentral curv
 
 Action construction and normalization contract; physical action selection remains separate.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_curved_cyclic_repair_germ/artifact.json); SHA-256 `b3a3c82a427a164d6392b60bea1f1edd220ccf2ca34e5d37c49b8327d80bd997`.
 
@@ -26,7 +28,9 @@ A degree-three cyclic dg algebra canonically transgresses its Maurer-Cartan resi
 
 Action construction and normalization contract; physical action selection remains separate.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_cyclic_mc_action_descent/artifact.json); SHA-256 `f2be34f379b0940c6e056f7f78b722fd4118d76fabfa7c54c0429654cfe977f7`.
 
@@ -38,7 +42,9 @@ The central shared line extends to the q79 string DGLA but acts trivially on its
 
 Action construction and normalization contract; physical action selection remains separate.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_string_cyclic_cotangent/artifact.json); SHA-256 `84aaa6a28a2ecb2d239d6e3c2cfe363104c1b44ceb79f1ac919634edc8a4f8e3`.
 
@@ -50,7 +56,9 @@ A residual admits a direct scalar action for a declared variational anchor exact
 
 Action construction and normalization contract; physical action selection remains separate.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_variational_anchor_multiplier_lift/artifact.json); SHA-256 `de69f05c11f0e21e128a33924bd48090aac35194238b9ec05a3f62f56f304d31`.
 

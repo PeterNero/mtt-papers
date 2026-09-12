@@ -14,9 +14,17 @@ Current non-looping Fixed Points consolidation: corrected analytic domains, sour
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `addition_needed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/fixed_points_frontier_consolidation_20260911/artifact.json); SHA-256 `c27196ef86037725588e128dd6fd8e93d7a665629928157d4e4a047ce664a0c8`.
+
+Reviewed 2026-09-12: The canonical scalar disturbance/OU paper is not the supplied finite-spatial-mode heat-trace and L11 calculation paper. Its existing stochastic discussion does not contain the cubic moment, 489-dimensional calculation or compact-resolvent recurrence result. Assignment to this family did not integrate those results.
+
+- `main.tex:36`: `\begin{document}`
+
+Remaining: Keep FP III standalone. Decide a calculation-companion owner for the new finite-mode package, then add a scoped citation and driver/recurrence distinction to FP III rather than appending unrelated matrix calculations.
 
 ## fixed_points_cubic_heat_trace_bound
 
@@ -26,9 +34,17 @@ The exact independent-angle cubic identity replaces the earlier 7R^6 envelope an
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `addition_needed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/fixed_points_cubic_heat_trace_bound/artifact.json); SHA-256 `affd30c6fa9ca9d5c8e08f0349cc92b419afd84ade8d666125f05af483dba54a`.
+
+Reviewed 2026-09-12: The canonical scalar disturbance/OU paper is not the supplied finite-spatial-mode heat-trace and L11 calculation paper. Its existing stochastic discussion does not contain the cubic moment, 489-dimensional calculation or compact-resolvent recurrence result. Assignment to this family did not integrate those results.
+
+- `main.tex:36`: `\begin{document}`
+
+Remaining: Keep FP III standalone. Decide a calculation-companion owner for the new finite-mode package, then add a scoped citation and driver/recurrence distinction to FP III rather than appending unrelated matrix calculations.
 
 ## fixed_points_l11_phase_channel
 
@@ -38,9 +54,17 @@ A 489-dimensional seven-mode L11 finite calculation gives a phase-aware vector e
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `addition_needed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/fixed_points_l11_phase_channel/artifact.json); SHA-256 `a4f90611cc10dff2ad8945b0f05d19bb9b7373bf64b1b3b7617c4fa4928f0f0f`.
+
+Reviewed 2026-09-12: The canonical scalar disturbance/OU paper is not the supplied finite-spatial-mode heat-trace and L11 calculation paper. Its existing stochastic discussion does not contain the cubic moment, 489-dimensional calculation or compact-resolvent recurrence result. Assignment to this family did not integrate those results.
+
+- `main.tex:36`: `\begin{document}`
+
+Remaining: Keep FP III standalone. Decide a calculation-companion owner for the new finite-mode package, then add a scoped citation and driver/recurrence distinction to FP III rather than appending unrelated matrix calculations.
 
 ## fixed_points_finite_mode_recurrence_boundary
 
@@ -50,7 +74,15 @@ For the supplied confining finite-spatial-mode Hamiltonian, compact resolvent an
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `addition_needed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/fixed_points_finite_mode_recurrence_boundary/artifact.md); SHA-256 `7bdcad1f8dc2b752e1e4ada03fcea6e7c95d4dbf5e065f04718096fcc507f798`.
+
+Reviewed 2026-09-12: The canonical scalar disturbance/OU paper is not the supplied finite-spatial-mode heat-trace and L11 calculation paper. Its existing stochastic discussion does not contain the cubic moment, 489-dimensional calculation or compact-resolvent recurrence result. Assignment to this family did not integrate those results.
+
+- `main.tex:36`: `\begin{document}`
+
+Remaining: Keep FP III standalone. Decide a calculation-companion owner for the new finite-mode package, then add a scoped citation and driver/recurrence distinction to FP III rather than appending unrelated matrix calculations.
 

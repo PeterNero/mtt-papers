@@ -389,8 +389,8 @@
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 4495,
-      "sha256_lf": "eb91f1e14c73924437fa37c0a0278f91e4e6d449f04fe5047727dabfdf53a851"
+      "bytes_lf": 4611,
+      "sha256_lf": "939cc4d382f9fe92496b7ed90021f1238b0497332e3b8365e383a9ca062b3a86"
     },
     "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/REVISION_AUDIT.md": {
       "bytes_lf": 12540,
@@ -413,8 +413,8 @@
       "sha256_lf": "11cfb5b6b4161f1e60935127c22c0619bfc67286dbc229d044ca2f4641bf8fbd"
     },
     "papers/closure-strain-geometry-local-normal-forms-and-conditio-b62ade60/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 1034,
-      "sha256_lf": "b174bad85830b005409854844349781c84fb38c9768d516e22d176515e1962a6"
+      "bytes_lf": 1052,
+      "sha256_lf": "675ee357cf69497e2c7405ca8f4f6b27b91753b4aa90b6db54f7964c823719ef"
     },
     "papers/closure-strain-geometry-local-normal-forms-and-conditio-b62ade60/REVISION_AUDIT.md": {
       "bytes_lf": 2435,
@@ -601,8 +601,8 @@
       "sha256_lf": "483597dae8e82e68b31d2e187e22f4b8c8ff8821621d782d8162445bf16fbdac"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 63202,
-      "sha256_lf": "cf27abbcc479a47e036769841d991d1001e14c0b1d83cc56cec0e961a983f528"
+      "bytes_lf": 66783,
+      "sha256_lf": "9fa1f46d4b5dc67f80fb1c14bdecff7481dd9ceb740f042e38e93a128ccc0aa1"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/REVISION_AUDIT.md": {
       "bytes_lf": 4129,
@@ -1217,8 +1217,8 @@
       "sha256_lf": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 3803,
-      "sha256_lf": "d6d89558882159780bde4880cc726d754f8d39ba4eec9d381463dd8f53a6c1e8"
+      "bytes_lf": 6363,
+      "sha256_lf": "7c43c6065f1e18cba5b7a771c230b134ee550ffbe08c8793b1bae70e94f6104e"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/REVISION_AUDIT.md": {
       "bytes_lf": 5163,
@@ -1321,28 +1321,28 @@
       "sha256_lf": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 56428,
-      "sha256_lf": "209d2bd91880b9de292b31752f0614337ade695cdaf60a7d23da7a7d5a066def"
+      "bytes_lf": 60836,
+      "sha256_lf": "47a8a21d8dde2c2bd693bfae76381be11cc6b12bf23867c1cf015d885bf5e3b4"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/REVISION_AUDIT.md": {
-      "bytes_lf": 3576,
-      "sha256_lf": "4c1428e4236f3ca58fdf141023b7c4551bd0939ebdfadb3e01705aff1f824f17"
+      "bytes_lf": 4309,
+      "sha256_lf": "6f96c4af6d585b95ac1961d2cf613fa158ef61b219718c3ff72d5c8fd85f7d8e"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/bundle_audit_report.json": {
       "bytes_lf": 441,
       "sha256_lf": "ac9b0fa25d6cdda0be1d94350ce57fc225a264b6c610d2f9c5da553d5bddf6d2"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/main.tex": {
-      "bytes_lf": 37057,
-      "sha256_lf": "6661702d6e38f645126c40cde66f2d92e745c214ed6422290f02cebc178a5b50"
+      "bytes_lf": 39711,
+      "sha256_lf": "58e27c4ffcd28f4470835365ac83448dd8f612f7ac5f047496eb6f9a40f3499e"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/metadata.json": {
-      "bytes_lf": 6576,
-      "sha256_lf": "d0d6568676abf9ecac31b48d707466ec40a9ccf35a23958de2e5f509d0bd1759"
+      "bytes_lf": 6979,
+      "sha256_lf": "ea1598080bd1bb81d04799ee4e072001ad269f1bd951d1e18415771ec94043a1"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/paper.md": {
-      "bytes_lf": 36318,
-      "sha256_lf": "7087bf855b9ee87902a0125caddc56395f53335e5c859c8fdb1671ae84f987c5"
+      "bytes_lf": 38930,
+      "sha256_lf": "c186a806b78d58a46b262794e96473e7b5e489f63c0b711798f019d48c255cc9"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/references.bib": {
       "bytes_lf": 4282,
@@ -1537,8 +1537,8 @@
       "sha256_lf": "7b8c57afbdff8b5c4d3a86b3455f3442724f12c538b1b260044769d86850de23"
     },
     "papers/locality-coherent-alternatives-and-records-in-mtt/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 1108,
-      "sha256_lf": "95b5d7e2789847667716ba00c387968bbc14b12e2b6d0c81539274ccbabd9058"
+      "bytes_lf": 1126,
+      "sha256_lf": "ad32e731a2b4c52b23b47f92e598c60c86f11ccf4e1b7a32f516ed6e2523289a"
     },
     "papers/locality-coherent-alternatives-and-records-in-mtt/REVISION_AUDIT.md": {
       "bytes_lf": 3145,
@@ -1701,8 +1701,8 @@
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 1253,
-      "sha256_lf": "767c0f72b167db6f318c1a80c6f416b69a491f0074f99bb2d070e42bb8461b6d"
+      "bytes_lf": 1282,
+      "sha256_lf": "bf4a718d2c8cede131ca7eb18b5b6214000bee295ab8024f55c3b8ed78c1ec00"
     },
     "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/REVISION_AUDIT.md": {
       "bytes_lf": 2483,
@@ -1937,8 +1937,8 @@
       "sha256_lf": "a4b1aff3d1acca88f3a4dfd68f73ac812fea371eeac7f8302d5f02de05f5232e"
     },
     "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 35936,
-      "sha256_lf": "1f175c1956c37c6131c2cd77eaacfe0c8dccfdc878b304ad7723ca355c537e08"
+      "bytes_lf": 37328,
+      "sha256_lf": "3f55fd5e6cdf8811964fe5d6a2dba9c9ae710665411a7b058b316c0ff7630f96"
     },
     "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/REVISION_AUDIT.md": {
       "bytes_lf": 4367,
@@ -2089,8 +2089,8 @@
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 8689,
-      "sha256_lf": "fcb141031ca94f1b29b09292d5dd45fa124cba4e8da7a249d7562b366d17ad3f"
+      "bytes_lf": 9066,
+      "sha256_lf": "b0559e1ceb6543a31bfa0ef676260213359a8c4317e24686ebaf4207debf2058"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/REVISION_AUDIT.md": {
       "bytes_lf": 12683,
@@ -2113,8 +2113,8 @@
       "sha256_lf": "0396ad7bcdb2362410cab7307cb1e762f1d97e60a52a33844f15c72b26e8e20d"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 18757,
-      "sha256_lf": "e93f831532bbbe796f71c485aa18ec98ace1ae5b699fffda7668a545f75b2e21"
+      "bytes_lf": 37471,
+      "sha256_lf": "3138fa83aa0c39785e36494cdb27dc4ffa14f5f82009f6a4056622e78ed7a618"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/REVISION_AUDIT.md": {
       "bytes_lf": 7819,
@@ -2161,8 +2161,8 @@
       "sha256_lf": "e90bc64f644864aaf01d07d03bbb632342b6e3337065697e1fbcc8f2e8d9fef7"
     },
     "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 25453,
-      "sha256_lf": "4a6cb222366efc440933608c17fa623c820711c2acfeff61675fc0bb4b4c8ccf"
+      "bytes_lf": 26526,
+      "sha256_lf": "f732124f90eb34cce8e038624088ade4763cf046b2102748ad651628e248e721"
     },
     "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/REVISION_AUDIT.md": {
       "bytes_lf": 3402,
@@ -2209,8 +2209,8 @@
       "sha256_lf": "6300d69da7d0ccaed8bb3f2a8affe87e7fc8e87a6b65afc691000a17f04e8845"
     },
     "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 1663,
-      "sha256_lf": "f339eaa57d3098da337f347f571de42350dfeccb500b935430938e182460e008"
+      "bytes_lf": 1721,
+      "sha256_lf": "fe9520d7e74efe2eba38d4ad78adeafc228e507986cb1ccf3b44399e606fc37d"
     },
     "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/REVISION_AUDIT.md": {
       "bytes_lf": 7381,
@@ -2237,8 +2237,8 @@
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 4203,
-      "sha256_lf": "26f4533d94424a944b896df468fd24d3416f52b1b1a69cc0bd2d85b02eb1cb43"
+      "bytes_lf": 4377,
+      "sha256_lf": "94859d78ccec9a5143e024c8210b52fd01f675d65d8a491be19fea0009b54bb6"
     },
     "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/REVISION_AUDIT.md": {
       "bytes_lf": 2498,
@@ -3113,8 +3113,8 @@
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     "papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 22222,
-      "sha256_lf": "43eebb1f2175f18d86485c415b61831f6698a99ed0703d008f5410bfa393896c"
+      "bytes_lf": 23063,
+      "sha256_lf": "3a7e3855f3ffd6665cccc4cea60c97377e995faee093250f4be6006913c74b77"
     },
     "papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/REVISION_AUDIT.md": {
       "bytes_lf": 3150,
@@ -3605,8 +3605,8 @@
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 3494,
-      "sha256_lf": "8901d374acb82bfbd9b8f3d2a1d0ecc5d791ae25d7e7f529288cbad1ff04f4f5"
+      "bytes_lf": 3639,
+      "sha256_lf": "ea5f9636a15e604b7b4ba8878c2c695e1d6d68d58941ab9c8e75234f7ba6d204"
     },
     "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/REVISION_AUDIT.md": {
       "bytes_lf": 5566,
@@ -3655,5 +3655,5 @@
   },
   "normalization": "CRLF and CR converted to LF; all other bytes preserved",
   "schema": "mtt.portable-text-hashes.v1",
-  "source_ref": "b728c9ec99a8ee5639d7cced2ede2682893ff3d3"
+  "source_ref": "557b3419f13f33284790fa8cf2fd6e7c76e5f6bf"
 }

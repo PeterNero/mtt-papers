@@ -14,7 +14,9 @@ Current preprojection mathematical-language atlas and claim boundaries.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/mathematical_language_atlas/artifact.md); SHA-256 `38358a3a03d3fcb2026434fcfd76a3d2d6059f05d2dde6d94de70cceb8d144ac`.
 
@@ -26,9 +28,20 @@ Twisted cohesive superconnection, untwisted endomorphism dg algebra and stratifi
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `explicit_reference_present_review_context`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `integrated`.
+
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cohesive_superconnection/artifact.json); SHA-256 `8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8`.
+
+Reviewed 2026-09-12: The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem.
+
+- `main.tex:211`: `Covariant residual-Hessian identity`
+- `main.tex:466`: `Endomorphism untwisting`
+- `main.tex:580`: `Hodge and kernel package`
+- `main.tex:1105`: `The q79 benchmark and its exact boundary`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## q79_maurer_cartan_repair
 
@@ -38,7 +51,9 @@ Maurer-Cartan repair residual, Hodge tangent and conditional derived-transform i
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `explicit_reference_present_review_context`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_maurer_cartan_repair/artifact.json); SHA-256 `4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6`.
 
@@ -50,7 +65,9 @@ Global Fitting-sheaf descent and spectral-divisor class match.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_global_fitting_descent/artifact.json); SHA-256 `5a841918a978ea9fb8b192a137c2b40603ab2330829690e1454cb4b51f0c9a30`.
 
@@ -62,7 +79,9 @@ Local Hilbert equalizer, holonomy-fixed branch multiplicity and compatible coher
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `explicit_reference_present_review_context`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/local_cech_hilbert_descent/artifact.json); SHA-256 `b6d9a73e29ec3b2e832c99544efa1a8b364db84e0b9ca91c99ad8d26a9e99912`.
 
@@ -74,7 +93,9 @@ Nonlinear defect-cost repair flow, fixed-point and basin descent under isometric
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `explicit_reference_present_review_context`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/local_closure_repair_descent/artifact.json); SHA-256 `b83aadb5b7d611f11db0d5c307b897cc7230e0f7ebf06681beae4abbe789cafc`.
 
@@ -86,7 +107,9 @@ Canonical count trajectory and state-valued path instrument, with deterministic 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_pathwise_repair_trajectory/artifact.json); SHA-256 `0c858afb9956ea2afd6dd695feceebc7ade263cca35fe7ba149ba26ca329580d`.
 
@@ -98,7 +121,9 @@ Rank-zero large-gauge kernel with injective dense nonclosed two-real-parameter i
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_bk3_rank_zero_kernel/artifact.json); SHA-256 `edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b`.
 
@@ -110,9 +135,17 @@ Complete six-row symbolic physical residual and corrected rank-102 structure; co
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `summary_present`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_v3w9_full_residual/artifact.json); SHA-256 `937039df105881a4dcbf1ed31d86ab842b5da2ee6df832e7c834d9eb71cae441`.
+
+Reviewed 2026-09-12: The paper explains the full physical defect as a proposed source and retains the K-dagger-K augmentation. It does not display the corrected 25-block rank-102 mask or all six symbolic row definitions of the later execution packet.
+
+- `main.tex:1129`: `The proposed full defect and why it remains proposed`
+
+Remaining: Import the exact six-row/25-block compiler with its owner citation, without replacing the open numerical endpoint by the symbolic mask.
 
 ## q79_continuum_finite_intertwiner_cutset
 
@@ -122,7 +155,9 @@ Same-source continuum-to-finite intertwiner cutset.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_continuum_finite_intertwiner_cutset/artifact.json); SHA-256 `565219b949d9f82cb39090489994450f7dfc2a54e9abbb4a28332a3ab2d73891`.
 
@@ -134,7 +169,9 @@ Exact character-selection rule and conditional reduction of the rank-102 structu
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_rank102_qutrit_reduction/artifact.json); SHA-256 `18b978d0bab66d3f40cf45f8ceab33fd5c6fe6bb031ae8f66c10721fdc5f43d7`.
 
@@ -146,7 +183,9 @@ A stable nonzero-defect critical point can have a residual-pressure Hessian term
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `explicit_reference_present_review_context`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_nonzero_defect_hessian_witness/artifact.json); SHA-256 `1c17362537af94ecbbb40de8944ae0c1fd583aa3ffd31231b55e0c6eeef91d15`.
 
@@ -158,7 +197,9 @@ Distinct phase-bearing first-order charges can share the same positive square, s
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_first_order_phase_loss_witness/artifact.json); SHA-256 `9a0a92dad8ad6d461b0d67c61c8b96c266d43c94a1f83a626063c786805a1496`.
 
@@ -170,7 +211,9 @@ One qutrit central extension carries the Weyl phase, Fourier automorphism and a 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_qutrit_central_extension_witness/artifact.json); SHA-256 `475384a4bf2415a95274ea176e5e186ba989e47cc553598c6b9a5acf96147f8f`.
 
@@ -182,9 +225,20 @@ Covariant squared-defect Hessian identity including the residual-contracted seco
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `explicit_reference_present_review_context`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `integrated`.
+
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_covariant_residual_hessian/artifact.json); SHA-256 `247b1b52198dc250f80293e6807f1d2fc7ac126a930c9642ef2b5a3fb7a74921`.
+
+Reviewed 2026-09-12: The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem.
+
+- `main.tex:211`: `Covariant residual-Hessian identity`
+- `main.tex:466`: `Endomorphism untwisting`
+- `main.tex:580`: `Hodge and kernel package`
+- `main.tex:1105`: `The q79 benchmark and its exact boundary`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_reversible_dissipative_repair
 
@@ -194,7 +248,9 @@ Skew reversible transport plus positive damping gives monotone repair cost and r
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `explicit_reference_present_review_context`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_reversible_dissipative_repair/artifact.json); SHA-256 `d8ca1cee978ee72b57deb6990b50614a058d499b1a12f249f46a71cc460892cf`.
 
@@ -206,7 +262,9 @@ One nilpotent first-order charge emits phase-sensitive reversible transport, pha
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_single_charge_factorization/artifact.json); SHA-256 `f5afb58c3db5bf76a0d3c6f578c5bfad4ab6e47a6b46f6b52d4a96ac69d4ba19`.
 
@@ -218,7 +276,9 @@ A curved charge square contains phase-weighted curvature terms; the all-phase-bl
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_curved_charge_phase_curvature/artifact.json); SHA-256 `83525dfc59971e21f9d981b7881487a0f7675e6eabe3e4b479027dbbc1d38ca8`.
 
@@ -230,7 +290,9 @@ Jordan stability and Lie gauge shadows jointly reconstruct left and right multip
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_common_curvature_jordan_lie/artifact.json); SHA-256 `5ddb63e3ca9aa3eed390b460f7cca22c91b752d0eaf838302d98e6f9d4b3f9b9`.
 
@@ -242,7 +304,9 @@ Persistent nonzero critical curvature requires a restricted admissible tangent; 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_admissible_tangent_radial_nogo/artifact.json); SHA-256 `e4bac1eafabd604a95281d7cce6fe250d065560db9dc303cce0ab5ded0864795`.
 
@@ -254,7 +318,9 @@ Commutator data determine curvature only modulo the center; Jordan/action data r
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_central_curvature_compression/artifact.json); SHA-256 `20b8ec7f4b0288d7856d60bfe021a7dbfbb58c43b2660d1a5bd7920f731b8ca0`.
 
@@ -266,7 +332,9 @@ An outer nilpotent Witten complex contains the full residual Hessian of a nonzer
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_nested_witten_repair/artifact.json); SHA-256 `a0f828b1881cdc9da644b75a3a5a0534e3510e02f94ddcd15456cf2c0cbfd7ba`.
 
@@ -278,7 +346,9 @@ The auxiliary Heisenberg-Nil DGA transfers nonzero m3 while preserving shared Z3
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_heisenberg_nil_transfer/artifact.json); SHA-256 `d5905f5ca7fe7ed266d06b910c7112280fa756a7f9bb0251591f5c8cea737594`.
 
@@ -290,7 +360,9 @@ One restricted cyclic contraction retains charge, curvature, repair cost, Witten
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_restricted_nested_transfer/artifact.json); SHA-256 `e7ee5493a820e175e1f6c70e9533fb2fbbf65d7fccb99fbf6cc6f249494a11db`.
 
@@ -302,7 +374,9 @@ A dual-number noncentral curved transfer terminates exactly and removes centrali
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_noncentral_curved_transfer/artifact.json); SHA-256 `035ddb7bb5e6ae5c9ac22641eda3742123836936ab6e1bc33546c0b01a038eb3`.
 
@@ -314,7 +388,9 @@ A positive noncentral source, nonzero-defect Hessian and outer Witten repair sur
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_positive_noncentral_nested_transfer/artifact.json); SHA-256 `bd38502027ed7b1710601c2fd789014aed8f8732528e2e093c648b6f183b9be3`.
 
@@ -326,7 +402,9 @@ Strict-unital coefficient extension closes the finite curved A-infinity identiti
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_strict_unital_curvature_extension/artifact.json); SHA-256 `d043bcf9df3e8d6a313901e9ec7b04c85fda59c12a20657e1693e245abb44f31`.
 
@@ -338,7 +416,9 @@ Projective scalar overlap phases cancel on endomorphisms, globally descending th
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_twisted_morita_overlap_descent/artifact.json); SHA-256 `93f66f9cc275f3793ccaf4c7c3bf2b155de91dd04d2f1c92d17f1147daa4a9a8`.
 
@@ -350,7 +430,9 @@ The selected q79 rational topology has a 96-state Hirsch model contracting to 88
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_q79_hirsch_transfer/artifact.json); SHA-256 `81bfccc3891fe6eb887312cbe47593f0dd90ee25d2256bc95e173f504f97a702`.
 
@@ -362,7 +444,9 @@ Any bounded chain/product equivalence carries an exact transported metric; physi
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_bht_transported_metric/artifact.json); SHA-256 `67a0109c6a7c7d02b97e863af1f6ebdeab3a66b27e8e37f4adc4733bb368fee7`.
 
@@ -374,7 +458,9 @@ Shifted-cotangent completion commutes with a strict split contraction on the ret
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_cotangent_reduction_q79_bv_gate/artifact.json); SHA-256 `589ec30a375ba5acf85bc2ba1f6b98bdb8ea0dab9899abd723286e0171cb45bf`.
 
@@ -386,7 +472,9 @@ The already-closed q79 27-to-16-plus-10-plus-1 representation intertwiner lifts 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_derived_matter_zero_mode_compiler/artifact.json); SHA-256 `520f339af0dbb7b40e4b9c715f1edef603b2e01352d4363cd6499d0a295ae3c4`.
 
@@ -398,7 +486,9 @@ A first-order graded Fredholm operator retains a characterwise index that its un
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_equivariant_index_first_kernel_compiler/artifact.json); SHA-256 `067776f0a55800da494cdf6f8b1e050dba62e44e34344c205e7c77a957b26107`.
 
@@ -410,7 +500,9 @@ For a normalized BHT kernel and a smooth finite-flat spectral surface meeting th
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_normalized_bht_derived_matter_localization/artifact.json); SHA-256 `256cae9c6e168092e64bfc0bccecf3a666e40b882c3474f044de188758882997`.
 
@@ -422,7 +514,9 @@ A normalized unit/orientation sector gives a strict symplectic right inverse to 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_normalized_orientation_bv_reduction/artifact.json); SHA-256 `7e6982ac8f231cf3e75d728aa81e37add58005ac90635d9259978645b2703d25`.
 
@@ -434,7 +528,9 @@ Every q79 product-adjoint bundle Maurer-Cartan deformation has a string-algebroi
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_bott_chern_mc_lift/artifact.json); SHA-256 `2aa4e8bc978cb3b3e35392b49984496e886338780294b8e24e53432b5cbd4773`.
 
@@ -446,7 +542,9 @@ The integer line C(u)=C_node+u*C_smooth in the q79 degree-three linear system is
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_explicit_lefschetz_pencil/artifact.json); SHA-256 `cf48029d843c01d6e167ec04cb234add4f834dcaffb7dd7caa37405576309279`.
 
@@ -458,7 +556,9 @@ The nonconstant q79 primitive gerbe residual cannot extend as an ordinary global
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_global_deligne_torsor_cutset/artifact.json); SHA-256 `06191016673345751fc8b141b9df50896c244a7c5def2c91e2d1a56b5b726902`.
 
@@ -470,7 +570,9 @@ Every q79 Lefschetz line in the complete P32 system has 792 transverse unique-A1
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_lefschetz_pencil_lattice/artifact.json); SHA-256 `3695a56e7b37b8f12e3d8095e82f70d62999fe079d45d1c2eca7405770e9a5e1`.
 
@@ -482,7 +584,9 @@ For every ordinary eta9 graph-Prym member in the frozen selected residue branch,
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_matter_curve_theta_gate/artifact.json); SHA-256 `6ef8b38629865dfd630b59923c8efd7abf5121aa9ad3b294d8395c0d5ac98031`.
 
@@ -494,7 +598,9 @@ For the complete very-ample q79 family |O_J(3H+3D0)|, a smooth cover has b2=236 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_primitive_leray_dd/artifact.json); SHA-256 `0f8d2c6a4b807f3047206c6fad6f3a1a09e397033b86d8a6b235572791c219d7`.
 
@@ -506,7 +612,9 @@ For the auxiliary |3H+3D0| pencil, the nonzero characteristic kappa_h is equival
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_root_stack_gauss_manin_compression/artifact.json); SHA-256 `c151a6a3affebb2f0f2783b4377d0a877c47e9ffb515c784819eddeae1024804`.
 
@@ -518,7 +626,9 @@ The resolution of the q79 universal discriminant incidence is birational to J_z 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_smooth_family_dd_survival/artifact.json); SHA-256 `b891bb1a56e93cffc2c1e8fac050e60bec8463eb331eef9c083032738c86a4f1`.
 
@@ -530,7 +640,9 @@ For every smooth C_m in |mH+3D0| on the selected K3 x E ambient, the vanishing H
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_spectral_class_rank_separation/artifact.json); SHA-256 `32cf76c90fb1ed4eb6e2066aa1e41daf95d19c121865d6e3d1e1c93acbc68dd6`.
 
@@ -542,7 +654,9 @@ A holomorphic anomaly triple (P,c,theta,H) functorially emits the Courant bracke
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_string_algebroid_promotion/artifact.json); SHA-256 `e8ed9b2e9363a8c83a98c83a899c94a9f003b56fd502ca190aef3d10d97c19db`.
 
@@ -554,7 +668,9 @@ The bare 88-dimensional q79 cohomology carrier has Euler characteristic zero, wh
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_topology_mode_lifting_obstruction/artifact.json); SHA-256 `b10309a1fc977845e91b4a2bc73f082e742a4afc13815ae3250579e383c5ab14`.
 
@@ -566,7 +682,9 @@ The complete q79 cover incidence is a smooth P31 bundle over J. The nonzero norm
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_universal_incidence_dd_persistence/artifact.json); SHA-256 `7f1b4a2039a4de072a53d2440fa0a86ca73babb520652171c80b741752a826f6`.
 
@@ -578,7 +696,9 @@ The q79 rank-102 carrier has exactly the smooth splitting type of a product-gaug
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_string_algebroid_moment_map_reduction/artifact.json); SHA-256 `6e49c00573dddee48d9c3263361a1d0b5aade5a2a21256d028767a1b771035db`.
 
@@ -590,7 +710,9 @@ Exact 48-fiber lane-syzygy to PBW-boundary intertwiner; all 36 raw block orders 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_g3gms_pbw_intertwiner/artifact.md); SHA-256 `ffb37501a436a29f02265958bda22ec38cafc59268a1013f0291cdfceeae9911`.
 
@@ -602,7 +724,9 @@ Exact q/r-to-Sym15 coefficient presentation and canonical 12+6 PBW Fitting split
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_g3gmt_coefficient_fitting_orbit/artifact.md); SHA-256 `bba008868eb670355a6fa7fc1673919f2e1d9e71b085f89c76d90892de6320f4`.
 
@@ -614,7 +738,9 @@ Exact apolar order-orbit off-diagonal superconnection with rank-six arrows, proj
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_g3gmu_apolar_superconnection/artifact.md); SHA-256 `313314b357eedadabbc0fed3cc84f5d9d8d7efa514d37000a0c14027ed915271`.
 
@@ -626,7 +752,9 @@ Exact selected-chart apolar quotient retraction carrying the actual component-20
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_g3gmv_apolar_repair_retraction/artifact.md); SHA-256 `e9a4e51a83de6710a3c45c610597992e2a07a66572aa77ded5c87aee3addc44f`.
 
@@ -638,7 +766,9 @@ Basis-independent factorial-apolar retraction with exact GL136 covariance and 48
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_g3gmw_natural_apolar_retraction/artifact.md); SHA-256 `bb77f9a0883595ae7613ab0ea8e778701725644d0773e74f727563894738a893`.
 
@@ -650,7 +780,9 @@ Exact descent of the physical component-20 target as the quotient K36/H18, elimi
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_g3gmx_apolar_quotient_descent/artifact.md); SHA-256 `d522576863e7050efec6d76eb36da14c0ebe0a419a542c3f861fe5719c96939b`.
 
@@ -662,7 +794,9 @@ Exact 48-fiber identification of the rank-18 primitive quotient with the dual de
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_g3gmy_socle_terminal_duality/artifact.md); SHA-256 `b8036dadaa4a141f71b81e78e4c6357bd7747b2b96e94fab3b98aa0c2016f40d`.
 
@@ -674,7 +808,9 @@ Exact chain-level terminal-to-socle comparison with perfect rank-18 pairing and 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_g3gmz_terminal_socle_chain_map/artifact.md); SHA-256 `34bb26075fa850ddb4eb8b8b42a5c61919e4f1988cdd7f2b22e33568a113494f`.
 
@@ -686,7 +822,9 @@ Compression-induced incompatibility and compatible locality descent are separate
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_constraint_compression_leakage_packet/artifact.json); SHA-256 `e4a0a88d2e5ef13c51aeff58cb094a80275e3608ed3ddbb686d17834e5fbeebd`.
 
@@ -698,7 +836,9 @@ Repair equivariance now has an exact path through fixed-point linearization, iso
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_repair_fixedpoint_gauge_descent_packet/artifact.json); SHA-256 `78f6c3296961c901e4a74df6c2d5766b850faa33809b3f3774a07f20f734a57b`.
 
@@ -710,7 +850,9 @@ The conjectured direct identification is decided negatively on the pinned benchm
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_cohesive_repair_compression_transfer_comparison_packet/artifact.json); SHA-256 `9d0deec9096b8b9ee59fb82ec4e39a9327b55c159279c1b631525330d3544a7c`.
 
@@ -722,7 +864,9 @@ The selected finite q79 Weyl pair now emits an exact same-source differential, D
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet/artifact.json); SHA-256 `c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c`.
 
@@ -734,7 +878,9 @@ The selected q79 affine S3 holonomy and shared-root Fourier C4 now act exactly b
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_weyl_koszul_monodromy_c4_cohomology_intertwiner_packet/artifact.json); SHA-256 `9f0ac382f936b8ad85ec096d13c165ee3237ba9a1d3c1a4b620fe4dd7c33801d`.
 
@@ -746,7 +892,9 @@ The unique minimal signed-direction completion of the selected Weyl calculus is 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet/artifact.json); SHA-256 `8a050ec488410408626f1923ca82fee6dd29a28cba51da95dd193ea358feca9e`.
 
@@ -758,7 +906,9 @@ The orientation-odd q79 harmonic plane is now proved to be the unique principal 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_signed_edge_first_jet_harmonic_ideal_quotient_packet/artifact.json); SHA-256 `ae56ef0cbada9420152b77d1a7ceec84f4bbd7bc005856dfc1b088172d8ccccf`.
 
@@ -770,7 +920,9 @@ The 144-dimensional symmetric signed Weyl DGA now has an exact 48-dimensional st
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_retraction_transferred_m3_packet/artifact.json); SHA-256 `d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532`.
 
@@ -782,7 +934,9 @@ The finite transferred q79 response structure is now computed through arity four
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_transferred_m4_packet/artifact.json); SHA-256 `70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86`.
 
@@ -794,7 +948,9 @@ A finite invariant-subspace certificate proves for every n>=3 that m_n vanishes 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet/artifact.json); SHA-256 `800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046`.
 
@@ -806,7 +962,9 @@ Exact all-arity functoriality of homotopy transfer and faithful order-36 covaria
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json); SHA-256 `e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563`.
 
@@ -818,7 +976,9 @@ The seven physical endpoint rows factor exactly through three same-source packet
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json); SHA-256 `a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa`.
 

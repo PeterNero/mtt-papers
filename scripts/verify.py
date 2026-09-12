@@ -11,6 +11,7 @@ from audit_expository_readability import audit as audit_expository_readability
 from verify_book_interpretive_role import verify as verify_book_interpretive_role
 from verify_paper_release_requirements import verify_local as verify_paper_release_requirements
 from verify_theorem_ownership import verify as verify_theorem_ownership
+from consolidate_research_ownership import reviewed_results
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -122,6 +123,16 @@ def verify() -> dict[str, int]:
     assert portable_hashes["schema"] == "mtt.portable-text-hashes.v1"
     portable_files = portable_hashes.get("files") or {}
     papers = catalog.get("papers") or []
+    ownership = load_json(ROOT / "catalog/research-ownership.json")
+    reviews = load_json(ROOT / "catalog/research-integration-reviews.json")
+    result_rows = [{"id": r["result_id"], "repo_id": r["source_repository"], "sha256": r["sha256"]}
+                   for r in ownership["results"]]
+    decisions = reviewed_results(reviews, result_rows, ROOT)
+    for row in ownership["results"]:
+        review = decisions.get(row["result_id"])
+        assert row.get("contextual_review") == review, f"regenerate ownership: {row['result_id']}"
+        assert row["manuscript_integration"] == (review["state"] if review else "unreviewed")
+        assert not review or not review["stale_reasons"], f"stale contextual review: {row['result_id']}"
     expected = int(config["expected_canonical_papers"])
     assert len(papers) == expected, (len(papers), expected)
     assert len(readability_rows) == expected, (

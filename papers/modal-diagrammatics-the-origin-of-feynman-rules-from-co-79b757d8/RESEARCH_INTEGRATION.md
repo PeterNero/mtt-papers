@@ -14,7 +14,9 @@ One residual-and-metric jet derives the repair Hessian, all Taylor vertices, Euc
 
 Repair jets supply conditional perturbative data, not interacting continuum existence.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_repair_jet_graph_functor/artifact.json); SHA-256 `1c64f479eb8916c4a0de6ad50a868121d1be563665d2c4a4c1acedea3946a15f`.
 

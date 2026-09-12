@@ -1,12 +1,12 @@
 {
-  "abstract": "We determine which parts of two proposed heterotic flux constructions survive the full Hull\u2013Strominger proof obligations. The diagonal invariant Hermitian structure on the Iwasawa manifold is balanced, and its torsion and dH are computed exactly. The proposed bundle, however, does not exist as claimed. One of its alleged first-Chern forms is not closed; the monad maps were not constructed as global sections; the printed Dolbeault operator is not integrable; and a connection on the stated trivial smooth rank-three carrier cannot have third Chern number six. Within the declared one-entry repair ansatz, the Maurer\u2013Cartan equation has a unique signed repair, but the repaired family is a single complex-gauge orbit with a non-scalar holomorphic commutant, so it cannot supply the claimed stable bundle. The old anomaly, three-generation, and normalized-Yukawa conclusions therefore do not follow. The Lens\u2013Nil model is a balanced real SU(3)-structure comparison model, but its almost-complex structure is non-integrable and hence it is not a Hull\u2013Strominger compactification. We finish by separating the exact q=79 finite and rank-two Hermitian\u2013Yang\u2013Mills evidence from the still-open physical rank-three problem, and state a typed completion contract for a future Fu\u2013Yau endpoint.",
+  "abstract": "We determine which parts of two proposed heterotic flux constructions survive the full Hull-Strominger proof obligations. The diagonal invariant Hermitian structure on the Iwasawa manifold is balanced, and its torsion and exterior derivative dH are computed exactly. The proposed bundle, however, does not exist as claimed. One of its alleged first-Chern forms is not closed; the monad maps were not constructed as global sections; the printed Dolbeault operator is not integrable; and a connection on the stated trivial smooth rank-three carrier cannot have third Chern number six. Within the declared one-entry repair ansatz, the Maurer-Cartan equation has a unique signed repair, but the repaired family is a single complex-gauge orbit with a non-scalar holomorphic commutant, so it cannot supply the claimed stable bundle. The old anomaly, three-generation, and normalized-Yukawa conclusions therefore do not follow. The Lens-Nil model is a balanced real SU(3)-structure comparison model, but its almost-complex structure is non-integrable and hence it is not a Hull-Strominger compactification. We finish by separating the exact q=79 finite and rank-two Hermitian-Yang-Mills evidence, and the existential projective rank-nine hidden connection, from the still-open common visible-hidden problem, and state a typed completion contract for a future Fu-Yau endpoint.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v5",
-  "date": "September 2026, Version 5",
+  "current_version": "v6",
+  "date": "September 2026, Version 6",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17072372",
     "created": "2026-07-30T15:20:09.617485+00:00",
@@ -32,28 +32,35 @@
     "updated": "2026-07-30T15:20:10.331271+00:00",
     "version": "v4"
   },
-  "main_tex_sha256": "6661702d6e38f645126c40cde66f2d92e745c214ed6422290f02cebc178a5b50",
+  "main_tex_sha256": "58e27c4ffcd28f4470835365ac83448dd8f612f7ac5f047496eb6f9a40f3499e",
   "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
-  "paper_md_sha256": "7087bf855b9ee87902a0125caddc56395f53335e5c859c8fdb1671ae84f987c5",
+  "paper_md_sha256": "c186a806b78d58a46b262794e96473e7b5e489f63c0b711798f019d48c255cc9",
   "release_state": "current_revised_tex",
   "result_refs": [
     "hym_wiener_contraction",
     "literal_cech_witness",
+    "q79_eta9_b89_same_source_rejection",
+    "q79_eta9_framed_member_spectral_rank_exclusion",
+    "q79_eta9_local_source_tube_consolidation",
+    "q79_eta9_physical_canonical_dual_response_observability",
+    "q79_eta9_physical_midpoint_three_evaluation_frame",
     "q79_exact_audit",
-    "q79_exact_theorem"
+    "q79_exact_theorem",
+    "unified_source_balanced_holomorphic_p39",
+    "unified_source_hidden_projective_hym"
   ],
   "revision": {
     "revision_evidence_path": "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "4c1428e4236f3ca58fdf141023b7c4551bd0939ebdfadb3e01705aff1f824f17",
+    "revision_evidence_sha256": "6f96c4af6d585b95ac1961d2cf613fa158ef61b219718c3ff72d5c8fd85f7d8e",
     "selected_revision": true,
     "superseded_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Flux_Compactifications_in_Heterotic_String_Theory_v3"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 37057,
+      "bytes": 39711,
       "path": "main.tex",
-      "sha256": "6661702d6e38f645126c40cde66f2d92e745c214ed6422290f02cebc178a5b50"
+      "sha256": "58e27c4ffcd28f4470835365ac83448dd8f612f7ac5f047496eb6f9a40f3499e"
     },
     {
       "bytes": 4282,
@@ -61,14 +68,14 @@
       "sha256": "fe87360c604b66e57a0065052ec68795e5070838b3b106aecbc17ef8e78e5589"
     },
     {
-      "bytes": 389070,
+      "bytes": 394556,
       "path": "main.pdf",
-      "sha256": "cd55d441415e8ce392a7dfb58360a67f121e81d78f226e6f253e052c6f88d51d"
+      "sha256": "4ff0598249125317c611caf4dae2f40602fde8d1bfd141fb0e98a4ffa1c5f011"
     },
     {
-      "bytes": 3576,
+      "bytes": 4309,
       "path": "REVISION_AUDIT.md",
-      "sha256": "4c1428e4236f3ca58fdf141023b7c4551bd0939ebdfadb3e01705aff1f824f17"
+      "sha256": "6f96c4af6d585b95ac1961d2cf613fa158ef61b219718c3ff72d5c8fd85f7d8e"
     },
     {
       "bytes": 7043,
@@ -84,7 +91,7 @@
   "source_provenance": {
     "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Flux_Compactifications_in_Heterotic_String_Theory_v3"
   },
-  "source_tree_sha256": "09f9afd4291096b52f917b3dacfd66ba804594dac92ee4579d52553b5e8ac3be",
+  "source_tree_sha256": "f278d1d5136d31eaf0beac6f6fd19c8fcb51a92f6b59d8cdaf1717e416dc4dff",
   "title": "Auditing Heterotic Flux Compactifications on Iwasawa and Lens\u2013Nil Geometries: Bundle Obstructions and a q=79 Fu\u2013Yau Completion Contract",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [

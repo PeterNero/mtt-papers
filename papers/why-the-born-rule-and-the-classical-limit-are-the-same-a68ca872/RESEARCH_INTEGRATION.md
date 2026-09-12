@@ -14,7 +14,9 @@ Stopped canonical q79 Fock-output measure and operational actualization boundary
 
 Operational record measure at its declared apparatus tier.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_fock_output_measure/artifact.json); SHA-256 `483404470854e6a888f890ad129160b52d3ca38c6a471b73947da5e78d34496e`.
 
@@ -26,7 +28,9 @@ Minimal recorder action and collision-instrument result on its declared q79 doma
 
 Operational record measure at its declared apparatus tier.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_minimal_recorder_action/artifact.json); SHA-256 `84a48214fc273434ebc88be0436b6ff7f31743a8e3910e826157bd34a3578a3c`.
 
@@ -38,7 +42,9 @@ Hessian square-root to recorder-source certificate on the selected finite-symbol
 
 Operational record measure at its declared apparatus tier.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_hessian_recorder_source/artifact.json); SHA-256 `298f7f7abc5d2c00b1f9e6875c461cd7f061f4e53d850d77dcc3ac07eee71c15`.
 
@@ -50,7 +56,9 @@ Continuum spectral-sector to recorder compiler with approximate-intertwiner boun
 
 Operational record measure at its declared apparatus tier.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_continuum_recorder_compiler/artifact.json); SHA-256 `3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb`.
 
@@ -62,7 +70,9 @@ Projective descent of the canonical q79 Fock output measure and P/Q instrument w
 
 Operational record measure at its declared apparatus tier.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_projective_record_descent/artifact.json); SHA-256 `66442357dc4396773b88e8525b7a874d98cec1b40321b14ed7f3fd92405d41d3`.
 

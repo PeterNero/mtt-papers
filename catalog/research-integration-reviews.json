@@ -1,0 +1,323 @@
+{
+  "schema": "mtt.research-integration-reviews.v1",
+  "policy": "Manual contextual reviews, not theorem verification. Source hashes are stamped only after the named review. Never renew a stale review merely to make a check pass.",
+  "reviews": [
+    {
+      "id": "SM-STRUCTURE-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "integrated",
+      "result_ids": [
+        "qutrit_weyl_27_matrix",
+        "typed_family_representation",
+        "native_gauge_group",
+        "physical_df_96",
+        "neutral_summand_hypercharge",
+        "finite_inner_fluctuation"
+      ],
+      "anchors": [
+        "The Two Finite Matrices Have Different Jobs",
+        "Exact Gauge and Chiral Structure",
+        "Finite Geometry and the Higgs Module",
+        "Reproducibility and Result Ownership"
+      ],
+      "assessment": "The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.",
+      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "result_hashes": {
+        "qutrit_weyl_27_matrix": "af5bff7f860e7a65bae49d0e8ed2fbaddb5a7ae2e9f41fd972537022eb06f7f1",
+        "typed_family_representation": "528af6955b3b7207a9db178d14d95cb4078f895f946a7d204fa680bc5754f657",
+        "native_gauge_group": "eeb8c7bb501d151a53ba2df109654e34ea4735560338c86e978107c9b5678582",
+        "physical_df_96": "ad1af2f80691c2cfe2fd73ea96d1448113dd67ba9dce8fbba295c7c9e8381079",
+        "neutral_summand_hypercharge": "89a1bb179af408da9d1d8408a9063331d21c8e429bb7a9bb52976bbf857e172c",
+        "finite_inner_fluctuation": "4f2b6f68fd5b6c26fb88e9ad137165a205e39c4a4766cf5347d083e3407cc03a"
+      }
+    },
+    {
+      "id": "SM-PROFILES-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "integrated",
+      "result_ids": [
+        "charged_yukawa_higgs_profile",
+        "neutral_two_primitive_profile",
+        "ckm_prediction_profile",
+        "precision_8x8_workspace",
+        "precision_15_source_transport",
+        "strict_pew_row",
+        "direct_k_higgs_row"
+      ],
+      "anchors": [
+        "Where the Numerical Values Enter",
+        "Multi-loop precision transport",
+        "Parameter ledger",
+        "Reproducibility and Result Ownership"
+      ],
+      "assessment": "Charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows are explained with their actual inputs and explicit references. The text distinguishes a numerical profile, diagonal source covariance and supplied neutral assumptions from held-out or no-input prediction. The later neutral-tier refinement is a separate queued result.",
+      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "result_hashes": {
+        "charged_yukawa_higgs_profile": "9648804f5b9f0867ccfa55b3b1bc9cc11332576d41e573b5900c4caafca90ad9",
+        "neutral_two_primitive_profile": "c934af81cd3b5058205199295c914601751750f4eeb9adf1d1fee76152ef1ea7",
+        "ckm_prediction_profile": "2de3384b83ce4cd37ac734dfc21adb2f58ff8a5e6cf187df18cbc5c701d74e39",
+        "precision_8x8_workspace": "c5af11222a282343ab6009038a4fd61bcaec6406e88c537c8bc64ebdd9267ecf",
+        "precision_15_source_transport": "55df4532ae2bb6dd5995ed5e7e0d16308d5e0647fbfa99bd82e767be0859da59",
+        "strict_pew_row": "203f294f770c724295f89307b6cebea8f813c5abd15add73d3772492ea04c787",
+        "direct_k_higgs_row": "af063d74ab102fc3c0905822bdb35ad5210c40f69d98107a8e583548e94334dd"
+      }
+    },
+    {
+      "id": "SM-RECONSTRUCTION-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "integrated",
+      "result_ids": [
+        "final_12_of_12_audit",
+        "strict_upgrade_ledger"
+      ],
+      "anchors": [
+        "Current released reconstruction",
+        "Remaining Theorems and Falsifiers"
+      ],
+      "assessment": "The reconstruction theorem and its discussion import the twelve-obligation audit and the stricter upgrade ledger with measured-parameter, nonperturbative-QFT and source-selection limits. The paper need not reproduce the entire runtime audit to own this conditional synthesis.",
+      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "result_hashes": {
+        "final_12_of_12_audit": "d783988a4d10f10abfa4f5fa2769219cbea3fae238e3894d405c404fc3f546e9",
+        "strict_upgrade_ledger": "659afd20a06fcc6492cfb77688dae81d109dfd16b368d877e1ea4d92da5e97ac"
+      }
+    },
+    {
+      "id": "SM-STATUS-SNAPSHOT-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "historical_context",
+      "result_ids": [
+        "current_global_lock"
+      ],
+      "anchors": [
+        "an old file containing",
+        "Current released reconstruction"
+      ],
+      "assessment": "This is the frozen status/provenance map behind the cited audit, not an additional theorem that must be copied into the manuscript. Retain it as capsule navigation; the reconstruction result is already contextualized.",
+      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "result_hashes": {
+        "current_global_lock": "f1a4c656fed97eb9d185c30a852404b3e0e029952c142dc7db6d72b85cdd4883"
+      }
+    },
+    {
+      "id": "SM-ADJACENT-WITNESSES-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "addition_needed",
+      "result_ids": [
+        "literal_cech_witness",
+        "hym_wiener_contraction",
+        "su2_finite_gauge_spectrum",
+        "su3_finite_gauge_spectrum",
+        "e6_qpsi_qcd_anomaly"
+      ],
+      "anchors": [
+        "Reproducibility and Result Ownership",
+        "Strong CP and branch choice"
+      ],
+      "assessment": "The current main text does not explain these five assigned result-specific constructions. The SU2/SU3 identifiers in metadata are not manuscript integration. The rank-two Cech/HYM witness must not be promoted to the physical rank-three visible endpoint.",
+      "remaining_action": "Add short, scoped imports where they support the reconstruction or strong-CP discussion; cite the original geometry/anomaly owner and keep rank-two support separate. Do not duplicate the proofs.",
+      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "result_hashes": {
+        "literal_cech_witness": "a764508cb39789f6cc62af27658caf8fc93d718c3ec726846b9b7878090ac9af",
+        "hym_wiener_contraction": "be8fefa3239c51e6818eccc4e64fa9b0aae17b7ea60876f03a11c52ff2436ac5",
+        "su2_finite_gauge_spectrum": "abd813c5e6a0055e76113fbb71617cb3698e7277d9d071bcc8b5e1b195348441",
+        "su3_finite_gauge_spectrum": "b106f81bee0af46148a99ac55422524bcac0f1a3b2f01689bf01a0747f96f2e0",
+        "e6_qpsi_qcd_anomaly": "36935d55a6ab3e19d77ff6e6c4d369ecd0948613ea177a89c8b715632f592be8"
+      }
+    },
+    {
+      "id": "SM-GAUGE-LEDGER-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "addition_needed",
+      "result_ids": [
+        "sm_gauge_density_source_promotion",
+        "sm_gauge_common_scheme_map",
+        "sm_gauge_scale_orbit_nogo",
+        "sm_minimal_parameter_ledger"
+      ],
+      "anchors": [
+        "The finite gauge traces are",
+        "The rows overlap and must not be arithmetically summed"
+      ],
+      "assessment": "The paper discusses finite traces and warns against double-counting parameters, but does not yet state the later Route-A density, common scheme map, scale-orbit result or the effective 13/19-coordinate ledger. The old generic statement is not equivalent to integrating those computations.",
+      "remaining_action": "Update the normalization and parameter subsections from the same-source ledger with convention/input accounting. Explain 13/19 as effective profile coordinates, not a zero-input prediction.",
+      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "result_hashes": {
+        "sm_gauge_density_source_promotion": "5714fa1d7e887cc971be4f779773bd6d466d3d037405654f4031c0ad0b0e7c00",
+        "sm_gauge_common_scheme_map": "a0614ae32571ae22d39078abed47f418a4d45fb0d03b3dce220120a76534cd79",
+        "sm_gauge_scale_orbit_nogo": "a24846826596d87dc67bf26f1521eaaf9df2a7c313776c24a892853f266a3d5d",
+        "sm_minimal_parameter_ledger": "b75c2545c3472d0745519137090e47b01a0b8cca95fa24cef0bae9197be0c80f"
+      }
+    },
+    {
+      "id": "SM-NEUTRAL-BRANCH-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "addition_needed",
+      "result_ids": [
+        "sm_neutral_u5_tier_decision",
+        "sm_branch_u9_conditional_measure"
+      ],
+      "anchors": [
+        "Neutral profile",
+        "Neutrino, strong-CP, and branch selection."
+      ],
+      "assessment": "The older two-splitting profile and open global branch statement survive, but omit the newer one-holonomy/one-scale neutral refinement and conditional antiunitary branch measure. Those do not establish unique observed-branch selection.",
+      "remaining_action": "Add the declared U5 and U9 conditional conclusions while retaining the distinction between within-branch reconstruction and selection of the universe's branch.",
+      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "result_hashes": {
+        "sm_neutral_u5_tier_decision": "8e9ebe682f13d8ec1bb16b728661a6cfcff9c8a6c53b11e4a727fd6b9a2d40a1",
+        "sm_branch_u9_conditional_measure": "7b9a420629f047d44605d6f8e47a49602c11be91e23bb55471d15a193a4e4c4c"
+      }
+    },
+    {
+      "id": "SM-AXION-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "addition_needed",
+      "result_ids": [
+        "sm_axion_gs_reduction",
+        "sm_axion_quality_bound",
+        "sm_multiaxion_superset"
+      ],
+      "anchors": [
+        "Strong CP and branch choice",
+        "a suppression or relaxation mechanism"
+      ],
+      "assessment": "The current strong-CP paragraph is a general open boundary and contains none of the three later scoped axion results. The conditional reduction, global-minimum quality bound and hidden-blind direction criterion warrant integration, but do not supply the missing hidden source amplitudes.",
+      "remaining_action": "Add an explained conditional strong-CP subsection importing the three results and the remaining source payload. Do not describe the quality criterion as a completed physical solution.",
+      "main_tex_lf_sha256": "33abbcc3f7e3364a7f6ac870a0b4fb42e366a461c0813c6abfce0932dc749536",
+      "result_hashes": {
+        "sm_axion_gs_reduction": "f2b95c1bbbe2452cd687277de9644ee035e112d0e0ac7e5b7b49b8040466e75f",
+        "sm_axion_quality_bound": "f5ef2463010c80e53cf8b35ab9fd8aeeb5d87c5e17132a8be25c8374cc4b6719",
+        "sm_multiaxion_superset": "028ead7223c7facaa7e7dd3035c31a719698c5cb095bed4c1776b281579c0e42"
+      }
+    },
+    {
+      "id": "FLUX-CURRENT-GLOBAL-CORRECTION-20260912",
+      "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "integrated",
+      "result_ids": [
+        "q79_eta9_framed_member_spectral_rank_exclusion",
+        "q79_eta9_physical_midpoint_three_evaluation_frame",
+        "q79_eta9_physical_canonical_dual_response_observability"
+      ],
+      "anchors": [
+        "September update: local observability and the global obstruction",
+        "The fixed-fiber calculation survives",
+        "invertibility is a midpoint result"
+      ],
+      "assessment": "The current section explains T69's retraction, T72's coefficient-rank boxes and T73's midpoint-only canonical-dual invertibility, and links the exact three frozen artifacts. It explicitly excludes identifying these ranks with the global Picard/BHT derivative.",
+      "main_tex_lf_sha256": "58e27c4ffcd28f4470835365ac83448dd8f612f7ac5f047496eb6f9a40f3499e",
+      "result_hashes": {
+        "q79_eta9_framed_member_spectral_rank_exclusion": "1649d0cae1c89a0ff32d87d65b288c3a5de761bff3fbe4feb754170f4441d2f8",
+        "q79_eta9_physical_midpoint_three_evaluation_frame": "a1a8085dcee7b0371c8636c802da395a40111999732b1fa3bd6f9a82f92b43b4",
+        "q79_eta9_physical_canonical_dual_response_observability": "5e7a4d37026be0154511d60cadb48a6e93a927d8c24309b2b970110910f4cd8a"
+      }
+    },
+    {
+      "id": "FLUX-SOURCE-TUBE-B89-20260912",
+      "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "integrated",
+      "result_ids": [
+        "q79_eta9_local_source_tube_consolidation",
+        "q79_eta9_b89_same_source_rejection"
+      ],
+      "anchors": [
+        "source with a certified correlated lift",
+        "Thus B89 is rejected from the zero locus",
+        "All statements in this update are imported from the frozen"
+      ],
+      "assessment": "Despite absent literal packet IDs, the current TeX explicitly states the 164-dimensional source interval and the candidate-specific B89 conclusion, together with the frozen manifest citation. This is a scoped consumer summary, not a repeated proof; the detailed strand counts remain in the owning certificate.",
+      "main_tex_lf_sha256": "58e27c4ffcd28f4470835365ac83448dd8f612f7ac5f047496eb6f9a40f3499e",
+      "result_hashes": {
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756",
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda"
+      }
+    },
+    {
+      "id": "COHESIVE-SOURCE-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "integrated",
+      "result_ids": [
+        "q79_cohesive_superconnection",
+        "preprojection_covariant_residual_hessian"
+      ],
+      "anchors": [
+        "Covariant residual-Hessian identity",
+        "Endomorphism untwisting",
+        "Hodge and kernel package",
+        "The q79 benchmark and its exact boundary"
+      ],
+      "assessment": "The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem.",
+      "main_tex_lf_sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30",
+      "result_hashes": {
+        "q79_cohesive_superconnection": "8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8",
+        "preprojection_covariant_residual_hessian": "247b1b52198dc250f80293e6807f1d2fc7ac126a930c9642ef2b5a3fb7a74921"
+      }
+    },
+    {
+      "id": "COHESIVE-PHYSICAL-RESIDUAL-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "summary_present",
+      "result_ids": [
+        "q79_v3w9_full_residual"
+      ],
+      "anchors": [
+        "The proposed full defect and why it remains proposed"
+      ],
+      "assessment": "The paper explains the full physical defect as a proposed source and retains the K-dagger-K augmentation. It does not display the corrected 25-block rank-102 mask or all six symbolic row definitions of the later execution packet.",
+      "remaining_action": "Import the exact six-row/25-block compiler with its owner citation, without replacing the open numerical endpoint by the symbolic mask.",
+      "main_tex_lf_sha256": "406a4f6285c52328783a7a231f06a70c9ae4e208d1ed3eb9fe013feab69d6a30",
+      "result_hashes": {
+        "q79_v3w9_full_residual": "937039df105881a4dcbf1ed31d86ab842b5da2ee6df832e7c834d9eb71cae441"
+      }
+    },
+    {
+      "id": "FP-FRONTIER-PLACEMENT-20260912",
+      "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "addition_needed",
+      "result_ids": [
+        "fixed_points_frontier_consolidation_20260911",
+        "fixed_points_cubic_heat_trace_bound",
+        "fixed_points_l11_phase_channel",
+        "fixed_points_finite_mode_recurrence_boundary"
+      ],
+      "anchors": [
+        "\\begin{document}"
+      ],
+      "assessment": "The canonical scalar disturbance/OU paper is not the supplied finite-spatial-mode heat-trace and L11 calculation paper. Its existing stochastic discussion does not contain the cubic moment, 489-dimensional calculation or compact-resolvent recurrence result. Assignment to this family did not integrate those results.",
+      "remaining_action": "Keep FP III standalone. Decide a calculation-companion owner for the new finite-mode package, then add a scoped citation and driver/recurrence distinction to FP III rather than appending unrelated matrix calculations.",
+      "main_tex_lf_sha256": "7ba829182e55b626f875622823d0dab590000f86c532abc7b44978309032bb0e",
+      "result_hashes": {
+        "fixed_points_frontier_consolidation_20260911": "c27196ef86037725588e128dd6fd8e93d7a665629928157d4e4a047ce664a0c8",
+        "fixed_points_cubic_heat_trace_bound": "affd30c6fa9ca9d5c8e08f0349cc92b419afd84ade8d666125f05af483dba54a",
+        "fixed_points_l11_phase_channel": "a4f90611cc10dff2ad8945b0f05d19bb9b7373bf64b1b3b7617c4fa4928f0f0f",
+        "fixed_points_finite_mode_recurrence_boundary": "7bdcad1f8dc2b752e1e4ada03fcea6e7c95d4dbf5e065f04718096fcc507f798"
+      }
+    }
+  ]
+}

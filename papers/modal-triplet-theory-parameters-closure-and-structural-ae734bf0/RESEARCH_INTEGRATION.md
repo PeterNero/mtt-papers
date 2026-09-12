@@ -14,7 +14,9 @@ Non-SM constants and no-knob source-search chronology.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/nonsm_constants_program/artifact.md); SHA-256 `3c9e7cda981ec9b10445a929e32d3cd8fa3ca529ec1abc6b3e850131d9837971`.
 
@@ -26,7 +28,9 @@ Individual-constant source-search policy and evidence.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Manuscript check: `contextual_integration_required`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/individual_constants_program/artifact.md); SHA-256 `e57e10360ec9c864098a04c7e6dd2a1c2b696b41ac2ecb2a80563f00f5468b01`.
 

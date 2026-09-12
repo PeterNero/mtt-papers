@@ -14,7 +14,9 @@ Operational non-entailment theorem separating record predictions from one-histor
 
 Interpretive consumer of the source non-entailment theorem, not a new ontology proof.
 
-Manuscript check: `explicit_reference_present_review_context`. This is an exact-reference scan, not an expository-review verdict.
+Contextual integration: `unreviewed`.
+
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_ontology_nonentailment/artifact.json); SHA-256 `4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c`.
 

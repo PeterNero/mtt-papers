@@ -135,12 +135,12 @@
     },
     "flux-compactifications-in-heterotic-string-theory-expli-08b38155": {
       "status": "reviewed",
-      "reviewed_on": "2026-09-11",
-      "note": "Version 5 preserves the Iwasawa and Lens-Nil audit and adds the September q79 reconciliation in context: the full 164-dimensional local certificate, B89 candidate rejection, T69 retraction of the unsupported global rank exclusion, T70-T72 evaluation ranks, and T73 midpoint-only canonical-dual composition. Local coefficients, fixed-fiber points and the actual global Picard/BHT obstruction are explicitly separated. Frozen public result links accompany the new discussion. All 13 rebuilt pages were rendered and visually inspected; no physical endpoint or Zenodo release is claimed.",
+      "reviewed_on": "2026-09-12",
+      "note": "Version 6 preserves the Iwasawa audit and T69-T73 local/global reconciliation. Corrects the V2/H1 table and explains the already established rank-nine projective hidden carrier and existential HYM threshold using frozen UST.G3T/G3V records. Explicitly separates existence from numerical M/t/connection coefficients and the common visible-hidden/Bianchi endpoint. All 14 rebuilt pages were rendered and visually inspected, including the changed table and discussion at full resolution. Metadata abstract is plain text with no correction history. No theorem is duplicated and no physical endpoint or Zenodo release is claimed.",
       "release_authorized": false,
-      "reviewed_main_tex_sha256": "6661702d6e38f645126c40cde66f2d92e745c214ed6422290f02cebc178a5b50",
-      "reviewed_pdf_sha256": "cd55d441415e8ce392a7dfb58360a67f121e81d78f226e6f253e052c6f88d51d",
-      "reviewed_source_tree_sha256": "09f9afd4291096b52f917b3dacfd66ba804594dac92ee4579d52553b5e8ac3be"
+      "reviewed_main_tex_sha256": "58e27c4ffcd28f4470835365ac83448dd8f612f7ac5f047496eb6f9a40f3499e",
+      "reviewed_pdf_sha256": "4ff0598249125317c611caf4dae2f40602fde8d1bfd141fb0e98a4ffa1c5f011",
+      "reviewed_source_tree_sha256": "f278d1d5136d31eaf0beac6f6fd19c8fcb51a92f6b59d8cdaf1717e416dc4dff"
     },
     "a-projection-first-reframing-of-quantum-gravity": {
       "status": "reviewed",

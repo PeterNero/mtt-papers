@@ -1,10 +1,16 @@
 # Revision Audit: Heterotic Flux Compactifications
 
+## Version 6: Hidden Existence and Common-Endpoint Separation
+
+Date: 2026-09-12. Supersedes unreleased v5; the published v4 remains unchanged.
+
+The V2/H1 table is updated in context using UST.G3T and UST.G3V. The projective rank-nine hidden object and existential qutrit-equivariant HYM connection are established on their declared source orbit. A missing numerical slope bound is not a missing existence theorem. Added the bound and threshold, frozen evidence links, and explanation separating hidden existence from the open visible/common chamber, connection coefficients and pointwise Bianchi data. No new proof or physical-source promotion is claimed. Retains the Iwasawa audit and T69-T73 local/global boundaries.
+
 ## Version 5: September 2026 Consolidation
 
 Added the current local-source, B89 rejection and T69-T73 observability developments, with frozen public source links and an explanatory local/global distinction. T69 retracts the global ranks-through-1449 exclusion but retains the fixed-fiber calculation. T72's box certificate concerns coefficient rank; T73's canonical-dual bilinear is certified at midpoints only. These do not select the common physical endpoint. The original local Iwasawa audit, its proofs and the typed compactification contract remain unchanged. This revision is not yet on Zenodo.
 
-## Current revision
+## Historical Version 4 Revision
 
 - Version: v4
 - Date: July 2026

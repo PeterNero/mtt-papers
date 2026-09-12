@@ -1,13 +1,13 @@
 ---
 abstract: |
-  We determine which parts of two proposed heterotic flux constructions survive the full Hull–Strominger proof obligations. The diagonal invariant Hermitian structure on the Iwasawa manifold is balanced, and its torsion and $`\mathrm{d}H`$ are computed exactly. The proposed bundle, however, does not exist as claimed. One of its alleged first-Chern forms is not closed; the monad maps were not constructed as global sections; the printed Dolbeault operator is not integrable; and a connection on the stated trivial smooth rank-three carrier cannot have third Chern number six. Within the declared one-entry repair ansatz, the Maurer–Cartan equation has a unique signed repair, but the repaired family is a single complex-gauge orbit with a non-scalar holomorphic commutant, so it cannot supply the claimed stable bundle. The old anomaly, three-generation, and normalized-Yukawa conclusions therefore do not follow. The Lens–Nil model is a balanced real $`SU(3)`$-structure comparison model, but its almost-complex structure is non-integrable and hence it is not a Hull–Strominger compactification. We finish by separating the exact $`q=79`$ finite and rank-two Hermitian–Yang–Mills evidence from the still-open physical rank-three problem, and state a typed completion contract for a future Fu–Yau endpoint.
+  We determine which parts of two proposed heterotic flux constructions survive the full Hull–Strominger proof obligations. The diagonal invariant Hermitian structure on the Iwasawa manifold is balanced, and its torsion and $`\mathrm{d}H`$ are computed exactly. The proposed bundle, however, does not exist as claimed. One of its alleged first-Chern forms is not closed; the monad maps were not constructed as global sections; the printed Dolbeault operator is not integrable; and a connection on the stated trivial smooth rank-three carrier cannot have third Chern number six. Within the declared one-entry repair ansatz, the Maurer–Cartan equation has a unique signed repair, but the repaired family is a single complex-gauge orbit with a non-scalar holomorphic commutant, so it cannot supply the claimed stable bundle. The old anomaly, three-generation, and normalized-Yukawa conclusions therefore do not follow. The Lens–Nil model is a balanced real $`SU(3)`$-structure comparison model, but its almost-complex structure is non-integrable and hence it is not a Hull–Strominger compactification. We finish by separating the exact $`q=79`$ finite and rank-two Hermitian–Yang–Mills evidence, and the existential projective rank-nine hidden connection, from the still-open common visible–hidden problem, and state a typed completion contract for a future Fu–Yau endpoint.
 author:
 - Peter Nero
 bibliography:
 - references.bib
-current_version: v5
-date: September 2026, Version 5
-generated_from_main_tex_sha256: 6661702d6e38f645126c40cde66f2d92e745c214ed6422290f02cebc178a5b50
+current_version: v6
+date: September 2026, Version 6
+generated_from_main_tex_sha256: 58e27c4ffcd28f4470835365ac83448dd8f612f7ac5f047496eb6f9a40f3499e
 paper_id: flux-compactifications-in-heterotic-string-theory-expli-08b38155
 release_state: current_revised_tex
 released_version: v4
@@ -18,6 +18,10 @@ zenodo_doi: 10.5281/zenodo.21705964
 zenodo_record_id: 21705964
 zenodo_url: "https://zenodo.org/records/21705964"
 ---
+
+# Version 6 Revision Note
+
+**Supersedes.** The unreleased Version 5; Version 4 remains the released edition. **Reason.** The baseline table understated the later hidden-sector existence results. **Resolution.** Distinguishes the constructed projective rank-nine hidden carrier and existential HYM connection from the unevaluated numerical chamber and common physical pair. **Retained results.** The Iwasawa audit and the local/global q79 reconciliation are unchanged. **Remaining boundary.** Visible-source selection, explicit common connections and pointwise Bianchi cancellation are not supplied by the hidden existence theorem.
 
 # Version 5 Revision Note
 
@@ -374,14 +378,26 @@ The current branch must still produce the following objects on one and the same 
 |:---|:---|:---|
 | G1 | Global complex $`X_{79}`$, holomorphic volume form, balanced Fu–Yau metric | candidate/partial |
 | V1 | Physical rank-three visible holomorphic bundle with $`\int c_3=\pm6`$ | open |
-| V2 | Compatible hidden holomorphic bundle or sheaf data | open |
-| H1 | Visible, hidden, and tangent instantons in one metric chamber | rank-two evidence only |
+| V2 | Projective rank-nine hidden carrier on its declared q79 orbit | constructed; pair open |
+| H1 | Visible, hidden, and tangent instantons in one metric chamber | hidden existence; pair open |
 | A1 | Differential Green–Schwarz identity with fixed traces and connections | open |
 | Q1 | Global gerbe/flux quantization and patching | open |
 | Y1 | Matter cohomology, normalized overlaps, and physical Yukawa map | open |
 | W1 | Exact heterotic worldsheet and modular/factorization data | open downstream |
 
 </div>
+
+## Hidden existence is not a missing theorem
+
+The later unified-source construction supplies a locally free, holomorphic projective rank-nine hidden object. Its balanced qutrit orbit consists of three rank-three factors; the corrected determinant and relative polystability are part of that construction. This is not the earlier rank-two numerical witness and it should not be relabelled as an unconstructed hidden carrier.
+
+The subsequent hidden HYM theorem is existential. For the fixed compact Gauduchon reference geometry, a finite common upper bound $`M`$ for the factor slopes exists. The direct stable-factor argument gives
+``` math
+\deg_t(G)\leq 2M-\frac{2}{3}(t-1)
+```
+for the relevant proper subobjects. Consequently $`t>1+3M`$ makes the three factors stable and the rank-nine orbit polystable; twisted Kobayashi–Hitchin then supplies a qutrit-equivariant projective HYM connection. The calculation has not emitted a numerical $`M`$, a selected $`t`$, or executable connection coefficients. Those are reproduction and source-selection tasks, not reasons to reopen the existence conclusion.
+
+These are imported results, whose original statements and proofs remain in the frozen [balanced holomorphic projective-carrier record](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_balanced_holomorphic_p39/artifact.json) and [existential hidden HYM record](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_hidden_projective_hym/artifact.json). The latter explicitly leaves the same-source visible $`V_3`$, a numerical common visible–hidden chamber, and pointwise Bianchi cancellation open. Thus it advances rows V2 and H1 without closing the full Hull–Strominger assembly contract or determining physical Yukawa values.
 
 ## September update: local observability and the global obstruction
 
