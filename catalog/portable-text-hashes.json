@@ -221,20 +221,20 @@
       "sha256_lf": "89eaa848068191b48560d0a5a00ab9ef20df5aecbf9197712666bf231ad448b9"
     },
     "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/REVISION_AUDIT.md": {
-      "bytes_lf": 3267,
-      "sha256_lf": "dfa8123d3fdb7b9afb877c3fc49440d3cf016b67fe9c6ce0427aacd6f88876d3"
+      "bytes_lf": 5567,
+      "sha256_lf": "ade0baa7e4757e650c2ef784df3455d23e6b918e161add231a77d2585ab8eb2a"
     },
     "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/main.tex": {
-      "bytes_lf": 20783,
-      "sha256_lf": "6e5d29deb56f49389363232615d6288d1ff0f402d22c84d9313cc3e92495345d"
+      "bytes_lf": 25067,
+      "sha256_lf": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992"
     },
     "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/metadata.json": {
-      "bytes_lf": 5695,
-      "sha256_lf": "317828899dc1a81ab0db4a791269a07d3ea3be3b2dac8382112805edee908ffa"
+      "bytes_lf": 5977,
+      "sha256_lf": "6d48347aba52e3389eb0f9b65dfa6224b95dc3d2461a59b9cc396f257319f872"
     },
     "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/paper.md": {
-      "bytes_lf": 20646,
-      "sha256_lf": "79fc5d2912b34028c76d7ad8da729f50059defa744e1d342cb5e5b1f360cf338"
+      "bytes_lf": 26286,
+      "sha256_lf": "1a638cd3eef3492b66e43dc6d9a6795916954fe87d46f38346a08cadc9b50927"
     },
     "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/series.sty": {
       "bytes_lf": 3784,
@@ -389,48 +389,56 @@
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 4611,
-      "sha256_lf": "939cc4d382f9fe92496b7ed90021f1238b0497332e3b8365e383a9ca062b3a86"
+      "bytes_lf": 7233,
+      "sha256_lf": "68bebe6a7757d0c76ea7892f8a47c2fb5cbc8c63ecf23e9e7e1536a6874e5a74"
     },
     "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/REVISION_AUDIT.md": {
-      "bytes_lf": 12540,
-      "sha256_lf": "9747b398d36b46bdcf19d67f905aeaa08cb6faeb317b103a57db249368427250"
+      "bytes_lf": 14884,
+      "sha256_lf": "8bbeb9b35b4393e5c8f97e78d77543f89556aba6b230369fec06e715a39d3fd8"
+    },
+    "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/editorial_finalize.py": {
+      "bytes_lf": 18056,
+      "sha256_lf": "fcc30781d7b7dfa42070fb52320416a3d3dec58e354c14ee0dc7a96dc8ff3352"
+    },
+    "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/editorial_qa.py": {
+      "bytes_lf": 7017,
+      "sha256_lf": "ca55a51f924f3ec900e90196e25b69857ababdc05773460e302ce800aea1bc93"
     },
     "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.tex": {
-      "bytes_lf": 23164,
-      "sha256_lf": "691de4188702b9f5ffda4a517d5200e23a2c89832b63b67992cf68d04ba1507d"
+      "bytes_lf": 33063,
+      "sha256_lf": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4"
     },
     "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/metadata.json": {
-      "bytes_lf": 5602,
-      "sha256_lf": "e37d9c05b83c187c8614f02b5adfd51a6748fbdffcf8b8ab1fa768fb6854d67f"
+      "bytes_lf": 6525,
+      "sha256_lf": "220e1e606a0c0214ae4d2cbcc82039fc1e5aa60a6936f942ea94144307ee5d6a"
     },
     "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/paper.md": {
-      "bytes_lf": 24282,
-      "sha256_lf": "48a26feb3f6680e346bc427285613233198347469a0815d35bca0399cdc7c3ad"
+      "bytes_lf": 33485,
+      "sha256_lf": "bd4215ff07096946c7c211fc46681b7caa8e680207675071e395fc77d78dfe96"
     },
     "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/series.sty": {
       "bytes_lf": 3819,
       "sha256_lf": "11cfb5b6b4161f1e60935127c22c0619bfc67286dbc229d044ca2f4641bf8fbd"
     },
     "papers/closure-strain-geometry-local-normal-forms-and-conditio-b62ade60/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 1052,
-      "sha256_lf": "675ee357cf69497e2c7405ca8f4f6b27b91753b4aa90b6db54f7964c823719ef"
+      "bytes_lf": 1543,
+      "sha256_lf": "f8913e02e562d7969bc95387a37d6a69b27ebb78c963be5c20a4041c3510ca28"
     },
     "papers/closure-strain-geometry-local-normal-forms-and-conditio-b62ade60/REVISION_AUDIT.md": {
-      "bytes_lf": 2435,
-      "sha256_lf": "9f1ec25ddaf04b50ba80fe59aea245ef79b8552f7e9554e36aa96784ba4e7820"
+      "bytes_lf": 4885,
+      "sha256_lf": "3b0dd9aecbd5b90c2868cdb1722daa485c8dc242a7405d958fb48c499fca34a7"
     },
     "papers/closure-strain-geometry-local-normal-forms-and-conditio-b62ade60/main.tex": {
-      "bytes_lf": 25124,
-      "sha256_lf": "364847103297b529053639ed1975998b3758cf55226eda53dc63da3f4f126bba"
+      "bytes_lf": 37971,
+      "sha256_lf": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975"
     },
     "papers/closure-strain-geometry-local-normal-forms-and-conditio-b62ade60/metadata.json": {
-      "bytes_lf": 5642,
-      "sha256_lf": "f166e8fb4633ab9a8588fbc10c5c589cc44aa5f08dcab8c659cb0c127e577550"
+      "bytes_lf": 6890,
+      "sha256_lf": "4fa63687b85be07c835509221c82ef54eb88257c310e1131a664d9a20d7c8ee3"
     },
     "papers/closure-strain-geometry-local-normal-forms-and-conditio-b62ade60/paper.md": {
-      "bytes_lf": 25577,
-      "sha256_lf": "0d57adfee71836be5d732d2689473c67cc62e54799a47a7fd2b6a2f26df739fd"
+      "bytes_lf": 39734,
+      "sha256_lf": "3c20861ce660d245929eca505dd289762af79edb0fa6cae224bf9e428b1270a3"
     },
     "papers/closure-strain-geometry-local-normal-forms-and-conditio-b62ade60/series.sty": {
       "bytes_lf": 3819,
@@ -601,28 +609,28 @@
       "sha256_lf": "483597dae8e82e68b31d2e187e22f4b8c8ff8821621d782d8162445bf16fbdac"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 104365,
-      "sha256_lf": "65a52a3d7bfca7e074567acc3b9bab7e989d833d7a2adc2d7e5ea483353acd6a"
+      "bytes_lf": 105171,
+      "sha256_lf": "1647e48af27dac4ddf85310b2b1b240e823b68fdb3d80406dbd77ea94cac289f"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/REVISION_AUDIT.md": {
-      "bytes_lf": 33872,
-      "sha256_lf": "d7da891bace1dd8294845503b28fdda9d93f27e0157ba34d4a5a92b1399b6d2e"
+      "bytes_lf": 34717,
+      "sha256_lf": "cfb84779972d8b7f35616083c9be8c944501720c8eee485260cc045695cc495f"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.bib": {
-      "bytes_lf": 35887,
-      "sha256_lf": "de461d8f88de503660731ed540741617ca76f7f15f478c7d4ea60797cc2d08c9"
+      "bytes_lf": 36698,
+      "sha256_lf": "daeed8c0b43c8ff32a24408b3e041af6ce937e17175a73c9b45157fa2a02c95b"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex": {
-      "bytes_lf": 204246,
-      "sha256_lf": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc"
+      "bytes_lf": 214904,
+      "sha256_lf": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/metadata.json": {
-      "bytes_lf": 8292,
-      "sha256_lf": "998521ab658aa7e07d3f71ff769d6f894f3f571ea2f02795f594e5e1a3defd2d"
+      "bytes_lf": 8327,
+      "sha256_lf": "d38281a2fc2b839ffac52961c413f8f04b2ca87f10c3a2c9830fe49a1eeb3498"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/paper.md": {
-      "bytes_lf": 205909,
-      "sha256_lf": "42300f02ac2655f3360032041662c2e3d3a8b760de017723eef4d1f4d8531914"
+      "bytes_lf": 216295,
+      "sha256_lf": "7750ff172da5b4d02cf093d5db9c02efbc57a8d0cf4634a27af1835654d28c5f"
     },
     "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/series.sty": {
       "bytes_lf": 3676,
@@ -685,20 +693,20 @@
       "sha256_lf": "a09ad56f15d9cfd607743f49d12f750b1294b6f64e3cc553ad564262c29e58ab"
     },
     "papers/constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b/REVISION_AUDIT.md": {
-      "bytes_lf": 12002,
-      "sha256_lf": "9ea213cfac518e4bd070f06d1928cc79818439c7eee926f898be7965542363e1"
+      "bytes_lf": 13025,
+      "sha256_lf": "f40d4efa0a8615acac3a74f6b4209a6444aeacd6384f772bc76844d0e9142c13"
     },
     "papers/constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b/main.tex": {
-      "bytes_lf": 31723,
-      "sha256_lf": "06115993d23c51e9bec4637bf31ff208e2653c48fd138758288da0bfb31bdc40"
+      "bytes_lf": 34432,
+      "sha256_lf": "1a449fe49555681552f63d283e281502ac57477d95a4493a45a3637704ffafe5"
     },
     "papers/constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b/metadata.json": {
-      "bytes_lf": 6455,
-      "sha256_lf": "7a27f334c2ace6e0bec39f040af1101752e787811bc2961cff582e8090fba7de"
+      "bytes_lf": 6512,
+      "sha256_lf": "830ae4728e1778cf28195b8ae900a076d3372f89ff47ed0492274c3c0fa15309"
     },
     "papers/constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b/paper.md": {
-      "bytes_lf": 30253,
-      "sha256_lf": "cb7742c17e3861cff1a9a7266481ed3f9a2e2a6ee1d5f0715ce3ea572a7514fd"
+      "bytes_lf": 32557,
+      "sha256_lf": "d35b2f270f39c7268abaf45b31ed3c4d46a3ff617b94def29e51e175b3f30c77"
     },
     "papers/constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b/series.sty": {
       "bytes_lf": 15299,
@@ -1345,32 +1353,40 @@
       "sha256_lf": "aa925ed188262ac10c917db32284d197f2227a14f0859bbb14c81b9f9d5548d6"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 60836,
-      "sha256_lf": "47a8a21d8dde2c2bd693bfae76381be11cc6b12bf23867c1cf015d885bf5e3b4"
+      "bytes_lf": 87888,
+      "sha256_lf": "50aecb28d683aa56f30f29a56a5048af5e790b7551eacfc7629e9e235449ab20"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/REVISION_AUDIT.md": {
-      "bytes_lf": 4309,
-      "sha256_lf": "6f96c4af6d585b95ac1961d2cf613fa158ef61b219718c3ff72d5c8fd85f7d8e"
+      "bytes_lf": 8682,
+      "sha256_lf": "d06251d28bee70c48d1bc03428a0f1060a22c2206098a7d8e585350d5180b70b"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/bundle_audit_report.json": {
       "bytes_lf": 441,
       "sha256_lf": "ac9b0fa25d6cdda0be1d94350ce57fc225a264b6c610d2f9c5da553d5bddf6d2"
     },
+    "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/editorial_artifacts.py": {
+      "bytes_lf": 7075,
+      "sha256_lf": "a08cd9e4d585ba5017dd2f375e8f9afb241de7994ee45645c8d95333fe048ce2"
+    },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/main.tex": {
-      "bytes_lf": 39711,
-      "sha256_lf": "58e27c4ffcd28f4470835365ac83448dd8f612f7ac5f047496eb6f9a40f3499e"
+      "bytes_lf": 67297,
+      "sha256_lf": "fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/metadata.json": {
-      "bytes_lf": 6979,
-      "sha256_lf": "ea1598080bd1bb81d04799ee4e072001ad269f1bd951d1e18415771ec94043a1"
+      "bytes_lf": 10413,
+      "sha256_lf": "ac0aa86213ea6d60b0b1075d162cc35b62ce7711c461822445b98e98f6df52ac"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/paper.md": {
-      "bytes_lf": 38930,
-      "sha256_lf": "c186a806b78d58a46b262794e96473e7b5e489f63c0b711798f019d48c255cc9"
+      "bytes_lf": 65840,
+      "sha256_lf": "4c85b693e7fb0ee5dce6d892216888256d88c70fc7ca619763b2e3455c906a37"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/references.bib": {
-      "bytes_lf": 4282,
-      "sha256_lf": "fe87360c604b66e57a0065052ec68795e5070838b3b106aecbc17ef8e78e5589"
+      "bytes_lf": 20561,
+      "sha256_lf": "c5860f8751ba66f1112f118032901d14cdded75d28d58a4e0d3cd987d0c15bff"
+    },
+    "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/test_contextual_revision.py": {
+      "bytes_lf": 8083,
+      "sha256_lf": "917a93d9b3dfdc725a8cb2819abbc43710484c504494cde3d3138d5f9cc11a2b"
     },
     "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/verify_bundle_audit.py": {
       "bytes_lf": 7043,
@@ -1381,20 +1397,20 @@
       "sha256_lf": "353915e55955f3976d6e54ec31a224ecbfb1b0638cc1d5e1212de2a31e14206e"
     },
     "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/REVISION_AUDIT.md": {
-      "bytes_lf": 7834,
-      "sha256_lf": "3d60c4b3115a397c331f7596a089e6bfd75bc348c16fc778f3a7e9ef38553907"
+      "bytes_lf": 9409,
+      "sha256_lf": "57eca65d42e75bfb4987634667b17d0ab8641a40f7b60c9e81ce0587b657241e"
     },
     "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/main.tex": {
-      "bytes_lf": 23912,
-      "sha256_lf": "f885ff123d5a3ded5f81f9eb272ca9a02ad6105e9c74f3a20b29d6a945fdcbcc"
+      "bytes_lf": 26825,
+      "sha256_lf": "5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18"
     },
     "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/metadata.json": {
-      "bytes_lf": 5566,
-      "sha256_lf": "f424b1c70bcd7ff7305319eab7891daee0df395a593e4f12ec7483ff3577e3c2"
+      "bytes_lf": 5933,
+      "sha256_lf": "6acf47d050342b9119c8dd213d2453ae6e96d1fcf07487c3faa538f403d23264"
     },
     "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/paper.md": {
-      "bytes_lf": 23920,
-      "sha256_lf": "ee20ddf48a373c40cc89df86ff5ad4088daa85cd323ce06b07ef55a3fde8ebc3"
+      "bytes_lf": 27621,
+      "sha256_lf": "f000d37aa8b744e78b8a3d9b3fd2f7a6f5a58b655c3734ef3fe3078f28c051d4"
     },
     "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/series.sty": {
       "bytes_lf": 3784,
@@ -1561,12 +1577,12 @@
       "sha256_lf": "7b8c57afbdff8b5c4d3a86b3455f3442724f12c538b1b260044769d86850de23"
     },
     "papers/locality-coherent-alternatives-and-records-in-mtt/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 1126,
-      "sha256_lf": "ad32e731a2b4c52b23b47f92e598c60c86f11ccf4e1b7a32f516ed6e2523289a"
+      "bytes_lf": 2181,
+      "sha256_lf": "0e8b717c0cbb2c74e8b36aa755cedd9adaa290fc3a4648d5eebb75c63da34a8a"
     },
     "papers/locality-coherent-alternatives-and-records-in-mtt/REVISION_AUDIT.md": {
-      "bytes_lf": 3145,
-      "sha256_lf": "b17150019d1f6a781661b15b1c8db422145584311586dee0cd179290e5de080b"
+      "bytes_lf": 5323,
+      "sha256_lf": "93183312678488ed8073c26d796067089f56d06ae08e8e80580841f436e8266c"
     },
     "papers/locality-coherent-alternatives-and-records-in-mtt/build-review.json": {
       "bytes_lf": 4322,
@@ -1585,20 +1601,20 @@
       "sha256_lf": "5a3de9ad0215ea8e921a3224a4729757a55ce61035156651c5fd78f7c37a5590"
     },
     "papers/locality-coherent-alternatives-and-records-in-mtt/examples/check_publication_artifacts.py": {
-      "bytes_lf": 3854,
-      "sha256_lf": "b58df09df4844f38935741c8e4f7b4578ada97f9cccbdc2fbc80ccd7060df53d"
+      "bytes_lf": 3912,
+      "sha256_lf": "c1ded3d7708ec734016b80cbc55c11c25ea8d9fa105d1c972c2b7b969331de21"
     },
     "papers/locality-coherent-alternatives-and-records-in-mtt/main.tex": {
-      "bytes_lf": 66582,
-      "sha256_lf": "3b4b684061ccc70355858af985bf1a58bd952f0f9897955f30733b59ec0d2f7d"
+      "bytes_lf": 69854,
+      "sha256_lf": "2e3add5531a1a585b2797f524abe9513664bd28ad46bc798c2977ef9ec4609ac"
     },
     "papers/locality-coherent-alternatives-and-records-in-mtt/metadata.json": {
-      "bytes_lf": 4964,
-      "sha256_lf": "deedb40a880bcf4fa94eadee29f1e3b7efd0a200ae1d38b9e6e9e600af006667"
+      "bytes_lf": 4963,
+      "sha256_lf": "5e1f7ac599d62d74836c56a871ce4e37b84ff7c4c84347c0804ddbf5c251ef11"
     },
     "papers/locality-coherent-alternatives-and-records-in-mtt/paper.md": {
-      "bytes_lf": 68097,
-      "sha256_lf": "72e01d56c79b73e7fd812795c7da9ebeb441fbbc7ea4929abd06f5cb8971e16a"
+      "bytes_lf": 71296,
+      "sha256_lf": "9aed627666017b78b44fe4ba6b1fda1948eb35e03da3bffe7b98d12a8e05f4b3"
     },
     "papers/loop-quantum-gravity-as-a-shadow-of-coherent-fixed-poin-9133be75/RESEARCH_INTEGRATION.md": {
       "bytes_lf": 676,
@@ -1653,20 +1669,20 @@
       "sha256_lf": "1f32f0d74ed2f3196a952b0a2d50e8906c3f5ead1749a3acfab69cabfb3e220c"
     },
     "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/REVISION_AUDIT.md": {
-      "bytes_lf": 5992,
-      "sha256_lf": "7dbfe4d18d2204a34de11bc6b996da970f1043ede246faedcf365e0fe8171179"
+      "bytes_lf": 8166,
+      "sha256_lf": "1ab401ff3b659fec5b079ae249a6d2828e55e8fea93ee717ed8e5725dea9713e"
     },
     "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/main.tex": {
-      "bytes_lf": 24950,
-      "sha256_lf": "2a2d82a2e44e62005fef0d8295285975cf6c2fdbe3e911a727f52d78c1587686"
+      "bytes_lf": 28418,
+      "sha256_lf": "c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8"
     },
     "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/metadata.json": {
-      "bytes_lf": 5766,
-      "sha256_lf": "7d73f1438663bf61329cf9770aa7a8b456892f61026e460882c2201b932b60a1"
+      "bytes_lf": 6057,
+      "sha256_lf": "e85ad3b89bc232a5b75681bc7a924997849d98e1111194595c966e787da87c3d"
     },
     "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/paper.md": {
-      "bytes_lf": 25097,
-      "sha256_lf": "a660c8ac63aa546fc2041ba4074240f31de15396344ff464323c72972551fec3"
+      "bytes_lf": 29455,
+      "sha256_lf": "71c022bcda1e02a019287d42778b8024f6e10b77604aede8f81f5f4ba70c1552"
     },
     "papers/measurement-effects-as-finite-survivor-basin-kernels-pr-eb7737ce/RESEARCH_INTEGRATION.md": {
       "bytes_lf": 672,
@@ -1725,28 +1741,28 @@
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 1282,
-      "sha256_lf": "bf4a718d2c8cede131ca7eb18b5b6214000bee295ab8024f55c3b8ed78c1ec00"
+      "bytes_lf": 2196,
+      "sha256_lf": "bbd182466621d973e50f6011bd274a6932648d4c45f82caff07b4e27a0b04773"
     },
     "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/REVISION_AUDIT.md": {
-      "bytes_lf": 2483,
-      "sha256_lf": "5d62ae9a0f266bbda5f8a2b0d9cb1e0070f4e3290b857a673872a9992b9d2cc1"
+      "bytes_lf": 4880,
+      "sha256_lf": "65cd70aa70301b68d5ee36ae3818b43a86cfd110045622faffc4885ed8b449c2"
     },
     "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.bib": {
-      "bytes_lf": 2518,
-      "sha256_lf": "9b8e72a5cad32401109169c0ba19c5222af61c0c2c766bcf7272e4bcb1aa6b4b"
+      "bytes_lf": 5158,
+      "sha256_lf": "3bf89a884ebc2b9d65c78a66ad4e3c597c76d9d51851c4f5a2a66e2cb732618e"
     },
     "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex": {
-      "bytes_lf": 29483,
-      "sha256_lf": "4c384017998efa433eb2feb26c6dd0403aacc40cbd586bbe7d526497a447d434"
+      "bytes_lf": 38398,
+      "sha256_lf": "be1e4f44b1f0eab7eb1c966e6067932ed3a6f84d529d19be3d4b5b91dd236b10"
     },
     "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/metadata.json": {
-      "bytes_lf": 6166,
-      "sha256_lf": "5f608f05c0b7a2bc0b29f78dbb2e645536d22e11d3f43a303d8707bcc92a59a4"
+      "bytes_lf": 7262,
+      "sha256_lf": "85aab0e2c4c1ed2183962f9efc704afa6385d6a8e8bfdfb3e52652f7d63bb8f8"
     },
     "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/paper.md": {
-      "bytes_lf": 29531,
-      "sha256_lf": "d9f9c63d28aa10b26f60d18f70b7cb1652ad09d8618c90df8af280e512ab46c4"
+      "bytes_lf": 43971,
+      "sha256_lf": "51ab13c5941d7024295ace38a45af9002a975007fbb97015069377ae0aff6364"
     },
     "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/series.sty": {
       "bytes_lf": 3784,
@@ -1869,20 +1885,20 @@
       "sha256_lf": "cf6028f69b30488315f0804879c6d82f97b92466f999aa1673605c4cc3c44eb6"
     },
     "papers/modal-triplet-theory-foundations/REVISION_AUDIT.md": {
-      "bytes_lf": 5886,
-      "sha256_lf": "d437e04a894cbf3a283973ce5be5ec4f260b52402b659ed7c1d6a04e0ff3a34a"
+      "bytes_lf": 9068,
+      "sha256_lf": "64bccf7ce3c337364702494e288d9113d7c44a61b77819e9f30a3ea1e9e5788c"
     },
     "papers/modal-triplet-theory-foundations/main.tex": {
-      "bytes_lf": 50625,
-      "sha256_lf": "e86f8fd629109d9d3ef0ff48a8bc62f26dd75ea743560a626331ddd67d695ce5"
+      "bytes_lf": 59570,
+      "sha256_lf": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72"
     },
     "papers/modal-triplet-theory-foundations/metadata.json": {
-      "bytes_lf": 7364,
-      "sha256_lf": "ce5fe4f764955312df916acb5dbc1c413eb3905e5b3a52fa19fdecf398a4f3d0"
+      "bytes_lf": 8364,
+      "sha256_lf": "8dd5c97a606d1b0ce293ed6df2b74e87382e825dd09e3ba060ac58ed4ebc0362"
     },
     "papers/modal-triplet-theory-foundations/paper.md": {
-      "bytes_lf": 50239,
-      "sha256_lf": "11d886069ed567bb124edde4d0e4f60607b8197e894a2a7067a398223df33577"
+      "bytes_lf": 63302,
+      "sha256_lf": "6ffc755e1bc7f5bc2ff08cf06302d2b13ad6e292ac87ed17d7a605565ea04806"
     },
     "papers/modal-triplet-theory-foundations/series.sty": {
       "bytes_lf": 3784,
@@ -1961,28 +1977,32 @@
       "sha256_lf": "a4b1aff3d1acca88f3a4dfd68f73ac812fea371eeac7f8302d5f02de05f5232e"
     },
     "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 37328,
-      "sha256_lf": "3f55fd5e6cdf8811964fe5d6a2dba9c9ae710665411a7b058b316c0ff7630f96"
+      "bytes_lf": 56233,
+      "sha256_lf": "4dd72deabdbbcf239caba5297014aefc21315c415f27f9a41c84f6a292e59f0f"
     },
     "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/REVISION_AUDIT.md": {
-      "bytes_lf": 4367,
-      "sha256_lf": "ff08106e704d510300a3ee973bfe609d2028739ca5269539832bba8db876628f"
+      "bytes_lf": 6896,
+      "sha256_lf": "27d194f60cafd3ed1b81fa03eeac995e9c488ffd1f0dc27f3fc072e6e995a761"
+    },
+    "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/editorial_qa.py": {
+      "bytes_lf": 8041,
+      "sha256_lf": "8e1f3964408559741ca95c601efae387ce42158bd227870233b796fa74bf0ff4"
     },
     "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.bib": {
-      "bytes_lf": 2311,
-      "sha256_lf": "a48297a5e97fac235916455a8278c16b9f274a6f486a53020e5ad56184552d43"
+      "bytes_lf": 21316,
+      "sha256_lf": "19d21a1c01e72ca884e86487e783e0ba6550aa20f11cc6b27b8d7cc6274233d8"
     },
     "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex": {
-      "bytes_lf": 31356,
-      "sha256_lf": "3209a96436978bb986571d595e4a36f50b2038352dfae838cf9d34c444f6e7bf"
+      "bytes_lf": 63675,
+      "sha256_lf": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2"
     },
     "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/metadata.json": {
-      "bytes_lf": 5826,
-      "sha256_lf": "f9b12697f1972415f086b88eabc94dce911903b001d320d545a48273a39515da"
+      "bytes_lf": 7860,
+      "sha256_lf": "032f080a047778f2176a44cc702a0d927604548528e8546040cd8a572cc8f9ae"
     },
     "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/paper.md": {
-      "bytes_lf": 31168,
-      "sha256_lf": "1045a6838e869ec55a939b29e346be32a7f5f424a60668afbbe318fef9582872"
+      "bytes_lf": 83329,
+      "sha256_lf": "a60e79e85c85b16693c86005074d1b47187ceedbfd84a677e25d4d5daa8183fa"
     },
     "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/series.sty": {
       "bytes_lf": 3784,
@@ -2093,68 +2113,88 @@
       "sha256_lf": "1fc46ab62d5fc7021fa866f70a1396590f1ef057de4a6e4874b9412e75fe87da"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/REVISION_AUDIT.md": {
-      "bytes_lf": 1486,
-      "sha256_lf": "f1d21a368aff32c2476cd2fd6c09195963d5f04ecda5db890b0f8ed5593cce67"
+      "bytes_lf": 3532,
+      "sha256_lf": "b8ff4feccb66876a6a78bb47264c65aff47b1b395879e013bb8edaadcae2ff51"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex": {
-      "bytes_lf": 20513,
-      "sha256_lf": "03b7e07110f8ff1a980338f47ce88346aaa598cd6a9b149cbaa971234dcb6bb2"
+      "bytes_lf": 26879,
+      "sha256_lf": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/metadata.json": {
-      "bytes_lf": 5734,
-      "sha256_lf": "6ea744ddd1e2736030018d1d85909b8dfb3c4f7691c01cdb911496bbbdfb76a1"
+      "bytes_lf": 6417,
+      "sha256_lf": "9d0ccc838ae189a217146eae608b3011153b5b41a8bbc8afcbaad8a4e1051fa2"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/paper.md": {
-      "bytes_lf": 18834,
-      "sha256_lf": "e063bc7df99d2a565daf5680bbc9bc6ed713cde4e60d47bf76e3810f9e60dde7"
+      "bytes_lf": 26876,
+      "sha256_lf": "d8605ff2411e2bde164126e1effc1810054d7f0f79dcf09e9fa052bf1272c6e3"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/series.sty": {
       "bytes_lf": 3784,
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 9066,
-      "sha256_lf": "b0559e1ceb6543a31bfa0ef676260213359a8c4317e24686ebaf4207debf2058"
+      "bytes_lf": 21007,
+      "sha256_lf": "5d9fe8b03732b6689080ce362235b6701388be0a0b87dd5c19d0a1c5be167f87"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/REVISION_AUDIT.md": {
-      "bytes_lf": 12683,
-      "sha256_lf": "3991e4c7640b5b6d9455e859bf93e327b8e76d78397e03143566dba86500294b"
+      "bytes_lf": 15813,
+      "sha256_lf": "a61e77ab9728f633e98f74ff81597cb77d2f56e8c7eb6a31902a333d9573390e"
+    },
+    "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/check_editorial_examples.py": {
+      "bytes_lf": 4111,
+      "sha256_lf": "23eaaf1564c19df0c179a5d38bb1f844dd0c7794b371d57bc9fe001a57f7b2e6"
+    },
+    "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/consumer-qm.bib": {
+      "bytes_lf": 1170,
+      "sha256_lf": "4cff919b83d226bbc016f5f691760ba3a514d81a846d08af88e717351b434797"
+    },
+    "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/editorial-config.json": {
+      "bytes_lf": 4373,
+      "sha256_lf": "6a816844223f8ee43caedd1c2520227f7a7b43562d850b70b2239417609911ec"
+    },
+    "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/editorial_artifacts.py": {
+      "bytes_lf": 6210,
+      "sha256_lf": "6c5bded1fe68c9c7d202bd818be586b26ed8c8e9c78e42a43624ec64841e7802"
+    },
+    "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/frozen-qm.bib": {
+      "bytes_lf": 4996,
+      "sha256_lf": "814c818908da543a6b30d0691cd24dbf2bb75cd25bf7ceff28cb638f3fbea931"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.bib": {
       "bytes_lf": 5138,
       "sha256_lf": "f5a5fecd8636f70f03fa99978b52abdcd8d79d3ccc0c11d67015606a6384306d"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex": {
-      "bytes_lf": 46258,
-      "sha256_lf": "582ba1b90adaf594fcf10271b41d0f0bfc2ab6f2c03490747e233b549d626cb2"
+      "bytes_lf": 71078,
+      "sha256_lf": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/metadata.json": {
-      "bytes_lf": 6596,
-      "sha256_lf": "e4a3f37ab926f11fba5352988cb1456b6f821e5b24e5654da844d9c4e0b5edfc"
+      "bytes_lf": 8414,
+      "sha256_lf": "78ce5d56ad3a2a0033732f7f2af2630fb4995a20b8f4f86b025ff5ef43e43fc9"
     },
     "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/paper.md": {
-      "bytes_lf": 44127,
-      "sha256_lf": "0396ad7bcdb2362410cab7307cb1e762f1d97e60a52a33844f15c72b26e8e20d"
+      "bytes_lf": 81034,
+      "sha256_lf": "e9a4b65c04e6146263c3e87dc9a81cc76e2b085244e7196cc0e74f6d31fe794a"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/RESEARCH_INTEGRATION.md": {
       "bytes_lf": 37993,
-      "sha256_lf": "f8629cc13e439c2f5adcc512c93d871633300693ad5b342abad554468cae6cd3"
+      "sha256_lf": "04d92a95a6c1acbb14d9ebe94962030bd94248c0f4f3f090d0e0d0a5b6597711"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/REVISION_AUDIT.md": {
-      "bytes_lf": 10585,
-      "sha256_lf": "7f88a8687a883788063559456b7e5780c033dcecdd75ca280d0e9f5e8d974fed"
+      "bytes_lf": 11716,
+      "sha256_lf": "dcd50fb15d1d719873436b563d4a3c2ba8cdffee7be07f8ccddf5bc0b8de63f2"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/main.tex": {
-      "bytes_lf": 48443,
-      "sha256_lf": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550"
+      "bytes_lf": 51539,
+      "sha256_lf": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/metadata.json": {
-      "bytes_lf": 7494,
-      "sha256_lf": "aa0059b3ac66ce17913ef2585720635835bec6e839252d42b6a98a3690a6e477"
+      "bytes_lf": 7526,
+      "sha256_lf": "29eefedd175d63b2aac2419f92c79217a7adbb9e9a4bf762d204fa2191bb1030"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/paper.md": {
-      "bytes_lf": 47288,
-      "sha256_lf": "0ef71a10d27473aa5d42a02827b867b8036599820679380eb7bdfd5bf7399ac7"
+      "bytes_lf": 50177,
+      "sha256_lf": "009d6a04cb8b9e9f47c60020f3598ed22fde79b1ab7c6eb5d2a213acb4c3591f"
     },
     "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/series.sty": {
       "bytes_lf": 3723,
@@ -2185,104 +2225,104 @@
       "sha256_lf": "e90bc64f644864aaf01d07d03bbb632342b6e3337065697e1fbcc8f2e8d9fef7"
     },
     "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 26526,
-      "sha256_lf": "f732124f90eb34cce8e038624088ade4763cf046b2102748ad651628e248e721"
+      "bytes_lf": 44292,
+      "sha256_lf": "9f031fd709fbad9633010ea8448e0158f98cd72e07a1a1fa45acc3972f89fd37"
     },
     "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/REVISION_AUDIT.md": {
-      "bytes_lf": 3402,
-      "sha256_lf": "63e4b4928f1be425e5b69193f9bd4a3676e249d10439985d34593ccc0dfe700d"
+      "bytes_lf": 7571,
+      "sha256_lf": "b546b2f1fec2e2ab992325089bccdd466e67949a2f57c3c93274c5394be419da"
     },
     "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.bib": {
-      "bytes_lf": 4820,
-      "sha256_lf": "290e1753deea15e28c385190de84c7db31f06eab0c70e425072caa6f8239cfbf"
+      "bytes_lf": 27006,
+      "sha256_lf": "960c16293debb3ac5e2fe2e63cf1b9f68dc21974a4a2723166b0a67386f4907f"
     },
     "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex": {
-      "bytes_lf": 29926,
-      "sha256_lf": "c7cbe4cc0ebe987609ae16a2520b6df9bf18aff70c503657b6a356a7ba2cba2d"
+      "bytes_lf": 73416,
+      "sha256_lf": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635"
     },
     "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/metadata.json": {
-      "bytes_lf": 6174,
-      "sha256_lf": "bd51717f162b8a71717eb591a1aaa99308c86b54ec2847552fbd01abb63baec7"
+      "bytes_lf": 9045,
+      "sha256_lf": "56185785916303274726e21a6b74c9c88ef60feb664bb58f0527b356878067eb"
     },
     "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/paper.md": {
-      "bytes_lf": 29962,
-      "sha256_lf": "7755c84179047b6c8c1ab1c70cf22714e73be8eeaacf07ce555dd5a27ffacbc9"
+      "bytes_lf": 95796,
+      "sha256_lf": "8ee318f12b1e1f14e888996d86f616f3ccca2a391ebc50a8672db9608329068c"
     },
     "papers/modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927/RESEARCH_INTEGRATION.md": {
       "bytes_lf": 706,
       "sha256_lf": "174d2129585cb9ba614ab44ad1c8e8e4446799227edf5e3920fa34f4bad515f1"
     },
     "papers/modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927/REVISION_AUDIT.md": {
-      "bytes_lf": 2946,
-      "sha256_lf": "36c3dbb8526fed76aef75512b06159d3f208be2c8bfddcb1b6f72c87662c4b42"
+      "bytes_lf": 4017,
+      "sha256_lf": "770a558525006f556b6a8f3632d50b0beedf4a089b98b0ce6dcabb7c980da775"
     },
     "papers/modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927/main.bib": {
       "bytes_lf": 4324,
       "sha256_lf": "2a306c8476b85a5bb012a1e4a73a9657cff414affa056f013123b39426fb8cf4"
     },
     "papers/modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927/main.tex": {
-      "bytes_lf": 29079,
-      "sha256_lf": "4501582a4a3483668d18eba74773813fc8d4e23e4863b271270f1454f2f9f4f6"
+      "bytes_lf": 32512,
+      "sha256_lf": "db115e50f0022f61b5b745524753dd8e0b76ba90a5c77977a4172081c446da67"
     },
     "papers/modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927/metadata.json": {
-      "bytes_lf": 6653,
-      "sha256_lf": "a410717e76d84cff7e43a1a6cfc2bbda57150a8dee37c4ed9b8a34d29d854ee1"
+      "bytes_lf": 6909,
+      "sha256_lf": "3d945451b3e5c1719ab91e5f72e1bb0f4a9b3d23ff336cb7e6bc4486a9b2ae40"
     },
     "papers/modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927/paper.md": {
-      "bytes_lf": 28575,
-      "sha256_lf": "6300d69da7d0ccaed8bb3f2a8affe87e7fc8e87a6b65afc691000a17f04e8845"
+      "bytes_lf": 31340,
+      "sha256_lf": "fadda7d2924755544ecfe6fffd5d2165b8cca4c0297f46d401bbad0e607cea69"
     },
     "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 1721,
-      "sha256_lf": "fe9520d7e74efe2eba38d4ad78adeafc228e507986cb1ccf3b44399e606fc37d"
+      "bytes_lf": 3434,
+      "sha256_lf": "241f2707ef9bc52e39b60fcac86031cc9f2846a680ffea0596fee6ce3bee7dab"
     },
     "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/REVISION_AUDIT.md": {
-      "bytes_lf": 7381,
-      "sha256_lf": "9d7dd5ab94642bc7deed58170ef2cfe659241011a10644a682fd12fafd6be4aa"
+      "bytes_lf": 9320,
+      "sha256_lf": "8349caa780029df0d8b71ca513364a4196df467393f1f9fbf8003d3bb1572ce3"
     },
     "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.bib": {
-      "bytes_lf": 2892,
-      "sha256_lf": "127a459fefb43e467e985764b92f7640cee2499fe90a3da4881cc7d734fe5732"
+      "bytes_lf": 4898,
+      "sha256_lf": "a3432249b9b288e7c27877e871407888a8a5c0ef95d02aee6b7a18499d62ce22"
     },
     "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex": {
-      "bytes_lf": 32774,
-      "sha256_lf": "f7fb7e7c3f6e7355614a06c8717e4d3cc9e554c20c5401cdbe192b8ccdb77d2e"
+      "bytes_lf": 40438,
+      "sha256_lf": "d510e6d0d28ad3d5b97a6245abf059c6386c129dbb60f7c1a3385600668eb768"
     },
     "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/metadata.json": {
-      "bytes_lf": 6629,
-      "sha256_lf": "fb224b6b692d27e3205080132af86fcb1ff0ef4a0537f2fe823ae686ff4b2a47"
+      "bytes_lf": 7669,
+      "sha256_lf": "228741475fe1a4ecb13955bdec5a4f139267e3cba15e7a1e2d738209e04b90d5"
     },
     "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/paper.md": {
-      "bytes_lf": 32325,
-      "sha256_lf": "bd04261aa9b92b673d9a6dcb70160812b4846d1066b12b5e0e981d07247c0547"
+      "bytes_lf": 44197,
+      "sha256_lf": "a09539ed946c3afc7b25737a58fb1ba220e1cb662015bbb0c80fcf321b85ebc9"
     },
     "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/series.sty": {
       "bytes_lf": 3784,
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 4377,
-      "sha256_lf": "94859d78ccec9a5143e024c8210b52fd01f675d65d8a491be19fea0009b54bb6"
+      "bytes_lf": 8842,
+      "sha256_lf": "82f42c615315ec84e4c619044380fb4a9b4b55697de0bea1f7d0570f2f2be114"
     },
     "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/REVISION_AUDIT.md": {
-      "bytes_lf": 2498,
-      "sha256_lf": "4a833fe7acf0b18b34caf4734895d9b18ac24938be59e16eed01f18a8043c71f"
+      "bytes_lf": 4948,
+      "sha256_lf": "051caab1a6cdf7be894653cdbbd353844bf7697bd2c6dce5e56318ffa0819bc2"
     },
     "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.bib": {
-      "bytes_lf": 10957,
-      "sha256_lf": "5e01519525e0a82a040368921d1c32ad7f6e162722a945481f20ad40137b505c"
+      "bytes_lf": 19485,
+      "sha256_lf": "2ee9112051816b4663acbfe3c0e69458b40e44ac137dae7b92952e7a2e675c26"
     },
     "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex": {
-      "bytes_lf": 21498,
-      "sha256_lf": "b5306c19857e56517685d64be04d196570780d6f315cf8987b54aeb3c68afe19"
+      "bytes_lf": 37760,
+      "sha256_lf": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093"
     },
     "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/metadata.json": {
-      "bytes_lf": 5437,
-      "sha256_lf": "fb8a531d80c66f06d1f8114bdbe0dda9cb5d6623cc00fbb80c35d655098984a0"
+      "bytes_lf": 6918,
+      "sha256_lf": "aafe3ab830ba1834207fe03f415012c92209bf606eb64d4e59c5cf2f56d93283"
     },
     "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/paper.md": {
-      "bytes_lf": 20232,
-      "sha256_lf": "78fca74b55ac43cb87fdac6106134502e30e92f428c1ee7e53b5014a185b9e5c"
+      "bytes_lf": 49995,
+      "sha256_lf": "b0ffdc425ba02c11f65506b90da7dded377677318932e1bace6817d908208bb0"
     },
     "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/series.sty": {
       "bytes_lf": 3786,
@@ -3041,24 +3081,24 @@
       "sha256_lf": "e608f5d7d01e3ed8e4c1cbf0be7f23dee29b066b700c16270a208ddcbdd61035"
     },
     "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/REVISION_AUDIT.md": {
-      "bytes_lf": 12911,
-      "sha256_lf": "20f20c162f534de2d6cc9e33fbc30fca4f71ef59b27f16592f0886cc3aa2fb57"
+      "bytes_lf": 15782,
+      "sha256_lf": "a20e5dd44aa412cbd1c352a393f86bf560b3b8e81f0ba2fcdf0b980c0e64178a"
     },
     "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.bib": {
       "bytes_lf": 33326,
       "sha256_lf": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex": {
-      "bytes_lf": 37286,
-      "sha256_lf": "2ed601fe1b0bafc5028f26afcc4d0fc47e870d0b76a7785c4497d1973f9f0423"
+      "bytes_lf": 52778,
+      "sha256_lf": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825"
     },
     "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/metadata.json": {
-      "bytes_lf": 8639,
-      "sha256_lf": "91245c1f8cd8d77e4fe765e9175ae5ceb3be9861950c61ab596c9f6498b83e8e"
+      "bytes_lf": 9635,
+      "sha256_lf": "e57b2f5ce73e3890884dae2eedc6f485281c02b398a3b0c0ef9761da9bece8c4"
     },
     "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/paper.md": {
-      "bytes_lf": 36099,
-      "sha256_lf": "6848dc2d84f502e23168735cedc3676ebf3fd67c4ff2a0aea907fb3a188962d1"
+      "bytes_lf": 54008,
+      "sha256_lf": "714340fa7ec673a2e06530731f095a1003bdaaa2a888d53dde029c2720dc3fd8"
     },
     "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/series.sty": {
       "bytes_lf": 3784,
@@ -3137,24 +3177,24 @@
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     "papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 23063,
-      "sha256_lf": "3a7e3855f3ffd6665cccc4cea60c97377e995faee093250f4be6006913c74b77"
+      "bytes_lf": 33975,
+      "sha256_lf": "31a25b19a28d911100b4307aede246b1a6bf14dcd719982d29ce0e98d5bf85a8"
     },
     "papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/REVISION_AUDIT.md": {
-      "bytes_lf": 3150,
-      "sha256_lf": "429113520e3e370bc6e22e44bd82b01072ba498ce64caaf78972b202d5d20875"
+      "bytes_lf": 5592,
+      "sha256_lf": "c423bc34dc8355b8f164d55a3ca17f8c3132595d85c5cb611558a945bb6e4692"
     },
     "papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/main.tex": {
-      "bytes_lf": 30371,
-      "sha256_lf": "7c68851cd2e7e3e17fccc3865ad0135bcb7d9790960ed66d9f7dae6b7ab69ff9"
+      "bytes_lf": 67701,
+      "sha256_lf": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb"
     },
     "papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/metadata.json": {
-      "bytes_lf": 6791,
-      "sha256_lf": "248d02be1c99e5bdb735b4565f37079d6158bbfb2fbe1f975d3ff0fec975a8c6"
+      "bytes_lf": 8672,
+      "sha256_lf": "6e6b506427a9048e2ae0951bfa919750e842981b7b4962630abf23c9f12301ce"
     },
     "papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/paper.md": {
-      "bytes_lf": 31126,
-      "sha256_lf": "9837128008013deb30a5bfccc1a3c82bc826150141d0a8e31ef06385663e9372"
+      "bytes_lf": 72495,
+      "sha256_lf": "0418e69113bf16cb8d4a070fa6d6164bde6f2b3f3a4e3373b85b9bd299166268"
     },
     "papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/series.sty": {
       "bytes_lf": 3819,
@@ -3189,20 +3229,20 @@
       "sha256_lf": "c3f64f494e79e08eea85e8d2c11dfc503a2a2a5fed38a4f65fb1c2cfa0b4c5e3"
     },
     "papers/theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f/REVISION_AUDIT.md": {
-      "bytes_lf": 2395,
-      "sha256_lf": "4d2634d16b7bea1ab571f4d40e9b4d7f6638995fce97f6fb97b509aa6f0d4346"
+      "bytes_lf": 4122,
+      "sha256_lf": "b08cb44fd006b3b74b2c6556ae2e6902f1c4ae34554afe3ccb59126061a05d4b"
     },
     "papers/theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f/main.tex": {
-      "bytes_lf": 36781,
-      "sha256_lf": "83634ba0257825ccdfde570055204fb0f3af70e47e1f7eb5d27a200bda128201"
+      "bytes_lf": 41323,
+      "sha256_lf": "58e8ec8f4b46bd409cedf8db43e64244c1975dd99be3813570af62f61f7fe3be"
     },
     "papers/theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f/metadata.json": {
-      "bytes_lf": 5504,
-      "sha256_lf": "57b900d69f6c9e2cad554e49fd23f3476c2f526c5cd9e5d621d1beeb3e0f3434"
+      "bytes_lf": 6031,
+      "sha256_lf": "fcf965bcde9767f7723e948c214da5933fa606ebef66e36e6a15c270477148de"
     },
     "papers/theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f/paper.md": {
-      "bytes_lf": 38006,
-      "sha256_lf": "18be1a7088ab99b1da3680210d7c7a36706c1eb0d576433ec9908a2ca90d7935"
+      "bytes_lf": 40729,
+      "sha256_lf": "9b14144dfc945dac0c79fb34b5d31a8f4f983f1fa081cf0ed90b46550e08b5b4"
     },
     "papers/theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f/series.sty": {
       "bytes_lf": 3784,
@@ -3213,20 +3253,20 @@
       "sha256_lf": "157ac29e1eb8fd5e81797342da32946f2b0c19fcb3c99e32e4e4e7b8ee6971ac"
     },
     "papers/theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca/REVISION_AUDIT.md": {
-      "bytes_lf": 1824,
-      "sha256_lf": "aca7273fd674c4c44ef9bfe200c9568dae4653bafc773db01bb9092a8620ce07"
+      "bytes_lf": 3245,
+      "sha256_lf": "2965d33b29afb5d89c2efd75b4ec7f5a20d9985b477aeea57bf58e349988b0d1"
     },
     "papers/theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca/main.tex": {
-      "bytes_lf": 22668,
-      "sha256_lf": "82df865f0bc9b012cfccebec428cd333458ff5269ad87b043aeb90be95e15906"
+      "bytes_lf": 27260,
+      "sha256_lf": "2b599efd41a4f28b7bf2f39b478cbca32b0492fd7704d82ef61281401c444896"
     },
     "papers/theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca/metadata.json": {
-      "bytes_lf": 5369,
-      "sha256_lf": "b41e71ee47a43cf411e242042cb083305caa964d3c54ab699cbd67400c7d79e0"
+      "bytes_lf": 5971,
+      "sha256_lf": "02410e8309d2b4e5c50100402d8367f03c829a8f65293dc5bdd34ea003087b02"
     },
     "papers/theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca/paper.md": {
-      "bytes_lf": 22926,
-      "sha256_lf": "15e5590dcaaa0b9523c3a1853f7eec16c5e9516aaf4e5ce35ddaad59bddb0d66"
+      "bytes_lf": 25558,
+      "sha256_lf": "b6ffc18b6513f224c7153f3f1bc5d0628db4f33eabff02ee19789ee8ceb794f5"
     },
     "papers/theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca/series.sty": {
       "bytes_lf": 3784,
@@ -3237,20 +3277,20 @@
       "sha256_lf": "ae9724635b06e9039860da3ed7b8aaf407c2d842b1997b622e7eea43f0f2cbdb"
     },
     "papers/theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643/REVISION_AUDIT.md": {
-      "bytes_lf": 1689,
-      "sha256_lf": "de238e84d98e4571b1da7cc9cca7dc828bcb3c2edde61447ff7e4b16ff738c7a"
+      "bytes_lf": 3152,
+      "sha256_lf": "a00ac8df5ed2ce4727ec79f00a8f296f54152f1e993b51c7dfea42e8079b9a68"
     },
     "papers/theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643/main.tex": {
-      "bytes_lf": 38681,
-      "sha256_lf": "86fdc659bb995483be2885b1e91dfe5d69c8914e74e94850e25abcc019bd8460"
+      "bytes_lf": 43030,
+      "sha256_lf": "729c27facd16cdc2c80d4e71b2ffc28b14c42556b9440d634756d9db6b03d63a"
     },
     "papers/theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643/metadata.json": {
-      "bytes_lf": 5443,
-      "sha256_lf": "0f3231fd55bee23d8bef5fee95575153ea51aeb563542fb5ed481c8962247a8c"
+      "bytes_lf": 6059,
+      "sha256_lf": "460f1f40cf158ea479f1365a611f11e24fa0ae1c13c34ee4be78215284e38aa5"
     },
     "papers/theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643/paper.md": {
-      "bytes_lf": 39939,
-      "sha256_lf": "d6b80654b1aa491e2dec45f61f0c7c8e6cc9b691e77e53b3216fc4d747fe7300"
+      "bytes_lf": 42330,
+      "sha256_lf": "7e4d2188abb318166a6d5fed46efd99d462bf7bfe3c4e60162f51dd50a15bb70"
     },
     "papers/theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643/series.sty": {
       "bytes_lf": 3784,
@@ -3261,20 +3301,20 @@
       "sha256_lf": "db21226f7259127faef7af892641f995dfed4c9dc6602852e31489393a2f556f"
     },
     "papers/theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5/REVISION_AUDIT.md": {
-      "bytes_lf": 1758,
-      "sha256_lf": "036e280e2bb8d01a0c48ed68f2cd2c77b563e593857a7137649ccecd01c52ef0"
+      "bytes_lf": 3027,
+      "sha256_lf": "994f186d8899d98b02e64cf93d45f86bf8c737b68aba2d2e98d9730914566c8c"
     },
     "papers/theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5/main.tex": {
-      "bytes_lf": 19083,
-      "sha256_lf": "fcc5f36857314f9df2a8c2dd37dc7e098cf74a14ccee3065808846be317b3d4d"
+      "bytes_lf": 23338,
+      "sha256_lf": "9b3936b512fb7a65f28744618dda412191b19c3b841c7376eff437f07937b9d6"
     },
     "papers/theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5/metadata.json": {
-      "bytes_lf": 5458,
-      "sha256_lf": "718b312c7e8894f340befd2c59685fd465233eb21586ea489927a1fbf03db3d9"
+      "bytes_lf": 6132,
+      "sha256_lf": "46c752d39092d77fae493b7b216983cc0e949fd2800be8f2ed8ceb749459a551"
     },
     "papers/theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5/paper.md": {
-      "bytes_lf": 18865,
-      "sha256_lf": "104370526b2f1690a9f254bb38298afc2e4473cc9b0512fb4369088ce06ea86a"
+      "bytes_lf": 21202,
+      "sha256_lf": "f428fc562c04082102219ee39f05656abe9203741aacd72a5b2390fa8c8a69bf"
     },
     "papers/theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5/series.sty": {
       "bytes_lf": 3784,
@@ -3285,20 +3325,20 @@
       "sha256_lf": "51407a8e059339f07166cfb2cd83bf8ceaad144a47229749b0b28ec7a3402148"
     },
     "papers/theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c/REVISION_AUDIT.md": {
-      "bytes_lf": 1597,
-      "sha256_lf": "b9eec5a4b2db15561cac75a3fee46d7e8e261466ad9853b74f252b84cd53995f"
+      "bytes_lf": 2810,
+      "sha256_lf": "0aa731b5e3ebe7e4158015be7853145a2da2551312da8bc4b3997ac804bda285"
     },
     "papers/theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c/main.tex": {
-      "bytes_lf": 15259,
-      "sha256_lf": "6d1a8603a811400c880f05b0fbd64f511478858c76d01294bf29e4e07e2078d8"
+      "bytes_lf": 19537,
+      "sha256_lf": "df72c2521ec994ed56fffbfac4bc6e9055a0dfeaafb498b330db5ced110b796d"
     },
     "papers/theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c/metadata.json": {
-      "bytes_lf": 5382,
-      "sha256_lf": "9ad02073bf5a0c879fcbd26b8e4a912ed6c1bad0b4cf33d030136ae76ca58116"
+      "bytes_lf": 5914,
+      "sha256_lf": "16cde86d6351937821b94163a0493ac6c89c4b20e17ab7817c3c14ad791e480d"
     },
     "papers/theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c/paper.md": {
-      "bytes_lf": 15748,
-      "sha256_lf": "4a2cf50a2dbc0853df097b9165fe72532c87046154a06c9843b5ce34071f2fa3"
+      "bytes_lf": 18064,
+      "sha256_lf": "66698fca30358e7aecafb35055eb79b95ffe44e56d8da055cb509bae7b5be9c1"
     },
     "papers/theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c/series.sty": {
       "bytes_lf": 3784,
@@ -3429,20 +3469,20 @@
       "sha256_lf": "fafb7a2e7f3a5f7b8cc69dfd51649a31a0c41fe7b999302179fa981f2df313fa"
     },
     "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/REVISION_AUDIT.md": {
-      "bytes_lf": 1691,
-      "sha256_lf": "cda616ca17c3a832a0cb6da177c086bbe07022b0c6ea7fe524b1a9e9a1ab98f3"
+      "bytes_lf": 4303,
+      "sha256_lf": "12477560abfdf42888ad44d53ddc74eb99c1e758815f3c2358360f50049ab39a"
     },
     "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex": {
-      "bytes_lf": 158669,
-      "sha256_lf": "76f0a8dd61c68e43e2e15da7634429b9d5365e979a69d2fa6f5705667b1dc58a"
+      "bytes_lf": 171165,
+      "sha256_lf": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3"
     },
     "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/metadata.json": {
-      "bytes_lf": 4640,
-      "sha256_lf": "823dc7ac476b40690eeb0e41677b434e5f17d57c7928cbe85698952cc3dcadef"
+      "bytes_lf": 5214,
+      "sha256_lf": "d76b6ae56a3cd4024302095836e77035e9f76572022ebd3f00508dcb52968428"
     },
     "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/paper.md": {
-      "bytes_lf": 161819,
-      "sha256_lf": "1a6518ce87789d5ed830d0b36d8863c7abf133bdb0444c72863b8367c8a9000d"
+      "bytes_lf": 179628,
+      "sha256_lf": "c89c0e956e1aabb668bac88325dab8ffdeb1c98927a96f6d190f88dc16e14c24"
     },
     "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/series.sty": {
       "bytes_lf": 3784,
@@ -3509,20 +3549,20 @@
       "sha256_lf": "c8c4feaf7a108dba456b31bccba2c71bf7d95dce3b2c3df2f5b06140013a87db"
     },
     "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/REVISION_AUDIT.md": {
-      "bytes_lf": 5840,
-      "sha256_lf": "21db9df5c34f81dd8622b37f951b303ae08b34d817eb4b767de98afdb9a435c5"
+      "bytes_lf": 8021,
+      "sha256_lf": "04a6a04d88959e64b9ec34c8496527626d29d3219845ff8750dd415af9bb7ba4"
     },
     "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/main.tex": {
-      "bytes_lf": 26690,
-      "sha256_lf": "64942a8dd44794a33ed2ef44570b0e549a595332817a74e45e3d7cc6b6c39f03"
+      "bytes_lf": 30511,
+      "sha256_lf": "76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5"
     },
     "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/metadata.json": {
-      "bytes_lf": 7857,
-      "sha256_lf": "e2b3e34c0d9be99ecec494e3c919fccbf67ea48c3ae9474cc22705ebfe899994"
+      "bytes_lf": 8139,
+      "sha256_lf": "f05ab00e62590a14ee141abba12a99e4921bbdb356aec579a726f7f0e0fb16ad"
     },
     "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/paper.md": {
-      "bytes_lf": 26887,
-      "sha256_lf": "4809f297a44b5b5f0821185bf303e9393a0042652075b52662dbab9d8753ba71"
+      "bytes_lf": 32430,
+      "sha256_lf": "bbbcea235b1dbba495558c9f40612e5fce1de6839f48ad9a77656d95a4d64a28"
     },
     "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/series.sty": {
       "bytes_lf": 3784,
@@ -3629,24 +3669,24 @@
       "sha256_lf": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
     },
     "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/RESEARCH_INTEGRATION.md": {
-      "bytes_lf": 3639,
-      "sha256_lf": "ea5f9636a15e604b7b4ba8878c2c695e1d6d68d58941ab9c8e75234f7ba6d204"
+      "bytes_lf": 8043,
+      "sha256_lf": "f2077ce95d6098f6b84dacdb35020a9a720eb80291fb05e1138b341bc137114a"
     },
     "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/REVISION_AUDIT.md": {
-      "bytes_lf": 5566,
-      "sha256_lf": "1dedb10a9661901b734b6ea6861c3709e9c63443024dfd50374b8e870583136c"
+      "bytes_lf": 7900,
+      "sha256_lf": "0bd5fddc233d726922121cc5e156441625b9aec2922844c53c827cebb7e594a7"
     },
     "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/main.tex": {
-      "bytes_lf": 18954,
-      "sha256_lf": "dcedc23f54f0a2c6faacd995b733e28ea5a39bd5d6cfbff2bdf470bcfe0d0526"
+      "bytes_lf": 30867,
+      "sha256_lf": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2"
     },
     "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/metadata.json": {
-      "bytes_lf": 6073,
-      "sha256_lf": "9c237f43611e7d92b8dc6d4e6607914bf7dec3c105141968e2299dbc4afd7d5e"
+      "bytes_lf": 6462,
+      "sha256_lf": "1b118ecba59d3e64427d8202c7aa2c5441736df6d2eef955865a89fbfb1b8a82"
     },
     "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/paper.md": {
-      "bytes_lf": 19315,
-      "sha256_lf": "45c6c8e893f97a318a243fcf8daf01936641f6a1899aac992d3467618ab52719"
+      "bytes_lf": 32235,
+      "sha256_lf": "ed9ed16853d3f0bfbded5d1fc97e6b85a3cfce84b61263ac26e01bf383d7115e"
     },
     "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/series.sty": {
       "bytes_lf": 3784,
@@ -3657,20 +3697,20 @@
       "sha256_lf": "0e4e37e3d763056f339dcfa5b5d4cb7dd4df819499114902de4480790e8e2624"
     },
     "papers/world-in-world-genesis-local-comparison-geometry-and-a-9e600e73/REVISION_AUDIT.md": {
-      "bytes_lf": 12416,
-      "sha256_lf": "41060296f16c6a823d3528c17f6945dfd6273bd347b4d6795244f4f972592398"
+      "bytes_lf": 14829,
+      "sha256_lf": "49a5607149619c4e90a69dad4574435dc11c2959169b269282b5a96770f02d3e"
     },
     "papers/world-in-world-genesis-local-comparison-geometry-and-a-9e600e73/main.tex": {
-      "bytes_lf": 19859,
-      "sha256_lf": "96721e4f0c34edf7a1c60f08b060b0ac430053c8ce67a7d8b754a0e6d4749076"
+      "bytes_lf": 26401,
+      "sha256_lf": "b31a25b33ed0af64f0fd7c2c95e520b28fd1655bb6ed21bb78b6030dbc4042db"
     },
     "papers/world-in-world-genesis-local-comparison-geometry-and-a-9e600e73/metadata.json": {
-      "bytes_lf": 5614,
-      "sha256_lf": "8a44de62fbfbdb41365dad320f37c45cffce272a07f62b8a8606a2422b1fffb6"
+      "bytes_lf": 6272,
+      "sha256_lf": "92a00c04b929e861bd26b1a8bee3f2c4f41731ab98bb91de2d60d78fdd9d6840"
     },
     "papers/world-in-world-genesis-local-comparison-geometry-and-a-9e600e73/paper.md": {
-      "bytes_lf": 20611,
-      "sha256_lf": "20acea9f89d06aa4068823cb4a830c2ce1043249e7649ceca11ef8a481565189"
+      "bytes_lf": 26940,
+      "sha256_lf": "52205e9d992823c8cf8ce005f08a55209122ce9836e91f18bc281257bdeb21a7"
     },
     "papers/world-in-world-genesis-local-comparison-geometry-and-a-9e600e73/series.sty": {
       "bytes_lf": 3819,
@@ -3679,5 +3719,5 @@
   },
   "normalization": "CRLF and CR converted to LF; all other bytes preserved",
   "schema": "mtt.portable-text-hashes.v1",
-  "source_ref": "c9dfaeec281e05e34ac7d23a226fc5270cf55e13"
+  "source_ref": "6c8515bca41923690388e0d1cacb759c09a943f7"
 }
