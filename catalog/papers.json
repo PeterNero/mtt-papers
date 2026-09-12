@@ -1,7 +1,7 @@
 {
   "counts": {
     "canonical_papers": 142,
-    "current_sources_newer_than_release": 12,
+    "current_sources_newer_than_release": 15,
     "pandoc_warning_papers": 12,
     "papers_with_zenodo_release": 138,
     "papers_without_zenodo_match": 4,
@@ -5473,14 +5473,14 @@
       ]
     },
     {
-      "abstract": "We apply the canonical Fixed Points I machinery to a ten-dimensional control setting written as a four-dimensional base times a compact six-dimensional internal space. The compact six-manifold carries three compatible vertical structures represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from the rank flag of one, two, and three. In the q79 realization this flag acts on a separate lane tensor factor, not inside an irreducible HYM gauge bundle, while the shared circle is a separate flat line factor and is not counted as a seventh internal product dimension. We prove existence of projected fixed points for a declared time step by applying the Fixed Points I Schauder and Darbo gates, and prove coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point is promoted to a full equilibrium only under a strict Lyapunov identity. Fiber gaps control only the noncoherent sector and are never used as coherent damping.",
+      "abstract": "We apply the Fixed Points I machinery to a ten-dimensional Riemannian control setting with one compact six-dimensional internal space. Three compatible vertical structures are represented by strongly commuting nonnegative self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion maps and is not inferred from rank labels. Shared phase data can be represented by a common unitary line connection without adding another internal product dimension. We establish projected time-step fixed points through the earlier Schauder and Darbo gates and coherent uniqueness under base coercivity or strong monotonicity. A projected fixed point becomes a full equilibrium only under a strict Lyapunov identity. Fiber gaps damp the noncoherent complement and do not provide coherent contraction.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v5",
-      "date": "July 2026 Version 5",
+      "current_version": "v6",
+      "date": "September 2026 Version 6",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.16949073",
         "created": "2026-07-29T08:50:36.358241+00:00",
@@ -5506,23 +5506,23 @@
         "updated": "2026-07-29T08:50:36.776893+00:00",
         "version": "v5"
       },
-      "main_tex_sha256": "ba452cbe49af339cb3d8a7e72f289c7d78bbf6594ebd915841ea643b000fef6f",
+      "main_tex_sha256": "e87f87efc64689cd08a633780aa55e5668faa7eb1a45d4d80af3be5762a52686",
       "paper_id": "fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534",
-      "paper_md_sha256": "cc5d8c25ae7bb0bbf1313a61ed94cd6519cc041cd6c71edffe30f8ecf0685569",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "03c13dd7ff6ff19686c1f82d4961f73d8e0309081aa022b4e0a92522f716b323",
+      "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "be2a72a0b299e342c0c3358e618cddf31107484c24784c458c65104a11470b13",
+        "revision_evidence_sha256": "b9cdd0799d5111bc971c7772474126c77a4804236fc7ca4908b1d0a2c153c91f",
         "selected_revision": true,
         "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v3"
       },
       "source_provenance": {
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_II__Fixed_Points_in_a_10D_Modal_Model_v3"
       },
-      "source_tree_sha256": "6d8395573b886e04c62626383c368491130e58d3ee659d59bbea9f0362a381bb",
+      "source_tree_sha256": "84257ebe457e694c6b1d07d4fae0a3163fc064cf08ae5134b9bce5addc7d998f",
       "title": "Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.16949073",
@@ -5608,8 +5608,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v7",
-      "date": "September 2026, Version 7",
+      "current_version": "v8",
+      "date": "September 2026 Version 8",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.16949280",
         "created": "2026-07-29T08:50:35.316982+00:00",
@@ -5635,21 +5635,21 @@
         "updated": "2026-07-29T08:50:35.802432+00:00",
         "version": "v5"
       },
-      "main_tex_sha256": "63582488d784052c7cdb8461833c411533f658dd2ac796e6779b601a1cd47fac",
+      "main_tex_sha256": "462331ccfba79aa06c6e0d603517fd4c409c26c39075efcf8c82142d11af7fbc",
       "paper_id": "fixed-points-iii-disturbance-damping-balance-and-stability",
-      "paper_md_sha256": "1e28583c6743890cb1dde027b3580e5716630fdb6434dd7a2a32f5bb6443cbb8",
+      "paper_md_sha256": "b165a8daa70cb89f76afd3c300d4e6060b9678114f02df2ace3b348b45e91c41",
       "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/fixed-points-iii-disturbance-damping-balance-and-stability/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "5b89018a4b04fb0acac30c89a7813a2cea1b81850333a88eeb772f165d8ed328",
+        "revision_evidence_sha256": "304c2a9a6b762bb21bde90327737d72a46deaa5b7d3cd7b3c08918dd4ec0d2a5",
         "selected_revision": true,
         "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v3"
       },
       "source_provenance": {
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_III__Disturbance___Damping_Balance_and_Stability_v4"
       },
-      "source_tree_sha256": "65c0c352b42044c59214e9ae33011ee83c2f2118acbb9f07146e58f23c6a572b",
+      "source_tree_sha256": "9253b458b3163a53a95143f372926c2d93da83b6fc80f1cfd5032ad3751746c7",
       "title": "Fixed Points III: Disturbance\u2013Damping Balance and Stability",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
@@ -5731,14 +5731,14 @@
       ]
     },
     {
-      "abstract": "We develop curvature coupling and structural transitions on the canonical Fixed Points I\u2013III spine. A Laplace-type operator is separated into its connection Laplacian and curvature contribution. Curvature can shift the spectral cluster, mix coherent and noncoherent sectors, and create a leakage floor. When the curvature term is smaller than half the unperturbed spectral gap, the full curved operator retains a separated low cluster and defines a new Riesz projector; retaining the unperturbed projector instead requires an explicit leakage term. Centroids are defined intrinsically by a Karcher mean inside a convex normal ball. A first-order gradient parent flow yields a first-order modulation law, while a Newtonian law requires a separately specified inertial parent equation. Absolute interaction bounds do not determine attraction or repulsion without a sign hypothesis. Structural transitions are controlled by a Lyapunov mountain-pass and work theorem, and exit detection is separated from selection of the post-transition basin. We also state the projective-module transport and finite-reduction boundary: a supplied connection and its Hessian transport naturally, bare compression is exact only on an invariant subspace, and otherwise the Feshbach or reduced-Green operator is required.",
+      "abstract": "We develop curvature coupling and structural transitions on the Fixed Points I--III framework. Curvature can shift a low spectral cluster, rotate its projector and create leakage into the old noncoherent sector. A bounded perturbation smaller than half the initial gap preserves a separated cluster. Intrinsic centroids are defined by Karcher means, and a first-order gradient parent flow yields a first-order modulation law. Interaction sign requires a separate hypothesis; energy-barrier exclusion and exit detection do not select a post-transition basin. Standard universal connections represent supplied bundle data, while image-module transport preserves the specified connection and Hessian. Local block-elimination and constrained-minimization arguments distinguish invariant restriction, Feshbach reduction and reduced-Green Hessians under explicit domain and coercivity conditions.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v6",
-      "date": "July 2026 Version 6",
+      "current_version": "v7",
+      "date": "September 2026 Version 7",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.16949426",
         "created": "2026-07-29T08:50:50.714376+00:00",
@@ -5764,23 +5764,23 @@
         "updated": "2026-07-29T08:50:51.050932+00:00",
         "version": "v6"
       },
-      "main_tex_sha256": "5630bc74869a8a4d726c13b5853da796041065c6a6b604b30c7e77c43ca671a1",
+      "main_tex_sha256": "208df8b55e21a91c5e19043af446fb01a5de4a05509f7cab7473c43c873c9b30",
       "paper_id": "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce",
-      "paper_md_sha256": "46322e0c722b9961b35c86566ca9bb7fcb15f8df2fe1b1b50716c38a2f86b817",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "4a45da765dfd7cb79183ba04ee296cc0366204865af732dd21be7f50497751a7",
+      "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "48521fafe126601039df046c48aac13d76f8301c42bf53fe48f5acd29fbbfc3f",
+        "revision_evidence_sha256": "c52bbee8b6d8b5dccd36532dd2e4ee638c85b40fc9a979f0b288948b163c6e19",
         "selected_revision": true,
         "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4"
       },
       "source_provenance": {
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4"
       },
-      "source_tree_sha256": "7428fb6a8e7951bb77dd47392a8e2a3fbbd1e82da89cb5a0c3fe053ccd533014",
+      "source_tree_sha256": "ca0569f8535d2706b3f9d39204dd668d22ea79140755c51468a2cfe30fc2a20e",
       "title": "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.16949426",
@@ -5866,8 +5866,8 @@
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v8",
-      "date": "September 2026 Version 8",
+      "current_version": "v9",
+      "date": "September 2026 Version 9",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.16949503",
         "created": "2026-07-29T08:50:51.494193+00:00",
@@ -5893,21 +5893,21 @@
         "updated": "2026-07-29T08:50:52.349661+00:00",
         "version": "v7"
       },
-      "main_tex_sha256": "557f94317cc54929ddc803b9d4c36959096c780c10c8f0b15b560727a4db9988",
+      "main_tex_sha256": "46bdd78a60f41be1b11ce2078336798a9013fafd21807e9ed34e65cb428b1ced",
       "paper_id": "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8",
-      "paper_md_sha256": "d88cce5c5a5332031b7159da33d64487a30c8805e17f265fed5ce3225d89f370",
+      "paper_md_sha256": "909a2b44441d642a849159b25ec1660426b6ec2f3a5009f81de2cff6b44f71b5",
       "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_V_V6_REVISION_AUDIT.md",
-        "revision_evidence_sha256": "eae8daecf6c36825665f5643d82fd0fe703b6ae1c586190ef2c83e48a23c3e21",
+        "revision_evidence_sha256": "b329d94f2e6b27efee9e35266bae3781f7b07eeeb28368fe0ca0181a844219b2",
         "selected_revision": true,
         "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v5"
       },
       "source_provenance": {
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v6"
       },
-      "source_tree_sha256": "d64a86ef83f9dfddb8e67123c2eac192b023d0376ae2bd51e4ad9d60c2aff2a4",
+      "source_tree_sha256": "d85270bac9b7fa16f0084e30caf39892c7c4a251edf3f4c64203fa0f6bd95b1c",
       "title": "Fixed Points V: Curvature Coupling, Multi-Structure Dynamics, and Admissibility Barriers",
       "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
@@ -5989,14 +5989,14 @@
       ]
     },
     {
-      "abstract": "We synthesize the canonical FP\u2013I\u2013V results without promoting their control parameter, projections, or diagnostics into an unproved fundamental field theory. The rigorous spine consists of conditional projected fixed-point existence, strict-Lyapunov promotion to equilibrium, joint-mode damping and disturbance floors, perturbative persistence of a curved spectral cluster, curvature leakage, intrinsic first-order centroid modulation, frozen linear Ornstein\u2013Uhlenbeck covariance, canonical-correlation bounds, and declared admissibility exits. We distinguish three logical levels throughout: inherited theorem, conditional model completion, and physical interpretation. All inherited results are restated as self-contained contracts and cited to their canonical paper; FP VI does not reproduce their theorem/proof blocks. Its own formal results are limited to the bilocal-causality obstruction and the local-mediator completion. A Lorentzian gauge/gravity action, quantum covariance, particle identities, merger, measurement, and cosmology belong to the latter two levels unless additional source and equivalence theorems are supplied. The Gaussian Lyapunov sign and nonnormal resolvent bounds are stated in their domain-valid forms, and we show why an instantaneous equal-time bilocal kernel is not microcausal merely because it leaves the principal symbol unchanged. A local mediator is the consistent route to causal overlap dynamics. A separate, explicitly non-FP ledger records later scoped q79 geometry, quantum-operation, and QFT advances without retroactively promoting them to conclusions of the fixed-point series.",
+      "abstract": "We synthesize the Fixed Points I--V results without promoting their control parameter, projections or diagnostics into an unproved fundamental field theory. The analytic chain includes projected fixed-point existence, strict-Lyapunov equilibrium promotion, disturbance floors, curved spectral-cluster persistence and leakage, intrinsic first-order centroid modulation, frozen linear covariance and declared admissibility exits. Earlier results are stated as self-contained input-output contracts with their canonical sources, rather than duplicated theorem blocks. We distinguish inherited results, conditional model completions and physical interpretations. The two local causality propositions explain why an instantaneous bilocal interaction lacks the usual domain of dependence and how a hyperbolic local mediator supplies a causal retarded completion. The synthesis depends only on earlier Fixed Points installments and standard mathematical literature, not on later MTT research results.",
       "authors": [
         "Peter Nero"
       ],
       "canonical_markdown": "paper.md",
       "canonical_tex": "main.tex",
-      "current_version": "v6",
-      "date": "July 2026 Version 6",
+      "current_version": "v7",
+      "date": "September 2026 Version 7",
       "latest_zenodo_release": {
         "concept_doi": "10.5281/zenodo.16949635",
         "created": "2026-07-29T08:50:52.977082+00:00",
@@ -6022,23 +6022,23 @@
         "updated": "2026-07-29T08:50:53.318260+00:00",
         "version": "v6"
       },
-      "main_tex_sha256": "b7299e035919d25bcadc67a6af84c8847291e694665b1ea2c19912f91bec90c5",
+      "main_tex_sha256": "b83fa5175519cd35aa5877ea098282dffaeafd1804d68a7391b509000c7cbd4a",
       "paper_id": "fixed-points-vi-formal-synthesis-and-physical-interpretations",
-      "paper_md_sha256": "96a12ee52321c5a785f53daace8c87bdfe041b4772bcf44c0a5a07d5141eb26c",
-      "release_state": "zenodo_released",
+      "paper_md_sha256": "d78c8e99d779de0af1375c071f8ef99c3f78359e381d7ff6828cb14b37f4af05",
+      "release_state": "current_revised_tex",
       "result_refs": [],
       "revision": {
         "revision_evidence_path": "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations/REVISION_AUDIT.md",
-        "revision_evidence_sha256": "8d208b10aad35404ab968681cca6952dd8b9710aa9da5d67edcf743def8e7a8d",
+        "revision_evidence_sha256": "f43d6bd78c87191a0abbf2e167d0024cd157f2497317282db4dab5d9f02c7da6",
         "selected_revision": true,
         "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4"
       },
       "source_provenance": {
         "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4"
       },
-      "source_tree_sha256": "35f7cddc6f7a85fec4e35d9a2580bf7bf9c55a6bf46b016ff7196c19e89b0781",
+      "source_tree_sha256": "ca2aa8b17df94e034f59bca9f26c7eff88907b0b20dac34decbe5d53de9f3826",
       "title": "Fixed Points VI: Formal Synthesis and Physical Interpretations",
-      "version_relation": "matches_latest_release",
+      "version_relation": "current_source_newer_than_release",
       "zenodo_releases": [
         {
           "concept_doi": "10.5281/zenodo.16949635",

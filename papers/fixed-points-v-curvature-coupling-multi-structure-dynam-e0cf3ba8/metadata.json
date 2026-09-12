@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v8",
-  "date": "September 2026 Version 8",
+  "current_version": "v9",
+  "date": "September 2026 Version 9",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949503",
     "created": "2026-07-29T08:50:51.494193+00:00",
@@ -32,28 +32,28 @@
     "updated": "2026-07-29T08:50:52.349661+00:00",
     "version": "v7"
   },
-  "main_tex_sha256": "557f94317cc54929ddc803b9d4c36959096c780c10c8f0b15b560727a4db9988",
+  "main_tex_sha256": "46bdd78a60f41be1b11ce2078336798a9013fafd21807e9ed34e65cb428b1ced",
   "paper_id": "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8",
-  "paper_md_sha256": "d88cce5c5a5332031b7159da33d64487a30c8805e17f265fed5ce3225d89f370",
+  "paper_md_sha256": "909a2b44441d642a849159b25ec1660426b6ec2f3a5009f81de2cff6b44f71b5",
   "release_state": "current_revised_tex",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "4 Fixed Points/revised_tex_vnext/FIXED_POINTS_V_V6_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "eae8daecf6c36825665f5643d82fd0fe703b6ae1c586190ef2c83e48a23c3e21",
+    "revision_evidence_sha256": "b329d94f2e6b27efee9e35266bae3781f7b07eeeb28368fe0ca0181a844219b2",
     "selected_revision": true,
     "superseded_source_path": "4 Fixed Points/_work/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v5"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 336100,
+      "bytes": 313471,
       "path": "main.pdf",
-      "sha256": "b93c246dff3ad768c4d9b4a733d8aab5c53b3c053c9c981351479bbf5ae679b3"
+      "sha256": "e271f60db4caf6fdecad8798a73439af1f0454d5d626a0fb0eadf9e725a8ff6a"
     },
     {
-      "bytes": 23417,
+      "bytes": 24305,
       "path": "main.tex",
-      "sha256": "557f94317cc54929ddc803b9d4c36959096c780c10c8f0b15b560727a4db9988"
+      "sha256": "46bdd78a60f41be1b11ce2078336798a9013fafd21807e9ed34e65cb428b1ced"
     },
     {
       "bytes": 15299,
@@ -64,7 +64,7 @@
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_V__Curvature_Coupling__Multi_Structure_Dynamics_and_Drivers_v6"
   },
-  "source_tree_sha256": "d64a86ef83f9dfddb8e67123c2eac192b023d0376ae2bd51e4ad9d60c2aff2a4",
+  "source_tree_sha256": "d85270bac9b7fa16f0084e30caf39892c7c4a251edf3f4c64203fa0f6bd95b1c",
   "title": "Fixed Points V: Curvature Coupling, Multi-Structure Dynamics, and Admissibility Barriers",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [

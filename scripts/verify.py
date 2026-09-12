@@ -11,6 +11,7 @@ from audit_expository_readability import audit as audit_expository_readability
 from verify_book_interpretive_role import verify as verify_book_interpretive_role
 from verify_paper_release_requirements import verify_local as verify_paper_release_requirements
 from verify_theorem_ownership import verify as verify_theorem_ownership
+from verify_fp_foundational_dependencies import verify as verify_fp_foundational_dependencies
 from consolidate_research_ownership import reviewed_results
 
 
@@ -106,6 +107,7 @@ def canonical_hash(value: Any) -> str:
 
 
 def verify() -> dict[str, int]:
+    verify_fp_foundational_dependencies()
     book = verify_book_interpretive_role()
     release_requirements = verify_paper_release_requirements()
     readability_rows, forbidden_boilerplate = audit_expository_readability()

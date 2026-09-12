@@ -103,3 +103,9 @@ duplicated.
 - The current source compiles with `pdflatex` to an 8-page PDF.
 - The final log has no undefined references, underfull boxes, overfull boxes,
   or LaTeX/package warnings.
+
+## Foundational dependency repair: version 7 (2026-09-12)
+
+Replaces the q79 repository authority by Narasimhan--Ramanan universal connections and local image-module, Schur-elimination and constrained-minimization arguments. Specifies the Hessian domain, complementary inverse and coercivity; adds a two-dimensional example. No ambient extension or physical endpoint is inferred.
+
+Only local arguments, earlier numbered FP installments and standard mathematics are proof sources. Prior revision and validation entries above are historical, not current application-status assertions. Original Zenodo release metadata is preserved; this is an unreleased authoring revision. See FP_FOUNDATIONAL_DEPENDENCY_REPAIR_2026-09-12.md for the full review and verification record.

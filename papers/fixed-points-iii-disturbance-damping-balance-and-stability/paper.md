@@ -5,9 +5,9 @@ author:
 - Peter Nero
 bibliography:
 - refs.bib
-current_version: v7
-date: September 2026, Version 7
-generated_from_main_tex_sha256: 63582488d784052c7cdb8461833c411533f658dd2ac796e6779b601a1cd47fac
+current_version: v8
+date: September 2026 Version 8
+generated_from_main_tex_sha256: 462331ccfba79aa06c6e0d603517fd4c409c26c39075efcf8c82142d11af7fbc
 paper_id: fixed-points-iii-disturbance-damping-balance-and-stability
 release_state: current_revised_tex
 released_version: v5
@@ -16,6 +16,23 @@ zenodo_doi: 10.5281/zenodo.21655371
 zenodo_record_id: 21655371
 zenodo_url: "https://zenodo.org/records/21655371"
 ---
+
+# Version 8 Revision Note
+
+Supersedes.
+Version 7, the previous authoring revision; version 5 remains the released edition.
+
+Reason.
+A contextual citation to a later calculation paper introduced a reverse reference into the foundational sequence.
+
+Resolution.
+Application-specific calculations are removed. The general distinction between a finite-time transition and a path-limit theorem remains, with all inputs to the latter stated here. Only earlier FP papers and standard mathematical literature are used.
+
+Retained result.
+The deterministic, stochastic, modal and conditional homogenization results retain their statements and hypotheses.
+
+Remaining boundary.
+An application must establish its driver and the enhanced invariance principle; these are not supplied by rank or truncation.
 
 # Version 7 Revision Note
 
@@ -75,11 +92,11 @@ Sections 1–2 inherit the joint projector and build a non-double-counted spect
 
 Every modal result in the main stability chain concerns $`Q\Psi`$. It neither contracts coherent modes nor proves that a physical environment supplies Brownian noise. The homogenized diffusion is an emergent limit only after the enhanced functional-CLT, tightness, and rough-path hypotheses have been verified for the selected dynamics.
 
-A physical q79 application must independently select the damping generator, coherent projector, invariant domain, gap data, and forcing or noise law. The analytic estimates below consume those typed inputs; they do not emit them from MTT geometry.
+A physical application must independently select the damping generator, coherent projector, invariant domain, gap data, and forcing or noise law. The analytic estimates below consume those typed inputs; they do not emit them from MTT geometry.
 
 # Scope and inherited framework
 
-We use the corrected FP–I/II control framework. The compact internal space carries strongly commuting nonnegative self-adjoint operators $`A_1,A_2,A_3`$ on one common Hilbert space. Their joint harmonic projector is $`P`$, with $`Q=I-P`$. All stability results below concern $`Q\Psi`$ unless coherent forcing is explicitly introduced. The stabilization parameter is not physical Lorentzian time.
+We use the FP–I/II control framework . The compact internal space carries strongly commuting nonnegative self-adjoint operators $`A_1,A_2,A_3`$ on one common Hilbert space. Their joint harmonic projector is $`P`$, with $`Q=I-P`$. All stability results below concern $`Q\Psi`$ unless coherent forcing is explicitly introduced. The stabilization parameter is not physical Lorentzian time.
 
 Deterministic fixed points of a time-step map and stochastic invariant measures are different objects. Existence of the former is inherited from FP–I/II under their invariant-set and compactness/condensing hypotheses. Existence of the latter requires a Markov/Feller and tightness argument stated separately below. For analytic-semigroup and dissipative-flow background, see ; for stochastic evolution and exact Ornstein–Uhlenbeck processes, see . The companion analytic framework is .
 
@@ -273,9 +290,9 @@ No statement in this section controls a disturbance acting directly in $`P\Psi`$
 
 This section addresses a different route to stochastic behavior. The underlying system can remain deterministic while rapidly mixing noncoherent modes drive slow coherent variables. Under a sufficiently strong limit theorem, the accumulated fast forcing converges to Brownian transport. Ordinary mixing is not enough: the second iterated integrals determine whether the limiting equation is the stated Stratonovich equation or carries an additional bracket drift.
 
-#### A concrete candidate and its limit.
+#### What an application must check.
 
-The calculation companion constructs a supplied radial quantum Hamiltonian with finitely many spatial modes but no occupation cutoff. It has compact resolvent and recurrent state orbits. Its all-occupation equilibrium bounds and certified nonzero channel transition are genuine results at that model’s declared boundary, normalization, sector, and preparation. They do not make its nonconstant Gibbs correlations mixing. Thus increasing the occupation cutoff alone does not supply the enhanced invariance principle below. A suitable system–bath or spatial/volume limit, and its reduced path law, must be established separately. The detailed domain construction and calculations belong to that companion; the present paper retains the analytic disturbance and homogenization statements.
+Neither a finite truncation nor a nonzero transition between two states verifies the enhanced invariance principle. The theorem below requires a limit law for an entire family of paths, including their iterated integrals. An application must therefore establish the fast dynamics, its invariant measure and the required uniform bounds. This paper supplies the conditional analytic implication, not an application-specific driver or calculation.
 
 Write $`\Psi=X+Y`$ with $`X=P\Psi`$ and $`Y=Q\Psi`$. For frozen $`x`$, let the fast flow for $`Y`$ have invariant measure $`\mu_x`$, and decompose
 ``` math
@@ -399,8 +416,6 @@ The same bound is uniform for a smoothly base-dependent family remaining in $`\m
 
 </div>
 
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
+# Dependency and reproducibility statement
 
-The analytic disturbance and homogenization statements are proved or explicitly conditioned in this paper. The finite-mode calculation discussed in Section 7 has its own manuscript and reproduction references ; its four frozen records are held in the [curated MTT results repository](https://github.com/PeterNero/mtt-results-repro). They concern the supplied radial model, cubic heat-trace bound, L11 pure channel, and historical frontier map. This citation does not replace the enhanced invariance principle or identify the calculated transition with a selected physical noise law.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+Only the earlier FP framework, the locally stated hypotheses and standard mathematical literature enter the analytic arguments. No later calculation is a premise or a verification of the homogenization hypotheses. Numerical applications may test those hypotheses and cite this foundation, not the reverse.

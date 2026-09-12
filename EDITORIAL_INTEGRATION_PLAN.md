@@ -1,7 +1,8 @@
 # Editorial Integration Plan
 
-Checkpoint: 2026-09-12, after the finite-mode companion v1, FP III v7 and
-cohesive v4. SM v4 remains unchanged.
+Checkpoint: 2026-09-12, after the foundational dependency repair: FP I v7,
+II v6, III v8, IV v7, V v9 and VI v7. The finite-mode companion v1,
+cohesive v4 and SM v4 remain unchanged.
 This is an editorial queue, not a list of unproved research claims.
 No Zenodo upload or publication is authorized.
 
@@ -51,9 +52,11 @@ Placement completed: `finite-mode-closure-dynamics-recurrence-and-certified-chan
 is a new nine-page calculation companion, with its own readable setup,
 proof/evidence ownership, contextual input ledger and reproduction references.
 The first record is historical provenance; the three substantive records are
-integrated. FP III v7 adds a scoped citation and driver/limit distinction;
-its foundational theorems and proofs are unchanged. All nine and ten pages were
-rendered and visually reviewed. Four focused numerical-import tests pass.
+integrated. The earlier FP III v7 consumer citation was removed in v8 to
+restore the one-way foundation. The distinction between a supplied driver and
+a proved stochastic limit remains explained locally. Its foundational theorem
+statements and proofs are unchanged. The companion retains all four records.
+See FP_FOUNDATIONAL_DEPENDENCY_REPAIR_2026-09-12.md for the current validation.
 
 Cohesive v4 additionally reviews the older continuum/finite cutset. Its exact
 intertwining statement survives, but its whole-projector estimate from a

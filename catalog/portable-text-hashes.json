@@ -3679,5 +3679,5 @@
   },
   "normalization": "CRLF and CR converted to LF; all other bytes preserved",
   "schema": "mtt.portable-text-hashes.v1",
-  "source_ref": "14b854a6796c2407a37cdf893a2174edd2c796ca"
+  "source_ref": "HEAD"
 }

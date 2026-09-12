@@ -31,7 +31,7 @@
 
 \title{Fixed Points III: Disturbance--Damping Balance and Stability}
 \author{Peter Nero}
-\date{September 2026\\Version 7}
+\date{September 2026\\Version 8}
 
 \begin{document}
 \maketitle
@@ -55,6 +55,22 @@ homogenization is made conditional on an enhanced functional central-limit
 theorem, tightness, and rough-path convergence; the symmetrized Green--Kubo tensor
 is $D=\int_0^\infty(R+R^\ast)\,ds$.
 \end{abstract}
+
+\section*{Version 8 Revision Note}
+\begin{description}
+\item[Supersedes.] Version~7, the previous authoring revision; version~5
+remains the released edition.
+\item[Reason.] A contextual citation to a later calculation paper introduced
+a reverse reference into the foundational sequence.
+\item[Resolution.] Application-specific calculations are removed. The general
+distinction between a finite-time transition and a path-limit theorem remains,
+with all inputs to the latter stated here. Only earlier FP papers and standard
+mathematical literature are used.
+\item[Retained result.] The deterministic, stochastic, modal and conditional
+homogenization results retain their statements and hypotheses.
+\item[Remaining boundary.] An application must establish its driver and the
+enhanced invariance principle; these are not supplied by rank or truncation.
+\end{description}
 
 \section*{Version 7 Revision Note}
 \noindent\textbf{Supersedes.} Version 6, the previous authoring revision;
@@ -151,7 +167,7 @@ Brownian noise.  The homogenized diffusion is an emergent limit only after
 the enhanced functional-CLT, tightness, and rough-path hypotheses have been
 verified for the selected dynamics.
 
-A physical q79 application must independently select the damping generator,
+A physical application must independently select the damping generator,
 coherent projector, invariant domain, gap data, and forcing or noise law.  The
 analytic estimates below consume those typed inputs; they do not emit them
 from MTT geometry.
@@ -160,7 +176,7 @@ from MTT geometry.
 
 \section{Scope and inherited framework}
 
-We use the corrected FP--I/II control framework. The compact internal space
+We use the FP--I/II control framework \cite{Nero2025FP1,FP2}. The compact internal space
 carries strongly commuting nonnegative self-adjoint operators $A_1,A_2,A_3$
 on one common Hilbert space. Their joint harmonic projector is $P$, with
 $Q=I-P$. All stability results below concern $Q\Psi$ unless coherent forcing
@@ -397,19 +413,13 @@ Ordinary mixing is not enough: the second iterated integrals determine whether
 the limiting equation is the stated Stratonovich equation or carries an
 additional bracket drift.
 
-\paragraph{A concrete candidate and its limit.}
-The calculation companion \cite{NeroFiniteMode2026} constructs a supplied
-radial quantum Hamiltonian with finitely many spatial modes but no
-occupation cutoff. It has compact resolvent and recurrent state orbits.
-Its all-occupation equilibrium bounds and certified nonzero channel
-transition are genuine results at that model's declared boundary,
-normalization, sector, and preparation. They do not make its nonconstant
-Gibbs correlations mixing. Thus increasing the occupation cutoff alone
-does not supply the enhanced invariance principle below. A suitable
-system--bath or spatial/volume limit, and its reduced path law, must be
-established separately. The detailed domain construction and calculations
-belong to that companion; the present paper retains the analytic
-disturbance and homogenization statements.
+\paragraph{What an application must check.}
+Neither a finite truncation nor a nonzero transition between two states
+verifies the enhanced invariance principle. The theorem below requires a
+limit law for an entire family of paths, including their iterated integrals.
+An application must therefore establish the fast dynamics, its invariant
+measure and the required uniform bounds. This paper supplies the conditional
+analytic implication, not an application-specific driver or calculation.
 
 Write $\Psi=X+Y$ with $X=P\Psi$ and $Y=Q\Psi$. For frozen $x$, let the fast
 flow for $Y$ have invariant measure $\mu_x$, and decompose
@@ -565,17 +575,11 @@ positive minimum; compare the spectral-geometric background in
 \bibliographystyle{plain}
 \bibliography{refs}
 
-% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
-\section*{Computational Evidence and Reproducibility}
-The analytic disturbance and homogenization statements are proved or
-explicitly conditioned in this paper. The finite-mode calculation discussed
-in Section~7 has its own manuscript and reproduction references
-\cite{NeroFiniteMode2026}; its four frozen records are held in the
-\href{https://github.com/PeterNero/mtt-results-repro}{curated MTT results
-repository}. They concern the supplied radial model, cubic heat-trace bound,
-L11 pure channel, and historical frontier map. This citation does not
-replace the enhanced invariance principle or identify the calculated
-transition with a selected physical noise law.
-% END MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Dependency and reproducibility statement}
+Only the earlier FP framework, the locally stated hypotheses and standard
+mathematical literature enter the analytic arguments. No later calculation
+is a premise or a verification of the homogenization hypotheses. Numerical
+applications may test those hypotheses and cite this foundation, not the
+reverse.
 
 \end{document}

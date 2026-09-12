@@ -47,8 +47,12 @@ Every formal result has one canonical owner, following
 - **MTT Foundations:** the technical expository reference. It must explain the
   architecture and gates, not merely list them.
 - **Fixed Points I--VI:** each paper must be independently readable while
-  retaining its distinct theorem role. The generic series paragraph is
-  forbidden.
+  retaining its distinct theorem role. Proof dependencies may use only local
+  arguments, earlier numbered FP installments and standard external
+  mathematics. Downstream MTT citations, numerical examples and progress
+  ledgers belong outside this foundational series. The generic series
+  paragraph is forbidden. Run the foundational-dependency verifier as well
+  as the ownership verifier.
 - **The Book on Modal Triplet Theory:** a low-mathematics interpretive guide.
   It owns no theorem and must not become a technical ledger.
 - **Program and encoding papers:** distinguish representation, reconstruction,

@@ -13,8 +13,15 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
   intertwining does not rule out additional ambient zero modes. The existing
   repair/noise/recurrence discussion is retained.
 - The new nine-page finite-mode calculation companion owns the recurrence,
-  cubic heat-trace and L11 channel package. FP III v7 adds a scoped citation;
-  its foundational theorems are unchanged. Do not redo this placement.
+  cubic heat-trace and L11 channel package. It cites the foundational series;
+  the reverse FP III citation has been removed in v8.
+- The six numbered FP installments now have a strict one-way dependency rule:
+  local arguments, earlier FP installments and standard mathematics only.
+  Current versions are I v7 (unchanged), II v6, III v8, IV v7, V v9 and VI v7.
+  FP IV has local image-module, block-elimination and shorted-Hessian proofs;
+  the downstream q79 status ledger is no longer inside FP VI. Preserve these
+  repairs and run `scripts/verify_fp_foundational_dependencies.py` after edits.
+  See `FP_FOUNDATIONAL_DEPENDENCY_REPAIR_2026-09-12.md` for the contextual audit.
 - SM v4 now incorporates all 14 previously confirmed additions. Its finite
   structure, admitted electroweak primitive, Yukawa profiles and precision
   reconstruction survive. The effective 13/19-coordinate ledger is a profile
@@ -46,6 +53,9 @@ Reviews bind LF-normalized manuscript bytes, exact result hashes and real source
 4. Do not repeat the completed SM/residual edits or treat review counts as
    scientific closure counts. Preserve historical artifacts without importing
    obsolete status fields as current.
+5. Do not import later MTT results into FP I--VI, even as contextual status
+   summaries. Put physical applications in their downstream owner papers;
+   this preserves the foundation without claiming those applications closed.
 
 The Locality manuscript still needs the author's ontological wording review. Technical examples passing is not author approval.
 

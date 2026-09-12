@@ -39,7 +39,7 @@
 
 \title{Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model}
 \author{Peter Nero}
-\date{July 2026\\Version 5}
+\date{September 2026\\Version 6}
 
 \begin{document}
 \maketitle
@@ -50,10 +50,9 @@ We apply the canonical FP--I machinery to a ten-dimensional control setting
 $\Mten=\Yfour\times\Xsix$. The compact six-manifold $\Xsix$ carries three
 compatible vertical structures represented by strongly commuting nonnegative
 self-adjoint operators. Overlap is allowed; nesting requires supplied inclusion
-maps and is not inferred from ranks $1<2<3$. In the q79 realization the
-$1<2<3$ flag acts on a separate lane tensor factor, not inside an irreducible
-HYM gauge bundle, while the shared circle is a separate flat line factor and
-is not counted as a seventh internal product dimension. We prove existence of
+maps and is not inferred from ranks $1<2<3$. Shared phase data may be represented
+by a common unitary line connection; this does not add a seventh internal
+product dimension. We prove existence of
 projected time--$\tau$ fixed points by applying the canonical FP--I
 Schauder/Darbo gates to this ten-dimensional operator, and prove coherent
 uniqueness under base coercivity or
@@ -61,6 +60,20 @@ strong monotonicity. A projected fixed point is promoted to a full equilibrium
 only under a strict Lyapunov identity. Fiber gaps control only the noncoherent
 $Q$ sector and are never used as coherent damping.
 \end{abstract}
+
+\section*{Revision note for version 6}
+\begin{description}
+\item[Supersedes.] Version~5, retained as the released edition.
+\item[Reason.] The analytic development was independent of later research,
+but an application-specific carrier remark cited a downstream MTT repository.
+\item[Resolution.] The remark is replaced by a self-contained tensor-factor
+example. All mathematical imports are now from FP~I or standard literature;
+application-specific source selection is outside this foundational paper.
+\item[Retained result.] The joint-projector, existence, coherent contraction
+and equilibrium-promotion statements retain their explicit hypotheses.
+\item[Remaining boundary.] A concrete application must provide its operators,
+domains, energy and interpretation of the control parameter.
+\end{description}
 
 \section*{Revision note for version 5}
 \addcontentsline{toc}{section}{Revision note for version 5}
@@ -129,7 +142,7 @@ internal modes.
 \paragraph{Argument map.}
 Section~1 states the ten-dimensional control scope.  Section~2 places the
 three operators on the same internal Hilbert space, constructs their joint
-projector, and records the q79 lane/shared-line type boundary.  Section~3 then
+projector, and gives a shared-line tensor-factor example.  Section~3 then
 separates the $\Pcoh$ and $\Qcoh$ evolutions, promotes a projected return only
 under a strict Lyapunov identity, gives the two coherent contraction routes,
 and transfers the compact-base and noncompact-base existence gates from
@@ -139,11 +152,10 @@ appendices provide the specialized contraction and damping calculations.
 \paragraph{What this paper does not select.}
 The notation $\Mten=\Yfour\times\Xsix$ is a control realization, not a proof
 that physical spacetime is this Riemannian product.  Nor does the paper derive
-the q79 HYM bundle, identify the three operators with the $1<2<3$ lane
-projectors, or turn the post-projection 27-state algebra into a continuum
-Galerkin basis.  Those objects must enter through separate source and
-intertwining theorems before the present estimates become physical
-predictions.
+a physical bundle, identify the three operators with finite rank-flag
+projectors, or derive a Galerkin basis from rank counting. A physical
+application must construct those objects and verify the present hypotheses;
+its construction is not a premise imported into this paper.
 
 \tableofcontents
 
@@ -195,30 +207,23 @@ is encoded by a common circle cycle, foliation, or $U(1)$ line-bundle
 connection on $\Xsix$. Its line-bundle data do not add the dimension of the
 bundle total space to $\dim\Xsix$.
 
-\begin{remark}[Current q79 carrier and type boundary]
-The current q79 preprojection architecture is
+\begin{remark}[A tensor-factor example, not a selected realization]
+Let $\mathcal H_0$ be a Hilbert space and let $L_y$ be a one-dimensional
+Hermitian fiber over the base. On
 \[
-\mathcal E_{\rm pre}
-=\Gamma(E_{\rm HYM})\widehat\otimes H_{\rm lane}
-\widehat\otimes L_{\rm shared}.
+\mathcal H_0\otimes\mathbb C^3\otimes L_y
 \]
-The projectors
+the matrices
 $p_1=\operatorname{diag}(1,0,0)$,
 $p_2=\operatorname{diag}(1,1,0)$, and $p_3=I_3$ act only on
-$H_{\rm lane}$. They encode the relative $1<2<3$ lanes without reducing the
-holonomy of an irreducible stable HYM gauge factor. The common differential
-line $L_{\rm shared}$ is a separate flat scalar factor and is not identified
-with the curved HYM bundle. This placement is forced by the scalar commutant
-of an irreducible stable HYM factor \cite{NeroQMSP2026}.
-
-Two further type distinctions are essential. The accepted 27-state finite
-algebra is post-projection source data, not a rank-27 Galerkin subspace of the
-rank-102 physical deformation carrier. Likewise, the six real strain
-coordinates are an orientation-forgetting nonlinear quotient shadow of
-spectral data; there is no corresponding equivariant linear rank-six
-subspace of $\operatorname{Herm}(3)$. The fixed-point theorems below use only
-the declared operators and do not promote either finite object to the
-physical continuum Hessian.
+$\mathbb C^3$, by tensoring with the identity on the other factors.
+Direct multiplication gives $p_ip_j=p_{\min(i,j)}$. Scalar phase
+multiplication on $L_y$ commutes with all three. Thus a common phase and
+an increasing finite rank flag can coexist without extra base dimensions.
+This example neither selects such a factorization nor identifies $p_n$ with
+the harmonic projectors of the differential operators below. Those operators,
+their gaps, and their commutation remain independent hypotheses. A finite
+fiber rank is not a finite-dimensional space of sections.
 \end{remark}
 
 We assume bounded internal geometry and smooth bounded dependence on
@@ -647,7 +652,7 @@ bounded-geometry family has a
 uniform positive first nonzero eigenvalue once its metric class is fixed. The
 actual embedding, shared-circle action, and commutation with the other two
 operators must be checked in the concrete model. This example does not identify
-$L(3,1)\times\Nilthree$ with the selected q79/Fu--Yau compactification.
+the auxiliary model with a uniquely selected physical compactification.
 
 \subsection{Toward Physical Interpretation (programmatic note)}
 While this paper is purely mathematical, the following schematic links guide later work:
@@ -685,11 +690,10 @@ The useful result is the resulting dependency chain:
 \]
 No arrow may be skipped.  In particular, the fiber gap is not a coherent
 contraction constant, the shared circle is not an extra internal dimension,
-and the q79 lane flag is not a parallel subbundle of an irreducible HYM
-factor.
+and a finite rank flag does not specify the vertical differential operators.
 
 What remains is a realization problem rather than another abstract
-fixed-point lemma: a selected physical model must provide the q79 vertical
+fixed-point lemma: a selected physical model must provide the vertical
 operators, their common domains and commutators, the physical action and
 strict Lyapunov functional, and the relation between stabilization and
 Lorentzian evolution.  Until those data are supplied, this paper establishes
@@ -777,9 +781,10 @@ but does not change the fiber operators $A_n(y)$ and hence does not change $\lam
 \bibliographystyle{plain}
 \bibliography{references.bib}
 
-% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
-\section*{Computational Evidence and Reproducibility}
-The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
-% END MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Dependency and reproducibility statement}
+The arguments use the locally stated model, the cited FP~I results, and
+standard mathematical literature. No numerical packet or later MTT paper is
+needed. The examples are analytic checks of hypotheses, not fitted physical
+data. Computational applications must cite this paper in the forward direction.
 
 \end{document}

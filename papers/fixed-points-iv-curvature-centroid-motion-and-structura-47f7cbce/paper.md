@@ -3,17 +3,34 @@ abstract: |
   We develop curvature coupling and structural transitions on the canonical FP–I–III spine. A Laplace-type operator is normalized as $`L=\nabla^\ast\nabla+\mathcal R`$. Curvature can shift the spectral cluster, mix coherent and noncoherent sectors, and create a leakage floor. If $`\|\mathcal R\|<\lambda_\ast/2`$, the full curved operator retains a separated low cluster and defines a new Riesz projector; if one retains the unperturbed projector, the term $`Q\mathcal RP`$ must appear explicitly. Centroids are defined intrinsically by a Karcher mean inside a convex normal ball. A first-order gradient parent flow yields a first-order modulation law; a Newtonian law requires a separately specified inertial parent equation. Absolute interaction bounds give $`|E_{\rm int}|\le C\mathcal O`$, while attraction or repulsion needs a sign hypothesis. Structural transitions are controlled by a Lyapunov mountain- pass/work theorem, and exit detection is separated from selection of the post-transition basin. We also state the exact projective-module transport and finite-reduction boundary: a supplied connection and its Hessian transport naturally, bare compression is exact only on an invariant subspace, and otherwise the Feshbach or reduced-Green operator is required.
 author:
 - Peter Nero
-current_version: v6
-date: July 2026 Version 6
-generated_from_main_tex_sha256: 5630bc74869a8a4d726c13b5853da796041065c6a6b604b30c7e77c43ca671a1
+current_version: v7
+date: September 2026 Version 7
+generated_from_main_tex_sha256: 208df8b55e21a91c5e19043af446fb01a5de4a05509f7cab7473c43c873c9b30
 paper_id: fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v6
 title: "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions"
 zenodo_doi: 10.5281/zenodo.21655378
 zenodo_record_id: 21655378
 zenodo_url: "https://zenodo.org/records/21655378"
 ---
+
+# Revision note for version 7
+
+Supersedes.
+Version 6, retained as the released edition.
+
+Reason.
+The finite-representation discussion imported a later MTT research source into a foundational paper.
+
+Resolution.
+Universal connections are attributed to their standard mathematical source. Transport is derived on the image module, and local proofs of block elimination and constrained minimization replace reliance on research packets. Application-specific compiler and status claims are removed.
+
+Retained result.
+Curved clusters, leakage, finite reduction, centroid modulation and transition criteria retain their analytic roles. The reduction statements now specify the operator domains and coercivity they use.
+
+Remaining boundary.
+Each application must supply the bundle, connection, energy, finite subspace and dynamical interpretation.
 
 # Revision note for version 6
 
@@ -59,7 +76,7 @@ Curvature has two effects that must not be collapsed into one number. Its diagon
 
 #### Three meanings of finite.
 
-A finite-rank vector bundle can be embedded exactly into a finite matrix algebra whose entries are still smooth functions. That is not the same as retaining finitely many Fourier or Galerkin modes. A finite Galerkin compression is, in turn, an exact dynamical reduction only when the selected subspace is invariant. Otherwise the omitted fields return through the Feshbach self-energy. Keeping these three statements separate is essential for interpreting the matrix constructions used elsewhere in MTT.
+A finite-rank vector bundle can be embedded exactly into a finite matrix algebra whose entries are still smooth functions. That is not the same as retaining finitely many Fourier or Galerkin modes. A finite Galerkin compression is, in turn, an exact dynamical reduction only when the selected subspace is invariant. Otherwise the omitted fields return through the Feshbach self-energy. Keeping these three statements separate is essential for deciding what a finite calculation can represent.
 
 #### Argument map.
 
@@ -67,11 +84,11 @@ Sections 1–3 define the curved operator, prove persistence of a low spectral 
 
 #### Scope boundary.
 
-These are universal operator and control statements. They do not supply the q79 HYM endpoints, action-derived Hessian, invariant finite subspace, inertial parent dynamics, interaction sign, or basin-selection law. A physical application must provide those inputs before invoking the corresponding theorem.
+These are universal operator and control statements. They do not supply the physical bundle, energy-derived Hessian, invariant finite subspace, inertial parent dynamics, interaction sign, or basin-selection law. A physical application must provide those inputs before invoking the corresponding theorem.
 
 # Inherited control framework
 
-We use the corrected FP–I/II Riemannian control geometry, joint internal operators, and projected stabilization flow. The projector $`P`$ below is the unperturbed joint harmonic projector and $`Q=I-P`$. FP–III supplies separate deterministic and stochastic disturbance bounds. No statement here identifies the stabilization parameter with physical Lorentzian time.
+We use the FP–I/II Riemannian control geometry , joint internal operators, and projected stabilization flow. The projector $`P`$ below is the unperturbed joint harmonic projector and $`Q=I-P`$. FP–III supplies separate deterministic and stochastic disturbance bounds. No statement here identifies the stabilization parameter with physical Lorentzian time.
 
 Existence of a projected step fixed point requires the corrected invariant-set conditions and the stated Schauder or Darbo hypotheses. Promotion to a full equilibrium uses the strict Lyapunov identity of FP–II.
 
@@ -136,7 +153,7 @@ For base-dependent curvature and projectors, modulation and locality estimates a
 
 This section answers two different representation questions. First, can a supplied bundle and connection be represented exactly by finite matrix-valued functions? Second, can an infinite-dimensional Hessian be replaced by a finite operator without losing the effect of discarded modes? The universal connection answers the first. Invariance or Feshbach–Schur reduction answers the second.
 
-The curved spectral projector above should not be confused with a finite projective-module presentation of a supplied bundle. Let $`X`$ be compact and let $`(E,h,\nabla)`$ be a supplied finite-rank Hermitian bundle with unitary connection. The universal-connection construction gives a finite $`N`$, a fiberwise isometry
+The curved spectral projector above should not be confused with a finite projective-module presentation of a supplied bundle. Let $`X`$ be compact and let $`(E,h,\nabla)`$ be a supplied finite-rank Hermitian bundle with unitary connection. The universal-connection theorem of Narasimhan and Ramanan gives a finite $`N`$, a fiberwise isometry
 ``` math
 U:E\longrightarrow X\times\mathbb C^N,
 \qquad p_{\rm mod}=UU^\ast\in M_N(C^\infty(X)),
@@ -148,46 +165,76 @@ p_{\rm mod}\,d(Us)=U\nabla s,
 p_{\rm mod}(dp_{\rm mod})\wedge(dp_{\rm mod})p_{\rm mod}
 =UF_\nabla U^\ast.
 ```
-Consequently, a coupled differential and any gauge-fixed Hessian constructed functorially from the same supplied connection, metric, gauge slice, and action transport exactly under $`U`$ . This preserves nonzero Chern data; it does not flatten the connection.
+These identities concern the image bundle $`p_{\rm mod}\mathbb C^N`$, not the entire trivial bundle. On its sections define $`\nabla'=U\nabla U^\ast`$. Then $`(\nabla')^2=UF_\nabla U^\ast`$ by composition. The induced map on $`L^2`$ sections is unitary onto its image when both spaces use the same base measure. It therefore transports adjoints and closed quadratic forms, with their domains. In particular, if a twice differentiable energy is transported by $`C'(v)=C(U^\ast v)`$ on that image, then
+``` math
+d^2C'(Uu)[U\xi,U\eta]=d^2C(u)[\xi,\eta].
+```
+The corresponding Hessian is $`H'=UHU^\ast`$ on the transported domain. Any gauge slice must also be transported, not chosen independently. No claim is made about an extension of $`H'`$ outside the image module. This preserves the supplied curvature; it does not flatten the connection.
 
-Here “finite” refers only to the ambient matrix size $`N`$. The entries of $`p_{\rm mod}(x)`$ are smooth functions and can contain infinitely many base modes. Thus $`p_{\rm mod}`$ is not, by itself, a finite Fourier, Toeplitz, or Galerkin cutoff. Given endpoint Cech data, metrics, a finite good cover, partition of unity, and local physical connection forms, the verified connection compiler emits the projector together with its connection correction. The projector alone carries only the partition-induced Grassmann connection and is not generally the physical HYM connection. Neither construction selects the physical q79 endpoints.
+Here “finite” refers only to the ambient matrix size $`N`$. The entries of $`p_{\rm mod}(x)`$ are smooth functions and can contain infinitely many base modes. Thus $`p_{\rm mod}`$ is not, by itself, a finite Fourier, Toeplitz, or Galerkin cutoff. An arbitrary smooth embedding of the same bundle need not represent the supplied connection by $`p_{\rm mod}d`$. In such a presentation, the difference between the transported connection and $`p_{\rm mod}d`$ is an endomorphism-valued one-form and must be retained. A bundle projector alone does not determine a previously specified connection.
 
 <div id="thm:finite-reduction" class="theorem">
 
-**Theorem 2** (Exact finite-reduction criterion). *Let $`H=H^\ast`$ be the transported physical Hessian, let $`P_f`$ be a finite orthogonal projector preserving its declared domain, and put $`Q_f=I-P_f`$. Then the bare compression $`P_fHP_f`$ is the exact restriction of $`H`$ to $`\operatorname{Ran}P_f`$ if and only if
+**Theorem 2** (Exact finite-reduction criterion). *Let $`H=H^\ast`$ be a densely defined Hessian on a Hilbert space, let $`P_f`$ be a finite-rank orthogonal projector with $`\operatorname{Ran}P_f\subset D(H)`$, and put $`Q_f=I-P_f`$. Use the domain decomposition $`D(H)=\operatorname{Ran}P_f\oplus(D(H)\cap\operatorname{Ran}Q_f)`$. Then the bare compression $`P_fHP_f`$ is the exact restriction of $`H`$ to $`\operatorname{Ran}P_f`$ if and only if
 ``` math
 Q_fHP_f=0.
 ```
-If this residual is nonzero and $`Q_f(H-z)Q_f`$ is invertible, the exact finite operator at spectral parameter $`z`$ is the Feshbach–Schur map
+If this residual is nonzero and the complementary block $`Q_f(H-z)Q_f`$ has a bounded inverse into its operator domain, the exact finite operator at spectral parameter $`z`$ is the Feshbach–Schur map
 ``` math
 F_{P_f}(H-z)
 =P_f(H-z)P_f
 -P_fHQ_f\,[Q_f(H-z)Q_f]^{-1}Q_fHP_f.
 ```
-The second term is a same-source complementary-sector self-energy, not an independent fit parameter.*
+The second term is determined by the same Hessian, not an independent fit parameter. This map is an exact reduced spectral equation; a spectral-parameter-dependent map is not automatically an autonomous evolution generator on the finite subspace.*
+
+</div>
+
+<div class="proof">
+
+*Proof.* For $`u\in\operatorname{Ran}P_f`$, the decomposition $`Hu=P_fHu+Q_fHu`$ shows that invariance is equivalent to $`Q_fHP_f=0`$. Self-adjointness then gives a reducing decomposition on the stated domain. For the general case write a vector as $`u+v`$ in the two summands. The $`Q_f`$ row of $`(H-z)(u+v)=0`$ is
+``` math
+Q_fHP_fu+Q_f(H-z)Q_fv=0.
+```
+Its unique solution is $`v=-[Q_f(H-z)Q_f]^{-1}Q_fHP_fu`$. Substitution into the $`P_f`$ row gives $`F_{P_f}(H-z)u=0`$, and the substitution also reconstructs every full solution. The domain assumptions make all displayed products well defined. ◻
 
 </div>
 
 <div id="thm:shorted-hessian" class="theorem">
 
-**Theorem 3** (Reduced-Green strain Hessian). *Let $`H_Q>0`$ be the gauge-fixed physical Hessian after removal of its declared harmonic kernel, let $`G_Q=H_Q^{-1}`$, and let $`J=d\Phi_{\rm strain}`$ be the differential of a declared nonlinear strain symbol at a regular point. If $`J`$ has full target rank and $`JG_QJ^\ast>0`$, then the exact effective Hessian on strain variations is
+**Theorem 3** (Reduced-Green strain Hessian). *Let $`H_Q\ge cI`$, $`c>0`$, be a self-adjoint Hessian on the retained Hilbert space after removal of its declared kernel, let $`G_Q=H_Q^{-1}`$, and let $`J=d\Phi_{\rm strain}`$ be a bounded surjection from that Hilbert space to a finite-dimensional target at the point in question. If $`JG_QJ^\ast>0`$, then the exact effective Hessian on strain variations is
 ``` math
 H_{\rm strain}=(JG_QJ^\ast)^{-1}.
 ```
 Indeed, for every target variation $`y`$,
 ``` math
-\min_{Jx=y}\frac12\langle x,H_Qx\rangle
+\min_{\substack{x\in D(H_Q^{1/2})\\Jx=y}}
+\frac12\|H_Q^{1/2}x\|^2
 =\frac12\langle y,(JG_QJ^\ast)^{-1}y\rangle.
 ```
-Thus the effective operator integrates out the complementary physical fields and forgotten phase/orientation directions. It is a quotient or shorted Hessian, not the restriction of $`H_Q`$ to a linear rank-six subspace.*
+Thus the effective operator minimizes over the directions forgotten by $`J`$. It is the Hessian of the tangent quadratic minimization problem, not a claim about the complete nonlinear energy away from the reference point. It is a quotient or shorted Hessian, not a bare restriction to a selected subspace.*
 
 </div>
 
-For the current q79 program these are closed universal theorems and exact finite witnesses. Their physical instantiation remains open until the visible/hidden HYM endpoints, action-derived Hessian, regular quotient domain, and intrinsic finite subspace are supplied and either $`Q_fHP_f=0`$ or the displayed Feshbach equality is executed.
+<div class="proof">
+
+*Proof.* Put $`B=JG_QJ^\ast`$ and $`x_\ast=G_QJ^\ast B^{-1}y`$. Then $`x_\ast\in D(H_Q)`$ and $`Jx_\ast=y`$. Every admissible $`x`$ has the form $`x_\ast+z`$ with $`Jz=0`$. In the quadratic form,
+``` math
+\langle H_Qx_\ast,z\rangle
+=\langle J^\ast B^{-1}y,z\rangle=0.
+```
+Consequently its energy is the energy of $`x_\ast`$ plus $`\frac12\|H_Q^{1/2}z\|^2`$. The latter is nonnegative and vanishes only for $`z=0`$. Substituting $`x_\ast`$ gives the asserted minimum and uniqueness. ◻
+
+</div>
+
+These are operator identities for supplied data. To apply them, construct the Hessian and its domain, verify the regularity and coercivity required by the chosen reduction, and evaluate either the invariance residual or the complementary inverse. No physical model is selected by these identities.
 
 #### Interpretation of the two effective operators.
 
-The Feshbach map keeps a chosen linear subspace and feeds back propagation through its orthogonal complement. The reduced-Green formula instead asks for the least physical energy needed to realize a prescribed nonlinear strain variation. Both integrate out omitted directions from the same source Hessian. Neither licenses inserting an independently fitted finite matrix, and neither selects which physical subspace or quotient the q79 geometry realizes.
+The Feshbach map keeps a chosen linear subspace and feeds back propagation through its orthogonal complement. The reduced-Green formula instead asks for the least quadratic energy needed to realize a prescribed tangent strain variation. Both integrate out omitted directions from the same source Hessian. Neither licenses inserting an independently fitted finite matrix, and neither determines which subspace or quotient an application realizes.
+
+#### A two-dimensional check.
+
+For $`H=\left(\begin{smallmatrix}2&1\\1&3\end{smallmatrix}\right)`$ and $`J(x_1,x_2)=x_1`$, bare compression gives $`2`$. Eliminating $`x_2`$ gives $`2-1/3=5/3`$. Since $`(H^{-1})_{11}=3/5`$, the constrained formula also gives $`(JH^{-1}J^\ast)^{-1}=5/3`$. Thus both derivations agree, while simple compression misses the adjustment in the discarded variable.
 
 # Curvature leakage and stability floor
 
@@ -345,9 +392,9 @@ Noise-driven transitions require probabilistic exit estimates and are not covere
 
 # Conclusion
 
-Curvature is not merely a scalar subtraction from a damping margin. It can shift the spectral cluster, rotate the coherent projector, and leak coherent amplitude into the old noncoherent sector. FP IV v5 makes those effects explicit and adds the exact boundary between natural projective transport, bare compression, Feshbach reduction, and nonlinear shorting. Centroid motion is intrinsic and first order for a gradient parent flow; interaction signs and dynamic merger require additional hypotheses; and barrier crossing is controlled by total energy plus work. These corrected statements preserve the useful curvature and transition program without claiming that a finite projector, overlap, or positive damping alone selects a physical basin.
+Curvature is not merely a scalar subtraction from a damping margin. It can shift the spectral cluster, rotate the coherent projector, and leak coherent amplitude into the old noncoherent sector. This paper makes those effects explicit and adds the exact boundary between natural projective transport, bare compression, Feshbach reduction, and nonlinear shorting. Centroid motion is intrinsic and first order for a gradient parent flow; interaction signs and dynamic merger require additional hypotheses; and barrier crossing is controlled by total energy plus work. These corrected statements preserve the useful curvature and transition program without claiming that a finite projector, overlap, or positive damping alone selects a physical basin.
 
-The reusable achievement is a typed decision tree. Use the curved Riesz projector when a separated full-operator cluster is known; otherwise retain the old projector together with an explicit leakage floor. Use bare finite compression only on an invariant subspace; otherwise use a same-source Feshbach map. Use reduced-Green shorting for nonlinear quotient coordinates, not as a claim of a hidden linear rank-six carrier. Finally, distinguish first-order centroid motion, energetic interaction sign, barrier exclusion, exit, and basin selection. The remaining q79 task is to instantiate this decision tree with the selected physical connection, Hessian, quotient, and finite execution data.
+The reusable achievement is a typed decision tree. Use the curved Riesz projector when a separated full-operator cluster is known; otherwise retain the old projector together with an explicit leakage floor. Use bare finite compression only on an invariant subspace; otherwise use the full-operator Feshbach map. Use reduced-Green shorting for nonlinear quotient coordinates, not as an unexplained linear restriction. Finally, distinguish first-order centroid motion, energetic interaction sign, barrier exclusion, exit, and basin selection. An application must instantiate this decision tree with its connection, Hessian, quotient and finite execution data. The foundation is independent of which application eventually supplies them.
 
 <div class="thebibliography">
 
@@ -363,10 +410,16 @@ D. Henry, *Geometric Theory of Semilinear Parabolic Equations*, Lecture Notes i
 
 E. Hebey, *Nonlinear Analysis on Manifolds: Sobolev Spaces and Inequalities*, Courant Lecture Notes, Vol. 5, American Mathematical Society, Providence, 2000.
 
-P. Nero, *q79 Covariant Projective-Module HYM Symbol Naturality, Explicit Cech Connection Compiler, and Intrinsic Spectral-Strain Quotient/Shorted-Hessian Theorems*, `mtt-qm-source-proof`, commit `1615da7`, 27 July 2026.
+P. Nero, *Fixed Points I: Fixed Points over Multi–Bundle Manifolds*, version 7, 2026.
+
+P. Nero, *Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model*, version 6, 2026.
+
+P. Nero, *Fixed Points III: Disturbance–Damping Balance and Stability*, version 8, 2026.
+
+M. S. Narasimhan and S. Ramanan, *Existence of universal connections*, American Journal of Mathematics **83** (1961), 563–572. [doi:10.2307/2372896](https://doi.org/10.2307/2372896).
 
 </div>
 
-# Computational Evidence and Reproducibility
+# Dependency and reproducibility statement
 
-The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+The inputs are the preceding FP papers and standard mathematical literature. Block elimination and constrained minimization are derived here. No MTT research packet, numerical endpoint or later paper supplies a proof premise.

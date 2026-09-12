@@ -105,3 +105,9 @@ imported. The generic series tagline remains empty.
 - The current source compiles with `pdflatex` to a 12-page PDF.
 - The final log has no undefined references, underfull boxes, overfull boxes,
   or LaTeX/package warnings.
+
+## Foundational dependency repair: version 6 (2026-09-12)
+
+Replaces the downstream q79 carrier claim by a locally checked tensor-factor example. Retains shared-circle dimension accounting and all joint-operator, existence and coherent-contraction gates. Cites FP I v7.
+
+Only local arguments, earlier numbered FP installments and standard mathematics are proof sources. Prior revision and validation entries above are historical, not current application-status assertions. Original Zenodo release metadata is preserved; this is an unreleased authoring revision. See FP_FOUNDATIONAL_DEPENDENCY_REPAIR_2026-09-12.md for the full review and verification record.

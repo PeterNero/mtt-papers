@@ -1,12 +1,12 @@
 {
-  "abstract": "We synthesize the canonical FP\u2013I\u2013V results without promoting their control parameter, projections, or diagnostics into an unproved fundamental field theory. The rigorous spine consists of conditional projected fixed-point existence, strict-Lyapunov promotion to equilibrium, joint-mode damping and disturbance floors, perturbative persistence of a curved spectral cluster, curvature leakage, intrinsic first-order centroid modulation, frozen linear Ornstein\u2013Uhlenbeck covariance, canonical-correlation bounds, and declared admissibility exits. We distinguish three logical levels throughout: inherited theorem, conditional model completion, and physical interpretation. All inherited results are restated as self-contained contracts and cited to their canonical paper; FP VI does not reproduce their theorem/proof blocks. Its own formal results are limited to the bilocal-causality obstruction and the local-mediator completion. A Lorentzian gauge/gravity action, quantum covariance, particle identities, merger, measurement, and cosmology belong to the latter two levels unless additional source and equivalence theorems are supplied. The Gaussian Lyapunov sign and nonnormal resolvent bounds are stated in their domain-valid forms, and we show why an instantaneous equal-time bilocal kernel is not microcausal merely because it leaves the principal symbol unchanged. A local mediator is the consistent route to causal overlap dynamics. A separate, explicitly non-FP ledger records later scoped q79 geometry, quantum-operation, and QFT advances without retroactively promoting them to conclusions of the fixed-point series.",
+  "abstract": "We synthesize the Fixed Points I--V results without promoting their control parameter, projections or diagnostics into an unproved fundamental field theory. The analytic chain includes projected fixed-point existence, strict-Lyapunov equilibrium promotion, disturbance floors, curved spectral-cluster persistence and leakage, intrinsic first-order centroid modulation, frozen linear covariance and declared admissibility exits. Earlier results are stated as self-contained input-output contracts with their canonical sources, rather than duplicated theorem blocks. We distinguish inherited results, conditional model completions and physical interpretations. The two local causality propositions explain why an instantaneous bilocal interaction lacks the usual domain of dependence and how a hyperbolic local mediator supplies a causal retarded completion. The synthesis depends only on earlier Fixed Points installments and standard mathematical literature, not on later MTT research results.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v6",
-  "date": "July 2026 Version 6",
+  "current_version": "v7",
+  "date": "September 2026 Version 7",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949635",
     "created": "2026-07-29T08:50:52.977082+00:00",
@@ -32,33 +32,33 @@
     "updated": "2026-07-29T08:50:53.318260+00:00",
     "version": "v6"
   },
-  "main_tex_sha256": "b7299e035919d25bcadc67a6af84c8847291e694665b1ea2c19912f91bec90c5",
+  "main_tex_sha256": "b83fa5175519cd35aa5877ea098282dffaeafd1804d68a7391b509000c7cbd4a",
   "paper_id": "fixed-points-vi-formal-synthesis-and-physical-interpretations",
-  "paper_md_sha256": "96a12ee52321c5a785f53daace8c87bdfe041b4772bcf44c0a5a07d5141eb26c",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "d78c8e99d779de0af1375c071f8ef99c3f78359e381d7ff6828cb14b37f4af05",
+  "release_state": "current_revised_tex",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "8d208b10aad35404ab968681cca6952dd8b9710aa9da5d67edcf743def8e7a8d",
+    "revision_evidence_sha256": "f43d6bd78c87191a0abbf2e167d0024cd157f2497317282db4dab5d9f02c7da6",
     "selected_revision": true,
     "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 359896,
+      "bytes": 328079,
       "path": "main.pdf",
-      "sha256": "142aa11b0fe6eb20bcd190350f907c072ac6005fa3ad452877be51d268eaf70d"
+      "sha256": "6df90f1f112fd4f9b8987d012f0477eb09d13b1905199df7e064551803cd4b61"
     },
     {
-      "bytes": 30333,
+      "bytes": 27105,
       "path": "main.tex",
-      "sha256": "b7299e035919d25bcadc67a6af84c8847291e694665b1ea2c19912f91bec90c5"
+      "sha256": "b83fa5175519cd35aa5877ea098282dffaeafd1804d68a7391b509000c7cbd4a"
     },
     {
-      "bytes": 9031,
+      "bytes": 9826,
       "path": "REVISION_AUDIT.md",
-      "sha256": "8d208b10aad35404ab968681cca6952dd8b9710aa9da5d67edcf743def8e7a8d"
+      "sha256": "f43d6bd78c87191a0abbf2e167d0024cd157f2497317282db4dab5d9f02c7da6"
     },
     {
       "bytes": 15299,
@@ -69,9 +69,9 @@
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_VI__Formal_Synthesis_and_Physical_Interpretations_v4"
   },
-  "source_tree_sha256": "35f7cddc6f7a85fec4e35d9a2580bf7bf9c55a6bf46b016ff7196c19e89b0781",
+  "source_tree_sha256": "ca2aa8b17df94e034f59bca9f26c7eff88907b0b20dac34decbe5d53de9f3826",
   "title": "Fixed Points VI: Formal Synthesis and Physical Interpretations",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.16949635",

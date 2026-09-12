@@ -1,6 +1,6 @@
 {
   "canonical_papers": 142,
-  "current_sources_newer_than_release": 12,
+  "current_sources_newer_than_release": 15,
   "pandoc_warning_papers": 12,
   "papers_with_zenodo_release": 138,
   "papers_without_zenodo_match": 4,

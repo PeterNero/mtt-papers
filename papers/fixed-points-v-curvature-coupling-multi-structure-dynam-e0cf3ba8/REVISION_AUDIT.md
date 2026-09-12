@@ -96,3 +96,9 @@ the coupled generator, projector, covariance source, invariant domain, and any
 post-exit transition kernel must be selected by the physical q79 model. FP V
 diagnoses supplied data and does not emit those physical operators. No theorem
 or estimate is changed.
+
+## Foundational dependency repair: version 9 (2026-09-12)
+
+Removes misleading generic numerical-evidence boilerplate, explicitly cites earlier FP editions and preserves every covariance/correlation/exit theorem and proof. No later MTT research is a premise.
+
+Only local arguments, earlier numbered FP installments and standard mathematics are proof sources. Prior revision and validation entries above are historical, not current application-status assertions. Original Zenodo release metadata is preserved; this is an unreleased authoring revision. See FP_FOUNDATIONAL_DEPENDENCY_REPAIR_2026-09-12.md for the full review and verification record.

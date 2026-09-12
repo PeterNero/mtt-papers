@@ -92,3 +92,9 @@ its exact recurrence and certified transition from a mixing/Brownian limit.
 No numerical proof blocks are duplicated here. The four curated calculation
 results now belong to the companion rather than being counted as unexplained
 additions to FP III. Abstract content and released Zenodo metadata are retained.
+
+## Foundational dependency repair: version 8 (2026-09-12)
+
+Removes the reverse citation to the finite-mode calculation companion. Its calculations remain owned by that companion, which may cite FP III. The enhanced invariance principle and analytic statements are unchanged. Explicitly cites FP I v7 and FP II v6.
+
+Only local arguments, earlier numbered FP installments and standard mathematics are proof sources. Prior revision and validation entries above are historical, not current application-status assertions. Original Zenodo release metadata is preserved; this is an unreleased authoring revision. See FP_FOUNDATIONAL_DEPENDENCY_REPAIR_2026-09-12.md for the full review and verification record.

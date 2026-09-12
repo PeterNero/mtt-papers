@@ -121,3 +121,9 @@ bilocal-causality results.
 - The current source compiles with `pdflatex` to a 10-page PDF.
 - The final log has no undefined references, underfull boxes, overfull boxes,
   or LaTeX/package warnings.
+
+## Foundational dependency repair: version 7 (2026-09-12)
+
+Removes the downstream q79 progress ledger and carrier imports. Preserves the FP I--V synthesis, conditional interpretations and two causality propositions. Aligns bibliography to I v7, II v6, III v8, IV v7 and V v9.
+
+Only local arguments, earlier numbered FP installments and standard mathematics are proof sources. Prior revision and validation entries above are historical, not current application-status assertions. Original Zenodo release metadata is preserved; this is an unreleased authoring revision. See FP_FOUNDATIONAL_DEPENDENCY_REPAIR_2026-09-12.md for the full review and verification record.

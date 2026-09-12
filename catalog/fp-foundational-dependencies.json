@@ -1,0 +1,37 @@
+{
+  "schema": "mtt.fp-foundational-dependencies.v1",
+  "reviewed_at": "2026-09-12",
+  "scope": "Citation direction and reviewed bibliography identity; not automatic proof verification.",
+  "papers": {
+    "fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce": {
+      "reviewed_bibliography_sha256": "d9efc8f82c786f5c4ce7a863b8ec3bd1aaa4d2a3347586a6ed3ae47d9ba22587",
+      "standard_reference_keys": ["Amann1995", "Hebey2000", "Henry1981", "Kato1976", "Simon1983", "Temam1997"],
+      "earlier_fp_reference_keys": {}
+    },
+    "fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534": {
+      "reviewed_bibliography_sha256": "a1f9d8fb8bd9d3cfe23aca1ab55f24804f3958d10b953c55e24c08c4c53695c7",
+      "standard_reference_keys": ["Amann1995", "Chavel1984", "Hebey2000", "Henry1981", "IkedaTaniguchi1978", "Kato1976", "Lions1969", "Simon1983", "Temam1997", "Zeidler1995"],
+      "earlier_fp_reference_keys": {"Nero2025FP1": 1}
+    },
+    "fixed-points-iii-disturbance-damping-balance-and-stability": {
+      "reviewed_bibliography_sha256": "760d92a334a3e35a455312175f9db9e93597b62e8c8e4de3fc7bb82e387bf325",
+      "standard_reference_keys": ["Amann1995", "Buser1982", "Chavel1984", "DaPratoZabczyk1992", "Gardiner2009", "Hebey2000", "Henry1981", "IkedaTaniguchi1978", "Kato1976", "Lions1969", "Simon1983", "Temam1997", "Zeidler1995"],
+      "earlier_fp_reference_keys": {"Nero2025FP1": 1, "FP2": 2}
+    },
+    "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce": {
+      "reviewed_bibliography_sha256": "d8f4925748aa6f3c394e16810b2660c1cd0c2e88c165c6d2eac97d355842ebbd",
+      "standard_reference_keys": ["Hebey2000", "Henry1981", "LawsonMichelsohn1989", "NarasimhanRamanan1961", "Petersen2016", "Temam1997"],
+      "earlier_fp_reference_keys": {"FPI": 1, "FPII": 2, "FPIII": 3}
+    },
+    "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8": {
+      "reviewed_bibliography_sha256": "b9a6760fb241bdb9afaeee9679f0510c03d63563b64d716b8b20e1ae56601836",
+      "standard_reference_keys": ["DaPratoZabczyk1992", "Temam1997"],
+      "earlier_fp_reference_keys": {"FPI": 1, "FPII": 2, "FP3": 3, "FPIV": 4}
+    },
+    "fixed-points-vi-formal-synthesis-and-physical-interpretations": {
+      "reviewed_bibliography_sha256": "e5b351ce125e175f992a39ddcd466ddbf79b7d519c9aeef0b5195ee2b46f9ee8",
+      "standard_reference_keys": ["DaPratoZabczyk", "SimonPPT"],
+      "earlier_fp_reference_keys": {"FPI": 1, "FPII": 2, "FPIII": 3, "FPIV": 4, "FPV": 5}
+    }
+  }
+}

@@ -21,8 +21,10 @@ class FixedPointCalculationImports(unittest.TestCase):
                                     "repo_id": "fixed_points_frontier_20260911"})[0],
                              FP_CALC)
         fp = (ROOT / "papers/fixed-points-iii-disturbance-damping-balance-and-stability/main.tex").read_text()
-        self.assertIn(r"\cite{NeroFiniteMode2026}", fp)
+        self.assertNotIn(r"\cite{NeroFiniteMode2026}", fp)
         self.assertNotIn("0.05568344585", fp)
+        companion = (ROOT / "papers" / FP_CALC / "main.tex").read_text()
+        self.assertIn("FP III", companion)
 
     def test_outward_rounded_certificate_values(self):
         root = RESULTS / "release/results"

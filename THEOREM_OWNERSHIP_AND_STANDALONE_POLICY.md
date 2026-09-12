@@ -28,7 +28,7 @@ Standalone does not mean that the same proof is published repeatedly.
 | Generic projected existence, equilibrium promotion, Banach uniqueness, compact/noncompact fixed-point gates | Fixed Points I | Application corollaries in FP II; imported contracts in Foundation and FP VI |
 | Ten-dimensional joint projector and coherent-sector application | Fixed Points II | Summarized in FP VI |
 | Scalar deterministic/stochastic disturbance and scalar OU baseline | Fixed Points III | Imported baseline in FP V and FP VI |
-| Supplied radial finite-mode coercivity/recurrence, cubic heat-trace and phase-channel calculation | Finite-Mode Closure Dynamics | Scoped driver distinction in FP III; no duplicated calculation proofs |
+| Supplied radial finite-mode coercivity/recurrence, cubic heat-trace and phase-channel calculation | Finite-Mode Closure Dynamics | Downstream application of FP III; no reverse import into the foundational series |
 | Curved cluster, leakage, and intrinsic centroid modulation | Fixed Points IV | Summarized in FP VI |
 | Vector/nonnormal covariance, correlation, and admissibility exit | Fixed Points V | Summarized in FP VI |
 | Instantaneous bilocal obstruction and local-mediator completion | Fixed Points VI | Not duplicated |
@@ -63,6 +63,33 @@ Each fixed-point paper is independently readable and has a distinct role:
 
 Later papers may summarize earlier results but do not become alternate theorem
 sources.
+
+### Foundational dependency direction (2026-09-12)
+
+The general standalone/import policy above is deliberately stricter for this
+series. FP n may depend only on results established locally, earlier numbered
+FP installments, and standard external mathematical literature. "Earlier"
+means the installment number, not an earlier edition of a downstream paper.
+All needed notation and the hypotheses of earlier-FP imports must be stated
+locally. Cite an explicit edition and the relevant result where possible.
+
+Other MTT papers, research repositories, packets and numerical results are
+consumers of the FP foundation, never its proof authorities. Place their
+applications, realization contracts and changing progress counts in their
+own papers or the Kernel, not in the six foundational manuscripts. This also
+avoids a bibliographic two-way dependency disguised as an optional example.
+Keep generic examples and scope limits in the FP papers themselves.
+
+A correction learned from later work may still repair an FP argument. Supply
+its local derivation or an appropriate standard mathematical citation; do not
+make the correction depend on the later MTT source. Historical revision notes
+record what changed and are not mathematical premises. Do not erase valid
+analytic corrections to recover the intended dependency order.
+
+Run `python scripts/verify_fp_foundational_dependencies.py`. Its reviewed
+citation allowlist rejects later-FP and non-FP MTT sources and reports the
+per-paper dependency graph. It is a regression guard, not a semantic proof
+checker; contextual review of uncited assumptions remains mandatory.
 
 ## Repository Enforcement
 

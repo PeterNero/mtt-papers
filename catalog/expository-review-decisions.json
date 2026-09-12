@@ -323,45 +323,48 @@
     },
     "fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "note": "Vertical damping and coherent contraction separated throughout; 12-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "ba452cbe49af339cb3d8a7e72f289c7d78bbf6594ebd915841ea643b000fef6f",
-      "reviewed_pdf_sha256": "f4639b5500d18c4634bfd807e91a2e822577c88c87fcbf628b0d7b03101e5619",
-      "reviewed_source_tree_sha256": "6d8395573b886e04c62626383c368491130e58d3ee659d59bbea9f0362a381bb"
+      "reviewed_on": "2026-09-12",
+      "note": "Version 6 foundational dependency repair reviewed on 2026-09-12. Replaces the downstream q79 carrier import with a locally proved tensor-factor example; preserves joint-operator and coherent-contraction hypotheses. All 13 PDF pages visually inspected.",
+      "reviewed_main_tex_sha256": "e87f87efc64689cd08a633780aa55e5668faa7eb1a45d4d80af3be5762a52686",
+      "reviewed_pdf_sha256": "e71503bbe1a50cf77ee2334f635dba1869de27416815553644bd7ec4367caaa9",
+      "reviewed_source_tree_sha256": "84257ebe457e694c6b1d07d4fae0a3163fc064cf08ae5134b9bce5addc7d998f",
+      "release_authorized": false
     },
     "fixed-points-iii-disturbance-damping-balance-and-stability": {
       "status": "reviewed",
       "reviewed_on": "2026-09-12",
-      "note": "Version 7 keeps the standalone fixed-point, stationary-ensemble and homogenization theorem ownership unchanged. It adds a scoped citation to the new finite-mode calculation companion and explains why finite-unitary recurrence differs from an independent mixing driver. Evidence boilerplate was replaced by contextual references. All ten PDF pages were rendered and visually inspected, final evidence/bibliography page rechecked. Zero PDF build warnings; pre-existing benign Pandoc series macro warning noted.",
-      "reviewed_main_tex_sha256": "63582488d784052c7cdb8461833c411533f658dd2ac796e6779b601a1cd47fac",
-      "reviewed_pdf_sha256": "be0852118b8af78c3d6f60c084bc47f5e84ecc8cd2143c4fc38690a282ccd53b",
-      "reviewed_source_tree_sha256": "65c0c352b42044c59214e9ae33011ee83c2f2118acbb9f07146e58f23c6a572b",
+      "note": "Version 8 restores the one-way foundation by removing the reverse finite-mode companion citation. All foundational theorem statements and proofs are unchanged; the driver/path-limit distinction remains local. All ten PDF pages visually inspected; no PDF build warnings.",
+      "reviewed_main_tex_sha256": "462331ccfba79aa06c6e0d603517fd4c409c26c39075efcf8c82142d11af7fbc",
+      "reviewed_pdf_sha256": "760455f61ca7040153adc9c2ed7f363b0908c24dbfbff2e21226145d36c4fc83",
+      "reviewed_source_tree_sha256": "9253b458b3163a53a95143f372926c2d93da83b6fc80f1cfd5032ad3751746c7",
       "release_authorized": false
     },
     "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "note": "Curvature blocks and three notions of finite explained; 8-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "5630bc74869a8a4d726c13b5853da796041065c6a6b604b30c7e77c43ca671a1",
-      "reviewed_pdf_sha256": "3416a92a0650aaf283a38f5307b7590c51e685e053edf03b1788bfa59a95e935",
-      "reviewed_source_tree_sha256": "7428fb6a8e7951bb77dd47392a8e2a3fbbd1e82da89cb5a0c3fe053ccd533014"
+      "reviewed_on": "2026-09-12",
+      "note": "Version 7 foundational dependency repair reviewed on 2026-09-12. Standard universal connections replace downstream repository authority. Local image-module, Feshbach block-elimination and constrained-minimization proofs include domain/coercivity hypotheses and a 2-by-2 example. All ten PDF pages visually inspected.",
+      "reviewed_main_tex_sha256": "208df8b55e21a91c5e19043af446fb01a5de4a05509f7cab7473c43c873c9b30",
+      "reviewed_pdf_sha256": "f35ee1a39104e969bb01662a61af8ef22ae88d39fe10741e6587f5797a559c96",
+      "reviewed_source_tree_sha256": "ca0569f8535d2706b3f9d39204dd668d22ea79140755c51468a2cfe30fc2a20e",
+      "release_authorized": false
     },
     "fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8": {
       "status": "reviewed",
-      "reviewed_on": "2026-09-11",
-      "note": "Covariance, diagnostic margins, and exit boundaries explained; 8-page PDF visually inspected. September consolidation: retained the existing scoped source-selection clarification, versioned it separately from the released PDF, regenerated Markdown and visually reviewed all pages of the rebuilt PDF. No mathematical result is promoted.",
-      "reviewed_main_tex_sha256": "557f94317cc54929ddc803b9d4c36959096c780c10c8f0b15b560727a4db9988",
-      "reviewed_pdf_sha256": "b93c246dff3ad768c4d9b4a733d8aab5c53b3c053c9c981351479bbf5ae679b3",
-      "reviewed_source_tree_sha256": "d64a86ef83f9dfddb8e67123c2eac192b023d0376ae2bd51e4ad9d60c2aff2a4",
+      "reviewed_on": "2026-09-12",
+      "note": "Version 9 foundational dependency repair reviewed on 2026-09-12. All covariance, correlation and exit theorem statements and proofs retained. Earlier FP references are explicit; generic numerical-evidence boilerplate removed. All nine PDF pages visually inspected. No physical result promoted.",
+      "reviewed_main_tex_sha256": "46bdd78a60f41be1b11ce2078336798a9013fafd21807e9ed34e65cb428b1ced",
+      "reviewed_pdf_sha256": "e271f60db4caf6fdecad8798a73439af1f0454d5d626a0fb0eadf9e725a8ff6a",
+      "reviewed_source_tree_sha256": "d85270bac9b7fa16f0084e30caf39892c7c4a251edf3f4c64203fa0f6bd95b1c",
       "release_authorized": false
     },
     "fixed-points-vi-formal-synthesis-and-physical-interpretations": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "note": "Synthesis reading lanes and theorem ownership reviewed; 10-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "b7299e035919d25bcadc67a6af84c8847291e694665b1ea2c19912f91bec90c5",
-      "reviewed_pdf_sha256": "142aa11b0fe6eb20bcd190350f907c072ac6005fa3ad452877be51d268eaf70d",
-      "reviewed_source_tree_sha256": "35f7cddc6f7a85fec4e35d9a2580bf7bf9c55a6bf46b016ff7196c19e89b0781"
+      "reviewed_on": "2026-09-12",
+      "note": "Version 7 foundational dependency repair reviewed on 2026-09-12. Removes downstream q79 progress and operator imports; preserves the FP I--V synthesis and two local causality propositions. All ten PDF pages visually inspected.",
+      "reviewed_main_tex_sha256": "b83fa5175519cd35aa5877ea098282dffaeafd1804d68a7391b509000c7cbd4a",
+      "reviewed_pdf_sha256": "6df90f1f112fd4f9b8987d012f0477eb09d13b1905199df7e064551803cd4b61",
+      "reviewed_source_tree_sha256": "ca2aa8b17df94e034f59bca9f26c7eff88907b0b20dac34decbe5d53de9f3826",
+      "release_authorized": false
     },
     "the-modal-triplet-theory-program-a0-a-structural-theory-bebae240": {
       "status": "reviewed",

@@ -1,12 +1,12 @@
 {
-  "abstract": "We develop curvature coupling and structural transitions on the canonical Fixed Points I\u2013III spine. A Laplace-type operator is separated into its connection Laplacian and curvature contribution. Curvature can shift the spectral cluster, mix coherent and noncoherent sectors, and create a leakage floor. When the curvature term is smaller than half the unperturbed spectral gap, the full curved operator retains a separated low cluster and defines a new Riesz projector; retaining the unperturbed projector instead requires an explicit leakage term. Centroids are defined intrinsically by a Karcher mean inside a convex normal ball. A first-order gradient parent flow yields a first-order modulation law, while a Newtonian law requires a separately specified inertial parent equation. Absolute interaction bounds do not determine attraction or repulsion without a sign hypothesis. Structural transitions are controlled by a Lyapunov mountain-pass and work theorem, and exit detection is separated from selection of the post-transition basin. We also state the projective-module transport and finite-reduction boundary: a supplied connection and its Hessian transport naturally, bare compression is exact only on an invariant subspace, and otherwise the Feshbach or reduced-Green operator is required.",
+  "abstract": "We develop curvature coupling and structural transitions on the Fixed Points I--III framework. Curvature can shift a low spectral cluster, rotate its projector and create leakage into the old noncoherent sector. A bounded perturbation smaller than half the initial gap preserves a separated cluster. Intrinsic centroids are defined by Karcher means, and a first-order gradient parent flow yields a first-order modulation law. Interaction sign requires a separate hypothesis; energy-barrier exclusion and exit detection do not select a post-transition basin. Standard universal connections represent supplied bundle data, while image-module transport preserves the specified connection and Hessian. Local block-elimination and constrained-minimization arguments distinguish invariant restriction, Feshbach reduction and reduced-Green Hessians under explicit domain and coercivity conditions.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v6",
-  "date": "July 2026 Version 6",
+  "current_version": "v7",
+  "date": "September 2026 Version 7",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949426",
     "created": "2026-07-29T08:50:50.714376+00:00",
@@ -32,28 +32,28 @@
     "updated": "2026-07-29T08:50:51.050932+00:00",
     "version": "v6"
   },
-  "main_tex_sha256": "5630bc74869a8a4d726c13b5853da796041065c6a6b604b30c7e77c43ca671a1",
+  "main_tex_sha256": "208df8b55e21a91c5e19043af446fb01a5de4a05509f7cab7473c43c873c9b30",
   "paper_id": "fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce",
-  "paper_md_sha256": "46322e0c722b9961b35c86566ca9bb7fcb15f8df2fe1b1b50716c38a2f86b817",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "4a45da765dfd7cb79183ba04ee296cc0366204865af732dd21be7f50497751a7",
+  "release_state": "current_revised_tex",
   "result_refs": [],
   "revision": {
     "revision_evidence_path": "papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "48521fafe126601039df046c48aac13d76f8301c42bf53fe48f5acd29fbbfc3f",
+    "revision_evidence_sha256": "c52bbee8b6d8b5dccd36532dd2e4ee638c85b40fc9a979f0b288948b163c6e19",
     "selected_revision": true,
     "superseded_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 367717,
+      "bytes": 364721,
       "path": "main.pdf",
-      "sha256": "3416a92a0650aaf283a38f5307b7590c51e685e053edf03b1788bfa59a95e935"
+      "sha256": "f35ee1a39104e969bb01662a61af8ef22ae88d39fe10741e6587f5797a559c96"
     },
     {
-      "bytes": 25210,
+      "bytes": 28586,
       "path": "main.tex",
-      "sha256": "5630bc74869a8a4d726c13b5853da796041065c6a6b604b30c7e77c43ca671a1"
+      "sha256": "208df8b55e21a91c5e19043af446fb01a5de4a05509f7cab7473c43c873c9b30"
     },
     {
       "bytes": 3592,
@@ -61,9 +61,9 @@
       "sha256": "53ac02751e592e3cfc713381c0c9b0d2c38417b497e78cf2ed09b9aa58ce7ba5"
     },
     {
-      "bytes": 6894,
+      "bytes": 7774,
       "path": "REVISION_AUDIT.md",
-      "sha256": "48521fafe126601039df046c48aac13d76f8301c42bf53fe48f5acd29fbbfc3f"
+      "sha256": "c52bbee8b6d8b5dccd36532dd2e4ee638c85b40fc9a979f0b288948b163c6e19"
     },
     {
       "bytes": 15299,
@@ -74,9 +74,9 @@
   "source_provenance": {
     "legacy_source_path": "4 Fixed Points/revised_tex_vnext/Fixed_Points_IV__Curvature__Centroid_Motion__and_Structural_Transitions_on_Bundle_Manifolds_v4"
   },
-  "source_tree_sha256": "7428fb6a8e7951bb77dd47392a8e2a3fbbd1e82da89cb5a0c3fe053ccd533014",
+  "source_tree_sha256": "ca0569f8535d2706b3f9d39204dd668d22ea79140755c51468a2cfe30fc2a20e",
   "title": "Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.16949426",

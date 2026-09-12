@@ -1,19 +1,36 @@
 ---
 abstract: |
-  We synthesize the canonical FP–I–V results without promoting their control parameter, projections, or diagnostics into an unproved fundamental field theory. The rigorous spine consists of conditional projected fixed-point existence, strict-Lyapunov promotion to equilibrium, joint-mode damping and disturbance floors, perturbative persistence of a curved spectral cluster, curvature leakage, intrinsic first-order centroid modulation, frozen linear Ornstein–Uhlenbeck covariance, canonical-correlation bounds, and declared admissibility exits. We distinguish three logical levels throughout: inherited theorem, conditional model completion, and physical interpretation. All inherited results are restated as self-contained contracts and cited to their canonical paper; FP VI does not reproduce their theorem/proof blocks. Its own formal results are limited to the bilocal-causality obstruction and the local-mediator completion. A Lorentzian gauge/gravity action, quantum covariance, particle identities, merger, measurement, and cosmology belong to the latter two levels unless additional source and equivalence theorems are supplied. The Gaussian Lyapunov sign and nonnormal resolvent bounds are stated in their domain-valid forms, and we show why an instantaneous equal-time bilocal kernel is not microcausal merely because it leaves the principal symbol unchanged. A local mediator is the consistent route to causal overlap dynamics. A separate, explicitly non-FP ledger records later scoped q79 geometry, quantum-operation, and QFT advances without retroactively promoting them to conclusions of the fixed-point series.
+  We synthesize the canonical FP–I–V results without promoting their control parameter, projections, or diagnostics into an unproved fundamental field theory. The rigorous spine consists of conditional projected fixed-point existence, strict-Lyapunov promotion to equilibrium, joint-mode damping and disturbance floors, perturbative persistence of a curved spectral cluster, curvature leakage, intrinsic first-order centroid modulation, frozen linear Ornstein–Uhlenbeck covariance, canonical-correlation bounds, and declared admissibility exits. We distinguish three logical levels throughout: inherited theorem, conditional model completion, and physical interpretation. All inherited results are restated as self-contained contracts and cited to their canonical paper; FP VI does not reproduce their theorem/proof blocks. Its own formal results are limited to the bilocal-causality obstruction and the local-mediator completion. A Lorentzian gauge/gravity action, quantum covariance, particle identities, merger, measurement, and cosmology belong to the latter two levels unless additional source and equivalence theorems are supplied. The Gaussian Lyapunov sign and nonnormal resolvent bounds are stated in their domain-valid forms, and we show why an instantaneous equal-time bilocal kernel is not microcausal merely because it leaves the principal symbol unchanged. A local mediator is the consistent route to causal overlap dynamics. The synthesis uses only the preceding Fixed Points papers and standard mathematical literature. Physical interpretations are conditional applications, not additional proof inputs.
 author:
 - Peter Nero
-current_version: v6
-date: July 2026 Version 6
-generated_from_main_tex_sha256: b7299e035919d25bcadc67a6af84c8847291e694665b1ea2c19912f91bec90c5
+current_version: v7
+date: September 2026 Version 7
+generated_from_main_tex_sha256: b83fa5175519cd35aa5877ea098282dffaeafd1804d68a7391b509000c7cbd4a
 paper_id: fixed-points-vi-formal-synthesis-and-physical-interpretations
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v6
 title: "Fixed Points VI: Formal Synthesis and Physical Interpretations"
 zenodo_doi: 10.5281/zenodo.21655380
 zenodo_record_id: 21655380
 zenodo_url: "https://zenodo.org/records/21655380"
 ---
+
+# Revision note for version 7
+
+Supersedes.
+Version 6, retained as the released edition.
+
+Reason.
+Even an explicitly separate downstream progress ledger placed later research inside a foundational synthesis and introduced reverse citations.
+
+Resolution.
+The ledger and application-specific carrier claims are removed. The source chain is now FP I–V only, alongside standard mathematics; the cited FP editions are aligned with the present foundational revisions.
+
+Retained result.
+The analytic synthesis, its stated assumptions, and the two bilocal-causality propositions retain their roles.
+
+Remaining boundary.
+Concrete physical dynamics and their relation to the control framework must be established by applications of this foundation.
 
 # Revision note for version 6
 
@@ -51,15 +68,15 @@ Selected HYM endpoints and action, the physical q79 Hessian and reduction, unive
 
 # How to use this synthesis
 
-This paper is a map of the Fixed Points chain, not a substitute for its five source papers. It restates the input–output contracts needed to understand the whole program, cites each canonical owner, and keeps later q79 results in a separate ledger. Its only new theorem/proof pair concerns the causality failure of instantaneous bilocal overlap and the local-mediator completion.
+This paper is a map of the Fixed Points chain, not a substitute for its five source papers. It restates the input–output contracts needed to understand the analytic sequence and cites each earlier canonical owner. Its only new formal results concern the causality failure of instantaneous bilocal overlap and the local-mediator completion.
 
 #### The central picture in plain language.
 
 The series builds a sequence of conditional gates. Geometry and spectral data define a coherent projector. Compactness or condensation gives a projected return. A strict Lyapunov law promotes that return to equilibrium. Spectral margins control disturbances; curvature can rotate the projector and source leakage; covariance describes a frozen linear fluctuation cloud; and declared margins detect exit from a chosen admissible region. Each gate has its own hypotheses, and passing one does not silently pass the next.
 
-#### Three reading lanes.
+#### Reading route.
 
-Readers interested in the rigorous FP result can follow Sections 1–7 and the synthesis ledger in Section 12. Readers interested in the relation to newer MTT work should use Sections 8–9, which explicitly distinguish downstream q79 achievements from FP consequences. Readers interested in physical interpretation should use Sections 10–11 together with the status labels, rather than reading a possible interpretation as an inherited theorem.
+Sections 1–7 assemble the analytic results and their input contracts. Sections 8–9 discuss an explicitly conditional local action and the causality of overlap interactions. Section 10 separates possible physical interpretations from the inherited mathematics, and Section 11 summarizes the full dependency chain. No application-specific result is required to read or establish that chain.
 
 #### Why contracts are repeated but proofs are not.
 
@@ -67,7 +84,7 @@ A standalone synthesis must state enough hypotheses and conclusions to be unders
 
 #### Scope boundary.
 
-The control flow, classical covariance, and admissibility diagnostics do not by themselves define Lorentzian dynamics, quantum commutation relations, particle identities, or cosmology. Later q79 results may close selected bridges independently, but their existence does not retroactively turn them into Fixed Points theorems.
+The control flow, classical covariance, and admissibility diagnostics do not by themselves define Lorentzian dynamics, quantum commutation relations, particle identities, or cosmology. Applications may use these results after checking their hypotheses; their additional conclusions are not premises of the Fixed Points theorems.
 
 # Logical levels and common geometry
 
@@ -82,7 +99,7 @@ A mathematically specified extra model whose conclusions hold if that model and 
 Physical interpretation.
 A proposed reading that is not established by the fixed-point theorems alone.
 
-Let $`\mathcal H`$ be the declared control Hilbert space. The joint internal operator is constructed from three declared vertical operators using the strong-commutation and domain hypotheses of FP II. Circle–lens–nil labels refer here to obstruction, rank, or operator data; they do not assert a literal product or nesting of three manifolds. In the current q79 specialization the ranks $`1`$, $`2`$, and $`3`$ act on an external lane tensor factor, not inside an irreducible stable HYM gauge bundle. The shared differential line is a separate flat scalar tensor factor. The accepted 27-state algebra is post-projection source data, not a rank-27 Galerkin subspace of the rank-102 physical deformation carrier. The six-coordinate strain carrier is a nonlinear orientation-forgetting quotient shadow, not a linear rank-six subspace of $`\operatorname{Herm}(3)`$ . The auxiliary $`L(3,1)\times\mathrm{Nil}_3`$ model is not identified with the q79/Fu–Yau compactification. The shared circle is common $`U(1)`$ phase/holonomy data and is counted once.
+Let $`\mathcal H`$ be the declared control Hilbert space. The joint internal operator is constructed from three declared vertical operators using the strong-commutation and domain hypotheses of FP II. Circle–lens–nil labels refer here to obstruction, rank, or operator data; they do not assert a literal product or nesting of three manifolds. A common $`U(1)`$ phase may be represented by a line connection without adding a product dimension, as in FP II. Finite rank flags do not specify differential operators or a Galerkin basis. Any such realization must be supplied before invoking the analytic estimates; no selected compactification or physical carrier is assumed here.
 
 The coherent projector $`P`$ is the joint spectral projector. A product of three bundle projectors is permitted only when those projectors strongly commute; otherwise the product need not be an orthogonal projector. Write $`Q=I-P`$.
 
@@ -124,7 +141,7 @@ on an invariant complete subset. Then the steady solution there is unique. No un
 
 # Joint-mode stability and disturbance floors
 
-Let $`\alpha`$ be one joint modal label, including multiplicity. After the one-sided nonlinear estimate, suppose a noncoherent amplitude satisfies
+Let $`\alpha`$ be one joint modal label, including multiplicity. After the FP III remainder estimate , suppose a noncoherent amplitude satisfies
 ``` math
 \frac{d}{dt}|a_\alpha|
  \le-\gamma_\alpha|a_\alpha|+|f_\alpha(t)|,
@@ -141,7 +158,7 @@ For infinitely many modes, bundlewise stochastic control requires the appropriat
 
 # Curvature, centroid motion, and interaction
 
-Let the uncurved noncoherent spectrum start at $`\lambda_\ast>0`$. If $`\|\mathcal R\|<\lambda_\ast/2`$, the selected low spectral cluster remains separated and has a curved Riesz projector of the same rank. If the uncurved projector is retained and the one-sided $`Q`$-sector damping margin is $`\gamma_Q>0`$, FP IV gives the schematic sharp form
+Use the curved-operator framework of FP IV . Let the uncurved noncoherent spectrum start at $`\lambda_\ast>0`$. If $`\|\mathcal R\|<\lambda_\ast/2`$, the selected low spectral cluster remains separated and has a curved Riesz projector of the same rank. If the uncurved projector is retained and the one-sided $`Q`$-sector damping margin is $`\gamma_Q>0`$, FP IV gives the schematic sharp form
 ``` math
 \frac{d}{dt}\|q\|
  \le-\gamma_Q\|q\|+\|Q\mathcal RP\|\,\|p\|+\|QF\|,
@@ -208,7 +225,7 @@ The covariance produced by <a href="#eq:linear-sde" data-reference-type="eqref"
 ```
 the physical uncertainty condition. Classical positivity of $`\Sigma`$ does not imply this inequality.
 
-For a declared bipartite Gaussian quantum state, nonpositivity after partial transpose certifies entanglement. PPT is exact for the two-mode $`1\times1`$ case; in general multimode bipartitions PPT need not be sufficient for separability. These facts classify an already constructed quantum Gaussian state. They do not quantize the FP control flow or derive particle statistics.
+For a declared bipartite Gaussian quantum state, nonpositivity after partial transpose certifies entanglement. PPT is exact for the two-mode $`1\times1`$ case ; in general multimode bipartitions PPT need not be sufficient for separability. These facts classify an already constructed quantum Gaussian state. They do not quantize the FP control flow or derive particle statistics.
 
 # Admissibility and exit
 
@@ -245,24 +262,6 @@ The FP I–V theorems do not select the gauge group, representations, number of
 If a mass term depends on curvature, such as $`M_a^2=m_a^2+\xi_aR`$, its metric variation contributes nonminimal terms to the gravitational field equation; it cannot be inserted while retaining the minimally coupled Einstein equation unchanged. Likewise, a point-particle Lorentz-force law requires a controlled localized-solution limit and is not a consequence of gauge covariance alone.
 
 Three internal structures do not by themselves prove three gauge factors, bosonic or fermionic statistics, bifundamental matter, the Standard Model particle assignment, anomaly cancellation, or equivalence with a quantum field theory. Those require independent representation, source, and matching theorems.
-
-# Independent downstream q79 status
-
-The following ledger prevents two opposite errors. It avoids claiming that FP I–VI prove later q79 results, and it avoids describing a bridge as globally open when an independent repository has closed a scoped version of it. Counts refer to the cited verified repository and must be refreshed when that source changes.
-
-This section is a status reconciliation against the canonically verified q79 source repository at commit `1615da7` . None of the items below is presented as a consequence of the FP I–VI theorems.
-
-#### Geometry-to-operator bridge.
-
-For a supplied finite-rank Hermitian bundle and unitary connection, exact projective-module connection, curvature, coupled-differential and functorial Hessian transport is closed at $`10/10`$. The explicit Cech projector plus connection-correction compiler is closed at $`12/12`$, and the intrinsic relative-phase quotient with reduced-Green shorted Hessian is closed at $`14/14`$. These are universal or conditional constructions. The actual same-source q79 instantiation remains $`0/3`$: selected visible/hidden HYM endpoints, their physical action-derived Hessian, and an intrinsic finite subspace with either vanishing compression residual or an executed Feshbach identity are not yet supplied.
-
-#### Canonical quantum operation.
-
-The selected q79 binary one-anchor recorder has an exact commuting output algebra, stopped-output measure, and quadratic $`P/Q`$ probabilities for every declared preparation in that apparatus context. This closes the operational Born-output tier without a new stochastic primitive, fit, or observed probability. It does not prove a source rule for every apparatus, derive probability semantics before the normal-state formalism, or select one ontically actual history.
-
-#### Quantum field theory.
-
-The framed free massless Dirac even-observable net is closed at its selected q79 tier. Independently, the selected finite SM carrier has been composed through classical BV, gauge-fixed Green-hyperbolic/equicausal structure, a formal anomaly-free all-orders QME, formal positive physical state spaces, and presentation transport. A literal physical C-star reference net is closed at $`\lambda=0`$. At nonzero coupling, an actual finite-regulator C-star landing is closed at $`5/5`$, while only the normalized same-source first tangent is accepted in the physical continuum-promotion table ($`1/9`$). The finite spectral chiral measure is closed on each certified connected gapped presentation orbit ($`7/7`$), but its selected full-domain extension remains $`0/4`$. Fixed-coupling continuum convergence and uniqueness, a selected global interacting state, numerical RG/matching, and nonperturbative completion remain open.
 
 # Bilocal overlap and causality
 
@@ -310,7 +309,7 @@ Gauge forces, Lorentzian motion, quantum uncertainty, Gaussian entanglement, dec
 
 #### Not derived by this series.
 
-The present theorems do not derive boson/fermion identity, particle masses, Standard Model representations, merger or collapse rules, the Born rule, measurement outcomes, emergent time, inflation, horizons, or a cosmological arrow of time. Section <a href="#sec:downstream-status" data-reference-type="ref" data-reference="sec:downstream-status">9</a> records independent scoped results on some of these bridges; their existence does not make them conclusions of FP I–VI.
+The present theorems do not derive boson/fermion identity, particle masses, Standard Model representations, merger or collapse rules, the Born rule, measurement outcomes, emergent time, inflation, horizons, or a cosmological arrow of time. This is a statement about the implications of this series, not a claim about the status of every physical theory or application.
 
 # Synthesis ledger and remaining obligations
 
@@ -333,36 +332,34 @@ Assume the operator, compactness or condensing, strict-Lyapunov, one-sided dampi
 
 No Lorentzian, quantum, particle-physics, merger, measurement, or cosmological claim follows without its additional completion theorem.
 
-The principal remaining obligations for a physical theory are therefore constructive rather than interpretive: emit the selected visible/hidden HYM endpoints; derive the upper action and physical rank-102 Hessian; execute its invariant finite restriction or Feshbach/shorted reduction; extend the canonical quantum operation beyond one binary apparatus if that stronger claim is intended; construct the fixed-nonzero-coupling continuum QFT and a selected global state; prove the relation between physical evolution and the FP control flow; and complete RG, uncertainty, and empirical matching without importing target observables as source data.
+For an application, the constructive obligations are to specify an energy and its operator domain, establish the invariant set and relevant analytic bounds, and prove the relation between the control flow and the proposed physical evolution. Quantum or relativistic interpretations need their own state, causality and observable structures. The present paper neither supplies those structures nor needs them to establish the analytic synthesis.
 
 # Conclusion
 
 The corrected Fixed Points series is a coherent conditional control and spectral framework. Its strongest results concern existence under explicit compactness hypotheses, stability margins, curved spectral persistence, leakage, modulation, Gaussian covariance, and admissibility diagnostics. FP VI does not weaken those results by surrounding them with broader interpretations; it identifies exactly what they prove and exactly which bridges remain before they can support a fundamental spacetime, quantum, or particle theory.
 
-The synthesis also clarifies how to use the series. FP I owns the analytic fixed-point foundation; FP II owns the ten-dimensional joint-operator specialization; FP III owns disturbance floors and conditional homogenization; FP IV owns curvature, finite reduction, centroid, and transition boundaries; FP V owns multi-structure covariance and admissibility-exit probabilities. FP VI connects those contracts, records independent downstream status, and adds only the bilocal-causality analysis. The next advances must therefore instantiate the missing source data or physical completion, not restate the existing fixed-point chain under a new heading.
+The synthesis also clarifies how to use the series. FP I owns the analytic fixed-point foundation; FP II owns the ten-dimensional joint-operator specialization; FP III owns disturbance floors and conditional homogenization; FP IV owns curvature, finite reduction, centroid, and transition boundaries; FP V owns multi-structure covariance and admissibility-exit probabilities. FP VI connects those contracts and adds only the bilocal-causality analysis. The next advances must therefore instantiate the missing source data or physical completion, not restate the existing fixed-point chain under a new heading.
 
 <div class="thebibliography">
 
 99
 
-P. Nero, *Fixed Points I: Fixed Points over Multi–Bundle Manifolds*, revised v6, 2026.
+P. Nero, *Fixed Points I: Fixed Points over Multi–Bundle Manifolds*, version 7, 2026.
 
-P. Nero, *Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model*, revised v4, 2026.
+P. Nero, *Fixed Points II: Projected Fixed Points and Equilibria in a 10D Modal Model*, version 6, 2026.
 
-P. Nero, *Fixed Points III: Disturbance–Damping Balance and Stability*, revised v4, 2026.
+P. Nero, *Fixed Points III: Disturbance–Damping Balance and Stability*, version 8, 2026.
 
-P. Nero, *Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions on Bundle Manifolds*, revised v5, 2026.
+P. Nero, *Fixed Points IV: Curvature, Centroid Motion, and Structural Transitions on Bundle Manifolds*, version 7, 2026.
 
-P. Nero, *Fixed Points V: Curvature Coupling, Multi–Structure Dynamics, and Admissibility Barriers*, revised v6, 2026.
+P. Nero, *Fixed Points V: Curvature Coupling, Multi–Structure Dynamics, and Admissibility Barriers*, version 9, 2026.
 
 G. Da Prato and J. Zabczyk, *Stochastic Equations in Infinite Dimensions*, Cambridge University Press, 1992.
 
 R. Simon, Peres–Horodecki separability criterion for continuous variable systems, *Physical Review Letters* **84** (2000), 2726–2729.
 
-P. Nero, *q79 Quantum Source, Quantum Field, and Geometry-to-Operator Theorem Packets*, `mtt-qm-source-proof`, commit `1615da7`, 27 July 2026.
-
 </div>
 
-# Computational Evidence and Reproducibility
+# Dependency and reproducibility statement
 
-The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+The preceding FP papers are the sole MTT proof sources used here. Standard mathematics and the two local causality arguments complete the synthesis. No later research ledger, numerical packet or physical endpoint is needed.

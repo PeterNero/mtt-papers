@@ -41,7 +41,7 @@ Canonical papers audited: **142**.
 | reviewed | critical | `the-modal-triplet-theory-program-a2-computation-and-pre-538c7dad` | 16 | 132.1 | 7/7 | - |
 | reviewed | major | `the-modal-triplet-theory-program-b2-gauge-structure-as-4afd644a` | 16 | 150.7 | 7/7 | - |
 | reviewed | major | `dynamics-of-coherence-capacity-transport-concentration-f2edc08a` | 15 | 181.9 | 6/7 | object_intuition |
-| reviewed | major | `fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534` | 15 | 197.8 | 6/7 | conclusion |
+| reviewed | major | `fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534` | 15 | 200.8 | 6/7 | conclusion |
 | reviewed | major | `projection-induced-network-geometry-sprouting-hidden-co-6919523e` | 15 | 189.1 | 5/7 | orientation, object_intuition |
 | reviewed | major | `the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c` | 15 | 230.2 | 5/7 | object_intuition, argument_flow |
 | reviewed | major | `the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707` | 15 | 189.0 | 6/7 | object_intuition |
@@ -56,7 +56,7 @@ Canonical papers audited: **142**.
 | reviewed | major | `theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f` | 13 | 249.2 | 7/7 | - |
 | reviewed | major | `topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2` | 13 | 211.5 | 5/7 | orientation, object_intuition |
 | reviewed | major | `coherent-sector-universality-and-controlled-truncation-0ccddc56` | 12 | 223.2 | 5/7 | orientation, object_intuition |
-| reviewed | major | `fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8` | 12 | 164.7 | 7/7 | - |
+| reviewed | major | `fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8` | 12 | 173.8 | 7/7 | - |
 | reviewed | major | `from-modal-triplet-theory-to-noncommutative-geometry-sp-7b0575b3` | 12 | 217.5 | 5/7 | object_intuition, argument_flow |
 | reviewed | major | `modal-triplet-theory-a-typed-relationship-atlas-reconst-e1b59731` | 12 | 205.0 | 6/7 | object_intuition |
 | reviewed | moderate | `modal-triplet-theory-admissibility-encodings-and-the-st-0867d9ed` | 12 | 283.5 | 6/7 | object_intuition |
@@ -69,7 +69,7 @@ Canonical papers audited: **142**.
 | reviewed | major | `universality-and-robustness-of-the-coherent-sector-in-m-a64842b3` | 11 | 181.1 | 6/7 | orientation |
 | reviewed | major | `coherent-kinematics-in-modal-triplet-theory-chart-persi-359fefe8` | 10 | 151.1 | 4/7 | orientation, object_intuition, concrete_foothold |
 | reviewed | moderate | `computational-irreducibility-from-projection-undecidabi-6cc6aafd` | 10 | 251.4 | 5/7 | orientation, object_intuition |
-| reviewed | major | `fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce` | 10 | 234.6 | 7/7 | - |
+| reviewed | moderate | `fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce` | 10 | 259.6 | 7/7 | - |
 | reviewed | major | `measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee` | 10 | 196.6 | 6/7 | object_intuition |
 | reviewed | major | `modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83` | 10 | 232.0 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `projection-limited-coherence-a-structural-theory-of-eff-3343fe62` | 10 | 319.1 | 5/7 | orientation, object_intuition |
@@ -89,7 +89,7 @@ Canonical papers audited: **142**.
 | reviewed | major | `deriving-the-mtt-coherence-scale-from-fixed-point-dampi-55ce23b3` | 8 | 227.8 | 5/7 | object_intuition, result_interpretation |
 | reviewed | moderate | `dirac-delta-functions-as-singular-shadows-of-admissible-6e0ddf3f` | 8 | 330.2 | 6/7 | orientation |
 | reviewed | moderate | `effective-field-theory-as-a-shadow-of-projection-admiss-ec123406` | 8 | 370.9 | 4/7 | orientation, object_intuition, argument_flow |
-| reviewed | moderate | `fixed-points-iii-disturbance-damping-balance-and-stability` | 8 | 260.9 | 7/7 | - |
+| reviewed | moderate | `fixed-points-iii-disturbance-damping-balance-and-stability` | 8 | 262.6 | 7/7 | - |
 | reviewed | light | `modal-triplet-theory-from-mtt-to-kaluza-klein-theory` | 8 | 408.0 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `modal-triplet-theory-quantum-amplitudes-from-modal-geom-3b4eaef7` | 8 | 277.6 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `twistor-encodings-as-high-coherence-limits-of-modal-tri-8b03ee29` | 8 | 302.6 | 5/7 | orientation, object_intuition |
@@ -144,7 +144,7 @@ Canonical papers audited: **142**.
 | reviewed | light | `why-quantum-theory-must-be-complex-a-soler-admissibilit-b7674be8` | 3 | 669.7 | 5/7 | orientation, object_intuition |
 | reviewed | moderate | `baseline-scales-and-phenomenological-consistency-in-mod-b28fa79e` | 2 | 865.5 | 3/7 | orientation, object_intuition, result_interpretation, concrete_foothold |
 | reviewed | light | `causal-sets-as-event-selection-shadows-of-coherence-bre-7bca8116` | 2 | 714.0 | 4/7 | orientation, object_intuition, argument_flow |
-| reviewed | light | `fixed-points-vi-formal-synthesis-and-physical-interpretations` | 2 | 1715.5 | 6/7 | orientation |
+| reviewed | light | `fixed-points-vi-formal-synthesis-and-physical-interpretations` | 2 | 1533.0 | 6/7 | orientation |
 | reviewed | light | `modal-triplet-theory-from-mtt-to-pilot-wave-dynamics` | 2 | 1667.0 | 5/7 | orientation, object_intuition |
 | reviewed | low | `modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d` | 2 | 1162.0 | 7/7 | - |
 | reviewed | light | `path-integral-constraints-as-finite-admissibility-filte-47c01009` | 2 | 877.5 | 5/7 | object_intuition, argument_flow |

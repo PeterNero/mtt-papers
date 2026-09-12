@@ -18,7 +18,7 @@
 \title{Fixed Points V: Curvature Coupling, Multi-Structure Dynamics,\\
 and Admissibility Barriers}
 \author{Peter Nero}
-\date{September 2026\\Version 8}
+\date{September 2026\\Version 9}
 
 \begin{document}
 \maketitle
@@ -42,6 +42,20 @@ exit bounds. Cross-correlation controls simultaneous exits on a declared
 observation grid; it does not by itself prove localization, non-propagation,
 or selection of a post-exit state.
 \end{abstract}
+
+\section*{Version 9 Revision Note}
+\begin{description}
+\item[Supersedes.] Version~8, the previous authoring revision; version~7
+remains the released edition.
+\item[Reason.] Generic computational-evidence boilerplate implied that an
+external result repository supplied inputs to this analytic paper.
+\item[Resolution.] The boilerplate is replaced by the actual dependency
+statement, and earlier FP sources are explicitly cited at their uses.
+\item[Retained result.] All covariance, correlation and exit statements and
+proofs are unchanged.
+\item[Remaining boundary.] Applications must specify the generator, noise,
+margins and any physical interpretation of the resulting estimates.
+\end{description}
 
 \section*{Version 8 Revision Note}
 \noindent\textbf{Supersedes.} Version 7, which remains the released edition.
@@ -137,14 +151,14 @@ Let $I=[t_0,t_1]$ be a finite parameter interval and let $(B,g_t)$ be a
 Riemannian base with uniformly bounded geometry on $I$. This formulation does
 not identify the FP stabilization parameter with physical Lorentzian time.
 Existence of a projected fixed point and promotion to a full equilibrium are
-inherited only when the hypotheses of FP~I and FP~II hold. Disturbance floors
+inherited only when the hypotheses of FP~I and FP~II hold \cite{FPI,FPII}. Disturbance floors
 are interpreted according to FP~III, and curvature uses the full operator and
-projector construction of FP~IV.
+projector construction of FP~IV \cite{FPIV}.
 
-A physical q79 application must therefore select the coupled generator,
+A physical application must therefore select the coupled generator,
 projector, covariance source, invariant domain, and any post-exit transition
 kernel independently.  The covariance and exit theorems below diagnose those
-supplied data; they do not construct physical operators from q79 geometry.
+supplied data; they do not construct the application-specific physical operators.
 
 At a frozen configuration $x$, write
 \[
@@ -527,7 +541,19 @@ deficit score.
 P.~Nero,
 \newblock \emph{Fixed Points III: Disturbance--Damping Balance and
 Stability},
-\newblock revised edition, 2026.
+\newblock version~8, 2026.
+
+\bibitem{FPI}
+P.~Nero, \emph{Fixed Points I: Fixed Points over Multi--Bundle Manifolds},
+version~7, 2026.
+
+\bibitem{FPII}
+P.~Nero, \emph{Fixed Points II: Projected Fixed Points and Equilibria in a
+10D Modal Model}, version~6, 2026.
+
+\bibitem{FPIV}
+P.~Nero, \emph{Fixed Points IV: Curvature, Centroid Motion, and Structural
+Transitions}, version~7, 2026.
 
 \bibitem{DaPratoZabczyk1992}
 G.~Da~Prato and J.~Zabczyk,
@@ -544,9 +570,10 @@ R.~Temam,
 \end{thebibliography}
 
 
-% BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
-\section*{Computational Evidence and Reproducibility}
-The numerical and machine-verifiable claims used by this paper are archived in the curated repository, \texttt{https://github.com/PeterNero/mtt-results-repro}. The mapped authority/result identifiers are \texttt{no result rows mapped}. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
-% END MTT MANAGED COMPUTATIONAL EVIDENCE
+\section*{Dependency and reproducibility statement}
+All results use locally specified data, the preceding FP papers and standard
+mathematical literature. No later MTT paper or numerical packet supplies a
+premise. The covariance formulas and probability estimates can be evaluated
+once an application provides their inputs.
 
 \end{document}
